@@ -1,11 +1,13 @@
 # Serving
-url: "http://daattali.github.io"  # full site URL
-url-short: "daattali.github.io" # how to display the url
+url: "http://daattali.github.io/beautiful-jekyll"  # full site URL
+url-short: "daattali.github.io/beautiful-jekyll" # how to display the url
 baseurl: "/beautiful-jekyll"  # does not include hostname
 
+
+
 # Header meta
-name: Dean Attali
-description: Dean Attali's website
+name: Beautiful Jekyll
+description: Quickly build a beautiful Jekyll website
 
 # Outputting
 timezone: "America/Vancouver"
@@ -21,7 +23,7 @@ defaults:
     values:
       layout: "default"
 
-title : Dean Attali
+title : Beautiful Jekyll by Dean Attali
 
 # Change all these values or delete the ones you don't want.
 # You should keep the "name" parameter since it will be used as the name of blog posts' author.
@@ -51,10 +53,11 @@ navbar-links:
   Home: ""
   About Me: "aboutme"
   Contact: "contact"
+  Blog: "blog"
   Error page: "nothing"
   
-disqus: "" # Your disqus shortname
-google_analytics: "" # Your Google Analytics ID
+# disqus: "" # Your disqus shortname
+# google_analytics: "" # Your Google Analytics ID
 
 # Exclude these files from production site
 exclude:
