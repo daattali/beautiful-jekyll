@@ -6,7 +6,7 @@ baseurl: "/beautiful-jekyll"  # does not include hostname
 
 
 # Header meta
-name: Beautiful Jekyll
+name: Beautiful Jekyll by Dean Attali
 description: Quickly build a beautiful Jekyll website
 
 # Outputting
@@ -23,7 +23,7 @@ defaults:
     values:
       layout: "default"
 
-title : Beautiful Jekyll by Dean Attali
+title : Beautiful Jekyll
 
 # Change all these values or delete the ones you don't want.
 # You should keep the "name" parameter since it will be used as the name of blog posts' author.
