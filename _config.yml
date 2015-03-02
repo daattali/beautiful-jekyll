@@ -1,7 +1,7 @@
 # Serving
 url: "http://daattali.github.io"  # full site URL
 url-short: "daattali.github.io" # how to display the url
-baseurl: ""  # does not include hostname
+baseurl: "/beautiful-jekyll"  # does not include hostname
 
 # Header meta
 name: Dean Attali
