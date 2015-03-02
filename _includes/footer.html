@@ -75,11 +75,14 @@
           {% endif %}		  
         </ul>
         <p class="copyright text-muted">
-		  &copy; {{ site.title }}
+		  &copy; {{ site.author.name }}
 		  &nbsp;&bull;&nbsp;
 		  {{ site.time | date: '%Y' }}
+		  
+		  {% if site.url-pretty %}
 		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-short }}</a>
+		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+		  {% endif %}
 	    </p>
 		<p class="theme-by text-muted">
 		  Theme by
