@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<header class="header-post">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="post-heading">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <h2 class="post-subheading">{{ page.subtitle }}</h2>
+        {% endif %}
+        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+      </div>
+     </div>
+  </div>
+</header>
+
+<article>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  {{ content }}
+	</div>
+  </div>
+</article>
+
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <ul class="pager blog-pager">
+      {% if page.previous.url %}
+      <li class="previous">
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+      </li>
+      {% endif %}
+      {% if page.next.url %}
+      <li class="next">
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+
+<div class="row blog-comments">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    {% include disqus.html %}
+  </div>
+</div>

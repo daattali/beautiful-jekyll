@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  {% include head.html full = true %}
+
+  <body>
+  
+    {% include nav.html %}
+
+    <div role="main" class="container main-content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+  
+    {% include footer-scripts.html full = true %}
+  
+  </body>
+</html>
