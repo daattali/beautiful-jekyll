@@ -8,7 +8,8 @@ GitHub pages makes it extremely simple to host your own website or a website for
 
 ## Build your website in 3 steps
 
-Getting started is *literally* as easy as 1-2-3 :smile: Scroll down to see the steps involved, but here is a 45-second GIF just as a reference as you work through the steps.
+Getting started is *literally* as easy as 1-2-3 :smile:   
+Scroll down to see the steps involved, but here is a 45-second GIF just as a reference as you work through the steps.
 
 ![Installation steps](img/install-steps.gif)
 
