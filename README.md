@@ -68,18 +68,17 @@ Many personalization settings in `_config.yml`, such as setting your avatar to a
 
 There are all the parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
 
-Parameter   | Page types supported | Description
-------------| -------------------- | -----------
-layout      | all                  | What type of page this is
-title       | all                  | Page title
-subtitle    | post                 | Short subtitle
-description | page                 | Short description of page
-date        | minimal              | Date to show in the mini footer
-js          | all                  | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
-ext-js      | all                  | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
-css         | all                  | List of local CSS files to include in the page
-ex-css      | all                  | List of external CSS files to include in the page
-googlefonts | all                  | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
+Parameter   | Description
+----------- | -----------
+layout      | What type of page this is (recommended options are `page`, `post`, or `minimal`)
+title       | Page or blog post title
+subtitle    | Short description of page or blog post
+keywords    | Comma-separated list of keywords for the current page (eg. "soccer, sports, barcelona, messi")
+js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
+ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
+css         | List of local CSS files to include in the page
+ex-css      | List of external CSS files to include in the page
+googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
 ### Project page vs user page
 
