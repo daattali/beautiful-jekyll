@@ -56,11 +56,11 @@ hr.small {
 
 .get-started-wrap {
   text-align: center;
-  margin-top: 10px;
 }
 .get-started-btn {
   padding: 10px 20px;
   font-size: 26px;
+  margin-top: 10px;
 }
 
 .hideme {
