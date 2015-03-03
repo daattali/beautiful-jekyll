@@ -8,7 +8,9 @@ GitHub pages makes it extremely simple to host your own website or a website for
 
 ## Build your website in 3 steps
 
-Getting started is *literally* as easy as 1-2-3 :smile:
+Getting started is *literally* as easy as 1-2-3 :smile: Scroll down to see the steps involved, but here is a 45-second GIF just as a reference as you work through the steps.
+
+![Installation steps](img/install-steps.gif)
 
 ### 1. Fork this repository 
 
@@ -24,8 +26,8 @@ Edit the `_config.yml` file to change all the settings to reflect your site.  Th
 
 You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages.
 
-This 45-second GIF will show you how to go through the steps in real-time. It goes through the setup for a user with username `daattalitest`. Note that I only edited one setting in the `_config.yml` file in the video, but you should actually go through the rest of the settings as well.
-![Installation steps](img/install-steps.gif)
+**Note:** The GIF above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but you should actually go through the rest of the settings as well.
+
 
 ### Add your own content
 
