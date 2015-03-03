@@ -24,7 +24,7 @@ Edit the `_config.yml` file to change all the settings to reflect your site.  Th
 
 You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages.
 
-
+This 45-second GIF will show you how to go through the steps in real-time. It goes through the setup for a user with username `daattalitest`. Note that I only edited one setting in the `_config.yml` file in the video, but you should actually go through the rest of the settings as well.
 ![Installation steps](img/install-steps.gif)
 
 ### Add your own content
@@ -33,18 +33,43 @@ To add pages to your site, you can either write a markdown file (`.md`) which wi
 
 Any markdown or HTML file you add to the root directory will be immediately available on your site. Take a look at the `aboutme.md` and `index.html` files as examples. Any file inside the `_posts` directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts, and delete them when you feel ready.
 
+### YAML front matter
+YAML is a way to use parameters to make the templating more useful. To take advantage of the template, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. If you don't want to use any special paramters, use the empty YAML front matter:
+
+```
+---
+---
+```
+
+If you want to use any parameters, write them between the two lines. Look at `aboutme.md` or `index.html` as examples.
+
 ### Features
-- mobile
-- avatar
-- footer links
-- navbar links
-- YAML params
-- page types
+
+#### Mobile-first
+Beautiful Jekyll is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone and your gigantic iMac, and the site will work well on both, though it will look slightly different.
+
+#### Personalization
+
+Many personalization settings in `_config.yml`, such as setting your avatar to add a little image in the navbar or customizing what social media links to show in the footer
+
+#### Page types
+
+- To write a blog post, place a file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see the YAML parameters that blog posts can use.
+
+- To add a non-blog page, place it in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
+
+- To add a random page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal`.
+
+- To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter
+
+#### YAML front matter parameters
 
 
 ### Project page vs user page
 
-If you want to use this as a project page for a specific repository instead of your main GitHub user page, th
+If you're not sure what the difference is, then ignore this section.
+
+If you want to use this theme for a project page for a specific repository instead of your main GitHub user page, that's no problem. The demo for this site ([daattali.github.io/beautiful-jekyll](http://deanattali.com/beautiful-jekyll)) is actually set up as a project page while my personal site ([daattali.github.io](http://deanattali.com)) is a regular user page.  The only difference is that in the `_config.yml`, you should set `baseurl` to be `/projectname` instead of `""`.
 
 
 ### Credits
