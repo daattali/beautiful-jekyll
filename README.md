@@ -27,7 +27,7 @@ Edit the `_config.yml` file to change all the settings to reflect your site.  Th
 
 You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages.
 
-**Note:** The GIF above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but you should actually go through the rest of the settings as well.
+**Note:** The GIF above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well.**
 
 
 ### Add your own content
@@ -46,6 +46,8 @@ YAML is a way to use parameters to make the templating more useful. To take adva
 
 If you want to use any parameters, write them between the two lines. Look at `aboutme.md` or `index.html` as examples.
 
+**Always add the YAML front matter to every page, unless you specifically know that you want to bypass Jekyll.**
+
 ### Features
 
 #### Mobile-first
@@ -57,9 +59,9 @@ Many personalization settings in `_config.yml`, such as setting your avatar to a
 
 #### Page types
 
-- To write a blog post, place a file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see the YAML parameters that blog posts can use.
-- To add a non-blog page, place it in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
-- To add a random page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal`.
+- **post** - To write a blog post, place a file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see the YAML parameters that blog posts can use.
+- **page** - To add a non-blog page, place it in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
+- **minimal** - To add a random page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal`.
 - To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter.
 
 #### YAML front matter parameters
