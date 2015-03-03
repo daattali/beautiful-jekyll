@@ -3,20 +3,15 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-# If you are building a simple GitHub user page (<username>.github.io) then use these settings:
-url: "http://<username>.github.io"
+# If you are building a simple GitHub user page (username.github.io) then use these settings:
+url: "http://username.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://<username>.github.io/<project>"
-#baseurl: "/<project>"
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
 
-# Of course don't forget to change the <username> and <project> to YOUR username and project
-
-# --- Header meta --- #
-# Brief name and description of the site
-name: <name>'s website
-description: A virtual proof that <name> is awesome!
+# Of course don't forget to change the username and projectname to YOUR username and project
 
 # --- Navigation bar options --- #
 
@@ -24,7 +19,7 @@ description: A virtual proof that <name> is awesome!
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 
-# Name of website to show in the navbar
+# Name of website to show in the navigation bar
 title: My website
 
 # List of links in the navigation bar
@@ -59,6 +54,11 @@ footer-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+
+# --- Header meta --- #
+# Brief name and description of the site
+name: name's website
+description: A virtual proof that name is awesome!
  
 # --- Misc --- #
 
