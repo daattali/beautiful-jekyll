@@ -16,7 +16,7 @@ Fork this repository by clicking the Fork button on the top right corner.
 
 ### 2. Rename the repository to `yourusername.github.io`
 
-This will create a GitHub User page ready with the Beautiful Jekyll template that will be available at http://yourusername.github.io (sometimes it takes a few minutes).
+This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io (sometimes it takes a few minutes).
 
 ### 3. Customize settings
 
@@ -46,7 +46,7 @@ If you want to use any parameters, write them between the two lines. Look at `ab
 ### Features
 
 #### Mobile-first
-Beautiful Jekyll is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone and your gigantic iMac, and the site will work well on both, though it will look slightly different.
+**Beautiful Jekyll** is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone and your gigantic iMac, and the site will work well on both, though it will look slightly different.
 
 #### Personalization
 
@@ -55,15 +55,26 @@ Many personalization settings in `_config.yml`, such as setting your avatar to a
 #### Page types
 
 - To write a blog post, place a file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see the YAML parameters that blog posts can use.
-
 - To add a non-blog page, place it in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
-
 - To add a random page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal`.
-
-- To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter
+- To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter.
 
 #### YAML front matter parameters
 
+There are all the parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
+
+Parameter   | Page types supported | Description
+------------| -------------------- | -----------
+layout      | all                  | What type of page this is
+title       | all                  | Page title
+subtitle    | post                 | Short subtitle
+description | page                 | Short description of page
+date        | minimal              | Date to show in the mini footer
+js          | all                  | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
+ext-js      | all                  | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
+css         | all                  | List of local CSS files to include in the page
+ex-css      | all                  | List of external CSS files to include in the page
+googlefonts | all                  | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
 ### Project page vs user page
 
@@ -80,8 +91,8 @@ This template was not made entirely from scratch. I would like to give special t
 
 ### Contributions
 
-If you find anything wrong or would like to contribute it any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
+If you find anything wrong or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
 
-### Known bugs
+### Known limitations
 
 - If you have a project page and you want a custom 404 page, you must have a custom domain.  See https://help.github.com/articles/custom-404-pages/.  This means that if you have a regular User Page you can use the 404 page from this theme, but if it's a website for a specific repository, the 404 page will not be used.
