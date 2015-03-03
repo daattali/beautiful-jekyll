@@ -51,7 +51,7 @@ hr.small {
 
 .main-explain-area {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 15px 0;
+  padding: 15px inherit;
 }
 
 .hideme {
