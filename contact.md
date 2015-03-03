@@ -2,6 +2,7 @@
 layout: minimal
 js: "/js/contact.js"
 css: "/css/contact.css"
+googlefonts: Lobster
 ---
 
 Just kidding, you can't contact me here.  
@@ -15,3 +16,5 @@ It's also an example of how you can easily add CSS or JavaScript files to a temp
 <button type="button" class="btn btn-default" id="contact-btn">
   Click me
 </button>
+
+<p id="googlefont-test">You can even use any <a href="http://www.google.com/fonts/">Google fonts</a> you'd like to be extra fancy, like this Lobster font</p>

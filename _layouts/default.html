@@ -1,7 +1,22 @@
+---
+common-css:
+  - "/css/bootstrap.min.css"
+  - "/css/main.css"
+common-ext-css:
+  - "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "/js/jquery-1.11.2.min.js"
+  - "/js/bootstrap.min.js"
+  - "/js/main.js"
+---
+
 <!DOCTYPE html>
 <html lang="en">
   
-  {% include head.html full = true %}
+  {% include head.html %}
 
   <body>
   
@@ -13,7 +28,7 @@
 
     {% include footer.html %}
   
-    {% include footer-scripts.html full = true %}
+    {% include footer-scripts.html %}
   
   </body>
 </html>
