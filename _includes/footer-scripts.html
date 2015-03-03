@@ -1,13 +1,13 @@
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery-1.11.2.min.js"></script>
+<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
 {% if include.full %}
-  <script src="/js/main.js"></script>
+  <script src="{{ site.baseurl }}/js/main.js"></script>
 {% endif %}
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ js }}"></script>
+	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
   {% endfor %}
 {% endif %}
 

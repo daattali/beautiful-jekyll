@@ -15,14 +15,14 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #3A85C5;
+  color: #008AFF;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #105086;
+  color: #008AFF;
 }
 a:hover,
 a:focus {
@@ -47,6 +47,11 @@ hr.small {
   .main-content {
     padding-top: 130px;
   }
+}
+
+.main-explain-area {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 15px 0;
 }
 
 .hideme {
