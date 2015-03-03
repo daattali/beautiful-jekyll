@@ -4,25 +4,19 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (<username>.github.io) then use these settings:
-#url: "http://<username>.github.io"
-#baseurl: ""
+url: "http://<username>.github.io"
+baseurl: ""
 
-# If you are building a GitHub project page then use settings similar to mine:
-url: "http://daattali.github.io/beautiful-jekyll"
-baseurl: "/beautiful-jekyll"
+# If you are building a GitHub project page then use these settings:
+#url: "http://<username>.github.io/<project>"
+#baseurl: "/<project>"
+
+# Of course don't forget to change the <username> and <project> to YOUR username and project
 
 # --- Header meta --- #
 # Brief name and description of the site
-name: Beautiful Jekyll by Dean Attali
-description: Quickly build a beautiful Jekyll website
-
-# --- Outputting options --- #
-# More information can be found on Jekyll's site
-timezone: "America/Vancouver"
-markdown: redcarpet
-highlighter: pygments
-permalink: /:year-:month-:day-:title
-paginate: 5
+name: <name>'s website
+description: A virtual proof that <name> is awesome!
 
 # --- Navigation bar options --- #
 
@@ -31,7 +25,7 @@ paginate: 5
 avatar: "/img/avatar-icon.png"
 
 # Name of website to show in the navbar
-title: Beautiful Jekyll
+title: My website
 
 # List of links in the navigation bar
 navbar-links:
@@ -44,13 +38,13 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Dean Attali
-  email: "daattali@gmail.com"
-  facebook: daattali
-  github: daattali
-  twitter: daattali
-  linkedin: "pub/dean-attali/8/946/143"
-  stackoverflow: "users/3943160/daattali"
+  name: Some Person
+  email: "youremail@domain.com"
+  facebook: yourname  # eg. daattali
+  github: yourname    # eg. daattali
+  twitter: yourname   # eg. daattali
+  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
+  stackoverflow: yourlink  # eg. "users/3943160/daattali"
  
 # Select which links to show in the footer
 footer-links-active:
@@ -64,7 +58,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "deanattali.com/beautiful-jekyll" 
+url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
  
 # --- Misc --- #
 
@@ -75,6 +69,13 @@ url-pretty: "deanattali.com/beautiful-jekyll"
 #google_analytics: ""
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Vancouver"
+markdown: redcarpet
+highlighter: pygments
+permalink: /:year-:month-:day-:title
+paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
