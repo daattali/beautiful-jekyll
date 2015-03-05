@@ -4,7 +4,7 @@
 
 GitHub pages makes it extremely simple to host your own website or a website for a GitHub repository within minutes **for free**.  While it's very easy to get started with GitHub Pages, you will get very basic looking pages and basic functionality.
 
-**Beautiful Jekyll** is a ready-to-use template to make help you create an awesome Jekyll or GitHub Page website quickly.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes or look at [my personal website](http://deanattali.com) to see it in use.
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome Jekyll or GitHub Page website quickly.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes or look at [my personal website](http://deanattali.com) to see it in use.
 
 ## Build your website in 3 steps
 
