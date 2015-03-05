@@ -19,7 +19,7 @@ Fork this repository by clicking the Fork button on the top right corner.
 
 ### 2. Rename the repository to `yourusername.github.io`
 
-This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io (sometimes it takes a few minutes).
+This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io within a couple minutes.
 
 ### 3. Customize settings
 
@@ -34,7 +34,7 @@ You can now visit your shiny new website, which will be seeded with several samp
 
 To add pages to your site, you can either write a markdown file (`.md`) which will automatically get converted to HTML, or you can write an HTML file directly.  It is much easier to write mardown; you write normal text with a few styling identifiers, and Jekyll will know how to automatically render it as a pretty HTML page. Markdown is extremely easy to use, just [look at the reference](http://daringfireball.net/projects/markdown/syntax) and at  some files on the site to get an idea.
 
-Any markdown or HTML file you add to the root directory will be immediately available on your site. Take a look at the `aboutme.md` and `index.html` files as examples. Any file inside the `_posts` directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts, and delete them when you feel ready.
+Any markdown or HTML file you add to the root directory will be immediately available on your site. Take a look at the `aboutme.md` and `index.html` files as examples. Any file inside the `_posts` directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.
 
 ### YAML front matter
 YAML is a way to use parameters to make the templating more useful. To take advantage of the template, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. If you don't want to use any special paramters, use the empty YAML front matter:
@@ -80,7 +80,7 @@ css         | List of local CSS files to include in the page
 ex-css      | List of external CSS files to include in the page
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
-### Project page vs user page
+### GitHub Project page vs user page
 
 If you're not sure what the difference is, then ignore this section.
 
