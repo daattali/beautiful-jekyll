@@ -6,7 +6,7 @@ It is built on top of [Jekyll](http://jekyllrb.com/) and can be used for any [Gi
 
 ## Prerequisites
 
-- You need to have a GitHub account. If you don't have on, [sign up here](https://github.com/join), it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `johnsmith.github.io`.  
+- You need to have a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `johnsmith.github.io`.  
 - It would be helpful to understand what Markdown is and how to write it. Markdown is just a way to take a piece of text and format it to look a little nicer.  For example, this whole instrcution set that you're reading is markdown - it's just text with some words being bold/larger/part of bullet points. If you want, take 5 minutes to learn markdown [with this tutorial](http://markdowntutorial.com/).
 
 ## Build your website in 3 steps
@@ -22,7 +22,7 @@ Scroll down to see the steps involved, but here is a 45-second GIF just as a ref
 
 ### 2. Rename the repository to `yourusername.github.io`
 
-This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io within a couple minutes.  To do this, click on "Settings" on the right (the picture of the tools) and there you'll have an option to rename.
+This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at `http://yourusername.github.io` within a couple minutes.  To do this, click on "Settings" on the right (the picture of the tools) and there you'll have an option to rename.
 
 ### 3. Customize your website settings
 
@@ -30,7 +30,7 @@ Edit the `_config.yml` file to change all the settings to reflect your site. To 
 
 After you save your changes to the config file (by clicking on "Commit changes" as the GIF tutorial shows), your website should be ready in a minute or two at `yourusername.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so.
 
-You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages. Your website is at `http://yourusername.github.io` (replace `yourusername` with your user name).
+You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages. Your website is at `http://yourusername.github.io` (replace `yourusername` with your user name). Do not add `www` to the URL - it will not work!
 
 **Note:** The GIF above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
