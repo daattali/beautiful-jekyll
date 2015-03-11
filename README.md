@@ -61,9 +61,9 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-Look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
+You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
 
-**Important takeaway: always add the YAML front matter to every page, which is two lines with three dashes. If you have any parameters, they go between the two lines. **  
+**Important takeaway: always add the YAML front matter to every page, which is two lines with three dashes. If you have any parameters, they go between the two lines.**    
 If you don't include YAML then your file will not use the template.
 
 ### Features
