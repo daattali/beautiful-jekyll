@@ -1,52 +1,61 @@
 # Beautiful Jekyll
 
-[Jekyll](http://jekyllrb.com/) is a simple site generator that is used for hosting [GitHub Pages](https://pages.github.com/) and specializes in blogging-type websites, although it can work with any site.
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes or look at [my personal website](http://deanattali.com) to see it in use.
 
-GitHub pages makes it extremely simple to host your own website or a website for a GitHub repository within minutes **for free**.  While it's very easy to get started with GitHub Pages, you will get very basic looking pages and basic functionality.
+It is built on top of [Jekyll](http://jekyllrb.com/) and can be used for any [GitHub Pages](https://pages.github.com/) website.  If you don't know what Jekyll and GitHub Pages are, you can still use these instructions to build a site quickly, but it might make a little more sense if you read up on them just a little bit.
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome Jekyll or GitHub Page website quickly.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes or look at [my personal website](http://deanattali.com) to see it in use.
+## Prerequisites
+
+- You need to have a GitHub account. If you don't have on, [sign up here](https://github.com/join), it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `johnsmith.github.io`.  
+- It would be helpful to understand what Markdown is and how to write it. Markdown is just a way to take a piece of text and format it to look a little nicer.  For example, this whole instrcution set that you're reading is markdown - it's just text with some words being bold/larger/part of bullet points. If you want, take 5 minutes to learn markdown [with this tutorial](http://markdowntutorial.com/).
 
 ## Build your website in 3 steps
 
 Getting started is *literally* as easy as 1-2-3 :smile:   
-Scroll down to see the steps involved, but here is a 45-second GIF just as a reference as you work through the steps.
+Scroll down to see the steps involved, but here is a 45-second GIF just as a reference as you work through the steps. You might need to wait a few seconds until the "video" gets back to its beginning.
 
 ![Installation steps](img/install-steps.gif)
 
 ### 1. Fork this repository 
 
-Fork this repository by clicking the Fork button on the top right corner.
+(Assuming you are on this page and logged in to GitHub) Fork this repository by clicking the Fork button on the top right corner.
 
 ### 2. Rename the repository to `yourusername.github.io`
 
-This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io within a couple minutes.
+This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io within a couple minutes.  To do this, click on "Settings" on the right (the picture of the tools) and there you'll have an option to rename.
 
-### 3. Customize settings
+### 3. Customize your website settings
 
-Edit the `_config.yml` file to change all the settings to reflect your site.  The settings in the file are fairly self-explanatory and I added comments inside the file to help you further.  Every time you make a change to any file, your website will get rebuilt and should be updated at `yourusername.github.io` within a minute.
+Edit the `_config.yml` file to change all the settings to reflect your site. To edit the file, click on it and then click on the pencil icon (watch the GIF tutorial above if you're confused).  The settings in the file are fairly self-explanatory and I added comments inside the file to help you further. Any line that begings with a pound sign (`#`) is a comment, and the rest of the lines are settings.
 
-You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages.
+After you save your changes to the config file (by clicking on "Commit changes" as the GIF tutorial shows), your website should be ready in a minute or two at `yourusername.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so.
 
-**Note:** The GIF above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well.**
+You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages. Your website is at `http://yourusername.github.io` (replace `yourusername` with your user name).
+
+**Note:** The GIF above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
 
 ### Add your own content
 
-To add pages to your site, you can either write a markdown file (`.md`) which will automatically get converted to HTML, or you can write an HTML file directly.  It is much easier to write mardown; you write normal text with a few styling identifiers, and Jekyll will know how to automatically render it as a pretty HTML page. Markdown is extremely easy to use, just [look at the reference](http://daringfireball.net/projects/markdown/syntax) and at  some files on the site to get an idea.
+To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write mardown than HTML, so I suggest you do that (use the tutorial above if you need). You can look at some files on the site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated that. Very easy!
 
-Any markdown or HTML file you add to the root directory will be immediately available on your site. Take a look at the `aboutme.md` and `index.html` files as examples. Any file inside the `_posts` directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.
+In contrast, look at [`index.html`](./index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
 
-### YAML front matter
-YAML is a way to use parameters to make the templating more useful. To take advantage of the template, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. If you don't want to use any special paramters, use the empty YAML front matter:
+Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.
+
+### YAML front matter - important
+
+In order to have your new pages use this template and not just be plain pages, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. This is where you'll give each page a title and possibly a subtitle, and some other parameters that I made available if you want. I'll go into more detail about what parameters are available later. You can also add your own custom parameters if you're comfortable with that. If you don't want to use any parameters on your new page, then use the empty YAML front matter:
 
 ```
 ---
 ---
 ```
 
-If you want to use any parameters, write them between the two lines. Look at `aboutme.md` or `index.html` as examples.
+If you want to use any parameters, write them between the two lines. Look at the top of [`aboutme.md`](./about.md) or [`index.html`](./index.html) as examples.
 
-**Always add the YAML front matter to every page, unless you specifically know that you want to bypass Jekyll.**
+** Important takeaway: always add the YAML front matter to every page, which is two lines with three dashes. If you have any parameters, they go between the two lines. **  
+If you don't include YAML then your file will not use the template.
 
 ### Features
 
@@ -73,7 +82,6 @@ Parameter   | Description
 layout      | What type of page this is (recommended options are `page`, `post`, or `minimal`)
 title       | Page or blog post title
 subtitle    | Short description of page or blog post
-keywords    | Comma-separated list of keywords for the current page (eg. "soccer, sports, barcelona, messi")
 js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
 css         | List of local CSS files to include in the page
