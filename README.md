@@ -43,7 +43,7 @@ In contrast, look at [`index.html`](./index.html). That's how your write HTML - 
 
 Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.
 
-### Last importnat thing: YAML front matter
+### Last important thing: YAML front matter
 
 In order to have your new pages use this template and not just be plain pages, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. This is where you'll give each page some parameters that I made available, such as a title and subtitle. I'll go into more detail about what parameters are available later. If you don't want to use any parameters on your new page (this also means having no title), then use the empty YAML front matter:
 
@@ -66,7 +66,7 @@ You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./inde
 **Important takeaway: always add the YAML front matter to every page, which is two lines with three dashes. If you have any parameters, they go between the two lines.**    
 If you don't include YAML then your file will not use the template.
 
-### Features
+## Features
 
 #### Mobile-first
 **Beautiful Jekyll** is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone and your gigantic iMac, and the site will work well on both, though it will look slightly different.
