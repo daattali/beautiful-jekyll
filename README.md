@@ -75,9 +75,11 @@ If you don't include YAML then your file will not use the template.
 
 Many personalization settings in `_config.yml`, such as setting your name and site's description, setting your avatar to add a little image in the navigation bar, and customizing what social media links to show in the footer
 
-#### Adding comments to blog posts
+#### Letting users leave comments
 
-If you want to enable comments on your blog posts, Beautiful Jekyll supports the [Disqus](disqus.com) comments plugin.  To use it, simply sign up to Disqus and add your Disqus shortname to the `disqus` parameter in the `_config.yml`.
+If you want to enable comments on your site, Beautiful Jekyll supports the [Disqus](disqus.com) comments plugin.  To use it, simply sign up to Disqus and add your Disqus shortname to the `disqus` parameter in the `_config.yml`.
+
+If the `disqus` parameter is set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
 
 #### Adding Google Analytics to track page views
 
@@ -99,6 +101,7 @@ Parameter   | Description
 layout      | What type of page this is (recommended options are `page`, `post`, or `minimal`)
 title       | Page or blog post title
 subtitle    | Short description of page or blog post
+comments    | If you want do add Disqus comments to a specific page, use `comments: true`. Comments are automatically enabled on blog posts, to turn comments off for a specific post, use `comments: false`. Comments only work if you set your Disqus id in the _config.yml file.
 js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
 css         | List of local CSS files to include in the page
