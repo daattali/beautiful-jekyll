@@ -77,6 +77,16 @@ img::-moz-selection {
   background: transparent;
 }
 
+.disqus-comments {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .disqus-comments {
+    margin-top: 40px;
+  }
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
@@ -320,16 +330,6 @@ header.header-post .post-heading .post-subheading {
   display: block;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-}
-
-.blog-comments {
-  margin-top: 30px;
-}
-
-@media only screen and (min-width: 768px) {
-  .blog-comments {
-    margin-top: 40px;
-  }
 }
 
 /* --- Pager --- */
