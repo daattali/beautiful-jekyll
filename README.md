@@ -73,18 +73,26 @@ If you don't include YAML then your file will not use the template.
 
 #### Personalization
 
-Many personalization settings in `_config.yml`, such as setting your avatar to add a little image in the navbar or customizing what social media links to show in the footer
+Many personalization settings in `_config.yml`, such as setting your name and site's description, setting your avatar to add a little image in the navigation bar, and customizing what social media links to show in the footer
+
+#### Adding comments to blog posts
+
+If you want to enable comments on your blog posts, Beautiful Jekyll supports the [Disqus](disqus.com) comments plugin.  To use it, simply sign up to Disqus and add your Disqus shortname to the `disqus` parameter in the `_config.yml`.
+
+#### Adding Google Analytics to track page views
+
+Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.  
 
 #### Page types
 
-- **post** - To write a blog post, place a file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see the YAML parameters that blog posts can use.
-- **page** - To add a non-blog page, place it in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
+- **post** - To write a blog post, add a markdown or HTML file in the `_posts` folder and assign `layout: post` in the YAML front matter. Look at the existing blog post files to see examples of how to use YAML parameters in blog posts.
+- **page** - To add a non-blog page, add a markdown or HTML file in the root directory and assign `layout: page` in the YAML front matter. Look at `aboutme.md` and `index.html` as examples.
 - **minimal** - To add a random page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal`.
-- To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter.
+- To write your own HTML page and completely bypass the Jekyll engine, simply omit the YAML front matter. Only do this if you know what you're doing.
 
 #### YAML front matter parameters
 
-There are all the parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
+These are the main parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
 
 Parameter   | Description
 ----------- | -----------
@@ -102,6 +110,8 @@ googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lob
 If you're not sure what the difference is, then ignore this section.
 
 If you want to use this theme for a project page for a specific repository instead of your main GitHub user page, that's no problem. The demo for this site ([daattali.github.io/beautiful-jekyll](http://deanattali.com/beautiful-jekyll)) is actually set up as a project page while my personal site ([daattali.github.io](http://deanattali.com)) is a regular user page.  The only difference is that in the `_config.yml`, you should set `baseurl` to be `/projectname` instead of `""`.
+
+To set up a GitHub Project page, simply fork this repository into a branch called `gh-pages` in your repository. Whatever is under the `gh-pages` branch will be served by Jekyll. Your site will be at `http://username.github.io/projectname/`.
 
 ---
 
