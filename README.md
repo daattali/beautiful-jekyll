@@ -108,6 +108,10 @@ css         | List of local CSS files to include in the page
 ex-css      | List of external CSS files to include in the page
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
+### RSS feed
+
+Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to add a link to your RSS feed in the footer of every page, find the `rss: false` line in `_config.yml` and change it to `rss: true`.
+
 ### GitHub Project page vs user page
 
 If you're not sure what the difference is, then ignore this section.
@@ -117,6 +121,10 @@ If you want to use this theme for a project page for a specific repository inste
 To set up a GitHub Project page, simply fork this repository into a branch called `gh-pages` in your repository. Whatever is under the `gh-pages` branch will be served by Jekyll. Your site will be at `http://username.github.io/projectname/`.
 
 ---
+
+### More advanced features
+
+I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
 
 ### Credits
 
