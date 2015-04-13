@@ -2,6 +2,8 @@
 
 **Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes or look at [my personal website](http://deanattali.com) to see it in use.
 
+If you need a bit of help or have comments, feel free to [contact me](http://deanattali.com/aboutme#contact).
+
 It is built on top of [Jekyll](http://jekyllrb.com/) and can be used for any [GitHub Pages](https://pages.github.com/) website.  If you don't know what Jekyll and GitHub Pages are, you can still use these instructions to build a site quickly, but it might make a little more sense if you read up on them just a little bit.
 
 ## Prerequisites
