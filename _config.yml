@@ -70,7 +70,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /:year-:month-:day-:title
 paginate: 5
