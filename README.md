@@ -6,6 +6,8 @@ If you need a bit of help or have comments, feel free to [contact me](http://dea
 
 It is built on top of [Jekyll](http://jekyllrb.com/) and can be used for any [GitHub Pages](https://pages.github.com/) website.  If you don't know what Jekyll and GitHub Pages are, you can still use these instructions to build a site quickly, but it might make a little more sense if you read up on them just a little bit.
 
+Feel free to modify this in any way you'd like, but I would appreciate it if you don't remove the attribution to Beautiful Jekyll. I've noticed that several people have copied this website but deliberately removed the tiny phrase that gives me credit, and it feels a bit sad to not get credit for the countless hours I've put into making this what it is. Don't make me sad! :)
+
 ## Prerequisites
 
 - You need to have a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `johnsmith.github.io`.  
