@@ -57,8 +57,9 @@ url-pretty: "deanattali.com/beautiful-jekyll"  # eg. "deanattali.com/beautiful-j
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""
 
-# Fill in your Google Analytics ID to track your website using GA
-# google_analytics: "UA-59820529-1"
+# Google Analytics
+google_analytics: 	UA-66399450-1
+google_verify: 		UA-66399450-1
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
