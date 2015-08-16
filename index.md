@@ -36,10 +36,10 @@ subtitle: Craig French's Research Page
 
 ### Work in Progress
 
-1. [On the Argument From Illusion]() (with Lee Walters). Draft, April 2015.
+1. [On the Argument From Illusion](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French__C___Walters__L_-_DRAFT_-_On_the_Argument_from_Illusion.pdf) (with Lee Walters). Draft, April 2015.
 
-2. [Balint's Syndrome and the Structure of Visual Experience](). Draft, March 2015.
+2. [Balint's Syndrome and the Structure of Visual Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French_2C_20C_20-_20DRAFT_20-_20Balints_20Syndrome_20and_20the_20Structure_20of_20Visual_20Experience.pdf). Draft, March 2015.
 
 ### Other
 
-1. [Visual Perception as a Means of Knowing](). PhD Thesis, University College London, 2012.
+1. [Visual Perception as a Means of Knowing](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202012%20-%20Visual%20Perception%20as%20a%20Means%20of%20Knowing%20%28PhD%29.pdf). PhD Thesis, University College London, 2012.
