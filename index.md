@@ -33,3 +33,13 @@ subtitle: Craig French's Research Page
 3. [Review of Berkeley's Puzzle](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Review%20of%20Berkeley%27s%20Puzzle.pdf), by John Campbell and Quassim Cassam, and The Innocent Eye, by Nico Orlandi. In *The Times Literary Supplement*, 2015. 
 
 4. [Review of Hallucination: Philosophy and Psychology](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Review%20of%20Hallucination.pdf), edited by Fiona Macpherson and Dimitris Platchias. In *Analysis*, 2015.
+
+### Work in Progress
+
+1. [On the Argument From Illusion]() (with Lee Walters). Draft, April 2015.
+
+2. [Balint's Syndrome and the Structure of Visual Experience](). Draft, March 2015.
+
+### Other
+
+1. [Visual Perception as a Means of Knowing](). PhD Thesis, University College London, 2012.
