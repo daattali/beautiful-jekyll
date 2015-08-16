@@ -4,9 +4,13 @@ title: Publications
 subtitle: Craig French Publications
 ---
 
-1. Forthcoming. The Problem of Perception. In the *Stanford Encyclopedia of Philosophy* (with Tim Crane)
+1. Forthcoming. The Problem of Perception. In *The Stanford Encyclopedia of Philosophy* (with Tim Crane)
 
-2. Forthcoming. [On the Particularity of Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20and%20Gomes%2C%20A%20-%202015%20-%20On%20the%20Particularity%20of%20Experience.pdf). In *Philosophical Studies* (with Anil Gomes).
+2. Forthcoming. [Idiosyncratic Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Idiosycratic%20Perception.pdf). In *The Philosophical Quarterly*
+
+3. Forthcoming. [On the Particularity of Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20and%20Gomes%2C%20A%20-%202015%20-%20On%20the%20Particularity%20of%20Experience.pdf). In *Philosophical Studies* (with Anil Gomes)
+
+4. Forthcoming. [Object Seeing and Spatial Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%20FINAL%20DRAFT%20-%20Object%20Seeing%20and%20Spatial%20Perception.pdf) in *Phenomenal Presence*, edited by Fabian Dorsch, Fiona Macpherson & Martine Nida-Rumelin, Oxford University Press
 
 
 <!-- <div class="posts-list">
