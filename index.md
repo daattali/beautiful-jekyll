@@ -20,7 +20,7 @@ subtitle: Craig French's Research Page
 
 7. [Naive Realist Perspectives on Seeing Blurrily](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202014%20-%20Naive%20Realist%20Perspectives%20on%20Seeing%20Blurrily.pdf). In a special edition of *Ratio* on *The Structure of Perceptual Experience*, 2014.
 
-8. [Perceptual Experience and Seeing that P](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202013%20-%20Perceptual%20Experience%20and%20Seeing%20that%20P.pdf). 
+8. [Perceptual Experience and Seeing that P](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202013%20-%20Perceptual%20Experience%20and%20Seeing%20that%20P.pdf). In *Synthese*, 2013.
 
 9. [Does Propositional Seeing Entail Propositional Knowledge?](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202012%20-%20Does%20Propositional%20Seeing%20Entail%20Propositional%20Knowledge.pdf) In *Theoria*, 2012.
 
