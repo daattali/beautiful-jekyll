@@ -28,4 +28,8 @@ subtitle: Craig French's Research Page
 
 1. Review of The Oxford Handbook to the Philosophy of Perception, edited by Mohan Matthen. In *Notre Dame Philosophical Reviews*. Forthcoming.
 
-2. Review of Objectivity and the Parochial, by Charles Travis. In *Mind*, 2015.
+2. [Review of Objectivity and the Parochial](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Review%20of%20Objectivity%20and%20the%20Parochial.pdf), by Charles Travis. In *Mind*, 2015.
+
+3. [Review of Berkeley's Puzzle](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Review%20of%20Berkeley%27s%20Puzzle.pdf), by John Campbell and Quassim Cassam, and The Innocent Eye, by Nico Orlandi. In *The Times Literary Supplement*, 2015. 
+
+4. [Review of Hallucination: Philosophy and Psychology](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Review%20of%20Hallucination.pdf), edited by Fiona Macpherson and Dimitris Platchias. In *Analysis*, 2015.
