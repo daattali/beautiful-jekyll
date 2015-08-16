@@ -27,7 +27,7 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: http://craigafrench.github.io
+  Home:
   
 # --- Footer options --- #
 
@@ -61,13 +61,6 @@ url-pretty: "deanattali.com/beautiful-jekyll"  # eg. "deanattali.com/beautiful-j
 # google_analytics: "UA-59820529-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
-markdown: redcarpet
-highlighter: pygments
-permalink: /:year-:month-:day-:title
-paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
