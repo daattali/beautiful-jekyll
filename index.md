@@ -4,7 +4,7 @@ title: Research
 subtitle: Craig French's Research Page
 ---
 
-# Peer Reviewed Publications
+### Peer Reviewed Publications
 
 1. The Problem of Perception. In *The Stanford Encyclopedia of Philosophy* (with Tim Crane). Forthcoming.
 
