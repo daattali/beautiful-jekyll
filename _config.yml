@@ -14,10 +14,10 @@ baseurl: "/public"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Craig French - Publications
+title: Craig French - Research
 
 # Short description of your site
-description: List of Publications
+description: Craig French's Research
 
 # --- Navigation bar options --- #
 
@@ -27,8 +27,7 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
-  Getting started: "getstarted"
+  Home: "http://craigafrench.github.io"
   
 # --- Footer options --- #
 
