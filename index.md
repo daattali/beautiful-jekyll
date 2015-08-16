@@ -23,3 +23,9 @@ subtitle: Craig French's Research Page
 8. [Perceptual Experience and Seeing that P](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202013%20-%20Perceptual%20Experience%20and%20Seeing%20that%20P.pdf). 
 
 9. [Does Propositional Seeing Entail Propositional Knowledge?](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202012%20-%20Does%20Propositional%20Seeing%20Entail%20Propositional%20Knowledge.pdf) In *Theoria*, 2012.
+
+### Reviews and Smaller Pieces
+
+1. Review of The Oxford Handbook to the Philosophy of Perception, edited by Mohan Matthen. In *Notre Dame Philosophical Reviews*. Forthcoming.
+
+2. Review of Objectivity and the Parochial, by Charles Travis. In *Mind*, 2015.
