@@ -6,11 +6,11 @@ subtitle: Craig French's Research Page
 
 ### Peer Reviewed Publications
 
-1. The Problem of Perception. In *The Stanford Encyclopedia of Philosophy* (with Tim Crane). Forthcoming.
+1. The Problem of Perception. In *The Stanford Encyclopedia of Philosophy* (with [Tim Crane](http://www.timcrane.com/)). Forthcoming.
 
 2. [Idiosyncratic Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Idiosycratic%20Perception.pdf). In *The Philosophical Quarterly*. Forthcoming.
 
-3. [On the Particularity of Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20and%20Gomes%2C%20A%20-%202015%20-%20On%20the%20Particularity%20of%20Experience.pdf). In *Philosophical Studies* (with Anil Gomes). Forthcoming.
+3. [On the Particularity of Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20and%20Gomes%2C%20A%20-%202015%20-%20On%20the%20Particularity%20of%20Experience.pdf). In *Philosophical Studies* (with [Anil Gomes](http://www.anilgomes.com/)). Forthcoming.
 
 4. [The Formulation of Epistemological Disjunctivism](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202014%20-%20The%20Formulation%20of%20Epistemological%20Disjunctivism.pdf). In *Philosophy and Phenomenological Research*. Forthcoming.
 
@@ -36,7 +36,7 @@ subtitle: Craig French's Research Page
 
 ### Work in Progress
 
-1. [On the Argument From Illusion](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French__C___Walters__L_-_DRAFT_-_On_the_Argument_from_Illusion.pdf) (with Lee Walters). Draft, April 2015.
+1. [On the Argument From Illusion](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French__C___Walters__L_-_DRAFT_-_On_the_Argument_from_Illusion.pdf) (with [Lee Walters](http://www.leewaltersphilosophy.co.uk/)). Draft, April 2015.
 
 2. [Balint's Syndrome and the Structure of Visual Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French_2C_20C_20-_20DRAFT_20-_20Balints_20Syndrome_20and_20the_20Structure_20of_20Visual_20Experience.pdf). Draft, March 2015.
 
