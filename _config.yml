@@ -29,7 +29,7 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   Home: ""
   Talks: "talks"
-  
+  CV:	"assets/CraigFrenchCV.pdf"
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
