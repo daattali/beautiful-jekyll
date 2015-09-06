@@ -382,36 +382,36 @@ header.header-post .post-heading .post-subheading {
 
 /* --- Tables --- */
 
-.blog-post table {
+table {
   padding: 0;
 }
-.blog-post table tr {
+table tr {
   border-top: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
-.blog-post table tr:nth-child(2n) {
+table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
-.blog-post table tr th {
+table tr th {
   font-weight: bold;
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
-.blog-post table tr td {
+table tr td {
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
-.blog-post table tr th :first-child,
-.blog-post table tr td :first-child {
+table tr th :first-child,
+table tr td :first-child {
   margin-top: 0;
 }
-.blog-post table tr th :last-child,
-.blog-post table tr td :last-child {
+table tr th :last-child,
+table tr td :last-child {
   margin-bottom: 0;
 }
