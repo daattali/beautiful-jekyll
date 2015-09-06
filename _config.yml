@@ -29,6 +29,7 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   Home: ""
   Getting started: "getstarted"
+  Featured users: "featured-users"
   
 # --- Footer options --- #
 
