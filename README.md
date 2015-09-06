@@ -8,6 +8,19 @@ Feel free to modify this in any way you'd like, but I would appreciate it if you
 
 If you need a bit of help or have comments, feel free to [contact me](http://deanattali.com/aboutme#contact). Even if you don't have anything important to say but found this useful, I'd love to [hear about it as well](http://deanattali.com/aboutme#contact). 
 
+### Table of contents
+
+- [Prerequisites](#prerequisites)
+- [Build your website in 3 steps](#build-your-website-in-3-steps)
+- [Add your own content](#add-your-own-content)
+- [Last important thing: YAML front matter](#last-important-thing-yaml-front-matter)
+- [Features](#features)
+- [More advanced features](#more-advanced-features)
+- [Credits](#credits)
+- [Contributions](#contributions)
+- [Featured users](#featured-users)
+- [Known limitations](#known-limitations)
+
 ## Prerequisites
 
 - You need to have a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `johnsmith.github.io`.  
@@ -135,20 +148,6 @@ To set up a GitHub Project page, simply fork this repository into a branch calle
 
 I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
 
-### Credits
-
-This template was not made entirely from scratch. I would like to give special thanks to:
-- [Barry Clark](https://github.com/barryclark) and his project [Jekyll Now](https://github.com/barryclark/jekyll-now), from whom I've taken several ideas and code snippets, as well as some documenation tips.
-- [Iron Summit Media](https://github.com/IronSummitMedia) and their project [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from which I've used some design ideas and some of the templating code for posts and pagination.
-
-I'd also like to thank [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/) for featuring Beautiful Jekyll in their Jekyll theme directory.
-
-### Contributions
-
-If you find anything wrong or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
-
-If you do fork this project to use as a template for your site, I would appreciate if you keep the link in the footer to this project.  I've noticed that several people who forked this repo removed the attribution and I would prefer to get the recognition if you do use this :)
-
 ### Featured users
 
 Beautiful Jekyll has been used in over 100 websites. Here is a hand-picked selection of some websites that use Beautiful Jekyll.
@@ -180,6 +179,20 @@ Beautiful Jekyll has been used in over 100 websites. Here is a hand-picked selec
 | [bkkkk.github.io](http://bkkkk.github.io) | Jacobo Blanco | Data scientist |
 | [chadchae.github.io](http://chadchae.github.io) | Chad Chae | Data analyst |
 | [trappmartin.github.io](http://trappmartin.github.io) | Martin Trapp | Machine learning researcher |
+
+### Credits
+
+This template was not made entirely from scratch. I would like to give special thanks to:
+- [Barry Clark](https://github.com/barryclark) and his project [Jekyll Now](https://github.com/barryclark/jekyll-now), from whom I've taken several ideas and code snippets, as well as some documenation tips.
+- [Iron Summit Media](https://github.com/IronSummitMedia) and their project [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from which I've used some design ideas and some of the templating code for posts and pagination.
+
+I'd also like to thank [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/) for featuring Beautiful Jekyll in their Jekyll theme directory.
+
+### Contributions
+
+If you find anything wrong or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
+
+If you do fork this project to use as a template for your site, I would appreciate if you keep the link in the footer to this project.  I've noticed that several people who forked this repo removed the attribution and I would prefer to get the recognition if you do use this :)
 
 ### Known limitations
 
