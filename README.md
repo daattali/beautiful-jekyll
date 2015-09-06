@@ -172,7 +172,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | Website | Who | What |
 | :------ |:--- | :--- |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
-| [scottsmerchek.com](http://scottsmerchek.com) | Scott Smerchek | Software developer) |
+| [scottsmerchek.com](http://scottsmerchek.com) | Scott Smerchek | Software developer |
 | [onebree.github.io](http://onebree.github.io) | Hunter Stevens | Web developer |
 | [drissamri.be](https://drissamri.be) | Driss Amri | Software engineer |
 | [adammckay.co.uk](http://adammckay.co.uk) | Adam McKay | Software developer |
