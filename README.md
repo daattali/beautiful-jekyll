@@ -141,7 +141,7 @@ This template was not made entirely from scratch. I would like to give special t
 - [Barry Clark](https://github.com/barryclark) and his project [Jekyll Now](https://github.com/barryclark/jekyll-now), from whom I've taken several ideas and code snippets, as well as some documenation tips.
 - [Iron Summit Media](https://github.com/IronSummitMedia) and their project [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from which I've used some design ideas and some of the templating code for posts and pagination.
 
-I'd also like to think [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/) for featuring Beautiful-Jekyll in their Jeyll theme directory.
+I'd also like to thank [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/) for featuring Beautiful-Jekyll in their Jeyll theme directory.
 
 ### Contributions
 
