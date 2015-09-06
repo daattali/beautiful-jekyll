@@ -152,6 +152,8 @@ I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-b
 
 To my huge surprise, Beautiful Jekyll has been used in over 100 websites in its first 6 months. Here is a hand-picked selection of some websites that use Beautiful Jekyll.
 
+Want your website featured here? [Contact me](http://deanattali.com/aboutme#contact) to let me know about your website.
+
 #### Project/company websites
 
 | Website | Description |
