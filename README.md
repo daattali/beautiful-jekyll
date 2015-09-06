@@ -16,9 +16,9 @@ If you need a bit of help or have comments, feel free to [contact me](http://dea
 - [Last important thing: YAML front matter](#last-important-thing-yaml-front-matter)
 - [Features](#features)
 - [More advanced features](#more-advanced-features)
+- [Featured users](#featured-users)
 - [Credits](#credits)
 - [Contributions](#contributions)
-- [Featured users](#featured-users)
 - [Known limitations](#known-limitations)
 
 ## Prerequisites
