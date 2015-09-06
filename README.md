@@ -171,6 +171,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 | Website | Who | What |
 | :------ |:--- | :--- |
+| [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [scottsmerchek.com](http://scottsmerchek.com) | Scott Smerchek | Software developer |
 | [onebree.github.io](http://onebree.github.io) | Hunter Stevens | Web developer |
