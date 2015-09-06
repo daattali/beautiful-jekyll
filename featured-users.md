@@ -7,7 +7,7 @@ To my huge surprise, Beautiful Jekyll has been used in over 100 websites in its 
 
 Want your website featured here? [Contact me](http://deanattali.com/aboutme#contact) to let me know about your website.
 
-#### Project/company websites
+### Project/company websites
 
 | Website | Description |
 | :------ |:----------- |
@@ -20,9 +20,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [organicrails.github.io](http://organicrails.github.io) | Ruby on Rails tutorial |
 | [esentire.github.io](https://esentire.github.io) | Blog about threats and malware |
 
-<br/>
-
-#### Personal websites
+### Personal websites
 
 | Website | Who | What |
 | :------ |:--- | :--- |
