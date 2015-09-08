@@ -165,7 +165,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
 | [pracademic.io](http://pracademic.io) | Quick tutorials in R |
 | [organicrails.github.io](http://organicrails.github.io) | Ruby on Rails tutorial |
-| [esentire.github.io](https://esentire.github.io) | Blog about threats and malware |
+| [esentire.github.io](https://esentire.github.io) | Blog about threats and malware | 
 
 #### Personal websites
 
