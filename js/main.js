@@ -1,3 +1,5 @@
+// Dean Attali / Beautiful Jekyll 2015
+
 // Shorten the navbar after scrolling a little bit down
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
