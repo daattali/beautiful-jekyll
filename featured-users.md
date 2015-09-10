@@ -35,3 +35,4 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [bkkkk.github.io](http://bkkkk.github.io) | Jacobo Blanco | Data scientist |
 | [chadchae.github.io](http://chadchae.github.io) | Chad Chae | Data analyst |
 | [trappmartin.github.io](http://trappmartin.github.io) | Martin Trapp | Machine learning researcher |
+| [billy.sh](http://billy.sh/) | Billy Vera | Systems engineer |
