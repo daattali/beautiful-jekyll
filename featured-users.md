@@ -12,7 +12,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | Website | Description |
 | :------ |:----------- |
 | [teampass.net](http://teampass.net) | Collaborative Passwords Manager |
-| [droglenc.github.io/fishR](http://droglenc.github.io/fishR) | R for Fisheries |
+| [derekogle.com/fishR](http://derekogle.com/fishR/) | Using R for Fisheries Analyses |
 | [bigdata.juju.solutions](http://bigdata.juju.solutions) | Creating Big Data solutions Juju Solutions |
 | [embedded.guide](http://embedded.guide) | Writing an Embedded OS |
 | [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
@@ -27,6 +27,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [scottsmerchek.com](http://scottsmerchek.com) | Scott Smerchek | Software developer |
+| [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
 | [onebree.github.io](http://onebree.github.io) | Hunter Stevens | Web developer |
 | [drissamri.be](https://drissamri.be) | Driss Amri | Software engineer |
 | [adammckay.co.uk](http://adammckay.co.uk) | Adam McKay | Software developer |
