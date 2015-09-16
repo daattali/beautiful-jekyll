@@ -95,16 +95,33 @@ exclude:
   - LICENSE
   - README.md
 
-# prose.io options
+# Prose.io options. 
+# If you wish to use Prose.io to update your blog, enter your siteurl below. 
 prose:
+  rooturl: '_posts'
+  siteurl: 'http://your-domain.com/'
+  media: 'img'
   ignore:
     - 404.html
     - LICENSE
     - feed.xml
-    - /_includes
+    - _config.yml
     - /_layouts
+    - /_includes
     - /css
     - /img
     - /js
-    
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+  
 # Beautiful Jekyll / Dean Attali
