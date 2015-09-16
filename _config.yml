@@ -95,11 +95,9 @@ exclude:
   - LICENSE
   - README.md
 
-# Prose.io options. 
-# If you wish to use Prose.io to update your blog, enter your siteurl below. 
+# prose.io config
 prose:
   rooturl: '_posts'
-  siteurl: 'http://your-domain.com/'
   media: 'img'
   ignore:
     - 404.html
@@ -117,11 +115,22 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
       - name: "subtitle"
         field:
           element: "textarea"
           label: "Subtitle"
           placeholder: "A description of your post."
           alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
   
 # Beautiful Jekyll / Dean Attali
