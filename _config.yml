@@ -127,6 +127,13 @@ prose:
           label: "Subtitle"
           placeholder: "A description of your post."
           alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
       - name: "published"
         field:
           element: "checkbox"
