@@ -161,6 +161,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [teampass.net](http://teampass.net) | Collaborative Passwords Manager |
 | [derekogle.com/fishR](http://derekogle.com/fishR/) | Using R for Fisheries Analyses |
 | [bigdata.juju.solutions](http://bigdata.juju.solutions) | Creating Big Data solutions Juju Solutions |
+| [joecks.github.io/clipboard-actions/](http://joecks.github.io/clipboard-actions/) | Clipboard Actions - an Android app |
 | [embedded.guide](http://embedded.guide) | Writing an Embedded OS |
 | [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
 | [pracademic.io](http://pracademic.io) | Quick tutorials in R |
