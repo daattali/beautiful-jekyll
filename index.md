@@ -38,7 +38,7 @@ subtitle: Craig French's Research Page
 
 1. [On the Argument From Illusion](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French__C___Walters__L_-_DRAFT_-_On_the_Argument_from_Illusion.pdf) (with [Lee Walters](http://www.leewaltersphilosophy.co.uk/)). Draft, April 2015.
 
-2. [Balint's Syndrome and the Structure of Visual Experience](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French_2C_20C_20-_20DRAFT_20-_20Balints_20Syndrome_20and_20the_20Structure_20of_20Visual_20Experience.pdf). Draft, March 2015.
+2. [Balint's Syndrome and the Structure of Visual Experience](https://www.dropbox.com/s/hp69rkwzdb3hl76/French%2C%20C%20-%20DRAFT%20-%20Balint%27s%20Syndrome%20and%20the%20Structure%20of%20Visual%20Experience.pdf?dl=0). Draft, September 2015.
 
 ### Other
 
