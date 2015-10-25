@@ -17,7 +17,6 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [joecks.github.io/clipboard-actions](http://joecks.github.io/clipboard-actions/) | Clipboard Actions - an Android app |
 | [embedded.guide](http://embedded.guide) | Writing an Embedded OS |
 | [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
-| [pracademic.io](http://pracademic.io) | Quick tutorials in R |
 | [organicrails.github.io](http://organicrails.github.io) | Ruby on Rails tutorial |
 | [esentire.github.io](https://esentire.github.io) | Blog about threats and malware |
 
@@ -29,7 +28,6 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [scottsmerchek.com](http://scottsmerchek.com) | Scott Smerchek | Software developer |
 | [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
-| [onebree.github.io](http://onebree.github.io) | Hunter Stevens | Web developer |
 | [drissamri.be](https://drissamri.be) | Driss Amri | Software engineer |
 | [adammckay.co.uk](http://adammckay.co.uk) | Adam McKay | Software developer |
 | [tomwhite.io](http://tomwhite.io) | Thomas White | Ecology PhD student |
