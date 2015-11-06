@@ -10,4 +10,12 @@ You can write regular [markdown](http://en.wikipedia.org/wiki/Markdown) here and
 
 ## Here is a secondary heading
 
+And here's a code chunk:
+
+~~~
+x <- 5 + 10
+print(x)
+~~~
+
 Got it?
+
