@@ -14,16 +14,16 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Data Science Beginner
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: A Daily Mark
 
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "http://img-storage.qiniudn.com/15-11-7/21019881.jpg"
 
 # List of links in the navigation bar
 navbar-links:
@@ -36,13 +36,13 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "users/3943160/daattali"
+  name: Norris
+  email: "maya_doomsday@163.com"
+  facebook: New Norris  # eg. daattali
+  github: Norris    # eg. daattali
+  twitter: New Norris   # eg. daattali
+  linkedin: later  # eg. "pub/dean-attali/8/946/143"
+  stackoverflow: later  # eg. "users/3943160/daattali"
  
 # Select which links to show in the footer
 footer-links-active:
@@ -69,7 +69,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "China/Xiamen"
 markdown: kramdown
 highlighter: pygments
 permalink: /:year-:month-:day-:title
