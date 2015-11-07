@@ -1,16 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: An Beginner of Data Science
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+来到这里朋友你好！本来打算详细的介绍一下自己，发现自己实在是平平庸庸，没有什么特点。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+噢 对了！
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+我有一个奇特的爱好就是讨厌吃肉包子，但是又特别喜欢肉包子。
+
+
+### 个人简介
+
+一直有梦想的狗。Data Science领域入门新手一只。
