@@ -19,7 +19,7 @@ print(x)
 
 And here is some code with syntax highlighting
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var foo = function(x) {
   return(x + 5);
 }
