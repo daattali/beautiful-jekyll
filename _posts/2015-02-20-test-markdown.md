@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Test markdown
+title: Example how to use markdown
 subtitle: Each post also has a subtitle
 ---
 
@@ -10,11 +10,18 @@ You can write regular [markdown](http://en.wikipedia.org/wiki/Markdown) here and
 
 ## Here is a secondary heading
 
-And here's a code chunk:
+Here's a code chunk:
 
 ~~~
 x <- 5 + 10
 print(x)
 ~~~
 
-Got it?
+And here is some code with syntax highlighting
+
+{% highlight javascript linenos %}
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+{% endhighlight %}
