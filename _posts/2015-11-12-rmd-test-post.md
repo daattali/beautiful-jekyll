@@ -22,4 +22,4 @@ a
 plot(1:10, 10:1)
 ```
 
-![plot of chunk someR](./figure/someR-1.png) 
+![plot of chunk someR](../figure/someR-1.png) 
