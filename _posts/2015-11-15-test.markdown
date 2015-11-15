@@ -1,0 +1,7 @@
+---
+published: true
+title: Test
+layout: post
+permalink: test
+---
+test
