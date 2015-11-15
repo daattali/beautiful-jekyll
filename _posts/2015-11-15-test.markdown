@@ -1,6 +1,6 @@
 ---
 published: true
-title: Test
+title: Test <h2 class="post-subheading">hi</h2>
 layout: post
 permalink: test
 ---
