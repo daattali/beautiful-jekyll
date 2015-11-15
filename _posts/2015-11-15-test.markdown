@@ -1,7 +1,6 @@
 ---
 published: true
-title: Test <h2 class="post-subheading">hi</h2>
+title: Test
 layout: post
-permalink: test
 ---
 test
