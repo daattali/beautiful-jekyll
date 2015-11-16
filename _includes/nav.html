@@ -11,13 +11,85 @@
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
+    	   <ul class="list-inline text-center footer-links">
+          {% if site.author.facebook and site.footer-links-active.facebook %}
+          <li>
+            <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.github and site.footer-links-active.github %}
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.twitter and site.footer-links-active.twitter %}
+          <li>
+            <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.email and site.footer-links-active.email %}
+          <li>
+            <a href="mailto:{{ site.author.email }}" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
+          <li>
+            <a href="https://linkedin.com/{{ site.author.linkedin }}" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
+          <li>
+            <a href="https://stackoverflow.com/{{ site.author.stackoverflow }}" title="StackOverflow">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+		  {% if site.footer-links-active.rss %}
+		  <li>
+			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
+			  <span class="fa-stack fa-lg">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+			  </span>
+			</a>
+		  </li>		
+          {% endif %}		  
+        </ul>
+     <!-- <ul class="nav navbar-nav navbar-right">
 	    {% for link in site.navbar-links %}
         <li>
 		  <a href="{{ site.baseurl }}/{{ link[1] }}">{{ link[0] }}</a>
 		</li>
 		{% endfor %}
-      </ul>
+      </ul> -->
     </div>
 	
 	{% if site.avatar %}
