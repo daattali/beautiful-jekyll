@@ -3,7 +3,7 @@ layout: page
 title: Curriculum Vitae
 ---
 
-# This is all template info. I will replace it with my own soon
+# This is all template info. I will replace it with real information soon.
 
 ## Education
 

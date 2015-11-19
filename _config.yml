@@ -30,8 +30,9 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   About: ""
   CV: "cv"
-  Photography: "http://www.rovingrichard.com"
-  
+  Travel blog: "http://www.rovingrichard.com"
+  Photography: "http://www.rovingrichard.com/photography"
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
