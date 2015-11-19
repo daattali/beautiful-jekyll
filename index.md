@@ -8,9 +8,9 @@ subtitle: Scientist | Traveller | Photographer | Writer
   <p>Page under construction.</p>
 </div>
 
-<button type="button" class="btn btn-default" id="contact-btn">
-  Test button
-</button>
+<div class="get-started-wrap">
+    <a class="btn btn-success btn-lg get-started-btn" href="https://isomerase.github.io">Test button!</a>
+  </div>
 
 
 <div class="posts-list">
