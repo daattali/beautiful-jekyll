@@ -30,7 +30,8 @@ navbar-links:
   Home: ""
   Getting started: "getstarted"
   Featured users: "featured-users"
-  
+  About me: "http://deanattali.com"
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
