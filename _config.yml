@@ -29,7 +29,7 @@ avatar: "/img/avatar-icon.png"
 # List of links in the navigation bar
 navbar-links:
   About: ""
-  CV: "CV"
+  CV: "cv"
   Photography: "http://www.rovingrichard.com"
   
 # --- Footer options --- #
