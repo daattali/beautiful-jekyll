@@ -8,6 +8,11 @@ subtitle: Scientist | Traveller | Photographer | Writer
   <p>Page under construction.</p>
 </div>
 
+<button type="button" class="btn btn-default" id="contact-btn">
+  Test button
+</button>
+
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
