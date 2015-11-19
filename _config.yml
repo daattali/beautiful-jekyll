@@ -30,6 +30,7 @@ navbar-links:
   Home: ""
   About Me: "aboutme"
   Contact: "contact"
+  Author's home: "http://deanattali.com"
   
 # --- Footer options --- #
 
