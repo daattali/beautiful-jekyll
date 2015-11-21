@@ -13,6 +13,7 @@ If you need a bit of help or have comments, feel free to [contact me](http://dea
 - [Prerequisites](#prerequisites)
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
 - [Add your own content](#add-your-own-content)
+- [Local Development](#local-development)
 - [Last important thing: YAML front matter](#last-important-thing-yaml-front-matter)
 - [Features](#features)
 - [More advanced features](#more-advanced-features)
@@ -63,6 +64,13 @@ In contrast, look at [`index.html`](./index.html). That's how your write HTML - 
 Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.
 
 As mentioned previously, you can use [prose.io](http://prose.io/) to add or edit files instead of doing it directly on GitHub, it can be a little easier that way.
+
+###Local Development on *nix and windows
+ - 1) Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com).
+ - 2) Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
+ - 3) Inside your repository folder call `vagrant up`
+ - 4) View your website at http://0.0.0.0:4000 on *nix or http://127.0.0.1:4000 on windows. 
+ - 5) Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
 ### Last important thing: YAML front matter
 
