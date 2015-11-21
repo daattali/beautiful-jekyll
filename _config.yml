@@ -92,9 +92,12 @@ defaults:
 
 # Exclude these files from production site
 exclude:
-  - CNAME
+  - Gemfile
+  - Gemfile.lock
   - LICENSE
   - README.md
+  - CNAME
+  - Vagrantfile
 
 # prose.io config
 prose:
