@@ -13,10 +13,10 @@ If you need a bit of help or have comments, feel free to [contact me](http://dea
 - [Prerequisites](#prerequisites)
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
 - [Add your own content](#add-your-own-content)
-- [Local Development](#local-development)
 - [Last important thing: YAML front matter](#last-important-thing-yaml-front-matter)
 - [Features](#features)
 - [More advanced features](#more-advanced-features)
+- [Advanced: local development](#advanced-local-development)
 - [Featured users](#featured-users)
 - [Credits](#credits)
 - [Contributions](#contributions)
@@ -64,13 +64,6 @@ In contrast, look at [`index.html`](./index.html). That's how your write HTML - 
 Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.
 
 As mentioned previously, you can use [prose.io](http://prose.io/) to add or edit files instead of doing it directly on GitHub, it can be a little easier that way.
-
-###Local Development on *nix and windows
- - 1) Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com).
- - 2) Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
- - 3) Inside your repository folder call `vagrant up`
- - 4) View your website at http://0.0.0.0:4000 on *nix or http://127.0.0.1:4000 on windows. 
- - 5) Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
 ### Last important thing: YAML front matter
 
@@ -155,6 +148,16 @@ To set up a GitHub Project page, simply fork this repository into a branch calle
 ### More advanced features
 
 I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
+
+### Advanced: Local development
+
+Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Folow these simple steps to do that with Vagrant:
+
+1. Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com)
+2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
+3. Inside your repository folder, run `vagrant up`
+4. View your website at `http://0.0.0.0:4000` on *nix or `http://127.0.0.1:4000` on Windows. 
+5. Commit any changes and push everything to the master branch of your GitHub repository. GitHub Pages will then rebuild and serve your website automatically.
 
 ### Featured users
 
