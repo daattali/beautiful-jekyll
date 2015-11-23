@@ -26,7 +26,7 @@ subtitle: Craig French's Research Page
 
 ### Reviews and Other Pieces
 
-1. [The Problem of Illusion for Naive Realism](https://www.dropbox.com/s/x383ueo23lprzna/French%2C%20C%20-%202015%20-%20The%20Problem%20of%20Illusion%20for%20Naive%20Realism.pdf?dl=0). For [the Brains Blog](http://philosophyofbrains.com/)
+1. [The Problem of Illusion for Naive Realism](https://www.dropbox.com/s/x383ueo23lprzna/French%2C%20C%20-%202015%20-%20The%20Problem%20of%20Illusion%20for%20Naive%20Realism.pdf?dl=0), for [the Brains Blog](http://philosophyofbrains.com/)
 
 2. Review of The Oxford Handbook to the Philosophy of Perception, edited by Mohan Matthen. In *Notre Dame Philosophical Reviews*. Forthcoming.
 
