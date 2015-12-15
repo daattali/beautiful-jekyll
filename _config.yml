@@ -27,10 +27,9 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Home: "http://joeyjiron06.github.io"
   About Me: "aboutme"
-  Author's home: "http://deanattali.com"
-  
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
@@ -38,12 +37,12 @@ navbar-links:
 author:
   name: Joey Jiron
   email: "joeyjiron06@gmail.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
+  facebook: joey.jiron  # eg. daattali
+  github: joeyjiron06    # eg. daattali
+  twitter: joeyjiron06   # eg. daattali
+  linkedin: joeyjiron  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
- 
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
@@ -51,12 +50,12 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
@@ -142,6 +141,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
