@@ -39,6 +39,9 @@ hr.small {
   border-color: inherit;
   border-radius: 3px;
 }
+img {
+    max-width: 100%;
+}
 
 .main-content {
   padding-top: 80px;
@@ -165,14 +168,14 @@ img::-moz-selection {
     width: 100px;
     margin-top: -50px;
   }
-  
+
   .navbar-custom .avatar-container  .avatar-img-border {
     width: 100%;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
   }
-  
+
   .navbar-custom .avatar-container  .avatar-img {
     width: 100%;
   }
@@ -217,7 +220,7 @@ footer .theme-by {
     font-size: 16px;
   }
 }
- 
+
 /* --- Post preview --- */
 
 .post-preview {
