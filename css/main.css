@@ -54,6 +54,18 @@ hr.small {
   padding: 15px inherit;
 }
 
+<<<<<<< HEAD
+=======
+.get-started-wrap {
+  text-align: center;
+}
+.get-started-btn {
+  padding: 15px 30px;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 .hideme {
   display: none;
 }
@@ -77,6 +89,7 @@ img::-moz-selection {
   background: transparent;
 }
 
+<<<<<<< HEAD
 img {
   max-width: 100%;
 }
@@ -91,6 +104,8 @@ img {
   }
 }
 
+=======
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 /* --- Navbar --- */
 
 .navbar-custom {
@@ -336,6 +351,19 @@ header.header-post .post-heading .post-subheading {
   border-bottom-left-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.blog-comments {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .blog-comments {
+    margin-top: 40px;
+  }
+}
+
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 /* --- Pager --- */
 
 .pager li a {
@@ -377,36 +405,63 @@ header.header-post .post-heading .post-subheading {
 
 /* --- Tables --- */
 
+<<<<<<< HEAD
 .blog-post table {
   padding: 0;
 }
 .blog-post table tr {
+=======
+table {
+  padding: 0;
+}
+table tr {
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
   border-top: 1px solid #cccccc;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 .blog-post table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 .blog-post table tr th {
+=======
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+table tr th {
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
   font-weight: bold;
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
+<<<<<<< HEAD
 .blog-post table tr td {
+=======
+table tr td {
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
   border: 1px solid #cccccc;
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
+<<<<<<< HEAD
 .blog-post table tr th :first-child,
 .blog-post table tr td :first-child {
   margin-top: 0;
 }
 .blog-post table tr th :last-child,
 .blog-post table tr td :last-child {
+=======
+table tr th :first-child,
+table tr td :first-child {
+  margin-top: 0;
+}
+table tr th :last-child,
+table tr td :last-child {
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
   margin-bottom: 0;
 }

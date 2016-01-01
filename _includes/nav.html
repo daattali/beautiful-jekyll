@@ -12,9 +12,15 @@
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
 	    {% for link in site.navbar-links %}
 	      {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
 	      {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
+=======
+      {% for link in site.navbar-links %}
+	{% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
+        {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
         <li>
           {% assign internal = true %}
           {% if before != after %}
@@ -31,7 +37,11 @@
 
 	      <a href="{{ linkurl }}">{{ link[0] }}</a>
 	      </li>
+<<<<<<< HEAD
 	    {% endfor %}
+=======
+      {% endfor %}
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
       </ul>
     </div>
 	
