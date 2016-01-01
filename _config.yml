@@ -4,60 +4,101 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (username.github.io) then use these settings:
+<<<<<<< HEAD
+url: "http://username.github.io"
+baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
+=======
 #url: "http://username.github.io"
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "http://daattali.github.io/beautiful-jekyll"
-baseurl: "/beautiful-jekyll"
+url: "http://davidcannatella.github.io/aweb"
+baseurl: "/aweb"
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Beautiful Jekyll
+<<<<<<< HEAD
+title: My website
 
 # Short description of your site
-description: Quickly build a beautiful Jekyll website
+description: A virtual proof that name is awesome!
+=======
+title: AmphibiaWeb
+
+# Short description of your site
+description: A one-stop source
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/awlogomed.jpg"
 
 # List of links in the navigation bar
 navbar-links:
   Home: ""
+<<<<<<< HEAD
+  About Me: "aboutme"
+  Author's home: "http://deanattali.com"
+  
+=======
   Getting started: "getstarted"
   Featured users: "featured-users"
   About me: "http://deanattali.com"
 
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Dean Attali
-  email: "daattali@gmail.com"
-  facebook: daattali
-  github: daattali
-  twitter: daattali
-  linkedin: "pub/dean-attali/8/946/143"
-  stackoverflow: "users/3943160/daattali"
+<<<<<<< HEAD
+  name: Some Person
+  email: "youremail@domain.com"
+  facebook: yourname  # eg. daattali
+  github: yourname    # eg. daattali
+  twitter: yourname   # eg. daattali
+  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
+  stackoverflow: yourlink  # eg. "3943160/daattali"
+=======
+  name: David Cannatella
+  email: "davidcannatella@gmail.com"
+#  facebook: daattali
+#  github: daattali
+#  twitter: daattali
+#  linkedin: "pub/dean-attali/8/946/143"
+#  stackoverflow: "users/3943160/daattali"
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
  
 # Select which links to show in the footer
 footer-links-active:
   rss: false
   facebook: true
   email: true
+<<<<<<< HEAD
   twitter: true
   github: true
+=======
+  twitter: false
+  github: false
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
   linkedin: false
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "deanattali.com/beautiful-jekyll"  # eg. "deanattali.com/beautiful-jekyll"
+<<<<<<< HEAD
+url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+=======
+## url-pretty: "deanattali.com/beautiful-jekyll"  # eg. "deanattali.com/beautiful-jekyll"
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 
 # --- Misc --- #
 
@@ -65,7 +106,11 @@ url-pretty: "deanattali.com/beautiful-jekyll"  # eg. "deanattali.com/beautiful-j
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-59820529-1"
+<<<<<<< HEAD
+#google_analytics: ""
+=======
+# google_analytics: "UA-59820529-1"
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -80,12 +125,78 @@ paginate: 5
 defaults:
   -
     scope:
+<<<<<<< HEAD
+      path: ""
+      type: "posts"
+    values:
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+=======
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
       path: "" # all files
     values:
       layout: "default"
 
 # Exclude these files from production site
 exclude:
+<<<<<<< HEAD
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - Vagrantfile
+
+# prose.io config
+prose:
+  rooturl: '_posts'
+  media: 'img'
+  ignore:
+    - 404.html
+    - LICENSE
+    - feed.xml
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /css
+    - /img
+    - /js
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post title"
+          placeholder: "Title"
+          alterable: true
+      - name: "subtitle"
+        field:
+          element: "textarea"
+          label: "Subtitle"
+          placeholder: "A description of your post."
+          alterable: true
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Enter date of post."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+          help: "Check to publish post, uncheck to hide."
+  
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189
+=======
   - CNAME
   - LICENSE
   - README.md
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8

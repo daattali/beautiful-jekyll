@@ -6,7 +6,14 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
+<<<<<<< HEAD
+  
+  {% if page.subtitle %}
+  <meta name="description" content="{{ page.subtitle }}">
+  {% endif %}
+=======
   <meta name="description" content="{{ site.description }}">
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -47,6 +54,9 @@
   {% endif %}
   
   <!-- Facebook OpenGraph tags -->
+<<<<<<< HEAD
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+=======
   {% if page.meta-title %}
   <meta property="og:title" content="{{ page.meta-title }}" />
   {% elsif page.title %}
@@ -55,6 +65,7 @@
   <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
   
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
   <meta property="og:type" content="website" />
   
   {% if page.id %}
@@ -65,7 +76,16 @@
   
   {% if page.fb-img %}
   <meta property="og:image" content="{{ page.fb-img }}" />
+<<<<<<< HEAD
+  {% elsif site.avatar %}
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% else %}
+  <meta property="og:image" content="" />
+  {% endif %}
+  
+=======
   {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}  
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 </head>

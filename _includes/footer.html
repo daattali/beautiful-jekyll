@@ -1,5 +1,9 @@
 <footer>
+<<<<<<< HEAD
+  <div class="container beautiful-jekyll-footer">
+=======
   <div class="container">
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -55,7 +59,11 @@
           {% endif %}
 		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
           <li>
+<<<<<<< HEAD
+            <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
+=======
             <a href="https://stackoverflow.com/{{ site.author.stackoverflow }}" title="StackOverflow">
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
@@ -75,6 +83,18 @@
           {% endif %}		  
         </ul>
         <p class="copyright text-muted">
+<<<<<<< HEAD
+		  {{ site.author.name }}
+		  &nbsp;&bull;&nbsp;
+		  {{ site.time | date: '%Y' }}
+		  
+		  {% if site.url-pretty %}
+		  &nbsp;&bull;&nbsp;
+		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+		  {% endif %}
+	    </p>
+	        <!-- Please don't remove this, keep my open source work credited :) -->
+=======
 		  &copy; {{ site.author.name }}
 		  &nbsp;&bull;&nbsp;
 		  {{ site.time | date: '%Y' }}
@@ -84,6 +104,7 @@
 		  <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
 		  {% endif %}
 	    </p>
+>>>>>>> 63a9ef8e17c3e72d70bcea12730100613ffcc6a8
 		<p class="theme-by text-muted">
 		  Theme by
 		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
