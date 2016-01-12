@@ -32,3 +32,12 @@ npm link name-of-your-addon
 ```
 
 Notice : `name-of-your-addon` corresponds the the name that is in in your `package.json`, specifically the `name` field.
+
+## Teardown
+
+Once you are done developing your new feature or whatever, you want to unlink your symbolic link. Just do the following :
+
+```bash
+cd path/to/your/ember/addon
+npm unlink
+```
