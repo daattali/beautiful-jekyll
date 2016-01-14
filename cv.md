@@ -7,7 +7,7 @@ title: Curriculum Vitae
 
 
 <button type="button" class="btn btn-success btn-lg" id="test-btn">
-[Download CV (pdf)](https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf)
+[Download CV (pdf)](https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf "Download CV as pdf")
 </button>{: style="color: white; text-align: center;" }
 
 
