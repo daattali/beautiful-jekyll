@@ -7,7 +7,9 @@ title: Curriculum Vitae
 
 <div class="get-started-wrap">
     <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download CV (pdf)</a>
-  </div>
+</div>
+<br/>  
+
 
 ## Education
 
