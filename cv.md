@@ -3,11 +3,11 @@ layout: page
 title: Curriculum Vitae
 ---
 
+# This page is incomplete. I will fill this out soon.
+
 <div class="get-started-wrap">
     <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download CV (pdf)</a>
   </div>
-
-# This is all template info. I will replace it with real information soon.
 
 ## Education
 
