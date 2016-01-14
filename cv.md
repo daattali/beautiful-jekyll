@@ -5,10 +5,12 @@ title: Curriculum Vitae
 
 # This page is incomplete. I will fill this out soon.
 
-<span style="color: white; text-align: center;">
-<button type="button" class="btn btn-success btn-lg" id="test-btn">
-[Download CV (pdf)](https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf "Download CV as pdf")
-</button></span>
+<center>
+<div class="get-started-wrap">
+  <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download CV (pdf)</a>
+</div>
+<br/>
+</center>
 
 
 {::comment}
