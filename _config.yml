@@ -73,7 +73,7 @@ footer-links-active:
 timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: pygments
-permalink: /:year-:month-:day-:title
+permalink: /:title
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
