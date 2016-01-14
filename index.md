@@ -5,12 +5,12 @@ subtitle: Scientist | Traveller | Photographer | Writer
 ---
 
 <div class="main-explain-area jumbotron">
-  <p>Page under construction.</p>
-</div>
+  <p>I'm a series of space-time events known to go by Richard, Ricardo, Rich (a misnomer), Dick*, and (in some circles) Rich Dick*.
 
-<div class="get-started-wrap">
-    <a class="btn btn-success btn-lg get-started-btn" href="https://isomerase.github.io">Test button!</a>
-  </div>
+*lies
+
+I'm a high tech low-life, an outdoorsy great indoorsman, a warmhearted, hotwired, heat-seeking cool customer; voice-activated, user-friendly, self-cleaning, and compostable. I'm attractive, proactive, psychoactive, and from time to time I'm radioactive. A high-concept, low profile, farfetched, close-range ballistic missionary. I'm a non-believer and an overachiever, laid-back but forward-thinking, a supercharged subversive, hands on but footloose, straight-up down to earth.</p>
+</div>
 
 
 <div class="posts-list">
