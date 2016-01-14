@@ -5,11 +5,11 @@ subtitle: Scientist | Traveller | Photographer | Writer
 ---
 
 <div class="main-explain-area jumbotron">
-  <p>I'm a series of space-time events known to go by Richard, Ricardo, Rich (a misnomer), Dick*, and (in some circles) Rich Dick*.
+  <p>I'm a series of space-time events known to go by Richard, Ricardo, Rich (a misnomer), Dick*, and (in some circles) Rich Dick*.</p>
 
-*lies
+<p>*lies</p>
 
-I'm a high tech low-life, an outdoorsy great indoorsman, a warmhearted, hotwired, heat-seeking cool customer; voice-activated, user-friendly, self-cleaning, and compostable. I'm attractive, proactive, psychoactive, and from time to time I'm radioactive. A high-concept, low profile, farfetched, close-range ballistic missionary. I'm a non-believer and an overachiever, laid-back but forward-thinking, a supercharged subversive, hands on but footloose, straight-up down to earth.</p>
+<p>I'm a high tech low-life, an outdoorsy great indoorsman, a warmhearted, hotwired, heat-seeking cool customer; voice-activated, user-friendly, self-cleaning, and compostable. I'm attractive, proactive, psychoactive, and from time to time I'm radioactive. A high-concept, low profile, farfetched, close-range ballistic missionary. I'm a non-believer and an overachiever, laid-back but forward-thinking, a supercharged subversive, hands on but footloose, straight-up down to earth.</p>
 </div>
 
 
