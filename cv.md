@@ -5,15 +5,16 @@ title: Curriculum Vitae
 
 # This page is incomplete. I will fill this out soon.
 
-<div class="get-started-wrap">
-    <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download CV (pdf)</a>
-</div>
-<br/>  
-
 
 <button type="button" class="btn btn-success btn-lg" id="test-btn">
-  another Test button
-</button>
+[Download CV (pdf)](https://github.com/isomerase/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf)
+</button>{: text-align: center;"}
+
+
+{::comment}
+This is a comment which is
+completely ignored.
+{:/comment}
 
 ## Education
 
