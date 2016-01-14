@@ -11,6 +11,10 @@ title: Curriculum Vitae
 <br/>  
 
 
+<button type="button" class="btn btn-default" id="contact-btn">
+  another Test button
+</button>
+
 ## Education
 
 #### **B.A. Chemistry/Biology** - *New College of Florida*, Florida, USA - 2007 / 2011
