@@ -11,7 +11,7 @@ title: Curriculum Vitae
 <br/>  
 
 
-<button type="button" class="btn btn-default" id="contact-btn">
+<button type="button" class="btn btn-success btn-lg" id="test-btn">
   another Test button
 </button>
 
