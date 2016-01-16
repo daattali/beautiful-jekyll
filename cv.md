@@ -5,6 +5,7 @@ published: true
 ---
 
 
+
 # This page is incomplete. I will fill this out soon.
 
 <center>
@@ -40,7 +41,7 @@ Project Title: *Ebbs and Glows: Quantifying Small RNA Concentrations in C. elega
 
 ## Projects
 
-#### *Mosquito thermal plume tracking* - [**University of Washington**](uw.edu), Dept. of Physiology and Biophysics, Seattle, WA, USA - 2015 → 2016
+#### **Mosquito thermal plume tracking** - [University of Washington](uw.edu), Dept. of Physiology and Biophysics, Seattle, WA, USA - 2015 → 2016
 
 Laboratory: [Adrienne Fairhall](www.fairhalllab.com) &nbsp;&nbsp;
 
@@ -48,22 +49,24 @@ I am currently a research scientist in Fairhall Lab. We're interested in answeri
 
 My current role in the project is creating models of mosquitoes tracking turbulent thermal plumes and benchmark those models against wind-tunnel behavioral data. In particular, I am creating driven, damped agent-based dynamical models which reproduce mosquito baseline flight and then test various strategies for plume navigation. These models will be further validated using electrophysiological and tethered flight data to test theories about multi-modal decision making.
 
-#### **Artist in residence** - [*Sir James Wallace Arts Trust*](www.wallaceartstrust.org.nz), Auckland, New Zealand - 2015 → 2016
+#### **Artist in residence** - [Sir James Wallace Arts Trust](www.wallaceartstrust.org.nz), Auckland, New Zealand - 2015 → 2016
+I worked as a photographer for Sir James and many of my works are now in circulation around public spaces in New Zealand.
 
 
-#### **Humpack Whale Census** - [*Kimberley Community Whale Research Project*](https://kimberleycommunitywhaleresearch.wordpress.com/), Murdudun, Australia - 2012
+#### **Humpack Whale Census** - [Kimberley Community Whale Research Project](https://kimberleycommunitywhaleresearch.wordpress.com/), Murdudun, Australia - 2012
 A community-initiated peer-review at the proposed site of the world’s second-largest liquefied gas processing port. Our peer-review’s estimates of humpback migration and breeding activity near James Price Point revealed gross discrepancies in the original oil conglomerate’s survey.
 
-#### **Mitochondrial dysfunction in Parkinson's Disease** - [*University of Washington*](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2015 → 2016
+#### **Mitochondrial dysfunction in Parkinson's Disease** - [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2015 → 2016
 
 Laboratory: [Leo Pallanck]() &nbsp;&nbsp;
 
 I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was published in PNAS.
 
-#### **Quantifying endogenous sRNA concentrations in _C. elegans_** - [*New College of Florida*](ncf.edu), Sarasota, FL, USA - 2010 → 2011
+#### **Quantifying endogenous sRNA concentrations in _C. elegans_** - [New College of Florida](ncf.edu), Sarasota, FL, USA - 2010 → 2011
 
 Laboratory: [Katherine Walstrom](link)
 
+My thesis proposes a model for RNA Helicase A function in endogenous _C. elegans_ RNAi pathways.
 ---
 
 ## Teaching, Volunteering, and Activism
