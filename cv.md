@@ -62,6 +62,8 @@ I helped establish a method to grow, stain, and image primary dopaminergic neura
 
 #### **Quantifying endogenous sRNA concentrations in _C. elegans_** - [*New College of Florida*](ncf.edu), Sarasota, FL, USA - 2010 → 2011
 
+Laboratory: [Katherine Walstrom](link)
+
 ---
 
 ## Teaching, Volunteering, and Activism
