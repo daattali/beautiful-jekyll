@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Curriculum Vitae
+published: true
 ---
+
 
 # This page is incomplete. I will fill this out soon.
 
@@ -28,7 +30,11 @@ Project Title: *Ebbs and Glows: Quantifying Small RNA Concentrations in C. elega
 
 ## Employment
 
-#### **Research Assistant** - [*University of Washington*](uw.edu), Seattle, WA, USA - 2015 / 2016
+#### **Research Assistant** - [*University of Washington*](uw.edu), Seattle, WA, USA - 2015 → 2016
+Laboratory: [Adrienne Fairhall](www.fairhalllab.com) &nbsp;&nbsp;
+Project Title: *Mosquito thermal plume tracking*
+
+#### **Artist in Residence** - [*Sir James Wallace Arts Trust*](www.wallaceartstrust.org.nz), Auckland, New Zealand - 2015 → 2016
 Laboratory: [Adrienne Fairhall](link) &nbsp;&nbsp;
 Project Title: *Mosquito thermal plume tracking*
 
@@ -37,5 +43,3 @@ Project Title: *Mosquito thermal plume tracking*
 ## Honours and Awards
 
 #### 2014 - [NIH PA-12-149 Supplement Grant](www.nih.gov) Grant to work in the Fairhall lab.
-
-
