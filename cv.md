@@ -53,17 +53,18 @@ My current role in the project is creating models of mosquitoes tracking turbule
 I worked as a photographer for Sir James and many of my works are now in circulation around public spaces in New Zealand.
 
 
-#### **Humpack Whale Census** - [Kimberley Community Whale Research Project](https://kimberleycommunitywhaleresearch.wordpress.com/), Murdudun, Australia - 2012
+#### Humpack Whale Census
+[Kimberley Community Whale Research Project](https://kimberleycommunitywhaleresearch.wordpress.com/), Murdudun, Australia - 2012
+
 A community-initiated peer-review at the proposed site of the world’s second-largest liquefied gas processing port. Our peer-review’s estimates of humpback migration and breeding activity near James Price Point revealed gross discrepancies in the original oil conglomerate’s survey.
 
-#### **Mitochondrial dysfunction in Parkinson's Disease** - [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2015 → 2016
-
-Laboratory: [Leo Pallanck]() &nbsp;&nbsp;
+#### Mitochondrial dysfunction in Parkinson's Disease
+_[Leo Pallanck](link) lab. [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2015 → 2016_
 
 I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was published in PNAS.
 
 #### Quantifying endogenous sRNA concentrations in _C. elegans_
-_[Katherine Walstrom](link) lab. _[New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2010 → 2011_
+_[Katherine Walstrom](link) lab. [New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2010 → 2011_
 
 My thesis proposes a model for RNA Helicase A function in endogenous _C. elegans_ RNAi pathways.
 
