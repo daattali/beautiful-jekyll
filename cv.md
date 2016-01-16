@@ -67,6 +67,7 @@ _[New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA
 Laboratory: [Katherine Walstrom](link)_
 
 My thesis proposes a model for RNA Helicase A function in endogenous _C. elegans_ RNAi pathways.
+
 ---
 
 ## Teaching, Volunteering, and Activism
