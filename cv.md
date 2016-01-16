@@ -62,7 +62,8 @@ Laboratory: [Leo Pallanck]() &nbsp;&nbsp;
 
 I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was published in PNAS.
 
-#### **Quantifying endogenous sRNA concentrations in _C. elegans_** - [New College of Florida](ncf.edu), Sarasota, FL, USA - 2010 → 2011
+#### Quantifying endogenous sRNA concentrations in _C. elegans_
+[New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2010 → 2011
 
 Laboratory: [Katherine Walstrom](link)
 
