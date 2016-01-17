@@ -23,12 +23,12 @@ I enjoy writing programs for my hobby projects in my free time to help others &m
 
 <p class="about-text">
 <span class="fa fa-paper-plane about-icon"></span>
-I love travelling, hiking, attending events (technical and non-technical), getting into philosophical or political debates, and interacting with new people :) Drawing is the other of my passions, and I try to make some sketches every once in a while. I try to change stereotypes one person at a time.
+A vivid traveler, a very easy to go guy who loves connecting with people and reads a lot in order to make sense out of a chaotic world. I take serious interest in national politics scenario, Geo-political events and try to keep myself well informed on stuff happening on International level. Drawing is the other of my passions, and I try to make some sketches every once in a while. I try to change stereotypes one person at a time.
 </p>
 
 <p class="about-text">
 <span class="fa fa-files-o about-icon"></span>
-The <strong><a href="./projects">projects</a></strong> page is a nice place to see some of my work, but you can also view my <a href="./files/Wahib_Android_Munich.pdf" target="_blank">resume</a>. 
+The <a href="./projects">projects</a> page is a nice place to see some of my work, but you can also view my <a href="./files/Wahib_Android_Munich.pdf" target="_blank">resume</a>. 
 </p>
 
 <p class="about-text">
