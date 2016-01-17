@@ -19,7 +19,7 @@ I completed <strong>MSc. Computer Science</strong> from <a href="http://www.in.t
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>. Eager to learn new technologies, interested in too many things.
+I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>. Eager to learn new technologies, interested in too many things and always on roller coaster for new ideas.
 </p>
 
 <p class="about-text">
