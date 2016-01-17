@@ -76,6 +76,9 @@ highlighter: pygments
 permalink: /:title
 paginate: 5
 
+gems:
+  - jekyll-sitemap
+
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
