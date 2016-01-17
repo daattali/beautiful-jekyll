@@ -1,3 +1,3 @@
-# homepage_stub
+# Richard Decal's personal website.
 
-Will become my homepage someday. Written on [prose.io](http://prose.io)
+Forked from beautiful-jekyll. Written on [prose.io](http://prose.io)
