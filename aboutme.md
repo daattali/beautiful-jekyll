@@ -9,7 +9,8 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-I'm a programmer currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and happily living in <strong>Munich, Germany</strong> with my wife.</p>
+I'm a programmer currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and happily living in <strong>Munich, Germany</strong> with my wife.
+</p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
@@ -18,17 +19,12 @@ I completed <strong>MSc. Computer Science</strong> from <a href="http://www.in.t
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>.
+I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>. Eager to learn new technologies, interested in too many things.
 </p>
 
 <p class="about-text">
 <span class="fa fa-paper-plane about-icon"></span>
 A vivid traveler, a very easy to go guy who loves connecting with people and reads a lot in order to make sense out of a chaotic world. I take serious interest in national politics scenario, Geo-political events and try to keep myself well informed on stuff happening on International level. Drawing is the other of my passions, and I try to make some sketches every once in a while. I try to change stereotypes one person at a time.
-</p>
-
-<p class="about-text">
-<span class="fa fa-files-o about-icon"></span>
-The <a href="./projects">projects</a> page is a nice place to see some of my work, but you can also view my <a href="./files/Wahib_Android_Munich.pdf" target="_blank">resume</a>. 
 </p>
 
 <p class="about-text">
