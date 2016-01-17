@@ -78,6 +78,7 @@ paginate: 5
 
 gems:
   - jekyll-sitemap
+  - github-pages
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
