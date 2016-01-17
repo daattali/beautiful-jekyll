@@ -58,15 +58,15 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "wahibhaq.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "wahibhaq.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+#disqus: "wahibulhaq"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-72521032-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
