@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: "Or: why you'd want to go on a date with me"
+subtitle: "Or: why you'd want to hangout with me"
 css: "/css/aboutme.css"
 ---
 
@@ -9,53 +9,39 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Previously worked as a <strong>software engineer</strong> (Google, IBM, <a href="http://tagged.com" target="_blank">Tagged.com</a>) and <strong>web
-developer</strong> in tiny startups (<a href="http://wish.com" target="_blank">Wish.com</a>,
-<a href="http://makeupbee.com" target="_blank">MakeupBee.com</a>,
-<a href="http://glittr.com" target="_blank">glittr.com</a>,
-<a href="http://jauntr.com" target="_blank">jauntr.com</a>).
-</p>
+I'm a programmer currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and living in <strong>Munich, Germany</strong> with my wife.</p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-Currently a graduate student in <strong>Bioinformatics</strong> at the University of British Columbia (supervised by
-<a href="http://www.stat.ubc.ca/~jenny/" target="_blank">Jenny Bryan</a>), with a Bachelor of <strong>Computer Science</strong> from the
-University of Waterloo, Canada. My thesis project involves developing computational methods to automatically analyze
-<a href="http://en.wikipedia.org/wiki/Digital_polymerase_chain_reaction" target="_blank">droplet digital PCR</a> data.
+I completed <strong>MSc. Computer Science</strong> from <a href="http://tum.de" target="_blank">Technical University of Munich</a> in 2015.
 </p>
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I enjoy writing <strong>useful & reusable software tools</strong> to help others &mdash; check out <a href="./projects">my projects</a>. I have also
-recently become an avid and active R useR.
+I enjoy building useful products to help others &mdash; check out <a href="./projects">my projects</a>.
 </p>
 
 <p class="about-text">
-<span class="fa fa-heart about-icon"></span>
-I'm addicted to soccer, <strong>travelling</strong> at any given (and non-given) moment, getting into philosophical debates,
-and meeting new people :) 
+<span class="fa fa-paper-plane about-icon"></span>
+I love travelling, hiking, attending events (technical and non-technical), getting into philosophical or political debates, and interacting with new people :) Drawing is the other of my passions, and I try to make some sketches every once in a while.
 </p>
 
 <p class="about-text">
-<span class="fa fa-file-text-o about-icon"></span>
-The <strong><a href="./projects">projects</a></strong> page is a nice place to see some of my work, but you can also view my (somewhat outdated) <a href="./files/DeanAttaliResumeEU.pdf" target="_blank">resume</a>. 
+<span class="fa fa-code-fork about-icon"></span>
+The <strong><a href="./projects">projects</a></strong> page is a nice place to see some of my work, but you can also view my <a href="./files/Wahib_Android_Munich.pdf" target="_blank">resume</a>. 
 </p>
 
 <p class="about-text">
-<span class="fa fa-globe about-icon"></span>
-Grew up in <i>Tel Aviv, Israel</i>, moved to <i>Toronto, Canada</i> during my teens, worked in <i>San Francisco</i> after undergrad, crossed the border again to <i>Vancouver, Canada</i> for grad school, spent many months in other countries backpacking.
-</p>
-
-<p>I also have <a href="https://deanat78.wordpress.com/">an old blog</a>, mostly from high school and some old travelling trips, that I'll leave here just because I want to have a reference to it somewhere.</p>
+<span class="fa fa-heartbeat about-icon"></span>
+I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more about my multi-faceted homeland, <img src="/img/pakistan-flag.png" width="25" height="25">Pakistan then don't hesitate visiting <a href="./pakistan-unveiled">Pakistan Unveiled</a>.
 
 </div>
 
+<!--
 <div id="contactme-section">
 <h1 id="contact">Contact</h1>
 
-<p>You can find <a href="mailto:daattali@gmail.com">my email</a> and social media links at the bottom of every page. As I said, I love meeting new people so don't hesitate to send a message!</p>
-<p>I've done some consulting work in R and general web development, though mostly with Shiny apps, so feel free to contact me if you want to discuss something like that.</p>
-<p>If you're contacting me for technical help/advice, please consider looking at the <a href="#feed-meeee">feed me section</a> below :)</p>
+<p>You can find <a href="mailto:wahib.tech@gmail.com">my email</a> and social media links at the bottom of every page. I would love talking to you about anything or maybe helping you so don't hesitate to send a message!</p>
 
 <form action="https://formspree.io/daattali@gmail.com" method="POST" class="form" id="contact-form">
   <p>You can also send me a quick message using the form below:</p>
@@ -75,7 +61,9 @@ Grew up in <i>Tel Aviv, Israel</i>, moved to <i>Toronto, Canada</i> during my te
 </form>
 
 </div>
+-->
 
+<!--
 <br/><br/>
 <hr class="small" />
 
@@ -107,3 +95,4 @@ Grew up in <i>Tel Aviv, Israel</i>, moved to <i>Toronto, Canada</i> during my te
     If you do click the Donate button, I thank you immensely!
   </p>
 </div>
+-->
