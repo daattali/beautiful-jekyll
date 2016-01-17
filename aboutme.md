@@ -9,31 +9,31 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-I'm a programmer currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and living in <strong>Munich, Germany</strong> with my wife.</p>
+I'm a programmer currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and happily living in <strong>Munich, Germany</strong> with my wife.</p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I completed <strong>MSc. Computer Science</strong> from <a href="http://tum.de" target="_blank">Technical University of Munich</a> in 2015.
+I completed <strong>MSc. Computer Science</strong> from <a href="http://www.in.tum.de/en.html" target="_blank">Technical University of Munich</a> in 2015 and <strong>BSc. Information and Communication Systems Engingeering</strong> from <a href="http://seecs.nust.edu.pk" target="_blank">NUST School of Electrical Engineering and Computer Science</a> in 2011.
 </p>
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I enjoy building useful products to help others &mdash; check out <a href="./projects">my projects</a>.
+I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>.
 </p>
 
 <p class="about-text">
 <span class="fa fa-paper-plane about-icon"></span>
-I love travelling, hiking, attending events (technical and non-technical), getting into philosophical or political debates, and interacting with new people :) Drawing is the other of my passions, and I try to make some sketches every once in a while.
+I love travelling, hiking, attending events (technical and non-technical), getting into philosophical or political debates, and interacting with new people :) Drawing is the other of my passions, and I try to make some sketches every once in a while. I try to change stereotypes one person at a time.
 </p>
 
 <p class="about-text">
-<span class="fa fa-code-fork about-icon"></span>
+<span class="fa fa-files-o about-icon"></span>
 The <strong><a href="./projects">projects</a></strong> page is a nice place to see some of my work, but you can also view my <a href="./files/Wahib_Android_Munich.pdf" target="_blank">resume</a>. 
 </p>
 
 <p class="about-text">
 <span class="fa fa-heartbeat about-icon"></span>
-I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more about my multi-faceted homeland, <img src="/img/pakistan-flag.png" width="25" height="25">Pakistan then don't hesitate visiting <a href="./pakistan-unveiled">Pakistan Unveiled</a>.
+I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more about my multi-faceted homeland, Pakistan <img src="/img/pakistan-flag.png" width="25" height="25"> then don't hesitate visiting <a href="./pakistan-unveiled">Pakistan Unveiled</a>.
 
 </div>
 
