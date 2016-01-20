@@ -29,7 +29,7 @@ A vivid traveler, a very easy to go guy who loves connecting with people and rea
 
 <p class="about-text">
 <span class="fa fa-heartbeat about-icon"></span>
-I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. My multi-faceted homeland, Pakistan is widely misunderstood so try to help International people in getting a more real picture and change misconceptions about Pakistanis, one person a day. If you are curious to know more about Pakistan <img src="/img/pakistan-flag.png" width="25" height="25"> then don't hesitate visiting <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
+I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. My multi-faceted homeland, Pakistan <img src="/img/pakistan-flag.png" width="25" height="25"> is widely misunderstood so try to help International people in getting a more real picture and change misconceptions about Pakistanis, one person a day. If you are curious to know more then do visit <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
 
 </div>
 
