@@ -9,27 +9,27 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-I'm a programmer currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and happily living in <strong>Munich, Germany</strong> with my wife.
+I'm a programmer, currently working as an <strong>Android Developer</strong> at <a href="http://freeletics.com" target="_blank">Freeletics</a> and happily living in <strong>Munich, Germany</strong> with my wife.
 </p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I completed <strong>MSc. Computer Science</strong> from <a href="http://www.in.tum.de/en.html" target="_blank">Technical University of Munich</a> in 2015 and <strong>BSc. Information and Communication Systems Engingeering</strong> from <a href="http://seecs.nust.edu.pk" target="_blank">NUST School of Electrical Engineering and Computer Science</a> in 2011.
+I have done <strong>MSc. Computer Science</strong> from <a href="http://www.in.tum.de/en.html" target="_blank">Technical University of Munich</a>, Germany in 2015 and <strong>BSc. Information and Communication Systems Engingeering</strong> from <a href="http://seecs.nust.edu.pk" target="_blank">NUST School of Electrical Engineering and Computer Science</a>, Pakistan in 2011.
 </p>
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>. Eager to learn new technologies, interested in too many things and always on roller coaster for new ideas.
+I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>. I try my best to dedicate sufficient amount of time and energy in learning new technologies and keeping a close check on what's new happening in programming world and tech startups.  
 </p>
 
 <p class="about-text">
 <span class="fa fa-paper-plane about-icon"></span>
-A vivid traveler, a very easy to go guy who loves connecting with people and reads a lot in order to make sense out of a chaotic world. I take serious interest in national politics scenario, Geo-political events and try to keep myself well informed on stuff happening on International level. Drawing is the other of my passions, and I try to make some sketches every once in a while. I try to change stereotypes one person at a time.
+A vivid traveler, a very easy to go guy who loves connecting with people and reads a lot in order to make sense out of a chaotic world. I take serious interest in national politics scenario, Geo-political events and try to keep myself well informed on stuff happening on International level. In free time, I usually watch a movie and sometimes I also do Pencil sketching as it is another of my hobby.
 </p>
 
 <p class="about-text">
 <span class="fa fa-heartbeat about-icon"></span>
-I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more about my multi-faceted homeland, Pakistan <img src="/img/pakistan-flag.png" width="25" height="25"> then don't hesitate visiting <a href="./pakistan-unveiled">Pakistan Unveiled</a>.
+I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. My multi-faceted homeland, Pakistan is widely misunderstood so try to help International people in getting a more real picture and change misconceptions about Pakistanis, one person a day. If you are curious to know more about Pakistan <img src="/img/pakistan-flag.png" width="25" height="25"> then don't hesitate visiting <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
 
 </div>
 
