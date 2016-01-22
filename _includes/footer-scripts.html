@@ -4,12 +4,6 @@
   {% endfor %}
 {% endif %}
 
-{% if page.common-js %}
-  {% for js in page.common-js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-  {% endfor %}
-{% endif %}
-
 {% if page.ext-js %}
   {% for js in page.ext-js %}
 	<script src="{{ js }}"></script>
@@ -19,6 +13,21 @@
 {% if page.js %}
   {% for js in page.js %}
 	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+  {% endfor %}
+{% endif %}
+
+{% if page.common-js %}
+  {% for js in page.common-js %}
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    {% if js contains 'jquery' %}
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
+      	}
+      </script>
+    {% else %}
+	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+    {% endif %}
   {% endfor %}
 {% endif %}
 
