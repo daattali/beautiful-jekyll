@@ -19,12 +19,12 @@ I have done <strong>MSc. Computer Science</strong> from <a href="http://www.in.t
 
 <p class="about-text">
 <span class="fa fa-paper-plane about-icon"></span>
-I try to keep myself updated with the latest, coolest new trends in Programming, Android and Technology. I tend to keep looking for problems to work on as a hobby project, usually trying out a new library or programming language or the proverbial itch that needs scratching. Whatever it is, it would go in <a href="./projects">my projects</a> section. In my free time, I love travelling, any outdoor activity, hanging out with friends or watching a good movie at home.
+I strive to keep myself up-to-date with the latest, coolest new trends in Programming, Android and Tech Startups. I tend to keep looking for problems to work on as a hobby project, usually trying out a new library or programming language or the proverbial itch that needs scratching. Whatever it is, it would go in <a href="./projects">my projects</a> section. In my free time, I love travelling, any outdoor activity, hanging out with friends or watching a good movie at home.
 </p>
 
 <p class="about-text">
 <span class="fa fa-heartbeat about-icon"></span>
-I was born and bred in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more my multi-faceted homeland, Pakistan <img src="/img/pakistan-flag.png" width="25" height="25">, then do visit <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
+I was born and bred in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more about multifaceted Pakistan <img src="/img/pakistan-flag.png" width="25" height="25">, then do visit <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
 
 </div>
 
