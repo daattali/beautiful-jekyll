@@ -18,18 +18,13 @@ I have done <strong>MSc. Computer Science</strong> from <a href="http://www.in.t
 </p>
 
 <p class="about-text">
-<span class="fa fa-code about-icon"></span>
-I enjoy writing programs for my hobby projects in my free time to help others &mdash; check out <a href="./projects">my projects</a>. I try my best to dedicate sufficient amount of time and energy in learning new technologies and keeping a close check on what's new happening in programming world and tech startups.  
-</p>
-
-<p class="about-text">
 <span class="fa fa-paper-plane about-icon"></span>
-A vivid traveler, a very easy to go guy who loves connecting with people and reads a lot in order to make sense out of a chaotic world. I take serious interest in national politics scenario, Geo-political events and try to keep myself well informed on stuff happening on International level. In free time, I usually watch a movie and sometimes I also do Pencil sketching as it is another of my hobby.
+I try to keep myself updated with the latest, coolest new trends in Programming, Android and Technology. I tend to keep looking for problems to work on as a hobby project, usually trying out a new library or programming language or the proverbial itch that needs scratching. Whatever it is, it would go in <a href="./projects">my projects</a> section. In my free time, I love travelling, any outdoor activity, hanging out with friends or watching a good movie at home.
 </p>
 
 <p class="about-text">
 <span class="fa fa-heartbeat about-icon"></span>
-I was born, raised, and trained in the arts of programming and life in <strong>Rawalpindi, Pakistan</strong>. My multi-faceted homeland, Pakistan <img src="/img/pakistan-flag.png" width="25" height="25"> is widely misunderstood so try to help International people in getting a more real picture and change misconceptions about Pakistanis, one person a day. If you are curious to know more then do visit <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
+I was born and bred in <strong>Rawalpindi, Pakistan</strong>. If you are curious to know more my multi-faceted homeland, Pakistan <img src="/img/pakistan-flag.png" width="25" height="25">, then do visit <a href="./pakistan-unveiled">Pakistan Unveiled</a>. 
 
 </div>
 
