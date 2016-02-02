@@ -71,8 +71,8 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
 markdown: kramdown
-highlighter: pygments
-permalink: /:year-:month-:day-:title
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
