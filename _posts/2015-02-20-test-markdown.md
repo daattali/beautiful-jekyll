@@ -23,5 +23,5 @@ And here is some code with syntax highlighting
 var foo = function(x) {
   return(x + 5);
 }
-foo(3)
+foo(3);
 ```
