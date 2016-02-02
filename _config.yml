@@ -73,7 +73,7 @@ google_analytics: "UA-59820529-1"
 timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title
+permalink: /:year-:month-:day-:title/
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
