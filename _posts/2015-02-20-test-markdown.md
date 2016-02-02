@@ -23,9 +23,9 @@ print(x)
 
 And here is some code with syntax highlighting
 
-{% highlight javascript linenos %}
+```javascript
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
-{% endhighlight %}
+```
