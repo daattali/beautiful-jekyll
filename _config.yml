@@ -8,7 +8,7 @@ exclude:
    - Vagrantfile
 
 name: Tudor Saitoc
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 permalink: /:year/:month/:title/
 url: tudr.github.io
