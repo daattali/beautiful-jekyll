@@ -1,3 +1,12 @@
+# Exclude these files from production site
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - LICENSE
+   - README.md
+   - CNAME
+   - Vagrantfile
+
 name: Tudor Saitoc
 markdown: redcarpet
 pygments: true
@@ -5,4 +14,4 @@ permalink: /:year/:month/:title/
 url: tudr.github.io
 author:
     name: Tudor Saitoc
-    twitter: @tudorsnyc
+#    twitter: @tudorsnyc
