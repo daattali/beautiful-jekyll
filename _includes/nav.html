@@ -22,7 +22,7 @@
               {% assign internal = false %}
             {% endif %}
           {% endif %}
-        	
+
         {% if internal %}
           {% capture linkurl %}{{ site.baseurl }}/{{ link[1] }}{% endcapture %}
         {% else %}
@@ -34,8 +34,8 @@
 	    {% endfor %}
       </ul>
     </div>
-	
-	{% if site.avatar %}
+
+	{% if site.avatar and page.show-avatar %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
@@ -44,6 +44,6 @@
 	  </div>
 	</div>
 	{% endif %}
-	
+
   </div>
-</nav>  
+</nav>
