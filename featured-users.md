@@ -32,4 +32,4 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [rikosjett.no](http://rikosjett.no) | Ronnie André Bjørvik Sletta | I'm not sure, his website is in Norwegian... |
 | [bkkkk.github.io](http://bkkkk.github.io) | Jacobo Blanco | Data scientist |
 | [trappmartin.github.io](http://trappmartin.github.io) | Martin Trapp | Machine learning researcher |
-| [selimsalihovic.github.io/](http://selimsalihovic.github.io) | Selim Salihovic | Software Developer |
+| [selimsalihovic.github.io](http://selimsalihovic.github.io) | Selim Salihovic | Software Developer |
