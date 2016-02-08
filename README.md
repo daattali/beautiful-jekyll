@@ -129,7 +129,7 @@ css         | List of local CSS files to include in the page
 ex-css      | List of external CSS files to include in the page
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 fb-img      | If you want to share a page on Facebook, by default Facebook will use the first image it can find on the page.  If you want to specify an image to use when sharing the page on Facebook, then provide the image's URL here
-show_avatar | If you have an avatar configured in the _config.yml but you don't want to appear on every page you can turn it off by removing this flag from the default layout (_layouts/default.html)  and enable it only on the pages where you want to. Note: the specific value doesn't matter only whether it's defined or not.
+show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`. If you want to turn it off by default, change `show-avatar` to `false` in the file `_layouts/default.html` and then you can selectively turn it on in specific pages using `show-avatar: true`
 
 ### RSS feed
 
