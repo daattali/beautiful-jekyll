@@ -1,6 +1,10 @@
-## IMPORTANT NOTE: If you've been using Beautiful-Jekyll for a while and it all of a sudden broke after Feb 1, 2016, do not panic. It's because GitHub upgraded to a newer version of Jekyll, and it unfortunately broke tons of websites. To fix your website, there are two files you need to change: [`_includes/head.html`](./_includes/head.html) and [`_includes/footer-scripts.html`](_includes/footer-scripts.html). You need to edit your version of these two files and change them to match my version (click on the links in the previous sentence to see my version).
+## IMPORTANT NOTE
 
-### IMPORTANT NOTE 2: During February/March 2016 I will be extremely busy trying to write my thesis, so please do not send me private emails asking for personal help. Help me graduate :)
+#### If you've been using Beautiful-Jekyll for a while and it all of a sudden broke after Feb 1, 2016, do not panic. It's because GitHub upgraded to a newer version of Jekyll, and it unfortunately broke tons of websites. To fix your website, there are two files you need to change: [`_includes/head.html`](./_includes/head.html) and [`_includes/footer-scripts.html`](_includes/footer-scripts.html). You need to edit your version of these two files and change them to match my version (click on the links in the previous sentence to see my version).
+
+### IMPORTANT NOTE 2:
+
+#### During February/March 2016 I will be extremely busy trying to write my thesis, so please do not send me private emails asking for personal help. Help me graduate :)
 
 
 # Beautiful Jekyll
