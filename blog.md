@@ -1,16 +1,8 @@
 ---
 layout: page
 title: RyCUMA
-subtitle: Investigadores "Ramón y Cajal" en la Universidad de Málaga
+subtitle: Noticias
 ---
-
-<div class="row">
-  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <div class="main-explain-area jumbotron">
-  El subprograma "Ramón y Cajal" comienza en el año...
-    </div>
-  </div>
-</div>
 
 <div class="posts-list">
   {% for post in paginator.posts %}
