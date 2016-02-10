@@ -1,16 +1,39 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: RyCUMA
+subtitle: Nuestro colectivo / Our members
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### 2015
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### 2014
 
-What else do you need?
+### 2013
 
-### my history
+### 2012
+- POSÉ PADILLA, DAVID
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### 2011
+- OSORIO ALGAR, SONIA
+- ROMERO HINOJOSA, DIEGO FRANCISCO
+- MATAS ARROYO, ANTONIO JAVIER
+
+### 2010
+- DIAZ RAMOS, ANTONIO
+- PALANCO LOPEZ, SANTIAGO
+- RUIZ DELGADO, MARIA DEL CARMEN
+
+###
+
+- HENDRIX, ELIGIUS MARIA THEODORUS (ARQUITECTURADECOMPUTADORES) ES.T.S.I. DE INFORMATICA
+- GARCIA RANEA, JUAN ANTONIO (BIOLOGIA MOLECULAR Y BIOQUIMIICA) FACULTAD DE CIENCIAS
+- MORENO TOST, RAMON (QUIM. INORG.,CRISTALOG. Y MINERALOGIA) FACULTAD DE CIENCIAS
+- SANTACRUZ CRUZ, MARIA ISABEL (QUIM. INORG.,CRISTALOG. Y MINERALOGIA) FACULTAD DE CIENCIAS
+- PELAEZ MARQUEZ, JOSE ANGEL  (ANALISIS MATEMATICO) FACULTAD DE CIENCIAS
+- SUAREZ MARIN, MARIA FERNANDA (BIOLOGIA MOLECULAR Y BIOQUIMIICA) FACULTAD DE CIENCIAS
+- Julia Bejar Alvarado (BIOLOGÍA CELULAR, GENÉTICA Y FISIOLOGÍA) FACULTAD DE CIENCIAS
+- Maria Segovia Azcorra (ECOLOGÍA Y GEOLOGÍA) FACULTAD DE CIENCIAS
+- Jose Lozano Castro (BIOLOGÍA MOLECULAR Y BIOQUÍMICA) FACULTAD DE CIENCIAS
+- Francisco Javier Ruiz Canton (BIOLOGÍA MOLECULAR Y BIOQUÍMICA) FACULTAD DE CIENCIAS
+- Francisco Javier Lopez Gordillo (COLOGÍA Y GEOLOGÍA) FACULTAD DE CIENCIAS
+- Ana Grande Perez (BIOLOGÍA CELULAR, GENÉTICA Y FISIOLOGÍA) FACULTAD DE CIENCIAS
