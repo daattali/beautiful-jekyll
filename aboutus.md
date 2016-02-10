@@ -1,6 +1,6 @@
 ---
 layout: page
-title: RyCUMA in English
+title: RyCUMA
 subtitle: Basic info about the "Ramón y Cajal" program
 ---
 
