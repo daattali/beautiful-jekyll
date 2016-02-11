@@ -27,9 +27,9 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
-| [drissamri.be](https://drissamri.be) | Driss Amri | Software engineer |
 | [tomwhite.io](http://tomwhite.io) | Thomas White | Ecology PhD student |
 | [rikosjett.no](http://rikosjett.no) | Ronnie André Bjørvik Sletta | I'm not sure, his website is in Norwegian... |
 | [bkkkk.github.io](http://bkkkk.github.io) | Jacobo Blanco | Data scientist |
 | [trappmartin.github.io](http://trappmartin.github.io) | Martin Trapp | Machine learning researcher |
 | [selimsalihovic.github.io](http://selimsalihovic.github.io) | Selim Salihovic | Software Developer |
+| [melyanna.github.io](http://melyanna.github.io/) | Melyanna | Shows off her nice art |
