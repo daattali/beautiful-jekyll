@@ -1,7 +1,41 @@
 ---
 layout: default
-date:   2014-04-06 23:26:12
-photo: 5.png
-caption_header: Sample header
-caption: sample caption
+photo: moving_tower_800.gif
+caption_header: GitHub Pages
+caption: How to transform github pages into visually stunning websites with all the resources you need
+---
+
+---
+layout: default
+photo: balles.gif
+caption_header: Awesome Curation
+caption: Newsletters, tools, services, and other awesome resources for various interests
+---
+
+---
+layout: default
+photo: ___.jpg
+caption_header: Study
+caption: Recommended classes online and their results
+---
+
+---
+layout: default
+photo: 10_flash-message.png
+caption_header: Modals
+caption: General strategy and different examples across project pages
+---
+
+---
+layout: default
+photo: 
+caption_headser 
+caption: 
+---
+
+---
+layout: default
+photo: 
+caption_headser 
+caption: 
 ---
