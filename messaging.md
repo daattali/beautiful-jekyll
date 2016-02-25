@@ -22,10 +22,11 @@ After really analyzing my interests and skills over the past few months, I've co
 
 I would love to connect with you sooner to get your insights on the SalesOps function in general and possibly identify opportunities around the city. I know I could learn so much from you, and I would really value your advice and knowledge here.
 ```
+## recommendation outreach
 
 
 
-
+# reference
 
 ## milestones
 
