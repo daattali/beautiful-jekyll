@@ -1,28 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.name }}</title>
-    <meta name="description" content="{{ site.name }}" />
-    <meta name="keywords" content="jekyll, image gallery, image grid, template, masonry" />
-    <meta name="author" content="Nii Adjetey Sowah" />
-
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/component.css" />
-    <script src="{{ site.url }}/js/modernizr.custom.js"></script>
-  </head>
-  <body>
-
-  {{ content }}
-
-    <script src="{{ site.url }}/js/imagesloaded.pkgd.min.js"></script>
-    <script src="{{ site.url }}/js/masonry.pkgd.min.js"></script>
-    <script src="{{ site.url }}/js/classie.js"></script>
-    <script src="{{ site.url }}/js/cbpGridGallery.js"></script>
+<html>
+{% include head.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<body class="site{% if site.animated %} animated fade-in-down{% endif %}">
+    {% if site.facebook_comments %}
+    <div id="fb-root"></div>
     <script>
-      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId={{ site.facebook_appid }}";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
     </script>
-  </body>
+    {% endif %}
+ {% include sidebar.html %}
+    <div class="pusher" id="dimmer">
+        <div class="site-wrap">
+            <div class="post p2 p-responsive wrap" role="main">
+                <span class="burgWrapper" href="##" style="cursor:pointer;">
+                    <div class="burg"></div>
+                </span>
+                <div class="measure">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('#blog-filter').accordion();
+
+            $('.burgWrapper').on('click', function() {
+                $('.ui.sidebar').sidebar('toggle');
+                $('.burg').toggleClass('activeBurg');
+            });
+
+            $('.ui.sidebar').sidebar({
+                onHide: function() {
+                    $('.burg').toggleClass('activeBurg');
+                }
+            });
+        });
+        </script>
+    </div>
+</body>
+
 </html>

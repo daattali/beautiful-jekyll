@@ -1,9 +1,6 @@
-# project
 _site
 .sass-cache
-.vagrant
-
-# general
 .DS_Store
-Thumbs.db
-ehthumbs.db
+
+# Ignore the config file that's used for gh-pages.
+_config.gh-pages.yml
