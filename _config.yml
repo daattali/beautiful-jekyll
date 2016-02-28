@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://biol409.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,49 +14,49 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: BIOL409 Tropical Ecology Course
+title: Tropical Ecology
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: From the Andes to the Amazon
 
 # --- Navigation bar options --- #
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+# avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
-  About Me: "aboutme"
-  Author's home: "http://deanattali.com"
+  About the course: "About the Course"
+  About the place: "About the place"
+  How to enroll: "How to enroll"
+  About the instructors: "About the instructors"
   
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
+  name: Santiago David
+  email: "sdrrock@gmail.com"
   facebook: yourname  # eg. daattali
   github: yourname    # eg. daattali
   twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+
  
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: true
+  facebook: false
   email: true
-  twitter: true
-  github: true
+  twitter: false
+  github: false
   linkedin: false
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "http://biol409.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
