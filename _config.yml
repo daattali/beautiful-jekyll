@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Tropical Ecology
+title: Field Ecology Course
 
 # Short description of your site
-description: From the Andes to the Amazon
+description: Explore one of the most biologically diverse regions of the world.
 
 # --- Navigation bar options --- #
 
@@ -28,7 +28,7 @@ description: From the Andes to the Amazon
 # List of links in the navigation bar
 navbar-links:
   About the course: "About the Course"
-  About the place: "About the place"
+  About the place: "Where"
   How to enroll: "How to enroll"
   About the instructors: "About the instructors"
   
