@@ -11,11 +11,8 @@ baseurl: ""
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
 
-# Of course don't forget to change the username and projectname to YOUR username and project
-
 # Name of website
 title: Field Ecology Course
-
 # Short description of your site
 description: Explore one of the most biologically diverse regions of the world.
 
@@ -31,6 +28,7 @@ navbar-links:
   About the place: "Where"
   How to enroll: "How to enroll"
   About the instructors: "About the instructors"
+  Home: ""
   
 # --- Footer options --- #
 
