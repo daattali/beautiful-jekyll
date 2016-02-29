@@ -36,7 +36,7 @@ This station is located in the lowland Amazon rainforest at 400 m elevation, tha
 ## What to Expect at Manu Natiotal Park
 More information soon
 
-![alt text](tanager.jpg) 
+![alt text](tanager.png) 
 
 
 
