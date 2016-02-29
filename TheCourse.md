@@ -27,4 +27,6 @@ _**During this course students will have the opportunity to**_
 
 Additionally students will explore how species and habitats shift along one of the most diverse biological gradients on the planet and consider the various threats and conservation challenges in the region.
 
+## Costs
+Trip costs include airfare from Vancouver to Cusco, lodging, food and ground or boat transportation from Cusco to and from each of the stations. We will try our best to keep costs as low as possible, but you should expect to pay around $2000 for the trip, in addition to airfare. Round trip tickets from Vancouver to Cuzco are just under $1000 if tickets are purchased far enough in advance. The cost per student also depends on the currency exchange rate during the summer (here's hoping that the CAD bounces back) and the number of students attending (with more students the per individual cost will be reduced with shared food and transportation costs).
 
