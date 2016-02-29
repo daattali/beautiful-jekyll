@@ -15,7 +15,7 @@ Summer 2016.
 ### Course description
 This field course has been designed to engage students in the formulation and execution of ecological research studies, using several basic methods in ecology. This course gives the students the opportunity to do research in the tropics and develop their skills to do field-based research. 
 
-_**During this course student will have the opportunity to**_
+_**During this course students will have the opportunity to**_
 
 * Apply basic methods in Ecology.
 * Develop skills in data collection.
