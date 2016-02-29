@@ -9,7 +9,6 @@ This two-week field course will introduce the students in field methods used in 
 
 ### When is it?
 Summer 2016.
-
  **July 4th to July 22th**
 
 
