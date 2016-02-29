@@ -24,10 +24,10 @@ description: Explore one of the most biologically diverse regions of the world.
 
 # List of links in the navigation bar
 navbar-links:
-  TheCourse: "TheCourse"
-  ThePlace: "ThePlace"
-  HowToEnroll: "HowToEnroll"
-  TheInstructors: "TheInstructors"
+  The Course: "TheCourse"
+  The Place: "ThePlace"
+  How To Enroll: "HowToEnroll"
+  The Instructors: "TheInstructors"
   Home: ""
   
 # --- Footer options --- #
