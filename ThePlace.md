@@ -27,19 +27,21 @@ This station is located in the lowland Amazon rainforest at 400 m elevation, tha
 ![alt text](pantia.jpg) 
 
 ## Cocha Cashu Biological Station
-[The Cocha Cashu Biological Station](http://cochacashu.sandiegozooglobal.org) (CCBS)is a well known internationally tropical ecology field station. This station is situated in a vast region minimally impacted by man, providing critical insights into the biodiversity and processes of a healthy, intact rainforest. 
+[The Cocha Cashu Biological Station](http://cochacashu.sandiegozooglobal.org) (CCBS) is a well known internationally tropical field station. This station is situated in a vast region minimally impacted by man, providing critical insights into the biodiversity and processes of a healthy, intact rainforest. 
 
 
 ## Manu videos
 [Enjoy some videos of Manu project](http://www.zoology.ubc.ca/~jankowsk/Manu_Videos.html)
 
-[other relevant information] (http://www.zoology.ubc.ca/~jankowsk/)
+[Other relevant information](http://www.zoology.ubc.ca/~jankowsk/)
 
 ## What to expect at Manu Natiotal Park
 More information soon
 
-![alt text](tanager.png) 
+![alt text](tanager.png)
 
+Orange-eared Tanager
+(_Chlorochrysa calliparaea_)
 
 
 
