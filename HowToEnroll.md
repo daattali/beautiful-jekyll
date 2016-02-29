@@ -9,10 +9,14 @@ comments: true
 Biol409 is listed as a summer 2016 course. This course is open to UBC students in the departments of Biology,  Forestry, Geography, Environmental Science, Earth and Ocean Sciences. 
 
 **Total seats available: 15**
+
 **Prerequisite**: One of BIOL 300, STAT 200 and one of BIOL 230, BIOL 302, BIOL 303, BIOL 304. BIOL 306 is recommended.
 
-## Interested? 
- We will hold an **information session on April 1st**, 2016 to describe the course and answer any question regarding the content, objectives, prerequisite and fees associated with living and traveling expenses.
+**Readings** A series of tropical ecology and conservation papers and book chapters will be assigned prior to the course. These will soon available in a bound booklet for students.
+
+
+## Interested?? 
+ We will hold an **information session on April 1st, at 5:00 pm in the Biodiversity building Room 224 ** (second floor). In this session we will describe details of the course and answer any question regarding the content, objectives, prerequisite and fees associated with living and traveling expenses.
 
 
 ## Application and Registration 
@@ -21,8 +25,6 @@ Students interested in this course must submit a completed **application form**,
 
 Please submit your application or any question regarding this course to **biol409course@gmail.com**. Deadline for the application is April 30th 2016, and students will be informed about their acceptance by early May.
 
-**Registration date**: to be confirmed.
+**Registration date**: to be determine.
 
 
-## Readings
-A series of tropical ecology and conservation papers and book chapters will be assigned prior to the course. These will soon available in a bound booklet for students.
