@@ -5,20 +5,24 @@ subtitle: All you have to know about the course
 comments: true
 ---
 
+This two-week field course will introduce the students in field methods used in ecology and research challenges of the tropical forest.  Visiting a series of research stations from the Amazon basin to the High Andes students will experience the tropical diversity, ecosystems and communities first-hand in one of biodiversity hotspots of the world (**Manu Biosphere Reserve**).
 
-## What will students do during the course?
-
-Students will explore how species and habitats shift along one of the most diverse biological gradients onthe planet and consider 
-the various threats and conservation challenges in the region.
+##When is it?
+Summer 2016
+July 4th to July 22th
 
 ## Course description
+This field course has been designed to engage students in the formulation and execution of ecological research studies, using several basic methods in ecology. This course gives the students the opportunity to do research in the tropics and develop their skills to do field-based research. 
 
-The field course will be held in southeastern Peru, and we will explore Manu Biosphere Reserve and surrounding areas. The course will run for three weeks 
-(June 27th - July 15th, 2016). During this course you will be exposed to various ecosystems from the highest elevations of the Andes and down the eastern slope, starting wtih Cusco and descending into the Amazon basin, where we will visit the remote field station of Cocha Cashu. We will also have a chance to see Machu Picchu and other ruins near Cusco. 
+##During this course students will have the opportunity to 
+* Apply basic methods in Ecology.
+* Develop skills in data collection.
+* Design and conduct independent and group research projects.
+* Apply their skills and creativity to solve challenges of ecological field research.
+* Identify and propose alternative to the central challenges of ecologist.
+* Work in teams to analyse and present research projects.
+* Develop appreciation for the natural history of the tropical ecosystems.
 
-Students will conduct indepedent and group research projects during the course, using data collected at each station and comparing data across the gradient. 
-Designing and carrying out these projects, as well as analyzing and presenting data, will be important components of student evaluation.
+Additionally students will explore how species and habitats shift along one of the most diverse biological gradients on the planet and consider the various threats and conservation challenges in the region.
 
-To emphasize and appreciate natural history of tropical species, there will be a field identification portion – e.g., species reports – where students are assigned a species of plant or animal. When we encounter this species in the field, the student should be ready to present their species to the rest of the group.
- 
-*Readings*: A series of tropical ecology and conservation papers and book chapters will be assigned prior to the course. These will be available in a bound booklet for students.
+
