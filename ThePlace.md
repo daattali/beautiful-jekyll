@@ -39,7 +39,7 @@ This station is located in the lowland Amazon rainforest at 400 m elevation, tha
 [Other relevant information](http://www.zoology.ubc.ca/~jankowsk/)
 
 
-![alt text](tanager.png)
+![alt text](tanager.png) [Tanager](BIOL409.github.io/tanager.png)
 
 Orange-eared Tanager
 (_Chlorochrysa calliparaea_)
