@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Course Insructors
+title: Course Instructors
 ---
 
 ## Dr. Jill Jankowski
 
-![brom](img/Jill.jpg) 
+![brom](Jill.jpg) 
 
 Jill  is a tropical ecologist in the Zoology Department at UBC. Her research focuses on questions of species diversity and distributions, particularly with birds in tropical regions. She has been working in Peru and other Neotropical regions for ten years. Check more of Jill's research in her [website](http://www.zoology.ubc.ca/~jankowsk/)
 
