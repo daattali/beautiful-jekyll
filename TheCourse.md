@@ -9,8 +9,7 @@ This two-week field course will introduce the students in field methods used in 
 
 ### When is it?
 Summer 2016.
-
-July 4th to July 22th
+*July 4th to July 22th
 
 ### Course description
 This field course has been designed to engage students in the formulation and execution of ecological research studies, using several basic methods in ecology. This course gives the students the opportunity to do research in the tropics and develop their skills to do field-based research. 
