@@ -33,7 +33,9 @@ This station is located in the lowland Amazon rainforest at 400 m elevation, tha
 ## Manu videos
 [Enjoy some videos of Manu project](http://www.zoology.ubc.ca/~jankowsk/Manu_Videos.html)
 
-## What to Expect at Manu Natiotal Park
+[other relevant information] (http://www.zoology.ubc.ca/~jankowsk/)
+
+## What to expect at Manu Natiotal Park
 More information soon
 
 ![alt text](tanager.png) 
