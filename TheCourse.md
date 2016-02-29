@@ -7,14 +7,14 @@ comments: true
 
 This two-week field course will introduce the students in field methods used in ecology and research challenges of the tropical forest.  Visiting a series of research stations from the Amazon basin to the High Andes students will experience the tropical diversity, ecosystems and communities first-hand in one of biodiversity hotspots of the world (**Manu Biosphere Reserve**).
 
-##When is it?
+# When is it?
 Summer 2016
 July 4th to July 22th
 
-## Course description
+# Course description
 This field course has been designed to engage students in the formulation and execution of ecological research studies, using several basic methods in ecology. This course gives the students the opportunity to do research in the tropics and develop their skills to do field-based research. 
 
-##During this course students will have the opportunity to 
+# During this course students will have the opportunity to 
 * Apply basic methods in Ecology.
 * Develop skills in data collection.
 * Design and conduct independent and group research projects.
