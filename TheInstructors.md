@@ -11,12 +11,8 @@ Jill  is a tropical ecologist in the Zoology Department at UBC. Her research foc
 
 ## Jenny M. Muñoz
 
-![brom](img/Jen.jpg) 
-
 Jenny is a graduate student in the Zoology Department at UBC and member of the Jankowski Lab. She was born in Colombia and has tons of field experience in the Andes and Amazonian lowlands.
 
 ## Santiago David
 
-![brom](img/Santi.jpg) 
-
-Santiago is also a graduate student in the Zoology Department at UBC and member of the Jankowski Lab. 
+Santiago is also a graduate student in the Zoology Department at UBC and member of the Jankowski Lab. He had worked in the Manu National Park from 2008 to 2014 (except 2010) especially at the low elevation sites. Santiago is very interested in the breeding biology of neotropical birds, and the assembly of highly diverse communities in the Amazonian lowlands.
