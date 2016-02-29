@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Manu Biosphere Reserve
-subtitle: One of the most biodiverse places in the world
+subtitle: One of the most biodiverse places in the world!
 ---
 Manu Biosphere reserve is located in southeastern Peru, in the departments of Madre de Dios and Cusco. This Biosphere reserve includes Manu National Park, one of the larger protected areas in South America. This National Park protects over 2 million hectares of tropical forest including a variety of habitats from Lowland tropical rain forest at 150 m above sea level to the Andean Puna Grasslands at 4200m. This topographical complexity has resulted in an exceptional array of habitats and high levels of diversity.
 _**Manu National Park is considered as one of the world’s biodiversity hotspots**_! and indeed one of the most beautiful places in the planet.
@@ -30,7 +30,7 @@ This station is located in the lowland Amazon rainforest at 400 m elevation, tha
 ![alt text](pantia.jpg) 
 
 ## Cocha Cashu Biological Station
-[The Cocha Cashu Biological Station](http://cochacashu.sandiegozooglobal.org) (CCBS) is a well known internationally tropical field station. This station is situated in a vast region minimally impacted by man, providing critical insights into the biodiversity and processes of a healthy, intact rainforest. 
+[The Cocha Cashu Biological Station](http://cochacashu.sandiegozooglobal.org) (CCBS) is a well known internationally tropical field station. This station is situated in a vast region minimally impacted by man, providingg critical insights into the biodiversity and processes of a healthy, intact rainforest. 
 
 
 ## Manu videos
