@@ -12,7 +12,7 @@ Check out this [raw footage](http://www.amazonconservation.org/ourwork/research_
 
 ![alt text](manu.jpg) 
 
-_During this field course we will be visiting four field sites along the elevational gradient, including two tropical Research stations_
+**During this field course we will be visiting four field sites along the elevational gradient, including two tropical Research stations**
 
 ## Wayqecha (2900m)
 This is the highest elevation station along the gradient, located at the [**Centro de Investigación Wayqecha**](http://www.amazonconservation.org/ourwork/research_wayqecha.html). The station is found at 2900 m elevation, in the upper extent of cloud forest along the gradient.  Daytime temperatures can be quite warm, between 20-25 ºC, and nighttime temperatures can drop to 0 ºC or just below.Wayqecha is located directly on the Manu road, about 4-5 hours from Cuzco. The trail systems aroun the station range from 2300 - 3000 m elevation.  This station includes mature humid upper montane forest as well as recovering scrub habitat, and different forest types in various successional stages with intermediate vegetation structure.
