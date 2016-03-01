@@ -26,7 +26,7 @@ _**During this course students will have the opportunity to**_
 * Apply basic methods in field ecology.
 * Develop skills in data collection.
 * Design and conduct independent and group research projects.
-* Use skills and creativity to solve challenges in ecological field research.
+* Use skills and creativity to address challenges in ecological field research.
 * Work in teams to analyse and present research projects.
 * Develop an appreciation for the natural history of tropical ecosystems.
 
