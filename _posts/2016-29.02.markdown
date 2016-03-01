@@ -17,7 +17,8 @@
 ## pushed
 
 
-eodmoods: 
+==eodmoods== 
+
 - booyakasha![^1]
 - very nice![^2]
 - aight![^3]
@@ -30,12 +31,16 @@ hmm...
 testing[^5]
 
 
-weird  
+==weird==
 
 
 
  [^1]: 1
- [^2]: 2
+ [^2]: 
+ 	bah 1123 
+ 	more 
+ 	> then what?
+ 	> say bah
  [^3]: 3
  [^4]: 4
  [^5]: 5
