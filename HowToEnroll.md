@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Enrollment 
-subtitle: Overview of Course Info
+subtitle: How to get involved
 comments: true
 ---
 ## General information
