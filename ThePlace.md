@@ -29,7 +29,7 @@ This station is located in the lowland Amazon rainforest at 400 m elevation, sit
 ![alt text](pantia.jpg) 
 
 ## Cocha Cashu Biological Station (to be confirmed)
-[The Cocha Cashu Biological Station](http://cochacashu.sandiegozooglobal.org) (CCBS) is an world-renowned tropical field station. It is situated in a vast region of the Amazon basin minimally impacted by man, with over three decades of research providing critical insights into the biodiversity and ecological processes of a healthy, intact rainforest. 
+[The Cocha Cashu Biological Station](http://cochacashu.sandiegozooglobal.org) (CCBS) is an world-renowned tropical field station. It is situated in a vast region of the Amazon basin minimally impacted by humans, with over three decades of research providing critical insights into the biodiversity and ecological processes of a healthy, intact rainforest. 
 
 ## Manu videos
 [Enjoy some videos of Manu project](http://www.zoology.ubc.ca/~jankowsk/Manu_Videos.html)
