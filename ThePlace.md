@@ -9,6 +9,7 @@ _**Manu National Park is considered as one of the world’s biodiversity hotspot
 ## What to expect at Manu National Park
 Check out this [raw footage](https://www.youtube.com/watch?feature=player_embedded&v=VuedaG61Vik) taken for one of the research volunteers of Manu project.
 
+![alt text](flock.png) 
 
 ![alt text](manu.jpg) 
 
