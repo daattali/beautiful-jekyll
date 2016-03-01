@@ -1,15 +1,15 @@
 ---
 layout: page
 title: BIOL 409
-subtitle: All you have to know about the course
+subtitle: Overview
 comments: true
 ---
 
-This two-week field course will introduce the students in field methods used in ecology and research challenges of the tropical forest.  Visiting a series of research stations from the Amazon basin to the High Andes students will experience the tropical diversity, ecosystems and communities first-hand in one of the biodiversity hotspots of the world [**Manu Biosphere Reserve**](https://en.wikipedia.org/wiki/Manú_National_Park).
+This three-week field course will introduce students to field methods used in ecology and the challenges of research in tropical forests. Visiting a suite of research stations from the high Andes to the Amazon basin, students will experience tropical ecosystems first-hand in one of the biodiversity hotspots of the world [**Manu Biosphere Reserve**](https://en.wikipedia.org/wiki/Manú_National_Park).
 
 ### When is it?
 Summer 2016.
- **July 4th to July 22th**
+ **July 4th to July 22nd**
 
 
 ### Course description
