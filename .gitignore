@@ -5,7 +5,10 @@ _site
 # Ignore the config file that's used for gh-pages.
 _config.gh-pages.yml
 
-
 # helps Jekyll keep track of which files haven't been modified and which files will need to be regenerated on the next build. 
 # good idea to add to .gitignore file
 .jekyll-metadata
+
+#ignore sublime text project & workspace
+tudr.github.io.sublime-project
+tudr.github.io.sublime-workspace
