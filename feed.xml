@@ -1,21 +1,117 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>return of the kids</title>
+    <description>community of good humans</description>
+    <link>http://tudr.github.io/</link>
+    <atom:link href="http://tudr.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        <title>The Shitty $60 Closet Organizer Standing Desk</title>
+        <description>&lt;p&gt;Sitting all day can put a lot of strain on your body and there are numerous studies showing the negative affects on the body.  I have also heard of studies claiming the opposite and claiming that standing can causing stress to your legs and is worst than sitting.  This reminds me of  a skit from the show Portland where a couple reads endless series of conflicting studies and end up dying from confusion.  My solution is to alternate between sitting and standing all day.&lt;/p&gt;
+
+&lt;p&gt;I have a ==standing== ~~desk~~ at the office but since I have started working from home most of the time, I found myself sitting the entire day.  After some time working reclined all the time, I decided to build my own standing desk.  I was looking for an easy to build and affordable solution and came up with the idea to use a closet organizer for the desk.  I don’t fully trust my carpentry skills,  which attracted me to using shelving system that uses a track.  It made it very easy to position the heights of the the two different shelves to where they were the most ergonomic and comfortable.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jdwallace12.github.io/images/standing-desk-2.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I start the morning standing and by lunch time my computer is low on batteries and place it on my other desk with my monitor to charge during lunch.  In the afternoon, I sit at my normal desk while my battery finishes charging and once fully charged, I resume standing and repeat this process throughout the day.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;Construction&lt;/h2&gt;
+&lt;p&gt;I went out to Home Depot and pieced every thing together in my head while in the closet aisle.  I grabbed two 30 inch metal tracks, two 12 inch shelving brackets, two 8 inch shelving brackets and 3 foot long corresponding shelves.  With all the hardware, shelving system, and an anti-fatigue mat to stand on while at the desk, my total was $60.&lt;/p&gt;
+
+&lt;p&gt;I measured the distance from my elbow to the ground when my arm was at a 90 degree angle and figured that would be the height where the first shelf should be hung.  I calculated where the same height would be on the wall and attached the first shelving track starting about 6 inches below that point where the first shelf would hang.  Using a long level, I was easily able to find the next spot on the wall about 28 inches from the first track to mount the second track.  Checking again that the span from each track was level, it was a matter of inserting the shelving brackets, laying and then securing the shelves to the brackets.  I played  around with the locations of the shelves finding the optimal height of each shelf before securing.&lt;/p&gt;
+
+&lt;p&gt;The total build time was about 15 minutes and I am super pleased with the result.  I no longer have sore shoulders, wrist, or neck pains.  I find switching from standing to sitting, really helps break up the work day.  If you work with a computer for a living and have the space, I highly recommend building a standing desk.  Everything in moderation always seems to be the key to a happy life and regulating the amount of sitting you do, is not an exception to the rule.  10/10 would buy again.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 09 Jan 2016 15:08:05 -0500</pubDate>
+        <link>http://tudr.github.io/furniture/2016/01/09/standing-desk/</link>
+        <guid isPermaLink="true">http://tudr.github.io/furniture/2016/01/09/standing-desk/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>What every web designer can learn from Project Runway</title>
+        <description>&lt;p&gt;With years of being subjected to crappy and/or “girly” television shows, due to my wife holding the remote with more gusto than I do, I have learned to actually enjoy some of the shows that I would otherwise never watch.   One of the shows I have learned to appreciate is Project Runway – a Lifetime reality show that chronicles 16 designers with “a passion for fashion”, all of whom are competing to win the grand prize. Coming from a web design/development background, I found myself easily relating to all the fashion designers battling it out on the show.  Creating something from nothing is a common “thread” between both fields and they share similar processes and pitfalls.&lt;/p&gt;
+
+&lt;h2&gt;Metaphorical Trips to Mood&lt;/h2&gt;
+
+&lt;p&gt;In Project Runway you have limited time to brainstorm ideas and then you are off to the fabric store Mood, where again you have limited time to buy all the materials you need to construct your garment. The trip to Mood can really make or break a look, as the Tim Gunn likes to say.  If you pick out horrible fabric, the finished piece will suffer and you will be gifted with a witty remark from Michael Kors during judgment.&lt;/p&gt;
+
+&lt;p&gt;When developing a design, starting off on a component based mindset, and not a page-centric one, can really make or break your stylesheet. In terms of my own development process, I am slowly learning to transition out of the page mindset.  I have noticed I am writing fewer styles, have cleaner and more semantic markup, and am able to clock in a faster development time.  Just like Project Runway, we are often on deadlines, so it can be tempting to write a bunch of styles in order to get the job done. Similar to the designer who “overdesigns” and doesn’t “stay true to themselves”, this process typically doesn’t work. You usually end up paying for it in the long run with maintenance and specificity pains.  Taking the time to break things down into reusable components can make your life easier and have a more “cohesive look”. So, much like the trip to Mood, the way you start a new project or a redesign can really set you up for success later on.&lt;/p&gt;
+
+&lt;h2&gt;Scrap the design for the cliché  “Make it Work Moment”&lt;/h2&gt;
+
+&lt;p&gt;During the time the contestants on the show have to construct their clothes, many designers will end up ditching their original idea to start fresh.  This seems risky, especially with the tight time constraints, but often it is the right move.  Better designs seem to flow out of you and this is the case on Project Runway as well as web design.&lt;/p&gt;
+
+&lt;p&gt;You can easily go down web design rabbit holes.  No matter how much tweaking and adjustments you do to a design, if you are struggling, it is time to start fresh.  I find it beneficial to start over after a little break from the screen.  You can easily spend hours spinning your tires over a non-functioning or lackluster design.  Save yourself some time and step away from the keyboard before you get too committed to a design you don’t love.&lt;/p&gt;
+
+&lt;h2&gt;Don’t be too literal with your inspiration&lt;/h2&gt;
+
+&lt;p&gt;On Project Runway, contestants are often asked to take inspiration from things around them to for the next challenge.  These can be paintings done by children, architecture, or birds.  The designer who is inspired by the beautiful raven, rather than the designer who sends a literal Raven costume down the runway (feathers and all), usually ends up winning the challenge.  It is not always easy to look beyond what you are seeing in order to abstract the essence.  Often the designers on the show are on the borderline of being “too costumey” because they could not get beyond the form or features their inspiration.  They also forget that the final goal is to make something beautiful and functional.  The designer that is inspired by the Raven is able to successfully capture the essence of the Raven – it’s dark and haughty nature, without using actual feathers to send this message. They were able to have their inspiration be obvious but still be mindful on the end goal.&lt;/p&gt;
+
+&lt;p&gt;In web design, it can be tempting to do something crazy and over-the-top to make your site standout. However, sometimes the flashy and trendy sites are cool to look at, but end up being frustrating to use. If it is laborious to navigate, then your site and design will not be successful and your clients will not be happy. While design is extremely important, just like the models of Project Runway who need to be able to walk in the clothes, a person needs to be able to successfully navigate a site in order to retrieve the information they are looking for. Look for the essence of your inspiration and use it in your design and avoid having your inspiration be the actual product.  Successfully capturing the mood in subtle and stylistic ways is far more impactful that flashy and in-your-face design.&lt;/p&gt;
+
+&lt;h2&gt;Don’t be that person on the team challenges&lt;/h2&gt;
+
+&lt;p&gt;On most seasons of Project Runway there is often a bête noire in the mix. Thanks to some ridiculous personalities and quality editing, the show often portrays the classic “being a dick among your peers in a comical-yet-very-shameful way.”  These little episodes of high egos and bickering always breaks down the team’s effectiveness and leaves a sour taste in one’s mouth.  The point is, don’t be like Joshua, because the end product will suffer.  Most of the time, it is the team that does not get along ends up on the bottom.  Then they are shamed by Michael Kors in a delightfully worded one-liner such as, “She looks like a transvestite flamenco dancer at a funeral.”  The problematic person is then called out on their shit in a very public manner.  Being a difficult to work with never helps any situation.&lt;/p&gt;
+
+&lt;h2&gt;The Importance of Tim Gunn&lt;/h2&gt;
+
+&lt;p&gt;Tim Gunn is a neutral mentor to all the designers and will often cause them to rethink their look midway through the challenge. Tim Gunn is a fair, kind, and just mentor to all the designers. Using probing questions, expressive facial expressions, and well-known hand gestures, he is able to make the designers look at the garment with a critical eye that often brings improvement to the work.&lt;/p&gt;
+
+&lt;p&gt;Having a knowledgeable person look at your work with a discerning eye is immensely beneficial, especially if they can help lead you without doing the work for you. Some struggle is good for you, but it is reassuring that you have someone to lead the way. So be grateful for any mentoring you can receive from anyone with more experience – it is usually for the best.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 Nov 2015 15:08:05 -0500</pubDate>
+        <link>http://tudr.github.io/web/2015/11/12/2015-project-runway/</link>
+        <guid isPermaLink="true">http://tudr.github.io/web/2015/11/12/2015-project-runway/</guid>
+      </item>
+    
+      <item>
+        <title>You are never too old to build forts</title>
+        <description>&lt;p&gt;I have always wanted to build some sort of fort at Kezar but have never gotten around to doing do since most of my time is spent lazing around the lake. The show Treehouse Masters did get me jazzed to build something on the land this year. Initially, I wanted to build a treehouse but researching treehouse construction and the costs, I decided I needed a lower budget alternative.&lt;br /&gt;
+Having a wall tent from lively out west, I figured to have a nice cost efficient solution until I could build something more substation.  For those who don’t know a wall tent is a large canvas tent with a wood stove inside.  So I set out to build a platform that it could sit on top and be level and dry.&lt;/p&gt;
+
+&lt;h2&gt;Scouting a Location&lt;/h2&gt;
+
+&lt;p&gt;With the structure being situated on a hill with sections of flat vernal marshy areas, created a need to have the structure built on a slope.  I also wanted the platform to be far away enough from the house that you feel like you are in the middle of the woods yet not too far that hauling materials would become an arduous task.  My wife and I cleared a trail from the road to connecting trail network a couples years prior, that made a good route into the woods to the desired site.&lt;/p&gt;
+
+&lt;h2&gt;Hauling Shit&lt;/h2&gt;
+
+&lt;p&gt;I spent the better part of an afternoon hauling 2x6x16, 2x6x12, 4x4x8 boards, and concrete decking blocks, and assorted hardware up a small hill, rewarding myself each trip with a sip of beer.  Making upwards of 30 trips up and down to the site, I found a nice mildly buzzed rhythm and enjoyed the exercise.&lt;/p&gt;
+
+&lt;h2&gt;Breaking Ground&lt;/h2&gt;
+&lt;p&gt;My friend Pete was nice enough to come out to Kezar for a weekend and help me with the initial and hardest portion of the construction.  Seeing that this is the first fort that I have ever built that required measuring, Pete’s knowledge of construction was great to have when roughing out the initial frame.   We started by laying out the concrete decking blocks in the dimension of 16’ x 12’.  With being on a slope, we had to dig out the uphill backside to keep the platform level in all directions and have each of the decking blocks be level and secure.  This called for lots of digging, fortunatley once you broke through the initial root mass of soil, it was easy sandy digging but lots of digging nonetheless.&lt;br /&gt;
+&lt;img src=&quot;http://jdwallace12.github.io/images/fort/fort1.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Pete leveling out a decking block where 2x6x12 and 2x6x16 lay on the uphill portion of the structure. Also pictured, the trench on the backside we dug.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jdwallace12.github.io/images/fort/fort2.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Frame It&lt;/h2&gt;
+
+&lt;p&gt;Next we contructed one side of the frame that would be used as a template that the other sides of the platform would be built from.  This involved of taking multiple measurments to make sure the inital section was nice and level.  The downhill side of the platform uses 4x4’s as the support and sit vertically in the decking blocks.  The 2x6 frame lays on top of the 4x4’s in the front and sits horizontally into the decking blocks in the back.  We mimicked the same process on the opposite side of the platform.  After making sure everything was still square and level, we screwed the remaining two sides togeter with lag bolts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jdwallace12.github.io/images/fort/fort3.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Me standing next to the level and true frame that will be used to hang joists that will support the decking.&lt;/em&gt;&lt;br /&gt;
+&lt;!-- &lt;img src=&quot;/images/fort/fort4.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot;&gt; --&gt;&lt;br /&gt;
+&lt;img src=&quot;http://jdwallace12.github.io/images/fort/fort7.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot; /&gt;&lt;br /&gt;
+We hung 2x6x12 joists with lag bolts every 16 inches down the 16 foot length frame.  Afterwards, secured the joists met the frame with joist hangers.  I couldn’t imagine doing this task alone, it was quick and easy work with Pete.  Hanging the joists took little time compared to excavating and roughing in the primal frame.&lt;br /&gt;
+&lt;img src=&quot;http://jdwallace12.github.io/images/fort/fort6.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Gratuitous Ralphie photo&lt;/em&gt;&lt;br /&gt;
+&lt;!-- &lt;img src=&quot;/images/fort/fort8.jpg&quot; alt=&quot;&quot; class=&quot;post-photo&quot;&gt; --&gt;&lt;br /&gt;
+&lt;img src=&quot;http://jdwallace12.github.io/images/fort/fort8.jpg&quot; class=&quot;post-photo&quot; /&gt;&lt;br /&gt;
+The next time I went up to work on the fort, I added diaganol pieces that really made the structure sound.  I added 4 more concrete supports using a total of 8 decking blocks used to hold the frame to the ground.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;to be continued…&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 16 Sep 2015 16:08:05 -0400</pubDate>
+        <link>http://tudr.github.io/forts/2015/09/16/building-a-tent-platform/</link>
+        <guid isPermaLink="true">http://tudr.github.io/forts/2015/09/16/building-a-tent-platform/</guid>
+      </item>
+    
   </channel>
 </rss>
