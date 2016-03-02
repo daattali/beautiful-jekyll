@@ -1,3 +1,9 @@
+# protfolio generator
+portfolio_dir: "projects"
+related_project_keys: ["category": "technology"]
+related_min_common: 0.7
+  # "category": project",...  "sales", "growth", "saas", "lifehack", "book", "article", "tutorial", "playbook", "data", "ai", "recommended"]
+
 # Exclude these files from production site
 exclude:
    - Gemfile
@@ -13,9 +19,24 @@ title:       "return of the kid"
 email:       tudor@saitoc.me
 author:      Tudor Saitoc
 description: "community supported personal and professional growth"
-baseurl:     "/home"
-url:         "http://tudr.github.io"
+
+# base GitHub page (http://username.github.io):
+# url: "http://username.github.io"
+# baseurl: ""
+
+# GitHub project pages:
+# url: "http://username.github.io/projectname"
+# baseurl: "/projectname"
+
+# url:         "http://tudr.github.io"
+# baseurl:     ""
+
+url:         "http://127.0.0.1:4000"
+baseurl:     ""
+
 date_format: "%b %-d, %Y"
+timezone: America/New_York
+
 
 # Google services
 google_verification:
@@ -107,9 +128,14 @@ text:
   og_locale: 'en_US'
 
 # Build settings
-markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+# redcarpet:
+#  extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
 paginate:     3
 sass:
@@ -117,6 +143,8 @@ sass:
 gems:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-auto-image
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
+
 
