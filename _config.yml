@@ -61,7 +61,7 @@ url-pretty: "radaniba.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "radaniba.github.io"
+disqus: "radaniba-github-io"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-74825001-1"
@@ -71,7 +71,7 @@ google_analytics: "UA-74825001-1"
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
