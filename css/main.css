@@ -16,7 +16,7 @@ p {
 p a {
   /* text-decoration: underline */
   /*color: #008AFF;*/
-  color : #990000
+  color : #cc0000
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -24,11 +24,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
   /*color: #008AFF;*/
-  color : #990000
+  color : #cc0000
 }
 a:hover,
 a:focus {
-  color: #990000;
+  color: #cc0000;
 }
 blockquote {
   color: #808080;
@@ -63,12 +63,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #990000;
+  background: #cc0000;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #990000;
+  background: #cc0000;
 }
 img::selection {
   color: white;
@@ -117,7 +117,7 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #990000;
+  color: #cc0000;
 }
 
 @media only screen and (min-width: 768px) {
@@ -249,7 +249,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #990000;
+  color: #cc0000;
 }
 
 .post-preview .post-title {
@@ -359,8 +359,8 @@ header.header-post .post-heading .post-subheading {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #990000;
-  border: 1px solid #990000;
+  background: #cc0000;
+  border: 1px solid #cc0000;
 }
 
 .pager {
