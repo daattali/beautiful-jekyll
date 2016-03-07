@@ -14,7 +14,7 @@ I am curious and a compulsive scientific book buyer because I am a lifelong lear
 
 ## What is the Full Stack Data Science
 
-The Full Stack Data Science is a collection of tips and recipes that will help you go through all aspects of Data Science. Although a lot of peple seem to well define this field, there is still a lot to learn about it. **This fields is moving faster than people using it**, so one need to keep learning constantly in order to see the whole picture and the extent of Data Science.
+The Full Stack Data Science is a collection of tips and recipes that will help you go through all aspects of Data Science. Although a lot of peple seem to well define this field, there is still a lot to learn about it. **This fields is moving faster than the people using it**, so one need to keep learning constantly in order to see the whole picture and the extent of Data Science.
 
 In this blog I am covering Machine Learning concepts, programming using mainly R and Python, data engineering as well as distributed data pipeline deployment.
 
