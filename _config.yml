@@ -29,8 +29,8 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   Home: ""
   About Me: "aboutme"
-  Author's home: "http://deanattali.com"
-  
+  CodersCrowd: "http://coderscrowd.com"
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
@@ -41,30 +41,30 @@ author:
   facebook: yourname  # eg. daattali
   github: radaniba    # eg. daattali
   twitter: radaniba   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
- 
+  linkedin: https://www.linkedin.com/in/radwenaniba  # eg. "pub/dean-attali/8/946/143"
+  #stackoverflow: yourlink  # eg. "3943160/daattali"
+
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
-  facebook: true
+  rss: true
+  facebook: false
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "radaniba.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "radaniba.github.io"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-74825001-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -143,6 +143,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-  
+
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

@@ -4,13 +4,10 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Radhouane Aniba, people call me just Rad.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I am scientist with big interest to how data shapes our lives. I mainly work on Bioinformatics (applying computational methods to help scientists to understand the genomic causes to diseases such us Cancer ) but curious to all fields where data has big impact.
 
-What else do you need?
+During my scientific journey I learned a lot of concepts and developed a lot of skills, such us : Expert Systems Developments, Knowledge-based system, Data integration, data analysis, Data mining and Text Mining, Machine learning
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I am curious and a compulsive scientific book buyer because I am a lifelong learner and believe that everyday there are tons of new things we can learn to be, even a bit, better than the person we were yesterday
