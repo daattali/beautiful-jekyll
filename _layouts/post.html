@@ -10,7 +10,8 @@ layout: default
         {% if page.subtitle %}
         <h2 class="post-subheading">{{ page.subtitle }}</h2>
         {% endif %}
-        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span><br>
+          {% include reading_time.html %}
       </div>
      </div>
   </div>
@@ -19,8 +20,8 @@ layout: default
 <article>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-	  {{ content }}
-	</div>
+      {{ content }}
+	  </div>
   </div>
 </article>
 
