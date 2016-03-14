@@ -389,10 +389,10 @@ footer .theme-by {
     padding: 150px 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;
@@ -545,8 +545,3 @@ footer .theme-by {
 .blog-post table tr td :last-child {
   margin-bottom: 0;
 }
-
-    Status API Training Shop Blog About Pricing 
-
-    © 2016 GitHub, Inc. Terms Privacy Security Contact Help 
-
