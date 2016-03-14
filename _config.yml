@@ -37,11 +37,11 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Radhouane Aniba
-  email: "youremail@domain.com"
+  email: "rad@coderscrowd.com"
   facebook: yourname  # eg. daattali
   github: radaniba    # eg. daattali
   twitter: radaniba   # eg. daattali
-  linkedin: https://www.linkedin.com/in/radwenaniba  # eg. "pub/dean-attali/8/946/143"
+  linkedin: /in/radwenaniba  # eg. "pub/dean-attali/8/946/143"
   #stackoverflow: yourlink  # eg. "3943160/daattali"
 
 # Select which links to show in the footer
