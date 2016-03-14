@@ -1,0 +1,14 @@
+- slug: github-pages
+  name: GitHub Pages
+- slug: jekyll
+  name: Jekyll
+- slug: python
+  name: Python
+- slug: devops
+  name: DevOps
+- slug: servers
+  name: Servers
+- slug: automation
+  name: Automation
+- slug: misc
+  name: Misc

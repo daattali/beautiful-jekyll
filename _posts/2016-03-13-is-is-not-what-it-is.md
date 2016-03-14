@@ -6,7 +6,7 @@ category: general
 tags: [misc]
 ---
 
-##About this blog
+## About this blog
 
 I've been writing here and there a lot, and figured out that all my posts and expressed opinions were sort of lost with the time for different reasons, sometimes I decided to break up with the hosting providers because I felt a sort of abuse in the way they deal with customers, sometimes I write for the purpose of doing demos or tutorials at work and for privacy reasons I don't take the risk of getting these public, and sometimes I write about a product which gives me no freedom to express a variety of things I deal with everyday.
 

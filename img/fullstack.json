@@ -1,0 +1,449 @@
+{ "name": "  Full Stack Data Scientist  ",
+ "children": [
+{
+    "name": "  Command Line  ",
+    "children": [{
+        "name": "  File System Navigation  "
+    }, {
+        "name": "  File parsing (grep, cat, tail, ...)  "
+    }, {
+        "name": "  Permissions  "
+    }, {
+        "name": "  ssh, scp, keys  "
+    }]
+}, {
+    "name": " VCS",
+    "children": [{
+        "name": "Concepts",
+        "children": [{
+            "name": "Diff"
+        }, {
+            "name": "Branching"
+        }, {
+            "name": "Merging",
+            "children": [{
+                "name": "Pull"
+            }, {
+                "name": "Push"
+            }]
+        }]
+    }, {
+        "name": "Github",
+        "children": [{
+            "name": "Forking"
+        }, {
+            "name": "Pull requests"
+        }, {
+            "name": "Issues tracking"
+        }]
+    }, {
+        "name": "Configuration",
+        "children": [{
+            "name": "Default settings"
+        }, {
+            "name": "Remotes"
+        }]
+    }]
+}, {
+    "name": " Web development ",
+    "children": [{
+        "name": "HTML"
+    }, {
+        "name": "CSS"
+    }, {
+        "name": "Frameworks",
+        "children": [{
+            "name": "Introduction to Django"
+        }, {
+            "name": "Introduction to Ruby On Rails"
+        }]
+    }, {
+        "name": "NodeJs"
+    }, {
+        "name": "MEAN Stack development"
+    }]
+}, {
+    "name": " Data Science ",
+    "children": [{
+        "name": "How machines learn"
+    }, {
+        "name": "Supervised Learning"
+    }, {
+        "name": "Unsupervised learning"
+    }, {
+        "name": "Data Science applications"
+    }, {
+        "name": "Underfitting vs Overfitting"
+    }, {
+        "name": "Bias-Variance Trade-off"
+    }, {
+        "name": "Classification",
+        "children": [{
+            "name": "Classification rate"
+        }, {
+            "name": "Logistic Regression"
+        }, {
+            "name": "Decision Trees"
+        }, {
+            "name": "Naive-Bayes "
+        }, {
+            "name": "Boosting"
+        }, {
+            "name": "K-Nearest Neighbor"
+        }, {
+            "name": "Support Vector Machines"
+        }]
+    }, {
+        "name": "Regression",
+        "children": [{
+            "name": "Linear Regression"
+        }, {
+            "name": "Generalized Linear Regression"
+        }, {
+            "name": "Ranking"
+        }, {
+            "name": "Perceptron"
+        }]
+    }, {
+        "name": "Clustering",
+        "children": [{
+            "name": "Hierarchical Clustering"
+        }, {
+            "name": "K-means Clustering"
+        }]
+    }, {
+        "name": "Neural Networks"
+    }]
+}, {
+    "name": " Data Analysis ",
+    "children": [{
+        "name": "Python",
+        "children": [{
+            "name": "Numpy",
+            "children": [{
+                "name": "Creating arrays"
+            }, {
+                "name": "Using arrays and scalars"
+            }, {
+                "name": "Indexing arrays"
+            }, {
+                "name": "Arrays transposition"
+            }, {
+                "name": "Arrays Processing"
+            }, {
+                "name": "Arrays input and output"
+            }]
+        }, {
+            "name": "Pandas",
+            "children": [{
+                "name": "DataFrames"
+            }, {
+                "name": "Reindex"
+            }, {
+                "name": "Drop entries"
+            }, {
+                "name": "Ranking and sorting data"
+            }, {
+                "name": "Statistics on DatFrames"
+            }, {
+                "name": "Index Hierarchy"
+            }]
+        }, {
+            "name": "Data wrangling",
+            "children": [{
+                "name": "Reading and Writing From Files"
+            }, {
+                "name": "Using JSON files"
+            }, {
+                "name": "Reading HTML files and scraping data"
+            }, {
+                "name": "Merging"
+            }, {
+                "name": "Merging on index"
+            }, {
+                "name": "Concatenation"
+            }, {
+                "name": "Combining DataFrames"
+            }, {
+                "name": "Reshaping"
+            }, {
+                "name": "Pivoting"
+            }, {
+                "name": "Duplicates in DataFrames"
+            }, {
+                "name": "Mapping"
+            }, {
+                "name": "Replacing"
+            }, {
+                "name": "Binning  data"
+            }, {
+                "name": "outliers"
+            }, {
+                "name": "Permutations"
+            }, {
+                "name": "GroupBy on DataFrames"
+            }, {
+                "name": "Data Aggregation"
+            }, {
+                "name": "Cross Tabulation"
+            }]
+        }, {
+            "name": "Data Visualization",
+            "children": [{
+                "name": "Matplotlib"
+            }, {
+                "name": "Seaborn"
+            }, {
+                "name": "Histograms"
+            }, {
+                "name": "Kernel Density estimates plots"
+            }, {
+                "name": "Combining plot styles"
+            }, {
+                "name": "Box and Violin plots"
+            }, {
+                "name": "Regression plots"
+            }, {
+                "name": "Heatmaps and clustered Matrices"
+            }]
+        }, {
+            "name": "Pipelines and Automation"
+        }, {
+            "name": "Machine Learning Toolkits "
+        }]
+    }]
+}, {
+    "name": " Project Management Tips",
+    "children": [{
+        "name": "Using Trello to manage progress"
+    }, {
+        "name": "JIRA for Tracking bugs and issues"
+    }, {
+        "name": "Tracking issues on Github and Bitbucket"
+    }, {
+        "name": "Software Development Cycle"
+    }, {
+        "name": "Agile style developement"
+    }]
+}, {
+    "name": " The Big Data Ecosystem",
+    "children": [{
+        "name": "Tools for Data Pipelines",
+        "children": [{
+            "name": "Cluster Management",
+            "children": [{
+                "name": "Yarn"
+            }, {
+                "name": "Mesos"
+            }, {
+                "name": "Docker"
+            }, {
+                "name": "Zookeeper"
+            }]
+        }, {
+            "name": "Scheduling / Monitoring",
+            "children": [{
+                "name": "Luigi"
+            }, {
+                "name": "Airflow"
+            }, {
+                "name": "Nagios"
+            }, {
+                "name": "Graphite"
+            }, {
+                "name": "Azkaban"
+            }]
+        }]
+    }, {
+        "name": "Data Visualization",
+        "children": [{
+            "name": "D3"
+        }, {
+            "name": "Tableau"
+        }, {
+            "name": "Kibana"
+        }, {
+            "name": "Leaflet"
+        }]
+    }, {
+        "name": "Ingestion",
+        "children": [{
+            "name": "Kafka"
+        }, {
+            "name": "Logstash"
+        }, {
+            "name": "RabbitMQ"
+        }, {
+            "name": "AWS Kinesis"
+        }]
+    }, {
+        "name": "File Formats",
+        "children": [{
+            "name": "Avro"
+        }, {
+            "name": "ProtoBuf"
+        }, {
+            "name": "Thrift"
+        }, {
+            "name": "Parquet"
+        }, {
+            "name": "ORC Files"
+        }]
+    }, {
+        "name": "File Systems",
+        "children": [{
+            "name": "HDFS"
+        }, {
+            "name": "AWS S3"
+        }, {
+            "name": "Azure"
+        }, {
+            "name": "Tachyon"
+        }, {
+            "name": "Ceph"
+        }]
+    }, {
+        "name": "Batch Processing",
+        "children": [{
+            "name": "Spark"
+        }, {
+            "name": "Hadoop Mapreduce",
+            "children": [{
+                "name": "High Level MR",
+                "children": [{
+                    "name": "Cascalog"
+                }, {
+                    "name": "Pig"
+                }, {
+                    "name": "Cascading"
+                }, {
+                    "name": "Hadoop Streamig"
+                }]
+            }]
+        }, {
+            "name": "AWS EMR"
+        }, {
+            "name": "Flink"
+        }, {
+            "name": "Tez"
+        }, {
+            "name": "Batch Machine Learning",
+            "children": [{
+                "name": "H2O"
+            }, {
+                "name": "Mahout"
+            }, {
+                "name": "Spark MLIB"
+            }, {
+                "name": "FlinkML"
+            }]
+        }, {
+            "name": "Batch SQL",
+            "children": [{
+                "name": "Hive"
+            }, {
+                "name": "Presto"
+            }, {
+                "name": "Drill"
+            }, {
+                "name": "Impala"
+            }]
+        }]
+    }, {
+        "name": "Stream Processing",
+        "children": [{
+            "name": "Storm"
+        }, {
+            "name": "Spark Streaming"
+        }, {
+            "name": "AWS Lambda"
+        }, {
+            "name": "Flink"
+        }, {
+            "name": "Samza"
+        }]
+    }, {
+        "name": "Data Store",
+        "children": [{
+            "name": "Cache",
+            "children": [{
+                "name": "Redis"
+            }, {
+                "name": "Hazelcast"
+            }, {
+                "name": "Memcached"
+            }]
+        }, {
+            "name": "Transactions",
+            "children": [{
+                "name": "Oracle"
+            }, {
+                "name": "PostgreSQL"
+            }, {
+                "name": "MySQL"
+            }]
+        }, {
+            "name": "Search",
+            "children": [{
+                "name": "Mongodb"
+            }, {
+                "name": "Elasticsearch"
+            }, {
+                "name": "Solr"
+            }]
+        }, {
+            "name": "Analytics",
+            "children": [{
+                "name": "Vertica"
+            }, {
+                "name": "AWS Redshift"
+            }, {
+                "name": "HBase"
+            }]
+        }]
+    }, {
+        "name": "DevOps ",
+        "children": [{
+            "name": "Release Planning"
+        }, {
+            "name": "Continuous Integration"
+        }, {
+            "name": "Continuous monitoring and feedback"
+        }, {
+            "name": "Infrastructure / Cloud / Capacity building",
+            "children": [{
+                "name": "Infrastructure as code",
+                "children": [{
+                    "name": "Chef"
+                }, {
+                    "name": "Puppet"
+                }]
+            }, {
+                "name": "Cloud Strategy",
+                "children": [{
+                    "name": "SaaS"
+                }, {
+                    "name": "PaaS"
+                }, {
+                    "name": "IaaS",
+                    "children": [{
+                        "name": "Storage",
+                        "children": [{
+                            "name": "AWS S3"
+                        }, {
+                            "name": "AWS Somple DB"
+                        }]
+                    }, {
+                        "name": "Virtual Hardware",
+                        "children": [{
+                            "name": "AWS EC2"
+                        }, {
+                            "name": "GoGrid"
+                        }]
+                    }]
+                }]
+            }]
+        }]
+    }]
+}]
+}

@@ -1,0 +1,11 @@
+- slug: general
+  name: General
+  color: '#3498db'
+
+- slug: programming
+  name: Programming
+  color: '#e6e6e6'
+
+- slug: devops
+  name: DevOps
+  color: '#e6e6e6'

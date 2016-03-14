@@ -4,9 +4,9 @@ title: About me
 subtitle: And this website
 ---
 
-My name is Radhouane Aniba, people call me just Rad.
+Hello ! I am Radhouane Aniba, people just call me Rad.
 
-I am scientist with big interest to how data shapes our lives. I mainly work on Bioinformatics (applying computational methods to help scientists to understand the genomic causes to diseases such us Cancer ) but curious to all fields where data has big impact.
+I am scientist with big interest in how data shapes our lives. I mainly work on Bioinformatics (applying computational methods to help scientists to understand the genomic causes to diseases such us Cancer ) but curious to all fields where data has big impact.
 
 During my scientific journey I learned a lot of concepts and developed a lot of skills, such us : Expert Systems Developments, Knowledge-based system, Data integration, data analysis, Data mining and Text Mining, Machine learning
 

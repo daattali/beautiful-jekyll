@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% assign post = page %}
+
+
 <header class="header-post">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -11,7 +14,41 @@ layout: default
         <h2 class="post-subheading">{{ page.subtitle }}</h2>
         {% endif %}
         <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span><br>
-          {% include reading_time.html %}
+          {% include reading_time.html %}<br>
+
+          {% if post.category %}
+            {% for site_category in site.data.categories %}
+                {% if site_category.slug == post.category %}
+                    {% assign category = site_category %}
+                {% endif %}
+            {% endfor %}
+            {% if category %}
+                {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/blog/category/{{ category.slug }}/">{{ category.name }}</a></span>{% endcapture %}
+            {% endif %}
+        {% else %}
+            {% assign category_content = '' %}
+        {% endif %}
+
+        {% if post.tags.size > 0 %}
+            {% capture tags_content %} with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+            {% for post_tag in post.tags %}
+                {% for data_tag in site.data.tags %}
+                    {% if data_tag.slug == post_tag %}
+                        {% assign tag = data_tag %}
+                    {% endif %}
+                {% endfor %}
+                {% if tag %}
+                    {% capture tags_content_temp %}{{ tags_content }}<span class="label"><a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a></span>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+                    {% assign tags_content = tags_content_temp %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% assign tags_content = '' %}
+        {% endif %}
+
+        <span class="post-meta">Posted {{ category_content }}{{ tags_content }}</span><br>
+
+
       </div>
      </div>
   </div>
@@ -41,6 +78,27 @@ layout: default
     </ul>
   </div>
 </div>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//github.us13.list-manage.com/subscribe/post?u=5801d7bd3c0cbe3785aeeb1df&amp;id=ed746ec68d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe for new updates</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5801d7bd3c0cbe3785aeeb1df_ed746ec68d" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
 
 {% if page.comments %}
 <div class="row disqus-comments">
