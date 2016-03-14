@@ -28,11 +28,10 @@ avatar: "/img/avatar-icon.png"
 # List of links in the navigation bar
 navbar-links:
   Home: "index"
-  About Me: "aboutme"
   Teaching:
   Research:
   Projects:
-  CV:
+  About Me / Contact: "aboutme"
   Links:
 
   
