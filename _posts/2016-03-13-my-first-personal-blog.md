@@ -14,4 +14,4 @@ As every writer, I have also the excuse of not writing often because I don't hav
 
 I've been also committed to do research and work for others, as I traveled a lot for my career, from Tunisia, to France, to USA and finally Canada, I am now decided to put all the experience I gained for free to younger aspiring data scientists.
 
-This website will ultimately lead to the creation of **my first book**, and I thought that, one way to keep myself committed to achieve this task is to maintain a daily routine of sharing knowledge with like-minded persons and through their criticism and their comments, I'll keep the content more accurate and useful.
+This website will ultimately lead to the creation of **my first book**, and I thought that, one way to keep myself committed to achieve this task is to maintain a daily routine of sharing knowledge with like-minded persons and through their criticisms and their comments, I'll keep the content more accurate and useful.
