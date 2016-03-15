@@ -15,4 +15,4 @@ _**To apply for the award submit**_
 * A current curriculum vitae ("CV", or academic resumé)
 * A one to two page statement on why you want to take the field course.
 
-Complete applications should be submitted to the Biology program coordinator in the Biological Science building 2521 or by email to tromba@zoology.ubc.ca by **April 15th 2016**. 
+Complete applications should be submitted to the Biology program coordinator at the Biological Science building 2521 or by email to tromba@zoology.ubc.ca by **April 15th 2016**. 
