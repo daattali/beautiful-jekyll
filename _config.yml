@@ -63,7 +63,7 @@ url-pretty: "http://biol409.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-74529354-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 

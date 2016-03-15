@@ -72,6 +72,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+img {
+	max-width: 100%;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
