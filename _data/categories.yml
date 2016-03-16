@@ -9,3 +9,7 @@
 - slug: devops
   name: DevOps
   color: '#e6e6e6'
+
+- slug: visualization
+  name: Visualization
+  color: '#e6e6e6'

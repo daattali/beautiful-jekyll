@@ -12,3 +12,11 @@
   name: Automation
 - slug: misc
   name: Misc
+- slug: matplotlib
+  name: Matplotlib
+- slug: seaborn
+  name: Seaborn
+- slug: sequencing
+  name: Sequencing
+- slug: genomics
+  name: Genomics
