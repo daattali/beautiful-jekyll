@@ -2,7 +2,7 @@
   Darkly Pygments Theme
   (c) 2014 Sourcey
   http:
-
+*/
 
 .highlight {
   white-space: pre;
@@ -35,94 +35,3 @@
 .highlight .il { color: #8ae234; }
 .highlight .o { color: #989DAA; }
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
-
-*/
-/**
- * Syntax highlighting styles
-   Mukluk, based on bootflat
-   https:
- */
-$blue-jeans  : #5D9CEC;
-$aqua        : #4FC1E9;
-$mint        : #48CFAD;
-$grass       : #A0D468;
-$sunflower   : #FFCE54;
-$bittersweet : #FC6E51;
-$grapefruit  : #ED5565;
-$lavendar    : #AC92EC;
-$pink-rose   : #EC87C0;
-$light-gray  : #F5F7FA;
-$medium-gray : #CCD1D9;
-$gray        : #656D78;
-$dark-gray   : #434A54;
-
-.highlight {
-  color: $medium-gray;
-  line-height: 1.4em;
-  background: $dark-gray;
-  border-radius: 5px;
-  padding: 1em;
-  margin: 1em 0;
-
-  .c     { color: $medium-gray; font-style: italic }
-  .err   { color: $grapefruit; }
-  .k     { color: $bittersweet; }
-  .o     { color: $light-gray }
-  .cm    { color: $gray; font-style: italic }
-  .cp    { color: $gray; font-weight: bold }
-  .c1    { color: $gray; font-style: italic }
-  .cs    { color: $gray; font-weight: bold; font-style: italic }
-  .gd    { color: $gray; background-color: $medium-gray }
-  .gd .x { color: $gray; background-color: $medium-gray }
-  .ge    { font-style: italic }
-  .gr    { color: $lavendar }
-  .gh    { color: $gray }
-  .gi    { color: $dark-gray; background-color: $medium-gray }
-  .gi .x { color: $dark-gray; background-color: $medium-gray }
-  .go    { color: $gray }
-  .gp    { color: $gray }
-  .gs    { font-weight: bold }
-  .gu    { color: $light-gray }
-  .gt    { color: $grapefruit }
-  .kc    { color: $sunflower }
-  .kd    { color: $sunflower }
-  .kp    { color: $sunflower }
-  .kr    { color: $sunflower }
-  .kt    { color: $blue-jeans }
-  .m     { color: $grapefruit }
-  .s     { color: $grass }
-  .na    { color: $aqua }
-  .nb    { color: $mint }
-  .nc    { color: $grapefruit }
-  .no    { color: $grapefruit }
-  .ni    { color: $grapefruit }
-  .ne    { color: $light-gray }
-  .nf    { color: $sunflower }
-  .nn    { color: $medium-gray }
-  .nt    { color: $blue-jeans }
-  .nv    { color: $aqua }
-  .ow    { font-weight: bold }
-  .w     { color: $light-gray }
-  .mf    { color: $blue-jeans }
-  .mh    { color: $blue-jeans }
-  .mi    { color: $blue-jeans }
-  .mo    { color: $blue-jeans }
-  .sb    { color: $grass }
-  .sc    { color: $grass }
-  .sd    { color: $grass }
-  .s2    { color: $grass }
-  .se    { color: $grass }
-  .sh    { color: $grass }
-  .si    { color: $grass }
-  .sx    { color: $grass }
-  .sr    { color: $pink-rose }
-  .s1    { color: $grass }
-  .ss    { color: $lavendar }
-  .bp    { color: $medium-gray }
-  .vc    { color: $grapefruit }
-  .vg    { color: $grapefruit }
-  .vi    { color: $aqua }
-  .il    { color: $blue-jeans }
-
-  .lineno { color: $gray }
-}
