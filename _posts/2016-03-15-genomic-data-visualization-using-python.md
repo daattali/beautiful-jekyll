@@ -201,7 +201,7 @@ To do that we will need to use the fantastic tool bedtools and its python wrappe
 
 ```python
 def get_coverage(self, bam_file):
-        '''
+        """
         Get coverage from a BAM file,  by looking only inside the regions provided by the region_file
         This function is wrapping the coberageBed from BedTools with no histogram creation
 
@@ -211,7 +211,7 @@ def get_coverage(self, bam_file):
         if region file is empty
         if coverage_result is empty
 
-        '''
+        """
         alignment = pybedtools.BedTool(bam_file)
         regions = pybedtools.BedTool(self.region_file)
         print 'Calculating coverage over regions ...'
@@ -291,10 +291,10 @@ def split_coverage(x):
 
 
 def get_coverage_histogram(self, bam_file, outfile):
-    '''
+    """
     This function is important to get the `all` histogram data from BedTools coverageBed
     This will be used to plot the cumulative distribution plot of the coverage
-    '''
+    """
     alignment = pybedtools.BedTool(bam_file)
     regions = pybedtools.BedTool(self.region_file)
     coverage = alignment.coverage(regions, hist=True, output=outfile)
@@ -316,10 +316,10 @@ To generate this plot I use the handy seaborn function .. `heatmap` :)
 ```python
 
 def plot_coverage_heatmap(self, heatmap_name):
-    '''
+    """
     This function calculates coverage across different bam files
     Then it plot the heatmap of coverage per amplicon region
-    '''
+    """
     region = pybedtools.BedTool(self.region_file)
     result = region.multi_bam_coverage(bams=self.list_of_bam_files, output=os.path.join(self.outdir, "multicoverage.hist.txt"))
     coverage_df = pd.read_table(result.fn, header=None)
@@ -367,7 +367,7 @@ To generate this plot we use this function :
 
 ```python
 def plot_allelic_frequencies_heatmap_with_clusters(self, allele_freq_image):
-        '''
+        """
         Returns a dataframe containing only alleles frequencies from
         the list of binomial test analysis
         Concat dataframes (var frequencies)
@@ -383,7 +383,7 @@ def plot_allelic_frequencies_heatmap_with_clusters(self, allele_freq_image):
         5- Cut the column of var_freq into a variable with the same filename (example df.tmp -> SA495_Normal)
         6- Append the result array to the golbal dataframe that will contain all allele frequencies of all the samples
         7- plot the dataframe into a heatmap using matplotlib
-        '''
+        """
         labels = []
         all_samples_allele_frequencies = pd.DataFrame()
         for sample_file in self.binomial_result_file_list:
@@ -484,7 +484,7 @@ The pipeline I mentioned earlier generates a column in the output that describes
 ```python
 
 def plot_zygosity_matrix(self, allele_freq_image, cluster=0, custom_order=[]):
-       '''
+       """
        Returns a dataframe containing only alleles frequencies from
        the list of binomial test analysis
        Concat dataframes (var frequencies)
@@ -500,7 +500,7 @@ def plot_zygosity_matrix(self, allele_freq_image, cluster=0, custom_order=[]):
        5- Cut the column of var_freq into a variable with the same filename (example df.tmp -> SA495_Normal)
        6- Append the result array to the golbal dataframe that will contain all allele frequencies of all the samples
        7- plot the dataframe into a heatmap using matplotlib
-       '''
+       """
        labels = []
        all_samples_zygosity = pd.DataFrame()
        for sample_file in self.binomial_result_file_list:
@@ -639,14 +639,14 @@ Because we use different bam files, it can be useful is to examine the mapping q
 
 ```python
 def plot_mapping_qualities_in_regions(self, mapq_plot_image):
-     '''
+     """
      Return a plot with :
      Y axis = count of reads in amplicon regions
      X axis = mapping qualities within these amplicon regions
      This is done by intersection a bed version of a BAM file, with the region of interest (amplicon)
      This will return a bed file with the 5th column being the mapq vector for that bam file
      This function will reproduce this protocol for all BAM files in the list and plot them all on the same graph
-     '''
+     """
      N = len(self.list_of_bam_files)
      sample_colors = cm.get_cmap('RdYlBu', N)
      palette = sample_colors(np.arange(N))
@@ -745,7 +745,7 @@ def main():
     list_of_bam_files, labels = ListFiles(args.path_to_bams, args.bam_extension)
     list_of_variant_status, status_labels = ListFiles(args.variant_status_path, ".tsv")
 
-    result = tsa(list_of_bam_files=list_of_bam_files,
+    result = targeted(list_of_bam_files=list_of_bam_files,
                  binomial_result_file_list=list_of_variant_status,
                  region_file=args.targets,
                  outdir=args.outdir,
