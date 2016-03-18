@@ -1,89 +1,73 @@
-/**
- * Syntax highlighting styles
-   Mukluk, based on bootflat
-   https:
- */
-$blue-jeans  : #5D9CEC;
-$aqua        : #4FC1E9;
-$mint        : #48CFAD;
-$grass       : #A0D468;
-$sunflower   : #FFCE54;
-$bittersweet : #FC6E51;
-$grapefruit  : #ED5565;
-$lavendar    : #AC92EC;
-$pink-rose   : #EC87C0;
-$light-gray  : #F5F7FA;
-$medium-gray : #CCD1D9;
-$gray        : #656D78;
-$dark-gray   : #434A54;
+/*
+  Darkly Pygments Theme
+  (c) 2014 Sourcey
+  http://sourcey.com
+*/
 
 .highlight {
-  color: $medium-gray;
-  line-height: 1.4em;
-  background: $dark-gray;
-  border-radius: 5px;
-  padding: 1em;
-  margin: 1em 0;
+  white-space: pre;
+  overflow: auto;
+  word-wrap: normal; /* horizontal scrolling */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
+  background: #343642;
+  color: #C1C2C3;
+}
+.highlight .hll { background-color: #ffc; }
+.highlight .gd { color: #2e3436; background-color: #0e1416; }
+.highlight .gr { color: #eeeeec; background-color: #c00; }
+.highlight .gi { color: #babdb6; background-color: #1f2b2d; }
+.highlight .go { color: #2c3032; background-color: #2c3032; }
+.highlight .kt { color: #e3e7df; }
+.highlight .ni { color: #888a85; }
+.highlight .c,.highlight .cm,.highlight .c1,.highlight .cs { color: #8D9684; }
+.highlight .err,.highlight .g,.highlight .l,.highlight .n,.highlight .x,.highlight .p,.highlight .ge,
+.highlight .gp,.highlight .gs,.highlight .gt,.highlight .ld,.highlight .s,.highlight .nc,.highlight .nd,
+.highlight .ne,.highlight .nl,.highlight .nn,.highlight .nx,.highlight .py,.highlight .ow,.highlight .w,.highlight .sb,
+.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,
+.highlight .s1,.highlight .ss,.highlight .bp { color: #C1C2C3; }
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,
+.highlight .nt { color: #729fcf; }
+.highlight .cp,.highlight .gh,.highlight .gu,.highlight .na,.highlight .nf { color: #E9A94B ; }
+.highlight .m,.highlight .nb,.highlight .no,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,
+.highlight .il { color: #8ae234; }
+.highlight .o { color: #989DAA; }
+.highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
 
-  .c     { color: $medium-gray; font-style: italic } 
-  .err   { color: $grapefruit; }
-  .k     { color: $bittersweet; }
-  .o     { color: $light-gray }
-  .cm    { color: $gray; font-style: italic }
-  .cp    { color: $gray; font-weight: bold }
-  .c1    { color: $gray; font-style: italic }
-  .cs    { color: $gray; font-weight: bold; font-style: italic }
-  .gd    { color: $gray; background-color: $medium-gray }
-  .gd .x { color: $gray; background-color: $medium-gray }
-  .ge    { font-style: italic }
-  .gr    { color: $lavendar }
-  .gh    { color: $gray }
-  .gi    { color: $dark-gray; background-color: $medium-gray }
-  .gi .x { color: $dark-gray; background-color: $medium-gray }
-  .go    { color: $gray }
-  .gp    { color: $gray }
-  .gs    { font-weight: bold }
-  .gu    { color: $light-gray }
-  .gt    { color: $grapefruit }
-  .kc    { color: $sunflower }
-  .kd    { color: $sunflower }
-  .kp    { color: $sunflower }
-  .kr    { color: $sunflower }
-  .kt    { color: $blue-jeans }
-  .m     { color: $grapefruit }
-  .s     { color: $grass }
-  .na    { color: $aqua }
-  .nb    { color: $mint }
-  .nc    { color: $grapefruit }
-  .no    { color: $grapefruit }
-  .ni    { color: $grapefruit }
-  .ne    { color: $light-gray }
-  .nf    { color: $sunflower }
-  .nn    { color: $medium-gray }
-  .nt    { color: $blue-jeans }
-  .nv    { color: $aqua }
-  .ow    { font-weight: bold }
-  .w     { color: $light-gray }
-  .mf    { color: $blue-jeans }
-  .mh    { color: $blue-jeans }
-  .mi    { color: $blue-jeans }
-  .mo    { color: $blue-jeans }
-  .sb    { color: $grass }
-  .sc    { color: $grass }
-  .sd    { color: $grass }
-  .s2    { color: $grass }
-  .se    { color: $grass }
-  .sh    { color: $grass }
-  .si    { color: $grass }
-  .sx    { color: $grass }
-  .sr    { color: $pink-rose }
-  .s1    { color: $grass }
-  .ss    { color: $lavendar }
-  .bp    { color: $medium-gray }
-  .vc    { color: $grapefruit }
-  .vg    { color: $grapefruit }
-  .vi    { color: $aqua }
-  .il    { color: $blue-jeans }
 
-  .lineno { color: $gray }
+.highlighttable, .highlight {
+  background: #343642;
+  margin-bottom: 15px;
+}
+
+.highlighttable .highlight {
+  margin-bottom: 0px;
+}
+
+.highlighttable pre, .highlight pre {
+  margin-bottom: 0px;
+  border: 0;
+  background-color: transparent;
+}
+
+.highlighttable .linenos {
+  background-color: #3a3d4a
+}
+
+.highlighttable .linenos pre {
+  color: #5a5d72;
+}
+
+.highlight {
+  padding: 0;
+}
+
+.highlight pre {
+  padding: 20px;
+}
+
+.highlighttable .highlight pre {
+  padding-left: 10px;
 }
