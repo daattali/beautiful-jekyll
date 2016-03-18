@@ -40,7 +40,7 @@ If you don't know what deep/targeted sequencing is, I tried to over-simplifying 
 
 This is, at a very superficial description, an experiment aiming to amplify a specific region of the genome via sequencing in order to study a particular problem (gene expression level, SNP in cancer genome, variant calling etc ..)
 
-On the lab, scientists design the experiment in order to make the sequencing just in the region delimited by the two red marks shown on the figure above. A lot of short DNA reads are generated in this region (and many others like this one) that we call amplicons region.
+On the lab, scientists design the experiment in order to make the sequencing just in the region delimited by the two red marks as shown in the figure above. A lot of short DNA reads are generated in this region (and many others like this one) that we call amplicon region.
 
 > amplicon is the region targeted by the experiment to be amplified for a given study. A more specific definition from Wikipedia : "An amplicon is a piece of DNA or RNA that is the source and/or product of natural or artificial amplification or replication events. It can be formed using various methods including polymerase chain reactions (PCR), ligase chain reactions (LCR), or natural gene duplication."
 
@@ -48,7 +48,7 @@ Data comes out of the sequencer as (usually) fastq files, that we align to the r
 
 Once the alignment is done, two types of files can be generated, a SAM file (the alignment) and its binary version the BAM file (which we will use in this tutorial)
 
-The way these files are generated is beyond the scope of this short tutorial, there are a lot of things to consider and to take care of, such as quality of the fastq files used, some specific metrics that describe the success of the wet lab experiment ect .. that we will just not discuss here.
+The way these files are generated is beyond the scope of this short tutorial, there are many things to consider and to take care of, such as quality of the fastq files used, some specific metrics that describe the success of the wet lab experiment etc .. that we will just not discuss here.
 
 The data we will use here consists of list of bam files (one bam file per subject studied, let's say here a tissue for example), and an interval file in a bed format (listing the amplicon regions).
 
@@ -217,7 +217,6 @@ def get_coverage(self, bam_file):
         print 'Calculating coverage over regions ...'
         sys.stdout.flush()
         t0 = time.time()
-        # Need to sort to maintain consistency with metaseq
         coverage_result = alignment.coverage(regions).sort()
         coverage_array = np.array([i[-1] for i in coverage_result], dtype=int)
 
@@ -259,7 +258,6 @@ def split_coverage(x):
     def gen():
         """
         Generator that yields only valid BED lines and then stops.
-
         The first "all" line is appended to hist_lines.
         """
         while True:
@@ -331,13 +329,8 @@ def plot_coverage_heatmap(self, heatmap_name):
     data_index = [str(chrom) + ":" + str(start) + "--" + str(end) for chrom, start, end in zip(list(coverage_df[coverage_df.columns[0]]), list(coverage_df[coverage_df.columns[1]]), list(coverage_df[coverage_df.columns[2]]))]
     data['coordinates'] = data_index
     data = data.set_index('coordinates')
-    #reorder data columns
-    #order = ["L9-100_S1_L001_R1_001", "L9-90-10A-10_S2_L001_R1_001", "L9-75-10A-25_S3_L001_R1_001", "L9-50-10A-50_S4_L001_R1_001", "L9-25-10A-75_S5_L001_R1_001", "L9-10-10A-90_S6_L001_R1_001", "10A-100_S7_L001_R1_001", "M-100_S8_L001_R1_001", "UM-100_S9_L001_R1_001_1", "M-50-UM-50_S10_L001_R1_001"]
-    #data  = data[order]
-    #plot
     fig = plt.figure()
     sns.heatmap(data, square=False, annot=True, fmt="d",  annot_kws={"size": 5})
-    #sns.clustermap(data)
     plt.xticks(rotation=90, fontsize=5)
     plt.yticks(fontsize=5)
     plt.title("Coverage within amplicon regions")
@@ -430,12 +423,9 @@ def plot_allelic_frequencies_heatmap_with_clusters(self, allele_freq_image):
         row_denAX = fig.add_subplot(heatmapGS[1, 0])
         row_denD = sch.dendrogram(row_clusters, color_threshold=np.inf, orientation='right')
         self.clean_axis(row_denAX)
-        # all_samples_allele_frequencies.index = [ 'position ' + str(x) for x in all_samples_allele_frequencies.index ]
-        # all_samples_allele_frequencies.columns = all_samples_allele_frequencies.columns[col_denD['leaves']]
         ### heatmap ####
         heatmapAX = fig.add_subplot(heatmapGS[1, 1])
-        axi = heatmapAX.imshow(all_samples_allele_frequencies.ix[row_denD['leaves'], col_denD[
-                               'leaves']], interpolation='nearest', aspect='auto', origin='lower', cmap=cm.Purples, vmax=threshold)
+        axi = heatmapAX.imshow(all_samples_allele_frequencies.ix[row_denD['leaves'], col_denD['leaves']], interpolation='nearest', aspect='auto', origin='lower', cmap=cm.Purples, vmax=threshold)
         heatmapAX.grid(False)
         self.clean_axis(heatmapAX)
         ## row labels ##
@@ -532,9 +522,6 @@ def plot_zygosity_matrix(self, allele_freq_image, cluster=0, custom_order=[]):
        # set the threshold for NaN
        threshold = 1.1
        cmap = colors.ListedColormap(['#CC3333', '#FFCC33', '#0066CC'], 'indexed')
-       # bounds = [-1, -0.9, 0.9, 1]
-       # norm = colors.BoundaryNorm(bounds, cmap.N)
-       # cmap = cm.Purples
        cmap.set_over('slategray')
        all_samples_zygosity.reset_index(drop=True)
        if cluster == 0:
@@ -566,8 +553,7 @@ def plot_zygosity_matrix(self, allele_freq_image, cluster=0, custom_order=[]):
            # all_samples_zygosity.columns = all_samples_zygosity.columns[col_denD['leaves']]
            ### heatmap ####
            heatmapAX = fig.add_subplot(heatmapGS[1, 1])
-           axi = heatmapAX.imshow(all_samples_zygosity.ix[row_denD['leaves'], col_denD['leaves']],
-                                  interpolation='nearest', aspect='auto', origin='lower', cmap=cmap, vmax=threshold)
+           axi = heatmapAX.imshow(all_samples_zygosity.ix[row_denD['leaves'], col_denD['leaves']],interpolation='nearest', aspect='auto', origin='lower', cmap=cmap, vmax=threshold)
            heatmapAX.grid(False)
            self.clean_axis(heatmapAX)
            ## row labels ##
@@ -625,7 +611,6 @@ def plot_zygosity_matrix(self, allele_freq_image, cluster=0, custom_order=[]):
                l.set_markersize(0)
            fig.tight_layout()
            fig.savefig(os.path.join(self.outdir, allele_freq_image))
-       # mpld3.save_html(fig, os.path.join(args.outdir, "allele_frequencies_with_cluster.html"))
        print u"\U0001F37B" + "     Zygosity matrix... Done"
 ```
 
@@ -662,10 +647,6 @@ def plot_mapping_qualities_in_regions(self, mapq_plot_image):
 
      for bam_file in self.list_of_bam_files:
          alignment = pybedtools.BedTool(bam_file)
-         # sample_id = os.path.splitext(bam_file)[0]
-         # samples.append(sample_id)
-         # print sample_id
-         # collect needed arrays
          mapq = []
          result = alignment.bam_to_bed().intersect(regions)
          for read in result:
