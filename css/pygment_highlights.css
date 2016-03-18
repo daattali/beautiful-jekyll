@@ -37,254 +37,92 @@
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
 
 */
+/**
+ * Syntax highlighting styles
+   Mukluk, based on bootflat
+   https://bootflat.github.io/documentation.html
+ */
+$blue-jeans  : #5D9CEC;
+$aqua        : #4FC1E9;
+$mint        : #48CFAD;
+$grass       : #A0D468;
+$sunflower   : #FFCE54;
+$bittersweet : #FC6E51;
+$grapefruit  : #ED5565;
+$lavendar    : #AC92EC;
+$pink-rose   : #EC87C0;
+$light-gray  : #F5F7FA;
+$medium-gray : #CCD1D9;
+$gray        : #656D78;
+$dark-gray   : #434A54;
 
-/* Jekyll Pygments syntax highlighter styles */
+.highlight {
+  color: $medium-gray;
+  line-height: 1.4em;
+  background: $dark-gray;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
 
-/*Color scheme*/
+  .c     { color: $medium-gray; font-style: italic } // Comment
+  .err   { color: $grapefruit; } // Error
+  .k     { color: $bittersweet; } // Keyword
+  .o     { color: $light-gray } // Operator
+  .cm    { color: $gray; font-style: italic } // Comment.Multiline
+  .cp    { color: $gray; font-weight: bold } // Comment.Preproc
+  .c1    { color: $gray; font-style: italic } // Comment.Single
+  .cs    { color: $gray; font-weight: bold; font-style: italic } // Comment.Special
+  .gd    { color: $gray; background-color: $medium-gray } // Generic.Deleted
+  .gd .x { color: $gray; background-color: $medium-gray } // Generic.Deleted.Specific
+  .ge    { font-style: italic } // Generic.Emph
+  .gr    { color: $lavendar } // Generic.Error
+  .gh    { color: $gray } // Generic.Heading
+  .gi    { color: $dark-gray; background-color: $medium-gray } // Generic.Inserted
+  .gi .x { color: $dark-gray; background-color: $medium-gray } // Generic.Inserted.Specific
+  .go    { color: $gray } // Generic.Output
+  .gp    { color: $gray } // Generic.Prompt
+  .gs    { font-weight: bold } // Generic.Strong
+  .gu    { color: $light-gray } // Generic.Subheading
+  .gt    { color: $grapefruit } // Generic.Traceback
+  .kc    { color: $sunflower } // Keyword.Constant
+  .kd    { color: $sunflower } // Keyword.Declaration
+  .kp    { color: $sunflower } // Keyword.Pseudo
+  .kr    { color: $sunflower } // Keyword.Reserved
+  .kt    { color: $blue-jeans } // Keyword.Type
+  .m     { color: $grapefruit } // Literal.Number
+  .s     { color: $grass } // Literal.String
+  .na    { color: $aqua } // Name.Attribute
+  .nb    { color: $mint } // Name.Builtin
+  .nc    { color: $grapefruit } // Name.Class
+  .no    { color: $grapefruit } // Name.Constant
+  .ni    { color: $grapefruit } // Name.Entity
+  .ne    { color: $light-gray } // Name.Exception
+  .nf    { color: $sunflower } // Name.Function
+  .nn    { color: $medium-gray } // Name.Namespace
+  .nt    { color: $blue-jeans } // Name.Tag
+  .nv    { color: $aqua } // Name.Variable
+  .ow    { font-weight: bold } // Operator.Word
+  .w     { color: $light-gray } // Text.Whitespace
+  .mf    { color: $blue-jeans } // Literal.Number.Float
+  .mh    { color: $blue-jeans } // Literal.Number.Hex
+  .mi    { color: $blue-jeans } // Literal.Number.Integer
+  .mo    { color: $blue-jeans } // Literal.Number.Oct
+  .sb    { color: $grass } // Literal.String.Backtick
+  .sc    { color: $grass } // Literal.String.Char
+  .sd    { color: $grass } // Literal.String.Doc
+  .s2    { color: $grass } // Literal.String.Double
+  .se    { color: $grass } // Literal.String.Escape
+  .sh    { color: $grass } // Literal.String.Heredoc
+  .si    { color: $grass } // Literal.String.Interpol
+  .sx    { color: $grass } // Literal.String.Other
+  .sr    { color: $pink-rose } // Literal.String.Regex
+  .s1    { color: $grass } // Literal.String.Single
+  .ss    { color: $lavendar } // Literal.String.Symbol
+  .bp    { color: $medium-gray } // Name.Builtin.Pseudo
+  .vc    { color: $grapefruit } // Name.Variable.Class
+  .vg    { color: $grapefruit } // Name.Variable.Global
+  .vi    { color: $aqua } // Name.Variable.Instance
+  .il    { color: $blue-jeans } // Literal.Number.Integer.Long
 
-$base03:                   #002B36
-$base02:                   #073642
-$base01:                   #586E75
-$base00:                   #657B83
-$base0:                    #839496
-$base1:                    #93A1A1
-$base2:                    #EEE8D5
-$base3:                    #FDF6E3
-
-
-$yellow:                   #B58900
-$orange:                   #CB4B16
-$red:                      #dc322f
-$magenta:                  #d33682
-$violet:                   #6c71c4
-$blue:                     #268bd2
-$cyan:                     #2aa198
-$green:                    #859900
-
-/* Colors*/
-$default:                  $base3
-$background:               $base03
-$comment:                  $base01
-$error:                    $base01
-$generic:                  $base1
-$keyword:                  $green
-$literal:                  $base1
-$name:                     $base1
-$operator:                 $green
-$other:                    $orange
-$punctuation:              $base1
-$commentmultiline:         $base01
-$commentpreproc:           $green
-$commentsingle:            $base01
-$commentspecial:           $green
-$genericdeleted:           $cyan
-$genericemph:              $base1
-$genericerror:             $red
-$genericheading:           $orange
-$genericinserted:          $green
-$genericoutput:            $base1
-$genericprompt:            $base1
-$genericstrong:            $base1
-$genericsubheading:        $orange
-$generictraceback:         $base1
-$keywordconstant:          $orange
-$keywordeclaration:        $blue
-$keywordnamespace:         $green
-$keywordpseudo:            $green
-$keywordreserved:          $blue
-$keywordtype:              $red
-$literaldate:              $base1
-$literalnumber:            $cyan
-$literalstring:            $cyan
-$nameattribute:            $base1
-$namebuiltin:              $yellow
-$nameclass:                $blue
-$nameconstant:             $orange
-$namedecorator:            $blue
-$nameentity:               $orange
-$nameexception:            $orange
-$namefunction:             $blue
-$namelabel:                $base1
-$namenamespace:            $base1
-$nameother:                $base00
-$nameproperty:             $base1
-$nametag:                  $blue
-$namevariable:             $blue
-$operatorword:             $green
-$textwhitespace:           $base1
-$literalnumberfloat:       $cyan
-$literalnumberhex:         $cyan
-$literalnumberinteger:     $cyan
-$literalnumberoct:         $cyan
-$literalstringbacktick:    $base01
-$literalstringchar:        $cyan
-$literalstringdoc:         $base1
-$literalstringdouble:      $cyan
-$literalstringescape:      $orange
-$literalstringheredoc:     $base1
-$literalstringinterpol:    $cyan
-$literalstringother:       $cyan
-$literalstringregex:       $red
-$literalstringsingle:      $cyan
-$literalstringsymbol:      $cyan
-$namebuiltinpseudo:        $blue
-$namevariableclass:        $blue
-$namevariableglobal:       $blue
-$namevariableinstance:     $blue
-$literalnumberintegerlong: $cyan
-
-.highlight
-  font-family: Monaco, monospace
-  font-size: 1em
-  line-height: 1.6em
-  font-weight: bold
-  background: $background
-  color: $default
-
-  pre
-    padding: 1em
-
-  span.lineno
-    margin-right: 0.6em
-
-  code, pre
-    margin: 1em 0 1.5em 0
-
-  .c
-    color: $comment
-  .err
-    color: $error
-  .g
-    color: $generic
-  .k
-    color: $keyword
-  .l
-    color: $literal
-  .n
-    color: $name
-  .o
-    color: $operator
-  .x
-    color: $other
-  .p
-    color: $punctuation
-  .cm
-    color: $commentmultiline
-  .cp
-    color: $commentpreproc
-  .c1
-    color: $commentsingle
-  .cs
-    color: $commentspecial
-  .gd
-    color: $genericdeleted
-  .ge
-    color: $genericemph
-    font-style: italic
-  .gr
-    color: $genericerror
-  .gh
-    color: $genericheading
-  .gi
-    color: $genericinserted
-  .go
-    color: $genericoutput
-  .gp
-    color: $genericprompt
-  .gs
-    color: $genericstrong
-    font-weight: bold
-  .gu
-    color: $genericsubheading
-  .gt
-    color: $generictraceback
-  .kc
-    color: $keywordconstant
-  .kd
-    color: $keywordeclaration
-  .kn
-    color: $keywordnamespace
-  .kp
-    color: $keywordpseudo
-  .kr
-    color: $keywordreserved
-  .kt
-    color: $keywordtype
-  .ld
-    color: $literaldate
-  .m
-    color: $literalnumber
-  .s
-    color: $literalstring
-  .na
-    color: $nameattribute
-  .nb
-    color: $namebuiltin
-  .nc
-    color: $nameclass
-  .no
-    color: $nameconstant
-  .nd
-    color: $namedecorator
-  .ni
-    color: $nameentity
-  .ne
-    color: $nameexception
-  .nf
-    color: $namefunction
-  .nl
-    color: $namelabel
-  .nn
-    color: $namenamespace
-  .nx
-    color: $nameother
-  .py
-    color: $nameproperty
-  .nt
-    color: $nametag
-  .nv
-    color: $namevariable
-  .ow
-    color: $operatorword
-  .w
-    color: $textwhitespace
-  .mf
-    color: $literalnumberfloat
-  .mh
-    color: $literalnumberhex
-  .mi
-    color: $literalnumberinteger
-  .mo
-    color: $literalnumberoct
-  .sb
-    color: $literalstringbacktick
-  .sc
-    color: $literalstringchar
-  .sd
-    color: $literalstringdoc
-  .s2
-    color: $literalstringdouble
-  .se
-    color: $literalstringescape
-  .sh
-    color: $literalstringheredoc
-  .si
-    color: $literalstringinterpol
-  .sx
-    color: $literalstringother
-  .sr
-    color: $literalstringregex
-  .s1
-    color: $literalstringsingle
-  .ss
-    color: $literalstringsymbol
-  .bp
-    color: $namebuiltinpseudo
-  .vc
-    color: $namevariableclass
-  .vg
-    color: $namevariableglobal
-  .vi
-    color: $namevariableinstance
-  .il
-    color: $literalnumberintegerlong
+  .lineno { color: $gray }
+}
