@@ -6,8 +6,8 @@
 
 .highlight {
   white-space: pre;
-  overflow: auto;
-  /*word-wrap: normal;*/ /* horizontal scrolling */
+  overflow: scroll;
+  word-wrap: normal; /* horizontal scrolling */
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
