@@ -6,6 +6,7 @@
 
 /*
 .highlight {
+  counter-reset: line-numbering;
   white-space: pre;
   overflow: scroll;
   word-wrap: normal;
@@ -18,10 +19,12 @@
 }*/
 
 .highlight {
+pre {
     counter-reset: line-numbering;
     border: solid 1px #d9d9d9;
     border-radius: 0;
-    background: #fff;
+    background: #343642;
+    color: #C1C2C3;
     padding: 0;
     line-height: 23px;
     margin-bottom: 30px;
@@ -30,7 +33,6 @@
     word-break: inherit;
     word-wrap: inherit;
 }
-
 pre a::before {
   content: counter(line-numbering);
   counter-increment: line-numbering;
@@ -51,19 +53,16 @@ pre a::before {
   -ms-user-select: none;
   user-select: none;
 }
-
 pre a:first-of-type::before {
   padding-top: 10px;
 }
-
 pre a:last-of-type::before {
   padding-bottom: 10px;
 }
-
 pre a:only-of-type::before {
   padding: 10px;
 }
-
+}
 .highlight .hll { background-color: #ffc; }
 .highlight .gd { color: #2e3436; background-color: #0e1416; }
 .highlight .gr { color: #eeeeec; background-color: #c00; }
