@@ -35,39 +35,3 @@
 .highlight .il { color: #8ae234; }
 .highlight .o { color: #989DAA; }
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
-
-
-.highlighttable, .highlight {
-  background: #343642;
-  margin-bottom: 15px;
-}
-
-.highlighttable .highlight {
-  margin-bottom: 0px;
-}
-
-.highlighttable pre, .highlight pre {
-  margin-bottom: 0px;
-  border: 0;
-  background-color: transparent;
-}
-
-.highlighttable .linenos {
-  background-color: #3a3d4a
-}
-
-.highlighttable .linenos pre {
-  color: #5a5d72;
-}
-
-.highlight {
-  padding: 0;
-}
-
-.highlight pre {
-  padding: 20px;
-}
-
-.highlighttable .highlight pre {
-  padding-left: 10px;
-}
