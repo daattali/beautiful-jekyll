@@ -123,7 +123,8 @@ Dual clustering on positions and sample names grouping positions per zygosity (h
 
 We need to import the needed libraries and to init the layout to display the plots. I usually don't like the way matplotlib is displayed so I modify the `rc_params` in order to make the plots look nicer than the default.
 
-{% highlight python linenos %}
+{% highlight python linenos=table %}
+
 from __future__ import division
 import os
 import sys
@@ -154,7 +155,10 @@ rcParams['ytick.labelsize'] = 9
 rcParams['legend.fontsize'] = 7
 rcParams['font.serif'] = ['Computer Modern Roman']
 rcParams['text.usetex'] = False
-rcParams['figure.figsize'] = 20, 10{% endhighlight %}
+rcParams['figure.figsize'] = 20, 10
+
+
+{% endhighlight %}
 
 As you can see I use the style `ggplot` but you can use the style you want. We don't need to do this if we use `seaborn`, these changes are just for the plots using only `matplotlib`
 
