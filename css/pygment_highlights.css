@@ -9,7 +9,7 @@
   counter-reset: line-numbering;
   white-space: pre;
   overflow: scroll;
-  overflow-x: scroll;
+  overflow-x: hidden;
   word-break: inherit;
   word-wrap: inherit;
   -moz-border-radius: 3px;
