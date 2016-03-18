@@ -111,7 +111,7 @@ This plot is another view of coverage inside amplicon region, it places all the 
 
 **Allelic frequencies heatmap**
 
-This is a plot showing the allele frequencies change across positions and samples, I tried to cluster the positions per frequencies values but I dont get 'clusterable' positions, so I sorted the positions values across all samples  
+This is a plot showing the allele frequencies change across positions and samples, I tried to cluster the positions per frequencies values but I don't get 'clusterable' positions, so I sorted the positions values across all samples  
 
 **Zygosity Matrix**
 
