@@ -1,0 +1,9 @@
+- slug: beginner
+  name: Beginner
+  color: '#006600'
+- slug: intermediate
+  name: Intermediate
+  color: '#b38f00'
+- slug: advanced
+  name: Advanced
+  color: '#cc0000'

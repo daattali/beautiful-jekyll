@@ -14,6 +14,21 @@ layout: default
         <h2 class="post-subheading">{{ page.subtitle }}</h2>
         {% endif %}
         <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span><br>
+        {% if post.level %}
+          {% for site_level in site.data.levels %}
+              {% if site_level.slug == post.level %}
+                  {% assign level = site_level %}
+              {% endif %}
+          {% endfor %}
+          {% if level %}
+              {% capture level_content %} <span class="label" style="background-color:{{ level.color }}">{{ level.name }}</span>{% endcapture %}
+          {% endif %}
+      <span class="post-meta">Level : {{ level_content }}</span><br>
+      {% else %}
+          {% assign level_content = '' %}
+      {% endif %}
+
+
           {% include reading_time.html %}<br>
 
           {% if post.category %}
@@ -45,6 +60,7 @@ layout: default
         {% else %}
             {% assign tags_content = '' %}
         {% endif %}
+
 
         <span class="post-meta">Posted {{ category_content }}{{ tags_content }}</span><br>
 
