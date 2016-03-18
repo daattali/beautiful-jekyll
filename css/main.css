@@ -187,6 +187,8 @@ img::-moz-selection {
 .navbar-custom .nav .navlinks-children {
   width: 100%;
   display: none;
+  word-break: break-word;
+  text-align: center;
 }
 .navbar-custom .nav .navlinks-container .navlinks-children a {
   display: block;
