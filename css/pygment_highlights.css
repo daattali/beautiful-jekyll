@@ -44,6 +44,11 @@
   font-size: 0.675em;
   -webkit-font-smoothing: subpixel-antialiased;
   width: 100%;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 20px;
+  background: #343642;
+  color: #C1C2C3;
 }
 
 .highlight .hll { background-color: #ffc; }
