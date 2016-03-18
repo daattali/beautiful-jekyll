@@ -19,44 +19,14 @@
             <div class="navlinks-children">
               {% for childlink in link[1] %}
                 {% for linkparts in childlink %}
-                  {% capture before %}{{ linkparts[1] | split: "://" | first }}{% endcapture %}
-                  {% capture after %}{{ linkparts[1] | split: "://" | last }}{% endcapture %}            
-                  {% assign internal = true %}
-                  {% if before != after %}
-                    {% if before == "http" or before == "https" %}
-                      {% assign internal = false %}
-                    {% endif %}  
-                  {% endif %}
-      
-                  {% if internal %}
-                    {% capture linkurl %}{{ site.baseurl }}/{{ linkparts[1] }}{% endcapture %}
-                  {% else %}
-                    {% capture linkurl %}{{ linkparts[1] }}{% endcapture %}
-                  {% endif %}
-      
-                  <a href="{{ linkurl }}">{{ linkparts[0] }}</a>
+                  {% include navbarlink.html link=linkparts %}
                 {% endfor %}
               {% endfor %}
             </div>
           </li>
         {% else %}
           <li>
-            {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
-            {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}            
-            {% assign internal = true %}
-            {% if before != after %}
-              {% if before == "http" or before == "https" %}
-                {% assign internal = false %}
-              {% endif %}  
-            {% endif %}
-
-            {% if internal %}
-              {% capture linkurl %}{{ site.baseurl }}/{{ link[1] }}{% endcapture %}
-            {% else %}
-              {% capture linkurl %}{{ link[1] }}{% endcapture %}
-            {% endif %}
-
-            <a href="{{ linkurl }}">{{ link[0] }}</a>
+            {% include navbarlink.html link=link %}
           </li>
         {% endif %}
         {% endfor %}
