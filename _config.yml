@@ -29,8 +29,10 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   Home: ""
   Getting started: "getstarted"
-  Featured users: "featured-users"
-  About me: "http://deanattali.com"
+  More:
+    - About me: "http://deanattali.com"
+    - Featured users: "featured-users"
+    - Documentation: "https://github.com/daattali/beautiful-jekyll#readme"
 
 # --- Footer options --- #
 
