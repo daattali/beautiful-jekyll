@@ -326,49 +326,139 @@ footer .theme-by {
   }
 }
 
-/* --- Post and page layout --- */
+/* --- Post and page headers --- */
 
-header.header-page {
-  margin-bottom: 20px;
+.intro-header {
+  margin: 80px 0 20px;
+  position: relative;
 }
-
-header.header-page .page-heading {
+.intro-header.big-img {
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-top: 51px; /* The small navbar is 50px tall + 1px border */
+  margin-bottom: 35px;
+}
+.intro-header.big-img  .big-img-transition {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+.intro-header .page-heading {
   text-align: center;
 }
-
-header.header-post .post-heading h1 {
-  font-size: 35px;
-  margin-top: 0;
+.intro-header.big-img .page-heading,
+.intro-header.big-img .post-heading {
+  padding: 100px 0;
+  color: #FFF;
+  text-shadow: 1px 1px 3px #000;
 }
-
-header.header-page .page-heading h1 {
+.intro-header .page-heading h1 {
+  margin-top: 0;
   font-size: 50px;
-  margin-top: 0;
 }
-
-header.header-post .post-heading .post-subheading,
-header.header-page .page-heading .page-subheading {
-  font-size: 24px;
+.intro-header .post-heading h1 {
+  margin-top: 0;
+  font-size: 35px;
+}
+.intro-header .page-heading .page-subheading,
+.intro-header .post-heading .post-subheading {
+  font-size: 27px;
   line-height: 1.1;
   display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
 }
-
-header.header-post .post-heading .post-subheading {
+.intro-header .post-heading .post-subheading {
   margin-bottom: 20px;
 }
-
+.intro-header.big-img .page-heading .page-subheading,
+.intro-header.big-img .post-heading .post-subheading {
+  font-weight: 400;
+}
+.intro-header.big-img .page-heading hr {
+  box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  -moz-box-shadow: 1px 1px 3px #000;
+}
+.intro-header.big-img .post-heading .post-meta {
+  color: #EEE;
+}
+.intro-header.big-img .img-desc {
+  background: rgba(30, 30, 30, 0.6);
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: #EEE;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
 @media only screen and (min-width: 768px) {
-  header.header-post .post-heading h1 {
+  .intro-header {
+    margin-top: 130px;
+  }
+  .intro-header.big-img {
+    margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
+  }	
+  .intro-header.big-img .page-heading,
+  .intro-header.big-img .post-heading  {
+    padding: 150px 0;
+  }  
+  .intro-header .page-heading h1 {
+    font-size: 80px;
+  }
+  .intro-header .post-heading h1 {
     font-size: 50px;
+  }
+  .intro-header.big-img .img-desc {
+    font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  header.header-page .page-heading h1 {
-    font-size: 80px;
+.header-section.has-img .no-img {
+  margin-top: 0;
+  background: #FCFCFC;
+  margin: 0 0 40px;
+  padding: 20px 0;
+  box-shadow: 0 0 5px #AAA;
+}
+/* Many phones are 320 or 360px, so make sure images are a proper aspect ratio in those cases */
+.header-section.has-img .intro-header.no-img {
+  display: none;
+}
+@media only screen and (max-width: 365px) {
+  .header-section.has-img .intro-header.no-img {
+    display: block;
+  }
+  .intro-header.big-img {
+    width: 100%;
+    height: 220px;
+  }
+  .intro-header.big-img .page-heading,
+  .intro-header.big-img .post-heading {
+    display: none;
+  }
+  .header-section.has-img .big-img {
+    margin-bottom: 0;
+  }  
+} 
+@media only screen and (max-width: 325px) { 
+  .intro-header.big-img {
+    height: 200px;
   }
 }
 
