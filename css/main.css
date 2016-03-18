@@ -188,7 +188,6 @@ img::-moz-selection {
   width: 100%;
   display: none;
   word-break: break-word;
-  text-align: center;
 }
 .navbar-custom .nav .navlinks-container .navlinks-children a {
   display: block;
@@ -216,6 +215,7 @@ img::-moz-selection {
   }
   .navbar-custom .nav .navlinks-children {
     position: absolute;
+    text-align: center;
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
     padding-left: 10px;
