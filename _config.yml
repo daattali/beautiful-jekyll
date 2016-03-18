@@ -77,9 +77,6 @@ exclude:
   - LICENSE
   - README.md
 
-# add google fonts
-googlefonts: ["Patua One"]
-
 # prose.io config
 prose:
   rooturl: '_posts'
