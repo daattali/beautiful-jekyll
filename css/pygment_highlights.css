@@ -8,8 +8,8 @@
 .highlight {
   counter-reset: line-numbering;
   white-space: pre;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow: auto;
+  overflow-x: scroll;
   word-break: inherit;
   word-wrap: inherit;
   -moz-border-radius: 3px;
