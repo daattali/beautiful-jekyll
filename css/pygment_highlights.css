@@ -49,7 +49,7 @@
 .highlight {
 
   .c     { color: #5B6370; font-style: italic }
-  .err   { color: #960050; background-color: #1e0010; }
+  .err .py  { color: #960050; background-color: #1e0010; }
   .k     { color: #C776DF; font-weight: bold; }
   .o     { font-weight: bold }
   .cm    { color: #5B6370; font-style: italic }
@@ -57,7 +57,7 @@
   .c1    { color: #5B6370; font-style: italic }
   .cs    { color: #5B6370; font-weight: bold; font-style: italic }
   .gd    { color: #000; background-color: #fdd }
-  .gd .x { color: #000; background-color: #faa } 
+  .gd .x { color: #000; background-color: #faa }
   .ge    { font-style: italic }
   .gr    { color: #a00 }
   .gh    { color: #5B6370 }
