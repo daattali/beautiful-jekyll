@@ -38,7 +38,7 @@ If you don't know what deep/targeted sequencing is, I tried to over-simplifying 
 
 ![deepsequencing](../img/20160315/intro/intro.001.png)
 
-This is, at a very high level description, an experiment aiming to amplifying a specific region of the genome via sequencing in order to study a particular problem (gene expression level, SNP in cancer genome, variant calling etc ..)
+This is, at a very superficial description, an experiment aiming to amplify a specific region of the genome via sequencing in order to study a particular problem (gene expression level, SNP in cancer genome, variant calling etc ..)
 
 On the lab, scientists design the experiment in order to make the sequencing just in the region delimited by the two red marks shown on the figure above. A lot of short DNA reads are generated in this region (and many others like this one) that we call amplicons region.
 
@@ -154,8 +154,7 @@ rcParams['ytick.labelsize'] = 9
 rcParams['legend.fontsize'] = 7
 rcParams['font.serif'] = ['Computer Modern Roman']
 rcParams['text.usetex'] = False
-rcParams['figure.figsize'] = 20, 10
-{% endhighlight %}
+rcParams['figure.figsize'] = 20, 10{% endhighlight %}
 
 As you can see I use the style `ggplot` but you can use the style you want. We don't need to do this if we use `seaborn`, these changes are just for the plots using only `matplotlib`
 
