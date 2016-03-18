@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: page
 ---
 
 email: alexwhan@gmail.com
