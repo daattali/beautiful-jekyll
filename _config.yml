@@ -1,7 +1,7 @@
 # --- Serving options --- #
 
-url: ""
-baseurl: "alexwhan.github.io"
+url: "alexwhan.github.io"
+baseurl: ""
 
 # Name of website
 title: Inscrutable errors
