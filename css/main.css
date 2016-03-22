@@ -259,11 +259,12 @@ footer .theme-by {
 .post-heading .post-meta {
   color: #808080;
   font-size: 18px;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style:italic;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-preview .post-read-more {
   font-weight: 100;
