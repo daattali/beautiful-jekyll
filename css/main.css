@@ -17,9 +17,13 @@ p a {
   /* text-decoration: underline */
   color: #008AFF;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Passion One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 900;
+h1 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 a {
   color: #008AFF;
@@ -300,8 +304,8 @@ header.header-page .page-heading .page-subheading {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
   margin: 10px 0 0;
 }
 
