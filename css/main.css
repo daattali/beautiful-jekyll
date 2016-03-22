@@ -3,7 +3,7 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Lato', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -18,8 +18,8 @@ p a {
   color: #008AFF;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 a {
   color: #008AFF;
@@ -33,7 +33,7 @@ blockquote {
   font-style: italic;
 }
 hr.small {
-  max-width: 100px;
+  max-width: 200px;
   margin: 15px auto;
   border-width: 4px;
   border-color: inherit;
@@ -50,7 +50,7 @@ hr.small {
 }
 
 .main-explain-area {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 15px inherit;
 }
 
@@ -91,8 +91,8 @@ img::-moz-selection {
 
 .navbar-custom {
   background: #F5F5F5;
-  border-bottom: 1px solid #EAEAEA;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #DCDCDC;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom .nav li a {
@@ -183,8 +183,8 @@ img::-moz-selection {
 footer {
   padding: 30px 0;
   background: #F5F5F5;
-  border-top: 1px #EAEAEA solid;
-  margin-top: 50px;
+  border-top: 1px #DCDCDC solid;
+  margin-top: 30px;
   font-size: 14px;
 }
 
@@ -197,7 +197,7 @@ footer .list-inline {
   padding: 0;
 }
 footer .copyright {
-  font-family: Open Sans;
+  font-family: 'Roboto Slab';
   text-align: center;
   margin-bottom: 0;
 }
@@ -252,21 +252,22 @@ footer .theme-by {
 }
 .post-preview .post-subtitle {
   margin: 0;
-  font-weight: 300;
+  font-weight: 100;
   margin-bottom: 10px;
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: #808080;
   font-size: 18px;
-  font-style: italic;
+  font-style:italic;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post-preview .post-read-more {
-  font-weight: 800;
+  font-weight: 100;
 }
 
 @media only screen and (min-width: 768px) {
@@ -300,8 +301,8 @@ header.header-page .page-heading .page-subheading {
   font-size: 24px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
   margin: 10px 0 0;
 }
 
@@ -335,10 +336,10 @@ header.header-post .post-heading .post-subheading {
 /* --- Pager --- */
 
 .pager li a {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 100;
   letter-spacing: 1px;
   padding: 10px 5px;
   background: #FFF;

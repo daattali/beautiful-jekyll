@@ -1,10 +1,10 @@
 # --- Serving options --- #
 
-url: "alexwhan.com"
+url: "http://alexwhan.github.io"
 baseurl: ""
 
 # Name of website
-title: Alex Whan
+title: Inscrutable errors
 
 # Short description of your site
 description: R and whatever else
@@ -38,7 +38,7 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  stackoverflow: false
+  stackoverflow: true
 
 # --- Misc --- #
 
