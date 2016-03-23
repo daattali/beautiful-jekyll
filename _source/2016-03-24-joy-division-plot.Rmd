@@ -84,7 +84,7 @@ p <- p +
 
 And the final result:
 
-```{r print_plot, echo=FALSE}
+```{r print_plot, echo=FALSE, fig.align='center'}
 print(p)
 ```
 
