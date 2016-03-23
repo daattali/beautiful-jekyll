@@ -80,7 +80,7 @@ p <- p +
 
 And the final result:
 
-<img src="../figure/print_plot-1.png" title="plot of chunk print_plot" alt="plot of chunk print_plot" style="display: block; margin: auto auto auto 0;" />
+<img src="figure/print_plot-1.png" title="plot of chunk print_plot" alt="plot of chunk print_plot" style="display: block; margin: auto auto auto 0;" />
 
 While I'm certainly not getting it [tattooed on my back](http://ajournalofmusicalthings.com/an-epic-joy-division-tattoo/), I'm reasonably satisfied with the end result. 
 
