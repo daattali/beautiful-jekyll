@@ -89,3 +89,5 @@ print(p)
 ```
 
 While I'm certainly not getting it [tattooed on my back](http://ajournalofmusicalthings.com/an-epic-joy-division-tattoo/), I'm reasonably satisfied with the end result. 
+
+You can find the source for this post on [github](https://github.com/alexwhan/alexwhan.github.io/blob/master/_source/2016-03-24-joy-division-plot.Rmd)
