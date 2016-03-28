@@ -92,7 +92,7 @@ defaults:
     scope:
       path: "" # all files
     values:
-      layout: "default"
+      layout: "page"
 
 # Exclude these files from production site
 exclude:
