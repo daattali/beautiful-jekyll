@@ -82,6 +82,14 @@ paginate: 5
 defaults:
   -
     scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts 
+      show-share: true # add sharing buttons to all blog posts
+  -
+    scope:
       path: "" # all files
     values:
       layout: "default"
