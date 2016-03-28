@@ -91,7 +91,7 @@ defaults:
     scope:
       path: "" # all files
     values:
-      layout: "default"
+      layout: "page"
       show-avatar: true
 
 # Exclude these files from production site
