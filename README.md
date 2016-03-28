@@ -21,11 +21,11 @@ This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used 
 - [Prerequisites](#prerequisites)
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
 - [Add your own content](#add-your-own-content)
-- [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter)
-- [Basic features](#features)
-- [Advanced features](#more-advanced-features)
-- [Featured users (success stories!)](#featured-users)
-- [Very advanced: local development](#advanced-local-development)
+- [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
+- [Basic features](#basic-features)
+- [Advanced features](#advanced-features)
+- [Featured users (success stories!)](#featured-users-success-stories)
+- [Very advanced: local development](#very-advanced-local-development)
 - [Credits](#credits)
 - [Contributions](#contributions)
 - [Known limitations](#known-limitations)
@@ -191,7 +191,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [melyanna.github.io](http://melyanna.github.io/) | Melyanna | Shows off her nice art |
 | [chaitanyajoshi.xyz](http://chaitanyajoshi.xyz/) | Chaitanya Joshi | Computer Science undergrad |
 
-### Advanced: Local development
+### Very advanced: Local development
 
 Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Folow these simple steps to do that with Vagrant:
 
