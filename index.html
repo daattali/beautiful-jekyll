@@ -1,46 +1,37 @@
----
-layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tonomoshia.GitHub.io by tonomoshia</title>
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-	
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}  
-    </a>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-  
-    <div class="post-entry">
-      {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Tonomoshia.GitHub.io</h1>
+        <p>Paralegal Programmer</p>
+        <p class="view"><a href="https://github.com/tonomoshia">View the Project on GitHub <small>tonomoshia</small></a></p>
+        <ul>
+          <li class="single"><a href="https://github.com/tonomoshia/tonomoshia.github.io">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>I am a paralegal at a Fortune 100 insurance company by day and a self-taught programmer by night. Oh yeah, and I also have two adorable and astute tax deductions also known as 'kids'. I have been a paralegal for 15 years, 10 of them at my current company. I have a Bachelor's degree in Mass Communications from Florida International University. I am currently enrolled at Lake Forest Graduate School of Management to complete my MBA while also working through FreeCode Camp to become a Full-Stack Web Developer. My ultimte goal is to become a Certified Scrum Master and then a Certified Scrum Product Owner. When I'm not coding or working my day job, I keep busy with my two boys, my two cats and my dog.</p>
+      </section>
     </div>
-  
-   </article>
-  {% endfor %}
-</div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+    <footer>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
