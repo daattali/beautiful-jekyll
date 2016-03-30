@@ -97,17 +97,19 @@ img {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 .navbar-custom .nav li a {
-  text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
+  display:inline;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 800;
+  display:inline-block;
+  font-weight: 200;
   color: #404040;
 }
 
@@ -115,7 +117,8 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: white;
+  background-color: #111;
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,13 +140,13 @@ img {
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-  left: 50%;
+  left: 5%;
   width: 50px;
-  margin-top: -25px;
+  margin-top: 0px;
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 0%;
   margin-left: -50%;
   display: inline-block;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -152,7 +155,7 @@ img {
 }
 .navbar-custom .avatar-container  .avatar-img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 0%;
   display: block;
 }
 
@@ -180,6 +183,49 @@ img {
   .navbar-custom .avatar-container  .avatar-img {
     width: 100%;
   }
+}
+
+#rectangle-border {
+  width: 100%;
+  top: 20px;
+  position: absolute;
+}
+#rectangle{
+  float: left;
+    width:16.8%;
+    height:10px;
+    background: #DAE657;
+}
+#rectangle1{
+  float: left;
+    width:16.8%;
+    height:10px;
+    background:#01B3A5;
+}
+#rectangle2{
+  float: left;
+    width:16.8%;
+    height:10px;
+    background:#DF2460;
+}
+#rectangle3{
+  float: left;
+    width:16.8%;
+    height:10px;
+    background:#F5775F;
+}
+#rectangle4{
+  float: left;
+    width:16.8%;
+    height:10px;
+    background:#9EAE2F;
+}
+#rectangle5{
+  float: left;
+    width: 16%;
+    height:10px;
+    background:#04B0DA;
+
 }
 
 /* Multi-level navigation links */
