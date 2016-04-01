@@ -31,5 +31,5 @@ _**During this course students will have the opportunity to**_
 * Develop an appreciation for the natural history of tropical ecosystems.
 
 ## Costs
-Trip costs include airfare from Vancouver to Cusco, lodging, food and ground or boat transportation from Cusco to and from each of the stations. We will try our best to keep costs as low as possible, but you should expect to pay around $2000 for the trip, in addition to airfare. Round trip tickets from Vancouver to Cuzco are just under $1000 if tickets are purchased far enough in advance. The cost per student also depends on the currency exchange rate during the summer and the number of students attending (with more students the per individual cost will be reduced with shared food and transportation costs).
+Trip costs include lodging, food and ground or boat transportation from Cusco to and from each of the stations. We will try our best to keep costs as low as possible, but you should expect to pay around $2000 for the trip, in addition to airfare Vancouver to Cusco. Round trip tickets from Vancouver to Cuzco are just under $1000 if tickets are purchased far enough in advance. The cost per student also depends on the currency exchange rate during the summer and the number of students attending (with more students the per individual cost will be reduced with shared food and transportation costs).
 
