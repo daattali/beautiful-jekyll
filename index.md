@@ -8,7 +8,7 @@ subtitle: Craig French's Research Page
 
 1. [Object Seeing and Spatial Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%20FINAL%20DRAFT%20-%20Object%20Seeing%20and%20Spatial%20Perception.pdf) in *Phenomenal Presence*, edited by Fabian Dorsch, Fiona Macpherson & Martine Nida-Rumelin, Oxford University Press. Forthcoming. 
 
-2. [Idiosyncratic Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%202015%20-%20Idiosycratic%20Perception.pdf). In *The Philosophical Quarterly*. Forthcoming.
+2. [Idiosyncratic Perception](https://www.dropbox.com/s/g442niz1fsvy1vp/French%2C%20C%20-%202016%20-%20Idiosyncratic%20Perception.pdf?dl=0). In *The Philosophical Quarterly*, 2016.
 
 3. [On the Particularity of Experience](https://www.dropbox.com/s/o4aiajo3i1ib7np/French%2C%20C%20and%20Gomes%2C%20A%20-%202016%20-%20On%20the%20Particularity%20of%20Experience.pdf?dl=0). In *Philosophical Studies*, 2016. (With [Anil Gomes](http://www.anilgomes.com/)).
 
