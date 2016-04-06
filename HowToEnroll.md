@@ -17,7 +17,7 @@ Biol409 is listed as a summer 2016 course. This course is open (but not restrict
 We will hold an **information session on April 1st, at 5:00 pm in Biodiversity Room 224** (second floor). In this session we will describe details of the course and answer any questions regarding content, objectives, prerequisites and fees associated with living and traveling expenses.
 
 ## Application and Registration 
-Students interested in this course must submit a completed [**application form**](http://biol409.github.io/Application_form.pdf) including a short paragrapgh with a **statement of interest** (doc or pdf format is fine). Please answer the following questions: _Why are you interested in participating in this course?_ _Have you considered pursuing a career in ecology?_ _Do you have any experience in research?_ _Which previous field courses, if any, have you attended?_
+Students interested in this course must submit a completed [**application form**](http://biol409.github.io/Application_form.pdf)(doc or pdf format is fine). Please include answers to the following questions: _Why are you interested in participating in this course?_ _Have you considered pursuing a career in ecology?_ _Do you have any experience in research?_ _Which previous field courses, if any, have you attended?_
 
 Please submit your application or any questions regarding this course to **biol409course@gmail.com**. 
 
