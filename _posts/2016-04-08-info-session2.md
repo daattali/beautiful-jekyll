@@ -2,7 +2,7 @@
 layout: post
 title: Second Information Session (April 12th)
 subtitle: If you missed the previous, please come to this one
-date: 2016-03-30
+date: 2016-04-08
 ---
 
 We want to open a space for those of you that could not attend our first information session. So, We will have a second one, in which we 
