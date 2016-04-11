@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Developing An Ember Addon Locally
+published: true
+subtitle: null
+date: ""
 ---
+
 
 ## Introduction
 
@@ -17,7 +21,7 @@ The rest of this tutorial will discuss the second approach.
 
 ## Setup
 
-```bash
+```sh
 cd path/to/your/ember/addon
 
 npm link
@@ -27,7 +31,7 @@ This will setup a global symbolic link so that **local** projects that are tryin
 
 Now we will need to tell your project to gain reference globally **linked** project which is your addon project. So do the following :
 
-```bash
+```sh
 cd path/to/some/app/using/the/addon
 
 npm link name-of-your-addon
@@ -39,7 +43,7 @@ Notice : `name-of-your-addon` corresponds the the name that is in in your `packa
 
 Once you are done developing your new feature or whatever, you want to unlink your symbolic link. Just do the following :
 
-```bash
+```sh
 cd path/to/your/ember/addon
 
 npm unlink
