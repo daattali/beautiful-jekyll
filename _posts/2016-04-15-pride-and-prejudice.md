@@ -1,8 +1,6 @@
 --- 
+layout: post
 title: "Pride and Prejudice and R"
-author: "Alex Whan"
-date: "15 April 2016"
-output: html_document
 ---
 
 One of the things I love about R, and the R community, is getting a bit of an understanding of what types of analysis other people do. While we might all work on such different areas of research or analysis, the shared language gives lots of common ground.
