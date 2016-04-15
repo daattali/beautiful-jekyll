@@ -1,0 +1,79 @@
+--- 
+title: "Pride and Prejudice and R"
+author: "Alex Whan"
+date: "15 April 2016"
+output: html_document
+---
+
+One of the things I love about R, and the R community, is getting a bit of an understanding of what types of analysis other people do. While we might all work on such different areas of research or analysis, the shared language gives lots of common ground.
+
+I've been interested over the years seeing the work done around the place in the analysis of language, which is so far removed from my own area of study (genetics). Often the kind of thing I come across is Twitter based sentiment analysis, which usually strickes me as being of limited usefulness for insight. 
+
+So I enjoyed reading Julia Silge's [(@juliasilge)](https://twitter.com/juliasilge/) posts ([1](http://juliasilge.com/blog/You-Must-Allow-Me/) and [2](http://juliasilge.com/blog/If-I-Loved-NLP-Less/)) on sentiment analysis in Jane Austen novels. While I'm not exactly a Jane Austen afficianado, like any other right thinking human, I have seen the 1996 BBC version of Pride and Prejudice *more than once* (let's not mention the 2005 abomination). 
+
+(As an aside, any mention of Jane Austen immediately make me remember Mitchell and Webb's effort - "A gentleman does not conga")
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/gTchxR4suto" frameborder="0" allowfullscreen></iframe>
+
+So, anyway, when I saw that Julia had produced a package with the text of all Austen's novels, I thought it would be an interesting exercise for a Friday night in to have a look at the data. The text is broken into lines, and there are a variety of ways of breaking these into individual words, and getting sophisticated with sentiment analysis. I thought for my initial forway into this world I would simply try to see where each character appears in the story.
+
+A big caveat to start, I have taken a very naive approach to this. One of the challenges I didn't try to solve was that characters are referred to be different names in different contexts. Elizabeth, Lizzy, Miss Bennet, for example. However Miss Bennet could refer to any one of the sisters, so I decided for my purposes the easiest thing to do was just potter on.
+
+So my super simplistic approach was to mark rows where a character name appears, then to take a rolling mean (over 20 rows). 
+
+There are some interesting (though unsurprising) patterns. As you'd expect, Lizzy and Darcy are the most prominent characters, and Lizzy only drops off at one point (for those who are interested, it's when Darcy is gving Wickham's backstory). You can also see the way Lydia and Wickham's presence move together during the elopement (while Darcy and Bingley take a backseat). The relationship between Mr. Collins and Charlotte is interesting as well. I feel like it would probably not to be too difficult to develop an analysis that predicts the relationships between characters (I'm aware this probably already exists...), but it's beyond me right now!
+
+Code for this post is available on [github](https://github.com/alexwhan/alexwhan.github.io/blob/master/_source/2016-04-15-pride-and-prejudice.Rmd)
+
+And the figure in all its glory:
+
+```{r setupOptions, echo = FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(fig.path = "../figure/2016-04-15-pride-and-prejudice/", message = FALSE, warning = FALSE)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(tidytext)
+library(janeaustenr)
+library(zoo)
+library(tokenizers)
+data("prideprejudice")
+
+pp_df <- data_frame(text = prideprejudice) %>% 
+  mutate(n = 1:n(),
+         Darcy = ifelse(grepl("Darcy", text), 1, 0),
+         Lizzy = ifelse(grepl("Lizzy|Elizabeth", text), 1, 0),
+         Jane = ifelse(grepl("Jane", text), 1, 0),
+         Lydia = ifelse(grepl("Lydia", text), 1, 0),
+         Charlotte = ifelse(grepl("Charlotte", text), 1, 0),
+         `Mr. Collins` = ifelse(grepl("Mr. Collins", text), 1, 0),
+         Wickham = ifelse(grepl("Wickham", text), 1, 0),
+         Georgiana = ifelse(grepl("Miss Darcy|Georgiana", text), 1, 0),
+         Bingley = ifelse(grepl("Bingley", text), 1, 0),
+         `Mr. Bennet` = ifelse(grepl("Mr. Bennet", text), 1, 0),
+         `Mrs. Bennet` = ifelse(grepl("Mrs. Bennet", text), 1, 0),
+         Caroline = ifelse(grepl("Caroline", text), 1, 0))
+
+pp_g <- pp_df %>% 
+  gather(character, present, -text, -n) %>% 
+  group_by(character) %>% 
+  mutate(n_sum = rollsum(present, 20, fill = NA),
+         n_mean = rollmean(present, 20, fill = NA),
+         n_mean200 = rollmean(present, 200, fill = NA))
+
+pp_sum <- pp_g %>% 
+  group_by(character) %>% 
+  summarise(total = sum(present))
+
+pp_g$character_sort <- factor(pp_g$character, levels = rev(pp_sum$character[order(pp_sum$total)]),
+                              ordered = TRUE)
+```
+
+```{r echo=FALSE, fig.height=12, fig.width=8, dpi = 150, warning=FALSE}
+ggplot(pp_g, aes(x = n, y = n_mean, group = character)) + geom_line() +
+  scale_x_continuous(expand = c(0, 0)) +
+  facet_wrap(~character_sort, ncol = 1) +
+  theme(panel.grid = element_blank(), axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.x = element_blank()) + ylab("Character presence")
+  
+```
