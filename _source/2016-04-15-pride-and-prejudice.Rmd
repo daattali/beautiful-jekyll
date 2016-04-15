@@ -68,7 +68,7 @@ pp_g$character_sort <- factor(pp_g$character, levels = rev(pp_sum$character[orde
                               ordered = TRUE)
 ```
 
-```{r echo=FALSE, fig.height=12, fig.width=8, dpi = 150, warning=FALSE}
+```{r echo=FALSE, fig.height=12, fig.width=8, dpi = 72, warning=FALSE}
 ggplot(pp_g, aes(x = n, y = n_mean, group = character)) + geom_line() +
   scale_x_continuous(expand = c(0, 0)) +
   facet_wrap(~character_sort, ncol = 1) +
