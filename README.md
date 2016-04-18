@@ -1,6 +1,6 @@
 ### IMPORTANT NOTE
 
-#### During February/March 2016 I will be extremely busy trying to write my thesis, so please do not send me private emails asking for personal help. Help me graduate :)
+#### During March/April 2016 I will be extremely busy trying to write my thesis, so please do not send me private emails asking for personal help. Help me graduate :)
 
 # Beautiful Jekyll
 
