@@ -11,55 +11,14 @@ While R package names presumably don't have quite the same sociological relevanc
 
 As a very basic look at the patterns I was interested to see whether the letter R was overrepresented in package names, since sticking an R on the end of a word is a fairly common approach in the packages I use. So I set out to look at the proportion of packages with each letter at the starting position, the last position, or in the middle of the package name.
 
-```{r setup_options, echo = FALSE, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(message = FALSE, warning = FALSE)
-library(ggplot2)
-library(dplyr)
-```
+
 
 As always, the source for this post [is available on github](https://github.com/alexwhan/alexwhan.github.io/blob/master/_source/2016-04-19-package-names.Rmd). It's slightly convoluted, but there may be some value in the simplistic approach I've taken to separating the annotations for each line in the following plots. While it's quick and dirty, I've found it to be good enough for most of my purposes with fairly minimal investment.
 
 ##Some plots  
 
 
-```{r data_and_plots, echo = FALSE, fig.width=8}
-package_list <- available.packages(contrib.url("https://cran.rstudio.com"))
-last_letter_df <- data_frame(position = "last", letter = substr(package_list[,1], nchar(package_list[, 1]), nchar(package_list[, 1])))
-first_letter_df <- data_frame(position = "first", letter = substr(package_list[,1], 1, 1))
-mid_letters <- substr(package_list[,1], 2, (nchar(package_list[, 1]) - 1)) %>% 
-  strsplit("") %>% 
-  unlist()
-mid_letters_df <- data_frame(position = "mid", letter = mid_letters)
-
-cran_letters <- bind_rows(last_letter_df, first_letter_df, mid_letters_df) %>% 
-  mutate(LETTER = toupper(letter),
-         case = ifelse(grepl("[0-9]", letter), 
-                       "numeric", 
-                       ifelse(grepl("[[:upper:]]", letter), "upper", "lower"))) %>% 
-  group_by(position, case)
-
-cran_letters$case <- factor(cran_letters$case, levels = c("upper", "lower", "numeric"))
-cran_letters$position <- factor(cran_letters$position, levels = c("first", "mid", "last"))
-
-cran_letters_caseless <- cran_letters %>% 
-  group_by(position) %>% 
-  mutate(position_sum = n(),
-         numeric = grepl("[0-9]", LETTER)) %>% 
-  group_by(position, LETTER, numeric) %>% 
-  summarise(LETTER_prop = n()/position_sum[1]) %>% 
-  group_by(position, numeric) %>% 
-  arrange(LETTER_prop) %>% 
-  ungroup %>% 
-  mutate(group = ceiling(1:n() / 7)) %>% 
-  group_by(group) %>% 
-  mutate(x_offset = 1:n()/15 * ifelse(as.numeric(position) > 2, -1, 1)) 
-
-ggplot(cran_letters_caseless, aes(position, LETTER_prop)) + geom_line(aes(group = LETTER), alpha = 0.5) +
-  geom_text(data = filter(cran_letters_caseless, !(position == "mid" & !numeric)), 
-            aes(x = as.numeric(position) - x_offset, label = LETTER)) +
-  scale_y_log10() + labs(x = "Position", y = "log proportion of packages with letter",
-                         title = "Prevalence of letters in CRAN package names")
-```
+![plot of chunk data_and_plots](figure/data_and_plots-1.png)
 
 Looking firstly at letters regardless of case, you can see that R is high on the list in all positions, but by no means dominant. Also unsurprisingly, the bottom of the list is made up of the high scoring letters in scrabble (which gives me an idea, there must be a call for a [kwyjibo](http://www.imdb.com/title/tt0756593/quotes) package?). 
 
@@ -68,26 +27,7 @@ I should probably start referring to characters, since numbers make an appearanc
 To go slightly deeper, I broke the letters up by case.
 
 
-```{r data_and_plots2, echo = FALSE, fig.height=8, fig.width=8}
-cran_letters_case <- cran_letters %>% 
-  group_by(position, case) %>% 
-  mutate(position_sum = n()) %>% 
-  group_by(position, LETTER, case) %>% 
-  summarise(LETTER_prop = n()/position_sum[1]) %>% 
-  group_by(position, case) %>% 
-  arrange(LETTER_prop) %>% 
-  ungroup() %>% 
-  mutate(group = ceiling(1:n() / 7)) %>% 
-  group_by(group) %>% 
-  mutate(x_offset = 1:n()/15 * ifelse(as.numeric(position) > 2, -1, 1)) 
-
-ggplot(cran_letters_case, aes(position, LETTER_prop)) + geom_line(aes(group = LETTER), alpha = 0.5) +
-  geom_text(data = filter(cran_letters_case, !(position == "mid" & case != "numeric")), 
-            aes(x = as.numeric(position) - x_offset, label = LETTER)) +
-  facet_wrap(~case, ncol = 1) +
-  scale_y_log10() + labs(x = "Position", y = "log proportion of packages with letter", 
-                         title = "Prevalence of letters in CRAN package names by case")
-```
+![plot of chunk data_and_plots2](figure/data_and_plots2-1.png)
 
 Here in the upper case panel we finally see R jump up to the top of the rankings in both first and last position.
 
