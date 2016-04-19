@@ -12,7 +12,7 @@ While R package names presumably don't have quite the same sociological relevanc
 As a very basic look at the patterns I was interested to see whether the letter R was overrepresented in package names, since sticking an R on the end of a word is a fairly common approach in the packages I use. So I set out to look at the proportion of packages with each letter at the starting position, the last position, or in the middle of the package name.
 
 ```{r setup_options, echo = FALSE, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(fig.path = "../figure/2016-04-19-package-names/", tidy =, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(fig.path = "../figure/2016-04-19-package-names/", message = FALSE, warning = FALSE)
 library(ggplot2)
 library(dplyr)
 ```
