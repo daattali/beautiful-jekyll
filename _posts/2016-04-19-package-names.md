@@ -12,13 +12,16 @@ While R package names presumably don't have quite the same sociological relevanc
 As a very basic look at the patterns I was interested to see whether the letter R was overrepresented in package names, since sticking an R on the end of a word is a fairly common approach in the packages I use. So I set out to look at the proportion of packages with each letter at the starting position, the last position, or in the middle of the package name.
 
 
+```
+## Error in knitr::opts_chunk$set(fig.path = "../figure/2016-04-19-package-names/", : argument is missing, with no default
+```
 
 As always, the source for this post [is available on github](https://github.com/alexwhan/alexwhan.github.io/blob/master/_source/2016-04-19-package-names.Rmd). It's slightly convoluted, but there may be some value in the simplistic approach I've taken to separating the annotations for each line in the following plots. While it's quick and dirty, I've found it to be good enough for most of my purposes with fairly minimal investment.
 
 ##Some plots  
 
 
-![plot of chunk data_and_plots](../figure/2016-04-19-package-names/data_and_plots-1.png)![plot of chunk data_and_plots](../figure/2016-04-19-package-names/data_and_plots-2.png)
+![plot of chunk data_and_plots](figure/data_and_plots-1.png)
 
 Looking firstly at letters regardless of case, you can see that R is high on the list in all positions, but by no means dominant. Also unsurprisingly, the bottom of the list is made up of the high scoring letters in scrabble (which gives me an idea, there must be a call for a [kwyjibo](http://www.imdb.com/title/tt0756593/quotes) package?). 
 
@@ -27,7 +30,7 @@ I should probably start referring to characters, since numbers make an appearanc
 To go slightly deeper, I broke the letters up by case.
 
 
-![plot of chunk data_and_plots2](../figure/2016-04-19-package-names/data_and_plots2-1.png)
+![plot of chunk data_and_plots2](figure/data_and_plots2-1.png)
 
 Here in the upper case panel we finally see R jump up to the top of the rankings in both first and last position.
 
