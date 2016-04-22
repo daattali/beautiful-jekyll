@@ -186,6 +186,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [selimsalihovic.github.io](http://selimsalihovic.github.io/) | Selim Salihovic | Software Developer |
 | [melyanna.github.io](http://melyanna.github.io/) | Melyanna | Shows off her nice art |
 | [chaitanyajoshi.xyz](http://chaitanyajoshi.xyz/) | Chaitanya Joshi | Computer Science undergrad |
+| [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
 
 ### Very advanced: Local development
 
