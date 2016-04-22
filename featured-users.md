@@ -19,7 +19,6 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
 | [organicrails.github.io](http://organicrails.github.io) | Ruby on Rails tutorial |
 | [esentire.github.io](https://esentire.github.io) | Blog about threats and malware |
-| [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
 
 ### Personal websites
 
@@ -34,3 +33,4 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [selimsalihovic.github.io](http://selimsalihovic.github.io) | Selim Salihovic | Software Developer |
 | [melyanna.github.io](http://melyanna.github.io/) | Melyanna | Shows off her nice art |
 | [chaitanyajoshi.xyz](http://chaitanyajoshi.xyz/) | Chaitanya Joshi | Computer Science undergrad |
+| [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
