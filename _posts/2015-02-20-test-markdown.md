@@ -6,7 +6,7 @@ subtitle: Each post also has a subtitle
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
-<iframe width="835" height="800" src="http://52.38.152.177:3838/Campaign/" frameborder="0" allowfullscreen></iframe>
+<iframe id="Campaign" src="http://52.38.152.177:3838/Campaign/" style="border: none; width: 100%; height: 500px" frameborder="0"></iframe>
 
 **Here is some bold text**
 
