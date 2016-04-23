@@ -1,6 +1,6 @@
 ---
 layout: post
-title: \#TweetOrDie
+title: ### C&#35VoteOrDie;
 subtitle: Live Twitter sentiment anlaysis of the 2016 U.S. Presidential Candidates
 bigimg: /img/path.jpg
 ---
