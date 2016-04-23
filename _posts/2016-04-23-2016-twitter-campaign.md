@@ -5,4 +5,4 @@ subtitle: Live Twitter sentiment anlaysis of the 2016 U.S. Presidential Candidat
 bigimg: /img/path.jpg
 ---
 
-<iframe id="Schwastey" src="http://52.38.152.177:3838/Campaign/" style="border: none; width: 100%; height: 500px" frameborder="0"></iframe>
+<iframe id="Campaign" src="http://52.38.152.177:3838/Campaign/" style="border: none; width: 100%; height: 500px" frameborder="0"></iframe>
