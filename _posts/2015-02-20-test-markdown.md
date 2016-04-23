@@ -10,7 +10,7 @@ You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll w
 
 ## Here is a secondary heading
 
-{% include shinyapp.html %}
+<iframe width="420" height="315" src="http://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allowfullscreen></iframe>
 
 Here's a useless table:
  
