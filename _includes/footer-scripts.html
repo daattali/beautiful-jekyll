@@ -24,12 +24,12 @@
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ js }}"></script>
   {% endfor %}
 {% endif %}
 {% if layout.js %}
   {% for js in layout.js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ js }}"></script>
   {% endfor %}
 {% endif %}
 
@@ -39,11 +39,11 @@
     {% if js contains 'jquery' %}
       <script>
       	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
+      	  document.write('<script src="{{ js }}"></scr' + 'ipt>');
       	}
       </script>
     {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ js }}"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
@@ -53,11 +53,11 @@
     {% if js contains 'jquery' %}
       <script>
       	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
+      	  document.write('<script src="{{ js }}"></scr' + 'ipt>');
       	}
       </script>
     {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ js }}"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
