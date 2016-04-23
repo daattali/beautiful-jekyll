@@ -1,6 +1,6 @@
 ---
 layout: post
-title: &#35TweetOrDie
+title: ### #TweetOrDie #
 subtitle: Live Twitter sentiment anlaysis of the 2016 U.S. Presidential Candidates
 bigimg: /img/path.jpg
 ---
