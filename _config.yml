@@ -50,7 +50,7 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: true
+  soundcloud:true
   email: true
   twitter: true
   github: true
