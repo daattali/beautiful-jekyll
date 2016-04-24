@@ -40,7 +40,7 @@ avatar: "/img/avatar-icon.png"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Charlie
-  email: "wheresmychippy870@gmail.com"
+  email: wheresmychippy870@gmail.com
   soundcloud: midnight-barber  # eg. daattali
   github: charlie86    # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
