@@ -39,11 +39,10 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Charlie T
-  email: "youremail@domain.com"
+  name: Charlie Thompson
+  email: "cthomp870@gmail.com"
   soundcloud: midnight-barber  # eg. daattali
-  github: midnight-barber    # eg. daattali
-  twitter: yourname   # eg. daattali
+  github: charlie86    # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
  
@@ -52,7 +51,7 @@ footer-links-active:
   rss: false
   soundcloud: true
   email: true
-  twitter: true
+  twitter: false
   github: true
   linkedin: false
   stackoverflow: false
