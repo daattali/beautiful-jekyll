@@ -41,8 +41,8 @@ avatar: "/img/avatar-icon.png"
 author:
   name: Charlie Thompson
   email: "youremail@domain.com"
-  soundcloud: "midnight-barber"  # eg. daattali
-  github: yourname    # eg. daattali
+  soundcloud: midnight-barber  # eg. daattali
+  github: midnight-barber    # eg. daattali
   twitter: yourname   # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
