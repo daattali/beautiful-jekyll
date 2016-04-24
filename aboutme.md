@@ -1,8 +1,8 @@
 ---
 layout: page
 ---
-### About me
----
+About me
+--------
 
 My name is Inigo Montoya. I have the following qualities:
 
