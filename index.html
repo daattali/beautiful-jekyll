@@ -8,7 +8,7 @@ subtitle: Data Scientist / Musician / Male Human
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+	  <h2 class="post-title">{{ post.title | remove: '\' }}</h2>
 	
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
