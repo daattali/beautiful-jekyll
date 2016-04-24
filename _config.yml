@@ -14,7 +14,7 @@ baseurl: "midnightbarber.com"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Charlie Thompson
+title: Charlie
 
 # Short description of your site
 description: A virtual proof that name is awesome!
@@ -39,8 +39,8 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Charlie Thompson
-  email: "cthomp870@gmail.com"
+  name: Charlie
+  email: "wheresmychippy870@gmail.com"
   soundcloud: midnight-barber  # eg. daattali
   github: charlie86    # eg. daattali
   linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
