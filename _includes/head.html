@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | remove: '\' }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
   
@@ -11,7 +11,8 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="feed.xml" />
+  <link rel="shortcut icon" href="/img/avatar-icon.png" type="image/png">
   
  <!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
 
@@ -28,12 +29,12 @@
   
   {% if page.common-css %}
     {% for css in page.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
   {% endif %}
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
   {% endif %}  
   
@@ -61,12 +62,12 @@
   
   {% if page.css %}
     {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
   {% endif %}
   {% if layout.css %}
     {% for css in layout.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
   {% endif %}
   
@@ -82,7 +83,7 @@
   {% endif %}   
   
   <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | remove: '\' }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
   
   {% if page.id %}

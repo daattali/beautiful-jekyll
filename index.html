@@ -1,14 +1,15 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: Midnight Barber
+subtitle: Data Scientist / Musician / Male Human
+bigimg: /img/gorilla.jpg
 ---
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+    <a href="{{ post.url }}">
+	  <h2 class="post-title">{{ post.title | remove: '\' }}</h2>
 	
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
@@ -23,7 +24,7 @@ subtitle: This is where I will tell my friends way too much about me
   
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+	  <a href="{{ post.url }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
   
    </article>
@@ -34,12 +35,12 @@ subtitle: This is where I will tell my friends way too much about me
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path }}">&larr; Newer Posts</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path }}">Older Posts &rarr;</a>
   </li>
   {% endif %}
 </ul>
