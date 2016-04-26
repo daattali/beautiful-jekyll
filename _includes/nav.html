@@ -12,30 +12,28 @@
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-	    {% for link in site.navbar-links %}
-	      {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
-	      {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
-        <li>
-          {% assign internal = true %}
-          {% if before != after %}
-            {% if before == "http" or before == "https" %}
-              {% assign internal = false %}
-            {% endif %}
-          {% endif %}
-        	
-        {% if internal %}
-          {% capture linkurl %}{{ site.baseurl }}/{{ link[1] }}{% endcapture %}
+      {% for link in site.navbar-links %}
+        {% if link[1].first %}
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
+            <div class="navlinks-children">
+              {% for childlink in link[1] %}
+                {% for linkparts in childlink %}
+                  {% include navbarlink.html link=linkparts %}
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </li>
         {% else %}
-          {% capture linkurl %}{{ link[1] }}{% endcapture %}
+          <li>
+            {% include navbarlink.html link=link %}
+          </li>
         {% endif %}
-
-	      <a href="{{ linkurl }}">{{ link[0] }}</a>
-	      </li>
-	    {% endfor %}
+        {% endfor %}
       </ul>
     </div>
-	
-	{% if site.avatar %}
+
+	{% if site.avatar and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
@@ -44,6 +42,6 @@
 	  </div>
 	</div>
 	{% endif %}
-	
+
   </div>
-</nav>  
+</nav>
