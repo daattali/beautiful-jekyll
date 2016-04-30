@@ -23,7 +23,17 @@
             </a>
           </li>
           {% endif %}
-		  {% if site.author.twitter and site.footer-links-active.twitter %}
+    	  {% if site.author.slack and site.footer-links-active.slack %}
+          <li>
+            <a href="http://powershell.org/wp/user-groups/{{ site.author.slack }}" title="Slack">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+	  {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
               <span class="fa-stack fa-lg">
@@ -33,7 +43,7 @@
             </a>
           </li>
           {% endif %}
-		  {% if site.author.email and site.footer-links-active.email %}
+	  {% if site.author.email and site.footer-links-active.email %}
           <li>
             <a href="mailto:{{ site.author.email }}" title="Email me">
               <span class="fa-stack fa-lg">
@@ -43,7 +53,7 @@
             </a>
           </li>
           {% endif %}
-		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
+	  {% if site.author.linkedin and site.footer-links-active.linkedin %}
           <li>
             <a href="https://linkedin.com/{{ site.author.linkedin }}" title="LinkedIn">
               <span class="fa-stack fa-lg">
@@ -53,25 +63,45 @@
             </a>
           </li>
           {% endif %}
-		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
-          <li>
+	  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
+	<li>
             <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
               </span>
             </a>
+	</li>
+          {% endif %}
+  	  {% if site.author.powershell and site.footer-links-active.powershell %}
+          <li>
+            <a href="http://powershell.org/wp/user-groups/{{ site.author.powershell }}" title="PowerShell.org">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-powershell fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
           </li>
           {% endif %}
-		  {% if site.footer-links-active.rss %}
-		  <li>
-			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
-			  <span class="fa-stack fa-lg">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-			  </span>
-			</a>
-		  </li>		
+    	  {% if site.author.meetup and site.footer-links-active.meetup %}
+          <li>
+            <a href="http://www.meetup.com/{{ site.author.meetup }}/events/" title="MeetUp">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-meetup fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+	  {% if site.footer-links-active.rss %}
+	  <li>
+		<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
+		  <span class="fa-stack fa-lg">
+			<i class="fa fa-circle fa-stack-2x"></i>
+			<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		  </span>
+		</a>
+	  </li>		
           {% endif %}		  
         </ul>
         <p class="copyright text-muted">
