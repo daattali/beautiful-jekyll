@@ -59,7 +59,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "CincyPowerShell.org"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "CincyPowerShell.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
