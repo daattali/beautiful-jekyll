@@ -44,8 +44,11 @@ author:
   facebook: CincyPowerShell  # eg. daattali
   github: CincyPowerShell    # eg. daattali
   twitter: CincyPowerShell   # eg. daattali
-#  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-#  stackoverflow: yourlink  # eg. "3943160/daattali"
+  #  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
+  #  stackoverflow: yourlink  # eg. "3943160/daattali"
+  meetup: "TechLife-Cincinnati"
+  powershell: "cincinnati-powershell"
+  slack: cincinnati
  
 # Select which links to show in the footer
 footer-links-active:
@@ -56,6 +59,9 @@ footer-links-active:
   github: true
   linkedin: false
   stackoverflow: false
+  meetup: true
+  powershell: true
+  slack: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
