@@ -23,7 +23,7 @@ description: The Cincinnati PowerShell User Group (CincyPSUG) is a group of IT P
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Us: "aboutus"
   Resources:
    - Learn PowerShell: "https://mva.microsoft.com/en-us/training-courses/getting-started-with-powershell-3-0-jump-start-8276"
    - Learn DSC: "https://mva.microsoft.com/en-US/training-courses/getting-started-with-powershell-desired-state-configuration-dsc-8672"
@@ -59,7 +59,7 @@ footer-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "CincyPowerShell.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "CincyPowerShell.org"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
