@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About our User Group
-subtitle: Cincinnati PowerShell UserGroup
+title: Cincinnati PowerShell UserGroup
+subtitle: About Us...
 ---
 
 The Cincinnati PowerShell User Group (CincyPSUG) is a 

@@ -25,10 +25,10 @@ description: The Cincinnati PowerShell User Group (CincyPSUG) is a group of IT P
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+   # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+   # - Learn markdown: "http://www.markdowntutorial.com/"
+   # - GitHub Pages: "https://pages.github.com/"
+  # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -39,7 +39,7 @@ avatar: "/img/logo.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Webmaster
+  name: CincyPSUG
   email: "CincyPSUG@outlook.com"
   facebook: CincyPowerShell  # eg. daattali
   github: CincyPowerShell    # eg. daattali
@@ -72,12 +72,14 @@ url-pretty: "CincyPowerShell.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/NewYork"
+timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+kramdown:
+  input: GFM
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
