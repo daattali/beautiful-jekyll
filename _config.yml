@@ -25,9 +25,9 @@ description: The Cincinnati PowerShell User Group (CincyPSUG) is a group of IT P
 navbar-links:
   About Me: "aboutme"
   Resources:
-   # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-   # - Learn markdown: "http://www.markdowntutorial.com/"
-   # - GitHub Pages: "https://pages.github.com/"
+   - Learn PowerShell: "https://mva.microsoft.com/en-us/training-courses/getting-started-with-powershell-3-0-jump-start-8276"
+   - Learn DSC: "https://mva.microsoft.com/en-US/training-courses/getting-started-with-powershell-desired-state-configuration-dsc-8672"
+   - Learn Pester: "https://pages.github.com/"
   # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
