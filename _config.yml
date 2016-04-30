@@ -23,7 +23,7 @@ description: The Cincinnati PowerShell User Group (CincyPSUG) is a group of IT P
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "about CincyPSUG"
+  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
