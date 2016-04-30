@@ -1,0 +1,34 @@
+---
+layout: base
+---
+
+{% include header.html type="post" %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+	      {{ content }}
+	    </article>
+	  	  
+      <ul class="pager blog-pager">
+        {% if page.previous.url %}
+        <li class="previous">
+          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+        </li>
+        {% endif %}
+        {% if page.next.url %}
+        <li class="next">
+          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+        </li>
+        {% endif %}
+      </ul>
+      
+	    {% if page.comments %}
+        <div class="disqus-comments">
+	        {% include disqus.html %}
+        </div>
+	    {% endif %}
+    </div>
+  </div>
+</div>
