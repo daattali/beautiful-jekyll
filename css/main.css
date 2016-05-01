@@ -185,6 +185,7 @@ img {
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
+  text-align: center;
 }
 .navbar-custom .nav .navlinks-parent:after {
   content: " \25BC";
@@ -220,7 +221,6 @@ img {
   }
   .navbar-custom .nav .navlinks-children {
     position: absolute;
-	text-align: center;
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
     padding-left: 10px;
