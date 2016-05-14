@@ -12,11 +12,11 @@ $script_provision = <<SCRIPT
   cd /vagrant
   bundle install
 
-  echo "#!/bin/bash"                               >  /usr/local/bin/jekyll-start.sh
-  echo "cd /vagrant"                               >> /usr/local/bin/jekyll-start.sh
-  echo "source /usr/local/rvm/scripts/rvm"         >> /usr/local/bin/jekyll-start.sh
-  echo "bundle exec jekyll serve --force_polling"  >> /usr/local/bin/jekyll-start.sh
-  chmod +x                                            /usr/local/bin/jekyll-start.sh
+  echo "#!/bin/bash"                                              >  /usr/local/bin/jekyll-start.sh
+  echo "cd /vagrant"                                              >> /usr/local/bin/jekyll-start.sh
+  echo "source /usr/local/rvm/scripts/rvm"                        >> /usr/local/bin/jekyll-start.sh
+  echo "bundle exec jekyll serve --force_polling --host 0.0.0.0"  >> /usr/local/bin/jekyll-start.sh
+  chmod +x                                                           /usr/local/bin/jekyll-start.sh
  
   echo Provisioned!!!
 SCRIPT
