@@ -28,6 +28,7 @@ navbar-links:
    - Learn PowerShell: "https://mva.microsoft.com/en-us/training-courses/getting-started-with-powershell-3-0-jump-start-8276"
    - Learn DSC: "https://mva.microsoft.com/en-US/training-courses/getting-started-with-powershell-desired-state-configuration-dsc-8672"
    - Learn Pester: "http://www.powershellmagazine.com/2014/03/12/get-started-with-pester-powershell-unit-testing-framework/"
+   - Matt McNabb's Resources: "http://mattmcnabb.github.io/resources.html"
   # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
