@@ -15,7 +15,7 @@ title: Next Meeting - May 24th 2016 - Powershell: Back to Basics
 PS C:\> Get-PSUG | where {$_.City -eq Cincinnati}
 ```
 
-## Bring a friend/co-worker and Learn PowerShell
+### **Bring a friend/co-worker and Learn PowerShell!**
 
 Are you or a friend/co-worker wanting to get started with PowerShell and automation but aren't sure how? This is the meeting for you! 
 
