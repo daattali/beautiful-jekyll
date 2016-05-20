@@ -3,6 +3,7 @@ layout: post
 title: Next Meeting - May 24th 2016 - Powershell: Back to Basics
 ---
 
+
 ## Cincinnati PowerShell User Group – May Meeting - Back to Basics
 
 ### When: May 24th – 6PM TUESDAY!
