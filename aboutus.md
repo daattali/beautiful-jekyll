@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cincinnati PowerShell UserGroup
+title: The Cincinnati PowerShell User Group
 subtitle: About Us...
 ---
 
