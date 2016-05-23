@@ -15,7 +15,7 @@ This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used 
 - [Add your own content](#add-your-own-content)
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
 - [Basic features](#basic-features)
-- [Advanced features](#advanced-features)
+- [Advanced features](#advanced-features-including-how-to-use-a-custom-url-address-for-your-site)
 - [Featured users (success stories!)](#featured-users-success-stories)
 - [Very advanced: local development](#very-advanced-local-development)
 - [Credits](#credits)
@@ -146,7 +146,7 @@ To set up a GitHub Project page, simply fork this repository into a branch calle
 
 ---
 
-### Advanced features
+### Advanced features (including how to use a custom URL address for your site)
 
 I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
 
