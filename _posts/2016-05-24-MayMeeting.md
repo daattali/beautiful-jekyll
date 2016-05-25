@@ -3,8 +3,9 @@ layout: post
 title: 'Recap: PowerShell - Back to Basics'
 ---
 
-### [Slides](http://cincypowershell.org/presentations/2016-05)
-### [Code](http://cincypowershell.org/presentations/2016-05/demo.md)
+### [Presentation Slide Deck](http://cincypowershell.org/presentations/2016-05)
+
+### [Demo code from the Presentation](http://cincypowershell.org/presentations/2016-05/demo.md)
 
 ### PowerShell Versions
 Latest version is 5.0 and comes built in to Windows 10. Windows PowerShell is bundled Windows Management Framework 5.0.
