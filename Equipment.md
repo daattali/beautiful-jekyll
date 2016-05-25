@@ -7,7 +7,7 @@ subtitle: What should I bring?
 It is important to bring the necessary equipment and avoid a lot of excess stuff with you. 
 Space is limited in vehicles and specially in boats, you should limit your luggage to one normal sized backpack and a daypack.
 
-Here is a packing list of equipment, but please also read this **detailed** list of equipment recommendations, specially useful for clothing and general advices.
+Here is a packing list of equipment, but please also read this [**detailed**](http://biol409.github.io/img/biol409_equipment_recommendations.pdf) list of equipment recommendations, specially useful for clothing and general advices.
 
 **You will definitely need**
 * Great attitudes!
