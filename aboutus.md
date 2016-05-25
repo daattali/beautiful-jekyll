@@ -11,6 +11,6 @@ We encourage PowerShell users of any skill level
 
 - Meeting times: 4th Tuesday at 6PM EST
 - Location: [Max Technical Training, Mason, OH](https://goo.gl/maps/ijBGbvJQR3B2)
-- Contact: [CincyPSUG@Outlook.com](mailto:CincyPSUG@outlook.com)
+- Contact: [info@cincypowershell.org](mailto:info@cincypowershell.org)
 - Twitter: [@CincyPowerShell](https:/twitter.com/CincyPowerShell)
 - GitHub: [CincyPowerShell](https:/github.com/CincyPowerShell)
