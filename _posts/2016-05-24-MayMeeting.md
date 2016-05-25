@@ -3,14 +3,14 @@ layout: post
 title: 'Recap: PowerShell - Back to Basics'
 ---
 
-### [Presentation Slide Deck](http://cincypowershell.org/presentations/2016-05)
+### [Presentation Slide Deck](http://cincypowershell.org/presentations/2016-05){:target="_blank"}
 
-### [Demo code from the Presentation](http://cincypowershell.org/presentations/2016-05/code)
+### [Demo code from the Presentation](http://cincypowershell.org/presentations/2016-05/code){:target="_blank"}
 
 ### PowerShell Versions
 Latest version is 5.0 and comes built in to Windows 10. Windows PowerShell is bundled Windows Management Framework 5.0.
 Windows Management Framework 5.0 includes updates to Windows PowerShell, Windows PowerShell Desired State Configuration (DSC), Windows Remote Management (WinRM), Windows Management Instrumentation (WMI).
-[Download it here](https://www.microsoft.com/en-us/download/details.aspx?id=50395)
+[Download it here](https://www.microsoft.com/en-us/download/details.aspx?id=50395){:target="_blank"}
 
 
 ### Command Discovery
