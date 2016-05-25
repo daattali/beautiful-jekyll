@@ -10,6 +10,7 @@ Space is limited in vehicles and specially in boats, you should limit your lugga
 Here is a packing list of equipment, but please also read this [**detailed**](http://biol409.github.io/img/biol409_equipment_recommendations.pdf) list of equipment recommendations, specially useful for clothing and general advices.
 
 **You will definitely need**
+
 * Great attitudes!
 * Valid passport
 * Money (bankcard or USD to exchange at the airport)
@@ -34,6 +35,7 @@ Here is a packing list of equipment, but please also read this [**detailed**](ht
 * Laptop (we will need some)
 
 **Optional useful items**
+
 * Binoculars
 * Camera and memory card
 * Camping/Backpacking Tent (if you own one)
@@ -41,6 +43,7 @@ Here is a packing list of equipment, but please also read this [**detailed**](ht
 * Ipods (music)
 
 **You will definitely NOT need**
+
 * Bad attitudes
 * Illegal drugs
 
