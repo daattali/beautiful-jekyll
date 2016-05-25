@@ -34,16 +34,16 @@ BUILT-IN PROVIDERS
 Windows PowerShell includes a set of built-in providers that you can use
 to access the different types of data stores.
 
-Provider      | Drive         | Data store
---------      | -----         | ----------
-Alias         | Alias:        | Windows PowerShell aliases
-Certificate   | Cert:         | x509 certificates for digital signatures
-Environment   | Env:          | Windows environment variables
-FileSystem    | *             | File system drives, directories, and files
-Function      | Function:     | Windows PowerShell functions
-Registry      | HKLM:, HKCU:  | Windows registry
-Variable      | Variable:     | Windows PowerShell variables
-WSMan         | WSMan:        | WS-Management configuration information
+Provider      | Drive         | Data store                                   |
+--------      | ------------- | -------------------------------------------- |
+Alias         | Alias:        | Windows PowerShell aliases                   |
+Certificate   | Cert:         | x509 certificates for digital signatures     |
+Environment   | Env:          | Windows environment variables                |
+FileSystem    | *             | File system drives, directories, and files   |
+Function      | Function:     | Windows PowerShell functions                 |
+Registry      | HKLM:, HKCU:  | Windows registry                             |
+Variable      | Variable:     | Windows PowerShell variables                 |
+WSMan         | WSMan:        | WS-Management configuration information      |
 * The FileSystem drives vary on each system.
 
 You can also create your own Windows PowerShell providers, and you can
