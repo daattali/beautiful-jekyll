@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Snakes, ladders, dplyr and purrr
 output: md_document
 knit: (function(inputFile, encoding) {
       rmarkdown::render(
@@ -83,6 +85,7 @@ print(board_p)
 ```
 
 ![The actual 'board'](../figure/2016-05-30-snakes-ladders-dplyr-purrr/real_board.jpg)
+
 Maybe not a marketing success, but functionally the same.
 
 Next I needed to make some functions to simulate the players and the turns each players takes.
@@ -243,7 +246,7 @@ return(p)
 
 I can test it by applying it to random game:
 
-```{r figure_test}
+```{r figure_test, fig.width=9}
 game_df %>% 
   ungroup %>% 
   filter(row_number() == 123) %>% 

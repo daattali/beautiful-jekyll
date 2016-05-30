@@ -68,6 +68,7 @@ physical one:
 
 ![The actual
 'board'](../figure/2016-05-30-snakes-ladders-dplyr-purrr/real_board.jpg)
+
 Maybe not a marketing success, but functionally the same.
 
 Next I needed to make some functions to simulate the players and the
@@ -171,7 +172,6 @@ like:
 
 And I'm clearly not the only one, given some of the conversations that
 have happened in \#rstats
-(<https://twitter.com/JennyBryan/status/653766755010019329>)
 
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
