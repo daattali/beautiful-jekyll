@@ -1,11 +1,6 @@
 ---
 layout: post
 title: Snakes, ladders, dplyr and purrr
-output: md_document
-knit: (function(inputFile, encoding) {
-      rmarkdown::render(
-        inputFile, encoding=encoding,
-        output_file=rprojroot::find_root_file('_posts/2016-05-30-snakes-ladders-dplyr-purrr.md', criterion = 'README.md')) })
 ---
 
 ```{r setup, include=FALSE}
@@ -67,7 +62,7 @@ effects_df <- snakes_ladders %>%
   left_join(game_board %>% select(-type))
 ```
 
-To check it's all making sense, I'll compare the virtual board with the physical one:
+To check it's all making sense, I'll compare the virtual board with the physical one. Notice I changed the numbering since the board makers decided to use zero-based numbering...
 
 ```{r make_board_2, echo = FALSE,fig.align='left', fig.width=9, dpi=150}
 board_p <- ggplot(game_board, aes(x, y)) + 
