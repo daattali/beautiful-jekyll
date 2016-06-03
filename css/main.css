@@ -32,6 +32,9 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+blockquote p{
+  margin:0;
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
