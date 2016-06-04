@@ -1,10 +1,3 @@
-<!-- everything has to be repeated twice because on 2016-02-01 GitHub pages migrated to jekyll 3; see bug https://github.com/jekyll/jekyll/issues/4439 -->
-
-{% if page.common-ext-js %}
-  {% for js in page.common-ext-js %}
-	<script src="{{ js }}"></script>
-  {% endfor %}
-{% endif %}
 {% if layout.common-ext-js %}
   {% for js in layout.common-ext-js %}
 	<script src="{{ js }}"></script>
@@ -16,39 +9,15 @@
 	<script src="{{ js }}"></script>
   {% endfor %}
 {% endif %}
-{% if layout.ext-js %}
-  {% for js in layout.ext-js %}
-	<script src="{{ js }}"></script>
-  {% endfor %}
-{% endif %}
 
 {% if page.js %}
   {% for js in page.js %}
 	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
   {% endfor %}
 {% endif %}
-{% if layout.js %}
-  {% for js in layout.js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-  {% endfor %}
-{% endif %}
 
 {% if layout.common-js %}
   {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    {% if js contains 'jquery' %}
-      <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
-      	}
-      </script>
-    {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-    {% endif %}
-  {% endfor %}
-{% endif %}
-{% if page.common-js %}
-  {% for js in page.common-js %}
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     {% if js contains 'jquery' %}
       <script>
