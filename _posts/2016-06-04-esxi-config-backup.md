@@ -39,7 +39,7 @@ WHILE (((Get-ChildItem $ESXiBak).count) -gt $FileRotation) {Get-ChildItem $ESXiB
 ### Backup the configuration of the current host to the destination and rename the file.
 The backup is taken with Get-VMHostFirmware and the file is renamed with the current date "2016-06-04_MyESXiHost.tgz  
 
-``` Perl
+``` perl
 Get-VMHostFirmware -VMHost $_.name -BackupConfiguration -DestinationPath $ESXiBak
 Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -Last 1 | Rename-Item -NewName "$(get-date -Format yyyy-MM-dd)_$($_.name).tgz"
 ```
