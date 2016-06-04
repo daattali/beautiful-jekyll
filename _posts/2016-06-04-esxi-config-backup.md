@@ -23,25 +23,25 @@ The scheduled task can run the script either from a batch file that would allow 
 The scheduled task must under an account that has rw permissions on the target file share and global permissions on the vCenter as well. It is best practice to make it a service account for obvious security reasons.
 
 ```PowerShell
-	Add-PSSnapin VMware.VimAutomation.Core -ErrorAction Stop  
-	Connect-VIServer -Server $Server  
+Add-PSSnapin VMware.VimAutomation.Core -ErrorAction Stop  
+Connect-VIServer -Server $Server  
 ```
 ### Rotates the previous backup files according the rotation set in the parameters.
 From now on the commands specified are run within a Try/catch block to capture the error messages and in a loop hitting all the hosts.
 In this block, the backup location is configured and the last backup file is removed from the folder.
 
 ```PowerShell
-	$ESXiBak = "$BackupLocation\$($_.name)"
-	IF (-not(Test-path $ESXiBak)) {MKDIR $ESXiBak}
-	WHILE (((Get-ChildItem $ESXiBak).count) -gt $FileRotation) {Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -First 1 | Remove-Item -Force -Confirm:$false}
+$ESXiBak = "$BackupLocation\$($_.name)"
+IF (-not(Test-path $ESXiBak)) {MKDIR $ESXiBak}
+WHILE (((Get-ChildItem $ESXiBak).count) -gt $FileRotation) {Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -First 1 | Remove-Item -Force -Confirm:$false}
 ```
 
 ### Backup the configuration of the current host to the destination and rename the file.
 The backup is taken with Get-VMHostFirmware and the file is renamed with the current date "2016-06-04_MyESXiHost.tgz  
 
 ```PowerShell
-	Get-VMHostFirmware -VMHost $_.name -BackupConfiguration -DestinationPath $ESXiBak
-	Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -Last 1 | Rename-Item -NewName "$(get-date -Format yyyy-MM-dd)_$($_.name).tgz"
+Get-VMHostFirmware -VMHost $_.name -BackupConfiguration -DestinationPath $ESXiBak
+Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -Last 1 | Rename-Item -NewName "$(get-date -Format yyyy-MM-dd)_$($_.name).tgz"
 ```
 ### Backup files
 The backup files have a .tgz extension and contain a tree of files resulting in the etc/ folder containing your host's configuration.  
@@ -51,5 +51,5 @@ MyBackup.tgz/MyBackup.tar/state-tgz/state.tar/local.tgz/local.tar/etc/
 To restore the config to a host after its basic configuration (management IP, password, ...) you just need to place your host into maintenance mode and run the following command after which a restart will be triggered:  
 
 ```PowerShell
-	Set-VMHostFirmware -VMHost (get-VMHost MyHost) -Restore -Force -SourcePath
+Set-VMHostFirmware -VMHost (get-VMHost MyHost) -Restore -Force -SourcePath
 ```
