@@ -3,9 +3,9 @@ layout: page
 title: About me
 ---
 
-<center>
+
 ![Profile](/img/photo.png)
-</center>
+
 
 This is something that I wanted to do for quite a while and I finally took some time aside to get to it: Creating a public space where I can share the interesting things I learn, the problems I encounter and how I solved them. Or even just the new cool techs that I think deserve to be more popular. It is as well a great opportunity for me to dig deeper into the topics I write about and to have a place to store my thoughts (no more .txt file containing that awesome powershell command that I lost when emptying my USB key to make room for Game Of Throne!).
 
