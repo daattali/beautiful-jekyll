@@ -43,6 +43,7 @@ The backup is taken with Get-VMHostFirmware and the file is renamed with the cur
 Get-VMHostFirmware -VMHost $_.name -BackupConfiguration -DestinationPath $ESXiBak
 Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -Last 1 | Rename-Item -NewName "$(get-date -Format yyyy-MM-dd)_$($_.name).tgz"
 ```
+
 ### Backup files
 The backup files have a .tgz extension and contain a tree of files resulting in the etc/ folder containing your host's configuration.  
 MyBackup.tgz/MyBackup.tar/state-tgz/state.tar/local.tgz/local.tar/etc/
