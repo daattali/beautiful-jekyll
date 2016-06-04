@@ -10,6 +10,7 @@ There are multiple very good tools that can do the same thing but I am kind of a
 
 In my case I wanted to automate the backup of my hosts so I wrote a quick script that will do the job for me through a scheduled task. I've set it to once a month as we don't change the configuration every day.
 I will go through the script bit by bit but you will find the .ps1 file here:
+
 [Backup-ESXiConfigs.ps1](https://github.com/vxav/Scripting/blob/master/Backup-ESXiConfigs.ps1).
 
 ## Backup process
