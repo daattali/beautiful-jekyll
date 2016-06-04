@@ -22,7 +22,7 @@ The scheduled task can run the script either from a batch file that would allow 
 ### Connect to the vCenter server that you specify in the parameters of the function.
 The scheduled task must under an account that has rw permissions on the target file share and global permissions on the vCenter as well. It is best practice to make it a service account for obvious security reasons.
 
-```PowerShell
+``` PowerShell
 Add-PSSnapin VMware.VimAutomation.Core -ErrorAction Stop  
 Connect-VIServer -Server $Server  
 ```
@@ -30,7 +30,7 @@ Connect-VIServer -Server $Server
 From now on the commands specified are run within a Try/catch block to capture the error messages and in a loop hitting all the hosts.
 In this block, the backup location is configured and the last backup file is removed from the folder.
 
-```PowerShell
+``` bash
 $ESXiBak = "$BackupLocation\$($_.name)"
 IF (-not(Test-path $ESXiBak)) {MKDIR $ESXiBak}
 WHILE (((Get-ChildItem $ESXiBak).count) -gt $FileRotation) {Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -First 1 | Remove-Item -Force -Confirm:$false}
