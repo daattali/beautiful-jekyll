@@ -50,7 +50,7 @@ footer-links-active:
   email: true
   twitter: false
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
