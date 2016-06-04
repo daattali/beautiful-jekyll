@@ -9,7 +9,8 @@ Although you probably won't need it if you leverage the host profile feature as 
 There are multiple very good tools that can do the same thing but I am kind of a purist and I don't really like multiplying the softwares in the datacenter when I can avoid it. And lucky me PowerCLI is here!
 
 In my case I wanted to automate the backup of my hosts so I wrote a quick script that will do the job for me through a scheduled task. I've set it to once a month as we don't change the configuration every day.
-I will go through the script bit by bit but you will find the .ps1 file here:(https://github.com/vxav/Scripting/blob/master/Backup-ESXiConfigs.ps1).
+I will go through the script bit by bit but you will find the .ps1 file here:
+[Backup-ESXiConfigs.ps1](https://github.com/vxav/Scripting/blob/master/Backup-ESXiConfigs.ps1).
 
 ## Backup process
 At the backup location each host will have a folder with its name containing X backups of its configs named after the date they were taken.
