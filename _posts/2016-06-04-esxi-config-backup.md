@@ -22,7 +22,7 @@ The scheduled task can run the script either from a batch file that would allow 
 ### Connect to the vCenter server that you specify in the parameters of the function.
 The scheduled task must under an account that has rw permissions on the target file share and global permissions on the vCenter as well. It is best practice to make it a service account for obvious security reasons.
 
-``` PowerShell
+``` python
 Add-PSSnapin VMware.VimAutomation.Core -ErrorAction Stop  
 Connect-VIServer -Server $Server  
 ```
@@ -39,7 +39,7 @@ WHILE (((Get-ChildItem $ESXiBak).count) -gt $FileRotation) {Get-ChildItem $ESXiB
 ### Backup the configuration of the current host to the destination and rename the file.
 The backup is taken with Get-VMHostFirmware and the file is renamed with the current date "2016-06-04_MyESXiHost.tgz  
 
-``` perl
+``` tcl
 Get-VMHostFirmware -VMHost $_.name -BackupConfiguration -DestinationPath $ESXiBak
 Get-ChildItem $ESXiBak | Sort-Object lastwritetime | select -Last 1 | Rename-Item -NewName "$(get-date -Format yyyy-MM-dd)_$($_.name).tgz"
 ```
