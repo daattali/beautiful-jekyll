@@ -24,6 +24,7 @@ description: Dropping cool stuff
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Contact: "Contact"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
