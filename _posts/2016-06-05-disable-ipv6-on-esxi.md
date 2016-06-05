@@ -37,7 +37,7 @@ $argument = $esxcli.system.module.parameters.set.CreateArgs()
   
 If you look into this $argument variable you will find the option that you would have using the host's shell:
 
-![arg.jpg]({{site.baseurl}}/img/arg.jpg)
+![arg.JPG]({{site.baseurl}}/img/arg.JPG)
 
 
 Now we set the variable's properties according to the esxcli command above and we use it with the "Invoke" code property.
