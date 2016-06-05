@@ -5,6 +5,7 @@ title: contact
 
 
 <form action="https://formspree.io/xavier.avrillier@gmail.com" method="POST">
+<center>
 <table>
       <tr>
             <td style="text-align:center">
@@ -43,4 +44,5 @@ title: contact
             </td>
       </tr>
 </table>
+</center>
 </form> 
