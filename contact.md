@@ -8,26 +8,26 @@ subtitle: Drop me an email in the form below or get my LinkedIn at the bottom of
 
 <form action="https://formspree.io/xavier.avrillier@gmail.com" method="POST">
 <center>
-                  <label for="Name">Name</label>
+                  <font face="verdana"><label for="Name">Name</label></font>
             <br>
                   <input type="text" name="Name"  maxlength="50" size="25">
             <br>
 
             <br>
-                  <label for="Subject">Subject</label>
+                  <font face="verdana"><label for="Subject">Subject</label></font>
             <br>
                   <input type="text" name="Subject"  maxlength="50" size="25">
             <br>
 
             <br>
-                  <label for="email">Email address</label>
+                  <font face="verdana"><label for="email">Email address</label></font>
             <br>
 
                   <input type="email" name="_replyto"  maxlength="50" size="25">
             <br>
 
 	<br>
-  		<label for="comments">Comments</label>
+  		<font face="verdana"><label for="comments">Comments</label></font>
 	<br>
 
   	<textarea  name="comments" maxlength="1000" cols="30" rows="6"></textarea>
