@@ -1,7 +1,11 @@
 ---
 layout: page
 title: contact
+subtitle: Drop me an email in the form below or hit the buttons at the bottom
 ---
+
+
+
 <form action="https://formspree.io/xavier.avrillier@gmail.com" method="POST">
 <center>
                   <label for="Name">Name</label>
