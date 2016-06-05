@@ -36,24 +36,7 @@ $argument = $esxcli.system.module.parameters.set.CreateArgs()
 ```
   
 If you look into this $argument variable you will find the option that you would have using the host's shell:
-![arg.jpg]({{site.baseurl}}/img/arg.jpg)
 
-
-Now we set the variable's properties according to the esxcli command above and we use it with the "Invoke" code property.
-
-```
-$argument.module = "tcpip4"
-$argument.parameterstring = "ipv6=0"
-$esxcli.system.module.parameters.set.Invoke($argument)
-```
-
-After restarting the host manually, we can see that IPv6 is disabled as there is no IPv6 IP below the IPv4 one anymore.
-
-```
-$argument = $esxcli.system.module.parameters.set.CreateArgs()
-```
-  
-If you look into this $argument variable you will find the option that you would have using the host's shell:
 ![arg.jpg]({{site.baseurl}}/img/arg.jpg)
 
 
