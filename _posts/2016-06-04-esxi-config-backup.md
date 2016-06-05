@@ -26,6 +26,7 @@ The scheduled task must run under an account that has rw permissions on the targ
 Add-PSSnapin VMware.VimAutomation.Core -ErrorAction Stop  
 Connect-VIServer -Server $Server  
 ```
+
 ### Rotate the previous backup files according the rotation value set in the parameters.
 From now on the commands specified are run within a Try/catch block to capture the error messages and in a loop hitting all the hosts.
 In this block, the backup location is configured and the last backup file is removed from the folder.
