@@ -6,7 +6,7 @@ title: contact
 
 <form action="https://formspree.io/xavier.avrillier@gmail.com" method="POST">
 <center>
-<table>
+<table border="0">
       <tr>
             <td style="text-align:center">
                   <label for="Name">Name</label>
