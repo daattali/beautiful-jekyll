@@ -3,6 +3,7 @@ layout: page
 title: Contact
 ---
 
+
 <form action="https://formspree.io/xavier.avrillier@gmail.com"
       method="POST">
     <input type="text" name="name">
