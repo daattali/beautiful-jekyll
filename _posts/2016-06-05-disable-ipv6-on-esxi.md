@@ -1,7 +1,8 @@
 ---
 layout: post
 published: true
-title: disable-ipv6-on-esxi
+title: Disabling IPv6 on ESXi
+subtitle: And some powerCLI 6.3 R1
 ---
 Since ESXi 5.1 IPv6 is enabled by default on new hosts, this can be seen in the DCUI interface below the IPv4 address or in the web client in networking (I won't mention the C# client as it is now officially dead).
 
