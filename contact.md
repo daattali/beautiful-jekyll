@@ -1,7 +1,7 @@
 ---
 layout: page
 title: contact
-subtitle: Drop me an email in the form below or hit the buttons at the bottom
+subtitle: Drop me an email in the form below or get my LinkedIn at the bottom of any page
 ---
 
 
