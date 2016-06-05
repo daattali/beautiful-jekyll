@@ -6,20 +6,20 @@ title: contact
 <center>
                   <label for="Name">Name</label>
             <br>
-                  <input type="text" name="Name"  maxlength="50" size="30">
+                  <input type="text" name="Name"  maxlength="50" size="60%">
             <br>
 
             <br>
                   <label for="Subject">Subject</label>
             <br>
-                  <input type="text" name="Subject"  maxlength="50" size="30">
+                  <input type="text" name="Subject"  maxlength="50" size="60%">
             <br>
 
             <br>
                   <label for="email">Email address</label>
             <br>
 
-                  <input type="email" name="_replyto"  maxlength="50" size="30">
+                  <input type="email" name="_replyto"  maxlength="50" size="60%">
             <br>
 
 <br>
