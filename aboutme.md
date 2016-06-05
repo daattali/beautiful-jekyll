@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About me
+subtitle: French IT engineer living in Scotland
 ---
 
 
