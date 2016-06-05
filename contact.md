@@ -2,8 +2,39 @@
 layout: page
 title: contact
 ---
+<form action="https://formspree.io/xavier.avrillier@gmail.com" method="POST">
+<center>
+                  <label for="Name">Name</label>
+            <br>
+                  <input type="text" name="Name"  maxlength="50" size="30">
+            <br>
 
+            <br>
+                  <label for="Subject">Subject</label>
+            <br>
+                  <input type="text" name="Subject"  maxlength="50" size="30">
+            <br>
 
+            <br>
+                  <label for="email">Email address</label>
+            <br>
+
+                  <input type="email" name="_replyto"  maxlength="50" size="30">
+            <br>
+
+<br>
+  <label for="comments">Comments</label>
+<br>
+
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+<br><br>
+
+                  <input type="submit" value="Send">
+<br>
+
+</center>
+</form> 
+<!--
 <form action="https://formspree.io/xavier.avrillier@gmail.com" method="POST">
 <center>
 <table border="0">
@@ -46,3 +77,4 @@ title: contact
 </table>
 </center>
 </form> 
+-->
