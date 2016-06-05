@@ -26,7 +26,7 @@ title: contact
   <label for="comments">Comments</label>
 <br>
 
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+  <textarea  name="comments" maxlength="1000" cols="30" rows="6"></textarea>
 <br><br>
 
                   <input type="submit" value="Send">
