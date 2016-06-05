@@ -2,6 +2,7 @@
 layout: post
 title: Backup the config of your ESXi hosts with powerCLI
 published: true
+subtitle: Backup script with files rotation
 ---
 For my first article I wanted to start with something basic that every company should do on a regular basis, I am talking about the configuration of yout ESXi hosts. It can seem like a no brainer but it is not implemented everywhere. Having a backup of your host's configurations will let you restore it in minutes instead of reconfiguring eveything from scratch manually.  
 Although you probably won't need it if you leverage the host profile feature as vCenter will serve the configuration in this case.
