@@ -17,4 +17,5 @@ I hope you wee chappies will find some interesting articles and learn some stuff
 ### Certifications  
 I am currently in the process of preparing for the certification vSphere VCP6-DCV.  
 
-[![]({{site.baseurl}}/img/vcadcv.jpg)]({{site.baseurl}}/img/vcadcvdiplome.jpg) ![]({{site.baseurl}}/img/ccnpswroute.jpg)
+[![]({{site.baseurl}}/img/vcadcv.jpg)]({{site.baseurl}}/img/vcadcvdiplome.jpg)  
+![]({{site.baseurl}}/img/ccnpswroute.jpg)
