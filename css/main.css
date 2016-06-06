@@ -147,7 +147,7 @@ img {
 }
 .navbar-custom .avatar-container  .avatar-img-border {
   width: 100%;
-  border-radius: 25%;
+  border-radius: 10%;
   margin-left: -50%;
   display: inline-block;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -156,7 +156,7 @@ img {
 }
 .navbar-custom .avatar-container  .avatar-img {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 10%;
   display: block;
 }
 
@@ -170,7 +170,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .navbar-custom .avatar-container {
-    width: 100px;
+    width: 226px;
     margin-top: -50px;
   }
   
