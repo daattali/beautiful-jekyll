@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Backup the config of your ESXi hosts with powerCLI
+title: Config backup of your ESXi hosts with powerCLI
 published: true
 subtitle: Backup script with files rotation
 ---
