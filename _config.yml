@@ -34,6 +34,7 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 #BoutonAccueil:  "/img/avatar-icon.png"
+fb-img: "/img/avatar-icon-hd.png"
 
 # --- Footer options --- #
 
