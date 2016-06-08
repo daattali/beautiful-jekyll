@@ -10,5 +10,5 @@ Copy and paste can be enabled at the VM or at the host level depending on your n
 
 ### Per virtual machine
 
-In order to enable copy and/or paste there are two lines to add in the configuration of the virtual machine. These two lines are to be added in the advanced configuration.
-If you want to enable 
+In order to enable copy and/or paste there are two lines to add in the configuration of the virtual machine. These two lines are to be added in the advanced configuration.  
+To enable in the vSphere web client the VM needs to be powered off otherwise the "edit
