@@ -35,9 +35,9 @@ so no point continuing as an Essentials licensed host cannot be managed by a vCe
 In order to connect the host to the vCenter to be able to vMotion out the VMs, I used a little hack to reset the evaluation period (sorry VMware it was for the good cause):  
 The credit of that procedure goes to [this post](esxi.oeey.com/2013/11/how-to-reset-esxi-trial-license.html):  
 
-	- SSH on the host.
-	- remove or copy the license config file.
-	- restart the vpxa service (check).
+- SSH on the host.
+- remove or copy the license config file.
+- restart the vpxa service (check).
 
 ```Powershell
 CP /etc/vmware/license.cfg /etc/vmware/license.cfg.old
@@ -71,11 +71,11 @@ The only way now to get these VMs to my cluster was to migrate the VMs while pow
 As a good lazy admin I obviously wrote a script to do it for me that you will find [here in my Github](https://github.com/vxav/Scripting/blob/master/Move-VMCold.ps1).  
 This script will perform these steps to every VM specified one after the other:  
 
-	-Ask for confirmation with built-in ```Powershell SupportsShouldProcess```.  
-	-Shut down the guest OS and wait for PowerOff state.  
-	-Move the VM to destination.  
-	-Restart the VM is specified (by default in the parameters).  
-	-Go to the next VM, etc...
+-Ask for confirmation with built-in ```Powershell SupportsShouldProcess```.  
+-Shut down the guest OS and wait for PowerOff state.  
+-Move the VM to destination.  
+-Restart the VM is specified (by default in the parameters).  
+-Go to the next VM, etc...
 
 For example:  
 
