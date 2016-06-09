@@ -57,14 +57,14 @@ When I added the host to the cluster I got an error preventing me to do so stati
 
 The migratee is equipped with a E5-2660 codename **Sandy Bridge**.  
 Quick reminder :  
-Older Intel processors  
-Intel "Nehalem" Generation  
-**Intel "Westmere" Generation  
-Intel "Sandy Bridge" Generation**  
-Intel "Ivy Bridge" Generation  
-Intel "Avoton" Generation  
-Intel "Haswell" Generation  
-Future Intel processors  
+  Older Intel processors  
+  Intel "Nehalem" Generation  
+  **Intel "Westmere" Generation  
+  Intel "Sandy Bridge" Generation**  
+  Intel "Ivy Bridge" Generation  
+  Intel "Avoton" Generation  
+  Intel "Haswell" Generation  
+  Future Intel processors  
 
 Not a lot of options in this case. I created a TEMP cluster in my datacenter with EVC disabled and added the host succesfully into it.  
 The only way now to get these VMs to my cluster was to migrate the VMs while powered off (cold migration) to the host in the EVC level enabled cluster and power them back on.  
