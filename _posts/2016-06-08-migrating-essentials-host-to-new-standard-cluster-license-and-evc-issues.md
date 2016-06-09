@@ -12,13 +12,13 @@ These 3 hosts were running the developpers/testers' virtual machines, I couldn't
 
 The two clusters are in separate racks in the same room and have shared storage, the main steps are the following:  
 
-	- 1.Disconnect and remove the host from the Essentials vCenter.
+- 1.Disconnect and remove the host from the Essentials vCenter.
     
-    - 2.Re-patch the management NIC to the new cluster's management switch 
+- 2.Re-patch the management NIC to the new cluster's management switch 
 
-	- 3.change the management IP address and dns config.
+- 3.change the management IP address and dns config.
 
-	- 4.The interesting part here: **Connect the host to the new vCenter (after updating DNS & co...)**
+- 4.The interesting part here: **Connect the host to the new vCenter (after updating DNS & co...)**
 
 ----------
 
@@ -87,16 +87,16 @@ We were still in step 4 of my migration and I got a little bit carried away. I w
 
 ----------
 
-	- 5.Cold migrate all the VMs to the proper cluster (the script above did it for me).
+- 5.Cold migrate all the VMs to the proper cluster (the script above did it for me).
     
-	- 6.Disconnect and remove the host from the vCenter.
+- 6.Disconnect and remove the host from the vCenter.
     
-	- 7.Power off the server, move it to the new rack and redo the physical patching.
+- 7.Power off the server, move it to the new rack and redo the physical patching.
     
-	- 8.Update the DNS record.
+- 8.Update the DNS record.
     
-	- 9.Reinstall and configure ESXi6 from scratch.
+- 9.Reinstall and configure ESXi6 from scratch.
     
-	- 10.Add it to the EVC enabled cluster in the vCenter and update it with Update Manager to the last build.
+- 10.Add it to the EVC enabled cluster in the vCenter and update it with Update Manager to the last build.
     
-	- 11.Do the same for the 2 other hosts and remove the TEMP cluster.
+- 11.Do the same for the 2 other hosts and remove the TEMP cluster.
