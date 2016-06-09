@@ -301,7 +301,8 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #BCF5A9 ;
+  color: #BCF5A9;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .post-preview .post-title {
