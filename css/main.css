@@ -43,6 +43,14 @@ hr.small {
   border-radius: 3px;
 }
 
+hr.Preview {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 2px;
+  border-color: #444444;
+  border-radius: 3px;
+}
+
 .main-content {
   padding-top: 80px;
 }
