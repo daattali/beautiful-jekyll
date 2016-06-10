@@ -12,7 +12,7 @@ These 3 hosts were running the developpers/testers' virtual machines, I couldn't
 
 The two clusters are in separate racks in the same room and have shared storage, the main steps are the following:  
 
-- 1.Disconnect and remove the host from the Essentials vCenter.
+1. Disconnect and remove the host from the Essentials vCenter.
     
 - 2.Re-patch the management NIC to the new cluster's management switch 
 
