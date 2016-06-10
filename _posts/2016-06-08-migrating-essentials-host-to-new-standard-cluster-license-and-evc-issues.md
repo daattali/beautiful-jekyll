@@ -14,11 +14,11 @@ The two clusters are in separate racks in the same room and have shared storage,
 
 1. Disconnect and remove the host from the Essentials vCenter.
     
-- 2.Re-patch the management NIC to the new cluster's management switch 
+2. Re-patch the management NIC to the new cluster's management switch 
 
-- 3.change the management IP address and dns config.
+3. change the management IP address and dns config.
 
-- 4.The interesting part here: **Connect the host to the new vCenter (after updating DNS & co...)**
+4. The interesting part here: **Connect the host to the new vCenter (after updating DNS & co...)**
 
 ----------
 
@@ -72,11 +72,11 @@ The only way now to get these VMs to my cluster was to migrate the VMs while pow
 As a good lazy admin I obviously wrote a script to do it for me that you will find [here in my Github](https://github.com/vxav/Scripting/blob/master/Move-VMCold.ps1).  
 This script will perform these steps to every VM specified one after the other:  
 
--Ask for confirmation with built-in ```Powershell SupportsShouldProcess```.  
--Shut down the guest OS and wait for PowerOff state.  
--Move the VM to destination.  
--Restart the VM is specified (by default in the parameters).  
--Go to the next VM, etc...
+- Ask for confirmation with built-in ```Powershell SupportsShouldProcess```.  
+- Shut down the guest OS and wait for PowerOff state.  
+- Move the VM to destination.  
+- Restart the VM is specified (by default in the parameters).  
+- Go to the next VM, etc...
 
 For example:  
 
@@ -88,16 +88,16 @@ We were still in step 4 of my migration and I got a little bit carried away. I w
 
 ----------
 
-- 5.Cold migrate all the VMs to the proper cluster (the script above did it for me).
+5. Cold migrate all the VMs to the proper cluster (the script above did it for me).
     
-- 6.Disconnect and remove the host from the vCenter.
+6. Disconnect and remove the host from the vCenter.
     
-- 7.Power off the server, move it to the new rack and redo the physical patching.
+7. Power off the server, move it to the new rack and redo the physical patching.
     
-- 8.Update the DNS record.
+8. Update the DNS record.
     
-- 9.Reinstall and configure ESXi6 from scratch.
+9. Reinstall and configure ESXi6 from scratch.
     
-- 10.Add it to the EVC enabled cluster in the vCenter and update it with Update Manager to the last build.
+10. Add it to the EVC enabled cluster in the vCenter and update it with Update Manager to the last build.
     
-- 11.Do the same for the 2 other hosts and remove the TEMP cluster.
+11. Do the same for the 2 other hosts and remove the TEMP cluster.
