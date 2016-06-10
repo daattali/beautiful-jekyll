@@ -50,6 +50,7 @@ When I retried to add my host to the vCenter the evaluation license was availabl
 
 ----------
 
+**The host cannot be admitted to the cluster's current Enhanced vMotion Compatibility mode**   
 Why did I wrote the Westmere EVC level in bold in the introduction?  
 When I added the host to the cluster I got an error preventing me to do so stating that the VMs running on this host might be using CPU instructions disabled by the EVC level on the target cluster. I forgot indeed this detail while planning my host move, no big deal though.
 
