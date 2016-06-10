@@ -5,10 +5,10 @@ title: 'Migrating Essentials host to new Standard cluster '
 date: '2016-06-09'
 subtitle: 'EVC, license issue and cold vMotion script'
 ---
-At work we are currently in the process of completely rebuilding the development cluster that was a 3 hosts running ESXi 5.1 with vSphere Essentials license connected to a vCenter Essentials.  
+At work we are currently in the process of completely rebuilding the development cluster that was composed of 3 hosts running ESXi 5.1 with vSphere Essentials license managed by a vCenter Essentials.  
 I have built and configured my new cluster running the last build of vSphere Standard 6.0 (3825889 at the date of this post) managed by a vCenter. The clusted is composed of a bunch of recently bought servers and older ones running at the **Westmere EVC level** (some have x5660 CPUs). But I wanted to keep the ones from the old dev cluster as well as they have pretty good hardware configurations (E5-26xx) but reinstall them from scratch.
 
-These 3 hosts were running the developpers/testers' virtual machines, I couldn't just nuke them. So I had to migrate the VMs to the new cluster with the least downtime possible as they are actively used, and even though I don't mind for the production I'm not really keen to work at night for the pre-prod.
+Because these 3 hosts were running the developers/testers' virtual machines, I couldn't just nuke them. So I had to migrate the VMs to the new cluster with the least downtime possible as they are actively used, and even though I don't mind for the production I'm not really keen to work at night for the pre-prod.
 
 During the migration, I stumbled into two small problems that I didn't really think about beforehand.
 
@@ -80,3 +80,7 @@ Example of the command usage:
 ```Powershell 
 Get-VMHost MyHostSource | Get-VM | Move-VMCold -Destination (Get-VMHost MyHostTarget)
 ```
+
+----------
+
+Once all of the VMs were migrated automatically and the host empty I was able to disconnect it, power it off and rebuild it the way I wanted it.
