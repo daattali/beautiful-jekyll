@@ -58,7 +58,8 @@ When I added the host to the cluster I got an error preventing me to do so stati
 ![evcwarning.jpg]({{site.baseurl}}/img/evcwarning.jpg)
 
 The migratee is equipped with a E5-2660 codename **Sandy Bridge**.  
-Quick reminder :  
+Quick reminder :
+
   | Codename                        | Year |
   | ------------------------------- |:----:|
   | Older Intel processors          |      |
