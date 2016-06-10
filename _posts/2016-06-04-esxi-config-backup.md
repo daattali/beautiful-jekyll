@@ -4,20 +4,20 @@ title: Config backup of your ESXi hosts with powerCLI
 published: true
 subtitle: Backup script with files rotation
 ---
-For my first article I wanted to start with something basic that every company should do on a regular basis, I am talking about the configuration of yout ESXi hosts. It can seem like a no brainer but it is not implemented everywhere. Having a backup of your host's configurations will let you restore it in minutes instead of reconfiguring eveything from scratch manually.  
+For my first article I wanted to start with something basic that every company should do on a regular basis, I am talking about the configuration of the ESXi hosts. It can seem like a no brainer but it is not implemented everywhere. Having a backup of your host's configurations will let you restore it in minutes instead of reconfiguring everything from scratch manually.  
 Although you probably won't need it if you leverage the host profile feature as vCenter will serve the configuration in this case.
 
 There are multiple very good tools that can do the same thing but I am kind of a purist and I don't really like multiplying the softwares in the datacenter when I can avoid it. And lucky me PowerCLI is here!
 
-In my case I wanted to automate the backup of my hosts so I wrote a quick script that will do the job for me through a scheduled task. I've set it to once a month as we don't change the configuration every day.  
-I will go through the script bit by bit but you will find the .ps1 file here:
+In my case I wanted to automate the backup of my hosts so I wrote a quick script that will do the job for me through a scheduled task. I have set it to run once a month as we don't change the configuration so often.  
+I am going to go through the script bit by bit but you can find the .ps1 file here:
 
 [Backup-ESXiConfigs.ps1](https://github.com/vxav/Scripting/blob/master/Backup-ESXiConfigs.ps1).
 
 ## Backup process
 At the backup location each host will have a folder with its name containing x backups of its configs named after the date when they were taken.  
-The scheduled task can run the script either from a batch file that would allow you to redirect all the output to a log file or include logging in the PS1 script and call it as a parameter to powershell.exe right into the task.
-The script backs up all the hosts connected to the vCenter in a foreach loop. So if you want to reduce the scope of the backup you will need to add a filter in the script as I haven't put it as a parameter.  
+The scheduled task can run the script either from a batch file that would allow you to redirect all the output to a log file (the solution I use) or include logging in the PS1 script and call it as a parameter to powershell.exe right into the task.
+The script backs up all the hosts connected to the vCenter in a foreach loop. So if you want to reduce the scope of the backup you will need to add a filter in the script as I haven't made it a parameter.  
 
 
 ### Connect to the vCenter server that you specify in the parameters of the function.
@@ -28,8 +28,8 @@ Add-PSSnapin VMware.VimAutomation.Core -ErrorAction Stop
 Connect-VIServer -Server $Server  
 ```
 
-### Rotate the previous backup files according the rotation value set in the parameters.
-From now on the commands specified are run within a Try/catch block to capture the error messages and in a loop hitting all the hosts.
+### Rotate the previous backup files according to the rotation value set in the parameters.
+From now on the commands specified are run within a ```Try/catch``` block to capture the error messages and in a loop hitting all the hosts.
 In this block, the backup location is configured and the last backup file is removed from the folder.
 
 ``` Powershell
