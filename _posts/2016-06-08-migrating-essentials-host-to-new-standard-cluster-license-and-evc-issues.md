@@ -22,22 +22,23 @@ The two clusters are in separate racks in the same room and have shared storage,
 
 ----------
 
+**vSphere Standard license not usable on Essential licensed host**  
 Note that I already added the newly bought vSphere standard licenses for 3 CPUs in  the inventory in vCenter.
-This is a step I thought was gonna be a case of assigning the standard license and start migrating some stuff but when I got to the screen to select the license my only choice was the Essentials license (the evaluation one had been expired for a long time).
+This is a step I thought would be a case of assigning the standard license and start migrating some stuff but when I got to the screen to select the license my only choice was the Essentials license (the evaluation one had been expired for a long time).
 
 ![EssNoStd.jpg]({{site.baseurl}}/img/EssNoStd.jpg)
 
-so no point continuing as an Essentials licensed host cannot be managed by a vCenter Standard, the host would be immediately disconnected from vCenter.
+so no point continuing as an Essentials licensed host can only be managed by an Essentials vCenter, the host would be immediately disconnected from vCenter with the error "The host is licensed with VMware vSphere 5 Essentials. The license edition of vCenter Server does not support VMware vSphere 5 Essentials".
 
 ![licCompare.jpg]({{site.baseurl}}/img/licCompare.jpg)
 
-**Reset evaluation license period**  
 In order to connect the host to the vCenter to be able to vMotion out the VMs, I used a little hack to reset the evaluation period (sorry VMware it was for the good cause):  
 The credit of that procedure goes to [this post](esxi.oeey.com/2013/11/how-to-reset-esxi-trial-license.html):  
 
 - SSH on the host.
-- remove or copy the license config file.
-- restart the vpxa service (check).
+- remove or back the license config file.
+- Replace by the hidden base license.cfg file.
+- restart the vpxa service (+ check the status).
 
 ```Powershell
 CP /etc/vmware/license.cfg /etc/vmware/license.cfg.old
@@ -58,14 +59,14 @@ When I added the host to the cluster I got an error preventing me to do so stati
 
 The migratee is equipped with a E5-2660 codename **Sandy Bridge**.  
 Quick reminder :  
-  Older Intel processors  
-  Intel "Nehalem" Generation  
-  **Intel "Westmere" Generation  
-  Intel "Sandy Bridge" Generation**  
-  Intel "Ivy Bridge" Generation  
-  Intel "Avoton" Generation  
-  Intel "Haswell" Generation  
-  Future Intel processors  
+  |Older Intel processors|
+  |Intel "Nehalem" Generation|
+  |**Intel "Westmere" Generation|
+  |Intel "Sandy Bridge" Generation**|
+  |Intel "Ivy Bridge" Generation|
+  |Intel "Avoton" Generation|
+  |Intel "Haswell" Generation|
+  |Future Intel processors|
 
 Not a lot of options in this case. I created a TEMP cluster in my datacenter with EVC disabled and added the host succesfully into it.  
 The only way now to get these VMs to my cluster was to migrate the VMs while powered off (cold migration) to the host in the EVC level enabled cluster and power them back on.  
