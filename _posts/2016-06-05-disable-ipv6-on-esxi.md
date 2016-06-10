@@ -10,7 +10,7 @@ By now this is probably a well known fact but better safe than sorry. If you dis
 
 ![ipv6restart.jpg]({{site.baseurl}}/img/ipv6restart.jpg)
 
-If you are going to disable or enable IPv6 on your host via the DCUI make sure you have migrated your VMs to another host. If you make the change in the web client or by command line (esxcli) the change won't be effective until the next restart of the host.
+If you are going to disable or enable IPv6 on your host via the DCUI make sure you have migrated your running VMs to another host. If you make the change in the web client or by command line (esxcli) the change won't be effective until the next restart of the host that you will have to trigger yourself.
 
 I am not going to go through how to disable IPv6 using the clients as a quick peak at the KB will tell you everything you need to know: [KB1021769](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1021769)
 
@@ -24,13 +24,14 @@ esxcli system module parameters set -m tcpip4 -p ipv6=0
 
 ### PowerCLI 6.3 R1 to disable IPv6
 In order to do that you will of course need to update your PowerCLI installation if it is not already up to date. You can check the version with ```Get-PowerCLIVersion```.   
-Note the V2 at the end of the command.
+
+Note the V2 at the end of the command:
   
 ```
 $esxcli = Get-EsxCli -VMHost (Get-VMHost "MyESXHostname) -V2
 ```
   
-Create a variable to host the parameters that will be used in your esxcli command.
+Create a variable to host the parameters that will be used in your esxcli command:
   
 ```
 $argument = $esxcli.system.module.parameters.set.CreateArgs()
