@@ -14,7 +14,7 @@ baseurl: "/beautiful-jekyll"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Beautiful Jekyll
+title: Noah Boksansky
 
 # Short description of your site
 description: Quickly build a beautiful Jekyll website
@@ -39,8 +39,8 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Dean Attali
-  email: "daattali@gmail.com"
+  name: Noah Boksansky
+  email: "noah@case.edu"
   facebook: daattali
   github: daattali
   twitter: daattali
@@ -72,7 +72,7 @@ google_analytics: "UA-59820529-1"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/New York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
