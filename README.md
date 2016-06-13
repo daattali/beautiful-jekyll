@@ -1,6 +1,6 @@
 # Beautiful Jekyll
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#featured-users).
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#featured-users-success-stories).
 
 Feel free to modify this in any way you'd like, but I would appreciate it if you don't remove the attribution to Beautiful Jekyll. I've noticed that many people copy this website and deliberately remove the tiny phrase that gives me credit, and it feels a bit sad to not get credit for the countless hours I've put into this. Don't make me sad!
 
