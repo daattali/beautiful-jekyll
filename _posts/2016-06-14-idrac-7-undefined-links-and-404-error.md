@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: iDrac 7 undefined links and 404 error
 ---
 I usually use Chrome or Firefox on my workstations but the other day I had to use IE11 to reach an iDrac 7 from a jump box in the DMZ and I bumped into this odd 404 error:  
