@@ -19,3 +19,6 @@ The interesting feature with this script is that if the tag's name respects the 
 | QOS_NOLIMIT | Unlimited (-1) |
 
 The script retrieves all the VMs per QOS tag one by one and updates there resources configuration if they are not already set according to the number in the tag's name.
+
+![tag-limits.jpg]({{site.baseurl}}/img/tag-limits.jpg)
+
