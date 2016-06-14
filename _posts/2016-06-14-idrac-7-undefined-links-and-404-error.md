@@ -13,6 +13,6 @@ In order to fix this issue you just need to enable compatibility mode for the IP
 
 - In IE go to Tools > Compatibility View Setting
 - The address of your iDrac must be here already so just click Add to add it to the compatibility View
-- Restart your browser and there you are.
+- Log off / Log on and there you are.
 
 ![idrac-works.jpg]({{site.baseurl}}/img/idrac-works.jpg)
