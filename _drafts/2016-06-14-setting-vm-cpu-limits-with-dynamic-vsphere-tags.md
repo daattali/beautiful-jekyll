@@ -31,12 +31,28 @@ First create a tag category configured for one tag per object and associable wit
 
 ![tag-category.jpg]({{site.baseurl}}/img/tag-category.jpg)
 
+_PowerCLI command_ : ```Powershell
+New-TagCategory -Name "Quality of Service" -Cardinality "Single" -EntityType "VirtualMachine" -Description "Sets VMs CPU limit" ```
+
 Then create a set of tags formatted like in the tag name column of the table above, don't forget to create the tag QOS_NOLIMIT.  
 You can create as many as you want but there is not point having to many, I recommend something like:  
 1500, 2500 for small VMs.  
 4000, 6000 for bigger VMs.  
 NOLIMIT for the VIP VMs.
 
+**Warning**: Do not set limits equal to 0! vSphere won't prevent you from doing it but it will freeze the VM, its options will be greyed out and you will just have to wait until it powers off which can take a long time (only way come back from the deads).
+
 ![tag-in-category.jpg]({{site.baseurl}}/img/tag-in-category.jpg)
+
+_PowerCLI command_ : ```Powershell
+Get-TagCategory -Name "Quality of Service" | New-Tag -Name "QOS_2500" -Description "CPU limit of 2500MHz (set by script at 9pm)" ```
+
+Now that the tags are created in the right category, assign it to a VM either using the GUI or PowerCLI, you can only assign one tag of this category for obvious reasons.
+
+![assign-tagweb.jpg]({{site.baseurl}}/img/assign-tagweb.jpg)
+
+_PowerCLI command_ : ```Powershell
+Get-VM "Test-Xav*" | New-TagAssignment -Tag (Get-Tag "QOS_2500") ```
+
 
 
