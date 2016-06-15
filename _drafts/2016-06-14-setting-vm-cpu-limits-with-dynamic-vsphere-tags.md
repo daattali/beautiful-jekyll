@@ -23,3 +23,20 @@ To assign a limit to a VM, you just need to assign the right tag to it and the n
 
 ![tag-limits.jpg]({{site.baseurl}}/img/tag-limits.jpg)
 
+Before getting into the script let's go through the few steps to get it ready.
+
+**Create the tags and a tag category**
+
+First create a tag category configured for one tag per object and associable with virtual machines only. give it a name that makes sense to you along with a quick description for the colleagues.
+
+![tag-category.jpg]({{site.baseurl}}/img/tag-category.jpg)
+
+Then create a set of tags formatted like in the tag name column of the table above, don't forget to create the tag QOS_NOLIMIT.  
+You can create as many as you want but there is not point having to many, I recommend something like:  
+1500, 2500 for small VMs.  
+4000, 6000 for bigger VMs.  
+NOLIMIT for the VIP VMs.
+
+![tag-in-category.jpg]({{site.baseurl}}/img/tag-in-category.jpg)
+
+
