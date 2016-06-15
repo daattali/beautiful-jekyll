@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Setting VM CPU limits with dynamic vSphere tags
+title: Use vSphere tags to set VM CPU limits
 date: '2016-06-15'
 subtitle: Assign-TagQOS.PS1
 ---
