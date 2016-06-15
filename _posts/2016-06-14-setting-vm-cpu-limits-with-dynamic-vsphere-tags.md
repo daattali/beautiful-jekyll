@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Setting VM CPU limits with dynamic vSphere tags
 ---
 In the majority of VMware environments, the use of limits (especially memory limits) is strongly discouraged as it can lead to several misbehaviours such as CPU ready or memory swapping, which no one wants.  
