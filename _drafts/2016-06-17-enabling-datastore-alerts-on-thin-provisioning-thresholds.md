@@ -24,3 +24,12 @@ To set it, select your vCenter on the "Manage" tab then "Alarm definitions" and 
 ![datastore-usage-on-disk.jpg]({{site.baseurl}}/img/datastore-usage-on-disk.jpg)
 
 And click "Edit" to modify the alarm.
+
+Then add a trigger, and select "Datastore Disk Provisioned".
+
+img
+
+The default thresholds are Warning = Datastore 100% Provisioned and Critical = Datastore 200% Provisioned.  
+But because I am a little bit paranoid and I don't use thin disks a lot I set a lower value to be warned when 130% is reached.
+
+You can then configure the action according to your alerting process (email, snmp and so on).
