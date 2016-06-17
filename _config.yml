@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: vXav
+title: vXav.fr
 
 # Short description of your site
 description: Virtualization technologies - Xavier Avrillier
@@ -144,6 +144,12 @@ prose:
           label: "Date"
           help: "Enter date of post."
           placeholder: "yyyy-mm-dd"
+          alterable: true
+      - name: "meta description"
+        field:
+          element: "text"
+          label: "metadescription"
+          placeholder: "Balise meta description"
           alterable: true
       - name: "published"
         field:
