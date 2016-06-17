@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Enabling datastore alerts on thin provisioning thresholds
 meta description: >-
   How to add vCenter alerts on datastore storage overcommitment with thin
