@@ -1,10 +1,11 @@
 ---
 layout: post
-published: true
+published: false
 title: Enabling datastore alerts on thin provisioning thresholds
 meta description: >-
   How to add vCenter alerts on datastore storage overcommitment with thin
   provisioned virtual machines.
+date: '2016-06-17'
 ---
 Something every sensible VMware administrator is concerned about is the over commitment of the datastores. Since the dawn of times in virtualization it is possible to thin provision the disks of the virtual machines by not allocating the blocks to it, hence over commit the actual physical storage by provisioning X+Y GB even if the storage has only X GB to offer.
 
