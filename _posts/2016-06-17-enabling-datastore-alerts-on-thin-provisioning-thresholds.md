@@ -36,7 +36,7 @@ Then add a trigger, and select "Datastore Disk Provisioned".
 The default thresholds are Warning = Datastore 100% Provisioned and Critical = Datastore 200% Provisioned.  
 But because I am a little bit paranoid and I don't use thin disks a lot I set a lower value to be warned when 130% is reached.
 
-You can then configure the action according to your alerting process (email, snmp and so on). I have set the critical alert to repeat every 30 minutes, I like it to be annoying so we take the time to deal with it.
+You can then configure the action according to your alerting process (email, snmp and so on). You could also set the critical alert to repeat every X minutes, I like it to be annoying so we take the time to deal with it.
 
 That's all, you will now get alerts on overcommitment threshold.
 
