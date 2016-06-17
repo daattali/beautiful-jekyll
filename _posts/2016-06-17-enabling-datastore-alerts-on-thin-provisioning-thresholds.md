@@ -39,3 +39,81 @@ But because I am a little bit paranoid and I don't use thin disks a lot I set a 
 You can then configure the action according to your alerting process (email, snmp and so on). I have set the critical alert to repeat every 30 minutes, I like it to be annoying so we take the time to deal with it.
 
 That's all, you will now get alerts on overcommitment threshold.
+
+### PowerCLI script to find out the overallocated datastores
+
+Now you probably want to know which one of your datastores are overprovisioned. There are plenty of good and free tools that will do the job like [RVTools](http://www.robware.net/) which is a must have! But it is more interesting to do some PowerCLI to get there yourself.
+
+I wrote the function **Get-Datastore2** below to give a clear output of the state of the datastore without having to dig into the objects.
+
+![get-datastore2.jpg]({{site.baseurl}}/img/get-datastore2.jpg)
+
+If you want to get only the over provisioned datastore:
+
+```Powershell
+get-datastore | Get-Datastore2 | Where-Object {$_.ProvisionedGB -gt $_.CapacityGB}
+```
+
+[Get-Datastore2](https://github.com/vxav/Scripting/blob/master/Get-Datastore2.ps1)
+
+```Powershell
+Function Get-Datastore2 {
+
+param(
+    [parameter(position=0,ValueFromPipeline=$True,ValueFromPipelineByPropertyname=$True)]
+    [VMware.VimAutomation.ViCore.Types.V1.DatastoreManagement.VmfsDatastore[]]
+    $Datastore
+)
+
+Process{
+
+    $Datastore | ForEach-Object {
+
+        [pscustomobject]@{
+            Name          = $_.name
+            CapacityGB    = [Math]::Round(($_.extensiondata.summary.capacity   / 1GB),2)
+            FreeSpaceGB   = [Math]::Round(($_.extensiondata.summary.FreeSpace  / 1GB),2)
+            UsedSpaceGB   = [Math]::Round((($_.extensiondata.summary.capacity  / 1GB) - ($_.extensiondata.summary.FreeSpace / 1GB)),2)
+            ProvisionedGB = [Math]::Round((($_.extensiondata.summary.capacity  / 1GB) - ($_.extensiondata.summary.FreeSpace / 1GB) + ($_.extensiondata.summary.Uncommitted / 1GB)),2)
+            NbRunningVMs  = ($_ | Get-VM | where powerstate -eq Poweredon).count
+        }
+
+    }
+
+}
+
+}
+```
+
+### PowerCLI script to find out the thin provisioned disks in your vSphere environment.
+
+If you realise that your datastores are overallocated and you want to change that pattern you probably want to know what virtual machine has thin provisioned disks.
+
+I put a really simple one liner into a function in my powershell modules just so I don't need to remember and write the command.
+
+![get-thinharddisk.jpg]({{site.baseurl}}/img/get-thinharddisk.jpg)
+
+[Get-ThinHardDisk](https://github.com/vxav/Scripting/blob/master/Get-ThinHardDisk.ps1)
+
+```Powershell
+Function Get-ThinHardDisk {
+
+param(
+    [parameter(position=0,ValueFromPipeline=$True,ValueFromPipelineByPropertyname=$True)]
+    [ValidateNotNullOrEmpty()]
+    [VMware.VimAutomation.ViCore.types.V1.Inventory.VirtualMachine[]]
+    $VM = (get-VM)
+)
+
+Process{
+
+    $VM | ForEach-Object {
+
+        (Get-HardDisk -VM ($_) | where StorageFormat -eq Thin) | select Parent,Name,CapacityGB,StorageFormat
+
+    }
+
+}
+
+}
+```
