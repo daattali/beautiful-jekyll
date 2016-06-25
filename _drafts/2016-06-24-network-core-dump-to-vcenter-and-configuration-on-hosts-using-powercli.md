@@ -129,3 +129,5 @@ Better save the configuration with a
 /sbin/auto-backup.sh
 ```
 And that's it, now you just have to wait for your host to burn!
+
+![pepe-burn.jpg]({{site.baseurl}}/img/pepe-burn.jpg)
