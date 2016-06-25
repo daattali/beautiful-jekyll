@@ -128,4 +128,4 @@ Better save the configuration with a
 ```Powershell
 /sbin/auto-backup.sh
 ```
-And that's it.
+And that's it, now you just have to wait for your host to burn!
