@@ -14,10 +14,10 @@ baseurl: "/beautiful-jekyll"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Beautiful Jekyll
+title: Bolt Electric Fencing
 
 # Short description of your site
-description: Quickly build a beautiful Jekyll website
+description: Quality Electric Fencing in Cape Town and surrounds
 
 # --- Navigation bar options --- #
 
@@ -28,19 +28,19 @@ avatar: "/img/avatar-icon.png"
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Resources:
-    - Getting started: "getstarted"
-    - Featured users: "featured-users"
-    - Project page: "https://github.com/daattali/beautiful-jekyll#readme"
-  About me: "http://deanattali.com"
+  Work:
+#   - Getting started: "getstarted"
+#   - Featured users: "featured-users"
+#   - Project page: "https://github.com/daattali/beautiful-jekyll#readme"
+  Contact: "http://deanattali.com"
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Dean Attali
-  email: "daattali@gmail.com"
+  name: Juan Lee Bothma
+  email: "juanlee@boltelectricfencing.co.za"
   facebook: daattali
   github: daattali
   twitter: daattali
