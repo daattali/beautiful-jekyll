@@ -23,19 +23,19 @@ It is very likely that the Dump Collector was already installed with vCenter but
 
 The configuration is done in an xml file located at the following path (edit according to your VMware installation folder):
 
-```Powershell
+```
 C:\ProgramData\VMware\vCenterServer\data\netdump\netdump-setup.xml
 ```
 
 The interesting tags to configure will allow you to tune a few settings of the network core dump service.
 
 Path to the directory where the logs of the service are stored, I use a log folder on a data disk.  
-```Powershell
+```
 defaultLogPath
 ```
 
 Path to the directory where the actual core dump files are stored, I use a data folder on a data disk.
-```Powershell
+```
 defaultDataPath
 ```
 
@@ -127,7 +127,7 @@ $esxcli2.system.coredump.network.check.Invoke()
 The output should say "Verified the configured netdump server is running".
 
 Better save the configuration with a 
-```Powershell
+```
 /sbin/auto-backup.sh
 ```
 And that's it, now you just have to wait for your host to burn!
