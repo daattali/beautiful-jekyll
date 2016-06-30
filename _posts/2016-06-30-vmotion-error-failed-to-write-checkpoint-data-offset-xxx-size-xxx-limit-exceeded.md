@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: >-
   vMotion error - Failed to write checkpoint data (offset xxx, size xxx): Limit
   exceeded.
