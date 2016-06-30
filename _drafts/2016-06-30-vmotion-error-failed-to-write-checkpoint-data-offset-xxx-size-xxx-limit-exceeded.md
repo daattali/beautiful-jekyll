@@ -7,6 +7,8 @@ title: >-
 ---
 Still in the process of migrating our dev cluster I was doing a whole bunch of storage vMotions to evacuate our old storage backend to the new one. Most of the VMs went smoothly but I ran into an error on one of them that I never encountered before. The VM's hardware version is version 9.
 
+**Problem**
+
 During the relocation I received the usual generic alert "Cannot migrate VM". I then looked at the events and noticed in the error stack:
 
 ```
@@ -17,10 +19,11 @@ After googling the error, one of the first results was this old vsphere 4.0 KB: 
 In the note section it states:
 
 > Using VMotion to migrate a virtual machine with VRAM greater than 30MB to an ESX/ESXi 4.0 Update 1 host might prevent you from migrating it back to a host that does not have this fix.
+
 > When using high resolution monitors, VMware View may change the virtual machine's VRAM to greater than 30 MB.
 
-Even though I am running a 6.0 cluster I opened the VM's console which displayed a big 1920x1080 resolution. So I looked at the video card config of the VM that was set to the default 16MB, which is the size that was in the error "Failed to write checkpoint data (offset 25150738, size **16384**): Limit exceeded."  
-The video memory used by the VM being 25150738 (about 24MB).
+Even though I am running a 6.0 cluster I opened the VM's console which displayed a big 1920x1080 resolution. So I looked at the video card config of the VM that was set to the default 16MB, which is the size that was in the error "_Failed to write checkpoint data (offset 25150738, size **16384**): Limit exceeded._"  
+The video memory used by the VM being 25150738 (about 24MB) it was what was blocking the vMotion to proceed.
 
 ![videomemoryvm.jpg]({{site.baseurl}}/img/videomemoryvm.jpg)
 
@@ -30,6 +33,9 @@ There are 2 solutions to fix this issue:
 
 - Reduce the resolution of the virtual machine under 1280 x 1024 (the one I chose in this case).
 - increase the memory allocated to the virtual video card.
+  
+-----------
+  
 
 Here is the chronology of the events and tasks pulled from my vRealize Log Insight appliance (chronologic order is top to bottom).
 
