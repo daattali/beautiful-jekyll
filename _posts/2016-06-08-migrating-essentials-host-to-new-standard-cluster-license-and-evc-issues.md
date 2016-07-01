@@ -70,6 +70,7 @@ As a good lazy admin I wrote a script to do it for me that you will find [here i
 This script will perform these steps on every VM specified one by one:  
 
 - Ask for confirmation with built-in ```Powershell SupportsShouldProcess```.  
+- UPDATE : Checks for resources on destination (Port groups and Datastores).
 - Shut down the guest OS and wait for PowerOff state.  
 - Move the VM to destination.  
 - Restart the VM if specified (by default in the parameters).  
