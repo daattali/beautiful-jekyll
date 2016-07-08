@@ -175,6 +175,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | Website | Who | What |
 | :------ |:--- | :--- |
 | [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
+| [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
 | [tomwhite.io](http://tomwhite.io) | Thomas White | Ecology PhD student |
