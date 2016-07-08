@@ -1,10 +1,8 @@
 # Beautiful Jekyll
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#featured-users-success-stories).
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#featured-users-success-stories).
 
-Feel free to modify this in any way you'd like, but I would appreciate it if you don't remove the attribution to Beautiful Jekyll. I've noticed that many people copy this website and deliberately remove the tiny phrase that gives me credit, and it feels a bit sad to not get credit for the countless hours I've put into this. Don't make me sad!
-
-If you need a bit of help or have comments, feel free to [contact me](http://deanattali.com/aboutme#contact). Even if you don't have anything important to say but found this useful, I'd love to [hear about it](http://deanattali.com/aboutme#contact). Lastly, if you like this theme, please consider [supporting me with a small donation](http://deanattali.com/aboutme#feed-meeee) if you want to make me extra happy. :)
+If you need a bit of help or have comments, feel free to [contact me](http://deanattali.com/aboutme#contact). Even if you don't have anything important to say but found this useful, I'd love to [hear about it](http://deanattali.com/aboutme#contact). Lastly, if you like this theme, please consider [supporting me](http://deanattali.com/aboutme#feed-meeee) if you want to make me extra happy. :)
 
 This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used for any [GitHub Pages](https://pages.github.com/) website.  (If you don't know what these two things are, that's absolutely fine, you don't need to!)
 
@@ -175,7 +173,6 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | Website | Who | What |
 | :------ |:--- | :--- |
 | [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
-| [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
 | [tomwhite.io](http://tomwhite.io) | Thomas White | Ecology PhD student |
@@ -184,7 +181,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [chaitanyajoshi.xyz](http://chaitanyajoshi.xyz/) | Chaitanya Joshi | Computer Science undergrad |
 | [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
 | [kootenpv.github.io](http://kootenpv.github.io/) | Pascal van Kooten | Data analytics |
-
+| [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
 
 ### Very advanced: Local development
 
