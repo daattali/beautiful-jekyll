@@ -42,7 +42,7 @@ As you can see for some reason the Virgin DNS resolves only one IP when google's
 
 **Parameters**
 
-I could go through all the possibilities the script offers but the easiest is probably that you play with it or have a look at the help (Help Pingou -Full).
+I could go through all the possibilities the script offers but the easiest is probably that you play with it.
 
 - DESTINATION: Remote IP or hostname to test.
 
