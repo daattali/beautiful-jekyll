@@ -36,7 +36,7 @@ Nslookup using my ISP's DNS : cache1.service.virginmedia.net
 
 Nslookup using google's DNS (the one I use) : google-public-dns-a.google.com
 
-![nslookup-googledns.jpg]({{site.baseurl}}/img/nslookup-googledns.jpg)
+![nslookup-googledns.JPG]({{site.baseurl}}/img/nslookup-googledns.JPG)
 
 As you can see for some reason the Virgin DNS resolves only one IP when google's ones resolve a lot. That is why in case it happens, the test will be issued to the first IP in the list (62.252.232.30).
 
