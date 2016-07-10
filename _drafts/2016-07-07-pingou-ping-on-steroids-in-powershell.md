@@ -191,7 +191,7 @@ $timems = [math]::round(((get-date) - $before).TotalMilliseconds,0)
 
 $PortPing.Close()
 
-} #Pingou subfunction
+} 
 
 Function Icmp-Ping {
 
