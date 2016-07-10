@@ -5,6 +5,8 @@ title: 'Pingou: ping on steroids in powershell'
 ---
 Pingou is a powershell script that allows to test connectivity with ICMP and open ports with TCP. This command is meant to be easy to use, intuitive and faster than the built in test-connection and test-netconnection.
 
+**Link to the script** : Pingou
+
 ![pingou.jpg]({{site.baseurl}}/img/pingou.jpg)
 
 I took inspiration on a great script that one of my colleagues wrote "[tPing](http://www.nimbus117.co.uk/powershell/2015/07/06/tPing.html)". But because there is no better way to learn than to do it myself so I took a few ideas and wrote mine from scratch.
@@ -15,6 +17,15 @@ I took inspiration on a great script that one of my colleagues wrote "[tPing](ht
 Pingou www.google.fr
 
 ![pingou-www.google.fr.jpg]({{site.baseurl}}/img/pingou-www.google.fr.jpg)
+
+**TCP**
+
+Pingou www.google.fr 80
+
+![pingou-www.google.frhttp.jpg]({{site.baseurl}}/img/pingou-www.google.frhttp.jpg)
+
+A status of true means the port is open, false means it is closed.
+The parameters buffer and hops can't be used with the tcp ping as it is specific to icmp pings.
 
 **Hostname resolve**
 
