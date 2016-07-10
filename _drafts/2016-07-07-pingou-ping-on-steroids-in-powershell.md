@@ -5,22 +5,21 @@ title: 'Pingou: ping on steroids in powershell'
 ---
 Pingou is a powershell script that allows to test connectivity with ICMP and open ports with TCP. This command is meant to be easy to use, intuitive and faster than the built in test-connection and test-netconnection.
 
-**Link to the script** : Pingou
+**Link to the script** : [Pingou](https://github.com/vxav/Scripting/blob/master/Pingou.ps1)
 
 ![pingou.jpg]({{site.baseurl}}/img/pingou.jpg)
 
 I took inspiration on a great script that one of my colleagues wrote "[tPing](http://www.nimbus117.co.uk/powershell/2015/07/06/tPing.html)". But because there is no better way to learn than to do it myself so I took a few ideas and wrote mine from scratch.
 
-
 **ICMP**
 
-Pingou www.google.fr
+Pingou -destination www.google.fr
 
 ![pingou-www.google.fr.jpg]({{site.baseurl}}/img/pingou-www.google.fr.jpg)
 
 **TCP**
 
-Pingou www.google.fr 80
+Pingou -destination www.google.fr -port 80
 
 ![pingou-www.google.frhttp.jpg]({{site.baseurl}}/img/pingou-www.google.frhttp.jpg)
 
@@ -42,6 +41,8 @@ Nslookup using google's DNS (the one I use) : google-public-dns-a.google.com
 As you can see for some reason the Virgin DNS resolves only one IP when google's ones resolve a lot. That is why in case it happens, the test will be issued to the first IP in the list (62.252.232.30).
 
 **Parameters**
+
+I could go through all the possibilities the script offers but the easiest is probably that you play with it or have a look at the help (Help Pingou -Full).
 
 - DESTINATION: Remote IP or hostname to test.
 
