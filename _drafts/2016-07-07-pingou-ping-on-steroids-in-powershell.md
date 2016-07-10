@@ -58,3 +58,168 @@ As you can see for some reason the Virgin DNS resolves only one IP when google's
 - HOPS: (-i) Number of hops after which the packet is dropped (TTL expired). Works only with ICMP tests.
 
 - BUFFER: (-l) Size in bytes of the buffer to send. Works only with ICMP tests.
+
+## Code
+
+**Pingou function**
+
+```Powershell
+Function Pingou {
+
+[CmdletBinding(DefaultParameterSetName=1)]  
+
+param(
+    [Parameter(Mandatory=$true,ValueFromPipeline = $True,position=0)]
+    [string]
+    $Destination,
+
+    [parameter(position=1)]
+    [ValidateRange(1,65535)]
+    [int]
+    $Port,
+
+    [parameter(parametersetname=2)]
+    [Alias('t')]
+    [switch]
+    $Continuous,
+
+    [parameter(parametersetname=1)]
+    [Alias('n')]
+    [int]
+    $Count = 4,
+
+    [Alias('w')]
+    [int]
+    $Timeout = 1000,
+
+    [ValidateRange(200,10000)]
+    [int]
+    $Delayms = 750,
+
+    [ValidateRange(1,255)]
+    [Alias('i')]
+    [int]
+    $Hops = 128,
+
+    [ValidateRange(1,255)]
+    [Alias('l')]
+    [int]
+    $Buffer = 32
+
+)
+
+#$ErrorActionPreference = "SilentlyContinue"
+
+$Resolve = [System.Net.Dns]::GetHostAddresses($Destination).IPAddressToString
+IF ($Resolve.count -gt 1) {$Resolve = $Resolve[0]}
+
+IF ($Resolve) {
+
+    IF ($Port) {
+
+        While ($i -lt $Count) {
+
+            Port-Ping -IP $Resolve -Port $Port -Timeout $Timeout
+            IF (!$Continuous) {$i++}
+            Sleep -Milliseconds $Delayms
+
+        }
+
+    } ELSE {
+
+        $icmpping = New-Object system.Net.NetworkInformation.Ping
+
+        $icmpoptions = New-Object System.Net.NetworkInformation.PingOptions($Hops,$false)
+
+        While ($i -lt $Count) {
+
+            Icmp-Ping -IP $Resolve -Timeout $Timeout -icmpOption $icmpoptions -Buffer $Buffer
+            IF (!$Continuous) {$i++}
+            Sleep -Milliseconds $Delayms
+
+        }
+
+    }
+
+} ELSE { # ELSE RESOLVE
+
+    Write-Warning "cannot resolve $Destination"
+
+}
+
+}
+```
+
+**ICMP and TCP Subfunctions**
+
+```Powershell
+Function Port-Ping {
+
+param(
+    [Parameter(ValueFromPipeline = $True)]
+    [string]
+    $IP,
+
+    [ValidateRange(1,65535)]
+    [int]
+    $Port,
+
+    [int]
+    $Timeout
+
+)
+
+$before = get-date
+
+$PortPing = New-Object System.Net.Sockets.TCPClient
+
+$PortConnect = $PortPing.beginConnect("$IP",$Port,$null,$null)
+
+While (((get-date) -lt $before.AddMilliseconds($Timeout)) -and ($PortPing.Connected -ne "true")) {}
+
+$timems = [math]::round(((get-date) - $before).TotalMilliseconds,0)
+
+[pscustomobject]@{
+
+    LocalEndpoint   = $PortPing.Client.LocalEndPoint
+    RemoteEndpoint  = $PortPing.Client.RemoteEndPoint
+    Status          = $PortPing.Connected
+    Timems          = $timems
+
+}
+
+$PortPing.Close()
+
+} #Pingou subfunction
+
+Function Icmp-Ping {
+
+param(
+    [Parameter(ValueFromPipeline = $True)]
+    [string]
+    $IP,
+
+    [int]
+    $Timeout,
+
+    [int]
+    $Buffer,
+
+    [System.Net.NetworkInformation.PingOptions]
+    $icmpOption
+
+)
+
+$icmpconnect = $icmpping.Send("$IP",$Timeout,$buffer,$icmpoptions)
+
+[pscustomobject]@{
+
+    RemoteEndpoint = $IP
+    Bytes          = $buffer
+    Time           = IF ($icmpconnect.Status -eq "Success") {$icmpconnect.RoundtripTime} ELSE {$icmpconnect.Status}
+    TTL            = $icmpconnect.Options.Ttl
+
+} 
+
+}
+```
