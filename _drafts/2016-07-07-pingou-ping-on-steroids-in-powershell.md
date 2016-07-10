@@ -9,3 +9,5 @@ Pingou is a powershell script that allows to test connectivity with ICMP and ope
 
 I took inspiration on a great script that one of my colleagues wrote "[tPing](http://www.nimbus117.co.uk/powershell/2015/07/06/tPing.html)". But because there is no better way to learn than to do it myself so I took a few ideas and wrote mine from scratch.
 
+**ICMP**
+
