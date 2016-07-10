@@ -86,6 +86,16 @@ img::-moz-selection {
   background: transparent;
 }
 
+#paypalbtn {
+  text-align: center;
+}
+
+#paypalbtn a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: arial;
+}
+
 /* --- Navbar --- */
 
 .navbar-custom {
