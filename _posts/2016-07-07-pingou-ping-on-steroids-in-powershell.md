@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Pingou: ping on steroids in powershell'
 ---
 Pingou is a powershell script that allows to test connectivity with ICMP and open ports with TCP. This command is meant to be easy to use, intuitive and faster than the built in test-connection and test-netconnection.
