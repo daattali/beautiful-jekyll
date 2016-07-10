@@ -12,6 +12,9 @@ I took inspiration on a great script that one of my colleagues wrote "[tPing](ht
 
 **ICMP**
 
+Pingou www.google.fr
+
+![pingou-www.google.fr.jpg]({{site.baseurl}}/img/pingou-www.google.fr.jpg)
 
 **Hostname resolve**
 
