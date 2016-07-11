@@ -13,18 +13,22 @@ I took inspiration on [tPing](http://www.nimbus117.co.uk/powershell/2015/07/06/t
 
 **ICMP**
 
+```Powershell
 Pingou -destination www.google.fr
+```
 
 ![pingou-www.google.fr.jpg]({{site.baseurl}}/img/pingou-www.google.fr.jpg)
 
 **TCP**
 
+```Powershell
 Pingou -destination www.google.fr -port 80
+```
 
 ![pingou-www.google.frhttp.jpg]({{site.baseurl}}/img/pingou-www.google.frhttp.jpg)
 
-A status of true means the port is open, false means it is closed.
-The parameters buffer and hops can't be used with the tcp ping as it is specific to icmp pings.
+A status of true means the port is open and false if closed (or could be a communication issue).
+The parameters _buffer_ and _hops_ can't be used with the tcp ping as it is specific to icmp pings.
 
 **Hostname resolve**
 
