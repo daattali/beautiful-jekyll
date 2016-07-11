@@ -46,7 +46,7 @@ As you can see for some reason the VirginMedia DNS resolves only one IP when goo
 
 **Parameters**
 
-I could go through all the possibilities the script offers but the easiest is probably that you play with it.
+I could go through all the possibilities the script offers but the easiest is probably that you play with it or take a look at the few examples in the help of the script.
 
 - DESTINATION: Remote IP or hostname to test.
 
