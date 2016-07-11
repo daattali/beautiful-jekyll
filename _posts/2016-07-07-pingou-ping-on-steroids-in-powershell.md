@@ -48,21 +48,21 @@ As you can see for some reason the VirginMedia DNS resolves only one IP when goo
 
 I could go through all the possibilities the script offers but the easiest is probably that you play with it or take a look at the few examples in the help of the script.
 
-- DESTINATION: Remote IP or hostname to test.
+- **DESTINATION**: Remote IP or hostname to test.
 
-- COUNT: (-t) Number of test issued.
+- **COUNT**: (-t) Number of test issued.
 
-- PORT: TCP port to check on the remote host, validate range is 1 to 65535.
+- **PORT**: TCP port to check on the remote host, validate range is 1 to 65535.
 
-- CONTINUOUS: (-n) Number of tests infinite. can be stopped with ctrl+c or by closing the invite.
+- **CONTINUOUS**: (-n) Number of tests infinite. can be stopped with ctrl+c or by closing the invite.
 
-- TIMEOUT: (-w) Number of milliseconds after which a timeout is issued for each test.
+- **TIMEOUT**: (-w) Number of milliseconds after which a timeout is issued for each test.
 
-- DELAYMS: Number of milliseconds between each test.
+- **DELAYMS**: Number of milliseconds between each test.
 
-- HOPS: (-i) Number of hops after which the packet is dropped (TTL expired). Works only with ICMP tests.
+- **HOPS**: (-i) Number of hops after which the packet is dropped (TTL expired). Works only with ICMP tests.
 
-- BUFFER: (-l) Size in bytes of the buffer to send. Works only with ICMP tests.
+- **BUFFER**: (-l) Size in bytes of the buffer to send. Works only with ICMP tests.
 
 ## Code
 
