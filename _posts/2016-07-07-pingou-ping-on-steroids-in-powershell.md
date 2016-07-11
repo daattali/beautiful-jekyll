@@ -52,11 +52,11 @@ I could go through all the possibilities the script offers but the easiest is pr
 
 - **DESTINATION**: Remote IP or hostname to test.
 
-- **COUNT**: (-t) Number of test issued.
-
 - **PORT**: TCP port to check on the remote host, validate range is 1 to 65535.
 
-- **CONTINUOUS**: (-n) Number of tests infinite. can be stopped with ctrl+c or by closing the invite.
+- **COUNT**: (-n) Number of test issued.
+
+- **CONTINUOUS**: (-t) Number of tests infinite. can be stopped with ctrl+c or by closing the invite.
 
 - **TIMEOUT**: (-w) Number of milliseconds after which a timeout is issued for each test.
 
