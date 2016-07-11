@@ -9,7 +9,7 @@ Pingou is a powershell script that allows to test connectivity using ICMP and op
 
 ![pingou.jpg]({{site.baseurl}}/img/pingou.jpg)
 
-I took inspiration on a great script that one of my colleagues wrote "[tPing](http://www.nimbus117.co.uk/powershell/2015/07/06/tPing.html)". But because there is no better way to learn than to do it myself,  I took a few ideas and wrote mine from scratch.
+I took inspiration on [tPing](http://www.nimbus117.co.uk/powershell/2015/07/06/tPing.html), a great script that one of my colleagues wrote. But because there is no better way to learn than to do it myself,  I took a few ideas and wrote mine from scratch.
 
 **ICMP**
 
