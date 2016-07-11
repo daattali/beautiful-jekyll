@@ -19,7 +19,7 @@ Pingou -destination www.google.fr
 
 ![pingou-www.google.fr.jpg]({{site.baseurl}}/img/pingou-www.google.fr.jpg)
 
-It is not visible on the screenshot but the response times are much faster than the Ping command. Default delay between tests set to 750ms and can be manually set to as low as 200ms (not less to spare 
+It is not visible on the screenshot but the response times are much faster than the Ping command that tests every second. Pingou has a default delay between tests set to 750ms and can be manually set to a minimum of 50ms.
 
 **TCP**
 
