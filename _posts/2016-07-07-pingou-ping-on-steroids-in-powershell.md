@@ -19,6 +19,8 @@ Pingou -destination www.google.fr
 
 ![pingou-www.google.fr.jpg]({{site.baseurl}}/img/pingou-www.google.fr.jpg)
 
+It is not visible on the screenshot but the response times are much faster than the Ping command. Default delay between tests set to 750ms and can be manually set to as low as 200ms (not less to spare 
+
 **TCP**
 
 ```Powershell
@@ -97,7 +99,7 @@ param(
     [int]
     $Timeout = 1000,
 
-    [ValidateRange(200,10000)]
+    [ValidateRange(50,10000)]
     [int]
     $Delayms = 750,
 
