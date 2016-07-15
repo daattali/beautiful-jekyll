@@ -8,7 +8,7 @@ In this post I will go through the steps involved in the process of updating a D
 Why do I use a Dell customized ISO?
 
 - Ease of drivers and specific packages management.
-- Simplify and shorten the support tickets.
+- Simplify and shorten the execution of support tickets.
 - Dell server, Dell software, it makes sense to me.
 
 ## Download the right iso image
