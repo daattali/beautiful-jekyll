@@ -24,3 +24,6 @@ I scroll down to check it is the latest version and go to the most recent one if
 ![update6-0.jpg]({{site.baseurl}}/img/update6-0.jpg)
 
 That done I find the iso image and click "download file".
+
+----------------
+
