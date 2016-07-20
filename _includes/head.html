@@ -63,9 +63,21 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
   
-  {% if page.fb-img %}
-  <meta property="og:image" content="{{ page.fb-img }}" />
+  {% if page.share-img %}
+  <meta property="og:image" content="{{ page.share-img }}" />
   {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% endif %}  
+  
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
+  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}" />
+  {% if page.share-img %}
+  <meta name="twitter:image" content="{{ page.share-img }}" />
+  {% elsif site.avatar %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}  
 </head>
