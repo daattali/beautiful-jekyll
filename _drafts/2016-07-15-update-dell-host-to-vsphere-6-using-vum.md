@@ -56,4 +56,6 @@ Check "Host Upgrade" to make it a major upgrade and not a patching.
 
 Enter a name and description that your colleagues can easily understand and click next.
 
+![create-baseline.jpg]({{site.baseurl}}/img/create-baseline.jpg)
+
 Choose the ESXi image that you just uploaded and complete the wizard.
