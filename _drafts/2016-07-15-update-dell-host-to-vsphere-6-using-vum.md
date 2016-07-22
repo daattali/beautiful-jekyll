@@ -40,7 +40,7 @@ That done, find the iso image in the "available formats" section and click "down
 
 ----------------
 
-## Create the upgrade baseline
+## Create the host upgrade baseline
 
 Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".
 
@@ -59,3 +59,8 @@ Enter a name and description that your colleagues can easily understand and clic
 ![create-baseline.jpg]({{site.baseurl}}/img/create-baseline.jpg)
 
 Choose the ESXi image that you just uploaded and complete the wizard.
+
+## Attach the baseline and remediate the host
+
+Now attach the baseline to the cluster by right clicking on it, in the contextual menu go to "Update manager" > "Attache baseline" > Check the baseline you just created and click OK.
+
