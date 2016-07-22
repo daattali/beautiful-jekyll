@@ -68,14 +68,14 @@ All the hosts in your cluster now have the baseline attached and can be scanned 
 
 _Note that you can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster. Keep in mind however that, if you upgrade a VM's virtual hardware to a version N+1 you won't be able to migrate it to a host that supports up to version N._
 
-|ESX/ESXi|vHardware|
---------------------
-|6.x|11|
-|5.5|10|
-|5.1|10|
-|5.0|8|
-|4.x|7|
-|3.x|4|
-|2.x|3|
+| ESX/ESXi | vHardware |
+------------------------
+| 6.x      | 11        |
+| 5.5      | 10        |
+| 5.1      | 10        |
+| 5.0      | 8         |
+| 4.x      | 7         |
+| 3.x      | 4         |
+| 2.x      | 3         |
 
 
