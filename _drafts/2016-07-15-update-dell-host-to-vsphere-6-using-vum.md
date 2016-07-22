@@ -11,11 +11,24 @@ Why do I use a Dell customized ISO?
 - Simplify and shorten the execution of support tickets.
 - Dell server, Dell software, it makes sense to me.
 
+In order to have an idea of the difference I downloaded the latest ISO build "3620759" from the VMware website to have the stock ISO and from the Dell website to have their customized one and compared it with PowerShell.
+
+<= are the objects only present in the reference (ESXiStock)
+=> are the objects only present in the difference (ESXIDell)
+
+![vibs-difference.jpg]({{site.baseurl}}/img/vibs-difference.jpg)
+
+The 2 main things we can note from this comparison are:
+- More recent vib versions in the Dell build.
+- More vibs in the Dell build, most likely drivers for hardware used in their servers.
+
+I was actually surprised to see that the Dell build embedded more recent drivers but I guess VMware relies on the manufacturers to provide their ISOs with versions certified for their Support, which would make perfect sense.
+
 ## Download the right iso image
 
 First of all we need to download the latest version of the Dell customized vSphere 6.0 image. The Dell support website is a little bit weird as I couldn't find my way through to the vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=2RNCX](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=2RNCX)
 
-As of today the latest Dell version is the 6.0U1b, A05.
+As of today the latest Dell version is the 6.0U2, A02.
 
 ![update6-0.0.jpg]({{site.baseurl}}/img/update6-0.0.jpg)
 
@@ -26,4 +39,3 @@ I scroll down to check it is the latest version and go to the most recent one if
 That done I find the iso image in the available formats and click "download file".
 
 ----------------
-
