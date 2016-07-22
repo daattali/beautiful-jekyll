@@ -28,14 +28,25 @@ I was actually surprised to see that the Dell build embedded more recent drivers
 
 First of all we need to download the latest version of the Dell customized vSphere 6.0 image. The Dell support website is a little bit weird as I couldn't find my way through to the vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=2RNCX](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=2RNCX)
 
-As of today the latest Dell version is the 6.0U2, A02.
+As of today the latest Dell ISO is the 6.0U2, A02.
 
 ![update6-0.0.jpg]({{site.baseurl}}/img/update6-0.0.jpg)
 
-I scroll down to check it is the latest version and go to the most recent one if there is one. Even though it's not really necessary (as long as your server is in the [hcl](http://www.vmware.com/resources/compatibility/search.php)) I check that my model is listed under the compatible systems. Blade M630 in my case.
+Scroll down to verify that it is the latest version and go to the most recent one if there is one. Even though it's not really necessary (as long as your server is in the [hcl](http://www.vmware.com/resources/compatibility/search.php)) I check that my model is listed under the compatible systems. Blade M630 in my case.
 
 ![update6-0.jpg]({{site.baseurl}}/img/update6-0.jpg)
 
-That done I find the iso image in the "available formats" section and click "download file".
+That done, find the iso image in the "available formats" section and click "download file".
 
 ----------------
+
+## Create the upgrade baseline
+
+Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".
+
+![update6-1.jpg]({{site.baseurl}}/img/update6-1.jpg)
+
+Click "Import Esxi Image...", browse to the ISO image you just downloaded and click "Import".
+
+![update6-2.jpg]({{site.baseurl}}/img/update6-2.jpg)
+
