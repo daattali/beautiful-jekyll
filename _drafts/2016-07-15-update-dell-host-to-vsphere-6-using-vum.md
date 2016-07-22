@@ -64,7 +64,9 @@ Choose the ESXi image that you just uploaded and complete the wizard.
 
 Now attach the baseline to the cluster by right clicking on it, in the contextual menu go to "Update manager" > "Attache baseline" > Check the baseline you just created and click OK.
 
-_You can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster. Keep in mind however that, if you upgrade a VM's virtual hardware to a version N+1 you won't be able to migrate it to a host that supports up to version N._
+All the hosts in your cluster now have the baseline attached and can be scanned and remediated.
+
+_Note that you can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster. Keep in mind however that, if you upgrade a VM's virtual hardware to a version N+1 you won't be able to migrate it to a host that supports up to version N._
 
 |ESX/ESXi|vHardware|
 --------------------
@@ -75,3 +77,5 @@ _You can attach the baseline on a per host basis if you don't want it on all the
 |4.x|7|
 |3.x|4|
 |2.x|3|
+
+
