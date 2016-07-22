@@ -50,3 +50,10 @@ Click "Import Esxi Image...", browse to the ISO image you just downloaded and cl
 
 ![update6-2.jpg]({{site.baseurl}}/img/update6-2.jpg)
 
+Go to the "Host baseline" tab and create a baseline by click the green plus.
+
+Check "Host Upgrade" to make it a major upgrade and not a patching.
+
+Enter a name and description that your colleagues can easily understand and click next.
+
+Choose the ESXi image that you just uploaded and complete the wizard.
