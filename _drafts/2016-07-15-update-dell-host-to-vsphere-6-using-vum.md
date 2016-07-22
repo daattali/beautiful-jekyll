@@ -36,6 +36,6 @@ I scroll down to check it is the latest version and go to the most recent one if
 
 ![update6-0.jpg]({{site.baseurl}}/img/update6-0.jpg)
 
-That done I find the iso image in the available formats and click "download file".
+That done I find the iso image in the "available formats" section and click "download file".
 
 ----------------
