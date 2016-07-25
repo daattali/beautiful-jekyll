@@ -26,6 +26,16 @@ The 2 main things we can note about the Dell build compared to the stock one:
 
 I was actually surprised to see that the Dell build embedded more recent drivers but I guess VMware relies on the manufacturers to provide their ISOs with versions certified for their Support, which would make perfect sense.
 
+## Requirements
+
+Upgrading hosts to a new major version isn't something you do every day and it is a critical operation as it can leave you with a bunch of resources unavailable for a while if something goes wrong. So in order to prevent bad surprises and a night behind the screen sweating like hell, better get ready for the worst:
+
+- Make sure to have vCenter updated to the last version before doing your hosts!
+- If you've never done it before, build a lab and do a test to get comfortable with the process,
+- Be sure to have enough resources to satisfy your admission control's policy with a host down,
+- If the resources available with a host down respects the AC's policy are likely to put your VMs in a bad position (vCPU to pCPU density, network bottleneck), make a list of all the VMs that you can safely shut down or that are not critical. If the host you are patching stays donw longer than expected because of a problem you'll still need to run your VMs will figuring this one out.
+- Take a backup of your host's config, or make sure you can rebuild it quickly.
+
 ## Download the right iso image
 
 First of all we need to download the latest version of the Dell customized vSphere 6.0 image. I find the Dell support website a little bit confusing. I couldn't find my way through to the vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76)
@@ -128,3 +138,10 @@ When the operation finishes you can check the ESXi version and take your host ou
 ![version6.0.jpg]({{site.baseurl}}/img/version6.0.jpg)
 
 This was for the upgrade of the system. After doing it I advise you to **run a scan and remediation of the host for the critical and non-critical patches baselines** to apply the ones that were added by VMware later than the release date of the latest ISO build.
+
+And that's it, now you can update the other hosts and have a cluster nice and patched.
+
+Don't forget these two steps for your virtual machines, I advise you to do it once all the hosts are upgraded. You need to do them in the following order! The vmware tools contain the drivers for the new virtual hardware.
+
+- Upgrade VMware tools version.
+- Upgrade virtual hardware version.
