@@ -84,6 +84,8 @@ Scan your cluster for updates by right right-clicking on it > Update Manager > S
 ![Non-Compliant-vum.jpg]({{site.baseurl}}/img/Non-Compliant-vum.jpg)
 
 Then put the host you want to upgrade in maintenance mode.  
+Note that you might need to disable admission control if for example you have a 2 nodes cluster with a tolerance of one host loss.
+
 Once it is done right click on it > Update Manager > Remediate
 
 Select the baseline we created earlier containing the last ESXi ISO.
@@ -106,4 +108,11 @@ For the remediation options I leave the default options as well but it will depe
 
 I am usually very cautious when it comes to upgrades, even after having them tested in pre-prod before because you never know what can happen. That is why I don't allow the remediation of multiple hosts in parallel (Or at least not the first one).
 
-I don't check the box to disable HA as I know I have enoug resources in my cluster to place a host in maintenance mode without violating my admission control's policy.
+I don't check the box to disable HA as I know I have enoug resources in my cluster to place a host in maintenance mode without violating my admission control's policy. but if you already put th host in maintenance mode prior to do the remediation it is very likely that you don't need to check it.
+
+![remediate4.jpg]({{site.baseurl}}/img/remediate4.jpg)
+
+Click Next, review the settings and double check it's the right host and the right build ;).  
+And click Finish.
+
+vCenter will then proceed to upgrade the host which will trigger at least a restart.
