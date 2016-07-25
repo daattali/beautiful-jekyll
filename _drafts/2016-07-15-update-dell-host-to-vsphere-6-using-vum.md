@@ -67,8 +67,6 @@ Now attach the baseline to the cluster by right clicking on it, in the contextua
 
 All the hosts in your cluster now have the baseline attached and can be scanned and remediated.
 
-----------
-
 _Note that you can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster. Keep in mind however that, if you upgrade a VM's virtual hardware to a version N+1 you won't be able to migrate it to a host that supports up to version N._
 
 | ESX/ESXi | vHardware |
@@ -81,5 +79,25 @@ _Note that you can attach the baseline on a per host basis if you don't want it 
 | 3.x      | 4         |
 | 2.x      | 3         |
 
-----------
+Scan your cluster for updates by right right-clicking on it > Update Manager > Scan for Updates and wait for the scan to finish. You'll see that your cluster is non compliant to your attached baselines.
 
+![Non-Compliant-vum.jpg]({{site.baseurl}}/img/Non-Compliant-vum.jpg)
+
+Then put the host you want to upgrade in maintenance mode.  
+Once it is done right click on it > Update Manager > Remediate
+
+Select the baseline we created earlier containing the last ESXi ISO.
+
+![remediate1.jpg]({{site.baseurl}}/img/remediate1.jpg)
+
+If you triggered the remediation while positionned on a host you'll only see this one, otherwise chose the host you want to upgrade.
+
+![remediate2.jpg]({{site.baseurl}}/img/remediate2.jpg)
+
+Then I chose not to ignore the warnings about unsupported hardware devices but this one is up to you.
+
+Give the task a name and run this action now.
+
+Leave the default Maintenance mode options as it is already correctly configured.
+
+![remediate3.jpg]({{site.baseurl}}/img/remediate3.jpg)
