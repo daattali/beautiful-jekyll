@@ -119,6 +119,8 @@ And click Finish.
 
 vCenter will then proceed to upgrade the host which will trigger a restart. The operation takes a little while so this step is all about patience.
 
-Once the operation finishes you can take your host out of maintenance mode and check the ESXi version, as you can see it is now 6.0.0, 3620759 on my lab.
+When the operation finishes you can check the ESXi version and take your host out of maintenance mode, as you can see it is now 6.0.0, 3620759 in my lab.
 
 ![version6.0.jpg]({{site.baseurl}}/img/version6.0.jpg)
+
+This was for the upgrade of the system. After doing it I advise you to run a scan and remediation of the host for the critical and non-critical patches baselines to apply the ones that were added by VMware later than the release date of the latest ISO build.
