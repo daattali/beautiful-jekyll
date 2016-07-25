@@ -34,7 +34,7 @@ As of today the latest Dell ISO is the 6.0U2, A02.
 
 ![update6-0.0.jpg]({{site.baseurl}}/img/update6-0.0.jpg)
 
-Scroll down to verify that it is the latest version and go to the most recent one if there is one. Even though it's not really necessary (as long as your server is in the [hcl](http://www.vmware.com/resources/compatibility/search.php)) I check that my model is listed under the compatible systems. Blade M630 in my case.
+Even though it's not really necessary (as long as your server is in the [hcl](http://www.vmware.com/resources/compatibility/search.php)) I check that my model is listed under the compatible systems. Blade M630 in my case. Now scroll down to verify that it is the latest version and go to the most recent one if there is one. 
 
 ![update6-0.jpg]({{site.baseurl}}/img/update6-0.jpg)
 
