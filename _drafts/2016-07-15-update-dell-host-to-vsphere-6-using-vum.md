@@ -115,4 +115,8 @@ I don't check the box to disable HA as I know I have enoug resources in my clust
 Click Next, review the settings and double check it's the right host and the right build ;).  
 And click Finish.
 
-vCenter will then proceed to upgrade the host which will trigger at least a restart. The operation takes a little while so this step is all about patience.
+vCenter will then proceed to upgrade the host which will trigger a restart. The operation takes a little while so this step is all about patience.
+
+Once the operation finishes you can take your host out of maintenance mode and check the ESXi version, as you can see it is now 6.0.0, 3620759 on my lab.
+
+![version6.0.jpg]({{site.baseurl}}/img/version6.0.jpg)
