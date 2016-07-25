@@ -82,17 +82,7 @@ Now attach the baseline to the cluster by right clicking on it, in the contextua
 
 All the hosts in your cluster now have the baseline attached and can be scanned and remediated.
 
-_Note that you can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster. Keep in mind however that, if you upgrade a VM's virtual hardware to a version N+1 you won't be able to migrate it to a host that supports up to version N._
-
-| ESX/ESXi | vHardware |
-------------------------
-| 6.x      | 11        |
-| 5.5      | 10        |
-| 5.1      | 10        |
-| 5.0      | 8         |
-| 4.x      | 7         |
-| 3.x      | 4         |
-| 2.x      | 3         |
+_Note that you can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster._
 
 Scan your cluster for updates by right right-clicking on it > Update Manager > Scan for Updates and wait for the scan to finish. You'll see that your cluster is non compliant to your attached baselines.
 
@@ -139,11 +129,23 @@ When the operation finishes you can check the ESXi version and take your host ou
 
 This was for the upgrade of the system. After doing it **run a scan and remediation of the host for the critical and non-critical patches baselines** to apply the ones that were added by VMware later than the release date of the latest ISO build.
 
+## VMware tools and virtual hardware
+
 Don't forget these two steps for your virtual machines, I advise you to **do the virtual hardware upgrade once all the hosts are upgraded**. You need to do them in the following order! The vmware tools contain the drivers for the new virtual hardware.
 
 - Upgrade VMware tools version.
 - Upgrade virtual hardware version.
 
-The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade needs to be triggered manually.
+The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade needs to be triggered manually and an upgraded VM cannot be migrated to a host with an earlier version of ESXI (see table below).
+
+| ESX/ESXi | vHardware |
+------------------------
+| 6.x      | 11        |
+| 5.5      | 10        |
+| 5.1      | 10        |
+| 5.0      | 8         |
+| 4.x      | 7         |
+| 3.x      | 4         |
+| 2.x      | 3         |
 
 And that's it, now you can update the other hosts and have a cluster nice and patched.
