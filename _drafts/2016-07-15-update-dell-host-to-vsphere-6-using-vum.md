@@ -101,3 +101,9 @@ Give the task a name and run this action now.
 Leave the default Maintenance mode options as it is already correctly configured.
 
 ![remediate3.jpg]({{site.baseurl}}/img/remediate3.jpg)
+
+For the remediation options I leave the default options as well but it will depend on the available resources in your cluster and the level of "risk" you are willing to take.
+
+I am usually very cautious when it comes to upgrades, even after having them tested in pre-prod before because you never know what can happen. That is why I don't allow the remediation of multiple hosts in parallel (Or at least not the first one).
+
+I don't check the box to disable HA as I know I have enoug resources in my cluster to place a host in maintenance mode without violating my admission control's policy.
