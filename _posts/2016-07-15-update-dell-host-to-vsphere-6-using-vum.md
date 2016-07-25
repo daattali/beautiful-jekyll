@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Update Dell host to vSphere 6 using VUM
 ---
 One of the most important operations in running a virtual environment is to perform major upgrade of the system. The vSphere Update Manager simplify greatly the process and makes it look transparent when everything goes well. Even if 9 times out of 10 everything will be fine, it is always good to take extra care with these maintenance operations to avoid that scary tenth time. Just like everyone does with the test groups in WSUS, it is best practice to test every build in a dev/test cluster running the same kind of workloads as your production. This way you can give it a few months to discover potential issues relative to your environment and then patch your production. If you don't have the chance to have such infrastructure, it is still better to wait a little while before upgrading your prod to let other companies run into these problems (in their pre-prod) and get their feedbacks, resulting in editor's patches to fix them.
