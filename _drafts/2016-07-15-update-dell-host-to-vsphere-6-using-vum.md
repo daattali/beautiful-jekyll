@@ -5,50 +5,50 @@ title: Update Dell host to vSphere 6 using VUM
 ---
 One of the most important operations in running a virtual environment is to perform major upgrade of the system. The vSphere Update Manager simplify greatly the process and makes it look transparent when everything goes well. Even if 9 times out of 10 everything will be fine, it is always good to take extra care with these maintenance operations to avoid that scary tenth time. Just like everyone does with the test groups in WSUS, it is best practice to test every build in a dev/test cluster running the same kind of workloads as your production. This way you can give it a few months to discover potential issues relative to your environment and then patch your production. If you don't have the chance to have such infrastructure, it is still better to wait a little while before upgrading your prod to let other companies run into these problems (in their pre-prod) and get their feedbacks, resulting in editor's patches to fix them.
 
-## Dell specifics
+## Dell's customized ISO
 
-In this post I will go through the steps involved in the process of updating a Dell server running ESXi 5.5 to the latest version 6.0 update 2 of vSphere. I mention Dell because I am going to use a customized Dell ISO to get the latest certified drivers and patches.
+In this post I will go through the steps involved in the process of updating a Dell server running ESXi 5.5 to the latest version 6.0 update 2 of vSphere. I mention Dell because I am going to use a customized Dell ISO to get the latest certified drivers and patches embedded in the image.
 
 ![version5.5.jpg]({{site.baseurl}}/img/version5.5.jpg)
 
 Why do I use a Dell customized ISO?
 
 - Ease of drivers and specific packages management.
-- Simplify and shorten the execution of support tickets.
+- Simplify and shorten the execution of support tickets with Dell.
 - Dell server, Dell software, it makes sense to me.
 
-In order to have an idea of the difference I downloaded the latest ISO build "3620759" from the VMware website to have the stock ISO and from the Dell website to have their customized one and compared it with PowerShell. Quick reminder of how the Compare-Object cmdlet works:
+In order to have an idea of the difference I downloaded the latest ISO build "3620759" from VMware's website and from Dell's website and compared their vibs using PowerShell. Quick reminder on how the PowerShell's ```Compare-Object``` cmdlet works:
 
-- <= are the objects only present in the reference (ESXiStock)
-- => are the objects only present in the difference (ESXIDell)
+- <= Objects only present in the reference (ESXiStock)
+- => Objects only present in the difference (ESXiDell)
 
 ![vibs-difference.jpg]({{site.baseurl}}/img/vibs-difference.jpg)
 
-The 2 main things we can note about the Dell build compared to the stock one:
+The 2 main things I notice about the Dell build compared to the stock one:
 - More recent packages versions.
 - Greater number of packages, most likely drivers for hardware used in their servers.
 
-I was actually surprised to see that the Dell build embedded more recent drivers but I guess VMware relies on the manufacturers to provide their ISOs with versions certified for their Support, which would make perfect sense.
+I was actually surprised to see that the Dell build embeds more recent drivers, I guess VMware relies on the manufacturers to customize their ISOs with versions certified by their Support, which would make perfect sense.
 
 ## Requirements
 
-Upgrading hosts to a new major version isn't something you do every day and it is a critical operation as it can leave you with a bunch of resources unavailable for a while if something goes wrong. So in order to prevent bad surprises and a night behind the screen sweating like hell, better get ready for the worst:
+Upgrading hosts to a new major version isn't something you do every day and it is a critical piece of maintenance as it can leave you with a bunch of resources unavailable for a while if something goes wrong. So in order to avoid bad surprises and a night behind the screen sweating like hell, better get ready for the worst case scenario:
 
-- Make sure to have vCenter updated to the last version before doing your hosts!
-- If you've never done it before, build a lab and do a test to get comfortable with the process,
-- Be sure to have enough resources to satisfy your admission control's policy with a host down,
-- If the resources available with a host down respects the AC's policy are likely to put your VMs in a bad position (vCPU to pCPU density, network bottleneck), make a list of all the VMs that you can safely shut down or that are not critical. If the host you are patching stays donw longer than expected because of a problem you'll still need to run your VMs will figuring this one out.
+- Make sure you have vCenter updated to the last version before doing your hosts!
+- If you've never done it before, build a lab and do some testing to get comfortable with the process,
+- Be sure to have enough resources to satisfy your admission control's policy even with a host down,
+- Even if admission control is stasfied, if the resources available with a host down are likely to put your VMs in a bad position (CPU ready, network bottleneck, ...), make a list of all the VMs that you can safely shut down or that are not critical. If the host you are patching was to stay down longer than expected because of a problem, you'll still need to run your VMs while figuring out what happened.
 - Take a backup of your host's config, or make sure you can rebuild it quickly.
 
 ## Download the right iso image
 
-First of all we need to download the latest version of the Dell customized vSphere 6.0 image. I find the Dell support website a little bit confusing. I couldn't find my way through to the vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76)
+First of all we need to download the latest version of the Dell customized vSphere 6.0 image. I find the Dell support website a little bit confusing, I couldn't find my way through to the last vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76)
 
 As of today the latest Dell ISO is the 6.0U2, A02.
 
 ![update6-0.0.jpg]({{site.baseurl}}/img/update6-0.0.jpg)
 
-Even though it's not really necessary (as long as your server is in the [hcl](http://www.vmware.com/resources/compatibility/search.php)) I check that my model is listed under the compatible systems. Blade M630 in my case. Now scroll down to verify that it is the latest version and go to the most recent one if there is one. 
+Even though it's not really necessary as long as your server is in the [hcl](http://www.vmware.com/resources/compatibility/search.php) I check that my model is listed under the compatible systems. Blade M630 in my case. Now scroll down to verify that it is the latest version and go to the most recent one if there is one (last version in this screenshot). 
 
 ![update6-0.jpg]({{site.baseurl}}/img/update6-0.jpg)
 
