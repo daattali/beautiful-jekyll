@@ -95,11 +95,11 @@ Once it is done right click on it > Update Manager > Remediate
 
 Select the baseline we created earlier containing the last ESXi ISO.
 
-![remediate1.jpg]({{site.baseurl}}/img/remediate1.jpg)
+![Remediate1.jpg]({{site.baseurl}}/img/Remediate1.jpg)
 
 If you triggered the remediation while positionned on a host you'll only see this one, otherwise chose the host you want to upgrade.
 
-![remediate2.jpg]({{site.baseurl}}/img/remediate2.jpg)
+![Remediate2.jpg]({{site.baseurl}}/img/Remediate2.jpg)
 
 Then I chose not to ignore the warnings about unsupported hardware devices but this one is up to you.
 
@@ -107,7 +107,7 @@ Give the task a name and run this action now.
 
 Leave the default Maintenance mode options as it is already correctly configured.
 
-![remediate3.jpg]({{site.baseurl}}/img/remediate3.jpg)
+![Remediate3.jpg]({{site.baseurl}}/img/Remediate3.jpg)
 
 For the remediation options I leave the default options as well but it will depend on the available resources in your cluster and the level of "risk" you are willing to take.
 
@@ -115,7 +115,7 @@ I am usually very cautious when it comes to upgrades, even after having them tes
 
 I don't check the box to disable HA as I know I have enoug resources in my cluster to place a host in maintenance mode without violating my admission control's policy. but if you already put th host in maintenance mode prior to do the remediation it is very likely that you don't need to check it.
 
-![remediate4.jpg]({{site.baseurl}}/img/remediate4.jpg)
+![Remediate4.jpg]({{site.baseurl}}/img/Remediate4.jpg)
 
 Click Next, review the settings and double check it's the right host and the right build ;).  
 And click Finish.
