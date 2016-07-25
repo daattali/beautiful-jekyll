@@ -114,12 +114,12 @@ For the remediation options I leave the default options as well but it will depe
 
 I am usually very cautious when it comes to upgrades, even after having them tested in pre-prod before because you never know what can happen. That is why I don't allow the remediation of multiple hosts in parallel (Or at least not the first one).
 
-I don't check the box to disable HA as I know I have enoug resources in my cluster to place a host in maintenance mode without violating my admission control's policy. but if you already put th host in maintenance mode prior to do the remediation it is very likely that you don't need to check it.
+I don't check the box to disable HA as I know I have enough resources in my cluster to place a host in maintenance mode without violating my admission control's policy. but if you already put the host in maintenance mode prior to do the remediation it is very likely that you don't need to check it.
 
 ![Remediate4.jpg]({{site.baseurl}}/img/Remediate4.jpg)
 
 Click Next, review the settings and double check it's the right host and the right build ;).  
-And click Finish.
+Click Finish.
 
 vCenter will then proceed to upgrade the host which will trigger a restart. The operation takes a little while so this step is all about patience.
 
