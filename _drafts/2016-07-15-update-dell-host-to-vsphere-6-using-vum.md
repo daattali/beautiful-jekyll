@@ -13,16 +13,16 @@ Why do I use a Dell customized ISO?
 - Simplify and shorten the execution of support tickets.
 - Dell server, Dell software, it makes sense to me.
 
-In order to have an idea of the difference I downloaded the latest ISO build "3620759" from the VMware website to have the stock ISO and from the Dell website to have their customized one and compared it with PowerShell.
+In order to have an idea of the difference I downloaded the latest ISO build "3620759" from the VMware website to have the stock ISO and from the Dell website to have their customized one and compared it with PowerShell. Quick reminder of how the Compare-Object cmdlet works:
 
-<= are the objects only present in the reference (ESXiStock)
-=> are the objects only present in the difference (ESXIDell)
+- <= are the objects only present in the reference (ESXiStock)
+- => are the objects only present in the difference (ESXIDell)
 
 ![vibs-difference.jpg]({{site.baseurl}}/img/vibs-difference.jpg)
 
-The 2 main things we can note from this comparison are:
-- More recent vib versions in the Dell build.
-- More vibs in the Dell build, most likely drivers for hardware used in their servers.
+The 2 main things we can note about the Dell build compared to the stock one:
+- More recent packages versions.
+- Greater number of packages, most likely drivers for hardware used in their servers.
 
 I was actually surprised to see that the Dell build embedded more recent drivers but I guess VMware relies on the manufacturers to provide their ISOs with versions certified for their Support, which would make perfect sense.
 
