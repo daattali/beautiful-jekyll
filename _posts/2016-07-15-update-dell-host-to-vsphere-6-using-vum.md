@@ -145,7 +145,7 @@ Don't forget these two steps for your virtual machines, I advise you to **do the
 The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade however needs to be triggered manually and an upgraded VM cannot be migrated to a host with an earlier version of ESXI (see the compatiblity table below)!
 
 | ESX/ESXi | vHardware |
-------------------------
+| -------- | ----------|
 | 6.x      | 11        |
 | 5.5      | 10        |
 | 5.1      | 10        |
