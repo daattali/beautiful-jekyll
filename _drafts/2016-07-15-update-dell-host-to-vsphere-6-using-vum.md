@@ -28,7 +28,7 @@ I was actually surprised to see that the Dell build embedded more recent drivers
 
 ## Download the right iso image
 
-First of all we need to download the latest version of the Dell customized vSphere 6.0 image. I find the Dell support website a little bit confusing. I couldn't find my way through to the vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=2RNCX](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=2RNCX)
+First of all we need to download the latest version of the Dell customized vSphere 6.0 image. I find the Dell support website a little bit confusing. I couldn't find my way through to the vSphere downloads but google got me there: [www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76](www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=HPK76)
 
 As of today the latest Dell ISO is the 6.0U2, A02.
 
