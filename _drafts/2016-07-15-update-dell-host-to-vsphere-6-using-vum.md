@@ -89,7 +89,8 @@ Scan your cluster for updates by right right-clicking on it > Update Manager > S
 ![Non-Compliant-vum.jpg]({{site.baseurl}}/img/Non-Compliant-vum.jpg)
 
 Then put the host you want to upgrade in maintenance mode.  
-Note that you might need to disable admission control if for example you have a 2 nodes cluster with a tolerance of one host loss.
+
+_Note that you might need to disable admission control if for example you have a 2 nodes cluster with a tolerance of one host loss._
 
 Once it is done right click on it > Update Manager > Remediate
 
