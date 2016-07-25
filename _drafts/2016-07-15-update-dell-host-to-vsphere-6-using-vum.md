@@ -58,6 +58,8 @@ That done, find the iso image in the "available formats" section and click "down
 
 ## Create the host upgrade baseline
 
+_This article assumes that you already have a vSphere Update Manager server installed, configured and working._
+
 Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".
 
 Click "Import ESXi Image..." > Browse to the location where you stored the ISO you just downloaded and click "Import".
@@ -78,15 +80,13 @@ Enter a name and description that your colleagues can easily understand and clic
 
 Choose the ESXi image that you just uploaded and complete the wizard.
 
-Now the baseline is created we need to attach it to hosts, clusters or datacenters objects.
+Now the baseline is created we can attach it to host, cluster or datacenter objects.
 
 ## Attach the baseline and remediate the host
 
 Now attach the baseline to the cluster by right clicking on it, in the contextual menu go to "Update manager" > "Attache baseline" > Check the baseline you just created and click OK.
 
-All the hosts in your cluster now have the baseline attached and can be scanned and remediated.
-
-_Note that you can attach the baseline on a per host basis if you don't want it on all the hosts in this cluster._
+All the hosts in your cluster now have the baseline attached and can be scanned and remediated (you can attach it on a per host basis).
 
 Scan your cluster for updates by right right-clicking on it > Update Manager > Scan for Updates and wait for the scan to finish. You'll see that your cluster is non compliant to your attached baselines.
 
@@ -118,11 +118,11 @@ For the remediation options I leave the default options as well but it will depe
 
 I am usually very cautious when it comes to upgrades, even after having them tested in pre-prod before because you never know what can happen. That is why I don't allow the remediation of multiple hosts in parallel (Or at least not the first one).
 
-I don't check the box to disable HA as I know I have enough resources in my cluster to place a host in maintenance mode without violating my admission control's policy. but if you already put the host in maintenance mode prior to do the remediation it is very likely that you don't need to check it.
+I don't check the box to disable HA as I know I have enough resources in my cluster to place a host in maintenance mode without violating my admission control's policy. but again if you already put the host in maintenance mode prior to do the remediation it is very likely that you don't need to check it.
 
 ![Remediate4.jpg]({{site.baseurl}}/img/Remediate4.jpg)
 
-Click Next, review the settings and double check it's the right host and the right build ;).  
+Click Next, review the settings, double check it's the right host and the right build ;).  
 Click Finish.
 
 vCenter will then proceed to upgrade the host which will trigger a restart. The operation takes a little while so this step is all about patience.
@@ -131,16 +131,16 @@ When the operation finishes you can check the ESXi version and take your host ou
 
 ![version6.0.jpg]({{site.baseurl}}/img/version6.0.jpg)
 
-This was for the upgrade of the system. After doing it **run a scan and remediation of the host for the critical and non-critical patches baselines** to apply the ones that were added by VMware later than the release date of the latest ISO build.
+This was for the upgrade of the system. After doing it **run a scan and remediation of the host for the critical and non-critical patches baselines** to apply the ones that were published by VMware after  the release date of the ISO build you've downloaded.
 
 ## VMware tools and virtual hardware
 
-Don't forget these two steps for your virtual machines, I advise you to **do the virtual hardware upgrade once all the hosts are upgraded**. You need to do them in the following order! The vmware tools contain the drivers for the new virtual hardware.
+Don't forget these two steps for your virtual machines, I advise you to **do the virtual hardware upgrade once all the hosts are upgraded**. You need to do them in the following order, the vmware tools contain the drivers for the new virtual hardware!
 
 - Upgrade VMware tools version.
 - Upgrade virtual hardware version.
 
-The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade needs to be triggered manually and an upgraded VM cannot be migrated to a host with an earlier version of ESXI (see table below)!
+The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade however needs to be triggered manually and an upgraded VM cannot be migrated to a host with an earlier version of ESXI (see the compatiblity table below)!
 
 | ESX/ESXi | vHardware |
 ------------------------
