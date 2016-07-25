@@ -44,12 +44,13 @@ That done, find the iso image in the "available formats" section and click "down
 
 ## Create the host upgrade baseline
 
-Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".  
-Once the import is finished validate by clicking OK.
+Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".
+
+Click "Import ESXi Image..." > Browse to the location where you stored the ISO you just downloaded and click "Import".
 
 ![update6-1.jpg]({{site.baseurl}}/img/update6-1.jpg)
 
-Click "Import Esxi Image...", browse to the ISO image you just downloaded and click "Import".
+Once the import is finished validate by clicking OK.
 
 ![update6-2.jpg]({{site.baseurl}}/img/update6-2.jpg)
 
