@@ -139,9 +139,11 @@ When the operation finishes you can check the ESXi version and take your host ou
 
 This was for the upgrade of the system. After doing it **run a scan and remediation of the host for the critical and non-critical patches baselines** to apply the ones that were added by VMware later than the release date of the latest ISO build.
 
-Don't forget these two steps for your virtual machines, I advise you to do the virtual hardware upgrade once all the hosts are upgraded. You need to do them in the following order! The vmware tools contain the drivers for the new virtual hardware.
+Don't forget these two steps for your virtual machines, I advise you to **do the virtual hardware upgrade once all the hosts are upgraded**. You need to do them in the following order! The vmware tools contain the drivers for the new virtual hardware.
 
 - Upgrade VMware tools version.
 - Upgrade virtual hardware version.
+
+The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade needs to be triggered manually.
 
 And that's it, now you can update the other hosts and have a cluster nice and patched.
