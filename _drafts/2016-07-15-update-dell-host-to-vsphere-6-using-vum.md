@@ -42,7 +42,8 @@ That done, find the iso image in the "available formats" section and click "down
 
 ## Create the host upgrade baseline
 
-Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".
+Log in vCenter and go to the configuration of Update manager in "Manage" > "ESXi Images".  
+Once the import is finished validate by clicking OK.
 
 ![update6-1.jpg]({{site.baseurl}}/img/update6-1.jpg)
 
@@ -77,5 +78,4 @@ _Note that you can attach the baseline on a per host basis if you don't want it 
 | 4.x      | 7         |
 | 3.x      | 4         |
 | 2.x      | 3         |
-
 
