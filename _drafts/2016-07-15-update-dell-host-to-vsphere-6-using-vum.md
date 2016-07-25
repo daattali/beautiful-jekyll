@@ -3,7 +3,11 @@ layout: post
 published: false
 title: Update Dell host to vSphere 6 using VUM
 ---
-In this post I will go through the steps involved in the process of updating a Dell server running ESXi 5.5 to the latest version of vSphere. I mention Dell because I am going to use a customized Dell ISO to get the latest certified drivers and patches.
+One of the most important operations in running a virtual environment is to perform major upgrade of the system. The vSphere Update Manager simplify greatly the process and makes it look transparent when everything goes well. Even if 9 times out of 10 everything will be fine, it is always good to take extra care with these maintenance operations to avoid that scary tenth time. Just like everyone does with the test groups in WSUS, it is best practice to test every build in a dev/test cluster running the same kind of workloads as your production. This way you can give it a few months to discover potential issues relative to your environment and then patch your production. If you don't have the chance to have such infrastructure, it is still better to wait a little while before upgrading your prod to let other companies run into these problems (in their pre-prod) and get their feedbacks, resulting in editor's patches to fix them.
+
+## Dell specifics
+
+In this post I will go through the steps involved in the process of updating a Dell server running ESXi 5.5 to the latest version 6.0 update 2 of vSphere. I mention Dell because I am going to use a customized Dell ISO to get the latest certified drivers and patches.
 
 ![version5.5.jpg]({{site.baseurl}}/img/version5.5.jpg)
 
