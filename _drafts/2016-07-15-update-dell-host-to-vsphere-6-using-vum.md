@@ -54,15 +54,17 @@ Once the import is finished validate by clicking OK.
 
 ![update6-2.jpg]({{site.baseurl}}/img/update6-2.jpg)
 
-Go to the "Host baseline" tab and create a baseline by click the green plus.
+Go to the "Host baseline" tab and create a baseline by clicking the green plus.
 
-Check "Host Upgrade" to make it a major upgrade and not a patching.
+Check "Host Upgrade" to make it a major upgrade and not a patching one.
 
 Enter a name and description that your colleagues can easily understand and click next.
 
 ![create-baseline.jpg]({{site.baseurl}}/img/create-baseline.jpg)
 
 Choose the ESXi image that you just uploaded and complete the wizard.
+
+Now the baseline is created we need to attach it to hosts, clusters or datacenters objects.
 
 ## Attach the baseline and remediate the host
 
