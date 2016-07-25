@@ -136,7 +136,7 @@ Don't forget these two steps for your virtual machines, I advise you to **do the
 - Upgrade VMware tools version.
 - Upgrade virtual hardware version.
 
-The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade needs to be triggered manually and an upgraded VM cannot be migrated to a host with an earlier version of ESXI (see table below).
+The VMs will automatically upgrade the VMtools after a reboot (according to the default baseline if you've kept it enabled) which is fine as it is retro compatible with earlier versions of ESXi. The virtual hardware upgrade needs to be triggered manually and an upgraded VM cannot be migrated to a host with an earlier version of ESXI (see table below)!
 
 | ESX/ESXi | vHardware |
 ------------------------
@@ -148,4 +148,4 @@ The VMs will automatically upgrade the VMtools after a reboot (according to the 
 | 3.x      | 4         |
 | 2.x      | 3         |
 
-And that's it, now you can update the other hosts and have a cluster nice and patched.
+And that's it, now you can update the other hosts/VMs and have a cluster nice and patched.
