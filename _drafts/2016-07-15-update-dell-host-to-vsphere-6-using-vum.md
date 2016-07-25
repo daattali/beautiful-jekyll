@@ -115,4 +115,4 @@ I don't check the box to disable HA as I know I have enoug resources in my clust
 Click Next, review the settings and double check it's the right host and the right build ;).  
 And click Finish.
 
-vCenter will then proceed to upgrade the host which will trigger at least a restart.
+vCenter will then proceed to upgrade the host which will trigger at least a restart. The operation takes a little while so this step is all about patience.
