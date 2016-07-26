@@ -53,7 +53,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="website" />
   {% if page.id %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
