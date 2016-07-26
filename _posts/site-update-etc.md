@@ -1,6 +1,7 @@
 ---
-title: "You are here."
-subtitle: "which is where?"
+layout: post
+title: You are here.
+subtitle: which is where?
 ---
 
 So I've been updateing this site recently.
