@@ -331,6 +331,34 @@ footer .theme-by {
   }
 }
 
+/* --- Tags --- */
+
+.blog-tags {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #999;
+  font-size: 15px;
+  padding-top: 5px;
+  /* margin-bottom: 5px; */
+}
+
+.blog-tags a {
+  /* color: #999; */
+  color: #008AFF;
+  text-decoration: none;
+  padding: 0px 5px;
+}
+
+.blog-tags a:hover {
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  color: #008AFF;
+  background-color: #CCC;
+}
+
 /* --- Post and page headers --- */
 
 .intro-header {

@@ -8,6 +8,14 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
+        {% if page.tags.size > 0 %}
+        <div class="blog-tags">
+          Tags: 
+          {% for tag in page.tags %}
+          <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}  	  
 	      {{ content }}
 	    </article>
 	  	  
