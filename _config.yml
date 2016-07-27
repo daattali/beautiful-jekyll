@@ -98,7 +98,7 @@ defaults:
       show-avatar: true
 
 # Tags (not recommended if you are deploying via GitHub pages, see README.md)
-show-tags: false
+link-tags: true
 
 # Exclude these files from production site
 exclude:

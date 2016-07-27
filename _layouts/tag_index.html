@@ -31,13 +31,9 @@ show-avatar: false
 
     <div class="blog-tags">
       Tags: 
-      {% if site.show-tags %}
       {% for tag in post.tags %}
         <a href="/tag/{{ tag }}">{{ tag }}</a>
       {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
     </div>
   </article>
   {% endif %}

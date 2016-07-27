@@ -11,12 +11,16 @@ layout: base
         {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags: 
+          {% if site.link-tags %}
           {% for tag in page.tags %}
-          <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
+            <a href="/tag/{{ tag }}">{{ tag }}</a>
           {% endfor %}
+          {% else %}
+            {{ page.tags | join: ", " }}
+          {% endif %}
         </div>
-        {% endif %}  	  
-	      {{ content }}
+        {% endif %}
+        {{ content }}
 	    </article>
 	  	  
       <ul class="pager blog-pager">
