@@ -8,7 +8,19 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-	      {{ content }}
+        {% if page.tags.size > 0 %}
+        <div class="blog-tags">
+          Tags: 
+          {% if site.link-tags %}
+          {% for tag in page.tags %}
+            <a href="/tag/{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+          {% else %}
+            {{ page.tags | join: ", " }}
+          {% endif %}
+        </div>
+        {% endif %}
+        {{ content }}
 	    </article>
 	  	  
       <ul class="pager blog-pager">
