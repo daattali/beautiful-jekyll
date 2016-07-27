@@ -8,7 +8,9 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        {% if page.tags.size > 0 %}
+        {{ content }}
+      </article>
+      {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags: 
           {% if site.link-tags %}
@@ -19,10 +21,7 @@ layout: base
             {{ page.tags | join: ", " }}
           {% endif %}
         </div>
-        {% endif %}
-        {{ content }}
-	    </article>
-	  	  
+      {% endif %}
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
