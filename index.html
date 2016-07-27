@@ -26,14 +26,15 @@ subtitle: This is where I will tell my friends way too much about me
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
 
-    {% if post.tags.size > 0 %}
+    {% if site.show-tags %}
     <div class="blog-tags">
       Tags: 
       {% for tag in post.tags %}
-      <a href="/tag/{{ tag }}">{{ tag }}</a>
+        <a href="/tag/{{ tag }}">{{ tag }}</a>
       {% endfor %}
     </div>
     {% endif %}
+
    </article>
   {% endfor %}
 </div>
