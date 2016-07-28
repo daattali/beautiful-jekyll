@@ -148,8 +148,6 @@ To set up a GitHub Project page, simply fork this repository into a branch calle
 
 I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
 
-Additionally, if you choose to deploy Jekyll on your own server (such as a DigitalOcean server), you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
-
 ### Featured users (success stories!)
 
 To my huge surprise, Beautiful Jekyll has been used in over 500 websites in its first 6 months alone! Here is a hand-picked selection of some websites that use Beautiful Jekyll.
@@ -188,7 +186,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ### Very advanced: Local development
 
-Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Folow these simple steps to do that with Vagrant:
+Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Vagrant:
 
 1. Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com)
 2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
@@ -197,6 +195,8 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
 5. Commit any changes and push everything to the master branch of your GitHub repository. GitHub Pages will then rebuild and serve your website automatically.
 
 Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
+
+Additionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
 
 ### Credits
 
