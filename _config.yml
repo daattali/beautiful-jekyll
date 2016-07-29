@@ -26,7 +26,7 @@ navbar-links:
   About: "about"
   Program:
     - At a glance: "img/program_at_a_glance_with_breaks_revised.pdf"
-    - course descriptions: "/course-descriptions/short-descriptions.md"
+    - course descriptions: "http://UBC-MDS.github.io/course-descriptions/short-descriptions.md"
     - course Details: "descriptions"
   Official website: "http://masterdatascience.science.ubc.ca/"
 
