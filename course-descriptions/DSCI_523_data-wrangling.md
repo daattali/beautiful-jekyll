@@ -1,4 +1,7 @@
-# DSCI 523: Data Wrangling
+---
+title: DSCI 523
+subtitle: Data Wrangling
+---
 
 ## Short Description
 Converting data from the form in which it is collected to the form needed for analysis. How to clean, filter, arrange, aggregate, and transform diverse data types, e.g. strings, numbers, and date-times.

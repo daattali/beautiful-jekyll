@@ -1,4 +1,7 @@
-# DSCI 575: Advanced Machine Learning
+---
+title: DSCI 575
+subtitle: Advanced Machine Learning
+---
 
 ## Short Description
 Introduction to probabilistic graphical models and their applications; systems to generate personalized recommendations; A/B testing and website optimization; text analysis; rapid prototyping of machine learning models.

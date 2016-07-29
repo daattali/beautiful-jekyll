@@ -1,4 +1,7 @@
-# DSCI 522: Data Science Workflows
+---
+title: DSCI 522
+subtitle: Data Science Workflows
+---
 
 ## Short Description
 Interactive vs. scripted/unattended analyses and how to move fluidly between them. Reproducibility through automation and dynamic, literate documents. The use of version control and file organization to enhance machine- and human-readability.

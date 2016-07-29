@@ -1,4 +1,7 @@
-# DSCI-521: Computing Platforms for Data Science
+---
+title: DSCI-521
+subtitle: Computing Platforms for Data Science
+---
 
 ## Short Description
 How to install, maintain, and use the data scientific software "stack". The Unix operating system, integrated development environments, and problem solving strategies.

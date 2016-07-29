@@ -1,4 +1,7 @@
-# DSCI 531: Data Visualization I
+---
+title: DSCI 531
+subtitle: Data Visualization I
+---
 
 ## Short Description
 The design and implementation of static figures across all phases of data analysis, from ingest and cleaning to description and inference. How to make principled and effective choices with respect to marks, spatial arrangement, and colour.

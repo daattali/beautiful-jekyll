@@ -1,4 +1,7 @@
-# DSCI 553: Statistical Inference and Computation II
+---
+title: DSCI 553
+subtitle: Statistical Inference and Computation II
+---
 
 ## Short Description
 Methods for dealing with the multiple testing problem. Bayesian reasoning for data science. How to formulate and implement inference using the prior-to-posterior paradigm.

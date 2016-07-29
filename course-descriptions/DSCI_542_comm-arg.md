@@ -1,4 +1,7 @@
-# DSCI 542: Communication and Argumentation
+---
+title: DSCI 542
+subtitle: Communication and Argumentation
+---
 
 ## Short Description
 Effective oral and written communication, across diverse target audiences, to facilitate understanding and decision-making. How to present and interpret data, with productive skepticism and an awareness of assumptions and bias.

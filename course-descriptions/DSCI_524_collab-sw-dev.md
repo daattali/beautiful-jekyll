@@ -1,4 +1,7 @@
-# DSCI 524: Collaborative Software Development
+---
+title: DSCI 524
+subtitle: Collaborative Software Development
+---
 
 ## Short Description
 How to exploit practices from collaborative software development techniques in data scientific workflows. Appropriate use of abstraction and classes, the software life cycle, unit testing / continuous integration, and packaging for use by others.

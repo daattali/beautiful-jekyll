@@ -1,4 +1,7 @@
-# DSCI 554: Experimentation and Causal Inference
+---
+title: DSCI 554
+subtitle: Experimentation and Causal Inference
+---
 
 ## Short Description
 Statistical evidence from randomized experiments versus observational studies. Applications of randomization, e.g., A/B testing for website optimization.

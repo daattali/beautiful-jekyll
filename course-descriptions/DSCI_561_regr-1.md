@@ -1,4 +1,7 @@
-# DSCI 561: Regression I
+---
+title: DSCI 561
+subtitle: Regression I
+---
 
 ## Short Description
 Linear models for a quantitative response variable, with multiple categorical and/or quantitative predictors. Matrix formulation of linear regression. Model assessment and prediction.

@@ -1,4 +1,7 @@
-# DSCI 552: Statistical Inference and Computation I
+---
+title: DSCI 552
+subtitle: Statistical Inference and Computation I
+---
 
 ## Short Description
 The statistical and probabilistic foundations of inference, developed jointly through mathematical derivations and simulation techniques. Important distributions and large sample results. The frequentist paradigm.

@@ -1,4 +1,7 @@
-# DSCI 574: Spatial and Temporal Models
+---
+title: DSCI 574
+subtitle: Spatial and Temporal Models
+---
 
 ## Short Description
 Model fitting and prediction in the presence of correlation due to temporal and/or spatial association. ARIMA models and Gaussian processes.

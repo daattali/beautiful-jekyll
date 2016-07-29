@@ -1,4 +1,7 @@
-# DSCI 573: Feature and Model Selection
+---
+title: DSCI 573
+subtitle: Feature and Model Selection
+---
 
 ## Short Description
 How to evaluate and select features and models. Cross-validation, ROC curves, feature engineering, the role of regularization. Automating these tasks with hyperparameter optimization.

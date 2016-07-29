@@ -1,4 +1,7 @@
-# DSCI 562: Regression II
+---
+title: DSCI 562
+subtitle: Regression II
+---
 
 ## Short Description
 Useful extensions to basic regression, e.g., generalized linear models, mixed effects, smoothing, robust regression, and techniques for dealing with missing data.

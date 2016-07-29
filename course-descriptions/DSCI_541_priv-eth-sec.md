@@ -1,4 +1,7 @@
-# DSCI 541: Privacy, Ethics, and Security
+---
+title: DSCI 541
+subtitle: Privacy, Ethics, and Security
+---
 
 ## Short Description
 The legal, ethical, and security issues concerning data, including aggregated data. Proactive compliance with rules and, in their absence, principles for the responsible management of sensitive data. Case studies.

@@ -1,4 +1,7 @@
-# DSCI 571: Supervised Learning I
+---
+title: DSCI 571
+subtitle: Supervised Learning I
+---
 
 ## Short Description
 Introduction to supervised machine learning, with a focus on classification. Decision trees, logistic regression, and basic machine learning concepts such as generalization error and overfitting.

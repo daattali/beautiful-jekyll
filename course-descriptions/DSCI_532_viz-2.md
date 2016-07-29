@@ -1,4 +1,7 @@
-# DSCI 532: Data Visualization II
+---
+title: DSCI 532
+subtitle: Data Visualization II
+---
 
 ## Short Description
 Analysis, design, and implementation of interactive figures. How to provide multiple views, deal with complexity, and make difficult decisions about data reduction.

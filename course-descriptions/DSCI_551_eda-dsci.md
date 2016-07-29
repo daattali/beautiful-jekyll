@@ -1,4 +1,7 @@
-# DSCI 551: Exploratory Data Analysis for Data Science
+---
+title: DSCI 551
+subtitle: Exploratory Data Analysis for Data Science
+---
 
 ## Short Description
 Describing data in terms of its location, spread, and general distribution. How to balance the use of procedures from classical, parametric statistics with robust approaches that account for outliers and missing data.

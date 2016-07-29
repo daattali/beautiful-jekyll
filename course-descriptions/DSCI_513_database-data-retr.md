@@ -1,4 +1,7 @@
-# DSCI 513: Databases and Data Retrieval
+---
+title: DSCI 513
+subtitle: Databases and Data Retrieval
+---
 
 ## Short Description
 How to work with data stored in relational database systems or in formats utilizing markup languages. Storage structures and schemas, data relationships, and ways to query and aggregate such data.

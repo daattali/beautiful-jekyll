@@ -1,4 +1,7 @@
-# DSCI 563: Unsupervised Learning
+---
+title: DSCI 563
+subtitle: Unsupervised Learning
+---
 
 ## Short Description
 How to find groups and other structure in unlabeled, possibly high dimensional data. Dimension reduction for visualization and data analysis. Clustering, association rules, model fitting via the EM algorithm.

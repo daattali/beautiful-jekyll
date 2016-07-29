@@ -1,4 +1,7 @@
-# DSCI 572: Supervised Learning II
+---
+title: DSCI 572
+subtitle: Supervised Learning II
+---
 
 ## Short Description
 How to combine models via ensembling: boosting, bagging, random forests. Neural networks and deep learning: state-of-the-art implementation considerations in both software and hardware.

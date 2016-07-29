@@ -1,4 +1,7 @@
-# DSCI 591: Capstone Project
+---
+title: DSCI 591
+subtitle: Capstone Project
+---
 
 ## Short Description
 A mentored group project based on real data and questions from a partner within or outside the university. Students will formulate questions and design and execute a suitable analysis plan. The group will work collaboratively to produce a project report, presentation, and possibly other products, such as a web application.

@@ -1,4 +1,7 @@
-# DSCI 525: Web and Cloud Computing
+---
+title: DSCI 525
+subtitle: Web and Cloud Computing
+---
 
 ## Short Description
 How to use the web as a platform for data collection, computation, and publishing. Accessing data via scraping and APIs. Using the cloud for tasks that are beyond the capability of your local computing resources.

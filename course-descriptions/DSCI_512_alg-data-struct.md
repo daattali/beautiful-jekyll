@@ -1,4 +1,7 @@
-# DSCI 512: Algorithms and Data Structures
+---
+title: DSCI 512
+subtitle: Algorithms and Data Structures
+---
 
 ## Short Description
 How to choose and use appropriate algorithms and data structures to help solve data science problems. Key concepts such as recursion and algorithmic complexity (e.g., efficiency, scalability).
