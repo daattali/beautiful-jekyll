@@ -586,8 +586,9 @@ table tr td :last-child {
 }
 
 /* --- Code blocks --- */
+
 pre {
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 1.5em;
 }
 pre code {
@@ -601,27 +602,20 @@ pre.highlight, .highlight > pre, td.code pre {
   background-position: 0px 10px;
   border-left: 7px solid #444;
 }
+code table, code table td, code table th, code table tbody, code table tr,
+td.gutter pre {
+  padding: 0;
+  border: none;
+}
 .highlight > pre {
   padding: 0;
-  margin: 0;
 }
 td.code pre {
-  border: none;
-  border-left: 2px solid #444;
+  border-width: 0 0 0 2px;
+  border-style: solid;
+  border-color: #444;
   border-radius: 0;
-  background: transparent!;
-}
-td.gutter pre {
-  border: none;
 }
 td.gutter {
   padding-top: 3px;
-}
-code table {
-  border-collapse: collapse;
-  border: none;
-}
-code table td, code table th, code table tbody, code table tr {
-  padding: 0;
-  border: none;
 }
