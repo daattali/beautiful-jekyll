@@ -584,3 +584,16 @@ table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
 }
+
+/* --- Code blocks --- */
+
+pre {
+  font-size: 16px;
+  line-height: 1.5em;
+  background: #FAFAFA;
+  background-image: linear-gradient(#FAFAFA 50%, #FDFDFD 50%);
+  background-position: 0px 10px;
+  background-repeat: repeat;
+  background-size: 3em 3em;
+  border-left: 7px solid #444;
+}
