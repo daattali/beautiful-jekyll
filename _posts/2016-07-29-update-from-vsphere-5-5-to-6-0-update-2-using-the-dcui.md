@@ -1,7 +1,8 @@
 ---
 layout: post
-published: false
+published: true
 title: Update from vSphere 5.5 to 6.0 Update 2 using the DCUI
+meta description: Update from vSphere 5.5 to 6.0 Update 2 using the DCUI
 ---
 After upgrading one of the hosts [in my lab with VUM](http://www.vxav.fr/2016-07-25-update-dell-host-to-vsphere-6-using-vum/) I had to update the second one in order to install the FVP extension from Pernix Data. My VMs (VUM, vCenter, DNS) were then on this host's local storage and I couldn't be bothered migrating them to the other one as it would have taken forever in this lab (currently running the whole lab on one hdd arghhhh).
 
