@@ -9,7 +9,7 @@ Click on the links below to see more information about each course.
 
 Course Number  |  Block  |  Course Title                                |  Link to Course Details                                          
 ---------------|---------|----------------------------------------------|------------------------------------------------------------------
-DSCI 511       |  1      |  Programming for Data Science                |  [DSCI_511_prog-dsci.md](/course-descriptions/DSCI_511_prog-dsci.md)                  
+DSCI 511       |  1      |  Programming for Data Science                |  [DSCI_511_prog-dsci.md](/course-descriptions/DSCI_511_prog-dsci)                  
 DSCI 521       |  1      |  Computing Platforms for Data Science        |  [DSCI_521_platforms-dsci.md](/course-descriptions/DSCI_521_platforms-dsci.md)        
 DSCI 522       |  2      |  Data Science Workflows                      |  [DSCI_522_dsci-workflows.md](/course-descriptions/DSCI_522_dsci-workflows.md)        
 DSCI 523       |  2      |  Data Wrangling                              |  [DSCI_523_data-wrangling.md](/course-descriptions/DSCI_523_data-wrangling.md)        
