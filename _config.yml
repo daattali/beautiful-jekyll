@@ -24,11 +24,11 @@ description: Warning, this site is under heavy construction!
 # List of links in the navigation bar
 navbar-links:
   About: "about"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Official website: "http://mds.science.ubc.ca"
+  Program:
+    - At a glance: "https://github.com/UBC-MDS/public/blob/master/program_at_a_glance_with_breaks_revised.pdf"
+    - course descriptions: "https://github.com/UBC-MDS/public/blob/master/module-desc-short.md"
+    - course Details: "https://github.com/UBC-MDS/public/tree/master/course-descriptions#mds-courses-snapshot"
+  Official website: "http://masterdatascience.science.ubc.ca/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -39,14 +39,10 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourname  # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
- 
+  name: UBC MDS
+  email: "info-mds@science.ubc.ca"
+  github: UBC-MDS
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
