@@ -1,6 +1,7 @@
 ---
 layout: page
-title: 2016-2017 Courses
+title: MDS Courses
+subtitle: Courses for the 2016-2017 offering
 ---
 
 
