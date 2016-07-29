@@ -337,7 +337,7 @@ footer .theme-by {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #999;
   font-size: 15px;
-  padding-top: 5px;
+  margin-bottom: 30px;
 }
 
 .blog-tags a {
@@ -347,14 +347,20 @@ footer .theme-by {
 }
 
 .blog-tags a:hover {
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -webkit-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 2px;
   color: #008AFF;
   background-color: #CCC;
+}
+
+.post-preview .blog-tags {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .post-preview .blog-tags {
+    margin-top: 10px;
+  }
 }
 
 /* --- Post and page headers --- */
@@ -577,4 +583,21 @@ table tr td :first-child {
 table tr th :last-child,
 table tr td :last-child {
   margin-bottom: 0;
+}
+
+/* --- Code blocks --- */
+
+pre {
+  font-size: 16px;
+  line-height: 1.5em;
+  background: #FAFAFA;
+  background-image: linear-gradient(#FAFAFA 50%, #FDFDFD 50%);
+  background-position: 0px 10px;
+  background-repeat: repeat;
+  background-size: 3em 3em;
+  border-left: 7px solid #444;
+}
+
+pre code {
+  white-space: pre;
 }
