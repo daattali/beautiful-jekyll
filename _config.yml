@@ -27,7 +27,7 @@ navbar-links:
   Program:
     - At a glance: "img/program_at_a_glance_with_breaks_revised.pdf"
     - course descriptions: "https://github.com/UBC-MDS/public/blob/master/module-desc-short.md"
-    - course Details: "https://github.com/UBC-MDS/public/tree/master/course-descriptions#mds-courses-snapshot"
+    - course Details: "descriptions"
   Official website: "http://masterdatascience.science.ubc.ca/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
