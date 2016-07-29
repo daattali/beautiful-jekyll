@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MDS Courses Snapshot
+title: 2016-2017 Courses
 ---
 
 
