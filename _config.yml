@@ -13,8 +13,8 @@ baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
-# Name of website
-title: UBC Master of Data Science
+# Name of website (this is what shows up  t the upper-left corner of the homepage)
+title: UBC MDS 
 
 # Short description of your site
 description: Warning, this site is under heavy construction!
