@@ -23,7 +23,7 @@ description: Warning, this site is under heavy construction!
 
 # List of links in the navigation bar
 navbar-links:
-  About: "aboutme"
+  About: "about"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
