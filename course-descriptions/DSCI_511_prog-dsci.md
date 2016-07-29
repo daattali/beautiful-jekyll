@@ -1,4 +1,7 @@
-# DSCI 511: Programming for Data Science
+---
+title: DSCI 511
+subtitle: Programming for Data Science
+---
 
 ## Short Description
 Overview of data structures, iteration, flow control, and program design relevant to data exploration and analysis. When and how to exploit pre-existing libraries.
