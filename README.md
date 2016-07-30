@@ -183,6 +183,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
 | [kootenpv.github.io](http://kootenpv.github.io/) | Pascal van Kooten | Data analytics |
 | [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
+| [epwalsh.fyi](https://epwalsh.fyi) | Evan Pete Walsh | PhD candidate (Statistics and Mathematics) at Iowa State University |
 
 ### Very advanced: Local development
 
