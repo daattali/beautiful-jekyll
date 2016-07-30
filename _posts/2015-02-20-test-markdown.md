@@ -22,16 +22,18 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Crepe](http://lafenicegelato.com/wp-content/uploads/2014/09/crepes-with-chocolate.jpg)
+![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
 Here's a code chunk:
 
 ~~~
-x <- 5 + 10
-print(x)
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
 ~~~
 
-And here is some code with syntax highlighting
+And here is the same code with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
@@ -40,11 +42,11 @@ var foo = function(x) {
 foo(3)
 ```
 
-And here is some more with line numbers
+And here is the same code yet again but with line numbers:
 
 {% highlight python linenos %}
-def bar(x):
-    return x * 2
-
-print bar(2)
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
 {% endhighlight %}
