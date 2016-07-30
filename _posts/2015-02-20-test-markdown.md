@@ -39,3 +39,12 @@ var foo = function(x) {
 }
 foo(3)
 ```
+
+And here is some more with line numbers
+
+{% highlight python linenos %}
+def bar(x):
+    return x * 2
+
+print bar(2)
+{% endhighlight %}

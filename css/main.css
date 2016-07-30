@@ -590,14 +590,32 @@ table tr td :last-child {
 pre {
   font-size: 16px;
   line-height: 1.5em;
-  background: #FAFAFA;
-  background-image: linear-gradient(#FAFAFA 50%, #FDFDFD 50%);
-  background-position: 0px 10px;
-  background-repeat: repeat;
-  background-size: 3em 3em;
-  border-left: 7px solid #444;
 }
-
 pre code {
   white-space: pre;
+}
+pre.highlight, .highlight > pre, td.code pre {
+  background: #FAFAFA;
+  background-image: linear-gradient(#F9F9F9 50%, #FDFDFD 50%);
+  background-repeat: repeat;
+  background-size: 3em 3em;
+  background-position: 0px 10px;
+  border-left: 7px solid #444;
+}
+code table, code table td, code table th, code table tbody, code table tr,
+td.gutter pre {
+  padding: 0;
+  border: none;
+}
+.highlight > pre {
+  padding: 0;
+}
+td.code pre {
+  border-width: 0 0 0 2px;
+  border-style: solid;
+  border-color: #444;
+  border-radius: 0;
+}
+td.gutter {
+  padding-top: 3px;
 }
