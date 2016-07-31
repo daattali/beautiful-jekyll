@@ -57,6 +57,7 @@ footer-links-active:
   github: true
   linkedin: false
   stackoverflow: false
+  instagram: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
