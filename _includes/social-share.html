@@ -1,0 +1,44 @@
+<section>
+
+  <!--- Share on Twitter -->
+  {% if site.share-links-active.twitter %}
+    <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="btn btn-social btn-sm btn-twitter" title="{{ site.data.ui-text[site.locale].share_on_label }} Twitter">
+      <i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span>
+    </a>
+  {% endif %}
+
+  <!--- Share on Facebook -->
+  {% if site.share-links-active.facebook %}
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="btn btn-social btn-sm btn-facebook" title="{{ site.data.ui-text[site.locale].share_on_label }} Facebook">
+      <i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+    </a>
+  {% endif %}
+
+  <!--- Share on Google Plus -->
+  {% if site.share-links-active.google %}
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="btn btn-social btn-sm btn-google" title="{{ site.data.ui-text[site.locale].share_on_label }} Google Plus">
+      <i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span>
+    </a>
+  {% endif %}
+
+  <!--- Share on LinkedIn -->
+  {% if site.share-links-active.linkedin %}
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" class="btn btn-social btn-sm btn-linkedin" title="{{ site.data.ui-text[site.locale].share_on_label }} LinkedIn">
+      <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+    </a>
+  {% endif %}
+
+  <!-- Check if any share-links are active -->
+  {% assign any-share-links = false %}
+  {% for links in site.share-links-active %}
+    {% if links[1] == true %}
+      {% assign any-share-links = true %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- Add an extra space under share links if present -->
+  {% if any-share-links %}
+    <br><br/>
+  {% endif %}
+
+</section>
