@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Update from vSphere 5.5 to 6.0 Update 2 using the DCUI
 meta description: Update from vSphere 5.5 to 6.0 Update 2 using the DCUI
 ---
