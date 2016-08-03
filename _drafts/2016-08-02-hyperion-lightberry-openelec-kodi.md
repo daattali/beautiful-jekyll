@@ -53,6 +53,8 @@ It costs about 90€ for 4 meters of LEDs and contains:
 - A bunch of hooks for the back of the TV (If you don't want to do a caveman work like mine)
 - A power supply
 
+## Some DIY
+
 # 2 - The software part
 
 Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
