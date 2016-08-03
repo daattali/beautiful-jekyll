@@ -18,7 +18,7 @@ The software that controls the LEDs independently by sending the right signals t
 - [Lightberry](http://lightberry.eu/)
 
 [USB Converter](https://lightberry.eu/shop/shop/converter-box/) 
-[Power charger](https://lightberry.eu/shop/shop/diy-lightberry-power-supply/)
+[Power Supply](https://lightberry.eu/shop/shop/diy-lightberry-power-supply/)
 
 Lightberry is the hardware bit that acts as an interface between Hyperion and the LED stripe. It converts the commands sent by hyperion into a gibbrish understandable by the lights. Lightberry offers multiple devices and packs that offer a different level of integration.  
 In this tutorial I am only using the USB converter. There is a version with a GPIO interface as well but I already have a case that closes the top of the raspberry. I bought the power supply with lightberry by convenience and to support them, but any power supply should do really.
@@ -26,6 +26,10 @@ In this tutorial I am only using the USB converter. There is a version with a GP
 This converter alone will only make the LEDs work with the Raspberry PI. If you have other devices that you would like to integrate such as a DVC player or a Xbox and such you will need the HDMI kit with and HDMI switch.
 
 - [OpenElec](http://openelec.tv/) installed on a Raspberry Pi
+
+My OpenElec runs Kodi on a Raspberry Pi 2 but at the time of this article you can get a Raspberry Pi 3 with better hardware for about £30. 
+
+Lightberry offer a custom image of OpenElec that you can download on their website. I kept my "stock" OpenElec as I have never restored the backup and don't want to try (too much borring config).
 
 I don't think it is needed to present OpenElec anymore, the famous media center based on linux running Kodi. This system is a bit different from the other Raspbian and co. as it comes with a read-only file system which prevents messing with the OS.
 
