@@ -9,7 +9,7 @@ I did this project to create a mood lighting behind the TV that "follows" the co
 
 ## What you need
 
-The system is made up of 4 main components. I link the hardware I bought for this project but you're free to look elsewhere to see if you find better deals or other brands (like for the power adapter).  I won't get into the details of raspberry or the TV as I assume you already have your media center running (I use Kodi).
+The system is made up of 4 main components. I link the hardware I bought for this project but you're free to look elsewhere to see if you find better deals or other brands (like for the power adapter).  I won't get into the details of raspberry or the TV as I assume you already have your media center running Kodi.
 
 See my beautiful diagram.
 
@@ -47,4 +47,31 @@ Don't make the same mistake I did at the beginning thinking "an LED strip is an 
 
 ## 1 - The hardware part
 
+## 2 - The software part
+
+Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
+
+- First download the Hyperion Configurator plugin for Kodi on the [website of lightberry](http://lightberry.eu/).
+
+Scroll all the way down to the downloads and grab the Config generator plugin. It's a tiny zip file of about 44KB.
+
+![Hyperion-config-addon.jpg]({{site.baseurl}}/img/Hyperion-config-addon.jpg)
+
+- Connect to your OpenElec via SSH using your favorite SSH client (Putty). Default Username/Password are root/openelec.
+
+- Download the Hyperion project script.
+
+```
+curl -L --output install_hyperion.sh --get https://raw.githubusercontent.com/tvdzwan/hyperion/master/bin/install_hyperion.sh
+```
+
+- Install Hyperion
+
+```
+sh ./install_hyperion.sh
+```
+
+Your SSH session should look like that:
+
+![ssh-hyperion.JPG]({{site.baseurl}}/img/ssh-hyperion.JPG)
 
