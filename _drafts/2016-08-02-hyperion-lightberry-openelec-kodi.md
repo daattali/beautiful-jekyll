@@ -30,7 +30,7 @@ This converter alone will only make the LEDs work with the Raspberry PI. If you 
 
 - **OpenElec installed on a Raspberry Pi**[Website](http://openelec.tv/) 
 
-My OpenElec runs Kodi on a Raspberry Pi 2, at the time of this article you can get a Raspberry Pi 3 with better hardware for about £30. 
+My OpenElec is on version 6.0.3 and runs Kodi 15 on a Raspberry Pi 2, at the time of this article you can get a Raspberry Pi 3 with better hardware for about £30. 
 
 Lightberry offers a custom image of OpenElec that you can download on their website. I kept my "stock" OpenElec as I have never restored the backup and don't want to try (too much borring config).
 
@@ -90,3 +90,5 @@ Scroll all the way down to the downloads and grab the Config generator plugin. I
 - Transfer the zip file somewhere OpenElec has access. I used WinSCP to copy the file in the rom.
 
 ![zip-winscp.JPG]({{site.baseurl}}/img/zip-winscp.JPG)
+
+- 
