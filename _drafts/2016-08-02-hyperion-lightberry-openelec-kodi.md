@@ -7,13 +7,13 @@ These last few weeks I got more and more interested in home automation and other
 
 I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devicew and is much cheaper (with a little bit of hardware and a bit more elbow grease).
 
+See my beautiful diagram to have an idea of the beast.
+
+![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
+
 ## What you need
 
 The system is made up of 4 main components. I link the hardware I bought for this project but you're free to look elsewhere to see if you find better deals or other brands (like for the power adapter).  I won't get into the details of raspberry or the TV as I assume you already have your media center running Kodi.
-
-See my beautiful diagram.
-
-![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
 
 Here are the bits that you'll need to put together:
 
