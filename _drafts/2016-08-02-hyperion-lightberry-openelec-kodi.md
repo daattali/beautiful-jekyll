@@ -79,7 +79,7 @@ curl -L --output install_hyperion.sh --get https://raw.githubusercontent.com/tvd
 sh ./install_hyperion.sh
 ```
 
-Your SSH session should look like that:
+Your SSH session should look like this.
 
 ![ssh-hyperion.JPG]({{site.baseurl}}/img/ssh-hyperion.JPG)
 
