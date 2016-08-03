@@ -11,7 +11,7 @@ See my beautiful diagram to have an idea of the beast.
 
 ![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
 
-## What is it made of
+# What is it made of
 
 The system is made up of 4 main components.  I won't get into the details of raspberry or the TV as I assume you already have your media center running Kodi.
 
@@ -38,9 +38,13 @@ I don't think it is needed to present OpenElec anymore, the famous media center 
 
 - **RGB LED strip individually addressable (WS2801)**
 
-Don't make the same mistake I did at the beginning thinking "an LED strip is an LED strip", no no. The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs differently at the same time. Each LED is equipped with a micro controller that controls it, and of course the software (Hyperion) needs to have the drivers for these controllers. So there are a bunch of compatible LEDs but I chose the WS2801 which seem to be the most common one.
+The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independantly (color, intensity). Each LED is equipped with a micro controller that tells it what to do, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one.
 
-## 1 - The hardware part
+# 1 - The hardware part
+
+## What you need
+
+_Lightberry: about 90€_
 
 I advise you get the "lightberry HD" pack. It is maybe a tiny bit more expensive than buying the bits independantly but you get everything from them and you support their work.
 
@@ -51,7 +55,7 @@ It costs about 90€ for 4 meters of LEDs and contains:
 - A bunch of hooks for the back of the TV (If you don't want to do a caveman work like mine)
 - A power supply
 
-## 2 - The software part
+# 2 - The software part
 
 Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
 
