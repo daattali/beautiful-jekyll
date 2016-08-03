@@ -9,7 +9,9 @@ I did this project to create a mood lighting behind the TV that "follows" the co
 
 ## What you need
 
-The system is made up of 4 main components. I link the hardware I bought for this project but you're free to look elsewhere to see if you find better deals or other brands (like the power adapter).
+The system is made up of 4 main components. I link the hardware I bought for this project but you're free to look elsewhere to see if you find better deals or other brands (like for the power adapter).  I won't get into the details of raspberry or the TV as I assume you already have your media center running (I use Kodi).
+
+Here are the bits that you'll need to put together:
 
 - [Hyperion](https://hyperion-project.org/wiki/Main)
 
@@ -34,5 +36,7 @@ Lightberry offer a custom image of OpenElec that you can download on their websi
 I don't think it is needed to present OpenElec anymore, the famous media center based on linux running Kodi. This system is a bit different from the other Raspbian and co. as it comes with a read-only file system which prevents messing with the OS.
 
 - RGB LED strip individually addressable (WS2801)
+
+Look for WS2801 on amazon and you'll find plenty from different vendor at around £30. I personnally got [this one](https://www.amazon.co.uk/gp/product/B01CFUI2NO/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1).
 
 Don't make the same mistake I did at the beginning thinking "an LED strip is an LED strip", no no. The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs differently at the same time. Each LED is equipped with a micro controller that controls it, and of course the software (Hyperion) needs to have the drivers for these controllers. So there are a bunch of compatible LEDs but I chose the WS2801 which seem to be the most common one.
