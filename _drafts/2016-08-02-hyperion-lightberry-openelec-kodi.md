@@ -91,4 +91,18 @@ Scroll all the way down to the downloads and grab the Config generator plugin. I
 
 ![zip-winscp.JPG]({{site.baseurl}}/img/zip-winscp.JPG)
 
-- 
+- Go back to Kodi > Add on > Install from zip file
+
+![Install-from-zip.jpg]({{site.baseurl}}/img/Install-from-zip.jpg)
+
+- browse to the location of the zip file
+
+![Zip-home-folder.jpg]({{site.baseurl}}/img/Zip-home-folder.jpg)
+
+![hyperion-zip-plugin.jpg]({{site.baseurl}}/img/hyperion-zip-plugin.jpg)
+
+![select-hyperion-plugin.jpg]({{site.baseurl}}/img/select-hyperion-plugin.jpg)
+
+- Select the zip file containing the Hyperion plugin and check that it installs correctly
+
+![hyperion-plugin-installed.jpg]({{site.baseurl}}/img/hyperion-plugin-installed.jpg)
