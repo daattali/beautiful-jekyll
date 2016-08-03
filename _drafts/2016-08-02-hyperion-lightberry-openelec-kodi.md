@@ -19,7 +19,7 @@ Here are the bits that you'll need to put together:
 
 - **Hyperion** : [Website](https://hyperion-project.org/wiki/Main)
 
-The software that controls the LEDs independently by sending the right signals to the hardware interface of the lights. Hyperion is an open source project under MIT license that can not only be used for the TV but to control lights in general. There are other similar softwares such as Boblight.
+yperion is an open source _Ambilight implementation_ under MIT license. It is the software that controls the LEDs independently by sending the right signals to the hardware interface of the lights. There are other similar softwares such as Boblight but I chose Hyperion for some reason.
 
 - **Lightberry** : [Website](http://lightberry.eu/)
 
