@@ -59,13 +59,9 @@ It costs about 90€ for 4 meters of LEDs and contains:
 
 Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
 
-- First download the Hyperion Configurator plugin for Kodi on the [website of lightberry](http://lightberry.eu/).
+## Install Hyperion
 
-Scroll all the way down to the downloads and grab the Config generator plugin. It's a tiny zip file of about 44KB.
-
-![Hyperion-config-addon.jpg]({{site.baseurl}}/img/Hyperion-config-addon.jpg)
-
-- Connect to your OpenElec via SSH using your favorite SSH client (Putty). Default Username/Password are root/openelec.
+- First Connect to your OpenElec via SSH using your favorite SSH client (Putty). Default Username/Password are root/openelec.
 
 - Download the Hyperion project script.
 
@@ -79,8 +75,18 @@ curl -L --output install_hyperion.sh --get https://raw.githubusercontent.com/tvd
 sh ./install_hyperion.sh
 ```
 
-Your SSH session should look like this. You 
+Your SSH session should look like this.
 
 ![ssh-hyperion.JPG]({{site.baseurl}}/img/ssh-hyperion.JPG)
 
-- 
+## Configure Hyperion
+
+- First download the Hyperion Configurator plugin for Kodi on the [website of lightberry](http://lightberry.eu/).
+
+Scroll all the way down to the downloads and grab the Config generator plugin. It's a tiny zip file of about 44KB.
+
+![Hyperion-config-addon.jpg]({{site.baseurl}}/img/Hyperion-config-addon.jpg)
+
+- Transfer the zip file somewhere OpenElec has access. I used WinSCP to copy the file in the rom.
+
+![zip-winscp.JPG]({{site.baseurl}}/img/zip-winscp.JPG)
