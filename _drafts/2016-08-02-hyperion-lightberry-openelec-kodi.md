@@ -73,13 +73,14 @@ Scroll all the way down to the downloads and grab the Config generator plugin. I
 curl -L --output install_hyperion.sh --get https://raw.githubusercontent.com/tvdzwan/hyperion/master/bin/install_hyperion.sh
 ```
 
-- Install Hyperion
+- Install Hyperion, the raspberry pi will reboot.
 
 ```
 sh ./install_hyperion.sh
 ```
 
-Your SSH session should look like this.
+Your SSH session should look like this. You 
 
 ![ssh-hyperion.JPG]({{site.baseurl}}/img/ssh-hyperion.JPG)
 
+- 
