@@ -36,22 +36,23 @@ Lightberry offers a custom image of OpenElec that you can download on their webs
 
 - **RGB LED strip individually addressable (WS2801)**
 
-The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independantly (color, intensity). Each LED is equipped with a micro controller that tells it what to do, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one.
+The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independently (color, intensity). Each LED is equipped with a micro controller that tells it what to do, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one.
 
 # 1 - The hardware part
 
 ## What you need
 
-_Lightberry: about 90€_
+_Lightberry kit: about 90€_
 
-I advise you get the "lightberry HD" pack. It is maybe a tiny bit more expensive than buying the bits independantly but you get everything from them and you support their work.
-
-It costs about 90€ for 4 meters of LEDs and contains:
+You can get the whole lot directly from lightberry. It costs about 90€ for 4 meters of LEDs and contains everything you need.
 
 - LED strips
 - USB converter
-- A bunch of hooks for the back of the TV (If you don't want to do a caveman work like mine)
+- A longer cable to connect the lightberry to the LEDs
+- A bunch of hooks for the back of the TV (If you don't want to do a caveman setup like mine)
 - A power supply
+
+Or you can get only the USB converter from lightberry and buy the other bits independently
 
 ## Some DIY
 
