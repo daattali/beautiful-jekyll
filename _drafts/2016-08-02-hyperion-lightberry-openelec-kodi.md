@@ -52,7 +52,7 @@ You can get the whole lot directly from lightberry. It costs about 90€ for 4 m
 - A bunch of hooks for the back of the TV (If you don't want to do a caveman setup like mine)
 - A power supply
 
-Or you can get only the USB converter from lightberry and buy the other bits independently
+Or you can get only the USB converter from lightberry and buy the other bits independently.
 
 ## Some DIY
 
