@@ -53,6 +53,16 @@
             </a>
           </li>
           {% endif %}
+		  {% if site.author.xing and site.footer-links-active.xing %}
+          <li>
+            <a href="https://www.xing.com/profile/{{ site.author.xing }}" title="Xing">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
 		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
           <li>
             <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
