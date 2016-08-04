@@ -45,6 +45,7 @@ author:
   github: yourname    # eg. daattali
   twitter: yourname   # eg. daattali
   linkedin: yourname  # eg. daattali
+  xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   instagram: yourname # eg. daattali
  
@@ -56,6 +57,7 @@ footer-links-active:
   twitter: true
   github: true
   linkedin: false
+  xing: false
   stackoverflow: false
   instagram: false
 
