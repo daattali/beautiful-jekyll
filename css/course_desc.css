@@ -3,5 +3,9 @@
     width: 150%;
     margin-left: -25%;
   }
+  
+  td:nth-child[1] {
+    width: 130px;
+  }
 }
 
