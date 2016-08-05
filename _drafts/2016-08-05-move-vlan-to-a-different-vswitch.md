@@ -7,9 +7,10 @@ Recently after we had network changes to consolidate our network, I had to move 
 
 In order to do that I created a port-group in the target vSwitch with a different name.
 
-For example:
--Existing port-group "R-50" in vSwitch2  
--New port-group "V-50" in vSwitch1
+-Existing port-group "R-50" in vSwitch1
+-New port-group "V-50" in vSwitch0
+
+![change-vmportgroup.jpg]({{site.baseurl}}/img/change-vmportgroup.jpg)
 
 I checked that the new port-group was properly configured by placing a test VM on it and pinging the gateway. Once I validated this step I proceeded to write a little script to do it en masse.
 
