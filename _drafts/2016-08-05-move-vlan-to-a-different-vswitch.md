@@ -46,13 +46,12 @@ param(
 
 Begin{
 
-    $hosts = Get-VMHost
-
     $Dest = Get-virtualportgroup -name $DestPortgroupName
-    IF ($Dest.count -lt $hosts.count) {Write-Warning "$DestPortgroupName not present on all the hosts"} ELSEIF (!$Dest) {break}
-
+    IF (!$Dest) {break} 
     $Src = Get-virtualportgroup -name $SrcPortgroupName
     IF (!$Src) {break}
+
+    IF ($Dest.count -lt (get-cluster).ExtensionData.Host.count) {Write-Warning "$DestPortgroupName not present on all the hosts"}
 
 }
 
@@ -60,20 +59,22 @@ Process{
 
     $VM | ForEach-Object {
         
-        TRY {
+        IF (($_ | get-virtualportgroup).name -contains $SrcPortgroupName) {
 
-            IF ($PSCmdlet.ShouldProcess($_.name,"Move from $SrcPortgroupName to $DestPortgroupName")) {
+            TRY {
 
-                $_ | Get-NetworkAdapter | where networkname -eq $SrcPortgroupName | Set-NetworkAdapter -NetworkName $DestPortgroupName -Confirm:$false
+                IF ($PSCmdlet.ShouldProcess($_.name,"Move from $SrcPortgroupName to $DestPortgroupName")) {
+
+                    $_ | Get-NetworkAdapter | where networkname -eq $SrcPortgroupName | Set-NetworkAdapter -NetworkName $DestPortgroupName -Confirm:$false
         
-            }
+                }
 
-        } CATCH {
+            } CATCH {
 
-            Write-Error $_.Exception -ErrorAction Stop
+                Write-Error $_.Exception -ErrorAction Stop
             
+            }
         }
-
     }
     
 }
