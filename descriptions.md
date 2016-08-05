@@ -7,9 +7,10 @@ subtitle: Courses for the 2016-2017 offering
 
 Click on the links below to see more information about each course.
 
-Course Number  |  Block  |  Course Title                                |  Link to Course Details                                          
+Course Number  |  Block  |  Course Title                                |  Short Description     
 ---------------|---------|----------------------------------------------|------------------------------------------------------------------
-DSCI 511       |  1      |  Programming for Data Science                |  [DSCI_511_prog-dsci.md](/course-descriptions/DSCI_511_prog-dsci)                  
+DSCI 511       |  1      |  [Programming for Data Science](/course-descriptions/DSCI_511_prog-dsci)                |  Overview of data structures, iteration, flow control, and program design relevant to data exploration and analysis. When and how to exploit pre-existing libraries.
+                  
 DSCI 521       |  1      |  Computing Platforms for Data Science        |  [DSCI_521_platforms-dsci.md](/course-descriptions/DSCI_521_platforms-dsci/)        
 DSCI 522       |  2      |  Data Science Workflows                      |  [DSCI_522_dsci-workflows.md](/course-descriptions/DSCI_522_dsci-workflows/)        
 DSCI 523       |  2      |  Data Wrangling                              |  [DSCI_523_data-wrangling.md](/course-descriptions/DSCI_523_data-wrangling/)        
