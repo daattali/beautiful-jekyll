@@ -5,7 +5,7 @@ title: Move VLAN to a different vSwitch
 ---
 Recently after we had a network change aimed to consolidate our uplinks, I had to move a whole bunch of VMs to a port-group in a different vSwitch but in the same VLAN without losing connectivity.
 
-In order to do that I created a port-group in the target vSwitch with a different name.
+In order to do that I created a port-group in the target vSwitch with a different name (Can be easily scripted if you have lots of hosts).
 
 - Existing port-group "R-50" in vSwitch1
 - New port-group "V-50" in vSwitch0
