@@ -5,16 +5,20 @@ title: Move VLAN to a different vSwitch
 ---
 Recently after we had a network change aimed to consolidate our uplinks, I had to move a whole bunch of VMs to a port-group in a different vSwitch but in the same VLAN without losing connectivity.
 
-In order to do that I created a port-group in the target vSwitch with a different name (Can be easily scripted if you have lots of hosts).
+It is a very easy process and not a single ping is lost (maybe one).
 
-- Existing port-group "R-50" in vSwitch1
-- New port-group "V-50" in vSwitch0
+- Create a port-group in the target vSwitch with a different name (Can be easily scripted if you have lots of hosts).
+
+_Existing port-group "R-50" in vSwitch1  
+New port-group "V-50" in vSwitch0_
 
 ![change-vmportgroup.jpg]({{site.baseurl}}/img/change-vmportgroup.jpg)
 
-I checked that the new port-group was properly configured by placing a test VM in it and by pinging the gateway. Once I validated this step I proceeded to write a little script to do it en masse.
+- Check that the new port-group is properly configured by placing a test VM in it and by pinging the gateway.
 
-To move the VMs in a folder:
+- Once validated, this little script will help to do it en masse. If the previous test failed it is down to your network admin to troubleshoot. Probably these new VLANs not enabled on the trunk port.
+
+To move the VMs located in the "VmFolder1" folder:
 
 ```Powershell
 
@@ -22,7 +26,7 @@ Get-VM -Location "VmFolder1" | Change-VMPortGroup -SrcPortgroupName "R-50" -Dest
 
 ```
 
-During the change the VMs doesn't loose a single ping.
+During the change the VMs doesn't loose a ping.
 
 ```Powershell
 
