@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Move VLAN to a different vSwitch
 ---
 Recently after we had a network change aimed to consolidate our uplinks, I had to move a whole bunch of VMs to a port-group in a different vSwitch but in the same VLAN without losing connectivity.
