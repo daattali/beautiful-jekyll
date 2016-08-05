@@ -2,6 +2,7 @@
 layout: page
 title: MDS Courses
 subtitle: Courses for the 2016-2017 offering
+css: course_desc.css
 ---
 
 
