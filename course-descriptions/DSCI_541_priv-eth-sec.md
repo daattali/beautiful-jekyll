@@ -22,10 +22,10 @@ By the end of the course, students will be able to:
 * Schneier, Bruce. Data and Goliath: The Hidden Battles to Collect Your Data and Control Your World. Norton, 2015.
 * Schneier, Bruce. Secrets and Lies: Digital Security in a Networked World, 15th Anniversary Edition. Wiley, 2015.
 * Free online resources, available on the Internet. For example:
-  * Abelson, Hal; Ledeen, Ken; and Lewis, Harry. Blown to Bits: Your Life, Liberty, and Happiness after the Digital Explosion. Addison-Wesley, 2008. http://www.bitsbook.com/excerpts/.
-  * Geist, Michael. http://www.michaelgeist.ca/blog/ (blog, privacy, ethics, Canadian focus)
-  * Krebs, Brian. https://krebsonsecurity.com/ (blog on security)
-  * Schneier, Bruce. Crypto-Gram Monthly Blog and Archives. https://www.schneier.com/crypto-gram/ (blog on security, privacy, ethics)
+  * Abelson, Hal; Ledeen, Ken; and Lewis, Harry. Blown to Bits: Your Life, Liberty, and Happiness after the Digital Explosion. Addison-Wesley, 2008. <http://www.bitsbook.com/excerpts/>.
+  * Geist, Michael. <http://www.michaelgeist.ca/blog/> (blog, privacy, ethics, Canadian focus)
+  * Krebs, Brian. <https://krebsonsecurity.com/> (blog on security)
+  * Schneier, Bruce. Crypto-Gram Monthly Blog and Archives. <https://www.schneier.com/crypto-gram/> (blog on security, privacy, ethics)
 
 ## Instructor (2016-2017)
 * [Ed Knorr](http://www.cs.ubc.ca/~knorr/)
