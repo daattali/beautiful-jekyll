@@ -26,7 +26,7 @@ navbar-links:
   About: "about"
   Program:
     - At a glance: "img/Course-Schedule-image.jpg"
-    - Course Details: "descriptions"
+    - Course Descriptions: "descriptions"
   Official website: "http://masterdatascience.science.ubc.ca/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
