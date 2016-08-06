@@ -25,7 +25,7 @@ description: Warning, this site is under heavy construction!
 navbar-links:
   About: "about"
   Program:
-    - At a glance: "img/program_at_a_glance_with_breaks_revised.pdf"
+    - At a glance: "img/Course-Schedule-image.jpg"
     - Course Details: "descriptions"
   Official website: "http://masterdatascience.science.ubc.ca/"
 
