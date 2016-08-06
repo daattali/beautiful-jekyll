@@ -4,7 +4,7 @@ subtitle: Advanced Machine Learning
 ---
 
 ## Short Description
-Introduction to probabilistic graphical models and their applications; systems to generate personalized recommendations; A/B testing and website optimization; text analysis; rapid prototyping of machine learning models.
+Advanced machine learning methods, with an undercurrent of natural language processing (NLP) applications. Bag of words, recommender systems, topic models, ranking, natural language as sequence data, POS tagging, CRFs for named entity recognition and RNNs for text synthesis. An introduction to popular NLP libraries in Python.
 
 ## Learning Outcomes
 By the end of the course, students are expected to be able to:
