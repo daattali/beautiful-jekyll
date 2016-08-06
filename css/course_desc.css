@@ -7,5 +7,8 @@
   td:nth-child(1) {
     width: 140px;
   }
+  td:nth-child(3) {
+    width: 180px;
+  }
 }
 
