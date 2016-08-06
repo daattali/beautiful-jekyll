@@ -5,9 +5,6 @@ subtitle: Courses for the 2016-2017 offering
 css: /css/course_desc.css
 ---
 
-
-Click on the links below to see more information about each course.
-
 Course Number  |  Block  |  Course Title                                |  Short Description     
 ---------------|---------|----------------------------------------------|------------------------------------------------------------------
 DSCI 511       |  1      |  [Programming for Data Science](/course-descriptions/DSCI_511_prog-dsci)                |  Overview of data structures, iteration, flow control, and program design relevant to data exploration and analysis. When and how to exploit pre-existing libraries.
