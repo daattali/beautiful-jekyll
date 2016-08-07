@@ -1,5 +1,7 @@
 # Beautiful Jekyll
 
+> *Copyright 2016 [Dean Attali](http://deanattali.com). Licensed under the MIT license.*
+
 **Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal blogs or simple project websites.  [Check out a demo](http://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using thcois theme [here](#featured-users-success-stories).
 
 If you need a bit of help or have comments, feel free to [contact me](http://deanattali.com/aboutme#contact). Even if you don't have anything important to say but found this useful, I'd love to [hear about it](http://deanattali.com/aboutme#contact). Lastly, if you like this theme, please consider [supporting me](https://www.paypal.me/daattali/20) if you want to make me extra happy. :)
@@ -127,7 +129,7 @@ bigimg      | Include a large full-width image at the top of the page.  You can 
 comments    | If you want do add Disqus comments to a specific page, use `comments: true`. Comments are automatically enabled on blog posts; to turn comments off for a specific post, use `comments: false`. Comments only work if you set your Disqus id in the `_config.yml` file.
 show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`. If you want to turn it off by default, locate the line `show-avatar: true` in the file `_config.yml` and change the `true` to `false`; then you can selectively turn it on in specific pages using `show-avatar: true`.
 share-img   | If you want to specify an image to use when sharing the page on Facebook or Twitter, then provide the image's full URL here.
-social-share | If you don't want to show buttons to share a blog posts on social media, use `social-share: false` (this feature is turned on by default).
+social-share | If you don't want to show buttons to share a blog post on social media, use `social-share: false` (this feature is turned on by default).
 layout      | What type of page this is (default is `blog` for blog posts and `page` for other pages. You can use `minimal` if you don't want a header and footer)  
 js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
