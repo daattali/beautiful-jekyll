@@ -106,7 +106,7 @@ Beautiful Jekyll lets you easily add Google Analytics to all your pages. This wi
 
 #### Sharing blog posts on social media
 
-By default, all blog posts will have buttons at the bottom of the post to allow people to share the current page on Twitter/Facebook/LinkedIn.  You can choose to enable/disable specific social media websites in the `_config.yml` file. You can also turn off the social media buttons on specific blog posts using `daattalitest.github.io `social-share: false` in the YAML front matter.
+By default, all blog posts will have buttons at the bottom of the post to allow people to share the current page on Twitter/Facebook/LinkedIn.  You can choose to enable/disable specific social media websites in the `_config.yml` file. You can also turn off the social media buttons on specific blog posts using `social-share: false` in the YAML front matter.
 
 #### Page types
 
