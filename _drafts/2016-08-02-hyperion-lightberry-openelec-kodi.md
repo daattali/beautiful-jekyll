@@ -32,7 +32,9 @@ Lightberry offers a custom image of OpenElec that you can download on their webs
 
 - **RGB LED strip individually addressable (WS2801)**
 
-The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independently (color, intensity). Each LED is equipped with a micro controller that sends it the RGB values, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one.
+The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independently (color, intensity). Each LED is equipped with a micro controller that sends it the RGB values, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one. If you already have some LED strip, you can check the type on the tiny controller located next to each LED. If there is no micro chip it means it's not independently addressable so it won't work.
+
+![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
 
 In summary:
 
@@ -47,11 +49,9 @@ In summary:
 
 ## What you need
 
-- LED strips.
+- WS2801 LED strips.
 
-I got a WS2801 LED strip, you can check the type on the tiny controllers located next to each LED.
 
-![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
 
 - Lightberry USB converter.
 - A longer cable to connect the lightberry to the LEDs
