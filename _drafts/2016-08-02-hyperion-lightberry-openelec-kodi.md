@@ -47,13 +47,13 @@ In summary:
 
 ## What you need
 
-- LED strips
+- LED strips.
 
 I got a WS2801 LED strip, you can check the type on the tiny controllers located next to each LED.
 
 ![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
 
-- USB converter
+- Lightberry USB converter.
 - A longer cable to connect the lightberry to the LEDs
 - A bunch of hooks for the back of the TV (If you don't want to do a caveman setup like mine)
 - A power supply
