@@ -24,7 +24,7 @@ In this tutorial I am only focusing on the USB converter. There is a version wit
 
 This converter alone will only make the LEDs work with the Raspberry PI. If you have other devices that you would like to integrate like a DVD player or a Xbox and such you will need the HDMI kit along with an HDMI switch.
 
-- **OpenElec installed on a Raspberry Pi**[Website](http://openelec.tv/) 
+- **OpenElec installed on a Raspberry Pi** : [Website](http://openelec.tv/) 
 
 My OpenElec is on version 6.0.3 and runs Kodi 15 on a Raspberry Pi 2, at the time of this article you can get a Raspberry Pi 3 with better hardware for about £30. 
 
