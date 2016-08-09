@@ -7,15 +7,11 @@ These last few weeks I got more and more interested in home automation and other
 
 I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devicew and is much cheaper (with a little bit of hardware and a bit more elbow grease).
 
-See my beautiful diagram to have an idea of the beast.
-
-![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
-
-# What is it made of
+# Some theory
 
 The system is made up of 4 main components.  I won't get into the details of raspberry or the TV as I assume you already have your media center running Kodi.
 
-Here are the bits that you'll need to put together:
+Here are the different components of the system and what they do.
 
 - **Hyperion** : [Website](https://hyperion-project.org/wiki/Main)
 
@@ -36,23 +32,33 @@ Lightberry offers a custom image of OpenElec that you can download on their webs
 
 - **RGB LED strip individually addressable (WS2801)**
 
-The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independently (color, intensity). Each LED is equipped with a micro controller that tells it what to do, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one.
+The ones you want for use with hyperion need to be individually addressable, meaning you can control the LEDs independently (color, intensity). Each LED is equipped with a micro controller that sends it the RGB values, and of course the software (Hyperion) needs to have the drivers for these controllers. That's why you need compatible LEDs. There are several but I chose the WS2801 which seem to be the most common one.
+
+In summary:
+
+![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
+
+- Kodi plays your video on the TV (on OpenElec),
+- OpenElec runs Hyperion,
+- Hyperion tells the USB converter which pixels to turn on, etc...
+- The Lightberry USB converter translates it into RGB-ish and sends it to the LED strip,
 
 # 1 - The hardware part
 
 ## What you need
 
-_Lightberry kit: about 90€_
-
-You can get the whole lot directly from lightberry. It costs about 90€ for 4 meters of LEDs and contains everything you need.
-
 - LED strips
+
+I got a WS2801 LED strip, you can check the type on the tiny controllers located next to each LED.
+
+![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
+
 - USB converter
 - A longer cable to connect the lightberry to the LEDs
 - A bunch of hooks for the back of the TV (If you don't want to do a caveman setup like mine)
 - A power supply
 
-Or you can get only the USB converter from lightberry and buy the other bits independently.
+You can get the whole lot directly as a kit from lightberry. It costs about 90€ and contains everything you need. [Lightberry HD Kit](https://lightberry.eu/shop/shop/lightberry-hd/)
 
 ## Some DIY
 
