@@ -53,12 +53,32 @@
             </a>
           </li>
           {% endif %}
+		  {% if site.author.xing and site.footer-links-active.xing %}
+          <li>
+            <a href="https://www.xing.com/profile/{{ site.author.xing }}" title="Xing">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-xing fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
 		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
           <li>
             <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.instagram and site.footer-links-active.instagram %}
+          <li>
+            <a href="https://www.instagram.com/{{ site.author.instagram }}" title="Instagram">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
