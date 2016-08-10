@@ -48,7 +48,7 @@ author:
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   instagram: yourname # eg. daattali
-  youtube: yourlink # eg. user/daattali or channel/daatali
+  youtube: yourlink # eg. user/daattali or channel/daattali
 
 # Select which links to show in the footer
 footer-links-active:
