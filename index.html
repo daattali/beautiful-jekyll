@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Beautiful Jekyll
-subtitle: Build a beautiful and simple website in minutes
-fb-img: "http://deanattali.com/img/blog/beautiful-jekyll.png"
+title: Planet Efficacy
+subtitle: Module 2 Pre-work Turing School of Software Design
 ---
 
 <div class="main-explain-area jumbotron">
@@ -25,23 +24,23 @@ fb-img: "http://deanattali.com/img/blog/beautiful-jekyll.png"
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
-	
+
 	  {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
-	  {% endif %}  
+	  {% endif %}
     </a>
 
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-  
+
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
 	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">Read More</a>
     </div>
-  
+
    </article>
   {% endfor %}
 </div>
