@@ -51,7 +51,7 @@ You can get the whole lot directly as a kit from lightberry. It costs about 90â‚
 
 ## Update firmware of the lightberry USB converter
 
-
+Once I got the issue on the led strip connector sorted
 
 ## Install the LEDs
 
