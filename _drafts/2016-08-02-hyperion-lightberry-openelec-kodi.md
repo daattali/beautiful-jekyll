@@ -9,6 +9,8 @@ I did this project to create a mood lighting behind the TV that "follows" the co
 
 The system is made up of 4 main components.  I won't get into the details of the raspberry or the TV as I assume you already have your media center running Kodi.
 
+![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
+
 Here are the different components of the system and what they do.
 
 - **Hyperion** : [Website](https://hyperion-project.org/wiki/Main)
@@ -33,33 +35,23 @@ They must be individually addressable, meaning you can control the LEDs independ
 
 ![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
 
-In summary:
-
-![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
-
-- Kodi plays the media on the TV,
-- OpenElec runs Hyperion,
-- Hyperion interacts with the USB converter,
-- The Lightberry USB converter controls the LED strip,
-
-# 1 - The hardware part
-
 ## What you need
 
 - WS2801 LED strips.
+- Lightberry USB converter (include the USB cable).
 
+![ledandlightberry.jpg]({{site.baseurl}}/img/ledandlightberry.jpg)
 
-
-- Lightberry USB converter.
-- A longer cable to connect the lightberry to the LEDs
-- A bunch of hooks for the back of the TV (If you don't want to do a caveman setup like mine)
 - A power supply
+- A soldering iron
 
 You can get the whole lot directly as a kit from lightberry. It costs about 90€ and contains everything you need. [Lightberry HD Kit](https://lightberry.eu/shop/shop/lightberry-hd/)
 
-## Some DIY
+## Update firmware of the lightberry USB converter
 
-# 2 - The software part
+
+
+## Install the LEDs
 
 Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
 
