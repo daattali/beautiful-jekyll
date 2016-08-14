@@ -35,6 +35,8 @@ They must be individually addressable, meaning you can control the LEDs independ
 
 ![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
 
+I got my leds from a cheap chinese seller on amazon and I had issues with the LED strip which had the connector badly wired, so I had to redo it by desoldering and resoldering properly. Even though it works now it took me some time to get to figure out what was the issue, so going for the cheapest one might be a bet.
+
 ## What you need
 
 - WS2801 LED strips.
