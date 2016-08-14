@@ -19,7 +19,7 @@ Hyperion is an open source _Ambilight implementation_ under MIT license. It is t
 
 - **Lightberry** : [Website](http://lightberry.eu/)
 
-Lightberry is the hardware bit that acts as an interface between Hyperion and the LED strip. Lightberry offers multiple devices and packs that offer a different level of integration. In this tutorial I am only focusing on the USB converter. There is a version with a GPIO interface as well but I already have a case that closes the top of the raspberry. You could also do without the lightberry part by using the GPIO pins 19 and 23 for clock and data.
+Lightberry is the hardware bit, based on an Arduino Leonardo, that acts as an interface between Hyperion and the LED strip. Lightberry offers multiple devices and packs that offer a different level of integration. In this tutorial I am only focusing on the USB converter. There is a version with a GPIO interface as well but I already have a case that closes the top of the raspberry. You could also do without the lightberry part by using the GPIO pins 19 and 23 for clock and data.
 
 This converter alone will only make the LEDs work with the Raspberry PI. If you have other devices that you would like to integrate like a DVD player or a Xbox and such you will need more stuff (I'll cover the other possible scenarios at the end).
 
@@ -51,7 +51,11 @@ You can get the whole lot directly as a kit from lightberry. It costs about 90â‚
 
 ## Update firmware of the lightberry USB converter
 
-Once I got the issue on the led strip connector sorted
+I had an issue with a bunch a LEDs flickering like crazy all the time that is fixed by updating the firmware of the lightberry.
+
+Follow this tutorial from lightberry to update the firmware : [http://update.lightberry.eu/](http://update.lightberry.eu/)
+
+The link to download the latest firmware is on the left under "Version history".
 
 ## Install the LEDs
 
