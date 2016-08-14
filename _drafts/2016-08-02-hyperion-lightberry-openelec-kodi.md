@@ -37,10 +37,10 @@ In summary:
 
 ![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
 
-- Kodi plays your video on the TV (on OpenElec),
+- Kodi plays the media on the TV,
 - OpenElec runs Hyperion,
-- Hyperion tells the USB converter which pixels to turn on, etc...
-- The Lightberry USB converter translates it into RGB-ish and sends it to the LED strip,
+- Hyperion interacts with the USB converter,
+- The Lightberry USB converter controls the LED strip,
 
 # 1 - The hardware part
 
