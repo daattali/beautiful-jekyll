@@ -3,9 +3,7 @@ layout: post
 published: false
 title: Hyperion + Lightberry + OpenElec + Kodi
 ---
-These last few weeks I got more and more interested in home automation and other cool to do with like so I thought I'd deviate from virtualization the time of a tutorial. 
-
-I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devicew and is much cheaper (with a little bit of hardware and a bit more elbow grease).
+I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devices and is much cheaper (with a little bit of hardware and some elbow grease).
 
 **Scroll down to the end for the alternative without lightberry.**
 
@@ -167,3 +165,7 @@ Now check the colors with the color picker (chose it and click "Set led color").
 If they are inverted you need to recreate the config file after changing the order in the hardware tab under "RGB Byte Order".
 
 For example, if your leds are blue when you choose red and vice-versa, change RGB to BGR.
+
+**Colors calibration**
+
+If you are brave enough you can follow
