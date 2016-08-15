@@ -105,15 +105,15 @@ If you don't enable the remote control, Hyperion will fail to connect to Kodi an
 
 _Hardware tab_
 
-**Type** : Adalight  
-**Output** : /dev/ttyACM0  
-**Construction** : Select the one that applies to how you've installed your LED. The direction is facing the TV.  
-**Direction** : Direction from start to end of the led strip.  
-**LEDs** : Number of LEDs on each side.  
-**Bottom Gap**: Number of LED top - Number of LEDs bottom.  
-**1st LED offset**: Adjust this value so the 0 is at the start of your strip on the image.  
-**Blackborder detection** : Enabled (makes the LEDs work even with black borders).  
-**Threshold[%]**: 1 (Threshold under which the color is considered black).
+- **Type** : Adalight  
+- **Output** : /dev/ttyACM0  
+- **Construction** : Select the one that applies to how you've installed your LED. The direction is facing the TV.  
+- **Direction** : Direction from start to end of the led strip.  
+- **LEDs** : Number of LEDs on each side.  
+- **Bottom Gap**: Number of LED top - Number of LEDs bottom.  
+- **1st LED offset**: Adjust this value so the 0 is at the start of your strip on the image.  
+- **Blackborder detection** : Enabled (makes the LEDs work even with black borders).  
+- **Threshold[%]**: 1 (Threshold under which the color is considered black).
 
 ![Hypercon-basic1.jpg]({{site.baseurl}}/img/Hypercon-basic1.jpg)
 
@@ -121,7 +121,7 @@ _Hardware tab_
 
 _Process tab_
 
-I change the "Time [ms]" value from 200ms to 75ms, otherwise it looks like there is a latency and the LEDs or not in sync with the TV especially in scenes with a lot of action.
+- I change the "Time [ms]" value from 200ms to 75ms, otherwise it looks like there is a latency and the LEDs or not in sync with the TV especially in scenes with a lot of action.
 
 ![linear-smoothing.jpg]({{site.baseurl}}/img/linear-smoothing.jpg)
 
@@ -130,19 +130,19 @@ Skip the grabber tab as you shouldn't need to touch anything there.
 _External tab_
 
 Kodi checker allows hyperion to get the status of Kodi.  
-Leave 9090 if you haven't changed the default port.
+- Leave 9090 if you haven't changed the default port.
 
-Uncheck the boxes for when you want the LEDs to be switched off.
+- Uncheck the boxes for when you want the LEDs to be switched off.
 
-Under "Effect" you can change the effect on the LEDs at the startup of Kodi.
+- Under "Effect" you can change the effect on the LEDs at the startup of Kodi.
 
 ![kodi-integration.jpg]({{site.baseurl}}/img/kodi-integration.jpg)
 
 _Save config_
 
-Click "Save" to save the parameters in a dat file.
+- Click "Save" to save the parameters in a dat file.
 
-Click "Create Hyperion Configuration" to create the actual config file called "hyperion.config.json".
+- Click "Create Hyperion Configuration" to create the actual config file called "hyperion.config.json".
 
 **installation of Hyperion and push of the config**
 
@@ -157,6 +157,8 @@ _SSH tab_
 - Click "local path" and select your generated "hyperion.config.json".
 - Click "Send" to send the config to hyperion.
 - Start the daemon.
+
+![hypercon-connect.jpg]({{site.baseurl}}/img/hypercon-connect.jpg)
 
 If it's worked you should see the boot sequence that you chose in the external tab ("Police lights single").
 
