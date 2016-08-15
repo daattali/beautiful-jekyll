@@ -48,6 +48,8 @@ You can get the whole lot directly as a kit from lightberry. It costs about 90â‚
 
 ## Things to download
 
+Download and install these and store the lightberry firmware somewhere on your pc.
+
 [Arduino software](https://www.arduino.cc/en/Main/Software)  
 [Latest lightberry firmware]([http://update.lightberry.eu/](http://update.lightberry.eu/))  
 [HyperCon](https://sourceforge.net/projects/hyperion-project/files/hypercon/HyperCon.jar)  
@@ -77,8 +79,4 @@ The glue on the back of the strip isn't the best ever and the heat of the TV doe
 - Connect the lightberry box to the LED strip, the raspberry pi and to the power supply.
 
 ## Hyperion installation and configuration
-
-To get hyperion running we will use a very good tool called HyperCon. It is a jar file so you will need Java(JRE).
-
-
 
