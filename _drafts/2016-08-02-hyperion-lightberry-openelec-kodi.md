@@ -7,6 +7,8 @@ I did this project to create a mood lighting behind the TV that "follows" the co
 
 
 
+[![hyperion-demo.JPG]({{site.baseurl}}/img/hyperion-demo.JPG)](https://youtu.be/feuM0x5Uu34)
+
 The system is made up of 4 main components.  I won't get into the details of the raspberry or the TV as I assume you already have your media center running Kodi.
 
 ![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
