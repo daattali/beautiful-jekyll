@@ -54,7 +54,7 @@ You can get the whole lot directly as a kit from lightberry. It costs about 90â‚
 Download/install these and store the lightberry firmware somewhere on your pc.
 
 [Arduino software](https://www.arduino.cc/en/Main/Software)  
-[Latest lightberry firmware]([http://update.lightberry.eu/](http://update.lightberry.eu/)  
+[Latest lightberry firmware][http://update.lightberry.eu/](http://update.lightberry.eu/)  
 [HyperCon](https://sourceforge.net/projects/hyperion-project/files/hypercon/HyperCon.jar)  
 [Java](http://www.java.com/en/)
 
