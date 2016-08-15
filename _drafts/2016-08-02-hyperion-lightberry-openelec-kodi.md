@@ -61,11 +61,21 @@ Follow this tutorial from lightberry to update the firmware : [http://update.lig
 
 ## Install the LEDs
 
-When you order the kit from lightberry you get a bunch of hooks to run the led strip sideways without using the tape on the back. But because I didn't get the kit I just stuck it on the back of the TV with the embedded 3M tape.
+When you order the kit from lightberry you get a bunch of hooks to run the led strip sideways without using the tape on the back and the need to cut the strip at every angle. If you don't get it there is a bit more work involved but it's worth the time spent.
+
+You will need to cut 4 lengths of strip for each side of the TV.
+
+- Find where to cut your LED strip by "simulating" the placement on your TV. Mine has 16 LEDs on the left and right sides, 29 LEDs on top and bottom for 42". Be sure to take into account that you can cut it only on the links.
+- Cut the strip where you defined it.
+- Solder the bits together with electric wires of about 5cm. If you have heat shrink it'll be cleaner to protect the soldered part, I don't have any so I just used tape.
+
+
 
 The glue on the back of the strip isn't the best ever and the heat of the TV doesn't help, so I added a few ugly bits of tape to secure the led strip.
 
 ![ledbehindtv.jpg]({{site.baseurl}}/img/ledbehindtv.jpg)
+
+I can remove the TV stand by just sliding it down so I ran my LED strip all the way through the bottom side of the TV and left the tape protection on the back of the strip so it doesn't stick to the stand (Red square). But if this would prevent you from taking out the stand you need to leave a gap the size of the stand and connect the to sides with whatever 4 pins connector.
 
 ## Hyperion installation and configuration
 
