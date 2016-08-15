@@ -7,6 +7,8 @@ These last few weeks I got more and more interested in home automation and other
 
 I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devicew and is much cheaper (with a little bit of hardware and a bit more elbow grease).
 
+**Scroll down to the end for the alternative without lightberry.**
+
 The system is made up of 4 main components.  I won't get into the details of the raspberry or the TV as I assume you already have your media center running Kodi.
 
 ![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
@@ -97,4 +99,7 @@ If you don't enable the remote control, Hyperion will fail to connect to Kodi an
 
 ## Hyperion installation and configuration
 
--
+**Basic configuration**
+
+- Launch Hypercon.jar
+- 
