@@ -137,3 +137,11 @@ Uncheck the boxes for when you want the LEDs to be switched off.
 Under "Effect" you can change the effect on the LEDs at the startup of Kodi.
 
 ![kodi-integration.jpg]({{site.baseurl}}/img/kodi-integration.jpg)
+
+_Save config_
+
+Click "Save" to save the parameters in a dat file.
+
+Click "Create Hyperion Configuration" to create the actual config file called "hyperion.config.json".
+
+**installation of Hyperion and push of the config**
