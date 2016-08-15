@@ -5,6 +5,8 @@ title: Hyperion + Lightberry + OpenElec + Kodi
 ---
 I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devices and is much cheaper (with a little bit of hardware and some elbow grease).
 
+
+
 The system is made up of 4 main components.  I won't get into the details of the raspberry or the TV as I assume you already have your media center running Kodi.
 
 ![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
@@ -167,6 +169,16 @@ If they are inverted you need to recreate the config file after changing the ord
 
 For example, if your leds are blue when you choose red and vice-versa, change RGB to BGR.
 
+## Color calibration
+
+By far the most annoying part of the setup, the color calibration. It isn't easy to tell when the color is true or when it is blueish or greenish, but doing it might give better results.
+
+When I did the calibration I realised that my green was off and I had to add 50 "red" in the green to get it right.
+
+You can follow the tutorial made by the Hyperion guys.
+
+[https://hyperion-project.org/wiki/Color-Calibration](https://hyperion-project.org/wiki/Color-Calibration)
+
 ## Mobile app
 
 Something pretty cool as well is to control your LEDs with your smartphone. You can set a fixed color or play the preconfigured effects, I use it a lot as a ambient light in my living room.
@@ -197,4 +209,3 @@ Hyperion config:
 - Instead of choosing /dev/ttyACM0 > choose /dev/spidev0.0
 
 Then you will need to get all of this nice and tidy with connectors, heat shrink and wires. The rest is essentially the same.
-
