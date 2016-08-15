@@ -78,5 +78,23 @@ The glue on the back of the strip isn't the best ever and the heat of the TV doe
 
 - Connect the lightberry box to the LED strip, the raspberry pi and to the power supply.
 
+## Prepare OpenElec / Kodi
+
+**Check SSH is enabled:**
+
+- Go to "OpenELEC Settings" -> "Services" -> Uncheck "Disable SSH Password"![]
+
+![openelec-enable-ssh.png]({{site.baseurl}}/img/openelec-enable-ssh.png)
+
+**Enable remote control of Kodi**
+
+If you don't enable the remote control, Hyperion will fail to connect to Kodi and won't be able to switch off the leds when you don't want them (Menu, screensaver, pause, ...).
+
+- Go to "System" > "Settings" > Set the Setting level to "Expert" > "Remote Control"
+- Enable the 2 checkboxes.
+
+![kodi-remote-ctrl.jpg]({{site.baseurl}}/img/kodi-remote-ctrl.jpg)
+
 ## Hyperion installation and configuration
 
+- 
