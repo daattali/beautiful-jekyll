@@ -99,7 +99,7 @@ If you don't enable the remote control, Hyperion will fail to connect to Kodi an
 
 ## Hyperion installation and configuration
 
-**Basic configuration**
+**Creation of the configuration**
 
 - Launch Hypercon.jar
 
@@ -119,3 +119,4 @@ _Hardware tab_
 
 ![blacborderdetection.jpg]({{site.baseurl}}/img/blacborderdetection.jpg)
 
+_Process tab_
