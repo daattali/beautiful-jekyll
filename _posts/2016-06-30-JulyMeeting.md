@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - July 14th 2016 - Managing Office 365 with PowerShell'
+title: 'July 14th 2016 - Managing Office 365 with PowerShell'
 ---
 
 ## Cincinnati PowerShell User Group – July Meeting - Matt McNabb
