@@ -102,4 +102,15 @@ If you don't enable the remote control, Hyperion will fail to connect to Kodi an
 **Basic configuration**
 
 - Launch Hypercon.jar
-- 
+
+_Hardware tab_
+
+Type : Adalight  
+Output : /dev/ttyACM0  
+Construction : Select the one that applies to how you've installed your LED. The direction is facing the TV.  
+Direction : Direction from start to end of the led strip.  
+LEDs : Number of LEDs on each side.  
+Bottom Gap : Number of LED top - Number of LEDs bottom.  
+1st LED offset : Adjust this value so the 0 is at the start of your strip on the image.  
+Blackborder detection : Enabled (makes the LEDs work even with black borders).  
+Threshold[%] : 1 (Threshold under which the color is considered black).
