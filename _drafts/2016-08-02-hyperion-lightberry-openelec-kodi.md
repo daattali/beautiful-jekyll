@@ -97,4 +97,4 @@ If you don't enable the remote control, Hyperion will fail to connect to Kodi an
 
 ## Hyperion installation and configuration
 
-- 
+-
