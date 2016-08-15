@@ -67,7 +67,7 @@ Follow this tutorial from lightberry to update the firmware : [http://update.lig
 
 ## Install the LEDs
 
-When you order the kit from lightberry you get a bunch of hooks to run the led strip sideways without using the tape on the back and the need to cut the strip at every angle. If you don't get it there is a bit more work involved but it's worth the time spent.
+When you order the kit from lightberry you get a bunch of hooks to run the led strip sideways without using the tape on the back and the need to cut the strip at every angle. If you don't get it there is a bit more work involved but it's worth the time spent and costs almost nothing.
 
 You will need to cut 4 lengths of strip for each side of the TV.
 
@@ -80,7 +80,10 @@ The glue on the back of the strip isn't the best ever and the heat of the TV doe
 
 ![ledbehindtv.jpg]({{site.baseurl}}/img/ledbehindtv.jpg)
 
-- Connect the lightberry box to the LED strip, the raspberry pi and to the power supply.
+![led-soldered.JPG]({{site.baseurl}}/img/led-soldered.JPG)  
+(I know I know about the tape ...)
+
+- Connect the lightberry box to the LED strip, to the raspberry pi and to the power supply.
 
 ## Prepare OpenElec / Kodi
 
