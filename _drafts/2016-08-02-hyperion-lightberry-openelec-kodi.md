@@ -120,3 +120,7 @@ _Hardware tab_
 ![blacborderdetection.jpg]({{site.baseurl}}/img/blacborderdetection.jpg)
 
 _Process tab_
+
+I change the "Time [ms]" value from 200ms to 75ms, otherwise it looks like there is a latency and the LEDs or not in sync with the TV especially in scenes with lot's of action.
+
+![linear-smoothing.jpg]({{site.baseurl}}/img/linear-smoothing.jpg)
