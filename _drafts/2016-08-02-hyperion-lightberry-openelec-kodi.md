@@ -5,8 +5,6 @@ title: Hyperion + Lightberry + OpenElec + Kodi
 ---
 I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devices and is much cheaper (with a little bit of hardware and some elbow grease).
 
-**Scroll down to the end for the alternative without lightberry.**
-
 The system is made up of 4 main components.  I won't get into the details of the raspberry or the TV as I assume you already have your media center running Kodi.
 
 ![schema-hyperion.jpg]({{site.baseurl}}/img/schema-hyperion.jpg)
@@ -35,7 +33,7 @@ They must be individually addressable, meaning you can control the LEDs independ
 
 ![Led-WS2801.jpg]({{site.baseurl}}/img/Led-WS2801.jpg)
 
-I got my leds from a cheap chinese seller on amazon and I had issues with the LED strip which had the connector badly wired, so I had to redo it by desoldering and resoldering properly. Even though it works now it took me some time to get to figure out what was the issue, so going for the cheapest one might be a bet.
+I got my leds from a cheap chinese seller on amazon and I had issues with the LED strip which had the connector badly wired, so I had to redo it by desoldering and resoldering it properly, not ideal. Even though it works now it took me some time to get to figure out what was the issue, so going for the cheapest one might be a bet.
 
 ## Things to get
 
@@ -51,7 +49,7 @@ You can get the whole lot directly as a kit from lightberry. It costs about 90â‚
 Download and install these and store the lightberry firmware somewhere on your pc.
 
 [Arduino software](https://www.arduino.cc/en/Main/Software)  
-[Latest lightberry firmware]([http://update.lightberry.eu/](http://update.lightberry.eu/))  
+[Latest lightberry firmware]([http://update.lightberry.eu/](http://update.lightberry.eu/)  
 [HyperCon](https://sourceforge.net/projects/hyperion-project/files/hypercon/HyperCon.jar)  
 [Java](http://www.java.com/en/)
 
@@ -60,6 +58,8 @@ Download and install these and store the lightberry firmware somewhere on your p
 I had an issue with a bunch a LEDs flickering like crazy all the time that is fixed by updating the firmware of the lightberry.
 
 Follow this tutorial from lightberry to update the firmware : [http://update.lightberry.eu/](http://update.lightberry.eu/)
+
+**Scroll down to the end for the alternative without lightberry.**
 
 ## Install the LEDs
 
@@ -70,7 +70,7 @@ You will need to cut 4 lengths of strip for each side of the TV.
 - Find where to cut your LED strip by "simulating" the placement on your TV. Mine has 16 LEDs on the left and right sides, 29 LEDs on top and bottom for 42". Be sure to take into account that you can cut it only on the links.
 - Cut the strip where you defined it.
 - Solder the bits together with electric wires of about 5cm. If you have heat shrink it'll be cleaner to protect the soldered part, I don't have any so I just used tape.
-- Take out the tape protection and stick it on the sides. I can remove the TV stand by just sliding it down so I ran my LED strip all the way through the bottom side of the TV and left the tape protection on the back of the strip so it doesn't stick to the stand (Red square). But if this would prevent you from taking out the stand you need to leave a gap the size of the stand and connect the to sides with whatever 4 pins connector.
+- Take out the tape protection and stick the strip on the borders of the TV. I can remove the TV stand by just sliding it down so I ran my LED strip all the way through the bottom side and left the tape protection on the back of the strip so it doesn't stick to the stand (Red square). But if this would prevent you from taking out the stand you need to leave a gap the size of the stand and connect the two sides with whatever 4 pins connector.
 
 The glue on the back of the strip isn't the best ever and the heat of the TV doesn't help, so I added a few ugly bits of tape to secure the led strip.
 
@@ -82,7 +82,7 @@ The glue on the back of the strip isn't the best ever and the heat of the TV doe
 
 **Check SSH is enabled:**
 
-- Go to "OpenELEC Settings" -> "Services" -> Uncheck "Disable SSH Password"![]
+- Go to "OpenELEC Settings" -> "Services" -> Uncheck "Disable SSH Password"
 
 ![openelec-enable-ssh.png]({{site.baseurl}}/img/openelec-enable-ssh.png)
 
@@ -99,7 +99,7 @@ If you don't enable the remote control, Hyperion will fail to connect to Kodi an
 
 **Creation of the configuration**
 
-- Launch Hypercon.jar
+Launch Hypercon.jar and start building your configuration.
 
 _Hardware tab_
 
