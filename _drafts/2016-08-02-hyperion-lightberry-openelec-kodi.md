@@ -105,13 +105,13 @@ _Hardware tab_
 
 - **Type** : Adalight  
 - **Output** : /dev/ttyACM0  
-- **Construction** : Select the one that applies to how you've installed your LED. The direction is facing the TV.  
+- **Construction** : Select where your LED strip starts, facing the TV screen.  
 - **Direction** : Direction from start to end of the led strip.  
 - **LEDs** : Number of LEDs on each side.  
 - **Bottom Gap**: Number of LED top - Number of LEDs bottom.  
 - **1st LED offset**: Adjust this value so the 0 is at the start of your strip on the image.  
 - **Blackborder detection** : Enabled (makes the LEDs work even with black borders).  
-- **Threshold[%]**: 1 (Threshold under which the color is considered black).
+- **Threshold[%]**: 1. Threshold under which the color is considered black.
 
 ![Hypercon-basic1.jpg]({{site.baseurl}}/img/Hypercon-basic1.jpg)
 
@@ -128,11 +128,12 @@ Skip the grabber tab as you shouldn't need to touch anything there.
 _External tab_
 
 Kodi checker allows hyperion to get the status of Kodi.  
+This is why we enabled the two checkboxes earlier.  
 - Leave 9090 if you haven't changed the default port.
 
 - Uncheck the boxes for when you want the LEDs to be switched off.
 
-- Under "Effect" you can change the effect on the LEDs at the startup of Kodi.
+- Under "Effect" you can change the effect on the LEDs at the startup of Kodi. The police one is pretty fun but rainbow is cool too.
 
 ![kodi-integration.jpg]({{site.baseurl}}/img/kodi-integration.jpg)
 
@@ -158,14 +159,17 @@ _SSH tab_
 
 ![hypercon-connect.jpg]({{site.baseurl}}/img/hypercon-connect.jpg)
 
-If it's worked you should see the boot sequence that you chose in the external tab ("Police lights single").
+If it worked you should see the boot sequence that you chose in the external tab ("Police lights single").
 
-Now check the colors with the color picker (chose it and click "Set led color"). The ones you want to check are red, green and blue.
+Now check the colors with the color picker (chose it and click "Set led color"). The main ones you want to check are red, green and blue.
 
 If they are inverted you need to recreate the config file after changing the order in the hardware tab under "RGB Byte Order".
 
 For example, if your leds are blue when you choose red and vice-versa, change RGB to BGR.
 
-**Colors calibration**
+## Mobile app
 
-If you are brave enough you can follow
+Something pretty cool as well is to control your LEDs with your smartphone. You can set a fixed color or play the preconfigured effects, I use it a lot as a ambient light in my living room.
+
+[iPhone](https://itunes.apple.com/fr/app/hyperion-remote/id943635503?mt=8)  
+[Android](https://play.google.com/store/apps/details?id=nl.hyperion.hyperionfree&hl=fr)
