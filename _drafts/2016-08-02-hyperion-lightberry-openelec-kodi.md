@@ -121,6 +121,19 @@ _Hardware tab_
 
 _Process tab_
 
-I change the "Time [ms]" value from 200ms to 75ms, otherwise it looks like there is a latency and the LEDs or not in sync with the TV especially in scenes with lot's of action.
+I change the "Time [ms]" value from 200ms to 75ms, otherwise it looks like there is a latency and the LEDs or not in sync with the TV especially in scenes with a lot of action.
 
 ![linear-smoothing.jpg]({{site.baseurl}}/img/linear-smoothing.jpg)
+
+Skip the grabber tab as you shouldn't need to touch anything there.
+
+_External tab_
+
+Kodi checker allows hyperion to get the status of Kodi.  
+Leave 9090 if you haven't changed the default port.
+
+Uncheck the boxes for when you want the LEDs to be switched off.
+
+Under "Effect" you can change the effect on the LEDs at the startup of Kodi.
+
+![kodi-integration.jpg]({{site.baseurl}}/img/kodi-integration.jpg)
