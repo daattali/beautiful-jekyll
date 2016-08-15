@@ -171,5 +171,7 @@ For example, if your leds are blue when you choose red and vice-versa, change RG
 
 Something pretty cool as well is to control your LEDs with your smartphone. You can set a fixed color or play the preconfigured effects, I use it a lot as a ambient light in my living room.
 
+![iphone-hyperion.jpg]({{site.baseurl}}/img/iphone-hyperion.jpg)
+
 [iPhone](https://itunes.apple.com/fr/app/hyperion-remote/id943635503?mt=8)  
 [Android](https://play.google.com/store/apps/details?id=nl.hyperion.hyperionfree&hl=fr)
