@@ -145,3 +145,23 @@ Click "Save" to save the parameters in a dat file.
 Click "Create Hyperion Configuration" to create the actual config file called "hyperion.config.json".
 
 **installation of Hyperion and push of the config**
+
+_SSH tab_
+
+- Select your System (OpenElec/LibreElec or not OpenElec/LibreElec). So if you have OSMC chose "All systems".
+- Enter IP, username, password and click connect.
+- Click "Inst./Update Hyperion" and wait for it to finish (can take a little while).
+- Once it's finished restart OpenElec.
+- Reconnect with Hypercon.
+- Click "Stop" to stop the Hypercon daemon.
+- Click "local path" and select your generated "hyperion.config.json".
+- Click "Send" to send the config to hyperion.
+- Start the daemon.
+
+If it's worked you should see the boot sequence that you chose in the external tab ("Police lights single").
+
+Now check the colors with the color picker (chose it and click "Set led color"). The ones you want to check are red, green and blue.
+
+If they are inverted you need to recreate the config file after changing the order in the hardware tab under "RGB Byte Order".
+
+For example, if your leds are blue when you choose red and vice-versa, change RGB to BGR.
