@@ -1,7 +1,8 @@
 ---
 layout: post
-published: false
+published: true
 title: Hyperion + Lightberry + OpenElec + Kodi
+date: 2016/08/15
 ---
 I did this project to create a mood lighting behind the TV that "follows" the colors displayed on the screen and enhance the experience of movie watching. It is pretty much an open source version of Philips' Ambilight except it can work on a wide range of devices and is much cheaper (with a little bit of hardware and some elbow grease).
 
