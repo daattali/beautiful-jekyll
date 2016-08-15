@@ -196,16 +196,16 @@ Link to the apps:
 
 ## Version without lightberry
 
-If you don't want to use the GPIO pins instead of the lightberry converter, it will be globally the same process with a few exceptions.
+If you want to use the GPIO pins instead of the lightberry converter, it will be globally the same process with a few exceptions.
 
 Led strip connection to the GPIO:
-- Clock to pin 23
-- Data to pin 19
+- Clock to pin 23 (Usually CK)
+- Data to pin 19 (Usually DI or SI)
 - GND to pin 6
 
 Power supply to the LED strip:
 - You still need a power supply (like my 5V, 4A)
-- You need a connector to connect the strip : [Like this one](https://www.amazon.co.uk/gp/product/B006W2I13S/ref=s9_cartx_gw_g23_i1_r?ie=UTF8&fpl=fresh&pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-2&pf_rd_r=38T9RM16XSGG66TR0X3Q&pf_rd_t=36701&pf_rd_p=73fe89c4-d62f-4a8a-8074-7c0f4d46813c&pf_rd_i=desktop)
+- You need a DC adapter to connect the strip : [Like this one](https://www.amazon.co.uk/gp/product/B006W2I13S/ref=s9_cartx_gw_g23_i1_r?ie=UTF8&fpl=fresh&pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-2&pf_rd_r=38T9RM16XSGG66TR0X3Q&pf_rd_t=36701&pf_rd_p=73fe89c4-d62f-4a8a-8074-7c0f4d46813c&pf_rd_i=desktop)
 - Connect the 5V of the LED to the + of the connector
 - Connect the GND of the LED to the - of the connector
 
