@@ -3,13 +3,13 @@ layout: post
 title: 'Next Meeting - August 25th 2016 - PSAppDeployToolkit'
 ---
 
-## Cincinnati PowerShell User Group – August Meeting - PSAppDeployToolkit
+## Cincinnati PowerShell User Group – August Meeting – PSAppDeployToolkit
 
 ### When: August 25th – 6PM **THURSDAY!**
 
 ### Where: [Max Technical Training, Mason, OH](https://goo.gl/maps/ijBGbvJQR3B2)
 
-### Sign up here: [Cincy PSUG Meetup](http://www.meetup.com/TechLife-Cincinnati/events/23277490/)
+### Sign up here: [Cincy PSUG Meetup](http://www.meetup.com/TechLife-Cincinnati/events/233361036/)
 
 ```powershell 
 PS C:\> Get-PSUG | where {$_.City -eq Cincinnati}
