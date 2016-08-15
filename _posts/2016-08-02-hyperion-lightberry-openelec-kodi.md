@@ -17,7 +17,7 @@ Here are the different components of the system and what they do.
 
 - **Hyperion** : [Website](https://hyperion-project.org/wiki/Main)
 
-Hyperion is an open source _Ambilight implementation_ under MIT license. It is the software that controls the LEDs according to the colors detected with a clever algorithm. There are other similar projects such as Boblight but I chose Hyperion as it seems to be the most common.
+Hyperion is an open source _Ambilight implementation_ under MIT license. It is the software that controls the LEDs according to the colors detected with a clever algorithm. There are other similar projects such as Boblight but I chose Hyperion as it seems to be the best.
 
 - **Lightberry** : [Website](http://lightberry.eu/)
 
