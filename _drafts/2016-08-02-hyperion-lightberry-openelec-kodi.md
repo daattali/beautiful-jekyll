@@ -37,17 +37,21 @@ They must be individually addressable, meaning you can control the LEDs independ
 
 I got my leds from a cheap chinese seller on amazon and I had issues with the LED strip which had the connector badly wired, so I had to redo it by desoldering and resoldering properly. Even though it works now it took me some time to get to figure out what was the issue, so going for the cheapest one might be a bet.
 
-## What you need
+## Things to get
 
-- WS2801 LED strips.
-- Lightberry USB converter (include the USB cable).
-
-![ledandlightberry.jpg]({{site.baseurl}}/img/ledandlightberry.jpg)
-
-- A power supply
+- [WS2801 LED strips](https://www.amazon.co.uk/MENGCORE%C2%AE-Addressable-WS2801-32Leds-non-Waterproof/dp/B01CFUI2NO/ref=sr_1_1?ie=UTF8&qid=1471249479&sr=8-1&keywords=ws2801+5m).
+- [Lightberry USB converter](https://lightberry.eu/shop/shop/diy-lightberry-usb-level-converter/) (include the USB cable).
+- [A power supply](https://lightberry.eu/shop/shop/diy-lightberry-power-supply/)
 - A soldering iron
 
 You can get the whole lot directly as a kit from lightberry. It costs about 90€ and contains everything you need. [Lightberry HD Kit](https://lightberry.eu/shop/shop/lightberry-hd/)
+
+## Things to download
+
+[Arduino software](https://www.arduino.cc/en/Main/Software)  
+[Latest lightberry firmware]([http://update.lightberry.eu/](http://update.lightberry.eu/))  
+[HyperCon](https://sourceforge.net/projects/hyperion-project/files/hypercon/HyperCon.jar)  
+[Java](http://www.java.com/en/)
 
 ## Update firmware of the lightberry USB converter
 
@@ -55,56 +59,13 @@ I had an issue with a bunch a LEDs flickering like crazy all the time that is fi
 
 Follow this tutorial from lightberry to update the firmware : [http://update.lightberry.eu/](http://update.lightberry.eu/)
 
-The link to download the latest firmware is on the left under "Version history".
-
 ## Install the LEDs
 
 Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
 
-## Install Hyperion
+## Hyperion installation and configuration
 
-- First Connect to your OpenElec via SSH using your favorite SSH client (Putty). Default Username/Password are root/openelec.
+To get hyperion running we will use a very good tool called HyperCon. It is a jar file so you will need Java(JRE).
 
-- Download the Hyperion project script.
 
-```
-curl -L --output install_hyperion.sh --get https://raw.githubusercontent.com/tvdzwan/hyperion/master/bin/install_hyperion.sh
-```
 
-- Install Hyperion, the raspberry pi will reboot.
-
-```
-sh ./install_hyperion.sh
-```
-
-Your SSH session should look like this.
-
-![ssh-hyperion.JPG]({{site.baseurl}}/img/ssh-hyperion.JPG)
-
-## Configure Hyperion
-
-- First download the Hyperion Configurator plugin for Kodi on the [website of lightberry](http://lightberry.eu/).
-
-Scroll all the way down to the downloads and grab the Config generator plugin. It's a tiny zip file of about 44KB.
-
-![Hyperion-config-addon.jpg]({{site.baseurl}}/img/Hyperion-config-addon.jpg)
-
-- Transfer the zip file somewhere OpenElec has access. I used WinSCP to copy the file in the rom.
-
-![zip-winscp.JPG]({{site.baseurl}}/img/zip-winscp.JPG)
-
-- Go back to Kodi > Add on > Install from zip file
-
-![Install-from-zip.jpg]({{site.baseurl}}/img/Install-from-zip.jpg)
-
-- browse to the location of the zip file
-
-![Zip-home-folder.jpg]({{site.baseurl}}/img/Zip-home-folder.jpg)
-
-![hyperion-zip-plugin.jpg]({{site.baseurl}}/img/hyperion-zip-plugin.jpg)
-
-![select-hyperion-plugin.jpg]({{site.baseurl}}/img/select-hyperion-plugin.jpg)
-
-- Select the zip file containing the Hyperion plugin and check that it installs correctly
-
-![hyperion-plugin-installed.jpg]({{site.baseurl}}/img/hyperion-plugin-installed.jpg)
