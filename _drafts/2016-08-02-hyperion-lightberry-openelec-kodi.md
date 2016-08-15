@@ -147,7 +147,7 @@ _Save config_
 
 _SSH tab_
 
-- Select your System (OpenElec/LibreElec or not OpenElec/LibreElec). So if you have OSMC chose "All systems".
+- Select your System (OpenElec/LibreElec or not OpenElec/LibreElec). So if you have OSMC choose "All systems".
 - Enter IP, username, password and click connect.
 - Click "Inst./Update Hyperion" and wait for it to finish (can take a little while).
 - Once it's finished restart OpenElec.
@@ -161,7 +161,7 @@ _SSH tab_
 
 If it worked you should see the boot sequence that you chose in the external tab ("Police lights single").
 
-Now check the colors with the color picker (chose it and click "Set led color"). The main ones you want to check are red, green and blue.
+Now check the colors with the color picker (choose it and click "Set led color"). The main ones you want to check are red, green and blue.
 
 If they are inverted you need to recreate the config file after changing the order in the hardware tab under "RGB Byte Order".
 
@@ -173,5 +173,28 @@ Something pretty cool as well is to control your LEDs with your smartphone. You 
 
 ![iphone-hyperion.jpg]({{site.baseurl}}/img/iphone-hyperion.jpg)
 
+Link to the apps:  
 [iPhone](https://itunes.apple.com/fr/app/hyperion-remote/id943635503?mt=8)  
 [Android](https://play.google.com/store/apps/details?id=nl.hyperion.hyperionfree&hl=fr)
+
+## Version without lightberry
+
+If you don't want to use the GPIO pins instead of the lightberry converter, it will be globally the same process with a few exceptions.
+
+Led strip connection to the GPIO:
+- Clock to pin 23
+- Data to pin 19
+- GND to pin 6
+
+Power supply to the LED strip:
+- You still need a power supply (like my 5V, 4A)
+- You need a connector to connect the strip : [Like this one](https://www.amazon.co.uk/gp/product/B006W2I13S/ref=s9_cartx_gw_g23_i1_r?ie=UTF8&fpl=fresh&pf_rd_m=A3P5ROKL5A1OLE&pf_rd_s=desktop-2&pf_rd_r=38T9RM16XSGG66TR0X3Q&pf_rd_t=36701&pf_rd_p=73fe89c4-d62f-4a8a-8074-7c0f4d46813c&pf_rd_i=desktop)
+- Connect the 5V of the LED to the + of the connector
+- Connect the GND of the LED to the - of the connector
+
+Hyperion config:
+- Instead of choosing Adalight > Choose WS2801
+- Instead of choosing /dev/ttyACM0 > choose /dev/spidev0.0
+
+Then you will need to get all of this nice and tidy with connectors, heat shrink and wires. The rest is essentially the same.
+
