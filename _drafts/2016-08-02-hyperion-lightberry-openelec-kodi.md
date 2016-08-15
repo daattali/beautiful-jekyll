@@ -41,7 +41,7 @@ I got my leds from a cheap chinese seller on amazon and I had issues with the LE
 
 - [WS2801 LED strips](https://www.amazon.co.uk/MENGCORE%C2%AE-Addressable-WS2801-32Leds-non-Waterproof/dp/B01CFUI2NO/ref=sr_1_1?ie=UTF8&qid=1471249479&sr=8-1&keywords=ws2801+5m).
 - [Lightberry USB converter](https://lightberry.eu/shop/shop/diy-lightberry-usb-level-converter/) (include the USB cable).
-- [A power supply](https://lightberry.eu/shop/shop/diy-lightberry-power-supply/)
+- [A 5V power supply](https://lightberry.eu/shop/shop/diy-lightberry-power-supply/), I've got 4A and that works fine.
 - A soldering iron
 
 You can get the whole lot directly as a kit from lightberry. It costs about 90€ and contains everything you need. [Lightberry HD Kit](https://lightberry.eu/shop/shop/lightberry-hd/)
