@@ -61,7 +61,11 @@ Follow this tutorial from lightberry to update the firmware : [http://update.lig
 
 ## Install the LEDs
 
-Thanks to the guys of the Hyperion project and lightberry it is super easy to set up.
+When you order the kit from lightberry you get a bunch of hooks to run the led strip sideways without using the tape on the back. But because I didn't get the kit I just stuck it on the back of the TV with the embedded 3M tape.
+
+The glue on the back of the strip isn't the best ever and the heat of the TV doesn't help, so I added a few ugly bits of tape to secure the led strip.
+
+![ledbehindtv.jpg]({{site.baseurl}}/img/ledbehindtv.jpg)
 
 ## Hyperion installation and configuration
 
