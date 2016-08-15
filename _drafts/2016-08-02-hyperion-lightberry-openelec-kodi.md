@@ -74,7 +74,7 @@ The glue on the back of the strip isn't the best ever and the heat of the TV doe
 
 ![ledbehindtv.jpg]({{site.baseurl}}/img/ledbehindtv.jpg)
 
-
+- Connect the lightberry box to the LED strip, the raspberry pi and to the power supply.
 
 ## Hyperion installation and configuration
 
