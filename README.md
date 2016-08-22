@@ -34,7 +34,7 @@ Scroll down to see the steps involved, but here is a 40-second video just as a r
 
 ![Installation steps](img/install-steps.gif)
 
-### 1. Fork this repository 
+### 1. Fork this repository
 
 (Assuming you are on this page and logged into GitHub) Fork this repository by clicking the *Fork* button on the top right corner. Forking means that you now copied this whole project and all the files into your account.
 
@@ -125,6 +125,7 @@ Parameter   | Description
 ----------- | -----------
 title       | Page or blog post title
 subtitle    | Short description of page or blog post that goes under the title
+keywords    | Keywords of page or blog post that goes under the title
 bigimg      | Include a large full-width image at the top of the page.  You can either give the path to a single image, or provide a list of images to cycle through (see [my personal website](http://deanattali.com/) as an example).
 comments    | If you want do add Disqus comments to a specific page, use `comments: true`. Comments are automatically enabled on blog posts; to turn comments off for a specific post, use `comments: false`. Comments only work if you set your Disqus id in the `_config.yml` file.
 show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`. If you want to turn it off by default, locate the line `show-avatar: true` in the file `_config.yml` and change the `true` to `false`; then you can selectively turn it on in specific pages using `show-avatar: true`.
@@ -153,7 +154,7 @@ To set up a GitHub Project page, simply fork this repository into a branch calle
 
 ### Advanced features (including how to use a custom URL address for your site)
 
-I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
+I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
 
 ### Featured users (success stories!)
 
@@ -197,7 +198,7 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
 1. Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com)
 2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
 3. Inside your repository folder, run `vagrant up`
-4. View your website at `http://0.0.0.0:4000` on *nix or `http://127.0.0.1:4000` on Windows. 
+4. View your website at `http://0.0.0.0:4000` on *nix or `http://127.0.0.1:4000` on Windows.
 5. Commit any changes and push everything to the master branch of your GitHub repository. GitHub Pages will then rebuild and serve your website automatically.
 
 Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
