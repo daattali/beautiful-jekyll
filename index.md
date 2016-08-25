@@ -6,7 +6,9 @@ subtitle: Craig French's Research Page
 
 ### Articles
 
-1. [Object Seeing and Spatial Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%20FINAL%20DRAFT%20-%20Object%20Seeing%20and%20Spatial%20Perception.pdf) in *Phenomenal Presence*, edited by Fabian Dorsch, Fiona Macpherson & Martine Nida-Rumelin, Oxford University Press. Forthcoming. 
+1. The Invalidity of the Argument from Illusion forthcoming in *American Philosophical Quarterly*. (With [Lee Walters](http://www.leewaltersphilosophy.co.uk/)) 
+
+2. [Object Seeing and Spatial Perception](https://dl.dropboxusercontent.com/u/3913409/Site%20Content/Research/French%2C%20C%20-%20FINAL%20DRAFT%20-%20Object%20Seeing%20and%20Spatial%20Perception.pdf) in *Phenomenal Presence*, edited by Fabian Dorsch, Fiona Macpherson & Martine Nida-Rumelin, Oxford University Press. Forthcoming. 
 
 2. [Still Particular](http://philpapers.org/go.pl?id=GOMSPA&u=http%3A%2F%2Fphilpapers.org%2Farchive%2FGOMSPA.pdf). Archived on [PhilPapers](http://philpapers.org/rec/GOMSPA), May 2016. (With [Anil Gomes](http://www.anilgomes.com/))
 
