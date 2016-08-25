@@ -9,7 +9,7 @@
 
 # If you are building a GitHub project page then use these settings:
 url: "http://craigafrench.github.io/"
-baseurl: "/research"
+baseurl: "/talks"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
@@ -17,7 +17,7 @@ baseurl: "/research"
 # title: Craig French - Research
 
 # Short description of your site
-description: Craig French's Research
+description: Recent and Upcoming Talks
 
 # --- Navigation bar options --- #
 
@@ -28,7 +28,7 @@ avatar: "/img/avatar-icon.png"
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Talks: "talks"
+  Research: "research"
   CV:	"assets/CraigFrenchCV.pdf"
 # --- Footer options --- #
 
@@ -77,3 +77,7 @@ exclude:
   - CNAME
   - LICENSE
   - README.md
+
+# Google Analytics
+google_analytics: 	UA-66399450-1
+google_verify: 		UA-66399450-1
