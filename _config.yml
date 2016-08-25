@@ -8,8 +8,8 @@ url: "http://CincyPowerShell.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+url: "http://daattali.github.io/beautiful-jekyll"
+baseurl: "/beautiful-jekyll"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
@@ -74,7 +74,7 @@ url-pretty: "CincyPowerShell.org"  # eg. "deanattali.com/beautiful-jekyll"
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-59820529-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -95,7 +95,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: true  # add comments to all blog posts 
+      show-share: true # add sharing buttons to all blog posts
   -
     scope:
       path: "" # all files

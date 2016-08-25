@@ -109,9 +109,9 @@
 		  &nbsp;&bull;&nbsp;
 		  {{ site.time | date: '%Y' }}
 		  
-		  {% if site.url-pretty %}
+		  {% if site.author.email %}
 		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+		  <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
 		  {% endif %}
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->

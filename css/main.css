@@ -54,6 +54,15 @@ hr.small {
   padding: 15px inherit;
 }
 
+.get-started-wrap {
+  text-align: center;
+}
+.get-started-btn {
+  padding: 15px 30px;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
 .hideme {
   display: none;
 }
@@ -220,7 +229,7 @@ img {
   }
   .navbar-custom .nav .navlinks-children {
     position: absolute;
-	text-align: center;
+    text-align: center;
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
     padding-left: 10px;
