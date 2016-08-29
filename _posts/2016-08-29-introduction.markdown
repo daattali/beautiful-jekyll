@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to Technology Contained!"
 date:   2016-08-28 09:42:03 -0500
-categories: jekyll update
 ---
 Welcome to Technology Contained. I'm David, and I'll be your host.
 
