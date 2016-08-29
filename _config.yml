@@ -34,8 +34,14 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: David Ayers
+  name: The Container Store IS Department
   email: "davida@containerstore.com"
+
+authors:
+  david:
+    display_name: David Ayers
+    gravatar: ae8f258896f1e0441169e9f1981c494e
+    email: davida@containerstore.com  
 
 # Select which links to show in the footer
 footer-links-active:

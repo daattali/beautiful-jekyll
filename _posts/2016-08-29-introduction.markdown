@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Welcome to Technology Contained!"
-date:   2016-08-28 09:42:03 -0500
+subtitle: I'm David, and I'll be your host.
+author: david
+bigimg: /img/keyboard.jpg
 ---
-Welcome to Technology Contained. I'm David, and I'll be your host.
-
 # What's Going on Here?
 
 I know that for a lot of people, what goes on in the IS department is a bit of a mystery. People ask for something, and voila! It appears (at some indeterminate point in the future). What goes on in that middle part, where we're busy toiling away building stuff, is where the magic happens.
