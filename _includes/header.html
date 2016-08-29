@@ -36,7 +36,9 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		    {% assign author = site.authors[page.author] %}
+	        <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+		  	<span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }} by <a href="mailto:{{ author.email }}">{{ author.display_name }}</a></span>
 		  {% endif %}
         </div>
       </div>
@@ -61,7 +63,9 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		    {% assign author = site.authors[page.author] %}
+	        <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+		  	<span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }} by <a href="mailto:{{ author.email }}">{{ author.display_name }}</a></span>
 		  {% endif %}
         </div>
       </div>
