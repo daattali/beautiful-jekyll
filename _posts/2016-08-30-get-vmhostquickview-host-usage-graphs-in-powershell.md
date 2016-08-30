@@ -1,7 +1,9 @@
 ---
 layout: post
 published: false
-title: Get-VMHostQuickView - Host usage graphs in PowerShell
+title: Graphical view of vSphere hosts usage in Powershell
+date: '2016-08-30'
+meta description: Graphical view of vSPhere hosts usage in Powershell
 ---
 At work I spend a lot of time on PowerCLI for day to day administration as it is often much quicker to just run a command than log on the web client (wait for it to take its time), browse to where you want, wait for the interface to load... 
 
