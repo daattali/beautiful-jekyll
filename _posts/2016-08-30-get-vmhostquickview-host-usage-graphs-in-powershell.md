@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Graphical view of vSphere hosts usage in Powershell
 date: '2016-08-30'
 meta description: Graphical view of vSPhere hosts usage in Powershell
