@@ -41,14 +41,14 @@ avatar: "/img/avatar-icon.png"
 author:
   name: Fernando Bastos
   email: "fsbmat@gmail.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourname  # eg. daattali
+  facebook: fsbmat  # eg. daattali
+  github: fsbmat    # eg. daattali
+  twitter: fsbmat   # eg. daattali
+  linkedin: fsbmat  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   instagram: yourname # eg. daattali
-  youtube: yourlink # eg. user/daattali or channel/daattali
+  youtube: fsbmat # eg. user/daattali or channel/daattali
 
 # Select which links to show in the footer
 footer-links-active:
@@ -57,7 +57,7 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   instagram: false
