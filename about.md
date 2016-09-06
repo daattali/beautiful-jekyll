@@ -4,14 +4,11 @@ title: About the MDS
 
 ---
 
-## Overview
+## Introduction
 
 The University of British Columbia is a comprehensive research-intensive university, consistently ranked among the 40 best universities in the world. Since 1915, it has created an exceptional learning environment that fosters global citizenship, advances a civil and sustainable society, and supports outstanding research. Its entrepreneurial perspective encourages students, staff and faculty to challenge convention, lead discovery and explore new ways of learning.
 
 The Department of Computer Science and Department of Statistics at UBC have internationally recognized strengths in data management, data analysis, visualization and software development. These areas are at the core of the emerging discipline known as Data Science, which focuses on the extraction of knowledge from typically large volumes of data. These two departments, both housed in the Faculty of Science, are planning a new course-based Master’s degree program, the Master of Data Science (MDS). This program will focus on utilizing descriptive and prescriptive techniques to extract and analyze data from both unstructured and structured forms and to communicate the findings of those analyses to guide prescriptive change in organizations. This program will educate students in the analysis of data for many different disciplines, such as health care, commerce, and utilities, and will help address the demand for skilled data science professionals in these areas.
-
-## Positions
-* [Job ad for a Postdoctoral Teaching and Learning Fellow](https://github.com/UBC-MDS/mds-stats-teaching-fellow) [note: this position has been filled]
 
 ## Additional details
 
