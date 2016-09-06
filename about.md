@@ -12,7 +12,7 @@ The Department of Computer Science and Department of Statistics at UBC have inte
 
 ## Additional details
 
-**Program Start Date**: The program will be first offered in September 2016.
+**Program Start Date**: The first cohort of the MDS program started in September 2016.
 
 **Program Completion Time**: Anticipated time for completion of the program is 10 months of full-time academic study.
 
@@ -27,3 +27,18 @@ The Department of Computer Science and Department of Statistics at UBC have inte
   * Apply fundamental programming principles in the data analysis process, with particular emphasis on modularity and reproducibility.
 
 **Delivery Methods**: The program consists of [24 credits of required coursework and a 6-credit capstone project](https://ubc-mds.github.io/descriptions/). The courses will be largely face-to-face lectures, with some blended delivery, and required laboratories. The 24 credits of coursework will be in 1-credit courses to enable intensive focus on particular techniques and skills; students will enrol in either two courses simultaneously for two weeks or four courses simultaneously for four weeks. A small number of selected data sets will be consistently used across the courses, providing continuity for the students across courses. The capstone project will provide an opportunity for students to work together in groups and simulate the process of solving a domain problem on real-world data. This includes posing critical questions about data within a particular domain, making a plan, allocating responsibilities among team members, employing the skills they have learned throughout the program, and reflecting on the strengths and weaknesses of the chosen approach.
+
+## Workload
+
+The table below is a rough estimate of the MDS program workload. We may adjust this as we gain experience from the first cohort. 
+
+| Activity | Hrs/wk |
+|-----|----|
+| Lectures | 12 |
+| Labs  | 8 |
+| Homework (finishing labs) | 8 |
+| Readings, studying | 4 |
+| Peer review | 2 | 
+| Other online activities (Slack, surveys, etc.) | 2 |
+| Thinking about the capstone project | 1 |
+| TOTAL | 35-40 |
