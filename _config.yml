@@ -23,7 +23,7 @@ description: Página para divulgar idéias e interesses pessoais!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "Sobre mim"
+  Lattes: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4164030D3"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
