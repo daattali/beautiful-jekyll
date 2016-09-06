@@ -1,3 +1,9 @@
+---
+layout: page
+title: Careers
+
+---
+
 ## Open Positions
 There are currently no open positions.
 
