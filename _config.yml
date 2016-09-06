@@ -23,12 +23,12 @@ description: Página para divulgar idéias e interesses pessoais!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: "Sobre mim"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  #Author's home: "http://deanattali.com"
+  Projetos: "http://fsbmat.github.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -72,7 +72,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "Minha página pessoal"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
