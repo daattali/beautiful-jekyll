@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Quizzes in the MDS
+title: Quizzes
 
 ---
 
