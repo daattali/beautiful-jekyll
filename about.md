@@ -36,9 +36,8 @@ The table below is a rough estimate of the MDS program workload. We may adjust t
 |-----|----|
 | Lectures | 12 |
 | Labs  | 8 |
-| Homework (finishing labs) | 8 |
+| Homework (finishing labs) | 8-12 |
 | Readings, studying | 4 |
 | Peer review | 2 | 
 | Other online activities (Slack, surveys, etc.) | 2 |
-| Thinking about the capstone project | 1 |
 | TOTAL | 35-40 |
