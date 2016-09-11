@@ -620,3 +620,9 @@ td.code pre {
 td.gutter {
   padding-top: 3px;
 }
+
+/* --- Social media sharing section --- */
+
+#social-share-section {
+  margin-bottom: 30px;
+}
