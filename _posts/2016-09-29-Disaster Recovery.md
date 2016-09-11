@@ -25,4 +25,4 @@ We’ll talk theory, challenges, and show some real world examples of Disaster R
 
 SAPIEN Technologies will be sponsoring the Cincinnati PowerShell User Group meeting and will be supplying the pizza!
 
-![Sapien](http://cincypowershell.org/img/sapien.jpe
+![Sapien](http://cincypowershell.org/img/sapien.jpeg)
