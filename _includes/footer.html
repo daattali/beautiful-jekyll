@@ -33,6 +33,16 @@
             </a>
           </li>
           {% endif %}
+      {% if site.author.google-plus and site.footer-links-active.google-plus %}
+          <li>
+            <a href="https://plus.google.com/{{ site.author.google-plus }}" title="Google+">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
 		  {% if site.author.email and site.footer-links-active.email %}
           <li>
             <a href="mailto:{{ site.author.email }}" title="Email me">
@@ -73,6 +83,16 @@
             </a>
           </li>
           {% endif %}
+      {% if site.author.snapchat and site.footer-links-active.snapchat %}
+          <li>
+            <a href="https://www.snapchat.com/add/{{ site.author.snapchat }}" title="Snapchat">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-snapchat-ghost fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
       {% if site.author.instagram and site.footer-links-active.instagram %}
           <li>
             <a href="https://www.instagram.com/{{ site.author.instagram }}" title="Instagram">
@@ -89,6 +109,16 @@
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.spotify and site.footer-links-active.spotify %}
+          <li>
+            <a href="https://open.spotify.com/user/{{ site.author.spotify }}" title="Spotify">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
