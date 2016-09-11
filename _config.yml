@@ -29,7 +29,6 @@ navbar-links:
   Program:
     - At a glance: "img/Course-Schedule-image.jpg"
     - Course Descriptions: "descriptions"
-    - Quizzes: "quiz"
     - Schedule: "calendar"
   Official website: "http://masterdatascience.science.ubc.ca/"
 
