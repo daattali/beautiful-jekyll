@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - August 25th 2016 - PSAppDeployToolkit'
+title: 'Meeting - August 25th 2016 - PSAppDeployToolkit'
 ---
 
 ## Cincinnati PowerShell User Group – August Meeting – PSAppDeployToolkit
