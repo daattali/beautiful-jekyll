@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Postdoctoral Teaching & Learning Fellow, UBC Vancouver
+subtitle: Postdoctoral Teaching & Learning Fellow, UBC Vancouver
 ---
 
 
@@ -23,7 +23,7 @@ The Fellow will:
 We aim to recruit a junior scholar who is committed to both the practice and the teaching of Data Science and who is drawn to an academic environment. 
 The position is subject to final budgetary approval. The Fellow will be appointed for up to one year beginning January 1st, 2017.  The Fellow will primarily report to the MDS Academic Program Director. We anticipate being able to offer a competitive salary compared to norms for postdoctoral fellowships.
 
-Applicants should hold a PhD in an area relevant to Data Science and have some background in Statistics. They should have experience in at least one of these areas and enthusiasm for all: practical data management and analysis; teaching at the postgraduate level; curriculum development; R/Python/SQL; version control and other practices related to collaborative and reproducible scientific work. Inquiries about qualifications  can be directed to jenny@stat.ubc.ca.
+Applicants should hold a PhD in an area relevant to Data Science and have some background in Statistics. They should have experience in at least one of these areas and enthusiasm for all: practical data management and analysis; teaching at the postgraduate level; curriculum development; R/Python/SQL; version control and other practices related to collaborative and reproducible scientific work. Inquiries about qualifications  can be directed to <jenny@stat.ubc.ca>.
 
 UBC hires on the basis of merit and is strongly committed to equity and diversity within its community. We especially welcome applications from visible minority group members, women, Aboriginal persons, persons with disabilities, persons of minority sexual orientations and gender identities, and others with the skills and knowledge to productively engage with diverse communities. All qualified candidates are encouraged to apply; however Canadians and permanent residents will be given priority.
 
