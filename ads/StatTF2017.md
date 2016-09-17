@@ -4,7 +4,7 @@ layout: page
 
 ## Postdoctoral Teaching & Learning Fellow
 
-The [University of British Columbia, Vancouver](http://www.ubc.ca/about) invites applications for a Postdoctoral Teaching & Learning Fellow, associated with the Master of Data Science (MDS) program.  This program is a collaborative effort of the [Department of Computer Science](https://www.cs.ubc.ca) and the [Department of Statistics](http://www.stat.ubc.ca), within the [Faculty of Science](http://science.ubc.ca).  The Fellow will be based in the Department of Statistics but work closely with colleagues from both departments.
+The [University of British Columbia, Vancouver](http://www.ubc.ca/about) invites applications for a Postdoctoral Teaching & Learning Fellow, associated with the [Master of Data Science](masterdatascience.science.ubc.ca) (MDS) program.  This program is a collaborative effort of the [Department of Computer Science](https://www.cs.ubc.ca) and the [Department of Statistics](http://www.stat.ubc.ca), within the [Faculty of Science](http://science.ubc.ca).  The Fellow will be based in the Department of Statistics but work closely with colleagues from both departments.
 
 The MDS program focusses on the innovative and responsible use of Data Science tools across a broad spectrum of data types and domain areas. It is a 10-month, full-time program, delivered in course modules of two-week and four-week durations. The last two months are devoted to a capstone project. The first cohort of students began their studies in September 2016.
 
