@@ -1,8 +1,8 @@
 ---
 layout: page
-subtitle: Postdoctoral Teaching & Learning Fellow, UBC Vancouver
 ---
 
+## Postdoctoral Teaching & Learning Fellow, UBC Vancouver
 
 The [University of British Columbia, Vancouver](http://www.ubc.ca/about) invites applications for a Postdoctoral Teaching & Learning Fellow, associated with the Master of Data Science (MDS) program.  This program is a collaborative effort of the [Department of Computer Science](https://www.cs.ubc.ca) and the [Department of Statistics](http://www.stat.ubc.ca), within the [Faculty of Science](http://science.ubc.ca).  The Fellow will be based in the Department of Statistics but work closely with colleagues from both departments.
 
@@ -27,5 +27,5 @@ Applicants should hold a PhD in an area relevant to Data Science and have some b
 
 UBC hires on the basis of merit and is strongly committed to equity and diversity within its community. We especially welcome applications from visible minority group members, women, Aboriginal persons, persons with disabilities, persons of minority sexual orientations and gender identities, and others with the skills and knowledge to productively engage with diverse communities. All qualified candidates are encouraged to apply; however Canadians and permanent residents will be given priority.
 
-Applicants should compile a single PDF file with the following elements: cover letter, curriculum vitae, contact information for three references, and any other pertinent information (e.g., evidence of teaching effectiveness or links to relevant data scientific work). The cover letter should specifically address how this position relates to the applicant’s experience and career aspirations. The file should be sent to Smith@science.ubc.ca. Applications will be reviewed as they arrive; those received by October 15th 2016 will receive full consideration.
+Applicants should compile a single PDF file with the following elements: cover letter, curriculum vitae, contact information for three references, and any other pertinent information (e.g., evidence of teaching effectiveness or links to relevant data scientific work). The cover letter should specifically address how this position relates to the applicant’s experience and career aspirations. The file should be sent to <Smith@science.ubc.ca>. Applications will be reviewed as they arrive; those received by October 15th 2016 will receive full consideration.
 
