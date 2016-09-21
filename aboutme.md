@@ -6,7 +6,7 @@ subtitle: French VMware engineer in Scotland
 <p align="center">
   <img src="/img/photo.jpg"/>
   <br>
-  <img src="/img/vExpert.png"/>
+  <a href="/img/vexpert-diplome.jpg"><img src="/img/vExpert.png"/></a>
 </p>  
 
 ### About me  
