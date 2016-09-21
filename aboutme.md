@@ -3,7 +3,11 @@ layout: page
 title: Author
 subtitle: French VMware engineer in Scotland
 ---
-<p align="center"><img src="/img/photo.jpg"/></p>  
+<p align="center">
+  <img src="/img/photo.jpg"/>
+  <br>
+  <img src="/img/vExpert.png"/>
+</p>  
 
 ### About me  
 The best thing about blogs is that people share what they learn, make tutorial and everyone increase his knowledge in this process. I have always read articles and tutorials as part of my job mainly, and I wanted to participate and share as well. It is a great opportunity for me to dig deeper into the topics I write about and to have a place to centralize the awesome things I stumbled into.
