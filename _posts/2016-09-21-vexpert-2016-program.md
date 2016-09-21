@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: vExpert 2016 program
 ---
 A couple weeks ago VMware sent over the emails to notify the new and returning **vExperts 2016**, and it is with great pleasure that I received mine!
