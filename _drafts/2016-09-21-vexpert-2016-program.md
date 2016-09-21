@@ -3,9 +3,9 @@ layout: post
 published: false
 title: vExpert 2016 program
 ---
-![vExpert.png]({{site.baseurl}}/img/vExpert.png)
-
 A couple weeks ago VMware sent over the emails to notify the new and returning **vExperts 2016**, and it is with great pleasure that I received mine!
+
+![vExpert.png]({{site.baseurl}}/img/vExpert.png)
 
 The vExpert program is an "award" given to the professionals who get involved in the VMware community by sharing their knowledge in blogs, helping others in community forums, acting as evangelists for VMware products, etc. In short, those who put effort to make the big machine work better and help other users. There are equivalents in other companies like Cisco champions or Microsoft MVPs for example.
 
