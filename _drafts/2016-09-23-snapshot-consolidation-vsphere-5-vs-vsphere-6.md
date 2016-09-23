@@ -7,4 +7,8 @@ vSphere 6 came with a train of new features , the biggest ones like Vvol or new 
 
 Prior to vSphere 6 the consolidation mecanism  worked such a way that it could lead to issues where the consolidation would fail and retry over and over again and could lead to crazy long stun times with unresponsive guest OS.
 
-In order to detail 
+In order to detail the new consolidation let's take an example.
+
+-----
+
+VM1 is an IO intensive box running on a snapshot.
