@@ -45,6 +45,9 @@ The consolidation can also be forced by shutting down the VM, if it doesn't work
 ## vSphere 6
 
 In the new version of vSphere, the snapshot mecanism uses the mirror driver also used by storage vMotion. While the consolidation is ongoing, the new writes are issued to both the active disk and the base disk, then the acknowledgement is sent. Which means:
+
 - Theoretically no helper snapshots
 - Much shorter stun times
 - One pass instead of maximum of 10 iterations
+
+Hopefully we won't have the joy to see body parts lying around after the backup of a VM anymore.
