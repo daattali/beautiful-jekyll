@@ -3,7 +3,7 @@ layout: post
 published: false
 title: 'Snapshot consolidation: vsphere 5 vs vSphere 6'
 ---
-Prior to vSphere 6 the consolidation mecanism  worked such a way that it could lead to issues where the consolidation of snapshots would fail and retry over and over again and could lead to crazy long stun times with unresponsive guest OS or a snapshot that doesn't want to go away (like Asterix's and Obelix's village).
+Prior to vSphere 6 the consolidation mecanism  worked such a way that it could lead to issues where the consolidation of snapshots would fail and retry over and over again and could lead to crazy long stun times with unresponsive guest OS or a snapshot that doesn't want to go away (like Asterix's and Obelix's village), especially on busy VMs.
 
 ![snapshot-gaulois.jpg]({{site.baseurl}}/img/snapshot-gaulois.jpg)
 
@@ -33,7 +33,7 @@ This issue is bad, if the consolidation keeps failing the VM runs on snapshot al
 ### Why it can be worse if it succeeds after x iterations
 If the virtual machine advanced parameter _snapshot.asyncConsolidate.forceSync_ is set to _"TRUE"_, a synchronous consolidation is forced! Which means the VM is stunned until the consolidation is complete. So according to several parameters such as the size of the helper snapshot or the storage type the VM can remain frozen for more than 30 minutes! Which can potentially be a catastrophy for a sensitive box (db?).
 
-This setting can be manually set to _"FALSE"_ to disable that forced synchronous consolidation and allow the VM to remain running on snapshots.
+This setting can be manually set to _"FALSE"_ (VM turned off) to disable that forced synchronous consolidation and allow the VM to remain running on snapshots.
 
 ### Getting rid of the annoying snapshot
 Sometimes it can work if for example the VMs calms down at night and has less activity, then the consolidation can catch up on the write rate and the consolidation succeeds.
@@ -44,3 +44,7 @@ The consolidation can also be forced by shutting down the VM, if it doesn't work
 
 ## vSphere 6
 
+In the new version of vSphere, while the active snapshot is being merged into the base disk, the new writes are issued to both of them in parallel. Which means:
+- Theoretically no helper snapshots
+- Much shorter stun times (smaller delta)
+- One pass instead of maximum of 10 iterations.
