@@ -23,9 +23,15 @@ The administrator orders to delete all snapshots o the VM.
 3.An estimate of the time required to merge the helper is made. If it is under 12 seconds the VM is stunned to stop all IOs and the helper is merged into the base VMDK
 4.If it is over 12 seconds, a new helper is created and all IOs are redirected to it
 5.The previous helper snapshot is merged into the base VMDK (in the meantime the VM writes to the new helper file)
-6.Back to step 3 for a maximum of 10 iterations, at every iteration the timeout is increased (the VM can be stunned for quite a long time, dangerous for db and sensitive apps)
+6.Back to step 3 for a maximum of 10 iterations, at every iteration the timeout is increased (5 mins, 10 mins, 20 mins, ...)
 
 There we can get into an endless loop ending in a "maximum consolidate retries was exceeded for scsix:x" error in ESXi and the snapshots never consolidate for this VM.
+
+### Why it is bad if it fails
+This issue is bad, if the consolidation keeps failing the VM runs on snapshot all the time, the host spends time doing the same useless thing over and over again, ...  
+
+### Why it can be worse if it succeeds after x iterations
+At each consolidation iteration, the maximum stun time is raised (step 4). So at first the stun time must be less than 12 seconds
 
 Sometimes it can work if for example the VMs calms down at night and has less activity, then the consolidation can catch up on the write rate and the consolidation succeeds.
 
