@@ -18,12 +18,12 @@ The administrator orders to delete all snapshots on the VM.
 
 ## vSphere 5
 
-1.A helper snapshot is created and all IOs are redirected to this snapshot
-2.The first snapshot is merged into the base VMDK (in the meantime the guest writes to the helper file)
-3.An estimate of the time required to merge the helper is made. _If it is under 12 seconds the VM is stunned to stop all IOs and the helper is merged into the base VMDK -> end of story._
-4.If it is over 12 seconds, a new helper is created and all IOs are redirected to it
-5.The previous helper snapshot is merged into the base VMDK (in the meantime the guest writes to the new helper file)
-6.Back to step 3 for a maximum of 10 iterations, at every iteration the timeout is increased (5 mins, 10 mins, 20 mins, ...)
+- **1**.A helper snapshot is created and all IOs are redirected to this snapshot
+- **2**.The first snapshot is merged into the base VMDK (in the meantime the guest writes to the helper file)
+- **3**.An estimate of the time required to merge the helper is made. _If it is under 12 seconds the VM is stunned to stop all IOs and the helper is merged into the base VMDK -> end of story._
+- **4**.If it is over 12 seconds, a new helper is created and all IOs are redirected to it
+- **5**.The previous helper snapshot is merged into the base VMDK (in the meantime the guest writes to the new helper file)
+- **6**.Back to step 3 for a maximum of 10 iterations, at every iteration the timeout is increased (5 mins, 10 mins, 20 mins, ...)
 
 There we can get into an endless loop ending in a "maximum consolidate retries was exceeded for scsix:x" error in ESXi and the snapshots never consolidate for this VM.
 
