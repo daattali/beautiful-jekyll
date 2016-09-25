@@ -5,7 +5,7 @@ title: 'Snapshot consolidation: vsphere 5 vs vSphere 6'
 ---
 Prior to vSphere 6 the consolidation mecanism  worked such a way that it could lead to issues where the consolidation of snapshots would fail and retry over and over again and could lead to crazy long stun times with unresponsive guest OS or a snapshot that doesn't want to go away (like Asterix's and Obelix's village), especially on busy VMs.
 
-![snapshot-gaulois.jpg]({{site.baseurl}}/img/snapshot-gaulois.jpg)
+![snapshot-gaulois.JPG]({{site.baseurl}}/img/snapshot-gaulois.JPG)
 
 Let's take a look at the process of snapshot consolidation on a high IO virtual machine in vSphere 5 and in vSphere 6.
 
