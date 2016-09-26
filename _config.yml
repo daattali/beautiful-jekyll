@@ -19,6 +19,14 @@ title: My website
 # Short description of your site
 description: A virtual proof that name is awesome!
 
+# --- Misc --- #
+
+# Fill in your Google Analytics ID to track your website using GA
+# google_analytics: "UA-78252451-1"
+
+# Facebook App ID
+# fb_app_id: "1794997907410000"
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar

@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
-  
+
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
@@ -17,14 +17,14 @@
     {% for css in layout.common-ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}    
-  
+  {% endif %}
+
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
@@ -35,8 +35,8 @@
     {% for css in page.ext-css %}
       <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
-  {% endif %}  
-  
+  {% endif %}
+
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
@@ -49,32 +49,69 @@
     {% endfor %}
   {% endif %}
 
-  <!-- Facebook OpenGraph tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <!-- Facebook OpenGraph tags -->
+  {% if site.fb_app_id %}
+  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
+  {% endif %}
+
+  {% if page.meta-title %}
+  <meta property="og:title" content="{{ page.meta-title }}" />
+  {% elsif page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  {% else %}
+  <meta property="og:title" content="{{ site.title }}" />
+  {% endif %}
+
+   {% if page.meta-description %}
+  <meta property="og:description" content="{{ page.meta-description }}">
+  {% elsif page.subtitle %}
+  <meta property="og:description" content="{{ page.subtitle }}">
+  {% else %}
+  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+  {% endif %}
+
+
   <meta property="og:type" content="website" />
+
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   {% else %}
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
+
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% else %}
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.author.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}" />
+
+  {% if page.meta-title %}
+  <meta name="twitter:title" content="{{ page.meta-title }}" />
+  {% elsif page.title %}
+  <meta name="twitter:title" content="{{ page.title }}" />
+  {% else %}
+  <meta name="twitter:title" content="{{ site.title }}" />
+  {% endif %}
+
+  {% if page.meta-description %}
+  <meta name="twitter:description" content="{{ page.meta-description }}">
+  {% elsif page.subtitle %}
+  <meta name="twitter:description" content="{{ page.subtitle }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
+  {% endif %}
+
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
 </head>
