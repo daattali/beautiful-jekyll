@@ -48,12 +48,6 @@
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
     {% endfor %}
   {% endif %}
-  
-    <!-- Sharing img -->
-  {% if page.share-img %}
-   <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  
 
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
@@ -89,9 +83,10 @@
 
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% else %}
+  {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
+  
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
