@@ -1,6 +1,7 @@
 ---
 layout: page
-title: MDS software installation instructions
+title: Installation instructions
+subtitle: For the MDS software stack
 ---
 
 ## Table of Contents
