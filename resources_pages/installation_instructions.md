@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Installation instructions
-subtitle: For the MDS software stack
+subtitle: Installation instructions for the MDS software stack
 ---
 
 ## Table of Contents
@@ -28,6 +27,7 @@ For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.
 visit [Github.ubc.ca](https://github.ubc.ca) to do this.
 
 This step is required for
+
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
