@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Install Fuide
+title: Install Guide
 subtitle: For the MDS software stack
 ---
 
@@ -62,7 +62,7 @@ $ sudo apt-get install git
 
 
 #### Windows Users
-Go to http://git-scm.com. Click on the download link,and accept all defaults in the installation process.
+Go to http://git-scm.com. Click on the download link, and accept all defaults in the installation process.
 installing git will also install for you a minimal unix environment with a "bash" shell and terminal window. Voila, your windows computer is transformed into a unixy form.
 
 #### Testing git installation
@@ -83,7 +83,7 @@ Run ``` git --version ```(on terminal if on Mac/Linux, on Git Bash if on Windows
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://docs.continuum.io/) is an easy-to-install bundle of Python and most of these libraries. We __strongly recommend__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide the same level of support with installation.
 
-For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.5
+For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda version with Python 3.5.
 
 #### Mac/Linux Users
 
@@ -91,10 +91,10 @@ For this program we are using __Python 3__ , not __Python 2__, so please choose 
 2. Follow the instructions on that page to run the installer.
 
 If you already have installed Anaconda at some point in the past, you can easily update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
-```
-    conda update conda
-    conda update anaconda    
-```
+   ```
+   conda update conda
+   conda update anaconda    
+   ``` 
 
 
 3. Test out the Jupyter notebook: open a Terminal window, and type ```jupyter notebook```. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
