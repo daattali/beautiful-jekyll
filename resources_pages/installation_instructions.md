@@ -1,8 +1,5 @@
----
-layout: page
-title: Install Guide
-subtitle: For the MDS software stack
----
+## Install Guide
+This is this software installation guide used for the MDS program.
 
 ## Table of Contents
 - [GitHub](#github)
@@ -23,9 +20,7 @@ subtitle: For the MDS software stack
 
 ## GitHub Enterprise
 
-For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login using your CWL:
-
-visit [Github.ubc.ca](https://github.ubc.ca) to do this.
+For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to go to [github.ubc.ca](https://github.ubc.ca) and log in with your UBC CWL.
 
 This step is required for
 
