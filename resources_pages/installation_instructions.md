@@ -76,7 +76,7 @@ Run ``` git --version``` (on terminal if on Mac/Linux, on Git Bash if on Windows
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://docs.continuum.io/) is an easy-to-install bundle of Python and most of these libraries. We __strongly recommend__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide the same level of support with installation.
 
-For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda version with Python 3.5.
+For this program we are using __Python 3__, not __Python 2__, so please choose the Anaconda version with Python 3.5.
 
 #### Mac/Linux Users
 
@@ -91,7 +91,7 @@ If you already have installed Anaconda at some point in the past, you can update
   ``` 
 
 
-3. Test out the Jupyter notebook: open a Terminal window, and type ```jupyter notebook```. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
+3. Test out the Jupyter notebook: open a Terminal window, and type `jupyter notebook`. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
 
 
 
