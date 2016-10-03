@@ -472,6 +472,7 @@ Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
+```
 
 **Take a screenshot of this message to show you correctly installed Docker**
 
