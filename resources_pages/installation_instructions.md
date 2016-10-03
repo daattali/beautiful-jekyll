@@ -59,8 +59,6 @@ On Ubuntu, open terminal (for me, terminal is on the left-hand pane on Desktop) 
 $ sudo apt-get install git
 ```
 
-
-
 #### Windows Users
 Go to http://git-scm.com. Click on the download link, and accept all defaults in the installation process.
 installing git will also install for you a minimal unix environment with a "bash" shell and terminal window. Voila, your windows computer is transformed into a unixy form.
@@ -75,7 +73,7 @@ Linux Users should open Terminal from their desktop side bar or by pressing ``` 
 
 Windows users can open Git Bash by searching for it from their start menu.
 
-Run ``` git --version ```(on terminal if on Mac/Linux, on Git Bash if on Windows). If you are returned the version of git, it means your install was successful!
+Run ``` git --version``` (on terminal if on Mac/Linux, on Git Bash if on Windows). If you are returned the version of git, it means your install was successful!
 
 **Take a screenshot of the successful output of `git --version` to "prove" you correctly installed Git**
 
@@ -90,12 +88,12 @@ For this program we are using __Python 3__ , not __Python 2__, so please choose 
 1. Head to https://www.continuum.io/downloads and download the Anaconda version for Mac OS with Python 3.5.
 2. Follow the instructions on that page to run the installer.
 
-If you already have installed Anaconda at some point in the past, you can easily update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
-   
-  ```
-  conda update conda
-  conda update anaconda    
-  ``` 
+If you already have installed Anaconda at some point in the past, you can update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
+  
+```
+conda update conda
+conda update anaconda    
+``` 
 
 
 3. Test out the Jupyter notebook: open a Terminal window, and type ```jupyter notebook```. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
