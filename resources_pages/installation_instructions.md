@@ -1,5 +1,7 @@
-# MDS software installation instructions
-
+---
+layout: page
+title: MDS software installation instructions
+---
 
 ## Table of Contents
 - [GitHub](#github)
