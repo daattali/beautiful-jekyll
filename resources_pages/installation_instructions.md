@@ -1,6 +1,7 @@
 ---
 layout: page
-subtitle: Installation instructions for the MDS software stack
+title: Install Fuide
+subtitle: For the MDS software stack
 ---
 
 ## Table of Contents
@@ -43,7 +44,11 @@ We will be using the command line version of git.
 
 #### Mac Users
 Open Terminal and run the command:
-```$ xcode-select --install```
+
+```
+$ xcode-select --install
+```
+
 This will install git and many other very useful applications as well (including Make).
 
 
