@@ -86,13 +86,10 @@ For this program we are using __Python 3__, not __Python 2__, so please choose t
 1. Head to https://www.continuum.io/downloads and download the Anaconda version for Mac OS with Python 3.5.
 2. Follow the instructions on that page to run the installer.
 
-  If you already have installed Anaconda at some point in the past, you can update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
+    If you already have installed Anaconda at some point in the past, you can update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
   
-  ```
-  conda update conda
-  conda update anaconda    
-  ``` 
-
+        conda update conda
+        conda update anaconda    
 
 3. Test out the Jupyter notebook: open a Terminal window, and type `jupyter notebook`. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
 
