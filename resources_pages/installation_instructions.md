@@ -185,16 +185,18 @@ Windows users will also need to install Rtools, which will allow you to use exte
 1. Go to http://cran.r-project.org/bin/windows/Rtools/ and download the latest version (for me: Rtools33.exe)
 2. Run the installer; if you are only interested in building packages, you can accept the defaults throughout (_recommended_).
 3. Confirm and finish. You should now have a new directory C:\Rtools on your computer.
-4. Test your installation: Open R/RStudio and type `install.packages("xtable", type="source")` at the command line. If this runs successfully, Rtools should be installed!
+4. Test your installation: Open R/RStudio and type 
+
+        install.packages("xtable", type="source")
+	
+    at the command line. If this runs successfully, Rtools should be installed!
+    
 5. We will also be installing IRKernel to be able run R code inside of Jupyter.
 6. Run the following commands in RStudio:
 
-```
-install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
-devtools::install_github('IRkernel/IRkernel')
-IRkernel::installspec()
-```
-
+        install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
+        devtools::install_github('IRkernel/IRkernel')
+        IRkernel::installspec()
 
 #### Testing R and RStudio
 1.	Do whatever is appropriate for your OS to launch RStudio.
