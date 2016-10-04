@@ -21,14 +21,14 @@ ultimate result of automation leads me to the world of computational statistic,
 aka data science.
 
 Having to have this picture in mind, I was intrigued by this challenge to create
-an ideal world into reality. I started off writing scripts and apps that
-improve my own work efficiency, and later leads to codes that improves the whole
-entire team's day to day job. As I move in from the operational side into the BI
-side, I am even more fascinated by how data science can be utilizes to impact
-business models.
+an ideal world into reality. I started off with writing scripts and apps that
+improved my  work efficiency, and that led to codes that improved
+the entire team's daily tasks. As I moved from the operational to
+the BI side, I became even more fascinated by how data science could be utilized
+to impact business models.
 
-My passion is to create and optimizes data algorithm that not only replace
-manual nodes with intelligent data driven quality, but also drives up the full
+My passion is to create and optimize data algorithms that not only replace
+manual nodes with intelligent data driven quality, but also drive up the full
 data stream to make the best business executive decisions.
 
 ### my history
