@@ -22,7 +22,7 @@ aka data science.
 
 Having to have this picture in mind, I was intrigued by this challenge to create
 an ideal world into reality. I started off with writing scripts and apps that
-improved my  work efficiency, and that led to codes that improved
+optimzied my  work efficiency, and that led to codes that improved
 the entire team's daily tasks. As I moved from the operational to
 the BI side, I became even more fascinated by how data science could be utilized
 to impact business models.
