@@ -141,16 +141,14 @@ numpy, scipy and matplotlib are some of the important libraries that come with A
 3. Download XQuartz from [here](https://www.xquartz.org/). Run the `.dmg` file.
 4. We will also be installing IRKernel to be able run R code inside of Jupyter. Open terminal and type `R`
 5. Now run the following commands:
-```
-install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
-devtools::install_github('IRkernel/IRkernel')
-IRkernel::installspec()
-```
 
+        install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
+        devtools::install_github('IRkernel/IRkernel')
+        IRkernel::installspec()
 
 #### Ubuntu Users
 
-1. Go to `~etc/apt/` and click on the ```sources.list``` file. Click on `Other Software'-> 'Add'. Depending on your version of Ubuntu, add one of the following lines and then click 'Add Source':
+1. Go to `~etc/apt/` and click on the sources.lis` file. Click on `Other Software'-> 'Add'. Depending on your version of Ubuntu, add one of the following lines and then click 'Add Source':
 
  **Ubuntu 16.04**: `deb http://cran.rstudio.com/bin/linux/ubuntu xenial/`
 
