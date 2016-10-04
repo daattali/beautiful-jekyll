@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About me
-subtitle: Who Am I[reference from Les
-Miserable](https://www.youtube.com/watch?v=d2sanq2SM0k)
+subtitle: Who Am I -reference from Les
+Miserable
 ---
 
 My name is Alex Leu, and this is what I do!:
