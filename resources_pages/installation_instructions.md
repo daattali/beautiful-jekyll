@@ -356,7 +356,9 @@ You should have this installed if you ran the command ```xcode-select --install`
 
 #### Ubuntu Users
 
-Open terminal and run ``` sudo apt-get install build-essential ```
+Open terminal and run 
+
+        sudo apt-get install build-essential
 
 
 #### Windows Users
@@ -376,13 +378,13 @@ Download and install the ```.pkg``` file for the most recent version listed on [
 #### Ubuntu Users
 
 Open terminal and run:
-```
-sudo apt-get install pandoc
-```
+
+        sudo apt-get install pandoc
+
 
 #### Windows Users
 
-Download and install the ```.msi``` file for the most recent version listed on [this](https://github.com/jgm/pandoc/releases) page.
+Download and install the `.msi` file for the most recent version listed on [this](https://github.com/jgm/pandoc/releases) page.
 
 ### Testing Pandoc's install
 Open a terminal/Git Bash instance and type `pandoc --version`. If you install was successful, you should see output regarding the version of the program.
@@ -413,56 +415,50 @@ This should output the version of Docker you installed.
 
 Open Terminal and run the following commands:
 
-```
- $ sudo apt-get update
- $ sudo apt-get install apt-transport-https ca-certificates
- ```
 
- ```
- $ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-```
+        $ sudo apt-get update
+        $ sudo apt-get install apt-transport-https ca-certificates
+        $ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
 Chose one of the following commands based on your Ubuntu version:
-
-On Ubuntu Precise 12.04 (LTS)
-
-```$ echo 'deb https://apt.dockerproject.org/repo ubuntu-precise main' | sudo tee -a /etc/apt/sources.list.d/docker.list```
 
 On Ubuntu Trusty 14.04 (LTS)
 
-```$ echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' | sudo tee -a /etc/apt/sources.list.d/docker.list```
-
+        $ echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' | sudo tee -a /etc/apt/sources.list.d/docker.list
 
 On Ubuntu Wily 15.10
 
-```$ echo 'deb https://apt.dockerproject.org/repo ubuntu-wily main' | sudo tee -a /etc/apt/sources.list.d/docker.list```
+        $ echo 'deb https://apt.dockerproject.org/repo ubuntu-wily main' | sudo tee -a /etc/apt/sources.list.d/docker.list
 
 Ubuntu Xenial 16.04 (LTS)
 
-```$ echo 'deb https://apt.dockerproject.org/repo ubuntu-xenial main' | sudo tee -a /etc/apt/sources.list.d/docker.list```
+        $ echo 'deb https://apt.dockerproject.org/repo ubuntu-xenial main' | sudo tee -a /etc/apt/sources.list.d/docker.list
 
-Update your ```APT``` package index:
+Update your `APT` package index:
 
-```$ sudo apt-get update```
+        $ sudo apt-get update
 
 Then,
 On Ubuntu 14.04, 15.10, 16.04, run:
-```$ sudo apt-get install linux-image-extra-$(uname -r)```
 
-On Ubuntu 12.04, run:
-```
-$ apt-get install linux-image-generic-lts-trusty
-$ sudo reboot
-```
+        $ sudo apt-get install linux-image-extra-$(uname -r)
+
+
 
 Install Docker with:
-```$ sudo apt-get install docker-engine```
+        
+	$ sudo apt-get install docker-engine
 
 Start Docker:
-```$ sudo docker run hello-world```
+
+        $ sudo docker run hello-world
 
 **Verify that Docker was installed:**
-```$ sudo docker run hello-world```
+
+        $ sudo docker run hello-world
+
 This installs an image and runs it in a docker container. You should expect output similar to:
+
 ```
 $ sudo docker run hello-world
 Unable to find image 'hello-world:latest' locally
