@@ -282,24 +282,25 @@ Mac Users have two options. You can either download the full MacTeX package, or 
 Option 1:
 
 1. Download the MacTeX package from [here](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg)
-2. Install the downloaded ```.pkg``` file, following default options.
+2. Install the downloaded `.pkg` file, following default options.
 
 Option 2:
 
 1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg ).
 2. Open the ```.pkg``` file and run the installer with default options.
 3. BasicTeX has a few missing files we'll need. To install these files, open terminal and run:
-```
-$ sudo tlmgr update --self
-$ sudo tlmgr install framed
-$ sudo tlmgr install titling
-```
+
+        $ sudo tlmgr update --self
+        $ sudo tlmgr install framed
+        $ sudo tlmgr install titling
 
 #### Ubuntu Users
-1. Run ``` apt-get install texlive```
+1. Run 
+
+        $ apt-get install texlive
 
 #### Other Linux Systems
-1. Download [this](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz) ```tar.gz``` file.
+1. Download [this](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz) `tar.gz` file.
 2. Unpack the archive.
 3. In terminal, switch to the directory of the unpacked file and run the command: `install-tl`
 4. After the installation finishes, you must add the directory of TeX Live binaries to your PATH. For example:
@@ -307,7 +308,7 @@ $ sudo tlmgr install titling
 
 #### Windows Users
 1. Download the installer from [here](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe)
-2. Run the ```.exe``` file and proceed the installation with default options.
+2. Run the `.exe` file and proceed the installation with default options.
 
 #### Testing LaTeX's install
 Open a terminal/Git Bash instance and type `latex --version`. If you install was successful, you should see output regarding the version and copyright of the program.
