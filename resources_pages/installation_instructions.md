@@ -328,7 +328,7 @@ SQLite should already be installed on your Mac. To verify this, type `sqlite3` i
         Use ".open FILENAME" to reopen on a persistent database.
         sqlite>
 
-Type `.quit' to exit.
+Type `.quit` to exit.
 
 If for some reason SQLite is not already installed, follow the instructions [here](http://www.tutorialspoint.com/sqlite/sqlite_installation.htm)
 
