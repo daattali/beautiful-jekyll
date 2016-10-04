@@ -320,14 +320,13 @@ Open a terminal/Git Bash instance and type `latex --version`. If you install was
 
 #### Mac Users
 SQLite should already be installed on your Mac. To verify this, type `sqlite3` into your Terminal. You should see the output below.
-```
-$ sqlite3
-SQLite version 3.13.0 2016-05-18 10:57:30
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
-sqlite>
-```
+
+        $ sqlite3
+        SQLite version 3.13.0 2016-05-18 10:57:30
+        Enter ".help" for usage hints.
+        Connected to a transient in-memory database.
+        Use ".open FILENAME" to reopen on a persistent database.
+        sqlite>
 
 Type `.quit' to exit.
 
@@ -335,11 +334,9 @@ If for some reason SQLite is not already installed, follow the instructions [her
 
 #### Ubuntu Users
 In terminal, run:
-```
-sudo apt-get update
-sudo apt-get install sqlite3 libsqlite3-dev
-```
 
+        sudo apt-get update
+        sudo apt-get install sqlite3 libsqlite3-dev
 
 #### Windows Users
 1. Download [this](https://github.com/swcarpentry/windows-installer/releases/download/v0.3/SWCarpentryInstaller.exe) file and run the installer. This will also install other useful applications, including Make.
