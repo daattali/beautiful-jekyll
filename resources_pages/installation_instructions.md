@@ -1,4 +1,9 @@
-## Install Guide
+---
+layout: page
+title: Install Guide
+subtitle: For the MDS software stack
+---
+
 This is this software installation guide used for the MDS program. Original version written by [Anmol Jawandha](https://github.com/Anmol6) at UBC.
 
 ## Table of Contents
