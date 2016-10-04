@@ -25,7 +25,7 @@ This is this software installation guide used for the MDS program. Original vers
 
 ## GitHub Enterprise
 
-For us to add you to the MDS organization UBC's GitHub Enterprise we need you to go to [github.ubc.ca](https://github.ubc.ca) and log in with your UBC [Campus-Wide Login](https://it.ubc.ca/services/accounts-passwords/campus-wide-login-cwl).
+For us to add you to the MDS organization in UBC's GitHub Enterprise we need you to go to [github.ubc.ca](https://github.ubc.ca) and log in with your UBC [Campus-Wide Login](https://it.ubc.ca/services/accounts-passwords/campus-wide-login-cwl).
 
 This step is required for
 
