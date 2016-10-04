@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://alexcleu.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -25,8 +25,6 @@ description: First data science website made by Alex Leu.
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Blog: "http://deanattali.com/beautiful-jekyll/"
-    - Apps: "http://www.markdowntutorial.com/"
     - GitHub Pages: "www.github.com/alexcleu"
 
 # Image to show in the navigation bar - image must be a square (width = height)

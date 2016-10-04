@@ -12,7 +12,7 @@ My name is Alex Leu, and this is what I do!:
 - I also like to run. 
 - I like to play guitar, beatbox, and sing!
 
-### My interest
+### my interest
 I am a natural science life long learner who had recently discovered the beauty
 of computer science. I started coding on my first job in sales operation,
 thinking many day to day tasks can be automated with programming, and the
