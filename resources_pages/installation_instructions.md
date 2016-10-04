@@ -133,8 +133,8 @@ numpy, scipy and matplotlib are some of the important libraries that come with A
 #### Mac Users
 1. Go [here](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac. Open the file.
 2. Chose and download the Mac version of RStudio from https://www.rstudio.com/products/rstudio/download/preview/. Open and run the installer.
-3. Download XQuartz from [here](https://www.xquartz.org/). Run the ```.dmg``` file.
-4. We will also be installing IRKernel to be able run R code inside of Jupyter. Open terminal and type ```R```
+3. Download XQuartz from [here](https://www.xquartz.org/). Run the `.dmg` file.
+4. We will also be installing IRKernel to be able run R code inside of Jupyter. Open terminal and type `R`
 5. Now run the following commands:
 ```
 install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
@@ -145,7 +145,7 @@ IRkernel::installspec()
 
 #### Ubuntu Users
 
-1. Go to ```~etc/apt/``` and click on the ```sources.list``` file. Click on `Other Software'-> 'Add'. Depending on your version of Ubuntu, add one of the following lines and then click 'Add Source':
+1. Go to `~etc/apt/` and click on the ```sources.list``` file. Click on `Other Software'-> 'Add'. Depending on your version of Ubuntu, add one of the following lines and then click 'Add Source':
 
  **Ubuntu 16.04**: `deb http://cran.rstudio.com/bin/linux/ubuntu xenial/`
 
@@ -156,19 +156,19 @@ IRkernel::installspec()
  **Ubuntu 12.04**: `deb http://cran.rstudio.com/bin/linux/ubuntu precise/`
 
 2. Then, Open terminal and issue the following commands to install the latest version of R:
- ```
- $ sudo apt-get update
- $ sudo apt-get install r-base
- ```
+
+        $ sudo apt-get update
+        $ sudo apt-get install r-base
+
 3. Chose and download the Ubuntu version of RStudio from https://www.rstudio.com/products/rstudio/download/
 4. Ubuntu users can then install the downloaded file through the Software Center.
 5. We will also be installing IRKernel to be able run R code inside of Jupyter. Open terminal and type ```R```
 6. Now run the following commands:
-```
-install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
-devtools::install_github('IRkernel/IRkernel')
-IRkernel::installspec()
-```
+
+        $ install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
+        $ devtools::install_github('IRkernel/IRkernel')
+        $ IRkernel::installspec()
+
 Troubleshooting: http://askubuntu.com/a/614715
 
 #### Windows Users
@@ -182,9 +182,10 @@ Windows users will also need to install Rtools, which will allow you to use exte
 1. Go to http://cran.r-project.org/bin/windows/Rtools/ and download the latest version (for me: Rtools33.exe)
 2. Run the installer; if you are only interested in building packages, you can accept the defaults throughout (_recommended_).
 3. Confirm and finish. You should now have a new directory C:\Rtools on your computer.
-4. Test your installation: Open R/RStudio and type ```install.packages("xtable", type="source")``` at the command line. If this runs successfully, Rtools should be installed!
+4. Test your installation: Open R/RStudio and type `install.packages("xtable", type="source")` at the command line. If this runs successfully, Rtools should be installed!
 5. We will also be installing IRKernel to be able run R code inside of Jupyter.
 6. Run the following commands in RStudio:
+
 ```
 install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools', 'stringr'), repos="http://cran.stat.sfu.ca/")
 devtools::install_github('IRkernel/IRkernel')
@@ -195,7 +196,7 @@ IRkernel::installspec()
 #### Testing R and RStudio
 1.	Do whatever is appropriate for your OS to launch RStudio.
 
-2.	Put your cursor in the pane labelled Console, which is where you interact with the live R process. Create a simple variable with code like ```x <- 2 * 4``` (followed by enter or return). Then inspect `x`  by typing ```x``` followed by enter or return. You should see the value `8` print to screen. If yes, you’ve succeeded in installing R and RStudio!
+2.	Put your cursor in the pane labelled Console, which is where you interact with the live R process. Create a simple variable with code like `x <- 2 * 4` (followed by enter or return). Then inspect `x` by typing `x` followed by enter or return. You should see the value `8` print to screen. If yes, you’ve succeeded in installing R and RStudio!
 
 **Take a screenshot of the successful output of these commands to "prove" you correctly installed R and R Studio**
 
@@ -212,10 +213,11 @@ Rodeo is an easy-to-use Python IDE (Integrated Development Environment) based on
 
 #### Linux Users
 1. Download Rodeo [here](https://www.yhat.com/products/rodeo/downloads). If your download doesn't start automatically, select the appropriate(32-bit or 64-bit) version for Linux.
-2. Unzip Rodeo into your applications directory (i.e. ```~/bin/```).
-3. Add the ```Rodeo``` command to your path, then execute it to start Rodeo!
+2. Unzip Rodeo into your applications directory (i.e. `~/bin/`).
+3. Add the `Rodeo` command to your path, then execute it to start Rodeo!
 
 You can also execute the following commands in terminal instead:
+
 ```
 wget -O tmp.zip https://www.yhat.com/products/rodeo/downloads/linux_64
 sudo unzip tmp.zip -d /usr/local/bin/ && rm tmp.zip
@@ -391,8 +393,7 @@ Open a terminal/Git Bash instance and type `pandoc --version`. If you install wa
 1. Download the Docker for Mac ```.dmg``` file from [here](https://download.docker.com/mac/beta/Docker.dmg)
 2. Double-click ```Docker.dmg``` to open the installer, then drag the folder to your Applications folder (Note:You will be asked for your password for authorization, please provide it).
 3. Open ```Docker.app``` to start Docker. You should see a Whale icon in your top status bar
-4. **To confirm that Docker installed correctly, open terminal and run
-```docker --version```**
+4. **To confirm that Docker installed correctly, open terminal and run `docker --version`**
 
 This should output the version of Docker you installed.
 
@@ -505,11 +506,17 @@ on Windows, the terminal prompt contains the path of your current directory
 
 1.	Chose a folder where you want to save your work for this assignment.
 2.	Open Atom, and write the following code:
-```print test successful!``` and then go to *File -> Save As* and save the file with the extensiion ```.py``` in the directory you chose. For example, I saved the file as *test.py*.  
+
+        print test successful!
+	
+    Then go to *File -> Save As* and save the file with the extensiion `.py` in the directory you chose. For example, I saved the file as *test.py*.  
 
 3.	Now, in terminal, navigate to that folder using the commands you learned above.
 4.	Once you are there, type:
-```python <program name>.py ```. In this case, we type ```python test.py```. You should now see ```test successful!``` in your terminal.
+
+        python <program name>.py
+	
+    In this case, we type `python test.py`. You should now see `test successful!` in your terminal.
 
 You can do a lot more with a terminal. See software carpentry's [resources](http://swcarpentry.github.io/shell-novice/) on this.
 
