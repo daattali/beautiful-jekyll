@@ -22,7 +22,7 @@ subtitle: This is where I will tell my friends way too much about me
     </p>
 
     <div class="post-entry">
-      {% assign cleaned_content = post.content | strip_html | xml_escape %}
+      {% assign cleaned_content = post.excerpt | strip_html | xml_escape %}
       {% assign truncated_content = cleaned_content | truncatewords: 50 %}
       {% if truncated_content == cleaned_content %}
         {{ cleaned_content }}
