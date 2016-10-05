@@ -81,6 +81,8 @@ share-links-active:
 url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
+# Manually break the site excerpt
+excerpt_separator: <!--read more-->
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""

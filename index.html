@@ -22,8 +22,19 @@ subtitle: This is where I will tell my friends way too much about me
     </p>
 
     <div class="post-entry">
-      {{ post.excerpt | strip_html | xml_escape | truncatewords: 50 }}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+      {% if post.content contains site.excerpt_separator %}
+        {{ post.excerpt | strip_html | xml_escape }}
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+      {% else %}
+        {% assign cleaned_content = post.content | strip_html | xml_escape %}
+        {% assign truncated_content = cleaned_content | truncatewords: 50 %}
+        {% if truncated_content == cleaned_content %}
+          {{ cleaned_content }}
+        {% else %}
+          {{ truncated_content }}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif%}
+      {% endif %}
     </div>
 
     {% if post.tags.size > 0 %}
