@@ -20,4 +20,4 @@ subtitle: Data Science
     ...to be continued
 
 ## Industry
-   ...to be continued
+    ...to be continued
