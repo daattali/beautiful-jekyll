@@ -11,7 +11,7 @@
 
   <!--- Share on Twitter -->
   {% if site.share-links-active.twitter %}
-    <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}"
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
     </a>
