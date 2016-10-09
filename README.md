@@ -195,7 +195,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Docker:
 
-1. Make sure that you have Docker installed on your local environment. More details can be found (here)[https://docs.docker.com/engine/installation/]
+1. Make sure that you have Docker installed on your local environment. More details can be found [here](https://docs.docker.com/engine/installation/)
 2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
 3. Inside your repository folder, run:
 ```
