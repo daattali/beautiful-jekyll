@@ -34,7 +34,7 @@ Scroll down to see the steps involved, but here is a 40-second video just as a r
 
 ![Installation steps](img/install-steps.gif)
 
-### 1. Fork this repository 
+### 1. Fork this repository
 
 (Assuming you are on this page and logged into GitHub) Fork this repository by clicking the *Fork* button on the top right corner. Forking means that you now copied this whole project and all the files into your account.
 
@@ -153,7 +153,7 @@ To set up a GitHub Project page, simply fork this repository into a branch calle
 
 ### Advanced features (including how to use a custom URL address for your site)
 
-I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed. 
+I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
 
 ### Featured users (success stories!)
 
@@ -190,19 +190,21 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [epwalsh.com](https://epwalsh.com) | Evan Pete Walsh | PhD candidate (Statistics and Mathematics) at Iowa State University |
 | [otomatikmuhendis.com](http://otomatikmuhendis.com/) | Olcay Bayram | Software engineer |
 
-### Very advanced: Local development
 
-Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Vagrant:
+### Docker
 
-1. Install [VirtualBox](http://virtualbox.org) and [Vagrant](https://www.vagrantup.com)
+Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Docker:
+
+1. Make sure that you have Docker installed on your local environment. More details can be found [here](https://docs.docker.com/engine/installation/)
 2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Inside your repository folder, run `vagrant up`
-4. View your website at `http://0.0.0.0:4000` on *nix or `http://127.0.0.1:4000` on Windows. 
-5. Commit any changes and push everything to the master branch of your GitHub repository. GitHub Pages will then rebuild and serve your website automatically.
+3. Inside your repository folder, run:
+```
+docker run -p 4000:4000 -v `pwd`:/app mangar/jekyll:1.1 bash -c "bundle install; bundle exec jekyll serve"
+```
+4. View your website at <http://localhost:4000>.
 
-Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
 
-Additionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
+
 
 ### Credits
 
