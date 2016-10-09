@@ -198,9 +198,10 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
 1. Make sure that you have Docker installed on your local environment. Installation instructions can be found [here](https://docs.docker.com/engine/installation/)
 2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
 3. Inside your repository folder, run:
-  ```
-  docker run -p 4000:4000 -v `pwd`:/app mangar/jekyll:1.1 bash -c "bundle install; bundle exec jekyll serve"
-  ```
+
+    ```
+    docker run -p 4000:4000 -v `pwd`:/app mangar/jekyll:1.1 bash -c "bundle install; bundle exec jekyll serve"
+    ```
 4. View your website at <http://localhost:4000>.
 
 Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!		
