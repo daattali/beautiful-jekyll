@@ -40,7 +40,7 @@ avatar: "/img/ohc.jpeg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Oeste Hacker Club
-  email: "oestehc@googlegroups.com"
+  #email: "oestehc@googlegroups.com"
   facebook: OesteHC  # eg. daattali
   github: ohc    # eg. daattali
   #twitter: yourname   # eg. daattali
