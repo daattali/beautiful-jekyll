@@ -40,10 +40,10 @@ avatar: "/img/ohc.jpeg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Oeste Hacker Club
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
+  email: "oestehc@googlegroups.com"
+  facebook: OesteHC  # eg. daattali
   github: ohc    # eg. daattali
-  twitter: yourname   # eg. daattali
+  #twitter: yourname   # eg. daattali
   #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   #linkedin: yourname  # eg. daattali
   #xing: yourname      # eg. daattali
@@ -78,7 +78,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "oestehc.com.br"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
