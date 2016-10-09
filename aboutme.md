@@ -12,5 +12,5 @@ os mais diversos assuntos relacionados a tecnologia, robótica, desenvolvimento 
 
 
 Está interessado em participar mais ativamente? Cara, vamos lá, se inscreva em nossa mail list
-(link em Mídias), dê seu alo e fique por dentro dos nossos encontros. Aproveita e convide a todos
-que tem o mesmo interesse.
+(link em Mídias), obtenha seu convite do nosso slack (também em Mídias), dê seu alo e fique por 
+dentro dos nossos encontros. Aproveite e convide a todos que tem o mesmo interesse.
