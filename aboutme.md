@@ -9,6 +9,8 @@ Bom, Oeste Hacker Club ou simplestemente OHC é um hackerspace fundado em 2012 e
 Desde então procuramos criar uma comunidade ativa no interior de São Paulo, discutindo sobre
 os mais diversos assuntos relacionados a tecnologia, robótica, desenvolvimento de software,
 (in)segurança da informação e tudo mais que alguém queira colocar em pauta.
+
+
 Está interessado em participar mais ativamente? Cara, vamos lá, se inscreva em nossa mail list
 (link em Mídias), dê seu alo e fique por dentro dos nossos encontros. Aproveita e convide a todos
 que tem o mesmo interesse.
