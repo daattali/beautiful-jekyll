@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://ohc.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,44 +14,46 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: OHC
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Hackerspace de Bauru e região
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Sobre nós: "aboutme"
+  Mídias:
+    - Mail List (google groups): "https://groups.google.com/forum/#!forum/oestehc"
+    - Meetup: "https://www.meetup.com/Oeste-Hacker-Clube-OHC-Bauru/"
+    - Facebook: "https://www.facebook.com/OesteHC"
+    - Slack Invites: "https://oestehc.herokuapp.com/"
+  Parceiros:
+    - Show Me The Code:  "http://showmethecode.cc"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/ohc.jpeg"
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
+  name: Oeste Hacker Club
+  #email: "oestehc@googlegroups.com"
+  facebook: OesteHC  # eg. daattali
+  github: ohc    # eg. daattali
+  #twitter: yourname   # eg. daattali
+  #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
+  #linkedin: yourname  # eg. daattali
+  #xing: yourname      # eg. daattali
+  #stackoverflow: yourlink  # eg. "3943160/daattali"
+  #snapchat: yourname  # eg. daattali
+  #instagram: yourname # eg. daattali
+  #youtube: yourlink   # eg. user/daattali or channel/daattali
+  #spotify: yourname   # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
@@ -78,7 +80,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "oestehc.com.br"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -97,7 +99,7 @@ excerpt_length: 50
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Sao_Paulo"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
