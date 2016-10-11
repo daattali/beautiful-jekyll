@@ -186,7 +186,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [otomatikmuhendis.com](http://otomatikmuhendis.com/) | Olcay Bayram | Software engineer |
 
 
-## Avanced: Local development using Docker
+## Advanced: Local development using Docker
 
 Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Docker:
 
