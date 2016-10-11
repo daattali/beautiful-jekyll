@@ -15,6 +15,7 @@ This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used 
 - [Add your own content](#add-your-own-content)
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
 - [Features](#features)
+- [Creating a User Page vs a Project Page]
 - [Showcased users (success stories!)](#showcased-users-success-stories)
 - [Advanced: local development](#advanced-local-development-using-docker)
 - [Credits and contributions](#credits)
@@ -81,7 +82,7 @@ subtitle: Here you'll find all the ways to get in touch with me
 
 You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
 
-**Important takeaway: ALWAYS add the YAML front matter to EVERY page, which is two lines with three dashes. If you have any parameters, they go between the two lines.**    
+**Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**    
 If you don't include YAML then your file will not use the template.
 
 ## Features
@@ -138,17 +139,20 @@ css         | List of local CSS files to include in the page
 ex-css      | List of external CSS files to include in the page
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
-### Setting up a Project Page (rather than a User Page)
-
-If you're not sure what the difference is, then ignore this section.
-
-If you want to use this theme for a project page for a specific repository instead of your main GitHub user page, that's no problem. The demo for this site ([daattali.github.io/beautiful-jekyll](http://deanattali.com/beautiful-jekyll)) is actually set up as a project page while my personal site ([daattali.github.io](http://deanattali.com)) is a regular user page.  The only difference is that in the `_config.yml`, you should set `baseurl` to be `/projectname` instead of `""`.
-
-To set up a GitHub Project page, simply fork this repository into a branch called `gh-pages` in your repository. Whatever is under the `gh-pages` branch will be served by Jekyll. Your site will be at `http://username.github.io/projectname/`.
-
 ### Advanced features (including how to use a custom URL address for your site)
 
 I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
+
+## Creating a User Page vs a Project Page
+
+If you're not sure what the difference is, you can probably safely ignore this section.
+
+If you want to use this theme to host a website that will be available at `https://YOURUSERNAME.github.io`, then you do not need to read this section. That is called a User Page, you can only have one User Page in your GitHub account, and it is what you get by default when forking this project.
+
+If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/REPONAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for each repository you have on GitHub. There are two important things to note when creating a project page:
+
+1. In the configuration file (`_config.yml`), you should set `baseurl` to be `/projectname` instead of `""`.
+2. Project Pages are served from a branch named `gh-pages`, and you should be generating all the website content on that branch. When you fork Beautiful Jekyll, you'll already have a `gh-pages` branch but you should delete it and generate it again from the `master` branch. The reason is that the `gh-pages` branch in its current form does not have the updated code of Beautiful Jekyll, so you need to create that branch from the `master` branch (which is where all my new features and work go into).
 
 ## Showcased users (success stories!)
 
