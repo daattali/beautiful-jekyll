@@ -14,13 +14,10 @@ This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used 
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
 - [Add your own content](#add-your-own-content)
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
-- [Basic features](#basic-features)
-- [Advanced features](#advanced-features-including-how-to-use-a-custom-url-address-for-your-site)
-- [Featured users (success stories!)](#featured-users-success-stories)
-- [Very advanced: local development](#very-advanced-local-development)
-- [Credits](#credits)
-- [Contributions](#contributions)
-- [Known limitations](#known-limitations)
+- [Features](#features)
+- [Showcased users (success stories!)](#showcased-users-success-stories)
+- [Advanced: local development](#advanced-local-development)
+- [Credits and contributions](#credits)
 
 ## Prerequisites
 
@@ -54,7 +51,7 @@ You can now visit your shiny new website, which will be seeded with several samp
 
 **Note:** The video above goes through the setup for a user with username `daattalitest`. I only edited one setting in the `_config.yml` file in the video, but **you should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
-### Add your own content
+## Add your own content
 
 To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write markdown than HTML, so I suggest you do that (use the [tutorial I mentioned above](http://markdowntutorial.com/) if you need to learn markdown). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated the pretty text. Very easy!
 
@@ -64,7 +61,7 @@ Any file that you add inside the [`_posts`](./_posts) directory will be treated 
 
 As mentioned previously, you can use [prose.io](http://prose.io/) to add or edit files instead of doing it directly on GitHub, it can be a little easier that way.
 
-### Last important thing: YAML front matter ("parameters" for a page)
+## Last important thing: YAML front matter ("parameters" for a page)
 
 In order to have your new pages use this template and not just be plain pages, you need to add [YAML front matter](http://jekyllrb.com/docs/frontmatter/) to the top of each page. This is where you'll give each page some parameters that I made available, such as a title and subtitle. I'll go into more detail about what parameters are available later. If you don't want to use any parameters on your new page (this also means having no title), then use the empty YAML front matter:
 
@@ -87,37 +84,41 @@ You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./inde
 **Important takeaway: ALWAYS add the YAML front matter to EVERY page, which is two lines with three dashes. If you have any parameters, they go between the two lines.**    
 If you don't include YAML then your file will not use the template.
 
-## Basic Features
+## Features
 
-#### Mobile-first
+### Mobile-first
 **Beautiful Jekyll** is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone or your gigantic iMac, and the site will work well on both, though it will look slightly different.
 
-#### Personalization
+### Customizable
 
 Many personalization settings in `_config.yml`, such as setting your name and site's description, setting your avatar to add a little image in the navigation bar, customizing the links in the menus, customizing what social media links to show in the footer, etc.
 
-#### Allowing users to leave comments
+### Allowing users to leave comments
 
 If you want to enable comments on your site, Beautiful Jekyll supports the [Disqus](https://disqus.com/) comments plugin.  To use it, simply sign up to Disqus and add your Disqus shortname to the `disqus` parameter in the `_config.yml`.
 
 If the `disqus` parameter is set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
 
-#### Adding Google Analytics to track page views
+### Adding Google Analytics to track page views
 
 Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.
 
-#### Sharing blog posts on social media
+### Sharing blog posts on social media
 
 By default, all blog posts will have buttons at the bottom of the post to allow people to share the current page on Twitter/Facebook/LinkedIn.  You can choose to enable/disable specific social media websites in the `_config.yml` file. You can also turn off the social media buttons on specific blog posts using `social-share: false` in the YAML front matter.
 
-#### Page types
+### RSS feed
+
+Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to add a link to your RSS feed in the footer of every page, find the `rss: false` line in `_config.yml` and change it to `rss: true`.
+
+### Page types
 
 - **post** - To write a blog post, add a markdown or HTML file in the `_posts` folder. As long as you give it YAML front matter (the two lines of three dashes), it will automatically be rendered like a blog post. Look at the existing blog post files to see examples of how to use YAML parameters in blog posts.
 - **page** - Any page outside the `_posts` folder that uses YAML front matter will have a very similar style to blog posts.
 - **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
 - If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
 
-#### YAML front matter parameters
+### YAML front matter parameters
 
 These are the main parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
 
@@ -137,11 +138,7 @@ css         | List of local CSS files to include in the page
 ex-css      | List of external CSS files to include in the page
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
-### RSS feed
-
-Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to add a link to your RSS feed in the footer of every page, find the `rss: false` line in `_config.yml` and change it to `rss: true`.
-
-### GitHub Project page vs user page
+### Setting up a Project Page (rather than a User Page)
 
 If you're not sure what the difference is, then ignore this section.
 
@@ -149,19 +146,17 @@ If you want to use this theme for a project page for a specific repository inste
 
 To set up a GitHub Project page, simply fork this repository into a branch called `gh-pages` in your repository. Whatever is under the `gh-pages` branch will be served by Jekyll. Your site will be at `http://username.github.io/projectname/`.
 
----
-
 ### Advanced features (including how to use a custom URL address for your site)
 
 I wrote [a blog post](http://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
 
-### Featured users (success stories!)
+## Showcased users (success stories!)
 
 To my huge surprise, Beautiful Jekyll has been used in over 500 websites in its first 6 months alone! Here is a hand-picked selection of some websites that use Beautiful Jekyll.
 
 Want your website featured here? [Contact me](http://deanattali.com/aboutme#contact) to let me know about your website.
 
-#### Project/company websites
+### Project/company websites
 
 | Website | Description |
 | :------ |:----------- |
@@ -175,7 +170,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [ja2-stracciatella.github.io](http://ja2-stracciatella.github.io) | Jagged Alliance 2 Stracciatella |
 | [PatientOutcomeFunding.org](http://www.patientoutcomefunding.org/) | Patient Outcome Funding |
 
-#### Personal websites
+### Personal websites
 
 | Website | Who | What |
 | :------ |:--- | :--- |
@@ -191,7 +186,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [otomatikmuhendis.com](http://otomatikmuhendis.com/) | Olcay Bayram | Software engineer |
 
 
-### Very advanced: Local development using Docker
+## Avanced: Local development using Docker
 
 Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Docker:
 
@@ -209,7 +204,7 @@ Disclaimer: I personally am NOT using local development so I don't know much abo
 Aditionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
 
 
-### Credits
+## Credits
 
 This template was not made entirely from scratch. I would like to give special thanks to:
 - [Barry Clark](https://github.com/barryclark) and his project [Jekyll Now](https://github.com/barryclark/jekyll-now), from whom I've taken several ideas and code snippets, as well as some documenation tips.
@@ -217,7 +212,7 @@ This template was not made entirely from scratch. I would like to give special t
 
 I'd also like to thank [Dr. Jekyll's Themes](http://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
 
-### Contributions
+## Contributions
 
 If you find anything wrong or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
 
@@ -225,6 +220,6 @@ Thank you to [all contributors](https://github.com/daattali/beautiful-jekyll/gra
 
 If you do fork or clone this project to use as a template for your site, I would appreciate if you keep the link in the footer to this project.  I've noticed that several people who forked this repo removed the attribution and I would prefer to get the recognition if you do use this :)
 
-### Known limitations
+## Known limitations
 
 - If you have a project page and you want a custom 404 page, you must have a custom domain.  See https://help.github.com/articles/custom-404-pages/.  This means that if you have a regular User Page you can use the 404 page from this theme, but if it's a website for a specific repository, the 404 page will not be used.
