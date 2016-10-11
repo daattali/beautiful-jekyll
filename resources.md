@@ -8,4 +8,4 @@ subtitle: For MDS students and beyond
 
 We provide these installation instructions to our students on the first day of the program. 
 
-### [Career and Professional Development]/resources_pages/Career and Industry Resources.md)
+### [Career and Professional Development](/resources_pages/Career and Industry Resources.md)
