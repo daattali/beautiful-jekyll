@@ -7,7 +7,7 @@ subtitle: For Career and Professional Development
 ## Career and Professional Development
 - [Build My Career](http://students.ubc.ca/career) UBC Careers online, Resources and Events links.
 - [Grad Studies e-Resources and Presentations](https://www.grad.ubc.ca/current-students/graduate-pathways-success/e-resources-presentations) UBC Career Develoopment link and Career Advice section.
-- [Mitacs] (http://www.mitacs.ca/en)Canadian research and training internships and industry partnerships.
+- [Mitacs](http://www.mitacs.ca/en)Canadian research and training internships and industry partnerships.
 - [Computer Science Career Postings](https://my.cs.ubc.ca/students/career) UBC Department of Computer Science Job Postings (CWL required)
 - [Glassdoor](https://www.glassdoor.ca/index.htm?countryRedirect=true) Interview questions lookup for compnaies and roles.
 - [Careercup](https://www.careercup.com/) Technology interview questions.
