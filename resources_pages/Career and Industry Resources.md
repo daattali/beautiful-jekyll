@@ -1,3 +1,8 @@
+---
+layout: page
+title: Career and Industry Resources
+subtitle: For Career and Professional Development
+---
 
 ## Career and Professional Development
 - [Build My Career] (http://students.ubc.ca/career) UBC Careers online, Resources and Events links.
