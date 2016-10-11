@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Career and Industry Resources
-subtitle: For Career and Professional Development
+subtitle: 
 ---
 
 ## Career and Professional Development
