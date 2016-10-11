@@ -16,7 +16,7 @@ This template is built on top of [Jekyll](http://jekyllrb.com/) and can be used 
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
 - [Features](#features)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
-- [Advanced: local development](#advanced-local-development)
+- [Advanced: local development](#advanced-local-development-using-docker)
 - [Credits and contributions](#credits)
 
 ## Prerequisites
