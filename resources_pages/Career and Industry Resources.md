@@ -12,7 +12,6 @@
 
 
 ## Data Science
-
 #### **Vancouver Meetups**
 - [Data Science Group] (http://www.meetup.com/DataScience/)
 - [Python Group] (http://www.meetup.com/vanpyz/)
