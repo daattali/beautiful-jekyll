@@ -15,19 +15,23 @@ Here are the 2 functions, sorry the datastore names are blurred but you get the 
 - Input object is one or multiple datastore objects
 
 Usage: _I want all the datastores and what luns they are on_
+
 ```Powershell
 Convert-DSToCanonical (get-Datastore)
 Get-Datastore | Convert-DSToCanonical
 ```
+
 ![dstocan.jpg]({{site.baseurl}}/img/dstocan.jpg)
 
 **Convert Canonical name to datastore.**
 - Input object is one or multiple strings
 
 Usage: _What datastores are on the Equallogic luns mounted on Host-B_
+
 ```Powershell
 Get-ScsiLun -VmHost "Host-B" | where vendor -eq EQLOGIC | Convert-CanonicalToDS
 ```
+
 ![cantods.jpg]({{site.baseurl}}/img/cantods.jpg)
 
 ## Functions
