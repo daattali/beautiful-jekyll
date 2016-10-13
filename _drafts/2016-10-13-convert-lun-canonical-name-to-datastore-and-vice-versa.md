@@ -12,14 +12,12 @@ And here it is:
 Convert Datastore to canonical name.
 - Input object is one or multiple datastore objects
 
-Usage: 
+Usage, I want all the datastores and what luns they are on: 
 ```Powershell
 Convert-DSToCanonical (get-Datastore)
+Get-Datastore | Convert-DSToCanonical
 ```
-Or
-```Powershell
-Get-datastore | Convert-DSToCanonical
-```
+![dstocan.jpg]({{site.baseurl}}/img/dstocan.jpg)
 
 ```Powershell
 Function Convert-DSToCanonical {
@@ -49,6 +47,12 @@ $datastore | ForEach-Object {
 
 Convert Canonical name to datastore.
 - Input object is one or multiple strings
+
+Usage, What datastores are on the Equallogic luns mounted on Host-B: 
+```Powershell
+Get-ScsiLun -VmHost "Host-B" | where vendor -eq EQLOGIC | Convert-CanonicalToDS
+```
+![cantods.jpg]({{site.baseurl}}/img/cantods.jpg)
 
 ```Powershell
 Function Convert-CanonicalToDS {
