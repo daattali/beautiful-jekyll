@@ -45,3 +45,5 @@ Before patching to 20160804001:
 After patching to 20160804001:
 
 ![vpxa-crash-after.jpg]({{site.baseurl}}/img/vpxa-crash-after.jpg)
+
+**So if you are getting random disconnects on your hosts, patch them.**
