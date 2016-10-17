@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: vSphere 6 host randomly disconnects from vCenter
 ---
 I got a few email alerts recently from my vCenter regarding host not responding and disconnect at a random time. At first I tried to find a pattern for what could be potentially causing the issue and quickly realized that nothing funny was happening in vSphere-land.
