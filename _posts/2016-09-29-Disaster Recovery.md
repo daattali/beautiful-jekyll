@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - September 29th 2016 - Disaster Recovery as Code'
+title: 'Meeting - September 29th 2016 - Disaster Recovery as Code'
 ---
 
 ## Cincinnati PowerShell User Group – September Meeting – Disaster Recovery as Code
