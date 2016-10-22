@@ -25,8 +25,7 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - GitHub Pages: "https://davidcolladogithub.github.io/"
-  Author's home: "https://davidcolladogithub.github.io/"
+    - GitHub Pages: "https://github.com/DavidColladoGitHub"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
