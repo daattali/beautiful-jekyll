@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
+title: Prueba
+subtitle: WIP
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Este es un post de prueba
 
-**Here is some bold text**
+**Con texto en negrita**
 
-## Here is a secondary heading
+## Y cabeceras secundarias
 
-Here's a useless table:
+Que puede tener tablas:
  
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
@@ -20,11 +20,11 @@ Here's a useless table:
 | Two | Three | One |
  
 
-How about a yummy crepe?
+Imágenes:
 
 ![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
-Here's a code chunk:
+Código:
 
 ~~~
 var foo = function(x) {
@@ -33,7 +33,7 @@ var foo = function(x) {
 foo(3)
 ~~~
 
-And here is the same code with syntax highlighting:
+Código con sintaxis con color:
 
 ```javascript
 var foo = function(x) {
@@ -42,7 +42,7 @@ var foo = function(x) {
 foo(3)
 ```
 
-And here is the same code yet again but with line numbers:
+E incluso con números de página:
 
 {% highlight javascript linenos %}
 var foo = function(x) {
