@@ -156,20 +156,20 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Post title"
-          placeholder: "Title"
+          label: "Título del post"
+          placeholder: "Título"
           alterable: true
       - name: "subtitle"
         field:
           element: "textarea"
           label: "Subtitle"
-          placeholder: "A description of your post."
+          placeholder: "Descripción del post."
           alterable: true
       - name: "date"
         field:
           element: "text"
           label: "Date"
-          help: "Enter date of post."
+          help: "Introduce fecha del post."
           placeholder: "dd-mm-yyyy"
           alterable: true
       - name: "published"
