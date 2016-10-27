@@ -5,6 +5,7 @@ subtitle: An easy way to add Google OAuth2 authentication to Ruby on Rails appli
 date:   2016-02-07 16:47:14 +0530
 categories: ruby_on_rails
 tags: [ruby_on_rails]
+<!-- bigimg: /img/path.jpg -->
 ---
 The overall idea behind this first post is to help you setup Google OAuth2 authentication in your Ruby on Rails application. Any kind of OAuth provides an easy and a secure way to sign up to an application on the internet.
 
