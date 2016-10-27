@@ -3,10 +3,9 @@ layout: post
 title:  "Google OAuth2 OmniAuth"
 subtitle: Excerpt from Soulshaping by Jeff Brown
 bigimg: ![Google](/img/google.png) ![Google+](/img/plus.png) ![OAuth](/img/oauth.png)
-date:   2016-02-07 16:47:14 +0530
 categories: ruby_on_rails
 ---
-![Google](/img/google.png) ![Google+](/img/plus.png) ![OAuth](/img/oauth.png)
+<!-- ![Google](/img/google.png) ![Google+](/img/plus.png) ![OAuth](/img/oauth.png) -->
 
 The overall idea behind this first post is to help you setup Google OAuth2 authentication in your Ruby on Rails application. Any kind of OAuth provides an easy and a secure way to sign up to an application on the internet.
 
