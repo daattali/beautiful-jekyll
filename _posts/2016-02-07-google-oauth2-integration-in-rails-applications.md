@@ -4,6 +4,7 @@ title:  "Google OAuth2 OmniAuth"
 subtitle: An easy way to add Google OAuth2 authentication to Ruby on Rails applications.
 date:   2016-02-07 16:47:14 +0530
 categories: ruby_on_rails
+tags: [ruby_on_rails]
 ---
 ![Google](/img/google.png) ![Google+](/img/plus.png) ![OAuth](/img/oauth.png)
 
