@@ -25,8 +25,10 @@ description: You are at the right place
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+    - Hacker News: "https://news.ycombinator.com/"
+    - Datatau: "http://www.datatau.com/"
+    # - Learn markdown: "http://www.markdowntutorial.com/"
+    # - GitHub Pages: "https://pages.github.com/"
   # Author's home: "https://www.google.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
