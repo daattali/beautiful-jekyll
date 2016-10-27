@@ -6,9 +6,9 @@ date:   2016-02-07 16:47:14 +0530
 categories: ruby_on_rails
 tags: [ruby_on_rails]
 ---
-![Google](/img/google.png) ![Google+](/img/plus.png) ![OAuth](/img/oauth.png)
-
 The overall idea behind this first post is to help you setup Google OAuth2 authentication in your Ruby on Rails application. Any kind of OAuth provides an easy and a secure way to sign up to an application on the internet.
+
+![Google](/img/google.png) ![Google+](/img/plus.png) ![OAuth](/img/oauth.png)
 
 Firstly, let's understand the meaning of OAuth.
 
