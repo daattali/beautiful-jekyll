@@ -9,7 +9,7 @@ tags: [computer_vision]
 
 This post contains all the Computer Vision groups from various Universities.  
 
-United States of America  
+###United States of America  
 
 1. [Arizona State University](http://lab.engineering.asu.edu/ivulab/) - Image, Video, and Usability Lab  
 2. [Brown University](https://vision.lems.brown.edu/) - Computer Vision  
@@ -57,16 +57,23 @@ United States of America
 44. [University of Maryland](https://www.cs.umd.edu/research-area/computer-vision) - Computer Vision  
 45. [University of Maryland](http://www.cfar.umd.edu/cvl/) - Computer Vision Laboratory  
 46. [University of Maryland](http://www.cfar.umd.edu/) - Center for Automation Research  
-32. [University of Florida](https://www.cise.ufl.edu/research/cvgmi/) - Laboratory for Computer Vision, Graphics and Medical Imaging  
-32. [University of Central Florida](http://crcv.ucf.edu/) - Center for Research in Computer Vision  
-32. [University of Massachusetts, Amherst](http://vis-www.cs.umass.edu/) - Computer Vision Lab  
-32. [University of Minnesota](https://www.dtc.umn.edu/core5.php) - Digital Technology Center  
-32. [University of North Carolina, Chapel Hill](http://cs.unc.edu/research/areas/vision/) - Computer Vision  
-32. [University of North Carolina, Charlotte](http://cs.uncc.edu/research-area/computer-vision) - Computer Vision  
-32. [University of Southern California](http://iris.usc.edu/usc-computer-vision.html) - USC Computer Vision  
-32. [University of Texas, Austin](http://www.cs.utexas.edu/~grauman/research/pubs.html) - UT-Austin Computer Vision Group  
-32. [University of Utah](http://robotics.coe.utah.edu/) - Utah Robotics Center  
-32. [University of Virginia](https://www.cs.virginia.edu/~vision/) - UVA Vision Group  
-32. [University of Washington](https://www.cs.washington.edu/research/graphics) - Computer Graphics, Vision, Animation and Game Science  
-32. [University of Wisconsin, Madison](http://research.cs.wisc.edu/graphics/GraphicsWeb/) - Computer Graphics  
-24. [University of Michigan](https://vl-lab.eecs.umich.edu/) - Michigan Vision and Learning Lab  
+47. [University of Florida](https://www.cise.ufl.edu/research/cvgmi/) - Laboratory for Computer Vision, Graphics and Medical Imaging  
+48. [University of Central Florida](http://crcv.ucf.edu/) - Center for Research in Computer Vision  
+49. [University of Massachusetts, Amherst](http://vis-www.cs.umass.edu/) - Computer Vision Lab  
+50. [University of Michigan](https://vl-lab.eecs.umich.edu/) - Michigan Vision and Learning Lab  
+51. [University of Minnesota](https://www.dtc.umn.edu/core5.php) - Digital Technology Center  
+52. [University of North Carolina, Chapel Hill](http://cs.unc.edu/research/areas/vision/) - Computer Vision  
+53. [University of North Carolina, Charlotte](http://cs.uncc.edu/research-area/computer-vision) - Computer Vision  
+54. [University of Southern California](http://iris.usc.edu/usc-computer-vision.html) - USC Computer Vision  
+55. [University of Texas, Austin](http://www.cs.utexas.edu/~grauman/research/pubs.html) - UT-Austin Computer Vision Group  
+56. [University of Utah](http://robotics.coe.utah.edu/) - Utah Robotics Center  
+57. [University of Virginia](https://www.cs.virginia.edu/~vision/) - UVA Vision Group  
+58. [University of Washington](https://www.cs.washington.edu/research/graphics) - Computer Graphics, Vision, Animation and Game Science  
+59. [University of Wisconsin, Madison](http://research.cs.wisc.edu/graphics/GraphicsWeb/) - Computer Graphics  
+
+###Canada
+1. [McGill University](http://cim.mcgill.ca/) - Center for Intelligent Machines    
+2. [Queen's University](http://rcvlab.ece.queensu.ca/) - The Robotics and Computer Vision Lab
+3. [Simon Frazer University](http://vml.cs.sfu.ca/) - Vision and Media Lab  
+4. [University of Alberta](https://webdocs.cs.ualberta.ca/~vis/) - Computer Vision and Robotics Research Group  
+5. [University of Waterloo](https://uwaterloo.ca/vision-image-processing-lab/) - Vision and Image Processing Lab  
