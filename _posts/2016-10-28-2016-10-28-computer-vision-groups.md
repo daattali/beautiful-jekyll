@@ -34,6 +34,7 @@ United States of America
 23. [Princeton University](https://vision.princeton.edu/) - Princeton Vision and Robotics  
 24. [Purdue University](https://engineering.purdue.edu/RVL/) - Purdue Robot Vision Lab  
 25. [Rensselaer Polytechnic Institute](http://www.vision.cs.rpi.edu/) - Computer Vision  
+25. [Syracuse University](http://www.vision.syr.edu/) - Smart Vision Systems Laboratory  
 26. [University of Rochester](http://www.cvs.rochester.edu/) - Center for Visual Science  
 27. [Rutgers University](https://www.cs.rutgers.edu/research/groups/intelligent-systems/computer-vision) - Computer Vision  
 28. [San Diego State University](http://cv.sdsu.edu/) - Computer Vision  
@@ -48,14 +49,21 @@ United States of America
 32. [University of California, Riverside](http://www.vislab.ucr.edu/) - Visualization and Intelligent Systems Laboratory  
 32. [University of Illinois, Chicago](http://robotics.ece.uic.edu/) - Robotics  
 32. [University of Illinois, Chicago](https://vision.uic.edu/) - Machine Vision Lab   
-32. [University of Illinois, Urbana Champaign](http://vision.cs.illinois.edu/vision_website/) - Computer Vision
-32. []()
-32. []()
-32. []()
-32. []()
-32. []()
-32. []()
-32. []()
-32. []()
-32. []()
+32. [University of Illinois, Urbana Champaign](http://vision.cs.illinois.edu/vision_website/) - Computer Vision  
+32. [University of Illinois, Urbana Champaign](http://vision.ai.illinois.edu/) - Computer Vision and Robotic Lab  
+32. [University of Maryland](https://www.cs.umd.edu/research-area/computer-vision) - Computer Vision  
+32. [University of Maryland](http://www.cfar.umd.edu/cvl/) - Computer Vision Laboratory  
+32. [University of Maryland](http://www.cfar.umd.edu/) - Center for Automation Research  
+32. [University of Florida](https://www.cise.ufl.edu/research/cvgmi/) - Laboratory for Computer Vision, Graphics and Medical Imaging  
+32. [University of Central Florida](http://crcv.ucf.edu/) - Center for Research in Computer Vision  
+32. [University of Massachusetts, Amherst](http://vis-www.cs.umass.edu/) - Computer Vision Lab  
+32. [University of Minnesota](https://www.dtc.umn.edu/core5.php) - Digital Technology Center  
+32. [University of North Carolina, Chapel Hill](http://cs.unc.edu/research/areas/vision/) - Computer Vision  
+32. [University of North Carolina, Charlotte](http://cs.uncc.edu/research-area/computer-vision) - Computer Vision  
+32. [University of Southern California](http://iris.usc.edu/usc-computer-vision.html) - USC Computer Vision  
+32. [University of Texas, Austin](http://www.cs.utexas.edu/~grauman/research/pubs.html) - UT-Austin Computer Vision Group  
+32. [University of Utah](http://robotics.coe.utah.edu/) - Utah Robotics Center  
+32. [University of Virginia](https://www.cs.virginia.edu/~vision/) - UVA Vision Group  
+32. [University of Washington](https://www.cs.washington.edu/research/graphics) - Computer Graphics, Vision, Animation and Game Science  
+32. [University of Wisconsin, Madison](http://research.cs.wisc.edu/graphics/GraphicsWeb/) - Computer Graphics  
 24. [University of Michigan](https://vl-lab.eecs.umich.edu/) - Michigan Vision and Learning Lab  
