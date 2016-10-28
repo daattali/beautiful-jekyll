@@ -71,9 +71,9 @@ This post contains all the Computer Vision groups from various Universities.
 58. [University of Washington](https://www.cs.washington.edu/research/graphics) - Computer Graphics, Vision, Animation and Game Science  
 59. [University of Wisconsin, Madison](http://research.cs.wisc.edu/graphics/GraphicsWeb/) - Computer Graphics  
 
-###Canada
-1. [McGill University](http://cim.mcgill.ca/) - Center for Intelligent Machines    
-2. [Queen's University](http://rcvlab.ece.queensu.ca/) - The Robotics and Computer Vision Lab
-3. [Simon Frazer University](http://vml.cs.sfu.ca/) - Vision and Media Lab  
-4. [University of Alberta](https://webdocs.cs.ualberta.ca/~vis/) - Computer Vision and Robotics Research Group  
-5. [University of Waterloo](https://uwaterloo.ca/vision-image-processing-lab/) - Vision and Image Processing Lab  
+###Canada  
+1. [McGill University](http://cim.mcgill.ca/) - Center for Intelligent Machines      
+2. [Queen's University](http://rcvlab.ece.queensu.ca/) - The Robotics and Computer Vision Lab  
+3. [Simon Frazer University](http://vml.cs.sfu.ca/) - Vision and Media Lab    
+4. [University of Alberta](https://webdocs.cs.ualberta.ca/~vis/) - Computer Vision and Robotics Research Group    
+5. [University of Waterloo](https://uwaterloo.ca/vision-image-processing-lab/) - Vision and Image Processing Lab    
