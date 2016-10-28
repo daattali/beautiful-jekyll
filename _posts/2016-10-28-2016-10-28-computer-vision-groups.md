@@ -1,7 +1,9 @@
 ---
 layout: post
-published: false
-title: 2016-10-28-computer-vision-groups
+title: Computer Vision Groups
+date:   2016-10-28 16:47:14 +0530
+categories: computer_vision
+tags: [computer_vision]
 ---
 ## Computer Vision Groups
 
@@ -34,26 +36,27 @@ United States of America
 23. [Princeton University](https://vision.princeton.edu/) - Princeton Vision and Robotics  
 24. [Purdue University](https://engineering.purdue.edu/RVL/) - Purdue Robot Vision Lab  
 25. [Rensselaer Polytechnic Institute](http://www.vision.cs.rpi.edu/) - Computer Vision  
-25. [Syracuse University](http://www.vision.syr.edu/) - Smart Vision Systems Laboratory  
-26. [University of Rochester](http://www.cvs.rochester.edu/) - Center for Visual Science  
-27. [Rutgers University](https://www.cs.rutgers.edu/research/groups/intelligent-systems/computer-vision) - Computer Vision  
-28. [San Diego State University](http://cv.sdsu.edu/) - Computer Vision  
-29. [University of Buffalo](http://www.cse.buffalo.edu/research/areas/comvision.php) - Computer Vision and Information Visualization  
-30. [Stony Brook University](http://www3.cs.stonybrook.edu/~cvl/) - Computer Vision Lab  
-31. [University of California, Berkeley](http://bvlc.eecs.berkeley.edu/) - Berkeley Vision and Learning Center  
-32. [University of California, Irvine](http://vision.ics.uci.edu/) - Computational Vision at UC Irvine  
-32. [University of California, Los Angeles](http://vision.ucla.edu/) - UCLA Vision Lab  
-32. [University of California, Santa Barbara](https://vision.ece.ucsb.edu/) - Vision Research Lab  
-32. [University of California, Santa Cruz](https://vision.soe.ucsc.edu/) - UCSC Computer Vision Lab  
-32. [University of California, Santa Diego](http://vision.ucsd.edu/) - UCSD Computer Vision  
-32. [University of California, Riverside](http://www.vislab.ucr.edu/) - Visualization and Intelligent Systems Laboratory  
-32. [University of Illinois, Chicago](http://robotics.ece.uic.edu/) - Robotics  
-32. [University of Illinois, Chicago](https://vision.uic.edu/) - Machine Vision Lab   
-32. [University of Illinois, Urbana Champaign](http://vision.cs.illinois.edu/vision_website/) - Computer Vision  
-32. [University of Illinois, Urbana Champaign](http://vision.ai.illinois.edu/) - Computer Vision and Robotic Lab  
-32. [University of Maryland](https://www.cs.umd.edu/research-area/computer-vision) - Computer Vision  
-32. [University of Maryland](http://www.cfar.umd.edu/cvl/) - Computer Vision Laboratory  
-32. [University of Maryland](http://www.cfar.umd.edu/) - Center for Automation Research  
+26. [Syracuse University](http://www.vision.syr.edu/) - Smart Vision Systems Laboratory  
+27. [University of Rochester](http://www.cvs.rochester.edu/) - Center for Visual Science  
+28. [Rutgers University](https://www.cs.rutgers.edu/research/groups/intelligent-systems/computer-vision) - Computer Vision  
+29. [San Diego State University](http://cv.sdsu.edu/) - Computer Vision
+30. [Stanford University](http://vision.stanford.edu/) - Stanford Vision Lab  
+31. [University of Buffalo](http://www.cse.buffalo.edu/research/areas/comvision.php) - Computer Vision and Information Visualization  
+32. [Stony Brook University](http://www3.cs.stonybrook.edu/~cvl/) - Computer Vision Lab  
+33. [University of California, Berkeley](http://bvlc.eecs.berkeley.edu/) - Berkeley Vision and Learning Center  
+34. [University of California, Irvine](http://vision.ics.uci.edu/) - Computational Vision at UC Irvine  
+35. [University of California, Los Angeles](http://vision.ucla.edu/) - UCLA Vision Lab  
+36. [University of California, Santa Barbara](https://vision.ece.ucsb.edu/) - Vision Research Lab  
+37. [University of California, Santa Cruz](https://vision.soe.ucsc.edu/) - UCSC Computer Vision Lab  
+38. [University of California, Santa Diego](http://vision.ucsd.edu/) - UCSD Computer Vision  
+39. [University of California, Riverside](http://www.vislab.ucr.edu/) - Visualization and Intelligent Systems Laboratory  
+40. [University of Illinois, Chicago](http://robotics.ece.uic.edu/) - Robotics  
+41. [University of Illinois, Chicago](https://vision.uic.edu/) - Machine Vision Lab   
+42. [University of Illinois, Urbana Champaign](http://vision.cs.illinois.edu/vision_website/) - Computer Vision  
+43. [University of Illinois, Urbana Champaign](http://vision.ai.illinois.edu/) - Computer Vision and Robotic Lab  
+44. [University of Maryland](https://www.cs.umd.edu/research-area/computer-vision) - Computer Vision  
+45. [University of Maryland](http://www.cfar.umd.edu/cvl/) - Computer Vision Laboratory  
+46. [University of Maryland](http://www.cfar.umd.edu/) - Center for Automation Research  
 32. [University of Florida](https://www.cise.ufl.edu/research/cvgmi/) - Laboratory for Computer Vision, Graphics and Medical Imaging  
 32. [University of Central Florida](http://crcv.ucf.edu/) - Center for Research in Computer Vision  
 32. [University of Massachusetts, Amherst](http://vis-www.cs.umass.edu/) - Computer Vision Lab  
