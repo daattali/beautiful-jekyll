@@ -33,6 +33,16 @@
             </a>
           </li>
           {% endif %}
+	  {% if site.author.reddit and site.footer-links-active.reddit %}
+          <li>
+            <a href="https://reddit.com/u/{{ site.author.reddit }}" title="Reddit">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
       {% if site.author.google-plus and site.footer-links-active.google-plus %}
           <li>
             <a href="https://plus.google.com/{{ site.author.google-plus }}" title="Google+">
