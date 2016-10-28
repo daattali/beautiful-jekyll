@@ -4,12 +4,13 @@ title: Computer Vision Groups
 date:   2016-10-28 16:47:14 +0530
 categories: computer_vision
 tags: [computer_vision]
+bigimg: /img/computer_vision.jpg
 ---
 ## Computer Vision Groups
 
 This post contains all the Computer Vision groups from various Universities.  
 
-###United States of America  
+### United States of America  
 
 1. [Arizona State University](http://lab.engineering.asu.edu/ivulab/) - Image, Video, and Usability Lab  
 2. [Brown University](https://vision.lems.brown.edu/) - Computer Vision  
@@ -71,9 +72,31 @@ This post contains all the Computer Vision groups from various Universities.
 58. [University of Washington](https://www.cs.washington.edu/research/graphics) - Computer Graphics, Vision, Animation and Game Science  
 59. [University of Wisconsin, Madison](http://research.cs.wisc.edu/graphics/GraphicsWeb/) - Computer Graphics  
 
-###Canada  
+### Canada  
+
 1. [McGill University](http://cim.mcgill.ca/) - Center for Intelligent Machines      
 2. [Queen's University](http://rcvlab.ece.queensu.ca/) - The Robotics and Computer Vision Lab  
 3. [Simon Frazer University](http://vml.cs.sfu.ca/) - Vision and Media Lab    
 4. [University of Alberta](https://webdocs.cs.ualberta.ca/~vis/) - Computer Vision and Robotics Research Group    
-5. [University of Waterloo](https://uwaterloo.ca/vision-image-processing-lab/) - Vision and Image Processing Lab    
+5. [University of Waterloo](https://uwaterloo.ca/vision-image-processing-lab/) - Vision and Image Processing Lab
+
+### Europe
+	
+1. [ETH Zurich]() - Computer Vision Laboratory  
+2. [University of Oxford](http://www.robots.ox.ac.uk/~tvg/)  
+3. [University of Oxford](http://www.robots.ox.ac.uk/~vgg/)  
+4. [University of Cambridge](http://mi.eng.cam.ac.uk/~cipolla/research.htm)  
+5. [University of Cambridge](https://mi.eng.cam.ac.uk/)  
+6. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - Imperial CV and Learning Lab  
+7. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - http://www.iis.ee.ic.ac.uk/tkkim/  
+8. [EPFL](http://cvlab.epfl.ch/) - Computer Vision Laboratory    
+9. [Univeristy of Edinburgh](http://calvin.inf.ed.ac.uk/) - CALVIN  
+10. [Technical University Munich](https://vision.in.tum.de/) - Computer Vision Laboratory	
+
+### Australia
+
+### Singapore
+
+1. [Nanyang Technological University](http://www3.ntu.edu.sg/home/wanggang/) - Computer Vision Laboratory
+2. [National University of Singapore](http://www.comp.nus.edu.sg/~vision/) - Computer Vision Laboratory
+
