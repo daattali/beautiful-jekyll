@@ -88,7 +88,6 @@ This post contains all the Computer Vision groups from various Universities.
 4. [Technical University Munich](https://vision.in.tum.de/) - Computer Vision Laboratory	
 5. [University of Oxford](http://www.robots.ox.ac.uk/~tvg/) - Torr Vision Group  
 6. [University of Oxford](http://www.robots.ox.ac.uk/~vgg/) - Visual Geometry Group  
-7. [University of Cambridge](http://mi.eng.cam.ac.uk/~cipolla/research.htm)  - 
 8. [University of Cambridge](https://mi.eng.cam.ac.uk/) - Machine Intelligence Laboratory  
 9. [Univeristy of Edinburgh](http://calvin.inf.ed.ac.uk/) - CALVIN  
 
