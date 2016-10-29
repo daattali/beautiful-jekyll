@@ -83,15 +83,14 @@ This post contains all the Computer Vision groups from various Universities.
 ### Europe
 	
 1. [ETH Zurich]() - Computer Vision Laboratory  
-2. [University of Oxford](http://www.robots.ox.ac.uk/~tvg/)  
-3. [University of Oxford](http://www.robots.ox.ac.uk/~vgg/)  
-4. [University of Cambridge](http://mi.eng.cam.ac.uk/~cipolla/research.htm)  
-5. [University of Cambridge](https://mi.eng.cam.ac.uk/)  
-6. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - Imperial CV and Learning Lab  
-7. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - http://www.iis.ee.ic.ac.uk/tkkim/  
-8. [EPFL](http://cvlab.epfl.ch/) - Computer Vision Laboratory    
+2. [EPFL](http://cvlab.epfl.ch/) - Computer Vision Laboratory    
+3. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - Imperial CV and Learning Lab  
+4. [Technical University Munich](https://vision.in.tum.de/) - Computer Vision Laboratory	
+5. [University of Oxford](http://www.robots.ox.ac.uk/~tvg/) - Torr Vision Group  
+6. [University of Oxford](http://www.robots.ox.ac.uk/~vgg/) - Visual Geometry Group  
+7. [University of Cambridge](http://mi.eng.cam.ac.uk/~cipolla/research.htm)  - 
+8. [University of Cambridge](https://mi.eng.cam.ac.uk/) - Machine Intelligence Laboratory  
 9. [Univeristy of Edinburgh](http://calvin.inf.ed.ac.uk/) - CALVIN  
-10. [Technical University Munich](https://vision.in.tum.de/) - Computer Vision Laboratory	
 
 ### Australia
 
