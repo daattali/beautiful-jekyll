@@ -4,7 +4,7 @@ title: Computer Vision Groups
 date:   2016-10-28 16:47:14 +0530
 categories: computer_vision
 tags: [computer_vision]
-bigimg: /img/computer_vision.jpg
+bigimg: /img/computer_vision.png
 ---
 ## Computer Vision Groups
 
