@@ -90,17 +90,18 @@ This is a list of most well known Computer Vision groups from various Universiti
 1. [Aristotle University of Thessaloniki](http://poseidon.csd.auth.gr/EN/) - Artificial Intelligence Information Analysis  
 2. [Czech Technical University](http://cmp.felk.cvut.cz/) - Center for Machine Perception  
 3. [Democritus University of Thrace](http://robotics.pme.duth.gr/) - Laboratory of Robotics and Automation  
-1. [ETH Zurich]() - Computer Vision Laboratory  
+1. [ETH Zurich](http://www.vision.ee.ethz.ch/en/) - Computer Vision Laboratory  
 2. [EPFL](http://cvlab.epfl.ch/) - Computer Vision Laboratory    
 3. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - Imperial CV and Learning Lab  
 4. [IT University of Copenhagen](https://www.itu.dk/image/index.html) - The Image Group     
 4. [Graz University of Technology](http://www.icg.tu-graz.ac.at/) - Institute for Computer Graphics and Vision  
-4. [KTH Royal Institute of Technology](https://www.kth.se/en/csc/forskning/cvap) - Computer Vision and Active Perception Lab     
+4. [KTH Royal Institute of Technology](https://www.kth.se/en/csc/forskning/cvap) - Computer Vision and Active Perception Lab  
+5. [KU Leuven](https://www.esat.kuleuven.be/psi/) - Processing Speech and Images       
 4. [RWTH Aachen University](http://www.vision.rwth-aachen.de/) - Computer Vision Group    
 4. [Technical University Munich](https://vision.in.tum.de/) - Computer Vision Laboratory  
 4. [Trinity College, Dublin](http://gv2.cs.tcd.ie/) - Graphics, Vision and Visualisation  	
 8. [University of Cambridge](https://mi.eng.cam.ac.uk/) - Machine Intelligence Laboratory  
-9. [Univeristy of Edinburgh](http://calvin.inf.ed.ac.uk/) - CALVIN  
+9. [University of Edinburgh](http://calvin.inf.ed.ac.uk/) - CALVIN  
 11. [University of Leeds](http://www.comp.leeds.ac.uk/vision/) - Computer Vision  
 4. [University of Lyon](http://liris.cnrs.fr/) - Informatics Laboratory in Image and Information Systems  
 5. [University of Lorraine](http://www.loria.fr/isa) - Lorraine Laboratory for Computer Research and Applications  
