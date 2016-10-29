@@ -8,7 +8,7 @@ bigimg: /img/computer_vision.jpg
 ---
 ## Computer Vision Groups
 
-This post contains all the Computer Vision groups from various Universities.  
+This is a list of most well known Computer Vision groups from various Universities across the World.  
 
 ### North America  
 
