@@ -92,11 +92,13 @@ This is a list of most well known Computer Vision groups from various Universiti
 3. [Democritus University of Thrace](http://robotics.pme.duth.gr/) - Laboratory of Robotics and Automation  
 1. [ETH Zurich](http://www.vision.ee.ethz.ch/en/) - Computer Vision Laboratory  
 2. [EPFL](http://cvlab.epfl.ch/) - Computer Vision Laboratory    
+3. [French Institute for Research in Computer Science and Automation (INRIA)](https://www.inria.fr/en/domains/perception-cognition-and-interaction) - Perception, Cognition and Interaction    
 3. [Imperial College London](http://www.iis.ee.ic.ac.uk/tkkim/) - Imperial CV and Learning Lab  
 4. [IT University of Copenhagen](https://www.itu.dk/image/index.html) - The Image Group     
 4. [Graz University of Technology](http://www.icg.tu-graz.ac.at/) - Institute for Computer Graphics and Vision  
 4. [KTH Royal Institute of Technology](https://www.kth.se/en/csc/forskning/cvap) - Computer Vision and Active Perception Lab  
-5. [KU Leuven](https://www.esat.kuleuven.be/psi/) - Processing Speech and Images       
+5. [KU Leuven](https://www.esat.kuleuven.be/psi/) - Processing Speech and Images  
+5. [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/) - Computer Vision and Multimodal Computing           
 4. [RWTH Aachen University](http://www.vision.rwth-aachen.de/) - Computer Vision Group    
 4. [Technical University Munich](https://vision.in.tum.de/) - Computer Vision Laboratory  
 4. [Trinity College, Dublin](http://gv2.cs.tcd.ie/) - Graphics, Vision and Visualisation  	
