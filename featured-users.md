@@ -28,10 +28,10 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
 | [ouzor.github.io](http://ouzor.github.io) | Juuso Parkkinen | Data scientist |
 | [derekogle.com](http://derekogle.com/) | Derek Ogle | Professor of Mathematical Sciences and Natural Resources |
-| [trappmartin.github.io](http://trappmartin.github.io) | Martin Trapp | Machine learning researcher |
 | [melyanna.github.io](http://melyanna.github.io/) | Melyanna | Shows off her nice art |
 | [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
 | [kootenpv.github.io](http://kootenpv.github.io/) | Pascal van Kooten | Data analytics |
 | [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
 | [epwalsh.com](https://epwalsh.com) | Evan Pete Walsh | PhD candidate (Statistics and Mathematics) at Iowa State University |
 | [anudit.in](http://www.anudit.in/) | Anudit Verma | Engineering student |
+| [aqibsaeed.github.io](http://aqibsaeed.github.io/) | Aaqib Saeed | Computer Science grad student |
