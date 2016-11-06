@@ -42,7 +42,7 @@ author:
   github: yourname    # eg. daattali
   twitter: yourname   # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  "https://es.linkedin.com/in/davidcolladowebdeveloper"
+  linkedin: davidcolladowebdeveloper
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
@@ -82,7 +82,7 @@ url-pretty: #"MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 disqus: "davidcolladoblog"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-75619547-2"
 
 # Facebook App ID
 # fb_app_id: ""
