@@ -46,11 +46,11 @@ function startProcess () {
 //Aquí llegaremos al llamar al web worker con el postMessage
 onmessage = function (oEvent) {				
 
-//Imaginemos que aquí llamamos a un proceso pesado
-heavyProcess();
+  //Imaginemos que aquí llamamos a un proceso pesado
+  heavyProcess();
 
-//Mandamos un mensaje al hilo principal.
-postMessage("Proceso terminado");
+  //Mandamos un mensaje al hilo principal.
+  postMessage("Proceso terminado");
 }
 {% endhighlight %}
 
