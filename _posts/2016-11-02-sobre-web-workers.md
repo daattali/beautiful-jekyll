@@ -28,15 +28,15 @@ Sin embargo, con web workers podemos hacer lo siguiente
 **En nuestro js principal**
 {% highlight javascript linenos %}
 function startProcess () {
-  //Creamos un web worker
+  /* Creamos un web worker */
   var webWorker = new Worker('worker.js')
 
-  //Añadimos un listener que será llamado desde el worker. En nuestro ejemplo se llamará cuando haya acabado el proceso
+  /* Añadimos un listener que será llamado desde el worker. En nuestro ejemplo se llamará cuando haya acabado el proceso */
   webWorker.addEventListener('message', function (oEvent) {
     console.log(oEvent.data);
   })
 
-  //Llamamos al web worker
+  /* Llamamos al web worker */
   webWorker.postMessage();
 }
 {% endhighlight %}
@@ -44,13 +44,13 @@ function startProcess () {
 **worker.js**
 {% highlight javascript linenos %}
 
-//Aquí llegaremos al llamar al web worker con el postMessage
+/* Aquí llegaremos al llamar al web worker con el postMessage */
 onmessage = function (oEvent) {				
 
-  /*Imaginemos que aquí llamamos a un proceso pesado*/
+  /* Imaginemos que aquí llamamos a un proceso pesado */
   heavyProcess();
 
-  //Mandamos un mensaje al hilo principal.
+  /* Mandamos un mensaje al hilo principal. */
   postMessage("Proceso terminado");
 }
 {% endhighlight %}
