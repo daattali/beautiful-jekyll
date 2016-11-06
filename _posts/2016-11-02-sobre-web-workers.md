@@ -23,6 +23,12 @@ Son hilos reales
 No. Son conceptos similares, pero con alcances diferentes. Los service worker están pensados para realizar procesos continuamente en segundo plano. Para ello necesitan un hilo independiente del hilo principal de la aplicación, y eso es justo lo que podemos hacer con un web worker. Por ello los service worker usan un web worker internamente. 
 
 ## ¿Cómo se usan?
+{% highlight javascript linenos %}
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+{% endhighlight %}
 
 ## Cuándo deben usarse
 
