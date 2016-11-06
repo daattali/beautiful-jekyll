@@ -21,22 +21,22 @@ Son hilos reales
 No. Son conceptos similares, pero con alcances diferentes. Los service worker están pensados para realizar procesos continuamente en segundo plano. Para ello necesitan un hilo independiente del hilo principal de la aplicación, y eso es justo lo que podemos hacer con un web worker. Por ello los service worker usan un web worker internamente. 
 
 ## ¿Cómo se usan?
-Supongamos que tenemos un proceso pesado. Habitualmente simplemente llamaríamos al método y esperaríamos que tardara poco. Reduciríamos complejidad, haríamos asincrono todo lo que pudiéramos, y el resto quedaría en manos del destino.
+Supongamos que tenemos un proceso pesado. Normalmente llamaríamos al método y esperaríamos que tardara poco. Reduciríamos complejidad, haríamos asincrono todo lo que pudiéramos, y el resto quedaría en manos del ~~destino~~ navegador.
 
 Sin embargo, con web workers podemos hacer lo siguiente
 **En nuestro js principal**
 {% highlight javascript linenos %}
 function startProcess () {
-  //Creamos un web worker
-  var webWorker = new Worker('worker.js')
+//Creamos un web worker
+var webWorker = new Worker('worker.js')
 
-  //Añadimos un listener que será llamado desde el worker. En nuestro ejemplo se llamará cuando haya acabado el proceso
-  webWorker.addEventListener('message', function (oEvent) {
-    console.log(oEvent.data);
-  })
+//Añadimos un listener que será llamado desde el worker. En nuestro ejemplo se llamará cuando haya acabado el proceso
+webWorker.addEventListener('message', function (oEvent) {
+console.log(oEvent.data);
+})
 
-  //Llamamos al web worker
-  webWorker.postMessage();
+//Llamamos al web worker
+webWorker.postMessage();
 }
 {% endhighlight %}
 
@@ -45,11 +45,11 @@ function startProcess () {
 
 //Aquí llegaremos al llamar al web worker con el postMessage
 onmessage = function (oEvent) {				
-	//Imaginemos que aquí llamamos a un proceso pesado
-	heavyProcess();
-	
-  //Mandamos un mensaje al hilo principal.
-	postMessage("Proceso terminado");
+//Imaginemos que aquí llamamos a un proceso pesado
+heavyProcess();
+
+//Mandamos un mensaje al hilo principal.
+postMessage("Proceso terminado");
 }
 {% endhighlight %}
 
