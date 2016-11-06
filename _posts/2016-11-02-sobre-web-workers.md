@@ -24,6 +24,7 @@ No. Son conceptos similares, pero con alcances diferentes. Los service worker es
 Supongamos que tenemos un proceso pesado. Normalmente llamaríamos al método y esperaríamos que tardara poco. Reduciríamos complejidad, haríamos asincrono todo lo que pudiéramos, y el resto quedaría en manos del ~~destino~~ navegador.
 
 Sin embargo, con web workers podemos hacer lo siguiente
+
 **En nuestro js principal**
 {% highlight javascript linenos %}
 function startProcess () {
@@ -46,7 +47,7 @@ function startProcess () {
 //Aquí llegaremos al llamar al web worker con el postMessage
 onmessage = function (oEvent) {				
 
-  //Imaginemos que aquí llamamos a un proceso pesado
+  /*Imaginemos que aquí llamamos a un proceso pesado*/
   heavyProcess();
 
   //Mandamos un mensaje al hilo principal.
