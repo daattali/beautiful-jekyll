@@ -92,5 +92,5 @@ Como cualquier tecnología web, solo podrá usarse en aquellos casos en que el n
 
 
 ## Referencias
-MDN: <https://developer.mozilla.org/es/docs/Web/Guide/Performance/Usando_web_workers>
-html5rocks: <https://www.html5rocks.com/en/tutorials/workers/basics/>
+* [MDN](https://developer.mozilla.org/es/docs/Web/Guide/Performance/Usando_web_workers)
+* [html5rocks](https://www.html5rocks.com/en/tutorials/workers/basics/)
