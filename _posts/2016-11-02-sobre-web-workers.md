@@ -15,7 +15,7 @@ Dicho esto, continuemos.
 Un web worker es un archivo de javascript que se ejecuta en segundo plano sin afectar el rendimiento de la página. Es independiente de la UI y funciona en otro hilo.
 
 ## ¿Son hilos reales o "falsos" como con el setTimeout?
-Son hilos reales
+Son hilos reales a nivel de sistema operativo.
 
 ## ¿Son lo mismo que los service workers?
 No. Son conceptos similares, pero con alcances diferentes. Los service worker están pensados para realizar procesos continuamente en segundo plano. Para ello necesitan un hilo independiente del hilo principal de la aplicación, y eso es justo lo que podemos hacer con un web worker. Por ello los service worker usan un web worker internamente. 
@@ -59,12 +59,38 @@ Lo que hacemos en este ejemplo es sencillo. He puesto comentarios para aclarar l
 
 Posteriormente llamamos al web worker. Cuando queramos y donde queramos. El web worker ejecutará la función *onmessage*. Para acabar, llamamos al hilo principal de nuevo con el método *postMessage*.
 
-Como harás observado, el *postMessage* es la forma que tenemos de comunicarnos entre hilos.
+Como harás observado, el *postMessage* es la forma que tenemos de comunicarnos entre hilos. El evento *onMessage* existente tanto en el hilo principal como en el web worker recibirá los datos que enviemos en esa llamada en ambas direcciones.
 
-Ejemplo en GitHub: <https://github.com/DavidColladoGitHub/blogExamples/tree/master/web%20workers>
+Se pueden hacer llamadas con XMLHttpRequest, con la particularidad de que el responseXML y los atributos channel serán siempre null.
 
-## Cuándo deben usarse
+[Ejemplo](https://github.com/DavidColladoGitHub/blogExamples/tree/master/web%20workers) en GitHub
+
+## Importando scripts
+Podemos importar scripts con la función global *importScripts*. Si necesitaramos usar un archivo llamado *miLibreria.js* haríamos lo siguiente:
+
+{% highlight javascript linenos %}
+importScripts('miLibreria.js'); 
+}
+{% endhighlight %}
+
+Si hubiera algún problema con la carga del scripts nos saltaría un error *NETWORK_ERROR*
+
+## Contexto
+Los web workers tienen un contexto propio (DedicatedWorkerGlobalScope). De hecho, no podemos usar el *window*. Para obtener el scope actual necesitaremos usar *self*
+
+## ¿Cuándo debería usar web workers?
+Para aligerar la carga en el hilo principal, principalmente en procesos pesados. Conversiones, recursividad... hay muchos escenarios.
 
 ## Limitaciones
+Como cualquier tecnología web, solo podrá usarse en aquellos casos en que el navegador lo permita. Este [enlace](http://caniuse.com/#feat=webworkers) tiene la información por navegador.
 
 ## Otros datos de interés
+*Es importante apuntar que **los valores que se pasan son una copia, no datos por referencia.** 
+*Los *workers* pueden crear más *subworkers* o *workers anidados*. De momento esta característica solo está disponible en Firefox
+*Podemos acceder al objeto navigator desde el worker. Este objeto contiene información interesante que nos permite, por ejemplo, identificar el navegador.
+*Tanto *localStorage* como *sessionStorage* son indefinidos en los web workers. Para guardar información usando dichas APIs de HTML5 podemos enviar los datos al hilo principal mediante el *postMessage* para que los gestione.
+
+
+## Referencias
+MDN: <https://developer.mozilla.org/es/docs/Web/Guide/Performance/Usando_web_workers>
+html5rocks: <https://www.html5rocks.com/en/tutorials/workers/basics/>
