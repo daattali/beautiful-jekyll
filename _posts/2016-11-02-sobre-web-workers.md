@@ -85,10 +85,10 @@ Para aligerar la carga en el hilo principal, principalmente en procesos pesados.
 Como cualquier tecnología web, solo podrá usarse en aquellos casos en que el navegador lo permita. Este [enlace](http://caniuse.com/#feat=webworkers) tiene la información por navegador.
 
 ## Otros datos de interés
-*Es importante apuntar que **los valores que se pasan son una copia, no datos por referencia.** 
-*Los *workers* pueden crear más *subworkers* o *workers anidados*. De momento esta característica solo está disponible en Firefox
-*Podemos acceder al objeto navigator desde el worker. Este objeto contiene información interesante que nos permite, por ejemplo, identificar el navegador.
-*Tanto *localStorage* como *sessionStorage* son indefinidos en los web workers. Para guardar información usando dichas APIs de HTML5 podemos enviar los datos al hilo principal mediante el *postMessage* para que los gestione.
+* Es importante apuntar que **los valores que se pasan son una copia, no datos por referencia.** 
+* Los *workers* pueden crear más *subworkers* o *workers anidados*. De momento esta característica solo está disponible en Firefox
+* Podemos acceder al objeto navigator desde el worker. Este objeto contiene información interesante que nos permite, por ejemplo, identificar el navegador.
+* Tanto *localStorage* como *sessionStorage* son indefinidos en los web workers. Para guardar información usando dichas APIs de HTML5 podemos enviar los datos al hilo principal mediante el *postMessage* para que los gestione.
 
 
 ## Referencias
