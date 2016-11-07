@@ -61,6 +61,8 @@ Posteriormente llamamos al web worker. Cuando queramos y donde queramos. El web 
 
 Como harás observado, el *postMessage* es la forma que tenemos de comunicarnos entre hilos.
 
+Ejemplo en GitHub: <https://github.com/DavidColladoGitHub/blogExamples/tree/master/web%20workers>
+
 ## Cuándo deben usarse
 
 ## Limitaciones
