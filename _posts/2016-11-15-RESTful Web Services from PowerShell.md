@@ -3,7 +3,7 @@ layout: post
 title: 'Next Meeting - November 15th 2016 - RESTful Web Services from PowerShell'
 ---
 
-## Cincinnati PowerShell User Group – November Meeting – REST and PowerShell
+## Cincinnati PowerShell User Group – November Meeting – REST APIs and PowerShell
 
 ### When: November 15th – 6PM **TUESDAY!**
 
