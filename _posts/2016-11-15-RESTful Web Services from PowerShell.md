@@ -9,7 +9,7 @@ title: 'Next Meeting - November 15th 2016 - RESTful Web Services from PowerShell
 
 ### Where: [Max Technical Training, Mason, OH](https://goo.gl/maps/ijBGbvJQR3B2)
 
-### Sign up here: [Cincy PSUG Meetup](http://www.meetup.com/TechLife-Cincinnati/events/234958977/)
+### Sign up here: [Cincy PSUG Meetup](http://www.meetup.com/TechLife-Cincinnati/events/235430434/)
 
 ```powershell 
 PS C:\> Get-PSUG | where {$_.City -eq Cincinnati}
