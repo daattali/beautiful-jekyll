@@ -91,5 +91,6 @@ Como cualquier tecnología web, solo podrá usarse en aquellos casos en que el n
 
 
 ## Referencias
++ No hay ningún enlace porque no acaba de sacar tiempo para compartir conocimiento, pero especial gracias a Sergio Martinez. Por su contribución a mi entendimiento más profundo de los *web workers* y el *Javascript* en general.
 * [MDN](https://developer.mozilla.org/es/docs/Web/Guide/Performance/Usando_web_workers)
 * [html5rocks](https://www.html5rocks.com/en/tutorials/workers/basics/)
