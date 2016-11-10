@@ -11,6 +11,10 @@ layout: base
 	      {{ content }}
 	    </article>
 
+      {% if page.social-share %}
+        {% include social-share.html %}
+      {% endif %}
+
       <ul class="pager blog-pager">
         {% if page.previous.url %}
         <li class="previous">
