@@ -577,3 +577,7 @@ pre {
   background-size: 3em 3em;
   border-left: 7px solid #444;
 }
+
+#social-share-section {
+  margin-bottom: 30px;
+}
