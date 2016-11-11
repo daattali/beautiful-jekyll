@@ -4,8 +4,7 @@ title: Resources
 subtitle: For MDS students and beyond
 ---
 
-### [Installation instructions for the MDS software stack](/resources_pages/installation_instructions)
-
-We provide these installation instructions to our students on the first day of the program. 
-
-### [Career and Professional Development](/resources_pages/CareerandIndustryResources)
+- [Installation instructions for the MDS software stack](/resources_pages/installation_instructions)
+  - We provide these installation instructions to our students on the first day of the program. 
+- [Career and Professional Development](/resources_pages/CareerandIndustryResources)
+- [Relevent MOOCs](/resources_pages/prep_moocs) to help prepare for the MDS program.
