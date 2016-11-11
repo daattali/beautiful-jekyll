@@ -1,3 +1,9 @@
+---
+layout: page
+title: Preparatory MOOCs
+subtitle: suggested for entering UBC MDS students
+---
+
 The following is a list of online courses that might be useful preparation for the UBC MDS program. Completion of these courses
 does not replace the [official program prerequisites](http://masterdatascience.science.ubc.ca/admissions). Rather, this page is
 mainly intended for entering students who may wish to reinforce their preparation before the program starts.
