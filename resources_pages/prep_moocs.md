@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Relevant MOOCs
-subtitle: Suggested as extra preparation for entering UBC MDS students
+subtitle: Optional extra preparation for entering UBC MDS students
 ---
 
 The following is a list of online courses that might be useful preparation for the UBC MDS program. Completion of these courses
