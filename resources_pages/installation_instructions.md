@@ -4,7 +4,7 @@ title: Install Guide
 subtitle: For the MDS software stack
 ---
 
-This is this software installation guide used for the MDS program. Original version written by [Anmol Jawandha](https://github.com/Anmol6) at UBC.
+This is this software installation guide used for the MDS program. We provide these installation instructions to our students on the first day of the program. Original version written by [Anmol Jawandha](https://github.com/Anmol6) at UBC.
 
 ## Table of Contents
 - [GitHub](#github)
