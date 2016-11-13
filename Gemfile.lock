@@ -19,6 +19,7 @@ GEM
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
+    ffi (1.9.10-x64-mingw32)
     gemoji (2.1.0)
     github-pages (82)
       github-pages-health-check (= 1.1.0)
@@ -86,7 +87,6 @@ GEM
       jekyll (>= 3.0)
     json (1.8.3)
     kramdown (1.10.0)
-    libv8 (3.16.14.15)
     liquid (3.0.6)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
@@ -99,6 +99,9 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    nokogiri (1.6.8-x64-mingw32)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     pkg-config (1.1.7)
@@ -106,7 +109,6 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    ref (2.0.0)
     rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -114,9 +116,6 @@ GEM
       addressable (>= 2.3.5, < 2.5)
       faraday (~> 0.8, < 0.10)
     terminal-table (1.6.0)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
-      ref
     thread_safe (0.3.5)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
@@ -125,12 +124,11 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
-  execjs
   github-pages
   jekyll-paginate
-  therubyracer
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
