@@ -9,7 +9,7 @@ subtitle:
 - [Grad Studies e-Resources and Presentations](https://www.grad.ubc.ca/current-students/graduate-pathways-success/e-resources-presentations) Career development and advice for UBC Graduate Students.
 - [Mitacs](http://www.mitacs.ca/en)  Canadian research and training internships, career and professional development workshops and industry partnerships.
 - [Computer Science Career Postings](https://my.cs.ubc.ca/students/development/events) UBC Department of Computer Science events and employer information sessions (CWL required).
-- [Glassdoor](https://www.glassdoor.ca/index.htm?countryRedirect=true) Interview questions lookup for companies and roles.
+- [Glassdoor](https://www.glassdoor.ca/index.htm?countryRedirect=true) Interview questions-lookup for companies and roles.
 - [Careercup](https://www.careercup.com/) Technical interview questions.
 - [CodeEval](https://www.codeeval.com/) Technical interview questions.
 - [Programming Interviews Exposed](https://www.amazon.ca/Programming-Interviews-Exposed-Secrets-Landing/dp/1118261364/ref=pd_bxgy_b_img_c) Book on Amazon. Great for any Technical interviews.
