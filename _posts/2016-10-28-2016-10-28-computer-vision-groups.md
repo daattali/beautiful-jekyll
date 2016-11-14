@@ -120,6 +120,7 @@ This is a list of most well known Computer Vision groups from various Universiti
 1. [Bilkent University](http://retina.cs.bilkent.edu.tr/) - RETINA Vision and Learning Group    
 1. [Hebrew University of Jerusalem](http://www.cs.huji.ac.il/labs/vision/) - Computer Vision Lab  
 1. [Indian Institute of Science](http://www.ee.iisc.ac.in/labs/cvl/) - Computer Vision Lab  
+1. [Indian Institute of Science](http://val.serc.iisc.ernet.in/valweb/index.html) - Video Analytics Laboratory (VAL)    
 1. [Indian Institute of Technology, Madras](http://www.ee.iitm.ac.in/ipcvlab/) - Image Processing and Computer Vision Lab      
 1. [Nanyang Technological University](http://www3.ntu.edu.sg/home/wanggang/) - Computer Vision Laboratory  
 2. [National University of Singapore](http://www.comp.nus.edu.sg/~vision/) - Computer Vision Laboratory  
