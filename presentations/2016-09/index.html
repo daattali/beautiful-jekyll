@@ -54,31 +54,43 @@ We can't do it without them, please take time to thank them!
 ---
 
 # Cmdlet of the month
-
----
-
-# Cmdlet of the month
+--
 
 * ConvertFrom-String
+???
+Basic property parsing looks like this: {[datatype]PropertyName:DATA}. To extract meaningful data from flat text, you surround sample output data values with this syntax.
 
+The datatype is optional, if you want to use strings for everything. I chose to use [int] and [datetime] for intelligent sorting and filtering of property data.
+
+For multi-object parsing in a file like this, the first property on the object gets the asterisk * after the property name. In this case I chose ID to indicate a new record.
 ---
 
 #PowerShell News!
+--
 
----
+* [Windows 2016 is here!](https://blogs.technet.microsoft.com/hybridcloud/2016/09/26/announcing-the-launch-of-windows-server-2016/)
+???
+2016: More Security, JIT/JEA/Guard
 
-#PowerShell News!
+Nano!
 
-* Windows 2016 is here!
+Containers built in
 
----
+SDN
 
-#PowerShell News!
+System Center 2016
 
-* Windows 2016 is here!
+Snover and Holmes Keynote
 
-* Azure Stack Preview 2
+Powershell is the tool of choice for post-exploit toolkits
+--
 
+* [Azure Stack Preview 2](https://blogs.technet.microsoft.com/hybridcloud/2016/09/26/new-ideas-new-solutions-new-technical-preview-of-azure-stack/)
+--
+
+* DerbyCon!
+   * https://blogs.msdn.microsoft.com/powershell/2016/09/27/powershell-security-at-derbycon/
+   * http://www.irongeek.com/i.php?page=videos/derbycon6/mainlist
 ---
 
 class: middle,center
@@ -88,17 +100,17 @@ class: middle,center
 Jay Ryan [@jaywryan](http://twitter.com/jaywryan)
 
 Jerry Coleman (He doesn't do the twitters...)
-
 ---
 
 #What is Disaster Recovery?
-
+???
+Recovering from a disaster.  City, Datacenter, Network, Server, Application, People
 ---
 background-image: url(http://bytecolumn.com/wp-content/uploads/2012/07/TheDilbertDisasterRecoveryPlan.png)
 #What is Disaster Recovery?
 
 ???
-This is often what it looks like
+This is often what it looks like.  Even if we have a plan in place, we often are scrambling in a Real Disaster.  Usually what you plan for is not the type of disaster that happens.
 ---
 
 #What do we do?

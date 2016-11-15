@@ -1,0 +1,47 @@
+Current LogonId is 0:0xb4ffc69
+
+Cached Tickets: (4)
+
+#{[int]ID*:0}>	Client: {Client:Administrator @ CONTOSO.COM}
+	Server: {Server:krbtgt/CONTOSO.COM @ CONTOSO.COM}
+	KerbTicket Encryption Type: {KerbTicketEncryptionType:AES-256-CTS-HMAC-SHA1-96}
+	Ticket Flags {TicketFlags:0x60a10000} -> {TicketFlagsEnum:forwardable forwarded renewable pre_authent name_canonicalize} 
+	Start Time: {[datetime]StartTime:8/29/2016 16:06:22} (local)
+	End Time:   {[datetime]EndTime:8/30/2016 2:06:21} (local)
+	Renew Time: {[datetime]RenewTime:9/5/2016 16:06:21} (local)
+	Session Key Type: {SessionKeyType:AES-256-CTS-HMAC-SHA1-96}
+	Cache Flags: {CacheFlags:0x1} -> {CacheFlagsEnum:PRIMARY} 
+	Kdc Called: {KdcCalled:2012R2-DC.contoso.com}
+
+#{[int]ID*:1}>	Client: {Client:Administrator @ CORP.CONTOSO.COM}
+	Server: {Server:krbtgt/CONTOSO.COM @ CONTOSO.COM}
+	KerbTicket Encryption Type: {KerbTicketEncryptionType:AES-256-CTS-HMAC-SHA1-96}
+	Ticket Flags {TicketFlags:0x40e10000} -> {TicketFlagsEnum:forwardable renewable initial pre_authent name_canonicalize} 
+	Start Time: {[datetime]StartTime:8/29/2016 16:06:21} (local)
+	End Time:   {[datetime]EndTime:8/30/2016 2:06:21} (local)
+	Renew Time: {[datetime]RenewTime:9/5/2016 16:06:21} (local)
+	Session Key Type: {SessionKeyType:AES-256-CTS-HMAC-SHA1-96}
+	Cache Flags: {CacheFlags:0x2} -> {CacheFlagsEnum:DELEGATION} 
+	Kdc Called: {KdcCalled:2012R2-DC.contoso.com}
+
+#{[int]ID*:2}>	Client: {Client:Administrator @ CORP.NA.ALPINESKIHOUSE.COM}
+	Server: {Server:host/2012R2-MS.contoso.com @ CONTOSO.COM}
+	KerbTicket Encryption Type: {KerbTicketEncryptionType:AES-256-CTS-HMAC-SHA1-96}
+	Ticket Flags {TicketFlags:0x40a10000} -> {TicketFlagsEnum:forwardable renewable pre_authent name_canonicalize} 
+	Start Time: {[datetime]StartTime:8/29/2016 1:12:25} (local)
+	End Time:   {[datetime]EndTime:8/30/2016 2:06:21} (local)
+	Renew Time: {[datetime]RenewTime:9/5/2016 1:06:21} (local)
+	Session Key Type: {SessionKeyType:AES-256-CTS-HMAC-SHA1-96}
+	Cache Flags: {CacheFlags:0} 
+	Kdc Called: {KdcCalled:2012R2-DC}
+
+#{[int]ID*:3}>	Client: {Client:Administrator @ CONTOSO.COM}
+	Server: {Server:RPCSS/2012R2-MS.contoso.com @ CONTOSO.COM}
+	KerbTicket Encryption Type: {KerbTicketEncryptionType:RSADSI RC4-HMAC(NT)}
+	Ticket Flags {TicketFlags:0x40a10000} -> {TicketFlagsEnum:forwardable renewable pre_authent name_canonicalize} 
+	Start Time: {[datetime]StartTime:12/29/2016 16:12:25} (local)
+	End Time:   {[datetime]EndTime:12/30/2016 12:06:21} (local)
+	Renew Time: {[datetime]RenewTime:12/5/2016 16:06:21} (local)
+	Session Key Type: {SessionKeyType:RSADSI RC4-HMAC(NT)}
+	Cache Flags: {CacheFlags:0} 
+	Kdc Called: {KdcCalled:2012R2-DC.contoso.com}
