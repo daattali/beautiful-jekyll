@@ -45,4 +45,4 @@ var tiempo = (fin - inicio) + "ms";
 ```
 
 ## Referencias
-https://developers.google.com/web/updates/2012/08/When-milliseconds-are-not-enough-performance-now
+[Cuando los milisegundos no son suficiente](https://developers.google.com/web/updates/2012/08/When-milliseconds-are-not-enough-performance-now)
