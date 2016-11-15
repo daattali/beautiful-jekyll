@@ -1,0 +1,19 @@
+---
+layout: post
+title: Midiendo tiempos en Javascript
+---
+
+Uno de los puntos a tener en cuenta en cualquier aplicación es el rendimiento. Por ello hay herramientas muy completas dedicadas específicamente a ésta tarea, como las que nos ofrece Google Chrome. Sin embargo lleva tiempo aprender a utilizarlas correctamente, y no todos los casos requieren un análisis exhaustivo.  Para dichas situaciones existen formas rápidas para medir tiempos, como las que vamos a ver a continuación.
+
+## Mostrando tiempos en consola
+Si lo único que necesitas es ver una medición rápida en consola, éste es el sistema más rápido. Solo tendrás que poner
+
+```javascript
+console.time("Etiqueta")
+```
+
+Al inicio del código a medir, y:
+
+```javascript
+console.timeEnd("Etiqueta")
+```
