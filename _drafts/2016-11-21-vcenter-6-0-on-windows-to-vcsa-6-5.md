@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: vCenter 6.0 on Windows to VCSA 6.5
+title: Windows vCenter 6.0 to VCSA 6.5 with migration tool
 ---
 As everyone knows now VMware released the [version 6.5](https://blogs.vmware.com/vsphere/2016/10/introducing-vsphere-6-5.html) of vSphere/vCenter along with a version of the vRealize suite. This new version comes with loads of awesome new feature that I won't detail as there are already millions of posts about it, but one feature that I wanted to expand on is the vCenter migration tool.
 
