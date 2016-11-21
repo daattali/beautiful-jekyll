@@ -7,4 +7,4 @@ As everyone knows now VMware released the [version 6.5](https://blogs.vmware.com
 
 This tool allows you to migrate from a vCenter server installed on a windows box to a vCenter Server Appliance (VCSA) seemlessly and automatically, taking off the pain of doing it manually.
 
-This tool used to be a fling developped by the community and got taken over by VMware because it was so good. However it had quite a long list of prerequisites and was applicable only to a few case scenarios. With the support brought by VMware, this tool is now even better and integrated in the vCenter server Appliance image.
+This tool used to be a fling developped by the community and got taken over by VMware because it was so good. However it had quite a long list of prerequisites and was applicable only to a few use case scenarios. With the support brought by VMware, this tool is now even better and integrated in the vCenter server Appliance image.
