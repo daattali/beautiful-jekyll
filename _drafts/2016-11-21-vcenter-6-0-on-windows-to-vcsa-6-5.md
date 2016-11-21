@@ -13,7 +13,8 @@ When the tool was still a Fling it supported only migrations from VCS5.5 to VCSA
 
 ## Environment
 
-I did this migration in my lab running in WorkStation 
+I did this migration in my lab on WorkStation with 2 ESXi VMs and a FreeNas appliance for the shared storage.
 
 - **vCenter**: Windows Server 2012 R2 + vCenter Server 6.0 Update 2 with embedded SQLExpress db
 - **Hosts**:2 vSphere hosts running ESXi 6.0 update 2
+
