@@ -28,6 +28,9 @@ I used to add the VMware snapin in my Connect-vCenter function to add it only if
 
 In order to fix this issue, the idea is to Import the module in your PowerShell profile everytime before the prompt. 
 
+- **Before**: Start Powershell > Prompt customized > Add pssnapin > Connect vCenter
+- **After** : Start Powershell > Import module > Prompt customized > Connect vCenter
+
 The start time of powershell is a little bit slower but the advantage is that you keep your custom profile and the module is already ready to use. I actually timed the start of powershell with and without the module imported and the difference is under a second so something I can live with.
 
 ![Powershell-time-start.png]({{site.baseurl}}/img/Powershell-time-start.png)
