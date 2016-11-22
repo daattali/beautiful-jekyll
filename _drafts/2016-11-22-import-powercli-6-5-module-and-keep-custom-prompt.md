@@ -46,4 +46,4 @@ The start time of powershell is a little bit slower due to it but the advantage 
 
 ## Conclusion
 
-In your profile, import the VMware modules before customizing the prompt.
+Import the VMware modules before customizing the prompt in your Powershell profile.
