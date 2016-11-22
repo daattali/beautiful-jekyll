@@ -24,13 +24,13 @@ However I ran into a problem when I imported the module. My prompt was reset/mod
 
 ![Import-prompt-go.png]({{site.baseurl}}/img/Import-prompt-go.png)
 
-I used to add the VMware snapin in my Connect-vCenter function to add it only if I need it. The problem with that module is that the custom prompt is loaded at the start of PowerShell, so when you Import the module afterwards it overrides your custom prompt as seen in the previous screenshot.
+The problem with that module is that the custom prompt is loaded at the start of PowerShell, so if you Import the module after customizing the prompt (which is in the profile), it overrides it as seen in the previous screenshot.
 
-In order to fix this issue, the idea is to Import the module in your PowerShell profile everytime before the prompt. 
+A fix is to Import the module in your PowerShell profile before the prompt, even when you don't plan on connecting to a vCenter.
 
 - **Before**: Start Powershell > Prompt customized > Add pssnapin > Connect vCenter
 - **After** : Start Powershell > Import module > Prompt customized > Connect vCenter
 
-The start time of powershell is a little bit slower but the advantage is that you keep your custom profile and the module is already ready to use. I actually timed the start of powershell with and without the module imported and the difference is under a second so something I can live with.
+The start time of powershell is a little bit slower due to it but the advantage is that you keep your custom profile and the module is ready to use should you need it. I actually timed the start of powershell with and without the module imported and the difference is under a second. I can live with it.
 
 ![Powershell-time-start.png]({{site.baseurl}}/img/Powershell-time-start.png)
