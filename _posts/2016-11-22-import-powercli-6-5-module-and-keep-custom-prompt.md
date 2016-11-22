@@ -9,6 +9,7 @@ Function Prompt { ... } in Microsoft.PowerShell_profile.ps1_
 ---------
 
 My Powershell profile has a few different things including:
+
 - A function to add the VMware core snapin and connect quickly to a vCenter.
 - A function to customize the prompt with separator and display of the connected vCenter.
 
