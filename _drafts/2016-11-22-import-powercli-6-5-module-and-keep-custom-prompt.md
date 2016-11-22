@@ -19,3 +19,15 @@ After investigation it appears that the snapins can't be used anymore for PowerC
 
 - **NO :** ```Add-PSSnapin VMware.VimAutomation.Core```
 - **YES:** ```Import-Module VMware.VimAutomation.Core```
+
+However I ran into a problem, when you import the module the prompt is reset/modified by it and you lose your custom one, which is really annoying.
+
+![Import-prompt-go.png]({{site.baseurl}}/img/Import-prompt-go.png)
+
+I used to add the VMware snapin in my Connect-vCenter function to add it only if I need it. The problem with that module is that the custom prompt is loaded at the start of PowerShell, so when you Import the module afterwards it overrides your custom prompt as seen in the previous screenshot.
+
+In order to fix this issue, the idea is to Import the module in your PowerShell profile everytime before the prompt. 
+
+The start time of powershell is a little bit slower but the advantage is that you keep your custom profile and the module is already ready to use. I actually timed the start of powershell with and without the module imported and the difference is under a second so something I can live with.
+
+![Powershell-time-start.png]({{site.baseurl}}/img/Powershell-time-start.png)
