@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Import PowerCLI 6.5 module and keep custom prompt
+title: PowerCLI 6.5 broke my Powershell profile!
 ---
 My Powershell profile has a few different things including:
 - A function to add the VMware core snapin and connect quickly to a vCenter.
