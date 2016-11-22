@@ -36,7 +36,7 @@ However I ran into a problem when I imported the module. My prompt was reset/mod
 
 The problem with that module is that the custom prompt is loaded at the start of PowerShell, so if you Import the module after customizing the prompt (which is in the profile), it overrides it as seen in the previous screenshot.
 
-A fix is to Import the module in your PowerShell profile before the prompt, even when you don't plan on connecting to a vCenter.
+A fix is to Import the module in your PowerShell profile before customizing the prompt, even when you don't plan on connecting to a vCenter.
 
 - **Before**: Start Powershell > customize Prompt > "Connect-vCenter" func > Add pssnapin > Connect vCenter
 - **After** : Start Powershell > Import module > customize Prompt > "Connect-vCenter" func > Connect vCenter
