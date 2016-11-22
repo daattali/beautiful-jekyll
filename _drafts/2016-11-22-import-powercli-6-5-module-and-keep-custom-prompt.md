@@ -47,3 +47,48 @@ The start time of powershell is a little bit slower due to it but the advantage 
 ## Conclusion
 
 Import the VMware modules before customizing the prompt in your Powershell profile.
+
+_Example for %UserProfile%\Documents\WindowsPowerShell\Microsoft.PowerShellprofile.ps1_
+
+![MyCustomPrompt.png]({{site.baseurl}}/img/MyCustomPrompt.png)
+
+```Powershell
+
+# Function to import powercli and connect to vsphere server
+
+Import-Module VMware.VimAutomation.Core
+
+function Connect-vCenter {
+
+    param(
+        [parameter(position=0)][String]$Server = "MyDefault-vCenter",
+        [Parameter(Position=1)][PSCredential]$Credential = "MyDomain\MyDefaultUser",
+        [parameter()][String]$Protocol = "https"
+    )
+    
+    $params = @{
+        Server = $Server
+        Protocol = $Protocol
+    }
+
+    if ($Credential) {$params.Add('Credential',$Credential)}
+
+    Connect-VIServer @params 3>&1 | Out-Null
+  
+  }
+  
+Function Prompt {
+
+    Write-Host ""
+
+    IF ($global:DefaultVIServer) {
+        Write-Host "[$($global:DefaultVIServer.name)]" -NoNewline -ForegroundColor green
+    }
+
+    Write-Host "$((Get-location).Path) $('-' * $Width)" -ForegroundColor red
+
+    "My Custom Prompt:) "
+   
+}
+
+```
