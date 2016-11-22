@@ -15,3 +15,7 @@ When I upgraded to [PowerCLI 6.5 R1](http://blogs.vmware.com/PowerCLI/2016/11/ne
 
 ![no-snapin.png]({{site.baseurl}}/img/no-snapin.png)
 
+After investigation it appears that the snapins can't be used anymore for PowerCLI. Now we have to use the modules. 
+
+- **NO :** ```Add-PSSnapin VMware.VimAutomation.Core```
+- **YES:** ```Import-Module VMware.VimAutomation.Core```
