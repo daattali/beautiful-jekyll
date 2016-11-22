@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: PowerCLI 6.5 broke my Powershell custom prompt!
 ---
 _This blog post applies only if you have a customized Powershell prompt.  
