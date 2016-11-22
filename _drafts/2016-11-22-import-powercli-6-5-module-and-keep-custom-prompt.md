@@ -20,7 +20,7 @@ After investigation it appears that the snapins can't be used anymore for PowerC
 - **NO :** ```Add-PSSnapin VMware.VimAutomation.Core```
 - **YES:** ```Import-Module VMware.VimAutomation.Core```
 
-However I ran into a problem, when you import the module the prompt is reset/modified by it and you lose your custom one, which is really annoying.
+However I ran into a problem when I imported the module. My prompt was reset/modified by it, which is really annoying.
 
 ![Import-prompt-go.png]({{site.baseurl}}/img/Import-prompt-go.png)
 
