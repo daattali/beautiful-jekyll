@@ -3,4 +3,6 @@ layout: page
 title: About me
 subtitle: 
 ---
-[no image](http://www.coolfbcovers.com/covers-images/download/Life%20Quotes.jpg "")
+<img src="http://www.coolfbcovers.com/covers-images/download/Life%20Quotes.jpg " alt="Mountain View" style="width:304px;height:228px;">
+
+
