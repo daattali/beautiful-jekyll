@@ -5,7 +5,8 @@
 body {
   font-family: 'Lora', serif;
   font-size: 18px;
-  color: #404040;
+  /*color: #404040;*/
+  color: #16a085;
   position: relative;
   background: #FFF;
 }
@@ -22,11 +23,13 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  /*color: #008AFF;*/
+  color: #2980b9;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  /*color: #0085a1;*/
+  color: #008AFF;
 }
 blockquote {
   color: #808080;
@@ -327,7 +330,8 @@ footer .theme-by {
 
 @media only screen and (min-width: 768px) {
   .post-preview .post-title {
-    font-size: 36px;
+    /*font-size: 36px;*/
+    font-size: 32px;
   }
 }
 
@@ -456,7 +460,8 @@ footer .theme-by {
     padding: 150px 0;
   }  
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    /*font-size: 80px;*/
+    font-size: 60px;
   }
   .intro-header .post-heading h1 {
     font-size: 50px;

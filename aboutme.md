@@ -18,7 +18,7 @@ What else do you need?
 
 ### my history  
 
-To be honest, I'm having some trouble remembering right now, but I do remember some one whom I follow [a genius](https://www.youtube.com/watch?v=tnBQmEqBCY0) and it will answer **all** your questions.  
+To be honest, I'm having some trouble remembering right now, but I do remember some one whom I follow [a genius](https://www.youtube.com/watch?v=tnBQmEqBCY0) and this will answer **all** your questions.  
 
 Hope you found it useful.  
 
