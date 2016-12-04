@@ -21,7 +21,7 @@ It is hard to believe that 2016 is coming to a close! We have covered a wide var
 
 - January - PowerShell DSC with Mr. Ashley McGlone
 - February - PowerShell 5 Classes with June Blender
-- March - Managing Infastructure with Josh Atwell
+- March - Managing Infrastructure with Josh Atwell
 - April - PowerShell Summit Recap
 - May - PowerShell: Back to Basics 
 - June - Operations Management Suite and DSC with Ed Wilson "The Scripting Guy"
