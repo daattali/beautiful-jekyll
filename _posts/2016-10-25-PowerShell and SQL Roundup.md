@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - October 25th 2016 - PowerShell and SQL Roundup'
+title: 'October 25th 2016 - PowerShell and SQL Roundup'
 ---
 
 ## Cincinnati PowerShell User Group – October Meeting – PowerShell and SQL Roundup
