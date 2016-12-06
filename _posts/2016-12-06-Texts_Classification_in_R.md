@@ -4,7 +4,6 @@ title: "Text classification on Amazon Reviews"
 share_img: https://github.com/fderyckel/fderyckel.github.io/blob/master/img/The_R_Trader_Ch01_files/figure-markdown_github/unnamed-chunk-22-1.png
 tags: [caret, RTextTools, text_mining, SVM]
 ---
-
 -   [Introduction of text analysis with R.](#introduction-of-text-analysis-with-r.)
 -   [First method using the `tm` and `caret` package](#first-method-using-the-tm-and-caret-package)
     -   [Simple example](#simple-example)
@@ -20,6 +19,7 @@ tags: [caret, RTextTools, text_mining, SVM]
     -   [Second example with Amazon reviews and "SVM" method](#second-example-with-amazon-reviews-and-svm-method)
     -   [Second example with Amazon reviews and "Maximum Enthropy method"](#second-example-with-amazon-reviews-and-maximum-enthropy-method)
         -   [Conclusion](#conclusion-1)
+-   [Where to go from here](#where-to-go-from-here)
 -   [Resources used](#resources-used)
 
 This document has been inspired by the Coursera course on [Machine Learning Foundations: A Case Study Approach](https://www.coursera.org/learn/ml-foundations/) given by Carlos Guestrin and by Emily Fox from Washington University. This course is part of the [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
@@ -145,7 +145,7 @@ predict(exa1_model, newdata = test)
 Second example on Amazon Reviews
 --------------------------------
 
-Let's see if we can use this technique with our some of our Amazon Reviews.
+Let's see if we can use this technique with our some of our Amazon Reviews. We have saved the review on this file in [Google Drive](https://drive.google.com/file/d/0ByHtvgo2NGDMN0txU2p5QTR3VEk/view?usp=sharing)
 
 ### Pre-processing
 
@@ -417,6 +417,11 @@ round(prop.table(table(x$actual_ratings == x$predicted_ratings)), 3)
 ### Conclusion
 
 This is model gives the same result (which was expected as we used the same method, although `caret` use the `LiblineaR` package and `RTextTools` use the `e1071` package) on the same testing set. That said I would tend to prefer the RTextTools way of classifying as it seems slightly cleaner and use less computing time when it is time to train the model.
+
+Where to go from here
+=====================
+
+There is more work to do in finding other relevant algorithms, understanding their parameters and doing more work on model evaluation.
 
 Resources used
 ==============
