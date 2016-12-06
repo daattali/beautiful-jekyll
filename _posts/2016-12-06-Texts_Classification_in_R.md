@@ -12,7 +12,7 @@ tags: [caret, RTextTools, text_mining, SVM]
     -   [Second example on Amazon Reviews](#second-example-on-amazon-reviews)
         -   [Pre-processing](#pre-processing)
         -   [Conclusion](#conclusion)
--   [Second method with RTextTools. Let's start easy with some simple text](#second-method-with-rtexttools.-lets-start-easy-with-some-simple-text)
+-   [Second method with `RTextTools. Let's start easy with some simple text](#second-method-with-rtexttools.-lets-start-easy-with-some-simple-text)
     -   [First example with easy data](#first-example-with-easy-data)
         -   [Text pre-processing](#text-pre-processing-1)
         -   [Creating and testing the model](#creating-and-testing-the-model)
@@ -109,7 +109,7 @@ Each observation represent one document (in our case one element of our original
 
 ### Create the model and use it for prediction
 
-Now that we have a training set, we can create a model based on our training set. We do this by using the `caret` package and the `bayesglm` method.
+Now that we have a training set, we can create a model based on our training set. We do this by using the `caret` package and the `svmLinear3` method.
 
 ``` r
 library(caret)
