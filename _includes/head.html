@@ -11,7 +11,7 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="/feed.xml" />
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
@@ -21,7 +21,7 @@
 
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
 
@@ -39,7 +39,7 @@
 
   {% if page.css %}
     {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css | replace: '//', '/' }}" />
     {% endfor %}
   {% endif %}
 
