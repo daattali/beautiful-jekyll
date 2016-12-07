@@ -1,6 +1,6 @@
 # Beautiful Jekyll
 
-[![Gem Version](https://badge.fury.io/rb/beautiful-jekyll.svg)](https://badge.fury.io/rb/beautiful-jekyll)
+[![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
 > *Copyright 2016 [Dean Attali](http://deanattali.com). Licensed under the MIT license.*
 
