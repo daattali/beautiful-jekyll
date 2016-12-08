@@ -53,6 +53,7 @@ author:
   instagram: yourname # eg. daattali
   youtube: yourlink   # eg. user/daattali or channel/daattali
   spotify: yourname   # eg. daattali
+  telephone: yourphone   # eg. +14159998888
 
 # Select which links to show in the footer
 footer-links-active:
@@ -70,6 +71,7 @@ footer-links-active:
   instagram: false
   youtube: false
   spotify: false
+  telephone: false
 
 # Select which share links to show in posts
 share-links-active:
