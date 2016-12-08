@@ -1,6 +1,7 @@
 # Beautiful-Jekyll Theme (beautiful-jekyll-theme gem)
 
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
+[![saythanks](http://i.imgur.com/L88apDa.png)](https://saythanks.io/to/daattali)
 
 > *Copyright 2016 [Dean Attali](http://deanattali.com). Licensed under the MIT license.*
 
@@ -15,9 +16,9 @@ If you need a bit of help or have comments, feel free to [contact me](http://dea
 To use this theme's gem, you need to first have a functioning Jekyll website. If you don't, there are many resources online for how to set up a Jekyll site. Here are the basic commands to get a minimal Jekyll site set up in Ubuntu:
 
 ```
-sudo apt-get install ruby ruby-dev make gcc
-sudo gem install jekyll bundler
-jekyll new ~/mysite
+$ sudo apt-get install ruby ruby-dev make gcc
+$ sudo gem install jekyll bundler
+$ jekyll new ~/mysite
 ```
 
 ## Installation
