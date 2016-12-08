@@ -135,14 +135,17 @@
           {% endif %}
         </ul>
         <p class="copyright text-muted">
-		  {{ site.author.name }}
-		  &nbsp;&bull;&nbsp;
-		  {{ site.time | date: '%Y' }}
+	  {% if site.author.name %}
+            {{ site.author.name }}
+	    &nbsp;&bull;&nbsp;
+          {% endif %}
 
-		  {% if site.url-pretty %}
-		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
-		  {% endif %}
+          {{ site.time | date: '%Y' }}
+
+	  {% if site.url-pretty %}
+	  &nbsp;&bull;&nbsp;
+	  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+	  {% endif %}
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->
 		<p class="theme-by text-muted">

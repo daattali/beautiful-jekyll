@@ -15,19 +15,13 @@ layout: base
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags:
-          {% if site.link-tags %}
-          {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
-          {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
+          {{ page.tags | join: ", " }}
         </div>
       {% endif %}
 
-      {% if page.social-share %}
+      {% unless page.social-share == false %}
         {% include social-share.html %}
-      {% endif %}
+      {% endunless %}
 
       <ul class="pager blog-pager">
         {% if page.previous.url %}
@@ -42,11 +36,11 @@ layout: base
         {% endif %}
       </ul>
 
-      {% if page.comments %}
+      {% unless page.comments == false %}
         <div class="disqus-comments">
           {% include disqus.html %}
         </div>
-      {% endif %}
+      {% endunless %}
     </div>
   </div>
 </div>

@@ -47,11 +47,6 @@
     {% endfor %}
   {% endif %}
 
-    <!-- Facebook OpenGraph tags -->
-  {% if site.fb_app_id %}
-  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
-  {% endif %}
-
   {% if page.meta-title %}
   <meta property="og:title" content="{{ page.meta-title }}" />
   {% elsif page.title %}
