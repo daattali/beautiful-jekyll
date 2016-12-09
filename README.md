@@ -117,36 +117,13 @@ author:
 
 Remove the lines that you don't want to display in the footer, and change `yourname` to the correct values in the links you want to keep.
 
-### Buttons for sharing blog posts on social media
+#### Add your website's name to the footer
 
-By default, every blog post will have buttons at the bottom for sharing the page on Twitter, Facebook, LinkedIn, and Google+. If you want to disable these buttons, add these lines to your `_config.yml`:
+After all the contact info links, you can also add the name of your website by defining the` url-pretty` parameter in `_config.yml`:
 
 ```yaml
-share-links-active:
-  twitter: false
-  facebook: false
-  google: false
-  linkedin: false
-```
-
-These settings will remove all four buttons. You can use `true` instead of `false` for any buttons that you want to keep.
-
-
-
-```
 url-pretty: "MyWebsite.com
 ```
-
-```
-disqus: ""
-```
-
-```
-google_analytics
-```
-
-
-
 
 ### Adding an index page
 
@@ -215,6 +192,55 @@ paginate: 5
 gems:
   - jekyll-paginate
 ```
+
+### Buttons for sharing blog posts on social media
+
+By default, every blog post will have buttons at the bottom for sharing the page on Twitter, Facebook, LinkedIn, and Google+. If you want to disable these buttons, add these lines to your `_config.yml`:
+
+```yaml
+share-links-active:
+  twitter: false
+  facebook: false
+  google: false
+  linkedin: false
+```
+
+These settings will remove all four buttons. You can use `true` instead of `false` for any buttons that you want to keep.
+
+### Allowing users to leave comments
+
+If you want to enable comments on your site, Beautiful-Jekyll supports the [Disqus](https://disqus.com/) comments plugin.  To use it, simply sign up to Disqus and add your Disqus shortname (**not** the userid) to the `disqus` parameter in `_config.yml`:
+
+```yaml
+disqus: yourshortname
+```
+
+### Adding Google Analytics to track page views
+
+Beautiful-Jekyll lets you easily add Google Analytics to all your pages. This will allow you to track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](http://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`:
+
+```yaml
+google_analytics: yourid
+```
+
+### YAML parameter you can use to personalize each page
+
+These are all the parameters you can place inside a page's YAML front matter that Beautiful-Jekyll supports.
+
+Parameter   | Description
+----------- | -----------
+layout      | What type of page this is (default is `blog` for blog posts and `page` for other pages. You can use `minimal` if you don't want a header and footer).
+title       | Page or blog post title.
+subtitle    | Short description of page or blog post that goes under the title.
+bigimg      | Include a large full-width image at the top of the page.  You can either give the path to a single image, or provide a list of images to cycle through (see [my personal website](http://deanattali.com/) as an example).
+comments    | Only applicable if the `disqus` parameter is set in the `config_yml` file. All blog posts automatically have comments enabled. To enable comments on a specific page, use `comments: true`; to turn comments off for a specific blog post, use `comments: false`.
+social-share | If you don't want to show buttons to share a blog post on social media, use `social-share: false` (this feature is turned on by default).
+share-img   | If you want to specify an image to use when sharing the page on Facebook or Twitter, then provide the image's full URL here.
+js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
+ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`)
+css         | List of local CSS files to include in the page
+ex-css      | List of external CSS files to include in the page
+googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 
 ## Contributions
 
