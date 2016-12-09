@@ -51,7 +51,7 @@ Using Beautiful-Jekyll is very simple, but you should take a few minutes to read
 
 You can now start adding pages to your site. Beautiful-Jekyll supports three layouts: `post`, `page`, and `minimal`. In order to use Beautiful-Jekyll's template, a page must have its `layout` parameter set to one of these options in the YAML.
 
-Any blog posts (pages under the `_posts` directory) should use the `post` layout, while most other pages should use the `page` layout. You can use the `minimial` layout if you want a page with minimal styling, without the bulky navigation bar and footer.
+Any blog posts (pages under the `_posts` directory) should use the `post` layout, while most other pages should use the `page` layout. You can use the `minimal` layout if you want a page with minimal styling, without the bulky navigation bar and footer.
 
 Instead of remembering to manually add the layout parameter to every page's YAML, you can add the following lines to your `_config.yml` so that all blog posts will automatically have layout `post` and all other pages will have layout `page`:
 
