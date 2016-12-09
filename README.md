@@ -53,7 +53,7 @@ You can now start adding pages to your site. Beautiful-Jekyll supports three lay
 
 Any blog posts (pages under the `_posts` directory) should use the `post` layout, while most other pages should use the `page` layout. You can use the `minimal` layout if you want a page with minimal styling, without the bulky navigation bar and footer.
 
-Instead of remembering to manually add the layout parameter to every page's YAML, you can add the following lines to your `_config.yml` so that all blog posts will automatically have layout `post` and all other pages will have layout `page`:
+Instead of remembering to manually add the layout parameter to every page's YAML, I recommend you add the following lines to your `_config.yml` so that all blog posts will automatically have layout `post` and all other pages will have layout `page`:
 
 ```yaml
 defaults:
@@ -85,7 +85,7 @@ navbar-links:
   Author's home: "http://deanattali.com"
 ```
 
-Change these values to match the pages on your site. Each menu item is composed of a `key:value` pair, where the `key` is the text that shows up in the navigation bar, and `value` is the URL to link to. The URL can either be the name of a page on your site (eg. `/` will go to your homepage, `aboutme` will go to a page called `aboutme` on your site), or a URL to an external site beginning in `http`. If you want to define sub-menus, use the format that the `Resource` key uses in the sample code above.
+Change these values to match the pages on your site. Each menu item is composed of a `key:value` pair, where the `key` is the text that shows up in the navigation bar, and `value` is the URL to link to. The URL can either be the name of a page on your site (eg. `/` will go to your homepage, `aboutme` will go to a page called `aboutme` on your site), or a URL to an external site beginning in `http`. If you want to define sub-menus, use the format that the `Resources` menu is using in the sample code above.
 
 #### Displaying an image in the navigation bar
 
