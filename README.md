@@ -37,15 +37,44 @@ theme: beautiful-jekyll
 
 And finally execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 To preview your site, run `bundle exec jekyll serve` (optionally with the `--host 0.0.0.0` flag if needed) and open your browser at `http://localhost:4000`.
 
 ## Usage
 
+Using Beautiful-Jekyll is very simple, but you should take a few minutes to read through the features it supports to learn how to use it.
 
+### Adding content
+
+You can now start adding pages to your site. Beautiful-Jekyll supports three layouts: `post`, `page`, and `minimal`. In order to use Beautiful-Jekyll's template, a page must have its `layout` parameter set to one of these options in the YAML. Any blog posts (pages under the `_posts` directory) should use the `post` layout, while most other pages should use the `page` layout. You can use the `minimial` layout if you want a page with minimal styling, without the bulky navigation bar and footer.
+
+Instead of remembering to manually add the layout parameter to every page's YAML, you can add the following lines to your `_config.yml` so that all blog posts will automatically have layout `post` and all other pages will have layout `page`:
+
+```yaml
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
 ```
+
+### Creating a navigation bar
+
+Add these lines to your `_config.yml` file to get a demo navigation bar:   
+
+```yaml
 navbar-links:
+  Home: "/"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -54,11 +83,21 @@ navbar-links:
   Author's home: "http://deanattali.com"
 ```
 
-```
-avatar: "/img/avatar-icon.png"
+Change these values to match the pages on your site. Each menu item is composed of a `key:value` pair, where the `key` is the text that shows up in the navigation bar, and `value` is the URL to link to. The URL can either be the name of a page on your site (eg. `/` will go to your homepage, `aboutme` will go to a page called `aboutme` on your site), or a URL to an external site beginning in `http`. If you want to define sub-menus, use the format that the `Resource` key uses in the sample code above.
+
+#### Displaying an image in the navigation bar
+
+You can add an image to the navigation bar by defining the `avatar` parameter in `_config.yml`. The image should be a square (width = height).
+
+```yaml
+avatar: "/path/to/image.png"
 ```
 
-```
+### Add your name/email/social media links to the footer
+
+You can add contact information and social media links in the footer. They will be displayed as nice little logos, to give the footer a clean feel. Add the following to your `_config.yml` file:
+
+```yaml
 author:
   name: Some Person
   email: "youremail@domain.com"
@@ -76,14 +115,23 @@ author:
   spotify: yourname   # eg. daattali
 ```
 
-```
-# Select which share links to show in posts
+Remove the lines that you don't want to display in the footer, and change `yourname` to the correct values in the links you want to keep.
+
+### Buttons for sharing blog posts on social media
+
+By default, every blog post will have buttons at the bottom for sharing the page on Twitter, Facebook, LinkedIn, and Google+. If you want to disable these buttons, add these lines to your `_config.yml`:
+
+```yaml
 share-links-active:
-  twitter: true
-  facebook: true
+  twitter: false
+  facebook: false
   google: false
-  linkedin: true
+  linkedin: false
 ```
+
+These settings will remove all four buttons. You can use `true` instead of `false` for any buttons that you want to keep.
+
+
 
 ```
 url-pretty: "MyWebsite.com
@@ -98,30 +146,15 @@ google_analytics
 ```
 
 
-```
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-```
 
 
 ### Adding an index page
 
-paginate: 5
-gems:
-  - jekyll-paginate
-  
+Feel free to create the index page (homepage) of your site however you'd like. If you want to have an index page similar to the one at [deanattali.com](http://deanattali.com), then create `index.html` as follows: 
+
 ```
 ---
+layout: page
 title: My Website
 subtitle: Some short description of my site
 ---
@@ -173,7 +206,14 @@ subtitle: Some short description of my site
   {% endif %}
 </ul>
 {% endif %}
+```
 
+You'll also need to add these lines to your `_config.yml` because the code above uses pagination:
+
+```yaml
+paginate: 5
+gems:
+  - jekyll-paginate
 ```
 
 ## Contributions
