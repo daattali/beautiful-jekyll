@@ -237,7 +237,7 @@ layout      | What type of page this is (default is `blog` for blog posts and `p
 title       | Page or blog post title.
 subtitle    | Short description of page or blog post that goes under the title.
 bigimg      | Include a large full-width image at the top of the page.  You can either give the path to a single image, or provide a list of images to cycle through (see [my personal website](http://deanattali.com/) as an example).
-comments    | Only applicable if the `disqus` parameter is set in the `config_yml` file. All blog posts automatically have comments enabled. To enable comments on a specific page, use `comments: true`; to turn comments off for a specific blog post, use `comments: false`.
+comments    | Only applicable if the `disqus` parameter is set in the `_config.yml` file. All blog posts automatically have comments enabled. To enable comments on a specific page, use `comments: true`; to turn comments off for a specific blog post, use `comments: false`.
 social-share | If you don't want to show buttons to share a blog post on social media, use `social-share: false` (this feature is turned on by default).
 share-img   | If you want to specify an image to use when sharing the page on Facebook or Twitter, then provide the image's full URL here.
 js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
