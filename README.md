@@ -138,6 +138,8 @@ gems:
   - jekyll-paginate
 ```
 
+Make sure there is no `index.md` file (if there is one, then delete it).
+
 ### Creating a navigation bar
 
 Add these lines to your `_config.yml` file to get a demo navigation bar:   
