@@ -194,7 +194,7 @@ Remove the lines that you don't want to display in the footer, and change `yourn
 After all the contact info links, you can also add the name of your website by defining the` url-pretty` parameter in `_config.yml`:
 
 ```yaml
-url-pretty: "MyWebsite.com
+url-pretty: "MyWebsite.com"
 ```
 
 ### Buttons for sharing blog posts on social media
