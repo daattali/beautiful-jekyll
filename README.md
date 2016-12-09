@@ -32,7 +32,7 @@ gem "beautiful-jekyll-theme"
 Then add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: beautiful-jekyll
+theme: beautiful-jekyll-theme
 ```
 
 And finally execute:
