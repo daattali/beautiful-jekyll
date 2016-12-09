@@ -70,63 +70,6 @@ defaults:
       layout: "page"
 ```
 
-### Creating a navigation bar
-
-Add these lines to your `_config.yml` file to get a demo navigation bar:   
-
-```yaml
-navbar-links:
-  Home: ""
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
-```
-
-Change these values to match the pages on your site. Each menu item is composed of a `key:value` pair, where the `key` is the text that shows up in the navigation bar, and `value` is the URL to link to. The URL can either be the name of a page on your site (eg. `""` will go to your homepage, `aboutme` will go to a page called `aboutme` on your site), or a URL to an external site beginning in `http`. If you want to define sub-menus, use the format that the `Resources` menu is using in the sample code above.
-
-#### Displaying an image in the navigation bar
-
-You can add an image to the navigation bar by defining the `avatar` parameter in `_config.yml`. The image should be a square (width = height).
-
-```yaml
-avatar: "/path/to/image.png"
-```
-
-### Add your name/email/social media links to the footer
-
-You can add contact information and social media links in the footer. They will be displayed as nice little logos, to give the footer a clean feel. Add the following to your `_config.yml` file:
-
-```yaml
-author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-```
-
-Remove the lines that you don't want to display in the footer, and change `yourname` to the correct values in the links you want to keep.
-
-#### Add your website's name to the footer
-
-After all the contact info links, you can also add the name of your website by defining the` url-pretty` parameter in `_config.yml`:
-
-```yaml
-url-pretty: "MyWebsite.com
-```
-
 ### Adding an index page
 
 Feel free to create the index page (homepage) of your site however you'd like. If you want to have an index page similar to the one at [deanattali.com](http://deanattali.com), then create `index.html` as follows: 
@@ -193,6 +136,63 @@ You'll also need to add these lines to your `_config.yml` because the code above
 paginate: 5
 gems:
   - jekyll-paginate
+```
+
+### Creating a navigation bar
+
+Add these lines to your `_config.yml` file to get a demo navigation bar:   
+
+```yaml
+navbar-links:
+  Home: ""
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+    - GitHub Pages: "https://pages.github.com/"
+  Author's home: "http://deanattali.com"
+```
+
+Change these values to match the pages on your site. Each menu item is composed of a `key:value` pair, where the `key` is the text that shows up in the navigation bar, and `value` is the URL to link to. The URL can either be the name of a page on your site (eg. `""` will go to your homepage, `aboutme` will go to a page called `aboutme` on your site), or a URL to an external site beginning in `http`. If you want to define sub-menus, use the format that the `Resources` menu is using in the sample code above.
+
+#### Displaying an image in the navigation bar
+
+You can add an image to the navigation bar by defining the `avatar` parameter in `_config.yml`. The image should be a square (width = height).
+
+```yaml
+avatar: "/path/to/image.png"
+```
+
+### Add your name/email/social media links to the footer
+
+You can add contact information and social media links in the footer. They will be displayed as nice little logos, to give the footer a clean feel. Add the following to your `_config.yml` file:
+
+```yaml
+author:
+  name: Some Person
+  email: "youremail@domain.com"
+  facebook: yourname  # eg. daattali
+  github: yourname    # eg. daattali
+  twitter: yourname   # eg. daattali
+  reddit: yourname    # eg. daattali
+  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
+  linkedin: yourname  # eg. daattali
+  xing: yourname      # eg. daattali
+  stackoverflow: yourlink  # eg. "3943160/daattali"
+  snapchat: yourname  # eg. daattali
+  instagram: yourname # eg. daattali
+  youtube: yourlink   # eg. user/daattali or channel/daattali
+  spotify: yourname   # eg. daattali
+```
+
+Remove the lines that you don't want to display in the footer, and change `yourname` to the correct values in the links you want to keep.
+
+#### Add your website's name to the footer
+
+After all the contact info links, you can also add the name of your website by defining the` url-pretty` parameter in `_config.yml`:
+
+```yaml
+url-pretty: "MyWebsite.com
 ```
 
 ### Buttons for sharing blog posts on social media
