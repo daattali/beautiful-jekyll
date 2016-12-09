@@ -74,7 +74,7 @@ defaults:
 
 Feel free to create the index page (homepage) of your site however you'd like. If you want to have an index page similar to the one at [deanattali.com](http://deanattali.com), then create `index.html` as follows: 
 
-```
+```html
 ---
 layout: page
 title: My Website
