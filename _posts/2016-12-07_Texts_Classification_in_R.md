@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Text classification on Amazon Reviews"
+title: "Text classification in R"
 share_img: https://github.com/fderyckel/fderyckel.github.io/blob/master/img/The_R_Trader_Ch01_files/figure-markdown_github/unnamed-chunk-22-1.png
-tags:[caret, RTextTools, Text Mining, SVM]
+tags: [Book_Review, quantmod, ggplot2, dplyr]
 ---
 
 -   [Introduction of text analysis with R.](#introduction-of-text-analysis-with-r.)
