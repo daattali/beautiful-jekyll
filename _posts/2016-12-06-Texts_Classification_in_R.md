@@ -1,9 +1,3 @@
----
-layout: post
-title: "Text classification on Amazon Reviews"
-share_img: https://github.com/fderyckel/fderyckel.github.io/blob/master/img/The_R_Trader_Ch01_files/figure-markdown_github/unnamed-chunk-22-1.png
-tags: [caret, RTextTools, text_mining, SVM]
----
 -   [Introduction of text analysis with R.](#introduction-of-text-analysis-with-r.)
 -   [First method using the `tm` and `caret` package](#first-method-using-the-tm-and-caret-package)
     -   [Simple example](#simple-example)
@@ -12,7 +6,7 @@ tags: [caret, RTextTools, text_mining, SVM]
     -   [Second example on Amazon Reviews](#second-example-on-amazon-reviews)
         -   [Pre-processing](#pre-processing)
         -   [Conclusion](#conclusion)
--   [Second method with `RTextTools. Let's start easy with some simple text](#second-method-with-rtexttools.-lets-start-easy-with-some-simple-text)
+-   [Second method with RTextTools. Let's start easy with some simple text](#second-method-with-rtexttools.-lets-start-easy-with-some-simple-text)
     -   [First example with easy data](#first-example-with-easy-data)
         -   [Text pre-processing](#text-pre-processing-1)
         -   [Creating and testing the model](#creating-and-testing-the-model)
@@ -26,7 +20,7 @@ This document has been inspired by the Coursera course on [Machine Learning Foun
 
 The task was to apply classfification on an Amazon review dataset. Given a review, we create a model that will decide if the review is *positive* (associated with a rating of 4 or 5) or *negative* (associate with a rating of 1 or 2). This is a supervised learning task as the grading associated with the reviews is used as the response variable.
 
-The course use Python and the GraphLab Create framework around it. Although it is exciting to learn Python, I'm a bit less thrilled to have to learn it from a a framework which license will expire in a year. That said the framework seems very powerful and quite easy to use (a lot of the default parameters seem to work very nicely out of the box.)
+The course use Python and the GraphLab Create framework around it. Although it is exciting to learn Python, I'm a bit less thrilled to have to learn it from a framework which license will expire in a year. That said the framework seems very powerful and quite easy to use (a lot of the default parameters seem to work very nicely out of the box.). GraphLab Create use the SFrames as the basic data structure as oppose to the more common Pandas data structe. For a comparison between the SFrame and the Pandas structures, you can read [this nice post](https://www.quora.com/Which-one-is-better-for-data-manipulation-in-python-Pandas-or-SFrame).
 
 So I was thinking to try a similar approach with R. I have to say I did struggle a bit to find appropriate packages and ways to use to them. So this is a very basic attempt to replicate a supervised linear classification on text.
 
@@ -36,9 +30,15 @@ Introduction of text analysis with R.
 One have quite a few choice when doing text analytics in R. The `tm` package is probably one of the most well known.
 I also came accross 3 others: `RTextTools`, `quantedea` and `tidytext`.
 
-`RTextTools` is using a variety of existing R packages, it is designed as a one-stop-shop for conducting supervised learning with textual data. Overall, RTextTools offers a comprehensive approach to text classification, by interfacing with existing text pre-processing routines and machine learning algorithms and by providing new analytics functions.
+`RTextTools` is using &gt; a variety of existing R packages, it is designed as a one-stop-shop for conducting supervised learning with textual data. \[...\] Overall, RTextTools offers a comprehensive approach to text classification, by interfacing with existing text pre-processing routines and machine learning algorithms and by providing new analytics functions.
 
-We have not yet managed to try with the other 2 packages.
+The package doesn't seem to be actively developped as of late. There is a [website](www.rtexttools.com/) an [R article](https://journal.r-project.org/archive/2013-1/collingwood-jurka-boydstun-etal.pdf) and the [package vignette](https://CRAN.R-project.org/package=RTextTools) for more info.
+
+`tidytext` is a [R package](https://github.com/juliasilge/tidytext) that uses the tidy data principles and
+
+> make many text mining tasks easier, more effective, and consistent with tools already in wide use. By treating text as data frames of words, we can manipulate, summarize, and visualize the characteristics of text easily and integrate natural language processing into effective workflows we were already using.
+
+Julia Silge and David Robinson, the authors of the package have written [a book](http://tidytextmining.com/) on how to use `tidytext`. Well worth a read.
 
 First method using the `tm` and `caret` package
 ===============================================
@@ -51,30 +51,29 @@ Simple example
 Let's first create a character vector with 3 elements.
 
 ``` r
-exa1 <- c('Cats like to chase mice.', 'Dogs bite people.', 'Dogs like to run after cats.')
-str(exa1)
+example1 <- c('Cats like to chase mice.', 'Dogs bite people.', 'Dogs like to run after cats.')
+str(example1)
 ```
 
     ##  chr [1:3] "Cats like to chase mice." "Dogs bite people." ...
 
 ``` r
-class(exa1)
+class(example1)
 ```
 
     ## [1] "character"
 
-Most algorithms applyied on text tend to use a matrix with each of the terms used in a corpus (the series of documents) and their frequency. This is called a 'Document Term Matrix' aka DTM.
+Most algorithms applyied on text tend to use a sparse matrix with each of the terms used in a corpus (the series of documents) and their frequency. This is called a 'Document Term Matrix' aka DTM.
 It is fairly straight forward to create such a DTM with the `tm` package.
 
 ### Text pre-processing
 
 ``` r
 library(tm)
-library(dplyr)
 library(tibble)
 
 # Create a corpus from our character vector
-corpus <- Corpus(VectorSource(exa1))
+corpus <- Corpus(VectorSource(example1))
 
 # Create the document term matrix
 tdm <- DocumentTermMatrix(corpus, list(removePunctuation = TRUE, 
@@ -89,21 +88,13 @@ train_set <- as.data.frame(train_set)
 train_set$y <- as.factor(train_set$y)
 
 # let's have a glimpse at our training set  
-glimpse(train_set)
+train_set
 ```
 
-    ## Observations: 3
-    ## Variables: 10
-    ## $ after  <dbl> 0, 0, 1
-    ## $ bite   <dbl> 0, 1, 0
-    ## $ cats   <dbl> 1, 0, 1
-    ## $ chase  <dbl> 1, 0, 0
-    ## $ dogs   <dbl> 0, 1, 1
-    ## $ like   <dbl> 1, 0, 1
-    ## $ mice   <dbl> 1, 0, 0
-    ## $ people <dbl> 0, 1, 0
-    ## $ run    <dbl> 0, 0, 1
-    ## $ y      <fctr> 0, 1, 0
+    ##   after bite cats chase dogs like mice people run y
+    ## 1     0    0    1     1    0    1    1      0   0 0
+    ## 2     0    1    0     0    1    0    0      1   0 1
+    ## 3     1    0    1     0    1    1    0      0   1 0
 
 Each observation represent one document (in our case one element of our original character vector). Each variable represent a word used in the corpus. The *0* and *1* are their frequency.
 
@@ -113,14 +104,14 @@ Now that we have a training set, we can create a model based on our training set
 
 ``` r
 library(caret)
-exa1_model <- train(y ~., data = train_set, method = 'svmLinear3')
+example1_model <- train(y ~., data = train_set, method = 'svmLinear3')
 ```
 
 Let's check the accuracy of our model on our training set.
 
 ``` r
 # Check accuracy on training.
-predict(exa1_model, newdata = train_set)
+predict(example1_model, newdata = train_set)
 ```
 
     ## [1] 0 1 0
@@ -130,13 +121,13 @@ Let's try our model on new data.
 
 ``` r
 # Test data.
-data2 <- c('Bats eat bugs.')
-corpus <- Corpus(VectorSource(data2))
+example1_test <- c('Bats eat bugs.')
+corpus <- Corpus(VectorSource(example1_test))
 tdm <- DocumentTermMatrix(corpus, control = list(dictionary = Terms(tdm)))
 test <- as.matrix(tdm)
 
 # Check accuracy on test.
-predict(exa1_model, newdata = test)
+predict(example1_model, newdata = test)
 ```
 
     ## [1] 0
@@ -145,7 +136,9 @@ predict(exa1_model, newdata = test)
 Second example on Amazon Reviews
 --------------------------------
 
-Let's see if we can use this technique with our some of our Amazon Reviews. We have saved the review on this file in [Google Drive](https://drive.google.com/file/d/0ByHtvgo2NGDMN0txU2p5QTR3VEk/view?usp=sharing)
+Let's see if we can use this technique with some of the Amazon Reviews. We have saved the review on this file in [Google Drive](https://drive.google.com/file/d/0ByHtvgo2NGDMN0txU2p5QTR3VEk/view?usp=sharing)
+
+SPLIT THE DATA INTO TRAINING AND TESTING USING CARET!!!
 
 ### Pre-processing
 
@@ -155,18 +148,64 @@ We first load these reviews
 product_review <- readr::read_csv("toyamazonPhilips.csv")
 
 #Let's have a quick look at the reviews
-head(product_review, 4)
+library(pander)
+pandoc.table(product_review[2:4,1:3], 
+             justify = c('left', 'left', 'center'), style = 'grid')
 ```
 
-    ## # A tibble: 4 × 5
-    ##                               name
-    ##                              <chr>
-    ## 1 Philips Avent 3 Pack 9oz Bottles
-    ## 2 Philips Avent 3 Pack 9oz Bottles
-    ## 3 Philips Avent 3 Pack 9oz Bottles
-    ## 4 Philips Avent 3 Pack 9oz Bottles
-    ## # ... with 4 more variables: review <chr>, rating <int>, count <int>,
-    ## #   standev <dbl>
+    ## 
+    ## 
+    ## +--------------------------+--------------------------------+----------+
+    ## | name                     | review                         |  rating  |
+    ## +==========================+================================+==========+
+    ## | Philips Avent 3 Pack 9oz | If I had not been given a ton  |    2     |
+    ## | Bottles                  | of Avent bottles, I would have |          |
+    ## |                          | chosen some other system.  The |          |
+    ## |                          | leaking is terrible!!!  You    |          |
+    ## |                          | have to buy the disks          |          |
+    ## |                          | separately, you should get     |          |
+    ## |                          | them for free because they are |          |
+    ## |                          | absolutely essential.  The     |          |
+    ## |                          | only way to mix formula in the |          |
+    ## |                          | bottle or transport liquid is  |          |
+    ## |                          | to use the disks in the ring,  |          |
+    ## |                          | then switch to the nipple when |          |
+    ## |                          | you are ready to feed.  The    |          |
+    ## |                          | only reason I give it a two is |          |
+    ## |                          | because I do like that you can |          |
+    ## |                          | pump directly into the bottle  |          |
+    ## |                          | with the ISIS breast pump.     |          |
+    ## |                          | And, I like the sippy cups.    |          |
+    ## +--------------------------+--------------------------------+----------+
+    ## | Philips Avent 3 Pack 9oz | Leaks! Especially difficult to |    1     |
+    ## | Bottles                  | get a tight seal if you use    |          |
+    ## |                          | one hand (while holding baby). |          |
+    ## |                          | A much better design is the    |          |
+    ## |                          | Breast Flow Learning Curve     |          |
+    ## |                          | First Years bottles. Instead   |          |
+    ## |                          | buy The First Years 3pk.       |          |
+    ## |                          | Breastflow 5oz. Bottles These  |          |
+    ## |                          | worked much better for me.     |          |
+    ## +--------------------------+--------------------------------+----------+
+    ## | Philips Avent 3 Pack 9oz | I have been using the Avent    |    5     |
+    ## | Bottles                  | bottle system for six months   |          |
+    ## |                          | and have been completely       |          |
+    ## |                          | satisfied. I introduced an     |          |
+    ## |                          | Avent bottle to my daughter at |          |
+    ## |                          | four weeks old and she         |          |
+    ## |                          | transitioned easily between    |          |
+    ## |                          | breast and bottle. She is      |          |
+    ## |                          | still breastfed in the morning |          |
+    ## |                          | and evenings but receives an   |          |
+    ## |                          | Avent bottle at daycare and    |          |
+    ## |                          | has never had a problem. I     |          |
+    ## |                          | have never had a bottle leak   |          |
+    ## |                          | of which other consumers have  |          |
+    ## |                          | complained. I would recommend  |          |
+    ## |                          | this system to any parent,     |          |
+    ## |                          | especially those of part-time  |          |
+    ## |                          | breastfed babies.              |          |
+    ## +--------------------------+--------------------------------+----------+
 
 ``` r
 #Let's see the table of ratings.  
@@ -371,7 +410,7 @@ product_review_container <- create_container(product_review_matrix,
                                              trainSize = 1:150, testSize = 151:174, 
                                              virgin = FALSE)
 
-product_review_model <- train_model(product_review_container, algorithm = "SVM", kernel="radial")
+product_review_model <- train_model(product_review_container, algorithm = "SVM")
 
 product_review_model_result <- classify_model(product_review_container, product_review_model)
 x <- as.data.frame(cbind(product_review$rating_new[151:174], product_review_model_result$SVM_LABEL))
@@ -421,7 +460,7 @@ This is model gives the same result (which was expected as we used the same meth
 Where to go from here
 =====================
 
-There is more work to do in finding other relevant algorithms, understanding their parameters and doing more work on model evaluation.
+There is more work to do in finding other relevant algorithms from the `caret` package to use on text analysis, understanding their parameters and doing more work on model evaluation.
 
 Resources used
 ==============
