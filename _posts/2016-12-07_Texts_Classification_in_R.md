@@ -1,3 +1,11 @@
+---
+title: "Text classification on Amazon Reviews"
+share_img: https://github.com/fderyckel/fderyckel.github.io/blob/master/img/The_R_Trader_Ch01_files/figure-markdown_github/unnamed-chunk-22-1.png
+tags:[caret, RTextTools, Text Mining, SVM]
+layout: post
+---
+
+
 -   [Introduction of text analysis with R.](#introduction-of-text-analysis-with-r.)
 -   [First method using the `tm` and `caret` package](#first-method-using-the-tm-and-caret-package)
     -   [Simple example](#simple-example)
