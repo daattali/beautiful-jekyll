@@ -25,7 +25,7 @@ tags: [Linear Classification, caret, RTextTools, SVM, Text Mining]
 
 This document has been inspired by the Coursera course on [Machine Learning Foundations: A Case Study Approach](https://www.coursera.org/learn/ml-foundations/) given by Carlos Guestrin and by Emily Fox from Washington University. This course is part of the [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning)
 
-The task was to apply classfification on an Amazon review dataset. Given a review, we create a model that will decide if the review is *positive* (associated with a rating of 4 or 5) or *negative* (associate with a rating of 1 or 2). This is a supervised learning task as the grading associated with the reviews is used as the response variable.
+The task is to apply classfification on an Amazon review dataset. Given a review, we create a model that will decide if the review is *positive* (associated with a rating of 4 or 5) or *negative* (associate with a rating of 1 or 2). This is a supervised learning task as the grading associated with the reviews is used as the response variable.
 
 The course use Python and the GraphLab Create framework around it. Although it is exciting to learn Python, I'm a bit less thrilled to have to learn it from a framework which license will expire in a year. That said the framework seems very powerful and quite easy to use (a lot of the default parameters seem to work very nicely out of the box.). GraphLab Create use the SFrames as the basic data structure as oppose to the more common Pandas data structe. For a comparison between the SFrame and the Pandas structures, you can read [this nice post](https://www.quora.com/Which-one-is-better-for-data-manipulation-in-python-Pandas-or-SFrame).
 
