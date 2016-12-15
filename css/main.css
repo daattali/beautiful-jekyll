@@ -121,6 +121,22 @@ img {
   color: #0085a1;
 }
 
+.navbar-custom .navbar-brand-logo {
+  padding-top: 0;
+}
+.navbar-custom .navbar-brand-logo img {
+  height: 50px;
+  -webkit-transition: height .5s ease-in-out;
+  -moz-transition: height .5s ease-in-out;
+  transition: height .5s ease-in-out;
+}
+.navbar-custom.top-nav-short .navbar-brand-logo {
+  padding-top: 5px;
+}
+.navbar-custom.top-nav-short .navbar-brand-logo img {
+  height: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
