@@ -34,6 +34,10 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter. The logo will have a height of 40px
+# title-img: /path/to/image
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
