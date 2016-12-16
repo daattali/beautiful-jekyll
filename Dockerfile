@@ -35,8 +35,8 @@ RUN gem install rb-fsevent -v 0.9.8
 
 RUN mkdir -p /app
 ADD ./ /app
-
 WORKDIR /app
+RUN gem update
 
 EXPOSE 4000
 
