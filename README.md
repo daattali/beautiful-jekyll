@@ -22,6 +22,7 @@
 To use this theme's gem, you need to first have a functioning Jekyll website. If you don't, there are many resources online for how to set up a Jekyll site. Here are the basic commands to get a minimal Jekyll site set up in Ubuntu:
 
 ```
+$ sudo apt-get update
 $ sudo apt-get install ruby ruby-dev make gcc
 $ sudo gem install jekyll bundler
 $ jekyll new ~/mysite
