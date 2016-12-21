@@ -9,7 +9,7 @@ The calculation of the resources delivered is a percentage of the consumed CPU t
 
 > Delivered CPU Percentage = Consumed / Min(Demand,DRS entitled) * 100
 
-the color of the bars in the DRS chart change according to this delivered CPU percentage.
+the color of the bars in the DRS chart change according to this percentage.
 
 ![pwrmgt-legend.png]({{site.baseurl}}/img/pwrmgt-legend.png)
 
@@ -26,11 +26,11 @@ After a bit of sniffing around we noticed that the Power management (under "Host
 
 But the other hosts were displaying only "Performance".
 
-So I rebooted on the BIOS of the server and browsed to "System BIOS Settings" > "System Profile" and found the the profile set to "Performance Per Watt (DAPC)".
+So placed the host in maintenance mode, rebooted on the BIOS and browsed to "System BIOS Settings" > "System Profile" and found the profile set to "Performance Per Watt (DAPC)".
 
 - Quickly changed it to Performance (which disables the power saving features).
 - Rebooted the host
-- Loaded it with a bunch of VMs
+- Loaded a bunch of VMs on it
 
 I then checked the DRS chart and everything was green again, all entitled resources delivered by the host, no more CPU throttling incurred by the power saving features.
 
