@@ -43,7 +43,9 @@ You can find all the documentation about the power efficiency for Dell servers i
 
 ![pwrmgt-bios-settings.png]({{site.baseurl}}/img/pwrmgt-bios-settings.png)
 
-The only difference between "Performance" and "Performance per Watt" is related to the C1 states which is a power saving feature.
+The only difference between "Performance" and "Performance per Watt" is related to the C1 states which idle power saving states. [Here's some detailed info on power states](https://software.intel.com/en-us/articles/power-management-states-p-states-c-states-and-package-c-states).
+
+> During a P-state, the processor is still executing instructions, whereas during a C-state (other than C0), the processor is idle, meaning that nothing is executing. To make a quick analogy, a processor lying idle is like a house with all the lights on when no one is at home. Consuming all that power is doing nothing other than providing your electric company a little extra income.
 
 Here is a quote of the Dell documentation about the different profiles.
 
