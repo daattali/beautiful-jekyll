@@ -47,10 +47,12 @@ The only difference between "Performance" and "Performance per Watt" is related 
 
 Here is a quote of the Dell documentation about the different profiles.
 
-> **Performance-per-watt (DAPC)** profile is the default, and represents an excellent mix of performance balanced with power consumption reduction. Dell Active Power Control (or DAPC), relies on a BIOS-centric power control mechanism which offers excellent power efficiency advantages with minimal performance impact in most environments, and is the CPU Power Management choice for this overall System Profile.
+> **Performance-per-watt (DAPC)** profile is the default, and represents an excellent mix of performance balanced with power consumption reduction. Dell Active Power Control (or DAPC), relies on a BIOS-centric power control mechanism which offers excellent power efficiency advantages with **minimal performance impact in most environments**, and is the CPU Power Management choice for this overall System Profile.
 
 > **Performance-per-watt (OS)**, otherwise known as “OS Control”, is similar to the DAPC profile for all sub-options except for the CPU Power Management. The power management scheme used for this profile is called “OS DBPM”, which allows the Operating System to manipulate processor frequencies for higher power efficiency. However, the effectiveness of this profile for reducing overall system power consumption is based on how well the Operating System is able to effectively control hardware resources, so the impacts are mixed across all supported Operating Systems.
 
 > **Performance** profile provides potentially increased performance by maximizing processor frequency and the disabling certain power saving features such as C-states and. Although not optimal for all environments, this is an excellent starting point for performance optimization baseline comparisons.
 
 > **Dense Configuration** enhances reliability features and reduces power consumption at the cost of considerable performance. This profile is targeted for operating environments where enhanced reliability is desired and temperatures may exceed the thresholds encountered in less densely-packed data centers.
+
+Conclusion: If the performance of your VMs is more important than saving a couple watts here and there this setting should be set to high performance.
