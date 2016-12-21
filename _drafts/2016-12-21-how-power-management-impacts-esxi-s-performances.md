@@ -3,9 +3,9 @@ layout: post
 published: false
 title: How Power management impacts ESXi's performances
 ---
-Recently at work we've been noticing erratic performance on VMs eventhough the host's CPU wasn't running hot. In order to check if there was contention I looked at the DRS chart and discovered that the CPU, not even hitting the 50% bar was not delivering half the resources.
+Recently at work we've been noticing erratic performance on VMs eventhough the host's CPU wasn't running particularly hot. In order to check if there was contention I looked at the DRS chart and discovered that the CPU, not even hitting the 50% bar was not delivering half the resources.
 
-The calculation of the resource delivered is a percentage of the consumed CPU to the entitled/demanded CPU (minimum of demand or DRS entitled).
+The calculation of the resources delivered is a percentage of the consumed CPU to the entitled/demanded CPU (minimum of demand or DRS entitled).
 
 > Delivered CPU = Consumed / Min(Demand,DRS entitled)
 
