@@ -23,7 +23,7 @@ Let’s consider the the diagram show below to understand the above statements.
 
 ![Data Set](/img/pc1.png)  
 
-Imagine that the green circles are the data points of a data set. In order to find the direction of maximum variance, fit a straight line in the data set where the data is most spread out. A vertical line with the data points projected on to it will look the diagram show below.
+Imagine that the green circles are the data points of a data set. In order to find the direction of maximum variance, fit a straight line in the data set where the data is most spread out. A vertical line with the data points projected on to it will look like the diagram show below.
 
 ![Data Set](/img/pc2.png)  
 
@@ -33,17 +33,17 @@ A better fit would be a horizontal line and the data points projection is show i
 
 ![Data Set](/img/pc3.png)  
 
-Oh yeah, this looks much better and the data is way more spread out on this line, it has maximum variance and with more analysis we can conclude that there cannot be any other line that has maximum variance. Thus, we can say that the horizontal is the principal component for the above data set.  
+Oh yeah, this looks much better and the data is way more spread out on this line, it has maximum variance and with more analysis we can conclude that there cannot be any other line that has maximum variance. Thus, we can say that the horizontal line is the principal component for the above data set.  
 
 #### 2. **Eigenvectors and Eigenvalues**  
 
-In any data set, we can deconstruct the data set into eigenvectors and eigenvalues. Eigenvectors and vectors exits in pairs. Every eigenvector has a corresponding eigenvalue.
+In any data set, we can deconstruct the data into eigenvectors and eigenvalues. Eigenvectors and values exist in pairs. Every eigenvector has a corresponding eigenvalue.
  
-When we consider the example that we previously used, **eigenvector was the direction of the line (vertical, horizontal) drawn to find the maximum variance**. An eigenvalue is just a number, it tells you how much variance exists in the data in a particular direction and in the previous example **eigenvalue is a number that tells us how the data set is spread out on the line which is an eigenvector**. 
+When we consider the example that we previously used, **eigenvector was the direction of the line (vertical or horizontal) drawn to find the maximum variance**. An eigenvalue is just a number, it tells us how much variance exists in the data in a particular direction and in the previous example an **eigenvalue was a number that tells us how the data set is spread out on the line which is an eigenvector**. 
 
 Therefore, an eigenvector with the highest eigenvalue is the **Principal Component**.
 
-It turns out that there are not many eigenvectors or eigenvalues in the previous example. For a fact the number of eigenvectors and eigenvalues that exist equals the number of dimensions of a data set.
+It turns out that there were not many eigenvectors or eigenvalues in the previous example. For a fact the number of eigenvectors and eigenvalues that exist equals the number of dimensions of a data set.
 
 Say you are measuring the age and attendance of each student in a classroom. So, the two variables are age and attendance of students. Therefore the data set is 2 dimensional and it has 2 eigenvectors and eigenvalues.
 
@@ -53,7 +53,7 @@ This might sound confusing and might be complicated, let’s make it clear using
 
 ![Data Set](/img/pc4.png)
 
-At the moment the data set which is depicted in oval shape in on the x-y axis, where x could be the age and y could be the attendance. These are the 2 dimensions that are currently used to measure the data set.
+At the moment the data set which is depicted in oval shape on the x-y axis, where x could be the age and y could be the attendance. These are the 2 dimensions that are currently used to measure the data set.
 
 As already discussed there is a principal component or a line that will split the data set for maximum variance as show below.
 
@@ -88,7 +88,7 @@ It is the measure of the spread of the date in the data set using the mean. When
 
 ![Variance](/img/variance.PNG)
 
-Variance can also be represented as the measure of the deviation from the mean for points in one dimension.
+Variance can also be represented as the measure of the deviation from the mean for the points in one dimension.
 
 #### 3. **Covariance**
 
@@ -118,7 +118,7 @@ Consider the following 2 dimensional matrix multiplied by a vector.
 
 ![Matrix Transformations](/img/matrix_transformations.PNG)
 
-Now, assume we take a multiple of (3,2) vector.
+Now, assume we take a multiple of (3,2) vector and multiply it with the 2 dimensional matrix.
 
 ![Matrix Transformations](/img/matrix_transformations_2.PNG)
 ![Matrix Transformations](/img/matrix_transformations_3.PNG)
@@ -151,7 +151,7 @@ A common measure is the *signal-to-noise ration (SNR)*, or a ration of variances
 
 ![Signal to Noise](/img/signal_to_noise.PNG)
 
-A high *SNR (<<1)* indicates high precision data, while a low *SNR* indicates noise contaminated data.
+A high *SNR (>>1)* indicates high precision data, while a low *SNR* indicates noise contaminated data.
 
 #### 7. **Covariance Matrix**
 
