@@ -194,6 +194,6 @@ The goal is summarized as follows:
 
 Hope you found this article useful and understood Principal Component Analysis. 
 
-In the next article, the applications of PCA will explained in detail.
+In the next article, let’s take a look at the applications point of view of PCA.
 
-*If you liked this article — I’d really appreciate if you hit the like button to recommend it or left a comment. You can also follow me on Twitter. Peace!*
+*Thank you for reading. Peace!*
