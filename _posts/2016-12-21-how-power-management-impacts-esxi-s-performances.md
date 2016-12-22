@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: How Power management impacts ESXi's performances
+title: How Power management impacts ESXi performance
 ---
 Recently at work we've been noticing erratic performance on VMs eventhough the host's CPU wasn't running particularly hot. In order to check if there was contention I looked at the DRS chart and discovered that the CPU, not even hitting the 50% bar was not delivering half the resources.
 
