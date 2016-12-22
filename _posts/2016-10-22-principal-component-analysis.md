@@ -6,12 +6,14 @@ categories: machine_learning
 tags: [machine_learning]
 bigimg: /img/computer_vision.png
 ---
-## Principal Component Analysis
+## Principal Component Analysis  
 
 This article is divided into two sections, the first section deals with the pictorial explanation of Principal Component Analysis (PCA) and the second section deals with mathematical explanation of PCA.  
 ---
 
-### Pictorial Representation  
+### Pictorial Representation
+
+  
 
 1. **What is Principal Component Analysis?**  
 
@@ -73,4 +75,4 @@ Just to make it clear, we didn’t mess with the data set, we just changed the v
 
 
 ### Mathematical Representation 
- 
+
