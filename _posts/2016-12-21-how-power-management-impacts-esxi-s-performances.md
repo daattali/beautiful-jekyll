@@ -57,4 +57,4 @@ Here is a quote of the Dell documentation about the different profiles.
 
 > **Dense Configuration** enhances reliability features and reduces power consumption at the cost of considerable performance. This profile is targeted for operating environments where enhanced reliability is desired and temperatures may exceed the thresholds encountered in less densely-packed data centers.
 
-Conclusion: If the performance of your VMs is more important than saving a couple watts here and there this setting should be set to high performance.
+**Conclusion**: If the performance of your VMs is more important than saving a couple watts here and there this setting should be set to high performance.
