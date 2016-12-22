@@ -125,7 +125,7 @@ Now, assume we take a multiple of (3,2) vector.
 
 From the above two operations, what did we understand?
 
-* A vector consists of both length and direction. Scaling a vector by a value only changes it’s length and not it’s direction. This is an important observation in the transformation of matrices leading to form eigenvectors and eigenvalues.
+* A vector consists of both length and direction. Scaling a vector by a value only changes it’s length and not it’s direction. This is an important observation in the transformation of matrices leading to form **eigenvectors** and **eigenvalues**.
 
 * Irrespective of how much we scale the vector (3,2) by, the solution under the transformation matrix is always a multiple of 4.
 
@@ -135,7 +135,7 @@ The eigenvalue problem is any problem of the form:
 
 ![Matrix Transformations](/img/eigen_problem_2.PNG)
 
-Any value of lambda for which the above equation has a solution is called the eigenvalue for A and the vector v which corresponds to this value is called the eigenvector of A.
+Any value of lambda for which the above equation has a solution is called the **eigenvalue** for **A** and the vector v which corresponds to this value is called the **eigenvector** of **A**.
 
 Going back to our above example:
 
@@ -143,23 +143,23 @@ Going back to our above example:
 
 #### 6. **Change of Basis**  
 
-Let X and Y be m x n matrices related by a linear transformation P.
+Let **X** and **Y** be *m x n* matrices related by a linear transformation **P**.
 
-X is the original recorded data set and Y is a re-representation of that data set.
+**X** is the original recorded data set and Y is a re-representation of that data set.
 
 ![Matrix Transformations](/img/change_of_basis.PNG)
 
-* P is matrix that transforms X into Y.
-* Geometrically, P is a rotation and a stretch (scaling) which again transforms X into Y.
-* The rows of P {p1, p2, …., pn} are a set of new basis vectors for expressing the columns of X.
+* **P** is matrix that transforms **X** into **Y**.
+* Geometrically, **P** is a rotation and a stretch (scaling) which again transforms **X** into **Y**.
+* The rows of **P** {**p1**, **p2**, …., **pn**} are a set of new basis vectors for expressing the columns of **X**.
 
 Changing the basis doesn’t change the data, it only changes the representation.
 
 Changing the basis is actually projecting the data vectors on the basis vectors.
 
-Geometrically, P is a rotation and a stretch of X.
+Geometrically, **P** is a rotation and a stretch of **X**.
 
-* If P basis is orthonormal (length= 1) then the transformation P is only a rotation.
+* If P basis is orthonormal (length= 1) then the transformation **P** is only a rotation.
 
 #### 7. **Noise**
 
@@ -167,27 +167,27 @@ Noise in any data must be low or — no matter the analysis technique —�
 
 There exists no absolute scale for the noise but rather it is measured relative to the measurement, e.g. recorded ball positions.
 
-A common measure is the signal-to-noise ration (SNR), or a ration of variances.
+A common measure is the *signal-to-noise ration (SNR)*, or a ration of variances.
 
 ![Signal to Noise](/img/signal_to_noise.PNG)
 
-A high SNR (<<1) indicates high precision data, while a low SNR indicates noise contaminated data.
+A high *SNR (<<1)* indicates high precision data, while a low *SNR* indicates noise contaminated data.
 
 #### 8. **Covariance Matrix**
 
-Assuming zero mean data (subtracting the mean from each data value), consider the indexed vectors {x1, x2, …., xm} which are the rows of an m x n matrix X.
+Assuming zero mean data (subtracting the mean from each data value), consider the indexed vectors *{x1, x2, …., xm}* which are the rows of an m x n matrix **X**.
 
-Each row corresponds to all measurements of a particular measurement type (xi).
+Each row corresponds to all measurements of a particular measurement type *(xi)*.
 
-Each column of X corresponds to a set of measurements from a particular time instant.
+Each column of **X** corresponds to a set of measurements from a particular time instant.
 
-We can now define our covariance matrix Sx.
+We can now define our covariance matrix **Sx**.
 
 ![Matrix Transformations](/img/covariance_matrix_2.PNG)
 
-* Sx is a square symmetric m x m matrix.
-* The diagonal terms of Sx are the variance of particular measurement types.
-* The off-diagonal terms of Sx are the covariance between the measurement types.
+* **Sx** is a square symmetric m x m matrix.
+* The **diagonal terms** of **Sx** are the **variance** of particular measurement types.
+* The **off-diagonal** terms of **Sx** are the **covariance** between the measurement types.
 
 #### 9. **Solving PCA: Eigen Vectors of Covariance Matrix**
 
@@ -195,8 +195,8 @@ Let’s derive our first algebraic solution to PCA using linear algebra. This so
 
 The goal is summarized as follows:
 
-* Find some orthonormal matrix P where Y = PX such that Sy is diagonalized. The rows of P are the principal components of X.
-* We begin by rewriting Sy in terms of our variable of choice P.
+* Find some orthonormal matrix **P** where **Y = PX** such that **Sy** is diagonalized. The rows of **P** are the *principal components* of **X**.
+* We begin by rewriting **Sy** in terms of our variable of choice **P**.
 
 ![Matrix Transformations](/img/covariance_matrix_3.PNG)
 
@@ -204,11 +204,11 @@ The goal is summarized as follows:
 
 ![Matrix Transformations](/img/covariance_matrix_4.PNG)
 
-* Now comes the trick. Let’s select the matrix P to be a matrix where each row of P is an eigenvector.
+* Now comes the trick. *Let’s select the matrix **P** to be a matrix where each row of **P** is an eigenvector*.
 
 ![Matrix Transformations](/img/covariance_matrix_5.PNG)
 
-* So, it is evident that the choice of P diagonalizes Sy. This was the goal for PCA.
+* So, it is evident that the choice of **P** diagonalizes **Sy**. This was the goal for PCA.
 
 Hope you found this article useful and understood Principal Component Analysis. 
 
