@@ -102,7 +102,118 @@ The covariance of one dimension is variance.
 
 ![covariance](/img/covariance.png)
 
-#### 1. **Mean**  
-#### 1. **Mean**  
+A **positive value** of covariance indicates that both the dimensions are **directly proportional** to each other, where if one dimension increases the other dimension increases accordingly.
 
+A **negative value** of covariance indicates that both the dimensions are **indirectly proportional** to each other, where if one dimension increases then other dimension decreases accordingly.
 
+If in case the **covariance is zero**, then the two dimensions are **independent** of each other.
+
+One of the major purpose of covariance is to find the relationship between dimensions in high dimensional data set, usually dimensions greater than 3, where the visualization is tricky.
+
+We can also represent the dimensions of a higher dimensional data set in terms of **covariance matrix**. Let’s consider the example of a 3 dimensional data set, then the covariance matrix can be represented as follows
+
+![covariance](/img/covariance_matrix.png)
+
+#### 4. **Transformation Matrices**
+
+Consider the following 2 dimensional matrix multiplied by a vector.
+
+![Matrix Transformations](/img/matrix_transformations.png)
+
+Now, assume we take a multiple of (3,2) vector.
+
+![Matrix Transformations](/img/matrix_transformations_2.png)
+![Matrix Transformations](/img/matrix_transformations_3.png)
+
+From the above two operations, what did we understand?
+
+..* A vector consists of both length and direction. Scaling a vector by a value only changes it’s length and not it’s direction. This is an important observation in the transformation of matrices leading to form eigenvectors and eigenvalues.
+
+..* Irrespective of how much we scale the vector (3,2) by, the solution under the transformation matrix is always a multiple of 4.
+
+#### 5. **Eigenvalue Problem**  
+
+The eigenvalue problem is any problem of the form:
+
+![Matrix Transformations](/img/eigen_problem_2.png)
+
+Any value of lambda for which the above equation has a solution is called the eigenvalue for A and the vector v which corresponds to this value is called the eigenvector of A.
+
+Going back to our above example:
+
+![Matrix Transformations](/img/eigen_problem_3.png)
+
+#### 6. **Change of Basis**  
+
+Let X and Y be m x n matrices related by a linear transformation P.
+
+X is the original recorded data set and Y is a re-representation of that data set.
+
+![Matrix Transformations](/img/change_of_basis.png)
+
+..* P is matrix that transforms X into Y.
+..* Geometrically, P is a rotation and a stretch (scaling) which again transforms X into Y.
+..* The rows of P {p1, p2, …., pn} are a set of new basis vectors for expressing the columns of X.
+
+Changing the basis doesn’t change the data, it only changes the representation.
+
+Changing the basis is actually projecting the data vectors on the basis vectors.
+
+Geometrically, P is a rotation and a stretch of X.
+
+..* If P basis is orthonormal (length= 1) then the transformation P is only a rotation.
+
+#### 7. **Noise**
+
+Noise in any data must be low or — no matter the analysis technique — no information about a system can be extracted.
+
+There exists no absolute scale for the noise but rather it is measured relative to the measurement, e.g. recorded ball positions.
+
+A common measure is the signal-to-noise ration (SNR), or a ration of variances.
+
+![Matrix Transformations](/img/signal_to_noise.png)
+
+A high SNR (<<1) indicates high precision data, while a low SNR indicates noise contaminated data.
+
+#### 8. **Covariance Matrix**
+
+Assuming zero mean data (subtracting the mean from each data value), consider the indexed vectors {x1, x2, …., xm} which are the rows of an m x n matrix X.
+
+Each row corresponds to all measurements of a particular measurement type (xi).
+
+Each column of X corresponds to a set of measurements from a particular time instant.
+
+We can now define our covariance matrix Sx.
+
+![Matrix Transformations](/img/covariance_matrix_2.png)
+
+..* Sx is a square symmetric m x m matrix.
+..* The diagonal terms of Sx are the variance of particular measurement types.
+..* The off-diagonal terms of Sx are the covariance between the measurement types.
+
+#### 9. **Solving PCA: Eigen Vectors of Covariance Matrix**
+
+Let’s derive our first algebraic solution to PCA using linear algebra. This solution is based on the property of eigenvector decomposition.
+
+The goal is summarized as follows:
+
+..* Find some orthonormal matrix P where Y = PX such that Sy is diagonalized. The rows of P are the principal components of X.
+..* We begin by rewriting Sy in terms of our variable of choice P.
+
+![Matrix Transformations](/img/covariance_matrix_3.png)
+
+..* A is a symmetric matrix and can also be written as below
+
+![Matrix Transformations](/img/covariance_matrix_4.png)
+
+..* Now comes the trick. Let’s select the matrix P to be a matrix where each row of P is an eigenvector.
+
+![Matrix Transformations](/img/covariance_matrix_5.png)
+
+..* So, it is evident that the choice of P diagonalizes Sy. This was the goal for PCA.
+
+Hope you found this article useful and understood Principal Component Analysis. 
+
+In the next article, the applications of PCA will explained in detail.
+
+*If you liked this article — I’d really appreciate if you hit the like button to recommend it or left a comment. You can also follow me on Twitter. Peace!*
