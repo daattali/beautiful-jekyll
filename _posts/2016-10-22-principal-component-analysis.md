@@ -81,6 +81,7 @@ In this section, let’s consider the mathematics point of view to understand th
 
 Mean is the average value of the entire data. Let’s consider a group of students, in order to find the mean of their age, we will add up the age of every student and divide the sum by the total number of students.
 
+![Data Set](/img/covariance.png)
 ![Mean](/img/mean.png)
 
 #### 2. **Variance**
