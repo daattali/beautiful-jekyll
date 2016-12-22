@@ -141,27 +141,7 @@ Going back to our above example:
 
 ![Matrix Transformations](/img/eigen_problem_3.PNG)
 
-#### 6. **Change of Basis**  
-
-Let **X** and **Y** be *m x n* matrices related by a linear transformation **P**.
-
-**X** is the original recorded data set and Y is a re-representation of that data set.
-
-![Matrix Transformations](/img/change_of_basis.PNG)
-
-* **P** is matrix that transforms **X** into **Y**.
-* Geometrically, **P** is a rotation and a stretch (scaling) which again transforms **X** into **Y**.
-* The rows of **P** {**p1**, **p2**, …., **pn**} are a set of new basis vectors for expressing the columns of **X**.
-
-Changing the basis doesn’t change the data, it only changes the representation.
-
-Changing the basis is actually projecting the data vectors on the basis vectors.
-
-Geometrically, **P** is a rotation and a stretch of **X**.
-
-* If P basis is orthonormal (length= 1) then the transformation **P** is only a rotation.
-
-#### 7. **Noise**
+#### 6. **Noise**
 
 Noise in any data must be low or — no matter the analysis technique — no information about a system can be extracted.
 
@@ -173,7 +153,7 @@ A common measure is the *signal-to-noise ration (SNR)*, or a ration of variances
 
 A high *SNR (<<1)* indicates high precision data, while a low *SNR* indicates noise contaminated data.
 
-#### 8. **Covariance Matrix**
+#### 7. **Covariance Matrix**
 
 Assuming zero mean data (subtracting the mean from each data value), consider the indexed vectors *{x1, x2, …., xm}* which are the rows of an m x n matrix **X**.
 
@@ -190,8 +170,7 @@ We can now define our covariance matrix **Sx**.
 * The **off-diagonal** terms of **Sx** are the **covariance** between the measurement types.
 
 
-#### 9. **Solving PCA: Eigen Vectors of Covariance Matrix**
-
+#### 8. **Solving PCA: Eigen Vectors of Covariance Matrix**
 
 
 Let’s derive our first algebraic solution to PCA using linear algebra. This solution is based on the property of eigenvector decomposition.
