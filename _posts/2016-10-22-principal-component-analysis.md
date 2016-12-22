@@ -80,13 +80,13 @@ In this section, let’s consider the mathematics point of view to understand th
 
 Mean is the average value of the entire data. Let’s consider a group of students, in order to find the mean of their age, we will add up the age of every student and divide the sum by the total number of students.
 
-![Mean](/img/mean.png)
+![Mean](/img/mean.PNG)
 
 #### 2. **Variance**
 
 It is the measure of the spread of the date in the data set using the mean. When we consider the group of students example, variance is the sum of the squared difference between the age of each student and the mean age value, then the sum is divided by the number of students.
 
-![Variance](/img/variance.png)
+![Variance](/img/variance.PNG)
 
 Variance can also be represented as the measure of the deviation from the mean for points in one dimension.
 
@@ -98,7 +98,7 @@ The covariance is measured between 2 dimensions to see if there is relationship 
 
 The covariance of one dimension is variance.
 
-![covariance](/img/covariance.png)
+![covariance](/img/covariance.PNG)
 
 A **positive value** of covariance indicates that both the dimensions are **directly proportional** to each other, where if one dimension increases the other dimension increases accordingly.
 
@@ -110,18 +110,18 @@ One of the major purpose of covariance is to find the relationship between dimen
 
 We can also represent the dimensions of a higher dimensional data set in terms of **covariance matrix**. Let’s consider the example of a 3 dimensional data set, then the covariance matrix can be represented as follows
 
-![covariance](/img/covariance_matrix.png)
+![covariance](/img/covariance_matrix.PNG)
 
 #### 4. **Transformation Matrices**
 
 Consider the following 2 dimensional matrix multiplied by a vector.
 
-![Matrix Transformations](/img/matrix_transformations.png)
+![Matrix Transformations](/img/matrix_transformations.PNG)
 
 Now, assume we take a multiple of (3,2) vector.
 
-![Matrix Transformations](/img/matrix_transformations_2.png)
-![Matrix Transformations](/img/matrix_transformations_3.png)
+![Matrix Transformations](/img/matrix_transformations_2.PNG)
+![Matrix Transformations](/img/matrix_transformations_3.PNG)
 
 From the above two operations, what did we understand?
 
@@ -133,13 +133,13 @@ From the above two operations, what did we understand?
 
 The eigenvalue problem is any problem of the form:
 
-![Matrix Transformations](/img/eigen_problem_2.png)
+![Matrix Transformations](/img/eigen_problem_2.PNG)
 
 Any value of lambda for which the above equation has a solution is called the eigenvalue for A and the vector v which corresponds to this value is called the eigenvector of A.
 
 Going back to our above example:
 
-![Matrix Transformations](/img/eigen_problem_3.png)
+![Matrix Transformations](/img/eigen_problem_3.PNG)
 
 #### 6. **Change of Basis**  
 
@@ -147,7 +147,7 @@ Let X and Y be m x n matrices related by a linear transformation P.
 
 X is the original recorded data set and Y is a re-representation of that data set.
 
-![Matrix Transformations](/img/change_of_basis.png)
+![Matrix Transformations](/img/change_of_basis.PNG)
 
 ..* P is matrix that transforms X into Y.
 ..* Geometrically, P is a rotation and a stretch (scaling) which again transforms X into Y.
@@ -169,7 +169,7 @@ There exists no absolute scale for the noise but rather it is measured relative 
 
 A common measure is the signal-to-noise ration (SNR), or a ration of variances.
 
-![Matrix Transformations](/img/signal_to_noise.png)
+![Matrix Transformations](/img/signal_to_noise.PNG)
 
 A high SNR (<<1) indicates high precision data, while a low SNR indicates noise contaminated data.
 
@@ -183,7 +183,7 @@ Each column of X corresponds to a set of measurements from a particular time ins
 
 We can now define our covariance matrix Sx.
 
-![Matrix Transformations](/img/covariance_matrix_2.png)
+![Matrix Transformations](/img/covariance_matrix_2.PNG)
 
 ..* Sx is a square symmetric m x m matrix.
 ..* The diagonal terms of Sx are the variance of particular measurement types.
@@ -198,15 +198,15 @@ The goal is summarized as follows:
 ..* Find some orthonormal matrix P where Y = PX such that Sy is diagonalized. The rows of P are the principal components of X.
 ..* We begin by rewriting Sy in terms of our variable of choice P.
 
-![Matrix Transformations](/img/covariance_matrix_3.png)
+![Matrix Transformations](/img/covariance_matrix_3.PNG)
 
 ..* A is a symmetric matrix and can also be written as below
 
-![Matrix Transformations](/img/covariance_matrix_4.png)
+![Matrix Transformations](/img/covariance_matrix_4.PNG)
 
 ..* Now comes the trick. Let’s select the matrix P to be a matrix where each row of P is an eigenvector.
 
-![Matrix Transformations](/img/covariance_matrix_5.png)
+![Matrix Transformations](/img/covariance_matrix_5.PNG)
 
 ..* So, it is evident that the choice of P diagonalizes Sy. This was the goal for PCA.
 
