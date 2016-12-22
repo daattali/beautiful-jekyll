@@ -6,16 +6,15 @@ categories: machine_learning
 tags: [machine_learning]
 bigimg: /img/computer_vision.png
 ---
-## Principal Component Analysis  
+## Principal Component Analysis
 
 This article is divided into two sections, the first section deals with the pictorial explanation of Principal Component Analysis (PCA) and the second section deals with mathematical explanation of PCA.  
----
+
 
 ### Pictorial Representation
 
-  
 
-1. **What is Principal Component Analysis?**  
+#### 1. **What is Principal Component Analysis?**  
 
 The simplest answer would be that it is an analysis of finding the principal components in the given data set.  
  
@@ -37,14 +36,13 @@ A better fit would be a horizontal line and the data points projection is show i
 
 Oh yeah, this looks much better and the data is way more spread out on this line, it has maximum variance and with more analysis we can conclude that there cannot be any other line that has maximum variance. Thus, we can say that the horizontal is the principal component for the above data set.  
 
-2. **Eigenvectors and Eigenvalues**  
+#### 2. **Eigenvectors and Eigenvalues**  
 
 In any data set, we can deconstruct the data set into eigenvectors and eigenvalues. Eigenvectors and vectors exits in pairs. Every eigenvector has a corresponding eigenvalue.
  
 When we consider the example that we previously used, **eigenvector was the direction of the line (vertical, horizontal) drawn to find the maximum variance**. An eigenvalue is just a number, it tells you how much variance exists in the data in a particular direction and in the previous example **eigenvalue is a number that tells us how the data set is spread out on the line which is an eigenvector**. 
 
 Therefore, an eigenvector with the highest eigenvalue is the **Principal Component**.
----
 
 It turns out that there are not many eigenvectors or eigenvalues in the previous example. For a fact the number of eigenvectors and eigenvalues that exist equals the number of dimensions of a data set.
 
@@ -71,7 +69,6 @@ The eigenvectors have given us a much more useful axis to frame the data set. We
 ![Data Set](/img/pc7.png)
 
 Just to make it clear, we didn’t mess with the data set, we just changed the view of angle of the data set with the new x’-y’ axis. These axes are much more intuitive to the shape of the data set. These directions give the most variation and provide us with more information. In case, there was no variation in the data set, then everything would be equal to 1 and it would have been such a boring statistic and the eigenvalue would be zero.
----
 
 
 ### Mathematical Representation 
