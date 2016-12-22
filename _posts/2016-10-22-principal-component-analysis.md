@@ -189,7 +189,10 @@ We can now define our covariance matrix **Sx**.
 * The **diagonal terms** of **Sx** are the **variance** of particular measurement types.
 * The **off-diagonal** terms of **Sx** are the **covariance** between the measurement types.
 
+
 #### 9. **Solving PCA: Eigen Vectors of Covariance Matrix**
+
+
 
 Let’s derive our first algebraic solution to PCA using linear algebra. This solution is based on the property of eigenvector decomposition.
 
