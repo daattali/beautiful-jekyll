@@ -13,7 +13,6 @@ This article is divided into two sections, the first section deals with the pict
 
 ### Pictorial Representation
 
-
 #### 1. **What is Principal Component Analysis?**  
 
 The simplest answer would be that it is an analysis of finding the principal components in the given data set.  
