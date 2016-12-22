@@ -71,5 +71,37 @@ The eigenvectors have given us a much more useful axis to frame the data set. We
 Just to make it clear, we didn’t mess with the data set, we just changed the view of angle of the data set with the new x’-y’ axis. These axes are much more intuitive to the shape of the data set. These directions give the most variation and provide us with more information. In case, there was no variation in the data set, then everything would be equal to 1 and it would have been such a boring statistic and the eigenvalue would be zero.
 
 
-### Mathematical Representation 
+### Mathematical Representation
+
+
+In this section, let’s consider the mathematics point of view to understand the PCA and learn some basic statistics along the way to achieve our goal of figuring out PCA.
+
+
+#### 1. **Mean**
+
+Mean is the average value of the entire data. Let’s consider a group of students, in order to find the mean of their age, we will add up the age of every student and divide the sum by the total number of students.
+
+![Mean](/img/mean.png)
+
+#### 2. **Variance**
+
+It is the measure of the spread of the date in the data set using the mean. When we consider the group of students example, variance is the sum of the squared difference between the age of each student and the mean age value, then the sum is divided by the number of students.
+
+![Variance](/img/variance.png)
+
+Variance can also be represented as the measure of the deviation from the mean for points in one dimension.
+
+#### 3. **Covariance**
+
+It is a measure of how much each of the dimensions vary from the mean with respect to each other.
+
+The covariance is measured between 2 dimensions to see if there is relationship between the 2 dimensions, e.g., relationship between the height and weight of students.
+
+The covariance of one dimension is variance.
+
+![covariance](/img/covariance.png)
+
+#### 1. **Mean**  
+#### 1. **Mean**  
+
 
