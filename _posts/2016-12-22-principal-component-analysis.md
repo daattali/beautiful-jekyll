@@ -4,7 +4,7 @@ title: Principal Component Analysis
 date:   2016-12-22 16:47:14 +0530
 categories: machine_learning
 tags: [machine_learning]
-bigimg: /img/computer_vision.png
+bigimg: /img/pca.png
 ---
 ## Principal Component Analysis
 
