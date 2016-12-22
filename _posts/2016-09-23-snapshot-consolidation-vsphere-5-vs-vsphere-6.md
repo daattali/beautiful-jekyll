@@ -25,6 +25,8 @@ The administrator orders to delete all snapshots on the VM.
 - **5**.The previous helper snapshot is merged into the base VMDK (in the meantime the guest writes to the new helper file)
 - **6**.Back to step 3 for a maximum of 10 iterations, at every iteration the timeout is increased (5 mins, 10 mins, 20 mins, ...)
 
+![snap-consolidate.png]({{site.baseurl}}/img/snap-consolidate.png)
+
 There we can get into an endless loop ending in a "maximum consolidate retries was exceeded for scsix:x" error in ESXi and the snapshots never consolidate for this VM.
 
 ### Why it is bad if it fails
