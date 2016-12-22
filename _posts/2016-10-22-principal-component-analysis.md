@@ -169,7 +169,7 @@ There exists no absolute scale for the noise but rather it is measured relative 
 
 A common measure is the signal-to-noise ration (SNR), or a ration of variances.
 
-![Matrix Transformations](/img/signal_to_noise.PNG)
+![Signal to Noise](/img/signal_to_noise.PNG)
 
 A high SNR (<<1) indicates high precision data, while a low SNR indicates noise contaminated data.
 
