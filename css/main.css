@@ -404,6 +404,19 @@ footer .theme-by {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .post-image, .post-image img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .post-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    float: left;
+  }
+}
 /* --- Post and page headers --- */
 
 .intro-header {
