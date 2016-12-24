@@ -37,7 +37,15 @@
       </ul>
     </div>
 
-	{% if site.avatar and (layout.show-avatar or page.show-avatar) %}
+	{% if page.image and (layout.show-avatar or page.show-avatar) %}
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="{{ site.url }} ">
+	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
+		</a>
+	  </div>
+	</div>
+	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
