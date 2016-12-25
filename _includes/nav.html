@@ -37,7 +37,15 @@
       </ul>
     </div>
 
-	{% if site.avatar %}
+	{% if page.image %}
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="{{ site.url }} ">
+	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
+		</a>
+	  </div>
+	</div>
+	{% elsif site.avatar %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
