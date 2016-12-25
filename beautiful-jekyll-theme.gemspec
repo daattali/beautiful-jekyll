@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "beautiful-jekyll-theme"
-  spec.version       = "1.0.0"
+  spec.version       = "1.1.0"
   spec.authors       = ["Dean Attali"]
   spec.email         = ["daattali@gmail.com"]
 
@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://deanattali.com/beautiful-jekyll"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README)}i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|LICENSE|README|feed)}i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.3"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
