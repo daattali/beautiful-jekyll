@@ -203,9 +203,17 @@ author:
 
 Remove the lines that you don't want to display in the footer, and change `yourname` to the correct values in the links you want to keep.
 
+#### Add an RSS feed link to the footer
+
+You can add an icon that will link to an RSS feed of your blog by including the following parameter in `_config.yml`:
+
+```yaml
+rss-footer: true
+```
+
 #### Add your website's name to the footer
 
-After all the contact info links, you can also add the name of your website by defining the` url-pretty` parameter in `_config.yml`:
+After all the contact info links, you can also add the name of your website by defining the `url-pretty` parameter in `_config.yml`:
 
 ```yaml
 url-pretty: "MyWebsite.com"
