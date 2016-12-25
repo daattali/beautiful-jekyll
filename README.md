@@ -3,7 +3,7 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
-> *Copyright 2016 [Dean Attali](http://deanattali.com). Licensed under the MIT license.*
+> *Copyright 2016 [Dean Attali](http://deanattali.com)*
 
 **Beautiful-Jekyll** is a ready-to-use Jekyll theme to help you create an awesome website quickly. Perfect for personal blogs or simple project websites, with a focus on responsive and clean design. You can look at [my personal website](http://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](https://github.com/daattali/beautiful-jekyll#showcased-users-success-stories).
 
@@ -183,6 +183,7 @@ author:
   facebook: yourname  # eg. daattali
   github: yourname    # eg. daattali
   twitter: yourname   # eg. daattali
+  telephone: yourphone     # eg. +14159998888
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   linkedin: yourname  # eg. daattali

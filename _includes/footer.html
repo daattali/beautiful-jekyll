@@ -133,6 +133,16 @@
             </a>
           </li>
           {% endif %}
+      {% if site.author.telephone %}
+          <li>
+            <a href="tel:{{ site.author.telephone }}" title="Phone">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
         </ul>
         <p class="copyright text-muted">
 	  {% if site.author.name %}
