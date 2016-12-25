@@ -166,10 +166,16 @@ Change these values to match the pages on your site. Each menu item is composed 
 
 #### Displaying an image in the navigation bar
 
-You can add an image to the navigation bar by defining the `avatar` parameter in `_config.yml`. The image should be a square (width = height).
+You can add an image to the middle of the navigation bar by defining the `avatar` parameter in `_config.yml`. The image should be a square (width = height). This image will disappear once the user scrolls down in the page.
 
 ```yaml
 avatar: "/path/to/image.png"
+```
+
+You can also place an image in the top-left corner of the navigation bar instead of your website's title. This is done with the `title-img` parameter in `_config.yml`:
+
+```yaml
+title-img: "/path/to/image.png"
 ```
 
 ### Add your name/email/social media links to the footer
