@@ -33,7 +33,7 @@ $ jekyll new ~/mysite
 To use the Beautiful-Jekyll theme, add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "beautiful-jekyll-theme"
+gem "beautiful-jekyll-theme", "1.1.1"
 ```
 
 Then add this line to your Jekyll site's `_config.yml`:
