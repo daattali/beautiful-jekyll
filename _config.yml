@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://justinas87.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,21 +14,19 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: MR. Justas
 
 # Short description of your site
-description: A virtual proof that name is awesome!
-
+Virtuali vieta mano konfiguraciniams failams
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+#  Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -43,8 +41,8 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
+  name: Justinas Sunklodas  
+  email: "just.sunklodas@gmail.com"
   facebook: yourname  # eg. daattali
   github: yourname    # eg. daattali
   twitter: yourname   # eg. daattali
@@ -65,7 +63,7 @@ footer-links-active:
   facebook: true
   email: true
   twitter: true
-  google-plus: false
+  google-plus: true
   github: true
   reddit: false
   linkedin: false
@@ -73,16 +71,16 @@ footer-links-active:
   stackoverflow: false
   snapchat: false
   instagram: false
-  youtube: false
-  spotify: false
+  youtube: true
+  spotify: true
   telephone: false
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  google: false
-  linkedin: true
+  twitter: false
+  facebook: false
+  google: true
+  linkedin: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -105,7 +103,7 @@ excerpt_length: 50
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/Vilnius"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
