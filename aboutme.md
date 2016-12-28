@@ -1,16 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Apie
+subtitle: Uzduok sau klausyma kodel tu cia ?
 ---
+Taigi, mano vardas Justinas sis puslapis skirtas asmeniniems tikslams daugiausiai konfiguraciniams failams pletojant ir dirbant ivairiuose sistemose, naudojamas tam kad palengvintu darba sau paciam. Cia bus daug klaidu nekreipsiu demesio i lietuvybe nes neturiu tam laiko. Jeigu per klaida uzsukote cia ir randate kazka naudingo  valio! Taigi galbut viena diena sutvarkysiu viską ir šito teksto nebeliks.
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
+Dėkui ir iki. :)
 
 What else do you need?
 
-### my history
+### Istorija
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Jei atvirai tai tikiuosi cia niekas dar neapsilanke:) 
