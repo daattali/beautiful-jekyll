@@ -1,3 +1,5 @@
+# docker run -p 4000:4000 -v `pwd`:/app maestroh/maestroh.github.io:v1 bash -c "bundle install; bundle exec jekyll serve"
+
 FROM mangar/jekyll:1.0
 
 MAINTAINER Marcio Mangar "marcio.mangar@gmail.com"
