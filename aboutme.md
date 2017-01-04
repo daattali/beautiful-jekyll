@@ -27,6 +27,6 @@ I hope you find some interesting articles in this blog and learn some good stuff
 I am currently in the process of preparing for the certification vSphere VCP6-DCV.  
 Click the logos to see more.  
 
-[![]({{site.baseurl}}/img/vcadcv.jpg)]({{site.baseurl}}/img/vcadcvdiplome.jpg)
+[![]({{site.baseurl}}/img/vcadcv.jpg)](https://www.youracclaim.com/badges/54135e3e-4595-4d3a-9712-0e2c129cad5d)
 
 [![]({{site.baseurl}}/img/ccnpswroute.jpg)]({{site.baseurl}}/img/ccnp.jpg)  
