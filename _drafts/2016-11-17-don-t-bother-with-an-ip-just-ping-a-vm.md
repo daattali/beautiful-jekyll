@@ -13,3 +13,32 @@ For example if a VM has 3 virtual NICs and 3 IP addresses, by pinging this VM, a
 
 ![vmping.jpg]({{site.baseurl}}/img/vmping.jpg)
 
+It can be used in several ways.
+
+Ping a single VM:
+
+```Powershell
+Get-VM My-VM | VMping
+```
+
+Ping the VMs in a folder (foreach needed when more than 1 objects input):
+
+```Powershell
+Get-VM -Location MyFolder | Foreach-object {$_ | VMPing}
+```
+
+Issue 2 pings to all the VMs of a host indefinitely:
+
+```Powershell
+While ($true) {Get-VMhost Host10 | Get-VM | Foreach-object {$_ | VMping -count 2}}
+```
+
+These are just a few examples of what it can be used for.
+
+The parameters that can be set:
+
+- **Count** : Number of pings
+- **Delayms** : Time in ms between 2 pings
+- **Timeout** : Timeout ...
+- **Continuous** : doesn't stop pinging (can't be used with count)
+- **enableIPv6** : If you want to ping the VM on its IPv6 addresses as well
