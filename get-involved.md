@@ -32,6 +32,8 @@ and request Slack access.
 
 ## Any questions?
 
-<div style="text-align:center"><img width="600" height="337" src="/img/davis-s-pumpkins-600x337.jpg" /></div>
+<div style="text-align:center">
+<a href="https://www.youtube.com/watch?v=rS00xWnqwvI"><img width="600" height="337" src="/img/davis-s-pumpkins-600x337.jpg" /></a>
+</div>
 
 [Contact us.](mailto:info@tx10indivisible.us)
