@@ -3,11 +3,11 @@ layout: post
 published: true
 title: 'Don''t bother with IPs, ping VMs'
 ---
-One thing that we all do quite regularly is pinging servers. In a medium/big environment there can be a lot of VMs and I can't remember all the IP address or even the hostnames, which is annoying when I want to ping one of them. It's still easy to find on the web client or with PowerCLI but it would be even easier to just **ping the VM**.
+One thing that we all do quite regularly is pinging servers. In a medium/big environment there can be a lot of VMs and I can't remember all the IP addresses or even the hostnames, which is annoying when I want to ping one of them. It's still easy to find on the web client or with PowerCLI but it would be even easier to just **ping the VM**.
 
 The purpose of this script is to ping a VM object in PowerCLI on all its IP addresses. Of course the VMware Tools need to be installed for it to work.
 
-Instead of looking for what is the IP or the hostname of this VM, we just **ping it using Get-VM**.
+Instead of looking for what is the IP or the hostname of this VM, we just **ping a VM object**.
 
 For example if a VM has 3 virtual NICs and 3 IP addresses, by pinging this VM, a ping will be issued to all 3 IPs.
 
@@ -18,7 +18,8 @@ For example if a VM has 3 virtual NICs and 3 IP addresses, by pinging this VM, a
 Ping a single VM:
 
 ```Powershell
-Get-VM My-VM | VMping
+Get-VM My-VM | VMPing  
+VMPing My-VM
 ```
 
 Ping the VMs in a folder (foreach needed when more than 1 objects input):
@@ -37,13 +38,15 @@ These are just a few examples of what it can be used for.
 
 ## The parameters
 
-- **Count** : Number of pings
-- **Delayms** : Time in ms between 2 pings
-- **Timeout** : Timeout ...
-- **Continuous** : doesn't stop pinging (can't be used with count)
-- **enableIPv6** : If you want to ping the VM on its IPv6 addresses as well
+- **-Count or -n** : Number of pings
+- **-Delayms** : Time in ms between 2 pings
+- **-Timeout or -w** : Timeout ...
+- **-Continuous or -t** : doesn't stop pinging (can't be used with count)
+- **-enableIPv6** : If you want to ping the VM on its IPv6 addresses as well
 
 ## Script
+
+Available [here](https://github.com/vxav/Scripting/blob/master/VMPing.ps1).
 
 ```Powershell
 Function VMPing {
