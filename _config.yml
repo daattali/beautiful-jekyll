@@ -48,7 +48,8 @@ avatar: "/img/lincoln-100x100.jpg"
 author:
   name: TX-10 Indivisible Team
   email: "info@tx10indivisible.us"
-  #facebook: yourname  # eg. daattali
+  # our footer.html is hacked to allow a URL value for "facebook"
+  facebook: https://www.facebook.com/groups/381205945554014/
   #github: yourname    # eg. daattali
   #twitter: yourname   # eg. daattali
   #reddit: yourname    # eg. daattali
@@ -65,7 +66,7 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: false
+  facebook: true
   email: true
   twitter: false
   google-plus: false
@@ -89,7 +90,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "tx10indivisible.us"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "www.tx10indivisible.us"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -108,7 +109,7 @@ excerpt_length: 50
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
