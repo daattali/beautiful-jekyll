@@ -20,3 +20,5 @@ The REINS act breaks the separation of powers, and sets up Washington for a slow
 Many civic groups, such as the League of Women Voters, [oppose the REINS Act](http://lwv.org/content/league-opposes-hr-26-reins-act-2017).
 
 This is scheduled for an immenent vote. Please contact Rep. McCaul and ask him to oppose the REINS act.
+
+**UPDATE** The REINS Act past in the house late tonight. Next it moves to the Senate.
