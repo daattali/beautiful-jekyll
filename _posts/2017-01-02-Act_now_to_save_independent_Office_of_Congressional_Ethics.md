@@ -20,3 +20,5 @@ for the Austin office is: 512-473-2357
 
 This is an important issue to press because the incoming administration
 ran on a "drain the swamp" promise and this is the opposite.
+
+**UPDATE** The REINS Act passed in the House late this evening. Now it moves to the Senate.
