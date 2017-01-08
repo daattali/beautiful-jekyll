@@ -95,6 +95,9 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
 
+# Google Tag Manager ID
+#gtm: ""
+
 # Facebook App ID
 # fb_app_id: ""
 
