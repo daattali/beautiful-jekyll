@@ -12,6 +12,8 @@ title: Make Contact
 
 -- [The Indivisible Guide](https://www.indivisibleguide.com/download-the-guide)
 
+<hr class="small" />
+
 Things to keep in mind when contacting your MoC:
 
 * In-person visits carry the most weight.
@@ -20,9 +22,15 @@ Things to keep in mind when contacting your MoC:
 * Email is of little help. (Not zero, but very little.)
 * Petitions are no help.
 
-PLACEHOLDER - add links to info about telephoning a MoC
+Some points to remember when phoning your MoC:
 
-<a name="mccaul"></a>
+* This is going to be easy ... even if you're phone phobic.
+* The person who answers will be polite and non-confrontational. Their job simply is to record your opinion, where you are calling from, and pass that on to the MoC.
+* Stick to regular business hours to increase the chances of getting a live person.
+* If you get a busy signal try again straight away. They often clear up in seconds.
+* If you get voicemail you can leave a message, but it's always better to talk to a staff person.
+* Be sure you clearly express a position. Something like: "Please ask [MoC] to support/oppose [ISSUE].
+* Stick to one issue. The way they log calls may get confused if you raise multiple matters.
 
 ## Rep. Michael McCaul
 
