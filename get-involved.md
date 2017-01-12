@@ -15,24 +15,23 @@ his supporters.
 
 ### Join our Facebook Group
 
-If you are a Facebook user please join the [TX-10 Indivisible Facebook
-Group](https://www.facebook.com/groups/381205945554014/).  We post our
-announcements and "call to action" notices there. We also post selected
-links of interest.  It's a closed group so the first time you visit that
-link you'll get
+If you're a Facebook user, you can join the [TX-10 Indivisible Facebook
+Group](https://www.facebook.com/groups/381205945554014/), where we post our
+announcements and "call to action" notices. We also share selected
+links of interest. It's a closed group, and you can request access from the above-linked page. 
 
-Once you join the Facebook group please be sure you click "Notifications"
+After you join the Facebook group, be sure to click "Notifications"
 in the page banner and select "All Posts". Otherwise you'll miss our
-annoucements. The group volume is low so you won't be flooded.
+announcements. The group volume is low so you won't be flooded.
 
 ### Take Action!
 
-Follow our announcements.  We will post action alerts with steps you can take.
+Follow our announcements. We will post action alerts with steps you can take.
 
 ### Get Slack
 
 We organize our work through an online message system called Slack.
-If you want to help with planning and organizing, [contact our admin
+If you want to help us with planning and organizing, [contact our admin
 team](mailto:info@tx10indivisible.us) and request Slack access.
 
 ### Connect with Indivisible Team
@@ -43,9 +42,8 @@ Their occasional mailings are informative.
 
 ### Check out Indivisible Austin
 
-Ready for more? Read the Indivisible Austin [Take Action
-Now](http://www.indivisibleaustin.com/take-action-now/) page.  It has
-many ideas for action.
+To discover even more ways you can act effectively, check out the [Take Action
+Now](http://www.indivisibleaustin.com/take-action-now/) page of the Indivisible Austin site. The page includes a helpful list of resources and ideas for action.
 
 
 ## Any questions?
