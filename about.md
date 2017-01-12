@@ -13,6 +13,8 @@ title: About TX-10 Indivisible
 
 -- [The Indivisible Guide](https://www.indivisibleguide.com/download-the-guide)
 
+<hr class="small" />
+
 We are residents of the [Texas 10th Congressional District](https://en.wikipedia.org/wiki/Texas%27s_10th_congressional_district),
 represented by [Rep.  Michael McCaul](http://mccaul.house.gov/), and we oppose the radical Trump agenda.
 
