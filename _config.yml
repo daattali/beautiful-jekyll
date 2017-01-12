@@ -25,10 +25,7 @@ navbar-links:
   Indivisible Sites:
     - Indivisible Guide: "https://www.indivisibleguide.com/"
     - Indivisible Austin: "http://www.indivisibleaustin.com/"
-    - TX17 Indivisible: "http://indivisibletx17.com/"
-    - TX21 Indivisible: "https://twitter.com/TX21Indivisible"
-    - TX25 Indivisible: "https://www.facebook.com/groups/1018751064935612/"
-    - Round Rock Indivisible: "https://twitter.com/RRIndivisible"
+    - Austin-area Groups: "http://www.indivisibleaustin.com/take-action-now/congressional-districts/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
