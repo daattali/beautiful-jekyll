@@ -57,15 +57,16 @@ Here is how to create a news article.
 
 * Copy and paste this into the file:
 
-> ---
-> layout: post
-> title: Article title here
-> subtitle: Optional subtitle (delete if you don't need one)
-> tags: [tag1, tag2, or_delete_line_if_no_tags]
-> ---
->
-> Just type in your article, using simple "markdown" syntax.
+```yaml
+---
+layout: post
+title: Article title here
+subtitle: Optional subtitle (delete if you don't need one)
+tags: [tag1, tag2, or_delete_line_if_no_tags]
+---
 
+Just type in your article, using simple "markdown" syntax.
+```
 * Click "Commit new file".
 
 * Browse to your github.io website. Your new article should be posted!
