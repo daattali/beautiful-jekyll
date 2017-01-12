@@ -3,10 +3,6 @@ layout: page
 title: Frequently Asked Questions
 ---
 
-### Not sure I'm in TX-10. What district am I in?
-
-Check here: [https://www.govtrack.us/congress/members/TX](https://www.govtrack.us/congress/members/TX)
-
 
 ### What does the Texas 10th Congressional District look like?
 
@@ -17,13 +13,28 @@ src="https://www.govtrack.us/congress/members/embed/mapframe?state=tx&district=1
 
 Bigger map [here](https://www.govtrack.us/congress/members/TX/10).
 
-This is one of those crazy gerrymandered districts that stretches from Austin and Pflugerville, through
-a number of rural areas, and ending around Katy and Tomball.
+
+### Not sure I'm in TX-10. What district am I in?
+
+Check here: [https://www.govtrack.us/congress/members/TX](https://www.govtrack.us/congress/members/TX)
 
 
 ### I'm not in TX-10. Is there an Indivisible group in my district?
 
-Maybe. Check the Indivisible Austin [Congressional Districts](http://www.indivisibleaustin.com/take-action-now/congressional-districts/) page.
+Probably. Find an Austin-area group on the Indivisible Austin [Congressional Districts](http://www.indivisibleaustin.com/take-action-now/congressional-districts/) page. Or, search the Indivisible Team [local group directory](https://www.indivisibleguide.com/local-action-groups).
 
-If one doesn't exist yet -- start it! Contact [ask@indivisibleAustin.com](mailto:ask@indivisibleAustin.com) for help.
+
+### What's the relationship between TX-10 Indivisible, Indivisible Austin, Indivisible Team, and all the little Indivisibles?
+
+_TX-10 Indivisible_ is distinct from all these other groups, with an
+objective to act in the Texas 10th Congressional District.
+
+The Indivisible movement is a true grass-roots, decentralized movement.
+Each organization plans and acts independently.
+
+But we work closely with our peer district groups and the Austin group.
+We communicate with the national group as well as other localities.
+
+The network of independent Indivisible organizations work to pool resources
+and coordinate actions.
 
