@@ -1,8 +1,6 @@
 ---
 published: true
 ---
-# Syncing a forked git repository
-
 This post will describe how to sync a forked repo with it's parent repo. This can be applied for any branch name. We will use master as our branch to merge from the upstream repository.
 
 ## Configuring a remote fork
