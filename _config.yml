@@ -1,4 +1,4 @@
-# --- Serving options --- #
+# --- General options --- #
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
@@ -21,10 +21,6 @@ description: Welcome to my blog! This is where I talk about all things tech!
 
 # --- Navigation bar options --- #
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
-
 # List of links in the navigation bar
 navbar-links:
   Home: "http://joeyjiron06.github.io"
@@ -43,27 +39,57 @@ author:
   linkedin: in/joeyjiron  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
 
+
 # Select which links to show in the footer
 footer-links-active:
   rss: false
   facebook: true
   email: true
   twitter: true
+  google-plus: false
   github: true
   linkedin: true
+  reddit: false
+  linkedin: false
+  xing: false
   stackoverflow: false
+  snapchat: false
+  instagram: false
+  youtube: false
+  spotify: false
+  telephone: false
+
+# Select which share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  google: false
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 #url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
-
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
+
+# Google Tag Manager ID
+#gtm: ""
+
+# Facebook App ID
+# fb_app_id: ""
+
+# Excerpt Word Length
+# Truncates the excerpt to the specified number of words on the index page
+excerpt_length: 50
+
+# Character used to separate site title and description in HTML document title
+# and RSS feed title
+title-separator: "-"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -74,6 +100,9 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+kramdown:
+  input: GFM
+
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
@@ -83,12 +112,17 @@ defaults:
     values:
       layout: "post"
       comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
       path: "" # all files
     values:
       layout: "page"
       show-avatar: true
+
+
+# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
+link-tags: false
 
 # Exclude these files from production site
 exclude:
@@ -138,11 +172,20 @@ prose:
           help: "Enter date of post."
           placeholder: "yyyy-mm-dd"
           alterable: true
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Add a thumbnail image to your post."
+          placeholder: "Thumbnail"
+          alterable: true
       - name: "published"
         field:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
+gems:
+  - jekyll-paginate
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
