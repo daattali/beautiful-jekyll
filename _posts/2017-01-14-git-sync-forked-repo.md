@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Syncing a forked git repository
 
