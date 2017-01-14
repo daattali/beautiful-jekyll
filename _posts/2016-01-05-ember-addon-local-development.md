@@ -3,7 +3,7 @@ layout: post
 title: Developing An Ember Addon Locally
 published: true
 subtitle: null
-date: ""
+date: "2016-01-05"
 ---
 
 
