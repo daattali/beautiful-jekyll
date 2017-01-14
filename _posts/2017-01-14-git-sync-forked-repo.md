@@ -56,7 +56,7 @@ Switched to branch 'master'
 Merge the changes from the upstream to your local master
 
 ```
-$git merge upstream/master
+$ git merge upstream/master
 Updating a422352..5fdff0f
 Fast-forward
  README                    |    9 -------
@@ -68,5 +68,5 @@ Fast-forward
 
 That's it! Now your local master branch is in sync with the upstream repo.
 
-Credit given to the github tutorials [https://help.github.com/articles/configuring-a-remote-for-a-fork/](configuring a remote for a fork) 
-and [https://help.github.com/articles/syncing-a-fork/](syncing a fork)
+Credit given to the github tutorials [configuring a remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/) 
+and [syncing a fork](https://help.github.com/articles/syncing-a-fork/)
