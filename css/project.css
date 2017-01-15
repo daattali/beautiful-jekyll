@@ -1,0 +1,28 @@
+
+/* PROJECT PREVIEW */
+.project-preview {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.project-preview__title {
+  padding: 20px;
+}
+
+
+/* PROJECT */
+.project-gallery {
+  position: relative;
+  height : 405px;
+}
+
+.project-gallery__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}

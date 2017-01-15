@@ -37,6 +37,7 @@ avatar: "/img/avatar-icon.png"
 collections:
   projects:
     layout: "project"
+    output: true
 
 
 

@@ -2,13 +2,27 @@
 layout: base
 ---
 
-{% include header.html type="post" %}
+
+<link rel="stylesheet" href="/css/project.css">
+
+{% include header.html type="page" %}
 
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-      <div>Hello Project!</div>
+
+      <div class="project-gallery">
+        {% for image in page.images %}
+          <img src="{{ image.path }}" alt="{{ image.title }}" class="project-gallery__image"/>
+        {% endfor %}
+      </div>
+
+      <div>{{ content }}</div>
+
+
+
+
 
       {% if page.social-share %}
         {% include social-share.html %}
