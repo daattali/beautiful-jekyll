@@ -17,6 +17,7 @@
 .project-gallery {
   position: relative;
   height : 405px;
+  z-index: 10;
 }
 
 .project-gallery__image {
@@ -26,4 +27,46 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+/* ARROW */
+.project-gallery__arrow {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.25);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.project-gallery__arrow-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: solid 4px white;
+  border-left: solid 4px white;
+  transform : translateY(-50%) rotate(-45deg);
+}
+
+
+/* LEFT ARROW */
+.project-gallery__arrow--left {
+  top: 0;
+  left: 0;
+}
+
+.project-gallery__arrow-icon--left {
+  margin-left: 10px;
+}
+
+/* RIGHT ARROW */
+.project-gallery__arrow--right {
+  top: 0;
+  right: 0;
+}
+
+.project-gallery__arrow-icon--right {
+  transform : translateY(-50%) rotate(135deg);
 }

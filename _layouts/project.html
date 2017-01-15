@@ -1,5 +1,13 @@
 ---
 layout: base
+
+# fixme this is an ugly solution. just a copy and paste from base. we should be able
+# to merge the two
+common-js:
+  - "/js/jquery-1.11.2.min.js"
+  - "/js/bootstrap.min.js"
+  - "/js/main.js"
+  - "/js/project.js"
 ---
 
 
@@ -13,9 +21,17 @@ layout: base
 
 
       <div class="project-gallery">
+        <div class="project-gallery__arrow project-gallery__arrow--left">
+            <div class="project-gallery__arrow-icon project-gallery__arrow-icon--left"></div>
+        </div>
+
         {% for image in page.images %}
-          <img src="{{ image.path }}" alt="{{ image.title }}" class="project-gallery__image"/>
+          <img src="{{ image.path }}" alt="{{ image.title }}" class="project-gallery__image" data-img-index="{{ forloop.index }}"/>
         {% endfor %}
+
+        <div class="project-gallery__arrow project-gallery__arrow--right">
+          <div class="project-gallery__arrow-icon project-gallery__arrow-icon--right"></div>
+        </div>
       </div>
 
       <div>{{ content }}</div>
