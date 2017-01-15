@@ -8,12 +8,10 @@ css:
 
 
 {% for project in site.projects %}
-  <div class="project-preview">
-    <div>
-      <img src="{{ project.images.first.path }}" alt="{{ project.title }}"/>
-      <div class="project-preview__title">
-        {{ project.title }}
-      </div>
+  <a class="project-preview" href="{{ project.url }}">
+    <img src="{{ project.images.first.path }}" alt="{{ project.title }}"/>
+    <div class="project-preview__title">
+      {{ project.title }}
     </div>
-  </div>
+  </a>
 {% endfor %}

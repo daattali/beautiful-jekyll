@@ -1,6 +1,7 @@
 
 /* PROJECT PREVIEW */
 .project-preview {
+  display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: white;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
