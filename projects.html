@@ -1,0 +1,12 @@
+---
+layout: page
+title: Projects
+subtitle: These are the various projects I have worked on over the years
+---
+
+
+{% for project in site.projects %}
+  <div class="project-preview">
+    {{project.title}}
+  </div>
+{% endfor %}
