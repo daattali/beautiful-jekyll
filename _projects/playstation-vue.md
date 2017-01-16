@@ -25,12 +25,28 @@ images:
 ---
 
 
-# FireTV Hybrid Web Application
+# Web Application
+
+I worked as a front-end developer on the web platform for Playstation Vue. I worked to build the application from ground zero all the way to production and continued to maintain it and add new features.
+
+### Roles and Responsibilities
+
+- Architected and implemented the Auth System using OAuth
+- Architected and implemented the Video Player System for HLS video playback
+- Implemented various business rules for error scenarios, live program transitions, and more
+- Setup selenium testing environment for Automated testing
+- Used Ember.js to build reusable UI components
+- Used ES6 to write scalable and modular Javascript code
+
+
+
+
+# FireTV Hybrid Application
 
 I worked as a front-end developer on the FireTV platform or the Playstation Vue product. The project was a hybrid Web/Android application. I worked in both layers of the application.
 
 
-## Roles and Responsibilities
+### Roles and Responsibilities
 
 - Developed a protocol for communicating between the Android layer and Javascript web app
 - Wrote various UI components for the Video Player as well as detail pages

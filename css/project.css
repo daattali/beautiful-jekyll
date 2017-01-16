@@ -6,6 +6,13 @@
   background-color: white;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
   cursor: pointer;
+  width: 200px;
+}
+
+@media screen and (min-width: 340px) {
+  .project-preview {
+    width: 300px;
+  }
 }
 
 .project-preview__title {
