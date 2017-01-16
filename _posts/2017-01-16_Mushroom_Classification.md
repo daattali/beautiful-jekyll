@@ -3,9 +3,6 @@ layout: post
 title: "Mushroom Classification - What makes them edible?"
 tags: [CART, RandomForest, Classification, SVM]
 ---
-
-
-
 -   [Import the data](#import-the-data)
 -   [Tidy the data](#tidy-the-data)
 -   [Understand the data](#understand-the-data)
