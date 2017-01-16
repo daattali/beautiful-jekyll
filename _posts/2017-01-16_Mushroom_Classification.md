@@ -147,7 +147,7 @@ Understand the data
 ===================
 
 This is the circular phase of our dealing with data. This is where each of the transforming, visualizing and modeling stage reinforce each other to create a better understanding.
-![data workflow](data_workflow.png)
+![data workflow](Mushroom_files/figure-markdown_github/data_workflow.png)
 
 A. Transform the data
 ---------------------
@@ -198,7 +198,8 @@ ggplot(mushroom, aes(x = cap_surface, y = cap_color, col = edibility)) +
                      values = c("green", "red"))
 ```
 
-![](Mushroom_files/figure-markdown_github/unnamed-chunk-5-1.png) If we want to stay safe, better bet on *fibrous* surface. Stay especially away from *smooth* surface, except if they are purple or green.
+![](Mushroom_files/figure-markdown_github/unnamed-chunk-5-1.png) 
+If we want to stay safe, better bet on *fibrous* surface. Stay especially away from *smooth* surface, except if they are purple or green.
 
 ``` r
 ggplot(mushroom, aes(x = cap_shape, y = cap_color, col = edibility)) + 
@@ -207,7 +208,8 @@ ggplot(mushroom, aes(x = cap_shape, y = cap_color, col = edibility)) +
                      values = c("green", "red"))
 ```
 
-![](Mushroom_files/figure-markdown_github/unnamed-chunk-6-1.png) Again, in case one don't know about mushroom, it is better to stay away from all shapes except maybe for *bell* shape mushrooms.
+![](Mushroom_files/figure-markdown_github/unnamed-chunk-6-1.png) 
+Again, in case one don't know about mushroom, it is better to stay away from all shapes except maybe for *bell* shape mushrooms.
 
 ``` r
 ggplot(mushroom, aes(x = gill_color, y = cap_color, col = edibility)) + 
@@ -225,7 +227,8 @@ ggplot(mushroom, aes(x = edibility, y = odor, col = edibility)) +
                      values = c("green", "red"))
 ```
 
-![](Mushroom_files/figure-markdown_github/unnamed-chunk-7-2.png) Odor is defintely quite an informative predictor. Basically, if it smells *fishy*, *spicy* or *pungent* just stay away. If it smells like *anise* or *almond* you can go ahead. If it doesn't smell anything, you have better chance that it is edible than not.
+![](Mushroom_files/figure-markdown_github/unnamed-chunk-7-2.png) 
+Odor is defintely quite an informative predictor. Basically, if it smells *fishy*, *spicy* or *pungent* just stay away. If it smells like *anise* or *almond* you can go ahead. If it doesn't smell anything, you have better chance that it is edible than not.
 
 TO DO: put a comment on what we see TO DO: put a mosaic graph
 
