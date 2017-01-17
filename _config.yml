@@ -18,10 +18,12 @@ description: Resisting the Trump Agenda in Central Texas
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
-  Get Involved: "get-involved"
-  Make Contact: "make-contact"
-  FAQ: "faq"
+  More:
+    - About: "about"
+    - Blog: "posts"
+    - Get Involved: "get-involved"
+    - Make Contact: "make-contact"
+    - FAQ: "faq"
   Indivisible Sites:
     - Indivisible Guide: "https://www.indivisibleguide.com/"
     - Indivisible Austin: "http://www.indivisibleaustin.com/"
