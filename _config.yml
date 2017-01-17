@@ -18,9 +18,9 @@ description: Resisting the Trump Agenda in Central Texas
 
 # List of links in the navigation bar
 navbar-links:
+  About: "about"
+  News: "posts"
   More:
-    - About: "about"
-    - Blog: "posts"
     - Get Involved: "get-involved"
     - Make Contact: "make-contact"
     - FAQ: "faq"
