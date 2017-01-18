@@ -24,9 +24,20 @@ After you join the Facebook group, be sure to click "Notifications"
 in the page banner and select "All Posts". Otherwise you'll miss our
 announcements. The group volume is low so you won't be flooded.
 
+### Follow us on Twitter
+
+If you're a Twitter user, follow [@TX10Indivisible](https://twitter.com/TX10Indivisible).
+
+Please retweet and comment as appropriate and help amplify our social media message.
+
 ### Take Action!
 
-Follow our announcements. We will post action alerts with steps you can take.
+Follow our announcements and take action. Our announcements are posted
+to the Facebook group, on Twitter, and on our website.
+
+And always feel empowered to take action on your own. If you join our
+Slack discussion forum (below) you can share your ideas and connect with
+other motivated activists.
 
 ### Get Slack
 
@@ -42,8 +53,11 @@ Their occasional mailings are informative.
 
 ### Check out Indivisible Austin
 
-To discover even more ways you can act effectively, check out the [Take Action
-Now](http://www.indivisibleaustin.com/take-action-now/) page of the Indivisible Austin site. The page includes a helpful list of resources and ideas for action.
+To discover even more ways you can act effectively, check out the
+[Take Action Now](http://www.indivisibleaustin.com/take-action-now/)
+page of the Indivisible Austin site. The page includes a helpful list
+of resources and ideas for action. You also can sign up for their
+action alerts.
 
 
 ## Any questions?
