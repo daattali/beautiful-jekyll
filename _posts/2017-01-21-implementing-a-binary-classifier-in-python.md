@@ -4,7 +4,7 @@ title: Implementing a Binary Classifier in Python
 date:   2017-01-21 16:47:14 +0530
 categories: machine_learning
 tags: [machine_learning]
-bigimg: /img/neuron_model.jpg
+bigimg: /img/neuron_model.jpeg
 ---
 
 ## Implementing a Binary Classifier or a Perceptron in Python
