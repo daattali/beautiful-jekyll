@@ -7,44 +7,43 @@ tags: [machine_learning]
 bigimg: /img/neuron_model.jpg
 ---
 
-## Implementing a Binary Classifier or a Perceptron in Python
+## Implementing a Binary Classifier in Python
 
-Machine Learning (ML), you might have got accoustmed to the name by now as it's being frequently mentioned in all the industries that involves any kind of generation of data. 
-
-ML is playing a key role in a wide range of critical applications, such as Data Mining, Natural Langugage Processing, Image Recognition and others. ML provides potential solutions in all above mentioned domains and more, it's surely going to be a pillar of our future civilization. 
+Machine Learning (ML) is playing a key role in a wide range of critical applications, such as Data Mining, Natural Language Processing, Image Recognition and others. ML provides potential solutions in all above mentioned domains and more, it's surely going to be a pillar of our future civilization. 
 
 ML can be intimidating for a newcomer. The concept of ML might be quite abstract and the newcomer might be bombarding himself with multiple questions. One big question being, "How does it work?".
 
-In order to explain this, I decided to write a Binary Classifier or a Perceptron from scratch. I will not be making use of *Scikit-learn* in this post. The imperative of this post is understand the core working principle of a ML algorithm.
+In order to explain this, I decided to write a Binary Classifier from scratch. I will not be making use of *Scikit-learn* in this post. The imperative of this post is to understand the core working principle of an ML algorithm.
 
 ### What is a Binary Classifier?
 
-Let's consider a scenario where you are told to seperate a basket full of Apples and Mangoes in to two seperate baskets.
+Let's consider a scenario where you are told to seperate a basket full of Apples and Mangoes into two seperate baskets.
 
 What do you do?
 -   You might look at the color
 -   You might look at the shape
--   You might feel the difference in the weight 
+-   You might feel the difference in the weights  
 
 Afer you find the difference between the two, then you'll seperate them.
 
 Now, let's explain Binary Classifier from the above scenario.
 
 1. Firstly, you get the data to solve your problem. (Basket full of Apples and Mangoes)
-2. Secondly, you create a feature set, which uniquely defines each data. (Your assumptions like color, size, weight)
-3. Thirdly, you are able to label or categorize each data. (Apple or Orange)
-4. Fourthly, you have learnt to differentiate the data during the entire process. (In future, you'll be able to differentiate between Apple and Orange)
+2. Secondly, you create a feature set, which uniquely defines each data. (Your assumptions like color, size, weights)
+3. Thirdly, you are able to label or categorize each data. (Apple or Mango)
+4. Fourthly, you have learnt to differentiate the data during the entire process. (In future, you'll be able to differentiate between an Apple and a Mango)
 
 A classifier in Machine Learning is an algorithm, that will determine the class to which the input data belongs to based on a set of features.
 
 There are three types of problems in Machine Learning:
+
 1. *Supervised Learning*
 2. *Unsupervised Learning*
 3. *Reinforcement Learning*
 
 A Binary Classifier is an instance of Supervised Learning. In Supervised Learning we have a set of input data and a set of labels, our task is to map each data with a label. 
 
-A Binary Classifier classifies elements into two groups, either Zero or One.
+A Binary Classifier classifies elements into two groups, either **Zero** or **One**.
 
 ### Machine Learning Model
 
