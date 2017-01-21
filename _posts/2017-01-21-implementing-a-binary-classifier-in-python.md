@@ -76,8 +76,7 @@ Steps involved in Data Preprocessing:
 
 Once you have your dataset after preprocessing, then it's time to select a *learning algorithm* to perform your desired task. In our case it's *Binary Classifier or a Perceptron*. 
 
-Parameters to consider, while choosing a learning algorithm:
-
+Parameters to consider, while choosing a learning algorithm:  
 1. *Accuracy*
 2. *Training Time*
 3. *Linearity*
@@ -86,18 +85,16 @@ Parameters to consider, while choosing a learning algorithm:
 
 #### Evaluation
 
-The metrics that you choose to evaluate the machine learning algorithm are very important.
+The metrics that you choose to evaluate the machine learning algorithm are very important. The choice of metrics influences how the performance of machine learning is measured and compared. 
 
-The choice of metrics influences how the performance of machine learning is measured and compared. 
-
-Classification Metrics
+##### Classification Metrics  
 1. *Classification Accuracy*
 2. *Logarithmic Loss*
 3. *Area Under ROC Curve*
 4. *Confusion Matrix*
 5. *Classification Report*
 
-Regression Metrics
+##### Regression Metrics  
 1. *Mean Absolute Error*
 2. *Mean Squared Error*
 3. *R-Squared*
