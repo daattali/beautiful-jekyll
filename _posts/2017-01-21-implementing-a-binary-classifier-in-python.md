@@ -1,3 +1,12 @@
+---
+layout: post
+title: Implementing a Binary Classifier in Python
+date:   2017-01-21 16:47:14 +0530
+categories: machine_learning
+tags: [machine_learning]
+bigimg: /img/pca.jpg
+---
+
 ## Implementing a Binary Classifier or a Perceptron in Python
 
 Machine Learning (ML), you might have got accoustmed to the name by now as it's being frequently mentioned in all the industries that involves any kind of generation of data. 
