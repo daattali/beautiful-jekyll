@@ -50,6 +50,7 @@ A Binary Classifier is an instance of Supervised Learning. In Supervised Learnin
 ### Machine Learning Model
 
 Machine Learning model comprises of four steps:
+
 1. *Data Preprocessing*
 2. *Learning*
 3. *Evaluation*
@@ -57,24 +58,26 @@ Machine Learning model comprises of four steps:
 
 #### Data Preprocessing
 
-As Machine Learning algorithms learn from the data, we are obliged to feed them the right kind of data. So, the step towards achieving it is via Data Preprocessing.
+As Machine Learning algorithms learn from the data, we are obliged to feed them the right kind of data. So, the step towards achieving that is via *Data Preprocessing*.
 
-Data Preprocessing is a data mining technique that involves transforming the raw data into an understandable format. Real-world data is often incomplete, noisy or inconsistent and above all it might be unstructured.
+Data Preprocessing is a data mining technique that involves transforming the raw data into an understandable format. Real-world data is often incomplete, noisy, inconsistent or unreliable and above all it might be unstructured.
 
-In simple terms, you need to groom the raw data according to your requirement.
+In simple terms, Data Preprocessing implies grooming the raw data according to your requirement using certain techniques.
 
 Steps involved in Data Preprocessing:
-1. *Data Cleaning* - Fill in or missing values, detect and remove noisy data and outliers.
+
+1. *Data Cleaning* - Fill in the missing values, detect and remove noisy data and outliers.
 2. *Data Transformation* - Normalize data to reduce dimensions and noise.
 3. *Data Reduction* - Sample data records or attributes for easier data handling.
 4. *Data Discretization* - Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.
-5. *Text Cleaning* - remove embedded characters which may cause data misalignment, for e.g., embedded tabs in a tab-separated data file, embedded new lines which may break records, etc.
+5. *Text Cleaning* - Remove embedded characters which may cause data misalignment, for e.g., embedded tabs in a tab-separated data file, embedded new lines which may break records, etc.
 
 #### Learning 
 
 Once you have your dataset after preprocessing, then it's time to select a *learning algorithm* to perform your desired task. In our case it's *Binary Classifier or a Perceptron*. 
 
 Parameters to consider, while choosing a learning algorithm:
+
 1. *Accuracy*
 2. *Training Time*
 3. *Linearity*
