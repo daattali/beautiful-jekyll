@@ -9,15 +9,17 @@ bigimg: /img/neuron_model.jpg
 
 ## Implementing a Binary Classifier in Python
 
-Machine Learning (ML) is playing a key role in a wide range of critical applications, such as Data Mining, Natural Language Processing, Image Recognition and others. ML provides potential solutions in all above mentioned domains and more, it's surely going to be a pillar of our future civilization. 
+Machine Learning (ML) is playing a key role in a wide range of critical applications, such as Computer Vision, Data Mining, Natural Language Processing, Speech Recognition and others. ML provides potential solutions in all of the above mentioned domains and more, it's surely going to be the the driving force of our future digital civilization. 
 
-ML can be intimidating for a newcomer. The concept of ML might be quite abstract and the newcomer might be bombarding himself with multiple questions. One big question being, "How does it work?".
+ML can be a bit intimidating for a newcomer. The concept of ML might be quite abstract and the newcomer might be bombarding himself with multiple questions. One big question being, "How does it work?".
 
 In order to explain this, I decided to write a Binary Classifier from scratch. I will not be making use of *Scikit-learn* in this post. The imperative of this post is to understand the core working principle of an ML algorithm.
 
 ### What is a Binary Classifier?
 
-Let's consider a scenario where you are told to seperate a basket full of Apples and Mangoes into two seperate baskets.
+Let's consider a scenario where you are told to seperate a basket full of Apples and Oranges into two seperate baskets.
+
+![Data Set](/img/apples-and-oranges.png) 
 
 What do you do?
 -   You might look at the color
@@ -28,10 +30,10 @@ Afer you find the difference between the two, then you'll seperate them.
 
 Now, let's explain Binary Classifier from the above scenario.
 
-1. Firstly, you get the data to solve your problem. (Basket full of Apples and Mangoes)
+1. Firstly, you get the data to solve your problem. (Basket full of Apples and Oranges)
 2. Secondly, you create a feature set, which uniquely defines each data. (Your assumptions like color, size, weights)
-3. Thirdly, you are able to label or categorize each data. (Apple or Mango)
-4. Fourthly, you have learnt to differentiate the data during the entire process. (In future, you'll be able to differentiate between an Apple and a Mango)
+3. Thirdly, you are able to label or categorize each data. (Apple or Orange)
+4. Fourthly, you have learnt to differentiate the data during the entire process. (In future, you'll be able to differentiate between an Apple and a Orange)
 
 A classifier in Machine Learning is an algorithm, that will determine the class to which the input data belongs to based on a set of features.
 
