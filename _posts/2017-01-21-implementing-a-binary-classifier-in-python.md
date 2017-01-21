@@ -53,7 +53,7 @@ A Binary Classifier is an instance of Supervised Learning. In Supervised Learnin
 3. *Evaluation*
 4. *Prediction*
 
-#### Data Preprocessing
+##### 1. Data Preprocessing
 
 As Machine Learning algorithms learn from the data, we are obliged to feed them the right kind of data. So, the step towards achieving that is via *Data Preprocessing*.
 
@@ -68,7 +68,7 @@ In simple terms, Data Preprocessing implies grooming the raw data according to y
 4. *Data Discretization* - Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.
 5. *Text Cleaning* - Remove embedded characters which may cause data misalignment, for e.g., embedded tabs in a tab-separated data file, embedded new lines which may break records, etc.
 
-#### Learning 
+##### 2. Learning 
 
 Once you have your dataset after preprocessing, then it's time to select a *learning algorithm* to perform your desired task. In our case it's *Binary Classifier or a Perceptron*. 
 
@@ -79,7 +79,7 @@ Once you have your dataset after preprocessing, then it's time to select a *lear
 4. *Number of Parameters*
 5. *Number of Features*
 
-#### Evaluation
+##### 3. Evaluation
 
 The metrics that you choose to evaluate the machine learning algorithm are very important. The choice of metrics influences how the performance of machine learning is measured and compared. 
 
