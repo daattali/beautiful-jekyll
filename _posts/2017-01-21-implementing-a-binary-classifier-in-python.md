@@ -7,7 +7,7 @@ tags: [machine_learning]
 bigimg: /img/neuron_model.jpg
 ---
 
-## Implementing a Binary Classifier in Python
+# Implementing a Binary Classifier in Python
 
 Machine Learning (ML) is playing a key role in a wide range of critical applications, such as Computer Vision, Data Mining, Natural Language Processing, Speech Recognition and others. ML provides potential solutions in all of the above mentioned domains and more, it's surely going to be the the driving force of our future digital civilization. 
 
@@ -15,7 +15,7 @@ ML can be a bit intimidating for a newcomer. The concept of ML might be quite ab
 
 In order to explain this, I decided to write a Binary Classifier from scratch. I will not be making use of *Scikit-learn* in this post. The imperative of this post is to understand the core working principle of an ML algorithm.
 
-### What is a Binary Classifier?
+## What is a Binary Classifier?
 
 Let's consider a scenario where you are told to seperate a basket full of Apples and Oranges into two seperate baskets.
 
@@ -45,15 +45,17 @@ A **Classifier** in Machine Learning is an *algorithm*, that will determine the 
 
 A Binary Classifier is an instance of Supervised Learning. In Supervised Learning we have a set of input data and a set of labels, our task is to map each data with a label. A Binary Classifier classifies elements into two groups, either **Zero** or **One**.
 
-### Machine Learning Model
+## Machine Learning Model
 
-##### Machine Learning model comprises of four steps:    
+#### Machine Learning model comprises of four steps:    
 1. *Data Preprocessing*
 2. *Learning*
 3. *Evaluation*
 4. *Prediction*
 
-##### 1. Data Preprocessing
+![Perceptron Algorithm](/img/perceptron_algorithm.PNG) 
+
+#### 1. Data Preprocessing
 
 As Machine Learning algorithms learn from the data, we are obliged to feed them the right kind of data. So, the step towards achieving that is via *Data Preprocessing*.
 
@@ -68,7 +70,7 @@ In simple terms, Data Preprocessing implies grooming the raw data according to y
 4. *Data Discretization* - Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.
 5. *Text Cleaning* - Remove embedded characters which may cause data misalignment, for e.g., embedded tabs in a tab-separated data file, embedded new lines which may break records, etc.
 
-##### 2. Learning 
+#### 2. Learning 
 
 Once you have your dataset after preprocessing, then it's time to select a *learning algorithm* to perform your desired task. In our case it's *Binary Classifier or a Perceptron*. 
 
@@ -79,7 +81,7 @@ Once you have your dataset after preprocessing, then it's time to select a *lear
 4. *Number of Parameters*
 5. *Number of Features*
 
-##### 3. Evaluation
+#### 3. Evaluation
 
 The metrics that you choose to evaluate the machine learning algorithm are very important. The choice of metrics influences how the performance of machine learning is measured and compared. 
 
@@ -95,14 +97,14 @@ The metrics that you choose to evaluate the machine learning algorithm are very 
 2. *Mean Squared Error*
 3. *R-Squared*
 
-### Implementing the Perceptron
+## Implementing the Perceptron
 
 
-*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input *x* to an output value *f(x)**
+*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input *x* to an output value *f(x)*
 
 ### Algorithm 
 
-------- Image --------
+![Perceptron Algorithm](/img/perceptron_algorithm.PNG)
 
 ##### Where,   
 1. *w* is a vector of real-value weights 
