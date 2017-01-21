@@ -47,7 +47,6 @@ A Binary Classifier is an instance of Supervised Learning. In Supervised Learnin
 
 ## Machine Learning Model
 
-#### Machine Learning model comprises of four steps:    
 1. *Data Preprocessing*
 2. *Learning*
 3. *Evaluation*
@@ -55,7 +54,7 @@ A Binary Classifier is an instance of Supervised Learning. In Supervised Learnin
 
 ![Perceptron Algorithm](/img/perceptron_algorithm.PNG) 
 
-#### 1. Data Preprocessing
+### 1. Data Preprocessing
 
 As Machine Learning algorithms learn from the data, we are obliged to feed them the right kind of data. So, the step towards achieving that is via *Data Preprocessing*.
 
@@ -70,7 +69,7 @@ In simple terms, Data Preprocessing implies grooming the raw data according to y
 4. *Data Discretization* - Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.
 5. *Text Cleaning* - Remove embedded characters which may cause data misalignment, for e.g., embedded tabs in a tab-separated data file, embedded new lines which may break records, etc.
 
-#### 2. Learning 
+### 2. Learning 
 
 Once you have your dataset after preprocessing, then it's time to select a *learning algorithm* to perform your desired task. In our case it's *Binary Classifier or a Perceptron*. 
 
@@ -81,7 +80,7 @@ Once you have your dataset after preprocessing, then it's time to select a *lear
 4. *Number of Parameters*
 5. *Number of Features*
 
-#### 3. Evaluation
+### 3. Evaluation
 
 The metrics that you choose to evaluate the machine learning algorithm are very important. The choice of metrics influences how the performance of machine learning is measured and compared. 
 
@@ -100,11 +99,12 @@ The metrics that you choose to evaluate the machine learning algorithm are very 
 ## Implementing the Perceptron
 
 
-*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input *x* to an output value *f(x)*
+*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input x to an output value *f(x)*
 
-### Algorithm 
+## Algorithm 
 
-![Perceptron Algorithm](/img/perceptron_algorithm.PNG)
+![Perceptron Algorithm](/img/perceptron.PNG)
+![Perceptron Algorithm](/img/perceptron_1.PNG)
 
 ##### Where,   
 1. *w* is a vector of real-value weights 
@@ -114,7 +114,7 @@ The metrics that you choose to evaluate the machine learning algorithm are very 
 The value of *f(x)* is either **0** or **1**, which is used to classify *x* as either a positive or a negative instance. 
 
 
-### Implementation
+## Implementation
 
 Let's implement the perceptron to predict the outcome of an **OR** gate. 
 
