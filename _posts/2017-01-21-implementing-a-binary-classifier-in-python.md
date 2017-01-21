@@ -19,11 +19,13 @@ In order to explain this, I decided to write a Binary Classifier from scratch. I
 
 Let's consider a scenario where you are told to seperate a basket full of Apples and Oranges into two seperate baskets.
 
-![Data Set](/img/apples-and-oranges.png) 
+![Apples and Oranges](/img/apples-and-oranges.png) 
 
-What do you do?
+**So, what do you do?**
+
 -   You might look at the color
--   You might look at the shape
+-   You might look at the shape or dimensions
+-   You might feel the difference in the texture
 -   You might feel the difference in the weights  
 
 Afer you find the difference between the two, then you'll seperate them.
