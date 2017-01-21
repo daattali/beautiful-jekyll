@@ -24,20 +24,20 @@ Let's consider a scenario where you are told to seperate a basket full of Apples
 **So, what do you do?**
 
 -   You might look at the color
--   You might look at the shape or dimensions
+-   You might look at the shape or the dimensions
 -   You might feel the difference in the texture
 -   You might feel the difference in the weights  
 
 Afer you find the difference between the two, then you'll seperate them.
 
-Now, let's explain Binary Classifier from the above scenario.
+Now, let's explain the Binary Classifier from the above scenario.
 
 1. Firstly, you get the data to solve your problem. (Basket full of Apples and Oranges)
-2. Secondly, you create a feature set, which uniquely defines each data. (Your assumptions like color, size, weights)
+2. Secondly, you create a feature set, which uniquely defines each data. (Your assumptions like color, size, weights and etc.)
 3. Thirdly, you are able to label or categorize each data. (Apple or Orange)
 4. Fourthly, you have learnt to differentiate the data during the entire process. (In future, you'll be able to differentiate between an Apple and a Orange)
 
-A classifier in Machine Learning is an algorithm, that will determine the class to which the input data belongs to based on a set of features.
+A **Classifier** in Machine Learning is an *algorithm*, that will determine the class to which the input data belongs to based on a set of features.
 
 There are three types of problems in Machine Learning:
 
@@ -45,9 +45,7 @@ There are three types of problems in Machine Learning:
 2. *Unsupervised Learning*
 3. *Reinforcement Learning*
 
-A Binary Classifier is an instance of Supervised Learning. In Supervised Learning we have a set of input data and a set of labels, our task is to map each data with a label. 
-
-A Binary Classifier classifies elements into two groups, either **Zero** or **One**.
+A Binary Classifier is an instance of Supervised Learning. In Supervised Learning we have a set of input data and a set of labels, our task is to map each data with a label. A Binary Classifier classifies elements into two groups, either **Zero** or **One**.
 
 ### Machine Learning Model
 
