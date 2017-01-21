@@ -99,11 +99,12 @@ The metrics that you choose to evaluate the machine learning algorithm are very 
 ## Implementing the Perceptron
 
 
-*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input x to an output value *f(x)*
+*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input x to an output value f(x)*
 
 ## Algorithm 
 
 ![Perceptron Algorithm](/img/perceptron.PNG)
+
 ![Perceptron Algorithm](/img/perceptron_1.PNG)
 
 ##### Where,   
@@ -119,15 +120,15 @@ The value of *f(x)* is either **0** or **1**, which is used to classify *x* as e
 Let's implement the perceptron to predict the outcome of an **OR** gate. 
 
 
-1. Firstly, let's initialize an array with initial weights equal to **0**. The length of the array is equal to **number of features + 1**. The additional feature is the "threshold". 
+1. Let's initialize an array with initial weights equal to **0**. The length of the array is equal to **number of features + 1**. The additional feature is the "threshold". 
 
     <pre><code>self.weight_matrix = np.zeros(1 + X.shape[1])</code></pre>
 
-2. Secondly, The loop "iterates" multiple times over the training code to optimize the weights to the dataset.
+2. The loop "iterates" multiple times over the training data to optimize the weights of the dataset.
 
     <pre><code>for _ in range(number_of_iterations):</code></pre>
     
-3. We loop over each training data point and it's target. The target is the desired output we want the algorithm to predict. As it's a binary classifier, the targeted ouput is either a **0** or **1**.
+3. We loop over each training data point and it's target. The target is the desired output which we want the algorithm to predict. As it's a binary classifier, the targeted ouput is either a **0** or **1**.
 
     The prediction calculation is a matrix multiplication of the features with the appropirate weights. To this multiplication we add the "threshold" value. 
     
