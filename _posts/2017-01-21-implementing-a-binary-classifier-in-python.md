@@ -21,7 +21,7 @@ Let's consider a scenario where you are told to seperate a basket full of Apples
 
 ![Apples and Oranges](/img/apples-and-oranges.png) 
 
-**So, what do you do?**  
+##### So, what do you do?   
 -   You might look at the color
 -   You might look at the shape or the dimensions
 -   You might feel the difference in the texture
@@ -38,7 +38,7 @@ Now, let's explain the Binary Classifier from the above scenario.
 
 A **Classifier** in Machine Learning is an *algorithm*, that will determine the class to which the input data belongs to based on a set of features.
 
-There are three types of problems in Machine Learning:  
+##### Types of problems in Machine Learning:    
 1. *Supervised Learning*
 2. *Unsupervised Learning*
 3. *Reinforcement Learning*
@@ -47,7 +47,7 @@ A Binary Classifier is an instance of Supervised Learning. In Supervised Learnin
 
 ### Machine Learning Model
 
-Machine Learning model comprises of four steps:  
+##### Machine Learning model comprises of four steps:    
 1. *Data Preprocessing*
 2. *Learning*
 3. *Evaluation*
@@ -61,7 +61,7 @@ Data Preprocessing is a data mining technique that involves transforming the raw
 
 In simple terms, Data Preprocessing implies grooming the raw data according to your requirement using certain techniques.
 
-Steps involved in Data Preprocessing:  
+##### Steps involved in Data Preprocessing:  
 1. *Data Cleaning* - Fill in the missing values, detect and remove noisy data and outliers.
 2. *Data Transformation* - Normalize data to reduce dimensions and noise.
 3. *Data Reduction* - Sample data records or attributes for easier data handling.
@@ -72,7 +72,7 @@ Steps involved in Data Preprocessing:
 
 Once you have your dataset after preprocessing, then it's time to select a *learning algorithm* to perform your desired task. In our case it's *Binary Classifier or a Perceptron*. 
 
-Parameters to consider, while choosing a learning algorithm:  
+##### Parameters to consider, while choosing a learning algorithm:  
 1. *Accuracy*
 2. *Training Time*
 3. *Linearity*
@@ -98,13 +98,13 @@ The metrics that you choose to evaluate the machine learning algorithm are very 
 ### Implementing the Perceptron
 
 
-*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input *x* to an output value *f(x)* *
+*A Perceptron is an algorithm for learning a binary classifier: a function that maps it's input *x* to an output value *f(x)**
 
 ### Algorithm 
 
 ------- Image --------
 
-Where, 
+##### Where,   
 1. *w* is a vector of real-value weights 
 2. *w.x* is a dot product
 3. *b* is the bias 
