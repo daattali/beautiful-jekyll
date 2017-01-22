@@ -7,7 +7,6 @@ tags: [machine_learning]
 bigimg: /img/neuron_model.jpg
 ---
 
-# Implementing a Binary Classifier in Python
 
 Machine Learning (ML) is playing a key role in a wide range of critical applications, such as Computer Vision, Data Mining, Natural Language Processing, Speech Recognition and others. ML provides potential solutions in all of the above mentioned domains and more, it's surely going to be the the driving force of our future digital civilization. 
 
