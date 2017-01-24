@@ -9,6 +9,8 @@ bigimg: /img/neuron_model.jpg
 
 # Implementing a Binary Classifier in Python
 
+*Credits to [Jean-Nicholas Hould](http://www.jeannicholashould.com/what-i-learned-implementing-a-classifier-from-scratch.html) on his post that gives an intutive approach to learn a basic Machine Learning algorithm and [Sebastian Raschka](https://sebastianraschka.com/books.html) book on Machine Learning in Python.*
+
 Machine Learning (ML) is playing a key role in a wide range of critical applications, such as Computer Vision, Data Mining, Natural Language Processing, Speech Recognition and others. ML provides potential solutions in all of the above mentioned domains and more, it's surely going to be the the driving force of our future digital civilization. 
 
 ML can be a bit intimidating for a newcomer. The concept of ML might be quite abstract and the newcomer might be bombarding himself with multiple questions. One big question being, "How does it work?".
