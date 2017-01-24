@@ -37,6 +37,7 @@ Email: [info@cincypowershell.org](mailto:info@cincypowershell.org)
 
 ---
 
+class: center, middle
 ### Sponsors
 We can't do it without them, please take time to thank them!
 
@@ -49,26 +50,50 @@ We can't do it without them, please take time to thank them!
 ![Sapien](http://cincypowershell.org/img/sapien.jpeg)
 
 ---
-### PowerShell News
+
+### .center[PowerShell News]
 --
 
 * [PowerShell and DevOps Global Summit](https://powershell.org/summit/)
+
+
+
 --
 
 * [The Pester Book](https://leanpub.com/the-pester-book)
+
+
 --
 
 * [VSCode PS extensions 0.9.0](https://github.com/PowerShell/vscode-powershell/blob/master/CHANGELOG.md#new-powershell-code-formatter)
+
+
 --
 
 * [WMF 5.1 released](https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes?f=255&MSPPError=-2147217396)
-
 ---
 
-### Cmdlet of the Month
+### .center[Cmdlet of the Month]
 --
 
 * Show-Object (PowershellCookBook)
+--
+
+* Install-Module PowershellCookBook
+--
+
+* $obj | Show-Object
+???
+
+Creator - Lee Holmes
+
+Useful for interogating, investigating, learning about Objects, Types, etc...
+
+Rich Nested Objects are hard to dive into
+
+get-process lsass | Show-Object
+
+get-item c:\temp | Show-Object
 
 ---
 class: middle, center
@@ -94,10 +119,14 @@ Most of this content is from sources I have stolen / learned from, I don't take 
 .center[![notversioncontrol](http://www.cincypowershell.org/img/versioning.png)]
 ???
 Why Doesn’t this work? – This is not version control!
-	No sharing code
-	No one but you knows which version is the right one, what you were working on, what features are broken or experimental
-	This technique comes out of being burned before, and usually doesn’t happen as practice or policy for working on code.
-	Single file versioning, not repository, full copies are stored, imposible to share
+
+- No sharing code
+
+- No one but you knows which version is the right one, what you were working on, what features are broken or experimental
+
+- This technique comes out of being burned before, and usually doesn’t happen as practice or policy for working on code.
+
+- Single file versioning, not repository, full copies are stored, imposible to share
 
 Do you edit script directly from the location that it is running in production?
 ---
@@ -106,73 +135,218 @@ Do you edit script directly from the location that it is running in production?
 --
 
 * Made a change to code, realised it was a mistake and wanted to revert back?
+
+
 --
 
 * Lost code or had a backup that was too old?
+
+
 --
 
-* Had to maintain multiple versions of a product?
+* Had to maintain multiple versions of a script/process?
+
+
 --
 
 * Wanted to see the difference between two (or more) versions of your code?
+
+
 --
 
 * Wanted to prove that a particular change broke or fixed a piece of code?
+
+
 --
 
 * Wanted to review the history of some code?
+
+
 --
 
 * Wanted to submit a change to someone else's code?
+
+
 --
 
 * Wanted to share your code, or let other people work on your code?
+
+
 --
 
 * Wanted to see how much work is being done, and where, when and by whom?
+
+
 --
 
 * Wanted to experiment with a new feature without interfering with working code?
+???
+
+Lots of reasons for version control.  Developers use it, why don't we?
+
+We are developers.  We write code that affect production operations, infrastructure, developers, applications, directory services, cloud services, reports etc... depend on
+
+**Operations Scripts are traditionally seen as liabilites, not assets, whats the difference?**
 ---
 
 ### Different types of Version Control
----
-
-* Centralized Version Control (Subversion, CVS, TFS)
 --
 
+* Centralized Version Control (Subversion, CVS, TFS)
+
+
+--
 * Distributed Version Control (Git, Mecurial)
+
+
+--
+.center[![Distributed vs. Central](http://cincypowershell.org/img/distvscentral.png)]
 ---
 
 ### Version Control Concepts
 
-* working
-* head
-* stage
-* commit
-* branch
-* merge
+* **working tree** - files in your directory
+
+* **head** - where you are at
+
+* **stage** - waiting to commit
+
+* **commit** - making a change to your repo
+
+* **branch** - a copy and at a point in time and any changes made
+
+* **merge** - combine 2 references
+
+* **rebase** - add my changes on top of others
 
 ???
 working - files on in your directory - changing files here doesn't change them in source!!!!
-head - reference, where you are pointed to currently
+head - reference, currently checkout out commit - usually a branch
 stage - area for changes while preparing to commit
 commit - making a change to your repository (includes messages / who / what / why etc...)
 branch - a copy/version of your work - Git encourages lots of these (Free)
 merge - combining together 2 references (files/commits/branches etc...)
+rebase - add my changes on top of what everyone else has done
 ---
 
-### Typical Git workflow
+### Git workflow - simple (one user)
+--
+
+* Make a change in your working tree
+
+
+--
+
+* stage the change (git add <filename>)
+
+
+--
+
+* commit the change - meaningful commit message (Git commit -m 'Fix bug in output format')
+
+
+--
+
+* Sync to remote repo (git push)
+
+
+--
+* Oh no, I messed up! (git reset, git reset --soft --mixed (default) --hard, git revert)
+???
+
+Reset (soft - only changes git DB, mixed, DB and stages the changes, hard - DB, removes changes in working directory) - changes history
+
+Revert - adds the reset as a new commit (used for public/shared repos)
+
+--
+
+* commit
+
+
+--
+* sync
+
+
+--
+* Repeat
+---
+
+### Git workflow - typical (collaboration - multiple users)
+--
+
+* create and checkout a feature / bug branch based on dev branch (git checkout -b new feature branch <dev branch>)
+
+
+--
+
+* Make a change in your working tree
+
+
+--
+
+* stage the change (git add <filename>)
+
+
+--
+
+* commit changes - meaningful commit messages (Git commit -m 'Fix bug in output format')
+
+
+--
+
+* Ensure you have the latest commits to dev branch (git fetch origin)
+
+
+--
+
+* Merge your changes to the dev branch (git checkout dev; git merge/rebase new feature branch)
+
+
+--
+
+* Push to remote / origin and delete feature branch (git push; git branch -d new feature branch)
+
+
+--
+
+* Prepare for a release (git checkout -b release-1.1;git commit -m 'add docs, update version info, clean up etc...')
+
+
+--
+
+* Merge release to master (git checkout master; git merge release-1.1;git push; git branch -d release-1.1)
+
+
+--
+
+* Tag the release (git tag -a 1.1 -m 'Version 1.1 release' master; git push --tags)
 ---
 
 ### Github
+
+* Cloud hosting for source code - uses git
+
+
+--
+
+* Adds a social layer (collaboration - issues, follow, like)
 ---
 
 ### Github Concepts
 
-* repository
-* issues
-* pull requests
+--
+* Forking
+--
+* Forking - Make a copy of someone elses repository to your own account
+--
+* Pull Request
+--
+* Pull Request - Tell the owner of the repo you want them to Pull
+???
+You can only push in github to a repo you own or have push rights too.  Not recommened for github tracking purposes
+---
+
+
 
 
 # Show and Tell (us your code!)
