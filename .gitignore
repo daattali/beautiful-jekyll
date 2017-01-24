@@ -7,3 +7,5 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+*.jar binary

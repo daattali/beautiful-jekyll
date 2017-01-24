@@ -7,7 +7,6 @@ tags: [machine_learning]
 bigimg: /img/neuron_model.jpg
 ---
 
-# Implementing a Binary Classifier in Python
 
 *Credits to [Jean-Nicholas Hould](http://www.jeannicholashould.com/what-i-learned-implementing-a-classifier-from-scratch.html) on his post that gives an intutive approach to learn a basic Machine Learning algorithm and [Sebastian Raschka](https://sebastianraschka.com/books.html) book on Machine Learning in Python.*
 
