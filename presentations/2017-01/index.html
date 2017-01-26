@@ -115,8 +115,6 @@ Most of this content is from sources I have stolen / learned from, I don't take 
 
 ### Version Control?
 
---
-
 * Do you scripts look like this?
 
 .center[![notversioncontrol](http://www.cincypowershell.org/img/versioning.png)]
@@ -250,30 +248,25 @@ background-image: url(http://cincypowershell.org/img/gitwinsreally.png)
 ### What is Git? Why Git?
 
 * A distributed version control system
---
-
 
 * The most popular distributed version control system
---
 
+--
 
 * Linus Torvalds invented it (Linux is good....ergo Git is good)
---
 
+--
 
 * Microsoft Loves Linux
----
 
-### What is Git? Why Git?
-
-* "It doesn't matter what version control system you use..."
 --
 
+### .center["It doesn't matter what version control system you use...]
+--
 
-* **"BUT USE GIT!""** - Steven Murawski
+### .center[**BUT USE GIT!"**]
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/_yQlKEq-Ueg/0.jpg)](http://www.youtube.com/watch?v=_yQlKEq-Ueg "Video Title")
-https://www.youtube.com/watch?v=_yQlKEq-Ueg
+.center[-Steven Murawski]
 ---
 
 ### Git Concepts
@@ -291,6 +284,7 @@ https://www.youtube.com/watch?v=_yQlKEq-Ueg
 * **merge** - combine 2 references
 
 * **rebase** - add my changes on top of others
+
 .center[![LocalOperations](http://Cincypowershell.org/img/LocalOperations.png)]
 
 ???
@@ -306,7 +300,7 @@ stage/index - area for changes while preparing to commit. you can't move HEAD if
 
 head - reference, currently checkout out commit - usually a branch.
 
-**Moving your head, changes what is in your working directory to reflect the point in time**
+**Whiteboard - Moving your head, changes what is in your working directory to reflect the point in time**
 
 commit - making a change to your repository (includes messages / who / what / why etc...)
 
@@ -315,9 +309,13 @@ branch - a copy/version of your work - Git encourages lots of these (Free)
 merge - combining together 2 references (files/commits/branches etc...) - creates a new commit
 
 rebase - add my changes on top of what everyone else has done - rewrites history (dont't do this with someone elses work!)
+
+
 ---
 
 ### Git workflow - simple (one user)
+???
+**Demo** http://learngitbranching.js.org/?NODEMO
 --
 
 * Make a change in your working tree
@@ -359,46 +357,57 @@ Revert - adds the reset as a new commit (used for public/shared repos)
 * Repeat
 ---
 
-### Git workflow - typical (collaboration - multiple users)
+### Git Workflow - Team Collaboration / Open Source
 --
 
 * Gitflow Method - Best practice /most common for collaboration
 ---
 
 class: center, middle
-background-image: url(http://cincypowershell.com/img/gitflow.png)
+background-image: url(http://cincypowershell.org/img/gitflow.png)
+???
+Master only gets updated by release branch or hotfix
+
+All commit history lives on dev branch
+
+individual branches for each feature / hotfix
 ---
 
-### Git workflow - typical (collaboration - multiple users)
---
+### Git Workflow - Team Collaboration / Open Source
 
 * Gitflow Method - Best practice /most common for collaboration
+
+???
+Master only gets updated by release branch or hotfix
+
+All commit history lives on dev branch
+
+individual branches for each feature / hotfix
 --
 
 * Complex, maintainers needed
+
 --
 
 * Pick what parts work for you and your team
+
 ---
 
 ### Gitflow workflow - sample (collaboration - multiple users)
---
 
 * create and checkout a feature / bug branch based on dev branch (git checkout -b new feature branch <dev branch>)
+
 --
 
 * Make a change in your working tree
+
 --
 
 * stage the change (git add <filename>)
+
 --
 
 * commit changes - meaningful commit messages (Git commit -m 'Fix bug in output format')
----
-
-### Gitflow workflow - sample (collaboration - multiple users) - Cont'd
-???
-These workflows might have build and release engineers dedicated
 --
 
 * Ensure you have the latest commits to dev branch (git fetch origin)
@@ -410,11 +419,13 @@ These workflows might have build and release engineers dedicated
 --
 
 * Push to remote / origin and delete feature branch (git push; git branch -d new feature branch)
-
---
+---
+### Gitflow workflow - sample (collaboration - multiple users) - Cont'd
 
 * Prepare for a release (git checkout -b release-1.1;git commit -m 'add docs, update version info, clean up etc...')
 
+???
+These workflows might have build and release engineers dedicated
 --
 
 * Merge release to master (git checkout master; git merge --no-ff release-1.1;git push; git branch -d release-1.1)
@@ -424,40 +435,44 @@ These workflows might have build and release engineers dedicated
 * Tag the release (git tag -a 1.1 -m 'Version 1.1 release' master; git push --tags)
 ---
 
-### Github
+### What is Github
 
-* Cloud hosting for source code - uses git
-
+* Repository hosting service - hosts git repos in the cloud
 
 --
 
-* Adds a social layer (collaboration - issues, follow, like)
+* Adds features on top of git - Wikis, simple project managment
+--
+
+* Adds a social layer for collaboration
+
+  - share(fork), comment(issues), follow(watch), like(star)
 
 --
 
 * The facebook of development
----
 
+.center[![Facebook](https://cdn.meme.am/cache/instances/folder49/500x/41740049.jpg)]
+---
 ### Github Concepts
 
---
-* Forking
---
 * Forking - Make a copy of someone elses repository to your own account
+
 ???
 
 Remember, this is yours, its not central, you can do what you want now with it.
---
-* Pull Request
---
-* Pull Request - Tell the owner of the repo you want them to Pull
-???
+
 You can only push in github to a repo you own or have push rights too.  Not recommened for github tracking purposes
+
+Include tags / references to people (@) issues or PRs (#)
+
+--
+
+* Pull Request - Tell the owner of the repo you want them to Pull
+
 --
 
 * Issues - where to file your requests, problems, bugs, enhancements
-???
-Include tags / references to people (@) issues or PRs (#)
 ---
 
 ### Github workflow - personal
@@ -474,6 +489,7 @@ Include tags / references to people (@) issues or PRs (#)
 ### Github workflow - Team / Opensource Project
 
 * Every Project is different
+
 ???
 
 Mileage may vary, pick something that works for your team, and their understanding / ability
@@ -483,45 +499,116 @@ If your Contributing, Read the docs!
 Looking around and exploring is key!
 
 Github is for people that care / sharing is caring.  People want to teach if you want to learn!
+
+Gitflow is good but complicated - every project has its own flavor
 --
 
 * Contributing.MD
+
 --
 
 * Inspect other pull requests / merges
+
 --
 
 * **Ask for help!**
 
+--
+
+* Gitflow Method - Best practice / most common for collaboration
+
+---
+### Github workflow - **Gitflow** sample (collaboration - multiple users)
+
+* **fork the repository** - its now yours do what you want with it
+
+???
+
+Git clone - brings all branches too
+
+Search for similar issues / keywords first, consider conversation before the issue is submitted.
+
+Merge could be rebase - depends on project
+
+--
+
+* **clone it locally**
+
+--
+
+* **Submit an issue**
+
+--
+
+* create and checkout a feature / bug branch based on dev branch (git checkout -b <new feature branch> <dev branch>)
+
+* Make a change in your working tree
+
+* stage the change (git add <filename>)
+
+* commit changes - meaningful commit messages (Git commit -m 'Fix bug in output format')
+
+* Ensure you have the latest commits to dev branch (git fetch origin)
+
+* Merge your changes to the dev branch (git checkout dev; git merge --no-ff new feature branch)
+
+* Push to remote / origin and delete feature branch (git push; git branch -d new feature branch)
+---
+### Gitflow workflow - sample (collaboration - multiple users) - Cont'd
+
+* **Submit a pull request** - Specify base change and compare change
+
+???
+Base - ref in the forked repo
+
+Compare - ref in your fork
+
+ref can be commits, tags, branches, or forks
+
+chat / share code / might be declined, or updated before merged
+--
+
+* **Collaborate** with the repo owner / commiters
+
+--
+
+* Accepted and merged to dev branch
+
+* Scheduled for release to master
+
+* Released - You shipped code!
 ---
 
-### Github workflow - Team / Opensource Project
-
-* Gitflow Method - Best practice /most common for collaboration
----
-
-### Github workflow - Team / Opensource Project
-
+# What if it all goes wrong?
 ---
 
 class: center, middle
 background-image: url(http://justinhileman.info/article/git-pretty/git-pretty.png)
-
 ---
-
-
 # Links / References
 
-* tutorials
+#### Tutorials
 - [Atlassian Tutorials](https://www.atlassian.com/git/tutorials)
 - [Bitbucket - Git for Beginners](https://www.dotnetcodegeeks.com/2015/06/git-explained-for-beginners.html)
 - [Interactive - best I've seen!](http://learngitbranching.js.org/?NODEMO)
 - [Interactive - CodeSchool](https://www.codeschool.com/learn/git)
 
-* Workflows
+#### Workflows
 - [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
 - [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
-- [Argument against Gitlow](http://endoflineblog.com/gitflow-considered-harmful)
+- [Argument against Gitflow](http://endoflineblog.com/gitflow-considered-harmful)
+
+#### Contributing
+- [Powershell Contributing Guide](https://github.com/powershell/powershell#developing-and-contributing)
+
+---
+# Links / References
+
+#### References
+- [Learn Git in a Month of Lunches](https://www.manning.com/books/learn-git-in-a-month-of-lunches)
+- [Warren Frame's Git-Presentation](https://github.com/RamblingCookieMonster/Git-Presentation)
+- [Git Power Routines - Videos](https://www.youtube.com/playlist?list=PLDshL1Z581YYxLsjYwM25HkIYrymXb7H_)
+- [Pro Git - Book (Free)](https://www.git-scm.com/book/en/v2)
 
 --
 
