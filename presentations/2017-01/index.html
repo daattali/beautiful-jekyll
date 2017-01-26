@@ -243,34 +243,46 @@ background-image: url(http://cincypowershell.org/img/gitwins.png)
 ---
 
 class: center, middle
-background-image: url(http://cincypowershell.org/img/gitwinsreally.png)]
+background-image: url(http://cincypowershell.org/img/gitwinsreally.png)
 
 ---
 
 ### What is Git? Why Git?
+
+* A distributed version control system
+--
+
+
+* The most popular distributed version control system
+--
+
 
 * Linus Torvalds invented it (Linux is good....ergo Git is good)
 --
 
 
 * Microsoft Loves Linux
---
+---
 
+### What is Git? Why Git?
 
 * "It doesn't matter what version control system you use..."
 --
 
 
 * **"BUT USE GIT!""** - Steven Murawski
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/_yQlKEq-Ueg/0.jpg)](http://www.youtube.com/watch?v=_yQlKEq-Ueg "Video Title")
+https://www.youtube.com/watch?v=_yQlKEq-Ueg
 ---
 
 ### Git Concepts
 
-* **working tree** - files in your directory
+* **working tree / working directory** - files in your directory
+
+* **stage / index** - waiting to commit
 
 * **head** - where you are at
-
-* **stage** - waiting to commit
 
 * **commit** - making a change to your repo
 
@@ -279,15 +291,30 @@ background-image: url(http://cincypowershell.org/img/gitwinsreally.png)]
 * **merge** - combine 2 references
 
 * **rebase** - add my changes on top of others
+.center[![LocalOperations](http://Cincypowershell.org/img/LocalOperations.png)]
 
 ???
+Git is like a time machine - timeline
+
+You can move forward and backwards in time.
+
+Similar to snapshots for VMs, Databases, file systems (Time Machine on your MAC)
+
 working - files on in your directory - changing files here doesn't change them in source!!!!
-head - reference, currently checkout out commit - usually a branch
-stage - area for changes while preparing to commit
+
+stage/index - area for changes while preparing to commit. you can't move HEAD if you have items waiting here (limbo)
+
+head - reference, currently checkout out commit - usually a branch.
+
+**Moving your head, changes what is in your working directory to reflect the point in time**
+
 commit - making a change to your repository (includes messages / who / what / why etc...)
+
 branch - a copy/version of your work - Git encourages lots of these (Free)
-merge - combining together 2 references (files/commits/branches etc...)
-rebase - add my changes on top of what everyone else has done
+
+merge - combining together 2 references (files/commits/branches etc...) - creates a new commit
+
+rebase - add my changes on top of what everyone else has done - rewrites history (dont't do this with someone elses work!)
 ---
 
 ### Git workflow - simple (one user)
@@ -335,48 +362,62 @@ Revert - adds the reset as a new commit (used for public/shared repos)
 ### Git workflow - typical (collaboration - multiple users)
 --
 
+* Gitflow Method - Best practice /most common for collaboration
+---
+
+class: center, middle
+background-image: url(http://cincypowershell.com/img/gitflow.png)
+---
+
+### Git workflow - typical (collaboration - multiple users)
+--
+
+* Gitflow Method - Best practice /most common for collaboration
+--
+
+* Complex, maintainers needed
+--
+
+* Pick what parts work for you and your team
+---
+
+### Gitflow workflow - sample (collaboration - multiple users)
+--
+
 * create and checkout a feature / bug branch based on dev branch (git checkout -b new feature branch <dev branch>)
-
-
 --
 
 * Make a change in your working tree
-
-
 --
 
 * stage the change (git add <filename>)
-
-
 --
 
 * commit changes - meaningful commit messages (Git commit -m 'Fix bug in output format')
+---
 
-
+### Gitflow workflow - sample (collaboration - multiple users) - Cont'd
+???
+These workflows might have build and release engineers dedicated
 --
 
 * Ensure you have the latest commits to dev branch (git fetch origin)
 
-
 --
 
-* Merge your changes to the dev branch (git checkout dev; git merge/rebase new feature branch)
-
+* Merge your changes to the dev branch (git checkout dev; git merge --no-ff new feature branch)
 
 --
 
 * Push to remote / origin and delete feature branch (git push; git branch -d new feature branch)
 
-
 --
 
 * Prepare for a release (git checkout -b release-1.1;git commit -m 'add docs, update version info, clean up etc...')
 
-
 --
 
-* Merge release to master (git checkout master; git merge release-1.1;git push; git branch -d release-1.1)
-
+* Merge release to master (git checkout master; git merge --no-ff release-1.1;git push; git branch -d release-1.1)
 
 --
 
@@ -391,6 +432,10 @@ Revert - adds the reset as a new commit (used for public/shared repos)
 --
 
 * Adds a social layer (collaboration - issues, follow, like)
+
+--
+
+* The facebook of development
 ---
 
 ### Github Concepts
@@ -399,18 +444,84 @@ Revert - adds the reset as a new commit (used for public/shared repos)
 * Forking
 --
 * Forking - Make a copy of someone elses repository to your own account
+???
+
+Remember, this is yours, its not central, you can do what you want now with it.
 --
 * Pull Request
 --
 * Pull Request - Tell the owner of the repo you want them to Pull
 ???
 You can only push in github to a repo you own or have push rights too.  Not recommened for github tracking purposes
+--
+
+* Issues - where to file your requests, problems, bugs, enhancements
+???
+Include tags / references to people (@) issues or PRs (#)
+---
+
+### Github workflow - personal
+
+* Create repo
+
+* clone repo locally
+
+* make changes / stage / commit
+
+* push to origin or pull requests
+---
+
+### Github workflow - Team / Opensource Project
+
+* Every Project is different
+???
+
+Mileage may vary, pick something that works for your team, and their understanding / ability
+
+If your Contributing, Read the docs!
+
+Looking around and exploring is key!
+
+Github is for people that care / sharing is caring.  People want to teach if you want to learn!
+--
+
+* Contributing.MD
+--
+
+* Inspect other pull requests / merges
+--
+
+* **Ask for help!**
+
+---
+
+### Github workflow - Team / Opensource Project
+
+* Gitflow Method - Best practice /most common for collaboration
+---
+
+### Github workflow - Team / Opensource Project
+
+---
+
+class: center, middle
+background-image: url(http://justinhileman.info/article/git-pretty/git-pretty.png)
+
 ---
 
 
+# Links / References
 
+* tutorials
+- [Atlassian Tutorials](https://www.atlassian.com/git/tutorials)
+- [Bitbucket - Git for Beginners](https://www.dotnetcodegeeks.com/2015/06/git-explained-for-beginners.html)
+- [Interactive - best I've seen!](http://learngitbranching.js.org/?NODEMO)
+- [Interactive - CodeSchool](https://www.codeschool.com/learn/git)
 
-# Show and Tell (us your code!)
+* Workflows
+- [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
+- [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
+- [Argument against Gitlow](http://endoflineblog.com/gitflow-considered-harmful)
 
 --
 
