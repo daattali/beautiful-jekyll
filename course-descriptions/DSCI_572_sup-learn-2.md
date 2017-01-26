@@ -34,7 +34,7 @@ By the end of the course, students are expected to be able to:
 * [Grokking Deep Learning](https://www.manning.com/books/grokking-deep-learning)
 * [Practical Deep Learning For Coders, Part 1](http://course.fast.ai/) and some more resources on their blog [here](http://www.fast.ai/2016/12/19/favorite-posts/)
 * [A Guide to Deep Learning](http://yerevann.com/a-guide-to-deep-learning/)
-* a list of other resources: https://github.com/ChristosChristofidis/awesome-deep-learning
+* a list of other resources: <https://github.com/ChristosChristofidis/awesome-deep-learning>
 
 ## Instructor (2016-2017)
 * [Mike Gelbart](http://www.cs.ubc.ca/~mgelbart/) 
