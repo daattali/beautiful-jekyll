@@ -29,4 +29,4 @@ True, the denser the CPU, the slower are the cores.
 
 Why? Because that's what most of virtualised environments need: More cores to increase the concurrency without doubling the count of sockets.
 
-Let's take a look 
+Let's include the "Money factor" and have a look to prove that it will save you good money!
