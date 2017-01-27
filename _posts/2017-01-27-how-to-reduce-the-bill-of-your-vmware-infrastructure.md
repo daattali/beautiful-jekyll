@@ -31,7 +31,7 @@ _Of course M. Picky will say:_
 
 >But the more cores in a CPU the more the clock speed reduces!
 
-True, the denser the CPU, historically this is the case.
+True, historically this is the case, the more cores the less GHz.
 
 _Why does in not bother me?_
 
@@ -66,7 +66,7 @@ An SMB company running a 3 hosts cluster on vSphere Standard.
 - Single socket, E5-2698 v4 - **Cluster price: $22,788**
 - Dual socket, E5-2640 v4 - **Cluster price: $22,854**
 
-Here we can see that the dual-socket servers are almost at the same price as the single socket one.
+Here we can see that the dual socket servers are almost at the same price as the single socket one.
 
 To get a more accurate idea, let's check the price per GHz.
 
@@ -88,13 +88,13 @@ $22,854 / 144 GHz = **$158.70/GHz**
 
 Eventhough the price of purchase is greater for the dual socket server, it proves to actually be cheaper for the resources you get. For a $66 difference I'd rather have an extra 12 GHz. 
 
-In the meantime on a dual socket server, you have the possibility to use all the memory and PCI slots, which is not true on a single socket server. Fair enough.
+On a dual socket server you also have the possibility to use all the memory and PCI slots, which is not true on a single socket server. Fair enough, one point for dual socket.
 
 **Outcome Scenario A: Dual socket suits small environments better (as long as other socket based licensed software isn't added).**
 
 ## Scenario B
 
-A middle sized company running an 8 hosts cluster on vSphere Entperprise Plus, monitor it with vRops and stretch the storage with VSAN advanced edition.
+A middle sized company running an 8 hosts cluster on vSphere Entperprise Plus, monitor it with vRops and stretches the storage with VSAN advanced edition.
 
 ![Scenario-B.jpg]({{site.baseurl}}/img/Scenario-B.jpg)
 
@@ -121,7 +121,7 @@ $156,208 / 352 GHz = **$443.77/GHz**
 
 $235,824 / 384 GHz = **$614.12/GHz**
 
-Again, $170.35 difference for every single GHz in the cluster (Think that the same applies to memory GB, local storage ...).
+Again, $170.35 difference for every single GHz in the cluster (The same applies to memory GB, local storage ...).
 
 I bet the same M. Picky will say:
 
@@ -148,7 +148,7 @@ So what is to note here :
 Should we stop here? Maybe.  
 Will we? Boy no!
 
-Let's try to match the $235,824 of the dual socket cluster with single sockets servers.
+Let's try to match the $235,824 of the dual socket cluster with single socket servers.
 
 And here it is:
 
@@ -156,8 +156,8 @@ And here it is:
 
 - 12 x Single socket, E5-2698 v4 - **Cluster price: $234,312**
 
-So summarize, what do you get for $235,824?  
-(Let's say each server have 192 GB of memory and 3TB of raw local for VSAN)
+To summarize, what do you get for $235,824?  
+(Let's say each server have 192 GB of memory and 3TB of raw local for VSAN for the sake of this example)
 
 | Dual Socket | Single Socket |
 |-------------|---------------|
@@ -168,7 +168,7 @@ So summarize, what do you get for $235,824?
 | 8 hosts     | 12 hosts      |
 | $235,824    | $234,312      |
 
-**Outcome Scenario B: With a higher core density, single socket servers are much more cost efficient as you leverage more VMware (socket base licensed) products.**
+**Outcome Scenario B: With a higher core density, single socket servers are much more cost efficient as you license more cores at once with the VMware (socket base licensed) products.**
 
 ## Conclusion
 
