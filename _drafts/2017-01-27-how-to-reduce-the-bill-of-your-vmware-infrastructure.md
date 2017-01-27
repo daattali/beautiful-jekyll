@@ -14,4 +14,19 @@ So how do you save money then? Easy:
 
 With the evolution of processors, every year the manufacturers such as Intel and AMD increase the density of cores per CPU. In the 4th generation of E5-2600 (v4), the biggest CPU includes 22 cores!
 
-Let's have a look at the evolution in the core count of the biggest CPUs over the years:
+Let's have a look at the evolution in the core count of the biggest CPUs in the E5-2600 family over the years:
+
+| Year | CPU Model | Core count |
+|------|-----------|------------|
+| 2012 | E5-2690   | 8          |
+| 2013 | E5-2697 v2| 12         |
+| 2014 | E5-2699 v3| 18         |
+| 2016 | E5-2699 v4| 22         |
+
+_Some will say: But the clock speed reduces as well !_
+
+True, the denser the CPU, the slower are the cores.
+
+Why? Because that's what most of virtualised environments need: More cores to increase the concurrency without doubling the count of sockets.
+
+Let's take a look 
