@@ -3,11 +3,11 @@ layout: post
 published: false
 title: How to reduce the bill of your VMware infrastructure
 ---
-Since the start of virtualisation as we know it, two CPU sockets configurations were the most popular on the market since it allowed to increase density and put more VMs in a single server. Saving in the meantime money on the other components such as RAID controllers, network cads/HBAs, chassis, disks, you name it.
+Since the start of virtualisation as we know it, two CPU sockets configurations were the obvious choice since it allowed to increase density and put more VMs in a single server, saving in the meantime money on the other components such as RAID controllers, network cads/HBAs, chassis, disks, you name it.
 
-This is all great until you choke on the price of licenses. Like many other software companies, VMware licenses most of its products on a per-socket basis.
+This is all great until you choke on the price of licenses... Like many other software companies, VMware licenses most of its products on a per-socket basis. Not cores!
 
-So a servers with 2 CPUs of 8 cores each would require 2 vSphere licenses. If you are using vRops you will need 2 vRops licenses. If you use VSAN you will need 2 VSAN and so on. As you can imagine the number at the bottom of the bill quickly skyrockets.
+So a servers with 2 CPUs of 8 cores each would require 2 vSphere licenses. If you are using vRops you will need 2 vRops licenses. If you use VSAN you will need 2 VSAN and so on. As you can imagine the number at the bottom of the bill quickly skyrockets, but you can control it a little.
 
 So how do you save money then? Easy:
 - Instead of two 8 cores CPUs, why not using a single socket 16 cores CPUs?
@@ -78,13 +78,11 @@ _Dual socket, E5-2640 v4_
 
 $22,854 / 144 GHz = $158.70/GHz
 
-**Scenario A conclusion**
-
 Eventhough the price of purchase is greater for the dual socket server, it proves to actually be cheaper for the resources you get. Yes the number of cores matters a lot in virtualisation, but for a $66 difference I'd rather have an extra 12 GHz.
 
 In the meantime on a dual socket server, you have to possibility to use all the memory and PCI slots, which is not true on a single socket server.
 
-**Outcome: dual socket suits small environments better.**
+**Outcome Scenario A: Dual socket suits small environments better.**
 
 ## Scenario B
 
@@ -138,4 +136,28 @@ Should we stop here? Probably. Will we? Boy no!
 
 Let's have fun and try to match the $235,824 of the dual socket cluster with single sockets.
 
+And here it is:
+
 ![Scenario-B-12.jpg]({{site.baseurl}}/img/Scenario-B-12.jpg)
+
+- 12 x Single socket, E5-2698 v4 - **Cluster price: $234,312**
+
+So to summarize, what do you get for $235,824? Imagine these have 192 GB of memory and 3TB of raw local storage each
+
+| Dual Socket | Single Socket |
+|-------------|---------------|
+| 160 cores   | 240 cores     |
+| 384 GHz     | 528 GHz       |
+| 1,536GB RAM | 2304GB RAM    | 
+| 28TB RAW    | 36TB raw      |
+| $235,824    | $234,312      |
+
+**Outcome Scenario B: Single socket servers are much more cost efficient as you leverage more VMware (socket base licensed) products.**
+
+## Conclusion
+
+If you have always worked with dual socket servers and thought that single sockets are for peasants, consider looking into it from this day forward. With the constant evolution of processors by the manufacturers, it makes now more and more sense to go for a single processor with lot's of cores instead of dual smaller CPUs, especially in environments running lot's of small/medium size VMs.
+
+If you are thinking "Why not have dual socket servers with 22 cores processors and full of RAM?". You can technically but in my opinion you shouldn't. 
+
+Yes you will maybe save a few $ grands on the price of the chassis, raid controllers, motherboard ... But what if you lose a host? Where HA would need to restart 30 VMs on a 22 cores host, it will have to restart 60 VMs on a 44 cores one. You are basically reducing your failure domain and this is something you want to avoid. I won't get into the Scale-out versus Scale-up debate as this is not the point but it's definitely something to take into account and avoid getting carried away on crazy configurations.
