@@ -45,9 +45,9 @@ In each scenario we will detail 2 configurations:
 
 I picked these models deliberatly to have a fair point of comparison: the total number of cores in the cluster.
 
-The price of the processors come from the Intel ARK website and the price of the VMware licenses from the Dell configurator website.
+The price of the processors come from the Intel ARK website and the price of the VMware licenses from the Dell configurator website. Whether the prices are perfectly accurate doesn't really matter as the point to make is to show a difference in relation to each other server.
 
-For these configs I set a fixed base price for the servers (no license, no CPU) to 3000$ and 5000$ respectively, but this is not relevant as it will be a constant. What we are actually interested in are the processors, so let's dig in.
+For these configs I set a fixed base price for the servers (no license, no CPU) to 3000$ and 5000$ respectively. Again this is not relevant as it will be a constant, so let's dig in.
 
 ### Scenario A
 
