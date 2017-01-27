@@ -123,8 +123,17 @@ What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
 
 ![Scenario-B-9.jpg]({{site.baseurl}}/img/Scenario-B-9.jpg)
 
-_Single socket, E5-2698 v4_
+- 9 x Single socket, E5-2698 v4 - **Cluster price: $175,734**
 
-1 Socket x 20 cores x 2.20GHz x 8 hosts = 352 GHz
+1 Socket x 20 cores x 2.20GHz x 9 hosts = 396 GHz
 
-$156,208 / 352 GHz = $443.77/GHz
+So what is to note about this:
+- Still $60,090 cheaper than the 8 hosts single socket cluster ! (What could you buy with 60K ?)
+- 12 more GHz to reduce the impact of the hypervisor overhead
+- 20 more physical cores to decrease the vCPU to physical core ratio
+- 1 more host to improve redundancy and fault tolerance
+- more room for growth.
+
+Should we stop here? Probably. Will we? Boy no!
+
+Let's have fun and try to match the $235,824 of the dual socket cluster with single sockets.
