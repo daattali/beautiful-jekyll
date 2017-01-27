@@ -86,7 +86,7 @@ $22,788 / 132 GHz = **$172.63/GHz**
 
 $22,854 / 144 GHz = **$158.70/GHz**
 
-Eventhough the price of purchase is greater for the dual socket server, it proves to actually be cheaper for the resources you get. Yes the number of cores matters a lot in virtualisation, but for a $66 difference I'd rather have an extra 12 GHz. 
+Eventhough the price of purchase is greater for the dual socket server, it proves to actually be cheaper for the resources you get. For a $66 difference I'd rather have an extra 12 GHz. 
 
 In the meantime on a dual socket server, you have the possibility to use all the memory and PCI slots, which is not true on a single socket server. Fair enough.
 
