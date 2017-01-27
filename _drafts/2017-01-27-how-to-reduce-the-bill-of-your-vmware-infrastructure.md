@@ -7,6 +7,8 @@ Since the start of virtualisation as we know it, two CPU sockets configurations 
 
 This is all great until you choke on the price of licenses... Like many other software companies, VMware licenses most of its products on a per-socket basis. Not cores!
 
+![Sockets.jpg]({{site.baseurl}}/img/Sockets.jpg)
+
 So a servers with 2 CPUs of 8 cores each would require 2 vSphere licenses. If you are using vRops you will need 2 vRops licenses. If you use VSAN you will need 2 VSAN and so on. As you can imagine the number at the bottom of the bill quickly skyrockets, but you can control it a little.
 
 So how do you save money then? Easy:
@@ -49,9 +51,9 @@ In each scenario we will detail 2 configurations:
 
 I picked these models deliberatly to have a fair point of comparison: the total number of cores in the cluster.
 
-The price of the processors come from the Intel ARK website and the price of the VMware licenses from the Dell configurator website. Whether the prices are perfectly accurate doesn't really matter as the point to make is to show a difference in relation to each other server. vCenter is not included because the price wll always be the same (vCenter Standard).
+The price of the processors come from the Intel ARK website and the price of the VMware licenses from the Dell configurator website. Whether the prices are perfectly accurate doesn't really matter as the point is to show a difference in relation to each scenario. vCenter is not included because the price will always be the same (vCenter Standard pricing).
 
-For these configs I set a fixed base price for the servers (no license, no CPU) to 3000$ and 5000$ respectively. Again this is not relevant as it will be a constant, so let's dig in.
+For these configs I set a fixed base price for the servers (no license, no CPU) of 3000$ and 5000$ respectively. Again this is not relevant as it will be a constant, so let's dig in.
 
 ## Scenario A
 
@@ -115,7 +117,7 @@ I bet the same M. Picky will say:
 
 >But there are 32 GHz more on the dual socket servers.
 
-True, but this time let's make no compromise and make the point even more obvious!
+True, however this time let's make no compromise and make the point even more obvious!
 
 What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
 
@@ -125,16 +127,16 @@ What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
 
 1 Socket x 20 cores x 2.20GHz x 9 hosts = 396 GHz
 
-So what is to note about this:
-- Still $60,090 cheaper than the 8 hosts single socket cluster ! (What could you buy with 60K ?)
+So what is to note here :
+- Still $60,090 cheaper than the 8 hosts single socket cluster ! (That could provide training to your whole team)
 - 12 more GHz to reduce the impact of the hypervisor overhead
 - 20 more physical cores to decrease the vCPU to physical core ratio
-- 1 more host to improve redundancy and fault tolerance
-- more room for growth.
+- 1 more host to improve redundancy and reduce failure domains
+- Room for growth.
 
-Should we stop here? Probably. Will we? Boy no!
+Should we stop here? Maybe. Will we? Boy no!
 
-Let's have fun and try to match the $235,824 of the dual socket cluster with single sockets.
+Let's try to match the $235,824 of the dual socket cluster with single sockets servers.
 
 And here it is:
 
@@ -150,14 +152,19 @@ So to summarize, what do you get for $235,824? Imagine these have 192 GB of memo
 | 384 GHz     | 528 GHz       |
 | 1,536GB RAM | 2304GB RAM    | 
 | 28TB RAW    | 36TB raw      |
+| 8 hosts     | 12 hosts      |
 | $235,824    | $234,312      |
 
 **Outcome Scenario B: Single socket servers are much more cost efficient as you leverage more VMware (socket base licensed) products.**
 
 ## Conclusion
 
-If you have always worked with dual socket servers and thought that single sockets are for peasants, consider looking into it from this day forward. With the constant evolution of processors by the manufacturers, it makes now more and more sense to go for a single processor with lot's of cores instead of dual smaller CPUs, especially in environments running lot's of small/medium size VMs.
+If like M. Picky you have always worked with dual socket servers and thought that single sockets are for peasants, consider looking into it from this day forward. With the constant evolution of processors by the manufacturers, it makes now more and more sense to go for a single processor with lot's of cores instead of dual smaller CPUs, especially in environments running lot's of small/medium size VMs. 
 
-If you are thinking "Why not have dual socket servers with 22 cores processors and full of RAM?". You can technically but in my opinion you shouldn't. 
+You might realise that you'll save a lot of money or maybe it won't change a lot. Again it will depend on your environment.
 
-Yes you will maybe save a few $ grands on the price of the chassis, raid controllers, motherboard ... But what if you lose a host? Where HA would need to restart 30 VMs on a 22 cores host, it will have to restart 60 VMs on a 44 cores one. You are basically reducing your failure domain and this is something you want to avoid. I won't get into the Scale-out versus Scale-up debate as this is not the point but it's definitely something to take into account and avoid getting carried away on crazy configurations.
+If you have planned to start small, because of budget restrictions for example, and expand later on with solutions like VSAN, VROPS or NSX, I highly recommend to take the full picture into account when doing your sizing. Because when the time comes to write the second check you will be happy to have single socket servers.
+
+If you are thinking "Why not have half as many servers but each with two processors of 22 cores and full of RAM?". Well, technically you can but I wouldn't recommend it.
+
+Yes you will maybe save a few $ grands on the price of the chassis, raid controllers, motherboard ... But what if you lose a host? Where HA would need to restart 30 VMs on a 22 cores host, will have to restart 60 VMs on a 44 cores one, twice as much sweat during the failover process! You are basically reducing your failure domain and that's something you (as a sane admin) want to avoid. I won't get into the Scale-out versus Scale-up debate as this is not the point but it's definitely something to take into account and avoid getting carried away on crazy configurations.
