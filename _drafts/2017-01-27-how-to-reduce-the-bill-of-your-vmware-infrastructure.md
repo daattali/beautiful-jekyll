@@ -53,3 +53,24 @@ For these configs I set a fixed base price for the servers (no license, no CPU) 
 
 SMB company with a 3 hosts cluster running vSphere Standard. 
 
+![Scenario-A.jpg]({{site.baseurl}}/img/Scenario-A.jpg)
+
+- Single socket, E5-2698 v4: $22,788
+- Dual socket, E5-2640 v4: $22,854
+
+Here we can see that the dual-socket servers are almost at the same price as the single socket one.
+
+To get a more accurate idea, let's check the price per GHz.
+
+**Single socket, E5-2698 v4**
+
+1 Socket x 20 cores x 2.20GHz x 3 hosts = 132 GHz
+
+$22,788 / 132 GHz = $172.63/GHz
+
+**Dual socket, E5-2640 v4**
+
+2 Sockets x 10 cores x 2.4 GHz z 3 hosts = 144 GHz
+
+$22,854 / 144 GHz = $158.70/GHz
+
