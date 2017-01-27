@@ -95,7 +95,9 @@ Middle sized company running an 8 hosts cluster on vSphere Entperprise Plus, mon
 - Single socket, E5-2698 v4 - **Cluster price: $156,208**
 - Dual socket, E5-2640 v4 - **Cluster price: $235,824**
 
-Quite a difference isn't it? I think these figures are self explanatory, but let's follow the same reasoning as scenario B and get a price per GHz.
+In this scenario for the _same number of cores (not GHz)_ the cluster is **$79,616 more expensive with 2 socket** servers. Quite a difference right?
+
+I think these figures are self explanatory, but let's follow the same reasoning as scenario B and get a price per GHz.
 
 _Single socket, E5-2698 v4_
 
