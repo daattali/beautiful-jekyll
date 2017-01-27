@@ -25,7 +25,7 @@ Let's have a look at the evolution in the core count of the biggest CPUs in the 
 
 source: [https://ark.intel.com/](https://ark.intel.com/)
 
-_Some will say:_
+_M. Picky will say:_
 
 >But the clock speed reduces as well !
 
@@ -110,3 +110,21 @@ _Dual socket, E5-2640 v4_
 2 Sockets x 10 cores x 2.4 GHz x 8 hosts = 384 GHz
 
 $235,824 / 384 GHz = $614.12/GHz
+
+Again, $170.35 difference for every single GHz in the cluster (Think that the same applies to memory GB, local storage ...).
+
+I bet the same M. Picky will say:
+
+>But there are 32 GHz more on the dual socket servers.
+
+True, but this time let's make no compromise and make the point even more obvious!
+
+What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
+
+![Scenario-B-9.jpg]({{site.baseurl}}/img/Scenario-B-9.jpg)
+
+_Single socket, E5-2698 v4_
+
+1 Socket x 20 cores x 2.20GHz x 8 hosts = 352 GHz
+
+$156,208 / 352 GHz = $443.77/GHz
