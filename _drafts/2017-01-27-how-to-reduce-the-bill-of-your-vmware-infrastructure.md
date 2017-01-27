@@ -25,13 +25,17 @@ Let's have a look at the evolution in the core count of the biggest CPUs in the 
 
 source: [https://ark.intel.com/](https://ark.intel.com/)
 
-_Some will say: But the clock speed reduces as well !_
+_Some will say:_
+
+>But the clock speed reduces as well !
 
 True, the denser the CPU, the slower are the cores.
 
-Why? Because that's what most of virtualised environments need: More cores to increase the concurrency without doubling the count of sockets.
+_But why does in not bug me?_
 
-Let's include the "Money factor" and have a look to prove that it will save you good money!
+>Because that's what most of virtualised environments need: More cores to increase the concurrency without doubling the count of sockets.
+
+So let's include the "**Money factor**" and have a look to prove that it could save you good money to switch to single socket servers!
 
 ### Parameters of the study
 
@@ -55,8 +59,8 @@ SMB company running a 3 hosts cluster on vSphere Standard.
 
 ![Scenario-A.jpg]({{site.baseurl}}/img/Scenario-A.jpg)
 
-- Single socket, E5-2698 v4: $22,788
-- Dual socket, E5-2640 v4: $22,854
+- Single socket, E5-2698 v4 - **Cluster price: $22,788**
+- Dual socket, E5-2640 v4 - **Cluster price: $22,854**
 
 Here we can see that the dual-socket servers are almost at the same price as the single socket one.
 
@@ -70,7 +74,7 @@ $22,788 / 132 GHz = $172.63/GHz
 
 _Dual socket, E5-2640 v4_
 
-2 Sockets x 10 cores x 2.4 GHz z 3 hosts = 144 GHz
+2 Sockets x 10 cores x 2.4 GHz x 3 hosts = 144 GHz
 
 $22,854 / 144 GHz = $158.70/GHz
 
@@ -87,3 +91,20 @@ In the meantime on a dual socket server, you have to possibility to use all the 
 Middle sized company running an 8 hosts cluster on vSphere Entperprise Plus, monitor it with vRops and stretch the storage with VSAN advanced edition.
 
 ![Scenario-B.jpg]({{site.baseurl}}/img/Scenario-B.jpg)
+
+- Single socket, E5-2698 v4 - **Cluster price: $156,208**
+- Dual socket, E5-2640 v4 - **Cluster price: $235,824**
+
+Quite a difference isn't it? I think these figures are self explanatory, but let's follow the same reasoning as scenario B and get a price per GHz.
+
+_Single socket, E5-2698 v4_
+
+1 Socket x 20 cores x 2.20GHz x 8 hosts = 352 GHz
+
+$156,208 / 352 GHz = $443.77/GHz
+
+_Dual socket, E5-2640 v4_
+
+2 Sockets x 10 cores x 2.4 GHz x 8 hosts = 384 GHz
+
+$235,824 / 384 GHz = $614.12/GHz
