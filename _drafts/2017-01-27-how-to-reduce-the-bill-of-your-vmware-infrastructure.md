@@ -23,6 +23,8 @@ Let's have a look at the evolution in the core count of the biggest CPUs in the 
 | 2014 | E5-2699 v3| 18         |
 | 2016 | E5-2699 v4| 22         |
 
+source: [https://ark.intel.com/](https://ark.intel.com/)
+
 _Some will say: But the clock speed reduces as well !_
 
 True, the denser the CPU, the slower are the cores.
@@ -30,3 +32,7 @@ True, the denser the CPU, the slower are the cores.
 Why? Because that's what most of virtualised environments need: More cores to increase the concurrency without doubling the count of sockets.
 
 Let's include the "Money factor" and have a look to prove that it will save you good money!
+
+We will see here 2 scenarios:
+- Scenario A : Small infrastructure, hosts running vSphere Standard only.
+- Scenario B : Advanced Infrastructure, Hosts running vSphere with Operations Manager Enterprise Plus and VSAN advanced.
