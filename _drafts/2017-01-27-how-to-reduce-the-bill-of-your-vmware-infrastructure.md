@@ -33,9 +33,9 @@ True, the denser the CPU, the slower the cores.
 
 _Why does in not bother me?_
 
->Because that's what most of virtualised environments need: More cores to increase the concurrency without doubling the count of sockets.
+>Because that's what most of virtualised environments need: More cores to improve the concurrency without doubling the sockets.
 
-So let's include the "**Money factor**" and have a look to prove that it could save you good money to switch to single socket servers!
+So let's include the **Money factor** and have a look at it to prove that it could save you good money to switch to single socket servers!
 
 ### Parameters of the study
 
@@ -45,7 +45,7 @@ We will see here 2 scenarios:
 
 In each scenario we will detail 2 configurations:
 - **Single socket** servers equipped with E5-2698 v4 (20 cores each)
-- **Dual socket** servers equipped with E5-2640 v4 (10 cores)
+- **Dual socket** servers equipped with E5-2640 v4 (10 cores each so 20 cores per server)
 
 I picked these models deliberatly to have a fair point of comparison: the total number of cores in the cluster.
 
