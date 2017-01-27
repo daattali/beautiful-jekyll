@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: How to reduce the bill of your VMware infrastructure
+title: How to reduce the cost of your VMware infrastructure
 ---
 Since the start of virtualisation as we know it, two CPU sockets configurations were the obvious choice since it allowed to increase density and put more VMs in a single server, saving in the meantime money on the other components such as RAID controllers, network cads/HBAs, chassis, disks, you name it.
 
