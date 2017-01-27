@@ -137,3 +137,5 @@ So what is to note about this:
 Should we stop here? Probably. Will we? Boy no!
 
 Let's have fun and try to match the $235,824 of the dual socket cluster with single sockets.
+
+![Scenario-B-12.jpg]({{site.baseurl}}/img/Scenario-B-12.jpg)
