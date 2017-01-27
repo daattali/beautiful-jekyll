@@ -33,6 +33,24 @@ Why? Because that's what most of virtualised environments need: More cores to in
 
 Let's include the "Money factor" and have a look to prove that it will save you good money!
 
+### Parameters of the study
+
 We will see here 2 scenarios:
-- Scenario A : Small infrastructure, hosts running vSphere Standard only.
-- Scenario B : Advanced Infrastructure, Hosts running vSphere with Operations Manager Enterprise Plus and VSAN advanced.
+- Scenario A : Small infrastructure, 3 hosts running vSphere Standard only.
+- Scenario B : Advanced Infrastructure, 8 Hosts running vSphere with Operations Manager Enterprise Plus and VSAN advanced.
+
+In each scenario we will detail 2 configurations:
+- Single socket servers equipped with E5-2698 v4 (20 cores each)
+- Dual socket servers equipped with E5-2640 v4 (10 cores)
+
+I picked these 2 deliberatly to have a fair point of comparison: the total number of cores in the cluster.
+
+The price of the processors come from the Intel website.  
+The price of the VMware licenses come from the Dell configurator website.
+
+For these configs I set a fixed base price for the servers (no license, no CPU) to 3000$ and 5000$ respectively, but this is not relevant as it will be a constant. What we are actually interested in are the processors, so let's dig in.
+
+### Scenario A
+
+SMB company with a 3 hosts infrastructure running vSphere Standard. 
+
