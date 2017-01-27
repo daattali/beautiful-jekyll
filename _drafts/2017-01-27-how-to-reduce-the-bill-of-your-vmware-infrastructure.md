@@ -49,9 +49,9 @@ The price of the processors come from the Intel ARK website and the price of the
 
 For these configs I set a fixed base price for the servers (no license, no CPU) to 3000$ and 5000$ respectively. Again this is not relevant as it will be a constant, so let's dig in.
 
-### Scenario A
+## Scenario A
 
-SMB company with a 3 hosts cluster running vSphere Standard. 
+SMB company running a 3 hosts cluster on vSphere Standard. 
 
 ![Scenario-A.jpg]({{site.baseurl}}/img/Scenario-A.jpg)
 
@@ -62,15 +62,28 @@ Here we can see that the dual-socket servers are almost at the same price as the
 
 To get a more accurate idea, let's check the price per GHz.
 
-**Single socket, E5-2698 v4**
+_Single socket, E5-2698 v4_
 
 1 Socket x 20 cores x 2.20GHz x 3 hosts = 132 GHz
 
 $22,788 / 132 GHz = $172.63/GHz
 
-**Dual socket, E5-2640 v4**
+_Dual socket, E5-2640 v4_
 
 2 Sockets x 10 cores x 2.4 GHz z 3 hosts = 144 GHz
 
 $22,854 / 144 GHz = $158.70/GHz
 
+**Scenario A conclusion**
+
+Eventhough the price of purchase is greater for the dual socket server, it proves to actually be cheaper for the resources you get. Yes the number of cores matters a lot in virtualisation, but for a $66 difference I'd rather have an extra 12 GHz.
+
+In the meantime on a dual socket server, you have to possibility to use all the memory and PCI slots, which is not true on a single socket server.
+
+**Outcome: dual socket suits small environments better.**
+
+## Scenario B
+
+Middle sized company running an 8 hosts cluster on vSphere Entperprise Plus, monitor it with vRops and stretch the storage with VSAN advanced edition.
+
+![Scenario-B.jpg]({{site.baseurl}}/img/Scenario-B.jpg)
