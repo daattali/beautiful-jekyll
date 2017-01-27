@@ -139,7 +139,7 @@ What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
 
 So what is to note here :
 
-- Still $60,090 cheaper than the 8 hosts single socket cluster ! (That could provide training to your whole team)
+- Still $60,090 cheaper than the 8 hosts single socket cluster ! (Nice pay raise for the team * wink * to my boss)
 - 12 more GHz to reduce the impact of the hypervisor overhead
 - 20 more physical cores to decrease the vCPU to physical core ratio
 - 1 more host to improve redundancy and reduce failure domains
