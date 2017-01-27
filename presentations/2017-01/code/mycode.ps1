@@ -14,7 +14,7 @@ gci
 # initialize a repo
 git init
 git commit -am "[initial] empty commit" --allow-empty
-git tag initial 210ea67 -m "Tag initial commit"
+git tag initial 40526ac -m "Tag initial commit"
 
 git log --decorate --oneline --graph
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -43,11 +43,12 @@ git reset --mixed #(default) --soft --hard
 #Move HEAD back 1 commit
 git checkout HEAD~1
 
-git checkout 262e8a8
+git checkout 262e8a8 # your SHA will be different
 
 # remotes
 
 git remote add origin https://github.com/CincyPowerShell/gitdemo.git
+git pull --rebase
 git push -u origin master
 
 # pull merge changes
