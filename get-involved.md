@@ -7,16 +7,16 @@ Here are some things you can do to get involved with TX-10 Indivisible:
 
 ### Read the Indivisible Guide
 
-Before you do anything else, please read [The Indivisible
+Start with [The Indivisible
 Guide](https://www.indivisibleguide.com/download-the-guide). That's
 the playbook we're following. It presents a specific strategy designed
-especially for us to resist the bad policies we expect from Trump and
+especially for us to resist the bad policies coming from Trump and
 his supporters.
 
 ### Join our Facebook Group
 
-If you're a Facebook user, you can join the [TX-10 Indivisible Facebook
-Group](https://www.facebook.com/groups/381205945554014/), where we post our
+If you're a Facebook user, join the [TX-10 Indivisible Facebook
+Group](https://www.facebook.com/groups/381205945554014/) where we post our
 announcements and "call to action" notices. We also share selected
 links of interest. It's a closed group, and you can request access from the above-linked page. 
 
@@ -42,8 +42,9 @@ other motivated activists.
 ### Get Slack
 
 We organize our work through an online message system called Slack.
-If you want to help us with planning and organizing, [contact our admin
-team](mailto:info@tx10indivisible.us) and request Slack access.
+If you are ready to roll up your sleeves and have a voice in our planning
+and organization, [contact our admin team](mailto:info@tx10indivisible.us?subject=request slack access)
+and request Slack access.
 
 ### Connect with Indivisible Team
 
