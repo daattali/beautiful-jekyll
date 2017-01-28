@@ -25,6 +25,6 @@ We are actively working to stop their radical agenda.
 
 Please join us if you share that goal.
 
-Next: learn how to [get involved](/get-involved).
+**Next: learn how to [get involved](/get-involved).**
 
 For more information, contact [info@tx10indivisible.us](mailto:info@tx10indivisible.us)
