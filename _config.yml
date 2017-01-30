@@ -46,6 +46,8 @@ author:
   github: tjvguerreiro    # eg. daattali
   twitter: tjvguerreiro   # eg. daattali
   linkedin: tjvguerreiro  # eg. daattali
+  scholar: mo6UPuIAAAAJ
+  researchgate: Tiago_Guerreiro
 
 # Select which links to show in the footer
 footer-links-active:
@@ -64,6 +66,8 @@ footer-links-active:
   youtube: false
   spotify: false
   telephone: false
+  scholar: true
+  researchgate: true
 
 # Select which share links to show in posts
 share-links-active:
@@ -116,7 +120,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
