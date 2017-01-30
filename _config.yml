@@ -5,7 +5,7 @@
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "http://tjvguerreiro.github.io"
-baseurl: ""
+baseurl: "/"
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -17,7 +17,7 @@ baseurl: ""
 title: Tiago Guerreiro
 
 # Short description of your site
-description: Accessibility and ICT for Health Research
+description: Accessible Computing and Pervasive Health Research
 
 # --- Navigation bar options --- #
 
