@@ -1,0 +1,29 @@
+{% if false %}
+#
+# This is an example template to embed our email signup form into the website.
+# More information on customization here:
+# https://help.actionnetwork.org/hc/en-us/articles/203112529-Customizing-widgets-with-javascript
+#
+{% endif %}
+<link href='https://actionnetwork.org/css/style-embed-whitelabel.css' rel='stylesheet' type='text/css' />
+<style type="text/css">
+#email_signup {
+  width: 300px;
+  float: right;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  background: #e8e8e8;
+  border: solid black 3px;
+  border-radius: 15px;
+}
+#can_embed_form h2 { font-size: 18px; text-align: center; }
+#can_embed_form h4 { display: none; }
+#can_embed_form .country_wrap { display: none; }
+#can_embed_form #d_sharing { border: none !important; }
+#can_embed_form input[type="submit"] { margin-bottom: 0; }
+#can_embed_form #action_info { display: none; }
+</style>
+<script src='https://actionnetwork.org/widgets/v2/form/get-our-alerts?format=js&source=widget'></script>
+<div id="email_signup">
+<div id='can-form-area-get-our-alerts' style='width: 100%'></div>
+</div>
