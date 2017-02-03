@@ -35,17 +35,6 @@ Please retweet and comment as appropriate and help amplify our social media mess
 Follow our announcements and take action. Our announcements are posted
 to the Facebook group, on Twitter, and on our website.
 
-And always feel empowered to take action on your own. If you join our
-Slack discussion forum (below) you can share your ideas and connect with
-other motivated activists.
-
-### Get Slack
-
-We organize our work through an online message system called Slack.
-If you are ready to roll up your sleeves and have a voice in our planning
-and organization, [contact our admin team](mailto:info@tx10indivisible.us?subject=request slack access)
-and request Slack access.
-
 ### Connect with Indivisible Team
 
 Sign up for email updates from the national Indivisible Team.
