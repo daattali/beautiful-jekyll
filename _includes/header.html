@@ -18,6 +18,10 @@
   ></div>
 {% endif %}
 
+<!-- ADDED EMAIL FORM TO ALL PAGES.  POSITION IS FIXED BELOW MAX NAV DROP DOWN -->
+<!-- TODO:  REVISIT TO INSURE RESPONSIVE VIEWS ARE APPROPRIATE -->
+{% include email_signup_form.html %}
+
 <header class="header-section {% if page.bigimg %}has-img{% endif %}">
 {% if page.bigimg %}
 <div class="big-img intro-header">
@@ -34,7 +38,7 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
@@ -59,7 +63,7 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}

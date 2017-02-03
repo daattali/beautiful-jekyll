@@ -88,7 +88,7 @@
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
@@ -117,4 +117,7 @@
   <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
 
+  <!-- ADDED FOR GLOBAL SUPPORT OF JQUERY ON ALL PAGES -->
+  <!-- TODO:  DEPENDENCIES THAT PREVENT US FROM USING LATEST VERSION? -->
+  <script type="text/javascript" src="/js/jquery-1.11.2.min.js"></script>
 </head>

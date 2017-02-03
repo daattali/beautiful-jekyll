@@ -5,12 +5,26 @@
 # https://help.actionnetwork.org/hc/en-us/articles/203112529-Customizing-widgets-with-javascript
 #
 {% endif %}
+<script type="text/javascript">
+$(function() {
+    $(document).on('can_embed_loaded', function() {
+      $('#can_embed_form_inner h2').text('Sign up for occasional news and alerts');
+      //$('#d_sharing ul li label:first').text('Opt in to TX-10 Indivisible updates');
+         // TODO: PLACEHOLDER FOR FURTHER CUSTOMIZATIONS TO THE WIDGET
+    });
+
+     $(document).on('can_embed_submitted', function() {
+         // TODO: PLACEHOLDER FOR FURTHER CUSTOMIZATIONS TO THE WIDGET
+     });
+});
+</script>
 <link href='https://actionnetwork.org/css/style-embed-whitelabel.css' rel='stylesheet' type='text/css' />
 <style type="text/css">
 #email_signup {
-  width: 300px;
-  float: right;
-  margin: 5px 10px;
+  width: 240px;
+  position: fixed;
+  top: 220px;
+  right: 10px;
   padding: 5px 10px;
   background: #e8e8e8;
   border: solid black 3px;
