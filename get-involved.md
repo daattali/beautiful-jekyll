@@ -16,7 +16,7 @@ his supporters.
 ### Join our Facebook Group
 
 If you're a Facebook user, join the [TX-10 Indivisible Facebook
-Group](https://www.facebook.com/groups/381205945554014/) where we post our
+Group](https://www.facebook.com/groups/tx10indivisible/) where we post our
 announcements and "call to action" notices. We also share selected
 links of interest. It's a closed group, and you can request access from the above-linked page. 
 
