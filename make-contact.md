@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Make Contact
+#meta-title: TX-10 Indivisible - Make Contact
+#meta-description: Make Contact with TX-10 Indivisible
+#share-img: http://www.example/img/example-1200x1200.png
 ---
 
 > We recommend two key strategic components:
@@ -83,4 +86,3 @@ Austin, TX 78701<br />
 Russell Senate Office Bldg 404<br />
 Washington, DC 20510<br />
 202-224-5922
-
