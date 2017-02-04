@@ -1,0 +1,20 @@
+.rh-sidebar { }
+  #email_signup { float: right; }
+  .speed-dial-wrapper { margin-top: 32px; float: right; width: 240px; }
+    .speed-dial-wrapper h2 { text-align: left; padding-bottom: 8px; }
+    .speed-dial-wrapper table { font-size: .8em; width: 100%; }
+    .speed-dial-wrapper table a { color: #b71f00; }
+
+
+#email_signup {
+  width: 240px;
+  background: #e8e8e8;
+  border: solid black 3px;
+  border-radius: 15px;
+}
+#can_embed_form h2 { font-size: 18px; text-align: center; }
+#can_embed_form h4 { display: none; }
+#can_embed_form .country_wrap { display: none; }
+#can_embed_form #d_sharing { border: none !important; }
+#can_embed_form input[type="submit"] { margin-bottom: 0; }
+#can_embed_form #action_info { display: none; }
