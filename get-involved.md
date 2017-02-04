@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Get Involved
+#meta-title: TX-10 Indivisible - Get Involved
+#meta-description: Get Involved with TX-10 Indivisible
+#share-img: http://www.example/img/example-1200x1200.png
 ---
 
-Here are some things you can do to get involved with TX-10 Indivisible: 
+Here are some things you can do to get involved with TX-10 Indivisible:
 
 ### Read the Indivisible Guide
 
@@ -18,7 +21,7 @@ his supporters.
 If you're a Facebook user, join the [TX-10 Indivisible Facebook
 Group](https://www.facebook.com/groups/381205945554014/) where we post our
 announcements and "call to action" notices. We also share selected
-links of interest. It's a closed group, and you can request access from the above-linked page. 
+links of interest. It's a closed group, and you can request access from the above-linked page.
 
 After you join the Facebook group, be sure to click "Notifications"
 in the page banner and select "All Posts". Otherwise you'll miss our

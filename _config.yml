@@ -47,7 +47,7 @@ author:
   # our footer.html is hacked to allow a URL value for "facebook"
   facebook: https://www.facebook.com/groups/381205945554014/
   #github: yourname    # eg. daattali
-  #twitter: yourname   # eg. daattali
+  twitter: tx10indivisible   # eg. daattali
   #reddit: yourname    # eg. daattali
   #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   #linkedin: yourname  # eg. daattali
@@ -55,7 +55,7 @@ author:
   #stackoverflow: yourlink  # eg. "3943160/daattali"
   #snapchat: yourname  # eg. daattali
   #instagram: yourname # eg. daattali
-  #youtube: yourlink   # eg. user/daattali or channel/daattali
+  youtube: channel/UCjEb4sUT_K7hUm5h_ueDtew   # eg. user/daattali or channel/daattali
   #spotify: yourname   # eg. daattali
   #telephone: yourphone   # eg. +14159998888
 
@@ -64,7 +64,7 @@ footer-links-active:
   rss: false
   facebook: true
   email: true
-  twitter: false
+  twitter: true
   google-plus: false
   github: false
   reddit: false
@@ -73,7 +73,7 @@ footer-links-active:
   stackoverflow: false
   snapchat: false
   instagram: false
-  youtube: false
+  youtube: true
   spotify: false
   telephone: false
 

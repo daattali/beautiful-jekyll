@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Frequently Asked Questions
+#meta-title: TX-10 Indivisible - Frequently Asked Questions
+#meta-description: Frequently Asked Questions about TX-10 Indivisible
+#share-img: http://www.example/img/example-1200x1200.png
 ---
 
 
@@ -37,4 +40,3 @@ We communicate with the national group as well as other localities.
 
 The network of independent Indivisible organizations work to pool resources
 and coordinate actions.
-

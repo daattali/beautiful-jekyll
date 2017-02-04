@@ -1,6 +1,9 @@
 ---
 layout: page
 title: About TX-10 Indivisible
+#meta-title: TX-10 Indivisible - About
+#meta-description: Information about TX-10 Indivisible
+#share-img: http://www.example/img/example-1200x1200.png
 ---
 
 > Donald Trump is the biggest popular vote loser in history to ever call
