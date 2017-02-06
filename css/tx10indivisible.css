@@ -25,7 +25,6 @@
   padding: 0.5em 3px;
 }
 
-
 .rh-sidebar #email-signup-wrapper #can_embed_form { padding-bottom: 1em; }
 .rh-sidebar #email-signup-wrapper #can_embed_form h4 { display: none; }
 .rh-sidebar #email-signup-wrapper #can_embed_form .country_wrap { display: none; }
@@ -35,5 +34,7 @@
 .rh-sidebar #email-signup-wrapper #can_embed_form #d_sharing { display: none; }
 
 
-.speed-dial-wrapper table { font-size: .8em; width: 100%; }
-.speed-dial-wrapper table a { color: #b71f00; }
+.speed-dial-wrapper {  font-size: 0.8em; }
+.speed-dial-wrapper h3 { font-size: 1em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.2em; }
+.speed-dial-wrapper ul { list-style: none; padding-left: 0; margin-left: 0;  }
+

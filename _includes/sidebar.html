@@ -1,36 +1,52 @@
 <div class="col-md-3 rh-sidebar">
-<!-- ADDED EMAIL FORM TO ALL PAGES.  POSITION IS FIXED BELOW MAX NAV DROP DOWN -->
-<!-- TODO:  REVISIT TO INSURE RESPONSIVE VIEWS ARE APPROPRIATE -->
-  {% include email_signup_form.html %}
+
+  {% if false %}
+  #
+  # More information on Action Network customization here:
+  # https://help.actionnetwork.org/hc/en-us/articles/203112529-Customizing-widgets-with-javascript
+  #
+  {% endif %}
+  <script type="text/javascript">
+    $(function() {
+        $(document).on('can_embed_loaded', function() {
+          $('#can_embed_form_inner h2').text('Sign up for occasional news and alerts');
+          //$('#d_sharing ul li label:first').text('Opt in to TX-10 Indivisible updates');
+             // TODO: PLACEHOLDER FOR FURTHER CUSTOMIZATIONS TO THE WIDGET
+        });
+       $(document).on('can_embed_submitted', function() {
+           // TODO: PLACEHOLDER FOR FURTHER CUSTOMIZATIONS TO THE WIDGET
+       });
+    });
+  </script>
+  <link href='https://actionnetwork.org/css/style-embed-whitelabel.css' rel='stylesheet' type='text/css' />
+  <div id="email-signup-wrapper" class="pretty-box">
+    <div id='can-form-area-get-our-alerts' style='width: 100%'></div>
+  </div>
+  <script src='https://actionnetwork.org/widgets/v2/form/get-our-alerts?format=js&source=widget'></script>
 
   <div class="speed-dial-wrapper pretty-box">
     <h2>Speed Dial</h2>
-    <table border="0" cellspacing="5" cellpadding="0">
-      <tbody>
-      <tr>
-          <td>Rep. Mike McCaul (TX-10)<br/>
-              <a href="tel:512-473-2357"><img src="/img/icon-phone.png" width="16" /> 512-473-2357</a> (Austin)<br/>
-              <a href="tel:202-225-2401"><img src="/img/icon-phone.png" width="16" /> 202-225-2401</a> (DC)<br/>
-              <!--<a href="http://mccaul.house.gov/"><img src="/img/icon-web.png" width="16" /> mccaul.house.gov</a><br/>-->
-              <!-- add twitter link -->
-          </td>
-      </tr>
-        <tr>
-          <td>Senator John Cornyn<br/>
-              <a href="tel:512-469-6034"><img src="/img/icon-phone.png" width="16" /> 512-469-6034</a> (Austin)<br/>
-              <a href="tel:202-224-2934"><img src="/img/icon-phone.png" width="16" /> 202-224-2934</a> (DC)<br/>
-              <!--<a href="https://www.cornyn.senate.gov/"><img src="/img/icon-web.png" width="16" /> www.cornyn.senate.gov/</a><br/>-->
-              <!-- add twitter link -->
-          </td>
-        </tr>
-        <tr>
-          <td>Senator Ted Cruz<br/>
-              <a href="tel:512-916-5834"><img src="/img/icon-phone.png" width="16" /> 512-916-5834</a> (Austin)<br/>
-              <a href="tel:202-224-5922"><img src="/img/icon-phone.png" width="16" /> 202-224-5922</a> (DC)<br/>
-              <!--<a href="https://www.cruz.senate.gov/"><img src="/img/icon-web.png" width="16" /> www.cruz.senate.gov/</a><br/>-->
-              <!-- add twitter link -->
-        </tr>
-      </tbody>
-    </table>
+    <h3>Rep. Mike McCaul (TX-10)</h3>
+    <ul class="speed-dial">
+      <li><i class="fa fa-phone"></i> <a href="tel:512-473-2357">512-473-2357</a> (Austin)</li>
+      <li><i class="fa fa-phone"></i> <a href="tel:202-225-2401">202-225-2401</a> (DC)</li>
+      <li><i class="fa fa-globe"></i> <a href="http://mccaul.house.gov/">mccaul.house.gov</a></li>
+      <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/RepMcCaul">@RepMcCaul</a></li>
+    </ul>
+    <h3>Senator John Cornyn</h3>
+    <ul>
+      <li><i class="fa fa-phone"></i> <a href="tel:512-469-6034">512-469-6034</a> (Austin)</li>
+      <li><i class="fa fa-phone"></i> <a href="tel:202-224-2934">202-224-2934</a> (DC)<br/>
+      <li><i class="fa fa-globe"></i> <a href="https://www.cornyn.senate.gov/"> www.cornyn.senate.gov</a></li>
+      <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/JohnCornyn">@JohnCornyn</a></li>
+    </ul>
+    <h3>Senator Ted Cruz</h3>
+    <ul>
+      <li><i class="fa fa-phone"></i> <a href="tel:512-916-5834">512-916-5834</a> (Austin)</li>
+      <li><i class="fa fa-phone"></i> <a href="tel:202-224-5922">202-224-5922</a> (DC)</li>
+      <li><i class="fa fa-globe"></i> <a href="https://www.cruz.senate.gov/">www.cruz.senate.gov</a></li>
+      <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/tedcruz">@TedCruz</a></li>
+    </ul>
   </div>
-</div>
+
+</div><!-- .rh-sidebar -->
