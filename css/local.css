@@ -9,8 +9,8 @@
 
 #email_signup {
   width: 240px;
-  position: fixed;
-  top: 220px;
+  position: absolute;
+  top: 170px;
   right: 10px;
 }
 #email_signup #can_embed_form { padding-bottom: 1em; }
