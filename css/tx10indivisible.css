@@ -1,12 +1,3 @@
-.rh-sidebar { }
-  #email_signup { float: right; }
-  .speed-dial-wrapper { margin-top: 32px; float: right; width: 240px; }
-    .speed-dial-wrapper h2 { text-align: left; padding-bottom: 8px; }
-    .speed-dial-wrapper table { font-size: .8em; width: 100%; }
-    .speed-dial-wrapper table a { color: #b71f00; }
-
-
-
 .pretty_box {
   border: solid #e0e0e0 1px;
   background: #e8e8e8;
@@ -14,16 +5,35 @@
   padding: 5px 10px;
 }
 
-#email_signup {
+.rh-sidebar { }
+
+.rh-sidebar #email_signup,
+.rh-sidebar .speed-dial-wrapper {
+  float: right;
   width: 240px;
+  margin: 0 5px 1em;
 }
 
-#email_signup #can_embed_form { padding-bottom: 1em; }
-#email_signup #can_embed_form h2 { font-size: 18px; line-height: 1.1em; text-align: center; padding-top: 0.5em }
-#email_signup #can_embed_form h4 { display: none; }
-#email_signup #can_embed_form .country_wrap { display: none; }
-#email_signup #can_embed_form #d_sharing { border: none !important; }
-#email_signup #can_embed_form input[type="submit"] { margin-bottom: 0; }
-#email_signup #can_embed_form #action_info { display: none; }
-#email_signup #can_embed_form #d_sharing { display: none; }
+.rh-sidebar #email_signup #can_embed_form h2,
+.speed-dial-wrapper h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em 3px;
+}
 
+
+.rh-sidebar #email_signup #can_embed_form { padding-bottom: 1em; }
+.rh-sidebar #email_signup #can_embed_form h4 { display: none; }
+.rh-sidebar #email_signup #can_embed_form .country_wrap { display: none; }
+.rh-sidebar #email_signup #can_embed_form #d_sharing { border: none !important; }
+.rh-sidebar #email_signup #can_embed_form input[type="submit"] { margin-bottom: 0; }
+.rh-sidebar #email_signup #can_embed_form #action_info { display: none; }
+.rh-sidebar #email_signup #can_embed_form #d_sharing { display: none; }
+
+
+.speed-dial-wrapper table { font-size: .8em; width: 100%; }
+.speed-dial-wrapper table a { color: #b71f00; }
