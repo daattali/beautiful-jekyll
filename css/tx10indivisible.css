@@ -1,4 +1,4 @@
-.pretty_box {
+.pretty-box {
   border: solid #e0e0e0 1px;
   background: #e8e8e8;
   border-radius: 15px;
@@ -7,14 +7,14 @@
 
 .rh-sidebar { }
 
-.rh-sidebar #email_signup,
+.rh-sidebar #email-signup-wrapper,
 .rh-sidebar .speed-dial-wrapper {
   float: right;
   width: 240px;
   margin: 0 5px 1em;
 }
 
-.rh-sidebar #email_signup #can_embed_form h2,
+.rh-sidebar #email-signup-wrapper #can_embed_form h2,
 .speed-dial-wrapper h2 {
   font-size: 18px;
   font-weight: normal;
@@ -26,13 +26,13 @@
 }
 
 
-.rh-sidebar #email_signup #can_embed_form { padding-bottom: 1em; }
-.rh-sidebar #email_signup #can_embed_form h4 { display: none; }
-.rh-sidebar #email_signup #can_embed_form .country_wrap { display: none; }
-.rh-sidebar #email_signup #can_embed_form #d_sharing { border: none !important; }
-.rh-sidebar #email_signup #can_embed_form input[type="submit"] { margin-bottom: 0; }
-.rh-sidebar #email_signup #can_embed_form #action_info { display: none; }
-.rh-sidebar #email_signup #can_embed_form #d_sharing { display: none; }
+.rh-sidebar #email-signup-wrapper #can_embed_form { padding-bottom: 1em; }
+.rh-sidebar #email-signup-wrapper #can_embed_form h4 { display: none; }
+.rh-sidebar #email-signup-wrapper #can_embed_form .country_wrap { display: none; }
+.rh-sidebar #email-signup-wrapper #can_embed_form #d_sharing { border: none !important; }
+.rh-sidebar #email-signup-wrapper #can_embed_form input[type="submit"] { margin-bottom: 0; }
+.rh-sidebar #email-signup-wrapper #can_embed_form #action_info { display: none; }
+.rh-sidebar #email-signup-wrapper #can_embed_form #d_sharing { display: none; }
 
 
 .speed-dial-wrapper table { font-size: .8em; width: 100%; }
