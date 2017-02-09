@@ -30,15 +30,20 @@ More info: [Texas congressional delegation largely silent on Trump travel ban](h
 
 ### Sample Script
 
-> Hi, my name is ______ and I am a constituent of Rep. McCaul. I am calling because I heard that Rep. McCaul had some involvement in the writing of Trump’s Muslim Ban, which I find to be a cruel, un-American action that will only make us less safe by aiding the recruitment efforts of terrorist organizations. I’d like to know specifically what part McCaul played in crafting the executive order, where he stands on the issue today, and whether he will consider supporting its reversal.
+<blockquote>
+Hi, my name is ______ and I am a constituent of Rep. McCaul. I am calling because I heard that Rep. McCaul had some involvement in the writing of Trump’s Muslim Ban, which I find to be a cruel, un-American action that will only make us less safe by aiding the recruitment efforts of terrorist organizations. I’d like to know specifically what part McCaul played in crafting the executive order, where he stands on the issue today, and whether he will consider supporting its reversal.
+</blockquote>
 
 
 ### Contact Info
 
 Rep. Michael McCaul
 
-* Austin office: 512-473-2357
 * Washington, DC office: 202-225-2401
+* Austin office: 512-473-2357
+* Katy office: 281-398-1247
+* Tomball office: 281-255-8372
+* Brenham office: 979-830-8497
 
 Sen. John Cornyn
 
@@ -56,4 +61,10 @@ voicemail you can leave a message, but it's always better to talk to
 a staffer.
 
 If you've never made phone calls before, here's help: [How to contact your representatives.](https://www.indivisibleaustin.com/take-action-now/how-to-contact-your-representatives/)
+
+
+
+### Next Actions
+
+After you complete this action, please see additional actions [posted by Indivisible Austin](https://www.indivisibleaustin.com/actions-for-the-week/).
 
