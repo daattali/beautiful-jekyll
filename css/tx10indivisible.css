@@ -1,5 +1,5 @@
 .pretty-box {
-  border: solid #e0e0e0 1px;
+  border: solid #d0d0d0 1px;
   background: #e8e8e8;
   border-radius: 15px;
   padding: 5px 10px;
@@ -7,35 +7,42 @@
 
 .pretty-box blockquote { border-left: none; }
 
-.rh-sidebar { }
 
-.rh-sidebar #email-signup-wrapper,
-.rh-sidebar .speed-dial-wrapper {
-  float: right;
+/* sidebar styles */
+
+.sidebar-box {
   width: 240px;
   margin: 0 5px 1em;
+  font-size: 0.8em;
 }
 
-.rh-sidebar #email-signup-wrapper #can_embed_form h2,
-.speed-dial-wrapper h2 {
+.sidebar-box h2 {
   font-size: 18px;
   font-weight: normal;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
   line-height: 1.1em;
   text-align: center;
   margin: 0;
   padding: 0.5em 3px;
 }
 
-.rh-sidebar #email-signup-wrapper #can_embed_form { padding-bottom: 1em; }
-.rh-sidebar #email-signup-wrapper #can_embed_form h4 { display: none; }
-.rh-sidebar #email-signup-wrapper #can_embed_form .country_wrap { display: none; }
-.rh-sidebar #email-signup-wrapper #can_embed_form #d_sharing { border: none !important; }
-.rh-sidebar #email-signup-wrapper #can_embed_form input[type="submit"] { margin-bottom: 0; }
-.rh-sidebar #email-signup-wrapper #can_embed_form #action_info { display: none; }
-.rh-sidebar #email-signup-wrapper #can_embed_form #d_sharing { display: none; }
+.sidebar-box h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
 
+/* tame the Action Network widget into submission */
+#email-signup-wrapper #can_embed_form { padding-bottom: 1em; }
+#email-signup-wrapper #can_embed_form h2 { display: none; }
+#email-signup-wrapper #can_embed_form h4 { display: none; }
+#email-signup-wrapper #can_embed_form .country_wrap { display: none; }
+#email-signup-wrapper #can_embed_form #d_sharing { border: none !important; }
+#email-signup-wrapper #can_embed_form input { margin: 3px 0; }
+#email-signup-wrapper #can_embed_form input[type="submit"] { margin: 5px 0; }
+#email-signup-wrapper #can_embed_form #action_info { display: none; }
+#email-signup-wrapper #can_embed_form #d_sharing { display: none; }
 
-.speed-dial-wrapper {  font-size: 0.8em; }
-.speed-dial-wrapper h3 { font-size: 1em; font-weight: bold; margin-top: 0.5em; margin-bottom: 0.2em; }
-.speed-dial-wrapper ul { list-style: none; padding-left: 0; margin-left: 0;  }
+/* Speed Dial uses Font Awesome icons for list markers */
+#speed-dial-wrapper ul { list-style: none; padding-left: 0; margin-left: 0;  }
