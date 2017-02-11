@@ -8,6 +8,13 @@
 .pretty-box blockquote { border-left: none; }
 
 
+/* list will use Font Awesome icons for markers */
+ul.fa-markers { list-style: none; padding-left: 0; margin-left: 0;  }
+
+/* add some vertical space between list items */
+ul.li-vert-spaced li { margin: 0.5em 0; }
+
+
 /* sidebar styles */
 
 .sidebar-box {
@@ -44,5 +51,3 @@
 #email-signup-wrapper #can_embed_form #action_info { display: none; }
 #email-signup-wrapper #can_embed_form #d_sharing { display: none; }
 
-/* Speed Dial uses Font Awesome icons for list markers */
-#speed-dial-wrapper ul { list-style: none; padding-left: 0; margin-left: 0;  }
