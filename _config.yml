@@ -21,8 +21,8 @@ navbar-links:
   About: "about"
   Get Involved: "get-involved"
   More:
-    - Make Contact: "make-contact"
-    - FAQ: "faq"
+  - Make Contact: "make-contact"
+  - FAQ: "faq"
   News: "posts"
   Indivisible Sites:
     - Indivisible Guide: "https://www.indivisibleguide.com/"
@@ -31,11 +31,11 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/site-avatar-100x100.jpg"
+#avatar: "/img/site-avatar-100x100.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: /img/site-logo.png
 
 # --- Footer options --- #
 
@@ -61,7 +61,7 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
   twitter: true
