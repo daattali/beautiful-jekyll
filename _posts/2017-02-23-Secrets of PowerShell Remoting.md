@@ -9,7 +9,7 @@ title: 'Next Meeting - February 23rd 6PM - Secrets of PowerShell Remoting'
 
 ### Where: [Max Technical Training, Mason, OH](https://goo.gl/maps/ijBGbvJQR3B2)
 
-### Sign up here: [Cincy PSUG Meetup](http://www.meetup.com/TechLife-Cincinnati/events//)
+### Sign up here: [Cincy PSUG Meetup](http://www.meetup.com/TechLife-Cincinnati/events/237690928/)
 
 ```powershell
 PS C:\> Get-PSUG | where {$_.City -eq Cincinnati}
