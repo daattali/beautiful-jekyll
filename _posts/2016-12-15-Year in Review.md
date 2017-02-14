@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - December 15th 2016 - Year in Review'
+title: 'December 15th 2016 - Year in Review'
 ---
 
 ## Cincinnati PowerShell User Group – December Meeting – Year in Review
