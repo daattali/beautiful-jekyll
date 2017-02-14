@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - February 23th 6PM - Secrets of PowerShell Remoting'
+title: 'Next Meeting - February 23rd 6PM - Secrets of PowerShell Remoting'
 ---
 
 ## Cincinnati PowerShell User Group – Secrets PowerShell Remoting
