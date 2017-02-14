@@ -15,7 +15,7 @@ title: 'Next Meeting - February 23rd 6PM - Secrets of PowerShell Remoting'
 PS C:\> Get-PSUG | where {$_.City -eq Cincinnati}
 ```
 
-### **Secrets of PowerShell Remoting*
+### *Secrets of PowerShell Remoting*
 
 Still using PSExec to remotely execute commands on remote machines? Wishing there was a generic remoting environment that allows for remote execution of literally any command that you can run in a local PowerShell? Remoting is one of PowerShell's most useful and important core technologies. Whether you are managing Nano Server or wanting to arm yourself with knowledge to get your Security Team to buy in, we have some tips and tricks that you won't want to miss. Although this technology was introduced in PowerShell 2.0, it has been refined and expanded upon in each release and is an essential tool for your PowerShell toolkit! Come join us as we demystify PowerShell remoting so you can start putting it to use.
 
