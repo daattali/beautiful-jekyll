@@ -50,7 +50,11 @@
     <div class="row">
       <div class="col-md-12">
         <div class="{{ include.type }}-heading">
-          <img src="/img/site-logo-borderless.png" alt="{{ page.title }}" />
+          {% if include.type == "home" %}
+            <img src="/img/site-logo-borderless.png" alt="{{ page.title }}" />
+          {% else %}
+            <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+          {% endif %}
 		  {% if page.subtitle %}
 		    {% if include.type == "page" %}
             <hr class="small">
