@@ -17,7 +17,7 @@ So we think we should pay his Austin office a visit. **EVERY DAY NEXT WEEK (Febr
 
 We need to find 1 or 2 people who can volunteer to be on-the-ground leaders for each day (so 5-10 total).
 
-Katie and I can help organize the whole schedule, but because of work may not be able to be there every day, so we need people who can take point. It's not a difficult job--if you've been to any office visits you probably get the gist--and we'll be available to offer as much help as you need. It will require a little front-end organizing and then probably no more than 90 minutes at his office.
+Katie and Andrew can help organize the whole schedule, but because of work may not be able to be there every day, so we need people who can take point. It's not a difficult job--if you've been to any office visits you probably get the gist--and we'll be available to offer as much help as you need. It will require a little front-end organizing and then probably no more than 90 minutes at his office.
 
 
 If you can be an Office Visit Leader, please let us know via [Facebook](https://www.facebook.com/groups/tx10indivisible/permalink/410264039314871/) comments or email [info@tx10indivisible.us](mailto:info@tx10indivisible.us?subject=McCaul Office Visit Leader 2017-02-17). Please include what day you'd like to volunteer for.
