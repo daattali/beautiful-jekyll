@@ -12,6 +12,7 @@ tags:
 published: true
 level: advanced
 bigimg: /img/genomics.jpg
+permalink: /:day/:month/:year/:title/
 ---
 
 **Table Of Content** <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->

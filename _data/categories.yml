@@ -1,19 +1,19 @@
 - slug: general
   name: General
-  color: '#e6e6e6'
+  color: '#b38f00'
 
 - slug: programming
   name: Programming
-  color: '#e6e6e6'
+  color: '#b38f00'
 
 - slug: devops
   name: DevOps
-  color: '#e6e6e6'
+  color: '#b38f00'
 
 - slug: visualization
   name: Visualization
-  color: '#303030'
+  color: '#b38f00'
 
 - slug: data-science
   name: Data Science
-  color: '#303030'
+  color: '#b38f00'

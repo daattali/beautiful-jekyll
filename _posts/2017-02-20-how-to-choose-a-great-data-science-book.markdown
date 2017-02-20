@@ -10,7 +10,8 @@ tags:
   - machine-learning
 level: beginner
 bigimg: /img/books.jpg
-published: false
+published: true
+permalink: /:day/:month/:year/:title/
 ---
 
 **Table Of Content**
@@ -55,7 +56,7 @@ This is a very quick checklist that will help you choose an interesting book, or
 
 - **Check the author's bio** : It can help to know the author(s), knowing the background of who wrote the book, his research, and main interests, is already an indication of the details level in the book. But, new authors deserve a chance too, don't make this point crucial.
 - **Read the introduction carefully** : Most of the books online display the introduction for free. Don't hesitate to download a preview and read the introductory pages carefully. Most of the time, authors describe not only the context in which the book was written but also the details of the different chapters.
-- **Favor books with independent chapters** : This is a personal preference, a technical book is not a fiction or a romance. Although it is important to learn gradually from a book, from the simpler aspects to the more complicated ones, choosing a book with more or less independent chapters will give you freedom on the structure you want to have to learn something, a book outline is the author's personal perspective which is certainly helpful, but it was designed with a specific mindset that is not necessarily yours so you might keep some distance between the way you want to learn something and what others think.
+- **Favour books with independent chapters** : This is a personal preference, a technical book is not a fiction or a romance. Although it is important to learn gradually from a book, from the simpler aspects to the more complicated ones, choosing a book with more or less independent chapters will give you freedom on the structure you want to have to learn something, a book outline is the author's personal perspective which is certainly helpful, but it was designed with a specific mindset that is not necessarily yours so you might keep some distance between the way you want to learn something and what others think.
 - **Do you have a bookstore close by ?** : Although you can find everything online nowadays, going at a bookstore will give you the chance to physically get in contact with what you need. Sometimes It happens that I just change my mind and get another book when I browse rapidly some key chapters of interests and get the feeling that it is not what I actually need.
 - **Read online reviews** : and don't trust all of them, remember that reviews are subjective, but the online reviews will give you a general opinion of what people think of the book you want to get, and as we say: don't judge a book by its cover :) I usually trust Amazon's reviews, people leave insightful comments and criticisms to the authors and usually raise valid points that are worth taking in consideration.
 
