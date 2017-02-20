@@ -38,7 +38,7 @@ This is a list of functions we can use to generate different kind of plots for d
 
 If you don't know what deep/targeted sequencing is, I tried to over-simplifying it in the figure below :
 
-![deepsequencing](../img/20160315/intro/intro.001.png)
+![deepsequencing](/img/20160315/intro/intro.001.png)
 
 This is, at a very superficial description, an experiment aiming to amplify a specific region of the genome via sequencing in order to study a particular problem (gene expression level, SNP in cancer genome, variant calling etc ..)
 
@@ -234,7 +234,7 @@ Similar to the function above, we can add a small hack to generate the coverage 
 
 Now, may be you will think this is getting more complicated now, but it is not, let me add a small figure to explain what we're doing here :
 
-![coverage](../img/20160315/coverage.png)
+![coverage](/img/20160315/coverage.png)
 
 ```python
 
