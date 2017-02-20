@@ -20,3 +20,12 @@
   name: Sequencing
 - slug: genomics
   name: Genomics
+
+- slug: rstats
+  name: R
+
+- slug: machine-learning
+  name: Machine Learning
+
+- slug: book-review
+  name: Book Review

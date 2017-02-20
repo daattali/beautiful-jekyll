@@ -1,0 +1,178 @@
+<!-- TODO this file has become a mess, refactor it -->
+
+{% if page.bigimg or page.title %}
+
+{% if page.bigimg %}
+  <div id="header-big-imgs" data-num-img={% if page.bigimg.first %}{{ page.bigimg.size }}{% else %}1{% endif %}
+    {% for bigimg in page.bigimg %}
+	  {% assign imgnum = forloop.index %}
+	  {% for imginfo in bigimg %}
+	    {% if imginfo[0] %}
+		  data-img-src-{{ imgnum }}="{{ imginfo[0] | prepend: site.baseurl | replace: '//', '/' }}"
+		  data-img-desc-{{ imgnum }}="{{ imginfo[1] }}"
+		{% else %}
+		  data-img-src-{{ imgnum }}="{{ imginfo | prepend: site.baseurl | replace: '//', '/' }}"
+		{% endif %}
+	  {% endfor %}
+    {% endfor %}
+  ></div>
+{% endif %}
+
+<header class="header-section {% if page.bigimg %}has-img{% endif %}">
+{% if page.bigimg %}
+<div class="big-img intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="{{ include.type }}-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+		  {% if page.subtitle %}
+		    {% if include.type == "page" %}
+            <hr class="small">
+            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+			{% else %}
+			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+			{% endif %}
+		  {% endif %}
+
+		  {% if include.type == "post" %}
+		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if post.level %}
+          {% for site_level in site.data.levels %}
+              {% if site_level.slug == post.level %}
+                  {% assign level = site_level %}
+              {% endif %}
+          {% endfor %}
+          {% if level %}
+              {% capture level_content %} <span class="label" style="background-color:{{ level.color }}">{{ level.name }}</span>{% endcapture %}
+          {% endif %}
+      <span class="post-meta">Level : {{ level_content }}</span><br>
+      {% else %}
+          {% assign level_content = '' %}
+      {% endif %}
+
+
+          {% include reading_time.html %}<br>
+
+          {% if post.category %}
+            {% for site_category in site.data.categories %}
+                {% if site_category.slug == post.category %}
+                    {% assign category = site_category %}
+                {% endif %}
+            {% endfor %}
+            {% if category %}
+                {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/blog/category/{{ category.slug }}/" style="color:white">{{ category.name }}</a></span>{% endcapture %}
+            {% endif %}
+        {% else %}
+            {% assign category_content = '' %}
+        {% endif %}
+
+        {% if post.tags.size > 0 %}
+            {% capture tags_content %} with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+            {% for post_tag in post.tags %}
+                {% for data_tag in site.data.tags %}
+                    {% if data_tag.slug == post_tag %}
+                        {% assign tag = data_tag %}
+                    {% endif %}
+                {% endfor %}
+                {% if tag %}
+                    {% capture tags_content_temp %}{{ tags_content }}<span  class = "label label-danger" ><a href="/blog/tag/{{ tag.slug }}/" style="color:white">{{ tag.name }}</a></span>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+                    {% assign tags_content = tags_content_temp %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% assign tags_content = '' %}
+        {% endif %}
+        <span class="post-meta">Posted {{ category_content }}{{ tags_content }}</span><br>
+
+		  {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class='img-desc'></span>
+</div>
+{% endif %}
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="{{ include.type }}-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
+		  {% if page.subtitle %}
+		    {% if include.type == "page" %}
+            <hr class="small">
+            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+			{% else %}
+			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+			{% endif %}
+		  {% endif %}
+
+		  {% if include.type == "post" %}
+		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span><br>
+
+      {% if post.level %}
+          {% for site_level in site.data.levels %}
+              {% if site_level.slug == post.level %}
+                  {% assign level = site_level %}
+              {% endif %}
+          {% endfor %}
+          {% if level %}
+              {% capture level_content %} <span class="label" style="background-color:{{ level.color }}">{{ level.name }}</span>{% endcapture %}
+          {% endif %}
+        <br><span class="post-meta">Level : {{ level_content }}</span><br>
+      {% else %}
+          {% assign level_content = '' %}
+      {% endif %}
+
+
+          {% include reading_time.html %}<br>
+
+          {% if post.category %}
+            {% for site_category in site.data.categories %}
+                {% if site_category.slug == post.category %}
+                    {% assign category = site_category %}
+                {% endif %}
+            {% endfor %}
+            {% if category %}
+                {% capture category_content %} in <span class="label" style="background-color:{{ category.color }}"><a href="/blog/category/{{ category.slug }}/" style="color:white">{{ category.name }}</a></span>{% endcapture %}
+            {% endif %}
+        {% else %}
+            {% assign category_content = '' %}
+        {% endif %}
+
+        {% if post.tags.size > 0 %}
+            {% capture tags_content %} with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+            {% for post_tag in post.tags %}
+                {% for data_tag in site.data.tags %}
+                    {% if data_tag.slug == post_tag %}
+                        {% assign tag = data_tag %}
+                    {% endif %}
+                {% endfor %}
+                {% if tag %}
+                    {% capture tags_content_temp %}{{ tags_content }}<span  class = "label label-danger" ><a href="/blog/tag/{{ tag.slug }}/" style="color:white">{{ tag.name }}</a></span>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+                    {% assign tags_content = tags_content_temp %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% assign tags_content = '' %}
+        {% endif %}
+        <span class="post-meta">Posted {{ category_content }}{{ tags_content }}</span><br>
+
+
+
+		  {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+</header>
+
+
+{% else %}
+<div class="intro-header"></div>
+{% endif %}

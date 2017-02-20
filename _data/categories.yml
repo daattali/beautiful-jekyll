@@ -12,4 +12,8 @@
 
 - slug: visualization
   name: Visualization
-  color: '#e6e6e6'
+  color: '#303030'
+
+- slug: data-science
+  name: Data Science
+  color: '#303030'

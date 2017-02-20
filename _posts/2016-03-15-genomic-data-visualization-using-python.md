@@ -11,6 +11,7 @@ tags:
   - genomics
 published: true
 level: advanced
+bigimg: /img/genomics.jpg
 ---
 
 **Table Of Content** <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -123,7 +124,7 @@ Dual clustering on positions and sample names grouping positions per zygosity (h
 
 We need to import the needed libraries and to init the layout to display the plots. I usually don't like the way matplotlib is displayed so I modify the `rc_params` in order to make the plots look nicer than the default.
 
-```python
+~~~python
 from __future__ import division
 import os
 import sys
@@ -144,9 +145,7 @@ import matplotlib.gridspec as gridspec
 import scipy.spatial.distance as distance
 import scipy.cluster.hierarchy as sch
 import seaborn as sns
-
 style.use('ggplot')
-
 my_locator = MaxNLocator(6)
 rcParams['axes.labelsize'] = 9
 rcParams['xtick.labelsize'] = 9
@@ -155,7 +154,7 @@ rcParams['legend.fontsize'] = 7
 rcParams['font.serif'] = ['Computer Modern Roman']
 rcParams['text.usetex'] = False
 rcParams['figure.figsize'] = 20, 10
-```
+~~~
 
 As you can see I use the style `ggplot` but you can use the style you want. We don't need to do this if we use `seaborn`, these changes are just for the plots using only `matplotlib`
 

@@ -57,7 +57,7 @@ footer-links-active:
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "radaniba.github.io"  # eg. "deanattali.com/beautiful-jekyll"
-
+show_drafts: false
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -71,7 +71,15 @@ google_analytics: "UA-74825001-1"
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
 markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
 highlighter: rouge
+syntax: true
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
+line_numbers: true
 permalink: /:year-:month-:day-:title/
 paginate: 5
 

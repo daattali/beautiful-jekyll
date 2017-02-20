@@ -6,12 +6,12 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <meta name="author" content="{{ site.author.name }}" />
-
+  {% seo %}
   {% if page.url == "/404.html" %}
      <meta http-equiv="refresh" content="5; url=/">
   {% endif %}
   {% if page.subtitle %}
-  
+
     <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
