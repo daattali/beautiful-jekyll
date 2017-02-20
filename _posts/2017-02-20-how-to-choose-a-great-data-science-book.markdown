@@ -124,18 +124,18 @@ In the following, I will pick the top 5 list of these books per criteria
 ## Length (number of pages)
 The length of a book is really dependent on the content being discussed. Although it is not a measure of quality, we will make the assumption here that the more you have content, the more you have substance and knowledge shared. I am ranking the top 5 books based on the content shared
 
-![length](../img/20170220/length.png)
+![length](/img/20170220/length.png)
 
 ## Writing Style
 Communicating science is very challenging, We can't please everyone, and it really depends on the target audience. Some people are gifted though in communicating complex concepts in an easy and clear manner. Also having a good structure, rolling explanation in an organized and well-studied manner helps to get that gradual learning curve. I am ranking the top 5 books of the list above in terms of writing style  
 
-![length](../img/20170220/style.png)
+![length](/img/20170220/style.png)
 
 ## Structure
 Teaching data science is not simple, and at the same time it's not that difficult neither, we only need to know how to structure the content in order to ensure that the information is being retained. In that respect, there are may be two main ways of doing this. We can have an **independent modules** organization, where we talk about different concepts that are not really related but could be part of a data science analysis pipeline, dealing with these concepts separately does not require an order. In the other hand, one can structure the content in an **incremental order** of complexity, like we see in most books that teach, for example, regression, where they start by the most basic forms of regression and adding more and more variations and level of complexity of the most elaborate forms of regression.
 Here is my ranking for the top 5 books of this list  
 
-![length](../img/20170220/structure.png)
+![length](/img/20170220/structure.png)
 
 ## Content
 How much is too much? Where to start? What subject to cover and what to skip? These are probably few of the questions that come into anyone's head trying to write a book for Data Science. Some authors choose to cover a very specific and detailed area, when we look at the academic profile of these authors we can draw a correlation between their own research and their writings. Most of the times, these authors do not write general data science books, but rather part of their research. In that regards, their target audience is very narrow.
@@ -157,7 +157,7 @@ Depending on the context, some books are just meant to teach you **how to** use 
 
 Content classification meets exactly the structure for my own taste, again this is a personal classification **you might comment/discuss your preferences below this post**
 
-![length](../img/20170220/structure.png)
+![length](/img/20170220/structure.png)
 
 # Conclusion
 
