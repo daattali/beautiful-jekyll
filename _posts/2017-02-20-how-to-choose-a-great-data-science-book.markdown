@@ -10,7 +10,7 @@ tags:
   - machine-learning
 level: beginner
 bigimg: /img/books.jpg
-published: true
+published: false
 ---
 
 **Table Of Content**
