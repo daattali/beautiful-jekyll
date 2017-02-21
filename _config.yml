@@ -79,6 +79,7 @@ syntax: true
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
 line_numbers: true
 permalink: /:year-:month-:day-:title/
 paginate: 5

@@ -192,6 +192,7 @@ DEPENDENCIES
   jekyll (= 3.0.2)
   jekyll-paginate
   jekyll-seo-tag
+  jekyll-sitemap
   middleman-syntax
   rouge
   therubyracer

@@ -21,7 +21,7 @@ permalink: /:day/:month/:year/:title/
 - [How to pick a Data Science book](#how-to-pick-a-data-science-book)
 - [Books of interest](#books-of-interest)
 - [Detailed review](#detailed-review)
-	- [Length (number of pages)](#length-number-of-pages)
+	- [Book size / Length (number of pages)](#book-size-length-number-of-pages)
 	- [Writing Style](#writing-style)
 	- [Structure](#structure)
 	- [Content](#content)
@@ -121,7 +121,7 @@ Reviewing a bunch of books at once is a tough exercise. The reason I am bringing
 
 In the following, I will pick the top 5 list of these books per criteria
 
-## Length (number of pages)
+## Book size / Length (number of pages)
 The length of a book is really dependent on the content being discussed. Although it is not a measure of quality, we will make the assumption here that the more you have content, the more you have substance and knowledge shared. I am ranking the top 5 books based on the content shared
 
 ![length](/img/20170220/length.png)
