@@ -45,7 +45,8 @@ author:
   name: TX-10 Indivisible Team
   email: "info@tx10indivisible.us"
   # our footer.html is hacked to allow a URL value for "facebook"
-  facebook: https://www.facebook.com/groups/tx10indivisible/
+  facebook: https://www.facebook.com/tx10indivisible/
+  facebook-group: https://www.facebook.com/groups/tx10indivisible/
   #github: yourname    # eg. daattali
   twitter: tx10indivisible   # eg. daattali
   #reddit: yourname    # eg. daattali
@@ -63,6 +64,7 @@ author:
 footer-links-active:
   rss: true
   facebook: true
+  facebook-group: true
   email: true
   twitter: true
   google-plus: false
