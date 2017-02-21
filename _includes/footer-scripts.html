@@ -22,11 +22,11 @@
     {% if js contains 'jquery' %}
       <script>
       	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
+      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}" type="text/javasript"></scr' + 'ipt>');
       	}
       </script>
     {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}" type="text/javascript"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
