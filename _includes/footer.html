@@ -18,6 +18,21 @@
             </a>
           </li>
           {% endif %}
+          {% if site.author.facebook-group and site.footer-links-active.facebook-group %}
+          {% capture firstWord %}{{ site.author.facebook-group | split:":" | first }}{% endcapture %}
+          <li>
+            {% if firstWord == "http" or firstWord == "https" %}
+            <a href="{{ site.author.facebook-group }}" title="Facebook Group">
+            {% else %}
+            <a href="https://www.facebook.com/{{ site.author.facebook-group }}" title="Facebook Group">
+            {% endif %}
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
           {% if site.author.github and site.footer-links-active.github %}
           <li>
             <a href="https://github.com/{{ site.author.github }}" title="GitHub">
