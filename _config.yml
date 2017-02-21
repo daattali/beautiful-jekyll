@@ -64,6 +64,7 @@ author:
 footer-links-active:
   rss: true
   facebook: true
+  facebook-group: true
   email: true
   twitter: true
   google-plus: false
