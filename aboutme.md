@@ -18,5 +18,6 @@ I hope you find some interesting articles in this blog and learn some good stuff
 
 ----------
 
+[![]({{site.baseurl}}/img/vExpert-2016-Badge.png)]
 [![]({{site.baseurl}}/img/vcadcv.jpg)](https://www.youracclaim.com/badges/54135e3e-4595-4d3a-9712-0e2c129cad5d)
  
