@@ -25,8 +25,7 @@
 
 
 class: center, middle
-
-# Cincinnati PowerShell User Group
+# Cincinnati PowerShell User Group
 
 ## Secrets of PowerShell Remoting
 
@@ -34,7 +33,6 @@ class: center, middle
 Twitter: [@CincyPowerShell](http://twitter.com/CincyPowerShell)
 
 Email: [info@cincypowershell.org](mailto:info@cincypowershell.org)
-
 ---
 
 class: center, middle
@@ -48,578 +46,134 @@ We can't do it without them, please take time to thank them!
 ### [Sapien Technologies](http://www.sapien.com)
 
 ![Sapien](http://cincypowershell.org/img/sapien.jpeg)
-
 ---
 
 ### .center[PowerShell News]
 --
 
-* [Scripting Guy Retires](https://powershell.org/summit/)
+- [Scripting Guy Retires](https://powershell.org/summit/)
 
 --
 
-* [PowerShell Application Deployment Toolkit 3.6.9](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/tag/3.6.9)
+- [Jay got a new gig](https://www.linkedin.com/pulse/automation-can-technical-debt-too-i-prove-jay-ryan?trk=v-feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B2AIdohmdxo93PEJzYYgQVw%3D%3D)
 
 --
 
-* [PowerShell 101 - Beginners Guide to PowerShell](http://mikefrobbins.com/2017/01/26/announcing-a-new-book-powershell-101-the-no-nonsense-beginners-guide-to-powershell/?utm_content=bufferd4bda&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+- [PowerShell Application Deployment Toolkit 3.6.9](https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/tag/3.6.9)
 
 --
 
-* [WinRM Security](https://foxdeploy.com/2017/02/08/is-winrm-secure-or-do-i-need-https/)
+- [PowerShell 101 - Beginners Guide to PowerShell](http://mikefrobbins.com/2017/01/26/announcing-a-new-book-powershell-101-the-no-nonsense-beginners-guide-to-powershell/?utm_content=bufferd4bda&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
+--
+
+- [Planet PowerShell - Community Content Aggregator](http://www.planetpowershell.com/)
 ---
-class: middle, center
 
+class: middle, center
 # Invoke-LogSearch
 #### Tom Magill - Sr. System Engineer in SaaS Operations
+---
+### .center[Cmdlet of the Month]
+--
 
+- Out-String
+
+--
+
+- Converts PowerShell objects to an array of strings. By default, it returns a single string, but you can specify -Stream to return one line at a time.
+
+--
+
+- Useful when you need to manipulate string output instead of object output.
+
+--
+
+- Some (poorly written) Cmdlets require this because they take [String] input instead of a [ScriptBlock].
 ---
 
-### .center[Cmdlet of the Month]
+class: middle, center
+# Secrets of PowerShell Remoting
+#### Chris Brucker - Systems Administrator - First Financial Bank
+---
+
+### What is PowerShell Remoting?
+--
+
+- "Telnet but for PowerShell"
 
 --
 
-* Out-String
+- One of the most powerful parts of PowerShell that allows you to run pratically any cmdlet on a remote computer.
 
 --
 
-* Converts PowerShell objects to an array of strings. By default, it returns a single string, but you can specify -Stream to return one line at a time.
+- Runs over the WS-MAN protocol using HTTP or HTTPS
 
 --
 
-* Useful when you need to manipulate string output instead of object output.
+- Can now work over SSH in PowerShell 6.0
+???
+- Cmdlets don't have to exist on your system
+- Firewall friendly
+- Started by default in Server 2008 R2, installed in Windows 7, but service is disabled
+- This technique comes out of being burned before, and usually doesn’t happen as practice or policy for working on code.
+- Single file versioning, not repository, full copies are stored, imposible to share
+---
+
+### How does remoting work?
+--
+
+- Returns PowerShell objects from the remote computer as Serialized XML.
 
 --
 
-* Some (poorly written) Cmdlets require this because they take string input instead of a scriptblock.
+  - Objects to XML (Serialization)
+  - XML to Object (Deserialization)
+
+--
+
+- Serialized-then-deserialized objects are only snapshots, they don't update themselves continually and you can't take action on the data.
+--
+???
+Good example of this is Getting a list of processes from a remote computer, you cannot take action on those (stop the process)
 
 ---
 class: middle, center
-
-# Secrets of PowerShell Remoting
-#### Chris Brucker - Systems Administrator - First Financial Bank
-
-???
-I use PowerShell remoting on a daily basis to gather information and perform tasks.
-
-However, there are 
-
+# Demos
 ---
 
-### Version Control?
+# References
+#### Books
+- [Learn PowerShell in a Month of Lunches](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
+- [Windows PowerShell in Action, Third Edition](https://www.manning.com/books/windows-powershell-in-action-third-edition)
+- [Secrets of PowerShell Remoting](https://leanpub.com/secretsofpowershellremoting)
 
-* Do you scripts look like this?
-
-.center[![notversioncontrol](http://www.cincypowershell.org/img/versioning.png)]
-???
-Why Doesn’t this work? – This is not version control!
-
-- No sharing code
-
-- No one but you knows which version is the right one, what you were working on, what features are broken or experimental
-
-- This technique comes out of being burned before, and usually doesn’t happen as practice or policy for working on code.
-
-- Single file versioning, not repository, full copies are stored, imposible to share
-
-Do you edit script directly from the location that it is running in production?
+#### Online Resources
+- [PowerShell Remoting Security Considerations - Lee Holmes](https://msdn.microsoft.com/powershell/scripting/setup/winrmsecurity)
+- [PowerShell Remoting Kerberos Double Hop Solved - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2016/08/30/powershell-remoting-kerberos-double-hop-solved-securely/)
+- [WinRM Security](https://foxdeploy.com/2017/02/08/is-winrm-secure-or-do-i-need-https/)
 ---
 
-### Why Version Control??
+# The usergroup is about you!
 --
 
-* Made a change to code, realised it was a mistake and wanted to revert back?
-
-
+- You don't have to get up
 --
 
-* Lost code or had a backup that was too old?
-
-
+- You don't have to show any code (but we would love it if you did)
 --
 
-* Had to maintain multiple versions of a script/process?
-
+- Tell us what you have been working on
 
 --
 
-* Wanted to see the difference between two (or more) versions of your code?
-
-
---
-
-* Wanted to prove that a particular change broke or fixed a piece of code?
-
-
---
-
-* Wanted to review the history of some code?
-
-
---
-
-* Wanted to submit a change to someone else's code?
-
-
---
-
-* Wanted to share your code, or let other people work on your code?
-
-
---
-
-* Wanted to see how much work is being done, and where, when and by whom?
-
-
---
-
-* Wanted to experiment with a new feature without interfering with working code?
-???
-
-Lots of reasons for version control.  Developers use it, why don't we?
-
-We are developers.  We write code that affect production operations, infrastructure, developers, applications, directory services, cloud services, reports etc... depend on
-
-**Operations Scripts are traditionally seen as liabilites, not assets, whats the difference?**
----
-
-### Different types of Version Control
-???
-
-Central
-- One source of truth
-- checkout out code
-
-Distributed
-- all repos are their own truth
-- trust is built on relationships outside of code
-- easy commit / easy merge
-
---
-
-* Centralized Version Control (Subversion, CVS, TFS)
-
-
---
-* Distributed Version Control (Git, Mecurial)
-
-
---
-.center[![Distributed vs. Central](http://cincypowershell.org/img/distvscentral.png)]
----
-
-### What is Git? Why Git?
-
-* A distributed version control system
-???
-
-Easy to collaborate
-
-easy to merge changes
-
-don't have to be connected
-
-you have full copy locally always
-
-you can see the complete history, locally
---
-
-
-* The most popular distributed version control system
----
-
-class: center, middle
-background-image: url(http://cincypowershell.org/img/gitwins.png)
-
----
-
-class: center, middle
-background-image: url(http://cincypowershell.org/img/gitwinsreally.png)
-
----
-
-### What is Git? Why Git?
-
-* A distributed version control system
-
-* The most popular distributed version control system
-
---
-
-* Linus Torvalds invented it (Linux is good....ergo Git is good)
-
---
-
-* Microsoft Loves Linux
-
---
-
-### .center["It doesn't matter what version control system you use...]
---
-
-### .center[**BUT USE GIT!"**]
-
-.center[-Steven Murawski]
----
-
-### Git Concepts
-
-* **working tree / working directory** - files in your directory
-
-* **stage / index** - waiting to commit
-
-* **head** - where you are at
-
-* **commit** - making a change to your repo
-
-* **branch** - a copy and at a point in time and any changes made
-
-* **merge** - combine 2 references
-
-* **rebase** - add my changes on top of others
-
-.center[![LocalOperations](http://Cincypowershell.org/img/LocalOperations.png)]
-
-???
-Git is like a time machine - timeline
-
-You can move forward and backwards in time.
-
-Similar to snapshots for VMs, Databases, file systems (Time Machine on your MAC)
-
-working - files on in your directory - changing files here doesn't change them in source!!!!
-
-stage/index - area for changes while preparing to commit. you can't move HEAD if you have items waiting here (limbo)
-
-head - reference, currently checkout out commit - usually a branch.
-
-**Whiteboard - Moving your head, changes what is in your working directory to reflect the point in time**
-
-commit - making a change to your repository (includes messages / who / what / why etc...)
-
-branch - a copy/version of your work - Git encourages lots of these (Free)
-
-merge - combining together 2 references (files/commits/branches etc...) - creates a new commit
-
-rebase - add my changes on top of what everyone else has done - rewrites history (dont't do this with someone elses work!)
-
-
----
-
-### Git workflow - simple (one user)
-???
-**Demo** http://learngitbranching.js.org/?NODEMO
---
-
-* Make a change in your working tree
-
-
---
-
-* stage the change (git add <filename>)
-
-
---
-
-* commit the change - meaningful commit message (Git commit -m 'Fix bug in output format')
-
-
---
-
-* Sync to remote repo (git push)
-
-
---
-* Oh no, I messed up! (git reset, git reset --soft --mixed (default) --hard, git revert)
-???
-
-Reset (soft - only changes git DB, mixed, DB and stages the changes, hard - DB, removes changes in working directory) - changes history
-
-Revert - adds the reset as a new commit (used for public/shared repos)
-
---
-
-* commit
-
-
---
-* sync
-
-
---
-* Repeat
----
-
-### Git Workflow - Team Collaboration / Open Source
---
-
-* Gitflow Method - Best practice /most common for collaboration
----
-
-class: center, middle
-background-image: url(http://cincypowershell.org/img/gitflow.png)
-???
-Master only gets updated by release branch or hotfix
-
-All commit history lives on dev branch
-
-individual branches for each feature / hotfix
----
-
-### Git Workflow - Team Collaboration / Open Source
-
-* Gitflow Method - Best practice /most common for collaboration
-
-???
-Master only gets updated by release branch or hotfix
-
-All commit history lives on dev branch
-
-individual branches for each feature / hotfix
---
-
-* Complex, maintainers needed
-
---
-
-* Pick what parts work for you and your team
-
----
-
-### Gitflow workflow - sample (collaboration - multiple users)
-
-* create and checkout a feature / bug branch based on dev branch (git checkout -b new feature branch <dev branch>)
-
---
-
-* Make a change in your working tree
-
---
-
-* stage the change (git add <filename>)
-
---
-
-* commit changes - meaningful commit messages (Git commit -m 'Fix bug in output format')
---
-
-* Ensure you have the latest commits to dev branch (git fetch origin)
-
---
-
-* Merge your changes to the dev branch (git checkout dev; git merge --no-ff new feature branch)
-
---
-
-* Push to remote / origin and delete feature branch (git push; git branch -d new feature branch)
----
-### Gitflow workflow - sample (collaboration - multiple users) - Cont'd
-
-* Prepare for a release (git checkout -b release-1.1;git commit -m 'add docs, update version info, clean up etc...')
-
-???
-These workflows might have build and release engineers dedicated
---
-
-* Merge release to master (git checkout master; git merge --no-ff release-1.1;git push; git branch -d release-1.1)
-
---
-
-* Tag the release (git tag -a 1.1 -m 'Version 1.1 release' master; git push --tags)
----
-
-### What is Github
-
-* Repository hosting service - hosts git repos in the cloud
-
---
-
-* Adds features on top of git - Wikis, simple project managment
---
-
-* Adds a social layer for collaboration
-
-  - share(fork), comment(issues), follow(watch), like(star)
-
---
-
-* The facebook of development
-
-.center[![Facebook](https://cdn.meme.am/cache/instances/folder49/500x/41740049.jpg)]
----
-### Github Concepts
-
-* Forking - Make a copy of someone elses repository to your own account
-
-???
-
-Remember, this is yours, its not central, you can do what you want now with it.
-
-You can only push in github to a repo you own or have push rights too.  Not recommened for github tracking purposes
-
-Include tags / references to people (@) issues or PRs (#)
-
---
-
-* Pull Request - Tell the owner of the repo you want them to Pull
-
---
-
-* Issues - where to file your requests, problems, bugs, enhancements
----
-
-### Github workflow - personal
-
-* Create repo
-
-* clone repo locally
-
-* make changes / stage / commit
-
-* push to origin or pull requests
----
-
-### Github workflow - Team / Opensource Project
-
-* Every Project is different
-
-???
-
-Mileage may vary, pick something that works for your team, and their understanding / ability
-
-If your Contributing, Read the docs!
-
-Looking around and exploring is key!
-
-Github is for people that care / sharing is caring.  People want to teach if you want to learn!
-
-Gitflow is good but complicated - every project has its own flavor
---
-
-* Contributing.MD
-
---
-
-* Inspect other pull requests / merges
-
---
-
-* **Ask for help!**
-
---
-
-* Gitflow Method - Best practice / most common for collaboration
-
----
-### Github workflow - **Gitflow** sample (collaboration - multiple users)
-
-* **fork the repository** - its now yours do what you want with it
-
-???
-
-Git clone - brings all branches too
-
-Search for similar issues / keywords first, consider conversation before the issue is submitted.
-
-Merge could be rebase - depends on project
-
---
-
-* **clone it locally**
-
---
-
-* **Submit an issue**
-
---
-
-* create and checkout a feature / bug branch based on dev branch (git checkout -b <new feature branch> <dev branch>)
-
-* Make a change in your working tree
-
-* stage the change (git add <filename>)
-
-* commit changes - meaningful commit messages (Git commit -m 'Fix bug in output format')
-
-* Ensure you have the latest commits to dev branch (git fetch origin)
-
-* Merge your changes to the dev branch (git checkout dev; git merge --no-ff new feature branch)
-
-* Push to remote / origin and delete feature branch (git push; git branch -d new feature branch)
----
-### Gitflow workflow - sample (collaboration - multiple users) - Cont'd
-
-* **Submit a pull request** - Specify base change and compare change
-
-???
-Base - ref in the forked repo
-
-Compare - ref in your fork
-
-ref can be commits, tags, branches, or forks
-
-chat / share code / might be declined, or updated before merged
---
-
-* **Collaborate** with the repo owner / commiters
-
---
-
-* Accepted and merged to dev branch
-
-* Scheduled for release to master
-
-* Released - You shipped code!
----
-
-# What if it all goes wrong?
----
-
-class: center, middle
-background-image: url(http://justinhileman.info/article/git-pretty/git-pretty.png)
----
-# Links / References
-
-#### Tutorials
-- [Atlassian Tutorials](https://www.atlassian.com/git/tutorials)
-- [Bitbucket - Git for Beginners](https://www.dotnetcodegeeks.com/2015/06/git-explained-for-beginners.html)
-- [Interactive - best I've seen!](http://learngitbranching.js.org/?NODEMO)
-- [Interactive - CodeSchool](https://www.codeschool.com/learn/git)
-
-#### Workflows
-- [Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
-- [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/)
-- [Argument against Gitflow](http://endoflineblog.com/gitflow-considered-harmful)
-
-#### Contributing
-- [Powershell Contributing Guide](https://github.com/powershell/powershell#developing-and-contributing)
-
----
-# Links / References
-
-#### References
-- [Learn Git in a Month of Lunches](https://www.manning.com/books/learn-git-in-a-month-of-lunches)
-- [Warren Frame's Git-Presentation](https://github.com/RamblingCookieMonster/Git-Presentation)
-- [Git Power Routines - Videos](https://www.youtube.com/playlist?list=PLDshL1Z581YYxLsjYwM25HkIYrymXb7H_)
-- [Pro Git - Book (Free)](https://www.git-scm.com/book/en/v2)
-
---
-
-* You don't have to get up
---
-
-* You don't have to show any code
---
-
-* What have you been working on?
---
-
-* What challenges are you tackling?
+- What challenges are you tackling?
 ---
 
 # Thanks for Coming!
 
-## Cincinnati PowerShell User Group
+## Cincinnati PowerShell User Group
 
 ### Contact Us
 
@@ -627,7 +181,7 @@ Twitter: [@CincyPowerShell](http://twitter.com/CincyPowerShell)
 
 Email: [info@cincypowershell.org](mailto:info@cincypowershell.org)
 
-### Please Thank our sponsers, we can't do it with out them!
+### Please Thank our sponsors, we can't do it with out them!
 
 ### [Max Technical Training](https://www.maxtrain.com)
 

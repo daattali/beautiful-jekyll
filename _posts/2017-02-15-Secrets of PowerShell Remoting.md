@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Next Meeting - February 23rd 6PM - Secrets of PowerShell Remoting'
+title: 'February 23rd 6PM - Secrets of PowerShell Remoting'
 ---
 
 ## Cincinnati PowerShell User Group – Secrets PowerShell Remoting
@@ -23,4 +23,5 @@ Still using PSExec to execute commands on remote machines? Wishing there was a g
 
 SAPIEN Technologies will be sponsoring the Cincinnati PowerShell User Group meeting and will be supplying the pizza!
 
+{: .center }
 ![Sapien](http://cincypowershell.org/img/sapien.jpeg)
