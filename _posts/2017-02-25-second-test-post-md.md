@@ -1,10 +1,7 @@
 ---
 layout: post
 published: false
-title: second-test-post.md
+title: Second Test
 ---
 
----
-title: Hello
----
-Hi
+Hi.
