@@ -10,5 +10,5 @@ Theta: $$\theta$$
 Fraction:
 <script type="math/tex">
 \fraction{t}{\sqrt{2}}
-<\script>
-5
+</script>
+6
