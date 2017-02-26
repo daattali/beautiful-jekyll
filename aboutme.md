@@ -18,7 +18,7 @@ It uses Jekyll, and in particular the Beautiful Jekyll "theme."
 
 Sounds complicated, but it's not. I created it by "cloning" the repository of https://github.com/daattali/beautiful-jekyll, which there are simple instructions to do if you follow that link. The personalization is straightforward, and you can do everything in your browser, and you don't need to worry about the background processing that turns the files into web pages; github handles all that.
 
-I did add the ability to include $$\LaTeX$$ formulas in my posts, using [MathJax](https://www.mathjax.org/). Formulas can be either in-line or displayed. _In both cases,_ you have to use the double dollar-sign `$$` as the delimiter.
+I did add the ability to include $$\LaTeX$$ formulas in my posts, using [MathJax](https://www.mathjax.org/). Formulas can be either in-line or displayed. _In both cases,_ you have to use the double dollar-sign as the delimiter.
 
 For example, the code
 
