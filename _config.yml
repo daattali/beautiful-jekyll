@@ -90,7 +90,7 @@ disqus: "hectorpefo-github-io"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+excerpt_length: 1000
 
 # MDC added
 excerpt_separator: <!--more-->
