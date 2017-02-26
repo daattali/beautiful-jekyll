@@ -16,10 +16,12 @@ baseurl: ""
 # Name of website
 title: Hector's Puzzled
 
-# Short description of your site
-description: "Attempts at solving fivethirtyeight.com Riddlers."
 subtitle: "Attempts at solving fivethirtyeight.com Riddlers."
 page.subtitle: "Attempts at solving fivethirtyeight.com Riddlers."
+
+# Short description of your site
+description: "Attempts at solving fivethirtyeight.com Riddlers."
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
