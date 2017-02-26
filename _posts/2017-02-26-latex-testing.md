@@ -5,6 +5,6 @@ title: LaTeX testing
 what: is this
 ---
 
-\\[\fraction{e}{r}\\]
-
 $$\theta$$
+\\(\alpha\\)
+
