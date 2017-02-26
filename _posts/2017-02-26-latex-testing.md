@@ -5,6 +5,7 @@ title: LaTeX testing
 what: is this
 ---
 
-$$\theta$$
-\\(\alpha\\)
+Theta: $$\theta$$
+
+Alpha: \\(\alpha\\)
 
