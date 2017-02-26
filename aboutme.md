@@ -28,7 +28,7 @@ $$\int_{\theta = 0}^\pi \sin(\theta} d\theta$$
 
 produces:
 
-$$\int_{\theta = 0}^\pi \sin(\theta} d\theta$$
+$$ \int_{\theta = 0}^\pi \sin(\theta) d\theta $$
 
 To do that, all I had to do was to insert the following code into the file `_includes/head.html` right after the first line ("`<head>`"). 
 ```
