@@ -5,10 +5,11 @@ title: LaTeX testing
 what: is this
 ---
 
+These all work:
+
 Theta: $$\theta$$
 
-Fraction:
-<script type="math/tex">\frac{t}{\sqrt{2}}</script>
+Fraction: <script type="math/tex">\frac{t}{\sqrt{2}}</script>
 
 $$\int_{x=0}^1 \sin(x)$$
 
@@ -18,5 +19,3 @@ multiline:
 
 $$\theta
 +\alpha$$
-
-9
