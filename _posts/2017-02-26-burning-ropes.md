@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Timing by Burning Ropes
+title: Burning Ropes
 date: 2017/02/19
 ---
 > Suppose you have four ropes and a lighter. Each rope burns at a nonconstant rate but takes exactly one hour to burn completely from one end to the other. You can only light the ropes at either of their ends but can decide when to light each end as you see fit. If you’re strategic in how you burn the ropes, how many specific lengths of time can you measure? (For example, if you had one rope, you could measure two lengths of time: one hour, by simply burning the entire rope from one end, and half an hour, by burning the rope from both ends and marking when the flames meet.)
