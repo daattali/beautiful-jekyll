@@ -9,4 +9,7 @@ Theta: $$\theta$$
 
 Fraction:
 <script type="math/tex">\fraction{t}{\sqrt{2}}</script>
-7
+
+$$\int_{x=0}^1 \sin(x)$$
+
+8
