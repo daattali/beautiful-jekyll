@@ -12,4 +12,6 @@ Fraction:
 
 $$\int_{x=0}^1 \sin(x)$$
 
-8
+$$\fraction{1}{2}$$
+
+9
