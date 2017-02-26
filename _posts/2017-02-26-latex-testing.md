@@ -10,5 +10,5 @@ Theta: $$\theta$$
 Alpha: \\(\alpha\\)
 
 Fraction:
-\\[\fraction{t}{\sqrt{2}}\\]
+\\[\\fraction{t}{\sqrt{2}}\\]
 
