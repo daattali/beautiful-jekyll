@@ -4,9 +4,6 @@ published: true
 title: Weighing Coins
 date: '2017-02-24'
 ---
-Problem:
-========
-
 > You have 12 gold coins — or so you think! One is fake and is known to have a different weight than the others. It could be heavier or lighter; you only know it’s wrong. Using the same simple balance scale, how do you determine the incorrect coin, and whether it is heavier or lighter, in only three weighings? 
 
 ([fivethirtyeight](https://fivethirtyeight.com/features/two-mysteries-of-the-gold-coins/))
