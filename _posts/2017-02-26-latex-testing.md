@@ -8,6 +8,7 @@ what: is this
 Theta: $$\theta$$
 
 Fraction:
-<script>
-$$\fraction{t}{\sqrt{2}}$$ 3
+<script type=math/tex>
+\fraction{t}{\sqrt{2}}
 <\script>
+4
