@@ -8,10 +8,10 @@ what: is this
 Theta: $$\theta$$
 
 Fraction:
-<script type="math/tex">\fraction{t}{\sqrt{2}}</script>
+<script type="math/tex">\frac{t}{\sqrt{2}}</script>
 
 $$\int_{x=0}^1 \sin(x)$$
 
-$$\fraction{1}{2}$$
+$$\frac{1}{2}$$
 
 9
