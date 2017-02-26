@@ -7,9 +7,5 @@ what: is this
 
 Theta: $$\theta$$
 
-Alpha: \\(\alpha\\)
-
 Fraction:
-$\fraction{t}{\sqrt{2}}$ 1
-
-Inline $\sum$ with $\sqrt{2}$ dollar signs
+$$\fraction{t}{\sqrt{2}}$$ 2
