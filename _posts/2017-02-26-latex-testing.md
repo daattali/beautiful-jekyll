@@ -9,3 +9,6 @@ Theta: $$\theta$$
 
 Alpha: \\(\alpha\\)
 
+Fraction:
+\\[\fraction{t}{\sqrt{2}}\\]
+
