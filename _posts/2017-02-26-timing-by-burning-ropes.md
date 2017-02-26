@@ -69,6 +69,8 @@ Number of Ropes|Intervals from Start|All Intervals
 7 | 218 | 386
 8 | 473 | 844
 
+\ 
+
 ```python
 {% include ropes.py %}
 ```
