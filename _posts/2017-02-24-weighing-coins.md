@@ -47,7 +47,7 @@ If we assign pairs of mirrored outcomes to the 12 coins (eliminating 000, of cou
 Here is one way to achieve that, weighing 4 versus 4 coins each time (these are the heavy codes, which also tell us where the coins go in the weighings; the light codes are their mirrors):
 
 Coin | Code
------------
+:-----:|:-----:
 1 | 101
 2 | 222
 3 | 100
