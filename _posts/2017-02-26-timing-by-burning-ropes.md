@@ -4,15 +4,13 @@ published: true
 title: Timing by Burning Ropes
 date: 2017/02/24
 ---
-The Puzzle:
-===========
+##  The Puzzle:
 
 > Suppose you have four ropes and a lighter. Each rope burns at a nonconstant rate but takes exactly one hour to burn completely from one end to the other. You can only light the ropes at either of their ends but can decide when to light each end as you see fit. If you’re strategic in how you burn the ropes, how many specific lengths of time can you measure? (For example, if you had one rope, you could measure two lengths of time: one hour, by simply burning the entire rope from one end, and half an hour, by burning the rope from both ends and marking when the flames meet.)
 >
 > Extra credit: What if you had N ropes?
 
-Solution:
-=========
+## Solution:
 
 “Being able to measure" a given length of time might mean being able to tell when that length of time has passed from the get-go, or more liberally, being able to produce a sequence of events such that that length is the period between some two of them. We’ll find answers for both interpretations of the problem (Oliver Roeder clarifies on Twitter that the more liberal interpretation is intended). Also, in the problem statement it is clearly assumed that there is not a “length" of zero hours.
 
