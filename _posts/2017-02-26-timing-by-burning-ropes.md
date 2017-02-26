@@ -70,6 +70,5 @@ Number of Ropes|Intervals from Start|All Intervals
 8 | 473 | 844
 
 ```python
-s = "Python syntax highlighting"
 {% include ropes.py %}
 ```
