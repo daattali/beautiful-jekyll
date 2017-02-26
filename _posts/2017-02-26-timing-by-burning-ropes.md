@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Timing by Burning Ropes
-date: 2017/02/24
+date: 2017/02/19
 ---
 ##  The Puzzle:
 
