@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Weighing Coins
 date: '2017-02-24'
 ---
