@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Hector Puzzles
+title: Hector's Puzzled
 
 # Short description of your site
 description: Attempts at solving fivethirtyeight.com Riddlers.
