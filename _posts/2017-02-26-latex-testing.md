@@ -9,5 +9,5 @@ Theta: $$\theta$$
 
 Fraction:
 <script>
-$$\fraction{t}{\sqrt{2}}$$ 2
+$$\fraction{t}{\sqrt{2}}$$ 3
 <\script>
