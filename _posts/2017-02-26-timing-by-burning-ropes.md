@@ -56,9 +56,7 @@ With 4 ropes we have 23 durations from the start:
 
 If we count durations between extinguishings as well, there are 34 in all.
 
-These figures are confirmed by a Python program available at:
-
-https://gist.github.com/hectorpefo/db9b302f4d33474216da6a81cda28580
+These figures are confirmed by the Python program below.
 
 Number of Ropes|Intervals from Start|All Intervals
 :-:|:-:|:-:
@@ -71,5 +69,5 @@ Number of Ropes|Intervals from Start|All Intervals
 7 | 218 | 386
 8 | 473 | 844
 
-
-
+```python
+{% include ropes.py %}
