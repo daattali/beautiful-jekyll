@@ -38,8 +38,7 @@ avatar: "/img/hector-avatar.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
-
+title-img: "/img/home.png"
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
