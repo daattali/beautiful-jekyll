@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Hector does Puzzles
+title: Hector Puzzles
 
 # Short description of your site
-description: Solutions to fivethirtyeight.com Riddlers.
+description: Attempts at solving fivethirtyeight.com Riddlers.
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
