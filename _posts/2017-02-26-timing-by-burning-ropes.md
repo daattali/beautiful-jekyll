@@ -8,6 +8,8 @@ date: 2017/02/19
 > 
 > Extra credit: What if you had N ropes?
 
+<!--more-->
+
 ([fivethirtyeight](https://fivethirtyeight.com/features/a-riddle-how-many-crooked-politicians-are-there/))
 
 ## Solution:
