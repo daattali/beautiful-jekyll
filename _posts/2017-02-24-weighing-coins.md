@@ -38,7 +38,7 @@ Extension:
 
 As an extension, let’s find a method that doesn’t require a decision tree. In other words, we have to say at the start which coins go where in all 3 weighings.
 
-For 3 weighings with 3 possible outcomes each there are 27 possible overall outcomes. Each possible outcome can be coded by a base-3 numeral; for instance, ``102" codes having the left side heavier in the first weighing, then both sides even, then right side heavier. We want to devise weighings so that for each coin there are two outcomes, corresponding to its being heavy or light.
+For 3 weighings with 3 possible outcomes each there are 27 possible overall outcomes. Each possible outcome can be coded by a base-3 numeral; for instance, "102" codes having the left side heavier in the first weighing, then both sides even, then right side heavier. We want to devise weighings so that for each coin there are two outcomes, corresponding to its being heavy or light.
 
 Suppose the outcome 102 would show that coin 7 is heavy; then it must be that it is on the left in the first weighing, not involved in the second, and on the right in the third. This means the mirror outcome 201 (swapping 1s and 2s) codes coin 7 being light.
 
