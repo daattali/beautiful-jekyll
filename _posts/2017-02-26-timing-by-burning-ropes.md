@@ -60,7 +60,8 @@ These figures are confirmed by a Python program available at:
 
 https://gist.github.com/hectorpefo/db9b302f4d33474216da6a81cda28580
 
-:Number of Ropes:|:Intervals from Start:|:All Intervals:
+Number of Ropes|Intervals from Start|All Intervals
+:-:|:-:|:-:
 1 | 2 | 2
 2 | 5 | 6
 3 | 11 | 15
