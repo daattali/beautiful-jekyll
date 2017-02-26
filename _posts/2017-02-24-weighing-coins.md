@@ -1,7 +1,8 @@
 ---
 layout: post
 published: false
-title: Untitled
+title: Weighing Coins
+date: '2017-02-24'
 ---
 Problem:
 ========
