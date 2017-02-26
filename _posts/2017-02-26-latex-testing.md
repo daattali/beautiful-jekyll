@@ -14,4 +14,9 @@ $$\int_{x=0}^1 \sin(x)$$
 
 $$\frac{1}{2}$$
 
+multiline:
+
+$$\theta
++\alpha$$
+
 9
