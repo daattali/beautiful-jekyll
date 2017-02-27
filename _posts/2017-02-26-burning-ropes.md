@@ -77,6 +77,6 @@ Code (Python):
 {% include ropes.py %}
 ```
 
-A natural question is whether there is a closed-form expression for variable N ropes. I haven't found one, and I would be interested to know if you have!
+A natural question is whether there is a closed-form expression for N ropes. I haven't found one, and I would be interested to know if you have!
 
 <br>
