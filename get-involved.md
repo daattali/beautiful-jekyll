@@ -59,4 +59,4 @@ action alerts.
 <a href="https://www.youtube.com/watch?v=rS00xWnqwvI"><img width="600" height="337" src="/img/davis-s-pumpkins-600x337.jpg" /></a>
 </div>
 
-[Contact us.](mailto:info@tx10indivisible.us)
+[Contact us.](mailto:contact@tx10indivisible.us)

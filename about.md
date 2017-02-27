@@ -30,4 +30,4 @@ Please join us if you share that goal.
 
 **Learn how to [get involved](/get-involved).**
 
-For more information, contact [info@tx10indivisible.us](mailto:info@tx10indivisible.us)
+For more information, e-mail us: [contact@tx10indivisible.us](mailto:contact@tx10indivisible.us?subject=Getting Involved with TX-10 Indivisible)
