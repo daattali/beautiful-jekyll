@@ -46,8 +46,13 @@ If we assign distinct pairs of mirrored outcomes to the 12 coins (eliminating 00
 
 Here is one way to achieve that, weighing 4 versus 4 coins each time:
 
-Coin | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+Coin  | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12
 --  | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
 Heavy | 101 | 222 | 100 | 001 | 011 | 220 | 102 | 021 | 210 | 122 | 010 | 212
 Light | 202 | 111 | 200 | 002 | 022 | 110 | 201 | 012 | 120 | 211 | 020 | 121
 
+Weighing | Left | Right
+-- | -- | --
+1 | 1 3 7 10 | 2 6 8 12
+2 | 5  9 11 12 | 2 6 8 10
+2 | 1 4 5 8 | 2 7 10 12
