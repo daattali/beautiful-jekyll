@@ -26,7 +26,7 @@ description: "Attempts at solving fivethirtyeight.com Riddlers."
 
 # List of links in the navigation bar
 navbar-links:
-  About: "aboutme"
+  About: "about"
   Resources:
     - Riddler Blog Posts: "https://fivethirtyeight.com/?s=riddler"
     - Laurent Lessard's Blog: "http://www.laurentlessard.com/bookproofs/"
