@@ -43,7 +43,7 @@ title-img: /img/site-logo.png
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: TX-10 Indivisible Team
-  email: "info@tx10indivisible.us"
+  email: "contact@tx10indivisible.us"
   # our footer.html is hacked to allow a URL value for "facebook"
   facebook: https://www.facebook.com/tx10indivisible/
   facebook-group: https://www.facebook.com/groups/tx10indivisible/
