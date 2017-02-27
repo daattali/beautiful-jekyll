@@ -44,9 +44,10 @@ Suppose the outcome 102 would show that coin 7 is heavy; then it must be that it
 
 If we assign pairs of mirrored outcomes to the 12 coins (eliminating 000, of course) such that there are always as many coins on the left as there are on the right, then the code of the actual outcome will tell us which coin is heavy, or which is light.
 
-Here is one way to achieve that, weighing 4 versus 4 coins each time (these are the heavy codes, which also tell us where the coins go in the weighings; the light codes are their mirrors):
+Here is one way to achieve that, weighing 4 versus 4 coins each time (remember that the heavy codes also tell us where the coins go in the weighings):
 
 Coin | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 --  | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
-Code | 101 | 222 | 100 | 001 | 011 | 220 | 102 | 021 | 210 | 122 | 010 | 212
+Heavy | 101 | 222 | 100 | 001 | 011 | 220 | 102 | 021 | 210 | 122 | 010 | 212
+Light | 202 | 111 | 200 | 002 | 022 | 110 | 201 | 012 | 120 | 211 | 020 | 121
 
