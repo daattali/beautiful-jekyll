@@ -58,7 +58,8 @@ With 4 ropes we have 23 durations from the start:
 
 If we count durations between extinguishings as well, there are 34 in all.
 
-These figures are confirmed by the Python program below.
+These figures are confirmed by the Python program below. A natural question is whether there is a closed-form expression for N ropes. I haven't found one, and I would be interested to know if you have!
+
 
 Number of Ropes|Intervals from Start|All Intervals
 :-:|:-:|:-:
@@ -80,7 +81,5 @@ Number of Ropes|Intervals from Start|All Intervals
 ```python
 {% include ropes.py %}
 ```
-
-A natural question is whether there is a closed-form expression for N ropes. I haven't found one, and I would be interested to know if you have!
 
 <br>
