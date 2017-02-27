@@ -14,7 +14,7 @@ date: 2017/02/19
 
 ## Solution:
 
-“Being able to measure" a given length of time might mean being able to tell when that length of time has passed from the get-go, or more liberally, being able to produce a sequence of events such that that length is the period between some two of them. We’ll find answers for both interpretations of the problem (Oliver Roeder clarifies on Twitter that the more liberal interpretation is intended). Also, in the problem statement it is clearly assumed that there is not a “length" of zero hours.
+“Being able to measure" a given length of time might mean being able to tell when that length of time has passed from the get-go, or more liberally, being able to produce a sequence of events such that that length is the period between some two of them. (Oliver Roeder clarified [on Twitter](https://twitter.com/ollie/status/832720620588724224) that the latter interpretation was intended; but the solution [provided](https://fivethirtyeight.com/features/two-mysteries-of-the-gold-coins/) by the contributor of the puzzle assumed the former.) We’ll find answers for both interpretations of the problem. Also, in the problem statement it is clearly assumed that there is not a “length" of zero hours.
 
 With 1 rope, we can measure 2 durations: 1/2 and 1 hour.
 
