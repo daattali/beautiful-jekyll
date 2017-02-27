@@ -71,10 +71,12 @@ Number of Ropes|Intervals from Start|All Intervals
 7 | 218 | 386
 8 | 473 | 844
 
-Python code:
+Code (Python):
 
 ```python
 {% include ropes.py %}
 ```
 
 A natural question is whether there is a closed-form expression for variable N ropes. I haven't found one, and I would be interested to know if you have!
+
+<br>
