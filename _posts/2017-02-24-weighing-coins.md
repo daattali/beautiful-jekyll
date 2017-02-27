@@ -42,9 +42,9 @@ For 3 weighings with 3 possible outcomes each there are 27 possible overall outc
 
 Suppose the outcome 102 would show that coin 7 is heavy; then it must be that it is on the left in the first weighing, not involved in the second, and on the right in the third. This means the mirror outcome 201 (swapping 1s and 2s) codes coin 7 being light.
 
-If we assign distinct pairs of mirrored outcomes to the 12 coins (eliminating 000, of course) such that there are always as many coins on the left as there are on the right, then the code of the actual outcome will tell us which coin is heavy, or which is light.
+If we assign distinct pairs of mirrored outcomes to the 12 coins (eliminating 000, of course) such that there are always as many coins on the left as there are on the right when we place the coins according to their "heavy codes," then the code of the actual outcome will tell us which coin is heavy, or which is light.
 
-Here is one way to achieve that, weighing 4 versus 4 coins each time (remember that the heavy codes also tell us where the coins go in the weighings):
+Here is one way to achieve that, weighing 4 versus 4 coins each time:
 
 Coin | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 --  | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
