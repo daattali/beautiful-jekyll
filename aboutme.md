@@ -6,9 +6,11 @@ subtitle: French VMware engineer in Scotland
 <p align="center">
   <img src="/img/photo.jpg"/>
   <br>
-  [![]({{site.baseurl}}/img/vExpert2016-2017.jpg)]
+  <img src="/img/vExpert2016-2017.jpg"/>
   <br>
-  [![]({{site.baseurl}}/img/vcadcv.jpg)](https://www.youracclaim.com/badges/54135e3e-4595-4d3a-9712-0e2c129cad5d)
+  <a href="https://www.youracclaim.com/badges/54135e3e-4595-4d3a-9712-0e2c129cad5d">
+    <img src="/img/vcadcv.jpg"/>
+  </a>
 </p>  
 
 ### About me  
