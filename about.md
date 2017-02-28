@@ -37,3 +37,5 @@ To do that, all I had to do was to insert the following code into the file `_inc
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
     </script>
 ```
+
+(You could also just clone [_my_ repository](https://github.com/hectorpefo/hectorpefo.github.io) for this site, which will give you the $\LaTeX$ functionality as well as this ABOUT page and a few other small tweaks of the Beautiful Jekyll theme.)
