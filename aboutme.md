@@ -7,7 +7,7 @@ subtitle: French VMware engineer in Scotland
   <img src="/img/photo.jpg"/>
   <br>
   <img src="/img/vExpert2016-2017.jpg"/>
-  <br>
+  <br><br>
   <a href="https://www.youracclaim.com/badges/c79e933b-061b-4110-b841-8c87fe1d287b/public_url">
     <img src="/img/VCP6.png"/>
   </a>
