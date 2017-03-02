@@ -4,7 +4,7 @@ title: UPDATE - TX-10 Town Hall With or Without McCaul
 #meta-title: Let's Go See McCaul
 subtitle: Options to Participate in Tonight's Town Hall
 #meta-description: CALL TO ACTION - February 20th - 24th, 2017
-tags: [front]
+tags: [front,event]
 share-img: /img/site-logo-borderless.png
 ---
 As you may have heard, we've had an overwhelmingly positive response to tonight's town hall. In fact, the response has been so positive that we have 500 RSVPs for a venue that seats 300. Uh-oh! The last thing we want to do is turn people away, and we are doing everything we can to accommodate as many people as physically possible! That said, there's no way around it: space is probably going to be an issue, and we recommend getting there early to get a seat.

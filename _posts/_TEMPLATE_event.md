@@ -2,7 +2,7 @@
 layout: post
 title: TX-10 Welcoming & Organizing Meeting
 subtitle: EVENT for Sun, Jan 29, 11:30 AM - 1 PM
-tags: [front, event]
+tags: [event]
 ---
 
 <strong>WHAT:</strong> TX-10 Welcoming & Organizing Meeting<br />
