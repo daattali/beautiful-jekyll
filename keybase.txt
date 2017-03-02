@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/alexwhan
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://alexwhan.com
+    * I am alexwhan (https://keybase.io/alexwhan) on keybase.
+      * I have a public key ASAxeEb50FSEICQcpOzUeKJ7DAcG6pkBp9pJsabvfrMimQo
+
+      To do so, I am signing this object:
+
+      {
+          "body": {
+	          "key": {
+		              "eldest_kid": "0120317846f9d0548420241ca4ecd478a27b0c0706ea9901a7da49b1a6ef7eb322990a",
+			                  "host": "keybase.io",
+					              "kid": "0120317846f9d0548420241ca4ecd478a27b0c0706ea9901a7da49b1a6ef7eb322990a",
+						                  "uid": "0f22ad71f9693634149fbbe4e1d3f219",
+								              "username": "alexwhan"
+									              },
+										              "service": {
+											                  "hostname": "alexwhan.com",
+													              "protocol": "http:"
+														              },
+															              "type": "web_service_binding",
+																              "version": 1
+																	          },
+																		      "client": {
+																		              "name": "keybase.io go client",
+																			              "version": "1.0.18"
+																				          },
+																					      "ctime": 1488498428,
+																					          "expire_in": 504576000,
+																						      "merkle_root": {
+																						              "ctime": 1488498385,
+																							              "hash": "85227986a88c220a96fc0eaeeaf8070a11e2808bc3d2ff43bf0408ae2668a307eaed28cbd50d246942caa33d14ce085958f118d877e27c049777cefdba4f3b57",
+																								              "seqno": 935579
+																									          },
+																										      "prev": "f932351593f3dcba7b7819453cc9b53f341e16a1e2c5ec65bb1417ae4cacf0ac",
+																										          "seqno": 7,
+																											      "tag": "signature"
+																											      }
+
+																											      which yields the signature:
+
+																											      hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMXhG+dBUhCAkHKTs1HiiewwHBuqZAafaSbGm736zIpkKp3BheWxvYWTFAvN7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMzE3ODQ2ZjlkMDU0ODQyMDI0MWNhNGVjZDQ3OGEyN2IwYzA3MDZlYTk5MDFhN2RhNDliMWE2ZWY3ZWIzMjI5OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzE3ODQ2ZjlkMDU0ODQyMDI0MWNhNGVjZDQ3OGEyN2IwYzA3MDZlYTk5MDFhN2RhNDliMWE2ZWY3ZWIzMjI5OTBhIiwidWlkIjoiMGYyMmFkNzFmOTY5MzYzNDE0OWZiYmU0ZTFkM2YyMTkiLCJ1c2VybmFtZSI6ImFsZXh3aGFuIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJhbGV4d2hhbi5jb20iLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE4In0sImN0aW1lIjoxNDg4NDk4NDI4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0ODg0OTgzODUsImhhc2giOiI4NTIyNzk4NmE4OGMyMjBhOTZmYzBlYWVlYWY4MDcwYTExZTI4MDhiYzNkMmZmNDNiZjA0MDhhZTI2NjhhMzA3ZWFlZDI4Y2JkNTBkMjQ2OTQyY2FhMzNkMTRjZTA4NTk1OGYxMThkODc3ZTI3YzA0OTc3N2NlZmRiYTRmM2I1NyIsInNlcW5vIjo5MzU1Nzl9LCJwcmV2IjoiZjkzMjM1MTU5M2YzZGNiYTdiNzgxOTQ1M2NjOWI1M2YzNDFlMTZhMWUyYzVlYzY1YmIxNDE3YWU0Y2FjZjBhYyIsInNlcW5vIjo3LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQNPXad8zy5m3y0DvMLM6PL28cc2nRa91aQYWQeMuvyIcGTcIUjEa8bgRfa7RE+kFnQKqPGgaAawVHI64asHidQCoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBwACt7y5OgidKRPd0E7Fj4/MHoD2Iqyx9QvrfAl36FCKN0YWfNAgKndmVyc2lvbgE=
+
+																											      And finally, I am proving ownership of this host by posting or
+																											      appending to this document.
+
+																											      View my publicly-auditable identity here: https://keybase.io/alexwhan
+
+																											      ==================================================================
+
