@@ -46,7 +46,7 @@ footer-links-active:
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-75631316-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
