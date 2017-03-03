@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Maze Rot
 date: 2017/03/03
 ---
