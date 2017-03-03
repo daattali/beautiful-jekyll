@@ -1,84 +1,33 @@
 ---
 layout: post
 published: false
-title: Burning Ropes
-date: 2017/02/19
+title: Maze Rot
+date: 2017/03/03
 ---
-> Suppose you have four ropes and a lighter. Each rope burns at a nonconstant rate but takes exactly one hour to burn completely from one end to the other. You can only light the ropes at either of their ends but can decide when to light each end as you see fit. If you’re strategic in how you burn the ropes, how many specific lengths of time can you measure? (For example, if you had one rope, you could measure two lengths of time: one hour, by simply burning the entire rope from one end, and half an hour, by burning the rope from both ends and marking when the flames meet.)
-> 
-> Extra credit: What if you had N ropes?
+> You’re so tired that you can no longer walk. Luckily, though, you remembered to bring your robot pal along. The robot must be given a list of directions as instructions, and will attempt to read each instruction in order and move that direction. For example, “NNWES” will instruct the robot to move north, north, west, east, south. If an instruction is impossible to carry out (i.e., there is a wall in that direction), the robot will bump into the wall then move on to the next instruction as if nothing happened. The robot can’t do any computation or communicate with you after it leaves — it blindly follows the instructions given until it reaches the finish or it runs out of instructions. However, you can do as much computation as you want before sending the robot on its merry way. (Hint: The robot has lots, and lots, and lots of memory.)
+>
+>What instructions do you feed your robot to guarantee that it will reach the end square somewhere along its journey?
+>
+>Extra credit: What’s an upper bound for the minimum number of instructions you must feed your robot to guarantee that it reaches the end square?
 
 <!--more-->
 
-([fivethirtyeight](https://fivethirtyeight.com/features/a-riddle-how-many-crooked-politicians-are-there/))
+([fivethirtyeight](https://fivethirtyeight.com/features/can-your-robot-friend-solve-the-corn-maze/))
 
 ## Solution:
 
-“Being able to measure" a given length of time might mean being able to tell when that length of time has passed from the get-go, or more liberally, being able to produce a sequence of events such that that length is the period between some two of them. (Oliver Roeder clarified [on Twitter](https://twitter.com/ollie/status/832720620588724224) that the latter interpretation was intended; but the solution [provided](https://fivethirtyeight.com/features/two-mysteries-of-the-gold-coins/) by the contributor of the puzzle assumed the former.) We’ll find answers for both interpretations of the problem. Also, in the problem statement it is clearly assumed that there is not a “length" of zero hours.
+An N by N maze has $2N^2-2N$ possible walls between cells.  Why? There are $N^2$ cells. If we count 4 walls per cell, getting $4N^2$, we'll have double-counted all of the interior walls, and we'll have single-counted the $4N$ perimeter walls, which we don't want to count at all. So $2N^2$ single-counts the interior walls and still half-counts perimeter ones, and thus there are $2N^2-2N$ possible interior walls. For $N=10$, that's 180. Since each possible wall can either be there or not, and the finish cell can be any of the 100 cells, there are at most $100 \times 2^{180}$ possible mazes Obviously, the every-wall-up "maze" and the many "mazes" where the finish cell is completely walled-off are not real possibilities, but for simplicity we'll be over-counting.
 
-With 1 rope, we can measure 2 durations: 1/2 and 1 hour.
+Not every cell in a given maze has a path to the finish cell. The up to 99 cells that do are the possible starting cells for that maze. For each starting cell there is a solution: a sequence of moves that reaches the finish cell. For each maze, then, we generate a list by starting cell number (where the top row is 1 to 10 and the bottom is 91 to 100) of the up to 99 solutions.
 
-With 2 ropes (call them 1 and 2), we can measure 5 durations from the start:
+We'll generate our instructions by going through the possible mazes one by one, and ensuring for each that, if we're in it, we'll find the finish. 
 
--   4 half-hour-multiple durations.
+When we get to a given possible maze we consult our list of starting cells and corresponding solutions. We try the solution for the first starting cell, which will succeed if we started there (and are actually in that maze). Then, and here's the tricky bit, we try the solution for the cell that we would have ended up in if we'd started in the second starting cell and tried the first solution. That will succeed if we in fact started in the second starting cell. Then we try the solution for the cell we'd have ended up in if we started in the third starting cell and tried the first and second solutions. And so on. 
 
--   Measure 3/4hr: light both ends of 1 and one end of 2; at 1/2hr, light the other end of 2.
+So we string together solutions, up to 99 for each starting cell in a maze, for the up to $100 \times 2^180$ possible mazes, guaranteeing that the robot will at some point reach the finish.
 
-This allows us also to measure 1/4hr, so there are 6 in all.
+A solution is at most 99 moves, and it's not a terribly bold conjecture to assume that the average is below 50 moves. So a conservative upper bound on the number of moves contained in our instructions to the robot would be the product of:
 
-With 3 ropes (1, 2, and 3) we get 11 durations from the start:
-
--   6 half-hour-multiple durations.
-
--   Using two of the ropes to measure 3/4hr, we get 3 more durations for each of the ways of using rope 3 from there.
-
--   Measure 7/8hr: proceed as in measuring 3/4hr, and light 3 at the start and 3/4hr.
-
--   Measure 9/8hr: proceed as in measuring 3/4hr, and light 3 at 1/2hr and 3/4hr.
-
-If we count durations between extinguishings as well, we get 15 in all.
-
-With 4 ropes we have 23 durations from the start:
-
--   8 half-hour-multiples.
-
--   Using one pair to measure 3/4hr, we have 5 options for the other two ropes starting from there (the half-hour multiples).
-
--   Using three ropes to measure 7/8 gives 3 options for the remaining rope starting from there.
-
--   Using three ropes to measure 9/8hr similarly gives 3 new options starting from there.
-
--   Measure 15/16hr: proceed as in measuring 7/8hr, and light 4 at the start and 7/8hr.
-
--   Measure 19/16hr: proceed as in measuring 7/8hr, and light 4 at 1/2hr and 7/8hr.
-
--   Measure 21/16hr: proceed as in measuring 7/8hr, and light 4 at 3/4hr and 7/8hr. (Alternatively, proceed as in measuring 9/8hr, and light 4 at 1/2hr and 9/8hr.)
-
--   Measure 23/16hr: proceed as in measuring 9/8hr, and light 4 at 3/4hr and 9/8hr.
-
-If we count durations between extinguishings as well, there are 34 in all.
-
-These figures are confirmed by the Python program below. A natural question is whether there is a closed-form expression for N ropes. I haven't found one, and I would be interested to know if you have!
-
-Number of Ropes|Intervals from Start|All Intervals
-:-:|:-:|:-:
-1 | 2 | 2
-2 | 5 | 6
-3 | 11 | 15
-4 | 23 | 34
-5 | 48 | 78
-6 | 101 | 174
-7 | 218 | 386
-8 | 473 | 844
-
-<br>
-
-## Code (Python):
-
-<br>
-
-```python
-{% include ropes.py %}
-```
+$(100 \times 2^{180}) \times 99 \times 50 = 495,000 \times 2^{180}$
 
 <br>
