@@ -55,9 +55,9 @@ def explore(situation):
 		# Find time of next extinguishing
 		nexttime = min([rope[1] for rope in newropes if rope[1] > time])
 		newsituation = [newropes,nexttime]
-		if (newropes == ropes or (newsituation in already_processed)):
+		if newropes == ropes or newsituation in already_explored:
 			continue
-		already_processed.append(newsituation)
+		already_explored.append(newsituation)
 		explore(newsituation)
 
 # Main program
@@ -75,7 +75,7 @@ for N in range(MinRopes,MaxRopes+1):
 	situation = [ropes,time]
 
 	# Keep track of the situations we have already processed
-	already_processed = [situation]
+	already_explored = [situation]
 
 	# This is our list of the durations we can measure
 	times = []
@@ -90,3 +90,4 @@ for N in range(MinRopes,MaxRopes+1):
 	times.sort()
 	print(N,"ropes measure",len(times), "intervals")
 	# print(times)
+	
