@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: VCP6-DCV certification
 ---
 After months of studying (some more than others) and running labs, I finally commited to the VCP exam and passed it succesfully.
