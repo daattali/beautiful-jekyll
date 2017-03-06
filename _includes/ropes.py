@@ -90,4 +90,3 @@ for N in range(MinRopes,MaxRopes+1):
 	times.sort()
 	print(N,"ropes measure",len(times), "intervals")
 	# print(times)
-	
