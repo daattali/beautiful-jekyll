@@ -38,7 +38,7 @@ $ = 690312616383039636247517418379856771761061037587603600179200$
 
 $ \approx 6.90 \times 10^{58} $
 
-\ldots or about 690 octodecillion instructions.
+. . . or about 690 octodecillion instructions.
 
 To automate the generation of these instructions, the only non-trivial question is how to determine whether a cell in a maze is a starting cell, and what its alphabetically-first shortest solution is. This can be done (inefficiently, but we don't care about that) simply by trying, in alphabetical order, every 1-move sequence, every 2-move sequence, and so on up to 99-move sequences, stopping if you reach the finish. If you do reach the finish cell, that's your solution; if you never do, it's not a starting cell.
 
