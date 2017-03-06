@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Maze Robot
 date: 2017/03/03
 ---
