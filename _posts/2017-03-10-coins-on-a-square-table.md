@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Coins on a Square Table
 date: 2017/03/10
 ---
@@ -16,6 +16,6 @@ date: 2017/03/10
 
 ## Solution:
 
-
+The first player (X) always wins. X places the first coin in the center of the table. After that, whenever Y places a coin, X places the next one symmetrically, so that the two coins are the same distance from the center coin and all three of those coins are co-linear.  After each of X's moves, the table is symmetric (it has a 180 degree rotational symmetry), so that any open spot for Y to place a coin is mirrored by a spot for X's next coin. It follows that Y will be first to be unable to place a coin.
 
 <br>
