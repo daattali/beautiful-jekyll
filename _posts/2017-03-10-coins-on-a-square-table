@@ -1,0 +1,21 @@
+---
+layout: post
+published: false
+title: Coins on a Square Table
+date: 2017/03/10
+---
+> Two players are seated at a square table. The first player places a coin on the table, the second places a coin on the table, and they carry on placing coins one after another, with the only condition being that the coins are not allowed to touch. The winner is the person who places the final coin on the table, meaning that he or she fills the last remaining space between the other coins.
+>
+>The table has to be larger than a single coin, and all the coins placed must be identically sized.
+>
+>One player is always guaranteed to win if they use a certain strategy. Which one is it — the one who starts or the one who goes second? And what is his or her strategy?
+
+<!--more-->
+
+([fivethirtyeight](https://fivethirtyeight.com/features/who-will-win-the-space-race/))
+
+## Solution:
+
+
+
+<br>
