@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Coins on a Square Table
 date: 2017/03/10
 ---
