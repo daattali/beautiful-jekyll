@@ -8,7 +8,7 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "https://supach.github.io/DataVisShiny/"
+#url: "https://supach.github.io/DataVisShiny/"
 #baseurl: "/DataVisShiny.github.io"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
