@@ -25,6 +25,7 @@ title: Mahesh Kumar
 navbar-links:
   About Me: "aboutme"
   Resources:
+    - Natural Langugage Process: "nlp_1"
     - Hacker News: "https://news.ycombinator.com/"
     - Datatau: "http://www.datatau.com/"
     # - Learn markdown: "http://www.markdowntutorial.com/"
