@@ -8,7 +8,9 @@ date: 2017/03/12
 >One hundred computers are connected in a 10x10 network grid, as below. At the start exactly nine of them are infected with a virus. The virus spreads like this: if any computer is directly connected to at least 2 infected neighbours, it will also become infected.
 >
 >Will the virus infect all 100 computers? 
->
+
+<!--more-->
+
 ([The Guardian](https://www.theguardian.com/science/2017/mar/13/can-you-solve-it-pi-day-puzzles-that-will-leave-you-pie-eyed))
 
 ## Solution:
