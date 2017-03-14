@@ -15,6 +15,6 @@ date: 2017/03/12
 
 ## Solution:
 
-Think of the 10x10 grid as situated within a larger grid with immune nodes surrounding it on all sides. And call the "fringe" of a state of infection the number of edges connecting any infected node to an uninfected one.  When a new node gets infected by two infected neighbors, the fringe gets reduced by the two edges connecting it to those neighbors, and increased by at most the two other edges from that new node. So the fringe of a state of infection can never increase with any new infection.  An initial infection state for nine infected nodes in a 10x10 grid can have a fringe of no more than 4 edges per node times 9 nodes, or 36. And the fringe of a fully infected 10x10 grid is 40. Therefore, no nine infected nodes can infect the entirety of a 10x10 grid.
+Think of the 10x10 grid as situated within a larger grid with immune nodes surrounding it on all sides. And call the "fringe" of a state of infection the number of edges connecting any infected node to an uninfected one.  When a new node gets infected by two infected neighbors, the fringe gets reduced by the two edges connecting it to those neighbors, and increased by at most two other edges from that new node. So the fringe of a state of infection can never increase with any new infection.  An initial infection state for nine infected nodes in a 10x10 grid can have a fringe of no more than 4 edges per node times 9 nodes, or 36. And the fringe of a fully infected 10x10 grid is 40. Therefore, no 9 infected nodes can infect the entirety of a 10x10 grid.
 
 <br>
