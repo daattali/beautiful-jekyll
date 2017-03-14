@@ -12,7 +12,7 @@ As Wikipedia says 'Natural language processing (NLP) is a field of computer scie
 
 ### Why is NLP required?
 
-There are several reasons that made NLP popular within the Artificial Intelligence ad Machine Learning community, especially the huge opportunity that NLP provided to everyone to work on large sets of textual data.
+There are several reasons that made NLP popular within the Artificial Intelligence and Machine Learning community, especially the huge opportunity that NLP provided to everyone to work on large sets of textual data.
 
 Few of the domains, where NLP plays a crucial role is:
 
