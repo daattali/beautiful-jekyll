@@ -1,8 +1,13 @@
-
-## Anatomy of Natural Language Processing
+---
+layout: post
+title: Anatomy of Natural Language Processing
+date:   2017-01-21 16:47:14 +0530
+categories: natural_language_processing, machine learning
+tags: [machine_learning, natural_language_processing]
+bigimg: /img/nlp.jpg
+---
 
 As Wikipedia says 'Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages and, in particular, concerned with programming computers to fruitfully process large natural language corpora'.
-
 
 ### Why is NLP required?
 
