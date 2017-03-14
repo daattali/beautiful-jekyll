@@ -494,8 +494,3 @@ else:
 Hope you understood the basics of a Natural Language Processing problem.
 
 This basic introduction is based on [Swetha Kolalapudi](https://www.pluralsight.com/courses/python-natural-language-processing)'s session.
-
-
-```python
-
-```
