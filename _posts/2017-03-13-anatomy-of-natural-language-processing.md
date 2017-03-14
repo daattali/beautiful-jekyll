@@ -494,7 +494,7 @@ else:
     print("Unknown category")
 ```
 
-    Category belongs to the category: Apps
+    Article belongs to the category: Apps
     
 
 Hope you understood the basics of a Natural Language Processing problem.
