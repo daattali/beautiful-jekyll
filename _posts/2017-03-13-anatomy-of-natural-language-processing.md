@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Anatomy of Natural Language Processing
-date:   2017-03-13 16:47:14 +0530
+date: 2017-03-13
 categories: natural_language_processing, machine learning
 tags: [machine_learning, natural_language_processing]
-bigimg: /img/nlp.jpg
+bigimg: /img/nlp.jpg : "https://people.cs.umass.edu/~sameer/"
 ---
 
 As Wikipedia says 'Natural language processing (NLP) is a field of computer science, artificial intelligence, and computational linguistics concerned with the interactions between computers and human (natural) languages and, in particular, concerned with programming computers to fruitfully process large natural language corpora'.
 
 ### Why is NLP required?
 
-There are several reasons that made NLP popular within the Artificial Intelligence and Machine Learning community, especially the huge opportunity that NLP provided to everyone to work on large sets of textual data.
+There are several reasons that made NLP popular within the Artificial Intelligence ad Machine Learning community, especially the huge opportunity that NLP provided to everyone to work on large sets of textual data.
 
 Few of the domains, where NLP plays a crucial role is:
 
