@@ -1,7 +1,7 @@
 ---
 layout: page
 title: JASP Resources
-subtitle: Here are a collection of teaching materials I have created for JASP. 
+subtitle: Here is a collection of materials I have created for JASP. 
 ---
 
 JASP is an open-source statistics package designed to make Bayesian statistics accessible. The package is very user-friendly and is perfect for introducing students to statistics with its minimalist design and continuously updated output. You can download it for free from their [website](https://jasp-stats.org/). 
