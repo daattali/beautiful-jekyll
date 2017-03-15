@@ -17,5 +17,5 @@ The content of this website will mainly consist of:
 - My research
 - Tips for conducting research
 
-##Acknowledgements
+## Acknowledgements
 I originally had a blog through WordPress, but I wanted something more flexible to easily share code. This would not have been possible without the template created by Dean Attali who made [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/). I would recommend starting with his template if you plan on migrating and know nothing about html. 
