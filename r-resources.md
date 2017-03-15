@@ -1,6 +1,6 @@
 ---
 layout: page
 title: R Resources
-subtitle: Here are a collection of teaching materials I have created. 
+subtitle: Here is a collection of materials I have created for teaching R. 
 ---
 # Content
