@@ -3,7 +3,7 @@ layout: page
 title: Archive
 ---
 ## Research lessons learnt the hard way series
- 1. [maintaining organised data files](https://bartlettje.github.io/2017-01-17-research-lesson-1/)  
+ 1. [Maintaining organised data files](https://bartlettje.github.io/2017-01-17-research-lesson-1/)  
 
 ## Research student experiences 
  1. [Day in the life of a research student](https://bartlettje.github.io/2016-04-08-day-in-the-life/)
