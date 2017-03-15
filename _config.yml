@@ -27,7 +27,7 @@ navbar-links:
   Resources:
     - R resources: "r-resources"
     - JASP resources: "jasp-resources"
-  About Me: "aboutme"
+  About: "aboutme"
   CV: "cv"
   Research: "research"
 
