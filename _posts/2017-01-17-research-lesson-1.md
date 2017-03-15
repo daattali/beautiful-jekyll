@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Research lessons learnt the hard way: #Maintaining organised data files"
+date: 2017-01-17
+---
 This is the first post in a (hopefully not long) series of research lessons learned from making mistakes. Most of the lessons have been in various aspects of programming as none of my supervisors or fellow postgraduates have any interest in R or Python, so I have had to learn through books and online resources. Combined with the fact I do not have any history in computer science, I’ve learnt a lot through trial and error, and learning from the mistakes I have made. Keeping with the philosophy of this blog, my aim here is to share my experiences in research for the benefit of other people.
 
 ## LESSON LEARNT #1: MAINTAINING ORGANISED DATA FILES
