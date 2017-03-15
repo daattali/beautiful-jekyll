@@ -14,22 +14,22 @@ I am currently a psychology PhD student and my research is exclusively quantitat
 
 My first engagement with R was through Roger Peng’s book R Programming for Data Science. I had seen R mentioned from place to place but I had never used it myself (or knew anyone else who used it at my university). I thought the book would be a good place to start, but I found it overwhelming for someone who had no prior experience in programming or using R. It is a great book for learning more about R as a programming language, but I did not have any context to work with and it all became very confusing. It was like trying to learn a foreign language by learning the underlying grammar before you know any vocabulary. I quickly become lost and gave up trying.
 
-## …Another go
+## …Another go
 
 A month or two later, an introduction to R workshop was held at my university and being guided through the environment in a structured format allowed me to see how it all fitted together. I was able to see how you entered data, I was able to learn some of the coding basics, and I was able to see how a t-test was performed. This was much more tangible, and I started to see how key components of the R language were structured.
 
-## Steady progress
+## Steady progress
 
 The main learning curve for getting to grips with the R language was overcome by following online tutorials. The first couple of months I used R exclusively for creating plots of some old data for a conference poster. I would look at tutorials on websites such as R-bloggers (see resources below) to copy their code and adapt it to use my own data. Trial and error has been one of the best strategies for me (see tips below). I would start with an online example, try to adapt it to fit my own data, and be bombarded with error messages stating something is wrong.
 
 
-## Current progress
+## Current progress
 
 It has taken around eight months (from December 2015) to reach my current level of understanding. There have been many times when I have become frustrated at not being able to work out what I have done wrong, but the key to learning R is persistence (see tips). Whenever I have made significant progress, it has been because I have sat in front of my laptop for a few hours and worked on a specific task. A large amount of trial and error is involved (especially when the programming language is unfamiliar), and you need to look past all the error messages. Unless you are comfortable with programming, there is a steep initial learning curve, but it becomes progressively easier with time and experience.
 
 I’ve gone through this process for eight months now and I’m finally seeing some rewarding progress. Looking back, I have a few tips and resources that I wish I was aware of. Hopefully if you are reading this and are either new to using R or want to begin to use it, you will find them useful and avoid some of the head-scratching that I have done.
 
-## Tips for progressing with R  
+## Tips for progressing with R  
 
 1. Persistence
 My main tip for learning R (especially if you have limited programming experience) is persistence. You will receive more error messages than you receive actual output, but try not to be put off by it, and try to stick at it until you work out what the problem is. You might need to take a break and look at it with a fresh pair of eyes, but make sure you do not give up until you have produced what you set out to do. Most of these experiences are useful for the future, as problems that have taken a large amount of time to overcome become easier to spot in future.
