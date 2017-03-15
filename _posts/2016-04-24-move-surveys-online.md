@@ -6,7 +6,7 @@ date: 2016-04-24
 When I was collecting data for my last project, I printed off reams upon reams of paper for my questionnaires, information sheets etc. I did not particularly like it at the time but I could not see a different way of doing it. However, when it was completed and I had a pile of paper the size of a telephone book (see image), I realised it is just not feasible long term.
 For my current project I wanted to try and get rid of as much paper as possible. Fortunately, I found out I could use Bristol Online Survey through my institution. This is quite a powerful survey platform and all of the examples included here will directly apply to BOS, but you might not have access to it. However, you could easily utilise other survey tools such as Qualtrics or Survey Monkey (for a free option) that will provide you with similar capabilities.
 
-![Reams](img/img_0299.jpg)
+![Reams](https://github.com/BartlettJE/BartlettJE.github.io/blob/master/img/img_0299.jpg)
 
 ## Benefits
 
