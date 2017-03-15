@@ -32,15 +32,19 @@ I’ve gone through this process for eight months now and I’m finally seeing s
 ## Tips for progressing with R  
 
 1. Persistence
+
 My main tip for learning R (especially if you have limited programming experience) is persistence. You will receive more error messages than you receive actual output, but try not to be put off by it, and try to stick at it until you work out what the problem is. You might need to take a break and look at it with a fresh pair of eyes, but make sure you do not give up until you have produced what you set out to do. Most of these experiences are useful for the future, as problems that have taken a large amount of time to overcome become easier to spot in future.
 
 2. Have a clear goal in mind
+
 When I first started using R, my aim was to just learn R. This is quite vague, and unless you’re enrolled on a course or following a guide, it is difficult to know exactly where to start and how to progress. I started to see more progress when I had a clear goal, which in my case was making some plots for a conference poster. I knew what I wanted to produce as an output, so it was just a matter of learning what R code was necessary to produce it.
 
 3. Use online tutorials
+
 The chances are that each analysis you are trying to perform, or each plot you are aiming to create has been done before. One of my favourite aspects of R is the community of users who help others through online tutorials and blog posts. All of my initial successes in using R were from adapting the code of others who had created tutorials. When you are unfamiliar with the programming language, it is helpful to copy something you know that works and change it from there. Use other people’s experience wisely and take advantage of it.
 
 4. Use package help documents
+
 R thrives through the input of its users, and many create specific packages for specific problems. Their functions can contain a lot of arguments and unless you repeatedly use a package it is difficult to remember each one. For each package there is usually a help document that outlines each of the functions within the package, and explains what each argument within those functions does. I often have the help package open when I writing the code so I can keep referring back to the manual.
 
 ## Useful resources
