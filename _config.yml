@@ -28,8 +28,6 @@ navbar-links:
   Resources:
     - R resources: "r-resources"
     - JASP resources: "jasp-resources"
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - GitHub Pages: "https://pages.github.com/"
   Research: "research"
 
 # Image to show in the navigation bar - image must be a square (width = height)
