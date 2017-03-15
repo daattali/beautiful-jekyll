@@ -26,8 +26,9 @@ navbar-links:
   About Me: "aboutme"
   CV: "cv"
   Resources:
+    - R resources: "r-resources"
+    - JASP resources: "jasp-resources"
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Research: "research"
 
