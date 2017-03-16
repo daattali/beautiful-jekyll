@@ -23,6 +23,6 @@ title: CV
  ### Hourly paid lecturer in Psychology 
  Coventry University, UK, September 2015 - May 2016 
  - Delivered two guest lectures on _Drugs and behaviour_ and _Introduction to inferential statistics_
- - Demonstrated in workshops and seminars for quantitative research methods and cognitive neuroscience modules. 
+ - Demonstrated in workshops and seminars for quantitative research methods, cognitive neuroscience, and philosophy of mind modules. 
  
 ## Research 
