@@ -6,9 +6,9 @@ title: Archive
  1. [Chasing the scream (Johann Hari)](https://bartlettje.github.io/2016-04-12-chasing-the-scream/) 
 
 ## Guest posts on other blogs
- 1. [Publishing a registered report as a postgraduate researcher]() - Journal of European Psychology Students blog
+ 1. [Publishing a registered report as a postgraduate researcher](https://bartlettje.github.io/2016-09-09-registered-reports-jeps/) - Journal of European Psychology Students blog
  
- 2. [Do smokers consist of a single group?]() - Journal of European Psychology Students blog
+ 2. [Do smokers consist of a single group?](https://bartlettje.github.io/2016-09-03-smokers-single-group-jeps/) - Journal of European Psychology Students blog
 
 ## R programming 
  1. [Tidying and analysing response data using R](https://bartlettje.github.io/2016-11-22-tidy-response-data/) 
