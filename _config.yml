@@ -17,7 +17,7 @@ baseurl: ""
 title: James E Bartlett
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Research and statistics in psychology. 
 
 # --- Navigation bar options --- #
 
@@ -91,7 +91,7 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "Bartlettje"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
