@@ -51,44 +51,48 @@ R thrives through the input of its users, and many create specific packages for 
 
 ### Books
 
-Discovering statistics using R – Andy Field, Jeremy Miles, and Zoe Field
+[Discovering statistics using R](https://us.sagepub.com/en-us/nam/discovering-statistics-using-r/book236067%20) – Andy Field, Jeremy Miles, and Zoe Field
 
 This book is aimed towards psychology, but it is one of the best introductory books on statistics and programming in R. It includes both statistical theory and downloadable R code and tutorials to follow. I would hugely recommend this as a starting point, particularly if you are a psychology student.
 
-R Programming for Data Science – Roger D. Peng
+[R Programming for Data Science](https://leanpub.com/rprogramming) – Roger D. Peng
 
 With over 90,000 readers on Leanpub, this is a hugely successful book that outlines the fundamentals of R programming. I would not recommend it as a starting point, but it is indispensable when you want to brush up on the programming language.
 
-ggplot2 – Hadley Wickham
+[ggplot2](http://ggplot2.org/book/) – Hadley Wickham
 
 This is my favourite package for creating plots. As well as having some of the most helpful documentation to help you with coding, there is an accompanying book for if you want to read more about the underlying theory of ggplot2. As I spent a lot of time using R for creating plots, this book was useful in showing the full capabilities of the package.
 
-Learning statistics with R – Daniel Navarro
+[Learning statistics with R](https://health.adelaide.edu.au/psychology/ccs/teaching/lsr/) – Daniel Navarro
 
 As well as the advantage of it being free (although I do encourage you to buy a copy), this is one of my favourite guides to using R. Similar to Discovering statistics using R, the book is organised by starting with the underlying statistical principles and then providing tutorials. The examples utilise the data sets incorporated into R and the accompanying package to the book, so it is easy to follow along without additional downloads.
 
+[YaRrr! The Pirate’s Guide to R](http://nathanieldphillips.com/thepiratesguidetor/) - Nathaniel D Phillips 
+
+This is a guide I have only just come across, which is a shame as it is the perfect introduction to R. It uses humourous examples (mainly pirate based) and guides you through everything from navigating the R environment, manipulating data, and data analysis. If you are yet to start learning R, this is another brilliant (and free! but try and donate some money if you can) starting point. 
+
 ### Blogs
 
-R-Bloggers
+[R-Bloggers](https://www.r-bloggers.com/)
 
 This is a kind of blog of blogs (a meta-blog if you will). R-bloggers is a collection of tutorials creating by other R users on a range of topics including simulation, analysis, and creating plots. This website has been crucial for me, so if you want to learn how to do something with R, I would suggest having a look here first.
 
-Stack Overflow
-
-This is a general programming Q&A that is not specific to R. However, there are a lot of questions on here that have been answered about R problems. Although I have never done it myself, if you are totally stuck and need some assistance, you can post a question and hope someone can provide you with an answer. These posts typically appear when I Google a problem, so it can be an incredibly useful source of information.
-
-Quick-R
+[Quick-R](http://www.statmethods.net/index.html)
 
 This is a website full of tutorials on how to perform analyses and create plots in R. Most of the sections are very straight forward so it would be an advantage to be familiar with the underlying concepts beforehand. Robert Kabacoff, the creator of the website, also has a book called R in Action.
 
-Cookbook for R
+[Cookbook for R](http://www.cookbook-r.com/)
 
 This is another website with tutorials and examples on how to perform analyses. It is particular useful for ggplot2 as it covers a range of common features such as how to rename axes and using facets. Similar to Quick-R, there is also an accompanying book called R Graphics Cookbook which extends many of the website features.
 
 ### Other
 
-ggplot2 cheat sheet  – R Studio
+[Stack Overflow](http://stackoverflow.com/)
 
-R studio is a user interface that is used in conjunction with R. I’ve never used R without the addition of R studio as it makes everything a little easier. On top of this, they create cheat sheets to help with navigating certain elements. They have one for R Markdown, and they have a particular good one for ggplot2. If you need a quick guide without trawling through the documentation, this is a good place to start.
+This is a general programming Q&A that is not specific to R. However, there are a lot of questions on here that have been answered about R problems. Although I have never done it myself, if you are totally stuck and need some assistance, you can post a question and hope someone can provide you with an answer. These posts typically appear when I Google a problem, so it can be an incredibly useful source of information.
 
-Have I missed anything that you have found useful when learning R? Feel free to contact me through email, Twitter, or the comments and I will add it to the list.
+[R Studio cheat sheets](https://www.rstudio.com/resources/cheatsheets/) – R Studio
+
+R studio is a user interface that is used in conjunction with R. I’ve never used R without the addition of R studio as it makes everything a little easier. On top of this, they create cheat sheets to organise the different functions of each of their packages. Remembering the functions for each package is difficult, so these are always a handy reminder. They have one for R Markdown, ggplot2, dplyr, tidyr, and a few other. If you need a quick guide without trawling through the documentation, this is a good place to start.
+
+Have I missed anything that you have found useful when learning R? Feel free to leave a comment and I will add it to the list.
