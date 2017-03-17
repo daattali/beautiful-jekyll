@@ -1,6 +1,7 @@
 ---
-title: Tenure-track Instructor in MDS/Statistics
 layout: page
+title: Tenure-track Instructor in MDS/Statistics
+
 ---
 
 The University of British Columbia, Vancouver invites applications for a tenure-track instructor-1 position, 
