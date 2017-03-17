@@ -31,7 +31,7 @@ Experience with, or aptitude for, the following is particularly desirable:
 -	Development of complex applications with R or Python.
 -	GitHub development, particularly as a learning management system.
 
-The Department of Statistics (<www.stat.ubc.ca>) is a leading centre for statistical science research in North America. 
+The [Department of Statistics](www.stat.ubc.ca) is a leading centre for statistical science research in North America. 
 Faculty members excel in both theory and methods research and collaborative research with domain-area scientists. 
 The department is home to the [Applied Statistics and Data Science Group](http://asda.stat.ubc.ca/), which supports research both inside and outside the department. The department also hosts a vibrant graduate program and growing undergraduate programs. Recent efforts see the department emerging as a hub for innovation in statistical education.
 The position is subject to final budgetary approval. 
