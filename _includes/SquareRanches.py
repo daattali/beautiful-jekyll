@@ -15,9 +15,7 @@ def IsConvex(quad):
 reps = 1000000
 accum = 0
 for rep in range(reps):
-	quad = []
-	for i in range(4):
-		quad.append([random(),random()])
+	quad = [[random(),random()],[random(),-1+random()],[-1+random(),-1+random()],[-1+random(),random()]]
 	if IsConvex(quad):
 		accum += 1
 
