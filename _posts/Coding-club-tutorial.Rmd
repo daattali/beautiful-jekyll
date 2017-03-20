@@ -1,0 +1,71 @@
+---
+title: "Coding Club Markdown Tutorial"
+author: "James Bartlett"
+date: "17/03/2017"
+output: html_document
+---
+#Getting started
+
+First things first, we need to load the packages we need for the rest of the document. 
+```{r, message=FALSE}
+#Packages
+library(dplyr)
+```
+
+Now that the package is loaded, we need to load the biodiversity data from the first tutorial.
+```{r}
+setwd("~/Documents/R Files/Tutorials/R_markdown") #Set the working directory for this example 
+edidiv <- read.csv("edidiv.csv")
+```
+
+# Calculating the total number of species
+### Creating a table of species 
+
+As before, we are going to construct a table of how many species occur in each taxonomic group.
+```{r}
+richness <- edidiv %>%
+    group_by(taxonGroup) %>% #Group by the taxonomy group
+    summarise(Species_richness = n_distinct(taxonName)) #Create a count of the number of uniquie names in each taxonomy.
+```
+
+We can see that we now have a data frame with two columns. One is for the taxonomic group, and one is for the number of distinct species within each group. We can see a sample of this data here: 
+```{r}
+head(richness)
+```
+
+### Showing the data in a barplot 
+
+Using the table of data, we can now take a look at this in a barplot. 
+```{r}
+#Create a barplot
+barplot(richness$Species_richness, 
+        names.arg = richness$taxonGroup, 
+        xlab="Taxa", ylab="Number of species", 
+        ylim=c(0,600)
+        ) 
+```
+
+#Most common species 
+
+This time we also want to find the most common species in each taxonomic group.
+```{r}
+max_abund <- #Calculating the abundance of each species
+  edidiv %>%
+    group_by(taxonGroup) %>% #Group by taxonomy group 
+    summarise(taxonName = names(which.max(table(taxonName)))) #Select the most common species within each taxonomy
+```
+
+We now want to join the two data frames together, using "taxonGroup" as the reference.
+
+```{r}
+richness_abund <-
+inner_join(richness, max_abund, by = "taxonGroup")
+richness_abund <- rename(richness_abund, Most_abundant =  taxonName, Taxon = taxonGroup)
+```
+
+
+We can take a final look of what the data frame now looks like.
+
+```{r}
+head(richness_abund)
+```
