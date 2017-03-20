@@ -2,6 +2,7 @@
 title: "Coding Club Markdown Tutorial"
 author: "James Bartlett"
 date: "17/03/2017"
+layout: post
 output: html_document
 ---
 #Getting started
