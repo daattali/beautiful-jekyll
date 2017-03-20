@@ -5,7 +5,7 @@ title: Archive
 ## Books reviews
  1. [Chasing the scream (Johann Hari)](https://bartlettje.github.io/2016-04-12-chasing-the-scream/) 
 
-## Guest posts on other blogs
+## Guest posts elsewhere
  1. [Publishing a registered report as a postgraduate researcher](https://bartlettje.github.io/2016-09-09-registered-reports-jeps/) - Journal of European Psychology Students blog
  
  2. [Do smokers consist of a single group?](https://bartlettje.github.io/2016-09-03-smokers-single-group-jeps/) - Journal of European Psychology Students blog
