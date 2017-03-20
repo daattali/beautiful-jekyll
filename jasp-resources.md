@@ -16,6 +16,6 @@ The guide covers the following topics:
 - Assessing parametric assumptions 
 - Conducting paired samples T-Tests 
 - Conducting independent samples T-Tests 
-- Correlating two variables
+- Calculating the correlation between two variables
 
-Feel free to use it yourself or in your teaching. If you have any feedback (positive or negative) feel free to comment below or contact me directly. 
+Feel free to use it yourself or in your teaching. If you have any feedback (positive or negative) feel free to contact me. 
