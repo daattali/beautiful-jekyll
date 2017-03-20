@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tenure-track Instructor
+title: MDS Instructor 1 Position
 ---
 
 The University of British Columbia, Vancouver invites applications for a tenure-track instructor-1 position, 
