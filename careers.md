@@ -5,7 +5,7 @@ title: Careers
 ---
 
 ## Open Positions
-* [Job ad for tenure-track instructor in MDS and the Department of Statistics](https://ubc-mds.github.io/ads/MDS_Instructor%201_Job%20Posting_March%202017/)
+* [Job ad for tenure-track instructor in MDS and the Department of Statistics](https://ubc-mds.github.io/ads/mds-instructor-1-position/)
 
 ## Past Positions
 * [Job ad for a Postdoctoral Teaching and Learning Fellow](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/ads/StatTF2017.md)
