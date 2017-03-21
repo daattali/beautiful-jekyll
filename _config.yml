@@ -23,10 +23,7 @@ description: Everything about my programming
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Dashboard: "http://rlrlaa123.github.io/dashboard/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://www.github.com/rlrlaa123"
+  New Menu: "new_menu"
   Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
