@@ -1,4 +1,4 @@
 ---
-layout:post
-title:Tester
+layout: post
+title: Tester
 ---
