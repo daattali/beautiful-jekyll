@@ -4,8 +4,28 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           {% if site.author.facebook and site.footer-links-active.facebook %}
+          {% capture firstWord %}{{ site.author.facebook | split:":" | first }}{% endcapture %}
           <li>
+            {% if firstWord == "http" or firstWord == "https" %}
+            <a href="{{ site.author.facebook }}" title="Facebook">
+            {% else %}
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
+            {% endif %}
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.facebook-group and site.footer-links-active.facebook-group %}
+          {% capture firstWord %}{{ site.author.facebook-group | split:":" | first }}{% endcapture %}
+          <li>
+            {% if firstWord == "http" or firstWord == "https" %}
+            <a href="{{ site.author.facebook-group }}" title="Facebook Group">
+            {% else %}
+            <a href="https://www.facebook.com/{{ site.author.facebook-group }}" title="Facebook Group">
+            {% endif %}
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -154,6 +174,7 @@
 		  </li>
           {% endif %}
         </ul>
+<!--
         <p class="copyright text-muted">
 		  {{ site.author.name }}
 		  &nbsp;&bull;&nbsp;
@@ -164,6 +185,7 @@
 		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
 		  {% endif %}
 	    </p>
+-->
 	        <!-- Please don't remove this, keep my open source work credited :) -->
 		<p class="theme-by text-muted">
 		  Theme by

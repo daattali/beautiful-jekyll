@@ -16,18 +16,9 @@
   {% endfor %}
 {% endif %}
 
-{% if layout.common-js %}
-  {% for js in layout.common-js %}
-    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
-    {% if js contains 'jquery' %}
-      <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
-      	}
-      </script>
-    {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
-    {% endif %}
+{% if layout.common-footer-js %}
+  {% for js in layout.common-footer-js %}
+	   <script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}" type="text/javascript"></script>
   {% endfor %}
 {% endif %}
 

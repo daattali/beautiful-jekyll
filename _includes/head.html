@@ -51,6 +51,12 @@
     {% endfor %}
   {% endif %}
 
+  {% if layout.common-header-js %}
+    {% for js in layout.common-header-js %}
+  	   <script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}" type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
+
     <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
@@ -88,7 +94,7 @@
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
@@ -116,5 +122,4 @@
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-
 </head>

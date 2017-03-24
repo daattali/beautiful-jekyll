@@ -3,77 +3,79 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://www.tx10indivisible.us"
 baseurl: ""
-
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: TX-10 Indivisible
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Resisting the Trump Agenda in Central Texas
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  About: "about"
+  Get Involved: "get-involved"
+  More:
+  - Make Contact: "make-contact"
+  - FAQ: "faq"
+  News: "posts"
+  Indivisible Sites:
+    - Indivisible Guide: "https://www.indivisibleguide.com/"
+    - Indivisible Austin: "http://www.indivisibleaustin.com/"
+    - Austin-area Groups: "http://www.indivisibleaustin.com/take-action-now/congressional-districts/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+#avatar: "/img/site-avatar-100x100.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: /img/site-logo.png
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
+  name: TX-10 Indivisible Team
+  email: "contact@tx10indivisible.us"
+  # our footer.html is hacked to allow a URL value for "facebook"
+  facebook: https://www.facebook.com/tx10indivisible/
+  facebook-group: https://www.facebook.com/groups/tx10indivisible/
+  #github: yourname    # eg. daattali
+  twitter: tx10indivisible   # eg. daattali
+  #reddit: yourname    # eg. daattali
+  #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
+  #linkedin: yourname  # eg. daattali
+  #xing: yourname      # eg. daattali
+  #stackoverflow: yourlink  # eg. "3943160/daattali"
+  #snapchat: yourname  # eg. daattali
+  #instagram: yourname # eg. daattali
+  youtube: channel/UCjEb4sUT_K7hUm5h_ueDtew   # eg. user/daattali or channel/daattali
+  #spotify: yourname   # eg. daattali
+  #telephone: yourphone   # eg. +14159998888
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
+  facebook-group: true
   email: true
   twitter: true
   google-plus: false
-  github: true
+  github: false
   reddit: false
   linkedin: false
   xing: false
   stackoverflow: false
   snapchat: false
   instagram: false
-  youtube: false
+  youtube: true
   spotify: false
   telephone: false
 
@@ -86,14 +88,14 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "www.tx10indivisible.us"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-91335401-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -112,7 +114,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

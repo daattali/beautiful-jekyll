@@ -1,0 +1,67 @@
+.pretty-box {
+  border: solid #d0d0d0 1px;
+  background: #e8e8e8;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.pretty-box blockquote { border-left: none; }
+
+
+/* list will use Font Awesome icons for markers */
+ul.fa-markers { list-style: none; padding-left: 0; margin-left: 0;  }
+
+/* add some vertical space between list items */
+ul.li-vert-spaced li { margin: 0.5em 0; }
+
+
+/* sidebar styles */
+
+.sidebar-box {
+  width: 240px;
+  margin: 0 5px 1em;
+  font-size: 0.8em;
+}
+
+.sidebar-box h2, #email-signup-wrapper #can_embed_form h2 {
+  font-size: 18px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.1em;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em 3px;
+}
+
+.sidebar-box h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.signup-emphasize-form {
+  -webkit-animation: change-color 3s ease 0s infinite normal ;
+  animation: change-color 3s ease 0s infinite normal ;
+}
+
+@-webkit-keyframes change-color {
+  0%    { background-color:#e8e8e8; }
+  100%  { background-color:yellow;    }
+}
+
+@keyframes change-color {
+  0%    { background-color:#e8e8e8;  }
+  100%  { background-color:yellow;   }
+}
+
+/* tame the Action Network widget into submission */
+#email-signup-wrapper #can_embed_form { padding-bottom: 1em; }
+#email-signup-wrapper #can_embed_form h4 { display: none; }
+#email-signup-wrapper #can_embed_form .country_wrap { display: none; }
+#email-signup-wrapper #can_embed_form #d_sharing { border: none !important; }
+#email-signup-wrapper #can_embed_form input { margin: 3px 0; }
+#email-signup-wrapper #can_embed_form input[type="submit"] { margin: 5px 0; }
+#email-signup-wrapper #can_embed_form #action_info { display: none; }
+#email-signup-wrapper #can_embed_form #d_sharing { display: none; }

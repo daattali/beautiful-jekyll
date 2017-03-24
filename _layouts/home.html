@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+{% include header.html type="home" %}
+
+<div class="container" role="main">
+  <div class="row">
+    <!-- col-lg-offset-2 col-md-10 col-md-offset-1 -->
+    <div class="col-md-9">
+      {{ content }}
+	    {% if page.comments %}
+        <div class="disqus-comments">
+	        {% include disqus.html %}
+        </div>
+	    {% endif %}
+    </div>
+    {% include sidebar.html %}
+  </div>
+</div>

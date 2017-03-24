@@ -3,7 +3,13 @@ _site
 .sass-cache
 .vagrant
 
+.bundle
+.vendor
+
 # general
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# exclude IntelliJ IDE files
+.idea
