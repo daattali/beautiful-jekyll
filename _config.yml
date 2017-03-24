@@ -8,16 +8,16 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "http://daattali.github.io/beautiful-jekyll"
-baseurl: "/beautiful-jekyll"
+url: "http://jameslawler.github.io/wedding-site"
+baseurl: "/wedding-site"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Beautiful Jekyll
+title: Rita and James Wedding
 
 # Short description of your site
-description: Quickly build a beautiful Jekyll website
+description: On 30 September 2017, Rita and Jame swill be married
 
 # --- Navigation bar options --- #
 
