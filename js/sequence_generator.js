@@ -3,6 +3,6 @@ function sample(){
 }
 
 function init(){
-    document.getElementById('form').onsubmit = sample;
+    document.getElementById('sample-form').onsubmit = sample;
 }
 
