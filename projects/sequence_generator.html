@@ -7,6 +7,16 @@ A TensorFlow-based LSTM model that can be used to mimic a sequence of any form w
 
 <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+<script type = "text/javascript">
+  function sample(){
+    var values = {};
+    $.each($('#myForm').serializeArray(), function(i, field) {
+      values[field.name] = field.value;
+    });
+    alert(values);
+  }
+</script>
+
 <br><br>
 <h3>Demo: Model Trained on Shakespeare</h3>
 <table>
@@ -16,7 +26,7 @@ A TensorFlow-based LSTM model that can be used to mimic a sequence of any form w
   </tr>
   <tr>
     <td>
-         <form action="sample()" method="POST" class="sample-form" id="contact-form">
+         <form action="javscript:sample()" method="POST" class="sample-form" id="contact-form">
            <div class="row">
              <div class="col-xs-6">
                Sample Type:
