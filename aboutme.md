@@ -3,9 +3,7 @@ layout: page
 title: Who Am I?
 subtitle: look down
 ---
-
-Hi, my name is Christopher Dinh.
-A general overview of me:
+### An Overview
 
 I'm currently a sophomore at the University of Maryland, Baltimore County
 
