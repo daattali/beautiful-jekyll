@@ -1,16 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Who Am I?
+subtitle: look down
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi, my name is Christopher Dinh.
+A general overview of me:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
+- I'm currently a sophomore at the University of Maryland, Baltimore County
+- I'm majoring in Computer Science with a minor in Math
+- I think AI is cool, so I'm experimenting with it in my spare time
 
 ### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
