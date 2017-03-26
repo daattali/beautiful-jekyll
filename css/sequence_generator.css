@@ -1,3 +1,9 @@
 form .sample-form {
-  width: 50%
+  width: 50%;
+}
+
+.results {
+  width: 50%;
+  float: right;
+  vertical-align: top;
 }
