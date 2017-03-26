@@ -1,5 +1,5 @@
 # --- General options --- #
-include = ['projects']
+
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
@@ -117,6 +117,8 @@ paginate: 5
 
 kramdown:
   input: GFM
+
+projects: ./projects
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
