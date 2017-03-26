@@ -106,6 +106,8 @@ excerpt_length: 50
 # and RSS feed title
 title-separator: ""
 
+include: ["projects"]
+
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
