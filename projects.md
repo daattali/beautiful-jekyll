@@ -4,5 +4,5 @@ title: Projects
 subtitle:
 ---
 ### AI
-## Sequence Generator
+#### Sequence Generator
 ### Other
