@@ -10,34 +10,42 @@ A TensorFlow-based LSTM model that can be used to mimic a sequence of any form w
 
 <br><br>
 <h3>Demo: Model Trained on Shakespeare</h3>
-<form action="sample()" method="POST" class="sample-form" id="contact-form">
-  <div class="row">
-    <div class="col-xs-6">
-      Sample Type:
-      <select>
-        <option value="character">Characters</option>
-        <option value="word">Words</option>
-      </select>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col-xs-6">
-      Sample Size:<input type="number" name="sample_size" class="form-control input-lg" value="200" placeholder="Sample Size" title="Sample Size">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col-xs-6">
-      Sample Seed:<input type="text" name="sample_seed" class="form-control input-lg" value=" " placeholder="Sample Seed" title="Sample Seed">
-    </div>
-  </div>
-  <br>
-  <button type="submit" class="btn btn-lg btn-primary">Sample Model</button>
-</form>
-<div style="width: 50%; float: right">
-  Results:<br>
-  <div id="results">
-    abc
-  </div>
-</div>
+<table>
+  <tr>
+    <td>
+         <form action="sample()" method="POST" class="sample-form" id="contact-form">
+           <div class="row">
+             <div class="col-xs-6">
+               Sample Type:
+               <select>
+                 <option value="character">Characters</option>
+                 <option value="word">Words</option>
+               </select>
+             </div>
+           </div>
+           <br>
+           <div class="row">
+             <div class="col-xs-6">
+               Sample Size:<input type="number" name="sample_size" class="form-control input-lg" value="200" placeholder="Sample Size" title="Sample Size">
+             </div>
+           </div>
+           <br>
+           <div class="row">
+             <div class="col-xs-6">
+               Sample Seed:<input type="text" name="sample_seed" class="form-control input-lg" value=" " placeholder="Sample Seed" title="Sample Seed">
+             </div>
+           </div>
+           <br>
+           <button type="submit" class="btn btn-lg btn-primary">Sample Model</button>
+         </form>
+    </td>
+    <td>
+      <div style="width: 50%; float: right">
+        Results:<br>
+        <div id="results">
+          abc
+        </div>
+      </div>
+    </td>
+</tr>
+</table>
