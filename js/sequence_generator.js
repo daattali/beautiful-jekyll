@@ -1,4 +1,8 @@
-$('.sample-form').on('submit', function () {
+function sample(){
     alert('Form submitted!');
-    return false;
-});
+}
+
+function init(){
+    document.getElementById('form').onsubmit = sample;
+}
+
