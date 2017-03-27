@@ -1,0 +1,137 @@
+<!--
+	Data Source : http://open.gov.in
+				: https://data.gov.in/catalog/foreign-recipients-us-science-and-engineering-doctorates
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visualization</title>
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/nv.d3.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/uikit.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-navbar">
+	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
+	</nav>
+	<div>
+		<h2 class=".uk-article-title">Foreign Recipients of U.S. Science and Engineering Doctorates by Country of Origin : 1989 - 2009</h2>
+
+		<h3 class=".uk-article-title">Donut Chart</h3>
+		<script>
+			//Regular pie chart example
+			
+			var degreesPieChart =  
+						[
+	      					{
+	      						"label" : "China",
+	      						"value" : 57705
+	      					},
+	      					{
+	      						"label" : "India",
+	      						"value" : 24809
+	      					},
+	      					{
+	      						"label" : "South Korea",
+	      						"value" : 21846
+	      					},
+	      					{
+	      						"label" : "Taiwan",
+	      						"value" : 17848
+	      					},
+	      					{
+	      						"label" : "Canada",
+	      						"value" : 7193
+	      					},
+	      					{
+	      						"label" : "Turkey",
+	      						"value" : 5391
+	      					},
+	      					{
+	      						"label" : "Thailand",
+	      						"value" : 4003
+	      					},
+	      					{
+	      						"label" : "Japan",
+	      						"value" : 3806
+	      					},
+	      					{
+	      						"label" : "Mexico",
+	      						"value" : 3589
+	      					},
+	      					{
+	      						"label" : "Germany",
+	      						"value" : 3584
+	      					}
+	      				];
+
+	      	var degreesBarChart=  
+						[ 
+    						{
+						      key: "Crime Aganist Women",
+						      values:[
+	      					{
+	      						"label" : "China",
+	      						"value" : 57705
+	      					},
+	      					{
+	      						"label" : "India",
+	      						"value" : 24809
+	      					},
+	      					{
+	      						"label" : "South Korea",
+	      						"value" : 21846
+	      					},
+	      					{
+	      						"label" : "Taiwan",
+	      						"value" : 17848
+	      					},
+	      					{
+	      						"label" : "Canada",
+	      						"value" : 7193
+	      					},
+	      					{
+	      						"label" : "Turkey",
+	      						"value" : 5391
+	      					},
+	      					{
+	      						"label" : "Thailand",
+	      						"value" : 4003
+	      					},
+	      					{
+	      						"label" : "Japan",
+	      						"value" : 3806
+	      					},
+	      					{
+	      						"label" : "Mexico",
+	      						"value" : 3589
+	      					},
+	      					{
+	      						"label" : "Germany",
+	      						"value" : 3584
+	      					}
+	      				]
+	      			}
+	      		]
+	      	renderPieChart(degreesPieChart, "#pieChart");	
+	      	renderBarChart(degreesBarChart, "#barChart");			 
+		</script>	
+		<div id="pieChart">
+			<svg></svg>
+		</div>
+
+		<br>
+
+		<h3 class=".uk-article-title">Discrete Bar Chart</h3>
+		<div id="barChart">
+			<svg></svg>
+		</div>
+	</div>
+</body>
+</html>

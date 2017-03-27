@@ -1,0 +1,26 @@
+#pieChart svg {
+        height: 600px;
+}
+
+#barChart svg {
+        height: 500px;
+}
+
+h2{
+	text-align: center;
+	margin-top: 10px;
+}
+
+h3{
+	text-align: center;
+	margin-top: 10px;
+}
+
+#visualization-list{
+	margin-top: 50px;
+	margin-left: 40px; 
+
+}
+a:hover{
+	text-decoration: none;
+}

@@ -1,0 +1,318 @@
+<!-- 
+
+	Data Source : http://open.gov.in
+	
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visualization</title>
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/nv.d3.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/uikit.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-navbar">
+	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
+	</nav>
+	<div>
+		<h2 class=".uk-article-title">State-wise number of colleges recognized by AICTE : 2012 - 2013</h2>
+
+		<h3 class=".uk-article-title">Donut Chart</h3>
+		<script>
+			//Regular pie chart example
+			
+			var collegePieData =  
+						[
+							{
+								"label" : "Andaman & Nicobar Islands",
+								"value" : 1
+
+							},
+	      					{
+	      						"label" : "Andhra Pradesh",
+	      						"value" : 455
+	      					},
+	      					{
+	      						"label" : "Arunachal Pradesh",
+	      						"value" : 0
+	      					},
+	      					{
+	      						"label" : "Assam",
+	      						"value" : 7
+	      					},
+	      					{
+	      						"label" : "Bihar",
+	      						"value" : 24
+	      					},
+	      					{
+	      						"label" : "Chandigarh",
+	      						"value" : 3
+	      					},
+	      					{
+	      						"label" : "Chhattisgarh",
+	      						"value" : 71
+	      					},
+	      					{
+	      						"label" : "Dadra & Nagar Haveli",
+	      						"value" : 3
+	      					},
+
+	      					{
+	      						"label" : "Delhi",
+	      						"value" : 29
+	      					},
+	      					{
+	      						"label" : "Goa",
+	      						"value" : 8
+	      					},
+	      					{
+	      						"label" : "Gujarat",
+	      						"value" : 367
+	      					},
+	      					{
+	      						"label" : "Haryana",
+	      						"value" : 131
+	      					},
+	      					{
+	      						"label" : "Himachal Pradesh",
+	      						"value" : 32
+	      					},
+	      					{
+	      						"label" : "Jammu & Kashmir",
+	      						"value" : 7
+	      					},
+	      					{
+	      						"label" : "Jharkhand",
+	      						"value" : 9
+	      					},
+	      					{
+	      						"label" : "Karnataka",
+	      						"value" : 304
+	      					},
+	      					{
+	      						"label" : "Kerala",
+	      						"value" : 172
+	      					},
+	      					{
+	      						"label" : "Madhya Pradesh",
+	      						"value" : 272
+	      					},
+	      					{
+	      						"label" : "Maharashtra",
+	      						"value" : 571
+	      					},
+	      					{
+	      						"label" : "Manipur",
+	      						"value" : 3
+	      					},
+	      					{
+	      						"label" : "Meghalaya",
+	      						"value" : 2
+	      					},
+	      					{
+	      						"label" : "Orissa",
+	      						"value" : 93
+	      					},
+	      					{
+	      						"label" : "Puducherry",
+	      						"value" : 13
+	      					},
+	      					{
+	      						"label" : "Punjab",
+	      						"value" : 110
+	      					},
+	      					{
+	      						"label" : "Rajasthan",
+	      						"value" : 117
+	      					},
+	      					{
+	      						"label" : "Sikkim",
+	      						"value" : 1
+	      					},
+	      					{
+	      						"label" : "Tamil Nadu",
+	      						"value" : 562
+	      					},
+	      					{
+	      						"label" : "Telangana",
+	      						"value" : 343
+	      					},
+	      					{
+	      						"label" : "Tripura",
+	      						"value" : 4
+	      					},
+	      					{
+	      						"label" : "Uttar Pradesh",
+	      						"value" : 222
+	      					},
+	      					{
+	      						"label" : "Uttarakhand",
+	      						"value" : 61
+	      					},
+	      					{
+	      						"label" : "West Bengal",
+	      						"value" : 124
+	      					}
+	      				];
+
+	      	var collegeBarData=  
+						[ 
+    						{
+						      key: "Forest Covers",
+						      values:[
+	      					{
+								"label" : "AN",
+								"value" : 1
+
+							},
+	      					{
+	      						"label" : "AP",
+	      						"value" : 455
+	      					},
+	      					{
+	      						"label" : "AR",
+	      						"value" : 0
+	      					},
+	      					{
+	      						"label" : "AS",
+	      						"value" : 7
+	      					},
+	      					{
+	      						"label" : "BR",
+	      						"value" : 24
+	      					},
+	      					{
+	      						"label" : "CH",
+	      						"value" : 3
+	      					},
+	      					{
+	      						"label" : "CT",
+	      						"value" : 71
+	      					},
+	      					{
+	      						"label" : "DN",
+	      						"value" : 3
+	      					},
+
+	      					{
+	      						"label" : "DL",
+	      						"value" : 29
+	      					},
+	      					{
+	      						"label" : "GA",
+	      						"value" : 8
+	      					},
+	      					{
+	      						"label" : "GJ",
+	      						"value" : 367
+	      					},
+	      					{
+	      						"label" : "HR",
+	      						"value" : 131
+	      					},
+	      					{
+	      						"label" : "HP",
+	      						"value" : 32
+	      					},
+	      					{
+	      						"label" : "JK",
+	      						"value" : 7
+	      					},
+	      					{
+	      						"label" : "JH",
+	      						"value" : 9
+	      					},
+	      					{
+	      						"label" : "KA",
+	      						"value" : 304
+	      					},
+	      					{
+	      						"label" : "KL",
+	      						"value" : 172
+	      					},
+	      					{
+	      						"label" : "MP",
+	      						"value" : 272
+	      					},
+	      					{
+	      						"label" : "MH",
+	      						"value" : 571
+	      					},
+	      					{
+	      						"label" : "MN",
+	      						"value" : 3
+	      					},
+	      					{
+	      						"label" : "ML",
+	      						"value" : 2
+	      					},
+	      					{
+	      						"label" : "OR",
+	      						"value" : 93
+	      					},
+	      					{
+	      						"label" : "PY",
+	      						"value" : 13
+	      					},
+	      					{
+	      						"label" : "PB",
+	      						"value" : 110
+	      					},
+	      					{
+	      						"label" : "RJ",
+	      						"value" : 117
+	      					},
+	      					{
+	      						"label" : "SK",
+	      						"value" : 1
+	      					},
+	      					{
+	      						"label" : "TN",
+	      						"value" : 562
+	      					},
+	      					{
+	      						"label" : "TG",
+	      						"value" : 343
+	      					},
+	      					{
+	      						"label" : "TR",
+	      						"value" : 4
+	      					},
+	      					{
+	      						"label" : "UP",
+	      						"value" : 222
+	      					},
+	      					{
+	      						"label" : "UT",
+	      						"value" : 61
+	      					},
+	      					{
+	      						"label" : "WB",
+	      						"value" : 124
+	      					}
+	      				]
+	      			}
+	      		]
+	      	renderPieChart(collegePieData, "#pieChart");	
+	      	renderBarChart(collegeBarData, "#barChart");			 
+		</script>	
+		<div id="pieChart">
+			<svg></svg>
+		</div>
+
+		<br>
+
+		<h3 class=".uk-article-title">Discrete Bar Chart</h3>
+		<div id="barChart">
+			<svg></svg>
+		</div>
+	</div>
+</body>
+</html>

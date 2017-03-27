@@ -1,0 +1,288 @@
+<!-- 
+	Dataset Source : http://open.gov.in
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visualization</title>
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/nv.d3.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/uikit.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-navbar">
+	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
+	</nav>
+	<div>
+		<h2 class=".uk-article-title">Indian Forest Cover of SFR 2005</h2>
+
+		<h3 class=".uk-article-title">Donut Chart</h3>
+		<script>
+			//Regular pie chart example
+			
+			var forestData =  
+						[
+	      					{
+	      						"label" : "Andhra Pradesh",
+	      						"value" : 45231
+	      					},
+	      					{
+	      						"label" : "Arunachal Pradesh",
+	      						"value" : 67472
+	      					},
+	      					{
+	      						"label" : "Assam",
+	      						"value" : 27758
+	      					},
+	      					{
+	      						"label" : "Bihar",
+	      						"value" : 6807
+	      					},
+	      					{
+	      						"label" : "Chhattisgarh",
+	      						"value" : 55929
+	      					},
+	      					{
+	      						"label" : "Delhi",
+	      						"value" : 177
+	      					},
+	      					{
+	      						"label" : "Goa",
+	      						"value" : 2156
+	      					},
+	      					{
+	      						"label" : "Gujarat",
+	      						"value" : 14604
+	      					},
+	      					{
+	      						"label" : "Haryana",
+	      						"value" : 1604
+	      					},
+	      					{
+	      						"label" : "Himachal Pradesh",
+	      						"value" : 14666
+	      					},
+	      					{
+	      						"label" : "Jammu & Kashmir",
+	      						"value" : 22689
+	      					},
+	      					{
+	      						"label" : "Jharkhand",
+	      						"value" : 22722
+	      					},
+	      					{
+	      						"label" : "Karnataka",
+	      						"value" : 36200
+	      					},
+	      					{
+	      						"label" : "Kerala",
+	      						"value" : 17284
+	      					},
+	      					{
+	      						"label" : "Madhya Pradesh",
+	      						"value" : 77739
+	      					},
+	      					{
+	      						"label" : "Maharashtra",
+	      						"value" : 50661
+	      					},
+	      					{
+	      						"label" : "Manipur",
+	      						"value" : 16952
+	      					},
+	      					{
+	      						"label" : "Meghalaya",
+	      						"value" : 17205
+	      					},
+	      					{
+	      						"label" : "Mizoram",
+	      						"value" : 18600
+	      					},
+	      					{
+	      						"label" : "Nagaland",
+	      						"value" : 13665
+	      					},
+	      					{
+	      						"label" : "Orissa",
+	      						"value" : 48755
+	      					},
+	      					{
+	      						"label" : "Punjab",
+	      						"value" : 1660
+	      					},
+	      					{
+	      						"label" : "Rajasthan",
+	      						"value" : 16012
+	      					},
+	      					{
+	      						"label" : "Sikkim",
+	      						"value" : 3357
+	      					},
+	      					{
+	      						"label" : "Tamil Nadu",
+	      						"value" : 23314
+	      					},
+	      					{
+	      						"label" : "Tripura",
+	      						"value" : 8173
+	      					},
+	      					{
+	      						"label" : "Uttar Pradesh",
+	      						"value" : 14346
+	      					},
+	      					{
+	      						"label" : "Uttarakhand",
+	      						"value" : 24493
+	      					},
+	      					{
+	      						"label" : "West Bengal",
+	      						"value" : 12970
+	      					}
+	      				];
+
+	      	var forestDataBarChart=  
+						[ 
+    						{
+						      key: "Forest Covers",
+						      values:[
+	      					{
+	      						"label" : "AP",
+	      						"value" : 45231
+	      					},
+	      					{
+	      						"label" : "AR",
+	      						"value" : 67472
+	      					},
+	      					{
+	      						"label" : "AS",
+	      						"value" : 27758
+	      					},
+	      					{
+	      						"label" : "BR",
+	      						"value" : 6807
+	      					},
+	      					{
+	      						"label" : "CT",
+	      						"value" : 55929
+	      					},
+	      					{
+	      						"label" : "DL",
+	      						"value" : 177
+	      					},
+	      					{
+	      						"label" : "GA",
+	      						"value" : 2156
+	      					},
+	      					{
+	      						"label" : "GJ",
+	      						"value" : 14604
+	      					},
+	      					{
+	      						"label" : "HR",
+	      						"value" : 1604
+	      					},
+	      					{
+	      						"label" : "HP",
+	      						"value" : 14666
+	      					},
+	      					{
+	      						"label" : "JK",
+	      						"value" : 22689
+	      					},
+	      					{
+	      						"label" : "JH",
+	      						"value" : 22722
+	      					},
+	      					{
+	      						"label" : "KA",
+	      						"value" : 36200
+	      					},
+	      					{
+	      						"label" : "KL",
+	      						"value" : 17284
+	      					},
+	      					{
+	      						"label" : "MP",
+	      						"value" : 77739
+	      					},
+	      					{
+	      						"label" : "MH",
+	      						"value" : 50661
+	      					},
+	      					{
+	      						"label" : "MN",
+	      						"value" : 16952
+	      					},
+	      					{
+	      						"label" : "ML",
+	      						"value" : 17205
+	      					},
+	      					{
+	      						"label" : "MZ",
+	      						"value" : 18600
+	      					},
+	      					{
+	      						"label" : "NL",
+	      						"value" : 13665
+	      					},
+	      					{
+	      						"label" : "OR",
+	      						"value" : 48755
+	      					},
+	      					{
+	      						"label" : "PB",
+	      						"value" : 1660
+	      					},
+	      					{
+	      						"label" : "RJ",
+	      						"value" : 16012
+	      					},
+	      					{
+	      						"label" : "SK",
+	      						"value" : 3357
+	      					},
+	      					{
+	      						"label" : "TN",
+	      						"value" : 23314
+	      					},
+	      					{
+	      						"label" : "TR",
+	      						"value" : 8173
+	      					},
+	      					{
+	      						"label" : "UP",
+	      						"value" : 14346
+	      					},
+	      					{
+	      						"label" : "UT",
+	      						"value" : 24493
+	      					},
+	      					{
+	      						"label" : "WB",
+	      						"value" : 12970
+	      					}
+	      				]
+	      			}
+	      		]
+	      	renderPieChart(forestData, "#pieChart");	
+	      	renderBarChart(forestDataBarChart, "#barChart");			 
+		</script>	
+		<div id="pieChart">
+			<svg></svg>
+		</div>
+
+		<br>
+
+		<h3 class=".uk-article-title">Discrete Bar Chart</h3>
+		<div id="barChart">
+			<svg></svg>
+		</div>
+	</div>
+</body>
+</html>

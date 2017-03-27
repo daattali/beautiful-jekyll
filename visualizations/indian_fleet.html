@@ -1,0 +1,567 @@
+<!-- 
+	Data Source : http://open.gov.in
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visualization</title>
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/nv.d3.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/uikit.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-navbar">
+	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
+	</nav>
+	<div>
+		<h2 class=".uk-article-title">Indian Fleet statistics : 1947 - 2013</h2>
+		<h3 class=".uk-article-title">Donut Chart</h3>
+		<script>
+			//Regular pie chart example
+			
+			var fleetPieData =  
+						[
+	      					{
+	      						"label" : "1947",
+	      						"value" : 3.3
+	      					},
+	      					{
+	      						"label" : "1951",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "1952",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "1953",
+	      						"value" : 3.5
+	      					},
+	      					{
+	      						"label" : "1954",
+	      						"value" : 3.7
+	      					},
+	      					{
+	      						"label" : "1955",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "1956",
+	      						"value" : 4.2
+	      					},
+	      					{
+	      						"label" : "1957",
+	      						"value" : 4.4
+	      					},
+	      					{
+	      						"label" : "1958",
+	      						"value" : 4.5
+	      					},
+	      					{
+	      						"label" : "1959",
+	      						"value" : 4.7
+	      					},
+	      					{
+	      						"label" : "1960",
+	      						"value" : 5.3
+	      					},
+	      					{
+	      						"label" : "1961",
+	      						"value" : 5.2
+	      					},
+	      					{
+	      						"label" : "1962",
+	      						"value" : 5.5
+	      					},
+	      					{
+	      						"label" : "1963",
+	      						"value" : 5.9
+	      					},
+	      					{
+	      						"label" : "1964",
+	      						"value" : 6.3
+	      					},
+	      					{
+	      						"label" : "1965",
+	      						"value" : 6.7
+	      					},
+	      					{
+	      						"label" : "1966",
+	      						"value" : 7.8
+	      					},
+	      					{
+	      						"label" : "1967",
+	      						"value" : 8.1
+	      					},
+	      					{
+	      						"label" : "1968",
+	      						"value" : 8.3
+	      					},
+	      					{
+	      						"label" : "1969",
+	      						"value" : 8.9
+	      					},
+	      					{
+	      						"label" : "1970",
+	      						"value" : 9.6
+	      					},
+	      					{
+	      						"label" : "1971",
+	      						"value" : 9.8
+	      					},
+	      					{
+	      						"label" : "1972",
+	      						"value" : 10.1
+	      					},
+	      					{
+	      						"label" : "1973",
+	      						"value" : 11.1
+	      					},
+	      					{
+	      						"label" : "1974",
+	      						"value" : 12.4
+	      					},
+	      					{
+	      						"label" : "1975",
+	      						"value" : 13.5
+	      					},
+	      					{
+	      						"label" : "1976",
+	      						"value" : 14.2
+	      					},
+	      					{
+	      						"label" : "1977",
+	      						"value" : 14.4
+	      					},
+	      					{
+	      						"label" : "1978",
+	      						"value" : 14.5
+	      					},
+	      					{
+	      						"label" : "1979",
+	      						"value" : 14.8
+	      					},
+	      					{
+	      						"label" : "1980",
+	      						"value" : 14.8
+	      					},
+	      					{
+	      						"label" : "1981",
+	      						"value" : 14.6
+	      					},
+	      					{
+	      						"label" : "1982",
+	      						"value" : 14.9
+	      					},
+	      					{
+	      						"label" : "1983",
+	      						"value" : 15.0
+	      					},
+	      					{
+	      						"label" : "1984",
+	      						"value" : 14.7
+	      					},
+	      					{
+	      						"label" : "1985",
+	      						"value" : 16.2
+	      					},
+	      					{
+	      						"label" : "1986",
+	      						"value" : 15.3
+	      					},
+	      					{
+	      						"label" : "1987",
+	      						"value" : 15.1
+	      					},
+	      					{
+	      						"label" : "1988",
+	      						"value" : 14.8
+	      					},
+	      					{
+	      						"label" : "1989",
+	      						"value" : 14.6
+	      					},
+	      					{
+	      						"label" : "1990",
+	      						"value" : 14.4
+	      					},
+	      					{
+	      						"label" : "1991",
+	      						"value" : 14.3
+	      					},
+	      					{
+	      						"label" : "1992",
+	      						"value" : 14.3
+	      					},
+	      					{
+	      						"label" : "1993",
+	      						"value" : 14.1
+	      					},
+	      					{
+	      						"label" : "1994",
+	      						"value" : 14.5
+	      					},
+	      					{
+	      						"label" : "1995",
+	      						"value" : 14.9
+	      					},
+	      					{
+	      						"label" : "1996",
+	      						"value" : 14.6
+	      					},
+	      					{
+	      						"label" : "1997",
+	      						"value" : 14.4
+	      					},
+	      					{
+	      						"label" : "1998",
+	      						"value" : 14.0
+	      					},
+	      					{
+	      						"label" : "1999",
+	      						"value" : 13.8
+	      					},
+	      					{
+	      						"label" : "2000",
+	      						"value" : 12.7
+	      					},
+	      					{
+	      						"label" : "2001",
+	      						"value" : 12.5
+	      					},
+	      					{
+	      						"label" : "2002",
+	      						"value" : 10.1
+	      					},
+	      					{
+	      						"label" : "2003",
+	      						"value" : 10.6
+	      					},
+	      					{
+	      						"label" : "2004",
+	      						"value" : 11.5
+	      					},
+	      					{
+	      						"label" : "2005",
+	      						"value" : 11.4
+	      					},
+	      					{
+	      						"label" : "2006",
+	      						"value" : 10.8
+	      					},
+	      					{
+	      						"label" : "2007",
+	      						"value" : 10.6
+	      					},
+	      					{
+	      						"label" : "2008",
+	      						"value" : 10.2
+	      					},
+	      					{
+	      						"label" : "2009",
+	      						"value" : 9.7
+	      					},
+	      					{
+	      						"label" : "2010",
+	      						"value" : 9.7
+	      					},
+	      					{
+	      						"label" : "2011",
+	      						"value" : 9.9
+	      					},
+	      					{
+	      						"label" : "2012",
+	      						"value" : 9
+	      					},
+	      					{
+	      						"label" : "2013",
+	      						"value" : 8.7
+	      					}
+	      				];
+
+	      	var fleetBarData=  
+						[ 
+    						{
+						      key: "Fleet Statistics",
+						      values:[
+	      					{
+	      						"label" : "1947",
+	      						"value" : 3.3
+	      					},
+	      					{
+	      						"label" : "51",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "52",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "53",
+	      						"value" : 3.5
+	      					},
+	      					{
+	      						"label" : "54",
+	      						"value" : 3.7
+	      					},
+	      					{
+	      						"label" : "55",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "56",
+	      						"value" : 4.2
+	      					},
+	      					{
+	      						"label" : "57",
+	      						"value" : 4.4
+	      					},
+	      					{
+	      						"label" : "58",
+	      						"value" : 4.5
+	      					},
+	      					{
+	      						"label" : "59",
+	      						"value" : 4.7
+	      					},
+	      					{
+	      						"label" : "60",
+	      						"value" : 5.3
+	      					},
+	      					{
+	      						"label" : "61",
+	      						"value" : 5.2
+	      					},
+	      					{
+	      						"label" : "62",
+	      						"value" : 5.5
+	      					},
+	      					{
+	      						"label" : "63",
+	      						"value" : 5.9
+	      					},
+	      					{
+	      						"label" : "64",
+	      						"value" : 6.3
+	      					},
+	      					{
+	      						"label" : "65",
+	      						"value" : 6.7
+	      					},
+	      					{
+	      						"label" : "66",
+	      						"value" : 7.8
+	      					},
+	      					{
+	      						"label" : "67",
+	      						"value" : 8.1
+	      					},
+	      					{
+	      						"label" : "68",
+	      						"value" : 8.3
+	      					},
+	      					{
+	      						"label" : "69",
+	      						"value" : 8.9
+	      					},
+	      					{
+	      						"label" : "70",
+	      						"value" : 9.6
+	      					},
+	      					{
+	      						"label" : "71",
+	      						"value" : 9.8
+	      					},
+	      					{
+	      						"label" : "72",
+	      						"value" : 10.1
+	      					},
+	      					{
+	      						"label" : "73",
+	      						"value" : 11.1
+	      					},
+	      					{
+	      						"label" : "74",
+	      						"value" : 12.4
+	      					},
+	      					{
+	      						"label" : "75",
+	      						"value" : 13.5
+	      					},
+	      					{
+	      						"label" : "76",
+	      						"value" : 14.2
+	      					},
+	      					{
+	      						"label" : "77",
+	      						"value" : 14.4
+	      					},
+	      					{
+	      						"label" : "78",
+	      						"value" : 14.5
+	      					},
+	      					{
+	      						"label" : "79",
+	      						"value" : 14.8
+	      					},
+	      					{
+	      						"label" : "80",
+	      						"value" : 14.8
+	      					},
+	      					{
+	      						"label" : "81",
+	      						"value" : 14.6
+	      					},
+	      					{
+	      						"label" : "82",
+	      						"value" : 14.9
+	      					},
+	      					{
+	      						"label" : "83",
+	      						"value" : 15.0
+	      					},
+	      					{
+	      						"label" : "84",
+	      						"value" : 14.7
+	      					},
+	      					{
+	      						"label" : "85",
+	      						"value" : 16.2
+	      					},
+	      					{
+	      						"label" : "86",
+	      						"value" : 15.3
+	      					},
+	      					{
+	      						"label" : "87",
+	      						"value" : 15.1
+	      					},
+	      					{
+	      						"label" : "88",
+	      						"value" : 14.8
+	      					},
+	      					{
+	      						"label" : "89",
+	      						"value" : 14.6
+	      					},
+	      					{
+	      						"label" : "90",
+	      						"value" : 14.4
+	      					},
+	      					{
+	      						"label" : "91",
+	      						"value" : 14.3
+	      					},
+	      					{
+	      						"label" : "92",
+	      						"value" : 14.3
+	      					},
+	      					{
+	      						"label" : "93",
+	      						"value" : 14.1
+	      					},
+	      					{
+	      						"label" : "94",
+	      						"value" : 14.5
+	      					},
+	      					{
+	      						"label" : "95",
+	      						"value" : 14.9
+	      					},
+	      					{
+	      						"label" : "96",
+	      						"value" : 14.6
+	      					},
+	      					{
+	      						"label" : "97",
+	      						"value" : 14.4
+	      					},
+	      					{
+	      						"label" : "98",
+	      						"value" : 14.0
+	      					},
+	      					{
+	      						"label" : "99",
+	      						"value" : 13.8
+	      					},
+	      					{
+	      						"label" : "2000",
+	      						"value" : 12.7
+	      					},
+	      					{
+	      						"label" : "01",
+	      						"value" : 12.5
+	      					},
+	      					{
+	      						"label" : "02",
+	      						"value" : 10.1
+	      					},
+	      					{
+	      						"label" : "03",
+	      						"value" : 10.6
+	      					},
+	      					{
+	      						"label" : "04",
+	      						"value" : 11.5
+	      					},
+	      					{
+	      						"label" : "05",
+	      						"value" : 11.4
+	      					},
+	      					{
+	      						"label" : "06",
+	      						"value" : 10.8
+	      					},
+	      					{
+	      						"label" : "07",
+	      						"value" : 10.6
+	      					},
+	      					{
+	      						"label" : "08",
+	      						"value" : 10.2
+	      					},
+	      					{
+	      						"label" : "09",
+	      						"value" : 9.7
+	      					},
+	      					{
+	      						"label" : "10",
+	      						"value" : 9.7
+	      					},
+	      					{
+	      						"label" : "11",
+	      						"value" : 9.9
+	      					},
+	      					{
+	      						"label" : "12",
+	      						"value" : 9
+	      					},
+	      					{
+	      						"label" : "13",
+	      						"value" : 8.7
+	      					}
+	      				]
+	      			}
+	      		]
+	      	renderPieChart(fleetPieData, "#pieChart");	
+	      	renderBarChart(fleetBarData, "#barChart");			 
+		</script>	
+		<div id="pieChart">
+			<svg></svg>
+		</div>
+
+		<br>
+
+		<h3 class=".uk-article-title">Discrete Bar Chart</h3>
+		<div id="barChart">
+			<svg></svg>
+		</div>
+	</div>
+</body>
+</html>

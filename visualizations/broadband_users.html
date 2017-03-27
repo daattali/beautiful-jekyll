@@ -1,0 +1,137 @@
+<!--
+	Dataset Source : http://open.gov.in
+				: https://data.gov.in/catalog/foreign-recipients-us-science-and-engineering-doctorates
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visualization</title>
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/nv.d3.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/uikit.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-navbar">
+	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
+	</nav>
+	<div>
+		<h2 class=".uk-article-title">Indian Broad Band from : 2005 - May 2014 (In Millions)</h2>
+
+		<h3 class=".uk-article-title">Donut Chart</h3>
+		<script>
+			//Regular pie chart example
+			
+			var broadPieChart =  
+						[
+	      					{
+	      						"label" : "2005",
+	      						"value" : 0.18
+	      					},
+	      					{
+	      						"label" : "2006",
+	      						"value" : 1.32
+	      					},
+	      					{
+	      						"label" : "2007",
+	      						"value" : 2.28
+	      					},
+	      					{
+	      						"label" : "2008",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "2009",
+	      						"value" : 6.22
+	      					},
+	      					{
+	      						"label" : "2010",
+	      						"value" : 8.77
+	      					},
+	      					{
+	      						"label" : "2011",
+	      						"value" : 11.87
+	      					},
+	      					{
+	      						"label" : "2012",
+	      						"value" : 13.79
+	      					},
+	      					{
+	      						"label" : "2013",
+	      						"value" : 15.05
+	      					},
+	      					{
+	      						"label" : "2014",
+	      						"value" : 14.86
+	      					}
+	      				];
+
+	      	var broadbandBarChart=  
+						[ 
+    						{
+						      key: "Crime Aganist Women",
+						      values:[
+	      					{
+	      						"label" : "2005",
+	      						"value" : 0.18
+	      					},
+	      					{
+	      						"label" : "2006",
+	      						"value" : 1.32
+	      					},
+	      					{
+	      						"label" : "2007",
+	      						"value" : 2.28
+	      					},
+	      					{
+	      						"label" : "2008",
+	      						"value" : 3.8
+	      					},
+	      					{
+	      						"label" : "2009",
+	      						"value" : 6.22
+	      					},
+	      					{
+	      						"label" : "2010",
+	      						"value" : 8.77
+	      					},
+	      					{
+	      						"label" : "2011",
+	      						"value" : 11.87
+	      					},
+	      					{
+	      						"label" : "2012",
+	      						"value" : 13.79
+	      					},
+	      					{
+	      						"label" : "2013",
+	      						"value" : 15.05
+	      					},
+	      					{
+	      						"label" : "2014",
+	      						"value" : 14.86
+	      					}
+	      				]
+	      			}
+	      		]
+	      	renderPieChart(broadPieChart, "#pieChart");	
+	      	renderBarChart(broadbandBarChart, "#barChart");			 
+		</script>	
+		<div id="pieChart">
+			<svg></svg>
+		</div>
+
+		<br>
+
+		<h3 class=".uk-article-title">Discrete Bar Chart</h3>
+		<div id="barChart">
+			<svg></svg>
+		</div>
+	</div>
+</body>
+</html>

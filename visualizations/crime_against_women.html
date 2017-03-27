@@ -1,0 +1,281 @@
+<!--
+	Data Source : http://open.gov.in
+				: https://data.gov.in/catalog/persons-arrested-under-crime-against-women
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Visualization</title>
+	<link rel="stylesheet" type="text/css" href="css/nv.d3.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/nv.d3.js"></script>
+	<script src="js/chart.js"></script>
+	<script src="js/uikit.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-navbar">
+	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
+	</nav>
+	<div>
+		<h2 class=".uk-article-title">Persons arrested under crime against Women</h2>
+
+		<h3 class=".uk-article-title">Donut Chart</h3>
+		<script>
+			//Regular pie chart example
+			
+			var crimePieData =  
+						[
+	      					{
+	      						"label" : "Andhra Pradesh",
+	      						"value" : 1664
+	      					},
+	      					{
+	      						"label" : "Arunachal Pradesh",
+	      						"value" : 47
+	      					},
+	      					{
+	      						"label" : "Assam",
+	      						"value" : 1626
+	      					},
+	      					{
+	      						"label" : "Bihar",
+	      						"value" : 1327
+	      					},
+	      					{
+	      						"label" : "Chhattisgarh",
+	      						"value" : 1214
+	      					},
+	      					{
+	      						"label" : "Goa",
+	      						"value" : 61
+	      					},
+	      					{
+	      						"label" : "Gujarat",
+	      						"value" : 647
+	      					},
+	      					{
+	      						"label" : "Haryana",
+	      						"value" : 940
+	      					},
+	      					{
+	      						"label" : "Himachal Pradesh",
+	      						"value" : 259
+	      					},
+	      					{
+	      						"label" : "Jammu & Kashmir",
+	      						"value" : 388
+	      					},
+	      					{
+	      						"label" : "Jharkhand",
+	      						"value" : 780
+	      					},
+	      					{
+	      						"label" : "Karnataka",
+	      						"value" : 842
+	      					},
+	      					{
+	      						"label" : "Kerala",
+	      						"value" : 1259
+	      					},
+	      					{
+	      						"label" : "Madhya Pradesh",
+	      						"value" : 4822
+	      					},
+	      					{
+	      						"label" : "Maharashtra",
+	      						"value" : 2591
+	      					},
+	      					{
+	      						"label" : "Manipur",
+	      						"value" : 46
+	      					},
+	      					{
+	      						"label" : "Meghalaya",
+	      						"value" : 182
+	      					},
+	      					{
+	      						"label" : "Mizoram",
+	      						"value" : 122
+	      					},
+	      					{
+	      						"label" : "Nagaland",
+	      						"value" : 26
+	      					},
+	      					{
+	      						"label" : "Odisha",
+	      						"value" : 1666
+	      					},
+	      					{
+	      						"label" : "Punjab",
+	      						"value" : 895
+	      					},
+	      					{
+	      						"label" : "Rajasthan",
+	      						"value" : 1807
+	      					},
+	      					{
+	      						"label" : "Sikkim",
+	      						"value" : 29
+	      					},
+	      					{
+	      						"label" : "Tamil Nadu",
+	      						"value" : 962
+	      					},
+	      					{
+	      						"label" : "Tripura",
+	      						"value" : 202
+	      					},
+	      					{
+	      						"label" : "Uttar Pradesh",
+	      						"value" : 3593
+	      					},
+	      					{
+	      						"label" : "Uttarakhand",
+	      						"value" : 184
+	      					},
+	      					{
+	      						"label" : "West Bengal",
+	      						"value" : 1963
+	      					}
+	      				];
+
+	      	var crimeBarData=  
+						[ 
+    						{
+						      key: "Crime Aganist Women",
+						      values:[
+	      					{
+	      						"label" : "Andhra Pradesh",
+	      						"value" : 1664
+	      					},
+	      					{
+	      						"label" : "Arunachal Pradesh",
+	      						"value" : 47
+	      					},
+	      					{
+	      						"label" : "Assam",
+	      						"value" : 1626
+	      					},
+	      					{
+	      						"label" : "Bihar",
+	      						"value" : 1327
+	      					},
+	      					{
+	      						"label" : "Chhattisgarh",
+	      						"value" : 1214
+	      					},
+	      					{
+	      						"label" : "Goa",
+	      						"value" : 61
+	      					},
+	      					{
+	      						"label" : "Gujarat",
+	      						"value" : 647
+	      					},
+	      					{
+	      						"label" : "Haryana",
+	      						"value" : 940
+	      					},
+	      					{
+	      						"label" : "Himachal Pradesh",
+	      						"value" : 259
+	      					},
+	      					{
+	      						"label" : "Jammu & Kashmir",
+	      						"value" : 388
+	      					},
+	      					{
+	      						"label" : "Jharkhand",
+	      						"value" : 780
+	      					},
+	      					{
+	      						"label" : "Karnataka",
+	      						"value" : 842
+	      					},
+	      					{
+	      						"label" : "Kerala",
+	      						"value" : 1259
+	      					},
+	      					{
+	      						"label" : "Madhya Pradesh",
+	      						"value" : 4822
+	      					},
+	      					{
+	      						"label" : "Maharashtra",
+	      						"value" : 2591
+	      					},
+	      					{
+	      						"label" : "Manipur",
+	      						"value" : 46
+	      					},
+	      					{
+	      						"label" : "Meghalaya",
+	      						"value" : 182
+	      					},
+	      					{
+	      						"label" : "Mizoram",
+	      						"value" : 122
+	      					},
+	      					{
+	      						"label" : "Nagaland",
+	      						"value" : 26
+	      					},
+	      					{
+	      						"label" : "Odisha",
+	      						"value" : 1666
+	      					},
+	      					{
+	      						"label" : "Punjab",
+	      						"value" : 895
+	      					},
+	      					{
+	      						"label" : "Rajasthan",
+	      						"value" : 1807
+	      					},
+	      					{
+	      						"label" : "Sikkim",
+	      						"value" : 29
+	      					},
+	      					{
+	      						"label" : "Tamil Nadu",
+	      						"value" : 962
+	      					},
+	      					{
+	      						"label" : "Tripura",
+	      						"value" : 202
+	      					},
+	      					{
+	      						"label" : "Uttar Pradesh",
+	      						"value" : 3593
+	      					},
+	      					{
+	      						"label" : "Uttarakhand",
+	      						"value" : 184
+	      					},
+	      					{
+	      						"label" : "West Bengal",
+	      						"value" : 1963
+	      					}
+	      				]
+	      			}
+	      		]
+	      	renderPieChart(crimePieData, "#pieChart");	
+	      	renderBarChart(crimeBarData, "#barChart");			 
+		</script>	
+		<div id="pieChart">
+			<svg></svg>
+		</div>
+
+		<br>
+
+		<h3 class=".uk-article-title">Discrete Bar Chart</h3>
+		<div id="barChart">
+			<svg></svg>
+		</div>
+	</div>
+</body>
+</html>
