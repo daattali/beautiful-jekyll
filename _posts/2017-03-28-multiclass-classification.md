@@ -5,7 +5,7 @@ date: 2017-03-28 16:47:14 +0530
 categories: machine learning
 tags: [machine_learning]
 bigimg: 
-  - /img/nlp.jpg : "https://people.cs.umass.edu/~sameer/"
+  - /img/multiclass-5.png
 ---
 
 According to Wikipedia:
