@@ -1,12 +1,3 @@
-var weights = [];
-var biases = [];
-var embeddings = [];
-var encoders = [];
-var decoders = [];
-var hidden_sizes = []
-var state_sizes = [];
-var depths = [];
-
 function sigmoid(x){
     var result = [];
     for(var i = 0; i < x.length; i++){
@@ -180,7 +171,7 @@ function sample(){
         result = embedding[resnum];
         sample.concat(decoder[resnum]);
     }
-    return sample;
+    document.getElementById('results').value = sample;
 }
 
 function init(){
