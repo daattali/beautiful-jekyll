@@ -10,7 +10,7 @@ var depths = [];
 function sigmoid(x){
     var result = [];
     for(var i = 0; i < x.length; i++){
-        result.push(1/(1 + Math.pow(Math.E, -x[i])););
+        result.push(1/(1 + Math.pow(Math.E, -x[i])));
     }
     return result;
 }
