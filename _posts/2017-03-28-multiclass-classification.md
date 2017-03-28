@@ -673,7 +673,37 @@ output.head(4)
 </table>
 </div>
 
+Now, let's look at the decision boundary for the given dataset
 
+
+```python
+# reducing the dimensionality from 15 to 2
+X_train_embedded = TSNE(n_components=2).fit_transform(X_train_std)
+print X_train_embedded.shape
+model = KNeighborsClassifier(n_neighbors=15).fit(X_train_std, y_train)
+y_predicted = model.predict(X_train_std)
+
+# creating meshgrid
+resolution = 150 # 150x150 background pixels
+X2d_xmin, X2d_xmax = np.min(X_train_embedded[:,0]), np.max(X_train_embedded[:,0])
+X2d_ymin, X2d_ymax = np.min(X_train_embedded[:,1]), np.max(X_train_embedded[:,1])
+xx, yy = np.meshgrid(np.linspace(X2d_xmin, X2d_xmax, resolution), np.linspace(X2d_ymin, X2d_ymax, resolution))
+
+# approximate Voronoi tesselation on resolution x resolution grid using 1-NN
+background_model = KNeighborsClassifier(n_neighbors=15).fit(X_train_embedded, y_predicted) 
+voronoiBackground = background_model.predict(np.c_[xx.ravel(), yy.ravel()])
+voronoiBackground = voronoiBackground.reshape((resolution, resolution))
+
+#plot
+plt.contourf(xx, yy, voronoiBackground)
+plt.scatter(X_train_embedded[:,0], X_train_embedded[:,1], c=y_train)
+plt.show()
+```
+    (5760L, 2L)
+    
+![Decision Boundary](/img/multiclass-5.png)
+
+
+Here, we see a clear classification of the datapoints into one of the five categories. 
 
 Hope you have understood the process of solving a multiclass classification problem. 
-
