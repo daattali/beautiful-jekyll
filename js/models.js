@@ -7,34 +7,27 @@ var hidden_sizes = []
 var state_sizes = [];
 var depths = [];
 
-weights["character"] = [
-  [
-    [],
-    []
-  ],
-  [
-    [],
-    []
-  ]
-];
-biases["character"] = [
+weights["word"] = [
+  
+  ];
+biases["word"] = [
   [],
   []
   ];
-embeddings["character"] = [
+embeddings["word"] = [
   [],
   []
   ];
-encoders["character"] = [
+encoders["word"] = [
   
   ];
-decoders["character"] = [
+decoders["word"] = [
   
   ];
-hidden_sizes["character"] = [
+hidden_sizes["word"] = [
   
   ];
-state_sizes["character"] = [
+state_sizes["word"] = [
   
   ];
-depths["character"] = 2;
+depths["word"] = 2;
