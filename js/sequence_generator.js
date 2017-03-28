@@ -171,7 +171,7 @@ function sample(){
         result = embedding[resnum];
         sample.concat(decoder[resnum]);
     }
-    document.getElementById('results').value = sample;
+    document.getElementById('results').innerHTML = sample;
 }
 
 function init(){
