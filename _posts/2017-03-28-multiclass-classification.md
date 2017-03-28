@@ -75,18 +75,7 @@ train.head(3)
       <th>feature1</th>
       <th>feature2</th>
       <th>feature3</th>
-      <th>feature4</th>
-      <th>feature5</th>
-      <th>feature6</th>
-      <th>feature7</th>
-      <th>feature8</th>
       <th>...</th>
-      <th>feature241</th>
-      <th>feature242</th>
-      <th>feature243</th>
-      <th>feature244</th>
-      <th>feature245</th>
-      <th>feature246</th>
       <th>feature247</th>
       <th>feature248</th>
       <th>feature249</th>
@@ -101,18 +90,7 @@ train.head(3)
       <td>-16.745748</td>
       <td>50.869944</td>
       <td>5.593472</td>
-      <td>1.188263</td>
-      <td>-6.014167</td>
-      <td>15.922007</td>
-      <td>-42.026918</td>
-      <td>-0.064017</td>
       <td>...</td>
-      <td>6.731995</td>
-      <td>4.805149</td>
-      <td>-9.682240</td>
-      <td>-8.771275</td>
-      <td>159.124491</td>
-      <td>3.682115</td>
       <td>-4.938090</td>
       <td>130.068955</td>
       <td>-8.231081</td>
@@ -125,18 +103,7 @@ train.head(3)
       <td>0.428227</td>
       <td>2.874836</td>
       <td>-8.064850</td>
-      <td>6.056867</td>
-      <td>6.124567</td>
-      <td>2.527879</td>
-      <td>-9.277728</td>
-      <td>-7.586313</td>
       <td>...</td>
-      <td>-6.274857</td>
-      <td>-9.967576</td>
-      <td>-70.256324</td>
-      <td>-5.278519</td>
-      <td>-53.004625</td>
-      <td>6.484784</td>
       <td>-6.389429</td>
       <td>-26.164277</td>
       <td>-4.909740</td>
@@ -149,18 +116,7 @@ train.head(3)
       <td>7.857013</td>
       <td>151.612757</td>
       <td>9.639676</td>
-      <td>5.570139</td>
-      <td>-3.261364</td>
-      <td>10.814200</td>
-      <td>-37.394430</td>
-      <td>-5.791044</td>
       <td>...</td>
-      <td>9.362207</td>
-      <td>18.524639</td>
-      <td>39.445002</td>
-      <td>-1.980687</td>
-      <td>-7.543595</td>
-      <td>-1.971843</td>
       <td>8.034066</td>
       <td>120.510705</td>
       <td>7.754377</td>
@@ -245,18 +201,7 @@ train.head(3)
       <th>feature2</th>
       <th>feature3</th>
       <th>feature4</th>
-      <th>feature5</th>
-      <th>feature6</th>
-      <th>feature7</th>
-      <th>feature8</th>
-      <th>feature9</th>
       <th>...</th>
-      <th>feature240</th>
-      <th>feature241</th>
-      <th>feature242</th>
-      <th>feature243</th>
-      <th>feature244</th>
-      <th>feature245</th>
       <th>feature246</th>
       <th>feature247</th>
       <th>feature248</th>
@@ -271,18 +216,7 @@ train.head(3)
       <td>50.869944</td>
       <td>5.593472</td>
       <td>1.188263</td>
-      <td>-6.014167</td>
-      <td>15.922007</td>
-      <td>-42.026918</td>
-      <td>-0.064017</td>
-      <td>-6.492815</td>
       <td>...</td>
-      <td>-10.528125</td>
-      <td>6.731995</td>
-      <td>4.805149</td>
-      <td>-9.682240</td>
-      <td>-8.771275</td>
-      <td>159.124491</td>
       <td>3.682115</td>
       <td>-4.938090</td>
       <td>130.068955</td>
@@ -295,18 +229,7 @@ train.head(3)
       <td>2.874836</td>
       <td>-8.064850</td>
       <td>6.056867</td>
-      <td>6.124567</td>
-      <td>2.527879</td>
-      <td>-9.277728</td>
-      <td>-7.586313</td>
-      <td>-1.802893</td>
       <td>...</td>
-      <td>-5.154289</td>
-      <td>-6.274857</td>
-      <td>-9.967576</td>
-      <td>-70.256324</td>
-      <td>-5.278519</td>
-      <td>-53.004625</td>
       <td>6.484784</td>
       <td>-6.389429</td>
       <td>-26.164277</td>
@@ -319,18 +242,7 @@ train.head(3)
       <td>151.612757</td>
       <td>9.639676</td>
       <td>5.570139</td>
-      <td>-3.261364</td>
-      <td>10.814200</td>
-      <td>-37.394430</td>
-      <td>-5.791044</td>
-      <td>0.073638</td>
       <td>...</td>
-      <td>5.789345</td>
-      <td>9.362207</td>
-      <td>18.524639</td>
-      <td>39.445002</td>
-      <td>-1.980687</td>
-      <td>-7.543595</td>
       <td>-1.971843</td>
       <td>8.034066</td>
       <td>120.510705</td>
@@ -365,18 +277,7 @@ test.head(3)
       <th>feature1</th>
       <th>feature2</th>
       <th>feature3</th>
-      <th>feature4</th>
-      <th>feature5</th>
-      <th>feature6</th>
-      <th>feature7</th>
-      <th>feature8</th>
       <th>...</th>
-      <th>feature240</th>
-      <th>feature241</th>
-      <th>feature242</th>
-      <th>feature243</th>
-      <th>feature244</th>
-      <th>feature245</th>
       <th>feature246</th>
       <th>feature247</th>
       <th>feature248</th>
@@ -391,18 +292,7 @@ test.head(3)
       <td>-12.319618</td>
       <td>-109.961631</td>
       <td>-11.006934</td>
-      <td>-8.770868</td>
-      <td>-1.246577</td>
-      <td>3.875265</td>
-      <td>33.877412</td>
-      <td>7.757658</td>
       <td>...</td>
-      <td>5.515601</td>
-      <td>10.530372</td>
-      <td>6.887168</td>
-      <td>-76.231907</td>
-      <td>3.374217</td>
-      <td>-128.668656</td>
       <td>6.001156</td>
       <td>2.619267</td>
       <td>-14.869630</td>
@@ -415,18 +305,7 @@ test.head(3)
       <td>-5.344301</td>
       <td>74.481876</td>
       <td>1.267520</td>
-      <td>7.044210</td>
-      <td>6.391507</td>
-      <td>-7.713534</td>
-      <td>-1.336639</td>
-      <td>1.197008</td>
       <td>...</td>
-      <td>-4.515135</td>
-      <td>4.041697</td>
-      <td>-9.170853</td>
-      <td>-38.501120</td>
-      <td>0.036281</td>
-      <td>22.997648</td>
       <td>-4.050474</td>
       <td>-16.322332</td>
       <td>-54.813692</td>
@@ -439,18 +318,7 @@ test.head(3)
       <td>-7.539082</td>
       <td>-13.128054</td>
       <td>-7.283449</td>
-      <td>1.430600</td>
-      <td>8.113846</td>
-      <td>-7.219936</td>
-      <td>-83.107625</td>
-      <td>-7.449005</td>
       <td>...</td>
-      <td>-1.748731</td>
-      <td>-2.171528</td>
-      <td>16.292004</td>
-      <td>30.960787</td>
-      <td>0.380944</td>
-      <td>-86.906365</td>
       <td>14.387590</td>
       <td>-3.615364</td>
       <td>160.603909</td>
