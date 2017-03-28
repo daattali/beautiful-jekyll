@@ -90,9 +90,11 @@ function lstm_stack(x, h_array, c_array, w_array, b_array, forget_bias=1.0, num_
 
 function zero_state(layer_widths){
     var c = [];
-    for(var width: layer_widths){
+    var width;
+    for(var i = 0; i < layer_widths.length; i++)){
+        width = layer_widths[i];
         c.push([]);
-        for(var i = 0; i < width; i++){
+        for(var j = 0; j < width; j++){
             c[c.length - 1].push(0);
         }
     }
@@ -133,7 +135,10 @@ function sample(){
     var state_size = state_sizes[sample_type];
     var depth = depths[sample_type];
     var alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    for(var chr: sample_seed.split('')){
+    var split_seed = sample_seed.split('');
+    var chr;
+    for(var i = 0; i < split_seed.length; i++) {
+        chr = split_seed[i];
         if(alphabet.includes(chr)){
             sample_array[sample_array.length - 1] = sample_array[sample_array.length - 1].concat(chr);
         } else {
@@ -142,7 +147,9 @@ function sample(){
         }
     }
     var sample_vectors = [];
-    for(var str: sample_array){
+    var str;
+    for(var i = 0; i < sample_array.length; i++){
+        var str = sample_array[i]
         if(str != ''){
             sample_vectors.push(embedding[decoder[str]]);
         }
@@ -151,8 +158,9 @@ function sample(){
     var h = zero_state(hidden_size);
     var c = zero_state(state_size);
     var result;
-    for(var vec: sample_vectors){
-        result = lstm_stack(vec, h, c, weight, bias, 1, -1, true);
+    var vec;
+    for(var i = 0; i < sample_vectors.length; i++){
+        result = lstm_stack(sample_vectors[i], h, c, weight, bias, 1, -1, true);
     }
     var probs;
     var cum_probs;
