@@ -73,8 +73,6 @@ train.head(3)
       <th>id</th>
       <th>feature0</th>
       <th>feature1</th>
-      <th>feature2</th>
-      <th>feature3</th>
       <th>...</th>
       <th>feature247</th>
       <th>feature248</th>
@@ -88,8 +86,6 @@ train.head(3)
       <td>0</td>
       <td>25.208249</td>
       <td>-16.745748</td>
-      <td>50.869944</td>
-      <td>5.593472</td>
       <td>...</td>
       <td>-4.938090</td>
       <td>130.068955</td>
@@ -101,8 +97,6 @@ train.head(3)
       <td>1</td>
       <td>-86.931450</td>
       <td>0.428227</td>
-      <td>2.874836</td>
-      <td>-8.064850</td>
       <td>...</td>
       <td>-6.389429</td>
       <td>-26.164277</td>
@@ -114,8 +108,6 @@ train.head(3)
       <td>2</td>
       <td>42.160934</td>
       <td>7.857013</td>
-      <td>151.612757</td>
-      <td>9.639676</td>
       <td>...</td>
       <td>8.034066</td>
       <td>120.510705</td>
