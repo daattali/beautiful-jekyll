@@ -503,7 +503,7 @@ plt.grid()
 ```
 
 
-![png](output_22_0.png)
+![Count in each category](/img/multiclass-1.png)
 
 
 
@@ -558,7 +558,7 @@ plt.show()
 ```
 
 
-![png](output_27_0.png)
+![Range of training data without standardization](/img/multiclass-2.png)
 
 
 Looks like the datapoints range from **-300** to **300**. We shall bring this range to a single digit.
@@ -591,7 +591,7 @@ plt.show()
 ```
 
 
-![png](output_31_0.png)
+![Range of data after standardization](/img/multiclass-3.png)
 
 
 Standardization worked!
@@ -764,7 +764,7 @@ plt.show()
 ```
 
 
-![png](output_46_0.png)
+![Learning Curve](/img/multiclass-4.png)
 
 
 Looks like the estimator's score goes high when the dataset size increases.
@@ -833,7 +833,3 @@ output.head(4)
 
 Hope you have understood the process of solving a multiclass classification problem. 
 
-
-```python
-
-```
