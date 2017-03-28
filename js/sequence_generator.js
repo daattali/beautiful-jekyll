@@ -91,7 +91,7 @@ function lstm_stack(x, h_array, c_array, w_array, b_array, forget_bias=1.0, num_
 function zero_state(layer_widths){
     var c = [];
     var width;
-    for(var i = 0; i < layer_widths.length; i++)){
+    for(var i = 0; i < layer_widths.length; i++){
         width = layer_widths[i];
         c.push([]);
         for(var j = 0; j < width; j++){
