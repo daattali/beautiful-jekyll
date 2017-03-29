@@ -8,7 +8,7 @@ Psychology has got some trust issues. It used to be the case that when authors w
 	
 The focus of this post is on how you can effectively pre-register your study with a case-study of how not to do it…my own first attempt. I will point out what is wrong with my first attempt and highlight some resources that have been particularly useful in improving my own knowledge. I was inspired by Katherine Wood’s [blog post]( https://inattentionalcoffee.wordpress.com/2017/01/03/open-science-in-practice/) on her experience of starting her graduate programme after the fall-out of the replication crisis in psychology. She identified that current graduate students have the opportunity to start their research career following an open science approach, as opposed to changing practices further into their career. I too started my graduate programme after becoming aware of the issues of replicability in psychology, but I did not know anyone else at my institution who pre-registered their research and there was not exactly a “pre-registration for dummies” to turn to. However, there are now several articles and blog posts explaining how you can pre-register your research (e.g. [Research Pre-registration 101]( http://www.psychologicalscience.org/observer/research-preregistration-101#.WNuVNhLyuLI)). This post is aimed at those who are yet to pre-register their research, or are perhaps in the same boat as me where you have tried and not quite got there with the first attempt. There are some resources that I have found invaluable in improving how I pre-register my research, and you can see what not to do from my mistakes.
 	
-Note: this is about what [van ‘t Veer and Giner-Sorolla (2016)]( https://osf.io/sn6by/) call unreviewed pre-registration, where the author time stamps their pre-registration document on a platform such as the Open Science Framework(OSF). However, there are also reviewed pre-registrations or Registered Reports. van ‘t Veer and Giner-Sorolla (2016) and [Fablander (2016)]( http://blog.efpsa.org/2016/04/14/replicability-and-registered-reports/) have previously written about the distinction so I would direct you there for a more elaborate discussion. I have also previously interviewed [Dr. Hannah Hobson]( http://blog.efpsa.org/2016/09/09/publishing-a-registered-report-as-a-postgraduate-researcher/) about her experience of publishing a Registered Report during her PhD if you are interested in the experience of publishing one. There is also a (growing) list of journals that accept Registered Reports which can be found via the [Centre for Open Science]( https://cos.io/rr/?_ga=1.26500537.543185544.1456424379).  
+Note: this is about what [van ‘t Veer and Giner-Sorolla (2016)]( https://osf.io/sn6by/) call unreviewed pre-registration, where the author time stamps their pre-registration document on a platform such as the Open Science Framework (OSF). However, there are also reviewed pre-registrations or Registered Reports. van ‘t Veer and Giner-Sorolla (2016) and [Dablander (2016)]( http://blog.efpsa.org/2016/04/14/replicability-and-registered-reports/) have previously written about the distinction so I would direct you there for a more elaborate discussion. I have also previously interviewed [Dr. Hannah Hobson]( http://blog.efpsa.org/2016/09/09/publishing-a-registered-report-as-a-postgraduate-researcher/) about her experience of publishing a Registered Report during her PhD if you are interested in the experience of publishing one. There is also a (growing) list of journals that accept Registered Reports which can be found via the [Centre for Open Science]( https://cos.io/rr/?_ga=1.26500537.543185544.1456424379).  
 
 ## My first attempt
 
@@ -41,44 +41,48 @@ One of the difficulties I encountered when I wrote my first pre-registration is 
 
 These are the headings and sub-headings that I have used to pre-register my current study. They are an amalgamation of all the resources I have read whilst I have been preparing my next study. There is no universally agreed upon template so you could add additional headings if there is further information that you think is important for your project. 
 
-## Background 
+---
+
+## 1. Background 
 This is pretty much a very short introduction section. What previous research has influenced your study and what problem are you trying to address?  
 
-## Objectives and hypotheses 
-### Aims
+## 2. Objectives and hypotheses 
+ ### 2.1. Aims
 The aim(s) of your study. What are you trying to achieve? 
-### Hypotheses
+ ### 2.2. Hypotheses
 What are your predictions, what do you think is going to happen? 
 
-## Study design 
+## 3. Study design 
 A brief outline of the design of the study. What are the IVs and what are the DVs? 
 
-## Participants and recruitment 
+## 4. Participants and recruitment 
 I start off with a summary of the sample I trying to obtain. How many groups do you have, how many participants will be in each group, and how are you going to recruit them? 
-### Inclusion criteria
+ ### 4.1. Inclusion criteria
 What characteristics are you interested in? What makes them eligible to take part in your research.  
-### Exclusion criteria
+ ### 4.2. Exclusion criteria
 What characteristics could your participant have so that it would not be a good idea for them to take part. You just need to be transparent on the criteria you are using to exclude people to reduce the researcher degrees of freedom ([Gelman and Loken 2013]( http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)). 
-### Sample size calculation 
+ ### 4.3. Sample size calculation 
 You need to justify your sample size to show it is well powered. This is something I did not do in my first attempt at pre-registration, and it is an important consideration as both optional stopping (Simmons et al. 2011) and low statistical power ([Button et al. 2013]( http://www.nature.com/nrn/journal/v14/n5/abs/nrn3475.html)) has been shown to be problematic.  
 
-## Measures and materials
-### Measures 
+## 5. Measures and materials
+ ### 5.1. Measures 
 How are you measuring your DV? You can outline the specific task(s) you are using. Make sure you are being transparent and list all the measures to ensure you are not selectively reporting only the statistically significant ones. 
-### Materials
+ ### 5.2. Materials
 Here you can outline the questionnaires that your participants have completed. Again, be transparent and list all the materials involved.    
 
-## Procedure 
+## 6. Procedure 
 How are you going to collect the data? This does not have to be extensive, but include an outline of the data collection sessions. 
 
-## Statistical plan 
-### Data screening procedure 
+## 7. Statistical plan 
+ ### 7.1. Data screening procedure 
 When you analyse the data, how are you going to screen and clean the data? This is again to reduce the impact of researcher degrees of freedom as there are many ways of doing this. It’s important to note here that this is not a straightjacket. Unless you have a crystal ball, there may be times when something unexpected happens. You do not have to rigidly follow this, but it allows you to transparently say “this is what I planned, but because of x, y, and z I had to do this instead”.  
-### Planned analyses
+ ### 7.2. Planned analyses
 What are the planned analyses you are going to perform to answer your research question? For example, following the recommendation of [Cramer et al. (2016)](https://link.springer.com/article/10.3758/s13423-015-0913-5), you can pre-register specific effects of interest in a factorial ANOVA to reduce multiplicity. 
 
-## References 
+## 8. References 
 You can end on a reference list for the sources you used throughout the document. 
+
+---
 
 Hopefully this post and the resources have helped if you were uncertain about how to pre-register your study. More and more journals are asking for evidence of studies being pre-registered and it is only a matter of time before it is largely compulsory for experimental research to be pre-registered. The opportunity is here to get ahead of the tide and ensure you are following open science practices. There are common concerns voiced about pre-registration with one of the most frequent being it stifles exploration. However, this is simply not true. The idea behind pre-registration is to show what is confirmatory research and what you have found through exploratory research. Exploration is an important creative process and the benefits can be summarised with a quote from John Tukey’s *Exploratory Data Analysis* (1977: page 3):
 > “R]estricting one’s self to the planned analysis—failing to accompany it with exploration—loses sight of the most interesting results too frequently to be comfortable”
