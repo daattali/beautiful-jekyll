@@ -22,3 +22,5 @@ title: Archive
  1. [Day in the life of a research student](https://bartlettje.github.io/2016-04-08-day-in-the-life/)
  
  2. [Reasons to move your surveys online](https://bartlettje.github.io/2016-04-24-move-surveys-online/)
+ 
+ 3. [How to effectively pre-register your research: a case-study of my own mistakes](https://bartlettje.github.io/2017-03-29-effective-preregistration/)
