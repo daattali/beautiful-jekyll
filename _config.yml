@@ -23,6 +23,7 @@ description: Research and statistics in psychology.
 
 # List of links in the navigation bar
 navbar-links:
+  Blog: "index"
   Archive: "archive"
   Resources:
     - R resources: "r-resources"
