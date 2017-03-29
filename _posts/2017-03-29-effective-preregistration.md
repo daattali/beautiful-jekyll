@@ -47,9 +47,9 @@ These are the headings and sub-headings that I have used to pre-register my curr
 This is pretty much a very short introduction section. What previous research has influenced your study and what problem are you trying to address?  
 
 ## 2. Objectives and hypotheses 
- ### 2.1. Aims
+### 2.1. Aims
 The aim(s) of your study. What are you trying to achieve? 
- ### 2.2. Hypotheses
+### 2.2. Hypotheses
 What are your predictions, what do you think is going to happen? 
 
 ## 3. Study design 
@@ -57,26 +57,26 @@ A brief outline of the design of the study. What are the IVs and what are the DV
 
 ## 4. Participants and recruitment 
 I start off with a summary of the sample I trying to obtain. How many groups do you have, how many participants will be in each group, and how are you going to recruit them? 
- ### 4.1. Inclusion criteria
+### 4.1. Inclusion criteria
 What characteristics are you interested in? What makes them eligible to take part in your research.  
- ### 4.2. Exclusion criteria
+### 4.2. Exclusion criteria
 What characteristics could your participant have so that it would not be a good idea for them to take part. You just need to be transparent on the criteria you are using to exclude people to reduce the researcher degrees of freedom ([Gelman and Loken 2013]( http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)). 
- ### 4.3. Sample size calculation 
+### 4.3. Sample size calculation 
 You need to justify your sample size to show it is well powered. This is something I did not do in my first attempt at pre-registration, and it is an important consideration as both optional stopping (Simmons et al. 2011) and low statistical power ([Button et al. 2013]( http://www.nature.com/nrn/journal/v14/n5/abs/nrn3475.html)) has been shown to be problematic.  
 
 ## 5. Measures and materials
- ### 5.1. Measures 
+### 5.1. Measures 
 How are you measuring your DV? You can outline the specific task(s) you are using. Make sure you are being transparent and list all the measures to ensure you are not selectively reporting only the statistically significant ones. 
- ### 5.2. Materials
+### 5.2. Materials
 Here you can outline the questionnaires that your participants have completed. Again, be transparent and list all the materials involved.    
 
 ## 6. Procedure 
 How are you going to collect the data? This does not have to be extensive, but include an outline of the data collection sessions. 
 
 ## 7. Statistical plan 
- ### 7.1. Data screening procedure 
+### 7.1. Data screening procedure 
 When you analyse the data, how are you going to screen and clean the data? This is again to reduce the impact of researcher degrees of freedom as there are many ways of doing this. It’s important to note here that this is not a straightjacket. Unless you have a crystal ball, there may be times when something unexpected happens. You do not have to rigidly follow this, but it allows you to transparently say “this is what I planned, but because of x, y, and z I had to do this instead”.  
- ### 7.2. Planned analyses
+### 7.2. Planned analyses
 What are the planned analyses you are going to perform to answer your research question? For example, following the recommendation of [Cramer et al. (2016)](https://link.springer.com/article/10.3758/s13423-015-0913-5), you can pre-register specific effects of interest in a factorial ANOVA to reduce multiplicity. 
 
 ## 8. References 
