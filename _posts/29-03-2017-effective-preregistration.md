@@ -4,7 +4,7 @@ title: "How to effectively pre-register your research: a case-study of my own mi
 date: 2017-03-29
 ---
 
-Psychology has got some trust issues. It used to be the case that when authors wrote they had a specific hypothesis or they were interested in a specific dependent variable, you just took their word for it. However, there has been a series of high profile articles highlighting how researchers engage in questionable research practices (QRPs) such as hypothesising after the results are known (HARKing; [Kerr 1998]( http://journals.sagepub.com/doi/abs/10.1207/s15327957pspr0203_4?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed)) and selectively reporting only the variables that are statistically significant [Simmons, Nelson and Simonsohn 2011]( http://www.haas.berkeley.edu/groups/online_marketing/facultyCV/papers/nelson_false-positive.pdf). To regain some trust and reduce the impact of QRPs, many authors are now pre-registering their studies. Pre-registration is where authors state in advance what their aims and hypotheses are for the study, along with sample size calculations and which measures are going to be used. When the study is complete and written up for publication, anyone can cross-reference what they have reported in comparison to their pre-registration. Although it has supposedly been compulsory for clinical trials to be pre-registered for decades (REF), pre-registration in psychology is relatively new and the emphasis has increased since the replicability of psychological research has been called into question [Open Science Collaboration 2015]( http://science.sciencemag.org/content/349/6251/aac4716). 
+Psychology has got some trust issues. It used to be the case that when authors wrote they had a specific hypothesis or they were interested in a specific dependent variable, you just took their word for it. However, there has been a series of high profile articles highlighting how researchers engage in questionable research practices (QRPs) such as hypothesising after the results are known (HARKing; [Kerr 1998]( http://journals.sagepub.com/doi/abs/10.1207/s15327957pspr0203_4?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%3dpubmed)) and selectively reporting only the variables that are statistically significant [Simmons, Nelson and Simonsohn 2011]( http://www.haas.berkeley.edu/groups/online_marketing/facultyCV/papers/nelson_false-positive.pdf). To regain some trust and reduce the impact of QRPs, many authors are now pre-registering their studies. Pre-registration is where authors state in advance what their aims and hypotheses are for the study, along with sample size calculations and which measures are going to be used. When the study is complete and written up for publication, anyone can cross-reference what they have reported in comparison to their pre-registration. Although it has supposedly been compulsory for [clinical trials to be pre-registered](http://www.alltrials.net/find-out-more/all-trials/) for decades, pre-registration in psychology is relatively new and the emphasis has increased since the replicability of psychological research has been called into question [Open Science Collaboration 2015]( http://science.sciencemag.org/content/349/6251/aac4716). 
 	
 The focus of this post is on how you can effectively pre-register your study with a case-study of how not to do it…my own first attempt. I will point out what is wrong with my first attempt and highlight some resources that have been particularly useful in improving my own knowledge. I was inspired by Katherine Wood’s [blog post]( https://inattentionalcoffee.wordpress.com/2017/01/03/open-science-in-practice/) on her experience of starting her graduate programme after the fall-out of the replication crisis in psychology. She identified that current graduate students have the opportunity to start their research career following an open science approach, as opposed to changing practices further into their career. I too started my graduate programme after becoming aware of the issues of replicability in psychology, but I did not know anyone else at my institution who pre-registered their research and there was not exactly a “pre-registration for dummies” to turn to. However, there are now several articles and blog posts explaining how you can pre-register your research (e.g. [Research Pre-registration 101]( http://www.psychologicalscience.org/observer/research-preregistration-101#.WNuVNhLyuLI)). This post is aimed at those who are yet to pre-register their research, or are perhaps in the same boat as me where you have tried and not quite got there with the first attempt. There are some resources that I have found invaluable in improving how I pre-register my research, and you can see what not to do from my mistakes.
 	
@@ -44,10 +44,10 @@ These are the headings and sub-headings that I have used to pre-register my curr
 ## Background 
 This is pretty much a very short introduction section. What previous research has influenced your study and what problem are you trying to address?  
 
-## Objectives and hypotheses 
-	### Aims
+## Objectives and hypotheses 
+### Aims
 The aim(s) of your study. What are you trying to achieve? 
-	### Hypotheses
+### Hypotheses
 What are your predictions, what do you think is going to happen? 
 
 ## Study design 
@@ -55,33 +55,34 @@ A brief outline of the design of the study. What are the IVs and what are the DV
 
 ## Participants and recruitment 
 I start off with a summary of the sample I trying to obtain. How many groups do you have, how many participants will be in each group, and how are you going to recruit them? 
-	### Inclusion criteria
+### Inclusion criteria
 What characteristics are you interested in? What makes them eligible to take part in your research.  
-	### Exclusion criteria
+### Exclusion criteria
 What characteristics could your participant have so that it would not be a good idea for them to take part. You just need to be transparent on the criteria you are using to exclude people to reduce the researcher degrees of freedom ([Gelman and Loken 2013]( http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)). 
-  ###Sample size calculation 
+### Sample size calculation 
 You need to justify your sample size to show it is well powered. This is something I did not do in my first attempt at pre-registration, and it is an important consideration as both optional stopping (Simmons et al. 2011) and low statistical power ([Button et al. 2013]( http://www.nature.com/nrn/journal/v14/n5/abs/nrn3475.html)) has been shown to be problematic.  
 
-## Measures and materials
-	### Measures 
+## Measures and materials
+### Measures 
 How are you measuring your DV? You can outline the specific task(s) you are using. Make sure you are being transparent and list all the measures to ensure you are not selectively reporting only the statistically significant ones. 
-	### Materials
+### Materials
 Here you can outline the questionnaires that your participants have completed. Again, be transparent and list all the materials involved.    
 
-## Procedure 
+## Procedure 
 How are you going to collect the data? This does not have to be extensive, but include an outline of the data collection sessions. 
 
-## Statistical plan 
-	### Data screening procedure 
+## Statistical plan 
+### Data screening procedure 
 When you analyse the data, how are you going to screen and clean the data? This is again to reduce the impact of researcher degrees of freedom as there are many ways of doing this. It’s important to note here that this is not a straightjacket. Unless you have a crystal ball, there may be times when something unexpected happens. You do not have to rigidly follow this, but it allows you to transparently say “this is what I planned, but because of x, y, and z I had to do this instead”.  
-	### Planned analyses
+### Planned analyses
 What are the planned analyses you are going to perform to answer your research question? For example, following the recommendation of [Cramer et al. (2016)](https://link.springer.com/article/10.3758/s13423-015-0913-5), you can pre-register specific effects of interest in a factorial ANOVA to reduce multiplicity. 
 
-## References 
+## References 
 You can end on a reference list for the sources you used throughout the document. 
 
-Hopefully this post and the resources have helped if you were uncertain about how to pre-register your study. More and more journals are asking for evidence of studies being pre-registered and it is only a matter of time before it is largely compulsory for experimental research to be pre-registered. The opportunity is here to get ahead of the tide and ensure you are following open science practices. There are common concerns voiced about pre-registration with one of the most frequent being it stifles exploration. However, this is simply not true. The idea behind pre-registration is to show what is confirmatory research and what you have found through exploratory research. Exploration is an important creative process and the benefits can be summarised with a quote from John Tukey’s Exploratory Data Analysis (1977: page 3):
-“R]estricting one’s self to the planned analysis—failing to accompany it with exploration—loses sight of the most interesting results too frequently to be comfortable”
+Hopefully this post and the resources have helped if you were uncertain about how to pre-register your study. More and more journals are asking for evidence of studies being pre-registered and it is only a matter of time before it is largely compulsory for experimental research to be pre-registered. The opportunity is here to get ahead of the tide and ensure you are following open science practices. There are common concerns voiced about pre-registration with one of the most frequent being it stifles exploration. However, this is simply not true. The idea behind pre-registration is to show what is confirmatory research and what you have found through exploratory research. Exploration is an important creative process and the benefits can be summarised with a quote from John Tukey’s *Exploratory Data Analysis* (1977: page 3):
+> “R]estricting one’s self to the planned analysis—failing to accompany it with exploration—loses sight of the most interesting results too frequently to be comfortable”
+
 You just need to be honest and say what you wanted to confirm and what you found through exploration, it’s all about transparency and honesty. 
 
 I am not the first to outline how you can pre-register your study, and there are other more thorough accounts such as van ‘t Veer and Giner-Sorolla (2016) which I would recommend you refer to. However, I made some mistakes during my first attempt at pre-registration. Hopefully you can learn from these mistakes if you are yet to pre-register your research, and I hope the resources throughout this post can be useful. If you have any further suggestions on helpful resources, please suggest them below and I can add them in. 
