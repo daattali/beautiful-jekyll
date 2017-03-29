@@ -85,7 +85,7 @@ You can end on a reference list for the sources you used throughout the document
 ---
 
 Hopefully this post and the resources have helped if you were uncertain about how to pre-register your study. More and more journals are asking for evidence of studies being pre-registered and it is only a matter of time before it is largely compulsory for experimental research to be pre-registered. The opportunity is here to get ahead of the tide and ensure you are following open science practices. There are common concerns voiced about pre-registration with one of the most frequent being it stifles exploration. However, this is simply not true. The idea behind pre-registration is to show what is confirmatory research and what you have found through exploratory research. Exploration is an important creative process and the benefits can be summarised with a quote from John Tukey’s *Exploratory Data Analysis* (1977: page 3):
-> “R]estricting one’s self to the planned analysis—failing to accompany it with exploration—loses sight of the most interesting results too frequently to be comfortable”
+> “[R]estricting one’s self to the planned analysis—failing to accompany it with exploration—loses sight of the most interesting results too frequently to be comfortable”
 
 You just need to be honest and say what you wanted to confirm and what you found through exploration, it’s all about transparency and honesty. 
 
