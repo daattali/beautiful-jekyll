@@ -11,6 +11,11 @@
   {% capture linkurl %}{{ site.baseurl }}/{{ include.link[1] }}{% endcapture %}
 {% else %}
   {% capture linkurl %}{{ include.link[1] }}{% endcapture %}
+  {% assign target = true %}
 {% endif %}
 
+{% if target %}
+<a href="{{ linkurl }}" target="_blank">{{ include.link[0] }}</a>
+{% else %}
 <a href="{{ linkurl }}">{{ include.link[0] }}</a>
+{% endif %}
