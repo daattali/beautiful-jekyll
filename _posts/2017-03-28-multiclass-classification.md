@@ -457,9 +457,9 @@ y_test = np.asarray(y_test, dtype='float64')
 
 So, all the major cleaning process is done, next we need to choose a classification algorithm to train it. 
 
-But, before that we need to know what are the appropriate hyper paramters that our learning algorithm **KNeighborsClassifier** works efficiently.
+But, before that we need to know what are the appropriate hyper parameters that our learning algorithm **KNeighborsClassifier** works efficiently.
 
-In-order to choose the appropriate hyperparameters, let's using **GridSearchCV** from **model_selection**.
+In-order to choose the appropriate hyper parameters, let's use **GridSearchCV** from **model_selection**.
 
 
 ```python
