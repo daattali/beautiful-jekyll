@@ -1,25 +1,11 @@
----
-layout: page
-title: About 
-<!-- subtitle: Why you'd want to go on a date with me -->
----
+# Hello, I'm Mahesh  
+&nbsp; &nbsp;
+I graduated from Visveswaraya Technological University with a degree in Information Science in 2016. My [Linkedin](https://www.linkedin.com/in/maheshkumark) profile if you want to know more about me. 
 
-To,  
-	A Stranger,  
-	Far away Galaxy.  
-    
-Subject - My introduction, if that's what you are looking for.  
+## Work 
 
-Dear Stranger,  
+I'm a software engineer at [Cerner Healthcare](https://www.cerner.com/). Previously, I have worked at [Jobspire](https://jobspire.net/) and [Rare Mile Technologies](http://raremile.com/).
 
-It gives me immense pleasure to introduce myself. I'm **Mahesh Kumar**.  
+I'm also interested in expanding my knowledge and solving ML and NLP problems.
 
-What else do you need?  
-
-### my history  
-
-To be honest, I'm having some trouble remembering right now, but I do remember some one whom I follow [a genius](https://www.youtube.com/watch?v=tnBQmEqBCY0) and this will answer **all** your questions.  
-
-Hope you found it useful.  
-
-Thanks
+Check out my [Github](https://www.github.com/maheshkkumar) page.
