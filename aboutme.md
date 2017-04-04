@@ -4,7 +4,7 @@ title: About me
 subtitle: Why I am who I am
 ---
 
-My name is Bartosz Radzyński. Currently I'm a student at AGH UST. I've made this website about me because I can.
+My name is Bartosz Radzyński. Currently I'm a student at AGH UST, and president of KN BIT scientific club. I've made this website about me because I can.
 Here are some things i like doing:
 
 - Breaking my computer 
