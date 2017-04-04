@@ -17,4 +17,4 @@ Here are some things i like doing:
 
 ### Want to know something more?
 
-Write an email or something to me, maybe I will answer.
+Write an email or something to me, maybe I will answer ;).
