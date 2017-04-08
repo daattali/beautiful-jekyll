@@ -1,0 +1,78 @@
+
+/* PROJECT PREVIEW */
+.project-preview {
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  width: 200px;
+}
+
+@media screen and (min-width: 340px) {
+  .project-preview {
+    width: 300px;
+  }
+}
+
+.project-preview__title {
+  padding: 20px;
+}
+
+
+/* PROJECT */
+.project-gallery {
+  position: relative;
+  height : 405px;
+  z-index: 10;
+}
+
+.project-gallery__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ARROW */
+.project-gallery__arrow {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.project-gallery__arrow-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-top: solid 4px white;
+  border-left: solid 4px white;
+  transform : translateY(-50%) rotate(-45deg);
+}
+
+
+/* LEFT ARROW */
+.project-gallery__arrow--left {
+  top: 0;
+  left: 0;
+}
+
+.project-gallery__arrow-icon--left {
+  margin-left: 10px;
+}
+
+/* RIGHT ARROW */
+.project-gallery__arrow--right {
+  top: 0;
+  right: 0;
+}
+
+.project-gallery__arrow-icon--right {
+  transform : translateY(-50%) rotate(135deg);
+}

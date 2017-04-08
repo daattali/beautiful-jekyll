@@ -1,0 +1,17 @@
+---
+layout: page
+title: Projects
+subtitle: These are the various projects I have worked on over the years
+css:
+  - "/css/project.css"
+---
+
+
+{% for project in site.projects %}
+  <a class="project-preview" href="{{ project.url }}">
+    <img src="{{ project.images.first.path }}" alt="{{ project.title }}"/>
+    <div class="project-preview__title">
+      {{ project.title }}
+    </div>
+  </a>
+{% endfor %}

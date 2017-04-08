@@ -3,8 +3,8 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+# If you are building a simple GitHub user page (username.github.io) then use these settings:
+url: "http://joeyjiron06.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,50 +14,46 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Joey Jiron
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Welcome to my blog! This is where I talk about all things tech!
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "http://joeyjiron06.github.io"
+  Projects : "projects"
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
 
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-# title-img: /path/to/image
+
+# collections for Projects
+
+collections:
+  projects:
+    layout: "project"
+    output: true
+
+
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
+  name: Joey Jiron
+  email: "joeyjiron06@gmail.com"
+  facebook: joey.jiron  # eg. daattali
+  github: joeyjiron06    # eg. daattali
+  twitter: joeyjiron06   # eg. daattali
+  linkedin: in/joeyjiron  # eg. "pub/dean-attali/8/946/143"
   stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
+
 
 # Select which links to show in the footer
 footer-links-active:
@@ -67,6 +63,7 @@ footer-links-active:
   twitter: true
   google-plus: false
   github: true
+  linkedin: true
   reddit: false
   linkedin: false
   xing: false
@@ -86,11 +83,11 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "http-joeyjiron06-github-io"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
@@ -137,6 +134,7 @@ defaults:
     values:
       layout: "page"
       show-avatar: true
+
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
@@ -206,6 +204,5 @@ prose:
 
 gems:
   - jekyll-paginate
-
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

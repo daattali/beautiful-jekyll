@@ -1,11 +1,13 @@
 // Dean Attali / Beautiful Jekyll 2016
 
-var main = {
+(function() {
+  var init = function() {
+    initNavBar();
+    initNavLinks();
+    initImages();
+  };
 
-  bigImgEl : null,
-  numImgs : null,
-
-  init : function() {
+  var initNavBar = function() {
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
@@ -14,7 +16,7 @@ var main = {
             $(".navbar").removeClass("top-nav-short");
         }
     });
-    
+
     // On mobile, hide the avatar when expanding the navbar menu
     $('#main-navbar').on('show.bs.collapse', function () {
       $(".navbar").addClass("top-nav-expanded");
@@ -22,7 +24,7 @@ var main = {
     $('#main-navbar').on('hidden.bs.collapse', function () {
       $(".navbar").removeClass("top-nav-expanded");
     });
-	
+
     // On mobile, when clicking on a multi-level navbar menu, show the child links
     $('#main-navbar').on("click", ".navlinks-parent", function(e) {
       var target = e.target;
@@ -34,7 +36,9 @@ var main = {
         }
       });
     });
-    
+  };
+
+  var initNavLinks = function() {
     // Ensure nested navbar menus are not longer than the menu header
     var menus = $(".navlinks-container");
     if (menus.length > 0) {
@@ -60,79 +64,74 @@ var main = {
       });
 
       fakeMenu.remove();
-    }        
-    
-    // show the big header image	
-    main.initImgs();
-  },
-  
-  initImgs : function() {
-    // If the page was large images to randomly select from, choose an image
-    if ($("#header-big-imgs").length > 0) {
-      main.bigImgEl = $("#header-big-imgs");
-      main.numImgs = main.bigImgEl.attr("data-num-img");
-
-          // 2fc73a3a967e97599c9763d05e564189
-	  // set an initial image
-	  var imgInfo = main.getImgInfo();
-	  var src = imgInfo.src;
-	  var desc = imgInfo.desc;
-  	  main.setImg(src, desc);
-  	
-	  // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-  	  var getNextImg = function() {
-	    var imgInfo = main.getImgInfo();
-	    var src = imgInfo.src;
-	    var desc = imgInfo.desc;		  
-	    
-		var prefetchImg = new Image();
-  		prefetchImg.src = src;
-		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
-		
-  		setTimeout(function(){
-                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
-  		  $(".intro-header.big-img").prepend(img);
-  		  setTimeout(function(){ img.css("opacity", "1"); }, 50);
-		  
-		  // after the animation of fading in the new image is done, prefetch the next one
-  		  //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-		  setTimeout(function() {
-		    main.setImg(src, desc);
-			img.remove();
-  			getNextImg();
-		  }, 1000); 
-  		  //});		
-  		}, 6000);
-  	  };
-	  
-	  // If there are multiple images, cycle through them
-	  if (main.numImgs > 1) {
-  	    getNextImg();
-	  }
     }
-  },
-  
-  getImgInfo : function() {
-  	var randNum = Math.floor((Math.random() * main.numImgs) + 1);
-    var src = main.bigImgEl.attr("data-img-src-" + randNum);
-	var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
-	
-	return {
-	  src : src,
-	  desc : desc
-	}
-  },
-  
-  setImg : function(src, desc) {
-	$(".intro-header.big-img").css("background-image", 'url(' + src + ')');
-	if (typeof desc !== typeof undefined && desc !== false) {
-	  $(".img-desc").text(desc).show();
-	} else {
-	  $(".img-desc").hide();  
-	}
-  }
-};
+  };
 
-// 2fc73a3a967e97599c9763d05e564189
+  var initImages = function() {
+    var urls = ($("#header-big-imgs").attr('data-urls') || '');
+    urls = urls.split(',');
 
-document.addEventListener('DOMContentLoaded', main.init);
+    // NO URLS - bail
+    if (!urls || !urls.length) {
+      return;
+    }
+
+    var $bigImg = $(".intro-header.big-img");
+    var currentIndex = -1;
+    var nextImageMillis = 6000;
+
+    var insertImg = function(url) {
+      var $img = $('<div></div>')
+        .addClass('big-img-transition')
+        .addClass('fade-in')
+        .css('background-image', 'url(' + url + ')');
+
+      // add new image over the big img. we will remove it later
+      $bigImg.prepend($img);
+
+      return $img;
+    };
+    var removeImg = function($img) {
+      $img.remove();
+    };
+    var breath = function(fn) {
+      setTimeout(fn, 50);
+    };
+    var fadeInImage = function(url, callback) {
+      var $img = insertImg(url);
+      var imgTransitionMillis = 1000;
+
+      // once the image has faded in remove it
+      setTimeout(function() {
+        // set the big image's url
+        $bigImg.css("background-image", 'url(' + url + ')');
+
+        // give some time for the background to render on the big image
+        breath(function() {
+          removeImg($img);
+          callback();
+        });
+
+      }, imgTransitionMillis);
+    };
+
+
+    var nextImage = function() {
+      currentIndex = (++currentIndex % urls.length);
+      var url = urls[currentIndex]
+      var img = new Image();
+      img.src = url;
+      img.onload = function() {
+        // wait for image to pre load, then fade in the image.
+        fadeInImage(url, function() {
+          setTimeout(nextImage, nextImageMillis);
+        });
+      };
+    };
+
+    nextImage();
+  };
+
+
+  init();
+}());
