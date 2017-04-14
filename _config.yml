@@ -23,7 +23,7 @@ description: Student of Physics, Lover of Pink Floyd
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "home"
+  Home: ""
   About: "about"
   Academic: "academic"
   Non-Academic: "nonacademic"
