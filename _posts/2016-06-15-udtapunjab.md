@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Who's the Gabru?
-subtitle: _Udta Punjab_ is India’s _Requiem for a Dream_.
-
+subtitle: Udta Punjab is India’s Requiem for a Dream.
+tags: movie review, bollywood, politics
 ---
+
+![](https://i.ytimg.com/vi/EJylz_9KYf8/maxresdefault.jpg)
+
 Hello World. It feels nice to be back.
 
 Ever since I have been home after compres in Pilani, the Saturday morning movie has almost become a ritual. Oh how I love Pune, for its cheap movie tickets!
