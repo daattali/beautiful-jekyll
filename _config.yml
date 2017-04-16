@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Aditya Vijaykumar
+title: V ka Blog
 
 # Short description of your site
 description: Student of Physics, Lover of Pink Floyd
@@ -23,7 +23,7 @@ description: Student of Physics, Lover of Pink Floyd
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Blog: ""
   About: "about"
   Academic: "academic"
   Non-Academic: "nonacademic"
