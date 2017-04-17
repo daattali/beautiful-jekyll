@@ -1,16 +1,12 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
+
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Aditya Vijaykumar.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- I was born in **Perinthalmanna, Kerala** in 1995, but have lived in **Pune, Maharashtra** all my life. I am deeply fond of Pune and Kerala and feel a connect to both places.
+- I am currently an undergraduate student at **Birla Institute of technology and Science (BITS), Pilani** pursuing **Physics** and **Mechanical Engineering** as my majors.
+- Physics, specifically aspects of theoretical physics such as General Relativity and Quantum Theory of Fields, interest me quite a bit. Before that I was doing my schooling in Pune. Check my [academic page](https://adivijaykumar.github.io/academic/) for more.
+- I like reading, writing, listening to poetry (very recently), quizzing, and occasionally thinking about art of cinema and music. Check my [non-academic page](https://adivijaykumar.github.io/nonacademic/) for more.
