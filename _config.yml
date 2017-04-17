@@ -60,13 +60,13 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: true
-  facebook: true
-  email: true
-  twitter: true
+  facebook: false
+  email: false
+  twitter: false
   google-plus: false
-  github: true
+  github: false
   reddit: false
-  linkedin: true
+  linkedin: false
   xing: false
   stackoverflow: false
   snapchat: false
