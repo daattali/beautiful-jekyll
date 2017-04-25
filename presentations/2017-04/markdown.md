@@ -116,7 +116,7 @@ We can't do it without them, please take time to thank them!
 
 ---
 
-### .center[Building Modules](https://github.com/RamblingCookieMonster/WritingModules)
+### .center[[Building Modules](https://github.com/RamblingCookieMonster/WritingModules)]
 
 - Re-use helper functions
 
@@ -127,7 +127,7 @@ We can't do it without them, please take time to thank them!
 - Share what you create to the gallery, so we don't continually re-invent the wheel.
 ---
 
-### .center[Community Lightning Demos](https://github.com/devops-collective-inc/summit-materials#community-lightning-demos)
+### .center[[Community Lightning Demos](https://github.com/devops-collective-inc/summit-materials#community-lightning-demos)]
 
 - Some of the best talks at the entire Summit. Another reason why the PowerShell Community is so awesome!
 
