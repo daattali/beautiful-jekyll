@@ -68,9 +68,10 @@ We can't do it without them, please take time to thank them!
 
 ???
 - JEA and Formula One
+	Use Break the glass endpoints / use 5.1 logging to help configure your starter endpoints if your not sure where to get started.
 - Replace PowerShell Script resources with class based resources
 	- Class based resources support versioning and can be installed side by side (quiet release)
-- DSC and Tug Pull Server
+- DSC and Tug Pull Server / Chef or Puppet may be required to ease use
 ---
 
 ### .center[Project Phosphor]
@@ -80,6 +81,8 @@ We can't do it without them, please take time to thank them!
 - JEA Endpoint (Proof of Concept)
 
 - Provides Azure-like GUI for restricted PowerShell commands (front line helpdesk folks)
+
+- Proof of Concept [Phosphor Github Project](https://github.com/PowerShell/Phosphor)
 ---
 
 ### .center[Kerberos Double Hop]
@@ -88,16 +91,21 @@ We can't do it without them, please take time to thank them!
 
 - One of the best sessions at the Summit
 
-- link to the blog posts that show the problem and has code
+- [Original Blog post](https://blogs.technet.microsoft.com/ashleymcglone/2016/08/30/powershell-remoting-kerberos-double-hop-solved-securely/)
+
+- [Session Post](https://blogs.technet.microsoft.com/ashleymcglone/2017/04/12/powershell-remoting-and-kerberos-double-hop-old-problem-new-secure-solution/)
 ---
 
 ### .center[VSCode]
 
-- Extensibility
+- VSCode was all the rage at PSHSummit
 
-- Awesome Debugging
+- Extensibility (Easy to use/create plugins)
+	-	Check out these Plugins (PowerShell, GitLens, Vagrant, Easy Snippet Maker, Theme Plugins, and more!)
 
-- You should use it!
+- Debugging in VSCode is getting much better.  Pipeline debugging, multiple debug configs, Conditional break points and more.
+
+- ### You should use it!
 ---
 
 ### .center[Configuration Management Anti-Patterns]
@@ -106,10 +114,9 @@ We can't do it without them, please take time to thank them!
 
 - Building a repeatable process/toolchain enables Configuration Management
 
-- Provides Azure-like GUI for restricted PowerShell commands (front line helpdesk folks)
 ---
 
-### .center[Building Modules]
+### .center[Building Modules](https://github.com/RamblingCookieMonster/WritingModules)
 
 - Re-use helper functions
 
@@ -120,7 +127,7 @@ We can't do it without them, please take time to thank them!
 - Share what you create to the gallery, so we don't continually re-invent the wheel.
 ---
 
-### .center[Community Lightning Demos]
+### .center[Community Lightning Demos](https://github.com/devops-collective-inc/summit-materials#community-lightning-demos)
 
 - Some of the best talks at the entire Summit. Another reason why the PowerShell Community is so awesome!
 
