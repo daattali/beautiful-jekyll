@@ -66,12 +66,15 @@ We can't do it without them, please take time to thank them!
 
 - PowerShell DSC
 
+-- [DSCEA for reporting](https://blogs.technet.microsoft.com/ralphkyttle/2017/03/21/introducing-dscea/)
+
 ???
 - JEA and Formula One
 	Use Break the glass endpoints / use 5.1 logging to help configure your starter endpoints if your not sure where to get started.
 - Replace PowerShell Script resources with class based resources
 	- Class based resources support versioning and can be installed side by side (quiet release)
 - DSC and Tug Pull Server / Chef or Puppet may be required to ease use
+- DSCEA for reporting
 ---
 
 ### .center[Project Phosphor]
