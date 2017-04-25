@@ -24,16 +24,135 @@ We can't do it without them, please take time to thank them!
 ![Sapien](http://cincypowershell.org/img/sapien.jpeg)
 ---
 
-### .center[PowerShell News]
---
 
-- [vsCode is a first class citizen](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-- [Version 0.11.0 Released](https://github.com/PowerShell/vscode-powershell/blob/master/CHANGELOG.md#0110)
+### .center[Open Spaces 6:30PM - 7:00PM]
 
---
+- Burnout or ???
 
-- [DSC vs GPO](https://blogs.technet.microsoft.com/ashleymcglone/2017/02/27/compare-group-policy-gpo-and-powershell-desired-state-configuration-dsc/)
+- Select which conversation you would like to be a part of
 
+- Where the conversation goes is up to the people that are participating in the conversation
+
+- If you are not actively participating in the conversation, switch to the other Open Space
+---
+
+### .center[Summit Recap]
+
+- What is the PowerShell and DevOps Global Summit?
+
+- Why attend the PowerShell and DevOps Global Summit?
+
+- Community, Community, Community
+
+- DevOps Collective Mentorship Program
+
+???
+- 4 Day gathering of PowerShell Experts and enthusiasts focusing on 300+ level content and technical presentations.
+- Provides an opportunity to discuss patterns and strategies for managing evolving environments
+- Make this your one conference to attend each year. You are here at the meetup so you obviously care about PowerShell and you care about doing automation for your company. Your company should value that!
+- $4500 cost for the summit, travel, lodging and expenses
+- PowerShell is community driven, PowerShell team loves to share what they are working on and solicit our feedback
+	- Open source DSC, documentation, PowerShell and .NET Core
+	- Lunch table/hallway discussions are very valuable to hear what others are working on
+---
+
+### .center[State of the Shell]
+
+- Just Enough Administration (JEA)
+
+- PowerShell on Linux
+
+- SSH is a first class citizen
+
+- PowerShell DSC
+
+???
+- JEA and Formula One
+- Replace PowerShell Script resources with class based resources
+	- Class based resources support versioning and can be installed side by side (quiet release)
+- DSC and Tug Pull Server
+---
+
+### .center[Project Phosphor]
+
+- Auto generate UI/UX from PowerShell
+
+- JEA Endpoint (Proof of Concept)
+
+- Provides Azure-like GUI for restricted PowerShell commands (front line helpdesk folks)
+---
+
+### .center[Kerberos Double Hop]
+
+- Ashley McGlone
+
+- One of the best sessions at the Summit
+
+- link to the blog posts that show the problem and has code
+---
+
+### .center[VSCode]
+
+- Extensibility
+
+- Awesome Debugging
+
+- You should use it!
+---
+
+### .center[Configuration Management Anti-Patterns]
+
+- Release pipeline comes first
+
+- Building a repeatable process/toolchain enables Configuration Management
+
+- Provides Azure-like GUI for restricted PowerShell commands (front line helpdesk folks)
+---
+
+### .center[Building Modules]
+
+- Re-use helper functions
+
+- Share state between functions
+
+- Version your code
+
+- Share what you create to the gallery, so we don't continually re-invent the wheel.
+---
+
+### .center[Community Lightning Demos]
+
+- Some of the best talks at the entire Summit. Another reason why the PowerShell Community is so awesome!
+
+- People are automating their entire environment provisioning from a CMDB (infrastructure as code)
+
+- People like us are sharing what they are working on and sharing it to hundreds of others.
+
+- Share what you are working on, give back to the community.
+---
+
+### .center[DevOps Library Nano Conference]
+
+- Release pipeline comes first
+
+- Building a repeatable process/toolchain enables Configuration Management
+
+- Provides Azure-like GUI for restricted PowerShell commands (front line helpdesk folks)
+---
+
+### .center[PowerShell Saturday]
+
+---
+
+### .center[Future Meeting Dates]
+
+- Tuesday, May 30
+
+- Tuesday, June 20
+
+- Thursday, July 20
+
+- Thursday, August 17
 ---
 
 # Thanks for Coming!
