@@ -65,8 +65,7 @@ We can't do it without them, please take time to thank them!
 - SSH is a first class citizen
 
 - PowerShell DSC
-
--- [DSCEA for reporting](https://blogs.technet.microsoft.com/ralphkyttle/2017/03/21/introducing-dscea/)
+	- [DSCEA for reporting](https://blogs.technet.microsoft.com/ralphkyttle/2017/03/21/introducing-dscea/)
 
 ???
 - JEA and Formula One
