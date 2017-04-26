@@ -110,7 +110,7 @@ We can't do it without them, please take time to thank them!
 - VSCode was all the rage at PSHSummit
 
 - Extensibility (Easy to use/create plugins)
-	-	Check out these Plugins (PowerShell, GitLens, Vagrant, Easy Snippet Maker, Theme Plugins, and more!)
+	-	Check out these Plugins (PowerShell, VIGitLens, Vagrant, Easy Snippet Maker, Settings Sync, Theme Plugins, and more!)
 
 - Debugging in VSCode is getting much better.  Pipeline debugging, multiple debug configs, Conditional break points and more.
 
