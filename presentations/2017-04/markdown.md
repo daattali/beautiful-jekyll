@@ -27,13 +27,20 @@ We can't do it without them, please take time to thank them!
 
 ### .center[Open Spaces 6:30PM - 7:00PM]
 
-- Burnout or ???
-
-- Select which conversation you would like to be a part of
-
+- Whoever comes is the right people
+- Whatever happens is the only thing that could have
+- Whenever it starts is the right time
 - Where the conversation goes is up to the people that are participating in the conversation
-
 - If you are not actively participating in the conversation, switch to the other Open Space
+- When it’s over, it’s over
+---
+
+### .center[Open Spaces 6:30PM - 7:00PM]
+
+### Openspace #1 (front Cafeteria) 
+### - IT burnout
+### Openspace #2 (Stay Put) 
+### - Driving Change in your Organization
 ---
 
 ### .center[Summit Recap]
