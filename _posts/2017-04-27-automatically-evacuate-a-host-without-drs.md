@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Automatically evacuate a host without DRS.
+title: Automatically evacuate a host without DRS
 date: '2017-04-27'
 ---
 Like many other places I believe, our non-prod hosts run on vSphere Standard instead of Enterprise Plus for its lower price. The price is great, but what isn't is that DRS isn't available. Which means every time a host needs to be put in maintenance mode you have to do it the old school way: _manually vmotion all the VMs running on it_.
