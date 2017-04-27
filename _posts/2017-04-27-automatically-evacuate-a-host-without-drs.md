@@ -29,7 +29,7 @@ We could imagine adding a command to place the host in maintenance mode at the e
 
 ## Usage examples
 
-####Evacuate a host automatically with the default values (see above).
+**Evacuate a host automatically with the default values (see above).**
 
 All the live VMs on ESXi-1 will be migrated to other hosts as long as they don't go over 75% CPU/MEM usage and a 9:1 vCPU ratio.
 
@@ -37,7 +37,7 @@ All the live VMs on ESXi-1 will be migrated to other hosts as long as they don't
 Evacuate-VMHost -VMHost (Get-vmhost ESXi-1) -fullyautomated
 ```
 
-####Evacuate a host interactively with the defined values.
+**Evacuate a host interactively with the defined values.**
 
 For every VM a choice will be given to the user including the projected capacity after the migration for every available host with a recommended one.
 
