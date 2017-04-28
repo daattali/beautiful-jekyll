@@ -23,7 +23,7 @@ description: Cambridge University research into mathematical modelling of plant 
 
 # List of links in the navigation bar
 navbar-links:
-  About Us: "aboutme"
+  About Us: "aboutus"
   Interactive:
     - Phytofighter: "http://phytofighter.com/"
     - Webidemics: "http://www.webidemics.com/"
