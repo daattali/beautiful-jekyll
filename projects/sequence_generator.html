@@ -1,0 +1,53 @@
+---
+layout: page
+title: Sequence Generator
+css: "/css/sequence_generator.css"
+---
+A TensorFlow-based LSTM model that can be used to mimic a sequence of any form with a common input/output method for all data types. This implementation uses a modified LSTM class from TensorFlow to output the trained model in a simple text format, making cross-platform usage of the model simpler. Currently, I am working on implementing a simple GUI for training a model and sampling its generated output.
+
+<br><br>
+<h3>Demo: Model Trained on Shakespeare</h3>
+<table>
+  <tr>
+    <th>Options</th>
+    <th>Results</th>
+  </tr>
+  <tr>
+    <td>
+         <form class="sample-form" id="sample-form">
+           <div class="row">
+             <div class="col-xs-6">
+               Sample Type:
+               <select id="sample_type">
+                 <option value="character">Characters</option>
+                 <option value="word">Words</option>
+               </select>
+             </div>
+           </div>
+           <br>
+           <div class="row">
+             <div class="col-xs-6">
+               Sample Size:<input type="number" id="sample_size" name="sample_size" class="form-control input-lg" value="200" placeholder="Sample Size" title="Sample Size">
+             </div>
+           </div>
+           <br>
+           <div class="row">
+             <div class="col-xs-6">
+               Sample Seed:<input type="text" id="sample_seed" name="sample_seed" class="form-control input-lg" value=" " placeholder="Sample Seed" title="Sample Seed">
+             </div>
+           </div>
+           <br>
+           <button type="submit" class="btn btn-lg btn-primary">Sample Model</button>
+         </form>
+    </td>
+    <td valign="top" align="left" class="results">
+      <div id="results">
+        
+      </div>
+    </td>
+</tr>
+</table>
+
+<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type = "text/javascript" src = "/js/models.js"></script>
+<script type = "text/javascript" src = "/js/sequence_generator.js"></script>
