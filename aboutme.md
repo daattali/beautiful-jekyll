@@ -1,16 +1,20 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why I am who I am
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Bartosz Radzyński. Currently I'm a student at AGH UST, and president of KN BIT scientific club. I've made this website about me because I can.
+Here are some things i like doing:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Breaking my computer 
+- Breaking my smartphone
+- Breaking my bike
+- Simply breaking stuff
+- Reading how to break stuff
+- Fixing what i broke
 
-What else do you need?
 
-### my history
+### Want to know something more?
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Write an email or something to me, maybe I will answer ;).
