@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Blue Zone IT
-subtitle: Growing Strong Businesses
+subtitle: What Are You Looking For? 
 ---
 
-What do you need?  We offer the following services:
+### Services:
+
+We offer the following services to support and grow your business and company.  
 
 - Project Management
 - Talent Acquisition
@@ -13,14 +15,16 @@ What do you need?  We offer the following services:
 
 ### Projects
 
+We have worked on a number of projects and services.  
+
 -  iAppraisal.com
 -  OneCup.org 
 
 ### Contact
 
-[Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/)
+You can contact us or consult directly or you can contract through any of the major freelance sites. 
 
-[Remote ](https://remote.com/janet-astwood) 
-
-[Upwork ](https://www.upwork.com/freelancers/~014b27088d2e859ce3)
+- [Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/)
+- [Remote ](https://remote.com/janet-astwood) 
+- [Upwork ](https://www.upwork.com/freelancers/~014b27088d2e859ce3)
 
