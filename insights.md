@@ -2,7 +2,7 @@
 layout: page
 title: Blue Zone IT
 subtitle: Insights 
-use-site-title: false
+use-site-title: true
 bigimg:
     - "/img/big-imgs/dragons.jpg" : "Sant Jordi, 2017"
     - "/img/big-imgs/penguin.jpg" : "Beaches, 2017"
