@@ -23,6 +23,7 @@ description: Growing Stronger Businesses
 
 # List of links in the navigation bar
 navbar-links:
+  Home: ""
   Insights: "insights"
   About: "aboutme"
   Resources:
