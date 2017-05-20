@@ -49,7 +49,7 @@ author:
   twitter: jlpsd   # eg. daattali
   # reddit: yourname    # eg. daattali
   google-plus: +jlastwood   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
+  linkedin: janet-astwood-3bb5b39  # eg. daattali
   # xing: yourname      # eg. daattali
   # stackoverflow: yourlink  # eg. "3943160/daattali"
   # snapchat: yourname  # eg. daattali
@@ -60,18 +60,18 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
   twitter: true
-  google-plus: false
+  google-plus: true
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
-  instagram: false
+  instagram: true
   youtube: false
   spotify: false
   telephone: false
@@ -115,7 +115,7 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 3
 
 kramdown:
   input: GFM
