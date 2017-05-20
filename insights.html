@@ -10,6 +10,12 @@ bigimg:
 tag: random
 ---
 
+## Blog Posts
+
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+{% endfor %}
+
  <article class="post-preview">
     <a href="/jlastwood.github.io/2015-02-26-flake-it-till-you-make-it/">
 	  <h2 class="post-title">Flake it till you make it</h2>
