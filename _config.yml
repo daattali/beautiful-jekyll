@@ -25,6 +25,7 @@ description: Growing Stronger Businesses
 navbar-links:
   Home: ""
   Insights: "blog"
+  Testing: "insights"
   About: "aboutme"
   Resources:
     - Project Management: "https://www.projectmanagement.com/"
