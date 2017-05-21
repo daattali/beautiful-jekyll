@@ -4,26 +4,24 @@ title: Blue Zone IT
 subtitle: Insights 
 use-site-title: true
 bigimg:
-    - "/img/big-imgs/dragons.jpg" : "Sant Jordi, 2017"
-    - "/img/big-imgs/penguin.jpg" : "Beaches, 2017"
-    - "/img/big-imgs/flowers.jpg" : "Flowers, 2017"
+    - "https://c1.staticflickr.com/3/2889/12842840854_1021db97e6.jpg" : "The Thinking Bull, Barcelona, 2012"
+    - "https://c1.staticflickr.com/4/3759/12843118594_b27583e3a7.jpg" : "Laborinth Park, Barcelona, 2012"
 tag: random
 ---
 
-
+ 
 ## Featured Article
 
  <article class="post-preview">
-    <a href="/jlastwood.github.io/2015-02-26-flake-it-till-you-make-it/">
-	  <h2 class="post-title">Flake it till you make it</h2>
+    <a href="/jlastwood.github.io/2015-02-26-GettingStarted/">
+	  <h2 class="post-title">Where to start your project</h2>
     </a>
 
     <div class="post-entry-container">
       <div class="post-entry">
-        Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
-        
-        
-          <a href="/jlastwood.github.io/2015-02-26-flake-it-till-you-make-it/" class="post-read-more">[Read&nbsp;More]</a>
+        Getting your project underway is a big task.  Here is a checklist to get your started.
+             
+          <a href="/jlastwood.github.io/2015-02-26-GettingStarted/" class="post-read-more">[Read&nbsp;More]</a>
         
       </div>
     </div>
