@@ -4,6 +4,8 @@ title: Project Management Software
 subtitle:  Selecting collaboration and Project Management Software for your next project
 tags: [tools, Trello]
 category: software
+bigimg:
+- "/img/big-imgs/dragons.jpg" : "Sant Jordi, 2017"
 ---
 ￼
 ￼A good project manager plans in order to understand the work to be accomplished.   
