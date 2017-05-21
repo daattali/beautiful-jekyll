@@ -31,3 +31,6 @@ You can contact us or consult directly or you can contract through any of the ma
 - [Remote ](https://remote.com/janet-astwood) 
 - [Upwork ](https://www.upwork.com/freelancers/~014b27088d2e859ce3)
 
+#### More about the Founder
+
+[Janet Astwood, Founder ](https://www.bluezoneit.com/aboutjanet)
