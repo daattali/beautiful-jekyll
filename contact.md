@@ -7,27 +7,12 @@ subtitle: How Can We Help You?
 ### Services
 
 - Project Management
-- Talent Acquisition
-- English Editing/Proofreading
 - Business Process Consulting
+- English Editing/Proofreading
+- Quality Assurance/Testing
 
 
 ### Contact Us Today!
-
-<form id="contactform" method="POST">
-Your name:<br>
-<input type="text" name="name" size="30" placeholder="Name"> 
-<br>
-User email:<br>
-<input type="email" name="_replyto" size="30" placeholder="Email"> 
-<br>
-What can we help you with?:<br>
-<textarea name="message" placeholder="Message" cols="30"></textarea> 
-<input type="text" name="_gotcha" style="display:none" />
-<input type="hidden" name="_subject" value="Website contact" />
-<br>
-<input type="submit" value="Send">:
-</form>
 
 <script>
     var contactform =  document.getElementById('contactform');
@@ -35,11 +20,11 @@ What can we help you with?:<br>
 </script>
 
 <div class="container">
-
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<form class="well form-horizontal" action=" " method="post"  id="contactform">
 <fieldset>
-
-<!-- Form Name -->
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_subject" value="Website contact" />
+<!-- Form Name --> 
 <legend>Contact Us Today!</legend>
 
 <!-- Text input-->
@@ -67,12 +52,13 @@ What can we help you with?:<br>
 </div>
 
 <!-- Text input-->
-       <div class="form-group">
+  <div class="form-group">
   <label class="col-md-4 control-label">E-Mail</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+  <input name="_replyto" placeholder="E-Mail Address" class="form-control"  type="text">
+  _replyto
     </div>
   </div>
 </div>
@@ -103,31 +89,6 @@ What can we help you with?:<br>
 </div>
 
 <!-- Text input-->
- 
-<div class="form-group">
-  <label class="col-md-4 control-label">City</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="city" placeholder="city" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-
-<!-- Text input-->
-
-<div class="form-group">
-  <label class="col-md-4 control-label">Zip Code</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
-    </div>
-</div>
-</div>
-
-<!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label">Website or domain name</label>  
    <div class="col-md-4 inputGroupContainer">
@@ -140,7 +101,7 @@ What can we help you with?:<br>
 
 <!-- radio checks -->
  <div class="form-group">
-                        <label class="col-md-4 control-label">Do you have hosting?</label>
+                        <label class="col-md-4 control-label">Do you have a project started?</label>
                         <div class="col-md-4">
                             <div class="radio">
                                 <label>
@@ -154,8 +115,6 @@ What can we help you with?:<br>
                             </div>
                         </div>
                     </div>
-
-<!-- Text area -->
   
 <div class="form-group">
   <label class="col-md-4 control-label">Project Description</label>
@@ -181,4 +140,4 @@ What can we help you with?:<br>
 </fieldset>
 </form>
 </div>
-    </div><!-- /.container -->
+</div><!-- /.container -->
