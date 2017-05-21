@@ -16,6 +16,10 @@ She went on to work in the private sector first with a publishing company, then 
 Janet is married and has two children, currently ages 24 and 28 living in Canada.  Celeste is studying pharmacy
 and Washington is a welder with the Ironworkers.  
 
+### Other Interests
+
+Enjoys the outdoors, see her flickr site.  This includes hiking, camping, skiing, skating.   Also enjoys reading and cooking.  
+
 ### Location
 
 Digital nomad, however her home base is currently Barcelona, Spain.  She spends considerable time in Oakville
