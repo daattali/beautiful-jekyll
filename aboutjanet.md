@@ -6,10 +6,11 @@ subtitle: About the Founder Janet Astwood
 
 ### Early Education
 
-Born in a small town, Leamington, Tomato Capital of Canada.  
-Graduated from St. Clair College, Windsor, Ontario in 1982 with a diploma of Business/Data Processing.
-Her first job was with the Federal Government as a mainframe programmer. 
-She went on to work in the private sector first with a publishing company, then an American newspaper company and finally worked at a Canadian Financial Institution.  She continuously held positions with increasing responsibility and scope.
+Born in a small town, Leamington, Tomato Capital of Canada.  Graduated from St. Clair College, Windsor, Ontario in 1982 with a diploma of Business/Data Processing. Her first job was with the Federal Government as a mainframe programmer.  She went on to work in the private sector first with a publishing company, then an American newspaper company and finally worked at a Canadian Financial Institution.  She continuously held positions with increasing responsibility and scope.
+
+### Freelance Career
+
+She started her .... with Aspen Butler, then Mortgage Executive, Elance, consulting.
 
 ### Family
 
