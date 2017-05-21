@@ -4,8 +4,10 @@ title: First Post - Using Jekyll
 subtitle: My experience setting up this blog.
 category:  training
 tags:  [website, training]
-bigimg: /img/path.jpg
 img: /img/avatar-icon.png
+use-site-title: true
+bigimg:
+    - "/img/big-imgs/dragons.jpg" : "Sant Jordi, 2017"
 ---
 
 My first post is about my experience learning Jekyll and Markdown.   I started this expedition by
