@@ -4,7 +4,7 @@ title: Blue Zone IT
 subtitle: How Can We Help You? 
 ---
 
-### Services
+### Services 
 
 - Project Management
 - Business Process Consulting
@@ -14,8 +14,6 @@ subtitle: How Can We Help You?
 
 ### Contact Us Today!
  
-
-
 <div class="container">
 <form class="well form-horizontal" action=" " method="post"  id="contactform">
 
@@ -46,29 +44,14 @@ subtitle: How Can We Help You?
   <input name="_replyto" placeholder="E-Mail Address" class="form-control"  type="text">
     </div>
   </div>
-</div>
-
- 
-<!-- Text input-->
-       
+</div> 
+<!-- Text input-->     
 <div class="form-group">
   <label class="col-md-4 control-label">Phone #</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
   <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-    </div>
-  </div>
-</div>
-
-<!-- Text input-->
-      
-<div class="form-group">
-  <label class="col-md-4 control-label">Address</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-  <input name="address" placeholder="Address" class="form-control" type="text">
     </div>
   </div>
 </div>
@@ -112,7 +95,9 @@ subtitle: How Can We Help You?
 </div>
 
 <!-- Success message -->
-<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+<div class="alert alert-success" role="alert" id="success_message">
+Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.
+</div>
 
 <!-- Button -->
 <div class="form-group">
@@ -125,7 +110,6 @@ subtitle: How Can We Help You?
 </fieldset>
 </form>
 </div>
-</div><!-- /.container -->
 
 <script>
     var contactform =  document.getElementById('contactform');
