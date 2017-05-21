@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Project Management Tools
+title: Project Management Software
+subtitle:  Selecting collaboration and Project Management Software for your next project
 tags: [tools, Trello]
 category: software
 ---
