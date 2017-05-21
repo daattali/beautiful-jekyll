@@ -15,7 +15,7 @@ She started her .... with Aspen Butler, then Mortgage Executive, Elance, consult
 ### Family
 
 Janet is married and has two children, currently ages 24 and 28 living in Canada.  Celeste is studying pharmacy
-and Washington is a welder with the Ironworkers.  
+and Washington is a welder with the Ironworkers.  Janet's husband, Pau is a principal investigator with IDIBAPS in Barcelona.
 
 ### Other Interests
 
@@ -32,7 +32,7 @@ Her native language is English, however she can read/write at an intermediate le
 
 ### Contact
 
-You can contact us or consult directly or you can contract through any of the major freelance sites. 
+You can contact her directly or you can contract through any of the major freelance sites. 
 
 - [Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/)
 - [Remote ](https://remote.com/janet-astwood) 
