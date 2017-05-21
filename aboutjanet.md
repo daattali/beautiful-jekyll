@@ -23,7 +23,11 @@ and Washington is a welder with the Ironworkers.  Janet's husband, Pau is a prin
 
 ### Other Interests
 
-Enjoys the outdoors, see her flickr site.  This includes hiking, camping, skiing, skating.   Also enjoys reading and cooking.  
+Enjoys the outdoors. This includes hiking, camping, skiing, skating.   Also enjoys reading and cooking and taking photos.
+You can check out her photos on flickr, she now has more then 15,000 and growing.  
+
+Cooking: Karlos
+Reading: Smashwords, the public library
 
 ### Location
 
