@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 425 225" xmlns="http://www.w3.org/2000/svg">
+<title>Model for Iterative Development</title>
+<desc>A simple diagram showing model for iterative development</desc>
+<rect width="425" height="225" fill="#ffd"/>
+<g stroke-width="12" stroke-linecap="round" fill="none">
+<path stroke="#d00" d="M125 90a70 70 0 0 1 70 -70"/>
+<path stroke="#0d0" d="M225 20a70 70 0 0 1 70 70"/>
+<path stroke="#00d" d="M295 125a70 70 0 0 1 -70 70"/>
+<path stroke="#d80" d="M195 195a70 70 0 0 1 -70 -70"/>
+<path stroke="#d08" d="M20 25a80 80 0 0 0 80 80"/>
+<path stroke="#80d" d="M320 125a80 80 0 0 0 80 80"/>
+</g>
+<path fill="#d00" d="m209 20l-28.8-18v36l28.8-18"/>
+<path fill="#0d0" d="m295 104l18-28.8h-36l18 28.8"/>
+<path fill="#00d" d="m211 195l28.8 18v-36l-28.8 18"/>
+<path fill="#d80" d="m125 111l-18 28.8h36l-18-28.8"/>
+<path fill="#d08" d="m114 105l-28.8-18v36l28.8-18"/>
+<path fill="#80d" d="m414 205l-28.8-18v36l28.8-18"/>
+<g font-family="Liberation Sans, Arial" font-size="14" fill="#80a">
+<text x="14" y="111">Initial</text>
+<text x="14" y="126">Planning</text>
+<text x="119" y="65" text-anchor="end">Planning</text>
+<text x="50" y="25">Requirements</text>
+<text x="270" y="24">Analysis &amp; Design</text>
+<text x="308" y="70">Implementation</text>
+<text x="333" y="130">Deployment</text>
+<text x="265" y="205">Testing</text>
+<text x="60" y="185">Evaluation</text>
+</g>
+</svg>
