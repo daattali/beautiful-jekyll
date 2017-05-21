@@ -382,14 +382,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: #008AFF;
+  color: #689bc4;
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: #008AFF;
+  color: #689bc4;
   background-color: #CCC;
 }
 
