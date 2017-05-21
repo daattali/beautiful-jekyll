@@ -24,9 +24,9 @@ description: Growing Stronger Businesses
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Blog: "blog"
   Insights: "insights"
   About: "aboutme"
+  Blog: "blog"
   Contact: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -35,7 +35,7 @@ avatar: "/img/BlueZoneIT-square.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: /img/LogoWide.png
+title-img: /img/logo-transparent.png
 
 # --- Footer options --- #
 
@@ -61,13 +61,13 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: true
-  facebook: true
+  facebook: false
   email: true
   twitter: true
-  google-plus: true
+  google-plus: false
   github: true
   reddit: false
-  linkedin: true
+  linkedin: false
   xing: false
   stackoverflow: false
   snapchat: false
