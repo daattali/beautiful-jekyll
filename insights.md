@@ -9,12 +9,9 @@ bigimg:
 tag: random
 ---
 
- 
-## Featured Article
-
  <article class="post-preview">
     <a href="/jlastwood.github.io/2015-02-26-GettingStarted/">
-	  <h2 class="post-title">Where to start your project</h2>
+	  <h2 class="post-title">Ready to start your next project?</h2>
     </a>
 
     <div class="post-entry-container">
@@ -28,7 +25,7 @@ tag: random
 
    </article>
  
-## Other News
+## Other Project Management News
 
 {% for post in site.tags.tools  %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
