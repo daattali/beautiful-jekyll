@@ -6,6 +6,13 @@ use-site-title: true
 bigimg:
     - "/img/big-imgs/dragons.jpg" : "Sant Jordi, 2017"
 ---
+
+{% for post in site.posts %}	
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . 
+	    <a href="{{ post.url }}"></a></small></p>			
+{% endfor %}	
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
