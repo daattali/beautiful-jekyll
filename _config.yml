@@ -35,7 +35,7 @@ avatar: "/img/BlueZoneIT-square.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: /img/logo-transparent.png
+title-img: /img/drawsvg.svg
 
 # --- Footer options --- #
 
