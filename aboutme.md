@@ -6,7 +6,7 @@ bigimg:
 - "https://c1.staticflickr.com/8/7419/12842613453_f0890c6808.jpg" : "Torre de Collserola, Barcelona, 2012"
 ---
 
-### Services:
+### Services
 
 We offer the following services to support and grow your business and company.  
 
