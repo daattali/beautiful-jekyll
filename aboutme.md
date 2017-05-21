@@ -9,9 +9,10 @@ subtitle: What Are You Looking For?
 We offer the following services to support and grow your business and company.  
 
 - Project Management
+- Business Process Consulting
 - Talent Acquisition
 - Editing/Proofreading
-- Business Process Consulting
+
 
 ### Projects
 
