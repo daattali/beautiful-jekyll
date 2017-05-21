@@ -2,6 +2,8 @@
 layout: page
 title: Blue Zone IT
 subtitle: How Can We Help You? 
+bigimg:
+- "https://c1.staticflickr.com/3/2891/12843138015_326a6ebbbb.jpg" : "Ice Storm, Dec 22nd, 2012"
 ---
 
 ### Services 
@@ -10,7 +12,6 @@ subtitle: How Can We Help You?
 - Business Process Consulting
 - English Editing/Proofreading
 - Quality Assurance/Testing
-
 
 ### Contact Us Today!
  
@@ -21,7 +22,7 @@ subtitle: How Can We Help You?
 <input type="text" name="_gotcha" style="display:none" />
 <input type="hidden" name="_subject" value="Website contact" />
 <!-- Form Name --> 
-<legend>Contact Us Today!</legend>
+<legend>Tell us what you need and we will return you call shortly!</legend>
 
 <!-- Text input-->
 
@@ -69,7 +70,7 @@ subtitle: How Can We Help You?
 
 <!-- radio checks -->
  <div class="form-group">
-                        <label class="col-md-4 control-label">Do you have a project started?</label>
+                        <label class="col-md-4 control-label">Are you ready to start your project now?</label>
                         <div class="col-md-4">
                             <div class="radio">
                                 <label>
