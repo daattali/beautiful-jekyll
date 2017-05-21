@@ -3,9 +3,9 @@ layout: page
 title: Blue Zone IT
 subtitle: About the Founder Janet Astwood
 bigimg:
-- "https://c1.staticflickr.com/4/3715/9545490960_8c80f76edc_z.jpg" : "where is this"
-- "https://c1.staticflickr.com/8/7393/9673812177_0c92d5d7e3.jpg" : "Skiing, Banff National Park"
-- "https://c1.staticflickr.com/1/777/33271145621_9f687ee805.jpg" : "Hiking, Monterrat, 2016"
+- "https://c1.staticflickr.com/4/3715/9545490960_8c80f76edc_z.jpg" : "At Work, Southam, Inc. Toronto, 1996"
+- "https://c1.staticflickr.com/8/7393/9673812177_0c92d5d7e3.jpg" : "Skiing, Banff National Park, Banff, Alberta, 1998"
+- "https://c1.staticflickr.com/1/777/33271145621_9f687ee805.jpg" : "Hiking, Monterrat, Spain, 2016"
 ---
 
 ### Early Education
@@ -14,7 +14,7 @@ Born and raised in a small town, Leamington, Tomato Capital of Canada.  Graduate
 
 ### Freelance Career
 
-She started her .... with Aspen Butler, then Mortgage Executive, Elance, consulting.
+She started her freelance carreer with Appen Butler as a web search evaluator and quickly moved on to other opportunities with  Mortgage Executive Inc., Elance as a Certified Project Consultant working on large client accounts such as Unilever and consulting for small businesses.   Her focus is to provide excellent service at the right price.   
 
 ### Family
 
@@ -26,8 +26,8 @@ and Washington is a welder with the Ironworkers.  Janet's husband, Pau is a prin
 Enjoys the outdoors. This includes hiking, camping, skiing, skating.   Also enjoys reading and cooking and taking photos.
 You can check out her photos on flickr, she now has more then 15,000 and growing.  
 
-Cooking: Karlos
-Reading: Smashwords, the public library
+- Cooking: Karlos
+- Reading: Smashwords, the public library
 
 ### Location
 
@@ -46,7 +46,9 @@ You can contact her directly or you can contract through any of the major freela
 - [Remote ](https://remote.com/janet-astwood) 
 - [Upwork ](https://www.upwork.com/freelancers/~014b27088d2e859ce3)
 
-  <div class="container beautiful-jekyll-footer">
+### Social Media 
+
+<div class="container beautiful-jekyll-footer">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
