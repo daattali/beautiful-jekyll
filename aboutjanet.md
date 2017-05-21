@@ -2,11 +2,15 @@
 layout: page
 title: Blue Zone IT
 subtitle: About the Founder Janet Astwood
+bigimg:
+- "https://c1.staticflickr.com/4/3715/9545490960_8c80f76edc_z.jpg" : "where is this"
+- "https://c1.staticflickr.com/8/7393/9673812177_0c92d5d7e3.jpg" : "Skiing, Banff National Park"
+- "https://c1.staticflickr.com/1/777/33271145621_9f687ee805.jpg" : "Hiking, Monterrat, 2016"
 ---
 
 ### Early Education
 
-Born in a small town, Leamington, Tomato Capital of Canada.  Graduated from St. Clair College, Windsor, Ontario in 1982 with a diploma of Business/Data Processing. Her first job was with the Federal Government as a mainframe programmer.  She went on to work in the private sector first with a publishing company, then an American newspaper company and finally worked at a Canadian Financial Institution.  She continuously held positions with increasing responsibility and scope.
+Born and raised in a small town, Leamington, Tomato Capital of Canada.  Graduated from St. Clair College, Windsor, Ontario in 1982 with a diploma of Business/Data Processing. Her first job was with the Federal Government as a mainframe programmer.  She went on to work in the private sector first with a publishing company, then an American newspaper company and finally worked at a Canadian Financial Institution.  She continuously held positions with increasing responsibility and scope.
 
 ### Freelance Career
 
@@ -40,9 +44,9 @@ You can contact her directly or you can contract through any of the major freela
 
   <div class="container beautiful-jekyll-footer">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
-          
+           
           <li>
             <a href="https://www.facebook.com/jlastwood" title="Facebook">
               <span class="fa-stack fa-lg" aria-hidden="true">
@@ -122,9 +126,7 @@ You can contact her directly or you can contract through any of the major freela
               <span class="sr-only">Instagram</span>
             </a>
           </li>
-          
-      
-      
+               
       
 		  
           <li>
