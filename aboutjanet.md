@@ -10,11 +10,11 @@ bigimg:
 
 ### Early Education
 
-Born and raised in a small town, Leamington, Tomato Capital of Canada.  Graduated from St. Clair College, Windsor, Ontario in 1982 with a diploma of Business/Data Processing. Her first job was with the Federal Government as a mainframe programmer.  She went on to work in the private sector first with a publishing company, then an American newspaper company and finally worked at a Canadian Financial Institution.  She continuously held positions with increasing responsibility and scope.
+Born and raised in a small town, Leamington, Ontario, the Tomato Capital of Canada.  She graduated from St. Clair College, Windsor, Ontario in 1982 with a diploma of Business/Data Processing. Her first job was with the Federal Government as a mainframe programmer.  She went on to work in the private sector first with a publishing company, followed by several years with an American startup newspaper company and finally worked at a Canadian Financial Institution.  She continuously held positions with increasing responsibility and scope.
 
 ### Freelance Career
 
-She started her freelance career with Appen Butler as a web search evaluator and quickly moved on to other opportunities with  Mortgage Executive Inc., Elance as a Certified Project Consultant working on large client accounts such as Unilever and consulting for small businesses.   Her focus is to provide excellent service at the right price.   
+She started her freelance career with Appen Butler as a web search evaluator and quickly moved on to other opportunities with  Mortgage Executive Inc., Elance as a Certified Project Consultant working on large client accounts such as Unilever and providing IT and business process consulting for small businesses.   Her focus is on providing excellent service at the right price.   
 
 ### Family
 
@@ -47,7 +47,7 @@ You can download a copy of her CV and Portfolio here in PDF format.
 
 ### Contact
 
-You can contact her directly or you can contract through any of the major freelance sites. 
+You can contact her directly or through any of the major freelance sites. 
 
 - [Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/)
 - [Remote ](https://remote.com/janet-astwood) 
@@ -104,16 +104,7 @@ You can contact her directly or you can contract through any of the major freela
             </a>
           </li>
           
-		  
-          <li>
-            <a href="/cdn-cgi/l/email-protection#65060a0b1104061125070910001f0a0b000c114b060a08" title="Email me">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">Email me</span>
-            </a>
-          </li>
+		 
           
 		  
           <li>
