@@ -2,7 +2,7 @@
 layout: post
 title: Project Management 
 subtitle:  Getting Your Project Stated - Initiation Process
-tags: [proceses]
+tags: [process]
 category: process
 bigimg:
 - "/img/gantt-chart-excel-templates-2010.jpg" : "Sample of Gantt Chart Template"
@@ -26,10 +26,10 @@ from the client.    In 5-7 business days, the Project Manager will have the proj
 ### What the PM will deliver in the first week
 
 * Charter
- * Scope of the project:  What is to be done?
- * Resource plan:  Who are the team members or if staffing needs to be done
- * Communication plan:   How will team members communicate, how often, how often will project status reports be deliverd to the client.
- * Constraints, Assumptions and Risks:  What is the budget, are there important time constraints or regulatory requirements
+ - Scope of the project:  What is to be done?
+ - Resource plan:  Who are the team members or if staffing needs to be done
+ - Communication plan:   How will team members communicate, how often, how often will project status reports be deliverd to the client.
+ - Constraints, Assumptions and Risks:  What is the budget, are there important time constraints or regulatory requirements
 * Business Case (optional)
  
 We are now ready to start the project.  Watch out now, things should happen fast if the planning and the team are communicating
