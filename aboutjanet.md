@@ -34,9 +34,16 @@ You can check out her photos on flickr, she now has more then 15,000 and growing
 Digital nomad, however her home base is currently Barcelona, Spain.  She spends considerable time in Oakville
 where she also maintains a residence. 
 
-### Languages
+### Certifications, Languages and Awards
 
-Her native language is English, however she can read/write at an intermediate level in Catalan and Spanish.
+Her native language is English, however she can read/write at an intermediate level in Catalan and Spanish.  She completed PMP and has ITIL Foundations and Service Management V2 Certifications.   
+
+### CV and Portfolio
+
+You can download a copy of her CV and Portfolio here in PDF format.  
+
+- [CV 2017](/pdf/JA-CV2017.pdf/)
+- [Portfolio Presentation 2017](/pdf/JA-portfolioversion2017.pdf/)
 
 ### Contact
 
