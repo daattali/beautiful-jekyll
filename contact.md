@@ -17,7 +17,7 @@ bigimg:
 
 ### Contact Us Today!
  
-<div class="container">
+<div class="container-fluid">
 <form class="well form-horizontal" action=" " method="post"  id="contactform">
 
 <fieldset>
