@@ -14,7 +14,7 @@ Born and raised in a small town, Leamington, Tomato Capital of Canada.  Graduate
 
 ### Freelance Career
 
-She started her freelance carreer with Appen Butler as a web search evaluator and quickly moved on to other opportunities with  Mortgage Executive Inc., Elance as a Certified Project Consultant working on large client accounts such as Unilever and consulting for small businesses.   Her focus is to provide excellent service at the right price.   
+She started her freelance career with Appen Butler as a web search evaluator and quickly moved on to other opportunities with  Mortgage Executive Inc., Elance as a Certified Project Consultant working on large client accounts such as Unilever and consulting for small businesses.   Her focus is to provide excellent service at the right price.   
 
 ### Family
 
