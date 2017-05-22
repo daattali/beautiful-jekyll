@@ -9,21 +9,20 @@ bigimg:
 ---
 ￼
 ￼The following article covers what will happen once you onboard the Project Manager.  This is the initiation and planning phases
-of the project.  This includes establishing what is going to get done, what is the budget,getting the team and 
-vendors onboard and establishing they key deliverables.   We will also setup the communication and Project Management tools 
-at this time.  
+of the project.  This includes establishing what is going to get done, what is the budget, getting the team and 
+vendors onboard and establishing the objectives and key deliverables.   We will also setup the communication and Project Management communication and collaboration tools.  
 
 The Project Manager will send a questionnaire to the client, plus have 1 or 2 meetings to gather information about the project
-from the client.    In 5-7 business days, the Project Manager will have the project initiated and we are ready to start work.
+from the client.    In 5-7 business days, the Project Manager will have the project initiated and once you approve, we are ready to start work.
 
-### What the client needs to provide
+### The client needs to provide
 
 * Provide names of any team members that you want us to use
 * Brand book, your ideas for logos, fonts, colors for your site or marketing
 * Any designs, ideas or graphics you have in mind
 * Inspiration sites.  Have you seen this done somewhere else.  What do you like or not like about their ideas.
 
-### What the PM will deliver in the first week
+### The PM will deliver 
 
 * Charter
  - Scope of the project:  What is to be done?
@@ -31,6 +30,7 @@ from the client.    In 5-7 business days, the Project Manager will have the proj
  - Communication plan:   How will team members communicate, how often, how often will project status reports be deliverd to the client.
  - Constraints, Assumptions and Risks:  What is the budget, are there important time constraints or regulatory requirements
 * Business Case (optional)
- 
-We are now ready to start the project.  Watch out now, things should happen fast if the planning and the team are communicating
-effectively to the goal line. 
+* Financial Plan:  Overview of budget and planned costs
+  
+We are ready to start the project.  Watch out now, things will happen fast now that planning is complete and the 
+project manager is communicating, monitoring and mentoring the teams. 
