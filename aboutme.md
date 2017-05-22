@@ -20,17 +20,18 @@ We offer the following services to support and grow your business and company.
 
 We have worked on a number of projects and services with great people.  The following are some of our favourites. 
 
--  [iAppraisal.com](https://www.iappraisal.com/) Personalized agent websites with direct mail marketing.
--  [Onecup.Org](https://www.onecup.org){:target="_blank"} Woocommerce and Woosubscriptions ecommerce site.
+-  [iAppraisal.com](http://www.iappraisal.com/){:target="_blank"} Personalized agent websites with direct mail marketing.
+-  [Onecup.Org](https://onecup.org){:target="_blank"} Woocommerce and Woosubscriptions ecommerce site.
 
 ### Contact
 
 You can contact us or consult directly or you can contract through any of the major freelance sites. 
 
-- [Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/)
-- [Remote ](https://remote.com/janet-astwood) 
-- [Upwork ](https://www.upwork.com/freelancers/~014b27088d2e859ce3)
+- [Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/){:target="_blank"}
+- [Remote ](https://remote.com/janet-astwood){:target="_blank"}
+- [Upwork ](https://www.upwork.com/freelancers/~014b27088d2e859ce3){:target="_blank"}
 
-#### More about the Founder
 
-[Janet Astwood, Founder ](https://www.bluezoneit.com/aboutjanet)
+### Meet the Founder
+
+[Janet Astwood](https://www.bluezoneit.com/aboutjanet)
