@@ -7,6 +7,13 @@ bigimg:
 - "https://c1.staticflickr.com/8/7419/12842613453_f0890c6808.jpg" : "Torre de Collserola, Barcelona, 2012"
 ---
 
+### About
+
+Blue Zone IT was founded by Janet Astwood to provide IT consulting services to the global community.  Our motto is "Building 
+Stronger Businesses".  The blue pumpkin, our symbol, is a native plant of North America now grown around the world.  Like pumpkins, Blue Zone IT, is versatile, able to adapt to any challenge, and hardy, capable of adapting in difficult conditions.
+
+We looking forward to working with you.  
+
 ### Services
 
 We offer the following services to support and grow your business and company.  
