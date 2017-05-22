@@ -22,7 +22,8 @@ bigimg:
 <input type="text" name="_gotcha" style="display:none" />
 <input type="hidden" name="_subject" value="Website contact" />
 <!-- Form Name --> 
-<legend>Tell us what you need and we will return you call shortly!</legend>
+<H3>Contact Us </H3> 
+<H4>Tell us what you need and we will return you call shortly!</H4>
 
 <!-- Text input-->
 
