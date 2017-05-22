@@ -3,6 +3,8 @@ layout: page
 title: Blue Zone IT
 subtitle: How Can We Help You? 
 bigimg:
+- "img/wordcloud.png" : "Wordcloud PNG"
+- "img/wordcloud.svg" : "Wordcloud SVG"
 - "https://c1.staticflickr.com/3/2891/12843138015_326a6ebbbb.jpg" : "Ice Storm, Dec 22nd, 2012"
 ---
 
