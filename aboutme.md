@@ -10,7 +10,7 @@ bigimg:
 ### About
 
 Blue Zone IT was founded by Janet Astwood to provide IT consulting services to the global community.  Our motto is "Growing 
-Strong Businesses".  The blue pumpkin, our symbol, is a native plant of North America now grown around the world.  Like pumpkins, Blue Zone IT, is versatile, able to adapt to any challenge, and hardy, capable of adapting in difficult conditions.
+Strong Businesses".  The blue pumpkin, our symbol, is a native plant of North America now grown around the world.  Like pumpkins Blue Zone IT is versatile, able to adapt to any challenge, and hardy, capable of adapting in difficult conditions.
 
 We are looking forward to working with you.  
 
