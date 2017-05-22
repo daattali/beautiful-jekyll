@@ -3,6 +3,7 @@ layout: page
 title: Blue Zone IT
 subtitle: What Are You Looking For? 
 bigimg:
+- "img/wordcloud.svg : "Word Cloud, CV, 2017"
 - "https://c1.staticflickr.com/8/7419/12842613453_f0890c6808.jpg" : "Torre de Collserola, Barcelona, 2012"
 ---
 
