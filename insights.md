@@ -9,16 +9,18 @@ bigimg:
 tag: random
 ---
 
- <article class="post-preview">
-    <a href="/jlastwood.github.io/2015-02-26-GettingStarted/">
+   <article class="post-preview">
+    <a href="/jlastwood.github.io/2017-05-03-GettingStarted/">
 	  <h2 class="post-title">Ready to start your next project?</h2>
     </a>
 
     <div class="post-entry-container">
       <div class="post-entry">
-        Getting your project underway is a big task.  Here is a checklist to get your started.
+        Ready to get started?  
+	Getting your project underway is a big task.  Here is a checklist to get you started plus an outline
+	of what the Project Manager will deliver in the first week of your project.  
              
-          <a href="/jlastwood.github.io/2015-02-26-GettingStarted/" class="post-read-more">[Read&nbsp;More]</a>
+          <a href="/jlastwood.github.io/2017-05-03-GettingStarted/" class="post-read-more">[Read&nbsp;More]</a>
         
       </div>
     </div>
