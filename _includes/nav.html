@@ -41,7 +41,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
+	      <img class="avatar-img" src="{{ page.image | prepend: site.url-pretty | replace: '//', '/' }}" />
 		</a>
 	  </div>
 	</div>
@@ -49,7 +49,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
 	    <a href="{{ site.url }} ">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
+	      <img class="avatar-img" src="{{ site.avatar | prepend: site.url-pretty | replace: '//', '/' }}" />
 		</a>
 	  </div>
 	</div>
