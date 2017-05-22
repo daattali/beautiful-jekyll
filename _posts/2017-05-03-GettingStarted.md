@@ -10,9 +10,9 @@ bigimg:
 ￼
 The initiation and planning phases
 of the project begin as soon as you hire your project manager.   This includes establishing what is going to get done, what is the budget, getting the team and 
-vendors onboard and establishing the objectives and key deliverables.  He will also setup the communication and Project Management communication and collaboration tools.  
+vendors onboard, establishing the objectives and key deliverables and setup the communication and Project Management  collaboration tools.  
 
-The Project Manager will send a questionnaire to the client, plus have 1 or 2 meetings to gather information about the project.    In 5-7 business days, the Project Manager will have the project initiated and once you approve, we are ready to start work.
+The Project Manager will send a questionnaire to the client, plus have 1 or 2 meetings to gather information about the project.    In 5 to 7 business days the Project Manager will have the project initiated ready for your approval.  Once you approve, we hit the ground running and are ready to start work.
 
 ### The client needs to provide
 
@@ -21,7 +21,7 @@ The Project Manager will send a questionnaire to the client, plus have 1 or 2 me
 * Any designs, ideas or graphics you have in mind
 * Inspiration sites.  Have you seen this done somewhere else.  What do you like or not like about their ideas.
 
-### The PM will deliver 
+### The PM will deliver to the client
 
 * Charter
   * Scope of the project:  What is to be done?
@@ -33,7 +33,9 @@ The Project Manager will send a questionnaire to the client, plus have 1 or 2 me
 
 ### The Communication Board
 
-We have a sample Trello board or excel sheet template to setup your project.   
+We have a sample Trello board or excel sheet template to setup your project.   We will setup slack, skype, google groups to communicate as per your instructions.  
+
+### Next Step, Execution
   
 We are ready to start the project.  Watch out now, things will happen fast now that planning is complete and the 
 project manager is communicating, monitoring and mentoring the teams. 
