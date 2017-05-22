@@ -33,7 +33,7 @@ I wanted to have a contact form.  This is really easy in Wordpress, but alas the
 
 Finally images and logos for the header.  These need to be formatted correctly, sometimes with transparency.  I finally settled on [Drawsvg](http://drawsvg.org/) to do this.  I also found out that I do not need to copy images from flickr, but instead can link to them in my blog using bigimg tag.  
 
-My conclusion is this is a great tool/service but not for the faint of heart.  Without knowledge of bootstrap/CSS I think you will be disappointed.  
+My conclusion is this is a great tool/service but not for the faint of heart or technical novice.   Without knowledge of bootstrap/CSS I think you will be disappointed.  
 
 #### Other topics to add to this article
 
