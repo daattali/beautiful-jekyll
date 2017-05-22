@@ -3,7 +3,7 @@ layout: page
 title: Blue Zone IT
 subtitle: What Are You Looking For? 
 bigimg:
-- "img/wordcloud.svg : "Word Cloud, CV, 2017"
+- "img/wordcloud.svg" : "Word Cloud, CV, 2017"
 - "https://c1.staticflickr.com/8/7419/12842613453_f0890c6808.jpg" : "Torre de Collserola, Barcelona, 2012"
 ---
 
@@ -26,7 +26,7 @@ We have worked on a number of projects and services with great people.  The foll
 
 ### Contact
 
-You can contact us or consult directly or you can contract through any of the major freelance sites. 
+You can contact us directly or contract through any of the major freelance sites. 
 
 - [Linked In](https://www.linkedin.com/in/janet-astwood-3bb5b39/){:target="_blank"}
 - [Remote ](https://remote.com/janet-astwood){:target="_blank"}
