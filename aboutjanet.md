@@ -120,9 +120,7 @@ You can contact her directly or you can contract through any of the major freela
           </li>
           
 		  
-		  
-      
-      
+
           <li>
             <a href="https://www.instagram.com/jlpsd" title="Instagram">
               <span class="fa-stack fa-lg" aria-hidden="true">
@@ -133,18 +131,27 @@ You can contact her directly or you can contract through any of the major freela
             </a>
           </li>
                
-      
-		  
-          <li>
-            <a href="/feed.xml" title="RSS">
+              <li>
+            <a href="https://flickr.com/photos/97258517@N07/" title="Flickr">
               <span class="fa-stack fa-lg" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
               </span>
-              <span class="sr-only">RSS</span>
+              <span class="sr-only">Instagram</span>
             </a>
           </li>
-          
+               
+	            <li>
+            <a href="https://jlastwood.wordpress.com" title="Wordpress Blog">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+               	  
+    
         </ul>
 
 
