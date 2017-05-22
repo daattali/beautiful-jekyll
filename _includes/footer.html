@@ -23,7 +23,7 @@
               </span>
               <span class="sr-only">GitHub</span>
             </a>
-          </li>
+          </li> 
           {% endif %}
 		  {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
@@ -176,8 +176,10 @@
 
 		  {% if site.url-pretty %}
 		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+		  <a href="http://{{ site.url-pretty }}">{{ site.url-pretty }}</a>
 		  {% endif %}
+		  &nbsp;&bull;&nbsp;
+		  version {{ site.myversion }}
 	    </p>
 	        <!-- Please don't remove this, keep my open source work credited :) -->
 		<p class="theme-by text-muted">

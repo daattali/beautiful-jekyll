@@ -1,72 +1,28 @@
 ---
 layout: page
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+title: Blue Zone IT
+subtitle: Growing Strong Businesses
 use-site-title: true
+bigimg:
+    - "https://c1.staticflickr.com/3/2933/14314879606_207abb52ea_z.jpg" : "Hospital de Sant Pau and Santa Creu, Barcelona, 2016"
+tag:  random
 ---
-
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-    </div>
-
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
-
-   </article>
-  {% endfor %}
+<div class="row">
+  <div class="col-md-4">
+    <h2>IT Project Management       </h2>
+    <p>Every project large and small can benefit from a dedicated project manager.  
+      Project managers lead and motivate, are proactive and deal with continuous challenges
+      that faced during a project. </p>
+  </div>
+  <div class="col-md-5">
+    <h2>Business Process Consulting</h2>
+    <p>We provide analysis and advice on how to improve propductivity in your organization.  
+        There are lots of ways to improve processes. A great process is easy to understand, makes sense
+        and is supported and complemented by your tools. </p>
+ </div>
+  <div class="col-md-3">
+    <h2>Other Consulting</h2>
+    <p>We are here to help you with talent aquisition, proofreading, Quality Assurance or general business consulting</p>
+  </div>
 </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
