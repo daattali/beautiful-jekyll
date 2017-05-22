@@ -25,6 +25,10 @@ and Washington is a welder with the Ironworkers.  Janet's husband, Pau is a prin
 
 She enjoys the outdoors. This includes hiking, camping, skiing, skating.   Also enjoys reading and cooking and taking photos. You can check out her photos on flickr, she now has more then 15,000 and growing.  
 
+### Experience
+
+She has more than 30 years experience in development, administration and operations. 
+
 ### Location
 
 Digital nomad, however her home base is currently Barcelona, Spain.  She spends considerable time in Oakville
