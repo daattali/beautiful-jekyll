@@ -21,13 +21,13 @@ with no other incurred costs, only my time.
 ### Following the lead
 
 I followed the sample below and choose a theme which creates a simple page with no header and footer and then started to add features to it, like a nice header, footer and formatting.    I finally decided that was going to take too long so I forked a copy of beautiful-jekyll and started from a template that had a lot of the features I wanted already built in. 
-[Setting up your website}](https://medium.freecodecamp.com/an-illustrated-guide-for-setting-up-your-website-using-github-cloudflare-5a7a11ca9465) and
+[Setting up your website](https://medium.freecodecamp.com/an-illustrated-guide-for-setting-up-your-website-using-github-cloudflare-5a7a11ca9465) and
 [Github pages](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
 
 ### Blogs and Pagination
 
 This one still gets me, as soon as I moved my blog from the main page it stopped working.   Why does a page with pagination have to be called index.html. I did not really want pagingations for my posts but what I did want was to be able to filter posts.  Finally figured out how to do that and  I will come back later and figure out if I need pagination.  My insights pages filters posts with tags.  
-https://jekyllrb.com/docs/pagination/
+[Pagination Rules](https://jekyllrb.com/docs/pagination/)
 
 ### You need to learn Markdown language
 
@@ -46,6 +46,10 @@ I wanted to have a contact form.  This is really easy in Wordpress, but alas the
 ### Don't forget about images and logos
 
 Finally images and logos for the header.  These need to be formatted correctly, sometimes with transparency.  I finally settled on [Drawsvg](http://drawsvg.org/) to do this.  I also found out that I do not need to copy images from flickr, but instead can link to them in my blog using bigimg tag.  
+
+### Template Beautiful Jekyll
+
+Many thanks to [Dean Attali](http://deanattali.com/beautiful-jekyll/) for Beautiful Jekyll.  It was a big step in the right direction with responsive pages and nice looking header and footers.  I do have some issues however, the header and footer seem to link to project website instead of the pretty name, and the documentation was lacking.   Also, I am not sure why you don't setup sitemap as a default.  There are little things missing, but overall it was a big help.  
 
 ### Summary
 
