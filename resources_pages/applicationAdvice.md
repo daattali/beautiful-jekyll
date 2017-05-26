@@ -43,7 +43,6 @@ This will eliminate any unanswered questions the committee might have about your
 As another example, if you have some particularly poor grades but there is a noteworthy reason for your performance, you should explain it. 
 The explanation doesn't erase the grade but it creates a clearer picture of you as an applicant than an unexplained low grade. 
 
+#### Disclaimer
 
-
- 
-
+Please note that following these suggestions does not guarantee admission into the MDS program. We receive a large number of applications and our admissions process is highly competitive. Also, because of the high volume of applications we are unable to provide specific feedback to unsuccessful applicants.
