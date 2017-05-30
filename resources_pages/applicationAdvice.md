@@ -24,6 +24,7 @@ A strong Letter of Intent possesses the following qualities:
 - it is well-written and does not contain typos or grammatical errors.
 - it uses reasonable margins and font sizes, and adheres to the maximum length guidelines.
 
+
 #### 3. References
 
 Letters of reference should help the admissions committee to get a complete understanding of a candidate. 
