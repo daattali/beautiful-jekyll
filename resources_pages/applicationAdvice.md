@@ -1,4 +1,8 @@
-## Tips for applying to the MDS program
+---
+layout: page
+title: MDS Application Tips
+
+---
 
 The following tips are meant to help prospective students prepare strong applications to the MDS program.
 
