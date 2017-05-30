@@ -4,7 +4,7 @@ title: Application Tips
 
 ---
 
-The following tips are meant to help prospective students prepare strong applications to the MDS program.
+The following tips are meant to help prospective students prepare strong applications to the UBC MDS program.
 
 #### 1. Understand the program
 
