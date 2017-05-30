@@ -1,6 +1,6 @@
 ---
 layout: page
-title: MDS Application Tips
+title: Application Tips
 
 ---
 
