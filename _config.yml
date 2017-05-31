@@ -46,8 +46,8 @@ author:
   name: Some Person
   email: "youremail@domain.com"
   facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
+  github: BlockchainBuffalo    # eg. daattali
+  twitter: BlockchainBLO   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   linkedin: yourname  # eg. daattali
@@ -62,8 +62,8 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: true
-  email: true
+  facebook: false
+  email: false
   twitter: true
   google-plus: false
   github: true
