@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Generate a random password in Powershell
 ---
 I recently needed to generate random password for an PowerCLI automation project. However, although there is a Get-Random cmdlet, it is limited to generate random numbers. Not good enough for a password, so I decided to write my own.
