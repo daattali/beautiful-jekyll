@@ -3,14 +3,14 @@ layout: post
 published: false
 title: Generate a random password in Powershell
 ---
-I recently needed to generate random password for an PowerCLI automation project. However, although there is a Get-Random cmdlet, it is limited to generate random number. But is not good enough for a password, so I decided to write my own.
+I recently needed to generate random password for an PowerCLI automation project. However, although there is a Get-Random cmdlet, it is limited to generate random numbers. Not good enough for a password, so I decided to write my own.
 
-This functio allows you to choose what types of character to use for the password, the number of characters and optionally what characters NOT to use.
+This function allows you to choose what types of characters to use, the number of characters and optionally what characters NOT to use.
 
-Why do I want to exclude characters? Usually (especially in a script) I want to exclude the characters used by Powershell for formatting like " ' $ { [ |  
+Why do I want to exclude characters? Sometimes (especially in a script) I want to exclude the characters used by Powershell for formatting like " ' $ { [ |  
 Sometimes it will save the day, sometimes it won't make a difference, but I like to be on the safe side.
 
-I put a top limit of 30 characters just because I wanted a low limit of 6 and I needed a number. But if you need to create a 50 characters passowrd (you need Jesus) you can just change the validaterange.
+I put a top limit of 30 characters just because I wanted a low limit of 6 and I needed a number, but if you need to create a 50 characters passowrd (you need Jesus) you can just change the validaterange or the parameter.
 
 ## Usage
 
@@ -32,7 +32,7 @@ New-RandomPassword -length 6 -lowercase -numbers
 
 ## Script
 
-You can find the ps1 here on Github.
+You can find the ps1 [here on Github](https://github.com/vxav/Scripting/blob/master/New-RandomPassword.ps1).
 
 ```Powershell
 Function New-RandomPassword {
