@@ -89,8 +89,6 @@ In scikit-image we can perform the I/O opertions as shown below.
 
 But, before that let's import the necessary libraries to support the above I/O operations. 
 
-
-
 ```python
 # imports
 
@@ -103,19 +101,10 @@ img = imread('golden-gateway-bridge.jpeg')
 plt.imshow(img)
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x98c7fb00>
-
-
-
-
-![png](output_1_1.png)
+![png](img/output_1_1.png)
 
 
 Skimage also contains others features such as saving an image, reading an image collection and much more. 
-
 
 ```python
 # saving an image
@@ -127,17 +116,11 @@ imsave('image-name.jpg', img) # img - image matrix
 
 Image numpy ndarrays can be represented either by integers (signed or un-signed) or floating point values. 
 
-
 ```python
 img.dtype
 ```
 
-
-
-
     dtype('uint8')
-
-
 
 The image is of **integer** type. 
 
@@ -153,17 +136,11 @@ Rows: 2323
 Columns: 3484  
 Channels: 3  
 
-
 ```python
 img.shape
 ```
 
-
-
-
     (2323L, 3484L, 3L)
-
-
 
 Skimage also supports conversion of images from one colorspace to other. 
 
@@ -178,7 +155,6 @@ The list below shows only the frequently used colorspace convertions.
     
 Let's look at the implementations for the above convertions. 
 
-
 ```python
 from skimage.color import rgb2gray, rgb2hsv, hsv2rgb
 
@@ -189,16 +165,7 @@ rgb_to_hsv = rgb2hsv(img)
 plt.imshow(rgb_to_hsv)
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x992194e0>
-
-
-
-
 ![png](output_9_1.png)
-
 
 
 ```python
@@ -209,16 +176,7 @@ rgb_to_gray = rgb2gray(img)
 plt.imshow(rgb_to_gray, cmap='gray')
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x9e576908>
-
-
-
-
 ![png](output_10_1.png)
-
 
 
 ```python
@@ -228,14 +186,6 @@ hsv_to_rgb = hsv2rgb(rgb_to_hsv)
 
 plt.imshow(hsv_to_rgb)
 ```
-
-
-
-
-    <matplotlib.image.AxesImage at 0x9e215cf8>
-
-
-
 
 ![png](output_11_1.png)
 
@@ -255,7 +205,6 @@ Neighbourhood pixels will be chosen in the form of a structuring element such as
 
 Example for local filters is shown below: 
 
-
 ```python
 from skimage.filters import sobel
 
@@ -264,21 +213,12 @@ sobel_img = sobel(rgb_to_gray)
 plt.imshow(sobel_img)
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x9dfe3208>
-
-
-
-
 ![png](output_13_1.png)
 
 
 **Non-Local Filters**
 
 Non-local filters use a large region of the image to transform the value of one pixel. 
-
 
 ```python
 from skimage import exposure
@@ -289,14 +229,6 @@ img_equalized = exposure.equalize_hist(img_to_gray)
 
 plt.imshow(img_equalized, cmap='gray')
 ```
-
-
-
-
-    <matplotlib.image.AxesImage at 0x9918e828>
-
-
-
 
 ![png](output_15_1.png)
 
@@ -312,8 +244,6 @@ Most common mathematical morphological methods are:
 The purpose of dilation is to expand a particular shape in the image by making use of a structural element. This is usually applied to binary images. 
 
 
-
-
 ```python
 from skimage.data import coins
 from skimage.filters import threshold_otsu
@@ -327,31 +257,13 @@ mask = coins > seg
 plt.imshow(mask, cmap='gray')
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x9ecb5550>
-
-
-
-
 ![png](output_17_1.png)
-
-
 
 ```python
 dilated_img = dilation(mask, selem=disk(4))
 
 plt.imshow(dilated_img, cmap='gray')
 ```
-
-
-
-
-    <matplotlib.image.AxesImage at 0x9ebc4908>
-
-
-
 
 ![png](output_18_1.png)
 
@@ -362,25 +274,13 @@ The difference between the above two images, shows how dilation works.
 
 The purpose of erosion is to erode away the boundaries of regions of foreground pixels. Thus areas of foreground pixels shrink in size. 
 
-
-
 ```python
 from skimage.morphology import erosion
 
 plt.imshow(mask, cmap='gray')
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x9ee9d208>
-
-
-
-
 ![png](output_21_1.png)
-
-
 
 ```python
 eroded_img = erosion(mask, selem=disk(4))
@@ -388,16 +288,7 @@ eroded_img = erosion(mask, selem=disk(4))
 plt.imshow(eroded_img, cmap='gray')
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0x995dbcc0>
-
-
-
-
 ![png](output_22_1.png)
-
 
 Erosion process eroded the white pixels in the above images. 
 
@@ -411,7 +302,6 @@ Few image segmentation techniques:
 
 The Otsu method is a simple heuristic to find the threshold to seperate the foreground from the background, to understand different components in the image. 
 
-
 ```python
 from skimage.data import coins
 from skimage.filters import threshold_otsu
@@ -424,21 +314,11 @@ mask = coins > seg
 plt.imshow(mask, cmap='gray')
 ```
 
-
-
-
-    <matplotlib.image.AxesImage at 0xd3cbff98>
-
-
-
-
 ![png](output_25_1.png)
-
 
 **Label connected components**
 
 This step is taken into consideration when there is a need to seperate or label the discrete components that were created after thresholding. 
-
 
 ```python
 from skimage.morphology import label
@@ -447,15 +327,6 @@ all_labels = label(mask)
 
 plt.imshow(all_labels)
 ```
-
-
-
-
-    <matplotlib.image.AxesImage at 0xd35a6780>
-
-
-
-
 ![png](output_27_1.png)
 
 
