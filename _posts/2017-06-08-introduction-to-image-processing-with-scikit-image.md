@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Proceesing
+title: Image Processing
 date: 2017-06-08 16:47:14 +0530
 categories: image_processing
 tags: [image_processing]
@@ -8,7 +8,8 @@ bigimg:
   - /img/combined_golden_gate.jpeg
 ---
 
-# Introduction to Image Processing with Scikit-Image
+# Introduction to Image Processing in Scikit-Image  
+
 
 #### TLDR;
 
@@ -20,20 +21,23 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Image_processing),
 
 > In **computer graphics**, images are manually made from physical models of objects, environments, and lighting, instead of being acquired (via imaging devices such as cameras) from natural scenes, as in most animated movies. 
 
-> In **computer vision**, on the other hand, is often considered high-level image processing out of which a machine/computer/software intends to decipher the physical contents of an image or a sequence of images (e.g., videos or 3D full-body magnetic resonance scans).
+> In **computer vision**, on the other hand, is often considered high-level image processing out of which a machine/computer/software intends to decipher the physical contents of an image or a sequence of images (e.g., videos or 3D full-body magnetic resonance scans).  
+
 
 
 ### What is an image?
 
-There are two ways to look at an image. 
+There are two ways to look at an image.  
+
 
 1. Human's Perspective
-2. Computer's Perspective
+2. Computer's Perspective  
 
 
-#### 1. Human's Perspective
+#### 1. Human's Perspective  
 
-##### How do we perceive an image?
+
+##### How do we perceive an image?  
 
 According to [kenrockwell](http://www.kenrockwell.com/tech/how-we-see.htm),
 
@@ -45,9 +49,11 @@ According to [kenrockwell](http://www.kenrockwell.com/tech/how-we-see.htm),
 
 >Our brains form images based on pattern recognition. We don't see images; our eyes see line and motion, our brains interpret that to attempt to recognize to what sort of thing those lines and motion might represent, and then our brains seamlessly cause us to perceive whatever that object might be.
 
-#### 2. Computer's Perspective
+#### 2. Computer's Perspective  
 
-##### How does a Computer perceive an image?
+
+##### How does a Computer perceive an image?  
+
 
 For a computer an image is nothing but a bunch of numbers, but in a particular structure. Either a 2D or a 3D matrix of numbers. 
 
@@ -81,6 +87,7 @@ c. **Mathematical Morphology**
     2. **Erosion**
 4. **Image Segmentation**  
 
+
 ### 1. Input/Output operations and datatype
 
 The first and the foremost step in any image processing pipeline is to read the image(s). 
@@ -101,7 +108,7 @@ img = imread('golden-gateway-bridge.jpeg')
 plt.imshow(img)
 ```
 
-![png](img/output_1_1.png)
+![png](img/ip_1.png)
 
 
 Skimage also contains others features such as saving an image, reading an image collection and much more. 
@@ -112,7 +119,7 @@ Skimage also contains others features such as saving an image, reading an image 
 imsave('image-name.jpg', img) # img - image matrix
 ```
 
-** Image data types**
+**Image data types**
 
 Image numpy ndarrays can be represented either by integers (signed or un-signed) or floating point values. 
 
@@ -144,7 +151,7 @@ img.shape
 
 Skimage also supports conversion of images from one colorspace to other. 
 
-The list below shows only the frequently used colorspace convertions. 
+The list below shows only the frequently used colorspace conversions. 
 
 1. **rgb2hsv**  
     The is used to convert from RGB to HSV space. 
@@ -153,7 +160,7 @@ The list below shows only the frequently used colorspace convertions.
 3. **hsv2rgb**  
     This is used to convert from HSV to RGB space.
     
-Let's look at the implementations for the above convertions. 
+Let's look at the implementations for the above conversions. 
 
 ```python
 from skimage.color import rgb2gray, rgb2hsv, hsv2rgb
@@ -335,8 +342,3 @@ This was just an introduction to basic image processing techniques, for more in-
 1. [PyImageSearch](http://www.pyimagesearch.com)
 2. [Scikit-Image](http://scikit-image.org/)
 3. [Robert Fisher](http://homepages.inf.ed.ac.uk/rbf/HIPR2/)
-
-
-```python
-
-```
