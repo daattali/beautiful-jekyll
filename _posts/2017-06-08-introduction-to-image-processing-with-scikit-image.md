@@ -11,7 +11,7 @@ bigimg:
 # Introduction to Image Processing in Scikit-Image  
 
 
-#### TLDR;
+#### TL;DR
 
 **Image Processing** is the process of applying mathematical functions or operations to an image, in order to transform it according to the problem requirements. 
 
@@ -108,7 +108,7 @@ img = imread('golden-gateway-bridge.jpeg')
 plt.imshow(img)
 ```
 
-![png](img/ip_1.png)
+![png](/img/output_1_1.png)
 
 
 Skimage also contains others features such as saving an image, reading an image collection and much more. 
@@ -172,7 +172,7 @@ rgb_to_hsv = rgb2hsv(img)
 plt.imshow(rgb_to_hsv)
 ```
 
-![png](output_9_1.png)
+![png](/img/output_9_1.png)
 
 
 ```python
@@ -183,7 +183,7 @@ rgb_to_gray = rgb2gray(img)
 plt.imshow(rgb_to_gray, cmap='gray')
 ```
 
-![png](output_10_1.png)
+![png](/img/output_10_1.png)
 
 
 ```python
@@ -194,7 +194,7 @@ hsv_to_rgb = hsv2rgb(rgb_to_hsv)
 plt.imshow(hsv_to_rgb)
 ```
 
-![png](output_11_1.png)
+![png](/img/output_11_1.png)
 
 
 ### 3. Image Preprocessing
@@ -220,7 +220,7 @@ sobel_img = sobel(rgb_to_gray)
 plt.imshow(sobel_img)
 ```
 
-![png](output_13_1.png)
+![png](/img/output_13_1.png)
 
 
 **Non-Local Filters**
@@ -237,7 +237,7 @@ img_equalized = exposure.equalize_hist(img_to_gray)
 plt.imshow(img_equalized, cmap='gray')
 ```
 
-![png](output_15_1.png)
+![png](/img/output_15_1.png)
 
 
 **Mathematical morphology**
@@ -264,7 +264,7 @@ mask = coins > seg
 plt.imshow(mask, cmap='gray')
 ```
 
-![png](output_17_1.png)
+![png](/img/output_17_1.png)
 
 ```python
 dilated_img = dilation(mask, selem=disk(4))
@@ -272,7 +272,7 @@ dilated_img = dilation(mask, selem=disk(4))
 plt.imshow(dilated_img, cmap='gray')
 ```
 
-![png](output_18_1.png)
+![png](/img/output_18_1.png)
 
 
 The difference between the above two images, shows how dilation works. 
@@ -287,7 +287,7 @@ from skimage.morphology import erosion
 plt.imshow(mask, cmap='gray')
 ```
 
-![png](output_21_1.png)
+![png](/img/output_21_1.png)
 
 ```python
 eroded_img = erosion(mask, selem=disk(4))
@@ -295,7 +295,7 @@ eroded_img = erosion(mask, selem=disk(4))
 plt.imshow(eroded_img, cmap='gray')
 ```
 
-![png](output_22_1.png)
+![png](/img/output_22_1.png)
 
 Erosion process eroded the white pixels in the above images. 
 
@@ -321,7 +321,7 @@ mask = coins > seg
 plt.imshow(mask, cmap='gray')
 ```
 
-![png](output_25_1.png)
+![png](/img/output_25_1.png)
 
 **Label connected components**
 
@@ -334,7 +334,7 @@ all_labels = label(mask)
 
 plt.imshow(all_labels)
 ```
-![png](output_27_1.png)
+![png](/img/output_27_1.png)
 
 
 This was just an introduction to basic image processing techniques, for more in-depth information refer to the below mentioned resources. 
