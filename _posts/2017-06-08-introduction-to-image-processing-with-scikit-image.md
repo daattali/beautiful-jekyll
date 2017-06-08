@@ -5,7 +5,7 @@ date: 2017-06-08 16:47:14 +0530
 categories: image_processing
 tags: [image_processing]
 bigimg: 
-  - /img/multiclass-5.png
+  - /img/combined_golden_gate.jpeg
 ---
 
 # Introduction to Image Processing with Scikit-Image
