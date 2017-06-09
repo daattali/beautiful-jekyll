@@ -50,7 +50,7 @@ author:
   twitter: alsogoesbyV   # eg. daattali
 #  reddit: yourname    # eg. daattali
   google-plus: +AdityaVijaykumar   # eg. +DeanAttali or 109424658772469020925
-  linkedin: aditya-vijaykumar-352a497b  # eg. daattali
+#  linkedin: aditya-vijaykumar-352a497b  # eg. daattali
 #  xing: yourname      # eg. daattali
 #  stackoverflow: yourlink  # eg. "3943160/daattali"
 #  snapchat: yourname  # eg. daattali
@@ -68,7 +68,7 @@ footer-links-active:
   google-plus: false
   github: true
   reddit: false
-  linkedin: true
+  linkedin: false
   xing: false
   stackoverflow: false
   snapchat: false
