@@ -12,4 +12,6 @@ My name is Aditya Vijaykumar.
 
 - Physics, specifically aspects of theoretical physics such as General Relativity and Quantum Theory of Fields, interest me quite a bit. Check my [academic page](https://adivijaykumar.github.io/academic/) for more.
 
+- Starting July, I will working as a project student at the Centre for High Energy Physics (CHEP) of the Indian Institute of Science (IISc), Bengaluru. This is a part of my Masters' thesis on some aspects of quantum gravity.
+
 - I like reading, writing, listening to poetry (very recently), quizzing, and occasionally thinking about art of cinema and music. Check my [non-academic page](https://adivijaykumar.github.io/nonacademic/) for more.
