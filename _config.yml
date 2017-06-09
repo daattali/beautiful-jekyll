@@ -50,7 +50,7 @@ author:
   twitter: alsogoesbyV   # eg. daattali
 #  reddit: yourname    # eg. daattali
   google-plus: +AdityaVijaykumar   # eg. +DeanAttali or 109424658772469020925
-#  linkedin: aditya-vijaykumar-352a497b  # eg. daattali
+  linkedin: aditya-vijaykumar-352a497b  # eg. daattali
 #  xing: yourname      # eg. daattali
 #  stackoverflow: yourlink  # eg. "3943160/daattali"
 #  snapchat: yourname  # eg. daattali
@@ -82,7 +82,7 @@ share-links-active:
   twitter: true
   facebook: true
   google: false
-  linkedin: false
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
