@@ -7,10 +7,10 @@ I recently needed to generate random password for an PowerCLI automation project
 
 This function allows you to choose what types of characters to use, the number of characters and optionally what characters NOT to use.
 
-Why do I want to exclude characters? Sometimes (especially in a script) I want to exclude the characters used by Powershell for formatting like " ' $ { [ |  
+Why do I want to exclude characters? Sometimes (especially in a script) I want to exclude the characters used by Powershell for formatting like " ' $ { [ |  or the characters that look alike Il| O0 ...
 Sometimes it will save the day, sometimes it won't make a difference, but I like to be on the safe side.
 
-I put a top limit of 30 characters just because I wanted a low limit of 6 and I needed a number, but if you need to create a 50 characters passowrd (you need Jesus) you can just change the validaterange or the parameter.
+I put a top limit of 30 characters just because I wanted a low limit of 6 and I needed a number, but if you need to create a 50 characters password (you need Jesus) you can just change the validaterange of the parameter $length.
 
 ## Usage
 
