@@ -1,0 +1,1 @@
+My resume can be found [here](https://github.com/adivijaykumar/resume/blob/master/main.pdf).
