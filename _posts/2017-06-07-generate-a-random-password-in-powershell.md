@@ -25,7 +25,7 @@ New-RandomPassword -length 30 -uppercase -lowercase -numbers -special -excludedc
 Generate a basic 12 characters password with lowercase and numbers. Here you don't need to specify the length as 12 is default.
 
 ```Powershell
-New-RandomPassword -length 6 -lowercase -numbers
+New-RandomPassword -lowercase -numbers
 
 4cp54hme5sbj
 ```
