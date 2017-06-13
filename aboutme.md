@@ -4,12 +4,11 @@ title: About me
 subtitle: i'm an energetic procrastinator, fiddler of tools analog and digital, and enjoy the battle of learning
 ---
 
-### my history
+### my history  
 
-The basic bio thread is as follows:  
 - Like most Canadians, I grew up loving hockey  
-- Hockey allowed me to study at a tremendous college (go [Ephs!](https://www.williams.edu/)  
-- That was where I met my amazing wife (preordained? [she](http://collegehockeystats.net/0506/teamstats/wilw) and [I](http://collegehockeystats.net/0506/teamstats/wilm) both wore number 10. Note that her PIM > my PIM...)  
+- Hockey allowed me to study at a tremendous college (go [Ephs!](https://www.williams.edu/))  
+- That was where I met my amazing wife (fate?... [she](http://collegehockeystats.net/0506/teamstats/wilw) and [I](http://collegehockeystats.net/0506/teamstats/wilm) both wore number 10... note her PIM > my PIM)  
 - After graduating from college we started our careers teaching in a few boarding schools. Dr. Burch and [her program](http://www.berkshireschool.org/academics/signature-programs/) at Berkshire School remains a huge inspiration in how I envision integrating real science with science education  
 - I wanted to know more about science so I signed up for a Ph.D program, starting with Vaughn Cooper's [lab](http://micropopbio.org/), and am currently completing my dissertation research in Jeff Foster's [lab](http://fozlab.weebly.com/)  
 - I'm interested in science and education; one tool integrating those themes is this website sharing what I've discovered, so here we are.  
