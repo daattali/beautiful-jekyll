@@ -7,7 +7,7 @@ meta-title: "learn|do|teach science"
 meta-description: "one persons education in traversing paths in science"
 ---
 
-# What are you doing here?
+ What are you doing here?
 
 I've grouped this site into three big items:  
 
