@@ -1,3 +1,1 @@
-# you ought to update this with an explanation of what's going on
-
-Using markdown - yeah!
+this is the repository for [devonorourke.github.io](devonorourke.github.io)
