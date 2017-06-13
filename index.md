@@ -1,8 +1,8 @@
 ---
 layout: page
-title: this is what you changed
-subtitle: learn|do|teach science
+title: learn|do|teach science
+subtitle: making molehills out of mountains
 css: "/css/index.css"
-meta-title: "making molehills out of mountains"
+meta-title: "learn|do|teach science"
 meta-description: "making inroads to help everyone access more science"
 ---
