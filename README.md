@@ -1,1 +1,1 @@
-this is the repository for [devonorourke.github.io](devonorourke.github.io)
+this is the repository for [devonorourke.github.io](github.com/devonorourke.github.io)
