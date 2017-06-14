@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-crawlertitle: "How to use jekyll"
-summary: "Jekyll default page"
+title:  "change title"
+crawlertitle: "you can change things"
+summary: "change is okay sometimes"
 date:   2016-06-28 23:09:47 +0700
 categories: posts
-tags: 'jekyll'
-author: redVi
+tags: 'one fish'
+author: devonorourke
 ---
 
 boom goes the dynamite.  
