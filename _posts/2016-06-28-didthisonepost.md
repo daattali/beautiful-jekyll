@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "The first post is the hardest..."
-crawlertitle: "because you had no idea what you were doing"
-date:   2017-06-13
+title:  "Welcome to Jekyll!"
+crawlertitle: "How to use jekyll"
+summary: "Jekyll default page"
+date:   2016-06-28 23:09:47 +0700
 categories: posts
-tags: 'blog', 'ramblings'
-author: devonorourke
+tags: 'jekyll'
+author: redVi
 ---
 
 boom goes the dynamite.  
