@@ -3,7 +3,7 @@ layout: post
 title:  "change title"
 crawlertitle: "you can change things"
 summary: "change is okay sometimes"
-date:   does this matter
+date:   2016-06-28
 categories: posts
 tags: 'yep_you_did_it'
 author: devonorourke
