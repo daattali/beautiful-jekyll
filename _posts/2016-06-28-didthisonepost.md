@@ -3,9 +3,9 @@ layout: post
 title:  "change title"
 crawlertitle: "you can change things"
 summary: "change is okay sometimes"
-date:   2016-06-28 23:09:47 +0700
+date:   does this matter
 categories: posts
-tags: 'one fish'
+tags: 'yep_you_did_it'
 author: devonorourke
 ---
 
