@@ -55,13 +55,13 @@ When creating a docker volume, it is possible to specify a storage driver for th
 
 The vDVS driver is made of a vib to install on the ESXi host and a plugin to add to the docker host. I will go more into details in the next post.
 
-The vDVS plugin and the vDVS driver allow Docker to talk directly to ESXi, which in turn manages the datastores and create a vmdk per docker volume on VMFS, NFS, VVol or VSAN. Some kind of chinese whispers 2.0. 
+The vDVS plugin and the vDVS driver allow Docker to talk directly to ESXi, which in turn manages the datastores and create a vmdk per docker volume on VMFS, NFS, VVol or VSAN. Some kind of chinese whispers 2.0!
 
 ![telephonearabe]({{site.baseurl}}/img/telephonearabe.jpg)
 
 You can find the full doc on vDVS [here](http://vmware.github.io/docker-volume-vsphere/documentation/).
 
-This driver is pretty great as you can store your Docker volumes as regular VM virtual disks and not manage an extra layer of stretched storage like GlusterFS. See picture below.
+This driver is pretty great as you can store your Docker volumes as regular virtual disks and not have to manage an extra layer of stretched storage like GlusterFS. See picture below.
 
 ![vdvsvsnovdvs]({{site.baseurl}}/img/vdvsvsnovdvs.jpg)
 
@@ -69,7 +69,7 @@ This driver is pretty great as you can store your Docker volumes as regular VM v
 
 Here I want to avoid any future confusions when I talk about "hosts". Remember the picture you've seen a million times? When you run a traditional ESXi server with VMs on it it is called a host. However when you run say Debian (Photon in our case) with Docker, the Debian server is also usually called a host.
 
-The Docker host can be bare metal (Linux installed directly on the physical server) or virtual (running in a VM). In this series of posts we are going to run Docker in virtual machines so it can get a bit confusing on what host is what (see below).
+The Docker host can be bare metal (Linux installed directly on the physical server) or virtual (running in a VM). In this series of posts we are going to run Docker in virtual machines so it can get a bit confusing what host is what (see below).
 
 Remember these two for the rest of the visit.
 
@@ -80,6 +80,6 @@ Remember these two for the rest of the visit.
 
 You might be wondering by now *"But why not just get rid of the hypervisor and run the container engine bare metal?"*
 
-Well, all services can't run as containers, or at least not by snapping fingers. In most cases virtual machines and containers will have to coexist for a time. Though if your structure plans on investing large enough amounts of resources in Docker it might be worth investing in a separate physical environment where Docker runs bare-metal. Another case of "it depends".
+Well, all services can't run as containers, or at least not by snapping your fingers. In most cases virtual machines and containers will have to coexist for a time. Though if your structure plans on investing large enough amounts of resources in Docker it might be worth investing in a separate physical environment where Docker runs bare-metal. Another case of "it depends" but I like the flexibility that vDVS and Photon offer.
 
 [Docker in vSphere : Part 2 - vDVS in details (to come)](http://vxav.fr)
