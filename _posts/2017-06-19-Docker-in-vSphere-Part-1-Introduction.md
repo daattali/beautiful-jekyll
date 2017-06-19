@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Docker in vSphere : Part 1 - Introduction
 published: false
+title: Untitled
 ---
 
 # Docker in vSphere : Part 1 - Introduction
@@ -15,9 +15,9 @@ I am starting a series of articles about running containers on [PhotonOS](https:
 
 In this first post we are going over a few basic container concepts and a quick overview of vDVS.
 
-Photon is VMware's own stripped down linux distribution with docker embedded, I'm using it as VMware are putting a lot of resources in it which I think will lead to more and more integration with the VMware ecosystem in the next few months/years. Heck, the vCenter appliance in version 6.5 already runs on PhotonOS! However, everything you'll read in these posts  about docker also applies to other distros like ubuntu, debian etc as the concepts are the same.
+PhotonOS is VMware's own stripped down linux distribution with docker embedded, I'm using it as VMware are putting a lot of resources in this product which I think will lead to more and more integration with the VMware ecosystem in the next few months/years. Heck, the vCenter appliance in version 6.5 already runs on PhotonOS! However, everything you'll read in these posts  about docker also applies to other distros like ubuntu, debian etc as the concepts are the same.
 
-As opposed to virtual machines, containers are like Lemmings that can be shot in the head shamelessly, another one will automatically take its place. I am not going to get into the "container vs VM" topic as I am sure you have already seen this picture a million times and you know what a container is. 
+I am not going to get into the "container vs VM" topic as I am sure you have already seen this picture a million times and know what a container is. As opposed to virtual machines, containers share the platform's underlying OS and only run an instance of a service as opposed to a full blown virtualized OS in a VM. Containers are like Lemmings that can be shot in the head shamelessly, another one will automatically pop up.
 
 ![vmvscont]({{site.baseurl}}/img/vmvscont.jpg)
 
@@ -37,7 +37,7 @@ The badly drawn exhibit below pictures the loss of a container and the loss of a
 ![statefulvsstateless]({{site.baseurl}}/img/statefulvsstateless.jpg)
 
 - **Stateless**: pretty straightforward from a storage point of view. If the container or the host dies it can restart wherever in the swarm.
-- **Stateful on local storage**: If the container dies it can restart on the same host only. If the host dies, the container can't restart on another one because its storage is down with the host. The service remains down until the host is brought back online or another accessible volume is assigned to the container (Of course the previous data won't be available, it would have to be recovered with some backup mechanism).
+- **Stateful on local storage**: If the container dies it can restart on the same host only. If the host itseld dies, the container can't restart on another one because its storage is down with the host. The service remains down until the host is brought back online or another accessible volume is assigned to the container (Of course the previously used data won't be available, it would have to be recovered with some backup mechanism).
 - **Stateful on shared storage**: If the container or the host goes down, the container will restart on another host in the swarm that has access to the shared storage.
 
 Of course if the shared storage goes down, your containers won't have access to their persistent storage. If this happens you most likely have a bigger "sweating issue"...
