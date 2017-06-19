@@ -3,8 +3,6 @@ layout: post
 published: true
 title: Docker in vSphere Part 1 Introduction
 ---
-
-# Docker in vSphere : Part 1 - Introduction
 ![logos]({{site.baseurl}}/img/logos.jpg)
 
 [Docker in vSphere : Part 2 - vDVS in details (to come)](http://vxav.fr)
