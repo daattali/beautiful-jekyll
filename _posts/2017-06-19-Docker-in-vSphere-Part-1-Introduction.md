@@ -25,18 +25,18 @@ It's simplified but it's basically it, so let's move on.
 
 Because this series of articles focuses on storage persistence, we are going to define 2 main food groups of containers:
 
-- **Stateless** containers: **No persistent data** dealt with here, default behavior of a container. the "storage" of the container is wiped out after reboot/recreation and it doesn't matter. Example: Web servers.
+- **Stateless** containers: **No persistent data** here, this is the default behavior of a container. the data is wiped out after reboot/recreation and it doesn't matter. Example: Web servers.
 - **Stateful** containers: The **data MUST persist** and must be consistent after reboot/recreation of the container.  The persistent volume can be stored locally on the host or on shared storage (recommended). Example: Database server.
 
-*Note that the stateful containers are not easily scalable like stateless servers, it must be implemented within the app running inside the container (just like setting redundancy for DB VMs is not as straightforward as for web nodes).*
+*Note that the stateful containers are not easily scalable like stateless servers, it must be implemented within the app running inside it (just like setting redundancy for DB VMs is not as straightforward as for web nodes).*
 
-The badly drawn exhibit below pictures the loss of a container and the loss of a host with the different types of containers introduced above.
+The badly drawn exhibit below pictures the loss of a container and the loss of a host with the different types introduced above.
 
 ![statefulvsstateless]({{site.baseurl}}/img/statefulvsstateless.jpg)
 
 - **Stateless**: pretty straightforward from a storage point of view. If the container or the host dies it can restart wherever in the swarm.
-- **Stateful on local storage**: If the container dies it can restart on the same host only. If the host itseld dies, the container can't restart on another one because its storage is down with the host. The service remains down until the host is brought back online or another accessible volume is assigned to the container (Of course the previously used data won't be available, it would have to be recovered with some backup mechanism).
-- **Stateful on shared storage**: If the container or the host goes down, the container will restart on another host in the swarm that has access to the shared storage.
+- **Stateful on local storage**: If the container dies it can restart on the same host only. If the host itseld dies, the container can't restart somewhere else because its storage is down as well. The service remains down until the host is brought back online or another accessible volume is assigned to the container (Of course the previously used data won't be available, it would have to be recovered with some backup mechanism).
+- **Stateful on shared storage**: If the container or the host goes down, the container will be able to restart somewhere else in the swarm that has access to the shared storage.
 
 Of course if the shared storage goes down, your containers won't have access to their persistent storage. If this happens you most likely have a bigger "sweating issue"...
 
