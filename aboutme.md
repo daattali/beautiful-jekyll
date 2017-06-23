@@ -1,16 +1,19 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I’m James Bartlett, a PhD student in Psychology at Coventry University, UK.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Research is difficult and there are many things that I wish I was told earlier, or worked out for myself sooner. My aim here is to share some useful tips that you may not be aware of, or just provide an account of my experiences.
 
-What else do you need?
+The content of this website will mainly consist of:
 
-### my history
+- Research methods and statistics
+- Tutorials
+- Post-graduate student experiences
+- My research
+- Tips for conducting research
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+## Acknowledgements
+I originally had a blog through WordPress, but I wanted something more flexible to easily include code. This would not have been possible without the template created by Dean Attali who made [Beautiful Jekyll](http://deanattali.com/beautiful-jekyll/). I would recommend starting with his template if you plan on migrating to Github pages and know nothing about html. 
