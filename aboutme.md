@@ -2,15 +2,13 @@
 layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
+published: true
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Mi nombre es Josemy Duarte. Soy programador, persistente, leal y mil cosas más. Si quieres saber más, stalkea [mi Twitter](https://twitter.com/JosemyD) o [mi instagram](https://www.instagram.com/josemy.duarte/) y si tienes alguna pregunta, enviame un [email](duartejosemy@gmail.com), con gusto te responderé.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Mi Historia
 
-What else do you need?
+Ćrecí en un pequeño pueblo del estado Miranda, Venezuela. Desde pequeño siempre me llamaron la atención las computadoras y en medio de tanto interés, sumado a la curiosidad de un adolescente, dañé unas cuantas y me gané más de un regaño... Pero puedo decir que valieron la pena, pues de mis errores aprendí e hicieron crecer mi curiosidad en el área.
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+[under construction]
