@@ -2,7 +2,9 @@
 layout: post
 title: First post!
 image: /img/hello_world.jpeg
-tags: [random, exciting-stuff]
+tags:
+  - random
+  - exciting-stuff
+published: true
 ---
-
-This is my first post, how exciting!
+Este post marca el inicio de algo importante, algo impresionante: mi blog!
