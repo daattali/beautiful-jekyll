@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flake it till you make it
+title: ''
 subtitle: The Art of Simplicity
 bigimg: /img/the-art-of-simplicity.jpg
 published: true
