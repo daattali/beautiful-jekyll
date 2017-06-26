@@ -2,7 +2,7 @@
 layout: post
 title: Flake it till you make it
 subtitle: The Art of Simplicity
-bigimg: /img/path.jpg
+bigimg: /img/the-art-of-simplicity.jpg
 published: true
 date: '2017-06-26'
 ---
