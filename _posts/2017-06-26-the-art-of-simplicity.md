@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Art of Simplicity
-bigimg: /img/the-art-of-simplicity.jpg
+bigimg: /img/simple-art.jpg
 published: true
 date: '2017-06-26'
 subtitle: Código simple == Código de calidad
