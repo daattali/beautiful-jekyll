@@ -9,7 +9,7 @@ This is all great until you choke on the price of licenses... Like many other so
 
 ![Sockets.jpg]({{site.baseurl}}/img/Sockets.jpg)
 
-A servers with 2 CPUs of 8 cores each would require 2 vSphere licenses right? So if you are using vRops you will need 2 vRops licenses, if you use VSAN you will need 2 VSAN and so on (NSX, Network Insight, ...). As you can imagine the number at the bottom of the bill can quickly skyrocket, but there is a way to get more for your money.
+A servers with 2 CPUs of 8 cores would require 2 vSphere licenses right? So if you are using vRops you will need 2 vRops licenses, if you use VSAN you will need 2 VSAN and so on (NSX, Network Insight, ...). As you can imagine the number at the bottom of the bill can quickly skyrocket, but there is a way to get more for your money.
 
 And how do you save money then? Easy:
 - Instead of two 8 cores CPUs, why not using a single socket 16 cores CPUs?
@@ -29,11 +29,11 @@ source: [https://ark.intel.com/](https://ark.intel.com/)
 
 _Of course M. Picky will say:_
 
->But the more cores in a CPU the more the clock speed reduces!
+>But the more cores in a CPU, the lower the clock speed!
 
 True, historically this is the case, the more cores the less GHz.
 
-_Why does in not bother me?_
+_Why does it not bother me?_
 
 >Most virtualised environments need more cores over clock speed to improve the concurrency. Especially in environments with lot's of small-size VMs.
 
@@ -44,7 +44,7 @@ So let's include the **Money factor** and have a look at it to prove that it cou
 We will see here 2 scenarios:
 
 - **Scenario A : Small infrastructure**, 3 hosts running vSphere Standard only.
-- **Scenario B : Advanced Infrastructure**, 8 Hosts running vSphere with Operations Manager Enterprise Plus and VSAN advanced.
+- **Scenario B : Bigger Infrastructure**, 8 Hosts running vSphere with Operations Manager Enterprise Plus and VSAN advanced.
 
 In each scenario we will detail 2 configurations:
 
@@ -53,9 +53,9 @@ In each scenario we will detail 2 configurations:
 
 I picked these models deliberatly to have the same number of cores in each cluster.
 
-The price of the processors come from the Intel ARK website and the price of the VMware licenses from the Dell configurator website. Whether the prices are perfectly accurate doesn't really matter as the point is to show a difference in relation to each scenario. vCenter is not included because the price will always be the same (vCenter Standard pricing).
+The price of the processors come from the Intel ARK website and the price of the VMware licenses from the Dell configurator website as of January 2017. Whether the prices are perfectly accurate doesn't really matter as the point is to show a difference in relation to each scenario. vCenter is not included because the price will always be the same (vCenter Standard pricing).
 
-For these configs I set a fixed base price for the servers (no license, no CPU) of 3000$ and 5000$ respectively. Again this is not relevant as it will be a constant, so let's dig in.
+For these configs I set a fixed base price for the servers (no license, no CPU) of 3000$ for the small infra and 5000$ for the bigger one. Again this is not relevant as it will be a constant, so let's dig in.
 
 ## Scenario A
 
@@ -90,7 +90,7 @@ Eventhough the price of purchase is greater for the dual socket server, it prove
 
 On a dual socket server you also have the possibility to use all the memory and PCI slots, which is not true on a single socket server. Fair enough, one point for dual socket.
 
-**Outcome Scenario A: Dual socket suits small environments better (as long as other socket based licensed software isn't added).**
+**Outcome scenario small environment: DUAL SOCKET WINS** (as long as other socket based licensed software isn't added)
 
 ## Scenario B
 
@@ -101,9 +101,9 @@ A middle sized company running an 8 hosts cluster on vSphere Entperprise Plus, m
 - Single socket, E5-2698 v4 - **Cluster price: $156,208**
 - Dual socket, E5-2640 v4 - **Cluster price: $235,824**
 
-In this scenario for the _same number of cores (not GHz)_ the cluster is **$79,616 more expensive with 2 socket** servers. Quite a difference right?
+In this scenario for the _same number of cores (not GHz)_ the cluster is **$79,616 more expensive with 2 socket servers than single socket ones**. Ouch!
 
-I think these figures are self explanatory, but let's follow the same reasoning as scenario B and get a price per GHz.
+I think these figures are self explanatory, but let's follow the same reasoning we did with scenario A and get a price per GHz.
 
 **Config B1**
 
@@ -127,7 +127,7 @@ I bet the same M. Picky will say:
 
 >But there are 32 GHz more on the dual socket servers.
 
-True, however this time let's make no compromise and make the point even more obvious!
+True, however this time let's make no compromise and show M. Picky how it's done!
 
 What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
 
@@ -140,15 +140,17 @@ What if I added a host to the (single CPU) cluster to give M. Picky his 32 GHz?
 So what is to note here :
 
 - Still $60,090 cheaper than the 8 hosts single socket cluster ! (Nice pay raise for the team * wink * to my boss)
-- 12 more GHz to reduce the impact of the hypervisor overhead
+- 12 more GHz (to reduce the impact of the hypervisor overhead for example)
 - 20 more physical cores to decrease the vCPU to physical core ratio
 - 1 more host to improve redundancy and reduce failure domains
 - Room for growth.
 
-Should we stop here? Maybe.  
+**The single socket servers has more resources and are cheaper than the dual socket ones.**
+
+Should we stop here? we could, the point is made.  
 Will we? Boy no!
 
-Let's try to match the $235,824 of the dual socket cluster with single socket servers.
+Let's try to match the $235,824 of the dual socket cluster with single socket servers to see what resources we would get for the same price.
 
 And here it is:
 
@@ -168,13 +170,13 @@ To summarize, what do you get for $235,824?
 | 8 hosts     | 12 hosts      |
 | $235,824    | $234,312      |
 
-**Outcome Scenario B: With a higher core density, single socket servers are much more cost efficient as you license more cores at once with the VMware (socket base licensed) products.**
+**Outcome scenario bigger environment: SINGLE SOCKET WIN BY FAR.** With a higher core density, single socket servers are much more cost efficient as you license more cores at once with the VMware (socket base licensed) products.
 
 ## Conclusion
 
-If like M. Picky you have always worked with dual socket servers and thought that single sockets are for peasants, consider looking into it from this day forward. With the constant evolution of processors it makes now more and more sense to go for a single processor with lot's of cores instead of two smaller ones, especially in environments running a lot of small/medium size VMs. 
+If like M. Picky you have always worked with dual socket servers and thought that single sockets are for peasants, consider looking into it from now on. With the constant evolution of processors it makes more and more sense to go for a single processor with lot's of cores instead of two smaller ones, especially in environments running a lot of small/medium size VMs. 
 
-You might realise that you'll save a lot of money or maybe it won't change anythin. Again it will depend on your environment. If you have planned to start small, typically because of budget restrictions, and expand later on with solutions like VSAN, VROPS or NSX, I highly recommend to take the full picture into account when doing your sizing. Because when the time comes to write the second check you will be happy to have single socket servers!
+You might realise that you'll save a lot of money or maybe it won't change anything. Again it will depend on your environment. If you have planned to start small, typically because of budget restrictions, and expand later on with solutions like VSAN, VROPS or NSX, I highly recommend to take the full picture into account when doing your sizing. Because when the time comes to write the second check you will be happy to have single socket servers!
 
 If you are thinking "Why not have half as many servers but each with two processors of 22 cores and full of RAM?". Well, technically you can but I wouldn't recommend it.
 
