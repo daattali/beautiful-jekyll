@@ -13,7 +13,7 @@ tags:
 
 ## ¿Cómo sé si tengo un buen diseño de software?
 
-La tecnología siempre ha avanzado a una velocidad impresionante y en ningún ha mostrado señales de querer desacelerar en algún futuro, por lo que es normal que con frecuencia veamos la salida de nuevos frameworks, nuevas herramientas o metodologías que solucionan de formas innovadoras los problemas que surgen en el ámbito de la programación. Es por ello que considero que el diseño de una plataforma, software o proyecto debe ser concebida teniendo en cuenta su futuro crecimiento y evolución, sin descartar la posibilidad de tener que migrar a otras tecnologías.
+La tecnología siempre ha avanzado a una velocidad impresionante y en ningún momento ha mostrado señales de querer desacelerar en algún futuro, por lo que es normal que con frecuencia veamos la salida de nuevos frameworks, nuevas herramientas o metodologías que solucionan de formas innovadoras los problemas que surgen en el ámbito de la programación. Es por ello que considero que el diseño de una plataforma, software o proyecto debe ser concebida teniendo en cuenta su futuro crecimiento y evolución, sin descartar la posibilidad de tener que migrar a otras tecnologías.
 
 Como solución a ésta capacidad de _adaptación_ que se requiere pudiéramos hablar de arquitecturas orientadas a [microservicios](https://martinfowler.com/articles/microservices.html), pero no es solo la arquitectura la que nos va a garantizar un buen diseño para nuestro producto.
 
@@ -27,6 +27,9 @@ Ahora, sobre la pregunta del título... Es una pregunta sencilla pero con una re
 
 Si, algunas pueden ser subjetivas. Lo que es "complicado" para un _junior_ no necesariamente lo sea para un _senior_. Pero podemos estar de acuerdo en que agregar o quitar funcionalidades no debe acarrear un alto nivel de **complejidad**. Sobre la complejidad hablaré un poco más adelante igualmente.
 
+## Enfócate
+
+Es importante tener claro el problema/requerimiento que se quiere resolver. Esta es una de las cosas que las metodologías __tradicionales__ buscaban solucionar, con todos los diagramas de flujo, de actividades, de clases... El conjunto de todos estos documentos buscaban plasmar lo que se requería del software. 
 
 
 Solucionar el problema 
