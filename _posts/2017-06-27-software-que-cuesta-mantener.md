@@ -11,13 +11,13 @@ tags:
 ---
 ¿Puede doler mantener software? Pues si, puede doler mentalmente (desgaste intelectual, estrés), físicamente (horas sin dormir) y económicamente (si es un producto o tienes desarrolladores contratados). Y ¿por qué puede resultar doloroso? Por múltiples razones, pero me atrevo a decir que la principal razón **técnica** es por un _mal diseño_.
 
-## ¿Cómo sé si tengo un buen diseño de software?
+## ¿Tengo un mal diseño de software?
 
 La tecnología siempre ha avanzado a una velocidad impresionante y en ningún momento ha mostrado señales de querer desacelerar en algún futuro, por lo que es normal que con frecuencia veamos la salida de nuevos frameworks, nuevas herramientas o metodologías que solucionan de formas innovadoras los problemas que surgen en el ámbito de la programación. Es por ello que considero que el diseño de una plataforma, software o proyecto debe ser concebida teniendo en cuenta su futuro crecimiento y evolución, sin descartar la posibilidad de tener que migrar a otras tecnologías.
 
 Como solución a ésta capacidad de _adaptación_ que se requiere pudiéramos hablar de arquitecturas orientadas a [microservicios](https://martinfowler.com/articles/microservices.html), pero no es solo la arquitectura la que nos va a garantizar un buen diseño para nuestro producto.
 
-Ahora, sobre la pregunta del título... Es una pregunta sencilla pero con una respuesta no tan trivial. Por lo que me gustaría iniciar comentando lo que considero son señales de un **mal** diseño:
+Ahora, sobre la pregunta del título... Es una pregunta sencilla pero con una respuesta no tan trivial. Estas son señales de lo que considero un **mal** diseño:
 
 - Duele hacer un cambio
 - Es peligroso hacer un cambio
@@ -33,31 +33,6 @@ Es importante tener claro el problema/requerimiento que se quiere resolver. Esta
 
 En las metodologías agíles para comprender el problema que queremos resolver, tenemos reuniones diarias o semanales, wikis, memos... Incluso, algunas vías más informales como ir y preguntarle al que conoce el dominio del proyecto (o enviarle un correo). Todo en favor de la adaptabilidad y velocidad (o **agilidad**, obviamente).
 
+Al conocer bien el problema, podemos enfocarnos en solucionarlo. El código que desarrollemos para satisfacer algún requerimiento cuenta con 2 tipos de complejidades, por así decirlo. Éstas son la  complejidad inherente y la complejidad accidental. La primera de ellas es la complejidad propia del dominio del problema, es algo natural y contra la que poco podemos hacer, más que buscar entenderla lo mejor posible. En cambio, la complejidad accidental pudieramos decir que es _culpa nuestra_, es complejidad que agregamos al hacer el código complejo, no testeable, poco mantenible, ambigüo. Éste tipo de complejidad es común cuando no sabemos con claridad el problema que queremos solucionar.
 
-Solucionar el problema 
-
-Simple fails less
-simple is easier to understand
-simple solves only real problem we know about
-
-Inherent complexity or accidental complexity?
-
-Good design is the one that hides inherent complexity and eliminates the accidental complexity.
-
-Think YAGNI (You aren't gonna need it)
-
-Code should be cohesive. Because a peace of code should have one, and only one responsability. This way they fail less, change less and are simpler.
-
-knock out before you mock out - blog
-
-Reduce Coupling: Depending on a class is thigt coupling. Dependinf on an interface is loose coupling. The second one is the best approach. 
-
-A good design has high cohesion and low coupling.
-
-DRY - Every piece of knowledge in a system should have a single unambigups authorative representation.
-
-pragmatic programmers book
-
-Focus on single responsability - A class and/or a method should have only one responsability
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Un buen diseño es aquel que esconde la complejidad inherente y elimina la complejidad accidental. Un código simple falla menos, es fácil de entender y facilita su mantenimiento.
