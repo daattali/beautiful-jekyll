@@ -31,6 +31,8 @@ Si, algunas pueden ser subjetivas. Lo que es "complicado" para un _junior_ no ne
 
 Es importante tener claro el problema/requerimiento que se quiere resolver. Esta es una de las cosas que las metodologías __tradicionales__ buscaban solucionar, con todos los diagramas de flujo, de actividades, de clases... El conjunto de todos estos documentos buscaban plasmar lo que se requería del software. Pero bueno, ya saben, no son **ágiles**, característica muy importante si queremos tener la capacidad de adaptación que mencionaba antes.
 
+En las metodologías agíles para comprender el problema que queremos resolver, tenemos reuniones diarias o semanales, wikis, memos... Incluso, algunas vías más informales aún
+
 
 Solucionar el problema 
 
