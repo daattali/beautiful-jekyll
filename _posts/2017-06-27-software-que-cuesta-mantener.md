@@ -9,6 +9,7 @@ tags:
   - conference
 bigimg: /img/design-principles.jpg
 share-img: /img/design-principles.jpg
+image: /img/dolorThumb.jpg
 ---
 ¿Puede doler mantener software? Pues si, puede doler mentalmente (desgaste intelectual, estrés), físicamente (horas sin dormir o descansar apropiadamente) y económicamente (si es un producto o tienes desarrolladores contratados). Y ¿por qué puede resultar doloroso? Por múltiples razones, pero me atrevo a decir que la principal razón **técnica** es por un _mal diseño_.
 
