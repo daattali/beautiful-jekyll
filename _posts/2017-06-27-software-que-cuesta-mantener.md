@@ -7,9 +7,9 @@ subtitle: Un buen diseño evoluciona sin dolor
 tags:
   - tips
   - conference
-bigimg: /img/design-principles.jpg
-share-img: /img/design-principles.jpg
-image: /img/dolorThumb.jpg
+bigimg: /img/sourceCode.jpg
+share-img: /img/sourceCode.jpg
+image: /img/sourceCode.jpg
 ---
 ¿Puede doler mantener software? Pues si, puede doler mentalmente (desgaste intelectual, estrés), físicamente (horas sin dormir o descansar apropiadamente) y económicamente (si es un producto o tienes desarrolladores contratados). Y ¿por qué puede resultar doloroso? Por múltiples razones, pero me atrevo a decir que la principal razón **técnica** es por un _mal diseño_.
 
