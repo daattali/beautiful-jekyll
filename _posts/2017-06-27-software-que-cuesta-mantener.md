@@ -4,7 +4,6 @@ published: true
 title: Software que cuesta mantener
 date: '2017-06-27'
 subtitle: Un buen diseño evoluciona sin dolor
-image: /img/design-principles.jpg
 tags:
   - tips
   - conference
