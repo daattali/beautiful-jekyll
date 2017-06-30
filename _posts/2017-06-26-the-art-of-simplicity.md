@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Art of Simplicity
+title: El arte de la simplicidad
 bigimg: /img/simple-art.jpg
 published: true
 date: '2017-06-26'
