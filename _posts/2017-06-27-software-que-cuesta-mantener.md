@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Software que cuesta mantener
 date: '2017-06-27'
 subtitle: Un buen diseño evoluciona sin dolor
@@ -9,7 +9,7 @@ tags:
   - tips
   - conference
 ---
-¿Puede doler mantener software? Pues si, puede doler mentalmente (desgaste intelectual, estrés), físicamente (horas sin dormir) y económicamente (si es un producto o tienes desarrolladores contratados). Y ¿por qué puede resultar doloroso? Por múltiples razones, pero me atrevo a decir que la principal razón **técnica** es por un _mal diseño_.
+¿Puede doler mantener software? Pues si, puede doler mentalmente (desgaste intelectual, estrés), físicamente (horas sin dormir o descansar apropiadamente) y económicamente (si es un producto o tienes desarrolladores contratados). Y ¿por qué puede resultar doloroso? Por múltiples razones, pero me atrevo a decir que la principal razón **técnica** es por un _mal diseño_.
 
 ## ¿Tengo un mal diseño de software?
 
