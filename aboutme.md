@@ -17,4 +17,4 @@ Me gusta programar, por lo que disfruto mi trabajo. También me gusta caminar po
 
 ## ¿Por qué un blog?
 
-Porque quiero contar mis experiencias, esperando que a alguien le sea útil (just to give back).
+Porque quiero contar mis experiencias, esperando que a alguien le sea útil (just to give back). Así que si te tomaste la molestia de leer esta breve biografía, ¿por qué no te tomas unos minutos para ver mis post? Espero lo disfrutes.
