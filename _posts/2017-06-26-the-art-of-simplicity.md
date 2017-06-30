@@ -10,6 +10,7 @@ tags:
   - conference
   - tips
 share-img: /img/simple-art.jpg
+image: /img/simple-art.jpg
 ---
 En la empresa en la que trabajo actualmente ([RocketROI](https://www.rocketroi.com/es/)) como premio a una especie de competencia interna, me han regalado una entrada a la [Java Barcelona Conference](http://www.jbcnconf.com/2017/). Esta conferencia tuvo una duración de 3 días, siendo los primeros 2 días exclusivos para las [charlas](http://www.jbcnconf.com/2017/talks.html) y el último día dedicado a los [workshops](http://www.jbcnconf.com/2017/workshops.html). Debido a que todas las charlas se ejecutaban de forma simultanea, era necesario elegir con antelación "el camino" que querías seguir. A continuación, quiero contarles _brevemente_ lo que aprendí de la primera de ellas, _The Art of Simplicity_.
 
