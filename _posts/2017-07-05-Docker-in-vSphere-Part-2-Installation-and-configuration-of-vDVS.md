@@ -283,7 +283,7 @@ The default access policy has no restriction.
 vmgroup access set succeeded
 ```
 
-- **6 - Remove the default vmgroup _DEFAULT*.*
+- **6 - Remove the default vmgroup _DEFAULT .**
 
 ```Bash
 [root@ESXIz20:/usr/lib/vmware/vmdkops/bin] ./vmdkops_admin.py vmgroup rm --name=_DEFAULT
