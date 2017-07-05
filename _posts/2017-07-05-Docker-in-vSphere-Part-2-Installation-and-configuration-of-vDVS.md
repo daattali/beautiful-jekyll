@@ -303,7 +303,7 @@ That's now the vDVS configured and all the settings store in the SQLlite db file
 
 - **Initialize the DB and make the local symlink persistent.**
 
-Go again through step 2 and step 3 (if running 0.14 and lower)**
+Go again through step 2 and step 3 (if running 0.14 and lower)
 
 - **Check that the vmgroup "MYVMGROUP" exists** (Below on my ESXIz10 host)
 
@@ -321,7 +321,7 @@ Uuid                                  Name       Description  Default_datastore 
 
 As you can see the vmgroup is already here without having to do anything.
 
-And there you have it. the hosts are ready to receive orders from Docker through the driver. We will see how to do that in Part 3. In the meantime here's a small cheat sheet with a few useful vmdkops_admin commands.
+And there you have it. the hosts are ready to receive orders from Docker through the driver. We will see how to do that in Part 3.
 
 ## Vmdkops_admin.py cheatsheet
 
