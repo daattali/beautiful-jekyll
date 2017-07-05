@@ -1,11 +1,11 @@
 ---
 layout: post
 published: true
-title: Docker in vSphere Part 1 - Introduction
+title: Docker in vSphere Part 1 Introduction
 ---
 ![logos]({{site.baseurl}}/img/logos.jpg)
 
-[Docker in vSphere : Part 2 - Install and configure vDVS (to come)](http://vxav.fr)
+[Docker in vSphere : Part 2 - Install and configure vDVS (to come)](http://www.vxav.fr/2017-07-05-Docker-in-vSphere-Part-2-Installation-and-configuration-of-vDVS/)
 
 ## Overview
 
@@ -80,4 +80,4 @@ You might be wondering by now *"But why not just get rid of the hypervisor and r
 
 Well, all services can't run as containers, or at least not by snapping your fingers. In most cases virtual machines and containers will have to coexist for a time. Though if your structure plans on investing large enough amounts of resources in Docker it might be worth investing in a separate physical environment where Docker runs bare-metal. Another case of "it depends" but I like the flexibility that vDVS and Photon offer.
 
-[Docker in vSphere : Part 2 - Install and configure vDVS (to come)](http://vxav.fr)
+[Docker in vSphere : Part 2 - Install and configure vDVS (to come)](http://www.vxav.fr/2017-07-05-Docker-in-vSphere-Part-2-Installation-and-configuration-of-vDVS/)
