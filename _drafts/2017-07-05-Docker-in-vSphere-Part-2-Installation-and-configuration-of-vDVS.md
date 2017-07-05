@@ -1,20 +1,18 @@
 ---
 layout: post
-title: Docker in vSphere : Part 2 - Installation and configuration of vDVS
 published: false
+title: Docker in vSphere part 2 - Installation and configuration of vDVS
 ---
-
-# Docker in vSphere : Part 2 - Installation and configuration of vDVS
 ![logos]({{site.baseurl}}/img/logos.jpg)
 
-[Docker in vSphere : Part 1 - Introduction](http://www.vxav.fr/2017-06-19-Docker-in-vSphere-Part-1-Introduction/)
+[Docker in vSphere : Part 1 - Introduction](http://www.vxav.fr/2017-06-19-Docker-in-vSphere-Part-1-Introduction/)  
 [Docker in vSphere : Part 3 - Installation and configuration of Photon hosts (to come)](http://vxav.fr)
 
 ## Overview
 
 In this post we are going to prepare the ESXi hosts with vDVS to allow Docker to consume VMDK disks as volumes through the driver. We are only laying the foundations for it so we won't talk about Docker here (see the awesome picture below).
 
-![telephonearabe-2](C:/Users/xaviera/Documents/GitHub/vxav.github.io/img/telephonearabe-2.jpg)
+![telephonearabe-2]({{site.baseurl}}/img/telephonearabe-2.jpg)
 
 In this post we will:
 
@@ -63,7 +61,7 @@ or
 
 - Offline bundle (zip) for the VUM install
 
-![download-vdvs](download-vdvs.png)
+![download-vdvs]({{site.baseurl}}/img/download-vdvs.png)
 
 ## Installing the vDVS vib
 
@@ -75,21 +73,21 @@ The advantage of the VUM install is that you don't need to log on each host inde
 
 - **Import the zip offline bundle** in vSphere Update Manager.
 
-![vib-in-vum](vib-in-vum.png)
+![vib-in-vum]({{site.baseurl}}/img/vib-in-vum.png)
 
 - **Create a new baseline of type "Host Extension"** and give it a clear name and description.
 
-![new-baseline-1](new-baseline-1.png)
+![new-baseline-1]({{site.baseurl}}/img/new-baseline-1.png)
 
 - **Select only the newly added vDVS extension**. Comes up as "vDVS_Driver Bulletin" in 0.14.
 
-![new-baseline-2](new-baseline-2.png)
+![new-baseline-2]({{site.baseurl}}/img/new-baseline-2.png)
  
 - **Attach the baseline** to the participating hosts (those that will run Photon hosts) and scan them, they will turn non-compliant.
 - **Remediate all non-compliant hosts** - Remember that they need to be in maintenance mode for the package to install with VUM.
 - **Scan them again** once the remedation is complete to get the nice green check. Done.
 
-![host-compliant](host-compliant.png)
+![host-compliant]({{site.baseurl}}/img/host-compliant.png)
 
 
 ### Method 2: CLI install
@@ -121,7 +119,7 @@ You can check the status of the newly installed service with:
 esxcli software vib list | grep vmdkops
 ```
 
-![Check-install](Check-install.png)
+![Check-install]({{site.baseurl}}/img/Check-install.png)
 
 ## Configuring the vDVS driver
 
@@ -331,4 +329,4 @@ See below a cheatsheet of the commands you can use to manage vDVS. It might chan
 
 you'll also find the PDF version [here](https://github.com/vxav/vxav.github.io/raw/master/img/vmdkops_admin.pdf).
 
-![vmdkops_admin](vmdkops_admin.jpg)
+![vmdkops_admin]({{site.baseurl}}/img/vmdkops_admin.jpg)
