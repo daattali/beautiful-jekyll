@@ -65,7 +65,7 @@ or
 
 ## Installing the vDVS vib
 
-The installation of the vib is just like any other vib, nothing fancy here. Note that **no reboot is required**. Installing with VUM makes the process more convenient and manageable, whereas using the CLI is a little bit more labor intensive but you don't need to place the host in maintenance mode. Pros and cons in each, pick your weapon. I don't personally have a preference, though I tend to use the CLI in labs and VUM in prod/pre-prod but it doesn't really matter.
+The installation of the vib is just like any other vib, nothing fancy here. Note that **no reboot is required**. Installing with VUM makes the process more convenient and manageable, whereas using the CLI involves to log into each host but you don't need to place them in maintenance mode. Pros and cons in each, pick your weapon. I don't personally have a preference, though I tend to use the CLI in labs and VUM in prod/pre-prod but it doesn't really matter.
 
 ### Method 1: vSphere Update Manager
 
