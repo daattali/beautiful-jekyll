@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Docker in vSphere part 2 - Installation and configuration of vDVS
 ---
 ![logos]({{site.baseurl}}/img/logos.jpg)
