@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Docker in vSphere Part 1 Introduction
+title: Docker in vSphere Part 1 - Introduction
 ---
 ![logos]({{site.baseurl}}/img/logos.jpg)
 
