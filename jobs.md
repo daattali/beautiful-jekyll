@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Careers
+title: Jobs
 
 ---
 
