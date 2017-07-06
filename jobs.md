@@ -5,6 +5,7 @@ title: Careers
 ---
 
 ## Open Positions
+* [Call for Teaching Assistants for 2017W1](/jobs/TA2017W1)
 
 ## Past Positions
 * [Job ad for tenure-track instructor in MDS and the Department of Statistics](https://www.stat.ubc.ca/mds-instructor-1-position)
