@@ -1,7 +1,7 @@
 ---
 layout: page
 title: MDS Courses
-subtitle: Courses for the 2016-2017 offering
+subtitle: Courses for the 2017-2018 offering
 css: /css/course_desc.css
 ---
 
