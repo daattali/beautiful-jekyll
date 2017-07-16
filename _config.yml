@@ -93,7 +93,7 @@ share-links-active:
 disqus: "datameric-com"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-91236631-1"
+google_analytics: "UA-91236631-1"
 
 # Google Tag Manager ID
 #gtm: ""
