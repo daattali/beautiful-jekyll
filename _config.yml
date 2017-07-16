@@ -44,13 +44,13 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Alona Varshal
-  email: "youremail@domain.com"
+  email: "alona.varshal@gmail.com"
   #facebook: yourname  # eg. daattali
   github: mudspringhiker    # eg. daattali
   twitter: avarshal   # eg. daattali
-  3reddit: yourname    # eg. daattali
+  #3reddit: yourname    # eg. daattali
   #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  #linkedin: yourname  # eg. daattali
+  linkedin: alona-varshal  # eg. daattali
   #xing: yourname      # eg. daattali
   #stackoverflow: yourlink  # eg. "3943160/daattali"
   #snapchat: yourname  # eg. daattali
