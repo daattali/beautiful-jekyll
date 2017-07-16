@@ -62,13 +62,13 @@ author:
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  facebook: true
+  facebook: false
   email: true
   twitter: true
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
@@ -80,7 +80,7 @@ footer-links-active:
 # Select which share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
+  facebook: false
   google: false
   linkedin: true
 
@@ -144,7 +144,7 @@ link-tags: false
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
-  - CNAME
+#  - CNAME
   - Dockerfile
   - Gemfile
   - Gemfile.lock
