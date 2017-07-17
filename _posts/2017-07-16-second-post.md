@@ -2,7 +2,7 @@
 layout: post
 title: How I changed my Jekyll theme
 image: /img/avatar-icon.png
-tags: [jekyll, website]
+tags: [Jekyll, website, git, GitHub]
 ---
 
 After months of having the `minima` Jekyll theme since I started having a website, I was finally able to change it to something a little less boring. Just to record the steps I did to do this, I am writing this post. 
@@ -13,9 +13,9 @@ After months of having the `minima` Jekyll theme since I started having a websit
 
 3. I proceeded to clone this repo in my machine and tested whether I could serve it there using the `jekyll serve` command. This worked after I had to do a `gem install jekyll bundler` command.
 
-4. After making sure everything worked on my local environment and that it can be published on my site, I created a new repository on GitHub for the old website, which I named `oldsite`. I'm ready to transfer the files from the test repo to the `username.github.io` repo, which is needed to publish the site.
+4. After making sure everything worked on my local environment and that it can be published on my site, I created a new repository on GitHub for the old website, which I named `oldsite`. I'm ready to transfer the files from the test repo to the `username.github.io` repo, which is needed to publish the site at `http://username.github.io`.
 
-5. On my terminal, I went to my old website's folder and changed its remote url. To do this, I googled "how to change remote repository git" and found the GitHub documentation on [changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/). On the terminal, while on the old website's folder, I did the following:
+5. On my terminal, I went to my old website's folder and changed its remote url. To do this, I googled around and found the GitHub documentation on [changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/). On the terminal, while on the old website's folder, I did the following:
 
     ```
     git remote set-url origin <url for oldsite repo>
@@ -27,7 +27,7 @@ After months of having the `minima` Jekyll theme since I started having a websit
 
 8. I then went to the `test` folder on GitHub which contained the new theme. I went to the settings and changed its name from `test` to `username.github.io`. 
 
-9. This meant that my cloned `test` folder in my machine does not have the right remote url for it. Instead of changing this I just cloned the `username.github.io` just in case I need to use the `test` folder again.
+9. This meant that my cloned `test` folder in my machine does not have the right remote url for it. Instead of changing the remote url for the `test` folder on my machine, I just cloned the `username.github.io` just in case I need to use the `test` folder again.
 
 10. I now have a `username.github.io` folder locally. Checking my website by serving it locally made me see that I needed to change some configuration settings in `_config.yml`, such as the url and baseurl. I then pushed these changes to GitHub.
 
