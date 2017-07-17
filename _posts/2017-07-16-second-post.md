@@ -31,4 +31,4 @@ After months of having the `minima` Jekyll theme since I started having a websit
 
 10. I now have a `username.github.io` folder locally. Checking my website by serving it locally made me see that I needed to change some configuration settings in `_config.yml`, such as the url and baseurl. I then pushed these changes to GitHub.
 
-Everything worked for me after this. My old website can still be accessed [here](http://alonavarshal.com/oldsite/).
+Everything worked for me after this. My old website can still be accessed [here](http://alonavarshal.com/oldsite/). Some of the links to images may not be working anymore. 

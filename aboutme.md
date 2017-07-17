@@ -1,18 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you want to hire me
+subtitle: Why chem and code?
 ---
 
-My name is Alona Varshal. 
+My name is Alona Varshal. I'm a chemist learning to code. I got started in Python in 2016, but I did have some experience creating websites from scratch (back in the 90s) using Notepad. I can use pandas, NumPy, matplotlib, Seaborn, and other data analysis package in Python.
 
-- I have a background in organic and analytical chemistry
-- I know Python, pandas, NumPy, some d3.js, 
-- I know how basic HTML, CSS, and Ruby
-- I have years of experience teaching chemistry, doing chemical research, as well as chemical manufacturing
+My chemistry background includes organic chemistry, biochemistry and analytical chemistry. I did research on dendrimers as systems for drug delivery, enzyme inhibition,
+and chemical array sensing. The former area spurred me to pursue data science as it involved pattern recognition. I applied principal component analysis (PCA) and linear discriminant analysis (LDA) to classify different test mixtures (wines) using chemically synthesized array sensors.
 
-What else do you need?
-
-### my history
-
-Prior to learning to code, I was a chemist for a company outside of Austin, TX. I learned soon that I didn't want to spend the rest of my life as a chemist. So I tried to spend sometime to know what I really am made to do. The process brought me to realize my personality type is mainly INTP. From there, I picked some recommended career paths.
+My avatar is the GitHub octocat, [**labtocat**](https://octodex.github.com/labtocat)!
