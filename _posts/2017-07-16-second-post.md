@@ -15,7 +15,7 @@ After months of having the `minima` Jekyll theme since I started having a websit
 
 4. After making sure everything worked on my local environment and that it can be published on my site, I created a new repository on GitHub for the old website, which I named `oldsite`. I'm ready to transfer the files from the test repo to the `username.github.io` repo, which is needed to publish the site.
 
-5. On my terminal, I went to my old website's folder and changed its remote url. To do this, I googled "hot to change remote repository git" and found the GitHub documentation on [changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/). On the terminal, while on the old website's folder, I did the following:
+5. On my terminal, I went to my old website's folder and changed its remote url. To do this, I googled "how to change remote repository git" and found the GitHub documentation on [changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/). On the terminal, while on the old website's folder, I did the following:
 
     ```
     git remote set-url origin <url for oldsite repo>
