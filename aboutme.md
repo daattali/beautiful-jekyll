@@ -9,4 +9,6 @@ My name is Alona Varshal. I'm a chemist learning to code. I got started in Pytho
 My chemistry background includes organic chemistry, biochemistry and analytical chemistry. I did research on dendrimers as systems for drug delivery, enzyme inhibition,
 and chemical array sensing. The former area spurred me to pursue data science as it involved pattern recognition. I applied principal component analysis (PCA) and linear discriminant analysis (LDA) to classify different test mixtures (wines) using chemically synthesized array sensors.
 
+I live with my husband, Tom and my dog, Pogi in the Austin, TX area.
+
 My avatar is the GitHub octocat, [**labtocat**](https://octodex.github.com/labtocat)!
