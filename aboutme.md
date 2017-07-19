@@ -1,16 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why chem and code?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Alona Varshal. I'm a chemist learning to code. I got started in Python in 2016, but I did have some experience creating websites from scratch (back in the 90s) using Notepad. I can use pandas, NumPy, matplotlib, Seaborn, scikit-learn and other data analysis package in Python.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My chemistry background includes organic chemistry, biochemistry and analytical chemistry. I did research on dendrimers as systems for drug delivery, enzyme inhibition,
+and chemical array sensing. The former area spurred me to pursue data science as it involved pattern recognition. I applied principal component analysis (PCA) and linear discriminant analysis (LDA) to classify different test mixtures (wines) using chemically synthesized array sensors.
 
-What else do you need?
+I live with my husband, Tom and my dog, Pogi in the Austin, TX area.
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My avatar is the GitHub octocat, [**labtocat**](https://octodex.github.com/labtocat)!
