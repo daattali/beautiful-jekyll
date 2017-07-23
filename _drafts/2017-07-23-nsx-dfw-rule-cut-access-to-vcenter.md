@@ -13,19 +13,19 @@ All was going well when I disconnected my brain for a second and added a rule "d
 
 Obviously I didn't. VMware actually has a KB for that issue, 2017 so I must not be the first one: [2079620](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2079620)
 
-The only easy fix at the moment is to delete the configuration of the firewall via the [REST API](https://pubs.vmware.com/NSX-6/topic/com.vmware.ICbase/PDF/nsx_604_api.pdf "vSphere REST API doc (pdf)") to gain access back to the vCenter. I find this fix a little bit clumsy coming from VMware. I am only running a lab so I don't really care but I can only imagine the furious sweating if someone pushed that rule in prod... In such case you don't really want to go digging in the doc and get a REST client running and fiddle with the self-signed certificate settings. Actually I'm glad I did that mistake here!
+The only easy fix at the moment is to delete the configuration of the ditributed firewall via the [REST API](https://pubs.vmware.com/NSX-6/topic/com.vmware.ICbase/PDF/nsx_604_api.pdf "vSphere REST API doc (pdf)") to regain access to the vCenter. I find this fix a little bit clumsy coming from VMware. I am only running a lab so I don't really care but I can only imagine the furious sweating if someone pushed that rule in prod... In such case you don't really want to go digging in the doc and get a REST client running and fiddle with the self-signed certificate settings. Actually I'm glad I did that mistake here!
 
 **Feature request to VMware: Implement a roll back mecanism or a warning message please.**
 
-The fix will include:
+So here's what we're going to do:
 
-1.Reset firewall configuration via REST API.
-2.Include vCenter server in the exclusion list.
-3.Restore last firewall configuration.
+1. Reset firewall configuration via REST API.
+2. Include vCenter server in the exclusion list.
+3. Restore last firewall configuration.
 
 ## 1: Reset firewall configuration via REST API
 
-I wrote a few lines in powershell to simplify the process for those who ended up on this page. 
+You can easily do it with Curl, Chrome or Firefox but I wrote a few lines in powershell to simplify the process even more for those who ended up on this page. It will be as long as a copy/paste.
 
 - Just Copy and paste the following into Powershell. It will prompt for the IP and credentials of **NSX Manager**.
 
@@ -60,25 +60,27 @@ The output should be blank and you should have access to vCenter again.
 
 - Click on the green "+" sign and add your vCenter VM. From now on it will be ignored by the firewall.
 
-![nsx-load-config.jpg]({{site.baseurl}}/img/nsx-load-config.jpg)
+![nsx-load-config0.jpg]({{site.baseurl}}/img/nsx-load-config0.jpg)
 
 ## 3: Restore last firewall configuration.
 
 - Browse to the firewall section of NSX
-- The firewall rules list will be blank - no worries
+- The firewall rules list will be back to the default one - no worries
 - Click on the "Load saved configuration" button above the list
 
-![nsx-load-config2.jpg]({{site.baseurl}}/img/nsx-load-config2.jpg)
+![nsx-load-config.jpg]({{site.baseurl}}/img/nsx-load-config.jpg)
 
 - Select the latest config (the one containing your genius rule) and click "Load"
 
+![nsx-load-config2.jpg]({{site.baseurl}}/img/nsx-load-config2.jpg)
+
+- A warning message is displayed "_This will replace the current configuration. All the unsaved changes made on current configuration will be lost. Yes to continue_". Click "Yes". The configuration is then loaded but not published.
+
 ![nsx-load-config3.jpg]({{site.baseurl}}/img/nsx-load-config3.jpg)
 
-- A warning message is displayed "This will replace the current configuration. All the unsaved changes made on current configuration will be lost. Yes to continue". Click "Yes". The configuration is then loaded but not published.
+- Publish the changes.
 
 ![nsx-load-config4.jpg]({{site.baseurl}}/img/nsx-load-config4.jpg)
-
-- You can now publish the changes.
 
 All your rules are now back and vCenter won't be impacted anymore.
 
