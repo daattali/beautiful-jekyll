@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: NSX DFW rule cut access to vCenter
 ---
 I was playing with NSX recently and testing the distributed firewall (DFW) that allows for east-west firewalling, aka micro-segmentation.
