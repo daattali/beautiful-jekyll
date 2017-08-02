@@ -10,4 +10,3 @@ subtitle: For MDS students and beyond
 - [MDS self-test](http://nbviewer.jupyter.org/github/UBC-MDS/UBC-MDS.github.io/blob/master/selftest/mds_self_test.pdf) for prospective and entering students.
 - [Answers](http://nbviewer.jupyter.org/github/UBC-MDS/UBC-MDS.github.io/blob/master/selftest/mds_self_test_answers.pdf) for the self-test (see above).
 - [Advice for applying to the MDS program](/resources_pages/applicationAdvice)
-- Salary resources: [glassdoor](https://www.glassdoor.ca/Salaries/data-scientist-salary-SRCH_KO0,14.htm), [Quora](https://www.quora.com/What-is-the-salary-of-a-data-scientist), [O'Reilly](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf)
