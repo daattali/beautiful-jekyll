@@ -16,7 +16,7 @@ subtitle:
 - [Cracking the Coding Interview](https://www.amazon.ca/Cracking-Coding-Interview-Programming-Questions/dp/098478280X) Book on Amazon. Lots of Technical interview questions.
 
 ## Salary Information
-- [Glass Door](https://www.glassdoor.ca/Salaries/data-scientist-salary-SRCH_KO0,14.htm)
+- [Glassdoor](https://www.glassdoor.ca/Salaries/data-scientist-salary-SRCH_KO0,14.htm)
 - [Quora](https://www.quora.com/What-is-the-salary-of-a-data-scientist)
 - [O’Reilly](http://www.oreilly.com/data/free/files/2016-data-science-salary-survey.pdf)
 
