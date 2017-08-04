@@ -2,7 +2,9 @@
 layout: post
 title: Hướng dẫn cài đặt TensorFlow trên Window
 subtitle: 
+tags: [tensorflow, DeepLearning] 
 bigimg: 
+comments: true
 ---
 **Yêu cầu**
   1. Window 7/8/8.1/10 64bit
