@@ -12,7 +12,9 @@ bigimg:
   5. The latest NVIDIA driver
   6. CUDA® Toolkit 8.0
   7. cuDNN v5.1
+  
 ## Tensorflow với CPU hỗ trợ
+
 - Yêu cầu 1, 2
 - TensorFlow 1.0.1
 
