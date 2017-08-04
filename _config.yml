@@ -44,8 +44,8 @@ avatar: "/img/17523126_1228341487284038_7462670746900129156_n.jpg"
 author:
   name: Caro
   email: "tuhocdeeplearning@gmail.com"
-  facebook: "https://www.facebook.com/tuhocdeeplearning/"  # eg. daattali
-  github: https://github.com/tuhocdeeplearning # eg. daattali
+  facebook: "tuhocdeeplearning"  # eg. daattali
+  github: "tuhocdeeplearning" # eg. daattali
   twitter: yourname   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
