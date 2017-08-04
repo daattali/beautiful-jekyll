@@ -2,7 +2,7 @@
 layout: post
 title: Hướng dẫn cài đặt TensorFlow trên Window
 subtitle: 
-bigimg: /img/tf.png
+bigimg: 
 ---
 # Yêu cầu
   1. Window 7/8/8.1/10 64bit
@@ -29,8 +29,8 @@ bigimg: /img/tf.png
         *C:\> conda create -n tensorflow      
         Ouput: Fetching package metadata .........
         …                        
-        Proceed ([y]/n)? y                     
-        >Press Enter*           
+        Proceed ([y]/n)? y*                      
+        *>Press Enter*           
   - Activate the conda environment:             
       *C:\> activate tensorflow*
 
