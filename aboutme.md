@@ -5,6 +5,6 @@ I graduated from Visveswaraya Technological University with a degree in Informat
 
 ## Work 
 
-I'm a software engineer at [Cerner Healthcare](https://www.cerner.com/). Previously, I had interned at [Jobspire](https://jobspire.net/) and [Rare Mile Technologies](http://raremile.com/).
+I'm a software engineer at [Infrrd.ai](http://infrrd.ai/). Previously, I have worked at [Cerner Healthcare](https://www.cerner.com/) and interned at [Jobspire](https://jobspire.net/) and [Rare Mile Technologies](http://raremile.com/).
 
 Check out my [Github](https://www.github.com/maheshkkumar) page.
