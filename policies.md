@@ -39,7 +39,8 @@ Plagiarism, which is intellectual theft, occurs where an individual submits or p
 - multiple students submitting the same response
 - copying from sources without citing them
 - copying verbatim (word-for-word) from source and citing, but failing to make it explicit that this is a quotation (quotations should be used only rarely, if at all)
-- Plagiarism will not be tolerated in the MDS program and may result in a zero grade in the assignment or quiz where plagiarism is observed. Students are responsible for ensuring that any work submitted does not constitute plagiarism. Students who are in any doubt as to what constitutes plagiarism should consult their Instructor or Teaching Fellow before handing in any assignments.
+
+Plagiarism will not be tolerated in the MDS program and may result in a zero grade in the assignment or quiz where plagiarism is observed. Students are responsible for ensuring that any work submitted does not constitute plagiarism. Students who are in any doubt as to what constitutes plagiarism should consult their Instructor or Teaching Fellow before handing in any assignments.
 
 For more information see the [UBC Academic Misconduct policies](http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959).
 
