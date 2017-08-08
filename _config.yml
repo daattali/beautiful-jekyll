@@ -27,7 +27,7 @@ navbar-links:
     - Overview: "about"
     - Jobs: "jobs"
   Program:
-    - At a glance: "img/Course-Schedule-image.jpg"
+    - At a glance: "img/scheduleAug2017.pdf"
     - Course Descriptions: "descriptions"
     - Schedule: "calendar"
   Resources: "resources"
