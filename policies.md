@@ -6,7 +6,7 @@ title: MDS Policies
 
 ## Program Policies and Regulations
 
-The Master of Data Science Policies and Regulations are part of the campus-wide UBC Policies and Regulations document: <http://www.calendar.ubc.ca/vancouver/?tree=3,0,0,0>. Below is a summary of those Policies and Regulations that students frequently ask about and that are specific to the Master of Data Science program.
+The Master of Data Science Policies and Regulations are part of the campus-wide [UBC Policies and Regulations document](http://www.calendar.ubc.ca/vancouver/?tree=3,0,0,0). Below is a summary of those Policies and Regulations that students frequently ask about and that are specific to the Master of Data Science program.
 
 ## Attendance
 
@@ -41,7 +41,7 @@ Plagiarism, which is intellectual theft, occurs where an individual submits or p
 - copying verbatim (word-for-word) from source and citing, but failing to make it explicit that this is a quotation (quotations should be used only rarely, if at all)
 - Plagiarism will not be tolerated in the MDS program and may result in a zero grade in the assignment or quiz where plagiarism is observed. Students are responsible for ensuring that any work submitted does not constitute plagiarism. Students who are in any doubt as to what constitutes plagiarism should consult their Instructor or Teaching Fellow before handing in any assignments.
 
-For more information about the UBC Academic Misconduct policies: <http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959>
+For more information see the [UBC Academic Misconduct policies](http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959).
 
 ## Code Plagiarism
 
