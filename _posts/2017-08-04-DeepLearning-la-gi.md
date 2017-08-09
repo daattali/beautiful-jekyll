@@ -17,7 +17,20 @@ Hay ứng dụng DL để mô tả hình ảnh: Facebook có thể tự đ
 Đầu tiên, đó là khóa học Machine Learning của thầy [Andrew Ng trên Coursera](https://www.coursera.org/learn/machine-learning).
 Đây là một khóa học rất hay mà tôi đã từng tham gia để có nền tảng vững chắc về ML. Khóa học do thầy Andrew Ng - một trong những người đầu ngành về cả Machine Learning và Deep Learning.                             
 Nếu bạn yếu anh văn, tôi đề xuất bạn tham khảo blog [machinelearningcoban.com](machinelearningcoban.com) của anh [Tiệp Vũ](http://www.personal.psu.edu/thv102/). Blog được viết bằng tiếng Việt, khá chi tiết với nhiều thuật toán có kèm code rất dễ hiểu đặc biệt đối với những người mới. 
-Sau khi có những kiến thức cơ bản về ML, chúng ta hãy bắt đầu với Blog *Tự học Deep Learning*
+Sau khi có những kiến thức cơ bản về ML, chúng ta hãy bắt đầu với Blog *Tự học Deep Learning*        
+Các bài viết sẽ được thiết kế như sau:     
+    1. Deep Learning là gì và lộ trình học        
+    2. Giới thiệu về framework TensorFlow và hướng dẫn cài đặt trên CPU/GPU          
+    3. Ví dụ cơ bản về TensorFlow     
+    4. Giới thiệu về Neural network - Perceptron     
+    5. Multi-Layer Perceptron (MLP)       
+    6. Convolutional Neural Networks (CNN)        
+    7. Recurrent Neural Networks (RNN)        
+    8. Applications       
 
+Tài lệu tham khảo:     
+(1) Deep Learning, I. Goodfellow, Y. Bengio, and A. Courville, An MIT Press Book, [http://www.deeplearningbook.org/](http://www.deeplearningbook.org/), 2016.   
+(2) Machine Learning to Deep Learning, Deepcumen AI Research Group, kyobobook.co.kr, 2015.  
+(3) Selected Journal/Conference Papers  
 
 *Đang update*
