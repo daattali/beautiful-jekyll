@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://tuhocdeeplearning.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,8 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
-
+title: Tự học Deep Learning
 # Short description of your site
 description: A virtual proof that name is awesome!
 
@@ -23,16 +22,13 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Home: ""
+  GitHub Pages: "https://github.com/tuhocdeeplearning"
+  Contact: "https://www.facebook.com/tuhocdeeplearning/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/17523126_1228341487284038_7462670746900129156_n.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -43,21 +39,21 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
+  name: Tự học Deep Learning
+  email: "tuhocdeeplearning@gmail.com"
+  facebook: "tuhocdeeplearning"  # eg. tuhocdeeplearning
+  github: "tuhocdeeplearning" # eg. tuhocdeeplearning
+  #twitter: yourname   # eg. tuhocdeeplearning
+  #reddit: yourname    # eg. tuhocdeeplearning
+  #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
+  #linkedin: yourname  # eg. daattali
+  #xing: yourname      # eg. daattali
+  #stackoverflow: yourlink  # eg. "3943160/daattali"
+  #snapchat: yourname  # eg. daattali
+  #instagram: yourname # eg. daattali
+  #youtube: yourlink   # eg. user/daattali or channel/daattali
+  #spotify: yourname   # eg. daattali
+  #telephone: yourphone   # eg. +14159998888
 
 # Select which links to show in the footer
 footer-links-active:
@@ -86,7 +82,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "http://tuhocdeeplearning.github.io"  # eg. "http://tuhocdeeplearning.github.io"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
@@ -118,9 +114,28 @@ highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
+markdown: kramdown
+# !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
+# Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
+highlighter: rouge
+
 kramdown:
   input: GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  syntax_highlighter: rouge
 
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+      
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
@@ -136,76 +151,20 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      #show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
 link-tags: false
 
 # Exclude these files from production site
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Dockerfile
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
+  - CNAME
   - Vagrantfile
-
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
 
 gems:
   - jekyll-paginate
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+  

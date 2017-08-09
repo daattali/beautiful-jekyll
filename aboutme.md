@@ -1,16 +1,8 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Mục đích viết Blog
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Chào mừng bạn đến với website Tự học Deep Learning!
+Tôi là Caro, hiện tại đang học thạc sĩ Công nghệ thông tin tại Hàn Quốc. Nhận thấy xu hướng đang phát triển về Deep Learning và những ứng dụng của nó làm tôi khá thích thú. Vì thế, tôi tạo ra website này nhằm mục đích là nơi chia sẻ những kiến thức và kinh nghiệm về Deep Learning.
