@@ -4,7 +4,7 @@ title: Giới thiệu về Deep Learning
 subtitle: Deep Learning là gì và lộ trình học
 bigimg: /img/path.jpg
 ---
-*Deep Learning là gì?*        
+**Deep Learning là gì?**        
 Deep Learning là một nhánh nhỏ của Machine Learning. Trong những năm gần đây, Deep Learning ngày càng trở nên phổ biến bởi vì những ứng dụng đặc biệt của nó. Có thể kể đến như:              
 [Real-time multi-person pose estimation](https://www.youtube.com/watch?v=pW6nZXeWlGM): Ứng dụng DL để theo dõi chuyển động của nhóm nhiều người, vượt trội hơn cả Kinect V1, V2 (giới hạn chỉ 6 người).      
 Hay ứng dụng DL để mô tả hình ảnh: Facebook có thể tự động tag bạn bè của bạn trong tấm ảnh hoặc Google Photos có thể tự động gắn nhãn ảnh của bạn để tìm kiếm dễ dàng hơn...  
