@@ -168,6 +168,39 @@
             </a>
           </li>
           {% endif %}
+      {% if site.author.steam and site.footer-links-active.steam %}
+          <li>
+            <a href="https://steamcommunity.com/id/{{ site.author.steam }}" title="Steam">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-steam fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Steam</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.twitch and site.footer-links-active.twitch %}
+          <li>
+            <a href="https://www.twitch.tv/{{ site.author.twitch }}" title="Twitch">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitch fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Twitch</span>
+            </a>
+          </li>
+          {% endif %}
+      {% if site.author.yelp and site.footer-links-active.yelp %}
+          <li>
+            <a href="https://{{ site.author.yelp }}.yelp.com" title="Yelp">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-yelp fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Yelp</span>
+            </a>
+          </li>
+          {% endif %}
         </ul>
         <p class="copyright text-muted">
 		  {{ site.author.name }}
