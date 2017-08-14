@@ -17,6 +17,15 @@ Wait for the job to finish and place the result into the $ds variable.
 
 ![job-ds-fail-2.jpg]({{site.baseurl}}/img/job-ds-fail-2.jpg)
 
+Quite hard to read on the screenshot, here's the error:
+
+> The term 'get-datastore' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+    + CategoryInfo          : ObjectNotFound: (get-datastore:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+    + PSComputerName        : localhost
+
+
 This error occurs because the job initiates a new Powershell session which doesn't have the PowerCLI module loaded and of course is not connected to any vCenter. 
 
 The trick to run PowerCLI commands in parallel is to import the module and connect to vCenter for every job.  One easy way to connect to vCenter when you already have a session is to re-use the **SessionSecret** property of the **$DefaultVIServer** variable created when you logged in vCenter. It is very easy to do but if you have to do it often or you don't want to repeat the same 4 lines every time in your script to keep it lean and clean, your OCD self will be upset, which is where the "Start-PowerCLIJob" function becomes useful.
