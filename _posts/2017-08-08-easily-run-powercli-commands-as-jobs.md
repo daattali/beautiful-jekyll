@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Easily run PowerCLI commands as jobs
 ---
 ## Overview
