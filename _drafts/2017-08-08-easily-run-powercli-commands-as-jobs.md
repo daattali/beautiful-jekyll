@@ -5,12 +5,16 @@ title: Easily run PowerCLI commands as jobs
 ---
 ## Overview
 
+[Start-PowerCLIJobs.ps1](https://github.com/vxav/Scripting/blob/master/Start-PowerCLIJob.ps1)
+
 Running commands as jobs is pretty mainstream in Powershell. A simple "Start-Job" or "Invoke-Command -AsJob" will do the trick. However, when PowerCLI is involved it is not as straightforward. If you try to run  a command that requires to be connected to a vCenter you will probably receive an error saying that the command is not recognized.
 
-Start a job to get datastores.  
+Start a job to get datastores.
+
 ![job-ds-fail-1.jpg]({{site.baseurl}}/img/job-ds-fail-1.jpg)
 
 Wait for the job to finish and place the result into the $ds variable.  
+
 ![job-ds-fail-2.jpg]({{site.baseurl}}/img/job-ds-fail-2.jpg)
 
 This error occurs because the job initiates a new Powershell session which doesn't have the PowerCLI module loaded and of course is not connected to any vCenter. 
@@ -21,14 +25,26 @@ The trick to run PowerCLI commands in parallel is to import the module and conne
 
 This function is very simple, all it does is:
 
-- Import the PowerCLI module (by default only VMware.VimAutomation.Core but it's parameterised)
-- Disable the PowerCLI deprecation warning (if not your job will hang)
-- Connect to vCenter using the existing $DefaultVIServer variable including the IP/FQDN and the session secret
-- Prepend all this to your ScriptBlock
+1. Import the PowerCLI module (by default only VMware.VimAutomation.Core but it's parameterised)
+2. Disable the PowerCLI deprecation warning (if not your job will hang)
+3. Connect to vCenter using the existing $DefaultVIServer variable which includes the IP/FQDN and the session secret
+4. Prepend all this stuff to your ScriptBlock
+5. Start a Powershell job
 
-Example:
+### Parameters
+
+- **DefaultVIServer**: Mandatory $DefaultVIServer variable created when you connect to a vCenter server.
+- **JobName**: Optional name for the job.
+- **ScriptBlock**: Mandatory scriptblock that will be run in every job. You can use $Using:VarName to use the variables of the parent session.
+- **ArgumentList**: See [Start-Job help](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Start-Job?view=powershell-4.0).
+- **InputObject**: See [Start-Job help](https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Core/Start-Job?view=powershell-4.0).
+- **Modules**: Names of the modules that will be needed by the commands in the scriptblock.
+
+### Example 1:
 
 Imagine you have a PowerShell module that allows you to deploy VMs from a CSV file to make the example more convenient. What we do here is create a job for every VM deployment and wait for the jobs to finish. you can then do receive-job etc... 
+
+In this example I import the "deploy" module in the script block but it can be done with the function parameter as well, it makes no difference except it would be imported before connecting to vCenter.
 
 ```Powershell
 PS> Import-CSV "MyDeployment.CSV" | foreach-object {Start-PowerCLIJob -DefaultVIServer $DefaultVIServer -JobName "Job Deploy VM $($_.VMName)" -ScriptBlock {Import-Module Deploy-vm.psm1; $using:_ | Deploy-VM}}
@@ -42,6 +58,14 @@ Id     Name            PSJobTypeName   State         HasMoreData     Location   
 29     Deploy VM VM-5  BackgroundJob   Running       True            localhost            ...
 
 PS> Get-Job "Deploy VM*" | Wait-Job
+```
+
+### Example 2:
+
+By default only _VMware.VimAutomation.Core_ is loaded, if you need to load another module just add it in the parameters.
+
+```Powershell
+PS> Start-PowerCLIJob -DefaultVIServer $DefaultVIServer -JobName "Do some stuff" -Module "VMware.VimAutomation.Core","VMware.DeployAutomation" -ScriptBlock {Do Stuff}
 ```
 
 ## Caveats
@@ -171,3 +195,41 @@ The fact that the objects received from a job are deserialized is certainly anno
 
 In some cases you will probably notice that running your payload in jobs takes longer than sequentially, especially with PowerCLI as it needs to import the module and reconnect to vCenter every time. I measured a 4 second penalty on "PowerCLI jobs". It might seem like a lot, and it is for a 2 seconds job, but if every single job takes 5 or 10 minutes to complete and you have 5 of them to run... You do the math.
 
+## Code
+
+```PowerShell
+Function Start-PowerCLIJob {
+
+param(
+    [parameter(mandatory=$True)]
+    [VMware.VimAutomation.ViCore.Impl.V1.VIServerImpl]
+    $DefaultVIServer,
+    [string]
+    $JobName,
+    [parameter(mandatory=$True)]
+    [scriptblock]
+    $ScriptBlock,
+    [object[]]
+    $ArgumentList,
+    [psobject]
+    $InputObject,
+    [string[]]
+    $Modules = "VMware.VimAutomation.Core"
+)
+
+$ScriptBlockPrepend = {import-module $using:Modules | out-null;
+Set-PowerCLIConfiguration -DisplayDeprecationWarnings:$false -Scope Session -confirm:$False | out-null;
+Connect-ViServer -Server $using:DefaultVIServer.name -session $using:DefaultVIServer.SessionSecret | out-null;
+}
+
+$ScriptBlock = [ScriptBlock]::Create($ScriptBlockPrepend.ToString() + $ScriptBlock.ToString())
+
+$params = @{scriptblock=$ScriptBlock}
+if ($JobName) {$params.Add('name',$JobName)}
+if ($ArgumentList) {$params.Add('ArgumentList',$ArgumentList)}
+if ($InputObject) {$params.Add('InputObject',$InputObject)}
+
+Start-Job @params
+
+}
+```
