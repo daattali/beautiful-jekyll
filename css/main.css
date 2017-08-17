@@ -680,3 +680,14 @@ td.gutter {
 #social-share-section {
   margin-bottom: 30px;
 }
+
+
+/* Fix table border github gist snippets */
+
+.gist, .gist-file table tr {
+  border: unset;
+}
+
+.gist, .gist-file table tr td {
+  border: unset;
+}
