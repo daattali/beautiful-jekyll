@@ -50,7 +50,3 @@ var foo = function(x) {
 }
 foo(3)
 {% endhighlight %}
-
-## Github Gist example
-
-{% gist OCram85/d673764614438493afaa5cd413999436 DeathStarClass.ps1 %}
