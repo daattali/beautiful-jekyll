@@ -737,3 +737,14 @@ color: #f1c40f;
 .icon-red{
   color: #c0392b;
 }
+
+
+/* Fix table border github gist snippets */
+
+.gist, .gist-file table tr {
+  border: unset;
+}
+
+.gist, .gist-file table tr td {
+  border: unset;
+}
