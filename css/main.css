@@ -681,6 +681,63 @@ td.gutter {
   margin-bottom: 30px;
 }
 
+/* --- Notification boxes --- */
+
+.box-note {
+  background-color: #eee;
+  padding: 15px;
+  padding-left: 10px;
+  margin: 20px;
+  margin-left: 5px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-left-color: #2980b9;
+  border-radius: 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.box-warning {
+  background-color: #fdf5d4;
+  padding: 15px;
+  padding-left: 10px;
+  margin: 20px;
+  margin-left: 5px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-left-color: #f1c40f;
+  border-radius: 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.box-error {
+  background-color: #f4dddb;
+  padding: 15px;
+  padding-left: 10px;
+  margin: 20px;
+  margin-left: 5px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-left-color: #c0392b;
+  border-radius: 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Icon Colors */
+.icon-blue {
+  color: #2980b9;
+}
+
+.icon-yellow {
+color: #f1c40f;
+}
+
+.icon-red{
+  color: #c0392b;
+}
+
 
 /* Fix table border github gist snippets */
 
