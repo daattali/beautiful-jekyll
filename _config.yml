@@ -58,6 +58,9 @@ author:
   youtube: yourlink   # eg. user/daattali or channel/daattali
   spotify: yourname   # eg. daattali
   telephone: yourphone   # eg. +14159998888
+  steam: yourname     # eg. daattali
+  twitch: yourname    # eg. daattali
+  yelp: yourname      # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
@@ -76,6 +79,9 @@ footer-links-active:
   youtube: false
   spotify: false
   telephone: false
+  steam: false
+  twitch: false
+  yelp: false
 
 # Select which share links to show in posts
 share-links-active:
