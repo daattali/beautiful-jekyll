@@ -57,14 +57,14 @@ You can add notification, warning and error boxes like this:
 ### Notification
 
 {: .box-note}
-<i class="fa fa-commenting icon-blue" aria-hidden="true"></i> **Note:** This is a notification box.
+**Note:** This is a notification box.
 
 ### Warning
 
 {: .box-warning}
-<i class="fa fa-bolt icon-yellow" aria-hidden="true"></i> **Warning:** This is a warning box.
+**Warning:** This is a warning box.
 
 ### Error
 
 {: .box-error}
-<i class="fa fa-exclamation circle icon-red" aria-hidden="true"></i> **Error:** This is a error box.
+**Error:** This is a error box.
