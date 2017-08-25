@@ -70,7 +70,7 @@ This is a fun one, and an important one given that new assignments in a new prog
 
 Well, that's about it. Overall, the system worked fairly smoothly in its first year of operation. If you are interested in more detail please see [my code](https://github.com/mgelbart/rhomboid) and the [video demo of the system](https://www.youtube.com/watch?v=zgiaBS4uUk0). The public code is a more general-purpose version with the MDS-specific features removed. It is meant to be used for a single course and does not take advantage of having a suite of courses that fit together. An example of an MDS-specific feature is the "home table" for each student, which looks something like this:
 
-![](mds-student-home.png)
+![](/img/blog/mds-student-home.png)
 
 With this table, the students have easy access to their assignments/quizzes/grades for all of their MDS courses in one central location. 
 
