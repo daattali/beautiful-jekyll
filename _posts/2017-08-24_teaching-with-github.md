@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Delivering MDS courses with GitHub
+title: Teaching with GitHub
 author: test
 tags: [github]
 ---
