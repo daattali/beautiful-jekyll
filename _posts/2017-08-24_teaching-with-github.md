@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Teaching with GitHub
-author: test
 tags: [github]
 ---
 
