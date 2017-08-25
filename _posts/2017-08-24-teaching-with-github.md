@@ -4,10 +4,6 @@ title: Teaching with GitHub
 tags: [github]
 ---
 
-by [Mike Gelbart](http://www.cs.ubc.ca/~mgelbart/)
-
----------
-
 In this post I will describe the system we use for delivering courses via GitHub in the [UBC MDS program](https://ubc-mds.github.io). I will first describe our high level goals and how we tackled them, and then discuss some implementation details. This post assumes the reader is familiar with git and GitHub and focuses more on the technical setup than the pedagogical implications.
 
 Our main goals for this project were as follows:
@@ -74,9 +70,14 @@ Well, that's about it. Overall, the system worked fairly smoothly in its first y
 
 With this table, the students have easy access to their assignments/quizzes/grades for all of their MDS courses in one central location. 
 
-### References
+Finally, the following links may be of interest to those who've made it this far:
 
 - [GitHub Classroom](https://classroom.github.com/)
 - ["How I implemented GitHub in my classroom" (SIGCSE 2017)](https://www.youtube.com/watch?v=3j1BaUw53pM)
 - [UBC ClassPortal](https://github.com/ubccpsc/classportal-backend) (in progress)
 - [My code](https://github.com/mgelbart/rhomboid) and [video demo of our system](https://www.youtube.com/watch?v=zgiaBS4uUk0)
+
+
+---------
+
+[Mike Gelbart](http://www.cs.ubc.ca/~mgelbart/) is a Teaching Fellow in the MDS program and a Lecturer in the Department of Computer Science at UBC.
