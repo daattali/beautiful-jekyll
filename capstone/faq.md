@@ -30,7 +30,7 @@ Unfortunately, we do not allow this. We sincerely hope that you do not "do this 
 
 #### 6. Will you sign a non-disclosure agreement?
 
-Yes, but within reason. We have a template agreement that we can share with you if you're interested. Just contact us at `sthg_capstone@sthg.ubc.ca`.
+Yes, we offer a standard UBC NDA that we can share with you if you are interested. Contact us at `sthg_capstone@sthg.ubc.ca`.
 
 #### 7. Can the proposed project be "solved"?
 
@@ -42,4 +42,4 @@ No, this is not a requirement. In fact, a major part of our capstone course is f
 
 #### 9. I participated as a capstone partner in a previous year. Can I participate again?
 
-Please do participate again! We will be happy to work with you. Please submit a proposal.
+Absolutely! We will be happy to work with you. Please submit a proposal.
