@@ -4,6 +4,8 @@ title: Should I Apply to be a Capstone Partner?
 
 ---
 
+Interested in being a capstone partner? Here is what is expected of you.
+
 - You should be able to provide our students with ample data that is relevant to a question/problem faced by your organization. This need not belong to the capstone partner's organization -- for example, it could come freely online.
 
 
