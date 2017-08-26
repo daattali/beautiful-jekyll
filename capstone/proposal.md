@@ -9,11 +9,11 @@ The first step in applying to participate as a capstone partner involves writing
 Your proposal should be:
 
 - One page or less (minus a possible appendix containing reference material).
-- Submitted as a `pdf` file.
+- Submitted as a pdf file.
 
 In addition, please provide a one-sentence description of the project for us to put next to your project name for the students to see. You can simply indicate this in the email you send upon submission.
 
-Your proposal should contain the following information (in no particular order).
+Your proposal should contain the following information:
 
 ### About your organization
 
@@ -21,11 +21,11 @@ Briefly introduce your organization. Why might the MDS students be interested in
 
 ### Brief description of the problem/question
 
-No need to go into details here, though it would be good to comment on the nature of the details. If you'd like, you can suggest data science approaches that the students can take to address the problem, but this is not necessary. What are the main difficulties that come with this project?
+Just a brief description of the problem. If you'd like, you can suggest data science approaches that the students can take to address the problem, but this is not necessary. What are the main difficulties that come with this project?
 
 ### Available data
 
-Describe the data that you will make available to the students. What are the dimensions of the data set? What type of features are available? What type of complications arise from the data? In what form will the data be available to the students?
+Describe the data that you will make available to the students. How much data is there? What type of features are available? What type of complications might arise from the data? In what form will the data be available to the students?
 
 ### Data Product
 
@@ -38,8 +38,8 @@ What product(s) would you like to receive from our students, and what (in genera
 
 ### Legal stuff
 
-Outline the gist of the legalities you intend to have in place, if any -- particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll sign _that_ later).
+Outline the gist of the legalities you intend to have in place, if any -- particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll address that later).
 
-We understand that there ought to be _some_ restrictions in place, but we also would like for our students to have _some_ freedom to talk about the work they've done. We want our students to know about these legalities up-front.  
+We understand that you may require some restrictions to be put in place, but we also would like for our students to have some freedom to talk about the work they've done when applying for jobs. We want our students to know about these restrictions up-front so that they can make an informed decision about the project.  
 
-Feel free to ask us about our template legal agreement. Contact us at `sthg_capstone@sthg.ubc.ca`.
+Feel free to ask us about our standard UBC NDA. Contact us at `sthg_capstone@sthg.ubc.ca`.
