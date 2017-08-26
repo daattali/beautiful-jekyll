@@ -15,19 +15,19 @@ In addition, please provide a one-sentence description of the project for us to 
 
 Your proposal should contain the following information (in no particular order).
 
-#### About your organization
+### About your organization
 
 Briefly introduce your organization. Why might the MDS students be interested in partnering with this organization?
 
-#### Brief description of the problem/question
+### Brief description of the problem/question
 
 No need to go into details here, though it would be good to comment on the nature of the details. If you'd like, you can suggest data science approaches that the students can take to address the problem, but this is not necessary. What are the main difficulties that come with this project?
 
-#### Available data
+### Available data
 
 Describe the data that you will make available to the students. What are the dimensions of the data set? What type of features are available? What type of complications arise from the data? In what form will the data be available to the students?
 
-#### Data Product
+### Data Product
 
 What product(s) would you like to receive from our students, and what (in general) should it communicate or have the ability to do? Examples:
 
@@ -36,7 +36,7 @@ What product(s) would you like to receive from our students, and what (in genera
 - A data pipeline that includes some data science model
 - A report outlining student findings
 
-#### Legal stuff
+### Legal stuff
 
 Outline the gist of the legalities you intend to have in place, if any -- particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll sign _that_ later).
 
