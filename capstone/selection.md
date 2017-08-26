@@ -14,7 +14,7 @@ Here are the steps involved in launching a capstone project, which involve two s
 
 #### 1. Submit a project proposal.
 
-Please submit a one-page [proposal](./capstone/proposal) to `sthg_capstone@sthg.ubc.ca`.
+Please submit a one-page [proposal](./proposal.md) to `sthg_capstone@sthg.ubc.ca`.
 
 Members of the leadership team will review your proposal, and reply with our decision within a week. The possible decisions are:
 
