@@ -13,7 +13,7 @@ Interested in being a capstone partner? Here is what is expected of you.
 
 - The partner must be available to meet with MDS instructional staff to discuss the project and develop 1-2 potential projects. Datasets and potential project risks must be identified. This must be done well in advance of the beginning of the Capstone projects in April.
 
-- The partner must be available to meet with MDS students working on the capstone project (in person or remotely) 2-4 times during the two months (April & May) students are working on the capstone project.
+- The partner must be available to meet with MDS students working on the capstone project (in person or remotely) 2-4 times during the two months students are working on the capstone project.
 
 - The partner is expected to review and comment on the utility and quality of the final product produced by the students after completion of the project.
 
@@ -25,7 +25,7 @@ Interested in being a capstone partner? Here is what is expected of you.
 
 ## What's in it for me?
 
-- ~ 2 months of free (or low cost) data science work on a dataset/project.
+- ~ 2 months of free data science work on a dataset/project.
 
 - A well developed product of interest/relevance to their work (*e.g.,* Shiny app, analytic report, scripts/software). This product is expected to be of high quality, with excellent code documentation and testing.
 
