@@ -37,9 +37,9 @@ Members of the MDS leadership team will review the proposal, and work with the p
 A list of finalized proposals, along with one-sentence summaries, will be posted on a "project board" viewable by the students. The students will then rate their interest in the proposals, according to the following scale:
 
 - 1: reject
-- 2: apply (default)
-- 3: apply with interest
-- 4: apply with enthusiasm
+- 2: accept (default)
+- 3: accept with interest
+- 4: accept with extra interest
 
 #### Selection of proposals
 
