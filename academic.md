@@ -1,1 +1,1 @@
-My resume can be found [here](https://github.com/adivijaykumar/resume/blob/master/main.pdf). Einstein said $$T_{\mu \nu}$$
+My resume can be found [here](https://github.com/adivijaykumar/resume/blob/master/main.pdf). (A more formal page is under construction)

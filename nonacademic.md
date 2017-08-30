@@ -1,9 +1,6 @@
 ---
 layout: page
-title: non academic
+title: Non-Academic
 
 ---
-
-Hey this is the equation
-
-$$A + B - \alpha$$
+This page is under construction.

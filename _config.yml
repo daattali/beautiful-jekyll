@@ -14,16 +14,16 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Aditya Vijaykumar
+title: Symmetries
 
 # Short description of your site
-description: Student of Physics, Lover of Pink Floyd
+description: Aditya V's blog
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: ""
+  Blog: "blog"
   About: "about"
   Academic: "academic"
   Non-Academic: "nonacademic"
