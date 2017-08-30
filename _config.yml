@@ -23,7 +23,7 @@ description: Aditya V's Blog
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "blog"
+  Blog: ""
   About: "about"
   Academic: "academic"
   Non-Academic: "nonacademic"
