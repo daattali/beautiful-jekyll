@@ -54,7 +54,10 @@ We require that the capstone partners give a 30-minute presentation (which inclu
 
 #### Partners provide the data
 
-Next, if you require a non-disclosure agreement (NDA) to be signed, we expect all parties to sign on well before the capstone course begins. Also, we expect that you make the data available well before the capstone course begins.
+Next, we'll need you to provide us with:
+
+- a non-disclosure agreement (NDA) to be signed, if you require one; and
+- the data, or at least a snippet of it.
 
 
 #### Students rate the projects
