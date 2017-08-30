@@ -12,7 +12,7 @@ The course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| Project proposal submission deadline | December 31, 2017 |
+| Submit a proposal | December 31, 2017 |
 | Students select proposals | January 12, 2018  |
 | Presentation period       | February 5 - March 9, 2018 |
 | Deadline for partners to provide the data  | March 1, 2018 |
@@ -24,7 +24,7 @@ The course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 
 Here are the steps involved in launching a capstone project.
 
-#### 1. Submit a project proposal.
+#### Submit a project proposal.
 
 Please submit a one-page [proposal](./proposal.md) to `sthg_capstone@sthg.ubc.ca`.
 
@@ -38,7 +38,7 @@ We will always provide a reason for our decision. If your proposal is rejected, 
 
 > REMARK: I think it's more fair for our partners if we end the application period at a specified date, as opposed to whenever we have "enough" applications. Also, it seems less desirable to only accept the first $n$ organizations that apply. Hence the need for part 2 below.
 
-#### 2. Student Selection
+#### Student Selection
 
 Once your application is accepted, it is posted on a "project board" viewable by the students. The students will then rate their interest in your proposal by a certain date, according to the following scale:
 
@@ -51,21 +51,21 @@ Once your application is accepted, it is posted on a "project board" viewable by
 
 Those candidates that receive the highest ratings will be accepted as capstone projects.
 
-#### 3. Presentation
+#### Presentation
 
 We require that the capstone partners give a 30-minute presentation (which includes a question period) to the students and MDS leadership over lunch at the UBC Vancouver campus. 
 
-#### 4. Group Assignments
+#### Group Assignments
 
 After all the presentations have been given, the students will give a final rating to the capstone partners, which will inform the group assignments.
 
 In the unlikely scenario that we are unable to form a group with sufficient interest in the project, we will not assign any group to that project.
 
-#### 5. Data and NDA
+#### Data and NDA
 
 Next, if you require a non-disclosure agreement (NDA) to be signed, we expect all parties to sign on well before the capstone course begins. Also, we expect that you make the data available well before the capstone course begins.
 
-#### 6. Kickoff meeting
+#### Kickoff meeting
 
 The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project.
 
