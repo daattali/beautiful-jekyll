@@ -22,24 +22,18 @@ Within reason. Please contact us at `sthg_capstone@sthg.ubc.ca` if you have conc
 
 Yes, but it's possible that we will give priority to one of your projects to give other candidate partners a chance at participating. Also, the projects should be sufficiently different so that there is little overlap.
 
-#### 5. Can I submit more than one project proposal, but request to only keep the one having the most interest?
-
-> DISCUSS
-
-Unfortunately, we do not allow this. We sincerely hope that you do not "do this yourself" by dropping your other project(s) after pitching them.  
-
-#### 6. Will you sign a non-disclosure agreement?
+#### 5. Will you sign a non-disclosure agreement?
 
 Yes, we offer a standard UBC NDA that we can share with you if you are interested. Contact us at `sthg_capstone@sthg.ubc.ca`.
 
-#### 7. Can the proposed project be "solved"?
+#### 6. Can the proposed project be "solved"?
 
 We ask that our students try new approaches to a problem, and not replicate your work. However, we expect our capstone projects to be open-ended, having various approaches for addressing a problem, as opposed to having a single solution. We would encourage our students to either build on your work, or address the problem from a different angle.
 
-#### 8. Do I need to know data science to participate? Do I need to be able to suggest approaches for the students to take in addressing the problem I'm proposing?
+#### 7. Do I need to know data science to participate? Do I need to be able to suggest approaches for the students to take in addressing the problem I'm proposing?
 
 No, this is not a requirement. In fact, a major part of our capstone course is for students to decide on approaches for addressing the problem using data science. We do not encourage our students to simply apply some requested data science techniques to the problem. However, please _do_ share your ideas if you have them!
 
-#### 9. I participated as a capstone partner in a previous year. Can I participate again?
+#### 8. I participated as a capstone partner in a previous year. Can I participate again?
 
 Absolutely! We will be happy to work with you. Please submit a proposal.
