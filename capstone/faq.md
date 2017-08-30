@@ -18,9 +18,12 @@ Yes, we do allow this, but it is not required. We do request that the students w
 
 Within reason. Please contact us at `sthg_capstone@sthg.ubc.ca` if you have concerns.
 
-#### 4. Can I submit more than one project proposal, with the willingness to work with more than one group of students?
+#### 4. Can I submit more than one project proposal?
 
-Yes, but it's possible that we will give priority to one of your projects to give other candidate partners a chance at participating. Also, the projects should be sufficiently different so that there is little overlap.
+Yes, but it's possible that we will give priority to one of your projects to give other candidate partners a chance at participating. Also:
+
+- the projects should be sufficiently different so that there is little overlap.
+- you should be willing to work with a group of students for each project.
 
 #### 5. Will you sign a non-disclosure agreement?
 
