@@ -47,11 +47,11 @@ The MDS leadership team will select proposals based primarily on student interes
 
 #### Partners accept invitations
 
-The successful capstone partners accept the offer, and correspond with MDS administration to schedule a presentation to give at UBC. 
+The successful capstone partners accept the offers, and correspond with MDS administration to schedule a presentation to give at UBC.
 
 #### Partners provide data
 
-Before the presentations, the partners must provide MDS with:
+Before the presentations are given, the partners must provide MDS with:
 
 - the data (at least some form of it); and
 - if required, concensus on any paperwork such as a non-disclosure agreement (NDA).
