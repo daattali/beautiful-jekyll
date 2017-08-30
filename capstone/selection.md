@@ -48,16 +48,18 @@ Once your application is accepted, it is posted on a "project board" viewable by
 
 Those candidates that receive the highest ratings will be accepted as capstone projects.
 
-#### Presentation period
-
-We require that the capstone partners give a 30-minute presentation (which includes a question period) to the students and MDS leadership over lunch at the UBC Vancouver campus. 
-
-#### Partners provide the data
+#### Partners provide data
 
 Next, we'll need you to provide us with:
 
 - the data, or at least a snippet of it; and
 - if you require it, concensus on any paperwork such as a non-disclosure agreement (NDA).
+
+
+#### Presentation period
+
+We require that the capstone partners give a 30-minute presentation (which includes a question period) to the students and MDS leadership over lunch at the UBC Vancouver campus. 
+
 
 #### Students rate the projects
 
