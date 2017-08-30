@@ -1,18 +1,17 @@
 ---
 layout: page
-title: Selection Procedure for Potential Capstone Partners
+title: Procedure for MDS Capstone projects
 
 ---
-
-## Timeline
 
 The application period for the 2018 capstone course is now open!
 The course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 
+Here is the timeline.
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| Submit a proposal | December 31, 2017 |
+| [Submit a proposal](#submit-a-project-proposal) | December 31, 2017 |
 | Students select proposals | January 12, 2018  |
 | Presentation period       | February 5 - March 9, 2018 |
 | Deadline for partners to provide the data  | March 1, 2018 |
@@ -20,11 +19,9 @@ The course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 | Students are assigned to projects | March 23, 2018 (approx.) |
 | Kickoff meeting period    | April 16 - April 20, 2018 (approx.) |
 
-## Procedure
-
 Here are the steps involved in launching a capstone project.
 
-#### Submit a project proposal.
+#### Submit a project proposal
 
 Please submit a one-page [proposal](./proposal.md) to `sthg_capstone@sthg.ubc.ca`.
 
