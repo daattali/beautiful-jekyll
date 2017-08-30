@@ -12,12 +12,12 @@ Here is the timeline.
 | Event | Deadline/Period |
 | ----- | ---- |
 | [Partners submit a project proposal](#submit-a-project-proposal) | December 31, 2017 |
-| Students select proposals | January 12, 2018  |
-| Presentation period       | February 5 - March 9, 2018 |
-| Partners provide the data  | March 1, 2018 |
-| Students rate the projects  | March 9 - March 16, 2018 |
-| Students are assigned to projects | March 23, 2018 (approx.) |
-| Kickoff meetings    | April 16 - April 20, 2018 (approx.) |
+| [Students select proposals](#students-select-proposals) | January 12, 2018  |
+| [Presentation period](#presentation-period)       | February 5 - March 9, 2018 |
+| [Partners provide the data](#partners-provide-the-data)  | March 1, 2018 |
+| [Students rate the projects](#students-rate-the-projects)  | March 9 - March 16, 2018 |
+| [Students are assigned to projects](#students-are-assigned-to-projects) | March 23, 2018 (approx.) |
+| [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 (approx.) |
 
 Here are the steps involved in launching a capstone project.
 
