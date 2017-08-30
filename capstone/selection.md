@@ -19,7 +19,7 @@ Here is the timeline.
 | [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018 (approx.) |
 | [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 (approx.) |
 
-Here are the steps involved in launching a capstone project.
+Here are the steps involved in launching a capstone project. Please feel free to correspond with us at `sthg_capstone@sthg.ubc.ca` throughout the process.
 
 #### Partners submit a project proposal
 
