@@ -17,7 +17,7 @@ baseurl: ""
 title: Symmetries
 
 # Short description of your site
-description: Aditya V's blog
+description: Aditya V's Blog
 
 # --- Navigation bar options --- #
 
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-#avatar: "/img/avatar-icon.png"
+avatar: "/img/avatar-icon-1.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -90,7 +90,7 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "adivijaykumar"
 
 #Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-97624097-1"
@@ -103,8 +103,8 @@ google_analytics: "UA-97624097-1"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
+excerpt_length: 10
+0
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
