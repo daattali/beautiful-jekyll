@@ -7,7 +7,7 @@ tags: movie-review life
 
 Hi! People!
 
-It has been a long time since I figured out how to use GitHub Pages and consequently built this site. It does look very similar to Gyani's site (gyani.net); I liked the way his site looked. That, and the fact that I was too lazy to go looking for another theme. So, thanks a lot, Gyanendra 'soon-to-be-Londoner' Mishra!
+It has been a long time since I figured out how to use GitHub Pages and consequently built this site. It does look very similar to Gyani's site (gyani.net); I liked the way his site looked. That, and the fact that I was too lazy to go looking for another theme. So, thanks a lot, Gyanendra 'soon-to-be-Londoner' Mishra! I had delayed posting to the site because I hadn't figured out how to integrate MathJax and $\latex$, but now I have! What that basically means is this - I can insert equations like $R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = 8\pi T_{\mu\nu}$in beautiful typeface. Just for this.
 
 It has been just over two months since I came to Bangalore to pursue my thesis in the Centre for High Energy Physics (CHEP) at the Indian Institute of Science (IISc). A recent PhD Comic (http://phdcomics.com) sums up a part of it -
 
