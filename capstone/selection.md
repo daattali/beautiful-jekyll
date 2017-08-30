@@ -56,9 +56,8 @@ We require that the capstone partners give a 30-minute presentation (which inclu
 
 Next, we'll need you to provide us with:
 
-- a non-disclosure agreement (NDA) to be signed, if you require one; and
-- the data, or at least a snippet of it.
-
+- the data, or at least a snippet of it; and
+- if you require it, concensus on any paperwork such as a non-disclosure agreement (NDA).
 
 #### Students rate the projects
 
