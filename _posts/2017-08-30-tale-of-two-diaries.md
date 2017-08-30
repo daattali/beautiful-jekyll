@@ -1,0 +1,26 @@
+---
+layout: post
+title: A Tale of Two Diaries
+subtitle: Bangalore and Angamaly
+tags: movie-review life
+---
+
+Hi! People!
+
+It has been a long time since I figured out how to use GitHub Pages and consequently built this site. It does look very similar to Gyani's site (gyani.net); I liked the way his site looked. That, and the fact that I was too lazy to go looking for another theme. So, thanks a lot, Gyanendra 'soon-to-be-Londoner' Mishra!
+
+It has been just over two months since I came to Bangalore to pursue my thesis in the Centre for High Energy Physics (CHEP) at the Indian Institute of Science (IISc). A recent PhD Comic (http://phdcomics.com) sums up a part of it -
+
+![](http://phdcomics.com/comics/archive/phd082817s.gif)
+
+ My time here has been really good so far. Here is a list (non-exhaustive, a bigger list sometime later) of realizations that I have had since I came here 
+
+* If you stare at something for long enough, you understand it. Or at least you think you understand it. In fact, I recently realized that, operationally, differentiating between 'I understand' and 'I think I understand' is one crucial aspect of learning.
+* Seemingly distinct ideas might be connected. For example, I am now reading up about a theory that connects complexity theory in computer science to black holes. Appreciating the theory has greatly enhanced my respect for quantum gravity theorists. 
+* You might have heard that Bangalore traffic is bad. It is not. It is disgustingly pathetic and has the capability of sucking the life out of you. Once, a 2-kilometre cab commmute took me almost half an hour! And this is very normal apparently.
+
+So much for Bangalore Diaries now. I promise to write more later.
+
+While in Pilani, the Saturday afternoon movie was a ritual. So much so, that I refused to interact with anyone during those hours. I sorta miss those days, for this among other things. Unfortunately, the ritual hasn't travelled with me to Bangalore. But a few days back, I happened to watch a movie I have been wanting to watch for a very long time - Angamaly Diaries. And boy, it was an experience!
+
+What makes a movie 'real'? It could be a genuine location, a plausible plot, or even the colour pallette used. I think the key to making a movie real is the honesty with which characters are written and projected in the screenplay. As a viewer, I tend to focus a lot on understanding the motives of every character. Angamaly Diaries ticks all boxes on this front. 
