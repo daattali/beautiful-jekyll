@@ -54,7 +54,7 @@ The successful capstone partners accept the offers, and correspond with MDS admi
 Before the presentations are given, the partners must provide MDS with:
 
 - the data (at least some form of it); and
-- if required, concensus on any paperwork such as a non-disclosure agreement (NDA).
+- if required, consensus on any paperwork such as a non-disclosure agreement (NDA).
 
 Partners should feel free to ask us for our standard agreement at any point in the selection procedure.
 
