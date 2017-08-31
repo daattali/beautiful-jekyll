@@ -2,13 +2,16 @@
 layout: post
 title: Who's the Gabru?
 subtitle: Udta Punjab is India’s Requiem for a Dream.
-tags: movie review, bollywood, politics
+bigimg: "/img/udta.jpeg"
+image: "/img/udta.jpeg"
+share-img: "/img/udta.jpeg"
+tags: movie-review bollywood politics
 ---
 Hello World. It feels nice to be back. Ever since I have been home after compres in Pilani, the Saturday morning movie has almost become a ritual. Oh how I love Pune, for its cheap movie tickets!
 
 Following the ritual, I found myself buying a ticket for _Udta Punjab_ yesterday morning.
 
-![](https://i.ytimg.com/vi/EJylz_9KYf8/maxresdefault.jpg)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/EJylz_9KYf8" frameborder="0" allowfullscreen></iframe>
 
 The film opens with a shot of a discus thrower putting his skills to use when throwing a packet of drugs across the border from Pakistan to India, which is followed by Shahid’s Tommy Singh dancing and singing praises of the ‘chitta’ powder and the magical realism that he associates with it. The whole of the film is filled with such eye-opening trials and tribulations Punjab and its youth today face, with a wonderful background score to amplify things on-screen.
 
