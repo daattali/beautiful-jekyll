@@ -11,14 +11,14 @@ The capstone course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| [Organizations submit proposals](#organizations-submit-proposals) (finalized version) | December 31, 2017 (Sunday) |
-| [Students rate proposals](#students-rate-proposals) | January 12, 2018 (Friday) |
-| [Selection of proposals](#selection-of-proposals) | January 19, 2018 (Friday)  |
-| [Partners accept invitations](#partners-accept-invitations) | January 29, 2018 (Monday) |
-| [Partners provide data](#partners-provide-data)  | February 5, 2018 (Monday) |
+| [Organizations submit proposals](#organizations-submit-proposals) (finalized version) | December 31, 2017  |
+| [Students rate proposals](#students-rate-proposals) | January 12, 2018  |
+| [Selection of proposals](#selection-of-proposals) | January 19, 2018   |
+| [Partners accept invitations](#partners-accept-invitations) | January 29, 2018  |
+| [Partners provide data](#partners-provide-data)  | February 5, 2018  |
 | [Partner presentations](#partner-presentations)       | February 5 - March 9, 2018 |
 | [Students rate the projects](#students-rate-the-projects)  | March 9 - March 16, 2018 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018 (Monday) |
+| [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018  |
 | [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 |
 
 
