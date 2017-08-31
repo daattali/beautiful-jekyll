@@ -20,7 +20,7 @@ Within reason. Please contact us at `sthg_capstone@sthg.ubc.ca` if you have conc
 
 #### 4. Can an organization submit more than one project proposal?
 
-Yes, assuming you are willing and able to supervised multiple capstone projects simultaneously, giving each one the attention it deserves. In this situation it's possible that we will give priority to only one of the projects, so as to give other candidate partners a chance at participating. Also, the projects should be sufficiently different so that there is little overlap, and partners should be willing to put in time to work with each student group.
+Yes, assuming you are willing and able to supervise multiple capstone projects simultaneously, giving each one the attention it deserves. In this situation it's possible that we will give priority to only one of the projects, so as to give other candidate partners a chance at participating. Also, the projects should be sufficiently different so that there is little overlap, and partners should be willing to put in time to work with each student group.
 
 #### 5. Will the students sign a non-disclosure agreement?
 
