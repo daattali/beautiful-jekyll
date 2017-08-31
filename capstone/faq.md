@@ -4,7 +4,7 @@ title: Capstone FAQ
 
 ---
 
-Here are answers to some frequently asked questions regarding our capstone course. Don't see the answer to your question here, or elsewhere on the capstone course website? Please contact us at `sthg_capstone@sthg.ubc.ca` -- we'll be happy to talk with you!
+Here are answers to some frequently asked questions regarding our capstone course. Don't see the answer to your question here, or elsewhere on the capstone course website? Please contact us at `sthg_capstone@sthg.ubc.ca` -- maybe we'll add your question to this FAQ page!
 
 #### 1. Is there a fee to participate as a partner?
 
