@@ -63,12 +63,13 @@ We expect our student groups to
 
 ### Expectations of Capstone Partners
 
-- You should be able to provide our students with ample data that is relevant to a question/problem faced by your organization. This need not belong to the capstone partner's organization -- for example, it could come freely online.
-    - Datasets must be sufficiently clean, and an appropriate and size that the students will be able to load into R and/or Python in a reasonable amount of time and effort.
+- You should be able to provide our students with ample data that is relevant to a question/problem faced by your organization. This need not belong to the capstone partner's organization -- for example, it could come freely online. Datasets must be sufficiently clean, and an appropriate and size that the students will be able to load into R and/or Python in a reasonable amount of time and effort.
 
 - The partner must be available to meet with MDS students working on the capstone project (in person ideally) every 1-2 weeks during the two months students are working on the capstone project.
 
 - The partner is expected to be present (in person or remotely) for the students' final presentation of the capstone project (whether at UBC or at your organization).
+
+- The partner should be on board with the educational goals of the capstone project, and understand that this partnership isn't simply 4 "free data scientists" for two months. The partner should be excited about their problem and the educational goals of the project.
 
 - The partner must come to an agreement about data and product sharing, licensing and intellectual product rights. The MDS program will support agreements that benefit both the students and the partners. Please note that it will be key for the students to share some aspect of the project in their portfolios/curriculum vitae during their job search following graduation from the MDS program.
 
