@@ -6,10 +6,10 @@ title: Guidelines for Writing a Capstone Project Proposal
 
 The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](./capstone/about) page to learn more about the type of projects we address through our capstone course.
 
-Your proposal should be:
+Your proposal should be
 
-- One page or less (plus a possible appendix containing reference material).
-- Submitted as a pdf file.
+- one page maximum (plus a possible appendix containing reference material), and
+- submitted as a pdf file, to `sthg_capstone@sthg.ubc.ca`.
 
 In addition, please provide a one-sentence description of the project for us to put next to your project name for the students to see. You can simply indicate this in the email you send upon submission.
 
