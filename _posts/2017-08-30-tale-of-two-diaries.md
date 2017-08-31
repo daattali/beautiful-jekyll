@@ -2,9 +2,9 @@
 layout: post
 title: A Tale of Two Diaries
 subtitle: Bangalore and Angamaly
-bigimg: "/img/cover.jpg"
-image: "/img/cover.jpg"
-share-img: "/img/cover.jpg"
+bigimg: "/img/angamaly.jpg"
+image: "/img/angamaly.jpg"
+share-img: "/img/angamaly.jpg"
 tags: movie-review life
 ---
 
