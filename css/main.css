@@ -1,3 +1,6 @@
+---
+---
+
 @import url("pygment_highlights.css");
 
 /* --- General --- */
@@ -100,6 +103,10 @@ img {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  {% if site.bgimage %}
+  background-image: url({{ site.bgimage }});
+  background-attachment: fixed;
+  {% endif %}
 }
 
 .navbar-custom .nav li a {
@@ -261,6 +268,10 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
+  {% if site.bgimage %}
+  background-image: url({{ site.bgimage }});
+  background-attachment: fixed;
+  {% endif %}
 }
 
 footer a {
