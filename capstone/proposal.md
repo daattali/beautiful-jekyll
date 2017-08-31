@@ -31,8 +31,8 @@ Describe the data that you will make available to the students. How much data is
 
 What product(s) would you like to receive from our students, and what (in general) should it communicate or have the ability to do? Examples:
 
-- A dashboard such as a `shiny` app to explore an aspect of your data;
-- An `R` package with documentation to simplify an analysis;
+- A dashboard such as a `shiny` app to explore an aspect of your data
+- An `R` package with documentation to simplify an analysis
 - A data pipeline that includes some data science model
 - A report outlining student findings
 
