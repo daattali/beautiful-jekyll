@@ -5,9 +5,7 @@ title: About the Capstone Course
 ---
 
 
-During the last two months of the MDS program (mid April to late June each year), our students work in teams with an external capstone partner and a teaching fellow mentor to address a question facing the capstone partner's organization using data science. Read on to learn more about the type of projects that we address!
-
-Do you belong to an organization that is interested in participating as a capstone partner? Check out our ["Should I Participate?"](./capstone/should_i_participate) page. Want to apply to be a capstone partner? Check out our [selection procedure](./captone/selection). We are eager to hear from you!
+During the last two months of the MDS program (mid April to late June each year), our students work in teams with an external capstone partner and a teaching fellow mentor to address a question facing the capstone partner's organization using data science. This page provides an overview of the MDS capstone project. You may also be interested in the [capstone proposal guidelines](./capstone/proposal), the [timeline and procedures](./captone/selection), and the [FAQ](./capstone/faq). 
 
 ## The Capstone Projects
 
