@@ -2,9 +2,9 @@
 layout: post
 title: A Tale of Two Diaries
 subtitle: Bangalore and Angamaly
-bigimg: "/img/angamaly.jpg"
-image: "/img/angamaly.jpg"
-share-img: "/img/angamaly.jpg"
+bigimg: "/img/cover.jpg"
+image: "/img/cover.jpg"
+share-img: "/img/cover.jpg"
 tags: movie-review life
 ---
 
@@ -18,7 +18,7 @@ It has been just over two months since I came to Bangalore to pursue my thesis i
  My time here has been really good so far. Here is a list (non-exhaustive, a bigger list sometime later) of realizations that I have had since I came here :-
 
 * If you stare at something for long enough, you understand it. Or at least you think you understand it. In fact, I recently realized that, operationally, differentiating between 'I understand' and 'I think I understand' is one crucial aspect of learning.
-* Seemingly distinct ideas might be connected. For example, I am now reading up about a theory that connects complexity theory in computer science to black holes. Appreciating the theory has greatly enhanced my respect for quantum gravity theorists. 
+* Seemingly distinct ideas might be connected. For example, I am now reading up about a [theory](https://www.quantamagazine.org/wormhole-entanglement-and-the-firewall-paradox-20150424/) that connects complexity theory in computer science to black holes. Appreciating the theory has greatly enhanced my respect for quantum gravity theorists. 
 * You might have heard that Bangalore traffic is bad. It is not. It is disgustingly pathetic and has the capability of sucking the life out of you. Once, a 2-kilometre cab commmute took me almost half an hour! And this is very normal apparently.
 
 So much for Bangalore Diaries now. I promise to write more later. Onto something else.
@@ -33,7 +33,7 @@ The plot and premise might seem inspired from Gangs of Wasseypur, but it is an e
 
 But the standout for me in the film was the way each character was written and played. It is important to note here that _Angamaly Diaries_ has no known or established actors - the film marks the first break for 86 actors! The clarity with which the writers wrote this film is worthy of applause. I always knew what every character's next move was going to be, but never yawned in anticipation of these moves. I do have a feeling that this script would have been very tough to direct, and there the director Lijo Jose Pellissery shows outstanding class. He never lets you take your eyes off the screen! The plot, for the most part, concentrates on a gang war and how in the war, human life can be bartered for money. It follows the conventional three-act structure with an effortless brilliance. We get a tour of the titular character Vincent Pepe's childhood, love life, and _goondagiri_. We get to know how the local culture and people of Angamaly have influenced him and his circumstances. I would not like to reveal too much about the plot itself, as that would take away from the charm of the film. Like I mentioned earlier, there is no suspense in the plot, but the predictability is a very important part of enjoying the film.
 
-Special mention to the jawdropping 11-minute single shot climax, which is so exquisitely executed by the cinematographer Girish Gangadharan. It is truly unlike anything I have seen in Indian cinema, and it reminded me of some scenes in [_Birdman_](http://www.imdb.com/title/tt2562232/) (my favourite English film of this decade) shot by the great Emmanuel Lubezki.  I have a feeling that both Gangadharan and Pellissery are going to remain on my stalking list for a long time. Here is Pellissery talking about shooting the climax (Warning: Spoilers in the video)
+Special mention to the jawdropping 11-minute single shot climax, which is exquisitely executed by the cinematographer Girish Gangadharan. It is truly unlike anything I have seen in Indian cinema, and it reminded me of some scenes in [_Birdman_](http://www.imdb.com/title/tt2562232/) (my favourite English film of this decade) shot by the great Emmanuel Lubezki.  I have a feeling that both Gangadharan and Pellissery are going to remain on my stalking list for a long time. Here is Pellissery talking about shooting the climax (Warning: Spoilers in the video)
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/-NGy0R9vTFE" frameborder="0" allowfullscreen></iframe>
 
