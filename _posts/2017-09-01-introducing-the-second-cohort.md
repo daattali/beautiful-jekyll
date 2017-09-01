@@ -22,7 +22,7 @@ These incoming students were chosen from a pool of over 500 applications, which 
 The application process for the 2018-2019 cohort is expected to open in late 2017.
 (For any prospective students reading this, you may be interested in our [advice for applying to the MDS program](/resources_pages/applicationAdvice/).)
 
-Also, a quick update on our first cohort: the first MDS cohort graduated at the end of June, 2017 (19 students). Many of our graduates are already settled into positions at Amazon, Microsoft, and a range of other companies and government organizations. Most of our graduates have (so far) remained in the Vancouver area and the class already had its first mini-reunion last week. We intend to release more information about the employment outcomes of our graduates as we collect more data.
+Also, an update on our first cohort: the first MDS cohort graduated at the end of June, 2017 (19 students). Many of our graduates are already settled into positions at Amazon, Microsoft, and a range of other companies and government organizations. Most of our graduates have (so far) remained in the Vancouver area and the class already had its first mini-reunion last week. We intend to release more information about the employment outcomes of our graduates as we collect more data.
 
 On behalf of the MDS team, we're looking forward to another exciting year of data science!
 
