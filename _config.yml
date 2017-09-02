@@ -65,7 +65,7 @@ url-pretty: "UBC-MDS.github.io"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+#disqus: "ubc-mds-blog"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
