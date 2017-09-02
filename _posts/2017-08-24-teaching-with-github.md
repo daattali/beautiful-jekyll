@@ -2,6 +2,7 @@
 layout: post
 title: Teaching with GitHub
 tags: [github]
+comments: true
 ---
 
 In this post I will describe the system we use for delivering courses via GitHub in the [UBC MDS program](https://ubc-mds.github.io). I will first describe our high level goals and how we tackled them, and then discuss some implementation details. This post assumes the reader is familiar with git and GitHub and focuses more on the technical setup than the pedagogical implications.
