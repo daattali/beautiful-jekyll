@@ -7,10 +7,6 @@
 url: "http://username.github.io"
 baseurl: ""
 
-# If you want a background image you can add it here.
-bgimage: "/img/bgimage.png"
-
-
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
@@ -41,6 +37,18 @@ avatar: "/img/avatar-icon.png"
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 # title-img: /path/to/image
+
+# --- Background colour/image options --- #
+
+# By default, the navigation bar and footer have a light gray background, and the main page
+# has a white background. You can specify a different background colour or a background image
+# for the navigation bar, the main page, and the footer.
+# navbar-col: orange
+# navbar-img: "/img/bgimage.png"
+# footer-col: blue
+# footer-img: "/img/bgimage.png"
+# page-col: #FF0000
+# page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
 
