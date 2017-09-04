@@ -9,6 +9,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ### Project/company websites
 
+{: .table.table-responsive}
 | Website | Description |
 | :------ |:----------- |
 | [teampass.net](http://teampass.net) | Collaborative Passwords Manager |
@@ -25,6 +26,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ### Personal websites
 
+{: .table.table-responsive}
 | Website | Who | What |
 | :------ |:--- | :--- |
 | [deanattali.com](http://deanattali.com) | Dean Attali | Creator of Beautiful Jekyll |
