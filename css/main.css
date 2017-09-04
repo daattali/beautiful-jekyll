@@ -534,6 +534,9 @@ footer .theme-by {
 table {
   padding: 0;
 }
+table.table.table-responsive {
+  display: block;
+}
 table tr {
   border-top: 1px solid #cccccc;
   background-color: #ffffff;
