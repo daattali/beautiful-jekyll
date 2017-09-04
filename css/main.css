@@ -12,6 +12,13 @@ body {
   color: #404040;
   position: relative;
   background: #FFF;
+  {% if site.page-col %}
+  background: {{ site.page-col }};
+  {% endif %}
+  {% if site.page-img %}
+  background-image: url({{ site.page-img }});
+  background-attachment: fixed;
+  {% endif %}
 }
 p {
   line-height: 1.5;
@@ -104,8 +111,11 @@ img {
   background: #F5F5F5;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  {% if site.bgimage %}
-  background-image: url({{ site.bgimage }});
+  {% if site.navbar-col %}
+  background: {{ site.navbar-col }};
+  {% endif %}
+  {% if site.navbar-img %}
+  background-image: url({{ site.navbar-img }});
   background-attachment: fixed;
   {% endif %}
 }
@@ -269,8 +279,11 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
-  {% if site.bgimage %}
-  background-image: url({{ site.bgimage }});
+  {% if site.footer-col %}
+  background: {{ site.navbar-col }};
+  {% endif %}
+  {% if site.footer-img %}
+  background-image: url({{ site.footer-img }});
   background-attachment: fixed;
   {% endif %}
 }
