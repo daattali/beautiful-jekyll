@@ -173,7 +173,6 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 | Website | Description |
 | :------ |:----------- |
-| [teampass.net](http://teampass.net) | Collaborative Passwords Manager |
 | [derekogle.com/fishR](http://derekogle.com/fishR/) | Using R for Fisheries Analyses |
 | [bigdata.juju.solutions](http://bigdata.juju.solutions) | Creating Big Data solutions Juju Solutions |
 | [joecks.github.io/clipboard-actions](http://joecks.github.io/clipboard-actions/) | Clipboard Actions - an Android app |
