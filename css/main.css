@@ -280,7 +280,7 @@ footer {
   margin-top: 50px;
   font-size: 14px;
   {% if site.footer-col %}
-  background: {{ site.navbar-col }};
+  background: {{ site.footer-col }};
   {% endif %}
   {% if site.footer-img %}
   background-image: url({{ site.footer-img }});
