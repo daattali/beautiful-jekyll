@@ -9,7 +9,7 @@ The first step in applying to participate as a capstone partner involves writing
 Your proposal should be
 
 - one page maximum (plus a possible appendix containing reference material), and
-- submitted as a pdf file, to `sthg_capstone@sthg.ubc.ca`.
+- submitted as a pdf file, to `capstone-mds@science.ubc.ca`.
 
 In addition, please provide a one-sentence description of the project for us to put next to your project name for the students to see. You can simply indicate this in the email you send upon submission.
 
@@ -42,4 +42,4 @@ Outline the gist of the legalities you intend to have in place, if any -- partic
 
 We understand that you may require some restrictions to be put in place, but we also would like for our students to have some freedom to talk about the work they've done when applying for jobs. We want our students to know about these restrictions up-front so that they can make an informed decision about the project.  
 
-Feel free to ask us about our standard UBC NDA. Contact us at `sthg_capstone@sthg.ubc.ca`.
+Feel free to ask us about our standard UBC NDA. Contact us at `capstone-mds@science.ubc.ca`.
