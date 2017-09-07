@@ -16,9 +16,55 @@ Students who miss a quiz or assignment, need to provide a doctor's note and sche
 
 Students who miss more than 3 days of classes/labs in a row need to provide documentation in the form of a doctor's note or written request for leave to the MDS Leadership Team. Failing to present a doctor's note or written request may result in a failing grade. The Leadership Team will contact the student with an action plan to make up any missed quizzes or assignments.
 
-## Academic Standing: Passing/Failing
+## Grades and Academic Standing
 
-UBC courses are graded out of 100%. To pass an MDS course a student must score 60% or above. To graduate from MDS, a student must pass all courses, with no more than 3 courses in the 60%-67% range. With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails the quiz component of a course (below 60%) then their final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail the quiz component of more than 3 courses.
+
+#### Individual grades: raw and scaled
+
+All grades in the MDS program are on a 3-point scale based on our [rubrics](https://github.com/UBC-MDS/public/tree/master/rubric).
+These raw scores between 0 and 3 are then mapping to percentages using the following scheme:
+
+| Raw score | Scaled Score |
+|-----------|---------|
+| 0 | 0% |
+| 1 | 50% |
+| 2 | 80% |
+| 3 | 95% |
+
+To get above 95% in a course you need to earn bonus points by either doing something amazing on normal questions or by doing
+the questions marked "optional".
+We plan/hope to use this mapping for all MDS courses but it is of course possible that we will need to
+revisit it later in case things are not working out sanely.
+
+#### Re-grading
+
+If you have concerns about the way your work was graded, please contact the TA who graded it _within one week of having the grade returned to you_. After this one-week window, we may deny your request for re-evaluation. Also, please keep in mind that your grade may go up or down as a result of re-grading.
+
+
+#### Letter grades
+For Master's students, percentage grades are converted to letter grades as follows:
+
+| Percentage (%) |	Letter Grade|
+|---------------|---------------|
+| 90-100 | 	A+ |
+| 85-89 | 	A |
+| 80-84 |	A- |
+| 76-79 | 	B+ |
+| 72-75 |	B |
+| 68-71 |	B- |
+| 64-67 |	C+ |
+| 60-63 |	C |
+| 0-59 	| F (Fail)  |
+
+Source: the 2nd table in <http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0>.
+
+#### Failed courses and C/C+ grades
+
+UBC courses are graded out of 100%. To pass an MDS course a student must score 60% or above. To graduate from MDS, a student must pass all courses, with no more than 3 courses in the 60%-67% range (C or C+).
+
+#### Final course grades
+
+With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails the quiz component of a course (below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail the quiz component of more than 3 courses.
 
 ## Quizzes
 
