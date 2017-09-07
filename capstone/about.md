@@ -39,3 +39,13 @@ We expect our student groups to
 - work at least four full-time days per week on the project;
 - document and present their work at UBC (using written, oral, and visual means) at various points throughout the course.
 - optionally (but strongly recommended), present their final product and findings to the capstone partner's organization.
+
+## Past projects
+
+2016-2017: 
+
+- [UBC Centre for Teaching, Learning and Technology](http://ctlt.ubc.ca/)
+- [Unbounce](https://unbounce.com/)
+- [Coast Mountain Bus Company](https://www.translink.ca/en/About-Us/Corporate-Overview/Operating-Companies/CMBC.aspx)
+- [Rio Tinto](http://www.riotinto.com/)
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats)
