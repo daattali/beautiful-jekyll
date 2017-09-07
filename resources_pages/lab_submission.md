@@ -16,7 +16,7 @@ repo is public to all students and is where you can access lectures, due dates, 
 
 ### Submission
 We anticipate that you will clone your lab-specific repository and do your work from
-within there. When you push something back to https://github.ubc.ca/ then you have submitted the assignment.
+within there. When you push something back to <https://github.ubc.ca/> then you have submitted the assignment.
 You can push changes as many times as you want before the deadline; only the final version will be graded.
 
 ### Deadline
