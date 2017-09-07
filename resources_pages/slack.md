@@ -7,6 +7,7 @@ title: Slack usage guidelines
 
 We will be using [Slack](www.slack.com) as our primary means of electronic communication in the MDS program. We will invite you to our Slack team when the program starts.
 
+
 #### Channels
 
 Our Slack team, `UBC-MDS`, contains many _channels_ for conversation. We will enrol you in the channels for the 25 MDS courses, as well as [#data-science-careers](https://ubc-mds.slack.com/messages/data-science-careers/details/), [#git-general](https://ubc-mds.slack.com/messages/git-general/details/), [#python-general](https://ubc-mds.slack.com/messages/python-general/details/) and [#r-general](https://ubc-mds.slack.com/messages/r-general/details/). You should be automatically enrolled in the [#general](https://ubc-mds.slack.com/messages/general/details/) and [#random](https://ubc-mds.slack.com/messages/random/details/) channels when you join Slack.
@@ -14,9 +15,11 @@ Our Slack team, `UBC-MDS`, contains many _channels_ for conversation. We will en
 These channels are all public. You can create private channels as well. For example, each year the students
 typically create a private channel for students only. After you graduate from the program, we will invite you to the UBC MDS Alumni Slack team.
 
+
 #### Direct Messages
 
 A direct message thread is different from a private channel. To open a direct message, go to `DIRECT MESSAGES` on the left-hand sidebar and click on the little `+` sign. Then, type in the names of the people who should be part of the direct message thread.
+
 
 #### Usernames
 
@@ -24,6 +27,7 @@ Unlike other messaging platforms you might be used to, the namespace of username
 words, if your name is Jamie it's perfectly fine to have your username be `@jamie` even though there are certainly a lot of Jamies out
 there in the world and you might have no hope to get `jamie@gmail.com` or a CWL of `jamie`, etc. As long as you are the only `jamie` in UBC-MDS, you're good. It's generally easier to figure out who's who
 if we all keep our usernames simple. If you've already created a complicated username, you can change it at any time; see instructions [here](https://get.slack.help/hc/en-us/articles/216360827-Change-your-username).
+
 
 #### Formatting
 
@@ -40,10 +44,12 @@ etc.
 #### Browser vs. desktop app
 Slack can be accessed via the [web interface](https://ubc-mds.slack.com) or via the [desktop app](https://slack.com/downloads/). You are free to decide which one you prefer. We do suggest that you consider the desktop version, however, since we will be using Slack so much in the program. There is also a mobile app for your phone, if you want to be extra connected.
 
+
 #### Notifications
 We don't want to wake you up with our Slack annoucements! You can edit your notification settings by clicking on the "UBC-MDS" at the upper-left and selecting "Preferences". From here you can decide how invasive you want Slack to be. One useful feature is the Do Not Disturb period, which by default is from 10 PM to 8 AM. If you have different hours you may want to adjust this accordingly.
 
 Sometimes we will use `@students` when we make announcements that we want all students to receive. This has the same effect as directly mentioning everyone in the `students` user group and will make it more likely for you to receive a notification. However, once again, we don't want to wake you up to read these announcements immediately! We just want you receive them reasonably soon. Please set your notification preferences accordingly.
+
 
 ## Asking for help
 
@@ -56,9 +62,11 @@ and generally encourages a vibrant Slack ecosystem.
 If you need to ask a course-related question privately, please open up a direct message thread with both teaching fellows _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also
 keeps the others up to date on what is happening in the course.
 
+
 #### Asking a procedural question
 
 If you want to ask a procedural question (not about the material, for example asking to reschedule a quiz due to an important event or job interview) then you can leave out the TA(s) and just communicate with the teaching fellows. In this case, please direct message _both_ teaching fellows as we make these decisions together anyway and it's much simpler if we are both part of the message thread.
+
 
 #### Asking about your marks
 
@@ -66,9 +74,11 @@ If you have a question about how your lab or quiz was marked, please contact the
 
 Note: if you can't remember who your TA is for a particular course, this information is available at https://github.ubc.ca/orgs/ubc-mds-2016/teams. The team for a particular course will consist of the instructor, the MDS teaching fellows, and the TA(s). Although their Slack username may not be the same as their GitHub username, there is hopefully enough information to figure it out
 
+
 #### How to ask
 
 We illustrate best practices via two examples.
+
 
 ##### Example of a bad post
 
@@ -86,6 +96,7 @@ Explanation: this post is problematic for the following reasons...
 - it indicates that the student has not read the preceding conversation about this topic.
 - code and error message not formatted properly with `code font`.
 - the actual command used to run the code is not specified.
+
 
 ##### Example of a good post
 
@@ -107,6 +118,19 @@ Explanation: this post is well-crafted for the following reasons...
 - it indicates that the student has read the preceding conversation and is still stuck.
 - code and error message formatted properly.
 - the actual command used to run the code (`python test.py`) is specified.
+
+#### Where to ask
+
+Slack is intended to ephemeral content. If you have a question/post/comment that may be useful in the long-term, please
+instead open an Issue in the students repo of the relevant course on GitHub. Examples of content that is better posted on GitHub include:
+
+- useful resources/readings that the instructor may want to add to the course README for future years
+- hints/workarounds/fixes for the labs that the instructor may want to incorporate into the lab for current/future years
+
+Examples of content that are better posted on Slack include:
+
+- a conceptual question about something covered in lecture/lab
+- asking for help with a bug in your code
 
 #### Privacy
 
