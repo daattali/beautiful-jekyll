@@ -40,7 +40,7 @@ For Master's students, percentage grades are converted to letter grades as follo
 | 60-63 |	C |
 | 0-59 	| F (Fail)  |
 
-Source: the 2nd table in http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0.
+Source: the 2nd table in <http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0>.
 
 #### Re-grading
 
