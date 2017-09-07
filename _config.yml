@@ -29,6 +29,10 @@ navbar-links:
     - Course Descriptions: "descriptions"
     - Schedule: "calendar"
     - Policies and Regulations: "policies"
+  Capstone:
+    - About: "capstone/about"
+    - Partner info: "capstone/partner_info"
+    - Timeline: "capstone/timeline"
   Resources: "resources"
   Jobs: "jobs"
   Official website: "http://masterdatascience.science.ubc.ca/"
