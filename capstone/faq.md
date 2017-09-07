@@ -24,7 +24,7 @@ Yes, assuming you are willing and able to supervise multiple capstone projects s
 
 #### 5. Will the students sign a non-disclosure agreement?
 
-We offer a standard UBC NDA that we can share with interested organizations. Contact us at `sthg_capstone@sthg.ubc.ca`.
+We offer a standard UBC NDA that we can share with interested organizations. Contact us at `capstone-mds@science.ubc.ca`.
 
 #### 6. Can the proposed project be "solved"?
 
