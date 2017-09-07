@@ -18,6 +18,12 @@ typically create a private channel for students only. After you graduate from th
 
 A direct message thread is different from a private channel. To open a direct message, go to `DIRECT MESSAGES` on the left-hand sidebar and click on the little `+` sign. Then, type in the names of the people who should be part of the direct message thread.
 
+#### Usernames
+
+Unlike other messaging platforms you might be used to, the namespace of usernames is specific to an individual Slack team. In other
+words, if your name is Jamie it's perfectly fine to have your username be `@jamie` even though there are certainly a lot of Jamies out
+there in the world and you might have no hope to get `jamie@gmail.com` or a CWL of `jamie`, etc. As long as you are the only `jamie` in UBC-MDS, you're good. It's generally easier to figure out who's who
+if we all keep our usernames simple. If you've already created a complicated username, you can change it at any time; see instructions [here](https://get.slack.help/hc/en-us/articles/216360827-Change-your-username).
 
 #### Formatting
 
