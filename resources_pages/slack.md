@@ -50,6 +50,10 @@ We don't want to wake you up with our Slack annoucements! You can edit your noti
 
 Sometimes we will use `@students` when we make announcements that we want all students to receive. This has the same effect as directly mentioning everyone in the `students` user group and will make it more likely for you to receive a notification. However, once again, we don't want to wake you up to read these announcements immediately! We just want you receive them reasonably soon. Please set your notification preferences accordingly.
 
+#### Reactions
+
+On the subject of notifications, one nice feature of Slack is the reactions. Anyone can react to a message by anyone else, for example with a thumbs up emoji. This is different from sending a message containing that emoji in that it doesn't trigger notifications. This is hugely helpful. For example, if someone tells you something and you just want to say "OK" or "thanks", try a reaction instead of a new message, since you don't really need to notify the person of your response -- they will see it next time they are on Slack. The reactions are particularly useful when a large number of people need to answer something. For example if I ask "who is available to study Thursday night?" and then 30 people respond with "me!" -- well, that triggers a lot of notifications. Instead, if someone reacts with a check mark then others can simply click the check mark to add to the reaction. This way everyone can see who is available without any notifications being triggered. 
+
 
 ## Asking for help
 
