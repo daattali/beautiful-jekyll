@@ -29,7 +29,6 @@ subtitle:
 - [Data Visualization Group](http://www.meetup.com/Vancouver-Data-Visualization/)
 
 #### **Facebook**
-- [UBC MDS 2016 Cohort](https://www.facebook.com/groups/599442276901184/)
 - [UBC Master of Data Science](https://www.facebook.com/search/top/?q=ubc%20master%20of%20data%20science)
 - [Data Science Interest Group](https://www.facebook.com/Data-Science-Interest-Group-DSIG-941598902591276/)
 - [Data Science Association](https://www.facebook.com/socaldatascience/)
