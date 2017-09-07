@@ -20,7 +20,10 @@ The capstone course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 | [Students rate the projects](#students-rate-the-projects)  | March 9 - March 16, 2018 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018  |
 | [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 |
-
+| [Phase 1: student proposals](#student-proposals) |  April 24 - May 4, 2018 (approx) |
+| [Phase 2: project development](#project-development-stage) | May 7 - June 8, 2018 (approx)  |
+| [Phase 3: project polishing](#project-polishing-stage) | June 11 - 22, 2018 (approx) |
+| [Final presentations](#final-presentations) | June 28, 2018 (approx) |
 
 ## Procedure
 
@@ -43,7 +46,7 @@ A list of finalized proposals, along with one-sentence summaries, will be posted
 
 #### Selection of proposals
 
-The MDS leadership team will select proposals based primarily on student interest, and will invite the successful organizations to be a capstone partner. 
+The MDS leadership team will select proposals based primarily on student interest, and will invite the successful organizations to be a capstone partner.
 
 #### Partners accept invitations
 
@@ -64,13 +67,40 @@ We require that the capstone partners give a 30-minute presentation (allowing fo
 
 #### Students rate the projects
 
-After the presentations, the students assign a final rating to the projects. 
+After the presentations, the students assign a final rating to the projects.
 
 #### Students are assigned to projects
 
-Based on student interest, the MDS leadership team assigns student groups to the projects. In the unlikely scenario that there is insufficient interest in a project, no student group will be assigned to that project. 
+Based on student interest, the MDS leadership team assigns student groups to the projects. In the unlikely scenario that there is insufficient interest in a project, no student group will be assigned to that project.
 
 #### Kickoff meetings
 
 The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project.
 
+#### Student proposal stage
+
+Students propose the data product and approach.
+
+  1. The student team works with each other, colleagues, and teaching fellows to develop an approach in a 2-day hackathon.
+  2. Students present the proposal at UBC, to solicit ideas and feedback.
+  3. Students write the proposal. This will be passed to the capstone partner to check that the proposed product is indeed in line with the capstone partner's needs.
+
+#### Project development stage
+
+Students develop the data product. This involves:
+
+    - Regular meetings with the teaching fellow mentor.
+    - Regular meetings with the capstone partner.
+    - Recording your progress and explorations in a data science notebook.
+
+#### Project polishing stage
+
+Students polish the data product for delivery to the capstone partner:
+
+    1. Deliver the data product after incorporating feedback from teaching fellows and colleagues, along with a final report.
+    2. Briefly present product(s) in an end-of-program celebration (not graded).
+    3. At the end, students also reflect on the project in a short individual report.
+
+#### Final presentations
+
+Students present the final data product and approach to the class.
