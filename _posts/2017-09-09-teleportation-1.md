@@ -2,9 +2,9 @@
 layout: post
 title: Quantum Teleportation - I
 subtitle: Entanglement and Classical Messaging
-bigimg: "https://i.ytimg.com/vi/dAaHHGHuy1c/maxresdefault.jpg"
-image: "https://i.ytimg.com/vi/dAaHHGHuy1c/maxresdefault.jpg"
-share-img: "https://i.ytimg.com/vi/dAaHHGHuy1c/maxresdefault.jpg"
+bigimg: "/img/teleport.jpg"
+image: "/img/teleport.jpg"
+share-img: "/img/teleport.jpg"
 tags: physics thesis 
 ---
 
