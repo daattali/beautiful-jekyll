@@ -21,7 +21,7 @@ Quantum Mechanics is weird. It contradicts numerous classical notions of the wor
 
 One weird feature of QM is **entanglement**. Entanglement basically refers to a correlation between the measured properties of two separate particles. What this means is that a single particle cannot be described independently of the other particle. One cannot write the state of each individual particle separately - the only description one has in such a situation is the _combined_ state of both the particles.
 
-To get a clearer view of entaglement, it is worth understanding how a single particle in quantum mechanics is described. Lets say we want to measure the spin of this particle - whether it is _up_ or _down_. As you [might know already](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat), the spin of the particle at any given instant is neither _up_ nor _down_, but in fact a **superposition** of the two configurations. It is only the act of measuring that makes the spin take either of the values. If we prepare a large ensemble of identical particles and start measuring their spins one by one, we'll get _up_ and _down_ as the spin values with equal probability. This can be represented mathematically by a state $ |\psi \rangle $ as :-
+To get a clearer view of entaglement, it is worth understanding how a single particle in quantum mechanics is described. Lets say we want to measure the spin of this particle - whether it is _up_ or _down_. As you [might know already](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat), the spin of the particle at any given instant is neither _up_ nor _down_, but in fact a **superposition** of the two configurations. It is only the act of measuring that makes the spin take either of the values. If we prepare a large ensemble of identical particles and start measuring their spins one by one, we'll get _up_ and _down_ as the spin values with equal probability. This can be represented mathematically by a state $$ |\psi \rangle $$ as
 
 $$ |\psi \rangle = \frac{1}{\sqrt{2}} |0 \rangle + \frac{1}{\sqrt{2}} |1 \rangle $$
 
@@ -33,7 +33,7 @@ $$(\frac{1}{\sqrt{2}}|0 \rangle + \frac{1}{\sqrt{2}}|1 \rangle) (\frac{1}{\sqrt{
 
 But now lets consider the  state 
 
-$$ frac{1}{\sqrt{2}}|00 \rangle + \frac{1}{\sqrt{2}}|11 \rangle $$
+$$ \frac{1}{\sqrt{2}}|00 \rangle + \frac{1}{\sqrt{2}}|11 \rangle $$
 
 One can not imagine taking the tensor product of any two state to obtain the above state. This is an example of an entangled state. The description cannot be decomposed into two separate states, and the states can only be defined **together**.
 
