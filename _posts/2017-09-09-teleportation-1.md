@@ -31,7 +31,7 @@ How do we write the combined state for two independent particles in this prescri
 
 $$(\frac{1}{\sqrt{2}}|0 \rangle + \frac{1}{\sqrt{2}}|1 \rangle) (\frac{1}{\sqrt{2}}|0 \rangle + \frac{1}{\sqrt{2}}|1 \rangle) = \frac{1}{2}|00 \rangle + \frac{1}{2}|01 \rangle + \frac{1}{2}|10 \rangle + \frac{1}{2}|11 \rangle $$
 
-But now lets consider the  state 
+But now lets consider the state 
 
 $$ \frac{1}{\sqrt{2}}|00 \rangle + \frac{1}{\sqrt{2}}|11 \rangle $$
 
@@ -44,11 +44,14 @@ Note that we can still independently measure the particles. But the interesting 
 Entanglement is contrary to anything classical, and is often referred to as the **essence of quantum mechanics**.
 
 # How do I send a secure message classically?
+
+
 Let's suppose Alice and Bob are far away from each other and have one classical bit of information each. They also have a channel to communicate messages. Each bit can take value 0 or 1, but lets say that both bits have the same value. Alice and Bob could have met at some time in the past, created their bits, assigned them the same value and then moved on to their respective present positions.
 
 Alice has one more bit with her - and she wishes to send the configuration of this bit to Bob. Lets call the bit the _teleportee_ bit. She proceeds to compare both bits in her possession. If both the bits in her possession are of the same value she sends Bob a classical message reading _same_; if the bits have different value the message reads _different_. Bob, on looking at the message, flips the value of the bit if the message reads _different_ and does not if it reads _same_. So, whatever the initial value of Bob's bit, he always ends up with his bit in the same state as that of the teleportee bit.
 
-Now lets suppose Eve wants to snoop in and know the respective configurations in the protocol. She intercepts the communication channel sent from Alice to Bob. Obviously, she cannot know anything about the original state of the teleportee bit solely from this information. But, in principle, she can probe the brain waves or the gravitational waves around Alice and in the environment to know exactly what the state of the bit was. So, in a sense, we could say that the information about the teleportee bit did in fact exist in the environment between Alice and Bob and we can measure it in principle.
-\item This also implies that the teleportee qubit got teleported to Bob with no information about it existing anywhere in between Alice and Bob. This tenet of non-locality of information is crucial to quantum mechanics.
-\item The process of measuring the qubits destroys the existing entanglement between the qubits.
-\end{itemize}
+Now lets suppose Eve wants to snoop in and know the respective configurations in the protocol. She intercepts the communication channel sent from Alice to Bob. Obviously, she cannot know anything about the original state of the teleportee bit solely from this information. But, theoretically, she can probe the brain waves or the gravitational waves around Alice and in the environment to know exactly what the state of the bit was. So, in a sense, we could say that the information about the teleportee bit did in fact exist in the environment between Alice and Bob and **we can measure it in principle**.
+
+![](https://media.giphy.com/media/vN3fMMSAmVwoo/giphy.gif)
+
+To be continued next week!
