@@ -25,7 +25,7 @@ To get a clearer view of entaglement, it is worth understanding how a single par
 
 $$ |\psi \rangle = \frac{1}{\sqrt{2}} |0 \rangle + \frac{1}{\sqrt{2}} |1 \rangle $$
 
-where $ |0 \rangle $ represents spin _up_ and $ |1 \rangle $ represents spin _down_. The coefficients in front of $ |0 \rangle $ and $ |1 \rangle $ are fixed such that the square of the coefficients gives the probability of finding the particle in the corresponding state. Obviously, the squares of all the coefficients should add up to one, as the sum of probabilities should be one.
+where $ 0 $ represents spin _up_ and $ 1 $ represents spin _down_. The coefficients in front of $ 0 $ and $ 1 $ are fixed such that the square of the coefficients gives the probability of finding the particle in the corresponding state. Obviously, the squares of all the coefficients should add up to one, as the sum of probabilities should be one.
 
 How do we write the combined state for two independent particles in this prescription? We take something called the **tensor product**. I illustrate it below :-
 
