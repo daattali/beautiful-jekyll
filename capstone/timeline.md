@@ -25,10 +25,6 @@ The timeline is below, followed by additional detail on each event.
 | [Phase 3: project polishing](#project-polishing-stage) | June 11 - 22, 2018 (approx) |
 | [Final presentations](#final-presentations) | June 28, 2018 (approx) |
 
-## Procedure
-
-Here are the steps involved in launching a capstone project. Please feel free to correspond with us at `sthg_capstone@sthg.ubc.ca` throughout the process.
-
 #### Organizations submit proposals
 
 Members of an organization interested in participating as a capstone partner should submit a one-page project [proposal](./proposal.md) to `capstone-mds@science.ubc.ca`.
