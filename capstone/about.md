@@ -3,7 +3,7 @@ layout: page
 title: About the Capstone Course
 ---
 
-During the last two months of the MDS program (mid April to late June each year), our students work in teams with an external capstone partner and a teaching fellow mentor to address a question facing the capstone partner's organization using data science. This page provides an overview of the MDS capstone project. You may also be interested in the [partner information](./partner_info), the [timeline and procedures](./timeline). 
+During the last two months of the MDS program (mid April to late June each year), our students work in teams with an external capstone partner and a teaching fellow mentor to address a question facing the capstone partner's organization using data science. This page provides an overview of the MDS capstone project. You may also be interested in the [partner information](/capstone/partner_info), the [timeline and procedures](/capstone/timeline). 
 
 ## The Capstone Projects
 
