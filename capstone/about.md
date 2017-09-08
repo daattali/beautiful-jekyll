@@ -44,8 +44,9 @@ We expect our student groups to
 
 2016-2017: 
 
-- [UBC Centre for Teaching, Learning and Technology](http://ctlt.ubc.ca/)
-- [Unbounce](https://unbounce.com/)
-- [Coast Mountain Bus Company](https://www.translink.ca/en/About-Us/Corporate-Overview/Operating-Companies/CMBC.aspx)
-- [Rio Tinto](http://www.riotinto.com/)
-- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats)
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Empowering employee engagement through AI – Government of BC_
+- [Coast Mountain Bus Company](https://www.translink.ca/en/About-Us/Corporate-Overview/Operating-Companies/CMBC.aspx): _Forecasting Transit Schedules and Congestion Areas_
+- [Rio Tinto](http://www.riotinto.com/): _Tools for Analyzing Mining Drill Data_
+- [UBC Centre for Teaching, Learning and Technology](http://ctlt.ubc.ca/): _edXvis: Interactive Visualization of Student 	Engagement with edX MOOCs_
+- [Unbounce](https://unbounce.com/): _Unbounce Community Forum Analysis_
+
