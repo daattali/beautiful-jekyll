@@ -19,7 +19,7 @@ It has been just over two months since I came to Bangalore to pursue my thesis i
 
 * If you stare at something for long enough, you understand it. Or at least you think you understand it. In fact, I recently realized that, operationally, differentiating between 'I understand' and 'I think I understand' is one crucial aspect of learning.
 * Seemingly distinct ideas might be connected. For example, I am now reading up about a [theory](https://www.quantamagazine.org/wormhole-entanglement-and-the-firewall-paradox-20150424/) that connects complexity theory in computer science to black holes. Appreciating the theory has greatly enhanced my respect for quantum gravity theorists. 
-* You might have heard that Bangalore traffic is bad. It is not. It is disgustingly pathetic and has the capability of sucking the life out of you. Once, a 2-kilometre cab commmute took me almost half an hour! And this is very normal apparently.
+* You might have heard that Bangalore traffic is bad. It is not. It is disgustingly pathetic and has the capability of sucking the life out of you. Once, a 2-kilometre cab commute took me almost half an hour! And this is very normal apparently.
 
 So much for Bangalore Diaries now. I promise to write more later. Onto something else.
 
