@@ -6,16 +6,16 @@ title: Introducing our students
 This is an exciting time for the UBC MDS program, with the second cohort starting their journey in just a few days. 
 We are thrilled about the strength and diversity of our incoming class. Here are some facts about the incoming cohort:
 
-- 44 new students.
-- 21 domestic, 23 international. 
-- 20 women and 24 men (45% women, 55% men). 
+- 43 new students.
+- 21 domestic, 22 international. 
+- 20 women and 23 men (47% women, 53% men). 
 - a variety of academic backgrounds, from psychology to civil engineering to a current UBC medical student who is taking a year out to pursue MDS.
 - previous degrees from UBC, other Canadian universities, the U.S., China, Colombia, France, India, South Africa, Turkey, and Vietnam (see map below).
 
 ![](/img/blog/students_degree_geo.png)
 
 - eight students have another advanced degree prior to MDS.
-- about half the class completed their Bachelor's degree in 2015 or earlier, with 10 of the 44 students having just graduated in 2017.
+- about half the class completed their Bachelor's degree in 2015 or earlier, with 9 of the 44 students having just graduated in 2017.
 
 We were extremely impressed with the applicant pool.
 These incoming students were chosen from a pool of over 500 applications, which were reviewed in the late spring. 
