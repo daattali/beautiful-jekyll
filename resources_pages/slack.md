@@ -63,21 +63,18 @@ One reason we use Slack is so that you can ask for help. If you have a general q
 The reason for this is that often many students have the same question and it is much more efficient to have them answered in a public forum. Beyond that, it's often comforting for students to see other students asking questions,
 and generally encourages a vibrant Slack ecosystem.
 
-If you need to ask a course-related question privately, please open up a direct message thread with both teaching fellows _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also
+If you need to ask a course-related question privately, please open up a direct message thread with the teaching fellow(s) _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also
 keeps the others up to date on what is happening in the course.
 
 
 #### Asking a procedural question
 
-If you want to ask a procedural question (not about the material, for example asking to reschedule a quiz due to an important event or job interview) then you can leave out the TA(s) and just communicate with the teaching fellows. In this case, please direct message _both_ teaching fellows as we make these decisions together anyway and it's much simpler if we are both part of the message thread.
+If you want to ask a procedural question (not about the material, for example asking to reschedule a quiz due to an important event or job interview) then you can leave out the TA(s) and just communicate with the teaching fellow(s).
 
 
 #### Asking about your marks
 
 If you have a question about how your lab or quiz was marked, please contact the TA who marked it. Typically, this will be the person who opens the notification issue in your personal grades repository.
-
-Note: if you can't remember who your TA is for a particular course, this information is available at https://github.ubc.ca/orgs/ubc-mds-2016/teams. The team for a particular course will consist of the instructor, the MDS teaching fellows, and the TA(s). Although their Slack username may not be the same as their GitHub username, there is hopefully enough information to figure it out
-
 
 #### How to ask
 
