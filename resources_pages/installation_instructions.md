@@ -95,13 +95,21 @@ For this program we are using __Python 3__, not __Python 2__, so please choose t
 
 3. Test out the Jupyter notebook: open a Terminal window, and type `jupyter notebook`. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
 
-
-
 #### Windows Users
 
 1. Head to <https://www.continuum.io/downloads> and download the Anaconda version with Python 3.6.
 2. Follow the instructions on that page to run the installer
 3. Test out the Jupyter notebook: open Git Bash, and type ```jupyter notebook```. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
+
+In order to open Jupyter notebook through Git Bash its location needs to be added into the PATH Enviroment Variable. 
+Follow the steps below (for Windows 10):
+
+1. Open System by navigating to "This PC", right click and select properties (or open it directly from the Control Panel)
+2. Select Advanced system settings and then click the Enviroment Variables button
+3. Highlight the Path variable and select Edit
+4. On the edit screen, click New and add the directory of your Python installation (e.g. `C:\Users\<username>\Anaconda3`)
+5. Click New and add the directory of your Jupyter installation (e.g. `C:\Users\<username>\Anaconda3\Scripts`)
+6. Open Git Bash, and type jupyter notebook` to test it out
 
 
 ### __Running Jupyter Notebook__
