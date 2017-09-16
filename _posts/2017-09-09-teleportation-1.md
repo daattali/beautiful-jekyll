@@ -2,7 +2,7 @@
 layout: post
 title: Quantum Teleportation - I
 subtitle: Entanglement and Classical Messaging
-bigimg: "/img/teleport.jpg"
+bigimg: "/img/teleport.jpg"	
 image: "/img/teleport.jpg"
 share-img: "/img/teleport.jpg"
 tags: physics thesis 
@@ -19,7 +19,7 @@ It is, and it isn't. Quantum Teleportation is very peculiar and gives rise to lo
 
 Quantum Mechanics is weird. It contradicts numerous classical notions of the world as we know it. But what's remarkable about QM is that despite being weird, it is the best description one has of nature.
 
-One weird feature of QM is **entanglement**. Entanglement basically refers to a correlation between the measured properties of two separate particles. What this means is that a single particle, if entangled with another particle, cannot be described independently it. One cannot write the state of each individual particle separately - the only description one has in such a situation is the _combined_ state of both the particles.
+One weird feature of QM is **entanglement**. Entanglement basically refers to a correlation between the measured properties of two separate particles. What this means is that a single particle, if entangled with another particle, cannot be described independently of it. One cannot write the state of each individual particle separately - the only description one has in such a situation is the _combined_ state of both the particles.
 
 To get a clearer view of entaglement, it is worth understanding how a single particle in quantum mechanics is described. Lets say we want to measure the spin of this particle - whether it is _up_ or _down_. As you [might know already](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat), the spin of the particle at any given instant is neither _up_ nor _down_, but in fact a **superposition** of the two configurations. It is only the act of measuring that makes the spin take either of the values. If we prepare a large ensemble of identical particles and start measuring their spins one by one, we'll get _up_ and _down_ as the spin values with equal probability. This can be represented mathematically by a state :- 
 
