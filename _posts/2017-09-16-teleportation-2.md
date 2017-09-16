@@ -39,7 +39,7 @@ $$ |B_2 \rangle = \frac{1}{\sqrt{2}} |0 \rangle - \frac{1}{\sqrt{2}} |1 \rangle 
 
 This would imply that $\psi$ is always measured as $B_1$.
 
-#Enough with Math, get me teleported!
+# Enough with Math, get me teleported!
 
 Okay, but really, you can't escape the math! There is a lot it ahead.
 
@@ -57,7 +57,7 @@ We call this qubit the _teleportee_ qubit. An important thing to note is that al
 
 We can write the combined state of the three qubits by taking a tensor product as follows
 
-$$\frac{\alpha}{\sqrt{2}}|000 \rangle + \frac{\alpha}{\sqrt{2}}|011 \rangle + \frac{\beta}{\sqrt{2}}|100 \rangle + \frac{\beta}{\sqrt{2}}|111 \rangle \label{combstate}
+$$\frac{\alpha}{\sqrt{2}}|000 \rangle + \frac{\alpha}{\sqrt{2}}|011 \rangle + \frac{\beta}{\sqrt{2}}|100 \rangle + \frac{\beta}{\sqrt{2}}|111 \rangle $$
 
 with the first entry denoting the teleportee, second denoting Alice's qubit and third denoting Bob's qubit.
 
@@ -81,19 +81,23 @@ $$|01 \rangle = \frac{|B_2 \rangle - |B_4 \rangle}{\sqrt{2}} $$
 
 $$|11 \rangle = \frac{|B_1 \rangle - |B_3 \rangle}{\sqrt{2}} $$
 
-Substituting these expressions in \ref{combstate}, one can write the combined state as 
+Substituting these expressions in equation (7), one can write the combined state as 
 
 $$\frac{|B_1 \rangle(\alpha|0 \rangle + \beta |1 \rangle) + |B_2 \rangle (\alpha |1 \rangle + \beta |0 \rangle) + |B_3 \rangle (\alpha|0 \rangle - \beta |1 \rangle) + |B_4\rangle (\alpha|1 \rangle - \beta |0 \rangle)}{2}$$
 
-We can clearly see from this state that any measurement in the Bell basis will give $B_1, B_2, B_3$ or $|B_4 \rangle$ with equal probability (25 percent). After the measurement, Bob's qubit is left in the state
+We can clearly see from this state that any measurement in the Bell basis will give $B_1, B_2, B_3$ or $B_4$ with equal probability (25 percent). After the measurement, Bob's qubit is left in the state
 
 $$\alpha|0 \rangle + \beta |1 \rangle $$
 
 $$\alpha|1 \rangle + \beta |0 \rangle $$
 
-$$\alpha|0 \rangle - \beta |1 \rangle $$ and 
+$$\alpha|0 \rangle - \beta |1 \rangle $$ 
 
-$$\alpha|1 \rangle - \beta |0 \rangle $$ respectively.
+and
+
+$$\alpha|1 \rangle - \beta |0 \rangle $$
+
+respectively.
 
 Note that by this measurement, we have sent across the numbers $\alpha$ and $\beta$. But the state on Bob's side need not be the same as the state of the  teleportee qubit, as is evident from above. So what now?
 
