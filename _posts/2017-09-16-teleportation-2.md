@@ -41,7 +41,7 @@ This would imply that $\psi$ is always measured as $B_1$.
 
 # Enough with Math, get me teleported!
 
-Okay, but really, you can't escape the math! There is a lot it ahead.
+Okay, but really, you can't escape the math! There is a lot of it ahead.
 
 ![](https://media.giphy.com/media/l0K4cW9NQjrOlhy2Q/giphy.gif)
 
