@@ -11,7 +11,8 @@ The timeline is below, followed by additional detail on each event.
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| [Organizations submit proposals](#organizations-submit-proposals) (finalized version) | December 31, 2017  |
+| First submission of proposal | November 20 (recommended) |
+| [Proposal revision process](#proposal-revision-process) (must be accepted by...) | December 31, 2017  |
 | [Students rate proposals](#students-rate-proposals) | January 12, 2018  |
 | [Selection of proposals](#selection-of-proposals) | January 19, 2018   |
 | [Partners accept invitations](#partners-accept-invitations) | January 29, 2018  |
@@ -25,11 +26,13 @@ The timeline is below, followed by additional detail on each event.
 | [Phase 3: project polishing](#project-polishing-stage) | June 11 - 22, 2018 (approx) |
 | [Final presentations](#final-presentations) | June 28, 2018 (approx) |
 
-#### Organizations submit proposals
+#### Proposal revision process
 
 Members of an organization interested in participating as a capstone partner should submit a one-page project [proposal](./proposal.md) to `capstone-mds@science.ubc.ca`.
 
 Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
+
+We recommend your first submission of the proposal to be well before the December 31st deadline, so that we can offer suggestions in case it needs revision.
 
 #### Students rate proposals
 
