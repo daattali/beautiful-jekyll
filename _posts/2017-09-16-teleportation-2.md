@@ -75,9 +75,9 @@ We can relate the normal basis to the Bell basis as
 
 $$|00 \rangle = \frac{|B_1 \rangle + |B_3 \rangle}{\sqrt{2}} $$
 
-$$|10 \rangle = \frac{|B_2 \rangle + |B_4 \rangle}{\sqrt{2}} $$
+$$|01 \rangle = \frac{|B_2 \rangle + |B_4 \rangle}{\sqrt{2}} $$
 
-$$|01 \rangle = \frac{|B_2 \rangle - |B_4 \rangle}{\sqrt{2}} $$
+$$|10 \rangle = \frac{|B_2 \rangle - |B_4 \rangle}{\sqrt{2}} $$
 
 $$|11 \rangle = \frac{|B_1 \rangle - |B_3 \rangle}{\sqrt{2}} $$
 
