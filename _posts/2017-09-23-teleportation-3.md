@@ -16,15 +16,15 @@ To see this, let's go back to my [first article](https://adivijaykumar.github.io
 
 ![](https://media.giphy.com/media/4cUCFvwICarHq/giphy.gif)
 
-The reason why that the environment cannot provide information is because it contains none in the first place. The entangled state of qubits that we started out with was _maximally entangled_. It helps to think of entanglement as a quantity that has a certain limiting maximum value - the state that we had has entanglement  exactly equal to that limiting value. This means that neither of the qubits can be entanhgled with any other entity, which in turn implies that there is no correlation between the environment and the qubits. Hence, the environment does not have any information to give away too.
+The reason why that the environment cannot provide information is because it contains none in the first place. The entangled state of qubits that we started out with was _maximally entangled_. It helps to think of entanglement as a quantity that has a certain limiting maximum value - the state that we had has entanglement  exactly equal to that limiting value. This means that neither of the qubits can be entangled with any other entity, which in turn implies that there is no correlation between the environment and the qubits. Hence, the environment does not have any information to give away too.
 
 The implication of this is quite mind-boggling. This means that quantum teleportation helps us send a message without any possibility of it being intercepted!
 
 ![](https://media.giphy.com/media/tITfss8cqzTO0/giphy.gif)
 
-The fact that maximally entangled qubits cannot be entangled with anything else is called the _monogamy principle_ of entanglement. This principle has caused a stir among people studying the Black Hole Information Paradox, when a group of scientists suggested the [firewall resolution](https://www.quantamagazine.org/black-hole-firewalls-confound-theoretical-physicists-20121221/) to the paradox. I strongly encourage you read up about it, for getting a flavour of what is happening at the forefront of theoretical physics in the current day.
+The fact that maximally entangled qubits cannot be entangled with anything else is called the _monogamy principle_ of entanglement. This principle caused a stir among people studying the Black Hole Information Paradox, when a group of scientists suggested the [firewall resolution](https://www.quantamagazine.org/black-hole-firewalls-confound-theoretical-physicists-20121221/) to the paradox. I strongly encourage you read up about it, for getting a flavour of what is happening at the forefront of theoretical physics in the current day.
 
-There is one more point to note about the quantum teleportation protocol. The monogamy principle also implies that the teleportee qubit got teleported to Bob with no information about it existing anywhere in between Alice and Bob. This tells us that information in quantum mechanics is non-local - it is shared between the states at any given point of time.
+There is one more point to note about the quantum teleportation protocol. The monogamy principle also implies that the teleportee qubit got teleported to Bob with no information about it existing anywhere in between Alice and Bob. This tells us that information in quantum mechanics is non-local - it is shared between the qubits at any given point of time. So, unlike classical information, it does not exist at one specific point (ie. it is not _localized_) at a given time. 
 
 This concludes the series on quantum teleportation - I do hope to write further on this topic soon!
 
