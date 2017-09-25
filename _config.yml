@@ -59,7 +59,7 @@ author:
   github: cesarsotovalero    # eg. daattali
   twitter: yourname   # eg. daattali
   reddit: yourname    # eg. daattali
-  linkedin: yourname  # eg. daattali
+  linkedin: césar-soto-valero-b72748123  # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
   instagram: yourname # eg. daattali
@@ -86,7 +86,7 @@ footer-links-active:
   instagram: false
   youtube: false
   spotify: false
-  telephone: true
+  telephone: false
   steam: false
   twitch: false
   yelp: false
@@ -95,7 +95,7 @@ footer-links-active:
 share-links-active:
   twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer
