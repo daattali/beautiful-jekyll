@@ -8,7 +8,7 @@ I formalize my ideas by writing papers for scientific journals. I really enjoy t
 
 ### 2017
 
-* SOTO-VALERO, C., GONZÁLEZ CASTELLANOS, M. PÉREZ MORALES, I. A predictive model for analyzing the starting pitchers' performance using time series classification methods. International Journal of Performance Analysis in Sport, DOI: 10.1080/24748668.2017.1354544. 
+* SOTO-VALERO, C., GONZÁLEZ CASTELLANOS, M. PÉREZ MORALES, I. [A predictive model for analyzing the starting pitchers' performance using time series classification methods](https://www.researchgate.net/publication/318834125_A_predictive_model_for_analysing_the_starting_pitchers'_performance_using_time_series_classification_methods). **International Journal of Performance Analysis in Sport**, DOI: 10.1080/24748668.2017.1354544. 
 
 * SOTO-VALERO, C. A Gaussian mixture clustering model for characterizing football players using the EA Sports' FIFA video game system. RICYDE. Revista Internacional de Ciencias del Deporte, 13(49), DOI: 10.5232/ricyde2017.04904. 
 
