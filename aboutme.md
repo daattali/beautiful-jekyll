@@ -1,16 +1,24 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why you should be know me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is César and I want to use Data Science to solve real problems, these are some examples of what I have done so far
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Sports
 
-What else do you need?
+I love sports. So I've used machine learning methods for interesting tasks, such as predicting the outcome of MLB's games, analyzing pitchers' performance, clustering professional football players, finding patterns in water polo videos, and so on.
 
-### my history
+### Software Engineering
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Put it simple, software development is based on managing data. I've leveraged the latest data analysis techniques in order to extract useful knowledge from software repositories. Also, I scraped into malware data and studied the malware diversity in major Android markets.
+
+### Bioinformatics
+
+Biological data represent a motivating challenge due to its complexity. I've developed feature selection methodologies for improving classification accuracy on microarray cancer datasets. I'm currently exploring the advantages of Big Data for dealing with genetic data.
+
+
+
+
+
