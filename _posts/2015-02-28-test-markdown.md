@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Hello!
-subtitle: Each post also has a subtitle
+subtitle: Introducing myself
 published: true
+date: 2017/09/25
 ---
 
 ## Hello!
