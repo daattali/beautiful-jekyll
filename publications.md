@@ -6,6 +6,8 @@ subtitle: Putting ideas on paper
 
 I formalize my ideas by writing papers for scientific journals. I really enjoy the peer reviewing process (yes, I'm not kidding). The following is a list of my published works:
 
+:fa-coffee: 
+
 ### 2017
 
 * SOTO-VALERO, C., GONZÁLEZ CASTELLANOS, M. PÉREZ MORALES, I. [A predictive model for analyzing the starting pitchers' performance using time series classification methods](https://www.researchgate.net/publication/318834125_A_predictive_model_for_analysing_the_starting_pitchers'_performance_using_time_series_classification_methods). **International Journal of Performance Analysis in Sport**, DOI: 10.1080/24748668.2017.1354544. 
