@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Publications
-subtitle: Putting on paper
+subtitle: Putting ideas on paper
 ---
 
-I formalize my ideas by writing papers for academic journals. I really enjoy the peer reviewing process (yes, I'm not kidding). The following is a list of my published works:
+I formalize my ideas by writing papers for scientific journals. I really enjoy the peer reviewing process (yes, I'm not kidding). The following is a list of my published works:
 
 ### 2017
 
