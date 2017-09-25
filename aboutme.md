@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you should be know me
+subtitle: Why you should know me
 ---
 
 My name is César and I want to use Data Science to solve real problems, these are some examples of what I have done so far
