@@ -6,7 +6,7 @@ published: true
 date: 2017/09/25
 ---
 
-I'm a software developer and researcher with 5 years of experience using Java and R. I'm interested in the application of machine learning methods for solving real problems, mainly predictive and analytical problems.
+I'm a researcher and software developer with 5 years of experience using Java and R. I'm interested in the application of machine learning methods for solving real problems, mainly predictive and analytical problems.
 
 These are some examples of what I have done so far:
 
@@ -16,7 +16,7 @@ These are some examples of what I have done so far:
 
 #### Software Engineering
 
->Put it simple, software development is based on managing data. I've leveraged the latest data analysis techniques in order to extract useful knowledge from software repositories. Also, I scraped into malware data and studied the malware diversity in major Android markets.
+>Software development is based on managing data and its artifacts. I've leveraged the latest data analysis techniques in order to extract useful knowledge from software repositories. Also, I scraped into malware data and studied the malware diversity in major Android markets.
 
 #### Bioinformatics
 
