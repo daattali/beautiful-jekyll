@@ -27,7 +27,7 @@ I formalize my ideas by writing papers for scientific journals. I really enjoy t
 * SOTO VALERO, C., GONZÁLEZ CASTELLANOS, M. [Sabermetrics and new trends in the statistical analysis of baseball](https://www.researchgate.net/publication/273952861_Sabermetria_y_nuevas_tendencias_en_el_analisis_estadistico_del_juego_de_beisbol). **Retos: Nuevas Tendencias en Deporte Educación Física y Recreación**, 28, 122-127, DOI: 10.1515/ijcss-2016-0007.
 
 ### Theses
-* Predictive models applied to baseball.
-  Master’s thesis.
-  The Central University of Las Villas, Department of Computer Science,
+* [Predictive models applied to baseball](https://www.researchgate.net/publication/312084388_Modelos_predictivos_con_aplicacion_en_el_beisbol).\s\s
+  Master’s thesis.\s\s
+  The Central University of Las Villas, Department of Computer Science,\s\s
   November 2016
