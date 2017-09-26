@@ -29,5 +29,5 @@ I formalize my ideas by writing papers for scientific journals. I really enjoy t
 ### Theses
 * [Predictive models applied to baseball](https://www.researchgate.net/publication/312084388_Modelos_predictivos_con_aplicacion_en_el_beisbol).
   Master’s thesis.
-  The Central University of Las Villas, Department of Computer Science
+  The Central University of Las Villas, Department of Computer Science,
   November 2016.
