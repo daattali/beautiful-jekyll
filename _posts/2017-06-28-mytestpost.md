@@ -1,4 +1,3 @@
-## raw text:
 ---
 layout: post
 title:  "sometimes it doesn't"
