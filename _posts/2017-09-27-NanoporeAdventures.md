@@ -4,7 +4,7 @@ title:  "my first post is my fifth try"
 date:   2017-09-26
 categories: posts
 author: devonorourke
-tags: 'beginnings'
+tags: 'classroom'
 ---
 
 # The What, Why, and How
