@@ -31,3 +31,5 @@ I formalize my ideas by writing papers for scientific journals. I really enjoy t
   **Master's thesis**.
   The Central University of Las Villas, Department of Computer Science,
   November 2016.
+  
+I can also be found on [Google Scholar](https://scholar.google.es/citations?user=jNBoowwAAAAJ&hl=en) and [Reseachgate](https://www.researchgate.net/profile/Cesar_Soto-Valero)
