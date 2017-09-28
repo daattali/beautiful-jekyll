@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: The abstract
 ---
+**Motivation:** I want to use Data Science to solve real problems. 
 
-My name is Inigo Montoya. I have the following qualities:
+**Work:** I've been working as a researcher and teacher at the Central University of Las Villas.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+**Education:** I finished my MSc in the Department of Computer Science at the Central University of Las Villas.
 
-What else do you need?
+**Hobbies:** On my spare time I like to play chess, traveling and read a good book.
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+
+

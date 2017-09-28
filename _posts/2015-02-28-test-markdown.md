@@ -1,70 +1,29 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
+title: Hello!
+subtitle: My name is César
+published: true
+date: 2017/09/25
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+I'm a researcher and software developer with 5 years of experience using Java and R. I'm interested in the application of machine learning methods for solving real problems, mainly predictive and analytical problems.
 
-**Here is some bold text**
+These are some examples of what I have done so far:
 
-## Here is a secondary heading
+#### Sports
 
-Here's a useless table:
+>I love sports. So I've used machine learning methods for interesting tasks, such as predicting the outcome of MLB's games, analyzing pitchers' performance, clustering professional football players, finding patterns in water polo videos, and so on.
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+#### Software Engineering
+
+>Software development is based on managing data and its artifacts. I've leveraged the latest data analysis techniques in order to extract useful knowledge from software repositories. Also, I scraped into malware data and studied the malware diversity in major Android markets.
+
+#### Bioinformatics
+
+>Biological data represent a motivating challenge due to its complexity. I've developed feature selection methodologies for improving classification accuracy on microarray cancer datasets. I'm currently exploring the advantages of Big Data for dealing with genetic data.
+
+I'm constantly searching for interesting software projects to collaborate with my ideas and code. Feel free of contact me if you are interested in ;)
+
+You can see my full CV [here](https://cesarsotovalero.github.io/files/C-Soto-Valero-CV.pdf).
 
 
-How about a yummy crepe?
-
-![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
