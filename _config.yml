@@ -57,14 +57,15 @@ avatar: "/img/avatar-icon.png"
 author:
   name: Rafał Gawlik
   email: "rafal.gawlik@gmail.com"
-  facebook: gawlik.rafal  # eg. daattali
-  github: rafalgawlik    # eg. daattali
-  linkedin: rafał-gawlik-082a2345  # eg. daattali
+  facebook: gawlik.rafal
+  github: rafalgawlik
+  twitter: rafalgawlik
+  linkedin: rafał-gawlik-082a2345
 #  xing: yourname      # eg. daattali
 #  stackoverflow: yourlink  # eg. "3943160/daattali"
 #  snapchat: yourname  # eg. daattali
   instagram: gawlik_rafal # eg. daattali
-  youtube: channel/UCCCSfhgcbr7BCa1OD6IL_mg   # eg. user/daattali or channel/daattali
+  youtube: channel/UCCCSfhgcbr7BCa1OD6IL_mg
 #  spotify: yourname   # eg. daattali
 #  telephone: yourphone   # eg. +14159998888
 #  steam: yourname     # eg. daattali
@@ -76,7 +77,7 @@ footer-links-active:
   rss: false
   facebook: true
   email: true
-  twitter: false
+  twitter: true
   google-plus: false
   github: true
   reddit: false
