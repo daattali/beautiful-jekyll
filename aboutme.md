@@ -11,4 +11,4 @@ My name is Rafał Gawlik and this is some information about me:
  - Naturaly I'am based in Wrocław (Poland).
  - I'am member of Klub Jagielloński
  - I love develop open source app - f.e. PoznajApp, Pola. Check my Github account!
- - In foother you have chanels to cantact with me!
+ - In foother you have channels to cantact with me!
