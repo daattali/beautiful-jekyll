@@ -44,11 +44,13 @@ avatar: "/img/avatar-icon.png"
 # has a white background. You can specify a different background colour or a background image
 # for the navigation bar, the main page, and the footer.
 # navbar-col: "orange"
+# navbar-text-col: "#EEE"
 # navbar-img: "/img/bgimage.png"
 # footer-col: "blue"
 # footer-img: "/img/bgimage.png"
 # page-col: "#FF0000"
 # page-img: "/img/bgimage.png"
+# hover-col: "pink"
 
 # --- Footer options --- #
 
