@@ -277,8 +277,8 @@ img {
     background: #eee;
     {% if site.navbar-col %}
     background: {{ site.navbar-col }};
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid #eaeaea;
+    outline: 1px #eaeaea solid;
+    background: rgba(0, 0, 0, -0.1);
     {% endif %}
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {

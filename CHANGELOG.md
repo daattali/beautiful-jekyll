@@ -4,7 +4,7 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
-**2017-09-30** Ability to change text color of navbar and the color when hovering over elements
+**2017-10-01** Ability to change text color of navbar and the color when hovering over elements
 
 **2017-09-04** Ability to change colour/image of navbar/footer/body
 
