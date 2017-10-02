@@ -9,4 +9,7 @@ Algunos programadores adoran participar en el inicio o creación de un proyecto,
 
 Si trabajas con programadores lo ideal es conocer este tipo de fortalezas en cada uno de ellos para permitirles trabajar en el area en la que se sienten más a gusto, con lo que probablemente percibas una mejora en la productividad.
 
-## MVP 
+## MVP (Minimum Viable Product)
+
+
+
