@@ -19,7 +19,11 @@ So what's this about? Really it's about me not liking the color palette of my Te
 Let's deal with each of these separately...  
 
 ## Get a big palette
-There are a lot of sites out there that will help you generate a suite of custom colors. I wanted to be as simple as possible and not design any of them myself, rather, just look through a list of these custom palettes and pick which one (or ten) I wanted. [This color editor](https://github.com/lysyi3m/osx-terminal-themes) does exactly that, and because it's through a Git repository it's very straightforward to implement. Install directions are right on the README.md page but I didn't follow them exactly. Here's what I did instead:  
+There are a lot of sites out there that will help you generate a suite of custom colors. I wanted to be as simple as possible and not design any of them myself, rather, just look through a list of these custom palettes and pick which one (or ten) I wanted. [This color editor](https://github.com/lysyi3m/osx-terminal-themes) does exactly that, and because it's through a Git repository it's very straightforward to implement. 
+
+> No idea what I'm talking about with Git? Start with [their page](https://git-scm.com/), read [this long explanation](http://dh.newtfire.org/explainGitShell.html), and if you're still game, [download it](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git).  
+
+Install directions are right on the README.md page but I didn't follow them exactly. Here's what I did instead:  
 
 **Step 1** - scroll through the main page and find a palette you like. Remember the name. I liked [this one](https://github.com/lysyi3m/osx-terminal-themes#birdsofparadise) because apparently I subconsiously wish I went to Tufts given that color scheme...  
 
