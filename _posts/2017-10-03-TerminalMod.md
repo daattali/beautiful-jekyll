@@ -71,7 +71,7 @@ Truthfully, all we're really going to do is something that is a specific example
 
 > Note that you *do not* need to have a custom color palette selected within your Terminal app to generate a custom color output generated from things like `ls` and `grep` commands. While these will work with the steps described above, the first half of this post isn't required.  
 
-**Step 1** find your `.bash_profile` file:
+**Step 1** - find your `.bash_profile` file:
 Unless you've made a lot of changes already, by default your Terminal app should open to something like `/Users/{yourname}/`; in my case when I open up a new Terminal app it looks like `/Users/do`. From there you should automatically have `.bash_profile` that is accessible by throwing a "do not ignore hidden files" argument as follows:  
 ```
 ## where are you?
@@ -83,6 +83,46 @@ cd $HOME
 ## bring up .bash_profile
 ls -a
 ```
-This should generate a list of files in your `Users/{yourname}` directory including the `.bash_profile`. You can now edit that profile by appending the following info using your favorite text editor (ex. nano, vim):  
+This should generate a list of files in your `Users/{yourname}` directory including the `.bash_profile`. You'll be able to edit that profile by appending the following info using your favorite text editor (ex. nano, vim) in a few moments. Just remember where that file is for now.  
+
+**Step 2** - Mac my Mac more like Linux
+After searching online for hours (not an exaggeration) I realized that everything I was querying was getting answered by Linux users, and none of their solutions worked for me because - and this is important - **a Mac OS is not a Linux OS**. I need to keep reminding myself this constantly.  
+
+What you need to do is trick the Mac into thinking throught it's command-line interface more like a Linux OS. The most straightforward way of doing that is by installing something a package called `coreutils`. See [this post](https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/) for an explanation of a few ways to install the program. Because I used [Conda](https://conda.io/docs/index.html) as my package management system, this was really straightforward:  
+
+```
+conda install -c bioconda coreutils
 ```
 
+- If you don't know anything about package mangers, [try this](https://www.slant.co/topics/511/~best-mac-package-managers).  
+- If you use Homebrew already, just follow [these instructions](http://brewformulas.org/Coreutil).  
+- If you use something else, well, just install `coreutils`!  
+
+With package managers like Homebrew and Conda you won't need to do anything else and can use these new commands right away. If something in subsequent steps isn't working try closing your current shell and starting opening up a new Terminal window.
+
+**Step 3** - Edit your `.bash_profile` script
+Remember where your `.bash_profile` file went (see **Step 1**? Let's open that up and add the following using whatever text editor you want (I used `nano` by typing `nano .bash_profile`:
+
+```
+## color my grep output
+alias grep="grep --color=always"
+
+## color my 'ls' outputs according to specific file extensions
+LS_COLORS="di=1:*.csv=0;31:fi=0;34:*.txt=0;35"
+export LS_COLORS
+alias ls="ls --color=auto"
+```
+
+When you close the text editor you'll need to restart the shell by closing and opening a new window, or you can source the profile directly with `. ~/.bash_profile` and just carry on.  
+
+So what exactly is in that custom script? Two things, both defined by the `alias` commands we've communicated:  
+- `alias grep` indicates that you will always get colored output in your grep commands. Real simple. If you don't want color, or want to modify the output of that color you can look into further modifications in the grep manual.  
+- `alias ls` is specifying to automatically color whatever the specifications are in the `LS_COLORS` environmental variable, which is something we defined in the `LS_COLORS="di=1...` line.  
+
+It turns out the `LS_COLORS="di=1...` line is the really important one in the sense that it gives you the flexibility for all the customization of associating certain file extensions with certain colors. See [this post](http://leocharre.com/articles/setting-ls_colors-colors-of-directory-listings-in-bash-terminal/) for a wonderful explanation of these in great detail. So what did I specify in the above `LS_COLORS=...` command?  
+- `di=1` indicates that I want to make all directories **bold** relative to all other things listed (ie. files of any kind).  
+- `*.csv=0;31` indicates to color any file extension with a `.csv` value as red. Why? Again, see [this post](http://leocharre.com/articles/setting-ls_colors-colors-of-directory-listings-in-bash-terminal/) to understand the relationship of these numeric values with corresponding colors (ok, quickly, the first value just means "use default" and the second value in this case is specifying a color).  
+- `fi=0;34` indicates that all files will be colored blue . 
+- `*.txt=0;35` as you might have guessed now just specifies a different color for anything that is a `.txt` file . 
+
+Notably, whatever the default colors is in your Terminal.app *Profile* scheme is what will be shown. All we're doing is overrriding those defaults. What this amounts to is generating a heirarchy of colors - so we start with the base coloring (which is defined by your Terminal.app *Profile* scheme) and then modify certain features by specifying what kinds of files/directories get which features/colors applied. There's plenty of other ways to modify, but I find this the easiest and simplest. Good luck!
