@@ -23,6 +23,6 @@ The layout, as mentioned on the [Home page](https://devonorourke.github.io/) is 
 
 3. As mentioned in the first point, you'll find the [Teaching](https://devonorourke.github.io/learning/) page particularly useful for extensive documentation outlining how do do a process introduced in a blog. Buyer beware - code changes quick, so be sure to take not of when the post was written as things may have changed (possibly substantially).  
 
-I always appreciate feedback so feel free to [get a hold of me](devon.orourke@gmail.com) if you have a comment.  
+I always appreciate feedback so feel free to [get a hold of me](mailto:devon.orourke@gmail.com) if you have a comment.  
 
 Thanks for visiting!
