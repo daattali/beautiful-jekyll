@@ -6,13 +6,13 @@ categories: posts
 author: devonorourke
 tags: '#read-this-blog-first!'
 ---
-Here's the thing - I created this site three months ago with the intention of writting my first blog post to explain exactly how to get this pretty complicated process off the ground (at least for me as a total novice with respect to HTML, GitHub, and computer programming in general). Then life happened and I had to leave the weekend's work behind; which is to say I didn't write any of it down, which was the **ENTIRE POINT** of writing this first post.  This led me to having to go back through a few of the scattered bits of files I had created to figure out what I had done in the first place, which is to say the three following statements:  
+Here's the thing -   
 
-`THIS SITE IS FOR YOU IF YOU HAPHAZARDLY FORGET USEFUL INFO ALL THE TIME` 
+I created this site three months ago with the intention of writting my first blog post to explain exactly how to get this complicated process off the ground (at least for me as a total novice with respect to HTML, GitHub, and computer programming in general). But this isn't a website about web design (far from it!). I had to leave the weekend's work behind; which is to say I didn't write any of it down, forgot how I did what I did, and well, that is kind of the **ENTIRE POINT** of this website. As a scientists, I'm supposed to be trained in the dark arts of expert record keeping, but the reality is that it's really time consuming to keep such detailed notes, and I've found myself to be more and more impatient as I've gotten older (but apparently not wiser). This site reflects my first earnest attempt to not only document the things that are really easy to do **once you know what you're doing** but are _REALLY HARD_ if you've **never done them before**.   
 
-`THIS SITE IS FOR YOU IF YOU ARE SCARED OF INCORPORATING TECH IN A CLASS SETTING`
+Not having documented the step-by-step process of constructing this site led me to having to sift through scattered bits of code I had created to figure out what I had done in the first place, _which took way, way longer than it should have_. Which brings me to the whole point of this site:   
 
-`THIS SITE IS FOR YOU IF YOU IF YOU WANT TO MAKE LIFE EASIER, ALBEIT BY PUTTING IN A BIT MORE WORK UPFRONT`
+`LET'S MAKE WORKFLOWS FOR FOLKS WHO DON'T KNOW HOW TO DO SOMETHING SO THEY CAN DO IT FASTER`
 
 So how will this all work? ...
 
