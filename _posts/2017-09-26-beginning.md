@@ -21,7 +21,7 @@ The layout, as mentioned on the [Home page](https://devonorourke.github.io/) is 
 
 2. There's a [Doing](https://devonorourke.github.io/doing/) page where I'll provide overviews about the science I've been involved with. Interested in experimental evolution of microbial communities? Me too! How about white nose syndrom and the genetics of adaptation? Also me too! How about poop!? Not so much? Well I think it can be pretty useful. It's my hope to share as much of the techniques and results as I can in a detailed yet approachable way.
 
-3. As mentioned in the first point, you'll find the [Learning](https://devonorourke.github.io/learning/) page particularly useful for extensive documentation outlining how do do a process introduced in a blog. Buyer beware - code changes quick, so be sure to take not of when the post was written as things may have changed (possibly substantially).  
+3. As mentioned in the first point, you'll find the [Teaching](https://devonorourke.github.io/learning/) page particularly useful for extensive documentation outlining how do do a process introduced in a blog. Buyer beware - code changes quick, so be sure to take not of when the post was written as things may have changed (possibly substantially).  
 
 I always appreciate feedback so feel free to [get a hold of me](devon.orourke@gmail.com) if you have a comment.  
 
