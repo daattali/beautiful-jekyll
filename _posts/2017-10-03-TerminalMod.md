@@ -25,11 +25,11 @@ There are a lot of sites out there that will help you generate a suite of custom
 
 Install directions are right on the README.md page but I didn't follow them exactly. Here's what I did instead:  
 
-**Step 1** - scroll through the main page and find a palette you like. Remember the name. I liked [this one](https://github.com/lysyi3m/osx-terminal-themes#birdsofparadise) because apparently I subconsiously wish I went to Tufts given that color scheme...  
+**Step 1** - scroll through the main page and find a palette you like. Remember the name. I liked [this one](https://github.com/lysyi3m/osx-terminal-themes#birdsofparadise)...
 
 **Step 2** - Open up your Terminal program and clone the repo as follows:
 
-> *Side note: I have a generic `gitstuff` subdirectory within `My Documents` to pace cloned repos for little projects just like these... that's used in the example below*  
+> *Side note: I have a generic `gitstuff` subdirectory within `My Documents` to place cloned repos for little projects just like these... that's used in the example below*  
 
 ```
 cd $HOME/Documents/GitStuff/
@@ -58,18 +58,18 @@ This gives you a really broad palette of color shemes, but you are of course lim
 	YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hp
   ```
   
-If you understand (a) XML, and (b) want to sift through the [list of ANSI color codes](https://gist.github.com/chrisopedia/8754917), well good on you, it's all right there for the mixing and (endlessly) matching. If you're like me, you're hoping someone has programatically come up with a GUI that just lets you select all this by color, and generates the script that these custom palettes are based on. And of course it has...  
+If you understand (a) XML, and (b) want to sift through the [list of ANSI color codes](https://gist.github.com/chrisopedia/8754917), well good on you, it's all right there for the mixing and (endlessly) matching. If you're like me, you're hoping someone has programatically come up with a GUI that just lets you select all this by color, and generates the script that these custom palettes are based on. And of course there is...  
 
-Try [this site](https://terminal.sexy/). My brief advise: look for the `Scheme Browser` window in the bottom/middle, and play with those selections first. If you find one you like, click `Export` only after you've selected your terminal type, which turns out to be `Terminal.app`. You can download the text file or just copy and paste the output generated into a new file, and provided you know what the path to that file is, you can follow the same instructions above to use that uber custom design.  
+Try [this site](https://terminal.sexy/). My brief advice: look for the `Scheme Browser` window in the bottom/middle, and play with those selections first. If you find one you like, click `Export` only after you've selected your terminal type, which turns out to be `Terminal.app`. You can download the text file or just copy and paste the output generated into a new file, and provided you know what the path to that file is, you can follow the same instructions above to use that uber custom design.  
 
 But default, whatever palette you choose - custom or not - won't necessarily retrieve colored outputs of your `grep` and `ls` commands. We'll change that next.
 
 ## Give me color!  
 What's the motivation here? I like color and I it bothers me when I can't automatically differentiate between directories and files. It turns out there is a sort of generic response to this problem, which essentially amounts to a "turn coloring on" command - see [this site](https://softwaregravy.wordpress.com/2010/10/16/ls-colors-for-mac/) for a blog post about doing just that. If that's really all you need, you can also customize that a bit further with [this handy color generator page](https://geoff.greer.fm/lscolors/).  
 
-Getting any color in and of itself is a win, but I deal with a lot of different file types and it's helpful to easily distinguish certain file types from another (ex. `file1.txt` vs. `file2.csv`) - see [this thread](https://superuser.com/questions/468966/colouring-output-of-ls-according-to-file-extension) for another example and discussion. What I really want was a way to customize *any* file type as well as directories. Coloring certain file formats is a quick way around this.  
+Getting any color to differentiate say files from directories is nice, but I deal with a lot of different file types and it's helpful to easily differentiate certain file types from one another (ex. `file.txt` vs. `file.csv`) - see [this thread](https://superuser.com/questions/468966/colouring-output-of-ls-according-to-file-extension) for another example and discussion. What I really wanted was a way to customize *any* file type as well as directories.  
 
-Truthfully, all we're really going to do is something that is a specific example of a more generic process - mucking with the `.bash_profile` (or alternatively `.bash.rc`) file to generate a few *alias* commands so we don't have to type and retype our custom colored outputs from `grep` and `ls` commands. Unfortunately, it's not as easy with a Mac as it would be with a Linux machine, so we're going to have to do a little bit of a workaround to get it all together.   
+Truthfully, all we're really going to do is something that is a specific example of a more generic process - mucking with the `.bash_profile` (or alternatively `.bash.rc`) file to generate a few `alias` commands so we don't have to type and retype our custom colored outputs from `grep` and `ls` commands. Unfortunately, it's not as easy with a Mac as it would be with a Linux machine, so we're going to have to do a little bit of a workaround to get it all together.   
 - don't know what an `alias` is? that's okay - [try this](http://www.linfo.org/alias.html)
 - don't know what a `.bash_profile` is? I didn't either! [try this](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)... turns out the answer is different depending on Linux or Mac OS  
 
@@ -89,23 +89,24 @@ ls -a
 ```
 This should generate a list of files in your `Users/{yourname}` directory including the `.bash_profile`. You'll be able to edit that profile by appending the following info using your favorite text editor (ex. nano, vim) in a few moments. Just remember where that file is for now.  
 
-**Step 2** - Mac my Mac more like Linux
-After searching online for hours (not an exaggeration) I realized that everything I was querying was getting answered by Linux users, and none of their solutions worked for me because - and this is important - **a Mac OS is not a Linux OS**. I need to keep reminding myself this constantly.  
+**Step 2** - Mac my Mac more like Linux.   
+After searching online for hours (not an exaggeration) I realized that everything I was querying was getting answered by Linux users, and none of their solutions worked for me because - and this is important - **a Mac OS is not a Linux OS**. I need to keep reminding this to myself constantly...  
 
-What you need to do is trick the Mac into thinking throught it's command-line interface more like a Linux OS. The most straightforward way of doing that is by installing something a package called `coreutils`. See [this post](https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/) for an explanation of a few ways to install the program. Because I used [Conda](https://conda.io/docs/index.html) as my package management system, this was really straightforward:  
+What you need to do is trick the Mac's command-line interface into behaving more like a Linux OS. The most straightforward way of doing this is by installing something a package called `coreutils`. See [this post](https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/) for an explanation of a few ways to install the program. Because I used [Conda](https://conda.io/docs/index.html) as my package management system, this was really straightforward:  
 
 ```
 conda install -c bioconda coreutils
 ```
 
 - If you don't know anything about package mangers, [try this](https://www.slant.co/topics/511/~best-mac-package-managers).  
-- If you use Homebrew already, just follow [these instructions](http://brewformulas.org/Coreutil).  
+- If you use Homebrew instead of Conda, just follow [these instructions](http://brewformulas.org/Coreutil).  
 - If you use something else, well, just install `coreutils`!  
 
 With package managers like Homebrew and Conda you won't need to do anything else and can use these new commands right away. If something in subsequent steps isn't working try closing your current shell and starting opening up a new Terminal window.
 
-**Step 3** - Edit your `.bash_profile` script
-Remember where your `.bash_profile` file went (see **Step 1**? Let's open that up and add the following using whatever text editor you want (I used `nano` by typing `nano .bash_profile`:
+**Step 3** - Edit your `.bash_profile` script .  
+Remember where your `.bash_profile` file went (see **Step 1**)?  
+Let's open that up and add the following using whatever text editor you want (I used `nano` by typing `nano .bash_profile`:
 
 ```
 ## color my grep output
