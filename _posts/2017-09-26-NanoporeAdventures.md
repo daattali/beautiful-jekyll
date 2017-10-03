@@ -4,7 +4,7 @@ title:  "Nanopore Adventures"
 date:   2017-09-27
 categories: posts
 author: devonorourke
-tags: 'beginnings'
+tags: 'classroom'
 ---
 
 # The What, Why, and How
