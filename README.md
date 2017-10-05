@@ -87,6 +87,28 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
+You can also add `Github` and `CRAN` status badges. 
+
+  - You can decide what badges are displayed and the order. 
+  - CRAN
+    - Set the package name (`cran` field)
+    - Select which badges to display and the order (`cran_badge` field)
+  - Github
+    - Set the user name and repository (`gh_repo` field)
+    - Select which badges to display and the order (`gh_badge` field)
+
+```
+---
+layout: post
+title: Post Title
+cran: <package name>
+cran_badge: [status, downloads]
+gh_repo: <github username>/<repo name>
+gh_badge: [follow, star, issue, watch, fork, download]
+---
+```
+
+
 You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
 
 **Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**    
