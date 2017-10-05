@@ -87,7 +87,7 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-You can also add `Github` and `CRAN` status badges. 
+You can also add `Github` and `CRAN` status badges.
 
   - You can decide what badges are displayed and the order. 
   - CRAN
