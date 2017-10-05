@@ -8,6 +8,48 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+      {% if page.gh_repo %}
+      
+      {% assign gh_split =  page.gh_repo | split:'/'  %}
+      {% assign gh_user =  gh_split[0]  %}
+      
+      <div>
+        {% if page.gh_badge.size>0 %}
+          {% for badge in page.gh_badge %}
+            {% case badge %}
+              {% when 'follow'%}
+                <a class="github-button" href="https://github.com/{{ gh_user }}" data-show-count="true" aria-label="Follow @{{ gh_user }} on GitHub">Follow @{{ gh_user }}</a>
+              {% when 'watch'%}
+                <a class="github-button" href="https://github.com/{{ gh_user }}/{{ page.gh_repo }}/subscription" data-show-count="true" aria-label="Watch {{ page.gh_repo }} on GitHub">Watch</a>
+              {% when 'star'%}
+                <a class="github-button" href="https://github.com/{{ page.gh_repo }}" data-show-count="true" aria-label="Star {{ page.gh_repo }} on GitHub">Star</a> 
+              {% when 'fork'%}
+               <a class="github-button" href="https://github.com/{{ page.gh_repo }}/fork" data-show-count="true" aria-label="Fork {{ page.gh_repo }} on GitHub">Fork</a>
+              {% when 'issue'%}
+                <a class="github-button" href="https://github.com/{{ page.gh_repo }}/issues" data-show-count="true" aria-label="Issue {{ page.gh_repo }} on GitHub">Issue</a>
+              {% when 'download'%}
+                <a class="github-button" href="https://github.com/{{ page.gh_repo }}/archive/master.zip" aria-label="Download {{ page.gh_repo }} on GitHub">Download</a>
+            {% endcase %}
+          {% endfor %}
+        {% endif %}
+        </div>
+      {% endif %}
+      
+       {% if page.cran %}
+       <div>
+        {% if page.cran_badge.size>0 %}
+          {% for badge in page.cran_badge %}
+            {% case badge %}
+              {% when 'status'%}
+          <a href="https://cran.r-project.org/package={{ page.cran }}"><img src="https://www.r-pkg.org/badges/version/{{ page.cran }}?color=blue" alt="CRAN_Status_Badge" /></a>
+              {% when 'downloads'%}
+          <img src="https://cranlogs.r-pkg.org/badges/grand-total/{{ page.cran }}" alt="downloads" />
+            {% endcase %}
+          {% endfor %}
+        {% endif %}
+        </div>
+      {% endif %}
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
