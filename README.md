@@ -89,7 +89,6 @@ subtitle: Here you'll find all the ways to get in touch with me
 
 You can also add `Github` and `CRAN` status badges.
 
-  - You can decide what badges are displayed and the order. 
   - CRAN
     - Set the package name (`cran` field)
     - Select which badges to display and the order (`cran_badge` field)
@@ -107,7 +106,6 @@ gh_repo: <github username>/<repo name>
 gh_badge: [follow, star, issue, watch, fork, download]
 ---
 ```
-
 
 You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
 
