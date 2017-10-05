@@ -23,7 +23,7 @@ subtitle:
 ## Data Science
 
 #### **Vancouver Meetups**
-- [Data Science Group](http://www.meetup.com/DataScience/)
+- [Learn Data Science](https://www.meetup.com/LearnDataScience/) and [Data Science](http://www.meetup.com/DataScience/) meetup groups
 - [Python Group](http://www.meetup.com/vanpyz/)
 - [R Group](http://www.meetup.com/Vancouver-R-Users-Group-data-analysis-statistics/)
 - [Data Visualization Group](http://www.meetup.com/Vancouver-Data-Visualization/)
