@@ -15,7 +15,7 @@ We are thrilled about the strength and diversity of our incoming class. Here are
 ![](/img/blog/students_degree_geo.png)
 
 - eight students have another advanced degree prior to MDS.
-- about half the class completed their Bachelor's degree in 2015 or earlier, with 9 of the 44 students having just graduated in 2017.
+- about half the class completed their Bachelor's degree in 2015 or earlier, with 9 students having just graduated in 2017.
 
 We were extremely impressed with the applicant pool.
 These incoming students were chosen from a pool of over 500 applications, which were reviewed in the late spring. 
