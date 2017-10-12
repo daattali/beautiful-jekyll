@@ -27,7 +27,7 @@ navbar-links:
     - Overview: "about"
     - At a glance: "img/scheduleAug2017.pdf"
     - Course Descriptions: "descriptions"
-    - Public materials: "https://github.com/UBC-MDS/public"
+    - Course materials: "https://github.com/UBC-MDS/public"
     - Schedule: "calendar"
     - Policies and Regulations: "policies"
   Capstone:
