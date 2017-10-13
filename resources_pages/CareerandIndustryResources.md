@@ -27,6 +27,7 @@ subtitle:
 - [Python Group](http://www.meetup.com/vanpyz/)
 - [R Group](http://www.meetup.com/Vancouver-R-Users-Group-data-analysis-statistics/)
 - [Data Visualization Group](http://www.meetup.com/Vancouver-Data-Visualization/)
+- [R-Ladies Vancouver](https://www.meetup.com/R-Ladies-Vancouver/)
 
 #### **Facebook**
 - [UBC Master of Data Science](https://www.facebook.com/search/top/?q=ubc%20master%20of%20data%20science)
