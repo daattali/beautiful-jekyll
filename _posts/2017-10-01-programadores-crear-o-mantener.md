@@ -9,7 +9,10 @@ Algunos programadores adoran participar en el inicio o creación de un proyecto,
 
 Si trabajas con programadores lo ideal es conocer este tipo de fortalezas en cada uno de ellos para permitirles trabajar en el area en la que se sienten más a gusto, con lo que probablemente percibas una mejora en la productividad.
 
-## MVP (Minimum Viable Product)
+## Makers
 
+Aquellos que se sienten cómodos iniciando un proyecto, definiendo la estructura que tendrá, evaluando que framework o base de datos será la mejor decisión, entre otros, son programadores que adoran los [Proyectos Greenfield](https://es.wikipedia.org/wiki/Proyecto_Greenfield), los lienzos en blanco. 
 
+Está primera fase de un proyecto requiere de una cantidad moderada de código, ya que partiendo de nada debemos llegar a mostrar un producto/proyecto que cumpla las espectativas iniciales y por norma general, entre más rápido logremos mostrarlo, mejor será el recibimiento (sin sacrificar mantenibilidad o estabilidad). Y es en este tipo de proyecto que los "**makers**" brillan, ya que se sienten comodos, motivados y les agrada tener que programar con tantas libertades.
 
+## Menders
