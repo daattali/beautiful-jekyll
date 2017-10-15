@@ -1,7 +1,11 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Programadores: ¿Crear o Mantener?'
+subtitle: Makers vs Menders
+date: '2017-10-15'
+tags:
+  - tips
 ---
 Los desarrolladores o programadores pueden ser clasificados según distintos puntos de vista: tenemos aquellos que prefieren más la programación móvil a la web, a los que les gusta más el frontend que al backend o aquellos que prefieren JAVA sobre C#, entre otros. Pero en este momento quiero distinguir con un nivel de abstracción un poco superior, que no distingue entre tecnologías sino en el tipo de problema que disfrutamos resolver, despues de todo somos especialistas en resolver problemas, y es normal que tengamos cierta preferencia.
 
@@ -26,3 +30,6 @@ Cuando los proyectos son muy amplios, es complicado mantener un esquema mental d
 Realmente en éste asunto no estamos obligados a jugar en un solo rol. Personalmente en el inicio de mi carrera pudiera decir que no me agradaba involucrarme en proyectos que hubieran sido desarrollados por otros programadores, encontraba difícil conseguir entender el panorama general para realizar los cambios adecuados. Sin embargo, luego de haber participado en múltiples proyectos, enfrentando retos correspondientes a ambos roles, empecé a agarrarle el gusto a los proyectos grandes. 
 
 El punto a acá es que un buen programador aprende cuando sale de su zona de confort, pero es bueno que conozca el rol en el que se destaca y puede ofrecer mejor rendimiento.
+
+> Idea leida por primera vez de [Andrea Goulet - CorgiBytes CEO](https://twitter.com/andreagoulet) en [CorgiBytes blog](http://corgibytes.com/blog/makers/menders/software/2015/08/14/makers-vs-menders/)
+
