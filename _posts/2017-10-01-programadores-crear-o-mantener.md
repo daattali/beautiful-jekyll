@@ -19,7 +19,7 @@ Está primera fase de un proyecto requiere de una cantidad moderada de código, 
 
 Por otra parte, están los programadores que prefieren involucrarse en proyectos en los que ya hay una base consolidada. Donde el código que hay que desarrollar es para solucionar bugs, agregar funcionalidades, mejorar la escalabilidad, en fin, mejorar el software en algún aspecto. 
 
-Cuando los proyectos son muy amplios, es complicado mantener un esquema mental del funcionamiento general y realizar modificaciones sin "romper" nada, hacer un refactoring o agregar una funcionalidad pueden representar un gran reto. Y son estos tipo de retos que agradan a los "**menders**".
+Cuando los proyectos son muy amplios, es complicado mantener un esquema mental del funcionamiento general y realizar modificaciones sin "romper" nada, hacer un refactoring o agregar una funcionalidad pueden representar un gran reto. Y son estos tipo de retos los que atraen a los "**menders**".
 
 ## Conclusión
 
