@@ -11,8 +11,15 @@ Si trabajas con programadores lo ideal es conocer este tipo de fortalezas en cad
 
 ## Makers
 
-Aquellos que se sienten cómodos iniciando un proyecto, definiendo la estructura que tendrá, evaluando que framework o base de datos será la mejor decisión, entre otros, son programadores que adoran los [Proyectos Greenfield](https://es.wikipedia.org/wiki/Proyecto_Greenfield), los lienzos en blanco. 
+Aquellos que se sienten cómodos iniciando un proyecto, definiendo la estructura que tendrá, evaluando qué framework o base de datos será la mejor decisión, entre otros, son programadores que adoran los [Proyectos Greenfield](https://es.wikipedia.org/wiki/Proyecto_Greenfield), los lienzos en blanco. 
 
-Está primera fase de un proyecto requiere de una cantidad moderada de código, ya que partiendo de nada debemos llegar a mostrar un producto/proyecto que cumpla las espectativas iniciales y por norma general, entre más rápido logremos mostrarlo, mejor será el recibimiento (sin sacrificar mantenibilidad o estabilidad). Y es en este tipo de proyecto que los "**makers**" brillan, ya que se sienten comodos, motivados y les agrada tener que programar con tantas libertades.
+Está primera fase de un proyecto requiere de una cantidad moderada de código, ya que partiendo de nada debemos llegar a mostrar un producto/proyecto que cumpla las espectativas iniciales y por norma general, entre más rápido logremos mostrarlo, mejor será el recibimiento (sin sacrificar mantenibilidad, estabilidad, ...). Y es en este tipo de proyecto que los "**makers**" brillan, ya que se sienten comodos, motivados y les agrada enfrentar los retos que conlleva el inicio de un proyecto.
 
 ## Menders
+
+Por otra parte, están los programadores que prefieren involucrarse en proyectos en los que ya hay una base consolidada. Donde el código que hay que desarrollar es para solucionar bugs, agregar funcionalidades, mejorar la escalabilidad, en fin, mejorar el software en algún aspecto. 
+
+Cuando los proyectos son muy amplios, es complicado mantener un esquema mental del funcionamiento general y realizar modificaciones sin "romper" nada, hacer un refactoring o agregar una funcionalidad pueden representar un gran reto. Y son estos tipo de retos que agradan a los "**menders**".
+
+## Conclusión
+
