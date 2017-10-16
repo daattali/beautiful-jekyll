@@ -589,6 +589,16 @@ footer .theme-by {
   border-bottom-left-radius: 5px;
 }
 
+#header-gh-btns {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 500px) {
+  #header-gh-btns > iframe {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
 /* --- Pager --- */
 
 .pager li a {
@@ -625,16 +635,6 @@ footer .theme-by {
 @media only screen and (min-width: 768px) {
   .pager.blog-pager  {
     margin-top: 10px;
-  }
-}
-
-#header-gh-btns {
-  margin-bottom: 15px;
-}
-@media only screen and (max-width: 500px) {
-  #header-gh-btns > iframe {
-    display: block;
-    margin-bottom: 5px;
   }
 }
 
