@@ -31,25 +31,6 @@ layout: base
         </div>
       {% endif %}
       
-       <!----
-       
-       {% if page.cran %}
-       <div>
-        {% if page.cran_badge.size>0 %}
-          {% for badge in page.cran_badge %}
-            {% case badge %}
-              {% when 'status'%}
-          <a href="https://cran.r-project.org/package={{ page.cran }}"><img src="https://www.r-pkg.org/badges/version/{{ page.cran }}?color=blue" alt="CRAN_Status_Badge" /></a>
-              {% when 'downloads'%}
-          <img src="https://cranlogs.r-pkg.org/badges/grand-total/{{ page.cran }}" alt="downloads" />
-            {% endcase %}
-          {% endfor %}
-        {% endif %}
-        </div>
-      {% endif %}
-
---->
-
       <article role="main" class="blog-post">
         {{ content }}
       </article>

@@ -89,21 +89,16 @@ subtitle: Here you'll find all the ways to get in touch with me
 
 You can also add `Github` and `CRAN` status badges.
 
-  - CRAN
-    - Set the package name (`cran` field)
-    - Select which badges to display and the order (`cran_badge` field)
   - Github
-    - Set the user name and repository (`gh_repo` field)
-    - Select which badges to display and the order (`gh_badge` field)
+    - Set the user name and repository (`gh-repo` field)
+    - Select which badges to display and the order (`gh-badge` field)
 
 ```
 ---
 layout: post
 title: Post Title
-cran: <package name>
-cran_badge: [status, downloads]
-gh_repo: <github username>/<repo name>
-gh_badge: [follow, star, issue, watch, fork, download]
+gh-repo: <github username>/<repo name>
+gh-badge: [follow, star, issue, watch, fork, download]
 ---
 ```
 
@@ -167,6 +162,8 @@ ext-js      | List of external JavaScript files to include in the page (eg. `//c
 css         | List of local CSS files to include in the page
 ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported. 
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
+gh-repo   | Set the user name and repository <github username>/<repo name>
+gh-badge  | Select which badges to display and the order [follow, star, issue, watch, fork, download] (conditional on gh-repo)
 
 ### Advanced features (including how to use a custom URL address for your site)
 
