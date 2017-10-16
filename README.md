@@ -147,6 +147,8 @@ ext-js      | List of external JavaScript files to include in the page (eg. `//c
 css         | List of local CSS files to include in the page
 ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported. 
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
+gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
+gh-badge  | Select which GitHub buttons to display, available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
 
 ### Advanced features (including how to use a custom URL address for your site)
 
@@ -195,9 +197,9 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [chauff.github.io](http://chauff.github.io/) | Claudia Hauff | Professor at Delft University of Technology |
 | [kootenpv.github.io](http://kootenpv.github.io/) | Pascal van Kooten | Data analytics |
 | [sjackman.ca](http://sjackman.ca) | Shaun Jackman | PhD candidate in bioinformatics |
-| [epwalsh.com](https://epwalsh.com) | Evan Pete Walsh | PhD candidate (Statistics and Mathematics) at Iowa State University ||
 | [anudit.in](http://www.anudit.in/) | Anudit Verma | Engineering student |
 | [sharepointoscar.github.io](http://sharepointoscar.github.io) | Oscar Medina | Independent Hacker |
+| [ocram85.github.io](https://ocram85.github.io) | Marco Blessing | A personal blog about PowerShell and automation |
 
 
 ## Advanced: Local development using Docker

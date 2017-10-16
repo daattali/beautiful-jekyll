@@ -615,6 +615,16 @@ footer .theme-by {
   border-bottom-left-radius: 5px;
 }
 
+#header-gh-btns {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 500px) {
+  #header-gh-btns > iframe {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
 /* --- Pager --- */
 
 .pager li a {
@@ -640,7 +650,7 @@ footer .theme-by {
   border: 1px solid #0085a1;
   {% if site.hover-col %}
   background: {{ site.hover-col }};
-  border: {{ site.hover-col }};
+  border-color: {{ site.hover-col }};
   {% endif %}
 }
 
