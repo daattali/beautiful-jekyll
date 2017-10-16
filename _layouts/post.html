@@ -8,33 +8,31 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-      {% if page.gh_repo %}
+      {% if page.gh-repo %}
+        {% assign gh_split =  page.gh-repo | split:'/'  %}
+        {% assign gh_user =  gh_split[0]  %}
+        {% assign gh_repo =  gh_split[1]  %}
       
-      {% assign gh_split =  page.gh_repo | split:'/'  %}
-      {% assign gh_user =  gh_split[0]  %}
-      
-      <div>
-        {% if page.gh_badge.size>0 %}
-          {% for badge in page.gh_badge %}
-            {% case badge %}
-              {% when 'follow'%}
-                <a class="github-button" href="https://github.com/{{ gh_user }}" data-show-count="true" aria-label="Follow @{{ gh_user }} on GitHub">Follow @{{ gh_user }}</a>
-              {% when 'watch'%}
-                <a class="github-button" href="https://github.com/{{ gh_user }}/{{ page.gh_repo }}/subscription" data-show-count="true" aria-label="Watch {{ page.gh_repo }} on GitHub">Watch</a>
-              {% when 'star'%}
-                <a class="github-button" href="https://github.com/{{ page.gh_repo }}" data-show-count="true" aria-label="Star {{ page.gh_repo }} on GitHub">Star</a> 
-              {% when 'fork'%}
-               <a class="github-button" href="https://github.com/{{ page.gh_repo }}/fork" data-show-count="true" aria-label="Fork {{ page.gh_repo }} on GitHub">Fork</a>
-              {% when 'issue'%}
-                <a class="github-button" href="https://github.com/{{ page.gh_repo }}/issues" data-show-count="true" aria-label="Issue {{ page.gh_repo }} on GitHub">Issue</a>
-              {% when 'download'%}
-                <a class="github-button" href="https://github.com/{{ page.gh_repo }}/archive/master.zip" aria-label="Download {{ page.gh_repo }} on GitHub">Download</a>
-            {% endcase %}
-          {% endfor %}
-        {% endif %}
+        <div id="header-gh-btns">
+          {% if page.gh-badge.size > 0 %}
+            {% for badge in page.gh-badge %}
+              {% case badge %}
+                {% when 'star'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'watch'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                {% when 'fork'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>  
+                {% when 'follow'%}
+                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+              {% endcase %}
+            {% endfor %}
+          {% endif %}
         </div>
       {% endif %}
       
+       <!----
+       
        {% if page.cran %}
        <div>
         {% if page.cran_badge.size>0 %}
@@ -49,6 +47,8 @@ layout: base
         {% endif %}
         </div>
       {% endif %}
+
+--->
 
       <article role="main" class="blog-post">
         {{ content }}
