@@ -25,6 +25,7 @@
 - [Creating a User Page vs a Project Page](#creating-a-user-page-vs-a-project-page)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
 - [Advanced: local development](#advanced-local-development-using-docker)
+- [FAQ](#faq)
 - [Credits and contributions](#credits)
 
 ## Prerequisites
@@ -220,6 +221,25 @@ Disclaimer: I personally am NOT using local development so I don't know much abo
   		  
 Aditionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
 
+## FAQ
+
+Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](http://jekyllrb.com/) or simply by Googling.
+
+#### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
+
+Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file. The configuration file has many adjustable parameters to customize your site.
+
+#### How do I add a favicon to my site?
+
+Easy! Just place a valid `favicon.ico` (or another valid favicon image) in the root directory of your project. And then wait! It can take a while to update.
+
+#### How do I move the blog to another page instead of having it on the home page?
+
+The default style of Beautiful Jekyll is to feature the blog feed on the front page. But for many sites that's not the ideal structure, and you may want to have a separate dedicated page for the blog posts. To have the blog hosted on a different URL (for example at `<mysite.com>/blog`), copy the `index.html` file into a folder with the same name as the desired page (for example, to `blog/index.html`), and in the `_config.yml` file you need to add a parameter `paginate_path: "/<page name>/page:num/"` (for example `paginate_path: "/blog/page:num/"`).
+
+#### What size do you recommend using for the `bigimg` photos?
+
+Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to this, because every person will view your site on a different browser with different dimensions. Some browsers will have very wide aspect ratio, some will be narrower, some will be vertical (such as phones), different phones have different screens, etc. The image will always be centered, so the only tip I can give is that you should make sure the important part of the image is in the middle so that it'll always show. Other than that, every browser will show a different clipping of the image.
 
 ## Credits
 
