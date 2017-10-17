@@ -18,7 +18,7 @@ GEM
     execjs (2.7.0)
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
-    ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (163)
@@ -179,7 +179,7 @@ GEM
     minitest (5.10.3)
     multipart-post (2.0.0)
     net-dns (0.8.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.1-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -209,11 +209,11 @@ GEM
     unicode-display_width (1.3.0)
 
 PLATFORMS
-  ruby
+  x64-mingw32
 
 DEPENDENCIES
   github-pages (= 163)
   jekyll-paginate
 
 BUNDLED WITH
-   1.15.4
+   1.15.1
