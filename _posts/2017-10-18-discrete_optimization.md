@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Algorithms and discrete optimization
+title: Algorithms and optimization
 ---
 
 Over the years I've struggled with the disconnect between "algorithms" — as a student might see
