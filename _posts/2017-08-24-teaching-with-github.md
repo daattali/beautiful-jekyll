@@ -76,9 +76,9 @@ Finally, the following links may be of interest to those who've made it this far
 
 - [GitHub Classroom](https://classroom.github.com/)
 - ["How I implemented GitHub in my classroom" (SIGCSE 2017)](https://www.youtube.com/watch?v=3j1BaUw53pM)
-- [UBC ClassPortal](https://github.com/ubccpsc/classportal-backend) (in progress)
 - [My code](https://github.com/mgelbart/rhomboid) and [video demo of our system](https://www.youtube.com/watch?v=zgiaBS4uUk0)
-
+- [UBC ClassPortal](https://github.com/ubccpsc/classportal-backend) (in progress)
+- [A similar approach](https://github.com/rundel/ghclass) in R, by Colin Rundel.
 
 ---------
 

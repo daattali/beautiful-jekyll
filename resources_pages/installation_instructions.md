@@ -4,7 +4,7 @@ title: Install Guide
 subtitle: For the MDS software stack
 ---
 
-This is this software installation guide used for the MDS program. We provide these installation instructions to our students on the first day of the program. Original version written by [Anmol Jawandha](https://github.com/Anmol6) at UBC.
+This is this software installation guide used for the MDS program. We provide these installation instructions to our students on the first day of the program. Original version written by [Anmol Jawandha](https://github.com/Anmol6), edits by MDS staff.
 
 ## Table of Contents
 - [GitHub](#github)
@@ -80,11 +80,11 @@ Run ``` git --version``` (on terminal if on Mac/Linux, on Git Bash if on Windows
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://docs.continuum.io/) is an easy-to-install bundle of Python and most of these libraries. We __strongly recommend__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide the same level of support with installation.
 
-For this program we are using __Python 3__, not __Python 2__, so please choose the Anaconda version with Python 3.5.
+For this program we are using __Python 3__, not __Python 2__, so please choose the Anaconda version with Python 3.6.
 
 #### Mac/Linux Users
 
-1. Head to <https://www.continuum.io/downloads> and download the Anaconda version for Mac OS with Python 3.5.
+1. Head to <https://www.continuum.io/downloads> and download the Anaconda version for Mac OS with Python 3.6.
 2. Follow the instructions on that page to run the installer.
 
     If you already have installed Anaconda at some point in the past, you can update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
@@ -95,13 +95,21 @@ For this program we are using __Python 3__, not __Python 2__, so please choose t
 
 3. Test out the Jupyter notebook: open a Terminal window, and type `jupyter notebook`. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
 
-
-
 #### Windows Users
 
-1. Head to <https://www.continuum.io/downloads> and download the Anaconda version with Python 3.5.
+1. Head to <https://www.continuum.io/downloads> and download the Anaconda version with Python 3.6.
 2. Follow the instructions on that page to run the installer
 3. Test out the Jupyter notebook: open Git Bash, and type ```jupyter notebook```. Or use the Anaconda Launcher which might have been deposited on your desktop. A new browser window should pop up.
+
+In order to open Jupyter notebook through Git Bash its location needs to be added into the PATH Enviroment Variable. 
+Follow the steps below (for Windows 10):
+
+1. Open System by navigating to "This PC", right click and select properties (or open it directly from the Control Panel)
+2. Select Advanced system settings and then click the Enviroment Variables button
+3. Highlight the Path variable and select Edit
+4. On the edit screen, click New and add the directory of your Python installation (e.g. `C:\Users\<username>\Anaconda3`)
+5. Click New and add the directory of your Jupyter installation (e.g. `C:\Users\<username>\Anaconda3\Scripts`)
+6. Open Git Bash, and type jupyter notebook` to test it out
 
 
 ### __Running Jupyter Notebook__
@@ -523,7 +531,7 @@ You can do a lot more with a terminal. See software carpentry's [resources](http
 
 The following resources will be very helpful in explaining how to work with the required languages and environments.
 
-- [Python 3.5](https://docs.python.org/3/)
+- [Python 3](https://docs.python.org/3/)
 - [Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/)
 - [R](http://www.rdocumentation.org/)
 - [RStudio](https://support.rstudio.com/hc/en-us/categories/200035113-Documentation)
