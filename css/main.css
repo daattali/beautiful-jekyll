@@ -783,3 +783,13 @@ color: #f1c40f;
 .gist, .gist-file table tr td {
   border: unset;
 }
+
+/* Fix navbar-toggle focus color */
+
+button.navbar-toggle.collapsed:focus {
+  background-color: transparent;
+}
+
+button.navbar-toggle.collapsed:hover {
+  background-color: #ddd;  
+}
