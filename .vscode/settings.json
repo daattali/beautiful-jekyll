@@ -1,0 +1,24 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um die Standardeinstellungen zu überschreiben.
+{
+    // Set basic file related options:
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    // Formation and editor options
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+        116
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    // Terminal Config
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "--login"
+    ],
+    // General appearance
+    "window.zoomLevel": 0
+}
