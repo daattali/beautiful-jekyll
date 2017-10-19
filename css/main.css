@@ -813,3 +813,11 @@ color: #f1c40f;
 .gist, .gist-file table tr td {
   border: unset;
 }
+
+/* navbar-toggle button custom colors, overrides bootstrap.css */
+
+{% if site.hover-col %}
+.navbar-default button.navbar-toggle:hover, .navbar-default button.navbar-toggle:focus {
+  background-color: {{ site.hover-col }};
+}
+{% endif %}
