@@ -44,6 +44,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
   - (Part 2) <https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x>
 
 ### Linear algebra
+- [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)
 - <http://immersivemath.com/ila/index.html> (this is an e-book rather than a course)
 - <https://www.edx.org/course/introduction-linear-models-matrix-harvardx-ph525-2x-0> (uses R)
 - <https://www.udacity.com/course/linear-algebra-refresher-course--ud953> (uses Python)
