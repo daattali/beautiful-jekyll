@@ -14,8 +14,8 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 
 ### Python
-- <https://www.coursera.org/learn/python>
-- <https://www.datacamp.com>
+- [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/learn/python), from U. Michigan (Coursera)
+- [DataCamp](https://www.datacamp.com), a variety of mini-courses
 - <https://www.udacity.com/course/programming-foundations-with-python--ud036>
 - <https://www.coursera.org/learn/python-programming-introduction>
 - <https://www.coursera.org/learn/python-data-analysis>
@@ -23,7 +23,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 ### R
 - <https://www.coursera.org/learn/r-programming>
-- <https://www.datacamp.com>
+- [DataCamp](https://www.datacamp.com), a variety of mini-courses
 - <https://www.edx.org/course/introduction-r-data-science-microsoft-dat204x-2>
 - <https://www.edx.org/course/explore-statistics-r-kix-kiexplorx-0>
 
