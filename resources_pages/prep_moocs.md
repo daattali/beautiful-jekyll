@@ -16,7 +16,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 ### Python
 - [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/learn/python), from U. Michigan (Coursera)
 - [DataCamp](https://www.datacamp.com), a variety of mini-courses such as [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
-- [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036>), Udacity
+- [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036), Udacity
 - [Python Programming: A Concise Introduction](https://www.coursera.org/learn/python-programming-introduction), from Wesleyan U. (Coursera)
 - [Introduction to Data Science in Python](https://www.coursera.org/learn/python-data-analysis), from U. Michigan (Coursera)
 - [Principles of Computing (Part 1)](https://www.coursera.org/learn/principles-of-computing-1), from Rice U. (Coursera)
@@ -36,12 +36,12 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 ### Calculus
 - [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
 - [Calculus One](https://www.coursera.org/learn/calculus1), from The Ohio State University (Coursera)
-- Calculus: Single Variable [Part 1](https://www.coursera.org/learn/single-variable-calculus), [Part 2](https://www.coursera.org/learn/differentiation-calculus), [Part 3](https://www.coursera.org/learn/integration-calculus) from U. Pennsylvania (Coursera)
-- Calculus 1 [Differentiation](https://www.edx.org/course/calculus-1a-differentiation-mitx-18-01-1x) and [Integration](https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x) from MIT (edX)
+- Calculus: Single Variable, [Part 1](https://www.coursera.org/learn/single-variable-calculus), [Part 2](https://www.coursera.org/learn/differentiation-calculus), [Part 3](https://www.coursera.org/learn/integration-calculus) from U. Pennsylvania (Coursera)
+- Calculus 1, [Differentiation](https://www.edx.org/course/calculus-1a-differentiation-mitx-18-01-1x) and [Integration](https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x) from MIT (edX)
 
 ### Linear algebra
 - [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)
-- <http://immersivemath.com/ila/index.html> (this is an e-book rather than a course)
-- <https://www.edx.org/course/introduction-linear-models-matrix-harvardx-ph525-2x-0> (uses R)
-- <https://www.udacity.com/course/linear-algebra-refresher-course--ud953> (uses Python)
-- <https://www.edx.org/course/applications-linear-algebra-part-1-davidsonx-d003x-1>
+- [Immersive linear algebra](http://immersivemath.com/ila/index.html), interactive e-book
+- [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-linear-models-matrix-harvardx-ph525-2x-0) with R, from Harvard U. (edX)
+- [Linear Algebra Refresher Course](https://www.udacity.com/course/linear-algebra-refresher-course--ud953) with Python (Udacity).
+- [Applications of Linear Algebra Part 1](https://www.edx.org/course/applications-linear-algebra-part-1-davidsonx-d003x-1), from Davidson College (edX)
