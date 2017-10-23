@@ -34,6 +34,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - <https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about>
 
 ### Calculus
+- [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
 - <https://www.coursera.org/learn/calculus1>
 - 3-part series
   - (Part 1) <https://www.coursera.org/learn/single-variable-calculus>
