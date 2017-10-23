@@ -18,7 +18,7 @@ subtitle: For MDS students and beyond
 - [General lab instructions](/resources_pages/general_lab_instructions)
 - [Slack guidelines](/resources_pages/slack)
 - [MDS quizzes](/resources_pages/quiz)
-- [Career and Professional Development](/resources_pages/CareerandIndustryResources)
+- [Career and professional development](/resources_pages/CareerandIndustryResources)
 
 #### Possibly of general interest
 
