@@ -23,26 +23,21 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 ### R
 - [R Programming](https://www.coursera.org/learn/r-programming), from Johns Hopkins U. (Courera)
-- [DataCamp](https://www.datacamp.com), a variety of mini-courses
-- <https://www.edx.org/course/introduction-r-data-science-microsoft-dat204x-2>
-- <https://www.edx.org/course/explore-statistics-r-kix-kiexplorx-0>
+- [DataCamp](https://www.datacamp.com), a variety of mini-courses such as [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
+- [Introduction to R for Data Science](https://www.edx.org/course/introduction-r-data-science-microsoft-dat204x-2), from Microsoft (edX)
+- [Explore Statistics with R](https://www.edx.org/course/explore-statistics-r-kix-kiexplorx-0), from Karolinska Institutet (edX)
 
 ### Statistics and Probability
-- <https://www.edx.org/course/introduction-statistics-probability-uc-berkeleyx-stat2-2x>
-- <https://www.coursera.org/learn/probability-intro> (uses R)
-- <https://www.class-central.com/mooc/4312/coursera-basic-statistics>
-- <https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about>
+- [Introduction to Statistics: Probability](https://www.edx.org/course/introduction-statistics-probability-uc-berkeleyx-stat2-2x), from U. C. Berkeley (via edX)
+- [Introduction to Probability and Data](https://www.coursera.org/learn/probability-intro) with R, from Duke U. (Coursera)
+- [Basic Statistics](https://www.coursera.org/learn/basic-statistics), from University of Amsterdam (Coursera)
+- [Probability and Statistics](https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about), from Stanford U.
 
 ### Calculus
 - [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
-- <https://www.coursera.org/learn/calculus1>
-- 3-part series
-  - (Part 1) <https://www.coursera.org/learn/single-variable-calculus>
-  - (Part 2) <https://www.coursera.org/learn/differentiation-calculus>
-  - (Part 3) <https://www.coursera.org/learn/integration-calculus>
-- 2-part series
-  - (Part 1) <https://www.edx.org/course/calculus-1a-differentiation-mitx-18-01-1x>
-  - (Part 2) <https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x>
+- [Calculus One](https://www.coursera.org/learn/calculus1), from The Ohio State University (Coursera)
+- Calculus: Single Variable [Part 1](https://www.coursera.org/learn/single-variable-calculus), [Part 2](https://www.coursera.org/learn/differentiation-calculus), [Part 3](https://www.coursera.org/learn/integration-calculus) from U. Pennsylvania (Coursera)
+- Calculus 1 [Differentiation](https://www.edx.org/course/calculus-1a-differentiation-mitx-18-01-1x) and [Integration](https://www.edx.org/course/calculus-1b-integration-mitx-18-01-2x) from MIT (edX)
 
 ### Linear algebra
 - [Essence of linear algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) (YouTube series)
