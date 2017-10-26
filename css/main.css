@@ -821,3 +821,21 @@ color: #f1c40f;
   background-color: {{ site.hover-col }};
 }
 {% endif %}
+
+/* navbar-toggle button custom colors, overrides bootstrap.css */
+
+.navbar-default button.navbar-toggle:focus {
+  background-color: initial;
+}
+
+.navbar-default button.navbar-toggle:hover,
+.navbar-default button.navbar-toggle[aria-expanded="true"] {
+  background-color: #ddd;
+  {% if site.hover-col %}
+  background-color: {{ site.hover-col }};
+  {% endif %}
+}
+
+.navbar-default button.navbar-toggle:hover[aria-expanded="false"] {
+  background-color: initial;  
+}

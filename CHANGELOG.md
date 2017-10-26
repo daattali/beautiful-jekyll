@@ -4,7 +4,7 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
-**2017-10-16** Ability to change text color of navbar and the color when hovering over links (#256) (thanks @jennydaman)
+**2017-10-26** Ability to change text color of navbar and the color when hovering over links (#256), also fixes #268 (thanks @jennydaman)
 
 **2017-10-16** Add GitHub buttons to posts (#265) (thanks @yonicd)
 
