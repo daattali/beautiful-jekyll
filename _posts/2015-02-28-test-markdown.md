@@ -10,72 +10,21 @@ Hurricane data from [NOAA](https://www.ncdc.noaa.gov/ibtracs/index.php?name=wmo-
 
 Visualizations inspired by [/r/dataisbeauitful](https://www.reddit.com/r/dataisbeautiful/comments/6y0h2q/100_years_of_hurricane_paths_animated_oc/)
 
-<iframe src='https://gfycat.com/ifr/MeatyShamelessHedgehog' frameborder='0' scrolling='no' allowfullscreen width='640' height='360'></iframe>
+First version closest to the original post on /r/dataisbeautiful:
+<iframe src='https://gfycat.com/ifr/SecondhandShrillHamster' frameborder='0' scrolling='no' allowfullscreen width='800' height='500'></iframe>
 
-~~~
+25 year moving average intensity heatmap: (normalized to most intense grid in data)
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+<iframe src='https://gfycat.com/ifr/MeatyShamelessHedgehog' frameborder='0' scrolling='no' allowfullscreen width='800' height='500'></iframe>
 
-**Here is some bold text**
+Animated storm tracks with intensity by width and color:
 
-## Here is a secondary heading
+<iframe src='https://gfycat.com/ifr/AlarmedShoddyGordonsetter' frameborder='0' scrolling='no' allowfullscreen width='800' height='500'></iframe>
 
-Here's a useless table:
+For a slower version of the above with higher quality [link](https://www.youtube.com/watch?v=HJxQpoWPYTo&feature=youtu.be)
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+For fun a smoothly looping animation in the cinemagraphic style:
+
+<iframe src='https://gfycat.com/ifr/ExaltedGrossBoubou' frameborder='0' scrolling='no' allowfullscreen width='800' height='500'></iframe>
 
 
-How about a yummy crepe?
-
-![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-Here's a code chunk:
-~~~
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
