@@ -24,10 +24,9 @@ description: Data Science and Visualizations
 # List of links in the navigation bar
 navbar-links:
   # About Me: "aboutme"
-  Resources:
-    - Portfolio Data Science: "http://deanattali.com/beautiful-jekyll/"
-    - Portfolio Data Visualizations: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "http://www.github.com/pixelatedbrian"
+  Data Science: "http://deanattali.com/beautiful-jekyll/"
+  Data Viz: "http://www.markdowntutorial.com/"
+  GitHub Pages: "http://www.github.com/pixelatedbrian"
  # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
