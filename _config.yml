@@ -24,7 +24,7 @@ description: Data Science and Visualizations
 # List of links in the navigation bar
 navbar-links:
   # About Me: "aboutme"
-  Portfolio: Data Science: "http://deanattali.com/beautiful-jekyll/"
+  Portfolio: Data Science: "https://pixelatedbrian.github.io/portfolio/"
   Portfolio: Data Viz: "https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/"
   GitHub Repos: "http://www.github.com/pixelatedbrian"
  # Author's home: "http://deanattali.com"
