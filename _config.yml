@@ -46,9 +46,9 @@ navbar-col: "#009900"
 # navbar-img: "/img/bgimage.png"
 footer-col: "#009900"
 # footer-img: "/img/bgimage.png"
-page-col: "#009900"
+page-col: "#001a00"
 # page-img: "/img/bgimage.png"
-main-page: "#001a00"
+# main-page: "#001a00"
 
 # --- Footer options --- #
 
