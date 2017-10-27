@@ -784,12 +784,17 @@ color: #f1c40f;
   border: unset;
 }
 
-/* Fix navbar-toggle focus color */
+/* navbar-toggle button custom colors, overrides bootstrap.css */
 
-button.navbar-toggle.collapsed:focus {
-  background-color: transparent;
+.navbar-default button.navbar-toggle:focus {
+  background-color: initial;
 }
 
-button.navbar-toggle.collapsed:hover {
-  background-color: #ddd;  
+.navbar-default button.navbar-toggle:hover,
+.navbar-default button.navbar-toggle[aria-expanded="true"] {
+  background-color: #ddd;
+}
+
+.navbar-default button.navbar-toggle:hover[aria-expanded="false"] {
+  background-color: initial;  
 }
