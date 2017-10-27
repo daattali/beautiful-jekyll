@@ -1,4 +1,10 @@
 
+---
+layout: page
+title: Atlantic Hurricanes Data Visualization
+subtitle: 100 years of Atlantic Hurricanes
+---
+
 Hurricane data from [NOAA](https://www.ncdc.noaa.gov/ibtracs/index.php?name=wmo-data)
 
 Visualizations inspired by [/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/comments/6y0h2q/100_years_of_hurricane_paths_animated_oc/)
