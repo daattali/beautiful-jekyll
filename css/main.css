@@ -351,6 +351,7 @@ footer .theme-by {
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
+  color: #f2f2f2;
 }
 .post-preview .post-subtitle {
   margin: 0;
@@ -359,7 +360,7 @@ footer .theme-by {
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #808080;
+  color: #f2f2f2;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
