@@ -10,6 +10,9 @@ Scraped 10M user playtimes of games tagged as indie from Steam.com. Stored prepr
 
 Did several rounds of iteration to improve the results as the first iteration of the project simply recommended games with the highest average playtimes. The Log10 transformation helped a lot with that particular issue. A system of weightings was also developed to penalize different types of games. In particular games under development had very high average playtimes but very few total users in the sample. (Which makes sense as the game is not yet available to the public yet.) The playtimes of these games would be penalized by the weighting system which reduced those kinds of issues.
 
+![alt text](https://github.com/pixelatedbrian/pixelatedbrian.github.io/blob/master/img/rmse_vs_rank.png "Prediction Error Rates")
+
+Reference-style: 
 A train/test split of the data was performed for cross validation. The results were quite promising as many games in the holdout set would appear as recommended games for the user. There wasn't enough time during capstone to create a data product website that was public facing but that is still a desired outcome for a later date.
 
 Many more details [here](https://github.com/pixelatedbrian/Indie-Game-Recommender/blob/master/README.md)
