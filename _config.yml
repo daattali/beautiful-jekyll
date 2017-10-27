@@ -49,9 +49,9 @@ footer-col: "#262626"
 page-col: "#1a1a1a"
 # page-img: "/img/bgimage.png"
 body-bg: "#0d0d0d"
-navbar-default-link-col: "#76daff"
-navbar-default-col: "#76daff"
-text-col: "#f2f2f2"
+navbar-default-link-color: "#76daff"
+navbar-default-color: "#76daff"
+text-color: "#ffff66"
 
 # --- Footer options --- #
 
