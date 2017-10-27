@@ -33,6 +33,9 @@ All projects:
 ### Individual Case Studies:
 
 [Indie Game Recommender (Capstone Project)](https://github.com/Brionnic/Indie-Game-Recommender/blob/master/README.md)
+
+![Example Recommendations Against Holdout Data Set](/img/results_example.png)
+
 * **Tools used:** BeautifulSoup, Selenium, AWS EC2/S3, MongoDB, EDA, Spark/PySpark, Spark MLLib NMF ALS explicit/implicit, rating weighting system, model serialization, capstone presentation
 * **Summary:** Scraped 3M web pages in 5+ rounds of iteration, wrangled data with MongoDB workflow, ultimately predicted using ~10M rows of data, switched from explicit ratings to implicit ratings (log10 playtime) which ended up improving predictions quite a bit, presented capstone project to audience > 50. Serialized model for flask website but have not yet implemented front end. 
 
