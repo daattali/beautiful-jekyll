@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Atlantic Hurricanes Data Visualization
