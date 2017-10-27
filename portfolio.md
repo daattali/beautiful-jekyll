@@ -1,11 +1,7 @@
 ---
 layout: page
 title: Portfolio - Brian Hardenstein
-subtitle: Data Science Portfolio
 ---
-
-### Brian Hardenstein Data Science Portfolio
-Data Science projects for Brian Hardenstein
 
 All projects:
 * Python was used for all projects unless otherwise noted.
@@ -19,6 +15,7 @@ All projects:
 * **Tools Used:** Python, JSON, tarfile, gunzip, Matplotlib
 * **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files. 
 
+![Hurricane Visualizations](img/hurricane_thumb.png)
 **Atlantic Hurricane Animated Data Visualizations**
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
@@ -41,7 +38,7 @@ All projects:
 
 **Classify Phone Apps Based on Text Descriptions (1hr assessment)**
 * **Tools used** tfidf vectorizer, NLP, Multinomial Naive Bayes Classifier
-* **Summary:** For a 1hr test used sklearn's tfidfvectorizer with basic stop words to get a sparse matrix which was then fed into a MultinomialNB classifier. 92% mean accuracy (of 5 runs) [solution](https://github.com/Brionnic/BKHardenstein_Portfolio/blob/master/src/final_assessment2.py) / [explanation](https://github.com/Brionnic/BKHardenstein_Portfolio/blob/master/src/final_assessment2.txt)
+* **Summary:** For a 1hr test used sklearn's tfidfvectorizer with basic stop words to get a sparse matrix which was then fed into a MultinomialNB classifier. 92% mean accuracy (of 5 runs) [solution](https://github.com/pixelatedbrian/BKHardenstein_Portfolio/blob/master/src/final_assessment2.py) / [explanation](https://github.com/pixelatedbrian/BKHardenstein_Portfolio/blob/master/src/final_assessment2.txt)
 
 **Event Planning Fraud Detection**
 * **Tools used:** gradient boosting classifier, recall optmized, serialized model, confusion matrices, ROC, flask website, AWS EC2
