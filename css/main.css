@@ -110,7 +110,7 @@ img {
 .navbar-custom {
   background: #2f363c;
   color: #6699cc;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #434d56;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-col %}
   background: {{ site.navbar-col }};
@@ -277,9 +277,9 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #18364e;
+  background: #30373d;
   color: #1a1a1a;
-  border-top: 1px #EAEAEA solid;
+  border-top: 1px #434d56 solid;
   margin-top: 50px;
   font-size: 14px;
   {% if site.footer-col %}
