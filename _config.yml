@@ -50,7 +50,7 @@ page-col: "#1a1a1a"
 # page-img: "/img/bgimage.png"
 body-bg: "#1a1a1a"
 navbar-default-link-color: "#76daff"
-navbar-default-color: "#f2f2f2"
+navbar-default-color: "#76daff"
 text-color: "#f2f2f2"
 
 # --- Footer options --- #
