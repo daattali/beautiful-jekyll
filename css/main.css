@@ -109,7 +109,7 @@ img {
 
 .navbar-custom {
   background: #18364e;
-  color: ##639ecf;
+  color: #6699cc;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-col %}
@@ -277,7 +277,7 @@ img {
 footer {
   padding: 30px 0;
   background: #18364e;
-  color: ##639ecf;
+  color: #1a1a1a;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
@@ -339,7 +339,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #404040;
+  color: #6699cc;
 }
 
 .post-preview a:focus,
@@ -351,16 +351,17 @@ footer .theme-by {
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
-  color: #f2f2f2;
+  color: #d9d9d9;
 }
 .post-preview .post-subtitle {
+  color: #bfbfbf;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #f2f2f2;
+  color: #bfbfbf;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
