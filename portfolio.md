@@ -17,7 +17,7 @@ All projects:
 
 **Atlantic Hurricane Animated Data Visualizations**
 
-![Hurricane Visualizations](img/hurricane_thumb.png =300x)
+<img src="img/hurricane_thumb.png" alt="Hurricane Visualizations" style="width: 300px;"/>
 
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
@@ -34,7 +34,7 @@ All projects:
 
 [Indie Game Recommender (Capstone Project)](https://github.com/Brionnic/Indie-Game-Recommender/blob/master/README.md)
 
-![Example Recommendations Against Holdout Data Set](/img/results_example.png =300x)
+<img src="/img/results_example.png" alt="Example Recommendations Against Holdout Data Set" style="width: 300px;"/>
 
 * **Tools used:** BeautifulSoup, Selenium, AWS EC2/S3, MongoDB, EDA, Spark/PySpark, Spark MLLib NMF ALS explicit/implicit, rating weighting system, model serialization, capstone presentation
 * **Summary:** Scraped 3M web pages in 5+ rounds of iteration, wrangled data with MongoDB workflow, ultimately predicted using ~10M rows of data, switched from explicit ratings to implicit ratings (log10 playtime) which ended up improving predictions quite a bit, presented capstone project to audience > 50. Serialized model for flask website but have not yet implemented front end. 
