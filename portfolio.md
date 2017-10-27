@@ -1,3 +1,9 @@
+---
+layout: page
+title: Portfolio - Brian Hardenstein
+subtitle: Data Science Portfolio
+---
+
 ### Brian Hardenstein Data Science Portfolio
 Data Science projects for Brian Hardenstein
 
