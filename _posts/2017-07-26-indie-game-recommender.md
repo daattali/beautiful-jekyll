@@ -2,7 +2,7 @@
 layout: post
 title: Indie Game Recommender
 subtitle: Galvanize Capstone Project
-bigimg: /img/path.jpg
+bigimg: /img/indie_game_average_playtimes.png
 tags: [NMF, ALS, Spark, Data Products, Recommender, Galvanize]
 ---
 
