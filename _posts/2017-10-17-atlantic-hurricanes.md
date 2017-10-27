@@ -2,6 +2,7 @@
 layout: post
 title: Visualization - Atlantic Hurricanes
 subtitle: 100 years of data animated
+image: /img/hurricane_thumb.png
 gh-repo: pixelatedbrian/pixelated-hurricanes
 gh-badge: [star, fork, follow]
 ---
