@@ -17,7 +17,7 @@ All projects:
 
 **Atlantic Hurricane Animated Data Visualizations**
 
-<img src="/img/hurricane_thumb.png" alt="Hurricane Visualizations" style="width: 300px; "align": "middle";/>
+<img src="/img/hurricane_thumb.png" alt="Hurricane Visualizations" style="width: 300px; align: middle;"/>
 
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
