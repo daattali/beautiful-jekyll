@@ -9,9 +9,9 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #404040;
+  color: #f2f2f2;
   position: relative;
-  background: #FFF;
+  background: #060d13;
   {% if site.page-col %}
   background: {{ site.page-col }};
   {% endif %}
