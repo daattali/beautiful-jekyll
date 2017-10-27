@@ -790,11 +790,10 @@ color: #f1c40f;
   background-color: initial;
 }
 
-.navbar-default button.navbar-toggle:hover,
 .navbar-default button.navbar-toggle[aria-expanded="true"] {
   background-color: #ddd;
 }
 
 .navbar-default button.navbar-toggle:hover[aria-expanded="false"] {
-  background-color: initial;  
+  background-color: #ddd;
 }
