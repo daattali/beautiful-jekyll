@@ -16,6 +16,7 @@ All projects:
 * **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files. 
 
 ![Hurricane Visualizations](img/hurricane_thumb.png)
+
 **Atlantic Hurricane Animated Data Visualizations**
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
