@@ -749,3 +749,17 @@ td.gutter {
 .gist, .gist-file table tr td {
   border: unset;
 }
+
+/* navbar-toggle button custom colors, overrides bootstrap.css */
+
+.navbar-default button.navbar-toggle:focus {
+  background-color: initial;
+}
+
+.navbar-default button.navbar-toggle[aria-expanded="true"] {
+  background-color: #ddd;
+}
+
+.navbar-default button.navbar-toggle:hover[aria-expanded="false"] {
+  background-color: #ddd;
+}
