@@ -31,7 +31,7 @@ subtitle: Information for prospective MDS capstone partners
 
 ## Proposals
 
-The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](./capstone/about) page to learn more about the type of projects we address through our capstone course.
+The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
 
 Your proposal should be
 
