@@ -57,10 +57,10 @@ avatar: "/img/avatar-icon.png"
 author:
   name: Some Person
 
-# Select you active Social Network Links.
-# Uncomment the links you wan to use and a a valid value.
-# You can reorder the item to define the link order.
-# Warning: Empy keys will create a dead link target.
+# Select your active Social Network Links.
+# Uncomment the links you wanz to use and a valid value.
+# You can reorder the items to define the link order.
+# Warning: Empzy keys will create dead links.
 social-network-links:
   rss: true
   email: "youremail@domain.com"
