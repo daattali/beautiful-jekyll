@@ -28,7 +28,7 @@ navbar-links:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Green Roofs: "http://efb-greenroof.eu/coming-soon-mapping-green-roofs-in-warsaw/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -43,11 +43,11 @@ avatar: "/img/avatar-icon.png"
 # By default, the navigation bar and footer have a light gray background, and the main page
 # has a white background. You can specify a different background colour or a background image
 # for the navigation bar, the main page, and the footer.
-# navbar-col: "orange"
+navbar-col: "#EDV7B7"
 # navbar-img: "/img/bgimage.png"
-# footer-col: "blue"
+footer-col: "#123C69"
 # footer-img: "/img/bgimage.png"
-# page-col: "#FF0000"
+page-col: "#EEE2DC"
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
