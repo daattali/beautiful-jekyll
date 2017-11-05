@@ -41,7 +41,7 @@ _And employment for the jobless_
 _Enrich other countries to build a new world_  
 _Where joy will never cease_  
 _And all around will be pure peace._
-_
+
 _May your agenda be to help_  
 _Fight poverty and terrorism_  
 _To let the poor and weak countries grow_  
