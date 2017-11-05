@@ -4,7 +4,7 @@ title: "Celery Best Practices"
 author: ianstream
 description: "Celery Best Practices"
 date: 2017-11-01
-tags: [queue,python,celery]
+tags: [queue,python,celery,django]
 comments: true
 ---
 
@@ -47,7 +47,7 @@ consumer(worker) 는 queue 가 새로운 task 를 consumer 에게 강요하는 �
 
 나는 개발환경에서라도 데이터베이스를 broker 로 사용해서는 안된다고 말하고 싶다.
 
-첨언 : AMQP 표준에 대해서는 다음 [링크](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)를 참고하자.
+덧글 : AMQP 표준에 대해서는 다음 [링크](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)를 참고하자.
 <br />
 
 
@@ -137,7 +137,7 @@ def my_task_A():
 
 #### No 5. Flower 를 사용하자.
 
-Flower 프로젝트는 Celery task, worker 를 모니터링하는 좋은 도구이다.
+[Flower](http://celery.readthedocs.io/en/latest/userguide/monitoring.html#flower-real-time-celery-web-monitor) 프로젝트는 Celery task, worker 를 모니터링하는 좋은 도구이다.
 웹 기반이며 task process 및 상세내용, worker 상태, 새로운 worker 등록 및 기타 관련된 기능을 제공해준다.
 다음 링크에서 상세한 내용을 확인해보자.
 <br />
@@ -152,7 +152,7 @@ task 는 작업의 성공여부에 대한 정보를 가진다.
 하지만 대부분의 경우에는 sqlite, postgres, 혹은 다른 database 를 사용하여 이 정보들을 저장하고 있었다.
 왜 이런식으로 웹 애플리케이션의 데이터베이스에 부하를 주고 있나? celeryconfig.py 파일에 CELERY_IGNORE_RESULT = True 옵션을 사용해서 결과를 기록하지 말기 바란다.
 
-첨언 : Celery 4.1 기준은 [링크](http://docs.celeryproject.org/en/latest/userguide/tasks.html#ignore-results-you-don-t-want)를 참고하자.
+덧글 : Celery 4.1 기준은 [링크](http://docs.celeryproject.org/en/latest/userguide/tasks.html#ignore-results-you-don-t-want)를 참고하자.
 <br />
 
 

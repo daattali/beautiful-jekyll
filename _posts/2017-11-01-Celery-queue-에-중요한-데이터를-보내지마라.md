@@ -11,7 +11,7 @@ comments: true
 이 글은 다음 [원문](https://www.caktusgroup.com/blog/2016/10/18/dont-keep-important-data-your-celery-queue/) 을 번역한 글 입니다.
 <br />
 
-Celery 라이브러리 ( 이전 게시물 )를 사용하면 나중에 함수를 호출 할 때 실행할 task 를 쉽게 스케줄 할 수 있다.
+Celery 라이브러리([이전 게시물](https://www.caktusgroup.com/blog/tags/celery/))를 사용하면 나중에 함수를 호출 할 때 실행할 task 를 쉽게 스케줄 할 수 있다.
 다음과 같은 task 를 :
 
 ```python
