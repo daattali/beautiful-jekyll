@@ -56,7 +56,7 @@ avatar: "/img/avatar-icon.png"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: yeontae Kim
-  email: "ianstream@domain.com"
+  email: "ianstream@gmail.com"
   facebook: ianstream  # eg. daattali
   github: ianstream    # eg. daattali
 #  twitter: yourname   # eg. daattali
@@ -104,7 +104,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "http://ianstream.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
