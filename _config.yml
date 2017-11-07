@@ -60,6 +60,7 @@ author:
   github: martazaryn    # eg. daattali
   twitter: martazaryn   # eg. daattali
   linkedin: martazaryn  # eg. daattali
+  gitlab: martazaryn
 
 # Select which links to show in the footer
 footer-links-active:
@@ -67,7 +68,8 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
+  gitlab: true
 
 # Select which share links to show in posts
 share-links-active:
