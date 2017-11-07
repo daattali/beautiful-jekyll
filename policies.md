@@ -68,7 +68,8 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 ## Quizzes
 
-Unless otherwise specified, quizzes will be closed-book. This means that during the quiz students are expected to:
+Unless otherwise specified, **quizzes will be open-book in regards to offline documentation only** (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:
+
 
 - be physically present in the quiz room (cannot take a quiz from a remote location)
 - not communicate with other students or anyone else
