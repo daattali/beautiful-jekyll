@@ -25,6 +25,17 @@
             </a>
           </li>
           {% endif %}
+          {% if site.author.gitlab and site.footer-links-active.gitlab %}
+          <li>
+            <a href="https://gitlab.com/{{ site.author.github }}" title="GitLab">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">GitLab</span>
+            </a>
+          </li>
+          {% endif %}
 		  {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
