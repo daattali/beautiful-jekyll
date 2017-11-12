@@ -23,7 +23,7 @@ description: My p(y)ath with Python 🐍
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme.md"
+  About Me: "/aboutme/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
