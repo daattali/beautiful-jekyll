@@ -24,6 +24,7 @@ description: Make code, community and great Wrocław
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  My Work: "mywork"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
