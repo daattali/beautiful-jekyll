@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
+bigimg: /img/tatry_way.jpg
 ---
 
 My name is Rafał Gawlik and this is some information about me:
