@@ -2,6 +2,8 @@
 layout: post
 title: AwesomeBlog
 subtitle: blogging platform
+published: true
+bigimg: /img/tatry_way.jpg
 ---
 
 Blogging platform based on Django 1.8
