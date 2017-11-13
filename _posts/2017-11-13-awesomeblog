@@ -1,0 +1,18 @@
+---
+layout: post
+title: AwesomeBlog
+subtitle: blogging platform
+---
+
+Blogging platform based on Django 1.8
+
+## Features
+ * Create and manage blog (one or more)
+ * Create and manage post
+ * Author profile
+ * Manage autor profile
+ * Manage comments above posts
+ * Login / Registration
+
+
+![Image of AwesomeBlog](https://github.com/rafalgawlik/AwesomeBlog/blob/master/screenshot/screenshot_0.png?raw=true)

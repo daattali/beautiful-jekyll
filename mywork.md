@@ -6,7 +6,7 @@ subtitle: List of my Open Source and private projects
 
  - PoznajApp
  - Pola
- - AwesomeBlog
+ - AwesomeBlog [repo](https://github.com/rafalgawlik/AwesomeBlog)
  - MaterialActivityAnimation
  - MaterialRippleAnimation
  - PaymentApp
