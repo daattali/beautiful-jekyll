@@ -276,7 +276,6 @@ img {
 footer {
   padding: 30px 0;
   background: #fff;
-  border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
   {% if site.footer-col %}
