@@ -3,6 +3,17 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
+          {% if site.author.email and site.footer-links-active.email %}
+          <li>
+            <a href="mailto:{{ site.author.email }}" title="Email me">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">Email me</span>
+            </a>
+          </li>
+          {% endif %}
           {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
@@ -22,6 +33,17 @@
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
               </span>
               <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.gitlab and site.footer-links-active.gitlab %}
+          <li>
+            <a href="https://gitlab.com/{{ site.author.gitlab }}" title="GitLab">
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-gitlab fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="sr-only">GitLab</span>
             </a>
           </li>
           {% endif %}
@@ -55,17 +77,6 @@
                 <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
               </span>
               <span class="sr-only">Google+</span>
-            </a>
-          </li>
-          {% endif %}
-		  {% if site.author.email and site.footer-links-active.email %}
-          <li>
-            <a href="mailto:{{ site.author.email }}" title="Email me">
-              <span class="fa-stack fa-lg" aria-hidden="true">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="sr-only">Email me</span>
             </a>
           </li>
           {% endif %}
