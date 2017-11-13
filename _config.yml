@@ -25,6 +25,7 @@ description: Make code, community and great Wrocław
 navbar-links:
   About Me: "aboutme"
   My Work: "mywork"
+  Blog : "_posts"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -171,7 +172,7 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
+  rooturl: 'aboutme'
   media: 'img'
   ignore:
     - 404.html
