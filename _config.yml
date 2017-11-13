@@ -24,7 +24,7 @@ title: Mahesh Kumar
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Papers: "papers"
+  # Papers: "papers"
   Resources:
     - Datatau: "http://www.datatau.com/"
     - Hacker News: "https://news.ycombinator.com/"
