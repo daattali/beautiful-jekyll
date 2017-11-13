@@ -11,7 +11,7 @@ body {
   font-size: 18px;
   color: #404040;
   position: relative;
-  background: #F5F5F5;
+  background: #fff;
   {% if site.page-col %}
   background: {{ site.page-col }};
   {% endif %}
@@ -275,7 +275,7 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
+  background: #fff;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
