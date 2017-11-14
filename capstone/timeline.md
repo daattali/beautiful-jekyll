@@ -28,7 +28,7 @@ The timeline is below, followed by additional detail on each event.
 
 #### Proposal revision process
 
-Members of an organization interested in participating as a capstone partner should submit a one-page project [proposal](capstone/partner_info/#proposals) to `capstone-mds@science.ubc.ca`.
+Members of an organization interested in participating as a capstone partner should submit a one-page project [proposal](https://ubc-mds.github.io/capstone/partner_info/#proposals) to `capstone-mds@science.ubc.ca`.
 
 Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
 
