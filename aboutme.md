@@ -7,7 +7,7 @@ bigimg: /img/tatry_way.jpg
 
 My name is Rafał Gawlik and this is some information about me:
 
- - I am Android, iOS, and React Native developer.
+ - I am Android and React Native developer.
  - I've been doing apps for Android and iOS professionally for 4 years.
  - I am a leader of Koduj dla Polski (Code for Poland).  I would like to build developers community in Wroclaw to solve social problems.
  - Naturally, I am based in Wrocław (Poland).
