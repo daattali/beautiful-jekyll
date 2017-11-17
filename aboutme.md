@@ -15,7 +15,7 @@ I find it inspiring to encourage newbies to programming, so if you have a questi
 
 ### Experience
 
-(2017+) Sales&More SA
+(2017+) Sales&More S.A.
 • Online Developer (Python + GCP)
 
 (2017) DaftCode
@@ -68,7 +68,10 @@ Poznan University of Life Sciences
 • European Urban Green Infrastrucutre Conference in Vienna - lecture on mapping green roofs in Warsaw
 • Passive Building, Green Building Conference - lecture on benefits and costs of green roofs on International Trades
 of technologies for sustainable development POL-ECO-SYSTEM in Poznan
-• Article in Real Estate Appraisers Magazine of Greater Poland – Sustainable development or economic efficience – selected problems of green roof investments in Poland
+• Article for European Federation of Green Roof Associations [ENG] - [Mapping Green Roofs In Warsaw – existing and potential](http://efb-greenroof.eu/coming-soon-mapping-green-roofs-in-warsaw/)
+(http://efb-greenroof.eu/coming-soon-mapping-green-roofs-in-warsaw/)
+• Article in Warunki Techniczne Magazine [PL] - [Noise and innovative elements of landscape architecture design in urban landscape](https://drive.google.com/file/d/0B5Jbnj-1ZmdeMGZzX0h3ZldFM2c/view)
+• Article in Real Estate Appraisers Magazine of Greater Poland [PL] – [Sustainable development or economic efficience – selected problems of green roof investments in Poland](https://srmww.pl/images/biuletyny/2013/1_2_2013/16-24.pdf)
 
 
 ### Other
