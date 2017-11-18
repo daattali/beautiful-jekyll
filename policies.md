@@ -64,7 +64,7 @@ UBC courses are graded out of 100%. To pass an MDS course a student must score 6
 
 #### Final course grades
 
-With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails the quiz component of a course (below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail the quiz component of more than 3 courses.
+With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails all the quizzes in a course (each below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail all the quizzes in more than 3 courses.
 
 ## Quizzes
 
