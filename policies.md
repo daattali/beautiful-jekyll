@@ -68,16 +68,16 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 ## Quizzes
 
-Unless otherwise specified, **quizzes will be open-book in regards to offline documentation only** (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:
+Unless otherwise specified, **the only allowed material during MDS quizzes is official documentation available in the local programming environment** (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students may **NOT** :
 
+- take a quiz from a remote location
+- communicate with other students or anyone else
+- use the internet to solve questions on the quiz
+- bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)
+- leave the quiz room early with your laptop
+- leave and re-enter the quiz room (other than for purposes such as using the washroom)
 
-- be physically present in the quiz room (cannot take a quiz from a remote location)
-- not communicate with other students or anyone else
-- not use the internet to solve questions on the quiz
-- not bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)
-- not leave the quiz room early with your laptop, and not come back into the quiz room after leaving (other than for purposes such as using the washroom)
-
-Failing to observe the above expectations may result in a zero grade in the quiz in question.
+Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
 ## Plagiarism
 
