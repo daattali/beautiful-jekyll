@@ -6,7 +6,6 @@ bigimg: /img/dev_1.jpg
 ---
 
  - PoznajApp [www](http://poznajapp.pl) [repo](https://github.com/KlubJagiellonski/poznaj-app-android) [project](https://codeforpoland.org/projects/meet-wroclaw/)
- - Pola [www](http://pola-app.pl) [repo](https://github.com/KlubJagiellonski/pola-android)
  - AwesomeBlog [repo](https://github.com/rafalgawlik/AwesomeBlog)
  - MaterialActivityAnimation [repo](https://github.com/rafalgawlik/MaterialActivityAnimations)
  - MaterialRippleAnimation [repo](https://github.com/rafalgawlik/MaterialRippleAnimation)
