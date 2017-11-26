@@ -23,7 +23,8 @@ description: Cảm ơn các bạn đã ghé thăm "nhà" của tôi
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  Home: ""
+  AboutMe: "aboutme"
   Category: "categories"
   Tags: "tags"
   Search: "search"
