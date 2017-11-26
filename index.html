@@ -45,9 +45,10 @@ use-site-title: true
       {% if site.link-tags %}
       {% for tag in post.tags %}
       <a href="/tags#{{ tag }}-ref">{{ tag }}</a> <br>
-      <a href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>
+      <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
       {% endfor %}
       {% else %}
+        <a href="/tags#{{ tag }}-ref">{{ tag }}</a> <br>
         {{ post.tags | join: ", " }}
       {% endif %}
     </div>
