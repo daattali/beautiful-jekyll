@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Tôi là ai?
+subtitle: Hành trình trải nghiệm và khám phá của tôi
 ---
 
 # Tôi là ai ?
