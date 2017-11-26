@@ -58,7 +58,7 @@ So here we go.
 
 	I badly want to read [_Geons, Black Holes, and Quantum Foam: A Life in Physics_](https://www.goodreads.com/book/show/636449.Geons_Black_Holes_and_Quantum_Foam), John A. Wheeler's biography. The man has contributed a lot to physics (including coining the term _black hole_), but I feel his personal life remains ridiculously unexplored in the mainstream though his contributions continue to resonate in the cutting-edge today. PS - he was also Feynman's doctoral advisor.
 
-* **Scholarship: Nonfiction can teach us a lot, what subjects and topics have you really learned about because of your reading?*
+* **Scholarship: Nonfiction can teach us a lot, what subjects and topics have you really learned about because of your reading?**
 
 	I would think that most of the knowledge and closeness I have to India developed in Pilani through my readings of essays and books related to Indian polity and Union. I am much more of a nationalist and patriot now only because of the book I have read. I think the Government should encourage reading of the real history of India, with all its _rights_ and _wrongs_ (and _lefts_), rather than just forcing its citizens to stand up compulsorily for the National Anthem to prove their nationalism.
 
