@@ -749,3 +749,51 @@ td.gutter {
 .gist, .gist-file table tr td {
   border: unset;
 }
+
+.menudoc a {
+  color: white;
+  padding: 8px 13px;
+  display: block;
+  border: 1px solid gray;
+  font-size: 12px;
+}
+
+ul.menudoc {
+  list-style: none;
+}
+
+.menuphai {
+  position: fixed;
+  top: 0px;
+  height: 900px;
+  background: black;
+  width: 250px;
+  z-index: 3;
+  color: white;
+  transition: all 0.4s;
+  right: -300px;
+}
+
+.menuphai.ra {
+  right: 0px;
+}
+
+.nutmenu a.fa {
+  color: white;
+  font-size: 14px;
+}
+
+
+.nutmenu {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.nutmenu:hover,
+.nutmenu:focus,
+.nutmenu:active {
+  background-color: rgba(0,0,0,0.7);
+}

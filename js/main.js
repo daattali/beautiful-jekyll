@@ -6,6 +6,19 @@ var main = {
   numImgs : null,
 
   init : function() {
+
+    
+    // khi click vao nut nutmenu
+    $('.nutmenu').click(function(){
+      $('.menuphai').addClass('ra');
+      return false; 
+    })
+    $('.tat').click(function(){
+      $('.menuphai').removeClass('ra');
+      return false; 
+    })
+
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
