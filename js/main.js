@@ -7,7 +7,17 @@ var main = {
 
   init : function() {
 
-    
+    var docao = $('#intro-header1').height();
+    $('#nutmenuright').css({'top':docao});
+    $('#menuphairight').css({'top':docao});
+
+
+    $(window).resize(function(){
+      var docao = $('#intro-header1').height();
+      $('#nutmenuright').css({'top':docao});
+      $('#menuphairight').css({'top':docao});
+  });
+
     // khi click vao nut nutmenu
     $('.nutmenu').click(function(){
       $('.menuphai').addClass('ra');
