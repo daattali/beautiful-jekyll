@@ -3,10 +3,19 @@
   <ul class="menudoc">
     <li><a href="/" id="menuHome">Home</a></li>
     <li><a href="/aboutme" id="menuAbout">About Me</a></li>
+    <li><a href="/myprojects" id="menuProject">My Projects</a></li>
+    <li><a href="/awards" id="menuAwards">My Awards</a></li>
+    <li>-----------</li>
     <li><a href="/categories" id="menuCategory">Category</a></li>
     <li><a href="/tags" id="menuTag">Tags</a></li>
-    <li><a href="/myprojects" id="menuProject">My Projects</a></li>
   </ul>
+  <div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="{{ site.url }} ">
+	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
+		</a>
+	  </div>
+	</div>
 </div>
 <div class="nutmenu">
   <a href="" class="fa fa-bars"></a>
