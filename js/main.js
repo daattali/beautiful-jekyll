@@ -22,15 +22,17 @@ var main = {
     $('.nutmenu').click(function(){
       var right_menuphai = $('#menuphairight').css('right');
       console.log(right_menuphai);
-      if(showMenu == 0)
+      if(right_menuphai == 0)
       {
-        $('.menuphai').addClass('ra');
-        showMenu =1;
+        $('.menuphai').removeClass('ra');
+        
+        //showMenu = 1;
       }
       else
       {
-        $('.menuphai').removeClass('ra');
-        showMenu = 0;
+        // $('.menuphai').removeClass('ra');
+        $('.menuphai').addClass('ra');
+        //showMenu = 0;
       }
       return false; 
     })
