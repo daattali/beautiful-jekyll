@@ -35,8 +35,10 @@ var main = {
             // $(".navbar").addClass("top-nav-short");
             $(".navbar").addClass("navbar-hide");
             $('#nutmenuright').removeClass("nutmenu-hide");
+            $('#nutmenuright').removeClass("nutmenu-hide");
         } else {
             $(".navbar").removeClass("navbar-hide");
+            $('#nutmenuright').addClass("nutmenu-hide");
             $('#nutmenuright').addClass("nutmenu-hide");
         }
     });

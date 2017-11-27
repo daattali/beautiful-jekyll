@@ -16,7 +16,7 @@
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="/" id="menuHome"><b class="fa fa-home"></b> Home</a></li>
+          <li><a href="/" id="menuHome"><b class="fa fa-home"></b></a></li>
           <li><a href="/aboutme" id="menuAbout"><b class="fa fa-angellist"></b>About</a></li>
           <li><a href="/myprojects" id="menuProject"><b class="fa fa-code"></b> My Projects</a></li>
           <li><a href="/awards" id="menuAwards"> <b class="fa fa-trophy"></b> My Awards</a></li>
@@ -47,7 +47,8 @@
 	{% if page.image and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="{{ site.url }} ">
+	    <!-- <a href="{{ site.url }} "> -->
+    <a href="/aboutme">
 	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
 		</a>
 	  </div>
@@ -55,7 +56,7 @@
 	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="{{ site.url }} ">
+	    <a href="/aboutme">
 	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
 		</a>
 	  </div>
@@ -66,7 +67,7 @@
 </nav>
 
 <div class="menuphai" id="menuphairight">
-  <h2> <a href="/" id="menuHome">Home</a> <b class="fa fa-close tat" id='close'></b></h2>
+  <h2></h2> <a href="/" id="menuHome"><b class="fa fa-home"></b></a> <b class="fa fa-close tat" id='close'></b></h2>
   <ul class="menudoc">
     <li><a href="/myprojects" id="menuProject"><b class="fa fa-code"></b> My Projects</a></li>
     <li><a href="/awards" id="menuAwards"> <b class="fa fa-trophy"></b> My Awards</a></li>
