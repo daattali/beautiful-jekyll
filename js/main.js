@@ -35,11 +35,11 @@ var main = {
             // $(".navbar").addClass("top-nav-short");
             $(".navbar").addClass("navbar-hide");
             $('#nutmenuright').removeClass("nutmenu-hide");
-            $('#nutmenuright').removeClass("nutmenu-hide");
+            $('#menuphairight').removeClass("nutmenu-hide");
         } else {
             $(".navbar").removeClass("navbar-hide");
             $('#nutmenuright').addClass("nutmenu-hide");
-            $('#nutmenuright').addClass("nutmenu-hide");
+            $('#menuphairight').addClass("nutmenu-hide");
         }
     });
     
