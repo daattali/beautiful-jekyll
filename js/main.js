@@ -34,8 +34,10 @@ var main = {
         if ($(".navbar").offset().top > 50) {
             // $(".navbar").addClass("top-nav-short");
             $(".navbar").addClass("navbar-hide");
+            $('#nutmenuright').removeClass("nutmenu-hide");
         } else {
             $(".navbar").removeClass("navbar-hide");
+            $('#nutmenuright').addClass("nutmenu-hide");
         }
     });
     

@@ -796,6 +796,11 @@ ul.menudoc {
   right: 5px;
   padding: 10px 15px;
   background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.nutmenu-hide {
+  display: none;
 }
 
 .nutmenu:hover,
