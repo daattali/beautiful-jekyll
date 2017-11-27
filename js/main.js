@@ -20,7 +20,7 @@ var main = {
 
     // khi click vao nut nutmenu
     $('.nutmenu').click(function(){
-      var right_menuphai = $('#nutmenuright').right();
+      var right_menuphai = $('#nutmenuright').css('right');
       console.log(right_menuphai);
       if(right_menuphai == 0)
       {
