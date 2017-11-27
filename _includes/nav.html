@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom" style="display:none">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="navbarTop">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -16,7 +16,14 @@
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
+          <li><a href="/" id="menuHome"><b class="fa fa-home"></b> Home</a></li>
+          <li><a href="/aboutme" id="menuAbout"><b class="fa fa-angellist"></b>About</a></li>
+          <li><a href="/myprojects" id="menuProject"><b class="fa fa-code"></b> My Projects</a></li>
+          <li><a href="/awards" id="menuAwards"> <b class="fa fa-trophy"></b> My Awards</a></li>
+          <li><a href="/categories" id="menuCategory"> <b class="fa fa-suitcase"></b> Category</a></li>
+          <li><a href="/tags" id="menuTag"> <b class="fa fa-tags"></b> Tags</a></li>
+
+      <!-- {% for link in site.navbar-links %}
         {% if link[1].first %}
           <li class="navlinks-container">
             <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
@@ -33,7 +40,7 @@
             {% include navbarlink.html link=link %}
           </li>
         {% endif %}
-        {% endfor %}
+        {% endfor %} -->
       </ul>
     </div>
 

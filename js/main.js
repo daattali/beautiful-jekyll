@@ -7,13 +7,13 @@ var main = {
 
   init : function() {
 
-    var docao = $('#intro-header1').height();
+    var docao = $('#navbarTop').height() + 10;
     $('#nutmenuright').css({'top':docao});
     $('#menuphairight').css({'top':docao});
 
 
     $(window).resize(function(){
-      var docao = $('#intro-header1').height();
+      var docao =  $('#navbarTop').height() + 10;
       $('#nutmenuright').css({'top':docao});
       $('#menuphairight').css({'top':docao});
   });
@@ -32,9 +32,10 @@ var main = {
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
+            // $(".navbar").addClass("top-nav-short");
+            $(".navbar").addClass("navbar-hide");
         } else {
-            $(".navbar").removeClass("top-nav-short");
+            $(".navbar").removeClass("navbar-hide");
         }
     });
     

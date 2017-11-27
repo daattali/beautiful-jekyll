@@ -5,6 +5,11 @@ layout: null
 @import url("pygment_highlights.css");
 
 /* --- General --- */
+/* hide top menu */
+
+.navbar-hide {
+  display: none;
+}
 
 body {
   font-family: 'Lora', 'Times New Roman', serif;
