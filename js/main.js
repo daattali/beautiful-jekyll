@@ -6,7 +6,7 @@ var main = {
   numImgs : null,
 
   init : function() {
-
+    var showMenu = 0;
     var docao = $('#navbarTop').height() + 10;
     $('#nutmenuright').css({'top':docao});
     $('#menuphairight').css({'top':docao});
@@ -22,15 +22,16 @@ var main = {
     $('.nutmenu').click(function(){
       var right_menuphai = $('#menuphairight').css('right');
       console.log(right_menuphai);
-      if(right_menuphai == 0)
+      if(showMenu == 0)
       {
-        $('.menuphai').removeClass('ra');
+        $('.menuphai').addClass('ra');
+        showMenu =1;
       }
       else
       {
-        $('.menuphai').addClass('ra');
+        $('.menuphai').removeClass('ra');
+        showMenu = 0;
       }
-      
       return false; 
     })
     $('.tat').click(function(){
