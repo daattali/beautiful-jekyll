@@ -4,21 +4,8 @@ title: My Notes
 subtitle: Nơi tôi ghi lại những gì tôi đã từng trải qua
 use-site-title: true
 ---
-<div class="menuphai">
-  <h2>Bootstrap <b class="fa fa-close tat" id='close'></b></h2>
-  <ul class="menudoc">
-    <li><a href="/" id="menuHome">Home</a></li>
-    <li><a href="/aboutme" id="menuAbout">About Me</a></li>
-    <li><a href="/categories" id="menuCategory">Category</a></li>
-    <li><a href="/tags" id="menuTag">Tags</a></li>
-    <li><a href="/myprojects" id="menuProject">My Project</a></li>
-  </ul>
-</div>
-<div class="nutmenu">
-  <a href="" class="fa fa-bars"></a>
-</div>
 
-<div class="container">
+
     <div class="posts-list">
       {% for post in paginator.posts %}
       <article class="post-preview">
@@ -71,7 +58,7 @@ use-site-title: true
       {% endfor %}
     </div> <!-- end of post-list -->
 
-</div> <!-- end of body container -->
+
 
 {% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">
