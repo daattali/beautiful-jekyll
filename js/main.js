@@ -20,7 +20,17 @@ var main = {
 
     // khi click vao nut nutmenu
     $('.nutmenu').click(function(){
-      $('.menuphai').addClass('ra');
+      var right_menuphai = $('#nutmenuright').right();
+      console.log(right_menuphai);
+      if(right_menuphai == 0)
+      {
+        $('.menuphai').removeClass('ra');
+      }
+      else
+      {
+        $('.menuphai').addClass('ra');
+      }
+      
       return false; 
     })
     $('.tat').click(function(){
