@@ -4,7 +4,7 @@ title: Những nguy hiểm đến từ điểm truy cập mạng công cộng
 image: img/2017-13-04-Devil_Free_wifi/FREE_WIFI_1.png
 tags: [soft-skill, ky-nang-mem, Sercurity]
 categories: [Sercurity]
-date: 2017-13-04
+date: 2017-04-12
 # bigimg: img/2017-13-04-Devil_Free_wifi/FREE_WIFI_1.png
 ---
 
