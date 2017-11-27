@@ -6,11 +6,9 @@ var main = {
   numImgs : null,
 
   init : function() {
-    var showMenu = 0;
     var docao = $('#navbarTop').height() + 10;
     $('#nutmenuright').css({'top':docao});
     $('#menuphairight').css({'top':docao});
-
 
     $(window).resize(function(){
       var docao =  $('#navbarTop').height() + 10;
@@ -18,27 +16,24 @@ var main = {
       $('#menuphairight').css({'top':docao});
   });
 
-    // khi click vao nut nutmenu
+    // khi click vao nut nutmenu: Neu menu dang open (right = 0) thi dong lai
+    // Neu menu dang close (right = -250) thi mo ra
     $('.nutmenu').click(function(){
       var right_menuphai = $('#menuphairight').css('right');
-      console.log(right_menuphai);
+      // console.log(right_menuphai);
       if(right_menuphai == 0)
       {
         $('.menuphai').removeClass('ra');
-        
-        //showMenu = 1;
       }
       else
       {
-        // $('.menuphai').removeClass('ra');
         $('.menuphai').addClass('ra');
-        //showMenu = 0;
       }
-      return false; 
+      return false;
     })
     $('.tat').click(function(){
       $('.menuphai').removeClass('ra');
-      return false; 
+      return false;
     })
 
 
