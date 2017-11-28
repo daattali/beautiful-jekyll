@@ -73,3 +73,43 @@ python --version
 ```
 
 Nếu hiển thị ra Python phiên bản bao nhiêu --> đã cài đặt thành công.
+
+## Gõ dòng lệnh đầu tiên.
+
+Sau khi cài đặt xong, tận hưởng thành quả của mình một chút nhỉ :)
+
+Trên terminal/cmd, gõ:
+
+```
+python
+```
+
+Màn hình sẽ ra dấu nhắc >>> để chúng ta gõ lệnh, phía trên là các thông tin về phiên bản của python đã được cài đặt và chọn làm mặc định.
+
+Tiếp tục gõ
+
+```
+print("Hello Python")
+```
+
+Màn hình ra kết quả: Hello Python
+
+Vậy là bạn đã thành công với chương trình đầu tiên bằng Python.
+
+Để thoát ra khỏi màn hình chờ nhập lệnh của Python, hãy gõ 
+
+```
+exit()
+```
+
+
+Note: 
+Nếu màn hình không ra thì sao ? --> Hãy nhìn lên phiên bản, có lẽ bản đang ở Python2.
+
+Hãy thoát khỏi màn hình nhập lệnh và quay trở về màn hình terminal/cmd và gõ:
+
+```
+Python3
+```
+
+
