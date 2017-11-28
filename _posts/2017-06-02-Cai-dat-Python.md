@@ -4,16 +4,17 @@ title: Cài đặt Python
 image: img/2017-06-01-Python/python.png
 tags: [Python, lap-trinh, program-language]
 categories: [Dev-Python]
-date: 2017-06-01
+date: 2017-06-02
 ---
 
-## Cài đặt Python.
 
 Trên trang chủ của Python hiện tại đang có 2 version để sử dụng: Python 2 và Python3. Đọc News thì thấy Python2 đến năm 2020 sẽ không hỗ trợ nữa. Từ trước đến giờ toàn code Python2 do trên ubuntu và các linux distro mặc định đã có sẵn Python2. Nhưng thôi, giờ học lại nghiêm chỉnh thì học Python3 cho nó mới :))
 
-Cài đặt:
+
+## Cài đặt Python.
 
 ### Cài đặt python mặc định
+
 
 **Trên Ubuntu**
 
@@ -45,11 +46,15 @@ https://www.python.org/downloads/
 Install như các phần mềm thông thường. Nhớ chọn "Add path" ở bước đầu tiên.
 
 
+
+Mặc định Python có rất ít các package. Sau này, khi dùng đến package nào thì mới install qua Pip. --> Lựa chọn tối ưu cho các lập trình viên chuyên nghiệp.
+
 ### Cài bộ Anaconda
 Funny: Anaconda hình như là "siêu trăn" thì phải.
 Đúng như tên gọi của nó, package Anaconda chứa phần lớn các thư viện "hịn" nhất của Python, người dùng phần lớn sẽ không phải cài thêm thư viện nữa
 - Thích hợp cho việc học & làm việc ở môi trường offline (có policy chặn hết các loại kết nối internet)
 - Thích hợp cho cả những "tay ngang" muốn học Python để tối ưu hóa công việc của mình.
+- Anaconda hỗ trợ tối đa datasciense, rất nhiều video training từ bootcamp được anaconda cung cấp miễn phí.
 
 **Download**
 https://www.anaconda.com/download/
