@@ -1,0 +1,70 @@
+---
+layout: post
+title: Cài đặt Python
+image: img/2017-06-01-Python/python.png
+tags: [Python, lap-trinh, program-language]
+categories: [Dev-Python]
+date: 2017-06-01
+---
+
+## Cài đặt Python.
+
+Trên trang chủ của Python hiện tại đang có 2 version để sử dụng: Python 2 và Python3. Đọc News thì thấy Python2 đến năm 2020 sẽ không hỗ trợ nữa. Từ trước đến giờ toàn code Python2 do trên ubuntu và các linux distro mặc định đã có sẵn Python2. Nhưng thôi, giờ học lại nghiêm chỉnh thì học Python3 cho nó mới :))
+
+Cài đặt:
+
+### Cài đặt python mặc định
+
+**Trên Ubuntu**
+
+Kiểm tra version (mặc định có Python2): 
+```
+python --version
+```
+
+Cài đặt từ Repo:
+```
+sudo apt update
+
+sudo apt install python3.6
+```
+
+Kiểm tra kết quả cài đặt
+```
+python --version
+```
+
+Ngoài ra còn cách install qua PPA, install từ package được download từ trang chủ
+https://www.python.org/downloads/source/
+
+**Trên Window**
+
+Vào link này để download bản Python 3.6.x mới nhất:
+https://www.python.org/downloads/
+
+Install như các phần mềm thông thường. Nhớ chọn "Add path" ở bước đầu tiên.
+
+
+### Cài bộ Anaconda
+Funny: Anaconda hình như là "siêu trăn" thì phải.
+Đúng như tên gọi của nó, package Anaconda chứa phần lớn các thư viện "hịn" nhất của Python, người dùng phần lớn sẽ không phải cài thêm thư viện nữa
+- Thích hợp cho việc học & làm việc ở môi trường offline (có policy chặn hết các loại kết nối internet)
+- Thích hợp cho cả những "tay ngang" muốn học Python để tối ưu hóa công việc của mình.
+
+**Download**
+https://www.anaconda.com/download/
+
+Có đầy đủ các bản cho Window/Linux/MacOS. 
+Bản nào cũng có cả hướng dẫn install luôn
+- Linux: https://docs.anaconda.com/anaconda/install/linux
+- Window: https://docs.anaconda.com/anaconda/install/windows
+- MacOS: https://docs.anaconda.com/anaconda/install/mac-os
+
+## Kiểm tra kết quả cài đặt.
+
+Sau khi cài đặt xong, mở terminal/cmd và gõ:
+```
+python --version
+```
+
+Nếu hiển thị ra Python phiên bản bao nhiêu --> đã cài đặt thành công.
