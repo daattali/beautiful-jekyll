@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lựa chọn IDE & Editor tool để lập trình Python
+title: Pycharm, bạn có muốn dùng không ?
 # subtile: Hãy viết code như một Pythonista
 image: img/2017-06-05-IDE/Pycharm.jpg
 tags: [Python, lap-trinh, program-language, ide, Pythonista]
@@ -17,7 +17,7 @@ date: 2017-06-07
 
 Nhược điểm: Khởi động chậm, ngốn RAM kinh khủng. Mỗi file .py mở ra là pycharm tự động gọi sẵn 1 tiến trình để thông dịch file.
 
-Phân loại: 7
+Phân loại: 
 - Hỗ trợ hệ điều hành Window và Linux. 
 - Có 2 bản Community (free/hạn chế nhiều chức năng) và Professional (mất phí 199$/year)
 
@@ -26,7 +26,7 @@ Phân loại: 7
 Ngoài 2 bản trên còn có bản education dành cho giảng viên, học sinh, sinh viên có website .edu.vn.
 
 Bạn muốn sử dụng Professional mà không có $ mua ??
-Không sao cả, dùng hàng "cr@ack" vây.
+Không sao cả, dùng hàng "rebuild".
 
 Sau khi download về và cài đặt xong, mỗi lần khởi động Pycharm sẽ load lại toàn bộ cấu hình nên thời gian chờ sẽ rất lâu.
 
