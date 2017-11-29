@@ -42,7 +42,7 @@ string = '002 Could’ve Would’ve Should’ve'
 os.system('echo ' + string)
 ```
 
-**Best solution: ** try to install win-unicode-console: 
+**Best solution:** try to install win-unicode-console: 
 
 ```
 pip install win-unicode-console 
