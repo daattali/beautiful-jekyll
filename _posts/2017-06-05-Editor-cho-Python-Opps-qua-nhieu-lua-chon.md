@@ -30,7 +30,7 @@ Phân loại:
 
 **[Sublime text](https://www.sublimetext.com/)**: Editor all in one. Hỗ trợ đa ngôn ngữ, đa nền tảng, chỉ cần cài các package plugin vào là ngon lành.
 
-![Sublimetext](/img/2017-06-05-IDE/Sublimetext.jpg)
+![Sublimetext](/img/2017-06-05-IDE/sublimetext.jpg)
 
 
 Ưu điểm: Nhẹ, dễ dùng, phần search, replace nhanh/gọn, hỗ trợ nhiều ngôn ngữ, nền tảng khác nhau.
