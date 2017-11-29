@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Five People On A Tank
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Năm Anh Em Trên Một Chiếc Xe Tăng !
 
 # --- Navigation bar options --- #
 
@@ -55,10 +55,10 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
+  name: Nam Anh Em
+  email: "vpeopleonatank@gmail.com"
+  facebook: https://www.facebook.com/profile.php?id=100010472970873 # eg. daattali
+  github: vpeopleonatank   # eg. daattali
   twitter: yourname   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
@@ -79,7 +79,7 @@ footer-links-active:
   rss: false
   facebook: true
   email: true
-  twitter: true
+  twitter: false
   google-plus: false
   github: true
   reddit: false
@@ -97,7 +97,7 @@ footer-links-active:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   google: false
   linkedin: true
