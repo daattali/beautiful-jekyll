@@ -17,15 +17,15 @@ Print("Xin chào, tôi đang code python...")
 
 Kết quả sẽ hiển thị
 
-```
-Xin chào, tôi đang code python...
-```
+
+> Xin chào, tôi đang code python...
+
 
 Nhưng nếu bạn dùng hệ điều Window, các bạn sẽ nhận được kết quả:
 
-```
-UnicodeEncodeError: 'charmap' codec can't encode character '\u1ea3' in position 2: character maps to <undefined>
-```
+
+>UnicodeEncodeError: 'charmap' codec can't encode character '\u1ea3' in position 2: character maps to <undefined>
+
 
 Không sao, mọi thứ đều có thể giải quyết được:
 
