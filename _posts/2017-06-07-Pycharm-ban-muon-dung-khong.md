@@ -33,5 +33,5 @@ Sau khi download về và cài đặt xong, mỗi lần khởi động Pycharm s
 Sau khi màn hình lên, chọn "License server" để active phần mềm. input vào ô server địa chỉ sau: "aku.vn/idea (thêm http://www. vào đằng trước nhé) . Sau đó thực hiện nhấn OK và chờ máy tính khỏi động lại. 
 
 Vây là okie, có bản PC Professional để sử dụng.
-Nhưng nếu có điều kiện hãy mau ủng hộ tác giả.
+Nhưng nếu có điều kiện hãy mua ủng hộ các tác giả.
 
