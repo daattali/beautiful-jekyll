@@ -18,40 +18,42 @@ date: 2017-06-10
 ![codeblock](/img/2017-06-10-coding-style/python.ico) Cách ghi chú trong code python
 - Ghi chú cho một dòng code dùng 
 
-        ```
-        # Ghi chú: Sau dấu # là 1 khoảng trắng sau đó bắt dầu dòng ghi chú
-        ```
+```
+    # Ghi chú: Sau dấu # là 1 khoảng trắng sau đó bắt dầu dòng ghi chú
+```
 
 - Ghi chú cho 1 đoạn code dùng 3 dấu ' hoặc "
 
-    ```
-        '''Đây là ghi chú nhiều dòng.
-        '   Nên bắt đầu ghi chú từ vị trí đầu tiên
-        '''
-    ```
+```
+    '''Đây là ghi chú nhiều dòng.
+    '   Nên bắt đầu ghi chú từ vị trí đầu tiên
+    '''
+```
 
 ![codeblock](/img/2017-06-10-coding-style/python.ico) Cách thức sử dụng khoảng trắng
 
 - Sau dấu mở ngoặc và trước dấu đóng ngoặc không có khoảng trắng.
 Ví dụ:
-```
-# NO: 
-spam( ham[ 1 ], { eggs: 2 } )
 
-# YES:
-spam(ham[1], {eggs: 2})
 ```
+    # NO: 
+    spam( ham[ 1 ], { eggs: 2 } )
+
+    # YES:
+    spam(ham[1], {eggs: 2})
+```
+
 - Trong một biểu thức, đặt dấu 01 dấu space quanh các toán tử + - * / = và dấu , 
 
 ```
-# YES:
+    # YES:
     def calcute_distance(xA, yA, xB, yB):
         distance = math.sqrt((xB - xA) ** 2 + (yB - yA) ** 2)
         print(distance)
 ```
 
 ```
-# NO:
+    # NO:
     def calcute_distance(xA,yA,xB,yB):
         distance        = math.sqrt((xB-xA)**2+(yB-yA)**2)
         print(distance)
@@ -60,10 +62,10 @@ spam(ham[1], {eggs: 2})
 Trường hợp sau dấu , là dấu ), ưu tiên dấu )
 
 ```
-# Yes: 
-foo = (0,)
-# No:
-bar = (0, )
+    # Yes: 
+    foo = (0,)
+    # No:
+    bar = (0, )
 ```
 
 Tham khảo: [https://www.python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements](https://www.python.org/dev/peps/pep-0008/#whitespace-in-expressions-and-statements)
@@ -100,13 +102,15 @@ ví dụ:
 
 ví dụ: 
 
-```PI = 3.14```
+```
+    PI = 3.14
+```
 
 Tham khảo:  [https://www.python.org/dev/peps/pep-0008/#naming-conventions](https://www.python.org/dev/peps/pep-0008/#naming-conventions)
 
 ![codeblock](/img/2017-06-10-coding-style/python.ico) Số lượng ký tự trên một dòng
 
-Số lượng ký tự trên một dòng không vượt quá 79 ký tự (kể cả khoảng trắng). Nên giới hạn trong khoảng 22 ký tự.
+Số lượng ký tự trên một dòng không vượt quá 79 ký tự (kể cả khoảng trắng). Pythonista đề xuất giới hạn trong khoảng 72 ký tự.
 
 
 Tham khảo:[https://www.python.org/dev/peps/pep-0008/#maximum-line-length](https://www.python.org/dev/peps/pep-0008/#maximum-line-length)
@@ -132,21 +136,21 @@ Nếu trong dòng có các toán tử, và dòng dài, cần phải format lại
 
 Ví dụ: 
 ```
-# Không nên dùng
-income = (gross_wages +
-          taxable_interest +
-          (dividends - qualified_dividends) -
-          ira_deduction -
-          student_loan_interest)
+    # NO
+    income = (gross_wages +
+            taxable_interest +
+            (dividends - qualified_dividends) -
+            ira_deduction -
+            student_loan_interest)
 ```
 
 ```
-# Nên dùng
-income = (gross_wages
-          + taxable_interest
-          + (dividends - qualified_dividends)
-          - ira_deduction
-          - student_loan_interest)
+    # YES
+    income = (gross_wages
+            + taxable_interest
+            + (dividends - qualified_dividends)
+            - ira_deduction
+            - student_loan_interest)
 ```
 Tham khảo: [https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator)
 
@@ -172,4 +176,4 @@ Tham khảo:
 - Giữa các phương thức và phương thức, phương thức và lớp yêu cầu là blank line. Hãy xóa các khoảng trắng trong blank-line.
 
 
-Udating.....
+**_Udating...._**
