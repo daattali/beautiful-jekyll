@@ -31,11 +31,11 @@ Giữa năm 2009, các anh core leader của AI tách ra thành lập công ty T
 
 Cuối năm 2010, tôi rời Trí Nam để đến đầu quân cho Viettel-một ông lớn trong làng công nghệ - với ước mơ được đi đến các chân trời mới (lúc đó VT đang đầu tư vào Lào - Campuchia - Haiti). Bằng kinh nghiệm BA ở Trí Nam và khả năng lập trình của tôi, tôi được giao nhiệm vụ tối ưu công việc bằng cách áp dụng CNTT vào công việc vận hành khai thác tại Tổng công ty Mạng lưới Viettel. Những bằng khen, giấy khen trong suốt thời gian từ 2011 đến 2016 đã chứng minh tôi đã thành công. Trước khi rời Viettel, tôi được giao nhiệm vụ teamleader của group BSS - phòng Điều hành mạng lưới - Trung tâm Vận hành Khai thác Toàn cầu. Tôi chịu trách nhiệm điều hành và duy trì việc đảm bảo an toàn, thông suốt cho mạng lưới Viettel tại Việt Nam và 9 thị trường nước ngoài. 
 
-Làm quản lý đồng nghĩa với việc tôi sẽ không được code, không được sáng tạo theo những gì mình thích,...Hiện giờ, tôi đã nghỉ việc tại Viettel để tiếp tục theo đuổi những dòng code nhiệm màu. 
+Công việc làm quản lý cuốn tôi theo các chỉ tiêu KPI của tôi và cả nhóm, tôi không còn được code, không được sáng tạo theo những gì mình thích,...Hiện giờ, tôi đã nghỉ việc tại Viettel để tiếp tục theo đuổi những dòng code nhiệm màu. 
 
-Có thể nhiều người sẽ thấy hài hước khi tôi từ bỏ công việc tính bằng nghìn $ một tháng để đi làm freelancer nhặt nhạnh từng $.
+Có thể nhiều người sẽ thấy hài hước khi tôi từ bỏ công việc tính bằng nghìn $ một tháng để đi làm freelancer nhặt nhạnh từng $. 
 
-**"Cuộc sống vốn ngắn ngủi, hãy sống cho những đam mê & sở thích của mình"**
+**"Cuộc sống vốn ngắn ngủi, hãy sống cho những đam mê & sở thích của mình - làm gì cũng được chỉ cần không hổ thẹn với bản thân của mình là được"**
 
 
 ## Tôi có thể làm gì 
