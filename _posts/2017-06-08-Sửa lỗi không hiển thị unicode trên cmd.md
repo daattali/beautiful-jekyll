@@ -38,7 +38,7 @@ print unicode(string, 'unicode-escape')
 **For Python 3 try:**
 ```
 import os 
-string = "002 Xin chào, tôi đang code python..." 
+string = "Xin chào, tôi đang code python..." 
 os.system('echo ' + string)
 ```
 
