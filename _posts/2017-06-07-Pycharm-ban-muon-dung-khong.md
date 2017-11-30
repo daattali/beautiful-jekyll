@@ -23,15 +23,14 @@ Phân loại:
 
 
 ----------------
-Ngoài 2 bản trên còn có bản education dành cho giảng viên, học sinh, sinh viên có website .edu.vn.
+Ngoài 2 bản trên còn có bản education dành cho giảng viên, học sinh, sinh viên có email chứa đuôi .edu.vn.
 
-Bạn muốn sử dụng Professional mà không có $ mua ??
-Không sao cả, dùng hàng "rebuild".
+Bạn muốn sử dụng Professional mà không có $ mua ?? Vậy là phải dùng hàng "rebuild" rồi.
 
-Sau khi download về và cài đặt xong, mỗi lần khởi động Pycharm sẽ load lại toàn bộ cấu hình nên thời gian chờ sẽ rất lâu.
+Sau khi download về và cài đặt xong, mỗi lần khởi động Pycharm sẽ load lại toàn bộ cấu hình nên thời gian chờ sẽ khá lâu.
 
-Sau khi màn hình lên, chọn "License server" để active phần mềm. input vào ô server địa chỉ sau: "aku.vn/idea (thêm http://www. vào đằng trước nhé) . Sau đó thực hiện nhấn OK và chờ máy tính khỏi động lại. 
+Sau khi màn hình lên, chọn "License server" để active phần mềm. input vào ô server địa chỉ sau: "aku.vn/idea (thêm http://www. vào đằng trước nhé) . Sau đó thực hiện nhấn OK và chờ máy tính khỏi động lại pycharm. 
 
 Vây là okie, có bản PC Professional để sử dụng.
-Nhưng nếu có điều kiện hãy mua ủng hộ các tác giả.
 
+Nhưng nếu có điều kiện hãy mua ủng hộ các tác giả nhé.

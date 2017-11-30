@@ -7,8 +7,10 @@ categories: [Dev-Python]
 date: 2017-06-08
 ---
 
-Bạn sử dụng ubuntu để code Python, bạn được hỗ trợ tối đa về các vấn đề liên quan đến mã hóa. Còn khi bạn dùng trên window thì sao ? Một số thứu sẽ không như mong muốn.
 
+Bạn sử dụng ubuntu để code Python, bạn được hỗ trợ tối đa về các vấn đề liên quan đến mã hóa. Còn khi bạn dùng trên window thì sao ? Một số thứ sẽ không như mong muốn.
+
+# In ra màn hình cmd chuỗi unicode
 Với Ubuntu khi thực hiện lệnh trên terminal
 
 ```
