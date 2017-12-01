@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cách viết code như một lập trình viên chuyên nghiệp
-subtile: Hãy viết code như một Pythonista
+title: Cách code Python như một lập trình viên chuyên nghiệp
+subtile: Python coding like a Pythonista
 image: img/2017-06-10-coding-style/Bia.png
 tags: [Python, lap-trinh, program-language, pep8, Pythonista]
 categories: [Dev-Python]
