@@ -9,18 +9,11 @@ date: 2017-06-06
 ---
 
 
-<table background="/img/2017-06-06-jupyter/Jupyter.png">
-    <tr>
-        <td>
-            <b> <a herf="http://jupyter.org/"> [Jupyter notebook]</a></b>: Một ứng dụng web mã nguồn mở cho phép bạn tạo, thực thi và chia sẻ các tài liệu chứa mã nguồn, phương trình, hình ảnh và các kết quả sau khi chạy chương trình. 
-Jupyter notebook được sử dụng nhiều trong data analysis, mô phỏng số liệu, thống kê, modeling, machine learning, AI và nhiều hơn nữa.
-        </td>
-    </tr>
-</table>
+<div class="jupyter-background">
+    <b> <a herf="http://jupyter.org/"> [Jupyter notebook]</a></b>: Một ứng dụng web mã nguồn mở cho phép bạn tạo, thực thi và chia sẻ các tài liệu chứa mã nguồn, phương trình, hình ảnh và các kết quả sau khi chạy chương trình. 
+</div>
 
 
-
-**[Jupyter notebook](http://jupyter.org/)**: Một ứng dụng web mã nguồn mở cho phép bạn tạo, thực thi và chia sẻ các tài liệu chứa mã nguồn, phương trình, hình ảnh và các kết quả sau khi chạy chương trình. 
 Jupyter notebook được sử dụng nhiều trong data analysis, mô phỏng số liệu, thống kê, modeling, machine learning, AI và nhiều hơn nữa.
 
 Jupyter notebook hỗ trợ rất nhiều ngôn ngữ lập trình:  Python, R, Julia, and Scala,...
