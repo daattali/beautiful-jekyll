@@ -9,8 +9,10 @@ date: 2017-06-06
 ---
 
 
-| **[Visual studio code](https://code.visualstudio.com/)**: Sản phẩm miễn của Microsoft đưa ra cho cộng đồng opensource. Được M$ đưa ra để thực hiện đưa .NET Core mono đến với Linux, OSX. Các lập trình viên có thể sử dụng nó để lập trình C# trên Linux hoặc OSX.        |  ![VisualStudioCode](/img/2017-06-06-VSC/Bia.jpg)           |
-| ------------- |:-------------:|
+**[Visual studio code](https://code.visualstudio.com/)**: Sản phẩm miễn của Microsoft đưa ra cho cộng đồng opensource. Được M$ đưa ra để thực hiện đưa .NET Core mono đến với Linux, OSX. Các lập trình viên có thể sử dụng nó để lập trình C# trên Linux hoặc OSX.
+
+![VisualStudioCode](/img/2017-06-06-VSC/Bia.jpg)
+
 
 **Ưu điểm:**
 - Có ông lớn M$ đứng sau nên cộng đồng các lúc càng lớn. Các request từ DEV để thay đổi phần mềm được M$ đáp ứng nhanh chóng.
@@ -63,8 +65,16 @@ Với người dùng mới, M$ cung cấp một số video hướng dẫn cách 
 Video khá chi tiết, _**nên xem**_
 
 **Cài đặt Extensison**
-Để lập trình Python, nên cài một số extension sau:
+Để lập trình Python, cần cài một số extension sau:
 
 ![VisualStudioCode](/img/2017-06-06-VSC/VSC3.png)
 
+**Chạy thử đoạn code python bằng VSC**
 
+Chạy 1 dòng code:
+
+`
+print("Hello world!")
+`
+
+![VisualStudioCode](/img/2017-06-06-VSC/VSC4.png)
