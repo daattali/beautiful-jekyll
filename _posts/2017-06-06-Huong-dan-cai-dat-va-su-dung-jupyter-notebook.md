@@ -9,10 +9,10 @@ date: 2017-06-06
 ---
 
 
-<table style="background: url(/img/2017-06-06-jupyter/Jupyter.png)">
+<table background="/img/2017-06-06-jupyter/Jupyter.png">
     <tr>
         <td>
-            __[Jupyter notebook](http://jupyter.org/)__: Một ứng dụng web mã nguồn mở cho phép bạn tạo, thực thi và chia sẻ các tài liệu chứa mã nguồn, phương trình, hình ảnh và các kết quả sau khi chạy chương trình. 
+            <b> <a herf="http://jupyter.org/"> [Jupyter notebook]</a></b>: Một ứng dụng web mã nguồn mở cho phép bạn tạo, thực thi và chia sẻ các tài liệu chứa mã nguồn, phương trình, hình ảnh và các kết quả sau khi chạy chương trình. 
 Jupyter notebook được sử dụng nhiều trong data analysis, mô phỏng số liệu, thống kê, modeling, machine learning, AI và nhiều hơn nữa.
         </td>
     </tr>
@@ -87,3 +87,6 @@ Sau khi cài đặt thì thực hiện mở jupyter notebook để hưởng thà
 `
 jupyter notebook
 `
+
+
+Để kết thúc việc sử dụng jupyter notebook trên máy tính, nhấn Ctrl + C và Enter (với ubuntu thì chỉ cần Ctrl +C)
