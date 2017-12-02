@@ -17,4 +17,9 @@ Stress thì phải tìm cách xả stress. Trong những đêm trực dài dằn
 
 ![TOP10](/img/2017-06-01-Python/top10.png)
 
-Python à, món "thịt trăn" có vẻ ngon đấy. Từ cuối năm 2015 đến giờ liên tục hỗ trợ, training cho đội Core IP làm việc với món Python này. Code ngắn gọn, dễ học, dễ áp dụng, thư viện thì nhiều, cộng đồng hỗ trợ mạnh. Mình chưa học sâu về ngôn ngữ này, toàn làm đến đâu thì search google đến đấy. Mấy cái đã làm được liên quan giao thức HTTP/FTP/TCP-IP đội Core IP áp dụng vào công việc ngon lành phết. Để thử áp dụng vào mạng Core Network switch thay thế các phần mềm cũ của mình xem thế nào.
+Python à, món "thịt trăn" có vẻ ngon đấy. Từ cuối năm 2014 đến giờ liên tục hỗ trợ, training cho đội Core IP làm việc với món Python này. Code ngắn gọn, dễ học, dễ áp dụng, thư viện thì nhiều, cộng đồng hỗ trợ mạnh. Mình chưa học sâu về ngôn ngữ này, toàn làm đến đâu thì search google đến đấy. Mấy cái đã làm được liên quan giao thức HTTP/FTP/TCP-IP đội Core IP áp dụng vào công việc ngon lành phết. 
+
+Gần đây sếp "nhỡ" liên tục yêu cầu dạy anh em trong trung tâm về lập trình Python để anh em tự chủ, không phải cái gì cũng "để em hỏi anh Vinh" nữa. Nhân dịp này nghiên cứu kỹ rồi dạy anh em vậy. 
+
+> Mấy hôm trước, ngồi chém gió với cậu em cực kỳ cứng tay về Python, sysadmin, contributor của Salt stack, nó bảo mình: "Học python giống như học ngoại ngữ vậy. Để fuel language thì khó, để python 'bồi' như kiểu tiếng anh bồi thì đơn giản". Hóa ra ngoài giỏi tiếng anh "bồi" mình cũng giỏi cả python "bồi" =))
+
