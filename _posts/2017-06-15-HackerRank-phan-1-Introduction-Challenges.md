@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hackerrank.com - phần 1: Introduction Challenges
+title: Hackerrank - phần 1- Introduction Challenges
 subtile: Python coding like a Pythonista
 image: /img/2017-06-15-HackerRank/Hackerrank1.png
 tags: [Python, lap-trinh, program-language, hacker-rank]
