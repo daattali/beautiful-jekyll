@@ -80,4 +80,6 @@ jupyter notebook
 `
 
 
-Để kết thúc việc sử dụng jupyter notebook trên máy tính, nhấn Ctrl + C và Enter (với ubuntu thì chỉ cần Ctrl +C)
+Để kết thúc việc sử dụng jupyter notebook trên máy tính, vào cửa sổ CMD/terminal, 
+- Window:  nhấn Ctrl + Break (nút pause/break ở góc trên bên phải) v
+- ubuntu: Ctrl + C
