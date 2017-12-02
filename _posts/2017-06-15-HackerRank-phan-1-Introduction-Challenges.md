@@ -8,6 +8,7 @@ categories: [Dev-Python]
 date: 2017-06-15
 ---
 
+Bài tập phần 1: Một vài thử thách cơ bản của Python: [Link gốc](https://www.hackerrank.com/domains/python/py-introduction)
 
 
 # [Ex2_ControlFlow](https://www.hackerrank.com/challenges/py-if-else/problem)
