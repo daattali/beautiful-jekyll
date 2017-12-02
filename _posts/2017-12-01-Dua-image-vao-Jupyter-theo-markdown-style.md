@@ -2,7 +2,7 @@
 layout: post
 title: Đưa ảnh vào Jupyter notebook với markdown style
 subtile: Python coding like a Pythonista
-image: img/2017-12-01-Tips/quicktip.jpg
+image: /img/2017-12-01-Tips/quicktip.jpg
 tags: [Python, lap-trinh, program-language, Python-tips]
 categories: [Dev-Python]
 date: 2017-12-01

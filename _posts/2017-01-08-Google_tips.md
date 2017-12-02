@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nâng cao kỹ năng tìm kiếm với google
-image: img/2017-01-08-Goole_tips/google-bia.jpg
+image: /img/2017-01-08-Goole_tips/google-bia.jpg
 tags: [Soft-skill, ky-nang-mem, Tips, meo-vat]
 categories: [Soft-skill]
 date: 2017-01-08

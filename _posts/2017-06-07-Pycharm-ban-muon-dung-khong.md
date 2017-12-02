@@ -2,7 +2,7 @@
 layout: post
 title: Pycharm, bạn có muốn dùng không ?
 # subtile: Hãy viết code như một Pythonista
-image: img/2017-06-05-IDE/Pycharm.jpg
+image: /img/2017-06-05-IDE/Pycharm.jpg
 tags: [Python, lap-trinh, program-language, ide, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-07

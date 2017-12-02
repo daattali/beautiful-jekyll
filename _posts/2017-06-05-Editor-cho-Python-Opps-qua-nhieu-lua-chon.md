@@ -2,7 +2,7 @@
 layout: post
 title: Lựa chọn IDE & Editor tool để lập trình Python
 # subtile: Hãy viết code như một Pythonista
-image: img/2017-06-05-IDE/IDEBia.jpg
+image: /img/2017-06-05-IDE/IDEBia.jpg
 tags: [Python, lap-trinh, program-language, ide, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-05

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Những cách giảm stress mà không tốn tiền
-image: img/2017-01-20-relax_without_money/RelaxBia.jpg
+image: /img/2017-01-20-relax_without_money/RelaxBia.jpg
 tags: [Soft-skill, ky-nang-mem, Relax]
 categories: [Soft-skill]
 date: 2017-01-20

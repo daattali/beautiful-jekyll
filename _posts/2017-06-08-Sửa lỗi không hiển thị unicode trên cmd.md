@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sửa lỗi không hiển thị được unicode trên cmd của Window
-image: img/2017-06-08-Tips/quicktip.jpg
+image: /img/2017-06-08-Tips/quicktip.jpg
 tags: [Python, lap-trinh, program-language, Python-tips]
 categories: [Dev-Python]
 date: 2017-06-08

@@ -2,7 +2,7 @@
 layout: post
 title: Cài đặt Python phần 2
 subtitle: (Update tháng 11/2017)
-image: img/2017-06-03-Install2/WinBia.jpg
+image: /img/2017-06-03-Install2/WinBia.jpg
 tags: [Python, lap-trinh, program-language]
 categories: [Dev-Python]
 date: 2017-06-02

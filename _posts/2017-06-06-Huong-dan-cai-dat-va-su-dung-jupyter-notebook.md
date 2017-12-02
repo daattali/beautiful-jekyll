@@ -2,7 +2,7 @@
 layout: post
 title: Hướng dẫn cài đặt và sử dụng jupyter notebook
 # subtile: Hãy viết code như một Pythonista
-image: img/2017-06-06-jupyter/jupyterBia.png
+image: /img/2017-06-06-jupyter/jupyterBia.png
 tags: [Python, lap-trinh, program-language, jupyter-notebook, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-06
