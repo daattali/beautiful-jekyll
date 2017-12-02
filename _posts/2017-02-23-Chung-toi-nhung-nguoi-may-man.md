@@ -2,7 +2,7 @@
 layout: post
 title: Chúng tôi - những người may mắn
 # subtitle: ""
-image: /img/2017-02-23-MyIdol/Bia.jpg
+image: /img/2017-02-23-MyIdol/IdolBia.jpg
 tags: [ex-Vietteler, Relax, Dong-nghiep-Viettel,My-idol]
 categories: [ex-Vietteler]
 date:   2017-02-23

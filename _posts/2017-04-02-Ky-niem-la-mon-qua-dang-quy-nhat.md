@@ -2,7 +2,7 @@
 layout: post
 title: Kỷ niệm là món quà đáng quý nhất
 # subtitle: "Giải nhất cuộc thi viết kỷ niệm 15 thành lập Tổng công ty VTNET tháng 12/2016"
-image: /img/2017-04-02-Time/Bia.jpg
+image: /img/2017-04-02-Time/KNBia.jpg
 tags: [ex-Vietteler, Relax, Dong-nghiep-Viettel]
 categories: [ex-Vietteler]
 date:   2017-04-02

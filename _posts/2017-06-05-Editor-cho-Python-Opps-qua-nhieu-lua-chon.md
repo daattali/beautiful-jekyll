@@ -2,7 +2,7 @@
 layout: post
 title: Lựa chọn IDE & Editor tool để lập trình Python
 # subtile: Hãy viết code như một Pythonista
-image: img/2017-06-05-IDE/Bia.jpg
+image: img/2017-06-05-IDE/IDEBia.jpg
 tags: [Python, lap-trinh, program-language, ide, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-05
@@ -42,7 +42,7 @@ Nhược điểm:
 
 **[Visual studio code](https://code.visualstudio.com/)**: Sản phẩm miễn của Microsoft đưa ra cho cộng đồng opensource.
 
-![VisualStudioCode](/img/2017-06-05-IDE/Bia.jpg)
+![VisualStudioCode](/img/2017-06-05-IDE/IDEBia.jpg)
 
 Ưu điểm: 
 - Có ông lớn M$ đứng sau nên cộng đồng các lúc càng lớn. Các request từ DEV để thay đổi phần mềm được M$ đáp ứng nhanh chóng.

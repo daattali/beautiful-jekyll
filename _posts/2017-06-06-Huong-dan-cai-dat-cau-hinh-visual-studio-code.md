@@ -2,7 +2,7 @@
 layout: post
 title: Hướng dẫn cài đặt phần mềm Visual Studio Code
 # subtile: Hãy viết code như một Pythonista
-image: img/2017-06-06-VSC/Bia.jpg
+image: img/2017-06-06-VSC/VSCBia.jpg
 tags: [Python, lap-trinh, program-language, visual-studio-code, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-06
@@ -11,7 +11,7 @@ date: 2017-06-06
 
 **[Visual studio code](https://code.visualstudio.com/)**: Sản phẩm miễn của Microsoft đưa ra cho cộng đồng opensource. Được M$ đưa ra để thực hiện đưa .NET Core mono đến với Linux, OSX. Các lập trình viên có thể sử dụng nó để lập trình C# trên Linux hoặc OSX.
 
-![VisualStudioCode](/img/2017-06-06-VSC/Bia.jpg)
+![VisualStudioCode](/img/2017-06-06-VSC/VSCBia.jpg)
 
 
 **Ưu điểm:**

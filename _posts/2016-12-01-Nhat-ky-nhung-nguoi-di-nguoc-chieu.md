@@ -2,7 +2,7 @@
 layout: post
 title: Nhật ký những người đi ngược chiều.
 subtitle: "Giải nhất cuộc thi viết kỷ niệm 15 thành lập Tổng công ty VTNET tháng 12/2016"
-image: /img/2016-12-01-MyVietter_1/Bia.jpg
+image: /img/2016-12-01-MyVietter_1/VTBia.jpg
 tags: [ex-Vietteler, Relax, Dong-nghiep-Viettel]
 categories: [ex-Vietteler]
 date:   2016-12-09
