@@ -2,7 +2,7 @@
 layout: post
 title: Hackerrank.com - Giải quyết từng vấn đề từ dễ đến khó
 subtile: Python coding like a Pythonista
-image: img/2017-06-15-HackerRank/Hackerrank.png
+image: img/2017-06-15-HackerRank/Hackerrank.PNG
 tags: [Python, lap-trinh, program-language, hacker-rank]
 categories: [Dev-Python]
 date: 2017-06-15
@@ -16,7 +16,7 @@ Tìm ở đâu những bài toán mới, những thử thách mới để làm �
 
 Với Python, hacker-rank đưa ra các thử thách:
 
-![Challenges](/img/2017-06-15-HackerRank/Challenges.png)
+![Challenges](/img/2017-06-15-HackerRank/Challenges.PNG)
 
 Mỗi thử thách sẽ có một số bài tập khá hay.
 
