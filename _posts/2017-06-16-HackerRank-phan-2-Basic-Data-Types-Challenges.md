@@ -9,7 +9,7 @@ date: 2017-06-16
 ---
 
 
-Bài tập phần 1: Một vài thử thách sử dụng list của Python. [Basic-Data-Types-Challenges](https://www.hackerrank.com/domains/python/py-basic-data-types) 
+Bài tập phần 2: Một vài thử thách sử dụng list của Python. [Basic-Data-Types-Challenges](https://www.hackerrank.com/domains/python/py-basic-data-types) 
 
 
 > Phần 2 này trên hackerrank cứ yêu cầu nhập giá trị từ bàn phím. Cách này `stupid` nên tôi bỏ qua :)) Vẫn có lệnh input để bạn nào thích thì dùng
