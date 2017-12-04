@@ -25,6 +25,12 @@ Pythonist 2 → pYTHONIST 2
 ```
 
 
+
+<hr>
+Code here: 
+<hr>
+
+
 ```python
 def swap_single_char(single_char):
     if single_char.islower():
@@ -77,6 +83,10 @@ Yêu cầu: Viết một function thực hiện chia chuỗi theo dấu space v�
 
 
 
+<hr>
+Code here: 
+<hr>
+
 
 ```python
 def split_and_join(line):
@@ -104,6 +114,10 @@ Nhập tên và họ của một người trên hai dòng khác nhau. Thực hi�
 Hello **firstname** **lastname**! You just delved into python.
 ```
 
+
+<hr>
+Code here: 
+<hr>
 
 
 ```python
@@ -180,6 +194,10 @@ abracadabra
 abrackdabra
 
 
+<hr>
+Code here: 
+<hr>
+
 
 ```python
 def mutate_string(_string, _position, _character):
@@ -204,6 +222,10 @@ CDC
 2
 ```
 
+
+<hr>
+Code here: 
+<hr>
 
 
 ```python
@@ -295,6 +317,10 @@ In the second line, print True if  has any alphabetical characters. Otherwise, p
 In the third line, print True if  has any digits. Otherwise, print False. 
 In the fourth line, print True if  has any lowercase characters. Otherwise, print False. 
 In the fifth line, print True if  has any uppercase characters. Otherwise, print False.
+
+<hr>
+Code here: 
+<hr>
 
 
 ```python
@@ -399,7 +425,9 @@ HHHHHHHHH
                        HHH    
                         H 
 ```
-
+<hr>
+<b>Code here</b>: 
+<hr>
 
 
 ```python
@@ -459,262 +487,7 @@ if __name__ == '__main__':
                             H     
     
 
-## [Ex3_1: sWAP cASE](https://www.hackerrank.com/challenges/swap-case/problem) 
-Cho một chuỗi S. Yêu cầu thực hiện chuyển định dạng chữ của chuỗi S.
-Nếu chữ cái viết hoa --> chuyển thành chữ thường và ngược lại.
 
-Ví dụ:
-```
-Www.HackerRank.com → wWW.hACKERrANK.COM
-Pythonist 2 → pYTHONIST 2
-
-```
-
-## [Ex3_2: String Split and Join](https://www.hackerrank.com/challenges/python-string-split-and-join/problem)
-Trong Python, một chuỗi có thể chia nhỏ theo các delimiter (dấu phân cách)
-
-**Example:**
-
-```Python
->>> a = "this is a string"
->>> a = a.split(" ") # a is converted to a list of strings. 
->>> print a
-['this', 'is', 'a', 'string']
-
-```
-Nối lại các chuỗi cũng đơn giản:
-
-```Python
->>> a = "-".join(a)
->>> print a
-this-is-a-string 
-
-```
-Yêu cầu: Viết một function thực hiện chia chuỗi theo dấu space và nối lại chúng bằng dấu -
-
->this is a string   
-
->this-is-a-string
-
-## [Ex3_3: What's Your Name?](https://www.hackerrank.com/challenges/whats-your-name/problem)
-
-Nhập tên và họ của một người trên hai dòng khác nhau. Thực hiện in ra màn hình dòng chứ:
-
-```
-Hello **firstname** **lastname**! You just delved into python.
-```
-
-## [Ex3_4: Mutations](https://www.hackerrank.com/challenges/python-mutations/problem)
-
-Chúng ta đã biết lists là mutable (có thể thay đổi) và tuples là immutable (không thể thay đổi).
-Hãy tiếp tục tìm hiểu kỹ thông qua các ví dụ dưới đây.
-
-Bạn có một chuỗi là immutable và bạn cần phải làm gì đó để thay đổi được nó.
-
-> string = "abracadabra"
-
-You can access an index by:
-
-> print string[5]
-> a
-
-Điều gì sẽ xảy ra nếu bạn muốn gán một giá trị?
-
-```python
->>> string[5] = 'k' 
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: 'str' object does not support item assignment
-
-```
-
-Làm thế nào bạn sẽ tiếp cận này?
-- Một giải pháp là chuyển đổi chuỗi sang một danh sách và sau đó thay đổi giá trị.
-
-```Python
->>> string = "abracadabra"
->>> l = list(string)
->>> l[5] = 'k'
->>> string = ''.join(l)
->>> print string
-abrackdabra
-
-```
-- Cách tiếp cận khác là cắt chuỗi và nối lại.
-
-```Python
->>> string = string[:5] + "k" + string[6:]
->>> print string
-abrackdabra
-```
-
-**Yêu cầu:**
-Đọc vào một chuỗi và vị trí, ký tự cần thay thế.
-Thực hiện thay thế dữ liệu.
-
-**Input:**
-```
-abracadabra
-5 k
-```
-
-**Output:**
-abrackdabra
-
-
-# [Ex3_5: Find a string](https://www.hackerrank.com/challenges/find-a-string/problem)
-Đọc vào 2 chuỗi, chuỗi chính - chuỗi con. Tìm số lần xuất hiện của chuỗi con trong chuỗi chính (tính từ trái qua phải)
-
-**Input:**
-
-```
-ABCDCDC
-CDC
-
-```
-
-**Output:**
-```
-2
-```
-
-
-# [Ex3_6: String Validators](https://www.hackerrank.com/challenges/string-validators/problem)
-
-Python chứa nhiều hàm built-in cho phép thực hiện xác thực các dữ liệu.
-Có thể kiểm tra xem một chuỗi có chứa: ký tự abc, số,...
-
-**str.isalnum() **
-This method checks if all the characters of a string are alphanumeric (a-z, A-Z and 0-9).
-```Python
-
->>> print 'ab123'.isalnum()
-True
->>> print 'ab123#'.isalnum()
-False
-
-```
-
-**str.isalpha() **
-This method checks if all the characters of a string are alphabetical (a-z and A-Z).
-
-```Python
->>> print 'abcD'.isalpha()
-True
->>> print 'abcd1'.isalpha()
-False
-```
-
-**str.isdigit() **
-This method checks if all the characters of a string are digits (0-9).
-```Python
->>> print '1234'.isdigit()
-True
->>> print '123edsd'.isdigit()
-False
-```
-
-**str.islower() **
-This method checks if all the characters of a string are lowercase characters (a-z).
-```Python
->>> print 'abcd123#'.islower()
-True
->>> print 'Abcd123#'.islower()
-False
-```
-
-**str.isupper() **
-This method checks if all the characters of a string are uppercase characters (A-Z).
-```Python
->>> print 'ABCD123#'.isupper()
-True
->>> print 'Abcd123#'.isupper()
-False
-```
-
-### Yêu cầu
-Nhận đầu vào là một chuỗi, in ra màn hình kết quả nếu chuỗi có chứa các điều kiện sau: 
-alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
-
-In the first line, print True if  has any alphanumeric characters. Otherwise, print False. 
-In the second line, print True if  has any alphabetical characters. Otherwise, print False. 
-In the third line, print True if  has any digits. Otherwise, print False. 
-In the fourth line, print True if  has any lowercase characters. Otherwise, print False. 
-In the fifth line, print True if  has any uppercase characters. Otherwise, print False.
-
- 
-## [EX3_7: Text Alignment](https://www.hackerrank.com/challenges/text-alignment/problem)
-Trong Python, một chuỗi có thể canh trái, canh phải hoặc canh giữa.
-
-**.ljust(width)**
-
-This method returns a left aligned string of length width.
-```
-
->>> width = 20
->>> print 'HackerRank'.ljust(width,'-')
-HackerRank----------  
-
-```
-
-**.center(width)**
-
-This method returns a centered string of length width.
-
-```
->>> width = 20
->>> print 'HackerRank'.center(width,'-')
------HackerRank-----
-
-```
-
-**.rjust(width)**
-
-This method returns a right aligned string of length width.
-
-```
->>> width = 20
->>> print 'HackerRank'.rjust(width,'-')
-----------HackerRank
-```
-
-### Yêu cầu:
-Nhập vào 1 số và in ra màn hình logo Hackerrank (H) theo như ví dụ.
-**Input:**
-
-```
-5
-
-```
-
-**Output:**
-```
-    H    
-   HHH   
-  HHHHH  
- HHHHHHH 
-HHHHHHHHH
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHHHHHHHHHHHHHHHHHHHHHH   
-  HHHHHHHHHHHHHHHHHHHHHHHHH   
-  HHHHHHHHHHHHHHHHHHHHHHHHH   
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-  HHHHH               HHHHH             
-                    HHHHHHHHH 
-                     HHHHHHH  
-                      HHHHH   
-                       HHH    
-                        H 
-```
 
 ## [Ex3_8: Text Wrap](https://www.hackerrank.com/challenges/text-wrap/problem)
 Thư viện textwrap cung cấp hai phương thức: wrap(), fill(). Với cách hoạt động như sau:
@@ -784,7 +557,9 @@ UVWX
 YZ  
 ```
 
-
+<hr>
+<b>Code here</b>: 
+<hr>
 
 
 ```python
@@ -823,7 +598,9 @@ pattern = [('.|.'*(2*i + 1)).center(M, '-') for i in range(N//2)]
 print('\n'.join(pattern + ['WELCOME'.center(M, '-')] + pattern[::-1]))
 
 ```
-
+<hr>
+<b>Code here</b>: 
+<hr>
 
 
 ```python
@@ -881,7 +658,9 @@ Mỗi số in ra trên một dòng. Format mỗi số được in ra có độ d
    17    21    11 10001
 
 ```
-
+<hr>
+<b>Code here</b>: 
+<hr>
 
 
 ```python
@@ -971,7 +750,9 @@ j-i-h-g-f-e-d-c-b-a-b-c-d-e-f-g-h-i-j
 
 ```
 
-
+<hr>
+<b>Code here</b>: 
+<hr>
 
 
 ```python
@@ -1012,7 +793,9 @@ hello word
 **Output**
 Hello Word
 
-
+<hr>
+<b>Code here</b>: 
+<hr>
 
 
 ```python
