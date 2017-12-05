@@ -10,9 +10,9 @@ bigimg: /img/dev_1.jpg
 
 Code for Poland project. We (PoznajApp team) try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on phone localization.
 
-###### PYTHON, DJANGO, ANDROID, IOS, IONIC
-
 [www](http://poznajapp.pl) [repo](https://github.com/KlubJagiellonski/poznaj-app-android) [youtube](https://www.youtube.com/watch?v=fptimxWpI7g)
+
+###### PYTHON, DJANGO, ANDROID, IOS, IONIC
 
 ---
 # AwesomeBlog
