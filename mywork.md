@@ -8,7 +8,7 @@ bigimg: /img/dev_1.jpg
 
 # PoznajApp
 
-Code for Poland project. We try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on phone localization.
+Code for Poland project. We (PoznajApp team) try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on phone localization.
 
 [www](http://poznajapp.pl) [repo](https://github.com/KlubJagiellonski/poznaj-app-android) [youtube](https://www.youtube.com/watch?v=fptimxWpI7g)
 
@@ -42,3 +42,7 @@ Sample project explain how to implement payments in Python/Django app.
 
 
 [repo](https://github.com/rafalgawlik/PaymentApp)
+
+
+# Also
+I contibute [Pola](https://github.com/KlubJagiellonski/pola-android) and [PoznajApp  backend](https://github.com/KlubJagiellonski/poznaj-app-backend);
