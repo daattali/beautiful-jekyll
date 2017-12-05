@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Muốn là một web-developer kiểu gì cũng phải biết font-end
+title: Bootstrap - túc tắc học dần
 #subtile: Way to create a long multi-line string
 image: /img/2017-08-05-Fontend/Bootstrap.jpg
 tags: [lap-trinh, program-language, Front-end, Bootstrap]
