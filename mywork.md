@@ -10,7 +10,7 @@ bigimg: /img/dev_1.jpg
 
 Code for Poland project. We (PoznajApp team) try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on phone localization.
 
-[www](http://poznajapp.pl) [repo](https://github.com/KlubJagiellonski/poznaj-app-android) [youtube](https://www.youtube.com/watch?v=fptimxWpI7g)
+[www](http://poznajapp.pl) [repo](https://github.com/KlubJagiellonski/poznaj-app-android) [Youtube](https://www.youtube.com/watch?v=fptimxWpI7g) [Google Play](https://play.google.com/store/apps/details?id=pl.poznajapp)
 
 ###### PYTHON, DJANGO, ANDROID, IOS, IONIC
 
@@ -28,8 +28,8 @@ Bloging platform based on python/Django framework. User can create one or more b
 
 Sample project explain how to create material design ripple open new view (activity) animation.
 
-[repo](https://github.com/rafalgawlik/MaterialActivityAnimations) [youtube](https://youtu.be/f5L89tRstEg)
-[demo](https://play.google.com/store/apps/details?id=io.github.rafalgawlik.mdanimations)
+[repo](https://github.com/rafalgawlik/MaterialActivityAnimations) [Youtube](https://youtu.be/f5L89tRstEg)
+[Google Play](https://play.google.com/store/apps/details?id=io.github.rafalgawlik.mdanimations)
 
 ###### ANDROID, JAVA
 
