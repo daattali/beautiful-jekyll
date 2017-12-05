@@ -2,7 +2,7 @@
 layout: post
 title: Muốn là một web-developer kiểu gì cũng phải biết front-end
 #subtile: Way to create a long multi-line string
-image: /img/2017-08-05-frontend/frontend.jpg
+image: /img/2017-08-05-Frontend/frontend.jpg
 tags: [Lap-trinh, program-language, Front-end, Bootstrap]
 categories: [Dev-Frontend]
 date: 2017-08-05

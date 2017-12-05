@@ -2,7 +2,7 @@
 layout: post
 title: Bootstrap - túc tắc học dần
 #subtile: Way to create a long multi-line string
-image: /img/2017-08-05-Fontend/Bootstrap.jpg
+image: /img/2017-08-05-Frontend/Bootstrap.jpg
 tags: [lap-trinh, program-language, Front-end, Bootstrap]
 categories: [Dev-Bootstrap]
 date: 2017-09-05
@@ -19,7 +19,7 @@ Bootstrap basic:
 2. Button
 3. Image
 
- ![Website-1](/img/2017-08-05-Fontend/Sceenshots/Website-1.png)
+ ![Website-1](/img/2017-08-05-Frontend/Sceenshots/Website-1.png)
 
 ## Website 2
 Bootstrap class:
@@ -30,7 +30,7 @@ Bootstrap class:
 bonus: Left menu
 
 
- ![Website-2](/img/2017-08-05-Fontend/Sceenshots/Website-2.png)
+ ![Website-2](/img/2017-08-05-Frontend/Sceenshots/Website-2.png)
 
  ## Website 3
  Bootstrap tip and rewrite css of bootstrap:
@@ -38,7 +38,7 @@ bonus: Left menu
  1. simple hover of menu
  2. write css file to overload style of bootstrap
 
- ![Website-3](/img/2017-08-05-Fontend/Sceenshots/Website-3.png)
+ ![Website-3](/img/2017-08-05-Frontend/Sceenshots/Website-3.png)
 
 
 ## Website 4
@@ -56,7 +56,7 @@ fa fa-github
 https://fonts.googleapis.com/css?family=Lato
 
 
-![Website-4](/img/2017-08-05-Fontend/Sceenshots/Website-4.png)
+![Website-4](/img/2017-08-05-Frontend/Sceenshots/Website-4.png)
 
 ## Website 5
 1. Responsive banner
@@ -72,6 +72,6 @@ tip & trick:
 - border-radius: 50% --> bo tròn toàn bộ cả khung vuông.
 - z-index: 3 --> cho phep 1 div duoc phep nam tren cac div khac
 
-![Website-5](/img/2017-08-05-Fontend/Sceenshots/Website-5.png)
+![Website-5](/img/2017-08-05-Frontend/Sceenshots/Website-5.png)
 
 Còn tiếp
