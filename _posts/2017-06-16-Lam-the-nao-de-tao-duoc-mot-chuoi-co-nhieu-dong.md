@@ -5,7 +5,7 @@ subtile: Way to create a long multi-line string
 image: /img/2017-12-01-Tips/quicktip.jpg
 tags: [Python, lap-trinh, program-language, Python-tips]
 categories: [Dev-Python]
-date: 2017-12-01
+date: 2017-06-16
 ---
 
 Học đến phần string (chuỗi) trong python, gặp phải một vấn đề...làm thế nào để khai báo được 1 chuỗi gồm nhiều dòng trên python ? 
