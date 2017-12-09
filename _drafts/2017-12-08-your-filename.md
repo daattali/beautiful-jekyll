@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Untitled
+title: Metro cluster partial DCI failure
 ---
 In this article I would like to cover a failure scenario that I recently dealt with and that I suspect is maybe not that common for several reasons. The environment is made of 2 sites in a metro cluster sharing a virtualised storage over a multiplexed fiber. Half of the 8 wavelength of that fiber are used for storage synchronisation and the other half for passing VLANs (including vSphere management).   Following an incident somewhere along that fiber (the ISP confirmed), it is believed that only some of the wavelengths went down (not confirmed). The storage nodes on the 2 sites could communicate fine after a few minutes following the outage and restart synchronisation but the only vCenter located on the first site could not reach the ESXi hosts located on the second site nor could the VLANs.
 
