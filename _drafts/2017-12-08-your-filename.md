@@ -66,7 +66,7 @@ $VMsToRecover | ForEach-Object {New-VM -Name $_.vm.name -ResourcePool $RP -VMFil
 
 - **The DCI should not be a single point of failure (spof).**
 
-For a piece of infrastructure as critical as the DCI, being a spof is not an option at all. I bet pretty much every "architecture 101" documents out there recommend to have at least 2 different links using 2 different geographical pathes with different ISPs. I would even vouch for a third 100Mbps link over an IPsec tunnel simply to maintain communication between the vCenter server and the hosts.
+For a piece of infrastructure as critical as the DCI, being a spof is not an option at all. I bet pretty much every "architecture 101" documents out there recommend to have at least 2 different links using 2 different geographical pathes with different ISPs. I would even vouch for a third 10Mbps adsl link over an IPsec tunnel simply to maintain communication between the vCenter server and the hosts.
 
 - **Remote access to the second site should be available.**
 
@@ -74,17 +74,17 @@ Pretty obvious but still worth mentionning, having to get the car and drive 12 m
 
 - **VM location awareness.**
 
-Metro clusters are great, you can migrate a VM from a site to another (yay..), you can do planned maintenance on a site, you can leverage HA ... Yes, all of these are great, but if you lose every thing in the first outage it is not much use. Here, VM location awarenes is just a fancy name for vSphere DRS rules. Always keep half of "X" on each site. "X" meaning DCs, web servers, app servers, hot/warm DBs, again you name it. The idea is be able to survive a site failure (active-active DC 101).
+Metro clusters are great, you can migrate a VM from a site to another (yay..), you can do planned maintenance on a site, you can leverage HA ... Yes, all of these are great, but if you lose everything at the first outage it is not much use. Here, VM location awareness is just a fancy name for vSphere DRS rules. A group of hosts for site A, a group of hosts for site B, a group of VMs for site A and one for B, easy. Keep half of "X" on each site. "X" meaning DCs, web servers, app servers, hot/warm DBs, again you name it. The idea is be able to survive a site failure (active-active DC 101).
 
 Regarding the "swag" of VM mobility and all the headaches that comes with it I highly recommend checking  out the knowledgeable [Ivan Pepelnjak](https://blog.ipspace.net/)'s blog that will make you think twice about whether you really need it or not, great content!
 
 - **DR Plan.**
 
-I was lucky enough that the storage managed to synchronise and that shutting down the VMs on the other side released the locks, and the few lines of PowerCLI above allowed me to recover fairly quickly. But if the second had been blown up by an asteroid I would have been screwed. In a 2 sites architecture a DR plan with cross replication is an absolute must have.
+I was lucky enough that the storage kept synchronising and that shutting down the VMs on the other side released the locks, and the few lines of PowerCLI above allowed me to recover fairly quickly. But if the second had been blown up by an asteroid I would have been screwed. In a 2 sites architecture a DR plan with cross replication is an absolute must have.
 
 ## It is not all bad
 
-I painted a pretty grim picture of the situation but a few things remain positive:
+I painted a pretty grim picture of the situation but a few things remain very positive:
 
 - Even though luck was a decisive factor regarding storage synchronisation, the RPO of this recovery was very good because of it. The storage having been up to date, little to no data loss occurred and the RTO was only a few hours.
 
