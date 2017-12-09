@@ -41,76 +41,76 @@ Python3 dùng `print()`
 <td>Python 3 </td>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; print "Hello World"
+<td><pre name="code" class="python">>>> print "Hello World"
 Hello World</pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; print("Hello World")
+<pre name="code" class="python">>>> print("Hello World")
 Hello World
 </pre></td>
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; #print a newline
-&gt;&gt;&gt; print
+<pre name="code" class="python">>>> #print a newline
+>>> print
 
 </pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; #print a newline,
-&gt;&gt;&gt; #using parentheses
-&gt;&gt;&gt; print()
+<pre name="code" class="python">>>> #print a newline,
+>>> #using parentheses
+>>> print()
   
 </pre></td>
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; #add trailing comma to
-&gt;&gt;&gt; #remove newline
-&gt;&gt;&gt; print "No newline", 
+<pre name="code" class="python">>>> #add trailing comma to
+>>> #remove newline
+>>> print "No newline", 
     No newline
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; #Appends nothing 
-&gt;&gt;&gt; #instead of a newline
-&gt;&gt;&gt; print("No newline", end="")
+<td><pre name="code" class="python">>>> #Appends nothing 
+>>> #instead of a newline
+>>> print("No newline", end="")
  No newline
-&gt;&gt;&gt; </pre></td>
+>>> </pre></td>
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; #print to stderr
-&gt;&gt;&gt; print &gt;&gt;sys.stderr, "Error"   
+<pre name="code" class="python">>>> #print to stderr
+>>> print >>sys.stderr, "Error"   
   Traceback (most recent call last):
-File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+File "&lt;stdin>", line 1, in &lt;module>
 NameError: name 'sys' is not defined</pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; #Specifies the 
-&gt;&gt;&gt; #output buffer
-&gt;&gt;&gt;print("Error", file=sys.stderr)
-&gt;&gt;&gt; 
+<td><pre name="code" class="python">>>> #Specifies the 
+>>> #output buffer
+>>>print("Error", file=sys.stderr)
+>>> 
 Traceback (most recent call last):
 File "C:/Python34/test.py", 
- line 1, in &lt;module&gt;
+ line 1, in &lt;module>
  print("Error", file=sys.stderr)
  NameError: name 'sys' 
  is not defined
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td><pre name="code" class="python">&gt;&gt;&gt; #sep specifies the separator
-&gt;&gt;&gt; #here ',' is used as a separator
-&gt;&gt;&gt; print("Python", "JS", sep=",")
+<td><pre name="code" class="python">>>> #sep specifies the separator
+>>> #here ',' is used as a separator
+>>> print("Python", "JS", sep=",")
           Python,JS</pre></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td><pre name="code" class="python">&gt;&gt;&gt; #prints as XYZ, there
-&gt;&gt;&gt; #is nothing in sep
-&gt;&gt;&gt; print("X", "Y", "Z", sep="")
+<td><pre name="code" class="python">>>> #prints as XYZ, there
+>>> #is nothing in sep
+>>> print("X", "Y", "Z", sep="")
     XYZ</pre></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td><pre name="code" class="python">&gt;&gt;&gt; #flush the output buffer
-&gt;&gt;&gt; print("Python", flush=True)
+<td><pre name="code" class="python">>>> #flush the output buffer
+>>> print("Python", flush=True)
   Python</pre></td>
 </tr>
 </tbody></table>
@@ -125,34 +125,34 @@ File "C:/Python34/test.py",
 <th>Python 3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; range(1, 10)
+<td><pre name="code" class="python">>>> range(1, 10)
    [1, 2, 3, 4, 5, 6, 7, 8, 9]
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; range(1, 10)
+<td><pre name="code" class="python">>>> range(1, 10)
    range(1, 10)
-&gt;&gt;&gt; 
+>>> 
 </pre></td>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; xrange(1, 10)
+<td><pre name="code" class="python">>>> xrange(1, 10)
 xrange(1, 15)</pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; xrange(1, 10)
+<td><pre name="code" class="python">>>> xrange(1, 10)
   Traceback (most recent call last):
-File "&lt;pyshell#9&gt;", 
-line 1, in &lt;module&gt;
+File "&lt;pyshell#9>", 
+line 1, in &lt;module>
 xrange(1, 10)
 NameError: name 'xrange' 
 is not defined
       </pre></td>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; isinstance(xrange(1, 15), xrange)
+<td><pre name="code" class="python">>>> isinstance(xrange(1, 15), xrange)
 True
-&gt;&gt;&gt;
+>>>
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; isinstance(range(1, 15), range)
+<td><pre name="code" class="python">>>> isinstance(range(1, 15), range)
 True
-&gt;&gt;&gt; </pre></td>
+>>> </pre></td>
 </tr>
 </tbody></table>
 <hr>
@@ -165,76 +165,76 @@ True
 <th>Python 3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; 3 &lt; 5.5
+<td><pre name="code" class="python">>>> 3 &lt; 5.5
     True
-&gt;&gt;&gt;</pre></td>
-<td><pre name="code" class="python">	&gt;&gt;&gt; 3 &lt; 5.5
+>>></pre></td>
+<td><pre name="code" class="python">>>> 3 &lt; 5.5
 True
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; [3, 5] &gt; 'xyz'
+<pre name="code" class="python">>>> [3, 5] > 'xyz'
       False
-&gt;&gt;&gt;
+>>>
 </pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; [3, 5] &gt; 'xyz'
+<pre name="code" class="python">>>> [3, 5] > 'xyz'
  Traceback (most recent call last):
- File "&lt;pyshell#14&gt;", 
- line 1, in &lt;module&gt;
- [3, 5] &gt; 'xyz'
+ File "&lt;pyshell#14>", 
+ line 1, in &lt;module>
+ [3, 5] > 'xyz'
 TypeError: unorderable types: 
-list() &gt; str()
-&gt;&gt;&gt;
+list() > str()
+>>>
 </pre></td>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; (3, 5) &gt; 'xyz'
+<td><pre name="code" class="python">>>> (3, 5) > 'xyz'
    True
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; (3, 5) &gt; 'xyz'
+<pre name="code" class="python">>>> (3, 5) > 'xyz'
 Traceback (most recent call last):
-File "&lt;pyshell#15&gt;", 
-line 1, in &lt;module&gt;
-(3, 5) &gt; 'xyz'
+File "&lt;pyshell#15>", 
+line 1, in &lt;module>
+(3, 5) > 'xyz'
 TypeError: unorderable types: 
-tuple() &gt; str()&gt;&gt;&gt; 
+tuple() > str()>>> 
 </pre></td>
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; [3, 5] &gt; (3, 5)
+<pre name="code" class="python">>>> [3, 5] > (3, 5)
       False
-&gt;&gt;&gt;
+>>>
 </pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; [3, 5] &gt; (3, 5)
+<pre name="code" class="python">>>> [3, 5] > (3, 5)
   Traceback (most recent call last):
-File "&lt;pyshell#21&gt;", 
-line 1, in &lt;module&gt;
-[3, 5] &gt; (3, 5)
+File "&lt;pyshell#21>", 
+line 1, in &lt;module>
+[3, 5] > (3, 5)
 TypeError: unorderable types: 
-list() &gt; tuple()
-&gt;&gt;&gt;
+list() > tuple()
+>>>
 </pre></td>
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; 50 &lt; [2, 'x'] &lt; 'xyz' &lt; (2, 'x')
+<pre name="code" class="python">>>> 50 &lt; [2, 'x'] &lt; 'xyz' &lt; (2, 'x')
 	   True
-&gt;&gt;&gt;
+>>>
 </pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; 50 &lt; [2, 'x'] &lt; 'xyz' &lt; (2, 'x')
+<pre name="code" class="python">>>> 50 &lt; [2, 'x'] &lt; 'xyz' &lt; (2, 'x')
   Traceback (most recent call last):
-File "&lt;pyshell#23&gt;", 
-line 1, in &lt;module&gt;
+File "&lt;pyshell#23>", 
+line 1, in &lt;module>
 50 &lt; [2, 'x'] &lt; 'xyz' &lt; (2, 'x')
 TypeError: unorderable types: 
 int() &lt; list()
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 </tr>
 </tbody></table>
 
@@ -248,23 +248,23 @@ int() &lt; list()
 <th>Python 3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; print "[2, 3]&gt;'xyz'= ", [2, 3]&gt;'xyz'
-[2, 3]&gt;'xyz' =  False
-&gt;&gt;&gt; print "(2, 3)&gt;'xyz' = ", (2, 3)&gt;'xyz'
-(2, 3)&gt;'xyz' =  True
-&gt;&gt;&gt; print "[2, 3]&gt;(2, 3) = ", [2, 3]&gt;(2, 3)
-[2, 3] &gt; (2, 3) =  False
+<td><pre name="code" class="python">>>> print "[2, 3]>'xyz'= ", [2, 3]>'xyz'
+[2, 3]>'xyz' =  False
+>>> print "(2, 3)>'xyz' = ", (2, 3)>'xyz'
+(2, 3)>'xyz' =  True
+>>> print "[2, 3]>(2, 3) = ", [2, 3]>(2, 3)
+[2, 3] > (2, 3) =  False
 </pre></td>
-<td><pre name="code" class="python">print("[1, 2]&gt;'foo' = ", [1, 2]&gt;'foo')
-print("(1, 2)&gt;'foo' = ", (1, 2)&gt;'foo')
-print("[1, 2]&gt;(1, 2) = ", [1, 2]&gt;(1, 2))
+<td><pre name="code" class="python">print("[1, 2]>'foo' = ", [1, 2]>'foo')
+print("(1, 2)>'foo' = ", (1, 2)>'foo')
+print("[1, 2]>(1, 2) = ", [1, 2]>(1, 2))
 Traceback (most recent call last):
   File "C:/Python34/test.py", line 1, 
   in <module>
-    print("[1, 2] &gt; 'foo' = ", 
-	[1, 2] &gt; 'foo')
+    print("[1, 2] > 'foo' = ", 
+	[1, 2] > 'foo')
 TypeError: unorderable types: 
-list() &gt; str()
+list() > str()
 </module></pre></td>
 </tr>
 </tbody></table>
@@ -279,46 +279,46 @@ list() &gt; str()
 </tr>
 <tr>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; a = "Python"
-&gt;&gt;&gt; len(a)
+<pre name="code" class="python">>>> a = "Python"
+>>> len(a)
     6
-&gt;&gt;&gt; a[0]
+>>> a[0]
     'P'
-&gt;&gt;&gt;
+>>>
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; a = "Python"
-&gt;&gt;&gt; len(a)
+<td><pre name="code" class="python">>>> a = "Python"
+>>> len(a)
    6
-&gt;&gt;&gt; a[0]
+>>> a[0]
    'P'
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td><pre name="code" class="python">&gt;&gt;&gt; 
+<td><pre name="code" class="python">>>> 
 #To treat a string as a 
 #sequence of bytes, 
 #you need to cast:
-&gt;&gt;&gt; a = bytes("Python", "utf-8")
-&gt;&gt;&gt; a
+>>> a = bytes("Python", "utf-8")
+>>> a
    b'Python'
-&gt;&gt;&gt; a[0]
+>>> a[0]
    80
-&gt;&gt;&gt;
+>>>
 </pre></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td><pre name="code" class="python">&gt;&gt;&gt; #bytes(foo, 'utf-8') means to encode&nbsp;&lt;em&gt;foo&lt;/em&gt;
-&gt;&gt;&gt; #in UTF-8. treat the result as a 
-&gt;&gt;&gt; #sequence of unsigned  8bit integers. You can 
-&gt;&gt;&gt; #also convert bytes to a string,
-&gt;&gt;&gt; #as following
-&gt;&gt;&gt; a = bytes("Python", "utf-8")
-&gt;&gt;&gt; b = str(a, "utf-8")
-&gt;&gt;&gt; b
+<td><pre name="code" class="python">>>> #bytes(foo, 'utf-8') means to encode&nbsp;&lt;em>foo&lt;/em>
+>>> #in UTF-8. treat the result as a 
+>>> #sequence of unsigned  8bit integers. You can 
+>>> #also convert bytes to a string,
+>>> #as following
+>>> a = bytes("Python", "utf-8")
+>>> b = str(a, "utf-8")
+>>> b
     'Python'
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 </tr>
 </tbody></table>
 <hr>
@@ -332,35 +332,35 @@ list() &gt; str()
 <th>Python 3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; import sys
-&gt;&gt;&gt; print(sys.version)
+<td><pre name="code" class="python">>>> import sys
+>>> print(sys.version)
        2.7.9 (default, Apr  2 2015, 
 	   15:33:21)[GCC 4.9.2]
-&gt;&gt;&gt; print "6/3 =", 6/3
+>>> print "6/3 =", 6/3
     6/3 = 2
-&gt;&gt;&gt; print "6//3 =", 6//3
+>>> print "6//3 =", 6//3
     6//3 = 2
-&gt;&gt;&gt; print "6/3.0 =", 6/3.0
+>>> print "6/3.0 =", 6/3.0
     6/3.0 = 2.0
-&gt;&gt;&gt; print "6//3.0 =", 6//3.0
+>>> print "6//3.0 =", 6//3.0
     6//3.0 = 2.0
-&gt;&gt;&gt;
+>>>
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; import sys
-&gt;&gt;&gt; print(sys.version)
+<td><pre name="code" class="python">>>> import sys
+>>> print(sys.version)
        3.4.2 (v3.4.2:ab2c023a9432, 
 	    Oct  6 2014, 22:15:05)
 	    [MSC v.1600 32 bit (Intel)]
-&gt;&gt;&gt;
-&gt;&gt;&gt; print("6/3 =", 6/3)
+>>>
+>>> print("6/3 =", 6/3)
     6/3 = 2.0
-&gt;&gt;&gt; print("6//3 =", 6//3)
+>>> print("6//3 =", 6//3)
     6//3 = 2
-&gt;&gt;&gt; print("6/3.0 =", 6/3.0)
+>>> print("6/3.0 =", 6/3.0)
     6/3.0 = 2.0
-&gt;&gt;&gt; print("6//3.0 =", 6//3.0)
+>>> print("6//3.0 =", 6//3.0)
     6//3.0 = 2.0
-&gt;&gt;&gt; </pre></td>
+>>> </pre></td>
 </tr>
 </tbody></table>
 <hr>
@@ -375,35 +375,35 @@ Python2 không hỗ trợ Unicode, muốn in ra Unicode phải làm nhiều bư�
 <th>Python 3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; import sys
-&gt;&gt;&gt; print(sys.version)
+<td><pre name="code" class="python">>>> import sys
+>>> print(sys.version)
    2.7.9 (default, Apr  2 2015, 
    15:33:21) GCC 4.9.2]
-&gt;&gt;&gt; print type(unicode
+>>> print type(unicode
 ("Python Unicode"))
-&lt;type 'unicode'&gt;
-&gt;&gt;&gt;
+&lt;type 'unicode'>
+>>>
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; import sys
-&gt;&gt;&gt; print(sys.version)
+<td><pre name="code" class="python">>>> import sys
+>>> print(sys.version)
   3.4.2 (v3.4.2:ab2c023a9432,
    Oct  6 2014, 22:15:05) 
    MSC v.1600 32 bit (Intel)]
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; print type(b"Python")
-   &lt;type 'str'&gt;
-&gt;&gt;&gt;</pre></td>
+<td><pre name="code" class="python">>>> print type(b"Python")
+   &lt;type 'str'>
+>>></pre></td>
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; print "Python" + b" Unicode"
+<td><pre name="code" class="python">>>> print "Python" + b" Unicode"
 Python Unicode
-&gt;&gt;&gt;</pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; print(" Python", type(b" Unicode"))
-Python &lt;class 'bytes'&gt;
-&gt;&gt;&gt;</pre></td>
+>>></pre></td>
+<td><pre name="code" class="python">>>> print(" Python", type(b" Unicode"))
+Python &lt;class 'bytes'>
+>>></pre></td>
 </tr>
 </tbody></table>
 <hr>
@@ -423,30 +423,30 @@ dict.items(): Return a copy of the dictionary’s list of (key, value) pairs.
 <th>Python 3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; x = {1: "red", 2: "blue"}
-&gt;&gt;&gt; print(x)
+<td><pre name="code" class="python">>>> x = {1: "red", 2: "blue"}
+>>> print(x)
    {1: 'red', 2: 'blue'}
-&gt;&gt;&gt; print(x.items())
+>>> print(x.items())
 dict_items([(1, 'red'), (2, 'blue')])
-&gt;&gt;&gt; print(x.iteritems())
+>>> print(x.iteritems())
     Traceback (most recent call last):
-File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+File "&lt;stdin>", line 1, in &lt;module>
 AttributeError: 'dict' object has no 
 attribute 'iteritems'
-&gt;&gt;&gt; print([i for i in x.iteritems()])
+>>> print([i for i in x.iteritems()])
  [(1, 'red'), (2, 'blue')]
-&gt;&gt;&gt;</pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt; x = {1: "red", 2: "blue"}
-&gt;&gt;&gt; print(x)
+>>></pre></td>
+<td><pre name="code" class="python">>>> x = {1: "red", 2: "blue"}
+>>> print(x)
   {1: 'red', 2: 'blue'}
-&gt;&gt;&gt; print(x.items)
+>>> print(x.items)
 &lt;built-in method items of dict object 
-at 0x7fe191a89748&gt;
-&gt;&gt;&gt; print(x.items())
+at 0x7fe191a89748>
+>>> print(x.items())
 dict_items([(1, 'red'), (2, 'blue')])
-&gt;&gt;&gt; print([i for i in x.items()])
+>>> print([i for i in x.items()])
   [(1, 'red'), (2, 'blue')]
-&gt;&gt;&gt;
+>>>
 </pre></td>
 </tr>
 <tr>
@@ -460,30 +460,30 @@ Python3 không trả về một list mà trả về object dict_items. Muốn ch
 
 <table class="table table-bordered">
 <tbody><tr>
-<td><pre name="code" class="python">&gt;&gt;&gt; #In Python 2&nbsp;dict.has_key()
+<td><pre name="code" class="python">>>> #In Python 2&nbsp;dict.has_key()
 &nbsp;is used to test.
-&gt;&gt;&gt; #whether the dict has 
+>>> #whether the dict has 
 a certain key.
-&gt;&gt;&gt; x = {1: "red", 2: "blue"}
-&gt;&gt;&gt; print(x.has_key(1))
+>>> x = {1: "red", 2: "blue"}
+>>> print(x.has_key(1))
 True
-&gt;&gt;&gt;
+>>>
 </pre></td>
 <td>
-<pre name="code" class="python">&gt;&gt;&gt; #But this method has been
-&gt;&gt;&gt; #removed in Python 3.
-&gt;&gt;&gt; #Instead, the&nbsp;in&nbsp;operator
-&gt;&gt;&gt; #Is used.
-&gt;&gt;&gt; x = {1: "red", 2: "blue"}
-&gt;&gt;&gt; print(a.has_key(1))
+<pre name="code" class="python">>>> #But this method has been
+>>> #removed in Python 3.
+>>> #Instead, the&nbsp;in&nbsp;operator
+>>> #Is used.
+>>> x = {1: "red", 2: "blue"}
+>>> print(a.has_key(1))
  #Don't run it, unless you want this:
  Traceback (most recent call last):
- File "&lt;stdin&gt;", line 1, in &lt;module&gt; 
+ File "&lt;stdin>", line 1, in &lt;module> 
  AttributeError: 'dict' object has
  no attribute 'has_key'
-&gt;&gt;&gt; print(1 in x)
+>>> print(1 in x)
         True
-&gt;&gt;&gt;
+>>>
 </pre></td>
 </tr>
 </tbody></table>
@@ -500,9 +500,9 @@ True
 <th>Python3</th>
 </tr>
 <tr>
-<td><pre name="code" class="python">&gt;&gt;&gt;data_input2 = raw_input()
+<td><pre name="code" class="python">>>>data_input2 = raw_input()
 </pre></td>
-<td><pre name="code" class="python">&gt;&gt;&gt;data_input3 = input()</pre></td>
+<td><pre name="code" class="python">>>>data_input3 = input()</pre></td>
 </tr>
 </tbody></table>
 
