@@ -4,7 +4,7 @@ title: About me
 subtitle: Random information
 ---
 
-Hi, my name is Marcos Barbero and I'm Brazilian, however, nowadays I'm living in The Netherlands.  
+Hi, my name is Marcos Barbero, I'm originally from Brazil but currently I'm living in The Netherlands. 
 I'm a software engineer working mostly with Java since 2005-ish.
 
 What else do you need?
