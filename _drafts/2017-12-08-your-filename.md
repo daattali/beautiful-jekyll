@@ -24,7 +24,7 @@ My 2 major objectives were:
 
 Here was the plan to recover safely on the first site:
 
-1. Send someone with a laptop to the second site (80s style) to connect locally on the vSphere hosts one by one and do the following:
+  **1-** Send someone with a laptop to the second site (80s style) to connect locally on the vSphere hosts one by one and do the following:
 
 - **Shut down** all the VMs.
 - **Unregister** them from the inventory.
@@ -32,9 +32,9 @@ Here was the plan to recover safely on the first site:
 
 As mentionned above, this action is of major importance as it released the locks on the VM files (remember the storage synchronization still works) and prevented turning up with 2 sets of similar VMs once the second site would come back.
 
-2. Recover the VMs on the hosts in the first site:
+  **2-** Recover the VMs on the hosts in the first site:
 
-- Save the **pathes to the .vmx files** of the disconnected VMs into a variable in PowerCLI for later use when I will need to register them. If you remove the hosts straight away you won't know which VMs were running nor which datastore they resided on and good luck with the "vms file treasure hunt".
+- Save the pathes to the .vmx files of the disconnected VMs into a variable in PowerCLI for later use when I will need to register them. If you remove the hosts straight away you won't know which VMs were running nor which datastore they resided on and good luck with the "vms file treasure hunt".
 
 ```Powershell
 $PartitionedVMHosts = Get-VMHost | where {ConnectionState -eq "Disconnected" -or ConnectionState -eq "NotResponding"}
@@ -42,13 +42,13 @@ $PartitionedVMHosts = Get-VMHost | where {ConnectionState -eq "Disconnected" -or
 $VMsToRecover = $PartitionedVMHosts | Get-VM | where powerstate -eq poweredon | select @(l="VM";e={$_}),@(l="Folder";e={$_ | Get-Folder})
 ```
 
-- **Remove from the vCenter inventory the hosts of the second site** being in a disconnected state.
+Remove from the vCenter inventory the hosts of the second site being in a disconnected state.
 
 ```Powershell
 $PartitionedVMHosts | Remove-VMHost -Confirm:$false
 ```
 
--**Register the VMs** previously running on the second site on the hosts in the first using the variable mentionned above and power it on.
+Register the VMs previously running on the second site on the hosts in the first using the variable mentionned above and power it on.
 
 I don't pay too much attention to the resource pools here as there is none configured but it is something you may want to consider in a different environment.
 
@@ -58,11 +58,11 @@ $RP = Get-Cluster | Get-ResourcePool
 $VMsToRecover | ForEach-Object {New-VM -Name $_.vm.name -ResourcePool $RP -VMFilePath $_.VM.extensiondata.config.files.vmpathname -location $_.folder.name | Start-VM -Confirm:$false}
 ```
 
-3. Once it is done, all the VMs from the second site are recovered on the first one. That's good, but we  are not out of the woods yet. Say a bunch of web nodes or middletier nodes on the first site and the db was recovered during the outage, you probably want to restart the whole app stack in the right order to avoid any unpredicted state: shut down web nodes, then middletier nodes, restart the db, power on the middletier nodes then the web nodes. It is a cumbersome process but I would say worth doing for peace of mind's sake.
+ **3-**Once it is done, all the VMs from the second site are recovered on the first one. That's good, but we  are not out of the woods yet. Say a bunch of web nodes or middletier nodes on the first site and the db was recovered during the outage, you probably want to restart the whole app stack in the right order to avoid any unpredicted state: shut down web nodes, then middletier nodes, restart the db, power on the middletier nodes then the web nodes. It is a cumbersome process but I would say worth doing for peace of mind's sake.
 
-4. Use your favorite monitoring tool to **ensure all services are back online** and troubleshoot those having problems (there will be some). This step is down to the team managing the apps and services.
+  **4-** Use your favorite monitoring tool to ensure all services are back online and troubleshoot those having problems (there will be some). This step is down to the team managing the apps and services.
 
-5. Once the ISP fixed the problem on the link, just **connect the hosts** on the second site back in vCenter.
+  **5-** Once the ISP fixed the problem on the link, just connect the hosts on the second site back in vCenter.
 
 ## What should be in place to avoid such situation or mitigate the consequences and improve RTO?
 
@@ -78,7 +78,7 @@ Pretty obvious but still worth mentionning, having to get the car and drive 12 m
 
 Metro clusters are great, you can migrate a VM from a site to another (yay..), you can do planned maintenance on a site, you can leverage HA ... Yes, all of these are great, but if you lose everything at the first outage it is not much use. Here, VM location awareness is just a fancy name for vSphere DRS rules. A group of hosts for site A, a group of hosts for site B, a group of VMs for site A and one for B, easy. Keep half of "X" on each site. "X" meaning DCs, web servers, app servers, hot/warm DBs, again you name it. The idea is be able to survive a site failure (active-active DC 101).
 
-Regarding the "swag" of VM mobility and all the headaches that comes with it I highly recommend checking  out the knowledgeable [Ivan Pepelnjak](https://blog.ipspace.net/)'s blog that will make you think twice about whether you really need it or not, great content!
+Regarding the "swag" of VM mobility and all the headaches that comes with it I highly recommend checking  out the knowledgeable [Ivan Pepelnjak's blog](https://blog.ipspace.net/) that will make you think twice about whether you really need it or not, great content!
 
 - **DR Plan.**
 
