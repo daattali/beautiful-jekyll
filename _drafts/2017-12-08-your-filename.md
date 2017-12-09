@@ -46,12 +46,34 @@ $VMsToRecover = $PartitionedVMHosts | Get-VM | where powerstate -eq poweredon | 
 $PartitionedVMHosts | Remove-VMHost -Confirm:$false
 ```
 
-- Register the VMs previously running on the second site on the hosts in the first using the variable mentionned above.
+- Register the VMs previously running on the second site on the hosts in the first using the variable mentionned above and power it on.
 
-I don't pay attention to the resource pools here as there is none configured but it is something you may want to consider in a different environment.
+I don't pay too much attention to the resource pools here as there is none configured but it is something you may want to consider in a different environment.
 
 ```Powershell
 $RP = Get-Cluster | Get-ResourcePool
 
 $VMsToRecover | ForEach-Object {New-VM -Name $_.vm.name -ResourcePool $RP -VMFilePath $_.VM.extensiondata.config.files.vmpathname -location $_.folder.name | Start-VM -Confirm:$false}
 ```
+
+3. Once it is done, all the VMs from the second site are recovered on the first one. That's good, but we  are not out of the woods yet. Say a bunch of web nodes or middletier nodes on the first site and the db was recovered during the outage, you probably want to restart the whole app stack in the right order to avoid any unpredicted state: shut down web nodes, then middletier nodes, restart the db, power on the middletier nodes then the web nodes. It is a cumbersome process but I would say worth doing for peace of mind's sake.
+
+4. Use your favorite monitoring tool to ensure all services are back online and troubleshoot those having problems (there will be some). This step is down to the team managing the apps and services.
+
+5. Once the ISP fixed the problem on the link, just connect the hosts on the second site back in vCenter.
+
+## What should be in place to avoid such situation or mitigate the consequences and improve RTO?
+
+- The DCI should not be a single point of failure (spof).
+
+For a piece of infrastructure as critical as the DCI, being spof is not an option at all. I bet pretty much every "architecture 101" documents out there recommend to have at least 2 different links using 2 different geographical pathes with different ISPs. I would even vouch for a third 100Mbps link over an IPsec tunnel simply to maintain communication between the vCenter server and the hosts.
+
+- Remote access to the second site should be available.
+
+Pretty obvious but still worth mentionning, having to get the car and drive 12 miles to connect to the critical components of infrastructure in the second site is not an option either. Following the previous recommendation, there should always be a way to access it via a cheap adsl link, a vpn, you name it.
+
+- VM location awareness.
+
+Metro clusters are great, you can migrate a VM from a site to another (yay..), you can do planned maintenance on a site, you can leverage HA ... Yes, all of these are great, but if you lose every thing in the first outage it is not much use. Here, VM location awarenes is just a fancy name for vSphere DRS rules. Always keep half of "X" on each site. "X" meaning DCs, web servers, app servers, hot/warm DBs, again you name it. The idea is be able to survive a site failure (active-active DC 101).
+
+Regarding the "swag" of VM mobility and all the headaches that comes with it I highly recommend checking  out the knowledgeable [Ivan Pepelnjak](https://blog.ipspace.net/)'s blog that will make you think twice about whether you really need it or not, great content!
