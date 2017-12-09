@@ -367,7 +367,7 @@ list() > str()
 
 ## Unicode 
 
-Python2 không hỗ trợ Unicode, muốn in ra Unicode phải làm nhiều bước khác nhau.
+Python2 không hỗ trợ Unicode, muốn in ra Unicode phải thêm một số thao tác nữa.
 
 <table class="table table-bordered">
 <tbody><tr>
@@ -455,7 +455,8 @@ dict_items([(1, 'red'), (2, 'blue')])
 </tr>
 </tbody></table>
 
-Trong Python2: dict.keys, dict.values, dict.items trả về một list. 
+Trong Python2: dict.keys, dict.values, dict.items trả về một list.
+
 Python3 không trả về một list mà trả về object dict_items. Muốn chuyển về list cần thực hiện convert sang dạng list
 
 <table class="table table-bordered">
