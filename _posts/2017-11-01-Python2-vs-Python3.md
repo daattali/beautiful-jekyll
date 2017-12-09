@@ -25,7 +25,8 @@ Dưới đây là một số khác biệt cơ bản giữa Python2 và Python3:
 8. Data Input
 
 
-**print statement vs. print function**
+## print statement vs. print function
+
 Khác biệt lớn nhất là: 
 
 Python2 dùng `print`
@@ -116,7 +117,7 @@ File "C:/Python34/test.py",
 <hr>
 
 
-**Differences between range and xrange functions**
+## Differences between range and xrange functions
 <hr>
 <table class="table table-bordered">
 <tbody><tr>
@@ -156,7 +157,7 @@ True
 </tbody></table>
 <hr>
 
-**Raising and handling Exceptions**
+## Raising and handling Exceptions
 <hr/>
 <table class="table table-bordered">
 <tbody><tr>
@@ -239,7 +240,7 @@ int() &lt; list()
 
 <hr>
 
-**Comparison of unorderable types**
+## Comparison of unorderable types
 <hr>
 <table class="table table-bordered">
 <tbody><tr>
@@ -269,7 +270,7 @@ list() &gt; str()
 </tbody></table>
 <hr>
 
-**bytes vs string**
+## bytes vs string
 <hr>
 <table class="table table-bordered">
 <tbody><tr>
@@ -322,7 +323,7 @@ list() &gt; str()
 </tbody></table>
 <hr>
 
-**Integer division**
+## Integer division
 
 <hr>
 <table class="table table-bordered">
@@ -364,7 +365,7 @@ list() &gt; str()
 </tbody></table>
 <hr>
 
-**Unicode**
+## Unicode 
 
 Python2 không hỗ trợ Unicode, muốn in ra Unicode phải làm nhiều bước khác nhau.
 
@@ -407,7 +408,7 @@ Python &lt;class 'bytes'&gt;
 </tbody></table>
 <hr>
 
-**dictionary method**
+## dictionary method
 
 <hr>
 In Python 2 
@@ -489,7 +490,7 @@ True
 
 <hr>
 
-**Data Input**
+## Data Input
 <hr>
 
 
