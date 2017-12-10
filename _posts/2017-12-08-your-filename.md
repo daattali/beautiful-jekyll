@@ -36,7 +36,7 @@ As mentionned above, this action is of major importance as it released the locks
 
   **2-** Recover the VMs on the hosts in the first site:
 
-- Save the pathes to the .vmx files of the disconnected VMs into a variable in PowerCLI for later use when I will need to register them. If you remove the hosts straight away you won't know which VMs were running nor which datastore they resided on and good luck with the "vms file treasure hunt".
+Save the pathes to the .vmx files of the disconnected VMs into a variable in PowerCLI for later use when I will need to register them. If you remove the hosts straight away you won't know which VMs were running nor which datastore they resided on and good luck with the "vms file treasure hunt".
 
 ```Powershell
 $PartitionedVMHosts = Get-VMHost | where {ConnectionState -eq "Disconnected" -or ConnectionState -eq "NotResponding"}
