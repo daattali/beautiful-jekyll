@@ -9,9 +9,11 @@ In this article I would like to cover a failure scenario that I recently dealt w
 
 In short, everything running on the second is isolated in a bubble and cannot be reached except the storage which was a VERY good thing. So we are left with half of the cluster in a partitioned state but a full access to the storage from all hosts across the 2 sites. A few things to note to fully understand the extent of the situation:
 
--The metro cluster was configured with DRS with no particular attention given to virtual machine location which makes the consequences of a failure scenario completely left to luck (DRS), i.e. all the components of an app stack could be located on 1 site because DRS decided to balance the load (this is were you wonder "Drs rules ?").
--No DR plan in place so there is no way to easily power on replicas on the first site. Remember that the VMs running on the partitioned site still hold a lock on their files
--No backup or external link to connect remotely into the second site (the good stuff).
+- The metro cluster was configured with DRS with no particular attention given to virtual machine location which makes the consequences of a failure scenario completely left to luck (DRS), i.e. all the components of an app stack could be located on 1 site because DRS decided to balance the load (this is were you wonder "Drs rules ?").
+
+- No DR plan in place so there is no way to easily power on replicas on the first site. Remember that the VMs running on the partitioned site still hold a lock on their files
+
+- No backup or external link to connect remotely into the second site (the good stuff).
 
 ## Objectives
 
