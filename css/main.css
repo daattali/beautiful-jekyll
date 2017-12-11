@@ -858,7 +858,8 @@ a.post-tag:hover
       }
     }
   }
-  .tags-expo-section {
+
+.tags-expo-section {
     ul {
       list-style-type: circle;
       list-style-position: inside;
@@ -878,16 +879,11 @@ a.post-tag:hover
     .post-date {
       display: inline-block;
       font-size: 80%;
-      color: $post-date-color;
+      color: gray;
       margin: 0;
       padding: 0;
     }
-    font-family: $font-sans;
   }
-}
-
-.tags-container{
-  
 }
 
 .hide-tag{
