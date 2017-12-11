@@ -835,7 +835,7 @@ ul.menudoc {
     padding-right: .5em;
 }
 
-.post-tag::hover
+.post-tag:hover
 {
     text-decoration: none;
     background: #6a9fb5;

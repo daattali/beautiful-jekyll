@@ -8,14 +8,16 @@ title: Tags
 	
 	
     {% for tag in site.tags %}
-    <a href="/tags#{{ tag[0] }}-ref" class="post-tag">{{ tag[0] }} {{ tag[1].size }}</a>
+	<a href="/tags#{{ tag[0] }}-ref" class="post-tag" id="{{ tag[0] }}-ref"><i class="fa fa-tags" aria-hidden="true"></i> 
+		{{ tag[0] }} ({{ tag[1].size }})</a>
     {% endfor %}
   </div>
 
   <hr/>
 
   <div class="tags-expo-section">
-    {% for tag in site.tags %}
+	{% for tag in site.tags %}
+	<div class="tags-container" id="{{ tag[0] }}-con">
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
@@ -27,6 +29,7 @@ title: Tags
       </a>
       {% endfor %}
     </ul>
-    {% endfor %}
+	{% endfor %}
+	</div>
   </div>
 </div>
