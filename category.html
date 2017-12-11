@@ -11,13 +11,12 @@ title: Category
   </div> -->
 
   <div class="tags-expo-list">
-      {% assign count_size = 0 %}
         {% for tag in site.categories %}
       <a href="/category#{{ tag[0] }}-ref" class="post-tag" id="{{ tag[0] }}"><i class="fa fa-bars" aria-hidden="true"></i> 
-        {{ tag[0] }} ({{ tag[1].size }})</a>  {% count_size = count_size + tag[1].size %}
+        {{ tag[0] }} ({{ tag[1].size }})</a>
         {% endfor %}
         <br>
-        <a href="#" class="post-tag" id="showall"><i class="fa fa-bars" aria-hidden="true"></i> Xem tất cả  ({{ count_size }}) </a>
+        <a href="#" class="post-tag" id="showall"><i class="fa fa-bars" aria-hidden="true"></i> Xem tất cả </a>
       </div>
 
   <hr/>
