@@ -831,11 +831,11 @@ ul.menudoc {
 
 .post-tag::before
 {
-    content: "\f02b";
+    /* content: "\f02b"; */
     padding-right: .5em;
 }
 
-.post-tag:hover
+a.post-tag:hover
 {
     text-decoration: none;
     background: #327490;
