@@ -25,7 +25,7 @@ var main = {
 			$('#' + tag_id + '-con').removeClass('hide-tag');
 			$('body,html').animate({scrollTop:$('#' + tag_id + '-con').offset().top});
 			return false;
-       });
+    });
        
     $('#showall').click(function(){
       $('.tags-container').removeClass('hide-tag');
