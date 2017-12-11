@@ -1,16 +1,13 @@
 ---
 layout: post
 title: Cuốn sách gợi ý cho các ông bố Viettel cách cân bằng gia đình và công việc!
-subtitle: Một trong số các bài viết review sách mà tôi tâm đắc và trong thời gian làm việc ở Viettel.
+subtitle: Một trong số các bài viết review sách mà tôi tâm đắc trong thời gian làm việc ở Viettel.
 image: /img/2017-12-11-3Mins/anhbia.jpg
 tags: [ex-Vietteler, Book-Review, Doc-sach, Sach-hay, for-family]
 categories: [Book-review]
 date:   2017-12-11
 
 ---
-Một trong số các bài viết review sách mà tôi tâm đắc và trong thời gian làm việc ở Viettel. Cuốn sách sẽ chỉ ra bí kíp giúp các ông bố bận rộn cân bằng công việc và quan tâm chăm sóc con cái.
-
-
 **Liệu có một công thức chung để làm nền tảng cho việc cân bằng gia đình – công việc không ? Câu trả lời là "Có" và một phần của việc này có trong cuốn sách "3 phút cho ông bố bận rộn" của tác giả Ota Toshimasa.**
 
 Đã bao giờ bạn trải qua những có cảm giác này chưa:
