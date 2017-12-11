@@ -6,6 +6,9 @@ var main = {
   numImgs : null,
 
   init : function() {
+    
+
+
     var docao = $('#navbarTop').height() + 10;
     $('#nutmenuright').css({'top':docao});
     $('#menuphairight').css({'top':docao});
