@@ -815,3 +815,74 @@ ul.menudoc {
   background: url("/img/2017-06-06-jupyter/Jupyter.png");
   height: 430px;
 }
+
+/* tag define */
+
+.post-tag {
+  display: inline-block;
+  background: rgba(106,159,181,0.15);
+  padding: 0 .5rem;
+  margin-right: .5rem;
+  border-radius: 4px;
+  color:#6a9fb5;
+  font-family: "PT Sans",Helvetica,Arial,sans-serif;
+  font-size: 90%;
+}
+
+.post-tag::before
+{
+    content: "\f02b";
+    padding-right: .5em;
+}
+
+.post-tag::hover
+{
+    text-decoration: none;
+    background: #6a9fb5;
+    color: white;
+  }
+  
+
+.tags-expo {
+  :target:before {
+    content:"";
+    display:block;
+    height:72px; /* fixed header height*/
+    margin:-72px 0 0; /* negative fixed header height */
+  }
+  .tags-expo-list {
+    @media (min-width: 38em) {
+      font-size: 0.9rem;
+      .post-tag {
+        margin: .2em .3em;
+      }
+    }
+  }
+  .tags-expo-section {
+    ul {
+      list-style-type: circle;
+      list-style-position: inside;
+      padding: 0;
+      li {
+        @include transition(all .1s ease-in-out);
+        padding: 0 1rem;
+        &:hover {
+          list-style-type: disc;
+          padding: 0 .5rem;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    .post-date {
+      display: inline-block;
+      font-size: 80%;
+      color: $post-date-color;
+      margin: 0;
+      padding: 0;
+    }
+    font-family: $font-sans;
+  }
+}
+
