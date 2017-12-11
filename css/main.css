@@ -838,7 +838,7 @@ ul.menudoc {
 .post-tag:hover
 {
     text-decoration: none;
-    background: #6a9fb5;
+    background: #327490;
     color: white;
   }
   
@@ -884,5 +884,13 @@ ul.menudoc {
     }
     font-family: $font-sans;
   }
+}
+
+.tags-container{
+  
+}
+
+.hide-tag{
+  display: none
 }
 
