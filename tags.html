@@ -6,7 +6,7 @@ title: Tags
 <div class="tags-expo">
   <div class="tags-expo-list">
     {% for tag in site.tags %}
-	<a href="/tag#{{ tag[0] }}-ref" class="post-tag" id="{{ tag[0] }}"><i class="fa fa-tags" aria-hidden="true"></i> 
+	<a href="/tag#{{ tag[0] }}-ref" class="post-tag" id="{{ tag[0] }}"><i class="fa fa-tag" aria-hidden="true"></i> 
 		{{ tag[0] }} ({{ tag[1].size }})</a>
     {% endfor %}
     <br>

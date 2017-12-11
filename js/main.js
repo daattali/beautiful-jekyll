@@ -30,7 +30,7 @@ var main = {
     $('#showall').click(function(){
       $('.tags-container').removeClass('hide-tag');
       return false;
-    }
+    });
 
 
     // #Endtag
