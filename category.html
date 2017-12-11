@@ -4,25 +4,35 @@ title: Category
 ---
 
 <div class="tags-expo">
-  <div class="tags-expo-list">
+  <!-- <div class="tags-expo-list">
     {% for tag in site.categories %}
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
-  </div>
+  </div> -->
+
+  <div class="tags-expo-list">
+        {% for tag in site.categories %}
+      <a href="/category#{{ tag[0] }}-ref" class="post-tag" id="{{ tag[0] }}"><i class="fa fa-bars" aria-hidden="true"></i> 
+        {{ tag[0] }} ({{ tag[1].size }})</a>
+        {% endfor %}
+      </div>
+
   <hr/>
   <div class="tags-expo-section">
     {% for tag in site.categories %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }} <br/>
-      <small class="post-date">{{ post.date | date_to_string }}</small>
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
+      <div class="tags-container" id="{{ tag[0] }}-con">
+        <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+        <ul class="tags-expo-posts">
+          {% for post in tag[1] %}
+            <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+          <li>
+            {{ post.title }} 
+          <small class="post-date">({{ post.date | date_to_string }})</small>
+          </li>
+          </a>
+          {% endfor %}
+        </ul>
+    </div>
     {% endfor %}
   </div>
 </div>
