@@ -7,20 +7,30 @@ var main = {
 
   init : function() {
     // TAG
-    url_window = window.location.href;
-    t_index = url_window.indexOf("#");
-    if(t_index > -1)
-    {
-      alert("in")
-      $('.tags-container').addClass('hide-tag');
-      sub_url = url_window.substring(t_index, url_window.length - 1);
-      alert(sub_url)
-    }
+    url_window = $(location).attr('href');
+		//alert(url_window.indexOf("#"))
+		t_index = url_window.indexOf("#");
+		if(t_index > -1)
+		{
+			//alert("in")
+			$('.tags-container').addClass('hide-tag');
+			tag_id = url_window.substring(t_index + 1, url_window.length - 4);
+			$('#' + tag_id + '-con').removeClass('hide-tag');
+			//alert(sub_url)
+		}
+
+		$('.post-tag').click(function(){
+			var tag_id = $(this).attr('id');
+			$('.tags-container').addClass('hide-tag');
+			$('#' + tag_id + '-con').removeClass('hide-tag');
+			$('body,html').animate({scrollTop:$('#' + tag_id + '-con').offset().top});
+			return false;
+    	 });
 
 
     // #Endtag
 
-    
+
     var docao = $('#navbarTop').height() + 10;
     $('#nutmenuright').css({'top':docao});
     $('#menuphairight').css({'top':docao});
