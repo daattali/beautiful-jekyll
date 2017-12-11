@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cuốn sách gợi ý cho các ông bố Viettel cách cân bằng gia đình và công việc!
+title: Đọc sách cho con - gia đình hạnh phúc
 subtitle: Một trong số các bài viết review sách mà tôi tâm đắc trong thời gian làm việc ở Viettel.
 image: /img/2017-12-11-Read-book-4-child/4ChildBia.jpg
 tags: [ex-Vietteler, Book-Review, Doc-sach, Sach-hay, for-family]
