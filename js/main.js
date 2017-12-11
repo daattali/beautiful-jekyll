@@ -6,9 +6,21 @@ var main = {
   numImgs : null,
 
   init : function() {
+    // TAG
+    url_window = window.location.href;
+    t_index = url_window.indexOf("#");
+    if(t_index > -1)
+    {
+      alert("in")
+      $('.tags-container').addClass('hide-tag');
+      sub_url = url_window.substring(t_index, url_window.length - 1);
+      alert(sub_url)
+    }
+
+
+    // #Endtag
+
     
-
-
     var docao = $('#navbarTop').height() + 10;
     $('#nutmenuright').css({'top':docao});
     $('#menuphairight').css({'top':docao});
