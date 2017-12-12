@@ -95,8 +95,8 @@ These are the same thing when referring to a random variable. However, `mean` is
 Note: [`power`](https://en.wikipedia.org/wiki/Statistical_power) and `sensitivity` are highly related. But we tend to think of power as a conditional probability (a property of a statistical test) whereas we tend to think of sensitivity/recall as counts (a property of the predictions).
 
 #### `lasso` and `ridge` regression
-* `lasso regression` means regression using L1 regularization
-* `ridge regression` means regression using L2 regularization
+`Lasso regression` means regression using L1 regularization.
+`Ridge regression` means regression using L2 regularization.
 
 #### `shrinkage`
 This can be thought of in terms of regularization. As an example, using L2 regularization in regression "shrinks" the coefficients. But it's best not to interpret "shrink" as "make smaller in magnitude". In Bayesian terms, a regularizer is viewed as a prior distribution. You could have a prior that believes the weights are near some non-zero value, and thus the prior "shrinks your beliefs to that value". Thus, `shrinkage` can be thought of as shrinking your uncertainty in the model parameters rather than literally making the weights smaller, although both become true when you are shrinking towards zero (which is almost always the case with regularization).
