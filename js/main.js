@@ -8,15 +8,12 @@ var main = {
   init : function() {
     // TAG
     url_window = $(location).attr('href');
-		//alert(url_window.indexOf("#"))
 		t_index = url_window.indexOf("#");
 		if(t_index > -1)
 		{
-			//alert("in")
 			$('.tags-container').addClass('hide-tag');
 			tag_id = url_window.substring(t_index + 1, url_window.length - 4);
 			$('#' + tag_id + '-con').removeClass('hide-tag');
-			//alert(sub_url)
 		}
 
 		$('.post-tag').click(function(){
@@ -31,8 +28,6 @@ var main = {
       $('.tags-container').removeClass('hide-tag');
       return false;
     });
-
-
     // #Endtag
 
 
