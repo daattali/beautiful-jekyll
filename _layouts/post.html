@@ -40,7 +40,7 @@ layout: base
           Tags:
           {% if site.link-tags %}
           {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
+            <a href="/tags/#{{ tag }}-ref">{{ tag }}</a>
           {% endfor %}
           {% else %}
             {{ page.tags | join: ", " }}
