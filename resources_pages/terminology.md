@@ -29,7 +29,7 @@ This section covers terms that have different meanings in different contexts, sp
   * in statistics, this sometimes refers to stopping an experiment early, particularly as in early stopping of clinical trials.
 
 #### `hypothesis`
-  * in statistics, this word evokes [hypothesis testing](https://en.wikipedia.org/wiki/Statistical_hypothesis_testing)
+  * in statistics, this word evokes [hypothesis testing](https://en.wikipedia.org/wiki/Statistical_hypothesis_testing).
   * in ML, `hypothesis` is sometimes used to refer to a particular model or decision boundary from the hypothesis space. E.g., we select a linear decision boundary from the hypothesis space of all possible hyperplanes; more complicated models have a larger hypothesis space.
 
 #### `factor`
