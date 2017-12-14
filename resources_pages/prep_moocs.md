@@ -45,3 +45,6 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Introduction to Linear Models and Matrix Algebra](https://www.edx.org/course/introduction-linear-models-matrix-harvardx-ph525-2x-0) with R, from Harvard U. (edX)
 - [Linear Algebra Refresher Course](https://www.udacity.com/course/linear-algebra-refresher-course--ud953) with Python (Udacity).
 - [Applications of Linear Algebra Part 1](https://www.edx.org/course/applications-linear-algebra-part-1-davidsonx-d003x-1), from Davidson College (edX)
+
+### Misc
+- A variety of [free O'Reilly Ebooks on data science](http://www.oreilly.com/data/free/archive.html)
