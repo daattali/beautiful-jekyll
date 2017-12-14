@@ -78,7 +78,7 @@ One (probably flawed) definition of `learning` is updating your parameters given
 
 #### `mean` vs. `expected value`
 
-These are the same thing when referring to a random variable. However, `mean` is sometimes used to mean the sample mean. Therefore you can have the (sample) mean of the data you collected, but not the expected value. You can also discuss the mean of a bunch of numbers, like the mean (or average) of 1,2,3,4,5; but you wouldn't say the expected value of these numbers.
+These are the same thing when referring to a random variable. However, `mean` is sometimes used to refer to the sample mean. Therefore you can have the (sample) mean of the data you collected, but not the expected value. You can also discuss the mean of a bunch of numbers, like the mean (or average) of 1,2,3,4,5; but you wouldn't say the expected value of these numbers.
 
 
 ## Definitions
