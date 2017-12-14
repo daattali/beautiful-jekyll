@@ -20,7 +20,7 @@ This section covers terms that have different meanings in different contexts, sp
   * in both fields, we talk about the [bias-variance tradeoff](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff), which is related to the tradeoff between overfitting and underfitting.
 
 #### `parameter` and `parametric`
-  * in statistics, `parameter` is used to describe probability distributions, like "the Beta distribution has a shape parameter and a scale parameter". Thus, a `parametric model` is a model using a parametric probability distribution.
+  * in statistics, `parameter` is used to describe probability distributions, like "the gamma distribution has a shape parameter and a scale parameter". Thus, a `parametric model` is a model using a parametric probability distribution.
   * in ML, `parameter` refers to the components (usually numbers) that are getting learned in a system. A `parametric model` has a fixed number of parameters that is independent of the number of training examples, and typically doesn't require the training examples to be stored in order to make predictions. An example would be linear regression, which involves one parameter per feature plus one more intercept parameter. On the other hand, [k-nearest neighbours](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) (KNN) would be an example of a nonparametric model as we don't "distill" the training data into a fixed set of parameters. Another way to think about this is that, with KNN, the complexity of the model grows with the amount of training data.
   * the differences above can cause confusion. For example, a statistician might say a linear [support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine) (SVM) is not a parametric classifier because it is not based on an underlying probabilistic model. And yet, in ML, a linear SVM is parametric because we're learning one parameter per dimension (in the primal formulation) to represent a linear boundary, and thus the number of parameters is fixed.
 
@@ -61,11 +61,11 @@ This section covers terms that have different meanings in different contexts, sp
 
 ## Compare and contrast
 #### `discriminative` vs. `generative`
-A [discriminative model](https://en.wikipedia.org/wiki/Discriminative_model) directly models the probability of a given output given the inputs. On the other hand, with a [generative model](https://en.wikipedia.org/wiki/Generative_model) one starts from assumptions about how the data are generated (the "forward model"), and then performs inference about the model given the data (the "backward" step).
+A [discriminative model](https://en.wikipedia.org/wiki/Discriminative_model) directly models the probability of a given output given the inputs. On the other hand, with a [generative model](https://en.wikipedia.org/wiki/Generative_model) one starts from assumptions about how the data are generated (the "forward model"), and then performs inference about the model given the data (the "backward" step). The term `generative model` itself has some ambiguity: in some contexts it includes the prior distribution (see below) and in other contexts it does not.
 
 #### `Bayesian` vs. `frequentist`
 This represents a divide in the field of statistics and is related to, but not the same as, `discriminative` vs. `generative` above.
-The [Bayesian approach](https://en.wikipedia.org/wiki/Bayesian_inference) involves generative models and following [Bayes' Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem). In this paradigm, one combines the generative model with prior beliefs and attempts to compute a posterior distribution of the quantities of interest. See DSCI 553. The [frequentist approach](https://en.wikipedia.org/wiki/Frequentist_inference) relates to hypothesis testing and does not involve prior distributions (which is both good and bad!). See DSCI 552.
+The [Bayesian approach](https://en.wikipedia.org/wiki/Bayesian_inference) involves generative models and following [Bayes' Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem). In this paradigm, one uses a generative model and attempts to compute a posterior distribution of the quantities of interest. See DSCI 553. The [frequentist approach](https://en.wikipedia.org/wiki/Frequentist_inference) relates to hypothesis testing and does not involve prior distributions (which is both good and bad!). See DSCI 552.
 
 #### `supervised` vs. `unsupervised` learning
 In [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning) you are given a set of input-output pairs and you try to model the relationship between them so that, given a new input, you can predict its output. In [unsupervised learning](https://en.wikipedia.org/wiki/Unsupervised_learning) there are no outputs. Your job is then to find some structure or pattern in the data. Sometimes it's helpful to think of unsupervised learning as supervised learning except that you don't know which features are the inputs and which are the output(s).
@@ -73,7 +73,7 @@ In [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning) you 
 See also [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition) and [semi-supervised learning](https://en.wikipedia.org/wiki/Semi-supervised_learning).
 
 #### `learning` vs. `inference`
-This relates to the discussion of Bayesian models above. One (probably flawed) definition of learning is setting your model parameters to fit your data, whereas inference is finding a posterior distribution over unknown quantities of interest. Here's some [more thoughts on this](https://www.quora.com/What-is-the-difference-between-inference-and-learning)
+One (probably flawed) definition of `learning` is updating your parameters given your data. The term `inference` is perhaps slightly more specific, as it typically refers to inferring parameters of a model, either Bayesian or frequentist (see above). Here's some [more thoughts on this](https://www.quora.com/What-is-the-difference-between-inference-and-learning).
 
 
 #### `mean` vs. `expected value`
@@ -88,7 +88,7 @@ These are the same thing when referring to a random variable. However, `mean` is
 * `Type II error`: false negative, meaning it was actually positive but you said negative
 * `sensitivity` aka `recall`: true positive rate. in math: 1 - (# of type II errors)/(# of true positives)
 * `specificity`: true negative rate. in math: 1 - (# of type I errors)/(# of true negatives)
-* `precision`: 1 - (# of type II errors)/(# reported positives)
+* `precision` aka `positive predictive value`: 1 - (# of type I errors)/(# reported positives)
 
 [[relevant image](https://cloud.githubusercontent.com/assets/6865016/16235952/720f2a36-378b-11e6-9355-449be54f0729.png)]
 
@@ -96,6 +96,7 @@ Note: [`power`](https://en.wikipedia.org/wiki/Statistical_power) and `sensitivit
 
 #### `lasso` and `ridge` regression
 `Lasso regression` means regression using L1 regularization.
+
 `Ridge regression` means regression using L2 regularization.
 
 #### `shrinkage`
