@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cài dặt và sử dụng Virtual Environemt trong Window
-image: /img/2017-12-12-Jekyll/create_jekyll_blog.jpg
+title: Cài đặt và sử dụng Virtual Environment trong Window
+image: /img/2017-06-01-Python/python.png
 tags: [Python, lap-trinh, program-language, Python-tips]
 categories: [Dev-Python]
 date:   2017-12-16
 
 ---
-**Virtual Environemt là phần không nên thiếu với các lập trình viên Python. Có phần này, chúng ta có thể sử dụng cùng lúc nhiều phiên bản của nhiều thư viên khác nhau :)**
+**Virtual Environment là phần không nên thiếu với các lập trình viên Python. Có phần này, chúng ta có thể sử dụng cùng lúc nhiều phiên bản của nhiều thư viên khác nhau :)**
 
 Ví dụ như hôm trước mới có Django 2.0, tôi muốn khám phá nó nhưng không muốn ảnh hưởng đến các project đang có (chạy bản 1.11). 
 
@@ -50,7 +50,7 @@ Chờ cài đặt xong sẽ có thông báo: Successfully installed virtualenvwr
 
 # Sử dụng
 
-(7 step)
+
 1. Make a Virtual Environment (VE)
 Tạo một VE có tên venv
 
@@ -75,6 +75,8 @@ kết nối đến project bằng cách thực hiện các lệnh cd cd, sau đ�
 setprojectdir .
 ```
 
+Sau lệnh này, vị trí của thư mục trên window mà các bạn trỏ đến sẽ được map với environment được tạo ở thư mục phần 1.
+
 3. Deactivate
 
 thực hiện lệnh:
@@ -85,19 +87,38 @@ deactivate
 4. Workon
 Bật lại VE sau khi tắt
 
-Đứng từ thư mục project, thực hiện
+Đứng từ thư mục project (ở mục 2), thực hiện
+
 ```
 workon HelloWold
 ```
 
 
-Pip Install
-Flask!
+5. Pip Install
+* Thực hiện install các gói cần thiết với project bằng cửa sổ cmd đang kích hoạt VE như bình thường.
+
+Công việc install thật mất thời gian, vì thế Python cung cấp cho lập trình viên cách nhanh nhất là copy từ environment này sang các environment khác.
+* Export các gói đang sử dụng ra file requirement.txt
+
+Từ environment đang sử dụng
+```
+pip freeze > requirements.txt
+```
+Ta thu được file requirements.txt của environment đang sử dụng.
+
+Khi tạo ra một environment khác, ta thực hiện install các gói trong file requirements.txt:
+
+```
+pip install -r requirements.txt
+```
 
 
-9. reactive VE (Trùng với workon)
 
-Vào thư mục đã tạo từ bước 1 (tạo từ pip)
+Ngoài lề: 
+**reactive VE (Trùng với workon)**
+
+Vào thư mục đã tạo từ bước 1 (tạo từ mkvirtualenv)
+
 ```
 cd venv
 scripts\activate
