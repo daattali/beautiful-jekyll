@@ -38,6 +38,7 @@ pip install virtualenv
 ```
 
 Chờ cài đặt xong sẽ có thông báo: Successfully installed virtualenv-xx
+
 4. Cài đặt Install virtualenvwrapper-win
 
 Gõ tiếp vào màn hình cmd:
