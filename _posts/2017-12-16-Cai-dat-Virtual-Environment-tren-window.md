@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cài đặt và sử dụng Virtual Environment trong Window
+title: Cài đặt và sử dụng Virtual Environment trong Windows
 image: /img/2017-06-01-Python/python.png
 tags: [Python, lap-trinh, program-language, Python-tips]
 categories: [Dev-Python]
@@ -63,20 +63,20 @@ Cần lưu ý tùy theo hệ điều hành và phiên bản đã cài mà tên V
 
 ![VE1](/img/2017-12-16-VE/VE1.png)
 
-
+Cần nhớ đường dẫn này để còn mở lại environment sau này
 
 
 2. Connect our project with our Environment & Set Project Directory
 
-Tạo một thư mục trùng tên với VE để làm thư mục chứa project
+Tại thư mục muốn lưu trữ project, tạo một thư mục trùng tên với VE vừa tạo ở bước 1 để làm thư mục chứa code project
 
-kết nối đến project bằng cách thực hiện các lệnh cd cd, sau đó thực hiện
+kết nối đến project bằng cách thực hiện lệnh cd, sau đó thực hiện
 
 ```
 setprojectdir .
 ```
 
-Sau lệnh này, vị trí của thư mục trên window mà các bạn trỏ đến sẽ được map với environment được tạo ở thư mục phần 1.
+Sau lệnh này, vị trí của thư mục trên windows mà các bạn trỏ đến sẽ được map với environment được tạo ở thư mục phần 1.
 
 3. Deactivate
 
@@ -116,11 +116,10 @@ pip install -r requirements.txt
 
 
 Ngoài lề: 
-**reactive VE (Trùng với workon)**
+**reactivate VE (Trùng với workon)**
 
-Vào thư mục đã tạo từ bước 1 (tạo từ mkvirtualenv)
+Vào thư mục đã tạo từ bước 1 (tạo từ mkvirtualenv), sau đó thực hiện lệnh sau để activate VE
 
 ```
-cd venv
 scripts\activate
 ```
