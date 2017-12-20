@@ -44,3 +44,13 @@ Trên jupyter notebook:
 Kết quả: 
 
 ![](/img/2017-12-01-Tips/Ex.png)
+
+
+**Ghi chú:** 
+- Với các thư mục sâu hơn, có thể sử dụng cách đơn giản hơn chút. ví dụ ảnh để ở thư mục img thì đường dẫn sẽ là
+`
+![](img/Ex.png)
+`
+
+- Mẹo nhỏ thì như vậy, nhưng về lâu về dài thì nên học cách sử dụng LATEX.
+[Latex on markdown](https://medium.com/pymi/bi%E1%BB%83u-di%E1%BB%85n-c%C3%B4ng-th%E1%BB%A9c-to%C3%A1n-trong-latex-tr%C3%AAn-jupyter-notebook-5e1f521f062c)
