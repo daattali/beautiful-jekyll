@@ -64,19 +64,26 @@ UBC courses are graded out of 100%. To pass an MDS course a student must score 6
 
 #### Final course grades
 
-With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails the quiz component of a course (below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail the quiz component of more than 3 courses.
+With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails all the quizzes in a course (each below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail all the quizzes in more than 3 courses.
+
+#### Late Submissions
+
+If a quiz is submitted after the quiz period has closed, that student will receive a 50% deduction of their grade for that quiz for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
+
+If a lab assignment or any other non-quiz assessment is submitted after the due date, that student will receive a 50% deduction of their grade for that assessment for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
 
 ## Quizzes
 
-Unless otherwise specified, quizzes will be closed-book. This means that during the quiz students are expected to:
+Unless otherwise specified, **the only allowed material during MDS quizzes is official documentation available in the local programming environment** (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students may **NOT** :
 
-- be physically present in the quiz room (cannot take a quiz from a remote location)
-- not communicate with other students or anyone else
-- not use the internet to solve questions on the quiz
-- not bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)
-- not leave the quiz room early with your laptop, and not come back into the quiz room after leaving (other than for purposes such as using the washroom)
+- take a quiz from a remote location
+- communicate with other students or anyone else
+- use the internet to solve questions on the quiz
+- bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)
+- leave the quiz room early with your laptop
+- leave and re-enter the quiz room (other than for purposes such as using the washroom)
 
-Failing to observe the above expectations may result in a zero grade in the quiz in question.
+Failing to observe the above expectations may result in a zero grade for the quiz in question.
 
 ## Plagiarism
 
