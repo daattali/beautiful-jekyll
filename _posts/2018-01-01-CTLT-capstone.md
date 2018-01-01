@@ -1,4 +1,8 @@
-# MDS Capstone Project: Visualizing Massive Open Online Courses
+---
+layout: post
+title: MDS capstone project
+subtitle: Visualizing massive open online courses
+---
 
 ## Introduction
 
