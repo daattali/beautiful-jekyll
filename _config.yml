@@ -56,44 +56,30 @@ avatar: "/img/avatar-icon.png"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  reddit: yourname    # eg. daattali
-  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: yourname  # eg. daattali
-  xing: yourname      # eg. daattali
-  stackoverflow: yourlink  # eg. "3943160/daattali"
-  snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
-  youtube: yourlink   # eg. user/daattali or channel/daattali
-  spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
-  steam: yourname     # eg. daattali
-  twitch: yourname    # eg. daattali
-  yelp: yourname      # eg. daattali
 
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: true
-  email: true
-  twitter: true
-  google-plus: false
-  github: true
-  reddit: false
-  linkedin: false
-  xing: false
-  stackoverflow: false
-  snapchat: false
-  instagram: false
-  youtube: false
-  spotify: false
-  telephone: false
-  steam: false
-  twitch: false
-  yelp: false
+# Select your active Social Network Links.
+# Uncomment the links you want to show in the footer and add your information to each link.
+# You can reorder the items to define the link order.
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+social-network-links:
+  rss: true
+  email: "someone@example.com"
+  facebook: daattali
+  github: daattali
+  twitter: daattali
+#  reddit: yourname
+#  google-plus: +DeanAttali
+#  linkedin: daattali
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+#  instagram: deanat78
+#  youtube: user/deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
 
 # Select which share links to show in posts
 share-links-active:
