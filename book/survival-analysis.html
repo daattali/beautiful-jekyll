@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>An introduction to R for McGill Epidemiology and Public Health students</title>
+  <meta name="description" content="Introduction to R for McGill Epidemiology and Public Health students">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  
+  <meta name="twitter:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  
+
+<meta name="author" content="Fei Wang &amp; Jay Brophy">
+
+
+<meta name="date" content="2018-01-05">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="regressions-with-r-linear-regression.html">
+<link rel="next" href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html"><i class="fa fa-check"></i><b>2</b> An overview of R: part I {ch2}</a><ul>
+<li class="chapter" data-level="2.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#basic-computations-in-r"><i class="fa fa-check"></i><b>2.1</b> Basic computations in R</a></li>
+<li class="chapter" data-level="2.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#create-an-object"><i class="fa fa-check"></i><b>2.2</b> Create an object</a></li>
+<li class="chapter" data-level="2.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#operators"><i class="fa fa-check"></i><b>2.3</b> Operators</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arithmetic-operators"><i class="fa fa-check"></i><b>2.3.1</b> 2.3.1 Arithmetic operators</a></li>
+<li class="chapter" data-level="2.3.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#relational-operators"><i class="fa fa-check"></i><b>2.3.2</b> Relational operators</a></li>
+<li class="chapter" data-level="2.3.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#logical-operators"><i class="fa fa-check"></i><b>2.3.3</b> Logical operators</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#generate-data"><i class="fa fa-check"></i><b>2.4</b> Generate data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#regular-sequences"><i class="fa fa-check"></i><b>2.4.1</b> Regular sequences</a></li>
+<li class="chapter" data-level="2.4.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#random-sequences"><i class="fa fa-check"></i><b>2.4.2</b> Random sequences</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-types"><i class="fa fa-check"></i><b>2.5</b> Data types</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#vectors"><i class="fa fa-check"></i><b>2.5.1</b> Vectors</a></li>
+<li class="chapter" data-level="2.5.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#lists"><i class="fa fa-check"></i><b>2.5.2</b> Lists</a></li>
+<li class="chapter" data-level="2.5.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#factors"><i class="fa fa-check"></i><b>2.5.3</b> Factors</a></li>
+<li class="chapter" data-level="2.5.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#matrices"><i class="fa fa-check"></i><b>2.5.4</b> Matrices</a></li>
+<li class="chapter" data-level="2.5.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arrays"><i class="fa fa-check"></i><b>2.5.5</b> Arrays</a></li>
+<li class="chapter" data-level="2.5.6" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-frames"><i class="fa fa-check"></i><b>2.5.6</b> Data Frames</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html"><i class="fa fa-check"></i><b>3</b> An overview of R: Part II {ch3}</a><ul>
+<li class="chapter" data-level="3.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#assess-the-values-of-an-object"><i class="fa fa-check"></i><b>3.1</b> Assess the values of an object</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-index-system"><i class="fa fa-check"></i><b>3.1.1</b> Using the index system</a></li>
+<li class="chapter" data-level="3.1.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-names"><i class="fa fa-check"></i><b>3.1.2</b> Using the names</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#get-the-data-into-r"><i class="fa fa-check"></i><b>3.2</b> Get the data into R</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#direct-data-entering"><i class="fa fa-check"></i><b>3.2.1</b> Direct data entering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#use-dataset-that-come-with-r-or-r-packages"><i class="fa fa-check"></i><b>3.2.2</b> Use dataset that come with R or R packages</a></li>
+<li class="chapter" data-level="3.2.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-files"><i class="fa fa-check"></i><b>3.2.3</b> Read in data files</a></li>
+<li class="chapter" data-level="3.2.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-from-the-clipboard"><i class="fa fa-check"></i><b>3.2.4</b> Read in data from the clipboard</a></li>
+<li class="chapter" data-level="3.2.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-remote-data"><i class="fa fa-check"></i><b>3.2.5</b> Read in remote data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#export-data"><i class="fa fa-check"></i><b>3.3</b> Export data</a></li>
+<li class="chapter" data-level="3.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#save-and-load-data-in-r"><i class="fa fa-check"></i><b>3.4</b> Save and load data in R</a></li>
+<li class="chapter" data-level="3.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#view-data"><i class="fa fa-check"></i><b>3.5</b> View data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html"><i class="fa fa-check"></i><b>4</b> Data management: Part I {ch4}</a><ul>
+<li class="chapter" data-level="4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#control-structure"><i class="fa fa-check"></i><b>4.1</b> Control structure</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#for-loop"><i class="fa fa-check"></i><b>4.1.1</b> For loop</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#while-loop"><i class="fa fa-check"></i><b>4.1.2</b> While Loop</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#if-else-loop"><i class="fa fa-check"></i><b>4.1.3</b> If-else Loop</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#repeat-loop"><i class="fa fa-check"></i><b>4.1.4</b> Repeat Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
+<li class="chapter" data-level="4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#dates"><i class="fa fa-check"></i><b>4.3</b> Dates</a></li>
+<li class="chapter" data-level="4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#common-useful-functions"><i class="fa fa-check"></i><b>4.4</b> Common useful functions</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#numeric-functions"><i class="fa fa-check"></i><b>4.4.1</b> Numeric functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#character-functions"><i class="fa fa-check"></i><b>4.4.2</b> Character Functions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#apply-functions-over-a-list-array-dataframe-or-matrix"><i class="fa fa-check"></i><b>4.4.3</b> Apply functions over a list, array, dataframe or matrix</a></li>
+<li class="chapter" data-level="4.4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#other-useful-functions"><i class="fa fa-check"></i><b>4.4.4</b> Other useful functions</a></li>
+<li class="chapter" data-level="4.4.5" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#write-functions"><i class="fa fa-check"></i><b>4.4.5</b> Write functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html"><i class="fa fa-check"></i><b>5</b> Data managements: Part II- Reshape data {ch4}</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#subset-data"><i class="fa fa-check"></i><b>5.1</b> Subset Data</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-variables"><i class="fa fa-check"></i><b>5.1.1</b> Select variables</a></li>
+<li class="chapter" data-level="5.1.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#exclude-variables"><i class="fa fa-check"></i><b>5.1.2</b> Exclude variables</a></li>
+<li class="chapter" data-level="5.1.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-observations"><i class="fa fa-check"></i><b>5.1.3</b> Select Observations</a></li>
+<li class="chapter" data-level="5.1.4" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-both-variables-and-observations"><i class="fa fa-check"></i><b>5.1.4</b> Select both variables and observations</a></li>
+<li class="chapter" data-level="5.1.5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keep-or-delete-variables-using-dplyr-function"><i class="fa fa-check"></i><b>5.1.5</b> Keep or delete variables using dplyr function</a></li>
+<li class="chapter" data-level="5.1.6" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keepdrop-variables-by-name-pattern"><i class="fa fa-check"></i><b>5.1.6</b> Keep/drop variables by name pattern</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data"><i class="fa fa-check"></i><b>5.2</b> Merge Data</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-casesobservations-to-a-dataset"><i class="fa fa-check"></i><b>5.2.1</b> Add cases/observations to a dataset</a></li>
+<li class="chapter" data-level="5.2.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data-frames"><i class="fa fa-check"></i><b>5.2.2</b> Merge Data Frames</a></li>
+<li class="chapter" data-level="5.2.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-more-variables-to-a-dataset"><i class="fa fa-check"></i><b>5.2.3</b> Add more variables to a dataset</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#the-reshape-package"><i class="fa fa-check"></i><b>5.3</b> The Reshape package</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html"><i class="fa fa-check"></i><b>6</b> Base Graphics with R {ch5}</a><ul>
+<li class="chapter" data-level="6.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-functions"><i class="fa fa-check"></i><b>6.1</b> Graphical functions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#high-level-graphical-functions"><i class="fa fa-check"></i><b>6.1.1</b> (1) High-level graphical functions</a></li>
+<li class="chapter" data-level="6.1.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#low-level-functions"><i class="fa fa-check"></i><b>6.1.2</b> (2) Low-level functions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-parameters"><i class="fa fa-check"></i><b>6.2</b> Graphical parameters</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#specify-within-the-high-level-function"><i class="fa fa-check"></i><b>6.2.1</b> 6.2.1 Specify within the high-level function</a></li>
+<li class="chapter" data-level="6.2.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par"><i class="fa fa-check"></i><b>6.2.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#multiple-plots-on-the-one-page"><i class="fa fa-check"></i><b>6.3</b> Multiple plots on the one page</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-layout"><i class="fa fa-check"></i><b>6.3.1</b> Function layout()</a></li>
+<li class="chapter" data-level="6.3.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par-1"><i class="fa fa-check"></i><b>6.3.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-a-plot"><i class="fa fa-check"></i><b>6.4</b> Save a plot</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-by-menu-click"><i class="fa fa-check"></i><b>6.4.1</b> Save plots by menu click</a></li>
+<li class="chapter" data-level="6.4.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-using-functions"><i class="fa fa-check"></i><b>6.4.2</b> Save plots using functions</a></li>
+<li class="chapter" data-level="6.4.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#a-common-method"><i class="fa fa-check"></i><b>6.4.3</b> (1) A common method</a></li>
+<li class="chapter" data-level="6.4.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#another-option"><i class="fa fa-check"></i><b>6.4.4</b> (2)Another option</a></li>
+<li class="chapter" data-level="6.4.5" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#saving-plots-in-a-loop"><i class="fa fa-check"></i><b>6.4.5</b> (3) Saving plots in a loop</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><i class="fa fa-check"></i><b>7</b> Descriptive statistics with R: Part I-Quantitative variables {ch6}</a><ul>
+<li class="chapter" data-level="7.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-the-whole-dataset"><i class="fa fa-check"></i><b>7.1</b> For the whole dataset</a></li>
+<li class="chapter" data-level="7.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-single-quantitative-variable"><i class="fa fa-check"></i><b>7.2</b> For a single quantitative variable</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation"><i class="fa fa-check"></i><b>7.2.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.2.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation"><i class="fa fa-check"></i><b>7.2.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-quantitative-variable-by-groups"><i class="fa fa-check"></i><b>7.3</b> For a quantitative variable by groups</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-1"><i class="fa fa-check"></i><b>7.3.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.3.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-1"><i class="fa fa-check"></i><b>7.3.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-two-quantitative-variables"><i class="fa fa-check"></i><b>7.4</b> For two quantitative variables</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-2"><i class="fa fa-check"></i><b>7.4.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-2"><i class="fa fa-check"></i><b>7.4.2</b> Graphical representation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><i class="fa fa-check"></i><b>8</b> Descriptive statistics with R: Part II-Categorical variables and ggplot</a><ul>
+<li class="chapter" data-level="8.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#numerical-representation-3"><i class="fa fa-check"></i><b>8.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="8.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#graphical-representation-3"><i class="fa fa-check"></i><b>8.2</b> Graphical representation</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#barplots"><i class="fa fa-check"></i><b>8.2.1</b> (1) Barplots</a></li>
+<li class="chapter" data-level="8.2.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#dotcharts"><i class="fa fa-check"></i><b>8.2.2</b> (2) Dotcharts</a></li>
+<li class="chapter" data-level="8.2.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#piecharts"><i class="fa fa-check"></i><b>8.2.3</b> (3) Piecharts</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#ggplot2-function"><i class="fa fa-check"></i><b>8.3</b> ggplot2 function</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#a-simple-histogram-for-a-single-quantative-variable"><i class="fa fa-check"></i><b>8.3.1</b> (1)a simple histogram for a single quantative variable</a></li>
+<li class="chapter" data-level="8.3.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-a-quantative-variable-by-groups"><i class="fa fa-check"></i><b>8.3.2</b> (2)for a quantative variable by groups</a></li>
+<li class="chapter" data-level="8.3.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-two-quantitative-variables-1"><i class="fa fa-check"></i><b>8.3.3</b> (3) for two quantitative variables</a></li>
+<li class="chapter" data-level="8.3.4" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-categorial-variable"><i class="fa fa-check"></i><b>8.3.4</b> (4) for categorial variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html"><i class="fa fa-check"></i><b>9</b> Basic statistical tests with R</a><ul>
+<li class="chapter" data-level="9.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-sample-tests"><i class="fa fa-check"></i><b>9.1</b> Two-sample tests</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#t-test"><i class="fa fa-check"></i><b>9.1.1</b> t-test</a></li>
+<li class="chapter" data-level="9.1.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-tests"><i class="fa fa-check"></i><b>9.1.2</b> Nonparametric tests</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#analysis-of-variance"><i class="fa fa-check"></i><b>9.2</b> Analysis Of Variance</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#assumptions-assessment"><i class="fa fa-check"></i><b>9.2.1</b> Assumptions assessment</a></li>
+<li class="chapter" data-level="9.2.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#parametric-test"><i class="fa fa-check"></i><b>9.2.2</b> Parametric test</a></li>
+<li class="chapter" data-level="9.2.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-test"><i class="fa fa-check"></i><b>9.2.3</b> Nonparametric test</a></li>
+<li class="chapter" data-level="9.2.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#multivariate-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.4</b> Multivariate analysis of variance</a></li>
+<li class="chapter" data-level="9.2.5" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-way-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.5</b> Two-way analysis of variance</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#correlation"><i class="fa fa-check"></i><b>9.3</b> Correlation</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#spearmans-"><i class="fa fa-check"></i><b>9.3.1</b> Spearman’s ρ</a></li>
+<li class="chapter" data-level="9.3.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#kendalls-"><i class="fa fa-check"></i><b>9.3.2</b> Kendall’s τ</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#tabular-data"><i class="fa fa-check"></i><b>9.4</b> Tabular data</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#single-proportion"><i class="fa fa-check"></i><b>9.4.1</b> Single proportion</a></li>
+<li class="chapter" data-level="9.4.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-independent-proportions"><i class="fa fa-check"></i><b>9.4.2</b> Two independent proportions</a></li>
+<li class="chapter" data-level="9.4.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#k-proportions"><i class="fa fa-check"></i><b>9.4.3</b> k proportions</a></li>
+<li class="chapter" data-level="9.4.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#r-c-tables"><i class="fa fa-check"></i><b>9.4.4</b> r × c tables</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html"><i class="fa fa-check"></i><b>10</b> Regressions with R-Linear Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>10.1</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#function"><i class="fa fa-check"></i><b>10.1.1</b> Function</a></li>
+<li class="chapter" data-level="10.1.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#output-explanation"><i class="fa fa-check"></i><b>10.1.2</b> Output explanation</a></li>
+<li class="chapter" data-level="10.1.3" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#other-useful-functions-1"><i class="fa fa-check"></i><b>10.1.3</b> Other useful functions</a></li>
+<li class="chapter" data-level="10.1.4" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#fitted-values-and-residuals"><i class="fa fa-check"></i><b>10.1.4</b> Fitted values and residuals</a></li>
+<li class="chapter" data-level="10.1.5" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#prediction-and-confidence-intervals"><i class="fa fa-check"></i><b>10.1.5</b> Prediction and confidence intervals</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>10.2</b> Multiple linear regression</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="survival-analysis.html"><a href="survival-analysis.html"><i class="fa fa-check"></i><b>11</b> Survival analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="survival-analysis.html"><a href="survival-analysis.html#create-the-response-variable"><i class="fa fa-check"></i><b>11.1</b> Create the response variable</a></li>
+<li class="chapter" data-level="11.2" data-path="survival-analysis.html"><a href="survival-analysis.html#kaplan-meier-estimate"><i class="fa fa-check"></i><b>11.2</b> Kaplan-Meier estimate</a></li>
+<li class="chapter" data-level="11.3" data-path="survival-analysis.html"><a href="survival-analysis.html#cumulative-hazard"><i class="fa fa-check"></i><b>11.3</b> Cumulative hazard</a></li>
+<li class="chapter" data-level="11.4" data-path="survival-analysis.html"><a href="survival-analysis.html#the-log-rank-test"><i class="fa fa-check"></i><b>11.4</b> The log-rank test</a></li>
+<li class="chapter" data-level="11.5" data-path="survival-analysis.html"><a href="survival-analysis.html#cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5</b> Cox Proportional Hazards Model</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="survival-analysis.html"><a href="survival-analysis.html#regular-cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5.1</b> Regular Cox proportional hazards model</a></li>
+<li class="chapter" data-level="11.5.2" data-path="survival-analysis.html"><a href="survival-analysis.html#test-for-proportional-hazards"><i class="fa fa-check"></i><b>11.5.2</b> Test for proportional hazards</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><i class="fa fa-check"></i><b>12</b> Bootstrap, analysis of clustered data and non-linear effects</a><ul>
+<li class="chapter" data-level="12.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#bootstrap"><i class="fa fa-check"></i><b>12.1</b> Bootstrap</a></li>
+<li class="chapter" data-level="12.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#analysis-of-clustered-data"><i class="fa fa-check"></i><b>12.2</b> Analysis of clustered data</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#linear-mixed-effects-models"><i class="fa fa-check"></i><b>12.2.1</b> Linear Mixed Effects Models</a></li>
+<li class="chapter" data-level="12.2.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#generalized-estimation-equations-gee-models"><i class="fa fa-check"></i><b>12.2.2</b> Generalized Estimation Equations (GEE) models</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#non-linear-effects"><i class="fa fa-check"></i><b>12.3</b> Non-linear effects</a></li>
+<li class="chapter" data-level="12.4" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#epi-packages--epitab"><i class="fa fa-check"></i><b>12.4</b> Epi packages- Epitab()</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An introduction to R for McGill Epidemiology and Public Health students</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="survival-analysis" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Survival analysis</h1>
+<p>In this lecture, we will describe the survival analysis in R. The R package named survival is used to carry out survival analysis. The package implements a large number of advanced techniques. It contains the function Surv() which defines a survival object, coxph() which runs a cox proportional hazards regression and survfit() to fit a survival curve to a model or formula. To be specific, we will illustrate how to create the response variable, the Kaplan-Meier estimate, the cumulative hazard, the log-rank test and the regularly used Cox proportional hazards model</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(survival)</code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;survival&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:boot&#39;:
+## 
+##     aml</code></pre>
+<p>We use the data set lung in package survival.It depicts survival in patients with advanced lung cancer from the North Central Cancer Treatment Group. The variables are listed below:</p>
+<p>inst: Institution code time: Survival time in days status: censoring status 1=censored, 2=dead age: Age in years sex: Male=1 Female=2 ph.ecog: ECOG performance score (0=good 5=dead) ph.karno: Karnofsky performance score (bad=0-good=100) rated by physician pat.karno: Karnofsky performance score as rated by patient meal.cal: Calories consumed at meals wt.loss: Weight loss in last six months</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(lung)</code></pre></div>
+<pre><code>##  [1] &quot;inst&quot;      &quot;time&quot;      &quot;status&quot;    &quot;age&quot;       &quot;sex&quot;      
+##  [6] &quot;ph.ecog&quot;   &quot;ph.karno&quot;  &quot;pat.karno&quot; &quot;meal.cal&quot;  &quot;wt.loss&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(lung)</code></pre></div>
+<pre><code>##   inst time status age sex ph.ecog ph.karno pat.karno meal.cal wt.loss
+## 1    3  306      2  74   1       1       90       100     1175      NA
+## 2    3  455      2  68   1       0       90        90     1225      15
+## 3    3 1010      1  56   1       0       90        90       NA      15
+## 4    5  210      2  57   1       1       90        60     1150      11
+## 5    1  883      2  60   1       0      100        90       NA       0
+## 6   12 1022      1  74   1       1       50        80      513       0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dim</span>(lung)</code></pre></div>
+<pre><code>## [1] 228  10</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Let&#39;s recode the status to make 1 for death and 0 for censored</span>
+mydata&lt;-lung
+mydata<span class="op">$</span>status&lt;-<span class="kw">ifelse</span>(lung<span class="op">$</span>status<span class="op">==</span><span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>)
+<span class="co">#For illustration purpose, we only use the complete cases in the dataset</span>
+mydata&lt;-mydata[<span class="kw">complete.cases</span>(mydata),]
+<span class="kw">head</span>(mydata)</code></pre></div>
+<pre><code>##   inst time status age sex ph.ecog ph.karno pat.karno meal.cal wt.loss
+## 2    3  455      1  68   1       0       90        90     1225      15
+## 4    5  210      1  57   1       1       90        60     1150      11
+## 6   12 1022      0  74   1       1       50        80      513       0
+## 7    7  310      1  68   2       2       70        60      384      10
+## 8   11  361      1  71   2       2       60        80      538       1
+## 9    1  218      1  53   1       1       70        80      825      16</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">attach</span>(mydata)</code></pre></div>
+<pre><code>## The following object is masked _by_ .GlobalEnv:
+## 
+##     age</code></pre>
+<div id="create-the-response-variable" class="section level2">
+<h2><span class="header-section-number">11.1</span> Create the response variable</h2>
+<p>Before complex functions may be performed, the data has to be put into the proper format: a survival object.</p>
+<pre><code>Surv(time, time2, event, type)</code></pre>
+<p>Where time indicates start time, time 2 indicates stop time and type indicates whether or not an event occurred. In this case, we do not have the start and stop time. Instead, we can also use the follow-up time as an argument in the function Surv().</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">Surv</span>(time,status)</code></pre></div>
+<pre><code>##   [1]  455   210  1022+  310   361   218   166   170   567   613   707 
+##  [12]   61   301    81   371   520   574   118   390    12   473    26 
+##  [23]  107    53   814   965+   93   731   460   153   433   583    95 
+##  [34]  303   519   643   765    53   246   689     5   687   345   444 
+##  [45]  223    60   163    65   821+  428   230   840+  305    11   226 
+##  [56]  426   705   363   176   791    95   196+  167   806+  284   641 
+##  [67]  147   740+  163   655    88   245    30   477   559+  450   156 
+##  [78]  529+  429   351    15   181   283    13   212   524   288   363 
+##  [89]  199   550    54   558   207    92    60   551+  293   353   267 
+## [100]  511+  457   337   201   404+  222    62   458+  353   163    31 
+## [111]  229   156   291   179   376+  384+  268   292+  142   413+  266+
+## [122]  320   181   285   301+  348   197   382+  303+  296+  180   145 
+## [133]  269+  300+  284+  292+  332+  285   259+  110   286   270   225+
+## [144]  269   225+  243+  276+  135    79    59   240+  202+  235+  239 
+## [155]  252+  221+  185+  222+  183   211+  175+  197+  203+  191+  105+
+## [166]  174+  177+</code></pre>
+<p>We can find that the time is put into a survival format, with “+” indicating right censoring data.</p>
+</div>
+<div id="kaplan-meier-estimate" class="section level2">
+<h2><span class="header-section-number">11.2</span> Kaplan-Meier estimate</h2>
+<p>The Kaplan–Meier estimator can be used to estimate the survival function in the presence of right censoring. The function survfit() is used to find the Kaplan-Meier estimate of the survival function. There are three arguments: formula, conf.int, and conf.type. “formula” refers to a survival object , and it is the only required input.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fit1&lt;-<span class="kw">survfit</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span><span class="dv">1</span>)<span class="co">#The formula Surv(time,status)~1 instructs the survfit() function to fit a model with intercept only, and produces the Kaplan-Meier estimate</span>
+<span class="kw">print</span>(fit1)</code></pre></div>
+<pre><code>## Call: survfit(formula = Surv(time, status) ~ 1)
+## 
+##       n  events  median 0.95LCL 0.95UCL 
+##     167     120     310     285     371</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">##The output is not very informative. We can see a couple of summary statistics and an estimate of the median survival, as well as it confidence intervals.
+
+<span class="co">#To see the actual Kaplan–Meier estimate, we can use summary() function. </span>
+<span class="kw">summary</span> (fit1)<span class="co">#for simplicity, we only show the first 10 results for summary().</span></code></pre></div>
+<pre><code>## Call: survfit(formula = Surv(time, status) ~ 1)
+## 
+##  time n.risk n.event survival std.err lower 95% CI upper 95% CI
+##     5    167       1   0.9940 0.00597       0.9824        1.000
+##    11    166       1   0.9880 0.00842       0.9717        1.000
+##    12    165       1   0.9820 0.01028       0.9621        1.000
+##    13    164       1   0.9760 0.01183       0.9531        1.000
+##    15    163       1   0.9701 0.01319       0.9446        0.996
+##    26    162       1   0.9641 0.01440       0.9363        0.993
+##    30    161       1   0.9581 0.01551       0.9282        0.989
+##    31    160       1   0.9521 0.01653       0.9203        0.985
+##    53    159       2   0.9401 0.01836       0.9048        0.977
+##    54    157       1   0.9341 0.01919       0.8973        0.973
+##    59    156       1   0.9281 0.01998       0.8898        0.968
+##    60    155       2   0.9162 0.02145       0.8751        0.959
+##    61    153       1   0.9102 0.02213       0.8678        0.955
+##    62    152       1   0.9042 0.02278       0.8606        0.950
+##    65    151       1   0.8982 0.02340       0.8535        0.945
+##    79    150       1   0.8922 0.02400       0.8464        0.941
+##    81    149       1   0.8862 0.02457       0.8394        0.936
+##    88    148       1   0.8802 0.02512       0.8323        0.931
+##    92    147       1   0.8743 0.02566       0.8254        0.926
+##    93    146       1   0.8683 0.02617       0.8185        0.921
+##    95    145       2   0.8563 0.02715       0.8047        0.911
+##   107    142       1   0.8503 0.02762       0.7978        0.906
+##   110    141       1   0.8442 0.02807       0.7910        0.901
+##   118    140       1   0.8382 0.02851       0.7841        0.896
+##   135    139       1   0.8322 0.02894       0.7773        0.891
+##   142    138       1   0.8261 0.02935       0.7706        0.886
+##   145    137       1   0.8201 0.02975       0.7638        0.881
+##   147    136       1   0.8141 0.03013       0.7571        0.875
+##   153    135       1   0.8080 0.03051       0.7504        0.870
+##   156    134       2   0.7960 0.03122       0.7371        0.860
+##   163    132       3   0.7779 0.03221       0.7173        0.844
+##   166    129       1   0.7719 0.03252       0.7107        0.838
+##   167    128       1   0.7658 0.03282       0.7041        0.833
+##   170    127       1   0.7598 0.03311       0.6976        0.828
+##   176    124       1   0.7537 0.03341       0.6910        0.822
+##   179    122       1   0.7475 0.03370       0.6843        0.817
+##   180    121       1   0.7413 0.03398       0.6776        0.811
+##   181    120       2   0.7290 0.03452       0.6644        0.800
+##   183    118       1   0.7228 0.03478       0.6577        0.794
+##   197    114       1   0.7164 0.03505       0.6510        0.789
+##   199    112       1   0.7101 0.03531       0.6441        0.783
+##   201    111       1   0.7037 0.03557       0.6373        0.777
+##   207    108       1   0.6971 0.03583       0.6303        0.771
+##   210    107       1   0.6906 0.03608       0.6234        0.765
+##   212    105       1   0.6840 0.03633       0.6164        0.759
+##   218    104       1   0.6775 0.03658       0.6094        0.753
+##   222    102       1   0.6708 0.03681       0.6024        0.747
+##   223    100       1   0.6641 0.03705       0.5953        0.741
+##   226     97       1   0.6573 0.03730       0.5881        0.735
+##   229     96       1   0.6504 0.03753       0.5809        0.728
+##   230     95       1   0.6436 0.03776       0.5737        0.722
+##   239     93       1   0.6367 0.03798       0.5664        0.716
+##   245     90       1   0.6296 0.03821       0.5590        0.709
+##   246     89       1   0.6225 0.03843       0.5516        0.703
+##   267     85       1   0.6152 0.03867       0.5439        0.696
+##   268     84       1   0.6079 0.03890       0.5362        0.689
+##   269     83       1   0.6005 0.03911       0.5286        0.682
+##   270     81       1   0.5931 0.03933       0.5208        0.675
+##   283     79       1   0.5856 0.03954       0.5130        0.668
+##   284     78       1   0.5781 0.03974       0.5052        0.661
+##   285     76       2   0.5629 0.04012       0.4895        0.647
+##   286     74       1   0.5553 0.04029       0.4817        0.640
+##   288     73       1   0.5477 0.04045       0.4739        0.633
+##   291     72       1   0.5401 0.04060       0.4661        0.626
+##   293     69       1   0.5322 0.04076       0.4581        0.618
+##   301     66       1   0.5242 0.04093       0.4498        0.611
+##   303     64       1   0.5160 0.04110       0.4414        0.603
+##   305     62       1   0.5077 0.04127       0.4329        0.595
+##   310     61       1   0.4993 0.04143       0.4244        0.588
+##   320     60       1   0.4910 0.04157       0.4160        0.580
+##   337     58       1   0.4826 0.04170       0.4074        0.572
+##   345     57       1   0.4741 0.04182       0.3988        0.564
+##   348     56       1   0.4656 0.04192       0.3903        0.555
+##   351     55       1   0.4572 0.04201       0.3818        0.547
+##   353     54       2   0.4402 0.04212       0.3650        0.531
+##   361     52       1   0.4318 0.04215       0.3566        0.523
+##   363     51       2   0.4148 0.04217       0.3399        0.506
+##   371     49       1   0.4064 0.04215       0.3316        0.498
+##   390     45       1   0.3973 0.04217       0.3227        0.489
+##   426     42       1   0.3879 0.04221       0.3134        0.480
+##   428     41       1   0.3784 0.04223       0.3041        0.471
+##   429     40       1   0.3690 0.04222       0.2948        0.462
+##   433     39       1   0.3595 0.04218       0.2856        0.452
+##   444     38       1   0.3500 0.04212       0.2765        0.443
+##   450     37       1   0.3406 0.04203       0.2674        0.434
+##   455     36       1   0.3311 0.04192       0.2584        0.424
+##   457     35       1   0.3217 0.04177       0.2494        0.415
+##   460     33       1   0.3119 0.04163       0.2401        0.405
+##   473     32       1   0.3022 0.04145       0.2309        0.395
+##   477     31       1   0.2924 0.04124       0.2218        0.386
+##   519     29       1   0.2823 0.04104       0.2123        0.375
+##   520     28       1   0.2722 0.04079       0.2030        0.365
+##   524     27       1   0.2622 0.04051       0.1937        0.355
+##   550     25       1   0.2517 0.04022       0.1840        0.344
+##   558     23       1   0.2407 0.03993       0.1739        0.333
+##   567     21       1   0.2293 0.03964       0.1634        0.322
+##   574     20       1   0.2178 0.03928       0.1529        0.310
+##   583     19       1   0.2063 0.03885       0.1427        0.298
+##   613     18       1   0.1949 0.03835       0.1325        0.287
+##   641     17       1   0.1834 0.03777       0.1225        0.275
+##   643     16       1   0.1720 0.03711       0.1126        0.262
+##   655     15       1   0.1605 0.03636       0.1029        0.250
+##   687     14       1   0.1490 0.03552       0.0934        0.238
+##   689     13       1   0.1376 0.03459       0.0840        0.225
+##   705     12       1   0.1261 0.03355       0.0749        0.212
+##   707     11       1   0.1146 0.03240       0.0659        0.199
+##   731     10       1   0.1032 0.03112       0.0571        0.186
+##   765      8       1   0.0903 0.02979       0.0473        0.172
+##   791      7       1   0.0774 0.02818       0.0379        0.158
+##   814      5       1   0.0619 0.02646       0.0268        0.143</code></pre>
+<p>This returns the Kaplan-Meier estimator and its estimated std, and the 95% confidence interval using the log transform. Sometimes, we would be more interested in showing the Kaplan–Meier estimate graphically than numerically.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(fit1,<span class="dt">main =</span> <span class="st">&#39;Kaplan Meier Plot&#39;</span>,<span class="dt">xlab=</span><span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Survival Probability&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-237-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#If we look closely, we will see that the bands are not symmetrical around the estimate.This is because that they are on the original scale. Notice that they are constructed as a symmetric interval on the log scale. </span>
+
+<span class="kw">plot</span>(fit1,<span class="dt">conf.int=</span>F,<span class="dt">main =</span> <span class="st">&#39;Kaplan Meier Plot&#39;</span>,<span class="dt">xlab=</span><span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Survival Probability&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-237-2.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#If we want a 99% confidence interval</span>
+fit2&lt;-<span class="kw">survfit</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span><span class="dv">1</span>,<span class="dt">conf.int=</span><span class="fl">0.99</span>)
+<span class="kw">plot</span>(fit2,<span class="dt">main =</span> <span class="st">&#39;Kaplan Meier Plot with 99% Confidence Interval&#39;</span>,<span class="dt">xlab=</span><span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Survival Probability&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-237-3.png" width="672" /></p>
+<p>Notice that the confidence intervals constructed above are only pointwise confidence intervals. Confidence bands, which are bounds on an entire range of time, are a bit more generalized. That is, for a 95% confidence band, the probability that any part of the true curve is out of the confidence bands is 0.05. The confBands() function from the OIsurv package is employed.</p>
+<pre><code>install.packages(&quot;OIsurv&quot;)</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(OIsurv)</code></pre></div>
+<pre><code>## Loading required package: KMsurv</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cb &lt;-<span class="st"> </span><span class="kw">confBands</span>(<span class="kw">Surv</span>(time,status), <span class="dt">type =</span> <span class="st">&quot;hall&quot;</span>)
+<span class="kw">plot</span>(fit1,<span class="dt">main =</span> <span class="st">&#39;Kaplan Meyer Plot with confidence bands&#39;</span>,<span class="dt">xlab=</span><span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Survival Probability&quot;</span>,<span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)
+<span class="kw">lines</span>(cb, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>,<span class="dt">lty =</span><span class="dv">3</span>)
+<span class="kw">legend</span>(<span class="dv">500</span>, <span class="fl">0.99</span>, <span class="dt">legend =</span> <span class="kw">c</span>(<span class="st">&#39;K-M survival estimate&#39;</span>,
+<span class="st">&#39;pointwise intervals&#39;</span>, <span class="st">&#39;Hall-Werner conf bands&#39;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;red&quot;</span>),<span class="dt">lty =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-238-1.png" width="672" /></p>
+<p>Often, we wish to plot two or more survival functions on the same plot so that we can compare them directly. For instance, if we want to obtain survival functions split by sex, do the following:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">surv.bysex &lt;-<span class="st"> </span><span class="kw">survfit</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex)
+<span class="kw">plot</span>(surv.bysex,<span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>),<span class="dt">xlab=</span><span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Survival Probability&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Comparing Survival functions between male and female&quot;</span>)
+<span class="kw">legend</span>(<span class="dv">700</span>,<span class="fl">0.6</span>,<span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;male&quot;</span>,<span class="st">&quot;female&quot;</span>),<span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-239-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#It indicates that the females have a higher survival probability than the males at each time point during the follow-up.</span></code></pre></div>
+<p>Notice that there are no confidence intervals on the curves. By default, they are not shown when there are more than two curves to avoid confusing display. However, we can show them by passing conf.int=T to plot.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">surv.bysex &lt;-<span class="st"> </span><span class="kw">survfit</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex)
+<span class="kw">plot</span>(surv.bysex,<span class="dt">conf.int=</span>T,<span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;red&quot;</span>,<span class="st">&quot;green&quot;</span>),<span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))
+<span class="kw">legend</span>(<span class="dv">700</span>,<span class="fl">0.6</span>,<span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;male&quot;</span>,<span class="st">&quot;female&quot;</span>),<span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;red&quot;</span>,<span class="st">&quot;green&quot;</span>),<span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-240-1.png" width="672" /></p>
+</div>
+<div id="cumulative-hazard" class="section level2">
+<h2><span class="header-section-number">11.3</span> Cumulative hazard</h2>
+<p>To obtain the cumulative hazard:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fit1&lt;-<span class="kw">survfit</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span><span class="dv">1</span>)
+myfit&lt;-<span class="kw">summary</span> (fit1)
+H.hat &lt;-<span class="st"> </span><span class="op">-</span><span class="kw">log</span>(myfit<span class="op">$</span>surv) 
+H.hat &lt;-<span class="st"> </span><span class="kw">c</span>(H.hat, H.hat[<span class="kw">length</span>(H.hat)])
+<span class="kw">plot</span>(<span class="kw">c</span>(myfit<span class="op">$</span>time, <span class="dv">1000</span>), H.hat, <span class="dt">xlab=</span><span class="st">&quot;Follow-up Time&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Cumulative Hazard&quot;</span>,<span class="dt">main=</span><span class="st">&quot;Cumulative Hazards of Death&quot;</span>, <span class="dt">ylim=</span><span class="kw">range</span>(H.hat), <span class="dt">type=</span><span class="st">&quot;s&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-241-1.png" width="672" /></p>
+</div>
+<div id="the-log-rank-test" class="section level2">
+<h2><span class="header-section-number">11.4</span> The log-rank test</h2>
+<p>The log-rank test is used to test whether there is a difference between the survival times between two or more samples. It is based on looking at the population at each death time and computing the expected number of deaths in proportion to the number of individuals at risk in each group. This is then summed over all death times and compared with the observed number of deaths by a procedure similar to the χ2 test. This is done by:</p>
+<pre><code>survdiff(formula, rho=0)</code></pre>
+<p>The first argument is a survival object against a categorical covariate variable that is typically a variable designating which groups correspond to which survival times. The second argument designates the weights. The default is rho=0, which corresponds to the log-rank test. When rho=1, this is the ”Peto &amp; Peto modification of the Gehan-Wilcoxon test”.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">survdiff</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex)</code></pre></div>
+<pre><code>## Call:
+## survdiff(formula = Surv(time, status) ~ sex)
+## 
+##         N Observed Expected (O-E)^2/E (O-E)^2/V
+## sex=1 103       82     68.7      2.57      6.05
+## sex=2  64       38     51.3      3.44      6.05
+## 
+##  Chisq= 6  on 1 degrees of freedom, p= 0.0139</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#This shows that there is a significantly statistical difference between survival time for male and female.</span></code></pre></div>
+</div>
+<div id="cox-proportional-hazards-model" class="section level2">
+<h2><span class="header-section-number">11.5</span> Cox Proportional Hazards Model</h2>
+<p>The proportional hazards model allows the analysis of survival data by regression models similar to those of lm and glm. The scale on which linearity is assumed is the log-hazard scale. The function coxph() fits a Cox PH model to the supplied data. The two arguments of particular interest are formula and method. formula will be almost identical to fitting a linear model except that the response variable will be a survival object instead of a vector.</p>
+<div id="regular-cox-proportional-hazards-model" class="section level3">
+<h3><span class="header-section-number">11.5.1</span> Regular Cox proportional hazards model</h3>
+<p>Let’s first consider a model with single regressor sex:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mycox&lt;-<span class="kw">coxph</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex)
+<span class="kw">summary</span>(mycox)</code></pre></div>
+<pre><code>## Call:
+## coxph(formula = Surv(time, status) ~ sex)
+## 
+##   n= 167, number of events= 120 
+## 
+##        coef exp(coef) se(coef)      z Pr(&gt;|z|)  
+## sex -0.4792    0.6193   0.1966 -2.437   0.0148 *
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##     exp(coef) exp(-coef) lower .95 upper .95
+## sex    0.6193      1.615    0.4212    0.9104
+## 
+## Concordance= 0.567  (se = 0.026 )
+## Rsquare= 0.037   (max possible= 0.998 )
+## Likelihood ratio test= 6.25  on 1 df,   p=0.01244
+## Wald test            = 5.94  on 1 df,   p=0.01479
+## Score (logrank) test = 6.05  on 1 df,   p=0.01387</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mycox<span class="op">$</span>coefficients </code></pre></div>
+<pre><code>##        sex 
+## -0.4792368</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mycox<span class="op">$</span>var <span class="co">#  estimated cov matrix of the estimates</span></code></pre></div>
+<pre><code>##            [,1]
+## [1,] 0.03865662</code></pre>
+<p>The coef is the estimated logarithm of the hazard ratio between the two groups, the exp(coef) denotes the hazard ratio. Next it also shows the standard errors, z values and p-values for each test. The line following that gives the inverted ratio and confidence intervals for the hazard ratio. Finally, three overall tests for significant effects in the model are given. Notice that the Wald test is identical to the z test based on the estimated coefficient divided by its standard error, whereas the score test is equivalent to the log-rank test when the model involves only a simple grouping.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#The default method to handle ties is Efron, we can also choose to use Breslow:</span>
+<span class="kw">summary</span>(<span class="kw">coxph</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex, <span class="dt">method=</span><span class="st">&quot;breslow&quot;</span>))</code></pre></div>
+<pre><code>## Call:
+## coxph(formula = Surv(time, status) ~ sex, method = &quot;breslow&quot;)
+## 
+##   n= 167, number of events= 120 
+## 
+##        coef exp(coef) se(coef)      z Pr(&gt;|z|)  
+## sex -0.4784    0.6198   0.1966 -2.433    0.015 *
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##     exp(coef) exp(-coef) lower .95 upper .95
+## sex    0.6198      1.614    0.4216    0.9111
+## 
+## Concordance= 0.567  (se = 0.026 )
+## Rsquare= 0.037   (max possible= 0.998 )
+## Likelihood ratio test= 6.23  on 1 df,   p=0.01259
+## Wald test            = 5.92  on 1 df,   p=0.01496
+## Score (logrank) test = 6.03  on 1 df,   p=0.01403</code></pre>
+<p>To obtain the baseline survival function from a Cox PH model, apply survfit() to coxph():</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my.survfit.object &lt;-<span class="st"> </span><span class="kw">survfit</span>(mycox)
+<span class="co">#Plot the baseline survival function</span>
+<span class="kw">plot</span>(my.survfit.object,<span class="dt">xlab=</span><span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab =</span> <span class="st">&quot;Proportion survived&quot;</span>,
+     <span class="dt">main =</span> <span class="st">&quot;Baseline Survival Curve&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-245-1.png" width="672" /></p>
+<p>Let’s next fit a more coxplex model:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">names</span>(mydata)</code></pre></div>
+<pre><code>##  [1] &quot;inst&quot;      &quot;time&quot;      &quot;status&quot;    &quot;age&quot;       &quot;sex&quot;      
+##  [6] &quot;ph.ecog&quot;   &quot;ph.karno&quot;  &quot;pat.karno&quot; &quot;meal.cal&quot;  &quot;wt.loss&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata<span class="op">$</span>ph.ecog&lt;-<span class="kw">factor</span>(mydata<span class="op">$</span>ph.ecog)
+mycox.<span class="dv">2</span>&lt;-<span class="kw">coxph</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex<span class="op">+</span>age<span class="op">+</span>ph.ecog<span class="op">+</span>ph.karno<span class="op">+</span>meal.cal<span class="op">+</span>wt.loss, <span class="dt">data =</span> mydata)
+<span class="kw">summary</span>(mycox.<span class="dv">2</span>)</code></pre></div>
+<pre><code>## Call:
+## coxph(formula = Surv(time, status) ~ sex + age + ph.ecog + ph.karno + 
+##     meal.cal + wt.loss, data = mydata)
+## 
+##   n= 167, number of events= 120 
+## 
+##                coef  exp(coef)   se(coef)      z Pr(&gt;|z|)    
+## sex      -5.627e-01  5.696e-01  2.019e-01 -2.787 0.005327 ** 
+## age       9.849e-03  1.010e+00  1.168e-02  0.843 0.399089    
+## ph.ecog1  6.635e-01  1.942e+00  2.808e-01  2.363 0.018123 *  
+## ph.ecog2  1.649e+00  5.201e+00  4.397e-01  3.750 0.000177 ***
+## ph.ecog3  2.850e+00  1.729e+01  1.121e+00  2.543 0.010994 *  
+## ph.karno  2.027e-02  1.020e+00  1.123e-02  1.805 0.071095 .  
+## meal.cal -2.477e-05  1.000e+00  2.593e-04 -0.096 0.923883    
+## wt.loss  -1.242e-02  9.877e-01  7.757e-03 -1.601 0.109415    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##          exp(coef) exp(-coef) lower .95 upper .95
+## sex         0.5696    1.75548    0.3834    0.8463
+## age         1.0099    0.99020    0.9870    1.0333
+## ph.ecog1    1.9416    0.51503    1.1198    3.3665
+## ph.ecog2    5.2009    0.19227    2.1969   12.3125
+## ph.ecog3   17.2928    0.05783    1.9220  155.5857
+## ph.karno    1.0205    0.97994    0.9983    1.0432
+## meal.cal    1.0000    1.00002    0.9995    1.0005
+## wt.loss     0.9877    1.01250    0.9728    1.0028
+## 
+## Concordance= 0.641  (se = 0.031 )
+## Rsquare= 0.149   (max possible= 0.998 )
+## Likelihood ratio test= 26.85  on 8 df,   p=0.0007492
+## Wald test            = 27.37  on 8 df,   p=0.0006113
+## Score (logrank) test = 29.34  on 8 df,   p=0.0002761</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#We can find that only sex, ph.ecog are significantly meaningful variables.</span>
+mycox.<span class="dv">3</span>&lt;-<span class="kw">coxph</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex<span class="op">+</span>ph.ecog, <span class="dt">data =</span> mydata)
+<span class="kw">summary</span>(mycox.<span class="dv">3</span>)</code></pre></div>
+<pre><code>## Call:
+## coxph(formula = Surv(time, status) ~ sex + ph.ecog, data = mydata)
+## 
+##   n= 167, number of events= 120 
+## 
+##             coef exp(coef) se(coef)      z Pr(&gt;|z|)    
+## sex      -0.4998    0.6067   0.1974 -2.532 0.011353 *  
+## ph.ecog1  0.3206    1.3780   0.2331  1.375 0.168983    
+## ph.ecog2  0.9185    2.5056   0.2608  3.521 0.000429 ***
+## ph.ecog3  1.9973    7.3694   1.0357  1.929 0.053789 .  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##          exp(coef) exp(-coef) lower .95 upper .95
+## sex         0.6067     1.6483    0.4120    0.8933
+## ph.ecog1    1.3780     0.7257    0.8726    2.1759
+## ph.ecog2    2.5056     0.3991    1.5028    4.1777
+## ph.ecog3    7.3694     0.1357    0.9680   56.1056
+## 
+## Concordance= 0.646  (se = 0.03 )
+## Rsquare= 0.115   (max possible= 0.998 )
+## Likelihood ratio test= 20.39  on 4 df,   p=0.000418
+## Wald test            = 21.86  on 4 df,   p=0.0002137
+## Score (logrank) test = 23.52  on 4 df,   p=9.946e-05</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Let&#39;s see whether the above two models make a lot difference</span>
+<span class="kw">anova</span>(mycox.<span class="dv">2</span>,mycox.<span class="dv">3</span>)</code></pre></div>
+<pre><code>## Analysis of Deviance Table
+##  Cox model: response is  Surv(time, status)
+##  Model 1: ~ sex + age + ph.ecog + ph.karno + meal.cal + wt.loss
+##  Model 2: ~ sex + ph.ecog
+##    loglik Chisq Df P(&gt;|Chi|)
+## 1 -494.69                   
+## 2 -497.92 6.463  4    0.1671</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#it shows that model 2(the full model) is not significantly better than model 3(the reduced model)</span>
+<span class="kw">plot</span>(<span class="kw">survfit</span>(mycox.<span class="dv">3</span>),<span class="dt">main=</span><span class="st">&quot;Baseline Survival Curve with 95% Confidence Interval&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/test1-1.png" width="672" /></p>
+<p>Let’s plot the effect of sex:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#we need to first build a dataframe for the effect levels we want to look at holding other covariates constant( at their lowest level (or means if they are continuous)).</span>
+<span class="co">#new&lt;- data.frame(sex = 1:2,ph.ecog = rep(levels(ph.ecog)[1],2))</span>
+new &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">sex =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>,<span class="dt">ph.ecog =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>))
+<span class="kw">print</span>(new)</code></pre></div>
+<pre><code>##   sex ph.ecog
+## 1   1       0
+## 2   2       0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">new<span class="op">$</span>ph.ecog &lt;-<span class="st"> </span><span class="kw">as.factor</span>(new<span class="op">$</span>ph.ecog)
+<span class="kw">str</span>(new)</code></pre></div>
+<pre><code>## &#39;data.frame&#39;:    2 obs. of  2 variables:
+##  $ sex    : int  1 2
+##  $ ph.ecog: Factor w/ 1 level &quot;0&quot;: 1 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#plot the effects</span>
+<span class="kw">plot</span>(<span class="kw">survfit</span>(mycox.<span class="dv">3</span>, <span class="dt">newdata =</span> new),<span class="dt">conf.int =</span> <span class="ot">TRUE</span>,<span class="dt">xlab =</span> <span class="st">&quot;Follow-up time&quot;</span>,<span class="dt">ylab =</span> <span class="st">&quot;Proportion survived&quot;</span>,<span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;green&quot;</span>))
+<span class="kw">legend</span>(<span class="dv">120</span>, <span class="fl">0.4</span>, <span class="dt">legend =</span> <span class="kw">c</span>(<span class="st">&quot;female&quot;</span>, <span class="st">&quot;male&quot;</span>), <span class="dt">lty =</span> <span class="dv">1</span>,<span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;green&quot;</span>,<span class="st">&quot;red&quot;</span>))</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-246-1.png" width="672" /></p>
+</div>
+<div id="test-for-proportional-hazards" class="section level3">
+<h3><span class="header-section-number">11.5.2</span> Test for proportional hazards</h3>
+<p>When we are using the Cox proportional hazards model, we are assuming that the hazards are proportional.To test this, we can use:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cox.zph</span>(mycox.<span class="dv">3</span>)</code></pre></div>
+<pre><code>##              rho  chisq      p
+## sex       0.1160 1.5517 0.2129
+## ph.ecog1 -0.0560 0.3702 0.5429
+## ph.ecog2 -0.2027 4.7314 0.0296
+## ph.ecog3  0.0107 0.0138 0.9066
+## GLOBAL        NA 7.0279 0.1344</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## Note this is very conservative!</code></pre></div>
+<p>It is often better to check the graphs for systematic trends:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#To view easily, let’s show them on two plots.</span>
+a &lt;-<span class="st"> </span><span class="kw">cox.zph</span>(mycox.<span class="dv">3</span>)
+<span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))
+<span class="kw">plot</span>(a[<span class="dv">1</span>], <span class="dt">main =</span> <span class="st">&quot;Sex&quot;</span>)
+<span class="kw">plot</span>(a[<span class="dv">2</span>], <span class="dt">main =</span> <span class="st">&quot;ECOG performance score=1&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-248-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(<span class="dt">mfrow =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))
+<span class="kw">plot</span>(a[<span class="dv">3</span>], <span class="dt">main =</span> <span class="st">&quot;ECOG performance score=2&quot;</span>)
+<span class="kw">plot</span>(a[<span class="dv">4</span>], <span class="dt">main =</span> <span class="st">&quot;ECOG performance score=3&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-248-2.png" width="672" /></p>
+<p>As we can see in above results, all of the variables seem to satisfy the proportional hazards assumption. To explain the non-proportional hazards, let’s hypothetically assume that the variable sex cannot meet the proportional hazards assumption. There are a number of approaches to account for the non-proportional hazards.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Option 1: Include an interaction with time for the variables</span>
+mycox.<span class="dv">4</span>&lt;-<span class="kw">coxph</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>sex<span class="op">+</span>ph.ecog<span class="op">+</span>sex<span class="op">*</span>time)</code></pre></div>
+<pre><code>## Warning in coxph(Surv(time, status) ~ sex + ph.ecog + sex * time): a
+## variable appears on both the left and right sides of the formula</code></pre>
+<pre><code>## Warning in fitter(X, Y, strats, offset, init, control, weights = weights, :
+## Loglik converged before variable 1,2,3,4 ; beta may be infinite.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(mycox.<span class="dv">4</span>)</code></pre></div>
+<pre><code>## Call:
+## coxph(formula = Surv(time, status) ~ sex + ph.ecog + sex * time)
+## 
+##   n= 167, number of events= 120 
+## 
+##               coef exp(coef)  se(coef)      z Pr(&gt;|z|)    
+## sex      -0.868732  0.419483  0.822631 -1.056    0.291    
+## ph.ecog   0.260105  1.297067  0.260575  0.998    0.318    
+## time     -0.999574  0.368036  0.156881 -6.372 1.87e-10 ***
+## sex:time  0.002014  1.002016  0.002629  0.766    0.444    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##          exp(coef) exp(-coef) lower .95 upper .95
+## sex         0.4195      2.384   0.08365    2.1035
+## ph.ecog     1.2971      0.771   0.77832    2.1615
+## time        0.3680      2.717   0.27062    0.5005
+## sex:time    1.0020      0.998   0.99687    1.0072
+## 
+## Concordance= 1  (se = 0.031 )
+## Rsquare= 0.997   (max possible= 0.998 )
+## Likelihood ratio test= 961.2  on 4 df,   p=0
+## Wald test            = 41.78  on 4 df,   p=1.855e-08
+## Score (logrank) test = 190.3  on 4 df,   p=0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#As actually sex is proportional, the interaction term returns a p value&gt;0.05.</span>
+<span class="co">#It only makes sense when they have a linear interaction between the covariate and time. We can also transform time to log(time), or use a function of time, for instance, B-spline based function.</span>
+
+<span class="co">#Option 2: Stratified by the variate</span>
+mycox.<span class="dv">5</span>&lt;-<span class="kw">coxph</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span>ph.ecog<span class="op">+</span><span class="kw">strata</span>(sex))
+<span class="kw">summary</span>(mycox.<span class="dv">5</span>)</code></pre></div>
+<pre><code>## Call:
+## coxph(formula = Surv(time, status) ~ ph.ecog + strata(sex))
+## 
+##   n= 167, number of events= 120 
+## 
+##           coef exp(coef) se(coef)     z Pr(&gt;|z|)    
+## ph.ecog 0.4832    1.6212   0.1340 3.606 0.000311 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##         exp(coef) exp(-coef) lower .95 upper .95
+## ph.ecog     1.621     0.6168     1.247     2.108
+## 
+## Concordance= 0.622  (se = 0.038 )
+## Rsquare= 0.075   (max possible= 0.994 )
+## Likelihood ratio test= 13  on 1 df,   p=0.0003117
+## Wald test            = 13  on 1 df,   p=0.000311
+## Score (logrank) test = 13.2  on 1 df,   p=0.0002798</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Each strata has a different baseline hazard function but the remaining covariates are assumed to be constant. This approach does not assume a linear relationship. But we cannot examine the effects of the stratification variable, sex here.</span>
+
+<span class="co">#However, we can plot it</span>
+<span class="kw">plot</span>(<span class="kw">survfit</span>(mycox.<span class="dv">5</span>), <span class="dt">col =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>,<span class="dt">main=</span><span class="st">&quot;Survival Probability stratified by sex&quot;</span>)
+<span class="kw">legend</span>(<span class="dv">700</span>, <span class="fl">0.6</span>, <span class="dt">legend =</span> <span class="kw">c</span>(<span class="st">&quot;male&quot;</span>,<span class="st">&quot;female&quot;</span>), <span class="dt">lty =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">2</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-249-1.png" width="672" /></p>
+<p>There are many advanced methods we can use to handle proportional hazards assumption. We will not explain here in detail.</p>
+<p>Finally, let’s plot the survival curves computed for Kaplan-Meier and cox proportional hazards models (model on the same graph.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fit1&lt;-<span class="kw">survfit</span>(<span class="kw">Surv</span>(time,status)<span class="op">~</span><span class="dv">1</span>)
+km &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="st">&quot;KM&quot;</span>, <span class="kw">length</span>(fit1<span class="op">$</span>time))
+km_df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(fit1<span class="op">$</span>time,fit1<span class="op">$</span>surv,km)
+<span class="kw">names</span>(km_df) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Time&quot;</span>,<span class="st">&quot;Surv&quot;</span>,<span class="st">&quot;Model&quot;</span>)
+
+fit2&lt;-<span class="kw">survfit</span>(mycox.<span class="dv">2</span>)
+Coxfullmodel &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="st">&quot;Coxfullmodel&quot;</span>,<span class="kw">length</span>(fit2<span class="op">$</span>time))
+cox_df.full &lt;-<span class="st"> </span><span class="kw">data.frame</span>(fit2<span class="op">$</span>time,fit2<span class="op">$</span>surv,Coxfullmodel)
+<span class="kw">names</span>(cox_df.full) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Time&quot;</span>,<span class="st">&quot;Surv&quot;</span>,<span class="st">&quot;Model&quot;</span>)
+
+fit3&lt;-<span class="kw">survfit</span>(mycox.<span class="dv">3</span>)
+Coxreducedmodel &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="st">&quot;Coxreducedmodel&quot;</span>,<span class="kw">length</span>(fit3<span class="op">$</span>time))
+cox_df.reduced &lt;-<span class="st"> </span><span class="kw">data.frame</span>(fit3<span class="op">$</span>time,fit3<span class="op">$</span>surv,Coxreducedmodel)
+<span class="kw">names</span>(cox_df.reduced) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Time&quot;</span>,<span class="st">&quot;Surv&quot;</span>,<span class="st">&quot;Model&quot;</span>)
+plot_df &lt;-<span class="st"> </span><span class="kw">rbind</span>(km_df,cox_df.full,cox_df.reduced)
+
+<span class="kw">library</span>(ggplot2)
+p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(plot_df, <span class="kw">aes</span>(<span class="dt">x =</span> Time, <span class="dt">y =</span> Surv, <span class="dt">color =</span> Model))
+p <span class="op">+</span><span class="st"> </span><span class="kw">geom_line</span>() <span class="op">+</span><span class="st"> </span><span class="kw">ggtitle</span>(<span class="st">&quot;Comparison of Survival Curves&quot;</span>) </code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-250-1.png" width="672" /></p>
+<p>We may see few differences between the three survival curves.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="regressions-with-r-linear-regression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/10-Survival.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

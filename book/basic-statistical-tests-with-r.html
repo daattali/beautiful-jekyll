@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>An introduction to R for McGill Epidemiology and Public Health students</title>
+  <meta name="description" content="Introduction to R for McGill Epidemiology and Public Health students">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  
+  <meta name="twitter:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  
+
+<meta name="author" content="Fei Wang &amp; Jay Brophy">
+
+
+<meta name="date" content="2018-01-05">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html">
+<link rel="next" href="regressions-with-r-linear-regression.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html"><i class="fa fa-check"></i><b>2</b> An overview of R: part I {ch2}</a><ul>
+<li class="chapter" data-level="2.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#basic-computations-in-r"><i class="fa fa-check"></i><b>2.1</b> Basic computations in R</a></li>
+<li class="chapter" data-level="2.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#create-an-object"><i class="fa fa-check"></i><b>2.2</b> Create an object</a></li>
+<li class="chapter" data-level="2.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#operators"><i class="fa fa-check"></i><b>2.3</b> Operators</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arithmetic-operators"><i class="fa fa-check"></i><b>2.3.1</b> 2.3.1 Arithmetic operators</a></li>
+<li class="chapter" data-level="2.3.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#relational-operators"><i class="fa fa-check"></i><b>2.3.2</b> Relational operators</a></li>
+<li class="chapter" data-level="2.3.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#logical-operators"><i class="fa fa-check"></i><b>2.3.3</b> Logical operators</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#generate-data"><i class="fa fa-check"></i><b>2.4</b> Generate data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#regular-sequences"><i class="fa fa-check"></i><b>2.4.1</b> Regular sequences</a></li>
+<li class="chapter" data-level="2.4.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#random-sequences"><i class="fa fa-check"></i><b>2.4.2</b> Random sequences</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-types"><i class="fa fa-check"></i><b>2.5</b> Data types</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#vectors"><i class="fa fa-check"></i><b>2.5.1</b> Vectors</a></li>
+<li class="chapter" data-level="2.5.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#lists"><i class="fa fa-check"></i><b>2.5.2</b> Lists</a></li>
+<li class="chapter" data-level="2.5.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#factors"><i class="fa fa-check"></i><b>2.5.3</b> Factors</a></li>
+<li class="chapter" data-level="2.5.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#matrices"><i class="fa fa-check"></i><b>2.5.4</b> Matrices</a></li>
+<li class="chapter" data-level="2.5.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arrays"><i class="fa fa-check"></i><b>2.5.5</b> Arrays</a></li>
+<li class="chapter" data-level="2.5.6" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-frames"><i class="fa fa-check"></i><b>2.5.6</b> Data Frames</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html"><i class="fa fa-check"></i><b>3</b> An overview of R: Part II {ch3}</a><ul>
+<li class="chapter" data-level="3.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#assess-the-values-of-an-object"><i class="fa fa-check"></i><b>3.1</b> Assess the values of an object</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-index-system"><i class="fa fa-check"></i><b>3.1.1</b> Using the index system</a></li>
+<li class="chapter" data-level="3.1.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-names"><i class="fa fa-check"></i><b>3.1.2</b> Using the names</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#get-the-data-into-r"><i class="fa fa-check"></i><b>3.2</b> Get the data into R</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#direct-data-entering"><i class="fa fa-check"></i><b>3.2.1</b> Direct data entering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#use-dataset-that-come-with-r-or-r-packages"><i class="fa fa-check"></i><b>3.2.2</b> Use dataset that come with R or R packages</a></li>
+<li class="chapter" data-level="3.2.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-files"><i class="fa fa-check"></i><b>3.2.3</b> Read in data files</a></li>
+<li class="chapter" data-level="3.2.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-from-the-clipboard"><i class="fa fa-check"></i><b>3.2.4</b> Read in data from the clipboard</a></li>
+<li class="chapter" data-level="3.2.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-remote-data"><i class="fa fa-check"></i><b>3.2.5</b> Read in remote data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#export-data"><i class="fa fa-check"></i><b>3.3</b> Export data</a></li>
+<li class="chapter" data-level="3.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#save-and-load-data-in-r"><i class="fa fa-check"></i><b>3.4</b> Save and load data in R</a></li>
+<li class="chapter" data-level="3.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#view-data"><i class="fa fa-check"></i><b>3.5</b> View data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html"><i class="fa fa-check"></i><b>4</b> Data management: Part I {ch4}</a><ul>
+<li class="chapter" data-level="4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#control-structure"><i class="fa fa-check"></i><b>4.1</b> Control structure</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#for-loop"><i class="fa fa-check"></i><b>4.1.1</b> For loop</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#while-loop"><i class="fa fa-check"></i><b>4.1.2</b> While Loop</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#if-else-loop"><i class="fa fa-check"></i><b>4.1.3</b> If-else Loop</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#repeat-loop"><i class="fa fa-check"></i><b>4.1.4</b> Repeat Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
+<li class="chapter" data-level="4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#dates"><i class="fa fa-check"></i><b>4.3</b> Dates</a></li>
+<li class="chapter" data-level="4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#common-useful-functions"><i class="fa fa-check"></i><b>4.4</b> Common useful functions</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#numeric-functions"><i class="fa fa-check"></i><b>4.4.1</b> Numeric functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#character-functions"><i class="fa fa-check"></i><b>4.4.2</b> Character Functions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#apply-functions-over-a-list-array-dataframe-or-matrix"><i class="fa fa-check"></i><b>4.4.3</b> Apply functions over a list, array, dataframe or matrix</a></li>
+<li class="chapter" data-level="4.4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#other-useful-functions"><i class="fa fa-check"></i><b>4.4.4</b> Other useful functions</a></li>
+<li class="chapter" data-level="4.4.5" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#write-functions"><i class="fa fa-check"></i><b>4.4.5</b> Write functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html"><i class="fa fa-check"></i><b>5</b> Data managements: Part II- Reshape data {ch4}</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#subset-data"><i class="fa fa-check"></i><b>5.1</b> Subset Data</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-variables"><i class="fa fa-check"></i><b>5.1.1</b> Select variables</a></li>
+<li class="chapter" data-level="5.1.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#exclude-variables"><i class="fa fa-check"></i><b>5.1.2</b> Exclude variables</a></li>
+<li class="chapter" data-level="5.1.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-observations"><i class="fa fa-check"></i><b>5.1.3</b> Select Observations</a></li>
+<li class="chapter" data-level="5.1.4" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-both-variables-and-observations"><i class="fa fa-check"></i><b>5.1.4</b> Select both variables and observations</a></li>
+<li class="chapter" data-level="5.1.5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keep-or-delete-variables-using-dplyr-function"><i class="fa fa-check"></i><b>5.1.5</b> Keep or delete variables using dplyr function</a></li>
+<li class="chapter" data-level="5.1.6" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keepdrop-variables-by-name-pattern"><i class="fa fa-check"></i><b>5.1.6</b> Keep/drop variables by name pattern</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data"><i class="fa fa-check"></i><b>5.2</b> Merge Data</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-casesobservations-to-a-dataset"><i class="fa fa-check"></i><b>5.2.1</b> Add cases/observations to a dataset</a></li>
+<li class="chapter" data-level="5.2.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data-frames"><i class="fa fa-check"></i><b>5.2.2</b> Merge Data Frames</a></li>
+<li class="chapter" data-level="5.2.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-more-variables-to-a-dataset"><i class="fa fa-check"></i><b>5.2.3</b> Add more variables to a dataset</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#the-reshape-package"><i class="fa fa-check"></i><b>5.3</b> The Reshape package</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html"><i class="fa fa-check"></i><b>6</b> Base Graphics with R {ch5}</a><ul>
+<li class="chapter" data-level="6.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-functions"><i class="fa fa-check"></i><b>6.1</b> Graphical functions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#high-level-graphical-functions"><i class="fa fa-check"></i><b>6.1.1</b> (1) High-level graphical functions</a></li>
+<li class="chapter" data-level="6.1.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#low-level-functions"><i class="fa fa-check"></i><b>6.1.2</b> (2) Low-level functions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-parameters"><i class="fa fa-check"></i><b>6.2</b> Graphical parameters</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#specify-within-the-high-level-function"><i class="fa fa-check"></i><b>6.2.1</b> 6.2.1 Specify within the high-level function</a></li>
+<li class="chapter" data-level="6.2.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par"><i class="fa fa-check"></i><b>6.2.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#multiple-plots-on-the-one-page"><i class="fa fa-check"></i><b>6.3</b> Multiple plots on the one page</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-layout"><i class="fa fa-check"></i><b>6.3.1</b> Function layout()</a></li>
+<li class="chapter" data-level="6.3.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par-1"><i class="fa fa-check"></i><b>6.3.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-a-plot"><i class="fa fa-check"></i><b>6.4</b> Save a plot</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-by-menu-click"><i class="fa fa-check"></i><b>6.4.1</b> Save plots by menu click</a></li>
+<li class="chapter" data-level="6.4.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-using-functions"><i class="fa fa-check"></i><b>6.4.2</b> Save plots using functions</a></li>
+<li class="chapter" data-level="6.4.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#a-common-method"><i class="fa fa-check"></i><b>6.4.3</b> (1) A common method</a></li>
+<li class="chapter" data-level="6.4.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#another-option"><i class="fa fa-check"></i><b>6.4.4</b> (2)Another option</a></li>
+<li class="chapter" data-level="6.4.5" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#saving-plots-in-a-loop"><i class="fa fa-check"></i><b>6.4.5</b> (3) Saving plots in a loop</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><i class="fa fa-check"></i><b>7</b> Descriptive statistics with R: Part I-Quantitative variables {ch6}</a><ul>
+<li class="chapter" data-level="7.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-the-whole-dataset"><i class="fa fa-check"></i><b>7.1</b> For the whole dataset</a></li>
+<li class="chapter" data-level="7.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-single-quantitative-variable"><i class="fa fa-check"></i><b>7.2</b> For a single quantitative variable</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation"><i class="fa fa-check"></i><b>7.2.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.2.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation"><i class="fa fa-check"></i><b>7.2.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-quantitative-variable-by-groups"><i class="fa fa-check"></i><b>7.3</b> For a quantitative variable by groups</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-1"><i class="fa fa-check"></i><b>7.3.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.3.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-1"><i class="fa fa-check"></i><b>7.3.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-two-quantitative-variables"><i class="fa fa-check"></i><b>7.4</b> For two quantitative variables</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-2"><i class="fa fa-check"></i><b>7.4.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-2"><i class="fa fa-check"></i><b>7.4.2</b> Graphical representation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><i class="fa fa-check"></i><b>8</b> Descriptive statistics with R: Part II-Categorical variables and ggplot</a><ul>
+<li class="chapter" data-level="8.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#numerical-representation-3"><i class="fa fa-check"></i><b>8.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="8.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#graphical-representation-3"><i class="fa fa-check"></i><b>8.2</b> Graphical representation</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#barplots"><i class="fa fa-check"></i><b>8.2.1</b> (1) Barplots</a></li>
+<li class="chapter" data-level="8.2.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#dotcharts"><i class="fa fa-check"></i><b>8.2.2</b> (2) Dotcharts</a></li>
+<li class="chapter" data-level="8.2.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#piecharts"><i class="fa fa-check"></i><b>8.2.3</b> (3) Piecharts</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#ggplot2-function"><i class="fa fa-check"></i><b>8.3</b> ggplot2 function</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#a-simple-histogram-for-a-single-quantative-variable"><i class="fa fa-check"></i><b>8.3.1</b> (1)a simple histogram for a single quantative variable</a></li>
+<li class="chapter" data-level="8.3.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-a-quantative-variable-by-groups"><i class="fa fa-check"></i><b>8.3.2</b> (2)for a quantative variable by groups</a></li>
+<li class="chapter" data-level="8.3.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-two-quantitative-variables-1"><i class="fa fa-check"></i><b>8.3.3</b> (3) for two quantitative variables</a></li>
+<li class="chapter" data-level="8.3.4" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-categorial-variable"><i class="fa fa-check"></i><b>8.3.4</b> (4) for categorial variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html"><i class="fa fa-check"></i><b>9</b> Basic statistical tests with R</a><ul>
+<li class="chapter" data-level="9.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-sample-tests"><i class="fa fa-check"></i><b>9.1</b> Two-sample tests</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#t-test"><i class="fa fa-check"></i><b>9.1.1</b> t-test</a></li>
+<li class="chapter" data-level="9.1.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-tests"><i class="fa fa-check"></i><b>9.1.2</b> Nonparametric tests</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#analysis-of-variance"><i class="fa fa-check"></i><b>9.2</b> Analysis Of Variance</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#assumptions-assessment"><i class="fa fa-check"></i><b>9.2.1</b> Assumptions assessment</a></li>
+<li class="chapter" data-level="9.2.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#parametric-test"><i class="fa fa-check"></i><b>9.2.2</b> Parametric test</a></li>
+<li class="chapter" data-level="9.2.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-test"><i class="fa fa-check"></i><b>9.2.3</b> Nonparametric test</a></li>
+<li class="chapter" data-level="9.2.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#multivariate-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.4</b> Multivariate analysis of variance</a></li>
+<li class="chapter" data-level="9.2.5" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-way-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.5</b> Two-way analysis of variance</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#correlation"><i class="fa fa-check"></i><b>9.3</b> Correlation</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#spearmans-"><i class="fa fa-check"></i><b>9.3.1</b> Spearman’s ρ</a></li>
+<li class="chapter" data-level="9.3.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#kendalls-"><i class="fa fa-check"></i><b>9.3.2</b> Kendall’s τ</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#tabular-data"><i class="fa fa-check"></i><b>9.4</b> Tabular data</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#single-proportion"><i class="fa fa-check"></i><b>9.4.1</b> Single proportion</a></li>
+<li class="chapter" data-level="9.4.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-independent-proportions"><i class="fa fa-check"></i><b>9.4.2</b> Two independent proportions</a></li>
+<li class="chapter" data-level="9.4.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#k-proportions"><i class="fa fa-check"></i><b>9.4.3</b> k proportions</a></li>
+<li class="chapter" data-level="9.4.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#r-c-tables"><i class="fa fa-check"></i><b>9.4.4</b> r × c tables</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html"><i class="fa fa-check"></i><b>10</b> Regressions with R-Linear Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>10.1</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#function"><i class="fa fa-check"></i><b>10.1.1</b> Function</a></li>
+<li class="chapter" data-level="10.1.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#output-explanation"><i class="fa fa-check"></i><b>10.1.2</b> Output explanation</a></li>
+<li class="chapter" data-level="10.1.3" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#other-useful-functions-1"><i class="fa fa-check"></i><b>10.1.3</b> Other useful functions</a></li>
+<li class="chapter" data-level="10.1.4" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#fitted-values-and-residuals"><i class="fa fa-check"></i><b>10.1.4</b> Fitted values and residuals</a></li>
+<li class="chapter" data-level="10.1.5" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#prediction-and-confidence-intervals"><i class="fa fa-check"></i><b>10.1.5</b> Prediction and confidence intervals</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>10.2</b> Multiple linear regression</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="survival-analysis.html"><a href="survival-analysis.html"><i class="fa fa-check"></i><b>11</b> Survival analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="survival-analysis.html"><a href="survival-analysis.html#create-the-response-variable"><i class="fa fa-check"></i><b>11.1</b> Create the response variable</a></li>
+<li class="chapter" data-level="11.2" data-path="survival-analysis.html"><a href="survival-analysis.html#kaplan-meier-estimate"><i class="fa fa-check"></i><b>11.2</b> Kaplan-Meier estimate</a></li>
+<li class="chapter" data-level="11.3" data-path="survival-analysis.html"><a href="survival-analysis.html#cumulative-hazard"><i class="fa fa-check"></i><b>11.3</b> Cumulative hazard</a></li>
+<li class="chapter" data-level="11.4" data-path="survival-analysis.html"><a href="survival-analysis.html#the-log-rank-test"><i class="fa fa-check"></i><b>11.4</b> The log-rank test</a></li>
+<li class="chapter" data-level="11.5" data-path="survival-analysis.html"><a href="survival-analysis.html#cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5</b> Cox Proportional Hazards Model</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="survival-analysis.html"><a href="survival-analysis.html#regular-cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5.1</b> Regular Cox proportional hazards model</a></li>
+<li class="chapter" data-level="11.5.2" data-path="survival-analysis.html"><a href="survival-analysis.html#test-for-proportional-hazards"><i class="fa fa-check"></i><b>11.5.2</b> Test for proportional hazards</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><i class="fa fa-check"></i><b>12</b> Bootstrap, analysis of clustered data and non-linear effects</a><ul>
+<li class="chapter" data-level="12.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#bootstrap"><i class="fa fa-check"></i><b>12.1</b> Bootstrap</a></li>
+<li class="chapter" data-level="12.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#analysis-of-clustered-data"><i class="fa fa-check"></i><b>12.2</b> Analysis of clustered data</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#linear-mixed-effects-models"><i class="fa fa-check"></i><b>12.2.1</b> Linear Mixed Effects Models</a></li>
+<li class="chapter" data-level="12.2.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#generalized-estimation-equations-gee-models"><i class="fa fa-check"></i><b>12.2.2</b> Generalized Estimation Equations (GEE) models</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#non-linear-effects"><i class="fa fa-check"></i><b>12.3</b> Non-linear effects</a></li>
+<li class="chapter" data-level="12.4" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#epi-packages--epitab"><i class="fa fa-check"></i><b>12.4</b> Epi packages- Epitab()</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An introduction to R for McGill Epidemiology and Public Health students</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="basic-statistical-tests-with-r" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Basic statistical tests with R</h1>
+<p>R provides a number of functions for standard statistical tests comparing means, medians and proportions.In this lecture, we will learn how to perform simple statistical tests like the t-test, u-test, chi-squared.</p>
+<div id="two-sample-tests" class="section level2">
+<h2><span class="header-section-number">9.1</span> Two-sample tests</h2>
+<div id="t-test" class="section level3">
+<h3><span class="header-section-number">9.1.1</span> t-test</h3>
+<p>The t-test is used to determine statistical differences between two samples.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#independent two group t-test</span>
+x1&lt;-<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>
+x2&lt;-<span class="dv">7</span><span class="op">:</span><span class="dv">20</span>
+<span class="kw">t.test</span>(x1,x2)</code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  x1 and x2
+## t = -5.4349, df = 21.982, p-value = 1.855e-05
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -11.052802  -4.947198
+## sample estimates:
+## mean of x mean of y 
+##       5.5      13.5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">t.test</span>(x1,x2,<span class="dt">alternative=</span><span class="st">&quot;greater&quot;</span>)<span class="co">#greater</span></code></pre></div>
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  x1 and x2
+## t = -5.4349, df = 21.982, p-value = 1
+## alternative hypothesis: true difference in means is greater than 0
+## 95 percent confidence interval:
+##  -10.52766       Inf
+## sample estimates:
+## mean of x mean of y 
+##       5.5      13.5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#paired t-test</span>
+x1<span class="op">&lt;</span><span class="dv">1</span><span class="op">:</span><span class="dv">10</span></code></pre></div>
+<pre><code>##  [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x2&lt;-<span class="kw">sample</span>(<span class="dv">21</span><span class="op">:</span><span class="dv">30</span>,<span class="dv">10</span>,<span class="dt">replace=</span>T)
+<span class="kw">t.test</span>(x1,x2,<span class="dt">paired=</span><span class="ot">TRUE</span>) <span class="co"># where x1 &amp; x2 are numeric</span></code></pre></div>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  x1 and x2
+## t = -16.588, df = 9, p-value = 4.693e-08
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -21.36378 -16.23622
+## sample estimates:
+## mean of the differences 
+##                   -18.8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#One sample test</span>
+<span class="kw">t.test</span>(x1,<span class="dt">mu=</span><span class="dv">6</span>) <span class="co"># Ho: mu=6</span></code></pre></div>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  x1
+## t = -0.52223, df = 9, p-value = 0.6141
+## alternative hypothesis: true mean is not equal to 6
+## 95 percent confidence interval:
+##  3.334149 7.665851
+## sample estimates:
+## mean of x 
+##       5.5</code></pre>
+<p>This version of the test does not assume that the variance of the two samples is equal.We can use the var.equal = TRUE option to specify equal variances and a pooled variance estimate.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x1&lt;-<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>
+x2&lt;-<span class="dv">7</span><span class="op">:</span><span class="dv">20</span>
+<span class="kw">t.test</span>(x1,x2,<span class="dt">var.equal=</span>T)</code></pre></div>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  x1 and x2
+## t = -5.1473, df = 22, p-value = 3.691e-05
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -11.223245  -4.776755
+## sample estimates:
+## mean of x mean of y 
+##       5.5      13.5</code></pre>
+</div>
+<div id="nonparametric-tests" class="section level3">
+<h3><span class="header-section-number">9.1.2</span> Nonparametric tests</h3>
+<p>A popular alternative to parametric tests are non-parametric (rank-based) tests.Wilcoxon tests can be used for two samples.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.80</span>, <span class="fl">0.83</span>, <span class="fl">1.89</span>, <span class="fl">1.04</span>, <span class="fl">1.45</span>, <span class="fl">1.38</span>, <span class="fl">1.91</span>, <span class="fl">1.64</span>, <span class="fl">0.73</span>, <span class="fl">1.46</span>)
+y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.15</span>, <span class="fl">0.88</span>, <span class="fl">0.90</span>, <span class="fl">0.74</span>, <span class="fl">1.21</span>)
+<span class="kw">wilcox.test</span>(x, y)        </code></pre></div>
+<pre><code>## 
+##  Wilcoxon rank sum test
+## 
+## data:  x and y
+## W = 35, p-value = 0.2544
+## alternative hypothesis: true location shift is not equal to 0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">wilcox.test</span>(x, y, <span class="dt">alternative =</span> <span class="st">&quot;g&quot;</span>,<span class="dt">exat=</span>T) <span class="co">#For small sample sizes we should  set the argument exact=T.</span></code></pre></div>
+<pre><code>## 
+##  Wilcoxon rank sum test
+## 
+## data:  x and y
+## W = 35, p-value = 0.1272
+## alternative hypothesis: true location shift is greater than 0</code></pre>
+<p>The standard test is rank-based and only the p-value is reported. Reporting p-values without an appropriate effect measures is not good for scientific practice. The wilcox.test() function allows to compute an effect measure by setting the argument conf.int=T.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.80</span>, <span class="fl">0.83</span>, <span class="fl">1.89</span>, <span class="fl">1.04</span>, <span class="fl">1.45</span>, <span class="fl">1.38</span>, <span class="fl">1.91</span>, <span class="fl">1.64</span>, <span class="fl">0.73</span>, <span class="fl">1.46</span>)
+y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.15</span>, <span class="fl">0.88</span>, <span class="fl">0.90</span>, <span class="fl">0.74</span>, <span class="fl">1.21</span>)
+<span class="kw">wilcox.test</span>(x, y, <span class="dt">conf.int=</span>T) </code></pre></div>
+<pre><code>## 
+##  Wilcoxon rank sum test
+## 
+## data:  x and y
+## W = 35, p-value = 0.2544
+## alternative hypothesis: true location shift is not equal to 0
+## 95 percent confidence interval:
+##  -0.15  0.76
+## sample estimates:
+## difference in location 
+##                  0.305</code></pre>
+</div>
+</div>
+<div id="analysis-of-variance" class="section level2">
+<h2><span class="header-section-number">9.2</span> Analysis Of Variance</h2>
+<p>When we have more than two samples to compare, we would usually use analysis of variance, which is a global test for equality of means. We are assuming normality and constant variance for the model error term when we attempt to use parametric tesets. We may need to assess the assumptions so that we can decide to use parametric or non-parametric methods.</p>
+<p>As the previous lecture, the data set diabetes_new will be used as the example, which contains four quantitative variables: glu, bp, bmi and age; two categorical variable: type and age_cat.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#read in the dataset</span>
+mydata&lt;-<span class="kw">read.csv</span>(<span class="st">&quot;data/diabetes_new.csv&quot;</span>,<span class="dt">header=</span>T)
+<span class="kw">dim</span>(mydata)</code></pre></div>
+<pre><code>## [1] 332   6</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(mydata)</code></pre></div>
+<pre><code>##   glu bp  bmi age type age_cat
+## 1 148 72 33.6  50  Yes   30-50
+## 2  85 66 26.6  31   No   30-50
+## 3  89 66 28.1  21   No    &lt;=30
+## 4  78 50 31.0  26  Yes    &lt;=30
+## 5 197 70 30.5  53  Yes     &gt;50
+## 6 166 72 25.8  51  Yes     &gt;50</code></pre>
+<div id="assumptions-assessment" class="section level3">
+<h3><span class="header-section-number">9.2.1</span> Assumptions assessment</h3>
+<div id="normality" class="section level4">
+<h4><span class="header-section-number">9.2.1.1</span> (1) Normality</h4>
+<p>As we mentioned before, we can use Q-Q plot to assess the normality.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Q-Q Plot for variable glu</span>
+<span class="kw">attach</span>(mydata)</code></pre></div>
+<pre><code>## The following objects are masked _by_ .GlobalEnv:
+## 
+##     age, bp</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">qqnorm</span>(glu)
+<span class="kw">qqline</span>(glu)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-196-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Significant departures from the line suggest violations of normality.</span></code></pre></div>
+<p>For statistical test:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">shapiro.test</span>(glu) </code></pre></div>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  glu
+## W = 0.94356, p-value = 6.063e-10</code></pre>
+<p>We can see that the glucose level is not normally distributed.</p>
+</div>
+<div id="homogeneity-of-variances" class="section level4">
+<h4><span class="header-section-number">9.2.1.2</span> (2) Homogeneity of Variances</h4>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Test whether the distribution of a variable has the same variance in all groups </span>
+<span class="kw">bartlett.test</span>(glu<span class="op">~</span>age_cat)<span class="co">#the tilde symbol (~) should be read as “described by”.</span></code></pre></div>
+<pre><code>## 
+##  Bartlett test of homogeneity of variances
+## 
+## data:  glu by age_cat
+## Bartlett&#39;s K-squared = 2.892, df = 2, p-value = 0.2355</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># non-parametric test of the equality of variances</span>
+<span class="kw">fligner.test</span>(glu<span class="op">~</span>age_cat)</code></pre></div>
+<pre><code>## 
+##  Fligner-Killeen test of homogeneity of variances
+## 
+## data:  glu by age_cat
+## Fligner-Killeen:med chi-squared = 4.1276, df = 2, p-value = 0.127</code></pre>
+</div>
+</div>
+<div id="parametric-test" class="section level3">
+<h3><span class="header-section-number">9.2.2</span> Parametric test</h3>
+<p>If the above assumptions can be met, we can choose the parametric tests to compare the central tendencies of several independent groups</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myanova&lt;-<span class="kw">aov</span>(glu<span class="op">~</span>age_cat) 
+<span class="kw">summary</span>(myanova)</code></pre></div>
+<pre><code>##              Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## age_cat       2  19431    9716   11.08 2.21e-05 ***
+## Residuals   329 288505     877                     
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">coefficients</span>(myanova)</code></pre></div>
+<pre><code>##  (Intercept)   age_cat&gt;50 age_cat30-50 
+##   114.687805    29.539468     8.264576</code></pre>
+<p>The results above returns a significant overall p-value. However, there are 3 age groups, now the question quickly arises of where the difference lies. It becomes necessary to compare the individual groups. Therefore we need a post-hoc test.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">TukeyHSD</span>(myanova)</code></pre></div>
+<pre><code>##   Tukey multiple comparisons of means
+##     95% family-wise confidence level
+## 
+## Fit: aov(formula = glu ~ age_cat)
+## 
+## $age_cat
+##                  diff         lwr       upr     p adj
+## &gt;50-&lt;=30    29.539468  13.8979861 45.180950 0.0000355
+## 30-50-&lt;=30   8.264576  -0.1022839 16.631436 0.0537037
+## 30-50-&gt;50  -21.274892 -37.6223075 -4.927476 0.0066667</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#The table/output shows us the difference between pairs, the 95% confidence interval(s) and the p-value of the pairwise comparisons. </span></code></pre></div>
+<p>We can use box plots and line plots to visualize group differences。</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">TukeyHSD</span>(myanova))</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-201-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Plot Means with Error Bars</span>
+<span class="kw">library</span>(gplots)</code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;gplots&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:plotrix&#39;:
+## 
+##     plotCI</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     lowess</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plotmeans</span>(glu<span class="op">~</span>age_cat,<span class="dt">xlab=</span><span class="st">&quot;age category&quot;</span>,
+  <span class="dt">ylab=</span><span class="st">&quot;glucose level&quot;</span>, <span class="dt">main=</span><span class="st">&quot;Mean Plot</span><span class="ch">\n</span><span class="st">with 95% CI&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-201-2.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#produce mean plots for single factors, and includes confidence intervals.</span></code></pre></div>
+<p>We can also choose to use a function called pairwise.t.test to compute all possible two-group comparisons. pairwise.t.test also allows to make adjustments for multiple comparisons.As we know, performing many tests will increase the probability of finding one of them to be significant; that is, the p-values tend to be exaggerated. A common adjustment method is the Bonferroni correction, which is based on the fact that the probability of observing at least one of n events is less than the sum of the probabilities for each event.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pairwise.t.test</span>(glu, age_cat, <span class="dt">p.adj=</span><span class="st">&quot;bonferroni&quot;</span>)</code></pre></div>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  glu and age_cat 
+## 
+##       &lt;=30    &gt;50   
+## &gt;50   3.6e-05 -     
+## 30-50 0.0619  0.0071
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>The output is a table of p-values for the pairwise comparisons. Here, the p-values have been adjusted by the Bonferroni method. If that results in a value bigger than 1, then the adjustment procedure sets the adjusted p-value to 1.</p>
+<p>The default method for pairwise.t.test is actually not the Bonferroni correction but a variant due to Holm. In this method, only the smallest p needs to be corrected by the full number of tests, the second smallest is corrected by n − 1, etc., unless that would make it smaller than the previous one, since the order of the p-values should be unaffected by the adjustment.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pairwise.t.test</span>(glu, age_cat)</code></pre></div>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  glu and age_cat 
+## 
+##       &lt;=30    &gt;50   
+## &gt;50   3.6e-05 -     
+## 30-50 0.0206  0.0047
+## 
+## P value adjustment method: holm</code></pre>
+<p>To know more about adjustment methods:</p>
+<pre><code>?p.adjust</code></pre>
+</div>
+<div id="nonparametric-test" class="section level3">
+<h3><span class="header-section-number">9.2.3</span> Nonparametric test</h3>
+<p>There are some non-parametric tests that do not require the above assumptions.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kruskal.test</span>(glu<span class="op">~</span>age_cat)</code></pre></div>
+<pre><code>## 
+##  Kruskal-Wallis rank sum test
+## 
+## data:  glu by age_cat
+## Kruskal-Wallis chi-squared = 17.84, df = 2, p-value = 0.0001337</code></pre>
+<p>We can see that the global test indicates evidence for statistically significant group difference. However, at this stage we cannot tell which of the levels is different from which. We can get an overview by creating a simple boxplot of the data.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(glu<span class="op">~</span>age_cat)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-205-1.png" width="672" /> We can also perform a post-hoc analysis to determine which levels of the independent variable significantly differ from each other level.</p>
+<p>It is also possible to perform the pairwise t tests so that they do not use a common pooled standard deviation. This is controlled by the argument pool.sd.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pairwise.t.test</span>(glu,age_cat,<span class="dt">pool.sd=</span>F, <span class="dt">p.adj=</span><span class="st">&quot;bonferroni&quot;</span>)</code></pre></div>
+<pre><code>## 
+##  Pairwise comparisons using t tests with non-pooled SD 
+## 
+## data:  glu and age_cat 
+## 
+##       &lt;=30   &gt;50   
+## &gt;50   0.0017 -     
+## 30-50 0.0753 0.0321
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>Or we can choose the dunn.test from the FSA package:</p>
+<pre><code>install.packages(&quot;FSA&quot;)
+install.packages(&quot;dunn.test&quot;)</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(FSA)</code></pre></div>
+<pre><code>## ## FSA v0.8.17. See citation(&#39;FSA&#39;) if used in publication.
+## ## Run fishR() for related website and fishR(&#39;IFAR&#39;) for related book.</code></pre>
+<pre><code>## 
+## Attaching package: &#39;FSA&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:psych&#39;:
+## 
+##     headtail</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dunnTest</span>(glu<span class="op">~</span>age_cat,<span class="dt">method=</span><span class="st">&quot;bonferroni&quot;</span>)<span class="co">#use bonferroni for the adjustment of multiple testing</span></code></pre></div>
+<pre><code>## Dunn (1964) Kruskal-Wallis multiple comparison</code></pre>
+<pre><code>##   p-values adjusted with the Bonferroni method.</code></pre>
+<pre><code>##     Comparison         Z      P.unadj        P.adj
+## 1   &lt;=30 - &gt;50 -3.925640 8.649942e-05 0.0002594983
+## 2 &lt;=30 - 30-50 -2.244132 2.482393e-02 0.0744717847
+## 3  &gt;50 - 30-50  2.607537 9.119621e-03 0.0273588621</code></pre>
+</div>
+<div id="multivariate-analysis-of-variance" class="section level3">
+<h3><span class="header-section-number">9.2.4</span> Multivariate analysis of variance</h3>
+<p>If there is more than one dependent variable, we can test them simultaneously using a multivariate analysis of variance (MANOVA).</p>
+<pre><code>y&lt;-cbind(glu,bp,bmi)
+fit &lt;- manova(y~age_cat)
+summary(fit, test=&quot;Pillai&quot;)
+summary.aov(fit ) #get univariate statistics</code></pre>
+</div>
+<div id="two-way-analysis-of-variance" class="section level3">
+<h3><span class="header-section-number">9.2.5</span> Two-way analysis of variance</h3>
+<p>One-way analysis of variance deals with one-way classifications of data. It is also possible to analyze data that are cross-classified according to several criteria.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(<span class="kw">lm</span>(glu<span class="op">~</span>age_cat<span class="op">+</span>type))</code></pre></div>
+<pre><code>## Analysis of Variance Table
+## 
+## Response: glu
+##            Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+## age_cat     2  19431    9716  14.671 7.895e-07 ***
+## type        1  71301   71301 107.671 &lt; 2.2e-16 ***
+## Residuals 328 217204     662                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+</div>
+</div>
+<div id="correlation" class="section level2">
+<h2><span class="header-section-number">9.3</span> Correlation</h2>
+<p>A correlation coefficient is a symmetric, scale-invariant measure of association between two random variables. It ranges from −1 to +1, where the extremes indicate perfect correlation and 0 means no correlation. The sign is negative when large values of one variable are associated with small values of the other and positive if both variables tend to be large or small at the same time.</p>
+<p>For the correlation between two continuous variables, it is suggested that we should start with a visualization of the relationship to gain some understanding of the general nature of the potential relationship:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+p1&lt;-<span class="kw">ggplot</span>(mydata,<span class="kw">aes</span>(<span class="dt">x=</span>bmi,<span class="dt">y=</span>glu))
+p1<span class="op">+</span><span class="kw">geom_point</span>()</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-209-1.png" width="672" /> ### The Pearson correlation</p>
+<p>The Pearson correlation is parametric and rooted in the two-dimensional normal distribution where the theoretical correlation describes the contour ellipses for the density.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(glu,bmi,<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)</code></pre></div>
+<pre><code>## [1] 0.2741538</code></pre>
+<p>However, the calculations above give no indication of whether the correlation is significantly different from zero. To that end, we need cor.test:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(glu,bmi,<span class="dt">method=</span><span class="st">&quot;pearson&quot;</span>)<span class="co">#the default is pearson.</span></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s product-moment correlation
+## 
+## data:  glu and bmi
+## t = 5.1787, df = 330, p-value = 3.895e-07
+## alternative hypothesis: true correlation is not equal to 0
+## 95 percent confidence interval:
+##  0.1715793 0.3708480
+## sample estimates:
+##       cor 
+## 0.2741538</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#This returns us p-value,confidence interval as well as the correlation coefficient.</span></code></pre></div>
+<div id="spearmans-" class="section level3">
+<h3><span class="header-section-number">9.3.1</span> Spearman’s ρ</h3>
+<p>Spearman’s ρ is non-parametric, not depending on the normal distribution and, indeed</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(glu,bmi,<span class="dt">method=</span><span class="st">&quot;spearman&quot;</span>)</code></pre></div>
+<pre><code>## Warning in cor.test.default(glu, bmi, method = &quot;spearman&quot;): Cannot compute
+## exact p-value with ties</code></pre>
+<pre><code>## 
+##  Spearman&#39;s rank correlation rho
+## 
+## data:  glu and bmi
+## S = 4558800, p-value = 3.164e-06
+## alternative hypothesis: true rho is not equal to 0
+## sample estimates:
+##       rho 
+## 0.2525404</code></pre>
+</div>
+<div id="kendalls-" class="section level3">
+<h3><span class="header-section-number">9.3.2</span> Kendall’s τ</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor.test</span>(glu,bmi,<span class="dt">method=</span><span class="st">&quot;kendall&quot;</span>)</code></pre></div>
+<pre><code>## 
+##  Kendall&#39;s rank correlation tau
+## 
+## data:  glu and bmi
+## z = 4.5605, p-value = 5.103e-06
+## alternative hypothesis: true tau is not equal to 0
+## sample estimates:
+##       tau 
+## 0.1689903</code></pre>
+<p>All of the the three methods show significant results.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#as we attach the data before, we need to detach the data now since we will not use it temporarily.</span>
+<span class="kw">detach</span>(mydata)</code></pre></div>
+</div>
+</div>
+<div id="tabular-data" class="section level2">
+<h2><span class="header-section-number">9.4</span> Tabular data</h2>
+<div id="single-proportion" class="section level3">
+<h3><span class="header-section-number">9.4.1</span> Single proportion</h3>
+<p>Tests of single proportions are generally based on the binomial distribution with size parameter N and probability parameter p.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">prop.test</span>(<span class="dv">45</span>,<span class="dv">300</span>,<span class="fl">0.15</span>)</code></pre></div>
+<pre><code>## 
+##  1-sample proportions test without continuity correction
+## 
+## data:  45 out of 300, null probability 0.15
+## X-squared = 0, df = 1, p-value = 1
+## alternative hypothesis: true p is not equal to 0.15
+## 95 percent confidence interval:
+##  0.1140325 0.1948176
+## sample estimates:
+##    p 
+## 0.15</code></pre>
+<p>The three arguments are the number of positive outcomes, the total number, and the theoretical probability parameter that we want to test for.</p>
+<p>We can also use binom.test to obtain a test in the binomial distribution.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">binom.test</span>(<span class="dv">45</span>,<span class="dv">300</span>,<span class="fl">0.15</span>)</code></pre></div>
+<pre><code>## 
+##  Exact binomial test
+## 
+## data:  45 and 300
+## number of successes = 45, number of trials = 300, p-value = 1
+## alternative hypothesis: true probability of success is not equal to 0.15
+## 95 percent confidence interval:
+##  0.1115625 0.1955164
+## sample estimates:
+## probability of success 
+##                   0.15</code></pre>
+</div>
+<div id="two-independent-proportions" class="section level3">
+<h3><span class="header-section-number">9.4.2</span> Two independent proportions</h3>
+<p><em>prop.test</em>:</p>
+<p>The function prop.test can also be used to compare two or more pro- portions. For that purpose, the arguments should be given as two vectors, where the first contains the number of positive outcomes and the second the total number for each group.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">4</span>)
+n &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>,<span class="dv">13</span>)
+<span class="kw">prop.test</span>(x,n)</code></pre></div>
+<pre><code>## 
+##  2-sample test for equality of proportions with continuity
+##  correction
+## 
+## data:  x out of n
+## X-squared = 3.2793, df = 1, p-value = 0.07016
+## alternative hypothesis: two.sided
+## 95 percent confidence interval:
+##  0.01151032 0.87310506
+## sample estimates:
+##    prop 1    prop 2 
+## 0.7500000 0.3076923</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Please note that the confidence interval given is for the difference in proportions.</span></code></pre></div>
+<p><em>fisher.test</em>: If we want to be sure that the p-value is correct, we can use Fisher’s exact test.We illustrate this using the same data as in the preceding section.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">y &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">9</span>),<span class="dv">2</span>)
+<span class="kw">print</span>(y)<span class="co"># the second column of the table is the number of negative outcomes</span></code></pre></div>
+<pre><code>##      [,1] [,2]
+## [1,]    9    3
+## [2,]    4    9</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">fisher.test</span>(y)</code></pre></div>
+<pre><code>## 
+##  Fisher&#39;s Exact Test for Count Data
+## 
+## data:  y
+## p-value = 0.04718
+## alternative hypothesis: true odds ratio is not equal to 1
+## 95 percent confidence interval:
+##   0.9006803 57.2549701
+## sample estimates:
+## odds ratio 
+##   6.180528</code></pre>
+<p><em>Pearson’s Chi-squared Test</em></p>
+<p>The chi-square test is used to compare the observed distribution to an expected distribution, in a situation where we have two or more categories in a discrete data. In other words, it compares multiple observed proportions to expected probabilities.</p>
+<pre><code>chisq.test(x, y = NULL, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)</code></pre>
+<p>p=() is a vector of probabilities of the same length of x. rescale.p is a logical scalar; if TRUE then p is rescaled to sum to 1. If rescale.p is FALSE, and p does not sum to 1, an error is given.simulate.p.value is a logical indicating whether to compute p-values by Monte Carlo simulation. B is an integer specifying the number of replicates used in the Monte Carlo test.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">chisq.test</span>(y)</code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  y
+## X-squared = 3.2793, df = 1, p-value = 0.07016</code></pre>
+</div>
+<div id="k-proportions" class="section level3">
+<h3><span class="header-section-number">9.4.3</span> k proportions</h3>
+<p>In many cases, we want to compare more than two proportions.Let’s first create a new table:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">temp&lt;-<span class="kw">data.frame</span>(<span class="dt">x=</span><span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;yes&quot;</span>,<span class="st">&quot;no&quot;</span>),<span class="dv">200</span>),<span class="dt">y=</span><span class="kw">sample</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>),<span class="dv">200</span>,<span class="dt">replace=</span>T))
+x&lt;-<span class="kw">table</span>(temp<span class="op">$</span>x,temp<span class="op">$</span>y)
+<span class="kw">print</span>(x)</code></pre></div>
+<pre><code>##      
+##        1  2  3
+##   no  68 62 70
+##   yes 80 62 58</code></pre>
+<p>To use prop.test on a table like x, we need to convert it to a vector of “successes”.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x.yes &lt;-<span class="st"> </span>x[<span class="st">&quot;yes&quot;</span>,]
+x.total &lt;-<span class="st"> </span><span class="kw">margin.table</span>(x,<span class="dv">2</span>)
+<span class="kw">print</span>(x.yes)</code></pre></div>
+<pre><code>##  1  2  3 
+## 80 62 58</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(x.total)</code></pre></div>
+<pre><code>## 
+##   1   2   3 
+## 148 124 128</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#conduct the test</span>
+<span class="kw">prop.test</span>(x.yes,x.total)</code></pre></div>
+<pre><code>## 
+##  3-sample test for equality of proportions without continuity
+##  correction
+## 
+## data:  x.yes out of x.total
+## X-squared = 2.098, df = 2, p-value = 0.3503
+## alternative hypothesis: two.sided
+## sample estimates:
+##    prop 1    prop 2    prop 3 
+## 0.5405405 0.5000000 0.4531250</code></pre>
+</div>
+<div id="r-c-tables" class="section level3">
+<h3><span class="header-section-number">9.4.4</span> r × c tables</h3>
+<p>For the analysis of tables with more than two classes on both sides, we can use chisq.test or fisher.test.We should note that the fisher test can be very computationally demanding if the cell counts are large and there are more than two rows or columns.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Let&#39;s create a hypothetical dataframe with caffeine consumption and weight </span>
+x &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">652</span>,<span class="dv">1537</span>,<span class="dv">598</span>,<span class="dv">242</span>,<span class="dv">36</span>,<span class="dv">46</span>,<span class="dv">38</span>,<span class="dv">21</span>,<span class="dv">218</span>,<span class="dv">327</span>,<span class="dv">106</span>,<span class="dv">67</span>),<span class="dt">nrow=</span><span class="dv">3</span>,<span class="dt">byrow=</span>T)
+<span class="kw">colnames</span>(x) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;0&quot;</span>,<span class="st">&quot;1-150&quot;</span>,<span class="st">&quot;151-300&quot;</span>,<span class="st">&quot;&gt;300&quot;</span>)
+<span class="kw">rownames</span>(x) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;underweight&quot;</span>,<span class="st">&quot;normal&quot;</span>,<span class="st">&quot;overweight&quot;</span>)
+x</code></pre></div>
+<pre><code>##               0 1-150 151-300 &gt;300
+## underweight 652  1537     598  242
+## normal       36    46      38   21
+## overweight  218   327     106   67</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#chi-square test</span>
+mychi&lt;-<span class="kw">chisq.test</span>(x)
+<span class="co">#There are more we can get from the chi-square test</span>
+<span class="kw">names</span>(mychi)</code></pre></div>
+<pre><code>## [1] &quot;statistic&quot; &quot;parameter&quot; &quot;p.value&quot;   &quot;method&quot;    &quot;data.name&quot; &quot;observed&quot; 
+## [7] &quot;expected&quot;  &quot;residuals&quot; &quot;stdres&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#To see the observed values :</span>
+mychi<span class="op">$</span>observed</code></pre></div>
+<pre><code>##               0 1-150 151-300 &gt;300
+## underweight 652  1537     598  242
+## normal       36    46      38   21
+## overweight  218   327     106   67</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#To see the expected values:</span>
+mychi<span class="op">$</span>expected</code></pre></div>
+<pre><code>##                     0      1-150   151-300      &gt;300
+## underweight 705.83179 1488.01183 578.06533 257.09105
+## normal       32.85648   69.26698  26.90895  11.96759
+## overweight  167.31173  352.72119 137.02572  60.94136</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#To see the residuals</span>
+mychi<span class="op">$</span>residuals</code></pre></div>
+<pre><code>##                      0     1-150    151-300       &gt;300
+## underweight -2.0262275  1.269954  0.8291261 -0.9411871
+## normal       0.5484102 -2.795611  2.1380815  2.6109594
+## overweight   3.9187205 -1.369542 -2.6504574  0.7761028</code></pre>
+<p>It is often useful to see where the differences lie. Such a table cannot be directly extracted, but it is easy to calculate:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">E &lt;-<span class="st"> </span>mychi<span class="op">$</span>expected
+O &lt;-<span class="st"> </span>mychi<span class="op">$</span>observed
+(O<span class="op">-</span>E)<span class="op">^</span><span class="dv">2</span><span class="op">/</span>E</code></pre></div>
+<pre><code>##                      0    1-150   151-300      &gt;300
+## underweight  4.1055981 1.612783 0.6874502 0.8858331
+## normal       0.3007537 7.815444 4.5713926 6.8171090
+## overweight  15.3563704 1.875645 7.0249243 0.6023355</code></pre>
+<p>We can also use the Chi-square test for the goodness of fit test. For goodness of fit test, we are actually doing some statistical testing to see if the reference distribution of the data is different from the primary distribution. Reference distribution is defined as a distribution which we assume fits the data the best. Our hypothesis tests if this assumption is correct or not.Primary distribution is defined as actual distribution that the data is sampled from. In practice this distribution is unknown and we try to estimate and find that distribution.</p>
+<p>Say if we have four colors-red,green,black,blue, the counts of each color is 81.50,27,49. We want to know that whether the colors are equally common.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">counts &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">81</span>, <span class="dv">50</span>, <span class="dv">27</span>,<span class="dv">49</span>)
+res &lt;-<span class="st"> </span><span class="kw">chisq.test</span>(counts, <span class="dt">p =</span> <span class="kw">c</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">4</span>, <span class="dv">1</span><span class="op">/</span><span class="dv">4</span>, <span class="dv">1</span><span class="op">/</span><span class="dv">4</span>,<span class="dv">1</span><span class="op">/</span><span class="dv">4</span>))
+<span class="kw">print</span>(res)</code></pre></div>
+<pre><code>## 
+##  Chi-squared test for given probabilities
+## 
+## data:  counts
+## X-squared = 28.575, df = 3, p-value = 2.751e-06</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#The p-value of the test is 2.751^{-6}, which is less than the significance level alpha = 0.05. We can conclude that the colors are significantly not commonly distributed with a p-value = 2.751^{-6}.</span></code></pre></div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="regressions-with-r-linear-regression.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/08-Stat-tests.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

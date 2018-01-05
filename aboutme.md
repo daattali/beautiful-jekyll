@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Who I am
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Jay Brophy. Hard to believe you can really learn much about the "true" me from a website (especially one that I have created!). For purposes of this site:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I am a contrarian cardiologist
+- I am a professor in the Departments of Medicine and Epidmeiology & Biostatistics at McGill
 
 What else do you need?
 
 ### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Why would you really care?

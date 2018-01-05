@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>An introduction to R for McGill Epidemiology and Public Health students</title>
+  <meta name="description" content="Introduction to R for McGill Epidemiology and Public Health students">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  
+  <meta name="twitter:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  
+
+<meta name="author" content="Fei Wang &amp; Jay Brophy">
+
+
+<meta name="date" content="2018-01-05">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="basic-statistical-tests-with-r.html">
+<link rel="next" href="survival-analysis.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html"><i class="fa fa-check"></i><b>2</b> An overview of R: part I {ch2}</a><ul>
+<li class="chapter" data-level="2.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#basic-computations-in-r"><i class="fa fa-check"></i><b>2.1</b> Basic computations in R</a></li>
+<li class="chapter" data-level="2.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#create-an-object"><i class="fa fa-check"></i><b>2.2</b> Create an object</a></li>
+<li class="chapter" data-level="2.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#operators"><i class="fa fa-check"></i><b>2.3</b> Operators</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arithmetic-operators"><i class="fa fa-check"></i><b>2.3.1</b> 2.3.1 Arithmetic operators</a></li>
+<li class="chapter" data-level="2.3.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#relational-operators"><i class="fa fa-check"></i><b>2.3.2</b> Relational operators</a></li>
+<li class="chapter" data-level="2.3.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#logical-operators"><i class="fa fa-check"></i><b>2.3.3</b> Logical operators</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#generate-data"><i class="fa fa-check"></i><b>2.4</b> Generate data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#regular-sequences"><i class="fa fa-check"></i><b>2.4.1</b> Regular sequences</a></li>
+<li class="chapter" data-level="2.4.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#random-sequences"><i class="fa fa-check"></i><b>2.4.2</b> Random sequences</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-types"><i class="fa fa-check"></i><b>2.5</b> Data types</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#vectors"><i class="fa fa-check"></i><b>2.5.1</b> Vectors</a></li>
+<li class="chapter" data-level="2.5.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#lists"><i class="fa fa-check"></i><b>2.5.2</b> Lists</a></li>
+<li class="chapter" data-level="2.5.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#factors"><i class="fa fa-check"></i><b>2.5.3</b> Factors</a></li>
+<li class="chapter" data-level="2.5.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#matrices"><i class="fa fa-check"></i><b>2.5.4</b> Matrices</a></li>
+<li class="chapter" data-level="2.5.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arrays"><i class="fa fa-check"></i><b>2.5.5</b> Arrays</a></li>
+<li class="chapter" data-level="2.5.6" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-frames"><i class="fa fa-check"></i><b>2.5.6</b> Data Frames</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html"><i class="fa fa-check"></i><b>3</b> An overview of R: Part II {ch3}</a><ul>
+<li class="chapter" data-level="3.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#assess-the-values-of-an-object"><i class="fa fa-check"></i><b>3.1</b> Assess the values of an object</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-index-system"><i class="fa fa-check"></i><b>3.1.1</b> Using the index system</a></li>
+<li class="chapter" data-level="3.1.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-names"><i class="fa fa-check"></i><b>3.1.2</b> Using the names</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#get-the-data-into-r"><i class="fa fa-check"></i><b>3.2</b> Get the data into R</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#direct-data-entering"><i class="fa fa-check"></i><b>3.2.1</b> Direct data entering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#use-dataset-that-come-with-r-or-r-packages"><i class="fa fa-check"></i><b>3.2.2</b> Use dataset that come with R or R packages</a></li>
+<li class="chapter" data-level="3.2.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-files"><i class="fa fa-check"></i><b>3.2.3</b> Read in data files</a></li>
+<li class="chapter" data-level="3.2.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-from-the-clipboard"><i class="fa fa-check"></i><b>3.2.4</b> Read in data from the clipboard</a></li>
+<li class="chapter" data-level="3.2.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-remote-data"><i class="fa fa-check"></i><b>3.2.5</b> Read in remote data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#export-data"><i class="fa fa-check"></i><b>3.3</b> Export data</a></li>
+<li class="chapter" data-level="3.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#save-and-load-data-in-r"><i class="fa fa-check"></i><b>3.4</b> Save and load data in R</a></li>
+<li class="chapter" data-level="3.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#view-data"><i class="fa fa-check"></i><b>3.5</b> View data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html"><i class="fa fa-check"></i><b>4</b> Data management: Part I {ch4}</a><ul>
+<li class="chapter" data-level="4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#control-structure"><i class="fa fa-check"></i><b>4.1</b> Control structure</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#for-loop"><i class="fa fa-check"></i><b>4.1.1</b> For loop</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#while-loop"><i class="fa fa-check"></i><b>4.1.2</b> While Loop</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#if-else-loop"><i class="fa fa-check"></i><b>4.1.3</b> If-else Loop</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#repeat-loop"><i class="fa fa-check"></i><b>4.1.4</b> Repeat Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
+<li class="chapter" data-level="4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#dates"><i class="fa fa-check"></i><b>4.3</b> Dates</a></li>
+<li class="chapter" data-level="4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#common-useful-functions"><i class="fa fa-check"></i><b>4.4</b> Common useful functions</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#numeric-functions"><i class="fa fa-check"></i><b>4.4.1</b> Numeric functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#character-functions"><i class="fa fa-check"></i><b>4.4.2</b> Character Functions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#apply-functions-over-a-list-array-dataframe-or-matrix"><i class="fa fa-check"></i><b>4.4.3</b> Apply functions over a list, array, dataframe or matrix</a></li>
+<li class="chapter" data-level="4.4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#other-useful-functions"><i class="fa fa-check"></i><b>4.4.4</b> Other useful functions</a></li>
+<li class="chapter" data-level="4.4.5" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#write-functions"><i class="fa fa-check"></i><b>4.4.5</b> Write functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html"><i class="fa fa-check"></i><b>5</b> Data managements: Part II- Reshape data {ch4}</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#subset-data"><i class="fa fa-check"></i><b>5.1</b> Subset Data</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-variables"><i class="fa fa-check"></i><b>5.1.1</b> Select variables</a></li>
+<li class="chapter" data-level="5.1.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#exclude-variables"><i class="fa fa-check"></i><b>5.1.2</b> Exclude variables</a></li>
+<li class="chapter" data-level="5.1.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-observations"><i class="fa fa-check"></i><b>5.1.3</b> Select Observations</a></li>
+<li class="chapter" data-level="5.1.4" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-both-variables-and-observations"><i class="fa fa-check"></i><b>5.1.4</b> Select both variables and observations</a></li>
+<li class="chapter" data-level="5.1.5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keep-or-delete-variables-using-dplyr-function"><i class="fa fa-check"></i><b>5.1.5</b> Keep or delete variables using dplyr function</a></li>
+<li class="chapter" data-level="5.1.6" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keepdrop-variables-by-name-pattern"><i class="fa fa-check"></i><b>5.1.6</b> Keep/drop variables by name pattern</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data"><i class="fa fa-check"></i><b>5.2</b> Merge Data</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-casesobservations-to-a-dataset"><i class="fa fa-check"></i><b>5.2.1</b> Add cases/observations to a dataset</a></li>
+<li class="chapter" data-level="5.2.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data-frames"><i class="fa fa-check"></i><b>5.2.2</b> Merge Data Frames</a></li>
+<li class="chapter" data-level="5.2.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-more-variables-to-a-dataset"><i class="fa fa-check"></i><b>5.2.3</b> Add more variables to a dataset</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#the-reshape-package"><i class="fa fa-check"></i><b>5.3</b> The Reshape package</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html"><i class="fa fa-check"></i><b>6</b> Base Graphics with R {ch5}</a><ul>
+<li class="chapter" data-level="6.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-functions"><i class="fa fa-check"></i><b>6.1</b> Graphical functions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#high-level-graphical-functions"><i class="fa fa-check"></i><b>6.1.1</b> (1) High-level graphical functions</a></li>
+<li class="chapter" data-level="6.1.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#low-level-functions"><i class="fa fa-check"></i><b>6.1.2</b> (2) Low-level functions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-parameters"><i class="fa fa-check"></i><b>6.2</b> Graphical parameters</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#specify-within-the-high-level-function"><i class="fa fa-check"></i><b>6.2.1</b> 6.2.1 Specify within the high-level function</a></li>
+<li class="chapter" data-level="6.2.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par"><i class="fa fa-check"></i><b>6.2.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#multiple-plots-on-the-one-page"><i class="fa fa-check"></i><b>6.3</b> Multiple plots on the one page</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-layout"><i class="fa fa-check"></i><b>6.3.1</b> Function layout()</a></li>
+<li class="chapter" data-level="6.3.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par-1"><i class="fa fa-check"></i><b>6.3.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-a-plot"><i class="fa fa-check"></i><b>6.4</b> Save a plot</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-by-menu-click"><i class="fa fa-check"></i><b>6.4.1</b> Save plots by menu click</a></li>
+<li class="chapter" data-level="6.4.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-using-functions"><i class="fa fa-check"></i><b>6.4.2</b> Save plots using functions</a></li>
+<li class="chapter" data-level="6.4.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#a-common-method"><i class="fa fa-check"></i><b>6.4.3</b> (1) A common method</a></li>
+<li class="chapter" data-level="6.4.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#another-option"><i class="fa fa-check"></i><b>6.4.4</b> (2)Another option</a></li>
+<li class="chapter" data-level="6.4.5" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#saving-plots-in-a-loop"><i class="fa fa-check"></i><b>6.4.5</b> (3) Saving plots in a loop</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><i class="fa fa-check"></i><b>7</b> Descriptive statistics with R: Part I-Quantitative variables {ch6}</a><ul>
+<li class="chapter" data-level="7.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-the-whole-dataset"><i class="fa fa-check"></i><b>7.1</b> For the whole dataset</a></li>
+<li class="chapter" data-level="7.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-single-quantitative-variable"><i class="fa fa-check"></i><b>7.2</b> For a single quantitative variable</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation"><i class="fa fa-check"></i><b>7.2.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.2.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation"><i class="fa fa-check"></i><b>7.2.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-quantitative-variable-by-groups"><i class="fa fa-check"></i><b>7.3</b> For a quantitative variable by groups</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-1"><i class="fa fa-check"></i><b>7.3.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.3.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-1"><i class="fa fa-check"></i><b>7.3.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-two-quantitative-variables"><i class="fa fa-check"></i><b>7.4</b> For two quantitative variables</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-2"><i class="fa fa-check"></i><b>7.4.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-2"><i class="fa fa-check"></i><b>7.4.2</b> Graphical representation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><i class="fa fa-check"></i><b>8</b> Descriptive statistics with R: Part II-Categorical variables and ggplot</a><ul>
+<li class="chapter" data-level="8.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#numerical-representation-3"><i class="fa fa-check"></i><b>8.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="8.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#graphical-representation-3"><i class="fa fa-check"></i><b>8.2</b> Graphical representation</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#barplots"><i class="fa fa-check"></i><b>8.2.1</b> (1) Barplots</a></li>
+<li class="chapter" data-level="8.2.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#dotcharts"><i class="fa fa-check"></i><b>8.2.2</b> (2) Dotcharts</a></li>
+<li class="chapter" data-level="8.2.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#piecharts"><i class="fa fa-check"></i><b>8.2.3</b> (3) Piecharts</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#ggplot2-function"><i class="fa fa-check"></i><b>8.3</b> ggplot2 function</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#a-simple-histogram-for-a-single-quantative-variable"><i class="fa fa-check"></i><b>8.3.1</b> (1)a simple histogram for a single quantative variable</a></li>
+<li class="chapter" data-level="8.3.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-a-quantative-variable-by-groups"><i class="fa fa-check"></i><b>8.3.2</b> (2)for a quantative variable by groups</a></li>
+<li class="chapter" data-level="8.3.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-two-quantitative-variables-1"><i class="fa fa-check"></i><b>8.3.3</b> (3) for two quantitative variables</a></li>
+<li class="chapter" data-level="8.3.4" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-categorial-variable"><i class="fa fa-check"></i><b>8.3.4</b> (4) for categorial variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html"><i class="fa fa-check"></i><b>9</b> Basic statistical tests with R</a><ul>
+<li class="chapter" data-level="9.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-sample-tests"><i class="fa fa-check"></i><b>9.1</b> Two-sample tests</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#t-test"><i class="fa fa-check"></i><b>9.1.1</b> t-test</a></li>
+<li class="chapter" data-level="9.1.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-tests"><i class="fa fa-check"></i><b>9.1.2</b> Nonparametric tests</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#analysis-of-variance"><i class="fa fa-check"></i><b>9.2</b> Analysis Of Variance</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#assumptions-assessment"><i class="fa fa-check"></i><b>9.2.1</b> Assumptions assessment</a></li>
+<li class="chapter" data-level="9.2.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#parametric-test"><i class="fa fa-check"></i><b>9.2.2</b> Parametric test</a></li>
+<li class="chapter" data-level="9.2.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-test"><i class="fa fa-check"></i><b>9.2.3</b> Nonparametric test</a></li>
+<li class="chapter" data-level="9.2.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#multivariate-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.4</b> Multivariate analysis of variance</a></li>
+<li class="chapter" data-level="9.2.5" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-way-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.5</b> Two-way analysis of variance</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#correlation"><i class="fa fa-check"></i><b>9.3</b> Correlation</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#spearmans-"><i class="fa fa-check"></i><b>9.3.1</b> Spearman’s ρ</a></li>
+<li class="chapter" data-level="9.3.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#kendalls-"><i class="fa fa-check"></i><b>9.3.2</b> Kendall’s τ</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#tabular-data"><i class="fa fa-check"></i><b>9.4</b> Tabular data</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#single-proportion"><i class="fa fa-check"></i><b>9.4.1</b> Single proportion</a></li>
+<li class="chapter" data-level="9.4.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-independent-proportions"><i class="fa fa-check"></i><b>9.4.2</b> Two independent proportions</a></li>
+<li class="chapter" data-level="9.4.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#k-proportions"><i class="fa fa-check"></i><b>9.4.3</b> k proportions</a></li>
+<li class="chapter" data-level="9.4.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#r-c-tables"><i class="fa fa-check"></i><b>9.4.4</b> r × c tables</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html"><i class="fa fa-check"></i><b>10</b> Regressions with R-Linear Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>10.1</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#function"><i class="fa fa-check"></i><b>10.1.1</b> Function</a></li>
+<li class="chapter" data-level="10.1.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#output-explanation"><i class="fa fa-check"></i><b>10.1.2</b> Output explanation</a></li>
+<li class="chapter" data-level="10.1.3" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#other-useful-functions-1"><i class="fa fa-check"></i><b>10.1.3</b> Other useful functions</a></li>
+<li class="chapter" data-level="10.1.4" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#fitted-values-and-residuals"><i class="fa fa-check"></i><b>10.1.4</b> Fitted values and residuals</a></li>
+<li class="chapter" data-level="10.1.5" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#prediction-and-confidence-intervals"><i class="fa fa-check"></i><b>10.1.5</b> Prediction and confidence intervals</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>10.2</b> Multiple linear regression</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="survival-analysis.html"><a href="survival-analysis.html"><i class="fa fa-check"></i><b>11</b> Survival analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="survival-analysis.html"><a href="survival-analysis.html#create-the-response-variable"><i class="fa fa-check"></i><b>11.1</b> Create the response variable</a></li>
+<li class="chapter" data-level="11.2" data-path="survival-analysis.html"><a href="survival-analysis.html#kaplan-meier-estimate"><i class="fa fa-check"></i><b>11.2</b> Kaplan-Meier estimate</a></li>
+<li class="chapter" data-level="11.3" data-path="survival-analysis.html"><a href="survival-analysis.html#cumulative-hazard"><i class="fa fa-check"></i><b>11.3</b> Cumulative hazard</a></li>
+<li class="chapter" data-level="11.4" data-path="survival-analysis.html"><a href="survival-analysis.html#the-log-rank-test"><i class="fa fa-check"></i><b>11.4</b> The log-rank test</a></li>
+<li class="chapter" data-level="11.5" data-path="survival-analysis.html"><a href="survival-analysis.html#cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5</b> Cox Proportional Hazards Model</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="survival-analysis.html"><a href="survival-analysis.html#regular-cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5.1</b> Regular Cox proportional hazards model</a></li>
+<li class="chapter" data-level="11.5.2" data-path="survival-analysis.html"><a href="survival-analysis.html#test-for-proportional-hazards"><i class="fa fa-check"></i><b>11.5.2</b> Test for proportional hazards</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><i class="fa fa-check"></i><b>12</b> Bootstrap, analysis of clustered data and non-linear effects</a><ul>
+<li class="chapter" data-level="12.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#bootstrap"><i class="fa fa-check"></i><b>12.1</b> Bootstrap</a></li>
+<li class="chapter" data-level="12.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#analysis-of-clustered-data"><i class="fa fa-check"></i><b>12.2</b> Analysis of clustered data</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#linear-mixed-effects-models"><i class="fa fa-check"></i><b>12.2.1</b> Linear Mixed Effects Models</a></li>
+<li class="chapter" data-level="12.2.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#generalized-estimation-equations-gee-models"><i class="fa fa-check"></i><b>12.2.2</b> Generalized Estimation Equations (GEE) models</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#non-linear-effects"><i class="fa fa-check"></i><b>12.3</b> Non-linear effects</a></li>
+<li class="chapter" data-level="12.4" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#epi-packages--epitab"><i class="fa fa-check"></i><b>12.4</b> Epi packages- Epitab()</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An introduction to R for McGill Epidemiology and Public Health students</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="regressions-with-r-linear-regression" class="section level1">
+<h1><span class="header-section-number">Chapter 10</span> Regressions with R-Linear Regression</h1>
+<p>In the previous lecture, we described some basic statistical tests in R. The main object of this lecture is to show how to perform simple linear regression and multiple regression analysis.</p>
+<p>As the previous lectures, the data set diabetes_new will be used as the example, which contains four quantitative variables: glu, bp, bmi and age; two categorical variable: type and age_cat.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#read in the dataset</span>
+mydata&lt;-<span class="kw">read.csv</span>(<span class="st">&quot;data/diabetes_new.csv&quot;</span>,<span class="dt">header=</span>T)
+<span class="kw">dim</span>(mydata)</code></pre></div>
+<pre><code>## [1] 332   6</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(mydata)</code></pre></div>
+<pre><code>##   glu bp  bmi age type age_cat
+## 1 148 72 33.6  50  Yes   30-50
+## 2  85 66 26.6  31   No   30-50
+## 3  89 66 28.1  21   No    &lt;=30
+## 4  78 50 31.0  26  Yes    &lt;=30
+## 5 197 70 30.5  53  Yes     &gt;50
+## 6 166 72 25.8  51  Yes     &gt;50</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#for simplicity, we sample 100 observations from the original dataset.  </span>
+<span class="kw">set.seed</span>(<span class="dv">2017</span>)
+sample.id&lt;-<span class="kw">sample</span>(<span class="kw">rownames</span>(mydata),<span class="dv">100</span>,<span class="dt">replace=</span>F)
+sample&lt;-mydata[sample.id,]
+<span class="kw">dim</span>(sample)</code></pre></div>
+<pre><code>## [1] 100   6</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(sample)</code></pre></div>
+<pre><code>##     glu bp  bmi age type age_cat
+## 307  94 72 23.1  56   No     &gt;50
+## 178 136 84 35.0  35  Yes   30-50
+## 155 125 50 33.3  28  Yes    &lt;=30
+## 95  162 52 37.2  24  Yes    &lt;=30
+## 253  98 60 34.7  22   No    &lt;=30
+## 328  88 58 28.4  22   No    &lt;=30</code></pre>
+<div id="simple-linear-regression" class="section level2">
+<h2><span class="header-section-number">10.1</span> Simple linear regression</h2>
+<div id="function" class="section level3">
+<h3><span class="header-section-number">10.1.1</span> Function</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># For linear regression analysis, the function lm (linear model) is used</span>
+fit&lt;-<span class="kw">lm</span> (sample<span class="op">$</span>glu<span class="op">~</span>sample<span class="op">$</span>age)
+<span class="kw">print</span>(fit)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = sample$glu ~ sample$age)
+## 
+## Coefficients:
+## (Intercept)   sample$age  
+##     90.2780       0.9417</code></pre>
+<p>We can see that the output of lm is very brief. All we see is the estimated intercept (α) and the estimated slope (β). The best-fitting straight line is seen to be glu = 90.2780 + 0.9417 × age, but no tests of significance are given.</p>
+<p>The result of lm is a model object. This is a distinctive concept of the S language (of which R is a dialect). Whereas other statistical systems focus on generating printed output that can be controlled by setting options, An lm object does in fact contain much more information than we see when it is printed.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(fit)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = sample$glu ~ sample$age)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -54.064 -21.810  -3.564  26.045  78.411 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  90.2780     9.0877   9.934  &lt; 2e-16 ***
+## sample$age    0.9417     0.2736   3.442 0.000851 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 29.76 on 98 degrees of freedom
+## Multiple R-squared:  0.1078, Adjusted R-squared:  0.09873 
+## F-statistic: 11.85 on 1 and 98 DF,  p-value: 0.0008513</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#The format above looks more like what other statistical packages would output. </span></code></pre></div>
+</div>
+<div id="output-explanation" class="section level3">
+<h3><span class="header-section-number">10.1.2</span> Output explanation</h3>
+<p>Let’s dissect the output.</p>
+<pre><code>Call:
+lm(formula = glu ~ age)
+</code></pre>
+<p>As we can see, the first item shown in the output is the formula R used to fit the data.</p>
+<pre><code>Residuals:
+    Min      1Q  Median      3Q     Max 
+-54.064 -21.810  -3.564  26.045  78.411 </code></pre>
+<p>The next item in the model output talks about the residuals. Residuals are essentially the difference between the actual observed response values (glucose level in our case) and the response values that the model predicted. The Residuals section of the model output gives a superficial view of the distribution of the residuals that may be used as a quick check of the distributional assumptions. It breaks it down into 5 summary points. The average of the residuals is zero by definition, so when assessing how well the model fit the data, we should look for a symmetrical distribution across these points on zero. In our example, we can see that the distribution of the residuals do not appear to be symmetrical. That means that the model predicts certain points that fall far away from the actual observed points. We could take this further consider plotting the residuals to see whether this normally distributed.</p>
+<pre><code>Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  90.2780     9.0877   9.934  &lt; 2e-16 ***
+age           0.9417     0.2736   3.442 0.000851 ***</code></pre>
+<p>The next section in the model output talks about the coefficients of the model. Theoretically, in simple linear regression, the coefficients are two unknown constants that represent the intercept and slope terms in the linear model. Except the regression coefficient and the intercept, this time we also have standard errors, t tests, and p-values. The symbols to the right are graphical indicators of the level of significance. The line below the table shows the definition of these indicators; one star means 0.01 &lt; p &lt; 0.05.</p>
+<p>The coefficient t-value is a measure of how many standard deviations our coefficient estimate is far away from 0. We want it to be far away from zero as this would indicate we could reject the null hypothesis - that is, we could declare a relationship between age and glu exist. In our example, the t-statistic values are relatively far away from zero and are large relative to the standard error, which could indicate a relationship exists. In general, t-values are also used to compute p-values.</p>
+<pre><code>Residual standard error: 29.76 on 98 degrees of freedom</code></pre>
+<p>Residual Standard Error is measure of the quality of a linear regression fit. Theoretically, every linear model is assumed to contain an error term E. Due to the presence of this error term, we are not capable of perfectly predicting our response variable (glu) from the predictor (age) one. The Residual Standard Error is the average amount that the response will deviate from the true regression line. In our example, the actual bmi for glu can deviate from the true regression line by approximately 29.76 on average. It’s also worth noting that the Residual Standard Error was calculated with 98 degrees of freedom. Simplistically, degrees of freedom are the number of data points that went into the estimation of the parameters used after taking into account these parameters (restriction). In our case, we had 100 data points and two parameters (intercept and slope).</p>
+<pre><code>Multiple R-squared:  0.1078,    Adjusted R-squared:  0.09873</code></pre>
+<p>The first item above is R2, which in a simple linear regression may be recognized as the squared Pearson correlation coefficient. The other one is the adjusted R2. Adjusted R² measures the goodness of fit of a regression model. The R2 statistic can be recognized as a measure of how well the model is fitting the actual data. It takes the form of a proportion of variance. It always lies between 0 and 1. Higher the R², better is the model. Our R² = 0.09873. It represents our regression that does not explain the variance in the response variable well. Roughly only 9.9% of the variance found in the response variable (glu) can be explained by the predictor variable (age). Please note that in multiple regression settings, the R2 will always increase as more variables are included in the model. That’s why the adjusted R2 is the preferred measure as it adjusts for the number of variables considered.</p>
+<pre><code>F-statistic: 11.85 on 1 and 98 DF,  p-value: 0.0008513</code></pre>
+<p>F-statistic is a good indicator of whether there is a relationship between our predictor and the response variables (whether the regression coefficient is zero). The further the F-statistic is from 1, the better it is. However, how much larger the F-statistic needs to be depends on both the number of data points and the number of predictors. Generally, when the number of data points is large, an F-statistic that is only a little bit larger than 1 is already sufficient to reject the null hypothesis (H0 : There is no relationship between age and glu). If the number of data points is small, a large F-statistic is required to be able to ascertain that there may be a relationship between predictor and response variables. In our example the F-statistic is 11.85 which is relatively larger than 1 given the size of our data.</p>
+</div>
+<div id="other-useful-functions-1" class="section level3">
+<h3><span class="header-section-number">10.1.3</span> Other useful functions</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">coefficients</span>(fit) <span class="co"># model coefficients</span></code></pre></div>
+<pre><code>## (Intercept)  sample$age 
+##  90.2779596   0.9417476</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">confint</span>(fit, <span class="dt">level=</span><span class="fl">0.95</span>) <span class="co"># CIs for model parameters </span></code></pre></div>
+<pre><code>##                  2.5 %     97.5 %
+## (Intercept) 72.2438050 108.312114
+## sample$age   0.3987374   1.484758</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(fit) <span class="co"># anova table </span></code></pre></div>
+<pre><code>## Analysis of Variance Table
+## 
+## Response: sample$glu
+##            Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+## sample$age  1  10492 10491.5  11.845 0.0008513 ***
+## Residuals  98  86801   885.7                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">vcov</span>(fit) <span class="co"># covariance matrix for model parameters </span></code></pre></div>
+<pre><code>##             (Intercept)  sample$age
+## (Intercept)    82.58546 -2.34953025
+## sample$age     -2.34953  0.07487349</code></pre>
+<p>Let’s visualize the regression graphically</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(sample<span class="op">$</span>age,sample<span class="op">$</span>glu,<span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>,<span class="dt">main =</span> <span class="st">&quot;Simple Regression&quot;</span>,<span class="dt">cex =</span> <span class="fl">1.3</span>,<span class="dt">pch =</span> <span class="dv">16</span>,<span class="dt">xlab =</span> <span class="st">&quot;age distribution&quot;</span>,<span class="dt">ylab =</span> <span class="st">&quot;glucose level&quot;</span>)
+<span class="kw">abline</span>(fit,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lwd=</span><span class="dv">3</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/ok-1.png" width="672" /></p>
+</div>
+<div id="fitted-values-and-residuals" class="section level3">
+<h3><span class="header-section-number">10.1.4</span> Fitted values and residuals</h3>
+<p>As shown above, summary can be used to extract information about the results of a regression analysis. Two further extraction functions are fitted and resid.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">fitted</span>(fit)</code></pre></div>
+<pre><code>##        1        2        3        4        5        6        7        8 
+## 143.0158 123.2391 116.6469 112.8799 110.9964 110.9964 110.9964 110.0547 
+##        9       10       11       12       13       14       15       16 
+## 110.9964 113.8217 112.8799 137.3653 115.7051 113.8217 118.5304 138.3071 
+##       17       18       19       20       21       22       23       24 
+## 117.5886 128.8896 117.5886 112.8799 113.8217 113.8217 114.7634 110.0547 
+##       25       26       27       28       29       30       31       32 
+## 110.9964 110.9964 124.1809 133.5984 110.9964 121.3556 115.7051 138.3071 
+##       33       34       35       36       37       38       39       40 
+## 130.7731 126.0644 111.9382 110.9964 124.1809 115.7051 127.0061 117.5886 
+##       41       42       43       44       45       46       47       48 
+## 110.0547 110.0547 127.9479 110.9964 115.7051 133.5984 121.3556 126.0644 
+##       49       50       51       52       53       54       55       56 
+## 132.6566 111.9382 110.9964 129.8314 122.2974 126.0644 125.1226 126.0644 
+##       57       58       59       60       61       62       63       64 
+## 110.9964 137.3653 113.8217 110.9964 129.8314 110.0547 110.9964 166.5595 
+##       65       66       67       68       69       70       71       72 
+## 130.7731 114.7634 111.9382 120.4139 110.9964 127.0061 110.0547 116.6469 
+##       73       74       75       76       77       78       79       80 
+## 110.9964 133.5984 110.0547 112.8799 138.3071 134.5401 117.5886 112.8799 
+##       81       82       83       84       85       86       87       88 
+## 112.8799 110.0547 113.8217 116.6469 136.4236 112.8799 110.9964 132.6566 
+##       89       90       91       92       93       94       95       96 
+## 120.4139 141.1323 110.9964 117.5886 110.0547 117.5886 114.7634 126.0644 
+##       97       98       99      100 
+## 124.1809 125.1226 113.8217 110.0547</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#This returns fitted values — the y-values that we would expect for the given x-values according to the best-fitting straight line, in the present case, glu = 90.2780 + 0.9417 × age.</span>
+<span class="kw">resid</span>(fit)</code></pre></div>
+<pre><code>##             1             2             3             4             5 
+## -49.015826455  12.760873608   8.353106963  49.120097451 -12.996407305 
+##             6             7             8             9            10 
+## -22.996407305 -22.996407305   1.945340317  28.003592695  -4.821650171 
+##            11            12            13            14            15 
+## -29.879902549  10.634659277  10.294854585  -0.821650171  28.469611718 
+##            16            17            18            19            20 
+##  -2.307088345   1.411359340 -34.889612124 -10.588640660  -0.879902549 
+##            21            22            23            24            25 
+##  66.178349829 -13.821650171  47.236602207 -23.054659683 -22.996407305 
+##            26            27            28            29            30 
+##  68.003592695  26.819125986   0.401649766  -7.996407305   6.644368852 
+##            31            32            33            34            35 
+##  36.294854585  27.692911655  39.226892632 -20.064369258 -43.938154927 
+##            36            37            38            39            40 
+## -30.996407305 -41.180874014  30.294854585  32.993883120  71.411359340 
+##            41            42            43            44            45 
+## -26.054659683  20.945340317 -10.947864502 -39.996407305 -12.705145415 
+##            46            47            48            49            50 
+## -15.598350234 -18.355631148 -37.064369258  -7.656602612 -27.938154927 
+##            51            52            53            54            55 
+## -15.996407305 -26.831359746  64.702621230 -54.064369258 -37.122621636 
+##            56            57            58            59            60 
+##   2.935630742 -13.996407305   0.634659277 -26.821650171   0.003592695 
+##            61            62            63            64            65 
+##  26.168640254 -19.054659683 -29.996407305 -32.559517007  11.226892632 
+##            66            67            68            69            70 
+## -18.763397793 -18.938154927 -21.413883526  12.003592695 -31.006116880 
+##            71            72            73            74            75 
+## -21.054659683 -14.646893037  -9.996407305 -49.598350234 -16.054659683 
+##            76            77            78            79            80 
+##   4.120097451  42.692911655  26.459902143  28.411359340 -35.879902549 
+##            81            82            83            84            85 
+##  -0.879902549  28.945340317  -6.821650171  46.353106963  28.576406899 
+##            86            87            88            89            90 
+## -31.879902549   2.003592695 -26.656602612   4.586116474  29.867668789 
+##            91            92            93            94            95 
+##  26.003592695  78.411359340 -11.054659683  28.411359340   5.236602207 
+##            96            97            98            99           100 
+## -17.064369258  49.819125986  18.877378364 -16.821650171   5.945340317</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#This returns the difference between the observed glu value and the fitted values shown above.</span>
+
+<span class="kw">plot</span>(sample<span class="op">$</span>age, sample<span class="op">$</span>glu,<span class="dt">col=</span><span class="st">&quot;skyblue4&quot;</span>,<span class="dt">pch=</span><span class="dv">19</span>)
+<span class="kw">lines</span>(sample<span class="op">$</span>age,<span class="kw">fitted</span>(fit),<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lwd=</span><span class="dv">3</span>)
+<span class="kw">segments</span>(sample<span class="op">$</span>age,<span class="kw">fitted</span>(fit),sample<span class="op">$</span>age,sample<span class="op">$</span>glu,<span class="dt">col=</span><span class="st">&quot;springgreen4&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/ok1-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#This plot is drawn where residuals are displayed by connecting observations to corresponding points on the fitted line</span></code></pre></div>
+<p>When conducting a residual analysis, a “residuals versus fits plot” is frequently created. It is a scatter plot of residuals on the y axis and fitted values on the x axis. The plot is used to detect non-linearity, unequal error variances, and outliers.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">fitted</span>(fit), <span class="kw">resid</span>(fit), <span class="dt">pch=</span><span class="dv">19</span>,<span class="dt">col=</span><span class="st">&quot;skyblue4&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;Residuals&quot;</span>, <span class="dt">xlab=</span><span class="st">&quot;Fitted values&quot;</span>) 
+<span class="kw">abline</span>(<span class="dv">0</span>, <span class="dv">0</span>,<span class="dt">lty=</span><span class="dv">2</span>,<span class="dt">col=</span><span class="st">&quot;green&quot;</span>,<span class="dt">lwd=</span><span class="dv">2</span>)                  <span class="co"># the horizon</span></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/ok2-1.png" width="672" /></p>
+<p>If we are comparing the above two plots, we can find that any data point that falls directly on the estimated regression line has a residual of 0. Therefore, the residual = 0 line corresponds to the estimated regression line.</p>
+<p><strong>Some characteristics of a well-behaved residual vs. fits plot</strong>:</p>
+<p>(1)The residuals “bounce randomly” around the 0 line. This suggests that the assumption that the relationship is linear is reasonable.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>The residuals roughly form a “horizontal band” around the 0 line. This suggests that the variances of the error terms are equal.</p></li>
+<li><p>No one residual “stands out” from the basic random pattern of residuals. This suggests that there are no outliers.</p></li>
+</ol>
+<p><strong>Note</strong>:Interpreting these plots is subjective. It should be with caution to interprete the results based on residual vs. fits plots for small data sets.</p>
+<p>Additionally, we can also find out whether residuals come from a normal distribution by checking for a straight line on a Q–Q plot:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">qqnorm</span>(<span class="kw">resid</span>(fit),<span class="dt">pch=</span><span class="dv">19</span>)
+<span class="kw">qqline</span>(<span class="kw">resid</span>(fit),<span class="dt">col=</span><span class="st">&quot;skyblue4&quot;</span>,<span class="dt">lwd=</span><span class="dv">2</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/ok3-1.png" width="672" /></p>
+</div>
+<div id="prediction-and-confidence-intervals" class="section level3">
+<h3><span class="header-section-number">10.1.5</span> Prediction and confidence intervals</h3>
+<p>Assume that the error term ϵ in the simple linear regression model is independent of x, and is normally distributed, with zero mean and constant variance.</p>
+<p>The basic syntax for predict() in linear regression is:</p>
+<pre><code>predict(object, newdata)</code></pre>
+<p>Where, object is the formula which is already created using the lm() function, newdata is the vector containing the new value for predictor variable.</p>
+<p>If we apply the predict function with no arguments, it just gives the fitted values:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">predict</span>(fit)</code></pre></div>
+<pre><code>##        1        2        3        4        5        6        7        8 
+## 143.0158 123.2391 116.6469 112.8799 110.9964 110.9964 110.9964 110.0547 
+##        9       10       11       12       13       14       15       16 
+## 110.9964 113.8217 112.8799 137.3653 115.7051 113.8217 118.5304 138.3071 
+##       17       18       19       20       21       22       23       24 
+## 117.5886 128.8896 117.5886 112.8799 113.8217 113.8217 114.7634 110.0547 
+##       25       26       27       28       29       30       31       32 
+## 110.9964 110.9964 124.1809 133.5984 110.9964 121.3556 115.7051 138.3071 
+##       33       34       35       36       37       38       39       40 
+## 130.7731 126.0644 111.9382 110.9964 124.1809 115.7051 127.0061 117.5886 
+##       41       42       43       44       45       46       47       48 
+## 110.0547 110.0547 127.9479 110.9964 115.7051 133.5984 121.3556 126.0644 
+##       49       50       51       52       53       54       55       56 
+## 132.6566 111.9382 110.9964 129.8314 122.2974 126.0644 125.1226 126.0644 
+##       57       58       59       60       61       62       63       64 
+## 110.9964 137.3653 113.8217 110.9964 129.8314 110.0547 110.9964 166.5595 
+##       65       66       67       68       69       70       71       72 
+## 130.7731 114.7634 111.9382 120.4139 110.9964 127.0061 110.0547 116.6469 
+##       73       74       75       76       77       78       79       80 
+## 110.9964 133.5984 110.0547 112.8799 138.3071 134.5401 117.5886 112.8799 
+##       81       82       83       84       85       86       87       88 
+## 112.8799 110.0547 113.8217 116.6469 136.4236 112.8799 110.9964 132.6566 
+##       89       90       91       92       93       94       95       96 
+## 120.4139 141.1323 110.9964 117.5886 110.0547 117.5886 114.7634 126.0644 
+##       97       98       99      100 
+## 124.1809 125.1226 113.8217 110.0547</code></pre>
+<p>If we add interval=“confidence” or interval=“prediction”, then we get the vector of predicted values augmented with limits. For a given value of x, the interval estimate of the dependent variable (glucose level) is called the prediction interval.For a given value of x, the interval estimate for the mean of the dependent variable, is called the confidence interval.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">predict</span>(fit,<span class="dt">interval=</span><span class="st">&quot;predict&quot;</span>)</code></pre></div>
+<pre><code>## Warning in predict.lm(fit, interval = &quot;predict&quot;): predictions on current data refer to _future_ responses</code></pre>
+<pre><code>##          fit       lwr      upr
+## 1   143.0158  82.17444 203.8572
+## 2   123.2391  63.85217 182.6261
+## 3   116.6469  57.26411 176.0297
+## 4   112.8799  53.39036 172.3694
+## 5   110.9964  51.42385 170.5690
+## 6   110.9964  51.42385 170.5690
+## 7   110.9964  51.42385 170.5690
+## 8   110.0547  50.43322 169.6761
+## 9   110.9964  51.42385 170.5690
+## 10  113.8217  54.36622 173.2771
+## 11  112.8799  53.39036 172.3694
+## 12  137.3653  77.15591 197.5748
+## 13  115.7051  56.30310 175.1072
+## 14  113.8217  54.36622 173.2771
+## 15  118.5304  59.17125 177.8895
+## 16  138.3071  78.00409 198.6101
+## 17  117.5886  58.22016 176.9571
+## 18  128.8896  69.30577 188.4735
+## 19  117.5886  58.22016 176.9571
+## 20  112.8799  53.39036 172.3694
+## 21  113.8217  54.36622 173.2771
+## 22  113.8217  54.36622 173.2771
+## 23  114.7634  55.33713 174.1897
+## 24  110.0547  50.43322 169.6761
+## 25  110.9964  51.42385 170.5690
+## 26  110.9964  51.42385 170.5690
+## 27  124.1809  64.77347 183.5883
+## 28  133.5984  73.71537 193.4813
+## 29  110.9964  51.42385 170.5690
+## 30  121.3556  61.99470 180.7166
+## 31  115.7051  56.30310 175.1072
+## 32  138.3071  78.00409 198.6101
+## 33  130.7731  71.08425 190.4620
+## 34  126.0644  66.60120 185.5275
+## 35  111.9382  52.40957 171.4667
+## 36  110.9964  51.42385 170.5690
+## 37  124.1809  64.77347 183.5883
+## 38  115.7051  56.30310 175.1072
+## 39  127.0061  67.50765 186.5046
+## 40  117.5886  58.22016 176.9571
+## 41  110.0547  50.43322 169.6761
+## 42  110.0547  50.43322 169.6761
+## 43  127.9479  68.40917 187.4866
+## 44  110.9964  51.42385 170.5690
+## 45  115.7051  56.30310 175.1072
+## 46  133.5984  73.71537 193.4813
+## 47  121.3556  61.99470 180.7166
+## 48  126.0644  66.60120 185.5275
+## 49  132.6566  72.84319 192.4700
+## 50  111.9382  52.40957 171.4667
+## 51  110.9964  51.42385 170.5690
+## 52  129.8314  70.19746 189.4653
+## 53  122.2974  62.92592 181.6688
+## 54  126.0644  66.60120 185.5275
+## 55  125.1226  65.68981 184.5554
+## 56  126.0644  66.60120 185.5275
+## 57  110.9964  51.42385 170.5690
+## 58  137.3653  77.15591 197.5748
+## 59  113.8217  54.36622 173.2771
+## 60  110.9964  51.42385 170.5690
+## 61  129.8314  70.19746 189.4653
+## 62  110.0547  50.43322 169.6761
+## 63  110.9964  51.42385 170.5690
+## 64  166.5595 101.37566 231.7434
+## 65  130.7731  71.08425 190.4620
+## 66  114.7634  55.33713 174.1897
+## 67  111.9382  52.40957 171.4667
+## 68  120.4139  61.05852 179.7693
+## 69  110.9964  51.42385 170.5690
+## 70  127.0061  67.50765 186.5046
+## 71  110.0547  50.43322 169.6761
+## 72  116.6469  57.26411 176.0297
+## 73  110.9964  51.42385 170.5690
+## 74  133.5984  73.71537 193.4813
+## 75  110.0547  50.43322 169.6761
+## 76  112.8799  53.39036 172.3694
+## 77  138.3071  78.00409 198.6101
+## 78  134.5401  74.58272 194.4975
+## 79  117.5886  58.22016 176.9571
+## 80  112.8799  53.39036 172.3694
+## 81  112.8799  53.39036 172.3694
+## 82  110.0547  50.43322 169.6761
+## 83  113.8217  54.36622 173.2771
+## 84  116.6469  57.26411 176.0297
+## 85  136.4236  76.30297 196.5442
+## 86  112.8799  53.39036 172.3694
+## 87  110.9964  51.42385 170.5690
+## 88  132.6566  72.84319 192.4700
+## 89  120.4139  61.05852 179.7693
+## 90  141.1323  80.52032 201.7443
+## 91  110.9964  51.42385 170.5690
+## 92  117.5886  58.22016 176.9571
+## 93  110.0547  50.43322 169.6761
+## 94  117.5886  58.22016 176.9571
+## 95  114.7634  55.33713 174.1897
+## 96  126.0644  66.60120 185.5275
+## 97  124.1809  64.77347 183.5883
+## 98  125.1226  65.68981 184.5554
+## 99  113.8217  54.36622 173.2771
+## 100 110.0547  50.43322 169.6761</code></pre>
+<p>“fit” denotes the expected values, here identical to the fitted values. lwr and upr are the lower and upper confidence limits for the expected values, respectively, the prediction limits for glucose level for new persons with these values of age. The warning in this case does not really mean that anything is wrong, but there is a pitfall: The limits should not be used for evaluating the observed data to which the line has been fitted. Therefore, let’s predict in a new data frame in which the variable wt contains the values at which we want predictions to be made.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="co">#we create a new data frame </span>
+newdata&lt;-<span class="kw">data.frame</span>(<span class="dt">age=</span><span class="kw">seq</span>(<span class="dv">20</span>,<span class="dv">80</span>,<span class="dt">by=</span><span class="dv">5</span>))
+##We now apply the predict function and set the predictor variable in the newdata argument. We also set the interval type as &quot;predict&quot;, and use the default 0.95 confidence level.
+p1 &lt;-<span class="st"> </span><span class="kw">predict</span>(fit, <span class="dt">interval=</span><span class="st">&quot;predict&quot;</span>, <span class="dt">newdata=</span>newdata)</code></pre></div>
+<pre><code>## Warning: &#39;newdata&#39; had 13 rows but variables found have 100 rows</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">##we may also want to know the confidence interval. 
+p2 &lt;-<span class="st"> </span><span class="kw">predict</span>(fit, <span class="dt">interval=</span><span class="st">&quot;confidence&quot;</span>, <span class="dt">newdata=</span>newdata)</code></pre></div>
+<pre><code>## Warning: &#39;newdata&#39; had 13 rows but variables found have 100 rows</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(sample<span class="op">$</span>age,sample<span class="op">$</span>glu,<span class="dt">ylim=</span><span class="kw">range</span>(<span class="dv">50</span>,<span class="dv">200</span>),<span class="dt">pch=</span><span class="dv">19</span>, <span class="dt">col=</span><span class="st">&quot;skyblue4&quot;</span>) <span class="co">#create a standard scatterplot, and we want to ensure that it has enough room for the prediction limits</span>
+pred.age &lt;-<span class="st"> </span>newdata<span class="op">$</span>age
+<span class="kw">matlines</span>(sample<span class="op">$</span>age, p2, <span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>), <span class="dt">col=</span><span class="st">&quot;black&quot;</span>,<span class="dt">lwd=</span><span class="dv">2</span>)
+<span class="kw">matlines</span>(sample<span class="op">$</span>age, p1, <span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">3</span>), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lwd=</span><span class="dv">2</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/ok6-1.png" width="672" /></p>
+<p>Please note from the above figure that the black line is the confidence limits (narrow bands) and the red line is the prediction limits (wide bands).The confidence bands reflect the uncertainty about the line itself. If there are many observations, the bands will be quite narrow, reflecting a well-determined line. These bands often show a marked curvature since the line is better determined near the center of the point cloud. Let’s try:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x&lt;-<span class="kw">data.frame</span>(<span class="dt">age=</span><span class="kw">mean</span>(sample<span class="op">$</span>age))
+<span class="kw">predict</span>(fit,<span class="dt">newdata=</span>x)</code></pre></div>
+<pre><code>## Warning: &#39;newdata&#39; had 1 row but variables found have 100 rows</code></pre>
+<pre><code>##        1        2        3        4        5        6        7        8 
+## 143.0158 123.2391 116.6469 112.8799 110.9964 110.9964 110.9964 110.0547 
+##        9       10       11       12       13       14       15       16 
+## 110.9964 113.8217 112.8799 137.3653 115.7051 113.8217 118.5304 138.3071 
+##       17       18       19       20       21       22       23       24 
+## 117.5886 128.8896 117.5886 112.8799 113.8217 113.8217 114.7634 110.0547 
+##       25       26       27       28       29       30       31       32 
+## 110.9964 110.9964 124.1809 133.5984 110.9964 121.3556 115.7051 138.3071 
+##       33       34       35       36       37       38       39       40 
+## 130.7731 126.0644 111.9382 110.9964 124.1809 115.7051 127.0061 117.5886 
+##       41       42       43       44       45       46       47       48 
+## 110.0547 110.0547 127.9479 110.9964 115.7051 133.5984 121.3556 126.0644 
+##       49       50       51       52       53       54       55       56 
+## 132.6566 111.9382 110.9964 129.8314 122.2974 126.0644 125.1226 126.0644 
+##       57       58       59       60       61       62       63       64 
+## 110.9964 137.3653 113.8217 110.9964 129.8314 110.0547 110.9964 166.5595 
+##       65       66       67       68       69       70       71       72 
+## 130.7731 114.7634 111.9382 120.4139 110.9964 127.0061 110.0547 116.6469 
+##       73       74       75       76       77       78       79       80 
+## 110.9964 133.5984 110.0547 112.8799 138.3071 134.5401 117.5886 112.8799 
+##       81       82       83       84       85       86       87       88 
+## 112.8799 110.0547 113.8217 116.6469 136.4236 112.8799 110.9964 132.6566 
+##       89       90       91       92       93       94       95       96 
+## 120.4139 141.1323 110.9964 117.5886 110.0547 117.5886 114.7634 126.0644 
+##       97       98       99      100 
+## 124.1809 125.1226 113.8217 110.0547</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">y&lt;-<span class="kw">mean</span>(sample<span class="op">$</span>glu)
+<span class="kw">print</span>(y)</code></pre></div>
+<pre><code>## [1] 119.83</code></pre>
+<p>This shows that the predicted value at mean value of x̄ will be the mean value of y ̄, whatever the slope is, and hence the standard error of the fitted value at that point is the standard effor of the mean of the independent variable. At other values of x, there will also be a contribution from the variability of the estimated slope, having increasing influence as you move away from the mean value of x̄.</p>
+<p>The prediction bands include the uncertainty about future observations. These bands should capture the majority of the observed points and will not collapse to a line as the number of observations increases. Rather, the limits approach the true line ±2 standard deviations (for 95% limits).</p>
+</div>
+</div>
+<div id="multiple-linear-regression" class="section level2">
+<h2><span class="header-section-number">10.2</span> Multiple linear regression</h2>
+<p>In the preceding sections, we are only describing one dependent variable and one independent variable. when we conduct statistical tests, we want to make sure that differences in the estimated parameters are ‘real differences’ and not a result of a spurious association i.e. due to the confounding variable. This is can be done by multiple linear regression. R provides comprehensive support for multiple linear regression.</p>
+<p>Let’s conduct a multiple regression analysis:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myfit&lt;-<span class="kw">lm</span>(sample<span class="op">$</span>glu<span class="op">~</span>sample<span class="op">$</span>bp <span class="op">+</span><span class="st"> </span>sample<span class="op">$</span>bmi <span class="op">+</span><span class="st"> </span>sample<span class="op">$</span>age <span class="op">+</span><span class="st"> </span>sample<span class="op">$</span>type)
+<span class="co">#As the simple linear model, we can obtain more outputs with the aid of summary</span>
+<span class="kw">summary</span>(myfit)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = sample$glu ~ sample$bp + sample$bmi + sample$age + 
+##     sample$type)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -63.50 -17.58  -2.22  14.52  51.59 
+## 
+## Coefficients:
+##                Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)     78.9564    15.2456   5.179 1.25e-06 ***
+## sample$bp       -0.2214     0.2076  -1.066   0.2891    
+## sample$bmi       0.8894     0.3655   2.433   0.0168 *  
+## sample$age       0.4854     0.2468   1.967   0.0521 .  
+## sample$typeYes  35.7386     5.6671   6.306 8.97e-09 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 23.43 on 95 degrees of freedom
+## Multiple R-squared:  0.4641, Adjusted R-squared:  0.4415 
+## F-statistic: 20.57 on 4 and 95 DF,  p-value: 3.129e-12</code></pre>
+<p>We can compare nested models with the anova( ) function. We need to ensure that the two models are actually nested.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fit1&lt;-<span class="kw">lm</span>(glu<span class="op">~</span>bp<span class="op">+</span>bmi<span class="op">+</span>age<span class="op">+</span>type, <span class="dt">data =</span> sample)
+fit2&lt;-<span class="kw">lm</span>(glu<span class="op">~</span>type, <span class="dt">data =</span> sample)
+<span class="kw">summary</span>(fit2)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = glu ~ type, data = sample)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -64.606 -17.657  -2.657  15.131  59.343 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  105.657      2.934   36.02  &lt; 2e-16 ***
+## typeYes       42.949      5.107    8.41 3.35e-13 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 24.01 on 98 degrees of freedom
+## Multiple R-squared:  0.4192, Adjusted R-squared:  0.4133 
+## F-statistic: 70.73 on 1 and 98 DF,  p-value: 3.353e-13</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(fit1,fit2)</code></pre></div>
+<pre><code>## Analysis of Variance Table
+## 
+## Model 1: glu ~ bp + bmi + age + type
+## Model 2: glu ~ type
+##   Res.Df   RSS Df Sum of Sq      F  Pr(&gt;F)  
+## 1     95 52142                              
+## 2     98 56507 -3   -4364.7 2.6508 0.05319 .
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#The result returns that  there is no significant improvement of the model once type and bmi are included.Therefore, it may be enough to only include type and bmi into the model.</span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="basic-statistical-tests-with-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="survival-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/09-Linear-regression.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

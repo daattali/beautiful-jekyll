@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>An introduction to R for McGill Epidemiology and Public Health students</title>
+  <meta name="description" content="Introduction to R for McGill Epidemiology and Public Health students">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  
+  <meta name="twitter:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  
+
+<meta name="author" content="Fei Wang &amp; Jay Brophy">
+
+
+<meta name="date" content="2018-01-05">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="data-managements-part-ii-reshape-data-ch4.html">
+<link rel="next" href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html"><i class="fa fa-check"></i><b>2</b> An overview of R: part I {ch2}</a><ul>
+<li class="chapter" data-level="2.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#basic-computations-in-r"><i class="fa fa-check"></i><b>2.1</b> Basic computations in R</a></li>
+<li class="chapter" data-level="2.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#create-an-object"><i class="fa fa-check"></i><b>2.2</b> Create an object</a></li>
+<li class="chapter" data-level="2.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#operators"><i class="fa fa-check"></i><b>2.3</b> Operators</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arithmetic-operators"><i class="fa fa-check"></i><b>2.3.1</b> 2.3.1 Arithmetic operators</a></li>
+<li class="chapter" data-level="2.3.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#relational-operators"><i class="fa fa-check"></i><b>2.3.2</b> Relational operators</a></li>
+<li class="chapter" data-level="2.3.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#logical-operators"><i class="fa fa-check"></i><b>2.3.3</b> Logical operators</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#generate-data"><i class="fa fa-check"></i><b>2.4</b> Generate data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#regular-sequences"><i class="fa fa-check"></i><b>2.4.1</b> Regular sequences</a></li>
+<li class="chapter" data-level="2.4.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#random-sequences"><i class="fa fa-check"></i><b>2.4.2</b> Random sequences</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-types"><i class="fa fa-check"></i><b>2.5</b> Data types</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#vectors"><i class="fa fa-check"></i><b>2.5.1</b> Vectors</a></li>
+<li class="chapter" data-level="2.5.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#lists"><i class="fa fa-check"></i><b>2.5.2</b> Lists</a></li>
+<li class="chapter" data-level="2.5.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#factors"><i class="fa fa-check"></i><b>2.5.3</b> Factors</a></li>
+<li class="chapter" data-level="2.5.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#matrices"><i class="fa fa-check"></i><b>2.5.4</b> Matrices</a></li>
+<li class="chapter" data-level="2.5.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arrays"><i class="fa fa-check"></i><b>2.5.5</b> Arrays</a></li>
+<li class="chapter" data-level="2.5.6" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-frames"><i class="fa fa-check"></i><b>2.5.6</b> Data Frames</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html"><i class="fa fa-check"></i><b>3</b> An overview of R: Part II {ch3}</a><ul>
+<li class="chapter" data-level="3.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#assess-the-values-of-an-object"><i class="fa fa-check"></i><b>3.1</b> Assess the values of an object</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-index-system"><i class="fa fa-check"></i><b>3.1.1</b> Using the index system</a></li>
+<li class="chapter" data-level="3.1.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-names"><i class="fa fa-check"></i><b>3.1.2</b> Using the names</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#get-the-data-into-r"><i class="fa fa-check"></i><b>3.2</b> Get the data into R</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#direct-data-entering"><i class="fa fa-check"></i><b>3.2.1</b> Direct data entering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#use-dataset-that-come-with-r-or-r-packages"><i class="fa fa-check"></i><b>3.2.2</b> Use dataset that come with R or R packages</a></li>
+<li class="chapter" data-level="3.2.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-files"><i class="fa fa-check"></i><b>3.2.3</b> Read in data files</a></li>
+<li class="chapter" data-level="3.2.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-from-the-clipboard"><i class="fa fa-check"></i><b>3.2.4</b> Read in data from the clipboard</a></li>
+<li class="chapter" data-level="3.2.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-remote-data"><i class="fa fa-check"></i><b>3.2.5</b> Read in remote data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#export-data"><i class="fa fa-check"></i><b>3.3</b> Export data</a></li>
+<li class="chapter" data-level="3.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#save-and-load-data-in-r"><i class="fa fa-check"></i><b>3.4</b> Save and load data in R</a></li>
+<li class="chapter" data-level="3.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#view-data"><i class="fa fa-check"></i><b>3.5</b> View data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html"><i class="fa fa-check"></i><b>4</b> Data management: Part I {ch4}</a><ul>
+<li class="chapter" data-level="4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#control-structure"><i class="fa fa-check"></i><b>4.1</b> Control structure</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#for-loop"><i class="fa fa-check"></i><b>4.1.1</b> For loop</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#while-loop"><i class="fa fa-check"></i><b>4.1.2</b> While Loop</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#if-else-loop"><i class="fa fa-check"></i><b>4.1.3</b> If-else Loop</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#repeat-loop"><i class="fa fa-check"></i><b>4.1.4</b> Repeat Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
+<li class="chapter" data-level="4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#dates"><i class="fa fa-check"></i><b>4.3</b> Dates</a></li>
+<li class="chapter" data-level="4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#common-useful-functions"><i class="fa fa-check"></i><b>4.4</b> Common useful functions</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#numeric-functions"><i class="fa fa-check"></i><b>4.4.1</b> Numeric functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#character-functions"><i class="fa fa-check"></i><b>4.4.2</b> Character Functions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#apply-functions-over-a-list-array-dataframe-or-matrix"><i class="fa fa-check"></i><b>4.4.3</b> Apply functions over a list, array, dataframe or matrix</a></li>
+<li class="chapter" data-level="4.4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#other-useful-functions"><i class="fa fa-check"></i><b>4.4.4</b> Other useful functions</a></li>
+<li class="chapter" data-level="4.4.5" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#write-functions"><i class="fa fa-check"></i><b>4.4.5</b> Write functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html"><i class="fa fa-check"></i><b>5</b> Data managements: Part II- Reshape data {ch4}</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#subset-data"><i class="fa fa-check"></i><b>5.1</b> Subset Data</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-variables"><i class="fa fa-check"></i><b>5.1.1</b> Select variables</a></li>
+<li class="chapter" data-level="5.1.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#exclude-variables"><i class="fa fa-check"></i><b>5.1.2</b> Exclude variables</a></li>
+<li class="chapter" data-level="5.1.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-observations"><i class="fa fa-check"></i><b>5.1.3</b> Select Observations</a></li>
+<li class="chapter" data-level="5.1.4" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-both-variables-and-observations"><i class="fa fa-check"></i><b>5.1.4</b> Select both variables and observations</a></li>
+<li class="chapter" data-level="5.1.5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keep-or-delete-variables-using-dplyr-function"><i class="fa fa-check"></i><b>5.1.5</b> Keep or delete variables using dplyr function</a></li>
+<li class="chapter" data-level="5.1.6" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keepdrop-variables-by-name-pattern"><i class="fa fa-check"></i><b>5.1.6</b> Keep/drop variables by name pattern</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data"><i class="fa fa-check"></i><b>5.2</b> Merge Data</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-casesobservations-to-a-dataset"><i class="fa fa-check"></i><b>5.2.1</b> Add cases/observations to a dataset</a></li>
+<li class="chapter" data-level="5.2.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data-frames"><i class="fa fa-check"></i><b>5.2.2</b> Merge Data Frames</a></li>
+<li class="chapter" data-level="5.2.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-more-variables-to-a-dataset"><i class="fa fa-check"></i><b>5.2.3</b> Add more variables to a dataset</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#the-reshape-package"><i class="fa fa-check"></i><b>5.3</b> The Reshape package</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html"><i class="fa fa-check"></i><b>6</b> Base Graphics with R {ch5}</a><ul>
+<li class="chapter" data-level="6.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-functions"><i class="fa fa-check"></i><b>6.1</b> Graphical functions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#high-level-graphical-functions"><i class="fa fa-check"></i><b>6.1.1</b> (1) High-level graphical functions</a></li>
+<li class="chapter" data-level="6.1.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#low-level-functions"><i class="fa fa-check"></i><b>6.1.2</b> (2) Low-level functions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-parameters"><i class="fa fa-check"></i><b>6.2</b> Graphical parameters</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#specify-within-the-high-level-function"><i class="fa fa-check"></i><b>6.2.1</b> 6.2.1 Specify within the high-level function</a></li>
+<li class="chapter" data-level="6.2.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par"><i class="fa fa-check"></i><b>6.2.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#multiple-plots-on-the-one-page"><i class="fa fa-check"></i><b>6.3</b> Multiple plots on the one page</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-layout"><i class="fa fa-check"></i><b>6.3.1</b> Function layout()</a></li>
+<li class="chapter" data-level="6.3.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par-1"><i class="fa fa-check"></i><b>6.3.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-a-plot"><i class="fa fa-check"></i><b>6.4</b> Save a plot</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-by-menu-click"><i class="fa fa-check"></i><b>6.4.1</b> Save plots by menu click</a></li>
+<li class="chapter" data-level="6.4.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-using-functions"><i class="fa fa-check"></i><b>6.4.2</b> Save plots using functions</a></li>
+<li class="chapter" data-level="6.4.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#a-common-method"><i class="fa fa-check"></i><b>6.4.3</b> (1) A common method</a></li>
+<li class="chapter" data-level="6.4.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#another-option"><i class="fa fa-check"></i><b>6.4.4</b> (2)Another option</a></li>
+<li class="chapter" data-level="6.4.5" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#saving-plots-in-a-loop"><i class="fa fa-check"></i><b>6.4.5</b> (3) Saving plots in a loop</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><i class="fa fa-check"></i><b>7</b> Descriptive statistics with R: Part I-Quantitative variables {ch6}</a><ul>
+<li class="chapter" data-level="7.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-the-whole-dataset"><i class="fa fa-check"></i><b>7.1</b> For the whole dataset</a></li>
+<li class="chapter" data-level="7.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-single-quantitative-variable"><i class="fa fa-check"></i><b>7.2</b> For a single quantitative variable</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation"><i class="fa fa-check"></i><b>7.2.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.2.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation"><i class="fa fa-check"></i><b>7.2.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-quantitative-variable-by-groups"><i class="fa fa-check"></i><b>7.3</b> For a quantitative variable by groups</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-1"><i class="fa fa-check"></i><b>7.3.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.3.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-1"><i class="fa fa-check"></i><b>7.3.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-two-quantitative-variables"><i class="fa fa-check"></i><b>7.4</b> For two quantitative variables</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-2"><i class="fa fa-check"></i><b>7.4.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-2"><i class="fa fa-check"></i><b>7.4.2</b> Graphical representation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><i class="fa fa-check"></i><b>8</b> Descriptive statistics with R: Part II-Categorical variables and ggplot</a><ul>
+<li class="chapter" data-level="8.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#numerical-representation-3"><i class="fa fa-check"></i><b>8.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="8.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#graphical-representation-3"><i class="fa fa-check"></i><b>8.2</b> Graphical representation</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#barplots"><i class="fa fa-check"></i><b>8.2.1</b> (1) Barplots</a></li>
+<li class="chapter" data-level="8.2.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#dotcharts"><i class="fa fa-check"></i><b>8.2.2</b> (2) Dotcharts</a></li>
+<li class="chapter" data-level="8.2.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#piecharts"><i class="fa fa-check"></i><b>8.2.3</b> (3) Piecharts</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#ggplot2-function"><i class="fa fa-check"></i><b>8.3</b> ggplot2 function</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#a-simple-histogram-for-a-single-quantative-variable"><i class="fa fa-check"></i><b>8.3.1</b> (1)a simple histogram for a single quantative variable</a></li>
+<li class="chapter" data-level="8.3.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-a-quantative-variable-by-groups"><i class="fa fa-check"></i><b>8.3.2</b> (2)for a quantative variable by groups</a></li>
+<li class="chapter" data-level="8.3.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-two-quantitative-variables-1"><i class="fa fa-check"></i><b>8.3.3</b> (3) for two quantitative variables</a></li>
+<li class="chapter" data-level="8.3.4" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-categorial-variable"><i class="fa fa-check"></i><b>8.3.4</b> (4) for categorial variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html"><i class="fa fa-check"></i><b>9</b> Basic statistical tests with R</a><ul>
+<li class="chapter" data-level="9.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-sample-tests"><i class="fa fa-check"></i><b>9.1</b> Two-sample tests</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#t-test"><i class="fa fa-check"></i><b>9.1.1</b> t-test</a></li>
+<li class="chapter" data-level="9.1.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-tests"><i class="fa fa-check"></i><b>9.1.2</b> Nonparametric tests</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#analysis-of-variance"><i class="fa fa-check"></i><b>9.2</b> Analysis Of Variance</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#assumptions-assessment"><i class="fa fa-check"></i><b>9.2.1</b> Assumptions assessment</a></li>
+<li class="chapter" data-level="9.2.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#parametric-test"><i class="fa fa-check"></i><b>9.2.2</b> Parametric test</a></li>
+<li class="chapter" data-level="9.2.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-test"><i class="fa fa-check"></i><b>9.2.3</b> Nonparametric test</a></li>
+<li class="chapter" data-level="9.2.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#multivariate-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.4</b> Multivariate analysis of variance</a></li>
+<li class="chapter" data-level="9.2.5" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-way-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.5</b> Two-way analysis of variance</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#correlation"><i class="fa fa-check"></i><b>9.3</b> Correlation</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#spearmans-"><i class="fa fa-check"></i><b>9.3.1</b> Spearman’s ρ</a></li>
+<li class="chapter" data-level="9.3.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#kendalls-"><i class="fa fa-check"></i><b>9.3.2</b> Kendall’s τ</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#tabular-data"><i class="fa fa-check"></i><b>9.4</b> Tabular data</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#single-proportion"><i class="fa fa-check"></i><b>9.4.1</b> Single proportion</a></li>
+<li class="chapter" data-level="9.4.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-independent-proportions"><i class="fa fa-check"></i><b>9.4.2</b> Two independent proportions</a></li>
+<li class="chapter" data-level="9.4.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#k-proportions"><i class="fa fa-check"></i><b>9.4.3</b> k proportions</a></li>
+<li class="chapter" data-level="9.4.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#r-c-tables"><i class="fa fa-check"></i><b>9.4.4</b> r × c tables</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html"><i class="fa fa-check"></i><b>10</b> Regressions with R-Linear Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>10.1</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#function"><i class="fa fa-check"></i><b>10.1.1</b> Function</a></li>
+<li class="chapter" data-level="10.1.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#output-explanation"><i class="fa fa-check"></i><b>10.1.2</b> Output explanation</a></li>
+<li class="chapter" data-level="10.1.3" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#other-useful-functions-1"><i class="fa fa-check"></i><b>10.1.3</b> Other useful functions</a></li>
+<li class="chapter" data-level="10.1.4" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#fitted-values-and-residuals"><i class="fa fa-check"></i><b>10.1.4</b> Fitted values and residuals</a></li>
+<li class="chapter" data-level="10.1.5" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#prediction-and-confidence-intervals"><i class="fa fa-check"></i><b>10.1.5</b> Prediction and confidence intervals</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>10.2</b> Multiple linear regression</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="survival-analysis.html"><a href="survival-analysis.html"><i class="fa fa-check"></i><b>11</b> Survival analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="survival-analysis.html"><a href="survival-analysis.html#create-the-response-variable"><i class="fa fa-check"></i><b>11.1</b> Create the response variable</a></li>
+<li class="chapter" data-level="11.2" data-path="survival-analysis.html"><a href="survival-analysis.html#kaplan-meier-estimate"><i class="fa fa-check"></i><b>11.2</b> Kaplan-Meier estimate</a></li>
+<li class="chapter" data-level="11.3" data-path="survival-analysis.html"><a href="survival-analysis.html#cumulative-hazard"><i class="fa fa-check"></i><b>11.3</b> Cumulative hazard</a></li>
+<li class="chapter" data-level="11.4" data-path="survival-analysis.html"><a href="survival-analysis.html#the-log-rank-test"><i class="fa fa-check"></i><b>11.4</b> The log-rank test</a></li>
+<li class="chapter" data-level="11.5" data-path="survival-analysis.html"><a href="survival-analysis.html#cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5</b> Cox Proportional Hazards Model</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="survival-analysis.html"><a href="survival-analysis.html#regular-cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5.1</b> Regular Cox proportional hazards model</a></li>
+<li class="chapter" data-level="11.5.2" data-path="survival-analysis.html"><a href="survival-analysis.html#test-for-proportional-hazards"><i class="fa fa-check"></i><b>11.5.2</b> Test for proportional hazards</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><i class="fa fa-check"></i><b>12</b> Bootstrap, analysis of clustered data and non-linear effects</a><ul>
+<li class="chapter" data-level="12.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#bootstrap"><i class="fa fa-check"></i><b>12.1</b> Bootstrap</a></li>
+<li class="chapter" data-level="12.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#analysis-of-clustered-data"><i class="fa fa-check"></i><b>12.2</b> Analysis of clustered data</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#linear-mixed-effects-models"><i class="fa fa-check"></i><b>12.2.1</b> Linear Mixed Effects Models</a></li>
+<li class="chapter" data-level="12.2.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#generalized-estimation-equations-gee-models"><i class="fa fa-check"></i><b>12.2.2</b> Generalized Estimation Equations (GEE) models</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#non-linear-effects"><i class="fa fa-check"></i><b>12.3</b> Non-linear effects</a></li>
+<li class="chapter" data-level="12.4" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#epi-packages--epitab"><i class="fa fa-check"></i><b>12.4</b> Epi packages- Epitab()</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An introduction to R for McGill Epidemiology and Public Health students</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="base-graphics-with-r-ch5" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Base Graphics with R {ch5}</h1>
+<p>One of the main reasons data analysts turn to R is for its strong graphic capabilities.To see some of the possibilities that R offers, enter:</p>
+<pre><code>demo(graphics)</code></pre>
+<p>There are two kinds of graphical functions: <strong>the high-level plotting functions</strong> which create a new graph, and <strong>the low-level plotting functions</strong> which add elements to an existing graph. The graphs are produced with respect to <strong>graphical parameters</strong> which are defined by default and can be modified with the function <strong>par</strong>.</p>
+<div id="graphical-functions" class="section level2">
+<h2><span class="header-section-number">6.1</span> Graphical functions</h2>
+<div id="high-level-graphical-functions" class="section level3">
+<h3><span class="header-section-number">6.1.1</span> (1) High-level graphical functions</h3>
+<p>Here are some of the high-level graphical functions. For each function, the options may be found with the on-line help in R.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-108">Table 6.1: </span>High-level graphical functions</caption>
+<thead>
+<tr class="header">
+<th align="left">names</th>
+<th align="left">annotation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">plot(x)</td>
+<td align="left">plot of the values of x (on the y-axis) ordered on the x-axis</td>
+</tr>
+<tr class="even">
+<td align="left">plot(x,y)</td>
+<td align="left">bivariate plot of x (on the x-axis) and y (on the y-axis)</td>
+</tr>
+<tr class="odd">
+<td align="left">pie(x)</td>
+<td align="left">pie-chart</td>
+</tr>
+<tr class="even">
+<td align="left">boxplot(x)</td>
+<td align="left">“box-and-whiskers” plot</td>
+</tr>
+<tr class="odd">
+<td align="left">stripchart(x)</td>
+<td align="left">plot of the values of x on a line (an alternative to boxplot() for small sample sizes)</td>
+</tr>
+<tr class="even">
+<td align="left">coplot(x~y|z</td>
+<td align="left">bivariate plot of x and y for each value (or interval of values) of z</td>
+</tr>
+<tr class="odd">
+<td align="left">pairs(x)</td>
+<td align="left">if x is a matrix or a data frame, draws all possible bivariate plots between the columns of x</td>
+</tr>
+<tr class="even">
+<td align="left">hist(x)</td>
+<td align="left">histogram of the frequencies of x</td>
+</tr>
+<tr class="odd">
+<td align="left">barplot(x)</td>
+<td align="left">histogram of the values of x</td>
+</tr>
+<tr class="even">
+<td align="left">qqnorm(x)</td>
+<td align="left">quantiles of x with respect to the values expected under a normal law</td>
+</tr>
+<tr class="odd">
+<td align="left">qqplot(x,y)</td>
+<td align="left">quantiles of y with respect to the quantiles of x</td>
+</tr>
+</tbody>
+</table>
+<p>Some of these options are identical for several graphical functions; here are the main ones (with their possible default values):</p>
+<table>
+<caption><span id="tab:unnamed-chunk-109">Table 6.2: </span>Graphical Parameters</caption>
+<thead>
+<tr class="header">
+<th align="left">names</th>
+<th align="left">annotation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">add=FALSE</td>
+<td align="left">if TRUE superposes the plot on the previous one (if it exists)</td>
+</tr>
+<tr class="even">
+<td align="left">axes=TRUE</td>
+<td align="left">if FALSE does not draw the axes and the box</td>
+</tr>
+<tr class="odd">
+<td align="left">type=p</td>
+<td align="left">specifies the type of plot, ‘p’: points, ‘l’: lines, ‘b’: points connected by lines, ‘o’: similar to ‘b’, but the lines are over the points, ‘h’: vertical lines, ‘s’: steps, the data are represented by the top of the vertical lines, ‘S’: similar to ‘s’ but the data are represented by the bottom of the vertical lines</td>
+</tr>
+<tr class="even">
+<td align="left">xlim=, ylim=</td>
+<td align="left">specifies the lower and upper limits of the axes, for ex- ample with xlim=c(1, 10) or xlim=range(x)</td>
+</tr>
+<tr class="odd">
+<td align="left">xlab=, ylab=</td>
+<td align="left">annotates the axes, must be variables of mode character</td>
+</tr>
+<tr class="even">
+<td align="left">main=</td>
+<td align="left">main title, must be a variable of mode character</td>
+</tr>
+<tr class="odd">
+<td align="left">sub=</td>
+<td align="left">sub-title (written in a smaller font)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="low-level-functions" class="section level3">
+<h3><span class="header-section-number">6.1.2</span> (2) Low-level functions</h3>
+<p>R has a set of graphical functions which affect an already existing graph:</p>
+<table>
+<caption><span id="tab:unnamed-chunk-110">Table 6.3: </span>Low-level Functions</caption>
+<thead>
+<tr class="header">
+<th align="left">names</th>
+<th align="left">annotation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">points(x, y)</td>
+<td align="left">add points (the option type= can be used)</td>
+</tr>
+<tr class="even">
+<td align="left">lines(x, y)</td>
+<td align="left">add lines</td>
+</tr>
+<tr class="odd">
+<td align="left">text(x, y, labels,…)</td>
+<td align="left">add text given by labels at coordinates (x,y)</td>
+</tr>
+<tr class="even">
+<td align="left">mtext(text,side=3, line=0,…)</td>
+<td align="left">add text given by text in the margin specified by side; line specifies the line from the plotting area</td>
+</tr>
+<tr class="odd">
+<td align="left">segments(x0, y0, x1, y1)</td>
+<td align="left">draw lines from points (x0,y0) to points (x1,y1)</td>
+</tr>
+<tr class="even">
+<td align="left">arrows(x0, y0,x1, y1, angle= 30, code=2)</td>
+<td align="left">draw arrows at points (x0,y0) if code=2, at points (x1,y1) if code=1, or both if code=3; angle controls the angle from the shaft of the arrow to the edge of the arrow head</td>
+</tr>
+<tr class="odd">
+<td align="left">abline(a,b)</td>
+<td align="left">draw a line of slope b and intercept a</td>
+</tr>
+<tr class="even">
+<td align="left">abline(h=y)</td>
+<td align="left">draw a horizontal line at ordinate y</td>
+</tr>
+<tr class="odd">
+<td align="left">abline(v=x)</td>
+<td align="left">draw a vertical line at abcissa x</td>
+</tr>
+<tr class="even">
+<td align="left">abline(lm.obj)</td>
+<td align="left">draw the regression line given by lm.obj</td>
+</tr>
+<tr class="odd">
+<td align="left">rect(x1, y1, x2,y2)</td>
+<td align="left">draw a rectangle which left, right, bottom, and top limits are x1, x2, y1, and y2, respectively</td>
+</tr>
+<tr class="even">
+<td align="left">polygon(x, y)</td>
+<td align="left">draw a polygon linking the points with coordinates given by x and y</td>
+</tr>
+<tr class="odd">
+<td align="left">legend(x, y,legend)</td>
+<td align="left">add the legend at the point (x,y) with the symbols given by legend</td>
+</tr>
+<tr class="even">
+<td align="left">title()</td>
+<td align="left">add a title and optionally a sub-title</td>
+</tr>
+<tr class="odd">
+<td align="left">axis(side, vect)</td>
+<td align="left">add an axis at the bottom (side=1), on the left (2), at the top (3), or on the right (4); vect (optional) gives the abcissa (or ordinates) where tick-marks are drawn</td>
+</tr>
+<tr class="even">
+<td align="left">box()</td>
+<td align="left">add a box around the current plot</td>
+</tr>
+<tr class="odd">
+<td align="left">rug(x)</td>
+<td align="left">draw the data x on the x-axis as small vertical lines</td>
+</tr>
+<tr class="even">
+<td align="left">locator(n,type=‘n’, …)</td>
+<td align="left">return the coordinates (x,y) after the user has clicked n times on the plot with the mouse; also draws symbols (type=‘p’) or lines (type=‘l’) with respect to optional graphic</td>
+</tr>
+</tbody>
+</table>
+<p>Example 1:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+y &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+<span class="kw">plot</span>(x,y)<span class="co">#The plot( ) function opens a graph window and plots x vs.y</span>
+<span class="kw">abline</span>(<span class="kw">lm</span>(y<span class="op">~</span>x))<span class="co">#This code adds a regression line to this graph.</span></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-111-1.png" width="672" /></p>
+<p>Example 2:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+y &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+<span class="kw">plot</span>(x,y,<span class="dt">axes=</span>F,<span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>),<span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))<span class="co">#do not draw axes</span>
+<span class="kw">axis</span>(<span class="dv">1</span>,<span class="dt">at=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>,<span class="op">-</span><span class="fl">1.5</span>,<span class="op">-</span><span class="dv">1</span>,<span class="op">-</span><span class="fl">0.5</span>,<span class="dv">0</span>,<span class="fl">0.5</span>,<span class="dv">1</span>,<span class="fl">1.5</span>,<span class="dv">2</span>))<span class="co">#axis at the bottom</span>
+<span class="kw">axis</span>(<span class="dv">2</span>,<span class="dt">at=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>,<span class="op">-</span>.<span class="dv">15</span>,<span class="op">-</span><span class="dv">1</span>,<span class="op">-</span><span class="fl">0.5</span>,<span class="dv">0</span>,<span class="fl">0.5</span>,<span class="dv">1</span>,<span class="fl">1.5</span>,<span class="dv">2</span>))<span class="co">#axis on the left</span>
+<span class="kw">abline</span>(<span class="dt">h=</span><span class="dv">0</span>)<span class="co">#draw a horizontal line at y=0</span></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-112-1.png" width="672" /></p>
+<p>Example 3:</p>
+<p>Sometimes we may want to overlay the plots in order to compare the results. However, calling plot() multiple times will have the effect of plotting the current graph on the same window replacing the previous one.To overlay the plots, we can create the initial plot and then add additional information to the plot.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(x, 
+ <span class="dt">main=</span><span class="st">&quot;Overlaying Graphs&quot;</span>,
+ <span class="dt">ylab=</span><span class="st">&quot;&quot;</span>,
+ <span class="dt">type=</span><span class="st">&quot;l&quot;</span>,
+ <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>)
+
+<span class="kw">lines</span>(y, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)
+
+<span class="kw">legend</span>(<span class="st">&quot;topleft&quot;</span>,
+      <span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,<span class="st">&quot;y&quot;</span>),
+      <span class="dt">fill=</span><span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;red&quot;</span>)
+)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-113-1.png" width="672" /></p>
+</div>
+</div>
+<div id="graphical-parameters" class="section level2">
+<h2><span class="header-section-number">6.2</span> Graphical parameters</h2>
+<p>In addition to plotting commands, the presentation of graphics can be improved with graphical parameters. We can customize many features of the graphs (fonts, colors, axes, titles) through graphic options.</p>
+<div id="specify-within-the-high-level-function" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> 6.2.1 Specify within the high-level function</h3>
+<p>One way to specify graphical parameters is by providing the optionname=value pairs directly to a high level plotting function. In this case, the options are only in effect for that specific graph.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Set a graphical parameter within the plotting function </span>
+<span class="kw">plot</span>(x, <span class="dt">col.axis=</span><span class="st">&quot;blue&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-114-1.png" width="672" /></p>
+<p>But it does not work for all. See the help for a specific high level plotting function (e.g. plot, hist, boxplot) to determine which graphical parameters can be set this way.</p>
+</div>
+<div id="function-par" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Function par()</h3>
+<p>Another way to change the graphical parameters is with the function par(). If we set parameter values here, the changes will be in effect for the rest of the session or until we change them again.</p>
+<pre><code>par()              # view current settings</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Set a graphical parameter using par()</span>
+opar &lt;-<span class="st"> </span><span class="kw">par</span>()<span class="co"># make a copy of current settings</span>
+<span class="kw">par</span>(<span class="dt">bg=</span><span class="st">&quot;lightyellow&quot;</span>, <span class="dt">col.axis=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">mar=</span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">2.5</span>, <span class="fl">0.25</span>)) <span class="co">#Three parameters are then modified: bg for the colour of the background, col.axis for the colour of the numbers on the axes, and mar for the sizes of the margins around the plotting region. </span>
+<span class="kw">plot</span>(x, y, <span class="dt">xlab=</span><span class="st">&quot;Ten random values&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Ten other values&quot;</span>,
+<span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>), <span class="dt">pch=</span><span class="dv">22</span>, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">bg=</span><span class="st">&quot;yellow&quot;</span>,
+<span class="dt">bty=</span><span class="st">&quot;l&quot;</span>, <span class="dt">tcl=</span><span class="op">-</span>.<span class="dv">25</span>, <span class="dt">las=</span><span class="dv">1</span>, <span class="dt">cex=</span><span class="fl">1.5</span>)<span class="co"># create a plot with these new settings </span>
+<span class="kw">title</span>(<span class="st">&quot;Hypothetical Example&quot;</span>, <span class="dt">font.main=</span><span class="dv">3</span>, <span class="dt">adj=</span><span class="dv">1</span>) </code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-115-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">par</span>(opar)          <span class="co"># restore original settings</span></code></pre></div>
+<pre><code>## Warning in par(opar): graphical parameter &quot;cin&quot; cannot be set</code></pre>
+<pre><code>## Warning in par(opar): graphical parameter &quot;cra&quot; cannot be set</code></pre>
+<pre><code>## Warning in par(opar): graphical parameter &quot;csi&quot; cannot be set</code></pre>
+<pre><code>## Warning in par(opar): graphical parameter &quot;cxy&quot; cannot be set</code></pre>
+<pre><code>## Warning in par(opar): graphical parameter &quot;din&quot; cannot be set</code></pre>
+<pre><code>## Warning in par(opar): graphical parameter &quot;page&quot; cannot be set</code></pre>
+<p>There are 73 graphical parameters, some of them have very similar functions. The exhaustive list of these parameters can be read with <strong>?par</strong>. Now some usual codes are shown below.</p>
+<p>(1)Text and Symbol Size</p>
+<pre><code>cex # number indicating the amount by which plotting text and symbols should be scaled relative to the default. 1=default, 1.5 is 50% larger, 0.5 is 50% smaller, etc.
+cex.axis #magnification of axis annotation relative to cex
+cex.lab #magnification of x and y labels relative to cex
+cex.main    #magnification of titles relative to cex
+cex.sub #magnification of subtitles relative to cex</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Plotting symbols</li>
+</ol>
+<p>Use the pch= option to control the type of symbols.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span>,<span class="dv">25</span>)
+<span class="kw">plot</span>(x, <span class="dt">pch =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">25</span>, <span class="dt">axes =</span> F, <span class="dt">xlab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>)
+<span class="kw">text</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">25</span>,.<span class="dv">95</span>,<span class="dt">labels =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">25</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-116-1.png" width="672" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Lines</li>
+</ol>
+<p>We can change lines using the following options. This is particularly useful for reference lines, axes, and fit lines.</p>
+<pre><code>lty #controls the type of lines, can be an integer (1: solid, 2: dashed, 3: dotted, 4: dotdash, 5: longdash, 6: twodash), or a string of up to eight characters (between &quot;0&quot; and &quot;9&quot;) which specifies alternatively the length, in points or pixels, of the drawn elements and the blanks, for example lty=&quot;44&quot; will have the same effet than lty=2
+lwd #a numeric which controls the width of lines</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Fonts</li>
+</ol>
+<p>It is also possible to set font size and style</p>
+<pre><code>font #Integer specifying font to use for text. 1=plain, 2=bold, 3=italic, 4=bold italic, 5=symbol
+font.axis #font for axis annotation
+font.lab    #font for x and y labels
+font.main   #font for titles
+font.sub    #font for subtitles
+ps  #font point size (roughly 1/72 inch) text size=ps*cex
+family  #font family for drawing text. Standard values are &quot;serif&quot;, &quot;sans&quot;, &quot;mono&quot;, &quot;symbol&quot;. Mapping is device dependent.</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Colors</li>
+</ol>
+<p>We can visually improve our plots by coloring them. This is generally done with the col graphical parameter.To set the colors:</p>
+<pre><code>col #controls the colour of symbols
+col.axis #color of axis 
+col.lab #color of x and y labels 
+col.main    #color of titles 
+col.sub #color of subtitles</code></pre>
+<p>657 colors are available in R. To see their names, just type :</p>
+<pre><code>colors()</code></pre>
+<p>This returns a vector of all the color names in alphabetical order with the first element being white. We can color the plot by indexing this vector.</p>
+<p>Then it is easy to call one of these colors for a plot:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>) , <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>) , <span class="dt">axes=</span>F , <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;blue&quot;</span> , <span class="st">&quot;Darkgreen&quot;</span>) , <span class="dt">pch=</span><span class="dv">20</span> , <span class="dt">cex=</span><span class="dv">14</span> , <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3</span>),<span class="dt">xlab=</span><span class="st">&quot;&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-117-1.png" width="672" /></p>
+<p>If we need severals colors in the same palette, we can use one of the folowing functions :</p>
+<pre><code>rainbow() 
+heat.colors() 
+terrain.colors() 
+topo.colors() 
+cm.colors()</code></pre>
+<p>For example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">heat.colors</span>(<span class="dv">5</span> , <span class="dt">alpha=</span><span class="fl">0.4</span>)<span class="co">#we have to indicate the number of different colors we want, and the transparency needed.</span></code></pre></div>
+<pre><code>## [1] &quot;#FF000066&quot; &quot;#FF550066&quot; &quot;#FFAA0066&quot; &quot;#FFFF0066&quot; &quot;#FFFF8066&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="dv">20</span>
+y &lt;-<span class="st"> </span><span class="op">-</span><span class="kw">sin</span>(<span class="dv">3</span><span class="op">*</span>pi<span class="op">*</span>((<span class="dv">1</span><span class="op">:</span>n)<span class="op">-</span><span class="dv">1</span><span class="op">/</span><span class="dv">2</span>)<span class="op">/</span>n)
+<span class="kw">plot</span>(y, <span class="dt">axes =</span> <span class="ot">FALSE</span>, <span class="dt">frame.plot =</span> <span class="ot">TRUE</span>, <span class="dt">xlab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">pch =</span> <span class="dv">21</span>, <span class="dt">cex =</span> <span class="dv">30</span>, 
+     <span class="dt">bg =</span> <span class="kw">rainbow</span>(n, <span class="dt">alpha=</span><span class="fl">0.4</span>))</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-119-1.png" width="672" /></p>
+<p><strong>Use the rgb() function</strong></p>
+<p>The function rgb() allows us to specify red, green and blue component with a number between 0 and 1.</p>
+<pre><code>rgb(red, green, blue, alpha) # The arguments indicate: quantity of red (between 0 and 1), quantity of green, quantity of blue,and finally transparency.</code></pre>
+<p>For example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>) , <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>) , <span class="dt">axes=</span>F , <span class="dt">col=</span><span class="kw">c</span>(<span class="kw">rgb</span>(<span class="dv">1</span>,<span class="fl">0.5</span>,<span class="fl">0.1</span>,<span class="fl">0.5</span>),<span class="kw">rgb</span>(<span class="fl">0.5</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="fl">0.5</span>)) , <span class="dt">pch=</span><span class="dv">20</span> , <span class="dt">cex=</span><span class="dv">14</span> , <span class="dt">xlim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3</span>),<span class="dt">xlab=</span><span class="st">&quot;&quot;</span>,<span class="dt">ylab=</span><span class="st">&quot;&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-120-1.png" width="672" /></p>
+<p>Some examples for the graphic parameters:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Create data:</span>
+x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+y &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+<span class="co">#plot</span>
+<span class="kw">plot</span>(x, y, <span class="dt">xlab=</span><span class="st">&quot;Ten random values&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Ten other values&quot;</span>, ##xlab and ylab change the axis labels which, by default, were the names of the variables
+     <span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">2</span>, <span class="dv">2</span>), <span class="co">#xlim and ylim allow us to define the limits on both axes</span>
+     <span class="dt">pch=</span><span class="dv">22</span>,      <span class="co">#pch is used  as an option: pch=22 specifies a square</span>
+     <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,   <span class="co">#controls the colour of symbols</span>
+     <span class="dt">bg=</span><span class="st">&quot;yellow&quot;</span>, <span class="co">#specifies the colour of the background</span>
+     <span class="dt">bty=</span><span class="st">&quot;l&quot;</span>,     <span class="co">#controls the type of box drawn around the plot</span>
+<span class="dt">main=</span><span class="st">&quot;Hypothetical Example&quot;</span>,<span class="co"># a title is added</span>
+<span class="dt">las=</span><span class="dv">1</span>,   <span class="co">#an integer which controls the orientation of the axis labels (0: parallel to the axes, 1: horizontal, 2: perpendicular to the axes, 3: vertical)</span>
+<span class="dt">cex=</span><span class="fl">1.5</span>  <span class="co">#a value controlling the size of texts and symbols </span>
+)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-121-1.png" width="672" /></p>
+<p>Some handy plotting parameters</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">attach</span>(mtcars)
+<span class="kw">plot</span>(disp,mpg,
+     <span class="dt">main =</span> <span class="st">&quot;MPG vs. Displacement&quot;</span>,    <span class="co"># Add a title</span>
+     <span class="dt">type =</span> <span class="st">&quot;p&quot;</span>,
+     <span class="dt">col =</span> <span class="st">&quot;grey&quot;</span>,                     <span class="co"># Change the color of the points</span>
+     <span class="dt">pch =</span> <span class="dv">16</span>,                         <span class="co"># Change the plotting symbol  see help(points)</span>
+     <span class="dt">cex =</span> <span class="dv">1</span>,                          <span class="co"># Change size of plotting symbol     </span>
+     <span class="dt">xlab =</span> <span class="st">&quot;Displacement (cu. in)&quot;</span>,   <span class="co"># Add a label on the x-axis</span>
+     <span class="dt">ylab =</span> <span class="st">&quot;Miles per Gallon&quot;</span>,        <span class="co"># Add a label on the y-axis</span>
+     <span class="dt">bty =</span> <span class="st">&quot;n&quot;</span>,                        <span class="co"># Remove the box around the plot</span>
+     <span class="co">#asp = 1,                         # Change the y/x aspect ratio see help(plot)</span>
+     <span class="dt">font.axis =</span> <span class="dv">1</span>,                    <span class="co"># Change axis font to bold italic</span>
+     <span class="dt">col.axis =</span> <span class="st">&quot;black&quot;</span>,               <span class="co"># Set the color of the axis</span>
+     <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">85</span>,<span class="dv">500</span>),                 <span class="co"># Set limits on x axis</span>
+     <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">10</span>,<span class="dv">35</span>),                  <span class="co"># Set limits on y axis</span>
+     <span class="dt">las=</span><span class="dv">1</span>)                            <span class="co"># Make axis labels parallel to x-axis</span>
+ 
+<span class="kw">abline</span>(<span class="kw">lm</span>(mpg <span class="op">~</span><span class="st"> </span>disp),                 <span class="co"># Add regression line y ~ x</span>
+       <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,                      <span class="co"># regression line color</span>
+       <span class="dt">lty =</span> <span class="dv">2</span>,                        <span class="co"># use dashed line</span>
+       <span class="dt">lwd =</span> <span class="dv">2</span>)                        <span class="co"># Set thickness of the line</span>
+ 
+<span class="kw">lines</span>(<span class="kw">lowess</span>(mpg <span class="op">~</span><span class="st"> </span>disp),              <span class="co"># Add lowess line y ~ x</span>
+      <span class="dt">col=</span><span class="st">&quot;dark blue&quot;</span>,                 <span class="co"># Set color of lowess line</span>
+      <span class="dt">lwd=</span> <span class="dv">2</span>)                          <span class="co"># Set thickness of the lowess line</span>
+ 
+leg.txt &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;red = lm&quot;</span>, <span class="st">&quot;blue = lowess&quot;</span>) <span class="co"># Text for legend</span>
+<span class="kw">legend</span>(<span class="kw">list</span>(<span class="dt">x =</span> <span class="dv">180</span>,<span class="dt">y =</span> <span class="dv">35</span>),           <span class="co"># Set location of the legend</span>
+       <span class="dt">legend =</span> leg.txt,               <span class="co"># Specify text </span>
+       <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>,<span class="st">&quot;dark blue&quot;</span>),     <span class="co"># Set colors for legend</span>
+       <span class="dt">lty =</span> <span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">1</span>),                   <span class="co"># Set type of lines in legend</span>
+       <span class="dt">merge =</span> <span class="ot">TRUE</span>)                   <span class="co"># merge points and lines</span></code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-122-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">detach</span>(mtcars)</code></pre></div>
+</div>
+</div>
+<div id="multiple-plots-on-the-one-page" class="section level2">
+<h2><span class="header-section-number">6.3</span> Multiple plots on the one page</h2>
+<p>There are two ways for combining a graphic:one with function layout() and the other with function par().</p>
+<div id="function-layout" class="section level3">
+<h3><span class="header-section-number">6.3.1</span> Function layout()</h3>
+<p>The function layout partitions the active graphic window in several parts where the graphs will be displayed successively. Its main argument is a matrix with integer numbers indicating the numbers of the “sub-windows”. For example, to divide the device into four equal parts:layout(matrix(1:4, 2, 2)). We can divide the device into as many rows and columns as we want, and specify the column-widths and the row-heights.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#create the data</span>
+<span class="kw">set.seed</span>(<span class="dv">2017</span>)
+a&lt;-<span class="kw">seq</span>(<span class="dv">129</span>,<span class="dv">1</span>)<span class="op">+</span><span class="dv">4</span><span class="op">*</span><span class="kw">runif</span>(<span class="dv">129</span>,<span class="fl">0.4</span>)
+b&lt;-<span class="kw">seq</span>(<span class="dv">1</span>,<span class="dv">129</span>)<span class="op">^</span><span class="dv">2</span><span class="op">+</span><span class="kw">runif</span>(<span class="dv">129</span>,<span class="fl">0.98</span>)</code></pre></div>
+<p>Let’s say we want to divide the device in 3 parts : a big graph on top and 2 smalls below. we give a matrix of 2 columns and 2 rows, and attribute each part for a graph. So the 2 first parts for graph number 1, and the 2 other for graph 2 and 3.</p>
+<p>Calling layout.show() results in the layout being displayed for the reference. This allows us to experiment with the parameter options and immediately get a sense of how a given layout will be rendered.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nf&lt;-<span class="kw">layout</span>(<span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="dv">2</span>, <span class="dv">2</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>))
+<span class="kw">layout.show</span>(nf)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-124-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#add plots on each of the screen</span>
+<span class="kw">hist</span>(a , <span class="dt">breaks=</span><span class="dv">30</span> , <span class="dt">border=</span>F , <span class="dt">col=</span><span class="kw">rgb</span>(<span class="fl">0.1</span>,<span class="fl">0.8</span>,<span class="fl">0.3</span>,<span class="fl">0.5</span>) , <span class="dt">xlab=</span><span class="st">&quot;distribution of a&quot;</span> , <span class="dt">main=</span><span class="st">&quot;&quot;</span>)
+<span class="kw">boxplot</span>(a , <span class="dt">xlab=</span><span class="st">&quot;a&quot;</span> , <span class="dt">col=</span><span class="kw">rgb</span>(<span class="fl">0.8</span>,<span class="fl">0.8</span>,<span class="fl">0.3</span>,<span class="fl">0.5</span>) , <span class="dt">las=</span><span class="dv">2</span>)
+<span class="kw">boxplot</span>(b , <span class="dt">xlab=</span><span class="st">&quot;b&quot;</span> , <span class="dt">col=</span><span class="kw">rgb</span>(<span class="fl">0.4</span>,<span class="fl">0.2</span>,<span class="fl">0.3</span>,<span class="fl">0.5</span>) , <span class="dt">las=</span><span class="dv">2</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-124-2.png" width="672" /></p>
+<p>By default, layout() partitions the device with regular heights and widths: this can be modified with the options widths and heights. These dimensions are given relatively.</p>
+<p>If we want to custom the size of each screen:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Set the layout</span>
+nf&lt;-<span class="kw">layout</span>(<span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>),<span class="dv">2</span>,<span class="dv">2</span>,<span class="dt">byrow=</span><span class="ot">TRUE</span>), <span class="dt">widths=</span><span class="kw">c</span>(<span class="fl">2.5</span>,<span class="fl">1.5</span>), <span class="dt">heights=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>),<span class="ot">TRUE</span>) 
+<span class="kw">layout.show</span>(nf)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-125-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Add the plots</span>
+<span class="kw">hist</span>(a , <span class="dt">breaks=</span><span class="dv">30</span> , <span class="dt">border=</span>F , <span class="dt">col=</span><span class="kw">rgb</span>(<span class="fl">0.1</span>,<span class="fl">0.8</span>,<span class="fl">0.3</span>,<span class="fl">0.5</span>) , <span class="dt">xlab=</span><span class="st">&quot;distribution of a&quot;</span> , <span class="dt">main=</span><span class="st">&quot;&quot;</span>)
+<span class="kw">boxplot</span>(a , <span class="dt">xlab=</span><span class="st">&quot;a&quot;</span> , <span class="dt">col=</span><span class="kw">rgb</span>(<span class="fl">0.8</span>,<span class="fl">0.8</span>,<span class="fl">0.3</span>,<span class="fl">0.5</span>) , <span class="dt">las=</span><span class="dv">2</span>)
+<span class="kw">boxplot</span>(b , <span class="dt">xlab=</span><span class="st">&quot;b&quot;</span> , <span class="dt">col=</span><span class="kw">rgb</span>(<span class="fl">0.4</span>,<span class="fl">0.2</span>,<span class="fl">0.3</span>,<span class="fl">0.5</span>) , <span class="dt">las=</span><span class="dv">2</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-125-2.png" width="672" /></p>
+</div>
+<div id="function-par-1" class="section level3">
+<h3><span class="header-section-number">6.3.2</span> Function par()</h3>
+<p>We can put multiple graphs in a single plot by setting some graphical parameters with the help of par() function.</p>
+<p>The parameter mfrow can be used to configure the graphics sheet so that subsequent plots appear row by row, one after the other in a rectangular layout, on the one page.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#create the data</span>
+month.temp=<span class="kw">c</span>(<span class="dv">10</span>,<span class="dv">12</span>,<span class="dv">5</span>,<span class="dv">11</span>,<span class="dv">7</span>,<span class="dv">10</span>,<span class="dv">9</span>,<span class="dv">6</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">10</span>)
+<span class="kw">names</span>(month.temp)=letters[<span class="dv">1</span><span class="op">:</span><span class="dv">12</span>]
+<span class="kw">print</span>(month.temp)</code></pre></div>
+<pre><code>##  a  b  c  d  e  f  g  h  i  j  k  l 
+## 10 12  5 11  7 10  9  6  4  7  9 10</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#plot</span>
+<span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))    <span class="co"># mfrow takes in a vector of form c(m, n) which divides the given plot into m*n array of subplots. For example, here, we want to plot two graphs side by side, we would have m=1 and n=2. </span>
+<span class="kw">barplot</span>(month.temp, <span class="dt">main=</span><span class="st">&quot;Barplot&quot;</span>)
+<span class="kw">pie</span>(month.temp, <span class="dt">main=</span><span class="st">&quot;Piechart&quot;</span>, <span class="dt">radius=</span><span class="dv">1</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-126-1.png" width="672" /></p>
+<p>This same phenomenon can be achieved with the graphical parameter mfcol.The only difference between the two is that, mfrow fills in the subplot region row wise while mfcol fills it column wise.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Temperature &lt;-<span class="st"> </span>airquality<span class="op">$</span>Temp
+Ozone &lt;-<span class="st"> </span>airquality<span class="op">$</span>Ozone
+<span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
+<span class="kw">hist</span>(Temperature)
+<span class="kw">boxplot</span>(Temperature, <span class="dt">horizontal=</span><span class="ot">TRUE</span>)
+<span class="kw">hist</span>(Ozone)
+<span class="kw">boxplot</span>(Ozone, <span class="dt">horizontal=</span><span class="ot">TRUE</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-127-1.png" width="672" /></p>
+<p>Same plot with the change par(mfcol = c(2, 2)) would look as follows. Note that only the ordering of the subplot is different.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Temperature &lt;-<span class="st"> </span>airquality<span class="op">$</span>Temp
+Ozone &lt;-<span class="st"> </span>airquality<span class="op">$</span>Ozone
+<span class="kw">par</span>(<span class="dt">mfcol=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))
+<span class="kw">hist</span>(Temperature)
+<span class="kw">boxplot</span>(Temperature, <span class="dt">horizontal=</span><span class="ot">TRUE</span>)
+<span class="kw">hist</span>(Ozone)
+<span class="kw">boxplot</span>(Ozone, <span class="dt">horizontal=</span><span class="ot">TRUE</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-128-1.png" width="672" /></p>
+<p>We can control the location of a figure more precisely with graphical parameter fig(). We need to provide the coordinates in a normalized form as c(x1, x2, y1, y2). For example, the whole plot area would be c(0, 1, 0, 1) with (x1, y1) = (0, 0) being the lower-left corner and (x2, y2) = (1, 1) being the upper-right corner.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># make labels and margins smaller</span>
+<span class="kw">par</span>(<span class="dt">cex=</span><span class="fl">0.7</span>, <span class="dt">mai=</span><span class="kw">c</span>(<span class="fl">0.1</span>,<span class="fl">0.1</span>,<span class="fl">0.2</span>,<span class="fl">0.1</span>))<span class="co">#mai for the sizes of the margins around the plotting region</span>
+
+Temperature &lt;-<span class="st"> </span>airquality<span class="op">$</span>Temp
+
+<span class="co"># define area for the histogram</span>
+<span class="kw">par</span>(<span class="dt">fig=</span><span class="kw">c</span>(<span class="fl">0.1</span>,<span class="fl">0.7</span>,<span class="fl">0.3</span>,<span class="fl">0.9</span>))
+<span class="kw">hist</span>(Temperature)
+
+<span class="co"># define area for the boxplot</span>
+<span class="kw">par</span>(<span class="dt">fig=</span><span class="kw">c</span>(<span class="fl">0.8</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>), <span class="dt">new=</span><span class="ot">TRUE</span>)
+<span class="kw">boxplot</span>(Temperature)
+
+<span class="co"># define area for the stripchart</span>
+<span class="kw">par</span>(<span class="dt">fig=</span><span class="kw">c</span>(<span class="fl">0.1</span>,<span class="fl">0.67</span>,<span class="fl">0.1</span>,<span class="fl">0.25</span>), <span class="dt">new=</span><span class="ot">TRUE</span>)
+<span class="kw">stripchart</span>(Temperature, <span class="dt">method=</span><span class="st">&quot;jitter&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-129-1.png" width="672" /></p>
+</div>
+</div>
+<div id="save-a-plot" class="section level2">
+<h2><span class="header-section-number">6.4</span> Save a plot</h2>
+<div id="save-plots-by-menu-click" class="section level3">
+<h3><span class="header-section-number">6.4.1</span> Save plots by menu click</h3>
+<p>All the graphs (bar graph, pie chart, histogram, etc.) we plot in R are displayed on the screen by default.RStudio has a nice feature in that it saves all of the plots in the plotting pane (we introducted in the first lecture). We can save the graph in a variety of formats from the menu: Export–&gt; Save as. It is no problem if we just produce the plots one after one and save each one individually because it keeps all of the plots in the pane. However,imagine that we are running a loop and have 1000 plots inside the loop. This manual-saving method becomes impractical quickly.Therefore, we need automatically save plots to a folder without spending too much time.</p>
+</div>
+<div id="save-plots-using-functions" class="section level3">
+<h3><span class="header-section-number">6.4.2</span> Save plots using functions</h3>
+<p>We can save the graph via code using specific functions.Please note that we need to call the function dev.off() after all the plotting, to save the file and return output to the terminal.</p>
+<p>The first step in saving plots is to decide the output format that we want to use. Here lists some of the available formats, along with guidance as to when they may be useful.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-130">Table 6.4: </span>Guidance for the formats</caption>
+<thead>
+<tr class="header">
+<th align="left">functions</th>
+<th align="left">format</th>
+<th align="left">annotations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">JPG</td>
+<td align="left">jpeg</td>
+<td align="left">Bitmap image. Have a fixed resolution and are pixelated when zoomed enough</td>
+</tr>
+<tr class="even">
+<td align="left">PNG</td>
+<td align="left">png</td>
+<td align="left">Bitmap image. Have a fixed resolution and are pixelated when zoomed enough</td>
+</tr>
+<tr class="odd">
+<td align="left">BMP</td>
+<td align="left">bmp</td>
+<td align="left">Bitmap image. Have a fixed resolution and are pixelated when zoomed enough</td>
+</tr>
+<tr class="even">
+<td align="left">TIFF</td>
+<td align="left">tiff</td>
+<td align="left">Bitmap image. Have a fixed resolution and are pixelated when zoomed enough</td>
+</tr>
+<tr class="odd">
+<td align="left">PDF</td>
+<td align="left">pdf</td>
+<td align="left">Vector images.Easily resizable. Zooming on the image will not compromise its quality</td>
+</tr>
+<tr class="even">
+<td align="left">Postscript</td>
+<td align="left">postscript</td>
+<td align="left">Vector images.Easily resizable. Zooming on the image will not compromise its quality</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="a-common-method" class="section level3">
+<h3><span class="header-section-number">6.4.3</span> (1) A common method</h3>
+<p>The following methods work on any computer with R, regardless of operating system or the way that we are connecting.</p>
+<p><em>Save as Jpeg image</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">jpeg</span>(<span class="dt">file=</span><span class="st">&quot;saving_plot1.jpeg&quot;</span>)
+<span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;gray&quot;</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#We will not actually see the plot. We can find this plot in the current directory. We can also specify the full path of the file we want to save if we don&#39;t want to save it in the current directory.</span>
+<span class="co">#The resolution of the image by default will be 480x480 pixel.</span></code></pre></div>
+<p><em>Save as png image</em></p>
+<p>We can specify the resolution we want with arguments width and height.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">png</span>(<span class="dt">file=</span><span class="st">&quot;saving_plot2.png&quot;</span>,<span class="dt">width=</span><span class="dv">600</span>, <span class="dt">height=</span><span class="dv">350</span>)
+<span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;gold&quot;</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#We are saving a png file with resolution 600x350</span></code></pre></div>
+<p><em>Save as bmp image</em></p>
+<p>We can specify the size of our image in inch, cm or mm with the argument units and specify ppi with res.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmp</span>(<span class="dt">file=</span><span class="st">&quot;saving_plot3.bmp&quot;</span>,
+   <span class="dt">width=</span><span class="dv">6</span>, <span class="dt">height=</span><span class="dv">4</span>, <span class="dt">units=</span><span class="st">&quot;in&quot;</span>, <span class="dt">res=</span><span class="dv">100</span>)
+<span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;steelblue&quot;</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#We are saving a bmp file of size 6x4 inch and 100 ppi.</span></code></pre></div>
+<p><em>Save as tiff image</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tiff</span>(<span class="dt">file=</span><span class="st">&quot;saving_plot4.tiff&quot;</span>,
+   <span class="dt">width=</span><span class="dv">6</span>, <span class="dt">height=</span><span class="dv">4</span>, <span class="dt">units=</span><span class="st">&quot;in&quot;</span>, <span class="dt">res=</span><span class="dv">100</span>)
+<span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;steelblue&quot;</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+<p><em>Save as pdf file</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pdf</span>(<span class="dt">file=</span><span class="st">&quot;saving_plot5.pdf&quot;</span>)
+<span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;violet&quot;</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+<p><em>Save as postscript file</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">postscript</span>(<span class="dt">file=</span><span class="st">&quot;saving_plot6.ps&quot;</span>)
+<span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;violet&quot;</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+</div>
+<div id="another-option" class="section level3">
+<h3><span class="header-section-number">6.4.4</span> (2)Another option</h3>
+<p>R also provides the dev.copy command, to copy the contents of the graph window to a file without having to re-enter the commands.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(Temperature, <span class="dt">col=</span><span class="st">&quot;tan&quot;</span>)</code></pre></div>
+<p><img src="bookdown-demo_files/figure-html/unnamed-chunk-137-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dev.copy</span>(png,<span class="st">&#39;myplot.png&#39;</span>)<span class="co">#to create a png file called myplot.png from a graph that is displayed by R</span></code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">dev.off</span>()</code></pre></div>
+<pre><code>## quartz_off_screen 
+##                 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#For most plots, things will be fine, but sometimes translating what was on the screen into a different format doesn&#39;t look as nice as it should.</span></code></pre></div>
+</div>
+<div id="saving-plots-in-a-loop" class="section level3">
+<h3><span class="header-section-number">6.4.5</span> (3) Saving plots in a loop</h3>
+<p>We can see the beauty of the automatically saving through the following loop:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">names &lt;-<span class="st"> </span>letters[<span class="dv">1</span><span class="op">:</span><span class="dv">26</span>] ## Gives a sequence of the letters of the alphabet
+<span class="kw">set.seed</span>(<span class="dv">2017</span>)
+beta1 &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">26</span>, <span class="dv">5</span>, <span class="dv">2</span>) ## A vector of slopes (one for each letter)
+beta0 &lt;-<span class="dv">10</span> ## A common intercept
+
+<span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">26</span>){
+ x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">500</span>, <span class="dv">105</span>, <span class="dv">10</span>)
+ y &lt;-<span class="st"> </span>beta0 <span class="op">+</span><span class="st"> </span>beta1[i]<span class="op">*</span>x <span class="op">+</span><span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="kw">rnorm</span>(<span class="dv">500</span>)
+
+ myfile &lt;-<span class="st"> </span><span class="kw">paste</span>(<span class="st">&quot;myplot_&quot;</span>, names[i], <span class="st">&quot;.jpg&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)
+
+ <span class="kw">jpeg</span>(<span class="dt">file=</span>myfile)
+    mytitle =<span class="st"> </span><span class="kw">paste</span>(<span class="st">&quot;my title is&quot;</span>, names[i])
+    <span class="kw">plot</span>(x,y, <span class="dt">main =</span> mytitle)
+ <span class="kw">dev.off</span>()
+}</code></pre></div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-managements-part-ii-reshape-data-ch4.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-base-graphics.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

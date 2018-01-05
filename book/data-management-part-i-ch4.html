@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>An introduction to R for McGill Epidemiology and Public Health students</title>
+  <meta name="description" content="Introduction to R for McGill Epidemiology and Public Health students">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="An introduction to R for McGill Epidemiology and Public Health students" />
+  
+  <meta name="twitter:description" content="Introduction to R for McGill Epidemiology and Public Health students" />
+  
+
+<meta name="author" content="Fei Wang &amp; Jay Brophy">
+
+
+<meta name="date" content="2018-01-05">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="an-overview-of-r-part-ii-ch3.html">
+<link rel="next" href="data-managements-part-ii-reshape-data-ch4.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html"><i class="fa fa-check"></i><b>2</b> An overview of R: part I {ch2}</a><ul>
+<li class="chapter" data-level="2.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#basic-computations-in-r"><i class="fa fa-check"></i><b>2.1</b> Basic computations in R</a></li>
+<li class="chapter" data-level="2.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#create-an-object"><i class="fa fa-check"></i><b>2.2</b> Create an object</a></li>
+<li class="chapter" data-level="2.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#operators"><i class="fa fa-check"></i><b>2.3</b> Operators</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arithmetic-operators"><i class="fa fa-check"></i><b>2.3.1</b> 2.3.1 Arithmetic operators</a></li>
+<li class="chapter" data-level="2.3.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#relational-operators"><i class="fa fa-check"></i><b>2.3.2</b> Relational operators</a></li>
+<li class="chapter" data-level="2.3.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#logical-operators"><i class="fa fa-check"></i><b>2.3.3</b> Logical operators</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#generate-data"><i class="fa fa-check"></i><b>2.4</b> Generate data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#regular-sequences"><i class="fa fa-check"></i><b>2.4.1</b> Regular sequences</a></li>
+<li class="chapter" data-level="2.4.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#random-sequences"><i class="fa fa-check"></i><b>2.4.2</b> Random sequences</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-types"><i class="fa fa-check"></i><b>2.5</b> Data types</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#vectors"><i class="fa fa-check"></i><b>2.5.1</b> Vectors</a></li>
+<li class="chapter" data-level="2.5.2" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#lists"><i class="fa fa-check"></i><b>2.5.2</b> Lists</a></li>
+<li class="chapter" data-level="2.5.3" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#factors"><i class="fa fa-check"></i><b>2.5.3</b> Factors</a></li>
+<li class="chapter" data-level="2.5.4" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#matrices"><i class="fa fa-check"></i><b>2.5.4</b> Matrices</a></li>
+<li class="chapter" data-level="2.5.5" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#arrays"><i class="fa fa-check"></i><b>2.5.5</b> Arrays</a></li>
+<li class="chapter" data-level="2.5.6" data-path="an-overview-of-r-part-i-ch2.html"><a href="an-overview-of-r-part-i-ch2.html#data-frames"><i class="fa fa-check"></i><b>2.5.6</b> Data Frames</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html"><i class="fa fa-check"></i><b>3</b> An overview of R: Part II {ch3}</a><ul>
+<li class="chapter" data-level="3.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#assess-the-values-of-an-object"><i class="fa fa-check"></i><b>3.1</b> Assess the values of an object</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-index-system"><i class="fa fa-check"></i><b>3.1.1</b> Using the index system</a></li>
+<li class="chapter" data-level="3.1.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#using-the-names"><i class="fa fa-check"></i><b>3.1.2</b> Using the names</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#get-the-data-into-r"><i class="fa fa-check"></i><b>3.2</b> Get the data into R</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#direct-data-entering"><i class="fa fa-check"></i><b>3.2.1</b> Direct data entering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#use-dataset-that-come-with-r-or-r-packages"><i class="fa fa-check"></i><b>3.2.2</b> Use dataset that come with R or R packages</a></li>
+<li class="chapter" data-level="3.2.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-files"><i class="fa fa-check"></i><b>3.2.3</b> Read in data files</a></li>
+<li class="chapter" data-level="3.2.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-data-from-the-clipboard"><i class="fa fa-check"></i><b>3.2.4</b> Read in data from the clipboard</a></li>
+<li class="chapter" data-level="3.2.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#read-in-remote-data"><i class="fa fa-check"></i><b>3.2.5</b> Read in remote data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#export-data"><i class="fa fa-check"></i><b>3.3</b> Export data</a></li>
+<li class="chapter" data-level="3.4" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#save-and-load-data-in-r"><i class="fa fa-check"></i><b>3.4</b> Save and load data in R</a></li>
+<li class="chapter" data-level="3.5" data-path="an-overview-of-r-part-ii-ch3.html"><a href="an-overview-of-r-part-ii-ch3.html#view-data"><i class="fa fa-check"></i><b>3.5</b> View data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html"><i class="fa fa-check"></i><b>4</b> Data management: Part I {ch4}</a><ul>
+<li class="chapter" data-level="4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#control-structure"><i class="fa fa-check"></i><b>4.1</b> Control structure</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#for-loop"><i class="fa fa-check"></i><b>4.1.1</b> For loop</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#while-loop"><i class="fa fa-check"></i><b>4.1.2</b> While Loop</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#if-else-loop"><i class="fa fa-check"></i><b>4.1.3</b> If-else Loop</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#repeat-loop"><i class="fa fa-check"></i><b>4.1.4</b> Repeat Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#missing-values"><i class="fa fa-check"></i><b>4.2</b> Missing values</a></li>
+<li class="chapter" data-level="4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#dates"><i class="fa fa-check"></i><b>4.3</b> Dates</a></li>
+<li class="chapter" data-level="4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#common-useful-functions"><i class="fa fa-check"></i><b>4.4</b> Common useful functions</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#numeric-functions"><i class="fa fa-check"></i><b>4.4.1</b> Numeric functions</a></li>
+<li class="chapter" data-level="4.4.2" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#character-functions"><i class="fa fa-check"></i><b>4.4.2</b> Character Functions</a></li>
+<li class="chapter" data-level="4.4.3" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#apply-functions-over-a-list-array-dataframe-or-matrix"><i class="fa fa-check"></i><b>4.4.3</b> Apply functions over a list, array, dataframe or matrix</a></li>
+<li class="chapter" data-level="4.4.4" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#other-useful-functions"><i class="fa fa-check"></i><b>4.4.4</b> Other useful functions</a></li>
+<li class="chapter" data-level="4.4.5" data-path="data-management-part-i-ch4.html"><a href="data-management-part-i-ch4.html#write-functions"><i class="fa fa-check"></i><b>4.4.5</b> Write functions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html"><i class="fa fa-check"></i><b>5</b> Data managements: Part II- Reshape data {ch4}</a><ul>
+<li class="chapter" data-level="5.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#subset-data"><i class="fa fa-check"></i><b>5.1</b> Subset Data</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-variables"><i class="fa fa-check"></i><b>5.1.1</b> Select variables</a></li>
+<li class="chapter" data-level="5.1.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#exclude-variables"><i class="fa fa-check"></i><b>5.1.2</b> Exclude variables</a></li>
+<li class="chapter" data-level="5.1.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-observations"><i class="fa fa-check"></i><b>5.1.3</b> Select Observations</a></li>
+<li class="chapter" data-level="5.1.4" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#select-both-variables-and-observations"><i class="fa fa-check"></i><b>5.1.4</b> Select both variables and observations</a></li>
+<li class="chapter" data-level="5.1.5" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keep-or-delete-variables-using-dplyr-function"><i class="fa fa-check"></i><b>5.1.5</b> Keep or delete variables using dplyr function</a></li>
+<li class="chapter" data-level="5.1.6" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#keepdrop-variables-by-name-pattern"><i class="fa fa-check"></i><b>5.1.6</b> Keep/drop variables by name pattern</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data"><i class="fa fa-check"></i><b>5.2</b> Merge Data</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-casesobservations-to-a-dataset"><i class="fa fa-check"></i><b>5.2.1</b> Add cases/observations to a dataset</a></li>
+<li class="chapter" data-level="5.2.2" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#merge-data-frames"><i class="fa fa-check"></i><b>5.2.2</b> Merge Data Frames</a></li>
+<li class="chapter" data-level="5.2.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#add-more-variables-to-a-dataset"><i class="fa fa-check"></i><b>5.2.3</b> Add more variables to a dataset</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="data-managements-part-ii-reshape-data-ch4.html"><a href="data-managements-part-ii-reshape-data-ch4.html#the-reshape-package"><i class="fa fa-check"></i><b>5.3</b> The Reshape package</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html"><i class="fa fa-check"></i><b>6</b> Base Graphics with R {ch5}</a><ul>
+<li class="chapter" data-level="6.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-functions"><i class="fa fa-check"></i><b>6.1</b> Graphical functions</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#high-level-graphical-functions"><i class="fa fa-check"></i><b>6.1.1</b> (1) High-level graphical functions</a></li>
+<li class="chapter" data-level="6.1.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#low-level-functions"><i class="fa fa-check"></i><b>6.1.2</b> (2) Low-level functions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#graphical-parameters"><i class="fa fa-check"></i><b>6.2</b> Graphical parameters</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#specify-within-the-high-level-function"><i class="fa fa-check"></i><b>6.2.1</b> 6.2.1 Specify within the high-level function</a></li>
+<li class="chapter" data-level="6.2.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par"><i class="fa fa-check"></i><b>6.2.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#multiple-plots-on-the-one-page"><i class="fa fa-check"></i><b>6.3</b> Multiple plots on the one page</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-layout"><i class="fa fa-check"></i><b>6.3.1</b> Function layout()</a></li>
+<li class="chapter" data-level="6.3.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#function-par-1"><i class="fa fa-check"></i><b>6.3.2</b> Function par()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-a-plot"><i class="fa fa-check"></i><b>6.4</b> Save a plot</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-by-menu-click"><i class="fa fa-check"></i><b>6.4.1</b> Save plots by menu click</a></li>
+<li class="chapter" data-level="6.4.2" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#save-plots-using-functions"><i class="fa fa-check"></i><b>6.4.2</b> Save plots using functions</a></li>
+<li class="chapter" data-level="6.4.3" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#a-common-method"><i class="fa fa-check"></i><b>6.4.3</b> (1) A common method</a></li>
+<li class="chapter" data-level="6.4.4" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#another-option"><i class="fa fa-check"></i><b>6.4.4</b> (2)Another option</a></li>
+<li class="chapter" data-level="6.4.5" data-path="base-graphics-with-r-ch5.html"><a href="base-graphics-with-r-ch5.html#saving-plots-in-a-loop"><i class="fa fa-check"></i><b>6.4.5</b> (3) Saving plots in a loop</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><i class="fa fa-check"></i><b>7</b> Descriptive statistics with R: Part I-Quantitative variables {ch6}</a><ul>
+<li class="chapter" data-level="7.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-the-whole-dataset"><i class="fa fa-check"></i><b>7.1</b> For the whole dataset</a></li>
+<li class="chapter" data-level="7.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-single-quantitative-variable"><i class="fa fa-check"></i><b>7.2</b> For a single quantitative variable</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation"><i class="fa fa-check"></i><b>7.2.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.2.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation"><i class="fa fa-check"></i><b>7.2.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-a-quantitative-variable-by-groups"><i class="fa fa-check"></i><b>7.3</b> For a quantitative variable by groups</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-1"><i class="fa fa-check"></i><b>7.3.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.3.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-1"><i class="fa fa-check"></i><b>7.3.2</b> Graphical representation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#for-two-quantitative-variables"><i class="fa fa-check"></i><b>7.4</b> For two quantitative variables</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#numerical-representation-2"><i class="fa fa-check"></i><b>7.4.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html"><a href="descriptive-statistics-with-r-part-i-quantitative-variables-ch6.html#graphical-representation-2"><i class="fa fa-check"></i><b>7.4.2</b> Graphical representation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><i class="fa fa-check"></i><b>8</b> Descriptive statistics with R: Part II-Categorical variables and ggplot</a><ul>
+<li class="chapter" data-level="8.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#numerical-representation-3"><i class="fa fa-check"></i><b>8.1</b> Numerical representation</a></li>
+<li class="chapter" data-level="8.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#graphical-representation-3"><i class="fa fa-check"></i><b>8.2</b> Graphical representation</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#barplots"><i class="fa fa-check"></i><b>8.2.1</b> (1) Barplots</a></li>
+<li class="chapter" data-level="8.2.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#dotcharts"><i class="fa fa-check"></i><b>8.2.2</b> (2) Dotcharts</a></li>
+<li class="chapter" data-level="8.2.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#piecharts"><i class="fa fa-check"></i><b>8.2.3</b> (3) Piecharts</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#ggplot2-function"><i class="fa fa-check"></i><b>8.3</b> ggplot2 function</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#a-simple-histogram-for-a-single-quantative-variable"><i class="fa fa-check"></i><b>8.3.1</b> (1)a simple histogram for a single quantative variable</a></li>
+<li class="chapter" data-level="8.3.2" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-a-quantative-variable-by-groups"><i class="fa fa-check"></i><b>8.3.2</b> (2)for a quantative variable by groups</a></li>
+<li class="chapter" data-level="8.3.3" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-two-quantitative-variables-1"><i class="fa fa-check"></i><b>8.3.3</b> (3) for two quantitative variables</a></li>
+<li class="chapter" data-level="8.3.4" data-path="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html"><a href="descriptive-statistics-with-r-part-ii-categorical-variables-and-ggplot.html#for-categorial-variable"><i class="fa fa-check"></i><b>8.3.4</b> (4) for categorial variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html"><i class="fa fa-check"></i><b>9</b> Basic statistical tests with R</a><ul>
+<li class="chapter" data-level="9.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-sample-tests"><i class="fa fa-check"></i><b>9.1</b> Two-sample tests</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#t-test"><i class="fa fa-check"></i><b>9.1.1</b> t-test</a></li>
+<li class="chapter" data-level="9.1.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-tests"><i class="fa fa-check"></i><b>9.1.2</b> Nonparametric tests</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#analysis-of-variance"><i class="fa fa-check"></i><b>9.2</b> Analysis Of Variance</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#assumptions-assessment"><i class="fa fa-check"></i><b>9.2.1</b> Assumptions assessment</a></li>
+<li class="chapter" data-level="9.2.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#parametric-test"><i class="fa fa-check"></i><b>9.2.2</b> Parametric test</a></li>
+<li class="chapter" data-level="9.2.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#nonparametric-test"><i class="fa fa-check"></i><b>9.2.3</b> Nonparametric test</a></li>
+<li class="chapter" data-level="9.2.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#multivariate-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.4</b> Multivariate analysis of variance</a></li>
+<li class="chapter" data-level="9.2.5" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-way-analysis-of-variance"><i class="fa fa-check"></i><b>9.2.5</b> Two-way analysis of variance</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#correlation"><i class="fa fa-check"></i><b>9.3</b> Correlation</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#spearmans-"><i class="fa fa-check"></i><b>9.3.1</b> Spearman’s ρ</a></li>
+<li class="chapter" data-level="9.3.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#kendalls-"><i class="fa fa-check"></i><b>9.3.2</b> Kendall’s τ</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#tabular-data"><i class="fa fa-check"></i><b>9.4</b> Tabular data</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#single-proportion"><i class="fa fa-check"></i><b>9.4.1</b> Single proportion</a></li>
+<li class="chapter" data-level="9.4.2" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#two-independent-proportions"><i class="fa fa-check"></i><b>9.4.2</b> Two independent proportions</a></li>
+<li class="chapter" data-level="9.4.3" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#k-proportions"><i class="fa fa-check"></i><b>9.4.3</b> k proportions</a></li>
+<li class="chapter" data-level="9.4.4" data-path="basic-statistical-tests-with-r.html"><a href="basic-statistical-tests-with-r.html#r-c-tables"><i class="fa fa-check"></i><b>9.4.4</b> r × c tables</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html"><i class="fa fa-check"></i><b>10</b> Regressions with R-Linear Regression</a><ul>
+<li class="chapter" data-level="10.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#simple-linear-regression"><i class="fa fa-check"></i><b>10.1</b> Simple linear regression</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#function"><i class="fa fa-check"></i><b>10.1.1</b> Function</a></li>
+<li class="chapter" data-level="10.1.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#output-explanation"><i class="fa fa-check"></i><b>10.1.2</b> Output explanation</a></li>
+<li class="chapter" data-level="10.1.3" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#other-useful-functions-1"><i class="fa fa-check"></i><b>10.1.3</b> Other useful functions</a></li>
+<li class="chapter" data-level="10.1.4" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#fitted-values-and-residuals"><i class="fa fa-check"></i><b>10.1.4</b> Fitted values and residuals</a></li>
+<li class="chapter" data-level="10.1.5" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#prediction-and-confidence-intervals"><i class="fa fa-check"></i><b>10.1.5</b> Prediction and confidence intervals</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="regressions-with-r-linear-regression.html"><a href="regressions-with-r-linear-regression.html#multiple-linear-regression"><i class="fa fa-check"></i><b>10.2</b> Multiple linear regression</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="survival-analysis.html"><a href="survival-analysis.html"><i class="fa fa-check"></i><b>11</b> Survival analysis</a><ul>
+<li class="chapter" data-level="11.1" data-path="survival-analysis.html"><a href="survival-analysis.html#create-the-response-variable"><i class="fa fa-check"></i><b>11.1</b> Create the response variable</a></li>
+<li class="chapter" data-level="11.2" data-path="survival-analysis.html"><a href="survival-analysis.html#kaplan-meier-estimate"><i class="fa fa-check"></i><b>11.2</b> Kaplan-Meier estimate</a></li>
+<li class="chapter" data-level="11.3" data-path="survival-analysis.html"><a href="survival-analysis.html#cumulative-hazard"><i class="fa fa-check"></i><b>11.3</b> Cumulative hazard</a></li>
+<li class="chapter" data-level="11.4" data-path="survival-analysis.html"><a href="survival-analysis.html#the-log-rank-test"><i class="fa fa-check"></i><b>11.4</b> The log-rank test</a></li>
+<li class="chapter" data-level="11.5" data-path="survival-analysis.html"><a href="survival-analysis.html#cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5</b> Cox Proportional Hazards Model</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="survival-analysis.html"><a href="survival-analysis.html#regular-cox-proportional-hazards-model"><i class="fa fa-check"></i><b>11.5.1</b> Regular Cox proportional hazards model</a></li>
+<li class="chapter" data-level="11.5.2" data-path="survival-analysis.html"><a href="survival-analysis.html#test-for-proportional-hazards"><i class="fa fa-check"></i><b>11.5.2</b> Test for proportional hazards</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><i class="fa fa-check"></i><b>12</b> Bootstrap, analysis of clustered data and non-linear effects</a><ul>
+<li class="chapter" data-level="12.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#bootstrap"><i class="fa fa-check"></i><b>12.1</b> Bootstrap</a></li>
+<li class="chapter" data-level="12.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#analysis-of-clustered-data"><i class="fa fa-check"></i><b>12.2</b> Analysis of clustered data</a><ul>
+<li class="chapter" data-level="12.2.1" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#linear-mixed-effects-models"><i class="fa fa-check"></i><b>12.2.1</b> Linear Mixed Effects Models</a></li>
+<li class="chapter" data-level="12.2.2" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#generalized-estimation-equations-gee-models"><i class="fa fa-check"></i><b>12.2.2</b> Generalized Estimation Equations (GEE) models</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#non-linear-effects"><i class="fa fa-check"></i><b>12.3</b> Non-linear effects</a></li>
+<li class="chapter" data-level="12.4" data-path="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html"><a href="bootstrap-analysis-of-clustered-data-and-non-linear-effects.html#epi-packages--epitab"><i class="fa fa-check"></i><b>12.4</b> Epi packages- Epitab()</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">An introduction to R for McGill Epidemiology and Public Health students</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-management-part-i-ch4" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Data management: Part I {ch4}</h1>
+<div id="control-structure" class="section level2">
+<h2><span class="header-section-number">4.1</span> Control structure</h2>
+<p>R has the standard control structures.</p>
+<div id="for-loop" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> For loop</h3>
+<p>It is used when a loop is to be executed a specific number of times.</p>
+<pre><code>for (var in seq) {statement}</code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#initialize a vector</span>
+y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">99</span>,<span class="dv">45</span>,<span class="dv">34</span>,<span class="dv">65</span>,<span class="dv">76</span>,<span class="dv">23</span>)
+<span class="co">#print the first 4 numbers of this vector</span>
+<span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">4</span>){
+     <span class="kw">print</span> (y[i])
+}</code></pre></div>
+<pre><code>## [1] 99
+## [1] 45
+## [1] 34
+## [1] 65</code></pre>
+</div>
+<div id="while-loop" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> While Loop</h3>
+<p>The While loop executes the same code again and again until a stop condition is met.</p>
+<pre><code>while (test_expression) {
+   statement
+}</code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#initialize a condition</span>
+age &lt;-<span class="st"> </span><span class="dv">12</span>
+<span class="co">#check if age is less than 17</span>
+<span class="cf">while</span>(age <span class="op">&lt;</span><span class="st"> </span><span class="dv">17</span>){
+         <span class="kw">print</span>(age)
+         age &lt;-<span class="st"> </span>age <span class="op">+</span><span class="st"> </span><span class="dv">2</span> 
+}</code></pre></div>
+<pre><code>## [1] 12
+## [1] 14
+## [1] 16</code></pre>
+</div>
+<div id="if-else-loop" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> If-else Loop</h3>
+<p>This structure is used to test a condition.</p>
+<pre><code>if (&lt;condition&gt;){
+         ##do something
+} else {
+         ##do something
+}</code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#initialize a variable</span>
+Age&lt;-<span class="dv">30</span>
+<span class="co">#check if this variable * 2-5 is &gt; 50</span>
+<span class="cf">if</span> (Age<span class="op">*</span><span class="dv">2</span><span class="op">-</span><span class="dv">5</span> <span class="op">&gt;</span><span class="dv">50</span> ){
+       <span class="kw">print</span>(<span class="st">&quot;right&quot;</span>)
+} <span class="cf">else</span> {
+       <span class="kw">print</span> (<span class="st">&quot;do it again&quot;</span>)
+}</code></pre></div>
+<pre><code>## [1] &quot;right&quot;</code></pre>
+</div>
+<div id="repeat-loop" class="section level3">
+<h3><span class="header-section-number">4.1.4</span> Repeat Loop</h3>
+<p>It executes an infinite loop.</p>
+<pre><code>repeat { 
+   commands 
+   if(condition) {
+      break
+   }
+}</code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a&lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Good&quot;</span>,<span class="st">&quot;Morning&quot;</span>)
+b &lt;-<span class="st"> </span><span class="dv">2</span>
+
+<span class="cf">repeat</span> {
+   <span class="kw">print</span>(a)
+   b &lt;-b<span class="op">+</span><span class="dv">1</span>
+   
+   <span class="cf">if</span>(b <span class="op">&gt;</span><span class="st"> </span><span class="dv">5</span>) {
+      <span class="cf">break</span>
+   }
+}</code></pre></div>
+<pre><code>## [1] &quot;Good&quot;    &quot;Morning&quot;
+## [1] &quot;Good&quot;    &quot;Morning&quot;
+## [1] &quot;Good&quot;    &quot;Morning&quot;
+## [1] &quot;Good&quot;    &quot;Morning&quot;</code></pre>
+</div>
+</div>
+<div id="missing-values" class="section level2">
+<h2><span class="header-section-number">4.2</span> Missing values</h2>
+<p>Missing values in R are represented by NA (not available). Impossible values (e.g., dividing by zero) are represented by the symbol NaN (not a number).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myframe &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Lucy&quot;</span>,<span class="st">&quot;John&quot;</span>,<span class="st">&quot;Mark&quot;</span>,<span class="st">&quot;Candy&quot;</span>), <span class="dt">score =</span> <span class="kw">c</span>(<span class="dv">67</span>,<span class="dv">56</span>,<span class="dv">87</span>,<span class="dv">91</span>))
+myframe[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>,<span class="dv">2</span>] &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co">#injecting NA at 1st, 2nd row and 2nd column of df </span>
+myframe</code></pre></div>
+<pre><code>##    name score
+## 1  Lucy    NA
+## 2  John    NA
+## 3  Mark    87
+## 4 Candy    91</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">is.na</span>(myframe) <span class="co">#checks the entire data set for NAs and return logical output</span></code></pre></div>
+<pre><code>##       name score
+## [1,] FALSE  TRUE
+## [2,] FALSE  TRUE
+## [3,] FALSE FALSE
+## [4,] FALSE FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(<span class="kw">is.na</span>(myframe)) <span class="co">#returns a table of logical output</span></code></pre></div>
+<pre><code>## 
+## FALSE  TRUE 
+##     6     2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myframe[<span class="op">!</span><span class="kw">complete.cases</span>(myframe),] <span class="co">#returns a logical vector indicating which cases are not complete.</span></code></pre></div>
+<pre><code>##   name score
+## 1 Lucy    NA
+## 2 John    NA</code></pre>
+<p><em>Missing values when using read.table()</em></p>
+<p>When we are using the function read.table(), we expect missing values to be coded as NA. However, it is not always the case. For instance, if we have a text file that has been exported from SAS, the missing values are indicated by “.”. In that case, we can use “na.strings”&quot; to define the missing values (na.strings=c(“.”)).</p>
+<p>It is also possible that there are multiple missing value indicators,we can use na.strings=c(“NA”,“.”,”*”,“”) to ensure that all these symbols are entered as NAs.</p>
+<p><em>Missing values hinder normal calculations in a data set. </em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(myframe<span class="op">$</span>score)</code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(myframe<span class="op">$</span>score,<span class="dt">na.rm =</span>T)<span class="co">#ignore the NAs and compute the mean of remaining values in the selected column </span></code></pre></div>
+<pre><code>## [1] 89</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">new_myframe &lt;-<span class="st"> </span><span class="kw">na.omit</span>(myframe)<span class="co">#To remove rows with NA values in a data frame</span>
+new_myframe</code></pre></div>
+<pre><code>##    name score
+## 3  Mark    87
+## 4 Candy    91</code></pre>
+</div>
+<div id="dates" class="section level2">
+<h2><span class="header-section-number">4.3</span> Dates</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">Sys.Date</span>( ) </code></pre></div>
+<pre><code>## [1] &quot;2018-01-05&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#returns today&#39;s date. </span>
+<span class="kw">date</span>() </code></pre></div>
+<pre><code>## [1] &quot;Fri Jan  5 14:00:17 2018&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#returns the current date and time.</span></code></pre></div>
+<p>Use as.Date( ) to convert strings to dates. The default is that Year-Month-Day. Therefore,</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">strdd&lt;-<span class="kw">c</span>(<span class="st">&quot;2013/08/24&quot;</span>,<span class="st">&quot;2013/11/23&quot;</span>,<span class="st">&quot;2014/02/22&quot;</span>,<span class="st">&quot;2014/05/23&quot;</span>)
+dd &lt;-<span class="st"> </span><span class="kw">as.Date</span>(strdd) 
+<span class="co"># number of days between two consecutive dates</span>
+<span class="kw">diff</span>(dd)</code></pre></div>
+<pre><code>## Time differences in days
+## [1] 91 91 90</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dd[<span class="dv">1</span>]<span class="op">-</span>dd[<span class="dv">2</span>]<span class="co">#calculations for the date</span></code></pre></div>
+<pre><code>## Time difference of -91 days</code></pre>
+<p>Use format() to set or change the way that a date is formatted.The following symbols can be used with the format( ) function to print dates.The default format is “%Y-%m-%d”.</p>
+<pre><code>%d: day, as number (i.e.,01-31)
+%a: abbreviated weekday name (Mon) 
+%A: unabbreviated (Monday)
+%m: month (00-12)
+%b: month abbreviated name (Jan)
+%B: unabbreviated (January)
+%y: final two digits of year(17)
+%Y: all four digits (2017)</code></pre>
+<p>Examples:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">today &lt;-<span class="st"> </span><span class="kw">Sys.Date</span>()
+<span class="kw">format</span>(today, <span class="dt">format=</span><span class="st">&quot;%b %d %Y&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;Jan 05 2018&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">format</span>(today, <span class="dt">format=</span><span class="st">&quot;%A %b %d %Y&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;Friday Jan 05 2018&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">as.Date</span>(<span class="st">&quot;1/12/1960&quot;</span>,<span class="dt">format=</span><span class="st">&quot;%d/%m/%Y&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;1960-12-01&quot;</code></pre>
+<p>By default, dates are stored using 1970-01-01 as origin, with negative values for earlier dates.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#as.integer attempts to coerce its argument to be of integer type. </span>
+<span class="kw">as.integer</span>(<span class="kw">as.Date</span>(<span class="st">&quot;1/12/1960&quot;</span>,<span class="st">&quot;%d/%m/%Y&quot;</span>))<span class="co">#attempt to coerce its argument to be of integer type. </span></code></pre></div>
+<pre><code>## [1] -3318</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">as.integer</span>(<span class="kw">as.Date</span>(<span class="st">&quot;1/1/1970&quot;</span>,<span class="st">&quot;%d/%m/%Y&quot;</span>))</code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">as.integer</span>(<span class="kw">as.Date</span>(<span class="st">&quot;1/1/2017&quot;</span>,<span class="st">&quot;%d/%m/%Y&quot;</span>))      </code></pre></div>
+<pre><code>## [1] 17167</code></pre>
+</div>
+<div id="common-useful-functions" class="section level2">
+<h2><span class="header-section-number">4.4</span> Common useful functions</h2>
+<p>There are some useful functions that are widely used in regular R programming.</p>
+<div id="numeric-functions" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Numeric functions</h3>
+<p>Here are some examples:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">abs</span>(<span class="op">-</span><span class="dv">3</span>)<span class="co">#absolute value</span></code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqrt</span>(<span class="dv">4</span>) <span class="co">#square root</span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">exp</span>(<span class="dv">5</span>)<span class="co">#e^x</span></code></pre></div>
+<pre><code>## [1] 148.4132</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">log</span>(<span class="dv">3</span>)  <span class="co">#natural logarithm</span></code></pre></div>
+<pre><code>## [1] 1.098612</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">log10</span>(<span class="dv">5</span>)    <span class="co">#common logarithm</span></code></pre></div>
+<pre><code>## [1] 0.69897</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ceiling</span>(<span class="fl">3.141592657</span>)<span class="co">#takes a single numeric argument x and returns a numeric vector containing the smallest integers not less than the corresponding elements of x</span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">floor</span>(<span class="fl">3.141592657</span>)<span class="co">#takes a single numeric argument x and returns a numeric vector containing the largest integers not greater than the corresponding elements of x</span></code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">trunc</span>(<span class="fl">3.141592657</span>)<span class="co">#takes a single numeric argument x and returns a numeric vector containing the integers formed by truncating the values in x toward 0</span></code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">round</span>(<span class="fl">3.141592657</span>,<span class="dv">3</span>)<span class="co">#rounds the values in its first argument to the specified number of decimal places (default 0)  </span></code></pre></div>
+<pre><code>## [1] 3.142</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">signif</span>(<span class="fl">3.141592657</span>,<span class="dv">3</span>)<span class="co">#rounds the values in its first argument to the specified number of significant digits</span></code></pre></div>
+<pre><code>## [1] 3.14</code></pre>
+</div>
+<div id="character-functions" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Character Functions</h3>
+<p><em>Extract or replace substrings in a character vector:</em></p>
+<pre><code>substr(x, start=n1, stop=n2)    </code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> &quot;abcdef&quot;</span> 
+<span class="kw">substr</span>(x, <span class="dv">2</span>, <span class="dv">4</span>)  </code></pre></div>
+<pre><code>## [1] &quot;bcd&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">substr</span>(x, <span class="dv">2</span>, <span class="dv">4</span>) &lt;-<span class="st"> &quot;22222&quot;</span> 
+x</code></pre></div>
+<pre><code>## [1] &quot;a222ef&quot;</code></pre>
+<p><em>Search for pattern in x:</em></p>
+<pre><code>grep(pattern, x , ignore.case=FALSE, fixed=FALSE)   </code></pre>
+<p>If fixed =FALSE then pattern is a regular expression. If fixed=TRUE then pattern is a text string. Returns matching indices.</p>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">grep</span>(<span class="st">&quot;A&quot;</span>, <span class="kw">c</span>(<span class="st">&quot;b&quot;</span>,<span class="st">&quot;A&quot;</span>,<span class="st">&quot;c&quot;</span>), <span class="dt">fixed=</span><span class="ot">TRUE</span>) </code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<p><em>Find pattern in x and replace with replacement text:</em></p>
+<pre><code>sub(pattern, replacement, x, ignore.case =FALSE, fixed=FALSE)   </code></pre>
+<p>If fixed=FALSE then pattern is a regular expression.If fixed = T then pattern is a text string.</p>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sub</span>(<span class="st">&quot;</span><span class="ch">\\</span><span class="st">s&quot;</span>,<span class="st">&quot;.&quot;</span>,<span class="st">&quot;Good morning&quot;</span>) </code></pre></div>
+<pre><code>## [1] &quot;Good.morning&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sub</span>(<span class="st">&quot;ca&quot;</span>,<span class="st">&quot;*&quot;</span>,<span class="st">&quot;canada&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;*nada&quot;</code></pre>
+<p><em>Split the elements of character vector x at split: </em></p>
+<pre><code>strsplit(x, split)  </code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">strsplit</span>(<span class="st">&quot;abc&quot;</span>, <span class="st">&quot;b&quot;</span>) </code></pre></div>
+<pre><code>## [[1]]
+## [1] &quot;a&quot; &quot;c&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">strsplit</span>(<span class="st">&quot;abc&quot;</span>, <span class="st">&quot;&quot;</span>) </code></pre></div>
+<pre><code>## [[1]]
+## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;</code></pre>
+<p><em>Concatenate strings after using sep string to seperate them:</em></p>
+<pre><code>paste(..., sep=&quot;&quot;)  </code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">paste</span>(<span class="st">&quot;x&quot;</span>,<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>) </code></pre></div>
+<pre><code>## [1] &quot;x1&quot; &quot;x2&quot; &quot;x3&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">paste</span>(<span class="st">&quot;x&quot;</span>,<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>,<span class="dt">sep=</span><span class="st">&quot;M&quot;</span>) </code></pre></div>
+<pre><code>## [1] &quot;xM1&quot; &quot;xM2&quot; &quot;xM3&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">paste</span>(<span class="st">&quot;Today is&quot;</span>, <span class="kw">date</span>())</code></pre></div>
+<pre><code>## [1] &quot;Today is Fri Jan  5 14:00:17 2018&quot;</code></pre>
+<p><em>Force the characters to be uppercase or lowercase:</em></p>
+<pre><code>toupper(x)  Uppercase
+tolower(x)  Lowercase</code></pre>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x=<span class="st">&quot;abcdeT&quot;</span>
+<span class="kw">toupper</span>(x)</code></pre></div>
+<pre><code>## [1] &quot;ABCDET&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">tolower</span>(x)</code></pre></div>
+<pre><code>## [1] &quot;abcdet&quot;</code></pre>
+</div>
+<div id="apply-functions-over-a-list-array-dataframe-or-matrix" class="section level3">
+<h3><span class="header-section-number">4.4.3</span> Apply functions over a list, array, dataframe or matrix</h3>
+<p>The function apply() can be used on data frames as well as matrices and arrays. <em>For dataframe</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">height=</span><span class="kw">round</span>(<span class="kw">runif</span>(<span class="dv">5</span>,<span class="dv">160</span>,<span class="dv">180</span>),<span class="dv">2</span>),<span class="dt">weight=</span><span class="kw">round</span>(<span class="kw">runif</span>(<span class="dv">5</span>,<span class="dv">40</span>,<span class="dv">70</span>),<span class="dv">2</span>))
+<span class="kw">apply</span>(mydata,<span class="dv">2</span>,mean)## All elements must be numeric!</code></pre></div>
+<pre><code>##  height  weight 
+## 171.754  53.148</code></pre>
+<p><em>For matrix:</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata&lt;-<span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">12</span>,<span class="dv">3</span>,<span class="dv">4</span>)
+<span class="kw">colnames</span>(mydata)=letters[<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>]
+<span class="kw">apply</span>(mydata,<span class="dv">2</span>,summary)</code></pre></div>
+<pre><code>##           a   b   c    d
+## Min.    1.0 4.0 7.0 10.0
+## 1st Qu. 1.5 4.5 7.5 10.5
+## Median  2.0 5.0 8.0 11.0
+## Mean    2.0 5.0 8.0 11.0
+## 3rd Qu. 2.5 5.5 8.5 11.5
+## Max.    3.0 6.0 9.0 12.0</code></pre>
+<p><em>For arrays:</em></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">vector1 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">5</span>,<span class="dv">9</span>,<span class="dv">3</span>)
+vector2 &lt;-<span class="st"> </span><span class="dv">10</span><span class="op">:</span><span class="dv">15</span>
+<span class="co"># Take these vectors as input to the array.</span>
+myarray &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="kw">c</span>(vector1,vector2),<span class="dt">dim =</span> <span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>))
+<span class="kw">print</span>(myarray)</code></pre></div>
+<pre><code>## , , 1
+## 
+##      [,1] [,2] [,3]
+## [1,]    5   10   13
+## [2,]    9   11   14
+## [3,]    3   12   15
+## 
+## , , 2
+## 
+##      [,1] [,2] [,3]
+## [1,]    5   10   13
+## [2,]    9   11   14
+## [3,]    3   12   15</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Use apply to calculate the sum/mean of the rows/columns across all the matrices.</span>
+result &lt;-<span class="st"> </span><span class="kw">apply</span>(myarray, <span class="kw">c</span>(<span class="dv">1</span>), sum)
+<span class="kw">print</span>(result)</code></pre></div>
+<pre><code>## [1] 56 68 60</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">result &lt;-<span class="st"> </span><span class="kw">apply</span>(myarray, <span class="kw">c</span>(<span class="dv">2</span>), mean)
+<span class="kw">print</span>(result)</code></pre></div>
+<pre><code>## [1]  5.666667 11.000000 14.000000</code></pre>
+<p>The function sapply() can be useful for getting information about the columns of a data frame.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata&lt;-<span class="kw">read.csv</span>(<span class="st">&quot;data/stroke.csv&quot;</span>,<span class="dt">header=</span>T)
+<span class="kw">head</span>(mydata)</code></pre></div>
+<pre><code>##      sex       dstr age coma diab minf han  dead   obsmonths
+## 1   Male 1991-01-02  76   No   No  Yes  No  TRUE  0.16339869
+## 2   Male 1991-01-03  58   No   No   No  No FALSE 59.60784314
+## 3   Male 1991-01-08  74   No   No  Yes Yes  TRUE  4.73856209
+## 4 Female 1991-01-11  78   No  Yes   No Yes  TRUE  0.06535948
+## 5 Female 1991-01-13  76   No  Yes   No Yes FALSE 59.28104575
+## 6   Male 1991-01-13  48  Yes   No   No Yes  TRUE  0.10000000</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sapply</span>(mydata,is.factor)</code></pre></div>
+<pre><code>##       sex      dstr       age      coma      diab      minf       han 
+##      TRUE      TRUE     FALSE      TRUE      TRUE      TRUE      TRUE 
+##      dead obsmonths 
+##     FALSE     FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#sex,dstr,coma,diab,minf and han are factors</span>
+<span class="kw">sapply</span>(mydata, <span class="cf">function</span>(x)<span class="cf">if</span>(<span class="op">!</span><span class="kw">is.factor</span>(x))<span class="kw">return</span>(<span class="dv">0</span>) <span class="cf">else</span> <span class="kw">length</span>(<span class="kw">levels</span>(x)))</code></pre></div>
+<pre><code>##       sex      dstr       age      coma      diab      minf       han 
+##         2       575         0         2         2         2         2 
+##      dead obsmonths 
+##         0         0</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># This answers the question that how many levels does each factor have?</span></code></pre></div>
+</div>
+<div id="other-useful-functions" class="section level3">
+<h3><span class="header-section-number">4.4.4</span> Other useful functions</h3>
+<p>R has many functions for manipulating data. Some of them are listed:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">age=<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">8</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">3</span>)
+weight=<span class="kw">c</span>(<span class="dv">45</span>,<span class="dv">65</span>,<span class="dv">34</span>)
+<span class="kw">print</span>(age)<span class="co"># Print a single R object</span></code></pre></div>
+<pre><code>## [1] 1 6 4 5 8 5 4 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(age,weight)<span class="co"># Print multiple objects, one after the other </span></code></pre></div>
+<pre><code>## 1 6 4 5 8 5 4 3 45 65 34</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(age)</code></pre></div>
+<pre><code>## [1] 4.5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">prod</span>(age)<span class="co">#product of the elements </span></code></pre></div>
+<pre><code>## [1] 57600</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">median</span>(age)</code></pre></div>
+<pre><code>## [1] 4.5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">range</span>(age)</code></pre></div>
+<pre><code>## [1] 1 8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">var</span>(age)<span class="co">#variance of the elements of x (calculated on n − 1)</span></code></pre></div>
+<pre><code>## [1] 4.285714</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(age)<span class="co">#standard deriviation</span></code></pre></div>
+<pre><code>## [1] 2.070197</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">max</span>(age)</code></pre></div>
+<pre><code>## [1] 8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">min</span>(age)</code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">which.max</span>(age)<span class="co">#returns the index of the greatest element of x</span></code></pre></div>
+<pre><code>## [1] 5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">which.min</span>(age)<span class="co">#returns the index of the smallest element of x</span></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">quantile</span>(age)<span class="co">#returns the minimum, 25%, 50%, 75% and maximum value</span></code></pre></div>
+<pre><code>##   0%  25%  50%  75% 100% 
+## 1.00 3.75 4.50 5.25 8.00</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">unique</span>(age)<span class="co"># Gives the vector of distinct values</span></code></pre></div>
+<pre><code>## [1] 1 6 4 5 8 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">diff</span>(age)<span class="co"># Replace a vector by the vector of first differences</span></code></pre></div>
+<pre><code>## [1]  5 -2  1  3 -3 -1 -1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sort</span>(age)<span class="co"># Sort elements into order</span></code></pre></div>
+<pre><code>## [1] 1 3 4 4 5 5 6 8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">age[<span class="kw">order</span>(age)]<span class="co">#x[order(x)] orders elements of x</span></code></pre></div>
+<pre><code>## [1] 1 3 4 4 5 5 6 8</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cumsum</span>(age)<span class="co">#cumulative sums</span></code></pre></div>
+<pre><code>## [1]  1  7 11 16 24 29 33 36</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cumprod</span>(age)<span class="co">#cumulative products</span></code></pre></div>
+<pre><code>## [1]     1     6    24   120   960  4800 19200 57600</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">rev</span>(age)<span class="co"># reverse the order of vector elements</span></code></pre></div>
+<pre><code>## [1] 3 4 5 8 5 4 6 1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cut</span>(age, <span class="dv">5</span>)<span class="co">#divide continuous variable in factor with n levels </span></code></pre></div>
+<pre><code>## [1] (0.993,2.4] (5.2,6.6]   (3.8,5.2]   (3.8,5.2]   (6.6,8.01]  (3.8,5.2]  
+## [7] (3.8,5.2]   (2.4,3.8]  
+## Levels: (0.993,2.4] (2.4,3.8] (3.8,5.2] (5.2,6.6] (6.6,8.01]</code></pre>
+<p>The functions mean(), median(), range(), and a number of other functions, take the argument na.rm=T; i.e. remove NAs, then proceed with the calculation. Note: Function sort() and order() deal with missing data in different ways.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="dv">2</span>, <span class="ot">NA</span>, <span class="dv">25</span>)
+<span class="kw">sort</span>(x)<span class="co">#The function sort() omits any NAs</span></code></pre></div>
+<pre><code>## [1]  1  2 15 25</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">order</span>(x)<span class="co">#The function order() places NAs last. </span></code></pre></div>
+<pre><code>## [1] 1 3 2 5 4</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x[<span class="kw">order</span>(x)]</code></pre></div>
+<pre><code>## [1]  1  2 15 25 NA</code></pre>
+</div>
+<div id="write-functions" class="section level3">
+<h3><span class="header-section-number">4.4.5</span> Write functions</h3>
+<p>In R, we can also write our own functions. This can be done by using Function() function.</p>
+<pre><code>func_name &lt;- function (argument) {
+   statement
+}</code></pre>
+<p>Example 1:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mypow &lt;-<span class="st"> </span><span class="cf">function</span>(x, y) {
+   <span class="co"># function to print x raised to the power y</span>
+   result &lt;-<span class="st"> </span>x<span class="op">^</span>y
+   <span class="kw">print</span>(<span class="kw">paste</span>(x,<span class="st">&quot;^&quot;</span>, y, <span class="st">&quot;is&quot;</span>, result))
+}
+<span class="co">#Here, we created a function called mypow().It takes two arguments, finds the first argument raised to the power of second argument and prints the result in appropriate format.</span></code></pre></div>
+<p>To call this function:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mypow</span>(<span class="dv">2</span>,<span class="dv">4</span>)</code></pre></div>
+<pre><code>## [1] &quot;2 ^ 4 is 16&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mypow</span>(<span class="dt">x=</span><span class="dv">2</span>,<span class="dt">y=</span><span class="dv">4</span>)</code></pre></div>
+<pre><code>## [1] &quot;2 ^ 4 is 16&quot;</code></pre>
+<p>Example 2:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">basic &lt;-<span class="st"> </span><span class="cf">function</span>(x) {
+  result=<span class="kw">round</span>(<span class="kw">mean</span>(x)<span class="op">/</span><span class="kw">sd</span>(x)<span class="op">+</span><span class="kw">median</span>(x),<span class="dv">2</span>)
+   <span class="kw">return</span>(result)
+}</code></pre></div>
+<p>To call the function:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">basic</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>)</code></pre></div>
+<pre><code>## [1] 7.32</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">basic</span>(<span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>))</code></pre></div>
+<pre><code>## [1] 6.53</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#for a dataframe</span>
+mydata=<span class="kw">data.frame</span>(<span class="dt">x1=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">0</span>,<span class="op">-</span><span class="dv">3</span>),<span class="dt">x2=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>))
+<span class="kw">apply</span>(mydata,<span class="dv">2</span>,basic)</code></pre></div>
+<pre><code>##   x1   x2 
+## 1.19 4.89</code></pre>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="an-overview-of-r-part-ii-ch3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-managements-part-ii-reshape-data-ch4.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Epi-packages.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
