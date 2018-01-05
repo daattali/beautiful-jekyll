@@ -4,6 +4,10 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2018-01-05** Abstract the social networks logic (thanks @OCram85)
+
+**2018-01-03** Avatar image no longer causes a ghost click (thanks @alefi87)
+
 **2017-10-16** Add GitHub buttons to posts (#265) (thanks @yonicd)
 
 **2017-09-04** Ability to change colour/image of navbar/footer/body
