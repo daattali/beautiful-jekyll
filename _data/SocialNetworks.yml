@@ -1,10 +1,10 @@
 # You can define your custom social network links here.
 # Use the same key you added in _config.yml -> soicial-network-links.
-# In addition to that you need to specify the following sub properties:
-# name: specify a use friendly name. This is used as link title
-# baseurl: Define a base url which will be combined with the value of
-#          site.social-network-links.<key>
-# icon: select a valid fontawesome icon class like fa-user
+# In addition to that you need to specify the following properties:
+#   name: Specify a user-friendly name that will be used as a link title
+#   baseURL: Define a base URL which will be combined with the value of
+#            site.social-network-links.<key>
+#   icon: Specify a valid fontawesome icon class
 
 facebook:
   name: "Facebook"
