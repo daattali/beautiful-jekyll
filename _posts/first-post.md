@@ -5,4 +5,4 @@ image: /img/hello_world.jpeg
 tags: [random, exciting-stuff]
 ---
 
-This is my first post, how exciting!
+Epidemiology is a quantitative science. R is a statistical language that is well suited for the data science work of epidemiologists and clinical scientists. Click [here] to open an online version of introductory notes to using R.
