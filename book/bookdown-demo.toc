@@ -1,0 +1,145 @@
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\contentsline {chapter}{\numberline {2}An overview of R: part I \{ch2\}}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Basic computations in R}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Create an object}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Operators}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}2.3.1 Arithmetic operators}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Relational operators}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Logical operators}{11}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Generate data}{11}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Regular sequences}{11}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Random sequences}{12}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Data types}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Vectors}{13}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Lists}{14}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Factors}{15}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Matrices}{15}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Arrays}{17}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Data Frames}{19}{subsection.2.5.6}
+\contentsline {chapter}{\numberline {3}An overview of R: Part II \{ch3\}}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Assess the values of an object}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Using the index system}{21}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Using the names}{24}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Get the data into R}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Direct data entering}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Use dataset that come with R or R packages}{27}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Read in data files}{27}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Read in data from the clipboard}{29}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Read in remote data}{29}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Export data}{29}{section.3.3}
+\contentsline {section}{\numberline {3.4}Save and load data in R}{30}{section.3.4}
+\contentsline {section}{\numberline {3.5}View data}{30}{section.3.5}
+\contentsline {chapter}{\numberline {4}Data management: Part I \{ch4\}}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Control structure}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}For loop}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}While Loop}{33}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}If-else Loop}{34}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Repeat Loop}{34}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Missing values}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}Dates}{36}{section.4.3}
+\contentsline {section}{\numberline {4.4}Common useful functions}{37}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Numeric functions}{37}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Character Functions}{38}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Apply functions over a list, array, dataframe or matrix}{39}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Other useful functions}{41}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Write functions}{42}{subsection.4.4.5}
+\contentsline {chapter}{\numberline {5}Data managements: Part II- Reshape data \{ch4\}}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Subset Data}{45}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Select variables}{45}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Exclude variables}{47}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Select Observations}{48}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Select both variables and observations}{49}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Keep or delete variables using dplyr function}{49}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Keep/drop variables by name pattern}{50}{subsection.5.1.6}
+\contentsline {section}{\numberline {5.2}Merge Data}{52}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Add cases/observations to a dataset}{52}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Merge Data Frames}{53}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Add more variables to a dataset}{55}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}The Reshape package}{55}{section.5.3}
+\contentsline {chapter}{\numberline {6}Base Graphics with R \{ch5\}}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Graphical functions}{57}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}(1) High-level graphical functions}{57}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}(2) Low-level functions}{58}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Graphical parameters}{59}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}6.2.1 Specify within the high-level function}{59}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Function par()}{60}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Multiple plots on the one page}{64}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Function layout()}{64}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Function par()}{65}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Save a plot}{67}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Save plots by menu click}{67}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Save plots using functions}{67}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}(1) A common method}{67}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}(2)Another option}{68}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}(3) Saving plots in a loop}{69}{subsection.6.4.5}
+\contentsline {chapter}{\numberline {7}Descriptive statistics with R: Part I-Quantitative variables \{ch6\}}{71}{chapter.7}
+\contentsline {section}{\numberline {7.1}For the whole dataset}{72}{section.7.1}
+\contentsline {section}{\numberline {7.2}For a single quantitative variable}{73}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Numerical representation}{73}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Graphical representation}{74}{subsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.1}(1) Histograms}{74}{subsubsection.7.2.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2.2}(2) Boxplot}{76}{subsubsection.7.2.2.2}
+\contentsline {subsubsection}{\numberline {7.2.2.3}(3) Empirical cumulative distribution}{77}{subsubsection.7.2.2.3}
+\contentsline {subsubsection}{\numberline {7.2.2.4}(4) Q-Q plots}{77}{subsubsection.7.2.2.4}
+\contentsline {section}{\numberline {7.3}For a quantitative variable by groups}{78}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Numerical representation}{78}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Graphical representation}{82}{subsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.2.1}(1) Histograms}{82}{subsubsection.7.3.2.1}
+\contentsline {subsubsection}{\numberline {7.3.2.2}(3) Violin Plots}{83}{subsubsection.7.3.2.2}
+\contentsline {section}{\numberline {7.4}For two quantitative variables}{84}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Numerical representation}{84}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Graphical representation}{84}{subsection.7.4.2}
+\contentsline {chapter}{\numberline {8}Descriptive statistics with R: Part II-Categorical variables and ggplot}{87}{chapter.8}
+\contentsline {section}{\numberline {8.1}Numerical representation}{87}{section.8.1}
+\contentsline {section}{\numberline {8.2}Graphical representation}{89}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}(1) Barplots}{89}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}(2) Dotcharts}{90}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}(3) Piecharts}{90}{subsection.8.2.3}
+\contentsline {section}{\numberline {8.3}ggplot2 function}{91}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}(1)a simple histogram for a single quantative variable}{91}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}(2)for a quantative variable by groups}{92}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}(3) for two quantitative variables}{92}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}(4) for categorial variable}{94}{subsection.8.3.4}
+\contentsline {chapter}{\numberline {9}Basic statistical tests with R}{97}{chapter.9}
+\contentsline {section}{\numberline {9.1}Two-sample tests}{97}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}t-test}{97}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Nonparametric tests}{99}{subsection.9.1.2}
+\contentsline {section}{\numberline {9.2}Analysis Of Variance}{99}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Assumptions assessment}{100}{subsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.1.1}(1) Normality}{100}{subsubsection.9.2.1.1}
+\contentsline {subsubsection}{\numberline {9.2.1.2}(2) Homogeneity of Variances}{101}{subsubsection.9.2.1.2}
+\contentsline {subsection}{\numberline {9.2.2}Parametric test}{101}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}Nonparametric test}{103}{subsection.9.2.3}
+\contentsline {subsection}{\numberline {9.2.4}Multivariate analysis of variance}{104}{subsection.9.2.4}
+\contentsline {subsection}{\numberline {9.2.5}Two-way analysis of variance}{104}{subsection.9.2.5}
+\contentsline {section}{\numberline {9.3}Correlation}{104}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Spearman's \GenericError {(inputenc) }{Package inputenc Error: Unicode char ρ (U+3C1)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{105}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Kendall's \GenericError {(inputenc) }{Package inputenc Error: Unicode char τ (U+3C4)\MessageBreak not set up for use with LaTeX}{See the inputenc package documentation for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{106}{subsection.9.3.2}
+\contentsline {section}{\numberline {9.4}Tabular data}{106}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Single proportion}{106}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Two independent proportions}{107}{subsection.9.4.2}
+\contentsline {subsection}{\numberline {9.4.3}k proportions}{108}{subsection.9.4.3}
+\contentsline {subsection}{\numberline {9.4.4}r \IeC {\texttimes } c tables}{109}{subsection.9.4.4}
+\contentsline {chapter}{\numberline {10}Regressions with R-Linear Regression}{111}{chapter.10}
+\contentsline {section}{\numberline {10.1}Simple linear regression}{112}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Function}{112}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Output explanation}{112}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}Other useful functions}{114}{subsection.10.1.3}
+\contentsline {subsection}{\numberline {10.1.4}Fitted values and residuals}{114}{subsection.10.1.4}
+\contentsline {subsection}{\numberline {10.1.5}Prediction and confidence intervals}{116}{subsection.10.1.5}
+\contentsline {section}{\numberline {10.2}Multiple linear regression}{120}{section.10.2}
+\contentsline {chapter}{\numberline {11}Survival analysis}{123}{chapter.11}
+\contentsline {section}{\numberline {11.1}Create the response variable}{124}{section.11.1}
+\contentsline {section}{\numberline {11.2}Kaplan-Meier estimate}{125}{section.11.2}
+\contentsline {section}{\numberline {11.3}Cumulative hazard}{129}{section.11.3}
+\contentsline {section}{\numberline {11.4}The log-rank test}{129}{section.11.4}
+\contentsline {section}{\numberline {11.5}Cox Proportional Hazards Model}{129}{section.11.5}
+\contentsline {subsection}{\numberline {11.5.1}Regular Cox proportional hazards model}{130}{subsection.11.5.1}
+\contentsline {subsection}{\numberline {11.5.2}Test for proportional hazards}{133}{subsection.11.5.2}
+\contentsline {chapter}{\numberline {12}Bootstrap, analysis of clustered data and non-linear effects}{137}{chapter.12}
+\contentsline {section}{\numberline {12.1}Bootstrap}{137}{section.12.1}
+\contentsline {section}{\numberline {12.2}Analysis of clustered data}{139}{section.12.2}
+\contentsline {subsection}{\numberline {12.2.1}Linear Mixed Effects Models}{141}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {12.2.2}Generalized Estimation Equations (GEE) models}{143}{subsection.12.2.2}
+\contentsline {section}{\numberline {12.3}Non-linear effects}{144}{section.12.3}
+\contentsline {section}{\numberline {12.4}Epi packages- Epitab()}{148}{section.12.4}
