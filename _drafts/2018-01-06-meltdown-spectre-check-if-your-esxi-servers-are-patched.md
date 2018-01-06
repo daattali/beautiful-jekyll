@@ -35,4 +35,53 @@ Note that you will need Powercli version 6.3R1 or higher as I make use of "Get-E
 
 Connect to your vCenter in POwerCLI and paste the following. It will output a table of all your hosts with their version and if the vibs included in the patched are installed.
 
+```Powershell
+foreach ($VMHost in (Get-VMHost |where powerstate -eq "PoweredOn")) {
 
+    $esxcliv2 = Get-EsxCli -VMHost $VMHost -V2
+
+    if ($VMHost.version -eq "6.5.0") {
+    
+        foreach ($patch in "VMware_bootbank_esx-base_6.5.0-1.33.7273056","VMware_bootbank_esx-tboot_6.5.0-1.33.7273056","VMware_bootbank_vsan_6.5.0-1.33.6852403","VMware_bootbank_vsanhealth_6.5.0-1.33.6852404") {
+
+            if ($esxcliv2.software.vib.list.Invoke() | where ID -eq $patch) {[pscustomobject]@{Host=$vmhost.name;version=$VMHost.version;patch=$patch;status="Installed"}}
+            else {[pscustomobject]@{Host=$vmhost.name;patch=$patch;status="Not Installed"}}
+
+        }
+
+    } elseif ($VMHost.version -eq "6.0.0") {
+
+        foreach ($patch in "VMware_bootbank_esx-base_6.0.0-3.76.6856897","VMware_bootbank_vsan_6.0.0-3.76.6769077","VMware_bootbank_vsanhealth_6.0.0-3000000.3.0.3.76.6769078") {
+
+            if ($esxcliv2.software.vib.list.Invoke() | where ID -eq $patch) {[pscustomobject]@{Host=$vmhost.name;version=$VMHost.version;patch=$patch;status="Installed"}}
+            else {[pscustomobject]@{Host=$vmhost.name;patch=$patch;status="Not Installed"}}
+
+        }
+
+    } elseif ($VMHost.version -eq "5.5.0") {
+
+        foreach ($patch in "VMware_bootbank_esx-base_5.5.0-3.103.6480267") {
+
+            if ($esxcliv2.software.vib.list.Invoke() | where ID -eq $patch) {
+                [pscustomobject]@{Host=$vmhost.name;version=$VMHost.version;patch=$patch;status="Installed"}
+                Write-Warning "Doesn't include remediation for CVE-2017-5753"}
+            else {[pscustomobject]@{Host=$vmhost.name;patch=$patch;status="Not Installed"}}
+
+        }
+        
+
+    } else {Write-Warning "No patch released for ESXi version $($VMHost.version) as of 2018/01/06"}
+
+}
+```
+
+The result looks like the following for a patched ESXi 5.5.
+
+
+
+for a patched ESXi 6.5.
+
+
+If you don't have the patches it will simply display "Not Installed" instead.
+
+## What to do now?
