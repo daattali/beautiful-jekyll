@@ -31,9 +31,9 @@ The 5.5 patch has remediation against CVE-2017-5715 but not against CVE-2017-575
 
 The point of this short post is to give you a quick and easy way to check if the patch is installed on your servers.
 
-Note that you will need Powercli version 6.3R1 or higher as I make use of "Get-ESXCLI -V2".
+Note that you will need Powercli version 6.3R1 or higher as I make use of the "Get-ESXCLI -V2" cmdlet (earlier version don't have a v2 switch that offers a better syntaxe to deal with esxcli).
 
-Connect to your vCenter in POwerCLI and paste the following. It will output a table of all your hosts with their version and if the vibs included in the patched are installed.
+Connect to your vCenter in PowerCLI and paste the following script in your prompt. It will output a table of your hosts with their version number and if the vibs included in the VMware patches are installed.
 
 ```Powershell
 foreach ($VMHost in (Get-VMHost |where powerstate -eq "PoweredOn")) {
