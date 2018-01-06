@@ -779,11 +779,3 @@ td.gutter {
   background-color: {{ site.hover-col }};
 }
 {% endif %}
-
-/* navbar-toggle button custom colors, overrides bootstrap.css */
-
-{% if site.hover-col %}
-.navbar-default button.navbar-toggle:hover, .navbar-default button.navbar-toggle:focus {
-  background-color: {{ site.hover-col }};
-}
-{% endif %}
