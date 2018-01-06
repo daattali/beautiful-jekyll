@@ -38,6 +38,9 @@ a {
 a:hover,
 a:focus {
   color: #0085a1;
+  {% if site.hover-col %}
+  color: {{ site.hover-col }};
+  {% endif %}
 }
 blockquote {
   color: #808080;
@@ -76,11 +79,17 @@ hr.small {
   color: white;
   text-shadow: none;
   background: #0085a1;
+  {% if site.hover-col %}
+  background: {{ site.hover-col }};
+  {% endif %}
 }
 ::selection {
   color: white;
   text-shadow: none;
   background: #0085a1;
+  {% if site.hover-col %}
+  background: {{ site.hover-col }};
+  {% endif %}
 }
 img::selection {
   color: white;
@@ -130,6 +139,9 @@ img {
 .navbar-custom .nav li a {
   font-weight: 800;
   color: #404040;
+  {% if site.navbar-text-col %}
+  color: {{ site.navbar-text-col }};
+  {% endif %}
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -137,6 +149,9 @@ img {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #0085a1;
+  {% if site.hover-col %}
+  color: {{ site.hover-col }};
+  {% endif %}
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -231,6 +246,9 @@ img {
   padding: 10px;
   padding-left: 30px;
   background: #f5f5f5;
+  {% if site.navbar-col %}
+  background: {{ site.navbar-col }};
+  {% endif %}
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
@@ -249,6 +267,11 @@ img {
   }
   .navbar-custom .nav .navlinks-container:hover {
     background: #eee;
+    {% if site.navbar-col %}
+    background: {{ site.navbar-col }};
+    outline: 1px #eaeaea solid;
+    background: rgba(0, 0, 0, -0.1);
+    {% endif %}
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
@@ -336,6 +359,9 @@ footer .theme-by {
 .post-preview a:hover {
   text-decoration: none;
   color: #0085a1;
+  {% if site.hover-col %}
+  color: {{ site.hover-col }};
+  {% endif %}
 }
 
 .post-preview .post-title {
@@ -614,6 +640,10 @@ footer .theme-by {
   color: #FFF;
   background: #0085a1;
   border: 1px solid #0085a1;
+  {% if site.hover-col %}
+  background: {{ site.hover-col }};
+  border-color: {{ site.hover-col }};
+  {% endif %}
 }
 
 .pager {
@@ -741,3 +771,11 @@ td.gutter {
 .gist, .gist-file table tr td {
   border: unset;
 }
+
+/* navbar-toggle button custom colors, overrides bootstrap.css */
+
+{% if site.hover-col %}
+.navbar-default button.navbar-toggle:hover, .navbar-default button.navbar-toggle:focus {
+  background-color: {{ site.hover-col }};
+}
+{% endif %}
