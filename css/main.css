@@ -741,3 +741,14 @@ td.gutter {
 .gist, .gist-file table tr td {
   border: unset;
 }
+
+/* fix .navbar-toggle */
+
+.navbar-default button.navbar-toggle:focus,
+.navbar-default button.navbar-toggle:hover {
+  background-color: initial;
+}
+
+.navbar-default button.navbar-toggle[aria-expanded="true"] {
+  background-color: #ddd;
+}
