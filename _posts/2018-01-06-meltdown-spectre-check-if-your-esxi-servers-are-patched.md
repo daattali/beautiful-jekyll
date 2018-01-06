@@ -33,7 +33,7 @@ _The 5.5 patch has remediation against CVE-2017-5715 but not against CVE-2017-57
 
 ## Identify if your ESXi hosts are patched
 
-The point of this short post is to give you a quick and easy way to check if the patch is installed on your servers.
+The point of this quick post is to give you a quick and easy way to check if the patch is installed on your servers.
 
 Note that you will need Powercli version 6.3R1 or higher as I make use of the "Get-ESXCLI -V2" cmdlet (earlier version don't have a v2 switch that offers a better syntaxe to deal with esxcli).
 
