@@ -21,9 +21,9 @@ The patches only address CVE-2017-5753 and CVE-2017-5715 which correspond to "Sp
 
 Here is the security bulleting by VMware in which you will find the patches IDs, the CVEs and some other useful stuff: [https://www.vmware.com/us/security/advisories/VMSA-2018-0002.html](https://www.vmware.com/us/security/advisories/VMSA-2018-0002.html)
 
--ESXi 6.5 : ESXi650-201712101-SG
--ESXi 6.0 : ESXi600-201711101-SG
--ESXi 5.5 : ESXi550-201709101-SG*
+-**ESXi 6.5 : ESXi650-201712101-SG**
+-**ESXi 6.0 : ESXi600-201711101-SG**
+-**ESXi 5.5 : ESXi550-201709101-SG**
 
 The 5.5 patch has remediation against CVE-2017-5715 but not against CVE-2017-5753.
 
@@ -77,11 +77,16 @@ foreach ($VMHost in (Get-VMHost |where powerstate -eq "PoweredOn")) {
 
 The result looks like the following for a patched ESXi 5.5.
 
-
+![spectre-5.5.jpg]({{site.baseurl}}/img/spectre-5.5.jpg)
 
 for a patched ESXi 6.5.
 
+![spectre-6.5.jpg]({{site.baseurl}}/img/spectre-6.5.jpg)
 
 If you don't have the patches it will simply display "Not Installed" instead.
 
 ## What to do now?
+
+Well, it's time to log back in vSphere Update Manager and patch your systems with the patches mentionned earlier.
+
+If you are more of a CLI guys you can download the patches [there](https://my.vmware.com/group/vmware/patch). Log in and search for the patch ID.
