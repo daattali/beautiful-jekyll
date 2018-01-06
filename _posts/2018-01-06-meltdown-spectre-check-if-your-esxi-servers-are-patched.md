@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Meltdown & Spectre - Check if your ESXi servers are patched
 ---
 There has been a lot of noise recently regarding the 2 major flaws, **Spectre** and **Meltdown**, uncovered affecting mainly Intel CPUs. The flaws are apparently very difficult to exploit which makes a leak coming from there an unlikely scenario but who knows? No one likes to have a somewhat vulnerable system so let's treat it as so.
