@@ -4,7 +4,7 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
-**2018-01-06** More color personalization options (#297 and #298) (thanks @jennydaman)
+**2018-01-06** More color personalization options (#297 and #299) (thanks @jennydaman)
 
 **2018-01-05** Abstract the social networks logic (thanks @OCram85)
 
