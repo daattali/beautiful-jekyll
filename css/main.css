@@ -239,7 +239,6 @@ img {
   }
   .navbar-custom .nav .navlinks-container:hover {
     background-color: {{ site.navbar-col }};
-    outline: 1px #eaeaea solid;
     background: rgba(0, 0, 0, 0.1);
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
