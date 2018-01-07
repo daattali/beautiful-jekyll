@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  color: {{ site.hover-col }};
+  color: {{ site.link-col }};
 }
 a:hover,
 a:focus {
@@ -388,7 +388,7 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: {{ site.hover-col }};
+  color: {{ site.link-col }};
   text-decoration: none;
   padding: 0px 5px;
 }

@@ -60,6 +60,7 @@ navbar-children-col: "#f5f5f5"
 footer-col: "#F5F5F5"
 page-col: "#FFF"
 hover-col: "#0085a1"
+link-col: "#008AFF"
 
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
