@@ -269,8 +269,12 @@ footer {
   {% endif %}
 }
 
+footer p.text-muted {
+  color: {{ site.footer-text-col }};
+}
+
 footer a {
-  color: #404040;
+  color: {{site.footer-link-col}};
 }
 
 footer .list-inline {
