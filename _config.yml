@@ -43,15 +43,26 @@ avatar: "/img/avatar-icon.png"
 # By default, the navigation bar and footer have a light gray background, and the main page
 # has a white background. You can specify a different background colour or a background image
 # for the navigation bar, the main page, and the footer.
-# navbar-col: "linear-gradient(to top left, #333399 0%, #9966ff 100%);" # go crazy :)
-# navbar-text-col: "#EEEEEE"
-# navbar-children-col: "#333399"
+
+# values can be any HTML5/CSS3 color scheme. For example:
+# pink
+# DeepSkyBlue
+# #EEE
+# #333399
+# linear-gradient(to top left, #333399 0%, #9966ff 100%);
+
+# alternatively, the navbar, footer, and page can be set to background images.
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-children-col: "#f5f5f5"
+footer-col: "#F5F5F5"
+page-col: "#FFF"
+hover-col: "#0085a1"
+
 # navbar-img: "/img/bgimage.png"
-# footer-col: "blue"
 # footer-img: "/img/bgimage.png"
-# page-col: "#FF0000"
 # page-img: "/img/bgimage.png"
-# hover-col: "pink"
 
 # --- Footer options --- #
 
