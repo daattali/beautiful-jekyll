@@ -40,26 +40,20 @@ avatar: "/img/avatar-icon.png"
 
 # --- Background colour/image options --- #
 
-# Personalize the colors and theme of your website.
-# values can be any HTML5/CSS3 color parameter. For example:
-# pink                                                           https://www.w3schools.com/colors/colors_names.asp
-# DeepSkyBlue
-# #EEE                                                           https://www.w3schools.com/colors/colors_picker.asp
-# #333399
-# rgb(66, 134, 244)
-# linear-gradient(to top left, #333399 0%, #9966ff 100%)         https://www.w3schools.com/colors/colors_gradient.asp
+# Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
-navbar-children-col: "#f5f5f5"
-page-col: "#FFF"
-hover-col: "#0085a1"
+navbar-children-col: "#F5F5F5"
+page-col: "#FFFFFF"
 link-col: "#008AFF"
+hover-col: "#0085A1"
 footer-col: "#F5F5F5"
-footer-text-col: "#777"
+footer-text-col: "#777777"
 footer-link-col: "#404040"
 
-# Alternatively, the navbar, footer, and page can be set to use background images.
+# Alternatively, the navbar, footer, and page background can be set to use background images
+# instead of colour
 
 # navbar-img: "/img/bgimage.png"
 # footer-img: "/img/bgimage.png"
