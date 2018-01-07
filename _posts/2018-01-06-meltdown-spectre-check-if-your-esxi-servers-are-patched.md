@@ -5,6 +5,8 @@ title: Meltdown & Spectre - Check if your ESXi servers are patched
 ---
 There has been a lot of noise recently regarding the 2 major flaws, **Spectre** and **Meltdown**, uncovered affecting mainly Intel CPUs. The flaws are apparently very difficult to exploit which makes a leak coming from there an unlikely scenario but who knows? No one likes to have a somewhat vulnerable system so let's treat it as so.
 
+_**Note that Meltdown does not affect ESXi**_
+
 Spectre and Meltdown can have an impact of various degrees regarding your system/infra. Here we talk about virtualisation, to explain in a nutshell I will quote a [post by El Reg'](https://www.theregister.co.uk/2018/01/04/intel_amd_arm_cpu_vulnerability/).
 
 > On a shared system, such as a public cloud server, it is possible, depending on the configuration, for software in a guest virtual machine to drill down into the host machine's physical memory and steal data from other customers' virtual machines.
@@ -93,4 +95,4 @@ If you don't have the patches it will simply display "Not Installed" instead.
 
 Well, it's time to log back in vSphere Update Manager and patch your systems with the patches mentionned earlier.
 
-If you are more of a CLI guys you can download the patches [there](https://my.vmware.com/group/vmware/patch). Just log on with your VMware account and search for the patch ID.
+If you are more of a CLI bloke you can download the patches [there](https://my.vmware.com/group/vmware/patch) and install them on your servers. Just log on with your VMware account and search for the patch ID.
