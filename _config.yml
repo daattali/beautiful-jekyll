@@ -49,7 +49,8 @@ avatar: "/img/avatar-icon.png"
 # DeepSkyBlue
 # #EEE
 # #333399
-# linear-gradient(to top left, #333399 0%, #9966ff 100%);
+# rgb(66, 134, 244)
+# linear-gradient(to top left, #333399 0%, #9966ff 100%)
 
 # alternatively, the navbar, footer, and page can be set to background images.
 
