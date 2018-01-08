@@ -238,7 +238,7 @@ img {
     text-align: center;
   }
   .navbar-custom .nav .navlinks-container:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
