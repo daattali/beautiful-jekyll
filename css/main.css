@@ -137,6 +137,9 @@ img {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #0085a1;
+  {% if site.navbar-highlight %}
+  color: {{ site.navbar-highlight }};
+  {% endif %}
 }
 
 .navbar-custom .navbar-brand-logo {
