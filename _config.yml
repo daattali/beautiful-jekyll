@@ -72,7 +72,7 @@ url-pretty: "UBC-MDS.github.io"
 disqus: "ubc-mds-blog"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-112188182-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
