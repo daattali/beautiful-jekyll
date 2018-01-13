@@ -19,9 +19,9 @@ Builds on the default AWS Ubuntu 64 server AMI
 AMI also has all of the dependency libraries installed by the following packages
 
 Items added:
-Has NVIDIA 384.90 drivers
-CUDA 8.0.61
-CUDNN 6.0
-Annaconda/Jupyter (latest)
-Tensorflow-GPU
-Keras-GPU
+* NVIDIA 384.90 drivers
+* CUDA 8.0.61
+* CUDNN 6.0
+* Annaconda/Jupyter (latest)
+* Tensorflow-GPU
+* Keras-GPU
