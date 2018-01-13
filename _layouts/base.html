@@ -20,7 +20,10 @@ common-js:
   {% include head.html %}
 
   <body>
-
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
+    
     {% include gtm_body.html %}
   
     {% include nav.html %}

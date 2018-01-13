@@ -15,4 +15,4 @@ I've kept a [log](https://github.com/pixelatedbrian/sturdy-umbrella/blob/master/
 
 I think currently some of the models that are being fit are overfitting because of the number of features currently being used. Currently there are ~300 features although a lot of those are dummified categorical features. (boolean flags) Going forward I will see if more regularization helps to improve predictions as well as continue to do EDA to ensure that features have been properly transformed.
 
-This is currently a work in progress.
+This is currently a work in progress. The code and details are available [here](https://github.com/pixelatedbrian/sturdy-umbrella)
