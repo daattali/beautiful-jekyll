@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Canofre
+title: Adriano Canofre
 
 # Short description of your site
 description: Transformo cerveja em código!
@@ -23,13 +23,11 @@ description: Transformo cerveja em código!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-  # Author's home: "http://deanattali.com"
+  Sobre: "sobre"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/avatar.jpeg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -100,10 +98,10 @@ share-links-active:
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "adriano-canofre"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-112463096-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -122,10 +120,10 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Sao_Paulo"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /:categories/:title/
 paginate: 5
 
 kramdown:
@@ -149,7 +147,7 @@ defaults:
       show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+link-tags: true
 
 # Exclude these files from production site
 exclude:
