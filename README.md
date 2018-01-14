@@ -205,23 +205,26 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ## Advanced: Local development using Docker
 
-Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Docker:
-
-1. Make sure that you have Docker installed on your local environment. Installation instructions can be found [here](https://docs.docker.com/engine/installation/)
-2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Build the docker image
+First, clone your repository locally.
 
 ```bash
-docker build -t beautiful-jekyll $PWD
+git clone https://github.com/<your_username>/<your_username>.github.io.git
 ```
 
-4. Start the container for the first time
+Make sure you have Docker installed. https://www.docker.com/community-edition
+
+### First-time setup
 
 ```bash
+# 1. change directory
+cd <folder>
+# 2. Build the docker image
+docker build -t beautiful-jekyll $PWD
+# 3. Start the container for the first time
 docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
 ```
 
-5. View your website at <http://localhost:4000>.
+You can now view your website at http://localhost:4000/.
 
 After the container is running, you can stop the server simply with the command
 
