@@ -209,16 +209,40 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
 
 1. Make sure that you have Docker installed on your local environment. Installation instructions can be found [here](https://docs.docker.com/engine/installation/)
 2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Inside your repository folder, run:
+3. Build the docker image
 
-    ```
-    docker run -p 4000:4000 -v `pwd`:/app mangar/jekyll:1.1 bash -c "bundle install; bundle exec jekyll serve"
-    ```
-    Note you may need to add `--host 0.0.0.0` after `bundle exec jekyll serve` to get the site to server correctly.
-4. View your website at <http://localhost:4000>.
+```bash
+docker build -t beautiful-jekyll $PWD
+```
 
-Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!		
-  		  
+4. Start the container for the first time
+
+```bash
+docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
+```
+
+5. View your website at <http://localhost:4000>.
+
+After the container is running, you can stop the server simply with the command
+
+```bash
+docker stop beautiful-jekyll
+```
+
+To start a container again (after you've already created it)
+
+```bash
+docker start beautiful-jekyll
+```
+
+If you change `_config.yml`, you must restart the server for jekyll to rebuild the site.
+
+```bash
+docker restart beautiful-jekyll
+```
+
+Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
+
 Aditionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
 
 ## FAQ
