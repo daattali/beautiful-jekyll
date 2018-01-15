@@ -205,20 +205,47 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ## Advanced: Local development using Docker
 
-Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps to do that with Docker:
+First, clone your repository locally.
 
-1. Make sure that you have Docker installed on your local environment. Installation instructions can be found [here](https://docs.docker.com/engine/installation/)
-2. Clone your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Inside your repository folder, run:
+```bash
+git clone https://github.com/<your_username>/<your_username>.github.io.git
+```
 
-    ```
-    docker run -p 4000:4000 -v `pwd`:/app mangar/jekyll:1.1 bash -c "bundle install; bundle exec jekyll serve"
-    ```
-    Note you may need to add `--host 0.0.0.0` after `bundle exec jekyll serve` to get the site to server correctly.
-4. View your website at <http://localhost:4000>.
+Make sure you have Docker installed. https://www.docker.com/community-edition
 
-Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!		
-  		  
+### First-time setup
+
+```bash
+# 1. change directory
+cd <folder>
+# 2. Build the docker image
+docker build -t beautiful-jekyll $PWD
+# 3. Start the container for the first time
+docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
+```
+
+You can now view your website at http://localhost:4000/.
+
+After the container is running, you can stop the server simply with the command
+
+```bash
+docker stop beautiful-jekyll
+```
+
+To start a container again (after you've already created it)
+
+```bash
+docker start beautiful-jekyll
+```
+
+If you change `_config.yml`, you must restart the server for jekyll to rebuild the site.
+
+```bash
+docker restart beautiful-jekyll
+```
+
+Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
+
 Aditionally, if you choose to deploy Jekyll using a local ruby installation, you can tell Jekyll to automatically categorize your blog posts by tags. You just need to set `link-tags: true` in `_config.yml`. Jekyll will then generate a new page for each unique tag which lists all of the posts that belong to that tag.
 
 ## FAQ
