@@ -205,44 +205,38 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 
 ## Advanced: Local development using Docker
 
-First, clone your repository locally.
+Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps set that up with Docker:
 
-```bash
-git clone https://github.com/<your_username>/<your_username>.github.io.git
-```
+1. Make sure you have [Docker](https://www.docker.com/) installed. 
 
-Make sure you have Docker installed. https://www.docker.com/community-edition
+2. Clone your repository locally.
 
-### First-time setup
+    ```bash
+    git clone https://github.com/<your_username>/<your_username>.github.io.git
+    ```
 
-```bash
-# 1. change directory
-cd <folder>
-# 2. Build the docker image
-docker build -t beautiful-jekyll $PWD
-# 3. Start the container for the first time
-docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
-```
+3. Run the following shell commands to build the docker image and start the container for the first time:
 
-You can now view your website at http://localhost:4000/.
+    ```bash
+    cd <repository_folder>
+    docker build -t beautiful-jekyll $PWD
+    docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
+    ```
 
-After the container is running, you can stop the server simply with the command
 
-```bash
-docker stop beautiful-jekyll
-```
-
-To start a container again (after you've already created it)
+Now that Docker is set up, you do not need to run the above steps again. You can now view your website at http://localhost:4000/. You can start the container again in the future with:
 
 ```bash
 docker start beautiful-jekyll
 ```
 
-If you change `_config.yml`, you must restart the server for jekyll to rebuild the site.
+And you can stop the server with:
 
 ```bash
-docker restart beautiful-jekyll
+docker stop beautiful-jekyll
 ```
+
+Whenever you make any changes to `_config.yml`, you must stop and re-start the server new config settings to take effect.
 
 Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
 
