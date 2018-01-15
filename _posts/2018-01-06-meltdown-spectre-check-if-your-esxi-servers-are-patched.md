@@ -3,6 +3,27 @@ layout: post
 published: true
 title: Meltdown & Spectre - Check if your ESXi servers are patched
 ---
+### [Update 15/01/2018]
+
+A few days ago VMware release the Security Advisory [VMSA-2018-0004](https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html) and [KB52085](https://kb.vmware.com/s/article/52085) regarding _Hypervisor-Assisted Guest Remediation_ that would present the new CPU features to the VMs even without having the Firmware/Bios updated.
+
+One or 2 days later, because of sightings for a number of Intel Haswell and Broadwell processors Intel recommends VMware to not issue the patches associated with VMSA-2018-0004 and recommends customers who may have already installed them on their hosts to mask the newly presented features.  
+Vmware immediately issued an update to the security advisory pointing to [KB52345](https://kb.vmware.com/s/article/52345) that explains it all.
+
+If you have already patched your hosts with the KB52085 and your CPUs are in the list of affected models, refer to the directions in the KB. Alternatively you can have a look at [William Lam's post](https://www.virtuallyghetto.com/2018/01/automating-intel-sighting-remediation-using-powercli-ssh-not-required.html) that will help you automate it.
+
+Note that the patching for _Hypervisor-Specific Mitigation_ (VMSA-2018-0002) is still recommended to install.
+
+> For ESXi hosts that have not yet applied one of the following patches ESXi650-201801402-BG, ESXi600-201801402-BG, or ESXi550-201801401-BG, VMware recommends not doing so at this time. It is recommended to apply the patches listed in VMSA-2018-0002 instead.
+
+[Note2](https://www.virtualizationhowto.com/2018/01/vmware-performance-impact-of-meltdown-and-spectre-patches/): I link this good post in which they load test different patching scenarios and discover that performances are heavily impacted when the host is patched (VMSA-2018-0004) **and** the guest OS is patched.
+
+In short, it's ok to patch for VMSA-2018-0002, don't patch for VMSA-2018-0004, I won't get into the guest OS patching as it is a "it depend". And most importantly, when a new patch is release by Intel, Microsoft, VMware or XYZ: **WAIT !**
+
+------------
+
+## Meltdown & Spectre - Check if your ESXi servers are patched
+
 There has been a lot of noise recently regarding the 2 major flaws, **Spectre** and **Meltdown**, uncovered affecting mainly Intel CPUs. The flaws are apparently very difficult to exploit which makes a leak coming from there an unlikely scenario but who knows? No one likes to have a somewhat vulnerable system so let's treat it as so.
 
 _**Note that Meltdown does not affect ESXi**_
