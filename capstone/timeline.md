@@ -16,7 +16,7 @@ The timeline is below, followed by additional detail on each event.
 | [Students rate proposals](#students-rate-proposals) | January 12, 2018  |
 | [Selection of proposals](#selection-of-proposals) | January 19, 2018   |
 | [Partners accept invitations](#partners-accept-invitations) | January 29, 2018  |
-| [Partners provide data](#partners-provide-data)  | February 5, 2018  |
+| [Partners provide data](#partners-provide-data)  | ~~February 5, 2018~~ TBD  |
 | [Partner presentations](#partner-presentations)       | February 5 - March 9, 2018 |
 | [Students rate the projects](#students-rate-the-projects)  | March 9 - March 16, 2018 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018  |
