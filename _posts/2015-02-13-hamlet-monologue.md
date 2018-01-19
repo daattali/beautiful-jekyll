@@ -2,6 +2,7 @@
 layout: post
 title: To be
 subtitle: ... or not to be?
+tags: [books, shakespeare]
 ---
 
 To be, or not to be--that is the question:
