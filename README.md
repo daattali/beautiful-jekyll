@@ -203,9 +203,60 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [ocram85.github.io](https://ocram85.github.io) | Marco Blessing | A personal blog about PowerShell and automation |
 
 
+## Advanced: Local development
+
+Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. There are two different options available which are briefly detailed below.
+
+Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow either route, please don't ask me questions because unfortunately I honestly won't be able to help!
+
+### Bundler
+
+GitHub recommend the use of bundler for installing and running Jekyll as it handles the installation and error messages from the Ruby gems that Jekyll depends upon. Detailed instructions are available here, https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/, the simplified steps below assume you have:
+
+- Forked Beautiful Jekyll
+- Have a local copy of your 
+- Ruby installed (typically pre-installed on Unix, use https://rubyinstaller.org/ if using Windows)
+
+1. Install bundler by running the following in the shell
+
+    ```bash
+    gem install bundler
+    ```
+2. Create a file in the Beautiful Jekyll root directory called Gemfile and add the following two lines:
+
+    ```bash
+    source 'https://rubygems.org'
+    gem 'github-pages', group: :jekyll_plugins
+    ```
+3. Install the dependencies by running this in the shell
+
+    ```bash
+    bundle install
+    ```
+
+4. Build your site locally by running the following in shell
+
+    ```bash
+    bundle exec jekyll serve
+    # Configuration file: /Users/github-repos/beautiful-jekyll/_config.yml
+    #       Source: /Users/github-repos/beautiful-jekyll
+    #  Destination: /Users/github-repos/beautiful-jekyll/_site
+    # Incremental build: disabled. Enable with --incremental
+    # Generating...
+    #               done in 0.309 seconds.
+    # Auto-regeneration: enabled for '/Users/github-repos/beautiful-jekyll'
+    # Configuration file: /Users/github-repos/beautiful-jekyll/_config.yml
+    # Server address: http://127.0.0.1:4000/
+    # Server running... press ctrl-c to stop.
+    ```
+ 
+5. Visit your locally built site in your browser at http://127.0.0.1:4000/
+
+Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
+
 ## Advanced: Local development using Docker
 
-Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps set that up with Docker:
+These steps will allow you to run Jekyll locally within a Docker container.
 
 1. Make sure you have [Docker](https://www.docker.com/) installed.
 
@@ -222,8 +273,7 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
     docker build -t beautiful-jekyll $PWD
     docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
     ```
-
-
+    
 Now that Docker is set up, you do not need to run the above steps again. You can now view your website at http://localhost:4000/. You can start the container again in the future with:
 
 ```bash
