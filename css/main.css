@@ -743,3 +743,9 @@ td.gutter {
 .navbar-default button.navbar-toggle[aria-expanded="true"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* fix btn spacing in tag index */
+
+.tag-btn {
+  margin: 5px;
+}
