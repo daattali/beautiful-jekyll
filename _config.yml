@@ -23,11 +23,11 @@ title: Mahesh Kumar
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: "about_me"
   # Papers: "papers"
-  Resources:
-    - Datatau: "http://www.datatau.com/"
-    - Hacker News: "https://news.ycombinator.com/"
+  Resources: "resources"
+    # - Datatau: "http://www.datatau.com/"
+    # - Hacker News: "https://news.ycombinator.com/"
     # - Learn markdown: "http://www.markdowntutorial.com/"
     # - GitHub Pages: "https://pages.github.com/"
   Visualizations: "visualizations"
@@ -182,6 +182,4 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-gems:
-  - jekyll-paginate
-
+plugins: ['jekyll-twitter-plugin', 'jekyll-paginate']
