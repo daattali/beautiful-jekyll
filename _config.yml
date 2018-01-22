@@ -102,7 +102,6 @@ share-links-active:
 url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
-# ...Beautiful Jekyll integrates with Google Analytics and Matomo(aka Piwik)
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
@@ -111,15 +110,13 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 #gtm: ""
 
 # Matomo (aka Piwik) Web statistics
-# Uncomment this Matomo options to enable tacking:
-# - Provide a valid site id given by your Matomo instance.
-# - Enter the Matomo URI without the protocoll.
-# - Enable/ Disable the Opt-Out feature for users. This will ad a Do-Not-Track option in the footer section.
+# Uncomment the following section to enable Matomo. The opt-out parameter controls
+# whether or not you want to allow users to opt out of tracking.
 
-#  matomo:
-#    site_id: "9"
-#    uri: "demo.wiki.pro"
-#    opt-out: true
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
