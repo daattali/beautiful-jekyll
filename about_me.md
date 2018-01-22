@@ -14,6 +14,6 @@ I'm a software engineer at [Infrrd.ai](http://infrrd.ai/). Previously, I have wo
 
 Check out my [Github](https://www.github.com/maheshkkumar) page. 
 
-&nbsp;
+<!-- &nbsp; -->
 
-{% twitter https://twitter.com/maheshkumark_ maxwidth=650 limit=10 %}
+<!-- {% twitter https://twitter.com/maheshkumark_ maxwidth=650 limit=10 %} -->
