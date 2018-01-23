@@ -72,12 +72,12 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
+  email: "apalaciosg91@gmail.com
   #facebook: daattali
   github: rpalaciosg
   twitter: rapg400
 #  reddit: yourname
-#  google-plus: +DeanAttali
+#  google-plus: +richardpalaciosg
   linkedin: richardpalaciosg
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -120,7 +120,7 @@ url-pretty: "rpalaciosg.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "richardapalaciosg"
 
 # Facebook App ID
 # fb_app_id: ""
