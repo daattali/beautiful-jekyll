@@ -2,7 +2,7 @@
 layout: post
 title: _Mukkabaaz_ - Order in Chaos
 subtitle: PS - Watch it in Theatres
-bigimg: "/img/mukka-large.jpeg"
+bigimg: "/img/mukka-.jpeg"
 image: "/img/mukka-small.jpeg"
 share-img: "/img/mukka-small.jpeg"
 tags: movie-review bollywood politics
@@ -22,8 +22,11 @@ Let's talk about the performances one by one. Ravi Kishen puts up an honest-to-G
 
 Sunaina is a strong woman. Kashyap never lets her be reduced to a caricature owing to her muteness. She's as straightforward, demanding, and ready-to-fight as any other millenial woman. Zoya Hussain's eyes make us cry and frown with them. I'd really watch out for her in the coming years.
 
+
 ![](http://img01.ibnlive.in/ibnlive/uploads/2014/12/vineet-dec31.jpg)
+
 *Vineet Singh in Bombay Talkies. Highly recommended watch.*
+
 
 Which brings me to Vineet Singh. I had first seen him in Kashyap's segment in _Bombay Talkies_ (which also happens to have the best movie Karan Johar has made to-date), where he was very impressive as a fan trying to meet Mr. Bachchan and feed him his mother's _murabba_. But here, he brings out his very best. It's worthy to note that he is the writer of this film too. Shravan has many grave problems in his life, and that makes him a very difficult character to play. Vineet Singh doesn't let us feel that the acting was very tough - he blends seamless into the environment of Bareilly and UP, which is really what the film is trying to critique. Infact Vineet is the one who creates the environment in the first place.
 
