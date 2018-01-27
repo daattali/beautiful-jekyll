@@ -25,7 +25,7 @@ Sunaina is a strong woman. Kashyap never lets her be reduced to a caricature owi
 
 ![](http://img01.ibnlive.in/ibnlive/uploads/2014/12/vineet-dec31.jpg)
 
-*Vineet Singh in Bombay Talkies. Highly recommended watch.*
+_**Vineet Singh in Bombay Talkies. Highly recommended watch.**_
 
 
 Which brings me to Vineet Singh. I had first seen him in Kashyap's segment in _Bombay Talkies_ (which also happens to have the best movie Karan Johar has made to-date), where he was very impressive as a fan trying to meet Mr. Bachchan and feed him his mother's _murabba_. But here, he brings out his very best. It's worthy to note that he is the writer of this film too. Shravan has many grave problems in his life, and that makes him a very difficult character to play. Vineet Singh doesn't let us feel that the acting was very tough - he blends seamless into the environment of Bareilly and UP, which is really what the film is trying to critique. Infact Vineet is the one who creates the environment in the first place.
@@ -34,4 +34,4 @@ Anurag Kashyap has always had a penchant for picturizing songs (one of them has 
 
 Now let's come back briefly to the script. _Mukkabaaz_ is inherently chaotic, as I had felt during at the interval. But this chaos is the director's connivance, highly symblolic of the larger point the film is trying to make. _Mukkabaaz_ is not just a film about boxing or even the sports scenario of India - it is a political and social commentary on India itself. And what better way to describe India than 'chaos'? This commentary adds another thick layer on top of the already existing ones, and makes _Mukkabaaz_ a truly tiring film to watch. It is fitting that the film ends with a highly sarcastic '_Bharat Mata ki Jai!_'. I haven't watched _Padmaavat_ yet, but I am sure _Mukkabaaz_ would offend the intelligent _Sangh_ or _Sena_ faithful infinitely more.   
 
-_Mukkabaaz_ is not Kashyap's best, but, as I realized, trying to rank his films is an useless exercise. His universally panned film _Bombay Velvet_ was something I personally enjoyed, though I could see its flaws. __Mukkabaaz__ is then a film that, in some sense, projects India, in its wholesome state of chaos - one that it was, is and will always be.
+_Mukkabaaz_ is not Kashyap's best, but, as I realized, trying to rank his films is an useless exercise. His universally panned film _Bombay Velvet_ was something I personally enjoyed, though I could see its flaws. _Mukkabaaz_ is then a film that, in some sense, projects India, in its wholesome state of chaos - one that it was, is and will always be.
