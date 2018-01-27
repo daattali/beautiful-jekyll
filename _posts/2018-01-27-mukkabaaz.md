@@ -1,6 +1,6 @@
 ---
 layout: post
-title: _Mukkabaaz_ - Order in Chaos
+title: Mukkabaaz - Order in Chaos
 subtitle: PS - Watch it in Theatres
 bigimg: "/img/mukka-large.jpeg"
 image: "/img/mukka-small.jpeg"
