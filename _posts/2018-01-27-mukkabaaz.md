@@ -2,9 +2,9 @@
 layout: post
 title: Mukkabaaz - Order in Chaos
 subtitle: PS - Watch it in Theatres
-bigimg: "/img/mukka-large.jpeg"
-image: "/img/mukka-small.jpeg"
-share-img: "/img/mukka-small.jpeg"
+bigimg: "/img/mukka-large.jpg"
+image: "/img/mukka-small.jpg"
+share-img: "/img/mukka-small.jpg"
 tags: movie-review bollywood politics
 ---
 
