@@ -4,6 +4,39 @@ layout: null
 
 @import url("pygment_highlights.css");
 
+$page-col:{{ site.page-col }};
+$link-col:{{ site.link-col }};
+$hover-col:{{ site.hover-col }};
+$navbar-col:{{ site.navbar-col }};
+$navbar-text-col:{{ site.navbar-text-col }};
+$navbar-children-col:{{ site.navbar-children-col }};
+$footer-col:{{ site.footer-col }};
+$footer-text-col:{{ site.footer-text-col }};
+$footer-link-col:{{ site.footer-link-col }};
+
+$page-img:null;
+$navbar-img:null;
+$footer-img:null;
+
+{% if site.page-img %}
+$page-img:'{{ site.page-img }}';
+{% endif %}
+
+{% if site.navbar-img %}
+$navbar-img:'{{ site.navbar-img }}';
+{% endif %}
+
+{% if site.footer-img %}
+$footer-img:'{{ site.footer-img }}';
+{% endif %}
+
+@mixin fixed-bg-img($img){
+  @if($img != null) {
+    background-image: url($img);
+    background-attachment: fixed;
+  }
+}
+
 /* --- General --- */
 
 body {
@@ -11,11 +44,8 @@ body {
   font-size: 18px;
   color: #404040;
   position: relative;
-  background-color: {{ site.page-col }};
-  {% if site.page-img %}
-  background-image: url({{ site.page-img }});
-  background-attachment: fixed;
-  {% endif %}
+  background-color: $page-col;
+  @include fixed-bg-img($page-img);
 }
 p {
   line-height: 1.5;
@@ -26,11 +56,11 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
 }
 a {
-  color: {{ site.link-col }};
+  color: $link-col;
 }
 a:hover,
 a:focus {
-  color: {{ site.hover-col }};
+  color: $hover-col;
 }
 blockquote {
   color: #808080;
@@ -68,12 +98,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background-color: {{ site.hover-col }};
+  background-color: $hover-col;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background-color: {{ site.hover-col }};
+  background-color: $hover-col;
 }
 img::selection {
   color: white;
@@ -106,13 +136,10 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: {{ site.navbar-col }};
+  background-color: $navbar-col;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  {% if site.navbar-img %}
-  background-image: url({{ site.navbar-img }});
-  background-attachment: fixed;
-  {% endif %}
+  @include fixed-bg-img($navbar-img);
 }
 
 .navbar-custom .nav li a {
@@ -124,14 +151,14 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: {{ site.navbar-text-col }};
+  color: $navbar-text-col;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: {{ site.hover-col }};
+  color: $hover-col;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -225,7 +252,7 @@ img {
   display: block;
   padding: 10px;
   padding-left: 30px;
-  background-color: {{ site.navbar-children-col }};
+  background-color: $navbar-children-col;
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
@@ -265,19 +292,16 @@ footer {
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
-  background-color: {{ site.footer-col }};
-  {% if site.footer-img %}
-  background-image: url({{ site.footer-img }});
-  background-attachment: fixed;
-  {% endif %}
+  background-color: $footer-col;
+  @include fixed-bg-img($footer-img);
 }
 
 footer p.text-muted {
-  color: {{ site.footer-text-col }};
+  color: $footer-text-col;
 }
 
 footer a {
-  color: {{site.footer-link-col}};
+  color: $footer-link-col;
 }
 
 footer .list-inline {
@@ -331,7 +355,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: {{ site.hover-col }};
+  color: $hover-col;
 }
 
 .post-preview .post-title {
@@ -395,14 +419,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: {{ site.link-col }};
+  color: $link-col;
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: {{ site.hover-col }};
+  color: $hover-col;
   background-color: #EEE;
 }
 
@@ -608,8 +632,8 @@ footer .theme-by {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  border: 1px solid {{ site.hover-col }};
-  background-color: {{ site.hover-col }};
+  border: 1px solid $hover-col;
+  background-color: $hover-col;
 }
 
 .pager {
