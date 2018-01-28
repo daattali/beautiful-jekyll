@@ -3,7 +3,7 @@ layout: post
 title: Hướng dẫn cài đặt và sử dụng jupyter notebook
 # subtile: Hãy viết code như một Pythonista
 image: /img/2017-06-06-jupyter/jupyterBia.png
-tags: [Python, lap-trinh, program-language, jupyter-notebook, Pythonista]
+tags: [Python, lap-trinh, programming-language, jupyter-notebook, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-06
 ---
@@ -59,19 +59,10 @@ jupyter notebook
 
 Mở terminal\cmd và gõ:
 
-Python3:
-`
-python3 -m pip install --upgrade pip
-python3 -m pip install jupyter
-`
-
-Python2:
 
 `
-python -m pip install --upgrade pip
-python -m pip install jupyter
+pip install jupyter
 `
-
 
 Sau khi cài đặt thì thực hiện mở jupyter notebook để hưởng thành quả:
 

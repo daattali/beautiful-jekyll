@@ -2,7 +2,7 @@
 layout: post
 title: Thêm chút - Jquery vào trang blog sử dụng theme beautiful-jekyll
 image: /img/2017-12-12-Jekyll/create_jekyll_blog.jpg
-tags: [Lap-trinh, program-language, Front-end, Jquery]
+tags: [Lap-trinh, programming-language, Front-end, Jquery]
 categories: [Dev-Frontend]
 date:   2017-12-12
 

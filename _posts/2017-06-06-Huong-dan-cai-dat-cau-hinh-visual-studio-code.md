@@ -3,7 +3,7 @@ layout: post
 title: Hướng dẫn cài đặt phần mềm Visual Studio Code
 # subtile: Hãy viết code như một Pythonista
 image: /img/2017-06-06-VSC/VSCBia.jpg
-tags: [Python, lap-trinh, program-language, visual-studio-code, Pythonista]
+tags: [Python, lap-trinh, programming-language, visual-studio-code, Pythonista]
 categories: [Dev-Python]
 date: 2017-06-06
 ---

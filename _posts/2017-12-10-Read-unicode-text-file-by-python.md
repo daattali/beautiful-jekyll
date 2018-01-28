@@ -3,7 +3,7 @@ layout: post
 title: Đọc file text có encoding là unicode
 subtile: Python coding like a Pythonista
 image: /img/2017-12-10-Read-unicode-text-file-by-python/Unicodelogo.gif
-tags: [Python, lap-trinh, program-language, Python-tips]
+tags: [Python, lap-trinh, programming-language, Python-tips]
 categories: [Dev-Python]
 date: 2017-12-10
 ---

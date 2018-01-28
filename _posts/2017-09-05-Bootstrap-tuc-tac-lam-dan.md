@@ -3,7 +3,7 @@ layout: post
 title: Bootstrap - túc tắc học dần
 #subtile: Way to create a long multi-line string
 image: /img/2017-08-05-Frontend/Bootstrap.jpg
-tags: [lap-trinh, program-language, Front-end, Bootstrap]
+tags: [lap-trinh, programming-language, Front-end, Bootstrap]
 categories: [Dev-Bootstrap]
 date: 2017-09-05
 ---

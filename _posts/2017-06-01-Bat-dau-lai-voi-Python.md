@@ -2,7 +2,7 @@
 layout: post
 title: Bắt đầu lại với Python
 image: /img/2017-06-01-Python/python.png
-tags: [Python, lap-trinh, program-language]
+tags: [Python, lap-trinh, programming-language]
 categories: [Dev-Python]
 date: 2017-06-01
 ---

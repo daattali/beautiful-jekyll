@@ -2,7 +2,7 @@
 layout: post
 title: Cài đặt Python
 image: /img/2017-06-01-Python/python.png
-tags: [Python, lap-trinh, program-language]
+tags: [Python, lap-trinh, programming-language]
 categories: [Dev-Python]
 date: 2017-06-02
 ---

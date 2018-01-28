@@ -3,7 +3,7 @@ layout: post
 title: Các keyword trong Python
 subtile: Python coding like a Pythonista
 image: /img/2017-06-10-coding-style/CodingBia.png
-tags: [Python, lap-trinh, program-language, pep8, Pythonista]
+tags: [Python, lap-trinh, programming-language, pep8, Pythonista]
 categories: [Dev-Python]
 date: 2017-11-02
 ---

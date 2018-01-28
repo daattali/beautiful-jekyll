@@ -2,7 +2,7 @@
 layout: post
 title: Cài đặt và sử dụng Virtual Environment trong Windows
 image: /img/2017-06-01-Python/python.png
-tags: [Python, lap-trinh, program-language, Python-tips]
+tags: [Python, lap-trinh, programming-language, Python-tips]
 categories: [Dev-Python]
 date:   2017-12-16
 

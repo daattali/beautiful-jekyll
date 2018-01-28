@@ -3,7 +3,7 @@ layout: post
 title: Hackerrank.com - Giải quyết từng vấn đề từ dễ đến khó
 subtile: Python coding like a Pythonista
 image: /img/2017-06-15-HackerRank/Hackerrank1.png
-tags: [Python, lap-trinh, program-language, hacker-rank]
+tags: [Python, lap-trinh, programming-language, hacker-rank]
 categories: [Dev-Python]
 date: 2017-06-15
 ---

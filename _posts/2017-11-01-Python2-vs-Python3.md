@@ -2,7 +2,7 @@
 layout: post
 title: Một vài điểm khác biệt Python2 và Python3
 image: /img/2017-06-01-Python/python.png
-tags: [Python, lap-trinh, program-language]
+tags: [Python, lap-trinh, programming-language]
 categories: [Dev-Python]
 date: 2017-11-01
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Làm thế nào để tạo được một chuỗi có nhiều dòng ?
 subtile: Way to create a long multi-line string
 image: /img/2017-12-01-Tips/quicktip.jpg
-tags: [Python, lap-trinh, program-language, Python-tips]
+tags: [Python, lap-trinh, programming-language, Python-tips]
 categories: [Dev-Python]
 date: 2017-06-16
 ---
