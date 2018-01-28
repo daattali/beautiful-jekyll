@@ -175,3 +175,5 @@ Bật lại chế độ ghi log
 logger.disabled = False
 ```
 
+Source code:
+<https://github.com/quangvinh86/Python-Logging>
