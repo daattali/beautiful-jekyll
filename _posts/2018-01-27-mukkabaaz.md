@@ -4,7 +4,7 @@ title: Mukkabaaz - Order in Chaos
 subtitle: PS - Watch it in Theatres
 bigimg: "/img/mukka-large.jpg"
 image: "/img/mukka-small.jpg"
-share-img: "/img/mukka-small.jpg"
+share-img: "/img/mukka-large.jpg"
 tags: movie-review bollywood politics
 ---
 
@@ -20,7 +20,7 @@ Sanjay is an upright man. He is a good coach, and converts Shravan from a _Mukka
 
 Let's talk about the performances one by one. Ravi Kishen puts up an honest-to-God portrayal of a man who, as a coach, is not ready to let anyone be bogged down by a system that failed him, even if he has to face extreme repercussions. Bhagwan is exactly the kind of guy who'd make life hell for anyone (like Sanjay) who comes in his way, and Shergill plays him to menacing perfection. He's that guy who hides his weaknesses and incompetence (apparently _unke beedi me tambaku nahi hai_) with an overbearing personality, power and ruthlessness.
 
-Sunaina is a strong woman. Kashyap never lets her be reduced to a caricature owing to her muteness. She's as straightforward, demanding, and ready-to-fight as any other millenial woman. Zoya Hussain's eyes make us cry and frown with them. I'd really watch out for her in the coming years.
+Sunaina is a strong woman. Kashyap never lets her be reduced to a caricature owing to her muteness. She's as straightforward, demanding, and ready-to-fight as any other millennial woman. Zoya Hussain's eyes make us cry and frown with them. I'd really watch out for her in the coming years.
 
 
 ![](http://img01.ibnlive.in/ibnlive/uploads/2014/12/vineet-dec31.jpg)
@@ -32,6 +32,6 @@ Which brings me to Vineet Singh. I had first seen him in Kashyap's segment in _B
 
 Anurag Kashyap has always had a penchant for picturizing songs (one of them has a very _special_ special appearance :D ), and creating memorable dialogues, _jo kisi aur se naa ho paata_. _Mukkabaaz_ is no different, and it reaffirms why Kashyap is the most pathbreaking director in the Hindi film industry today. 
 
-Now let's come back briefly to the script. _Mukkabaaz_ is inherently chaotic, as I had felt during at the interval. But this chaos is the director's connivance, highly symblolic of the larger point the film is trying to make. _Mukkabaaz_ is not just a film about boxing or even the sports scenario of India - it is a political and social commentary on India itself. And what better way to describe India than 'chaos'? This commentary adds another thick layer on top of the already existing ones, and makes _Mukkabaaz_ a truly tiring film to watch. It is fitting that the film ends with a highly sarcastic '_Bharat Mata ki Jai!_'. I haven't watched _Padmaavat_ yet, but I am sure _Mukkabaaz_ would offend the intelligent _Sangh_ or _Sena_ faithful infinitely more.   
+Now let's come back briefly to the script. _Mukkabaaz_ is inherently chaotic, as I had felt during at the interval. But this chaos is the director's connivance, highly symbolic of the larger point the film is trying to make. _Mukkabaaz_ is not just a film about boxing or even the sports scenario of India - it is a political and social commentary on India itself. And what better way to describe India than 'chaos'? This commentary adds another thick layer on top of the already existing ones, and makes _Mukkabaaz_ a truly tiring film to watch. It is fitting that the film ends with a highly sarcastic '_Bharat Mata ki Jai!_'. I haven't watched _Padmaavat_ yet, but I am sure _Mukkabaaz_ would offend the intelligent _Sangh_ or _Sena_ faithful infinitely more.   
 
 _Mukkabaaz_ is not Kashyap's best, but, as I realized, trying to rank his films is an useless exercise. His universally panned film _Bombay Velvet_ was something I personally enjoyed, though I could see its flaws. _Mukkabaaz_ is then a film that, in some sense, projects India, in its wholesome state of chaos - one that it was, is and will always be.
