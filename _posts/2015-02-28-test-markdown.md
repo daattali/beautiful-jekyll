@@ -25,7 +25,7 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Crepe](https://github.com/VeraJulian/VeraJulian.github.io/blob/master/img/avatar-icon.png)
+![Crepe](img/avatar-icon.png)
 
 Here's a code chunk:
 
