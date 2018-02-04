@@ -25,7 +25,7 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Crepe](img/avatar-icon.png)
+![](/img/404-southpark.jpg)
 
 Here's a code chunk:
 
