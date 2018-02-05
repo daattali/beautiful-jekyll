@@ -17,6 +17,6 @@ to have overlapping sections.
 
 ![](/img/wso_dormtrak.png)
 
-Again, a nice straightforward navigation bar with an explanation of Dormtrak. 
+Again, a nice straightforward navigation bar with an explanation of Dormtrak with quantitative-based rankings of dorms.
 
 Consensus from students is that WSO is an example of good design.
