@@ -19,4 +19,4 @@ to have overlapping sections.
 
 Again, a nice straightforward navigation bar with an explanation of Dormtrak with quantitative-based rankings of dorms.
 
-Consensus from students is that WSO is an example of good design.
+Consensus from students is that WSO is an example of good design. The experience is pleasurable because the site is very intuitive and easy to use. 
