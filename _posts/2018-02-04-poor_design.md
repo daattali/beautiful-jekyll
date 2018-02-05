@@ -28,4 +28,7 @@ needed here, potentially confusing users. Not shown: allergies check boxes at bo
 
 Two back arrows with only one labeled. Having to go back-and-forth just to see the
 different meals of the day for only the selected dining hall is quite frustrating - it would be nice to quickly switch between 
-dining halls without needing to start over. Toolbars could really come in handy.
+dining halls without needing to tart over. Toolbars could really come in handy.
+
+Consensus from students is that the dining services website is poorly designed. It is very frustrating to use because of
+confusing navigation.
