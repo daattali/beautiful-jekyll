@@ -10,7 +10,7 @@ Here we will discuss why this [nutrition](http://nutrition.williams.edu/) site a
 
 ![](/img/net_nutrition.png)
 
-Unnecessary instruction: a lot of text may overwhelm users. "Parkesy Student Center" under "Places to Eat" is vague and 
+The page is not very pleasant to look at, and is quite clumped. Unnecessary instruction: a lot of text may overwhelm users. "Parkesy Student Center" under "Places to Eat" is vague and 
 should, in fact, specify the various stations within Paresky. The 
 [Nutrition Home](http://nutrition.williams.edu/NetNutrition/Home.aspx/StartOver/) tab leads to a blank page. For aesthetic, 
 "Places to Eat" could be in a tab bar at the top of the page.
