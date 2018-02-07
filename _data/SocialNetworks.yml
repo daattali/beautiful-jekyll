@@ -1,5 +1,5 @@
 # You can define your custom social network links here.
-# Use the same key you added in _config.yml -> soicial-network-links.
+# Use the same key you added in _config.yml -> social-network-links.
 # In addition to that you need to specify the following properties:
 #   name: Specify a user-friendly name that will be used as a link title
 #   baseURL: Define a base URL which will be combined with the value of
@@ -24,7 +24,7 @@ twitter:
 reddit:
   name: "Reddit"
   baseURL: "https://reddit.com/u/"
-  icon: fa-reddit
+  icon: "fa-reddit"
 
 google-plus:
   name: "Google+"
