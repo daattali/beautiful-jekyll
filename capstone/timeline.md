@@ -16,8 +16,9 @@ The timeline is below, followed by additional detail on each event.
 | [Students rate proposals](#students-rate-proposals) | January 12, 2018  |
 | [Selection of proposals](#selection-of-proposals) | January 19, 2018   |
 | [Partners accept invitations](#partners-accept-invitations) | January 29, 2018  |
-| [Partners provide data](#partners-provide-data)  | ~~February 5, 2018~~ TBD  |
 | [Partner presentations](#partner-presentations)       | February 7 - March 23, 2018 |
+| [Partners provide legal documents] | March 15, 2018  |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 31, 2018 |
 | [Students rate the projects](#students-rate-the-projects)  | March 23 - March 26, 2018 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018  |
 | [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 |
@@ -51,18 +52,20 @@ The MDS leadership team will select proposals based primarily on student interes
 
 The successful capstone partners accept the offers, and correspond with MDS administration to schedule a presentation to give at UBC.
 
-#### Partners provide data
-
-Before the presentations are given, the partners must provide MDS with:
-
-- the data (at least some form of it); and
-- if required, consensus on any paperwork such as a non-disclosure agreement (NDA).
-
-Partners should feel free to ask us for our standard agreement at any point in the selection procedure.
-
 #### Partner presentations
 
 We require that the capstone partners give a 30-minute presentation (allowing for 10-15 minutes of questions) to the students and MDS leadership over lunch at the UBC Vancouver campus.
+
+#### Partners provide legal documents and declare conflicts of interest
+
+Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners myst provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
+
+#### Partners provide data
+
+Before a project is accepted, the partner must provide MDS with a demonstration or written (email) declaration that the data has already been collected and prepared, and exists in its entirety (in the form specified in the proposal), and is ready to be shared with the students.
+
+Partners should feel free to ask us for our standard agreement at any point in the selection procedure.
+
 
 #### Students rate the projects
 
