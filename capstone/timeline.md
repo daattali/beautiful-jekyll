@@ -18,9 +18,9 @@ The timeline is below, followed by additional detail on each event.
 | [Partners accept invitations](#partners-accept-invitations) | January 29, 2018  |
 | [Partner presentations](#partner-presentations)       | February 7 - March 23, 2018 |
 | [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2018  |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 31, 2018 |
 | [Students rate the projects](#students-rate-the-projects)  | March 23 - March 26, 2018 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | April 2, 2018  |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 3, 2018 |
+| [Students are assigned to projects](#students-are-assigned-to-projects) | April 5, 2018  |
 | [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 |
 | [Phase 1: student proposals](#student-proposals) |  April 24 - May 4, 2018 (approx) |
 | [Phase 2: project development](#project-development-stage) | May 7 - June 8, 2018 (approx)  |
