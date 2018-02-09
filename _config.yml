@@ -25,7 +25,7 @@ description: The home of Arcade games!
 navbar-links:
   Rules: "aboutme"
    Play game!: "aboutme"
-  About Me: "aboutme"
+   About Me: "aboutme"
   #Resources:
    # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
    # - Learn markdown: "http://www.markdowntutorial.com/"
