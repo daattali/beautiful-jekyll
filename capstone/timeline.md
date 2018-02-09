@@ -58,7 +58,7 @@ We require that the capstone partners give a 30-minute presentation (allowing fo
 
 #### Partners provide legal documents and declare conflicts of interest
 
-Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners myst provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
+Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners must provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
 
 #### Partners provide data
 
