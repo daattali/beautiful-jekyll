@@ -24,8 +24,8 @@ description: The home of Arcade games!
 # List of links in the navigation bar
 navbar-links:
   Rules: "aboutme"
-   Play game!: "aboutme"
-   About Me: "aboutme"
+  Play game!: "aboutme"
+  About Me: "aboutme"
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
