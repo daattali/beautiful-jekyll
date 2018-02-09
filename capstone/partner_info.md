@@ -71,6 +71,10 @@ We understand that you may require some restrictions to be put in place, but we 
 
 Feel free to ask us about our standard UBC NDA. Contact us at `capstone-mds@science.ubc.ca`.
 
+### Conflicts of intereset
+
+Declare any conflicts of interest. For example, if a current MDS student or family member is involved with your organization on a professional or personal level, this should be declared along with a short explanation.
+
 ## FAQ
 
 Here are answers to some frequently asked questions regarding our capstone course. Don't see the answer to your question here, or elsewhere on the capstone course website? Please contact us at `capstone-mds@science.ubc.ca` -- maybe we'll add your question to this FAQ page!
