@@ -17,7 +17,7 @@ baseurl: ""
 title: Marcos Barbero's Blog
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Marcos Barbero's Blog
 
 # --- Navigation bar options --- #
 
@@ -28,7 +28,7 @@ navbar-links:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
 #    - GitHub Pages: "https://pages.github.com/"
-#  Author's home: "http://deanattali.com"
+  Blog: "http://marcosbarbero.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -40,14 +40,23 @@ avatar: "/img/avatar.jpeg"
 
 # --- Background colour/image options --- #
 
-# By default, the navigation bar and footer have a light gray background, and the main page
-# has a white background. You can specify a different background colour or a background image
-# for the navigation bar, the main page, and the footer.
-# navbar-col: "orange"
+# Personalize the colors in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#F5F5F5"
+navbar-text-col: "#404040"
+navbar-children-col: "#F5F5F5"
+page-col: "#FFFFFF"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#F5F5F5"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+# Alternatively, the navbar, footer, and page background can be set to use background images
+# instead of colour
+
 # navbar-img: "/img/bgimage.png"
-# footer-col: "blue"
 # footer-img: "/img/bgimage.png"
-# page-col: "#FF0000"
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
@@ -56,23 +65,6 @@ avatar: "/img/avatar.jpeg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Marcos Barbero
-  email: "marcos.hgb@gmail.com"
-#  facebook: yourname  # eg. daattali
-  github: marcosbarbero    # eg. daattali
-  twitter: marcosbarbero_   # eg. daattali
-#  reddit: yourname    # eg. daattali
-  google-plus: +MarcosBarbero   # eg. +DeanAttali or 109424658772469020925
-  linkedin: marcosbarbero  # eg. daattali
-#  xing: yourname      # eg. daattali
-#  stackoverflow: yourlink  # eg. "3943160/daattali"
-#  snapchat: yourname  # eg. daattali
-  instagram: marcosbarbero # eg. daattali
-#  youtube: yourlink   # eg. user/daattali or channel/daattali
-#  spotify: yourname   # eg. daattali
-#  telephone: yourphone   # eg. +14159998888
-#  steam: yourname     # eg. daattali
-#  twitch: yourname    # eg. daattali
-#  yelp: yourname      # eg. daattali
 
 # Select which links to show in the footer
 footer-links-active:
@@ -95,6 +87,40 @@ footer-links-active:
   twitch: false
   yelp: false
 
+# Select your active Social Network Links.
+# Uncomment the links you want to show in the footer and add your information to each link.
+# You can reorder the items to define the link order.
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+social-network-links:
+  rss: true
+  email: "marcos.hgb@gmail.com"
+#  facebook: yourname  # eg. daattali
+  github: marcosbarbero    # eg. daattali
+  twitter: marcosbarbero_   # eg. daattali
+#  reddit: yourname    # eg. daattali
+  google-plus: +MarcosBarbero   # eg. +DeanAttali or 109424658772469020925
+  linkedin: marcosbarbero  # eg. daattali
+#  xing: yourname      # eg. daattali
+#  stackoverflow: yourlink  # eg. "3943160/daattali"
+#  snapchat: yourname  # eg. daattali
+  instagram: marcosbarbero # eg. daattali
+#  youtube: yourlink   # eg. user/daattali or channel/daattali
+#  spotify: yourname   # eg. daattali
+#  telephone: yourphone   # eg. +14159998888
+#  steam: yourname     # eg. daattali
+#  twitch: yourname    # eg. daattali
+#  yelp: yourname      # eg. daattali
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+#  instagram: deanat78
+#  youtube: user/deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+
 # Select which share links to show in posts
 share-links-active:
   twitter: true
@@ -106,15 +132,26 @@ share-links-active:
 # Remove this if you don't want a link in the footer
 url-pretty: "marcosbarbero.com"  # eg. "deanattali.com/beautiful-jekyll"
 
-# --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+# --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-54888300-2"
 
 # Google Tag Manager ID
 #gtm: ""
+
+# Matomo (aka Piwik) Web statistics
+# Uncomment the following section to enable Matomo. The opt-out parameter controls
+# whether or not you want to allow users to opt out of tracking.
+
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
+
+# --- Misc --- #
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+#disqus: ""
 
 # Facebook App ID
 # fb_app_id: ""
@@ -156,8 +193,8 @@ defaults:
       layout: "page"
       show-avatar: true
 
-# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+# Use tags index page and make tags on each post clickable
+link-tags: true
 
 # Exclude these files from production site
 exclude:
