@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xây dựng một ứng dụng socket  - client đơn giản (phần 1)
+title: Xây dựng một ứng dụng socket server - client đơn giản (phần 1)
 # subtile: Hãy viết code như một Pythonista
 image: /img/2018-02-01-Socket/SC.png
 tags: [Python, lap-trinh, programming-language, Pythonista]
