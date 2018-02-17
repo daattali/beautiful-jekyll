@@ -89,7 +89,7 @@
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
-  
+
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -119,5 +119,9 @@
   {% endif %}
   
   {% include google_analytics.html %}
+
+  {% if site.matomo %}
+  {% include matomo.html %}
+  {% endif %}
 
 </head>
