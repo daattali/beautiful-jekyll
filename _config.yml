@@ -65,38 +65,23 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Josemy Duarte
-  email: "duartejosemy@gmail.com"
-#  facebook: yourname  # eg. daattali
-  github: josemyduarte    # eg. daattali
-  twitter: JosemyD   # eg. daattali
-#  reddit: yourname    # eg. daattali
-#  google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: josemyduarte  # eg. daattali
-#  xing: yourname      # eg. daattali
-#  stackoverflow: yourlink  # eg. "3943160/daattali"
-#  snapchat: yourname  # eg. daattali
-  instagram: josemy.duarte # eg. daattali
-#  youtube: yourlink   # eg. user/daattali or channel/daattali
-#  spotify: yourname   # eg. daattali
-#  telephone: yourphone   # eg. +14159998888
-
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
-  email: "someone@example.com"
-  facebook: daattali
-  github: daattali
-  twitter: daattali
+  rss: false
+  email: "duartejosemy@gmail.com"
+  github: josemyduarte
+  twitter: JosemyD
+  instagram: josemy.duarte # eg. daattali
+  linkedin: josemyduarte
+#  facebook: yourname
 #  reddit: yourname
 #  google-plus: +DeanAttali
-#  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
