@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: All your VMs in RDCManager in 20 seconds
 ---
 I recently started a new job and just like in my previous one I wanted to have all servers consolidated in one place so I can easily RDP on them if needed. I use the free Microsoft tool **Remote Desktop Connection Manager (RDCMan)**. There are better software out there like RoyalTS in which you can configure SSH, Http, Ftp, vnc etc but for now RDCMan is good enough and there are plenty of people using it so hopefully this post can help them. There is "quite a few" servers in the environment so adding them to the console one by one manually is a major no-no given my allergy to repetitive tasks. 
