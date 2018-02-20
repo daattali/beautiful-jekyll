@@ -1,0 +1,92 @@
+/* Borrow from ocram85/ocram85.github.io*/
+/* ----- Card section ----- */
+a.project-link:link,
+a.project-link:visited {
+    text-decoration: none;
+    color: #404040;
+
+}
+
+a.project-link:hover {
+    text-decoration: none;
+    color: #0085a1;
+
+}
+
+.project-card {
+    padding: 10px;
+    width: 230px;
+    min-height: 300px;
+    /* Need to fix horzontal alignment for grid system */
+    float: none;
+    margin: 0 auto 25px auto;
+
+}
+.project-card h3 {
+    margin: 10px;
+
+}
+.project-card p.text-muted {
+    /*padding: 0px;*/
+    margin-top: 15px;
+    margin-bottom: 10px;
+    min-height: 5em;
+
+}
+
+.seperator {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-color: #aaa;
+
+}
+
+/* ------------------------- */
+
+.stack-color {
+    color: #404040;
+
+}
+
+.spacer {
+    height: 10px;
+    padding: 0;
+    margin: 5px;
+
+}
+
+.text-muted {
+    color: #808080;
+    font-size: 14px;
+
+}
+
+.hd-shadow {
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+
+.post-preview-box {
+    background-image: url('/img/concrete-texture.png');
+    background-attachment: scroll;
+    border-style: 0px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 1px 10px #bbb;
+
+}
+
+
+body {
+    margin: 0;
+    font-family: "Open Sans" "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 { font-weight: 400; }
+h2 { font-weight: 300; }
