@@ -66,11 +66,11 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
 
+  email: "hello@frankc.net"
   github: fxchen
   facebook: fxchen
   twitter: frankc
   rss: true
-#  email: ""
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
