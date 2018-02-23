@@ -2,7 +2,7 @@
 layout: post
 title: Iceberg vs Ship Classifier Contest
 subtitle: Hosted by Kaggle and Statoil
-image: /img/iceberg/vigilant-iceberg_explanation_graphic_2.png
+image: /img/iceberg/iceberg_icon.png
 tags: [Classifier, Neural Networks, ConvNet, Keras, Tensorflow]
 ---
 
@@ -19,8 +19,8 @@ _Additionally because so much of Kaggle contests revolves around impractical ens
 **Example:** [Beluga 2nd Place Contestant](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/discussion/48294) used a weighted average of ~100 ensembled N.N. models.
 
 ## Results
-![competition results](/img/iceberg/log_scores.png)
-###### **_Scores above 1.0 were clipped as those scores weren't remotely competitive and skewed the distribution even further. Then Log10 transformation of scores was performed because initial distribution was log normal._**
+![competition results](/img/iceberg/log_scores_a.png)
+###### **_Scores above 1.0 were clipped as those scores weren't remotely competitive and skewed the distribution even further. Then Log10 transformation of scores was performed because initial distribution was [log normal.](/img/iceberg/normal_scores_a.png)_**
 
 On the final leader board I placed 372nd out of 3,343 teams, or roughly top 11%. This was my first Kaggle competition. Next time I would increase my arbitrary ensemble limitation to perhaps 3 models. This may help feature engineering add some predictive value.
 
