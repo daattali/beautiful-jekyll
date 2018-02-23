@@ -3,7 +3,7 @@ layout: page
 title: frank chen
 subtitle: Explorer, Software Architect, Behavior Designer
 bigimg:
-  - 'img/banner-run.jpg': "Photo taken during a past LA Marathon"
+  - 'img/banner-run.jpg'
 use-site-title: true
 css: '/css/main-extend.css'
 
