@@ -2,11 +2,11 @@
 layout: post
 title: Iceberg vs Ship Classifier Contest
 subtitle: Hosted by Kaggle and Statoil
-image: /img/vigilant-iceberg_explanation_graphic_2.png
+image: /img/iceberg/vigilant-iceberg_explanation_graphic_2.png
 tags: [Classifier, Neural Networks, ConvNet, Keras, Tensorflow]
 ---
 
-![project overview](/img/vigilant-iceberg_explanation_graphic_2.png)
+![project overview](/img/iceberg/vigilant-iceberg_explanation_graphic_2.png)
 Use data from Kaggle and Statoil to make a classifier that predicts if something is an iceberg or a ship.
 
 **The data provided is:**
@@ -19,7 +19,7 @@ _Additionally because so much of Kaggle contests revolves around impractical ens
 **Example:** [Beluga 2nd Place Contestant](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/discussion/48294) used a weighted average of ~100 ensembled N.N. models.
 
 ## Results
-![competition results](/imgs/iceberg/log_scores.png)
+![competition results](/img/iceberg/log_scores.png)
 ###### **_Scores above 1.0 were clipped as those scores weren't remotely competitive and skewed the distribution even further. Then Log10 transformation of scores was performed because initial distribution was log normal._**
 
 On the final leader board I placed 372nd out of 3,343 teams, or roughly top 11%. This was my first Kaggle competition. Next time I would increase my arbitrary ensemble limitation to perhaps 3 models. This may help feature engineering add some predictive value.
