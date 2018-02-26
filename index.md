@@ -3,7 +3,7 @@ layout: page
 title: frank chen
 subtitle: Explorer, Software Architect, Behavior Designer
 bigimg:
-  - 'img/banner-run.jpg'
+  - 'img/banner-run.jpg' # Remove subtitle
 use-site-title: true
 css: '/css/main-extend.css'
 
