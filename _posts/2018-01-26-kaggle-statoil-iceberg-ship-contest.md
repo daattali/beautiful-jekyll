@@ -6,7 +6,8 @@ image: /img/iceberg/iceberg_icon.png
 tags: [Classifier, Neural Networks, ConvNet, Keras, Tensorflow]
 ---
 
-![project overview](/img/iceberg/vigilant-iceberg_explanation_graphic_2.png {width=768px height=256px})
+<a><img src="/img/iceberg/vigilant-iceberg_explanation_graphic_2.png" width="512" align="middle"></a>
+
 Use data from Kaggle and Statoil to make a classifier that predicts if something is an iceberg or a ship.
 
 **The data provided is:**
@@ -19,7 +20,8 @@ _Additionally because so much of Kaggle contests revolves around impractical ens
 **Example:** [Beluga 2nd Place Contestant](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/discussion/48294) used a weighted average of ~100 ensembled N.N. models.
 
 ## Results
-![competition results](/img/iceberg/log_scores_a.png)
+<img src="/img/iceberg/log_scores_a.png" width="512" align="middle">
+
 ###### **_Scores above 1.0 were clipped as those scores weren't remotely competitive and skewed the distribution even further. Then Log10 transformation of scores was performed because initial distribution was [log normal.](/img/iceberg/normal_scores_a.png)_**
 
 On the final leader board I placed 372nd out of 3,343 teams, or roughly top 11%. This was my first Kaggle competition. Next time I would increase my arbitrary ensemble limitation to perhaps 3 models. This may help feature engineering add some predictive value.
@@ -29,7 +31,7 @@ I learned a lot from this project and I'm looking forward to my next challenge.
 Many more details [here](https://github.com/pixelatedbrian/vigilant-iceberg/blob/master/README.md)
 
 ## Project Overview:
-![model flow](/img/iceberg/model_flowchart.png)
+<img src="/img/iceberg/model_flowchart_2.png" width="512" align="middle">
 
 * Used AWS p2.xlarge instance running Ubuntu 16.04 with Nvidia K80 GPU
   + Created custom AWS AMI image for faster deployment of spot instances
