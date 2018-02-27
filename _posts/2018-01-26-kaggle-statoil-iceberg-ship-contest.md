@@ -6,7 +6,7 @@ image: /img/iceberg/iceberg_icon.png
 tags: [Classifier, Neural Networks, ConvNet, Keras, Tensorflow]
 ---
 
-<a><img src="/img/iceberg/vigilant-iceberg_explanation_graphic_2.png" width="512" align="middle"></a>
+<img src="/img/iceberg/vigilant-iceberg_explanation_graphic_2.png" width="512" style="margin:0px auto;display:block"/>
 
 Use data from Kaggle and Statoil to make a classifier that predicts if something is an iceberg or a ship.
 
