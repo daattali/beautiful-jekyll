@@ -4,29 +4,33 @@ title: Portfolio - Brian Hardenstein
 ---
 
 All projects:
-* Python was used for all projects unless otherwise noted.
+* Python 3 was used for all projects unless otherwise noted.
 * Used models from SciKit-Learn unless otherwise noted. 
-* Data manipulation was performed using Numpy/Pandas unless otherwise indicated. 
-* Cross validation was utilized in all cases. Usually 70/30 split but in certain cases 60/30/10 for high iteration modeling.
 * All projects utilized CRISP-DM methodology
 * Sorted with most recent projects first
 
-**Smartphone User Data Cleaning and Formatting (W.I.P)**
+<p align="center">
+<img src="/img/iceberg/statoil.jpg" alt="Radar Data" width="512"/>
+</p>
+**Kaggle Statoil Iceberg/Ship Classification contest**
+* **Tools Used:** Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
+* **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models. [Summary Blog Post](https://pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest) 
+[Project Details and Source Code](https://github.com/pixelatedbrian/vigilant-iceberg)
+
+**Smartphone User Data Cleaning and Formatting **
 * **Tools Used:** Python, JSON, tarfile, gunzip, Matplotlib
 * **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files. 
 
 **Atlantic Hurricane Animated Data Visualizations**
 
-<img src="/img/hurricane_thumb.png" alt="Hurricane Visualizations" style="width: 300px; align: middle;"/>
+<p align="center">
+<img src="/img/hurricane_thumb.png" alt="Hurricane Visualizations" style="width: 300px"/>
+</p>
 
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
 
-**DeepTraffic Neural Network**
-* **Tools used:** CNN, DNN, DeepQ, DeepLearn.js, regularization, [DeepTraffic](http://selfdrivingcars.mit.edu/deeptrafficjs/), tanh/relu activation
-* **Summary:** MIT contest where a neural network has to learn how to navigate through video game-like traffic. (Think frogger) Evaluation is average speed (mph) on test sets mean of 10 runs.  Current highest 'score' is 67.4mph, 65mph is a passing grade for the MIT class. Implementing automated grid search of hyperparameters to try to improve performance more.
-
-[Home Price Prediction: Ames, IA (work in progress)](https://github.com/Brionnic/sturdy-umbrella/blob/master/README.md)
+[Home Price Prediction: Ames, IA](https://github.com/Brionnic/sturdy-umbrella/blob/master/README.md)
 * **Tools used:** Selenium scraping/munging, EDA, stacked ensemble, feature engineering, model experimentation, kaggle-like project, PostGreSQL
 * **Summary:** Inspired by a meetup presentation implemented home price regressor using Ames, Iowa dataset. Scraped additional data from Story County Assessor website (Ames’ county) to create new features and SQL to manipulate/store data.
 
