@@ -29,7 +29,7 @@ All projects:
 
 **Atlantic Hurricane Animated Data Visualizations**
 
-<iframe src='https://gfycat.com/ifr/MeatyShamelessHedgehog' frameborder='0' scrolling='no' allowfullscreen width='500' height='300'></iframe>
+<iframe src='https://gfycat.com/ifr/AlarmedShoddyGordonsetter' align="center" frameborder='0' scrolling='no' allowfullscreen width='500' height='290'></iframe>
 
 
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
