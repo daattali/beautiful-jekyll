@@ -10,6 +10,7 @@ All projects:
 * Sorted with most recent projects first
 
 
+
 <p align="center">
 <img src="/img/iceberg/statoil.jpg" alt="Radar Data" width="512"/>
 </p>
@@ -29,11 +30,15 @@ All projects:
 **Atlantic Hurricane Animated Data Visualizations**
 
 <p align="center">
-<img src="/img/hurricane_thumb.png" alt="Hurricane Visualizations" style="width: 300px"/>
+<img src="/img/hurricane_thumb.png" alt="Hurricane Visualizations" width="512"/>
 </p>
 
 * **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
+
+<p align="center">
+<img src="https://github.com/pixelatedbrian/sturdy-umbrella/blob/master/imgs/error_over_time.png" alt="Home Price Error Progression" width="512"/>
+</p>
 
 [Home Price Prediction: Ames, IA](https://github.com/Brionnic/sturdy-umbrella/blob/master/README.md)
 * **Tools used:** Selenium scraping/munging, EDA, stacked ensemble, feature engineering, model experimentation, kaggle-like project, PostGreSQL
@@ -43,7 +48,9 @@ All projects:
 
 [Indie Game Recommender (Capstone Project)](https://github.com/Brionnic/Indie-Game-Recommender/blob/master/README.md)
 
-<img src="/img/results_example.png" alt="Example Recommendations Against Holdout Data Set" style="width: 500px; align: middle;"/>
+<p align="middle">
+<img src="/img/results_example.png" alt="Example Recommendations Against Holdout Data Set" width="512"/>
+</p>
 
 * **Tools used:** BeautifulSoup, Selenium, AWS EC2/S3, MongoDB, EDA, Spark/PySpark, Spark MLLib NMF ALS explicit/implicit, rating weighting system, model serialization, capstone presentation
 * **Summary:** Scraped 3M web pages in 5+ rounds of iteration, wrangled data with MongoDB workflow, ultimately predicted using ~10M rows of data, switched from explicit ratings to implicit ratings (log10 playtime) which ended up improving predictions quite a bit, presented capstone project to audience > 50. Serialized model for flask website but have not yet implemented front end. 
