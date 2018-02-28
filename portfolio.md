@@ -13,13 +13,16 @@ All projects:
 <p align="center">
 <img src="/img/iceberg/statoil.jpg" alt="Radar Data" width="512"/>
 </p>
+
 **Kaggle Statoil Iceberg/Ship Classification contest**
 * **Tools Used:** Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
-* **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models. [Summary Blog Post](pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest) 
+* **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models. 
+
+[Summary Blog Post](pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest) 
 
 [Project Details and Source Code](github.com/pixelatedbrian/vigilant-iceberg)
 
-**Smartphone User Data Cleaning and Formatting **
+**Smartphone User Data Cleaning and Formatting**
 * **Tools Used:** Python, JSON, tarfile, gunzip, Matplotlib
 * **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files. 
 
