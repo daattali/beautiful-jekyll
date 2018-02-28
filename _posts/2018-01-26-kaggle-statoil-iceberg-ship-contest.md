@@ -35,7 +35,7 @@ _Additionally because so much of Kaggle contests revolves around impractical ens
 
 **Measured error for final ranking:** 0.1491
 
-**Placement:**  372/3,343 (top 11%)
+**Placement:**  372/3,652 (~top 10%)
 
 This was my first Kaggle competition. Next time I would increase my arbitrary ensemble limitation to perhaps 3 models. This may help feature engineering add some predictive value.
 
