@@ -37,7 +37,7 @@ All projects:
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
 
 <p align="center">
-<img src="https://github.com/pixelatedbrian/sturdy-umbrella/blob/master/imgs/error_over_time.png" alt="Home Price Error Progression" width="512"/>
+<img src="/img/Ames_error_over_time.png" alt="Home Price Error Progression" width="512"/>
 </p>
 
 [Home Price Prediction: Ames, IA](https://github.com/Brionnic/sturdy-umbrella/blob/master/README.md)
