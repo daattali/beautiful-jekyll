@@ -18,9 +18,9 @@ All projects:
 * **Tools Used:** Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
 * **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models. 
 
-[Summary Blog Post](pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest) 
+[Summary Blog Post](https://pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest) 
 
-[Project Details and Source Code](github.com/pixelatedbrian/vigilant-iceberg)
+[Project Details and Source Code](https://github.com/pixelatedbrian/vigilant-iceberg)
 
 **Smartphone User Data Cleaning and Formatting**
 * **Tools Used:** Python, JSON, tarfile, gunzip, Matplotlib
