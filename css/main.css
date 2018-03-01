@@ -9,9 +9,9 @@ layout: null
 body {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 18px;
-  color: #f2f2f2;
+  color: #c8c0c5;
   position: relative;
-  background: #060d13;
+  background: #0b0e10;
   {% if site.page-col %}
   background: {{ site.page-col }};
   {% endif %}
@@ -37,7 +37,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #df9e38;
 }
 blockquote {
   color: #808080;
@@ -75,12 +75,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #df9e38;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #df9e38;
 }
 img::selection {
   color: white;
@@ -108,7 +108,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #2f363c;
+  background: #192c38;
   color: #6699cc;
   border-bottom: 1px solid #434d56;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -122,7 +122,7 @@ img {
 }
 
 .navbar-custom .nav li a {
-  color: #6699cc;
+  color: #df9e38;
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 1px;
@@ -138,7 +138,7 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: #fca823;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -277,7 +277,7 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #30373d;
+  background: #192c38;
   color: #1a1a1a;
   border-top: 1px #434d56 solid;
   margin-top: 50px;
@@ -346,16 +346,16 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0085a1;
+  color: #df9e38;
 }
 
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
-  color: #d9d9d9;
+  color: ##c8c0c5;
 }
 .post-preview .post-subtitle {
-  color: #bfbfbf;
+  color: #c8c0c5;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
@@ -625,8 +625,8 @@ footer .theme-by {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #0085a1;
-  border: 1px solid #0085a1;
+  background: #df9e38;
+  border: 1px solid #df9e38;
 }
 
 .pager {

@@ -4383,11 +4383,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #d9d9d9;
+  color: #0095e9;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #6ccaff;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
