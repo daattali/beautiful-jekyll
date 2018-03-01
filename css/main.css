@@ -388,7 +388,7 @@ footer .theme-by {
   filter: grayscale(0%);
 }
 .post-image img {
-  border-radius: 100px;
+  border-radius: 10%;
   height: 192px;
   width: 192px;
 }
