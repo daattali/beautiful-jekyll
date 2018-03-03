@@ -8,6 +8,12 @@ Function Prompt { ... } in Microsoft.PowerShell_profile.ps1_
 
 ---------
 
+EDIT 03/03/2018
+
+The [new version of PowerCLI](http://www.vxav.fr/2018-03-03-Install-latest-PowerCLI-on-offline-systems/) support module auto loading so you don't need to worry about importing the modules anymore.
+
+---------
+
 My Powershell profile has a few different things including:
 
 - A function to add the VMware core snapin and connect quickly to a vCenter.
