@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://adivijaykumar.github.io/"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,25 +14,25 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Symmetries
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Aditya V's Blog
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Blog: ""
+  About: "about"
+  Academic: "academic"
+  Non-Academic: "nonacademic"
+  Reach Me: "contact"
+
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/avatar-icon-1.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -64,6 +64,41 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
+<<<<<<< HEAD
+  name: Aditya Vijaykumar
+  email: "vijaykumar.aditya@gmail.com"
+  facebook: adivijaykumar  # eg. daattali
+  github: adivijaykumar    # eg. daattali
+  twitter: alsogoesbyV   # eg. daattali
+#  reddit: yourname    # eg. daattali
+  google-plus: +AdityaVijaykumar   # eg. +DeanAttali or 109424658772469020925
+  linkedin: aditya-vijaykumar-352a497b  # eg. daattali
+#  xing: yourname      # eg. daattali
+#  stackoverflow: yourlink  # eg. "3943160/daattali"
+#  snapchat: yourname  # eg. daattali
+#  instagram: yourname # eg. daattali
+#  youtube: yourlink   # eg. user/daattali or channel/daattali
+#  spotify: yourname   # eg. daattali
+#  telephone: yourphone   # eg. +14159998888
+
+# Select which links to show in the footer
+footer-links-active:
+  rss: false
+  facebook: true
+  email: true
+  twitter: true
+  google-plus: false
+  github: true
+  reddit: false
+  linkedin: true
+  xing: false
+  stackoverflow: false
+  snapchat: false
+  instagram: false
+  youtube: false
+  spotify: false
+  telephone: false
+=======
   name: Some Person
 
 # Select your active Social Network Links.
@@ -89,6 +124,7 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
+>>>>>>> 6324978f6bd7a3ccdd4bd99434a7c0a48bc80057
 
 # Select which share links to show in posts
 share-links-active:
@@ -99,12 +135,18 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
+<<<<<<< HEAD
+# --- Misc --- #
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+disqus: "adivijaykumar"
+=======
 # --- Web Statistics Section --- #
+>>>>>>> 6324978f6bd7a3ccdd4bd99434a7c0a48bc80057
 
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+#Fill in your Google Analytics ID to track your website using GA
+google_analytics: "UA-97624097-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -127,8 +169,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
+excerpt_length: 60
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
