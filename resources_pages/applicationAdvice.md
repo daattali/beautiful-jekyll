@@ -16,15 +16,11 @@ If your ultimate goal is to pursue a PhD in statistics or computer science, MDS 
 
 #### 2. Letter of Intent 
 
-A strong Letter of Intent possesses the following qualities:
+A strong Letter of Intent (LOI) possesses the following qualities:
 
-- it is specific to UBC and to the MDS program; it demonstrates that you understand the nature and goals of the MDS program.
-- it is as specific to you as possible; try to avoid pieces that could work for any MDS applicant. 
-- it explains how the program fits into you career trajectory.
-- it explains what value the UBC MDS program can offer you, and maybe what value you can offer to the program.
-- it is well-written and does not contain typos or grammatical errors.
-- it uses reasonable margins and font sizes, and adheres to the maximum length guidelines (currently 1 page).
-
+1. **Specific to you.** The LOI should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid pieces that could work for any MDS applicant. 
+2. **Specific to MDS.** The LOI should be specific to the UBC MDS program, and should demonstrate that you understand the nature and goals of the program.
+3. **Polish.** The LOI should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
 
 #### 3. References
 
