@@ -12,9 +12,9 @@ The theme for today was 'A Twist in the Tale' - I was required to have a twist i
 
 Let me go into self critique mode, and try to guess what went wrong :-
 
- * I reached the venue late, and people had already started writing. I was cursing myself for getting late all the while in the metro too, at was probably not in the perfect state of mind to write. I think it is important to reach a bit soon, settle down, pick your own sweet spot, blend into the environment, and then start.
+ * I reached the venue late, and people had already started writing. I was cursing myself for getting late all the while in the metro too, and was probably not in the perfect state of mind to write. I think it is important to reach a bit soon, settle down, pick your own sweet spot, blend into the environment, and then start.
 
- * There were a couple of prompts that interested me - _Exhausted one evening you head to wake up hours later in an ambulance_, and _A meteor is scheduled to hit earth in less than 32 hours. As a police officer, what are those hours like?_. Last time, I saw the prompt, instantly connected it to a setting I had seen, and immediately started writing it. I did not stop till 40 minutes was over.
+ * There were a couple of prompts that interested me - _Exhausted one evening you head to sleep to wake up hours later in an ambulance_, and _A meteor is scheduled to hit earth in less than 32 hours. As a police officer, what are those hours like?_. Last time, I saw the prompt, instantly connected it to a setting I had seen, and immediately started writing it. I did not stop till 40 minutes was over.
 
     This time, I did connect the first prompt to a it-happened-to-me setting, and tried finding a suitable twist to no avail. I then started thinking about the second prompt, and decided to make it a setting of two police officers in Mumbai trying to clear the streets before the meteor collision. It started off well, the setting was pretty good IMO, but since I had not thought about the twist earlier, I got stuck very soon. At this point, I gave up :(
 
