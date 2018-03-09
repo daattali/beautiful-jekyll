@@ -4,7 +4,7 @@ title: Data science terminology
 ---
 
 ## About this document
-This document is intended to help students navigate the large amount of jargon, terminology, and acronyms encountered in the MDS program and beyond. There is also an accompanying [blog post](https://ubc-mds.github.io/2017-12-14-terminology/).
+This document is intended to help students navigate the large amount of jargon, terminology, and acronyms encountered in the MDS program and beyond. There is also an accompanying [blog post](https://ubc-mds.github.io/2017-12-14-terminology/). Course numbers of the form DSCI XXX refer to relevant [UBC MDS courses](https://ubc-mds.github.io/descriptions/).
 
 ## Stat-ML dictionary
 
