@@ -22,13 +22,12 @@ of the word "weights" rather than "coefficients". Thus, there are sometimes conn
 To make matters more exciting, the scientific computing community typically denotes the coefficients as "x" and the features as "A".
 This reflects the community's emphasis on linear regression as an optimization problem in which, as usual, we seek to find "x".
 
-One other question I didn't dare attempt to answer in the dictionary, but which I am frequently asked, is the difference
-between statistics and machine learning. I have found these two fields to have significant overlap, but often different
+One other question, which I am frequently asked, is the difference between statistics and machine learning. It's always a great moment when a student in my machine learning course asks, "isn't this just statistics?" I have found these two fields to have significant overlap, but often different
 emphases and methodologies. The exact differences aside, it's become abundantly clear to me that both fields have
-a lot to contribute to data science, and I'm proud to be part of a data science program that brings these fields together. 
+a lot to contribute to data science, and I'm proud to be part of a data science program that brings them together. 
 One of my goals over the next few years is to foster a student experience in which the line between 
 "statistics courses" and "CS courses"
-becomes increasingly blurred, and connections between them increasingly apparent.
+becomes increasingly blurred, and the connections between them increasingly apparent.
 
 Link to Statistics-ML dictionary: <https://ubc-mds.github.io/resources_pages/terminology/>
 
