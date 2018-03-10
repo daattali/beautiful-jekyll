@@ -30,7 +30,7 @@ One of my goals over the next few years is to foster a student experience in whi
 "statistics courses" and "CS courses"
 becomes increasingly blurred, and connections between them increasingly apparent.
 
-Link to Statistics-ML dictionary: https://ubc-mds.github.io/resources_pages/terminology/
+Link to Statistics-ML dictionary: <https://ubc-mds.github.io/resources_pages/terminology/>
 
 ---------
 
