@@ -39,8 +39,10 @@ Trong Python, muốn kết nối FTP, sử dụng thư viện ftplib
 ```Python
 from ftplib import FTP
 
-ftp = FTP("127.0.0.1")
-ftp.login(user='itplus', passwd = 'itplus')
+ftp = FTP("host-ip")
+ftp.login(user='xxxx', passwd = 'xxx')
 
 ftp.welcome
-# TODO
+
+```
+# TODO (buồn ngủ quá, hôm khác viết tiếp)
