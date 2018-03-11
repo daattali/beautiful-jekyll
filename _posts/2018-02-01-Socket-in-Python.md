@@ -51,4 +51,4 @@ Chương trình phần mềm được chia riêng rẽ 2 phần client (chạy t
 ![socket.png](/img/2018-02-01-Socket/udp2.jpg)
 
 
-
+Note: Phần 2 sẽ hướng dẫn các bạn viết một ứng dụng client - server đơn giản.
