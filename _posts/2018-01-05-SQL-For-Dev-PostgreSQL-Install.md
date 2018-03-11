@@ -3,7 +3,7 @@ layout: post
 title: SQL cơ bản cho lập trình viên - Cài đặt PostgreSQL
 image: /img/2018-01-05-TSQL/t-sql-mini-logo.jpg
 tags: [lap-trinh, programming-language, T-SQL, PostgreSQL]
-categories: [Dev-SQL]
+categories: [Dev-Database]
 date:   2018-01-05
 
 ---
