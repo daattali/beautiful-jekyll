@@ -23,5 +23,40 @@ I stress the fact that this part of the article is focused at understanding how 
 
 In this step we install a Microsoft Standalone Root CA and we set up a GPO to distribute it to the domain computers. The main differentiator of a Standalone CA compared to an Enterprise one is that it is not integrated to the domain. that means you need to distribute the Root CA yourself. It is better suited for environment with non-AD entities and a little less flexible for admins (no templates). However I chose this one to make it different and the fact that it is more "manual" makes it better to fully understand how it works for people like me who weren't born and molded by certificates.
 
+### Install the CA
+
 - Start Server manager and add the "Active Directory Certificate Services" role.
-- In AD CS role services only check "Certificate Authority"
+- In AD CS role services check "Certificate Authority" only.
+- After the role is added click on the flag with a warning and click "Configure Active Directory Certificate Services ..."
+- I leave the domain admin for the configuration (not sure of the best practices here).
+- Check Certificate Authority (no other choice) and next.
+- Select "Standalone CA"
+- Check "Root CA"
+- Leave "Private Key" and "Cryptography" as defaults.
+- Enter a Common name for your CA. This is the name that will appear as issuer in your client certs so don't go too crazy on the creativity here.
+- I leave the default 5 years validy period.
+
+Note that this is the validity of the CA, not the certificates it will sign so it should have a fairly long validity.
+
+Note also that it can not issue certificates with a validity longer than itself.
+
+- The rest is default clickodrome until the end.
+
+That's your CA nice and shiny ready to sign some stuff. 
+
+## Distribute the Root CA cert to the domain computers
+
+This step would not be necessary if we configured an Enterprise CA as Active Directory would do it for us, but that's not how we do things in'it ?
+
+- Start the "Certification Authority" console
+- Open the properties of the CA and click "View Certificate"
+
+Again you can see that I'm cruising through the defaults, a proper PKI admin would probably go and touch some settings.
+
+- Go to "Details" > "Copy to File..." > At the file format page chose "Base-64 encoded X.509"
+
+The Base-64 format makes it possible to open and read the certificate with notepad for example, which will be usefull when we put our certificate chain together. The Der format would just spit some crypto garbage.
+
+- Specify a location and name for the file and click finish. an "Export was successful" should appear.
+- Start the "Group Policy Management" console and create a GPO linked to the domain.
+- Edit the GPO and browse to "Computer management" > "Policies" > "Windows Settings" > "Security Settings" > "Public Key Policies" > "Trusted Root Certification Authoriy"
