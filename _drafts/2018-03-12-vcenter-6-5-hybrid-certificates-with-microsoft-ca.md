@@ -17,7 +17,7 @@ For this how-to I tried to do something a little different from most articles st
 
 Before starting make sure you have a working Active Directory and vCenter 6.5.
 
-## Install a Microsoft Standalone CA
+## Install a Microsoft standalone CA and distribute the root CA via GPO.
 
 I stress the fact that this part of the article is focused at understanding how CAs and certificates work, it is not a "Microsoft CA best practices" as this is not my area of expertise.
 
@@ -44,7 +44,7 @@ Note also that it can not issue certificates with a validity longer than itself.
 
 That's your CA nice and shiny ready to sign some stuff. 
 
-## Distribute the Root CA cert to the domain computers
+### Distribute the Root CA cert to the domain computers
 
 This step would not be necessary if we configured an Enterprise CA as Active Directory would do it for us, but that's not how we do things in'it ?
 
@@ -59,4 +59,36 @@ The Base-64 format makes it possible to open and read the certificate with notep
 
 - Specify a location and name for the file and click finish. an "Export was successful" should appear.
 - Start the "Group Policy Management" console and create a GPO linked to the domain.
-- Edit the GPO and browse to "Computer management" > "Policies" > "Windows Settings" > "Security Settings" > "Public Key Policies" > "Trusted Root Certification Authoriy"
+- Edit the GPO and browse to "Computer management" > "Policies" > "Windows Settings" > "Security Settings" > "Public Key Policies" > "Trusted Root Certification Authoriy" > Right click "Import".
+- Click Next and Browse to the certificate location.
+- Make sure the certificate goes to the Trusted Root CA store and click Next > Finish.
+- The Root CA certificate should appear on the right pane.
+- Run "gpupdate /force" on all your systems and check that the certificate appears in Certificate Manager.
+
+## Generate a certificate request in certificate manager.
+
+The certificate request is a file generally with the .csr extension containing all the properties the certificate should have and is used by the CA to generate the said certificate. There are different ways to create a csr (openssl, certmgr, some dodgy tools online) but the easiest in this case is to use VMware's script "certificate-manager".
+
+**Windows vCenter Server**: ```C:\Program Files\VMware\vCenter Server\vmcad\certificate-manager```
+
+**vCenter Server Appliance**: ```/usr/lib/vmware-vmca/bin/certificate-manager```
+
+Quick troll: In my lab I work with a Windows based vCenter, that's right!
+
+- Go to the location of your OS and start the tool. "./certificate-manager" for linux and there is a .bat file for Windows.
+- Chose option 1 > Then Option 1 again > Provide a directory to store the files > answer "Y" to reconfigure certool.cfg and configure your certificate.
+
+For most fields you can put pretty much whatever you want but some of them should be done right:
+
+- **Name** : Short name of vCenter server (NETBIOS name). If you don't specify the shortname here the certificate check will error when you access vCenter with it.
+- **IPAddress** : IP of the vCenter server. Optional, if it is left blank the certificate check will error when you access vCenter on its IP.
+- **Hostname** : FQDN of vCenter server.
+- **VMCA name**: This field doesn't really matter at this point. More on this later.
+
+Once the files are generated you can exit certificate-manager.
+
+2 files are create at the location you specified. The certificate signing request and the private key (don't share it).
+
+## Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
+
+This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to get into the IIS and extra role features to focus on vcenter and certificates. Because we can't request certificates on the web interface here we need to use 
