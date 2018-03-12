@@ -91,4 +91,5 @@ Once the files are generated you can exit certificate-manager.
 
 ## Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
 
-This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to get into the IIS and extra role features to focus on vcenter and certificates. Because we can't request certificates on the web interface here we need to use 
+This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to get into the IIS and extra role features to focus on vcenter and certificates. Because we can't request certificates on the web interface here we need to use certreq.
+
