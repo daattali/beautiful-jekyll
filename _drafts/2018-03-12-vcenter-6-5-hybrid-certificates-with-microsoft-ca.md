@@ -12,18 +12,19 @@ For this how-to I tried to do something a little different from most articles st
 1.Install a Microsoft standalone CA and distribute the root CA via GPO.
 2.Generate a certificate request in certificate manager.
 3.Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
-4.Install the certificate and customize the VMCA attributes.
-5.Make the VMCA a trusted root CA (the holy green lock).
+4.Install the certificate in vCenter.
+5.Customize the VMCA attributes and renew the solution users and Hosts certificates.
+6.Make the VMCA a trusted root CA (the holy green lock).
 
 Before starting make sure you have a working Active Directory and vCenter 6.5.
 
 ## Install a Microsoft standalone CA and distribute the root CA via GPO.
 
-I stress the fact that this part of the article is focused at understanding how CAs and certificates work, it is not a "Microsoft CA best practices" as this is not my area of expertise.
+This part of the article is focused at understanding how CAs and certificates work, it is not a "Microsoft CA best practices" as this is not my area of expertise.
 
 In this step we install a Microsoft Standalone Root CA and we set up a GPO to distribute it to the domain computers. The main differentiator of a Standalone CA compared to an Enterprise one is that it is not integrated to the domain. that means you need to distribute the Root CA yourself. It is better suited for environment with non-AD entities and a little less flexible for admins (no templates). However I chose this one to make it different and the fact that it is more "manual" makes it better to fully understand how it works for people like me who weren't born and molded by certificates.
 
-### Install the CA
+### Install the Microsoft CA
 
 -Start Server manager and add the "Active Directory Certificate Services" role.
 -In AD CS role services check "Certificate Authority" only.
@@ -44,7 +45,7 @@ Note also that it can not issue certificates with a validity longer than itself.
 
 That's your CA nice and shiny ready to sign some stuff. 
 
-### Distribute the Root CA cert to the domain computers
+### 1. Distribute the Root CA cert to the domain computers
 
 This step would not be necessary if we configured an Enterprise CA as Active Directory would do it for us, but that's not how we do things in'it ?
 
@@ -65,7 +66,7 @@ The Base-64 format makes it possible to open and read the certificate with notep
 -The Root CA certificate should appear on the right pane.
 -Run "gpupdate /force" on all your systems and check that the certificate appears in Certificate Manager.
 
-## Generate a certificate request in certificate manager.
+## 2. Generate a certificate request in certificate manager.
 
 The certificate request is a file generally with the .csr extension containing all the properties the certificate should have and is used by the CA to generate the said certificate. There are different ways to create a csr (openssl, certmgr, some dodgy tools online) but the easiest in this case is to use VMware's script "certificate-manager".
 
@@ -82,12 +83,60 @@ For most fields you can put pretty much whatever you want but some of them shoul
 
 -**Name** : FQDN of vCenter server
 -**IPAddress** : IP of the vCenter server. Optional, if it is left blank the certificate check will error when you access vCenter on its IP.
--**Hostname** : FQDN. This name is used to populate the Subject Alternative Names but it doesn't seem to pick up the short name and certificate-manager says that you can specify more than one names but that doesn't work... 
--**VMCA name**: I suggest you put a name that fits your company's nomenclature (e.g. MyCompany-VMCA). This will be the issuer of the solution user and ESXi hosts certificates.
+-**Hostname** : FQDN or short name. This name is used to populate the Subject Alternative Names but it doesn't seem to pick up the short name. Certificate-manager also says that you can specify more than one names but... that doesn't work.
+-**VMCA name**: Put a name that is relevant to you. It will be the issuer of the certificate. I used "xav.lab-VMCA".
 
 Once the files are generated you can exit certificate-manager. 2 files are created at the location you specified. The certificate signing request and the private key (don't share it).
 
-## Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
+## 3. Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
 
-This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to get into the IIS and extra role features to focus on vcenter and certificates. Because we can't request certificates on the web interface here we need to use certreq.
+This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to down the "IIS and 100 extra features" road to focus on vcenter and certificates. Because we can't request certificates on the web interface we need to use certreq.
 
+-On the vCenter server start "certreq".
+-Browse to the location you specified in certificate-manager and select the .csr (set file types to "All files *.*).
+-Select your CA and click OK.
+
+-On the PKI server launch the "Certification Authority".
+-Go to "Pending Requests" > Right click on the certificate > "All tasks" > "Issue".
+-Go to "Issued certificates" > Open the certificate > "Details" > "Copy to file" > Chose "Base 64 encoded X.509" and save it somewhere (I save it directly to a share \\srv-vcenter\certs\srv.cer).
+-Right click on the CA > "Properties" > "View certificate" > Save it at the same location (\\srv-vcenter\certs\root.cer).
+-You can now close the CA you won't need it anymore.
+
+## 4. Install the certificate in vCenter.
+
+-Go to the location where you stored the certificates and open them both in notepad.
+-Copy the content of the CA root certificate, paste it at the end of the vCenter one and save it.
+-(Once again that step doesn't work in certficate-manager so we go for the web UI) Open the PSC web management page: https://srv.xav.lab/psc
+-Go to certificate management and punch in your credentials.
+-In "Machine certificate" click "Replace" (Sorry my UI is half french half english.. weird).
+-Browse to srv.cer containing the chain of certificates and to the .key file generated earlier.
+-Once you get the popup for successful replacement you can close your browser.
+
+That's the certificate replaced in vCenter. In the next step we configure VMCA to issue certificates with the right properties.
+
+## 5. Customize the VMCA attributes and renew the solution users and Hosts certificates.
+
+If you stopped here, VMCA would keep issuing certificates with the default VMware fields to the solution users and the hosts. Customizing them makes it much cleaner.
+
+### Renew solution users certificates
+
+-Start certificate-manager again and choose Option 4 > Press Y to reconfigure > Answer the prompt the same way we did earlier on.
+-Press Y again to confirm the certificate regeneration and wait for it to finish, it can take some time. Monitor the prompt to make sure no error appears. If you get an error it might be because you made a mistake filling it in, remember the Hostname field can only take ONE record regardless of what the tool says.
+
+That's now the solution certificates replaced by proper ones that you and your (paranoid) PKI team can identify, sweet.
+
+But if you log on vCenter you still won't get the beloved green lock icon in the url bar. It is because the VMCA is not known by your client, hence not trusted. In the next step we will retrieve it and deploy it via GPO.
+
+### Renew hosts certificates
+
+-In 
+
+## 6. Make the VMCA a trusted root CA (the holy green lock).
+
+-Open a browser to your vCenter: https://srv-vcenter.xav.lab
+-On the right pane click on "Download Trusted Root certificate" and open the zip file. 
+-In the "Win" folder you will find the original default vmca "CA" cert (not used anymore) and the one we modified "xav.lab-VMCA". Open the .crt files to find the latter.
+-Save the certificate of the modified VMCA somewhere and copy it to your domain controller.
+-Create another GPO to deploy the cert. I call it "xav.lab-VMCA Root CA".
+-Edit it the same way we did the first time and pick the cert we downloaded from vCenter.
+-Run "Gpupdate /force" on your clients and log back in vCenter.
