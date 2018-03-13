@@ -6,7 +6,7 @@ date: 2018-02-19 21:00:00
 image: /img/docker_logo.jpg
 share-img: /img/docker_logo.jpg
 tags: tutorial, docker, dicas
-categories: tutorial
+categories: tutorial docker
 ---
 
 Qual dev nunca proferiu as sabias palavras *"ahh, mas na minha maquina funciona."*, pois o docker veio para tentar diminuir isso. Meu objetivo não é falar sobre o baixo nível do docker, ou suas historias(vc pode ler aqui), mas sim mostrar como o docker funciona, e como ele é fod* para todos.
