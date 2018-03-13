@@ -1,17 +1,14 @@
 ---
 layout: post
-title: Tạo nhanh một restful-api-bằng flask framework-phan1
+title: Tạo nhanh một restful-api-bằng flask framework-P1
 # subtile: Hãy viết code như một Pythonista
 image: /img/2018-03-12-REST/rest-bia.png
-tags: [Python, lap-trinh, programming-language, Flask, Rest-API]
+tags: [Python, lap-trinh, programming-language, Flask, RESTful-API]
 categories: [Dev-Python]
 date: 2018-03-12
 ---
 
-**RESTful - API**: RESTful API là một tiêu chuẩn dùng trong việc thết kế các thiết kế API cho các ứng dụng web để quản lý các resource (CRUD).
-
-
-![/img/2018-03-12-REST/RESTful-API-design.jpg](/img/2018-03-12-REST/RESTful-API-design.jpg)
+Tạo một ứng dụng RESTful-API nhỏ bằng Flask để demo kiến trúc logic RESTful
 
 **Bước 1**: Tạo virtual environment, cài vào các thư viện sau:
 ```
