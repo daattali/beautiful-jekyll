@@ -3,13 +3,13 @@ layout: post
 published: false
 title: vCenter 6.5 hybrid certificates with Microsoft Standalone CA
 ---
-When playing with certificates in vCenter I read a lot of articles online but a lot of them were similar and didn't cover the whole picture: Generate a .csr in certificate-manager, make a request on the CA web page, download the cert and install it > done. Don't get me wrong it's still good content and for some it might be what they are after but I was after a procedure that would get me from 0 to the holy green lock icon in the url bar.
-
 The hybrid mode is currently VMware's recommended deployment model for certificates as it procures a good level of security while not being too cumbersome to implement. In this model only the Machine SSL certificate is signed by the CA and replaced on the vCenter. The solution user and ESXi host certificates are distributed by the VMCA. If you look into one of them you'll see that the end of the certificate chain is the VMCA. As opposed to the "VMCA as an intermediate CA" model where the certificate chain goes all the way up to the Root CA via the VMCA.
 
-For this how-to I tried to do something a little different from most articles stated above that would fit my lab need so we will cover the following:
+When playing with certificates in vCenter I read a lot of articles online but a lot of them were very similar and didn't cover the whole picture: Generate a .csr in certificate-manager, make a request on the CA's web page, download the cert and install it > done. Don't get me wrong it's still good content and for some it might be enough but most of them skipped the Windows CA part and didn't go all the way to the GPOs and properly identified VMCA certs. I'm also not a big fan of the "next next next" approach without explaining and understanding what's what.
 
-1.Install a Microsoft standalone CA and distribute the root CA via GPO.
+For this how-to I tried to do something a little different than most articles stated above that would also fit my lab needs. We will cover the following:
+
+1.Install a Microsoft standalone CA and distribute the root CA certificate via GPO.
 2.Generate a certificate request in certificate manager.
 3.Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
 4.Install the certificate in vCenter.
@@ -18,7 +18,7 @@ For this how-to I tried to do something a little different from most articles st
 
 Before starting make sure you have a working Active Directory and vCenter 6.5.
 
-## Install a Microsoft standalone CA and distribute the root CA via GPO.
+## Install a Microsoft standalone CA and distribute the root CA certificate via GPO.
 
 This part of the article is focused at understanding how CAs and certificates work, it is not a "Microsoft CA best practices" as this is not my area of expertise.
 
@@ -129,7 +129,9 @@ But if you log on vCenter you still won't get the beloved green lock icon in the
 
 ### Renew hosts certificates
 
--In 
+-In vCenter right click on your hosts > "Certificate" > "Renew certificate"
+
+That's it, your hosts now have certificates with the fields specified previously.
 
 ## 6. Make the VMCA a trusted root CA (the holy green lock).
 
@@ -140,3 +142,14 @@ But if you log on vCenter you still won't get the beloved green lock icon in the
 -Create another GPO to deploy the cert. I call it "xav.lab-VMCA Root CA".
 -Edit it the same way we did the first time and pick the cert we downloaded from vCenter.
 -Run "Gpupdate /force" on your clients and log back in vCenter.
+
+You are now blessed by the VMCA and your connections are trusted.
+
+The certificate will also be valid if you connect directly to an ESXi host.
+
+And that's about it. You now have trusted certificates and a vCenter machine cert signed by the CA.
+
+**Caveats:**
+
+-The certificate won't be valid if you use short names on vCenter or ESXi.
+-The certificate won't be valid on ESXi if you connect with the IP. It will be ok on vCenter unless you skipped the IP in certificate-manager.
