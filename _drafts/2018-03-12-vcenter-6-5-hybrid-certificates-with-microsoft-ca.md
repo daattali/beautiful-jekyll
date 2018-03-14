@@ -164,25 +164,30 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 -Press Y to confirm the change and wait for it to finish.
 
 That's the certificate replaced in vCenter, you can now go to the web client url and you will see no certificate error :)
-In the next step we configure VMCA to issue certificates with the right properties.
+
+In the next step we make VMCA issue certificates with the correct properties.
 
 ## 5. Renew the solution users and Hosts certificates with the correct attributes.
 
 ### Renew solution users certificates
 
--Start certificate-manager again and choose Option 6 > Press Y to reconfigure > Answer the prompt the same way we did earlier on.
+-Start certificate-manager again and choose Option 6
 
--Press Y again to confirm the certificate regeneration and wait for it to finish, it can take some time. Monitor the prompt to make sure no error appears. If you get an error it might be because you made a mistake filling it in, remember the Hostname field can only take ONE record regardless of what the tool says.
+-Press Y to generate all certificates using configuration file and enter your creds.
+
+-Answer N to not reconfigure certool.cfg and answer Y to continue the operation.
 
 That's now the solution certificates replaced by proper ones that you and your (paranoid) PKI team can identify, sweet.
 
-But if you log on vCenter you still won't get the beloved green lock icon in the url bar. It is because the VMCA is not known by your client, hence not trusted. In the next step we will retrieve it and deploy it via GPO.
-
 ### Renew hosts certificates
+
+-In vCenter right click on your hosts > "Certificate" > "Refresh CA certificates"
 
 -In vCenter right click on your hosts > "Certificate" > "Renew certificate"
 
-That's it, your hosts now have certificates with the fields specified previously.
+That's it, your hosts now have certificates issued by "xav.lab-VMCA" with the fields specified previously. It might sound silly but in security sensitive environments it can make the difference.
+
+However if you log on the web UI of a host you still won't get the beloved green lock icon in the url bar. It is because the certificate is issued by VMCA which is not known by your client, hence not trusted. In the next step we will retrieve it and deploy it via GPO.
 
 ## 6. Make the VMCA a trusted root CA (the holy green lock).
 
@@ -190,21 +195,17 @@ That's it, your hosts now have certificates with the fields specified previously
 
 -On the right pane click on "Download Trusted Root certificate" and open the zip file. 
 
--In the "Win" folder you will find the original default vmca "CA" cert (not used anymore) and the one we modified "xav.lab-VMCA". Open the .crt files to find the latter.
+-In the "Win" folder you will find 3 certificates: the original default vmca "CA" cert (not used anymore), the Microsoft Root CA and our modified VMCA "xav.lab-VMCA". Open the .crt files and locate the latter.
 
 -Save the certificate of the modified VMCA somewhere and copy it to your domain controller.
 
 -Create another GPO to deploy the cert. I call it "xav.lab-VMCA Root CA".
 
--Edit it the same way we did the first time and pick the cert we downloaded from vCenter.
+-Edit it the same way we did the first time and choose the cert we downloaded from vCenter instead.
 
 -Run "Gpupdate /force" on your clients and log back in vCenter.
 
-You are now blessed by the VMCA and your connections are trusted.
-
-The certificate will also be valid if you connect directly to an ESXi host.
-
-And that's about it. You now have trusted certificates and a vCenter machine cert signed by the CA.
+Your connections are now secure on both vCenter and the hosts.
 
 **Caveats:**
 
