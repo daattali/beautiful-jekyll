@@ -8,7 +8,7 @@ title: Install the latest PowerCLI on offline systems
 
 If you keep your PowerCLI up to date you may have noticed that since version 6.5.1 you can't download the installer on the VMware website anymore. This being because VMware moved the distribution of PowerCLI to Powershell Gallery using the cmdlets ```Install-Module```, ```Uninstall-Module``` and ```Save-Module```.
 
-At the time of the writing of this article we are at version 10.0.0. VMware made a big jump in version number from 6.5.4 I think because they released compatibility for OS X (other than that a 6.5.5 would have done it justice just fine).
+At the time of the writing of this article we are at version 10.0.0. VMware made a big jump in version number from 6.5.4 to celebrate PowerCLI's [10th birthday](https://blogs.vmware.com/PowerCLI/2018/02/powercli-10.html).
 
 Anyway, the version 6.5.1 that changed the install method actually brought some cool modifications:
 
