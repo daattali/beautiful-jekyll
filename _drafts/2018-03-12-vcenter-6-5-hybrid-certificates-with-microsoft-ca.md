@@ -77,29 +77,35 @@ That's your CA nice and shiny ready to sign some stuff.
 
 This step would not be necessary if we configured an Enterprise CA as Active Directory would do it for us, but that's not how we do things in'it ?
 
--Start the "Certification Authority" console
+-Start the "Certification Authority" console.
 
 -Open the properties of the CA and click "View Certificate"
 
-Again you can see that I'm cruising through the defaults, a proper PKI admin would probably go and touch some settings.
+![vmca-hybrid-1-9.png]({{site.baseurl}}/img/vmca-hybrid-1-9.png)
 
 -Go to "Details" > "Copy to File..." > At the file format page chose "Base-64 encoded X.509"
 
 The Base-64 format makes it possible to open and read the certificate with notepad for example, which will be usefull when we put our certificate chain together. The Der format would just spit some crypto garbage.
 
+![vmca-hybrid-1-10.png]({{site.baseurl}}/img/vmca-hybrid-1-10.png)
+
 -Specify a location and name for the file and click finish. an "Export was successful" should appear.
 
--Start the "Group Policy Management" console and create a GPO linked to the domain.
+-Start the "Group Policy Management" console and create a GPO linked to the domain with a descriptive name (Xav-CA Root CA).
 
 -Edit the GPO and browse to "Computer management" > "Policies" > "Windows Settings" > "Security Settings" > "Public Key Policies" > "Trusted Root Certification Authoriy" > Right click "Import".
 
 -Click Next and Browse to the certificate location.
+
+![vmca-hybrid-1-11.png]({{site.baseurl}}/img/vmca-hybrid-1-11.png)
 
 -Make sure the certificate goes to the Trusted Root CA store and click Next > Finish.
 
 -The Root CA certificate should appear on the right pane.
 
 -Run "gpupdate /force" on all your systems and check that the certificate appears in Certificate Manager.
+
+![vmca-hybrid-1-12.png]({{site.baseurl}}/img/vmca-hybrid-1-12.png)
 
 ## 2. Generate a certificate request in certificate manager.
 
@@ -114,6 +120,10 @@ Quick troll: In my lab I work with a Windows based vCenter, that's right!
 -Go to the location of your OS and start the tool. "./certificate-manager" for linux and there is a .bat file for Windows.
 
 -Chose option 1 > Then Option 1 again > Provide a directory to store the files > answer "Y" to reconfigure certool.cfg and configure your certificate.
+
+![vmca-hybrid-1-13.png]({{site.baseurl}}/img/vmca-hybrid-1-13.png)
+
+![vmca-hybrid-1-14.png]({{site.baseurl}}/img/vmca-hybrid-1-14.png)
 
 These prompts will populate the file certool.cfg that is used by the tool to create the certificates and the certificate requests. The ones with a * must be done properly, the other ones are for certificate identification.
 
@@ -139,7 +149,7 @@ This field populates the subject alternative name (san) of the certificate so yo
 
 -**VMCA name**: Put a name that is relevant to you. It will be the issuer of the solution user and ESXi certificates later on. I used "xav.lab-VMCA".
 
-2 files are created at the location you specified. The certificate signing request (.csr) and the private key (.key).
+2 files are created at the location you specified. The certificate signing request (vmca_issued_csr.csr) and the private key (vmca_issued_key.key).
 
 ## 3. Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
 
