@@ -33,27 +33,41 @@ In this step we install a Microsoft Standalone Root CA and we set up a GPO to di
 
 -Start Server manager and add the "Active Directory Certificate Services" role.
 
+![vmca-hybrid-1-1.png]({{site.baseurl}}/img/vmca-hybrid-1-1.png)
+
 -In AD CS role services check "Certificate Authority" only.
+
+![vmca-hybrid-1-2.png]({{site.baseurl}}/img/vmca-hybrid-1-2.png)
 
 -After the role is added click on the flag with a warning and click "Configure Active Directory Certificate Services ..."
 
+![vmca-hybrid-1-3.png]({{site.baseurl}}/img/vmca-hybrid-1-3.png)
+
 -I leave the domain admin for the configuration (not sure of the best practices here).
+
+![vmca-hybrid-1-4.png]({{site.baseurl}}/img/vmca-hybrid-1-4.png)
 
 -Check Certificate Authority (no other choice) and next.
 
+![vmca-hybrid-1-5.png]({{site.baseurl}}/img/vmca-hybrid-1-5.png)
+
 -Select "Standalone CA"
 
+![vmca-hybrid-1-6.png]({{site.baseurl}}/img/vmca-hybrid-1-6.png)
+
 -Check "Root CA"
+
+![vmca-hybrid-1-7.png]({{site.baseurl}}/img/vmca-hybrid-1-7.png)
 
 -Leave "Private Key" and "Cryptography" as defaults.
 
 -Enter a Common name for your CA. This is the name that will appear as issuer in your client certs so don't go too crazy on the creativity here.
 
+![vmca-hybrid-1-8.png]({{site.baseurl}}/img/vmca-hybrid-1-8.png)
+
 -I leave the default 5 years validy period.
 
-Note that this is the validity of the CA, not the certificates it will sign so it should have a fairly long validity.
-
-Note also that it can not issue certificates with a validity longer than itself.
+Note that this is the validity of the CA, not the certificates it will sign so it should have a fairly long validity. The CA will not issue certificates with a validity longer than its own.
 
 -The rest is default clickodrome until the end.
 
