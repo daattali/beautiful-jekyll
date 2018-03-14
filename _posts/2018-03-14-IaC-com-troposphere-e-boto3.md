@@ -62,7 +62,7 @@ $ pip install boto3
 Após a instalação sera necessário adicionar as credencias da aws, digite:
 
 ```
-aws configure
+$ aws configure
 ```
 
 Lembre-se, caso você tem mais projetos na sua maquina, você podeter mais de uma configuração da aws, por exemplo nesse, precisamos de um usuário com acesso a ec2, loadbalance e autoscaling.
