@@ -3,7 +3,7 @@ layout: post
 published: false
 title: vCenter 6.5 hybrid certificates with Microsoft Standalone CA
 ---
-The hybrid mode is currently VMware's recommended deployment model for certificates as it procures a good level of security while not being too cumbersome to implement. In this model only the Machine SSL certificate is signed by the CA and replaced on the vCenter. The solution user and ESXi host certificates are distributed by the VMCA. If you look into one of them you'll see that the end of the certificate chain is the VMCA. As opposed to the "VMCA as an intermediate CA" model where the certificate chain goes all the way up to the Root CA via the VMCA.
+The hybrid mode is currently VMware's recommended deployment model for certificates as it procures a good level of security while not being too cumbersome to implement. In this model only the Machine SSL certificate is signed by the CA and replaced on the vCenter server. The solution user and ESXi host certificates are distributed by the VMCA. If you look into one of them you'll see that the end of the certificate chain is the VMCA. As opposed to the "VMCA as an intermediate CA" model where the certificate chain goes all the way up to the Root CA via the VMCA.
 
 When playing with certificates in vCenter I read a lot of articles online but a lot of them were very similar and didn't cover the whole picture: Generate a .csr in certificate-manager, make a request on the CA's web page, download the cert and install it > done. Don't get me wrong it's still good content and for some it might be enough but most of them skipped the Windows CA part and didn't go all the way to the GPOs and properly identified VMCA certs. I'm also not a big fan of the "next next next" approach without explaining and understanding what's what.
 
@@ -101,7 +101,7 @@ Quick troll: In my lab I work with a Windows based vCenter, that's right!
 
 -Chose option 1 > Then Option 1 again > Provide a directory to store the files > answer "Y" to reconfigure certool.cfg and configure your certificate.
 
-These prompt will populate the file certool.cfg that is used by the tool to create the certificates and the certificate requests. The ones with a * must be done properly, the other ones are for certificate identification.
+These prompts will populate the file certool.cfg that is used by the tool to create the certificates and the certificate requests. The ones with a * must be done properly, the other ones are for certificate identification.
 
 -**Country** : 2 letters of your country.
 
@@ -119,7 +119,9 @@ These prompt will populate the file certool.cfg that is used by the tool to crea
 
 -**Email** : Self explanatory.
 
--**Hostname*** : FQDN of vCenter server.
+-**Hostname*** : FQDN and shortname (NETBIOS name) of vCenter server.
+
+This field populates the subject alternative name (san) of the certificate so you don't get an error if you use the short name instead of the FQDN.
 
 -**VMCA name**: Put a name that is relevant to you. It will be the issuer of the solution user and ESXi certificates later on. I used "xav.lab-VMCA".
 
@@ -127,7 +129,7 @@ These prompt will populate the file certool.cfg that is used by the tool to crea
 
 ## 3. Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
 
-This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to down the "IIS and 100 extra features" road to focus on vcenter and certificates. Because we can't request certificates on the web interface we need to use certreq.
+This is where I found 98% of the how-tos on internet were using the web interface enrollment. I din't want to down the "IIS and 100 extra features" road in order to focus on vcenter and certificates. Because we can't request certificates on the web interface we need to use certreq.
 
 The machine ssl certificate is the certificate you see in the vSphere web client.
 
@@ -141,7 +143,7 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 
 -Go to "Pending Requests" > Right click on the certificate > "All tasks" > "Issue".
 
--Go to "Issued certificates" > Open the certificate > "Details" > "Copy to file" > Chose "Base 64 encoded X.509" and save it somewhere (I save it directly to a share \\srv-vcenter\certs\srv.cer).
+-Go to "Issued certificates" > Open the certificate > "Details" > "Copy to file" > Chose "Base 64 encoded X.509" and save it somewhere (I send it directly to a my vCenter \\srv-vcenter\certs\srv.cer).
 
 -Right click on the CA > "Properties" > "View certificate" > Save it at the same location (\\srv-vcenter\certs\root.cer).
 
@@ -155,15 +157,15 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 
 -Open certificate-manager and choose option 1 again > then Option 2
 
--Custom certificate for machine SSL > Path to the chain of certificate (srv.cer here).
+-"Custom certificate for machine SSL" > Path to the chain of certificate (srv.cer here).
 
--Valide custom key for machine SSL > Path to the .key file generated earlier.
+-"Valid custom key for machine SSL" > Path to the .key file generated earlier.
 
--Signing certificate of the machine SSL certificate > Path to the certificate of the Root CA (root.cer).
+-"Signing certificate of the machine SSL certificate" > Path to the certificate of the Root CA (root.cer).
 
 -Press Y to confirm the change and wait for it to finish.
 
-That's the certificate replaced in vCenter, you can now go to the web client url and you will see no certificate error :)
+That's the certificate replaced in vCenter, you can now go to the web client url and you will see the certificate is valid.
 
 In the next step we make VMCA issue certificates with the correct properties.
 
@@ -177,31 +179,31 @@ In the next step we make VMCA issue certificates with the correct properties.
 
 -Answer N to not reconfigure certool.cfg and answer Y to continue the operation.
 
-That's now the solution certificates replaced by proper ones that you and your (paranoid) PKI team can identify, sweet.
+That's now the solution certificates replaced by proper ones that you and your (paranoid) PKI team can identify, nice.
 
 ### Renew hosts certificates
 
--In vCenter right click on your hosts > "Certificate" > "Refresh CA certificates"
+-Log in the vSphere web client and right click on your hosts > "Certificate" > "Refresh CA certificates"
 
--In vCenter right click on your hosts > "Certificate" > "Renew certificate"
+-Right click on them again > "Certificate" > "Renew certificate"
 
-That's it, your hosts now have certificates issued by "xav.lab-VMCA" with the fields specified previously. It might sound silly but in security sensitive environments it can make the difference.
+That's it, your hosts now have certificates issued by "xav.lab-VMCA" with the fields specified previously. It might sound silly but in a security sensitive environment it can make a difference and save you from going full custom certificates (ultimate pain).
 
 However if you log on the web UI of a host you still won't get the beloved green lock icon in the url bar. It is because the certificate is issued by VMCA which is not known by your client, hence not trusted. In the next step we will retrieve it and deploy it via GPO.
 
 ## 6. Make the VMCA a trusted root CA (the holy green lock).
 
--Open a browser to your vCenter: https://srv-vcenter.xav.lab
+-Open a browser to your vSphere web client page: https://srv-vcenter.xav.lab
 
--On the right pane click on "Download Trusted Root certificate" and open the zip file. 
+-On the right pane click "Download Trusted Root certificate" and open the zip file. 
 
--In the "Win" folder you will find 3 certificates: the original default vmca "CA" cert (not used anymore), the Microsoft Root CA and our modified VMCA "xav.lab-VMCA". Open the .crt files and locate the latter.
+-In the "Win" folder you will find 3 certificates: the original default vmca "CA" cert (not used anymore), the Microsoft Root CA and our modified VMCA "xav.lab-VMCA". Open the .crt files to locate the latter.
 
--Save the certificate of the modified VMCA somewhere and copy it to your domain controller.
+-Save the certificate of the modified VMCA somewhere and copy it to your PKI server (mine is the DC).
 
--Create another GPO to deploy the cert. I call it "xav.lab-VMCA Root CA".
+-Create another GPO to deploy the cert. I call it "xav.lab-VMCA".
 
--Edit it the same way we did the first time and choose the cert we downloaded from vCenter instead.
+-Edit it the same way we did the first time but choose the cert we just downloaded from vCenter instead.
 
 -Run "Gpupdate /force" on your clients and log back in vCenter.
 
@@ -209,6 +211,4 @@ Your connections are now secure on both vCenter and the hosts.
 
 **Caveats:**
 
--The certificate won't be valid if you use short names on vCenter or ESXi.
-
--The certificate won't be valid on ESXi if you connect with the IP. It will be ok on vCenter unless you skipped the IP in certificate-manager.
+-The certificate won't be valid on ESXi if you connect with the IP or the short name. It will be ok on vCenter unless you skipped the IP and hostname fields in certificate-manager.
