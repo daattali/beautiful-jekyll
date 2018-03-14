@@ -89,7 +89,9 @@ The Base-64 format makes it possible to open and read the certificate with notep
 
 ![vmca-hybrid-1-10.png]({{site.baseurl}}/img/vmca-hybrid-1-10.png)
 
--Specify a location and name for the file and click finish. an "Export was successful" should appear.
+-Name it "Root.cer", place it to the location of your choice and click finish. an "Export was successful" should appear. 
+
+Note that we will also need this cert later.
 
 -Start the "Group Policy Management" console and create a GPO linked to the domain with a descriptive name (Xav-CA Root CA).
 
@@ -157,19 +159,25 @@ This is where I found 98% of the how-tos on internet were using the web interfac
 
 The machine ssl certificate is the certificate you see in the vSphere web client.
 
--On the vCenter server start "certreq".
+-On the vCenter server start "certreq", a file browser will open.
 
--Browse to the location you specified in certificate-manager and select the .csr (set file types to "All files *.*).
+-Browse to the location you specified in certificate-manager and select vmca_issued_csr.csr (set file types to "All files *.*).
+
+![vmca-hybrid-1-15.png]({{site.baseurl}}/img/vmca-hybrid-1-15.png)
 
 -Select your CA and click OK.
+
+![vmca-hybrid-1-16.png]({{site.baseurl}}/img/vmca-hybrid-1-16.png)
 
 -On the PKI server launch the "Certification Authority".
 
 -Go to "Pending Requests" > Right click on the certificate > "All tasks" > "Issue".
 
--Go to "Issued certificates" > Open the certificate > "Details" > "Copy to file" > Chose "Base 64 encoded X.509" and save it somewhere (I send it directly to a my vCenter \\srv-vcenter\certs\srv.cer).
+![vmca-hybrid-1-17.png]({{site.baseurl}}/img/vmca-hybrid-1-17.png)
 
--Right click on the CA > "Properties" > "View certificate" > Save it at the same location (\\srv-vcenter\certs\root.cer).
+-Go to "Issued certificates" > Open the certificate like before with the CA > "Details" > "Copy to file" > Chose "Base 64 encoded X.509" and save it somewhere (I send it directly to a my vCenter \\srv-vcenter\certs\srv.cer).
+
+-Copy the certificate of the root CA that we saved in step 1 into the same location (\\srv-vcenter\certs\root.cer).
 
 -You can now close the CA we won't need it anymore.
 
@@ -178,6 +186,8 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 -Go to the location where you stored the certificates and open them both in notepad.
 
 -Copy the content of the CA root certificate, paste it at the end of the vCenter one (srv.cer) and save it.
+
+![vmca-hybrid-1-18.png]({{site.baseurl}}/img/vmca-hybrid-1-18.png)
 
 -Open certificate-manager and choose option 1 again > then Option 2
 
@@ -189,7 +199,13 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 
 -Press Y to confirm the change and wait for it to finish.
 
+![vmca-hybrid-1-19.png]({{site.baseurl}}/img/vmca-hybrid-1-19.png)
+
 That's the certificate replaced in vCenter, you can now go to the web client url and you will see the certificate is valid.
+
+![vmca-hybrid-1-190.png]({{site.baseurl}}/img/vmca-hybrid-1-190.png)
+
+![vmca-hybrid-1-191.png]({{site.baseurl}}/img/vmca-hybrid-1-191.png)
 
 In the next step we make VMCA issue certificates with the correct properties.
 
@@ -202,6 +218,8 @@ In the next step we make VMCA issue certificates with the correct properties.
 -Press Y to generate all certificates using configuration file and enter your creds.
 
 -Answer N to not reconfigure certool.cfg and answer Y to continue the operation.
+
+![vmca-hybrid-1-20.png]({{site.baseurl}}/img/vmca-hybrid-1-20.png)
 
 That's now the solution certificates replaced by proper ones that you and your (paranoid) PKI team can identify, nice.
 
