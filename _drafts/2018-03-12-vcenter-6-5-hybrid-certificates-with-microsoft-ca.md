@@ -227,11 +227,17 @@ That's now the solution certificates replaced by proper ones that you and your (
 
 -Log in the vSphere web client and right click on your hosts > "Certificate" > "Refresh CA certificates"
 
+![vmca-hybrid-1-21.png]({{site.baseurl}}/img/vmca-hybrid-1-21.png)
+
 -Right click on them again > "Certificate" > "Renew certificate"
+
+![vmca-hybrid-1-22.png]({{site.baseurl}}/img/vmca-hybrid-1-22.png)
 
 That's it, your hosts now have certificates issued by "xav.lab-VMCA" with the fields specified previously. It might sound silly but in a security sensitive environment it can make a difference and save you from going full custom certificates (ultimate pain).
 
 However if you log on the web UI of a host you still won't get the beloved green lock icon in the url bar. It is because the certificate is issued by VMCA which is not known by your client, hence not trusted. In the next step we will retrieve it and deploy it via GPO.
+
+![vmca-hybrid-1-23.png]({{site.baseurl}}/img/vmca-hybrid-1-23.png)
 
 ## 6. Make the VMCA a trusted root CA (the holy green lock).
 
@@ -239,7 +245,11 @@ However if you log on the web UI of a host you still won't get the beloved green
 
 -On the right pane click "Download Trusted Root certificate" and open the zip file. 
 
+![vmca-hybrid-1-24.png]({{site.baseurl}}/img/vmca-hybrid-1-24.png)
+
 -In the "Win" folder you will find 3 certificates: the original default vmca "CA" cert (not used anymore), the Microsoft Root CA and our modified VMCA "xav.lab-VMCA". Open the .crt files to locate the latter.
+
+![vmca-hybrid-1-25.png]({{site.baseurl}}/img/vmca-hybrid-1-25.png)
 
 -Save the certificate of the modified VMCA somewhere and copy it to your PKI server (mine is the DC).
 
@@ -249,8 +259,12 @@ However if you log on the web UI of a host you still won't get the beloved green
 
 -Run "Gpupdate /force" on your clients and log back in vCenter.
 
-Your connections are now secure on both vCenter and the hosts.
+Your connections are now secure on both vCenter AND the hosts.
 
-**Caveats:**
+![vmca-hybrid-1-26.png]({{site.baseurl}}/img/vmca-hybrid-1-26.png)
 
--The certificate won't be valid on ESXi if you connect with the IP or the short name. It will be ok on vCenter unless you skipped the IP and hostname fields in certificate-manager.
+Note that the certificate won't be valid on ESXi if you connect with the IP or the short name because these are not put in the subject alternative name by VMCA. 
+
+
+
+It will be ok on vCenter unless you skipped the IP and hostname fields in certificate-manager.
