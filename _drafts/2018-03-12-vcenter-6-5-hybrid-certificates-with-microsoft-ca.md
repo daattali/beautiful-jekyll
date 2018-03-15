@@ -5,21 +5,23 @@ title: vCenter 6.5 hybrid certificates with Microsoft Standalone CA
 ---
 The hybrid mode is currently VMware's recommended deployment model for certificates as it procures a good level of security while not being too cumbersome to implement. In this model only the Machine SSL certificate is signed by the CA and replaced on the vCenter server. The solution user and ESXi host certificates are distributed by the VMCA. If you look into one of them you'll see that the end of the certificate chain is the VMCA. As opposed to the "VMCA as an intermediate CA" model where the certificate chain goes all the way up to the Root CA via the VMCA.
 
+![vmca-hybrid-diagram.jpg]({{site.baseurl}}/img/vmca-hybrid-diagram.jpg)
+
 When playing with certificates in vCenter I read a lot of articles online but a lot of them were very similar and didn't cover the whole picture: Generate a .csr in certificate-manager, make a request on the CA's web page, download the cert and install it > done. Don't get me wrong it's still good content and for some it might be enough but most of them skipped the Windows CA part and didn't go all the way to the GPOs and properly identified VMCA certs. I'm also not a big fan of the "next next next" approach without explaining and understanding what's what.
 
 For this how-to I tried to do something a little different than most articles stated above that would also fit my lab needs. We will cover the following:
 
-1.Install a Microsoft standalone CA and distribute the root CA certificate via GPO.
+**1.Install a Microsoft standalone CA and distribute the root CA certificate via GPO.**
 
-2.Generate a certificate request in certificate manager.
+**2.Generate a certificate request in certificate manager.**
 
-3.Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).
+**3.Obtain a vCenter machine SSL certificate from the CA with the mmc (no web enrollment).**
 
-4.Install the certificate in vCenter.
+**4.Install the certificate in vCenter.**
 
-5.Renew the solution users and Hosts certificates with the correct attributes.
+**5.Renew the solution users and Hosts certificates with the correct attributes.**
 
-6.Make the VMCA a trusted root CA (the holy green lock).
+**6.Make the VMCA a trusted root CA (the holy green lock).**
 
 Before starting make sure you have a working Active Directory and vCenter 6.5.
 
@@ -31,15 +33,15 @@ In this step we install a Microsoft Standalone Root CA and we set up a GPO to di
 
 ### Install the Microsoft CA
 
--Start Server manager and add the "Active Directory Certificate Services" role.
+-Start Server manager and add the "**Active Directory Certificate Services**" role.
 
 ![vmca-hybrid-1-1.png]({{site.baseurl}}/img/vmca-hybrid-1-1.png)
 
--In AD CS role services check "Certificate Authority" only.
+-In AD CS role services check "**Certificate Authority**" only.
 
 ![vmca-hybrid-1-2.png]({{site.baseurl}}/img/vmca-hybrid-1-2.png)
 
--After the role is added click on the flag with a warning and click "Configure Active Directory Certificate Services ..."
+-After the role is added click on the flag with a warning and click "**Configure Active Directory Certificate Services ...**"
 
 ![vmca-hybrid-1-3.png]({{site.baseurl}}/img/vmca-hybrid-1-3.png)
 
@@ -47,19 +49,19 @@ In this step we install a Microsoft Standalone Root CA and we set up a GPO to di
 
 ![vmca-hybrid-1-4.png]({{site.baseurl}}/img/vmca-hybrid-1-4.png)
 
--Check Certificate Authority (no other choice) and next.
+-Check "**Certificate Authority**" (no other choice) and next.
 
 ![vmca-hybrid-1-5.png]({{site.baseurl}}/img/vmca-hybrid-1-5.png)
 
--Select "Standalone CA"
+-Select "**Standalone CA**"
 
 ![vmca-hybrid-1-6.png]({{site.baseurl}}/img/vmca-hybrid-1-6.png)
 
--Check "Root CA"
+-Check "**Root CA**"
 
 ![vmca-hybrid-1-7.png]({{site.baseurl}}/img/vmca-hybrid-1-7.png)
 
--Leave "Private Key" and "Cryptography" as defaults.
+-Leave "**Private Key**" and "**Cryptography**" as **defaults**.
 
 -Enter a Common name for your CA. This is the name that will appear as issuer in your client certs so don't go too crazy on the creativity here.
 
@@ -69,7 +71,7 @@ In this step we install a Microsoft Standalone Root CA and we set up a GPO to di
 
 Note that this is the validity of the CA, not the certificates it will sign so it should have a fairly long validity. The CA will not issue certificates with a validity longer than its own.
 
--The rest is default clickodrome until the end.
+-The rest is good ol' clickodrome until the end.
 
 That's your CA nice and shiny ready to sign some stuff. 
 
@@ -77,35 +79,35 @@ That's your CA nice and shiny ready to sign some stuff.
 
 This step would not be necessary if we configured an Enterprise CA as Active Directory would do it for us, but that's not how we do things in'it ?
 
--Start the "Certification Authority" console.
+-Start the "**Certification Authority**" console.
 
--Open the properties of the CA and click "View Certificate"
+-Open the properties of the CA and click "**View Certificate**"
 
 ![vmca-hybrid-1-9.png]({{site.baseurl}}/img/vmca-hybrid-1-9.png)
 
--Go to "Details" > "Copy to File..." > At the file format page chose "Base-64 encoded X.509"
+-Go to "**Details**" > "**Copy to File...**" > At the file format page chose "**Base-64 encoded X.509**"
 
 The Base-64 format makes it possible to open and read the certificate with notepad for example, which will be usefull when we put our certificate chain together. The Der format would just spit some crypto garbage.
 
 ![vmca-hybrid-1-10.png]({{site.baseurl}}/img/vmca-hybrid-1-10.png)
 
--Name it "Root.cer", place it to the location of your choice and click finish. an "Export was successful" should appear. 
+-Name it "**Root.cer**", place it to the location of your choice and click finish. an "Export was successful" should appear. 
 
 Note that we will also need this cert later.
 
--Start the "Group Policy Management" console and create a GPO linked to the domain with a descriptive name (Xav-CA Root CA).
+-Start the "**Group Policy Management**" console and create a GPO linked to the domain with a descriptive name (Xav-CA Root CA).
 
--Edit the GPO and browse to "Computer management" > "Policies" > "Windows Settings" > "Security Settings" > "Public Key Policies" > "Trusted Root Certification Authoriy" > Right click "Import".
+-Edit the GPO and browse to "**Computer management**" > "**Policies**" > "**Windows Settings**" > "**Security Settings**" > "**Public Key Policies**" > "**Trusted Root Certification Authoriy**" > Right click "**Import**".
 
 -Click Next and Browse to the certificate location.
 
 ![vmca-hybrid-1-11.png]({{site.baseurl}}/img/vmca-hybrid-1-11.png)
 
--Make sure the certificate goes to the Trusted Root CA store and click Next > Finish.
+-Make sure the certificate goes to the **Trusted Root CA store** and click Next > Finish.
 
 -The Root CA certificate should appear on the right pane.
 
--Run "gpupdate /force" on all your systems and check that the certificate appears in Certificate Manager.
+-Run "**gpupdate /force**" on all your systems and check that the certificate appears in Certificate Manager.
 
 ![vmca-hybrid-1-12.png]({{site.baseurl}}/img/vmca-hybrid-1-12.png)
 
@@ -117,17 +119,17 @@ The certificate request is a file generally with the .csr extension containing a
 
 **vCenter Server Appliance**: ```/usr/lib/vmware-vmca/bin/certificate-manager```
 
-Quick troll: In my lab I work with a Windows based vCenter, that's right!
+_Quick troll: In my lab I work with a Windows based vCenter, that's right!_
 
 -Go to the location of your OS and start the tool. "./certificate-manager" for linux and there is a .bat file for Windows.
 
--Chose option 1 > Then Option 1 again > Provide a directory to store the files > answer "Y" to reconfigure certool.cfg and configure your certificate.
+-Chose **option 1** > Then **Option 1** again > Provide a directory to store the files > answer **Y** to reconfigure certool.cfg and configure your certificate.
 
 ![vmca-hybrid-1-13.png]({{site.baseurl}}/img/vmca-hybrid-1-13.png)
 
 ![vmca-hybrid-1-14.png]({{site.baseurl}}/img/vmca-hybrid-1-14.png)
 
-These prompts will populate the file certool.cfg that is used by the tool to create the certificates and the certificate requests. The ones with a * must be done properly, the other ones are for certificate identification.
+These prompts will populate the file certool.cfg that is used to create the certificates and the certificate requests. The ones with a * must be done properly, the other ones are for certificate identification. Those don't apply to certificates issued to the hosts.
 
 -**Country** : 2 letters of your country.
 
@@ -149,7 +151,7 @@ These prompts will populate the file certool.cfg that is used by the tool to cre
 
 This field populates the subject alternative name (san) of the certificate so you don't get an error if you use the short name instead of the FQDN.
 
--**VMCA name**: Put a name that is relevant to you. It will be the issuer of the solution user and ESXi certificates later on. I used "xav.lab-VMCA".
+-**VMCA name**: Put a name that is relevant to you. It will be the issuer of the solution user certificates later on. I used "xav.lab-VMCA".
 
 2 files are created at the location you specified. The certificate signing request (vmca_issued_csr.csr) and the private key (vmca_issued_key.key).
 
@@ -159,9 +161,9 @@ This is where I found 98% of the how-tos on internet were using the web interfac
 
 The machine ssl certificate is the certificate you see in the vSphere web client.
 
--On the vCenter server start "certreq", a file browser will open.
+-On the vCenter server start "**certreq**", a file browser will open.
 
--Browse to the location you specified in certificate-manager and select vmca_issued_csr.csr (set file types to "All files *.*).
+-Browse to the location you specified in certificate-manager and select **vmca_issued_csr.csr** (set file types to "All files *.*).
 
 ![vmca-hybrid-1-15.png]({{site.baseurl}}/img/vmca-hybrid-1-15.png)
 
@@ -169,13 +171,13 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 
 ![vmca-hybrid-1-16.png]({{site.baseurl}}/img/vmca-hybrid-1-16.png)
 
--On the PKI server launch the "Certification Authority".
+-On the PKI server launch the "**Certification Authority**".
 
--Go to "Pending Requests" > Right click on the certificate > "All tasks" > "Issue".
+-Go to "**Pending Requests**" > Right click on the certificate > "**All tasks**" > "**Issue**".
 
 ![vmca-hybrid-1-17.png]({{site.baseurl}}/img/vmca-hybrid-1-17.png)
 
--Go to "Issued certificates" > Open the certificate like before with the CA > "Details" > "Copy to file" > Chose "Base 64 encoded X.509" and save it somewhere (I send it directly to a my vCenter \\srv-vcenter\certs\srv.cer).
+-Go to "**Issued certificates**" > Open the certificate like before with the CA > "**Details**" > "**Copy to file**" > Chose "**Base 64 encoded X.509**" and save it somewhere (I send it directly to a my vCenter \\srv-vcenter\certs\srv.cer).
 
 -Copy the certificate of the root CA that we saved in step 1 into the same location (\\srv-vcenter\certs\root.cer).
 
@@ -189,13 +191,13 @@ The machine ssl certificate is the certificate you see in the vSphere web client
 
 ![vmca-hybrid-1-18.png]({{site.baseurl}}/img/vmca-hybrid-1-18.png)
 
--Open certificate-manager and choose option 1 again > then Option 2
+-Open certificate-manager and choose **option 1** again > then **Option 2**
 
--"Custom certificate for machine SSL" > Path to the chain of certificate (srv.cer here).
+-"**Custom certificate for machine SSL**" > Path to the chain of certificate (srv.cer here).
 
--"Valid custom key for machine SSL" > Path to the .key file generated earlier.
+-"**Valid custom key for machine SSL**" > Path to the .key file generated earlier.
 
--"Signing certificate of the machine SSL certificate" > Path to the certificate of the Root CA (root.cer).
+-"**Signing certificate of the machine SSL certificate**" > Path to the certificate of the Root CA (root.cer).
 
 -Press Y to confirm the change and wait for it to finish.
 
@@ -213,11 +215,11 @@ In the next step we make VMCA issue certificates with the correct properties.
 
 ### Renew solution users certificates
 
--Start certificate-manager again and choose Option 6
+-Start certificate-manager again and choose **Option 6**
 
--Press Y to generate all certificates using configuration file and enter your creds.
+-Press **Y** to generate all certificates using configuration file and enter your creds.
 
--Answer N to not reconfigure certool.cfg and answer Y to continue the operation.
+-Answer **N** to not reconfigure certool.cfg and answer **Y** to continue the operation.
 
 ![vmca-hybrid-1-20.png]({{site.baseurl}}/img/vmca-hybrid-1-20.png)
 
@@ -225,11 +227,29 @@ That's now the solution certificates replaced by proper ones that you and your (
 
 ### Renew hosts certificates
 
--Log in the vSphere web client and right click on your hosts > "Certificate" > "Refresh CA certificates"
+In order to edit the fields of the certificates issued to the hosts by the VMCA we need to make a few changes in the vSphere web client.
+
+-Log in the vSphere web client and select **vCenter** > "**Manage**" > "**Settings**" > "**Advanced Settings**".
+
+-Type "**cert**" in the search bar. That will bring up all settings related to certificates.
+
+You can customize the certificates with the settings ```vpxd.certmgmt.certs.cn.xxx```.
+
+**vpxd.certmgmt.certs.daysValid** : In case you want to change the default 5 years lifetime of the certificates. 	
+
+**vpxd.certmgmt.certs.cn.hardThreshold** : Hard threshold for certificate expiration. vCenter Server raises a red alarm when this threshold is reached (default 30 days).
+
+**vpxd.certmgmt.certs.cn.pollIntervalDays** : Poll interval for vCenter Server certificate validity checks (default 5 days.
+
+**vpxd.certmgmt.certs.cn.softThreshold **: Soft Threshold for certificate expiration. vCenter Server raises an event when this threshold is reached (default 240 days). 
+
+![vmca-hybrid-1-20-5.png]({{site.baseurl}}/img/vmca-hybrid-1-20-5.png)
+
+-Right click on your **hosts** > "**Certificate**" > "**Refresh CA certificates**"
 
 ![vmca-hybrid-1-21.png]({{site.baseurl}}/img/vmca-hybrid-1-21.png)
 
--Right click on them again > "Certificate" > "Renew certificate"
+-Right click on them again > "**Certificate**" > "**Renew certificate**"
 
 ![vmca-hybrid-1-22.png]({{site.baseurl}}/img/vmca-hybrid-1-22.png)
 
@@ -243,7 +263,7 @@ However if you log on the web UI of a host you still won't get the beloved green
 
 -Open a browser to your vSphere web client page: https://srv-vcenter.xav.lab
 
--On the right pane click "Download Trusted Root certificate" and open the zip file. 
+-On the right pane click "**Download Trusted Root certificate**" and open the zip file. 
 
 ![vmca-hybrid-1-24.png]({{site.baseurl}}/img/vmca-hybrid-1-24.png)
 
@@ -257,7 +277,7 @@ However if you log on the web UI of a host you still won't get the beloved green
 
 -Edit it the same way we did the first time but choose the cert we just downloaded from vCenter instead.
 
--Run "Gpupdate /force" on your clients and log back in vCenter.
+-Run "**Gpupdate /force**" on your clients and log back in vCenter.
 
 Your connections are now secure on both vCenter AND the hosts.
 
