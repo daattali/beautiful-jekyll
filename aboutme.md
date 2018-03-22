@@ -1,13 +1,14 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Gators and Cardinals Nation
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Ziliang Luo. A Ph.D. student at Agronomy Department of University of Florida
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I'm interested in Biological Nitrogen fixation System in legume species. Study on BNF genetics could facilitate transfering this magic power to food crops, which will greatly reduce the chemical input into field and environment.
+- Super interested in bioinformatics.
+- I love Broadway musicals, American football, dogs, nature.
 
 What else do you need?
 
