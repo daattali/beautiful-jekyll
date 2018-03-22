@@ -24,11 +24,15 @@ description: Biopythons study
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Python learning:
+    - LiaoXuefeng: "https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000"
+    - 10min to pandas: "http://pandas.pydata.org/pandas-docs/stable/10min.html"
+    - Pandas Cookbook: "http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook"
+  Webpage Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Jekyll's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
