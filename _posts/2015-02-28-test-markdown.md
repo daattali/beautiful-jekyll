@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Peanut nodulation
-subtitle: "crack entry"
+title: markdown learning
+subtitle: language for web
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
