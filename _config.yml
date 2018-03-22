@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://username.github.io"
+url: "http://Kennyluo4.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,30 +14,38 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: Ziliang Luo webpage
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Genetics study on peanut nodulation
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Python learning:
+    - LiaoXuefeng: "https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000"
+    - 10min to pandas: "http://pandas.pydata.org/pandas-docs/stable/10min.html"
+    - Pandas Cookbook: "http://pandas.pydata.org/pandas-docs/stable/cookbook.html#cookbook"
+  Peanut database:
+    - PeanutBase(US genome): "https://peanutbase.org/home"
+    - PeanutGenomeResource: "http://59.79.248.25/~Peanut_GR/Temporarily_unavailable_for_time.php"
+    - PeanutDB: "http://bioinfolab.muohio.edu/txid3818v1/"
+  Webpage Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Jekyll's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+ avatar: "/img/peanut_genome.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 # title-img: /path/to/image
-
+#title-img: "img/peanut_genome.jpg"
 # --- Background colour/image options --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
@@ -64,7 +72,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: Ziliang Luo
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -72,10 +80,10 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
-  facebook: daattali
-  github: daattali
-  twitter: daattali
+  email: "kennyluo4@gmail.com"
+  facebook: Kenny Luo
+  github: Kennyluo4
+  twitter: kennyluo4
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
