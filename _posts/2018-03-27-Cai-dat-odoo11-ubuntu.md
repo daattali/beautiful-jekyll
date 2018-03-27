@@ -172,7 +172,16 @@ Thực hiện các bước dưới đây:
 sudo adduser --system --home=/opt/odoo --group odoo
 ```
 
+Phân quyền cho user odoo đọc ghi log
+
+```
+sudo mkdir /var/log/odoo
+sudo chown odoo:root /var/log/odoo
+```
+
 Chuyển sang sử dụng user của user mới tạo:
+
+
 
 ```
 sudo su - odoo -s /bin/bash
@@ -207,7 +216,8 @@ logfile = /var/log/odoo/odoo-server.log
 addons_path = /opt/odoo/odoo/addons
 ```
 
-Save as file này vào thư mục etc
+Save as file này vào thư mục etc, phân quyền cho odoo đọc được các file này
+
 ```
 sudo chown odoo: /etc/odoo-server.conf
 sudo chmod 640 /etc/odoo-server.conf
