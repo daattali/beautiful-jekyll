@@ -60,7 +60,7 @@ var main = {
       });
 
       fakeMenu.remove();
-    }    
+    }        
     
     // show the big header image	
     main.initImgs();

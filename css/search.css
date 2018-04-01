@@ -1,0 +1,14 @@
+
+#google-custom-search {
+  margin-top: 50px;
+}
+
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button,
+.gsc-selected-option-container {
+  box-sizing: content-box; 
+  line-height: normal;
+}

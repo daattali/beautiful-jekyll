@@ -1,12 +1,12 @@
 {% if layout.common-ext-js %}
   {% for js in layout.common-ext-js %}
-	<script src="{{ js }}"></script>
+    {% include ext-js.html js=js %}
   {% endfor %}
 {% endif %}
 
 {% if page.ext-js %}
   {% for js in page.ext-js %}
-	<script src="{{ js }}"></script>
+    {% include ext-js.html js=js %}
   {% endfor %}
 {% endif %}
 
