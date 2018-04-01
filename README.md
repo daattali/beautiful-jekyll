@@ -241,7 +241,7 @@ Whenever you make any changes to `_config.yml`, you must stop and re-start the s
 
 Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
 
-## FAQ and help
+## FAQ and support
 
 If you need any help, I suggest heading over to the [Jekyll support forum](https://talk.jekyllrb.com/).
 
