@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Passive node down in vCenter HA 6.5
 ---
 _This issue is fixed in vCenter 6.5 update 1._
