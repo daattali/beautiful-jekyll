@@ -45,13 +45,14 @@ author:
   email: "contact@vxav.fr"
   github: vxav    # eg. daattali
   linkedin: in/avrillier  # eg. "pub/dean-attali/8/946/143"
+  twitter: xavieravrillier
 
 # Select which links to show in the footer
 footer-links-active:
   rss: true
   facebook: false
   email: true
-  twitter: false
+  twitter: true
   github: true
   linkedin: true
   stackoverflow: false
