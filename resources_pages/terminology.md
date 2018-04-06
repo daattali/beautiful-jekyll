@@ -115,6 +115,7 @@ In each equivalence class below, the terms tend to be used interchangeably (even
 * sensitivity = recall (see Error types above)
 * training =  learning = fitting (sort of; depending on context)
 * ordinary least squares (OLS) = linear least squares = least squares
+* softmax classification = softmax regression = multinomial logit regression
 * kriging = Gaussian process regression
 * Bayesian network = Bayes net = directed graphical model = DAG graphical model
 * Markov random field = Markov network = undirected graphical model
