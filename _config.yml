@@ -165,6 +165,9 @@ defaults:
 # Use tags index page and make tags on each post clickable
 link-tags: true
 
+# Enable scroll button to the top of the page
+scroll-to-the-top: false
+
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
