@@ -1,7 +1,4 @@
 <footer>
-  <!-- Return to Top -->
-  <a href="#" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
-
   <div class="container beautiful-jekyll-footer">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -51,4 +48,8 @@
       </div>
     </div>
   </div>
+  
+  {% if site.scroll-to-the-top == true %}
+    <a href="#" class="cd-top js-cd-top">Return to Top</a>
+  {% endif %}
 </footer>
