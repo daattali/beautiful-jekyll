@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First real post!
-image: /screenshotPythonAllacher1002773.jpg
+image: /img/screenshotPythonAllacher1002773jpg.
 ---
 
 This is my first post...
