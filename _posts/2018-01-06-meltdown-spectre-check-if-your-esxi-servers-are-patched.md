@@ -3,6 +3,12 @@ layout: post
 published: true
 title: Meltdown & Spectre - Check if your ESXi servers are patched
 ---
+### [Update 20/03/2018]
+
+VMware now recommends to apply the patch for Hypervisor-Assisted Guest Mitigation. According to them the performance impact is [less than 2%](https://kb.vmware.com/s/article/52337).
+
+I haven't patched yet and I will wait for the feedback of early adopters. The start of the year has been so ridiculous with patches being rolled back every week because they broke more things than they fixed. So wait and see.
+
 ### [Update 15/01/2018]
 
 A few days ago VMware release the Security Advisory [VMSA-2018-0004](https://www.vmware.com/us/security/advisories/VMSA-2018-0004.html) and [KB52085](https://kb.vmware.com/s/article/52085) regarding _Hypervisor-Assisted Guest Remediation_ that would present the new CPU features to the VMs even without having the Firmware/Bios updated.
