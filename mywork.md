@@ -10,24 +10,18 @@ bigimg: /img/dev_1.jpg
 
 Code for Poland project. We (PoznajApp team) try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on smartphone localization.
 
-[WWW](http://poznajapp.pl)
-
-###### PYTHON, DJANGO, ANDROID, IOS, IONIC
+###### [WWW](http://poznajapp.pl)
 
 ---
 # MaterialActivityAnimation
 
 Sample project explain how to create material design ripple open new view (activity) animation.
 
-[Repository](https://github.com/rafalgawlik/MaterialActivityAnimations)
-
-###### ANDROID, JAVA
+###### [REPOSITORY](https://github.com/rafalgawlik/MaterialActivityAnimations)
 
 ---
 # MaterialRippleAnimation
 
 Library provide new widget - button with material design ripple animation.
 
-[Repository](https://github.com/rafalgawlik/MaterialRippleAnimation)
-
-###### ANDROID, JAVA
+###### [REPOSITORY](https://github.com/rafalgawlik/MaterialRippleAnimation)
