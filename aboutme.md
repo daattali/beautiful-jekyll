@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: 
+subtitle:
 bigimg: /img/tatry_way.jpg
 ---
 
@@ -13,5 +13,4 @@ My name is Rafał Gawlik and this is some information about me:
  - Naturally, I am based in Wrocław (Poland).
  - I'm from Tomaszów Lubelski (near Zamość).
  - I am a member of Klub Jagielloński.
- - I love developing open source apps - such as PoznajApp, Pola.  Check my Github account!
  - In footer you'll find my contact details!
