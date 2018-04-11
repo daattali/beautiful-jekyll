@@ -14,6 +14,7 @@ When I tried to start the services after stopping them I got the following outpu
 ```
 root@srv-vcenter [ ~ ]# service-control --start vmafdd
 Perform start operation. vmon_profile=None, svc_names=['vmafdd'], include_coreossvcs=False, Include_leafossvcs=False
-2018-04-11T10:00:19.720Z	Running command: ['/usr/bin/systemctl
+2018-04-11T10:00:19.720Z	Running command: ['/usr/bin/systemctl', 'is-enabled', u'vmafdd']
+2018-04-11T10:00:19.723Z	Done running command
+Service vmafdd startup type is not automatic. Skip
 ```
-
