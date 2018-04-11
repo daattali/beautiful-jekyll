@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Certificate replacement in vCenter HA configuration
 ---
 Recently I had to change the default certificates of a newly installed vCenter. Nothing unusal with that, if not for the fact that I didn't think about vCenter HA that I configured before getting the certs. If only I had read [that little piece of advice](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-CDC20BD4-E0CE-45D9-B73B-9AA795DA5FDD.html) from VMware...
