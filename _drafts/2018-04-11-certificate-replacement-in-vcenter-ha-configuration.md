@@ -7,12 +7,13 @@ Recently I had to change the default certificates of a newly installed vCenter. 
 
 > If you want to use custom certificates, you have to remove the vCenter HA configuration, delete the Passive and Witness nodes, provision the Active node with the custom certificate, and reconfigure the cluster.
 
-Anyway, I didn't read so I replaced the certificates with the PSC web gui and SSH'd to my VCSA to restart the services.
+Anyway, I didn't read so I replaced the certificates with the PSC web gui and SSH'd to my VCSA to restart the services (more info [here](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.psc.doc/GUID-15A4FD99-37E2-41E5-8A35-247B8FDB019D.html)).
+
+When I tried to start the services after stopping them I got the following output:
 
 ```
-service-control --stop --all
-service-control --start vmafdd
-service-control --start vmdird
-service-control --start vmcad
+root@srv-vcenter [ ~ ]# service-control --start vmafdd
+Perform start operation. vmon_profile=None, svc_names=['vmafdd'], include_coreossvcs=False, Include_leafossvcs=False
+2018-04-11T10:00:19.720Z	Running command: ['/usr/bin/systemctl
 ```
 
