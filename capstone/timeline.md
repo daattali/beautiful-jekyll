@@ -4,8 +4,7 @@ title: Timeline
 
 ---
 
-The application period for the 2018 capstone course is now open!
-The capstone course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
+This year's capstone course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 
 The timeline is below, followed by additional detail on each event.
 
