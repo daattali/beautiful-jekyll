@@ -7,7 +7,7 @@ title: Timeline
 The application period for the 2018 capstone course is now open!
 The capstone course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
 
-The timeline is below, followed by additional detail on each event. 
+The timeline is below, followed by additional detail on each event.
 
 | Event | Deadline/Period |
 | ----- | ---- |
@@ -22,10 +22,10 @@ The timeline is below, followed by additional detail on each event.
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 3, 2018 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | April 5, 2018  |
 | [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 |
-| [Phase 1: student proposals](#student-proposals) |  April 24 - May 4, 2018 (approx) |
+| [Phase 1: student proposals](#student-proposals) |  May 4, 2018 ) |
 | [Phase 2: project development](#project-development-stage) | May 7 - June 8, 2018 (approx)  |
 | [Phase 3: project polishing](#project-polishing-stage) | June 11 - 22, 2018 (approx) |
-| [Final presentations](#final-presentations) | June 28, 2018 (approx) |
+| Student presentations "on site" for partners | June 15 - June 25, 2018 |
 
 #### Proposal revision process
 
@@ -37,12 +37,7 @@ We recommend your first submission of the proposal to be well before the Decembe
 
 #### Students rate proposals
 
-A list of finalized proposals, along with one-sentence summaries, will be posted on a "project board" viewable by the students. The students will then rate their interest in the proposals, according to the following scale:
-
-- 1: reject
-- 2: accept (default)
-- 3: accept with interest
-- 4: accept with extra interest
+A list of finalized proposals, along with one-sentence summaries, will be posted on a "project board" viewable by the students. The students will then rate their interest in the proposals.
 
 #### Selection of proposals
 
@@ -54,7 +49,7 @@ The successful capstone partners accept the offers, and correspond with MDS admi
 
 #### Partner presentations
 
-We require that the capstone partners give a 30-minute presentation (allowing for 10-15 minutes of questions) to the students and MDS leadership over lunch at the UBC Vancouver campus.
+We require that the capstone partners give a 30-minute presentation (allowing for 10-15 minutes of questions) to the students at the UBC Vancouver campus.
 
 #### Partners provide legal documents and declare conflicts of interest
 
@@ -91,18 +86,14 @@ Students propose the data product and approach.
 
 Students develop the data product. This involves:
 
-    - Regular meetings with the teaching fellow mentor.
-    - Regular meetings with the capstone partner.
-    - Recording your progress and explorations in a data science notebook.
+  - Regular meetings with the teaching fellow mentor.
+  - Regular meetings with the capstone partner.
+  - Recording your progress and explorations in a data science notebook.
 
 #### Project polishing stage
 
 Students polish the data product for delivery to the capstone partner:
 
-    1. Deliver the data product after incorporating feedback from teaching fellows and colleagues, along with a final report.
-    2. Briefly present product(s) in an end-of-program celebration (not graded).
-    3. At the end, students also reflect on the project in a short individual report.
-
-#### Final presentations
-
-Students present the final data product and approach to the class.
+  1. Deliver the data product after incorporating feedback from teaching fellows and colleagues, along with a final report.
+  2. Briefly present product(s) in an end-of-program celebration (not graded).
+  3. At the end, students also reflect on the project in a short individual report.
