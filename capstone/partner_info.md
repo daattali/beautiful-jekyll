@@ -71,7 +71,9 @@ We understand that you may require some restrictions to be put in place, but we 
 
 Feel free to ask us about our standard UBC NDA. Contact us at `capstone-mds@science.ubc.ca`.
 
-### Conflicts of intereset
+This section should also include any other requirements of students participating in the project, like background checks, etc.
+
+### Conflicts of interest
 
 Declare any conflicts of interest. For example, if a current MDS student or family member is involved with your organization on a professional or personal level, this should be declared along with a short explanation.
 
