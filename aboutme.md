@@ -8,7 +8,7 @@ title: Author
 The best thing about blogs is that people share what they learn, make tutorial and everyone increase their knowledge in the process. I have always consumed articles and tutorials as part of my job or else but always on the reader's side, this blog is the opportunity to contribute and share from the writer's side. 
 
 <p align="center">
-  <img src="/img/vExpert2016-2017.jpg"/>
+  <img src="/img/vexpert.png"/>
   <br><br>
   <a href="https://www.youracclaim.com/badges/c79e933b-061b-4110-b841-8c87fe1d287b/public_url">
     <img src="/img/VCP6.png"/>
