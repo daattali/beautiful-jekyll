@@ -122,6 +122,9 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 #disqus: ""
 
+# Use Facebook Comments Plugin by assigning Facebook comment app id here.
+# fb_comment_id: ""
+
 # Facebook App ID
 # fb_app_id: ""
 
