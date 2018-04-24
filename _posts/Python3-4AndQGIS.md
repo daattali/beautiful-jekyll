@@ -1,6 +1,6 @@
 ---
-title: Homework
 layout: post
+title: Homework
 ---
 
 # Homework Python 3-4 and QGIS
