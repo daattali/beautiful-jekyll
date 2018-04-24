@@ -1,3 +1,8 @@
+---
+title: Homework
+layout: post
+---
+
 # Homework Python 3-4 and QGIS
 
 The Images are down below.
