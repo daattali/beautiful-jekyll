@@ -221,7 +221,7 @@ In the next step we make VMCA issue certificates with the correct properties.
 
 ![vmca-hybrid-1-20.png]({{site.baseurl}}/img/vmca-hybrid-1-20.png)
 
-That's now the solution certificates replaced by proper ones that you and your (paranoid) PKI team can identify, nice.
+That's now the solution certificates replaced by proper ones that you and your PKI team can identify, nice.
 
 ### Renew hosts certificates
 
