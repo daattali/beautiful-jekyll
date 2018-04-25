@@ -18,6 +18,8 @@ I used this use case as an opportunity to play with the API so I wrote a short 4
 
 ## Silence a VSAN health Check
 
+Download the module : [VSAN-HealthChecks.psm1](https://github.com/vxav/Scripting/blob/master/VSAN-HealthChecks.psm1)
+
 - First you need to import the module.
 
 ```
