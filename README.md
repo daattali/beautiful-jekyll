@@ -220,8 +220,8 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
 
     ```bash
     cd <repository_folder>
-    docker build -t beautiful-jekyll $PWD
-    docker run -d -p 4000:4000 --name beautiful-jekyll -v $PWD:/srv/jekyll beautiful-jekyll
+    docker build -t beautiful-jekyll "$PWD"
+    docker run -d -p 4000:4000 --name beautiful-jekyll -v "$PWD":/srv/jekyll beautiful-jekyll
     ```
 
 
