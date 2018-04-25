@@ -22,11 +22,11 @@ Find the Id of the check you want to silence. Mine is in Yellow state so I filte
 
 - Get-VsanHealthChecks -Cluster (get-cluster) -Health "yellow"
 
-Pick the one you want to silence and use the **TestId** property to silence it.
+Pick the one you want to silence and use the **TestId** property to silence it. The output should be the updated list of silenced checks including the one specified above.
 
 - Set-VsanHealthSilentCheck -Cluster (get-cluster) -TestId vumconfig -CheckState Silence
 
-you can run the command to display Health checks with the **DontFetchFromCache** switch enabled to re-run the test. The health check should now be in state **Skipped**.
+You can run the command to display Health checks with the **DontFetchFromCache** switch enabled to re-run the test. The health check should now be in state **Skipped**.
 
 - Get-VsanHealthChecks -Cluster (get-cluster) -DontFetchFromCache
 
