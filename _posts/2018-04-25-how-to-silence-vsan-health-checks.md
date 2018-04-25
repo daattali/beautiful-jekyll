@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: How to silence VSAN health checks
 ---
 The VSAN health checks are great in vCenter to quickly notice when something wrong is going on. However there may be some of the health checks that you don't want to come up as warning. As an example,  lots of vCenter implementations don't have access to internet by design and when it is the case the Health check "VSAN Build Recommendation Engine Health" will be in a warning state even though you don't care about it. 
