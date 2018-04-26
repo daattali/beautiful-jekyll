@@ -1,13 +1,15 @@
 ---
 layout: post
-published: false
+published: true
 title: How to silence VSAN health checks
 ---
 The VSAN health checks are great in vCenter to quickly notice when something wrong is going on. However there may be some of the health checks that you don't want to come up as warning. As an example,  lots of vCenter implementations don't have access to internet by design and when it is the case the Health check "VSAN Build Recommendation Engine Health" will be in a warning state even though you don't care about it. 
 
+![dr.evil-shh.JPG]({{site.baseurl}}/img/dr.evil-shh.JPG)
+
 As of vCenter 6.5U1 it is currently not possible to silence a check from the web client, the only way to do it is [via the VsanHealthSetVsanClusterSilentChecks method in the API](https://code.vmware.com/apis/217/vsan#/doc/vim.cluster.VsanVcClusterHealthSystem.html#getVsanClusterSilentChecks). Note that the VSAN API was made available in **PowerCLI 6.5.1 and above** so if you are still running an older version you will have to upgrade by uninstalling PowerCLI and downloading the module, [more info here](http://www.vxav.fr/2018-03-03-Install-latest-PowerCLI-on-offline-systems/).
 
-I used this use case as an opportunity to play with the API so I wrote a short 4 functions module. I will probably expand it over time.
+I used this use case as an opportunity to play a little bit with the API so I wrote a short 4 functions module. I will probably expand it as I get the need for new cmdlets.
 
 - **Get-VsanHealthChecks** : Display VSAN health checks with their current health.
 - **Get-VsanHealthGroups** : Display VSAN health groups with their current health.
