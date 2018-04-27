@@ -20,9 +20,11 @@ I used this use case as an opportunity to play a little bit with the API so I wr
 
 Download the module : [VSAN-HealthChecks.psm1](https://github.com/vxav/Scripting/blob/master/VSAN-HealthChecks.psm1)
 
-- First you need to import the module.
+- First you need to import the module and connect to vCenter.
 
 `Import-Module VSAN-HealthChecks.psm1`
+
+`Connect-VIServer -Server "srv-vcenter`
 
 - Find the Id of the check you want to silence. Mine is in Yellow state so I filter using it.
 
