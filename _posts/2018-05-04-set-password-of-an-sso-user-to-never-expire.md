@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Set password of an sso user to never expire
 ---
 In vCenter, users created on the vSphere SSO domain (vphere.local by default) all share the same password policy defined in **Single Sign-On** > **Configuration** > **Policies** > **Password Policy** with a default password expiration after 90 days. For "interactive" users it's probably a good thing to keep them on their game, but if you are using sso users for services (not that you should, that's what AD service accounts are for but you know...) their password will expire after 90 days and the service will break. _Note that you can change the password policy to "never expire" by setting it to 0 day._
@@ -40,4 +40,3 @@ Password was reset successfully for [srv-my-user]
 Enter password for administrator@vsphere.local:
 Password set to never expire for [srv-my-user]
 ```
-
