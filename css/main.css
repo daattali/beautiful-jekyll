@@ -7,8 +7,6 @@ layout: null
 /* --- General --- */
 
 body {
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
