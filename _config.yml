@@ -86,11 +86,11 @@ social-network-links:
 #  yelp: yourname
 
 # Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  google: false
-  linkedin: true
+# share-links-active:
+#   twitter: true
+#   facebook: true
+#   google: false
+#   linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -202,6 +202,13 @@ prose:
           element: "textarea"
           label: "Subtitle"
           placeholder: "A description of your post."
+          alterable: true
+      - name: "modified"
+        field:
+          element: "textarea"
+          label: "Modified Date"
+          help: "Enter date of post modification."
+          placeholder: "yyyy-mm-dd"
           alterable: true
       - name: "date"
         field:

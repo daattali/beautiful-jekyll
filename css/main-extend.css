@@ -1,4 +1,24 @@
-/* Borrow from ocram85/ocram85.github.io*/
+/* Inspired via ocram85/ocram85.github.io */
+
+/* ------ Overrides ------ */
+body {
+    margin: 0;
+    font-family: "Open Sans" "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 { font-weight: 400; }
+h2 { font-weight: 300; }
+h3 { font-weight: 300; }
+
+.intro-header .post-heading .post-subheading {
+   font-size: 20px;
+}
+.intro-header.big-img .page-heading,
+.intro-header.big-img .post-heading {
+  color: #363636;
+  text-shadow: 1px 1px 8px rgb(240,240,240);
+}
+
 /* ----- Card section ----- */
 a.project-link:link,
 a.project-link:visited {
@@ -41,11 +61,10 @@ a.project-link:hover {
 
 }
 
-/* ------------------------- */
+/* -------- Other -------- */
 
 .stack-color {
     color: #404040;
-
 }
 
 .spacer {
@@ -58,7 +77,6 @@ a.project-link:hover {
 .text-muted {
     color: #808080;
     font-size: 14px;
-
 }
 
 .hd-shadow {
@@ -79,14 +97,4 @@ a.project-link:hover {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 1px 1px 10px #bbb;
-
 }
-
-
-body {
-    margin: 0;
-    font-family: "Open Sans" "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-h1 { font-weight: 400; }
-h2 { font-weight: 300; }

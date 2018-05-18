@@ -5,26 +5,20 @@ subtitle: Explorer, Software Architect, Behavior Designer
 bigimg:
   - 'img/background-lines.png'
 use-site-title: true
-css: '/css/main-extend.css'
-
 ---
 
-<h1>bio</h1>
-
+<h2>bio</h2>
 Frank Chen develops world class products and leads engineering teams to transform how people use data. He multiplexes his time as a leader of engineering teams, a technical lead for systems / architecture, and a hands-on designer / developer. At Palantir, Frank has worked with customers in healthcare, finance, government, energy and consumer packaged goods to solve their hardest problems. At Amazon, Frank led a front-end team and infrastructure team to launch AWS WorkDocs, the first secure multi-platform service of its kind for enterprise customers. At Sandia National Labs, Frank researched visualization and analysis tools for very large datasets. He received a M.S. in Computer Science focused in Human-Computer Interaction from Stanford. Frank's thesis studied how the design / psychology of exergaming interventions might produce efficacious health outcomes. With the Stanford Prevention Research Center, Frank developed health interventions rooted in behavioral theory to create new behaviors through mobile phones. He prototyped early builds of Tiny Habits with BJ Fogg and worked in the Persuasive Technology Lab. He received a B.S. in Computer Science from UCLA. Frank researched networked systems and image processing with the Center for embedded Networked Systems. With the Rand Corporation, he built research systems to support group decision-making.
-
 <p class="text-muted">200 words</p>
 
----
+<hr>
 
 <h2>modus operandi</h2>
-
 I help people make better decisions by designing technologies that connect people to what they want to do. I seek to learn and to connect with purpose that positively influences our mind, body, and relationships.
 
----
+<hr>
 
 <h2>misc</h2>
-
 I am an avid traveler (at the end of 2017, I have visited 35 countries). I love the outdoors, running, and gymnastics. Ask me about nutrition (e.g. fast mimicking diets) and building furniture (in NYC).
 
 <!--
@@ -82,27 +76,29 @@ I am an avid traveler (at the end of 2017, I have visited 35 countries). I love 
     </div>
   </div>
 </div>
-
----
-
 !-->
 
+<hr>
+
+<h1>writing</h1>
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-
+	   <h3 class="post-title">{{ post.title }}</h2>
+    </a>
 	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
+	  <h4 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
 	  {% endif %}
-    </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Drafted {{ post.date | date: "%B %-d, %Y" }}. 
+      {% if page.modified-date %}
+        Updated {{ page.modified-date}}.
+      {% endif %}
     </p>
 
     <div class="post-entry-container">
