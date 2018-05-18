@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: ""
+title: "Frank Chen"
 
 # Short description of your site
-description: Frank Chen
+description: home
 
 # --- Navigation bar options --- #
 
@@ -99,7 +99,7 @@ url-pretty: "frankc.net"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "36961797"
 
 # Google Tag Manager ID
 #gtm: ""
