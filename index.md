@@ -1,9 +1,9 @@
 ---
 layout: page
-title: frank chen
+title: Frank Chen
 subtitle: Explorer, Software Architect, Behavior Designer
 bigimg:
-  - 'img/banner-run.jpg' # Remove subtitle
+  - 'img/background-lines.png'
 use-site-title: true
 css: '/css/main-extend.css'
 
@@ -11,21 +11,21 @@ css: '/css/main-extend.css'
 
 <h1>bio</h1>
 
-Frank Chen develops world class products and leads engineering teams to transform how people use data. He multiplexes his time as a leader of engineering teams, a tech lead of systems / architecture, or hands-on designer / developer. At Palantir, Frank has worked with customers in healthcare, finance, government, energy and consumer packaged goods to solve their hardest problems. At Amazon, Frank led a front-end team to launch AWS WorkDocs, the first multi-platform service of its kind for enterprise consumers. At Sandia National Labs, Frank researched visualization and analysis tools for very large datasets. He received a M.S. in Computer Science focused in Human-Computer Interaction from Stanford. Frank's thesis studied how the design / psychology of exergaming interventions might produce efficacious health outcomes. With the Stanford Prevention Research Center, Frank developed health interventions rooted in behavioral theory to create new behaviors through mobile phones. He prototyped early builds of Tiny Habits with BJ Fogg and worked in the Persuasive Technology Lab. He received a B.S. in Computer Science from UCLA. Frank researched networked systems and image processing with the Center for embedded Networked Systems. With the Rand Corporation, he built research systems to support group decision-making.
+Frank Chen develops world class products and leads engineering teams to transform how people use data. He multiplexes his time as a leader of engineering teams, a technical lead for systems / architecture, and a hands-on designer / developer. At Palantir, Frank has worked with customers in healthcare, finance, government, energy and consumer packaged goods to solve their hardest problems. At Amazon, Frank led a front-end team and infrastructure team to launch AWS WorkDocs, the first secure multi-platform service of its kind for enterprise customers. At Sandia National Labs, Frank researched visualization and analysis tools for very large datasets. He received a M.S. in Computer Science focused in Human-Computer Interaction from Stanford. Frank's thesis studied how the design / psychology of exergaming interventions might produce efficacious health outcomes. With the Stanford Prevention Research Center, Frank developed health interventions rooted in behavioral theory to create new behaviors through mobile phones. He prototyped early builds of Tiny Habits with BJ Fogg and worked in the Persuasive Technology Lab. He received a B.S. in Computer Science from UCLA. Frank researched networked systems and image processing with the Center for embedded Networked Systems. With the Rand Corporation, he built research systems to support group decision-making.
 
-<p class="text-muted">195 words</p>
+<p class="text-muted">200 words</p>
 
 ---
 
 <h2>modus operandi</h2>
 
-I learn how people use technologies and design new ways to connect them with what they want to do. I seek to better connect us with purpose in everyday activities to positively influence our mind, body, and relationships.
+I help people make better decisions by designing technologies that connect people to what they want to do. I seek to learn and to connect with purpose that positively influences our mind, body, and relationships.
 
 ---
 
 <h2>misc</h2>
 
-I actively look for adventures involving the outdoors, spicy food, and bold coffee. I stay sane with power naps, gymnastics strength training, and long distance running.
+I am an avid traveler (at the end of 2017, I have visited 35 countries). I love the outdoors, running, and gymnastics. Ask me about nutrition (e.g. fast mimicking diets) and building furniture (in NYC).
 
 <!--
 <div class="row text-center">
