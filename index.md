@@ -2,12 +2,14 @@
 layout: page
 title: frank chen
 subtitle: Explorer, Software Architect, Behavior Designer
+use-site-title: true
+css: '/css/main-extend.css'
+bigimg:
+  - 'img/background-dust.jpg'
 <!-- Hiding banner
 bigimg:
   - 'img/banner-run.jpg'
--->use-site-title: true
-css: '/css/main-extend.css'
-
+-->
 ---
 
 <h1>bio</h1>
