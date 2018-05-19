@@ -13,10 +13,29 @@ h3 { font-weight: 300; }
 .intro-header .post-heading .post-subheading {
    font-size: 20px;
 }
+
 .intro-header.big-img .page-heading,
 .intro-header.big-img .post-heading {
   color: #363636;
   text-shadow: 1px 1px 8px rgb(240,240,240);
+}
+
+/* ----- Search Bar -------*/
+.nav-search-link .nav-search-icon {
+  display: none;
+}
+
+.nav-search-link .nav-search-text {
+  display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-search-link .nav-search-icon {
+    display: inline;
+}
+
+.nav-search-link .nav-search-text {
+    display: none;
 }
 
 /* ----- Card section ----- */
@@ -24,13 +43,11 @@ a.project-link:link,
 a.project-link:visited {
     text-decoration: none;
     color: #404040;
-
 }
 
 a.project-link:hover {
     text-decoration: none;
     color: #0085a1;
-
 }
 
 .project-card {
@@ -40,25 +57,21 @@ a.project-link:hover {
     /* Need to fix horzontal alignment for grid system */
     float: none;
     margin: 0 auto 25px auto;
-
 }
 .project-card h3 {
     margin: 10px;
-
 }
 .project-card p.text-muted {
     /*padding: 0px;*/
     margin-top: 15px;
     margin-bottom: 10px;
     min-height: 5em;
-
 }
 
 .seperator {
     margin-top: 15px;
     margin-bottom: 10px;
     border-color: #aaa;
-
 }
 
 /* -------- Other -------- */
@@ -71,7 +84,6 @@ a.project-link:hover {
     height: 10px;
     padding: 0;
     margin: 5px;
-
 }
 
 .text-muted {
@@ -81,7 +93,6 @@ a.project-link:hover {
 
 .hd-shadow {
     text-shadow: 4px 4px 4px #aaa;
-
 }
 
 .post-preview-box {

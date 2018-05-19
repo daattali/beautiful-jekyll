@@ -17,12 +17,18 @@ baseurl: ""
 title: "Frank Chen"
 
 # Short description of your site
-description: home
+description: "A personal site with writing."
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
+  Home: ""
+  Writing: "writing"
+
+# --- Google custom search config --- #
+# search page name search -> /seach.md
+nav-search: "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -54,7 +60,6 @@ footer-img: "/img/background-dust.png"
 
 # --- Footer options --- #
 
-# Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Frank Chen
@@ -69,20 +74,21 @@ social-network-links:
   github: fxchen
   instagram: fxchen
   facebook: fxchen
-#  twitter: frankc
+  linkedin: fxchen
   rss: true
-#  reddit: yourname
-#  google-plus: +DeanAttali
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
+#  twitter: frankc
+#  reddit:
+#  google-plus:
+
+#  xing:
+#  stackoverflow:
+#  snapchat:
+#  youtube:
+#  spotify:
 #  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
+#  steam:
+#  twitch:
+#  yelp:
 
 # Select which share links to show in posts
 # share-links-active:
@@ -130,11 +136,12 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/New York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/writing/page:num/"
 
 kramdown:
   input: GFM
@@ -168,6 +175,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - TODO.md
   - Vagrantfile
 
 # prose.io config

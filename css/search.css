@@ -1,0 +1,34 @@
+#google-custom-search {
+  margin-top: 50px;
+}
+
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button,
+.gsc-selected-option-container {
+  box-sizing: content-box;
+  line-height: normal;
+}
+
+table tbody tr:hover {
+  background-color: unset;
+}
+
+
+table tr {
+  border-top: unset;
+}
+
+table tr th,
+table tr td {
+  border: unset;
+  padding:unset;
+  vertical-align: top;
+}
+
+.gsc-search-box:hover {
+  background-color: unset;
+  vertical-align: top;
+}
