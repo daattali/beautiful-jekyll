@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cài đặt Odoo11
+title: Cài đặt Odoo11 trên MacOS
 # subtile: Hãy viết code như một Pythonista
 image: /img/2018-03-27-odoo/biaOdoo.png
 tags: [Python, lap-trinh, programming-language, Odoo-11]
