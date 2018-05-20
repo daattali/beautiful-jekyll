@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Deploy Log Insight in Workstation
 ---
 If you want to run Log Insight in Workstation (most likely for a lab), you will realise that once you deployed the appliance, all the settings you configured in the wizard have been diregarded. Note that the following is not supported by VMware and should only be used for labs and such.
