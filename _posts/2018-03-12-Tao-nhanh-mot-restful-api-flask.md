@@ -162,3 +162,5 @@ Kết quả trả về:
   "text": "username"
 }
 ```
+
+sample source code: [flask-contacts-rest-api](https://github.com/quangvinh86/flask-contacts-rest-api)
