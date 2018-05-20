@@ -2,7 +2,7 @@
 layout: post
 title: Trả về 'none' hay 'empty' list trong Python
 # subtile: Hãy viết code như một Pythonista
-image: /img/2018-05-20-clean-code/clean-code.jpg
+image: /img/2018-05-20-clean-code/cleancode.jpg
 tags: [Python, lap-trinh, programming-language, Pythonista, Clean-Code]
 categories: [Dev-Python]
 date: 2018-05-20
@@ -27,14 +27,14 @@ for employee in employees:
 ```
 
 - Nếu không có bản ghi nào trong DB, db.get_employees() nên trả về cái gì ? None hay []
-Thường các lập trình viên sẽ trả lời: "kiểm tra None ở chỗ `employees`, cần gì quan tâm đến việc nó trả về cái gì. Vì python thì `None` hay `[]` đều là `False`"
+Thường các lập trình viên sẽ trả lời: "kiểm tra None ở `employees`, cần gì quan tâm đến việc nó trả về cái gì. Vì python thì `None` hay `[]` đều là `False`"
 
 
 ```Python
 
 db = EmployeesDB()
 employees = db.get_employees()
-if not employees:
+if employees:
     for employee in employees:
         # do something
 
