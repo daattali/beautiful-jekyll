@@ -25,7 +25,6 @@ ONBOOT=yes
 default 192.168.174.2
 ```
 
-- Change host name: ```vi /etc/HOSTNAME``` change the name accordingly
 - Set DNS servers: ```vi /etc/resolv.conf``` Change nameserver and search accordingly
 - Reboot the appliance
 
