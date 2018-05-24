@@ -37,12 +37,17 @@ Dockerfile text eol=lf
 *.t3d binary
 *.exe binary
 *.data binary
-*.ttf binary
 *.eof binary
-*.eot binary
 *.swf binary
 *.mov binary
 *.mp4 binary
 *.mp3 binary
 *.ogg binary
 *.flv binary
+
+# web font file types
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.svg binary
