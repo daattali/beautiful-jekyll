@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Certificates: Don''t use common name as identifier'
 ---
 I recently encountered a certificate issue while working on a project when the certificate was being rejected in a web browser. At first my certificate looked fine, the FQDN was in the common name field (CN) and I had a bunch of Subject Alternative Names (SAN) as well. When I accessed the resource on one of the SANs it would work fine, but the certificate would be in error whenever I used the FQDN (CN).
