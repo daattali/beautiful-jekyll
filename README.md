@@ -188,6 +188,7 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [ja2-stracciatella.github.io](http://ja2-stracciatella.github.io) | Jagged Alliance 2 Stracciatella |
 | [ddocent.com](http://ddocent.com/) | RADSeq Bioinformatics and Beyond |
 | [guitarlessons.org](https://www.guitarlessons.org/) | Free online guitar lessons for all |
+| [DAR.WIN](https://dar.win/) | Machine learning software for e-commerce |
 
 ### Personal websites
 
@@ -203,7 +204,6 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [anudit.in](http://www.anudit.in/) | Anudit Verma | Engineering student |
 | [sharepointoscar.github.io](http://sharepointoscar.github.io) | Oscar Medina | Independent Hacker |
 | [ocram85.com](https://ocram85.com) | Marco Blessing | A personal blog about PowerShell and automation |
-
 
 ## Advanced: Local development using Docker
 
