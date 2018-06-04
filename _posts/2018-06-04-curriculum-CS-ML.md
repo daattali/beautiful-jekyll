@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Our Curriculum, Part 1: CS/ML
+title: Our Curriculum, Part 1
+subtitle: Computer Science & Machine Learning
 ---
 
 This is the first in what will hopefully become a series of posts on our curriculum for the Master of Data Science (MDS) program at UBC. Our program is structured as six four-week blocks, each containing four mini-courses, for a total of 24 mini-courses. Each of these mini-courses is about one third the size of a regular university course. The image below summarizes our current schedule:
 
-![](img/schedule.png)
+![](/img/blog/schedule.png)
 
 (For more details on each of these courses, see [here](https://ubc-mds.github.io/descriptions/).)
 
