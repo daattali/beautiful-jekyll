@@ -18,6 +18,8 @@ subtitle: Information for prospective MDS capstone partners
 
 - The partner must come to an agreement about data and product sharing, licensing and intellectual product rights. The MDS program will support agreements that benefit both the students and the partners. Please note that it will be key for the students to share some aspect of the project in their portfolios/curriculum vitae during their job search following graduation from the MDS program.
 
+- The partner consents to the organization's name and project title being listed on the UBC MDS website (please let us know if this is a concern).
+
 - Preference will be given to organizations located in Canada, and especially in the Vancouver area.
 
 ## Benefits to Capstone Partners
