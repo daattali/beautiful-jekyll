@@ -4,8 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://gitstua.github.io"
-baseurl: "https://gitstua.github.io"
+url: "https://qwww.stuarteggerton.com"
+baseurl: "https://www.stuarteggerton.com"
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -14,10 +14,10 @@ baseurl: "https://gitstua.github.io"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: StuartEggerton.com
+title: www.stuarteggerton.com
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: The journey of Stuart Eggerton to the cloud and beyond
 
 # --- Navigation bar options --- #
 
@@ -28,7 +28,7 @@ navbar-links:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+  Author's home: "https://www.stuarteggerton.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -55,7 +55,7 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
+ navbar-img: "/img/sky-1426128_1280.jpg"
 # footer-img: "/img/bgimage.png"
 # page-img: "/img/bgimage.png"
 
@@ -99,7 +99,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "stuarteggerton.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "www.stuarteggerton.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
