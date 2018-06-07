@@ -9,21 +9,21 @@ After the host was installed in its new rack, when we powered it back on some da
 
 I looked into the **vmkernel.log** of the host and found a lot of these events:
 
-_2018-06-07T08:02:43.154Z cpu44:32881)WARNING: NMP: nmpDeviceRequestFastDeviceProbe:237: NMP device "naa.60000970000XXXXXXXXXXXXXX0363941" state in doubt; requested fast path state update...
+_2018-06-07T08:02:43.154Z cpu44:32881)WARNING: NMP: nmpDeviceRequestFastDeviceProbe:237: NMP device "naa.60000970000XXXXXXXXXXXXXX0363941" state in doubt; requested fast path state update..._
 
-2018-06-07T08:02:43.154Z cpu44:32881)ScsiDeviceIO: 2369: Cmd(0x412e80405cc0) 0x28, CmdSN 0xbf from world 34443 to dev "naa.60000970000XXXXXXXXXXXXXX0363941" failed **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0.
+_2018-06-07T08:02:43.154Z cpu44:32881)ScsiDeviceIO: 2369: Cmd(0x412e80405cc0) 0x28, CmdSN 0xbf from world 34443 to dev "naa.60000970000XXXXXXXXXXXXXX0363941" failed **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0._
 
-2018-06-07T08:02:43.404Z cpu44:32881)ScsiDeviceIO: 2369: Cmd(0x412e8043ca40) 0x28, CmdSN 0xc1 from world 34443 to dev "naa.60000970000XXXXXXXXXXXXXX0363941" failed **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0.
+_2018-06-07T08:02:43.404Z cpu44:32881)ScsiDeviceIO: 2369: Cmd(0x412e8043ca40) 0x28, CmdSN 0xc1 from world 34443 to dev "naa.60000970000XXXXXXXXXXXXXX0363941" failed **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0._
 
-2018-06-07T08:02:43.418Z cpu44:32881)NMP: nmpThrottleLogForDevice:2458: Cmd 0x28 (0x412e845e0400, 34443) to dev "naa.60000970000XXXXXXXXXXXXXX0363941" on path "vmhba4:C0:T2:L13" Failed: **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0. Act:EVAL
+_2018-06-07T08:02:43.418Z cpu44:32881)NMP: nmpThrottleLogForDevice:2458: Cmd 0x28 (0x412e845e0400, 34443) to dev "naa.60000970000XXXXXXXXXXXXXX0363941" on path "vmhba4:C0:T2:L13" Failed: **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0. Act:EVAL_
 
-2018-06-07T08:02:43.418Z cpu44:32881)ScsiDeviceIO: 2369: Cmd(0x412e845e0400) 0x28, CmdSN 0xc3 from world 34443 to dev "naa.60000970000XXXXXXXXXXXXXX0363941" failed **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0.
+_2018-06-07T08:02:43.418Z cpu44:32881)ScsiDeviceIO: 2369: Cmd(0x412e845e0400) 0x28, CmdSN 0xc3 from world 34443 to dev "naa.60000970000XXXXXXXXXXXXXX0363941" failed **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0._
 
-2018-06-07T08:02:43.494Z cpu44:32881)NMP: nmpThrottleLogForDevice:2458: Cmd 0x28 (0x412e842d9840, 34443) to dev "naa.60000970000XXXXXXXXXXXXXX0363941" on path "vmhba4:C0:T2:L4" Failed: **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0. Act:EVAL
+_2018-06-07T08:02:43.494Z cpu44:32881)NMP: nmpThrottleLogForDevice:2458: Cmd 0x28 (0x412e842d9840, 34443) to dev "naa.60000970000XXXXXXXXXXXXXX0363941" on path "vmhba4:C0:T2:L4" Failed: **H:0x7 D:0x0 P:0x0** Possible sense data: 0x0 0x0 0x0. Act:EVAL_
 
-2018-06-07T08:02:43.494Z cpu44:32881)WARNING: NMP: nmpDeviceRequestFastDeviceProbe:237: NMP device "naa.60000970000XXXXXXXXXXXXXX0363941" state in doubt; requested fast path state update...
+_2018-06-07T08:02:43.494Z cpu44:32881)WARNING: NMP: nmpDeviceRequestFastDeviceProbe:237: NMP device "naa.60000970000XXXXXXXXXXXXXX0363941" state in doubt; requested fast path state update..._
 
-2018-06-07T08:02:43.886Z cpu44:32881)lpfc: lpfc_scsi_cmd_iocb_cmpl:2057: 0:(0):3271: FCP cmd x28 failed <4/99> sid xe20a00, did x7002ef, oxid xffff Local Reason x1d Returning Host Error_
+_2018-06-07T08:02:43.886Z cpu44:32881)lpfc: lpfc_scsi_cmd_iocb_cmpl:2057: 0:(0):3271: FCP cmd x28 failed <4/99> sid xe20a00, did x7002ef, oxid xffff Local Reason x1d Returning Host Error_
 
 As you can see there are a lot of these **H:0x7 D:0x0 P:0x0** scsi sense codes which I never envountered in the past.
 
