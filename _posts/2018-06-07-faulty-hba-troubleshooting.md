@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Faulty HBA troubleshooting
 ---
 After moving an ESXi host to another rack, I encountered a really strange behaviour. The hosts are Fujistsu servers and are connected to an EMC FC SAN. 
