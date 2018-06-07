@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: How Azure makes your life easier
 ---
 
