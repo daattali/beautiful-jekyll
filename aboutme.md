@@ -1,16 +1,20 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: What about me?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Stuart Eggerton. I have the following qualities:
 
-- I rock a great mustache
+- I love to break things to understand them
 - I'm extremely loyal to my family
+- I am motivated by working with and coordinating others to deliver things that matter
+- I like Agile
+- I like Dev
+- I like Ops
+- I like Security
+- I believe the cloud offers great oppertunity to improve business and human outcomes
 
 What else do you need?
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
