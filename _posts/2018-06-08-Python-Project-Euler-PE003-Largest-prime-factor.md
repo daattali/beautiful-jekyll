@@ -7,6 +7,7 @@ tags: [Python, Project-Euler]
 categories: [Project-Euler]
 date: 2018-06-08
 ---
+Tìm ước số nguyên tố lớn nhất của 600851475143
 
 ## Problem 3: Largest prime factor
 
