@@ -11,6 +11,7 @@ tags:
   - devops
   - microsoft
 published: true
+date: '2018-06-08'
 ---
 ##So, funny story...
 
