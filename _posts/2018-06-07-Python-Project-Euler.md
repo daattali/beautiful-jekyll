@@ -2,11 +2,22 @@
 layout: post
 title: Project-euler index
 # subtile: Hãy viết code như một Pythonista
-image: https://projecteuler.net/profile/vinhnq.png
+image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
 date: 2018-06-07
 ---
+
+[Project Euler](https://projecteuler.net/) là một loạt các bài toán liên quan đến ứng dụng toán học, tư duy logic và lập trình. 
+
+Trong nhiều trường hợp, bạn có thể tạo ra một giải pháp "trâu bò" để ra được kết quả. 
+
+Nếu bạn thực sự muốn tạo ra các giải pháp tốt, tối ưu về giải thuật và thời gian chạy nhanh chóng, bạn cần nghiên cứu một số giải thuật toán học đằng sau các vấn đề.
+
+Việc tối ưu được một bài toán từ PE sẽ giúp người thực hiện có một "bước tiến" trong tư duy logic và ứng dụng ngôn ngữ lập trình.
+
+
+Cá nhân tôi thích "toán học" và tôi lựa chọn Python để giải quyết các bài toán trên PE. 
 
 Danh sách các bài viết phân tích chiến thuật giải các bài toán trên https://projecteuler.net/
 
@@ -18,7 +29,7 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     Index
                 </td>
                 <td>
-                    Name
+                    Name (and my explain)
                 </td>
                 <td>
                     Result
@@ -51,7 +62,7 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
     </table>
 </div>
 
-P/S: Code Python run on myMacOS: (for Benchmark timings)
+P/S: Code Python run on my MacOS: (for Benchmark timings)
 
 **MacBook Pro** (13-inch, 2016, Two Thunderbolt 3 ports)
 
