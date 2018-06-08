@@ -10,7 +10,7 @@ gh-badge:
 tags:
   - devops
   - microsoft
-published: false
+published: true
 ---
 ##So, funny story...
 
