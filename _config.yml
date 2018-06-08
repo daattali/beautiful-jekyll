@@ -118,12 +118,15 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
-# --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+# --- Comments --- #
 
-# Use Facebook Comments Plugin by assigning Facebook comment app id here.
+# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
+# disqus: ""
+
+# To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
+
+# --- Misc --- #
 
 # Facebook App ID
 # fb_app_id: ""
