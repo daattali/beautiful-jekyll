@@ -2,7 +2,7 @@
 layout: post
 title: Project-euler index
 # subtile: Hãy viết code như một Pythonista
-image: /img/2018-06-08-ProjectEuler/PE.png
+image: https://projecteuler.net/profile/vinhnq.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
 date: 2018-06-07
