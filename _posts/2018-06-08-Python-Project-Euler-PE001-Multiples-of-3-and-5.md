@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ProjectEuler-001 Multiples of 3 and 5
+title: PE-001 Multiples of 3 and 5
 # subtile: Hãy viết code như một Pythonista
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
@@ -8,17 +8,17 @@ categories: [Project-Euler]
 date: 2018-06-08
 ---
 
-# Problem 1: Multiples of 3 and 5
+## Problem 1: Multiples of 3 and 5
 >If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. 
 >Find the sum of all the multiples of 3 or 5 below 1000.
 
 
-# Đề bài
+## Đề bài
 Liệt kê các số tự nhiên nhỏ hơn 10 mà chia hết cho 3 hoặc 5 ta thu được danh sách: 3, 5, 6, 9.
 Tổng của chúng là 23.
 Hãy tính tổng của các số chia hết cho 3 hoặc 5 nhỏ hơn 1000.
 
-# Cách giải "trâu bò"
+## Cách giải "trâu bò"
 Đọc đầu bài ta có thể tư duy ra giải một cách "nhanh nhất" đó là tạo một vòng lặp từ 3 đến 999, sau đó tìm ra các số chia hết cho 3 hoặc 5, cộng dồn lại là xong.
 
 Cách làm này không hề sai, có điều nếu đích đến tăng lên thành 1 triệu, 2 triệu,.... thì thời gian chạy bài toán sẽ tăng lên khá nhiều.
@@ -44,7 +44,7 @@ def multiples_3_or_5_v2():
 
 ```
 
->Sau nhiều lần chạy bài toán, thời gian chạy v2 luôn nhỏ hơn v1.
+
 
 
 ```Python
@@ -121,11 +121,11 @@ multiples_3_or_5_v2 result:
 elapsed time: 0.000150918960571s
 Nguyens-MacBook-Pro:PE-001 vinh.nguyenquang$ 
 ```
-
+>Sau nhiều lần chạy bài toán, thời gian chạy v2 luôn nhỏ hơn v1.
 > Liệu đây có phải lý do mà các "pythonista" luôn đề nghị mọi người dùng cách sử dụng tối đa list-comprehension
 
 
-# Áp dụng toán học vào giải bài toán PE-001:
+## Áp dụng toán học vào giải bài toán PE-001:
 Độ phức tạp của bài toán nằm ở đoạn so sánh và vòng lặp:
 ```if not number % 3 or not number % 5:```
 Đề thời gian giải bài toán nhanh hơn, ta nên tìm cách giảm số lượt so sánh và giảm số lượng phần tử trong vòng lặp.
