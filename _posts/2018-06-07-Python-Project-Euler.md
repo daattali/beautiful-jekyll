@@ -75,6 +75,57 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     1.31130218506e-05s
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=3">Problem 003</a>
+                </td>
+                <td>
+                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                </td>
+                <td>
+                    4613732
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
+                </td>
+                <td>
+                    1.31130218506e-05s
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=3">Problem 003</a>
+                </td>
+                <td>
+                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                </td>
+                <td>
+                    4613732
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
+                </td>
+                <td>
+                    0.0238881111145s
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=3">Problem 003</a>
+                </td>
+                <td>
+                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                </td>
+                <td>
+                    4613732
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
+                </td>
+                <td>
+                    1.31130218506e-05s
+                </td>
+            </tr> -->
         </tbody>
     </table>
 </div>
