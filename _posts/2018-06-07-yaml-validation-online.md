@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: YAML validation online
 ---
 ## An online YAML validator
