@@ -32,16 +32,16 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
             </tr>
             <tr>
                 <td>
-                    [Problem 001](https://projecteuler.net/problem=1)
+                    <a href="https://projecteuler.net/problem=1">Problem 001</a>
                 </td>
                 <td>
-                    [Multiples of 3 and 5](/2018-06-08-Python-Project-Euler-PE001-Multiples-of-3-and-5/)
+                    <a href="/2018-06-08-Python-Project-Euler-PE001-Multiples-of-3-and-5/">Multiples of 3 and 5</a>
                 </td>
                 <td>
                     233168
                 </td>
                 <td>
-                    [Code Python](https://github.com/quangvinh86/python-projecteuler/tree/master/PE-001)
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-001">Code Python</a>
                 </td>
                 <td>
                     1.00135803223e-05s
