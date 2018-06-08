@@ -104,13 +104,13 @@ Many personalization settings in `_config.yml`, such as setting your name and si
 
 ### Allowing users to leave comments
 
-If you want to enable comments on your site, Beautiful Jekyll supports the [Disqus](https://disqus.com/) comments plugin and [Facebook](https://developers.facebook.com/docs/plugins/comments).
+If you want to enable comments on your site, Beautiful Jekyll supports either the [Disqus](https://disqus.com/) comments plugin or [Facebook](https://developers.facebook.com/docs/plugins/comments) comments.
 
-To use Disqus, simply sign up to Disqus and add your Disqus shortname to the `disqus` parameter in the `_config.yml`.
+To use Disqus, simply sign up to [Disqus](https://disqus.com/) and add your Disqus shortname to the `disqus` parameter in the `_config.yml` file.
 
-To use Facebook comments plugin, go surf [Facebook developers](https://developers.facebook.com/docs/apps/register) and create an app, you can find `App ID` in your [Facebook apps](https://developers.facebook.com/apps/?locale=en_US). Simply add this id to the `fb_comment_id` parameter in the `_config.yml`.
+To use Facebook comments, create a Facebook app using [Facebook developers](https://developers.facebook.com/docs/apps/register), and add the Facebook App ID to the `fb_comment_id` parameter in `_config.yml`.
 
-If the `disqus` or `fb_comment_id` are set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
+If either `disqus` or `fb_comment_id` parameters are set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
 
 ### Adding Google Analytics to track page views
 
