@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ProjectEuler-001: Multiples of 3 and 5
+title: ProjectEuler-001 Multiples of 3 and 5
 # subtile: Hãy viết code như một Pythonista
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
