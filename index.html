@@ -5,6 +5,35 @@ subtitle: This is where I document things I have been doing to aid my memory and
 use-site-title: true
 ---
 
+
+
+
+<!-- Typed.js --> 
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+<script>
+  $(function(){
+    $(".typed").typed({
+      strings: ["DevOps.","Family.", "VSTS.", "Kids Sport.","Azure."],
+      typeSpeed: 100,
+      loop: true,
+      backDelay: 1000
+    });
+  });
+</script>
+
+<div class="row">
+  <div class="col-sm-12">
+      <div class="text-center">
+          <h1>Stu is thinking about <span class="typed" style="color:#a50509";></span></h1>
+      </div>
+  </div>
+</div>
+
+
+<hr />
+
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
