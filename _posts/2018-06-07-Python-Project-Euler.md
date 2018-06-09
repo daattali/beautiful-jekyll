@@ -103,7 +103,7 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     906609
                 </td>
                 <td>
-                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-004">Code Python</a>
                 </td>
                 <td>
                     0.0238881111145s
