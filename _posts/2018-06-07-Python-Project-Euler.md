@@ -83,7 +83,7 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
                 </td>
                 <td>
-                    4613732
+                    6857
                 </td>
                 <td>
                     <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
@@ -94,13 +94,13 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
             </tr>
             <tr>
                 <td>
-                    <a href="https://projecteuler.net/problem=3">Problem 003</a>
+                    <a href="https://projecteuler.net/problem=4">Problem 004</a>
                 </td>
                 <td>
-                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                    <a href="2018-06-09-Python-Project-Euler-PE004-Largest-palindrome-product ">Largest-palindrome-product</a>
                 </td>
                 <td>
-                    4613732
+                    906609
                 </td>
                 <td>
                     <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
@@ -109,6 +109,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     0.0238881111145s
                 </td>
             </tr>
+            <!-- <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=4">Problem 004</a>
+                </td>
+                <td>
+                    <a href="/2018-06-09-Python-Project-Euler-PE004-Largest-palindrome-product/">Largest-prime-factor</a>
+                </td>
+                <td>
+                    4613732
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-004">Code Python</a>
+                </td>
+                <td>
+                    0.00604486465454s
+                </td>
+            </tr> -->
             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
