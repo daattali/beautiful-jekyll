@@ -8,6 +8,8 @@ categories: [Project-Euler]
 date: 2018-06-07
 ---
 
+
+
 [Project Euler](https://projecteuler.net/) là một loạt các bài toán liên quan đến ứng dụng toán học, tư duy logic và lập trình. 
 
 Trong nhiều trường hợp, bạn có thể tạo ra một giải pháp "trâu bò" để ra được kết quả. 
@@ -145,7 +147,24 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     3.981590270996094e-05s
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=7">Problem 007</a>
+                </td>
+                <td>
+                    <a href="/2018-06-10-Python-Project-Euler-PE007-10001st-prime/">10001st-prime</a>
+                </td>
+                <td>
+                    104743
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-007">Code Python</a>
+                </td>
+                <td>
+                    0.188479185104s
+                </td>
+            </tr>
+             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
                 </td>
