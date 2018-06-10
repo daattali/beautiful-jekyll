@@ -128,23 +128,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                      4.100799560546875e-05s
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td>
-                    <a href="https://projecteuler.net/problem=3">Problem 003</a>
+                    <a href="https://projecteuler.net/problem=6">Problem 006</a>
                 </td>
                 <td>
-                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                    <a href="/2018-06-10-Python-Project-Euler-PE006-Sum-square-difference">Sum-square-difference</a>
                 </td>
                 <td>
-                    4613732
+                    25164150
                 </td>
                 <td>
-                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-006">Code Python</a>
                 </td>
                 <td>
-                    1.31130218506e-05s
+                    3.981590270996094e-05s
                 </td>
-            </tr> -->
+            </tr>
             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
