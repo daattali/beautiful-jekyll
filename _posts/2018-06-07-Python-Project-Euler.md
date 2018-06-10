@@ -19,6 +19,8 @@ Việc tối ưu được một bài toán từ PE sẽ giúp người thực hi
 
 Cá nhân tôi thích "toán học" và tôi lựa chọn Python để giải quyết các bài toán trên PE. 
 
+Về code Python, tôi sẽ thực hiện tối đa "Clean code" và code theo đúng chuẩn PEP8.
+
 Danh sách các bài viết phân tích chiến thuật giải các bài toán trên https://projecteuler.net/
 
 <div class="table-responsive">
@@ -106,24 +108,41 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-004">Code Python</a>
                 </td>
                 <td>
-                    0.0238881111145s
+                    0.00604486465454s
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td>
-                    <a href="https://projecteuler.net/problem=4">Problem 004</a>
+                    <a href="https://projecteuler.net/problem=5">Problem 005</a>
                 </td>
                 <td>
-                    <a href="/2018-06-09-Python-Project-Euler-PE004-Largest-palindrome-product/">Largest-prime-factor</a>
+                    <a href="2018-06-10-Python-Project-Euler-PE005-Smallest-multiple ">Smallest-multiple</a>
                 </td>
                 <td>
                     4613732
                 </td>
                 <td>
-                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-004">Code Python</a>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-005">Code Python</a>
                 </td>
                 <td>
-                    0.00604486465454s
+                     4.100799560546875e-05s
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=3">Problem 003</a>
+                </td>
+                <td>
+                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                </td>
+                <td>
+                    4613732
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-003">Code Python</a>
+                </td>
+                <td>
+                    1.31130218506e-05s
                 </td>
             </tr> -->
             <!-- <tr>
