@@ -5,7 +5,7 @@ title: PE-005 Smallest multiple
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
-date: 2018-06-09
+date: 2018-06-10
 ---
 Tìm bội số chung nhỏ nhất của các số từ 1 - 20.
 
