@@ -2,9 +2,9 @@
 layout: post
 title: Số nguyên tố trong lập trình
 # subtile: Hãy viết code như một Pythonista
-image: /img/2018-06-08-ProjectEuler/PE.png
-tags: [Python, Project-Euler]
-categories: [Project-Euler]
+image: /img/2018-06-06-Prime/prime_numbers.jpg
+tags: [Python, Math-fun-facts]
+categories: [Math-fun-facts]
 date: 2018-06-10
 ---
 
