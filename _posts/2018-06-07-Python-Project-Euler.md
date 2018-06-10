@@ -164,7 +164,24 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     0.188479185104s
                 </td>
             </tr>
-             <!-- <tr>
+             <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=8">Problem 008</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-10-Python-Project-Euler-PE008-Largest-product-in-a-series/">Largest-product-in-a-series</a>
+                </td>
+                <td>
+                    23514624000
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-008">Code Python</a>
+                </td>
+                <td>
+                    0.0036547183990478516s
+                </td>
+            </tr>
+            <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
                 </td>
