@@ -5,7 +5,7 @@ title: PE-007 10001st prime
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
-date: 2018-06-09
+date: 2018-06-10
 ---
 Tìm số nguyên tố thứ 10001?
 

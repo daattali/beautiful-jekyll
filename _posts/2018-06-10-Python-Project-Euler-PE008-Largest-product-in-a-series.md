@@ -5,7 +5,7 @@ title: PE-008 Largest product in a series
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
-date: 2018-06-09
+date: 2018-06-10
 ---
 Tìm tích của 13 số liên tiếp lớn nhất.
 
