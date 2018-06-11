@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: How Azure makes your life easier
 bigimg: /img/path.jpg
 tags:
