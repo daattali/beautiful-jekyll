@@ -181,6 +181,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     0.0036547183990478516s
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=9">Problem 009</a>
+                </td>
+                <td>
+                    <a href="/2018-06-11-Python-Project-Euler-PE009-Pythagorean-triplets/">Pythagorean-triplets</a>
+                </td>
+                <td>
+                    4613732
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-009">Code Python</a>
+                </td>
+                <td>
+                    0.02037191390991211s
+                </td>
+            </tr>
             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
