@@ -186,7 +186,7 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     <a href="https://projecteuler.net/problem=9">Problem 009</a>
                 </td>
                 <td>
-                    <a href="/2018-06-11-Python-Project-Euler-PE009-Pythagorean-triplets/">Pythagorean-triplets</a>
+                    <a href="https://quangvinh86.github.io/2018-06-11-Python-Project-Euler-PE009-Pythagorean-triplets/">Pythagorean-triplets</a>
                 </td>
                 <td>
                     4613732
@@ -198,12 +198,29 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     0.02037191390991211s
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=10">Problem 010</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-12-Python-Project-Euler-PE010-Summation-of-primes/">Summation-of-primes</a>
+                </td>
+                <td>
+                    142913828922
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-010">Code Python</a>
+                </td>
+                <td>
+                    6.484667062759399s
+                </td>
+            </tr>
             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
                 </td>
                 <td>
-                    <a href="/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
+                    <a href="https://quangvinh86.github.io/2018-06-08-Python-Project-Euler-PE003-Largest-prime-factor/">Largest-prime-factor</a>
                 </td>
                 <td>
                     4613732
