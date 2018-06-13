@@ -688,6 +688,9 @@ td.gutter pre {
 .highlight > pre {
   padding: 0;
 }
+.highlight > pre.highlight {
+  padding: 9.5px;
+}
 td.code pre {
   border-width: 0 0 0 2px;
   border-style: solid;
