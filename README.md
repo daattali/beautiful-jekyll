@@ -192,7 +192,8 @@ Want your website featured here? [Contact me](http://deanattali.com/aboutme#cont
 | [ja2-stracciatella.github.io](http://ja2-stracciatella.github.io) | Jagged Alliance 2 Stracciatella |
 | [ddocent.com](http://ddocent.com/) | RADSeq Bioinformatics and Beyond |
 | [guitarlessons.org](https://www.guitarlessons.org/) | Free online guitar lessons for all |
-| [DAR.WIN](https://dar.win/) | Machine learning software for e-commerce |
+| [terremotocentroitalia.info](https://www.terremotocentroitalia.info/) | Information about the 2016 Italy earthquake |
+
 
 ### Personal websites
 
