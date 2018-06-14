@@ -215,6 +215,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     6.484667062759399s
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=11">Problem 011</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-12-Python-Project-Euler-PE011-Largest-product-in-a-grid/">Largest-product-in-a-grid</a>
+                </td>
+                <td>
+                    70600674
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-011">Code Python</a>
+                </td>
+                <td>
+                    0.002034902572631836s
+                </td>
+            </tr>
             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
