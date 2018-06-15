@@ -232,7 +232,24 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     0.002034902572631836s
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=3">Problem 012</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-14-Python-Project-Euler-PE012-Highly-divisible-triangular-number/">Highly-divisible-triangular-number</a>
+                </td>
+                <td>
+                    76576500
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-012">Code Python</a>
+                </td>
+                <td>
+                    3.9072110652923584s
+                </td>
+            </tr>
+             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
                 </td>
