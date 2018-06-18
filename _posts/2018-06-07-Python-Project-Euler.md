@@ -249,6 +249,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     3.9072110652923584s
                 </td>
             </tr>
+             <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=13">Problem 013</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-18-Python-Project-Euler-PE013-Large-sum">Large-sum</a>
+                </td>
+                <td>
+                    5537376230
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-013">Code Python</a>
+                </td>
+                <td>
+                    9.775161743164062e-06s
+                </td>
+            </tr>
              <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
