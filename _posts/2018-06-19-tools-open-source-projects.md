@@ -2,7 +2,7 @@
 layout: post
 title: Tools for your social open source project
 subtitle: Best tools witch you should know before you are starting a social open source project.
-bigimg: /img/opensource.jpg
+bigimg: /img/social.jpg
 tags: [opensource, code, social]
 ---
 
