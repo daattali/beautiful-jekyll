@@ -14,6 +14,8 @@ Communication in open source project is most important things. You don’t need 
 ### GitHub
 Github is most famous service to maintain open source projects, but if you decide to use another - no problem. Please remember about correct licenses and licenses tools and libraries which you will use into the project. 
 
+Please check [slides.com](https://slides.com/dominikwronski/foss-license-overview) at [@DominikWro](https://github.com/DominikWro)
+
 ### Trello or any simple “task manager”
 Please remember about task manager. It makes development process simple and more clarified.  Developers, designers and rest of partners have a simple information what is todo, what is in progress, and who work on the specified task - it’s part of communication process.  
 
@@ -29,6 +31,8 @@ All project in nowadays needs fan page in Facebook. Facebook Page application he
 ### Heroku
 The huge part of open source projects needs hosting. The best situation when hosting is easy to maintain and no need DevOps. My recommendation is Heroku, it’s free, simple, clarify UI and has nice integration with Github. 
 
-### Buy me coffee, zrzutka.pl or any other confounding 
+### Buy me a coffee, zrzutka.pl or any other confounding service
 If you need some money to provide your project please use this tools. Nothing else :D People who believe the intention of your project gives you some money. 
 
+
+[Buy me a coffee](https://www.buymeacoffee.com/rafalgawlik)
