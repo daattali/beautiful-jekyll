@@ -19,27 +19,31 @@ Nếu bạn thực sự muốn tạo ra các giải pháp tốt, tối ưu về 
 Việc tối ưu được một bài toán từ PE sẽ giúp người thực hiện có một "bước tiến" trong tư duy logic và ứng dụng ngôn ngữ lập trình.
 
 
-Cá nhân tôi thích "toán học" và tôi lựa chọn Python để giải quyết các bài toán trên PE. 
+Cá nhân tôi thích "toán học" (mặc dù không giỏi toán) và tôi lựa chọn Python để giải quyết các bài toán trên PE.
 
-Về code Python, tôi sẽ thực hiện tối đa "Clean code" và code theo đúng chuẩn PEP8.
+Tại sao lại là Python mà không phải C++/C# hay Java? 
 
-Danh sách các bài viết phân tích chiến thuật giải các bài toán trên https://projecteuler.net/
+Vì Python là ngôn ngữ lập trình đưa tôi đến với Pymi.vn và projecteuler.net
+
+Về code Python, tôi sẽ thực hiện code theo đúng chuẩn PEP8 (tối đa).
+
+Danh sách các bài viết phân tích chiến thuật giải các bài toán trên https://projecteuler.net/ (Mục tiêu đặt ra là làm hết page-1, liên tục cập nhật ít nhất 1 ngày/1 bài)
 
 <div class="table-responsive">
     <table  class="table table-striped table-bordered table-hover table-condensed">
         <tbody>
             <tr>
                 <td>
-                    Index
+                    Số thứ tự
                 </td>
                 <td>
-                    Name (and my explain)
+                    Giải thích
                 </td>
                 <td>
-                    Result
+                    Kết quả chạy
                 </td>
                 <td>
-                    Code Python
+                    Code Python & giải thích
                 </td>
                 <td>
                     Benchmark timings
@@ -266,7 +270,41 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     9.775161743164062e-06s
                 </td>
             </tr>
-             <!-- <tr>
+             <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=14">Problem 014</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-18-Python-Project-Euler-PE014-Longest-Collatz-sequence">Longest-Collatz-sequence</a>
+                </td>
+                <td>
+                    837799
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-014">Code Python</a>
+                </td>
+                <td>
+                    1.7523188591003418s
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=16">Problem 016</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-19-Python-Project-Euler-PE016-Power-digit-sum">Power-digit-sum</a>
+                </td>
+                <td>
+                    1366
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-016">Code Python</a>
+                </td>
+                <td>
+                    0.00020003318786621094s
+                </td>
+            </tr>
+            <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
                 </td>
@@ -296,3 +334,5 @@ P/S: Code Python run on my MacOS: (for Benchmark timings)
 **Memory** 8 GB 1867 MHz LPDDR3
 
 ![https://projecteuler.net/profile/vinhnq.png](https://projecteuler.net/profile/vinhnq.png)
+
+"Gạch đá" các loại có thể ném vào issue hoặc inbox của tôi :)
