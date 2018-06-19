@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle:
-bigimg: /img/tatry_way.jpg
+bigimg: /img/aboutme.jpg
 ---
 
 My name is Rafał Gawlik and this is some information about me:
