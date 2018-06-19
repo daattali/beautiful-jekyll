@@ -32,3 +32,5 @@ The huge part of open source projects needs hosting. The best situation when hos
 ### Buy me a coffee, zrzutka.pl or any other confounding service
 If you need some money to provide your project please use this tools. Nothing else :D People who believe the intention of your project gives you some money. 
 
+
+[Buy me a coffee](https://www.buymeacoffee.com/rafalgawlik)
