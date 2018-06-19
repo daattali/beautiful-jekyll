@@ -5,7 +5,7 @@ title: PE-006 Sum square difference
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
-date: 2018-06-09
+date: 2018-06-10
 ---
 Tính hiệu của bình phương của tổng các số tự nhiên và tổng bình phương của các số đó.
 
