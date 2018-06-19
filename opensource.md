@@ -2,7 +2,7 @@
 layout: page
 title: Open Source 
 subtitle: List of my open source projects
-bigimg: /img/dev_1.jpg
+bigimg: /img/opensource.jpg
 ---
 
 
