@@ -6,7 +6,7 @@ bigimg: /img/social.jpg
 tags: [opensource, code, social]
 ---
 
-Some people dream of creating useful and required the app. The best when app solves any social problem - communication in the city, air quality, ecology, poverty or others. I prepared for you tools pack which help you release your plan. Some tools can be trivial but from my perspective, a lot of people forgot about this and project fail with reason bed setup. 
+Some people dream of creating useful an app. The best when app solves some social problem - communication in the city, air quality, ecology, poverty or others. I prepared for you tools pack which help you release your plan. Some tools can be trivial but from my perspective, a lot of people forgot this and project fail with a bad setup as a reason.
 
 ### Slack
 Communication in open source project is most important things. You don’t need to be online every time, but you must have specified communication channel with your partners. Dispersion in communication (use Facebook Messenger and Slack and phone and SMS) generate a lot of problems - inaccuracies, wrong interpretation requests, a leak of process change something.
