@@ -29,6 +29,6 @@ All project in nowadays needs fan page in Facebook. Facebook Page application he
 ### Heroku
 The huge part of open source projects needs hosting. The best situation when hosting is easy to maintain and no need DevOps. My recommendation is Heroku, it’s free, simple, clarify UI and has nice integration with Github. 
 
-### Buy me coffee, zrzutka.pl or any other confounding 
+### Buy me a coffee, zrzutka.pl or any other confounding service
 If you need some money to provide your project please use this tools. Nothing else :D People who believe the intention of your project gives you some money. 
 
