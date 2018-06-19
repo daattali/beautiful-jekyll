@@ -1,7 +1,7 @@
 ---
 layout: page
-title: My Work
-subtitle: List of my Open Source
+title: Open Source 
+subtitle: List of my open source projects
 bigimg: /img/dev_1.jpg
 ---
 
