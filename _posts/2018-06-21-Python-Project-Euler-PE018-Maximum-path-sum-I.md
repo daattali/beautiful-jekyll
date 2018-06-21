@@ -37,13 +37,33 @@ Hãy tìm tổng lớn nhất của đường đi với tam giác lớn dưới 
 !(big)[/img/2018-06-21-trig/big.png]
 
 
-
-
-
 ## Phân tích đề bài:
-Đầu bài dễ hiểu quá mức rồi. 
+Với tam giác nhỏ đầu tiên:
 
-Đầu tiên là tính 2 ^ 10000 rồi convert số sang dạng chuỗi và cộng lại :) 
+```
+   3
+  7 4
+ 2 4 6
+8 5 9 3
+```
+
+Ta thấy đáy của tam giác là 4 số, nếu đưa các giá trị của tam giác vào một ma trận 4 * 4 ta thu được một ma trận:
+
+```
+3 0 0 0
+7 4 0 0
+2 4 6 0
+8 5 9 3
+```
+
+Nếu tính theo đường đi sẽ là
+
+**3** 0 0 0
+**7** 4 0 0
+2 **4** 6 0
+8 5 **9** 3
+
+
 
 
 
