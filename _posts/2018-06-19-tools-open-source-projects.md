@@ -26,13 +26,13 @@ It’s the simple tool to generate some images for social media and others - for
 Huge hub with free beautiful photos for social media or any your project case. 
 
 ### Facebook Pages - mobile app
-All project in nowadays needs fan page in Facebook. Facebook Page application helps you manage page and separate your private profile and your project site. 
+All project in nowadays needs fan page in Facebook. Facebook Page application helps you manage page and separate your private profile and your project site. Next reason is creating a communication channel between you and users. 
 
 ### Heroku
-The huge part of open source projects needs hosting. The best situation when hosting is easy to maintain and no need DevOps. My recommendation is Heroku, it’s free, simple, clarify UI and has nice integration with Github. 
+The huge part of open source projects needs hosting. The best situation when hosting is easy to maintain and no need DevOps. My recommendation is Heroku, it’s free, simple, clarify UI and has nice integration with Github. Next reason is - nontechnical people can quickly understand this tool. 
 
 ### Buy me a coffee, zrzutka.pl or any other confounding service
-If you need some money to provide your project please use this tools. Nothing else :D People who believe the intention of your project gives you some money. 
+If you need some money to provide your project please use this tools. Nothing else :D People who believe the intention of your project gives you some money. Go ahad! 
 
 
 [Buy me a coffee](https://www.buymeacoffee.com/rafalgawlik)
