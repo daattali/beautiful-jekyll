@@ -10,7 +10,7 @@ bigimg: /img/social.jpg
 
 Workshop/talk on "Forum Praktyków Partycypacji" event about some apps and technologies which can help manage a city. 
 
-###### [WWW](http://partycypacjaobywatelska.pl/forum-2018/technologie-obywatelskie-w-zarzadzaniu-miastem/) [SLIDES](https://slides.com/technologie-obywatelskie-w-zarzadzaniu-miastem/deck#/)
+###### [WWW](http://partycypacjaobywatelska.pl/forum-2018/technologie-obywatelskie-w-zarzadzaniu-miastem/) | [SLIDES](https://slides.com/technologie-obywatelskie-w-zarzadzaniu-miastem/deck#/)
 
 ---
 ### Django Payments
