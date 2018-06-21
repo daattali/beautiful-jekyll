@@ -10,7 +10,7 @@ bigimg: /img/opensource.jpg
 
 Code for Poland project. We (PoznajApp team) try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on smartphone localization.
 
-###### [WWW](https://kodujdlapolski.pl/projects/poznaj-wroclaw/)
+###### [WWW](http://www.poznaj-app.pl)
 
 ---
 ### MaterialActivityAnimation
