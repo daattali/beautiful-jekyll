@@ -6,21 +6,21 @@ bigimg: /img/opensource.jpg
 ---
 
 
-# PoznajApp
+### PoznajApp
 
 Code for Poland project. We (PoznajApp team) try educate society in history of city by technology (mobile apps). App shows interesting facts from history around user based on smartphone localization.
 
 ###### [WWW](https://kodujdlapolski.pl/projects/poznaj-wroclaw/)
 
 ---
-# MaterialActivityAnimation
+### MaterialActivityAnimation
 
 Sample project explain how to create material design ripple open new view (activity) animation.
 
 ###### [REPOSITORY](https://github.com/rafalgawlik/MaterialActivityAnimations)
 
 ---
-# MaterialRippleAnimation
+### MaterialRippleAnimation
 
 Library provide new widget - button with material design ripple animation.
 
