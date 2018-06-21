@@ -2,7 +2,7 @@
 layout: page
 title: Talks
 subtitle: List of my public talks
-bigimg: /img/social.jpg
+bigimg: /img/bridge.jpg
 ---
 
 
