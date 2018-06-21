@@ -25,6 +25,7 @@ description: mobile developer
 navbar-links:
   About Me: "aboutme"
   Open Source: "opensource"
+  Talks: "talks"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
