@@ -1,0 +1,130 @@
+---
+layout: post
+title: PE015-Lattice-paths
+# subtile: Hãy viết code như một Pythonista
+image: /img/2018-06-08-ProjectEuler/PE.png
+tags: [Python, Project-Euler]
+categories: [Project-Euler]
+date: 2018-06-19
+# 2018-06-19-Python-Project-Euler-PE015-Lattice-paths
+---
+
+
+
+## Problem 15: Lattice-paths
+Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+
+How many such routes are there through a 20×20 grid?
+
+![https://projecteuler.net/project/images/p015.gif](https://projecteuler.net/project/images/p015.gif)
+
+
+## Đề bài
+Bắt đầu từ đỉnh trên cùng của một grid 2*2 có 6 cách để để di chuyển đến đỉnh đối diện. Phương thức di chuyển là rẽ phải hoặc đi xuống. 
+
+Có bao nhiêu cách để di chuyển với một grid 20*20 ?
+
+
+
+## Phân tích đề bài:
+
+Một bài toán khá thú vị về các ô vuông.
+
+Để tôi mô tả cách giải đơn giản với bài này.
+
+Đầu tiên tưởng tượng chúng ta đang có 1 ô vuông như bên dưới:
+
+![1st](/img/2018-06-19-newton/1st)
+
+Để đi từ B --> C: path_count = 1
+
+Để đi từ D --> C: path_count = 1
+
+Để đi từ A --> C (AC): path_count = 2 (AD + DC và AB + BC)
+
+Để tính độ dài AC = AD + DC = AB + BC = 1 + 1 = 2
+
+Mở rộng hơn với hình 2 * 1:
+
+![2st](/img/2018-06-19-newton/2nd)
+
+Tổng số đường đi từ A --> F được tính = AC + CF 
+
+AF = AC + CF = 2 + 1 = 3
+
+
+Với hình 2 * 2: 
+![3rd](/img/2018-06-19-newton/3rd)
+
+2 * 2 là 2 hình 2 * 1 chồng lên nhau.
+
+Tổng số đường đi từ AI= AF + DI = 3 + 3 = 6
+
+
+
+Có công thức tổng quát nào cho bài toán này không ? Hay là cứ cộng dồn, chồng tầng lên ?
+
+
+
+
+
+
+
+
+Nhìn vào ô vuông 2\*2 ta thấy muốn tạo ra các ô 2\*2 chúng ta cần 3*3 = 9 các điểm chấm (point)
+
+Ô vuông 3\*3 cần 4\*4 = 16 điểm chấm.
+
+Để có ô vuông 20\*20 sẽ cần 21 \* 21 điểm chấm. 
+
+
+
+```Python
+UPPER_LITMIT = 1000000
+
+
+def find_longest_collatz_sequence():
+    count_cache = {1: 1, 2: 2}
+    max_lenght = 2
+    max_lenght_number = 2
+    for sequence in range(3, UPPER_LITMIT + 1):
+        lenght = 1
+        number = sequence
+        while number != 1:
+            if number % 2:
+                number = 3 * number + 1
+            else:
+                number = number // 2
+            if number in count_cache:  # count_cache[number] != -1:
+                lenght += count_cache[number]
+                break
+            lenght += 1
+        count_cache[sequence] = lenght
+        if max_lenght < lenght:
+            max_lenght = lenght
+            max_lenght_number = sequence
+    return max_lenght_number, max_lenght
+
+
+if __name__ == "__main__":
+    import time
+    start = time.time()
+    result = find_longest_collatz_sequence()
+    done = time.time()
+    print("The starting number {} produces a sequence of {}".format(*result))
+    elapsed = done - start
+    print("elapsed time: {}s".format(elapsed))
+```
+
+Thời gian chạy trên máy của tôi:
+```
+The starting number 837799 produces a sequence of 525
+elapsed time: 1.7523188591003418s
+
+```
+
+
+
+
+Source-code:
+[PE-014](https://github.com/quangvinh86/python-projecteuler/tree/master/PE-014)
