@@ -25,3 +25,10 @@ Sample project explain how to create material design ripple open new view (activ
 Library provide new widget - button with material design ripple animation.
 
 ###### [REPOSITORY](https://github.com/rafalgawlik/MaterialRippleAnimation)
+
+---
+### AwesomeBlog
+
+Simple blogging platform based on Python, Django, JavaScript and Bootstrap. 
+
+###### [REPOSITORY](https://github.com/rafalgawlik/AwesomeBlog)
