@@ -18,3 +18,11 @@ Workshop/talk on "Forum Praktyków Partycypacji" event about some apps and techn
 Talkst about payments in Django and Python. Tips, tricks and how to do it. 
 
 ###### [SLIDES](http://slides.com/rafal-gawlik/django-payments#/)
+
+---
+### TechTalsk @ Altimi Solutions
+
+I am the creator of TechTalks (cyclic developers meetings) when we talk about technology and good patterns in developing process. 
+
+###### [SLIDES](https://slides.com/rafal-gawlik/techtalks-altimi#/)
+
