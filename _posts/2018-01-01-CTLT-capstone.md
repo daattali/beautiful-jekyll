@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MDS capstone project
-subtitle: Visualizing massive open online courses
+title: Visualizing massive open online courses
+subtitle: My team's MDS capstone project
 ---
 
 ## Introduction
@@ -56,7 +56,7 @@ The amount of data in these courses made this project challenging. One of the mo
 
 ## Acknowledgments
 
-I would like to thank Ido Roll and Sarah Perez from UBC CTLT, and the users who provided feedback during the development of these dashboards. I would also like to thank my fellow team members [David Laing](https://laingdk.github.io/), [Andrew Lim](https://andrewlim1990.github.io/) and [Subi Zhang](http://subizhang.com/), as well as our Teaching Fellow mentor [Giulio Dalla Riva](http://gvdallariva.net/).
+I would like to thank Ido Roll and Sarah Perez from UBC CTLT, and the users who provided feedback during the development of these dashboards. I would also like to thank my fellow team members [David Laing](https://davidklaing.github.io/), [Andrew Lim](https://andrewlim1990.github.io/) and [Subi Zhang](http://subizhang.com/), as well as our Teaching Fellow mentor [Giulio Dalla Riva](http://gvdallariva.net/).
 
 -----
 
