@@ -4,8 +4,6 @@ title: Visualizing massive open online courses
 subtitle: Our MDS capstone project
 ---
 
-## Introduction
-
 After eight months of coursework, the [UBC Master of Data Science](https://masterdatascience.science.ubc.ca/) (MDS) program concludes with a 2-month [Capstone project](https://ubc-mds.github.io/capstone/about/).
 We partnered with [Ido Roll](http://ctlt.ubc.ca/people/ido-roll/) from UBC's [Centre for Teaching, Learning and Technology (CTLT)](https://ctlt.ubc.ca/) to analyze data from UBC's
 [massive open online courses](https://en.wikipedia.org/wiki/Massive_open_online_course) (MOOCs). UBC offers dozens of MOOCs to thousands of students through the [edX platform](https://www.edx.org/school/ubcx). Unlike in-person classes, in a MOOC the instructor cannot observe student engagement directly. Instead, they must infer student engagement from recorded events (for example, a student pausing a video). A single course can involve millions of events in its lifetime, which means there was lots of data for us to look through. Our task was to build a dashboard to help MOOC instructors answer the following questions:
