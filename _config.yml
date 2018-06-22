@@ -9,7 +9,7 @@ baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
 url: "http://rcn-ecs.github.io/rcn-ecs"
-#baseurl: "/projectname"
+baseurl: "/rcn-ecs"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
