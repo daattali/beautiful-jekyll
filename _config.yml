@@ -4,12 +4,12 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-# url: "http://rcn-ecs.github.io"
+ url: "http://rcn-ecs.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "http://rcn-ecs.github.io/rcn-ecs"
-baseurl: "/rcn-ecs"
+# url: "http://rcn-ecs.github.io/rcn-ecs"
+# baseurl: "/rcn-ecs"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
@@ -23,7 +23,7 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "rcn-ecs/aboutme"
+  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
