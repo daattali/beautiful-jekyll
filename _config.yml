@@ -25,11 +25,11 @@ description: An NSF-funded network to bring together evolutionary biologists, ma
 navbar-links:
   How to join: "howto"
   Timeline: 
-    - 2019 Synthesis Workshop "synthesis"
-    - 2020 Genomics Working Group "genomics"
-    - 2021 Training and Integration "training"
-  Steering Committee: "steering"
-  Funding Sources: "funding"
+   # - 2019 Synthesis Workshop: "synthesis"
+   # - 2020 Genomics Working Group: "genomics"
+   # - 2021 Training and Integration "training"
+  Steering Committee: 
+  Funding Sources: 
   Resources:
     - Listserv: 
     - Github Group:
