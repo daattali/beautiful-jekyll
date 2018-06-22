@@ -24,15 +24,15 @@ description: An NSF-funded network to bring together evolutionary biologists, ma
 # List of links in the navigation bar
 navbar-links:
   How to join: "howto"
-  Timeline: 
+  #Timeline: 
    # - 2019 Synthesis Workshop: "synthesis"
    # - 2020 Genomics Working Group: "genomics"
    # - 2021 Training and Integration "training"
-  Steering Committee: 
-  Funding Sources: 
-  Resources:
-    - Listserv: 
-    - Github Group:
+  #Steering Committee: 
+  #Funding Sources: 
+  #Resources:
+  #  - Listserv: 
+  #  - Github Group:
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
