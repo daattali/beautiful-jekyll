@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualizing massive open online courses
-subtitle: My team's MDS capstone project
+subtitle: Our MDS capstone project
 ---
 
 ## Introduction
