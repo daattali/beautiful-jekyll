@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PoznajApp released!
-title: Aplikacja PoznajApp wydana. 
+subtitle: Aplikacja PoznajApp wydana. Poznaj historię swojego miasta.
 bigimg: /img/social.jpg
 tags:
   - opensource
