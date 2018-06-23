@@ -330,6 +330,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                     8.821487426757812e-05s
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=19">Problem 010</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-23-Python-Project-Euler-PE019-Counting-Sundays">Counting-Sundays</a>
+                </td>
+                <td>
+                    171
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-019">Code Python</a>
+                </td>
+                <td>
+                    0.0005667209625244141s
+                </td>
+            </tr>
             <!-- <tr>
                 <td>
                     <a href="https://projecteuler.net/problem=3">Problem 003</a>
