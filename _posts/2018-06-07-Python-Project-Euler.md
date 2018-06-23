@@ -27,6 +27,15 @@ Vì Python là ngôn ngữ lập trình đưa tôi đến với Pymi.vn và proj
 
 Về code Python, tôi sẽ thực hiện code theo đúng chuẩn PEP8 (tối đa).
 
+
+Mục tiêu đặt ra của tôi là mỗi tuần làm khoảng 5 bài có giải thích (viết phần giải thích mất rất nhiều thời gian).
+ 
+Mỗi bài viết có thể gồm có bài giải thích hoặc chỉ có code :D 
+
+Những bài tôi sẽ không giải thích (do không biết làm thế nào để diễn đạt ý của mình)
+
+Khi nào tôi cán đích hết page-1 thì sẽ dừng lại :) 
+
 Danh sách các bài viết phân tích chiến thuật giải các bài toán trên https://projecteuler.net/ (Mục tiêu đặt ra là làm hết page-1, liên tục cập nhật ít nhất 1 ngày/1 bài)
 
 <div class="table-responsive">
@@ -302,6 +311,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                 </td>
                 <td>
                     0.00020003318786621094s
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=18">Problem 018</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-21-Python-Project-Euler-PE018-Maximum-path-sum-I">Maximum-path-sum-I</a>
+                </td>
+                <td>
+                    1704
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-018">Code Python</a>
+                </td>
+                <td>
+                    8.821487426757812e-05s
                 </td>
             </tr>
             <!-- <tr>
