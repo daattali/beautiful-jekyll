@@ -1,7 +1,8 @@
 ---
 layout: post
-published: false
 title: PoznajApp released!
+bigimg: /img/social.jpg
+tags: [opensource, code, social, civictech]
 ---
 Wrocław jest tajemniczym miastem. My chcemy odkryć jego tajemnice i przedstawić je w ciekawej formie. 
 
