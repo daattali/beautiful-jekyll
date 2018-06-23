@@ -8,7 +8,7 @@ categories: [Project-Euler]
 date: 2018-06-23
 # 2018-06-23-Python-Project-Euler-PE019-Counting-Sundays.md
 ---
-Hãy tìm tổng lớn nhất của đường đi với tam giác lớn
+Từ 1/1/1901 đến 31/12/2000 có bao nhiêu ngày chủ nhật là ngày đầu tiên trong tháng.
 
 ## Problem PE019-Counting-Sundays
 You are given the following information, but you may prefer to do some research for yourself.
@@ -28,7 +28,7 @@ How many Sundays fell on the first of the month during the twentieth century (1 
 
 
 ## Đề bài
-Từ 1/1/1901 đến 21/12/2000 có bao nhiêu ngày chủ nhật là ngày đầu tiên trong tháng.
+Từ 1/1/1901 đến 31/12/2000 có bao nhiêu ngày chủ nhật là ngày đầu tiên trong tháng.
 
 
 ## Phân tích đề bài:
