@@ -13,13 +13,13 @@ Hãy tìm tổng lớn nhất của đường đi với tam giác lớn
 ## Problem PE018-Maximum-path-sum-I
 By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
 
-!(small)[/img/pe_img/trig_small.png]
+![small](/img/pe_img/trig_small.png)
 
 That is, 3 + 7 + 4 + 9 = 23.
 
 Find the maximum total from top to bottom of the triangle below:
 
-!(big)[/img/pe_img/trig_big.png]
+![big](/img/pe_img/trig_big.png)
 
 NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
 
@@ -28,13 +28,13 @@ NOTE: As there are only 16384 routes, it is possible to solve this problem by tr
 ## Đề bài
 Đứng từ đỉnh của tam giác, bắt đầu di chuyển xuống dưới, giá trị nào cho tổng với giá trị trước đó lớn hơn sẽ được ưu tiên di chuyển vào.
 
-!(small)[/img/pe_img/trig_small.png]
+![small](/img/pe_img/trig_small.png)
 
 Với ví dụ này: 3 + 7 + 4 + 9 = 23.
 
 Hãy tìm tổng lớn nhất của đường đi với tam giác lớn dưới đây:
 
-!(big)[/img/pe_img/trig_big.png]
+![big](/img/pe_img/trig_big.png)
 
 
 ## Phân tích đề bài:
