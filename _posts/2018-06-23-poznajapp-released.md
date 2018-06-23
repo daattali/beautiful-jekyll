@@ -7,7 +7,8 @@ tags:
   - opensource
   - code
   - social
-  - civictech
+  - wroclaw
+  - poznajapp
 published: true
 ---
 _Wrocław jest tajemniczym miastem. My chcemy odkryć jego tajemnice i przedstawić je w ciekawej formie._
