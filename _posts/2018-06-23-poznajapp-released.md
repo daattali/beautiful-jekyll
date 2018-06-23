@@ -2,7 +2,7 @@
 layout: post
 title: PoznajApp released!
 subtitle: Aplikacja PoznajApp wydana. Poznaj historię swojego miasta.
-bigimg: /img/social.jpg
+bigimg: /img/wroclaw.jpg
 tags:
   - opensource
   - code
