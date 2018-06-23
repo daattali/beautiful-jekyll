@@ -20,7 +20,7 @@ Projekt w swoim głębszym uzasadnieniu miał na celu walkę z problemem społec
 
 ## Wydawcy
 
-Wydawca aplikacji [**Klub Jagielloński**](http://klubjagiellonski.pl)
+Wydawca aplikacji: [**Klub Jagielloński**](http://klubjagiellonski.pl)
 
 Projekt był prowadzony w ramach inicjatywy [**Koduj dla Polski**](https://kodujdlapolski.pl)
 
