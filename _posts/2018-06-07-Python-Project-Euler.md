@@ -30,9 +30,7 @@ Về code Python, tôi sẽ thực hiện code theo đúng chuẩn PEP8 (tối �
 
 Mục tiêu đặt ra của tôi là mỗi tuần làm khoảng 5 bài có giải thích (viết phần giải thích mất rất nhiều thời gian).
  
-Mỗi bài viết có thể gồm có bài giải thích hoặc chỉ có code :D 
-
-Những bài tôi sẽ không giải thích (do không biết làm thế nào để diễn đạt ý của mình)
+Mỗi bài viết có thể gồm có bài giải thích hoặc chỉ có code :D . Những bài tôi  không giải thích phần lớn là do... không biết làm thế nào để diễn đạt ý của mình.
 
 Khi nào tôi cán đích hết page-1 thì sẽ dừng lại :) 
 
@@ -345,6 +343,23 @@ Danh sách các bài viết phân tích chiến thuật giải các bài toán t
                 </td>
                 <td>
                     0.0005667209625244141s
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://projecteuler.net/problem=20">Problem 020</a>
+                </td>
+                <td>
+                    <a href="https://quangvinh86.github.io/2018-06-23-Python-Project-Euler-PE020-Sum-of-Digits-in-100gt">Sum-of-Digits-in-100gt</a>
+                </td>
+                <td>
+                    648
+                </td>
+                <td>
+                    <a href="https://github.com/quangvinh86/python-projecteuler/tree/master/PE-020">Code Python</a>
+                </td>
+                <td>
+                    0.000347137451171875s
                 </td>
             </tr>
             <!-- <tr>
