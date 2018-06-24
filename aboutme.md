@@ -1,16 +1,21 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Background
+subtitle: Machine/Statistical Learning, NLP, Deep Learning, Quantitative Finance 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scientist:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I interested in Applying mathematics, statistics,economics and computer science concepts in solving business, economic, finance and industrial problems. 
+- I am broadly interested in applied statistical methods such as non-parametric methods,exact statistical methods, bayesian inference, hierachical/multilevel  models, time series, survival analysis ,Markove Chain Monte-carlo etc. 
+- Machine learning (deep learning, recommender systems, natural language processing, network analysis), Clustering Algorithms,   Dimensionality Reduction   
+- Sample Size Estimation and Power Analysis. 
+- Optimization techniques (linear / nonlinear programming, dynamic / stochastic programming) 
+- Quantitative finance ( Monte Carlo simulation, risk quantification, portfolio optimization, economic scenario generation)  
+- Distributed computer  storage and processing : Spark, SQL ,GPU computing  
+### Programming Languages: 
+-  R, Matlab, Python, C++, Octave, SAS
 
-What else do you need?
+### my history 
+I have an undergraduate and masters degree in mathematics, a masters degree in Economics, Statistics and a PhD. in Statistics. I  begun my  academic research career  in  bio-statistical fields such as applying statistical models in investigating  pediatric  and thoracic oncology. I have being involved in applying state of the art machine learning, deep learning and natural language processing techniques in solving problems in the automobile industry, finance and insurance industries. 
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
