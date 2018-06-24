@@ -17,5 +17,14 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
 -  R, Matlab, Python, C++, Octave, SAS
 
 ### my history 
-I have an undergraduate and masters degree in mathematics, a masters degree in Economics, Statistics and a PhD. in Statistics. I  begun my  academic research career  in  bio-statistical fields such as applying statistical models in investigating  pediatric  and thoracic oncology. I have being involved in applying state of the art machine learning, deep learning and natural language processing techniques in solving problems in the automobile industry, finance and insurance industries. 
+ I  begun my  academic research career  in  bio-statistical fields such as applying statistical models in investigating  pediatric  and thoracic oncology. I have being involved in applying state of the art machine learning, deep learning and natural language processing techniques in solving problems in the automobile industry, finance and insurance industries. 
+ 
+ ### Education
+
+ 
+* Ph.D (2016),  Statistics, University of Memphis
+* M.Sc (2014),  Statistics, University of Memphis
+* M.Sc (2017),  Economics,  University of Memphis
+* M.Sc (2010),  Mathematics, Middle Tennessee State University
+* B.Sc (2007),  Mathematics , Kwame Nkrumah University of Science and Technology
 
