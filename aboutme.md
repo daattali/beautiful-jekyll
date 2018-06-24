@@ -13,13 +13,16 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
 - Optimization techniques (linear / nonlinear programming, dynamic / stochastic programming) 
 - Quantitative finance ( Monte Carlo simulation, risk quantification, portfolio optimization, economic scenario generation)  
 - Distributed computer  storage and processing : Spark, SQL ,GPU computing  
-### Programming Languages: 
+
+
+###  Programming Languages: 
 -  R, Matlab, Python, C++, Octave, SAS
 
-### my history 
+
+###   my history 
  I  begun my  academic research career  in  bio-statistical fields such as applying statistical models in investigating  pediatric  and thoracic oncology. I have being involved in applying state of the art machine learning, deep learning and natural language processing techniques in solving problems in the automobile industry, finance and insurance industries. 
  
- ### Education
+ ###   Education
 
  
 * Ph.D (2016),  Statistics, University of Memphis
