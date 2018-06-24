@@ -25,6 +25,7 @@ description: Machine Learning, Statistical Modeling
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  - Resume / CV: "resume/Boateng Nana_Resume_2018.pdf"
   Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - R-bloggers: "https://www.r-bloggers.com/" 
