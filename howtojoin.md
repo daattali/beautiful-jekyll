@@ -1,7 +1,6 @@
  ---
 layout: page
 title: How to join
-subtitle: 
 ---
  
  ### Fill out this google form
