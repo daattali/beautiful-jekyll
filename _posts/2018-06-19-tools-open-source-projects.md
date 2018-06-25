@@ -14,7 +14,7 @@ Communication in open source project is most important things. You don’t need 
 ### GitHub
 Github is most famous service to maintain open source projects, but if you decide to use another - no problem. Please remember about correct licenses and licenses tools and libraries which you will use into the project. 
 
-Please check slides.com at @DominikWro [https://
+Please check (slides.com at @DominikWro)(https://
 slides.com/dominikwronski/foss-license-overview#/17]
 
 ### Trello or any simple “task manager”
