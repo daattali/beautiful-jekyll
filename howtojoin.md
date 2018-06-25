@@ -1,4 +1,8 @@
- # How to join
+ ---
+layout: page
+title: How to join
+subtitle: 
+---
  
  ### Fill out this google form
  - stuff needed for NSF participant list
