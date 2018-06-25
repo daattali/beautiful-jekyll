@@ -15,7 +15,7 @@ Communication in open source project is most important things. You don’t need 
 Github is most famous service to maintain open source projects, but if you decide to use another - no problem. Please remember about correct licenses and licenses tools and libraries which you will use into the project. 
 
 Please check [slides.com at @DominikWro](https://
-slides.com/dominikwronski/foss-license-overview#/17]
+slides.com/dominikwronski/foss-license-overview#/17)
 
 ### Trello or any simple “task manager”
 Please remember about task manager. It makes development process simpler and more clarified. Developers, designers and rest of partners have a simple information what is todo, what is in progress, and who work on the specified task - it’s part of communication process.
