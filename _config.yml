@@ -23,7 +23,7 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  How to join: "aboutme"
+  How to join: "howtojoin"
   Timeline: 
     - 2019 Synthesis Workshop: "aboutme"
     - 2020 Genomics committee: "aboutme"
