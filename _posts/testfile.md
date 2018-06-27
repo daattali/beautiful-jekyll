@@ -1,3 +1,7 @@
+---
+layout: post
+title: Testpage
+---
 Testpage
 ================
 Andre Neveu
