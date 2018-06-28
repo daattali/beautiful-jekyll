@@ -6,42 +6,6 @@ subtitle: Information for prospective MDS capstone partners
 ---
 
 
-## Capstone project guidelines
-
-Successful MDS capstone projects...
-
-- pose an interesting and open-ended question/problem that can be addressed using data science for which data is available or obtainable.
-- pose a multi-faceted question/problem, containing enough dimensions to be addressed in a multitude of ways.
-- are sufficiently deep, such that a useful data product can be made in two months that makes a solid advance on the problem.
-- can be split up into milestones, such that concrete progress can be made in two months.
-- draw on various tools and topics the students have learned in their [courses](https://ubc-mds.github.io/descriptions/) during the MDS program.
-
-The work involved in each capstone project must include
-
-- refining the project's over-arching question into one that can be directly addressed using data science;
-- using data science to draw useful information and recommendations from data; and
-- making the information and recommendations accessible to the capstone partner through various effective means of communication (such as documentation, visuals, presentations, and reports).
-
-What a capstone project is _not_:
-
-- Setting up and/or maintaining a database.
-    - This project should focus on a data science problem.
-- A pre-specified approach, such as applying a particular machine learning algorithm to a particular data set.
-    - This type of project is too narrow, not open-ended, and has only one or a few solutions. We expect our students to creatively come up with their own data science approaches to address the capstone partner's over-arching question/problem (with advice from the capstone partner on data science approaches).
-- Data cleaning.
-    - Although we expect some data wrangling to be involved in the project, we ask that you provide data that is mostly clean and "ready-to-go". If you need help with this, [ASDa](https://asda.stat.ubc.ca/) from the UBC Department of Statistics might be able to help for a fee.
-
-
-## Student Expectations
-
-We expect our student groups to
-
-- communicate productively, identify sub-problems that could be worked on individually by team members, and integrate contributions of team members into a final product;
-- work at least four full-time days per week on the project;
-- document and present their work at UBC (using written, oral, and visual means) at various points throughout the course.
-- optionally (but strongly recommended), present their final product and findings to the capstone partner's organization.
-
-
 ## Expectations of Capstone Partners
 
 - You should be able to provide our students with ample data that is relevant to a question/problem faced by your organization. This need not belong to the capstone partner's organization -- for example, it could come freely online. Datasets must be sufficiently clean, and an appropriate and size that the students will be able to load into R and/or Python in a reasonable amount of time and effort.
@@ -66,6 +30,54 @@ We expect our student groups to
 
 - An opportunity to develop a relationship with the UBC MDS program. These relationships have the possibility of kickstarting research collaborations between the partners and UBC.
 
+
+## Proposals
+
+The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
+
+Your proposal should be
+
+- one page maximum (plus a possible appendix containing reference material), and
+- submitted as a pdf file to `capstone-mds@science.ubc.ca`.
+
+In addition, please provide a one-sentence description of the project for us to put next to your project name for the students to see. You can simply indicate this in the email you send upon submission.
+
+Your proposal should contain the following information:
+
+### About your organization
+
+Briefly introduce your organization. Why might the MDS students be interested in partnering with this organization?
+
+### Brief description of the problem/question
+
+Just a brief description of the problem. If you'd like, you can suggest data science approaches that the students can take to address the problem, but this is not necessary. What are the main difficulties that come with this project?
+
+### Available data
+
+Describe the data that you will make available to the students. How much data is there? What type of features are available? What type of complications might arise from the data? In what form will the data be available to the students?
+
+### Data Product
+
+What product(s) would you like to receive from our students, and what (in general) should it communicate or have the ability to do? Examples:
+
+- A dashboard such as a `shiny` app to explore an aspect of your data
+- An `R` package with documentation to simplify an analysis
+- A data pipeline that includes some data science model
+- A report outlining student findings
+
+### Legal stuff
+
+Outline the gist of the legalities you intend to have in place, if any -- particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll address that later).
+
+We understand that you may require some restrictions to be put in place, but we also would like for our students to have some freedom to talk about the work they've done when applying for jobs. We want our students to know about these restrictions up-front so that they can make an informed decision about the project.  
+
+Feel free to ask us about our standard UBC NDA. Contact us at `capstone-mds@science.ubc.ca`.
+
+This section should also include any other requirements of students participating in the project, like background checks, etc.
+
+### Conflicts of interest
+
+Declare any conflicts of interest. For example, if a current MDS student or family member is involved with your organization on a professional or personal level, this should be declared along with a short explanation.
 
 ## FAQ
 
