@@ -11,8 +11,8 @@ The **approximate** timeline is below, followed by additional detail on each eve
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| First submission of proposal | November 20, 2018 (recommended) |
-| [Proposal revision process](#proposal-revision-process) (must be accepted by...) | December 31, 2018  |
+| Suggested initial submission of proposal | November 15, 2018 |
+| [Proposal deadline](#proposal-revision-process) | December 31, 2018  |
 | [Students rate proposals](#students-rate-proposals) | January 10, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
 | [Partners accept invitations](#partners-accept-invitations) | January 30, 2019  |
@@ -22,7 +22,7 @@ The **approximate** timeline is below, followed by additional detail on each eve
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2019 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | April 1, 2019  |
 | [Kickoff meetings](#kickoff-meetings)    | April 10 - April 20, 2019 |
-| [Phase 1: student proposals](#student-proposals) |  May 5, 2019 ) |
+| [Phase 1: student proposals](#student-proposals) |  May 5, 2019 |
 | [Phase 2: project development](#project-development-stage) | May 5 - June 20, 2019   |
 | [Student presentations](#project-presentations) | June 15 - June 25, 2019 |
 
