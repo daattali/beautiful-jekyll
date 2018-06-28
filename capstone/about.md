@@ -28,7 +28,7 @@ For more information on becoming a partner, see our [partner information page](/
 
 2017:
 
-- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Empowering employee engagement through AI – Government of BC_
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Empowering employee engagement through AI_
 - [Coast Mountain Bus Company](https://www.translink.ca/en/About-Us/Corporate-Overview/Operating-Companies/CMBC.aspx): _Forecasting Transit Schedules and Congestion Areas_
 - [Rio Tinto](http://www.riotinto.com/): _Tools for Analyzing Mining Drill Data_
 - [UBC CTLT](http://ctlt.ubc.ca/): [_edXvis: Interactive Visualization of Student	Engagement with edX MOOCs_](https://ubc-mds.github.io/2018-01-01-CTLT-capstone/)
