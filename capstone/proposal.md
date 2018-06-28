@@ -5,8 +5,6 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-## Proposals
-
 The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
 
 Your proposal should be
@@ -39,7 +37,7 @@ What product(s) would you like to receive from our students, and what (in genera
 - A data pipeline that includes some data science model
 - A report outlining student findings
 
-### Legal stuff
+### Legal info
 
 Outline the gist of the legalities you intend to have in place, if any -- particularly on how secretive you anticipate the students to be with the data and their finished data product. The key here is to just put the main ideas here, not an actual legal document (we'll address that later).
 
