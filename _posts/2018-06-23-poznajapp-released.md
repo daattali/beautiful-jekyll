@@ -56,6 +56,8 @@ koordynacja projektu, aplikacja na system Andorid
 
 ## Repozytorium
 
+[**Zespół**](https://github.com/orgs/KlubJagiellonski/teams/poznaj-wroclaw)
+
 [**KlubJagiellonski/poznaj-app-frontend**](https://github.com/KlubJagiellonski/poznaj-app-frontend)
 
 
