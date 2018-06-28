@@ -52,3 +52,14 @@ aplikacja na system Android
 
 [**Rafał Gawlik**](https://rafalgawlik.github.io)
 koordynacja projektu, aplikacja na system Andorid
+
+
+## Repozytorium
+
+[**KlubJagiellonski/poznaj-app-frontend**](https://github.com/KlubJagiellonski/poznaj-app-frontend)
+
+
+[**KlubJagiellonski/poznaj-app-backend**](https://github.com/KlubJagiellonski/poznaj-app-backend)
+
+
+[**KlubJagiellonski/poznaj-app-android**](https://github.com/KlubJagiellonski/poznaj-app-android)
