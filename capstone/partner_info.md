@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Partner info
-subtitle: Information for prospective MDS capstone partners
+title: MDS Capstone Partnerships
 
 ---
 
