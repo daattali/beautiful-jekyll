@@ -1,6 +1,7 @@
 ---
 layout: page
-title: MDS Capstone Proposals
+title: Proposals
+subtitle: For MDS Capstone Projects
 
 ---
 

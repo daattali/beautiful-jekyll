@@ -1,6 +1,7 @@
 ---
 layout: page
-title: MDS Capstone Timeline
+title: Timeline
+subtitle: For MDS Capstone Projects
 
 ---
 
