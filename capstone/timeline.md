@@ -5,27 +5,26 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-This year's capstone course will run __April 23, 2018 - June 29, 2018__ (10 weeks).
+This year's capstone course will run __April 22, 2019 - June 27, 2019__ (10 weeks).
 
-The timeline is below, followed by additional detail on each event.
+The **approximate** timeline is below, followed by additional detail on each event.
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| First submission of proposal | November 20 (recommended) |
-| [Proposal revision process](#proposal-revision-process) (must be accepted by...) | December 31, 2017  |
-| [Students rate proposals](#students-rate-proposals) | January 12, 2018  |
-| [Selection of proposals](#selection-of-proposals) | January 19, 2018   |
-| [Partners accept invitations](#partners-accept-invitations) | January 29, 2018  |
-| [Partner presentations](#partner-presentations)       | February 7 - March 23, 2018 |
-| [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2018  |
-| [Students rate the projects](#students-rate-the-projects)  | March 23 - March 26, 2018 |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 3, 2018 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | April 5, 2018  |
-| [Kickoff meetings](#kickoff-meetings)    | April 16 - April 20, 2018 |
-| [Phase 1: student proposals](#student-proposals) |  May 4, 2018 ) |
-| [Phase 2: project development](#project-development-stage) | May 7 - June 8, 2018 (approx)  |
-| [Phase 3: project polishing](#project-polishing-stage) | June 11 - 22, 2018 (approx) |
-| Student presentations "on site" for partners | June 15 - June 25, 2018 |
+| First submission of proposal | November 20, 2018 (recommended) |
+| [Proposal revision process](#proposal-revision-process) (must be accepted by...) | December 31, 2018  |
+| [Students rate proposals](#students-rate-proposals) | January 10, 2019  |
+| [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
+| [Partners accept invitations](#partners-accept-invitations) | January 30, 2019  |
+| [Partner presentations](#partner-presentations)       | February 7 - March 15, 2019 |
+| [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2019  |
+| [Students rate the projects](#students-rate-the-projects)  | March 15 - March 20, 2019 |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2019 |
+| [Students are assigned to projects](#students-are-assigned-to-projects) | April 1, 2019  |
+| [Kickoff meetings](#kickoff-meetings)    | April 10 - April 20, 2019 |
+| [Phase 1: student proposals](#student-proposals) |  May 5, 2019 ) |
+| [Phase 2: project development](#project-development-stage) | May 5 - June 20, 2019   |
+| [Student presentations](#project-presentations) | June 15 - June 25, 2019 |
 
 #### Proposal revision process
 
@@ -88,12 +87,11 @@ Students develop the data product. This involves:
 
   - Regular meetings with the teaching fellow mentor.
   - Regular meetings with the capstone partner.
-  - Recording your progress and explorations in a data science notebook.
 
-#### Project polishing stage
+#### Project presentations
 
-Students polish the data product for delivery to the capstone partner:
+Towards the end of June, students present their project in the following settings:
 
-  1. Deliver the data product after incorporating feedback from teaching fellows and colleagues, along with a final report.
-  2. Briefly present product(s) in an end-of-program celebration (not graded).
-  3. At the end, students also reflect on the project in a short individual report.
+  - To their classmates at UBC (graded by the project mentors).
+  - At their partner organization.
+  - At an end-of-program celebration at UBC.
