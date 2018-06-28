@@ -478,4 +478,5 @@ orange%>%ggplot(aes(PriceMM,color=Purchase))+geom_density()
 
     ## Warning: Removed 4 rows containing non-finite values (stat_density).
 
-![](2018-06-25_files/figure-markdown_github/unnamed-chunk-3-1.png)
+#![](2018-06-25_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](/img/unnamed-chunk-3-1.png)
