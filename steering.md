@@ -1,4 +1,3 @@
-
 ---
 title: People
 subtitle: The humans behind this project
