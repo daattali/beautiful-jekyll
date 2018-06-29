@@ -10,12 +10,10 @@ pi-list:
     github: 
     twitter: 
   - name: Geoff Trussell
-    img: 
+    img: geoff-trussell
     desc: Evolutionary ecologist. Professor and Director of Northeastern University's Marine Science Center.
-    website: 
-    url: 
-    github: 
-    twitter:     
+    website: https://web.northeastern.edu/trussell/
+    url: https://cos.northeastern.edu/faculty/geoffrey-trussell/  
   - name: Katie Lotterhos
     img: /img/people/katie-lotterhos-sq.png
     desc: Statistical genomicist and molecular ecologist. Assistant Professor at Northeastern University's Department of Marine and Environmental Sciences.
