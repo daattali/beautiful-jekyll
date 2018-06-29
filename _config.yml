@@ -233,6 +233,9 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
+         
+#Moving Blog Post
+paginate_path: "/blogposts/page:num/"
 
 plugins:
   - jekyll-paginate
