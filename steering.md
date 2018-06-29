@@ -10,7 +10,7 @@ pi-list:
     github: 
     twitter: 
   - name: Geoff Trussell
-    img: geoff-trussell
+    img: img/people/geoff-trussell
     desc: Evolutionary ecologist. Professor and Director of Northeastern University's Marine Science Center.
     website: https://web.northeastern.edu/trussell/
     url: https://cos.northeastern.edu/faculty/geoffrey-trussell/  
