@@ -3,7 +3,7 @@ title: People
 subtitle: The humans behind this project
 pi-list:
   - name: Katie Lotterhos
-    img: /img/people/katie-lotterhos.jpg
+    img: /img/people/katie-lotterhos.png
     desc: YO.
     website: https://sites.google.com/site/katielotterhos/home
     url: https://cos.northeastern.edu/faculty/katie-lotterhos/
