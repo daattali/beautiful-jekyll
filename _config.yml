@@ -25,11 +25,11 @@ description: A research coordinated network funded by the National Science Found
 navbar-links:
   How to join: "howtojoin"
   Steering Committee: "steering"
-  Timeline: 
-    - 2018 Coordinated readings: "aboutme"
-    - 2019 Synthesis Workshop: "aboutme"
-    - 2020 Genomics committee: "aboutme"
-    - 2021 Training and Integration: "aboutme"
+  Activities: 
+    - 2018 Coordinated readings: "2018-readings"
+    - 2019 Synthesis Workshop: "2019-workshop"
+    - 2020 Genomics committee: "2020-genomics"
+    - 2021 Training and Integration: "2021-training"
   Newsfeed: "blog"
 
 # Image to show in the navigation bar - image must be a square (width = height)
