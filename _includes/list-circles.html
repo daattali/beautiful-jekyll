@@ -1,0 +1,36 @@
+<div class="list-circles">
+  {% for item in include.items %}
+    <div class="list-circles-item">
+      {% if item.img %}
+        {% if item.url %}
+          <a href="{{ item.url }}"><img src="{{ item.img }}" class="item-img" /></a>
+        {% else %}
+          <img src="{{ item.img }}" class="item-img" />
+        {% endif %}
+      {% endif %}
+      {% if item.name %}
+        <h4 class="item-name">{{ item.name }}</h4>
+      {% endif %} 
+      {% if item.desc %}
+        <div class="item-desc">{{ item.desc }}</div>
+      {% endif %}
+      <div class="item-links">
+        {% if item.website %}
+          <a class="item-link" href="{{ item.website }}" title="Website">
+            <span class="fa fa-home"></span>
+          </a>
+        {% endif %}
+        {% if item.github %}
+          <a class="item-link" href="{{ item.github }}" title="GitHub">
+            <span class="fa fa-github"></span>
+          </a>
+        {% endif %}
+        {% if item.twitter %}
+          <a class="item-link" href="{{ item.twitter }}" title="Twitter">
+            <span class="fa fa-twitter"></span>
+          </a>
+        {% endif %}      
+      </div>
+    </div>
+  {% endfor %}
+</div>
