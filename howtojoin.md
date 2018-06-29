@@ -11,5 +11,8 @@ title: How to join
  
 ### Sign up for the listserv
  
+### Do we want a twitter handle (@rcn-ecs) or hastag (#rcn-ecs)?
+
+### Do we want an email?
  
 
