@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2019 Synthesis Workshop
-and working groups
+subtitle: and working groups
 ---
 
 This workshop will focus on what is unique about the ocean environment as a stage for evolution and adaptation to play out. 
