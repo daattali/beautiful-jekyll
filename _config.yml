@@ -24,6 +24,7 @@ description: A research coordinated network funded by the National Science Found
 # List of links in the navigation bar
 navbar-links:
   How to join: "howtojoin"
+  Steering Committee: "steering"
   Timeline: 
     - 2018 Coordinated readings: "aboutme"
     - 2019 Synthesis Workshop: "aboutme"
