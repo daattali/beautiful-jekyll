@@ -11,7 +11,7 @@ pi-list:
     twitter: https://twitter.com/drk_lo
 steering-list:
   - name: YOUR NAME HERE
-    img: 
+    img: /img/people/katie-lotterhos-sq.png
     desc: YO
     website: http://www.cdc.gov/amd/
     url: http://www.cdc.gov/amd/
