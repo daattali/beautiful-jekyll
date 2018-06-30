@@ -1,0 +1,1349 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+---
+title: "R Notebook"
+output: output: rmarkdown::github_document
+---
+
+
+
+
+
+eval: eval=TRUE– Is the code run and the results included in the output?
+include:	include=TRUE– Are the code and the results included in the output (the code is still run)?
+echo: echo=TRUE– Is the code displayed alongside the results?
+warning: warning=TRUE– Are warning messages displayed?
+error: error=FALSE– Are error messages displayed?
+message: message=TRUE– Are messages displayed?
+tidy: tidy=FALSE– Is the code reformatted to make it look “tidy”?
+results: results="markup"– How are results treated?
+cache: cache=FALSE– Are the results cached for future renders
+comment:comment="##"– What character are comments prefaced with?
+fig.width:, fig.width=7– What width (in inches) are the plots?
+fig.align: fig.align="left"– “left” “right” “center”
+
+Inserting Figures
+
+To manually set the figure dimensions, you can insert an instruction:
+```{r,fig.width=5,fig.height=5,echo=FALSE}
+
+plot(cars)
+
+
+
+```
+
+By default, figures are rendered as .png files by R Markdown, so you can change that to .svg, a vector file format by adding dev=”svg” to the code chunk instruction section.
+```{r,fig.width=5,fig.height=5,echo=FALSE,dev="svg"}
+plot(cars)
+```
+
+Inserting Tables
+
+While R Markdown can print the contents of a data frame easily by enclosing the name of the data frame in a code chunk this doea not seem the best idea.
+
+```{r,echo=FALSE}
+#dataframe
+```
+A better solution could be to use the table formatting function kable() in the knitr package like the example below:
+
+```{r,echo=FALSE}
+library(knitr)
+#kable(dataframe,digits=1)
+```
+
+Formatting Text
+
+Markdown syntax can be used to change how text appears in your output file, here are a few common formatting commands
+
+header 1: # header 1
+header 2: ## header 2
+header 3: ### header 3
+header 4: #### header 4
+bold text: **bold** text
+italics text: *italics* text
+code text: `code` text
+inlcude a link: [link](www.r exercises.com)
+Including a picture: R Studio Logo ![R Studio Logo](img/R Studio Logo.png)
+LaTeX equation syntax: $A = \pi \times r^{2}$
+
+You can also manually create small tables using markdown syntax.
+
+`:----:`:	Centre
+`:-----`:	Left
+`-----:`:	Right
+`------`:	Auto
+
+
+```{r}
+library(rmarkdown)
+render("1-example.Rmd", output_format = "word_document")
+```
+
+
+---
+title: "Habits"
+author: John  Doe
+date: March 22,2005
+output: revealjs::revealjs_presentation
+---
+
+
+
+
+
+---
+output:
+  revealjs::revealjs_presentation:
+    theme: sky
+    highlight: pygments
+    center: true
+---
+
+
+
+#### Presentations with Beamer
+Overview
+To create a Beamer presentation from R Markdown you specify the beamer_presentation output format in the front-matter of your document. You can create a slide show broken up into sections by using the # and ## heading tags (you can also create a new slide without a header using a horizontal rule (----). For example here’s a simple slide show:
+
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: beamer_presentation
+---
+
+
+---
+output:
+  beamer_presentation:
+    incremental: true
+---
+
+output:
+  beamer_presentation:
+    theme: "AnnArbor"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
+---
+
+
+#### Presentations with Beamer
+Overview
+To create a Beamer presentation from R Markdown you specify the beamer_presentation output format in the front-matter of your document. You can create a slide show broken up into sections by using the # and ## heading tags (you can also create a new slide without a header using a horizontal rule (----). For example here’s a simple slide show:
+
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: beamer_presentation
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+----
+
+![picture of spaghetti](images/spaghetti.jpg)
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+Within R Markdown documents that generate PDF output you can use raw LaTeX and even define LaTeX macros. See the documentation on Raw TeX for details.
+
+Incremental Bullets
+You can render bullets incrementally by adding the incremental option:
+
+---
+output:
+  beamer_presentation:
+    incremental: true
+---
+If you want to render bullets incrementally for some slides but not others you can use this syntax:
+
+> - Eat eggs
+> - Drink coffee
+Themes
+You can specify Beamer themes using the theme, colortheme, and fonttheme options:
+
+output:
+  beamer_presentation:
+    theme: "AnnArbor"
+    colortheme: "dolphin"
+    fonttheme: "structurebold"
+---
+Table of Contents
+The toc option specifies that a table of contents should be included at the beginning of the presentation (only level 1 headers will be included in the table of contents). For example:
+
+---
+output:
+  beamer_presentation:
+    toc: true
+---
+Slide Level
+The slide_level option defines the heading level that defines individual slides. By default this is the highest header level in the hierarchy that is followed immediately by content, and not another header, somewhere in the document. This default can be overridden by specifying an explicit slide_level:
+
+---
+output:
+  beamer_presentation:
+    slide_level: 2
+---
+Figure Options
+There are a number of options that affect the output of figures within Beamer presentations:
+
+fig_width and fig_height can be used to control the default figure width and height (6 x 4.5 is used by default)
+
+fig_crop controls whether the the pdfcrop utility (if available) is automatically applied to pdf figures (this is true by default).
+
+fig_caption controls whether figures are rendered with captions (this is true by default).
+
+dev controls the graphics device used to render figures (defaults to pdf)
+
+For example:
+
+---
+title: "Habits"
+output:
+  beamer_presentation:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+---
+Data Frame Printing
+You can enhance the default display of data frames via the df_print option. Valid values include:
+
+Option	Description
+default	Call the print.data.frame generic method
+kable	Use the knitr::kable function.
+tibble	Use the tibble::print.tbl_df function.
+For example:
+
+---
+title: "Habits"
+output:
+  html_document:
+    df_print: kable
+---
+Syntax Highlighting
+The highlight option specifies the syntax highlighting style. Supported styles include “default”, “tango”, “pygments”, “kate”, “monochrome”, “espresso”, “zenburn”, and “haddock” (specify null to prevent syntax highlighting):
+
+For example:
+
+---
+title: "Habits"
+output:
+  beamer_presentation:
+    highlight: tango
+---
+Advanced Customization
+Keeping Intermediate TeX
+R Markdown documents are converted to PDF by first converting to a TeX file and then calling the LaTeX engine to convert to PDF. By default this TeX file is removed, however if you want to keep it (e.g. for an article submission) you can specify the keep_tex option. For example:
+
+---
+title: "Habits"
+output:
+  beamer_presentation:
+    keep_tex: true
+---
+Includes
+You can do more advanced customization of PDF output by including additional LaTeX directives and/or content or by replacing the core pandoc template entirely. To include content in the document header or before/after the document body you use the includes option as follows:
+
+---
+title: "Habits"
+output:
+  beamer_presentation:
+    includes:
+      in_header: header.tex
+      before_body: doc_prefix.tex
+      after_body: doc_suffix.tex
+---
+Custom Templates
+You can also replace the underlying pandoc template using the template option:
+
+---
+title: "Habits"
+output:
+  beamer_presentation:
+    template: quarterly_report.tex
+---
+Consult the documentation on pandoc templates for additional details on templates. You can also study the default Beamer template as an example.
+
+Markdown Extensions
+By default R Markdown is defined as all pandoc markdown extensions with the following tweaks for backward compatibility with the markdown package:
+
++autolink_bare_uris
++ascii_identifier
++tex_math_single_backslash
+You can enable or disable markdown extensions using the md_extensions option (you preface an option with - to disable and + to enable it). For example:
+
+---
+title: "Habits"
+output:
+  html_document:
+    md_extensions: -autolink_bare_uris+hard_line_breaks
+---
+The above would disable the autolink_bare_uris extension and enable the hard_line_breaks extension.
+
+For more on available markdown extensions see the pandoc markdown specification.
+
+Pandoc Arguments
+If there are pandoc features you want to use that lack equivilants in the YAML options described above you can still use them by passing custom  pandoc_args. For example:
+
+---
+title: "Habits"
+output:
+  beamer_presentation:
+    pandoc_args: [
+      "--no-tex-ligatures"
+    ]
+---
+Documentation on all available pandoc arguments can be found in the pandoc user guide.
+
+Shared Options
+If you want to specify a set of default options to be shared by multiple documents within a directory you can include a file named  _output.yaml within the directory. Note that no YAML delimeters or enclosing output object are used in this file. For example:
+
+_output.yaml
+
+beamer_presentation:
+  toc: true
+  fig_width: 7
+  fig_height: 6
+All documents located in the same directory as _output.yaml will inherit it’s options. Options defined explicitly within documents will override those specified in the shared options file.
+
+
+
+
+
+
+
+
+
+
+
+#### Presentations with Slidy
+Overview
+To create a Slidy presentation from R Markdown you specify the slidy_presentation output format in the front-matter of your document. You can create a slide show broken up into sections by using the ## heading tag (you can also create a new slide without a header using a horizontal rule (----). For example here’s a simple slide show:
+
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: slidy_presentation
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+----
+
+![picture of spaghetti](images/spaghetti.jpg)
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+Display Modes
+The following single character keyboard shortcuts enable alternate display modes:
+
+'C' Show table of contents
+'F' Toggles the display of the footer
+'A' Toggles display of current vs all slides (useful for printing handouts)
+'S' Make fonts smaller
+'B' Make fonts larger
+Incremental Bullets
+You can render bullets incrementally by adding the incremental option:
+
+---
+output:
+  slidy_presentation:
+    incremental: true
+---
+If you want to render bullets incrementally for some slides but not others you can use this syntax:
+
+> - Eat eggs
+> - Drink coffee
+Appearance and Style
+There are several options that control the appearance of Slidy presentations:
+
+highlight specifies the syntax highlighting style. Supported styles include “default”, “tango”, “pygments”, “kate”, “monochrome”, “espresso”, “zenburn”, and “haddock”. Pass null to prevent syntax highlighting.
+
+smart indicates whether to produce typographically correct output, converting straight quotes to curly quotes, --- to em-dashes, -- to en-dashes, and ... to ellipses. Note that smart is enabled by default.
+
+For example:
+
+---
+output:
+  slidy_presentation:
+    highlight: pygments
+---
+Text Size
+You can use the font_adjustment option to increase or decrease the default font size (e.g. -1 or +1) for the entire presentation. For example:
+
+---
+output:
+  slidy_presentation:
+    font_adjustment: -1
+---
+If you want to decrease the text size on an individual slide you can use the .smaller slide attribute. For example:
+
+## Getting up {.smaller}
+If you want to increase the text size on an indvidual slide you can use the .bigger slide attribute. For example:
+
+## Getting up {.bigger}
+You can also manually adjust the font size during the presentation using the ‘S’ (smaller) and ‘B’ (bigger) keys.
+
+Custom CSS
+You can add your own CSS to a Slidy presentation using the css option:
+
+---
+output:
+  slidy_presentation:
+    css: styles.css
+---
+You can also target specific slides or classes of slice with custom CSS by adding ids or classes to the slides headers within your document. For example the following slide header:
+
+## Next Steps {#nextsteps .emphasized}
+Would enable you to apply CSS to all of it’s content using either of the following CSS selectors:
+
+#nextsteps {
+   color: blue;
+}
+
+.emphasized {
+   font-size: 1.2em;
+}
+Footer Elements
+You can add a countdown timer to the footer of your slides using the duration option (duration is specified in minutes). For example:
+
+---
+output:
+  slidy_presentation:
+    duration: 45
+---
+You can also add custom footer text (e.g. organization name and/or copyright) using the footer option. For example:
+
+---
+output:
+  slidy_presentation:
+    footer: "Copyright (c) 2014, RStudio"
+---
+Printing and PDF Output
+You can print a Slidy presentation from within browsers that have good support for print CSS (i.e. as of this writing Google Chrome has the best support). Printing maintains most of the visual styles of the HTML version of the presentation.
+
+To create a PDF version of a presentation you can use Print to PDF from Google Chrome.
+
+Figure Options
+There are a number of options that affect the output of figures within Slidy presentations:
+
+fig_width and fig_height can be used to control the default figure width and height (7x5 is used by default)
+
+fig_retina Specifies the scaling to perform for retina displays (defaults to 2, which currently works for all widely used retina displays). Note that this only takes effect if you are using knitr >= 1.5.21. Set to null to prevent retina scaling.
+
+fig_caption controls whether figures are rendered with captions
+
+dev controls the graphics device used to render figures (defaults to png)
+
+For example:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+---
+Data Frame Printing
+You can enhance the default display of data frames via the df_print option. Valid values include:
+
+Option	Description
+default	Call the print.data.frame generic method
+kable	Use the knitr::kable function.
+tibble	Use the tibble::print.tbl_df function.
+paged	Create a pageable HTML table
+For example:
+
+---
+title: "Habits"
+output:
+  html_document:
+    df_print: paged
+---
+MathJax Equations
+By default MathJax scripts are included in Slidy presentations for rendering LaTeX and MathML equations. You can use the mathjax option to control how MathJax is included:
+
+Specify “default” to use an https URL from the official MathJax CDN.
+
+Specify “local” to use a local version of MathJax (which is copied into the output directory). Note that when using “local” you also need to set the self_contained option to false.
+
+Specify an alternate URL to load MathJax from another location.
+
+Specify null to exclude MathJax entirely.
+
+For example, to use a local copy of MathJax:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    mathjax: local
+    self_contained: false
+---
+To use a self-hosted copy of MathJax:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    mathjax: "http://example.com/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+---
+To exclude MathJax entirely:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    mathjax: null
+---
+Document Dependencies
+By default R Markdown produces standalone HTML files with no external dependencies, using data: URIs to incorporate the contents of linked scripts, stylesheets, images, and videos. This means you can share or publish the file just like you share Office documents or PDFs. If you’d rather have keep depenencies in external files you can specify self_contained: false. For example:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    self_contained: false
+---
+Note that even for self contained documents MathJax is still loaded externally (this is necessary because of it’s size). If you want to serve MathJax locally then you should specify mathjax: local and self_contained: false.
+
+One common reason keep dependencies external is for serving R Markdown documents from a website (external dependencies can be cached separately by browsers leading to faster page load times). In the case of serving multiple R Markdown documents you may also want to consolidate dependent library files (e.g. Bootstrap, MathJax, etc.) into a single directory shared by multiple documents. You can use the  lib_dir option to do this, for example:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    self_contained: false
+    lib_dir: libs
+---
+Advanced Customization
+Keeping Markdown
+When knitr processes an R Markdown input file it creates a markdown (md) file which is subsequently tranformed into HTML by pandoc. If you want to keep a copy of the markdown file after rendering you can do so using the keep_md option:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    keep_md: true
+---
+Includes
+You can do more advanced customization of output by including additional HTML content or by replacing the core pandoc template entirely. To include content in the document header or before/after the document body you use the includes option as follows:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    includes:
+      in_header: header.html
+      before_body: doc_prefix.html
+      after_body: doc_suffix.html
+---
+Custom Templates
+You can also replace the underlying pandoc template using the template option:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    template: quarterly_report.html
+---
+Consult the documentation on pandoc templates for additional details on templates. You can also study the default HTML template as an example.
+
+Markdown Extensions
+By default R Markdown is defined as all pandoc markdown extensions with the following tweaks for backward compatibility with the markdown package:
+
++autolink_bare_uris
++ascii_identifier
++tex_math_single_backslash
+You can enable or disable markdown extensions using the md_extensions option (you preface an option with - to disable and + to enable it). For example:
+
+---
+title: "Habits"
+output:
+  html_document:
+    md_extensions: -autolink_bare_uris+hard_line_breaks
+---
+The above would disable the autolink_bare_uris extension and enable the hard_line_breaks extension.
+
+For more on available markdown extensions see the pandoc markdown specification.
+
+Pandoc Arguments
+If there are pandoc features you want to use that lack equivilants in the YAML options described above you can still use them by passing custom  pandoc_args. For example:
+
+---
+title: "Habits"
+output:
+  slidy_presentation:
+    pandoc_args: [
+      "--title-prefix", "Foo",
+      "--id-prefix", "Bar"
+    ]
+---
+Documentation on all available pandoc arguments can be found in the pandoc user guide.
+
+Shared Options
+If you want to specify a set of default options to be shared by multiple documents within a directory you can include a file named  _output.yaml within the directory. Note that no YAML delimeters or enclosing output object are used in this file. For example:
+
+_output.yaml
+
+slidy_presentation:
+  incremental: true
+  highlight: pygments
+All documents located in the same directory as _output.yaml will inherit it’s options. Options defined explicitly within documents will override those specified in the shared options file.
+
+
+
+
+
+
+#### Presentations with ioslides
+Overview
+To create an ioslides presentation from R Markdown you specify the ioslides_presentation output format in the front-matter of your document. You can create a slide show broken up into sections by using the # and ## heading tags (you can also create a new slide without a header using a horizontal rule (----). For example here’s a simple slide show:
+
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: ioslides_presentation
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+----
+
+![picture of spaghetti](images/spaghetti.jpg)
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+You can add a subtitle to a slide or section by including text after the pipe (|) character. For example:
+
+## Getting up | What I like to do first thing
+Display Modes
+The following single character keyboard shortcuts enable alternate display modes:
+
+'f' enable fullscreen mode
+
+'w' toggle widescreen mode
+
+'o' enable overview mode
+
+'h' enable code highlight mode
+
+'p' show presenter notes
+
+Pressing Esc exits all of these modes. See the sections below on Code Highlighting and Presenter Mode for additional detail on those modes.
+
+Incremental Bullets
+You can render bullets incrementally by adding the incremental option:
+
+---
+output:
+  ioslides_presentation:
+    incremental: true
+---
+If you want to render bullets incrementally for some slides but not others you can use this syntax:
+
+> - Eat eggs
+> - Drink coffee
+Visual Appearance
+Presentation Size
+You can display the presentation using a wider form factor using the widescreen option. You can specify that smaller text be used with the  smaller option. For example:
+
+---
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+---
+You can also enable the smaller option on a slide-by-slide basis by adding the .smaller attribute to the slide header:
+
+## Getting up {.smaller}
+Transition Speed
+You can customize the speed of slide transitions using transition option. This can be “default”, “slower”, “faster”, or a numeric value with a number of seconds (e.g. 0.5) . For example:
+
+---
+output:
+  ioslides_presentation:
+    transition: slower
+---
+Build Slides
+Slides can also have a .build attribute that indicate that their content should be displayed incrementally. For example:
+
+## Getting up {.build}
+Slide attributes can be combined if you need to specify more than one, for example:
+
+## Getting up {.smaller .build}
+Custom CSS
+You can add your own CSS to an ioslides presentation using the css option:
+
+---
+output:
+  ioslides_presentation:
+    css: styles.css
+---
+You can also target specific slides or classes of slice with custom CSS by adding ids or classes to the slides headers within your document. For example the following slide header:
+
+## Next Steps {#nextsteps .emphasized}
+Would enable you to apply CSS to all of it’s content using either of the following CSS selectors:
+
+#nextsteps {
+   color: blue;
+}
+
+.emphasized {
+   font-size: 1.2em;
+}
+Code Highlighting
+It’s possible to select subsets of code for additional emphasis by adding a special “highlight” comment around the code. For example:
+
+### <b>
+x <- 10
+y <- x * 2
+### </b>
+The highlighted region will be displayed with a bold font. When you want to help the audience focus exclusively on the highlighted region press the 'h' key and the rest of the code will fade away.
+
+Adding a Logo
+You can add a logo to the presentation using the logo option (by default, the logo will be displayed in a 85x85 pixel square). For example:
+
+---
+output:
+  ioslides_presentation:
+    logo: logo.png
+---
+The logo graphic will be rescaled to 85x85 (if necessary) and added to the title slide. A smaller icon version of the logo will be included in the bottom-left footer of each slide.
+
+The logo on the title page and the rectangular element containing it can be customised with CSS. For example:
+
+.gdbar img {
+  width: 300px !important;
+  height: 150px !important;
+  margin: 8px 8px;
+}
+
+.gdbar {
+  width: 400px !important;
+  height: 170px !important;
+}
+These selectors are to be placed in the CSS text file.
+
+Similarly, the logo in the footer of each slide can be resized to any desired size. For example:
+
+slides > slide:not(.nobackground):before {
+  width: 150px;
+  height: 75px;
+  background-size: 150px 75px;
+}
+This will make the footer logo 150 by 75 pixels in size.
+
+Tables
+The ioslides template has an attractive default style for tables so you shouldn’t hesitate to add tables for presenting more complex sets of information. Pandoc markdown supports several syntaxes for defining tables which are described in the pandoc markdown specification.
+
+Advanced Layout
+You can center content on a slide by adding the .flexbox and .vcenter attributes to the slide title. For example:
+
+## Dinner {.flexbox .vcenter}
+You can horizontally center content by enclosing it in a div tag with class centered. For example:
+
+<div class="centered">
+This text is centered.
+</div>
+You can do a two-column layout using the columns-2 class. For example:
+
+<div class="columns-2">
+  ![](image.png)
+
+  - Bullet 1
+  - Bullet 2
+  - Bullet 3
+</div>
+Note that content will flow across the columns so if you want to have an image on one side and text on the other you should make sure that the image has sufficient height to force the text to the other side of the slide.
+
+Text Color
+You can color content using base color classes red, blue, green, yellow, and gray (or variations of them e.g. red2, red3, blue2, blue3, etc.). For example:
+
+<div class="red2">
+This text is red
+</div>
+Presenter Mode
+A separate presenter window can also be opened (ideal for when you are presenting on one screen but have another screen that’s private to you). The window stays in sync with the main presentation window and also shows presenter notes and a thumbnail of the next slide. To enable presenter mode add ?presentme=true to the URL of the presentation, for example:
+
+mypresentation.html?presentme=true
+The presenter mode window will open and will always re-open with the presentation until it’s disabled with:
+
+mypresentation.html?presentme=false
+To add presenter notes to a slide you include it within a “notes” div. For example:
+
+<div class="notes">
+This is my *note*.
+
+- It can contain markdown
+- like this list
+
+</div>
+Printing and PDF Output
+You can print an ioslides presentation from within browsers that have good support for print CSS (i.e. as of this writing Google Chrome has the best support). Printing maintains most of the visual styles of the HTML version of the presentation.
+
+To create a PDF version of a presentation you can use Print to PDF from Google Chrome.
+
+Figure Options
+There are a number of options that affect the output of figures within ioslides presentations:
+
+fig_width and fig_height can be used to control the default figure width and height (7x5 is used by default)
+
+fig_retina Specifies the scaling to perform for retina displays (defaults to 2, which currently works for all widely used retina displays). Note that this only takes effect if you are using knitr >= 1.5.21. Set to null to prevent retina scaling.
+
+fig_caption controls whether figures are rendered with captions
+
+dev controls the graphics device used to render figures (defaults to png)
+
+For example:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+---
+Data Frame Printing
+You can enhance the default display of data frames via the df_print option. Valid values include:
+
+Option	Description
+default	Call the print.data.frame generic method
+kable	Use the knitr::kable function.
+tibble	Use the tibble::print.tbl_df function.
+paged	Create a pageable HTML table
+For example:
+
+---
+title: "Habits"
+output:
+  html_document:
+    df_print: paged
+---
+MathJax Equations
+By default MathJax scripts are included in ioslides presentations for rendering LaTeX and MathML equations. You can use the mathjax option to control how MathJax is included:
+
+Specify “default” to use an https URL from the official MathJax CDN.
+
+Specify “local” to use a local version of MathJax (which is copied into the output directory). Note that when using “local” you also need to set the self_contained option to false.
+
+Specify an alternate URL to load MathJax from another location.
+
+Specify null to exclude MathJax entirely.
+
+For example, to use a local copy of MathJax:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    mathjax: local
+    self_contained: false
+---
+To use a self-hosted copy of MathJax:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    mathjax: "http://example.com/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+---
+To exclude MathJax entirely:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    mathjax: null
+---
+Document Dependencies
+By default R Markdown produces standalone HTML files with no external dependencies, using data: URIs to incorporate the contents of linked scripts, stylesheets, images, and videos. This means you can share or publish the file just like you share Office documents or PDFs. If you’d rather have keep depenencies in external files you can specify self_contained: false. For example:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    self_contained: false
+---
+Note that even for self contained documents MathJax is still loaded externally (this is necessary because of it’s size). If you want to serve MathJax locally then you should specify mathjax: local and self_contained: false.
+
+One common reason keep dependencies external is for serving R Markdown documents from a website (external dependencies can be cached separately by browsers leading to faster page load times). In the case of serving multiple R Markdown documents you may also want to consolidate dependent library files (e.g. Bootstrap, MathJax, etc.) into a single directory shared by multiple documents. You can use the  lib_dir option to do this, for example:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    self_contained: false
+    lib_dir: libs
+---
+Advanced Customization
+Keeping Markdown
+When knitr processes an R Markdown input file it creates a markdown (md) file which is subsequently tranformed into HTML by pandoc. If you want to keep a copy of the markdown file after rendering you can do so using the keep_md option:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    keep_md: true
+---
+Includes
+You can do more advanced customization of output by including additional HTML content or by replacing the core pandoc template entirely. To include content in the document header or before/after the document body you use the includes option as follows:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    includes:
+      in_header: header.html
+      before_body: doc_prefix.html
+      after_body: doc_suffix.html
+---
+Custom Templates
+You can also replace the underlying pandoc template using the template option:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    template: quarterly_report.html
+---
+Consult the documentation on pandoc templates for additional details on templates. You can also study the default HTML template as an example.
+
+The level of customisation that can be achieved is limited. The slides are generated by custom formatting written in Lua and as such the template used must include the string RENDERED_SLIDES as can be found in the file with path  rmarkdown:::rmarkdown_system_file("rmd/ioslides/default.html").
+
+Markdown Extensions
+By default R Markdown is defined as all pandoc markdown extensions with the following tweaks for backward compatibility with the markdown package:
+
++autolink_bare_uris
++ascii_identifier
++tex_math_single_backslash
+You can enable or disable markdown extensions using the md_extensions option (you preface an option with - to disable and + to enable it). For example:
+
+---
+title: "Habits"
+output:
+  html_document:
+    md_extensions: -autolink_bare_uris+hard_line_breaks
+---
+The above would disable the autolink_bare_uris extension and enable the hard_line_breaks extension.
+
+For more on available markdown extensions see the pandoc markdown specification.
+
+Pandoc Arguments
+If there are pandoc features you want to use that lack equivilants in the YAML options described above you can still use them by passing custom  pandoc_args. For example:
+
+---
+title: "Habits"
+output:
+  ioslides_presentation:
+    pandoc_args: [
+      "--title-prefix", "Foo",
+      "--id-prefix", "Bar"
+    ]
+---
+Documentation on all available pandoc arguments can be found in the pandoc user guide.
+
+Shared Options
+If you want to specify a set of default options to be shared by multiple documents within a directory you can include a file named  _output.yaml within the directory. Note that no YAML delimeters or enclosing output object are used in this file. For example:
+
+_output.yaml
+
+ioslides_presentation:
+  widescreen: true
+  smaller: true
+All documents located in the same directory as _output.yaml will inherit its options. Options defined explicitly within documents will override those specified in the shared options file.
+
+
+
+
+
+
+
+
+
+#### Presentations with reveal.js
+Installation
+Note that the revealjs_presentation format is not contained within the rmarkdown package but rather in a separate revealjs package. You can use this format in R Markdown documents by installing this package as follows:
+
+install.packages("revealjs")
+Overview
+To create a reveal.js presentation from R Markdown you specify the revealjs_presentation output format in the front-matter of your document. You can create a slide show broken up into sections by using the # and ## heading tags (you can also create a new slide without a header using a horizontal rule (----). For example here’s a simple slide show:
+
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: revealjs::revealjs_presentation
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+Display Modes
+The following single character keyboard shortcuts enable alternate display modes:
+
+'f' enable fullscreen mode
+
+'o' enable overview mode
+
+Pressing Esc exits all of these modes.
+
+Incremental Bullets
+You can render bullets incrementally by adding the incremental option:
+
+---
+output:
+  revealjs::revealjs_presentation:
+    incremental: true
+---
+If you want to render bullets incrementally for some slides but not others you can use this syntax:
+
+> - Eat eggs
+> - Drink coffee
+Appearance and Style
+There are several options that control the appearance of revealjs presentations:
+
+theme specifies the theme to use for the presentation (available themes are “default”, “simple”, “sky”, “beige”, “serif”, “solarized”, “blood”, “moon”, “night”, “black”, “league” or “white”).
+
+highlight specifies the syntax highlighting style. Supported styles include “default”, “tango”, “pygments”, “kate”, “monochrome”, “espresso”, “zenburn”, and “haddock”. Pass null to prevent syntax highlighting.
+
+center specifies whether you want to vertically center content on slides (this defaults to false).
+
+smart indicates whether to produce typographically correct output, converting straight quotes to curly quotes, --- to em-dashes, -- to en-dashes, and ... to ellipses. Note that smart is enabled by default.
+
+For example:
+
+---
+output:
+  revealjs::revealjs_presentation:
+    theme: sky
+    highlight: pygments
+    center: true
+---
+Smaller Text
+If you need smaller text for certain paragraphs, you can enclose text in the <small> tag. For example:
+
+<small>This sentence will appear smaller.</small>
+Slide Transitions
+You can use the transition and background_transition optoins to specify the global default slide transition style:
+
+transition specifies the visual effect when moving between slides. Available transitions are “default”, “fade”, “slide”, “convex”, “concave”, “zoom” or “none”.
+
+background_transition specifies the background transition effect when moving between full page slides. Available transitions are “default”, “fade”, “slide”, “convex”, “concave”, “zoom” or “none”.
+
+For example:
+
+---
+output:
+  revealjs::revealjs_presentation:
+    transition: fade
+---
+You can override the global transition for a specific slide by using the data-transition attribute, for example:
+
+## Use a zoom transition {data-transition="zoom"}
+
+## Use a faster speed {data-transition-speed="fast"}
+You can also use different in and out transitions for the same slide, for example:
+
+## Fade in, Slide out {data-transition="slide-in fade-out"}
+
+## Slide in, Fade out {data-transition="fade-in slide-out"}
+Slide Backgrounds
+Slides are contained within a limited portion of the screen by default to allow them to fit any display and scale uniformly. You can apply full page backgrounds outside of the slide area by adding a data-background attribute to your slide header element. Four different types of backgrounds are supported: color, image, video and iframe. Below are a few examples.
+
+## CSS color background {data-background=#ff0000}
+
+## Full size image background {data-background="background.jpeg"}
+
+## Video background {data-background-video="background.mp4"}
+
+## Embed a web page as a background {data-background-iframe="https://example.com"}
+Backgrounds transition using a fade animation by default. This can be changed to a linear sliding transition by specifying the  background-transition: slide. Alternatively you can set data-background-transition on any slide with a background to override that specific transition.
+
+2-D Presenations
+You can use the slide_level option to specify which level of heading will be used to denote individual slides. If slide_level is 2 (the default), a two-dimensional layout will be produced, with level 1 headers building horizontally and level 2 headers building vertically. For example:
+
+# Horizontal Slide 1
+
+## Vertical Slide 1
+
+## Vertical Slide 2
+
+# Horizontal Slide 2
+With this layout horizontal navigation will proceed directly from “Horizontal Slide 1” to “Horizontal Slide 2”, with vertical navigation to “Vertical Slide 1”, etc. presented as an option on “Horizontal Slide 1”.
+
+Custom CSS
+You can add your own CSS to a reveal.js presentation using the css option:
+
+---
+output:
+  revealjs::revealjs_presentation:
+    css: styles.css
+---
+If you want to override the appearance of particular HTML element document wide you need to be sure to qualify it with the .reveal section preface in your CSS. For example, to change the default text color in paragraphs to blue you’d use:
+
+.reveal section p {
+  color: blue;
+}
+Slide IDs and Classes
+You can also target specific slides or classes of slice with custom CSS by adding ids or classes to the slides headers within your document. For example the following slide header:
+
+## Next Steps {#nextsteps .emphasized}
+Would enable you to apply CSS to all of it’s content using either of the following CSS selectors:
+
+#nextsteps {
+   color: blue;
+}
+
+.emphasized {
+   font-size: 1.2em;
+}
+Styling Text Spans
+You can apply classes defined in your CSS file to spans of text by using a span tag. For example:
+
+<span class="emphasized">Pay attention to this!</span>
+Reveal.js Options
+Reveal.js has many additional options to conigure it’s behavior. You can specify any of these options using reveal_options, for example:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+---
+You can find documentation on the various available Reveal.js options here: https://github.com/hakimel/reveal.js#configuration.
+
+Figure Options
+There are a number of options that affect the output of figures within reveal.js presentations:
+
+fig_width and fig_height can be used to control the default figure width and height (7x5 is used by default)
+
+fig_retina Specifies the scaling to perform for retina displays (defaults to 2, which currently works for all widely used retina displays). Note that this only takes effect if you are using knitr >= 1.5.21. Set to null to prevent retina scaling.
+
+fig_caption controls whether figures are rendered with captions
+
+For example:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+---
+MathJax Equations
+By default MathJax scripts are included in reveal.js presentations for rendering LaTeX and MathML equations. You can use the mathjax option to control how MathJax is included:
+
+Specify “default” to use an https URL from the official MathJax CDN.
+
+Specify “local” to use a local version of MathJax (which is copied into the output directory). Note that when using “local” you also need to set the self_contained option to false.
+
+Specify an alternate URL to load MathJax from another location.
+
+Specify null to exclude MathJax entirely.
+
+For example, to use a local copy of MathJax:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    mathjax: local
+    self_contained: false
+---
+To use a self-hosted copy of MathJax:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    mathjax: "http://example.com/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+---
+To exclude MathJax entirely:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    mathjax: null
+---
+Document Dependencies
+By default R Markdown produces standalone HTML files with no external dependencies, using data: URIs to incorporate the contents of linked scripts, stylesheets, images, and videos. This means you can share or publish the file just like you share Office documents or PDFs. If you’d rather have keep depenencies in external files you can specify self_contained: false. For example:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+---
+Note that even for self contained documents MathJax is still loaded externally (this is necessary because of it’s size). If you want to serve MathJax locally then you should specify mathjax: local and self_contained: false.
+
+One common reason keep dependencies external is for serving R Markdown documents from a website (external dependencies can be cached separately by browsers leading to faster page load times). In the case of serving multiple R Markdown documents you may also want to consolidate dependent library files (e.g. Bootstrap, MathJax, etc.) into a single directory shared by multiple documents. You can use the  lib_dir option to do this, for example:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    lib_dir: libs
+---
+Reveal Plugins
+You can enable various reveal.js plugins using the reveal_plugins option. Plugins currently supported include:
+
+Plugin	Description
+notes	Present per-slide notes in a separate browser window.
+zoom	Zoom in and out of selected content with Alt+Click.
+search	Find a text string anywhere in the slides and show the next occurrence to the user.
+chalkboard	Include handwritten notes within a presentation.
+Note that the use of plugins requires that the self_contained option be set to false. For example, this presentation includes both the “notes” and “search” plugins:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["notes", "search"]
+---
+You can specify additional options for the chalkboard plugin using reveal_options, for example:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["chalkboard"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+        toggleNotesButton: false
+---
+Advanced Customization
+Includes
+You can do more advanced customization of output by including additional HTML content or by replacing the core pandoc template entirely. To include content in the document header or before/after the document body you use the includes option as follows:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    includes:
+      in_header: header.html
+      before_body: doc_prefix.html
+      after_body: doc_suffix.html
+---
+Pandoc Arguments
+If there are pandoc features you want to use that lack equivilants in the YAML options described above you can still use them by passing custom  pandoc_args. For example:
+
+---
+title: "Habits"
+output:
+  revealjs::revealjs_presentation:
+    pandoc_args: [
+      "--title-prefix", "Foo",
+      "--id-prefix", "Bar"
+    ]
+---
+Documentation on all available pandoc arguments can be found in the pandoc user guide.
+
+Shared Options
+If you want to specify a set of default options to be shared by multiple documents within a directory you can include a file named  _output.yaml within the directory. Note that no YAML delimeters or enclosing output object are used in this file. For example:
+
+_output.yaml
+
+revealjs::revealjs_presentation:
+  theme: sky
+  transition: fade
+  highlight: pygments
+All documents located in the same directory as _output.yaml will inherit it’s options. Options defined explicitly within documents will override those specified in the shared options file.
+
+© Copyright 2016 RStudio Inc.
+   
