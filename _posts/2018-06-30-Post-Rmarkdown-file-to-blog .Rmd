@@ -1,0 +1,66 @@
+---
+layout: post
+title: " Rendering Rmarkdown  file for a blog post"
+output: 
+  html_document:
+    keep_md: true
+author: Nana Boateng
+#toc: true
+toc_depth: 2
+df_print: paged
+Time: '`r Sys.time()`'
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+tags: R ggplot
+---
+
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/rmarkdown",fig.retina=2
+)
+```
+
+
+Load Required Packages
+---------------------------------
+
+```{r}
+pacman::p_load(skimr,kable,kableExtra,tidyverse)
+# Load the caret package
+library(caret)
+
+# Import dataset
+orange <- read.csv('https://raw.githubusercontent.com/selva86/datasets/master/orange_juice_withmissing.csv')
+
+# Structure of the dataframe
+str(orange)
+
+# See top 6 rows and 10 columns
+head(orange[, 1:10])
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+Creating a Table
+---------------------------------
+
+
+```{r}
+library(tidyverse)
+library(DT)
+
+kableExtra::kable(orange[1:10, 1:10])
+
+DT::datatable(orange[1:10, 1:10])
+
+
+```
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+orange%>%ggplot(aes(PriceMM,color=Purchase))+geom_density()
+```
