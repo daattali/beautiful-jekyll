@@ -9,7 +9,9 @@ use-site-title: true
 We are a network of marine scientists, evolutionary biologists, and oceanographers working to develop integrated frameworks for studying adaptation to ocean change.
 
 We are grateful to the National Science Foundation for funding our network activities:
-![NSF-logo](/img/Nsf-logo.png)
+<p align="center">
+  <img src="/img/Nsf-logo.png">
+</p>
 
 {: .box-note}
 **Keywords:** coupling oceanographic and evolutionary processes, local adaptation and maladaptation, co- and counter-gradient variation, adaptive and maladative plasticity, evolution of function-valued traits, epigenetics and transgenerational plasticity
