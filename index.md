@@ -11,7 +11,7 @@ We are a network of marine scientists, evolutionary biologists, and oceanographe
 <p align="center">
  We are grateful to the National Science Foundation for funding our network activities
  <br><br>
-  <img src="/img/Nsf-logo.png">
+  <img src="/img/Nsf-logo.png" style="width:100px;height:100px;">
 </p>
 
 {: .box-note}
