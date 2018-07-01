@@ -8,8 +8,8 @@ use-site-title: true
 {: .box-note}
 We are a network of marine scientists, evolutionary biologists, and oceanographers working to develop integrated frameworks for studying adaptation to ocean change.
 
-We are grateful to the National Science Foundation for funding our network activities:
 <p align="center">
+ We are grateful to the National Science Foundation for funding our network activities
   <img src="/img/Nsf-logo.png">
 </p>
 
