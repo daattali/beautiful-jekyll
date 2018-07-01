@@ -6,7 +6,7 @@ pi-list:
     img: /img/people/dan-bolnick.jpg
     desc: DESCRIPTION. Professor at the University of Conneticut.
     website: 
-    url: 
+    url:  
     github: 
     twitter:
   - name: Morgan Kelly
