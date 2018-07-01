@@ -24,7 +24,7 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
  
      
      
-###  Education
+**Education**
 
  
 * Ph.D (2016),  Statistics, University of Memphis
