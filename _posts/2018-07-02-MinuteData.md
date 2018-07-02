@@ -1,3 +1,12 @@
+---
+layout: post
+title: Download Free Intraday Stock Data from Google Finance with Python
+subtitle: Finance
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [test]
+---
+
 
 #### Download Free Intraday Stock Data from Google Finance with Python
 
