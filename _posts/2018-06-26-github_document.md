@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Rendering markdown file for github
@@ -7,6 +6,10 @@ gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
 ---
+
+
+
+
 
 Rendering markdown file for github
 ================
