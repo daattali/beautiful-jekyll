@@ -1,16 +1,17 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: jaggygames
+subtitle: hobby game developer
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello! I'm Johnny and I like to make games using the [Godot game engine](https://godotengine.org).
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Other hobbies I have include:
 
-What else do you need?
+* traveling
+* singing and playing guitar
+* playing Dungeons and Dragons
+* voice acting
 
-### my history
+You can follow me on [Twitter](https://twitter.com/jaggygames) for further updates!
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
