@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our Curriculum, Part 1
+title: Our curriculum, Part 1
 subtitle: Computer Science & Machine Learning
 ---
 
