@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing our students
+title: Introducing our 2017-18 cohort
 ---
 
 This is an exciting time for the UBC MDS program, with the second cohort starting their journey in just a few days. 
