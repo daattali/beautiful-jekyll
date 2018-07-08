@@ -38,12 +38,55 @@ pi-list:
 
 
 steering-list:
-  - name: NAME HERE
+  - name: Randall Hughes
+    img: http://www.civ.neu.edu/sites/default/files/portraits/affiliated/hughes-r.jpg
+    desc:  DESCRIPTION.
+    website: https://cos.northeastern.edu/faculty/randall-hughes/
+    url: https://cos.northeastern.edu/faculty/randall-hughes/
+    twitter: 
+  - name: Carly Kenkel
     img: 
-    desc: YO
+    desc:  DESCRIPTION.
+    website: 
+    url: 
+    twitter:  
+  - name: John Largier
+    img: 
+    desc:  DESCRIPTION.
+    website: 
+    url: 
+    twitter:
+  - name: Nina Overgaard Thirkildsen
+    img: 
+    desc:  DESCRIPTION.
     website: 
     url: 
     twitter: 
+  - name: Oz Schmitz
+    img: 
+    desc:  DESCRIPTION.
+    website: 
+    url: 
+    twitter: 
+  - name: Eric Sotka 
+    img: 
+    desc:  DESCRIPTION.
+    website: 
+    url: 
+    twitter: 
+  - name: John Wares
+    img: 
+    desc:  DESCRIPTION.
+    website: 
+    url: 
+    twitter: 
+  - name: Huijie Xue
+    img: 
+    desc:  DESCRIPTION.
+    website: 
+    url: 
+    twitter: 
+    
 ---
 
 ## PIs
@@ -51,6 +94,8 @@ steering-list:
 {% include list-circles.html items=page.pi-list %}
 
 ## Steering Committee
+
+We are still seeking 1-2 non-marine evolutionary geneticists to join our steering committee. Please contact the PIs if you are interested!
 
 {% include list-circles.html items=page.steering-list %}
     
