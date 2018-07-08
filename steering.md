@@ -44,48 +44,56 @@ steering-list:
     website: https://cos.northeastern.edu/faculty/randall-hughes/
     url: https://cos.northeastern.edu/faculty/randall-hughes/
     twitter: 
+    github:
   - name: Carly Kenkel
     img: https://dornsife.usc.edu/tools/mytools/PersonnelInfoSystem/DOC/Faculty/BISC/photo_1016828.jpg
-    desc:  DESCRIPTION. Gabilan Assistant Professor of Biological Sciences
+    desc:  DESCRIPTION. Gabilan Assistant Professor of Biological Sciences at the University of Southern California, Dornsife.
     website: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     url: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     twitter:  
+    github:
   - name: John Largier
-    img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    img: http://bml.ucdavis.edu/research/faculty/john-largier/
+    desc:  DESCRIPTION. University of California, Davis. Professor Department of Environmental Science and Policy, and the Bodega Marine Laboratory. Associate Director of Research, Coastal & Marine Sciences Institute
+    website: http://bml.ucdavis.edu/research/faculty/john-largier/
+    url: http://bml.ucdavis.edu/research/faculty/john-largier/
     twitter:
+    github:
   - name: Nina Overgaard Thirkildsen
-    img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    img: https://dnr.cals.cornell.edu/people/nina-therkildsen/
+    desc:  DESCRIPTION. Assistant Professor in the Department of Natural Resources at Cornell University.
+    website: https://dnr.cals.cornell.edu/people/nina-therkildsen/
+    url: https://dnr.cals.cornell.edu/people/nina-therkildsen/
     twitter: 
+    github:
   - name: Oz Schmitz
     img: 
     desc:  DESCRIPTION.
     website: 
     url: 
     twitter: 
+    github:
   - name: Eric Sotka 
     img: 
     desc:  DESCRIPTION.
     website: 
     url: 
     twitter: 
+    github:
   - name: John Wares
     img: 
     desc:  DESCRIPTION.
     website: 
     url: 
     twitter: 
+    github:
   - name: Huijie Xue
     img: 
     desc:  DESCRIPTION.
     website: 
     url: 
     twitter: 
+    github:
     
 ---
 
