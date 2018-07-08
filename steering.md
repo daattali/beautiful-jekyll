@@ -39,7 +39,7 @@ pi-list:
 
 steering-list:
   - name: Randall Hughes
-    img: http://www.civ.neu.edu/sites/default/files/portraits/affiliated/hughes-r.jpg
+    img: /img/people/randall-hughes.jpg
     desc:  DESCRIPTION. Associate Professor at Northeastern University's Department of Marine and Environmental Sciences.
     website: https://cos.northeastern.edu/faculty/randall-hughes/
     url: https://cos.northeastern.edu/faculty/randall-hughes/
@@ -53,28 +53,28 @@ steering-list:
     twitter:  
     github:
   - name: John Largier
-    img: http://bml.ucdavis.edu/research/faculty/john-largier/
+    img: /img/people/largier.jpg
     desc:  DESCRIPTION. University of California, Davis. Professor Department of Environmental Science and Policy, and the Bodega Marine Laboratory. Associate Director of Research, Coastal & Marine Sciences Institute
     website: http://bml.ucdavis.edu/research/faculty/john-largier/
     url: http://bml.ucdavis.edu/research/faculty/john-largier/
     twitter:
     github:
   - name: Nina Overgaard Thirkildsen
-    img: https://dnr.cals.cornell.edu/people/nina-therkildsen/
+    img: /img/people/Therkildsen.jpg
     desc:  DESCRIPTION. Assistant Professor in the Department of Natural Resources at Cornell University.
     website: https://dnr.cals.cornell.edu/people/nina-therkildsen/
     url: https://dnr.cals.cornell.edu/people/nina-therkildsen/
     twitter: 
     github:
   - name: Oz Schmitz
-    img: http://schmitz.environment.yale.edu/uploads/1/5/5/4/15542522/_2376246.jpg
+    img: /img/people/oz-schmitz.jpg
     desc:  DESCRIPTION. Oastler Professor of Population and Community Ecology, Yale School of Forestry & Environmental Studies.
     website: http://schmitz.environment.yale.edu/
     url: http://schmitz.environment.yale.edu/
     twitter: 
     github:
   - name: Erik Sotka 
-    img: 
+    img: /img/people/erik-sotka.jpg
     desc:  DESCRIPTION. Professor, College of Charleston.
     website: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
     url: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
@@ -88,7 +88,7 @@ steering-list:
     twitter: 
     github:
   - name: Huijie Xue
-    img: http://rocky.umeoce.maine.edu/images/Xue[1].jpg
+    img: /img/people/Xue.jpg
     desc:  DESCRIPTION. Professor, Oceanography, University of Maine.
     website: https://umaine.edu/marine/faculty/huijie-xue/
     url: https://umaine.edu/marine/faculty/huijie-xue/
