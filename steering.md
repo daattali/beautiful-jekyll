@@ -67,31 +67,31 @@ steering-list:
     twitter: 
     github:
   - name: Oz Schmitz
-    img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    img: http://schmitz.environment.yale.edu/uploads/1/5/5/4/15542522/_2376246.jpg
+    desc:  DESCRIPTION. Oastler Professor of Population and Community Ecology, Yale School of Forestry & Environmental Studies.
+    website: http://schmitz.environment.yale.edu/
+    url: http://schmitz.environment.yale.edu/
     twitter: 
     github:
-  - name: Eric Sotka 
+  - name: Erik Sotka 
     img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    desc:  DESCRIPTION. Professor, College of Charleston.
+    website: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
+    url: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
     twitter: 
     github:
   - name: John Wares
-    img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    img: https://www.genetics.uga.edu/sites/default/files/styles/square_400x400/public/JWhead.jpg?itok=96XZnYBh
+    desc:  DESCRIPTION. Associate Professor, Department of Genetics, University of Georgia.
+    website: http://wareslab.genetics.uga.edu/
+    url: https://www.genetics.uga.edu/directory/john-wares
     twitter: 
     github:
   - name: Huijie Xue
-    img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    img: http://rocky.umeoce.maine.edu/images/Xue[1].jpg
+    desc:  DESCRIPTION. Professor, Oceanography, University of Maine.
+    website: https://umaine.edu/marine/faculty/huijie-xue/
+    url: https://umaine.edu/marine/faculty/huijie-xue/
     twitter: 
     github:
     
