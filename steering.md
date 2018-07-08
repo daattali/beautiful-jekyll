@@ -5,22 +5,22 @@ pi-list:
   - name: Dan Bolnick
     img: /img/people/dan-bolnick.jpg
     desc: DESCRIPTION. Professor at the University of Conneticut.
-    website: 
-    url:  
+    website: https://bolnicklab.wordpress.com/
+    url:  https://bolnicklab.wordpress.com/
     github: 
     twitter:
   - name: Morgan Kelly
     img: /img/people/morgan-kelly.jpg
     desc: DESCRIPTION. Assistant Professor at Lousiana State University.
-    website: 
-    url: 
+    website: http://www.lsu.edu/science/biosci/faculty_and_staff/kelly.php
+    url: http://www.lsu.edu/science/biosci/faculty_and_staff/kelly.php
     github: 
     twitter: 
   - name: Joanna Kelley
     img: /img/people/joanna-kelly.jpg
     desc: DESCRIPTION. Associate Professor at Washington State University.
-    website: 
-    url: 
+    website: https://kelleylab.wordpress.com/
+    url: https://kelleylab.wordpress.com/
     github: 
     twitter: 
   - name: Katie Lotterhos
@@ -40,15 +40,15 @@ pi-list:
 steering-list:
   - name: Randall Hughes
     img: http://www.civ.neu.edu/sites/default/files/portraits/affiliated/hughes-r.jpg
-    desc:  DESCRIPTION.
+    desc:  DESCRIPTION. Associate Professor at Northeastern University's Department of Marine and Environmental Sciences.
     website: https://cos.northeastern.edu/faculty/randall-hughes/
     url: https://cos.northeastern.edu/faculty/randall-hughes/
     twitter: 
   - name: Carly Kenkel
-    img: 
-    desc:  DESCRIPTION.
-    website: 
-    url: 
+    img: https://dornsife.usc.edu/tools/mytools/PersonnelInfoSystem/DOC/Faculty/BISC/photo_1016828.jpg
+    desc:  DESCRIPTION. Gabilan Assistant Professor of Biological Sciences
+    website: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
+    url: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     twitter:  
   - name: John Largier
     img: 
