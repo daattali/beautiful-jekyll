@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Certificate replacement: PSC UI vs certificate-manager'
 ---
 If you ever had to replace certificates in vSphere 6.0 and 6.5 you may know that there are two different ways to do it. The first one using the [PSC web UI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.psc.doc/GUID-FEEAB88E-D888-403F-AA62-1074585F7FEB.html) and the second one using the embedded [certificate-manager utility](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.psc.doc/GUID-0CBFCF72-C6AD-4CF0-BF44-F4414BBDD91C.html). Now you may also think that these 2 methods produce a similar result. And why shouldn't you? Well, unfortunately it is not the case.
