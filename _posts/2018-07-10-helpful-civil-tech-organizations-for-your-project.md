@@ -1,8 +1,11 @@
 ---
 layout: post
-published: false
 title: Helpful Civil tech organizations for your project
+bigimg: /img/social.jpg
+tags: [opensource, code, social, civictech]
 ---
+
+
 Civil tech organizations which help you realize your idea on open source app
 
 ### Code for Poland
