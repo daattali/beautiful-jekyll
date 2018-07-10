@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpful civil tech organizations for your project
-bigimg: /img/social.jpg
+bigimg: /img/architecture-blur-bridge-314378.jpg
 tags: [opensource, code, social, civictech]
 ---
 
