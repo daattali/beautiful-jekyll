@@ -16,11 +16,6 @@ Rendering markdown file for github
 Nana Boateng
 June 26, 2018
 
-true
-
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
-
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*.
 
 Load Required Packages
 ----------------------
@@ -487,10 +482,4 @@ CH
 DT::datatable(orange[1:10, 1:10])
 ```
 
-<!--html_preserve-->
-
-<script type="application/json" data-for="htmlwidget-0e3f88bc6071ea8fc591">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10"],["CH","CH","CH","MM","CH","CH","CH","CH","CH","CH"],[237,239,245,227,228,230,232,234,235,238],[1,1,1,1,7,7,7,7,7,7],[1.75,1.75,1.86,1.69,1.69,1.69,1.69,1.75,1.75,1.75],[1.99,1.99,2.09,1.69,1.69,1.99,1.99,1.99,1.99,1.99],[0,0,0.17,0,0,0,0,0,0,0],[0,0.3,0,0,0,0,0.4,0.4,0.4,0.4],[0,0,0,0,0,0,1,1,0,0],[0,1,0,0,0,1,1,0,0,0],[0.5,0.6,0.68,0.4,0.956535,0.965228,0.972182,0.977746,0.982197,0.985757]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Purchase<\/th>\n      <th>WeekofPurchase<\/th>\n      <th>StoreID<\/th>\n      <th>PriceCH<\/th>\n      <th>PriceMM<\/th>\n      <th>DiscCH<\/th>\n      <th>DiscMM<\/th>\n      <th>SpecialCH<\/th>\n      <th>SpecialMM<\/th>\n      <th>LoyalCH<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
-<!--/html_preserve-->
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
-
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+![ ]( /img/unnamed-chunk-3-1.png)
