@@ -247,11 +247,7 @@ There are 40 missing observations in the data set.In this exploratory analysis w
 plot_missing(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-4-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
-
+![ ]( /img/ExploratoryDataAnalysis/1.png)
 
 
 An alternate visualization approach is to use visna function from the extracat package.The columns represent the variables in the data and the rows the missing pattern.The blue cells represent cells of the variable  with missing values.The proportion of missing values for each variable is shown by the bars vertically beneath cells.The right show the relative frequencies of patterns.
@@ -263,11 +259,7 @@ pacman::p_load(extracat)
 extracat::visna(orangejuice, sort = "b", sort.method="optile", fr=100, pmax=0.05, s = 2)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-5-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
-
+![ ]( /img/ExploratoryDataAnalysis/2.png)
 
 
 
@@ -278,10 +270,7 @@ extracat::visna(orangejuice, sort = "b", sort.method="optile", fr=100, pmax=0.05
 plot_histogram(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-6-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/3.png)
 
 
 
@@ -290,10 +279,7 @@ plot_histogram(orangejuice)
 plot_density(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-7-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/4.png)
 
 
 
@@ -301,10 +287,7 @@ plot_density(orangejuice)
 plot_bar(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-8-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/5.png)
 
 Purchases made at store store 7 is lower than other stores whereas 
 more customers  purchased Citrus Hill than Minute Maid Orange Juice
@@ -327,10 +310,7 @@ pacman::p_load(GGally)
 na.omit(orangejuice)%>%select_if(is.double)%>%ggpairs(  title = "Continuous Variables")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-9-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/6.png)
 
 
 
@@ -352,10 +332,7 @@ p <- ggparcoord(data = na.omit(orangejuice), columns = c(2:10), groupColumn = "P
 p
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-10-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/7.png)
 
 
 
@@ -371,10 +348,7 @@ na.omit(orangejuice)%>%select_if(is.double)%>%
     )
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-11-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/8.png)
 
 
 
@@ -387,10 +361,7 @@ plot_correlation(na.omit(orangejuice),type = "continuous",theme_config = list(le
   element_text(angle = 90)))
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-12-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/9.png)
 
 
 The corrplot function can also equivalently plot the correlatio between variables in a dataset as shown below:
@@ -404,10 +375,7 @@ pacman::p_load(plotly,corrr,RColorBrewer,corrplot)
 na.omit(orangejuice)%>%select_if(is.numeric)%>%cor()%>%corrplot::corrplot()
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-13-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/10.png)
 
 ```r
 #Equivalently
@@ -424,10 +392,7 @@ na.omit(orangejuice)%>%
   heatmap(Rowv = NA, Colv = NA, scale = "column")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-14-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/11.png)
 
 
 An interactive heatmap can be easily plotted courtesy the d3heatmap package. 
@@ -469,10 +434,7 @@ p2<-ggplot(orangejuice, aes(x=SalePriceMM, fill=Purchase)) + geom_bkde(alpha=0.5
 easyGgplot2::ggplot2.multiplot(p1,p2, cols=2)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-16-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/12.png)
 
 The sale price for both purchased Citrus Hill and  Minute Maid Orange Juice is multimodal and the Citrus Hill has a higher sale price.
 
@@ -1139,10 +1101,7 @@ pm<-ggpairs(orangejuice,spec_variable , title = "",mapping = aes(color = Purchas
 pm
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-19-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/13.png)
 
 
 We can select one of plots above as follows:
@@ -1151,10 +1110,9 @@ We can select one of plots above as follows:
 pm[1,7]
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-20-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/14.png)
+
+
 
 
 
@@ -1164,10 +1122,8 @@ na.omit(orangejuice)%>% select_if(~!is.double(.x))%>%
   theme(legend.position = "top")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-21-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/15.png)
+
 
 ```r
 #Equivalently
@@ -1211,10 +1167,8 @@ ggduo(
   theme(legend.position = "top")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-22-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/16.png)
+
 
 
 
