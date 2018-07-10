@@ -6,8 +6,8 @@ subtitle: Machine/Statistical Learning, NLP, Deep Learning, Quantitative Finance
 
 My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scientist:
 
-- I interested in Applying mathematics, statistics,economics and computer science concepts in solving business, economic, finance and industrial problems. 
-- I am broadly interested in applied statistical methods such as non-parametric methods,exact statistical methods, bayesian inference, hierachical/multilevel  models, time series, survival analysis ,Markove Chain Monte-carlo etc. 
+- I am interested in Applying mathematics, statistics,economics and computer science concepts in solving business, economic, finance and industrial problems. 
+- I am broadly interested in applied statistical methods such as non-parametric methods,exact statistical methods, bayesian inference, hierachical/multilevel  models, time series, survival analysis ,Markov Chain Monte-carlo etc. 
 - Machine learning (deep learning, recommender systems, natural language processing, network analysis), Clustering Algorithms,   Dimensionality Reduction   
 - Sample Size Estimation and Power Analysis. 
 - Optimization techniques (linear / nonlinear programming, dynamic / stochastic programming) 
@@ -16,7 +16,7 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
 
 
 ###  Programming Languages: 
--  R, Matlab, Python, C++, Octave, SAS
+-  R, Matlab, Python, C++, Octave, SAS, Stata
 
 
 ###   my history 
