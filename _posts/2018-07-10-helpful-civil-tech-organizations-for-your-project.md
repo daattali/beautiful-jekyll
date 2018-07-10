@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Helpful Civil tech organizations for your project
+title: Helpful civil tech organizations for your project
 bigimg: /img/social.jpg
 tags: [opensource, code, social, civictech]
 ---
