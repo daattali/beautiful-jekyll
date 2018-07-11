@@ -89,11 +89,11 @@ steering-list:
     github:
   - name: Huijie Xue
     img: /img/people/Xue.jpg
-    desc:  DESCRIPTION. Professor, Oceanography, University of Maine.
+    desc:  Physical Oceanographer with expertise in regional ocean modeling, particularly interested in coastal ocean dynamics, modeling and applications, individual based coupled biophysical models, regional air-sea interactions, theoretical and numerical studies of the western boundary currents, fronts and eddies. Professor, Oceanography, University of Maine.
     website: https://umaine.edu/marine/faculty/huijie-xue/
     url: https://umaine.edu/marine/faculty/huijie-xue/
     twitter: 
-    github:
+    github: http://github.com/HuijieXue
     
 ---
 
