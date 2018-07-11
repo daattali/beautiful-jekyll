@@ -29,6 +29,12 @@ Similar to Hackerspace Silesia with different this hackerspace located in Krakó
 www [https://hackerspace-krk.pl](https://hackerspace-krk.pl)
 
 
+### Civic Hub
+
+This is place in Gdańsk for a local people group, NGOs and individual people who interested sociality change by technology. If you would like research subjects as open data, open source software and smart city this place and people around this hub is a good place for your idea. 
+
+www [http://civichub.pl](http://civichub.pl)
+
 
 The best practices for realizing your idea is to find NGO which working near your idea, for idea try to solve city problem good place is Towarzystwo Upiększania Miasta Wrocław,  Akcja Miasto or Miasto jest nasze. Sociality around this NGOs has experience and knowledge in the field your idea. 
 
