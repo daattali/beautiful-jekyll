@@ -2,11 +2,15 @@
 layout: post
 title: Helpful civil tech organizations for your project
 bigimg: /img/architecture-blur-bridge-314378.jpg
-tags: [opensource, code, social, civictech]
+tags:
+  - opensource
+  - code
+  - social
+  - civictech
+published: true
 ---
 
-
-Civil tech organizations which help you realize your idea on open source app
+I would like to show you civil tech organizations which help you realize your idea of an open source app. 
 
 ### Code for Poland
 
@@ -36,10 +40,4 @@ This is place in Gdańsk for a local people group, NGOs and individual people wh
 www [http://civichub.pl](http://civichub.pl)
 
 
-The best practices for realizing your idea is to find NGO which working near your idea, for idea try to solve city problem good place is Towarzystwo Upiększania Miasta Wrocław,  Akcja Miasto or Miasto jest nasze. Sociality around this NGOs has experience and knowledge in the field your idea. 
-
-
- 
-
-
-
+The best practices for realizing your idea is to find NGO which working near your idea, for idea try to solve city problem good place is (in this case I use Wroclaw city and his local NGOs) Towarzystwo Upiększania Miasta Wrocław,  Akcja Miasto or Miasto jest nasze. Sociality around this NGOs has experience and knowledge in the field your idea. Please remember to find organization/partner witch help you test idea and improve your product by experience and knowledge. 
