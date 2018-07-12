@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PoznajApp released!
+title: 'PoznajApp released! [PL]'
 subtitle: Aplikacja PoznajApp wydana. Poznaj historię swojego miasta.
 bigimg: /img/wroclaw.jpg
 tags:
