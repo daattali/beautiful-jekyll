@@ -25,7 +25,7 @@ Here's an image of a sample output of our package:
 Now that the setting is clear, here comes my list of advice to my future self.
 
 
-1. Communicate with your team!
+1. Communicate with your team.
 
 Make sure everyone is on the same page - ideally on a daily basis. Both, the distribution of daily tasks as well as the understanding of conceptual ideas related to the project should be discussed among the team members frequently. This way, the team is more productive when working towards the common goal while making a good impression towards the client in meetings. Although we generally did an excellent job at this, there were a few misunderstandings that became clear in meetings with the client. This could have been prevented by better communication.
 
@@ -53,4 +53,4 @@ Any model is based on assumptions - make sure that the client is aware of them. 
 
 Surely, there are many more lessons that we have learned throughout this project and this list is 100% subjective. What is your advice to aspiring data scientist working on their first projects - I would love to hear from you! You can find me on Twitter as @akleefel.
 
-Finally, a big THANK YOU to my team members Esteban Angel (@esetebanangelm91), Maud Boucherit, and Prash Medirattaa (@prashm16) for an exciting time together as well as Thinkific for being such an amazing host.
+Finally, a big THANK YOU to my team members Esteban Angel (@esetebanangelm91), Maud Boucherit, and Prash Medirattaa (@prashm16) for an exciting time together as well as Steph Carew and Thinkific for being such amazing hosts.
