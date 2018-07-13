@@ -46,7 +46,7 @@ Do as much data wrangling as possible in SQL to decrease processing times and me
 
 If your initial plan does not work out, don't panic! Stay creative and flexible, and adjust to changes. Throughout the  project, we had several moments in which our conceptual framework seemed to fail. For example, we had initially planned to follow a linear regression approach due to the easy interpretability of weights as feature importances. However, this led to disappointing validation accuracy scores. At the same time, we noticed that non-linear approaches such as a random forest regressor and gradient boosting regressor performed significantly better. 
 
-##### 6. Be aware of your assumptions and communicate them
+#### 6. Be aware of your assumptions and communicate them
 
 Any model is based on assumptions - make sure that the client is aware of them. Generally, it is dangerous if the end-user of a data science product has no intuition as to how the results are produced. In our model, one fundamental assumption is that the current features of a course determined the current level of student success. This is a strong assumption. Consider a successful course creator who has never used any video content for her courses. Now, this course creator adds lengthy videos to her course one day before our model is trained. Our model will probably attribute the course's success partly to the new video content and may wrongly recommend adding more long videos to this course creator (and others). To prevent misunderstandings and false expectations, it is important that the end user is aware of  assumptions and their possible implications.
 
