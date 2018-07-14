@@ -43,7 +43,7 @@ steering-list:
     desc:  Marine community ecologist and conservation biologist, with a focus on the the effects of intraspecific variation. Associate Professor at Northeastern University's Department of Marine and Environmental Sciences.
     website: https://cos.northeastern.edu/faculty/randall-hughes/
     url: https://cos.northeastern.edu/faculty/randall-hughes/
-    twitter: 
+    twitter: https://twitter.com/hughes_lab
     github:
   - name: Carly Kenkel
     img: https://dornsife.usc.edu/tools/mytools/PersonnelInfoSystem/DOC/Faculty/BISC/photo_1016828.jpg
