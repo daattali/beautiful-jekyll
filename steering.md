@@ -1,5 +1,5 @@
 ---
-title: People 
+title: People
 subtitle: The humans behind this project
 pi-list:
   - name: Dan Bolnick
