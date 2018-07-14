@@ -75,7 +75,7 @@ steering-list:
     github:
   - name: Erik Sotka 
     img: /img/people/erik-sotka.jpg
-    desc:  DESCRIPTION. Professor, College of Charleston.
+    desc:  Evolutionary ecologist. Professor, College of Charleston.
     website: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
     url: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
     twitter: http://twitter.com/eriksotka
