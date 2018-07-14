@@ -89,7 +89,7 @@ steering-list:
     github: http://github.com/jpwares
   - name: Huijie Xue
     img: /img/people/Xue.jpg
-    desc:  Physical Oceanographer with expertise in regional ocean modeling, particularly interested in coastal ocean dynamics.
+    desc:  Physical Oceanographer with expertise in regional ocean modeling, particularly interested in coastal ocean dynamics. Professor, School of Marine Sciences, University of Maine.
     website: https://umaine.edu/marine/faculty/huijie-xue/
     url: https://umaine.edu/marine/faculty/huijie-xue/
     twitter: 
