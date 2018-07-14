@@ -4,7 +4,7 @@ subtitle: The humans behind this project
 pi-list:
   - name: Dan Bolnick
     img: /img/people/dan-bolnick.jpg
-    desc: DESCRIPTION. Professor at the University of Conneticut.
+    desc: Evolutionary ecologist who weaves together behavior, immunology, and genetics. Professor at the University of Conneticut.
     website: https://bolnicklab.wordpress.com/
     url:  https://bolnicklab.wordpress.com/
     github: 
@@ -18,7 +18,7 @@ pi-list:
     twitter: 
   - name: Joanna Kelley
     img: /img/people/joanna-kelly.jpg
-    desc: DESCRIPTION. Associate Professor at Washington State University.
+    desc: Genome biologist. Associate Professor at Washington State University School of Biological Sciences. 
     website: https://kelleylab.wordpress.com/
     url: https://kelleylab.wordpress.com/
     github: 
@@ -47,10 +47,10 @@ steering-list:
     github:
   - name: Carly Kenkel
     img: https://dornsife.usc.edu/tools/mytools/PersonnelInfoSystem/DOC/Faculty/BISC/photo_1016828.jpg
-    desc:  DESCRIPTION. Gabilan Assistant Professor of Biological Sciences at the University of Southern California, Dornsife.
+    desc:  Evolutionary/molecular ecologist, with a focus on corals. Gabilan Assistant Professor of Biological Sciences at the University of Southern California, Dornsife.
     website: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     url: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
-    twitter:  
+    twitter:  https://twitter.com/DrCarlsHorn
     github:
   - name: John Largier
     img: /img/people/largier.jpg
@@ -89,7 +89,7 @@ steering-list:
     github: http://github.com/jpwares
   - name: Huijie Xue
     img: /img/people/Xue.jpg
-    desc:  Physical Oceanographer with expertise in regional ocean modeling, particularly interested in coastal ocean dynamics, modeling and applications, individual based coupled biophysical models, regional air-sea interactions, theoretical and numerical studies of the western boundary currents, fronts and eddies. Professor, Oceanography, University of Maine.
+    desc:  Physical Oceanographer with expertise in regional ocean modeling, particularly interested in coastal ocean dynamics.
     website: https://umaine.edu/marine/faculty/huijie-xue/
     url: https://umaine.edu/marine/faculty/huijie-xue/
     twitter: 
