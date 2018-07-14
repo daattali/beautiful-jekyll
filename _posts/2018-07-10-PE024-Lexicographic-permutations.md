@@ -5,7 +5,7 @@ title: PE024-Lexicographic-permutations
 image: /img/2018-06-08-ProjectEuler/PE.png
 tags: [Python, Project-Euler]
 categories: [Project-Euler]
-date: 2018-07-01
+date: 2018-07-10
 # 2018-07-10-PE024-Lexicographic-permutations
 ---
 Số hoán vị từ thứ một triệu của các chữ số 0, 1, 2, 3, 4, 5, 6, 7, 8 và 9 là gì?
@@ -110,4 +110,4 @@ elapsed time: 2.47955322265625e-05s
 Con số về thời gian khá ấn tượng
 
 Source-code:
-[PE-023](https://github.com/quangvinh86/python-projecteuler/tree/master/PE-023)
+[PE-024](https://github.com/quangvinh86/python-projecteuler/tree/master/PE-024)
