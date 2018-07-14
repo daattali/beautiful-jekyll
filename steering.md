@@ -40,7 +40,7 @@ pi-list:
 steering-list:
   - name: Randall Hughes
     img: /img/people/randall-hughes.jpg
-    desc:  DESCRIPTION. Associate Professor at Northeastern University's Department of Marine and Environmental Sciences.
+    desc:  Marine community ecologist and conservation biologist, with a focus on the the effects of intraspecific variation. Associate Professor at Northeastern University's Department of Marine and Environmental Sciences.
     website: https://cos.northeastern.edu/faculty/randall-hughes/
     url: https://cos.northeastern.edu/faculty/randall-hughes/
     twitter: 
@@ -61,7 +61,7 @@ steering-list:
     github:
   - name: Nina Overgaard Thirkildsen
     img: /img/people/Therkildsen.jpg
-    desc:  DESCRIPTION. Assistant Professor in the Department of Natural Resources at Cornell University.
+    desc:  Expertise in population genomics and molecular ecology. Assistant Professor in the Department of Natural Resources at Cornell University.
     website: https://dnr.cals.cornell.edu/people/nina-therkildsen/
     url: https://dnr.cals.cornell.edu/people/nina-therkildsen/
     twitter: 
@@ -78,15 +78,15 @@ steering-list:
     desc:  DESCRIPTION. Professor, College of Charleston.
     website: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
     url: http://biology.cofc.edu/about-the-department/faculty-staff-listing/sotka-erik.php
-    twitter: 
+    twitter: http://twitter.com/eriksotka
     github:
   - name: John Wares
     img: https://www.genetics.uga.edu/sites/default/files/styles/square_400x400/public/JWhead.jpg?itok=96XZnYBh
-    desc:  DESCRIPTION. Associate Professor, Department of Genetics, University of Georgia.
+    desc:  Studies genomic diversity within and among marine populations. Associate Professor, Department of Genetics, University of Georgia.
     website: http://wareslab.genetics.uga.edu/
     url: https://www.genetics.uga.edu/directory/john-wares
-    twitter: 
-    github:
+    twitter: http://twitter.com/wareslab
+    github: http://github.com/jpwares
   - name: Huijie Xue
     img: /img/people/Xue.jpg
     desc:  Physical Oceanographer with expertise in regional ocean modeling, particularly interested in coastal ocean dynamics, modeling and applications, individual based coupled biophysical models, regional air-sea interactions, theoretical and numerical studies of the western boundary currents, fronts and eddies. Professor, Oceanography, University of Maine.
