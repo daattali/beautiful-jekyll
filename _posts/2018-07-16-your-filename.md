@@ -1,7 +1,7 @@
 ---
 layout: post
-published: false
-title: ''
+published: true
+title: 'New Post'
 ---
 ## A New Post
 
