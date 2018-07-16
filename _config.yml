@@ -23,9 +23,9 @@ description: CHKL
 
 # List of links in the navigation bar
 navbar-links:
-  About Us: "/_main/aboutme"
-  Tags: "/_main/tags"
-  History: "/_main/history"
+  About Us: "_main/aboutme"
+  Tags: "_main/tags"
+  History: "_main/history"
   Resources:
     - Learning Resources: "/_main/resources"
     - Learn markdown: "http://www.markdowntutorial.com/"
