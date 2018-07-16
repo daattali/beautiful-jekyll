@@ -27,7 +27,7 @@ navbar-links:
   Tags: "tags"
   History: "history"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learning Resources: "resources"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
 
