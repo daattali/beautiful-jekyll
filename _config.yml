@@ -24,7 +24,7 @@ description: CHKL
 # List of links in the navigation bar
 navbar-links:
   About Us: "aboutme"
-  Tags: "tags.html"
+  Tags: "tags"
   History: "history"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
