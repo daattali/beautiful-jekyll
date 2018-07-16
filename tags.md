@@ -1,6 +1,7 @@
 ---
 layout: page
-title: 'Tag Index'
+title: 'Tag'
+subtitle: 'Tags for your convenience'
 ---
 
 {%- capture site_tags -%}
