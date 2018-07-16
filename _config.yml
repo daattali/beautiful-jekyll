@@ -81,7 +81,7 @@ social-network-links:
 #  google-plus: +DeanAttali
 #  linkedin: daattali
 #  xing: yourname
-  stackoverflow: "3943160/daattali"
+# stackoverflow: "3943160/daattali"
   snapchat: deanat78
   instagram: deanat78
   youtube: user/deanat78
@@ -95,8 +95,8 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
-  google: false
-  linkedin: true
+  google: true
+  linkedin: false
 
 
 
@@ -239,6 +239,3 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
