@@ -23,11 +23,11 @@ description: CHKL
 
 # List of links in the navigation bar
 navbar-links:
-  About Us: "_main/aboutme"
-  Tags: "_main/tags"
-  History: "_main/history"
+  About Us: "aboutus"
+  Tags: "tags"
+  History: "history"
   Resources:
-    - Learning Resources: "/_main/resources"
+    - Learning Resources: "resources"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
 
