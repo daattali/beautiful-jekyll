@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
+		<!-- note  hitting "Grant Permission" for your app at https://portal.azure.com is required to workaround user granting permission to the app -->
+		
 		<title>Authenticate an Office 365 user with ADAL JS</title>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<style>body{font:normal normal normal 14px/1.5em "Century Gothic", sans-serif;}</style>
@@ -16,10 +19,10 @@
 					azureAD: "M365B034593.onmicrosoft.com",
 					// ClientId of Azure AD application principal
 					clientId: "0c24c929-9153-48a2-86bb-1f6d52091b8a",
-					// GUID of SharePoint list
-					listId: "22222222-2222-2222-2222-222222222222",
+					// GUID of SharePoint list from https://m365b034593.sharepoint.com/_layouts/15/listedit.aspx?List=%7Be82a20e7-2385-471f-a524-cada116967fe%7D
+					listId: "e82a20e7-2385-471f-a524-cada116967fe",
 					// Name of SharePoint tenant
-					sharePointTenant: "tenantname"
+					sharePointTenant: "M365B034593"
 				}
 				
 				// Create config and get AuthenticationContext
