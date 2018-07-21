@@ -4,6 +4,36 @@ title: Tôi là ai?
 subtitle: Hành trình trải nghiệm và khám phá của tôi
 ---
 
+## Tôi có thể làm gì 
+**Ngôn ngữ Lập trình:**
+- Pascal
+- C/C++/MFC
+- HTML5/CSS3/Bootstrap/Jquery
+- Java core
+- VB6/VB.NET/C#/ASP.NET Webform
+- Python/Flask/Django/Odoo
+- T-SQL
+
+**Công cụ lập trình:**
+- DBMS family: MS SQL Server, MySQL, Oracle, Postgresql
+- SCM: SVN, GIT
+- Editor: Visual Studio Code, Visual studio 2015 (and older version), IntellJ, Eclipse, Pycharm
+- OS: Ubuntu, Window
+
+**Kỹ năng khác:**
+- Quản lý dự án với MS Project Management
+- Kỹ năng thuyết trình, đào tạo
+- Sử dụng thành thạo bộ công cụ MS Office
+- Ghi nhớ, sáng tạo và trình bày ý tưởng bằng MindMap
+- Đọc sách và tóm tắt ý nhanh.
+
+**Other job:** (Ngoài làm Dev, tôi đã từng trải nghiệm qua các vị trí khác trong quy trình phát triển phần mềm)
+- Scrum master
+- BA/PO 
+- Tester
+
+
+
 # Tôi là ai ?
 Tôi là Nguyễn Quang Vinh.
 
@@ -12,6 +42,7 @@ Tôi sinh năm 1986, trong một gia đình có truyền thống làm trong ngà
 Tôi có một đam mê thực sự với lập trình và máy tính kể từ lần đầu tiên tôi tiếp xúc với máy tính cách đây gần 20 năm với việc đánh bại level 1 và để thua không gỡ được level2 game Cờ Vua trên chiếc máy tính cài đặt hệ điều hành WIN95.
 
 Hiện tại, tôi đã có gia đình riêng, vợ tôi làm giảng viên và một cậu con trai "siêu nghịch". Chúng tôi sống tại một căn nhà ... không nhỏ lắm ở Hà Đông - Hà Nội.
+
 
 **Tôi đi học**
 
@@ -31,35 +62,17 @@ Giữa năm 2009, các anh core leader của AI tách ra thành lập công ty T
 
 Cuối năm 2010, tôi rời Trí Nam để đến đầu quân cho Viettel-một ông lớn trong làng công nghệ - với ước mơ được đi đến các chân trời mới (lúc đó VT đang đầu tư vào Lào - Campuchia - Haiti). Bằng kinh nghiệm BA ở Trí Nam và khả năng lập trình của tôi, tôi được giao nhiệm vụ tối ưu công việc bằng cách áp dụng CNTT vào công việc vận hành khai thác tại Tổng công ty Mạng lưới Viettel. Những bằng khen, giấy khen trong suốt thời gian từ 2011 đến 2016 đã chứng minh tôi đã thành công. Trước khi rời Viettel, tôi được giao nhiệm vụ teamleader của group BSS - phòng Điều hành mạng lưới - Trung tâm Vận hành Khai thác Toàn cầu. Tôi chịu trách nhiệm điều hành và duy trì việc đảm bảo an toàn, thông suốt cho mạng lưới Viettel tại Việt Nam và 9 thị trường nước ngoài. 
 
-Công việc làm quản lý cuốn tôi theo các chỉ tiêu KPI của tôi và cả nhóm, tôi không còn được code, không được sáng tạo theo những gì mình thích,...Hiện giờ, tôi đã nghỉ việc tại Viettel để tiếp tục theo đuổi những dòng code nhiệm màu. 
+Công việc làm quản lý cuốn tôi theo các chỉ tiêu KPI của tôi và cả nhóm, tôi không còn được code, không được sáng tạo theo những gì mình thích,...tôi đã nghỉ việc tại Viettel sau 7 năm trải qua các vị trí Dev/BA/Tester/PO/Manager để tiếp tục theo đuổi những dòng code nhiệm màu. 
 
-Có thể nhiều người sẽ thấy hài hước khi tôi từ bỏ công việc tính bằng nghìn $ một tháng để đi làm freelancer nhặt nhạnh từng $. 
+>Có thể nhiều người sẽ thấy hài hước khi tôi từ bỏ công việc tính bằng nghìn $ một tháng để đi làm freelancer nhặt nhạnh từng $. 
 
-**"Cuộc sống vốn ngắn ngủi, hãy sống cho những đam mê & sở thích của mình - làm gì cũng được chỉ cần không hổ thẹn với bản thân của mình là được"**
+>**"Cuộc sống vốn ngắn ngủi, hãy sống cho những đam mê & sở thích của mình - làm gì cũng được chỉ cần không hổ thẹn với bản thân của mình là được"**
 
+_Update tháng 7/2018_
+Sau một năm rời Viettel, hiện tại tôi đang làm việc tại VN-DIRECT, một công ty fintech hàng đầu ở Việt Nam. Tôi có thể tạm hài lòng với vị trí công việc này của mình bởi vì văn hoá ở VND và ở VT là hoàn toàn khác nhau. 
 
-## Tôi có thể làm gì 
-**Ngôn ngữ Lập trình:**
-- Pascal
-- C/C++/MFC
-- HTML5/CSS3/Bootstrap/Jquery
-- Java core
-- VB6/VB.NET/C#/ASP.NET Webform
-- Python/Flask/Django
-- T-SQL
+Ngoài ra tôi còn tham gia làm giảng viên cho  trung tâm đào tạo Lập trình IT-Plus ở Hà Nội. Rất vui khi được đứng trên bục giảng để giảng bài cho rất nhiều bạn học viên ở bên dưới.
 
-**Công cụ lập trình:**
-- DBMS family: MS SQL Server, MySQL, Oracle
-- SCM: SVN, GIT
-- Editor: Visual Studio Code, Visual studio 2015 (and older version), IntellJ, Eclipse
-- OS: Ubuntu, Window
-
-**Kỹ năng khác:**
-- Quản lý dự án với MS Project Management
-- Kỹ năng thuyết trình, đào tạo
-- Sử dụng thành thạo bộ công cụ MS Office
-- Ghi nhớ, sáng tạo và trình bày ý tưởng bằng MindMap
-- Đọc sách và tóm tắt ý nhanh.
 
 # Tôi thích gì ?
 
