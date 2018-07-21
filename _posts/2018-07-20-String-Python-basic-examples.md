@@ -2,18 +2,18 @@
 layout: post
 title: String Python-basic-examples
 # subtile: Hãy viết code như một Pythonista
-image: /img/2018-06-08-Tips/quicktip.jpg
-tags: [Python, Python-tip, Python-trick]
-categories: [Python-trick]
+image: /img/2017-06-08-Tips/quicktip.jpg
+tags: [Python, Python-basic, Python-trick]
+categories: [Python-basic]
 date: 2018-07-20
 # 2018-07-14-PE025-1000-digit-Fibonacci-number.md
 ---
 Một số ví dụ khá hay về String trong Python mà ít ngôn ngữ lập trình khác có được.
 
 
-##String-Python
+## String-Python
 
-Trong các ngôn ngữ lập trình thì phần xử lý chuỗi (string) là khá quan trọng. Phần lớn các thao tác xử lý bằng ngôn ngữ lập trình là dựa trên xử lý chuỗi. 
+Trong các ngôn ngữ lập trình thì phần xử lý chuỗi (string) là khá quan trọng. Phần lớn các thao tác xử lý bằng ngôn ngữ lập trình là  xử lý chuỗi. 
 
 ### Format string
 
