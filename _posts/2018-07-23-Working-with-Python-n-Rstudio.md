@@ -487,7 +487,7 @@ library(ggplot2)
 ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
-![ ]( /img/RPYTHON/5.png)
+![ ]( /img/RPYTHON/6.png)
 
 
 
@@ -507,7 +507,7 @@ library(ggplot2)
 ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
-![ ]( /img/RPYTHON/6.png)
+![ ]( /img/RPYTHON/7.png)
 
 
 #### Python REPL
@@ -534,4 +534,4 @@ The repl_python() function allows switching between Python and R a breeze.First 
 
 
 
-![ ]( /img/RPYTHON/RPYTHON.png)
+![ ]( /img/RPYTHON/repl_python.png)
