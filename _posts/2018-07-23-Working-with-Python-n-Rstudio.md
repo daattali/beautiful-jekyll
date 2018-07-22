@@ -288,10 +288,7 @@ plt.legend(loc='lower right')
 plt.show()
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-4-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/1.png)
 
 We can also plot transfer the data from the Python environment and plot with ggplot as follows:
 
@@ -323,10 +320,7 @@ scale_color_viridis(discrete=TRUE,option = "A")+
  scale_x_date(breaks = date_breaks("4 month"),labels=date_format("%b %Y") ) 
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-5-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/2.png)
 
 ```r
 df6%>% select(Date,High,Close,Low,Open,Symbol)%>%
@@ -348,10 +342,7 @@ scale_color_viridis(discrete=TRUE,option = "D")+
    scale_x_date(breaks = date_breaks("4 month"),labels=date_format("%b %Y") ) 
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-5-2.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/3.png)
 
 ```r
   # scale_fill_manual(values=c("#B9DE28FF" , "#D1E11CFF" , "#E8E419FF"))
@@ -475,10 +466,7 @@ plt.show()
 #print(s)
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-7-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/4.png)
 
 
 
@@ -499,10 +487,7 @@ library(ggplot2)
 ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-9-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/5.png)
 
 
 
@@ -522,10 +507,7 @@ library(ggplot2)
 ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-10-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/6.png)
 
 
 #### Python REPL
@@ -552,7 +534,4 @@ The repl_python() function allows switching between Python and R a breeze.First 
 
 
 
-<div class="figure">
-<img src="/Users/nanaakwasiabayieboateng/Downloads/repl_python.png" alt="Employee Age" width="100%" />
-<p class="caption">Employee Age</p>
-</div>
+![ ]( /img/RPYTHON/RPYTHON.png)
