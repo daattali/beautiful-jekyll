@@ -288,10 +288,7 @@ plt.legend(loc='lower right')
 plt.show()
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-4-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/1.png)
 
 
 The reticulate Package
@@ -407,10 +404,7 @@ plt.show()
 #print(s)
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-6-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/2.png)
 
 
 
@@ -431,10 +425,7 @@ library(ggplot2)
 ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-8-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/3.png)
 
 
 
@@ -454,10 +445,7 @@ library(ggplot2)
 ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
-<div class="figure">
-<img src="RPYTHON_files/figure-html/unnamed-chunk-9-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/RPYTHON/4.png)
 
 
 #### Python REPL
@@ -484,7 +472,4 @@ The repl_python() function allows switching between Python and R a breeze.First 
 
 
 
-<div class="figure">
-<img src="/Users/nanaakwasiabayieboateng/Downloads/repl_python.png" alt="Employee Age" width="100%" />
-<p class="caption">Employee Age</p>
-</div>
+![ ]( /img/RPYTHON/repl_python.png)
