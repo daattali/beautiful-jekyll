@@ -53,7 +53,7 @@ Any model is based on assumptions - make sure that the client is aware of them. 
 
 Surely, there are many more lessons that we have learned throughout this project, but this is a good start. What is your advice to aspiring data scientists working on their first projects? I would love to hear from you! You can find me on Twitter as @akleefel.
 
-Finally, a big THANK YOU to my team members Esteban Angel (@esetebanangelm91), Maud Boucherit, and Prash Medirattaa (@prashm16) for an exciting time together, as well as Steph Carew and Thinkific for being such amazing hosts.
+Finally, a big THANK YOU to my team members Esteban Angel (@estebanangelm91), Maud Boucherit, and Prash Medirattaa (@prashm16) for an exciting time together, as well as Steph Carew and Thinkific for being such amazing hosts.
 
 ---------
 
