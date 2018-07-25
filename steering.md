@@ -10,12 +10,12 @@ pi-list:
     github: 
     twitter:
   - name: Morgan Kelly
-    img: /img/people/morgan-kelly.jpg
-    desc: DESCRIPTION. Assistant Professor at Lousiana State University.
+    img: /img/people/morgan-kelly.png
+    desc: Evolutionary Ecologist and Physiologist. Assistant Professor at Lousiana State University.
     website: http://www.lsu.edu/science/biosci/faculty_and_staff/kelly.php
     url: http://www.lsu.edu/science/biosci/faculty_and_staff/kelly.php
     github: 
-    twitter: 
+    twitter: https://twitter.com/MorganWKelly
   - name: Joanna Kelley
     img: /img/people/joanna-kelly.jpg
     desc: Genome biologist. Associate Professor at Washington State University School of Biological Sciences. 
