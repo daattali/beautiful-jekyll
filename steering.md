@@ -1,7 +1,7 @@
 ---
 title: People 
 subtitle: The humans behind this project
-pi-list:
+pi-list: 
   - name: Dan Bolnick
     img: /img/people/dan-bolnick.jpg
     desc: Evolutionary ecologist who weaves together behavior, immunology, and genetics. Professor at the University of Conneticut.
