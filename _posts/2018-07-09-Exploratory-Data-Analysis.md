@@ -249,10 +249,7 @@ There are 40 missing observations in the data set.In this exploratory analysis w
 plot_missing(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-4-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/1.png)
 
 
 
@@ -265,10 +262,7 @@ pacman::p_load(extracat)
 extracat::visna(orangejuice, sort = "b", sort.method="optile", fr=100, pmax=0.05, s = 2)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-5-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/2.png)
 
 
 
@@ -281,10 +275,7 @@ aggr(orangejuice , col=c('navyblue','yellow'),
                     gap=3, ylab=c("Missing data","Pattern"))
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-6-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/3.png)
 
 ```
 ## 
@@ -318,10 +309,7 @@ library(Amelia)
 missmap(orangejuice, main = "Missing values vs observed",col=c('navyblue','yellow'),y.cex=0.5)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-7-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/4.png)
 
 
 
@@ -330,10 +318,7 @@ missmap(orangejuice, main = "Missing values vs observed",col=c('navyblue','yello
 plot_histogram(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-8-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/5.png)
 
 
 
@@ -342,10 +327,7 @@ plot_histogram(orangejuice)
 plot_density(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-9-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/6.png)
 
 
 
@@ -353,10 +335,7 @@ plot_density(orangejuice)
 plot_bar(orangejuice)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-10-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/7.png)
 
 Purchases made at store store 7 is lower than other stores whereas 
 more customers  purchased Citrus Hill than Minute Maid Orange Juice
@@ -379,10 +358,7 @@ pacman::p_load(GGally)
 na.omit(orangejuice)%>%select_if(is.double)%>%ggpairs(  title = "Continuous Variables")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-11-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/8.png)
 
 
 
@@ -404,11 +380,7 @@ p <- ggparcoord(data = na.omit(orangejuice), columns = c(2:10), groupColumn = "P
 p
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-12-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
-
+![ ]( /img/ExploratoryDataAnalysis/9.png)
 
 
 ```r
@@ -423,10 +395,7 @@ na.omit(orangejuice)%>%select_if(is.double)%>%
     )
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-13-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/10.png)
 
 
 
@@ -439,10 +408,7 @@ plot_correlation(na.omit(orangejuice),type = "continuous",theme_config = list(le
   element_text(angle = 90)))
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-14-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/11.png)
 
 
 The corrplot function can also equivalently plot the correlatio between variables in a dataset as shown below:
@@ -456,10 +422,7 @@ pacman::p_load(plotly,corrr,RColorBrewer,corrplot)
 na.omit(orangejuice)%>%select_if(is.numeric)%>%cor()%>%corrplot::corrplot()
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-15-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/12.png)
 
 ```r
 #Equivalently
@@ -476,10 +439,7 @@ na.omit(orangejuice)%>%
   heatmap(Rowv = NA, Colv = NA, scale = "column")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-16-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/13.png)
 
 
 An interactive heatmap can be easily plotted courtesy the d3heatmap package. 
@@ -494,11 +454,7 @@ d3heatmap(colors = "Blues", scale = "col",
           dendrogram = "row", k_row = 3)
 ```
 
-<div class="figure">
-<!--html_preserve--><div id="htmlwidget-302d9ef5a1747de9f78f" style="width:100%;height:480px;" class="d3heatmap html-widget"></div>
-<script type="application/json" data-for="htmlwidget-302d9ef5a1747de9f78f">{"x":{"rows":{"members":16,"height":3.84993898464084,"edgePar":{"col":""},"children":[{"members":8,"height":3.23098251723811,"edgePar":{"col":""},"children":[{"members":5,"height":2.16704223268727,"edgePar":{"col":"#CC476B"},"children":[{"members":3,"height":1.20485479005917,"edgePar":{"col":"#CC476B"},"children":[{"members":2,"height":0.887491683284796,"edgePar":{"col":"#CC476B"},"children":[{"members":1,"height":0,"label":"WeekofPurchase","edgePar":{"col":"#CC476B"}},{"members":1,"height":0,"label":"PriceCH","edgePar":{"col":"#CC476B"}}]},{"members":1,"height":0,"label":"PriceMM","edgePar":{"col":"#CC476B"}}]},{"members":2,"height":1.21816997067783,"edgePar":{"col":"#CC476B"},"children":[{"members":1,"height":0,"label":"SalePriceCH","edgePar":{"col":"#CC476B"}},{"members":1,"height":0,"label":"STORE","edgePar":{"col":"#CC476B"}}]}]},{"members":3,"height":1.58853952926964,"edgePar":{"col":"#228B00"},"children":[{"members":2,"height":0.983393872603197,"edgePar":{"col":"#228B00"},"children":[{"members":1,"height":0,"label":"SalePriceMM","edgePar":{"col":"#228B00"}},{"members":1,"height":0,"label":"PriceDiff","edgePar":{"col":"#228B00"}}]},{"members":1,"height":0,"label":"ListPriceDiff","edgePar":{"col":"#228B00"}}]}]},{"members":8,"height":2.70071126909184,"edgePar":{"col":"#0082CE"},"children":[{"members":5,"height":1.75233781579952,"edgePar":{"col":"#0082CE"},"children":[{"members":3,"height":0.97322182574691,"edgePar":{"col":"#0082CE"},"children":[{"members":2,"height":0.0303489559874879,"edgePar":{"col":"#0082CE"},"children":[{"members":1,"height":0,"label":"DiscCH","edgePar":{"col":"#0082CE"}},{"members":1,"height":0,"label":"PctDiscCH","edgePar":{"col":"#0082CE"}}]},{"members":1,"height":0,"label":"SpecialCH","edgePar":{"col":"#0082CE"}}]},{"members":2,"height":1.25427795641185,"edgePar":{"col":"#0082CE"},"children":[{"members":1,"height":0,"label":"LoyalCH","edgePar":{"col":"#0082CE"}},{"members":1,"height":0,"label":"StoreID","edgePar":{"col":"#0082CE"}}]}]},{"members":3,"height":1.18798042909217,"edgePar":{"col":"#0082CE"},"children":[{"members":2,"height":0.0396857765179041,"edgePar":{"col":"#0082CE"},"children":[{"members":1,"height":0,"label":"DiscMM","edgePar":{"col":"#0082CE"}},{"members":1,"height":0,"label":"PctDiscMM","edgePar":{"col":"#0082CE"}}]},{"members":1,"height":0,"label":"SpecialMM","edgePar":{"col":"#0082CE"}}]}]}]},"cols":null,"matrix":{"data":["1","0.094","0.709","0.585","0.361","0.24","0.111","0.059","0.198","0.106","0.208","-0.011","0.22","0.35","0.058","-0.05","0.709","0.018","1","0.618","0.145","0.124","-0.099","-0.016","0.079","0.222","0.59","-0.105","0.106","0.128","-0.178","0.398","0.585","0.089","0.618","1","0.067","0","-0.035","-0.067","0.125","0.53","0.383","0.29","-0.021","0.061","0.664","0.104","0.208","-0.256","0.59","0.383","-0.713","0.068","-0.515","0.041","-0.051","0.145","1","-0.393","0.059","-0.724","-0.082","0.479","-0.05","-0.533","0.398","0.104","-0.241","-0.123","-0.326","-0.071","-0.1","0.159","0.479","-0.105","-0.132","-0.25","-0.248","1","0.106","0.031","0.222","0.53","0.015","-0.848","-0.156","-0.431","0.079","1","0.145","0.853","-0.858","0.012","0.452","0.159","-0.011","0.164","-0.105","0.29","0.391","-0.824","0.127","-0.423","0.1","0.853","-0.393","1","-0.829","0.394","0.463","-0.105","0.058","0.094","-0.178","0.664","-0.054","-0.118","0.051","-0.069","0.081","0.452","-0.082","0.463","-0.127","-0.045","1","-0.248","0.361","0.33","0.145","0.067","1","0.024","0.545","-0.064","0.131","0.015","-0.713","0.391","0.02","0.999","-0.054","-0.241","0.35","0.331","0.128","0.061","0.999","0.024","0.559","-0.067","0.131","0.012","-0.724","0.394","0.021","1","-0.045","-0.25","0.111","0.382","-0.099","-0.035","0.545","0.162","1","-0.156","0.135","-0.156","-0.515","0.127","0.166","0.559","0.051","-0.326","0.198","0.235","0.079","0.125","0.131","-0.015","0.135","-0.098","1","0.079","-0.051","0.1","-0.018","0.131","0.081","-0.1","0.094","1","0.018","0.089","0.33","0.019","0.382","-0.173","0.235","0.031","-0.256","0.164","0.023","0.331","0.094","-0.533","0.24","0.019","0.124","0","0.024","1","0.162","0.467","-0.015","-0.848","0.068","-0.824","0.999","0.024","-0.118","-0.123","0.22","0.023","0.106","-0.021","0.02","0.999","0.166","0.467","-0.018","-0.858","0.059","-0.829","1","0.021","-0.127","-0.132","0.059","-0.173","-0.016","-0.067","-0.064","0.467","-0.156","1","-0.098","-0.431","0.041","-0.423","0.467","-0.067","-0.069","-0.071"],"dim":[16,16],"rows":["WeekofPurchase","PriceCH","PriceMM","SalePriceCH","STORE","SalePriceMM","PriceDiff","ListPriceDiff","DiscCH","PctDiscCH","SpecialCH","LoyalCH","StoreID","DiscMM","PctDiscMM","SpecialMM"],"cols":["WeekofPurchase","StoreID","PriceCH","PriceMM","DiscCH","DiscMM","SpecialCH","SpecialMM","LoyalCH","SalePriceMM","SalePriceCH","PriceDiff","PctDiscMM","PctDiscCH","ListPriceDiff","STORE"]},"image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADHUlEQVQ4jWWQy2tcZQBHz/fdO/fOfcwrk8yjM01M0pnEpIi0WqIiUYS0uKpYxIXgoosi3bhxKXTtSlRw4x8gmrhvuwlKS6DGRcbQSUiT5iFmZmqayUzmdR+fC0sRenbnx291RPSDH9SNT99iefWARMqikLbRpCTlGgz8kO4gwDF1jk/7FIdsas0efqA4m7bwQ5Dj5SJxU+Ngp07gh+SSFk5UZ2IoimNq5BMmnb7Po/0mjiGxzQj5lMVUxmKlWkcmUxatQUB5tsDG2j6OoRGP6nS8AEuXtAche09OSaYsqn+3iVsadkTy1dJDJgsJ5Pz5HG+OxtE0yZXLs1ybzdH1Qt4dG+ao4zOTtSjl41T+2OPybJqOF/LhbI4b75dZ33qCvFBwmUy65IcdXi3G+LPRJBeLcNjpkXZ0bEMSKkVp5gy7R31yboT1RpN8zGD9QRW53+zxy8NDcimL2+t1do56LEyOUD/tc6mQoFrrcvfeY8ZzMX5e3mFhcoTtox7fLz/m6rU3kBnXoN4aMDca41wuztr+CUrB2mEHhcILFK5jMF9Kcno6IFQ8/5zLusj2wMc2dWxdZ7VaZ24iyZ3tBjFD8uDgBF0TjJ5NstnoMT01wt3tBpfGk/x+f4OsqyPvPWqyXWux+tcJn8yP8fVPFZ52fH6tHKKAdj9kpphgYSKNGZEcdXy+Waxw6+Y7KEBKAQCaFAgh4JkrxXMEIAT8b0KhEEIgXynG6HkBpRGLZFSnPJ2h2fXZqOyRiOooFMOOTqPbJ5e0aXY9SlMZnnYDXEOivfbRzVt+oIgaGq1+QNw2cU2N8lQOUxd8++V3TM5dpN728EJFyo6QTViEClq9ADniRFhaXMExJIYuqDV7eKFit97GNTWufn4dQxOcSUTw/BAvUNSaPQKleHsshdw77vPFZ+/xT8cnaemUsw6LtzcppB1+/G2X119K8PH5PNVal+sXiyzd2aScdSilo9zfP0bqzyrqQqAJ8V9DwQsI8aJLAXI8bTKeNhl2dUxN4piS6ekMF4oulZV1hmydreMWUgi2mi2mXs7gmpKOF9LxQv4Fv4E1cRJu1JkAAAAASUVORK5CYII=","theme":null,"options":{"xaxis_height":80,"yaxis_width":120,"xaxis_font_size":null,"yaxis_font_size":null,"brush_color":"#0000FF","show_grid":true,"anim_duration":500}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/heatmap.png)
 
 ```r
 ggsave("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/ExploratoryDataAnalysis/d3heatmap.pdf")
@@ -525,10 +481,7 @@ p2<-ggplot(orangejuice, aes(x=SalePriceMM, fill=Purchase)) + geom_bkde(alpha=0.5
 easyGgplot2::ggplot2.multiplot(p1,p2, cols=2)
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-18-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/14.png)
 
 The sale price for both purchased Citrus Hill and  Minute Maid Orange Juice is multimodal and the Citrus Hill has a higher sale price.
 
@@ -1195,10 +1148,7 @@ pm<-ggpairs(orangejuice,spec_variable , title = "",mapping = aes(color = Purchas
 pm
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-21-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/15.png)
 
 
 We can select one of plots above as follows:
@@ -1207,10 +1157,7 @@ We can select one of plots above as follows:
 pm[1,7]
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-22-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/16.png)
 
 
 
@@ -1220,10 +1167,7 @@ na.omit(orangejuice)%>% select_if(~!is.double(.x))%>%
   theme(legend.position = "top")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-23-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/17.png)
 
 ```r
 #Equivalently
@@ -1267,10 +1211,7 @@ ggduo(
   theme(legend.position = "top")
 ```
 
-<div class="figure">
-<img src="ExploratoryDataAnalysis_files/figure-html/unnamed-chunk-24-1.png" alt="Fig. 30" width="100%" />
-<p class="caption">Fig. 30</p>
-</div>
+![ ]( /img/ExploratoryDataAnalysis/18.png)
 
 
 
