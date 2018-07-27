@@ -43,6 +43,8 @@ The  Python Engine
 This is a  new Python language engine for R Markdown. It  supports bi-directional communication between R and Python (R chunks can access Python objects and vice-versa).
 
 
+![ ]( /img/RPYTHON/pythonengine.png)
+
 ```python
 import csv
 import datetime
@@ -290,7 +292,7 @@ plt.show()
 
 
 
-![ ]( /img/RPYTHON/3.png)
+![ ]( /img/RPYTHON/1.png)
 
 We can also plot transfer the data from the Python environment and plot with ggplot as follows:
 
@@ -323,7 +325,7 @@ scale_color_viridis(discrete=TRUE,option = "A")+
 ```
 
 
-![ ]( /img/RPYTHON/4.png)
+![ ]( /img/RPYTHON/2.png)
 
 ```r
 df6%>% select(Date,High,Close,Low,Open,Symbol)%>%
@@ -347,7 +349,7 @@ scale_color_viridis(discrete=TRUE,option = "D")+
 
 
 
-![ ]( /img/RPYTHON/5.png)
+![ ]( /img/RPYTHON/3.png)
 
 
 
@@ -428,7 +430,7 @@ plt.show()
 
 
 
-![ ]( /img/RPYTHON/6.png)
+![ ]( /img/RPYTHON/4.png)
 
 
 
@@ -449,7 +451,7 @@ ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 
 
 
-![ ]( /img/RPYTHON/7.png)
+![ ]( /img/RPYTHON/6.png)
 
 
 #### Sourcing Python scripts
@@ -469,7 +471,7 @@ ggplot(py$employeedata, aes(Age,fill=Attrition)) + geom_histogram(bins = 30)
 ```
 
 
-![ ]( /img/RPYTHON/8.png)
+![ ]( /img/RPYTHON/7.png)
 
 #### Python REPL
 The repl_python() function allows switching between Python and R a breeze.First a call is made to repl_python() function , which provides a Python REPL embedded within your R session.Objects created within the Python REPL can be accessed from R using the py object exported from reticulate. The Python and R code can together be run in the R console like the example below.
