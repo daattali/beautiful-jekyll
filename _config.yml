@@ -102,6 +102,9 @@ share-links-active:
 
 # --- Web Statistics Section --- #
 
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+#gtag: ""
+
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-67420525-2"
 
@@ -117,9 +120,15 @@ google_analytics: "UA-67420525-2"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
-# --- Misc --- #
+# --- Comments --- #
+
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+# disqus: ""
+
+# To use Facebook Comments, fill in a Facebook App ID
+# fb_comment_id: ""
+
+# --- Misc --- #
 
 # Facebook App ID
 # fb_app_id: ""

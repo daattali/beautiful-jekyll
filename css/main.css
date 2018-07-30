@@ -52,6 +52,8 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .main-content {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
     padding-top: 130px;
   }
 }
@@ -207,6 +209,11 @@ img {
   .navbar-custom .avatar-container  .avatar-img {
     width: 100%;
   }
+}
+
+.container-fluid  {
+  padding-left: max(15px, env(safe-area-inset-left));
+  padding-right: max(15px, env(safe-area-inset-right));
 }
 
 /* Multi-level navigation links */
@@ -687,6 +694,9 @@ td.gutter pre {
 }
 .highlight > pre {
   padding: 0;
+}
+.highlight > pre.highlight {
+  padding: 9.5px;
 }
 td.code pre {
   border-width: 0 0 0 2px;
