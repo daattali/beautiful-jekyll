@@ -97,11 +97,11 @@ steering-list:
     
 ---
 
-## PIs
+## PIs (in alphabetical order)
 
 {% include list-circles.html items=page.pi-list %}
 
-## Steering Committee
+## Steering Committee (in alphabetical order)
 
 We are still seeking 1-2 non-marine evolutionary geneticists to join our steering committee. Please contact the PIs if you are interested!
 
