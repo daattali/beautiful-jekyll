@@ -54,7 +54,7 @@ steering-list:
     github:
   - name: John Largier
     img: /img/people/largier.jpg
-    desc:  DESCRIPTION. University of California, Davis. Professor Department of Environmental Science and Policy, and the Bodega Marine Laboratory Associate Director of Research, Coastal & Marine Sciences Institute
+    desc:  Studies the role of transport in ocean, bay, nearshore and estuarine waters. University of California, Davis. Professor Department of Environmental Science and Policy, and the Bodega Marine Laboratory Associate Director of Research, Coastal & Marine Sciences Institute
     website: http://bml.ucdavis.edu/research/faculty/john-largier/
     url: http://bml.ucdavis.edu/research/faculty/john-largier/
     twitter:
