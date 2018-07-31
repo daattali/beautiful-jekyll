@@ -75,10 +75,10 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "rcn-ecs@example.com"
+  email: "evolvingseas@gmail.com"
 #  facebook: daattali
-  github: rcn-ecs
-  twitter: rcn-ecs
+  github: RCN-ECS
+  twitter: EvolvingSeas
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
