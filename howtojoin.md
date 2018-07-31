@@ -11,8 +11,6 @@ Joining our network is as simple as filling out this form!
 We will use the listserv to send updates about activities.
 [Click here to manage your listserv membership](https://listserv.neu.edu/cgi-bin/wa?SUBED1=RCN-ECS&A=1)
 
-### Do we want a twitter handle (@rcn-ecs) or hastag (#rcn-ecs)?
-
-### Do we want an email?
+### 3) Follow us on twitter [@EvolvingSeas](https://twitter.com/evolvingseas)
  
 
