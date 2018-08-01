@@ -52,6 +52,13 @@ steering-list:
     url: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     twitter:  https://twitter.com/DrCarlsHorn
     github:
+  - name: Andy Kern
+    img: /img/people/andy_kern.jpg
+    desc:  Population genomicist with expertise in humans, fruit flies, and plants. Assistant Professor in the Department of Biology at the University of Oregon.
+    website:  http://kernlab.rutgers.edu/index.html
+    url:  http://kernlab.rutgers.edu/index.html
+    twitter:  https://twitter.com/pastramimachine
+    github:    
   - name: John Largier
     img: /img/people/largier.jpg
     desc:  Studies the role of transport in ocean, bay, nearshore and estuarine waters. University of California, Davis. Professor Department of Environmental Science and Policy, and the Bodega Marine Laboratory Associate Director of Research, Coastal & Marine Sciences Institute
@@ -102,8 +109,6 @@ steering-list:
 {% include list-circles.html items=page.pi-list %}
 
 ## Steering Committee (in alphabetical order)
-
-We are still seeking 1-2 non-marine evolutionary geneticists to join our steering committee. Please contact the PIs if you are interested!
 
 {% include list-circles.html items=page.steering-list %}
     
