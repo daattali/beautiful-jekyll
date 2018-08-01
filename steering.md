@@ -58,7 +58,7 @@ steering-list:
     website:  http://kernlab.rutgers.edu/index.html
     url:  http://kernlab.rutgers.edu/index.html
     twitter:  https://twitter.com/pastramimachine
-    github:    
+    github:    https://github.com/kern-lab
   - name: John Largier
     img: /img/people/largier.jpg
     desc:  Studies the role of transport in ocean, bay, nearshore and estuarine waters. University of California, Davis. Professor Department of Environmental Science and Policy, and the Bodega Marine Laboratory Associate Director of Research, Coastal & Marine Sciences Institute
