@@ -74,7 +74,7 @@ social-network-links:
   email: "duartejosemy@gmail.com"
   github: josemyduarte
   twitter: JosemyD
-  instagram: josemy.duarte # eg. daattali
+  instagram: josemy.duarte
   linkedin: josemyduarte
 #  facebook: yourname
 #  reddit: yourname
@@ -103,13 +103,13 @@ share-links-active:
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-67420525-2"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-67420525-2"
+#google_analytics: "UA-67420525-2"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-TD8FCBH"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
