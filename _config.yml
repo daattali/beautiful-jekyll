@@ -109,7 +109,7 @@ gtag: "UA-67420525-2"
 #google_analytics: "UA-67420525-2"
 
 # Google Tag Manager ID
-gtm: "GTM-TD8FCBH"
+# gtm: ""
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
