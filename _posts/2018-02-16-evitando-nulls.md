@@ -5,6 +5,7 @@ title: 'Errores de novato'
 subtitle: Evitando los nulls
 date: '2018-02-15'
 tags: [programming, java, tips]
+share-img: /img/null-pointer-exception.png
 ---
 
 ```NullPointerException```, no creo equivocarme  al afirmar que difícilmente encontraremos un programador de Java que no haya visto esa excepción en su vida. Esta excepción nos indica que hemos intentado utilizar un ```null``` donde un objeto era requerido, esto incluye intentar:
