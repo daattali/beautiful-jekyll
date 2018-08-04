@@ -75,9 +75,15 @@
   {% endif %}
 
 
-  <meta property="og:type" content="article" />
+  <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="{{ site.title }}" />
+
+  {% if page.share-img %}
+  <meta property="og:image" content="{{ site.url }}{{ page.share-img }}" />
+  {% elsif site.avatar %}
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% endif %}
 
   {% if page.id %}
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
@@ -86,13 +92,6 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
   {% endif %}
-
-  {% if page.share-img %}
-  <meta property="og:image" content="{{ site.url }}{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
-  {% endif %}
-
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary_large_image" />
