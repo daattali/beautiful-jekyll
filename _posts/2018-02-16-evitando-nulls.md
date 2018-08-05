@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: 'Errores de novato'
-subtitle: Evitando los nulls
+subtitle: Evitando NullPointerExceptions
 date: '2018-02-15'
 tags: [programming, java, tips]
 share-img: /img/null-pointer-exception.png
