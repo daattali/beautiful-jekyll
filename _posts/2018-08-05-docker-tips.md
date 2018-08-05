@@ -13,12 +13,12 @@ Você costumar subir muitos containers e tem dificuldade para realizar o gerenci
 
 Cada vez mais o docker está se tornando algo rotineiro na vida das pessoas que transformam café em código, seja ele um dev python, java, go ou o pessoal de infra que precisa deixar o ambiente imutável, seja em desenvolvimento, stage, produção , QA ... Pensando em tudo isso, escrevo essas dicas que iram ser muito úteis para todos.  
 
-Se você caiu de paraquedas no blog, [aqui](http://localhost), eu comento alguns comandos básicos sobre docker.  
+Se você caiu de paraquedas no blog, [aqui](https://adrianocanofre.github.io/tutorial/docker-basico/) eu comento alguns comandos básicos sobre docker.  
 
 
 ## 1 - Cuide do seu storage  
 
-O repositório do  [docker hub](https://adrianocanofre.github.io/tutorial/docker-basico/) e extremamente grande, e contem inumeras imagens do seus mais diversos tipos, porem sempre é bom fazer uma limpeza, para resolver esse problema vai algumas dicas.  
+O repositório do  [docker hub](https://hub.docker.com/explore/) e extremamente grande, e contem inumeras imagens do seus mais diversos tipos, porem sempre é bom fazer uma limpeza, para resolver esse problema vai algumas dicas.  
 
 
 #### Removendo containers    
