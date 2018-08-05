@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Docker tips
-subtitle: 5 dicas muito uteis para seu dia a dica com o docker.
+subtitle: 5 dicas muito úteis para seu dia a dica com o docker.
 date: 2018-08-05 13:00:00
 image: /img/docker-tips.png
 share-img: /img/docker-tips.png
@@ -11,7 +11,7 @@ categories: docker dicas
 
 Você costumar subir muitos containers e tem dificuldade para realizar o gerenciamento deles? Ou então, está querendo aprender algumas dicas e truques para ficar mais expert em docker? Está no lugar certo, neste post irei descrever algumas dicas sobre containers, e como isso pode ajudar no seu dia a dia.  
 
-Cada vez mais o docker está se tornando algo rotineiro na vida das pessoas que transformam café em código, seja ele um dev python, java, go ou o pessoal de infra que precisa deixar o ambiente imutável, seja em desenvolvimento, stage, produção , QA ... Pensando em tudo isso, escrevo essas dicas que iram ser muito uteis para todos.  
+Cada vez mais o docker está se tornando algo rotineiro na vida das pessoas que transformam café em código, seja ele um dev python, java, go ou o pessoal de infra que precisa deixar o ambiente imutável, seja em desenvolvimento, stage, produção , QA ... Pensando em tudo isso, escrevo essas dicas que iram ser muito úteis para todos.  
 
 Se você caiu de paraquedas no blog, [aqui](http://localhost), eu comento alguns comandos básicos sobre docker.  
 
