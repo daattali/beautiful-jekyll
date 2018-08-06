@@ -62,3 +62,5 @@ Set-VMHostFirmware -VMHost (get-VMHost MyHost) -Restore -Force -SourcePath
 
 
 And remember to always document your work where you and your colleagues can find it. It's always better to have a corporate document with procedures created for YOUR environment than googling around in panic mode.
+
+Find out more about how to backup your virtual environment with [Nakivo for VMware](https://www.nakivo.com/vmware-backup/) and [Nakivo for Hyper-V](https://www.nakivo.com/hyper-v-backup/). 
