@@ -3,7 +3,7 @@ layout: post
 published: true
 title: 'Superando la entrevista'
 subtitle: La primera impresión importa
-date: '2018-08-03'
+date: '2018-08-04'
 image: /img/linkedin.png
 share-img: /img/interview-in-progress.jpg
 tags: [interview, tips]
