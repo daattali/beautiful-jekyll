@@ -1,5 +1,8 @@
-# MDS software stack install instructions for Windows
-
+---
+layout: page
+title: Windows
+subtitle: MDS software stack install instructions for Windows
+---
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 - runs one of the following operating systems: macOS Yosemite 10.10.3 or later, Ubuntu 14.04 or later, Windows 10 Professional, Enterprise or Education (1511 November update, Build 10586 or later).
 - can connect to networks via a wireless connection (and preferably also a wired connection)
