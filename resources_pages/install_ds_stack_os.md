@@ -1,4 +1,4 @@
-# MDS software stack install instructions for OS
+# MDS software stack install instructions for macOS
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 - runs one of the following operating systems: macOS Yosemite 10.10.3 or later, Ubuntu 14.04 or later, Windows 10 Professional, Enterprise or Education (1511 November update, Build 10586 or later).
@@ -13,7 +13,7 @@ These instructions will walk you through installing the required Data Science so
 - [GitHub](#github)
 - [Git](#git)
 - [Python and Jupyter](#python)
-- [R, IR kernel and RStudio](#r-ir-kernel-and-rstudio)
+- [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [Atom Text Editor](#atom-text-editor)
 - [LaTeX](#latex)
 - [SQLite](#sqlite)
@@ -98,7 +98,7 @@ If you already have installed Anaconda at some point in the past, we recommend t
     conda update anaconda
 ```
 
-## R, IR kernel and RStudio
+## R, IRkernel and RStudio
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
 #### R

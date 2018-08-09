@@ -13,7 +13,7 @@ These instructions will walk you through installing the required Data Science so
 - [GitHub](#github)
 - [Git](#git)
 - [Python and Jupyter](#python)
-- [R, IR kernel and RStudio](#r-ir-kernel-and-rstudio)
+- [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [Atom Text Editor](#atom-text-editor)
 - [LaTeX](#latex)
 - [SQLite](#sqlite)
@@ -89,7 +89,7 @@ conda update conda
 conda update anaconda
 ```
 
-## R, IR kernel and RStudio
+## R, IRkernel and RStudio
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
 #### R
