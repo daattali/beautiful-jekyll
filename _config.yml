@@ -73,7 +73,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-#  email: "something@something.com"
+  email: "truthandlies_ur35@hotmail.com"
 # facebook: daattali
   github: urwa
   twitter: urwa_shabir
@@ -94,7 +94,7 @@ social-network-links:
 # Select which share links to show in posts
 share-links-active:
   twitter: true
-  facebook: false
+  facebook: true
   google: true
   linkedin: true
   
