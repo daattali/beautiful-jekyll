@@ -93,18 +93,14 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  stackoverflow: true
-  github: true
-  google: true
   twitter: true
-  facebook: true
+  facebook: false
   google: true
   linkedin: true
   
-
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -112,10 +108,10 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-123877628-1"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-TLWLMGX"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
