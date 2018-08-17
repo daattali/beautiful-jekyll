@@ -3,6 +3,16 @@ layout: post
 published: true
 title: All your VMs in RDCManager in 20 seconds
 ---
+```
+[ Update 201808/17 ]
+
+- Added 3389 TCP port check on VM IP(s) - Set the first one the responds as hostname and "NO-RDP-RESPONSE" if none does.
+
+- Added TCPCheckTimeout parameter to Add-RDCManVM function to configure the time it takes for the TCP port check to time out.
+```
+
+----
+
 I recently started a new job and just like in my previous one I wanted to have all servers consolidated in one place so I can easily RDP on them if needed. I use the free Microsoft tool **Remote Desktop Connection Manager (RDCMan)**. There are better software out there like RoyalTS in which you can configure SSH, Http, Ftp, vnc etc but for now RDCMan is good enough and there are plenty of people using it so hopefully this post can help them. There is "quite a few" servers in the environment so adding them to the console one by one manually is a major no-no given my allergy to repetitive tasks. 
 
 The script below will create an RDG file you can use in RDCMan that will contain all the Windows VMs of the vCenter your are connected to. The VMs that are powered off or don't have VMware tools running won't be processed as PowerCLI won't be able to fetch the host name and IP (non Windows VMs are excluded for obvious reasons).
@@ -44,4 +54,3 @@ I personally created one file per vCenter and I open them all in RDCMan. It give
 **Note**: At the moment it does not update a file so if you run it against and existing rdg file it will overwrite it. You will then need to recreate your creds and your physical servers. I may add the feature in the future but I'd need to do the xml bit properly and I'm not too fussed about it for now...
 
 **Note2**: If you get an error about an unsupported special character when opening the file please tell me via the contact form so I can update it. a covered a few of them but I'm sure there'll be others.
-
