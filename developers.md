@@ -1,3 +1,8 @@
+---
+layout: page
+title: For Developers
+---
+
 If you want to contribute to the DGtal library, contact the DGtal Editorial Board. For technical details on the DGtal project, have a look to the [doxygen nightly build documentation][1].
 
 Recommended pages:

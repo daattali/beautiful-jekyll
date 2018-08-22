@@ -1,3 +1,8 @@
+---
+layout: page
+title: For Users
+---
+
 To use DGtal in your own project, a very nice solution exists with *cmake*: here you have an example to build a DGtal *helloword*:
 
 ``` cmake
