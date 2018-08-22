@@ -9,7 +9,7 @@ The collaborative project DGtal aims at developing generic, efficient and reliab
 
 # Overview of digital geometry
 
-Digital geometry aims at defining proper geometric models and properties onto subsets of the integer plane/space ($$ℤ^d$$). It is also interested in defining efficient algorithms for digital object topology and geometry processing. Natural applications of digital geometry are found in image analysis, since images are digital by nature. Digital geometry finds also applications in pattern recognition, computer graphics, biomedical  image analysis, OCR, 3D imaging.
+Digital geometry aims at defining proper geometric models and properties onto subsets of the integer plane/space ($$\mathbb{Z^d$$). It is also interested in defining efficient algorithms for digital object topology and geometry processing. Natural applications of digital geometry are found in image analysis, since images are digital by nature. Digital geometry finds also applications in pattern recognition, computer graphics, biomedical  image analysis, OCR, 3D imaging.
 
 Even if the domain emerged during the second half of the 20th century with the birth of computer graphics and digital image processing, many links have been demonstrated between Digital Geometry results and fundamental theorems in mathematics (arithmetic, geometry, topology…), discrete mathematics (word theory, combinatorics, graph theory…) or computer science (algorithmic, computational geometry, image processing…).
 
