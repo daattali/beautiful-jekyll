@@ -1,5 +1,5 @@
 ---
-title: " Pothole Detection"
+title: " Pothole Detection With Machine Learning"
 subtitle: Visualization with ggplot Extensions
 #output: rmarkdown::github_document
 
@@ -16,7 +16,7 @@ date: "August 21, 2018"
 toc_depth: 3  # upto three depths of headings (specified by #, ## and ###)
 number_sections: true  ## if you want number sections at each table header
 highlight: tango  # specifies the syntax highlighting style
-tags:  ggplot2,visualization,Data Exploration,ggplot Extensions
+tags:  Machine Learning,visualization,Data Exploration,caret,recipes
 ---
 
 
