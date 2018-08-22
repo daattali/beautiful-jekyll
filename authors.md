@@ -1,4 +1,8 @@
 
+---
+layout: page
+title: Authors
+---
 
 ## DGtal Editorial Board
 
