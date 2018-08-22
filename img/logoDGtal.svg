@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg3695"
+   version="1.1"
+   viewBox="0 0 765.354 255.118"
+   height="90mm"
+   width="270mm">
+  <metadata
+     id="metadata4311">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4309">
+    <filter
+       y="-.25"
+       x="-.25"
+       height="1.5"
+       width="1.5"
+       id="filter5161">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="2"
+         in="SourceAlpha"
+         id="feGaussianBlur5163" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.4 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix5165" />
+      <feOffset
+         result="offsetBlur"
+         dy="8"
+         dx="8"
+         in="bluralpha"
+         id="feOffset5167" />
+      <feMerge
+         id="feMerge5169">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode5171" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode5173" />
+      </feMerge>
+    </filter>
+    <filter
+       y="-.25"
+       x="-.25"
+       height="1.5"
+       width="1.5"
+       id="filter5243">
+      <feGaussianBlur
+         result="blur"
+         stdDeviation="2"
+         in="SourceAlpha"
+         id="feGaussianBlur5245" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.4 0 "
+         type="matrix"
+         result="bluralpha"
+         id="feColorMatrix5247" />
+      <feOffset
+         result="offsetBlur"
+         dy="8"
+         dx="8"
+         in="bluralpha"
+         id="feOffset5249" />
+      <feMerge
+         id="feMerge5251">
+        <feMergeNode
+           in="offsetBlur"
+           id="feMergeNode5253" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode5255" />
+      </feMerge>
+    </filter>
+  </defs>
+  <desc
+     id="desc3697">logoDGtal.svg, created with the Board library (Copyleft) 2007 Sebastien Fourey</desc>
+  <rect
+     id="rect3719"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="28.35" />
+  <rect
+     id="rect3721"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="28.35" />
+  <rect
+     id="rect3723"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="28.35" />
+  <rect
+     id="rect3725"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="28.35" />
+  <rect
+     id="rect3727"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="28.35" />
+  <rect
+     id="rect3729"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="56.69"
+     x="28.35" />
+  <rect
+     id="rect3731"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="28.35" />
+  <rect
+     id="rect3737"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="56.69" />
+  <rect
+     id="rect3749"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="56.69" />
+  <rect
+     id="rect3755"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="85.04" />
+  <rect
+     id="rect3767"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="85.04" />
+  <rect
+     id="rect3773"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="113.39" />
+  <rect
+     id="rect3775"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="113.39" />
+  <rect
+     id="rect3783"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="56.69"
+     x="113.39" />
+  <rect
+     id="rect3785"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="113.39" />
+  <rect
+     id="rect3793"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="141.73" />
+  <rect
+     id="rect3795"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="141.73" />
+  <rect
+     id="rect3797"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="141.73" />
+  <rect
+     id="rect3799"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="141.73" />
+  <rect
+     id="rect3801"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="56.69"
+     x="141.73" />
+  <rect
+     id="rect3847"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="226.77" />
+  <rect
+     id="rect3849"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="226.77" />
+  <rect
+     id="rect3851"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="226.77" />
+  <rect
+     id="rect3853"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="226.77" />
+  <rect
+     id="rect3855"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="56.69"
+     x="226.77" />
+  <rect
+     id="rect3863"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="255.12" />
+  <rect
+     id="rect3865"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="255.12" />
+  <rect
+     id="rect3873"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="56.69"
+     x="255.12" />
+  <rect
+     id="rect3875"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="255.12" />
+  <rect
+     id="rect3881"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="283.46" />
+  <rect
+     id="rect3893"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="283.46" />
+  <rect
+     id="rect3899"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="311.81" />
+  <rect
+     id="rect3905"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="311.81" />
+  <rect
+     id="rect3911"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="28.35"
+     x="311.81" />
+  <rect
+     id="rect3917"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="340.16" />
+  <rect
+     id="rect3919"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="340.16" />
+  <rect
+     id="rect3921"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="340.16" />
+  <rect
+     id="rect3923"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="340.16" />
+  <rect
+     id="rect3971"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="425.2" />
+  <rect
+     id="rect3973"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="425.2" />
+  <rect
+     id="rect3975"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="425.2" />
+  <rect
+     id="rect3977"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="425.2" />
+  <rect
+     id="rect3979"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="425.2" />
+  <rect
+     id="rect3989"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="453.54" />
+  <rect
+     id="rect3995"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="453.54" />
+  <rect
+     id="rect4007"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="481.89" />
+  <rect
+     id="rect4043"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="538.58" />
+  <rect
+     id="rect4045"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="538.58" />
+  <rect
+     id="rect4047"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="538.58" />
+  <rect
+     id="rect4061"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="566.93" />
+  <rect
+     id="rect4065"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="566.93" />
+  <rect
+     id="rect4079"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="595.28" />
+  <rect
+     id="rect4081"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="595.28" />
+  <rect
+     id="rect4083"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="595.28" />
+  <rect
+     id="rect4097"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="623.62" />
+  <rect
+     id="rect4133"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="680.32" />
+  <rect
+     id="rect4135"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="680.32" />
+  <rect
+     id="rect4137"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="680.32" />
+  <rect
+     id="rect4139"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="680.32" />
+  <rect
+     id="rect4141"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="680.32" />
+  <rect
+     id="rect4151"
+     style="stroke-linecap:butt;stroke-linejoin:miter"
+     stroke-width="0.353mm"
+     stroke="rgb(160,160,160)"
+     fill="rgb(255,255,255)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="708.66" />
+  <g
+     style="filter:url(#filter5161)"
+     id="g5041">
+    <rect
+       x="28.35"
+       y="198.43"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4185" />
+    <rect
+       x="28.35"
+       y="170.08"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4187" />
+    <rect
+       x="28.35"
+       y="141.73"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4189" />
+    <rect
+       x="28.35"
+       y="113.39"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4191" />
+    <rect
+       x="28.35"
+       y="85.04"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4193" />
+    <rect
+       x="28.35"
+       y="56.69"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4195" />
+    <rect
+       x="28.35"
+       y="28.35"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4197" />
+    <rect
+       x="56.69"
+       y="198.43"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4199" />
+    <rect
+       x="85.04"
+       y="198.43"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4201" />
+    <rect
+       x="113.39"
+       y="198.43"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4203" />
+    <rect
+       x="113.39"
+       y="170.08"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4205" />
+    <rect
+       x="141.73"
+       y="170.08"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4207" />
+    <rect
+       x="141.73"
+       y="141.73"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4209" />
+    <rect
+       x="141.73"
+       y="113.39"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4211" />
+    <rect
+       x="141.73"
+       y="85.04"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4213" />
+    <rect
+       x="141.73"
+       y="56.69"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4215" />
+    <rect
+       x="113.39"
+       y="56.69"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4217" />
+    <rect
+       x="113.39"
+       y="28.35"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4219" />
+    <rect
+       x="85.04"
+       y="28.35"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4221" />
+    <rect
+       x="56.69"
+       y="28.35"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4223" />
+  </g>
+  <g
+     style="filter:url(#filter5243)"
+     id="g5208">
+    <rect
+       x="226.77"
+       y="141.73"
+       width="28.35"
+       height="28.35"
+       fill="rgb(180,180,180)"
+       stroke="rgb(0,0,0)"
+       stroke-width="0.882mm"
+       style="stroke-linecap:round;stroke-linejoin:round"
+       id="rect4231" />
+    <g
+       id="g5175">
+      <rect
+         id="rect4225"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="198.43"
+         x="255.12" />
+      <rect
+         id="rect4227"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="170.08"
+         x="255.12" />
+      <rect
+         id="rect4229"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="170.08"
+         x="226.77" />
+      <rect
+         id="rect4233"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="113.39"
+         x="226.77" />
+      <rect
+         id="rect4235"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="85.04"
+         x="226.77" />
+      <rect
+         id="rect4237"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="56.69"
+         x="226.77" />
+      <rect
+         id="rect4239"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="56.69"
+         x="255.12" />
+      <rect
+         id="rect4241"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="28.35"
+         x="255.12" />
+      <rect
+         id="rect4243"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="28.35"
+         x="283.46" />
+      <rect
+         id="rect4245"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="28.35"
+         x="311.81" />
+      <rect
+         id="rect4247"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="198.43"
+         x="283.46" />
+      <rect
+         id="rect4249"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="198.43"
+         x="311.81" />
+      <rect
+         id="rect4251"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="198.43"
+         x="340.16" />
+      <rect
+         id="rect4253"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="170.08"
+         x="340.16" />
+      <rect
+         id="rect4255"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="141.73"
+         x="340.16" />
+      <rect
+         id="rect4257"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="113.39"
+         x="340.16" />
+      <rect
+         id="rect4259"
+         style="stroke-linecap:round;stroke-linejoin:round"
+         stroke-width="0.882mm"
+         stroke="rgb(0,0,0)"
+         fill="rgb(180,180,180)"
+         height="28.35"
+         width="28.35"
+         y="113.39"
+         x="311.81" />
+    </g>
+  </g>
+  <rect
+     id="rect4261"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="425.2" />
+  <rect
+     id="rect4263"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="453.54" />
+  <rect
+     id="rect4265"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="481.89" />
+  <rect
+     id="rect4267"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="425.2" />
+  <rect
+     id="rect4269"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="425.2" />
+  <rect
+     id="rect4271"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="425.2" />
+  <rect
+     id="rect4273"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="425.2" />
+  <rect
+     id="rect4275"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="453.54" />
+  <rect
+     id="rect4277"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="538.58" />
+  <rect
+     id="rect4279"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="595.28" />
+  <rect
+     id="rect4281"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="566.93" />
+  <rect
+     id="rect4283"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="623.62" />
+  <rect
+     id="rect4285"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="538.58" />
+  <rect
+     id="rect4287"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="595.28" />
+  <rect
+     id="rect4289"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="538.58" />
+  <rect
+     id="rect4291"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="566.93" />
+  <rect
+     id="rect4293"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="595.28" />
+  <rect
+     id="rect4295"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="680.32" />
+  <rect
+     id="rect4297"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="198.43"
+     x="708.66" />
+  <rect
+     id="rect4299"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="170.08"
+     x="680.32" />
+  <rect
+     id="rect4301"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="141.73"
+     x="680.32" />
+  <rect
+     id="rect4303"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="113.39"
+     x="680.32" />
+  <rect
+     id="rect4305"
+     style="stroke-linecap:round;stroke-linejoin:round"
+     stroke-width="0.353mm"
+     stroke="rgb(0,0,0)"
+     fill="rgb(0,0,0)"
+     height="28.35"
+     width="28.35"
+     y="85.04"
+     x="680.32" />
+</svg>
