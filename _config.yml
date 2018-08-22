@@ -24,15 +24,21 @@ description: Digital Geometry Tools and Algorithms Library
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Overview: "overview"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://deanattali.com"
+    - Documentation: "documentation"
+    - Download: "download"
+    - For developers: "developers"
+    - For users: "users"
+  Authors: "authors"
+  Gallery: "gallery"
+  Sponsors: "sponsors"
+  License: "license"
+
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/logo_DGtal_small.png"
+avatar: "/img/logoRed.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
