@@ -24,7 +24,6 @@ description: Digital Geometry Tools and Algorithms Library
 # List of links in the navigation bar
 navbar-links:
   About DGtal: "aboutme"
-  Overview: "overview"
   Resources:
     - Documentation: "documentation"
     - Download: "download"
