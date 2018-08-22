@@ -1,5 +1,4 @@
 
-# Authors
 
 ## DGtal Editorial Board
 
@@ -30,7 +29,7 @@
 
 ## Students
 
-Anis Benyoub (LIRIS, INSA-Lyon)
-Jérémy Gaillard (LIRIS, INSA-Lyon)
-Xi Wang (LIRIS – CEN Météo-France)
-Nicolas Silva (LIRIS, INSA-Lyon)
+* Anis Benyoub (LIRIS, INSA-Lyon)
+* Jérémy Gaillard (LIRIS, INSA-Lyon)
+* Xi Wang (LIRIS – CEN Météo-France)
+* Nicolas Silva (LIRIS, INSA-Lyon)
