@@ -1,3 +1,8 @@
+---
+layout: page
+title: Documentation & Help
+---
+
 ### Documentation
 * [User guide and stable API documentation][1] (0.9.4.1)
 * [Nightly build doxygen documentation][2]
