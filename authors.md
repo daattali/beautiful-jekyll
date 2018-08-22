@@ -1,5 +1,5 @@
 
-#Authors
+# Authors
 
 ## DGtal Editorial Board
 
