@@ -54,4 +54,4 @@ This section should also include any other requirements of students participatin
 
 ### Conflicts of interest
 
-Declare any conflicts of interest. For example, if a current MDS student or family member is involved with your organization on a professional or personal level, this should be declared along with a short explanation.
+Declare any conflicts of interest. For example, if a current MDS student or family member is involved with your organization on a professional or personal level, this should be declared along with a short explanation. These situations are generally not problematic, but we prefer to disclose them to the students before they rank the projects.
