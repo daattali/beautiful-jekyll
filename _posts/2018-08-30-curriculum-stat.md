@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our curriculum, Part 1
+title: Our curriculum, Part 2
 subtitle: Statistics stream
 ---
 
