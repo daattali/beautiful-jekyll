@@ -11,7 +11,7 @@ All submitted labs **MUST** do the following:
   - any data present goes in the `data` directory
   - answers to written questions should be in the `doc` directory
 
-2. In the main `README.md` file in the lab/assignment repo, you must make it clear where all files are for all assignments, as well as explain anything the we need to know to understand your homework submission. Your README must also include a clickable link to your main report. (Please link to the most readable rendered version of your report; in other words, the version you want the grader to look at if viewing everything through the web browser. This may be an .ipynb, .md, .Rmd, .pdf, etc. depending on the situation. For example, if there are lots of LaTeX equations then .pdf will look better than .Rmd in the browser.) 
+2. In the main `README.md` file in the lab/assignment repo, you must make it clear where all files are for all assignments, as well as explain anything that we need to know to understand your homework submission. Your README must also include a clickable link to your main report. (Please link to the most readable rendered version of your report; in other words, the version you want the grader to look at if viewing everything through the web browser. This may be an .ipynb, .md, .Rmd, .pdf, etc. depending on the situation. For example, if there are lots of LaTeX equations then .pdf will look better than .Rmd in the browser.) 
 
 3. Your work must be reproducible from beginning to end. That means:
   - all data must be in the repo, or linked to and grabbed by your code (*e.g.,* `curl`, `wget`, `read_csv("<URL>")` etc)
