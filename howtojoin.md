@@ -20,6 +20,7 @@ Suggest a paper (or pair of companion papers) that you think everyone in the net
 We need a logo! Submit a logo to be considered by October 1.
 
 We'd also love to showcase your artwork on our website, especially art captures research projects that align with the themes of the network.
+
 Send your submissions to evolvingseas@gmail.com
 
 
