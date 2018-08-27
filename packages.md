@@ -28,7 +28,7 @@ title: Packages
 
 * * *
 
-*   [Kernel Package][3] <img class="wp-image-201 size-thumbnail" title="3D Domain visualization with some elements" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24-150x150.png" alt="" width="150" height="150" /> 3D Domain visualization with some elements (domain displayed in “Grid” mode)
+*   [Kernel Package][3] <img class="wp-image-201 size-thumbnail" title="3D Domain visualization with some elements" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24-150x150.png" alt="" width="150" height="150" />
     *   This package contains core concepts, objects and methods which are used in other higher level packages. For example, it defines number types considered in DGtal, fundamental structures such as the digital space, the digital domain, as well as basic linear algebra tools.
     *   *Jacques-Olivier Lachaud, David Coeurjolly, Guillaume Damiand, Sebastien Fourey*
     *   LGPL
@@ -38,7 +38,7 @@ title: Packages
 *   [Arithmetic Package][5]
     *   This package gathers tools to perform arithmetic computations.
 
-    <img class="   wp-image-556" title="dsl-standard-s" src="http://dgtal.org/wp/wp-content/uploads/2010/10/dsl-standard-s-300x255.png" alt="Standard digital straight line" width="126" height="107" /> Arithmetic view of standard digital straight lines
+    <img class="   wp-image-556" title="dsl-standard-s" src="http://dgtal.org/wp/wp-content/uploads/2010/10/dsl-standard-s-300x255.png" alt="Standard digital straight line" width="126" height="107" />
 
     Standard arithmetic computations are provided: greatest common divisor, Bézout vectors, continued fractions, convergent, intersection of integer half-spaces. Several representations of irreducible fractions are provided. They are based on the Stern-Brocot tree structure. With these fractions, amortized constant time operations are provided for computing reduced fractions. A representation of digital standard line in the first quadrant is provided, as well as fast algorithms to recognize digital straight subsegments. Furthermore, it provides classes for representing 2D lattice polytopes (convex integer polygons) as well as methods to perform linear integer programming in the plane.
     *   *Jacques-Olivier Lachaud, Xavier Provençal, Mouhammad Said, Emilie Charrier, Lilian Buzer*
@@ -46,7 +46,8 @@ title: Packages
 
 * * *
 
-*   [Topology Package][7] [caption id="attachment_249" align="alignright" width="150"][<img class="wp-image-249 size-thumbnail" title="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space" src="http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking-150x150.png" alt="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space" width="150" height="150" />][8] Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space[/caption]
+*   [Topology Package][7] <img class="wp-image-249 size-thumbnail" title="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space" src="http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking-150x150.png" alt="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space" width="150" height="150" />
+
     *   This package contains digital topology related concepts, objects and methods which are used in other higher level packages. For example, it contains the classical topology tools (à la Rosenfeld), cartesian cellular topology, and digital surface topology (à la Herman). Generic tools and methods are provided for extracting connected components, identifying simple points, determining the neighborhood over a digital surface, tracking the boundary of a shape, defining cells and incidence operations. Several types of digital surfaces are provided (implicit, explicit, boundary, frontier) and the user can use them in a unified way. This package is notably used by the geometry package, especially to define curves and surfaces.
     *   *Jacques-Olivier Lachaud, Bertrand Kerautret*
     *   LGPL
@@ -68,7 +69,8 @@ title: Packages
 * * *
 
 *   [Boards & Viewers][13]
-    *   This package gathers tools and utilities to import/export images and visualize digital [caption id="attachment_558" align="alignright" width="150"][<img class="wp-image-558 size-thumbnail" title="visuVol3D" src="http://dgtal.org/wp/wp-content/uploads/2012/10/visuVol3D1-150x150.png" alt="lobster" width="150" height="150" />][14] Volume rendering of the lobster image[/caption] data using interactive (viewers) and non-interactive (boards) mechanisms, in 2D and in 3D.
+<img class="wp-image-558 size-thumbnail" title="visuVol3D" src="http://dgtal.org/wp/wp-content/uploads/2012/10/visuVol3D1-150x150.png" alt="lobster" width="150" height="150" />
+    *   This package gathers tools and utilities to import/export images and visualize digital  data using interactive (viewers) and non-interactive (boards) mechanisms, in 2D and in 3D.
     *   *Bertrand Kerautret, Jacques-Olivier Lachaud, Nicolas Normand, Martial Tola, David Coeurjolly*
     *   LGPL (GPL if QGLViewer is used)
 
