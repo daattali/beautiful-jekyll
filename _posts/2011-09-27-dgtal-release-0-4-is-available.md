@@ -1,15 +1,7 @@
 ---
-ID: 280
-post_title: DGtal release 0.4 is available
-author: David Coeurjolly
-post_date: 2011-09-27 10:42:39
-post_excerpt: ""
 layout: post
-permalink: >
-  http://dgtal.org/dgtal-release-0-4-is-available/
-published: true
 ---
-We are pleased to announce that the release 0.4 of the DGtal library is available for download. Here you have a copy of the ChangeLog: 
+We are pleased to announce that the release 0.4 of the DGtal library is available for download. Here you have a copy of the ChangeLog:
 *   Global changes:
 *   A better decomposition of DGtal algorithms and data structures into packages.
 *   By default, DGtal is built with minimal dependencies.

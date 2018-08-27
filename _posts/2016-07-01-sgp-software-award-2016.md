@@ -1,13 +1,5 @@
 ---
-ID: 1013
-post_title: SGP Software award 2016
-author: dgtal
-post_date: 2016-07-01 10:50:02
-post_excerpt: ""
 layout: post
-permalink: >
-  http://dgtal.org/sgp-software-award-2016/
-published: true
 ---
 The DGtal project (http://dgtal.org) has received the software award at the Symposium on Geometry Processing 2016 (june 20th-24th, Berlin).
 
