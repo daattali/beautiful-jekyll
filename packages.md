@@ -36,7 +36,11 @@ title: Packages
 * * *
 
 *   [Arithmetic Package][5]
-    *   This package gathers tools to perform arithmetic computations. Standard arithmetic [caption id="attachment_556" align="alignright" width="126"][<img class="   wp-image-556" title="dsl-standard-s" src="http://dgtal.org/wp/wp-content/uploads/2010/10/dsl-standard-s-300x255.png" alt="Standard digital straight line" width="126" height="107" />][6] Arithmetic view of standard digital straight lines[/caption] computations are provided: greatest common divisor, Bézout vectors, continued fractions, convergent, intersection of integer half-spaces. Several representations of irreducible fractions are provided. They are based on the Stern-Brocot tree structure. With these fractions, amortized constant time operations are provided for computing reduced fractions. A representation of digital standard line in the first quadrant is provided, as well as fast algorithms to recognize digital straight subsegments. Furthermore, it provides classes for representing 2D lattice polytopes (convex integer polygons) as well as methods to perform linear integer programming in the plane.
+    *   This package gathers tools to perform arithmetic computations.
+
+    <img class="   wp-image-556" title="dsl-standard-s" src="http://dgtal.org/wp/wp-content/uploads/2010/10/dsl-standard-s-300x255.png" alt="Standard digital straight line" width="126" height="107" /> Arithmetic view of standard digital straight lines
+
+    Standard arithmetic computations are provided: greatest common divisor, Bézout vectors, continued fractions, convergent, intersection of integer half-spaces. Several representations of irreducible fractions are provided. They are based on the Stern-Brocot tree structure. With these fractions, amortized constant time operations are provided for computing reduced fractions. A representation of digital standard line in the first quadrant is provided, as well as fast algorithms to recognize digital straight subsegments. Furthermore, it provides classes for representing 2D lattice polytopes (convex integer polygons) as well as methods to perform linear integer programming in the plane.
     *   *Jacques-Olivier Lachaud, Xavier Provençal, Mouhammad Said, Emilie Charrier, Lilian Buzer*
     *   LGPL
 
