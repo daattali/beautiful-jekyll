@@ -92,7 +92,7 @@ jupyter notebook
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
 
-![](imgs/jupyter.png)
+![](/resources_pages/imgs/jupyter.png)
 
 
 If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
@@ -130,7 +130,7 @@ Chose and download the Mac version of RStudio from https://www.rstudio.com/produ
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
-![](imgs/RStudio.png)
+![](/resources_pages/imgs/RStudio.png)
 
 #### IR kernel
 
@@ -155,15 +155,15 @@ jupyter notebook
 
 A browser should have launched and you should see a page that looks like the screenshot below. Now click on "New" and then "R" (circled in red on the screenshot below) to launch an Jupyter notebook with an R kernel.
 
-![](imgs/IR_kernel_1.png)
+![](/resources_pages/imgs/IR_kernel_1.png)
 
 A notebook is using the R kernel if you see R in the right-hand side of the notebook (circled in red on the screenshot below).
 
-![](imgs/IR_kernel_2.png)
+![](/resources_pages/imgs/IR_kernel_2.png)
 
 Sometimes a kernel loads, but doesn't work if installation was not done correctly. To test whether your installation was done correctly now type `(x <- 5)` in the code cell and click on the run button to run the cell. If your R kernel works you should see the number 5 printed below the cell.
 
-![](imgs/IR_kernel_3.png)
+![](/resources_pages/imgs/IR_kernel_3.png)
 
 
 ## Atom Text Editor
@@ -184,7 +184,7 @@ you should see something like this if you were successful:
 
 If `which atom ` command doesn't return anything then you need to do more work to install the `atom` and `apm` commands. Open Atom by clicking on its icon (from Finder, Applications or Launchpad) and then type Cmd+Shift+P to get the "Command Palette" (a free form text prompt - see the image below) and in that type: "Window: Install Shell Commands". You will be prompted for an administrator password.
 
-![](imgs/atom_cp.png)
+![](/resources_pages/imgs/atom_cp.png)
 
 ## LaTeX
 
