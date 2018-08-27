@@ -28,7 +28,7 @@ title: Packages
 
 * * *
 
-*   [Kernel Package][3] [caption id="attachment_201" align="alignright" width="150"][<img class="wp-image-201 size-thumbnail" title="3D Domain visualization with some elements" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24-150x150.png" alt="" width="150" height="150" />][4] 3D Domain visualization with some elements (domain displayed in “Grid” mode)[/caption]
+*   [Kernel Package][3] <img class="wp-image-201 size-thumbnail" title="3D Domain visualization with some elements" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24-150x150.png" alt="" width="150" height="150" /> 3D Domain visualization with some elements (domain displayed in “Grid” mode)
     *   This package contains core concepts, objects and methods which are used in other higher level packages. For example, it defines number types considered in DGtal, fundamental structures such as the digital space, the digital domain, as well as basic linear algebra tools.
     *   *Jacques-Olivier Lachaud, David Coeurjolly, Guillaume Damiand, Sebastien Fourey*
     *   LGPL
