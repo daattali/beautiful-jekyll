@@ -51,7 +51,7 @@ Go to https://git-scm.com/download/win and a download should automatically start
 
 After installation, test if you were successful by opening the Git Bash program (if you followed the install instructions above, you should now have an icon on your Desktop). Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash program:
 
-![](imgs/gitbash.png)
+![](/resources_pages/imgs/gitbash.png)
 
 ## Python
 
