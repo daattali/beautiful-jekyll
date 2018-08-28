@@ -1,0 +1,7 @@
+<map id="DGtal::concepts::CPositiveIrreducibleFraction&lt; T &gt;" name="DGtal::concepts::CPositiveIrreducibleFraction&lt; T &gt;">
+<area shape="rect" id="node2" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. " alt="" coords="32,5,251,32"/>
+<area shape="rect" id="node3" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="25,56,258,83"/>
+<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="55,107,227,133"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CBackInsertable.html" title="Aim: Represents types for which a std::back_insert_iterator can be constructed with std::back_inserte..." alt="" coords="5,157,277,184"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="33,209,250,250"/>
+</map>

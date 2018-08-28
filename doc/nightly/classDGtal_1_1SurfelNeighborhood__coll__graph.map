@@ -1,0 +1,10 @@
+<map id="DGtal::SurfelNeighborhood&lt; TKSpace &gt;" name="DGtal::SurfelNeighborhood&lt; TKSpace &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1SignedKhalimskyCell.html" title="Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value..." alt="" coords="1789,63,1987,105"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, Integer \&gt;" alt="" coords="1389,63,1584,105"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="768,73,907,114"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, TInteger \&gt;" alt="" coords="1035,115,1229,157"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="160,13,280,40"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="440,111,608,167"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1SurfelAdjacency.html" title="DGtal::SurfelAdjacency\l\&lt; KSpace::dimension \&gt;" alt="" coords="1801,129,1975,170"/>
+<area shape="rect" id="node12" href="$classDGtal_1_1SurfelAdjacency.html" title="Aim: Represent adjacencies between surfel elements, telling if it follows an interior to exterior ord..." alt="" coords="1403,129,1571,170"/>
+</map>

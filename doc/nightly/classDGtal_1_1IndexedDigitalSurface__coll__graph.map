@@ -1,0 +1,14 @@
+<map id="DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;" name="DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;">
+<area shape="rect" id="node3" href="$structDGtal_1_1SignedKhalimskyCell.html" title="Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value..." alt="" coords="1873,501,2071,542"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, Integer \&gt;" alt="" coords="1400,351,1595,393"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="768,299,907,341"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, TInteger \&gt;" alt="" coords="1035,291,1229,333"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="160,352,280,379"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="1434,167,1561,193"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="1431,455,1563,481"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="440,256,608,312"/>
+<area shape="rect" id="node20" href="$classDGtal_1_1HalfEdgeDataStructure.html" title="Aim: This class represents an half&#45;edge data structure, which is a structure for representing the top..." alt="" coords="2334,308,2549,335"/>
+<area shape="rect" id="node23" href="$structDGtal_1_1HalfEdgeDataStructure_1_1HalfEdge.html" title="DGtal::HalfEdgeDataStructure\l::HalfEdge" alt="" coords="1390,267,1605,309"/>
+<area shape="rect" id="node25" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DigitalSurfaceContainer \&gt;" alt="" coords="2312,698,2571,739"/>
+<area shape="rect" id="node26" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="1877,722,2067,763"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="DGtal::concepts::CPredicate&lt; T, TElement &gt;" name="DGtal::concepts::CPredicate&lt; T, TElement &gt;">
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CPredicate.html" title="DGtal::concepts::CPredicate\l\&lt; T, T::Surfel \&gt;" alt="" coords="1550,5,1751,46"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CPredicate.html" title="DGtal::concepts::CPredicate\l\&lt; T, T::Point \&gt;" alt="" coords="1550,70,1751,111"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1concepts_1_1CPredicate.html" title="DGtal::concepts::CPredicate\l\&lt; T, T::Vertex \&gt;" alt="" coords="1550,135,1751,177"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; T, TElement, bool \&gt;" alt="" coords="915,70,1141,111"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="6,75,178,101"/>
+<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="269,105,443,132"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="493,105,720,146"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CSurfelPredicate.html" title="Aim: Defines a predicate on a surfel. " alt="" coords="1849,5,2028,46"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point. " alt="" coords="1803,77,2074,104"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user..." alt="" coords="2125,70,2307,111"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1concepts_1_1CVertexPredicate.html" title="Aim: Defines a predicate on a vertex. " alt="" coords="1847,135,2030,177"/>
+</map>

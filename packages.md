@@ -55,7 +55,8 @@ title: Packages
 *   [Geometry Package][9]
     *   This package contains geometry related concepts, objects and methods which are used in other higher level packages. It provides a generic framework for the segmentation of one-dimensional discrete structures, like strings, contours of 2d digital objects or nd digital curves. It has also limited support for digital plane recognition in 3d. It also provides a generic framework for the estimation of geometrical quantities, either global, like length, or local, like normal or curvature. Several estimators are built from some well chosen segmentations. On the other hand, this package contains tools for the analysis of volumes of arbitrary dimension, by the means of separable and incremental distance transforms.
     *   *Tristan Roussillon, David Coeurjolly, Jacques-Olivier Lachaud, Bertrand Kerautret*
-    *   LGPL [caption id="attachment_117" align="alignright" width="150"][<img class="wp-image-117 size-thumbnail" title="exampleDSS-3" src="http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3-150x118.png" alt="" width="150" height="118" />][10] Example of the decomposition of a simple 4-connected curve into maximal Discrete Straight Segments (greedy algorithm).[/caption] [caption id="attachment_259" align="alignright" width="150"][<img class="wp-image-259 size-thumbnail" title="Distance Transformation using the Euclidean distance " src="http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap-150x150.png" alt="" width="150" height="150" />][11] Distance Transformation using the Euclidean distance[/caption]
+    *   LGPL
+    <img class="wp-image-117 size-thumbnail" title="exampleDSS-3" src="http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3-150x118.png" alt="" width="150" height="118" /><img class="wp-image-259 size-thumbnail" title="Distance Transformation using the Euclidean distance " src="http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap-150x150.png" alt="" width="150" height="150" />
 
 * * *
 
@@ -74,29 +75,29 @@ title: Packages
 
 * * *
 
-*   [Image Package][15] [caption id="attachment_97" align="alignright" width="150"][<img class="wp-image-97 size-thumbnail" title="Visualisation of some iso contours" src="http://dgtal.org/wp/wp-content/uploads/2010/10/contourS1-150x150.gif" alt="" width="150" height="150" />][16] Visualisation of some iso contours[/caption]
+*   [Image Package][15] <img class="wp-image-97 size-thumbnail" title="Visualisation of some iso contours" src="http://dgtal.org/wp/wp-content/uploads/2010/10/contourS1-150x150.gif" alt="" width="150" height="150" />
     *   This package aims to implement Image models and data-structures.
     *   *Tristan Roussillon, David Coeurjolly*
     *   LGPL
 
 * * *
 
-*   [Shapes Package][17]
-    *   This package contains shape related concepts, models and algorithms. It provides a [caption id="attachment_560" align="alignright" width="150"][<img class="wp-image-560 size-thumbnail" title="accflower01" src="http://dgtal.org/wp/wp-content/uploads/2012/10/accflower01-150x150.png" alt="Flower" width="150" height="150" />][18] Digitization of a parametric 2D shape.[/caption] generic framework and tools to construct multigrid shapes in [DGtal][19]. More precisely, this package contains analytical objects (parametric, implicit, from point sets,...) with digitization schemes to make concrete such objects in a given grid step grid.
+*   [Shapes Package][17] <img class="wp-image-560 size-thumbnail" title="accflower01" src="http://dgtal.org/wp/wp-content/uploads/2012/10/accflower01-150x150.png" alt="Flower" width="150" height="150" />
+    *   This package contains shape related concepts, models and algorithms. It provides a  generic framework and tools to construct multigrid shapes in [DGtal][19]. More precisely, this package contains analytical objects (parametric, implicit, from point sets,...) with digitization schemes to make concrete such objects in a given grid step grid.
     *   *David Coeurjolly, Jacques-Olivier Lachaud*
     *   LGPL
 
 * * *
 
-*   [Graph Package][20]
-    *   This package gathers concepts and classes related to graphs. Simple visitors are [caption id="attachment_562" align="alignright" width="150"][<img class="wp-image-562 size-thumbnail" title="graphTraversal-bfs" src="http://dgtal.org/wp/wp-content/uploads/2012/10/graphTraversal-bfs-150x150.png" alt="graph traversal" width="150" height="150" />][21] Breadth-first traversal of a digital object, which is a model of finite simple graph.[/caption] provided to traverse the graph. For more elaborate graph algorithm, this package offers wrappers to boost::graph.
+*   [Graph Package][20] <img class="wp-image-562 size-thumbnail" title="graphTraversal-bfs" src="http://dgtal.org/wp/wp-content/uploads/2012/10/graphTraversal-bfs-150x150.png" alt="graph traversal" width="150" height="150" />
+    *   This package gathers concepts and classes related to graphs. Simple visitors are provided to traverse the graph. For more elaborate graph algorithm, this package offers wrappers to boost::graph.
     *   *Jacques-Olivier Lachaud, David Coeurjolly*
     *   LGPL
 
 * * *
 
-*   [Mathematical Package][22]
-    *   This package gathers various mathematical subpackages and modules. For now, it [caption id="attachment_565" align="alignright" width="150"][<img class="wp-image-565 size-thumbnail" title="nice-mpolynomial" src="http://dgtal.org/wp/wp-content/uploads/2012/10/nice-mpolynomial-150x150.png" alt="3D implicit surface" width="150" height="150" />][23] Triangulation of a 3D implicit surface, a 3-variate polynomial.[/caption] consists essentially in a module for defining multivariate polynomials.
+*   [Mathematical Package][22] <img class="wp-image-565 size-thumbnail" title="nice-mpolynomial" src="http://dgtal.org/wp/wp-content/uploads/2012/10/nice-mpolynomial-150x150.png" alt="3D implicit surface" width="150" height="150" />
+    *   This package gathers various mathematical subpackages and modules. For now, it  consists essentially in a module for defining multivariate polynomials.
     *   *Jacques-Olivier Lachaud, Felix Fontein*
     *   LGPL
 

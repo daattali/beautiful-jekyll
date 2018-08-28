@@ -1,0 +1,8 @@
+<map id="DGtal::VoronoiMap&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;" name="DGtal::VoronoiMap&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutputImage \&gt;" alt="" coords="708,23,857,65"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,17,155,58"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,37,455,64"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="305,92,431,119"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="308,147,428,173"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="699,245,867,301"/>
+</map>

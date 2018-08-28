@@ -1,0 +1,7 @@
+<map id="LibBoard::Arrow" name="LibBoard::Arrow">
+<area shape="rect" id="node2" href="$structLibBoard_1_1Line.html" title="A line between two points. " alt="" coords="73,427,184,453"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="179,336,305,363"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="62,165,148,192"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="37,6,173,47"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component. " alt="" coords="193,165,292,192"/>
+</map>

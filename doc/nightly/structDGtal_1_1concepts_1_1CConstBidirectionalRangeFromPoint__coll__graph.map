@@ -1,0 +1,4 @@
+<map id="DGtal::concepts::CConstBidirectionalRangeFromPoint&lt; T &gt;" name="DGtal::concepts::CConstBidirectionalRangeFromPoint&lt; T &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CConstBidirectionalRange.html" title="Aim: Defines the concept describing a bidirectional const range. " alt="" coords="121,203,377,245"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="178,97,395,138"/>
+</map>

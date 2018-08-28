@@ -1,0 +1,6 @@
+<map id="DGtal::concepts::CPointFunctor&lt; T &gt;" name="DGtal::concepts::CPointFunctor&lt; T &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; T, T::Point, T::Value \&gt;" alt="" coords="177,294,404,335"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="87,96,260,123"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="191,187,417,229"/>
+</map>

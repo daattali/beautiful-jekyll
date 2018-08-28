@@ -1,0 +1,6 @@
+<map id="DGtal::concepts::CSurfelLocalEstimator&lt; T &gt;" name="DGtal::concepts::CSurfelLocalEstimator&lt; T &gt;">
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CDigitalSurfaceLocalEstimator.html" title="Aim: This concept describes an object that can process a range over some generic digital surface so a..." alt="" coords="515,49,717,90"/>
+<area shape="rect" id="node2" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="6,5,239,32"/>
+<area shape="rect" id="node3" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html. " alt="" coords="13,56,232,83"/>
+<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="37,107,209,133"/>
+</map>

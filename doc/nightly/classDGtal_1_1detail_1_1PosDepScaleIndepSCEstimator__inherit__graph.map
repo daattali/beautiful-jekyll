@@ -1,0 +1,6 @@
+<map id="DGtal::detail::PosDepScaleIndepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;" name="DGtal::detail::PosDepScaleIndepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html" title="DGtal::detail::PosDepScale\lIndepSCEstimator\&lt; DCAComputer,\l detail::NormalVectorFromDCA \&gt;" alt="" coords="517,5,765,61"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html" title="DGtal::detail::PosDepScale\lIndepSCEstimator\&lt; DCAComputer,\l detail::TangentVectorFromDCA \&gt;" alt="" coords="517,85,765,141"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1NormalFromDCAEstimator.html" title="DGtal::NormalFromDCAEstimator\l\&lt; DCAComputer \&gt;" alt="" coords="819,13,1053,54"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1TangentFromDCAEstimator.html" title="DGtal::TangentFromDCAEstimator\l\&lt; DCAComputer \&gt;" alt="" coords="817,93,1055,134"/>
+</map>

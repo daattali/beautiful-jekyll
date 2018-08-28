@@ -1,0 +1,18 @@
+<map id="DGtal::ContainerCategory" name="DGtal::ContainerCategory">
+<area shape="rect" id="node2" href="$structDGtal_1_1AssociativeCategory.html" title="DGtal::AssociativeCategory" alt="" coords="241,224,437,251"/>
+<area shape="rect" id="node17" href="$structDGtal_1_1SequenceCategory.html" title="DGtal::SequenceCategory" alt="" coords="245,275,433,301"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1MultipleAssociativeCategory.html" title="DGtal::MultipleAssociative\lCategory" alt="" coords="501,63,688,105"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1OrderedAssociativeCategory.html" title="DGtal::OrderedAssociative\lCategory" alt="" coords="499,129,690,170"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1PairAssociativeCategory.html" title="DGtal::PairAssociativeCategory" alt="" coords="485,195,704,221"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1SimpleAssociativeCategory.html" title="DGtal::SimpleAssociative\lCategory" alt="" coords="503,246,686,287"/>
+<area shape="rect" id="node15" href="$structDGtal_1_1UniqueAssociativeCategory.html" title="DGtal::UniqueAssociative\lCategory" alt="" coords="503,377,686,418"/>
+<area shape="rect" id="node16" href="$structDGtal_1_1UnorderedAssociativeCategory.html" title="DGtal::UnorderedAssociative\lCategory" alt="" coords="491,311,698,353"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1MultimapAssociativeCategory.html" title="DGtal::MultimapAssociative\lCategory" alt="" coords="771,5,968,46"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1MultisetAssociativeCategory.html" title="DGtal::MultisetAssociative\lCategory" alt="" coords="775,70,963,111"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1UnorderedMultimapAssociativeCategory.html" title="DGtal::UnorderedMultimap\lAssociativeCategory" alt="" coords="773,135,966,177"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1UnorderedMultisetAssociativeCategory.html" title="DGtal::UnorderedMultiset\lAssociativeCategory" alt="" coords="777,201,961,242"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1MapAssociativeCategory.html" title="DGtal::MapAssociativeCategory" alt="" coords="758,267,981,293"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1SetAssociativeCategory.html" title="DGtal::SetAssociativeCategory" alt="" coords="760,317,979,344"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1UnorderedMapAssociativeCategory.html" title="DGtal::UnorderedMapAssociative\lCategory" alt="" coords="753,369,986,410"/>
+<area shape="rect" id="node14" href="$structDGtal_1_1UnorderedSetAssociativeCategory.html" title="DGtal::UnorderedSetAssociative\lCategory" alt="" coords="755,434,983,475"/>
+</map>

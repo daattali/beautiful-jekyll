@@ -1,0 +1,11 @@
+<map id="DGtal::TriangulatedSurface&lt; TPoint &gt;::IndexedPropertyMap&lt; TData &gt;" name="DGtal::TriangulatedSurface&lt; TPoint &gt;::IndexedPropertyMap&lt; TData &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1TriangulatedSurface.html" title="Aim: Represents a triangulated surface. The topology is stored with a half&#45;edge data structure..." alt="" coords="1776,263,1968,305"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="605,283,731,309"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1OwningOrAliasingPtr.html" title="DGtal::OwningOrAliasingPtr\l\&lt; Storage \&gt;" alt="" coords="1048,433,1243,474"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="160,364,280,391"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="602,7,734,33"/>
+<area shape="rect" id="node19" href="$classDGtal_1_1OwningOrAliasingPtr.html" title="Aim: This class describes a smart pointer that is, given the constructor called by the user..." alt="" coords="305,431,535,457"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1HalfEdgeDataStructure_1_1Triangle.html" title="Represents an unoriented triangle as three vertices. " alt="" coords="1038,367,1253,409"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1HalfEdgeDataStructure.html" title="Aim: This class represents an half&#45;edge data structure, which is a structure for representing the top..." alt="" coords="1433,165,1647,192"/>
+<area shape="rect" id="node16" href="$structDGtal_1_1HalfEdgeDataStructure_1_1HalfEdge.html" title="DGtal::HalfEdgeDataStructure\l::HalfEdge" alt="" coords="561,58,775,99"/>
+</map>

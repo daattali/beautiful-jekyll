@@ -1,0 +1,32 @@
+<map id="DGtal::CountedPtr&lt; T &gt;" name="DGtal::CountedPtr&lt; T &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Sequence \&gt;" alt="" coords="505,23,655,65"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l const Domain \&gt;" alt="" coords="505,89,655,130"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l StabbingLineComputer\l\&lt; ConstIterator \&gt; \&gt;" alt="" coords="493,153,667,209"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l AdjacentVertexContainer \&gt;" alt="" coords="480,233,680,274"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DrawableWithBoard2D \&gt;" alt="" coords="489,298,671,339"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::DigitalSurfaceConvolver \&gt;" alt="" coords="461,363,699,405"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::DrawableWithDisplay3D \&gt;" alt="" coords="463,429,697,470"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DigitalSurfaceContainer \&gt;" alt="" coords="484,494,676,535"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l GraphVisitor \&gt;" alt="" coords="505,559,655,601"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; A1 \&gt;" alt="" coords="487,625,673,652"/>
+<area shape="rect" id="node12" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutputImage \&gt;" alt="" coords="505,677,655,718"/>
+<area shape="rect" id="node13" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::SignalData\&lt;\l Value \&gt; \&gt;" alt="" coords="505,741,655,797"/>
+<area shape="rect" id="node14" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l ShapePointFunctor \&gt;" alt="" coords="499,821,661,862"/>
+<area shape="rect" id="node15" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::GaussDigitizer \&gt;" alt="" coords="491,886,669,927"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::ImplicitBall \&gt;" alt="" coords="503,951,657,993"/>
+<area shape="rect" id="node17" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l HyperRectDomain\&lt; Space \&gt; \&gt;" alt="" coords="467,1017,693,1058"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutEdgeContainer \&gt;" alt="" coords="501,1082,659,1123"/>
+<area shape="rect" id="node19" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DigitalSet \&gt;" alt="" coords="505,1147,655,1189"/>
+<area shape="rect" id="node20" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DrawableWithDisplay3D \&gt;" alt="" coords="485,1213,675,1254"/>
+<area shape="rect" id="node21" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::SignalData\&lt;\l TValue \&gt; \&gt;" alt="" coords="505,1277,655,1333"/>
+<area shape="rect" id="node22" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::FunctorOnCells \&gt;" alt="" coords="490,1357,670,1398"/>
+<area shape="rect" id="node23" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DummyTbl \&gt;" alt="" coords="505,1422,655,1463"/>
+<area shape="rect" id="node24" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::functors::PointFunctor\lFromPointPredicateAndDomain \&gt;" alt="" coords="462,1487,698,1543"/>
+<area shape="rect" id="node25" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Point \&gt;" alt="" coords="505,1566,655,1607"/>
+<area shape="rect" id="node26" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Preimage \&gt;" alt="" coords="505,1631,655,1673"/>
+<area shape="rect" id="node27" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l GeometricFunctor \&gt;" alt="" coords="503,1697,657,1738"/>
+<area shape="rect" id="node28" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::DrawableWithBoard2D \&gt;" alt="" coords="467,1762,693,1803"/>
+<area shape="rect" id="node29" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DigitalTopology \&gt;" alt="" coords="505,1827,655,1869"/>
+<area shape="rect" id="node30" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l TImageContainer \&gt;" alt="" coords="505,1893,655,1934"/>
+<area shape="rect" id="node31" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Domain \&gt;" alt="" coords="505,1958,655,1999"/>
+</map>

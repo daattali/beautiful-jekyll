@@ -1,0 +1,11 @@
+<map id="DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;" name="DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;">
+<area shape="rect" id="node3" title="STL class. " alt="" coords="305,7,431,33"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="160,63,280,89"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1SignedKhalimskyCell.html" title="Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value..." alt="" coords="1847,63,2044,105"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, Integer \&gt;" alt="" coords="1501,63,1696,105"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="869,133,1008,174"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, TInteger \&gt;" alt="" coords="1136,133,1331,174"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="456,172,624,228"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="DGtal::CanonicSCellEmbedder\l\&lt; KSpace \&gt;" alt="" coords="1838,129,2053,170"/>
+<area shape="rect" id="node14" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids..." alt="" coords="1491,129,1706,170"/>
+</map>

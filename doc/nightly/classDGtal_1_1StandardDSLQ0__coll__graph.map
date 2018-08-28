@@ -1,0 +1,12 @@
+<map id="DGtal::StandardDSLQ0&lt; TFraction &gt;" name="DGtal::StandardDSLQ0&lt; TFraction &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1IntegerComputer.html" title="DGtal::IntegerComputer\l\&lt; Integer \&gt;" alt="" coords="1201,311,1375,353"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1IntegerComputer.html" title="Aim: This class gathers several types and methods to make computation with integers. " alt="" coords="871,311,1046,353"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="191,364,318,391"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1NumberTraits.html" title="Aim: The traits class for all models of Cinteger. " alt="" coords="161,312,349,339"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1SpaceND.html" title="DGtal::SpaceND\&lt; 2,\l Integer \&gt;" alt="" coords="499,77,653,118"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1SpaceND.html" title="Aim: SpaceND is a utility class that defines the fundamental structure of a Digital Space in ND..." alt="" coords="170,77,339,118"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1NumberTraits.html" title="DGtal::NumberTraits\l\&lt; Integer \&gt;" alt="" coords="683,151,834,193"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1NumberTraits.html" title="DGtal::NumberTraits\l\&lt; TInteger \&gt;" alt="" coords="501,305,651,346"/>
+<area shape="rect" id="node12" href="$classDGtal_1_1Pattern.html" title="DGtal::Pattern\&lt; Fraction \&gt;" alt="" coords="1192,423,1384,449"/>
+<area shape="rect" id="node13" href="$classDGtal_1_1Pattern.html" title="Aim: This class represents a pattern, i.e. the path between two consecutive upper leaning points on a..." alt="" coords="859,469,1058,496"/>
+</map>

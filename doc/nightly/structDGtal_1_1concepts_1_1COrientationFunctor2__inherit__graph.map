@@ -1,0 +1,8 @@
+<map id="DGtal::concepts::COrientationFunctor2&lt; T &gt;" name="DGtal::concepts::COrientationFunctor2&lt; T &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1COrientationFunctor.html" title="Aim: This concept gathers models implementing an orientation test of &#160;points in a space of dimension ..." alt="" coords="27,451,239,493"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title="Aim: Defines a functor on points. " alt="" coords="5,373,261,400"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; T, T::Point, T::Value \&gt;" alt="" coords="20,281,247,322"/>
+<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="69,5,240,32"/>
+<area shape="rect" id="node7" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="156,96,329,123"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="149,174,376,215"/>
+</map>

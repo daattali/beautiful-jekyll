@@ -1,0 +1,12 @@
+<map id="DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFunctor &gt;" name="DGtal::TrueDigitalSurfaceLocalEstimator&lt; TKSpace, TShape, TGeometricFunctor &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; Geometric\lFunctor \&gt;" alt="" coords="1079,59,1271,101"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l GeometricFunctor \&gt;" alt="" coords="684,5,839,46"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,11,155,53"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,56,455,83"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="688,71,835,97"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="DGtal::CanonicSCellEmbedder\l\&lt; KSpace \&gt;" alt="" coords="1067,125,1282,166"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids..." alt="" coords="654,125,869,166"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; KSpace \&gt;" alt="" coords="1079,190,1270,231"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="666,217,857,258"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; Shape \&gt;" alt="" coords="1079,255,1270,297"/>
+</map>

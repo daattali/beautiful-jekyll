@@ -1,0 +1,9 @@
+<map id="DGtal::TangentFromDCAEstimator&lt; DCAComputer &gt;" name="DGtal::TangentFromDCAEstimator&lt; DCAComputer &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html" title="DGtal::detail::PosDepScale\lIndepSCEstimator\&lt; DCAComputer,\l detail::TangentVectorFromDCA \&gt;" alt="" coords="2664,39,2912,95"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="DGtal::InHalfPlaneBySimple3x3\lMatrix\&lt; Point, double \&gt;" alt="" coords="1811,34,2031,75"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html" title="DGtal::detail::PosDepScale\lIndepSCEstimator\&lt; TSegmentComputer,\l Functor, ReturnType \&gt;" alt="" coords="2153,83,2439,139"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1SimpleMatrix.html" title="DGtal::SimpleMatrix\l\&lt; Integer, 3, 3 \&gt;" alt="" coords="1163,25,1312,66"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o..." alt="" coords="1425,77,1645,118"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="819,67,1003,109"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="160,31,280,57"/>
+</map>

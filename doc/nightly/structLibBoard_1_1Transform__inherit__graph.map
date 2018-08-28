@@ -1,0 +1,7 @@
+<map id="LibBoard::Transform" name="LibBoard::Transform">
+<area shape="rect" id="node2" href="$structLibBoard_1_1TransformCairo.html" title="Structure representing a scaling and translation suitable for an Cairo output. " alt="" coords="203,5,386,32"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1TransformEPS.html" title="Structure representing a scaling and translation suitable for an EPS output. " alt="" coords="207,56,382,83"/>
+<area shape="rect" id="node4" href="$structLibBoard_1_1TransformFIG.html" title="Structure representing a scaling and translation suitable for an XFig output. " alt="" coords="210,107,379,133"/>
+<area shape="rect" id="node5" href="$structLibBoard_1_1TransformSVG.html" title="Structure representing a scaling and translation suitable for an SVG output. " alt="" coords="206,157,383,184"/>
+<area shape="rect" id="node6" href="$structLibBoard_1_1TransformTikZ.html" title="Structure representing a scaling and translation suitable for an TikZ output. " alt="" coords="435,157,611,184"/>
+</map>

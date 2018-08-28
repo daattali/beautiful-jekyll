@@ -1,0 +1,6 @@
+<map id="DGtal::concepts::CCellEmbedder&lt; T &gt;" name="DGtal::concepts::CCellEmbedder&lt; T &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; T, T::Cell, T::RealPoint \&gt;" alt="" coords="25,281,252,322"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="74,5,245,32"/>
+<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="161,96,335,123"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="155,174,381,215"/>
+</map>

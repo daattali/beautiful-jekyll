@@ -1,0 +1,5 @@
+<map id="DGtal::InputIteratorWithRankOnSequence&lt; TSequence, TRank &gt;" name="DGtal::InputIteratorWithRankOnSequence&lt; TSequence, TRank &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Sequence \&gt;" alt="" coords="43,203,191,245"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="79,6,227,47"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="197,112,371,139"/>
+</map>

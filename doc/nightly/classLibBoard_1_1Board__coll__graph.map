@@ -1,0 +1,11 @@
+<map id="LibBoard::Board" name="LibBoard::Board">
+<area shape="rect" id="node2" href="$structLibBoard_1_1ShapeList.html" title="A group of shapes. " alt="" coords="1085,177,1235,204"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="473,217,599,244"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="231,115,318,141"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="6,107,143,149"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component. " alt="" coords="225,351,324,377"/>
+<area shape="rect" id="node10" href="$structLibBoard_1_1Board_1_1State.html" title="LibBoard::Board::State" alt="" coords="625,351,791,377"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="473,60,599,87"/>
+<area shape="rect" id="node11" href="$structLibBoard_1_1Path.html" title="A path, according to Postscript and SVG definition. " alt="" coords="1103,108,1217,135"/>
+<area shape="rect" id="node13" href="$structLibBoard_1_1Point.html" title="Struct representing a 2D point. " alt="" coords="477,5,595,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="DGtal::concepts::CUndirectedSimpleGraph&lt; T &gt;" name="DGtal::concepts::CUndirectedSimpleGraph&lt; T &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces..." alt="" coords="692,34,903,75"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html" title="DGtal::concepts::CVertex\lPredicateArchetype\&lt; Vertex \&gt;" alt="" coords="357,5,576,46"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html" title="Aim: Defines a an archetype for concept CVertexPredicate. " alt="" coords="6,5,231,46"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="689,163,906,205"/>
+</map>

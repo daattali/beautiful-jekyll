@@ -1,0 +1,4 @@
+<map id="DGtal::functors::VCMMeanAbsoluteCurvatures3DFunctor&lt; TVCMOnDigitalSurface &gt;" name="DGtal::functors::VCMMeanAbsoluteCurvatures3DFunctor&lt; TVCMOnDigitalSurface &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; VCMOnDigitalSurface \&gt;" alt="" coords="5,113,248,154"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="31,6,221,47"/>
+</map>

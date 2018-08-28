@@ -1,0 +1,10 @@
+<map id="LibBoard::Rectangle" name="LibBoard::Rectangle">
+<area shape="rect" id="node2" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points. " alt="" coords="102,531,236,557"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="182,440,308,467"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="65,269,151,296"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="39,97,176,138"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component. " alt="" coords="185,269,284,296"/>
+<area shape="rect" id="node7" href="$structLibBoard_1_1Path.html" title="A path, according to Postscript and SVG definition. " alt="" coords="353,440,468,467"/>
+<area shape="rect" id="node9" href="$structLibBoard_1_1Point.html" title="Struct representing a 2D point. " alt="" coords="350,104,468,131"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="493,104,619,131"/>
+</map>

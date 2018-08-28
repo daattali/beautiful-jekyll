@@ -1,0 +1,13 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node2" href="$structMainWindow_1_1ColorMapFunctor.html" title="MainWindow::ColorMapFunctor" alt="" coords="1001,349,1215,376"/>
+<area shape="rect" id="node3" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; Space,\l KSpace \&gt;" alt="" coords="1015,401,1201,442"/>
+<area shape="rect" id="node4" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;" alt="" coords="744,177,933,218"/>
+<area shape="rect" id="node5" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$classDGtal_1_1KhalimskySpaceND.html" title="DGtal::KhalimskySpaceND\l\&lt; dim, TInteger \&gt;" alt="" coords="365,13,555,54"/>
+<area shape="rect" id="node6" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$classDGtal_1_1KhalimskySpaceNDHelper.html" title="KhalimskySpaceNDHelper\l\&lt; KhalimskySpaceND\&lt; dim,\l TInteger \&gt; \&gt;" alt="" coords="11,5,215,61"/>
+<area shape="rect" id="node7" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$structDGtal_1_1CanonicCellEmbedder.html" title="DGtal::CanonicCellEmbedder\l\&lt; class \&gt;" alt="" coords="357,78,563,119"/>
+<area shape="rect" id="node8" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$structDGtal_1_1CanonicSCellEmbedder.html" title="DGtal::CanonicSCellEmbedder\l\&lt; KSpace \&gt;" alt="" coords="353,143,567,185"/>
+<area shape="rect" id="node9" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$structDGtal_1_1CanonicSCellEmbedder.html" title="DGtal::CanonicSCellEmbedder\l\&lt; TKSpace \&gt;" alt="" coords="6,143,221,185"/>
+<area shape="rect" id="node10" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$structDGtal_1_1CanonicEmbedder.html" title="DGtal::CanonicEmbedder\l\&lt; class \&gt;" alt="" coords="369,209,551,250"/>
+<area shape="rect" id="node11" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$classDGtal_1_1Color.html" title="DGtal::Color" alt="" coords="411,460,509,487"/>
+<area shape="rect" id="node12" href="/home/travis/build/DGtal-team/DGtalTools/DGtal-tagfile$classDGtal_1_1ImageContainerBySTLVector.html" title="DGtal::ImageContainerBySTLVector\l\&lt; TDomain, TValue \&gt;" alt="" coords="985,466,1231,507"/>
+</map>

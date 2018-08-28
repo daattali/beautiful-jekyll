@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structDGtal_1_1DECImage2D.html" title="Aim: This class simplifies the development of 2D image processing tools using discrete exterior calcu..." alt="" coords="6,38,205,79"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1ATu0v1.html" title="Aim: This class solves Ambrosio&#45;Tortorelli functional in a plane for u a (vector of) 0&#45;form(s) and v ..." alt="" coords="253,5,437,46"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1ATu2v0.html" title="Aim: This class solves Ambrosio&#45;Tortorelli functional in a plane for u a (vector of) 2&#45;form(s) and v ..." alt="" coords="253,70,437,111"/>
+</map>

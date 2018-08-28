@@ -1,0 +1,31 @@
+<map id="DGtal::Update2DDomainPosition&lt; Space, KSpace &gt;" name="DGtal::Update2DDomainPosition&lt; Space, KSpace &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithViewer3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="3915,191,4149,217"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="3435,5,3674,32"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; DGtal\l::SpaceND, DGtal::KhalimskySpaceND \&gt;" alt="" coords="3891,427,4173,469"/>
+<area shape="rect" id="node43" href="$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; Space,\l KSpace \&gt;" alt="" coords="2182,527,2367,569"/>
+<area shape="rect" id="node49" href="$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; TSpace,\l TKSpace \&gt;" alt="" coords="3459,427,3651,469"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; DGtal\l::SpaceND, DGtal::KhalimskySpaceND \&gt;" alt="" coords="2134,2074,2415,2115"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids..." alt="" coords="1205,1914,1419,1955"/>
+<area shape="rect" id="node39" href="$classDGtal_1_1Display3D.html" title="Aim: This semi abstract class defines the stream mechanism to display 3d primitive (like BallVector..." alt="" coords="1697,1697,1887,1738"/>
+<area shape="rect" id="node50" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; TSpace,\l TKSpace \&gt;" alt="" coords="2177,1239,2373,1281"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1Display3D_1_1SelectCallbackFctStore.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::SelectCallbackFctStore" alt="" coords="691,1485,935,1526"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="759,1657,867,1684"/>
+<area shape="rect" id="node21" title="STL class. " alt="" coords="747,2089,879,2116"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="305,1413,431,1440"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DrawableWithDisplay3D \&gt;" alt="" coords="718,2245,909,2286"/>
+<area shape="rect" id="node17" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,2223,155,2265"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,2268,455,2295"/>
+<area shape="rect" id="node19" title="STL class. " alt="" coords="770,2343,857,2369"/>
+<area shape="rect" id="node20" title="STL class. " alt="" coords="299,2335,437,2377"/>
+<area shape="rect" id="node24" href="$structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::ClippingPlaneD3D" alt="" coords="708,1709,919,1750"/>
+<area shape="rect" id="node26" href="$structDGtal_1_1CanonicCellEmbedder.html" title="Aim: A trivial embedder for signed and unsigned cell, which corresponds to the canonic injection of c..." alt="" coords="1209,1241,1415,1282"/>
+<area shape="rect" id="node27" href="$structDGtal_1_1CanonicEmbedder.html" title="Aim: A trivial embedder for digital points, which corresponds to the canonic injection of Zn into Rn..." alt="" coords="1221,1042,1403,1083"/>
+<area shape="rect" id="node29" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component. " alt="" coords="764,645,863,672"/>
+<area shape="rect" id="node45" href="$structDGtal_1_1Viewer3D_1_1Image2DDomainD3D.html" title="DGtal::Viewer3D\&lt; TSpace,\l TKSpace \&gt;::Image2DDomainD3D" alt="" coords="1192,271,1432,313"/>
+<area shape="rect" id="node33" href="$structDGtal_1_1Display3D_1_1QuadD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::QuadD3D" alt="" coords="719,1033,908,1074"/>
+<area shape="rect" id="node34" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="284,284,452,340"/>
+<area shape="rect" id="node42" href="$structDGtal_1_1Viewer3D_1_1GLTextureImage.html" title="DGtal::Viewer3D\&lt; TSpace,\l TKSpace \&gt;::GLTextureImage" alt="" coords="2640,511,2845,553"/>
+<area shape="rect" id="node47" href="$structDGtal_1_1Viewer3D_1_1TextureImage.html" title="DGtal::Viewer3D\&lt; TSpace,\l TKSpace \&gt;::TextureImage" alt="" coords="963,111,1155,153"/>
+<area shape="rect" id="node40" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex..." alt="" coords="1217,1674,1407,1715"/>
+<area shape="rect" id="node48" href="$structDGtal_1_1Viewer3D_1_1Extension.html" title="DGtal::Viewer3D\&lt; TSpace,\l TKSpace \&gt;::Extension" alt="" coords="1696,702,1888,743"/>
+</map>

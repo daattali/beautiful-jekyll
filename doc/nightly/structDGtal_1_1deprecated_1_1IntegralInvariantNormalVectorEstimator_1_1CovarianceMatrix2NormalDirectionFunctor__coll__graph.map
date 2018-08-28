@@ -1,0 +1,5 @@
+<map id="DGtal::deprecated::IntegralInvariantNormalVectorEstimator&lt; TKSpace, TPointPredicate &gt;::CovarianceMatrix2NormalDirectionFunctor" name="DGtal::deprecated::IntegralInvariantNormalVectorEstimator&lt; TKSpace, TPointPredicate &gt;::CovarianceMatrix2NormalDirectionFunctor">
+<area shape="rect" id="node2" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="819,14,1003,55"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="160,21,280,48"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="827,119,995,175"/>
+</map>

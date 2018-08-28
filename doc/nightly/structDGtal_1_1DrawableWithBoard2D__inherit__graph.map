@@ -1,0 +1,6 @@
+<map id="DGtal::DrawableWithBoard2D" name="DGtal::DrawableWithBoard2D">
+<area shape="rect" id="node2" href="$structDGtal_1_1CustomColors.html" title="Custom style class redefining the pen color and the fill color. You may use Board2D::Color::None for ..." alt="" coords="285,5,441,32"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1CustomFillColor.html" title="Custom style class redefining the fill color. You may use Board2D::Color::None for transparent color..." alt="" coords="281,56,445,83"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1CustomPen.html" title="Custom style class redefining the pen attributes. You may use Board2D::Color::None for transparent co..." alt="" coords="293,107,433,133"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1CustomPenColor.html" title="Custom style class redefining the pen color. You may use Board2D::Color::None for transparent color..." alt="" coords="276,157,449,184"/>
+</map>

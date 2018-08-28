@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="5,45,179,72"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="227,5,453,46"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CUnaryFunctor_3_01X_00_01A_01_6_00_01R_01_6_01_4.html" title="DGtal::concepts::CUnaryFunctor\l\&lt; X, A &amp;, R &amp; \&gt;" alt="" coords="227,70,453,111"/>
+</map>

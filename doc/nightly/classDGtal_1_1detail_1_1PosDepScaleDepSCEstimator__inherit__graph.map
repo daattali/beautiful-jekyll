@@ -1,0 +1,4 @@
+<map id="DGtal::detail::PosDepScaleDepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;" name="DGtal::detail::PosDepScaleDepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html" title="DGtal::detail::PosDepScale\lDepSCEstimator\&lt; DCAComputer,\l detail::DistanceFromDCA \&gt;" alt="" coords="25,139,263,195"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1DistanceFromDCAEstimator.html" title="DGtal::DistanceFromDCAEstimator\l\&lt; DCAComputer \&gt;" alt="" coords="22,246,265,287"/>
+</map>

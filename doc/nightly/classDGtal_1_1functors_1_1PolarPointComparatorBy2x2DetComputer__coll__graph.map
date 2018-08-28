@@ -1,0 +1,4 @@
+<map id="DGtal::functors::PolarPointComparatorBy2x2DetComputer&lt; TPoint, TDetComputer &gt;" name="DGtal::functors::PolarPointComparatorBy2x2DetComputer&lt; TPoint, TDetComputer &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1functors_1_1Thresholder.html" title="DGtal::functors::Thresholder\l\&lt; ResultInteger, false, false \&gt;" alt="" coords="12,217,221,258"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1functors_1_1Thresholder.html" title="Aim: A small functor with an operator () that compares one value to a threshold value according to tw..." alt="" coords="17,97,217,138"/>
+</map>

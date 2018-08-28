@@ -1,0 +1,12 @@
+<map id="DGtal::functors::SCellToInnerPoint&lt; KSpace &gt;" name="DGtal::functors::SCellToInnerPoint&lt; KSpace &gt;">
+<area shape="rect" id="node2" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex..." alt="" coords="2542,166,2733,207"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title="DGtal::KhalimskySpaceNDHelper\l\&lt; KhalimskySpaceND\&lt; dim,\l TInteger \&gt; \&gt;" alt="" coords="2173,24,2405,80"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title="DGtal::KhalimskySpaceNDHelper\l\&lt; TKhalimskySpace \&gt;" alt="" coords="1749,5,1981,46"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="160,219,280,245"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="853,131,992,173"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1KhalimskyPreCell.html" title="DGtal::KhalimskyPreCell\l\&lt; dim, Integer \&gt;" alt="" coords="1457,109,1631,150"/>
+<area shape="rect" id="node14" href="$structDGtal_1_1KhalimskyPreCell.html" title="DGtal::KhalimskyPreCell\l\&lt; dim, TInteger \&gt;" alt="" coords="1121,70,1295,111"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="485,89,653,145"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1KhalimskyCell.html" title="DGtal::KhalimskyCell\l\&lt; dim, Integer \&gt;" alt="" coords="2213,130,2366,171"/>
+<area shape="rect" id="node15" href="$structDGtal_1_1KhalimskyCell.html" title="Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates. " alt="" coords="1789,70,1942,111"/>
+</map>

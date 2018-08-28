@@ -1,0 +1,18 @@
+<map id="DGtal::deprecated::IntegralInvariantNormalVectorEstimator&lt; TKSpace, TPointPredicate &gt;" name="DGtal::deprecated::IntegralInvariantNormalVectorEstimator&lt; TKSpace, TPointPredicate &gt;">
+<area shape="rect" id="node3" title="STL class. " alt="" coords="1482,83,1609,109"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::DigitalSurfaceConvolver \&gt;" alt="" coords="736,13,973,54"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,311,155,353"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,276,455,303"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::GaussDigitizer \&gt;" alt="" coords="766,195,943,237"/>
+<area shape="rect" id="node12" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Domain \&gt;" alt="" coords="780,130,929,171"/>
+<area shape="rect" id="node14" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l ShapePointFunctor \&gt;" alt="" coords="774,261,935,302"/>
+<area shape="rect" id="node15" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::ImplicitBall \&gt;" alt="" coords="778,326,931,367"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::FunctorOnCells \&gt;" alt="" coords="765,450,945,491"/>
+<area shape="rect" id="node19" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l HyperRectDomain\&lt; Space \&gt; \&gt;" alt="" coords="741,515,968,557"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1DigitalSetByAssociativeContainer.html" title="Aim: A wrapper class around a STL associative container for storing sets of digital points within som..." alt="" coords="1422,135,1669,177"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; Domain \&gt;" alt="" coords="1107,137,1298,164"/>
+<area shape="rect" id="node13" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="781,79,928,105"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; PointPredicate \&gt;" alt="" coords="1966,386,2165,427"/>
+<area shape="rect" id="node17" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="1450,391,1641,433"/>
+<area shape="rect" id="node20" href="$classDGtal_1_1functors_1_1ConstValueCell.html" title="Aim: Define a simple functor that returns a constant quantity (0 by default). " alt="" coords="1966,573,2165,614"/>
+</map>

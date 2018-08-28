@@ -1,0 +1,4 @@
+<map id="DGtal::concepts::CUndirectedSimpleGraph&lt; T &gt;" name="DGtal::concepts::CUndirectedSimpleGraph&lt; T &gt;">
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces..." alt="" coords="9,5,220,46"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="6,70,223,111"/>
+</map>

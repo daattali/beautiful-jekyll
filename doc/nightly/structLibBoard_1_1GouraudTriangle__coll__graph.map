@@ -1,0 +1,10 @@
+<map id="LibBoard::GouraudTriangle" name="LibBoard::GouraudTriangle">
+<area shape="rect" id="node2" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points. " alt="" coords="143,560,277,587"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="147,440,273,467"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="30,269,116,296"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="5,97,141,138"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component. " alt="" coords="393,269,492,296"/>
+<area shape="rect" id="node7" href="$structLibBoard_1_1Path.html" title="A path, according to Postscript and SVG definition. " alt="" coords="299,440,413,467"/>
+<area shape="rect" id="node9" href="$structLibBoard_1_1Point.html" title="Struct representing a 2D point. " alt="" coords="193,104,311,131"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="335,104,461,131"/>
+</map>

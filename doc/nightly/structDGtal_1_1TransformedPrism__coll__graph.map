@@ -1,0 +1,9 @@
+<map id="DGtal::TransformedPrism" name="DGtal::TransformedPrism">
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="5,635,243,661"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1SignedKhalimskyCell.html" title="Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value..." alt="" coords="268,627,465,669"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, Integer \&gt;" alt="" coords="269,521,464,562"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="257,307,396,349"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1SignedKhalimskyPreCell.html" title="DGtal::SignedKhalimskyPre\lCell\&lt; dim, TInteger \&gt;" alt="" coords="409,414,604,455"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="149,96,269,123"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="307,187,475,243"/>
+</map>

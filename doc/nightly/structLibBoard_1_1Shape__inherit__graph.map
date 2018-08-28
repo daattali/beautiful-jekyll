@@ -1,0 +1,19 @@
+<map id="LibBoard::Shape" name="LibBoard::Shape">
+<area shape="rect" id="node2" href="$structLibBoard_1_1Dot.html" title="A line between two points. " alt="" coords="201,5,311,32"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Ellipse.html" title="An ellipse. " alt="" coords="193,56,319,83"/>
+<area shape="rect" id="node6" href="$structLibBoard_1_1Line.html" title="A line between two points. " alt="" coords="200,107,312,133"/>
+<area shape="rect" id="node8" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points. " alt="" coords="189,157,323,184"/>
+<area shape="rect" id="node14" href="$structLibBoard_1_1ShapeList.html" title="A group of shapes. " alt="" coords="181,233,331,260"/>
+<area shape="rect" id="node18" href="$structLibBoard_1_1Text.html" title="A piece of text. " alt="" coords="201,284,311,311"/>
+<area shape="rect" id="node4" href="$structLibBoard_1_1Circle.html" title="A circle. " alt="" coords="413,5,534,32"/>
+<area shape="rect" id="node5" href="$structLibBoard_1_1Arc.html" title="An arc. " alt="" coords="657,5,764,32"/>
+<area shape="rect" id="node7" href="$structLibBoard_1_1Arrow.html" title="A line between two points with an arrow at one extremity. " alt="" coords="412,56,535,83"/>
+<area shape="rect" id="node9" href="$structLibBoard_1_1GouraudTriangle.html" title="A triangle with shaded filling according to colors given for each vertex. " alt="" coords="379,107,568,133"/>
+<area shape="rect" id="node10" href="$structLibBoard_1_1Rectangle.html" title="A rectangle. " alt="" coords="399,157,547,184"/>
+<area shape="rect" id="node12" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor. " alt="" coords="406,208,541,235"/>
+<area shape="rect" id="node11" href="$structLibBoard_1_1Image.html" title="Used to draw image in figure. " alt="" coords="647,149,774,176"/>
+<area shape="rect" id="node13" href="$structLibBoard_1_1QuadraticBezierCurve.html" title="A quadratic Bezier curve having 3 control points. NB. It is also a parabola arc. " alt="" coords="617,201,805,242"/>
+<area shape="rect" id="node15" href="$classLibBoard_1_1Board.html" title="Class for EPS, FIG or SVG drawings. " alt="" coords="411,259,535,285"/>
+<area shape="rect" id="node17" href="$structLibBoard_1_1Group.html" title="A group of shapes. A group is basically a ShapeList except that when rendered in either an SVG of a F..." alt="" coords="411,309,536,336"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1Board2D.html" title="Aim: This class specializes a &#39;Board&#39; class so as to display DGtal objects more naturally (with &lt;&lt;)..." alt="" coords="649,267,772,293"/>
+</map>

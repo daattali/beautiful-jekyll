@@ -1,0 +1,13 @@
+<map id="DGtal::concepts::CVectorSpace&lt; T &gt;" name="DGtal::concepts::CVectorSpace&lt; T &gt;">
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CDiscreteExteriorCalculusVectorSpace.html" title="Aim: Lift linear algebra container concept into the dec package. " alt="" coords="459,63,701,105"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CMatrix.html" title="Aim: Represent any static or dynamic sized matrix having sparse or dense representation. " alt="" coords="471,129,689,156"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CVector.html" title="Aim: Represent any static or dynamic sized column vector having sparse or dense representation. " alt="" coords="471,283,689,309"/>
+<area shape="rect" id="node2" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="6,129,178,156"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CDenseMatrix.html" title="Aim: Represent any dynamic or static sized matrix having dense representation. " alt="" coords="751,5,1009,32"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CDynamicMatrix.html" title="Aim: Represent any dynamic sized matrix having sparse or dense representation. " alt="" coords="781,57,979,98"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CSparseMatrix.html" title="Aim: Represent any dynamic or static sized matrix having sparse representation. " alt="" coords="787,122,973,163"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CStaticMatrix.html" title="Aim: Represent any static sized matrix having sparse or dense representation. " alt="" coords="791,187,969,229"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1concepts_1_1CDenseVector.html" title="Aim: Represent any dynamic or static sized matrix having dense representation. " alt="" coords="750,253,1010,280"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1concepts_1_1CDynamicVector.html" title="Aim: Represent any dynamic sized column vector having sparse or dense representation. " alt="" coords="781,305,979,346"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1concepts_1_1CStaticVector.html" title="Aim: Represent any static sized column vector having sparse or dense representation. " alt="" coords="791,370,969,411"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="DGtal::VoronoiCovarianceMeasureOnDigitalSurface&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction &gt;" name="DGtal::VoronoiCovarianceMeasureOnDigitalSurface&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction &gt;">
+<area shape="rect" id="node3" href="$structDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface_1_1Normals.html" title="Structure to hold the normals for each surfel (the VCM one and the trivial one). " alt="" coords="790,1269,1034,1355"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="256,536,424,592"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="1988,1159,2127,1201"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface_1_1EigenStructure.html" title="Structure to hold a diagonalized matrix. " alt="" coords="2374,957,2618,1043"/>
+<area shape="rect" id="node19" href="$classDGtal_1_1VoronoiMap.html" title="Aim: Implementation of the linear in time Voronoi map construction. " alt="" coords="1923,712,2192,768"/>
+<area shape="rect" id="node27" href="$classDGtal_1_1ImageContainerBySTLVector.html" title="DGtal::ImageContainerBySTLVector\l\&lt; TDomain, TValue \&gt;" alt="" coords="1473,513,1719,554"/>
+<area shape="rect" id="node30" href="$classDGtal_1_1HyperRectDomain.html" title="DGtal::HyperRectDomain\l\&lt; Space \&gt;" alt="" coords="1505,175,1687,217"/>
+<area shape="rect" id="node33" href="$structDGtal_1_1functors_1_1IsWithinPointPredicate.html" title="DGtal::functors::IsWithin\lPointPredicate\&lt; Point \&gt;" alt="" coords="587,126,763,167"/>
+<area shape="rect" id="node35" href="$classDGtal_1_1HyperRectDomain.html" title="Aim: Parallelepidec region of a digital space, model of a &#39;CDomain&#39;. " alt="" coords="1059,109,1240,150"/>
+<area shape="rect" id="node36" href="$classDGtal_1_1SpatialCubicalSubdivision.html" title="Aim: This class is a data structure that subdivides a rectangular domains into cubical domains of siz..." alt="" coords="2382,378,2610,419"/>
+<area shape="rect" id="node37" href="$classDGtal_1_1ImageContainerBySTLVector.html" title="DGtal::ImageContainerBySTLVector\l\&lt; Domain, Storage * \&gt;" alt="" coords="1934,378,2181,419"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="1991,1068,2123,1095"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="1089,739,1209,765"/>
+<area shape="rect" id="node24" title="STL class. " alt="" coords="1086,688,1213,715"/>
+<area shape="rect" id="node28" title="STL class. " alt="" coords="1068,587,1231,613"/>
+<area shape="rect" id="node38" title="STL class. " alt="" coords="1265,429,1447,456"/>
+<area shape="rect" id="node14" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="1965,825,2149,866"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::DigitalSurface \&gt;" alt="" coords="3301,1231,3541,1273"/>
+<area shape="rect" id="node17" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="2853,1231,3043,1273"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1VoronoiCovarianceMeasure.html" title="DGtal::VoronoiCovariance\lMeasure\&lt; Space, Metric \&gt;" alt="" coords="3324,607,3519,649"/>
+<area shape="rect" id="node39" href="$classDGtal_1_1VoronoiCovarianceMeasure.html" title="Aim: This class precomputes the Voronoi Covariance Measure of a set of points. It can compute the cov..." alt="" coords="2811,511,3085,553"/>
+<area shape="rect" id="node20" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutputImage \&gt;" alt="" coords="1521,850,1671,891"/>
+<area shape="rect" id="node21" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="600,835,749,877"/>
+<area shape="rect" id="node22" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="1062,789,1237,816"/>
+<area shape="rect" id="node31" href="$classDGtal_1_1HyperRectDomain__Iterator.html" title="DGtal::HyperRectDomain\l_Iterator\&lt; TPoint \&gt;" alt="" coords="584,30,765,71"/>
+<area shape="rect" id="node34" href="$structDGtal_1_1functors_1_1IsWithinPointPredicate.html" title="Aim: The predicate returns true when the point is within the given bounds. " alt="" coords="249,99,431,141"/>
+</map>

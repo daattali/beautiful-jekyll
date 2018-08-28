@@ -1,0 +1,14 @@
+<map id="DGtal::concepts::CQuantity&lt; T &gt;" name="DGtal::concepts::CQuantity&lt; T &gt;">
+<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CBoundedNumber.html" title="Aim: The concept CBoundedNumber specifies what are the bounded numbers. Models of this concept should..." alt="" coords="861,5,1059,46"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CIntegralNumber.html" title="Aim: Concept checking for Integral Numbers. Models of this concept should be listed in NumberTraits c..." alt="" coords="1129,59,1319,101"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1concepts_1_1CSignedNumber.html" title="Aim: Concept checking for Signed Numbers. Models of this concept should be listed in NumberTraits cla..." alt="" coords="867,122,1053,163"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1concepts_1_1CUnsignedNumber.html" title="Aim: Concept checking for Unsigned numbers. Models of this concept should be listed in NumberTraits c..." alt="" coords="859,187,1061,229"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible, assignable and equality comparable. " alt="" coords="303,75,515,101"/>
+<area shape="rect" id="node3" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="6,24,239,51"/>
+<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="37,75,209,101"/>
+<area shape="rect" id="node5" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.sgi.com/tech/stl/EqualityComparable.html. " alt="" coords="7,125,238,152"/>
+<area shape="rect" id="node6" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.sgi.com/tech/stl/LessThanComparable.html. " alt="" coords="289,125,530,152"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CInteger.html" title="Aim: Concept checking for Integer Numbers. More precisely, this concept is a refinement of both CEucl..." alt="" coords="1638,100,1861,127"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1concepts_1_1CCommutativeRing.html" title="Aim: Defines the mathematical concept equivalent to a unitary commutative ring. " alt="" coords="1110,125,1338,166"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1concepts_1_1CEuclideanRing.html" title="Aim: Defines the mathematical concept equivalent to a unitary commutative ring with a division operat..." alt="" coords="1387,122,1589,163"/>
+</map>

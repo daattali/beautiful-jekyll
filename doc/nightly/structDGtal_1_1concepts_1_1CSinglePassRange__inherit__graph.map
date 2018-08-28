@@ -1,0 +1,4 @@
+<map id="DGtal::concepts::CSinglePassRange&lt; T &gt;" name="DGtal::concepts::CSinglePassRange&lt; T &gt;">
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CSinglePassRangeFromPoint.html" title="Aim: refined concept of single pass range with a begin() method from a point. " alt="" coords="17,187,209,229"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="5,6,221,47"/>
+</map>
