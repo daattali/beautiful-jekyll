@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Recursion, Big O, and the Fibonnaci Sequence"
+subtitle: Introduction to recursion
 categories: jekyll update
 ---
  
