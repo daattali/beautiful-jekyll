@@ -30,6 +30,7 @@ navbar-links:
     - Download: "download"
     - For developers: "developers"
     - For users: "users"
+  DGtalTools: "dgtaltools"
   Authors: "authors"
   Gallery: "gallery"
   Sponsors: "sponsors"
