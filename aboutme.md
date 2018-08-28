@@ -32,4 +32,24 @@ The project is composed of two main packages: DGtal (main library) and DGtalTool
 
 # Features Digital Geometry Tools and Algorithms
 
-DGtal offers concepts, data structures, algorithms for the following tasks: digital spaces and sets (integer plane and subsets, cellular grid space and subsets); integers and fractions (irreducible and continued fractions, Stern-Brocot tree); digital straightness (patterns, digital straight lines and subsegments); grid curve representation (points, pixel, interpixel, Freeman chaincode) and analysis (segmentation, covering); primitives (arithmetic, geometric and combinatorial digital straight segments, digital circular arc, digital planes); Euclidean and digital multigrid shape generation (parametric and implicit curves and surfaces, Gauss digitization); volumetric analysis with distance transformation (DT and reverse DT, medial axis, digital Voronoi diagram); geometric estimators (tangent and curvature estimators along digital curves and surfaces); digital topology (adjacencies, objects, borders, simpleness, homotopic thinning); digital surfaces (implicit and explicit containers, neighborhood, tracking, dual surfaces, marching-cubes); multi-variate polynomials; nD image processing (readers, writers, vector, map and tree containers, ITK bridge); export and visualization (2D and 3D export and display stream mechanism; 3D interaction mechanism).
+[DGtal][1] offers concepts, data structures, algorithms for the following tasks: [digital spaces and sets][6] (integer plane and subsets, cellular grid space and subsets); [integers and fractions][7] (irreducible and continued fractions, Stern-Brocot tree); [digital straightness][8] (patterns, digital straight lines and subsegments); [grid curve representation][9] (points, pixel, interpixel, Freeman chaincode) and [analysis][10] (segmentation, covering); [primitives][11] (arithmetic, geometric and combinatorial digital straight segments, digital circular arc, digital planes);[ Euclidean and digital multigrid shape generation][12] (parametric and implicit curves and surfaces, Gauss digitization); [volumetric analysis with distance transformation][13] (DT and reverse DT, medial axis, digital Voronoi diagram); [geometric estimators][14] (tangent and curvature estimators along digital curves and surfaces); [digital topology][15] (adjacencies, objects, borders, simpleness, homotopic thinning); [digital surfaces][16] (implicit and explicit containers, neighborhood, tracking, dual surfaces, marching-cubes); [multi-variate polynomials][17]; [nD image processing][18] (readers, writers, vector, map and tree containers, ITK bridge); [export and visualization][19] (2D and 3D export and display stream mechanism; 3D interaction mechanism).
+
+[1]: http://dgtal.org "DGtal"
+[2]: http://en.wikipedia.org/wiki/Digital_geometry "Digital Geometry"
+[3]: http://dgtal.org/gallery/ "Gallery"
+[4]: http://dgtal.org/download/ "Download"
+[5]: http://dgtal.org/tools/ "Tools"
+[6]: http://dgtal.org/doc/nightly/packageKernel.html "digital spaces and sets"
+[7]: http://dgtal.org/doc/nightly/moduleIrreducibleFraction.html "integers and fractions"
+[8]: http://dgtal.org/doc/nightly/moduleDigitalStraightness.html "digital straightness"
+[9]: http://dgtal.org/doc/nightly/moduleGridCurveAnalysis.html "grid curve representation"
+[10]: http://dgtal.org/doc/nightly/moduleGridCurveAnalysis.html "analysis"
+[11]: http://dgtal.org/doc/nightly/packageGeometry.html "primitives"
+[12]: http://dgtal.org/doc/nightly/moduleShape.html " Euclidean and digital multigrid shape generation"
+[13]: http://dgtal.org/doc/nightly/moduleVolumetric.html "volumetric analysis with distance transformation"
+[14]: http://dgtal.org/doc/nightly/packageGeometry.html "geometric estimators"
+[15]: http://dgtal.org/doc/nightly/moduleDigitalTopology.html "digital topology"
+[16]: http://dgtal.org/doc/nightly/moduleDigitalSurfaces.html "digital surfaces"
+[17]: http://dgtal.org/doc/nightly/modulePolynomial.html "multi-variate polynomials"
+[18]: http://dgtal.org/doc/nightly/packageImage.html "nD image processing"
+[19]: http://dgtal.org/doc/nightly/packageIO.html "export and visualization"
