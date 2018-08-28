@@ -4,7 +4,7 @@ title: DGtalTools
 ---
 
 
-<div id='gallery-1' class='gallery galleryid-41 gallery-columns-3 gallery-size-thumbnail'><dl class='gallery-item'>
+<div  class='gallery galleryid-41 gallery-columns-3 gallery-size-thumbnail'><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='https://dgtal.org/gallery/bunnycomplete/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-1068" srcset="https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-1024x1024.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
@@ -514,6 +514,3 @@ Red: feature, Blue: smooth part, Green: flat part
 			</dt></dl>
 			<br style='clear: both' />
 		</div>
-
-<p>&nbsp;</p>
-</div>
