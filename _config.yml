@@ -23,6 +23,7 @@ description: Digital Geometry Tools and Algorithms Library
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "index"
   About DGtal: "aboutme"
   Packages : "packages"
   Resources:
