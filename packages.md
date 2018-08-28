@@ -52,11 +52,11 @@ title: Packages
 
 * * *
 
-*   [Geometry Package][9]
+*   [Geometry Package][9]     <img class="wp-image-117 size-thumbnail" title="exampleDSS-3" src="http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3-150x118.png" alt="" width="150" height="118" /><img class="wp-image-259 size-thumbnail" title="Distance Transformation using the Euclidean distance " src="http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap-150x150.png" alt="" width="150" height="150" />
     *   This package contains geometry related concepts, objects and methods which are used in other higher level packages. It provides a generic framework for the segmentation of one-dimensional discrete structures, like strings, contours of 2d digital objects or nd digital curves. It has also limited support for digital plane recognition in 3d. It also provides a generic framework for the estimation of geometrical quantities, either global, like length, or local, like normal or curvature. Several estimators are built from some well chosen segmentations. On the other hand, this package contains tools for the analysis of volumes of arbitrary dimension, by the means of separable and incremental distance transforms.
     *   *Tristan Roussillon, David Coeurjolly, Jacques-Olivier Lachaud, Bertrand Kerautret*
     *   LGPL
-    <img class="wp-image-117 size-thumbnail" title="exampleDSS-3" src="http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3-150x118.png" alt="" width="150" height="118" /><img class="wp-image-259 size-thumbnail" title="Distance Transformation using the Euclidean distance " src="http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap-150x150.png" alt="" width="150" height="150" />
+
 
 * * *
 
