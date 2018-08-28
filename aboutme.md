@@ -6,7 +6,6 @@ subtitle: aha--------
 
 Hello :D
 
-My Name is DongHyeon-Kim.
 
 ### my history
 ```
