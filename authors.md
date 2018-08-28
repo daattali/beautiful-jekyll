@@ -36,3 +36,10 @@ title: Authors
 * Jérémy Gaillard (LIRIS, INSA-Lyon)
 * Xi Wang (LIRIS – CEN Météo-France)
 * Nicolas Silva (LIRIS, INSA-Lyon)
+
+For any comment/question about the library itself, please use the mailing lists detailed in the [Documentation & Help][1] page. For any other request:
+
+* contacts@dgtal.org
+* webmaster@dgtal.org
+
+ [1]: http://dgtal.org/documentation-help/ "Documentation & Help"
