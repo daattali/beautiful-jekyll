@@ -53,11 +53,11 @@ hr.small {
   position: absolute;
   right: -50px;
   top: 40px;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(25deg);
+     -moz-transform: rotate(25deg);
+      -ms-transform: rotate(25deg);
+       -o-transform: rotate(25deg);
+          transform: rotate(25deg);
    -webkit-box-shadow: 0 0 10px #888;
      -moz-box-shadow: 0 0 10px #888;
           box-shadow: 0 0 10px #888;
