@@ -60,7 +60,7 @@ The source code of the tools can also be used to non DGtal familiar user to sho
  - <span style="color: #00008b">curvatureScaleSpaceBCC</span>: a tool to display the curvature scale space of a given contour with the Binomial Convolver Curvature Estimator.
  - <span style="color: #00008b"> euleurCharacteristic </span>: bruteforce tool to extract (volumetric) Euler characteristic from volumetric binary object.
  - <span style="color: #00008b">lengthEstimator</span>: program to generate multigrid analysis of length estimators.
- - <span style="color: #00008b"> generic3dNormalEstimators</span>: Computes a normal vector field over a digitized 3D implicit surface for several estimators (II|VCM|Trivial|True).
+ - <span style="color: #00008b"> generic3dNormalEstimators</span>: Computes a normal vector field over a digitized 3D implicit surface for several estimators (II, VCM, Trivial, True).
  - <span style="color: #00008b">statisticsEstimators</span>: compute satistics (L1, L2, Loo) from results of two estimators.
  - <span style="color: #00008b">tangentBC</span>: tangent estimator using the Binomial convolver.
  - <span style="color: #00008b">vol2normalField</span>: compute the normal vector field of a given vol file .
