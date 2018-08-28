@@ -6,43 +6,43 @@ title: Gallery
 
 <div  class='gallery galleryid-41 gallery-columns-3 gallery-size-thumbnail'><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='https://dgtal.org/gallery/bunnycomplete/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-1068" srcset="https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-1024x1024.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete.png'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-1068" srcset="https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2010/10/bunnycomplete-1024x1024.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-1068'>
 				Digital Surface Regularization
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='https://dgtal.org/gallery/laplace/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/hop-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-1066" srcset="https://dgtal.org/wp/wp-content/uploads/2010/10/hop-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2010/10/hop-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2010/10/hop-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2010/10/hop-1024x1024.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2010/10/hop.png'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/hop-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-1066" srcset="https://dgtal.org/wp/wp-content/uploads/2010/10/hop-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2010/10/hop-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2010/10/hop-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2010/10/hop-1024x1024.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-1066'>
 				Eigenvectors of the digital Laplace-Beltrami operator.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='https://dgtal.org/gabari3dlines/'><img width="145" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815-145x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-951" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815.png'><img width="145" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815-145x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-951" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-951'>
 				Illustration of centerline extraction using accumulation and confidence map.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='https://dgtal.org/centerlineimplicit/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/centerlineImplicit-e1463673965784-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-949" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2016/05/centerlineImplicit-e1463673965784.png'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/centerlineImplicit-e1463673965784-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-949" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-949'>
 				Illustration of centerline extraction using accumulation and confidence map.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='https://dgtal.org/examplealphathicksegmenttgtcover/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/exampleAlphaThickSegmentTgtCover-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-945" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2016/05/exampleAlphaThickSegmentTgtCover.png'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/exampleAlphaThickSegmentTgtCover-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-945" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-945'>
 				Tangential cover with alpha-thick segments with alpha = 4
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='https://dgtal.org/gallery/noisy/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/noisy-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-934" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2010/10/noisy.png'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2010/10/noisy-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-934" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-934'>
 				Kanungo noise model on 3D dataset.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='https://dgtal.org/fandisk_noise_ii_scale/'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-931" srcset="https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale.png'><img width="150" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-931" srcset="https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-150x150.png 150w, https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-300x300.png 300w, https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale-768x768.png 768w, https://dgtal.org/wp/wp-content/uploads/2016/04/Fandisk_noise_II_scale.png 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-931'>
 				Feature selection on a noisy Fandisk, using Integral Invariant Curvature Estimator.
