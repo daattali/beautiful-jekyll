@@ -3,10 +3,9 @@ layout: page
 title: Gallery
 ---
 
-
 <div  class='gallery galleryid-41 gallery-columns-3 gallery-size-thumbnail'><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='/wp/wp-content/uploads/2010/10/bunnycomplete.png'><img width="150" height="150" src="/wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png" class="attachment-thumbnail size-thumbnail" /></a>
+				<a href='wp/wp-content/uploads/2010/10/bunnycomplete.png'><img width="150" height="150" src="wp/wp-content/uploads/2010/10/bunnycomplete-150x150.png" class="attachment-thumbnail size-thumbnail" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-1068'>
 				Digital Surface Regularization
@@ -17,15 +16,6 @@ title: Gallery
 				<dd class='wp-caption-text gallery-caption' id='gallery-1-1066'>
 				Eigenvectors of the digital Laplace-Beltrami operator.
 				</dd></dl>
-				<dl class='gallery-item'>
-				<dt class='gallery-icon landscape'>
-				[Link](/wp/wp-content/uploads/2010/10/hop.png)
-				![bla](/wp/wp-content/uploads/2010/10/hop-150x150.png)
-				</dt>
-				<dd class='wp-caption-text gallery-caption' id='gallery-1-1066'>
-				Eigenvectors of the digital Laplace-Beltrami operator.
-				</dd></dl>
-
 				<dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
 				<a href='https://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815.png'><img width="145" height="150" src="https://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815-145x150.png" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-1-951" /></a>
