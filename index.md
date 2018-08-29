@@ -4,7 +4,9 @@ title: RCN-ECS
 subtitle: The Research Coordinated Network for Evolution in Changing Seas
 use-site-title: true
 ---
- 
+ <p lign="center">
+  <img src="/img/ocean_sm.jpg">
+</p>
 {: .box-note}
 We are a network of marine scientists, evolutionary biologists, and oceanographers working to develop integrated frameworks for studying adaptation to ocean change.
 
@@ -17,6 +19,4 @@ We are a network of marine scientists, evolutionary biologists, and oceanographe
 {: .box-note}
 **Keywords:** coupling oceanographic and evolutionary processes, local adaptation and maladaptation, co- and counter-gradient variation, adaptive and maladative plasticity, evolution of function-valued traits, epigenetics and transgenerational plasticity
 
-<p lign="center">
-  <img src="/img/ocean_sm.jpg">
-</p>
+
