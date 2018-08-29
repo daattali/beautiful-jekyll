@@ -18,10 +18,10 @@ We will use the listserv to send updates about activities.
 ### 4) Suggest a paper (or pair of companion papers) 
 Suggest a paper (or pair of companion papers) that you think everyone in the network should read <a href="https://docs.google.com/forms/d/e/1FAIpQLScNXqayhOeAkk-GkotqcnbVdWlYt09STX6Wc4eq2qN5AnJGPQ/viewform"  target="_blank">using this form</a>. Deadline for submissions is October 1.
 
-### 5) Submit a logo or art for our website
+### 5) Submit a logo, pictures, or art for our website
 We need a logo! Submit a logo to be considered by October 1.
 
-We'd also love to showcase your artwork on our website, especially art captures research projects that align with the themes of the network.
+We'd also love to showcase your artwork or photos on our website, especially if it aligns with the themes of the network.
 
 Send your submissions to evolvingseas@gmail.com
 
