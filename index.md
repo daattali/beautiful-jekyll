@@ -7,6 +7,8 @@ use-site-title: true
  <p lign="center">
   <img src="/img/ocean_sm.jpg">
 </p>
+
+
 {: .box-note}
 We are a network of marine scientists, evolutionary biologists, and oceanographers working to develop integrated frameworks for studying adaptation to ocean change.
 
