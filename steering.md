@@ -51,7 +51,7 @@ steering-list:
     website: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     url: https://dornsife.usc.edu/cf/bisc/faculty_display.cfm?Person_ID=1016828
     twitter:  https://twitter.com/DrCarlsHorn
-    github:
+    github: https://github.com/ckenkel
   - name: Andy Kern
     img: /img/people/andy_kern.jpg
     desc:  Population genomicist with expertise in humans, fruit flies, and plants. Assistant Professor in the Department of Biology at the University of Oregon.
