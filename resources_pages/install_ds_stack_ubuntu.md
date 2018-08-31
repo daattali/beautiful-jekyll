@@ -102,6 +102,7 @@ We will be using R, another programming language, a lot in the program. We will 
 #### R
 
 Open /etc/apt/sources.list and add the following line to the end of the file (choose the correct one for your version of Ubuntu):
+  - for Ubuntu 18.04.1 (Bionic Beaver) add: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
   - for Ubuntu 17.10.1 (Artful Aardvark) add: `deb https://cloud.r-project.org/bin/linux/ubuntu artful/`
   - for Ubuntu 16.04.4 (Xenial Xerus) add: `deb https://cloud.r-project.org/bin/linux/ubuntu xenial/`
   - for Ubuntu 14.04.5 (Trusty Tahr) add: `deb https://cloud.r-project.org/bin/linux/ubuntu trusty/`
@@ -145,13 +146,38 @@ http://www.gnu.org/licenses/.
 ```
 
 #### RStudio
-Chose and download the appropriate Ubuntu version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. Open the file and follow the installer instructions.
+Chose and download the appropriate Ubuntu version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. 
+
+Open a terminal window and type the following commands to install the dependencies and RStudio:
+
+```
+# Modified from: https://blog.sergiouri.be/2018/05/ubuntu-1804-setup-rstudio.html
+
+wget http://ftp.ca.debian.org/debian/pool/main/g/gstreamer0.10/libgstreamer0.10-0_0.10.36-1.5_amd64.deb
+wget http://ftp.ca.debian.org/debian/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
+
+sudo apt install libjpeg62 gdebi
+
+sudo gdebi libgstreamer0.10-0_0.10.36-1.5_amd64.deb
+sudo gdebi libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
+
+sudo gdebi rstudio-*.deb
+
+rm libgstreamer0.10-0_0.10.36-1.5_amd64.deb
+rm libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
+```
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
 #### IR kernel
+Open a terminal window and type the following commands to install the dependencies:
+
+```
+sudo aptitude install libcurl4-openssl-dev libssl-dev libgit2-dev
+```
+
 Open RStudio and type the following commands into the Console panel:
 
 ```
