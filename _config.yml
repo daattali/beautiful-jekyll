@@ -207,7 +207,7 @@ prose:
     - /img
     - /js
     - /doc
-    -/ releases
+    - /releases
   metadata:
     _posts:
       - name: "layout"
