@@ -206,6 +206,8 @@ prose:
     - /css
     - /img
     - /js
+    - /doc
+    -/ releases
   metadata:
     _posts:
       - name: "layout"
