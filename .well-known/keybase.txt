@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/dcoeurjo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dgtal.org
+  * I am dcoeurjo (https://keybase.io/dcoeurjo) on keybase.
+  * I have a public key with fingerprint D4C2 7859 CB75 CF0B 6C41  DE49 274E 6AF0 FE3A AF25
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.4.11"
+        },
+        "key": {
+            "fingerprint": "d4c27859cb75cf0b6c41de49274e6af0fe3aaf25",
+            "host": "keybase.io",
+            "key_id": "274E6AF0FE3AAF25",
+            "uid": "9de2454e8a9758e4d26585390655cd00",
+            "username": "dcoeurjo"
+        },
+        "merkle_root": {
+            "ctime": 1405505921,
+            "hash": "d681015d09508318df0e8e37f8a5e31db5168a2fce45ca98db312f9d91bbb8e694d17010a07a853bfae4
+f6b99239a77684c3e1a07b3086bd68361c36ff407ae2",
+            "seqno": 28857
+        },
+        "service": {
+            "hostname": "dgtal.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1405506056,
+    "expire_in": 157680000,
+    "prev": "c049b237a6381f889cf3921941fcf7cfc4b5508e40e95c6446a92fa2e49330b3",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+Comment: GPGTools - http://gpgtools.org
+
+owFVUj1oFEEUXpMYVBC8RmyEsCBpwjH/O3NdilypqKXFMT9v7ja57Jy7e4khHgoi
+phTshIh1Gq3sRbDRTrG0s9DKwk4QZ44EzVQzb773ve977z29uJgtdFavb/7803t1
+7cyH7ya7/f7Wuf3cBLeX9/ZzOy6hatOt0tuQ9/It2DO6gW4ZVqrgoLvZrBxj1vId
+qJsyVBGFuqyLcT5bS/iU7ctqCPWkLhNZ7pglheTKmoJbj4ywDDtgihQMhPbIA9Xa
+Ex45R6FpT5XN55yD0sVoxG+I9T7qb9D19f4cP51/KAeEcQZSq4JLYI4ILjlVSHBu
+HUIJ2EB97MnZANN6MyS921BvjWFQhzB3bdsyQTBDnCOuCI6KdDNKSUJihLlDiiNJ
+sXQegQRaeKk5UOwMx0Jq4i0wbrWSzlBMvHIKG2MkCMUcLhBGGhU6SjNeA/PCKEWo
+0kUhJLMUcPw1FElhYjkqsKXCexYzgEQLDdytQt4jUvJilp71TmkhyU5dOzE3bPW4
+G+phTJjUoQ02jGN41LaTXjLc7k0SbBfMIBIcJYaBKSsXB/b/SHGEnmqGQFys5XBv
+UtYwKBOCR9EonlQHdiKnRUwZQgstqMReSmU9jS1UDHvrC+stM5EojgeB4lYwJrQi
+XpO4CZQiQ/9ZZFGnHkbKphxWup3WkM8O+ktZZyFbPruQVja7cP7SyR6/fZ69fPTg
+F/568+DHl0+Yfj58szx+cYSyw87i1Se/372+8fjKncurH599e7jUuf8X
+=lhAP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dcoeurjo
+
+==================================================================

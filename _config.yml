@@ -8,8 +8,8 @@
 #baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-url: "http://dgtal-team.github.io/dgtal.github.io"
-baseurl: "/dgtal.github.io"
+url: "https://dgtal.org"
+baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
@@ -206,6 +206,8 @@ prose:
     - /css
     - /img
     - /js
+    - /doc
+    - /releases
   metadata:
     _posts:
       - name: "layout"
