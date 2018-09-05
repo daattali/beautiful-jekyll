@@ -177,4 +177,4 @@ Como ya comenté anteriormente, asumimos que el archivo ```post-merge``` se encu
             ...
 ```
 
-Es decir, el script habría creado un enlace dentro de ```.git/hooks/post-merge``` al script definido en ```git-hooks/post-merge```. De esta forma, si en algún momento se modifica el archivo del repositorio, automáticamente el hook podrá ejecutar el cambio sin ninguna otra acción requerida. Esto solo sería necesario ejecutarlo la primera vez que se clona el repositorio, para crear el enlace. Posteriormente, la magia la hará git automaticamente con cada ```git pull``` que detecte cambios en el repo.
+El script habría creado un enlace dentro de ```.git/hooks/post-merge``` al script definido en ```git-hooks/post-merge```. De esta forma, si en algún momento se modifica el archivo del repositorio, automáticamente el hook podrá ejecutar el cambio sin ninguna otra acción requerida. Esto solo sería necesario ejecutarlo la primera vez que se clona el repositorio, para crear el enlace. Posteriormente, la magia la hará git automaticamente con cada ```git pull``` que detecte cambios en el repo.
