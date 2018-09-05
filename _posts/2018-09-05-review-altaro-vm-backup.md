@@ -5,14 +5,8 @@ title: 'Review : Altaro VM Backup'
 ---
 ![altaro0.jpg]({{site.baseurl}}/img/altaro0.jpg)
 
-There is a sea of products on the market to backup virtual machines and they all provide more or less the same core functions. In order to stand out from the crowd and gain popularity, one has to offer innovative features, proven reliability, simplicity to use and a solid customer centric support experience. This is just what Altaro, a company founded in 2009, does with its VM Backup solution that we will review today.
+There is a sea of products on the market to backup virtual machines and they all provide more or less the same core functions. In order to stand out from the crowd and gain popularity, one has to offer innovative features, proven reliability, simplicity to use and a solid customer centric support experience. This is just what [Altaro](https://www.altaro.com?LP=vxav ), a company founded in 2009, does with its VM Backup solution that we will review today.
 Altaro offers the possibility to backup virtual machines of VMware and Hyper-V environments with offsite features and Azure cloud integration.
-
-## Try it for free
-If you want to try it for free just follow this link: [https://www.altaro.com/vm-backup/download.php](https://www.altaro.com/vm-backup/download.php)
-Select your platform and click Download Now. You have the choice between the 30 days trial which includes all the features and the free version limited to 2 VMs with basic functions: 
-
-Follow this link for the list of hardware and software prerequisites: [http://support.altaro.com/customer/en/portal/articles/808716-what-are-the-system-requirements-for-altaro-vm-backup-](http://support.altaro.com/customer/en/portal/articles/808716-what-are-the-system-requirements-for-altaro-vm-backup-)
 
 ## Installation
 Let's kick off with the installation process of the Altaro server. This steps is quick and pain free as it is a typical "Next - Next" Windows installer with a license agreement to accept and an installation folder. You can then launch the Altaro VM Backup Management Console and get your server configured very quickly. At the first launch the console will focus on a special Quick Setup mode in which you can easily add hosts, define a backup store location and take the first backup, it doesn't take more than a few minutes to get your VMs backed up.
@@ -76,7 +70,15 @@ Altaro VM Backup is licensed per host which is a great thing because you won’t
 
 ![altaro9.jpg]({{site.baseurl}}/img/altaro9.jpg)
 
+Find more info on pricing on the [Altaro website](https://www.altaro.com/vm-backup/pricing.php).
+
 ## Conclusion
 The first time I used Altaro in my lab I wasn’t 100% convinced about the user interface but after playing around with it I have to say that I actually really like it and find it a lot more simple and intuitive to use than some of the other products out there. All the core features that a good backup server should have are there with a few welcome extras like the cloud integration, boot from backup and a solid customer support experience directly integrated in the console, very nice.
 There were two little things that bugged me during my testing. The first one is the way the UI saves changes, if you don’t click the Save button after a change you will be prompted the next time you change menu. If the action doesn’t go through a wizard I would like it to save automatically. The second one is that CDP is not available for the VMware platform as of now but it should come in a future release.
 A very positive review overall for a backup product that will tick all the boxes for small and medium businesses.
+
+## Try it for free
+If you want to try it for free just follow this link: [https://www.altaro.com/vm-backup/download.php?LP=vxav](https://www.altaro.com/vm-backup/download.php?LP=vxav)
+Select your platform and click Download Now. You have the choice between the 30 days trial which includes all the features and the free version limited to 2 VMs with basic functions: 
+
+Follow this link for the list of hardware and software prerequisites: [http://support.altaro.com/customer/en/portal/articles/808716-what-are-the-system-requirements-for-altaro-vm-backup-](http://support.altaro.com/customer/en/portal/articles/808716-what-are-the-system-requirements-for-altaro-vm-backup-)
