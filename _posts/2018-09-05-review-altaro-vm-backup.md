@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Review : Altaro VM Backup'
 ---
 ![altaro0.jpg]({{site.baseurl}}/img/altaro0.jpg)
