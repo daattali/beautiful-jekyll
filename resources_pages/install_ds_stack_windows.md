@@ -121,7 +121,7 @@ To see if you were successful, open RStudio and type ```install.packages("xtable
 Open RStudio and type the following commands into the console panel:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'), type = "binary")
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
 devtools::install_github('IRkernel/IRkernel')
 IRkernel::installspec()
 ```
