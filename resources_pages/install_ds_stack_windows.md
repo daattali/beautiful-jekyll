@@ -123,15 +123,10 @@ Open RStudio and type the following commands into the console panel:
 ```
 install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'), type = "binary")
 devtools::install_github('IRkernel/IRkernel')
+IRkernel::installspec()
 ```
 
-Next, open terminal and type the following:
-
-```
-R -e "IRkernel::installspec()"
-```
-
-To see if you were successful, try running Jupyter Notebook and seeing if you have working R kernel. To launch the Jupyter type the following in the terminal:
+To see if you were successful, try running Jupyter Notebook and seeing if you have working R kernel. To launch the Jupyter type the following in the Windows Command prompt:
 
 ```
 jupyter notebook
