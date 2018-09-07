@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: VMware Tools 10.3.0 - Abort mission!
 ---
 VMware rolled out the latest version of the VMware Tools in version 10.3.0 but recalled them quickly afterwards due to an issue with the VMXNET3 network driver for Windows. In some cases the symptoms can be a Purple Diagnostic Screen (PSOD) or guest network connectivity loss. Not fun...
