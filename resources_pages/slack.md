@@ -5,7 +5,7 @@ title: Slack usage guidelines
 
 ## The Slack app
 
-We will be using [Slack](www.slack.com) as our primary means of electronic communication in the MDS program. We will invite you to our Slack team when the program starts.
+We will be using [Slack](https://slack.com/) as our primary means of electronic communication in the MDS program. We will invite you to our Slack team when the program starts.
 
 
 #### Channels
@@ -13,17 +13,17 @@ We will be using [Slack](www.slack.com) as our primary means of electronic commu
 Our Slack team, `UBC-MDS`, contains many _channels_ for conversation. We will enrol you in the channels for the 25 MDS courses, as well as [#data-science-careers](https://ubc-mds.slack.com/messages/data-science-careers/details/), [#git-general](https://ubc-mds.slack.com/messages/git-general/details/), [#python-general](https://ubc-mds.slack.com/messages/python-general/details/) and [#r-general](https://ubc-mds.slack.com/messages/r-general/details/). You should be automatically enrolled in the [#general](https://ubc-mds.slack.com/messages/general/details/) and [#random](https://ubc-mds.slack.com/messages/random/details/) channels when you join Slack.
 
 These channels are all public. You can create private channels as well. For example, each year the students
-typically create a private channel for students only. After you graduate from the program, we will invite you to the UBC MDS Alumni Slack team.
+typically create a private channel for students only. At some point we will also invite you to the UBC MDS Alumni Slack workspace, which is completely disconnected from the main UBC MDS Slack workspace you use as a student.
 
 
 #### Direct Messages
 
-A direct message thread is different from a private channel. To open a direct message, go to `DIRECT MESSAGES` on the left-hand sidebar and click on the little `+` sign. Then, type in the names of the people who should be part of the direct message thread.
+A direct message thread is different from a private channel. To open a direct message, go to "Direct Messages" on the left-hand sidebar and click on the little `+` sign. Then, type in the names of the people who should be part of the direct message thread.
 
 
 #### Usernames
 
-Unlike other messaging platforms you might be used to, the namespace of usernames is specific to an individual Slack team. In other
+Unlike other messaging platforms you might be used to, the namespace of usernames is specific to an individual Slack workspace. In other
 words, if your name is Jamie it's perfectly fine to have your username be `@jamie` even though there are certainly a lot of Jamies out
 there in the world and you might have no hope to get `jamie@gmail.com` or a CWL of `jamie`, etc. As long as you are the only `jamie` in UBC-MDS, you're good. It's generally easier to figure out who's who
 if we all keep our usernames simple. If you've already created a complicated username, you can change it at any time; see instructions [here](https://get.slack.help/hc/en-us/articles/216360827-Change-your-username).
@@ -52,10 +52,10 @@ Sometimes we will use `@students` when we make announcements that we want all st
 
 #### Reactions
 
-On the subject of notifications, one nice feature of Slack is the reactions. Anyone can react to a message by anyone else, for example with a thumbs up emoji. This is different from sending a message containing that emoji in that it doesn't trigger notifications. This is hugely helpful. For example, if someone tells you something and you just want to say "OK" or "thanks", try a reaction instead of a new message, since you don't really need to notify the person of your response -- they will see it next time they are on Slack. The reactions are particularly useful when a large number of people need to answer something. For example if I ask "who is available to study Thursday night?" and then 30 people respond with "me!" -- well, that triggers a lot of notifications. Instead, if someone reacts with a check mark then others can simply click the check mark to add to the reaction. This way everyone can see who is available without any notifications being triggered. 
+On the subject of notifications, one nice feature of Slack is the reactions. Anyone can react to a message by anyone else, for example with a thumbs up emoji. This is different from sending a message containing that emoji in that it doesn't trigger notifications. This is hugely helpful. For example, if someone tells you something and you just want to say "OK" or "thanks", try a reaction instead of a new message, since you don't really need to notify the person of your response -- they will see it next time they are on Slack. Reactions are also useful when a large number of people need to respond affirmatively to something. For example if I ask "who is available to study Thursday night?" and then 30 people respond with "me!" -- well, that triggers a lot of notifications. Instead, if someone reacts with a check mark then others can simply click the check mark to add to the reaction. This way everyone can see who is available without any notifications being triggered. 
 
 
-## Asking for help
+## Using Slack to ask for help in MDS
 
 #### Asking about the course content
 
@@ -63,13 +63,11 @@ One reason we use Slack is so that you can ask for help. If you have a general q
 The reason for this is that often many students have the same question and it is much more efficient to have them answered in a public forum. Beyond that, it's often comforting for students to see other students asking questions,
 and generally encourages a vibrant Slack ecosystem.
 
-If you need to ask a course-related question privately, please open up a direct message thread with the teaching fellow(s) _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also
-keeps the others up to date on what is happening in the course.
-
+If you need to ask a course-related question privately, please open up a direct message thread with the lab instructor _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also keeps the others up to date on what is happening in the course.
 
 #### Asking a procedural question
 
-If you want to ask a procedural question (not about the material, for example asking to reschedule a quiz due to an important event or job interview) then you can leave out the TA(s) and just communicate with the teaching fellow(s).
+If you want to ask a procedural question (not about the material, for example asking to reschedule a quiz due to an important event or job interview) then you can leave out the TA(s) and just communicate with the lab instructor.
 
 
 #### Asking about your marks
@@ -83,19 +81,18 @@ We illustrate best practices via two examples.
 
 ##### Example of a bad post
 
-> @teachingfellow For question 1(b) I get an error when I run the code, should I try removing missing data? Error: computer$ python test.py
+> @instructor For question 1(b) I get an error when I run the code, should I try removing missing data? Error: computer$ python test.py
 Traceback (most recent call last):
   File "test.py", line 1, in <module>
     hello, world
 NameError: name 'hello' is not defined
 
-Explanation: this post is problematic for the following reasons...
+This post is problematic for the following reasons:
 
-- it tags the teaching fellow for no particular reason. The question could just as likely be answered by the TA(s) or other students.
+- it tags the instructor for no particular reason. The question could just as likely be answered by the TAs or other students.
 - it does not provide context, or a link to the lab in question.
 - it asks whether something should be tried, even though the student could have tried this before asking.
-- it indicates that the student has not read the preceding conversation about this topic.
-- code and error message not formatted properly with `code font`.
+- the code and error message are not formatted properly with `code font`.
 - the actual command used to run the code is not specified.
 
 
@@ -109,24 +106,24 @@ Traceback (most recent call last):
     hello, world
 NameError: name 'hello' is not defined
 ```
-> I tried the approach suggested by @otherstudent above, and I also tried removing missing data but the problem wasn't solved. Any help appreciated. Link: https://github.ubc.ca/ubc-mds-2016/DSCI_513_database-data-retr_students/blob/master/labs/lab2/lab2.md#1b
+> I tried the approach suggested by @otherstudent above, and I also tried removing missing data but the problem wasn't solved. Any help appreciated. Link: https://github.ubc.ca/mds-org/DSCI_513_database-data-retr_students/blob/master/labs/lab2/lab2.md#1b
 
-Explanation: this post is well-crafted for the following reasons...
+This post is well-crafted for the following reasons:
 
-- link to the lab is provided. Note that if the lab is an `.md` or `.Rmd` file then you can link to the actual question itself, but if it's a `.pdf` or other formats then you can only link to the top of the document.
-- specific error message is given.
-- student made a reasonable effort to solve the problem but still encountered difficulties.
+- a link to the lab is provided. Note that if the lab is an `.md` or `.Rmd` file then you can link to the actual question itself, but if it's a `.pdf` or other formats then you can only link to the top of the document.
+- the specific error message is given.
+- the student made a reasonable effort to solve the problem but still encountered difficulties.
 - it indicates that the student has read the preceding conversation and is still stuck.
-- code and error message formatted properly.
+- The code and error message are formatted properly.
 - the actual command used to run the code (`python test.py`) is specified.
 
 #### Where to ask
 
-Slack is intended to ephemeral content. If you have a question/post/comment that may be useful in the long-term, please
+Slack is intended for ephemeral content. If you have a question/post/comment that may be useful in the long-term, please
 instead open an Issue in the students repo of the relevant course on GitHub. Examples of content that is better posted on GitHub include:
 
-- useful resources/readings that the instructor may want to add to the course README for future years
-- hints/workarounds/fixes for the labs that the instructor may want to incorporate into the lab for current/future years
+- useful resources/readings that the instructor may want to add to the course README for future years.
+- hints/workarounds/fixes for the labs that the instructor may want to incorporate into the lab for current/future years.
 
 Examples of content that are better posted on Slack include:
 
@@ -135,4 +132,4 @@ Examples of content that are better posted on Slack include:
 
 #### Privacy
 
-Slack is not hosted on Canadian servers, and thus we recommend keeping the discussions and private messages on Slack to those related to course content, organization, etc. For personal and sensitive issues, we recommend that communications between MDS students and instructional staff be carried out using UBC email.
+Slack is not hosted on Canadian servers, and thus we recommend keeping the discussions and private messages on Slack to those related to course content, organization, etc. For personal and sensitive issues, communication between MDS students and instructional staff should be carried out using UBC email.
