@@ -9,6 +9,6 @@ tags: [good,design,good-design,HCI]
 
 ## Good Design
 
-![Good Design (Alumni Website)](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Good Design (Alumni Website)](Screen Shot 2018-09-10 at 5.01.37 PM.png)
 
 
