@@ -7,6 +7,8 @@ gh-badge: [star, fork, follow]
 tags: [good,design,good-design,HCI]
 ---
 
+## Good Design
+
 ![Good Design (Alumni Website)](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 
 Here's a code chunk:
