@@ -9,6 +9,6 @@ tags: [good,design,good-design,HCI]
 
 ## Good Design
 
-![Good Design (Alumni Website)](Screen Shot 2018-09-10 at 5.01.37 PM.png)
+![Good Design (Alumni Website)](https://github.com/samzgrunebaum/samzgrunebaum.github.io/blob/master/_posts/Screen%20Shot%202018-09-10%20at%205.01.37%20PM.png)
 
 
