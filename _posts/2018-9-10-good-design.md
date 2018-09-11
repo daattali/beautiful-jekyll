@@ -7,7 +7,7 @@ gh-badge: [star, fork, follow]
 tags: [good,design,good design,HCI]
 ---
 
-  For my example of good design, I have chosen the Williams alumni page from the Williams College website, which can be found at this link: (https://alumni.williams.edu)[https://alumni.williams.edu]. An image of this page is shown below.
+  For my example of good design, I have chosen the Williams alumni page from the Williams College website, which can be found at this link: <https://alumni.williams.edu>. An image of this page is shown below.
 
 ![Good Design (Alumni Website)](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/Screen%20Shot%202018-09-10%20at%205.01.37%20PM.png)
 
