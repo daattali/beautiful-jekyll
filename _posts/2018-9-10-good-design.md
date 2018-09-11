@@ -4,7 +4,7 @@ title: Good Design
 subtitle: An example of good design from the Williams alumni website
 gh-repo: samzgrunebaum/samzgrunebaum.github.io
 gh-badge: [star, fork, follow]
-tags: [good,design,good-design,HCI]
+tags: [good,design,good design,HCI]
 ---
 
   For my example of good design, I have chosen the Williams alumni page from the Williams College website, which can be found at this link: https://alumni.williams.edu.
