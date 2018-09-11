@@ -4,7 +4,7 @@ title: Bad Design
 subtitle: An example of bad design from the Williams PeopleSoft page for changing meal plans
 gh-repo: samzgrunebaum/samzgrunebaum.github.io
 gh-badge: [star, fork, follow]
-tags: [bad,design,bad-design,HCI]
+tags: [bad,design,bad design,HCI]
 ---
 
 ## Bad Design
