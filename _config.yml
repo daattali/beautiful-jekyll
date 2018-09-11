@@ -123,10 +123,10 @@ url-pretty: "dgtal.org"  # eg. "deanattali.com/beautiful-jekyll"
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
 
-matomo:
-  site_id: "4"
-  uri: "perso.liris.cnrs.fr/david.coeurjolly/piwik/"
-  opt-out: true
+#matomo:#
+#  site_id: "4"
+#  uri: "perso.liris.cnrs.fr/david.coeurjolly/piwik/"
+#  opt-out: true
 
 # --- Comments --- #
 
