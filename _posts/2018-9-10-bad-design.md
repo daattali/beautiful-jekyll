@@ -27,8 +27,6 @@ tags: [bad,design,bad design,HCI]
   
   This design is confusing because it displays some information while leaving other relevant information opaque. It appears that the page is not currently usable for its intended purpose, but this is not stated anywhere. There are textfields and clickable boxes to be selected that are all functional but do not seem to correspond to any real purpose. It seems as though the page sometimes functions for changing meal plans and at other times displays a shell of the functional page that can be interacted with but cannot actually change the plan.
   
-  A better design for this page would clearly state when the page is usable and when it is not. If it was going to display outdated information, it would include some kind of message that the information may not be exactly current. Otherwise, it would display accurate, current information. 
-  
   Additionally, the overall design of the page is lackluster and looks very retro. This can be stylish but there is a lot of blank space on the page and many headings and labels are spaced awkwardly in relation to the elements that they correspond to. The menus at the top are also very small and are fairly confusingly named (e.g. "Self Service", "Campus Life"). The menu along the top of the page is shown below. Note that the Williams logo in the top left corner is not a functional link to anything.
   
 ![Bad Design (PeopleSoft menu)](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/Screen%20Shot%202018-09-10%20at%208.47.17%20PM.png)
@@ -37,4 +35,4 @@ tags: [bad,design,bad design,HCI]
   
 ![Bad Design (personalize and new window)](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/Screen%20Shot%202018-09-10%20at%208.47.11%20PM.png)  
   
-  Another way to improve this page would be to liven up the aesthetic design and fill more of the space with useful links and information.
+  A better design for this page would clearly state when the page is usable and when it is not. If it was going to display outdated information, it would include some kind of message that the information may not be exactly current. Otherwise, it would display accurate, current information. Another way to improve this page would be to liven up the aesthetic design and fill more of the space with useful links and information.
