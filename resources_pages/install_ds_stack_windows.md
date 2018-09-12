@@ -51,7 +51,7 @@ Go to https://git-scm.com/download/win and a download should automatically start
 
 After installation, test if you were successful by opening the Git Bash program (if you followed the install instructions above, you should now have an icon on your Desktop). Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash program:
 
-![](imgs/gitbash.png)
+![](/resources_pages/imgs/gitbash.png)
 
 ## Python
 
@@ -61,7 +61,7 @@ Head to https://www.anaconda.com/download/#windows and download the Anaconda ver
   - On the **Advanced Installation Options** page, check both boxes (see image below)
   - For all other pages, use the default options
 
-![](imgs/anaconda_windows.png)
+![](/resources_pages/imgs/anaconda_windows.png)
 
 After installation, open Command Prompt (select the Start button, type cmd, and click Command Prompt from the list) and type the following to ask for the version:
 ```
@@ -83,7 +83,7 @@ jupyter notebook
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
 
-![](imgs/jupyter.png)
+![](/resources_pages/imgs/jupyter.png)
 
 
 If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in the Command Prompt follows:
@@ -104,14 +104,14 @@ Chose and download the Windows version of RStudio from https://www.rstudio.com/p
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
-![](imgs/RStudio.png)
+![](/resources_pages/imgs/RStudio.png)
 
 #### Rtools
 Windows users will also need to install Rtools, which will allow you to use external libraries. Go to http://cran.r-project.org/bin/windows/Rtools/ and download the latest version (e.g., Rtools35.exe). After the download has finished, run the installer selecting the following options:
   - On the **Select Additional Tasks** page, check the Add rtools to system PATH option (see image below)
   - For all other pages, use the default options
 
-![](imgs/Rtools.png)
+![](/resources_pages/imgs/Rtools.png)
 
 To see if you were successful, open RStudio and type ```install.packages("xtable", type="source")``` into the console panel. If this install command runs successfully, Rtools should be installed!
 
@@ -121,17 +121,12 @@ To see if you were successful, open RStudio and type ```install.packages("xtable
 Open RStudio and type the following commands into the console panel:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'), type = "binary")
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
 devtools::install_github('IRkernel/IRkernel')
+IRkernel::installspec()
 ```
 
-Next, open terminal and type the following:
-
-```
-R -e "IRkernel::installspec()"
-```
-
-To see if you were successful, try running Jupyter Notebook and seeing if you have working R kernel. To launch the Jupyter type the following in the terminal:
+To see if you were successful, try running Jupyter Notebook and seeing if you have working R kernel. To launch the Jupyter type the following in the Windows Command prompt:
 
 ```
 jupyter notebook
@@ -139,15 +134,15 @@ jupyter notebook
 
 A browser should have launched and you should see a page that looks like the screenshot below. Now click on "New" and then "R" (circled in red on the screenshot below) to launch an Jupyter notebook with an R kernel.
 
-![](imgs/IR_kernel_1.png)
+![](/resources_pages/imgs/IR_kernel_1.png)
 
 A notebook is using the R kernel if you see R in the right-hand side of the notebook (circled in red on the screenshot below).
 
-![](imgs/IR_kernel_2.png)
+![](/resources_pages/imgs/IR_kernel_2.png)
 
 Sometimes a kernel loads, but doesn't work if installation was not done correctly. To test whether your installation was done correctly now type `(x <- 5)` in the code cell and click on the run button to run the cell. If your R kernel works you should see the number 5 printed below the cell.
 
-![](imgs/IR_kernel_3.png)
+![](/resources_pages/imgs/IR_kernel_3.png)
 
 #### Rscript
 
@@ -156,13 +151,13 @@ To be able to call R scripts from the CMD or Git Bash you need to be able to exe
 - Hit the windows key to get to the windows search bar and type: `edit environ`
 - This should bring up a menu item that will take you to where you can edit the Environment Variables. It should look something like this:
 
-![](imgs/env1.png)
+![](/resources_pages/imgs/env1.png)
   
 - Double click on the "Path" entry from the top box. This should bring you to a new window titled "Edit Enviroment Variables". 
 
 - Here, click on an empty line and then click **Browse**. This will open a dialogue box within which you can navigate to the folder where Rscript is installed (usually `C:\Program Files\R\R-3.5.1\bin`) and click **OK**. Close all remaining windows by clicking **OK**.
 
-![](imgs/env2.png)
+![](/resources_pages/imgs/env2.png)
 
 After following the instructions above, in Command Prompt type the following to ask for the version:
 ``` 
