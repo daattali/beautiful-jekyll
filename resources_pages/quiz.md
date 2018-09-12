@@ -16,7 +16,7 @@ In light of the purpose above, quizzes are intended to be less difficult than th
 ### Format
 Quizzes will be in the same format as the labs (electronic, accessible via GitHub and submitted via GitHub) but will be performed within a defined time period (30 minutes) and will be supervised by MDS instructional staff. Quizzes will be graded using the same rubrics as labs. Quiz questions may be reworked versions of lab questions or similar material.
 
-Unless otherwise specified, **quizzes will be open-book in regards to offline documentation only** (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:
+Unless otherwise specified, **quizzes will be closed-book** except for offline documentation only (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:
 
   - **not** communicate with other students or anyone else
   - **not** use the internet to solve questions on the quiz
