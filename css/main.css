@@ -714,6 +714,10 @@ td.gutter {
   margin-bottom: 30px;
 }
 
+#social-share-section svg {
+  top: 5px;
+}
+
 /* --- Notification boxes --- */
 .box-note, .box-warning, .box-error {
   padding: 15px 15px 15px 10px;
