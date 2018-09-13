@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: VMware Tools 10.3.2 - and AppDefense
 ---
 Just a few days ago [I wrote about VMware Tools 10.3.0](http://www.vxav.fr/2018-09-07-vmware-tools-10-3-0-abort-mission/) that were recalled due to an issue with the VMXNET3 network driver for Windows. 
