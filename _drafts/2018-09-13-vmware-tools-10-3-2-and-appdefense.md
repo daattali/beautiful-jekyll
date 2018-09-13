@@ -34,4 +34,10 @@ It is only supported on ESXi 6.5 for the following OSes:
 - Windows 2012 R2
 - Windows 2016
 
-In case you are wondering what AppDefense, it is a security service aimed at protecting applications running in virtualized environments. It embeds threat detection and response into the virtualization layer on which applications and data live. 
+![10.3.0-appdefense.jpg]({{site.baseurl}}/img/10.3.0-appdefense.jpg)
+
+In case you are wondering what AppDefense, it is a security service aimed at protecting applications running in virtualized environments. It embeds threat detection and response into the virtualization layer on which applications and data live.
+
+> From inside the vSphere hypervisor, AppDefense has an authoritative understanding of how data center endpoints are meant to behave and is the first to know when changes are made. When a threat is detected, AppDefense can trigger vSphere and VMware NSX® to orchestrate the correct response to the threat, without the need for manual intervention. It can Block process communication, Snapshot an endpoint for forensic analysis, Suspend an endpoint, Shut down an endpoint. The first thing that most malware variants do when they reach an endpoint is disable antivirus and other agent-based endpoint security solutions. The hypervisor provides a protected location from which AppDefense can operate, ensuring that even if an endpoint is compromised AppDefense itself is protected.
+
+Basically AppDefense monitors applications against their intended state for what they are supposed to do. If a change in behaviour of an application happen, AppDefense will pick it up and raise an alarm or responds automatically to it.
