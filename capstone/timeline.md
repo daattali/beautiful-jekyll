@@ -16,12 +16,12 @@ The **approximate** timeline is below, followed by additional detail on each eve
 | [Students rate proposals](#students-rate-proposals) | January 10, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
 | [Partners accept invitations](#partners-accept-invitations) | January 30, 2019  |
-| [Partner presentations](#partner-presentations)       | February 7 - March 15, 2019 |
+| [Capstone fair](#capstone-fair)       | February 2019 (date TBD) |
+| [Students rate the projects](#students-rate-the-projects)  | late February, 2019 |
 | [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2019  |
-| [Students rate the projects](#students-rate-the-projects)  | March 15 - March 20, 2019 |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2019 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | April 1, 2019  |
-| [Kickoff meetings](#kickoff-meetings)    | April 10 - April 20, 2019 |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 15, 2019 |
+| [Students are assigned to projects](#students-are-assigned-to-projects) | March 15, 2019  |
+| [Kickoff meetings](#kickoff-meetings)    | April 1 - April 15, 2019 |
 | [Phase 1: student proposals](#student-proposals) |  May 5, 2019 |
 | [Phase 2: project development](#project-development-stage) | May 5 - June 20, 2019   |
 | [Student presentations](#project-presentations) | June 15 - June 25, 2019 |
@@ -44,26 +44,28 @@ The MDS leadership team will select proposals based primarily on student interes
 
 #### Partners accept invitations
 
-The successful capstone partners accept the offers, and correspond with MDS administration to schedule a presentation to give at UBC.
+The successful capstone partners accept the offers, and confirm their attendance at the capstone fair.
 
-#### Partner presentations
+#### Capstone fair
 
-We require that the capstone partners give a 30-minute presentation (allowing for 10-15 minutes of questions) to the students at the UBC Vancouver campus.
+Capstone partners must attend the Capstone Fair, to be held in February 2019 (date TBD), to meet with the students and answer any questions they may have. Detailed information will be emailed to each capstone partner.
+
 
 #### Partners provide legal documents and declare conflicts of interest
 
 Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners must provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
+
+
+#### Students rate the projects
+
+After the presentations, the students assign a final rating to the projects.
+
 
 #### Partners provide data
 
 Before a project is accepted, the partner must provide MDS with a demonstration or written (email) declaration that the data has already been collected and prepared, and exists in its entirety (in the form specified in the proposal), and is ready to be shared with the students.
 
 Partners should feel free to ask us for our standard agreement at any point in the selection procedure.
-
-
-#### Students rate the projects
-
-After the presentations, the students assign a final rating to the projects.
 
 #### Students are assigned to projects
 
