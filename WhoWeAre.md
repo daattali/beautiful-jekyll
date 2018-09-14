@@ -4,6 +4,8 @@ We welcome new members anytime - see our "How to Join" Page for information on h
 
 Distribution of participants by country:
 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1gteeKA8xna4mqtL8l6d2SxEm14T6CLzL2uY6QvJxzBh75R069UyFtHdK6I5oPUWohyEL_mN5iHur/pubchart?oid=166604481&amp;format=interactive"></iframe>
+
 Distribution of participants by career stage:
 
 Distribution of participants by career stage:
