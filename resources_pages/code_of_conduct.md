@@ -1,4 +1,9 @@
-# MDS Leadership Code of Conduct
+---
+layout: page
+title: Code of Conduct
+---
+
+## MDS Leadership Code of Conduct
 
 We include this code of conduct because we want to treat students respectfully. 
 
