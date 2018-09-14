@@ -14,6 +14,7 @@ subtitle: For MDS students and beyond
 #### For current MDS students
 
 - [MDS policies and regulations](/policies/)
+- [MDS code of conduct](/code_of_conduct/)
 - [Course and lab repositories](/resources_pages/lab_submission)
 - [General lab instructions](/resources_pages/general_lab_instructions)
 - [Slack guidelines](/resources_pages/slack)
