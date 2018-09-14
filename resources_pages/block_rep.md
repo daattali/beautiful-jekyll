@@ -1,4 +1,9 @@
-# Block Representative Guidelines
+---
+layout: page
+title: Block reps
+---
+
+## MDS Block representatives
 
 Every block, a student volunteers to represent their peers, acting as a liaison between students and MDS leadership (we/our/ours). This allows us to see how the block is going, allowing us to make changes if need be. 
 
