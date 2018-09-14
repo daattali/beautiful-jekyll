@@ -51,14 +51,14 @@ The successful capstone partners accept the offers, and confirm their attendance
 Capstone partners must attend the Capstone Fair, to be held in February 2019 (date TBD), to meet with the students and answer any questions they may have. Detailed information will be emailed to each capstone partner.
 
 
+#### Students rate the projects
+
+After the capstone fair, the students assign a final rating to the projects.
+
+
 #### Partners provide legal documents and declare conflicts of interest
 
 Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners must provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
-
-
-#### Students rate the projects
-
-After the presentations, the students assign a final rating to the projects.
 
 
 #### Partners provide data
