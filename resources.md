@@ -21,6 +21,7 @@ subtitle: For MDS students and beyond
 - [MDS quizzes](/resources_pages/quiz)
 - [Career and professional development](/resources_pages/CareerandIndustryResources)
 - [Resources offered by UBC](/resources_pages/UBC_resources)
+- [Block rep guidelines](/resources_pages/block_rep)
 
 #### Possibly of general interest
 
