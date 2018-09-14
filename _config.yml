@@ -24,7 +24,10 @@ description: A research coordinated network funded by the National Science Found
 # List of links in the navigation bar
 navbar-links:
   How to join: "howtojoin"
-  Steering Committee: "steering"
+  Membership
+    - Who we are: "WhoWeAre"
+    - Members: "Members"
+    - Steering Committee: "steering"
   Activities: 
     - 2018 Coordinated readings: "2018_readings"
     - 2019 Synthesis Workshop: "2019-workshop"
