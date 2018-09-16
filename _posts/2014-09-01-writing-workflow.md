@@ -85,6 +85,4 @@ I have read each of these books recently and have enjoyed them immensely.
 
 <hr />
 
-<strong>More?</strong> Subscribe to my “<a href="https://tinyletter.com/frankc">Habits, Design, and Learning</a>” mailing list by clicking <a href="https://tinyletter.com/frankc">here</a>!
-
 <img style="width:0;height:0;" src="https://ga-beacon.appspot.com/UA-36961797-1/sheets/2014-aug-writing-workflow" alt="" />

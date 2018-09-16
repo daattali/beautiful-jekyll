@@ -93,7 +93,4 @@ Email me! hello [at] frankc.net
   <li>Evernote Smile Graph (TechCrunch) <a href="http://j.mp/1xuKiuG">http://j.mp/1xuKiuG</a></li>
 </ul>
 
-<hr />
-
-
 <figure><img src="https://ga-beacon.appspot.com/UA-36961797-1/sheets/2014-july-design-for-habit" alt="" width="0" height="0" /></figure>

@@ -25,6 +25,15 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
+.h4, h4 {
+    font-size: 20px !important;
+    font-weight: 300;
+}
+.h5, h5 {
+    font-size: 16px !important;
+    font-weight: 300;
+}
+
 a {
   color: {{ site.link-col }};
 }
@@ -376,7 +385,8 @@ footer .theme-by {
   width: 192px;
 }
 .post-preview .post-read-more {
-  font-weight: 800;
+  font-weight: 400;
+  color:#0085A1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -523,10 +533,10 @@ footer .theme-by {
     padding: 150px 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;

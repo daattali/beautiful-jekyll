@@ -3,7 +3,7 @@ layout: page
 title: Frank Chen
 subtitle: Explorer, Software Architect, Behavior Designer
 bigimg:
-  - 'img/background-lines.png'
+  - 'img/background-lines-light.png'
 use-site-title: true
 ---
 
@@ -21,78 +21,48 @@ I love travel, the outdoors, running, and gymnastics. Ask me about nutrition (e.
 <hr>
 <p class="spacer"></p>
 
-<h1>articles</h1>
+<h2>selected articles</h2>
+<!-- TEMPLATE BELOW… -->
 <div class="posts-list">
-  {% for post in paginator.posts %}
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	   <h3 class="post-title">{{ post.title }}</h2>
+    <a href="/personal-operating-system">
+      <h4 class="post-title">Design your Personal Operating System — Habits</h4>
     </a>
-	  {% if post.subtitle %}
-	  <h4 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-
-    <p class="text-muted">
-      Drafted {{ post.date | date: "%B %-d, %Y" }}.
-      {% if page.modified-date %}
-        Updated {{ page.modified-date}}.
-      {% endif %}
-    </p>
-
     <div class="post-entry-container">
-      {% if post.image %}
       <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
+        <a href="/personal-operating-system">
+          <img style="height: 100px;" src="https://farm3.staticflickr.com/2182/2328737233_9cd46fe0f2_b.jpg">
         </a>
       </div>
-      {% endif %}
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+        Habits are behaviors you do without thought. Your default. Your routine. Habits become the operating system you live your life through.
+        <a href="/personal-operating-system" class="post-read-more">[Read&nbsp;More]</a>
       </div>
     </div>
-
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
+  </article>
+  <article class="post-preview">
+    <a href="/beginners-guide-web-dev">
+      <h4 class="post-title">The Ultimate Beginners Guide To Web Development</h4>
+        <h5>Lessons from the Web Lead of an Amazon Web Service</h5>
+    </a>
+    <div class="post-entry-container">
+      <div class="post-image">
+        <a href="/beginners-guide-web-dev">
+          <img style="height: 140px;"src="https://github.com/fxchen/frankc/raw/master/2014%20October/selfie.jpg">
+        </a>
+      </div>
+      <div class="post-entry">
+        This guide is an amalgamation of emails I have sent friends and things I have picked up in my journey to learn web development
+        <a href="/beginners-guide-web-dev" class="post-read-more">[Read&nbsp;More]</a>
+      </div>
     </div>
-    {% endif %}
-
-   </article>
-  {% endfor %}
+  </article>
 </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+<!-- TEMPLATE (change h2 → h4; remove Post Date; Modify style manually for img height)
+-->
 
-
-
-<!-- "Featured Projects"
+<!-- UNUSED "Featured Projects"
 <div class="row text-center">
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
