@@ -1,7 +1,7 @@
 ---
 layout: page
-title: writing
-subtitle: Recent posts
+title: Recent Articles
+<!-- subtitle: recent writing -->
 show-avatar : true
 ---
 
@@ -20,6 +20,9 @@ show-avatar : true
 
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
+      {% if post.modified-date %}
+        . Updated {{ post.modified-date}}.
+      {% endif %}
     </p>
 
     <div class="post-entry-container">
