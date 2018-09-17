@@ -10,9 +10,9 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 ## Attendance
 
-Regular attendance is expected of students in all their classes (including lectures, laboratories, tutorials, seminars, etc.). Students who are unavoidably absent because of illness or other reasons should inform both the instructor(s) of the course(s) and a Teaching Fellow as soon as possible, preferably, prior to the start of the class/lab.
+Regular attendance is expected of students in all their classes (including lectures, laboratories, tutorials, seminars, etc.). Students who are unavoidably absent because of illness or other reasons should inform the instructor(s) of the course(s) as soon as possible, preferably, prior to the start of the class/lab.
 
-Students who miss a quiz or assignment, need to provide a doctor's note and schedule a make-up quiz with a Teaching Fellow as soon as possible. Failing to present a doctor's note may result in a failing grade.
+Students who miss a quiz or assignment, need to provide a doctor's note and schedule a make-up quiz with a Lab Instructor as soon as possible. Failing to present a doctor's note may result in a failing grade.
 
 Students who miss more than 3 days of classes/labs in a row need to provide documentation in the form of a doctor's note or written request for leave to the MDS Leadership Team. Failing to present a doctor's note or written request may result in a failing grade. The Leadership Team will contact the student with an action plan to make up any missed quizzes or assignments.
 
@@ -81,7 +81,7 @@ Plagiarism, which is intellectual theft, occurs where an individual submits or p
 - copying from sources without citing them
 - copying verbatim (word-for-word) from source and citing, but failing to make it explicit that this is a quotation (quotations should be used only rarely, if at all)
 
-Plagiarism will not be tolerated in the MDS program and may result in dismissal from the program. Students are responsible for ensuring that any work submitted does not constitute plagiarism. Students who are in any doubt as to what constitutes plagiarism should consult their Instructor or Teaching Fellow before handing in any assignments.
+Plagiarism will not be tolerated in the MDS program and may result in dismissal from the program. Students are responsible for ensuring that any work submitted does not constitute plagiarism. Students who are in any doubt as to what constitutes plagiarism should consult their Instructor before handing in any assignments.
 
 For more information see the [UBC Academic Misconduct policies](http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959).
 
