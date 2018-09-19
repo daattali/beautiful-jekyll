@@ -4,7 +4,7 @@ title: “Why Your App Got Deleted…” Behavioral Antipatterns for Product Des
 subtitle: Many apps get deleted. How can you make sure your app doesn’t get deleted? This essay shares patterns and antipatterns for product design
 <!-- permalink: behavioral-antipatterns-product-design.md -->
 <!-- image: /img/posts/meditation-goenka-thumb.jpg -->
-modified-date: May 23, 2018
+modified-date: Sep 16, 2018
 ---
 Notice how many the apps on your phone don’t get used.
 
