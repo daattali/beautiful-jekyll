@@ -38,6 +38,8 @@ When grading your work, TAs will enter letter grades. We will then map them to p
 
 Note: to get above 95% in a course you need to earn bonus points by doing the questions marked "optional". 
 
+Note: to complicate things slightly, we actually find it useful to also have C- and D grades available when grading your work. Thus, the conversion from letter grades to numbers actually happens through the undergrad scheme, which is the first table at the [same calendar link](http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0). However, we did not want to paste that table here and cause confusion, as it's really the table above, for Master's students, that matters for you. In particular, because of the issues around failing and C/C+ grades described below. 
+
 #### Re-grading
 
 If you have concerns about the way your work was graded, please contact the TA who graded it _within one week of having the grade returned to you_. After this one-week window, we may deny your request for re-evaluation. Also, please keep in mind that your grade may go up or down as a result of re-grading.
