@@ -97,6 +97,17 @@ img {
   max-width: 100%;
 }
 
+.blog-post img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+}
+
+.blog-post .text-muted {
+  text-align: center
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
@@ -708,6 +719,9 @@ td.gutter {
   padding-top: 3px;
 }
 
+code.highlighter-rouge {
+  font-size: 75%;
+}
 /* --- Social media sharing section --- */
 
 #social-share-section {
