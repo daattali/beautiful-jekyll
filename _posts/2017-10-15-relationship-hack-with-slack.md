@@ -4,6 +4,8 @@ title: Relationship Hack with Slack
 subtitle: A Six Month Experiment
 permalink: relationship-hack-with-slack
 image: /img-posts/slack-0-icon.png
+image-height: 100px
+image-width: 100px
 modified-date: Sep 16, 2018
 ---
 

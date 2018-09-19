@@ -4,6 +4,7 @@ title: How to Design for Habit
 subtitle: The Secret to Making Great Products
 permalink: behavioral-antipatterns-product-design
 image: https://raw.githubusercontent.com/fxchen/frankc/master/2014%20July/spiral.jpg
+image-height: 160px
 modified-date: Sep 16, 2018
 ---
 Let’s say you created a product. A product that solves a common specific problem for many people. Yet, after a sign-up or an application download for your solution, people continue to have the same problem and <em>do not use your product</em>.

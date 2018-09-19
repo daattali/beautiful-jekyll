@@ -231,6 +231,18 @@ prose:
           help: "Add a thumbnail image to your post."
           placeholder: "Thumbnail"
           alterable: true
+      - name: "image-height"
+        field:
+          element: "text"
+          label: "Image height"
+          help: "Constrain the thumbnail image height."
+          alterable: true
+      - name: "image-width"
+        field:
+          element: "text"
+          label: "Image width"
+          help: "Constrain the thumbnail image width."
+          alterable: true
       - name: "published"
         field:
           element: "checkbox"
