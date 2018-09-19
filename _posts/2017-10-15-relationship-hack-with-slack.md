@@ -55,7 +55,7 @@ To kick it off, we renamed the auto-generated `#general` channel to `#misc` and 
 - `#sunday-dinner` for planning dinners with friends
 - `#travel` for planning travel (we've been using TripIt for organizing boarding passes, AirBNB/hotel and car reservations, etc.).
 
-Our communications were a bit chaotic at first because we posted a lot to #misc. Since then, we've been gradually adding more channels for concrete topics (`#cooking`, `#ops`, etc).
+Our communications were a bit chaotic at first because we posted a lot to `#misc`. Since then, we've been gradually adding more channels for concrete topics (`#cooking`, `#ops`, etc).
 
 ## Creating A Consistent Shared State
 
@@ -82,7 +82,7 @@ We could also say "Alexa trigger Claude food" that would notify both of us in Sl
 **Deep dive!** Before dating Haley, I had not lived with a cat before. Then, Claude moved in in June. Claude is a unique creature who loves chasing imaginary bunnies, watching TV, and using his paws to open doors.
 
 ![Claude][image-slack-5-claude]
-<p class="text-muted">This looks like Claude is saying "please give me a belly rub", but he's really saying "please touch my belly so that I can claw your hand until it's burger".So… We created a channel for #claude the cat. (That's him in the photo.)</p>
+<p class="text-muted">This looks like Claude is saying "please give me a belly rub", but he's really saying "please touch my belly so that I can claw your hand until it's burger".So… We created a channel for `#claude` the cat. (That's him in the photo.)</p>
  
 `#claude` is filled with:
 
@@ -124,7 +124,7 @@ Slack has become an external memory and trigger for us.
 
 Our relationship feels new and interesting as we discover ourselves and each other. I feel delighted when reading the threads we shared on cat / dog memes, news articles, books, places to explore, etc.
  
-I make about 80% of the posts in #home-projects, while Haley makes about 80% of the posts in #cooking. We both found this heteronormativity interesting - these are two areas we separately do and jointly enjoy. I love building home projects and she loves baking desserts. We found this sharing to be an authentic, non-invasive way to share the details of how some experience is put together, whether it's a wiring diagram for our Alexa-enabled three-switch lights or a recipe for spinach goat cheese quiche.
+I make about 80% of the posts in `#home-projects`, while Haley makes about 80% of the posts in `#cooking`. We both found this heteronormativity interesting - these are two areas we ***separately* do** and ***jointly* enjoy**. I love building home projects and she loves baking desserts. We found this sharing to be an authentic, non-invasive way to share the details of how some experience is put together, whether it's a wiring diagram for our Alexa-enabled three-switch lights or a recipe for spinach goat cheese quiche.
 
 
 ---
