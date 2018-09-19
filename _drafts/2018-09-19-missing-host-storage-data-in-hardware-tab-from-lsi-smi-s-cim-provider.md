@@ -28,5 +28,7 @@ esxcli software vib list | grep lsi
 So what we need to do now is to download the CIM provider vib and install it on the host. My host is equipped with LSI cards so your mileage may vary here. However if you are using it, follow these instructions:
 
 1. Navigate to the [Avago (LSI) Documents & Downloads site](https://www.broadcom.com/support/download-search).
-2. Select _RAID controllers_ for Product Family and _Management Software and Tools_ for Asset Type.
+2. Select _RAID controllers_ for Product Family and _Management Software and Tools_ for Asset Type and click _Search_.
+3. Expand the view and find the version that works for you, then click on its name to download it.
+4. 
 
