@@ -23,12 +23,12 @@ Our solution is to make the reading room (shown below), an underutilized space t
 
 (Source: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwidmqCglcvdAhUNVd8KHU4ED5IQjhx6BAgBEAM&url=https%3A%2F%2Fwcma.williams.edu%2Freading-room%2F&psig=AOvVaw088mVqmIMt0B7ElP0He2DT&ust=1537587315483392)
 
-This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
+This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from WCMA's collection throughout a virtual 3-D rendering of the museum's floorplan. 
 
 ![The Sims](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/TS4-2015-03-01-12-56-10-89.jpg)
 
 (Source: http://simscommunity.info/2015/03/04/sims-4-interior-design-guide/)
 
-The curation application will serve simultaneously as a museum map, a catalogue of the collection, and a place for interactions between visitors who find connections with specific works. The curation application will also be available for use on WCMA’s website.
+This application allows visitors of all kinds, even visitors to WCMA’s website, to engage with the collection in a personal way and to take a piece of it with them in the form of a saved virtual exhibition that will be tied to their personal account made with the museum website. Integrating the application into touch displays in the library will allow visitors to take inspiration from their museum visit without being distracted while viewing the exhibitions themselves. The social media aspect of the curation application, where visitors comment on works in the collection and other people’s saved exhibitions, encourages a sense of community based around engagement with the collection while also educating the public on the histories of these storied objects.
 
-This application allows visitors of all kinds, even visitors to WCMA’s website, to engage with the collection in a personal way and to take a piece of it with them in the form of a saved virtual exhibition that will be tied to their personal account made with the museum website. Integrating the application into touch displays in the library will allow visitors to take inspiration from their museum visit without being distracted while viewing the actual exhibitions themselves. The social media aspect of the curation application, where visitors comment on works in the collection and other people’s saved exhibitions, encourages a sense of community based around engagement with the collection.
+The curation application will serve simultaneously as a museum map, a catalogue of the collection, and a place for interactions between visitors who find connections with specific works. 
