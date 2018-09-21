@@ -61,7 +61,7 @@ What a capstone project is _not_:
 
 ## FAQ
 
-Here are answers to some frequently asked questions regarding our capstone course. Don't see the answer to your question here, or elsewhere on the capstone course website? Please contact us at `capstone-mds@science.ubc.ca` -- maybe we'll add your question to this FAQ page!
+Here are answers to some frequently asked questions regarding our capstone course. Don't see the answer to your question here, or elsewhere on the capstone course website? Please contact Milad Maymay at `maymay@science.ubc.ca`.
 
 #### 1. Is there a fee to participate as a partner? Do students get paid?
 
@@ -75,30 +75,26 @@ We have workspaces available for the students on the UBC Vancouver campus, and e
 
 See our [timeline](/capstone/timeline).
 
-#### 4. Is there flexibility in the project after it is proposed?
-
-Within reason. Please contact us at `capstone-mds@science.ubc.ca` if you have concerns.
-
-#### 5. Can an organization submit more than one project proposal?
+#### 4. Can an organization submit more than one project proposal?
 
 Yes, assuming you are willing and able to supervise multiple capstone projects simultaneously, giving each one the attention it deserves. In this situation it's possible that we will give priority to only one of the projects, so as to give other candidate partners a chance at participating. Also, the projects should be sufficiently different so that there is little overlap, and partners should be willing to put in time to work with each student group.
 
-#### 6. Will the students sign a non-disclosure agreement?
+#### 5. Will the students sign a non-disclosure agreement?
 
-We offer a standard NDA used by UBC. Contact us at `capstone-mds@science.ubc.ca` for more information.
+Yes, this is possible. The preferred option is to use UBC's standard NDA template.
 
-#### 7. Can the proposed project be "solved"?
+#### 6. Can the proposed project be "solved"?
 
 We ask that our students try new approaches to a problem, and not replicate our partners' work. However, we expect our capstone projects to be open-ended, having various approaches for addressing a problem, as opposed to having a single solution. We would encourage our students to either build on our partners' work, or address the problem from a different angle.
 
-#### 8. Do partners need to know data science to participate? Do partners need to be able to suggest approaches for the students to take in addressing the proposed problem?
+#### 7. Do partners need to know data science to participate? Do partners need to be able to suggest approaches for the students to take in addressing the proposed problem?
 
 No, this is not a requirement. In fact, a major part of our capstone course is for students to decide on approaches themselves for addressing the problem using data science. We do not encourage our students to simply apply some requested data science techniques to the problem. However, we _do_ encourage our partners to share their ideas if they have them!
 
-#### 9. Does the partner organization need to be located in Vancouver?
+#### 8. Does the partner organization need to be located in Vancouver?
 
 We welcome interest from any organization. However, preference will be given to organizations located in Canada, and especially in the Vancouver area. 
 
-#### 10. I participated as a capstone partner in a previous year. Can I participate again?
+#### 9. I participated as a capstone partner in a previous year. Can I participate again?
 
 Absolutely! We will be happy to work with you. Please submit a proposal.
