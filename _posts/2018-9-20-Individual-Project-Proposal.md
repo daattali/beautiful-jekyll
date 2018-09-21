@@ -17,7 +17,7 @@ This problem actually arises from deeper analysis of WCMA’s greatest strengths
   
 ## SOLUTION  
   
-Our solution is to make the reading room (shown below), an underutilized space that seems to perplex visitors as they meander through the galleries upstairs, an interactive space where visitors can choose works from the collection to curate their own virtual exhibition. This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
+Our solution is to make the reading room (shown below), an underutilized space that seems to perplex visitors as they meander through the galleries upstairs, into an interactive space where visitors can choose works from the collection to curate their own virtual exhibition. This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
 
 ![Reading Room](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/basquiat-2000x1329.jpg)
 
