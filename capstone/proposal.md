@@ -7,20 +7,13 @@ subtitle: For MDS Capstone Projects
 
 The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
 
-Your proposal should be **1-2 pages, submitted as a pdf file** to `capstone-mds@science.ubc.ca`.
+**Proposals should be submitted through our proposal form [here](https://docs.google.com/forms/d/e/1FAIpQLScWR72aF9RBSAyAP8UzGn89yv73dU_0y91T7joUFodMU05Hvg/viewform?usp=sf_link).**
 
-In addition, please provide a one-sentence description of the project for us to put next to your project name for the students to see. You can simply indicate this in the email you send upon submission.
-
-Your proposal should contain the following information:
+The instructions for filling out the form are below:
 
 ### About your organization
 
-Briefly introduce your organization. Also, please address the following questions:
-
-- Why might the MDS students be interested in partnering with this organization? 
-- Who will be the main point(s) of contact for students working on the project?
-- Would it be possible for students to work on location at your organization for some or all of the time?
-- Do you anticipate having job opening(s) for data scientists after the project?
+Briefly introduce your organization
 
 ### Brief description of the problem/question
 
