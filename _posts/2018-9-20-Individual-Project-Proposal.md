@@ -17,14 +17,13 @@ This problem actually arises from deeper analysis of WCMA’s greatest strengths
   
 ## SOLUTION  
   
-Our solution is to make the reading room (shown below), an underutilized space that seems to perplex visitors as they meander through the galleries upstairs, into an interactive space where visitors can choose works from the collection to curate their own virtual exhibition. This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
+Our solution is to make the reading room (shown below), an underutilized space that seems to perplex visitors as they meander through the galleries upstairs, into an interactive space where visitors can choose works from the collection to curate their own virtual exhibition. 
 
 ![Reading Room](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/basquiat-2000x1329.jpg)
 
 (Source: https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwidmqCglcvdAhUNVd8KHU4ED5IQjhx6BAgBEAM&url=https%3A%2F%2Fwcma.williams.edu%2Freading-room%2F&psig=AOvVaw088mVqmIMt0B7ElP0He2DT&ust=1537587315483392)
 
-Our solution is to make the library, an underutilized space that seems to perplex visitors as they meander through the galleries upstairs, an interactive space where visitors can choose works from the collection to curate their own virtual exhibition. This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
-Our solution is to make the library, an underutilized space that seems to perplex visitors as they meander through the galleries upstairs, an interactive space where visitors can choose works from the collection to curate their own virtual exhibition. This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
+This will be done through the installation of a large touch screen displaying an online application, inspired by the interior design aspect of the video game The Sims (shown below), where visitors can click and drag 3-D renderings of works from the collection throughout a virtual version of WCMA. 
 
 ![The Sims](https://raw.githubusercontent.com/samzgrunebaum/samzgrunebaum.github.io/master/_posts/TS4-2015-03-01-12-56-10-89.jpg)
 
