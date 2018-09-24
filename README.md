@@ -13,8 +13,7 @@ bundle install
 ```
 2. Build:
 ```sh
-bundle exec jekyll build
-bundle exec jekyll serve --watch
+bundle exec jekyll build && bundle exec jekyll serve --watch
 ```
 
 # Default frontmatter
