@@ -38,7 +38,7 @@ The following authors were helpful in helping me cognitively understand the bene
 
 I've added to my current reading list based on recommendations from people at this Goenka workshop. [^2]
 
-[^2]: My current mindfulness reading list, sourced from other members of the workshop: <br>Shunryū Suzuki - Zen Mind, Beginner's Mind. <br>Shantideva - The Way of the Bodhisattva. <br>Robert Wright - Why Buddhism is True.
+[^2]: My current mindfulness reading list, sourced from other members of the workshop: <br>Shunryū Suzuki - [Zen Mind, Beginner's Mind][link-book-zen]. <br>Shantideva - [The Way of the Bodhisattva][link-book-bodhisattva]. <br>Robert Wright - [Why Buddhism is True][link-book-buddhism-true].
 
 ## Workshop content
 
@@ -193,6 +193,10 @@ A friend once said, Your professional development will never surpass your person
 [link-book-sam-harris]: https://www.amazon.com/Waking-Up-Spirituality-Without-Religion/dp/1451636024
 [link-book-dan-harris]: https://www.amazon.com/10-Happier-Self-Help-Actually-Works/dp/0062265431
 [link-book-taft]: https://www.amazon.com/Mindful-Geek-Mindfulness-Meditation-Skeptics-ebook/dp/B0155FWYBW
+
+[link-book-bodhisattva]:https://www.amazon.com/Way-Bodhisattva-Bodhicaryavatara-Shambhala-Classics/dp/1590303881
+[link-book-buddhism-true]: https://www.amazon.com/Why-Buddhism-True-Philosophy-Enlightenment/dp/1439195463/
+[link-book-zen]: https://www.amazon.com/Zen-Mind-Beginners-Informal-Meditation/dp/1590308492
 
 [image-meditation-goenka]: /img-posts/meditation-0-goenka.jpg
 [image-fb-question]: /img-posts/meditation-1-fb-question.png
