@@ -9,14 +9,13 @@ show-avatar : true
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-      <h2 class="post-title">{{ post.title }}</h2>
-
-      {% if post.subtitle %}
-      <h3 class="post-subtitle">
-        {{ post.subtitle }}
-      </h3>
-      {% endif %}
+     <h3 class="post-title">{{ post.title }}</h3>
     </a>
+    {% if post.subtitle %}
+    <h4 class="post-subtitle">
+      {{ post.subtitle }}
+    </h4>
+    {% endif %}
 
     <p class="post-meta">
       Posted on {{ post.date | date: "%B %-d, %Y" }}
@@ -63,7 +62,8 @@ show-avatar : true
   <li class="previous">
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
   </li>
-  {% endif %} {% if paginator.next_page %}
+  {% endif %}
+  {% if paginator.next_page %}
   <li class="next">
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
   </li>
