@@ -6,15 +6,15 @@ permalink: joining-meditation
 image: /img-posts/meditation-0-goenka-thumb.jpg
 ---
 
-I recently joined a 10 day meditation workshop after procrastinating for years. I procrastinated for years despite "knowing" of meditation's benefits. Every one's path to meditation is different. This article is my [meanering] story to deepen my practice and how I came to join a workshop.
+I recently joined a 10 day meditation workshop after procrastinating for years, despite "knowing" of meditation's benefits. Every one's path to meditation is different. This article is my [meanering] story to deepen my practice and how I came to join a workshop.
 
-I am sharing my story so that others can potentially enjoy the same benefit of mindfulness by practicing meditation. I had procrastinated for years (roughly 8 years) before successfully signing up for a workshop and changed my practice. From the short time I have practiced post-workshop, I have noticed differences in myself.
+I am sharing my story so that others can potentially enjoy the same benefit of mindfulness by practicing meditation. I had wanted to join for roughly 8 years before successfully signing up for a workshop. From the short time I have practiced post-workshop, I have noticed differences in myself.
 
-I have seen a change in my relationship with mind, body, and equanimity over the past few months. I feel this is due to the tangible benefits of my current practice using the technique taught by the Vipassana Meditation organization. Vipassana is in the Dhamma tradition and taught by S.N. Goenka. Their [main website][link-vipassana-website] details course content and course philosophy. There are other techniques and organizations that teach them—exploring these are outside the scope of this article. I include some references in a [section](#why) below to read more about the benefits.
+I have seen a change in my relationship with mind, body, and equanimity over the past few months. I feel this is due to the tangible benefits of my current practice using the technique taught by the Vipassana Meditation organization. Vipassana is in the Dhamma tradition and taught by S.N. Goenka. Their [main website][link-vipassana-website] details the ten day course content and philosophy. There are other techniques and organizations that teach mindfulness—exploring these areas are outside the scope of this article. I include some references in a [section](#why) below to read more about the benefits.
 
 I hope this article will help others attend a mindfulness workshop to deepen their own practice by sharing context and concerns I had prior to joining [^1]. I now recommend every man, woman, and child attend a workshop at some point in their lives in order to gain the benefits of meditation and mindfulness. I found it difficult to join for a number of reasons, namely uncertainty and logistics, which I hope to help bridge for you by sharing my story.
 
-First, I'll give an overview of mindfulness, Vipassana then workshop content.
+To start, I'll give an overview of mindfulness, Vipassana followed by workshop content and questions I could not answer prior to joining this workshop first-hand.
 
 [^1]: As part of writing this article to help my "past self from a few months ago", I suspect this will also help my future self to attend a workshop.
 
