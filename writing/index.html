@@ -11,18 +11,12 @@ show-avatar : true
     <a href="{{ post.url | prepend: site.baseurl }}">
      <h3 class="post-title">{{ post.title }}</h3>
     </a>
+
     {% if post.subtitle %}
     <h4 class="post-subtitle">
       {{ post.subtitle }}
     </h4>
     {% endif %}
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-      {% if post.modified-date %}
-        . Updated {{ post.modified-date}}.
-      {% endif %}
-    </p>
 
     <div class="post-entry-container">
       {% if post.image %}
@@ -38,6 +32,13 @@ show-avatar : true
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a> {% endif %}
       </div>
     </div>
+
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      {% if post.modified-date %}
+        . Updated {{ post.modified-date}}.
+      {% endif %}
+    </p>
 
     {% if post.tags.size > 0 %}
     <div class="blog-tags">
