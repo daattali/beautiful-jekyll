@@ -3,6 +3,7 @@ layout: post
 title: Docker - Optymalizacja obrazu
 image: /img/docker-post-1.png
 tags: [docker, kontenery, linux, how-to, optymalizacja, czyszczenie]
+published: false
 ---
 
 To jest pierwszy artykuł z seri o Dokerze. Objaśnie w nim jak powinien być zbudowany dobrze zoptymalizowany kontener pod wzgędem objętości.
