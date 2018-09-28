@@ -1,3 +1,8 @@
+---
+layout: page
+title: Demographics of our participants
+---
+   
 We are a global network of marine scientists and evolutionary biologists. You do not need to work in marine systems to join! 
 
 We welcome new members anytime - see our "How to Join" Page for information on how to sign up.
