@@ -28,6 +28,7 @@ Country | Number of members |
 --- | --- |
 USA | 167 |
 Australia | 9 |
+
 Belgium | 2
 Bermuda | 1
 Brazil | 3
