@@ -26,34 +26,34 @@ Below are some demographic information about our participants. The charts are in
 ### Distribution of our members by country (as of Oct. 2018)
 Country | Number of members
 --- | ---
-USA	| 167
-Australia	| 9
-Belgium	2
-Bermuda	1
-Brazil	3
-Canada	6
-Chile	1
-Czech Republic	1
-Denmark	2
-Deutschland	1
-England	1
-Estonia	2
-France	4
-Germany	4
-Hong Kong	2
-India	2
-Iran	4
-Israel	1
-Italy	3
-Japan	1
-Kiel	1
-Mexico	1
-New Zealand	2
-Norway	2
-Saba (Caribbean Netherlands)	1
-South Africa	1
-Spain	2
-Sweden	4
-Switzerland	2
-The Netherlands	1
-UK	7
+USA | 167
+Australia | 9
+Belgium | 2
+Bermuda | 1
+Brazil | 3
+Canada | 6
+Chile | 1
+Czech Republic | 1
+Denmark | 2
+Deutschland | 1
+England | 1
+Estonia | 2
+France | 4
+Germany | 4
+Hong Kong | 2
+India | 2
+Iran | 4
+Israel | 1
+Italy | 3
+Japan | 1
+Kiel | 1
+Mexico | 1
+New Zealand | 2
+Norway | 2
+Saba (Caribbean Netherlands) | 1
+South Africa | 1
+Spain | 2
+Sweden | 4
+Switzerland | 2
+The Netherlands | 1
+UK | 7
