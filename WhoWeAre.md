@@ -23,7 +23,9 @@ Below are some demographic information about our participants. The charts are in
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1gteeKA8xna4mqtL8l6d2SxEm14T6CLzL2uY6QvJxzBh75R069UyFtHdK6I5oPUWohyEL_mN5iHur/pubchart?oid=166604481&amp;format=interactive" width="600" height = "400"></iframe>
 
-### Distribution of our members by country
+### Distribution of our members by country (as of Oct. 2018)
+Country | Number of members
+--- | ---
 USA	| 167
 Australia	| 9
 Belgium	2
