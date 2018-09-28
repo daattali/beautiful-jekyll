@@ -24,7 +24,7 @@ description: A research coordinated network funded by the National Science Found
 # List of links in the navigation bar
 navbar-links:
   How to join: "howtojoin"
-  Membership
+  Membership:
     - Who we are: "WhoWeAre"
     - Members: "Members"
     - Steering Committee: "steering"
