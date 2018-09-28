@@ -9,7 +9,7 @@ We welcome new members anytime - see our "How to Join" Page for information on h
 
 ### Distribution of participants by career stage:
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1gteeKA8xna4mqtL8l6d2SxEm14T6CLzL2uY6QvJxzBh75R069UyFtHdK6I5oPUWohyEL_mN5iHur/pubchart?oid=682714450&amp;format=image" width="800" height = "500"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1gteeKA8xna4mqtL8l6d2SxEm14T6CLzL2uY6QvJxzBh75R069UyFtHdK6I5oPUWohyEL_mN5iHur/pubchart?oid=682714450&amp;format=image" width="700" height = "450"></iframe>
 
 ###  Self-characterization of our participants as how their research program or interests are divided between marine and evolutionary biology:
 
