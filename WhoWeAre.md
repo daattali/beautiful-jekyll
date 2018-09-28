@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Demographics of our participants
+subtitle: Who are we?
 ---
    
-We are a global network of marine scientists and evolutionary biologists. You do not need to work in marine systems to join! 
+We are a global network of marine scientists and evolutionary biologists. You do not need to work in marine systems to join! We welcome new members anytime - see our "How to Join" Page for information on how to sign up.
 
-We welcome new members anytime - see our "How to Join" Page for information on how to sign up.
+Below are some demographic information about our participants. The charts are interactive, so you can learn more by using the mouse to hover above the bars.
 
 ### Distribution of participants by career stage:
 
