@@ -4,7 +4,7 @@ title: Kontakt
 subtitle: Jeśli masz do mnie pytanie to pytaj 
 use-site-title: true
 ---
-
+<meta name="referrer" content="origin" />
 <main class="container">
   <header class="page-header">
     <h1 class="entry-title">Contact</h1>
