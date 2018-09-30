@@ -6,9 +6,7 @@ tags: [docker, kontenery, linux, how-to, optymalizacja, czyszczenie]
 published: false
 ---
 
-To jest pierwszy artykuł z seri o Dokerze. Objaśnie w nim jak powinien być zbudowany dobrze zoptymalizowany kontener pod wzgędem objętości.
-Stosując kilka trików opisanych poniżej można zyskać cenną przestrzeń na dysku, skrócić czas pobierania obrazu. Co pozwala np przyśpieszyc proces upgradu środowiska.
-
+Pierwszy artykół z serii "Docker". Postaram się w nim co nieco opisać sposoby na optymalizacje obrazu Dockera pod względem wielkości. Jest to dość istotny parametr obrazu, bo od niego zalezy szybkość deploy jak i ilość zajętego miejsca w całym klastrze (np. Kubernetesa).
 
 ## Zainstalowałeś to posprzątaj
 
