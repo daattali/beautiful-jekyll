@@ -41,7 +41,7 @@ Po zbudowaniu obraz wygląda następują:
 docker build . -t blog
 docker images blog
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-blog                latest              d21d207746fe        40 seconds ago      729MB
+blog                latest              d21d207746fe        40 seconds ago      801MB
 {% endhighlight %}
 
 Dodajmy czyszczenie obrazu po instalacji pakietów za pomocą apt-get oraz kasujemy nie potrzebne pliki tymczasowe i man oraz dokumentacje.
@@ -69,7 +69,7 @@ Po zbudowaniu obraz wygląda następująco:
 {% highlight bash linenos %}
 docker images blog
 REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
-blog                latest              030a09e675d7        About a minute ago   801MB
+blog                latest              030a09e675d7        About a minute ago   729MB
 {% endhighlight %}
 
 Jak widać udało nam się zaoszczędzić trochę miejsca. Niby nic, ale w przypadku gdy doinstalujemy dużo zalezności potrafi to być gigantyczna przestrzeń.
@@ -92,7 +92,7 @@ A tak wygląda obraz po tym zabiegu:
 {% highlight bash linenos %}
 docker images blog
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-blog                latest              d632fd938793        4 seconds ago       782MB
+blog                latest              d632fd938793        4 seconds ago       708MB
 {% endhighlight %}
 
 Na tej operacji aż tak dużo nie uzyskaliśmy. Przy innych pakietach może być to bardziej korzystne. Tą metodę można znaleść w wielu oficjalnych obrazach np: [elasticsearch](https://github.com/docker-library/elasticsearch/blob/5b2bf54e2c17a8e2e1b062ea0d071eae600bfec2/2.2/Dockerfile#L23)
