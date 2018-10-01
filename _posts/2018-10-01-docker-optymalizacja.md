@@ -44,7 +44,8 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 blog                latest              d21d207746fe        40 seconds ago      729MB
 {% endhighlight %}
 
-Dodajmy czyszczenie obrazu po instalacji pakietów za pomocą apt-get oraz zbudujmy obraz jeszcze raz.
+Dodajmy czyszczenie obrazu po instalacji pakietów za pomocą apt-get oraz kasujemy nie potrzebne pliki tymczasowe i man oraz dokumentacje.
+zbudujmy obraz jeszcze raz zobaczymy co się udało zaoszczędzić.
 
 {% highlight bash linenos %}
 RUN apt-get update && apt-get install -y -q \
@@ -52,7 +53,15 @@ RUN apt-get update && apt-get install -y -q \
   wget \
   vim \
   curl \
-  && rm -rf /var/lib/apt/lists/*
+  && apt-get clean \
+  && rm -rf \
+      /var/lib/apt/lists/* \
+      /tmp/* \
+      /var/tmp/* \
+      /usr/share/man \
+      /usr/share/doc \
+      /usr/share/doc-base
+
 {% endhighlight %}
 
 Po zbudowaniu obraz wygląda następująco:
@@ -60,7 +69,7 @@ Po zbudowaniu obraz wygląda następująco:
 {% highlight bash linenos %}
 docker images blog
 REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
-blog                latest              030a09e675d7        About a minute ago   835MB
+blog                latest              030a09e675d7        About a minute ago   801MB
 {% endhighlight %}
 
 Jak widać udało nam się zaoszczędzić trochę miejsca. Niby nic, ale w przypadku gdy doinstalujemy dużo zalezności potrafi to być gigantyczna przestrzeń.
@@ -77,14 +86,13 @@ RUN apt-get update && apt-get install --no-install-recommends -y -q \
   build-essential \
   wget \
   curl \
-  && rm -rf /var/lib/apt/lists/*
 {% endhighlight %}
 
 A tak wygląda obraz po tym zabiegu:
 {% highlight bash linenos %}
 docker images blog
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-blog                latest              d632fd938793        4 seconds ago       834MB
+blog                latest              d632fd938793        4 seconds ago       782MB
 {% endhighlight %}
 
 Na tej operacji aż tak dużo nie uzyskaliśmy. Przy innych pakietach może być to bardziej korzystne. Tą metodę można znaleść w wielu oficjalnych obrazach np: [elasticsearch](https://github.com/docker-library/elasticsearch/blob/5b2bf54e2c17a8e2e1b062ea0d071eae600bfec2/2.2/Dockerfile#L23)
