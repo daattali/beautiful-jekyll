@@ -5,7 +5,7 @@ image: /img/docker-post-1.png
 tags: [docker, kontenery, linux, how-to, optymalizacja, czyszczenie]
 ---
 
-Pierwszy artykół z serii "Docker". Postaram się w nim opisać sposoby na optymalizacje obrazu Dockera pod względem wielkości. Jest to dość istotny parametr obrazu, bo od niego zalezy szybkość wprowadzenia zmian na środowisko jak i ilość zajętego miejsca w całym klastrze (np. Kubernetesa).
+Pierwszy artykuł z serii "Docker". Postaram się w nim opisać sposoby na optymalizacje obrazu Dockera pod względem wielkości. Jest to dość istotny parametr obrazu, bo od niego zalezy szybkość wprowadzenia zmian na środowisko jak i ilość zajętego miejsca w całym klastrze (np. Kubernetesa).
 
 ## Zainstalowałeś to posprzątaj
 
