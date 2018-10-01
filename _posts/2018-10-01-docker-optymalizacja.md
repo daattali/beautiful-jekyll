@@ -3,10 +3,9 @@ layout: post
 title: Docker - Optymalizacja obrazu
 image: /img/docker-post-1.png
 tags: [docker, kontenery, linux, how-to, optymalizacja, czyszczenie]
-published: false
 ---
 
-Pierwszy artykół z serii "Docker". Postaram się w nim co nieco opisać sposoby na optymalizacje obrazu Dockera pod względem wielkości. Jest to dość istotny parametr obrazu, bo od niego zalezy szybkość deploy jak i ilość zajętego miejsca w całym klastrze (np. Kubernetesa).
+Pierwszy artykół z serii "Docker". Postaram się w nim opisać sposoby na optymalizacje obrazu Dockera pod względem wielkości. Jest to dość istotny parametr obrazu, bo od niego zalezy szybkość wprowadzenia zmian na środowisko jak i ilość zajętego miejsca w całym klastrze (np. Kubernetesa).
 
 ## Zainstalowałeś to posprzątaj
 
@@ -144,6 +143,15 @@ blog                latest              3143d1c2fa63        19 seconds ago      
 {% endhighlight %}
 
 No i to jest optymalizacja, obraz zmniejszony został o więcej niż połowę.
+
+
+## Ilość warstw i ich kolejność
+
+W tej kwesti zdania są podzielone. Niktórzy twierdzą że czym więcej tym lepiej a inni że wszystko w jednej warstwie.
+Ja stosuje zasadę czytelności. Staram się mieć jak najmniej warst ale też pilnuje żeby plik Dockerfile był podzielony na sekcje żeby utrzymanie obrazu było łatwiejsze.
+
+Dodatkowo złotą zasadą, która przyśpiesza budowanie obrazu jest umieszczanie kodu aplikacji i często zmieniających się zależności na samym końcu. 
+Dzięki temu proces CI jest szybszy bo nie ma koniecznośći przebudowania całego obrazu, a jedynie części, która się zmienia.
 
 Przy tworzeniu Dockerfile'a trzeba brać pod uwagę całkiem inne aspekty niż podczas tradycyjnego stawiania środowiksa.
 Te kilka trików pozwoli na tworzenie lekkich obrazów a w dodatku mamy wszystko pod kontrolą. 
