@@ -4,7 +4,7 @@ title: RCN-ECS
 subtitle: The Research Coordinated Network for Evolution in Changing Seas
 use-site-title: true
 ---
- <p lign="center">
+ <p align="center">
   <img src="/img/ocean_sm.jpg">
 </p>
 
