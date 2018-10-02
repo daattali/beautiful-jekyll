@@ -7,7 +7,7 @@ We are currently working on our list of members! Stay tuned for updates.
 
 Members (in alphabetical order) |
 --------|
-[Anna  Maria Addamo.](https://www.researchgate.net/profile/Anna_Addamo/info) Biodiversity and Evolutionary Biology; Sustainable Resources - Water and Marine Resources, National Musuem of Natural Science MNCN (Spain); European Commission JRC (Italy). ![/img/GitHub-Mark-64px.png](http://github.com/AMA)[<img src = 'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png' height=20 width=20>](https://twitter.com/AMAddamo)|
+[Anna  Maria Addamo.](https://www.researchgate.net/profile/Anna_Addamo/info) Biodiversity and Evolutionary Biology; Sustainable Resources - Water and Marine Resources, National Musuem of Natural Science MNCN (Spain); European Commission JRC (Italy). ![<src ="/img/GitHub-Mark-64px.png"](http://github.com/AMA)[<img src = 'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png' height=20 width=20>](https://twitter.com/AMAddamo)|
 [Andres  Aguilar.](https://andresaguilar.weebly.com/) Dept. Biological Sciences, CSU Los Angeles. |
 Hannah E Aichelman. Biology, Boston University. [<img src='https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png' height=20 width=20>](http://github.com/hannahaichelman)[<img src = 'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png' height=20 width=20>](https://twitter.com/HAichelman)|
 Parisa  Alidoostsalimi. Department of Marine Biology,  Graduate School of Marine Science and Technology, Science and Research Branch, Islamic Azad University, Tehran, Iran. |
