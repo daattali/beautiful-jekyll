@@ -19,7 +19,7 @@ The database `mobydq` uses [PostgreSQL 10.4](https://www.postgresql.org). It con
 When running the project locally, it is accessible on `host: 0.0.0.0` and `port:5432`.
 
 
-Note access to GraphiQL is restricted by default to avoid intrusions. In order to access it you must run it with the following command to open the container ports:
+Note access to the database is restricted by default to avoid intrusions. In order to access it you must run it with the following command to open the container ports:
 ```
 $ cd mobydq
 $ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d db
