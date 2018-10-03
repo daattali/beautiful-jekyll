@@ -102,7 +102,7 @@ title: Members
 |Sean T Giery. Ecology and Evolutionary Biology, University of Connecticut. [<img src = '/img/twitter-squared.png' >](https://twitter.com/stgiery)|
 |[Kimberly J Gilbert.](http://kjgilbert.github.io/) Institute of Ecology and Evolution, University of Bern. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/kjgilbert)[<img src = '/img/twitter-squared.png' >](https://twitter.com/kj_gilbert)|
 |Robert A Glazer. Fish and Wildlife Research Institute, Florida Fish and Wildlife Conservation Commission. |
-|Henry  Goehlich. Evolutionary Ecology of Marine Fishes, GEOMAR | Helmholtz-Zentrum für Ozeanforschung Kiel. |
+|Henry  Goehlich. Evolutionary Ecology of Marine Fishes, GEOMAR, Helmholtz-Zentrum für Ozeanforschung Kiel. |
 |Marta  Gomez-Buckley. School of Aquatic and Fishery Sciences, University of Washington, Seattle. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/magobu)[<img src = '/img/twitter-squared.png' >](https://twitter.com/buckley_gomez)|
 |Marta  Gomez-Chiarri. Fisheries, Animal and Veterinary Science, University of Rhode Island. |
 |[Jacqueline  Goordial.](https://web.jackiegoordial.com) , Bigelow Laboratory for Ocean Science. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/jackiegoo)[<img src = '/img/twitter-squared.png' >](https://twitter.com/jackiegoordial)|
