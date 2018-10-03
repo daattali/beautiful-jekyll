@@ -24,7 +24,7 @@ description: Official documentation
 # List of links in the navigation bar
 navbar-links:
   Getting Started: "gettingstarted"
-  Concepts:
+  Concepts: "concepts"
     - Indicator: "concepts"
     - Indicator Group: "concepts"
     - Indicator Type: "concepts"
