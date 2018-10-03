@@ -1,72 +1,32 @@
----
-layout: page
-title: MobyDQ
-subtitle: Tool to automate data quality checks on data pipelines
-use-site-title: true
-published: true
----
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+MobyDQ is a tool for data engineering teams to automate data quality checks on their data pipeline, capture data quality issues and trigger alerts in case of anomaly, regardless of the data sources they use.
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
+![Data pipeline](/img/data_pipeline.png)
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+This tool has been inspired by an internal project developed at [Ubisoft Entertainment](https://www.ubisoft.com) in order to measure and improve the data quality of its Enterprise Data Platform. However, this open source version has been reworked to improve its design, simplify it and remove technical dependencies with commercial software.
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-    </div>
+# Getting Started
+Skip the bla bla and run your data quality indicators by following the [Getting Started Guide](gettingstarted). Refer to the documentation below for a better understanding of the tool, its concepts and how it works.
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
+# Measuring Data Quality
+> A considerable amount of data quality research involves investigating and describing various categories of desirable attributes of data. These dimensions commonly include accuracy, correctness, currency, completeness and relevance. Nearly 200 such terms have been identified and there is little agreement in their nature [...] source: [Wikipedia](https://en.wikipedia.org/wiki/data_quality)
 
-   </article>
-  {% endfor %}
-</div>
+Taking this lack of consensus into account, this solution provides a toolbox for data engineering teams to freely design data quality indicators with the ambition to answer the following questions:
+* Is all the necessary data present in the system?
+* Is the data available at the time needed for its usage?
+* Is the data compliant with validation or business rules?
+* Does the data reflect real world objects?
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+This translates into the following types of indicators:
+<table><tr><th>Indicator Type</th><th>Description</th></tr>
+<tr><td>Anomaly detection</td><td>Machine learning algorithms to detect outlying values. **Work in progress**.</td></tr>
+<tr><td>Completeness</td><td>Difference in percentage between a measure computed in the source system and the same measure computed in the target system.</td></tr>
+<tr><td>Freshness</td><td>Difference in minutes between the current timestamp and the last updated timestamp in the target system.</td></tr>
+<tr><td>Latency</td><td>Difference in minutes between the last updated timestamp in the source system and the last updated timestamp in the target system.</td></tr>
+<tr><td>Validity</td><td>Any measure computed on target system showing non-compliant records in regard to a validation or business rules.</td></tr>
+</table>
+
+# Data Model
+![Data model](/img/data_model.png)
+
+# Architecture Diagram
+![Architecture](/img/architecture.png)
