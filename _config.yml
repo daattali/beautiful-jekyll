@@ -23,6 +23,7 @@ description: Official documentation
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "index"
   Getting Started: "gettingstarted"
   Concepts: "concepts"
   Architecture: "architecture"
@@ -187,10 +188,8 @@ prose:
   rooturl: '_posts'
   media: 'img'
   ignore:
-    - 404.html
     - LICENSE
     - feed.xml
-    - _config.yml
     - /_layouts
     - /_includes
     - /css
