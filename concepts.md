@@ -2,7 +2,6 @@
 layout: page
 title: Concepts
 use-site-title: true
-published: true
 gh-repo: mobydq/mobydq
 gh-badge:
   - star
