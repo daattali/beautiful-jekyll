@@ -3,13 +3,22 @@ layout: page
 title: Concepts
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+# Indicator
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+# Indicator Group
 
-What else do you need?
+# Indicator Type
 
-### my history
+# Parameter
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+# Parameter Type
+
+# Data Source
+
+# Data Source Type
+
+# Batch
+
+# Session
+
+# Session Result
