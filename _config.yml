@@ -25,16 +25,6 @@ description: Official documentation
 navbar-links:
   Getting Started: "gettingstarted"
   Concepts: "concepts"
-    - Indicator: "concepts"
-    - Indicator Group: "concepts"
-    - Indicator Type: "concepts"
-    - Parameter: "concepts"
-    - Parameter Type: "concepts"
-    - Data Source: "concepts"
-    - Data Source Type: "concepts"
-    - Batch: "concepts"
-    - Session: "concepts"
-    - Session Result: "concepts"
   Architecture: "architecture"
   About: "about"
 
@@ -72,7 +62,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Alexis Rolland
+  name: Alexis Rolland & The Data Tourists
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
