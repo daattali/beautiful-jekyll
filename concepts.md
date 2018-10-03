@@ -7,6 +7,8 @@ use-site-title: true
 # Data Model
 ![Data Model](/img/data_model.png)
 
+---
+
 # Indicator
 Indicators compute data sets on one or several data sources in order to evaluate the quality of their data. 
 
@@ -44,6 +46,8 @@ Indicators compute data sets on one or several data sources in order to evaluate
   </tr>
 </table>
 
+---
+
 # Indicator Group
 Indicator groups define collections of indicators to be computed in the same batch.
 
@@ -65,6 +69,8 @@ Indicator groups define collections of indicators to be computed in the same bat
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
 </table>
+
+---
 
 # Indicator Type
 Indicator types determine which class and method is used to compute indicators. Supported types of indicators are:
@@ -101,6 +107,7 @@ Indicator types determine which class and method is used to compute indicators. 
   </tr>
 </table>
 
+
 ## List of values
 <table>
   <tr>
@@ -120,6 +127,7 @@ Indicator types determine which class and method is used to compute indicators. 
   </tr>
 </table>
 
+
 ## Completeness
 A completeness indicator connects to two different data sources, a **source** and a **target**. It computes a data set on each of the data sources and compares their results. For each measure of each record in both data sets, the framework computes the **difference in percentage** as follow:
 
@@ -129,6 +137,7 @@ It compares the difference with the alert operator and alert threshold parameter
 
 **Example:**
 To be documented
+
 
 ## Freshness
 A freshness indicator connects to one single **target** data source. It computes its last updated timestamp and compares it to the current timestamp. For each record in the data set, the framework computes the **difference in minutes** as follow:
@@ -140,6 +149,7 @@ It compares the difference with the alert operator and alert threshold parameter
 **Example:**
 To be documented
 
+
 ## Latency
 A latency indicator connects to two different data sources, a **source** and a **target**. It computes the last updated timestamp on each of them and compares the results. For each record in both data sets, the framework computes the **difference in minutes** as follow:
 
@@ -150,11 +160,14 @@ It compares the difference with the alert operator and alert threshold parameter
 **Example:**
 To be documented
 
+
 ## Validity
 A validity indicator connects to one single **target** data source and computes a data set on it. For each measure of each record, it compares the result with the alert operator and alert threshold parameters defined for the indicator and triggers an alert if the condition is met.
 
 **Example:**
 To be documented
+
+---
 
 # Parameter
 Parameters used to compute indicators.
@@ -184,6 +197,8 @@ Parameters used to compute indicators.
   </tr>
 </table>
 
+---
+
 # Parameter Type
 Parameter types determine which types of parameters can be used to compute indicators.
 
@@ -208,6 +223,7 @@ Parameter types determine which types of parameters can be used to compute indic
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
 </table>
+
 
 ## List of Values
 <table>
@@ -243,6 +259,7 @@ Parameter types determine which types of parameters can be used to compute indic
   </tr>
 </table>
 
+
 ## Matrix of Indicator Types and Parameter Types
 <table>
   <tr>
@@ -276,6 +293,8 @@ Parameter types determine which types of parameters can be used to compute indic
     <td>Target request</td><td>Mandatory</td><td>Mandatory</td><td>Mandatory</td><td>Mandatory</td>
   </tr>
 </table>
+
+---
 
 # Data Source
 Data sources are systems containing or exposing data on which the the tool can compute indicators.
@@ -314,6 +333,8 @@ Data sources are systems containing or exposing data on which the the tool can c
   </tr>
 </table>
 
+---
+
 # Data Source Type
 Data source types describe the types of a data sources the tool can connect to.
 
@@ -335,6 +356,7 @@ Data source types describe the types of a data sources the tool can connect to.
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
 </table>
+
 
 ## List of values
 <table>
@@ -370,6 +392,8 @@ Data source types describe the types of a data sources the tool can connect to.
   </tr>
 </table>
 
+---
+
 # Batch
 Batches record the execution of groups of indicators.
 
@@ -394,6 +418,8 @@ Batches record the execution of groups of indicators.
     <td>indicator_group_id</td><td>Integer</td><td>Foreign key of the indicator_group table, to indicate to which group belongs the batch.</td>
   </tr>
 </table>
+
+---
 
 # Session
 Sessions record the execution of indicators within a batch.
@@ -422,6 +448,8 @@ Sessions record the execution of indicators within a batch.
     <td>indicator_id</td><td>Integer</td><td>Foreign key of the indicator table, to indicate for which indicator the session was executed.</td>
   </tr>
 </table>
+
+---
 
 # Session Result
 Session results contain a summary of indicators execution.
