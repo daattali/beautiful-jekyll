@@ -2,6 +2,13 @@
 layout: page
 title: Getting Started
 use-site-title: true
+published: true
+gh-repo: mobydq/mobydq
+gh-badge:
+  - star
+  - watch
+  - fork
+  - follow
 ---
 
 # Requirements
@@ -21,10 +28,12 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce
 ```
 
+
 Add your user to the docker group to setup its permissions. **Make sure to restart your machine after executing this command.**
 ```shell
 $ sudo usermod -a -G docker <username>
 ```
+
 
 ## Install Docker Compose
 Execute the following command in a terminal window.
