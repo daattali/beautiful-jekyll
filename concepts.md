@@ -7,7 +7,9 @@ use-site-title: true
 # Data Model
 ![Data Model](/img/data_model.png)
 
+
 ---
+
 
 # Indicator
 Indicators compute data sets on one or several data sources in order to evaluate the quality of their data. 
@@ -46,7 +48,9 @@ Indicators compute data sets on one or several data sources in order to evaluate
   </tr>
 </table>
 
+
 ---
+
 
 # Indicator Group
 Indicator groups define collections of indicators to be computed in the same batch.
@@ -70,7 +74,9 @@ Indicator groups define collections of indicators to be computed in the same bat
   </tr>
 </table>
 
+
 ---
+
 
 # Indicator Type
 Indicator types determine which class and method is used to compute indicators. Supported types of indicators are:
@@ -167,7 +173,9 @@ A validity indicator connects to one single **target** data source and computes 
 **Example:**
 To be documented
 
+
 ---
+
 
 # Parameter
 Parameters used to compute indicators.
@@ -197,7 +205,9 @@ Parameters used to compute indicators.
   </tr>
 </table>
 
+
 ---
+
 
 # Parameter Type
 Parameter types determine which types of parameters can be used to compute indicators.
@@ -294,7 +304,9 @@ Parameter types determine which types of parameters can be used to compute indic
   </tr>
 </table>
 
+
 ---
+
 
 # Data Source
 Data sources are systems containing or exposing data on which the the tool can compute indicators.
@@ -333,7 +345,9 @@ Data sources are systems containing or exposing data on which the the tool can c
   </tr>
 </table>
 
+
 ---
+
 
 # Data Source Type
 Data source types describe the types of a data sources the tool can connect to.
@@ -392,7 +406,9 @@ Data source types describe the types of a data sources the tool can connect to.
   </tr>
 </table>
 
+
 ---
+
 
 # Batch
 Batches record the execution of groups of indicators.
@@ -419,7 +435,9 @@ Batches record the execution of groups of indicators.
   </tr>
 </table>
 
+
 ---
+
 
 # Session
 Sessions record the execution of indicators within a batch.
@@ -449,7 +467,9 @@ Sessions record the execution of indicators within a batch.
   </tr>
 </table>
 
+
 ---
+
 
 # Session Result
 Session results contain a summary of indicators execution.
