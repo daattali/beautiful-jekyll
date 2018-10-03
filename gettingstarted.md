@@ -2,8 +2,7 @@
 layout: page
 title: Getting Started
 use-site-title: true
-published: true
-gh-repo: mobydq/mobydq
+gh-repo: https://github.com/mobydq/mobydq
 gh-badge:
   - star
   - watch
