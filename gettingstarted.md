@@ -34,6 +34,8 @@ $ sudo usermod -a -G docker <username>
 ```
 
 
+
+
 ## Install Docker Compose
 Execute the following command in a terminal window.
 ```shell
@@ -42,6 +44,8 @@ $ sudo apt install docker-compose
 
 
 ---
+
+
 
 
 # Setup Your Instance
@@ -69,11 +73,15 @@ REACT_APP_GRAPHQL_API_URL=http://0.0.0.0:5433/graphql
 ```
 
 
+
+
 ## Create Docker Network
 This custom network is used to connect the different containers between each others. It is used in particular to connect the ephemeral containers ran when executing batches of indicators.
 ```shell
 $ docker network create data-quality-network
 ```
+
+
 
 
 ## Create Docker Volume
@@ -83,12 +91,16 @@ $ docker volume create data-quality-db-volume
 ```
 
 
+
+
 ## Build Docker Images
 Go to the project root and execute the following command in your terminal window.
 ```shell
 $ cd mobydq
 $ docker-compose build --no-cache
 ```
+
+
 
 
 ## Run Docker Containers
