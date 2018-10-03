@@ -3,7 +3,11 @@ layout: page
 title: Getting Started
 use-site-title: true
 gh-repo: mobydq/mobydq
-gh-badge: star
+gh-badge:
+  - star
+  - watch
+  - fork
+  - follow
 ---
 
 # Requirements
