@@ -2,12 +2,8 @@
 layout: page
 title: Getting Started
 use-site-title: true
-gh-repo: https://github.com/mobydq/mobydq
-gh-badge:
-  - star
-  - watch
-  - fork
-  - follow
+gh-repo: mobydq/mobydq
+gh-badge: star
 ---
 
 # Requirements
