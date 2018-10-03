@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Getting Started
+use-site-title: true
 ---
 
 # Requirements
@@ -83,7 +84,7 @@ Individual components can be accessed at the following addresses:
 * GraphiQL Documentation: http://localhost:5433/graphiql
 * PostgreSQL database host: 0.0.0.0, port: 5432
 
-Note access to GraphiQL and the PostgreSQL database is restricted by default to avoid intrusions. In order to access these containers directly, you must run them with the following command to open their ports:
+Note access to GraphiQL and the PostgreSQL database is restricted by default to avoid intrusions. In order to access these addresses directly, you must run them with the following command to open their ports:
 ```shell
 $ cd mobydq
 $ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d db graphql
