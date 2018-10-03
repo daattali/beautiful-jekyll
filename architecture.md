@@ -2,6 +2,13 @@
 layout: page
 title: Architecture
 use-site-title: true
+published: true
+gh-repo: mobydq/mobydq
+gh-badge:
+  - star
+  - watch
+  - fork
+  - follow
 ---
 
 
