@@ -4,40 +4,74 @@ title: MobyDQ
 subtitle: Tool to automate data quality checks on data pipelines
 use-site-title: true
 ---
+<p>
+  MobyDQ is a tool for data engineering teams to automate data quality checks on their data pipeline, capture data quality issues and trigger alerts in case of anomaly, regardless of the data sources they use.
+  <br/>
+  <img src="{{ site.baseurl }}/img/data_pipeline.png" alt="Data Pipeline"/>
+</p>
 
-MobyDQ is a tool for data engineering teams to automate data quality checks on their data pipeline, capture data quality issues and trigger alerts in case of anomaly, regardless of the data sources they use.
-</br>
-<img src="{{ site.baseurl }}/img/data_pipeline.png" alt="Data Pipeline"/>
-</br>
-This tool has been inspired by an internal project developed at [Ubisoft Entertainment](https://www.ubisoft.com) in order to measure and improve the data quality of its Enterprise Data Platform. However, this open source version has been reworked to improve its design, simplify it and remove technical dependencies with commercial software.
+<p>
+  This tool has been inspired by an internal project developed at [Ubisoft Entertainment](https://www.ubisoft.com) in order to measure and improve the data quality of its Enterprise Data Platform. However, this open source version has been reworked to improve its design, simplify it and remove technical dependencies with commercial software.
+</p>
 
 <h1>Getting Started</h1>
-Skip the bla bla and run your data quality indicators by following the [Getting Started Guide](gettingstarted). Refer to the documentation below for a better understanding of the tool, its concepts and how it works.
+<p>
+  Skip the bla bla and run your data quality indicators by following the [Getting Started Guide](gettingstarted). Refer to the documentation below for a better understanding of the tool, its concepts and how it works.
+</p>
 
 <h1>Measuring Data Quality</h1>
-<i>A considerable amount of data quality research involves investigating and describing various categories of desirable attributes of data. These dimensions commonly include accuracy, correctness, currency, completeness and relevance. Nearly 200 such terms have been identified and there is little agreement in their nature [...]<i>
-</br>
-source: [Wikipedia](https://en.wikipedia.org/wiki/data_quality)
-</br>
-Taking this lack of consensus into account, this solution provides a toolbox for data engineering teams to freely design data quality indicators with the ambition to answer the following questions:
-<ul>
-  <li>Is all the necessary data present in the system?</li>
-  <li>Is the data available at the time needed for its usage?</li>
-  <li>Is the data compliant with validation or business rules?</li>
-  <li>Does the data reflect real world objects?</li>
-</ul>
+<p>
+  <i>A considerable amount of data quality research involves investigating and describing various categories of desirable attributes of data. These dimensions commonly include accuracy, correctness, currency, completeness and relevance. Nearly 200 such terms have been identified and there is little agreement in their nature [...]</i>
+  </br>
+  source: <a href="https://en.wikipedia.org/wiki/data_quality">Wikipedia]</a>
+</p>
 
-This translates into the following types of indicators:
-<table><tr><th>Indicator Type</th><th>Description</th></tr>
-<tr><td>Anomaly detection</td><td>Machine learning algorithms to detect outlying values. **Work in progress**.</td></tr>
-<tr><td>Completeness</td><td>Difference in percentage between a measure computed in the source system and the same measure computed in the target system.</td></tr>
-<tr><td>Freshness</td><td>Difference in minutes between the current timestamp and the last updated timestamp in the target system.</td></tr>
-<tr><td>Latency</td><td>Difference in minutes between the last updated timestamp in the source system and the last updated timestamp in the target system.</td></tr>
-<tr><td>Validity</td><td>Any measure computed on target system showing non-compliant records in regard to a validation or business rules.</td></tr>
+<p>
+  Taking this lack of consensus into account, this solution provides a toolbox for data engineering teams to freely design data quality indicators with the ambition to answer the following questions:
+  <ul>
+    <li>Is all the necessary data present in the system?</li>
+    <li>Is the data available at the time needed for its usage?</li>
+    <li>Is the data compliant with validation or business rules?</li>
+    <li>Does the data reflect real world objects?</li>
+  </ul>
+</p>
+
+<p>
+  This translates into the following types of indicators:
+  <table>
+    <tr>
+      <th>Indicator Type</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Anomaly detection</td>
+      <td>Machine learning algorithms to detect outlying values. **Work in progress**.</td>
+    </tr>
+    <tr>
+      <td>Completeness</td>
+      <td>Difference in percentage between a measure computed in the source system and the same measure computed in the target system.</td>
+    </tr>
+    <tr>
+      <td>Freshness</td>
+      <td>Difference in minutes between the current timestamp and the last updated timestamp in the target system.</td>
+    </tr>
+    <tr>
+      <td>Latency</td>
+      <td>Difference in minutes between the last updated timestamp in the source system and the last updated timestamp in the target system.</td>
+    </tr>
+    <tr>
+      <td>Validity</td>
+      <td>Any measure computed on target system showing non-compliant records in regard to a validation or business rules.</td>
+    </tr>
 </table>
+</p>
 
 <h1>Data Model</h1>
-<img src="{{ site.baseurl }}/img/data_model.png" alt="Data Model"/>
+<p>
+  <img src="{{ site.baseurl }}/img/data_model.png" alt="Data Model"/>
+<p>
 
 <h1>Architecture Diagram</h1>
-<img src="{{ site.baseurl }}/img/architecture.png" alt="Architecture"/>
+<p>
+  <img src="{{ site.baseurl }}/img/architecture.png" alt="Architecture"/>
+</p>
