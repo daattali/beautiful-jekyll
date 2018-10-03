@@ -44,7 +44,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 blog                latest              d21d207746fe        40 seconds ago      801MB
 {% endhighlight %}
 
-Dodajmy czyszczenie obrazu po instalacji pakietów za pomocą apt-get oraz kasujemy nie potrzebne pliki tymczasowe i man oraz dokumentacje.
+Dodajmy czyszczenie obrazu po instalacji pakietów za pomocą apt-get oraz kasujemy niepotrzebne pliki tymczasowe i man oraz dokumentacje.
 zbudujmy obraz jeszcze raz zobaczymy co się udało zaoszczędzić.
 
 {% highlight bash linenos %}
@@ -77,9 +77,9 @@ Jak widać udało nam się zaoszczędzić trochę miejsca. Niby nic, ale w przyp
 {: .box-error}
 **Ważne:** Czyszczenie powinno być zawsze wykonane w tej warstwie którą chcemy czyścić. Dodanie nowej warstwy tylko zwiększy obraz.
 
-## Instalujmy tylko to co jest nam potrzebne.
+## Instalujmy tylko to co jest nam potrzebne
 
-Kolejnym sposobem z użyciem apt jest instalowanie tylko paczek, które naprawde są nam potrzebne. Do naszego polecenia dodamy przełącznik dzięki któremu nie zainstalują się paczki zalerzności opcjonalne których najczęściej nie potrzebujemy. Jeśli jest inaczej warto je wpisać do Dockerfile.
+Kolejnym sposobem z użyciem apt jest instalowanie tylko paczek, które naprawde są nam potrzebne. Do naszego polecenia dodamy przełącznik dzięki któremu nie zainstalują się paczki zależności opcjonalne których najczęściej nie potrzebujemy. Jeśli jest inaczej warto je wpisać do Dockerfile.
 
 {% highlight bash linenos %}
 RUN apt-get update && apt-get install --no-install-recommends -y -q \
