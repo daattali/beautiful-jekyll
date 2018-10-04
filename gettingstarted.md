@@ -59,7 +59,7 @@ POSTGRES_USER=postgres
 POSTGRES_PASSWORD=password
 
 # GRAPHQL
-DATABASE_URL=postgres://postgres:password@db:5432/data_quality
+DATABASE_URL=postgres://postgres:password@db:5432/mobydq
 
 # SCRIPTS
 GRAPHQL_URL=http://graphql:5433/graphql
