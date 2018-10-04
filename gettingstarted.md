@@ -78,7 +78,7 @@ REACT_APP_GRAPHQL_API_URL=http://0.0.0.0:5433/graphql
 ## Create Docker Network
 This custom network is used to connect the different containers between each others. It is used in particular to connect the ephemeral containers ran when executing batches of indicators.
 ```shell
-$ docker network create data-quality-network
+$ docker network create mobydq-network
 ```
 
 
@@ -87,7 +87,7 @@ $ docker network create data-quality-network
 ## Create Docker Volume
 Due to Docker compatibility issues on Windows machines, we recommend to manually create a Docker volume instead of directly mounting external folders in `docker-compose.yml`. This volume will be used to persist the data stored in the PostgreSQL database. Execute the following command.
 ```shell
-$ docker volume create data-quality-db-volume
+$ docker volume create mobydq-db-volume
 ```
 
 
@@ -112,7 +112,7 @@ $ docker-compose up -d db graphql api app
 
 Individual components can be accessed at the following addresses:
 * Web application: http://localhost
-* Flask API Swagger Documentation: http://0.0.0.0:5434/data-quality/api/doc
+* Flask API Swagger Documentation: http://0.0.0.0:5434/mobydq/api/doc
 * GraphiQL Documentation: http://localhost:5433/graphiql
 * PostgreSQL database host: 0.0.0.0, port: 5432
 
