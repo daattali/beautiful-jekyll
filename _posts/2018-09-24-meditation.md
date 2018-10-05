@@ -4,6 +4,7 @@ title: 10 Days of Silent Meditation
 subtitle: Actionable knowledge from my journey to join a Goenka meditation workshop
 permalink: joining-meditation
 image: /img-posts/meditation-0-goenka-thumb.jpg
+modified-date: October 5, 2018
 ---
 
 I recently joined a 10 day meditation workshop after procrastinating for years, despite "knowing" of meditation's benefits. Every one's path to meditation is different. This article is my [meanering] story to deepen my practice and how I came to join a workshop.
@@ -91,7 +92,7 @@ Exactly one week from the workshop start date, I received confirmation from the 
 
 After entering more information and confirming my attendance, I found wanting to asking exactly how to physically attend this workshop.
 
-I found the website easy enough to navigate to find information. However, I had trouble trusting the information I found on the website—likely due to the web design / animated gif in the header, which I suspect stems from my experience from the early days of the internet [^4].
+I found the website easy enough to navigate to find information. However, I had trouble trusting the information I found on the website—likely due to the web design / animated gif in the header, which I suspect stems from my experiencing the early days of the internet [^4].
 
 [^4]: My mistrust of web design using animated gifs comes from an earlier era in the internet. I grew up and developed software from 90s. Animated gifs trigger a bias towards low credibility. A trend during that era used animation and javascript to obnoxious effects. In this case, my mistrust of the information was woefully misplaced!
 
@@ -99,11 +100,11 @@ The organization is terrific and entirely volunteer run. A few days before the w
 
 Like many other Vipassana meditation centers, the center I applied for was outside of any major city centers with easy access by public transit. I joined a workshop in the [Dhara Dhamma Center][link-vipassana-logistics] in Shelbourne Falls, Massacchussets. There are course available [all over the world][link-vipassana-locations]. The page on [logistics][link-vipassana-logistics] from the Dhara Dhamma Center website had many resources to help people attend.
 
-My specific preparation:
+Preparation:
 
-1. I emailed a few people to see carpool logistics (though didn't hear back from any one by email).
-2. I looked at a bus route that could take me to a nearby town, where I could either taxi or walk to the center. A one-way trip would require a transfer in Springfield and navigating another short car trip from Greenfield (the closest city to the center)
-3. Finally, I looked into taking a shared taxi with the NYC Taxi Company. The price was marginally more expensive than taking multiple buses, without taking into account 
+1. Getting there: I emailed a few people to see carpool logistics (though didn't hear back from any one by email). I looked at a bus route that could take me to a nearby town, where I could either taxi or walk to the center. A one-way trip would require a transfer in Springfield and navigating another short car trip from Greenfield (the closest city to the center). I looked into taking a shared taxi with the NYC Taxi Company. The price was marginally more expensive than taking multiple buses. A bonus was meeting others who were also heading towards the workshop.
+2. Packing: The center sends you a packing list by email.
+3. Advice! I asked for advice on Facebook.
 
 ![Meditation question on FB "Folks—I'm joining a 10 day silent meditation retreat soon. I'd love your recs on how to have a great experience. Thank you!"][image-fb-question]
 <p class="text-muted">I hoped to source good knowledge from a hive brain. I sought out friends' advice on Facebook.</p>
@@ -136,11 +137,11 @@ I describe the workshop as very rewarding and one of the most difficult periods 
 
 **"So are you now super relaxed after this workshop?"**
 
-I have more equanimity. However, I found the workshop one of the most physically and mentally taxing processes I have ever done. The work continues during a continued practice on an every day basis (though is less taxing because I'm not practicing four to ten hours a day). I would rate this as hard as training for a marathon and running a marathon with limited training [^7]. The questions section from Dhamma.org says differently ("*not difficult*"), but I found my practice was more difficult than my expectation. I suspect my difficulty came from this workshop's practice was longer and different than I had experience with in the past.
+I have more equanimity. However, I found the workshop one of the most physically and mentally taxing trainings I have ever done. The work continues during a continued practice on an every day basis (though is less taxing because I'm not practicing four to ten hours a day). The questions section from Dhamma.org says differently ("*not difficult*"), but I found my practice was more difficult than my expectation. I suspect my difficulty came from this workshop's practice was longer and different than I had experience with in the past.
 
 > [dhamma.org][link-vipassana-questions]…<br>  For a person in reasonable physical and mental health who is genuinely interested and willing to make a sincere effort, meditation (including "noble silence") is not difficult. If you are able to follow the instructions patiently and diligently, you can be sure of tangible results. Though it may appear daunting, the day's schedule is neither too severe nor too relaxed. Moreover, the presence of other students practicing conscientiously in a peaceful and conducive atmosphere lends tremendous support to one's efforts.
 
-[^7]: In 2011, I ran the LA Marathon (unfortunately) with two torn Achilles tendons prior to the race. I finished slowly and had a long recovery time (which took over two years). At the time [in my early 20s], I ignored the prior pain for weeks, believed I was invincible, and invested in finishing this race.
+[^7]: "Original wording: I would rate this as hard as training for a marathon and running a marathon with limited training [^7]". In 2011, I ran the LA Marathon (unfortunately) with two torn Achilles tendons prior to the race. I finished slowly and had a long recovery time (which took over two years). At the time [in my early 20s], I ignored the prior pain for weeks, believed I was invincible, and invested in finishing this race.
 
 <a name="10-day"></a>
 **"What do you learn over the 10 days? Why does it have to be so long, can I leave early?"**
@@ -206,3 +207,10 @@ A friend once said, Your professional development will never surpass your person
 [image-meditation-5-john]: /img-posts/meditation-5-john.png
 [image-meditation-6-rebecca]: /img-posts/meditation-6-rebecca.png
 [image-meditation-7-reflection]: /img-posts/meditation-7-reflection.png
+
+<!-- 
+Republished to Medium… on 2018/10/05:
+Originally published at https://frankc.net/joining-meditation
+-->
+[link-repost-medium-meditation]:  https://medium.com/@frankc/10-days-of-silent-meditation-17d26b3dfaad
+
