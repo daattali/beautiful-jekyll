@@ -2,12 +2,6 @@
 layout: page
 title: Concepts
 use-site-title: true
-gh-repo: mobydq/mobydq
-gh-badge:
-  - star
-  - watch
-  - fork
-  - follow
 ---
 
 # Data Model
