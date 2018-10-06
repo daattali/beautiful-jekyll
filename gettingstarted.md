@@ -111,10 +111,10 @@ $ docker-compose up -d db graphql api app
 ```
 
 Individual components can be accessed at the following addresses:
-* Web application: http://localhost
-* Flask API Swagger Documentation: http://0.0.0.0:5434/mobydq/api/doc
-* GraphiQL Documentation: http://localhost:5433/graphiql
-* PostgreSQL database host: 0.0.0.0, port: 5432
+* Web application: `http://localhost`
+* Flask API Swagger Documentation: `http://localhost:5434/mobydq/api/doc`
+* GraphiQL Documentation: `http://localhost:5433/graphiql`
+* PostgreSQL database `host: localhost, port: 5432`
 
 Note access to GraphiQL and the PostgreSQL database is restricted by default to avoid intrusions. In order to access these addresses directly, you must run them with the following command to open their ports:
 ```shell
