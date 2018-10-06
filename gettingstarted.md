@@ -63,7 +63,7 @@ MAIL_SENDER=change@me.com
 
 # APP PARAMS
 NODE_ENV=development
-FLASK_API_URL=http://0.0.0.0:5433/graphql
+REACT_APP_FLASK_API_URL=http://0.0.0.0:5433/graphql
 ```
 
 
