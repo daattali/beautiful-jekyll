@@ -1,9 +1,9 @@
-
 ---
 layout: post
 title: Recommendation Engine For Retail Marketing
 subtitle: Memory and Model based collaborative filtering
 tags: [ Matrix Factorization,surprise library,Singular Value Decomposition]
+gh-badge: [star, fork, follow]
 ---
 
 
