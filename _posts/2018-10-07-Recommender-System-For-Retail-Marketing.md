@@ -749,8 +749,8 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
 
+![ ]( /img/petreccommender/1.png)
 
 #### Visualize missing Values
 There are no missing observations in the data.
@@ -763,8 +763,8 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
 
+![ ]( /img/petreccommender/2.png)
 
 #### check for correlation among variables
 We use the seaborn heatmap function heatmap to visualize the correlations between the variables. Common choices of cmap include inferno,viridis,YlGnBu,Blues,BuPu and Greens.
@@ -793,8 +793,8 @@ plt.show()
 ```
 
 
-![png](output_26_0.png)
 
+![ ]( /img/petreccommender/3.png)
 
 #### Memory based Collaborative Filtering
 **Construct the user-to-item matrix**
@@ -1763,8 +1763,8 @@ plt.show()
 ```
 
 
-![png](output_73_0.png)
 
+![ ]( /img/petreccommender/4.png)
 
 #### Take a look at prediction vs. actual ratings
 
@@ -1947,5 +1947,5 @@ plt.ylabel('RMSE', fontsize=20);
 ```
 
 
-![png](output_83_0.png)
+![ ]( /img/petreccommender/5.png)
 
