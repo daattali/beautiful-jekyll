@@ -1,24 +1,10 @@
 
 ---
-title: " Recommendation Engine For Retail Marketing"
+layout: post
+title: Recommendation Engine For Retail Marketing
 subtitle: Memory and Model based collaborative filtering
-#output: rmarkdown::github_document
-
-output:
-  html_document:
-    keep_md: true    
-    toc: true
-    toc_float: false
-    theme: united
-author: Nana Boateng
-df_print: paged
-
-toc_depth: 3  # upto three depths of headings (specified by #, ## and ###)
-number_sections: true  ## if you want number sections at each table header
-highlight: tango  # specifies the syntax highlighting style
-tags:  Matrix Factorization,surprise library,Singular Value Decomposition
+tags: [ Matrix Factorization,surprise library,Singular Value Decomposition]
 ---
-
 
 
 
