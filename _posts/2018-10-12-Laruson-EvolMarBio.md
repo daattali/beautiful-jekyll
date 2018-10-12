@@ -33,15 +33,16 @@ Were Mayr’s evolutionary perspectives influenced by his primary study system? 
 [Áki Jarl Láruson](https://akijarl.wordpress.com/) is a Postdoctoral Researcher in the lab of Dr. Katie Lotterhos, in the Department of Marine and Environmental Sciences at Northeastern University. Dr. Láruson studies approaches to detect genomic signatures of adaptation, as well as molecular evolution in marine invertebrates.
 
 ### Bibliography
-Bowen, B.W., Rocha, L.A., Toonen, R.J., Karl, S.A., ToBo Laboratory (2013) The origins of tropical marine biodiversity. Trends in Ecology & Evolution 28(6): 359-366.
-Bronstein, O., Kroh, A., Haring, E. (2016) Do genes lie? Mitochondrial gene capture masks the Red Sea collector urchin’s true identity (Echinodermata: Echinoidea: Tripnesutes). Molecular Phylogenetics and Evolution 104: 1-13.
-Láruson, Á.J. (2017) Rates and relations of mitochondrial genome evolution across the Echinoidea, with special focus on the superfamily Odontophora. Ecology and Evolution 7: 4543-4551.
-Mayr, E. (1954) Geographic speciation in tropical echinoids. Evolution 8(1): 1-18.
-Mayr, E. (1968) Bryozoa versus Ectoprocta. Systematic Zoology 17: 213-216.
-Mayr, E. (1970) Ecological upset: Crown-of-thorns. Massachusetts Audubon 55: 38-39. 
-Mayr, E. (1984) Evolution of fish species flocks: a commentary. In A.A. Echelle & I. Kornfield (Eds.) Evolution of Fish Species Flocks (pp. 3-11). Orono, ME: University of Maine at Orono Press. 
-Palumbi, S.R., & Lessios, H.A. (2005) Evolutionary animation: How do molecular phylogenies compare to Mayr’s reconstruction of speciation patterns in the sea? PNAS 102(1): 6566-6572.
-Ruse, M. (2009) The history of evolutionary thought. In M. Ruse & J. Travis (Eds.) Evolution: The first 4 billion years (pp. 1-48). Cambridge, MA: Harvard University Press.
-Śmietanka , B., & Burzyński, A. (2017) Disruption of doubly uniparental inheritance of mitochondrial DNA associated with hybridization area of European _Mytilus edulis_ and _Mytilus trossulus_ in Norway. Marine Biology 164:209.
-Smocovitis, V.B. (1994) Disciplining evolutionary biology: Ernst Mayr and the founding of the Society for the Study of Evolution and Evolution (1939 – 1950). Evolution 48(1): 1-8.
-Tomaiuolo, M., Hansen, T.F., Levitan, D.R. (2007) A theoretical investigation of sympatric evolution of temporal reproductive isolation as illustrated by marine broadcast spawners. Evolution 61(11): 2584-2595.
+
+* Bowen, B.W., Rocha, L.A., Toonen, R.J., Karl, S.A., ToBo Laboratory (2013) The origins of tropical marine biodiversity. Trends in Ecology & Evolution 28(6): 359-366.
+* Bronstein, O., Kroh, A., Haring, E. (2016) Do genes lie? Mitochondrial gene capture masks the Red Sea collector urchin’s true identity (Echinodermata: Echinoidea: Tripnesutes). Molecular Phylogenetics and Evolution 104: 1-13.
+* Láruson, Á.J. (2017) Rates and relations of mitochondrial genome evolution across the Echinoidea, with special focus on the superfamily Odontophora. Ecology and Evolution 7: 4543-4551.
+* Mayr, E. (1954) Geographic speciation in tropical echinoids. Evolution 8(1): 1-18.
+* Mayr, E. (1968) Bryozoa versus Ectoprocta. Systematic Zoology 17: 213-216.
+* Mayr, E. (1970) Ecological upset: Crown-of-thorns. Massachusetts Audubon 55: 38-39. 
+* Mayr, E. (1984) Evolution of fish species flocks: a commentary. In A.A. Echelle & I. Kornfield (Eds.) Evolution of Fish Species Flocks (pp. 3-11). Orono, ME: University of Maine at Orono Press. 
+* Palumbi, S.R., & Lessios, H.A. (2005) Evolutionary animation: How do molecular phylogenies compare to Mayr’s reconstruction of speciation patterns in the sea? PNAS 102(1): 6566-6572.
+* Ruse, M. (2009) The history of evolutionary thought. In M. Ruse & J. Travis (Eds.) Evolution: The first 4 billion years (pp. 1-48). Cambridge, MA: Harvard University Press.
+* Śmietanka , B., & Burzyński, A. (2017) Disruption of doubly uniparental inheritance of mitochondrial DNA associated with hybridization area of European _Mytilus edulis_ and _Mytilus trossulus_ in Norway. Marine Biology 164:209.
+* Smocovitis, V.B. (1994) Disciplining evolutionary biology: Ernst Mayr and the founding of the Society for the Study of Evolution and Evolution (1939 – 1950). Evolution 48(1): 1-8.
+* Tomaiuolo, M., Hansen, T.F., Levitan, D.R. (2007) A theoretical investigation of sympatric evolution of temporal reproductive isolation as illustrated by marine broadcast spawners. Evolution 61(11): 2584-2595.
