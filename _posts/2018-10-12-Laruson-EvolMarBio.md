@@ -19,7 +19,7 @@ The "animation" begins with the separation of two previously unified lineages, f
 
 It seems that Mayr was quite motivated to validate his notions of evolution in a system that could be expected to "differ completely from the typical geographic speciation of land animals". This is perhaps best highlighted when Mayr explicitly omits Echinometra oblonga, which has an overlapping range in the Pacific with Echinometra mathaei, and states that the remaining Echinometrids "present the perfect picture of geographic speciation!"
 
-![Species range map, drawn by Mayr, for the tropical sea urchin genus _Echinometra_ to suggest a strong geographic separation of species](Mayr54_Fig6.png)
+![Species range map, drawn by Mayr, for the tropical sea urchin genus _Echinometra_ to suggest a strong geographic separation of species](../img/Mayr54_Fig6.png)
 
 As time has passed, there have certainly emerged clear limits to Mayr’s notion of an "evolutionary animation". A growing number of studies suggest species do not need to be geographically isolated but can in fact rise in sympatry (occupying the same geographic area), and a number of these studies explicitly focus on marine organisms (Tomaiuolo et al. 2007, Bowen et al. 2013, Śmietanka & Burzyński 2017). 
 
