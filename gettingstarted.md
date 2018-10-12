@@ -52,27 +52,51 @@ $ sudo apt install docker-compose
 
 
 ## Create Configuration Files
-Based on the template below, create a text file named `.env` at the root of the project. This file is used by Docker Compose to load configuration parameters into environment variables. This is typically used to manage file paths, logins, passwords, etc. Make sure to update the `postgres` user password for both `POSTGRES_PASSWORD` and `DATABASE_URL` parameters.
+Based on the template below, create a text file named `.env` at the root of the project. This file is used by Docker Compose to load configuration parameters into environment variables. This is typically used to manage file paths, logins, passwords, etc. Make sure to update the `postgres` user password for both `POSTGRES_PASSWORD` and `DATABASE_URL` parameters. Also make sure to update the values for the OAuth providers.
+
+### Google OAuth provider
+To configure the Google OAuth provider a client secret and a client id is needed.
+1. Go to https://console.cloud.google.com/apis/credentials
+2. Create a new project within the Google Cloud Console, if necessary
+3. Click `Create credentials`
+4. Select `OAuth client ID`
+5. Select `Web application`
+6. For `Authorized redirect URIs` add the URL specified in `GOOGLE_REDIRECT_URI`
+7. Click `Create`
+8. Copy the client id to `GOOGLE_CLIENT_ID` and the client secret to `GOOGLE_CLIENT_SECRET`
+
 ```ini
 # DB
+# Parameters used by db container
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=password
 
 # GRAPHQL
-DATABASE_URL=postgres://postgres:password@db:5432/data_quality
+DATABASE_URL=postgres://postgres:password@db:5432/mobydq
 
 # SCRIPTS
+# Parameters used by scripts container
 GRAPHQL_URL=http://graphql:5433/graphql
 MAIL_HOST=smtp.server.org
 MAIL_PORT=25
 MAIL_SENDER=change@me.com
 
-# APP PARAMS
+# APP
+# Parameters used by app container
 NODE_ENV=development
-REACT_APP_GRAPHQL_API_URL=http://0.0.0.0:5433/graphql
+REACT_APP_FLASK_API_URL=http://localhost:5434/mobydq/api/v1/
+
+# OAuth
+
+# General OAuth Settings
+AFTER_LOGIN_REDIRECT=http://localhost
+TOKEN_ISSUER=https://localhost
+
+# Google OAuth Provider
+GOOGLE_CLIENT_ID=client_id
+GOOGLE_CLIENT_SECRET=client_secret
+GOOGLE_REDIRECT_URI=http://localhost:5434/mobydq/api/v1/security/oauth/google/callback
 ```
-
-
 
 
 ## Create Docker Network
@@ -91,6 +115,11 @@ $ docker volume create mobydq-db-volume
 ```
 
 
+## Create the keys
+To sign JWT tokens private & public keys are needed. Create the keys in the root of the repository:
+```shell
+$ openssl genrsa -out mobydq/private.pem 2048 && openssl rsa -in mobydq/private.pem -pubout > mobydq/public.pem
+```
 
 
 ## Build Docker Images
@@ -111,13 +140,46 @@ $ docker-compose up -d db graphql api app
 ```
 
 Individual components can be accessed at the following addresses:
-* Web application: http://localhost
-* Flask API Swagger Documentation: http://0.0.0.0:5434/mobydq/api/doc
-* GraphiQL Documentation: http://localhost:5433/graphiql
-* PostgreSQL database host: 0.0.0.0, port: 5432
+* Web application: `http://localhost`
+* Flask API Swagger Documentation: `http://localhost:5434/mobydq/api/doc`
+* GraphiQL Documentation: `http://localhost:5433/graphiql`
+* PostgreSQL database `host: localhost, port: 5432`
 
 Note access to GraphiQL and the PostgreSQL database is restricted by default to avoid intrusions. In order to access these addresses directly, you must run them with the following command to open their ports:
 ```shell
 $ cd mobydq
 $ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d db graphql
 ```
+
+
+# Run Test Cases
+To execute all test cases, go to the `/test` folder and execute the following command:
+```shell
+ $ cd test
+ $ docker-compose up
+```
+
+
+---
+
+
+# Dependencies
+## Docker Images
+The containers run by `docker-compose` have dependencies with the following Docker images:
+* [postgres](https://hub.docker.com/_/postgres/) (tag: 10.4-alpine)
+* [graphile/postgraphile](https://hub.docker.com/r/graphile/postgraphile/) (tag: latest)
+* [python](https://hub.docker.com/_/python/) (tag: 3.6.6-alpine3.8)
+* [python](https://hub.docker.com/_/python/) (tag: 3.6.6-slim-stretch)
+
+
+## Python Packages
+* [docker](https://docker-py.readthedocs.io) (3.5.0)
+* [flask](http://flask.pocoo.org) (1.0.2)
+* [flask_restplus](https://flask-restplus.readthedocs.io) (0.11.0)
+* [flask_cors](https://flask-cors.readthedocs.io) (3.0.6)
+* [graphql_py](https://pypi.org/project/graphql-py) (0.7.1)
+* [jinja2](http://jinja.pocoo.org) (2.10.0)
+* [numpy](http://www.numpy.org) (1.14.0)
+* [pandas](https://pandas.pydata.org) (0.23.0)
+* [pyodbc](https://github.com/mkleehammer/pyodbc) (4.0.23)
+* [requests](http://docs.python-requests.org) (2.19.1)
