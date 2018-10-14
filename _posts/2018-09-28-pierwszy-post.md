@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog czas start!!!
-image: /img/balloons-post-1.jpg
+image: /img/2018-09-28-pierwszy-post/balloons-post-1.jpg
 tags: [wprowadzenie, devops, ops, sysops, info]
 ---
 
