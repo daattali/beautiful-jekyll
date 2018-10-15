@@ -5,7 +5,7 @@ image: /img/2018-10-15-kubernetes-pierwszy-cluster/kubernetes-logo.png
 tags: [docker, kontenery, kubernetes, okiestracja, vps, linux]
 ---
 
-Ten artykuł będzie poświęcony jak rozpocząć tworzenie klastra kubernetes przy użyciu taniego VPS. Będzie to środowisko, w którym możemy uruchomić nasze projekty, hostować portfolio, czy testować rozwiązania. Artykuł będzie zawierał listę kroków, żeby uruchomić działający klaster z dostępem do niego z poziomu linii komend, jak i interfejsu graficznego.specyfikacji 
+Ten artykuł będzie poświęcony temu jak rozpocząć tworzenie klastra kubernetes używając taniego VPS. Będzie to środowisko, w którym możemy uruchomić nasze projekty, hostować portfolio, czy testować rozwiązania. Artykuł będzie zawierał listę kroków, pozwalającą uruchomić działający klaster z dostępem do niego z poziomu linii komend, jak i interfejsu graficznego. 
 
 ## Przygotowanie
 Do stworzenie klastra będziemy potrzebować
