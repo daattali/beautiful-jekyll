@@ -1,36 +1,61 @@
 {% if site.share-links-active.twitter == false and site.share-links-active.facebook == false and site.share-links-active.google == false and site.share-links-active.linkedin == false %}
 {% else %}
 <section id = "social-share-section">
+  <span class="sr-only">Share: </span>
 
+<<<<<<< HEAD
   <!--- Share on Twitter -->
   {% unless site.share-links-active.twitter == false %}
+=======
+  {% if site.share-links-active.twitter %}
+  <!--- Share on Twitter -->
+>>>>>>> fdaf2eaa003374991bdea2290f2cc10ddd7c2e6a
     <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}+{{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-twitter" title="Share on Twitter">
       <span class="fa fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
     </a>
   {% endunless %}
 
+<<<<<<< HEAD
   <!--- Share on Facebook -->
   {% unless site.share-links-active.facebook == false %}
+=======
+  {% if site.share-links-active.facebook %}
+  <!--- Share on Facebook -->
+>>>>>>> fdaf2eaa003374991bdea2290f2cc10ddd7c2e6a
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-facebook" title="Share on Facebook">
       <span class="fa fa-fw fa-facebook" aria-hidden="true"></span>
+      <span class="sr-only">Facebook</span>
     </a>
   {% endunless %}
 
+<<<<<<< HEAD
   <!--- Share on Google Plus -->
   {% unless site.share-links-active.google == false %}
+=======
+  {% if site.share-links-active.google %}
+  <!--- Share on Google Plus -->
+>>>>>>> fdaf2eaa003374991bdea2290f2cc10ddd7c2e6a
     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-google" title="Share on Google+">
       <span class="fa fa-fw fa-google-plus" aria-hidden="true"></span>
+      <span class="sr-only">Google+</span>
     </a>
   {% endunless %}
 
+<<<<<<< HEAD
   <!--- Share on LinkedIn -->
   {% unless site.share-links-active.linkedin == false %}
+=======
+  {% if site.share-links-active.linkedin %}
+  <!--- Share on LinkedIn -->
+>>>>>>> fdaf2eaa003374991bdea2290f2cc10ddd7c2e6a
     <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}"
       class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
       <span class="fa fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
     </a>
   {% endunless %}
 

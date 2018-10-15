@@ -5,7 +5,11 @@ subtitle: Dallas, TX - rommel@bajamundi.com - m:+14084757485
 bigimg: /img/start.jpg
 ---
 
+<<<<<<< HEAD
 <p align="center">SUMMARY</p>
+=======
+# SUMMARY #
+>>>>>>> fdaf2eaa003374991bdea2290f2cc10ddd7c2e6a
 I have a diverse background in applications and networking.  I have always looked to grow and expand technology bases by focusing on the business problem and solving through technologies.  Over 20 years in technology was spent learning, developing and expanding many areas of technology.  I worked as a tactical problem solver in IT, to customer sales through to solutions architecture.  
 
 Shifts in technology have driven greater interest in those technology growth phases such as the transition of voice from TDM, to ATM/Frame, and on to IP.  Next I focused on enabling the shift of video from traditional MPEG technologies to Adaptive bit rate technologies and scaling those environments leveraging CDN technologies.  Current focus area is on Data Center technologies; Cloud Management systems, SDN models, automation, orchestration forwarding plane performance, application dependency graphs.   These technologies all play back to network carrier's core business of networking and helping them monetize their network while reducing their operations cost.  
@@ -97,7 +101,15 @@ Technical leadership in an account team focused on a large multinational network
   - Contributed 2 chapters to Deploying Cisco voice over IP Solutions covering SIP technologies and traffic analysis leveraging Erlang probability and Markovian process models.
 
 
+<<<<<<< Updated upstream
   If you would like to discuss the opportunity further please feel free to reach out:
 
   [rommel@bajamundi.com](mailto:rommel@bajamundi.com?subject=Opportunity")
   [Call me @ +1 408 475-7485](tel://+14084758475)
+=======
+
+    If you would like to discuss the opportunity further please feel free to reach out:
+
+    [rommel@bajamundi.com](mailto:rommel@bajamundi.com?subject=Opportunity")
+    [Call me @ +1 408 475-7485](tel://+14084758475)
+>>>>>>> Stashed changes
