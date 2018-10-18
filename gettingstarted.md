@@ -146,11 +146,23 @@ $ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d db graphq
 ```
 
 
-# Run Test Cases
-To execute all test cases, go to the `/test` folder and execute the following command:
+# Run Tests
+You can run all tests locally using the following commands:
 ```shell
- $ cd test
- $ docker-compose up
+ $ # Backend
+ $ test/run-tests.sh
+ $ # Frontend
+ $ app/run-container.sh npm run test
+```
+
+# Run Linter
+Depending on the used editor, eslint and pylint can be integrated.
+You can run all linters locally using the following commands:
+```shell
+ $ # Backend
+ $ test/run-linter.sh
+ $ # Frontend
+ $ app/run-container.sh npm run lint
 ```
 
 
