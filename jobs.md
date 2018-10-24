@@ -6,7 +6,7 @@ title: Jobs
 
 ## Current Positions
 
-* [Call for Teaching Assistants for 2018W1](https://ubc.ca1.qualtrics.com/jfe/form/SV_cAZwboSVSIVN3h3)
+* [Call for Teaching Assistants for 2018W2](https://ubc.ca1.qualtrics.com/jfe/form/SV_cAZwboSVSIVN3h3)
 
 ## Past Positions
 * Call for Teaching Assistants for 2018W1
