@@ -10,15 +10,15 @@ subtitle: Hành trình trải nghiệm và khám phá của tôi
 - C/C++/MFC
 - HTML5/CSS3/Bootstrap/Jquery
 - Java core
-- VB6/VB.NET/C#/ASP.NET Webform
+- VB6/VB.NET/C#/ASP.NET Webform & MVC
 - Python/Flask/Django/Odoo
 - T-SQL
 
 **Công cụ lập trình:**
 - DBMS family: MS SQL Server, MySQL, Oracle, Postgresql
 - SCM: SVN, GIT
-- Editor: Visual Studio Code, Visual studio 2015 (and older version), IntellJ, Eclipse, Pycharm
-- OS: Ubuntu, Window
+- Editor: Visual Studio Code, Visual studio 2015 (and older version), IntellJ, Eclipse, Pycharm, VIM
+- OS: Ubuntu/CentOS/ Windows/ MacOS
 
 **Kỹ năng khác:**
 - Quản lý dự án với MS Project Management
@@ -55,16 +55,16 @@ Rời ghế nhà trường, nhưng hành trình "đi học" của tôi chưa bao
 
 **Tôi đi làm**
 
-Cuối năm 2007, tôi bắt đầu hành trình "đi làm" của mình bằng việc đầu quân cho công ty AI Viet Nam (Công ty TNHH Trí tuệ Việt Nam), công ty được giải nhất cuộc thi Nhân tài đất Việt năm 2008. Ở đây, tôi đã được học làm như nào để trở thành một full-stack developer. Tôi học và làm đủ các ngôn ngữ lập trình VB.NET, C#, Java,...
+Cuối năm 2007, tôi bắt đầu hành trình "đi làm" của mình bằng việc đầu quân cho công ty AI Viet Nam (Công ty TNHH Trí tuệ Việt Nam), công ty được giải nhất cuộc thi Nhân tài đất Việt năm 2008. Ở đây, tôi đã được học làm như nào để trở thành một full-stack developer (một khái niệm thời bấy giờ chưa hề có). Tôi học và làm đủ các ngôn ngữ lập trình VB.NET, C#, Java,...
 
-Giữa năm 2009, các anh core leader của AI tách ra thành lập công ty Trí Nam để đầu tư và lĩnh vực nghiên cứu công nghệ mới, trong đó có leader của tôi nên tôi cũng sang Trí Nam để tiếp tục theo đuổi công nghệ. Ở Trí Nam, tôi đã được "học" trở thành một leader, mỗi lần tiếp xúc khách hàng là một lần tôi được học thêm nhiều trải nghiệm. Từ những khách hàng là giáo sư, tiến sĩ hàng đầu Việt Nam cho đến những người nông dân, công nhân đang làm ở công trường...
+Giữa năm 2009, các anh core leader của AI tách ra thành lập công ty Trí Nam để đầu tư và lĩnh vực nghiên cứu công nghệ mới, trong đó có leader của tôi nên tôi cũng sang Trí Nam để tiếp tục theo đuổi công nghệ. Ở Trí Nam, tôi đã được "học" trở thành một leader, mỗi lần tiếp xúc khách hàng là một lần tôi được học thêm nhiều trải nghiệm. Từ những khách hàng là giáo sư, tiến sĩ hàng đầu Việt Nam cho đến những người nông dân, công nhân đang làm ở công trường...Những sản phẩm mà tôi đã tham gia làm ở Trí Nam vẫn còn đến tận ngày nay: Hệ thống phần mềm trạm thu phí, hệ thống CMS, hệ thống e-learning.
 
 
-Cuối năm 2010, tôi rời Trí Nam để đến đầu quân cho Viettel-một ông lớn trong làng công nghệ - với ước mơ được đi đến các chân trời mới (lúc đó VT đang đầu tư vào Lào - Campuchia - Haiti). Bằng kinh nghiệm BA ở Trí Nam và khả năng lập trình của tôi, tôi được giao nhiệm vụ tối ưu công việc bằng cách áp dụng CNTT vào công việc vận hành khai thác tại Tổng công ty Mạng lưới Viettel. Những bằng khen, giấy khen trong suốt thời gian từ 2011 đến 2016 đã chứng minh tôi đã thành công. Trước khi rời Viettel, tôi được giao nhiệm vụ teamleader của group BSS - phòng Điều hành mạng lưới - Trung tâm Vận hành Khai thác Toàn cầu. Tôi chịu trách nhiệm điều hành và duy trì việc đảm bảo an toàn, thông suốt cho mạng lưới Viettel tại Việt Nam và 9 thị trường nước ngoài. 
+Cuối năm 2010, tôi rời Trí Nam để đến đầu quân cho Viettel-một ông lớn trong làng công nghệ - với ước mơ được đi đến các chân trời mới (lúc đó VT đang đầu tư vào Lào - Campuchia - Haiti). Bằng kinh nghiệm BA ở Trí Nam và khả năng lập trình của tôi, tôi được giao nhiệm vụ tối ưu công việc bằng cách áp dụng CNTT vào công việc vận hành khai thác tại Tổng công ty Mạng lưới Viettel. Những bằng khen, giấy khen trong suốt thời gian từ 2011 đến 2016 đã chứng minh tôi đã thành công. Tháng 10-2015, tôi được giao nhiệm vụ làm PM của group BSS - phòng Điều hành mạng lưới - Trung tâm Vận hành Khai thác Toàn cầu. Tôi chịu trách nhiệm điều hành và duy trì việc đảm bảo an toàn, thông suốt cho mạng lưới access Viettel tại Việt Nam và 9 thị trường nước ngoài & làm PO cho dự án "NOCPRO-God's eye" và "Automation-God's hands".
 
-Công việc làm quản lý cuốn tôi theo các chỉ tiêu KPI của tôi và cả nhóm, tôi không còn được code, không được sáng tạo theo những gì mình thích,...tôi đã nghỉ việc tại Viettel sau 7 năm trải qua các vị trí Dev/BA/Tester/PO/Manager để tiếp tục theo đuổi những dòng code nhiệm màu. 
+Công việc làm quản lý cuốn tôi theo các chỉ tiêu KPI của tôi và cả nhóm, tôi không còn được code, không được sáng tạo theo những gì mình thích, cùng lúc đảm nhiệm vị trí PM của team và PO của dự án hiện đại hoá mạng khai thác viễn thông...khiến tôi cảm thấy mình như siêu nhân. Nhưng đam mê của tôi lại là code và sáng tạo những thứ mới chứ không phải ngày ngày nhìn biểu đồ và ... đi họp báo cáo. Cuối cùng, tôi đã nghỉ việc tại Viettel sau 7 năm trải qua các vị trí Dev/BA/Tester/PO/Manager để tiếp tục theo đuổi đam mê của mình.
 
->Có thể nhiều người sẽ thấy hài hước khi tôi từ bỏ công việc tính bằng nghìn $ một tháng để đi làm freelancer nhặt nhạnh từng $. 
+>Có thể nhiều người sẽ thấy hài hước khi tôi từ bỏ công việc tính bằng nghìn $ một tháng để đi làm lại từ đầu với đồng lương nhỏ hơn rất nhiều. nhặt nhạnh từng $. 
 
 >**"Cuộc sống vốn ngắn ngủi, hãy sống cho những đam mê & sở thích của mình - làm gì cũng được chỉ cần không hổ thẹn với bản thân của mình là được"**
 
