@@ -1,0 +1,30 @@
+---
+layout: page
+title: Past Projects
+subtitle: For the MDS Capstone course
+
+---
+
+
+2018:
+
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Discovering thematic categories from survey comments_
+- [BGC Engineering](https://bgcengineering.ca/): _Anomaly detection and flood forecasting using real-time hydrometric data_
+- [Destination BC](https://www.destinationbc.ca/): _Predicting conversion rates for tourism advertisements on Facebook and Instagram_
+- [Finn AI](https://www.finn.ai/): _Evaluating a Natural Language Processing Pipeline for Chatbots_
+- [Microsoft MSN](https://www.microsoft.com/): _Web traffic prediction for msn.com_
+- [SAP](https://www.sap.com/) and [Teejlab](https://teejlab.com/): _Automated Legal Risk Assessment on Web Service License Changes_
+- [Semios](http://semios.com/): _Binary Classification of Leaf Wetness Using Sensor Data_
+- [Thinkific](https://www.thinkific.com/): _Success in online learning: recommending actions to course creators_
+- [Unbounce](https://unbounce.com): _Using survival analysis to finding leading indicators of customer churn_
+- [QxMD](https://qxmd.com/): _Building a Recommendation System for Medical Research Papers_
+- [UBC Sauder School of Business](http://www.sauder.ubc.ca/): _Extracting features from financial documents for predicting firm performance_
+- [Visier](https://www.visier.com/): _Automated Human Resources Insight Discovery_
+
+2017:
+
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Empowering employee engagement through AI_
+- [Coast Mountain Bus Company](https://www.translink.ca/en/About-Us/Corporate-Overview/Operating-Companies/CMBC.aspx): _Forecasting Transit Schedules and Congestion Areas_
+- [Rio Tinto](http://www.riotinto.com/): _Tools for Analyzing Mining Drill Data_
+- [UBC CTLT](http://ctlt.ubc.ca/): [_edXvis: Interactive Visualization of Student	Engagement with edX MOOCs_](https://ubc-mds.github.io/2018-01-01-CTLT-capstone/)
+- [Unbounce](https://unbounce.com/): _Unbounce Community Forum Analysis_
