@@ -41,6 +41,15 @@ Indicators compute data sets on one or several data sources in order to evaluate
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
   <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
+  </tr>
+  <tr>
     <td>indicator_type_id</td><td>Integer</td><td>Foreign key of the indicator_type table, to indicate which type is the indicator.</td>
   </tr>
   <tr>
@@ -71,6 +80,15 @@ Indicator groups define collections of indicators to be computed in the same bat
   </tr>
   <tr>
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
+  </tr>
+  <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
   </tr>
 </table>
 
@@ -110,6 +128,12 @@ Indicator types determine which class and method is used to compute indicators. 
   </tr>
   <tr>
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
+  </tr>
+  <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
   </tr>
 </table>
 
@@ -198,6 +222,15 @@ Parameters used to compute indicators.
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
   <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
+  </tr>
+  <tr>
     <td>parameter_type_id</td><td>Integer</td><td>Type of parameter, the combination of parameter_type_id and indicator_id must be unique.</td>
   </tr>
   <tr>
@@ -231,6 +264,12 @@ Parameter types determine which types of parameters can be used to compute indic
   </tr>
   <tr>
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
+  </tr>
+  <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
   </tr>
 </table>
 
@@ -341,6 +380,15 @@ Data sources are systems containing or exposing data on which the the tool can c
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
   <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
+  </tr>
+  <tr>
     <td>data_source_type_id</td><td>Integer</td><td>Foreign key of the data_source_type table, to indicate which type is the data source.</td>
   </tr>
 </table>
@@ -368,6 +416,12 @@ Data source types describe the types of a data sources the tool can connect to.
   </tr>
   <tr>
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
+  </tr>
+  <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
   </tr>
 </table>
 
@@ -431,6 +485,15 @@ Batches record the execution of groups of indicators.
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
   </tr>
   <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
+  </tr>
+  <tr>
     <td>indicator_group_id</td><td>Integer</td><td>Foreign key of the indicator_group table, to indicate to which group belongs the batch.</td>
   </tr>
 </table>
@@ -458,6 +521,15 @@ Sessions record the execution of indicators within a batch.
   </tr>
   <tr>
     <td>updated_date</td><td>Timestamp</td><td>Record last updated date.</td>
+  </tr>
+  <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>updated_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user updated the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
   </tr>
   <tr>
     <td>batch_id</td><td>Integer</td><td>Foreign key of the batch table, to indicate during which batch the session was executed.</td>
@@ -499,6 +571,12 @@ Session results contain a summary of indicators execution.
   </tr>
   <tr>
     <td>created_date</td><td>Timestamp</td><td>Record created date.</td>
+  </tr>
+  <tr>
+    <td>created_by_id</td><td>Integer</td><td>Foreign key of the user table, to indicate which user created the record.</td>
+  </tr>
+  <tr>
+    <td>user_group_id</td><td>Integer</td><td>Foreign key of the user_group table, to indicate to which user group the record belongs to.</td>
   </tr>
   <tr>
     <td>session_id</td><td>Integer</td><td>Foreign key of the session table, to indicate in which session the result was computed.</td>
