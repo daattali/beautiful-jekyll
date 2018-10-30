@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concepts
+title: Database Objects
 use-site-title: true
 ---
 
@@ -12,7 +12,7 @@ use-site-title: true
 
 
 # Indicator
-Indicators compute data sets on one or several data sources in order to evaluate the quality of their data. 
+Indicators compute data sets on one or several data sources in order to evaluate the quality of their data.
 
 **Table:** `indicator`<br/>
 <table>
@@ -148,7 +148,7 @@ To be documented
 ## Freshness
 A freshness indicator connects to one single **target** data source. It computes its last updated timestamp and compares it to the current timestamp. For each record in the data set, the framework computes the **difference in minutes** as follow:
 
-`Current Timestamp - Last updated timestamp from target request`. 
+`Current Timestamp - Last updated timestamp from target request`.
 
 It compares the difference with the alert operator and alert threshold parameters defined for the indicator and triggers an alert if the condition is met. The measure parameter must be set to `last_update`.
 

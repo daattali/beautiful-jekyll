@@ -25,7 +25,9 @@ description: Official documentation
 navbar-links:
   Home: "index"
   Getting Started: "gettingstarted"
-  Concepts: "concepts"
+  Concepts:
+    - Database objects: "databaseobjects"
+    - Users management: "usersmanagement"
   Architecture: "architecture"
 
 # Image to show in the navigation bar - image must be a square (width = height)
