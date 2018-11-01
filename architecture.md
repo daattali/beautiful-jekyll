@@ -16,7 +16,7 @@ use-site-title: true
 The database `mobydq` uses [PostgreSQL 10.4](https://www.postgresql.org). It contains configuration data required to execute indicators and stores the result of their executions. The database runs into an independent Docker container named `mobydq-db`.
 
 
-When running the project locally, it is accessible on `host: localhost` and `port:5432`.
+When running the project locally, it is accessible on `host: localhost` and `port: 5432`.
 
 
 Note access to the database is restricted by default to avoid intrusions. In order to access it you must run it with the following command to open the container ports:
@@ -60,4 +60,4 @@ The API runs into an independent Docker container named `mobydq-api`. When runni
 The web application provides a user-friendly interface to configure and monitor indicators. It is built using [React JS](https://reactjs.org/) and runs into an independent Docker container named `mobydq-app`.
 
 
-When running the project locally, it is accessible on http://localhost.
+When running the project locally, it is accessible on [http://localhost](http://localhost).
