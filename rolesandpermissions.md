@@ -4,47 +4,37 @@ title: Roles & Permissions
 use-site-title: true
 ---
 
-In progress
 
 # Roles & Permissions
-Roles and permissions are managed using the internal PostgreSQL role concepts.
+Roles and permissions are managed using the internal PostgreSQL role concepts. MobyDQ uses two roles which define to which database object users can access to (object level security).
 
-<p>There are 2 main roles defined for users:</p>
-<table>
-  <tr>
-    <th>Role</th>
-    <th>Description</th>
-    <th>Naming</th>
-  </tr>
-  <tr>
-    <td>Superadmin</td>
-    <td>
-      All rights on all tables</br>
-      Rights granted on all user groups
-    </td>
-    <td>super_admin</td>
-  </tr>
-  <tr>
-    <td>User</td>
-    <td>
-      Full rights on indicator, indicator_group and parameter</br>
-      Select rights on data_source, data_source_type, parameter_type, indicator_type, batch, session, session_result</br>
-      Rights granted on specific user groups
-    </td>
-    <td>"user_group_" + user_group_name</td>
-  </tr>
-  <tr>
-    <td>Admin</td>
-    <td>
-      Same as User, but additional update right on data_source</br>
-      Rights granted on specific user groups
-    </td>
-    <td>"user_group_" + user_group_name + "_admin"</td>
-  </tr>
-</table>
+## Role: standard
+The `standard` role grants permissions to read, write and delete the following objects:
+* Indicators
+* Indicator groups
+* Indicator parameters
+
+In addition the `standard` role grants permissions to read data sources, except their password attribute.
+
+## Role: admin
+The `admin` role grants the same permissions as the `standard` role, plus the permissions to read, write and delete the following objects:
+* Data sources (including the password attribute)
+* Data source types
+* Indicator types
+* Indicator parameter types
+* Users
+* User groups
 
 
 ---
 
 
 # Row Level Security
+In addition to roles and permissions, MobyDQ also implements the row level security feature of PostgreSQL. It is used to manage visibility rules on the data so that users only see the data of the groups they belong to. Row level security is implemented for the following objects:
+* Data sources
+* Indicators
+* Indicator groups
+* Indicator parameters
+* Batches
+* Sessions
+* Session results
