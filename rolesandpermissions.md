@@ -9,7 +9,7 @@ In progress
 # Roles & Permissions
 Roles and permissions are managed using the internal PostgreSQL role concepts.
 
-<p>There are three main roles defined for users:</p>
+<p>There are 2 main roles defined for users:</p>
 <table>
   <tr>
     <th>Role</th>
