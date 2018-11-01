@@ -1,16 +1,14 @@
 ---
 layout: page
-title: Users Management
+title: Roles & Permissions
 use-site-title: true
 ---
 
 In progress
 
 # Roles & Permissions
-Roles and permissions are based on the internal PostgreSQL role concepts and implement as well row level security policies to manage visibility rules on the data. MobyDQ
+Roles and permissions are managed using the internal PostgreSQL role concepts.
 
-<h2>Roles and Permissions</h2>
-<p>We use the internal roles and row security policy concept of Postgres.</p>
 <p>There are three main roles defined for users:</p>
 <table>
   <tr>
@@ -44,10 +42,9 @@ Roles and permissions are based on the internal PostgreSQL role concepts and imp
     <td>"user_group_" + user_group_name + "_admin"</td>
   </tr>
 </table>
-<p style="text-align:center;">
-  <img src="{{ site.baseurl }}/img/role_dependency.png" alt="Role Dependency" align="middle"/>
-<p>
 
-# Users
 
-# User Groups
+---
+
+
+# Row Level Security
