@@ -60,7 +60,7 @@ The `user` table stores authentication information of the users registered in Mo
 
 
 # User Group
-User groups define a set of users who can access a common set of indicators and data sources. The user group concept is used to manage row level security on the data which means users can only see the records which belongs to their groups. When a user group is created in the `user_group` table, a new user group role `user_group_<id>` is created in the `pg_roles` table.
+User groups define a set of users who can access a common set of indicators and data sources. The user group concept is used to manage row level security on the data which means users can only see the records which belong to their groups. When a user group is created in the `user_group` table, a new user group role `user_group_<id>` is created in the `pg_roles` table.
 
 **Table:** `user_group`<br/>
 <table>
@@ -92,7 +92,7 @@ User groups define a set of users who can access a common set of indicators and 
 
 
 # User Group User
-The table `user_group_user` is used to managed the assignment of users to user groups. When a user is associated to a user group in the `user_group_user` table, the user group role `user_group_<id>` is automatically granted to the `user_<id>` role in the `pg_roles` table.
+The table `user_group_user` is used to manage the assignment of users to user groups. When a user is associated to a user group in the `user_group_user` table, the user group role `user_group_<id>` is automatically granted to the `user_<id>` role in the `pg_roles` table.
 
 **Table:** `user_group`<br/>
 <table>

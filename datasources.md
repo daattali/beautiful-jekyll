@@ -51,7 +51,7 @@ Data sources are systems containing or exposing data. The `data_source` table st
   </tr>
 </table>
 
-**Examples of Data Source**
+**Examples of Data Source:**
 To be documented
 
 

@@ -26,7 +26,7 @@ navbar-links:
   Home: "index"
   Getting Started: "gettingstarted"
   Concepts:
-    - Overview: "conceptsoverview"
+    - Overview: "overview"
     - Data Sources: "datasources"
     - Indicators: "indicators"
     - Batches & Sessions: "batchesandsessions"

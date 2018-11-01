@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concepts Overview
+title: Overview
 use-site-title: true
 ---
 
