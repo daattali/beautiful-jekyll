@@ -5,10 +5,10 @@ use-site-title: true
 ---
 
 
-# Roles & Permissions
-Roles and permissions are managed using the internal PostgreSQL role concepts. MobyDQ uses two roles which define to which database object users can access to (object level security).
+# Roles
+Roles and permissions are managed using the internal PostgreSQL role concepts. MobyDQ uses two roles which define to which database objects users can access to (object level security).
 
-## Role: standard
+## Standard
 The `standard` role grants permissions to read, write and delete the following objects:
 * Indicators
 * Indicator groups
@@ -16,7 +16,7 @@ The `standard` role grants permissions to read, write and delete the following o
 
 In addition the `standard` role grants permissions to read data sources, except their password attribute.
 
-## Role: admin
+## Admin
 The `admin` role grants the same permissions as the `standard` role, plus the permissions to read, write and delete the following objects:
 * Data sources (including the password attribute)
 * Data source types
