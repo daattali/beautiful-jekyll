@@ -28,8 +28,6 @@ $ sudo usermod -a -G docker <username>
 ```
 
 
-
-
 ## Install Docker Compose
 Execute the following command in a terminal window.
 ```shell
@@ -38,8 +36,6 @@ $ sudo apt install docker-compose
 
 
 ---
-
-
 
 
 # Setup Your Instance
@@ -100,8 +96,6 @@ $ docker network create mobydq-network
 ```
 
 
-
-
 ## Create Docker Volume
 Due to Docker compatibility issues on Windows machines, we recommend to manually create a Docker volume instead of directly mounting external folders in `docker-compose.yml`. This volume will be used to persist the data stored in the PostgreSQL database. Execute the following command.
 ```shell
@@ -124,8 +118,6 @@ $ docker-compose build --no-cache
 ```
 
 
-
-
 ## Run Docker Containers
 To start all the Docker containers as deamons, go to the project root and execute the following command in your terminal window.
 ```shell
@@ -144,48 +136,3 @@ Note access to GraphiQL and the PostgreSQL database is restricted by default to 
 $ cd mobydq
 $ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d db graphql
 ```
-
-
-# Run Tests
-You can run all tests locally using the following commands:
-```shell
- $ # Backend
- $ test/run-tests.sh
- $ # Frontend
- $ app/run-container.sh npm run test
-```
-
-# Run Linter
-Depending on the used editor, eslint and pylint can be integrated.
-You can run all linters locally using the following commands:
-```shell
- $ # Backend
- $ test/run-linter.sh
- $ # Frontend
- $ app/run-container.sh npm run lint
-```
-
-
----
-
-
-# Dependencies
-## Docker Images
-The containers run by `docker-compose` have dependencies with the following Docker images:
-* [postgres](https://hub.docker.com/_/postgres/) (tag: 10.4-alpine)
-* [graphile/postgraphile](https://hub.docker.com/r/graphile/postgraphile/) (tag: latest)
-* [python](https://hub.docker.com/_/python/) (tag: 3.6.6-alpine3.8)
-* [python](https://hub.docker.com/_/python/) (tag: 3.6.6-slim-stretch)
-
-
-## Python Packages
-* [docker](https://docker-py.readthedocs.io) (3.5.0)
-* [flask](http://flask.pocoo.org) (1.0.2)
-* [flask_restplus](https://flask-restplus.readthedocs.io) (0.11.0)
-* [flask_cors](https://flask-cors.readthedocs.io) (3.0.6)
-* [graphql_py](https://pypi.org/project/graphql-py) (0.7.1)
-* [jinja2](http://jinja.pocoo.org) (2.10.0)
-* [numpy](http://www.numpy.org) (1.14.0)
-* [pandas](https://pandas.pydata.org) (0.23.0)
-* [pyodbc](https://github.com/mkleehammer/pyodbc) (4.0.23)
-* [requests](http://docs.python-requests.org) (2.19.1)
