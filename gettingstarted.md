@@ -46,7 +46,7 @@ Based on the template below, create a text file named `.env` at the root of the 
 
 ### Google OAuth provider
 To configure the Google OAuth provider a client secret and a client id is needed.
-1. Go to https://console.cloud.google.com/apis/credentials
+1. Go to <https://console.cloud.google.com/apis/credentials>
 2. Create a new project within the Google Cloud Console, if necessary
 3. Click `Create credentials`
 4. Select `OAuth client ID`
