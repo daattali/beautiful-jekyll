@@ -38,7 +38,7 @@ $ sudo apt install docker-compose
 
 # Setup Your Instance
 
-## Create Configuration Files
+## Create Configuration File
 Based on the template below, create a text file named `.env` at the root of the project. This file is used by Docker Compose to load configuration parameters into environment variables. This is typically used to manage file paths, logins, passwords, etc. Make sure to update the `postgres` user password for both `POSTGRES_PASSWORD` and `DATABASE_URL` parameters.
 
 ```ini
@@ -89,9 +89,9 @@ To delegate user authentication to Google, you must provide a client Id and secr
 3. Click `Create credentials`
 4. Select `OAuth client Id`
 5. Select `Web application`
-6. For `Authorized redirect URIs` add the URL specified in `GOOGLE_REDIRECT_URI` in your `.env` file below
+6. For `Authorized redirect URIs` add the URL specified in `GOOGLE_REDIRECT_URI` in your `.env` file
 7. Click `Create`
-8. Copy the client Id to `GOOGLE_CLIENT_ID` and the secret key to `GOOGLE_CLIENT_SECRET` in your `.env` file below
+8. Copy the client Id to `GOOGLE_CLIENT_ID` and the secret key to `GOOGLE_CLIENT_SECRET` in your `.env` file
 
 ## Create Docker Network
 This custom network is used to connect the different containers between each others. It is used in particular to connect the ephemeral containers ran when executing batches of indicators.
