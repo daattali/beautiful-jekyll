@@ -173,7 +173,7 @@ To be documented
 </table>
 
 
-## List of Indicator Type Values
+**List of Indicator Type Values**
 <table>
   <tr>
     <th>id</th><th>name</th><th>module</th><th>class</th><th>method</th>
@@ -270,7 +270,7 @@ Parameter types describe the types of parameters can be used by MobyDQ to comput
 </table>
 
 
-## List of Parameter Type Values
+**List of Parameter Type Values**
 <table>
   <tr>
     <th>id</th><th>name</th><th>description</th>
