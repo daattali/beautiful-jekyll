@@ -87,7 +87,7 @@ Data source types describe the type of systems MobyDQ can connect to.
 </table>
 
 
-## List of Data Source Type Values
+**List of Data Source Type Values**
 <table>
   <tr>
     <th>id</th><th>name</th>
