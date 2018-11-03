@@ -26,13 +26,13 @@ navbar-links:
   Home: "index"
   Getting Started: "gettingstarted"
   Concepts:
-    - Overview: "overview"
-    - Data Sources: "datasources"
-    - Indicators: "indicators"
-    - Batches & Sessions: "batchesandsessions"
-    - Users & User Groups: "usersandusergroups"
-    - Roles & Permissions: "rolesandpermissions"
-  Architecture: "architecture"
+    - Overview: "pages/overview"
+    - Data Sources: "pages/datasources"
+    - Indicators: "pages/indicators"
+    - Batches & Sessions: "pages/batchesandsessions"
+    - Users & User Groups: "pages/usersandusergroups"
+    - Roles & Permissions: "pages/rolesandpermissions"
+  Architecture: "pages/architecture"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
