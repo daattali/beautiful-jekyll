@@ -6,7 +6,7 @@ subtitle: New advances in simulation will allow marine biologists to simulate ve
 
 Last Saturday I attended the PopSim Workshop at Cold Spring Harbor. The workshop was organized in an effort to address the lack of 
 benchmark simulations in population genetics and genomics for evaluating methods. A “benchmark” set is a set of simulations that everyone 
-uses to evaluate and compare their methods to each other. Benchmark datasets for image recognition, like ![MNIST](https://en.wikipedia.org/wiki/MNIST_database), 
+uses to evaluate and compare their methods to each other. Benchmark datasets for image recognition, like [MNIST](https://en.wikipedia.org/wiki/MNIST_database), 
 have been crucial in moving the field of machine learning forward.
 
 We discussed how simulations have bias in the way that they are designed by different people, depending on which aspects of 
