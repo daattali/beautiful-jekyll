@@ -14,5 +14,7 @@ This paper aims to elucidate the different reactions museum visitors have to the
 I object to their methodology in that they did not use an iterative approach. I think it is highly important in questions of human-computer interaction to modify one’s approach based on initial feedback from participants and to continually reform the experiment to match the reactions and needs of actual visitors in a museum context. However, I also found the paper very helpful in its exploration of different modes of interaction – when working on SWCMA with my group, we generally focused on the types of tasks accomplished rather than the way that people interact with our information. I think it would have been useful to consider whether people want to use phones or bespoke museum technology and whether they want to bring their own technology or borrow something from the museum. Overall, I think that the findings in this paper are useful but ambiguous and that the methodology of the study could be improved upon by taking a more iterative approach that builds on participant reactions.
 
 ### Citation
-O'Brien, Sean and Petrelli, Daniela (2018). Phone vs. Tangible in Museums: A Comparative Study. CHI 2018 Honorable Mention. <https://dl.acm.org/citation.cfm?id=3173686>
+D. Petrelli and S. O’Brien, “Phone vs . Tangible in Museums : A
+Comparative Study,” in Proceedings of the 2018 CHI Conference on
+Human Factors in Computing Systems, 2018. <https://dl.acm.org/citation.cfm?id=3173686>
 
