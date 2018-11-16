@@ -28,6 +28,7 @@ navbar-links:
     - Good Design: "2018-09-10-good-design"
     - Bad Design: "2018-09-10-bad-design"
     - Project Proposal: "2018-09-20-Individual-Project-Proposal"
+    - Research Paper: "2018-11-15-Research-Paper"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
