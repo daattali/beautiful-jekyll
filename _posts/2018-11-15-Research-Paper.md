@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Research Paper
-subtitle: Phone vs. Tangible in Museums – A Comparative Study
+subtitle: Phone vs. Tangible in Museums\: A Comparative Study
 gh-repo: samzgrunebaum/samzgrunebaum.github.io
 gh-badge: [star, fork, follow]
 tags: [research,museum technology,HCI]
