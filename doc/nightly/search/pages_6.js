@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['eulercharacteristic',['eulerCharacteristic',['http://dgtal.org/doc/tools/nightly/eulerCharacteristic.html',1,'']]],
-  ['embedding_20n_2ddimensional_20dec_20structures_20into_20m_2ddimensional_20space',['Embedding n-dimensional DEC structures into m-dimensional space',['../moduleDECEmbedding.html',1,'']]],
-  ['extending_20the_20qglviewer_20viewer3d_20interface',['Extending the QGLViewer Viewer3D interface',['../moduleQGLExtension.html',1,'']]]
+  ['git_2fgithub_20source_20code_20management_20in_20dgtal',['Git/Github source code management in DGtal',['../moduleFAQGit.html',1,'']]],
+  ['geometric_20transformations',['Geometric transformations',['../moduleGeometricTransform.html',1,'']]],
+  ['geometry_20package',['Geometry package',['../packageGeometry.html',1,'']]],
+  ['geometry_20concepts',['Geometry Concepts',['../packageGeometryConcepts.html',1,'']]],
+  ['graph_20package',['Graph package',['../packageGraph.html',1,'']]],
+  ['graph_20main_20concepts',['Graph Main Concepts',['../packageGraphConcepts.html',1,'']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['alpha_2dthick_20segment_20recognition',['Alpha-thick Segment Recognition',['../moduleAlphaThickSegmentReco.html',1,'']]],
-  ['analysis_20of_20one_2ddimensional_20discrete_20structures',['Analysis of one-dimensional discrete structures',['../moduleGridCurveAnalysis.html',1,'']]],
-  ['arithmetic_20package',['Arithmetic package',['../packageArithmetic.html',1,'']]],
-  ['arithmetic_20concepts_20and_20models',['Arithmetic Concepts and Models',['../packageArithmeticConcepts.html',1,'']]]
+  ['cellular_20grid_20space_20and_20topology_2c_20unoriented_20and_20oriented_20cells_2c_20incidence',['Cellular grid space and topology, unoriented and oriented cells, incidence',['../moduleCellularTopology.html',1,'']]],
+  ['cubical_20complex',['Cubical Complex',['../moduleCubicalComplex.html',1,'']]],
+  ['convex_20hull_20and_20alpha_2dshape_20in_20the_20plane',['Convex hull and alpha-shape in the plane',['../moduleHull2D.html',1,'']]]
 ];

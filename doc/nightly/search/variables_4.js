@@ -1,8 +1,6 @@
 var searchData=
 [
   ['d',['d',['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#a44d6f58cb30317b6069d7a3e3bbbaa55',1,'DGtal::concepts::CLMSTTangentFromDSS::d()'],['../structDGtal_1_1concepts_1_1CConstImage.html#a33969f3d75c6b049158b1dace7ffe978',1,'DGtal::concepts::CConstImage::d()'],['../structDGtal_1_1concepts_1_1CTrivialConstImage.html#ad5da09ef5a6cd8f21e6d2e91b0fbe17c',1,'DGtal::concepts::CTrivialConstImage::d()'],['../structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html#a8d1ea421b1c149cf4ea64fa106339952',1,'DGtal::Display3D::ClippingPlaneD3D::d()']]],
-  ['d0',['D0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a2c8a3a42a1c57467a93a54b6966f2bda',1,'DGtal::DECImage2D']]],
-  ['d1',['D1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#af82a69b501567cec4552cb2274732845',1,'DGtal::DECImage2D']]],
   ['d1_5fr2',['d1_r2',['../structDGtal_1_1functors_1_1IICurvatureFunctor.html#ad4a2114b3d0a7280f47dd4d9c9318819',1,'DGtal::functors::IICurvatureFunctor']]],
   ['d3_5fr',['d3_r',['../structDGtal_1_1functors_1_1IICurvatureFunctor.html#a7d1fa3e1554a9d04ec79da4eeb1936a3',1,'DGtal::functors::IICurvatureFunctor']]],
   ['d6_5fpir6',['d6_PIr6',['../structDGtal_1_1functors_1_1IIGaussianCurvature3DFunctor.html#ad1aecadd9cdc60f2f90487ff215549fa',1,'DGtal::functors::IIGaussianCurvature3DFunctor::d6_PIr6()'],['../structDGtal_1_1functors_1_1IIFirstPrincipalCurvature3DFunctor.html#ab3dc67f046ddc7b9c79ebb098033ca4d',1,'DGtal::functors::IIFirstPrincipalCurvature3DFunctor::d6_PIr6()'],['../structDGtal_1_1functors_1_1IISecondPrincipalCurvature3DFunctor.html#a6ee6a9d2f40b4ce3af6ac5b039088df6',1,'DGtal::functors::IISecondPrincipalCurvature3DFunctor::d6_PIr6()'],['../structDGtal_1_1functors_1_1IIPrincipalCurvatures3DFunctor.html#ada43c69f9fa35d7d30ef858c83abbfce',1,'DGtal::functors::IIPrincipalCurvatures3DFunctor::d6_PIr6()']]],
@@ -22,9 +20,6 @@ var searchData=
   ['defaultoutersum',['defaultOuterSum',['../classDGtal_1_1DigitalSurfaceConvolver.html#a029d2f55e1d542abe6f12f9be23d8a73',1,'DGtal::DigitalSurfaceConvolver::defaultOuterSum()'],['../classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a8cae7896e6e208417ef9bc97cc03bde6',1,'DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 2 &gt;::defaultOuterSum()'],['../classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_013_01_4.html#a16d6f8b6f74d46705e5ffb7dc0ec8f0e',1,'DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;::defaultOuterSum()']]],
   ['defaultvalue',['defaultValue',['../classDGtal_1_1ConstImageAdapter.html#acec2013930a09725b65324ea1ae661e1',1,'DGtal::ConstImageAdapter::defaultValue()'],['../classDGtal_1_1ImageAdapter.html#a6c7d7738417c3de63de00c7ef646cf92',1,'DGtal::ImageAdapter::defaultValue()']]],
   ['degree',['Degree',['../classLibBoard_1_1Board.html#a809c4701e9c467a747476ad3b27badd1',1,'LibBoard::Board']]],
-  ['delta_5fv_5fl1',['delta_v_l1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#ab91621c28544e2f96b2d83af52f4f308',1,'DGtal::ATu0v1::delta_v_l1()'],['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a856014983d1e1ba3aadd1da55734a597',1,'DGtal::ATu2v0::delta_v_l1()']]],
-  ['delta_5fv_5fl2',['delta_v_l2',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#abd177eee666421dd3b696fcd23cbf6c7',1,'DGtal::ATu0v1::delta_v_l2()'],['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a35209d52f7d1d349eb6532ca9c4a8908',1,'DGtal::ATu2v0::delta_v_l2()']]],
-  ['delta_5fv_5floo',['delta_v_loo',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#a85e66326e51c693d3bddd2d68aa664ef',1,'DGtal::ATu0v1::delta_v_loo()'],['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a436435e150c5490e92d06813737d661f',1,'DGtal::ATu2v0::delta_v_loo()']]],
   ['descendant',['descendant',['../structDGtal_1_1LightSternBrocot_1_1Node.html#a55e0e1035e4a8a0017cbcbfd0f65e49e',1,'DGtal::LightSternBrocot::Node']]],
   ['descendant2',['descendant2',['../structDGtal_1_1LightSternBrocot_1_1Node.html#ab82ea67a34c160b35ee747bb35077867',1,'DGtal::LightSternBrocot::Node']]],
   ['descendantleft',['descendantLeft',['../structDGtal_1_1SternBrocot_1_1Node.html#ae335c27e52e87c2afaeff6af941fe81c',1,'DGtal::SternBrocot::Node']]],
@@ -39,7 +34,7 @@ var searchData=
   ['diry',['diry',['../structDGtal_1_1CameraDirection.html#a059d219a8ce5382b15da1f733b1a5dfc',1,'DGtal::CameraDirection']]],
   ['dirz',['dirz',['../structDGtal_1_1CameraDirection.html#af19dfd66f2040bc634309f9f5b949c5e',1,'DGtal::CameraDirection']]],
   ['disttonext',['distToNext',['../structDGtal_1_1AngleLinearMinimizer_1_1ValueInfo.html#ad272138ee56dc0ffe585a24f564eb2d7',1,'DGtal::AngleLinearMinimizer::ValueInfo']]],
-  ['domain',['domain',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#aff1f664f4cfc60efe4778ae3cd5a875c',1,'DGtal::DECImage2D']]],
+  ['domain',['domain',['../testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51',1,'testProjection.cpp']]],
   ['dpi_5f2',['dPI_2',['../structDGtal_1_1functors_1_1IICurvatureFunctor.html#a1715235db7ddb22771dedf0eed94ced7',1,'DGtal::functors::IICurvatureFunctor']]],
   ['dss',['dss',['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#a363f6cbfe3e1bbe20af13da5537d6cb8',1,'DGtal::concepts::CLMSTTangentFromDSS']]],
   ['dsssegments',['dssSegments',['../classDGtal_1_1LambdaMST2DEstimator.html#ad956096a01e6574d4a71efa57a03399b',1,'DGtal::LambdaMST2DEstimator::dssSegments()'],['../classDGtal_1_1LambdaMST3DEstimator.html#a6c6eb50ad7a8adba44b17d857e14c402',1,'DGtal::LambdaMST3DEstimator::dssSegments()']]],
@@ -49,10 +44,5 @@ var searchData=
   ['dt6_5f18',['dt6_18',['../namespaceDGtal_1_1Z3i.html#a0b37f6533ee49fb1b86d8300c4939a5e',1,'DGtal::Z3i']]],
   ['dt6_5f26',['dt6_26',['../namespaceDGtal_1_1Z3i.html#af91ab69d064d580789a2443f4420bb58',1,'DGtal::Z3i']]],
   ['dt8_5f4',['dt8_4',['../namespaceDGtal_1_1Z2i.html#a3145832e4c5d8db0223f117954a1fe72',1,'DGtal::Z2i']]],
-  ['dual_5fd0',['dual_D0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a1a3c046736c8f6b09ce47f7316ab9dd9',1,'DGtal::DECImage2D']]],
-  ['dual_5fd1',['dual_D1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#affe6aa43745d1e77856ceb68ab4f339e',1,'DGtal::DECImage2D']]],
-  ['dual_5fh0',['dual_h0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a3272ff7259f7e4079cd2c6b10b0c4aaa',1,'DGtal::DECImage2D']]],
-  ['dual_5fh1',['dual_h1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a39696351afed6cc48e959205c6946d44',1,'DGtal::DECImage2D']]],
-  ['dual_5fh2',['dual_h2',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a798a6d12a28ff903d8ed64ae1f18605a',1,'DGtal::DECImage2D']]],
   ['dual_5fsize',['dual_size',['../structDGtal_1_1DiscreteExteriorCalculus_1_1Property.html#ad57e9e76178718ff0c41d587a80c9b63',1,'DGtal::DiscreteExteriorCalculus::Property']]]
 ];

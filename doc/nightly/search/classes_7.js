@@ -23,8 +23,6 @@ var searchData=
   ['gltextureimage',['GLTextureImage',['../structDGtal_1_1Viewer3D_1_1GLTextureImage.html',1,'DGtal::Viewer3D']]],
   ['gouraudtriangle',['GouraudTriangle',['../structLibBoard_1_1GouraudTriangle.html',1,'LibBoard']]],
   ['gradientcolormap',['GradientColorMap',['../classDGtal_1_1GradientColorMap.html',1,'DGtal']]],
-  ['gradientcolormap_3c_20unsigned_20char_2c_20dgtal_3a_3acmap_5fcool_20_3e',['GradientColorMap&lt; unsigned char, DGtal::CMAP_COOL &gt;',['../classDGtal_1_1GradientColorMap.html',1,'DGtal']]],
-  ['gradientcolormap_3c_20unsigned_20char_2c_20dgtal_3a_3acmap_5fhot_20_3e',['GradientColorMap&lt; unsigned char, DGtal::CMAP_HOT &gt;',['../classDGtal_1_1GradientColorMap.html',1,'DGtal']]],
   ['gradientcolormap_3c_20unsigned_20int_20_3e',['GradientColorMap&lt; unsigned int &gt;',['../classDGtal_1_1GradientColorMap.html',1,'DGtal']]],
   ['graph_5ftraits_3c_20dgtal_3a_3adigitalsurface_3c_20tdigitalsurfacecontainer_20_3e_20_3e',['graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;',['../structboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4.html',1,'boost']]],
   ['graph_5ftraits_3c_20dgtal_3a_3aobject_3c_20tdigitaltopology_2c_20tdigitalset_20_3e_20_3e',['graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;',['../structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html',1,'boost']]],

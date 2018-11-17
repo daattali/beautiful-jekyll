@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['concepts',['concepts',['../namespaceDGtal_1_1concepts.html',1,'DGtal']]],
-  ['concepts',['concepts',['../namespaceDGtal_1_1deprecated_1_1concepts.html',1,'DGtal::deprecated']]],
+  ['concepts',['concepts',['../namespaceDGtal_1_1concepts.html',1,'DGtal::concepts'],['../namespaceDGtal_1_1deprecated_1_1concepts.html',1,'DGtal::deprecated::concepts']]],
   ['conceptutils',['ConceptUtils',['../namespaceDGtal_1_1concepts_1_1ConceptUtils.html',1,'DGtal::concepts']]],
-  ['dec',['dec',['http://dgtal.org/doc/tools/nightly/namespaceDGtal_1_1functions_1_1dec.html',1,'DGtal::functions']]],
-  ['deprecated',['deprecated',['../namespaceDGtal_1_1deprecated.html',1,'DGtal']]],
-  ['deprecated',['deprecated',['../namespaceDGtal_1_1functors_1_1deprecated.html',1,'DGtal::functors']]],
+  ['deprecated',['deprecated',['../namespaceDGtal_1_1deprecated.html',1,'DGtal::deprecated'],['../namespaceDGtal_1_1functors_1_1deprecated.html',1,'DGtal::functors::deprecated']]],
   ['detail',['detail',['../namespaceDGtal_1_1detail.html',1,'DGtal']]],
   ['dgtal',['DGtal',['../namespaceDGtal.html',1,'']]],
   ['experimental',['experimental',['../namespaceDGtal_1_1experimental.html',1,'DGtal']]],

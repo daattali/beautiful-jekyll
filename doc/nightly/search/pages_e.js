@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['nd_20fast_20marching_20methods',['nD Fast Marching Methods',['../moduleFMM.html',1,'']]],
-  ['number_20and_20integer_20concepts',['Number and Integer Concepts',['../moduleNumber.html',1,'']]],
-  ['nd_20volumetric_20analysis_20using_20separable_20processes',['nD Volumetric Analysis using Separable Processes',['../moduleVolumetric.html',1,'']]]
+  ['sets_20of_20points_20in_20digital_20spaces',['Sets of points in digital spaces',['../moduleDigitalSets.html',1,'']]],
+  ['set_20operations_20on_20arbitrary_20containers',['Set operations on arbitrary containers',['../moduleSetFunctions.html',1,'']]],
+  ['shapes_2c_20shapers_20and_20digitizers',['Shapes, Shapers and Digitizers',['../moduleShape.html',1,'']]],
+  ['shortcuts_20_28for_20the_20impatient_20developper_29',['Shortcuts (for the impatient developper)',['../moduleShortcuts.html',1,'']]],
+  ['shapes_20package',['Shapes package',['../packageShapes.html',1,'']]],
+  ['shape_20concepts',['Shape Concepts',['../packageShapesConcepts.html',1,'']]]
 ];

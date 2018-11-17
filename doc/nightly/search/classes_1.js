@@ -9,8 +9,7 @@ var searchData=
   ['adaptableunaryfunction',['AdaptableUnaryFunction',['../structboost_1_1AdaptableUnaryFunction.html',1,'boost']]],
   ['addtextureimage2dwithfunctor',['AddTextureImage2DWithFunctor',['../structDGtal_1_1AddTextureImage2DWithFunctor.html',1,'DGtal']]],
   ['addtextureimage3dwithfunctor',['AddTextureImage3DWithFunctor',['../structDGtal_1_1AddTextureImage3DWithFunctor.html',1,'DGtal']]],
-  ['adjacency_5fiterator',['adjacency_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;']]],
-  ['adjacency_5fiterator',['adjacency_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;']]],
+  ['adjacency_5fiterator',['adjacency_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::adjacency_iterator'],['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1adjacency__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::adjacency_iterator']]],
   ['adjacencygraphconcept',['AdjacencyGraphConcept',['../structboost_1_1AdjacencyGraphConcept.html',1,'boost']]],
   ['alias',['Alias',['../classDGtal_1_1Alias.html',1,'DGtal']]],
   ['alphathicksegmentcomputer',['AlphaThickSegmentComputer',['../classDGtal_1_1AlphaThickSegmentComputer.html',1,'DGtal']]],
@@ -22,8 +21,7 @@ var searchData=
   ['anglelinearminimizerbyrelaxation',['AngleLinearMinimizerByRelaxation',['../classDGtal_1_1AngleLinearMinimizerByRelaxation.html',1,'DGtal']]],
   ['anyblock',['AnyBlock',['../structDGtal_1_1IndexedListWithBlocks_1_1AnyBlock.html',1,'DGtal::IndexedListWithBlocks']]],
   ['anycellcollection',['AnyCellCollection',['../structDGtal_1_1KhalimskyPreSpaceND_1_1AnyCellCollection.html',1,'DGtal::KhalimskyPreSpaceND']]],
-  ['arc',['Arc',['../structDGtal_1_1DigitalSurface_1_1Arc.html',1,'DGtal::DigitalSurface']]],
-  ['arc',['Arc',['../structLibBoard_1_1Arc.html',1,'LibBoard']]],
+  ['arc',['Arc',['../structDGtal_1_1DigitalSurface_1_1Arc.html',1,'DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Arc'],['../structLibBoard_1_1Arc.html',1,'LibBoard::Arc']]],
   ['arithdssiterator',['ArithDSSIterator',['../classDGtal_1_1ArithDSSIterator.html',1,'DGtal']]],
   ['arithmeticaldsl',['ArithmeticalDSL',['../classDGtal_1_1ArithmeticalDSL.html',1,'DGtal']]],
   ['arithmeticaldsl_3c_20coordinate_2c_20integer_2c_20adjacency_20_3e',['ArithmeticalDSL&lt; Coordinate, Integer, adjacency &gt;',['../classDGtal_1_1ArithmeticalDSL.html',1,'DGtal']]],
@@ -48,7 +46,5 @@ var searchData=
   ['associativecategory',['AssociativeCategory',['../structDGtal_1_1AssociativeCategory.html',1,'DGtal']]],
   ['associativecontainer',['AssociativeContainer',['../structboost_1_1AssociativeContainer.html',1,'boost']]],
   ['astroid2d',['Astroid2D',['../classDGtal_1_1Astroid2D.html',1,'DGtal']]],
-  ['atu0v1',['ATu0v1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html',1,'DGtal']]],
-  ['atu2v0',['ATu2v0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html',1,'DGtal']]],
   ['avnaimetal2x2detsigncomputer',['AvnaimEtAl2x2DetSignComputer',['../classDGtal_1_1AvnaimEtAl2x2DetSignComputer.html',1,'DGtal']]]
 ];

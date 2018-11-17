@@ -4,7 +4,6 @@ var searchData=
   ['magickcast_3c_20color_20_3e',['MagickCast&lt; Color &gt;',['../structDGtal_1_1functors_1_1MagickCast_3_01Color_01_4.html',1,'DGtal::functors']]],
   ['magickreader',['MagickReader',['../structDGtal_1_1MagickReader.html',1,'DGtal']]],
   ['magickwriter',['MagickWriter',['../structDGtal_1_1MagickWriter.html',1,'DGtal']]],
-  ['mainwindow',['MainWindow',['http://dgtal.org/doc/tools/nightly/classMainWindow.html',1,'']]],
   ['mapassociativecategory',['MapAssociativeCategory',['../structDGtal_1_1MapAssociativeCategory.html',1,'DGtal']]],
   ['max',['Max',['../structDGtal_1_1functors_1_1Max.html',1,'DGtal::functors']]],
   ['meanchannels',['MeanChannels',['../structDGtal_1_1functors_1_1MeanChannels.html',1,'DGtal::functors']]],

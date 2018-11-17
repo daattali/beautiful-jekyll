@@ -10,7 +10,5 @@ var searchData=
   ['flipped',['flipped',['../structDGtal_1_1DiscreteExteriorCalculus_1_1Property.html#af251d521205d8a158353b045f1bd7fd2',1,'DGtal::DiscreteExteriorCalculus::Property']]],
   ['font',['font',['../structLibBoard_1_1Board_1_1State.html#a7134ae750392b216157f9c2436931861',1,'LibBoard::Board::State']]],
   ['fontsize',['fontSize',['../structLibBoard_1_1Board_1_1State.html#a391127a1704233b3bbe7e90399ff9c80',1,'LibBoard::Board::State']]],
-  ['foregroundadjacency',['foregroundAdjacency',['../classDGtal_1_1ArithmeticalDSL.html#a45b64ebcc5fe500e76efe0c2e0ef0350',1,'DGtal::ArithmeticalDSL::foregroundAdjacency()'],['../classDGtal_1_1ArithmeticalDSS.html#a1e9185f70cfe36006ef2f18b0c5def86',1,'DGtal::ArithmeticalDSS::foregroundAdjacency()']]],
-  ['former_5fv0',['former_v0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a6fe8c72cb4f3aff076148272b1b1d086',1,'DGtal::ATu2v0']]],
-  ['former_5fv1',['former_v1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#a81d9b5f75e4f7d4c31e239a4b90116bd',1,'DGtal::ATu0v1']]]
+  ['foregroundadjacency',['foregroundAdjacency',['../classDGtal_1_1ArithmeticalDSL.html#a45b64ebcc5fe500e76efe0c2e0ef0350',1,'DGtal::ArithmeticalDSL::foregroundAdjacency()'],['../classDGtal_1_1ArithmeticalDSS.html#a1e9185f70cfe36006ef2f18b0c5def86',1,'DGtal::ArithmeticalDSS::foregroundAdjacency()']]]
 ];

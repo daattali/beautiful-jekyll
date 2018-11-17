@@ -8,6 +8,8 @@ var searchData=
   ['pairassociativecategory',['PairAssociativeCategory',['../structDGtal_1_1PairAssociativeCategory.html',1,'DGtal']]],
   ['pairassociativecontainer',['PairAssociativeContainer',['../structboost_1_1PairAssociativeContainer.html',1,'boost']]],
   ['parallelstrip',['ParallelStrip',['../classDGtal_1_1ParallelStrip.html',1,'DGtal']]],
+  ['parameters',['Parameters',['../structDGtal_1_1Parameters.html',1,'DGtal']]],
+  ['parametervalue',['ParameterValue',['../structDGtal_1_1ParameterValue.html',1,'DGtal']]],
   ['parametricshapearclengthfunctor',['ParametricShapeArcLengthFunctor',['../classDGtal_1_1ParametricShapeArcLengthFunctor.html',1,'DGtal']]],
   ['parametricshapecurvaturefunctor',['ParametricShapeCurvatureFunctor',['../classDGtal_1_1ParametricShapeCurvatureFunctor.html',1,'DGtal']]],
   ['parametricshapetangentfunctor',['ParametricShapeTangentFunctor',['../classDGtal_1_1ParametricShapeTangentFunctor.html',1,'DGtal']]],

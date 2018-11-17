@@ -1,9 +1,9 @@
 var searchData=
 [
   ['discreteexteriorcalculusfactory_3c_20tlinearalgebrabackend_2c_20tinteger_20_3e',['DiscreteExteriorCalculusFactory&lt; TLinearAlgebraBackend, TInteger &gt;',['../classDGtal_1_1DiscreteExteriorCalculus.html#abf912ad683384c8a8e3b301f4357c2c8',1,'DGtal::DiscreteExteriorCalculus']]],
+  ['operator_20_26',['operator &amp;',['../classDGtal_1_1CubicalComplex.html#a2fa750f3811e93cdd2ad306fbbfaff6e',1,'DGtal::CubicalComplex']]],
+  ['operator_20_26_3d',['operator &amp;=',['../classDGtal_1_1CubicalComplex.html#ae00dd7476cd07889b1ae633957e82167',1,'DGtal::CubicalComplex']]],
   ['operator_21_3d',['operator!=',['../classDGtal_1_1CubicalComplex.html#ac5b3e4f7417877cd1dfd5174c1d7be85',1,'DGtal::CubicalComplex']]],
-  ['operator_26',['operator&amp;',['../classDGtal_1_1CubicalComplex.html#a8083d42c066e6fb35aa8f5211e678feb',1,'DGtal::CubicalComplex']]],
-  ['operator_26_3d',['operator&amp;=',['../classDGtal_1_1CubicalComplex.html#a24550ba2909151ec74bc868c4f63ac13',1,'DGtal::CubicalComplex']]],
   ['operator_2a',['operator*',['../classDGtal_1_1CubicalComplex.html#ad2b1b4ac0822361e8c77dab2ed7b7182',1,'DGtal::CubicalComplex']]],
   ['operator_2d',['operator-',['../classDGtal_1_1CubicalComplex.html#a8feff588827b22979391ae41adf6c8da',1,'DGtal::CubicalComplex::operator-()'],['../classDGtal_1_1VoxelComplex.html#a8feff588827b22979391ae41adf6c8da',1,'DGtal::VoxelComplex::operator-()']]],
   ['operator_2d_3d',['operator-=',['../classDGtal_1_1CubicalComplex.html#ad1c2bc40939889f157f4c562f826ed7d',1,'DGtal::CubicalComplex::operator-=()'],['../classDGtal_1_1VoxelComplex.html#ad1c2bc40939889f157f4c562f826ed7d',1,'DGtal::VoxelComplex::operator-=()']]],

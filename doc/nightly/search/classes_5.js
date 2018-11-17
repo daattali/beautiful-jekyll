@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['edge',['Edge',['../structDGtal_1_1IntersectionTargetTrait_1_1Edge.html',1,'DGtal::IntersectionTargetTrait']]],
-  ['edge',['Edge',['../structDGtal_1_1DigitalSurface_1_1Edge.html',1,'DGtal::DigitalSurface']]],
-  ['edge',['Edge',['../structDGtal_1_1Object_1_1Edge.html',1,'DGtal::Object']]],
-  ['edge',['Edge',['../structDGtal_1_1HalfEdgeDataStructure_1_1Edge.html',1,'DGtal::HalfEdgeDataStructure']]],
-  ['edge_5fiterator',['edge_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1edge__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;']]],
-  ['edge_5fiterator',['edge_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1edge__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;']]],
+  ['edge',['Edge',['../structDGtal_1_1IntersectionTargetTrait_1_1Edge.html',1,'DGtal::IntersectionTargetTrait&lt; TSpace, TSeparation, TDimension &gt;::Edge'],['../structDGtal_1_1DigitalSurface_1_1Edge.html',1,'DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Edge'],['../structDGtal_1_1HalfEdgeDataStructure_1_1Edge.html',1,'DGtal::HalfEdgeDataStructure::Edge'],['../structDGtal_1_1Object_1_1Edge.html',1,'DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;::Edge']]],
+  ['edge_5fiterator',['edge_iterator',['../classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1edge__iterator.html',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::edge_iterator'],['../classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1edge__iterator.html',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::edge_iterator']]],
   ['edgelistgraphconcept',['EdgeListGraphConcept',['../structboost_1_1EdgeListGraphConcept.html',1,'boost']]],
   ['eigendecomposition',['EigenDecomposition',['../classDGtal_1_1EigenDecomposition.html',1,'DGtal']]],
   ['eigenlinearalgebrabackend',['EigenLinearAlgebraBackend',['../structDGtal_1_1EigenLinearAlgebraBackend.html',1,'DGtal']]],
@@ -25,8 +21,7 @@ var searchData=
   ['euclideanshapesintersection',['EuclideanShapesIntersection',['../classDGtal_1_1deprecated_1_1EuclideanShapesIntersection.html',1,'DGtal::deprecated']]],
   ['euclideanshapesminus',['EuclideanShapesMinus',['../classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html',1,'DGtal::deprecated']]],
   ['euclideanshapesunion',['EuclideanShapesUnion',['../classDGtal_1_1deprecated_1_1EuclideanShapesUnion.html',1,'DGtal::deprecated']]],
-  ['evalfun',['EvalFun',['../classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html',1,'DGtal::MPolynomialEvaluatorImpl']]],
-  ['evalfun',['EvalFun',['../classDGtal_1_1MPolynomialEvaluatorImpl_3_011_00_01TRing_00_01TOwner_00_01TAlloc_00_01TX_01_4_1_1EvalFun.html',1,'DGtal::MPolynomialEvaluatorImpl&lt; 1, TRing, TOwner, TAlloc, TX &gt;']]],
+  ['evalfun',['EvalFun',['../classDGtal_1_1MPolynomialEvaluatorImpl_3_011_00_01TRing_00_01TOwner_00_01TAlloc_00_01TX_01_4_1_1EvalFun.html',1,'DGtal::MPolynomialEvaluatorImpl&lt; 1, TRing, TOwner, TAlloc, TX &gt;::EvalFun'],['../classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html',1,'DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;']]],
   ['evalfun2',['EvalFun2',['../classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun2.html',1,'DGtal::MPolynomialEvaluatorImpl']]],
   ['exactpredicatelppowerseparablemetric',['ExactPredicateLpPowerSeparableMetric',['../classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html',1,'DGtal']]],
   ['exactpredicatelppowerseparablemetric_3c_20tspace_2c_202_2c_20tpromoted_20_3e',['ExactPredicateLpPowerSeparableMetric&lt; TSpace, 2, TPromoted &gt;',['../classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html',1,'DGtal']]],

@@ -7,6 +7,5 @@ var searchData=
   ['blockxy',['blockXY',['../classDGtal_1_1Naive3DDSSComputer.html#af946bfaace7f8c616bb6a5bdb8d78f58',1,'DGtal::Naive3DDSSComputer']]],
   ['blockxz',['blockXZ',['../classDGtal_1_1Naive3DDSSComputer.html#a4470eca02d1918283b81e7be18c620de',1,'DGtal::Naive3DDSSComputer']]],
   ['blockyz',['blockYZ',['../classDGtal_1_1Naive3DDSSComputer.html#a92d43ab5d355a99421a63deb6c60f328',1,'DGtal::Naive3DDSSComputer']]],
-  ['blue',['Blue',['../classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b',1,'DGtal::Color']]],
-  ['boundingbox',['BoundingBox',['http://dgtal.org/doc/tools/nightly/classViewer3DImage.html#af9bed53f696cbc99071f09a4c895a575a079f8efc55f82c3d6974708b8c958d19',1,'Viewer3DImage']]]
+  ['blue',['Blue',['../classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b',1,'DGtal::Color']]]
 ];

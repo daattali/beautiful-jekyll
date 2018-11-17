@@ -1,8 +1,7 @@
 var searchData=
 [
   ['v',['v',['../structDGtal_1_1concepts_1_1CPowerSeparableMetric.html#af963d948bbfbdf6f4216bcb2afcc1893',1,'DGtal::concepts::CPowerSeparableMetric::v()'],['../structDGtal_1_1concepts_1_1CSeparableMetric.html#ac96519d9d91cd7cf5398a5b6bed878ad',1,'DGtal::concepts::CSeparableMetric::v()'],['../structDGtal_1_1HalfEdgeDataStructure_1_1Edge.html#a593943049dbf6a9d03def80093b5c21b',1,'DGtal::HalfEdgeDataStructure::Edge::v()'],['../structDGtal_1_1HalfEdgeDataStructure_1_1Triangle.html#ad39d3dd274a3abdd470d045aad78005f',1,'DGtal::HalfEdgeDataStructure::Triangle::v()']]],
-  ['v0',['v0',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu2v0.html#a68d407846a63505ec50926d360885996',1,'DGtal::ATu2v0']]],
-  ['v1',['v1',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1ATu0v1.html#ab893eeeda6dab64c8e0e9417ace7374e',1,'DGtal::ATu0v1::v1()'],['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#a83a0cf3ab5b3d2cc6f899902750d73ab',1,'DGtal::concepts::CLMSTTangentFromDSS::v1()']]],
+  ['v1',['v1',['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#a83a0cf3ab5b3d2cc6f899902750d73ab',1,'DGtal::concepts::CLMSTTangentFromDSS']]],
   ['v2',['v2',['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#acc3813bb57f9eb3bdaf79a61f1747f20',1,'DGtal::concepts::CLMSTTangentFromDSS']]],
   ['v_5fshapes',['v_shapes',['../classDGtal_1_1DigitalShapesCSG.html#a1379f6bd41ffff3ad847be862c5444e5',1,'DGtal::DigitalShapesCSG::v_shapes()'],['../classDGtal_1_1EuclideanShapesCSG.html#a00615efd4a107f5eeeba4dcf876c9618',1,'DGtal::EuclideanShapesCSG::v_shapes()']]],
   ['val',['val',['../structDGtal_1_1concepts_1_1CSTLAssociativeContainer.html#a766434abb1ccba66af78d278558e03e8',1,'DGtal::concepts::CSTLAssociativeContainer']]],
@@ -13,7 +12,6 @@ var searchData=
   ['vec',['vec',['../structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#afe4a6e6a7537dae1f70b7d5e6983d616',1,'DGtal::concepts::CLMSTTangentFromDSS']]],
   ['vectnormal',['vectNormal',['../structDGtal_1_1Viewer3D_1_1GLTextureImage.html#a9f681bbacf2538feb2e620d42aa6adc0',1,'DGtal::Viewer3D::GLTextureImage']]],
   ['vectors',['vectors',['../structDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface_1_1EigenStructure.html#af425dcba18c5433367e56998d5a1d93c',1,'DGtal::VoronoiCovarianceMeasureOnDigitalSurface::EigenStructure']]],
-  ['verbose',['verbose',['http://dgtal.org/doc/tools/nightly/structDGtal_1_1DECImage2D.html#a14917c879e65f590b00290639a07952e',1,'DGtal::DECImage2D']]],
   ['vertexsh',['vertexSh',['../structDGtal_1_1AlphaThickSegmentComputer_1_1State.html#a66619745994dd4b95cf37edd1180fb91',1,'DGtal::AlphaThickSegmentComputer::State']]],
   ['vertices',['vertices',['../structDGtal_1_1Display3D_1_1PolygonD3D.html#a3267f730d6bcf7dda50b2d074fd5058e',1,'DGtal::Display3D::PolygonD3D::vertices()'],['../structDGtal_1_1DigitalSurface_1_1Edge.html#a02f0ff7e656ec569612e0066f0dc18d1',1,'DGtal::DigitalSurface::Edge::vertices()'],['../structDGtal_1_1Object_1_1Edge.html#aab0c58d4500de7956ea317cb4172f785',1,'DGtal::Object::Edge::vertices()']]],
   ['viewport',['Viewport',['../classDGtal_1_1Board3DTo2D.html#a32843d094b6081ffade0c82f0a9c00ee',1,'DGtal::Board3DTo2D']]]

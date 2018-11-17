@@ -1,13 +1,14 @@
 <map id="DGtal::CountedConstPtrOrConstPtr&lt; T &gt;" name="DGtal::CountedConstPtrOrConstPtr&lt; T &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DigitalSurfaceContainer \&gt;" alt="" coords="432,13,691,54"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::DigitalSurface \&gt;" alt="" coords="441,78,681,119"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::VoronoiCovariance\lMeasureOnDigitalSurface \&gt;" alt="" coords="434,143,689,199"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; Metric \&gt;" alt="" coords="466,222,657,263"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; VCMOnDigitalSurface \&gt;" alt="" coords="440,287,683,329"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DummyTbl \&gt;" alt="" coords="466,353,657,394"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; ConvolutionFunctor \&gt;" alt="" coords="447,418,676,459"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; KSpace \&gt;" alt="" coords="466,483,657,525"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; ShapeA \&gt;" alt="" coords="466,549,657,590"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; PointPredicate \&gt;" alt="" coords="462,614,661,655"/>
-<area shape="rect" id="node12" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; Shape \&gt;" alt="" coords="466,679,657,721"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DigitalSurfaceContainer \&gt;" alt="" coords="404,11,641,50"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::DigitalSurface \&gt;" alt="" coords="412,74,632,113"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DGtal::VoronoiCovariance\lMeasureOnDigitalSurface \&gt;" alt="" coords="403,137,641,189"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; Metric \&gt;" alt="" coords="432,213,612,251"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; VCMOnDigitalSurface \&gt;" alt="" coords="409,275,635,314"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; DummyTbl \&gt;" alt="" coords="432,338,612,377"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; ConvolutionFunctor \&gt;" alt="" coords="416,401,628,439"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; EuclideanShape \&gt;" alt="" coords="425,463,619,502"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; KSpace \&gt;" alt="" coords="432,526,612,565"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; ShapeA \&gt;" alt="" coords="432,589,612,627"/>
+<area shape="rect" id="node12" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; PointPredicate \&gt;" alt="" coords="431,651,613,690"/>
+<area shape="rect" id="node13" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; Shape \&gt;" alt="" coords="432,714,612,753"/>
 </map>
