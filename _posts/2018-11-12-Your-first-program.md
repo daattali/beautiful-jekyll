@@ -3,7 +3,7 @@ layout: post
 title: Write your first program
 ---
 
-In this tutorial we focus on to write our first python program.At first open the idle or **python interpreter** then simple write the below `code` and see the magic ...
+In this tutorial we focus on to write our first python program.At first open the **IDLE** or **python interpreter** then simple write the below `code` and see the magic ...
 
 <pre>
 print("Hello, World !")
