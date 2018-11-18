@@ -15,4 +15,4 @@ Hello, World !
 
 Find some motivation. Hope so !! There will be more magicial things out there.
 
-Before ending this tutorial try to understand the code. So, here `print( )` is nothing but a function that we pass an argument and got the output shown above . 
+Before ending this tutorial try to understand the code. So, here **print( )** is nothing but a function that we pass an argument and got the output shown above . 
