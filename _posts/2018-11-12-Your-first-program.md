@@ -7,8 +7,10 @@ In this tutorial we focus on to write our first python program.At first open the
 
 <pre>
 print("Hello, World !")
-
-Output : Hello, World !
+</pre>
+Output 
+<pre>
+ Hello, World !
 </pre>
 
 Find some motivation. Hope so !! There will be more magicial things out there.
