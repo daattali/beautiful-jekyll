@@ -16,7 +16,7 @@ This concept will be better understood by going through the following illustrati
 # Illustration of Linear Search
 Consider the following array. Here element to search is `x = 4` and it matches at index 3
 
-                          ![image](https://user-images.githubusercontent.com/35966401/48675473-5ee35500-eb83-11e8-8b8e-786788cbcc13.png)
+   ![image](https://user-images.githubusercontent.com/35966401/48675473-5ee35500-eb83-11e8-8b8e-786788cbcc13.png)
         
 ### Pseudo Code of Linear Search
 ```py
