@@ -8,7 +8,7 @@ In this tutorial we focus on to write our first python program.At first open the
 <pre>
 print("Hello, World !")
 </pre>
-# Output :
+## Output :
 <pre>
 Hello, World !
 </pre>
