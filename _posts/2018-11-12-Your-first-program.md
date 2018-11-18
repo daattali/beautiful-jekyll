@@ -6,7 +6,7 @@ title: Write your first program
 In this tutorial we focus on to write our first python program.At first open the idle or python interpreter then simple write the below code and see the magic ...
 
 <pre>
-<span style="background-color: #FFFF00">Marked text</span> print("Hello, World !")
+<span style="background-color: blue">Marked text</span> print("Hello, World !")
 </pre>
 ## Output :
 <pre>
