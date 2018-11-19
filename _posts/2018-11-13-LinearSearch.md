@@ -14,10 +14,11 @@ Following rules are repeatedly followed:
  * Return the index i of the element if `x = a[i]`
 This concept will be better understood by going through the following illustration. 
 # Illustration of Linear Search
-Consider the following array. Here element to search is `x = 4` and it matches at index 3
+Consider the following array. Here element to search is `x = 4` and it matches at `index 3`
+                                                      ![image](https://user-images.githubusercontent.com/35966401/48720491-0034de80-ec4a-11e8-8ed2-87ee327ff550.png)
 
-   ![image](https://user-images.githubusercontent.com/35966401/48675473-5ee35500-eb83-11e8-8b8e-786788cbcc13.png)
-        
+
+                                                                                       
 ### Pseudo Code of Linear Search
 ```py
 //PSEUDO CODE
@@ -36,12 +37,14 @@ def LinearSearch(L,key):
   for i in range(len(L)):
     if L[i] == key:
       return i
-  retrun -1
+  return -1
 
 if __name__ == "__main__":  ##
   list1 = [0,2,1,4,5]
   k = 5
   print('Found in index',LinearSearch(list,k)) 
 ```
-## Output :
-<pre> Found in index 4 </pre>
+### Output :
+```py 
+Found in index 4 
+```
