@@ -15,13 +15,13 @@ Following rules are repeatedly followed:
 This concept will be better understood by going through the following illustration. 
 # Illustration of Linear Search
 Consider the following array. Here element to search is `x = 4` and it matches at `index 3`
-                                                      ![image](https://user-images.githubusercontent.com/35966401/48720491-0034de80-ec4a-11e8-8ed2-87ee327ff550.png)
+      ![image](https://user-images.githubusercontent.com/35966401/48720491-0034de80-ec4a-11e8-8ed2-87ee327ff550.png)
 
 
                                                                                        
 ### Pseudo Code of Linear Search
 ```py
-//PSEUDO CODE
+## PSEUDO CODE
  LinearSearch(L,key):  
   for i in range(len(L)):
     if L[i] == key:
