@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linear Search
-
+permalink: /linear_search/
 ---
 
 # What is Linear Search?
