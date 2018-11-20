@@ -15,7 +15,7 @@ Following rules are repeatedly followed:
 This concept will be better understood by going through the following illustration. 
 # Illustration of Linear Search
 Consider the following array. Here element to search is `x = 4` and it matches at `index 3`
- https://user-images.githubusercontent.com/35966401/48720491-0034de80-ec4a-11e8-8ed2-87ee327ff550.png
+
 <p align="center">
    <img src="https://user-images.githubusercontent.com/35966401/48720491-0034de80-ec4a-11e8-8ed2-87ee327ff550.png" alt="" />
   
@@ -29,7 +29,7 @@ Consider the following array. Here element to search is `x = 4` and it matches a
   for i in range(len(L)):
     if L[i] == key:
       return i
-  retrun -1 it is returned only when element is not found
+  retrun -1   # it is returned only when element is not found
 ```
 
 # Code of Linear Search
@@ -42,7 +42,7 @@ def LinearSearch(L,key):
       return i
   return -1
 
-if __name__ == "__main__":  ##
+if __name__ == "__main__":  
   list1 = [0,2,1,4,5]
   k = 5
   print('Found in index',LinearSearch(list,k)) 
