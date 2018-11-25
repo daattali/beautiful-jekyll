@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Lukasz Lepecki
+title: Łukasz Łepecki
 subtitle: Software Engineering Consultant
 ---
 
-My name is Lukasz Lepecki and I've just started creating my website.
+My name is Łukasz Łepecki and I've just started creating my website.
