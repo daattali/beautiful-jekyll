@@ -78,7 +78,7 @@ social-network-links:
 #  twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
-#  linkedin: daattali
+  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -169,7 +169,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: false
+      show-avatar: true
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
@@ -240,6 +240,8 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+
+encoding: utf-8
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
