@@ -15,3 +15,5 @@ fields:
   default: ''
 - type: datetime
   name: DATE
+pages:
+- _posts/test.md

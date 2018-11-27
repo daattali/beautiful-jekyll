@@ -1,5 +1,26 @@
 ---
-title: Test
+title: VSAN host health critical
 date: 2018-11-27 16:21:39 +0100
+layout: post
+DATE: 2018-11-27 00:00:00 +0100
 
 ---
+I recently encountered an issue with VSAN where the health of the host would appear as critical in vCenter. The host was still connected, the VMs still running. The health of its disks could not be retrieved and appears to have connectivity issue. 
+
+![](/img/vsan-prob-2.jpg)
+
+![](/img/vsan-prob-1.jpg)
+
+I also noticed in vCenter that the disks would show up but not the disk groups.
+
+![](/img/vsan-prob-3.jpg)
+
+Straight away I enabled SSH, connected to it with Putty and tried to ping the Vsan interface of another VSAN host which worked fine.
+
+Then I came across VMware's [KB2149291](https://kb.vmware.com/s/article/2149291) that proposes to restart the vsanmgmtd service which I did.
+
+    /etc/init.d/vsanmgmtd restart 
+
+And sure enough everything came back to green like nothing happened.
+
+Now I have no idea as to why the service went unresponsive in the first place so I sent the log to VMware to see if we can find the root cause. I will update this post should interesting information come out of it.
