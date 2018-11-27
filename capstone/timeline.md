@@ -16,8 +16,8 @@ The **approximate** timeline is below, followed by additional detail on each eve
 | [Students rate proposals](#students-rate-proposals) | January 10, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
 | [Partners accept invitations](#partners-accept-invitations) | January 30, 2019  |
-| [Capstone fair](#capstone-fair)       | February 2019 (date TBD) |
-| [Students rate the projects](#students-rate-the-projects)  | late February, 2019 |
+| [Capstone fair](#capstone-fair)       | March 1, 2019 |
+| [Students rate the projects](#students-rate-the-projects)  | early March, 2019 |
 | [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2019  |
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 15, 2019 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | March 15, 2019  |
