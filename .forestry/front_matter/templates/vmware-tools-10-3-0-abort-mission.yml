@@ -14,3 +14,4 @@ fields:
   hidden: false
   default: ''
 - type: datetime
+  name: DATE
