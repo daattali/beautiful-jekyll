@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Write your first program
+permalink: /__first__/
 ---
 
 In this tutorial we focus on to write our first python program.At first open the **IDLE** or **python interpreter** then simple write the below `code` and see the magic ...
@@ -8,21 +9,21 @@ In this tutorial we focus on to write our first python program.At first open the
 <pre>
 print("Hello, World !")
 </pre>
-## Output :
+## `Output :`
 <pre>
 Hello, World !
 </pre>
 
 *Find some motivation. Hope so !! There will be more magicial things out there.*
 
-Before ending this tutorial try to understand the code. So, here **print( )** is nothing but a function that we pass an argument and got the output shown above . 
+Before ending this tutorial try to understand the code. So, here `print( )` is nothing but a function that we pass an argument and got the output shown above . 
 
 ## See more example below 
 
 <pre>
 print("I love programming !")
 </pre>
-## Output :
+## `Output :`
 <pre>
 I love programming ! 
 </pre>
