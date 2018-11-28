@@ -1,3 +1,14 @@
+---
+layout: post
+title: A Tutorial on Spark in Python Using Pyspark
+subtitle: RDDs and DataFrames
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [spark, python, big data,distributed datasets]
+---
+
+
+
 
 ### A Tutorial on Spark in Python Using Pyspark
 
