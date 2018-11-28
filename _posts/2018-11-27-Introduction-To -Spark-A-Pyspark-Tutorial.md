@@ -23,11 +23,7 @@ Resilient Distributed Datasets(RDDs) apply and log transformations to the data i
 You can check which version of spark you are running by typing 'spark-submit --version' in the terminal
 
 
-```python
-from PIL import Image
-img = Image.open("/Users/nanaakwasiabayieboateng/SparkPython/spark.png")
-img
-```
+
 
 
 
