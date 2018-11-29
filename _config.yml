@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Lukasz Lepecki
+title: Łukasz Łepecki
 
 # Short description of your site
 description: Software Engineering Consultant
@@ -64,21 +64,21 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Lukasz Lepecki
+  name: Łukasz Łepecki
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
+  linkedin: llepecki
+  github: llepecki
 #  rss: true
 #  email: "someone@example.com"
 #  facebook: daattali
-  github: llepecki
 #  twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
-#  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -240,6 +240,8 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+
+encoding: utf-8
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
