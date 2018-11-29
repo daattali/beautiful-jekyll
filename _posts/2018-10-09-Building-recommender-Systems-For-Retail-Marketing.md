@@ -150,7 +150,7 @@ import multiprocessing
 
 
 ```python
-path='/Users/nanaakwasiabayieboateng/PythonRecommenderSystem'
+path='/PythonRecommenderSystem'
 
 
 # Check current working directory.
@@ -170,8 +170,8 @@ print("Directory changed successfully %s" % retval)
 #print(files)
 ```
 
-    Current working directory /Users/nanaakwasiabayieboateng/PythonRecommenderSystem
-    Directory changed successfully /Users/nanaakwasiabayieboateng/PythonRecommenderSystem
+    Current working directory /PythonRecommenderSystem
+    Directory changed successfully /PythonRecommenderSystem
 
 
 The  pet product reviews dataset from the Amazon product  dataset  used in this work can be found  [here](http://jmcauley.ucsd.edu/data/amazon/links.html).This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
@@ -287,7 +287,7 @@ import pandas as pd
 import gzip
 import os
 
-path='/Users/nanaakwasiabayieboateng/Downloads'
+path='/Downloads'
 
 
 # Check current working directory.
@@ -313,7 +313,7 @@ def getDF(path):
 df = getDF('reviews_Pet_Supplies_5.json.gz')
 ```
 
-    Current working directory /Users/nanaakwasiabayieboateng/PythonRecommenderSystem
+    Current working directory /PythonRecommenderSystem
 
 
 
@@ -749,7 +749,7 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
+![ ]( /img/petreccommender/1.png)
 
 
 #### Visualize missing Values
@@ -763,7 +763,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![ ]( /img/petreccommender/2.png)
 
 
 #### check for correlation among variables
@@ -793,7 +793,7 @@ plt.show()
 ```
 
 
-![png](output_26_0.png)
+![ ]( /img/petreccommender/3.png)
 
 
 #### Memory based Collaborative Filtering
@@ -1763,7 +1763,7 @@ plt.show()
 ```
 
 
-![png](output_73_0.png)
+![ ]( /img/petreccommender/4.png)
 
 
 #### Take a look at prediction vs. actual ratings
@@ -1947,5 +1947,5 @@ plt.ylabel('RMSE', fontsize=20);
 ```
 
 
-![png](output_83_0.png)
+![ ]( /img/petreccommender/5.png)
 
