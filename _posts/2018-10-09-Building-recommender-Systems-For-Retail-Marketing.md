@@ -1,12 +1,5 @@
----
-layout: post
-title:  Recommendation Engine For Retail Marketing
-subtitle: Collaborative Filtering, Content-Based Filtering,single Value Decomposition, Matrix Factorization
-gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
-gh-badge: [star, fork, follow]
-tags: [matrix factorization, memory based collaborative filtering,model-based collaborative filtering,matrix sparsity]
----
 
+#### Recommendation Engine For Retail Marketing
 
 
 
