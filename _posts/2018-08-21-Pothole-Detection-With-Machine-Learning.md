@@ -47,9 +47,9 @@ pacman::p_load(tidyverse,janitor,DataExplorer,skimr,ggpubr,viridis,kableExtra,ca
 
 
 #Load  variable importance plot
-source("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/Varplot.R")
+source("Varplot.R")
 
-source("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/EvaluationMetrics.R")
+source("EvaluationMetrics.R")
 
 
 theme_set(theme_pubclean())
@@ -61,7 +61,7 @@ Equivalently the rio package provides a unified approach to importing a variety 
 
 
 ```r
-potholedata<- rio::import("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/pothole.xlsx",sheet="Sheet6")
+potholedata<- rio::import("/POTHOLEDETECTION/pothole.xlsx",sheet="Sheet6")
 
 potholedata<-potholedata%>%mutate_if(is.character,as_factor)%>%rename(Label_Combined=Feature,Label=Feature2)
   
@@ -1750,7 +1750,7 @@ Varplot(feature,Importance)
 ![ ]( /img/pothole/22.png)
 
 ```r
-ggsave("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/variable.png") 
+ggsave("/POTHOLEDETECTION/variable.png") 
 ```
 
 
@@ -2383,8 +2383,8 @@ ggplot(knnFit)
 
 
 ```r
-saveRDS(knnFit , "/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/knnFit.rds")
-knnFit <- readRDS("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/knnFit.rds")
+saveRDS(knnFit , "/POTHOLEDETECTION/knnFit.rds")
+knnFit <- readRDS("/POTHOLEDETECTION/knnFit.rds")
 ```
 
 
@@ -2829,7 +2829,7 @@ Varplot(feature=h2o_multdata$names,Importance=h2o_multdata$coefficients)
 
 
 ```r
-ggsave("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/h2o_multcombined.png") 
+ggsave("/POTHOLEDETECTION/h2o_multcombined.png") 
 ```
 
 
@@ -3129,8 +3129,8 @@ xgbm <-caret::train(Label_Combined ~ ., data = train_tbl2,
 
 
 
-saveRDS(xgbm , "/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/xgbm.rds")
-xgbm <- readRDS("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/FCA/POTHOLEDETECTION/xgbm.rds")
+saveRDS(xgbm , "/POTHOLEDETECTION/xgbm.rds")
+xgbm <- readRDS("/POTHOLEDETECTION/xgbm.rds")
 
 
 
