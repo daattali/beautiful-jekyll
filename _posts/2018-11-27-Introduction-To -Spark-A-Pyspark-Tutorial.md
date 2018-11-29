@@ -76,7 +76,7 @@ We point the context at a CSV file on disk. The result is a RDD, not the content
 
 
 ```python
-rdd = sc.textFile("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/Capitalone/green_tripdata_2016-09.csv")
+rdd = sc.textFile("green_tripdata_2016-09.csv")
 ```
 
 **Count RDD instances**
