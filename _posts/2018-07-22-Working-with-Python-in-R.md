@@ -164,7 +164,7 @@ print(cwd)
 ```
 
 ```
-## /Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/RPYTHON_files
+## DataMiningscience/RPYTHON_files
 ```
 
 ```python
@@ -180,7 +180,7 @@ print(os.getcwd() + "\n")
 ```
 
 ```
-## /Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/RPYTHON_files
+## /DataMiningscience/RPYTHON_files
 ```
 
 
@@ -377,7 +377,7 @@ os$getcwd()
 ```
 
 ```
-## [1] "/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/RPYTHON_files"
+## [1] "/DataMiningscience/RPYTHON_files"
 ```
 
 ```r
@@ -461,7 +461,7 @@ A Python script can be sourced using source_python() function. For example, if y
 
 
 ```r
-source_python("/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/employeeAttrition.py")
+source_python("/DataMiningscience/employeeAttrition.py")
 
 
 employeedata <- read_employee("https://raw.githubusercontent.com/NanaAkwasiAbayieBoateng/Datasets/master/EmployeeAttrition.csv")
