@@ -242,7 +242,8 @@ var menudata={children:[
 {text:"v",url:"functions_type_v.html#index_v"},
 {text:"w",url:"functions_type_w.html#index_w"},
 {text:"x",url:"functions_type_x.html#index_x"},
-{text:"y",url:"functions_type_y.html#index_y"}]},
+{text:"y",url:"functions_type_y.html#index_y"},
+{text:"z",url:"functions_type_z.html#index_z"}]},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html",children:[
 {text:"a",url:"functions_eval.html#index_a"},

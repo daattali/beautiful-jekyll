@@ -12,15 +12,15 @@
 <g id="clust1" class="cluster">
 <title>cluster_ext</title>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_base</title>
-<polygon fill="#eeeeff" stroke="#eeeeff" points="16,-215 16,-289 384,-289 384,-215 16,-215"/>
-<text text-anchor="middle" x="200" y="-221.8" font-family="Times,serif" font-size="14.00" fill="#000000">base</text>
-</g>
 <g id="clust3" class="cluster">
 <title>cluster_kernel</title>
 <polygon fill="#ddddee" stroke="#ddddee" points="392,-215 392,-289 916,-289 916,-215 392,-215"/>
 <text text-anchor="middle" x="654" y="-221.8" font-family="Times,serif" font-size="14.00" fill="#000000">kernel</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_base</title>
+<polygon fill="#eeeeff" stroke="#eeeeff" points="16,-215 16,-289 384,-289 384,-215 16,-215"/>
+<text text-anchor="middle" x="200" y="-221.8" font-family="Times,serif" font-size="14.00" fill="#000000">base</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_boost</title>

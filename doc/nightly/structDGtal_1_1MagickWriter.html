@@ -122,7 +122,7 @@ struct DGtal::MagickWriter&lt; TImage, TFunctor &gt;</h3>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="testMagickWriter_8cpp.html">testMagickWriter.cpp</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00078">78</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00093">93</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a050e6e8e4f45e293bb80fea2538fa932"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a050e6e8e4f45e293bb80fea2538fa932">&#9670;&nbsp;</a></span>Functor</h2>
@@ -138,7 +138,7 @@ template&lt;typename TImage , typename TFunctor  = functors::Identity&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00083">83</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00098">98</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
 
 </div>
 </div>
@@ -156,7 +156,7 @@ template&lt;typename TImage , typename TFunctor  = functors::Identity&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00081">81</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00096">96</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
 
 </div>
 </div>
@@ -174,7 +174,7 @@ template&lt;typename TImage , typename TFunctor  = functors::Identity&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00082">82</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00097">97</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
 
 </div>
 </div>
@@ -271,10 +271,10 @@ template&lt;typename TImage , typename TFunctor  = functors::Identity&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if no errors occur. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00098">98</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MagickWriter_8h_source.html#l00113">113</a> of file <a class="el" href="MagickWriter_8h_source.html">MagickWriter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      Magick::InitializeMagick(NULL);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordtype">int</span> w = (anImage.domain().upperBound()[0] - anImage.domain().lowerBound()[0])+1;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordtype">int</span> h = (anImage.domain().upperBound()[1] - anImage.domain().lowerBound()[1])+1;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      Magick::Geometry geom(w,h);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a852ab282e5168b5711ef7a87b3aefa68">Magick::Image</a> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>(geom,<span class="stringliteral">&quot;white&quot;</span>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> point: anImage.domain())</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        Color c = aFunctor( anImage(point) );</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        Magick::ColorRGB  magickc( c.red()/255., c.green()/255., c.blue()/255.) ;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        image.pixelColor( point[0] + anImage.domain().lowerBound()[0],</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                         (h-1) - (point[1] + anImage.domain().lowerBound()[1]),</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                         magickc );</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      image.write(filename);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div><div class="ttc" id="testSimpleRandomAccessRangeFromPoint_8cpp_html_a852ab282e5168b5711ef7a87b3aefa68"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a852ab282e5168b5711ef7a87b3aefa68">Image</a></div><div class="ttdeci">ImageContainerBySTLVector&lt; Domain, Value &gt; Image</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00045">testSimpleRandomAccessRangeFromPoint.cpp:45</a></div></div>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      Magick::InitializeMagick(NULL);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordtype">int</span> w = (anImage.domain().upperBound()[0] - anImage.domain().lowerBound()[0])+1;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordtype">int</span> h = (anImage.domain().upperBound()[1] - anImage.domain().lowerBound()[1])+1;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      Magick::Geometry geom(w,h);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a852ab282e5168b5711ef7a87b3aefa68">Magick::Image</a> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>(geom,<span class="stringliteral">&quot;white&quot;</span>);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> point: anImage.domain())</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        Color c = aFunctor( anImage(point) );</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        Magick::ColorRGB  magickc( c.red()/255., c.green()/255., c.blue()/255.) ;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        image.pixelColor( point[0] + anImage.domain().lowerBound()[0],</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                         (h-1) - (point[1] + anImage.domain().lowerBound()[1]),</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                         magickc );</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      }</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      image.write(filename);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div><div class="ttc" id="testSimpleRandomAccessRangeFromPoint_8cpp_html_a852ab282e5168b5711ef7a87b3aefa68"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a852ab282e5168b5711ef7a87b3aefa68">Image</a></div><div class="ttdeci">ImageContainerBySTLVector&lt; Domain, Value &gt; Image</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00045">testSimpleRandomAccessRangeFromPoint.cpp:45</a></div></div>
 <div class="ttc" id="testSimpleRandomAccessRangeFromPoint_8cpp_html_a614d1b1c043b31763c1eb50f64666737"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a></div><div class="ttdeci">Image image(domain)</div></div>
 </div><!-- fragment -->
 </div>
@@ -285,7 +285,7 @@ template&lt;typename TImage , typename TFunctor  = functors::Identity&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 17 2018 13:26:54 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 30 2018 08:59:28 for DGtal by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
