@@ -15,7 +15,7 @@ To fix it we need to connect to the host running the VM via SSH, find its ID and
 
 * Find the ID of the troublesome VM (case sentitive)
 
-    vim-cmd vmsvc/getallvms | grep my-vm-01
+      vim-cmd vmsvc/getallvms | grep my-vm-01
 
 The output will be similar to this including the VM ID, **10** in the example below.
 
@@ -24,6 +24,6 @@ The output will be similar to this including the VM ID, **10** in the example be
 
 * Cancel the task using the VM ID
 
-    vim-cmd vmsvc/tools.cancelinstall 10
+      vim-cmd vmsvc/tools.cancelinstall 10
 
 Once you've done that the task is canceled in vCenter and you can get back to fixing the tools install.
