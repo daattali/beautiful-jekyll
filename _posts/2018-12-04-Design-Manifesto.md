@@ -35,17 +35,26 @@ Throughout the design process, much of the ideas that shape a product come not f
 
 ### Devote time to ethical considerations
 
+Humility is a crucial trait for any conscientious designer – a humble designer goes beyond incorporating other useful designs and concepts into their product: they remain aware of the fallibility of their product at every step of their process. This awareness is necessary when considering the ethical implications of a product and the way that it is designed.
+
 #### Definition
 
+When considering ethics, it is important to define what is ethical and what is not for the purposes of the specific product in question. There are countless examples of products that did not have clearly defined ethical guidelines and that resulted in harm, or even death, when used by the general public. When defining what it means for a specific product to be ethically designed, it is necessary to consider the implications of its use in the context of the many possible users and use cases for the product. A useful starting point can be found in [ACM's Code of Ethics and Professional Conduct](https://ethics.acm.org).
 
+#### Considering implications, use cases (who am I building for?)
 
-#### Considering implications
+One such example of a failure to properly consider such implications is that of [Therac-25]( https://www.google.com/url?q=https%3A%2F%2Fglow.williams.edu%2Fcourses%2F2323779%2Ffiles%2Ffolder%2Freadings%2Fethics%3Fpreview%3D137129553&sa=D&sntz=1&usg=AFQjCNGJ_R92dZc4Y_yYeVlu0x-oz9xOiA), a machine for administering cancer medication that malfunctioned in various use cases resulting in overdoses and deaths. Had the design team for this product clearly stipulated the ethical requirements for their product and carefully considered the implications of people using their product as well as who would actually use it, this problem could likely have been avoided.
 
-
-
-#### Who am I building for?
-
+Another example of a failure to consider use cases and possible users of a product, is the case of Microsoft’s Twitter AI [Tay]( https://www.theverge.com/2016/3/24/11297050/tay-microsoft-chatbot-racist). While this product’s failure had vastly different impacts than that of Therac-25, it was an example of a similar failure on the part of the designers to consider who would actually be using their product and in what ways it would be used. This example is especially important to me as it shows that relying on one’s user base for data and input on the product is not always enough – it is necessary to be discerning about which members of the user base can contribute the most meaningful data and to screen for nefarious members of the population who might wish to misuse your product or otherwise mess with the design process. At the same time, it is important to recognize and predict ways that product can be misused.
 
 
 #### Anticipate problems/possibility of causing harm
 
+This brings us to the final point of considering possible problems and harm that could arise from misuse, or even proper use, of a design. I chose to end on this point as I feel that it is the most important step of the process – it is in this step that the legacy of a product can be engineered to be truly beneficial or where it can be tarnished by misuse and rendered harmful to the world. There are countless examples of hastily rolled out tech that results in irreparable harm – [Facebook’s inadvertent displaying of online activity meant to be secret]( https://drive.google.com/file/d/1Qna8UG2zc2pfcJS5caY9o_dLSwGtX0mI/view), [Strava’s heat map and its potential to reveal the location of secret military bases]( https://www.wired.com/story/strava-heat-map-military-bases-fitness-trackers-privacy/), and [Arkansas’s implementation of an algorithm for cutting Medicaid costs that resulted in patients’ plans being drastically cut for seemingly no reason](https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy) are all examples of products or features that were meant to help people but were not tested so as to prevent potential harm from being caused.
+
+For me, this is a step where it is especially important to apply my initial principle of “Think outside your box/bubble” – it is difficult, even impossible, to know how thousands or millions of individuals different from myself would use my design. Therefore, in my design process I repeatedly iterate while seeking out individuals whose relevant experience can help inform my design decisions. These same techniques for information gathering can and should be applied to discovering potentialities for harmful misuse of a product and preventing this misuse. 
+
+
+### Conclusion
+
+If a designer does not specifically look for these potential pitfalls in their product and does not use all of the techniques and principles described above to find them, they run the risk of becoming another case study of a failed design that hurt someone or worse. Following these principles, however, forces a designer to continuously reevaluate every aspect of their design as it relates to their user base. Thinking outside of my personal experience, repeating the cycle of ideation and testing again and again, working to make my designs accessible and easy to use, taking good ideas from all available resources, and always considering the ethics of my decisions has forced me to consider unexpected ways that my product can impact its users. I recommend these steps to help in arriving at a result that is not only effective at accomplishing the desired tasks but is also a joy to use for the widest possible audience.
