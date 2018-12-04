@@ -13,31 +13,31 @@ People inevitably go into the experience of working on a long term design projec
 
 My experience with creative projects usually involved coming up with an idea and then building it while making adjustments along the way – the notions of coming up with ideas iteratively and using feedback directly from my target user base to adjust my brainstorming were unfamiliar and felt almost unnatural to me. However, this process of actively seeking out information from people with different perspectives than myself and incorporating this wider reservoir of experience into my brainstorming process proved to be the most illuminating step of my design process. 
 
-#### Iterate, iterate, then iterate more!
+### Iterate, iterate, then iterate more!
 
 
 
-#### Work to make things accessible every step of the way
+### Work to make things accessible every step of the way
 
 
 
-#### Don't be afraid to steal: many of the most important ideas come from outside your own head
+### Don't be afraid to steal: many of the most important ideas come from outside your own head
 
 
 
-#### Devote time to ethical considerations
+### Devote time to ethical considerations
 
-##### Definition
-
-
-
-##### Considering implications
+#### Definition
 
 
 
-##### Who am I building for?
+#### Considering implications
 
 
 
-##### Anticipate problems/possibility of causing harm
+#### Who am I building for?
+
+
+
+#### Anticipate problems/possibility of causing harm
 
