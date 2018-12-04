@@ -14,10 +14,12 @@ This section covers terms that have different meanings in different contexts, sp
   * in ML, `regression` refers to predicting continuous outputs given input features, and classification refers to predicting categorical outputs given input features.
   * in statistics, both of the above tasks are referred to as `regression`. See also `supervised learning` below.
 
+
 #### `bias`
   * even within statistics this word has [a lot of meanings](https://en.wikipedia.org/wiki/Bias_(statistics)). See also [bias of an estimator](https://en.wikipedia.org/wiki/Bias_of_an_estimator).
-  * in ML, when we have a trasformation of the form Wx+b (especially in linear models or neural networks) we refer to b as the "bias vector" or the elements of b as the biases. For example, see [this Stack Overflow post](http://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks). In statistics we would call this the "intercept".
-  * in both fields, we talk about the [bias-variance tradeoff](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff), which is related to the tradeoff between overfitting and underfitting.
+  * in ML, when we have a trasformation of the form Wx+b (especially in linear models or neural networks) we refer to b as the "bias term" or the elements of b as the biases if b is a vector. For example, see [this Stack Overflow post](http://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks). In statistics we would call this the "intercept".
+  * in both fields, we talk about the bias-variance tradeoff; see below.
+
 
 #### `parameter` and `parametric`
   * in statistics, `parameter` is used to describe probability distributions, like "the gamma distribution has a shape parameter and a scale parameter". Thus, a `parametric model` is a model using a parametric probability distribution.
@@ -60,6 +62,23 @@ This section covers terms that have different meanings in different contexts, sp
 * `PDF`: Probability Density Function, or the file format, Portable Document Format. And at UBC it even has a third meaning: Post-Doctoral Fellow. So, at UBC, a PDF could save a plot of a PDF as a PDF!
 
 ## Compare and contrast
+
+#### `underfitting` vs. `overfitting` 
+  * `underfitting` refers to a model that is too simple to perform well even on the training data. 
+  * `overfitting` refers to a model that is too specific to the particular training set, potentially because the model is too complex. 
+
+
+#### `bias-variance tradeoff` vs `fundamental tradeoff of ML`
+  * The `bias-variance tradeoff` refers to the tradeoff between the bias and the variance of an estimator (see above for more on the term `bias`)
+  * The `fundamental tradeoff of ML` refers to the tradeoff between training error and approximation error. 
+  * Bias-variance refers to a specific model more in the abstract, whereas training/approximation error refer to a specific model trained on a specific training set.
+  * High bias is roughly the same idea as high training error (underfitting). It means that the model assumptions prevent us from achieving low training error.
+  * High variance is roughly the same idea as high approximation error (overfitting). It means that model would change significantly if given different training data from the same distribution.
+
+
+#### `parameter` vs. `hyperparameter`
+  * following up on the ML definition of a `parameter` (see above), we also contrast this with a `hyperparameter`, which are high-level decisions that one chooses before training the model. For example, "k" in k-nearest neighbours classification is a hyperparameter. Unlike parameters, hyperparameters are most often chosen by humans (although hyperparameter tuning is becoming automated to some extent as well).
+
 #### `discriminative` vs. `generative`
 A [discriminative model](https://en.wikipedia.org/wiki/Discriminative_model) directly models the probability of a given output given the inputs. On the other hand, with a [generative model](https://en.wikipedia.org/wiki/Generative_model) one starts from assumptions about how the data are generated (the "forward model"), and then performs inference about the model given the data (the "backward" step). The term `generative model` itself has some ambiguity: in some contexts it includes the prior distribution (see below) and in other contexts it does not.
 
