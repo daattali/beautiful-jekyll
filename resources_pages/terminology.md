@@ -99,6 +99,14 @@ One (probably flawed) definition of `learning` is updating your parameters given
 
 These are the same thing when referring to a random variable. However, `mean` is sometimes used to refer to the sample mean. Therefore you can have the (sample) mean of the data you collected, but not the expected value. You can also discuss the mean of a bunch of numbers, like the mean (or average) of 1,2,3,4,5; but you wouldn't say the expected value of these numbers.
 
+#### `dimension` vs. `size` vs. `length` (of a vector)
+
+The term `dimension` is unfortunately overloaded when it comes to vectors. From a math standpoint, we're referring to the dimensionality of the space that the vector lives in, which is going to be number of elements in the vector. For example the vector `x = [1,2,3]` is a vector in 3-dimensional space because there are 3 coordinates. So we could say its dimension is 3. However, from a programming point of view, we would call `x` a 1-D array. In contrast, a "2-D array" is a rectangular structure with elements like `x[2,3]`; in other words, what we call a matrix in math. In Python/numpy, the programming dimensionality can be evaluating with `x.ndim`, and the math dimensionality with `x.shape` (or `x.size` or `len(x)`).
+
+The term `length` has its own problems too. In programming, the length of a vector is the number of elements; I also called this the `size` or the math-dimensionality above. However, in math the length may refer to the L2-norm of a vector; that is, the square root of the sum of the squares of its elements, computed using `numpy.linalg.norm(x)`. 
+
+In general, we have to be careful with these terms. If you say "x is 3-dimensional", are you referring to `len(x)` or `x.ndim`?
+
 
 ## Definitions
 
