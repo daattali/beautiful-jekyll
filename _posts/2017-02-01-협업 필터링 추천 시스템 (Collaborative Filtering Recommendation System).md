@@ -93,6 +93,10 @@ Memory-based 협업 필터링의 추천 시스템은 유사도를 기반으로 �
 
 ### 참고
 [추천 시스템(Recommendation System)](http://khanrc.tistory.com/entry/추천-시스템Recommendation-System)
+
 [추천 시스템 분석 – 어떻게 아마존과 넷플릭스가 당신의 취향을 예상하는가?](http://www.kthdaisy.com/recommendation_system_kthdaisy/)
+
 [Item-base collaborative filtering](http://www.cs.carleton.edu/cs_comps/0607/recommend/recommender/itembased.html)
+
 [Item-Based Collaborative Filtering Recommendation Algorithms](http://files.grouplens.org/papers/www10_sarwar.pdf)
+
