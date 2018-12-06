@@ -4,6 +4,8 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2018-10-19** Move Google Analytics to the head (#419) (thanks @jpvicari)
+
 **2018-06-08** Add support for Facebook comments (#350) (thanks @npes87184)
 
 **2018-02-22** Automatically generate sitemap (#323) (thanks @JosemyDuarte)
