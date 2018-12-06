@@ -1,16 +1,40 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Hire me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+# Profile
+-----
+이것저것 해보고 싶은 것도, 배우고 싶은 것도 너무 많은 주니어 개발자입니다.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+아름다운 코드에 욕심이 많습니다.
 
-What else do you need?
+돈 버는 일을 가장 좋아합니다.
 
-### my history
+스타트업, 코드 디자인, 분산처리시스템, 빅데이터, 머신러닝 등에 관심이 많습니다.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
+# Work Experience
+-----
+* **KISTI(한국과학기술정보연구원) 인턴** - 2014.06 ~ 2014.08
+* **드라이어드 서버 개발자** - 2016.06 ~ 2016.08
+* **오리진게임즈 클라이언트 개발자** - 2016.08 ~ 2016.11
+* **소프트기획 개발자** - 2016.11 ~ 2017.07
+* **직방 개발자** - 2017.07 ~
+
+# Skills
+-----
+* Python, C#, Javascript, Typescript
+* Amazon Web Service
+
+# Education
+-----
+* **미추홀 외국어고등학교 일본어과** - 2010.03~2013.02
+* **KAIST 전산학부** - 2013.03~
+* **University of California, Santa Cruz** (Summer Session) - 2015.07~2015.08
+* **MadCamp @ KAIST** - 2015.12~2015.01
+
+# Contact
+-----
+scvgoe@gmail.com
