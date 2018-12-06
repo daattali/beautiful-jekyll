@@ -49,7 +49,7 @@ Successful MDS capstone projects...
 - can be split up into milestones, such that concrete progress can be made in two months.
 - draw on various tools and topics the students have learned in their [courses](https://ubc-mds.github.io/descriptions/) during the MDS program.
 
-What a capstone project is _not_:
+What a capstone project is **not**:
 
 - Setting up and/or maintaining a database.
     - This project should focus on a data science problem.
@@ -57,6 +57,8 @@ What a capstone project is _not_:
     - This type of project is too narrow, not open-ended, and has only one or a few solutions. We expect our students to creatively come up with their own data science approaches to address the capstone partner's over-arching question/problem (with advice from the capstone partner on data science approaches).
 - Data cleaning.
     - Although we expect some data wrangling to be involved in the project, we ask that you provide data that is mostly clean and "ready-to-go". If you need help with this, [ASDa](https://asda.stat.ubc.ca/) from the UBC Department of Statistics might be able to help for a fee.
+- Software development.
+    - Although our students learn some basic principles of software development, they are not generally equipped to build production-level software systems. Software development projects would also typically be less well aligned with the students' interests and the learning objectives of the capstone course.
 
 
 ## FAQ
