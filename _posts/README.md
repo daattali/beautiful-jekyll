@@ -8,3 +8,9 @@
 | 19 - 12 - 2018  |  09:00 - 11:00 AM | CSE224 Electronic Devices and Circuits |Wednesday|
 
 ***
+
+
+***
+|Expenditure|Sales|
+|-----|-----|
+|56|147|
