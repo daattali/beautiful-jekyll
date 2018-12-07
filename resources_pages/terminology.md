@@ -104,6 +104,9 @@ See also [pattern recognition](https://en.wikipedia.org/wiki/Pattern_recognition
 #### `learning` vs. `inference`
 One (probably flawed) definition of `learning` is updating your parameters given your data. The term `inference` is perhaps slightly more specific, as it typically refers to inferring parameters of a model, either Bayesian or frequentist (see above). Here's some [more thoughts on this](https://www.quora.com/What-is-the-difference-between-inference-and-learning).
 
+#### `validation set` vs. `test set`
+There doesn't seem to be a super strong concensus on what these terms mean. Most would agree that `training set` is the data set that you train a model / learning algorithm on. A reasonable definition of `validation set` is that it's a subset of your training data that you hold out to "validate" your model, i.e. assess how well it performs on unseen (during training) data. Sometimes `test set` is used as a synonym of `validation set`; or sometimes it's a second validation set that is only used once, after hyperparameter optimization is performed on the validation set; or sometimes it's used to mean the feature values on which we'll have to make predictions "in production", in which case we'll see the input values but never the true output values of the test set.
+
 
 #### `mean` vs. `expected value`
 
