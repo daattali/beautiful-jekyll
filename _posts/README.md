@@ -8,17 +8,8 @@
 | 19 - 12 - 2018  |  09:00 - 11:00 AM | CSE224 Electronic Devices and Circuits |Wednesday|
 
 ***
-
-<pre>
-<code class="language-python hljs">
-<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd  
-<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np  
-<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt  
-%matplotlib inline
-</code>
-</pre>
-
-|Expenditure (x)|	Sales(y)|
+***
+| *Expenditure (x)* |	*Sales(y)* |
 |-----|----|
 |56	|147|
 |42	|125|
@@ -30,3 +21,4 @@
 |63	|160|
 |55	|149|
 |60	|150|
+***
