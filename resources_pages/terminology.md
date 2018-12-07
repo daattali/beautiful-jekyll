@@ -39,6 +39,16 @@ This section covers terms that have different meanings in different contexts, sp
   * spanning both statistics and ML, we have [factor analysis](https://en.wikipedia.org/wiki/Factor_analysis) and [factor graphs](https://en.wikipedia.org/wiki/Factor_graph), which do not use `factor` in the sense described above (or in the same way as each other, even...).
   * (and in math, factor means one of several things being multiplied together.)
 
+#### `kernel`
+
+This is not a Stat vs. ML problem, but more of a Stat/ML vs. CS vs. math problem. For even more definitions, see the [Wikipedia disambiguation page](https://en.wikipedia.org/wiki/Kernel). Overall, this word ranks up there with `bias` as a hopelessly overloaded and confusing word.
+
+  * in statistics and ML, `kernel methods` refer to applications of the kernel trick, which is a computational speedup in cases where only the dot products of features are needed to make predictions. A common use case is kernel SVMs but they can be used in many other places.
+  * in density estimation and visualization, `kernel density estimation` involves placing a kernel-shaped "bump" in place of each point. This is related to kernel methods mentioned above, and in particular kernel regression.
+  * in computer science, the word `kernel` appears in the field of operating systems. 
+  * as data scientists, we also see it in Jupyter notebooks: the "Python kernel", etc. This is probably related to the CS meaning above?
+  * in linear algebra, `kernel` is another name for nullspace. 
+  
 ## Common acronyms
  * `FDR`: False Discovery Rate
  * `MC`: Monte Carlo
