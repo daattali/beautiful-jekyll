@@ -14,5 +14,5 @@
 
 ![image](https://user-images.githubusercontent.com/35966401/49700090-5ae7a780-fc04-11e8-922b-2ced8c7a5564.png)
 
-:open_mouth:
+:open_mouth: <p align='center'> *Image credit : IBM Cognitive Class* </p>
 ***
