@@ -1,4 +1,5 @@
 ***
+
 | Date            | Time              |Course                                  |  Day|
 | ------          | -----             | -----                                  |-----|
 | *13 - 12 - 2018*  |  *12:00 - 02:00 PM | *CSE214 Object Oriented Programming*   | Thursday|
@@ -9,3 +10,9 @@
 
 ***
 
+***
+
+![image](https://user-images.githubusercontent.com/35966401/49700090-5ae7a780-fc04-11e8-922b-2ced8c7a5564.png)
+
+:open_mouth:
+***
