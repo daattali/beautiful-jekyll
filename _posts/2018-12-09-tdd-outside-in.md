@@ -19,7 +19,7 @@ Un ejemplo del estilo antes descrito podría significar iniciar con el modelo (e
   <img src="/img/classic_tdd.png" alt="Classic TDD flow"/>
 </p>
 
-Debo admitir que en algunas ocasiones, requiere cierto esfuerzo encajar las pequeñas unidades en aquellas compuestas. La necesidad de hacer heavy refactors suele ser normal, debido a que al concentrarte en desarrollar la unidad pequeña no contemplas como será utilizado por las capas superiores. Aun así, no suele ser doloroso, porque cuentas con los test unitarios que te garantizan que tu refactor no rompe con la funcionalidad que tenías.
+Este estilo, en algunas ocasiones requiere cierto esfuerzo para encajar las pequeñas unidades en aquellas compuestas. La necesidad de hacer heavy refactors suele ser normal, debido a que al concentrarte en desarrollar la unidad pequeña no contemplas como será utilizado por las capas superiores. Aun así, no suele ser doloroso, porque cuentas con los test unitarios que te garantizan que tu refactor no rompe con la funcionalidad que tenías.
 
 Este estilo de TDD, conocido como *Chicago/Detroit School*, era el único que conocía antes de leer [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627), en el cual introducen la idea de un nuevo flow.
 
