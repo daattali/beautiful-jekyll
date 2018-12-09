@@ -8,7 +8,7 @@
 1. Install dependencies:
 ``` sh
 gem install bundler
-# Perhaps try brew install brew-gem; brew-gem install bundler
+# Alternatively, brew install brew-gem; brew-gem install bundler
 gem install jekyll
 bundle install
 ```
