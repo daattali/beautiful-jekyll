@@ -12,8 +12,6 @@
 
 ***
 
-![image](https://user-images.githubusercontent.com/35966401/49700090-5ae7a780-fc04-11e8-922b-2ced8c7a5564.png)
-<p align='center'> *Image credit : IBM Cognitive Class* </p>
+![image](https://user-images.githubusercontent.com/35966401/49700090-5ae7a780-fc04-11e8-922b-2ced8c7a5564.png)<p align='center'> *Image credit : IBM Cognitive Class* </p>
 
- :open_mouth: 
 ***
