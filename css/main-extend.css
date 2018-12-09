@@ -1,6 +1,7 @@
 /* Inspired via ocram85/ocram85.github.io */
 
 /* ------ Overrides ------ */
+
 body {
     margin: 0;
     font-family: "Open Sans" "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -108,4 +109,64 @@ a.project-link:hover {
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: 1px 1px 10px #bbb;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alexa-link {
+    max-height:120px;
+    overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+.alexa-link img {
+    max-height: 100px;
+    max-width: 100px
+}
+
+.alexa-link:after {
+    /* Clear the box */
+    content: "";display: table;clear: both;
+}
+.alexa-link span.description {
+    display:none;
+}
+[tooltip]:before {
+    position : absolute;
+     content : attr(tooltip);
+     opacity : 0;
+}
+[tooltip]:hover:before {
+    opacity : 1;
+}
+[tooltip]:not([tooltip-persistent]):before {
+    pointer-events: none;
+}
+
+/*.alexa-link table {
+    max-height:100px;
+}
+*/
+/*.alexa-link table tr {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
+.alexa-link .title {
+    float:left;
+    margin: 0;
+}
+.amazon-link .description {
+    font-size: small;
+    float:left;
+}
+.amazon-link .image {
+    margin:0; float:right;
 }
