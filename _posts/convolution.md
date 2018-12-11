@@ -15,6 +15,10 @@
 and so on to find the all value.
 
 ![image](https://user-images.githubusercontent.com/35966401/49813810-800a2080-fd92-11e8-8b12-f72f5882f332.png)
+
+-------
 ![image](https://user-images.githubusercontent.com/35966401/49816510-345a7580-fd98-11e8-85b0-f4e1f4752775.png)
 
+---
+>>>>>>>>>>### **1	Climate Change and Game Theory**
 
