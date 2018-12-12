@@ -205,7 +205,6 @@ With more than 40 standalone stories, Lopp walks through a complete job life cyc
 <div class="alexa-link">
 
 | {{Intro-Being-Geek | truncatewords: 60}} | ![Being Geek: The Software Developer's Career Handbook][image-devreadinglist-Being-Geek] |
-| {{Intro-Being-Geek | truncatewords: 60}} | ![Being Geek: The Software Developer's Career Handbook][image-devreadinglist-Being-Geek] |
 
 </div>
 
@@ -370,6 +369,8 @@ In a fast-paced and entertaining style, three luminaries of the DevOps movement 
 | {{Intro-Phoenix-Project | truncatewords: 60}} | ![Phonenix Project][image-devreadinglist-Phoenix-Project] |
 
 </div>
+
+All book images from amazon.com.
 
 <!-- 
   Startup [not linked]
