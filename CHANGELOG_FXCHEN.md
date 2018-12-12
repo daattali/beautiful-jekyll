@@ -1,0 +1,3 @@
+- 2018/05/19 Create `writing` index + draft initial pagination style. Use custom search: http://bit.ly/2Lc7T26  Add TODO.md. Improve README.
+- 2018/05/18 Update index hierarchy, config, background, titles. Configure modification date.
+- 2018/02/20 Initial migration of frankc.net to github pages

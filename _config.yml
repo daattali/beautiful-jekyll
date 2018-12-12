@@ -3,8 +3,8 @@
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://fxchen.github.io"
+# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
+url: "https://fxchen.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -103,6 +103,9 @@ url-pretty: "frankc.net"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+#gtag: ""
+
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-36961797-1"
 
@@ -118,9 +121,15 @@ google_analytics: "UA-36961797-1"
 #  uri: "demo.wiki.pro"
 #  opt-out: true
 
-# --- Misc --- #
+# --- Comments --- #
+
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+# disqus: ""
+
+# To use Facebook Comments, fill in a Facebook App ID
+# fb_comment_id: ""
+
+# --- Misc --- #
 
 # Facebook App ID
 # fb_app_id: ""
@@ -252,7 +261,8 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
 
+
+# - jekyll-gist
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
