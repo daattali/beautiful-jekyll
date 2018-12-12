@@ -1,6 +1,9 @@
-# Quiz Instructions
+---
+layout: page
+title: Quiz Instructions
+---
 
-This page describes the procedure that students should take when writing quizzes. 
+This page describes the procedure that students should take when writing quizzes. For policies, see the [Policies page](policies.html#quiz).
 
 ## Instructions
 
