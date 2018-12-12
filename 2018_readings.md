@@ -1,12 +1,15 @@
 ---
 layout: page
 title: 2018-2019 Coordinated readings
-subtitle: To help educate evolutionary biologists about the kinds of questions that marine scientists care about and to help educate marine scientists about the kinds of questions that evolutionary biologists care about, we will develop a recommended reading list of classic papers in both fields.
+subtitle: To help educate evolutionary biologists about the kinds of questions that marine scientists care about and to help educate marine scientists about the kinds of questions that evolutionary biologists care about, we have developed a recommended reading list of classic papers in both fields.
 ---
 
-HEADER THAT KATIE WILL WRITE
+Our coordinated reading groups will meet every two weeks to discuss two papers covering each of a series of topics in marine and evolutionary biology.  Groups participating in these discussions can meet at their home institutions once during each two-week period (any time during the two weeks is fine), either as part of a lab meeting or another seminar or journal club.  Participants will discuss the papers listed for that week, and address the discussion questions provided with each topic.  For each topic, the group should then choose one person to summarize the group’s reaction to the papers and discussion questions on a Slack channel we have set up to facilitate discussions at evolvingseas.slack.com. Discussion groups can also use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups.
 
-## Week 1
+## Theme and rationale
+For our first set of coordinated readings, we decided to focus the scale of spatial and temporal variability in the ocean, with a focus on how this variability may influence evolutionary processes. We are interested to have discussions about how adaptive change in populations may be structured in space in time, particularly below the scale of gene flow. Some of the readings were also designed to spark discussions about what constitutes evidence for adaptation, how we should design experiments and sampling studies, and how . Keep in mind there are many papers that we would like to discuss but are not discussed (e.g., plasticity, evolutionary rescue, 
+
+## Week 1: Deadline for discussion January 21
 
 ### Topic - Spatial and temporal scale of environmental variation
 
