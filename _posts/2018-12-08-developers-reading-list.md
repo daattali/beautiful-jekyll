@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Timeless Software Developer Reading List
+title: A Timeless Software Developer Reading List
 subtitle: The 24 books that I recommend to software developers
-permalink: dev-list
+permalink: dev-reading-list
 image: /img-posts/devreadinglist-0-thumb.png
 image-height: 192px
 image-width: 192px
