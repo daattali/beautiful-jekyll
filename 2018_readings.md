@@ -4,14 +4,14 @@ title: 2018-2019 Coordinated readings
 subtitle: To help educate evolutionary biologists about the kinds of questions that marine scientists care about and to help educate marine scientists about the kinds of questions that evolutionary biologists care about, we have developed a recommended reading list of classic papers in both fields.
 ---
 
-Our coordinated reading groups will meet every two weeks to discuss two papers covering each of a series of topics in marine and evolutionary biology.  Groups participating in these discussions can meet at their home institutions once during each two-week period (any time during the two weeks is fine), either as part of a lab meeting or another seminar or journal club.  Participants will discuss the papers listed for that week, and address the discussion questions provided with each topic.  For each topic, the group should then choose one person to summarize the group’s reaction to the papers and discussion questions on a Slack channel we have set up to facilitate discussions at evolvingseas.slack.com. Discussion groups can also use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups.
+Our coordinated reading groups will meet every two weeks to discuss two papers covering each of a series of topics in marine and evolutionary biology.  Groups participating in these discussions can meet at their home institutions once during each two-week period (any time during the two weeks is fine), either as part of a lab meeting or another seminar or journal club.  Participants will discuss the papers listed for that week, and address the discussion questions provided with each topic.  For each topic, the group should then choose one person to summarize the group’s reaction to the papers and discussion questions on a Slack channel we have set up to facilitate discussions at [evolvingseas.slack.com](evolvingseas.slack.com). Discussion groups can also use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups.
 
 ## Theme and rationale
-For our first set of coordinated readings, we decided to focus the scale of spatial and temporal variability in the ocean, with a focus on how this variability may influence evolutionary processes. We are interested to have discussions about how adaptive change in populations may be structured in space in time, particularly below the scale of gene flow. Some of the readings were also designed to spark discussions about what constitutes evidence for adaptation and how we should design studies to study adaptation. Keep in mind there are many themes that we hope to discuss in the future (e.g., plasticity, evolutionary rescue, eco-evo dynamics and evolution in a community context) if this first coordinated readings is successful.
+For our first set of coordinated readings, we decided to focus the scale of spatial and temporal variability in the ocean, with a focus on how this variability may influence evolutionary processes. We are interested to have discussions about how adaptive change in populations may be structured in space in time, particularly below the scale of gene flow. Some of the readings were also designed to spark discussions about what constitutes evidence for adaptation and how we should design studies to study adaptation. Keep in mind there are many themes that we hope to discuss in the future (e.g., plasticity, evolutionary rescue, eco-evo dynamics and evolution in a community context, epigenetics) if this first set of coordinated readings is successful.
 
 We encourage all participants who would like to attend one of our workshops in the next three years (Synthesis, Genomics, or Training/Integration) to pariticipate in the discussions on the Slack channel.
 
-## Week 1 (January 19): Deadline for discussion January 21
+## Week 1 (Deadline for discussion January 19)
 
 ### Topic - Spatial and temporal scale of environmental variation
 
@@ -63,7 +63,6 @@ Tadeusz J. Kawecki & Dieter Ebert
 
 François Blanquart, Oliver Kaltz, Scott L. Nuismer & Sylvain Gandon
 
-**Optional Background Paper:**
 
 **Discussion Questions:**
 
@@ -254,7 +253,6 @@ Alan O. Bergland, Emily L. Behrman, Katherine R. O'Brien, Paul S. Schmidt & Dmit
 
 Meike J. Wittmann, Alan O. Bergland, Marcus W. Feldman, Paul S. Schmidt & Dmitri A. Petrov
 
-**Optional Background Paper:**
 
 
 **Discussion Questions:**
@@ -267,7 +265,7 @@ Meike J. Wittmann, Alan O. Bergland, Marcus W. Feldman, Paul S. Schmidt & Dmitri
 
 ### Topic: Plasticity
 
-**Rationale:**
+**Rationale:** Plasticity is the environmentally induced production of alternate phenotypes from a given genotype (Dewitt and Scheiner 2004). While the evolution of plasticity and the effects of plasticity on the evolutionary trajectory of populations are huge topics, this week we wanted to contrast a classic and more recent study in which plasticity evolved.
 
 **Paper 1:**  (Paper and Link)
 
@@ -289,6 +287,8 @@ C. K. Ghalambor, J. K. McKay, S. P. Carroll, & D. N. Reznick
 
 **Discussion Questions:**
 
-1. How does plasticity in an ancestral population determine evolutionary trajectory? 
+1. Compare and contrast the two experiments. In what way are they similar and different?
 
-2. Do empirical results agree or disagree with theoretrical arguments?
+2. How does plasticity in an ancestral population determine evolutionary trajectory? 
+
+3. Do empirical results agree or disagree with theoretrical arguments?
