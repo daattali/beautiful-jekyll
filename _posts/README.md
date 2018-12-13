@@ -2,15 +2,15 @@
 
 | Date            | Time              |Course                                  |  Day|Seat Plan
 | ------          | -----             | -----                                  |-----|-----
-| *13 - 12 - 2018*  |  12:00 - 02:00 PM | *CSE214 Object Oriented Programming*   | Thursday| 
-| *14 - 12 - 2018*  |  03:00 - 05:00 PM | *CSE221 Algorithms*                 | Friday| 316DT5(22) , 317DT5(16)
-| *15 - 12 - 2018*  |  12:00 - 02:00 PM | *MAT211 Engineering Mathematics*        |Saturday|  Retake will take care of it
-|  *17 - 12 - 2018* |  03:00 - 05:00 PM | *STA133 Statistics and Probability*     |Monday|316DT5(18) , 317DT5(18), 318DT5(1)
-| *19 - 12 - 2018*  |  09:00 - 11:00 AM | *CSE224 Electronic Devices and Circuits* |Wednesday|304DT5(6) , 310DT5(26), 316DT5(11)
+| *13-12-2018*  |  12:00 - 02:00 PM | *CSE214 Object Oriented Programming*   | Thursday| 
+| *14-12-2018*  |  03:00 - 05:00 PM | *CSE221 Algorithms*                 | Friday| 316DT5(22) , 317DT5(16)
+| *15-12-2018*  |  12:00 - 02:00 PM | *MAT211 Engineering Mathematics*        |Saturday|  Retake will take care of it
+|  *17-12-2018* |  03:00 - 05:00 PM | *STA133 Statistics and Probability*     |Monday|316DT5(18) , 317DT5(18), 318DT5(1)
+| *19-12-2018*  |  09:00 - 11:00 AM | *CSE224 Electronic Devices and Circuits* |Wednesday|304DT5(6) , 310DT5(26), 316DT5(11)
 
 ***
+                           |-----|-----
 
-***
 
 ![image](https://user-images.githubusercontent.com/35966401/49700090-5ae7a780-fc04-11e8-922b-2ced8c7a5564.png)<p align='center'> *Image credit : IBM Cognitive Class* </p>
 ***
