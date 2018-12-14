@@ -1,6 +1,6 @@
 ---
 layout: post
-title: প্রোগ্রামিং : ১ম খন্ড
+title: প্রোগ্রামিং 
 permalink: /__programming__/
 ---
 
