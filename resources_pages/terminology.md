@@ -49,6 +49,11 @@ This is not a Stat vs. ML problem, but more of a Stat/ML vs. CS vs. math problem
   * as data scientists, we also see it in Jupyter notebooks: the "Python kernel", etc. This is probably related to the CS meaning above?
   * in linear algebra, `kernel` is another name for nullspace. 
   
+#### `sample`
+
+  * in statistics, it is standard to say "a sample of size N" when referring to data coming from a probability distribution.
+  * in machine learning, it is standard to say "N samples" to mean the same thing. E.g., "I will draw N samples from the exponential distribution".
+
 ## Common acronyms
  * `FDR`: False Discovery Rate
  * `MC`: Monte Carlo
@@ -159,7 +164,7 @@ In each equivalence class below, the terms tend to be used interchangeably (even
 * kriging = Gaussian process regression
 * Bayesian network = Bayes net = directed graphical model = DAG graphical model
 * Markov random field = Markov network = undirected graphical model
-
+* one-hot encoding = one-of-k encoding = dummy variables (sort of)
 
 ## Misc
 This is not really a terminology issue, but note a connection between `collaborative filtering` in recommender systems (ML) and `data imputation` (statistics). Both are about estimating missing values. But imputation is more of a means to an end whereas in collaborative filtering finding those values is often the end itself.
