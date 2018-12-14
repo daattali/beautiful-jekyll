@@ -58,9 +58,7 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 #### Late Submissions
 
-If a quiz is submitted after the quiz period has closed, that student will receive a 50% deduction of their grade for that quiz for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
-
-If a lab assignment or any other non-quiz assessment is submitted after the due date, that student will receive a 50% deduction of their grade for that assessment for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
+A late submission is defined as any work, incuding quizzes, submitted after the deadline. For a late submission, the student will receive a 50% deduction of their grade for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
 
 ## Quizzes
 
