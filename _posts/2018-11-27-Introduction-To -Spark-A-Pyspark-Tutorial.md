@@ -372,7 +372,7 @@ spark=SparkSession.builder.appName('read_sql').getOrCreate()
 
 ```python
 # Create DataFrame
-dataset = spark.read.csv('/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/Capitalone/green_tripdata_2016-09.csv',header=True,inferSchema=True)
+dataset = spark.read.csv('/green_tripdata_2016-09.csv',header=True,inferSchema=True)
 ```
 
 
