@@ -23,10 +23,12 @@ GEM
       http_parser.rb (~> 0.6.0)
     ethon (0.11.0)
       ffi (>= 1.3.0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     execjs (2.7.0)
-    faraday (0.15.3)
+    faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
+    ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
@@ -205,6 +207,8 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.11.3)
     multipart-post (2.0.0)
+    nokogiri (1.8.5)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.5-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     octokit (4.13.0)
@@ -239,6 +243,7 @@ GEM
     unicode-display_width (1.4.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
