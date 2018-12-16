@@ -3,17 +3,17 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
-          {%- for link in site.social-network-links -%}
-            {%- assign curkey = link[0] -%}
-            {%- assign element = site.data.SocialNetworks[curkey] -%}
+          {% for link in site.social-network-links %}
+            {% assign curkey = link[0] %}
+            {% assign element = site.data.SocialNetworks[curkey] %}
             <li>
-            {%- if curkey == 'rss' -%}
+            {% if curkey == 'rss' %}
               <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
-            {%- elsif curkey == 'yelp' -%}
+            {% elsif curkey == 'yelp' %}
               <a href="https://{{ site.social-network-links[curkey] }}.yelp.com" title="{{ element.name }}">
-            {%- else -%}
+            {% else %}
               <a href="{{element.baseURL}}{{ site.social-network-links[curkey] }}" title="{{ element.name }}">
-            {%- endif -%}
+            {% endif %}
                 <span class="fa-stack fa-lg" aria-hidden="true">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa {{ element.icon }} fa-stack-1x fa-inverse"></i>
@@ -21,7 +21,7 @@
                 <span class="sr-only">{{ element.name }}</span>
               </a>
             </li>
-          {%- endfor -%}
+          {% endfor %}
         </ul>
       <p class="copyright text-muted">
       {{ site.author.name }}
