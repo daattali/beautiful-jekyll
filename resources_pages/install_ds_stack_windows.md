@@ -44,7 +44,7 @@ This step is required for
 
 We will be using the command line version of Git as well as Git through RStudio. 
 
-Go to https://git-scm.com/download/win and a download should automatically start (if not, follow the instructions on that page). After the download has finished, run the installer selecting the following options:
+Go to <https://git-scm.com/download/win> and a download should automatically start (if not, follow the instructions on that page). After the download has finished, run the installer selecting the following options:
   - On the **Select Components** page, check "On the Desktop" under "Additional icons"
   - On the **Choosing the default editor used by Git** page, select "Use the Nano editor by default" from the drop-down menu
   - For all other pages, use the default options
@@ -57,7 +57,7 @@ After installation, test if you were successful by opening the Git Bash program 
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.6
 
-Head to https://www.anaconda.com/download/#windows and download the Anaconda version for Windows with **Python 3.6**. After the download has finished, run the installer selecting the following options:
+Head to <https://www.anaconda.com/download/#windows> and download the Anaconda version for Windows with **Python 3.6**. After the download has finished, run the installer selecting the following options:
   - On the **Advanced Installation Options** page, check both boxes (see image below)
   - For all other pages, use the default options
 
@@ -96,11 +96,11 @@ conda update anaconda
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
 #### R
-Go to https://cran.r-project.org/bin/windows/base/ and download the latest version of R for Windows (Should look something like this: Download R 3.5.1 for Windows). Open the file and follow the installer instructions.
+Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (Should look something like this: Download R 3.5.1 for Windows). Open the file and follow the installer instructions.
 
 
 #### RStudio
-Chose and download the Windows version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. Open the file and follow the installer instructions.
+Chose and download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
