@@ -4,14 +4,18 @@ title: 2018-2019 Coordinated readings
 subtitle: To help educate evolutionary biologists about the kinds of questions that marine scientists care about and to help educate marine scientists about the kinds of questions that evolutionary biologists care about, we have developed a recommended reading list of classic papers in both fields.
 ---
 
-To facilitate broad discussions about literature among members of the RCN, we have set up Slack channel at [evolvingseas.slack.com](evolvingseas.slack.com). The steering committee has developed a reading list for Winter/Spring 2019, with a schedule for discussions every two weeks and questions for discussion. Participation can take one of two options. Option 1 (preferred): Participants start group at their home institution and meeting once or twice during each two-week period (any time during the two weeks is fine) to read and discuss the papers. For each topic, the group should then choose one person to summarize the group’s reaction to the papers and discussion questions on the Slack channel. Option 2: If a participant has trouble finding enough critical mass to form a group, that participant can read the papers and discuss them with the community on Slack. 
+To facilitate broad discussions about literature among members of the RCN, we have set up Slack channel at [evolvingseas.slack.com](evolvingseas.slack.com). The steering committee has developed a reading list for Winter/Spring 2019, with a schedule for discussions every two weeks and questions for discussion. We encourage you to discuss the papers with other participants prior to joining the larger discussion on slack. For each topic, your group should choose one person to post a summary to the Slack channel that summarizes the group’s reaction to the papers and discussion questions. 
+
+Some suggestions to forming a discussion group 1) Start a group at your home institution and meet once or twice during each two-week period (any time during the two weeks is fine) to read and discuss the papers, 2) Find colleagues on the RCN list (linked here) and discuss with them virtually before joining the larger discussion, or 3) If a participant has trouble finding enough critical mass to form a group, that participant can read the papers and discuss them with the community on Slack. 
 
 All participants can also use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups.
 
-#### We encourage all participants who would like to attend one of our workshops in the next three years (Synthesis, Genomics, or Training/Integration) to pariticipate in the discussions on the Slack channel.
+#### We encourage all participants who would like to attend one of our workshops in the next three years (Synthesis, Genomics, or Training/Integration) to participate in the discussions on the Slack channel.
 
 ## Theme and rationale
-For our first set of coordinated readings, we decided to focus the scale of spatial and temporal variability in the ocean, with a focus on how this variability may influence evolutionary processes. We are interested to have discussions about how adaptive change in populations may be structured in space in time, particularly below the scale of gene flow. Some of the readings were also designed to spark discussions about what constitutes evidence for adaptation and how we should design studies to study adaptation. Keep in mind there are many themes that we hope to discuss in the future (e.g., plasticity, evolutionary rescue, eco-evo dynamics and evolution in a community context, epigenetics) if this first set of coordinated readings is successful.
+For our first set of coordinated readings, we decided to focus the scale of spatial and temporal variability in the ocean, with a focus on how this variability may influence evolutionary processes. We are interested in having discussions about how adaptive change in populations may be structured in space in time, particularly in the case when gene flow is stronger than selection. Some of the readings were also designed to spark discussions about what constitutes evidence for adaptation and how we should design studies to detect adaptation. Keep in mind there are many themes that we hope to discuss in the future (e.g., evolutionary rescue, eco-evo dynamics and evolution in a community context, plasticity and epigenetics, evolutionary perspectives on conservation biology) if this first set of coordinated readings is successful.
+
+## Note that the date posted for each week below is the date we expect the discussion to be completed and summaries posted to the Slack channel.
 
 ## Week 1 (Deadline for discussion January 19)
 
@@ -19,7 +23,7 @@ For our first set of coordinated readings, we decided to focus the scale of spat
 
 **Rationale:**
 
-The ocean is structured in space and time, which is comprised of benthic structure and pelagic structure. While benthic structure is similar to strcuture in terrestrial systems, there are only weak terrestrial parallels to pelagic structure which is critical to both habitat pattern and dispersal in the ocean. This week we want the RCN to think about how the scales of environmental variabiilty is reflected in evolution of marine populations.
+The ocean is structured in space and time. There is benthic structure and pelagic structure. While benthic structure is similar to structure in terrestrial systems, there are only weak terrestrial parallels to pelagic structure which is critical to both habitat pattern and dispersal in the ocean. This week we want the RCN to think about how the scales of environmental variabilty is reflected in evolution of marine populations.
 
 **Paper 1:**  (Paper and Link)
 
@@ -51,7 +55,7 @@ Richard R. Strathmann
 
 **Rationale:**
 
-This week we want the RCN to think about different ways we define local adaptation and come to a concensus as a network on a definition of local adaptation that we should use.
+This week we want the RCN to think about different ways we define local adaptation and come to a consensus on a definition of local adaptation that we should use as we move forward with the discussions and in the RCN.
 
 **Paper 1:**  (Paper and Link)
 
@@ -79,7 +83,7 @@ François Blanquart, Oliver Kaltz, Scott L. Nuismer & Sylvain Gandon
 
 **Rationale:**
 
-Many consider reciprocal transplant to be the gold standard for demonstrating local adaptation, but recently genomic data collected from different populations has been used to argue for local adaptation. This week we want the RCN to compare and constrast different approaches toward measuring local adaptation.
+Many consider reciprocal transplant to be the gold standard for demonstrating local adaptation, but recently genomic data collected from different populations has been used to argue for local adaptation. This week we want the RCN to compare and contrast different approaches toward measuring local adaptation.
 
 **Paper 1:**  (Paper and Link)
 
@@ -99,7 +103,7 @@ Bryan Kolaczkowski, Andrew D. Kern, Alisha K. Holloway & David J. Begun
 
 1. When does landscape genomic data present good evidence of local adaptation (without experiments)?
 
-2. How do the different research approaches (experiment vs. genomic) give different insights?
+2. How do the different research approaches (experimental vs. genomic) give different insights?
 
 3. How are the processes that drive local adaptation in the snail differ from the fly? How are they similar?
 
@@ -109,7 +113,7 @@ Bryan Kolaczkowski, Andrew D. Kern, Alisha K. Holloway & David J. Begun
 
 **Rationale:**
 
-Many marine species are characterized by high gene flow. Traditional population genetic theory predicts that local adaptation will only evolve when the strength of selection is greater than migration (gene flow). This week we want the RCN to consider different ways that local adaptation may evolve when the strength of selection is less than migration (gene flow) and the kinds of genomic architectures that evolve in this case.
+Many marine species are characterized by high levels of gene flow. Traditional population genetic theory predicts that local adaptation will only occur when the strength of selection is greater than migration (gene flow). This week we want the RCN to consider different ways that local adaptation may evolve when the strength of selection is less than migration (gene flow) and the kinds of genomic architectures that evolve in this case.
 
 **Paper 1:**  (Paper and Link)
 
@@ -135,7 +139,7 @@ H. Allen Orr
 
 2. How does genomic architecture constrain adaptation?
 
-3. What are the implications of different architectures for our ability to study adaptation from genomic data?
+3. What are the implications of different genomic architectures for our ability to study adaptation using genomic data?
 
 ## Week 5 (March 16):
 
@@ -143,7 +147,7 @@ H. Allen Orr
 
 **Rationale:**
 
-Many marine species have a bipartite life cycle with a pelagic phase as larvae dispersed by currents, and a benthic stage as adults. This week, we want the RCN to think about how dispersal is a key driver of marine population dynamics, and the consequences of dispersal and life history for evolutionary dynamics.
+Many marine species have a bipartite life cycle with a pelagic phase as larvae dispersed by currents, and a benthic stage as adults. This week, we want the RCN to think about how dispersal is a key driver of marine population dynamics, and the consequences of dispersal and life history on evolutionary dynamics.
 
 **Paper 1:**  (Paper and Link)
 
@@ -165,7 +169,7 @@ Dustin J.Marshall & Steven G.Morgan
 
 **Discussion Questions:**
 
-1. How might pelagic life histories with asymmetrical dispersal, coupled with genetic correlations between larvae and adult traits, constrain or promote adapatation?
+1. How might pelagic life histories with asymmetrical dispersal, coupled with genetic correlations between larvae and adult traits, constrain or promote adaptation?
 
 2. When and where do we expect population genetic structure to be generated and/or maintained?
 
@@ -175,7 +179,7 @@ Dustin J.Marshall & Steven G.Morgan
 
 **Rationale:**
 
-Consequences of dispersal via ocean currents are potentially high variance in reproductive success and a combination of continuous and discrete genetic structure. This week we want the RCN to think about how dispersal via ocean currents may affect how we model evolutionary processes (like the coalescent), and potentially come to consensus on how we should describe genetic structure.
+Consequences of dispersal via ocean currents are potentially high variance in reproductive success and a combination of continuous and discrete genetic structure. This week we want the RCN to think about how dispersal via ocean currents may affect how we model evolutionary processes (like the coalescent), and potentially come to a consensus on how we should describe genetic structure.
 
 **Paper 1:**  (Paper and Link)
 
@@ -201,7 +205,7 @@ Richard R. Hudson
 
 2. Given the complexity of marine dispersal dynamics, do you think that we as a field should adopt the Bradburd et al approach for characterizing population structure?
 
-3. Given the potential for high variance in reproductive success, overlapping generations, and a combination of continuous and discrete population structure, how should we sample for population studies? (across space and across cohorts)
+3. Given the potential for high variance in reproductive success, overlapping generations, and a combination of continuous and discrete population structure, how should we sample for population studies (across space and across cohorts)?
 
 ## Week 7 (April 13):
 
@@ -233,7 +237,7 @@ Aneil F. Agrawal & Michael C. Whitlock
 
 1. What's the relationship between phenotype-environment mismatches and genetic load?
 
-2. How does dispersal scale and the scale of environmentalal heterogeneity contribute to genetic load?
+2. How does dispersal scale and the scale of environmental heterogeneity contribute to genetic load?
 
 ## Week 8 (April 27):
 
@@ -259,7 +263,7 @@ Meike J. Wittmann, Alan O. Bergland, Marcus W. Feldman, Paul S. Schmidt & Dmitri
 
 **Discussion Questions:**
 
-1. What consitutes good evidence for fluctuating selection, especially if its maintained by many loci with small effects?
+1. What constitutes strong evidence for fluctuating selection, especially if the trait under fluctuating selection is maintained by many loci with small effects?
 
 2. What are the benefits (or consequences) of fluctuating selection for long-term changes in the environment?
 
@@ -293,4 +297,4 @@ C. K. Ghalambor, J. K. McKay, S. P. Carroll, & D. N. Reznick
 
 2. How does plasticity in an ancestral population determine evolutionary trajectory? 
 
-3. Do empirical results agree or disagree with theoretrical arguments?
+3. Do empirical results agree or disagree with theoretical arguments?
