@@ -59,7 +59,7 @@ title: Members
 |Sum Po Ava  Chan. , University of Oxford. |
 |Juliette  Chausson. , Fellow at the US Environmental Protection Agency. |
 |[Andia  Chaves Fonnegra.](https://andiacfonnegra.weebly.com/) Wilkes Honors College/Harbor Branch Oceanographic Institute, Florida Atlantic University. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/andiachaves)|
-
+|Luis-Miguel  Chevin. CEFE, CNRS. |
 |Francis  Choi. , Northeastern University. |
 |[Henrik  Christiansen.](https://bio.kuleuven.be/eeb/lbeg/whoiswho/00097939) Laboratory of Biodiversity and Evolutionary Genomics, KU Leuven. [<img src = '/img/twitter-squared.png' >](https://twitter.com/Notothen)|
 |[Mark R Christie.](http://christielab.bio.purdue.edu/) Biological Sciences, Purdue Univeristy. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/MarkRChristieGroup)[<img src = '/img/twitter-squared.png' >](https://twitter.com/markrchristie)|
@@ -117,7 +117,7 @@ title: Members
 |Sean T Giery. Ecology and Evolutionary Biology, University of Connecticut. [<img src = '/img/twitter-squared.png' >](https://twitter.com/stgiery)|
 |[Kimberly J Gilbert.](http://kjgilbert.github.io/) Institute of Ecology and Evolution, University of Bern. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/kjgilbert)[<img src = '/img/twitter-squared.png' >](https://twitter.com/kj_gilbert)|
 |Robert A Glazer. Fish and Wildlife Research Institute, Florida Fish and Wildlife Conservation Commission. |
-|Henry  Goehlich. Evolutionary Ecology of Marine Fishes, GEOMAR  Helmholtz-Zentrum für Ozeanforschung Kiel. |
+|Henry  Goehlich. Evolutionary Ecology of Marine Fishes, GEOMAR | Helmholtz-Zentrum für Ozeanforschung Kiel. |
 |Marta  Gomez-Buckley. School of Aquatic and Fishery Sciences, University of Washington, Seattle. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/magobu)[<img src = '/img/twitter-squared.png' >](https://twitter.com/buckley_gomez)|
 |Marta  Gomez-Chiarri. Fisheries, Animal and Veterinary Science, University of Rhode Island. |
 |[Jacqueline  Goordial.](https://web.jackiegoordial.com) , Bigelow Laboratory for Ocean Science. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/jackiegoo)[<img src = '/img/twitter-squared.png' >](https://twitter.com/jackiegoordial)|
@@ -131,7 +131,6 @@ title: Members
 |[Matthew W Hahn.](http://www.indiana.edu/~hahnlab/) , Indiana University. [<img src = '/img/twitter-squared.png' >](https://twitter.com/3rdreviewer)|
 |[Mehrdad  Hajibabaei.](http://hajibabaei.ibarcode.org/) , University of Guelph. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/hajibabaei)[<img src = '/img/twitter-squared.png' >](https://twitter.com/M_Hajibabaei)|
 |Torrance C Hanley. Marine and Environmental Sciences, Northeastern University. [<img src = '/img/twitter-squared.png' >](https://twitter.com/torrance_hanley)|
-|[Matthew P Hare.](https://blogs.cornell.edu/harelab/) Natural Resources, Cornell University. |
 |[Matthew P Hare.](https://blogs.cornell.edu/harelab/) Natural Resources, Cornell University. |
 |[Hugo B Harrison.](https://hugoharrison.net) ARC Centre of Excellence for Coral Reef Studies, James Cook University. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/HugoBH)[<img src = '/img/twitter-squared.png' >](https://twitter.com/HugoBHarrison)|
 |[Catherine Drew Harvell.](http://www.eeb.cornell.edu/harvell/) Ecology and Evolutionary BIology, Cornell UNiv. [<img src = '/img/twitter-squared.png' >](https://twitter.com/DrewHarvell)|
@@ -162,7 +161,7 @@ title: Members
 |Remi N Ketchum. Biological Sciences, University of North Carolina at Charlotte. [<img src = '/img/twitter-squared.png' >](https://twitter.com/remiketchum)|
 |[Holly K Kindsvater.](https://www.hollykindsvater.com) ecology, evolution, and natural resources, Rutgers University. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/hkindsvater)[<img src = '/img/twitter-squared.png' >](https://twitter.com/HollyKindsvater)|
 |[Jack C Koch.](https://jackckoch.us) Integrative Biology, Oregon State University. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/jackckoch)[<img src = '/img/twitter-squared.png' >](https://twitter.com/jackckoch)|
-
+|[Nicole M Kollars.](https://nmkollars@wordpress.com) Center for Population Biology, University of California, Davis. |
 |[Lisa M Komoroske.](https://lmkomoroske.com) Environmental Conservation, University of Massachusetts Amherst. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/lkomoro)[<img src = '/img/twitter-squared.png' >](https://twitter.com/LKomoroske)|
 |[Nicola G Kriefall.](https://nicfall.weebly.com) Biology, Boston University. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/NicolaKriefall)[<img src = '/img/twitter-squared.png' >](https://twitter.com/NicolaKriefall)|
 |[Stacy A Krueger-Hadfield.](https://www.quooddy.com) Biology, University of Alabama at Birmingham . [<img src = '/img/twitter-squared.png' >](https://twitter.com/quooddy)|
@@ -178,7 +177,7 @@ title: Members
 |Lori  luers. , ucsd. |
 |Nik  Lupše. Zoology, Charles University in Prague, Czech Republic. |
 |Amy E Maas. , Bermuda Institute of Ocean Sciences. |
-
+|[Eva  Majerova.](http://gatescorallab.com/eva-majerova) Hawai'i Institute of Marine Biology, University of Hawaii. [<img src = '/img/twitter-squared.png' >](https://twitter.com/EMajerova2)|
 |[Patricia  Marti Puig.](https://www.patypuig.com) , Oceanogami. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/patypuig@gmail.com)[<img src = '/img/twitter-squared.png' >](https://twitter.com/patypuig)|
 |[Christopher  Martin.](http://labs.bio.unc.edu/martin/) Biology, University of North Carolina at Chapel Hill. [<img src = '/img/twitter-squared.png' >](https://twitter.com/fishspeciation)|
 |[Catherine M Matassa.](https://catherinematassa.weebly.com) Marine Sciences, University of Connecticut. [<img src = '/img/twitter-squared.png' >](https://twitter.com/matassa_cm)|
@@ -256,7 +255,7 @@ title: Members
 |[Elizabeth A Sheets.](http://bethsheets.github.io) Biology, Hopkins Marine Station, Stanford University. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/bethsheets)[<img src = '/img/twitter-squared.png' >](https://twitter.com/easheets)|
 |[elizabeth  sherman.](http://faculty.bennington.edu/~sherman/) Science and Math, Bennington College. |
 |[Mohammad Reza  Shokri.](http://facultymembers.sbu.ac.ir/shokri/) Marine and Aquatic Biology and Biotechnology, Shahid Beheshti University, Faculty of Life Sciences and Bitechnology. |
-
+|[Priya  Shukla.](https://priyashukla.com) Ecology / Animal Science, University of California, Davis. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/priyology)[<img src = '/img/twitter-squared.png' >](https://twitter.com/priyology)|
 |Todd P Sigley. , Northeastern University. [<img src = '/img/twitter-squared.png' >](https://twitter.com/Underwater_Todd)|
 |Alexis  Simon. , Institut des sciences de l'évolution - Montpellier . [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/Alxsimon)[<img src = '/img/twitter-squared.png' >](https://twitter.com/alx_sim)|
 |Kyle A Sirovy. Biological Sciences, Louisiana State University. |
@@ -278,7 +277,7 @@ title: Members
 |Michael C Thorndyke. Department of Biological and Environmental Sciences, Göteborg University. [<img src = '/img/twitter-squared.png' >](https://twitter.com/ GD Michael  @JMBA3)|
 |[Anna  Tigano.](https://annatigano.weebly.com/) Molecular, Cellular, and Biomedical Sciences, University of New Hampshire. [<img src = '/img/twitter-squared.png' >](https://twitter.com/t_annina)|
 |Zachary JC Tobias. Biology, Woods Hole Oceanographic Institution . |
-
+|[Anne E Todgham.](https://todghamlab.faculty.ucdavis.edu) Animal Science, University of California Davis. [<img src = '/img/twitter-squared.png' >](https://twitter.com/atodgham)|
 |[Rob J Toonen.](http://tobolab.org/) Hawaii Institute of Marine Biology, University of Hawaii at Manoa. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/ToBoDev)[<img src = '/img/twitter-squared.png' >](https://twitter.com/ToBoLab)|
 |[Jason A Toy.](https://jasontoyblog.wordpress.com/) Ecology and Evolutionary Biology, University of California, Santa Cruz. [<img src='/img/GitHub-Mark-32px.png'>](http://github.com/jtoy7)[<img src = '/img/twitter-squared.png' >](https://twitter.com/the_evologist)|
 |[Nikki  Traylor-Knowles.](https://www.cnidimmunitylab.com) Marine Biology and Ecology, University of Miami, RSMAS. [<img src = '/img/twitter-squared.png' >](https://twitter.com/cnidimmunitylab)|
