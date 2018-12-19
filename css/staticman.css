@@ -18,7 +18,6 @@ label, input, button, select, textarea {
 }
 input, button, select, textarea {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 label {
   display: block;
@@ -151,7 +150,6 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   border-radius: 50%;
 }
 .comment__content-wrapper {
-  float: right;
   width: calc(100% - 60px);
 }
 .comment__author {
