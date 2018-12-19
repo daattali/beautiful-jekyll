@@ -131,7 +131,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Staticman support
 comments: # will be removed
-  provider       : # false (default), "staticman", "custom" # will be removed
+  provider       : "staticman" # false (default), "staticman", "custom" # will be removed
 staticman:
   repository     : "vincenttam/beautiful-jekyll" # GitLab username/repo-name e.g. "pages/jekyll"
   branch         : "gh-pages" # "master"
