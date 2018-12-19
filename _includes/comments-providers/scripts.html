@@ -1,0 +1,8 @@
+{% if site.comments.provider and page.comments %}
+{% case site.comments.provider %}
+  {% when "staticman" %}
+    {% include /comments-providers/staticman.html %}
+  {% when "custom" %}
+    {% include /comments-providers/custom.html %}
+{% endcase %}
+{% endif %}
