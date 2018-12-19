@@ -12,11 +12,11 @@ form p {
 form br {
   display: none;
 }
-label, input, button, select, textarea {
+label, input, button, textarea {
   vertical-align: baseline;
   vertical-align: middle;
 }
-input, button, select, textarea {
+input, button, textarea {
   box-sizing: border-box;
 }
 label {
@@ -28,10 +28,10 @@ label {
 label small {
   font-size: 0.75em;
 }
-label input, label textarea, label select {
+label input, label textarea, {
   display: block;
 }
-input, textarea, select {
+input, textarea {
   display: inline-block;
   width: 100%;
   padding: 0.25em;
@@ -69,7 +69,7 @@ input[type="hidden"] {
 /*
  Disabled state
  ========================================================================== */
-input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+input[disabled][disabled], textarea[disabled], input[readonly][readonly], textarea[readonly] {
   opacity: 0.5;
   cursor: not-allowed;
 }
@@ -82,7 +82,7 @@ input:focus, textarea:focus {
   outline: thin dotted \9;
   box-shadow: inset 0 1px 3px rgba(73, 78, 82, 0.06), 0 0 5px rgba(122, 130, 136, 0.7);
 }
-input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus, select:focus {
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus:focus {
   box-shadow: none;
 }
 /*
@@ -118,9 +118,7 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
   margin-top: 2rem;
   margin-bottom: 10px;
   padding-top: 2rem;
-  font-size: 0.75em;
   border-top: 1px solid #f2f3f3;
-  text-transform: uppercase;
 }
 .page__comments-form {
   -webkit-transition: all 0.2s ease-in-out;
