@@ -135,7 +135,7 @@ comments: # will be removed
 staticman:
   repository     : "vincenttam/beautiful-jekyll" # GitLab username/repo-name e.g. "pages/jekyll"
   branch         : "gh-pages" # "master"
-  endpoint       : "https://staticman3.herokuapp.com/" # URL of your own deployment with trailing slash, will fallback to the public GitLab instance
+  endpoint       : # URL of your own deployment with trailing slash, will fallback to the public GitLab instance
 reCaptcha:
   siteKey        :
   secret         :
