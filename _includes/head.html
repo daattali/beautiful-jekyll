@@ -122,5 +122,9 @@
   {% if site.matomo %}
   {% include matomo.html %}
   {% endif %}
+  
+  {% if page.comments and site.comments.provider == "staticman" %}
+  <link rel="stylesheet" href="{{ "/css/staticman.css" | prepend: site.baseurl }}" />
+  {% endif %}
 
 </head>
