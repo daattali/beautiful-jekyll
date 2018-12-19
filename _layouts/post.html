@@ -71,6 +71,9 @@ layout: base
         </div>
           {% include fb-comment.html %}
       {% endif %}
+      {% if site.comments.provider and page.comments %}
+        {% include comments.html %}
+      {% endif %}
     </div>
   </div>
 </div>
