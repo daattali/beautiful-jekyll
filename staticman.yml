@@ -18,13 +18,13 @@ comments:
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted. The origin is sent as part as the `options` object
   # (e.g. <input name="options[origin]" value="http://yourdomain.com/post1")
-  allowedOrigins: ["vincenttam.gitlab.io"]
+  # allowedOrigins: ["https://example.com"]
 
   # (*) REQUIRED
   #
   # Name of the branch being used. Must match the one sent in the URL of the
   # request.
-  branch: "master"
+  branch: "gh-pages"
 
   commitMessage: "New comment by {fields.name}"
 
