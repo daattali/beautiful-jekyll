@@ -1,0 +1,187 @@
+﻿/* ==========================================================================
+ Forms
+ ========================================================================== */
+form {
+  margin: 0 0 5px 0;
+  padding: 1em;
+  background-color: #f2f3f3;
+}
+form p {
+  margin-bottom: 2.5px;
+}
+form br {
+  display: none;
+}
+label, input, button, textarea {
+  vertical-align: baseline;
+  vertical-align: middle;
+}
+input, button, textarea {
+  box-sizing: border-box;
+}
+label {
+  display: block;
+  margin-bottom: 0.25em;
+  color: #494e52;
+  cursor: pointer;
+}
+label small {
+  font-size: 0.75em;
+}
+label input, label textarea, {
+  display: block;
+}
+input, textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+  color: #494e52;
+  background-color: #fff;
+  border: #f2f3f3;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+.input-mini {
+  width: 60px;
+}
+.input-small {
+  width: 90px;
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  overflow: visible;
+}
+textarea {
+  resize: vertical;
+  height: auto;
+  overflow: auto;
+  vertical-align: top;
+}
+input[type="hidden"] {
+  display: none;
+}
+.form {
+  position: relative;
+}
+/*
+ Disabled state
+ ========================================================================== */
+input[disabled][disabled], textarea[disabled], input[readonly][readonly], textarea[readonly] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*
+ Focus & active state
+ ========================================================================== */
+input:focus, textarea:focus {
+  border-color: #7a8288;
+  outline: 0;
+  outline: thin dotted \9;
+  box-shadow: inset 0 1px 3px rgba(73, 78, 82, 0.06), 0 0 5px rgba(122, 130, 136, 0.7);
+}
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus:focus {
+  box-shadow: none;
+}
+/*
+ Help text
+ ========================================================================== */
+.help-block {
+  color: #898c8e;
+}
+.help-block {
+  display: block;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+/*
+ .form-group
+ ========================================================================== */
+.form-group {
+  margin-bottom: 5px;
+  padding: 0;
+  border-width: 0;
+}
+/*
+ Comments
+ ========================================================================== */
+.page__comments {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  clear: both;
+}
+.page__comments-title {
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  border-top: 1px solid #f2f3f3;
+}
+.page__comments-form {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.page__comments-form.disabled input, .page__comments-form.disabled button, .page__comments-form.disabled textarea, .page__comments-form.disabled label {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+  opacity: 0.65;
+}
+.comment {
+  margin: 1em 0;
+}
+.comment:not(:last-child) {
+  border-bottom: 1px solid #f2f3f3;
+}
+.comment__avatar-wrapper {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+.comment__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.comment__content-wrapper {
+  width: calc(100% - 60px);
+}
+.comment__author {
+  margin: 0;
+}
+.comment__author a {
+  text-decoration: none;
+}
+.comment__date {
+  margin: 0;
+}
+.comment__date a {
+  text-decoration: none;
+}
+/* ==========================================================================
+ PRINT STYLES
+ ========================================================================== */
+@media print {
+  /*
+   Hide the following elements on print
+   ========================================================================== */
+  [hidden] {
+    display: none;
+  }
+  .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle {
+    display: none !important;
+    height: 1px !important;
+  }
+}
+/*
+ Post pagination navigation links
+ ========================================================================== */
+.page__comments + .pagination {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid #f2f3f3;
+}
