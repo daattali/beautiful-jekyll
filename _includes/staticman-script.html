@@ -1,4 +1,4 @@
-{% if page.comments and site.staticman.repository and site.staticman.branch %}
+{% if site.staticman.repository and site.staticman.branch %}
   <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
   <script>
     if (typeof jQuery == 'undefined') {
