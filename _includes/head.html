@@ -123,7 +123,8 @@
   {% include matomo.html %}
   {% endif %}
   
-  {% if page.comments and site.comments.provider == "staticman" %}
+  <!-- Staticman -->
+  {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ "/css/staticman.css" | prepend: site.baseurl }}" />
   {% endif %}
 
