@@ -1,5 +1,10 @@
 {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+  <script>
+    if (typeof jQuery == 'undefined') {
+      document.write('<script src="/beautiful-jekyll/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+    }
+  </script>
   <script>
     (function ($) {
     var $comments = $('.js-comments');
