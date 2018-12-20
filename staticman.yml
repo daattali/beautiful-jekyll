@@ -24,7 +24,8 @@ comments:
   #
   # Name of the branch being used. Must match the one sent in the URL of the
   # request.
-  branch: "gh-pages"
+  branch: "master"   #  use "master" for user page
+  #branch: "gh-pages" #  use "gh-pages" for project page
 
   commitMessage: "New comment by {fields.name}"
 
