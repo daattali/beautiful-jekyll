@@ -118,6 +118,8 @@ To use Facebook comments, create a Facebook app using [Facebook developers](http
 
 To use Staticman, you first need to invite `staticmanlab` as a collaborator to your repository (by going to your repository **Settings** page, navigate to the **Collaborators** tab, and add the username `staticmanlab`), and then accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`. Lastly, fill in your `repository` and `branch` in `_config.yml`. If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`.
 
+![Staicman invitation screenshot](https://user-images.githubusercontent.com/5748535/50357920-e8f25500-0557-11e9-9cb6-73f8b575c4f0.png)
+
 ### Adding Google Analytics to track page views
 
 Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.
