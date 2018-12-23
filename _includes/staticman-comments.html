@@ -43,17 +43,17 @@
           <input type="hidden" name="options[slug]" value="{{ page.slug }}">
           <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
           <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
-          {% if site.reCaptcha.siteKey %}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">{% endif %}
-          {% if site.reCaptcha.secret %}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.reCaptcha.secret }}">{% endif %}
+          {% if site.staticman.reCaptcha.siteKey %}<input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.staticman.reCaptcha.siteKey }}">{% endif %}
+          {% if site.staticman.reCaptcha.secret %}<input type="hidden" name="options[reCaptcha][secret]" value="{{ site.staticman.reCaptcha.secret }}">{% endif %}
         </div>
         <!-- Start comment form alert messaging -->
         <p class="hidden js-notice">
           <strong class="js-notice-text"></strong>
         </p>
         <!-- End comment form alert messaging -->
-        {% if site.reCaptcha.siteKey %}
+        {% if site.staticman.reCaptcha.siteKey %}
           <div class="form-group">
-            <div class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
+            <div class="g-recaptcha" data-sitekey="{{ site.staticman.reCaptcha.siteKey }}"></div>
           </div>
         {% endif %}
         <div class="form-group">
@@ -63,7 +63,7 @@
     </div>
     <!-- End new comment form -->
     <!-- Load reCaptcha if site key is set -->
-    {% if site.reCaptcha.siteKey %}
+    {% if site.staticman.reCaptcha.siteKey %}
       <script async src="https://www.google.com/recaptcha/api.js"></script>
     {% endif %}
   </div>
