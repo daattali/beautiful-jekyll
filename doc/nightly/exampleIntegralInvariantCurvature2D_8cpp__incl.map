@@ -1,0 +1,38 @@
+<map id="exampleIntegralInvariantCurvature2D.cpp" name="exampleIntegralInvariantCurvature2D.cpp">
+<area shape="rect" id="node3" href="$Common_8h_source.html" title="DGtal/base/Common.h" alt="" coords="2432,452,2589,477"/>
+<area shape="rect" id="node25" href="$Flower2D_8h_source.html" title="DGtal/shapes/parametric\l/Flower2D.h" alt="" coords="286,279,455,317"/>
+<area shape="rect" id="node29" href="$GaussDigitizer_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="3103,199,3305,224"/>
+<area shape="rect" id="node37" href="$LightImplicitDigitalSurface_8h_source.html" title="DGtal/topology/LightImplicit\lDigitalSurface.h" alt="" coords="1371,99,1554,137"/>
+<area shape="rect" id="node43" href="$GraphVisitorRange_8h_source.html" title="DGtal/graph/GraphVisitor\lRange.h" alt="" coords="796,192,967,231"/>
+<area shape="rect" id="node44" href="$DigitalSurface_8h_source.html" title="DGtal/topology/DigitalSurface.h" alt="" coords="530,372,737,397"/>
+<area shape="rect" id="node45" href="$DepthFirstVisitor_8h_source.html" title="DGtal/graph/DepthFirstVisitor.h" alt="" coords="1967,199,2172,224"/>
+<area shape="rect" id="node46" href="$ImageHelper_8h_source.html" title="DGtal/images/ImageHelper.h" alt="" coords="2361,199,2554,224"/>
+<area shape="rect" id="node47" href="$IIGeometricFunctors_8h_source.html" title="DGtal/geometry/surfaces\l/estimation/IIGeometricFunctors.h" alt="" coords="2844,279,3065,317"/>
+<area shape="rect" id="node48" href="$IntegralInvariantVolumeEstimator_8h_source.html" title="DGtal/geometry/surfaces\l/estimation/IntegralInvariant\lVolumeEstimator.h" alt="" coords="2723,92,2909,144"/>
+<area shape="rect" id="node49" href="$Board2D_8h_source.html" title="DGtal/io/boards/Board2D.h" alt="" coords="4105,372,4287,397"/>
+<area shape="rect" id="node50" href="$GradientColorMap_8h_source.html" title="DGtal/io/colormaps\l/GradientColorMap.h" alt="" coords="4361,365,4506,404"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title="DGtal/base/Config.h" alt="" coords="2561,685,2703,711"/>
+<area shape="rect" id="node16" href="$Trace_8h_source.html" title="DGtal/base/Trace.h" alt="" coords="3089,532,3226,557"/>
+<area shape="rect" id="node17" href="$TraceWriterTerm_8h_source.html" title="DGtal/base/TraceWriterTerm.h" alt="" coords="2530,612,2731,637"/>
+<area shape="rect" id="node18" href="$Assert_8h_source.html" title="DGtal/base/Assert.h" alt="" coords="2959,612,3100,637"/>
+<area shape="rect" id="node19" href="$TraceWriterFile_8h_source.html" title="DGtal/base/TraceWriterFile.h" alt="" coords="2107,685,2301,711"/>
+<area shape="rect" id="node20" href="$ConceptUtils_8h_source.html" title="DGtal/base/ConceptUtils.h" alt="" coords="2727,685,2905,711"/>
+<area shape="rect" id="node21" href="$BasicTypes_8h_source.html" title="DGtal/base/BasicTypes.h" alt="" coords="2980,685,3151,711"/>
+<area shape="rect" id="node22" href="$BasicFunctors_8h_source.html" title="DGtal/base/BasicFunctors.h" alt="" coords="1166,532,1354,557"/>
+<area shape="rect" id="node23" href="$BasicArchetypes_8h_source.html" title="DGtal/base/BasicArchetypes.h" alt="" coords="3226,612,3428,637"/>
+<area shape="rect" id="node24" href="$Exceptions_8h_source.html" title="DGtal/base/Exceptions.h" alt="" coords="1544,685,1712,711"/>
+<area shape="rect" id="node26" href="$StarShaped2D_8h_source.html" title="DGtal/shapes/parametric\l/StarShaped2D.h" alt="" coords="93,365,262,404"/>
+<area shape="rect" id="node28" href="$Flower2D_8ih_source.html" title="DGtal/shapes/parametric\l/Flower2D.ih" alt="" coords="286,365,455,404"/>
+<area shape="rect" id="node30" href="$ConstAlias_8h_source.html" title="DGtal/base/ConstAlias.h" alt="" coords="2121,285,2287,311"/>
+<area shape="rect" id="node31" href="$CountedConstPtrOrConstPtr_8h_source.html" title="DGtal/base/CountedConstPtr\lOrConstPtr.h" alt="" coords="2759,365,2953,404"/>
+<area shape="rect" id="node32" href="$HyperRectDomain_8h_source.html" title="DGtal/kernel/domains\l/HyperRectDomain.h" alt="" coords="3129,365,3279,404"/>
+<area shape="rect" id="node33" href="$RegularPointEmbedder_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="3303,365,3479,404"/>
+<area shape="rect" id="node34" href="$CEuclideanOrientedShape_8h_source.html" title="DGtal/shapes/CEuclideanOriented\lShape.h" alt="" coords="3503,365,3729,404"/>
+<area shape="rect" id="node35" href="$CEuclideanBoundedShape_8h_source.html" title="DGtal/shapes/CEuclideanBounded\lShape.h" alt="" coords="3753,365,3980,404"/>
+<area shape="rect" id="node36" href="$GaussDigitizer_8ih_source.html" title="DGtal/shapes/GaussDigitizer.ih" alt="" coords="3292,285,3498,311"/>
+<area shape="rect" id="node38" href="$CPointPredicate_8h_source.html" title="DGtal/kernel/CPointPredicate.h" alt="" coords="2563,285,2770,311"/>
+<area shape="rect" id="node39" href="$Topology_8h_source.html" title="DGtal/topology/Topology.h" alt="" coords="1622,199,1799,224"/>
+<area shape="rect" id="node40" href="$SurfelAdjacency_8h_source.html" title="DGtal/topology/SurfelAdjacency.h" alt="" coords="1115,372,1335,397"/>
+<area shape="rect" id="node41" href="$SurfelNeighborhood_8h_source.html" title="DGtal/topology/SurfelNeighborhood.h" alt="" coords="1143,285,1385,311"/>
+<area shape="rect" id="node42" href="$BreadthFirstVisitor_8h_source.html" title="DGtal/graph/BreadthFirst\lVisitor.h" alt="" coords="1378,192,1547,231"/>
+</map>

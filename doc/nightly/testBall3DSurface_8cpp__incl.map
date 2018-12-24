@@ -1,0 +1,37 @@
+<map id="testBall3DSurface.cpp" name="testBall3DSurface.cpp">
+<area shape="rect" id="node3" href="$Ball3D_8h_source.html" title="DGtal/shapes/parametric\l/Ball3D.h" alt="" coords="272,425,440,464"/>
+<area shape="rect" id="node25" href="$Color_8h_source.html" title="DGtal/io/Color.h" alt="" coords="3736,832,3851,857"/>
+<area shape="rect" id="node34" href="$StdDefs_8h_source.html" title="DGtal/helpers/StdDefs.h" alt="" coords="3055,79,3220,104"/>
+<area shape="rect" id="node4" href="$Common_8h_source.html" title="DGtal/base/Common.h" alt="" coords="2107,672,2264,697"/>
+<area shape="rect" id="node30" href="$StarShaped3D_8h_source.html" title="StarShaped3D.h" alt="" coords="320,512,440,537"/>
+<area shape="rect" id="node33" href="$Ball3D_8ih_source.html" title="Ball3D.ih" alt="" coords="1045,752,1120,777"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title="DGtal/base/Config.h" alt="" coords="2119,905,2260,931"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title="DGtal/base/Trace.h" alt="" coords="2268,752,2404,777"/>
+<area shape="rect" id="node18" href="$TraceWriterTerm_8h_source.html" title="DGtal/base/TraceWriterTerm.h" alt="" coords="1991,832,2193,857"/>
+<area shape="rect" id="node19" href="$Assert_8h_source.html" title="DGtal/base/Assert.h" alt="" coords="2370,832,2510,857"/>
+<area shape="rect" id="node20" href="$TraceWriterFile_8h_source.html" title="DGtal/base/TraceWriterFile.h" alt="" coords="1431,905,1625,931"/>
+<area shape="rect" id="node21" href="$ConceptUtils_8h_source.html" title="DGtal/base/ConceptUtils.h" alt="" coords="792,752,971,777"/>
+<area shape="rect" id="node22" href="$BasicTypes_8h_source.html" title="DGtal/base/BasicTypes.h" alt="" coords="1144,752,1315,777"/>
+<area shape="rect" id="node24" href="$BasicFunctors_8h_source.html" title="DGtal/base/BasicFunctors.h" alt="" coords="3364,752,3551,777"/>
+<area shape="rect" id="node28" href="$BasicArchetypes_8h_source.html" title="DGtal/base/BasicArchetypes.h" alt="" coords="1542,832,1744,857"/>
+<area shape="rect" id="node29" href="$Exceptions_8h_source.html" title="DGtal/base/Exceptions.h" alt="" coords="1723,905,1891,931"/>
+<area shape="rect" id="node27" href="$Color_8ih_source.html" title="DGtal/io/Color.ih" alt="" coords="3637,905,3755,931"/>
+<area shape="rect" id="node31" href="$NumberTraits_8h_source.html" title="DGtal/kernel/NumberTraits.h" alt="" coords="869,592,1059,617"/>
+<area shape="rect" id="node32" href="$StarShaped3D_8ih_source.html" title="StarShaped3D.ih" alt="" coords="93,752,216,777"/>
+<area shape="rect" id="node35" href="$SpaceND_8h_source.html" title="DGtal/kernel/SpaceND.h" alt="" coords="2996,432,3164,457"/>
+<area shape="rect" id="node38" href="$HyperRectDomain_8h_source.html" title="DGtal/kernel/domains\l/HyperRectDomain.h" alt="" coords="895,332,1044,371"/>
+<area shape="rect" id="node42" href="$DigitalSetSelector_8h_source.html" title="DGtal/kernel/sets/Digital\lSetSelector.h" alt="" coords="3487,585,3652,624"/>
+<area shape="rect" id="node43" href="$DigitalTopology_8h_source.html" title="DGtal/topology/DigitalTopology.h" alt="" coords="3929,592,4143,617"/>
+<area shape="rect" id="node44" href="$MetricAdjacency_8h_source.html" title="DGtal/topology/MetricAdjacency.h" alt="" coords="2456,339,2677,364"/>
+<area shape="rect" id="node45" href="$Object_8h_source.html" title="DGtal/topology/Object.h" alt="" coords="3591,512,3753,537"/>
+<area shape="rect" id="node46" href="$KhalimskySpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lSpaceND.h" alt="" coords="3084,239,3258,277"/>
+<area shape="rect" id="node47" href="$KhalimskyPreSpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lPreSpaceND.h" alt="" coords="3117,332,3291,371"/>
+<area shape="rect" id="node48" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp. " alt="" coords="3117,152,3275,191"/>
+<area shape="rect" id="node49" href="$ExactPredicateLpSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpSeparable\lMetric.h" alt="" coords="1423,325,1667,377"/>
+<area shape="rect" id="node50" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpPower\lSeparableMetric.h" alt="" coords="1106,325,1326,377"/>
+<area shape="rect" id="node36" href="$CInteger_8h_source.html" title="DGtal/kernel/CInteger.h" alt="" coords="1384,512,1544,537"/>
+<area shape="rect" id="node37" href="$PointVector_8h_source.html" title="DGtal/kernel/PointVector.h" alt="" coords="3239,512,3417,537"/>
+<area shape="rect" id="node39" href="$CSpace_8h_source.html" title="DGtal/kernel/CSpace.h" alt="" coords="890,432,1048,457"/>
+<area shape="rect" id="node40" href="$BasicPointPredicates_8h_source.html" title="DGtal/kernel/BasicPointPredicates.h" alt="" coords="1073,432,1309,457"/>
+<area shape="rect" id="node41" href="$CDomain_8h_source.html" title="DGtal/kernel/domains\l/CDomain.h" alt="" coords="443,585,592,624"/>
+</map>

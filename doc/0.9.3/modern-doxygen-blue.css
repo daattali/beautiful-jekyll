@@ -1,0 +1,182 @@
+/*
+header color: #4478A6
+text color: #2980b9
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.tabs,.tabs2,.tabs3,.tablist li,.tablist li.current a,.tablist a,.tablist a:hover,.ui-resizable-e,div.header,#nav-tree .selected,#nav-tree,.memproto,dl.reflist dt,.memdoc,dl.reflist dd, div.ah {
+    background-image: none;
+}
+
+.tablist li.current a,.tablist a,.tablist a:hover,#nav-tree .selected {
+    color: #2980b9;
+    text-shadow: none;
+}
+
+.tablist a:hover {
+    color: #FFF;
+    background-color: #9A9B9A;
+}
+
+.tablist li.current a {
+    color: #FFF;
+    background-color: #9A9B9A;
+}
+
+.tabs,.tabs2,.tabs3 {
+    font-size: 15px;
+}
+
+.tabs2 {
+    font-size: 12px;
+}
+
+.ui-resizable-e {
+    background-color: #414040;
+    width: 1px;
+}
+
+#titlearea {
+    border-bottom: none;
+    background-color: #FFF;
+    color: #A2A2A2;
+}
+
+.title a {
+  color: #2980b9;
+}
+
+div.header {
+    color: #414040;
+    border-top: 2px solid #848079;
+    clear: both;
+}
+
+#navrow1 {
+    width: 80%;
+}
+
+#navrow2 {
+    width: 80%;
+}
+
+#nav-tree {
+    background-color: #292929;
+}
+
+a {
+    color: #2980b9;
+}
+
+#side-nav {
+    top: 36px;
+}
+
+div.navpath {
+    display: none;
+}
+
+.tablist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.memproto,dl.reflist dt {
+    border: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    text-shadow: none;
+    background-color: #eff0f2;
+    color: #353534;
+}
+
+.memdoc,dl.reflist dd {
+    border: none;
+    text-shadow: none;
+}
+
+.memname {
+    font-size: 1em;
+}
+
+.paramname {
+    color: #353534;
+}
+
+table.doxtable th {
+  background-color: #2980b9;
+}
+
+.directory table {
+    border-collapse: initial;
+}
+
+.directory tr.even {
+    background-color: #E6E7E9;
+}
+
+.directory tr {
+    padding: 2px 0;
+}
+
+.directory td.entry {
+    padding-bottom: 3px;
+}
+
+div.directory {
+    border-top: none;
+    border-bottom: none;
+}
+
+.contents a:visited {
+    color: #2980b9;
+}
+
+div.toc {
+  border-radius: 0px;
+}
+
+div.toc h3 {
+  color: #414040;
+}
+
+h2.groupheader {
+    border-bottom: 1px solid #9A9B9A;
+    color: #353534;
+}
+
+hr {
+    border-top: none;
+}
+
+div.qindex,div.navtab {
+    background-color: #9A9B9A;
+    border: none;
+    color: #FFF;
+}
+
+div.ah {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.icon {
+	background-color: #4478A6;
+	color: white;
+}
+
+#navrow1 > .tablist > .current > a {
+	background-color: #4478A6;
+}
+
+.directory .levels span {
+	color: #4478A6;
+}

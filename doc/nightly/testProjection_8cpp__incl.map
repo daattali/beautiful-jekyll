@@ -1,0 +1,43 @@
+<map id="testProjection.cpp" name="testProjection.cpp">
+<area shape="rect" id="node3" href="$StdDefs_8h_source.html" title="DGtal/helpers/StdDefs.h" alt="" coords="1257,79,1423,104"/>
+<area shape="rect" id="node24" href="$SCellsFunctors_8h_source.html" title="DGtal/topology/SCellsFunctors.h" alt="" coords="1631,245,1846,271"/>
+<area shape="rect" id="node28" href="$SurfelAdjacency_8h_source.html" title="DGtal/topology/SurfelAdjacency.h" alt="" coords="5673,332,5893,357"/>
+<area shape="rect" id="node31" href="$DigitalSurface_8h_source.html" title="DGtal/topology/DigitalSurface.h" alt="" coords="4156,245,4364,271"/>
+<area shape="rect" id="node39" href="$BoundaryPredicate_8h_source.html" title="DGtal/topology/helpers\l/BoundaryPredicate.h" alt="" coords="2968,239,3125,277"/>
+<area shape="rect" id="node42" href="$SetOfSurfels_8h_source.html" title="DGtal/topology/SetOfSurfels.h" alt="" coords="4184,159,4384,184"/>
+<area shape="rect" id="node46" href="$DGtal_2shapes_2Shapes_8h_source.html" title="DGtal/shapes/Shapes.h" alt="" coords="476,159,638,184"/>
+<area shape="rect" id="node47" href="$GaussDigitizer_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="317,245,520,271"/>
+<area shape="rect" id="node48" href="$ShapeFactory_8h_source.html" title="DGtal/shapes/ShapeFactory.h" alt="" coords="6018,425,6217,451"/>
+<area shape="rect" id="node49" href="$Board2D_8h_source.html" title="DGtal/io/boards/Board2D.h" alt="" coords="3663,332,3844,357"/>
+<area shape="rect" id="node4" href="$Common_8h_source.html" title="DGtal/base/Common.h" alt="" coords="2340,512,2497,537"/>
+<area shape="rect" id="node5" href="$SpaceND_8h_source.html" title="DGtal/kernel/SpaceND.h" alt="" coords="1276,425,1444,451"/>
+<area shape="rect" id="node6" href="$HyperRectDomain_8h_source.html" title="DGtal/kernel/domains\l/HyperRectDomain.h" alt="" coords="383,325,532,364"/>
+<area shape="rect" id="node8" href="$DigitalSetSelector_8h_source.html" title="DGtal/kernel/sets/Digital\lSetSelector.h" alt="" coords="1988,419,2153,457"/>
+<area shape="rect" id="node9" href="$DigitalTopology_8h_source.html" title="DGtal/topology/DigitalTopology.h" alt="" coords="1972,245,2186,271"/>
+<area shape="rect" id="node12" href="$MetricAdjacency_8h_source.html" title="DGtal/topology/MetricAdjacency.h" alt="" coords="1055,332,1276,357"/>
+<area shape="rect" id="node14" href="$Object_8h_source.html" title="DGtal/topology/Object.h" alt="" coords="2361,245,2524,271"/>
+<area shape="rect" id="node18" href="$KhalimskySpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lSpaceND.h" alt="" coords="1316,239,1490,277"/>
+<area shape="rect" id="node19" href="$KhalimskyPreSpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lPreSpaceND.h" alt="" coords="1300,325,1474,364"/>
+<area shape="rect" id="node20" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp. " alt="" coords="1805,152,1963,191"/>
+<area shape="rect" id="node26" href="$ExactPredicateLpSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpSeparable\lMetric.h" alt="" coords="245,412,489,464"/>
+<area shape="rect" id="node27" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpPower\lSeparableMetric.h" alt="" coords="980,412,1201,464"/>
+<area shape="rect" id="node7" href="$NumberTraits_8h_source.html" title="DGtal/kernel/NumberTraits.h" alt="" coords="513,425,703,451"/>
+<area shape="rect" id="node10" href="$ConstAlias_8h_source.html" title="DGtal/base/ConstAlias.h" alt="" coords="2041,332,2207,357"/>
+<area shape="rect" id="node11" href="$CountedPtr_8h_source.html" title="DGtal/base/CountedPtr.h" alt="" coords="3543,425,3713,451"/>
+<area shape="rect" id="node15" href="$Topology_8h_source.html" title="DGtal/topology/Topology.h" alt="" coords="3918,425,4095,451"/>
+<area shape="rect" id="node23" href="$CCellularGridSpaceND_8h_source.html" title="DGtal/topology/CCellular\lGridSpaceND.h" alt="" coords="4220,419,4388,457"/>
+<area shape="rect" id="node25" href="$BasicBoolFunctors_8h_source.html" title="DGtal/base/BasicBoolFunctors.h" alt="" coords="1569,512,1783,537"/>
+<area shape="rect" id="node30" href="$SurfelAdjacency_8ih_source.html" title="DGtal/topology/SurfelAdjacency.ih" alt="" coords="5618,425,5841,451"/>
+<area shape="rect" id="node32" href="$CWithGradientMap_8h_source.html" title="DGtal/kernel/CWithGradient\lMap.h" alt="" coords="5081,419,5268,457"/>
+<area shape="rect" id="node33" href="$CCellEmbedder_8h_source.html" title="DGtal/topology/CCellEmbedder.h" alt="" coords="4658,332,4876,357"/>
+<area shape="rect" id="node34" href="$CSCellEmbedder_8h_source.html" title="DGtal/topology/CSCellEmbedder.h" alt="" coords="4407,332,4633,357"/>
+<area shape="rect" id="node35" href="$CDigitalSurfaceContainer_8h_source.html" title="DGtal/topology/CDigitalSurface\lContainer.h" alt="" coords="4900,325,5106,364"/>
+<area shape="rect" id="node36" href="$CDigitalSurfaceTracker_8h_source.html" title="DGtal/topology/CDigitalSurface\lTracker.h" alt="" coords="4801,419,5007,457"/>
+<area shape="rect" id="node37" href="$UmbrellaComputer_8h_source.html" title="DGtal/topology/UmbrellaComputer.h" alt="" coords="5180,332,5415,357"/>
+<area shape="rect" id="node38" href="$DigitalSurface_8ih_source.html" title="DGtal/topology/DigitalSurface.ih" alt="" coords="4122,332,4332,357"/>
+<area shape="rect" id="node40" href="$CConstImage_8h_source.html" title="DGtal/images/CConstImage.h" alt="" coords="2635,332,2834,357"/>
+<area shape="rect" id="node41" href="$BoundaryPredicate_8ih_source.html" title="DGtal/topology/helpers\l/BoundaryPredicate.ih" alt="" coords="2858,325,3014,364"/>
+<area shape="rect" id="node43" href="$SurfelNeighborhood_8h_source.html" title="DGtal/topology/SurfelNeighborhood.h" alt="" coords="4943,245,5185,271"/>
+<area shape="rect" id="node44" href="$SurfelSetPredicate_8h_source.html" title="DGtal/topology/SurfelSet\lPredicate.h" alt="" coords="3629,239,3797,277"/>
+<area shape="rect" id="node45" href="$SetOfSurfels_8ih_source.html" title="DGtal/topology/SetOfSurfels.ih" alt="" coords="4540,245,4743,271"/>
+</map>

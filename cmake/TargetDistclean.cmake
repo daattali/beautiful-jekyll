@@ -1,2 +1,0 @@
-message( STATUS "cleaning files: ${CMAKE_SOURCE_DIR}/doc/html ${CMAKE_SOURCE_DIR}/_CPack_Packages ${CMAKE_SOURCE_DIR}/build" )
-file( REMOVE_RECURSE ${CMAKE_SOURCE_DIR}/doc/html ${CMAKE_SOURCE_DIR}/_CPack_Packages ${CMAKE_SOURCE_DIR}/build )

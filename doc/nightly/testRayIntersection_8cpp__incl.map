@@ -1,0 +1,38 @@
+<map id="testRayIntersection.cpp" name="testRayIntersection.cpp">
+<area shape="rect" id="node3" href="$Common_8h_source.html" title="DGtal/base/Common.h" alt="" coords="1783,512,1940,537"/>
+<area shape="rect" id="node26" href="$StdDefs_8h_source.html" title="DGtal/helpers/StdDefs.h" alt="" coords="1021,79,1187,104"/>
+<area shape="rect" id="node41" href="$RayIntersectionPredicates_8h_source.html" title="DGtal/geometry/tools\l/RayIntersectionPredicates.h" alt="" coords="3693,419,3885,457"/>
+<area shape="rect" id="node42" href="$ImplicitBall_8h_source.html" title="DGtal/shapes/implicit\l/ImplicitBall.h" alt="" coords="2775,325,2921,364"/>
+<area shape="rect" id="node45" href="$GaussDigitizer_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="2295,245,2497,271"/>
+<area shape="rect" id="node49" href="$LightImplicitDigitalSurface_8h_source.html" title="DGtal/topology/LightImplicit\lDigitalSurface.h" alt="" coords="1840,239,2024,277"/>
+<area shape="rect" id="node50" href="$DigitalSurface_8h_source.html" title="DGtal/topology/DigitalSurface.h" alt="" coords="4011,425,4218,451"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title="DGtal/base/Config.h" alt="" coords="1203,745,1344,771"/>
+<area shape="rect" id="node16" href="$Trace_8h_source.html" title="DGtal/base/Trace.h" alt="" coords="1469,592,1606,617"/>
+<area shape="rect" id="node17" href="$TraceWriterTerm_8h_source.html" title="DGtal/base/TraceWriterTerm.h" alt="" coords="1505,672,1706,697"/>
+<area shape="rect" id="node18" href="$Assert_8h_source.html" title="DGtal/base/Assert.h" alt="" coords="1340,672,1481,697"/>
+<area shape="rect" id="node19" href="$TraceWriterFile_8h_source.html" title="DGtal/base/TraceWriterFile.h" alt="" coords="1418,745,1611,771"/>
+<area shape="rect" id="node20" href="$ConceptUtils_8h_source.html" title="DGtal/base/ConceptUtils.h" alt="" coords="1635,745,1813,771"/>
+<area shape="rect" id="node21" href="$BasicTypes_8h_source.html" title="DGtal/base/BasicTypes.h" alt="" coords="1837,745,2008,771"/>
+<area shape="rect" id="node22" href="$BasicFunctors_8h_source.html" title="DGtal/base/BasicFunctors.h" alt="" coords="1072,592,1259,617"/>
+<area shape="rect" id="node23" href="$BasicArchetypes_8h_source.html" title="DGtal/base/BasicArchetypes.h" alt="" coords="1883,672,2085,697"/>
+<area shape="rect" id="node24" href="$Exceptions_8h_source.html" title="DGtal/base/Exceptions.h" alt="" coords="2083,745,2251,771"/>
+<area shape="rect" id="node27" href="$SpaceND_8h_source.html" title="DGtal/kernel/SpaceND.h" alt="" coords="491,425,658,451"/>
+<area shape="rect" id="node28" href="$HyperRectDomain_8h_source.html" title="DGtal/kernel/domains\l/HyperRectDomain.h" alt="" coords="2321,325,2471,364"/>
+<area shape="rect" id="node30" href="$DigitalSetSelector_8h_source.html" title="DGtal/kernel/sets/Digital\lSetSelector.h" alt="" coords="1203,325,1368,364"/>
+<area shape="rect" id="node31" href="$DigitalTopology_8h_source.html" title="DGtal/topology/DigitalTopology.h" alt="" coords="1602,245,1816,271"/>
+<area shape="rect" id="node34" href="$MetricAdjacency_8h_source.html" title="DGtal/topology/MetricAdjacency.h" alt="" coords="699,332,920,357"/>
+<area shape="rect" id="node35" href="$Object_8h_source.html" title="DGtal/topology/Object.h" alt="" coords="1315,245,1477,271"/>
+<area shape="rect" id="node36" href="$KhalimskySpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lSpaceND.h" alt="" coords="609,239,783,277"/>
+<area shape="rect" id="node37" href="$KhalimskyPreSpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lPreSpaceND.h" alt="" coords="450,325,624,364"/>
+<area shape="rect" id="node38" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp. " alt="" coords="1082,152,1240,191"/>
+<area shape="rect" id="node39" href="$ExactPredicateLpSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpSeparable\lMetric.h" alt="" coords="783,412,1027,464"/>
+<area shape="rect" id="node40" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpPower\lSeparableMetric.h" alt="" coords="246,412,466,464"/>
+<area shape="rect" id="node29" href="$NumberTraits_8h_source.html" title="DGtal/kernel/NumberTraits.h" alt="" coords="2337,425,2527,451"/>
+<area shape="rect" id="node32" href="$ConstAlias_8h_source.html" title="DGtal/base/ConstAlias.h" alt="" coords="1625,332,1791,357"/>
+<area shape="rect" id="node33" href="$CountedConstPtrOrConstPtr_8h_source.html" title="DGtal/base/CountedConstPtr\lOrConstPtr.h" alt="" coords="2018,419,2212,457"/>
+<area shape="rect" id="node43" href="$CImplicitFunction_8h_source.html" title="DGtal/shapes/implicit\l/CImplicitFunction.h" alt="" coords="3073,419,3220,457"/>
+<area shape="rect" id="node44" href="$ImplicitBall_8ih_source.html" title="DGtal/shapes/implicit\l/ImplicitBall.ih" alt="" coords="2903,419,3049,457"/>
+<area shape="rect" id="node46" href="$RegularPointEmbedder_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="3244,419,3420,457"/>
+<area shape="rect" id="node47" href="$CEuclideanOrientedShape_8h_source.html" title="DGtal/shapes/CEuclideanOriented\lShape.h" alt="" coords="3445,419,3670,457"/>
+<area shape="rect" id="node48" href="$CEuclideanBoundedShape_8h_source.html" title="DGtal/shapes/CEuclideanBounded\lShape.h" alt="" coords="2601,419,2828,457"/>
+</map>

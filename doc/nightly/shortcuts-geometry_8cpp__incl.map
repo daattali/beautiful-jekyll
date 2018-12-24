@@ -1,0 +1,44 @@
+<map id="shortcuts&#45;geometry.cpp" name="shortcuts&#45;geometry.cpp">
+<area shape="rect" id="node4" href="$StdDefs_8h_source.html" title="DGtal/helpers/StdDefs.h" alt="" coords="1028,152,1193,177"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title="DGtal/base/Common.h" alt="" coords="2922,585,3078,611"/>
+<area shape="rect" id="node23" href="$Shortcuts_8h_source.html" title="DGtal/helpers/Shortcuts.h" alt="" coords="3701,152,3875,177"/>
+<area shape="rect" id="node50" href="$ShortcutsGeometry_8h_source.html" title="DGtal/helpers/ShortcutsGeometry.h" alt="" coords="3672,79,3904,104"/>
+<area shape="rect" id="node6" href="$SpaceND_8h_source.html" title="DGtal/kernel/SpaceND.h" alt="" coords="830,499,997,524"/>
+<area shape="rect" id="node7" href="$HyperRectDomain_8h_source.html" title="DGtal/kernel/domains\l/HyperRectDomain.h" alt="" coords="4097,492,4247,531"/>
+<area shape="rect" id="node8" href="$DigitalSetSelector_8h_source.html" title="DGtal/kernel/sets/Digital\lSetSelector.h" alt="" coords="1123,492,1288,531"/>
+<area shape="rect" id="node9" href="$DigitalTopology_8h_source.html" title="DGtal/topology/DigitalTopology.h" alt="" coords="541,499,755,524"/>
+<area shape="rect" id="node10" href="$MetricAdjacency_8h_source.html" title="DGtal/topology/MetricAdjacency.h" alt="" coords="480,405,701,431"/>
+<area shape="rect" id="node11" href="$Object_8h_source.html" title="DGtal/topology/Object.h" alt="" coords="1244,405,1407,431"/>
+<area shape="rect" id="node14" href="$KhalimskySpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lSpaceND.h" alt="" coords="972,312,1146,351"/>
+<area shape="rect" id="node15" href="$KhalimskyPreSpaceND_8h_source.html" title="DGtal/topology/Khalimsky\lPreSpaceND.h" alt="" coords="826,399,1000,437"/>
+<area shape="rect" id="node16" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp. " alt="" coords="1870,225,2028,264"/>
+<area shape="rect" id="node21" href="$ExactPredicateLpSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpSeparable\lMetric.h" alt="" coords="4622,485,4866,537"/>
+<area shape="rect" id="node22" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title="DGtal/geometry/volumes\l/distance/ExactPredicateLpPower\lSeparableMetric.h" alt="" coords="195,485,416,537"/>
+<area shape="rect" id="node13" href="$CountedPtr_8h_source.html" title="DGtal/base/CountedPtr.h" alt="" coords="2026,499,2195,524"/>
+<area shape="rect" id="node19" href="$CCellularGridSpaceND_8h_source.html" title="DGtal/topology/CCellular\lGridSpaceND.h" alt="" coords="2271,492,2439,531"/>
+<area shape="rect" id="node20" href="$CanonicSCellEmbedder_8h_source.html" title="DGtal/topology/CanonicSCell\lEmbedder.h" alt="" coords="2534,312,2728,351"/>
+<area shape="rect" id="node26" href="$RegularPointEmbedder_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="4321,492,4497,531"/>
+<area shape="rect" id="node27" href="$MPolynomial_8h_source.html" title="DGtal/math/MPolynomial.h" alt="" coords="5130,499,5310,524"/>
+<area shape="rect" id="node28" href="$Statistic_8h_source.html" title="DGtal/math/Statistic.h" alt="" coords="5728,499,5878,524"/>
+<area shape="rect" id="node29" href="$ImageContainerBySTLVector_8h_source.html" title="DGtal/images/ImageContainer\lBySTLVector.h" alt="" coords="3882,399,4083,437"/>
+<area shape="rect" id="node30" href="$IntervalForegroundPredicate_8h_source.html" title="DGtal/images/IntervalForeground\lPredicate.h" alt="" coords="5952,492,6171,531"/>
+<area shape="rect" id="node31" href="$ImageLinearCellEmbedder_8h_source.html" title="DGtal/images/ImageLinear\lCellEmbedder.h" alt="" coords="1541,492,1721,531"/>
+<area shape="rect" id="node32" href="$ImplicitPolynomial3Shape_8h_source.html" title="DGtal/shapes/implicit\l/ImplicitPolynomial3Shape.h" alt="" coords="2904,399,3093,437"/>
+<area shape="rect" id="node33" href="$GaussDigitizer_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape. " alt="" coords="4259,405,4461,431"/>
+<area shape="rect" id="node34" href="$ShapeGeometricFunctors_8h_source.html" title="DGtal/shapes/ShapeGeometric\lFunctors.h" alt="" coords="1745,492,1951,531"/>
+<area shape="rect" id="node35" href="$MeshHelpers_8h_source.html" title="DGtal/shapes/MeshHelpers.h" alt="" coords="2348,232,2543,257"/>
+<area shape="rect" id="node36" href="$CCellEmbedder_8h_source.html" title="DGtal/topology/CCellEmbedder.h" alt="" coords="2295,405,2513,431"/>
+<area shape="rect" id="node37" href="$DigitalSurface_8h_source.html" title="DGtal/topology/DigitalSurface.h" alt="" coords="2150,319,2357,344"/>
+<area shape="rect" id="node38" href="$LightImplicitDigitalSurface_8h_source.html" title="DGtal/topology/LightImplicit\lDigitalSurface.h" alt="" coords="3168,399,3352,437"/>
+<area shape="rect" id="node39" href="$SurfelAdjacency_8h_source.html" title="DGtal/topology/SurfelAdjacency.h" alt="" coords="3171,499,3391,524"/>
+<area shape="rect" id="node40" href="$SetOfSurfels_8h_source.html" title="DGtal/topology/SetOfSurfels.h" alt="" coords="3376,405,3576,431"/>
+<area shape="rect" id="node41" href="$IndexedDigitalSurface_8h_source.html" title="DGtal/topology/IndexedDigital\lSurface.h" alt="" coords="3516,492,3714,531"/>
+<area shape="rect" id="node42" href="$CanonicCellEmbedder_8h_source.html" title="DGtal/topology/CanonicCell\lEmbedder.h" alt="" coords="3787,492,3973,531"/>
+<area shape="rect" id="node43" href="$Surfaces_8h_source.html" title="DGtal/topology/helpers\l/Surfaces.h" alt="" coords="3651,399,3808,437"/>
+<area shape="rect" id="node44" href="$KanungoNoise_8h_source.html" title="DGtal/geometry/volumes\l/KanungoNoise.h" alt="" coords="4587,399,4755,437"/>
+<area shape="rect" id="node45" href="$Color_8h_source.html" title="DGtal/io/Color.h" alt="" coords="4990,499,5106,524"/>
+<area shape="rect" id="node46" href="$GradientColorMap_8h_source.html" title="DGtal/io/colormaps\l/GradientColorMap.h" alt="" coords="4829,399,4974,437"/>
+<area shape="rect" id="node47" href="$TickedColorMap_8h_source.html" title="DGtal/io/colormaps\l/TickedColorMap.h" alt="" coords="4998,399,5133,437"/>
+<area shape="rect" id="node48" href="$MPolynomialReader_8h_source.html" title="DGtal/io/readers/MPolynomial\lReader.h" alt="" coords="5258,399,5457,437"/>
+<area shape="rect" id="node49" href="$GenericReader_8h_source.html" title="DGtal/io/readers/Generic\lReader.h" alt="" coords="5485,492,5654,531"/>
+</map>
