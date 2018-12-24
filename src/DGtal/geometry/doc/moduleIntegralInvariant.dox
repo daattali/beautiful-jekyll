@@ -1,0 +1,212 @@
+/**
+ * @file moduleIntegralInvariant.dox 
+ * @author Jérémy Levallois (\c jeremy.levallois@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, 
+ * UMR 5205), INSA-Lyon, France
+ * LAboratoire de MAthématiques - LAMA (CNRS, UMR 5127), Université de Savoie, 
+ * France
+ *
+ * @date 2013/01/13
+ *
+ * Documentation file for feature moduleIntegralInvariant
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleIntegralInvariant Integral invariant curvature estimator 2D/3D
+
+[TOC]
+
+@author Jérémy Levallois
+
+\section II_sectOverview Overview
+
+The algorithm implemented in the class IntegralInvariantVolumeEstimator and 
+IntegralInvariantCovarianceEstimator are detailed in the article 
+@cite Coeurjo-CVIU-2014 .
+
+In geometry processing, interesting mathematical tools have been developed to 
+design differential estimators on smooth surfaces based on Integral Invariant 
+@cite Pottmann2007 @cite Pottmann2009 .
+The principle is simple: we move a convolution kernel along the shape surface 
+and we compute integrals on the intersection between the shape and the 
+convolution kernel, as follow in dimension 3:
+
+@f[ V_r(x) = \int_{B_r(x)}  \chi(p)dp\ @f]
+
+where @f$ B_r(x) @f$ is the Euclidean ball of radius @f$ r @f$, centered at 
+@f$ x @f$ and @f$ \chi(p) @f$ the characteristic function of @f$ X @f$. In 
+dimension 2, we simply denote @f$ A_r(x) @f$ such quantity (represented in 
+orange color on the following figure).
+
+@image html integral2D.png "Integral invariant computation in dimension 2."
+@image latex integral2D.png "Integral invariant computation in dimension 2." width=5cm
+@image html integral3D.png "Integral invariant computation in dimension 3."
+@image latex integral3D.png "Integral invariant computation in dimension 3." width=5cm
+@image html notations_integral.png "Notations."
+@image latex notations_integral.png "Notations." width=5cm
+
+\subsection subsectIntegralInvariant Integral Invariant for curvature computation
+
+In @cite Coeurjo2013 , we have demonstrated that some digital integral 
+quantities provide curvature information when the kernel size tends to zero for 
+a sufficiently smooth shape.
+Indeed, at @f$ x @f$ of the surface @f$ X @f$ and with a fixed radius @f$ r @f$,
+ we obtain convergent local curvature estimators @f$ \tilde{\kappa}_r(X,x) @f$ 
+and @f$ \tilde{H}_r(X,x) @f$ of quantities @f$ \kappa(X,x) @f$ and @f$ H(X,x) @f$ 
+respectively:
+
+@f[
+  \tilde{\kappa}_r(X,x)
+   = \frac{3\pi}{2r} - \frac{3A_r(x)}{r^3},\quad \tilde{\kappa}_r(X,x)
+   =  \kappa(X,x)+ O(r)
+@f]
+
+@f[
+  \tilde{H}_r(X,x)
+   = \frac{8}{3r} - \frac{4V_r(x)}{\pi r^4},\quad \tilde{H}_r(X,x)
+    = H(X,x) + O(r)
+@f]
+
+where @f$ \kappa_r(X,x) @f$ is the 2d curvature of @f$ X @f$ at @f$ x @f$ and 
+@f$ H_r(X,x) @f$ is the 3d mean curvature of @f$ X @f$ at @f$ x @f$.
+
+Then we showed that we can obtain local digital curvature estimators :
+@f[
+  \forall 0 < h < r,\quad \hat{\kappa}_r(Z,x,h)
+   = \frac{3\pi}{2r} - \frac{3\widehat{Area}(B_{r/h}(\frac{1}{h} 
+   \cdot x ) \cap Z, h)}{r^3}
+@f]
+where @f$ \hat{\kappa}_r @f$ is an integral digital curvature estimator of a 
+digital shape @f$ Z \subset ℤ^2 @f$ at point @f$ x \in \rm I\! R^2 @f$ and step 
+@f$ h @f$.
+@f$ B_{r/h}(\frac{1}{h} \cdot x ) \cap Z, h) @f$ means the intersection between 
+@f$ Z @f$ and a Ball @f$ B @f$ of radius @f$ r @f$ digitized by @f$ h @f$ 
+centered in @f$ x @f$.
+
+In the same way, we have in 3d :
+@f[
+  \forall 0 < h < r,\quad \hat{H}_r(Z',x,h)
+   = \frac{8}{3r} - \frac{4\widehat{Vol}(B_{r/h}(\frac{1}{h}
+    \cdot x ) \cap Z', h)}{\pi r^4}.
+@f]
+where @f$ \hat{H}_r @f$ is an integral digital mean curvature estimator of a 
+digital shape @f$ Z' \subset ℤ^3 @f$ at point @f$ x \in \rm I\! R^3 @f$ and 
+step @f$ h @f$ .
+
+We have demonstrated in @cite Coeurjo2013 that to prove the multigrid 
+convergence with a convergence speed of @f$ O(h^{\frac{1}{3}}) @f$, the 
+Euclidean radius of the kernel must follow the rule @f$ r = k_mh^{\alpha_m} @f$ 
+( @f$ \alpha_m = \frac{1}{3} @f$ provides better worst-case errors, so we will
+ use this value).
+
+Experimental results can be found at https://liris.cnrs.fr/jeremy.levallois/Papers/DGCI2013/
+ and https://liris.cnrs.fr/jeremy.levallois/Papers/AFIG2013/
+
+\section II_sectAlgo Algorithm
+
+\subsection II_subsectDef Overall algorithm
+
+The user part is rather simple by using only IntegralInvariantVolumeEstimator or IntegralInvariantCovarianceEstimator.
+
+Since <b>2d curvature</b> and <b>3d mean curvature</b> are related to the volume 
+between the shape and a ball centered on the border of the shape, we need to 
+estimate this volume and use this value to get the curvature information. Then 
+we parametrize our volume estimator IntegralInvariantVolumeEstimator by 
+a functor to compute the curvature (in 2d: functors::IICurvatureFunctor 
+and in 3d for the mean curvature: functors::IIMeanCurvature3DFunctor )
+
+In 3d we can also compute the covariance matrix of the intersection between the 
+shape and the ball centered on the border of the shape using 
+IntegralInvariantCovarianceEstimator. This offers us the possibility to extract 
+many differential quantities as: <b>3d Gaussian curvature</b>, <b>first</b> and 
+<b>second principal curvatures</b>, as well <b>first and second principal 
+curvature directions</b>, <b>normal vector</b> or <b>tangeant vector</b> 
+(functors::IIGaussianCurvature3DFunctor, etc. See 
+file DGtal/geometry/surfaces/estimation/IIGeometricFunctors.h or namespace \link DGtal::functors functors\endlink for the entire list).
+
+\subsubsection subsubsectFunctors Integral Invariant functors
+
+All functors defined in IIGeometricFunctors.h have the same inititialization process: you 
+need to use the default constructor, and initialize them with <tt>init()</tt> 
+method. They will ask for a grid step (@f$ h @f$) and the <b>Euclidean radius</b> 
+of the kernel ball (@f$ r @f$).
+
+\subsubsection subsubsectEstimators Integral Invariant estimators
+
+As described below, this parameter @f$ r_e @f$ determines
+the level of feature detected by the estimator
+Since IntegralInvariantVolumeEstimator and (resp.) 
+IntegralInvariantCovarianceEstimator are models of CSurfelLocalEstimator, they 
+will follow rules inferred by it (init(), eval(), etc.). But some particular 
+considerations are introduce. The following steps are the general usage of 
+Integral Invariant estimators:
+
+- First, you need to give them a functor on Volume (resp. Covariance matrix) on 
+the constructor of the class (see above).
+	- You can also give them the cellular grid space model of CCellularGridSpaceND 
+  in which the shape is defined (Z3i::KSpace for example in 3d) and a point 
+  predicate model of concepts::CPointPredicate (the digital shape of interest, used to 
+  know if a point of the domain is inside or outside the shape), either in the 
+  constructor, or in the <tt>attach()</tt> method.
+
+- Integral Invariant estimators need to know which size of ball you want to 
+convolve around the shape boundary, so we need to call the <tt>setParams(double)</tt> 
+method with the <b>digital radius</b> of the ball (@f$ \frac{r}{h} @f$).
+	- \warning II functors need the Euclidean radius of the ball, and II 
+  estimators the digital radius.
+
+- Then, we can initialize our estimator, by calling <tt>init()</tt> method. It 
+requires the grid step of the shape @f$ h @f$, a begin and a end surfel iterator 
+of the shape. This method will precompute all internal parameters for II 
+estimator, as displacement masks optimization (see Technical details part below).
+
+- Finally, you can evaluate the estimator in two way: 
+	- at a given (iterator of a) surface element (surfel) : <tt>eval(it_surfel)</tt>
+	- for a range of (iterators of) surface elements : <tt>eval(it_begin, it_end, output)</tt>. 
+  Here <tt>output</tt> is an output iterator where results are given 
+  (std::back_insert_iterator for example).
+
+If you want to evaluate on a range of surfels, we recommend you to choose the second 
+way. Indeed, some optimizations are available when the range of surfels is given 
+with a 0-adjacency. Then, when you extract the digital surface of your shape, 
+it's recommended to use a <b>depth-first search</b> (see DepthFirstVisitor for 
+example). If none, no optimization are perform (it will be visible in 
+performances for big shape).
+
+\section II_sectImplementation Example code
+
+It is important to consider a range of connected surfels when evaluating with 
+Integral Invariant Curvature estimators in order to benefit the kernel 
+optimization.
+Note that the methodology is the same with both IntegralInvariantVolumeEstimator 
+and IntegralInvariantCovarianceEstimator.
+The only change is on the typedef of Functor/Estimator (see below):
+
+@snippet geometry/surfaces/exampleIntegralInvariantCurvature3D.cpp IntegralInvariantUsage
+
+\section sectResults Some results
+
+Here is some results in 2d and 3d :
+
+@image html example-integralinvariant2D.png "Curvature mapped on a Flower2D"
+@image latex example-integralinvariant2D.png "Curvature mapped on a Flower2D" width=5cm
+@image html snapshot-mean-zero.png "Mean curvature mapped on a Goursat's surface"
+@image latex snapshot-mean-zero.png "Mean curvature mapped on a Goursat's surface" width=5cm
+@image html snapshot-K-zero.png "Gaussian curvature mapped on a Goursat's surface"
+@image latex snapshot-K-zero.png "Gaussian curvature mapped on a Goursat's surface" width=5cm
+@image html Bunny_128_mean.png "Mean curvature mapped on a Stanford bunny (credit is given to the Stanford Computer Graphics Laboratory https://graphics.stanford.edu/data/3Dscanrep/)"
+@image latex Bunny_128_mean.png "Mean curvature mapped on a Stanford bunny (credit is given to the Stanford Computer Graphics Laboratory https://graphics.stanford.edu/data/3Dscanrep/)" width=5cm
+@image html Bunny_64_k1.png "First principal curvature direction mapped on a Stanford bunny (credit is given to the Stanford Computer Graphics Laboratory https://graphics.stanford.edu/data/3Dscanrep/)"
+@image latex Bunny_64_k1.png "First principal curvature direction mapped on a Stanford bunny (credit is given to the Stanford Computer Graphics Laboratory https://graphics.stanford.edu/data/3Dscanrep/)" width=5cm
+
+*/
+
+}

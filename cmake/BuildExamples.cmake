@@ -1,0 +1,8 @@
+OPTION(BUILD_EXAMPLES "Build examples." ON)
+IF (BUILD_EXAMPLES)
+  message(STATUS "Build examples ENABLED")
+  add_subdirectory (${PROJECT_SOURCE_DIR}/examples)
+ELSE(BUILD_EXAMPLES)
+  message(STATUS "Build examples DISABLED (you can activate unit tests with '-DBUILD_EXAMPLES=ON' cmake option)")
+ENDIF(BUILD_EXAMPLES)
+message(STATUS "-------------------------------------------------------------------------------")

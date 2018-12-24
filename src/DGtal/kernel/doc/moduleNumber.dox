@@ -1,0 +1,110 @@
+/**
+ * @file moduleNumber.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/09/23
+ *
+ * Documentation file for feature moduleNumber
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleNumber Number and Integer Concepts
+@authors David Coeurjolly, Jacques-Olivier Lachaud
+[TOC]
+
+@section overV Overview
+
+When implementing digital geometry algorithms, the choice of integer
+type to implement or approximate @f$Z@f$ is crucial in many situations. In
+DGtal, objects, datastructure and algorithms are orthogonal to this
+choice in the sense that the user can specify the best
+Integer type for his own pruposes. 
+
+First of all, approximation with built-in integer types with bounded
+ranges can be considered. For example, DGtal::int32_t defines OS
+independent 32 bits signed integers. 
+
+If more precision is required and if GMP (Gnu multiprecision library)
+is available, DGtal::BigInteger defines arbitrary precision
+integers. In this case, performances can be impacted.
+
+As detailed in the @ref moduleSpacePointVectorDomain documentation, the integer type
+choice is specified as template parameter of templated classes
+(e.g. SpaceND). The main constraint on the type is that it induces a
+commutative ring with identity for the classical addition, and
+multiplication operators.
+
+@section numberconcepts Number and Integer Concepts
+
+In many DGtal classes, we control user specified template type thanks
+to concept checking mechanisms. In many situations, when using a
+template type associating with numbers, following basic concepts are
+involved:
+
+Concept name   | Short description | Model examples
+---------------|-------------------|--------------
+ concepts::CSignedNumber | Signed numbers                  | DGtal::int32_t, double, ....
+ concepts::CUnsignedNumber|Unsigned numbers  | DGtal::uint32_t,...
+ concepts::CBoundedNumber | Numbers with bounded capacity | DGtal::int64_t, ... (but not BigInteger)
+ concepts::CIntegralNumber | Integral numbers | DGtal::int64_t, BigInteger,...
+ 
+When we want to perform some computations on these numbers, we may use
+the following concepts:
+
+
+Concept name   | Short description | Model examples
+---------------|-------------------|--------------
+ concepts::CCommutativeRing | the model can be associated to a commutative ring (operators +,-,*, ....)                  | DGtal::int32_t, double, ....
+ concepts::CEuclideanRing | Refinement of concepts::CCommutativeRing with a "/" operator | DGtal::int32_t, double, .....
+ concepts::CInteger | Refinement of both concepts::CEuclideanRing and concepts::CIntegralNumber | DGtal::int32_t, .....
+ 
+
+
+@section basicinteger Basic integer types and NumberTraits
+
+First of all, BasicTypes refines in DGtal classical built-in integer
+types such as DGtal::uint64_t or DGtal::int32_t. However, not all
+these types are models of the concept concepts::CCommutativeRing. Indeed,
+DGtal::uint64_t has no inverse for the addition operator.
+
+Hence, if we have a templated class SpaceND with two arguments: a
+static dimension and a type of integer. And if we add a constraint
+that the integer type must be a model of concepts::CCommutativeRing, the
+following code:
+@code
+typedef DGtal::SpaceND<2, DGtal::uint64_t> MySpace;
+@endcode
+will produce a compiler error.
+
+
+In DGtal algorithms, we sometimes need information or associated types
+attached to a integer type. NumberTraits  structure is used to
+decorate integer types with tags (e.g. NumberTraits<T>::IsSigned), associated types
+(e.g. NumberTraits<T>::UnsignedVersion), constant values
+(e.g. NumberTraits<T>::ONE and NumberTraits<T>::ZERO), or conversion
+functions (e.g. NumberTraits<T>::castToDouble()).
+
+
+
+
+@section addinteger How to add your own integer type
+
+If you want to use your own integer type in DGtal, two things have to
+be done:
+
+- Create a facade or a wrapper to make sure that your own type is a
+  model of the concepts::CCommutativeRing concept.
+- Add a specialization for your type in the NumberTraits structure.
+
+*/
+
+}

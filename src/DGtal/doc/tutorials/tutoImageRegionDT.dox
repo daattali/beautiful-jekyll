@@ -1,0 +1,107 @@
+/**
+ * @file tutoImageRegionDT.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/10/11
+ *
+ * Documentation file for feature tutoImageRegionDT
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoImageRegionDT Tutorial "Image -> Region -> Distance Transformation"
+@writers David Coeurjolly
+
+[TOC]
+
+See the source code: imageSetDT.cpp
+
+\section secttutoImageRegionDT0 Introduction
+
+In this example, we illustrate a very  simple shape analysis pipeline:
+
+- Image loading from file
+
+- Distance Transformation with the Euclidean metric of a region of interest.
+
+For the sake of simplicity, we just consider a straightforward segmentation step using a simple threshold on gray level values.
+
+Let's start with  the definition of basic types (an standard image type from the Z2i shortcut and a grayscale map for exports).
+
+@snippet tutorial-examples/imageSetDT.cpp ImageSetDT-types
+
+@note In this example, the image value type is @a unsigned @a char.
+
+\section secttutoImageRegionDT1 Reading an image from a file
+
+Here, we just construct an image using the image reader for the PGM image format.
+
+@snippet tutorial-examples/imageSetDT.cpp ImageSetDT-image
+
+The trace stream displays the following message on the std:cerr output:
+@code
+Imported image: [Image - STLVector] size=15725 valuetype=1bytes lower=[PointVector] {0, 0} upper=[PointVector] {184, 84}
+@endcode
+
+
+
+@note In case of IO error (file not found, wrong format,...) an DGtal::IOException is raised.
+
+\section secttutoImageRegionDT2 Board exports
+
+In the DGtal structure, an Image is an mapping Points<->Values for a set of points in a digital Domain. In the following example, we use the Board2D mechanism to export the image domain to an SVG file, and the image itself to  an EPS file.
+
+@snippet tutorial-examples/imageSetDT.cpp ImageSetDT-board1
+
+@image html imageDomainTutoSample.png  "Zoom on the domain output"
+@image latex imageDomainTutoSample.png  "Zoom on the domain output"
+
+
+@image html imageDomainTuto2.png  "Input image"
+@image latex imageDomainTuto2.png  "Input image"
+
+
+@note Supported 2D export format: EPS, SVG, FIG, TIKZ (+ PNG and PDF if libcairo is installed).
+
+
+\section secttutoImageRegionDT3 Distance transformation 
+
+We illustrate now the Euclidean distance transformation (DT) computation on an image region.
+
+The Euclidean DT consists in labelling each point of the object with
+the Euclidean distance to the closest background point.
+
+In this example, the object (a.k.a. foreground) is implicitly defined as the set of pixels with value in the interval ]0,135].
+
+@image html imageDomainTuto2bis.png  "Resulting digital set after the segmentation step."
+@image latex imageDomainTuto2bis.png  "Resulting digital set after the segmentation step."
+
+
+@snippet tutorial-examples/imageSetDT.cpp ImageSetDT-DT
+
+
+We can now export the result using a Hue shade color map. Since Image containers are consistent with some STL concepts, we can use the std::max_element function to extract the maximal value form the DT map. 
+
+@snippet tutorial-examples/imageSetDT.cpp ImageSetDT-DTvis
+
+@image html imageDomainTuto3.png  "Euclidean DT result"
+@image latex imageDomainTuto3.png  "Euclidean DT result"
+
+
+\section secttutoImageRegionDT4 Required includes
+
+@snippet tutorial-examples/imageSetDT.cpp ImageSetDT-includes
+
+
+
+*/
+
+}

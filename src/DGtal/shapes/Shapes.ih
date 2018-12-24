@@ -1,0 +1,312 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Shapes.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/10/28
+ *
+ * Implementation of inline methods defined in Shapes.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename TDomain>
+inline
+DGtal::Shapes<TDomain>::~Shapes()
+{
+}
+
+
+/**
+ * Removes  the discrete ball (norm-1) of center [aCenter] and radius
+ * [aRadius] to the (perhaps non empty) set [aSet].
+ *
+ * @tparam TDigitalSet the type chosen for the digital set.
+ * @param aSet the set (modified) which will contain the discrete ball.
+ * @param aCenter the center of the ball.
+ * @param aRadius the radius of the ball.
+ */
+template <typename TDomain>
+template <typename TDigitalSet>
+inline
+void
+DGtal::Shapes<TDomain>::removeNorm1Ball
+( TDigitalSet & aSet,
+  const Point & aCenter, 
+  UnsignedInteger aRadius )
+{
+  Point v1( aCenter.diagonal( aRadius ) );
+  Point p1( aCenter );
+  Point p2( p1 );
+  p1 -= v1;
+  p2 += v1;
+  const Domain & domain = aSet.domain(); 
+  typedef DGtal::HyperRectDomain<Space> LocalSpace;
+  LocalSpace ballDomain( p1, p2 );
+  for ( typename LocalSpace::ConstIterator it = ballDomain.begin(); 
+	it != ballDomain.end(); 
+	++it )
+    {
+      if ( domain.isInside( *it ) 
+	   && ( (*it - aCenter ).norm1() <= aRadius ) )
+	aSet.erase( *it );
+    }
+}
+/**
+ * Adds the discrete ball (norm-1) of center [aCenter] and radius
+ * [aRadius] to the (perhaps non empty) set [aSet].
+ *
+ * @tparam TDigitalSet the type chosen for the digital set.
+ * @param aSet the set (modified) which will contain the discrete ball.
+ * @param aCenter the center of the ball.
+ * @param aRadius the radius of the ball.
+ */
+template <typename TDomain>
+template <typename TDigitalSet>
+inline
+void
+DGtal::Shapes<TDomain>::addNorm1Ball
+( TDigitalSet & aSet,
+  const Point & aCenter, 
+  UnsignedInteger aRadius )
+{
+  Point v1( aCenter.diagonal( aRadius ) );
+  Point p1( aCenter );
+  Point p2( p1 );
+  p1 -= v1;
+  p2 += v1;
+  const Domain & domain = aSet.domain(); 
+  typedef DGtal::HyperRectDomain<Space> LocalSpace;
+  LocalSpace ballDomain( p1, p2 );
+  for ( typename LocalSpace::ConstIterator it = ballDomain.begin(); 
+	it != ballDomain.end(); 
+	++it )
+    {
+      if ( domain.isInside( *it ) 
+	   && ( (*it - aCenter ).norm1() <= aRadius ) )
+	aSet.insert( *it );
+    }
+}
+
+
+/**
+ * Removes the discrete ball (norm-2) of center [aCenter] and radius
+ * [aRadius] to the (perhaps non empty) set [aSet].
+ *
+ * @tparam TDigitalSet the type chosen for the digital set.
+ * @param aSet the set (modified) which will contain the discrete ball.
+ * @param aCenter the center of the ball.
+ * @param aRadius the radius of the ball.
+ */
+template <typename TDomain>
+template <typename TDigitalSet>
+inline
+void
+DGtal::Shapes<TDomain>::removeNorm2Ball
+( TDigitalSet & aSet,
+  const Point & aCenter, 
+  UnsignedInteger aRadius )
+{
+  Point v1( aCenter.diagonal( aRadius ) );
+  Point p1( aCenter );
+  Point p2( p1 );
+  p1 -= v1;
+  p2 += v1;
+  const Domain & domain = aSet.domain(); 
+  typedef DGtal::HyperRectDomain<Space> LocalSpace;
+  LocalSpace ballDomain( p1, p2 );
+  for ( typename LocalSpace::ConstIterator it = ballDomain.begin(); 
+	it != ballDomain.end(); 
+	++it )
+    {
+      if ( domain.isInside( *it ) 
+	   && ( (*it - aCenter ).norm() <= aRadius ) )
+	aSet.erase( *it );
+    }
+}
+
+
+/**
+ * Adds the discrete ball (norm-2) of center [aCenter] and radius
+ * [aRadius] to the (perhaps non empty) set [aSet].
+ *
+ * @tparam TDigitalSet the type chosen for the digital set.
+ * @param aSet the set (modified) which will contain the discrete ball.
+ * @param aCenter the center of the ball.
+ * @param aRadius the radius of the ball.
+ */
+template <typename TDomain>
+template <typename TDigitalSet>
+inline
+void
+DGtal::Shapes<TDomain>::addNorm2Ball
+( TDigitalSet & aSet,
+  const Point & aCenter, 
+  UnsignedInteger aRadius )
+{
+  Point v1( aCenter.diagonal( aRadius ) );
+  Point p1( aCenter );
+  Point p2( p1 );
+  p1 -= v1;
+  p2 += v1;
+  const Domain & domain = aSet.domain(); 
+  typedef DGtal::HyperRectDomain<Space> LocalSpace;
+  LocalSpace ballDomain( p1, p2 );
+  for ( typename LocalSpace::ConstIterator it = ballDomain.begin(); 
+	it != ballDomain.end(); 
+	++it )
+    {
+      if ( domain.isInside( *it ) 
+	   && ( (*it - aCenter ).norm() <= aRadius ) )
+	aSet.insert( *it );
+    }
+}
+
+template <typename TDomain>
+template <typename TDigitalSet, typename ShapeFunctor>
+void
+DGtal::Shapes<TDomain>::digitalShaper( TDigitalSet & aSet,
+                                       const ShapeFunctor & aFunctor)
+{
+  typedef DGtal::HyperRectDomain<Space> LocalSpace;
+  
+  BOOST_CONCEPT_ASSERT((concepts::CDigitalBoundedShape<ShapeFunctor>));
+  BOOST_CONCEPT_ASSERT((concepts::CDigitalOrientedShape<ShapeFunctor>));
+ 
+
+  Point pLow = aFunctor.getLowerBound();
+  Point pUpp = aFunctor.getUpperBound();
+  
+  LocalSpace implicitDomain( pLow, pUpp );
+  for ( typename LocalSpace::ConstIterator it = implicitDomain.begin(); 
+        it != implicitDomain.end(); 
+        ++it )
+    {
+      if ( aFunctor.orientation( *it ) == INSIDE || aFunctor.orientation( *it ) == ON )
+        aSet.insert( *it );
+    }
+}
+
+
+template <typename TDomain>
+template <typename TDigitalSet, typename ShapeFunctor>
+void
+DGtal::Shapes<TDomain>::euclideanShaper( TDigitalSet & aSet,
+                                         const ShapeFunctor & aFunctor,
+                                         const double h)
+{
+  
+  BOOST_CONCEPT_ASSERT((concepts::CEuclideanBoundedShape<ShapeFunctor>));
+  BOOST_CONCEPT_ASSERT((concepts::CEuclideanOrientedShape<ShapeFunctor>));
+
+  RealPoint pLow = aFunctor.getLowerBound();
+  RealPoint pUpp = aFunctor.getUpperBound();
+  GaussDigitizer<Space,ShapeFunctor> dig;  
+  dig.attach( aFunctor ); // attaches the shape.
+  dig.init( pLow, pUpp, h); 
+  
+  // Creates a set from the digitizer.
+  Shapes<Domain>::digitalShaper( aSet, dig );
+}
+
+template <typename TDomain>
+template <typename DigitalSet, typename PointPredicate>
+void
+DGtal::Shapes<TDomain>::makeSetFromPointPredicate
+( DigitalSet & aSet,
+  const PointPredicate & aPP )
+{
+  
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet< DigitalSet > ));
+  BOOST_CONCEPT_ASSERT(( concepts::CPointPredicate< PointPredicate > ));
+  BOOST_STATIC_ASSERT
+    (( concepts::ConceptUtils::SameType< Domain, typename DigitalSet::Domain >::value ));
+  BOOST_STATIC_ASSERT
+    (( concepts::ConceptUtils::SameType< Point, typename PointPredicate::Point >::value ));
+
+  typedef typename Domain::ConstIterator ConstIterator;
+  for ( ConstIterator it = aSet.domain().begin(),
+          it_end = aSet.domain().end(); it != it_end; ++it )
+    if ( aPP( *it ) ) aSet.insert( *it );
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TDomain>
+inline
+void
+DGtal::Shapes<TDomain>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Shapes]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TDomain>
+inline
+bool
+DGtal::Shapes<TDomain>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TDomain>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const Shapes<TDomain> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

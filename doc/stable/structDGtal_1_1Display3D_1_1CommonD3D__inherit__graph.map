@@ -1,9 +1,0 @@
-<map id="DGtal::Display3D&lt; Space, KSpace &gt;::CommonD3D" name="DGtal::Display3D&lt; Space, KSpace &gt;::CommonD3D">
-<area shape="rect" id="node2" href="$structDGtal_1_1Display3D_1_1BallD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::BallD3D" alt="" coords="241,5,418,44"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::ClippingPlaneD3D" alt="" coords="230,68,430,107"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1Display3D_1_1CubeD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::CubeD3D" alt="" coords="241,131,418,169"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1Display3D_1_1LineD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::LineD3D" alt="" coords="241,193,418,232"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1Display3D_1_1PolygonD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::PolygonD3D" alt="" coords="241,256,418,295"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1Display3D_1_1QuadD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::QuadD3D" alt="" coords="241,319,418,357"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1Display3D_1_1TriangleD3D.html" title="DGtal::Display3D\&lt; Space,\l KSpace \&gt;::TriangleD3D" alt="" coords="241,381,418,420"/>
-</map>

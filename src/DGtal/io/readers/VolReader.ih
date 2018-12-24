@@ -1,0 +1,304 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file VolReader.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/25
+ *
+ * Implementation of inline methods defined in VolReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <boost/iostreams/filtering_streambuf.hpp>
+#include <boost/iostreams/copy.hpp>
+#include <boost/iostreams/filter/zlib.hpp>
+//////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+#define MAX_HEADERNUMLINES 64
+
+
+
+template <typename T, typename TFunctor>
+inline
+T
+DGtal::VolReader<T, TFunctor>::importVol( const std::string & filename,
+                                         const Functor & aFunctor)
+{
+  FILE * fin;
+  DGtal::IOException dgtalexception;
+  
+  
+  typename T::Point firstPoint( 0, 0, 0 );
+  typename T::Point lastPoint( 0, 0, 0 );
+  T nullImage( typename T::Domain( firstPoint, lastPoint ));
+  
+  HeaderField header[ MAX_HEADERNUMLINES ];
+  
+#ifdef WIN32
+  errno_t err;
+  err = fopen_s( &fin, filename.c_str() , "rb" );
+  if ( err )
+  {
+    trace.error() << "VolReader : can't open " << filename << std::endl;
+    throw dgtalexception;
+    }
+#else
+    fin = fopen( filename.c_str() , "rb" );
+#endif
+    
+    if ( fin == NULL )
+    {
+      trace.error() << "VolReader : can't open " << filename << std::endl;
+      throw dgtalexception;
+    }
+    
+    
+    // Read header
+    // Buf for a line
+    char buf[128];
+    int linecount = 1;
+    int fieldcount = 0;
+    
+    // Read the file line by line until ".\n" is found
+    for (  char *line = fgets( buf, 128, fin );
+         line && strcmp( line, ".\n" ) != 0 ;
+         line = fgets( line, 128, fin ), ++linecount
+         )
+    {
+      
+      if ( line[strlen( line ) - 1] != '\n' )
+      {
+        trace.error() << "VolReader: Line " << linecount << " too long" << std::endl;
+        throw dgtalexception;
+      }
+      
+      int i;
+      for ( i = 0; line[i] && line[i] != ':'; ++i )
+        ;
+      
+      if ( i == 0 || i >= 126 || line[i] != ':' )
+      {
+        trace.error() << "VolReader: Invalid header read at line " << linecount << std::endl;
+        throw dgtalexception;
+      }
+      else
+      {
+        
+        if ( fieldcount == MAX_HEADERNUMLINES )
+        {
+          trace.warning() << "VolReader: Too many lines in HEADER, ignoring\n";
+          continue;
+        }
+        if ( fieldcount > MAX_HEADERNUMLINES )
+          continue;
+        
+        // Remove \n from end of line
+        if ( line[ strlen( line ) - 1 ] == '\n' )
+          line[ strlen( line ) - 1 ] = 0;
+        
+        // hack : split line into two str ...
+        line[i] = 0;
+        header[ fieldcount++ ] = HeaderField( line, line + i + 2 );
+        // +2 cause we skip the space
+        // following the colon
+      }
+    }
+    
+    // Check required headers
+    for ( int i = 0; requiredHeaders[i]; ++i )
+    {
+      if ( getHeaderValue( "Version" , header ) != NULL &&
+          ( strcmp( requiredHeaders[i], "Int-Endian" ) == 0 ||
+           strcmp( requiredHeaders[i], "Voxel-Endian" ) == 0 ) )
+      {
+        continue;
+      }
+      if ( getHeaderField( requiredHeaders[i]  , header ) == -1 )
+      {
+        trace.error() << "VolReader: Required Header Field missing: "
+        << requiredHeaders[i] << std::endl;
+        throw dgtalexception;
+        
+      }
+    }
+    
+    int sx = 0, sy= 0, sz= 0;
+    int cx = 0, cy= 0, cz= 0;
+    int version = -1;
+    
+    getHeaderValueAsInt( "X", &sx, header );
+    getHeaderValueAsInt( "Y", &sy, header );
+    getHeaderValueAsInt( "Z", &sz, header );
+    getHeaderValueAsInt( "Version", &version, header);
+    
+    if (! ((version == 2) || (version == 3)))
+    {
+      trace.error() << "VolReader: invalid Version header (must be either 2 or 3)\n";
+      throw dgtalexception;
+    }
+    
+    
+    //Raw Data
+    if( getHeaderValueAsInt( "Center-X", &cx, header ) == 0 )
+    {
+      getHeaderValueAsInt( "Center-Y", &cy, header );
+      getHeaderValueAsInt( "Center-Z", &cz, header );
+      
+      firstPoint[0] = cx - (sx - 1)/2;
+      firstPoint[1] = cy - (sy - 1)/2;
+      firstPoint[2] = cz - (sz - 1)/2;
+      lastPoint[0] = cx + sx/2;
+      lastPoint[1] = cy + sy/2;
+      lastPoint[2] = cz + sz/2;
+    }
+    else
+    {
+      firstPoint = T::Point::zero;
+      lastPoint[0] = sx - 1;
+      lastPoint[1] = sy - 1;
+      lastPoint[2] = sz - 1;
+    }
+    
+    typename T::Domain domain( firstPoint, lastPoint );
+    
+    try
+    {
+      T image( domain );
+      
+      long count = 0;
+      unsigned char val;
+      typename T::Domain::ConstIterator it = domain.begin();
+      long int total = sx * sy * sz;
+      std::stringstream main;
+      
+      //main read loop
+      while (( count < total ) && ( fin ) )
+      {
+        val = getc( fin );
+        main << val;
+        count++;
+      }
+      
+      if ( count != total )
+      {
+        trace.error() << "VolReader: can't read file (raw data) !\n";
+        throw dgtalexception;
+      }
+      
+      //Uncompress if needed
+      if(version == 3)
+      {
+        std::stringstream uncompressed;
+        boost::iostreams::filtering_streambuf<boost::iostreams::input> in;
+        in.push(boost::iostreams::zlib_decompressor());
+        in.push(main);
+        boost::iostreams::copy(in, uncompressed);
+        //Apply to the image structure
+        for(auto i=0; i < total; ++i)
+        {
+          val = uncompressed.get();
+          image.setValue(( *it ), aFunctor(val) );
+          it++;
+        }
+      }
+      else
+      {
+        //Apply to the image structure
+      for(auto i=0; i < total; ++i)
+      {
+        val = main.get();
+        image.setValue(( *it ), aFunctor(val) );
+        it++;
+      }
+      }
+      fclose( fin );
+      return image;
+    }
+    catch ( ... )
+    {
+      trace.error() << "VolReader: not enough memory\n" ;
+      throw dgtalexception;
+    }
+    
+    }
+    
+    
+    
+    template <typename T, typename TFunctor>
+    const char *DGtal::VolReader<T, TFunctor>::requiredHeaders[] =
+    {
+      "X", "Y", "Z", "Voxel-Size", "Int-Endian", "Voxel-Endian", "Alpha-Color", NULL
+    };
+    
+    
+    
+    
+    template<typename T, typename TFunctor>
+    inline
+    int
+    DGtal::VolReader<T, TFunctor>::getHeaderField( const char *type, const HeaderField * header )
+    {
+      
+      
+      for ( int i = 0; i < MAX_HEADERNUMLINES; ++i )
+      {
+        if ( header[i].type != NULL && strcmp( header[i].type, type ) == 0 )
+        {
+          return i;
+        }
+      }
+      return -1;
+    }
+    
+    
+    template<typename T, typename TFunctor>
+    inline
+    const char *
+    DGtal::VolReader<T, TFunctor>::getHeaderValue( const char *type, const HeaderField * header )
+    {
+      
+      int i = getHeaderField( type, header );
+      if ( i == -1 )
+        return NULL;
+      return header[i].value;
+      
+    }
+    
+    
+    template<typename T, typename TFunctor>
+    inline
+    int
+    DGtal::VolReader<T,  TFunctor>::getHeaderValueAsInt( const char *type, int *dest, const HeaderField * header )
+    {
+      int i = getHeaderField( type, header );
+      if ( i == -1 )
+        return 1;
+      
+      return sscanf( header[i].value, "%d", dest ) == 0;
+    }
+    

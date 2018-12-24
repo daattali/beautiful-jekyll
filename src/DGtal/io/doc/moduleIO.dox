@@ -1,0 +1,449 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+@page moduleIO Image and digital object import/export
+@authors David Coeurjolly, Bertrand Kerautret, Martial Tola, Pierre Gueth
+
+This part of the manual describes how to import and export images and main DGtal objects from/to various formats. 
+
+[TOC]
+
+\section introio Introduction
+
+In DGtal, file readers and writers are located in the "io/readers/"
+and "io/writers/" folders respectively. Most of them are dedicated to
+image format import/export but some other DGtal data structures can
+have such tools (e.g. point set/mesh readers).
+
+Before going into details, let us first present an interesting tool
+for image visualisation or image export: predefined colormaps to convert scalars or to (red,green,blue) triplets.
+
+\section colormaps Colormaps
+
+Colormap models satisfy the CColormap concept. For short, a colormap is
+parametrized by a scalar value template type (@a Value). When constructed
+from two @a min and @a max values (of type @a Value), the colormap
+offers an operator returning a DGtal::Color for each value @a v in the
+interval [@a min,@a max].
+
+For example, RandomColorMap returns a random color for each value
+@a v. More complex colormaps (GradientColorMap, HueShadeColorMap, ...)
+offer better colormap for scientific visualisation purposes. 
+
+
+\image html colormaps.png "Example of predefined colormaps" 
+\image latex colormaps.png "Example of predefined colormaps" width=5cm
+
+Beside colormaps, TickedColorMap is a colormap adapter that adds ticks. For example, you can adapt a Black-Red gradient colormap to add regular white ticks (see usage in @ref testTickedColorMap.cpp):
+
+\image html testTicked-gradient-regular.png "Colormaps with regular ticks" 
+\image latex testTicked-gradient-regular.png "Colormaps with regular ticks" width=10cm
+Ticks can be regularly spaced or explicitly given by the user.
+
+
+
+
+In some situations, we may have to convert colors into   scalar
+values (see below). In this case, basic conversion functors are
+available in the DGtal::functors namespace. For
+example, you would find in this namespace a DGtal::functors::RedChannel converter or a
+DGtal::functors::MeanChannels converter. 
+
+Hence, to implement a functor taking values and returning the red
+channel of a colormap, you just have to compose the two functors with
+the help of the Composer:
+@code
+#include "DGtal/base/BasicFunctors.h"
+#include "DGtal/io/colormaps/GradientColorMap.h"
+#include "DGtal/io/colormaps/BasicColorToScalarFunctors.h"
+
+typedef GradientColorMap<unsigned char, CMAP_JET > JetMap;
+typedef functors::RedChannel RedChan;
+typedef Composer< JetMap, RedChan, unsigned char> RedFunctor;
+RedFunctor redFunctor( JetMap(0,255), RedChan() );
+
+///We use the colormap functor for PGM export
+PGMWriter<Image, RedFunctor>::exportPGM("export-jet-red.pgm",image, redFunctor);
+@endcode
+
+
+\section imagefileformat Image file formats
+
+We first detail import/export format for DGtal images. Please refer to
+@ref moduleImages for details on images in DGtal and their associated
+concepts. First of all:
+
+ - Image @b readers are  classes templated by an image container type.
+
+ - Image @b writers are classes templated by an image type and a functor to convert image values to the value type of the writer file format.
+
+Hence, for image writers,  some  functors may return a DGtal::Color or a scalar value depending on the writer. 
+
+
+
+
+\subsection imagewriters Image Writers
+
+| Dimension  | Name    | Description                     | Functor requirements                        | Class name    | Comment                                                  |
+|------------|---------|---------------------------------|---------------------------------------------|---------------|----------------------------------------------------------|
+|         2D | PGM     | Grayscale  netpbm image format  | the functor should return an unsigned char  | PGMWriter     | http://netpbm.sourceforge.net/                           |
+|            | PPM     | Color netpbm image format       | the functor should return a DGtal::Color    | PPMWriter     | http://netpbm.sourceforge.net/                           |
+|            | any ImageMagick format  | Color image format (png,jpg...)      | the functor must return a DGtal::Color    | MagickWriter     | with @a WITH_MAGICK build http://www.imagemagick.org                           |
+|            | any 2D ITK format | Grayscale or 2D ITK image   | the functor should return a ITKIOTrait<Image::Value>::ValueOut | ITKWriter | with @a WITH_ITK build flag, http://www.itk.org/ |
+|         3D | PGM3D   | Grayscale  netpbm image format  | the functor should return an unsigned char  | PGMWriter     |                                                          |
+|            | PPM3D   | Color netpbm image format       | the functor should return a DGtal::Color    | PPMWriter     |                                                          |
+|            | Vol     | Volumetric file format          | the functor should return an unsigned char  | VolWriter     | Simplevol project, http://liris.cnrs.fr/david.coeurjolly |
+|            | Longvol | Volumetric file format  (long)  | the functor should return a DGtal::uint64_t | LongvolWriter | Simplevol project, http://liris.cnrs.fr/david.coeurjolly |
+|            | HDF5    | HDF5 file with 3D UInt8 image dataset(s)  | the functor should return a DGtal::uint8_t | HDF5Writer    | with @a WITH_HDF5 build flag, http://www.hdfgroup.org/HDF5/ |
+|            | any 3D ITK format | Any 3D ITK image   | the functor should return a ITKIOTrait<Image::Value>::ValueOut | ITKWriter | with @a WITH_ITK build flag, http://www.itk.org/ |
+|         nD | Raw8    | raw binary file format on 8bits     | the functor should return an unsigned char   | RawWriter     |                                                          |
+|            | Raw16   | raw binary file format on 16bits    | the functor should return an unsigned short  | RawWriter     |                                                          |
+|            | Raw32   | raw binary file format on 32bits    | the functor should return an unsigned int    | RawWriter     |                                                          |
+|            | Raw     | raw binary file format for any type | the functor should return the same type as specified in the template parameter of RawWriter::exportRaw | RawWriter     |                                                          |
+
+
+@note Since DGtal doesn't integrate ITK by default, ITK image should by writen directly using the ITKWriter class.
+@code
+  Image image;
+  DGtal::ITKReader<Image>::exportITK("example.mha", image);
+@endcode
+
+  
+For scalar value format (PGM, Vol, Longvol, Raw, ...), the associated template class have a default functor type. Hence, if you just want to cast your image values to the file format value type (e.g. "unsigned char" for Vol), do not specify any functor. 
+
+
+
+The class GenericWriter allows to
+automatically export any image (2d, 3d, nd) from its filename. The
+class is templated with an image container type, a dimension value (given by
+default by the image container dimension), a value type, (also given
+by default by the image container) and a functor type (by default set to
+the DefaultFunctor type).
+
+To use it you need first to include the following header:
+@code 
+   #include "DGTal/io/writers/GenericWriter.h"
+   #include "DGtal/helpers/StdDefs.h"
+   typedef DGtal::ImageContainerBySTLVector<DGtal::Z3i::Domain, unsigned char> Image3D;
+   typedef DGtal::ImageContainerBySTLVector<DGtal::Z2i::Domain, unsigned char> Image2D;
+ @endcode
+
+After constructing and filling an image (anImage2D or anImage3D), by default you can  save it with:
+@code
+   GenericWriter<Image3D>::exportFile("aFilename.pgm3d", anImage3D);
+   GenericWriter<Image2D>::exportFile("aFilename.pgm", anImage2D);
+@endcode
+
+As the other export functions, a functor can be used as optional argument (as given in the previous example):
+@code
+   GenericWriter<Image2D, redFunctor>::exportFile("aFilename.pgm", anImage2D, redFunctor);
+@endcode
+
+
+If you don't need to specify special functor and if don't need to change default
+image type, you can use a less generic writer with the stream operator and the string filename:
+@code
+   anImage3D >> "aFilename.pgm3d";
+   anImage3D >> "aFilename.vol";
+   anImage2D >> "aFilename.pgm";
+@endcode
+
+@note Naturally, the stream operator hide a default functor (c++ cast to a
+given type).
+
+
+To write color images, you need to use a functor which transform a scalar value into a Color. 
+You can use the previous \ref colormaps :
+@code 
+typedef DGtal::ImageContainerBySTLVector<Z2i::Domain, double > Image2D;
+DGtal::HueShadeColorMap<double>  hueColorMap (-50.0, 50.0);
+//...
+DGtal::GenericWriter<Image2D, 2, double, DGtal::HueShadeColorMap<double> >::exportFile("aFilename.ppm", anImage, hueColorMap );   
+@endcode
+
+
+
+
+\subsection imagereaders Image Readers
+
+| Dimension  | Name              | Description                                                 | Class name    | Comment                                                        |
+|------------|-------------------|-------------------------------------------------------------|---------------|----------------------------------------------------------------|
+|         2D | PGM               | Grayscale  netpbm image format                              | PGMReader     | http://netpbm.sourceforge.net/                                 |
+|            | any Magick format | Any file format in the GraphicsMagick library               | MagickReader  | with @a WITH_MAGICK build flag, http://www.graphicsmagick.org/ |
+|            | HDF5              | HDF5 file with 2D image dataset(s)                          | HDF5Reader    | with @a WITH_HDF5 build flag, http://www.hdfgroup.org/HDF5/    |
+|            | any 2D ITK format | Any file format in the ITK library (png, jpg, mhd, mha, ...)| ITKReader     | with @a WITH_ITK build flag, http://www.itk.org/               |
+|         3D | PGM3D             | Grayscale  netpbm image format                              | PGMReader     |                                                                |
+|            | PGM               | Same as PGM3D but with same header as in 2D (P2 or P5)      | PGMReader     |                                                                |
+|            | DICOM             | Medical format (from scanners, with the use of ITK library) | DicomReader   | http://medical.nema.org/                                       |
+|            | Vol               | Volumetric file format                                      | VolReader     | Simplevol project, http://liris.cnrs.fr/david.coeurjolly       |
+|            | Longvol           | Volumetric file format (long)                               | LongvolReader | Simplevol project, http://liris.cnrs.fr/david.coeurjolly       |
+|            | HDF5              | HDF5 file with 3D UInt8 image dataset(s)                    | HDF5Reader    | with @a WITH_HDF5 build flag, http://www.hdfgroup.org/HDF5/    |
+|            | any 3D ITK format | Any file format in the ITK library (mhd, mha, ...)          | ITKReader     | with @a WITH_ITK build flag, http://www.itk.org/               |
+|         nD | Raw8              | raw binary file format on 8bits                             | RawReader     |                                                                |
+|            | Raw16             | raw binary file format on 16bits                            | RawReader     |                                                                |
+|            | Raw32             | raw binary file format on 32bits                            | RawReader     |                                                                |
+|            | Raw               | raw binary file format for any type                         | RawReader     |                                                                |
+
+@note Since DGtal doesn't integrate ITK by default, ITK image should by read directly using the ITKReader class.
+@code
+  Image image = DGtal::ITKReader<Image>::importITK("example.mha");
+@endcode
+
+
+The class GenericReader allows to
+automatically import any image (2d, 3d, nd) from its filename. The
+class is templated with an image container type, a dimension value
+(given by default by the image container dimension), a value type,
+(also given by default by the image container). Note that the reader
+choice between 8 bits or 32 bits is automatically done according to
+the templated image container type. So you can have an DGtal::IOException if
+you try to read a 8 bits raw image from an unsigned int image type (choose an
+8 bits type like unsigned char or explicitly call the specific reader
+RawReader::importRaw8).
+
+
+
+@code 
+   #include "DGTal/io/readers/GenericReader.h"
+   #include "DGtal/helpers/StdDefs.h"
+   typedef DGtal::ImageContainerBySTLMap<DGtal::Z3i::Domain, unsigned int> Image3D;
+   typedef DGtal::ImageContainerBySTLMap<DGtal::Z2i::Domain, unsigned int> Image2D;
+@endcode
+
+Use the same import function for both 2D or 3D images:
+@code
+   Image3D an3Dimage= DGtal::GenericReader<Image3D>::import("example.vol");
+   Image2D an2Dimage= DGtal::GenericReader<Image2D>::import("example.pgm");
+@endcode 
+
+
+
+
+\subsection volformat Details on the Vol/Longvol formats
+
+The Vol and Longvol formats are described on the  simplevol project
+website
+(http://liris.cnrs.fr/david.coeurjolly/code/simplevol.html). Basically,
+the format consists in:
+
+ - an ASCII header with for instance the image size and the Vol format
+ version, ending with a ".". Mandatory information are the size (@e X,
+ @e Y, @e Z) and the format version (@e Version). E.g.
+@code
+Center-X: 5
+Center-Y: 5
+Center-Z: 5
+X: 11
+Y: 11
+Z: 11
+Voxel-Size: 1
+Alpha-Color: 0
+Voxel-Endian: 0
+Int-Endian: 0123
+Version: 3
+.
+@endcode
+
+ - a binary chunck with linearized image values. In "Version 2" of Vol and Longvol, the binary chunck is simply a raw
+export of image values (little endian for Longvol entries). In
+"Version 3", the binary values are compressed using zlib (default
+version when using the DGtal reader and writer).
+
+If you want to export an image to "Version 2" Vol or a Longvol, just
+add a @e false flag when exporting. For instance:
+
+@code
+DGtal::VolWriter< ImageContainerBySTLVector<Domain, unsigned char> >::exportVol("test.vol", image, false);
+@endcode
+
+@note "Version 1" Vol or Longvol files are no longer supported in
+DGtal readers/writers.
+
+\section fileformat Other geometrical formats
+
+
+\subsection pointListnD Point list format in n-D
+
+The static class \c PointListReader allows to read discrete
+points represented in simple file where each line represent a
+single point. 
+
+
+
+\subsection mesh3D 3D Surface Mesh
+The static class \c MeshReader allows to import Mesh from OFF or OFS file format.
+Actually this class can import surface mesh (Mesh) where faces are potentially represented by triangles, quadrilaters and polygons. Notes that Mesh can be directly displayed with Viewer3D.
+
+The mesh importation can be done automatically from the extension file name by using the "<<" operator. For instance (see. \ref importMesh3D ):
+
+
+@snippet io/meshFromOFF.cpp ImportOFFfile
+
+You can also export a Mesh object by using the operator
+(">>"). Notes that the class Display3D permits also to generate a
+Mesh which can be exported (see. \ref exportMesh3D).
+
+
+
+\section io_examples Examples
+
+\subsection importDigitalSet Importing a 3D digital set from volume file:
+
+Importing and visualizing a digital set from a vol file can be done in
+few code lines. (see. digitalSetFromVol.cpp). 
+
+First we select the Image type with \c int:
+
+@code
+#include "DGtal/io/readers/VolReader.h"
+#include "DGtal/images/ImageSelector.h"
+#include "DGtal/images/imagesSetsUtils/SetFromImage.h"
+#include "DGtal/helpers/StdDefs.h"
+...
+typedef ImageSelector < Z3i::Domain, int>::Type Image;
+@endcode
+
+Then the initial image is imported:
+@code
+ typedef ImageSelector < Z3i::Domain, int>::Type Image;
+ Image image = VolReader<Image>::importVol(inputFilename);
+@endcode
+
+Afterwards the set is thresholded in ]0,255[: 
+
+@code
+  Z3i::DigitalSet set3d (image.domain());
+  SetFromImage<Z3i::DigitalSet>::append<Image>(set3d, image, 0,255);
+  Viewer3D<> viewer;
+  viewer.show(); 
+  viewer << SetMode3D(image.domain().className(), "BoundingBox");
+  viewer << set3d << image.domain()  << Viewer3D<>::updateDisplay;
+@endcode
+
+
+Then you will obtain the following visualisation:
+
+\image html visuDigitalSet3D.png "3D digital set from volumetric file (.vol)" 
+\image latex visuDigitalSet3D.png "3D digital set from volumetric file (.vol)" width=5cm
+
+
+\subsection importPointList Import 3D point list from file
+
+The example digitalSetFromPointList.cpp shows a simple example of 3d set importation:
+
+@code
+vector<Z3i::Point> vectPoints=  PointListReader<Z3i::Point>::getPointsFromFile(inputFilename); 
+  for(unsigned int i=0; i<vectPoints.size();i++){
+    viewer << vectPoints.at(i);
+  }
+@endcode
+We can change the way to select the coordinate field:
+
+@code
+ vector<unsigned int> vPos;
+  vPos.push_back(0);
+  vPos.push_back(2);
+  vPos.push_back(1);
+  vectPoints=  PointListReader<Z3i::Point>::getPointsFromFile(inputFilename, vPos); 
+  viewer<< CustomColors3D(QColor(255,0,0), QColor(255,0,0)); 
+  for(unsigned int i=0; i<vectPoints.size();i++){
+    viewer << vectPoints.at(i);
+  }
+ viewer   << Viewer3D<>::updateDisplay;
+@endcode
+
+You may obtain the following visualisation:
+
+\image html visuPointList.png "Visualisation of 3d imported point list " 
+\image latex visuPointList.png "Visualisation of 3d imported point list" width=5cm
+
+\subsection importMesh3D Import 3D mesh from OFF file
+
+The following example meshFromOFF.cpp shows in few lines how to import and display an OFF 3D mesh.
+Add the following headers to access to OFF reader and  Viewer3D:
+
+
+@snippet io/meshFromOFF.cpp includeImportOFF
+
+then import an example  ".off" file from the example/sample directory:
+
+@snippet io/meshFromOFF.cpp ImportOFFfile
+
+Display the result:
+
+@snippet io/meshFromOFF.cpp displayOFFfile
+
+
+You may obtain the following visualisation:
+
+\image html  visuTrefExample.png   "Visualisation of 3d imported Mesh "  width=5cm
+\image latex  visuTrefExample.png  "Visualisation of 3d imported Mesh" width=5cm
+
+You can also import large scale mesh, like the one of classic Angel scan ( available here:  http://www.cc.gatech.edu/projects/large_models/ )
+
+\image html visuImportOFF.png  "Visualisation of the 3d angel "  width=5cm
+\image latex visuImportOFF.png  "Visualisation of the 3d  angel" width=5cm
+
+
+
+
+
+\subsection exportMesh3D Export 3D mesh in OFF and OBJ format
+
+The following example display3DToOFF.cpp   shows in few lines how to export in OFF format a
+DigitalSet object. This object will be exported with a Display3D
+object (see. display3DToOFF.cpp). 
+
+
+
+@snippet io/display3DToOFF.cpp ExampleDisplay3DToOFF
+
+
+
+
+Notes that the export can also be done in two steps:
+
+
+@code 
+// The parameter true is used to specify that we store the face colors.
+Mesh aMesh(true);
+viewer >> aMesh;
+aMesh >> "exporMeshToOFF.off"
+@endcode
+
+
+The resulting mesh can be visualized for instance by using meshlab;
+
+
+\image html  visuDisplay3DToOFF.png  "Visualization of the exported mesh "  width=5cm
+\image latex visuDisplay3DToOFF.png  "Visualization of the exported mesh" width=5cm
+
+
+
+
+This code can be useful if you want to generate illustrations in the
+U3D format. For instance by using the U3D/PDF export from MeshLab or
+JReality ( www3.math.tu-berlin.de/jreality/). You can for
+instance generate some exports in pdf like this example:
+
+
+\image html  visu3dKSSurfaceExtractionExportPDF.png  "Visualization in PDF of an exported Digital object." width=5cm
+\image latex visu3dKSSurfaceExtractionExportPDF.png  "Visualization in PDF of an exported Digital object." width=5cm
+
+
+
+
+
+(see this pdf file:  http://dgtal.org/wp/wp-content/uploads/2010/10/3dKSSurfaceExtractionExport.pdf )
+
+
+*/
+
+}
+
+
+

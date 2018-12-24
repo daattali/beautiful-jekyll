@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; Image \&gt;" alt="" coords="527,5,735,35"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DigitalSet \&gt;" alt="" coords="516,59,745,88"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DigitalTopology \&gt;" alt="" coords="500,112,761,141"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DrawableWithDGtalQGLViewer \&gt;" alt="" coords="452,165,809,195"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DrawableWithDGtalBoard \&gt;" alt="" coords="467,219,795,248"/>
-</map>

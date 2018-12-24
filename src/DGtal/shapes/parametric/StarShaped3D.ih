@@ -1,0 +1,304 @@
+/**
+ * This Program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author Anis Benyoub (\c anis.benyoub@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/06/05
+ *
+ * Header file for module StarShaped3D.cpp
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iostream>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+typedef std::pair<double,double> AngularCoordinates;
+/////////////////////////////////////////////////////////////////////////////
+// ------------------------- star-shaped services -------------------------
+
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return 'true' if the point is inside the shape, 'false' if it
+ * is strictly outside.
+ */
+template<typename TSpace>
+inline
+DGtal::Orientation
+DGtal::StarShaped3D<TSpace>::orientation( const RealPoint & p ) const
+{
+    RealPoint x_rel = x( parameter( p ));
+    x_rel -= center();
+    RealPoint p_rel( p );
+    p_rel -= center();
+
+    double d_x = x_rel.norm();
+    double d_p = p_rel.norm();
+    double diff = d_p - d_x;
+
+    if ( diff > 0.0 )
+        return OUTSIDE;
+    else if ( diff < 0.0 )
+        return INSIDE;
+    else
+        return ON;
+}
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi] a.
+ *
+ * @return the vector (gradient(f(x,y,z))) made unitary which is the unit
+ * normal to the shape boundary looking inside the shape.
+ */
+template<typename TSpace>
+inline
+typename DGtal::StarShaped3D<TSpace>::RealPoint
+DGtal::StarShaped3D<TSpace>::normal( AngularCoordinates t ) const
+{
+  RealPoint aNormal( gradient(t));
+  double norm = sqrt(aNormal[0]*aNormal[0] + aNormal[1]*aNormal[1] +aNormal[2]*aNormal[2]);
+  return (RealPoint(aNormal[0]/norm,aNormal[1]/norm,aNormal[2]/norm));
+}
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi] 
+ *
+ * @return the mean curvature at point (x(t),y(t),z(t)), positive
+ * is convex, negative is concave when shape is to the left and
+ * the shape boundary is followed counterclockwise.
+ */
+template<typename TSpace>
+inline
+double
+DGtal::StarShaped3D<TSpace>::meanCurvature( AngularCoordinates t) const
+{
+  typedef typename Space::RealPoint RealPoint;
+  
+
+  RealPoint art = rt(t);
+  RealPoint arp = rp(t);
+  RealPoint artt = rtt(t);
+  RealPoint arpp = rpp(t);
+  RealPoint artp = rtp(t);
+
+  RealPoint n(art[1]*arp[2]-art[2]*arp[1],art[2]*arp[0]-art[0]*arp[2],art[0]*arp[1]-art[1]*arp[0]);
+  double norme= sqrt(n[0]*n[0]+n[1]*n[1]+n[2]*n[2]);
+  n[0]=n[0]/norme;
+  n[1]=n[1]/norme;
+  n[2]=n[2]/norme;
+  double E = art[0] * art[0]+ art[1] * art[1]+ art[2] * art[2];
+  double F= art[0] * arp[0]+ art[1] * arp[1]+ art[2] * arp[2];
+  double G = arp[0] * arp[0]+ arp[1] * arp[1]+ arp[2] * arp[2];
+  double L = artt[0] * n[0]+ artt[1] * n[1]+ artt[2] * n[2];
+  double M = artp[0] * n[0]+ artp[1] * n[1]+ artp[2] * n[2];
+  double N = arpp[0] * n[0]+ arpp[1] * n[1]+ arpp[2] * n[2];
+  double H = (E*N-2.0f*F*M+G*L)/(2.0f*(E*G-F*F));
+    
+
+  return H;
+}
+  
+
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi] .
+ *
+ * @return the gaussian curvature at point (x(t),y(t),z(t)), positive
+ * is convex, negative is concave when shape is to the left and
+ * the shape boundary is followed counterclockwise.
+ */
+template<typename TSpace>
+inline
+double
+DGtal::StarShaped3D<TSpace>::gaussianCurvature( AngularCoordinates t ) const
+{
+  
+  typedef typename Space::RealPoint RealPoint;
+  
+  RealPoint art = rt(t);
+  RealPoint arp = rp(t);
+  RealPoint artt = rtt(t);
+  RealPoint arpp = rpp(t);
+  RealPoint artp = rtp(t);
+
+
+  RealPoint n(art[1]*arp[2]-art[2]*arp[1],art[2]*arp[0]-art[0]*arp[2],art[0]*arp[1]-art[1]*arp[0]);
+  double norme= sqrt(n[0]*n[0]+n[1]*n[1]+n[2]*n[2]);
+  n[0]=n[0]/norme;
+  n[1]=n[1]/norme;
+  n[2]=n[2]/norme;
+  double E = art[0] * art[0]+ art[1] * art[1]+ art[2] * art[2];
+  double F= art[0] * arp[0]+ art[1] * arp[1]+ art[2] * arp[2];
+  double G = arp[0] * arp[0]+ arp[1] * arp[1]+ arp[2] * arp[2];
+  double L = artt[0] * n[0]+ artt[1] * n[1]+ artt[2] * n[2];
+  double M = artp[0] * n[0]+ artp[1] * n[1]+ artp[2] * n[2];
+  double N = arpp[0] * n[0]+ arpp[1] * n[1]+ arpp[2] * n[2];
+
+  double K = (L*N-M*M)/(E*G-F*F);
+
+  return K;
+}
+  
+
+
+/**
+ * @param t1 is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi] .
+ * @param t2 is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi]  further from [t1].
+ * @param nb the number of points used to estimate the arclength between x(Teta1,Phi1) and x(Teta2,Phi2).
+ * @return the estimated arclength.
+ */
+template<typename TSpace>
+inline
+double
+DGtal::StarShaped3D<TSpace>::arclength( AngularCoordinates t1, AngularCoordinates t2, unsigned int nb ) const
+{
+  while ( t2.first < t1.first ) t2.first += 2.0*M_PI;
+  while ( t2.second < t1.second ) t2.second += 2.0*M_PI;
+
+  RealPoint x0( x( t1 ) );
+  double l = 0.0;
+  for ( unsigned int i = 1; i <= nb; ++i )
+    {
+      AngularCoordinates t;
+      t.first = ( ( t2.first - t1.first ) * i ) / nb;
+      t.second = ( ( t2.second - t1.second ) * i ) / nb;
+      AngularCoordinates h;
+      h.first=t1.first + t.first;
+      h.second=t1.second + t.second;
+      RealPoint x1( x( h ) );
+      l += sqrt( ( x1[0] - x0[0] )*( x1[0] - x0[0] )
+                 + ( x1[1] - x0[1] )*( x1[1] - x0[1] ) + ( x1[2] - x0[2] )*( x1[2] - x0[2] ) );
+      x0 = x1;
+    }
+  return l;
+}
+
+
+/**
+ * @param t1 is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi].
+ * @param t2 is a couple of Teta && Phi wich are 2 angles respectivly between [0,2PI] and [0,Pi], further from [t1].
+ * @param nb the number of points used to estimate the surfacelength between x(Teta1,Phi1) and x(Teta2,Phi2).
+ * @return the estimated surfacelength.
+ */
+template<typename TSpace>
+inline
+double
+DGtal::StarShaped3D<TSpace>::surfacelength( AngularCoordinates t1, AngularCoordinates t2, unsigned int nb ) const
+{
+  while ( t2.first < t1.first ) t2.first += 2.0*M_PI;
+  while ( t2.second < t1.second ) t2.second += 2.0*M_PI;
+
+  double step1 = ( t2.first - t1.first )  / nb;
+  double step2 = ( t2.second - t1.second )  / nb;
+  AngularCoordinates t( std::make_pair(0.0,0.0));
+  double l = 0.0;
+  for ( unsigned int i = 0; i < nb; ++i )
+    {
+      t.first = step1 *i;
+      for ( unsigned int j = 0; j < nb; ++j )
+        {
+
+          t.second = step2 * j;
+          RealPoint xtp (x( std::make_pair( t1.first + t.first - step1 ,t1.second + t.second - step2 ) ));
+          RealPoint xt1p1( x( std::make_pair(t1.first + t.first,t1.second + t.second) ) ); 
+          RealPoint xt1p( x( std::make_pair(t1.first + t.first,t1.second + t.second- step2 ) ) ); 
+          double D = sqrt( ( xt1p[0] - xtp[0] )*( xt1p[0] - xtp[0] ) + 
+			   ( xt1p[1] - xtp[1] )*( xt1p[1] - xtp[1] ) + 
+			   ( xt1p[2] - xtp[2] )*( xt1p[2] - xtp[2] ));
+	  double d = sqrt( ( xt1p1[0] - xt1p[0] )*( xt1p1[0] - xt1p[0] ) + 
+			   ( xt1p1[1] - xt1p[1] )*( xt1p1[1] - xt1p[1] ) + 
+			   ( xt1p1[2] - xt1p[2] )*( xt1p1[2] - xt1p[2] ));
+
+
+          l += (d*D);
+        }
+    }
+  return l;
+}
+
+
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::StarShaped3D<T>::~StarShaped3D()
+{
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::StarShaped3D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[StarShaped2D]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::StarShaped3D<T>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const StarShaped3D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+// //
+///////////////////////////////////////////////////////////////////////////////

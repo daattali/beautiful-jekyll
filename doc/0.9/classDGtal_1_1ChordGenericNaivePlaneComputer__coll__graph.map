@@ -1,9 +1,0 @@
-<map id="DGtal::ChordGenericNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;" name="DGtal::ChordGenericNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1ChordNaivePlaneComputer.html" title="DGtal::ChordNaivePlaneComputer\l\&lt; Space, InputPoint, InternalScalar \&gt;" alt="" coords="1608,175,1847,213"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1ChordNaivePlaneComputer.html" title="Aim: A class that contains the chord&#45;based algorithm for recognizing pieces of digital planes of give..." alt="" coords="1173,156,1436,195"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="548,216,644,241"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1ChordNaivePlaneComputer_1_1State.html" title="DGtal::ChordNaivePlaneComputer\l\&lt; TSpace, TInputPoint, TInternalScalar\l \&gt;::State" alt="" coords="801,41,1053,93"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; 3, InternalScalar \&gt;" alt="" coords="525,48,666,87"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="194,43,353,95"/>
-<area shape="rect" id="node13" title="STL class. " alt="" coords="1247,297,1361,323"/>
-</map>

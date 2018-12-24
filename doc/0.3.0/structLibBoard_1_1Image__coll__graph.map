@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Rectangle.html" title="A rectangle." alt="" coords="103,454,249,483"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points." alt="" coords="109,374,243,403"/>
-<area shape="rect" id="node6" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="5,278,131,307"/>
-<area shape="rect" id="node8" href="$classLibBoard_1_1Color.html" title="Structure representing an RGB triple." alt="" coords="9,86,127,115"/>
-<area shape="rect" id="node11" href="$structLibBoard_1_1Path.html" title="A path, according to Postscript and SVG definition." alt="" coords="155,278,269,307"/>
-</map>

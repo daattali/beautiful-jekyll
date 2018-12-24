@@ -1,0 +1,101 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageGeometry.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/09/19
+ *
+ * Documentation file for Geometry package
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageGeometry Geometry package
+
+@managers Tristan Roussillon, David Coeurjolly, Jacques-Olivier Lachaud
+@since 0.3
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+This package contains geometry related concepts, models and algorithms.
+It provides a generic framework for the segmentation of one-dimensional
+discrete structures, like strings, contours of 2d digital objects or nd digital curves.
+It has also limited support for digital plane recognition in 3d.
+It also provides a generic framework for the estimation of geometrical quantities,
+either global, like length, or local, like normal or curvature.
+Several estimators are built from some well chosen segmentations.
+On the other hand, this package contains tools for the analysis of volumes
+of arbitrary dimension, by the means of separable and incremental distance transforms.
+
+
+@b Modules
+
+- \ref moduleGridCurveAnalysis  (Tristan Roussillon)
+  - \ref moduleArithDSSReco (Tristan Roussillon) 
+  - \ref moduleFrechetShortcut (Isabelle Sivignon)
+  - \ref moduleAlphaThickSegmentReco (Bertrand Kerautret, Alexandre Faure, Fabien Feschet,  Mohammad Said, Jacques-Olivier Lachaud))
+- \ref modulePlaneRecognition (Jacques-Olivier Lachaud)
+ - \ref moduleCOBANaivePlaneRecognition (Jacques-Olivier Lachaud, Emilie Charrier, Lilian Buzer)
+ - Chord algorithm for plane recognition (Jacques-Olivier Lachaud, Yan Gerard, Isabelle Debled-Rennesson, Paul Zimmermann) --- documentation coming soon ---
+
+- Geometric estimators
+  - DSS / DCA / .. based estimators      --- documentation coming soon but have a look to models of CSegmentComputerEstimator ---
+  - \ref moduleIntegralInvariant <!--Integral invariant curvature estimator 2D/3D--> (Jérémy Levallois, David Coeurjolly, Jacques-Olivier Lachaud)
+  - \ref LocalEstimatorsFromSurfel (David Coeurjolly)
+  - \ref moduleVCM (Louis Cuel, Jacques-Olivier Lachaud, Quentin Mérigot, Boris Thibert)
+
+- Volumetric analysis
+  - \ref moduleMetrics (David Coeurjolly)
+  - \ref moduleVolumetric (David Coeurjolly, Roland Denis)
+  - \ref moduleFMM (Tristan Roussillon) 
+
+- Tools 
+  - \ref moduleGeometricPredicates (Tristan Roussillon)
+  - \ref moduleHull2D (Tristan Roussillon, Bertrand Kerautret)
+
+
+@b Package @b Concepts @b Overview
+
+- \ref packageGeometryConcepts
+
+
+@b Related @b documentation @b pages
+
+@b Related @b examples
+- exampleCurvature.cpp
+- voronoimap2D.cpp, distancetransform3D.cpp, distancetransform2D.cpp
+- viewer3D-7-planes.cpp , viewer3D-7bis-planes.cpp , viewer3D-7-stdplane.cpp , viewer3D-7bis-stdplane.cpp , greedy-plane-segmentation.cpp  , greedy-plane-segmentation-ex2.cpp
+- exampleConvexHull2D.cpp, exampleAlphaShape.cpp
+
+*/
+
+}
+
+
+

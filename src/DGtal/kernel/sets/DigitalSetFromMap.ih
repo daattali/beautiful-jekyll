@@ -1,0 +1,384 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/02/16
+ *
+ * Implementation of inline methods defined in DigitalSetFromMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+#include "DGtal/kernel/sets/DigitalSetFromMap.h"
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+DGtal::DigitalSetFromMap<TMapImage>::~DigitalSetFromMap()
+{
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline DGtal::DigitalSetFromMap<TMapImage>::DigitalSetFromMap(
+typename DGtal::DigitalSetFromMap<TMapImage>::Image & aImage,
+const typename DGtal::DigitalSetFromMap<TMapImage>::Image::Value & aDefaultValue )
+  : myImgPtr( &aImage ), myFun( Functor() ), myDefault( aDefaultValue )
+{
+}
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+DGtal::DigitalSetFromMap<TMapImage>
+::DigitalSetFromMap( const DigitalSetFromMap<TMapImage> & other )
+  : myImgPtr( other.myImgPtr ), myFun( other.myFun ), myDefault (other.myDefault)
+{
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+DGtal::DigitalSetFromMap<TMapImage> &
+DGtal::DigitalSetFromMap<TMapImage>
+::operator= ( const DigitalSetFromMap<TMapImage> & other )
+{
+  if (this != &other)
+    {
+      myImgPtr = other.myImgPtr;
+      myFun = other.myFun;
+      myDefault = other.myDefault;
+    }
+  return *this;
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+const typename DGtal::DigitalSetFromMap<TMapImage>::Domain&
+DGtal::DigitalSetFromMap<TMapImage>::domain() const
+{
+  return myImgPtr->domain();
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+DGtal::CowPtr<typename DGtal::DigitalSetFromMap<TMapImage>::Domain>
+DGtal::DigitalSetFromMap<TMapImage>::domainPointer() const
+{
+  return CowPtr<Domain>( new Domain( myImgPtr->domain() ) );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::Size
+DGtal::DigitalSetFromMap<TMapImage>::size() const
+{
+  return static_cast<Size>(myImgPtr->size());
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+bool
+DGtal::DigitalSetFromMap<TMapImage>::empty() const
+{
+  return myImgPtr->empty();
+}
+
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::insert( const Point & p )
+{
+  ASSERT( this->domain().isInside( p ) );
+  myImgPtr->insert( Pair( p, myDefault ) );
+}
+
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+template <typename PointInputIterator>
+void
+DGtal::DigitalSetFromMap<TMapImage>::insert( PointInputIterator first, PointInputIterator last )
+{
+  for (PointInputIterator it = first; it != last; ++it)
+      this->insert( *it );
+}
+
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::insertNew( const Point & p )
+{
+  ASSERT( this->domain().isInside( p ) );
+  myImgPtr->insert( Pair( p, myDefault ) );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+template <typename PointInputIterator>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::insertNew
+( PointInputIterator first, PointInputIterator last )
+{
+  for (PointInputIterator it = first; it != last; ++it)
+      this->insert( *it );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+typename DGtal::DigitalSetFromMap<TMapImage>::Size
+DGtal::DigitalSetFromMap<TMapImage>::erase( const Point & p )
+{
+  return static_cast<Size>(myImgPtr->erase( p ));
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::erase( Iterator it )
+{
+  myImgPtr->erase( *it );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::clear()
+{
+  myImgPtr->clear();
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::ConstIterator
+DGtal::DigitalSetFromMap<TMapImage>::find( const Point & p ) const
+{
+  return ConstIterator( myImgPtr->find( p ), myFun );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::Iterator
+DGtal::DigitalSetFromMap<TMapImage>::find( const Point & p )
+{
+  return Iterator( myImgPtr->find( p ), myFun );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::ConstIterator
+DGtal::DigitalSetFromMap<TMapImage>::begin() const
+{
+  return ConstIterator( myImgPtr->begin(), myFun );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::ConstIterator
+DGtal::DigitalSetFromMap<TMapImage>::end() const
+{
+  return ConstIterator( myImgPtr->end(), myFun );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::Iterator
+DGtal::DigitalSetFromMap<TMapImage>::begin()
+{
+  return Iterator( myImgPtr->begin(), myFun );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+typename DGtal::DigitalSetFromMap<TMapImage>::Iterator
+DGtal::DigitalSetFromMap<TMapImage>::end()
+{
+  return Iterator( myImgPtr->end(), myFun );
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+template <typename TDigitalSet>
+inline
+DGtal::DigitalSetFromMap<TMapImage> &
+DGtal::DigitalSetFromMap<TMapImage>
+::operator+=( const TDigitalSet & aSet )
+{
+  if ( this != &aSet )
+    {
+      typename TMapImage::iterator itDst = myImgPtr->end();
+      for ( typename TDigitalSet::ConstIterator itSrc = aSet.begin();
+	    itSrc != aSet.end();
+	    ++itSrc )
+	{
+	  itDst = myImgPtr->insert( itDst, Pair(*itSrc, myDefault) );
+	}
+    }
+  return *this;
+}
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+bool
+DGtal::DigitalSetFromMap<TMapImage>
+::operator()( const Point & p ) const
+{
+  return myImgPtr->find( p ) != myImgPtr->end();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Other Set services -----------------------------
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+template <typename TOutputIterator>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::computeComplement
+(TOutputIterator& ito) const
+{
+  Domain d = this->domain();
+  typename Domain::ConstIterator itPoint = d.begin();
+  typename Domain::ConstIterator itEnd = d.end();
+  while ( itPoint != itEnd ) {
+    if ( this->find( *itPoint ) == end() ) {
+      *ito++ = *itPoint;
+    }
+    ++itPoint;
+  }
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+template <typename TDigitalSet>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::assignFromComplement
+( const TDigitalSet& otherSet )
+{
+  this->clear();
+  Domain d = this->domain();
+  typename Domain::ConstIterator itPoint = d.begin();
+  typename Domain::ConstIterator itEnd = d.end();
+  while ( itPoint != itEnd ) {
+    if ( otherSet.find( *itPoint ) == otherSet.end() ) {
+      this->insert( *itPoint );
+    }
+    ++itPoint;
+  }
+}
+
+// ------------------------------------------------------------------------
+template <typename TMapImage>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::computeBoundingBox
+( Point & lower, Point & upper ) const
+{
+  Domain d = this->domain();
+  lower = d.upperBound();
+  upper = d.lowerBound();
+  ConstIterator it = this->begin();
+  ConstIterator itEnd = this->end();
+  while ( it != itEnd ) {
+    lower = lower.inf( *it );
+    upper = upper.sup( *it );
+    ++it;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename TMapImage>
+inline
+void
+DGtal::DigitalSetFromMap<TMapImage>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSetFromMap]" << " size=" << size();
+}
+
+template <typename TMapImage>
+inline
+bool
+DGtal::DigitalSetFromMap<TMapImage>::isValid() const
+{
+  return ( (myImgPtr) && (myImgPtr->isValid()) );
+}
+
+
+// --------------- CDrawableWithBoard2D realization -------------------------
+
+template<typename TMapImage>
+inline
+std::string
+DGtal::DigitalSetFromMap<TMapImage>::className() const
+{
+  return "DigitalSetFromMap";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline function                                         //
+
+template <typename TMapImage>
+inline
+std::ostream &
+DGtal::operator<< ( std::ostream & out, const DGtal::DigitalSetFromMap<TMapImage> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

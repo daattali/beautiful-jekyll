@@ -1,0 +1,355 @@
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/**
+   
+   @page moduleDigitalSurfaceHelpers Helpers for digital surfaces
+   
+   @writers Bertrand Kerautret and Jacques-Olivier
+   Lachaud.
+
+  Part of the \ref packageTopology.
+  
+   This part of the manual describes how to use the helper class
+   Surfaces to build digital surfaces, closed or open, or contours
+   within digital surfaces. A lot of the ideas, concepts, algorithms,
+   documentation and code is a backport from <a
+   href="https://gforge.liris.cnrs.fr/projects/imagene">ImaGene</a>.
+
+[TOC]
+
+  All the code presented here require:
+ @code
+      #include "DGtal/topology/helpers/Surfaces.h"
+@endcode
+
+   @note This class is useful if you wish only to obtain the set of
+   surfels of a given digital surface or if you wish to obtain 2D
+   contours (in 2D or 3D). If you require more advanced operations on
+   surfaces (for instance using afterwards the topology defined on the
+   surface), it is better to wrap a DigitalSurface object around your
+   surface of interest, see \ref moduleDigitalSurfaces.
+
+   @section dgtal_helpsurf_sec1  The 2D case: the boundary is a sequence of cells
+
+   The surfaces classes offers the possibility to extract an open or
+   closed contour as a sequence of surfels obtained from a DigitalSet
+   and a starting surfel. The full code of this example is available
+   in file <a href="topology_2ctopo-2_8cpp-example.html">ctopo-2.cpp </a>.
+   
+
+   The first step to extract the surfel boudary of a 2D digital set is
+   to obtain an initial boundary surfel:
+   @code 
+      aCell = Surfaces<Z2i::KSpace>::findABel(ks, set2d);	
+   @endcode
+
+   The first surfel can also be displayed in red with Board2D:      
+   @code  
+       Board2D board;
+       board << image.domain() << set2d; // display domain and set
+       board << CustomStyle( aCell.className(), new CustomColors(  Board2D::Color( 255, 0, 0 ),
+       							           Board2D::Color( 192, 0, 0 ) ));
+       board << aCell;
+    @endcode  
+
+   @image html ctopo2a.png "Start surfel before a tracking (in red)."
+   @image latex ctopo2a.png "Start surfel before a tracking (in red)." width=0.5\textwidth
+
+    
+    Then you can extract the sequence of consecutive surfels:
+    @code 
+     std::vector<Z2i::SCell> vectBdrySCell;
+     SurfelAdjacency<2> SAdj( true );
+     Surfaces<Z2i::KSpace>::track2DBoundary( vectBdrySCell,
+	   				     ks, SAdj, set2d, aCell );
+    @endcode
+    and display it:
+    @code
+     GradientColorMap<int> cmap_grad( 0, vectBdrySCell.size() );
+     cmap_grad.addColor( Board2D::Color( 50, 50, 255 ) );
+     cmap_grad.addColor( Board2D::Color( 255, 0, 0 ) );
+     cmap_grad.addColor( Board2D::Color( 255, 255, 10 ) );
+   
+     unsigned int d=0;
+     std::vector<Z2i::SCell>::iterator it;
+     for ( it=vectBdrySCell.begin() ; it != vectBdrySCell.end(); it++ ){
+     	  board<< CustomStyle((*it).className() ,
+	           	      new CustomColors( Board2D::Color::Black,
+				                cmap_grad( d )))<< *it;
+          d++;
+    }
+   @endcode	
+   You will obtain the following ordered sequence of surfels: 
+
+   @image html ctopo2b.png "Tracking of a closed 2D contour."
+   @image latex ctopo2b.png "Tracking of a closed 2D contour." width=0.5\textwidth
+
+
+   The resulting sequence of surfels does not necessary present an
+   open contour (try for instance image "samples/circleR10modif.pgm"):
+
+   @image html ctopo2c.png  "Tracking of an open 2D contour."
+   @image latex ctopo2c.png  "Tracking of an open 2D contour." width=0.5\textwidth
+   
+   @section dgtal_helpsurf_sec2 Tracking a 3D boundary to build a surface.
+
+   With only few modifications we can apply the same extraction on 3D
+   surfel set. The file <a
+   href="topology_2ctopo-2-3d_8cpp-example.html">ctopo-2-3d.cpp </a> shows the
+   same previous example adapted in 3D.
+  
+   with the same code we can get a surfel boundary:
+   @code
+   Z3i::SCell aCell = Surfaces<Z3i::KSpace>::findABel(ks, set3d);
+   @endcode
+   
+   From this SCell all the surfel connected sets can be extracted:
+   @code
+   // Extracting all boundary surfels which are connected to the initial boundary Cell.
+   Surfaces<Z3i::KSpace>::trackBoundary( vectBdrySCellALL,
+                                         ks,SAdj, set3d, aCell );
+   @endcode
+
+   To see both initial surfel and the surfel set, we can use the transparent mode:
+
+   @code
+   viewer << SetMode3D((*(vectBdrySCellALL.begin())).className(), "Transparent");
+   @endcode
+   	
+   To avoid surfel superposition we need to increase with a small
+   shift the surfel size, for this purpose you can add the following key:
+   @code 
+   viewer << Viewer3D<>::shiftSurfelVisu; 
+   @endcode
+   or use the special mode "Highlighted" which increase automaticly the surfel size.
+
+   You can obtain for instance the following visualisation:
+   
+   @image html ctopo3dSurfel.png "Tracking surfaces in 3D (start surfel in green)."
+   @image latex ctopo3dSurfel.png "Tracking surfaces in 3D (start surfel in green)." width=0.5\textwidth
+   
+   Since in 3D there are several choice for the direction used to
+   exctract surfel boundary, we can specify the constant direction
+   need to drive the surfel extraction:
+
+   @code
+   // Extract the boundary contour associated to the initial surfel in its first direction
+    Surfaces<Z3i::KSpace>::track2DBoundary( vectBdrySCell,
+ 	    				    ks, *(ks.sDirs( aCell )),SAdj, set3d, aCell );
+   @endcode  					    
+   
+   After extracting the two surfels cut you may obtain the following visualisation:
+   
+   @image html ctopo3dSurfelCut.png "Tracking surfaces and slices in 3D (start surfel in green)."
+   @image latex ctopo3dSurfelCut.png "Tracking surfaces and slices in 3D (start surfel in green)." width=0.5\textwidth
+   
+
+
+
+
+
+   @section dgtal_helpsurf_sec3 Extracting surface of connected components
+
+   The class \ref Surfaces provides other useful function to extract
+   connected boundary surfels from a digital set and given a surfel
+   adjacency definition. The example  <a
+   href="topology_23dKSSurfaceExtraction_8cpp-example.html" >
+   3dKSSurfaceExtraction.cpp </a> shows an example of such an extraction.
+
+   From a domain we construct a DigitalSet inserting points under given conditions (see.  <a
+   href="topology_23dKSSurfaceExtraction_8cpp-example.html" >
+   3dKSSurfaceExtraction.cpp </a> for more details)
+
+@code
+#include "DGtal/helpers/Surfaces.h"
+#include "DGtal/topology/KhalimskySpaceND.h"
+...
+Domain domain( p1, p2);
+DigitalSet diamond_set( domain );
+...
+  diamond_set.insertNew( *it );
+....
+@endcode 
+   
+With this domain bounding points (p1, p2), a KhalimskySpace is
+  constructed and a SurfelAdjacency definition is introduced.
+
+@code 
+ KSpace K;
+ K.init(p1, p2, true);
+ SurfelAdjacency<3> SAdj( true );
+@endcode 
+
+
+
+Then we can extract all connected surfels from the digitalSet surface :
+
+@code 
+  SetPredicate<DigitalSet> shape_set_predicate( diamond_set );
+  Surfaces<KSpace>::extractAllConnectedSCell(vectConnectedSCell,K, SAdj, shape_set_predicate);
+@endcode
+
+
+After processing a simple display of each resulting connecting component you can obtain such a visualisation:
+
+
+
+@image html KSurfelsConnectedOrientExt.png "Visualisation of connected set of SignedKhalimskySpaceND"
+@image latex KSurfelsConnectedOrientExt.png "Visualisation of connected set of SignedKhalimskySpaceND" width=0.5\textwidth
+
+
+
+Here since the last argument is set to true, the resulting
+SignedKhalimskySpaceND are signed in order to indicate the direction
+of exterior. You can also get the SignedKhalimskySpaceND with default
+sign:
+
+
+@code 
+  Surfaces<KSpace>::extractAllConnectedSCell(vectConnectedSCell,K, SAdj, shape_set_predicate, false);
+@endcode
+
+
+and you will get the resulting cell display:
+
+
+
+
+@image html KSurfelsConnectedDefaultOrient.png "Visualisation of connected set of oriented surfels of a KhalimskySpaceND."
+@image latex KSurfelsConnectedDefaultOrient.png "Visualisation of connected set of oriented surfels of a KhalimskySpaceND." width=0.5\textwidth
+
+
+
+
+ @section dgtal_helpsurf_sec4 Filling oriented digital contours
+
+
+ The helper class Surface also proposes some methods to fill the
+ interior/exterior of a digital set of 1-SCell which can be defined from
+ an oriented FreemanChain. These methods can be usefull in particular
+ to reconstruct images (as given for instance in the tool of
+ freeman2pgm given in  <a  href="https://github.com/DGtal-team/DGtalTools">DGtalTools</a>.). 
+ 
+ The example ctopo-fillContours.cpp illustrates a basic filling with a
+ shape containing a hole. The main steps to fill a contour
+ represented by a FreemanChain are the following:
+
+ First we construct two FreemanChain to illustrate the fill with two
+ different orientations:
+ 
+ @snippet topology/ctopo-fillContours.cpp ctopoFillContoursInit
+
+
+
+
+To construct the set of signed SCell, we use the method getInterPixelLinels of FreemanChain class:
+
+ @snippet topology/ctopo-fillContours.cpp ctopoFillContoursGetSCells
+
+@note The that the resulting Cell orientation is defined by
+convention such that a contour defined in the direct orientation will
+generate the fill of the interior of the shape (with the
+uComputeInterior method) while the indirect orientation should be
+used to define a hole (see example below). 
+ 
+
+Afterwards the region associated with the direct oriented contour (fc1)
+can be filled by using the method uComputeInterior with the parameter
+empty_is_inside set to false. This parameter choice is justified since
+here a line which does not contain any boundary element is necessary at the
+outside of the contour.
+
+ @snippet topology/ctopo-fillContours.cpp ctopoFillContoursFillRegion
+            
+ The interior Cells obtained from such a contour are illustrated here:
+
+ 
+ @image html  ctopo-fillContours0.png  "Filling interior of direct oriented contour."
+
+ 
+ We can also reconstruct region with hole by using a contour in the indirect direction. For instance we can define 
+
+ @snippet topology/ctopo-fillContours.cpp ctopoFillContoursGetSCellsHole
+
+ And after adding it to the previous set boundarySCell you will obtain such a display:
+
+  @image html  ctopo-fillContours1.png  "Filling interior of direct oriented contour."
+ 
+@note From an indirect oriented contour you can also fill both the interior and exterior:
+@snippet topology/ctopo-fillContours.cpp ctopoFillContoursFillRegionHoles
+For the interior region, the parameter empty_is_inside parameter is set to true since a line without boundary element will correspond to the interior of the shape (since the contour is given the indirect orientation). In the same way, the parameter empty_is_outside is set to false.
+You will obtain such a representation:
+ @image html  ctopo-fillContours3.png  "Filling interior (lightgray) and exterior (dark gray) of indirect oriented contour." 
+
+
+@section dgtal_helpsurf_challenge Your challenge
+
+Now you are able both to extract a set of contours and to fill
+contours. The exercise is now to reconstruct an image from a given set
+of contours. 
+
+
+@subsection dgtal_helpsurf_challenge_exercice Exercise
+
+You challenge is to code:
+
+   1. The load the set of all the Freeman Chains given in a text file. 
+   2. Transform Freeman Chains into signed cells of KhalimskySpaceND (SCell).
+   3. Reconstruct an image associated to its Freeman Chains by filling.
+   4. Identify image hole and fill it with specific gray level.
+   5. Exporting resulting image in pgm format.
+
+
+@subsection dgtal_helpsurf_challenge_hints Hints
+
+- The class PointListReader contains various method to read input from text file. In particular you can use the method getFreemanChainsFromFile  (step 1).
+  To reconstruct the image you can first define some types from KhalimskySpaceND with also the resulting image:
+  \code
+  typedef KhalimskySpaceND<2, int>::Cell Cell;
+  typedef KhalimskySpaceND<2, int>::SCell SCell;
+  typedef DGtal::KhalimskySpaceND< 2, int > KSpace;
+  typedef DGtal::ImageContainerBySTLVector<Z2i::Domain, unsigned char> Image2D ; 
+  \endcode
+  @note To apply the reconstruction, you can use the following file given in this path: DGtal/examples/samples/contourS2.fc
+
+- Then you will also need to transform the freeman chain into signed
+cells (SCell) given in the KhalimskySpaceND. For this purpose you can
+use the FreemanChain method getInterPixelLinels (step 2).
+
+- For the step (3) you have first to save on cell by exploiting the
+  filling described in the previous section. Then you can update the
+  resulting image in particular with the method uCoords from
+  KhalimskySpaceND which allows you to recover the coordinate in image domain.
+  For instance to set to 255 the image pixel associated to the Cell c, you can do:
+  \code
+      imageResult.setValue(ks.uCoords(*it), 255);
+   \endcode
+
+- To identify the holes of step (4) you have to exploit the contour orientation. For
+  this purpose you can use the method ccwLoops of the FreemanChain
+  class. 
+@note We recall that by convention holes are oriented in the CW direction (or indirect order). 
+
+- Finally you can export the result just by including the GenericWriter and the flux operator:
+  \code
+  #include "DGtal/io/writers/GenericWriter.h"
+   ...
+  yourImage >> "yourImageName.pgm";
+  \endcode
+
+@subsection dgtal_helpsurf_challenge_results Result
+
+
+If you succeed the exercise you will obtain the following pgm image:
+
+  @image html resulExerciceHelpSurface.png "Awaited result of exercice with the main region filled in white and holes represented in gray."
+
+
+*/
+
+}
+
+

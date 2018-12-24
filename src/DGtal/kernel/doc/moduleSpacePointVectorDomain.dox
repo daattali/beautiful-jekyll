@@ -1,0 +1,318 @@
+/**
+ * @file moduleSpacePointVectorDomain.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/03/04
+ *
+ * Documentation file for feature DGtalKernel
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleSpacePointVectorDomain Digital Spaces, Points, Vectors and Domains
+@authors David Coeurjolly, Jacques-Olivier Lachaud, Guillaume Damiand
+
+
+This part of the manual describes the DGtal kernel and its
+classes. More precisely, we define several key concepts in DGtal such as
+Space or Domain. All classes and utilities defined in the DGtal
+library require a specification of the digital space in which the
+objects are defined. 
+
+For DGtal users, the specification of the digital Space  usually
+corresponds to the first lines of DGtal codes. 
+
+[TOC]
+
+\section sectSpace DGtal Space
+
+A DGtal Space parametrized by two things: a dimension
+ (SpaceND::dimension) and a type for
+ integers (SpaceND::Integer). Using these information,  we aim at approximating the
+ digital space \f$Z^n\f$ by \f$Integer^{dimension}\f$.
+ Hence, we have several constraints these parameters:
+ - the dimension should also be a integer;
+ - Integer should characterize a commutative ring with unity using the
+ addition and multiplication operators. 
+
+
+Since the Space is obtained by direct product of the range associated
+to the type Integer. Such type is also used to characterized the
+coordinates of points lying in this space.
+
+In DGtal, Space specification is addresses by the class
+DGtal::SpaceND. More precisely, this class is templated by two
+arguments (the static dimension and the Integer type) and provides
+types for several objects that can be deduced from the template
+parameters. For example, once the parameter are specified, the
+class provides a type Point for all points in the space. 
+
+For example, digital spaces can be defined as follows:
+
+@code
+#include "DGtal/base/Common.h"
+#include "DGtal/kernel/SpaceND.h"
+{...}
+typedef DGtal::SpaceND<3, DGtal::int32_t> MySpace32;
+typedef DGtal::SpaceND<1, DGtal::int64_t> MySpace64;
+
+#ifdef WITH_BIGINTEGER
+typedef DGtal::SpaceND<3, DGtal::Integer> MySpaceBigInteger;
+#endif
+@endcode
+
+In the latter example, we construct a digital space using
+multiprecision intergers (implemented using the  GMP arbitrary
+precision library). For details, see the documentation page @ref moduleNumber.
+
+
+Using the shortcuts provides in StdDefs.h, the types defined in the
+namespace  DGtal::Z2i correspond to a digital space in dimension 2
+based on  int (`int32_t`). Hence, we can simple define `MySpace`
+as:
+
+@code
+#include "DGtal/base/Common.h"
+#include "DGtal/helpers/StdDefs.h"
+{...}
+typedef DGtal::Z2i::Space MySpace; 
+@endcode
+
+We can construct a point lying in this space as follows:
+
+@code
+#include "DGtal/base/Common.h"
+#include "DGtal/helpers/StdDefs.h"
+{...}
+using namespace DGtal::Z2i;
+//We use default types Z2i::Space and Z2i::Point
+Point p(13,-5);
+@endcode
+
+
+Beside the type `Point` (defined as a specialization of the class
+PointVector),  SpaceND (or Z2i::Space) provides several other types
+and methodes such as
+ - types associated to the canonical vector space  (SpaceND::Point, SpaceND::Vector,...)
+ - types and methods for subspace and subcospace construction
+ - ...
+
+\section sectPointVector Points and Vectors
+
+`Point`s and `Vector`s are fundamental objects in the digital space. Indeed, they allow  us to access to grid point location or to represent displacements between grid points. Many methods are defined for Point and Vector instances. For example we have 
+ - arithmetic operators (`*`, `-`, ...)
+ - comparison operators (`<` ,`>`, ...)
+ - methods associate to the canonical lattice associated to points (`inf`, `sup`, `isLower`,...)
+ - methods to compute various norms of `Point`s/`Vector`s.
+ - last but not least, the interface also provides iterators and accessors.
+
+
+@note For the sake of simplicity, both SpaceND::Point and SpaceND::Vector in a space DGtal::SpaceND are aliases of the specialized type DGtal::PointVector. In other words, these two types can be exchanged without any problem, even if it does not make sense in a  mathematical. For instance, from a vector, we can define its opposite but the opposite does not make sense for a point. 
+
+
+ An element of a `Point` has type `Coordinate` and an element of a `Vector` has type `Component`. For instance, the following code is valid in terms of type.
+@code
+ Point p;
+ Point::Coordinate coord = 24;
+ for(Dimension d = 0 ; d < Space::dimension; ++d)
+    p[d] = coord;
+@endcode
+However, we encourage the use of iterators as follows
+@code
+ Point p;
+ Point::Coordinate coord = 24;
+ for(Point::Iterator it=p.begin(), itend=p.end() ; 
+     it != itend;
+     ++it)
+     (*it) = coord;
+@endcode
+
+
+@note Similarly to the previous note and since `Vector` and `Space` are aliases, SpaceND::Point::Coordinate and SpaceND::Vector::Component are aliases of  SpaceND::Integer. It does not lead to a strong typing of `Point` and `Vector` but it helps the user to design code as close as possible to a mathematical formulation.
+
+
+PointVector class is parametrized by the following template parameters:
+- the static dimension of the underlying space (of type DGtal::Dimension); 
+- a model of concepts::CEuclideanRing to be used as PointVector components/coordinates;
+- a model of bidirectional random access iterator to store the point or vector (default container: `boost::array` with static size equals to the space dimension). In fact, we consider a weaker concept than boost::RandomAccessContainer since we only need iterators and reverse_iterators (`const` and non-`const`) to be defined, default/copy constructors and `operator[]`. Models can be `boost::array`, `std::vector` or even `std::array` (for `C++11` enabled projects).
+
+
+\section sectDomain Domains and HyperRectDomains
+
+\subsection sectDomDef Definition
+
+Once we have defined the fundamental characteristics of our digital
+space, we can define a domain on which all the computations will
+done. A domain is characterized by a starting point A, an end point B and
+a way to scan all the point  between A and B. In most situation, one
+may want the domain to be a finite isothetic subset of the digital
+space. Hence, an important model of the concept of domain (specified
+in the concepts::CDomain class) is the class HyperRectDomain. Since the domain
+lies on a digital space, the HyperRectDomain class has a template
+argument which correspond to the type of space we consider.
+
+For example, let us consider the following code snippet
+@code
+#include <DGtal/base/Common.h>
+#include <DGtal/kernel/SpaceND.h>
+#include <DGtal/helpers/StdDefs.h>
+#include <DGtal/kernel/domains/HyperRectDomain.h>
+{...}
+using namespace DGtal::Z2i;
+@endcode
+
+An instance of HyperRectDomain can be created as follows:
+@code
+typedef HyperRectDomain<Space> MyDomain;
+Point a(-3,-4);
+Point b(10,4);
+MyDomain domain(a,b);
+@endcode
+
+The instance is thus an isothetic domain lying on the space `SpaceND<2,DGtal::uint32_t>` 
+defined by the bounding box of the points a and b. Note that  type  Z2i::Domain in StdDefs.h exactly corresponds to HyperRectDomain on the Z2i::Space.
+ We can visualise the domain using the Board2D stream mechanism (see \ref moduleBoard2D).
+
+@image html kernel-domain.png "Illustration of a simple 2-D domain"
+@image latex kernel-domain.png "Illustration of a simple 2-D domain"  width=6cm
+
+
+The HyperRectDomain class provides several methods such as HyperRectDomain::isInside to decide if a point is inside the domain or not.
+
+@code
+ Point c(5,1);
+ if ( domain.isInside( c ) )
+    trace.info() << "C is inside the domain"<<endl;
+ else
+    trace.info() << "C is outside the domain"<<endl;
+ @endcode
+
+@image html kernel-domain-point.png "Illustration of a simple 2-D domain with a point"
+@image latex kernel-domain-point.png "Illustration of a simple 2-D domain with a point"  width=6cm
+
+
+\subsection sectDomIter Iterating over an  HyperRectDomain
+
+An important feature of DGtal domain is based on iterators it defines to scan the grid points in various orders. For example, to scan the whole domain we can use
+
+@code
+for( MyDomain::ConstIterator it = domain.begin(), itend = domain.end();
+     it != itend;   
+     ++it)
+  trace.info() << "Processing point"<< (*it) << endl;
+@endcode    
+
+By default, HyperRectDomain iterators use the lexicographic order on the dimensions. To visualise this order in dimension 2, we can use the following code snippet in which we display each point by a color map from blue to red according to the order (blue point corresponds to the first point and the red one to the last point).
+Note that in this example, we use a specific drawing primitive (`draw`) in order to draw a SpaceND::Vector as an arrow..
+
+Again, for details on the Board2D mechanism, please refer to \ref moduleBoard2D.
+
+@code
+  //We draw an arrow between two consecutive points during the iteration.
+  MyDomain::ConstIterator itPrec = domain.begin();
+  MyDomain::ConstIterator it = itPrec;
+  MyDomain::Vector shift;
+  ++it;
+
+  board << (*itPrec); //We display the first point as a pixel.
+  for( MyDomain::ConstIterator itend = domain.end();
+       it != itend;   
+       ++it, ++itPrec)
+    {
+      shift =   (*it) -(*itPrec);
+      draw(board, shift, (*itPrec));
+    }
+  board.saveSVG("kernel-domain-it-arrow.svg");
+@endcode
+
+\image html kernel-domain-it-arrow.png "Iteration over a domain with displacements depicted as arrows."
+\image latex kernel-domain-it-arrow.png "Iteration over a domain with displacements depicted as arrows."  width=5cm
+
+
+For each iterator ̀ XXX`, there is a corresponding `ReverseXXX` class allowing to run through the same elements but in reverse direction. For the whole domain, we wan use
+
+@code
+for( MyDomain::ReverseConstIterator it = domain.rbegin(), itend = domain.rend();
+     it != itend;   
+     ++it)
+  trace.info() << "Processing point"<< (*it) << endl;
+@endcode    
+
+
+Note that the HyperRectDomain::begin and HyperRectDomain::rbegin methods can take an optional `Point` as parameter which is used as starting point for the iterator. In this case, the point must belongs to the domain.
+
+There are some classes and methods to run through a given subdomain, and allowing to change the order in which dimension are considered. To facilitate their use, these subdomains use the range concept. A range provides iterators for accessing a half-open range `[first,one_past_last)` of elements. There iterators are accessible by `begin()` and `end()` methods of each range class. Moreover, a range can be iterated in reverse direction thanks to iterators returned by `rbegin()` and `rend()` methods. As for the `begin` and `rbegin` methods on the whole domain, the `begin` and `rbegin` range methods can have an optional point as parameter which is used as starting point for the iterator. In this case, the point must belongs to the given range.
+
+To use these ranges, we need first to get a subrange thanks to one HyperRectDomain::subRange method. As illustrate below, the basic method take a `std::vector<Dimension>` as first parameter, describing the dimensions of the subdomain, and a `Point` as second parameter which give the position of the subdomain for the dimensions not in the vector. Other dimensions are not used. In the example below, `Point c(3,1,1)` is only used for its first dimension. Thus we would have obtained the same `subRange` by using for example `Point d(3,2,4)`.
+
+@code
+  typedef SpaceND<3> TSpace;  
+  TSpace::Point a(1, 1, 1);
+  TSpace::Point b(5, 5, 5);
+  HyperRectDomain<TSpace> domain(a,b);
+
+  std::vector<TSpace::Dimension> v(2); v[0]=2; v[1]=1;
+  TSpace::Point c(3,1,1);
+  for( HyperRectDomain<TSpace>::ConstSubRange::ReverseConstIterator 
+	 it = domain.subRange(v, c).rbegin(), itend =  domain.subRange(v, c).rend();
+       it != itend; 
+       ++it)
+    trace.info() << "Processing point"<< (*it) << endl;
+@endcode    
+
+This example run through all the points in the plane `X=3` (if we suppose that dimension 0 is `X`, dimension 1 is `Y` and dimension 2 is `Z`) in reverse direction. Note that you can chose to instantiate `domain.subRange(v, c)` only once before the loop, but the gain is negligible regarding the given example where the subrange is instantiated twice. However, the gain can be important comparing with the bad version where the range is instantiated at each step of the loop to compare it with `domain.subRange(v, c).rend()`.
+
+Note also that the vector gives not only the dimensions of the subrange but also the order in which these dimensions are considered. In the example above, we start to iterate through `Z`, then to `Y` since vector `v={2,1}`. For this reason, the subrange class can also be used to run through a whole given domain but considering the dimensions in a different order.
+
+There are some shortcuts for the HyperRectDomain::subRange method to facilitate the iteration through subrange having 1, 2, and 3 dimensions: `subRange(Dimension adim, const Point & startingPoint)`; `subRange(Dimension adim1, Dimension adim2, const Point & startingPoint)`; and `subRange(Dimension adim1, Dimension adim2, Dimension adim3, const Point & startingPoint)`.
+
+Lastly, if your compiler supports `C++11` initializer list, there is a custom `subRange` method taking an `std::initializer_list<Dimension>` instead of the `std::vector<Dimension>`. This simplifies the use as we can see in the following example since this avoid the creation of a `std::vector` and its initialization:
+
+@code
+  typedef SpaceND<3> TSpace;  
+  TSpace::Point a(1, 1, 1);
+  TSpace::Point b(5, 5, 5);
+  HyperRectDomain<TSpace> domain(a,b);
+
+  for( HyperRectDomain<TSpace>::ConstSubRange::ReverseConstIterator 
+	 it = domain.subRange({2,1}, c).rbegin(), itend =  domain.subRange({2,1}, c).rend();
+       it != itend; 
+       ++it)
+    trace.info() << "Processing point"<< (*it) << endl;
+@endcode    
+
+\subsection sectDomEmpty Empty domains
+
+Since version 0.9 of DGtal, HyperRectDomain can model an empty domain and it is what the default constructor returns now.
+
+An empty domain is so that the difference between his lower bound and his upper bound has every component equal to 1.
+For example, here is some equivalent definitions of an empty domain:
+@code
+  typedef SpaceND<3> TSpace;
+  typedef TSpace::Point TPoint;
+  TPoint a = TPoint::diagonal(5);
+  
+  HyperRectDomain<TSpace> empty_domain1;
+  HyperRectDomain<TSpace> empty_domain2( TPoint(1, 1, 1), TPoint(0, 0, 0) );
+  HyperRectDomain<TSpace> empty_domain3( a, a - TPoint::diagonal(1) );
+@endcode
+
+Furthermore, a new method, HyperRectDomain::isEmpty, returns `true` if the domain is empty, `false` otherwise.
+
+As expected, the following properties are observed if `domain` is an empty domain:
+- `domain.size()` returns 0,
+- `domain.isInside(p)` returns `false` for every point `p`,
+- `domain.begin() == domain.end()` is `true`, and similarly for the reverse iterators,
+- `domain.subRange(v, domain.lowerBound()).begin() == domain.subRange(v, domain.lowerBound()).end()` is `true` for every subset `v` of dimensions, and similarly for the reverse iterators.
+
+*/
+
+}

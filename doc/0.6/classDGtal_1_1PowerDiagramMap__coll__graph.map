@@ -1,6 +1,0 @@
-<map id="DGtal::PowerDiagramMap&lt; TSpace, TPointPredicate, p &gt;" name="DGtal::PowerDiagramMap&lt; TSpace, TPointPredicate, p &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1HyperRectDomain.html" title="Aim: Parallelepidec region of a digital space, model of a &#39;CDomain&#39;." alt="" coords="25,408,207,458"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1HyperRectDomain__Iterator.html" title="DGtal::HyperRectDomain\l_Iterator\&lt; TPoint \&gt;" alt="" coords="48,216,229,266"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1IsWithinPointPredicate.html" title="Aim: The predicate returns true when the point is within the given bounds." alt="" coords="192,142,400,192"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1IsWithinPointPredicate.html" title="DGtal::IsWithinPointPredicate\l\&lt; Point \&gt;" alt="" coords="221,291,429,341"/>
-</map>

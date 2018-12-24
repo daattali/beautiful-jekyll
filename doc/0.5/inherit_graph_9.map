@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classDGtal_1_1Adapter.html" title="Aim: abstract adapter for ArithmeticalDSS. Has 2 virtual methods:" alt="" coords="7,31,239,62"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1Adapter4ConcavePart.html" title="Aim: adapter for ArithmeticalDSS used by FP in concave parts. Has 2 methods:" alt="" coords="289,5,607,35"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Adapter4ConvexPart.html" title="Aim: adapter for ArithmeticalDSS used by FP in convex parts. Has 2 methods:" alt="" coords="293,58,603,89"/>
-</map>

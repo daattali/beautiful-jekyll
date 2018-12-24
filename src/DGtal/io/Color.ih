@@ -1,0 +1,164 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Color.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/07/17
+ *
+ * Implementation of inline methods defined in Color.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'Color'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'Color' to write.
+ * @return the output stream after the writing.
+ */
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const Color & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+inline
+DGtal::Color
+DGtal::operator*( const double coeff,
+                  const Color & aColor )
+ {
+    Color c=aColor*coeff;
+    return c;
+  }
+
+inline DGtal::Color &
+DGtal::Color::setRGBi( const unsigned char aRedValue,
+           const unsigned char aGreenValue,
+           const unsigned char aBlueValue,
+           const unsigned char aAlphaValue ) {
+  myRed = aRedValue;
+  myGreen = aGreenValue;
+  myBlue = aBlueValue;
+  myAlpha = aAlphaValue;
+  return *this;
+}
+
+
+inline void
+DGtal::Color::red( const unsigned char aRedValue )
+{
+  myRed = aRedValue;
+}
+
+inline void
+DGtal::Color::green( unsigned char aGreenValue )
+{
+  myGreen = aGreenValue;
+}
+
+inline void 
+DGtal::Color::blue( unsigned char aBlueValue )
+{
+  myBlue = aBlueValue;
+}
+
+inline void 
+DGtal::Color::alpha( unsigned char aAlphaValue )
+{
+  myAlpha = aAlphaValue;
+}
+
+inline 
+unsigned char 
+DGtal::Color::red() const 
+{
+ return myRed; 
+} 
+
+inline 
+unsigned char 
+DGtal::Color::green() const 
+{
+ return myGreen;
+} 
+
+inline 
+unsigned char 
+DGtal::Color::blue() const 
+{
+ return myBlue;
+}
+ 
+inline
+unsigned char 
+DGtal::Color::alpha() const 
+{ 
+  return myAlpha; 
+} 
+
+inline
+DGtal::uint32_t 
+DGtal::Color::getRGB() const
+{
+  return (((DGtal::uint32_t) myRed) <<  16) 
+    |  (((DGtal::uint32_t) myGreen) << 8)
+    |  ((DGtal::uint32_t) myBlue); 
+}
+
+inline
+DGtal::uint32_t 
+DGtal::Color::getRGBA() const
+{
+  return (((DGtal::uint32_t) myRed) <<  24) 
+    |  (((DGtal::uint32_t) myGreen) << 16)
+    |  (((DGtal::uint32_t) myBlue)<< 16) 
+    |  ((DGtal::uint32_t) myAlpha); 
+}
+ 
+inline 
+bool 
+DGtal::Color::valid() const 
+{ 
+  return (*this) != Color::None;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

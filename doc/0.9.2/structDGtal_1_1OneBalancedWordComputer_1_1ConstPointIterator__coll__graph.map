@@ -1,9 +1,0 @@
-<map id="DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;::ConstPointIterator" name="DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;::ConstPointIterator">
-<area shape="rect" id="node2" href="$classDGtal_1_1OneBalancedWordComputer.html" title="Aim: " alt="" coords="1556,150,1801,197"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; 2, Integer \&gt;" alt="" coords="1196,78,1335,125"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="312,51,432,80"/>
-<area shape="rect" id="node22" title="STL class. " alt="" coords="161,137,287,167"/>
-<area shape="rect" id="node12" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="765,116,933,180"/>
-<area shape="rect" id="node18" href="$classDGtal_1_1OneBalancedWordComputer_1_1CodeHandler.html" title="DGtal::OneBalancedWordComputer\l\&lt; TConstIterator, TInteger\l \&gt;::CodeHandler\&lt; ConstIterator \&gt;" alt="" coords="1143,189,1388,253"/>
-<area shape="rect" id="node25" href="$classDGtal_1_1OneBalancedWordComputer_1_1CodeHandler.html" title="DGtal::OneBalancedWordComputer\l\&lt; TConstIterator, TInteger\l \&gt;::CodeHandler\&lt; TIterator,\l iterator_type \&gt;" alt="" coords="727,269,972,350"/>
-</map>

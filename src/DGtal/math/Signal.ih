@@ -1,0 +1,617 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Signal.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/07/06
+ *
+ * Implementation of inline methods defined in Signal.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iomanip>
+//////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////
+// class SignalData<TValue>
+//////////////////////////////////////////////////////////////////////////////
+
+/** 
+ * Constructor.
+ */
+template <typename TValue>
+inline
+DGtal::SignalData<TValue>::SignalData()
+  : data( 0 )
+{}
+
+/** 
+ * Constructor.  
+ *
+ * @param s the number of data in the signal.
+ * @param z the index of the zero-th element.
+ * @param p 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+void
+DGtal::SignalData<TValue>::init
+( unsigned int s, int z, bool p, const Value & def )
+{
+  if ( data != 0 ) delete[] data;
+  size = s; zero = z; periodic = p;
+  data = new TValue[ size + 1 ];
+  data[ size ] = def;
+}
+
+/** 
+ * Constructor.  
+ *
+ * @param t the array containing initial data.
+ * @param s the number of data in the signal.
+ * @param z the index of the zero-th element.
+ * @param p 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+void
+DGtal::SignalData<TValue>::init
+( const Value* t, unsigned int s, int z, bool p, const Value& def )
+{
+  if ( data != 0 ) delete[] data;
+  size = s; zero = z; periodic = p;
+  data = new TValue[ size + 1 ];
+  for ( unsigned int i = 0; i < size; ++i, ++t )
+    data[ i ] = *t;
+  data[ size ] = def;
+}
+
+
+/** 
+ * Constructor.  
+ *
+ * @param s the number of data in the signal.
+ * @param z the index of the zero-th element.
+ * @param p 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+DGtal::SignalData<TValue>::SignalData
+( unsigned int s, int z, bool p, const Value & def )
+  : size( s ), zero( z ), periodic( p )
+{
+  data = new TValue[ size + 1 ];
+  data[ size ] = def;
+}
+
+/** 
+ * Constructor.  
+ *
+ * @param t the array containing initial data.
+ * @param s the number of data in the signal.
+ * @param z the index of the zero-th element.
+ * @param p 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+DGtal::SignalData<TValue>::SignalData
+( const TValue* t, unsigned int s, int z, bool p, const Value & def )
+  : size( s ), zero( z ), periodic( p )
+{
+  data = new TValue[ size + 1 ];
+  for ( unsigned int i = 0; i < size; ++i )
+    data[ i ] = *t++;
+  data[ size ] = def;
+}
+
+
+/** 
+ * Destructor.
+ */
+template <typename TValue>
+inline
+DGtal::SignalData<TValue>::~SignalData()
+{
+  if ( data != 0 ) delete[] data;
+}
+
+/** 
+ * Copy constructor.
+ * @param other the data to clone.
+ */
+template <typename TValue>
+inline
+DGtal::SignalData<TValue>::SignalData
+( const SignalData & other )
+  : size( other.size ), zero( other.zero ), periodic( other.periodic )
+{
+  if ( other.data != 0 )
+    {
+      data = new TValue[ size + 1 ];
+      for ( unsigned int i = 0; i <= size; ++i )
+  data[ i ] = other.data[ i ];
+    }
+  else
+    data = 0;
+}
+
+/** 
+ * Assignment.
+ * @param other the data to clone.
+ * @return 'this'.
+ */
+template <typename TValue>
+inline
+DGtal::SignalData<TValue> &
+DGtal::SignalData<TValue>::operator=
+( const SignalData & other )
+{
+  if ( this != &other ) 
+    {
+      if ( other.data == 0 )
+  {
+    if ( data != 0 )
+      delete[] data;
+    data = 0;
+  }
+      else
+  {
+    if ( size < other.size ) 
+      {
+        delete[] data;
+        data = new TValue[ other.size + 1 ];
+      }
+    size = other.size;
+    zero = other.zero;
+    periodic = other.periodic;
+    for ( unsigned int i = 0; i <= size; ++i )
+      data[ i ] = other.data[ i ];
+  }
+    }
+  return *this;
+}
+
+
+/** 
+ * Default value.
+ * @return the default value.
+ */
+template <typename TValue>
+inline
+const TValue &
+DGtal::SignalData<TValue>::defaut() const
+{ 
+  ASSERT( data != 0 );
+  return data[ size ];
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+/////////////////////////////////////////////////////////////////////////////
+// class Signal
+/////////////////////////////////////////////////////////////////////////////
+/**
+ * Destructor. 
+ */
+template <typename TValue>
+inline
+DGtal::Signal<TValue>::Signal()
+  : m_data( 0 )
+{
+}
+
+/**
+ * Constructor.
+ * @param asize the size of the signal.
+ * @param z the index of the zero-th element.
+ * @param periodic 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+DGtal::Signal<TValue>::Signal
+( unsigned int asize, int z, bool periodic, const TValue & def )
+  : m_data( new SignalData<TValue>() )
+{
+  m_data->init( asize, z, periodic, def );
+}
+
+
+/**
+ * Constructor.
+ * @param t the array containing initial data.
+ * @param size the size of the signal.
+ * @param z the index of the zero-th element.
+ * @param periodic 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+DGtal::Signal<TValue>::Signal
+( const TValue* t, unsigned int asize, int z, bool periodic, 
+  const TValue & def )
+  : m_data( new SignalData<TValue>() )
+{
+  m_data->init( t, asize, z, periodic, def );
+}
+
+
+
+/**
+ * Destructor. 
+ */
+template <typename TValue>
+inline
+DGtal::Signal<TValue>::~Signal()
+{
+}
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ * Forbidden by default.
+ */
+template <typename TValue>
+inline
+DGtal::Signal<TValue>::Signal( const Signal & other )
+  : m_data( other.m_data )
+{
+}
+      
+/**
+ * Assignment.
+ * @param other the object to copy.
+ * @return a reference on 'this'.
+ * Forbidden by default.
+ */
+template <typename TValue>
+inline
+DGtal::Signal<TValue> & 
+DGtal::Signal<TValue>::operator=( const Signal & other )
+{
+  if ( this != & other )
+    m_data = other.m_data;
+  return *this;
+
+}
+
+
+/**
+ * Initializer.
+ * @param size the size of the signal.
+ * @param z the index of the zero-th element.
+ * @param periodic 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+void
+DGtal::Signal<TValue>::init
+( unsigned int aSize, int z, bool periodic, const TValue & def )
+{
+  m_data = CowPtr< SignalData<TValue> >(  new SignalData<TValue>() );
+  m_data->init( aSize, z, periodic, def );
+}
+
+
+/**
+ * Constructor.
+ * @param t the array containing initial data.
+ * @param size the size of the signal.
+ * @param z the index of the zero-th element.
+ * @param periodic 'true' if the signal is periodic.
+ * @param def the default value.
+ */
+template <typename TValue>
+inline
+void
+DGtal::Signal<TValue>::init
+( const TValue* t, unsigned int aSize, int z, bool periodic, 
+  const TValue & def )
+{
+  m_data = CowPtr< SignalData<TValue> >( new SignalData<TValue>() );
+  m_data->init( t, aSize, z, periodic, def );
+}
+
+
+
+/**
+   @return the number of elements in the signal.
+*/
+template <typename TValue>
+unsigned int 
+DGtal::Signal<TValue>::size() const
+{
+  return m_data->size;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Signal services ----------------------------
+
+
+/** 
+ * Protected rw access to value. If index is out of bound, return 0
+ * if not periodic or the correct value otherwise.
+ * 
+ * @param i the index in the signal .
+ * 
+ * @return the i-th value in the signal.
+ */      
+template <typename TValue>
+TValue & 
+DGtal::Signal<TValue>::operator[]( int i )
+{
+  SignalData<TValue> & sd = *m_data;
+  int idx = i + sd.zero;
+  if ( ( idx >= 0 ) && ( idx < (int) sd.size ) )
+    return sd.data[ idx ];
+  else if ( sd.periodic )
+    {
+      idx = idx - ( idx / (int) sd.size ) * sd.size;
+      return sd.data[ ( idx + sd.size ) % sd.size ];
+    }
+  else
+    return sd.data[ sd.size ];
+}
+
+/** 
+ * Protected ro access to value. If index is out of bound, return 0
+ * if not periodic or the correct value otherwise.
+ * 
+ * @param i the index in the signal .
+ * 
+ * @return the i-th value in the signal.
+ */      
+template <typename TValue>
+const TValue & 
+DGtal::Signal<TValue>::operator[]( int i ) const
+{
+  const SignalData<TValue> & sd = *m_data;
+  int idx = i + sd.zero;
+  if ( ( idx >= 0 ) && ( idx < (int) sd.size ) )
+    return sd.data[ idx ];
+  else if ( sd.periodic )
+    {
+      idx = idx - ( idx / (int) sd.size ) * sd.size;
+      return sd.data[ ( idx + sd.size ) % sd.size ];
+    }
+  else
+    return sd.data[ sd.size ];
+}
+
+
+/** 
+ * The signal becomes a constant signal of value [val].
+ * 
+ * @param val the value of the whole signal.
+ */      
+template <typename TValue>
+void
+DGtal::Signal<TValue>::setAll( const TValue & val )
+{
+  SignalData<TValue> & sd = *m_data;
+  for ( unsigned int i = 0; i <= sd.size; ++i )
+    sd.data[ i ] = val;
+}
+
+
+/** 
+ * External product of a signal by a scalar value.
+ * 
+ * @param l the external value.
+ * 
+ * @return the signal where each term has been multiplied by [l].
+ */
+template <typename TValue>
+void
+DGtal::Signal<TValue>::multiply( const TValue & l )
+{
+  SignalData<TValue> & sd = *m_data;
+  for ( unsigned int i = 0; i <= sd.size; ++i )
+    sd.data[ i ] *= l;
+}
+
+
+/** 
+ * Convolution product of two signals (F = this).
+ * F*G( a ) = sum F(a-i)G(i) 
+ * 
+ * @param G the second signal (not periodic)
+ * 
+ * @return the signal that is the convolution of F and G, of type F.
+ */
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::operator*( const Signal<TValue>& G )
+{
+  const SignalData<TValue>& Fd = *m_data;
+  const SignalData<TValue>& Gd = *G.m_data;
+
+  
+  unsigned int aSize = Fd.periodic ? Fd.size : Fd.size + Gd.size - 1;
+  int zero = Fd.periodic ? Fd.zero : Fd.zero + Gd.zero;
+  Signal<TValue> FG( aSize, zero, Fd.periodic, Fd.defaut() );
+  SignalData<TValue>& FGd = *FG.m_data;
+
+  if ( Fd.periodic )
+    {
+      for ( int a = 0; a < (int) FGd.size; ++a )
+  {
+    TValue sum = TValue( 0 );
+    for ( unsigned int i = 0; i < Gd.size; ++i )
+      {
+        sum += this->operator[]( a - ( i - Gd.zero ) ) 
+    * Gd.data[ i ];
+      }
+    FG[ a ] = sum;
+  }
+    }
+  else
+    {
+      for ( unsigned int a = 0; a < FGd.size; ++a )
+  {
+    TValue sum = TValue( 0 );
+    for ( unsigned int i = 0; i < Gd.size; ++i )
+      {
+        sum += this->operator[]( a - ( Fd.zero + Gd.zero ) 
+                      - ( i - Gd.zero ) ) 
+           * Gd.data[ i ];
+      }
+    FGd.data[ a ] = sum;
+  }
+    }
+  return FG;
+}
+
+
+
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::G2()
+{
+  Signal<TValue> G = H2();
+  G.multiply( 0.25 );
+  return G;
+}
+
+/** 
+ * @return the binomial signal of order 2.
+ */
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::H2()
+{
+  Signal<TValue> H( 3, 1, false, TValue( 0 ) );
+  H[ -1 ] = 1;
+  H[ 0 ] = 2;
+  H[ 1 ] = 1;
+  return H;
+}
+
+/** 
+ * @return the right difference signal.
+ */
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::Delta()
+{
+  Signal<TValue> D( 2, 0, false, TValue( 0 ) );
+  D[ 0 ] = -1;
+  D[ 1 ] = 1;
+  return D;
+}
+
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::G2n( unsigned int n )
+{
+  if ( n <= 1 ) return G2();
+  else return G2n( n - 1 ) * G2(); 
+}
+
+/** 
+ * @return the binomial signal of order 2n.
+ */
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::H2n( unsigned int n )
+{
+  if ( n <= 1 ) return H2();
+  else return H2n( n - 1 ) * H2(); 
+}
+
+/** 
+ * @return the differential operator with binomial weights of order 2n.
+ */
+template <typename TValue>
+DGtal::Signal<TValue> 
+DGtal::Signal<TValue>::D2n( unsigned int n )
+{
+  return H2n( n ) * Delta(); 
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TValue>
+inline
+void
+DGtal::Signal<TValue>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Signal" << std::fixed << std::setprecision( 5 );
+  for ( unsigned int i = 0; i < size(); ++i )
+    out << " " << ( ( i == (unsigned int) m_data->zero ) ? "*" : "" )
+  << m_data->data[ i ];
+  out << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TValue>
+inline
+bool
+DGtal::Signal<TValue>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TValue>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const Signal<TValue> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

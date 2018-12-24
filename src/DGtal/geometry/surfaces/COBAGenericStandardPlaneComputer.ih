@@ -1,0 +1,544 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file COBAGenericStandardPlaneComputer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/09/20
+ *
+ * Implementation of inline methods defined in COBAGenericStandardPlaneComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// DEFINITION of static members
+///////////////////////////////////////////////////////////////////////////////
+template <typename TSpace, typename TInternalInteger>
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Transform
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::myTransforms[4] = {
+  Transform( true, true ), Transform( true, false ), Transform( false, true ), Transform( false, false ) };
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+~COBAGenericStandardPlaneComputer()
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+COBAGenericStandardPlaneComputer()
+{ // Object is invalid
+  _orthantsToErase.reserve( 4 );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+COBAGenericStandardPlaneComputer( const COBAGenericStandardPlaneComputer & other )
+  : myOrthants( other.myOrthants )
+{
+  for ( OrthantConstIterator it = myOrthants.begin(), itE = myOrthants.end();
+        it != itE; ++it )
+    myComputers[ *it ] = other.myComputers[ *it ];
+  _orthantsToErase.reserve( 4 );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger> &
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+operator=( const COBAGenericStandardPlaneComputer & other )
+{
+  if ( this != &other )
+    {
+      myOrthants = other.myOrthants;
+      for ( OrthantConstIterator it = myOrthants.begin(), itE = myOrthants.end();
+            it != itE; ++it )
+        myComputers[ *it ] = other.myComputers[ *it ];
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::Dimension
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+active() const
+{
+  ASSERT( myOrthants.size() > 0 );
+  return myOrthants[ 0 ];
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::MyIntegerComputer &
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+ic() const
+{
+  return myComputers[ active() ].ic();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+clear()
+{
+  myOrthants.clear();
+  for ( unsigned int i = 0; i < 4; ++i )
+    {
+      myOrthants.push_back( i );
+      myComputers[ i ].clear();
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+init( InternalInteger diameter, 
+      InternalInteger widthNumerator,
+      InternalInteger widthDenominator )
+{
+  clear();
+  for ( unsigned int i = 0; i < 4; ++i )
+    {
+      // all COBA computers computes naive planes along z, but the 4
+      // transforms dilate the x,y coordinates in four different ways
+      // to get all the possible orientations of standard planes.
+      myComputers[ i ].init( 2, diameter, widthNumerator, widthDenominator );
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::ConstIterator
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+begin() const
+{
+  return ConstIterator( myComputers[ active() ].begin(), invT( active() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::ConstIterator
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+end() const
+{
+  return ConstIterator( myComputers[ active() ].end(), invT( active() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+size() const
+{
+  return myComputers[ active() ].size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+empty() const
+{
+  return myComputers[ active() ].empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+max_size() const
+{
+  return myComputers[ active() ].max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+maxSize() const
+{
+  return max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+complexity() const
+{
+  return myComputers[ active() ].complexity();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+operator()( const Point & p ) const
+{
+  return myComputers[ active() ].operator()( t( active() )( p ) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+extendAsIs( const Point & p )
+{ 
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  for ( OrthantConstIterator it = myOrthants.begin(), itE = myOrthants.end(); 
+        it != itE; ++it )
+    {
+      nbok += myComputers[ *it ].operator()( t( *it )( p ) ) ? 1 : 0;
+    }
+  if ( nbok != 0 ) // at least one is ok.
+    {
+      for ( OrthantIterator it = myOrthants.begin(); it != myOrthants.end(); )
+        // cannot put end() in variable, since end() moves when
+        // modifiying a vector.
+        {
+          bool ok = myComputers[ *it ].extendAsIs( t( *it )( p ) );
+          if ( ! ok ) 
+            it = myOrthants.erase( it );
+          else
+            ++it;
+        }
+      ASSERT( ! myOrthants.empty() );
+      return true;
+    }
+  return false;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+extend( const Point & p )
+{
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  _orthantsToErase.clear();
+  for ( OrthantConstIterator orthIt = myOrthants.begin(), orthItE = myOrthants.end(); 
+        orthIt != orthItE; ++orthIt )
+    {
+      Point Tp = t( *orthIt )( p );
+      bool ok = myComputers[ *orthIt ].extend( Tp );
+      if ( ! ok ) _orthantsToErase.push_back( *orthIt );
+      else ++nbok;
+    }
+  if ( nbok != 0 ) // at least one is ok.
+    { // if one is ok, we must remove ko ones from the list of active
+      // orthants.
+      OrthantIterator orthIt = myOrthants.begin();
+      for ( unsigned int i = 0; i < _orthantsToErase.size(); ++i )
+        {
+          while ( *orthIt != _orthantsToErase[ i ] ) ++orthIt;
+          orthIt = myOrthants.erase( orthIt );
+        }
+      return true;
+    }
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+isExtendable( const Point & p ) const
+{
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  for ( OrthantConstIterator it = myOrthants.begin(), itE = myOrthants.end(); 
+        it != itE; ++it )
+    {
+      nbok += myComputers[ *it ].isExtendable( t( *it )( p ) ) ? 1 : 0;
+    }
+  return nbok != 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+extend( TInputIterator it, TInputIterator itE )
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  ASSERT( isValid() );
+  typedef boost::transform_iterator<Transform,TInputIterator,Point,Point> TransformedInputIterator;
+  unsigned int nbok = 0;
+  _orthantsToErase.clear();
+  for ( OrthantConstIterator orthIt = myOrthants.begin(), orthItE = myOrthants.end(); 
+        orthIt != orthItE; ++orthIt )
+    {
+      Dimension orthant = *orthIt;
+      TransformedInputIterator transIt ( it,  t( orthant ) ); 
+      TransformedInputIterator transItE( itE, t( orthant ) ); 
+      bool ok = myComputers[ orthant ].extend( transIt, transItE );
+      if ( ! ok ) _orthantsToErase.push_back( orthant );
+      else ++nbok;
+    }
+  if ( nbok != 0 ) // at least one is ok.
+    { // if one is ok, we must remove ko ones from the list of active
+      // orthants.
+      OrthantIterator orthIt = myOrthants.begin();
+      for ( unsigned int i = 0; i < _orthantsToErase.size(); ++i )
+        {
+          while ( *orthIt != _orthantsToErase[ i ] ) ++orthIt;
+          orthIt = myOrthants.erase( orthIt );
+        }
+      return true;
+    }
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+isExtendable( TInputIterator it, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  ASSERT( isValid() );
+  typedef boost::transform_iterator<Transform,TInputIterator,Point,Point>
+    TransformedInputIterator;
+  unsigned int nbok = 0;
+  for ( OrthantConstIterator orthIt = myOrthants.begin(), orthItE = myOrthants.end(); 
+        orthIt != orthItE; ++orthIt )
+    {
+      Dimension orthant = *orthIt;
+      TransformedInputIterator transIt ( it,  t( orthant ) ); 
+      TransformedInputIterator transItE( itE, t( orthant ) ); 
+      nbok += myComputers[ orthant ].isExtendable( transIt, transItE ) ? 1 : 0;
+    }
+  return nbok != 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Primitive
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+primitive() const
+{
+  IntegerVector3 n;
+  InternalInteger imin, imax;
+  Point p_min, p_max;
+  getCharacteristics( n, imin, imax, p_min, p_max );
+  double ddenom = NumberTraits<InternalInteger>::castToDouble( n[ 2 ] );
+  double min = ( NumberTraits<InternalInteger>::castToDouble( imin ) - 0.5 ) / ddenom;
+  double max = ( NumberTraits<InternalInteger>::castToDouble( imax ) + 0.5 ) / ddenom;
+  typename Space::RealVector normal;
+  normal[ 0 ] = NumberTraits<InternalInteger>::castToDouble( n[ 0 ] ) / ddenom;
+  normal[ 1 ] = NumberTraits<InternalInteger>::castToDouble( n[ 1 ] ) / ddenom;
+  normal[ 2 ] = NumberTraits<InternalInteger>::castToDouble( n[ 2 ] ) / ddenom;
+  return Primitive( min, normal, max-min );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename Vector3D>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+getNormal( Vector3D & normal ) const
+{
+  myComputers[ active() ].getNormal( normal );
+  invT( active() ).transform( normal );
+}
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename Vector3D>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+getUnitNormal( Vector3D & normal ) const
+{
+  myComputers[ active() ].getNormal( normal );
+  invT( active() ).transform( normal );
+  normal /= sqrt( normal[0]*normal[0]
+                  +normal[1]*normal[1]
+                  +normal[2]*normal[2] );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+getBounds( double & min, double & max ) const
+{
+  IntegerVector3 n;
+  InternalInteger imin, imax;
+  Point p_min, p_max;
+  getCharacteristics( n, imin, imax, p_min, p_max );
+  double ddenom = NumberTraits<InternalInteger>::castToDouble( n[ 2 ] );
+  min = ( NumberTraits<InternalInteger>::castToDouble( imin ) - 0.5 ) / ddenom;
+  max = ( NumberTraits<InternalInteger>::castToDouble( imax ) + 0.5 ) / ddenom;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Point
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+minimalPoint() const
+{
+  IntegerVector3 n;
+  InternalInteger imin, imax;
+  Point p_min, p_max;
+  getCharacteristics( n, imin, imax, p_min, p_max );
+  return p_min;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Point
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+maximalPoint() const
+{
+  IntegerVector3 n;
+  InternalInteger imin, imax;
+  Point p_min, p_max;
+  getCharacteristics( n, imin, imax, p_min, p_max );
+  return p_max;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+getCharacteristics( IntegerVector3 & n, 
+                    InternalInteger & imin, InternalInteger & imax, 
+                    Point & p_min, Point & p_max ) const
+{
+  // This rather complex method is necessary to guarantee that there
+  // are no numeric error due to bad rounding when casting to double.
+  p_min = invT( active() )( myComputers[ active() ].minimalPoint() );
+  p_max = invT( active() )( myComputers[ active() ].maximalPoint() );
+  // min and max may be swapped because of the transform.
+  n = myComputers[ active() ].exactNormal();
+  invT( active() ).transform( n );
+  if ( n[ 2 ] < NumberTraits<InternalInteger>::ZERO )
+    { n = -n; }
+  imin =
+    ( ( n[ 0 ] * InternalInteger( p_min[ 0 ] ) )
+      + ( n[ 1 ] * InternalInteger( p_min[ 1 ] ) )
+      + ( n[ 2 ] * InternalInteger( p_min[ 2 ] ) ) );
+  imax = 
+    ( ( n[ 0 ] * InternalInteger( p_max[ 0 ] ) ) 
+      + ( n[ 1 ] * InternalInteger( p_max[ 1 ] ) ) 
+      + ( n[ 2 ] * InternalInteger( p_max[ 2 ] ) ) );
+  if ( imax < imin ) 
+    {
+      std::swap( imin, imax );
+      std::swap( p_min, p_max );
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[COBAGenericStandardPlaneComputer";
+  for ( OrthantConstIterator orthIt = myOrthants.begin(), orthItE = myOrthants.end(); 
+        orthIt != orthItE; ++orthIt )
+    out << " " << myComputers[ *orthIt ];
+  out << " ]"; 
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::isValid() const
+{
+  return myComputers[ active() ].isValid();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Internals
+///////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Transform
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+t( Dimension orthant )
+{
+  ASSERT( orthant < 4 );
+  return myTransforms[ orthant ];
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::Transform
+DGtal::COBAGenericStandardPlaneComputer<TSpace, TInternalInteger>::
+invT( Dimension orthant )
+{
+  ASSERT( orthant < 4 );
+  return myTransforms[ orthant ^ 0x3 ];
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, typename TInternalInteger>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const COBAGenericStandardPlaneComputer<TSpace, TInternalInteger> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

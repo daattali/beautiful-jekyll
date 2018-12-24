@@ -1,0 +1,116 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+   
+@page moduleIntegerComputations  Integer computations
+
+@writers Jacques-Olivier Lachaud
+
+Part of the \ref packageArithmetic.
+
+This module gathers several functions to make computations with
+integers (either basic types or big integer representations). The main
+part of the module is the class IntegerComputer, which holds methods
+but also data to perform computations efficiently.
+
+[TOC]
+
+
+\section dgtal_integer_computations_sec1 Integer types and standard arithmetic operations
+
+We use integer types DGtal::int32_t, DGtal::int64_t, and
+DGtal::BigInteger (integers of arbitrary size). The last type is
+available only if DGtal was compiled with \c cmake \c -DWITH_GMP=true
+\c ...
+
+You may use any of these types or new ones, provided they satisfy the
+concepts CInteger, as well as its semantic. See also \ref
+moduleNumber.
+
+These types provide the standard arithmetic operators +, -, *, /, %,
+arithmetic comparisons <, <=, >=, >, ==, !=, assignements =, +=, *=,
+-=, /=, %=.
+
+\section dgtal_integer_computations_sec2 More elaborate computations with integers
+
+The templated class IntegerComputer is parameterized by a type that is
+a model of CInteger. Most -- but not all -- of the methods of this
+class require the class to be instantiated. Indeed, it allows the
+instantiation of mutable integer data members, which are then used in
+all intermediate computations. This is especially useful with GMP big
+integers, where memory management takes a lot of time. The idea is
+thus to allocate once and for all these variables.
+
+We list below the main methods:
+
+- static trivial ones: IntegerComputer::isZero,
+  IntegerComputer::isNotZero, IntegerComputer::isPositive,
+  IntegerComputer::isNegative, IntegerComputer::isPositiveOrZero,
+  IntegerComputer::isNegativeOrZero, whose meaning is obvious.
+
+- static min and max methods: IntegerComputer::min,
+  IntegerComputer::max for 2 and 3 arguments.
+
+- euclidean division and remainder: IntegerComputer::getEuclideanDiv.
+
+- floor and ceil division (takes into account the signs of integers):
+  IntegerComputer::floorDiv, IntegerComputer::ceilDiv,
+  IntegerComputer::getFloorCeilDiv
+
+- static greatest common divisor IntegerComputer::staticGcd (for an
+  exceptionnal computation), or non-static greatest common divisor
+  IntegerComputer::gcd and IntegerComputer::getGcd (for many gcd computations).
+
+- continued fraction development: two versions of
+  IntegerComputer::getCFrac(), one where quotients are outputed in a
+  vector, the other where quotients are outputed through a templated
+  output iterator.
+
+- convergents of a fraction specified by its quotients: IntegerComputer::convergents()
+
+- defines the inner types IntegerComputer::Vector2I and
+  IntegerComputer::Vector3I as PointVector<2,Integer> and
+  PointVector<3,Integer> for representing 2D and 3D integer vectors.
+
+- methods for 2D integer vectors: IntegerComputer::reduce() for making
+  the vector irreducible, cross product between two vectors with
+  IntegerComputer::crossProduct() and
+  IntegerComputer::getCrossProduct(), dot product between two vectors
+  with IntegerComputer::dotProduct() and
+  IntegerComputer::getDotProduct()
+
+- extended Euclid algorithm with IntegerComputer::extendedEuclid. Used
+  for instance to compute modular inverses or Bézout vectors. The
+  number of iterations is below \f$ \log(\max(a,b)) / \log(\phi) \f$
+  by Lamé's theorem, where \f$ \phi=\frac{1+\sqrt{5}}{2} \f$ is the
+  gold number. The complexity is hence \f$ O(\log(\max(a,b))) \f$ for
+  a computational model where standard integer operations are O(1).
+
+@code
+// computes the vector X solution to a X_0 + b X_1 = c.
+// when c is a multiple of gcd( a, b ).
+typedef IntegerComputer<int32_t> IC;
+IC ic;
+IC::Vector2I X = ic.extendedEuclid( a, b, c );
+bool ok = a * X[ 0 ] + b * X[ 1 ] == c; // should be true.
+@endcode
+
+- specific methods for computing integer intersection of half-planes:
+  IntegerComputer::getCoefficientIntersection and
+  IntegerComputer::getValidBezout. These methods are notably used for
+  computing convex integer polygons by intersecting half-spaces (see
+  class ConvexIntegerPolygon).
+
+- methods for 3D integer vectors: IntegerComputer::reduce() for making
+  the vector irreducible, dot product between two vectors
+  with IntegerComputer::dotProduct() and
+  IntegerComputer::getDotProduct()
+
+
+*/
+
+}

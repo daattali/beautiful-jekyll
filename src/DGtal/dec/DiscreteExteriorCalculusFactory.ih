@@ -1,0 +1,339 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DiscreteExteriorCalculusFactory.ih
+ * @author Pierre Gueth (\c pierre.gueth@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2015/05/04
+ *
+ * Implementation of inline methods for DiscreteExteriorCalculusFactory
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+template <typename TLinearAlgebraBackend, typename TInteger>
+template <typename TDigitalSet>
+DGtal::DiscreteExteriorCalculus<TDigitalSet::Point::dimension, TDigitalSet::Point::dimension, TLinearAlgebraBackend, TInteger>
+DGtal::DiscreteExteriorCalculusFactory<TLinearAlgebraBackend, TInteger>::createFromDigitalSet(const TDigitalSet& _set, const bool add_border)
+{
+    BOOST_CONCEPT_ASSERT(( DGtal::concepts::CDigitalSet<TDigitalSet> ));
+
+    typedef DGtal::DiscreteExteriorCalculus<TDigitalSet::Point::dimension, TDigitalSet::Point::dimension, TLinearAlgebraBackend, TInteger> Calculus;
+    typedef typename Calculus::Cell Cell;
+    typedef typename Calculus::Scalar Scalar;
+    typedef typename Calculus::Index Index;
+    typedef typename Calculus::Point Point;
+    typedef typename Calculus::Property Property;
+
+    Calculus calculus;
+    calculus.template initKSpace<typename TDigitalSet::Domain>(_set.domain());
+
+    // compute raw cell size
+    typedef std::map<Cell, Scalar> Accum;
+    Accum cell_size_accum;
+    for (typename TDigitalSet::ConstIterator ri=_set.begin(), rie=_set.end(); ri!=rie; ri++)
+    {
+        const Point& point = *ri;
+        const Cell cell_point = calculus.myKSpace.uSpel(point);
+
+        typedef DGtal::SpaceND<Calculus::dimensionAmbient, TInteger> Space;
+        typedef DGtal::HyperRectDomain<Space> Neighborbood;
+        const Point cell_coords = calculus.myKSpace.uKCoords(cell_point);
+        const Neighborbood neighborhood(cell_coords-Point::diagonal(1), cell_coords+Point::diagonal(1));
+        for (typename Neighborbood::ConstIterator pi=neighborhood.begin(), pie=neighborhood.end(); pi!=pie; pi++)
+        {
+            const Cell cell = calculus.myKSpace.uCell(*pi);
+            if (cell_size_accum.find(cell) == cell_size_accum.end()) cell_size_accum[cell] = 0;
+            cell_size_accum[cell] += 1;
+        }
+    }
+
+    // normalize cell size and set flipped flag
+    for (typename Accum::const_iterator csi=cell_size_accum.begin(), csie=cell_size_accum.end(); csie!=csi; csi++)
+    {
+        const Cell& cell = csi->first;
+        const DGtal::Dimension dual_dim = Calculus::dimensionEmbedded-calculus.myKSpace.uDim(cell);
+        const Scalar factor = pow(.5, dual_dim);
+
+        const Scalar normalized_size = csi->second * factor;
+        ASSERT(normalized_size > 0 && normalized_size <= 1);
+
+        if (!add_border && normalized_size < 1) continue;
+
+        Property property;
+        property.primal_size = 1;
+        property.dual_size = normalized_size;
+        property.index = std::numeric_limits<Index>::max();
+        property.flipped = false;
+
+        calculus.myCellProperties[cell] = property;
+    }
+
+    calculus.myIndexesNeedUpdate = true;
+    calculus.updateIndexes();
+
+    return calculus;
+}
+
+template <typename TLinearAlgebraBackend, typename TInteger>
+template <typename KSpace, typename CellsSet>
+void
+DGtal::DiscreteExteriorCalculusFactory<TLinearAlgebraBackend, TInteger>::insertAllLowerIncidentCells(const KSpace& kspace, const typename CellsSet::value_type& cell, CellsSet& cells_set)
+{
+    typedef typename KSpace::Cells Cells;
+
+    cells_set.insert(cell);
+
+    const Cells border = kspace.uLowerIncident(cell);
+    for (typename Cells::ConstIterator bi=border.begin(), be=border.end(); bi!=be; bi++)
+        insertAllLowerIncidentCells(kspace, *bi, cells_set);
+}
+
+template <typename TLinearAlgebraBackend, typename TInteger>
+template <typename KSpace, typename CellsAccum>
+void
+DGtal::DiscreteExteriorCalculusFactory<TLinearAlgebraBackend, TInteger>::accumulateAllLowerIncidentCells(const KSpace& kspace, const typename CellsAccum::key_type& cell, CellsAccum& cells_accum)
+{
+    typedef typename KSpace::Cells Cells;
+
+    if (cells_accum.find(cell) == cells_accum.end()) cells_accum[cell] = 0;
+    cells_accum[cell]++;
+
+    const Cells border = kspace.uLowerIncident(cell);
+    for (typename Cells::ConstIterator bi=border.begin(), be=border.end(); bi!=be; bi++)
+        accumulateAllLowerIncidentCells(kspace, *bi, cells_accum);
+}
+
+template <typename TLinearAlgebraBackend, typename TInteger>
+template <typename KSpace, typename CellsAccum, typename MeasureAccum>
+void
+DGtal::DiscreteExteriorCalculusFactory<TLinearAlgebraBackend, TInteger>::accumulateAllLowerIncidentCells(const KSpace& kspace, const typename CellsAccum::key_type& cell, CellsAccum& cells_accum, 
+    CellsAccum& local_accum, MeasureAccum& cell_to_measure, const double measure)
+{
+    typedef typename KSpace::Cells Cells;
+
+    if (cells_accum.find(cell) == cells_accum.end()) cells_accum[cell] = 0;
+    cells_accum[cell]++;
+
+    if( kspace.uDim( cell ) == 0 && local_accum.find( cell ) == local_accum.end())
+    {
+        local_accum[cell] = 0;
+        if( cell_to_measure.find(cell) == cell_to_measure.end() ) cell_to_measure[cell] = 0.;
+        cell_to_measure[cell] += measure;
+    }
+
+    const Cells border = kspace.uLowerIncident(cell);
+    for (typename Cells::ConstIterator bi=border.begin(), be=border.end(); bi!=be; bi++)
+        accumulateAllLowerIncidentCells(kspace, *bi, cells_accum, local_accum, cell_to_measure, measure);
+}
+
+template <typename TLinearAlgebraBackend, typename TInteger>
+template <DGtal::Dimension dimEmbedded, typename TNSCellConstIterator>
+DGtal::DiscreteExteriorCalculus<dimEmbedded, TNSCellConstIterator::value_type::Point::dimension, TLinearAlgebraBackend, TInteger>
+DGtal::DiscreteExteriorCalculusFactory<TLinearAlgebraBackend, TInteger>::createFromNSCells(const TNSCellConstIterator& begin, const TNSCellConstIterator& end, const bool add_border)
+{
+    BOOST_CONCEPT_ASSERT(( boost_concepts::SinglePassIteratorConcept<TNSCellConstIterator> ));
+    BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<TNSCellConstIterator> ));
+
+    typedef DGtal::DiscreteExteriorCalculus<dimEmbedded, TNSCellConstIterator::value_type::Point::dimension, TLinearAlgebraBackend, TInteger> Calculus;
+    typedef typename Calculus::Cell Cell;
+    typedef typename Calculus::SCell SCell;
+    typedef typename Calculus::Scalar Scalar;
+    typedef typename Calculus::KSpace KSpace;
+    typedef typename KSpace::Cells Cells;
+
+    BOOST_STATIC_ASSERT(( boost::is_convertible<typename TNSCellConstIterator::value_type, const SCell>::value ));
+
+    Calculus calculus;
+
+    // compute dimEmbedded-1 cells border
+    typedef std::map<Cell, int> CellsAccum;
+    CellsAccum border_accum;
+    CellsAccum lower_accum;
+    for (TNSCellConstIterator ci=begin; ci!=end; ++ci)
+    {
+        const SCell cell_signed = *ci;
+        const Dimension cell_dim = calculus.myKSpace.sDim(cell_signed);
+        ASSERT_MSG( cell_dim == dimEmbedded, "wrong n-cell dimension" );
+        boost::ignore_unused_variable_warning(cell_dim);
+
+        calculus.insertSCell(cell_signed);
+
+        const Cell cell = calculus.myKSpace.unsigns(cell_signed);
+        const Cells border = calculus.myKSpace.uLowerIncident(cell);
+        for (typename Cells::ConstIterator bi=border.begin(), be=border.end(); bi!=be; bi++)
+        {
+            const Cell cell_border = *bi;
+            if (!add_border)
+            {
+                if (border_accum.find(cell_border) == border_accum.end()) border_accum[cell_border] = 0;
+                border_accum[cell_border]++;
+            }
+            accumulateAllLowerIncidentCells(calculus.myKSpace, cell_border, lower_accum);
+        }
+    }
+    ASSERT( !add_border || border_accum.empty() );
+
+    typedef std::set<Cell> CellsSet;
+    CellsSet border;
+    for (typename CellsAccum::const_iterator bai=border_accum.begin(), bae=border_accum.end(); bai!=bae; bai++)
+    {
+        ASSERT( bai->second > 0 );
+        //ASSERT( bai->second < 3 );
+        if (bai->second >= 2) continue;
+        insertAllLowerIncidentCells(calculus.myKSpace, bai->first, border);
+    }
+    ASSERT( !add_border || border.empty() );
+
+    // normalize cell size and set flipped flag
+    for (typename CellsAccum::const_iterator lai=lower_accum.begin(), lae=lower_accum.end(); lai!=lae; ++lai)
+    {
+        const Cell cell = lai->first;
+        if (border.find(cell) != border.end()) continue;
+
+        const DGtal::Dimension dual_dim = Calculus::dimensionEmbedded-calculus.myKSpace.uDim(cell);
+        ASSERT( dual_dim > 0 );
+        ASSERT( dual_dim <= Calculus::dimensionEmbedded );
+
+        const Scalar factor = pow(.5, 2*dual_dim-1);
+        const Scalar dual_size = lai->second * factor;
+        ASSERT( dual_size > 0 );
+
+        const SCell cell_signed = calculus.myKSpace.signs(cell, KSpace::POS);
+        calculus.insertSCell(cell_signed, 1, dual_size);
+    }
+
+    calculus.updateIndexes();
+
+    return calculus;
+}
+
+template <typename TLinearAlgebraBackend, typename TInteger>
+template <DGtal::Dimension dimEmbedded, typename TNSCellConstIterator, typename TSCellMeasureFunctor>
+DGtal::DiscreteExteriorCalculus<dimEmbedded, TNSCellConstIterator::value_type::Point::dimension, TLinearAlgebraBackend, TInteger>
+DGtal::DiscreteExteriorCalculusFactory<TLinearAlgebraBackend, TInteger>::createFromNSCells(const TNSCellConstIterator& begin, const TNSCellConstIterator& end, 
+    const TSCellMeasureFunctor& normalFunctor, const double h, const bool add_border)
+{
+    BOOST_CONCEPT_ASSERT(( boost_concepts::SinglePassIteratorConcept<TNSCellConstIterator> ));
+    BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<TNSCellConstIterator> ));
+
+    typedef DGtal::DiscreteExteriorCalculus<dimEmbedded, TNSCellConstIterator::value_type::Point::dimension, TLinearAlgebraBackend, TInteger> Calculus;
+    typedef typename Calculus::Cell Cell;
+    typedef typename Calculus::SCell SCell;
+    typedef typename Calculus::Scalar Scalar;
+    typedef typename Calculus::KSpace KSpace;
+    typedef typename KSpace::Cells Cells;
+
+    BOOST_STATIC_ASSERT(( boost::is_convertible<typename TNSCellConstIterator::value_type, const SCell>::value ));
+
+    typedef typename TSCellMeasureFunctor::Quantity Quantity;
+    std::vector<Quantity> measures;
+    std::back_insert_iterator< std::vector<Quantity> > back_insert( measures );
+    normalFunctor.eval(begin, end, back_insert);
+    typename std::vector<Quantity>::const_iterator measure_it = measures.begin();
+
+    Calculus calculus;
+    // compute dimEmbedded-1 cells border
+    std::map<Cell, double> cell_to_measure;
+    double primal_measure_accum = 0., dual_measure_accum = 0.;
+
+    typedef std::map<Cell, int> CellsAccum;
+    CellsAccum border_accum;
+    CellsAccum lower_accum;
+    for (TNSCellConstIterator ci=begin; ci!=end; ++ci)
+    {
+        const SCell cell_signed = *ci;
+        const Dimension cell_dim = calculus.myKSpace.sDim(cell_signed);
+        ASSERT_MSG( cell_dim == dimEmbedded, "wrong n-cell dimension" );
+        boost::ignore_unused_variable_warning(cell_dim);
+
+        const int orth_dir = calculus.myKSpace.sOrthDir( cell_signed );
+        const double measure = pow(h, dimEmbedded) * fabs( (*measure_it)[orth_dir] );
+        primal_measure_accum += measure;
+        ++measure_it;
+
+        calculus.insertSCell(cell_signed, measure, 1.);
+
+        const Cell cell = calculus.myKSpace.unsigns(cell_signed);
+        const Cells border = calculus.myKSpace.uLowerIncident(cell);
+        CellsAccum local_accum;
+        for (typename Cells::ConstIterator bi=border.begin(), be=border.end(); bi!=be; bi++)
+        {
+            const Cell cell_border = *bi;
+            if (!add_border)
+            {
+                if (border_accum.find(cell_border) == border_accum.end()) border_accum[cell_border] = 0;
+                border_accum[cell_border]++;
+            }
+            accumulateAllLowerIncidentCells(calculus.myKSpace, cell_border, lower_accum, local_accum, cell_to_measure, measure / 4.);
+        }
+    }
+    ASSERT( !add_border || border_accum.empty() );
+
+    typedef std::set<Cell> CellsSet;
+    CellsSet border;
+    for (typename CellsAccum::const_iterator bai=border_accum.begin(), bae=border_accum.end(); bai!=bae; bai++)
+    {
+        ASSERT( bai->second > 0 );
+        //ASSERT( bai->second < 3 );
+        if (bai->second >= 2) continue;
+        insertAllLowerIncidentCells(calculus.myKSpace, bai->first, border);
+    }
+    ASSERT( !add_border || border.empty() );
+
+    // normalize cell size and set flipped flag
+    for (typename CellsAccum::const_iterator lai=lower_accum.begin(), lae=lower_accum.end(); lai!=lae; ++lai)
+    {
+        const Cell cell = lai->first;
+        if (border.find(cell) != border.end()) continue;
+        const SCell cell_signed = calculus.myKSpace.signs(cell, KSpace::POS);
+
+        if( cell_to_measure.find( cell ) != cell_to_measure.end() )
+        {
+            const double dual_measure = cell_to_measure.find( cell )->second;
+            if(cell_to_measure.find( cell ) == cell_to_measure.end()) trace.warning() << "HOUUU" << std::endl;
+            dual_measure_accum += dual_measure;
+            calculus.insertSCell(cell_signed, 1, dual_measure);
+            continue;
+        }
+
+        const DGtal::Dimension dual_dim = Calculus::dimensionEmbedded-calculus.myKSpace.uDim(cell);
+        ASSERT( dual_dim > 0 );
+        ASSERT( dual_dim <= Calculus::dimensionEmbedded );
+
+        const Scalar factor = pow(.5, 2*dual_dim-1);
+        const Scalar dual_size = lai->second * factor;
+        ASSERT( dual_size > 0 );
+
+        calculus.insertSCell(cell_signed, 1, dual_size);
+    }
+
+    //ASSERT( primal_measure_accum == dual_measure_accum );
+
+    calculus.updateIndexes();
+
+    return calculus;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

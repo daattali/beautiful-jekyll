@@ -1,0 +1,164 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file TwoStepLocalLengthEstimator.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/06/27
+ *
+ * Implementation of inline methods defined in TwoStepLocalLengthEstimator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::TwoStepLocalLengthEstimator<T>::~TwoStepLocalLengthEstimator()
+{
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+
+template <typename T>
+inline
+void
+DGtal::TwoStepLocalLengthEstimator<T>::init(const double h, 
+					    const ConstIterator& itb, 
+					    const ConstIterator& ite, 
+					    const bool& )
+{
+  myH = h;
+  myBeginIt = itb;
+  myEndIt = ite;
+  myIsInitBefore = true;
+}
+
+template <typename T>
+inline
+typename DGtal::TwoStepLocalLengthEstimator<T>::Quantity
+DGtal::TwoStepLocalLengthEstimator<T>::eval() const
+{
+  ASSERT(myH > 0);
+  ASSERT(myIsInitBefore);
+  ASSERT(myBeginIt != myEndIt);
+
+  unsigned int nbDirect=0;
+  unsigned int nbDiag=0;
+
+  ConstIterator i = myBeginIt, ii = myBeginIt;
+  ++ii;
+ 
+  while (( i != myEndIt) && (ii != myEndIt))
+    {
+      if (((*i).second).dot((*ii).second) == 0)
+	nbDiag++;
+      else
+	nbDirect+=2;
+
+      ++i; 
+      if (i == myEndIt) 
+	continue;
+      ++i;
+
+      ++ii; 
+      if (ii == myEndIt) 
+	continue;
+      ++ii;
+    }   
+  
+  if ( i!= myEndIt)
+    nbDirect ++;
+  
+  return (nbDiag*myWeightDiagonal + nbDirect*myWeightDirect)*myH;
+}
+
+
+
+
+
+
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::TwoStepLocalLengthEstimator<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[TwoStepLocalLengthEstimator]";
+  if (myIsInitBefore) 
+    out <<" myH="<<myH;
+  else
+    out<< " not initialized";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::TwoStepLocalLengthEstimator<T>::isValid() const
+{
+  return myIsInitBefore;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const TwoStepLocalLengthEstimator<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

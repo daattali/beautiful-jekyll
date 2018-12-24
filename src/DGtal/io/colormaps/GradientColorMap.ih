@@ -1,0 +1,316 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file GradientColorMap.ih
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @date 2010/07/19
+ *
+ * Implementation of inline methods defined in GradientColorMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cmath>
+#include <vector>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template < typename PValue,
+     int PDefaultPreset,
+     int PDefaultFirstColor,
+     int PDefaultLastColor >
+inline
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::GradientColorMap
+( const PValue & minV,
+  const PValue & maxV,
+  const ColorGradientPreset preset,
+  const Color firstColor,
+  const Color lastColor )
+  : myMin( minV ), myMax( maxV )
+{
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+  switch ( preset ) {
+  case CMAP_GRAYSCALE:
+    myColors.push_back( Color::Black );
+    myColors.push_back( Color::White );
+    break;
+  case CMAP_SPRING:
+    myColors.push_back( Color( 255, 0, 255 ));
+    myColors.push_back( Color( 255, 255, 0 ));
+    break;
+  case CMAP_SUMMER:
+    myColors.push_back( Color( 0, 132, 100 ));
+    myColors.push_back( Color( 255, 255, 100 ));
+    break;
+  case CMAP_AUTUMN:
+    myColors.push_back( Color( 255, 0, 0 ));
+    myColors.push_back( Color( 255, 255, 0));
+    break;
+  case CMAP_WINTER:
+    myColors.push_back( Color( 0, 0, 255 ));
+    myColors.push_back( Color( 0, 255, 132 ));
+    break;
+  case CMAP_COOL:
+    myColors.push_back( Color( 0, 255, 255 ));
+    myColors.push_back( Color( 255, 0, 255 ));
+    break;
+  case CMAP_COPPER:
+    myColors.push_back( Color( 0, 0, 0 ));
+    myColors.push_back( Color( 255, 198, 123 ));
+    break;
+  case CMAP_HOT:
+    myColors.push_back( Color::Black );
+    myColors.push_back( Color::Red );
+    myColors.push_back( Color( 255, 140, 0 ) );
+    myColors.push_back( Color::Yellow );
+    myColors.push_back( Color::White );
+    break;
+  case CMAP_JET:
+    myColors.push_back( Color::Blue );
+    myColors.push_back( Color::Cyan );
+    myColors.push_back( Color::Yellow );
+    myColors.push_back( Color( 255, 140, 0 ) );
+    myColors.push_back( Color::Red );
+    myColors.push_back( Color( 132, 0, 0 ) );
+    break;
+  case CMAP_CUSTOM:
+    if ( firstColor != Color::None
+   && lastColor != Color::None ) {
+      myColors.push_back( firstColor );
+      myColors.push_back( lastColor );
+    }
+    break;
+  }
+}
+
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::GradientColorMap
+( const GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor> & other )
+  : myMin( other.myMin ), myMax( other.myMax ), myColors( other.myColors )
+{
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::~GradientColorMap()
+{
+}
+
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor> &
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::operator=
+( const DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor> & other )
+{
+  if ( &other != this ) {
+    myMin = other.myMin;
+    myMax = other.myMax;
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+    myColors = other.myColors;
+  }
+  return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+template<typename PValue,
+   int PDefaultPreset,
+   int PDefaultFirstColor,
+   int PDefaultLastColor >
+inline
+void
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::addColor
+( const Color & color )
+{
+  myColors.push_back( color );
+}
+
+template<typename PValue,
+   int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+void
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::clearColors()
+{
+  myColors.clear();
+}
+
+template<typename PValue,
+   int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+const PValue &
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::min() const
+{
+  return myMin;
+}
+
+template<typename PValue,
+   int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+const PValue &
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::max() const
+{
+  return myMax;
+}
+
+template<typename PValue,
+   int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+DGtal::Color
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::operator()
+  ( const Value & value ) const
+{
+  return GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::getColor( myColors,
+                           myMin,
+                           myMax,
+                           value );
+}
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+void
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::selfDisplay
+( std::ostream & out ) const
+{
+  out << "[GradientColorMap "
+      << " min=" << myMin
+      << " max=" << myMax;
+  std::vector<Color>::iterator it = myColors.begin();
+  while ( it != myColors.end() ) {
+    out << " RGB("
+  << it->red() << ","
+  << it->green() << ","
+  << it->blue() << ") ";
+    ++it;
+  }
+  out << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+bool
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::isValid() const
+{
+    return true;
+}
+
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+DGtal::Color
+DGtal::GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor>::getColor
+( const std::vector<Color> & colors,
+  const Value & min,
+  const Value & max,
+  Value value )
+{
+  ASSERT_MSG(min < max, "Max should be strictly greather than Min in a colormap.");
+  if ( colors.size() < 2 )
+    return DGtal::Color::None;
+  if ( std::is_floating_point<PValue>::value
+       && ! ( std::isfinite( value ) || std::isinf( value ) ) )
+    return DGtal::Color::Black;
+  if ( value < min   ) value = min;
+  if ( max   < value ) value = max;
+  double scale = static_cast<double>( value - min ) / (max - min);
+  const int intervals = (const int)colors.size() - 1;
+  int upper_index = static_cast<int>( ceil( intervals * scale ) );
+  if ( !upper_index ) // Special case when value == min.
+    upper_index = 1;
+  const Color & firstColor = colors[ upper_index - 1 ];
+  const Color & lastColor = colors[ upper_index ];
+  scale = ( scale * intervals ) - (upper_index - 1);
+
+  const unsigned char red = static_cast<unsigned char>( firstColor.red() +
+              scale * ( lastColor.red() -
+                  firstColor.red() ));
+  const unsigned char green = static_cast<unsigned char>( firstColor.green() +
+                scale * ( lastColor.green() -
+                    firstColor.green() ));
+  const unsigned char blue = static_cast<unsigned char>( firstColor.blue() +
+               scale * ( lastColor.blue() -
+                   firstColor.blue() ));
+  return DGtal::Color( red, green, blue );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename PValue,
+    int PDefaultPreset,
+    int PDefaultFirstColor,
+    int PDefaultLastColor >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+      const GradientColorMap<PValue,PDefaultPreset,PDefaultFirstColor,PDefaultLastColor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - private :

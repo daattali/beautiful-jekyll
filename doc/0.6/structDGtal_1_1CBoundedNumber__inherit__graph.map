@@ -1,8 +1,0 @@
-<map id="DGtal::CBoundedNumber&lt; T &gt;" name="DGtal::CBoundedNumber&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal." alt="" coords="581,87,749,118"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible, assignable and equality comparable." alt="" coords="338,59,486,90"/>
-<area shape="rect" id="node6" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.boost.org/doc/html/DefaultConstructible.html." alt="" coords="5,5,243,35"/>
-<area shape="rect" id="node8" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html." alt="" coords="37,59,211,90"/>
-<area shape="rect" id="node10" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.boost.org/doc/html/EqualityComparable.html." alt="" coords="7,114,241,145"/>
-<area shape="rect" id="node12" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.boost.org/doc/html/LessThanComparable.html." alt="" coords="291,114,533,145"/>
-</map>

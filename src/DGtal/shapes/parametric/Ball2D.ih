@@ -1,0 +1,186 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Ball2D.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/04/12
+ *
+ * Implementation of inline methods defined in Ball2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::Ball2D<T>::~Ball2D()
+{
+}
+
+template <typename T>
+inline
+DGtal::Ball2D<T>::Ball2D(const double x0, const double y0, const double radius):
+  myRadius(radius), myCenter(x0,y0) 
+{}
+
+
+template <typename T>
+inline
+DGtal::Ball2D<T>::Ball2D(const RealPoint2D &aPoint, const double radius):
+  myRadius(radius), myCenter(aPoint) 
+{}
+
+template <typename T>
+inline
+DGtal::Ball2D<T>::Ball2D(const Point &aPoint, const double radius):
+  myRadius(radius)
+{
+  myCenter = aPoint;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// ------------- Implementation of 'StarShaped' services ------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return the angle parameter between 0 and 2*Pi corresponding to
+ * this point for the shape.
+ */
+template <typename T>
+inline
+double
+DGtal::Ball2D<T>::parameter( const RealPoint2D & pp ) const
+{
+  RealPoint2D p( pp );
+  p -= myCenter;
+
+  double angle = atan2( p[1], p[0] );
+  angle = ( angle < 0.0 ) ? angle + 2*M_PI : angle;
+
+  return angle;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x(t),y(t)) which is the position on the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Ball2D<T>::RealPoint2D 
+DGtal::Ball2D<T>::x( double t ) const
+{
+  RealPoint2D c( myRadius*cos(t), myRadius*sin(t) );
+  c += myCenter;
+  return c;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x'(t),y'(t)) which is the tangent to the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Ball2D<T>::RealVector2D 
+DGtal::Ball2D<T>::xp( const double t ) const
+{
+  RealVector2D c( -myRadius*sin(t), myRadius*cos(t) );
+  return c;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x''(t),y''(t)).
+ */
+template <typename T>
+inline
+typename DGtal::Ball2D<T>::RealVector2D
+DGtal::Ball2D<T>::xpp( const double t ) const
+{
+  RealVector2D c( -myRadius*cos(t), -myRadius*sin(t) );
+  return c;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::Ball2D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Ball2D] center= "<<myCenter<<" radius="<<myRadius;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::Ball2D<T>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const Ball2D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,362 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DistanceBreadthFirstVisitor.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2012/11/02
+ *
+ * Implementation of inline methods defined in DistanceBreadthFirstVisitor.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+~DistanceBreadthFirstVisitor()
+{
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+DistanceBreadthFirstVisitor( const DistanceBreadthFirstVisitor & other )
+  : myGraph( other.myGraph ), myDistance( other.myDistance ),
+    myMarkedVertices( other.myMarkedVertices ), myQueue( other.myQueue )
+{
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+DistanceBreadthFirstVisitor( ConstAlias<Graph> g,
+                 const VertexFunctor & distance,
+                 const Vertex & p )
+  : myGraph( &g ), myDistance( distance )
+{
+  myMarkedVertices.insert( p );
+  myQueue.push( Node( p, myDistance( p ) ) );
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+template <typename VertexIterator>
+inline
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+DistanceBreadthFirstVisitor( const Graph & g,
+                 const VertexFunctor & distance,
+                 VertexIterator b, VertexIterator e )
+  : myGraph( &g ), myDistance( distance )
+{
+  for ( ; b != e; ++b )
+    {
+      myMarkedVertices.insert( *b );
+      myQueue.push( Node( *b, myDistance( *b ) ) );
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+const typename DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::Graph & 
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+graph() const
+{
+  return *myGraph;
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+bool
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+finished() const
+{
+  return myQueue.empty();
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+const typename DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::Node & 
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+current() const
+{
+  ASSERT( ! finished() );
+  return myQueue.top();
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+template < typename TBackInsertionSequence >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+getCurrentLayer( TBackInsertionSequence & layer )
+{
+  BOOST_CONCEPT_ASSERT(( boost::BackInsertionSequence< TBackInsertionSequence > ));
+  ASSERT( ! finished() );
+  layer.clear();
+  Node node = current();
+  do
+    {
+      layer.push_back( current() );
+      myQueue.pop();
+    } 
+  while ( ( ! finished() ) && ( node.second == current().second ) );
+  for ( typename TBackInsertionSequence::const_iterator it = layer.begin(),
+          itE = layer.end();
+        it != itE; ++it )
+    {
+      myQueue.push( *it );
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+ignore()
+{
+  ASSERT( ! finished() );
+  myQueue.pop();
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+pushAgain( const Node & node )
+{
+  ASSERT( myMarkedVertices.find( node.first ) != myMarkedVertices.end() );
+  myQueue.push( node );
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+ignoreLayer()
+{
+  ASSERT( ! finished() );
+  Node node = current();
+  do
+    {
+      ignore();
+    } 
+  while ( ! finished() && ( node.second == current().second ) );
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+expand()
+{
+  ASSERT( ! finished() );
+  Node node = myQueue.top();
+  myQueue.pop();
+  Vertex vtx;
+  VertexList tmp;
+  tmp.reserve( myGraph->bestCapacity() );
+  std::back_insert_iterator<VertexList> write_it = std::back_inserter( tmp );
+  myGraph->writeNeighbors( write_it, node.first );
+  for ( typename VertexList::const_iterator it = tmp.begin(), 
+          it_end = tmp.end(); it != it_end; ++it )
+    {
+      vtx = *it;
+      typename MarkSet::const_iterator mark_it = myMarkedVertices.find( vtx );
+      if ( mark_it == myMarkedVertices.end() )
+        {
+          myMarkedVertices.insert( vtx );
+          myQueue.push( Node( vtx, myDistance( vtx ) ) );
+        }
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+expandLayer()
+{
+  ASSERT( ! finished() );
+  Node node = current();
+  do
+    {
+      expand();
+    } 
+  while ( ! finished() && ( node.second == current().second ) );
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+template <typename VertexPredicate>
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+expand( const VertexPredicate & authorized_vtx )
+{
+  ASSERT( ! finished() );
+  Node node = myQueue.top();
+  myQueue.pop();
+  Vertex vtx;
+  VertexList tmp;
+  tmp.reserve( myGraph->bestCapacity() );
+  std::back_insert_iterator<VertexList> write_it = std::back_inserter( tmp );
+  myGraph->writeNeighbors( write_it, node.first, authorized_vtx );
+  for ( typename VertexList::const_iterator it = tmp.begin(), 
+          it_end = tmp.end(); it != it_end; ++it )
+    {
+      vtx = *it;
+      typename MarkSet::const_iterator mark_it = myMarkedVertices.find( vtx );
+      if ( mark_it == myMarkedVertices.end() )
+        {
+          myMarkedVertices.insert( vtx );
+          myQueue.push( Node( vtx, myDistance( vtx ) ) );
+        }
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+template <typename VertexPredicate>
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+expandLayer( const VertexPredicate & authorized_vtx )
+{
+  ASSERT( ! finished() );
+  Node node = current();
+  do
+    {
+      expand( authorized_vtx );
+    } 
+  while ( ! finished() && ( node.second == current().second ) );
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+terminate()
+{
+  while ( ! finished() )
+    {
+      Node node = myQueue.top();
+      myQueue.pop();
+      typename MarkSet::iterator mark_it = myMarkedVertices.find( node.first );
+      ASSERT( mark_it != myMarkedVertices.end() );
+      myMarkedVertices.erase( mark_it );
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+const typename DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::MarkSet & 
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+markedVertices() const
+{
+  return myMarkedVertices;
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+typename DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::MarkSet
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+visitedVertices() const
+{
+  if ( finished() ) return myMarkedVertices;
+  MarkSet visitedVtx = myMarkedVertices;
+  NodeQueue q = myQueue; // duplicate queue
+  while ( ! q.empty() )
+    {
+      visitedVtx.erase( q.top().first );
+      q.pop();
+    }
+  return visitedVtx;
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+swap( DistanceBreadthFirstVisitor & other )
+{
+  std::swap( myGraph, other.myGraph );
+  std::swap( myDistance, other.myDistance );
+  myMarkedVertices.swap( other.myMarkedVertices );
+  myQueue.swap( other.myQueue );
+}
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+void
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[DistanceBreadthFirstVisitor"
+      << " #queue=" << myQueue.size()
+      << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+bool
+DGtal::DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet>::
+isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template < typename TGraph, typename TVertexFunctor, typename TMarkSet >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const DistanceBreadthFirstVisitor<TGraph,TVertexFunctor,TMarkSet> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

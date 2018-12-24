@@ -1,3 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structDGtal_1_1detail_1_1HasNestedTypeType.html" title="Aim: Checks whether type IC has a nested type called &#39;Type&#39; or not. NB: from en.wikipedia.org/wiki/Substitution_failure_is_not_an_error NB: to avoid various compiler issues, we use BOOST_STATIC_CONSTANT according to http://www.boost.org/development/int_const_guidelines.html. " alt="" coords="5,5,173,44"/>
-</map>

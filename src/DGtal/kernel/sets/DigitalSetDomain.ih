@@ -1,0 +1,172 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSetDomain.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/10
+ *
+ * Implementation of inline methods defined in DigitalSetDomain.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TDigitalSet>
+inline
+DGtal::DigitalSetDomain<TDigitalSet>
+::~DigitalSetDomain()
+{
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+DGtal::DigitalSetDomain<TDigitalSet>
+::DigitalSetDomain ( ConstAlias<DigitalSet> aSet )
+  : mySet( &aSet )
+{
+  mySet->computeBoundingBox( myLowerBound, myUpperBound );
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+DGtal::DigitalSetDomain<TDigitalSet>
+::DigitalSetDomain ( const DigitalSetDomain & other )
+  : mySet( other.mySet ),
+    myUpperBound( other.myUpperBound ),
+    myLowerBound( other.myLowerBound )
+{}
+
+// ----------------------- Domain services --------------------------------
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+typename DGtal::DigitalSetDomain<TDigitalSet>::ConstIterator 
+DGtal::DigitalSetDomain<TDigitalSet>
+::begin(const Point &aPoint) const
+{
+  return mySet->find(aPoint);
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+typename DGtal::DigitalSetDomain<TDigitalSet>::ConstIterator 
+DGtal::DigitalSetDomain<TDigitalSet>
+::begin() const
+{
+  return mySet->begin();
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+typename DGtal::DigitalSetDomain<TDigitalSet>::ConstIterator 
+DGtal::DigitalSetDomain<TDigitalSet>
+::end() const
+{
+  return mySet->end();
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+const typename DGtal::DigitalSetDomain<TDigitalSet>::Point &
+DGtal::DigitalSetDomain<TDigitalSet>
+::lowerBound() const
+{
+  return myLowerBound;
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+const typename DGtal::DigitalSetDomain<TDigitalSet>::Point &
+DGtal::DigitalSetDomain<TDigitalSet>
+::upperBound() const
+{
+  return myUpperBound;
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+typename DGtal::DigitalSetDomain<TDigitalSet>::Size
+DGtal::DigitalSetDomain<TDigitalSet>
+::size() const
+{
+  return mySet->size();
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+bool
+DGtal::DigitalSetDomain<TDigitalSet>
+::isInside( const Point & p ) const
+{
+  return p.isLower( myUpperBound )
+    && p.isUpper( myLowerBound )
+    && (*mySet)( p );
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+const typename DGtal::DigitalSetDomain<TDigitalSet>::Predicate &
+DGtal::DigitalSetDomain<TDigitalSet>
+::predicate() const
+{
+  return *mySet;
+}
+
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+void
+DGtal::DigitalSetDomain<TDigitalSet>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSetDomain set=" << *mySet << "]";
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+bool
+DGtal::DigitalSetDomain<TDigitalSet>::isValid() const
+{
+    return true;
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const DigitalSetDomain<TDigitalSet> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

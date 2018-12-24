@@ -1,0 +1,197 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author Pierre Gueth (\c pierre.gueth@gmail.com )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS,
+ * UMR 5205), CNRS, France
+ *
+ *
+ * @author Bertrand Kerautret (\c bertrand.kerautret@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Lorraine, France
+ *
+ * @date 2013/10/28
+ *
+ * Header file for module ITKReader.cpp
+ *
+ * This file is part of the DGtal library.
+ */
+
+#include "DGtal/images/ConstImageAdapter.h"
+#include "DGtal/images/ImageContainerByITKImage.h"
+#if defined(__GNUG__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#endif
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdocumentation"
+#endif
+#include <itkImageFileReader.h>
+#if defined(__clang__)
+#pragma clang diagnostic pop
+#endif
+#if defined(__GNUG__)
+#endif
+#pragma GCC diagnostic pop
+
+namespace DGtal {
+
+  template <typename I>
+  template <typename TFunctor>
+  I ITKReader<I>::importITK(
+  const std::string & filename,
+  const TFunctor & aFunctor )
+  {
+    typedef typename Image::Domain Domain;
+    typedef typename Domain::Point Point;
+    typedef itk::ImageIOBase::IOComponentType IOComponentType;
+    BOOST_CONCEPT_ASSERT( (concepts::CUnaryFunctor<TFunctor, ValueOut, Value>));
+    const IOComponentType componentType = getITKComponentType( filename );
+    typedef unsigned char ElementType;
+    switch ( componentType )
+    {
+
+    default:
+    case itk::ImageIOBase::UNKNOWNCOMPONENTTYPE:
+      std::cerr << "Unknown and unsupported component type!" << std::endl;
+    case itk::ImageIOBase::UCHAR:
+    {
+      typedef ImageContainerByITKImage<Domain, unsigned char> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::CHAR:
+    {
+      typedef ImageContainerByITKImage<Domain, char> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::USHORT:
+    {
+      typedef ImageContainerByITKImage<Domain, unsigned short> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::SHORT:
+    {
+      typedef ImageContainerByITKImage<Domain, short> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::ULONG:
+    {
+      typedef ImageContainerByITKImage<Domain, unsigned long> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::LONG:
+    {
+      typedef ImageContainerByITKImage<Domain, long> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::FLOAT:
+    {
+      typedef ImageContainerByITKImage<Domain, float> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    case itk::ImageIOBase::DOUBLE:
+    {
+      typedef ImageContainerByITKImage<Domain, double> DGtalITKImage;
+      Domain d;
+      DGtalITKImage im( d );
+      return readDGtalImageFromITKtypes<DGtalITKImage>( filename, aFunctor );
+    }
+    }
+  }
+
+  template <typename I>
+  itk::ImageIOBase::IOComponentType
+  ITKReader<I>::getITKComponentType( const std::string & filename )
+  {
+    typedef itk::ImageIOBase::IOComponentType IOComponentType;
+    IOComponentType componentType;
+    try
+    {
+      itk::ImageIOBase::Pointer imageIO = itk::ImageIOFactory::CreateImageIO(
+      filename.c_str(), itk::ImageIOFactory::ReadMode );
+      imageIO->SetFileName( filename.c_str() );
+      imageIO->ReadImageInformation();
+      componentType = imageIO->GetComponentType();
+    }
+    catch ( itk::ExceptionObject & e )
+    {
+      trace.error() << e;
+      throw IOException();
+    }
+    return componentType;
+  }
+
+  template <typename I>
+  template <typename TypeDGtalImage, typename TFunctor>
+  typename ITKReader<I>::Image ITKReader<I>::readDGtalImageFromITKtypes(
+  const std::string & filename,
+  const TFunctor & aFunctor )
+  {
+
+    typedef typename TypeDGtalImage::ITKImagePointer ITKImagePointer;
+    typedef typename Image::Domain Domain;
+
+    ITKImagePointer itk_image = TypeDGtalImage::ITKImage::New();
+
+    try
+    {
+      typedef itk::ImageFileReader<typename TypeDGtalImage::ITKImage>
+      ITKImageReader;
+      typename ITKImageReader::Pointer reader = ITKImageReader::New();
+
+      reader->SetFileName( filename );
+      reader->Update();
+      reader->GetOutput();
+
+      itk_image = reader->GetOutput();
+    }
+    catch (itk::ExceptionObject &e)
+    {
+      trace.error() << e;
+      throw IOException();
+    }
+
+    const TypeDGtalImage dgtal_itk_image( itk_image );
+    const Domain& domain = dgtal_itk_image.domain();
+
+    typedef ConstImageAdapter<TypeDGtalImage, Domain, functors::Identity, Value,
+                              TFunctor>
+    AdaptedImage;
+    const functors::Identity identityFunctor{};
+    const AdaptedImage adapted(dgtal_itk_image, domain, identityFunctor, aFunctor);
+
+    Image image(domain);
+    std::copy(adapted.constRange().begin(), adapted.constRange().end(), image.range().outputIterator());
+    return image;
+  }
+
+}//namespace

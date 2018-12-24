@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structLibBoard_1_1Transform.html" title="base class for transforms. " alt="" coords="5,80,148,105"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1TransformCairo.html" title="Structure representing a scaling and translation suitable for an Cairo output. " alt="" coords="196,5,370,31"/>
-<area shape="rect" id="node3" href="$structLibBoard_1_1TransformEPS.html" title="Structure representing a scaling and translation suitable for an EPS output. " alt="" coords="198,55,367,80"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1TransformFIG.html" title="Structure representing a scaling and translation suitable for an XFig output. " alt="" coords="201,104,365,129"/>
-<area shape="rect" id="node5" href="$structLibBoard_1_1TransformSVG.html" title="Structure representing a scaling and translation suitable for an SVG output. " alt="" coords="198,153,368,179"/>
-<area shape="rect" id="node6" href="$structLibBoard_1_1TransformTikZ.html" title="Structure representing a scaling and translation suitable for an TikZ output. " alt="" coords="418,153,586,179"/>
-</map>

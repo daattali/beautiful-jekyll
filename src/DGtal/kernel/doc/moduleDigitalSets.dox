@@ -1,0 +1,178 @@
+
+/**
+ * @file moduleDigitalSets.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2013/01/29
+ *
+ * Documentation file for feature moduleDigitalSets
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleDigitalSets Sets of points in digital spaces
+@writers Jacques-Olivier Lachaud
+[TOC]
+
+@section digital_sets_1 Overview
+
+\b Digital \b sets are sets of digital points within some domain of a
+digital space. They are thus subsets of a given domain (e.g. see \ref
+sectDomain). As such, their elements can be enumerated with iterators
+through the range [begin(),end()). Furthermore, digital sets can be
+complemented within their domain. Last, a digital set is also a
+predicate on point, returning true whenever the points lies inside the
+set.
+
+@section digital_sets_2 The concept concepts::CDigitalSet and models of concepts::CDigitalSet
+
+There are several ways for defining concretely a digital set, this is
+why digital sets are specified through the concept concepts::CDigitalSet. All
+types and required methods are specified in the documentation of
+CDigitalSet. It is worthy to note that a digital set is also
+associated to a digital domain, i.e. any model of concepts::CDomain.
+
+There exists several models for concepts::CDigitalSet; their difference lies in
+the way elements are stored (let \a n be the number of points in the
+set).
+
+- DigitalSetBySTLSet: it is the most versatile representation for
+  digital sets, and the one which should be preferred if you have no
+  specific properties for your set. The container is the standard
+  simple associative container \c std::set (a model of
+  boost::SimpleAssociativeContainer). All find, insertion and deletion
+  requests are \f$ O(\log n) \f$ complexity. Internal order can be 
+  changed by specifiing another Compare functor as template parameter.
+
+- DigitalSetBySTLVector: this representation is suited for very small
+  set of points (for instance a neighborhood). The container is the standard
+  sequence container \c std::vector (a model of
+  boost::Sequence). All find, insertion and deletion
+  requests are \f$ O(n) \f$ complexity.
+
+- DigitalSetFromMap: it is \b not a container but an \b adapter to an
+  existing map Point -> Value. Elements of the digital set are by
+  definition the keys of the map.
+
+- DigitalSetByAssociativeContainer: it is a generic container which
+  adapts any associative container (e.g. from the
+  [STL](https://www.sgi.com/tech/stl/AssociativeContainer.html) or
+  from boost). For example, if you instantiate such digital set on a
+  @c std::set, this class exactly matches with DigitalSetBySTLSet. The
+  main advantage of this container is its ability to adapt hash
+  function based containers such as @c std::unordered_set (for C++11
+  enabled build) or @c boost::unordered_set.  Compared to
+  DigitalSetBySTLSet, DigitalSetByAssociativeContainer on
+  @c std::unordered_set is expected to be 20% - 50% faster when accessing
+  or inserting points in the set.
+
+
+You may choose yourself your representation of digital set, or let
+DGtal chooses for you the best suited representation with the class
+DigitalSetSelector. This is done by choosing among the following
+properties:
+
+- the expected size of the set with enum DigitalSetSize, from small to
+  huge: \c SMALL_DS, \c MEDIUM_DS, \c BIG_DS, \c WHOLE_DS.
+- the expected variability of the set with enum DigitalSetVariability:
+  will the set change a lot during its lifetime (\c HIGH_VAR_DS) or
+  not (\c LOW_VAR_DS) ?
+- the expected number of times you will iterate through the elements
+  of the set with enum DigitalSetIterability, few times is \c
+  LOW_ITER_DS, many times is \c HIGH_ITER_DS.
+- the number of times you will test for the presence of points in the
+  set with enum DigitalSetBelongTestability, few times is \c
+  LOW_BEL_DS, many times is \c HIGH_BEL_DS.
+
+@note By default, Z2i::DigitalSet and Z3i::DigitalSet in StdDefs.h
+refer to the associative container with hash functions (fastest on
+large sets).
+
+
+The following lines selects a rather generic representation for
+digital sets, since the set may be big, will be iterated many times
+and points will be tested many times:
+
+@code
+  typedef SpaceND<2> Z2;
+  typedef HyperRectDomain<Z2> Domain;
+  typedef DigitalSetSelector < Domain, BIG_DS + HIGH_ITER_DS + HIGH_BEL_DS >::Type SpecificSet;
+  // here SpecificSet is DigitalSetByAssociativeContainer<(boost or std)::unordered_set<Point>, Domain>.
+@endcode
+
+
+@section digital_sets_3 Using digital sets
+
+The following snippet shows how to define a digital set in space Z2,
+within a rectangular domain, then how to insert points, how to visit
+them and how to test if a point belongs to the set.
+
+@code
+  typedef SpaceND<2> Z2;
+  typedef HyperRectDomain<Z2> Domain;
+  typedef DigitalSetSelector < Domain, BIG_DS + HIGH_ITER_DS + HIGH_BEL_DS >::Type SpecificSet;
+  typedef Z2::Point Point;
+  // instantiating rectangular domain
+  Point p1(  -10, -10  );
+  Point p2(  10, 10  );
+  Domain domain( p1, p2 );
+  // instanciating set within this domain.
+  SpecificSet mySet( domain );
+  Point c(  0, 0  );
+  mySet.insert( c ); // inserting point (0,0)
+  Point d(  5, 2  );
+  mySet.insert( d ); // inserting point (5,2)
+  Point e(  1, -3  );
+  mySet.insert( e ); // inserting point (1,-3)
+  // Iterating through the set
+  typedef SpecificSet::ConstIterator ConstIterator;
+  for ( ConstIterator it = mySet.begin(), itEnd = mySet.end();
+        it != itEnd; ++it )
+    std::cout << *it << std::endl;
+  // Checking points within set
+  bool ok_c = mySet( c ); // should be true
+  bool ok_d = mySet( d ); // should be true
+  bool ok_e = mySet( e ); // should be true
+  bool not_ok = mySet( Point( 1,1) ); // should be false
+@endcode
+
+Other methods may be found in the concept definition of digital sets (CDigitalSet).
+
+@section digital_sets_4 Digital sets and point predicates
+
+Since 0.6, any digital set is also a model of concepts::CPointPredicate. You may
+thus use a digital set directly in functions and methods requiring a
+predicate on points. However, the class deprecated::SetPredicate, which builds a
+predicate on points around a digital set, is deprecated since 0.6. You
+may still used it by referecing it with
+DGtal::deprecated::SetPredicate, but it will no longer be maintained.
+
+@section digital_sets_5 A digital set may be transformed into a domain
+
+Sometimes it is useful to see a digital set as a new domain for
+further computation. This is possible with the facade class
+DigitalSetDomain, which wraps around some given digital set all
+necessary methods and types so that it satisfies the concept concepts::CDomain.
+
+@code
+typedef DigitalSetDomain< SpecificSet > RestrictedDomain;
+RestrictedDomain myDomain( mySet );
+// this domain is limited to three points c, d and e.
+@endcode
+
+@note The DigitalSetDomain class is only a wrapper around the digital
+set. The lifetime of the digital set must thus exceed the lifetime of
+the DigitalSetDomain.
+
+
+*/
+
+}

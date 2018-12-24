@@ -1,0 +1,257 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MostCenteredMaximalSegmentEstimator.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/01/26
+ *
+ * Implementation of inline methods defined in MostCenteredMaximalSegmentEstimator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+inline
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+::MostCenteredMaximalSegmentEstimator() {}
+
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+inline
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+::MostCenteredMaximalSegmentEstimator(const SegmentComputer& aSegmentComputer, 
+                                      const SCEstimator& aSCEstimator)
+  : myH(0), mySC(aSegmentComputer), mySCEstimator(aSCEstimator)
+{}
+
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+inline
+void
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+::init(const double h, const ConstIterator& itb, const ConstIterator& ite) 
+{
+
+  myH = h;
+  myBegin = itb;
+  myEnd = ite;
+  if (this->isValid())
+    mySCEstimator.init( myH, myBegin, myEnd ); 
+}
+
+
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+inline
+bool
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>::isValid() const
+{
+  return ( (myH > 0)&&(isNotEmpty(myBegin, myEnd)) );
+}
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+     ::endEval(const ConstIterator& itb, const ConstIterator& ite, ConstIterator& itCurrent,
+	       SegmentIterator& first, SegmentIterator& last, 
+	       OutputIterator result) 
+{
+  typedef typename IteratorCirculatorTraits<ConstIterator>::Type Type; 
+  return endEval (itb, ite, itCurrent, first, last, result, Type() ); 
+}
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+::endEval(const ConstIterator& /*itb*/, const ConstIterator& ite, ConstIterator& itCurrent,
+	       SegmentIterator& /*first*/, SegmentIterator& last, 
+	       OutputIterator result, IteratorType ) 
+{
+  mySCEstimator.attach( *last ); 
+  result = mySCEstimator.eval( itCurrent, ite, result );
+  return result; 
+}
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+::endEval(const ConstIterator& itb, const ConstIterator& ite, ConstIterator& itCurrent,
+	       SegmentIterator& first, SegmentIterator& last, 
+	       OutputIterator result, CirculatorType ) 
+{
+  if ( (itb == ite) && (first.intersectPrevious() && last.intersectNext() ) ) 
+    {//if first and last segment intersect (whole range)
+     //last segment
+      ConstIterator itEnd = getMiddleIterator( first->begin(), last->end() );//(floor)
+      ++itEnd; //(ceil)
+      mySCEstimator.attach( *last ); 
+      result = mySCEstimator.eval( itCurrent, itEnd, result );
+      itCurrent = itEnd; 
+      if (itCurrent != ite) 
+	{
+	  //first segment
+	  mySCEstimator.attach( *first ); 
+	  result = mySCEstimator.eval( itCurrent, ite, result );
+	}
+    }
+  else 
+    { //(sub range)
+      mySCEstimator.attach( *last ); 
+      result = mySCEstimator.eval( itCurrent, ite, result );
+    }
+  return result; 
+}
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+     ::eval(const ConstIterator& itb, const ConstIterator& ite,
+            OutputIterator result) {
+
+  
+  Segmentation seg(myBegin, myEnd, mySC); 
+  seg.setSubRange(itb, ite); 
+  if ((myBegin != itb) || (myEnd != ite))
+    { //if subrange
+      seg.setMode("MostCentered++");
+    }
+  else 
+    {//whole range
+      seg.setMode("MostCentered"); 
+    }
+
+  if (this->isValid()) {
+
+    SegmentIterator segItBegin = seg.begin();
+    SegmentIterator segItEnd = seg.end();
+    SegmentIterator segIt = segItBegin;
+    SegmentIterator nextSegIt = segIt;
+
+    if (nextSegIt != segItEnd ) 
+      {  //at least one maximal segment
+	++nextSegIt; 
+
+	if (nextSegIt == segItEnd ) 
+	  {    //only one maximal segment                         
+	    mySCEstimator.attach( *segIt ); 
+	    result = mySCEstimator.eval( itb, ite, result );
+	  } 
+	else 
+	  {   //strictly more than one maximal segment
+
+	    ConstIterator itCurrent = itb; 
+
+	    //main loop
+	    while (nextSegIt != segItEnd)
+	      {
+		ConstIterator itEnd = getMiddleIterator( nextSegIt->begin(), segIt->end() );//(floor)
+		++itEnd;//(ceil) 
+
+	        mySCEstimator.attach( *segIt ); 
+	        result = mySCEstimator.eval( itCurrent, itEnd, result );
+
+		itCurrent = itEnd; 
+
+		segIt = nextSegIt;
+		++nextSegIt; 
+	      }
+
+	    //end
+	    result = endEval(itb, ite, itCurrent, segItBegin, segIt, result);   
+
+	  }//end one or more maximal segments test
+      }//end zero or one maximal segment test
+    return result;
+
+  } 
+  else 
+    {//nothing is done without correct initialization
+      std::cerr << "[DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>::eval(const ConstIterator& itb, const ConstIterator& ite,OutputIterator result)]"
+		<< " ERROR. Object is not initialized." << std::endl; 
+      throw InputException();
+      return result;
+    }
+}
+
+
+
+
+// ------------------------------------------------------------------------
+template <typename SegmentComputer, typename SCEstimator>
+inline
+typename DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>::Quantity
+DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>
+::eval(const ConstIterator& it) {
+
+  if ( this->isValid() ) 
+    {
+
+      if (isNotEmpty(it,myEnd)) 
+	{
+	  mostCenteredMaximalSegment( mySC, it, myBegin, myEnd );
+	  mySCEstimator.attach( mySC ); 
+	  return mySCEstimator.eval( it );
+	}
+      else 
+	{
+	  std::cerr << "[DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>::eval(const ConstIterator& it)]"
+		    << " ERROR. Iterator is invalid (==myEnd)." << std::endl;
+	  throw InputException();
+	  return Quantity();
+	}
+
+    }
+  else 
+    {
+      std::cerr << "[DGtal::MostCenteredMaximalSegmentEstimator<SegmentComputer,SCEstimator>::eval(const ConstIterator& it)]"
+	   << " ERROR. Object is not initialized." << std::endl;
+      throw InputException();
+      return Quantity();
+    }
+}
+
+

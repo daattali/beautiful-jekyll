@@ -1,0 +1,2640 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSurfaceConvolver.ih
+ * @author Jeremy Levallois (\c jeremy.levallois@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), INSA-Lyon, France
+ * LAboratoire de MAthématiques - LAMA (CNRS, UMR 5127), Université de Savoie, France
+ *
+ * @date 2012/03/27
+ *
+ * Implementation of inline methods defined in DigitalSurfaceConvolver.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+#include "DGtal/geometry/surfaces/DigitalSurfaceConvolver.h"
+#include "DGtal/kernel/NumberTraits.h"
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////// nD /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+inline
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >
+::DigitalSurfaceConvolver( ConstAlias< Functor > f,
+                           ConstAlias< KernelFunctor > g,
+                           ConstAlias< KSpace > space)
+  : myFFunctor( f ),
+    myGFunctor( g ),
+    myKSpace( space ),
+    isInitFullMasks( false ),
+    isInitKernelAndMasks( false )
+{
+  myEmbedder = Embedder( myKSpace );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+inline
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >
+::DigitalSurfaceConvolver( const DigitalSurfaceConvolver& other )
+  : myFFunctor( other.myFFunctor ),
+    myGFunctor( other.myGFunctor ),
+    myKSpace( other.myKSpace ),
+    myEmbedder( other.myEmbedder ),
+    isInitFullMasks( other.isInitFullMasks ),
+    isInitKernelAndMasks( other.isInitKernelAndMasks ),
+    myMasks( other.myMasks ),
+    myKernel( other.myKernel ),
+    myKernelMask( other.myKernelMask ),
+    myKernelSpelOrigin( other.myKernelSpelOrigin )
+{
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::init
+( const Point & pOrigin,
+  ConstAlias< PairIterators > fullKernel,
+  ConstAlias< std::vector< PairIterators > > masks )
+{
+  myKernelSpelOrigin = myKSpace.sSpel( pOrigin );
+  myKernelMask = &fullKernel;
+  myMasks = &masks;
+
+  //    ASSERT ( myMasks->size () == 9 );
+
+  isInitFullMasks = true;
+  isInitKernelAndMasks = false;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::init
+( const Point & pOrigin,
+  ConstAlias< DigitalKernel > fullKernel,
+  ConstAlias< std::vector< PairIterators > > masks )
+{
+  myKernelSpelOrigin = myKSpace.sSpel( pOrigin );
+  myKernel = &fullKernel;
+  myMasks = &masks;
+
+  //    ASSERT ( myMasks->size () == 9 );
+
+  isInitFullMasks = false;
+  isInitKernelAndMasks = true;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator >
+inline
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::eval
+( const SurfelIterator & it ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Quantity innerSum, outerSum;
+
+  core_eval( it, innerSum, outerSum, false );
+
+  double lambda = 0.5;
+  return ( innerSum * lambda + outerSum * ( 1.0 - lambda ));
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator, typename EvalFunctor >
+inline
+typename EvalFunctor::Value
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::eval
+( const SurfelIterator & it,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Quantity innerSum, outerSum;
+  Quantity resultQuantity;
+
+  core_eval( it, innerSum, outerSum, false );
+
+  double lambda = 0.5;
+  resultQuantity = innerSum * lambda + outerSum * ( 1.0 - lambda );
+  return functor( resultQuantity );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator, typename OutputIterator >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::eval
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerSum;
+  Quantity lastOuterSum;
+
+  Quantity innerSum, outerSum;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+#endif
+        }
+      else
+        {
+          core_eval( it, innerSum, outerSum, false, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+        }
+
+      double lambda = 0.5;
+      *result++ = ( innerSum * lambda + outerSum * ( 1.0 - lambda ));
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator, typename OutputIterator, typename EvalFunctor >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::eval
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerSum;
+  Quantity lastOuterSum;
+
+  Quantity innerSum, outerSum;
+  Quantity resultQuantity;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+#endif
+        }
+      else
+        {
+          core_eval( it, innerSum, outerSum, false, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+        }
+
+      double lambda = 0.5;
+      resultQuantity = innerSum * lambda + outerSum * ( 1.0 - lambda );
+      *result++ = functor( resultQuantity );
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator >
+inline
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::CovarianceMatrix
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::evalCovarianceMatrix
+( const SurfelIterator & it ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+
+  core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false );
+
+  double lambda = 0.5;
+  return ( innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda ));
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator, typename EvalFunctor >
+inline
+typename EvalFunctor::Value
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::evalCovarianceMatrix
+( const SurfelIterator & it,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+  CovarianceMatrix resultCovarianceMatrix;
+
+  core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false );
+
+  double lambda = 0.5;
+  resultCovarianceMatrix = innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda );
+  return functor( resultCovarianceMatrix );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator, typename OutputIterator >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::evalCovarianceMatrix
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerMoments[ nbMoments ];
+  Quantity lastOuterMoments[ nbMoments ];
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+#endif
+        }
+      else
+        {
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+        }
+
+      double lambda = 0.5;
+      *result++ = ( innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda ));
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator, typename OutputIterator, typename EvalFunctor >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::evalCovarianceMatrix
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerMoments[ nbMoments ];
+  Quantity lastOuterMoments[ nbMoments ];
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+  CovarianceMatrix resultCovarianceMatrix;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+#endif
+        }
+      else
+        {
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+        }
+
+      double lambda = 0.5;
+      resultCovarianceMatrix = innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda );
+      *result++ = functor( resultCovarianceMatrix );
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+inline
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::isValid() const
+{
+  return true;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::fillMoments
+( Quantity * aMomentMatrix,
+  const Spel & aSpel,
+  double direction ) const
+{
+  RealPoint current = myEmbedder( aSpel );
+  double x = current[ 0 ];
+  double y = current[ 1 ];
+
+  aMomentMatrix[ 0 ] += direction * 1;
+  aMomentMatrix[ 1 ] += direction * y;
+  aMomentMatrix[ 2 ] += direction * x;
+  aMomentMatrix[ 3 ] += direction * x * y;
+  aMomentMatrix[ 4 ] += direction * y * y;
+  aMomentMatrix[ 5 ] += direction * x * x;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::computeCovarianceMatrix
+( const Quantity * aMomentMatrix,
+  CovarianceMatrix & aCovarianceMatrix ) const
+{
+  MatrixQuantity A;
+  double B;
+  MatrixQuantity C;
+
+  A.setComponent( 0, 0, aMomentMatrix[ 5 ] );
+  A.setComponent( 0, 1, aMomentMatrix[ 3 ] );
+  A.setComponent( 1, 0, aMomentMatrix[ 3 ] );
+  A.setComponent( 1, 1, aMomentMatrix[ 4 ] );
+
+  B = 1.0 / aMomentMatrix[ 0 ];
+
+  C.setComponent( 0, 0, aMomentMatrix[ 2 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 0, 1, aMomentMatrix[ 2 ] * aMomentMatrix[ 1 ] );
+  C.setComponent( 1, 0, aMomentMatrix[ 1 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 1, 1, aMomentMatrix[ 1 ] * aMomentMatrix[ 1 ] );
+
+  aCovarianceMatrix = A - C * B;
+}
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+const int
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::nbMoments = 6;
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Spel
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::defaultInnerSpel = Spel();
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Spel
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::defaultOuterSpel = Spel();
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::defaultInnerMoments[ 6 ] = {Quantity(0)};
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::defaultOuterMoments[ 6 ] = {Quantity(0)};
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::defaultInnerSum = Quantity(0);
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::defaultOuterSum = Quantity(0);
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator >
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::core_eval
+( const SurfelIterator & it,
+  Quantity & innerSum,
+  Quantity & outerSum,
+  bool useLastResults,
+  Spel & lastInnerSpel,
+  Spel & lastOuterSpel,
+  Quantity & lastInnerSum,
+  Quantity & lastOuterSum ) const
+{
+  boost::ignore_unused_variable_warning( it );
+  boost::ignore_unused_variable_warning( innerSum );
+  boost::ignore_unused_variable_warning( outerSum);
+  boost::ignore_unused_variable_warning(useLastResults);
+  boost::ignore_unused_variable_warning(lastInnerSum);
+  boost::ignore_unused_variable_warning(lastOuterSum);
+  boost::ignore_unused_variable_warning(lastInnerSpel);
+  boost::ignore_unused_variable_warning(lastOuterSpel);
+  trace.error() << "Unavailable yet." << std::endl;
+  return false;
+}
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel, DGtal::Dimension dimension >
+template< typename SurfelIterator >
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, dimension >::core_evalCovarianceMatrix
+( const SurfelIterator & it,
+  CovarianceMatrix & innerMatrix,
+  CovarianceMatrix & outerMatrix,
+  bool useLastResults,
+  Spel & lastInnerSpel,
+  Spel & lastOuterSpel,
+  Quantity * lastInnerMoments,
+  Quantity * lastOuterMoments ) const
+{
+  boost::ignore_unused_variable_warning(it);
+  boost::ignore_unused_variable_warning(innerMatrix);
+  boost::ignore_unused_variable_warning(outerMatrix);
+  boost::ignore_unused_variable_warning(useLastResults);
+  boost::ignore_unused_variable_warning(lastOuterMoments);
+  boost::ignore_unused_variable_warning(lastInnerMoments);
+  boost::ignore_unused_variable_warning(lastInnerSpel);
+  boost::ignore_unused_variable_warning(lastOuterSpel);
+  trace.error() << "Unavailable yet." << std::endl;
+  return false;
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////// 2D /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >
+::DigitalSurfaceConvolver( ConstAlias< Functor > f,
+                           ConstAlias< KernelFunctor > g,
+                           ConstAlias< KSpace > space)
+  : dimension( 2 ),
+    myFFunctor( f ),
+    myGFunctor( g ),
+    myKSpace( space ),
+    isInitFullMasks( false ),
+    isInitKernelAndMasks( false )
+{
+  myEmbedder = Embedder( myKSpace );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel>
+inline
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >
+::DigitalSurfaceConvolver( const DigitalSurfaceConvolver& other )
+  : dimension( 2 ),
+    myFFunctor( other.myFFunctor ),
+    myGFunctor( other.myGFunctor ),
+    myKSpace( other.myKSpace ),
+    myEmbedder( other.myEmbedder ),
+    isInitFullMasks( other.isInitFullMasks ),
+    isInitKernelAndMasks( other.isInitKernelAndMasks ),
+    myMasks( other.myMasks ),
+    myKernel( other.myKernel ),
+    myKernelMask( other.myKernelMask ),
+    myKernelSpelOrigin( other.myKernelSpelOrigin )
+{
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::init
+( const Point & pOrigin,
+  ConstAlias< PairIterators > fullKernel,
+  ConstAlias< std::vector< PairIterators > > masks )
+{
+  myKernelSpelOrigin = myKSpace.sSpel( pOrigin );
+  myKernelMask = &fullKernel;
+  myMasks = &masks;
+
+  ASSERT ( myMasks->size () == 9 );
+
+  isInitFullMasks = true;
+  isInitKernelAndMasks = false;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::init
+( const Point & pOrigin,
+  ConstAlias< DigitalKernel > fullKernel,
+  ConstAlias< std::vector< PairIterators > > masks )
+{
+  myKernelSpelOrigin = myKSpace.sSpel( pOrigin );
+  myKernel = &fullKernel;
+  myMasks = &masks;
+
+  ASSERT ( myMasks->size () == 9 );
+
+  isInitFullMasks = false;
+  isInitKernelAndMasks = true;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+inline
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::eval
+( const SurfelIterator & it ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Quantity innerSum, outerSum;
+
+  core_eval( it, innerSum, outerSum, false );
+
+  double lambda = 0.5;
+  return ( innerSum * lambda + outerSum * ( 1.0 - lambda ));
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename EvalFunctor >
+inline
+typename EvalFunctor::Value
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::eval
+( const SurfelIterator & it,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Quantity innerSum, outerSum;
+  Quantity resultQuantity;
+
+  core_eval( it, innerSum, outerSum, false );
+
+  double lambda = 0.5;
+  resultQuantity = innerSum * lambda + outerSum * ( 1.0 - lambda );
+  return functor( resultQuantity );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::eval
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerSum;
+  Quantity lastOuterSum;
+
+  Quantity innerSum, outerSum;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+#endif
+        }
+      else
+        {
+          core_eval( it, innerSum, outerSum, false, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+        }
+
+      double lambda = 0.5;
+      *result++ = ( innerSum * lambda + outerSum * ( 1.0 - lambda ));
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator, typename EvalFunctor >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::eval
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerSum;
+  Quantity lastOuterSum;
+
+  Quantity innerSum, outerSum;
+  Quantity resultQuantity;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+#endif
+        }
+      else
+        {
+          core_eval( it, innerSum, outerSum, false, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+        }
+
+      double lambda = 0.5;
+      resultQuantity = innerSum * lambda + outerSum * ( 1.0 - lambda );
+      *result++ = functor( resultQuantity );
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+inline
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::CovarianceMatrix
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::evalCovarianceMatrix
+( const SurfelIterator & it ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+
+  core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false );
+
+  double lambda = 0.5;
+  return ( innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda ));
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename EvalFunctor >
+inline
+typename EvalFunctor::Value
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::evalCovarianceMatrix
+( const SurfelIterator & it,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+  CovarianceMatrix resultCovarianceMatrix;
+
+  core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false );
+
+  double lambda = 0.5;
+  resultCovarianceMatrix = innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda );
+  return functor( resultCovarianceMatrix );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::evalCovarianceMatrix
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerMoments[ nbMoments ];
+  Quantity lastOuterMoments[ nbMoments ];
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+#endif
+        }
+      else
+        {
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+        }
+
+      double lambda = 0.5;
+      *result++ = ( innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda ));
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator, typename EvalFunctor >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::evalCovarianceMatrix
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerMoments[ nbMoments ];
+  Quantity lastOuterMoments[ nbMoments ];
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+  CovarianceMatrix resultCovarianceMatrix;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+#endif
+        }
+      else
+        {
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+        }
+
+      double lambda = 0.5;
+      resultCovarianceMatrix = innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda );
+      *result++ = functor( resultCovarianceMatrix );
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::isValid() const
+{
+  return true;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::fillMoments
+( Quantity * aMomentMatrix,
+  const Spel & aSpel,
+  double direction ) const
+{
+  RealPoint current = myEmbedder( aSpel );
+  double x = current[ 0 ];
+  double y = current[ 1 ];
+
+  aMomentMatrix[ 0 ] += direction * 1;
+  aMomentMatrix[ 1 ] += direction * y;
+  aMomentMatrix[ 2 ] += direction * x;
+  aMomentMatrix[ 3 ] += direction * x * y;
+  aMomentMatrix[ 4 ] += direction * y * y;
+  aMomentMatrix[ 5 ] += direction * x * x;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::computeCovarianceMatrix
+( const Quantity * aMomentMatrix,
+  CovarianceMatrix & aCovarianceMatrix ) const
+{
+  MatrixQuantity A;
+  double B;
+  MatrixQuantity C;
+
+  A.setComponent( 0, 0, aMomentMatrix[ 5 ] );
+  A.setComponent( 0, 1, aMomentMatrix[ 3 ] );
+  A.setComponent( 1, 0, aMomentMatrix[ 3 ] );
+  A.setComponent( 1, 1, aMomentMatrix[ 4 ] );
+
+  B = 1.0 / aMomentMatrix[ 0 ];
+
+  C.setComponent( 0, 0, aMomentMatrix[ 2 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 0, 1, aMomentMatrix[ 2 ] * aMomentMatrix[ 1 ] );
+  C.setComponent( 1, 0, aMomentMatrix[ 1 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 1, 1, aMomentMatrix[ 1 ] * aMomentMatrix[ 1 ] );
+
+  aCovarianceMatrix = A - C * B;
+}
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+const int
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::nbMoments = 6;
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Spel
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::defaultInnerSpel = Spel();
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Spel
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::defaultOuterSpel = Spel();
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::defaultInnerMoments[ 6 ] = {Quantity(0)};
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::defaultOuterMoments[ 6 ] = {Quantity(0)};
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::defaultInnerSum = Quantity(0);
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::defaultOuterSum = Quantity(0);
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::core_eval
+( const SurfelIterator & it,
+  Quantity & innerSum,
+  Quantity & outerSum,
+  bool useLastResults,
+  Spel & lastInnerSpel,
+  Spel & lastOuterSpel,
+  Quantity & lastInnerSum,
+  Quantity & lastOuterSum ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  using KPS = typename KSpace::PreCellularGridSpace;
+
+#ifdef DEBUG_VERBOSE
+  Dimension recount = false;
+#endif
+
+  typedef typename Functor::Quantity FQuantity;
+  DGtal::Dimension nbMasks =static_cast<DGtal::Dimension>( (long)myMasks->size() - 1);
+  DGtal::Dimension positionOfFullKernel = 4;
+
+  Quantity m = NumberTraits< Quantity >::ZERO;
+
+  Spel currentInnerSpel, currentOuterSpel;
+  Spel shiftedSpel;
+  Point shiftInnerSpel, shiftOuterSpel;
+  Point diffSpel;
+
+  bool bComputed = false; /// <! if the cell has already been computed, continue to the next
+
+  int x, y, x2, y2, x2y2;
+  unsigned int offset;
+
+  /// Inner cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentInnerSpel = myKSpace.sDirectIncident( *it, kDim ); /// Spel on the border, but inside the shape
+    shiftInnerSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    /// Check if we can use previous results
+    if( useLastResults )
+      {
+        bComputed = false;
+
+        if( currentInnerSpel == lastInnerSpel )
+          {
+            m = lastInnerSum;
+            innerSum = m;
+
+            bComputed = true;
+          }
+        else if( currentInnerSpel == lastOuterSpel )
+          {
+            m = lastOuterSum;
+            outerSum = m;
+
+            bComputed = true;
+          }
+        else
+          {
+            diffSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( lastInnerSpel );
+
+            x = diffSpel[ 0 ];
+            y = diffSpel[ 1 ];
+            x2 = x * x;
+            y2 = y * y;
+            x2y2 = x2 + y2;
+
+            offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 );
+
+            if( x2y2 != 4 && x2y2 != 8 ) /// Previous and current cells aren't adjacent. Compute on the full kernel
+              {
+                useLastResults = false;
+#ifdef DEBUG_VERBOSE
+                recount = true;
+#endif
+              }
+            else if( offset == positionOfFullKernel ) /// Full kernel in 2D. Never reached because case already considered before. It's a honeypot.
+              {
+                trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+              }
+            else
+              {
+                useLastResults = true;
+              }
+          }
+      }
+
+    if( !bComputed )
+      {
+        if( !useLastResults ) /// Computation on full kernel, we have no previous results
+          {
+            m = NumberTraits< Quantity >::ZERO;
+
+            if( isInitFullMasks )
+              {
+                for( KernelConstIterator itm = myKernelMask->first; itm != myKernelMask->second; ++itm )
+                  {
+                    auto preShiftedSpel = KPS::sSpel( *itm );
+                    preShiftedSpel.coordinates += shiftInnerSpel;
+
+                    if( myKSpace.sIsInside( preShiftedSpel ) )
+                    {
+                      myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                      if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                      {
+                        m += 1.0;
+                      }
+                    }
+                  }
+              }
+            else if( isInitKernelAndMasks )
+              {
+                Domain domain = myKernel->getDomain();
+                for( typename Domain::ConstIterator itm = domain.begin(), itend = domain.end(); itm != itend; ++itm )
+                  {
+                    if( myKernel->operator()( *itm ))
+                      {
+                        auto preShiftedSpel = KPS::sSpel( *itm );
+                        preShiftedSpel.coordinates += shiftInnerSpel;
+
+                        if( myKSpace.sIsInside( preShiftedSpel ) )
+                        {
+                          myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                          if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                          {
+                            m += 1.0;
+                          }
+                        }
+                      }
+                  }
+              }
+            else
+              {
+                trace.error() << "DigitalSurfaceConvolver: You need to init the convolver first." << std::endl;
+                return false;
+              }
+
+          }
+        else /// Using lastInnerMoments
+          {
+            m = lastInnerSum;
+
+            /// Part to substract from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel - diffSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    m -= 1.0;
+                  }
+                }
+              }
+
+            /// Part to add from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    m += 1.0;
+                  }
+                }
+              }
+          }
+
+        /// Computation of covariance Matrix
+        innerSum = m;
+        lastInnerSum = m;
+      }
+  }
+
+  /// Outter cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentOuterSpel = myKSpace.sIndirectIncident( *it, kDim );
+    shiftOuterSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    ASSERT( currentInnerSpel != currentOuterSpel );
+
+    diffSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( currentInnerSpel );
+
+    x = diffSpel[ 0 ];
+    y = diffSpel[ 1 ];
+    x2 = x * x;
+    y2 = y * y;
+    x2y2 = x2 + y2;
+
+    offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 );
+
+    if( x2y2 != 4 && x2y2 != 8 ) /// Inside and outside cells aren't adjacent, but should be. It's a honeypot.
+      {
+        trace.error() << "Error - Found that inside and outside cells aren't adjacent. That's not logic.\n";
+      }
+    else if(  offset == positionOfFullKernel ) /// Full kernel in 2D. Never reached because case already considered before. It's a honeypot.
+      {
+        trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+      }
+    else
+      {
+        /// Part to substract from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel - diffSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                m -= 1.0;
+              }
+            }
+          }
+
+        /// Part to add from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                m += 1.0;
+              }
+            }
+          }
+      }
+
+    /// Computation of covariance Matrix
+    outerSum = m;
+    lastOuterSum = m;
+  }
+
+  ASSERT (( lastInnerSum != 0 )); // Maybe a problem here. Can be normal ... but needs to check twice.
+
+  lastInnerSpel = currentInnerSpel;
+  lastOuterSpel = currentOuterSpel;
+
+#ifdef DEBUG_VERBOSE
+  return recount;
+#else
+  return false;
+#endif
+}
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 2 >::core_evalCovarianceMatrix
+( const SurfelIterator & it,
+  CovarianceMatrix & innerMatrix,
+  CovarianceMatrix & outerMatrix,
+  bool useLastResults,
+  Spel & lastInnerSpel,
+  Spel & lastOuterSpel,
+  Quantity * lastInnerMoments,
+  Quantity * lastOuterMoments ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  using KPS = typename KSpace::PreCellularGridSpace;
+
+#ifdef DEBUG_VERBOSE
+  Dimension recount = false;
+#endif
+
+  typedef typename Functor::Quantity FQuantity;
+  DGtal::Dimension nbMasks = myMasks->size() - 1;
+  DGtal::Dimension positionOfFullKernel = 4;
+
+  Quantity m[ nbMoments ]; /// <! [ m00, m01, m10, m11, m02, m20 ]
+  std::fill( m, m + nbMoments, NumberTraits< Quantity >::ZERO ); /// <! clear array
+
+  Spel currentInnerSpel, currentOuterSpel;
+  Spel shiftedSpel;
+  Point shiftInnerSpel, shiftOuterSpel;
+  Point diffSpel;
+
+  bool bComputed = false; /// <! if the cell has already been computed, continue to the next
+
+  int x, y, x2, y2, x2y2;
+  unsigned int offset;
+
+  /// Inner cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentInnerSpel = myKSpace.sDirectIncident( *it, kDim ); /// Spel on the border, but inside the shape
+    shiftInnerSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    /// Check if we can use previous results
+    if( useLastResults )
+      {
+        bComputed = false;
+
+        if(  currentInnerSpel == lastInnerSpel )
+          {
+            memcpy( m, lastInnerMoments, nbMoments * sizeof( Quantity ));
+            computeCovarianceMatrix( m, innerMatrix );
+
+            bComputed = true;
+          }
+        else if(  currentInnerSpel == lastOuterSpel )
+          {
+            memcpy( m, lastOuterMoments, nbMoments * sizeof( Quantity ));
+            computeCovarianceMatrix( m, outerMatrix );
+
+            bComputed = true;
+          }
+        else
+          {
+            diffSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( lastInnerSpel );
+
+            x = diffSpel[ 0 ];
+            y = diffSpel[ 1 ];
+            x2 = x * x;
+            y2 = y * y;
+            x2y2 = x2 + y2;
+
+            offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 );
+
+            if( x2y2 != 4 && x2y2 != 8 ) /// Previous and current cells aren't adjacent. Compute on the full kernel
+              {
+                useLastResults = false;
+#ifdef DEBUG_VERBOSE
+                recount = true;
+#endif
+              }
+            else if( offset == positionOfFullKernel ) /// Full kernel in 2D. Never reached because case already considered before. It's a honeypot.
+              {
+                trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+              }
+            else
+              {
+                useLastResults = true;
+              }
+          }
+      }
+
+    if( !bComputed )
+      {
+        if( !useLastResults ) /// Computation on full kernel, we have no previous results
+          {
+            std::fill( m, m + nbMoments, NumberTraits< Quantity >::ZERO ); /// <! clear array
+
+            if( isInitFullMasks )
+              {
+                for( KernelConstIterator itm = myKernelMask->first; itm != myKernelMask->second; ++itm )
+                  {
+                    auto preShiftedSpel = KPS::sSpel( *itm );
+                    preShiftedSpel.coordinates += shiftInnerSpel;
+
+                    if( myKSpace.sIsInside( preShiftedSpel ) )
+                    {
+                      myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                      if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                      {
+                        fillMoments( m, shiftedSpel, 1.0 );
+                      }
+                    }
+                  }
+              }
+            else if( isInitKernelAndMasks )
+              {
+                Domain domain = myKernel->getDomain();
+                for( typename Domain::ConstIterator itm = domain.begin(), itend = domain.end(); itm != itend; ++itm )
+                  {
+                    if( myKernel->operator()( *itm ))
+                      {
+                        auto preShiftedSpel = KPS::sSpel( *itm );
+                        preShiftedSpel.coordinates += shiftInnerSpel;
+
+                        if( myKSpace.sIsInside( preShiftedSpel ) )
+                        {
+                          myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                          if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                          {
+                            fillMoments( m, shiftedSpel, 1.0 );
+                          }
+                        }
+                      }
+                  }
+              }
+            else
+              {
+                trace.error() << "DigitalSurfaceConvolver: You need to init the convolver first." << std::endl;
+                return false;
+              }
+          }
+        else /// Using lastInnerMoments
+          {
+            memcpy( m, lastInnerMoments, nbMoments * sizeof( Quantity ));
+
+            /// Part to substract from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel - diffSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    fillMoments( m, shiftedSpel, -1.0 );
+                  }
+                }
+              }
+
+            /// Part to add from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    fillMoments( m, shiftedSpel, 1.0 );
+                  }
+                }
+              }
+          }
+
+        /// Computation of covariance Matrix
+        computeCovarianceMatrix( m, innerMatrix );
+        memcpy( lastInnerMoments, m, nbMoments * sizeof( Quantity ));
+      }
+  }
+
+  /// Outter cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentOuterSpel = myKSpace.sIndirectIncident( *it, kDim );
+    shiftOuterSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    ASSERT( currentInnerSpel != currentOuterSpel );
+
+    diffSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( currentInnerSpel );
+
+    x = diffSpel[ 0 ];
+    y = diffSpel[ 1 ];
+    x2 = x * x;
+    y2 = y * y;
+    x2y2 = x2 + y2;
+
+    offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 );
+
+    if(  x2y2 != 4 && x2y2 != 8 ) /// Inside and outside cells aren't adjacent, but should be. It's a honeypot.
+      {
+        trace.error() << "Error - Found that inside and outside cells aren't adjacent. That's not logic.\n";
+      }
+    else if(  offset == positionOfFullKernel ) /// Full kernel in 2D. Never reached because case already considered before. It's a honeypot.
+      {
+        trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+      }
+    else
+      {
+        /// Part to substract from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel - diffSpel;
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                fillMoments( m, shiftedSpel, -1.0 );
+              }
+            }
+          }
+
+        /// Part to add from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                fillMoments( m, shiftedSpel, 1.0 );
+              }
+            }
+          }
+      }
+
+    /// Computation of covariance Matrix
+    computeCovarianceMatrix( m, outerMatrix );
+    memcpy( lastOuterMoments, m, nbMoments * sizeof( Quantity ));
+  }
+
+  ASSERT (( lastInnerMoments[ 0 ] != 0 )); // Maybe a problem here. Can be normal ... but needs to check twice.
+
+  lastInnerSpel = currentInnerSpel;
+  lastOuterSpel = currentOuterSpel;
+
+#ifdef DEBUG_VERBOSE
+  return recount;
+#else
+  return false;
+#endif
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////// 3D /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >
+::DigitalSurfaceConvolver( ConstAlias< Functor > f,
+                           ConstAlias< KernelFunctor > g,
+                           ConstAlias< KSpace > space)
+  : dimension( 3 ),
+    myFFunctor( f ),
+    myGFunctor( g ),
+    myKSpace( space ),
+    isInitFullMasks( false ),
+    isInitKernelAndMasks( false )
+{
+  myEmbedder = Embedder( myKSpace );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel>
+inline
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >
+::DigitalSurfaceConvolver( const DigitalSurfaceConvolver& other )
+  : dimension( 3 ),
+    myFFunctor( other.myFFunctor ),
+    myGFunctor( other.myGFunctor ),
+    myKSpace( other.myKSpace ),
+    myEmbedder( other.myEmbedder ),
+    isInitFullMasks( other.isInitFullMasks ),
+    isInitKernelAndMasks( other.isInitKernelAndMasks ),
+    myMasks( other.myMasks ),
+    myKernel( other.myKernel ),
+    myKernelMask( other.myKernelMask ),
+    myKernelSpelOrigin( other.myKernelSpelOrigin )
+{
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::init
+( const Point & pOrigin,
+  ConstAlias< PairIterators > fullKernel,
+  ConstAlias< std::vector< PairIterators > > masks )
+{
+  myKernelSpelOrigin = myKSpace.sSpel( pOrigin );
+  myKernelMask = &fullKernel;
+  myMasks = &masks;
+
+  ASSERT ( myMasks->size () == 27 );
+
+  isInitFullMasks = true;
+  isInitKernelAndMasks = false;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::init
+( const Point & pOrigin,
+  ConstAlias< DigitalKernel > fullKernel,
+  ConstAlias< std::vector< PairIterators > > masks )
+{
+  myKernelSpelOrigin = myKSpace.sSpel( pOrigin );
+  myKernel = &fullKernel;
+  myMasks = &masks;
+
+  ASSERT ( myMasks->size () == 27 );
+
+  isInitFullMasks = false;
+  isInitKernelAndMasks = true;
+}
+
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+inline
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::eval
+( const SurfelIterator & it ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Quantity innerSum, outerSum;
+
+  core_eval( it, innerSum, outerSum, false );
+
+  double lambda = 0.5;
+  return ( innerSum * lambda + outerSum * ( 1.0 - lambda ));
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename EvalFunctor >
+inline
+typename EvalFunctor::Value
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::eval
+( const SurfelIterator & it,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Quantity innerSum, outerSum;
+  Quantity resultQuantity;
+
+  core_eval( it, innerSum, outerSum, false );
+
+  double lambda = 0.5;
+  resultQuantity = innerSum * lambda + outerSum * ( 1.0 - lambda );
+  return functor( resultQuantity );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::eval
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerSum;
+  Quantity lastOuterSum;
+
+  Quantity innerSum, outerSum;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+#endif
+        }
+      else
+        {
+          core_eval( it, innerSum, outerSum, false, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+        }
+
+      double lambda = 0.5;
+      *result++ = ( innerSum * lambda + outerSum * ( 1.0 - lambda ));
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator, typename EvalFunctor >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::eval
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerSum;
+  Quantity lastOuterSum;
+
+  Quantity innerSum, outerSum;
+  Quantity resultQuantity;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_eval( it, innerSum, outerSum, true, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+#endif
+        }
+      else
+        {
+          core_eval( it, innerSum, outerSum, false, lastInnerSpel, lastOuterSpel, lastInnerSum, lastOuterSum );
+        }
+
+      double lambda = 0.5;
+      resultQuantity = innerSum * lambda + outerSum * ( 1.0 - lambda );
+      *result++ = functor( resultQuantity );
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+inline
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::CovarianceMatrix
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::evalCovarianceMatrix
+( const SurfelIterator & it ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+
+  core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false );
+
+  double lambda = 0.5;
+  return ( innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda ));
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename EvalFunctor >
+inline
+typename EvalFunctor::Value
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::evalCovarianceMatrix
+( const SurfelIterator & it,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+  CovarianceMatrix resultCovarianceMatrix;
+
+  core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false );
+
+  double lambda = 0.5;
+  resultCovarianceMatrix = innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda );
+  return functor( resultCovarianceMatrix );
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::evalCovarianceMatrix
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity lastInnerMoments[ nbMoments ];
+  Quantity lastOuterMoments[ nbMoments ];
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+#endif
+        }
+      else
+        {
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+        }
+
+      double lambda = 0.5;
+      *result++ = ( innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda ));
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator, typename OutputIterator, typename EvalFunctor >
+inline
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::evalCovarianceMatrix
+( const SurfelIterator & itbegin,
+  const SurfelIterator & itend,
+  OutputIterator & result,
+  EvalFunctor functor ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  Dimension total = 0;
+#ifdef DEBUG_VERBOSE
+  Dimension recount = 0;
+#endif
+
+  Quantity *lastInnerMoments = new Quantity[ nbMoments ];
+  Quantity *lastOuterMoments = new Quantity[ nbMoments ];
+
+  CovarianceMatrix innerCovarianceMatrix, outerCovarianceMatrix;
+  CovarianceMatrix resultCovarianceMatrix;
+
+  Spel lastInnerSpel, lastOuterSpel;
+
+  /// Iterate on all cells
+  for( SurfelIterator it = itbegin; it != itend; ++it )
+    {
+      if( total != 0 )
+        {
+#ifdef DEBUG_VERBOSE
+          bool hasJumped = core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+          recount = ( hasJumped ) ? recount + 1 : recount;
+#else
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, true, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+#endif
+        }
+      else
+        {
+          core_evalCovarianceMatrix( it, innerCovarianceMatrix, outerCovarianceMatrix, false, lastInnerSpel, lastOuterSpel, lastInnerMoments, lastOuterMoments );
+        }
+
+      double lambda = 0.5;
+      resultCovarianceMatrix = innerCovarianceMatrix * lambda + outerCovarianceMatrix * ( 1.0 - lambda );
+      *result++ = functor( resultCovarianceMatrix );
+
+      ++total;
+    }
+
+#ifdef DEBUG_VERBOSE
+  std::cout << "#total cells = " << total << std::endl;
+  std::cout << "#recount = " << recount << std::endl;
+#endif
+}
+
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+inline
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::isValid() const
+{
+  return true;
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::fillMoments
+( Quantity * aMomentMatrix,
+  const Spel & aSpel,
+  double direction ) const
+{
+  RealPoint current = myEmbedder( aSpel );
+  double x = current[ 0 ];
+  double y = current[ 1 ];
+  double z = current[ 2 ];
+
+  aMomentMatrix[ 0 ] += direction * 1;
+  aMomentMatrix[ 1 ] += direction * z;
+  aMomentMatrix[ 2 ] += direction * y;
+  aMomentMatrix[ 3 ] += direction * x;
+  aMomentMatrix[ 4 ] += direction * y * z;
+  aMomentMatrix[ 5 ] += direction * x * z;
+  aMomentMatrix[ 6 ] += direction * x * y;
+  aMomentMatrix[ 7 ] += direction * z * z;
+  aMomentMatrix[ 8 ] += direction * y * y;
+  aMomentMatrix[ 9 ] += direction * x * x;
+
+
+}
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+void
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::computeCovarianceMatrix
+( const Quantity * aMomentMatrix,
+  CovarianceMatrix & aCovarianceMatrix ) const
+{
+  MatrixQuantity A;
+  double B;
+  MatrixQuantity C;
+
+  A.setComponent( 0, 0, aMomentMatrix[ 9 ] );
+  A.setComponent( 0, 1, aMomentMatrix[ 6 ] );
+  A.setComponent( 0, 2, aMomentMatrix[ 5 ] );
+  A.setComponent( 1, 0, aMomentMatrix[ 6 ] );
+  A.setComponent( 1, 1, aMomentMatrix[ 8 ] );
+  A.setComponent( 1, 2, aMomentMatrix[ 4 ] );
+  A.setComponent( 2, 0, aMomentMatrix[ 5 ] );
+  A.setComponent( 2, 1, aMomentMatrix[ 4 ] );
+  A.setComponent( 2, 2, aMomentMatrix[ 7 ] );
+
+  B = 1.0 / aMomentMatrix[ 0 ];
+
+  C.setComponent( 0, 0, aMomentMatrix[ 3 ] * aMomentMatrix[ 3 ] );
+  C.setComponent( 0, 1, aMomentMatrix[ 3 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 0, 2, aMomentMatrix[ 3 ] * aMomentMatrix[ 1 ] );
+  C.setComponent( 1, 0, aMomentMatrix[ 2 ] * aMomentMatrix[ 3 ] );
+  C.setComponent( 1, 1, aMomentMatrix[ 2 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 1, 2, aMomentMatrix[ 2 ] * aMomentMatrix[ 1 ] );
+  C.setComponent( 2, 0, aMomentMatrix[ 1 ] * aMomentMatrix[ 3 ] );
+  C.setComponent( 2, 1, aMomentMatrix[ 1 ] * aMomentMatrix[ 2 ] );
+  C.setComponent( 2, 2, aMomentMatrix[ 1 ] * aMomentMatrix[ 1 ] );
+
+  aCovarianceMatrix = A - C * B;
+}
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+const int
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::nbMoments = 10;
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Spel
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::defaultInnerSpel = Spel();
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Spel
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::defaultOuterSpel = Spel();
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::defaultInnerMoments[ 10 ] = {Quantity(0)};
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::defaultOuterMoments[ 10 ] = {Quantity(0)};
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::defaultInnerSum = Quantity(0);
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+typename DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::Quantity
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::defaultOuterSum = Quantity(0);
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::core_eval
+( const SurfelIterator & it,
+  Quantity & innerSum,
+  Quantity & outerSum,
+  bool useLastResults,
+  Spel & lastInnerSpel,
+  Spel & lastOuterSpel,
+  Quantity & lastInnerSum,
+  Quantity & lastOuterSum ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  using KPS = typename KSpace::PreCellularGridSpace;
+
+#ifdef DEBUG_VERBOSE
+  Dimension recount = false;
+#endif
+
+  typedef typename Functor::Quantity FQuantity;
+  DGtal::Dimension nbMasks = myMasks->size() - 1;
+  DGtal::Dimension positionOfFullKernel = 13;
+
+  Quantity m = NumberTraits< Quantity >::ZERO;
+
+  Spel currentInnerSpel, currentOuterSpel;
+  Spel shiftedSpel;
+  Point shiftInnerSpel, shiftOuterSpel;
+  Point diffSpel;
+
+  bool bComputed = false; /// <! if the cell has already been computed, continue to the next
+
+  int x, y, z, x2, y2, z2, x2y2z2;
+  unsigned int offset;
+
+  /// Inner cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentInnerSpel = myKSpace.sDirectIncident( *it, kDim ); /// Spel on the border, but inside the shape
+    shiftInnerSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    /// Check if we can use previous results
+    if( useLastResults )
+      {
+        bComputed = false;
+
+        if( currentInnerSpel == lastInnerSpel )
+          {
+            m = lastInnerSum;
+            innerSum = m;
+
+            bComputed = true;
+          }
+        else if( currentInnerSpel == lastOuterSpel )
+          {
+            m = lastOuterSum;
+            outerSum = m;
+
+            bComputed = true;
+          }
+        else
+          {
+            diffSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( lastInnerSpel );
+
+            x = diffSpel[ 0 ];
+            y = diffSpel[ 1 ];
+            z = diffSpel[ 2 ];
+            x2 = x * x;
+            y2 = y * y;
+            z2 = z * z;
+            x2y2z2 = x2 + y2 + z2;
+
+            offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 ) + ((( z / 2 ) + 1 ) * 9 );
+
+            if( x2y2z2 != 4 && x2y2z2 != 8 && !( x2 == 4 && y2 == 4 && z2 == 4 )) /// Previous and current cells aren't adjacent. Compute on the full kernel
+              {
+                useLastResults = false;
+#ifdef DEBUG_VERBOSE
+                recount = true;
+#endif
+              }
+            else if( offset == positionOfFullKernel ) /// Full kernel in 3D. Never reached because case already considered before. It's a honeypot.
+              {
+                trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+              }
+            else
+              {
+                useLastResults = true;
+              }
+          }
+      }
+
+    if( !bComputed )
+      {
+        if( !useLastResults ) /// Computation on full kernel, we have no previous results
+          {
+            m = NumberTraits< Quantity >::ZERO;
+
+            if( isInitFullMasks )
+              {
+                for( KernelConstIterator itm = myKernelMask->first; itm != myKernelMask->second; ++itm )
+                  {
+                    auto preShiftedSpel = KPS::sSpel( *itm );
+                    preShiftedSpel.coordinates += shiftInnerSpel;
+
+                    if( myKSpace.sIsInside( preShiftedSpel ) )
+                    {
+                      myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                      if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                      {
+                        m += 1.0;
+                      }
+                    }
+                  }
+              }
+            else if( isInitKernelAndMasks )
+              {
+                Domain domain = myKernel->getDomain();
+                for( typename Domain::ConstIterator itm = domain.begin(), itend = domain.end(); itm != itend; ++itm )
+                  {
+                    if( myKernel->operator()( *itm ))
+                      {
+                        auto preShiftedSpel = KPS::sSpel( *itm );
+                        preShiftedSpel.coordinates += shiftInnerSpel;
+
+                        if( myKSpace.sIsInside( preShiftedSpel ) )
+                        {
+                          myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                          if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                          {
+                            m += 1.0;
+                          }
+                        }
+                      }
+                  }
+              }
+            else
+              {
+                trace.error() << "DigitalSurfaceConvolver: You need to init the convolver first." << std::endl;
+                return false;
+              }
+          }
+        else /// Using lastInnerMoments
+          {
+            m = lastInnerSum;
+
+            /// Part to substract from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel - diffSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    m -= 1.0;
+                  }
+                }
+              }
+
+            /// Part to add from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    m += 1.0;
+                  }
+                }
+              }
+          }
+
+        /// Computation of covariance Matrix
+        innerSum = m;
+        lastInnerSum = m;
+      }
+  }
+
+  /// Outter cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentOuterSpel = myKSpace.sIndirectIncident( *it, kDim );
+    shiftOuterSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    ASSERT( currentInnerSpel != currentOuterSpel );
+
+    diffSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( currentInnerSpel );
+
+    x = diffSpel[ 0 ];
+    y = diffSpel[ 1 ];
+    z = diffSpel[ 2 ];
+    x2 = x * x;
+    y2 = y * y;
+    z2 = z * z;
+    x2y2z2 = x2 + y2 + z2;
+
+    offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 ) + ((( z / 2 ) + 1) * 9 );
+
+    if(  x2y2z2 != 4 && x2y2z2 != 8 && !( x2 == 4 && y2 == 4 && z2 == 4 )) /// Inside and outside cells aren't adjacent, but should be. It's a honeypot.
+      {
+        trace.error() << "Error - Found that inside and outside cells aren't adjacent. That's not logic.\n";
+      }
+    else if(  offset == positionOfFullKernel ) /// Full kernel in 3D. Never reached because case already considered before. It's a honeypot.
+      {
+        trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+      }
+    else
+      {
+        /// Part to substract from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel - diffSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates
+                                   );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                m -= 1.0;
+              }
+            }
+          }
+
+        /// Part to add from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                m += 1.0;
+              }
+            }
+          }
+      }
+
+    /// Computation of covariance Matrix
+    outerSum = m;
+    lastOuterSum = m;
+  }
+
+  ASSERT (( lastInnerSum != 0 )); // Maybe a problem here. Can be normal ... but needs to check twice.
+
+  lastInnerSpel = currentInnerSpel;
+  lastOuterSpel = currentOuterSpel;
+
+#ifdef DEBUG_VERBOSE
+  return recount;
+#else
+  return false;
+#endif
+}
+
+
+template< typename Functor, typename KernelFunctor, typename KSpace, typename DigitalKernel >
+template< typename SurfelIterator >
+bool
+DGtal::DigitalSurfaceConvolver< Functor, KernelFunctor, KSpace, DigitalKernel, 3 >::core_evalCovarianceMatrix
+( const SurfelIterator & it,
+  CovarianceMatrix & innerMatrix,
+  CovarianceMatrix & outerMatrix,
+  bool useLastResults,
+  Spel & lastInnerSpel,
+  Spel & lastOuterSpel,
+  Quantity * lastInnerMoments,
+  Quantity * lastOuterMoments ) const
+{
+  ASSERT ( isInitFullMasks == true || isInitKernelAndMasks == true );
+
+  using KPS = typename KSpace::PreCellularGridSpace;
+
+#ifdef DEBUG_VERBOSE
+  Dimension recount = false;
+#endif
+
+  typedef typename Functor::Quantity FQuantity;
+  DGtal::Dimension nbMasks = static_cast<Dimension>(myMasks->size()) - 1;
+  DGtal::Dimension positionOfFullKernel = 13;
+
+  Quantity m[ nbMoments ]; /// <! [ m000, m001, m010, m100, m011, m101, m110, m002, m020, m200 ]
+  std::fill( m, m + nbMoments, NumberTraits< Quantity >::ZERO ); /// <! clear array
+
+  Spel currentInnerSpel, currentOuterSpel;
+  Spel shiftedSpel;
+  Point shiftInnerSpel, shiftOuterSpel;
+  Point diffSpel;
+
+  bool bComputed = false; /// <! if the cell has already been computed, continue to the next
+
+  int x, y, z, x2, y2, z2, x2y2z2;
+  unsigned int offset;
+
+  /// Inner cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentInnerSpel = myKSpace.sDirectIncident( *it, kDim ); /// Spel on the border, but inside the shape
+    shiftInnerSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    /// Check if we can use previous results
+    if( useLastResults )
+      {
+        bComputed = false;
+
+        if(  currentInnerSpel == lastInnerSpel )
+          {
+            memcpy( m, lastInnerMoments, nbMoments * sizeof( Quantity ));
+            computeCovarianceMatrix( m, innerMatrix );
+
+            bComputed = true;
+          }
+        else if(  currentInnerSpel == lastOuterSpel )
+          {
+            memcpy( m, lastOuterMoments, nbMoments * sizeof( Quantity ));
+            computeCovarianceMatrix( m, outerMatrix );
+
+            bComputed = true;
+          }
+        else
+          {
+            diffSpel = myKSpace.sKCoords( currentInnerSpel ) - myKSpace.sKCoords( lastInnerSpel );
+
+            x = diffSpel[ 0 ];
+            y = diffSpel[ 1 ];
+            z = diffSpel[ 2 ];
+            x2 = x * x;
+            y2 = y * y;
+            z2 = z * z;
+            x2y2z2 = x2 + y2 + z2;
+
+            offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 ) + ((( z / 2 ) + 1 ) * 9 );
+
+            if( x2y2z2 != 4 && x2y2z2 != 8 && !( x2 == 4 && y2 == 4 && z2 == 4 )) /// Previous and current cells aren't adjacent. Compute on the full kernel
+              {
+                useLastResults = false;
+#ifdef DEBUG_VERBOSE
+                recount = true;
+#endif
+              }
+            else if( offset == positionOfFullKernel ) /// Full kernel in 3D. Never reached because case already considered before. It's a honeypot.
+              {
+                trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+              }
+            else
+              {
+                useLastResults = true;
+              }
+          }
+      }
+
+    if( !bComputed )
+      {
+        if( !useLastResults ) /// Computation on full kernel, we have no previous results
+          {
+            std::fill( m, m + nbMoments, NumberTraits< Quantity >::ZERO ); /// <! clear array
+
+            if( isInitFullMasks )
+              {
+                for( KernelConstIterator itm = myKernelMask->first; itm != myKernelMask->second; ++itm )
+                  {
+                    auto preShiftedSpel = KPS::sSpel( *itm );
+                    preShiftedSpel.coordinates += shiftInnerSpel;
+
+                    if( myKSpace.sIsInside( preShiftedSpel ) )
+                    {
+                      myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                      ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                      if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                      {
+                        fillMoments( m, shiftedSpel, 1.0 );
+                      }
+                    }
+                  }
+              }
+            else if( isInitKernelAndMasks )
+              {
+                Domain domain = myKernel->getDomain();
+                for( typename Domain::ConstIterator itm = domain.begin(), itend = domain.end(); itm != itend; ++itm )
+                  {
+                    if( myKernel->operator()( *itm ))
+                      {
+                        auto preShiftedSpel = KPS::sSpel( *itm );
+                        preShiftedSpel.coordinates += shiftInnerSpel;
+
+                        if( myKSpace.sIsInside( preShiftedSpel ) )
+                        {
+                          myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                          ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                          if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                          {
+                            fillMoments( m, shiftedSpel, 1.0 );
+                          }
+                        }
+                      }
+                  }
+              }
+            else
+              {
+                trace.error() << "DigitalSurfaceConvolver: You need to init the convolver first." << std::endl;
+                return false;
+              }
+          }
+        else /// Using lastInnerMoments
+          {
+            memcpy( m, lastInnerMoments, nbMoments * sizeof( Quantity ));
+
+            /// Part to substract from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel - diffSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    fillMoments( m, shiftedSpel, -1.0 );
+                  }
+                }
+              }
+
+            /// Part to add from previous result.
+            for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+              {
+                auto preShiftedSpel = KPS::sSpel( *itm );
+                preShiftedSpel.coordinates += shiftInnerSpel;
+
+                if( myKSpace.sIsInside( preShiftedSpel ) )
+                {
+                  myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+                  ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+                  if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+                  {
+                    fillMoments( m, shiftedSpel, 1.0 );
+                  }
+                }
+              }
+          }
+
+        /// Computation of covariance Matrix
+        computeCovarianceMatrix( m, innerMatrix );
+        memcpy( lastInnerMoments, m, nbMoments * sizeof( Quantity ));
+      }
+  }
+
+  /// Outter cell
+  {
+    DGtal::Dimension kDim = myKSpace.sOrthDir( *it );
+    currentOuterSpel = myKSpace.sIndirectIncident( *it, kDim );
+    shiftOuterSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( myKernelSpelOrigin );
+
+    ASSERT( currentInnerSpel != currentOuterSpel );
+
+    diffSpel = myKSpace.sKCoords( currentOuterSpel ) - myKSpace.sKCoords( currentInnerSpel );
+
+    x = diffSpel[ 0 ];
+    y = diffSpel[ 1 ];
+    z = diffSpel[ 2 ];
+    x2 = x * x;
+    y2 = y * y;
+    z2 = z * z;
+    x2y2z2 = x2 + y2 + z2;
+
+    offset = (( x / 2 ) + 1 ) + ((( y / 2 ) + 1 ) * 3 ) + ((( z / 2 ) + 1) * 9 );
+
+    if(  x2y2z2 != 4 && x2y2z2 != 8 && !( x2 == 4 && y2 == 4 && z2 == 4 )) /// Inside and outside cells aren't adjacent, but should be. It's a honeypot.
+      {
+        trace.error() << "Error - Found that inside and outside cells aren't adjacent. That's not logic.\n";
+      }
+    else if(  offset == positionOfFullKernel ) /// Full kernel in 3D. Never reached because case already considered before. It's a honeypot.
+      {
+        trace.error() << "Error - Ask to compute full kernel at the wrong moment. Maybe it's an offset computation bug ?\n";
+      }
+    else
+      {
+        /// Part to substract from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ offset ].first, itend = (*myMasks)[ offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel - diffSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                fillMoments( m, shiftedSpel, -1.0 );
+              }
+            }
+          }
+
+        /// Part to add from previous result.
+        for( KernelConstIterator itm = (*myMasks)[ nbMasks - offset ].first, itend = (*myMasks)[ nbMasks - offset ].second; itm != itend; ++itm )
+          {
+            auto preShiftedSpel = KPS::sSpel( *itm );
+            preShiftedSpel.coordinates += shiftOuterSpel;
+
+            if( myKSpace.sIsInside( preShiftedSpel ) )
+            {
+              myKSpace.sSetKCoords( shiftedSpel, preShiftedSpel.coordinates );
+
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 0 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 1 ] & 0x1 );
+              ASSERT( myKSpace.sKCoords( shiftedSpel )[ 2 ] & 0x1 );
+
+              if( myFFunctor( shiftedSpel ) != NumberTraits< FQuantity >::ZERO )
+              {
+                fillMoments( m, shiftedSpel, 1.0 );
+              }
+            }
+          }
+      }
+
+    /// Computation of covariance Matrix
+    computeCovarianceMatrix( m, outerMatrix );
+    memcpy( lastOuterMoments, m, nbMoments * sizeof( Quantity ));
+  }
+
+  ASSERT (( lastInnerMoments[ 0 ] != 0 )); // Maybe a problem here. Can be normal ... but needs to check twice.
+
+  lastInnerSpel = currentInnerSpel;
+  lastOuterSpel = currentOuterSpel;
+
+#ifdef DEBUG_VERBOSE
+  return recount;
+#else
+  return false;
+#endif
+}

@@ -1,0 +1,199 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file RegularPointEmbedder.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/06/29
+ *
+ * Implementation of inline methods defined in RegularPointEmbedder.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cmath>
+#include "DGtal/kernel/NumberTraits.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::RegularPointEmbedder<TSpace>::~RegularPointEmbedder()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::RegularPointEmbedder<TSpace>::RegularPointEmbedder()
+{}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::RegularPointEmbedder<TSpace> &
+DGtal::RegularPointEmbedder<TSpace>::
+operator=( const RegularPointEmbedder & other )
+{
+  if ( this != &other )
+    {
+      myGridSteps = other.myGridSteps;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+void 
+DGtal::RegularPointEmbedder<TSpace>
+::init( typename RealVector::Component gridStep )
+{
+  myGridSteps = RealVector::diagonal( gridStep );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+void 
+DGtal::RegularPointEmbedder<TSpace>
+::init( const RealVector & aGridSteps )
+{
+  myGridSteps = aGridSteps;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::RegularPointEmbedder<TSpace>::Point
+DGtal::RegularPointEmbedder<TSpace>
+::floor( const RealPoint & p ) const
+{
+  Point aPoint;
+  for ( Dimension i = 0; i < Space::dimension; ++i )
+    aPoint[ i ] = (Integer) ::floor( p[ i ] / myGridSteps[ i ] );
+  return aPoint;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::RegularPointEmbedder<TSpace>::Point
+DGtal::RegularPointEmbedder<TSpace>
+::ceil( const RealPoint & p ) const
+{
+  Point aPoint;
+  for ( Dimension i = 0; i < Space::dimension; ++i )
+    aPoint[ i ] = (Integer) ::ceil( p[ i ] / myGridSteps[ i ] );
+  return aPoint;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::RegularPointEmbedder<TSpace>::Point
+DGtal::RegularPointEmbedder<TSpace>
+::round( const RealPoint & p ) const
+{
+  Point aPoint;
+  for ( Dimension i = 0; i < Space::dimension; ++i )
+    aPoint[ i ] = (Integer) ::round( p[ i ] / myGridSteps[ i ] );
+  return aPoint;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::RegularPointEmbedder<TSpace>::RealPoint
+DGtal::RegularPointEmbedder<TSpace>
+::embed( const Point & p ) const
+{
+  return this->operator()( p );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::RegularPointEmbedder<TSpace>::RealPoint
+DGtal::RegularPointEmbedder<TSpace>
+::operator()( const Point & p ) const
+{
+  RealPoint aRealPoint;
+  for ( Dimension i = 0; i < Space::dimension; ++i )
+    aRealPoint[ i ] = NumberTraits<Integer>::castToDouble( p[ i ] ) 
+      * myGridSteps[ i ];
+  return aRealPoint;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::RegularPointEmbedder<TSpace>::RealVector
+DGtal::RegularPointEmbedder<TSpace>
+::gridSteps() const
+{
+  return myGridSteps;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace>
+inline
+void
+DGtal::RegularPointEmbedder<TSpace>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[RegularPointEmbedder]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace>
+inline
+bool
+DGtal::RegularPointEmbedder<TSpace>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const RegularPointEmbedder<TSpace> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

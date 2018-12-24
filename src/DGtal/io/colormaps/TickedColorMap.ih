@@ -1,0 +1,227 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file TickedColorMap.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2015/04/06
+ *
+ * Implementation of inline methods defined in TickedColorMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+template <typename Value, typename CMAP>
+inline
+DGtal::TickedColorMap<Value,CMAP>::TickedColorMap
+( const Value & amin,
+  const Value & amax,
+  const Color & color )
+  : myMin( amin ), myMax( amax ), myTickColor( color )
+{
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+  myColorMap = new ColorMap(myMin,myMax);
+}
+
+template <typename Value, typename CMAP>
+inline
+DGtal::TickedColorMap<Value,CMAP>::TickedColorMap
+( const ColorMap& other,
+  const Color & color )
+  : myMin( other.min() ), myMax( other.max() ), myTickColor( color )
+{
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+  myColorMap = new ColorMap( other );
+}
+
+
+template <typename Value, typename CMAP>
+inline
+DGtal::TickedColorMap<Value,CMAP>::TickedColorMap
+( const TickedColorMap<Value,CMAP> & other )
+  : myMin( other.myMin ), myMax( other.myMax ), myTickColor( other.myTickColor )
+{ 
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+template <typename Value, typename CMAP>
+inline
+DGtal::TickedColorMap<Value,CMAP>::~TickedColorMap()
+{
+  delete myColorMap;
+}
+
+template <typename Value, typename CMAP>
+DGtal::TickedColorMap<Value,CMAP> &
+DGtal::TickedColorMap<Value,CMAP>::operator=
+( const TickedColorMap<Value,CMAP> & other )
+{
+  if ( &other != this ) {
+    myMin = other.myMin;
+    myMax = other.myMax;
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+    myTickColor = other.myTickColor;
+    myTicks = other.myTicks;   
+  }
+  return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template<typename Value, typename CMAP>
+inline
+const Value &
+DGtal::TickedColorMap<Value,CMAP>::min() const
+{
+  return myMin;
+}
+
+template<typename Value, typename CMAP>
+inline
+const Value &
+DGtal::TickedColorMap<Value,CMAP>::max() const
+{
+  return myMax;
+}
+
+template<typename Value, typename CMAP>
+inline
+DGtal::Color
+DGtal::TickedColorMap<Value,CMAP>::operator()( const Value & value ) const
+{
+  //If there's no ticks, just return the color.
+  if (myTicks.size()==0)
+    return myColorMap->operator()(value);
+  
+  typename std::vector< std::pair<Value,Value> >::const_iterator  up;
+  
+  //Test the upper bound
+  up = std::upper_bound(myTicks.begin(), myTicks.end(), std::make_pair(value,value));
+  if (up == myTicks.end())
+  {
+    if (std::abs(value - myTicks[myTicks.size() -1].first) < myTicks[myTicks.size() -1].second)
+      return myTickColor;
+    else
+      return myColorMap->operator()(value);
+  }
+ 
+  if (std::abs(value - up->first) < up->second)
+    return myTickColor;
+  
+  //We test the lower bound
+  if ((up != myTicks.begin()) &&
+      (std::abs(value - (up-1)->first) < (up-1)->second))
+    return myTickColor;
+  
+  return myColorMap->operator()(value);
+}
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Value, typename CMAP>
+inline
+void
+DGtal::TickedColorMap<Value,CMAP>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[TickedColorMap " 
+      << " min=" << myMin
+      << " max=" << myMax
+      << " tickColor= "<< myTickColor
+      << " number of ticks = "<< myTicks.size()
+      << " ]";
+}
+
+template<typename Value, typename CMAP>
+inline
+void DGtal::TickedColorMap<Value,CMAP>::addTick(const Value tick,
+                                    const Value thickness)
+{
+  ASSERT( tick >= myMin );
+  ASSERT( tick <= myMax );
+  
+  myTicks.push_back(std::make_pair(tick,thickness));
+}
+
+template<typename Value, typename CMAP>
+inline
+void DGtal::TickedColorMap<Value,CMAP>::addRegularTicks(const unsigned int nbTicks,
+                                                        const Value thickness)
+{
+  const Value width=myMax-myMin;
+  for(unsigned int i=0; i < nbTicks; ++i)
+    myTicks.push_back(std::make_pair(myMin + static_cast<Value>((double)i*width/(double)nbTicks),
+                                     thickness));
+}
+
+
+template<typename Value, typename CMAP>
+inline
+void DGtal::TickedColorMap<Value,CMAP>::finalize()
+{
+  std::sort(myTicks.begin(), myTicks.end());
+}
+
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Value, typename CMAP>
+inline
+bool
+DGtal::TickedColorMap<Value,CMAP>::isValid() const
+{
+  return true;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Value, typename CMAP>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const TickedColorMap<Value,CMAP> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+

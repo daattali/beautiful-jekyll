@@ -1,0 +1,269 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Histogram.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2013/10/25
+ *
+ * Implementation of inline methods defined in Histogram.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+DGtal::Histogram<TQuantity, TBinner>::~Histogram()
+{
+  if ( myBinner != 0 ) delete myBinner;
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+DGtal::Histogram<TQuantity, TBinner>::Histogram()
+  : myBinner( 0 )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::clear()
+{
+  if ( myBinner != 0 ) 
+    {
+      delete myBinner;
+      myBinner = 0; 
+    }
+  myHistogram.clear();
+  myCumulativeHistogram.clear();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::init( Clone<Binner> binner )
+{
+  clear();
+  myBinner = new Binner( binner );
+  prepare( myBinner->size() );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+void
+DGtal::Histogram<TQuantity, TBinner>::init( Formula formula, const Statistic<Quantity> & stat )
+{
+  clear();
+  switch( formula ) {
+  case SquareRoot: /**< Rule is k=sqrt(n) */
+    myBinner = new Binner( stat.min(), stat.max(),
+                           static_cast<Bin>( ceil( sqrt( stat.samples() ) ) ) );
+    break;
+  case Sturges: /**< Rule is k=ceil(log_2(n)+1) */
+    myBinner = new Binner( stat.min(), stat.max(),
+                           static_cast<Bin>( ceil( log2( stat.samples() ) + 1 ) ) );
+    break;
+  case Rice: /**< Rule is k=ceil(n^(1/3)) */
+    myBinner = new Binner( stat.min(), stat.max(),
+                           static_cast<Bin>( ceil( pow( stat.samples(), 1.0/3.0 ) ) ) );
+    break;
+  case Scott: /**< Rule is h=3.5s/(n^(1/3)) */
+    double h = 3.5 * stat.unbiasedVariance() / ceil( pow( stat.samples(), 1.0/3.0 ) );
+    myBinner = new Binner( stat.min(), stat.max(),
+                           static_cast<Bin>( ceil( ( stat.max() - stat.min() ) / h ) ) );
+    break;
+  }
+  if ( myBinner != 0 ) prepare( myBinner->size() );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+void
+DGtal::Histogram<TQuantity, TBinner>::init( Bin nbBins, const Statistic<Quantity> & stat )
+{
+  clear();
+  myBinner = new Binner( stat.min(), stat.max(), nbBins );
+  prepare( myBinner->size() );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+typename DGtal::Histogram<TQuantity, TBinner>::Bin
+DGtal::Histogram<TQuantity, TBinner>::bin( Quantity q ) const
+{ 
+  ASSERT( isValid() );
+  return (*myBinner)( q );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::addValue( Quantity q )
+{
+  ++myHistogram[ bin( q ) ];
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+template <typename TInputIterator>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::addValues( TInputIterator it, TInputIterator itE )
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator< ConstIterator > ));
+  for ( ; it != itE; ++it )
+    addValue( *it );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+typename DGtal::Histogram<TQuantity, TBinner>::Bin
+DGtal::Histogram<TQuantity, TBinner>::size() const
+{
+  return static_cast<Bin>( myHistogram.size() );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+typename DGtal::Histogram<TQuantity, TBinner>::Size
+DGtal::Histogram<TQuantity, TBinner>::area() const
+{
+  return myCumulativeHistogram.back();
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+typename DGtal::Histogram<TQuantity, TBinner>::Size
+DGtal::Histogram<TQuantity, TBinner>::nb( Bin b ) const
+{
+  ASSERT( b < size() );
+  return myHistogram[ b ];
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+typename DGtal::Histogram<TQuantity, TBinner>::Size
+DGtal::Histogram<TQuantity, TBinner>::accumulation( Bin b ) const
+{
+  ASSERT( b < size() );
+  return myCumulativeHistogram[ b ];
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+double
+DGtal::Histogram<TQuantity, TBinner>::pdf( Bin b ) const
+{
+  return NumberTraits<Bin>::castToDouble( nb( b ) ) 
+    / NumberTraits<Size>::castToDouble( area() );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+double
+DGtal::Histogram<TQuantity, TBinner>::cdf( Bin b ) const
+{
+  return NumberTraits<Bin>::castToDouble( accumulation( b ) ) 
+    / NumberTraits<Size>::castToDouble( area() );
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::terminate()
+{
+  ConstIterator srcIt = myHistogram.begin();
+  ConstIterator srcItE = myHistogram.end();
+  Bin b = 0;
+  myCumulativeHistogram[ b ] = *srcIt++;
+  for ( ; srcIt != srcItE; ++srcIt, ++b )
+    {
+      myCumulativeHistogram[ b+1 ] = myCumulativeHistogram[ b ] + *srcIt;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TQuantity, typename TBinner>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Histogram size=" << size() << " area=" << area() << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TQuantity, typename TBinner>
+inline
+bool
+DGtal::Histogram<TQuantity, TBinner>::isValid() const
+{
+  return myBinner != 0;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TQuantity, typename TBinner>
+inline
+void
+DGtal::Histogram<TQuantity, TBinner>::prepare( Bin aSize )
+{
+  boost::ignore_unused_variable_warning( aSize );
+  myHistogram.resize( myBinner->size(), 0 );
+  myCumulativeHistogram.resize( myBinner->size(), 0 );
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TQuantity, typename TBinner>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const Histogram<TQuantity, TBinner> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

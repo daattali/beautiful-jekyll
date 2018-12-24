@@ -1,0 +1,498 @@
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+  /**
+
+@page moduleBoard2D Board2D: a stream mechanism for displaying 2D digital objects
+@authors Jacques-Olivier Lachaud, Nicolas Normand, David Coeurjolly, Martial Tola.
+
+This part of the manual describes how to export DGtal objects
+into graphics files (and later buffers). For now, it is limited
+to 2D DGtal objects like CDomain, Object, CDigitalSet, Point,
+ImageContainer. The current supported export formats are SVG,
+EPS, XFIG and TikZ. It is currently based on LibBoard, but may evolve
+later (it will probably move to <a
+href="http://www.cairographics.org">Cairo</a>).  This document is
+dedicated both to DGtal users and developers.
+
+
+[TOC]
+
+\section dgtal_dgtalboard_sec1 User guide to Board2D
+
+\subsection dgtal_dgtalboard_sec11 Elementary usage: displaying a domain and a few points
+
+To use the Board2D stream, you must include the header
+
+ \code
+#include "DGtal/io/boards/Board2D.h"
+ \endcode
+
+The class Board2D is designed so as to make easy the
+visualization of digital objects, also it is for now limited to
+2D discrete geometry. For the user, it is very simple to
+visualize digital sets, objects and others. To do so, the user
+has just to instantiate a Board2D object. This object is then
+an output stream, and if you wish to visualize some object, you
+use the stream \c operator \c << to output the object on the
+board. When you are finished, there is a command to export your
+graphics in SVG, XFIG, EPS or TikZ format.
+
+The following code snippet defines three points and a rectangular
+domain in Z2. It then displays them in a Board2D object. The
+two last commands export the graphics in SVG and EPS format. The
+full code is in dgtalBoard2D-1-points.cpp.
+
+ \code
+ using namespace DGtal;
+ using namespace DGtal::Z2i;
+
+ Point p1( -3, -2 );
+ Point p2( 7, 3 );
+ Point p3( 0, 0 );
+ Domain domain( p1, p2 );
+
+ Board2D board;
+ board << domain << p1 << p2 << p3;
+ board.saveSVG("dgtalboard-1-points.svg");
+ board.saveEPS("dgtalboard-1-points.eps");
+ board.saveTikZ("dgtalboard-1-points.tikz");
+ \endcode
+
+This program outputs this image.
+
+\image html dgtalboard-1-points.png "Drawing points with Board."
+\image latex dgtalboard-1-points.png "Drawing points with Board." width=5cm
+
+It is clear that the order in which you display elements has an
+influence on the exported graphics.
+
+\subsection dgtal_dgtalboard_sec12 Displaying sets and digital objects
+
+Displaying a digital set uses also the stream mechanism. You just
+have to use the flux operator \c << with a DigitalSet in
+parameter.
+
+ \code
+ Point p1( -10, -7 );
+ Point p2( 10, 7 );
+ Domain domain( p1, p2 );
+ DigitalSet shape_set( domain );
+ Shapes<Domain>::addNorm1Ball( shape_set, Point( -5, -1 ), 7 );
+ Shapes<Domain>::addNorm1Ball( shape_set, Point( 5, 1 ), 7 );
+ shape_set.erase( Point( -5, -1 ) );
+ shape_set.erase( Point( 5, 1 ) );
+
+ Board2D board;
+ board << domain << shape_set; // display domain and set
+ board.saveSVG( "dgtalboard-2-sets-1.svg");
+ board.saveTikZ( "dgtalboard-2-sets-1.tikz");
+ \endcode
+
+\image html dgtalboard-2-sets-1.png "Digital set drawing with Board."
+\image latex dgtalboard-2-sets-1.png "Digital set drawing with Board." width=6cm
+
+\subsection dgtal_dgtalboard_sec13 Mode selection: the example of digital objects
+
+Some digital elements (like Object, PointVector, ArithmeticalDSSComputer)
+may have several possible ways to be rendered as a graphical
+object. For instance, a pixel may be seen more as a point or more
+as a unit square in the plane. In the same idea, a digital object
+may or may not be represented with its adjacency
+relations. Otherwise said, one may wish to see the set, another
+may wish to see the graph.
+
+You may choose a \b mode for a drawable element by outputing on
+the stream a SetMode object. You just have to specify the
+classname (the easiest way is to call the method \c className()
+on an instance of the correct type) and the desired mode (a
+string). An Object is sensitive to the mode "" (default, just the
+set is displayed) and to the mode "DrawAdjacencies" (the graph is
+drawn). The following code snippet uses the digital set \c
+shape_set defined above.
+
+ \code
+  // Object with couple (4,8) of adjacency.
+  Object4_8 shape( dt4_8, shape_set );
+  board << domain // display domain
+	<< SetMode( shape.className(), "DrawAdjacencies" )
+	<< shape; // and object with mode "DrawAdjacencies"
+  board.saveSVG( "dgtalboard-2-sets-2.svg");
+  board.saveTikZ( "dgtalboard-2-sets-2.tikz");
+  board.clear();
+
+  // Object with couple (8,4) of adjacency.
+  Object8_4 shape2( dt8_4, shape_set );
+  board << domain // display domain
+	<< SetMode( shape2.className(), "DrawAdjacencies" )
+	<< shape2; // and object with mode "DrawAdjacencies"
+  board.saveSVG( "dgtalboard-2-sets-3.svg");
+  board.saveTikZ( "dgtalboard-2-sets-3.tikz");
+ \endcode
+
+Note the different adjacency relations depending on the topology
+chosen for the object. The full code is in dgtalBoard2D-2-sets.cpp.
+
+<table>
+<tr><td> \image html dgtalboard-2-sets-2.png "(4,8)-object"
+ \image latex dgtalboard-2-sets-2.png "(4,8)-object" width=5cm
+ </td>
+<td> \image html dgtalboard-2-sets-3.png "(8,4)-object"
+ \image latex dgtalboard-2-sets-3.png "(8,4)-object" width=5cm
+ </td></tr>
+</table>
+
+
+\subsection dgtal_dgtalboard_sec14 Useful modes for several drawable elements
+
+Here is a list of modes for several digital drawable elements (""
+is always default mode).
+
+- class PointVector, modes: "" / "Both", "Paving", "Grid"
+- class Object, modes: "", "DrawAdjacencies"
+- class HyperRectDomain, modes: "" / "Grid", "Paving"
+- class ArithmeticalDSS, modes: "" / "BoundingBox", "Points"
+- class FreemanChain, modes: "" / "Grid", "InterGrid"
+- class GridCurve, modes: "" / "Fill"
+- class LatticePolytope2D, modes: "" / "Transparent", "Filled"
+- class AlphaThickSegmentComputer, modes ""/ "BoundingBox"
+
+For instance, to change the drawing mode for the next object \c dss of type
+ArithmeticalDSS, you may use the line
+ \code
+ board << SetMode( dss.className(), "BoundingBox" );
+ \endcode
+
+ If you wish to display both the points of a DSS and its bounding
+ box, you must draw it twice, as follows:
+ \code
+ board << SetMode( dss.className(), "BoundingBox" ) << dss
+<< SetMode( dss.className(), "Points" ) << dss;
+ \endcode
+
+\subsection dgtal_dgtalboard_sec15 Changing the style for displaying drawable elements.
+
+All drawable elements have a default style for default. You may
+nevertheless modify it whenever you want for any object.
+The simplest way is to use instances of the following classes:
+
+- CustomColors: to change pen color and fill color.
+- CustomPenColor: to change only pen color.
+- CustomFillColor: to change only fill color.
+- CustomPen: to change pen color and fill color, but also optionnaly in this order the line width, the line style, the line cap, the line join.
+
+An instance of one of this class is then attached to the drawable
+element by creating an instance of CustomStyle. Do not worry
+about deallocating the CustomXXX instances. This is done
+automatically.  The following snippet indicates how to use these
+classes.
+
+ \code
+  Point p1( -3, -2 );
+  Point p2( 7, 3 );
+  Point p3( 0, 0 );
+  Domain domain( p1, p2 );
+
+  Color red( 255, 0, 0 );
+  Color dred( 192, 0, 0 );
+  Color dgreen( 0, 192, 0 );
+  Color blue( 0, 0, 255 );
+  Color dblue( 0, 0, 192 );
+
+  Board2D board;
+  board << domain
+	<< CustomStyle( p1.className(), new CustomColors( red, dred ) )
+	<< p1
+	<< CustomStyle( p2.className(), new CustomFillColor( dgreen ) )
+	<< p2
+	<< CustomStyle( p3.className(),
+			new CustomPen( blue, dblue, 3.0,
+				Board2D::Shape::SolidStyle,
+				Board2D::Shape::RoundCap,
+				Board2D::Shape::RoundJoin ) )
+	<< p3;
+  board.saveSVG("dgtalboard-3-custom-classes.svg");
+  board.saveTikZ("dgtalboard-3-custom-classes.svg");
+ \endcode
+
+This program (see full source at dgtalBoard2D-3-custom-classes.cpp)
+outputs the following graphics.
+
+\image html dgtalboard-3-custom-classes.png "Custom drawing."
+\image latex dgtalboard-3-custom-classes.png "Custom drawing." width=5cm
+
+
+Combining several @e CustomStyles, the main DGtal logo can be generated as follows.:
+
+@snippet boards/logoDGtal.cpp logoDGtal-main
+
+
+\subsection dgtal_dgtalboard_sec16 Creating your own custom style class for displaying drawable elements.
+
+Another way to change the style is to create yourself a minimal
+structure to hold the style. The following example shows how to
+change the pen and fill color on-the-fly. First of all, the
+custom style class:
+
+ \code
+struct MyDrawStyleCustomColor : public DrawableWithBoard2D
+{
+  Color myPenColor;
+  Color myFillColor;
+  MyDrawStyleCustomColor( const Color & penColor,
+                          const Color & fillColor )
+  : myPenColor( penColor ), myFillColor( fillColor )
+  {}
+
+  virtual void setStyle( Board2D & aboard) const
+  {
+  aboard.setFillColor( myFillColor); // specifies the fill color.
+  aboard.setPenColor( myPenColor );  // specifies the pen color.
+  }
+};
+ \endcode
+
+The custom style is then attached to drawable element by creating an instance of CustomStyle. Do not worry about deallocating the MyDrawStyleCustomColor instances. This is done automatically.
+
+ \code
+ // same shape as above
+  board << domain
+	<< CustomStyle( p1.className(), new MyDrawStyleCustomColor( red, dred ) )
+	<< p1
+	<< CustomStyle( p2.className(), new MyDrawStyleCustomColor( green, dgreen ) )
+	<< p2
+	<< CustomStyle( p3.className(), new MyDrawStyleCustomColor( blue, dblue ) )
+	<< p3;
+  board.saveSVG("dgtalboard-3-custom-points.svg");
+  board.saveTikZ("dgtalboard-3-custom-points.tikz");
+ \endcode
+
+This program (see full source at dgtalBoard2D-3-custom-points.cpp) outputs the following graphics.
+
+\image html dgtalboard-3-custom-points.png "Custom drawing of point."
+\image latex dgtalboard-3-custom-points.png "Custom drawing of point." width=6cm
+
+\subsection dgtal_dgtalboard_sec17 Using colormaps in Board2D streams
+
+You can use colormaps in conjunction with custom styles for Board2D. Several classes represent colormaps: CColorMap, ColorBrightnessColorMap, GradientColorMap, GrayscaleColorMap, HueShadeColorMap, SimpleDistanceColorMap (see \ref moduleIO). You can use any of them to produce colors. Here, we define a simple colormap going from blue to red then yellow. Then, each pixel of the digital set \c shape_set (see above) is displayed with a fill color that depends on its distance to the point \c c1.
+
+An interesting point of the exemple below is how we specify a custom style for a \b specific \b mode of some drawable element (here a Point). We just add "/"+ModeName to the name of the style.
+
+ \code
+  // Creating colormap.
+  GradientColorMap<int> cmap_grad( 0, 15 );
+  cmap_grad.addColor( Color( 50, 50, 255 ) );
+  cmap_grad.addColor( Color( 255, 0, 0 ) );
+  cmap_grad.addColor( Color( 255, 255, 10 ) );
+
+  // Creating board.
+  Board2D board;
+  board << SetMode( domain.className(), "Paving" )
+	<< domain
+	<< SetMode( p1.className(), "Paving" );
+  // This is the name of the style for a Point in mode "Paving".
+  string specificStyle =  p1.className() + "/Paving";
+  for ( DigitalSet::ConstIterator it = shape_set.begin();
+	it != shape_set.end();
+	++it )
+  {
+  unsigned int d = (unsigned int) ceil( ( *it - c1 ).norm() );
+  // specific color depending on the distance to point c1.
+  board << CustomStyle( specificStyle,
+			  new CustomColors( Color::Black,
+					  cmap_grad( d ) ) )
+	  << *it;
+  }
+  board.saveSVG( "dgtalboard-4-colormaps.svg");
+  board.saveTikZ( "dgtalboard-4-colormaps.tikz");
+ \endcode
+
+This program (see full source at dgtalBoard2D-4-colormaps.cpp) outputs the following graphics.
+
+\image html dgtalboard-4-colormaps.png "Colormap example."
+\image latex dgtalboard-4-colormaps.png "Colormap example." width=5cm
+
+More precisely, several styles may be applied before some drawable element is displayed. They are called in this order.
+  1. the default style (always applied)
+  2. the user-specified style for default mode (when defined)
+  3. the default style for the current mode (applied only if mode is not default, i.e. different from "")
+  4. the user-specified style for the current mode (applied only if mode is not default, i.e. different from "", and defined)
+
+Therefore, if you change the drawing \b mode of a drawable element and if you wish to have a specific behavior, you must attach the custom style to the mode style of your object. For instance, if your object is \c p and the mode is "Special", there is some line:
+
+ \code
+ board << CustomStyle( p.className() +"/Special", new ... );
+ \endcode
+
+Another example involving ArithmeticalDSS is greedy-dss-decomposition.cpp. It outputs the following graphics:
+
+\image html dgtalboard-5-greedy-dss.png "Greedy DSS Decomposition "
+\image latex dgtalboard-5-greedy-dss.png "Greedy DSS Decomposition" width=5cm
+
+\subsection dgtal_dgtalboard_sec18 Compiling TikZ files
+
+Quoted from http://sourceforge.net/projects/pgf/:
+<em>PGF is a TeX macro package for generating graphics. It is platform- and format-independent
+and works together with the most important TeX backend drivers, including pdftex and dvips.
+It comes with a user-friedly syntax layer called TikZ.</em>
+
+TikZ allows to create inline graphics in LaTeX documents.
+TikZ files produced by Board2D contains pgf/TikZ commands in a \c tikzpicture environment
+and are intended to be compiled by a LaTeX engine.
+Please refer to the pgf/TikZ manual and project forums for further information
+(<a href="http://sourceforge.net/projects/pgf/">pgf project homepage</a>).
+
+\subsubsection dgtal_dgtalboard_sec181 Inclusion in a LaTeX document
+
+The main LaTeX documents should be set up to use package "tikz" and TikZ library "arrows" with the
+following lines in preamble:
+
+\code
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\endcode
+
+The figure can be included in a floating environment as follows:
+@code
+\begin{figure}
+\input{myfigure.tikz}
+\caption{My caption.\label{fig:myfigure}}
+\end{figure}
+\endcode
+
+The TikZ file can be included at compilation time using the LaTeX macro \c \\input.
+
+\subsubsection dgtal_dgtalboard_sec182 Standalone compilation
+
+Alternatively, a PDF graphics file can be generated from the standalone TikZ file using a
+\c pdflatex command as shown in the following Makefile:
+
+\code
+SOURCES_TIKZ=$(wildcard *.tikz)
+
+TARGETS_PDF=$(SOURCES_TIKZ:%.tikz=%.pdf)
+
+all: $(TARGETS_PDF)
+
+.INTERMEDIATE: $(SOURCES_TIKZ:%.tikz=%.log)
+.INTERMEDIATE: $(SOURCES_TIKZ:%.tikz=%.aux)
+
+%.pdf %.aux %.log: %.tikz
+pdflatex -jobname ${basename $@} -shell-escape -interaction nonstopmode "\documentclass{article}\
+\usepackage{tikz}\
+\usetikzlibrary{arrows} \
+\usepackage[active,tightpage]{preview}\
+\PreviewEnvironment{tikzpicture}\
+\begin{document}\
+\pagestyle{empty}\
+\input{$^}\
+\end{document}"
+\endcode
+
+\subsection dgtal_dgtalboard_sec19 Conclusion and future improvements
+
+The Board2D mechanism is a simple mechanism for displaying 2D digital objects and graphics. A 3D adaptation is under development. Furthermore, in order to enhance its graphics and export possibilities, the hidden drawing library will certainly move to Cairo.
+
+\section dgtal_dgtalboard_sec2 Developer guide to Board2D
+
+This section aims at helping the developer to understand the background of the DGtalStream mechanism, and then to create its own drawable elements.
+
+\subsection dgtal_dgtalboard_sec21 Overview of the Board2D principle
+
+Following the concept paradigm adopted in DGtal, the Board2D object may only displayed instances of classes that realize the concept CDrawableWithBoard2D. For short, a drawable element @a D must:
+- have a method defining his name:
+@code
+  std::string myD.className()
+@endcode
+
+- be associated to at least two global functions @a draw and @a defaultStyle (Note that there's an exception: for a class with inner classes, this 2 functions are member functions, see for example GridCurve.h and its inner classes...)
+
+Global @a defaultStyle functions are specified in Style2DFactory.h and Style2DFactory.ih.
+
+The @a defaultStyle function must return a pointer to a DrawableWithBoard2D object. For instance, here is below an example of the \c defaultStyle function (and its DefaultDrawStylePaving structure associated) for a PointVector.
+
+Here, the DrawableWithBoard2D is just an interface that specifies a virtual method \c setStyle for the style.
+ \code
+  struct DefaultDrawStylePaving_PointVector : public DrawableWithBoard2D
+  {
+  virtual void setStyle( Board2D & aBoard ) const
+  {
+ aBoard.setPenColorRGBi(160,160,160);
+ aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+ aBoard.setFillColorRGBi(220,220,220);
+ aBoard.setLineWidth(1);
+  }
+  };
+ \endcode
+
+  The dynamically allocated instance of the default style for the drawable element may eventually be tuned for a specific mode given as a string.
+ \code
+  template<Dimension dim, typename TComponent, typename TContainer>
+  inline
+  DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::PointVector<dim, TComponent, TContainer> & p, std::string mode = "")
+  {
+  if ( ( mode == "" ) || ( mode == "Paving" ) )
+ return new DefaultDrawStylePaving_PointVector;
+  else ...
+  }
+ \endcode
+
+  "Pure" (not in the DGtal namespace) global \c draw functions are specified in the Display2DFactory.h and Display2DFactory.ih.
+
+  The \c draw function contains the drawing commands. For instance, here is below a drawing example for a PointVector object drawn as an arrow.
+
+  This method draws the drawable element on the given Board2D instance. The style has been applied automatically before.
+ \code
+  template<Dimension dim, typename TComponent1, typename TComponent2, typename TContainer1, typename TContainer2>
+  inline
+  void draw( DGtal::Board2D & board,
+const DGtal::PointVector<dim, TComponent1, TContainer1> & p,
+const DGtal::PointVector<dim, TComponent2, TContainer2> & apoint )
+  {
+  ASSERT(dim == 2);
+
+  board.drawArrow((float)apoint[0], (float) apoint[1],
+ (float) apoint[0] + p.myArray[0], (float)apoint[1] + p.myArray[1],
+ true);
+  }
+ \endcode
+
+The Board2D class operates as an output stream for drawable elements. It inherits from LibBoard::Board. This base class holds the drawing capabilities for several export formats. You must look at this class to see the drawing possibilities.
+
+An important method of Board2D is the templated Board2D::operator<<. This method takes any drawable element (satisfying CDrawableWithBoard2D) and takes care of setting the correct style and calling the drawing method of the object.
+
+The Board2D remembers what is the current style for a given drawable element type. Furthermore, it can remember its current mode. Last, it remembers also the specific style associated for this mode. Generally, as a developer, you do not have to take care at how user chooses their new style or new mode. You will only prepare in your class if you wish to have modes, and how you draw the object depending on the current mode.
+
+
+\subsection dgtal_dgtalboard_sec22 Short overview of the LibBoard library
+
+  LibBoard is a  C++ library for simple Postscript, SVG, and XFig drawings.
+
+@image html logo_Board.png
+@image latex logo_Board.png  "LibBoard Logo" width=4cm
+(Copyleft, LGPL) 2007 S&eacute;bastien Fourey - GREYC ENSICAEN
+
+It allows simple drawings in:
+<ul>
+  <li>Encapsulated Postcript files (EPS) ;
+  <li>XFig files (FIG) ;
+  <li>Scalable Vector Graphics files (SVG).
+</ul>
+
+The main class of the library is the #LibBoard#Board class. It is
+intended to be as simple as possible so that it can be used
+quickly in programs to generate the kind of figure one would
+rather not draw by hand, but which can be easily drawn by a
+computer (C++) program.
+
+A clone of the LibBoard source code (release: 0.8.8-3) has been
+included in DGtal. Its classes are grouped into the namespace Board.
+
+ */
+
+
+
+}

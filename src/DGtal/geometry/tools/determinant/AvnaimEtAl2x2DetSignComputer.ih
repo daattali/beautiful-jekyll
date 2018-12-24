@@ -1,0 +1,367 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file AvnaimEtAl2x2DetSignComputer.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/11/19
+ *
+ * Implementation of inline methods defined in AvnaimEtAl2x2DetSignComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::AvnaimEtAl2x2DetSignComputer()
+  : myA(NumberTraits<Integer>::ZERO), 
+    myB(NumberTraits<Integer>::ZERO), 
+    myMax(NumberTraits<Integer>::ONE)
+{
+  //I must compute myMax at runtime because base^exponent
+  //is not equal to std::numeric_limits<Integer>::max()
+  //for non integer type, like float (2^24) or double (2^53)
+  for (unsigned int i = 0; i < (exponent-1); i++)
+      myMax *= base; 
+  //I must finish the computation like this, because
+  //the last representable number is base^exponent - 1
+  myMax -= NumberTraits<Integer>::ONE; 
+  myMax += (myMax + NumberTraits<Integer>::ONE);  
+  ASSERT( myMax > NumberTraits<Integer>::ZERO ); 
+}
+
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+void 
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::init(const ArgumentInteger& aA, const ArgumentInteger& aB)
+{
+  ASSERT( aA <= myMax ); 
+  ASSERT( aB <= myMax ); 
+
+  myA = aA; 
+  myB = aB;
+}
+
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+int
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::quadrant(const Integer& aX, const Integer& aY) const
+{
+  ASSERT( aX != 0 ); 
+  ASSERT( aY != 0 );
+
+  if (aX > 0)
+    {
+      if (aY > 0)
+	return 0; 
+      else 
+	return 3; 
+    }
+  else
+    {
+      if (aY > 0)
+	return 1; 
+      else 
+	return 2; 
+    } 
+}
+
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::AvnaimEtAl2x2DetSignComputer<T>::Integer
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::recursiveComputation(const Integer& aA, const Integer& aB, 
+							     const Integer& aX, const Integer& aY) const
+{
+  //  std::cerr << " >>> " << aA << "." << aY << " - " << aB << "." << aX << std::endl;	
+  ASSERT( aA > NumberTraits<Integer>::ZERO ); 
+  ASSERT( aB > NumberTraits<Integer>::ZERO );
+  ASSERT( aX > NumberTraits<Integer>::ZERO ); 
+  ASSERT( aY > NumberTraits<Integer>::ZERO );
+  ASSERT( aB < aY ); 
+
+  Integer q = detail::EuclideanDivisionHelper<Integer>::compute(aX, aA);
+  Integer xr = aX - q*aA;
+  //  std::cout << " >>> xr= "  << xr;
+
+  if (aB > ( myMax / q)) {
+    return -NumberTraits<Integer>::ONE;
+  } else {
+    if (xr == NumberTraits<Integer>::ZERO) {
+      Integer qb = q * aB; 
+      if (aY > qb) {
+  	return NumberTraits<Integer>::ONE;
+      }	else if (aY < qb) {
+  	return -NumberTraits<Integer>::ONE;
+      } else { //(aY == qb)
+  	return NumberTraits<Integer>::ZERO;
+      }
+    } else {
+      Integer yr = aY - q * aB;
+      //  std::cout << ", yr= "  << yr << std::endl;
+	
+      if (yr <= NumberTraits<Integer>::ZERO) 
+	return -NumberTraits<Integer>::ONE;
+      if (yr >= aB) 
+	return NumberTraits<Integer>::ONE;
+
+      if (2*xr < aA) {
+  	if (2*yr >= aB) {
+  	  return NumberTraits<Integer>::ONE;
+  	} else { //(2*yr < aB)
+  	  return computation(aA, aB, xr, yr);
+  	}
+      } else if (2*xr > aA) {
+  	if (2*yr <= aB) {
+  	  return -NumberTraits<Integer>::ONE;
+  	} else { //(2*yr > aB)
+  	  return -computation(aA, aB, (aA-xr), (aB-yr));
+  	}
+      } else { //(2*xr == aA)
+  	if (2*yr == aB) {
+  	  return NumberTraits<Integer>::ZERO;
+  	} else if (2*yr < aB) { 
+  	  return -NumberTraits<Integer>::ONE;
+  	} else { //(2*yr > aB)
+  	  return NumberTraits<Integer>::ONE;
+  	}			
+      }
+    }
+  }
+
+
+
+}
+
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::AvnaimEtAl2x2DetSignComputer<T>::Integer
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::computation(const Integer& aA, const Integer& aB, 
+						    const Integer& aX, const Integer& aY) const
+{
+  //  std::cerr << " >>> " << aA << "." << aY << " - " << aB << "." << aX << std::endl;	
+  ASSERT( aA > NumberTraits<Integer>::ZERO ); 
+  ASSERT( aB > NumberTraits<Integer>::ZERO );
+  ASSERT( aX > NumberTraits<Integer>::ZERO ); 
+  ASSERT( aY > NumberTraits<Integer>::ZERO );
+
+  if (aA == aX) {
+    if (aB == aY) {
+      return NumberTraits<Integer>::ZERO;
+    } else if (aB < aY) { 
+      return NumberTraits<Integer>::ONE;
+    } else { //(aB > aY)
+      return -NumberTraits<Integer>::ONE;
+    }
+  } else if (aA < aX) {
+    if (aB >= aY) {
+      return -NumberTraits<Integer>::ONE;
+    } else { //(aB < aY) 
+      return recursiveComputation(aA, aB, aX, aY);
+    }
+  } else { //(aA > aX)
+    if (aB <= aY) {
+      return NumberTraits<Integer>::ONE;
+    } else { //(aB > aY) 
+      return -recursiveComputation(aX, aY, aA, aB);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::AvnaimEtAl2x2DetSignComputer<T>::ResultInteger
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::operator()(const ArgumentInteger& aX, const ArgumentInteger& aY) const
+{
+  ASSERT( aX <= myMax ); 
+  ASSERT( aY <= myMax ); 
+
+  // zeros
+  if ( (myA == NumberTraits<Integer>::ZERO) || (aY == NumberTraits<Integer>::ZERO) ) {
+    if ( (aX == NumberTraits<Integer>::ZERO) || (myB == NumberTraits<Integer>::ZERO) ) {
+      return NumberTraits<Integer>::ZERO;
+    } else {
+      ASSERT( aX != NumberTraits<Integer>::ZERO ); 
+      ASSERT( myB != NumberTraits<Integer>::ZERO );
+      if (myB < NumberTraits<Integer>::ZERO) {
+	if (aX < NumberTraits<Integer>::ZERO) 
+	  return -NumberTraits<Integer>::ONE;
+	else 
+	  return NumberTraits<Integer>::ONE; 
+      } else {
+	if (aX < NumberTraits<Integer>::ZERO) 
+	  return NumberTraits<Integer>::ONE;
+	else 
+	  return -NumberTraits<Integer>::ONE;
+      }
+    }
+  } else if ( (aX == NumberTraits<Integer>::ZERO) || (myB == NumberTraits<Integer>::ZERO) ) {
+    ASSERT( myA != NumberTraits<Integer>::ZERO ); 
+    ASSERT( aY != NumberTraits<Integer>::ZERO );
+    if (aY < NumberTraits<Integer>::ZERO) {
+      if (myA < NumberTraits<Integer>::ZERO) return NumberTraits<Integer>::ONE;
+      else return -NumberTraits<Integer>::ONE; 
+    } else {
+      if (myA < NumberTraits<Integer>::ZERO) return -NumberTraits<Integer>::ONE;
+      else return NumberTraits<Integer>::ONE; 
+    }
+  } else {
+    // quadrants
+    int qab = quadrant(myA, myB);
+    int qxy = quadrant(aX, aY);
+    //    std::cerr << " >>> quadrants " << qab << ", " << qxy << std::endl; 
+
+    switch (qab)
+      {
+      case 0: 
+	switch (qxy)
+	  {
+	  case 0: 
+	    return computation(myA, myB, aX, aY); 
+	  case 1: 
+	    return NumberTraits<Integer>::ONE; 
+	  case 2: 
+	    return -computation(myA, myB, -aX, -aY); 
+	  case 3: 
+	    return -NumberTraits<Integer>::ONE; 
+	  default: 
+	    FATAL_ERROR( false ); 
+	    return NumberTraits<Integer>::ZERO;  
+	  }
+	break; 
+      case 1: 
+	switch (qxy)
+	  {
+	  case 0: 
+	    return -NumberTraits<Integer>::ONE; 
+	  case 1: 
+	    return -computation(-myA, myB, -aX, aY);  
+	  case 2: 
+	    return NumberTraits<Integer>::ONE; 
+	  case 3: 
+	    return computation(-myA, myB, aX, -aY); 
+	  default: 
+	    FATAL_ERROR( false ); 
+	    return NumberTraits<Integer>::ZERO;  
+	  }
+	break; 
+      case 2: 
+	switch (qxy)
+	  {
+	  case 0: 
+	    return -computation(-myA, -myB, aX, aY); 
+	  case 1: 
+	    return -NumberTraits<Integer>::ONE;
+	  case 2: 
+	    return computation(-myA, -myB, -aX, -aY); 
+	  case 3: 
+	    return NumberTraits<Integer>::ONE;
+	  default: 
+	    FATAL_ERROR( false ); 
+	    return NumberTraits<Integer>::ZERO;
+	  }
+	break; 
+      case 3: 
+	switch (qxy)
+	  {
+	  case 0: 
+	    return NumberTraits<Integer>::ONE; 
+	  case 1: 
+	    return computation(myA, -myB, -aX, aY); 
+	  case 2: 
+	    return -NumberTraits<Integer>::ONE; 
+	  case 3: 
+	    return -computation(myA, -myB, aX, -aY); 
+	  default: 
+	    FATAL_ERROR( false ); 
+	    return NumberTraits<Integer>::ZERO;  
+	  }
+	break; 
+      default: 
+	FATAL_ERROR( false ); 
+	return NumberTraits<Integer>::ZERO;  
+      }
+  }
+}
+
+// ---------------------------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::AvnaimEtAl2x2DetSignComputer<T>::ResultInteger
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::operator()(const ArgumentInteger& aA, const ArgumentInteger& aB, 
+						   const ArgumentInteger& aX, const ArgumentInteger& aY)
+{
+  ASSERT( aA <= myMax ); 
+  ASSERT( aB <= myMax ); 
+  init(aA,aB); 
+
+  ASSERT( aX <= myMax ); 
+  ASSERT( aY <= myMax ); 
+  return operator()(aX, aY); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[AvnaimEtAl2x2DetSignComputer]";
+}
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+bool
+DGtal::AvnaimEtAl2x2DetSignComputer<T>::isValid() const
+{
+  return true;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const AvnaimEtAl2x2DetSignComputer<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

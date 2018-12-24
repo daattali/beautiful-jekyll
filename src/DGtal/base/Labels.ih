@@ -1,0 +1,426 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Labels.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/07/07
+ *
+ * Implementation of inline methods defined in Labels.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <algorithm>
+#include <limits>
+#include "DGtal/base/Bits.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// class DGtal::Labels<L, TWord>::ConstEnumerator
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::ConstEnumerator::
+~ConstEnumerator()
+{}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::ConstEnumerator::
+ConstEnumerator()
+  : myWordAddress( 0 ), myLabel( 0 )
+{}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::ConstEnumerator::
+ConstEnumerator( const Word* address, SizeType firstWord )
+  : myWordAddress( address + firstWord ),
+    myWordLabel( firstWord * __DGTAL_WORD_NBDIGITS )
+{
+  ASSERT( firstWord <= __DGTAL_LABELS_NBWORDS );
+  if ( firstWord != __DGTAL_LABELS_NBWORDS )
+    {
+      myWord = *myWordAddress++;
+      this->operator++(); // find first bit
+    }
+  else
+    {
+      myWord = 0;
+      myLabel = std::numeric_limits<Label>::max();
+    }
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::ConstEnumerator::
+ConstEnumerator( const ConstEnumerator & other )
+  : myWordAddress( other.myWordAddress ), myWordLabel( other.myWordLabel ),
+    myLabel( other.myLabel ), myWord( other.myWord )
+{}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstEnumerator::Self &
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator= ( const Self & other )
+{
+  if ( this != &other )
+    {
+      myWordAddress = other.myWordAddress;
+      myWordLabel = other.myWordLabel;
+      myLabel = other.myLabel;
+      myWord = other.myWord;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstEnumerator::Reference
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator*() const
+{
+  return myLabel;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstEnumerator::Pointer
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator->() const
+{
+  return &myLabel;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstEnumerator::Self&
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator++()
+{
+  ASSERT( ( myWordLabel < ( __DGTAL_LABELS_NBWORDS
+                            * __DGTAL_WORD_NBDIGITS ) ) );
+  while ( myWord == 0 )
+    {
+      myWordLabel += __DGTAL_WORD_NBDIGITS;
+      if ( myWordLabel == ( __DGTAL_LABELS_NBWORDS
+                            * __DGTAL_WORD_NBDIGITS ) )
+        {
+          myLabel = std::numeric_limits<Label>::max();
+          return *this;
+        }
+      myWord = *myWordAddress++;
+    }
+  ASSERT( myWord != 0 );
+  Word fsb = Bits::firstSetBit( myWord );
+  myLabel = myWordLabel + Bits::leastSignificantBit( fsb );
+  myWord -= fsb;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstEnumerator::Self
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator++( int )
+{
+  ConstEnumerator tmp( *this );
+  this->operator++();
+  return tmp;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+bool
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator==( const Self & other ) const
+{
+  return ( myWordAddress == other.myWordAddress )
+    && ( myLabel == other.myLabel );
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+bool
+DGtal::Labels<L, TWord>::ConstEnumerator::
+operator!=( const Self & other ) const
+{
+  return ( myWordAddress != other.myWordAddress )
+    || ( myLabel != other.myLabel );
+}
+
+
+
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::SizeType
+DGtal::Labels<L, TWord>::_word( Label l )
+{
+  return __DGTAL_LABEL_WORD_INDEX( l );
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::SizeType
+DGtal::Labels<L, TWord>::_digit( Label l )
+{
+  return __DGTAL_LABEL_DIGIT_INDEX( l );
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::Word
+DGtal::Labels<L, TWord>::_mask( Label l )
+{
+  return ( (Word) 1 ) << _digit( l );
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::~Labels()
+{
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::Labels()
+{
+  reset();
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+DGtal::Labels<L, TWord>::Labels( const Self & other )
+{
+  std::copy( other.myLabels, other.myLabels + __DGTAL_LABELS_NBWORDS,
+             myLabels );
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::Self &
+DGtal::Labels<L, TWord>::operator=( const Self & other )
+{
+  if ( this != &other )
+    std::copy( other.myLabels, other.myLabels + __DGTAL_LABELS_NBWORDS,
+               myLabels );
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::Self &
+DGtal::Labels<L, TWord>::reset()
+{
+  Word* p1 = myLabels;
+  Word* p2 = myLabels + __DGTAL_LABELS_NBWORDS;
+  while ( p1 != p2 )
+    *p1++ = (Word) 0;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+bool
+DGtal::Labels<L, TWord>::test( Label l ) const
+{
+  return _mask( l ) & myLabels[ _word( l ) ];
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::Self &
+DGtal::Labels<L, TWord>::set( Label l, bool val )
+{
+  if ( val )
+    myLabels[ _word( l ) ] |= _mask( l );
+  else
+    myLabels[ _word( l ) ] &= ~_mask( l );
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::Self &
+DGtal::Labels<L, TWord>::reset( Label l )
+{
+  myLabels[ _word( l ) ] &= ~_mask( l );
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::Self &
+DGtal::Labels<L, TWord>::flip( Label l )
+{
+  myLabels[ _word( l ) ] ^= _mask( l );
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::SizeType
+DGtal::Labels<L, TWord>::
+count() const
+{
+  SizeType n = 0;
+  const Word* p1 = myLabels;
+  const Word* p2 = myLabels + __DGTAL_LABELS_NBWORDS;
+  while ( p1 != p2 )
+    n += Bits::nbSetBits( *p1++ );
+  return n;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::SizeType
+DGtal::Labels<L, TWord>::
+size()
+{
+  return L;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+void
+DGtal::Labels<L, TWord>::
+getLabels( std::vector<Label> & labels ) const
+{
+  labels.clear();
+  Word w;
+  Word fsb;
+  const Word* p1 = myLabels;
+  const Word* p2 = myLabels + __DGTAL_LABELS_NBWORDS;
+  Label l = 0;
+  while ( p1 != p2 )
+    {
+      w = *p1++;
+      while ( w ) // extract labels within word
+        {
+          fsb = Bits::firstSetBit( w );
+          labels.push_back( l + Bits::leastSignificantBit( fsb )  );
+          w -= fsb;
+          ASSERT( index( labels.back() ) == ( labels.size() - 1 ) );
+        }
+      l += __DGTAL_WORD_NBDIGITS;
+    }
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::SizeType
+DGtal::Labels<L, TWord>::
+index( Label l ) const
+{
+  ASSERT( l < L );
+  const Word* p1 = myLabels;
+  const Word* p2 = myLabels + _word( l );
+  SizeType i = 0;
+  while ( p1 != p2 )
+    i += Bits::nbSetBits( *p1++ );
+  return ( _mask( l ) & *p1 )
+    ? i + Bits::indexInSetBits( *p1, _digit( l ) ) - 1
+    : L;
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstIterator
+DGtal::Labels<L, TWord>::
+begin() const
+{
+  return ConstIterator( myLabels, 0 );
+}
+//-----------------------------------------------------------------------------
+template <unsigned int L, typename TWord>
+inline
+typename DGtal::Labels<L, TWord>::ConstIterator
+DGtal::Labels<L, TWord>::
+end() const
+{
+  return ConstIterator( myLabels, __DGTAL_LABELS_NBWORDS );
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <unsigned int L, typename TWord>
+inline
+void
+DGtal::Labels<L, TWord>::selfDisplay ( std::ostream & out ) const
+{
+  std::vector<Label> v;
+  this->getLabels( v );
+  if ( v.empty() )
+    out << "()";
+  else
+    {
+      out << "(" << v[ 0 ];
+      for ( SizeType i = 1; i < v.size(); ++i )
+        out << "," << v[ i ];
+      out << ")";
+    }
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <unsigned int L, typename TWord>
+inline
+bool
+DGtal::Labels<L, TWord>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <unsigned int L, typename TWord>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const Labels<L, TWord> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,7 @@
+## Sources associated to the module topology
+##
+
+SET(DGTAL_SRC ${DGTAL_SRC} 
+    DGtal/topology/SurfelAdjacency.cpp
+    )
+    

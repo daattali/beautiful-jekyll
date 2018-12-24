@@ -1,0 +1,180 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/06/27
+ *
+ * Implementation of inline methods defined in SummationBasedNormalVectorEstimator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Constructor.
+ */
+template <typename DigitalSurf,  typename KernelFunctor>
+inline
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>
+::LocalConvolutionNormalVectorEstimator ( 
+        ConstAlias<DigitalSurf> digitalSurface,
+        ConstAlias<KernelFunctor> aKernelFunctor )
+    : mySurface ( digitalSurface ), myKernelFunctor ( aKernelFunctor )
+{
+}
+
+/**
+ * Init.
+ */
+template <typename DigitalSurf,  typename KernelFunctor>
+inline
+void
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::init ( const double h,
+        const unsigned int radius )
+{
+    myFlagIsInit = true;
+    myH = h;
+    myRadius = radius;
+}
+
+/**
+ * @return the estimated quantity at *it
+ * from itb till ite
+ */
+template <typename DigitalSurf,  typename KernelFunctor>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::
+eval ( const ConstIterator& itb,
+       const ConstIterator& ite,
+       OutputIterator result ) const
+{
+    for ( ConstIterator it = itb; it != ite; ++it )
+    {
+      Quantity q = eval( *it );
+        *result++ = q;
+    }
+
+    return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename DigitalSurf,  typename KernelFunctor>
+inline
+const typename DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::Surface &
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::
+surface() const
+{
+    return mySurface;
+}
+
+//-----------------------------------------------------------------------------
+template <typename DigitalSurf,  typename KernelFunctor>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::
+evalAll ( OutputIterator result ) const
+{
+    for ( ConstIterator it = surface().begin(), it_end = surface().end();
+            it != it_end; ++it )
+    {
+        *result++ = eval ( *it );
+    }
+
+    return result;
+}
+
+/**
+ * @return the estimated quantity at *it
+ */
+
+template <typename DigitalSurf,  typename KernelFunctor>
+inline
+typename DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::Quantity
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::eval ( const ConstIterator& it ) const
+{
+    return eval ( *it );
+}
+//-----------------------------------------------------------------------------
+template <typename DigitalSurf,  typename KernelFunctor>
+inline
+typename DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::Quantity
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::
+eval ( const SCell & scell ) const
+{
+    typedef BreadthFirstVisitor<DigitalSurf> MyBreadthFirstVisitor;
+    typedef typename MyBreadthFirstVisitor::Node MyNode;
+    MyBreadthFirstVisitor visitor ( mySurface, scell );
+
+    MyNode node;
+    Quantity n, elementary;
+    Dimension i;
+    typename DigitalSurf::Surfel s;
+    const typename DigitalSurf::KSpace & K = mySurface.container().space();
+
+    ASSERT ( myFlagIsInit );
+
+    while ( ! visitor.finished() )
+    {
+        node = visitor.current();
+        if ( node.second < myRadius )
+        {
+            s = node.first;
+            i = K.sOrthDir ( s );
+            elementary[ i ] = K.sDirect ( s, i ) ? 1 : -1;
+
+            elementary *= myKernelFunctor ( node.second );
+            n+=  elementary;
+
+            elementary [ i  ] = 0;
+
+            visitor.expand();
+        }
+        else
+            visitor.ignore();
+    }
+    return n.getNormalized();
+}
+
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename DigitalSurf,  typename KernelFunctor>
+inline
+bool
+DGtal::deprecated::LocalConvolutionNormalVectorEstimator<DigitalSurf,KernelFunctor>::isValid() const
+{
+    return true;
+}

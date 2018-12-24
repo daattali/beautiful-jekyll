@@ -1,0 +1,245 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DomainMetricAdjacency.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/10
+ *
+ * Implementation of inline methods defined in DomainMetricAdjacency.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Constructor from a domain.
+ * @param aDomain any domain.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>
+::DomainMetricAdjacency( ConstAlias<Domain> aDomain )
+  : myDomain( aDomain )
+{
+}
+
+/**
+ * Copy Constructor.
+ * @param other the object to clone.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>
+::DomainMetricAdjacency( const DomainMetricAdjacency & other )
+  : myDomain( other.myDomain )
+{
+}
+
+/**
+ * Destructor.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>
+::~DomainMetricAdjacency()
+{
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Adjacency services -----------------------------
+
+/**
+ * @param p1 any point in this space.
+ * @param p2 any point in this space.
+ *
+ * @return 'true' iff p1 is adjacent to p2 according to this
+ * adjacency relation.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+bool 
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>::isAdjacentTo
+( const Point & p1, const Point & p2 ) const
+{
+  ASSERT( myDomain.isInside( p1 ) && myDomain.isInside( p2 ) );
+  Vector v( p2 - p1 );
+  return ( v.normInfinity() <= 1 ) && ( v.norm1() <= maxNorm1 );
+}
+
+/**
+ * @param p1 any point in this space.
+ * @param p2 any point in this space.
+ *
+ * @return 'true' iff p1 is adjacent to p2 according to this
+ * adjacency relation and p1 != p2.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+bool 
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>::isProperlyAdjacentTo
+( const Point & p1, const Point & p2 ) const
+{
+  ASSERT( myDomain.isInside( p1 ) && myDomain.isInside( p2 ) );
+  Vector v( p2 - p1 );
+  if ( v.normInfinity() <= 1 )
+    {
+      typename Vector::UnsignedComponent n1 = v.norm1();
+      return ( n1 <= maxNorm1 ) && ( n1 != 0 );
+    }
+  return false;
+}
+
+/**
+ * Outputs the whole neighborhood of point [p] as a sequence of
+ * *out_it++ = ...
+ *
+ * @tparam OutputIterator any output iterator (like
+ * std::back_insert_iterator< std::vector<int> >).
+ *
+ * @param p any point of this space.
+ * @param out_it any output iterator.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+template <typename OutputIterator>
+void 
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>::writeNeighborhood
+( const Point & p, OutputIterator & out_it ) const
+{
+  Point p1( p );
+  for ( typename Point::Iterator it = p1.begin(); it != p1.end(); ++it )
+    --(*it);
+  Point p2( p );
+  for ( typename Point::Iterator it = p2.begin(); it != p2.end(); ++it )
+    ++(*it);
+  typedef HyperRectDomain<Space> LocalDomain;
+  LocalDomain domain( p1, p2 );
+  for ( typename LocalDomain::ConstIterator it = domain.begin();
+  it != domain.end();
+  ++it )
+    {
+      if ( myDomain.isInside( *it ) )
+  {
+    Vector v( p - *it );
+    typename Vector::UnsignedComponent n1 = v.norm1();
+    if ( n1 <= maxNorm1 )
+      *out_it++ = *it;
+  }
+    }
+}
+
+/**
+ * Outputs the whole proper neighborhood of point [p] (thus
+ * without [p] itself) as a sequence of *out_it++ = ...
+ *
+ * @tparam OutputIterator any output iterator (like
+ * std::back_insert_iterator< std::vector<int> >).
+ *
+ * @param p any point of this space.
+ * @param out_it any output iterator.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+template <typename OutputIterator>
+void
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>::writeProperNeighborhood
+( const Point & p, OutputIterator & out_it ) const
+{
+  Point p1( p );
+  for ( typename Point::Iterator it = p1.begin(); it != p1.end(); ++it )
+    --(*it);
+  Point p2( p );
+  for ( typename Point::Iterator it = p2.begin(); it != p2.end(); ++it )
+    ++(*it);
+  typedef HyperRectDomain<Space> LocalDomain;
+  LocalDomain domain( p1, p2 );
+  for ( typename LocalDomain::ConstIterator it = domain.begin();
+  it != domain.end();
+  ++it )
+    {
+      if ( myDomain.isInside( *it ) )
+  {
+    Vector v( p - *it );
+    typename Vector::UnsignedComponent n1 = v.norm1();
+    if ( ( n1 <= maxNorm1 ) && ( n1 != 0 ) )
+      *out_it++ = *it;
+  }
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+void
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DomainMetricAdjacency domain=" 
+      << myDomain << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Domain, DGtal::Dimension maxNorm1, DGtal::Dimension dimension>
+inline
+bool
+DGtal::deprecated::DomainMetricAdjacency<Domain,maxNorm1,dimension>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Domain, DGtal::Dimension maxNorm1>
+inline
+std::ostream&
+DGtal::deprecated::operator<< ( std::ostream & out, 
+                                const DomainMetricAdjacency<Domain,maxNorm1,
+                                Domain::Space::dimension> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

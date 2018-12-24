@@ -1,0 +1,94 @@
+/**
+ * \mainpage DGtal - Digital Geometry Tools and Algorithms Library.
+ *
+ * @image  html logo_DGtal_small.png
+ *
+ *
+ * @section intro_sec_dgtal Introduction
+
+DGtal is a generic open source library for Digital Geometry
+programming whose main objective is to gather and structure different
+developments from the digital geometry and topology community. The
+benefits are numerous: to make easier the appropriation of our tools
+for a neophyte (new PhD students, researchers from other topics,
+...), to permit better comparisons of new methods with already
+existing approaches, to construct a federative project. Furthermore we
+believe this is a necessary step for a better recognition of the
+efficiency of discrete geometry techniques by the important image
+analysis community. As a consequence, DGtal is designed so as to
+simplify the construction of effective demonstration tools. New
+results are thus easily shared to a vast audience.
+
+On a more technical level, DGtal is developed in C++. Similarly to
+other classical libraries such as CGAL, it follows the paradigm of
+genericity with efficiency. This approach is made possible with the
+now well-known notion of concepts, implemented with templated
+types. The kernel of DGtal offers digital spaces of arbitrary
+dimension, with user-chosen integer types. Several digital topology
+algorithms are already implemented (Rosenfeld topology, connected
+components, simple points, homotopic thinning). The kernel manages
+generic images (standard raster images but also tree images), and
+arbitrary file formats with ImageMagick installed. Basic geometric
+primitives (digital lines and segments) are also available, as well as
+arbitrary dimensional volumetric distance transforms. A stream
+mechanism has been developed to display digital objects and export
+results in different vector formats.
+
+DGtal is a collaborative effort of the French ---for now--- digital
+geometry community. It is still a work in progress but show already
+many promises to be the common basis for future developments made by
+the digital geometry community.
+
+
+DGtal is associated with the projects [DGtalTools](http://dgtal.org/tools/)
+and [DGtalTools-contrib](http://dgtal.org/tools/). Please have a look
+to the [DGtalTools online
+documentation](http://dgtal.org/doc/tools/nightly) for additional 
+information.
+
+
+
+
+@section package_description DGtal Packages
+
+  - \ref packageIntroduction
+  - \ref packageBase
+  - \ref packageKernel
+  - \ref packageArithmetic
+  - \ref packageGeometry
+  - \ref packageShapes
+  - \ref packageTopology
+  - \ref packageDEC
+  - \ref packageGraph
+  - \ref packageMath
+  - \ref packageImage
+  - \ref packageIO
+
+
+@section manuals_tutorials Helpers and Tutorials
+
+  - \ref packageTutorials
+
+
+@section manueldev Manual pages for DGtal developers
+  - \ref moduleFAQGit
+  - \ref moduleCatch
+
+
+@section links_sec_dgtal Links
+
+   <ul>
+    <li> Documentation of the associated [DGtalTools project](http://dgtal.org/doc/tools/nightly/)</li>
+    <li> Visit the [DGtal homepage](http://dgtal.org/)</li>
+    <li> LibBoard section page   </li>
+   </ul>
+
+   @defgroup Concepts DGtal Concepts
+   @defgroup Archetypes DGtal Archetypes
+   @defgroup Tests DGtal Test Files
+   @defgroup Examples DGtal Examples
+
+
+[imagene]: https://gforge.liris.cnrs.fr/projects/imagene "ImaGene"
+
+ */

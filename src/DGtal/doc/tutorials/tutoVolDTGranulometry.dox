@@ -1,0 +1,210 @@
+/**
+ * @file tutoVolDTGranulometry.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/10/11
+ *
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoVolDTGranulometry   Tutorial: Volumetric analysis and Granulometry
+@author David Coeurjolly
+
+
+The objective of this tutorial is to perform some elementary
+volumetric analysis of 3D objects. With this tutorial, you will
+experiment the following DGtal features
+
+- Import/export of a volumetric image (VolReader and VolWriter)
+
+- Distance transformation computation (DistanceTransformation)
+
+- Visualization of volumetric data  (Viewer3D)
+ 
+- Implicit/parametric shape construction  (ImplicitBall)
+ 
+- Shape analysis using granulometric function 
+
+[TOC]
+
+Please use the following template file for this tutorial: volDTGranulo-template.cpp
+
+@section tutosectIntroGranulo Introduction
+
+When analyzing 3D porous material, the granulometric function plays an
+important role for shape description. For short, given a shape @f$
+\mathcal{X}@f$, the granulometric function at a point @f$ x\in \mathcal{X}@f$ is given by:
+@f[ 
+ g (x) = \max \{ r~|~ \forall c\in\mathcal{X}, x\in B(c,r)\text{ and }\forall B(c,r)\subseteq \mathcal{X}\}
+@f]
+@f$ B(c,r)@f$ being an Euclidean ball with center @f$ c@f$ and radius
+ @f$ r@f$.
+
+
+@image html export-accflower.png  "Granulometry function on a 2D shape"
+@image latex export-accflower.png  "Granulometry function on  2D shape"
+
+@image html Al-thickness.png  "Granulometry function on  Al object"
+@image latex Al-thickness.png  "Granulometry function on  Al object"
+
+
+@image html volumetricThickness.png "Granulometry function on
+interior/exterior of a porous material (snow sample, courtesy of GAME-CNRM/CEN and ESRF)
+@image latex volumetricThickness.png "Granulometry function on
+interior/exterior of a porous material (snow sample, courtesy of GAME-CNRM/CEN and ESRF)
+
+
+To compute the granulometric function, a classical approach is to first
+consider the medial axis of @f$ \mathcal{X}@f$ (the medial axis can be roughly
+defined as the set of maximal balls contained in the shape).
+
+
+In this tutorial, we will implement a first naive approach from
+distance transformation  values. The distance transformation
+is a function defined by 
+@f[ 
+ DT (x) = \min \{ d(x,\hat{x}~|~ x\in\mathcal{X}\text{ and }\hat{x}\in \mathbb{R}^n\setminus \mathcal{X}\}
+@f]
+for some metric @f$ d@f$.
+
+Hence, instead of checking all Euclidean balls inside @f$ \mathcal{X}@f$, we
+can just consider the digital balls @f$ B(x, DT(x))@f$ for all @f$
+x\in\mathcal{X}@f$ (in this case, @f$ d @f$ is the @f$l_2@f$ Euclidean norm).
+
+
+
+@section VDTG_tutosectLoadVol Import volumetric image an visualization 
+
+Let start with volumetric image loading. First of all, create a source
+file with the following includes (or copy the volDTGranulo-tempate.cpp
+source file):
+
+@snippet tutorial-examples/volDTGranulo-template.cpp volGranulo-basicIncludes
+
+
+1. Define a type (@e typedef)  for the image container you want to use
+(ImageContainerBySTLVector, ImageContainerBySTLMap, ....)
+2. Use the VolReader to load a volumetric file and store it into a
+previously defined image type.
+
+
+Once you have imported the volumetric file, you can check its geometry
+with the internal Viewer3D visualization tool. First of all, create a
+new viewer instance using the following code:
+
+@snippet tutorial-examples/volDTGranulo-template.cpp volGranulo-viewer
+
+@note Please have a look to @ref moduleDisplay3D for more details on
+DGtal viewer.
+
+At this point, just send to the viewer the grid points with strictly
+positive values.
+
+
+@section tutosecDT Distance Transformation
+
+
+3. First of all, have a look to the DistanceTransformation class and
+check the template type you have to specified to this class to create
+an instance.
+
+4. As you may have seen, one of the input is a binary predicate which
+characterizes the shape (model of concepts::CPointPredicate concept). Use the
+functors::SimpleThresholdForegroundPredicate to create a point predicate from an
+image and a thresold.
+
+5. Now, create a distance map from this point predicate and an
+Eucildean @f$ l_2@f$ norm.
+
+6. Create a new Viewer3D instance and visualize the distance map
+values. Two things would be helpful:
+  - If you want to add a clipping plane to the viewer, a simple object
+has been defined in DGtal: 
+@code
+  viewer << DGtal::ClippingPlane(1,0,0,-10.1);
+@endcode
+  - The following code will create a nice colormap to map DT values to
+  colors.
+@snippet tutorial-examples/volDTGranulo-template.cpp volGranulo-cmap
+
+
+@section tutosecShape Granulometric function
+
+
+As discussed in the introduction, we will implement a very naive
+version of the granulometric function extraction. The main idea is to
+construct an image storing the @f$ g@f$ function. The algorithm is the
+following one:
+
+- Initiaize the map  @f$g@f$ with 0 at each point
+- For each grid points @f$ x @f$ in the object
+ - Create a Ball centered at @f$x@f$ with radius @f$DT(x)@f$
+ - Iteratate over all points @f$y @f$  in this ball 
+   - If the value @f$ g(y)@f$ is less than @f$DT(x)@f$, set @f$ g(y)=DT(x)@f$
+
+7. Create an empty image @f$ g@f$ with the same size as the input vol
+file.
+
+8. Create a first ball (e.g. centered in the middle of the image)
+using the ImplicitBall class. This class creates an implicit ball such
+that the () operator is posivive at a point if the point is inside the
+shape (model of CBoundedEuclideanShape). A basic way to scan grid
+points inside an ImplicitBall is to construct a Domain from its
+bounding box, then you scan all points in this domain and check the
+operator() sign to decide if the point is inside or not.
+
+@note More advanced digitization processes are given by GaussDigitizer.
+
+
+9. Implement the above mentioned granulometric function algorithm: at
+each point of the DT map, create a ball and check its interior point
+to update the function @f$ g @f$.
+
+10. Again, use a new Viewer3D object to visualize the granulometric function.
+
+11. Export the final map to a vol file. In this case, consider the
+VolWriter class (@e granuloImage is the name of image structure
+storing the @f$g @f$ map):
+
+@snippet tutorial-examples/volDTGranulo-template.cpp volGranulo-export
+
+
+
+12. What is the computational cost of this naive approach for a shape defined in a @f$N^3@f$ domain ?
+
+
+@section volDTSecCCL Conclusion
+
+You can check  volDTGranulo.cpp to get some answers to the above
+mentioned questions.
+
+Several optimizations can be developed. For example, before
+constructing the granulometric function, one can use medial axis
+extraction to drastically reduce the number of balls to scan. Then,
+sorting the balls by their radii  may be helpful to implement fast
+propagation based granulometric/thickness function from the PowerMap
+(see for instance @cite Liris-5700).
+
+
+
+*/
+
+/**
+Example of tutorial 3: Volumetric analysis and Granulometry
+@see @ref  tutoVolDTGranulometry
+\image html tutoVolDTGranulometry.png  "result on obtained examples/samples/Al.100.vol."
+@example tutorial-examples/volDTGranulo.cpp
+ 
+*/
+
+
+}

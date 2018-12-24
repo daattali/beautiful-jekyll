@@ -1,0 +1,158 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Board2D.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/10/11
+ *
+ * Implementation of inline methods defined in Board2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/io/boards/CDrawableWithBoard2D.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+/**
+ * @return the current mode for the given object name or "" if no
+ * specific mode has been set.
+ */
+inline
+std::string
+DGtal::Board2D::getMode( const std::string & objectName ) const
+{
+  ModeMapping::const_iterator itm = myModes.find( objectName );
+  return itm == myModes.end() ? "" : itm->second;
+}
+
+/**
+ * Draws the drawable [object] in this board. It should satisfy
+ * the concept CDrawableWithBoard2D, which requires for instance a
+ * method setStyle( LibBoard::Board ).
+ *
+ * @param domain any domain.
+ * @return a reference on 'this'.
+ */
+template <typename TDrawableWithBoard2D>
+inline
+DGtal::Board2D &
+DGtal::Board2D::operator<<( const TDrawableWithBoard2D & object )
+{
+
+  BOOST_CONCEPT_ASSERT((concepts::CDrawableWithBoard2D<TDrawableWithBoard2D>));
+
+  CountedPtr<DrawableWithBoard2D> style( defaultStyle(object) );
+#ifdef DEBUG_VERBOSE
+  trace.info() << "[operator<<] " << object.className();
+#endif
+
+  // Apply default style
+  if ( style.get() )
+    {
+#ifdef DEBUG_VERBOSE
+      trace.info() << " [default style]";
+#endif
+      DGtal::Style2DFactory::draw(*this, style.get());
+    }
+  // Apply Customized style
+  StyleMapping::const_iterator it = myStyles.find( object.className() );
+  if ( it != myStyles.end() )
+    if ( it->second.get() != 0 )
+      {
+#ifdef DEBUG_VERBOSE
+  trace.info() << " [specific style]";
+#endif
+   DGtal::Style2DFactory::draw(*this, it->second.get());
+      }
+  // Check for specific mode.
+  ModeMapping::const_iterator itm = myModes.find( object.className() );
+  if ( itm != myModes.end() )
+    {
+      #ifdef DEBUG_VERBOSE
+      trace.info() << "  [mode]";
+      #endif
+
+      // Apply default style for specific mode.
+      CountedPtr<DrawableWithBoard2D> style_mode
+  ( defaultStyle(object, itm->second) );
+      if ( style_mode.get() )
+  {
+#ifdef DEBUG_VERBOSE
+    trace.info() << " [default style for mode]";
+#endif
+     DGtal::Style2DFactory::draw(*this, style_mode.get());
+  }
+      // Apply customized style for specific mode.
+      std::string specific_style = object.className() + "/" + itm->second;
+      it = myStyles.find( specific_style );
+      if ( it != myStyles.end() )
+  if ( it->second.get() != 0 )
+    {
+#ifdef DEBUG_VERBOSE
+      trace.info() << " [specific style for mode: "
+          << specific_style << "]";
+#endif
+      DGtal::Style2DFactory::draw(*this, it->second.get());
+    }
+    }
+#ifdef DEBUG_VERBOSE
+  trace.info() << "  [draw]";
+#endif
+
+  DGtal::Display2DFactory::draw(*this, object);
+#ifdef DEBUG_VERBOSE
+  std::cerr << std::endl;
+#endif
+   return *this;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'Board2D'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'Board2D' to write.
+ * @return the output stream after the writing.
+ */
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                  const Board2D & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

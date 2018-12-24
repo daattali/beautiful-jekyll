@@ -1,0 +1,495 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSetByAssociativeContainer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et
+ * Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire LIRIS  (CNRS, UMR 5205), Université de Lyon, France
+ *
+ *
+ * @date 2010/07/01
+ *
+ * Implementation of inline methods defined in DigitalSetByAssociativeContainer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename Domain, typename Container>
+inline
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::~DigitalSetByAssociativeContainer()
+{
+}
+
+/**
+ * Constructor.
+ * Creates the empty set in the domain [d].
+ *
+ * @param d any counted pointer on domain.
+ */
+template <typename Domain, typename Container>
+inline
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::DigitalSetByAssociativeContainer
+( Clone<Domain> d)
+: myDomain( d )
+{
+}
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ */
+template <typename Domain, typename Container>
+inline
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::DigitalSetByAssociativeContainer( const DigitalSetByAssociativeContainer<Domain, Container> & other )
+: myDomain( other.myDomain ), mySet( other.mySet )
+{
+}
+
+/**
+ * Assignment.
+ * @param other the object to copy.
+ * @return a reference on 'this'.
+ */
+template <typename Domain, typename Container>
+inline
+DGtal::DigitalSetByAssociativeContainer<Domain, Container> &
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::operator= ( const DigitalSetByAssociativeContainer<Domain, Container> & other )
+{
+  ASSERT( ( domain().lowerBound() <= other.domain().lowerBound() )
+         && ( domain().upperBound() >= other.domain().upperBound() )
+         && "This domain should include the domain of the other set in case of assignment." );
+  mySet = other.mySet;
+  return *this;
+}
+
+
+/**
+ * @return the embedding domain.
+ */
+template <typename Domain, typename Container>
+inline
+const Domain &
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::domain() const
+{
+  return *myDomain;
+}
+
+template <typename Domain, typename Container>
+inline
+DGtal::CowPtr<Domain>
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::domainPointer() const
+{
+  return myDomain;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+/**
+ * @return the number of elements in the set.
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::Size
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::size() const
+{
+  return mySet.size();
+}
+
+/**
+ * @return 'true' iff the set is empty (no element).
+ */
+template <typename Domain, typename Container>
+inline
+bool
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::empty() const
+{
+  return mySet.empty();
+}
+
+
+/**
+ * Adds point [p] to this set.
+ *
+ * @param p any digital point.
+ * @pre p should belong to the associated domain.
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::insert( const Point & p )
+{
+  ASSERT( domain().isInside( p ) );
+  mySet.insert( p );
+}
+
+
+/**
+ * Adds the collection of points specified by the two iterators to
+ * this set.
+ *
+ * @param first the start point in the collection of Point.
+ * @param last the last point in the collection of Point.
+ * @pre all points should belong to the associated domain.
+ */
+template <typename Domain, typename Container>
+template <typename PointInputIterator>
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::insert( PointInputIterator first,
+                                                                   PointInputIterator last )
+{
+  mySet.insert( first, last );
+}
+
+
+/**
+ * Adds point [p] to this set if the point is not already in the
+ * set.
+ *
+ * @param p any digital point.
+ *
+ * @pre p should belong to the associated domain.
+ * @pre p should not belong to this.
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::insertNew( const Point & p )
+{
+  ASSERT( domain().isInside( p ) );
+  mySet.insert( p );
+}
+
+/**
+ * Adds the collection of points specified by the two iterators to
+ * this set.
+ *
+ * @param first the start point in the collection of Point.
+ * @param last the last point in the collection of Point.
+ *
+ * @pre all points should belong to the associated domain.
+ * @pre each point should not belong to this.
+ */
+template <typename Domain, typename Container>
+template <typename PointInputIterator>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::insertNew
+( PointInputIterator first, PointInputIterator last )
+{
+  mySet.insert( first, last );
+}
+
+/**
+ * Removes point [p] from the set.
+ *
+ * @param p the point to remove.
+ * @return the number of removed elements (0 or 1).
+ */
+template <typename Domain, typename Container>
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::Size
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::erase( const Point & p )
+{
+  return mySet.erase( p );
+}
+
+/**
+ * Removes the point pointed by [it] from the set.
+ *
+ * @param it an iterator on this set.
+ * Note: generally faster than giving just the point.
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::erase( Iterator it )
+{
+  mySet.erase( it );
+}
+
+/**
+ * Clears the set.
+ * @post this set is empty.
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::clear()
+{
+  mySet.clear();
+}
+
+/**
+ * @param p any digital point.
+ * @return a const iterator pointing on [p] if found, otherwise end().
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::ConstIterator
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::find( const Point & p ) const
+{
+  return mySet.find( p );
+}
+
+/**
+ * @param p any digital point.
+ * @return an iterator pointing on [p] if found, otherwise end().
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::Iterator
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::find( const Point & p )
+{
+  return mySet.find( p );
+}
+
+/**
+ * @return a const iterator on the first element in this set.
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::ConstIterator
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::begin() const
+{
+  return mySet.begin();
+}
+
+/**
+ * @return a const iterator on the element after the last in this set.
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::ConstIterator
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::end() const
+{
+  return mySet.end();
+}
+
+/**
+ * @return an iterator on the first element in this set.
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::Iterator
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::begin()
+{
+  return mySet.begin();
+}
+
+/**
+ * @return a iterator on the element after the last in this set.
+ */
+template <typename Domain, typename Container>
+inline
+typename DGtal::DigitalSetByAssociativeContainer<Domain, Container>::Iterator
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::end()
+{
+  return mySet.end();
+}
+
+/**
+ * set union to left.
+ * @param aSet any other set.
+ */
+template <typename Domain, typename Container>
+inline
+DGtal::DigitalSetByAssociativeContainer<Domain, Container> &
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::operator+=( const DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  if ( this != &aSet )
+  {
+    Iterator it_dst = end();
+    for ( ConstIterator it_src = aSet.begin();
+         it_src != aSet.end();
+         ++it_src )
+    {
+      // Use hint it_dst to go faster.
+      it_dst = mySet.insert( it_dst, *it_src );
+    }
+  }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename Domain, typename Container>
+inline
+bool
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>
+::operator()( const Point & p ) const
+{
+  return find( p ) != end();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Other Set services -----------------------------
+
+
+template <typename Domain, typename Container>
+template <typename TOutputIterator>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::computeComplement(TOutputIterator& ito) const
+{
+  typename Domain::ConstIterator itPoint = domain().begin();
+  typename Domain::ConstIterator itEnd = domain().end();
+  while ( itPoint != itEnd )
+  {
+    if ( find( *itPoint ) == end() )
+    {
+      *ito++ = *itPoint;
+    }
+    ++itPoint;
+  }
+}
+
+/**
+ * Builds the complement in the domain of the set [other_set] in
+ * this.
+ *
+ * @param other_set defines the set whose complement is assigned to 'this'.
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::assignFromComplement
+( const DigitalSetByAssociativeContainer<Domain, Container> & other_set )
+{
+  clear();
+  typename Domain::ConstIterator itPoint = domain().begin();
+  typename Domain::ConstIterator itEnd = domain().end();
+  while ( itPoint != itEnd )
+  {
+    if ( other_set.find( *itPoint ) == other_set.end() )
+    {
+      insert( *itPoint );
+    }
+    ++itPoint;
+  }
+}
+
+/**
+ * Computes the bounding box of this set.
+ *
+ * @param lower the first point of the bounding box (lowest in all
+ * directions).
+ * @param upper the last point of the bounding box (highest in all
+ * directions).
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::computeBoundingBox
+( Point & lower, Point & upper ) const
+{
+  lower = domain().upperBound();
+  upper = domain().lowerBound();
+  ConstIterator it = begin();
+  ConstIterator itEnd = end();
+  while ( it != itEnd )
+  {
+    lower = lower.inf( *it );
+    upper = upper.sup( *it );
+    ++it;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Domain, typename Container>
+inline
+void
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSetByAssociativeContainer]" << " size=" << size();
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Domain, typename Container>
+inline
+bool
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::isValid() const
+{
+  return true;
+}
+
+
+// --------------- CDrawableWithBoard2D realization -------------------------
+
+/**
+ * Default drawing style object.
+ * @return the dyn. alloc. default style for this object.
+ */
+
+/**
+ * @return the style name used for drawing this object.
+ */
+template<typename Domain, typename Container>
+inline
+std::string
+DGtal::DigitalSetByAssociativeContainer<Domain, Container>::className() const
+{
+  return "DigitalSetByAssociativeContainer";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline function                                         //
+
+template <typename Domain, typename Container>
+inline
+std::ostream &
+DGtal::operator<< ( std::ostream & out, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

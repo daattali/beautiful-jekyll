@@ -1,7 +1,0 @@
-<map id="DGtal::CombinatorialDSS&lt; TConstIterator, TInteger &gt;::ConstPointIterator" name="DGtal::CombinatorialDSS&lt; TConstIterator, TInteger &gt;::ConstPointIterator">
-<area shape="rect" id="node2" href="$classDGtal_1_1CombinatorialDSS.html" title="Aim:" alt="" coords="979,156,1186,206"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; 2, Integer \&gt;" alt="" coords="630,238,770,288"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="222,186,394,254"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1CombinatorialDSS_1_1CodeHandler.html" title="DGtal::CombinatorialDSS\l\&lt; TConstIterator, TInteger\l \&gt;::CodeHandler\&lt; ConstIterator \&gt;" alt="" coords="578,15,822,84"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CombinatorialDSS_1_1CodeHandler.html" title="DGtal::CombinatorialDSS\l\&lt; TConstIterator, TInteger\l \&gt;::CodeHandler\&lt; TIterator,\l iterator_type \&gt;" alt="" coords="206,6,410,93"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="LibBoard::Circle" name="LibBoard::Circle">
-<area shape="rect" id="node4" href="$structLibBoard_1_1Arc.html" title="An arc. " alt="" coords="14,246,121,277"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1Ellipse.html" title="An ellipse. " alt="" coords="5,86,131,117"/>
-<area shape="rect" id="node3" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="6,6,129,37"/>
-</map>

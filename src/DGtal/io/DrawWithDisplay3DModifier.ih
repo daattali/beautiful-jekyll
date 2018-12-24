@@ -1,0 +1,67 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU
+
+ Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file   DrawWithDisplay3DModifier.ih
+ *
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2013/04/27
+ *
+ * @brief
+ *
+ * Implementation of inline methods defined in DrawWithDisplay3DModifier.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+inline
+std::string
+DGtal::DrawWithDisplay3DModifier::className() const
+{
+  return "DrawWithDisplay3DModifier";
+}
+
+
+inline
+std::string
+DGtal::CustomStyle3D::className() const
+{
+  return "CustomStyle3D";
+}
+
+
+inline
+double *
+DGtal::ClippingPlane::getEquation()
+{
+  double *r = new double[4];
+  r[0] = myA;
+  r[1] = myB;
+  r[2] = myC;
+  r[3] = myD;
+  return r;
+}
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

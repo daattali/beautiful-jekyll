@@ -1,0 +1,259 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SpatialCubicalSubdivision.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2014/02/11
+ *
+ * Implementation of inline methods defined in SpatialCubicalSubdivision.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::SpatialCubicalSubdivision<TSpace>::
+~SpatialCubicalSubdivision()
+{
+  BinConstRange range = myArray.constRange();
+  for ( typename BinConstRange::ConstIterator it = range.begin(), itE = range.end();
+        it != itE; ++it )
+    {
+      Storage* ptr = *it;
+      if ( ptr ) delete ptr;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::SpatialCubicalSubdivision<TSpace>::
+SpatialCubicalSubdivision( const SpatialCubicalSubdivision& other )
+  : myDomain( other.myDomain ), mySize( other.mySize ), 
+    myArray( other.binDomain() ), myDiag( other.myDiag )
+{
+  BinConstRange range = myArray.constRange();
+  BinConstRange range_src = other.myArray.constRange();
+  for ( typename BinConstRange::ConstIterator it = range.begin(), itE = range.end(),
+          itSrc = other.myArray.constRange();
+        it != itE; ++it, ++itSrc )
+    {
+      Storage* ptr = *itSrc;
+      if ( ptr != 0 ) *it = new Storage( *ptr );
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::SpatialCubicalSubdivision<TSpace>::
+SpatialCubicalSubdivision( Point lo, Point up, Coordinate size )
+  : myDomain( lo, up ), mySize( size ), myArray( myDomain )
+{
+  Point dimensions = myDomain.upperBound() - myDomain.lowerBound();
+  dimensions /= mySize;
+  // the domain for the bins defines the image domain.
+  myArray = StorageArray( Domain( Point::zero, dimensions ) );
+  // all elements of myArray are initialized with 0.
+  myDiag = myDomain.lowerBound() + Point::diagonal(mySize-1); // used in uppermost
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+const typename DGtal::SpatialCubicalSubdivision<TSpace>::Domain &
+DGtal::SpatialCubicalSubdivision<TSpace>::
+domain() const
+{
+  return myDomain;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+const typename DGtal::SpatialCubicalSubdivision<TSpace>::Domain &
+DGtal::SpatialCubicalSubdivision<TSpace>::
+binDomain() const
+{
+  return myArray.domain();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::SpatialCubicalSubdivision<TSpace>::Point
+DGtal::SpatialCubicalSubdivision<TSpace>::
+bin( Point p ) const
+{
+  p -= myDomain.lowerBound();
+  return p / mySize;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::SpatialCubicalSubdivision<TSpace>::Point
+DGtal::SpatialCubicalSubdivision<TSpace>::
+lowest( Point b ) const
+{
+  b *= mySize;
+  return b + myDomain.lowerBound();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::SpatialCubicalSubdivision<TSpace>::Point
+DGtal::SpatialCubicalSubdivision<TSpace>::
+uppermost( Point b ) const
+{
+  b *= mySize;
+  return b + myDiag;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+void
+DGtal::SpatialCubicalSubdivision<TSpace>::
+push( const Point& p ) 
+{
+  Point b = bin( p );
+  Storage* pts = myArray( b );
+  if ( pts == 0 ) 
+    {
+      pts = new Storage;
+      myArray.setValue( b, pts );
+    }
+  pts->push_back( p );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+template <typename PointConstIterator>
+inline
+void
+DGtal::SpatialCubicalSubdivision<TSpace>::
+push( PointConstIterator it, PointConstIterator itE )
+{
+  for ( ; it != itE; ++it )
+    this->push( *it );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+template <typename PointPredicate>
+inline
+void
+DGtal::SpatialCubicalSubdivision<TSpace>::
+getPoints( std::vector<Point> & pts, 
+           Point bin_lo, Point bin_up, const PointPredicate & pred ) const
+{
+  Domain local( bin_lo.sup( binDomain().lowerBound() ),
+                bin_up.inf( binDomain().upperBound() ) );
+  for ( typename Domain::ConstIterator it = local.begin(), itE = local.end(); it != itE; ++it )
+    {
+      const Storage* storage = myArray( *it );
+      if ( storage )
+        for ( typename Storage::const_iterator its = storage->begin(), itsE = storage->end(); 
+              its != itsE; ++its )
+          if ( pred( *its ) ) pts.push_back( *its );
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+void
+DGtal::SpatialCubicalSubdivision<TSpace>::
+getPoints( std::vector<Point> & pts, 
+           Point bin_lo, Point bin_up ) const
+{
+  Domain local( bin_lo.sup( binDomain().lowerBound() ),
+                bin_up.inf( binDomain().upperBound() ) );
+  for ( typename Domain::ConstIterator it = local.begin(), itE = local.end(); it != itE; ++it )
+    {
+      const Storage* storage = myArray( *it );
+      if ( storage )
+        for ( typename Storage::const_iterator its = storage->begin(), itsE = storage->end(); 
+              its != itsE; ++its )
+          pts.push_back( *its );
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace>
+inline
+void
+DGtal::SpatialCubicalSubdivision<TSpace>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[SpatialCubicalSubdivision domain=" << domain() 
+      << " binDomain=" << binDomain()
+      << " binSize=" << mySize
+      << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace>
+inline
+bool
+DGtal::SpatialCubicalSubdivision<TSpace>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const SpatialCubicalSubdivision<TSpace> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,112 @@
+/**
+ * @file packageDECConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/04/04
+ *
+ * Documentation file for feature DEC
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ *
+ *
+ * The content is just an example of dot graph structure. Please
+ * update it.
+ *
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageDECConcepts  DEC Main Concepts
+
+@writers Pierre Gueth
+
+@dot
+digraph GDEC {
+    rankdir= BT
+
+        subgraph cluster_boost {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="boost";
+
+                 boost_DefaultConstructible [ label="boost::DefaultConstructible" URL="\ref boost::DefaultConstructible" ];
+                 boost_Assignable [ label="boost::Assignable" URL="\ref boost::Assignable" ];
+        }
+
+        subgraph cluster_math_linalg {
+                 style=filled;
+                 color="#e4e4ff";
+                 node [style=filled,color=white];
+                 label="math/linalg";
+
+                 CVectorSpace [ label="CVectorSpace" URL="\ref concepts::CVectorSpace" ];
+                 CMatrix [ label="CMatrix" URL="\ref concepts::CMatrix" ];
+                 CStaticMatrix [ label="CStaticMatrix" URL="\ref concepts::CStaticMatrix" ];
+                 CDynamicMatrix [ label="CDynamicMatrix" URL="\ref concepts::CDynamicMatrix" ];
+                 CVector [ label="CVector" URL="\ref concepts::CVector" ];
+                 CStaticVector [ label="CStaticVector" URL="\ref concepts::CStaticVector" ];
+                 CDynamicVector [ label="CDynamicVector" URL="\ref concepts::CDynamicVector" ];
+                 CLinearAlgebra [ label="CLinearAlgebra" URL="\ref concepts::CLinearAlgebra" ];
+                 CLinearAlgebraSolver [ label="CLinearAlgebraSolver" URL="\ref concepts::CLinearAlgebraSolver" ];
+        }
+
+        CVector -> CVectorSpace;
+        CStaticVector -> CVector;
+        CStaticVector -> boost_DefaultConstructible;
+        CDynamicVector -> CVector;
+        CMatrix -> CVectorSpace;
+        CStaticMatrix -> CMatrix;
+        CStaticMatrix -> boost_DefaultConstructible;
+        CDynamicMatrix -> CMatrix;
+
+        CLinearAlgebra -> CMatrix;
+        CLinearAlgebra -> CVector;
+
+        CLinearAlgebraSolver -> CLinearAlgebra;
+        CLinearAlgebraSolver -> boost_DefaultConstructible;
+
+    subgraph cluster_concepts {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=white];
+        label="DEC (main concepts)";
+
+        CDiscreteExteriorCalculusVectorSpace [ label="CDiscreteExteriorCalculusVectorSpace" URL="\ref concepts::CDiscreteExteriorCalculusVectorSpace" ] ;
+    }
+    CDiscreteExteriorCalculusVectorSpace -> CVectorSpace;
+    CVectorSpace -> boost_Assignable;
+
+    subgraph cluster_models {
+        style=filled;
+        color="#ccffcc";
+        node [style=filled,color=white];
+        label="DEC (main models)";
+
+        KForm [ label="KForm" URL="\ref KForm" ] ;
+        LinearOperator [ label="LinearOperator" URL="\ref LinearOperator" ] ;
+        VectorField [ label="VectorField" URL="\ref VectorField" ] ;
+        DiscreteExteriorCalculus [ label="DiscreteExteriorCalculus" URL="\ref DiscreteExteriorCalculus" ] ;
+        DiscreteExteriorCalculusSolver [ label="DiscreteExteriorCalculusSolver" URL="\ref DiscreteExteriorCalculusSolver" ] ;
+        }
+
+    KForm -> CDiscreteExteriorCalculusVectorSpace;
+    LinearOperator -> CDiscreteExteriorCalculusVectorSpace;
+    VectorField -> CDiscreteExteriorCalculusVectorSpace;
+
+    DiscreteExteriorCalculus -> CLinearAlgebra [label="use",style=dashed];
+    DiscreteExteriorCalculus -> CDynamicMatrix [label="use",style=dashed];
+    DiscreteExteriorCalculus -> CDynamicVector [label="use",style=dashed];
+
+    DiscreteExteriorCalculusSolver -> CLinearAlgebraSolver [label="use",style=dashed];
+}
+@enddot
+
+*/
+
+}

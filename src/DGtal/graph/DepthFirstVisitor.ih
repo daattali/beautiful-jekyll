@@ -1,0 +1,270 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DepthFirstVisitor.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/11/15
+ *
+ * Implementation of inline methods defined in DepthFirstVisitor.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::~DepthFirstVisitor()
+{
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>
+::DepthFirstVisitor( const DepthFirstVisitor & other )
+  : myGraph( other.myGraph ), 
+    myMarkedVertices( other.myMarkedVertices ),
+    myQueue( other.myQueue )
+{
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>
+::DepthFirstVisitor( ConstAlias<Graph> g )
+  : myGraph( g )
+{
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>
+::DepthFirstVisitor( ConstAlias<Graph> g, const Vertex & p )
+  : myGraph( g )
+{
+  myMarkedVertices.insert( p );
+  myQueue.push( std::make_pair( p, 0 ) );
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+template <typename VertexIterator>
+inline
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>
+::DepthFirstVisitor( ConstAlias<Graph> g,
+                       VertexIterator b, VertexIterator e )
+  : myGraph( g )
+{
+  for ( ; b != e; ++b )
+    {
+      myMarkedVertices.insert( *b );
+      myQueue.push( std::make_pair( *b, 0 ) );
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+const typename DGtal::DepthFirstVisitor<TGraph,TMarkSet>::Graph & 
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::graph() const
+{
+  return myGraph;
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+bool
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::finished() const
+{
+  return myQueue.empty();
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+const typename DGtal::DepthFirstVisitor<TGraph,TMarkSet>::Node & 
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::current() const
+{
+  ASSERT( ! finished() );
+  return myQueue.top();
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+void
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::ignore()
+{
+  ASSERT( ! finished() );
+  myQueue.pop();
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+void
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::expand()
+{
+  ASSERT( ! finished() );
+  Node node = myQueue.top();
+  Data d = node.second + 1; 
+  myQueue.pop();
+  VertexList tmp;
+  tmp.reserve( myGraph.bestCapacity() );
+  std::back_insert_iterator<VertexList> write_it = std::back_inserter( tmp );
+  myGraph.writeNeighbors( write_it, node.first );
+  for ( typename VertexList::const_iterator it = tmp.begin(), 
+          it_end = tmp.end(); it != it_end; ++it )
+    {
+      typename MarkSet::const_iterator mark_it = myMarkedVertices.find( *it );
+      if ( mark_it == myMarkedVertices.end() )
+        {
+          myMarkedVertices.insert( *it );
+          myQueue.push( std::make_pair( *it, d ) );
+        }
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+template <typename VertexPredicate>
+inline
+void
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::expand
+( const VertexPredicate & authorized_vtx )
+{
+  ASSERT( ! finished() );
+  Node node = myQueue.top();
+  Data d = node.second + 1; 
+  myQueue.pop();
+  VertexList tmp;
+  tmp.reserve( myGraph.bestCapacity() );
+  std::back_insert_iterator<VertexList> write_it = std::back_inserter( tmp );
+  myGraph.writeNeighbors( write_it,
+                          node.first,
+                          authorized_vtx );
+  for ( typename VertexList::const_iterator it = tmp.begin(), 
+          it_end = tmp.end(); it != it_end; ++it )
+    {
+      typename MarkSet::const_iterator mark_it = myMarkedVertices.find( *it );
+      if ( mark_it == myMarkedVertices.end() )
+        {
+          myMarkedVertices.insert( *it );
+          myQueue.push( std::make_pair( *it, d ) );
+        }
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+void
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::terminate()
+{
+  while ( ! finished() )
+    {
+      Node node = myQueue.top();
+      myQueue.pop();
+      typename MarkSet::iterator mark_it = myMarkedVertices.find( node.first );
+      ASSERT( mark_it != myMarkedVertices.end() );
+      myMarkedVertices.erase( mark_it );
+    }
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+const typename DGtal::DepthFirstVisitor<TGraph,TMarkSet>::MarkSet & 
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::markedVertices() const
+{
+  return myMarkedVertices;
+}
+//-----------------------------------------------------------------------------
+template < typename TGraph, typename TMarkSet >
+inline
+typename DGtal::DepthFirstVisitor<TGraph,TMarkSet>::MarkSet
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::visitedVertices() const
+{
+  if ( finished() ) return myMarkedVertices;
+  MarkSet visitedVtx = myMarkedVertices;
+  NodeQueue copyQ( myQueue );
+  while ( ! copyQ.empty() )
+    {
+      Node node = copyQ.top();
+      copyQ.pop();
+      typename MarkSet::iterator mark_it = visitedVtx.find( node.first );
+      ASSERT( mark_it != visitedVtx.end() );
+      visitedVtx.erase( mark_it );
+    }
+  return visitedVtx;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template < typename TGraph, typename TMarkSet >
+inline
+void
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DepthFirstVisitor"
+      << " #queue=" << myQueue.size()
+      << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template < typename TGraph, typename TMarkSet >
+inline
+bool
+DGtal::DepthFirstVisitor<TGraph,TMarkSet>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template < typename TGraph, typename TMarkSet >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const DepthFirstVisitor<TGraph,TMarkSet> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

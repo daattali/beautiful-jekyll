@@ -1,6 +1,0 @@
-<map id="DGtal::HyperRectDomain&lt; TSpace &gt;" name="DGtal::HyperRectDomain&lt; TSpace &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1HyperRectDomain__Iterator.html" title="DGtal::HyperRectDomain\l_Iterator\&lt; TPoint \&gt;" alt="" coords="456,18,637,65"/>
-<area shape="rect" id="node13" href="$structDGtal_1_1functors_1_1IsWithinPointPredicate.html" title="Aim: The predicate returns true when the point is within the given bounds. " alt="" coords="249,71,431,118"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1functors_1_1IsWithinPointPredicate.html" title="DGtal::functors::IsWithin\lPointPredicate\&lt; Point \&gt;" alt="" coords="661,97,837,143"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="256,183,424,247"/>
-</map>

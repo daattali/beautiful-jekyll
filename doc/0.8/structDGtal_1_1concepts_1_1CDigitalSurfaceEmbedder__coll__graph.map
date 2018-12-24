@@ -1,7 +1,0 @@
-<map id="DGtal::concepts::CDigitalSurfaceEmbedder&lt; T &gt;" name="DGtal::concepts::CDigitalSurfaceEmbedder&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CSCellEmbedder.html" title="Aim: A cell embedder is a mapping from signed cells to Euclidean points. It adds inner types to funct..." alt="" coords="245,402,520,430"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CUnaryFunctor.html" title="DGtal::CUnaryFunctor\l\&lt; T, T::SCell, T::RealPoint \&gt;" alt="" coords="179,295,377,339"/>
-<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html. " alt="" coords="5,5,178,33"/>
-<area shape="rect" id="node7" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="88,97,261,124"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="223,188,384,232"/>
-</map>

@@ -1,0 +1,197 @@
+/**
+ * @file moduleDECPoisson.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/04/04
+ *
+ * Documentation file for feature DECPoisson
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleDECPoisson Poisson problem
+@writers Pierre Gueth
+
+
+[TOC]
+
+\section sectDECPoissonProblem Poisson equation
+
+The Poisson equation can be written as:
+
+\f[ \Delta \phi = f \f]
+
+where \f$\Delta\f$ is the Laplace operator, \f$\phi\f$ the solution of the problem and \f$f\f$ the input of the problem.
+The Poisson equation can be viewed as the heat equation when steady state is reached.
+\f$f\f$ is then the constant spatial heating power applied to the structure and \f$\phi\f$ is the temperature reached in steady state (up to a spatial constant).
+Here we choose \f$f\f$ to be a Dirac delta function \f$\delta\f$ to simulate a punctual heating on the structure.
+
+Depending on border conditions, \f$\Delta\f$ may have some null eigenvalues.
+In order to make it solvable, we use a regularized version of the Laplace operator \f$\Delta_\mathrm{reg}\f$, defined below
+
+\f[ \Delta_\mathrm{reg} = \Delta + \lambda I \f]
+
+where \f$I\f$ is the identity operator and \f$\lambda\f$ is the regularization scalar, chosen small with respect to \f$\Delta\f$ eigenvalues.
+Linear regularized solution are the same solution as least square problem solution of the non regularized problem.
+\f$I\f$ is generated using DiscreteExteriorCalculus.identity.
+
+One can use the general Laplace operator definition.
+
+\f[ \Delta = \star d \star d = \delta d \f]
+
+However, for convenience DiscreteExteriorCalculus provides a method to get the Laplace operator directly.
+
+\section sectDECPoisson1D 1D Poisson resolution
+
+In this example, we create an 1D linear structure embedded in a 2D space and we solve a non regularized Poisson equation on this structure.
+
+Boundary conditions effect are illustrated for the two classical boundary conditions.
+- Neumann boundary condition forces the derivative to be null along the border of the structure. Here, this means that heat can't flow out the start and the end of the linear structure.
+- Dirichlet boundary condition connects borders of the structure to null potential. With our heat analogy, this means that the start and the end of the linear structure are connected to thermostat, which are given the null temperature.
+
+Boundary conditions are changed from Neumann to Dirichlet conditions by adding dangling 1-cells at the beginning and at the end of the structure.
+Snippets are taken from testLinearStructure.cpp.
+
+\subsection sectDECPoisson1DNeumann Neumann boundary condition
+
+First, an empty calculus structure is created and, using simple for loops, it is filled with some 0-cells and 1-cells to from a linear structure.
+When filled manually with DiscreteExteriorCalculus.insertSCell, one can pass the primal and dual sizes of each cell which default to 1.
+Temperature nodes are associated primal 0-cells.
+Note that to enforce Neumann boundary conditions, the linear structure has to end with 0-cells.
+Moreover some 1-cells are inserted as negative cells to match their orientation with the orientation of the linear structure.
+
+\snippet testLinearStructure.cpp neumann-creation
+
+The input heat vector \f$f\f$, which is a primal 0-form in the DEC formulation, is then created and is given values of a Dirac pulse shifted at the right position.
+
+\snippet testLinearStructure.cpp input-dirac
+
+\image html linear_structure_neumann_dirac.png "Linear structure with Neumann boundary conditions. The input dirac 0-form is displayed, the blue 0-cell is where the non zero point of the Dirac is located."
+
+The primal non regularized Laplace operator \f$\Delta\f$ is generated using DiscreteExteriorCalculus.laplace.
+The primal exterior derivative from 0-form to 1-form will be used to compute the gradient solution.
+
+\snippet testLinearStructure.cpp neumann-laplace-definition
+
+Now the problem is fully defined and there one thing left to do: solving it.
+The resolution is done by DiscreteExteriorCalculusSolver.
+This class takes the actual linear solver used as the second template parameter.
+Any class that validates the CLinearAlgebraSolver concept can be wrapped by DiscreteExteriorCalculusSolver.
+If DGtal was compiled with eigen support enabled as described in \ref sectDECLinearSolver,
+some solvers will be available in the EigenLinearAlgebraBackend.
+Here, we will use the EigenLinearAlgebraBackend::SolverSparseQR solver.
+Once created the solver is given the operator using DiscreteExteriorCalculusSolver.compute.
+The input dirac 0-form is passed to DiscreteExteriorCalculusSolver.solve, which return the solution of the problem.
+
+\snippet testLinearStructure.cpp neumann-solve
+
+Since the dirac input is null everywhere except at a single point, this means that the second derivative of the solution is null everywhere except at the dirac position.
+An analytic form can be expressed as a continuous piece-wise quadratic function.
+Numerical values of the solution fit analytic values with at least a relative precision of 1e-5.
+
+\image html linear_structure_neumann_solution.png "Linear structure with Neumann boundary conditions. Solution 0-form is displayed."
+\image html linear_structure_neumann_solution_gradient.png "Linear structure with Neumann boundary conditions. Gradient 1-form and vector field are displayed."
+\image html linear_structure_neumann_fit.png "Numerical values computed using the solver and analytic solution for the Neumann problem."
+
+\subsection sectDECPoisson1DDirichlet Dirichlet boundary condition
+
+Dirichlet boundary condition fixes value of 0-forms to zero along borders of the structure.
+Two dangling 1-cells are added at each end of the Neumann structure to switch to Dirichlet boundary condition.
+Since those 1-cells are not connected to a 0-cell on one of their border, this will simulate the presence of zero-valued 0-cell in those places through enforcing Dirichlet boundary conditions.
+
+\snippet testLinearStructure.cpp dirichlet-creation
+
+The input Dirac can be used as in the Neumann case since no 0-cells has been added to the structure.
+
+\image html linear_structure_dirichlet_dirac.png "Linear structure with Dirichlet boundary conditions. The input dirac 0-form is displayed, the blue 0-cell is where the non zero point is located. Two dangling edges were added at each ends of the structure."
+
+Laplace operator needs to be rebuild, even if the code doesn't change.
+
+\snippet testLinearStructure.cpp dirichlet-laplace-definition
+
+Solving the problem is achieved by using the same code as for the Neumann case.
+This time the analytic solution is piece-wise linear and take a constant null value at the border of the structure, as expect from the Dirichlet boundary condition.
+
+\snippet testLinearStructure.cpp dirichlet-solve
+
+Numerical values of the solution fit analytic values with at least a relative precision of 1e-5.
+
+\image html linear_structure_dirichlet_solution.png "Linear structure with Dirichlet boundary conditions. Solution 0-form is displayed."
+\image html linear_structure_dirichlet_solution_gradient.png "Linear structure with Dirichlet boundary conditions. Gradient 1-form and vector field are displayed."
+\image html linear_structure_dirichlet_fit.png "Numerical and analytic solution for the Dirichlet problem."
+
+\section sectDECPoisson2D 2D Poisson problem
+
+In this example, we create a 2D ring structure and we solve a regularized Poisson equation on this structure.
+Snippets are taken from exampleDiscreteExteriorCalculusSolve.cpp.
+First the structure is created from a digital set.
+
+\snippet exampleDiscreteExteriorCalculusSolve.cpp calculus_creation
+
+Then we compute the dual regularized Laplace operator with \f$\lambda = 0.01 \f$.
+
+\snippet exampleDiscreteExteriorCalculusSolve.cpp laplace_definition
+
+Input k-form \f$y\f$ is a Dirac delta positioned on the dual 0-cell at coordinates \f$(2,5)\f$.
+DiscreteExteriorCalculus.getIndex return the index of the dual 0-form container associated with the dirac position cell.
+
+\snippet exampleDiscreteExteriorCalculusSolve.cpp dirac_definition
+
+The following illustration represents the dual of the input. Hence,
+since we have specified a dirac on "dual 0-cell", its primal
+representation attaches information to (primal) 2-cells.
+
+\image html solve_laplace_calculus.png "Input dual 0-form."
+
+We try to solve the problem using EigenLinearAlgebraBackend::SolverSimplicialLLT, but DiscreteExteriorCalculusSolver.isValid reports an error.
+Underlying linear algebra solver DiscreteExteriorCalculusSolver.solver.info reports a <em>numerical_error</em>.
+
+\snippet exampleDiscreteExteriorCalculusSolve.cpp solve_llt
+\image html solve_laplace_simplicial_llt.png "Poisson problem solution computed with simplicial LLT solver. Solver reports a numerical error."
+
+Since the first solver failed, let's use another one: EigenLinearAlgebraBackend::SolverSimplicialLDLT for example.
+This time DiscreteExteriorCalculusSolver.isValid is true after computing problem solution and the solution dual 0-form contains the solution of the problem.
+
+\snippet exampleDiscreteExteriorCalculusSolve.cpp solve_ldlt
+\image html solve_laplace_simplicial_ldlt.png "Poisson problem solution computed with simplicial LDLT solver. Solver solution is valid."
+
+\section sectDECPoissonAlcapone Embedded 2D Poisson problem
+
+In this example, we create an embedded 2D structure from a DigitalSurface and we solve a dual Poisson equation with Neumann boundaries condition.
+Snippets are taken from exampleDECSurface.cpp.
+
+First we load the Alcapone image and extract its boundary surface.
+Note that the Khalimsky space domain opens the surface under the feet of Alcapone.
+
+\snippet exampleDECSurface.cpp alcapone_surface
+
+The DEC structure is then create using DiscreteExteriorCalculusFactory::createFromNSCells.
+Borders are **not** added to the structure.
+
+\snippet exampleDECSurface.cpp alcapone_calculus
+\image html alcapone_calculus.png "Alcapone DEC structure."
+
+Dual 0-form \f$\rho\f$ is the input of the Poisson problem.
+Left foot has positive value and right foot has negative value.
+
+\snippet exampleDECSurface.cpp alcapone_rho
+\image html alcapone_rho.png "Input dual 0-form."
+
+Dual Laplace operator is computed and passed to the solver using DiscreteExteriorCalculusSolver.compute.
+The dual 0-form solution \f$\phi\f$ is returned by DiscreteExteriorCalculusSolver.solve.
+
+\snippet exampleDECSurface.cpp alcapone_phi
+\image html alcapone_phi.png "Solution dual 0-form."
+
+
+*/
+
+}

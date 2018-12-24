@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1Adapter.html" title="Aim: abstract adapter for ArithmeticalDSS. Has 2 virtual methods:" alt="" coords="1417,135,1644,166"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1ArithmeticalDSS.html" title="Aim: Dynamic recognition of a digital straight segment (DSS) defined as the sequence of simply connec..." alt="" coords="951,135,1316,166"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1IteratorCirculatorTraits.html" title="DGtal::IteratorCirculatorTraits\&lt; ConstIterator \&gt;" alt="" coords="533,42,824,73"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1IteratorCirculatorTraits.html" title="Aim: Provides definition types for both iterators and circulators: Type, Category, Value, Difference, Pointer and Reference." alt="" coords="153,42,380,73"/>
-<area shape="rect" id="node14" title="STL class." alt="" coords="209,163,324,194"/>
-</map>

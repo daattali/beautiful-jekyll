@@ -1,0 +1,869 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file COBANaivePlaneComputer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/09/20
+ *
+ * Implementation of inline methods defined in COBANaivePlaneComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+~COBANaivePlaneComputer()
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+COBANaivePlaneComputer()
+  : myG( NumberTraits<TInternalInteger>::ZERO )
+{ // Object is invalid
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+COBANaivePlaneComputer( const COBANaivePlaneComputer & other )
+  : myAxis( other.myAxis ),
+    myG( other.myG ),
+    myWidth( other.myWidth ),
+    myPointSet( other.myPointSet ),
+    myState( other.myState ),
+    myCst1( other.myCst1 ),
+    myCst2( other.myCst2 )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger> &
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+operator=( const COBANaivePlaneComputer & other )
+{
+  if ( this != &other )
+    {
+      myAxis = other.myAxis;
+      myG = other.myG;
+      myWidth = other.myWidth;
+      myPointSet = other.myPointSet;
+      myState = other.myState;
+      myCst1 = other.myCst1;
+      myCst2 = other.myCst2;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::MyIntegerComputer &
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+ic() const
+{
+  return myState.cip.ic();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+clear()
+{
+  myPointSet.clear();
+  myState.cip.clear();
+  // initialize the search space as a square.
+  myState.cip.pushBack( InternalPoint2( -myG, -myG ) ); 
+  myState.cip.pushBack( InternalPoint2(  myG, -myG ) ); 
+  myState.cip.pushBack( InternalPoint2(  myG,  myG ) ); 
+  myState.cip.pushBack( InternalPoint2( -myG,  myG ) ); 
+  computeCentroidAndNormal( myState );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+init( Dimension axis, InternalInteger diameter, 
+      InternalInteger widthNumerator,
+      InternalInteger widthDenominator )
+{
+  myAxis = axis;
+  myWidth[ 0 ] = widthNumerator;
+  myWidth[ 1 ] = widthDenominator;
+  // initialize the grid step.
+  myG = 2*diameter;  myG *= diameter;  myG *= diameter;
+  // Initializes some constants
+  // _cst1 = ( (int) ceil( get_si( myG ) * myWidth ) + 1 );
+  // _cst2 = ( (int) floor( get_si( myG ) * myWidth ) - 1 );
+  myCst1 = ( ( myG * myWidth[ 0 ] - 1 ) / myWidth[ 1 ] ) + 2;
+  myCst2 = ( ( myG * myWidth[ 0 ] )     / myWidth[ 1 ] ) - 1;
+  clear();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::ConstIterator
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+begin() const
+{
+  return myPointSet.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::ConstIterator
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+end() const
+{
+  return myPointSet.end();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+size() const
+{
+  return myPointSet.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+empty() const
+{
+  return myPointSet.empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+max_size() const
+{
+  return myPointSet.max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+maxSize() const
+{
+  return max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+complexity() const
+{
+  return myState.cip.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+operator()( const Point & p ) const
+{
+  ic().getDotProduct( _v, myState.N, p );
+  return ( _v >= myState.min ) && ( _v <= myState.max );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+extendAsIs( const Point & p )
+{ 
+  ASSERT( isValid() && ! empty() );
+  bool ok = this->operator()( p );
+  if ( ok ) myPointSet.insert( p );
+  return ok;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+extend( const Point & p )
+{
+  ASSERT( isValid() );
+  // Checks if first point.
+  if ( empty() )
+    {
+      myPointSet.insert( p );
+      ic().getDotProduct( myState.max, myState.N, p );
+      myState.min = myState.max;
+      myState.ptMax = myState.ptMin = p;
+      return true;
+    }
+
+  // Check first if p is already a point of the plane.
+  if ( myPointSet.find( p ) != myPointSet.end() ) // already in set
+    return true;
+  // Check if p lies within the current bounds of the plane.
+  _state.N = myState.N; 
+  _state.min = myState.min; 
+  _state.max = myState.max; 
+  _state.ptMin = myState.ptMin; 
+  _state.ptMax = myState.ptMax; 
+  bool changed = updateMinMax( _state, &p, (&p)+1 );
+  // Check if point is already within bounds.
+  if ( ! changed ) 
+    {
+      myPointSet.insert( p );
+      return true;
+    }
+  // Check if width is still ok
+  if ( checkPlaneWidth( _state ) )
+    {
+      myState.min = _state.min;
+      myState.max = _state.max;
+      myState.ptMin = _state.ptMin;
+      myState.ptMax = _state.ptMax;
+      myPointSet.insert( p );
+      return true;
+    }
+  // We have to find a new normal. First, update gradient.
+  computeGradient( _grad, _state );
+
+  // Checks if we can change the normal so as to find another digital plane.
+  if( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+	&& ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+    {
+      // Unable to update solution. 
+      return false;
+    }
+
+  // There is a gradient, tries to optimize.
+  _state.cip = myState.cip;
+  doubleCut( _grad, _state );
+
+  // While at least 1 point left on the search space
+  while ( ! _state.cip.empty() )
+  {
+    computeCentroidAndNormal( _state );
+    // Calls oracle
+    computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+    updateMinMax( _state, &p, (&p)+1 );
+    // Check if width is now ok
+    if ( checkPlaneWidth( _state ) )
+      { // Found a plane.
+        myState.min = _state.min;
+        myState.max = _state.max;
+        myState.ptMin = _state.ptMin;
+        myState.ptMax = _state.ptMax;
+        myState.cip.swap( _state.cip );
+        myState.centroid = _state.centroid;
+        myState.N = _state.N;
+        myPointSet.insert( p );
+        return true;
+      }
+
+    // We have to find a new normal. First, update gradient.
+    computeGradient( _grad, _state );
+
+    // Checks if we can change the normal so as to find another digital plane.
+    if ( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+           && ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+      {
+        // Unable to update solution. Removes point from set.
+        break;
+      }
+
+    // There is a gradient, tries to optimize.
+    doubleCut( _grad, _state );
+  }
+  // was unable to find a correct plane.
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+isExtendable( const Point & p ) const
+{
+  ASSERT( isValid() );
+  // Checks if first point.
+  if ( empty() ) return true;
+
+  // Check first if p is already a point of the plane.
+  if ( myPointSet.find( p ) != myPointSet.end() ) // already in set
+    return true;
+  // Check if p lies within the current bounds of the plane.
+  _state.N = myState.N; 
+  _state.min = myState.min; 
+  _state.max = myState.max; 
+  _state.ptMin = myState.ptMin; 
+  _state.ptMax = myState.ptMax; 
+  bool changed = updateMinMax( _state, (&p), (&p)+1 );
+  // Check if point is already within bounds.
+  if ( ! changed ) return true;
+  // Check if width is still ok
+  if ( checkPlaneWidth( _state ) )
+    return true;
+  // We have to find a new normal. First, update gradient.
+  computeGradient( _grad, _state );
+
+  // Checks if we can change the normal so as to find another digital plane.
+  if( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+	&& ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+    // Unable to update solution. 
+    return false;
+
+  // There is a gradient, tries to optimize.
+  _state.cip = myState.cip;
+  doubleCut( _grad, _state );
+
+  // While at least 1 point left on the search space
+  while ( ! _state.cip.empty() )
+  {
+    computeCentroidAndNormal( _state );
+    // Calls oracle
+    computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+    updateMinMax( _state, (&p), (&p)+1 );
+    // Check if width is now ok
+    if ( checkPlaneWidth( _state ) )
+      // Found a plane.
+      return true;
+
+    // We have to find a new normal. First, update gradient.
+    computeGradient( _grad, _state );
+
+    // Checks if we can change the normal so as to find another digital plane.
+    if ( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+           && ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+      // Unable to update solution. 
+      return false;
+    
+    // There is a gradient, tries to optimize.
+    doubleCut( _grad, _state );
+  }
+  // was unable to find a correct plane.
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+extend( TInputIterator it, TInputIterator itE )
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+
+  ASSERT( isValid() );
+  if ( it == itE ) return true;
+  // Check if points lies within the current bounds of the plane.
+  bool changed;
+  _state.N = myState.N; 
+  if ( empty() )
+    {
+      changed = true;
+      computeMinMax( _state, it, itE );
+    }
+  else
+    {
+      _state.min = myState.min; 
+      _state.max = myState.max; 
+      _state.ptMin = myState.ptMin; 
+      _state.ptMax = myState.ptMax; 
+      changed = updateMinMax( _state, it, itE );
+    }
+  // Check if points are already within bounds.
+  if ( ! changed ) 
+    { // All points are within bounds. Put them in pointset.
+      for ( TInputIterator tmpIt = it; tmpIt != itE; ++tmpIt )
+        myPointSet.insert( *tmpIt );
+      return true;
+    }
+  // Check if width is still ok
+  if ( checkPlaneWidth( _state ) )
+    {
+      myState.min = _state.min;
+      myState.max = _state.max;
+      myState.ptMin = _state.ptMin;
+      myState.ptMax = _state.ptMax;
+      for ( TInputIterator tmpIt = it; tmpIt != itE; ++tmpIt )
+        myPointSet.insert( *tmpIt );
+      return true;
+    }
+  // We have to find a new normal. First, update gradient.
+  computeGradient( _grad, _state );
+
+  // Checks if we can change the normal so as to find another digital plane.
+  if( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+	&& ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+    {
+      // Unable to update solution. 
+      return false;
+    }
+
+  // There is a gradient, tries to optimize.
+  _state.cip = myState.cip;
+  doubleCut( _grad, _state );
+
+  // While at least 1 point left on the search space
+  while ( ! _state.cip.empty() )
+  {
+    computeCentroidAndNormal( _state );
+    // Calls oracle
+    if ( ! myPointSet.empty() ) {
+      computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+      updateMinMax( _state, it, itE );
+    }
+    else computeMinMax( _state, it, itE );
+    // Check if width is now ok
+    if ( checkPlaneWidth( _state ) )
+      { // Found a plane.
+        myState.min = _state.min;
+        myState.max = _state.max;
+        myState.ptMin = _state.ptMin;
+        myState.ptMax = _state.ptMax;
+        myState.cip.swap( _state.cip );
+        myState.centroid = _state.centroid;
+        myState.N = _state.N;
+        for ( TInputIterator tmpIt = it; tmpIt != itE; ++tmpIt )
+          myPointSet.insert( *tmpIt );
+        return true;
+      }
+
+    // We have to find a new normal. First, update gradient.
+    computeGradient( _grad, _state );
+
+    // Checks if we can change the normal so as to find another digital plane.
+    if ( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+           && ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+      {
+        // Unable to update solution. Removes point from set.
+        break;
+      }
+
+    // There is a gradient, tries to optimize.
+    doubleCut( _grad, _state );
+  }
+  // was unable to find a correct plane.
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+isExtendable( TInputIterator it, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+
+  ASSERT( isValid() );
+  if ( it == itE ) return true;
+  // Check if points lies within the current bounds of the plane.
+  bool changed;
+  _state.N = myState.N; 
+  if ( empty() )
+    {
+      changed = true;
+      computeMinMax( _state, it, itE );
+    }
+  else
+    {
+      _state.min = myState.min; 
+      _state.max = myState.max; 
+      _state.ptMin = myState.ptMin; 
+      _state.ptMax = myState.ptMax; 
+      changed = updateMinMax( _state, it, itE );
+    }
+
+  // Check if point is already within bounds.
+  if ( ! changed ) return true;
+  // Check if width is still ok
+  if ( checkPlaneWidth( _state ) )
+    return true;
+  // We have to find a new normal. First, update gradient.
+  computeGradient( _grad, _state );
+
+  // Checks if we can change the normal so as to find another digital plane.
+  if( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+	&& ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+    // Unable to update solution. 
+    return false;
+
+  // There is a gradient, tries to optimize.
+  _state.cip = myState.cip;
+  doubleCut( _grad, _state );
+
+  // While at least 1 point left on the search space
+  while ( ! _state.cip.empty() )
+  {
+    computeCentroidAndNormal( _state );
+    // Calls oracle
+    if ( ! myPointSet.empty() ) {
+      computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+      updateMinMax( _state, it, itE );
+    }
+    else computeMinMax( _state, it, itE );
+    // Check if width is now ok
+    if ( checkPlaneWidth( _state ) )
+      // Found a plane.
+      return true;
+
+    // We have to find a new normal. First, update gradient.
+    computeGradient( _grad, _state );
+
+    // Checks if we can change the normal so as to find another digital plane.
+    if ( ( ( _grad[ 0 ] == NumberTraits<InternalInteger>::ZERO )
+           && ( _grad[ 1 ] == NumberTraits<InternalInteger>::ZERO ) ) )
+      // Unable to update solution. 
+      return false;
+    
+    // There is a gradient, tries to optimize.
+    doubleCut( _grad, _state );
+  }
+  // was unable to find a correct plane.
+  return false;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Primitive
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+primitive() const
+{
+  typedef typename Space::RealVector RealVector;
+  typedef typename RealVector::Component Scalar;
+  RealVector N;
+  N[ 0 ] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 0 ] );
+  N[ 1 ] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 1 ] );
+  N[ 2 ] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 2 ] );
+  Scalar min = NumberTraits<InternalInteger>::castToDouble( myState.min );
+  Scalar max = NumberTraits<InternalInteger>::castToDouble( myState.max );
+  return Primitive( min, N, max - min );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename Vector3D>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+getNormal( Vector3D & normal ) const
+{
+  switch( myAxis ) {
+    case 0 : 
+      normal[0] = 1.0;
+      normal[1] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 1 ]) / NumberTraits<InternalInteger>::castToDouble( myState.N[ 0 ] );
+      normal[2] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 2 ]) / NumberTraits<InternalInteger>::castToDouble( myState.N[ 0 ] );
+      break;
+    case 1 : 
+      normal[0] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 0 ]) / NumberTraits<InternalInteger>::castToDouble( myState.N[ 1 ] );
+      normal[1] = 1.0;
+      normal[2] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 2 ]) / NumberTraits<InternalInteger>::castToDouble( myState.N[ 1 ] );
+      break;
+    case 2 : 
+      normal[0] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 0 ]) / NumberTraits<InternalInteger>::castToDouble( myState.N[ 2 ] );
+      normal[1] = NumberTraits<InternalInteger>::castToDouble( myState.N[ 1 ]) / NumberTraits<InternalInteger>::castToDouble( myState.N[ 2 ] );
+      normal[2] = 1.0;
+      break;
+  }
+}
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+const typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::IntegerVector3 & 
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+exactNormal() const
+{
+  return myState.N;
+}
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename Vector3D>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+getUnitNormal( Vector3D & normal ) const
+{
+  getNormal( normal );
+  double l = sqrt( normal[ 0 ] * normal[ 0 ]
+		   + normal[ 1 ] * normal[ 1 ]
+		   + normal[ 2 ] * normal[ 2 ] );
+  normal[ 0 ] /= l;
+  normal[ 1 ] /= l;
+  normal[ 2 ] /= l;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+getBounds( double & min, double & max ) const
+{
+  double nx = NumberTraits<InternalInteger>::castToDouble( myState.N[ 0 ] );
+  double ny = NumberTraits<InternalInteger>::castToDouble( myState.N[ 1 ] );
+  double nz = NumberTraits<InternalInteger>::castToDouble( myState.N[ 2 ] );
+  double l = sqrt( nx*nx + ny*ny + nz*nz );
+  min = NumberTraits<InternalInteger>::castToDouble( myState.min ) / l;
+  max = NumberTraits<InternalInteger>::castToDouble( myState.max ) / l;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+const typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Point &
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+minimalPoint() const
+{
+  ASSERT( ! this->empty() );
+  return myState.ptMin;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+const typename DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::Point &
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+maximalPoint() const
+{
+  ASSERT( ! this->empty() );
+  return myState.ptMax;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::selfDisplay ( std::ostream & out ) const
+{
+  double min, max;
+  double N[] = {0., 0., 0.};
+  out << "[COBANaivePlaneComputer"
+      << " axis=" << myAxis << " w=" << myWidth[ 0 ] << "/" << myWidth[ 1 ]
+      << " size=" << size() << " complexity=" << complexity() << " N=" << myState.N << ": ";
+  this->getUnitNormal( N );
+  this->getBounds( min, max );
+  out << min << " <= " 
+      << N[ 0 ] << " * x + "
+      << N[ 1 ] << " * y + "
+      << N[ 2 ] << " * z "
+      << " <= " << max << " ]"; 
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::isValid() const
+{
+  return myG != NumberTraits< InternalInteger >::ZERO;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Internals
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+computeCentroidAndNormal( State & state ) const
+{
+  if ( state.cip.empty() ) return;
+  state.centroid = state.cip.centroid();
+  ic().reduce( state.centroid );
+  switch( myAxis ){
+  case 0 : 
+    state.N[ 0 ] = state.centroid[ 2 ] * myG;
+    state.N[ 1 ] = state.centroid[ 0 ];
+    state.N[ 2 ] = state.centroid[ 1 ];
+    break;
+  case 1 : 
+    state.N[ 0 ] = state.centroid[ 0 ];
+    state.N[ 1 ] = state.centroid[ 2 ] * myG;
+    state.N[ 2 ] = state.centroid[ 1 ];
+    break;
+  case 2 : 
+    state.N[ 0 ] = state.centroid[ 0 ];
+    state.N[ 1 ] = state.centroid[ 1 ];
+    state.N[ 2 ] = state.centroid[ 2 ] * myG;
+    break;
+  }
+
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+doubleCut( InternalPoint2 & grad, State & state ) const
+{
+  // 2 cuts on the search space:
+  //  Gradient.p <= cst1 - _v
+  // -Gradient.p <= cst2 + _v
+  _v = myG * ( state.ptMin[ myAxis ] 
+               - state.ptMax[ myAxis ] );
+  state.cip.cut( HalfSpace( grad, myCst1 - _v ) );
+  grad.negate();
+  state.cip.cut( HalfSpace( grad, myCst2 + _v ) );
+  grad.negate();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+computeMinMax( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+
+  ASSERT( itB != itE );
+  ic().getDotProduct( state.min, state.N, *itB );
+  state.max = state.min;
+  state.ptMax = state.ptMin = *itB;
+  ++itB;
+  // look for the points defining the min dot product and the max dot product
+  for ( ; itB != itE; ++itB )
+    {
+      ic().getDotProduct( _v, state.N, *itB );
+      if ( _v > state.max ) 
+	{ 
+	  state.max = _v;  
+	  state.ptMax = *itB;
+	}
+      else if ( _v < state.min )
+	{
+	  state.min = _v;
+	  state.ptMin = *itB;
+	}
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+updateMinMax( State & state, TInputIterator itB, TInputIterator itE ) const
+
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+
+  bool changed = false;
+  // look for the points defining the min dot product and the max dot product
+  for ( ; itB != itE; ++itB )
+    {
+      ic().getDotProduct( _v, state.N, *itB );
+      if ( _v > state.max ) 
+	{ 
+	  state.max = _v;  
+	  state.ptMax = *itB;
+          changed = true;
+	}
+      else if ( _v < state.min )
+	{
+	  state.min = _v;
+	  state.ptMin = *itB;
+          changed = true;
+	}
+    }
+  return changed;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+checkPlaneWidth( const State & state ) const
+{
+  _v = ic().abs( state.N[ myAxis ] );
+  return ( ( state.max - state.min ) 
+           < ( _v * myWidth[ 0 ] / myWidth[ 1 ] ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+void
+DGtal::COBANaivePlaneComputer<TSpace, TInternalInteger>::
+computeGradient( InternalPoint2 & grad, const State & state ) const
+{
+  // computation of the gradient
+  switch( myAxis ){
+  case 0 : 
+    grad[ 0 ] = state.ptMin[ 1 ] - state.ptMax[ 1 ];
+    grad[ 1 ] = state.ptMin[ 2 ] - state.ptMax[ 2 ];
+    break;
+  case 1:
+    grad[ 0 ] = state.ptMin[ 0 ] - state.ptMax[ 0 ];
+    grad[ 1 ] = state.ptMin[ 2 ] - state.ptMax[ 2 ];
+    break;
+  case 2:
+    grad[ 0 ] = state.ptMin[ 0 ] - state.ptMax[ 0 ];
+    grad[ 1 ] = state.ptMin[ 1 ] - state.ptMax[ 1 ];
+    break;
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, typename TInternalInteger>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const COBANaivePlaneComputer<TSpace, TInternalInteger> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

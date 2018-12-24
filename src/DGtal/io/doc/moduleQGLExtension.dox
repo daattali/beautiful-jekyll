@@ -1,0 +1,88 @@
+
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/**
+ * @page moduleQGLExtension Extending the QGLViewer Viewer3D interface
+ *  
+ *
+ * This part of the manual describes how to extend the standard
+ * Viewer3D interface of DGtal. For instance, you wish to assign new
+ * handlers keys or to mouse event, or you wish to display or
+ * select other graphical elements. To do that, you just have to write
+ * a class that derived from Viewer3D::Extension and overrides some
+ * methods to get your desired behaviour.
+ *  
+ * @author Jacques-Olivier Lachaud
+ *
+ * @since 9.4
+ * 
+ * Related examples: viewer3D-11-extension.cpp
+ *
+ * Related modules: \ref moduleQGLInteraction
+ *
+ * [TOC]
+ *
+ * \section QGLExtension_sec1 Extending the standard behavior of Viewer3D
+ *
+ * The Viewer3D interface provides a very handy way of visualising 3D
+ * scenes, digital objects or meshes in DGtal, and is bundled with
+ * many functionalities (like moving the light, selecting some
+ * objects, etc). However it is not directly extensible as is, and,
+ * for several reasons, you cannot derive from the Viewer3D class
+ * directly to add some new functionalities.
+ *
+ * Therefore we provide the class Viewer3D::Extension so that you can
+ * extend the viewer in several ways. The principle is very easy. This
+ * interface provides a set of empty virtual methods so you just have
+ * to override them in order to change the behavior of the viewer. For
+ * instance, you just have to override
+ * Viewer3D::Extension::keyPressEvent to capture other key events. You
+ * can override all the following methods:
+ *
+ * - Viewer3D::Extension::keyPressEvent. This method may be
+ *   overloaded to capture other key events.
+ *
+ * - Viewer3D::Extension::drawWithNames. This method is useful for
+ *   drawing elements with additional information for selection (see also \ref moduleQGLInteraction).
+ *
+ * - Viewer3D::Extension::draw. This method is useful for drawing elements that are not directly handled by Viewer3D.
+ *
+ * - Viewer3D::Extension::init. This method is useful at initialization (e.g. adding lights manipulators).
+ *
+ * - Viewer3D::Extension::helpString. This method is useful to change the help message.
+ *
+ * - Viewer3D::Extension::postSelection. This method is useful to take
+ *   care of mouse selection events.
+ *
+ * - Viewer3D::Extension::mouseMoveEvent. This method is useful to
+ *   take care of mouse movements.
+ *
+ * - Viewer3D::Extension::mousePressEvent. This method is useful to
+ *   take care of mouse button press events.
+ *
+ * - Viewer3D::Extension::mouseReleaseEvent. This method is useful to
+ *   take care of mouse button release events.
+ *
+ * The example below shows how to capture "Shift+R" key pressed
+ * events, so that each time this event occurs random points are added
+ * to the 3D scene.
+ *
+ * @snippet io/viewers/viewer3D-11-extension.cpp viewer3D-extension-derivation
+ *
+ * \section QGLExtension_sec2 Activating your extension in some viewer
+ *
+ * Once you have built a class that derives from Viewer3D::Extension,
+ * it remains to create some instance of this extension and to hand it
+ * to your viewer. This is done by the following lines.
+ *
+ * @snippet io/viewers/viewer3D-11-extension.cpp viewer3D-extension-set-extension
+ *
+ * The viewer will take care of freeing your instanciated extension object.
+ * For a complete example, see viewer3D-11-extension.cpp.
+ */
+
+}

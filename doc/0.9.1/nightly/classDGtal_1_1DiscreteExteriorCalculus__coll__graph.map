@@ -1,9 +1,0 @@
-<map id="DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;" name="DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1KhalimskySpaceND.html" title="DGtal::KhalimskySpaceND\l\&lt; dimAmbient, TInteger \&gt;" alt="" coords="2076,93,2265,139"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="768,91,907,138"/>
-<area shape="rect" id="node18" href="$structDGtal_1_1KhalimskyCell.html" title="DGtal::KhalimskyCell\l\&lt; dim, Integer \&gt;" alt="" coords="1372,106,1524,153"/>
-<area shape="rect" id="node21" href="$structDGtal_1_1KhalimskyCell.html" title="Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates. " alt="" coords="1057,142,1209,189"/>
-<area shape="rect" id="node24" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex..." alt="" coords="1663,163,1852,210"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="160,28,280,57"/>
-<area shape="rect" id="node12" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="440,131,608,195"/>
-</map>

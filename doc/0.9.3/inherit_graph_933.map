@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1Display3D.html" title="Aim: This semi abstract class defines the stream mechanism to display 3d primitive (like BallVector..." alt="" coords="5,68,182,107"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1Board3D.html" title="The class Board3D is a type of Display3D which export the figures in the format OBJ/MTL when calling ..." alt="" coords="232,5,401,44"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1Board3DTo2D.html" title="Class for PDF, PNG, PS, EPS, SVG export drawings with Cairo with 3D&#45;&gt;2D projection. " alt="" coords="243,68,390,107"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; Space,\l KSpace \&gt;" alt="" coords="230,131,403,169"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; DGtal\l::SpaceND, KSpace \&gt;" alt="" coords="9,193,178,232"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; DGtal\l::SpaceND, KSpace \&gt;" alt="" coords="234,193,400,232"/>
-</map>

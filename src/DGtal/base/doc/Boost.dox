@@ -1,0 +1,186 @@
+/**
+ * @file Boost.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/12/19
+ *
+ * Documentation file for feature Boost
+ *
+ * This file is part of the DGtal library.
+ */
+
+#error This file is not supposed to be included in a C++/C header or source file.
+
+/**
+   Dummy namespace used for generating the documentation. Gathers
+   boost concept definitions and refers to the corresponding
+   documentation.
+
+   More generally, you may also want to look at
+   - the STL main page: http://www.sgi.com/tech/stl/index.html
+   - the BOOST concept check main page http://www.boost.org/libs/concept_check/concept_check.htm
+   - the BOOST iterator library main page http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/index.html 
+   - the BOOST graph library main page http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/index.html
+   - the BOOST graph concepts main page http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/graph_concepts.html
+   - the BOOST type traits main page http://www.boost.org/doc/libs/1_52_0/libs/type_traits/doc/html/index.html
+*/
+namespace boost {
+  /// Go to http://www.sgi.com/tech/stl/DefaultConstructible.html
+  template <typename T> struct DefaultConstructible {};
+  /// Go to http://www.sgi.com/tech/stl/Assignable.html
+  template <typename T> struct Assignable {};
+  /// Go to http://www.sgi.com/tech/stl/CopyConstructible.html
+  template <typename T> struct CopyConstructible {};
+  /// Go to http://www.sgi.com/tech/stl/InputIterator.html
+  template <typename T> struct InputIterator {};
+  /// Go to http://www.sgi.com/tech/stl/OutputIterator.html
+  template <typename T> struct OutputIterator {};
+  /// Go to http://www.sgi.com/tech/stl/ForwardIterator.html
+  template <typename T> struct ForwardIterator {};
+  /// Go to http://www.sgi.com/tech/stl/BidirectionalIterator.html
+  template <typename T> struct BidirectionalIterator {};
+  /// Go to http://www.sgi.com/tech/stl/RandomAccessIterator.html
+  template <typename T> struct RandomAccessIterator {};
+  /// Go to http://www.sgi.com/tech/stl/EqualityComparable.html
+  template <typename T> struct EqualityComparable {};
+  /// Go to http://www.sgi.com/tech/stl/LessThanComparable.html
+  template <typename T> struct LessThanComparable {};
+  /// Go to http://www.sgi.com/tech/stl/SignedInteger.html
+  template <typename T> struct SignedInteger {};
+
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct UnsignedInteger {};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct Integer {};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct Convertible {};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct SGIAssignable {};
+
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct Mutable_ForwardIterator {};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct Mutable_BidirectionalIterator {};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <typename T> struct Mutable_RandomAccessIterator {};
+
+  /// Go to http://www.sgi.com/tech/stl/Generator.html
+  template <class Func, class Return>
+  struct Generator{};  
+  /// Go to http://www.sgi.com/tech/stl/UnaryFunction.html
+  template <class Func, class Return, class Arg>
+  struct UnaryFunction{};
+  /// Go to http://www.sgi.com/tech/stl/BinaryFunction.html
+  template <class Func, class Return, class First, class Second>
+  struct BinaryFunction{};
+  /// Go to http://www.sgi.com/tech/stl/Predicate.html
+  template <class Func, class Arg>
+  struct UnaryPredicate{};
+  /// Go to http://www.sgi.com/tech/stl/BinaryPredicate.html
+  template <class Func, class First, class Second>
+  struct BinaryPredicate{};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <class Func, class First, class Second>
+  struct Const_BinaryPredicate{};
+  /// Go to http://www.sgi.com/tech/stl/AdaptableGenerator.html
+  template <class Func, class Return>
+  struct AdaptableGenerator{};
+  /// Go to http://www.sgi.com/tech/stl/AdaptableUnaryFunction.html
+  template <class Func, class Return, class Arg>
+  struct AdaptableUnaryFunction{};
+  /// Go to http://www.sgi.com/tech/stl/AdaptableBinaryFunction.html
+  template <class Func, class First, class Second>
+  struct AdaptableBinaryFunction{};
+  /// Go to http://www.sgi.com/tech/stl/AdaptablePredicate.html
+  template <class Func, class Arg>
+  struct AdaptablePredicate{};
+  /// Go to http://www.sgi.com/tech/stl/AdaptableBinaryPredicate.html
+  template <class Func, class First, class Second>
+  struct AdaptableBinaryPredicate{};
+
+  /// Go to http://www.sgi.com/tech/stl/Container.html
+  template <class C>
+  struct Container{}; // Standard ref 23.1 Table 65
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <class C>
+  struct Mutable_Container{};
+  /// Go to http://www.sgi.com/tech/stl/ForwardContainer.html
+  template <class C>
+  struct ForwardContainer{};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <class C>
+  struct Mutable_ForwardContainer{};
+  /// Go to http://www.sgi.com/tech/stl/ReversibleContainer.html
+  template <class C>
+  struct ReversibleContainer{}; // Standard ref 23.1 Table 66
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <class C>
+  struct Mutable_ReversibleContainer{};
+  /// Go to http://www.sgi.com/tech/stl/RandomAccessContainer.html
+  template <class C>
+  struct RandomAccessContainer{};
+  /// Go to http://www.boost.org/libs/concept_check/reference.htm
+  template <class C>
+  struct Mutable_RandomAccessContainer{};
+  /// Go to http://www.sgi.com/tech/stl/Sequence.html
+  template <class C>
+  struct Sequence{}; // Standard ref 23.1.1
+  /// Go to http://www.sgi.com/tech/stl/FrontInsertionSequence.html
+  template <class C>
+  struct FrontInsertionSequence{};
+  /// Go to http://www.sgi.com/tech/stl/BackInsertionSequence.html
+  template <class C>
+  struct BackInsertionSequence{};
+  /// Go to http://www.sgi.com/tech/stl/AssociativeContainer.html
+  template <class C>
+  struct AssociativeContainer{}; // Standard ref 23.1.2 Table 69
+  /// Go to http://www.sgi.com/tech/stl/UniqueAssociativeContainer.html
+  template <class C>
+  struct UniqueAssociativeContainer{};
+  /// Go to http://www.sgi.com/tech/stl/MultipleAssociativeContainer.html
+  template <class C>
+  struct MultipleAssociativeContainer{};
+  /// Go to http://www.sgi.com/tech/stl/SimpleAssociativeContainer.html
+  template <class C>
+  struct SimpleAssociativeContainer{};
+  /// Go to http://www.sgi.com/tech/stl/PairAssociativeContainer.html
+  template <class C>
+  struct PairAssociativeContainer{};
+  /// Go to http://www.sgi.com/tech/stl/SortedAssociativeContainer.html
+  template <class C>
+  struct SortedAssociativeContainer{};
+  /// Go to http://www.sgi.com/tech/stl/Collection.html
+  template <class C>
+  struct Collection{};
+
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/Graph.html
+  template <class G>
+  struct GraphConcept {};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/VertexListGraph.html
+  template <class G>
+  struct VertexListGraphConcept {};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/AdjacencyGraph.html
+  template <class G>
+  struct AdjacencyGraphConcept {};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/IncidenceGraph.html
+  template <class G>
+  struct IncidenceGraphConcept {};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/EdgeListGraph.html
+  template <class G>
+  struct EdgeListGraphConcept {};
+
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/utility/MultiPassInputIterator.html
+  template <class G>
+  struct MultiPassInputIterator {};
+
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/type_traits/doc/html/index.html
+  template <class T>
+  struct is_integral {};
+
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/type_traits/doc/html/index.html
+  template <class T>
+  struct is_unsigned {};
+
+}
+

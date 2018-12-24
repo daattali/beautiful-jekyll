@@ -1,0 +1,120 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file RawReader.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/25
+ *
+ * Implementation of inline methods defined in RawReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstddef>
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename T, typename TFunctor>
+template <typename Word>
+T
+DGtal::RawReader<T, TFunctor>::importRaw(const std::string& filename, const Vector& extent, const Functor& aFunctor)
+{
+    BOOST_CONCEPT_ASSERT((  concepts::CUnaryFunctor<TFunctor, Word, Value > )) ;
+
+    FILE * fin;
+    fin = fopen( filename.c_str() , "rb" );
+
+    if (fin == NULL)
+        trace.error() << "RawReader : can't open "<< filename << std::endl;
+
+    typename T::Point firstPoint;
+    typename T::Point lastPoint;
+
+    firstPoint = T::Point::zero;
+    lastPoint = extent;
+    unsigned int size=1;
+    for(unsigned int i=0; i < T::Domain::dimension; i++)
+    {
+        size *= lastPoint[i];
+        lastPoint[i]--;
+    }
+
+    typename T::Domain domain(firstPoint, lastPoint);
+    T image(domain);
+
+    //We scan the Raw file
+    typename T::Domain::ConstIterator it=domain.begin(), itend=domain.end();
+    unsigned int count=0;
+    Word val;
+
+    while ((fin) && (it != itend))
+    {
+        raw_reader_read_word(fin, val);
+        image.setValue(*it, aFunctor(val));
+        it++;
+        count++;
+    }
+
+    fclose(fin);
+
+    if (count != size)
+    {
+        trace.error() << "RawReader: error while opening file " << filename << std::endl;
+        throw DGtal::IOException();
+    }
+
+    return image;
+}
+
+template <typename T, typename TFunctor>
+T
+DGtal::RawReader<T, TFunctor>::importRaw8(const std::string& filename, const Vector& extent, const Functor& aFunctor)
+{
+    return importRaw<uint8_t>(filename, extent, aFunctor);
+}
+
+template <typename T, typename TFunctor>
+T
+DGtal::RawReader<T, TFunctor>::importRaw16(const std::string& filename, const Vector& extent, const Functor& aFunctor)
+{
+    return importRaw<uint16_t>(filename, extent, aFunctor);
+}
+
+template <typename T, typename TFunctor>
+T
+DGtal::RawReader<T, TFunctor>::importRaw32(const std::string& filename, const Vector& extent, const Functor& aFunctor)
+{
+    return importRaw<uint32_t>(filename, extent, aFunctor);
+}
+
+template <typename Word>
+FILE*
+DGtal::raw_reader_read_word( FILE* fin, Word& aValue )
+{
+    aValue = 0;
+    for ( std::size_t i = 0; i < sizeof( Word ); ++i )
+        reinterpret_cast<unsigned char*>(&aValue)[i] = getc(fin);
+
+    return fin;
+}

@@ -1,0 +1,107 @@
+/**
+ * @file packageImageConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/03/16
+ *
+ * Documentation file for feature imagePackageConcepts
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageImageConcepts Main Image Concepts
+@writers David Coeurjolly
+
+
+
+ @dot
+digraph GIMAGE {
+  rankdir=BT;
+
+   subgraph cluster_ext {
+ 	rank = same;
+        style=invis;
+
+        subgraph cluster_base {
+                 style=filled;
+                 color="#eeeeff";
+                 node [style=filled,color=white];
+                 label="base";
+
+                 CLabel [label="CLabel" URL="@ref concepts::CLabel"];  
+		 }
+
+        subgraph cluster_kernel {
+                 style=filled;
+                 color="#eeeeff";
+                 node [style=filled,color=white];
+                 label="kernel";
+
+                 CPointFunctor [label="CPointFunctor" URL="@ref concepts::CPointFunctor"];   
+		 CDomain [label="CDomain" URL="@ref concepts::CDomain"]; 
+		 CConstBidirectionalRangeFromPoint [label="CConstBidirectionalRangeFromPoint" URL="@ref concepts::CConstBidirectionalRangeFromPoint"]; 
+		 CBidirectionalRangeWithWritableIteratorFromPoint [label="CBidirectionalRangeWithWritableIteratorFromPoint" URL="@ref concepts::CBidirectionalRangeWithWritableIteratorFromPoint"]; 
+		 }
+	 }
+
+  subgraph cluster_main {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    label="Image (main concepts)";
+
+    CImage [label="CImage" URL="@ref concepts::CImage"];
+    CConstImage [label="CConstImage" URL="@ref concepts::CConstImage"];
+    CTrivialImage [label="CTrivialImage" URL="@ref concepts::CTrivialImage"];
+    CTrivialConstImage [label="CTrivialConstImage" URL="@ref concepts::CTrivialConstImage"];
+
+    CImage -> CConstImage;
+    CImage -> CTrivialImage;
+    CConstImage -> CTrivialConstImage;
+    CTrivialImage -> CTrivialConstImage;
+
+  }
+
+  CTrivialConstImage -> CLabel [label="use",style=dashed] ;
+  CTrivialConstImage -> CDomain [label="use",style=dashed] ;
+  CConstImage -> CDomain [label="use",style=dashed] ;
+  CConstImage -> CConstBidirectionalRangeFromPoint [label="use",style=dashed] ;
+  CImage -> CBidirectionalRangeWithWritableIteratorFromPoint [label="use",style=dashed] ;
+  CTrivialConstImage -> CPointFunctor;
+
+ subgraph cluster_models {
+        style=filled;
+        color="#ccffcc";
+        node [style=filled,color=white];
+        label="Image (main models)";
+	ImageContainerBySTLVector [label="ImageContainerBySTLVector" URL="@ref ImageContainerBySTLVector"];
+	ImageContainerBySTLMap  [label="ImageContainerBySTLMap" URL="@ref ImageContainerBySTLMap"];
+	ImageContainerByHashTree  [label="ImageContainerByHashTree" URL="@ref experimental::ImageContainerByHashTree"];
+	ImageContainerByITKImage  [label="ImageContainerByITKImage" URL="@ref ImageContainerByITKImage"];
+    
+	ImageAdapter  [label="ImageAdapter" URL="@ref ImageAdapter"];
+	ConstImageAdapter  [label="ConstImageAdapter" URL="@ref ConstImageAdapter"];
+
+	}
+    
+    ImageAdapter -> CImage;
+    ConstImageAdapter -> CConstImage;
+    ImageContainerBySTLVector -> CImage;
+    ImageContainerBySTLMap -> CImage;
+    ImageContainerByHashTree -> CImage;
+    ImageContainerByITKImage -> CImage;
+    
+ }
+@enddot
+
+*/
+
+}

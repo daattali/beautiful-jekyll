@@ -1,0 +1,242 @@
+/**
+ * @file moduleMetrics.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/06/29
+ *
+ * Documentation file for feature Metrics
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+namespace concepts{
+//----------------------------------------
+/*!
+@page moduleMetrics Metric Spaces, Digital Metric Spaces and Related Concepts
+@writers David Coeurjolly
+
+[TOC]
+
+@section metricSecIntro Introduction
+
+This documentation page is dedicated to distance and metric
+computation in DGtal. As discussed in @ref moduleVolumetric, distance
+functions play an important role in volumetric analysis of shapes
+(distance transformation, Voronoi maps, medial axis,...).  We
+formalize here the concepts related to such function. First of all,
+let us start with main definitions:
+@definition @f$(E, F, d)@f$ is  a @a metric @a space if @f$d@f$ is a
+map from @f$E@f$ to a sub-group @f$F@f$ of @f$\mathbb{R}@f$ such that
+@f$\forall a,b,c\in E@f$, 
+
+- (@e non-negative) @f$ d(a,b)\geq 0@f$ 
+- (@e identity @e of @e indiscernibles) @f$ d(a,b)= 0 \Leftrightarrow
+a=b@f$
+- (@e symmetry) @f$d(a,b)=d(b,a)@f$ 
+- (@e triangular @e inequality) @f$d(a,c) \leq d(a,b) + d(b,c)@f$
+
+When performing some geometry processing, one may consider 
+additional requirements on the metric and thus norms:
+
+@definition Given a vector space EV, a @a norm is a map @f$g@f$ from  @f$EV@f$ to a sub-group
+  @f$F@f$ of @f$\mathbb{R}@f$ such that @f$\forall \vec{x},\vec{y}\in EV@f$,
+-    (@e non-negative) @f$ g(\vec{x})\geq 0@f$
+-    (@e identity @e of @e indiscernibles) @f$ g(\vec{x})= 0
+    \Leftrightarrow \vec{x}=\vec{0}@f$
+-   (@e triangular @e inequality) @f$g(\vec{x}+\vec{y}) \leq
+    g(\vec{x}) + g(\vec{y})@f$
+-    (@e homogeneity) @f$ \forall \lambda\in\mathbb{R}, \quad
+    g(\lambda\cdot\vec{x}) = |\lambda|\cdot g(\vec{x})@f$
+
+@f$d(a,b):= g(b-a)@f$ is the metric induced by the norm @f$g@f$.
+
+In the following, we restrict our attention to metric spaces even if
+some of them are induced by norms.
+
+
+
+@section subConcepts Main concepts
+
+In DGtal, the concept of CMetricSpace is associated with metric space
+definition. A first refinement of this concept is the concept of
+CDigitalMetricSpace whose models implement distance functions on
+integer numbers (i.e. @f$(\mathbb{Z}^n, \mathbb{Z}, d)@f$)). For
+example,
+
+ - @f$ l_p@f$ metrics (ExactPredicateLpSeparableMetric or
+ InexactPredicateLpSeparableMetric) are models of CMetricSpace for
+ @f$p>1@f$
+
+ - Chamfer norms with axis symmetric unit ball (see experimental::ChamferNorm2D in dimension 2).
+
+ - DigitalMetricAdapter which adapts any metric (model of
+   CMetricSpace) to digital space using the ceil function. This induces
+   a digital metric (ceil function preserves the
+   triangular inequality).
+ 
+
+@dot
+digraph metric_concepts_2_vor {
+    CMetricSpace [label="CMetricSpace" URL="@ref CMetricSpace"];
+    CDigitalMetricSpace [label="CDigitalMetricSpace" URL="@ref CDigitalMetricSpace"];
+    CSeparableMetric [label="CSeparableMetric" URL="@ref CSeparableMetric"];
+    CDigitalSeparableMetric [label="CDigitalSeparableMetric"];
+    CPowerMetric [label="CPowerMetric" URL="@ref CPowerMetric"];
+    CPowerSeparableMetric [label="CPowerSeparableMetric" URL="@ref CPowerSeparableMetric"];
+
+    CSeparableMetric -> CMetricSpace;
+    CSeparableMetric -> CMetricSpace;
+    CDigitalSeparableMetric -> CDigitalMetricSpace;
+    CDigitalSeparableMetric -> CSeparableMetric;
+    CPowerSeparableMetric -> CPowerMetric;
+
+    label="Main metric concepts";
+  }
+@enddot
+
+For instance, CMetricSpace requires to have a binary operator to compute the
+distance between any two points of the digital space. Furthermore, it
+requires to have a method he @a closest(origin,p,q) which returns the closest
+point from @a p and @a q to the origin. Such closest method can be
+easily implemented from the binary distance operator. However, for
+some metric, more efficient implementation can be obtained to answer
+to @a closest() requests.
+
+@note Models of CMetricSpace concept also implements a  @e
+rawDistance(x,y) method. This method returns a value of type @e
+RawValue which may be considered as an exact representation of the
+distance between x and y. For example, if we consider a @f$ l_p@f$
+metric, the distance between x and y can be represented as sum of
+power p terms (the distance without the order p square root). Hence,
+if RawValue is an @e exact @e type (e.g. model of CInteger with enough
+capacity to represent power p integers), rawDistance method can be used
+to perform exact metric comparison.  To sum up for any instance @e
+metric of the class ExactLpSeparableMetric for instance:
+- @e metric(x,y)   returns the distance as double, i.e. @f$\left ( \sum_{i=1}^n |x_i-y_i |^p \right )^{\frac{1}{p}}\f$
+- @e metric.rawDistance(x,y)  returns the power p of the distance as
+an  integer DGtal::int64_t (default type), i.e. @f$ \sum_{i=1}^n |x_i-y_i |^p\f$
+
+
+
+Similarly to metric models, @a Power @a Metrics are important for
+reverse distance reconstruction and medial axis extraction.  For @f$
+l_2@f$ metric, the power distance between a point @f$ x@f$ and a ball
+@f$(y,r)@f$ with centger @f$y@f$ and radius @f$r@f$, is defined by
+
+@f[ pow(x,y) = \| x - y\|_2^2  - r @f]
+
+Power function are no more positive but the geometry of the distance
+(convex unit balls,...) are relevant in volumetric analysis.
+
+
+
+@section subSepMetrics SeparableMetric Concept
+
+We perform volumetric analysis using separable approaches (see @ref
+moduleVolumetric), additional properties are required for the model of
+metrics (see @cite Maurer2003PAMI, @cite Hirata1996, @cite dcoeurjo_metric14).
+
+Such properties are related to a @e monotonicity property of the
+metric.  In dimension 2, consider two points @f$ p(x,y)@f$,
+@f$q(x',y')@f$ with @f$x<x'@f$. Let @f$r( x'',0)@f$ be a point on the
+x-axis such that @f$d(p,r) = d(q,r)@f$ and @f$ s(u,0)@f$ be another
+point on the x-axis. A metric @f$ d@f$ is @e monotonic if
+
+@f[     u < x'' \implies d(p,s) \leq d(q,s) @f]
+and
+@f[    u > x'' \implies d(p,s) \geq d(q,s) @f]
+
+As discussed in @cite Hirata1996, any metric induced by a norm with
+axis symmetric unit ball is monotonic. Hence, all @f$l_p@f$ are
+monotonic, as well as most path based norms (chamfer norms,
+neighborhood sequence norms,...). Such properties are implemented in
+the concept of CSeparableMetric. 
+Similarly, CPowerSeparableMetric can be defined as a
+refinement of CPowerMetric with monotonicity property of the
+power metric.
+
+
+The Separable metric concept is a refinement of the CMetricSpace
+(resp. CPowerMetric) concept in which we require models to implement a
+method
+@a  hiddenBy(u,v,w,startingPoint,endPoint,dim): given three digital points
+@a u, @a v, @a w and an isothetic segment defined by the pair
+[@a startingPoint, @a endPoint] along the dimension @a dim, such method
+returns true if Voronoi cells of @a u and @a w @e hide the Voronoi
+cell if @a v on the segment. Such predicate can be illustrated as
+follows:
+
+
+@image html hiddenBy.png "HiddenBy predicate in dimension 2 for the l_2 metric (the predicate returns true in this case)."
+@image latex hiddenBy.png  "HiddenBy predicate in dimension 2 for the l_2 metric (the predicate returns true in this case)."
+
+This predicate (with the @a closest() one as discussed above) is
+crucial for separable VoronoiMap/DistanceTransformation
+algorithms. The next section discusses about complexity of such
+volumetric algorithm with respect to computation costs of the two
+predicates.
+
+CPowerSeparableMetric concepts is a similar refinement of the
+CPowerMetric concept. Indeed, CPowerSeparableMetric models must
+implement an @a hiddenByPower(u,
+wu,v,wv,w,ww,startingPoint,endPoint,dim) on triplet of weighted points
+{(u,wu),(v,wv),(w,ww)}.
+
+
+The class SeparableMetricAdapter adapts any model of
+CMetricSpace which is monotonic to a model of
+CSeparableMetric. Please refer to the following table for
+computational costs.
+
+
+
+@section CostSec Main models and Computational Costs for Volumetric Analysis
+
+
+Main models of CSeparableMetric and
+CPowerSeparableMetric are:
+
+ - ExactPredicateLpSeparableMetric: main class for @f$ l_p@f$ metrics
+  (with exact predicates)
+ - InexactPredicateLpSeparableMetric: main class for @f$ l_p@f$ metrics
+  (with approximated predicates)
+ - SeparableMetricAdapter: adapts any model of CMetricSpace (with
+ - monotonicity property) to CSeparableMetric
+ - ExactPredicateLpPowerSeparableMetric:  main class for power @f$
+  l_p@f$ functions (with exact predicates).
+ - experimental::ChamferNorm2D: proof-of-concept of sperable volumetric computation from path based norms.
+
+As discussed in @ref moduleVolumetric, both VoronoiMap and PowerMap (and their associated
+subclasses) are parametrized by a generic separable metric (model of CSeparableMetric or CPowerSeparableMetric). If @f$ C
+@f$ corresponds to the cost of the @a closest() or @a
+closestPower() methods for the given metric, and @f$ H @f$ the cost
+of the @a hiddenBy() or @a hiddenByWeigthed(), the computational costs
+of the separable metrics can be summarized as follows:
+
+
+| Models of CSeparableMetric/CPowerSeparableMetric | C | H | Note |
+|--------------------------------------------------|---|---|------|
+| ExactPredicateLpSeparableMetric<p>               | @f$ O(log(p)) @f$ | @f$ O(log(p)log(n)) @f$ | Exact computations|
+| ExactPredicateLpSeparableMetric specialized for p=2 | @f$ O(1) @f$ | @f$ O(1) @f$ | Exact computations|
+| ExactPredicateLpSeparableMetric specialized for p=1 | @f$ O(1) @f$ | @f$ O(log(n)) @f$ | Exact computations|
+| InexactPredicateLpSeparableMetric with p at construction | @f$ O(1) @f$ | @f$ O(log(n)) @f$ | Inexact computations since std::pow on double is used (supposed to be @f$ O(1) @f$)|
+| ExactPredicateLpPowerSeparableMetric<p> | @f$ O(log(p)) @f$ | @f$ O(log(p)log(n)) @f$ | Exact computations|
+| ExactPredicateLpPowerSeparableMetric specialized for p=2 | @f$ O(1) @f$ | @f$ O(1) @f$ | Exact computations|
+| SeparableMetricAdapter of a metric aMetric  | @f$ O(m) @f$ | @f$ O(mlog(n)) @f$ | relies on aMetric(p,q) computations |
+| experimental::ChamferNorm2D | @f$ O(log(p)) @f$ | @f$ O(log^2(n)) @f$ | @cite dcoeurjo_metric14|
+
+
+Following this table, VoronoiMap, DistanceTransformation, PowerMap, ReverseDistanceTransformation have the following computational cost:
+
+ \f[  O(d\cdot n^d\cdot (C+H))  \f]
+
+For example, for the @f$ l_2 @f$ metric, all algorithms are in @f$ \Theta(dn^d)@f$.
+*/
+}
+}

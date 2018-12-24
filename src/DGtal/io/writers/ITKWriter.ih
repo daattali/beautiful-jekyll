@@ -1,0 +1,87 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author Pierre Gueth (\c pierre.gueth@gmail.com )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/10/28
+ *
+ * Header file for module ITKWriter.cpp
+ *
+ * This file is part of the DGtal library.
+ */
+
+#include "DGtal/images/ConstImageAdapter.h"
+#include "DGtal/images/ImageContainerByITKImage.h"
+#if defined(__GNUG__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#endif
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdocumentation"
+#endif
+#include <itkImageFileWriter.h>
+#if defined(__clang__)
+#pragma clang diagnostic pop
+#endif
+#if defined(__GNUG__)
+#endif
+#pragma GCC diagnostic pop
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+namespace DGtal {
+  template<typename I,typename F>
+  bool
+  ITKWriter<I,F>::exportITK(const std::string& filename, const I& aImage, const Functor& aFunctor)
+  {
+    typedef typename Image::Domain Domain;
+    const Domain& domain = aImage.domain();
+
+    typedef ConstImageAdapter<Image, Domain, functors::Identity, ValueOut, Functor> AdaptedImage;
+    const functors::Identity identityFunctor{}; 
+    const AdaptedImage adapted(aImage, domain, identityFunctor, aFunctor);
+
+    typedef ImageContainerByITKImage<Domain, ValueOut> DGtalITKImage;
+    DGtalITKImage itk_image(aImage.domain());
+
+    std::copy(adapted.constRange().begin(), adapted.constRange().end(), itk_image.range().outputIterator());
+
+    typedef itk::ImageFileWriter<typename DGtalITKImage::ITKImage> ITKImageWriter;
+    typename ITKImageWriter::Pointer writer = ITKImageWriter::New();
+
+    try
+    {
+      writer->SetFileName(filename);
+      writer->SetInput(itk_image.getITKImagePointer());
+      writer->Update();
+    }
+    catch (itk::ExceptionObject &e)
+    {
+      trace.error() << e;
+      throw IOException();
+      return false;
+    }
+
+    return true;
+  }
+
+}//namespace

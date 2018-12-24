@@ -1,0 +1,169 @@
+/**
+ * @file moduleDECEmbedding.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * @author Pierre Gueth (\c pierre.gueth@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/04/04
+ *
+ * Documentation file for feature DECEmbedding
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleDECEmbedding Embedding n-dimensional DEC structures into m-dimensional space
+@writers Pierre Gueth
+
+[TOC]
+
+\section sectDECEmbedding Introduction
+
+The DEC package allows the embedding of a discrete manifold contained in an higher dimension Euclidean space.
+For example, one could use the DEC package to represent a curved surface embedded in a three dimensional Euclidean space.
+Throughout this documentation \f$n\f$ stands for in embedded manifold dimension,
+\f$m\f$ stands for this ambient space dimension and
+\f$k\f$ is used to characterize the dimension of cells inside the DEC structure.
+
+\f[ 0 \le k \le n \le m \f]
+
+Only lower dimensions k-cells can be inserted into a DEC structure (\f$k \le n\f$).
+Those embedded and ambient dimensions are enforced as the first and second template parameters of DiscreteExteriorCalculus.
+Dual and primal operators are defined with respect the the embedding dimension.
+
+\section sectDECFactory DEC factory
+
+DiscreteExteriorCalculusFactory is a helper class to easily create DEC structures from digital sets
+or combinatorial structures such as digital surfaces (DigitalSurface).
+
+As usual, one can fill the DEC structure manually using DiscreteExteriorCalculus.insertSCell.
+Every k-cells should then be inserted manually with their correct primal and dual sizes.
+Primal and dual sizes default to 1 when not specified.
+On the other hand, one could create automatically a DEC structure from a range of n-cells using
+DiscreteExteriorCalculusFactory::createFromNSCells.
+Incident lower dimension cells are then inserted and weighted automatically.
+The first template parameter of DiscreteExteriorCalculusFactory::createFromNSCells represents
+the embedded dimension of the generated manifold.
+
+@note By definition 0-cell must have a primal size equals to 1 and n-cell must have dual size equals to 1.
+
+When the ambient space has the same dimension as the embedded manifold, one could
+use DiscreteExteriorCalculusFactory::createFromDigitalSet.
+Similarly to DiscreteExteriorCalculusFactory::createFromNSCells, incident lower dimension cells
+are automatically inserted with proper primal and dual sizes.
+Each point of the set is inserted in the DEC structure as a primal n-cell.
+
+@note DiscreteExteriorCalculusFactory::createFromNSCells is compatible with iterators over DigitalSurface.
+
+To define a DEC factory, one must pass the linear algebra backend as the first template parameter.
+Here is a snippet that define a factory using EigenLinearAlgebraBackend.
+
+\snippet testEmbedding.cpp embedding_factory
+
+\section sectDECBorderDefinition Border definition
+
+When using a DEC factory to generate DEC structures, one could specify if borders are inserted
+in the generated structure using the second parameter @a add_border.
+Cell belonging to the border are (n-1)-cells incident with to one n-cell, along with their
+lower incident k-cells counterparts.
+When passing @a add_border=false to DEC factory static functions, cells belonging to the border
+are not inserted.
+
+@note Choosing to add borders or not changes boundary condition of the DEC problems generated with the structure.
+@a add_border=true enforces Neumann boundary condition on primal operators.
+@a add_border=false enforces Dirichlet boudary condition on primal operators.
+See \ref sectDECPoisson1D for an example.
+
+| @a add_border | boundary condition of primal operators                          | boundary condition of dual operators                            |
+|---------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
+| @a true       | Neumann \f$\Delta f(x) \cdot n(x)=0~\forall x \in \partial M\f$ | Dirichlet \f$f(x)=0~\forall x \in \partial M\f$                 |
+| @a false      | Dirichlet \f$f(x)=0~\forall x \in \partial M\f$                 | Neumann \f$\Delta f(x) \cdot n(x)=0~\forall x \in \partial M\f$ |
+
+\section sectDECEmbeddingExample1D 1D examples
+
+In this example, we show how to embed linear structure into different ambient spaces.
+See testEmbedding.cpp for details.
+First, let's start be defining types of DEC structures used in this example.
+
+\snippet testEmbedding.cpp embedding_1d_typedef
+
+Calculus1D represents a 1D discrete manifold embedded in 1D Euclidean space,
+Calculus2D represents a 1D discrete manifold embedded in 2D Euclidean space and
+Calculus3D represents a 1D discrete manifold embedded in 3D Euclidean space.
+
+After defining and filling the input forward traversal containers (std::set, std::list, std::vector, ...),
+DEC structures are generated by calling DiscreteExteriorCalculusFactory::createFromNSCells.
+
+\snippet testEmbedding.cpp embedding_1d_cells_1d
+\snippet testEmbedding.cpp embedding_1d_factory_1d
+\image html embedding_1d_calculus_1d.png "1D discrete manifold embedded in 1D ambient space."
+
+\snippet testEmbedding.cpp embedding_1d_cells_2d
+\snippet testEmbedding.cpp embedding_1d_factory_2d
+\image html embedding_1d_calculus_2d.png "1D discrete manifold embedded in 2D ambient space."
+
+\snippet testEmbedding.cpp embedding_1d_cells_3d
+\snippet testEmbedding.cpp embedding_1d_factory_3d
+\image html embedding_1d_calculus_3d.png "1D discrete manifold embedded in 3D ambient space."
+
+Operators generated from these structures are all identical.
+
+\section sectDECEmbeddingExample2D 2D examples
+
+In this example, we show how to discrete curved surface into different ambient spaces.
+See testEmbedding.cpp for details.
+First, let's start be defining types of DEC structures used in this example.
+
+\snippet testEmbedding.cpp embedding_2d_typedef
+
+Calculus2D represents a 2D discrete manifold embedded in 2D Euclidean space and
+Calculus3D represents a 2D discrete manifold embedded in 3D Euclidean space.
+
+After defining and filling the input forward traversal containers (std::set, std::list, std::vector, ...),
+DEC structures are generated by calling DiscreteExteriorCalculusFactory::createFromNSCells.
+
+\snippet testEmbedding.cpp embedding_2d_cells_2d
+\snippet testEmbedding.cpp embedding_2d_factory_2d
+\image html embedding_2d_calculus_2d.png "2D discrete manifold embedded in 2D ambient space with border."
+
+\snippet testEmbedding.cpp embedding_2d_cells_3d
+\snippet testEmbedding.cpp embedding_2d_factory_3d
+\image html embedding_2d_calculus_3d.png "2D discrete manifold embedded in 3D ambient space with border."
+
+Borderless DEC structures are generated by calling DiscreteExteriorCalculusFactory::createFromNSCells
+with third parameter equals to false.
+
+\snippet testEmbedding.cpp embedding_2d_factory_2d_no_border
+\image html embedding_2d_calculus_2d_no_border.png "2D discrete manifold embedded in 2D ambient space without border."
+
+\snippet testEmbedding.cpp embedding_2d_factory_3d_no_border
+\image html embedding_2d_calculus_3d_no_border.png "2D discrete manifold embedded in 3D ambient space without border."
+
+Embedding structure in higher dimension ambient space does not affect generated operators.
+
+\section sectDECEmbeddingExampleDigitalSurface Digital surface examples
+
+In this example, we show how to import a DigitalSurface into a DEC structure.
+See exampleDECSurface.cpp for details.
+First, let's define the input set whose boundary will be used to define the digital surface.
+
+\snippet exampleDECSurface.cpp surface_input_set
+\image html embedding_surface_input_set.png "Input digital set."
+
+Let's then define the digital surface as the boundary of the input set, oriented positive inward.
+\snippet exampleDECSurface.cpp surface_digital_surface
+
+The DEC structure is created by calling DiscreteExteriorCalculusFactory::createFromNSCells with iterators DigitalSurface.begin() and DigitalSurface.end().
+Incident lower cells are added automatically as well as Hodge weights.
+\snippet exampleDECSurface.cpp surface_calculus
+\image html embedding_surface_calculus.png "DEC structure from boundary digital set."
+
+*/
+
+}

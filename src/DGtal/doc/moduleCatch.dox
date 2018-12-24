@@ -1,0 +1,123 @@
+/**
+ * @file moduleCatch.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2015/09/20
+ *
+ * Documentation file for feature Catch
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleCatch Unit test in DGtal using Catch 
+@writers David Coeurjolly
+
+[TOC]
+
+
+\section sectCatch1 Introduction
+
+[Catch](https://github.com/philsquared/Catch) Is a C++ framework to
+help unit test design. More precisely, thanks to couple of C++ macros,
+Catch enabled unit test are easy to write and easy to review.
+
+In this documentation page, we just describe how to write such test
+files in DGtal. For a complete documentation of Catch, please refer to
+[Catch](https://github.com/philsquared/Catch).
+
+\section sectCatch2 Catch in DGtal
+
+We illustrate here basic Catch usages using some tests on the
+PointVector class.
+
+First of all, all test files must include the following header:
+
+@snippet exampleCatch.cpp exampleCatch-include
+
+Once this header included, there is no need to create a @e main()
+function in your @e cpp file, everything is handled automatically.
+
+Unit tests are decomposed into TEST_CASE and SECTION in a test
+case. For example, the following code performs some tests on the
+PointVector class (see exampleCatch.cpp for details).
+
+@snippet exampleCatch.cpp exampleCatch-example1
+
+When compiling this simple test, the executable handles several
+commandline options. For example
+
+@code
+./exampleCatch
+@endcode
+runs all test cases and sections. 
+
+@code
+./exampleCatch -s
+@endcode
+runs all tests with detailed messages
+
+@code
+./exampleCatch -d yes
+@endcode
+runs all tests with timings for each section.
+
+@code
+./exampleCatch --help
+@endcode
+displays all command-line options.
+
+Please have a look to [Catch](https://github.com/philsquared/Catch)
+for further macros and comments. For instance, tags can be associated
+with sections and test cases allowing to only run specific tests.
+
+
+
+@section sectCatch3 Advanced usages
+
+In Catch, experimental macros exist to describe templated tests. For
+instance, the following code tests some STL containers.
+
+@snippet exampleCatch.cpp exampleCatch-example2
+
+In this example, 6 test sections are automatically generated. The
+resulting output (with timings) is:
+
+@code
+./exampleCatch  "STL Container test"  -d yes
+Size of the default constructed container completed in 3.3e-05s
+std::list<int> completed in 0.000124s
+STL Container test completed in 0.0002s
+Size after one insert completed in 9e-06s
+std::list<int> completed in 3.5e-05s
+STL Container test completed in 7.7e-05s
+Size of the default constructed container completed in 1.5e-05s
+std::vector<int> completed in 8.4e-05s
+STL Container test completed in 0.000133s
+Size after one insert completed in 1.2e-05s
+std::vector<int> completed in 5.2e-05s
+STL Container test completed in 0.000112s
+Size of the default constructed container completed in 1e-05s
+std::set<int> completed in 7.2e-05s
+STL Container test completed in 0.000134s
+Size after one insert completed in 1.5e-05s
+std::set<int> completed in 5.7e-05s
+STL Container test completed in 0.000116s
+=========================================================
+@endcode
+
+@note In the current Catch version, the number of templated types must
+be specified explicitly in the macro name (up to 8 templated types per
+test case).
+
+*/
+
+
+}

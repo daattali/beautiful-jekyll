@@ -1,0 +1,225 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file PolarPointComparatorBy2x2DetComputer.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/12/04
+ *
+ * Implementation of inline methods defined in PolarPointComparatorBy2x2DetComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::PolarPointComparatorBy2x2DetComputer()
+  : myPole( NumberTraits<Coordinate>::ZERO, NumberTraits<Coordinate>::ZERO ), 
+    myDetComputer(), 
+    myThresholder()
+{
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::PolarPointComparatorBy2x2DetComputer(const Point& aPoint)
+: myPole( aPoint ), 
+  myDetComputer(), 
+  myThresholder()
+{
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::PolarPointComparatorBy2x2DetComputer( const PolarPointComparatorBy2x2DetComputer & other )
+  : myPole( other.myPole ), 
+    myDetComputer( other.myDetComputer ), 
+    myThresholder( other.myThresholder )
+{
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>& 
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::operator=( const PolarPointComparatorBy2x2DetComputer & other )
+{
+  if (this != &other)
+    {
+      myPole = other.myPole; 
+      myDetComputer = other.myDetComputer;
+      myThresholder = other.myThresholder; 
+    }
+  return *this; 
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+void
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::setPole ( const Point& aPole )
+{
+  myPole = aPole; 
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+void
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "[PolarPointComparatorBy2x2DetComputer]";
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+bool
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::isValid() const
+{
+  return true;
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+bool
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::isBefore( const Vector& aU, const Vector& aV) const
+{
+  //the two y-coordinates must have the same sign
+  //the y-coordinate of aU must not be zero
+  ASSERT( ( (aU[1] > NumberTraits<Coordinate>::ZERO) &&
+	    (aV[1] >= NumberTraits<Coordinate>::ZERO) ) ||
+	  ( (aU[1] < NumberTraits<Coordinate>::ZERO) &&
+	    (aV[1] <= NumberTraits<Coordinate>::ZERO) ) ); 
+ 
+  ResultInteger det = myDetComputer( aU[0], aU[1], aV[0], aV[1] );
+ 
+  if ( det == NumberTraits<ResultInteger>::ZERO )
+    { //aU is before aV iff the norm of aU is smaller than the one of aV. 
+      //we compute the determinant of 
+      // aV[1]+aU[1] , aV[0]-aU[0] , -aV[0]-aU[0] , aV[1]-aU[1] 
+      //which is equal to aV[0]*aV[0] + aV[1]*aV[1] - aU[0]*aU[0] - aU[1]*aU[1]
+      return  myThresholder( myDetComputer( aV[1]+aU[1] , aV[0]-aU[0] , -aV[0]-aU[0] , aV[1]-aU[1] ) );
+    }
+  else 
+    { 
+      return myThresholder( det ); 
+    }
+}
+
+// ------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+bool 
+DGtal::functors::PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer>
+::operator()(const Point& aPoint1, const Point& aPoint2) const 
+{
+  Vector u = aPoint1 - myPole; 
+  Vector v = aPoint2 - myPole; 
+
+  if ( u[1] == NumberTraits<Coordinate>::ZERO )
+    {
+      if ( v[1] == NumberTraits<Coordinate>::ZERO )
+	{	
+	  if ( u[0] >= NumberTraits<Coordinate>::ZERO )
+	    {
+	      return ( ( v[0] < NumberTraits<Coordinate>::ZERO ) 
+		       || (v[0] > u[0]) ); 
+	    }
+	  else 
+	    {
+	      return (v[0] < u[0]); 
+	    }
+	}
+      else if ( v[1] > NumberTraits<Coordinate>::ZERO )
+	{
+	  return ( u[0] >= NumberTraits<Coordinate>::ZERO ); 
+	}
+      else // v[1] < 0
+	{
+	  return true; 
+	}
+    }
+  else if ( u[1] > NumberTraits<Coordinate>::ZERO )
+    {
+      if ( v[1] == NumberTraits<Coordinate>::ZERO )
+	{	
+	  return ( v[0] < NumberTraits<Coordinate>::ZERO ); 
+	}
+      else if ( v[1] > NumberTraits<Coordinate>::ZERO )
+	{
+	  return isBefore(u, v); 
+	}
+      else // v[1] < 0
+	{
+	  return true; 
+	}
+    }
+  else //u[1] < 0
+    {
+      if ( v[1] < NumberTraits<Coordinate>::ZERO )
+	{
+	  return isBefore(u, v); 
+	}
+      else //v[1] >= 0
+	{
+	  return false; 
+	}
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TPoint, typename TDetComputer>
+inline
+std::ostream&
+DGtal::functors::operator<< ( std::ostream & out, 
+			      const PolarPointComparatorBy2x2DetComputer<TPoint,TDetComputer> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

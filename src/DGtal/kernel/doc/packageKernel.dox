@@ -1,0 +1,75 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageKernel.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/09/02
+ *
+ * Documentation file for feature Kernel
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageKernel Kernel package
+   
+@managers David Coeurjolly, Jacques-Olivier Lachaud, Tristan Roussillon
+
+
+@since 0.4
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+This package contains core concepts, objects and methods which are
+used in other higher level packages. For example, it defines 
+number types considered in DGtal, fundamental structures such as the
+digital space, the digital domain, as well as basic linear algebra
+tools.
+
+@b Modules      
+- \ref moduleNumber (David Coeurjolly, Jacques-Olivier Lachaud)
+- \ref moduleSpacePointVectorDomain (David Coeurjolly, Jacques-Olivier Lachaud, Guillaume Damiand)
+- \ref moduleDigitalSets  (Jacques-Olivier Lachaud, Sebastien Fourey)
+
+
+
+@b Package @b Concepts @b Overview
+- \ref packageKernelConcepts
+
+
+@b Related @b documentation @b pages
+
+
+
+@b Related @b examples
+- kernelDomain.cpp
+- range.cpp
+- kernelDomain.cpp
+- demo-kernel-1.cpp
+*/
+}

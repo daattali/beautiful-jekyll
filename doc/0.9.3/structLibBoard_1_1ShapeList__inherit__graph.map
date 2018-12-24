@@ -1,6 +1,0 @@
-<map id="LibBoard::ShapeList" name="LibBoard::ShapeList">
-<area shape="rect" id="node3" href="$classLibBoard_1_1Board.html" title="Class for EPS, FIG or SVG drawings. " alt="" coords="5,152,123,177"/>
-<area shape="rect" id="node5" href="$structLibBoard_1_1Group.html" title="A group of shapes. A group is basically a ShapeList except that when rendered in either an SVG of a F..." alt="" coords="147,152,266,177"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="75,5,195,31"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1Board2D.html" title="Aim: This class specializes a &#39;Board&#39; class so as to display DGtal objects more naturally (with &lt;&lt;)..." alt="" coords="6,225,122,251"/>
-</map>

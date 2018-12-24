@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1CBidirectionalSegmentComputer.html" title="Aim: Defines the concept describing a bidirectional segment computer, ie. a model of CSegment that ca..." alt="" coords="317,486,528,536"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CForwardSegmentComputer.html" title="Aim: Defines the concept describing a forward segment computer. Like any model of CIncrementalSegment..." alt="" coords="177,403,463,434"/>
-<area shape="rect" id="node19" href="$structDGtal_1_1CDynamicSegmentComputer.html" title="Aim: Defines the concept describing a dynamic segment computer, ie. a model of CSegment that can exte..." alt="" coords="5,495,293,526"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer, ie. a model of CSegmentFactory t..." alt="" coords="216,302,423,352"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1CSegmentFactory.html" title="Aim: Defines the concept describing a segment ie. a valid and not empty subrange, which can construct..." alt="" coords="199,203,413,234"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1CSegment.html" title="Aim: Defines the concept describing a segment, ie. a valid and not empty range." alt="" coords="166,105,335,135"/>
-<area shape="rect" id="node12" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; T \&gt;" alt="" coords="9,6,183,37"/>
-</map>

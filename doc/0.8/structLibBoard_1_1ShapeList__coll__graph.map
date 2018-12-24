@@ -1,7 +1,0 @@
-<map id="LibBoard::ShapeList" name="LibBoard::ShapeList">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="115,350,240,378"/>
-<area shape="rect" id="node3" title="STL class. " alt="" coords="30,171,117,198"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="5,5,142,49"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple. " alt="" coords="142,171,242,198"/>
-<area shape="rect" id="node7" title="STL class. " alt="" coords="282,350,409,378"/>
-</map>

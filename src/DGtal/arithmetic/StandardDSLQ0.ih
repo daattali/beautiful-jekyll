@@ -1,0 +1,657 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file StandardDSLQ0.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/03/08
+ *
+ * Implementation of inline methods defined in StandardDSLQ0.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+
+
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::StandardDSLQ0<TFraction>::
+~StandardDSLQ0()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::StandardDSLQ0<TFraction>::
+StandardDSLQ0()
+  : myPattern()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::StandardDSLQ0<TFraction>::
+StandardDSLQ0 ( const Self & other )
+  : myPattern( other.myPattern ), myMu( other.myMu )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::StandardDSLQ0<TFraction> &
+DGtal::StandardDSLQ0<TFraction>::
+operator= ( const Self & other )
+{
+  myPattern = other.myPattern;
+  myMu = other.myMu;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::StandardDSLQ0<TFraction>::
+StandardDSLQ0( Fraction aSlope, IntegerParamType aMu )
+  : myPattern( aSlope ), myMu( aMu )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::StandardDSLQ0<TFraction>::
+StandardDSLQ0( IntegerParamType a1, IntegerParamType b1, IntegerParamType mu1 )
+  : myPattern( a1, b1 ), myMu( mu1 )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+bool
+DGtal::StandardDSLQ0<TFraction>::
+operator()( const Point & p ) const
+{
+  if ( slope().null() ) return false;
+  Integer _r = r( p );
+  return ( mu() <= _r ) && ( _r < ( mu() + pattern().length() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Integer
+DGtal::StandardDSLQ0<TFraction>::
+r( const Point & p ) const
+{
+  ASSERT( ! slope().null() );
+  return a() * p[ 0 ] - b() * p[ 1 ];
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Fraction
+DGtal::StandardDSLQ0<TFraction>::
+slope() const
+{
+  return pattern().slope();
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+const DGtal::Pattern<TFraction> &
+DGtal::StandardDSLQ0<TFraction>::
+pattern() const
+{
+  return myPattern;
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+const typename DGtal::StandardDSLQ0<TFraction>::Integer &
+DGtal::StandardDSLQ0<TFraction>::
+mu() const
+{
+  return myMu;
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Integer
+DGtal::StandardDSLQ0<TFraction>::
+mup() const
+{
+  return myMu + pattern().length() - NumberTraits<Integer>::ONE;
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Integer
+DGtal::StandardDSLQ0<TFraction>::
+a() const
+{
+  return slope().p();
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Integer
+DGtal::StandardDSLQ0<TFraction>::
+b() const
+{
+  return slope().q();
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Vector2I
+DGtal::StandardDSLQ0<TFraction>::
+v() const
+{
+  return pattern().v();
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Point
+DGtal::StandardDSLQ0<TFraction>::
+U() const
+{
+  Vector2I u = pattern().bezout();
+  Integer c = ( mu() * u[ 0 ] ) / b();
+  return Point( mu() > NumberTraits<Integer>::ZERO 
+                ? v() * ( c + 1 ) - u * mu()
+                : u * mu() - v() * c );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Point
+DGtal::StandardDSLQ0<TFraction>::
+L() const
+{
+  return Point( U() + pattern().L( NumberTraits<Quotient>::ZERO ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Point
+DGtal::StandardDSLQ0<TFraction>::
+lowestY( IntegerParamType x ) const
+{
+  Integer q = a() * x - mup();
+  return Point( x, ic.ceilDiv( q, b() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Point
+DGtal::StandardDSLQ0<TFraction>::
+uppermostY( IntegerParamType x ) const
+{
+  Integer q = a() * x - mu();
+  return Point( x, ic.floorDiv( q, b() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Point
+DGtal::StandardDSLQ0<TFraction>::
+lowestX( IntegerParamType y ) const
+{
+  Integer q = mu() + b() * y;
+  return Point( ic.ceilDiv( q, a() ), y );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Point
+DGtal::StandardDSLQ0<TFraction>::
+uppermostX( IntegerParamType y ) const
+{
+  Integer q = mup() + b() * y;
+  return Point( ic.floorDiv( q, a() ), y );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+bool
+DGtal::StandardDSLQ0<TFraction>::
+before( const Point & p1, const Point & p2 ) const
+{
+  return ( p1[ 0 ] < p2[ 0 ] )
+    || ( ( p1[ 0 ] == p2[ 0 ] ) && ( p1[ 1 ] < p2[ 1 ] ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+bool
+DGtal::StandardDSLQ0<TFraction>::
+beforeOrEqual( const Point & p1, const Point & p2 ) const
+{
+  return ( p1[ 0 ] < p2[ 0 ] )
+    || ( ( p1[ 0 ] == p2[ 0 ] ) && ( p1[ 1 ] <= p2[ 1 ] ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+typename DGtal::StandardDSLQ0<TFraction>::ConstIterator 
+DGtal::StandardDSLQ0<TFraction>::
+begin( Point p ) const
+{
+  return ConstIterator( *this, p );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+typename DGtal::StandardDSLQ0<TFraction>::ConstIterator 
+DGtal::StandardDSLQ0<TFraction>::
+end( Point p ) const
+{
+  ConstIterator it( *this, p );
+  return ++it;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+typename DGtal::StandardDSLQ0<TFraction>::Self
+DGtal::StandardDSLQ0<TFraction>::
+reversedSmartDSS( const Point & A, const Point & B ) const
+{
+  Point _U = U();
+  Integer cA = ic.floorDiv( A[ 0 ] - _U[ 0 ], v()[ 0 ] );
+  Point U1 = _U + v() * cA;
+  Integer cB = ic.ceilDiv( B[ 0 ] - _U[ 0 ], v()[ 0 ] );
+  Point U2 = _U + v() * cB;
+  if ( before( A, U1 ) ) U1 -= v();
+  if ( before( U2, B ) ) U2 += v();
+  return reversedSmartDSS( U1, U2, A, B );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+typename DGtal::StandardDSLQ0<TFraction>::Self
+DGtal::StandardDSLQ0<TFraction>::
+reversedSmartDSS( Point U1, Point U2,
+                  const Point & A, const Point & B ) const
+{
+  #ifdef TRACE_DSL
+  std::cerr << "[reversedSmartDSS] " << (*this) 
+            << " " << pattern().rE() << std::endl
+            << "  +- U1=" << U1 << " A=" << A 
+            << " B=" << B << " U2=" << U2 << std::endl
+            << " v()=" << pattern().v()
+            << " u()=" << pattern().bezout()
+            << " r(U())=" << r(U())
+            << " mu=" << mu() << " r(U1)=" << r(U1)
+            << " r(U2)=" << r(U2) 
+            << " r(A)=" << r(A)
+            << " r(B)=" << r(B)
+            << " mup=" << mup()
+            << " DSS(A)=" << this->operator()( A ) 
+            << " DSS(B)=" << this->operator()( B ) << std::endl;
+  #endif
+  ASSERT( ! slope().null() );
+  ASSERT( r( U1 ) == mu() && r( U2 ) == mu()
+          && this->operator()( A ) && this->operator()( B ) );
+  ASSERT( beforeOrEqual( U1, A ) );
+  ASSERT( before( A, B ) );
+  ASSERT( beforeOrEqual( B, U2 ) );
+  if ( A[ 0 ] == B[ 0 ] ) return Self( 1, 0, A[ 0 ] );
+  if ( A[ 1 ] == B[ 1 ] ) return Self( 0, 1, -A[ 1 ] );
+  Integer dU = U2[ 0 ] - U1[ 0 ];
+  ASSERT( dU >= b() );
+#ifdef TRACE_DSL
+  std::cerr << "  +- dU=" << dU << std::endl;
+#endif
+  if ( ( dU >= (3*b()) ) 
+       || ( ( dU == (2*b()) ) && ( A == U1 || B == U2 ) )
+       || ( A == U1 && B == U2 ) )
+    {
+#ifdef TRACE_DSL
+      std::cerr << "[reversedSmartDSS] 3 patterns || ..." << std::endl;
+#endif
+      return *this;
+    }
+  // [A,B] is included in two patterns of this DSL.
+  if ( dU == (2*b()) )
+    {
+#ifdef TRACE_DSL
+      std::cerr << "[reversedSmartDSS] 2 patterns" << std::endl;
+#endif
+      return DSSWithinTwoPatterns( U1, U2, A, B );
+    }
+  // [A,B] is included in one patterns of this DSL.
+  Pattern<Fraction> subpattern;
+  Quotient nb;
+  Vector2I startPos;
+  Integer posA = ( A - U1 ).norm1();
+  Integer posB = ( B - U1 ).norm1();
+#ifdef TRACE_DSL
+  std::cerr << "[reversedSmartDSS] 1 pattern" << std::endl;
+#endif
+  bool m = pattern().getSmallestCoveringSubpattern
+    ( subpattern, nb, startPos, posA, posB );
+#ifdef TRACE_DSL
+  std::cerr << "  - smallest:" << subpattern.rE() << " at " << startPos << endl;
+#endif
+  if ( ! m )
+    { // smallest covering subpattern is the pattern itself.
+      bool n = pattern().getGreatestIncludedSubpattern
+        ( subpattern, nb, startPos, posA, posB );
+#ifdef TRACE_DSL
+      std::cerr << "  - greatest:" << subpattern.rE() << " at " << startPos << endl;
+#endif
+      ASSERT( n ); boost::ignore_unused_variable_warning(n);
+      Point NU( U1 + startPos );
+      Integer nmu = subpattern.slope().p() * NU[ 0 ]
+        - subpattern.slope().q() * NU[ 1 ];
+      return Self( subpattern.slope(), nmu );
+    }
+  // last case, recursive call.
+  Point NU1( U1 + startPos );
+  Point NU2( NU1 + subpattern.v()*nb );
+  Integer nmu = subpattern.slope().p() * NU1[ 0 ]
+    - subpattern.slope().q() * NU1[ 1 ];
+  StandardDSLQ0 ndsl( subpattern.slope(), nmu );
+  return ndsl.reversedSmartDSS( NU1, NU2, A, B );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+typename DGtal::StandardDSLQ0<TFraction>::Self
+DGtal::StandardDSLQ0<TFraction>::
+DSSWithinTwoPatterns( Point U1, Point U2,
+                      const Point & A, const Point & B ) const
+{
+  Integer posA, posB;
+  Point Um = U1 + pattern().v();
+  ASSERT( Um + pattern().v() == U2 );
+  ASSERT( before( A, B ) );
+  ASSERT( before( A, Um ) );
+  ASSERT( before( Um, B ) );
+  ASSERT( r( U1 ) == mu() && r( U2 ) == mu() );
+  bool readyLU = false;
+  bool readyRU = false;
+  bool readyL = false;
+  Point L1 = U1 + pattern().L( 0 );
+  Point L2 = L1 + pattern().v();
+  Pattern<Fraction> subpattern;
+  Pattern<Fraction> patDeepest;
+  Pattern<Fraction> patLU = pattern();
+  Pattern<Fraction> patRU = pattern();
+  Pattern<Fraction> patL = pattern();
+  Quotient nb;
+  Vector2I startPos;
+  #ifdef TRACE_DSL
+  std::cerr << "[DSSWithinTwoPatterns] " << (*this) 
+            << " " << pattern().rE() << std::endl
+            << "  +- U1=" << U1 << " A=" << A 
+            << " B=" << B << " U2=" << U2 
+            << " L1=" << L1 << std::endl;
+  #endif
+  while( true ) //for ( Quotient i = NumberTraits<Quotient>::ZERO; i <= pattern().slope().k(); ++i )
+    {
+      if ( ! readyLU )
+        {
+          bool mLU = patLU.getSmallestCoveringSubpattern
+            ( subpattern, nb, startPos,
+              ( A - U1 ).norm1(), ( Um - U1 ).norm1(), false );
+          if ( ! mLU || nb > 1 )
+            {
+              bool n = patLU.getGreatestIncludedSubpattern
+                ( subpattern, nb, startPos, 
+                  ( A - U1 ).norm1(), ( Um - U1 ).norm1(), false );
+              ASSERT( n ); boost::ignore_unused_variable_warning(n);
+              readyLU = true;
+            }
+          patLU = subpattern;
+          U1 += startPos;
+        }
+      if ( ! readyRU )
+        {
+          bool mRU = patRU.getSmallestCoveringSubpattern
+            ( subpattern, nb, startPos,
+              0, ( B - Um ).norm1(), false );
+          if ( ! mRU || nb > 1 )
+            {
+              bool n = patRU.getGreatestIncludedSubpattern
+                ( subpattern, nb, startPos, 
+                   0, ( B - Um ).norm1(), false );
+              ASSERT( n ); boost::ignore_unused_variable_warning(n);
+              readyRU = true;
+            }
+          patRU = subpattern;
+          ASSERT( ! patRU.slope().null() );
+          U2 = Um + patRU.v() * nb;
+        }
+      if ( ! readyL )
+        {
+          posA = L1[ 0 ] <= A[ 0 ] ? ( A - L1 ).norm1() : 0;
+          posB = L2[ 0 ] >  B[ 0 ] ? ( B - L1 ).norm1() : patL.length();
+          bool mL = patL.getSmallestCoveringSubpattern
+            ( subpattern, nb, startPos, posA, posB, true );
+          if ( ! mL )
+            {
+              bool n = patL.getGreatestIncludedSubpattern
+                ( subpattern, nb, startPos, posA, posB, true );
+              ASSERT( n ); boost::ignore_unused_variable_warning(n);
+              patL = subpattern;
+              readyL = true;
+            }
+          else
+            { // One has to keep the pertinent pattern
+              // It is the reversed pattern around Um.
+              patL = subpattern;
+              L2 = Um + patL.L( 0 );
+              L1 = L2 - patL.v();
+            }
+          // patL = subpattern;
+          // L1 += startPos;
+          // L2 = L1 + patL.v() * nb;
+        }
+#ifdef TRACE_DSL
+      std::cerr << "  (*) " << (readyLU ? '*' : '-')
+                << "LU=" << patLU.rE() << " at " << U1 << std::endl;
+      std::cerr << "  (*) " << (readyRU ? '*' : '-')
+                << "RU=" << patRU.rE() << " til " << U2 << std::endl;
+      std::cerr << "  (*) " << (readyL  ? '*' : '-')
+                << "L =" << patL.rE()  << " at " << L1 << std::endl;
+#endif
+      if ( readyLU || readyRU || readyL )
+        {
+          patDeepest = deepest( patLU.slope(), patRU.slope(), patL.slope() );
+#ifdef TRACE_DSL
+          std::cerr << "      => deepest is " << patDeepest.rE() << std::endl;
+#endif
+        }
+      if ( ( readyLU && patDeepest.slope().q() == patLU.slope().q() )
+           || ( readyRU && patDeepest.slope().q() == patRU.slope().q() )
+           || ( readyL  && patDeepest.slope().q() == patL.slope().q() ) )
+        break;
+    }
+  Integer nmu = patDeepest.slope().p() * Um[ 0 ]
+    - patDeepest.slope().q() * Um[ 1 ];
+  return StandardDSLQ0( patDeepest.slope(), nmu );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+typename DGtal::StandardDSLQ0<TFraction>::Self
+DGtal::StandardDSLQ0<TFraction>::
+smartDSS( const Point & A, const Point & B ) const
+{
+#ifdef TRACE_DSL
+  std::cerr << "[smartDSS] " << (*this) 
+            << " " << pattern().rE() << std::endl
+            << " A=" << A << " B=" << B << std::endl;
+#endif
+  ASSERT( ! slope().null() );
+  ASSERT( this->operator()( A ) && this->operator()( B ) );
+  ASSERT( before( A, B ) );
+  Fraction f10( 1, 0 );
+  Pattern<Fraction> p( 0, 1 );
+  bool ulu = true;
+  bool lul = true;
+  Quotient delta = 0;
+  Point2I _U = A;
+  Point2I _L = A;
+  Point2I _Up = _U + Point2I(0,1);
+  Point2I _Lp = _L + Point2I(1,-1);
+  UnsignedInteger AB1 = (B-A).norm1();
+  while ( ( (_Up - A).norm1() <= AB1 )
+	  && this->operator()( _Up ) ) 
+    {
+#ifdef TRACE_DSL
+      std::cerr << "Vertical" << std::endl;
+#endif
+     p = Pattern<Fraction>( f10 );
+      _Up += Point2I(0,1);
+      _Lp += Point2I(0,1);
+      ++delta;
+    }
+  if ( delta != 0 )
+    {
+      _Lp += Point2I(0,1);
+      // ulu = false;
+    }
+ 
+  while ( p.slope() != this->slope() )
+    {
+#ifdef TRACE_DSL
+      std::cerr << "[smartDSS] v=" << p.v()
+		<< " bez=" << p.bezout()
+		<< " U=(" << _U[0] << "," << _U[1] << ")"
+		<< " L=(" << _L[0] << "," << _L[1] << ")"
+		<< " Up=(" << _Up[0] << "," << _Up[1] << ")"
+		<< " Lp=(" << _Lp[0] << "," << _Lp[1] << ")"
+		<< std::endl;
+#endif
+      ASSERT( p.v()[1]*p.bezout()[0] - p.v()[0]*p.bezout()[1] == -1 ); 
+      if ( ( (_Up - A).norm1() > AB1 ) &&  ( (_Lp - A).norm1() > AB1 ) ) break;
+      else if ( _Up[ 1 ] <= B[ 1 ] && this->operator()( _Up ) )
+	{
+	  Fraction np = p.slope().right();
+	  for ( Quotient i = 1; i < delta; ++i ) 
+	    np = np.left();
+	  _L = _Lp + p.bezout() - p.v();
+	  if ( ! lul ) _L -= p.v();
+	  p = Pattern<Fraction>( np );
+	  ASSERT( p.v()[1]*p.bezout()[0] - p.v()[0]*p.bezout()[1] == -1 ); 
+	  _Up = _U + p.v() + p.bezout();
+	  _Lp = _L + p.v() + p.v() - p.bezout();
+	  delta = 1; ulu = true; lul = false;
+	}
+      else if ( _Lp[ 0 ] <= B[ 0 ] && this->operator()( _Lp ) )
+	{
+	  Fraction np = p.slope().left();
+	  for ( Quotient i = 1; i < delta; ++i ) 
+	    np = np.right();
+	  _U = p.slope() == f10 ? _Up - Point2I( 0,1 ) : _Up - p.bezout();
+	  if ( ! ulu ) _U -= p.v();
+	  p = Pattern<Fraction>( np );
+	  ASSERT( p.v()[1]*p.bezout()[0] - p.v()[0]*p.bezout()[1] == -1 ); 
+	  _Up = _U + p.v() + p.bezout();
+	  _Lp = _L + p.v() + p.v() - p.bezout();
+	  delta = 1; ulu = false; lul = true;
+	}
+      else
+	{
+	  ++delta;
+	  _Up += p.v();
+	  _Lp += p.v();
+	}
+    }
+  Integer nmu = p.slope().p() * _U[ 0 ] - p.slope().q() * _U[ 1 ];
+  return StandardDSLQ0( p.slope(), nmu );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Fraction
+DGtal::StandardDSLQ0<TFraction>::
+deepest( Fraction f1, Fraction f2, Fraction f3 )
+{
+  return deepest( f1, deepest( f2, f3 ) ); 
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::StandardDSLQ0<TFraction>::Fraction
+DGtal::StandardDSLQ0<TFraction>::
+deepest( Fraction f1, Fraction f2 )
+{
+  return ( ( f1.k() > f2.k() ) 
+           || ( ( f1.k() == f2.k() ) && ( f1.u() >= f2.u() ) ) )
+    ? f1 : f2;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TFraction>
+inline
+void
+DGtal::StandardDSLQ0<TFraction>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[StandardDSLQ0"
+      << " a=" << a() << ", b=" << b() << ", mu=" << mu() << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TFraction>
+inline
+bool
+DGtal::StandardDSLQ0<TFraction>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TFraction>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const StandardDSLQ0<TFraction> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

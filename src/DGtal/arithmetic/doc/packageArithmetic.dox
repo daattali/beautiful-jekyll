@@ -1,0 +1,91 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageArithmetic.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/04/02
+ *
+ * Documentation file for feature Arithmetic
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageArithmetic  Arithmetic package
+
+@managers Jacques-Olivier Lachaud
+
+@since 0.5
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+This package gathers tools to perform arithmetic
+computations. Standard arithmetic computations are provided: greatest
+common divisor, Bézout vectors, continued fractions, convergent,
+intersection of integer half-spaces. Several representations of
+irreducible fractions are provided. They are based on the Stern-Brocot
+tree structure. With these fractions, amortized constant time
+operations are provided for computing reduced fractions. A
+representation of digital standard line in the first quadrant is
+provided, as well as fast algorithms to recognize digital straight
+subsegments. Furthermore, since 0.6, it provides classes for
+representing 2D lattice polytopes (convex integer polygons) as well as
+methods to perform linear integer programming in the plane.
+
+Parts of this package are backports from
+[ImaGene](https://gforge.liris.cnrs.fr/projects/imagene): class
+IntegerComputer, class SternBrocot (written with Xavier Provençal),
+algorithms StandardDSLQ0::smartDSS and StandardDSLQ0::reversedSmartDSS
+(written with Mouhammad Said), class ConvexIntegerPolygon (written
+with Emilie Charrier), class COBANaivePlaneComputer (written with Emilie
+Charrier and Lilian Buzer).
+
+@b Modules
+
+- \ref moduleIntegerComputations (Jacques-Olivier Lachaud)
+- \ref moduleIrreducibleFraction (Jacques-Olivier Lachaud, Xavier Provençal)
+- \ref moduleDigitalStraightness (Jacques-Olivier Lachaud, Mouhammad Said)
+- \ref moduleLatticePolytope2D (Jacques-Olivier Lachaud, Emilie Charrier)
+
+
+@b Package @b Concepts @b Overview
+
+- \ref packageArithmeticConcepts
+
+@b Related @b documentation @b pages
+
+
+@b Related @b examples
+- extended-euclid.cpp
+- approximation.cpp, convergents.cpp, convergents-biginteger.cpp, fraction.cpp
+- pattern.cpp
+- lower-integer-convex-hull.cpp
+
+*/
+
+}

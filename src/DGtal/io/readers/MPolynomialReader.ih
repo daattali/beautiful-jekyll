@@ -1,0 +1,104 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MPolynomialReader.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/07/06
+ *
+ * Implementation of inline methods defined in MPolynomialReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iomanip>
+#include <string>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <int n, typename TRing, typename TAlloc, typename TIterator>
+inline
+void
+DGtal::MPolynomialReader<n, TRing, TAlloc, TIterator>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[MPolynomialReader"; 
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <int n, typename TRing, typename TAlloc, typename TIterator>
+inline
+bool
+DGtal::MPolynomialReader<n, TRing, TAlloc, TIterator>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <int n, typename TRing, typename TAlloc, typename TIterator>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const MPolynomialReader<n, TRing, TAlloc, TIterator> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+template < int n, typename TRing, class TAlloc >
+std::istream&
+DGtal::operator>> ( std::istream & in,
+                    MPolynomial<n,TRing,TAlloc> & aMPolynomial )
+{
+  typedef std::string::const_iterator ConstIterator;
+  typedef MPolynomialReader<n, TRing, TAlloc, ConstIterator> MyReader;
+  std::string s;
+  getline( in, s );
+  MyReader reader;
+  ConstIterator it = reader.read( aMPolynomial, s.begin(), s.end() );
+  while ( it != s.end() )
+    {
+      in.unget();
+      ++it;
+    }
+  
+  return in;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

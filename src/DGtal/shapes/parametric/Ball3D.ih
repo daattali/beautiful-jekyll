@@ -1,0 +1,251 @@
+/**
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+#pragma once
+
+/**
+ * @file Ball3D.ih
+ * @author Anis Benyoub (\c anis.benyoub@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/06/05
+ *
+ * Header file for module Ball3D.cpp
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <algorithm>
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+typedef std::pair<double,double> AngularCoordinates;
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::Ball3D<T>::~Ball3D()
+{
+}
+
+template <typename T>
+inline
+DGtal::Ball3D<T>::Ball3D(const double x0, const double y0, const double z0, const double radius):
+  myRadius(radius), myCenter(x0,y0,z0)
+{}
+
+
+template <typename T>
+inline
+DGtal::Ball3D<T>::Ball3D(const RealPoint &aPoint, const double radius):
+  myRadius(radius), myCenter(aPoint)
+{}
+
+
+/////////////////////////////////////////////////////////////////////////////
+// ------------- Implementation of 'StarShaped' services ------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return the couple of angle parameters (Teta,Phi) respectivly between [0,2PI] and [0,Pi] corresponding to
+ * this point for the shape.
+ */
+template <typename T>
+inline
+AngularCoordinates
+DGtal::Ball3D<T>::parameter( const RealPoint & pp ) const
+{
+  RealPoint p( pp );
+  p -= myCenter;
+  AngularCoordinates angle;
+  
+  angle.first = atan2( p[1], p[0] );
+  double tmp = std::min ( std::abs( p[2] ), 1.0 );
+  double pn = p.norm();
+  angle.second = pn > 0.0 ? acos( tmp / pn ) : 0.0;
+
+  angle.first = ( angle.first < 0.0 ) ? angle.first + 2*M_PI : angle.first;
+  angle.second = ( angle.second < 0.0 ) ? angle.second + M_PI : angle.second;
+  
+  return angle;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x(t),y(t),z(t)) which is the position on the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::x( AngularCoordinates t ) const
+{
+  RealPoint c( myRadius*cos(t.first)*sin(t.second), myRadius*sin(t.first)*sin(t.second) , myRadius*cos(t.second));
+  c += myCenter;
+  return c;
+}
+
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are angles respectivly betweend [0,2PI] and [0,Pi].
+ *
+ * @return the vector (gradf(M)).
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::gradient( const AngularCoordinates t) const
+{
+  RealPoint p= x(t);
+  double xx=2*(p[0]-myCenter[0]);
+  double yy =2*(p[1]-myCenter[1]);
+  double zz=2*(p[2]-myCenter[2]);
+  return RealPoint(xx,yy,zz);
+}
+
+/**
+ * @param t is a couple of Teta && Phi wich are angles respectivly betweend [0,2PI] and [0,Pi].
+ *
+ * @return the vector (rt(M)) wich is the first partial derivative with respect to Teta.
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::rt( const AngularCoordinates t) const
+{
+  return RealPoint(-myRadius*sin(t.first)*sin(t.second),myRadius*cos(t.first)*sin(t.second),0);
+}
+
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are angles respectivly betweend [-Pi/2,Pi/2) and [-Pi,Pi].
+ *
+ * @return the vector (rp(M)) wich is the first partial derivative with respect to Phi.
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::rp( const AngularCoordinates t) const
+{
+  return RealPoint(myRadius*cos(t.first)*cos(t.second),myRadius*sin(t.first)*cos(t.second),-myRadius*sin(t.second));
+}
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are angles respectivly betweend [0,2PI] and [0,Pi].
+ *
+ * @return the vector (rtt(M)) wich is second the second partial derivative with respect to Teta(twice).
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::rtt( const AngularCoordinates t) const
+{
+  return RealPoint(-myRadius*cos(t.first)*sin(t.second),-myRadius*sin(t.first)*sin(t.second),0);
+}
+
+
+
+/**
+ * @param t is a couple of Teta && Phi wich are angles respectivly betweend [0,2PI] and [0,Pi].
+ *
+ * @return the vector (rpp(M)) wich is second the partial derivatif with respect to Phi(twice).
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::rpp( const AngularCoordinates t) const
+{
+  return RealPoint(-myRadius*cos(t.first)*sin(t.second),-myRadius*sin(t.first)*sin(t.second),-myRadius*cos(t.second));
+}
+    
+/**
+ * @param t is a couple of Teta && Phi wich are angles respectivly betweend [0,2PI] and [0,Pi]
+ *
+ * @return the vector (rtp(M)) wich is second the partial derivatif with respect to Teta then Phi.
+ */
+template <typename T>
+inline
+typename DGtal::Ball3D<T>::RealPoint
+DGtal::Ball3D<T>::rtp( const AngularCoordinates t) const
+{
+  return RealPoint(-myRadius*sin(t.first)*cos(t.second),myRadius*cos(t.first)*cos(t.second),0);
+}
+    
+
+    
+    
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::Ball3D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Ball3D] center= "<<myCenter<<" radius="<<myRadius;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::Ball3D<T>::isValid() const
+{
+  return true;
+}
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const Ball3D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+// //
+///////////////////////////////////////////////////////////////////////////////

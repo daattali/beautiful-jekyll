@@ -1,0 +1,560 @@
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+ using namespace DGtal;
+ using namespace concepts;
+namespace DGtal {
+namespace concepts{
+/*!
+   
+@page moduleArithDSSReco Digital straight lines and segments   
+
+@author Tristan Roussillon
+
+Part of the \ref packageGeometry.
+
+This module gathers classes that represent and recognize digital straight segments. 
+To dynamically recognize DSSs along a sequence of points, the basic class is ArithmeticalDSSComputer, 
+which is a model of concepts::CDynamicBidirectionalSegmentComputer. 
+Each instance of ArithmeticalDSSComputer has an instance of ArithmeticalDSS, which represents the 
+recognized digital straight segment.   
+Moreover, any instance of ArithmeticalDSS has an instance of ArithmeticalDSL, which represents 
+the bounding digital straight line of minimal parameters.  
+We detail below these three classes in a reverse order. 
+
+[TOC]
+
+Related examples are exampleArithmeticalDSL.cpp,  exampleArithmeticalDSS.cpp, 
+and exampleArithmeticalDSSComputer.cpp
+
+\section moduleArithDSSReco-DSL Digital straight lines
+
+A \b digital \b straight \b line (DSL) of \b slope \f$ a/b \f$ (with \f$ a,b, \in \mathbb{Z} \f$, \f$ \gcd(a,b) = 1 \f$), 
+\b intercept \f$ \mu \in \mathbb{Z} \f$ and \b thickness \f$ \omega \in \mathbb{Z} \f$, 
+which is conveniently denoted by \f$ D(a,b,\mu,\omega) \f$, 
+is the set of digital points \f$ (x,y) \in \mathbb{Z}^2 \f$ such that \f$ \mu \leq ax - by < \mu + \omega \f$
+(Reveilles, 1991  \cite Reveilles_1991_thesis). 
+
+Any DSL such that \f$ \omega = \max(|a|,|b|) \f$ (resp. \f$ \omega = |a| + |b| \f$) is said to be naive 
+(resp. standard) and is simply 8-connected (resp. 4-connected) (Reveilles, 1991 \cite Reveilles_1991_thesis). 
+
+For instance, the naive DSL \f$ D(2,5,0,5) \f$ is depicted below: 
+@image html NaiveDSL.png "Example of Naive DSL"
+@image latex NaiveDSL.png "Example of Naive DSL" width=5cm
+
+The standard DSL \f$ D(2,5,0,7) \f$ is thicker: 
+@image html StandardDSL.png "Standard DSL of same slope and same intercept"
+@image latex StandardDSL.png "Standard DSL of same slope and same intercept" width=5cm
+
+From now on, let us assume that \f$ \omega \f$ is either equal to \f$\max(|a|,|b|) \f$ (naive case) 
+or to \f$ |a| + |b| \f$ (standard case).  
+Then, any DSL is merely denoted by \f$ D(a,b,\mu) \f$. 
+
+\subsection moduleArithDSSReco-DSL-Ex Short example
+
+A naive DSL can be declared and constructed as follows: 
+@snippet geometry/curves/exampleArithmeticalDSL.cpp ArithmeticalDSLNaiveCtor
+
+Then, within a window defined by two points (called firstPoint and lastPoint below),
+you can iterate over the DSL points: 
+@snippet geometry/curves/exampleArithmeticalDSL.cpp ArithmeticalDSLIteration
+
+\note Note the difference of semantic between method ArithmeticalDSL.begin(), 
+which returns an iterator pointing to the input point, and method ArithmeticalDSL.end(), 
+which returns an iterator pointing \b past to the input point. 
+
+In the standard case, it is enough to replace \b Naive by \b Standard. 
+@snippet geometry/curves/exampleArithmeticalDSL.cpp ArithmeticalDSLStandardCtor
+
+In order to use classes NaiveDSL and StandardDSL, you must include the following file: 
+@snippet geometry/curves/exampleArithmeticalDSL.cpp ArithmeticalDSLHeader
+
+Classes NaiveDSL and StandardDSL are both aliases of the class ArithmeticalDSL, 
+which represents either a naive or a standard DSL. 
+It gathers the generic code that represents a DSL in any octant. 
+
+\subsection moduleArithDSSReco-DSL-Orientation Orientation
+
+The arithmetical representation \f$ (a, b, \mu) \f$
+is redondant. Exactly two representations describe one DSL. 
+For instance, \f$ D(2,5,0) \f$ and \f$ D(-2,-5,-5) \f$ corresponds 
+to the same set of points. This representation is thus interesting, since it
+includes an orientation preferably chosen to iterate over the DSL points from any point 
+belonging to the DSL. 
+@image html StandardDSL.png "D(2,5,0) and D(-2,-5,-5) represents the same set of points"
+@image latex StandardDSL.png "D(2,5,0) and D(-2,-5,-5) represents the same set of points" width=5cm
+
+\note Note that you must use method ArithmeticalDSL.negate() to get a representation from another one. 
+Note also that method ArithmeticalDSL.equalsTo() compare two representations
+and returns 'true' iff the parameters \f$ a, b \f$ and \f$ \mu \f$ of the two 
+representations are equal. However, the equality operator ArithmeticalDSL.operator==
+compare two sets of points and returns 'true' iff the two sets of points are equal, 
+whatever the orientation.
+
+\subsection moduleArithDSSReco-DSL-Members Data members
+
+ArithmeticalDSL stores as data members not only the parameters \f$ a, b \f$ and \f$ \mu \f$,
+but also redondant parameters described below. These extra parameters are useful to efficiently 
+iterate over the DSL points. 
+
+- myA of type ArithmeticalDSL::Coordinate: \f$ a \f$ -parameter of the DSL, 
+(equal to the y-component of the direction vector).
+- myB of type ArithmeticalDSL::Coordinate: \f$ b \f$ -parameter of the DSL, 
+(equal to the x-component of the direction vector).  
+- myLowerBound of type ArithmeticalDSL::Integer: \f$ \mu \f$ -parameter of the DSL 
+that defines the \b lower \b leaning \b line \f$ ax - by = \mu \f$. 
+- myUpperBound of type ArithmeticalDSL::Integer: integer equal to \f$ \mu + \omega - 1 \f$ 
+that defines the \b upper \b leaning \b line. 
+- myShift of type ArithmeticalDSL::Vector: vector \f$ s \f$ that translates any point of remainder \f$ r = ax - by \f$ 
+to a point of remainder \f$ r + \omega \f$. Note that \f$ s \f$ is equal to 0 if \f$ \omega = 0 \f$, 
+ie. if \f$ a \f$ and \f$ b \f$ are both null.      
+- mySteps of type ArithmeticalDSL::Steps (STL pair of Vector): couple of vectors \f$ v \f$ and \f$ w \f$ 
+used to iterate over the DSL points so that a given DSL point \f$ p \f$ is followed by 
+its unique neighbor point \f$ q \f$ belonging to the DSL in the orientation given by \f$ a \f$ and \f$ b \f$.
+Obviously, these two vectors are equal to 0 in the invalid case where \f$ \omega = 0 \f$. Moreover, 
+the first vector is equal to the direction vector, while the second one is equal to 0, if \f$ \omega = 1 \f$, 
+ie. if the lower leaning line and the upper leaning line are counfounded. Though, in the general case, 
+the first vector translates any point \f$ p \f$ of remainder \f$ r \f$ to its neighbor point \f$ q \f$ 
+of remainder greater than or equal to \f$ r \f$, while the second one is such that \f$ v - w = s \f$. 
+
+\note Data member myShift (resp. mySteps) is computed with respect to myA and myB in 
+ArithmeticalDSLKernel::steps() (resp. ArithmeticalDSLKernel::shift()).
+ArithmeticalDSLKernel contains the part of the code that depends on the arithmetical thickness 
+(either naive or standard).  
+
+Below, three naive DSLs are depicted in the first three octants. 
+Vectors mySteps.first (\f$ v \f$), mySteps.second (\f$ w \f$) and myShift (\f$ s \f$),
+ are repectively depicted in blue, green and red. The two vectors of the orthonormal basis 
+are depicted in black.  
+ 
+@image html ArithmeticalDSL-8-0-5-8.png "Naive DSL D(5,8,0)"
+@image latex ArithmeticalDSL-8-0-5-8.png "Naive DSL D(5,8,0)" width=5cm
+
+@image html ArithmeticalDSL-8-1-8-5.png "Naive DSL D(8,5,0)"
+@image latex ArithmeticalDSL-8-1-8-5.png "Naive DSL D(8,5,0)" width=5cm
+
+@image html ArithmeticalDSL-8-2-8-m5.png "Naive DSL D(8,-5,0)"
+@image latex ArithmeticalDSL-8-2-8-m5.png "Naive DSL D(8,-5,0)" width=5cm
+
+Other octants and specific cases are generated in exampleArithmeticalDSL.cpp. 
+
+\subsection moduleArithDSSReco-DSL-Features Main features
+
+ArithmeticalDSL is a model of CPointFunctor, ie. it has a function operator 
+ArithmeticalDSL.operator\(\) that returns 'true' iff the input point belongs 
+to the DSL. Note that a point \f$ (x,y) \f$ belongs to the DSL iff its remainder 
+\f$ ax - by \f$ lies between \f$ \mu \f$ (included) and \f$ \mu + \omega \f$ (excluded). 
+Method ArithmeticalDSL.remainder() returns the remainder of any input point. 
+
+On the other hand, there is a one-to-one mapping between a DSL point and its position in the DSL.
+For instance, for each x-coordinate \f$ x \f$, there is one and only one point \f$ (x,y) \in \mathbb{Z}^2 \f$ 
+that belongs to the \b naive DSL \f$ D(2,5,0) \f$. Similarly, for each value \f$ x+y \f$, 
+there is one and only one point \f$ (x,y) \in \mathbb{Z}^2  \f$ that belongs to the \b standard DSL \f$ D(2,5,0) \f$. 
+Method ArithmeticalDSL.position() returns 
+the position of any input point, whereas method 
+ArithmeticalDSL.getPoint() returns the point located at the 
+specified position. Methods ArithmeticalDSL.before() and 
+ArithmeticalDSL.beforeOrEqual() provide a way of comparing the position of two given points, 
+with respect to the orientation given by \f$ a \f$ and \f$ b \f$. 
+ 
+
+ArithmeticalDSL also provides services to iterate over the DSL points 
+from any point belonging to the DSL.
+ArithmeticalDSL is a model of CConstBidirectionalRange that has inner types called 
+ArithmeticalDSL::ConstIterator and ArithmeticalDSL::ConstReverseIterator, 
+both models of readable iterator and random access iterator.
+The reader may have a look at the increment and decrement operator of
+ArithmeticalDSL::ConstIterator (ie. ArithmeticalDSL::ConstIterator.increment and 
+ArithmeticalDSL::ConstIterator.decrement) to see that the code is generic.     
+
+We list below the main methods of ArithmeticalDSL: 
+- accessors to data members: 
+  - ArithmeticalDSL::a() 
+  - ArithmeticalDSL::b()
+  - ArithmeticalDSL::mu()
+  - ArithmeticalDSL::omega()
+  - ArithmeticalDSL::shift()
+  - ArithmeticalDSL::steps()
+- iteration services
+  - ArithmeticalDSS::begin()
+  - ArithmeticalDSS::end()
+  - ArithmeticalDSS::rbegin()
+  - ArithmeticalDSS::rend()  
+- helpers
+  - ArithmeticalDSL::negate()
+  - ArithmeticalDSL::remainder()
+  - ArithmeticalDSL::isInDSL() (called in ArithmeticalDSL::operator())
+  - ArithmeticalDSL::position()
+  - ArithmeticalDSL::getPoint()
+  - ArithmeticalDSL::before()
+  - ArithmeticalDSL::beforeOrEqual()
+
+\subsection moduleArithDSSReco-DSL-Overflows Avoiding overflows
+
+You may have noticed that myLowerBound (\f$ \mu \f$) is a member of type ArithmeticalDSL::Integer, 
+whereas myA (\f$ a \f$) and myB (\f$ b \f$) are members of type ArithmeticalDSL::Coordinate.  
+For any lower leaning point of coordinates \f$ (x, y) \f$ such that \f$ ax - by = \mu \f$, 
+myLowerBound may require \f$ 2n+1 \f$ bits if \f$ a \f$ and \f$ b \f$ are stored with \f$ n \f$ bits.
+Therefore, NaiveDSL and StandardDSL have not only one template parameter, but two. 
+The first one for the coordinates and the slope, the second one, which should represent a larger
+domain of integers, for the intercepts and the remainders. 
+
+You can set the second template parameter as follows in order to avoid any overflow: 
+
+@snippet geometry/curves/exampleArithmeticalDSL.cpp ArithmeticalDSLNaiveCtorTypes
+
+Note that an instance of ArithmeticalDSL is valid iff parameters \f$ a \f$ and \f$ b \f$ are not both null, 
+are relatively prime, and all the redondant parameters are consistents (see ArithmeticalDSL.isValid()
+and ArithmeticalDSL.checkShiftAndSteps()). 
+
+\subsection moduleArithDSSReco-DSL-Further To go further 
+
+In order to perform operations on the continued fraction expansion of the slope, 
+you may consider the usage of the class StandardDSLQ0 (see \ref moduleDigitalStraightness). 
+The main differences between ArithmeticalDSL and StandardDSLQ0 are listed below: 
+ 
+| Class                | -ArithmeticalDSL-            | -StandardDSLQ0-                            |
+|----------------------|------------------------------|--------------------------------------------|
+| Slope representation | two signed integers          | an irreductible fraction, whose type is a model of CPositiveIrreducibleFraction |
+| Orientation          | any octant                   | first quadrant only                        |
+| Thickness            | naive and standard           | standard only                              |
+
+
+\section moduleArithDSSReco-DSS Digital straight segments
+
+We have seen that the points of a DSL may be visited within a range bounded by two points. 
+A \b digital \b straight \b segment (DSS) represents such a set of points. 
+
+\subsection moduleArithDSSReco-DSS-Ex Short example
+
+A 8-connected naive DSS can be declared and constructed as follows: 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtor
+
+You can iterate over the whole set of DSS points as follows:  
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSIteration
+
+In addition, you can draw either the points of a DSS or its bounding box with Board2D 
+(there are two drawing modes: "Points" and "BoundingBox").  
+@snippet geometry/curves/exampleArithmeticalDSS.cpp NaiveDSS8DrawingUsage 
+
+The result of this short example taken from exampleArithmeticalDSS.cpp is presented below: 
+
+@image html NaiveDSS8.png "A simply 8-connected naive DSS with its bounding box"
+@image latex NaiveDSS8.png "A simply 8-connected naive DSS with its bounding box" width=5cm
+
+See \ref moduleBoard2D to read more about the drawing mechanism. 
+
+Similarly, in the standard case, you may write:  
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSStandardCtor
+
+\note According to the drawing mode that is chosen for the \b points, the DSS points can be either drawn 
+as a sequence of edge-connected squares ("Paving" or "Both" mode) 
+or as a polygonal line ("Grid" mode). 
+
+@image html StandardDSS4bis.png "A simply 4-standard DSS with its bounding box"
+@image latex StandardDSS4bis.png "A simply 4-standard DSS with its bounding box" width=5cm
+
+@image html StandardDSS4.png "Another view of the same DSS"
+@image latex StandardDSS4.png "Another view of the same DSS" width=5cm
+
+In order to use classes NaiveDSS8 and StandardDSS4, you must include the following file: 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSHeader
+
+\subsection moduleArithDSSReco-DSS-Features Main features
+
+Classes NaiveDSS8 and StandardDSS4 are both aliases of the class ArithmeticalDSS,
+which gathers the generic code to represent both a 
+simply 8-connected sequence of points belonging to a naive DSL and a
+simply 4-connected sequence of points belonging to a standard DSL. 
+As ArithmeticalDSL, ArithmeticalDSS is a model of CPointFunctor, ie. 
+it has a function operator ArithmeticalDSS.operator\(\) that returns 'true' 
+iff the input point belongs to the DSS. As ArithmeticalDSL, it provides 
+services to iterate over the DSS points. Indeed, ArithmeticalDSS is a model of concepts::CConstBidirectionalRange. 
+It has two inner types called ArithmeticalDSS::ConstIterator and ArithmeticalDSS::ConstReverseIterator, 
+which are both models of readable iterator and bidirectional iterator.
+
+Obviously, a given DSS belongs to infinitely many DSLs, but one of them has minimal parameters, 
+ie has a minimal \f$ \omega \f$. ArithmeticalDSS uses this minimal bounding DSL to represent
+its slope and its intercept.  
+Note that an instance of ArithmeticalDSS is oriented with respect to the orientation of its 
+minimal bounding DSL. 
+In addition, ArithmeticalDSS stores as data members not only its minimal bounding DSL,
+but also its ending points as well as the first and last lower and upper leaning points,
+due to the role that these points play in the recognition algorithm 
+[Debled and Reveilles, 1995 : \cite Debled_1995_ijprai].  
+
+We list below the main methods of ArithmeticalDSS: 
+- accessor to the bounding DSL of minimal parameters
+  - ArithmeticalDSS::dsl()
+- iteration services
+  - ArithmeticalDSS::begin()
+  - ArithmeticalDSS::end()
+  - ArithmeticalDSS::rbegin()
+  - ArithmeticalDSS::rend()  
+- accessors to ending and leaning points
+  - ArithmeticalDSS::back() (equal to the first point of the range, ie. * ArithmeticalDSS::begin())
+  - ArithmeticalDSS::front() (equal to the last point of the range, ie. * - - ArithmeticalDSS::end()) 
+  - ArithmeticalDSS::Uf()
+  - ArithmeticalDSS::Ul()
+  - ArithmeticalDSS::Lf()
+  - ArithmeticalDSS::Ll()
+- helpers
+  - ArithmeticalDSS::negate()
+  - ArithmeticalDSS::isInDSS() (called in ArithmeticalDSS::operator())
+
+\note Note that the first lower leaning point, 
+the last lower leaning point and the first (or last) upper leaning points 
+are always clockwise-oriented. 
+In other words, with respect to the orientation of the bounding DSL 
+(and its parameters \f$ a \f$ and \f$ b \f$),
+the lower leaning points are always on the left, 
+while the upper leaning points are always on the right 
+of the bounding DSL. This invariant is an important feature of ArithmeticalDSL and ArithmeticalDSS
+that may be used to link DSS leaning points and convex hull vertices in a convex part. It is used in the computation 
+of the \b Faithful \b Polygon (FP)  (see Roussillon and Sivignon, 2011  \cite RoussillonSivignonPR2011). 
+
+\subsection moduleArithDSSReco-DSS-Ctors Different ways of constructing DSSs
+
+You can construct a DSS by specifying the value of all its data members. 
+Though, the resulting DSS may be not valid and you should test its validity 
+before using it. An instance of ArithmeticalDSS is valid iff the DSL parameters, 
+the ending points and the leaning points are consistent. 
+
+There are five extra ways of constructing an instance of ArithmeticalDSS:
+- from the minimal set of data members required to build the DSS in constant time.  
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtorParam
+- from two points, considered either as two upper or two lower leaning points. 
+The construction runs in logarithmic-time (because of the computation of the irreductible slope 
+and the computation of the opposite leaning points). 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtorUpperPoints
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtorLowerPoints
+- as a subsegment of a given DSL. The construction is based on the smartCH algorithm 
+and runs in logarithmic-time (see Roussillon 2014  \cite RoussillonDGCI2014). 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtorDSL 
+- as a subsegment of a greater DSS (with known leaning points). The construction is 
+based on the reversedSmartCH algorithm and runs in logarithmic-time 
+(see Roussillon 2014 \cite RoussillonDGCI2014). 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtorDSS 
+- from a sequence of simply connected points. The construction runs in linear-time, 
+using the recognition algorithm of [Debled and Reveilles, 1995 : \cite Debled_1995_ijprai], 
+which is detailed in the next section. 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSNaiveCtorRange
+
+\section moduleArithDSSReco-DSSRec Recognition of digital straight segments
+
+Debled and Reveilles \cite Debled_1995_ijprai present an algorithm to 
+incrementally recognize a naive DSS. Even if their algorithm  originally deals 
+with naive DSSs only, it is trivial to extend it to standard DSSs. 
+
+\subsection moduleArithDSSReco-DSSRec-Extension Extension
+
+Let us assume that we have a DSS \f$ S \f$. The problem consists in deciding 
+whether the union between \f$ S \f$ and a point \f$ M \f$  is still a DSS or not.
+If it is a DSS, we want to have the parameters of the bounding DSL of minimal parameters.   
+The point \f$ M \f$ is assumed to be simply connected 
+to the front (resp. back) point of \f$ S \f$.  
+ArithmeticalDSS provides two methods for this purpose: 
+ArithmeticalDSS::extendFront() (resp. ArithmeticalDSS::extendBack()), 
+based on \cite Debled_1995_ijprai.  
+
+Method ArithmeticalDSS::isExtendableFront() 
+(resp. ArithmeticalDSS::isExtendableBack()),
+tells if \f$ S \cup M \f$ is still a DSS and 
+how to update \f$ S \f$ in this case, 
+whereas method ArithmeticalDSS::extendFront() 
+(resp. ArithmeticalDSS::extendBack()) 
+calls method ArithmeticalDSS::isExtendableFront() 
+(resp. ArithmeticalDSS::isExtendableBack()) 
+and performs the update accordingly.  
+
+\note Only ArithmeticalDSS::isExtendableFront() and ArithmeticalDSS::extendFront()
+share the implementation of the recognition algorithm. ArithmeticalDSS::isExtendableBack() 
+and ArithmeticalDSS::extendBack() respectively calls ArithmeticalDSS::isExtendableFront() and 
+ArithmeticalDSS::extendFront() after having negated the DSS representation
+(see ArithmeticalDSS::negate()).   
+
+Let us consider that \f$ S \f$ and \f$ M \f$ are defined as follows: 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSUpdateInit
+
+@image html NaiveDSS8ExtInit.png "Extension to the red point"
+@image latex NaiveDSS8ExtInit.png "Extension to the red point" width=5cm
+
+The extention is simply done as follows: 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSUpdateExtension
+
+In this case, the return value is true and the resulting DSS is: 
+@image html NaiveDSS8ExtDone.png "Extended DSS"
+@image latex NaiveDSS8ExtDone.png "Extended DSS" width=5cm
+
+\subsection moduleArithDSSReco-DSSRec-Retraction Retraction
+
+ArithmeticalDSS can also perform the converse operation, ie. 
+removing the front (resp. back) point of a given DSS \f$ S \f$
+and computing the parameters of the resulting DSS
+(Feschet and Tougne \cite FeschetTougneDGCI1999, Lachaud et. al. \cite LachaudIVC2007).  
+
+For instance, the following code just undoes the previous extension: 
+@snippet geometry/curves/exampleArithmeticalDSS.cpp ArithmeticalDSSUpdateRetraction
+
+\note ArithmeticalDSS::retractFront() reverts the extension performed by ArithmeticalDSS::extendFront()
+to the front of the DSS. Conversely, ArithmeticalDSS::retractBack() reverts the extension performed 
+by ArithmeticalDSS::extendBack() to the back of the DSS. You can keep in mind the following diagram
+to remember the rationale of the methods name.   
+@image html BackFrontFigure.png "Operations applied to the back and front of a DSS"
+@image latex BackFrontFigure.png "Operations applied to the back and front of a DSS" width=5cm
+
+To sum up, we list below the update methods of ArithmeticalDSS: 
+- extension tests:
+  - ArithmeticalDSS::isExtendableFront()
+  - ArithmeticalDSS::isExtendableBack()
+- extension:
+  - ArithmeticalDSS::extendFront()
+  - ArithmeticalDSS::extendBack()
+- retraction: 
+  - ArithmeticalDSS::retractFront()
+  - ArithmeticalDSS::retractBack()
+
+\subsection moduleArithDSSReco-DSSRec-Computers NaiveDSS8Computer and StandardDSS4Computer
+ 
+ArithmeticalDSS is an arithmetical representation of the DSS primitive. 
+As we have just seen, some methods are available to update the representation 
+in some cases.  
+However, the \ref packageGeometry provides objects, called \b segment \b computers,
+ devoted to the recognition of primitives (See \ref moduleGridCurveAnalysis). 
+In this framework, ArithmeticalDSSComputer is a wrapper around ArithmeticalDSS 
+devoted to the dynamic recognition of DSSs along any sequence of points. 
+ArithmeticalDSSComputer has two aliases: NaiveDSS8Computer and StandardDSS4Computer.  
+
+As a model of CDynamicBidirectionalSegmentComputer, its main methods are: 
+- ArithmeticalDSSComputer.init()
+- iteration services
+  - ArithmeticalDSSComputer::begin()
+  - ArithmeticalDSSComputer::end()
+- extension tests:
+  - ArithmeticalDSSComputer::isExtendableFront()
+  - ArithmeticalDSSComputer::isExtendableBack()
+- extension:
+  - ArithmeticalDSSComputer::extendFront()
+  - ArithmeticalDSSComputer::extendBack()
+- retraction: 
+  - ArithmeticalDSSComputer::retractFront()
+  - ArithmeticalDSSComputer::retractBack()
+ 
+Moreover, ArithmeticalDSSComputer::primitive() returns an object of 
+type ArithmeticalDSSComputer::Primitive that is actually one of 2D DSSs. 
+
+Before using a DSS Computer, you must include the following header: 
+@snippet geometry/curves/exampleArithmeticalDSSComputer.cpp ArithmeticalDSSComputerHeader
+
+Then, you can construct a DSS computer as follows: 
+@snippet geometry/curves/exampleArithmeticalDSSComputer.cpp ArithmeticalDSSComputerStandardCtor
+
+The extension is simply done as follows: 
+@snippet geometry/curves/exampleArithmeticalDSSComputer.cpp ArithmeticalDSSComputerStandardExtension
+
+\note You don't need to provide the next point, because ArithmeticalDSSComputer can access to 
+the points by iterators. 
+
+Finally, you can get the resulting DSS as follows: 
+@snippet geometry/curves/exampleArithmeticalDSSComputer.cpp ArithmeticalDSSComputerStandardPrimitive
+
+The whole example may be found in exampleArithmeticalDSSComputer.cpp. The use of NaiveDSS8Computer
+is quite similar.
+
+\subsection moduleArithDSSReco-DSSRec-Computers3D Naive3DDSSComputer 
+
+Recognition of a 3D straight line segments is based on a projection of the 
+corresponding 3D digital curve onto three base planes. Then these projections 
+are segmented iteratively as long as at least two such 2D segmentation remains valid. 
+By valid we understand that there are no two points of 3D curve which have 
+the same projection onto a 2D plane.
+
+As a model of concepts::CForwardSegmentComputer, its main methods are: 
+- Naive3DDSSComputer.init()
+- iteration services
+  - Naive3DDSSComputer::begin()
+  - Naive3DDSSComputer::end()
+- extension tests:
+  - Naive3DDSSComputer::isExtendableFront()
+- extension:
+  - Naive3DDSSComputer::extendFront()
+ 
+Moreover, Naive3DDSSComputer::arithmeticalDSS2d( Dimension ) returns an object of 
+type Naive3DDSSComputer::ArithmeticalDSSComputer2d that is actually the current 
+2D DSS in a given projection. 
+
+Before using a 3D DSS Computer, you must include the following header: 
+@snippet geometry/curves/exampleNaive3DDSSComputer.cpp Naive3DDSSComputerHeader
+
+Then, you can construct a 3D DSS computer as follows: 
+@snippet geometry/curves/exampleNaive3DDSSComputer.cpp Naive3DDSSComputerStandardCtor
+
+The extension is simply done as follows: 
+@snippet geometry/curves/exampleNaive3DDSSComputer.cpp Naive3DDSSComputerStandardExtension
+
+\note You don't need to provide the next point, because Naive3DDSSComputer can access to 
+the points by iterators. 
+
+You can check which 2D DSS are valid as follows ( 0 - YZ, 1 - XZ, 2 - XY ): 
+@snippet geometry/curves/exampleNaive3DDSSComputer.cpp Naive3DDSSComputerStandardPrimitiveValid
+
+And access them:
+@snippet geometry/curves/exampleNaive3DDSSComputer.cpp Naive3DDSSComputerStandardPrimitive
+
+Finally to obtain the parameters of 3D DSS
+@snippet geometry/curves/exampleNaive3DDSSComputer.cpp Naive3DDSSComputerStandardParams
+
+The whole example may be found in exampleNaive3DDSSComputer.cpp.
+
+\section moduleArithDSSReco-DSSRecAppli Application of the straight line segment recognition
+
+This section contains several examples of application of straight line recognition.
+
+\subsection moduleArithDSSReco-DSSRec-Computers3DTangent Estimation of tangent direction
+
+Example below shows how to estimate tangent directions of a digital curve 
+while using Lambda Maximal Segment Tangent estimation introduced
+by Lachaud et. al. \cite LachaudIVC2007.
+
+Before using the LMST 2D estimator, you must include the following headers: 
+@snippet geometry/curves/estimation/exampleLMST2D.cpp LambdaMST2DHeader
+
+Then, you can construct estimator as follows: 
+@snippet geometry/curves/estimation/exampleLMST2D.cpp LambdaMST2DStandardCtor 
+
+Notice that by default polynomial lambda function is used. Another ones are 
+implemented in FunctorsLambdaMST.h  
+
+We need also to generate a tangential cover:
+@snippet geometry/curves/estimation/exampleLMST2D.cpp LambdaMST2DTangential 
+
+Finally, we can estimate tangent direction point-by-point:
+@snippet geometry/curves/estimation/exampleLMST2D.cpp LambdaMST2DPoint
+
+or when we want to calculate tangent directions for a range of points better 
+choice is to do this in following way:
+@snippet geometry/curves/estimation/exampleLMST2D.cpp LambdaMST2DFast
+
+
+Note that the 3D extension provides similar interface:
+
+@snippet geometry/curves/estimation/exampleLMST3D.cpp LambdaMST3DHeader
+
+@snippet geometry/curves/estimation/exampleLMST3D.cpp LambdaMST3DStandardCtor 
+
+@snippet geometry/curves/estimation/exampleLMST3D.cpp LambdaMST3DTangential 
+
+@snippet geometry/curves/estimation/exampleLMST3D.cpp LambdaMST3DPoint
+
+@snippet geometry/curves/estimation/exampleLMST3D.cpp LambdaMST3DFast
+
+Notice that both LambdaMST2D and LambdaMST3D are models of CCurveLocalGeometricEstimator.
+
+Both examples are in exampleLMST2D.cpp and exampleLMST3D.cpp
+
+*/
+
+
+
+}
+}

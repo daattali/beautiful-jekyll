@@ -1,0 +1,110 @@
+# .clang-format
+#
+# Alignment
+# ---------
+#
+# Align:
+# - fonction parameters on the open bracket,
+# - consecutive assignments,
+# - operands of binary and ternary expressions,
+# - trailing comments.
+# Don't align:
+# - consecutive declarations.
+#
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: true
+AlignOperands: true
+AlignTrailingComments: true
+AlignConsecutiveDeclarations: false
+#
+# Short statements
+# ----------------
+#
+# Forbid short
+# - blocks
+# - case labels
+# - functions
+# - if statements
+# - loops
+# on a single line.
+#
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+#
+# Line breaks
+# -----------
+#
+# Insert line breaks:
+# - before braces (Allman style),
+# - after the function definition return type only if needed (cf 80col),
+# - after template declarations,
+# - before multiline string literals,
+# - before ternary operators,
+# - constructor initializers before commas and align the commas with the colon.
+#
+# Limit the length of a line to 80 characters.
+#
+# If the constructor initializers don't fit on a line, put each initializer on
+# its own line.
+#
+# Keep empty lines at the start of blocks.
+#
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakTemplateDeclarations: true
+BreakBeforeBraces: Allman
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: true
+ColumnLimit: 80
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+KeepEmptyLinesAtTheStartOfBlocks: true
+#
+# Indentation
+# -----------
+#
+# Use 2 spaces for indentations. Don't further indent continued lines.
+# Indent in all namespaces.
+#
+AccessModifierOffset: 0
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 0
+IndentWidth: 2
+NamespaceIndentation: All
+#
+# Alignments
+# ----------
+#
+# Align pointer and reference symbol in the middle.
+#
+PointerAlignment: Middle
+#
+# Tabs and spaces
+# ------
+#
+# Put a space after opening of before closing a square bracket or a parenthesis
+# except for empty parentheses and type casts.
+# Put a space before opening parentheses only after control statement keywords
+# (for/if/while...).
+# Put a space before trailing comments (after `//`).
+#
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpacesBeforeTrailingComments: 1
+SpacesInParentheses: true
+SpacesInSquareBrackets: true
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpaceBeforeParens: ControlStatements
+SpacesInAngles: false
+TabWidth: 4
+UseTab: Never
+#
+# Other
+# -----
+#
+# Don't reorder includes
+#
+SortIncludes: false

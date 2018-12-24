@@ -1,0 +1,1043 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file   Style2DFactory.ih
+ * @author Martial Tola <http://liris.cnrs.fr/martial.tola/>
+ * @date   lundi 24 octobre 2011
+ *
+ * @brief
+ *
+ * Implementation of inline methods defined in Style2DFactory.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+namespace DGtal
+{
+  // DiscreteExteriorCalculus
+  /**
+   * Default styles.
+   */
+  struct CalculusStyle2D : public DrawableWithBoard2D
+  {
+
+      virtual void setStyle(Board2D & aBoard) const
+      {
+          aBoard.setPenColorRGBi(0,0,0);
+          aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+          aBoard.setFillColor(Color::None);
+          aBoard.setLineWidth(1);
+      }
+  };
+  // DiscreteExteriorCalculus
+
+  // KForm
+  /**
+   * Default styles.
+   */
+  struct KFormStyle2D : public DrawableWithBoard2D
+  {
+      double cmap_min;
+      double cmap_max;
+      ColorGradientPreset cmap_preset;
+      int cmap_repeat;
+
+      KFormStyle2D(const double& _cmap_min = 0, const double& _cmap_max = 0, const ColorGradientPreset& _cmap_preset = CMAP_JET, const int& _cmap_repeat = 0)
+          : DrawableWithBoard2D(), cmap_min(_cmap_min), cmap_max(_cmap_max), cmap_preset(_cmap_preset), cmap_repeat(_cmap_repeat)
+      {
+      }
+
+      virtual void setStyle(Board2D & aBoard) const
+      {
+          aBoard.setPenColorRGBi(0,0,0);
+          aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+          aBoard.setFillColorRGBi(0,0,0);
+          aBoard.setLineWidth(1);
+      }
+  };
+  // KForm
+
+  // VectorField
+  /**
+   * Default styles.
+   */
+  struct VectorFieldStyle2D : public DrawableWithBoard2D
+  {
+      double scale;
+      double epsilon;
+
+      VectorFieldStyle2D(const double& _scale = .25, const double& _epsilon = 1e-8)
+          : DrawableWithBoard2D(), scale(_scale), epsilon(_epsilon)
+      {
+      }
+
+      virtual void setStyle(Board2D& aBoard) const
+      {
+          aBoard.setPenColorRGBi(0,0,0);
+          aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+          aBoard.setFillColorRGBi(0,0,0);
+          aBoard.setLineWidth(1);
+      }
+  };
+  // VectorField
+
+
+  // AngleLinearMinimizer
+  /**
+   * Default styles.
+   */
+  struct DefaultDrawStyleCircular_AngleLinearMinimizer : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi(160,160,160);
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+      aBoard.setFillColorRGBi(220,220,220);
+      aBoard.setLineWidth(1);
+    }
+  };
+  // AngleLinearMinimizer
+
+
+  // ArithmeticalDSS
+  /**
+   * Default style for the bounding box mode.
+   */
+  struct DefaultDrawStyleBB_ArithmeticalDSS : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the DSS on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(1);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  /**
+   * Default style for the points mode.
+   */
+  struct DefaultDrawStylePoints_ArithmeticalDSS : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the DSS on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Black);
+      aBoard.setLineWidth(2);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  // ArithmeticalDSS
+
+
+  // ArithmeticalDSSComputer
+  /**
+   * Default style for the bounding box mode.
+   */
+  struct DefaultDrawStyleBB_ArithmeticalDSSComputer : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the DSS on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(1);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  /**
+   * Default style for the points mode.
+   */
+  struct DefaultDrawStylePoints_ArithmeticalDSSComputer : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the DSS on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Black);
+      aBoard.setLineWidth(2);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  // ArithmeticalDSSComputer
+
+
+  // AlphaThickSegmentComputer
+
+  /**
+   * Default style for the bounding box mode.
+   */
+  struct DefaultDrawStyleBB_AlphaThickSegmentComputer : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the AlphaThickSegmentComputer on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(5);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  
+  /**
+   * Default style for the points mode.
+   */
+  struct DefaultDrawStylePoints_AlphaThickSegmentComputer : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the AlphaThickSegmentComputer on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Black);
+      aBoard.setLineWidth(2);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  
+  // AlphaThickSegmentComputer
+
+
+  // DigitalSetBySTLSet
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_DigitalSetBySTLSet : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setFillColorRGBi(160,160,160);
+      aBoard.setPenColorRGBi(80,80,80);
+    }
+  };
+  // DigitalSetBySTLSet
+
+  // DigitalSetByAssociativeContainer
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_DigitalSetByAssociativeContainer : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setFillColorRGBi(160,160,160);
+      aBoard.setPenColorRGBi(80,80,80);
+    }
+  };
+  // DigitalSetByAssociativeContainer
+
+
+  // DigitalSetBySTLVector
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_DigitalSetBySTLVector : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setLineWidth(1);
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setFillColorRGBi(160,160,160);
+      aBoard.setPenColorRGBi(80,80,80);
+    }
+  };
+  // DigitalSetBySTLVector
+
+
+  // FP
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_FP : public DrawableWithBoard2D
+  {
+    /**
+     * Drawing method.
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // Set board style
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(2);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  // FP
+
+
+  // FreemanChain
+  struct DefaultDrawStyleGrid_FreemanChain : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setLineStyle (LibBoard::Shape::SolidStyle );
+      aBoard.setFillColor(Color::None);
+    }
+  };
+
+  struct DefaultDrawStyleInterGrid_FreemanChain : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setLineStyle (LibBoard::Shape::SolidStyle );
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  // FreemanChain
+
+
+  // StabbingLineComputer
+  /**
+   * Default drawing style for StabbingLineComputer.
+   */
+  struct DefaultDrawStyle_StabbingLineComputer : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the StabbingLineComputer on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(1.5);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  // StabbingLineComputer
+
+  //StabbingCircleComputer
+  /**
+   * Default drawing style for StabbingCircleComputer.
+   */
+  struct DefaultDrawStyle_StabbingCircleComputer : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the StabbingCircleComputer on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(1.5);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+  // StabbingCircleComputer
+
+
+  //FrechetShortcut
+  /**
+   * Default drawing style for FrechetShortcut.
+   */
+  struct DefaultDrawStyle_FrechetShortcut : public DrawableWithBoard2D
+  {
+    /**
+     * Draw the FrechetShortcut on a board
+     * @param aBoard the output board where the object is drawn.
+     */
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setPenColor(Color::Red);
+      aBoard.setLineWidth(1.5);
+      aBoard.setFillColor(Color::None);
+    }
+  };
+
+  //FrechetShortcut
+
+  // GridCurve
+  // we use friend because of inner classes
+  // GridCurve
+
+
+  // HyperRectDomain
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStylePaving_HyperRectDomain : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setPenColorRGBi(160, 160, 160);
+      aBoard.setFillColorRGBi(255, 255, 255);
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setLineWidth( 1 );
+    }
+  };
+
+  /**
+   * Default style.aultDrawStyleTransparent_LatticePol
+   */
+  struct DefaultDrawStyleGrid_HyperRectDomain : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      aBoard.setPenColorRGBi(160, 160, 160);
+      aBoard.setFillColorRGBi(160, 160, 160);
+      aBoard.setLineStyle(Board2D::Shape::DashStyle);
+      aBoard.setLineWidth( 1 );
+    }
+  };
+  // HyperRectDomain
+
+
+  // ImageContainerByHashTree
+  struct DefaultDrawStyle_ImageContainerByHashTree : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aboard) const
+    {
+      aboard.setPenColorRGBi(60, 60, 60);
+      aboard.setLineStyle(Board2D::Shape::SolidStyle);
+    }
+  };
+  // ImageContainerByHashTreeaultDrawStyleTransparent_LatticePol
+
+
+  // ImageContainerBySTLVector
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_ImageContainerBySTLVector : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi(60, 60, 60);
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+    }
+  };
+  // ImageContainerBySTLVector
+
+
+  // KhalimskyCellaultDrawStyleTransparent_LatticePol
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_KhalimskyCell : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi( 50, 50, 50 );
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+      aBoard.setFillColorRGBi( 80, 80, 80 );
+      aBoard.setLineWidth( 1 );
+    }
+  };
+  // KhalimskyCell
+
+
+  // Object
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_Object : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // line width decreased to avoid too large arrows to display adjacency.
+      aBoard.setLineWidth(0.75);
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setFillColorRGBi(160, 160, 160);
+      aBoard.setPenColorRGBi(80, 80, 80);
+    }
+  };
+  // Object
+
+  // CubicalComplex
+  /**
+   * Default style for CubicalComplex.
+   */
+  struct DefaultDrawStyle_CubicalComplex : public DrawableWithBoard2D
+  {
+    virtual void setStyle(Board2D & aBoard) const
+    {
+      // line width decreased to avoid too large arrows to display adjacency.
+      aBoard.setLineWidth(0.75);
+      aBoard.setLineStyle(Board2D::Shape::SolidStyle);
+      aBoard.setFillColorRGBi(200, 200, 200);
+      aBoard.setPenColorRGBi(0, 0, 0);
+    }
+  };
+  // CubicalComplex
+
+
+  // PointVector
+  /**
+   * Default styles.
+   */
+  struct DefaultDrawStylePaving_PointVector : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi(160,160,160);
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+      aBoard.setFillColorRGBi(220,220,220);
+      aBoard.setLineWidth(1);
+    }
+  };
+
+  /**
+   *  Style based in grid representation.
+   */
+  struct DefaultDrawStyleGrid_PointVector : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColor(Color::Black);
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+    }
+  };
+  // PointVector
+
+
+  // Preimage2D
+  // Preimage2D
+
+
+  // SignedKhalimskyCell
+  /**
+   * Default style.
+   */
+  struct DefaultDrawStyle_SignedKhalimskyCell : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi( 50, 50, 50 );
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+      aBoard.setFillColorRGBi( 80, 80, 80 );
+      aBoard.setLineWidth( 1 );
+    }
+  };
+  // SignedKhalimskyCell
+
+  // LatticePolytope2D
+  struct DefaultDrawStyleFilled_LatticePolytope2D : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi( 30, 30, 30 );
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+      aBoard.setFillColorRGBi( 200, 200, 200 );
+      aBoard.setLineWidth( 2 );
+    }
+  };
+  struct DefaultDrawStyleTransparent_LatticePolytope2D : public DrawableWithBoard2D
+  {
+    virtual void setStyle( Board2D & aBoard ) const
+    {
+      aBoard.setPenColorRGBi( 30, 30, 30 );
+      aBoard.setLineStyle( Board2D::Shape::SolidStyle );
+      aBoard.setFillColor( DGtal::Color::None ); //200, 200, 200 );
+      aBoard.setLineWidth( 2 );
+    }
+  };
+  // LatticePolytope2D
+
+
+  // StraightLineFrom2Points
+  // StraightLineFrom2Points
+
+
+}
+
+
+//
+
+// DiscreteExteriorCalculus
+template <DGtal::Dimension dimEmbedded, DGtal::Dimension dimAmbient, typename TLinearAlgebraBackend, typename TInteger>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::DiscreteExteriorCalculus<dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger>& /*object*/, std::string /*mode*/ = "" )
+{
+  return new DGtal::CalculusStyle2D();
+}
+// DiscreteExteriorCalculus
+
+// KForm
+template <typename TCalculus, DGtal::Order order, DGtal::Duality duality>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::KForm<TCalculus, order, duality>& object, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  boost::ignore_unused_variable_warning( object );
+  return new DGtal::KFormStyle2D();
+}
+// KForm
+
+// VectorField
+template <typename TCalculus, DGtal::Duality duality>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::VectorField<TCalculus, duality>& /*object*/, std::string /*mode*/ = "" )
+{
+  return new DGtal::VectorFieldStyle2D();
+}
+// VectorField
+
+// AngleLinearMinimizer
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::AngleLinearMinimizer & /*a*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  //only one style actually...
+  return new DGtal::DefaultDrawStyleCircular_AngleLinearMinimizer;
+}
+// AngleLinearMinimizer
+
+// ArithmeticalDSS
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency> & /*a*/, std::string mode = "" )
+{
+  if ( ( mode == "" ) || ( mode == "BoundingBox" ) )
+    return new DGtal::DefaultDrawStyleBB_ArithmeticalDSS;
+  else // mode == "Points"
+    return new DGtal::DefaultDrawStylePoints_ArithmeticalDSS;
+}
+// ArithmeticalDSS
+
+// ArithmeticalDSSComputer
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::ArithmeticalDSSComputer<TIterator,TInteger,connectivity> & /*a*/, std::string mode = "" )
+{
+  if ( ( mode == "" ) || ( mode == "BoundingBox" ) )
+    return new DGtal::DefaultDrawStyleBB_ArithmeticalDSSComputer;
+  else // mode == "Points"
+    return new DGtal::DefaultDrawStylePoints_ArithmeticalDSSComputer;
+}
+// ArithmeticalDSSComputer
+
+
+// AlphaThickSegmentComputer
+template <typename TInputPoint, typename TConstIterator>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::AlphaThickSegmentComputer< TInputPoint, TConstIterator> & /*a*/, std::string mode = "" )
+{
+  if ( ( mode == "" ) || ( mode == "BoundingBox" ) )
+    return new DGtal::DefaultDrawStyleBB_AlphaThickSegmentComputer;
+  else // mode == "Points"
+    return new DGtal::DefaultDrawStylePoints_AlphaThickSegmentComputer;
+}
+// AlphaThickSegmentComputer
+
+
+// CircleFrom2Points
+template <typename TPoint>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::CircleFrom2Points<TPoint> & /*cf2p*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// CircleFrom2Points
+
+
+// CircleFrom3Points
+template <typename TPoint>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::CircleFrom3Points<TPoint> & /*cf3p*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// CircleFrom3Points
+
+
+// DigitalSetBySTLSet
+template<typename Domain, typename Compare>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::DigitalSetBySTLSet<Domain, Compare> & /*s*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_DigitalSetBySTLSet;
+}
+// DigitalSetBySTLSet
+
+// DigitalSetByAssociativeContainer
+template<typename Domain, typename Container>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & /*s*/,
+                                         std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_DigitalSetByAssociativeContainer;
+}
+// DigitalSetBySTLSet
+
+// DigitalSetBySTLVector
+template<typename Domain>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::DigitalSetBySTLVector<Domain> & /*v*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_DigitalSetBySTLVector;
+}
+// DigitalSetBySTLVector
+
+
+// FP
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::FP<TIterator,TInteger,connectivity> & /*fp*/,
+                                         std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DefaultDrawStyle_FP;
+}
+// FP
+
+
+// FreemanChain
+template <typename TInteger>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::FreemanChain<TInteger> & /*f*/,
+                                         std::string mode = "" )
+{
+  if ( ( mode == "" ) || ( mode == "Grid" ) )
+    return new DGtal::DefaultDrawStyleGrid_FreemanChain;
+  else
+    return new DGtal::DefaultDrawStyleInterGrid_FreemanChain;
+}
+// FreemanChain
+
+
+// StabbingLineComputer
+template <typename TConstIterator>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::StabbingLineComputer<TConstIterator> & /*g*/,
+                                         std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_StabbingLineComputer;
+}
+// StabbingLineComputer
+
+// StabbingCircleComputer
+template <typename TConstIterator>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::StabbingCircleComputer<TConstIterator> & /*g*/,
+           std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_StabbingCircleComputer;
+}
+// StabbingCircleComputer
+
+// // FrechetShortcut
+template <typename TIterator, typename TInteger>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::FrechetShortcut<TIterator,TInteger> & /*f*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_FrechetShortcut;
+}
+// // FrechetShortcut
+
+
+
+// GridCurve
+template <typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::GridCurve<TKSpace> & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// GridCurve
+
+// SCellsRange
+template <typename TIterator, typename TSCell>
+DGtal::DrawableWithBoard2D* 
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::Identity, TSCell> & /*object*/, 
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// SCellsRange
+
+// PointsRange
+template <typename TIterator, typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::SCellToPoint<TKSpace>, typename TKSpace::Point> & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// PointsRange
+
+// MidPointsRange
+template <typename TIterator, typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::CanonicSCellEmbedder<TKSpace>,
+             typename TKSpace::Space::RealPoint> & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DrawableWithBoard2D;
+}
+// MidPointsRange
+
+// ArrowsRange
+template <typename TIterator, typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::SCellToArrow<TKSpace>,
+             std::pair<typename TKSpace::Point, typename TKSpace::Vector> > & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// ArrowsRange
+
+// InnerPointsRange
+template <typename TIterator, typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::SCellToInnerPoint<TKSpace>, typename TKSpace::Point> & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// InnerPointsRange
+
+// OuterPointsRange
+template <typename TIterator, typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::SCellToOuterPoint<TKSpace>, typename TKSpace::Point> & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DrawableWithBoard2D;
+}
+// OuterPointsRange
+
+// IncidentPointsRange
+template <typename TIterator, typename TKSpace>
+DGtal::DrawableWithBoard2D*
+defaultStyle(const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::SCellToIncidentPoints<TKSpace>,
+             std::pair<typename TKSpace::Point, typename TKSpace::Point> > & /*object*/,
+             std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// IncidentPointsRange
+
+// HyperRectDomain
+template<typename TSpace>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::HyperRectDomain<TSpace> & /*h*/, std::string mode = "" )
+{
+  if ( ( mode == "" ) || ( mode == "Both" ) || ( mode == "Grid" ) )
+    return new DGtal::DefaultDrawStyleGrid_HyperRectDomain;
+  else // mode == "Paving"
+    return new DGtal::DefaultDrawStylePaving_HyperRectDomain;
+}
+// HyperRectDomain
+
+
+// ImageContainerByHashTree
+template <typename Domain, typename Value, typename HashKey  >
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::experimental::ImageContainerByHashTree<Domain, Value, HashKey > & /*icbht*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_ImageContainerByHashTree;
+}
+// ImageContainerByHashTree
+
+
+// ImageContainerBySTLVector
+template <typename D, typename V>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::ImageContainerBySTLVector<D, V> & /*icbsv*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DefaultDrawStyle_ImageContainerBySTLVector;
+}
+// ImageContainerBySTLVector
+
+
+// KhalimskyCell
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::KhalimskyCell<dim, TInteger> & /*k*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_KhalimskyCell;
+}
+// KhalimskyCell
+
+// KhalimskyPreCell
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::KhalimskyPreCell<dim, TInteger> & /*k*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_KhalimskyCell;
+}
+// KhalimskyPreCell
+
+// Object
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::Object<TDigitalTopology, TDigitalSet> & /*o*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_Object;
+}
+// Object
+
+// CubicalComplex
+template < typename TKSpace, 
+           typename TCellContainer >
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::CubicalComplex<TKSpace, TCellContainer> & /*o*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DefaultDrawStyle_CubicalComplex;
+}
+// CubicalComplex
+
+
+// PointVector
+template<DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::PointVector<dim, TComponent, TContainer> & /*p*/, std::string mode = "")
+{
+  if ( ( mode == "" ) || ( mode == "Paving" ) )
+    return new DGtal::DefaultDrawStylePaving_PointVector;
+  else // mode == "Grid"
+    return new DGtal::DefaultDrawStyleGrid_PointVector;
+}
+// PointVector
+
+
+// Preimage2D
+template <typename Shape>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::Preimage2D<Shape> & /*p*/, std::string mode = "")
+{
+  boost::ignore_unused_variable_warning(mode);
+  return new DGtal::DrawableWithBoard2D;
+}
+// Preimage2D
+
+
+// SignedKhalimskyCell
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::SignedKhalimskyCell<dim, TInteger> & /*sk*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DefaultDrawStyle_SignedKhalimskyCell;
+}
+// SignedKhalimskyCell
+
+// SignedKhalimskyPreCell
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::SignedKhalimskyPreCell<dim, TInteger> & /*sk*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DefaultDrawStyle_SignedKhalimskyCell;
+}
+// SignedKhalimskyOreCell
+
+// StraightLineFrom2Points
+template <typename TPoint>
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::StraightLineFrom2Points<TPoint> & /*slf2p*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return new DGtal::DrawableWithBoard2D;
+}
+// StraightLineFrom2Points
+
+// LatticePolytope2D
+template < typename TSpace, typename TSequence>
+inline
+DGtal::DrawableWithBoard2D*
+defaultStyle( const DGtal::LatticePolytope2D<TSpace,TSequence> & /*cip*/,
+              std::string mode = "" )
+{
+  if ( ( mode == "" ) || ( mode == "Transparent" ) )
+    return new DGtal::DefaultDrawStyleTransparent_LatticePolytope2D;
+  else // "Filled"
+    return new DGtal::DefaultDrawStyleFilled_LatticePolytope2D;
+}
+// LatticePolytope2D
+
+//
+
+
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::CustomStyle & /*cs*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return 0;
+}
+
+inline
+DGtal::DrawableWithBoard2D* defaultStyle(const DGtal::SetMode & /*sm*/, std::string mode = "" )
+{
+  boost::ignore_unused_variable_warning( mode );
+  return 0;
+}
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

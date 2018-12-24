@@ -1,0 +1,149 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *·
+ **/
+
+/**
+ * @file
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/21/04
+ *
+ * Implementation of inline methods defined in ExactLpSeparableMetric.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+//------------------------------------------------------------------------------
+template <typename TM>
+inline
+typename DGtal::SeparableMetricAdapter<TM>::Abscissa 
+DGtal::SeparableMetricAdapter<TM>::binarySearchHidden(const Point &u,
+                                                      const Point &v,
+                                                      const typename Point::UnsignedComponent dim,
+                                                      const Point &lower,
+                                                      const Point &upper) const
+{
+  //Recurrence stop
+  if ( (upper[dim] - lower[dim]) <= NumberTraits<Abscissa>::ONE)
+  {
+    //testing upper
+    Value du = myMetric->operator()(u, upper);
+    Value dv = myMetric->operator()(v, upper);
+    if (du < dv)
+      return upper[dim];
+    else
+      return lower[dim];
+  }
+  
+  Point mid = lower;
+  mid[dim] = (lower[dim] + upper[dim])/2;
+  
+  Value duUpdated = myMetric->operator()(u, mid);
+  Value dvUpdated = myMetric->operator()(v, mid);
+  
+  //Recursive call
+  if ( duUpdated < dvUpdated)
+    return binarySearchHidden(u,v,dim,mid,upper);
+  else
+    return binarySearchHidden(u,v,dim,lower,mid);
+  
+}
+//------------------------------------------------------------------------------
+template <typename TM>
+inline
+bool 
+DGtal::SeparableMetricAdapter<TM>::hiddenBy(const Point &u,
+                                            const Point &v,
+                                            const Point &w,
+                                            const Point &startingPoint,
+                                            const Point &endPoint,
+                                            const typename Point::UnsignedComponent dim) const
+{
+  //Abscissa of voronoi edges
+  Abscissa uv,vw;
+  Value dv,dw,du,ddv,ddw;
+
+  //checking distances to lower bound
+  du = myMetric->operator()(u, startingPoint);
+  dv = myMetric->operator()(v, startingPoint);
+  dw = myMetric->operator()(w, startingPoint);
+  
+  //Precondition of binarySearchHidden is true
+  if (du < dv )
+    {
+      uv = binarySearchHidden(u,v,dim,startingPoint,endPoint);
+      if (dv < dw)
+        {
+          vw = binarySearchHidden(v,w,dim,startingPoint,endPoint); //precondition
+          return (uv > vw);
+        }
+
+      if (dw > dv)
+        return true; 
+      else
+        {
+          //check if uv + 1 is stricly in W
+          //first, optimisation
+          if (uv == endPoint[dim]) return true;
+          
+          //distances at uv+1
+          Point p = startingPoint;
+          p[dim] = uv + 1;
+          ddv = myMetric->operator()(v, p);
+          ddw = myMetric->operator()(w, p);
+          
+          if (ddw < ddv)
+            return true;
+          else
+            return false;
+        }
+    }
+  else  // du >= dv
+    {
+      if (dv <= dw)
+        return false;
+      else
+        return true;
+    }
+}
+//------------------------------------------------------------------------------
+template <typename TM>
+inline
+void
+DGtal::SeparableMetricAdapter<TM>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[SeparableMetricAdapter] metric="<<myMetric;
+}
+//------------------------------------------------------------------------------
+template <typename TM>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const SeparableMetricAdapter<TM> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}

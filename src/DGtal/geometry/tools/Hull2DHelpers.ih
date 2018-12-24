@@ -1,0 +1,493 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Hull2DHelpers.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/12/02
+ *
+ * Implementation of inline methods defined in Hull2DHelpers.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/kernel/PointVector.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+namespace DGtal
+{
+  namespace functions
+  {
+    namespace Hull2D
+    {
+      
+      //----------------------------------------------------------------------------
+      template <typename Stack, typename Point, typename Predicate>
+      inline
+      void updateHullWithStack(Stack& aStack, const Point& aNewPoint, const Predicate& aPredicate)
+      {
+        BOOST_CONCEPT_ASSERT(( concepts::CStack<Stack> ));
+        
+        Point Q = aStack.top();
+        aStack.pop();
+        if (aStack.size() != 0)
+          {
+            Point P = aStack.top();
+            while ( ( !aPredicate(P,Q,aNewPoint) )&&(aStack.size() != 0) )
+              {
+                //remove Q
+                Q = P;
+                aStack.pop();
+                if (aStack.size() != 0)
+                  P = aStack.top();
+              }
+            //add Q
+            aStack.push(Q);
+          }
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename Stack, typename Point, typename Predicate>
+      inline
+      void updateHullWithAdaptedStack(Stack aStack, const Point& aNewPoint, const Predicate& aPredicate)
+      {
+        updateHullWithStack( aStack, aNewPoint, aPredicate );
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename Stack, typename ForwardIterator, typename Predicate>
+      inline
+      void buildHullWithStack(Stack& aStack,
+                              const ForwardIterator& itb, const ForwardIterator& ite,
+                              const Predicate& aPredicate)
+      {
+        BOOST_CONCEPT_ASSERT(( concepts::CStack<Stack> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        
+        //for all points
+        for(ForwardIterator it = itb; it != ite; ++it)
+          {
+            if(aStack.size() < 2)
+              {
+                aStack.push( *it );
+              }
+            else
+              {
+                //we update the hull so that the predicate returns 'true'
+                //for each sets of three consecutive points
+                updateHullWithStack(aStack, *it, aPredicate);
+                //add new point
+                aStack.push( *it );
+              }
+          }//end for all points
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename Stack, typename ForwardIterator, typename Predicate>
+      inline
+      void buildHullWithAdaptedStack(Stack aStack,
+                                     const ForwardIterator& itb, const ForwardIterator& ite,
+                                     const Predicate& aPredicate)
+      {
+        buildHullWithStack( aStack, itb, ite, aPredicate );
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename ForwardIterator, typename OutputIterator, typename Predicate>
+      inline
+      void openGrahamScan(const ForwardIterator& itb, const ForwardIterator& ite,
+                          OutputIterator res, const Predicate& aPredicate)
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        typedef typename IteratorCirculatorTraits<ForwardIterator>::Value Point;
+        BOOST_CONCEPT_ASSERT(( boost_concepts::IncrementableIteratorConcept<OutputIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::WritableIteratorConcept<OutputIterator,Point> ));
+        
+        //container
+        std::deque<Point> container;
+        
+        //hull computation
+        buildHullWithAdaptedStack( backStack(container), itb, ite, aPredicate );
+        
+        //Copy
+        std::copy(container.begin(), container.end(), res);
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename ForwardIterator, typename OutputIterator, typename Predicate>
+      inline
+      void closedGrahamScanFromVertex(const ForwardIterator& itb, const ForwardIterator& ite,
+                                      OutputIterator res, const Predicate& aPredicate)
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        typedef typename IteratorCirculatorTraits<ForwardIterator>::Value Point;
+        BOOST_CONCEPT_ASSERT(( boost_concepts::IncrementableIteratorConcept<OutputIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::WritableIteratorConcept<OutputIterator,Point> ));
+        
+        //container
+        std::deque<Point> container;
+        
+        //hull computation
+        buildHullWithAdaptedStack( backStack(container), itb, ite, aPredicate);
+        
+        //we update the hull to take into account the starting point
+        if ( container.size() > 3 )
+          updateHullWithAdaptedStack( backStack(container), container.front(), aPredicate );
+        
+        std::copy(container.begin(), container.end(), res);
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename ForwardIterator, typename OutputIterator, typename Predicate>
+      inline
+      void closedGrahamScanFromAnyPoint(const ForwardIterator& itb, const ForwardIterator& ite,
+                                        OutputIterator res, const Predicate& aPredicate)
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        typedef typename IteratorCirculatorTraits<ForwardIterator>::Value Point;
+        BOOST_CONCEPT_ASSERT(( boost_concepts::IncrementableIteratorConcept<OutputIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::WritableIteratorConcept<OutputIterator,Point> ));
+        
+        //container
+        std::deque<Point> container;
+        
+        //hull computation
+        buildHullWithAdaptedStack( backStack(container), itb, ite, aPredicate);
+        
+        //we update the hull to take into account the starting point
+        if ( container.size() > 3 )
+          {
+            updateHullWithAdaptedStack( backStack(container), container.front(), aPredicate );
+            //we move forward the starting point
+            container.push_back( container.front() );
+            container.pop_front();
+          }
+        
+        //while the last two points and the first one are not correctly oriented, we update the hull
+        while ( (container.size() > 3)&&
+                !aPredicate( *boost::next(container.rbegin()), container.back(), container.front() ) )
+          {
+            updateHullWithAdaptedStack( backStack(container), container.front(), aPredicate );
+            //we move forward the starting point
+            container.push_back( container.front() );
+            container.pop_front();
+          }
+        
+        std::copy(container.begin(), container.end(), res);
+      }
+      
+      
+      //----------------------------------------------------------------------------
+      template <typename ForwardIterator,
+                typename OutputIterator,
+                typename Predicate,
+                typename PolarComparator >
+      inline
+      void grahamConvexHullAlgorithm(const ForwardIterator& itb, const ForwardIterator& ite,
+                                     OutputIterator res,
+                                     const Predicate& aPredicate,
+                                     PolarComparator& aPolarComparator)
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        typedef typename IteratorCirculatorTraits<ForwardIterator>::Value Point;
+        BOOST_CONCEPT_ASSERT(( boost_concepts::IncrementableIteratorConcept<OutputIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::WritableIteratorConcept<OutputIterator,Point> ));
+        BOOST_CONCEPT_ASSERT(( concepts::CPolarPointComparator2D<PolarComparator> ));
+        
+        if ( itb != ite )
+          {
+            //container
+            std::vector<Point> container;
+            std::copy( itb, ite, std::back_inserter( container ) );
+          
+            //find an extremal point
+            //NB: we choose the point of greatest x-coordinate
+            //so that the sort step (by a polar comparator)
+            //returns a weakly externally visible polygon
+            typename std::vector<Point>::iterator itMax
+              = std::max_element( container.begin(), container.end() );
+          
+            //sort around this point
+            aPolarComparator.setPole( *itMax );
+            std::sort( container.begin(), container.end(), aPolarComparator );
+          
+            //scan from an extremal point
+            closedGrahamScanFromVertex( container.begin(), container.end(), res, aPredicate );
+          }
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename ForwardIterator,
+                typename OutputIterator,
+                typename Predicate>
+      inline
+      void grahamConvexHullAlgorithm(const ForwardIterator& itb, const ForwardIterator& ite,
+                                     OutputIterator res,
+                                     const Predicate& aPredicate)
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        typedef typename IteratorCirculatorTraits<ForwardIterator>::Value Point;
+        
+        //define a default comparator
+        typedef typename Point::Coordinate Integer;
+        typedef AvnaimEtAl2x2DetSignComputer<Integer> DetComputer;
+        typedef functors::PolarPointComparatorBy2x2DetComputer<Point, DetComputer> Comparator;
+        Comparator comparator;
+        
+        //call overloaded version
+        grahamConvexHullAlgorithm( itb, ite, res, aPredicate, comparator );
+      }
+      
+      //----------------------------------------------------------------------------
+      template <typename ForwardIterator,
+                typename OutputIterator,
+                typename Predicate >
+      inline
+      void andrewConvexHullAlgorithm(const ForwardIterator& itb, const ForwardIterator& ite,
+                                     OutputIterator res,
+                                     const Predicate& aPredicate )
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> ));
+        typedef typename IteratorCirculatorTraits<ForwardIterator>::Value Point;
+        BOOST_CONCEPT_ASSERT(( boost_concepts::IncrementableIteratorConcept<OutputIterator> ));
+        BOOST_CONCEPT_ASSERT(( boost_concepts::WritableIteratorConcept<OutputIterator,Point> ));
+        
+        if ( itb != ite )
+          {
+            //containers
+            std::vector<Point> container;
+            std::copy( itb, ite, std::back_inserter( container ) );
+            std::vector<Point> upperHull, lowerHull;
+          
+            //sort according to the x-coordinate
+            std::sort( container.begin(), container.end() );
+          
+            //lower hull computation
+            openGrahamScan( container.begin(), container.end(), std::back_inserter(lowerHull), aPredicate );
+          
+            //upper hull computation
+            openGrahamScan( container.rbegin(), container.rend(), std::back_inserter(upperHull), aPredicate );
+          
+            //lower hull output
+            typename std::vector<Point>::iterator lowerHullStart = lowerHull.begin();
+            if ( lowerHull.front() == upperHull.back() )
+              lowerHullStart++;
+            std::copy( lowerHullStart, lowerHull.end(), res );
+          
+            //upper hull output
+            typename std::vector<Point>::iterator upperHullStart = upperHull.begin();
+            if ( lowerHull.back() == upperHull.front() )
+              upperHullStart++;
+            std::copy( upperHullStart, upperHull.end(), res );
+          }
+      }
+      
+      
+      
+      template <typename ForwardIterator>
+      inline
+      double computeHullThickness(const ForwardIterator &itb, 
+                                  const ForwardIterator &ite,
+                                  const ThicknessDefinition &def)
+      {
+        typedef typename std::iterator_traits<ForwardIterator>::value_type TInputPoint;
+        TInputPoint p, q, r;
+        return computeHullThickness(itb, ite, def, p, q, r);
+      }
+
+
+      template <typename ForwardIterator,
+                typename TInputPoint>
+      inline
+      double computeHullThickness(const ForwardIterator &itb, 
+                                  const ForwardIterator &ite,
+                                  const ThicknessDefinition &def, 
+                                  TInputPoint& antipodalEdgeP,
+                                  TInputPoint& antipodalEdgeQ,
+                                  TInputPoint& antipodalVertexR){
+        struct WrapIt{
+          WrapIt(const ForwardIterator &b, const ForwardIterator &e): myB(b), myE(e),
+                      mySize(std::distance(b, e)){}
+          TInputPoint operator[](unsigned int i){
+            unsigned int j = i%(mySize);
+            return *(myB+j);
+          }
+          ForwardIterator myB;
+          ForwardIterator myE;
+          unsigned int mySize;
+        };
+        WrapIt aConvexHull(itb, ite);
+        double resThickness = std::numeric_limits<double>::max();
+        unsigned int i = 0;
+        unsigned int j = 1;
+        unsigned int size = aConvexHull.mySize;
+        if(size<3)
+          {
+          if(size>0)
+            {
+              antipodalEdgeP = aConvexHull[0];
+              antipodalEdgeQ = aConvexHull[size==1?0:1];
+              antipodalVertexR = aConvexHull[size==1?0:1];
+            }
+          return 0.0;
+          }
+        
+        while(getAngle(aConvexHull[i], aConvexHull[i+1], aConvexHull[j], aConvexHull[j+1]) < M_PI ){
+          j++;
+        }
+        double th = getThicknessAntipodalPair(aConvexHull[i], aConvexHull[i+1], aConvexHull[j], def);
+        if(th<resThickness){
+          resThickness = th;
+          antipodalVertexR = aConvexHull[j];
+          antipodalEdgeP = aConvexHull[i];
+          antipodalEdgeQ = aConvexHull[i+1];
+        }
+        i++;
+        while(i < size){        
+          if(getAngle(aConvexHull[i], aConvexHull[i+1], 
+                      aConvexHull[j], aConvexHull[j+1])<M_PI){
+            j++;
+          }else{            
+            th = getThicknessAntipodalPair(aConvexHull[i], aConvexHull[i+1], 
+                                           aConvexHull[j], def);
+            if(th<resThickness){
+              resThickness = th;
+              antipodalVertexR = aConvexHull[j];
+              antipodalEdgeP = aConvexHull[i];
+              antipodalEdgeQ = aConvexHull[i+1];
+            }
+            if(getAngle(aConvexHull[i], aConvexHull[i+1], 
+                        aConvexHull[j], aConvexHull[j+1])==M_PI){
+              
+              th = getThicknessAntipodalPair(aConvexHull[i], aConvexHull[i+1], 
+                                             aConvexHull[j+1], def);
+              if(th<resThickness){
+                resThickness = th;
+                antipodalVertexR = aConvexHull[j+1];
+                antipodalEdgeP = aConvexHull[i];
+                antipodalEdgeQ = aConvexHull[i+1];
+              }
+            }
+            i++;
+          }
+        }
+        return resThickness;
+      }
+                  
+
+      template<typename TInputPoint>
+      inline
+      double getAngle(const TInputPoint &a, const TInputPoint &b, const TInputPoint &c, const TInputPoint &d){
+        double angle1 = atan2(b[1]-a[1], b[0]-a[0]);
+        double angle2 = atan2(d[1]-c[1], d[0]-c[0]);        
+        double r =angle2-angle1;
+        return  ( r < 0) ? 2*M_PI+r :r;        
+      }
+      
+
+      template<typename TInputPoint>
+      inline
+      double getThicknessAntipodalPair(const TInputPoint &p, const TInputPoint &q,
+                                       const TInputPoint &r, const ThicknessDefinition &def){
+        bool isInside;
+        if(def == HorizontalVerticalThickness){
+          double dH = computeHProjDistance(p, q, r, isInside);
+          double dV = computeVProjDistance(p, q, r, isInside);
+          return dH > dV ? dV : dH;
+        }else{
+          return computeEuclideanDistance(p, q, r, isInside);
+        }
+      }
+      
+      template< typename TInputPoint>
+      inline
+      double
+      computeHProjDistance(const TInputPoint &a, const TInputPoint &b, const TInputPoint &c, 
+                           bool &isInside )
+      {
+        if(a[1]==b[1])
+          {
+            return std::numeric_limits<double>::max();
+          }
+        else 
+          {
+            auto k = -(a[0]-b[0])*c[1]-(b[0]*a[1]-a[0]*b[1]);
+            PointVector<2, double> p (k/static_cast<double>(b[1]-a[1]), 
+                                      static_cast<double>(c[1]));
+            isInside  = (b-a).dot(p)*(b-a).dot(p)>0;
+            return std::abs((k/static_cast<double>(b[1]-a[1])) - c[0]);
+          }
+      }      
+      
+      template< typename TInputPoint>
+      inline 
+      double
+      computeVProjDistance(const TInputPoint &a, const TInputPoint &b, 
+                           const TInputPoint &c, bool &isInside )
+      {
+        if(a[0]==b[0])
+          {
+            return std::numeric_limits<double>::max();
+          }
+        else 
+          {
+            auto k = -(b[1]-a[1])*c[0]-(b[0]*a[1]-a[0]*b[1]);
+            PointVector<2, double> p (k/static_cast<double>(a[0]-b[0]), 
+                                      static_cast<double>(c[0]));
+            isInside  = (b-a).dot(p-a)*(b-a).dot(p-a)>0;          
+            return std::abs((k/static_cast<double>(a[0]-b[0])) - c[1]);
+          }
+      }
+
+      
+    template< typename TInputPoint>
+    inline 
+    double
+    computeEuclideanDistance(const TInputPoint &a, const TInputPoint &b, const TInputPoint &c, 
+                            bool &isInside )
+    {
+      auto dy =  b[1]-a[1];
+      auto dx =  a[0]-b[0];
+      auto dc = b[0]*a[1]-a[0]*b[1];
+      isInside = (b-a).dot(c-a)*(b-a).dot(c-a)>0; 
+      return std::abs(dy*c[0]+dx*c[1]+dc)/(std::sqrt(dy*dy+dx*dx));
+    }
+
+
+      
+    } // namespace convexHull2D
+  } // namespace functions
+} // namespace DGtal
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

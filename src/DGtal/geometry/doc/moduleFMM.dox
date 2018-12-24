@@ -1,0 +1,300 @@
+/**
+ * @file moduleFMM.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/06/17
+ *
+ * Documentation file for feature moduleFMM
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleFMM nD Fast Marching Methods
+@writers Tristan Roussillon
+
+Part of the \ref packageGeometry.
+
+The Fast Marching Method (FMM for short) is a numerical technique for tracking the evolution of an expanding front
+within the level-set framework (see \cite Sethian1998 for a review).  
+If the front evolves in the normal direction at unit speed, the arrival time at a point \f$ x \f$ corresponds to 
+the distance of \f$ x \f$ to the initial front.  
+
+@image html FMM-interface.png "Arrival time and distance to the initial front"
+@image latex FMM-interface.png "Arrival time and distance to the initial front" width=5cm
+
+That is why FMM can be used to compute a (signed) distance field from an initial point set (which may be located around 
+an interface or not).   
+However, FMM can be used to other tasks: e.g. the extrapolation of a scalar field out of an interface, 
+such that it is constant on rays normal to the interface \cite Adalsteinsson1999.  
+
+[TOC]
+
+Related examples are exampleFMM2D.cpp and  exampleFMM3D.cpp.  
+
+
+\section sectmoduleFMM1 Overview
+
+Let us assume that we compute in the fundamental lattice \f$ \mathbb{Z}^n \f$ 
+the distance field from a given lattice point set. 
+The distance value of each lattice point is computed by marching out from the initial set of lattice points 
+for which the distance values are known. 
+This set is an initialization of the so-called @b accepted @b point @b set, which incrementally grows until 
+all lattice points of the computation domain have been accepted or until a stopping criterion has been met.  
+Each lattice point adjacent to one of the accepted points is
+put into the so-called @b candidate @b point @b set. 
+
+The accepted point set and the candidate point set are depicted below. See \ref sectmoduleFMM11 for details
+about how these sets are stored.
+@image html FMM-diagram.png "Upwind update of the accepted point set"
+@image latex FMM-diagram.png "Upwind update of the accepted point set" width=5cm
+
+For each candidate point, a tentative value is computed for its distance, 
+using only the values of the accepted points lying in its neighborhood. 
+This task is delegated to an instance of a model of CPointFunctor, 
+which is defined as L2FirstOrderLocalDistance by default. 
+However, you are free to use L2SecondOrderLocalDistance, for second order convergence, 
+L1LocalDistance and LInfLocalDistance for other norms. See \ref sectmoduleFMM13 for further details. 
+
+Then, the point of smallest tentative value is iteratively added to the set of
+accepted points. The tentative values of the candidates adjacent 
+to the newly added point are updated using the distance value
+of the newly added point. 
+
+
+\subsection sectmoduleFMM11 Data structures
+
+The class FMM, which implements the fast marching method, is based on two external data structures 
+and one internal data structure: 
+ 
+- External data structures: 
+
+  - an instance of a model of CDigitalSet for the accepted point set.  
+  - an instance of a model of CImage, which stores the distance values.
+
+In practice, you can choose either ImageContainerBySTLVector and DigitalSetBySTLSet 
+if you work on the whole domain: 
+
+\code
+  typedef ImageContainerBySTLVector<Domain,double> DistanceImage; 
+  typedef DigitalSetBySTLSet<Domain> AcceptedPointSet; 
+\endcode
+
+or ImageContainerBySTLMap and DigitalSetFromMap if you work on a small 
+fraction of the domain: 
+
+\code
+  typedef ImageContainerBySTLMap<Domain,double> DistanceImage; 
+  typedef DigitalSetFromMap<DistanceImage> AcceptedPointSet; 
+\endcode
+
+- Internal data structure: 
+  - a data structure for the candidate point set. Three operations are required: 
+
+    - insert a new point with its distance value, 
+    - find a given point, update its tentative value if found, 
+    - get the point of smallest tentative value, 
+   
+    This data structure is usually a min-heap data structure with back pointers from the lattice
+    to the min-heap (see \cite Sethian1998). The memory cost of such solution is however high. 
+    That is why, we implemented the candidate point set as a STL set of pairs <point, tentative value>. 
+    Instead of updating the tentative values, we insert a new pair <point, tentative value>. This 
+    solution is less memory consumming and experimentally (nearly) as efficient as the former one.  
+
+
+\subsection sectmoduleFMM13 Computing distances
+
+In a numerical point of view, the key point of the algorithm is to accurately approximate 
+the distance value of a given point from the distance value of its neighbors. 
+
+Four models of CPointFunctor can be used for this task: 
+
+- L2FirstOrderLocalDistance (default)
+- L2SecondOrderLocalDistance
+- L1LocalDistance
+- LInfLocalDistance
+  
+We detail below how L2FirstOrderLocalDistance, which is used by default,
+approximate the Euclidean distance at some point \f$ x \f$, from the available 
+distance values of the lattice points lying in the 1-neighborhood of \f$ x \f$. 
+
+The distance value is computed such that the upwind gradient of the 
+distance image is one. Let us denote by \f$ d \f$ the distance value at \f$ x \f$. 
+Moreover, for a given quadrant, let us denote by \f$ d_i \f$ the distance value of 
+the unique 1-neighbor of \f$ x \f$ along the \f$ i \f$ axis. The distance value \f$ d \f$ 
+is taken as the minimum solution of the following quadratic equation  
+over all the quadrants:
+
+\f$ \sum_{i = 1 \ldots n } ( d - d_i )^2 = 1 \f$
+
+Obviously, if the distance value \f$ d' \f$ of only one 1-neighbor is available, then \f$ d = d' \pm 1 \f$
+(\f$ + \f$ for positive distance values, \f$ - \f$ for negative ones).  
+If the distance values of two (or more than two in nD) 1-neighbors are available, the previous 
+quadratic equation should have two solutions and we take the larger one for \f$ d \f$.  
+The numerical approach implemented in L2FirstOrderLocalDistance::operator() to compute \f$ d \f$, 
+even with poor initial data or with numerical errors, is detailed in \cite OsherFedkiw2003 [p. 72-73]. 
+Note that if \f$ h \f$ is the lattice spacing, the approximation error tends to zero in \f$ O(h) \f$
+(first-order convergence). 
+
+@note This class deals with positive or negative distance values
+(0 is arbitrarily considered as a positive value, ie. starting with
+a seed of null value, you must get positive values). 
+However, the behavior is undefined when there are both positive
+and negative distance values in the neighborhood of \f$ x \f$. 
+See \ref subsectmoduleFMM31 for an example of the use of @e signed 
+distance values.
+
+\subsection sectmoduleFMM12 Basic usage 
+
+In DGtal, the class FMM is parametrized by the following types: 
+- a model of concepts::CDigitalSet (for the accepted point set)
+- a model of concepts::CImage (which stores the distance values)
+- a model of concepts::CPointPredicate (which implicitly represents the finite point set where the distance values
+  must be computed) 
+- an optional type to compute the distance value of a given point from the 
+distance values of its neighbors (a model of concepts::CPointFunctor set to L2FirstOrderLocalDistance
+by default).  
+
+After the inclusion of the following file
+
+@snippet geometry/volumes/distance/exampleFMM2D.cpp FMMHeader
+
+you may define the FMM type as follows:
+
+@snippet geometry/volumes/distance/exampleFMM2D.cpp FMMSimpleTypeDef
+
+Since an instance of FMM keeps a reference to the accepted point set, a reference to the distance image, 
+and a constant reference to the point predicate, you must be sure that these three objects have been 
+constructed and exist before constructing a FMM instance. 
+
+@snippet geometry/volumes/distance/exampleFMM2D.cpp FMMSimpleExternalData
+
+In this example, we start from one point whose distance value is zero: 
+
+@snippet geometry/volumes/distance/exampleFMM2D.cpp FMMSimpleInit
+
+We now construct a FMM instance as follows: 
+
+@snippet geometry/volumes/distance/exampleFMM2D.cpp FMMSimpleCtor
+  
+\warning Since the candidate point set is initialized at construction (see FMM::init()), you must
+construct the initial set of accepted points before the construction of the FMM instance. 
+If the accepted point set is empty at construction, a DGtal::InputException is raised. 
+
+After the call of the method FMM::compute(), the distance value of all the accepted points 
+is available in the distance image.  
+
+@snippet geometry/volumes/distance/exampleFMM2D.cpp FMMSimpleComputation
+
+\warning You must be sure that the point predicate implicitly represents a @b finite point set
+that is @b included in the image domain. Otherwise, the computation may never end or may 
+raise an execution error.  
+
+Here is the computed distance field: 
+
+@image html DTbyFMM-25.png "Approximation by the FMM of the Euclidean distance field from a given point"
+@image latex DTbyFMM-25.png "Approximation by the FMM of the Euclidean distance field from a given point" width=5cm
+
+\note The computed distance field is a (convergent) estimation. See \ref moduleVolumetric for an exact Euclidean distance transform. 
+
+The whole example may be found in exampleFMM2D.cpp. 
+
+\subsection sectmoduleFMM14 Stopping criteria
+
+The computation ends either if all the points represented by the point predicate have been accepted, 
+or if one of the following stopping criteria have been met:
+
+- the number of accepted points equals to a given threshold. 
+- the maximal distance (in absolute value) exceed a given threshold. 
+
+In order to use these stopping criteria, you must provide the corresponding thresholds at construction as follows: 
+
+\code
+
+  FMM fmm( imageDistance, initialPointSet, domain.predicate(),
+	   maximalNumberOfPoints, maximalDistance );
+
+\endcode  
+
+With the above code, we stop the computation as soon as the number of accepted points 
+equals to @e maximalNumberOfPoints or the distance value of the next candidate point 
+exceed @e maximalDistance. 
+ 
+Note that you can also perform the computation step by step. This approach may be 
+useful to better control the computation and its end. You must use FMM::computeOneStep(), 
+which takes as input and returns the last accepted point and its distance value, as follows: 
+ 
+\code
+
+  Point lastPt = Point::diagonal(0); //the last accepted point...
+  double lastDist = 0.0;             //and its distance value
+  while ( (fmm.computeOneStep( lastPt, lastDist )) 
+	  && ( /* optional stopping criterion */ ) )
+    {
+      /* you can do something before the next step */
+    }
+
+\endcode  
+
+
+\section sectmoduleFMM3 Applications 
+
+As reported in \cite Sethian1998, the Fast Marching Method has numerous applications. 
+
+\subsection subsectmoduleFMM31  Signed distance field to an interface  
+
+A signed distance field can be used to 
+
+- compute geometrical quantities by differential operators: e.g. 
+  the mean curvature at a point \f$ x \f$ of an interface 
+- implicitly evolve an interface: e.g. adding a scalar to a distance field 
+  is a way of moving each point of the interface in the normal direction with
+  a constant speed (operation known as a dilation). 
+
+In exampleFMM3D.cpp, we show how to compute a signed distance field to a @b digital @b surface. 
+
+First, we define the FMM type as follows:
+
+@snippet geometry/volumes/distance/exampleFMM3D.cpp FMMSimpleTypeDef3D
+
+Then, we construct and initialize the external data structures as follows:
+
+@snippet geometry/volumes/distance/exampleFMM3D.cpp FMMSimpleInit3D
+
+In the above snippet, we insert all the 3D lattice points incident to the 
+digital surface in the initial point set and we assign to them an 
+initial distance value (equal to \f$ 0.5 \f$ for outer points and \f$ -0.5 \f$ for inner points) 
+by merely calling the static method FMM::initFromBelsRange(). 
+
+\note There are several static methods that help to construct the initial point set
+and to provide a distance value for all the points of this set:
+ 
+- FMM::initFromPointsRange() 
+- FMM::initFromBelsRange()
+- FMM::initFromIncidentPointsRange()
+
+Finally, we instanciate the FMM class and we perform the whole computation:  
+
+@snippet geometry/volumes/distance/exampleFMM3D.cpp FMMUsage3D
+
+The computation is limited to a narrow band around the digital surface: 
+each point of the band are located at a distance less than @e maximalDistance 
+to the digital surface.  
+
+The result is displayed below. 
+
+@image html exampleFMM3D.png "Signed distance field computed in a narrow band around a digital surface. "
+@image latex exampleFMM3D.png "Signed distance field computed in a narrow band around a digital surface. " width=5cm
+
+
+
+*/
+
+}

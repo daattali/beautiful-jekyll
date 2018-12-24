@@ -1,0 +1,257 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ColorBrightnessColorMap.ih
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @date 2010/07/19
+ *
+ * Implementation of inline methods defined in ColorBrightnessColorMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+template <typename PValue, int PDefaultColor>
+inline
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::ColorBrightnessColorMap
+( const PValue & minV,  const PValue & maxV, const Color color )
+  : myMin( minV ), myMax( maxV ), myColor( color )
+{  
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+
+template <typename PValue, int PDefaultColor>
+inline
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::ColorBrightnessColorMap
+( const ColorBrightnessColorMap<PValue,PDefaultColor> & other )
+  : myMin( other.myMin ), myMax( other.myMax ), myColor( other.myColor )
+{
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+template <typename PValue, int PDefaultColor>
+inline
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::~ColorBrightnessColorMap()
+{
+}
+
+template <typename PValue, int PDefaultColor>
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor> &
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::operator=
+( const ColorBrightnessColorMap<PValue,PDefaultColor> & other )
+{
+  if ( &other != this ) {
+    myMin = other.myMin;
+    myMax = other.myMax;
+    myColor = other.myColor;
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+  }
+  return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template<typename PValue, int PDefaultColor>
+inline
+const PValue &
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::min() const
+{
+  return myMin;
+}
+
+template<typename PValue, int PDefaultColor>
+inline
+const PValue &
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::max() const
+{
+  return myMax;
+}
+
+template<typename PValue, int PDefaultColor>
+inline
+DGtal::Color
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::operator()( const PValue & value ) const
+{
+  return ColorBrightnessColorMap<PValue,PDefaultColor>::getColor( myColor, myMin, myMax, value );
+}
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename PValue, int PDefaultColor>
+inline
+void
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ColorBrightnessColorMap " 
+      << " min=" << myMin
+      << " max=" << myMax
+      << " color=(" 
+      << myColor.red() << ","
+      << myColor.green() << ","  
+      << myColor.blue() << ") "   
+      << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename PValue, int PDefaultColor>
+inline
+bool
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::isValid() const
+{
+    return true;
+}
+
+template <typename PValue, int PDefaultColor>
+inline
+DGtal::Color
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::getColor( const Color color,
+                 const PValue & min,
+                 const PValue & max,
+                 const PValue & value )
+{
+  ASSERT_MSG(min < max, "Max should be strictly greather than Min in a colormap.");
+  double h=0.0,s,v;
+  ColorBrightnessColorMap<PValue,PDefaultColor>::RGBtoHSV( h, s, v,
+            color.red(),
+            color.green(),
+            color.blue() );
+  const double range = static_cast<double>( max - min );
+  const double scale = static_cast<double>( value - min ) / range;
+  double red, green, blue;
+  ColorBrightnessColorMap<PValue,PDefaultColor>::HSVtoRGB( red, green, blue, h, s, v * scale );
+  return DGtal::Color( static_cast<unsigned char>( red * 255),
+        static_cast<unsigned char>( green * 255),
+        static_cast<unsigned char>( blue * 255) );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename PValue, int PDefaultColor>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const ColorBrightnessColorMap<PValue,PDefaultColor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - private :
+
+template <typename PValue, int PDefaultColor>
+inline
+void
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::HSVtoRGB
+( double &r, double &g, double &b,
+  const double h, const double s, const double v)
+{
+  int i;
+  double f, p, q, t;
+  if( s == 0 ) {                     // achromatic (gray)
+    r = g = b = v;
+    return;
+  }
+  i = static_cast<int>( floor( h / 60 ) );
+  f = ( h / 60 ) - i;                        // factorial part of h
+  p = v * ( 1 - s );
+  q = v * ( 1 - s * f );
+  t = v * ( 1 - s * ( 1 - f ) );
+  switch( i ) {
+  case 0:
+    r = v; g = t; b = p;
+    break;
+  case 1:
+    r = q; g = v; b = p;
+    break;
+  case 2:
+    r = p; g = v; b = t;
+    break;
+   case 3:
+     r = p; g = q; b = v;
+     break;
+  case 4:
+    r = t;  g = p; b = v;
+    break;
+  default:    // case 5:
+    r = v; g = p; b = q;
+    break;
+  }
+}
+
+template <typename PValue, int PDefaultColor>
+inline
+void
+DGtal::ColorBrightnessColorMap<PValue,PDefaultColor>::RGBtoHSV
+( double &h, double &s, double &v,
+  const unsigned char r,
+  const unsigned char g,
+  const unsigned char b )
+{
+  double min = (r<g) ? r : g;
+  if ( b < min ) min = b;
+  unsigned char max = (r>g) ? r : g;
+  if ( b > max ) max = b;
+
+  double dr = r / 255.0;
+  double dg = g / 255.0;
+  double db = b / 255.0;
+  v = max / 255.0; // (0.3*dr + 0.59*dg + 0.11*db);
+  if ( max == min ) {
+    h = 0;
+    s = 0;
+    return;
+  } else {
+    double diff = ( max - min ) / 255.0;
+    if ( max == r ) {
+      h = (dg - db ) / diff;
+    } else if ( max == g ) {
+      h = 2.0 + ( ( db - dr ) / diff );
+    } else if ( max == b ) {
+      h = 4.0 + ( ( dr - dg ) / diff );
+    }
+    h *= 60.0;
+    if ( h < 0 ) h += 360;
+    s = diff / v;
+  }
+}

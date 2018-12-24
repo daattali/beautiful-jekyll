@@ -1,0 +1,164 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file GrayscaleColorMap.ih
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @date 2010/07/19
+ *
+ * Implementation of inline methods defined in GrayscaleColorMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename Value>
+inline
+DGtal::GrayscaleColorMap<Value>::GrayscaleColorMap( const Value & aMin,
+              const Value & aMax )
+  : myMin( aMin ), myMax( aMax )
+{
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+template <typename Value>
+inline
+DGtal::GrayscaleColorMap<Value>::GrayscaleColorMap
+( const GrayscaleColorMap<Value> & other )
+  : myMin( other.myMin ), myMax( other.myMax )
+{ 
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+template <typename Value>
+inline
+DGtal::GrayscaleColorMap<Value>::~GrayscaleColorMap()
+{
+}
+
+template <typename Value>
+DGtal::GrayscaleColorMap<Value> &
+DGtal::GrayscaleColorMap<Value>::operator=
+( const GrayscaleColorMap<Value> & other )
+{
+  if ( &other != this ) {
+    myMin = other.myMin;
+    myMax = other.myMax;
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+  }
+  return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+template<typename Value>
+inline
+const Value &
+DGtal::GrayscaleColorMap<Value>::min() const
+{
+  return myMin;
+}
+
+template<typename Value>
+inline
+const Value &
+DGtal::GrayscaleColorMap<Value>::max() const
+{
+  return myMax;
+}
+
+template<typename Value>
+inline
+DGtal::Color
+DGtal::GrayscaleColorMap<Value>::operator()( const Value & value ) const
+{
+  return GrayscaleColorMap<Value>::getColor( myMin, myMax, value );
+}
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Value>
+inline
+void
+DGtal::GrayscaleColorMap<Value>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[GrayscaleColorMap " 
+      << " min=" << myMin
+      << " max=" << myMax
+      << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Value>
+inline
+bool
+DGtal::GrayscaleColorMap<Value>::isValid() const
+{
+    return true;
+}
+
+
+template <typename Value>
+inline
+DGtal::Color
+DGtal::GrayscaleColorMap<Value>::getColor( const Value & min,
+                 const Value & max,
+                 const Value & value )
+{
+  ASSERT_MSG(min < max, "Max should be strictly greather than Min in a colormap.");
+  double range = static_cast<double>( max - min );
+  double scale = static_cast<double>( value - min );
+  unsigned char gray = static_cast<unsigned char>( 255.0 * ( scale / range  ) );
+  return Color( gray );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Value>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const GrayscaleColorMap<Value> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

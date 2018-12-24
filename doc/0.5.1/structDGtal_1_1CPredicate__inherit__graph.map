@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$structDGtal_1_1CPredicate.html" title="DGtal::CPredicate\&lt;\l T, T::Surfel \&gt;" alt="" coords="49,206,193,256"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1CPredicate.html" title="DGtal::CPredicate\&lt;\l T, T::Vertex \&gt;" alt="" coords="266,206,411,256"/>
-<area shape="rect" id="node2" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; T \&gt;" alt="" coords="127,6,301,37"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1CSurfelPredicate.html" title="Aim: Defines a predicate on a surfel." alt="" coords="5,307,213,338"/>
-<area shape="rect" id="node11" href="$structDGtal_1_1CVertexPredicate.html" title="Aim: Defines a predicate on a vertex." alt="" coords="238,307,452,338"/>
-</map>

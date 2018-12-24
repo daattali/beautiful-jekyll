@@ -1,0 +1,331 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file GenericWriter.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2013/05/01
+ *
+ * Implementation of inline methods defined in GenericWriter.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#ifdef WITH_HDF5
+#include "DGtal/io/writers/HDF5Writer.h"
+#endif
+#include "DGtal/io/writers/VolWriter.h"
+#include "DGtal/io/writers/PPMWriter.h"
+#include "DGtal/io/writers/PGMWriter.h"
+#include "DGtal/io/writers/RawWriter.h"
+#ifdef WITH_MAGICK
+#include "DGtal/io/writers/MagickWriter.h"
+#endif
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+
+template < typename TContainer, int TDim, typename TValue, typename TFunctor >
+inline
+bool
+DGtal::GenericWriter<TContainer, TDim, TValue, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+						const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+  if(extension != "raw")
+    {
+      trace.error() << "Extension " << extension << " in " << TDim <<"D, not yet implemented in DGtal GenericWriter (only raw images are actually implemented in Nd using any value type)." << std::endl;
+      throw dgtalio;
+    }
+  else
+    {
+      return RawWriter<TContainer>::template exportRaw<TValue>( filename, anImage, aFunctor  );
+    }
+
+  return true;
+}
+
+template < typename TContainer, typename TValue, typename TFunctor >
+inline
+bool
+DGtal::GenericWriter<TContainer, 3, TValue, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const std::string & datasetName,
+            const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+
+  // To remove compiler warnings
+  boost::ignore_unused_variable_warning( datasetName );
+
+  if (
+#ifdef WITH_HDF5
+        extension == "h5" ||
+#endif
+        extension == "vol" || extension == "pgm3d" || extension == "pgm3D" || extension == "p3d" || extension == "pgm"
+      )
+    {
+      trace.error() << "Value type of " << extension << " file extension should be unsigned char."
+        << std::endl;
+      throw dgtalio;
+    }
+  else if ( extension == "raw" )
+    {
+      return RawWriter<TContainer>::template exportRaw<TValue>( filename, anImage, aFunctor  );
+    }
+  else
+    {
+      trace.error() << "Extension " << extension << " in 3D, not yet implemented in DGtal GenericWriter." << std::endl;
+      throw dgtalio;
+    }
+
+  return false;
+}
+
+
+
+
+template <typename TContainer, typename TFunctor>
+inline
+bool
+DGtal::GenericWriter<TContainer, 3, DGtal::uint64_t, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+
+  if ( extension == "longvol" )
+    {
+      return VolWriter<TContainer, TFunctor>::exportLongvol( filename, anImage , aFunctor );
+    }
+  else if ( extension == "raw" )
+    {
+      return RawWriter<TContainer>::template exportRaw<DGtal::uint64_t>( filename, anImage, aFunctor );
+    }
+  else
+    {
+      trace.error() << "Extension " << extension<< " with DGtal::uint64_t in 3D, not yet implemented in DGtal GenericWriter." << std::endl;
+      throw dgtalio;
+    }
+
+  return false;
+}
+
+
+
+template <typename TContainer, typename TFunctor>
+inline
+bool
+DGtal::GenericWriter<TContainer, 3, unsigned char, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const std::string & datasetName,
+            const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+
+#ifdef WITH_HDF5
+  if ( extension == "h5" )
+    {
+      return  HDF5Writer<TContainer,TFunctor>::exportHDF5_3D( filename, anImage, datasetName, aFunctor );
+    } else
+#else
+    boost::ignore_unused_variable_warning(datasetName);
+#endif
+  if ( extension == "vol" )
+    {
+      return  VolWriter<TContainer,TFunctor>::exportVol( filename, anImage, true, aFunctor );
+    }
+  else if ( extension == "pgm3d" || extension == "pgm3D" || extension == "p3d" || extension == "pgm" )
+    {
+      return   PGMWriter<TContainer, TFunctor>::exportPGM3D( filename, anImage, aFunctor );
+    }
+  else if( extension == "raw" )
+    {
+      return RawWriter< TContainer, TFunctor >::exportRaw8( filename, anImage, aFunctor );
+    }
+  else
+    {
+      trace.error() << "Extension " << extension<< " with unsigned char in 3D, not yet implemented in DGtal GenericWriter." << std::endl;
+      throw dgtalio;
+    }
+
+  return false;
+}
+
+template <typename TContainer, typename TValue, typename TFunctor>
+inline
+bool
+DGtal::GenericWriter<TContainer, 2, TValue, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+  if ( extension == "pgm" || extension == "pbm" )
+    {
+      trace.error() << "Value type of " << extension<< "  file extension should be unsigned char." << std::endl;
+      throw dgtalio;
+    }
+  else if ( extension == "raw" )
+    {
+      return RawWriter< TContainer, TFunctor >::template exportRaw<TValue>( filename, anImage, aFunctor );
+    }
+  else
+    {
+      trace.error() << "Extension " << extension<< " in 2D, not yet implemented in DGtal GenericWriter." << std::endl;
+      throw dgtalio;
+    }
+
+  return false;
+}
+
+
+
+template <typename TContainer, typename TFunctor>
+inline
+bool
+DGtal::GenericWriter<TContainer, 2, DGtal::Color, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+  if ( extension == "ppm"  )
+    {
+      return PPMWriter< TContainer, TFunctor >::exportPPM( filename, anImage, aFunctor );
+    }
+#ifdef WITH_MAGICK
+  else if ( extension == "gif"  || extension == "jpg"  || extension == "bmp" || extension == "png"   )
+    {
+      return MagickWriter< TContainer, TFunctor >::exportMagick( filename, anImage, aFunctor );
+    }
+#endif
+  else
+    {
+      trace.error() << "Extension " << extension<< " in 2D, not yet implemented in DGtal GenericWriter." << std::endl;
+      throw dgtalio;
+    }
+
+  return false;
+}
+
+template <typename TContainer, typename TValue>
+inline
+bool
+DGtal::GenericWriter<TContainer, 2, TValue, DGtal::HueShadeColorMap<TValue> >::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const DGtal::HueShadeColorMap<TValue> & aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  const std::string extension = filename.substr( filename.find_last_of(".") + 1 );
+  if ( extension == "ppm" )
+    {
+      return PPMWriter<TContainer, DGtal::HueShadeColorMap<TValue> >::exportPPM( filename, anImage, aFunctor );
+    }
+   #ifdef WITH_MAGICK
+   else if ( extension == "gif"  || extension == "jpg"  || extension == "bmp" || extension == "png"   )
+    {
+      return MagickWriter< TContainer, DGtal::HueShadeColorMap<TValue> >::exportMagick( filename, anImage, aFunctor );
+    }
+   #endif
+
+  else if ( extension == "raw" )
+    {
+      return RawWriter< TContainer, DGtal::HueShadeColorMap<TValue> >::template exportRaw<DGtal::Color>( filename, anImage, aFunctor );
+    }
+  else
+    {
+      trace.error() << "Extension " << extension<< " in 2D, not yet implemented in DGtal GenericWriter with specific HueShadeColorMap functor." << std::endl;
+      throw dgtalio;
+    }
+
+  return false;
+}
+
+
+template <typename TContainer, typename TFunctor >
+inline
+bool
+DGtal::GenericWriter<TContainer, 2, unsigned char, TFunctor>::
+exportFile( const std::string & filename,
+            const TContainer &  anImage,
+            const TFunctor &    aFunctor
+          )
+{
+  DGtal::IOException dgtalio;
+  //Getting image extension
+  const std::string extension = filename.substr(filename.find_last_of(".") + 1);
+  if ( extension == "pgm" )
+    {
+      return PGMWriter<TContainer, TFunctor>::exportPGM( filename, anImage, aFunctor );
+    }
+  else if ( extension == "raw" )
+    {
+      return RawWriter<TContainer, TFunctor>::exportRaw8( filename, anImage, aFunctor );
+    }
+  else
+    {
+      trace.error() << "Extension " << extension<< " with unsigned char in 2D, not yet implemented in DGtal GenericWriter." << std::endl;
+      throw dgtalio;
+    }
+
+  return true;
+}
+
+template <typename TImageContainer >
+inline
+bool
+DGtal::operator >> ( const TImageContainer & aContainer,
+                     const std::string & aFilename  )
+{
+  return DGtal::GenericWriter<TImageContainer>::exportFile(aFilename, aContainer);
+}
+
+
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

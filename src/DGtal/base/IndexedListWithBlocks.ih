@@ -1,0 +1,688 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file IndexedListWithBlocks.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/07/05
+ *
+ * Implementation of inline methods defined in IndexedListWithBlocks.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+///////////////////////////////////////////////////////////////////////////////
+// class IndexedListWithBlocks::Iterator
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+~Iterator()
+{}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+Iterator()
+  : myIdx( 0 ), myValues( 0 )
+{}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+Iterator( const Self & other)
+  : myIdx( other.myIdx ), myNbValues( other.myNbValues ), 
+    myValues( other.myValues ), myNext( other.myNext )
+{}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+Iterator( FirstBlock & block, unsigned int idx )
+{
+  ASSERT( idx <= block.size );
+  if ( block.size <= N+1 )
+    {
+      if ( idx <= N )
+	{
+	  myIdx = idx;
+	  myNbValues = N + 1;
+	  myValues = block.values;
+	  myNext = 0;
+	}
+      else
+	{ // end iterator.
+	  myIdx = 0;
+	  myNbValues = 0;
+	  myValues = 0;
+	  myNext = 0;
+	}
+    }
+  else
+    {
+      ASSERT( block.data.nextBlock != 0 );
+      myNext = block.data.nextBlock;
+      if ( idx < N )
+	{
+	  myIdx = idx;
+	  myNbValues = N;
+	  myValues = block.values;
+	}
+      else
+	{
+	  idx -= N;
+	  while ( idx >= M )
+	    {
+	      idx -= M;
+	      myNext = ( myNext != 0 ) ? myNext->next : 0;
+	    }
+	  if ( myNext == 0 )
+	    {
+	      myIdx = 0;
+	      myNbValues = 0;
+	      myValues = 0;
+	    }
+	  else
+	    {
+	      myIdx = idx;
+	      myNbValues = M;
+	      myValues = myNext->values;
+	    }
+	}
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Self &
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator=( const Self & other )
+{
+  if ( this != &other )
+    {
+      myIdx = other.myIdx; 
+      myNbValues = other.myNbValues; 
+      myValues = other.myValues;
+      myNext = other.myNext;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Reference
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator*() const
+{
+  ASSERT( myValues != 0 );
+  return myValues[ myIdx ];
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Pointer 
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator->() const
+{
+  ASSERT( myValues != 0 );
+  return myValues + myIdx;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Self &
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator++()
+{
+  return this->operator+=( 1 );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Self
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator++( int )
+{
+  Self tmp( *this );
+  this->operator++();
+  return tmp;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+bool
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator==( const Self & other ) const
+{
+  return ( myValues == other.myValues ) && ( myIdx == other.myIdx );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+bool
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator!=( const Self & other ) const
+{
+  return ( myValues != other.myValues ) || ( myIdx != other.myIdx );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Self &
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator+=( DifferenceType n ) 
+{
+  myIdx += n;
+  while ( myIdx >= myNbValues )
+    {
+      if ( myNext == 0 )
+	{
+	  myValues = 0;
+	  myIdx = 0;
+	  break;
+	}
+      myIdx -= myNbValues;
+      myValues = myNext->values;
+      myNbValues = M;
+      myNext = myNext->next;
+    }
+  return *this;  
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::Reference
+DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator::
+operator[]( DifferenceType n ) const
+{
+  Self tmp( *this );
+  tmp += n;
+  return *tmp;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// class IndexedListWithBlocks::ConstIterator
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+~ConstIterator()
+{}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+ConstIterator()
+  : myIdx( 0 ), myValues( 0 )
+{}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+ConstIterator( const Self & other)
+  : myIdx( other.myIdx ), myNbValues( other.myNbValues ), 
+    myValues( other.myValues ), myNext( other.myNext )
+{}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+ConstIterator( const FirstBlock & block, unsigned int idx )
+{
+  ASSERT( idx <= block.size );
+  if ( block.size <= N+1 )
+    {
+      if ( idx <= N )
+	{
+	  myIdx = idx;
+	  myNbValues = N + 1;
+	  myValues = block.values;
+	  myNext = 0;
+	}
+      else
+	{ // end iterator.
+	  myIdx = 0;
+	  myNbValues = 0;
+	  myValues = 0;
+	  myNext = 0;
+	}
+    }
+  else
+    {
+      ASSERT( block.data.nextBlock != 0 );
+      myNext = block.data.nextBlock;
+      if ( idx < N )
+	{
+	  myIdx = idx;
+	  myNbValues = N;
+	  myValues = block.values;
+	}
+      else
+	{
+	  idx -= N;
+	  while ( idx >= M )
+	    {
+	      idx -= M;
+	      myNext = ( myNext != 0 ) ? myNext->next : 0;
+	    }
+	  if ( myNext == 0 )
+	    {
+	      myIdx = 0;
+	      myNbValues = 0;
+	      myValues = 0;
+	    }
+	  else
+	    {
+	      myIdx = idx;
+	      myNbValues = M;
+	      myValues = myNext->values;
+	    }
+	}
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Self &
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator=( const Self & other )
+{
+  if ( this != &other )
+    {
+      myIdx = other.myIdx; 
+      myNbValues = other.myNbValues; 
+      myValues = other.myValues;
+      myNext = other.myNext;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Reference
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator*() const
+{
+  ASSERT( myValues != 0 );
+  return myValues[ myIdx ];
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Pointer 
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator->() const
+{
+  ASSERT( myValues != 0 );
+  return myValues + myIdx;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Self &
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator++()
+{
+  return this->operator+=( 1 );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Self
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator++( int )
+{
+  Self tmp( *this );
+  this->operator++();
+  return tmp;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+bool
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator==( const Self & other ) const
+{
+  return ( myValues == other.myValues ) && ( myIdx == other.myIdx );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+bool
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator!=( const Self & other ) const
+{
+  return ( myValues != other.myValues ) || ( myIdx != other.myIdx );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Self &
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator+=( DifferenceType n ) 
+{
+  myIdx += n;
+  while ( myIdx >= myNbValues )
+    {
+      if ( myNext == 0 )
+	{
+	  myValues = 0;
+	  myIdx = 0;
+	  break;
+	}
+      myIdx -= myNbValues;
+      myValues = myNext->values;
+      myNbValues = M;
+      myNext = myNext->next;
+    }
+  return *this;  
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::Reference
+DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator::
+operator[]( DifferenceType n ) const
+{
+  Self tmp( *this );
+  tmp += n;
+  return *tmp;
+}
+      
+
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+IndexedListWithBlocks()
+{ // default constructor of myFirstBlock is automatically called.
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+~IndexedListWithBlocks()
+{
+  clear();
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+IndexedListWithBlocks( const IndexedListWithBlocks & other )
+  : myFirstBlock( other.myFirstBlock )
+{
+  unsigned int s = N + 1; // there is one more stored value in the last block.
+  const AnyBlock* nextBlock = other.myFirstBlock.data.nextBlock;
+  AnyBlock** currentPointer = & myFirstBlock.data.nextBlock;
+  while ( s < myFirstBlock.size  )
+    {
+      *currentPointer = new AnyBlock( *nextBlock );
+      s += M;
+      currentPointer = & ( currentPointer->data.nextBlock );
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+DGtal::IndexedListWithBlocks<TValue, N, M> &
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+operator=( const IndexedListWithBlocks & other )
+{
+  if ( this != &other )
+    {
+      clear();
+      myFirstBlock = other.myFirstBlock;
+      // there is one more stored value in the last block.
+      unsigned int s = N + 1; 
+      const AnyBlock* nextBlock = other.myFirstBlock.data.nextBlock;
+      AnyBlock** currentPointer = & myFirstBlock.data.nextBlock;
+      while ( s < myFirstBlock.size  )
+        {
+          *currentPointer = new AnyBlock( *nextBlock );
+          s += M;
+          currentPointer = & ( (*currentPointer)->next );
+        }
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+void
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+clear()
+{
+  AnyBlock* nextBlock = myFirstBlock.data.nextBlock;
+  while ( nextBlock != 0 )
+    {
+      AnyBlock* ptr = nextBlock;
+      nextBlock = nextBlock->next;
+      delete ptr;
+    }
+  myFirstBlock.size = 0;
+  myFirstBlock.data.nextBlock = 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::SizeType
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+size() const
+{
+  return myFirstBlock.size;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+bool
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+empty() const
+{
+  return size() == 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::SizeType
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+max_size() const
+{
+  return SizeType( -1 ) / (2*sizeof( Value ));
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::SizeType
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+capacity() const
+{
+  return ( size() <= (N+1) )
+    ? N+1
+    : ( 1 + ( size() - 1 - N ) / M ) * M + N;
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+const typename DGtal::IndexedListWithBlocks<TValue, N, M>::Value &
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+operator[]( unsigned int idx ) const
+{
+  ASSERT( idx < size() );
+  if ( idx < N )
+    return myFirstBlock.values[ idx ];
+  else if ( ( idx == N ) && ( size() == N+1 ) )
+    return myFirstBlock.data.lastValue;
+  const AnyBlock* ptr = myFirstBlock.data.nextBlock;
+  idx -= N;
+  while ( idx >= M )
+    {
+      idx -= M;
+      ptr = ptr->next;
+    }
+  ASSERT( ptr != 0 );
+  return ptr->values[ idx ];
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Value &
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+operator[]( unsigned int idx )
+{
+  ASSERT( idx < size() );
+  if ( idx < N )
+    return myFirstBlock.values[ idx ];
+  else if ( ( idx == N ) && ( size() == N+1 ) )
+    return myFirstBlock.data.lastValue;
+  AnyBlock* ptr = myFirstBlock.data.nextBlock;
+  idx -= N;
+  while ( idx >= M )
+    {
+      idx -= M;
+      ptr = ptr->next;
+    }
+  ASSERT( ptr != 0 );
+  return ptr->values[ idx ];
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+void
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+insert( unsigned int idx, const Value & value )
+{
+  ASSERT( idx <= size() ); // end is ok.
+  myFirstBlock.insert( idx, value );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+void
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+erase( unsigned int idx )
+{
+  ASSERT( idx < size() ); // end is not ok.
+  myFirstBlock.erase( idx );
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+begin()
+{
+  return Iterator( myFirstBlock, 0 );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::Iterator
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+end()
+{
+  return Iterator( myFirstBlock, size() );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+begin() const
+{
+  return ConstIterator( myFirstBlock, 0 );
+}
+//-----------------------------------------------------------------------------
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+typename DGtal::IndexedListWithBlocks<TValue, N, M>::ConstIterator
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+end() const
+{
+  return ConstIterator( myFirstBlock, size() );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+void
+DGtal::IndexedListWithBlocks<TValue, N, M>::
+selfDisplay( std::ostream & out ) const
+{
+  if ( size() == 0 ) out << "()";
+  else
+    {
+      ConstIterator it = begin();
+      ConstIterator it_end = end();
+      ConstIterator it_last = it;
+      out << "(";
+      out << *it;
+      ++it;
+      for ( ; it != it_end; ++it )
+	{
+	  out << ( ( it_last.myValues == it.myValues ) ? ',' : ';' );
+	  out << *it;
+	  it_last = it;
+	}
+      out << ")";
+    }
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+bool
+DGtal::IndexedListWithBlocks<TValue, N, M>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TValue, unsigned int N, unsigned int M>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const IndexedListWithBlocks<TValue, N, M> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,127 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file TrueLocalEstimatorOnPoints.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/06/27
+ *
+ * Implementation of inline methods defined in TrueLocalEstimatorOnPoints.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::TrueLocalEstimatorOnPoints()
+  :myH(0.0), myBegin(), myEnd(), myFunctorPtr(0)
+{
+}
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+bool
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::isValid() const
+{
+  return ( (myH > 0)&&(myFunctorPtr != 0) );
+}
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+void
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>
+::init(const double h, 
+       const ConstIterator& itb, 
+       const ConstIterator& ite) 
+{
+  myH = h;
+  ASSERT(myH > 0); 
+  myBegin = itb;
+  myEnd = ite;
+}
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+void
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>
+::attach(ParametricShape* aShapePtr) 
+{
+  myFunctorPtr =  new ParametricShapeFunctor(aShapePtr);
+}
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::~TrueLocalEstimatorOnPoints()
+{
+  delete myFunctorPtr; 
+}
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+typename DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::Quantity 
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>
+::eval(const ConstIterator& it) const
+{ 
+  ASSERT( isValid() ); 
+  RealPoint p( *it );
+  p *= myH;
+  return myFunctorPtr->operator()(p);
+}
+
+// ------------------------------------------------------------------------
+template <typename CIt, typename PShape, typename PShapeFunctor>
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::TrueLocalEstimatorOnPoints<CIt,PShape,PShapeFunctor>
+::eval(const ConstIterator& itb, 
+       const ConstIterator& ite,
+       OutputIterator result) const
+{
+  ASSERT( isValid() ); 
+  // do-while loop to deal with the case of a whole circular range
+  if (isNotEmpty(itb, ite))
+    {
+      ConstIterator it = itb; 
+      do
+	{
+	  *result++ = eval( it );
+	  ++it; 
+	} while (it != ite);
+    }
+  return result;
+}

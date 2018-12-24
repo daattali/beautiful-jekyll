@@ -1,0 +1,645 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file StabbingCircleComputer.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/09/26
+ *
+ * Implementation of inline methods defined in StabbingCircleComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TConstIterator>
+inline
+DGtal::StabbingCircleComputer<TConstIterator>::StabbingCircleComputer()
+ :myBegin(), myEnd(), mySegPtr(new StabbingLineComputer<ConstIterator>()), 
+  myCircle(), myFlagIsInit(false)
+{
+}
+
+template <typename TConstIterator>
+inline
+DGtal::StabbingCircleComputer<TConstIterator>::StabbingCircleComputer( const Self& other )
+ :myBegin(other.myBegin), myEnd(other.myEnd), mySegPtr(other.mySegPtr), 
+  myCircle(other.myCircle), myFlagIsInit(other.myFlagIsInit)
+{
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::Self&
+DGtal::StabbingCircleComputer<TConstIterator>::operator= ( const Self& other )
+{
+  if ( this != &other )
+    {
+      myBegin = other.myBegin;
+      myEnd = other.myEnd;
+      mySegPtr = other.mySegPtr;
+      myCircle = other.myCircle;
+      myFlagIsInit = other.myFlagIsInit; 
+    }
+  return *this;
+}
+
+template <typename TConstIterator>
+inline
+DGtal::StabbingCircleComputer<TConstIterator>::~StabbingCircleComputer()
+{
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::operator==( const Self& other ) const
+{
+  if (isValid()&&other.isValid())
+    {
+      bool flag1 = true; 
+      {
+	ConstIterator first1 (myBegin); 
+	ConstIterator first2 (other.myBegin); 
+	while ( ( ( first1 != myEnd )
+		  ||( first2 != other.myEnd ) )
+		&& (flag1) )
+	  {
+	    Pair pair1( *first1 ); 
+	    Pair pair2( *first2 ); 
+	    if ( (pair1.first != pair2.first)||(pair1.second != pair2.second) ) flag1 = false;
+	    ++first1; ++first2;
+	  }
+	if ( (first1 != myEnd) || (first2 != other.myEnd) ) flag1 = false;
+      }
+      bool flag2 = true; 
+      {
+	std::reverse_iterator<ConstIterator> rfirst1(myEnd); 
+	ConstIterator first2 = other.myBegin; 
+	while ( ( ( rfirst1 != std::reverse_iterator<ConstIterator>(myBegin) )
+		  ||( first2 != other.myEnd ) )
+                && (flag2) )
+	  {
+	    Pair pair1( *rfirst1 ); 
+	    Pair pair2( *first2 ); 
+	    if ( (pair1.first != pair2.first)||(pair1.second != pair2.second) ) flag2 = false;
+	    ++rfirst1; ++first2;
+	  }
+	if ( (rfirst1 != std::reverse_iterator<ConstIterator>(myBegin)) 
+	     || (first2 != other.myEnd) ) flag2 = false;
+      }
+    
+      return ( flag1 || flag2 );
+    }
+  else 
+    {
+      return ( (!isValid()) && (!other.isValid()) );
+    }
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::operator!=( const Self& other ) const
+{
+  return !(*this == other); 
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::Reverse
+DGtal::StabbingCircleComputer<TConstIterator>::getReverse() const
+{
+  return Reverse(); 
+}
+
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::Self
+DGtal::StabbingCircleComputer<TConstIterator>::getSelf() const
+{
+  return Self(); 
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::isValid() const
+{
+  if ( mySegPtr.get() != 0 )
+    {
+      return mySegPtr->isValid(); 
+    }
+  else 
+    {
+      return false;
+    }
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::ConstIterator
+DGtal::StabbingCircleComputer<TConstIterator>::begin() const
+{
+  return myBegin;
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::ConstIterator
+DGtal::StabbingCircleComputer<TConstIterator>::end() const
+{
+  return myEnd;
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::isStraight() const
+{
+  return !myFlagIsInit; 
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::StabbingLineComputerPtr
+DGtal::StabbingCircleComputer<TConstIterator>::getStabbingLineComputerPtr() const
+{
+  return mySegPtr; 
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingCircleComputer<TConstIterator>::Circle
+DGtal::StabbingCircleComputer<TConstIterator>::getSeparatingCircle() const
+{
+  return myCircle; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Growth operations                                                        //
+
+template <typename TConstIterator>
+template <typename TIterator>
+inline
+bool 
+DGtal::StabbingCircleComputer<TConstIterator>::isCircularlySeparable(
+							     const TIterator& itb, const TIterator& ite, 
+							     const Point& aPole, 
+							     Point& Pf, Point& Pl, Point& Qf, Point& Ql)
+{
+  ASSERT( itb != ite ); 
+  TIterator it( itb ); 
+  Pair currentPair( *it ); 
+
+  //preimage of circles passing through aPole
+  CircleFrom2Points<Point> aCircle( aPole ); 
+  Preimage2D<CircleFrom2Points<Point> >
+    thePreimage( currentPair.first, currentPair.second, aCircle );
+  
+  bool isOK = true; 
+  ++it;
+  if (it != ite) 
+    { //if more than one pair
+      currentPair = *it; 
+      if ( thePreimage.addFront(currentPair.first, currentPair.second) )
+	{ //if CW oriented
+	  isOK = true; 
+	  while ( (it != ite)&&(isOK) ) 
+	    {
+	      currentPair = *it; 
+	      isOK = thePreimage.addFront(currentPair.first, currentPair.second); 
+	      ++it;
+	    }
+	}
+      else if ( thePreimage.addBack(currentPair.first, currentPair.second) )
+	{ // if CCW oriented
+	  isOK = true; 
+	  while ( (it != ite)&&(isOK) ) 
+	    {
+	      currentPair = *it; 
+	      isOK = thePreimage.addBack(currentPair.first, currentPair.second); 
+	      ++it;
+	    }
+	} else isOK = false; 
+    
+    } //if only one pair => circularly separable
+  
+  if (isOK)
+    {//points of support
+      Pf = thePreimage.Uf(); 
+      Pl = thePreimage.Ul(); 
+      Qf = thePreimage.Lf(); 
+      Ql = thePreimage.Ll();
+      return true; 
+    } else return false; 
+}
+
+template <typename TConstIterator>
+inline
+void
+DGtal::StabbingCircleComputer<TConstIterator>::init(const ConstIterator& anIt)
+{
+  myFlagIsInit = false; 
+
+  //initialize the iterators
+  myBegin = anIt; 
+  myEnd = anIt; 
+  ++myEnd; 
+
+  //...the geometrical DSS
+  mySegPtr->init( anIt ); 
+
+  //...the circle as degenerated
+  Pair aPair( *anIt); 
+  myCircle = Circle(aPair.first, aPair.first, aPair.first);
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::isExtendableFront()
+{
+  ASSERT( mySegPtr.get() != 0 ); 
+  Pair aPair( *myEnd ); 
+  Point aP( aPair.first ); 
+  Point aQ( aPair.second ); 
+  bool isOK = false; 
+
+  if (myFlagIsInit)
+    { //initialized
+
+      //predicates
+      PInCirclePred p1( myCircle ); 
+      QInCirclePred p2( myCircle ); 
+    
+      if ( p1(aP)&&p2(aQ) )
+	isOK = true; 
+      else
+	{ //checks if the separating circle can be updated
+	  if (!p1(aP))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      if (isCircularlySeparable(myBegin,myEnd,aP,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else if (!p2(aQ))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      if (isCircularlySeparable(myBegin,myEnd,aQ,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::isExtendableFront(): impossible case") );  
+	}
+    
+    } else
+    { //not initialized yet
+    
+      if ( mySegPtr->extendFront() ) isOK = true; 
+      else
+	{
+	  Point Pf, Pl, Qf, Ql; 
+	  if (mySegPtr->isConvex())
+	    { //convex part
+	      if (isCircularlySeparable(myBegin,myEnd,aQ,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else if (mySegPtr->isConcave())
+	    { //concave part
+	      if (isCircularlySeparable(myBegin,myEnd,aP,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::isExtendableFront(): impossible case") ); 
+	}
+    }
+  
+  return isOK;  
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::extendFront()
+{
+  ASSERT( mySegPtr.get() != 0 ); 
+  Pair aPair( *myEnd ); 
+  Point aP( aPair.first ); 
+  Point aQ( aPair.second ); 
+  bool isOK = false; 
+
+  if (myFlagIsInit)
+    { //initialized
+
+      //predicates
+      PInCirclePred p1( myCircle ); 
+      QInCirclePred p2( myCircle ); 
+    
+      if ( p1(aP)&&p2(aQ) )
+	isOK = true; 
+      else
+	{ //update separating circle
+	  if (!p1(aP))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      if (isCircularlySeparable(myBegin,myEnd,aP,Pf,Pl,Qf,Ql))
+		{
+		  myCircle.init(Pf,Ql,aP); 
+		  isOK = true; 
+		}
+	    }
+	  else if (!p2(aQ))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      if (isCircularlySeparable(myBegin,myEnd,aQ,Pf,Pl,Qf,Ql))
+		{
+		  myCircle.init(Qf,Pl,aQ); 
+		  isOK = true; 
+		}
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::extendFront(): impossible case") );  
+	}
+    
+    } else
+    { //not initialized yet
+
+      if ( mySegPtr->extendFront() ) isOK = true; 
+      else
+	{ 
+	  Point Pf, Pl, Qf, Ql; 
+	  if (mySegPtr->isConvex())
+	    { //convex part
+
+	      if (isCircularlySeparable(myBegin,myEnd,aQ,Pf,Pl,Qf,Ql))
+		{ 
+		  myCircle.init(Qf,Pl,aQ); 
+		  myFlagIsInit = true;
+		  isOK = true; 
+		}
+	    }
+	  else if (mySegPtr->isConcave())
+	    { //concave part
+
+	      if (isCircularlySeparable(myBegin,myEnd,aP,Pf,Pl,Qf,Ql))
+		{ 
+		  myCircle.init(Pf,Ql,aP); 
+		  myFlagIsInit = true;
+		  isOK = true; 
+		}
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::extendFront(): impossible case") ); 
+	}
+    }
+  
+  if (isOK) 
+    {
+      ++myEnd; 
+      return true; 
+    } else return false; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::isExtendableBack()
+{
+  ASSERT( mySegPtr.get() != 0 ); 
+  ConstIterator it( myBegin ); 
+  --it; 
+  Pair aPair( *it ); 
+  Point aP( aPair.first ); 
+  Point aQ( aPair.second ); 
+  bool isOK = false; 
+
+  if (myFlagIsInit)
+    { //initialized
+
+      //predicates
+      PInCirclePred p1( myCircle ); 
+      QInCirclePred p2( myCircle ); 
+
+      if ( p1(aP)&&p2(aQ) )
+	isOK = true; 
+      else
+	{ //update separating circle
+	  if (!p1(aP))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      std::reverse_iterator<ConstIterator> ritb(myEnd); 
+	      std::reverse_iterator<ConstIterator> rite(myBegin); 
+	      if (isCircularlySeparable(ritb,rite,aP,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else if (!p2(aQ))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      std::reverse_iterator<ConstIterator> ritb(myEnd); 
+	      std::reverse_iterator<ConstIterator> rite(myBegin); 
+	      if (isCircularlySeparable(ritb,rite,aQ,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::extendBack(): impossible case") );  
+	}
+    
+    } else
+    { //not initialized yet
+
+      if ( mySegPtr->extendBack() ) isOK = true; 
+      else
+	{
+	  Point Pf, Pl, Qf, Ql; 
+	  std::reverse_iterator<ConstIterator> ritb(myEnd); 
+	  std::reverse_iterator<ConstIterator> rite(myBegin); 
+	  if (mySegPtr->isOppositeEndConvex())
+	    { //convex part 
+	      if (isCircularlySeparable(ritb,rite,aQ,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else if (mySegPtr->isOppositeEndConcave())
+	    { //concave part 
+	      if (isCircularlySeparable(ritb,rite,aP,Pf,Pl,Qf,Ql))
+		isOK = true; 
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::extendBack(): impossible case") ); 
+	}
+    }
+  
+  return isOK; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingCircleComputer<TConstIterator>::extendBack()
+{
+  ASSERT( mySegPtr.get() != 0 ); 
+  ConstIterator it( myBegin ); 
+  --it; 
+  Pair aPair( *it ); 
+  Point aP( aPair.first ); 
+  Point aQ( aPair.second ); 
+  bool isOK = false; 
+
+  if (myFlagIsInit)
+    { //initialized
+
+      //predicates
+      PInCirclePred p1( myCircle ); 
+      QInCirclePred p2( myCircle ); 
+
+      if ( p1(aP)&&p2(aQ) )
+	isOK = true; 
+      else
+	{ //update separating circle
+	  if (!p1(aP))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      std::reverse_iterator<ConstIterator> ritb(myEnd); 
+	      std::reverse_iterator<ConstIterator> rite(myBegin); 
+	      if (isCircularlySeparable(ritb,rite,aP,Pf,Pl,Qf,Ql))
+		{
+		  myCircle.init(aP,Pf,Ql); 
+		  isOK = true; 
+		}
+	    }
+	  else if (!p2(aQ))
+	    {
+	      Point Pf, Pl, Qf, Ql;
+	      std::reverse_iterator<ConstIterator> ritb(myEnd); 
+	      std::reverse_iterator<ConstIterator> rite(myBegin); 
+	      if (isCircularlySeparable(ritb,rite,aQ,Pf,Pl,Qf,Ql))
+		{
+		  myCircle.init(aQ,Qf,Pl); 
+		  isOK = true; 
+		}
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::extendBack(): impossible case") );  
+	}
+    
+    } else
+    { //not initialized yet
+
+      if ( mySegPtr->extendBack() ) isOK = true; 
+      else
+	{
+	  Point Pf, Pl, Qf, Ql; 
+	  std::reverse_iterator<ConstIterator> ritb(myEnd); 
+	  std::reverse_iterator<ConstIterator> rite(myBegin); 
+	  if (mySegPtr->isOppositeEndConvex())
+	    { //convex part 
+
+	      if (isCircularlySeparable(ritb,rite,aQ,Pf,Pl,Qf,Ql))
+		{
+		  myCircle.init(aQ,Qf,Pl); 
+		  myFlagIsInit = true;
+		  isOK = true; 
+		}
+	    }
+	  else if (mySegPtr->isOppositeEndConcave())
+	    { //concave part 
+
+	      if (isCircularlySeparable(ritb,rite,aP,Pf,Pl,Qf,Ql))
+		{
+		  myCircle.init(aP,Pf,Ql); 
+		  myFlagIsInit = true;
+		  isOK = true; 
+		}
+	    }
+	  else ASSERT( false && ("DGtal::StabbingCircleComputer<TConstIterator>::extendBack(): impossible case") ); 
+	}
+    }
+  
+  if (isOK) 
+    {
+      myBegin = it; 
+      return true; 
+    } else return false; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Display :
+
+template <typename TConstIterator>
+inline
+void
+DGtal::StabbingCircleComputer<TConstIterator>::selfDisplay ( std::ostream & out ) const
+{
+  out << std::endl;
+  out << "[StabbingCircleComputer]" << std::endl;
+  if (isValid())
+    {
+      Pair firstPair( *myBegin ); 
+      out << "\t From " << firstPair.first << firstPair.second << std::endl; 
+      ConstIterator it (myEnd); 
+      --it;
+      Pair lastPair( *it );  
+      out << "\t To " << lastPair.first << lastPair.second << std::endl; 
+      if (myFlagIsInit) 
+	out << myCircle << std::endl; 
+      else 
+	out << "infinite radius" << std::endl; 
+    }
+  else
+    {
+      out << "\t not valid" << std::endl; 
+    }
+  out << "[end of StabbingCircleComputer]" << std::endl;
+}
+
+template <typename TConstIterator>
+inline
+std::string
+DGtal::StabbingCircleComputer<TConstIterator>::className() const
+{
+  return "StabbingCircleComputer";
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TConstIterator>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const StabbingCircleComputer<TConstIterator> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

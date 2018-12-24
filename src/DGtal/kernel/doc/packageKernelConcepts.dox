@@ -1,0 +1,146 @@
+/**
+ * @file packageKernelConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/03/16
+ *
+ * Documentation file for feature kernelPackageConcepts
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageKernelConcepts Kernel Concepts
+@writers David Coeurjolly
+
+
+
+ @dot
+digraph GKERNEL {
+  rankdir=BT;
+  
+   subgraph cluster_ext {
+       rank = same;
+       style=invis;
+       
+       subgraph cluster_base {
+           style=filled;
+	   color="#eeeeff";
+	   node [style=filled,color=white];
+	   label="base";
+	   CQuantity [ label="CQuantity" URL="\ref concepts::CQuantity" ];
+	   CUnaryFunctor [ label="CUnaryFunctor" URL="\ref concepts::CUnaryFunctor" ];
+	   CPredicate [ label="CPredicate" URL="\ref concepts::CPredicate" ];
+	   CConstSinglePassRange [ label="CConstSinglePassRange" URL="@ref concepts::CConstSinglePassRange"]
+	   }
+	   
+       subgraph cluster_boost {
+           style=filled;
+	   color=white;
+	   node [style=filled,color=orange];
+	   label="boost";
+	   
+	   boost_CopyConstructible [ label="boost::CopyConstructible" URL="\ref boost::CopyConstructible" ];
+	   boost_Assignable [ label="boost::Assignable" URL="\ref boost::Assignable" ];
+	   boost_DefaultConstructible [ label="boost::DefaultConstructible" URL="\ref boost::DefaultConstructible" ];
+	   boost_ForwardContainer [ label="boost::ForwardContainer" URL="\ref boost::ForwardContainer" ];
+	   
+        }
+
+   }
+
+
+   subgraph cluster_main {
+      style=filled;
+      color="#ddddee";
+      node [style=filled,color=white];
+      label="kernel (main concepts)";
+      
+      CPointPredicate [label="CPointPredicate" URL="@ref  concepts::CPointPredicate"];
+      CPointFunctor [label="CPointFunctor" URL="@ref concepts::CPointFunctor"];
+      CSpace [label="CSpace" ULR="@ref concepts::CSpace"];
+      CInteger [label="CInteger" URL="@ref concepts::CInteger"];
+      CUnsignedNumber [label="CUnsignedNumber" URL="@ref concepts::CUnsignedNumber"];
+      CSignedNumber [label="CSignedNumber" URL="@ref concepts::CSignedNumber"];
+      CIntegralNumber [label="CIntegralNumber" URL="@ref concepts::CIntegralNumber"];
+      CBoundedNumber [label="CBoundedNumber" URL="@ref concepts::CBoundedNumber"];
+      CEuclideanRing [label="CEuclideanRing" URL="@ref concepts::CEuclideanRing"];
+      CCommutativeRing [label="CCommutativeRing" URL="@ref concepts::CCommutativeRing"];
+      CDomain [label="CDomain" URL="@ref concepts::CDomain"];
+      CSTLAssociativeContainer [label="CSTLAssociativeContainer" URL="@ref concepts::CSTLAssociativeContainer"];
+
+      CPointFunctor -> CUnaryFunctor;
+      CPointPredicate -> CPredicate;
+
+      CSignedNumber -> CQuantity;
+      CUnsignedNumber -> CQuantity;
+      CIntegralNumber -> CQuantity;
+      CBoundedNumber -> CQuantity;
+
+      CInteger -> CIntegralNumber;
+      CInteger -> CEuclideanRing;
+      CEuclideanRing -> CCommutativeRing;
+      CCommutativeRing -> CSignedNumber;
+    
+      CDomain-> CConstSinglePassRange;
+
+      CSTLAssociativeContainer -> boost_DefaultConstructible;
+      CSTLAssociativeContainer -> boost_ForwardContainer;
+
+      CDigitalSet -> CPointPredicate;
+      CDigitalSet -> CDomain   [label="use",style=dashed] ;
+		
+      CSpace -> CInteger  [label="use",style=dashed];
+      CSpace -> CIntegralNumber  [label="use",style=dashed];
+      CSpace -> CUnsignedNumber  [label="use",style=dashed];
+      CDomain -> CSpace [label="use",style=dashed];
+      }
+
+
+
+ CDigitalSet -> boost_Assignable;
+ CDigitalSet -> boost_CopyConstructible;
+
+  subgraph cluster_models {
+        style=filled;
+        color="#ccffcc";
+        node [style=filled,color=white];
+        label="Kernel (main models)";
+
+        SpaceND [ label="SpaceND" URL="\ref SpaceND" ] ;
+        HyperRectDomain [ label="HyperRectDomain" URL="\ref HyperRectDomain" ] ;
+        DigitalSetBySTLSet [ label="DigitalSetBySTLSet" URL="\ref DigitalSetBySTLSet" ] ;
+        DigitalSetBySTLVector [ label="DigitalSetBySTLVector" URL="\ref DigitalSetBySTLVector" ] ;
+        DigitalSetFromMap [ label="DigitalSetFromMap" URL="\ref DigitalSetFromMap" ] ;
+	SetPredicate [ label="SetPredicate" URL="\ref deprecated::SetPredicate" ] ;
+	DomainPredicate [ label="DomainPredicate" URL="\ref functors::DomainPredicate" ] ;
+        DigitalSetByAssociativeContainer [ label="DigitalSetByAssociativeContainer" URL="\ref DigitalSetByAssociativeContainer" ] ;
+     }
+     
+   SpaceND ->CSpace;
+   HyperRectDomain -> CDomain;
+   DigitalSetBySTLVector -> CDigitalSet;
+   DigitalSetBySTLSet -> CDigitalSet;
+   DigitalSetFromMap -> CDigitalSet;
+   DigitalSetByAssociativeContainer -> CDigitalSet
+   DigitalSetByAssociativeContainer -> CSTLAssociativeContainer [label="use",style=dashed];
+   SetPredicate -> CDigitalSet [label="use",style=dashed];
+   SetPredicate -> CPointPredicate;
+   DomainPredicate -> CDomain [label="use",style=dashed];
+   DomainPredicate -> CPointPredicate;
+   
+   
+ 
+  }
+@enddot
+
+*/
+
+}

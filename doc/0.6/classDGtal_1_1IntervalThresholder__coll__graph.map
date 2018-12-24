@@ -1,7 +1,0 @@
-<map id="DGtal::IntervalThresholder&lt; T &gt;" name="DGtal::IntervalThresholder&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html" title="DGtal::Thresholder\l\&lt; T, false, true \&gt;" alt="" coords="746,4,889,54"/>
-<area shape="rect" id="node14" href="$structDGtal_1_1Thresholder_3_01T_00_01true_00_01true_01_4.html" title="DGtal::Thresholder\l\&lt; T, true, true \&gt;" alt="" coords="746,78,889,128"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1PredicateCombiner.html" title="DGtal::PredicateCombiner\l\&lt; Tlow, Tup, AndBoolFct2 \&gt;" alt="" coords="715,151,920,201"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1AndBoolFct2.html" title="DGtal::AndBoolFct2" alt="" coords="303,143,449,174"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1PredicateCombiner.html" title="Aim: The predicate returns true when the given binary functor returns true for the two Predicates giv..." alt="" coords="276,198,476,266"/>
-</map>

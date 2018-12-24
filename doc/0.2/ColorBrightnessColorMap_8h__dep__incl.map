@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$testColorMaps_8cpp.html" title="testColorMaps.cpp" alt="" coords="5,83,136,112"/>
-<area shape="rect" href="$testMagickReader_8cpp.html" title="testMagickReader.cpp" alt="" coords="160,83,312,112"/>
-<area shape="rect" href="$testPNMRawWriter_8cpp.html" title="testPNMRawWriter.cpp" alt="" coords="336,83,491,112"/>
-<area shape="rect" href="$testRawReader_8cpp.html" title="testRawReader.cpp" alt="" coords="515,83,648,112"/>
-<area shape="rect" href="$testVolReader_8cpp.html" title="testVolReader.cpp" alt="" coords="672,83,800,112"/>
-<area shape="rect" href="$testHashTree_8cpp.html" title="testHashTree.cpp" alt="" coords="824,83,947,112"/>
-</map>

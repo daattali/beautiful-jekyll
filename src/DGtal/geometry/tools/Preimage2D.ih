@@ -1,0 +1,524 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Preimage2D.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/10/26
+ *
+ * @brief Implementation of inline methods defined in Preimage2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+template <typename Shape>
+inline
+DGtal::Preimage2D<Shape>::Preimage2D(
+  const Point & firstPoint, 
+  const Point & secondPoint,
+  const Shape & aShape ): myShape(aShape)
+{
+  myPHull.push_front(firstPoint);
+  myQHull.push_front(secondPoint);
+}
+
+
+
+template <typename Shape>
+inline
+DGtal::Preimage2D<Shape>::~Preimage2D()
+{
+}
+
+template <typename Shape>
+inline
+DGtal::Preimage2D<Shape>::Preimage2D( const Preimage2D & other ): myShape(other.myShape)
+{
+  myPHull = other.myPHull;
+  myQHull = other.myQHull;
+}
+
+template <typename Shape>
+inline
+DGtal::Preimage2D<Shape>&
+DGtal::Preimage2D<Shape>::operator=( const Preimage2D & other )
+{
+  if ( this != &other )
+  {
+    myShape = other.myShape;
+    myPHull = other.myPHull;
+    myQHull = other.myQHull;
+  }
+  return *this;
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::operator==( const Preimage2D & other ) const
+{
+  if ( (std::equal(myPHull.begin(),myPHull.end(),other.myPHull.begin()) 
+      &&std::equal(myQHull.begin(),myQHull.end(),other.myQHull.begin()))
+    || (std::equal(myPHull.begin(),myPHull.end(),other.myPHull.rbegin()) 
+      &&std::equal(myQHull.begin(),myQHull.end(),other.myQHull.rbegin()))
+     )
+    return true;
+  else 
+    return false;  
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::operator!=( const Preimage2D & other ) const
+{
+  return !(*this == other); 
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::isLeftExteriorAtTheFront(
+    const Point & aP, 
+    const Point & /*aQ*/)
+{
+  //critical points
+  BackwardIterator PHullBack = myPHull.rbegin();
+  ForwardIterator QHullFront = myQHull.begin();
+
+  //predicates definition from critical shapes
+  myShape.init(*PHullBack, *QHullFront);
+  PHullBackQHullFrontPred p1( myShape );
+
+  return (!p1(aP)); 
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::isLeftExteriorAtTheBack(
+    const Point & /*aP*/, 
+    const Point & aQ)
+{
+  //critical points
+  ForwardIterator QHullFront = myQHull.begin();
+  BackwardIterator PHullBack = myPHull.rbegin();
+  
+  //predicates definition from critical shapes
+  myShape.init(*QHullFront, *PHullBack);
+  QHullFrontPHullBackPred p2( myShape );
+
+  return (!p2(aQ));
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::isRightExteriorAtTheFront(
+    const Point & /*aP*/, 
+    const Point & aQ)
+{
+  //critical points
+  BackwardIterator QHullBack = myQHull.rbegin();
+  ForwardIterator PHullFront = myPHull.begin();
+
+  //predicates definition from critical shapes
+  myShape.init(*QHullBack, *PHullFront);
+  QHullBackPHullFrontPred p2( myShape );
+
+  return (!p2(aQ)); 
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::isRightExteriorAtTheBack(
+    const Point & aP, 
+    const Point & /*aQ*/)
+{
+  //critical points
+  ForwardIterator PHullFront = myPHull.begin();
+  BackwardIterator QHullBack = myQHull.rbegin();
+  
+  //predicates definition from critical shapes
+  myShape.init(*PHullFront, *QHullBack);
+  PHullFrontQHullBackPred p1( myShape );
+
+  return (!p1(aP)); 
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::canBeAddedAtTheFront(
+    const Point & aP, 
+    const Point & aQ)
+{
+  //critical points
+  BackwardIterator PHullBack = myPHull.rbegin();
+  ForwardIterator QHullFront = myQHull.begin();
+  BackwardIterator QHullBack = myQHull.rbegin();
+  ForwardIterator PHullFront = myPHull.begin();
+
+  //predicates definition from critical shapes
+  myShape.init(*PHullBack, *QHullFront);
+  PHullBackQHullFrontPred p1( myShape );
+  myShape.init(*QHullBack, *PHullFront);
+  QHullBackPHullFrontPred p2( myShape );
+
+  return ( p1(aP) && p2(aQ) );
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::canBeAddedAtTheBack(
+    const Point & aP, 
+    const Point & aQ)
+{
+
+  //critical points
+  ForwardIterator PHullFront = myPHull.begin();
+  BackwardIterator QHullBack = myQHull.rbegin();
+  ForwardIterator QHullFront = myQHull.begin();
+  BackwardIterator PHullBack = myPHull.rbegin();
+  
+  //predicates definition from critical shapes
+  myShape.init(*PHullFront, *QHullBack);
+  PHullFrontQHullBackPred p1( myShape );
+  myShape.init(*QHullFront, *PHullBack);
+  QHullFrontPHullBackPred p2( myShape );
+
+  return ( p1(aP) && p2(aQ) );
+
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::addFront(
+    const Point & aP, 
+    const Point & aQ)
+{
+
+  bool isEmpty = false;
+
+  //critical points
+  BackwardIterator PHullBack = myPHull.rbegin();
+  ForwardIterator QHullFront = myQHull.begin();
+  BackwardIterator QHullBack = myQHull.rbegin();
+  ForwardIterator PHullFront = myPHull.begin();
+    
+  //predicates definition from critical shapes
+  myShape.init(*PHullBack, *QHullFront);
+  PHullBackQHullFrontPred p1( myShape );
+  myShape.init(*QHullBack, *PHullFront);
+  QHullBackPHullFrontPred p2( myShape );
+  
+  if ( p1(aP) && p2(aQ) ) {
+    if ( p2(aP) ) {   //constraint involved by aP
+
+      //update myPHull
+      update<ForwardIterator,FrontPHullUpdatePred>
+        (aP, myPHull, PHullFront, myPHull.end());
+
+      //add aP to myPHull
+      if (aP != *myPHull.begin()) myPHull.push_front(aP);
+
+      //update myQHull
+      update<BackwardIterator,FrontQHullUpdatePred>
+        (aP, myQHull, QHullBack, myQHull.rend());
+
+    } //else nothing to do
+
+    if ( p1(aQ) ) {  //constraint involved by aQ
+
+      //update myQHull
+      update<ForwardIterator,FrontQHullUpdatePred>
+        (aQ, myQHull, QHullFront, myQHull.end());
+
+      //add aQ to myQHull
+      if (aQ != *myQHull.begin()) myQHull.push_front(aQ);
+
+      //update myPHull
+      update<BackwardIterator,FrontPHullUpdatePred>
+        (aQ, myPHull, PHullBack, myPHull.rend());
+
+    } //else nothing to do
+
+  } else isEmpty = true;
+  
+  return (!isEmpty);
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::addBack(
+    const Point & aP, 
+    const Point & aQ)
+{
+
+  bool isEmpty = false;
+
+  //critical points
+  ForwardIterator PHullFront = myPHull.begin();
+  BackwardIterator QHullBack = myQHull.rbegin();
+  ForwardIterator QHullFront = myQHull.begin();
+  BackwardIterator PHullBack = myPHull.rbegin();
+  
+  //predicates definition from critical shapes
+  myShape.init(*PHullFront, *QHullBack);
+  PHullFrontQHullBackPred p1( myShape );
+  myShape.init(*QHullFront, *PHullBack);
+  QHullFrontPHullBackPred p2( myShape );
+
+  if ( p1(aP) && p2(aQ) ) {
+    if ( p2(aP) ) {   //constraint involved by aP
+
+      //update myPHull
+      update<BackwardIterator,BackPHullUpdatePred>
+        (aP, myPHull, PHullBack, myPHull.rend());
+
+      //add aP to myPHull
+      if (aP != *myPHull.rbegin()) myPHull.push_back(aP);
+
+      //update myQHull
+      update<ForwardIterator,BackQHullUpdatePred>
+        (aP, myQHull, QHullFront, myQHull.end());
+
+
+    } //else nothing to do
+
+    if ( p1(aQ) ) {  //constraint involved by aQ
+
+      //update myQHull
+      update<BackwardIterator,BackQHullUpdatePred>
+        (aQ, myQHull, QHullBack, myQHull.rend());
+
+      //add aQ to myQHull
+      if (aQ != *myQHull.rbegin()) myQHull.push_back(aQ);
+
+      //update myPHull
+      update<ForwardIterator,BackPHullUpdatePred>
+        (aQ, myPHull, PHullFront, myPHull.end());
+
+    } //else nothing to do
+
+  } else isEmpty = true;
+
+  return (!isEmpty);
+}
+
+
+template <typename Shape>
+template <typename Iterator, typename Predicate>
+inline
+void
+DGtal::Preimage2D<Shape>::update(
+    const Point & aPoint,
+    Container & aContainer,
+    Iterator & anIterator,
+    const Iterator & anEndIterator)
+{
+
+  Point p, q;
+  q = *anIterator;
+  anIterator++;
+  if (anIterator != anEndIterator) {
+    p = *anIterator;
+    myShape.init(p,q);
+    Predicate pred( myShape );
+
+    while ( (anIterator != anEndIterator) && 
+            (pred(aPoint)) ) {
+
+      //deletion
+      anIterator--;
+
+      anIterator = 
+        DGtal::OpInSTLContainers<Container,Iterator>
+             ::erase(aContainer, anIterator);
+
+      //update of pred
+      q = p;  
+      anIterator++;
+      if (anIterator != anEndIterator) {
+        p = *anIterator;
+        myShape.init(p,q);
+        pred = Predicate( myShape );
+      }
+    }  
+  }
+
+}
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename Shape>
+inline
+std::string
+DGtal::Preimage2D<Shape>::className() const
+{
+  return "Preimage2D";
+}
+
+template <typename Shape>
+inline
+void
+DGtal::Preimage2D<Shape>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Preimage2D]\n";
+  out << "first part: \n";
+  for (ConstForwardIterator i = myPHull.begin(); 
+       i != myPHull.end(); ++i) {
+    out << *i << ", ";
+  }
+  out << "\n";
+  out << "second part: \n";
+  for (ConstForwardIterator i = myQHull.begin(); 
+       i != myQHull.end(); ++i) {
+    out << *i << ", ";
+  }
+  out << "\n";
+}
+
+template <typename Shape>
+inline
+bool
+DGtal::Preimage2D<Shape>::isValid() const
+{
+    return true;
+}
+
+template <typename Shape>
+inline
+typename DGtal::Preimage2D<Shape>::Point
+DGtal::Preimage2D<Shape>::Uf() const
+{
+    return *myPHull.rbegin();
+}
+
+template <typename Shape>
+inline
+typename DGtal::Preimage2D<Shape>::Point
+DGtal::Preimage2D<Shape>::Ul() const
+{
+    return *myPHull.begin();
+}
+
+template <typename Shape>
+inline
+typename DGtal::Preimage2D<Shape>::Point
+DGtal::Preimage2D<Shape>::Lf() const
+{
+    return *myQHull.rbegin();
+}
+
+template <typename Shape>
+inline
+typename DGtal::Preimage2D<Shape>::Point
+DGtal::Preimage2D<Shape>::Ll() const
+{
+    return *myQHull.begin();
+}
+
+template <typename Shape>
+inline
+void
+DGtal::Preimage2D<Shape>::getSeparatingStraightLine(
+  double& alpha, 
+  double& beta, 
+  double& gamma) const
+{
+  //critical points
+  Point localUf = Uf();
+  Point localUl = Ul();
+  Point localLf = Lf();
+  Point localLl = Ll();
+
+  //parameters
+  typedef typename Point::Coordinate Coordinate; 
+  
+  double a = -NumberTraits<Coordinate>::castToDouble(localLl[1]-localUf[1]);
+  double b = NumberTraits<Coordinate>::castToDouble(localLl[0]-localUf[0]);
+  double c = -NumberTraits<Coordinate>::castToDouble(localUf[0])*a 
+                     -NumberTraits<Coordinate>::castToDouble(localUf[1])*b;
+  
+  double ap = -NumberTraits<Coordinate>::castToDouble(localUl[1]-localLf[1]);
+  double bp = NumberTraits<Coordinate>::castToDouble(localUl[0]-localLf[0]);
+  double cp = -NumberTraits<Coordinate>::castToDouble(localLf[0])*ap 
+                      -NumberTraits<Coordinate>::castToDouble(localLf[1])*bp;
+
+  double x, y; 
+  double det = (ap*b-bp*a); 
+  if (det != 0)
+  {
+    //intersection point
+    x = -(b*cp-bp*c)/det;
+    y = -(a*cp-ap*c)/(-det); 
+    //normalisation of (ap,bp) with respect to (a,b)
+    double l = std::sqrt(a*a + b*b); 
+    double lp = std::sqrt(ap*ap + bp*bp); 
+    double apn = ap/lp*l; 
+    double bpn = bp/lp*l; 
+    //slope bisector of (UfLl) and (UlLf)
+    alpha = (a+apn)/2.0; 
+    beta = (b+bpn)/2.0; 
+    //intercept
+    gamma = -alpha*x - beta*y;
+  }
+  else 
+  {//parallel case
+    alpha = a;
+    beta = b;
+    gamma = c;
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Shape>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const Preimage2D<Shape> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

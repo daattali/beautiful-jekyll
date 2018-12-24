@@ -1,0 +1,178 @@
+/**
+ * @file moduleDECPropagation.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2015/03/27
+ *
+ * Documentation file for feature DECPropagation
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleDECPropagation Propagation
+@writers Pierre Gueth
+
+[TOC]
+
+\section sectDECPropagationIntro Propagation equation
+
+Propagation plays a important role in physics as it models a lot a problem ranging from classical oscillators to electromagnetism, relativistic gravitation and quantum mechanics.
+Here we will study the linear propagation equation of a time dependent scalar wave function \f$\psi(x,t)\f$, modelled as dual 0-form in the DEC framework,
+
+\f[ \Delta \psi + \frac{1}{c^2} \frac{\partial^2\psi}{\partial t^2} = \left( \Delta + \frac{1}{c^2} \frac{\partial^2}{\partial t^2} \right) \psi = \rho \f]
+
+where \f$c\f$ is propagation speed inside the medium and \f$\rho(x,t)\f$ is the scalar concentration field that generates waves.
+The \f$+\f$ differs from the classical physics equation since here we consider \f$\Delta\f$ to have positive eigenvalues,
+which is the opposite of the definition of the Laplace operator in physics.
+As DEC handles only spatial dimensions, we will present two classical tricks that can be used to handle the time dependent in many physics problems.
+For simplicity of notation, we define the propagation operator \f$\square\f$.
+
+\f[ \square  = \Delta + \frac{1}{c^2} \frac{\partial^2}{\partial t^2} \f]
+
+\section sectDECPropagationTime Temporal resolution with initial condition
+
+In this example, we compute the time evolution of a wave given the initial (potentially complex) wave function \f$\psi(x,0)=\psi_0(x)\f$.
+Snippets are taken from examplePropagation.cpp.
+
+Consider the homogeneous propagation equation, where \f$\rho(x,t) = 0\f$,
+
+\f[ \square \psi = 0 \f]
+
+The Laplace operator \f$\Delta\f$ is computed using DiscreteExteriorCalculus.laplace.
+Note that the problem is expressed on the dual structure.
+A small fraction of DiscreteExteriorCalculus.identity is added to ensure a proper definition of \f$\Delta\f$.
+
+\snippet examplePropagation.cpp time_laplace
+
+Since \f$\Delta\f$ is a positive semi definite real valued Hermitian operator, its eigenvalues are real and positive and its eigenvectors are real.
+
+\f[ \Delta \phi_i = k_i^2 \, \phi_i \f]
+
+where \f$\phi_i\f$ are eigenvectors and \f$k_i^2\f$ are corresponding eigenvalues.
+Eigen pairs can be computed using Eigen::SelfAdjointEigenSolver for small system;
+\f$\phi_i\f$ is then the ith column of the eigen_vectors matrix.
+For larger systems, one can use more advance techniques such as band shift invert resolution.
+
+\snippet examplePropagation.cpp time_eigen
+
+\f$\phi_i\f$ form an orthonormal basis of the Laplace operator solutions.
+One can use this property to define \f$\psi_i\f$ an orthonormal basis of solutions of the homogeneous propagation equation (it is easy to check that \f$\square \psi_i = 0\f$).
+
+\f[ \psi_i(x,t) = \phi_k(x) \, e^{j c k_i t} \f]
+
+where \f$j\f$ is the imaginary unit.
+One can project any solution \f$\psi\f$ of the propagation equation onto this basis.
+The (potentially complex) coordinates \f$p_i\f$ of \f$\psi\f$ in the \f$\psi_i\f$ basis are
+
+\f[ p_i = \left< \psi | \psi_i \right> \f]
+
+where, for all \f$t\f$, \f$\left< \bullet | \bullet \right> \f$ is the inner product between dual 0-forms.
+In the DEC framework, such a product can be computed as the scalar product between the discrete value vector KForm.myContainer.
+We can then write \f$\psi\f$ as a linear combination of \f$\psi_i\f$
+
+\f[ \psi = p_i \, \psi_i \f]
+
+where the summation over \f$i\f$ is implicit.
+Note that for \f$t=0\f$, \f$\psi_i(x,0) = \phi_i(x)\f$.
+To solve the temporal evolution from \f$\psi_0(x)\f$, all we need to do is to find its initial projections \f$p_{0i}\f$ and let complex exponentials do the their duty to predict future (and past) wave functions.
+
+\f[ p_{0i} = \left< \psi_0 | \phi_i \right>  \f]
+
+Those inner product are computed by multiplying the initial wave 0-form container with the transposed eigen_vectors matrix.
+
+\snippet examplePropagation.cpp time_init_proj
+
+For aesthetic reason, initial projections are filtered to keep only low frequency (high wavelength) components.
+
+\snippet examplePropagation.cpp time_low_pass
+
+To get the wave function for any other time \f$t\f$, \f$\psi\f$ is computed as
+
+\f[ \psi(x,t) = p_{0i} \, \psi_i(x,t) = p_{0i} \, \phi_i(x) \, e^{j c k_i t} \f]
+
+This translate to the following code where the term \f$c k_i\f$ is precomputed for all times.
+
+\snippet examplePropagation.cpp time_omega
+\snippet examplePropagation.cpp time_solve_time
+
+For real wave functions, knowing the initial wave is not enough the get a unique answer. One would have to know temporal initial wave derivative as well to fully determine the propagation behavior. When one use complex wave functions, the derivative initial conditions are replaced by the phase of the initial wave. By changing the phase field, one would get different behavior. For example if one choose initial wave as described above, one would get a nice uniform propagation of the wave.
+
+\snippet examplePropagation.cpp time_phase_null
+\image html propagation_time_wave_i.gif "Real part of wave propagating from initial conditions with null phase."
+
+If, on the other hand, one starts to mess with the phase on the initial wave and introduce phase variation along y, one would get a directional propagation of the wave along -y.
+
+\snippet examplePropagation.cpp time_phase_yy
+\image html propagation_time_wave_ii.gif "Real part of wave propagating from initial conditions with phase variation along y."
+
+\section sectDECPropagationForced Established permanent regime solution
+
+In this section, we compute the established standing wave generated by a standing concentration field oscillating at a single angular frequency \f$\omega_p\f$.
+One can define the wavenumber \f$k_p = \frac{\omega_p}{c}\f$ and the wavelength \f$\lambda_p = \frac{2 \pi c}{\omega_p}\f$ equivalently to \f$\omega_p\f$.
+The established standing wave hypothesis induce a separability of spatial and temporal components: \f$\rho(x,t)\f$ can be expressed as the
+product between \f$\rho_p(x)\f$, the spatial part, and \f$e^{j \omega_p t}\f$, the temporal part.
+
+\f[ \rho(x,t) = \rho_p(x) \, e^{j \omega_p t} = \rho_p(x) \, e^{j c k_p t} = \rho_p(x) \, e^{\frac{2 \pi c t}{\lambda_p}} \f]
+
+The separability applies to \f$\psi(x,t)\f$ too. This linearity of \f$\square\f$ implies that the solution is vibrating at the same frequency as the excitation.
+
+\f[ \psi(x,t) = \psi_p(x) \, e^{j c k_p t} \f]
+
+The propagation operator gives a relation between \f$\psi_p\f$ and \f$\rho_p\f$ through the \f$(\Delta - k_p^2 I)\f$ operator.
+
+\f[ \square \psi = \rho \;\Leftrightarrow\; ( \Delta - k_p^2 \, I ) \, \psi_p = \rho_p \;\Leftrightarrow\; \psi_p = ( \Delta - k_p^2 \, I )^{-1} \, \rho_p \f]
+
+where \f$I\f$ is the identity operator on dual 0-forms and \f$( \Delta - k_p^2 I )^{-1}\f$ is the inverse of \f$( \Delta - k_p^2 I )\f$, always uniquely defined.
+If \f$(\phi_i, k_{\Delta i}^2)\f$ are eigen pairs of \f$\Delta\f$,
+
+\f[ \Delta \phi_i = k_{\Delta i}^2 \, \phi_i \f]
+
+it is easy to show that \f$(\phi_i, \frac{1}{k_{\Delta i}^2 - k_p^2})\f$ are eigen pairs of \f$(\Delta - k_p^2 I)^{-1}\f$.
+Eigenvectors stay the same, only eigenvalues are changed.
+
+\f[ ( \Delta - k_p^2 \, I )^{-1} \phi_i = \frac{1}{k_{\Delta i}^2-k_p^2} \, \phi_i \f]
+
+Using \f$p_{pi}\f$ and \f$r_{pi}\f$, the coordinates of \f$\psi_p\f$ and \f$\rho_p\f$ in the \f$\phi_i\f$ basis, defined as
+
+\f[ p_{pi} = \left< \psi_p | \phi_i \right>  \; r_{pi} = \left<\rho_p | \phi_i \right> \f]
+
+the solution of the problem is the computed as
+
+\f[ p_{pi} = \frac{r_{pi}}{k_{\Delta i}^2 - k_p^2} \f]
+
+This leads to the following definition for \f$( \Delta - k_p^2 I )^{-1}\f$, as concentration_to_wave, in the DEC framework.
+
+\snippet examplePropagation.cpp forced_dalembert_eigen
+
+The spatial part of the established wave is computed by applying concentration_to_wave to the concentration 0-form container.
+
+\snippet examplePropagation.cpp forced_wave
+
+To illustrate this section, we compute the established standing waves on a disk with a punctual excitation at its center
+for multiple wavelength \f$\lambda_{pk}\f$ such that a standing wave with \f$k\f$ extremums between center and border is created.
+
+\f[ r = k \frac{\lambda_{pk}}{2} + \frac{\lambda_{pk}}{4} \f]
+
+where \f$r\f$ is the radius of the disk. Here we took \f$r = 20.75 \mathrm{px}\f$.
+
+\snippet examplePropagation.cpp forced_lambda
+
+\image html propagation_forced_wave_0.png "Established standing wave for lambda_p0."
+\image html propagation_forced_wave_1.png "Established standing wave for lambda_p1."
+\image html propagation_forced_wave_2.png "Established standing wave for lambda_p2."
+\image html propagation_forced_wave_3.png "Established standing wave for lambda_p3."
+\image html propagation_forced_wave_4.png "Established standing wave for lambda_p4."
+\image html propagation_forced_wave_5.png "Established standing wave for lambda_p5."
+\image html propa_samples.png "Established standing wave profiles along vertical, horizontal and diagonal lines for lambda_pk."
+
+*/
+
+}

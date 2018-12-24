@@ -1,7 +1,0 @@
-<map id="DGtal::DrawableWithDisplay3D" name="DGtal::DrawableWithDisplay3D">
-<area shape="rect" id="node3" href="$structDGtal_1_1DrawWithBoard3DTo2DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="269,77,472,123"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CameraDirection.html" title="CameraDirection class to set camera direction. " alt="" coords="523,5,696,35"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1CameraPosition.html" title="CameraPosition class to set camera position. " alt="" coords="527,59,692,88"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1CameraUpVector.html" title="CameraUpVector class to set camera up&#45;vector. " alt="" coords="521,112,697,141"/>
-<area shape="rect" id="node11" href="$structDGtal_1_1CameraZNearFar.html" title="CameraZNearFar class to set near and far distance. " alt="" coords="521,165,697,195"/>
-</map>

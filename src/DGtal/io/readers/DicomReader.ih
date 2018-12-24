@@ -1,0 +1,160 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DicomReader.ih
+ * @author Adrien Krähenbühl (\c adrien.krahenbuhl@loria.fr )
+ * LORIA (CNRS, UMR 7503), Université de Lorraine, France
+ *
+ * @date 2013/10/10
+ *
+ * Implementation of inline methods defined in DicomReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+#include "DGtal/io/Color.h"
+
+// Required ITK files to read serie DICOM files
+// DGtal must be compiled with "-DWITH_ITK=true" option
+#if defined(__GNUG__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#endif
+#if defined(__clang__)
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdocumentation"
+#endif
+#include <itkImage.h>
+#include <itkImageSeriesReader.h>
+#include <itkGDCMImageIO.h>
+#include <itkGDCMSeriesFileNames.h>
+#if defined(__clang__)
+#pragma clang diagnostic pop
+#endif
+#if defined(__GNUG__)
+#endif
+#pragma GCC diagnostic pop
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+template <typename TImageContainer, typename TFunctor>
+inline
+TImageContainer
+DGtal::DicomReader<TImageContainer, TFunctor>::importDicom(const std::string & aFilename,
+							   const TFunctor &aFunctor)
+{
+  DGtal::IOException dgtalio;
+
+  std::string directory = aFilename.substr(0,aFilename.find_last_of("/"));
+
+  // Définition of image type
+  const unsigned int Dimension = ImageContainer::Domain::dimension;
+  typedef itk::Image<PixelType,Dimension> ItkImage;
+  typedef itk::ImageSeriesReader<ItkImage> ItkReader;
+  typename ItkReader::Pointer reader = ItkReader::New();
+
+  // Définition of ITK Dicom reader
+  typedef itk::GDCMImageIO ItkImageIO;
+  ItkImageIO::Pointer dicomIO = ItkImageIO::New();
+  reader->SetImageIO(dicomIO);
+
+  // Series reader
+  typedef itk::GDCMSeriesFileNames ItkNamesGenerator;
+  ItkNamesGenerator::Pointer nameGenerator = ItkNamesGenerator::New();
+  nameGenerator->SetDirectory(directory);
+  reader->SetFileNames(nameGenerator->GetInputFileNames());
+
+  // Image reading
+  try
+  {
+	  reader->Update();
+  }
+  catch( ... )
+  {
+	  trace.error() << "DicomReader: can't read " << aFilename << std::endl;
+	  trace.error() << "(from directory: " << directory << ")" << std::endl;
+	  throw dgtalio;
+  }
+
+  const typename ItkImage::SizeType& inputSize = reader->GetOutput()->GetLargestPossibleRegion().GetSize();
+  const unsigned int width = inputSize[0];
+  const unsigned int height = inputSize[1];
+  const unsigned int depth = inputSize[2];
+  if ( !height || !width || !depth )
+  {
+	  trace.error() << "DicomReader: one dimension is null (w=" << width << ", h=" << height << ", d=" << depth << ")" << std::endl;
+	  throw dgtalio;
+  }
+
+  // Itk Image pointer
+  const typename ItkImage::Pointer &itkImage = reader->GetOutput();
+  itk::ImageRegionConstIterator< ItkImage > in( itkImage,itkImage->GetBufferedRegion() );
+
+  // DGtal image
+  typename ImageContainer::Point firstPoint( 0, 0, 0 );
+  typename ImageContainer::Point lastPoint( width-1, height-1, depth-1 );
+
+  typename ImageContainer::Domain domain(firstPoint,lastPoint);
+  typename ImageContainer::Domain::ConstIterator itDomain = domain.begin();
+  typename ImageContainer::Domain::ConstIterator endDomain = domain.end();
+
+  ImageContainer image(domain);
+
+  // DGtal image filling
+  long int total = width * height * depth;
+  long count = 0;
+  while ( itDomain != endDomain )
+  {
+	  const PixelType &value = in.Value();
+	  image.setValue( *itDomain , aFunctor(value) );
+	  ++in;
+	  ++itDomain;
+	  ++count;
+  }
+
+  if ( count != total )
+  {
+    trace.error() << "DicomReader: can't read file (raw data) !\n";
+    throw dgtalio;
+  }
+
+  return  image;
+}
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

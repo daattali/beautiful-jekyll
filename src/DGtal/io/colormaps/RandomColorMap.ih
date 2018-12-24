@@ -1,0 +1,169 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file RandomColorMap.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/07/18
+ *
+ * Implementation of inline methods defined in RandomColorMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+
+
+
+inline 
+DGtal::RandomColorMap::RandomColorMap(const unsigned int &aFirstIndex, const unsigned int & aLastIndex, 
+              const Color &aFirstColor, const Color &aLastColor)
+{
+  myMin = aFirstIndex;
+  myMax  = aLastIndex;
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+  myGradientMap = new GradientColorMap<unsigned int> (aFirstIndex, aLastIndex);
+  myGradientMap->addColor(aFirstColor);
+  myGradientMap->addColor(aLastColor);
+  associateRandomIndexColor();  
+}
+
+
+
+inline
+void
+DGtal::RandomColorMap::associateRandomIndexColor(){
+  for(unsigned int i=myMin; i<=myMax; i++){
+    myColorIndex.push_back(myMax+1);
+    myFreeColorIndex.push_back(i);
+  }
+  unsigned int i=0;
+  while(myFreeColorIndex.size()!=0){
+    unsigned int pos = rand()%myFreeColorIndex.size();
+    myColorIndex[i]=myFreeColorIndex.at(pos);
+    myFreeColorIndex.erase(myFreeColorIndex.begin()+pos);
+    i++;
+  }
+  
+}
+
+inline
+DGtal::RandomColorMap::~RandomColorMap()
+{
+  delete myGradientMap;
+}
+
+
+
+inline
+void
+DGtal::RandomColorMap::addColor( const Color &aColor) 
+{
+  myGradientMap->addColor(aColor);
+  associateRandomIndexColor();
+}
+
+inline
+void
+DGtal::RandomColorMap::selfDisplay ( std::ostream & out ) const
+{
+    out << "[RandomColorMap]";
+}
+
+
+inline 
+bool
+DGtal::RandomColorMap::isValid() const
+{
+    return true;
+}
+
+
+inline
+DGtal::RandomColorMap &
+DGtal::RandomColorMap::operator=(const DGtal::RandomColorMap & anOther)
+{
+if ( &anOther != this ) {
+    myMin = anOther.myMin;
+    myMax = anOther.myMax;
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+    myColorIndex = anOther.myColorIndex;
+    myFreeColorIndex= anOther.myFreeColorIndex;
+    myGradientMap = new GradientColorMap<unsigned int> (myMin, myMax);
+ }
+  return *this;
+}
+
+inline
+DGtal::Color 
+DGtal::RandomColorMap::operator()( const unsigned int & aValue ) const
+{
+  return (*myGradientMap)(myColorIndex.at(aValue));    
+}
+
+
+inline
+const unsigned int &
+DGtal::RandomColorMap::min() const
+{
+  return myMin;
+}
+
+inline
+const unsigned int &
+DGtal::RandomColorMap::max() const
+{
+  return myMax;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'RandomColorMap'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'RandomColorMap' to write.
+ * @return the output stream after the writing.
+ */
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                  const RandomColorMap & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

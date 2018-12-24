@@ -1,0 +1,500 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/**
+   
+@page moduleShortcuts  Shortcuts (for the impatient developper)
+
+@writers Jacques-Olivier Lachaud
+
+@since 1.0
+
+Part of the \ref packageTutorials.
+  
+This part of the manual describes how to use shortcuts to quickly
+create shapes and surfaces, to traverse surfaces, to save/load images
+and shapes, and to analyze their geometry.
+
+[TOC]
+
+
+The following programs are related to this documentation:
+shortcuts.cpp, shortcuts-geometry.cpp
+
+@note All rendering are made with <a href="https://www.blender.org">Blender</a>.
+@see \ref moduleIntegralInvariant for Integral Invariant estimators.
+@see \ref moduleVCM for Voronoi Covariance Measure estimators.
+
+
+@section dgtal_shortcuts_sec1 Introduction
+
+To use shortcuts, you must include the following header:
+
+\code
+#include "DGtal/helpers/Shortcuts.h"
+\endcode
+
+And choose an appropriate Khalimsky space according to the dimension
+of the object you will be processing.
+
+@see moduleCellularTopology
+
+\code
+// Using standard 2D digital space.
+typedef Shortcuts<Z2i::KSpace> SH2;
+// Using standard 3D digital space.
+typedef Shortcuts<Z3i::KSpace> SH3;
+\endcode
+
+The general philosophy of the shorcut module is to choose reasonnable
+data structures in order to minimize the number of lines to build
+frequent digital geometry code. For instance, the following lines
+build a shape that represents the digitization of an ellipsoid.
+
+\code
+  auto params = SH3::defaultParameters();
+  // Set your own parameters with operator().
+  params( "polynomial", "3*x^2+2*y^2+z^2-90" )( "gridstep", 0.25 );
+  auto implicit_shape  = SH3::makeImplicitShape3D( params );
+  auto kspace          = SH3::getKSpace( params );
+  auto digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );
+  std::cout << *digitized_shape << std::endl;
+\endcode
+
+As one can see, a Parameters object stores parameter values and can be
+simply updated by the user with the function operator().
+
+\note Big objects (like images, explicit shapes, explicit surfaces) are always returned
+or passed as smart pointers (with CountedPtr). Smaller objects (like
+vectors of scalars, etc) are efficiently passed by value. Hence you
+never have to take care of their lifetime and you do not need to
+delete them explicitly.
+
+
+@section dgtal_shortcuts_sec2 Short 3D examples
+
+We give below some minimalistic examples to show that shortcuts can
+save a lot of lines of code. All examples need at least the following lines:
+
+\code
+#include "DGtal/helpers/Stddefs.h"
+#include "DGtal/helpers/Shortcuts.h"
+...
+// Using standard 3D digital space.
+typedef Shortcuts<Z3i::KSpace> SH3;
+auto params = SH3::defaultParameters();
+\endcode
+
+Examples requiring geometric functions (ground-truth or estimation) need the following lines (i.e. functions in `SHG3`):
+
+\code
+#include "DGtal/helpers/Stddefs.h"
+#include "DGtal/helpers/Shortcuts.h"
+#include "DGtal/helpers/ShortcutsGeometry.h"
+...
+// Using standard 3D digital space.
+typedef Shortcuts<Z3i::KSpace>         SH3;
+typedef ShortcutsGeometry<Z3i::KSpace> SHG3;
+auto params = SH3::defaultParameters()
+              | SHG3::defaultParameters();
+\endcode
+
+
+@subsection dgtal_shortcuts_ssec2_1 Load vol file -> ...
+
+@subsubsection dgtal_shortcuts_ssec2_1_1 -> noisify -> save as vol file.
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_1_1s
+
+@subsubsection dgtal_shortcuts_ssec2_1_2  -> build main connected digital surface
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_1_2s
+
+@subsubsection dgtal_shortcuts_ssec2_1_3 -> extract 2 isosurfaces -> build mesh -> displays them
+
+The following code extracts iso-surfaces (maybe multiple connected components) in the given gray-scale 3D image and builds meshes, which can be displayed.
+
+@note Iso-surfaces are built by duality from digital surfaces. The
+output triangulated surfaces share similarities with marching-cubes
+surfaces, but they are guaranteed to be 2-manifold (closed if the
+surface does not touch the boundary of the domain).
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_1_3s
+
+If you wish to display them with two different colors, you may write:
+\code
+    QApplication application(argc,argv);
+    Viewer3D<> viewer;
+    viewer.show();
+    viewer << CustomColors3D( Color::Black, Color::Red  ) << *mesh40;
+    viewer << CustomColors3D( Color::Black, Color::Blue ) << *mesh200;
+    viewer << Viewer3D<>::updateDisplay;
+    application.exec();
+\endcode
+
+@subsubsection dgtal_shortcuts_ssec2_1_4 -> extract 2 triangulated isosurfaces -> save as OBJ
+
+The following code extracts all iso-surfaces in the given gray-scale 3D image and saves them as OBJ file with color information.
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_1_4s
+
+\image html lobster-40-150-blender-small.png "Rendering of lobster 40 (red semi-transparent) and 150 (blue) isosurfaces."
+
+@subsubsection dgtal_shortcuts_ssec2_1_5 -> build main digital surface -> breadth first traversal -> save OBJ with colored distance.
+
+You may choose your traversal order ("Default", "DepthFirst", "BreadthFirst").
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_1_5s
+
+\image html al-primal-bft-blender-small.png "Rendering of Al Capone with a breadth-first traversal colored according to distance (blue to red)."
+
+@subsubsection dgtal_shortcuts_ssec2_1_6 -> build digital surface -> estimate curvatures -> save OBJ.
+
+This example requires ShortcutsGeometry. It shows how tu use the integral invariant curvature estimator on a digital shape model to estimate its mean or Gaussian curvature.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_1_6s
+
+<table>
+<tr><td>
+\image html al-H-II-blender-small.png "Rendering of Al Capone with estimated mean curvatures (blue is negative, white zero, red is positive, scale is [-0.5, 0.5]). "
+<td></td>
+\image html al-G-II-blender-small.png "Rendering of Al Capone with estimated Gaus curvatures (blue is negative, white zero, red is positive, scale is [-0.25, 0.25]). "
+</td></tr>
+</table>
+
+@subsection dgtal_shortcuts_ssec2_2 Build polynomial shape -> digitize -> ...
+
+@subsubsection dgtal_shortcuts_ssec2_2_1  -> noisify -> save as vol file.
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_2_1s
+
+@subsubsection dgtal_shortcuts_ssec2_2_2  -> build surface -> save primal surface as obj
+
+@note The OBJ file is generally not a combinatorial 2-manifold, since
+digital surfaces, seen as squares stitched together, are manifold only
+when they are well-composed.
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_2_2s
+
+\image html goursat-primal-blender-small.png "Rendering of goursat-primal.obj."
+
+
+@subsubsection dgtal_shortcuts_ssec2_2_3  -> build indexed surface on a subpart
+
+You may choose which part of a domain is digitized as a binary image,
+here the first orthant is chosen.
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_2_3s
+
+@subsubsection dgtal_shortcuts_ssec2_2_4  -> noisify -> count components -> save OBJ with different colors.
+
+\snippet examples/tutorial-examples/shortcuts.cpp dgtal_shortcuts_ssec2_2_4s
+
+\image html leopold-primal-cc-blender-small.png "Rendering of leopold-primal-cc.obj."
+
+
+@subsubsection dgtal_shortcuts_ssec2_2_5  -> extract ground-truth geometry
+
+This example requires ShortcutsGeometry. It shows you how to recover
+ground-truth positions, normal vectors, mean and Gaussian curvatures
+onto an implicit 3D shape. For each surfel, the geometry is the one of
+the point nearest to the given surfel centroid.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_2_5s
+
+@subsubsection dgtal_shortcuts_ssec2_2_6  -> get pointels -> save projected quadrangulated surface.
+
+This example requires ShortcutsGeometry. It shows you how to get pointels from a digital surface and how to project the digital surface onto the given implicit shape.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_2_6s
+
+\image html goursat-quad-proj-lines-ok-blender-small.png "Rendering of goursat-quad-proj.obj with quad edges in blue."
+
+@subsubsection dgtal_shortcuts_ssec2_2_7  -> extract mean curvature -> save as OBJ with colors
+
+This example requires ShortcutsGeometry. The ground-truth mean curvature is just displayed as a color, using the specified colormap.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_2_7s
+
+\image html goursat-H-blender-small.png "Rendering of goursat-H.obj"
+
+@subsubsection dgtal_shortcuts_ssec2_2_8  -> extract ground-truth and estimated mean curvature -> display errors in OBJ with colors
+
+This example requires ShortcutsGeometry. Both ground-truth and
+estimated mean curvature are computed. Then you have functions like
+ShortcutsGeometry::getScalarsAbsoluteDifference and
+ShortcutsGeometry::getStatistic to measure errors or
+ShortcutsGeometry::getVectorsAngleDeviation to compare vectors.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_2_8s
+
+<table>
+<tr><td>
+\image html goursat-H-blender-small.png "Ground truth mean curvature"
+</td><td>
+\image html goursat-H-ii-blender-small.png "Estimated II mean curvature"
+</td><td>
+\image html goursat-H-ii-err-blender-small.png "Highlight estimation errors (blue small, red high)"
+</td></td>
+</table>
+
+@subsubsection dgtal_shortcuts_ssec2_2_9  -> build surface -> save primal surface with vcm normals as obj
+
+This example requires ShortcutsGeometry.
+
+@note The OBJ file is generally not a combinatorial 2-manifold, since
+digital surfaces, seen as squares stitched together, are manifold only
+when they are well-composed.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_2_9s
+
+<table>
+<tr><td>
+\image html goursat-primal-blender-small.png "Rendering of goursat-primal.obj (no normals)."
+</td><td>
+\image html goursat-primal-vcm-blender-small.png "Rendering of goursat-primal-vcm.obj (normals estimated by VCM). Note that staircases effects are still very visible, although normals are good."
+</td></tr>
+</table>
+
+@subsubsection dgtal_shortcuts_ssec2_2_10 -> digitize implicitly -> estimate II normals and curvature.
+
+This example requires ShortcutsGeometry. You may also analyze the
+geometry of a digital implicitly defined surface without generating a
+binary image and only traverse the surface.
+
+\snippet examples/tutorial-examples/shortcuts-geometry.cpp dgtal_shortcuts_ssec2_2_10s
+
+\image html goursat-imphi-H-ii-blender-small.png "Rendering of goursat-imp-H-ii.obj with a gridstep of 0.03125, more than 2e6 surfels."
+
+@section dgtal_shortcuts_sec2b Few 2D examples
+
+We give below some minimalistic examples to show that shortcuts can
+save a lot of lines of code. All examples need at least the following lines:
+
+\code
+#include "DGtal/helpers/Stddefs.h"
+#include "DGtal/helpers/Shortcuts.h"
+
+...
+// Using standard 2D digital space.
+typedef Shortcuts<Z2i::KSpace> SH2;
+auto params          = SH2::defaultParameters();
+\endcode
+
+@subsection dgtal_shortcuts_ssec2b_1 Load pgm file -> ...
+
+@subsubsection dgtal_shortcuts_ssec2b_1_1 -> threshold -> save pgm 
+
+\code
+auto g_image = SH2::makeGrayScaleImage( examplesPath + "samples/contourS.pgm" );
+auto b_image = SH2::makeBinaryImage   ( g_image, params( "thresholdMin", 128 ) );
+auto ok      = SH2::saveBinaryImage   ( b_image, "contourS-128.pgm" );
+\endcode
+
+
+@section dgtal_shortcuts_sec3 Philosophy and naming conventions
+
+Commands are constructed as \b prefix + \b type name. Most of them are
+static methods and are overloaded to accept different set of
+parameters. 
+
+@subsection dgtal_shortcuts_ssec3_1 Prefixes 
+
+- \b make + `Type`: means that it will create a new object of type
+  `Type` and returns it as a \e smart \e pointer onto it. Depending on
+  parameters, \b make can \b load a file, \b copy and \b transform an
+  object, \b build an empty/not object according to parameters.
+
+- \b make + `Type` + \b s: means that it will create new objects of type
+  `Type` and returns them as a vector of \e smart \e pointers onto it. 
+
+- \b make + `Spec` + `Type`: means that it will create a new object of
+  type `Type` with some specialized meaning according to `Spec` and
+  returns it as a \e smart \e pointer onto it.
+
+- \b save + `Type`: means that it will save the pointed object of type `Type` as a file.
+
+- \b parameters + `Type`: returns the Parameters object associated to
+  the operations related to the given `Type`.
+
+- \b get + `Type`: means that it will return \e by \e value an object of type `Type`.
+
+@subsection dgtal_shortcuts_ssec3_2 Types
+
+The following name conventions for types are used. They are defined
+according to your choice of cellular grid space when defining the
+Shortcuts type. For instance, if Z3i::KSpace was chosen, then
+Shortcuts::Point is Z3i::KSpace::Point.
+
+- Shortcuts::Point: represents a point with integer coordinates.
+- Shortcuts::Vector: represents a vector with integer coordinates.
+- Shortcuts::RealPoint: represents a point with floating-point coordinates.
+- Shortcuts::RealVector: represents a vector with floating-point coordinates.
+- Shortcuts::Domain: represents an (hyper-)rectangular digital domain.
+- Shortcuts::Integer: represents integer numbers (for Point coordinates and Vector components) 
+- Shortcuts::Space: represents a digital space (generally a SpaceND)
+- Shortcuts::KSpace: represents a cellular grid space (generally a KhalimskySpaceND)
+
+- Shortcuts::ImplicitShape3D: represents a functor RealPoint -> Scalar which adds
+  geometry services: isInside, orientation, gradient, meanCurvature,
+  GaussianCurvature, principalCurvatures, nearestPoint
+
+- Shortcuts::DigitizedImplicitShape3D: represents the digitization of an
+  ImplicitShape3D as a predicate Point -> bool (isInside), and adds some
+  services: getLowerBound, getUpperBound, embed, round, getDomain,
+  gridSteps, resolution. Note that pixels/voxels are not stored
+  explicitly, so the resolution may be arbirary high.
+
+- Shortcuts::BinaryImage: represents a black and white image as an array of
+  bits. It is generally a faster representation of a predicate Point
+  -> bool than an implicit digital shape.
+
+- Shortcuts::GrayScaleImage: represents an 8-bits gray-scale image as an array of
+  bytes (unsigned char). 
+
+- Shortcuts::FloatImage: represents a float image as an array of
+  floats.
+
+- Shortcuts::DoubleImage: represents a double image as an array of
+  doubles.
+
+- Shortcuts::LightDigitalSurface: represents a connected digital
+  surface over a binary image with an implicit representation.
+
+- Shortcuts::DigitalSurface: represents an arbitrary digital surface
+  with an explicit surfel set representation.
+
+- Shortcuts::IdxDigitalSurface: represents an indexed digital surface
+  with an explicit array-like representation.
+
+- Shortcuts::Mesh: represents a simple mesh with arbitrary faces, but
+  without topology (should be used when no surface topology is needed
+  or when working with non-manifold surfaces).
+
+- Shortcuts::TriangulatedSurface: represents a triangulated surface
+  which may have boundaries (use HalfEdgeDataStructure).
+
+- Shortcuts::PolygonalSurface: represents a polygonal surface which
+  may have boundaries (use HalfEdgeDataStructure).
+
+- Shortcuts::ColorMap: represents a colormap, i.e. a function
+  assigning a color to a real value.
+
+@subsection dgtal_shortcuts_ssec3_3 Main methods
+
+-# General methods
+  - Shortcuts::defaultParameters: returns the set of all shorcut parameters.
+
+-# ImplicitShape3D methods
+  - Shortcuts::getPolynomialList: returns the list of polynomial shapes predefined for implicit shapes 
+  - Shortcuts::parametersImplicitShape3D: parameters related to 3D implicit shapes (polynomial)
+  - Shortcuts::makeImplicitShape3D: builds a 3D implicit shape
+
+-# KSpace methods
+  - Shortcuts::parametersKSpace: parameters related to Khalimsky spaces (closed)
+  - Shortcuts::getKSpace: overloaded methods for building a Khalimsky space from a domain or an image, from a bounding box, from a digitization process, or from a (indexed or not) digital surface.
+  - Shortcuts::refKSpace: overloaded methods for referencing the Khalimsky space of a (indexed or not) digital surface.
+  - Shortcuts::getCellEmbedder: returns the canonic cell embedder of the given space.
+  - Shortcuts::getSCellEmbedder: returns the canonic signed cell embedder of the given space.
+
+-# DigitizedImplicitShape3D methods
+  - Shortcuts::parametersDigitizedImplicitShape3D: parameters related to shape digitization (bounding box, sampling)
+  - Shortcuts::makeDigitizedImplicitShape3D: digitizes an implicit shape.
+
+-# BinaryImage methods
+  - Shortcuts::parametersBinaryImage: parameters related to binary images (noise, threshold).
+  - Shortcuts::makeBinaryImage: many overloaded methods for creating from scratch, vectorizing shape digitization, loading, copying/noisifying binary images, thresholding gray-scale images.
+  - Shortcuts::saveBinaryImage: saves a binary image to a file.
+
+-# GrayScaleImage methods
+  - Shortcuts::makeGrayScaleImage: overloaded methods for creating from scratch or from binary image, or for loading gray scale images, or for creating a gray-scale image from a float or double image.
+  - Shortcuts::saveGrayScaleImage: saves a gray scale image to a file.
+
+-# FloatImage methods
+  - Shortcuts::makeFloatImage: overloaded methods for creating a float image from a domain or from an implicit shape.
+
+-# DoubleImage methods
+  - Shortcuts::makeDoubleImage: overloaded methods for creating a double image from a domain or from an implicit shape.
+
+-# DigitalSurface methods
+  - Shortcuts::parametersDigitalSurface: parameters related to digital surfaces (surfel adjacency, components, internal heuristics)
+  - Shortcuts::getCellEmbedder: returns the canonic cell embedder of the given (indexed or not) digital surface
+  - Shortcuts::getSCellEmbedder: returns the canonic signed cell embedder of the given (indexed or not) digital surface.
+  - Shortcuts::makeLightDigitalSurface: creates a light connected surface around a (random) big enough component of a binary image 
+  - Shortcuts::makeLightDigitalSurfaces: creates the vector of all light digital surfaces of the binary image or any one of its big components, can also output representant surfels
+  - Shortcuts::makeDigitalSurface: creates an arbitrary (connected or not) digital surface from a binary image, from a digitized implicit shape or from an indexed digital surface.
+  - Shortcuts::makeIdxDigitalSurface: creates an indexed digital surfaces that represents all the boundaries of a binary image or any one of its big components, or any given collection of surfels, or from light digital surface(s).
+  - Shortcuts::getSurfelRange: returns the surfels of a digital surface in the specified traversal order.
+  - Shortcuts::getIdxSurfelRange: returns the indexed surfels of an indexed digital surface in the specified traversal order.
+  - Shortcuts::getPointelRange: returns the pointels of a digital surface in the default order and optionnaly the map Pointel -> Index giving the indices of each pointel, or simply the pointels around a surfel.
+  - Shortcuts::saveOBJ: saves a digital surface as an OBJ file, with optionally positions, normals and colors information.
+
+-# Mesh services
+  - Shortcuts::parametersMesh: parameters related to mesh, triangulated or polygonal surfaces.
+  - Shortcuts::makeTriangulatedSurface: builds the dual triangulated surface approximating an arbitrary digital surface, or the triangulated surface covering a given mesh, or subdivide a polygonal surface into a triangulated surface, or builds the marching cubes triangulated surface approximating an isosurface in a gray-scale image. 
+  - Shortcuts::makePolygonalSurface: builds a polygonal surface from a mesh, or builds the marching cubes polygonal surface approximating an isosurface in a gray-scale image. 
+  - Shortcuts::makePrimalPolygonalSurface: builds the primal polygonal surface of a digital surface
+  - Shortcuts::makeDualPolygonalSurface: builds the dual polygonal surface of a digital surface
+  - Shortcuts::saveOBJ: saves a triangulated or polygonal surface as an OBJ file, with optionnaly normals and colors information.
+
+-# Utilities
+  - Shortcuts::parametersUtilities: parameters related to colormaps.
+  - Shortcuts::getColorMap: returns the specified colormap.
+  - Shortcuts::getZeroTickedColorMap: returns the specified colormap with a tic around zero.
+  - Shortcuts::getRangeMatch: returns the perfect or approximate  match/correspondence between two ranges.
+  - Shortcuts::getMatchedRange: returns the perfectly or approximately matched/corresponding range.
+  - Shortcuts::getPrimalVertices: returns the vertices (possibly consistently ordered along the face) of the given signed cell.
+  - Shortcuts::outputSurfelsAsObj: outputs surfels in standard OBJ file format.
+  - Shortcuts::outputPrimalDigitalSurfaceAsObj: outputs any digital surface in standard OBJ file format as its primal quadrangulated mesh.
+  - Shortcuts::outputPrimalIdxDigitalSurfaceAsObj: outputs any indexed digital surface in standard OBJ file format as its primal quadrangulated mesh.
+  - Shortcuts::outputDualDigitalSurfaceAsObj: outputs any digital surface in standard OBJ file format as its dual polygonal or triangulated mesh.
+
+-# ShapeGeometry services
+  - ShortcutsGeometry::parametersShapeGeometry: parameters related to implicit shape geometry. 
+  - ShortcutsGeometry::getPositions: returns the positions on the 3D implicit shape close to the specified surfels.
+  - ShortcutsGeometry::getNormalVectors: returns the vectors normal to the 3D implicit shape close to the specified surfels.
+  - ShortcutsGeometry::getMeanCurvatures: returns the mean curvatures along the 3D implicit shape close to the specified surfels.
+  - ShortcutsGeometry::getGaussianCurvatures: returns the Gaussian curvatures along the 3D implicit shape close to the specified surfels.
+
+-# GeometryEstimation services
+  - ShortcutsGeometry::parametersGeometryEstimation: parameters related to geometric estimators.
+  - ShortcutsGeometry::getTrivialNormalVectors: returns the trivial (Trivial) normal vectors to the given surfel range  
+  - ShortcutsGeometry::getCTrivialNormalVectors: returns the convolved trivial (CTrivial) normal vectors to the given surfel range
+  - ShortcutsGeometry::getVCMNormalVectors: returns the Voronoi Covariance Measure (VCM) normal vectors to the given surfel range
+  - ShortcutsGeometry::getIINormalVectors: returns the Integral Invariant (II) normal vectors to the given surfel range (embedded in a binary image or a digitized implicit shape)
+  - ShortcutsGeometry::getIIMeanCurvatures: returns the Integral Invariant (II) mean curvatures onto the given surfel range (embedded in a binary image or a digitized implicit shape)
+  - ShortcutsGeometry::getIIGaussianCurvatures: returns the Integral Invariant (II) Gaussian curvatures onto the given surfel range (embedded in a binary image or a digitized implicit shape)
+  - ShortcutsGeometry::orientVectors: reorient a range of vectors so as to point in the same half-space as another range of vectors.
+  - ShortcutsGeometry::getScalarsAbsoluteDifference: return the range of scalars that is the difference of two range of scalars
+  - ShortcutsGeometry::getVectorsAngleDeviation: return the range of scalars that form the angle deviations between two range of vectors
+  - ShortcutsGeometry::getStatistic: return the statistic of the given range of values.
+
+@subsection dgtal_shortcuts_ssec3_4 Parameters
+
+In all methods, \b out parameters are listed before \b in parameters.
+Also, methods whose result can be influenced by global parameters are
+parameterized through a Parameters object. Hence static methods follow this pattern:
+
+\a <return-type> Shortcuts::`fonction-name` ( [ \a <out-parameter(s)> ], [ \a <in-parameter(s)> ], [ Parameters params ] ) 
+
+The simplest way to get default values for global parameters is to
+start with a line:
+
+\code
+auto params = Shortcuts<KSpace>::defaultParameters();
+\endcode
+
+And then to change your parameter settings with Parameters::operator(), for instance:
+
+\code
+params( "gridstep", 0.1 )( "closed", 1 );
+\endcode
+
+You also have the bitwise-or (`operator|`) to merge Parameters.
+
+*/
+
+}

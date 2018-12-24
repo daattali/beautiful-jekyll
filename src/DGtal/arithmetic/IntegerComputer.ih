@@ -1,0 +1,633 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file IntegerComputer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/03/05
+ *
+ * Implementation of inline methods defined in IntegerComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+DGtal::IntegerComputer<TInteger>::~IntegerComputer()
+{}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+DGtal::IntegerComputer<TInteger>::IntegerComputer()
+{}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+DGtal::IntegerComputer<TInteger>::IntegerComputer( const Self & /*other*/ )
+{}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+DGtal::IntegerComputer<TInteger> &
+DGtal::IntegerComputer<TInteger>::operator=( const Self & /*other*/ )
+{
+  return *this;
+}
+//-----------------------------------------------------------------------------
+// ----------------------- Integer services ------------------------------
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::
+isZero( IntegerParamType a )
+{
+  return a == NumberTraits<Integer>::ZERO;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::
+isNotZero( IntegerParamType a )
+{
+  return a != NumberTraits<Integer>::ZERO;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::
+isPositive( IntegerParamType a )
+{
+  return a > NumberTraits<Integer>::ZERO;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::
+isNegative( IntegerParamType a )
+{
+  return a < NumberTraits<Integer>::ZERO;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::
+isPositiveOrZero( IntegerParamType a )
+{
+  return a >= NumberTraits<Integer>::ZERO;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::
+isNegativeOrZero( IntegerParamType a )
+{
+  return a <= NumberTraits<Integer>::ZERO;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+abs( IntegerParamType a )
+{
+  if ( isPositiveOrZero( a ) )
+    return a;
+  else 
+    return -a;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+max( IntegerParamType a, IntegerParamType b )
+{
+  return ( a >= b ) ? a : b;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+max( IntegerParamType a, IntegerParamType b, IntegerParamType c )
+{
+  return max( max(a,b), c );
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+min( IntegerParamType a, IntegerParamType b )
+{
+  return ( a <= b ) ? a : b;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+min( IntegerParamType a, IntegerParamType b, IntegerParamType c )
+{
+  return min( min(a,b), c );
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getEuclideanDiv( Integer & q, Integer & r,
+              IntegerParamType a, IntegerParamType b ) const
+{
+  q = a / b;
+  r = a % b;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+floorDiv( IntegerParamType na, IntegerParamType nb ) const
+{
+  _m_a = na;
+  _m_b = nb;
+  if ( isNegative( _m_b ) )
+    {
+      _m_a=-_m_a;
+      _m_b=-_m_b;
+    }
+  // if ( isNegative( _m_a ) && isNegative( _m_b ) )
+  //   {
+  //     _m_a=-_m_a;
+  //     _m_b=-_m_b;
+  //   }
+  // else if ( isNegative( _m_b ) )
+  //   {
+  //     _m_a=-_m_a;
+  //     _m_b=-_m_b;
+  //   }
+  if ( isPositive( _m_a ) || isZero( _m_a % _m_b ) )
+    return _m_a/_m_b;
+  else
+    return _m_a/_m_b - NumberTraits<Integer>::ONE;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+ceilDiv( IntegerParamType na, IntegerParamType nb ) const
+{
+  _m_a = na;
+  _m_b = nb;
+  if ( isNegative( _m_b ) )
+    {
+      _m_a=-_m_a;
+      _m_b=-_m_b;
+    }
+  // if ( isNegative( _m_a ) && isNegative( _m_b ) )
+  //   {
+  //     _m_a=-_m_a;
+  //     _m_b=-_m_b;
+  //   }
+  // else if ( isNegative( _m_b ) )
+  //   {
+  //     _m_a=-_m_a;
+  //     _m_b=-_m_b;
+  //   }
+  if ( isNegative( _m_a ) || isZero( _m_a % _m_b ) )
+    return _m_a/_m_b;
+  else
+    return _m_a/_m_b + NumberTraits<Integer>::ONE;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getFloorCeilDiv( Integer & fl, Integer & ce,
+                 IntegerParamType na, IntegerParamType nb ) const
+{
+  _m_a = na;
+  _m_b = nb;
+  if ( isNegative( _m_b ) )
+    {
+      _m_a=-_m_a;
+      _m_b=-_m_b;
+    }
+  fl = ce = _m_a/_m_b;
+  if ( isNotZero( _m_a % _m_b ) )
+    {
+      if ( isNegativeOrZero( _m_a ) ) --fl;
+      if ( isPositiveOrZero( _m_a ) ) ++ce;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+staticGcd( IntegerParamType a, IntegerParamType b )
+{
+  Integer _m_a = abs( a );
+  Integer _m_b = abs( b );
+  Integer _m_a0 = max( _m_a, _m_b );
+  Integer _m_a1 = min( _m_a, _m_b );
+  Integer _m_r;
+  while ( isNotZero( _m_a1 ) )
+  {
+    _m_r = _m_a0 % _m_a1;
+    _m_a0 = _m_a1;
+    _m_a1 = _m_r;
+  }
+  return _m_a0;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+gcd( IntegerParamType a, IntegerParamType b ) const
+{
+  _m_a = abs( a );
+  _m_b = abs( b );
+  _m_a0 = max( _m_a, _m_b );
+  _m_a1 = min( _m_a, _m_b );
+  while ( isNotZero( _m_a1 ) )
+  {
+    _m_r = _m_a0 % _m_a1;
+    _m_a0 = _m_a1;
+    _m_a1 = _m_r;
+  }
+  return _m_a0;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getGcd( Integer & g, IntegerParamType a, IntegerParamType b ) const
+{
+  //  std::cerr << "gcd(" << a << ", " << b << ")=";
+  _m_a = abs( a );
+  _m_b = abs( b );
+  _m_a0 = max( _m_a, _m_b );
+  _m_a1 = min( _m_a, _m_b );
+  while ( isNotZero( _m_a1 ) )
+  {
+    _m_r = _m_a0 % _m_a1;
+    _m_a0 = _m_a1;
+    _m_a1 = _m_r;
+  }
+  g = _m_a0;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+getCFrac( std::vector<Integer> & quotients,
+       IntegerParamType a, IntegerParamType b ) const
+{
+  ASSERT( isPositiveOrZero( a ) && isPositiveOrZero( b ) );
+  _m_a0 = a;
+  _m_a1 = b;
+  while ( isNotZero( _m_a1 ) )
+  {
+    getEuclideanDiv( _m_q, _m_r, _m_a0, _m_a1 );
+    quotients.push_back( _m_q );
+    _m_a0 = _m_a1;
+    _m_a1 = _m_r;
+  }
+  return _m_a0;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+template <typename OutputIterator>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+getCFrac( OutputIterator outIt,
+       IntegerParamType a, IntegerParamType b ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::OutputIterator< OutputIterator, Integer > ));
+  ASSERT( isPositiveOrZero( a ) && isPositiveOrZero( b ) );
+  _m_a0 = a;
+  _m_a1 = b;
+  while ( isNotZero( _m_a1 ) )
+  {
+    getEuclideanDiv( _m_q, _m_r, _m_a0, _m_a1 );
+    *outIt++ = _m_q;
+    _m_a0 = _m_a1;
+    _m_a1 = _m_r;
+  }
+  return _m_a0;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Point2I
+DGtal::IntegerComputer<TInteger>::
+convergent( const std::vector<Integer> & quotients,
+            unsigned int k ) const
+{
+  _m_bezout[ 0 ].clear(); // p
+  _m_bezout[ 0 ].push_back( NumberTraits<Integer>::ZERO );
+  _m_bezout[ 0 ].push_back( NumberTraits<Integer>::ONE );
+  _m_bezout[ 1 ].clear(); // q
+  _m_bezout[ 1 ].push_back( NumberTraits<Integer>::ONE );
+  _m_bezout[ 1 ].push_back( NumberTraits<Integer>::ZERO );
+  if ( k >= quotients.size() ) 
+    k = (quotients.size() - 1);
+  for ( unsigned int i = 0; i <= k; ++i )
+    {
+      _m_bezout[ 0 ].push_back( quotients[ i ] * _m_bezout[ 0 ][ i + 1 ]
+                                + _m_bezout[ 0 ][ i ] );
+      _m_bezout[ 1 ].push_back( quotients[ i ] * _m_bezout[ 1 ][ i + 1 ]
+                                + _m_bezout[ 1 ][ i ] );
+    }
+  _m_v[ 0 ] = _m_bezout[ 0 ].back();
+  _m_v[ 1 ] = _m_bezout[ 1 ].back();
+  return _m_v;
+}
+//-----------------------------------------------------------------------------
+// ----------------------- Point2I services ------------------------------
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+reduce( Vector2I & p ) const
+{
+  _m_a = gcd( p[ 0 ], p[ 1 ] );
+  if ( ( _m_a != NumberTraits<Integer>::ONE ) && ( isNotZero( _m_a ) ) )
+    p /= _m_a;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+crossProduct( const Vector2I & u, const Vector2I & v) const
+{
+  _m_a0 = u[ 0 ] * v[ 1 ];
+  _m_a1 = u[ 1 ] * v[ 0 ];
+  return _m_a0 - _m_a1;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getCrossProduct( Integer & cp, 
+                 const Vector2I & u, const Vector2I & v) const
+{
+  cp = u[ 0 ] * v[ 1 ];
+  cp -= u[ 1 ] * v[ 0 ];
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+dotProduct( const Vector2I & u, const Vector2I & v ) const
+{
+  _m_a0 = u[ 0 ] * v[ 0 ];
+  _m_a1 = u[ 1 ] * v[ 1 ];
+  return _m_a0 + _m_a1;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getDotProduct( Integer & dp, 
+               const Vector2I & u, const Vector2I & v) const
+{
+  dp = u[ 0 ] * v[ 0 ];
+  dp += u[ 1 ] * v[ 1 ];
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+typename DGtal::IntegerComputer<TInteger>::Vector2I
+DGtal::IntegerComputer<TInteger>::
+extendedEuclid( IntegerParamType a, IntegerParamType b, 
+                IntegerParamType c ) const
+{
+  if( isZero( a ) )  return Point2I( NumberTraits<Integer>::ZERO, b * c );
+  if( isZero( b ) )  return Point2I( a * c, NumberTraits<Integer>::ZERO );
+
+  for ( unsigned int i = 0; i < 4; ++i )
+    _m_bezout[ i ].clear();
+
+  _m_bezout[ 0 ].push_back( abs( a ) );
+  _m_bezout[ 0 ].push_back( abs( b ) );
+  _m_bezout[ 1 ].push_back( NumberTraits<Integer>::ZERO );
+  _m_bezout[ 2 ].push_back( NumberTraits<Integer>::ONE );
+  _m_bezout[ 2 ].push_back( NumberTraits<Integer>::ZERO );
+  _m_bezout[ 3 ].push_back( NumberTraits<Integer>::ZERO );
+  _m_bezout[ 3 ].push_back( NumberTraits<Integer>::ONE );
+  
+  unsigned int k = 0; // index of the iteration during the computation.
+  while( isNotZero( _m_bezout[ 0 ][ k+1 ] ) )
+    {
+      _m_bezout[ 1 ].push_back( _m_bezout[ 0 ][ k ] 
+                                / _m_bezout[ 0 ][ k+1 ] );
+      _m_bezout[ 0 ].push_back( _m_bezout[ 0 ][ k ] 
+                                % _m_bezout[ 0 ][ k+1 ] );
+      _m_bezout[ 2 ].push_back( _m_bezout[ 2 ][ k ] 
+                                - _m_bezout[ 1 ][ k+1 ]
+                                * _m_bezout[ 2 ][ k+1 ] );
+      _m_bezout[ 3 ].push_back( _m_bezout[ 3 ][ k ] 
+                                - _m_bezout[ 1 ][ k+1 ]
+                                *_m_bezout[ 3 ][ k+1 ] );
+      ++k;
+    }
+  
+  _m_v[ 0 ] = _m_bezout[ 2 ][ k ];
+  _m_v[ 1 ] = _m_bezout[ 3 ][ k ];
+  if ( k % 2 != 0 )
+    { // odd case
+      _m_v[ 0 ] = abs( b ) + _m_bezout[ 2 ][ k ];
+      _m_v[ 1 ] = -abs( a ) + _m_bezout[ 3 ][ k ];
+    }
+  // choose sgn(a) = sgn(x) when x != 0, iff c > 0
+  // |x| <= |bc|, |y| < |ac|
+  _m_v *= c / _m_bezout[ 0 ][ k ]; // c / gcd(a,b)
+  if ( isNegative( a ) ) _m_v[ 0 ] = - _m_v[ 0 ];
+  if ( isNegative( b ) ) _m_v[ 1 ] = - _m_v[ 1 ];
+  // std::cout << "a * x + b * y == c, " 
+  //           << a << " * " << _m_v[ 0 ] << " + " << b << " * " << _m_v[ 1 ] << " == " << c << std::endl;
+  ASSERT( (a*_m_v[ 0 ]+b*_m_v[ 1 ]) == c );
+  ASSERT( isNegative( c ) || ( ( isPositive( a ) == isPositive( _m_v[ 0 ] ) ) || isZero( _m_v[ 0 ] ) ) );
+  ASSERT( isPositive( c ) || ( ( isPositive( a ) == isNegative( _m_v[ 0 ] ) ) || isZero( _m_v[ 0 ] ) ) );
+  ASSERT( abs( _m_v[ 0 ] ) <= abs( b*c ) );
+  ASSERT( abs( _m_v[ 1 ] ) < abs( a*c ) );
+  return _m_v;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getCoefficientIntersection( Integer & fl, Integer & ce,
+                            const Vector2I & p, 
+                            const Vector2I & u, 
+                            const Vector2I & N, 
+                            IntegerParamType c ) const
+{
+  getDotProduct( _m_c0, p, N );
+  getDotProduct( _m_c1, u, N );
+  _m_c2 = c - _m_c0;
+  fl = floorDiv( _m_c2, _m_c1 );
+  ce = ceilDiv( _m_c2, _m_c1 );
+  // getFloorCeilDiv( fl, ce, _m_c2, _m_c1 );
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getValidBezout ( Vector2I & v, 
+                 const Point2I & A, const Vector2I & u,
+                 const Vector2I & N, IntegerParamType c, 
+                 const Vector2I & N2, IntegerParamType c2, 
+                 bool compute_v ) const
+{
+  if ( compute_v )
+    {
+      v = extendedEuclid( -u[ 1 ], u[ 0 ], NumberTraits<Integer>::ONE );
+      _m_v0 = A + v;
+      getDotProduct( _m_c0, _m_v0, N );
+      if ( _m_c0 > c )
+	{
+	  v[ 0 ] = -v[ 0 ];
+	  v[ 1 ] = -v[ 1 ];
+          _m_v0 = A + v;
+	}
+    }
+  else _m_v0 = A + v;
+  getCoefficientIntersection( _m_a0, _m_a1, 
+                              _m_v0, u, N2, c2 );
+  _m_v1 = u * _m_a0; // floor value
+  v += _m_v1;
+  ASSERT( N2.dot( A + v ) <= c2 );
+  ASSERT( N2.dot( A + v + u ) > c2 );
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+reduce( Vector3I & p ) const
+{
+  _m_a = gcd( p[ 0 ], p[ 1 ] );
+  _m_r = gcd( _m_a, p[ 2 ] );
+  p /= _m_r;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+typename DGtal::IntegerComputer<TInteger>::Integer
+DGtal::IntegerComputer<TInteger>::
+dotProduct( const Vector3I & u, const Vector3I & v) const
+{
+  _m_a0 = u[ 0 ] * v[ 0 ];
+  _m_a0 += u[ 1 ] * v[ 1 ];
+  _m_a0 += u[ 2 ] * v[ 2 ];
+  return _m_a0;
+}
+//-----------------------------------------------------------------------------
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::
+getDotProduct( Integer & dp, 
+            const Vector3I & u, const Vector3I & v) const
+{
+  dp =  u[ 0 ] * v[ 0 ];
+  dp += u[ 1 ] * v[ 1 ];
+  dp += u[ 2 ] * v[ 2 ];
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TInteger>
+inline
+void
+DGtal::IntegerComputer<TInteger>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[IntegerComputer]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TInteger>
+inline
+bool
+DGtal::IntegerComputer<TInteger>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TInteger>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const IntegerComputer<TInteger> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

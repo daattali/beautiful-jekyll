@@ -1,0 +1,468 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file IndexedDigitalSurface.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2017/02/05
+ *
+ * Implementation of inline methods defined in IndexedDigitalSurface.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <algorithm>
+#include "DGtal/topology/DigitalSurface.h"
+#include "DGtal/topology/CanonicSCellEmbedder.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+bool
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::build
+( ConstAlias< DigitalSurfaceContainer > surfContainer )
+{
+  if ( isHEDSValid ) {
+    trace.warning() << "[DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::build()]"
+                    << " attempting to rebuild a polygonal surface." << std::endl;
+    return false;
+  }
+  myContainer = CountedConstPtrOrConstPtr< DigitalSurfaceContainer >( surfContainer );
+  DigitalSurface< DigitalSurfaceContainer > surface( *myContainer );
+  CanonicSCellEmbedder< KSpace > embedder( myContainer->space() );
+  // Numbering surfels / vertices
+  VertexIndex i = 0;
+  for ( SCell aSurfel : surface )
+    {
+      myPositions.push_back( embedder( aSurfel ) );
+      mySurfel2VertexIndex[ aSurfel ] = i++;
+    }
+  // Numbering pointels / faces
+  FaceIndex   j = 0;
+  auto faces = surface.allClosedFaces();
+  for ( auto aFace : faces )
+    {
+      auto vtcs = surface.verticesAroundFace( aFace );
+      PolygonalFace idx_face( vtcs.size() );
+      std::transform( vtcs.cbegin(), vtcs.cend(), idx_face.begin(),
+		      [&]
+		      ( const SCell& v ) { return mySurfel2VertexIndex[ v ]; } );
+      myPolygonalFaces.push_back( idx_face );
+      myPointel2FaceIndex[ surface.pivot( aFace ) ] = j++;
+    }
+  isHEDSValid = myHEDS.build( myPolygonalFaces );
+  if ( myHEDS.nbVertices() != myPositions.size() ) {
+    trace.warning() << "[DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::build()]"
+                    << " the size of vertex data array (s1) and the number of vertices (s2) in the polygonal surface does not match:"
+                    << " s1=" << myPositions.size()
+                    << " s2=" << myHEDS.nbVertices() << std::endl;
+    isHEDSValid = false;
+  }
+  else
+    { // We build the mapping for vertices and faces
+      myVertexIndex2Surfel.resize( nbVertices() );
+      myFaceIndex2Pointel .resize( nbFaces() );
+      myArc2Linel         .resize( nbArcs() );
+      for ( auto p : mySurfel2VertexIndex )
+	myVertexIndex2Surfel[ p.second ] = p.first;
+      for ( auto p : myPointel2FaceIndex )
+	myFaceIndex2Pointel [ p.second ] = p.first;
+      // We build the mapping for arcs
+      // Visiting arcs
+      for ( Arc fi = 0; fi < myArc2Linel.size(); ++fi  )
+	{
+	  auto  vi_vj = myHEDS.arcFromHalfEdgeIndex( fi );
+	  SCell surfi = myVertexIndex2Surfel[ vi_vj.first ];
+	  SCell surfj = myVertexIndex2Surfel[ vi_vj.second ];
+	  SCell   lnl = surface.separator( surface.arc( surfi, surfj ) );
+	  myLinel2Arc[ lnl ] = fi;
+	  myArc2Linel[ fi ]  = lnl;
+	  // trace.info() << "- Arc " << fi
+	  // 	       << " (" << vi_vj.first << "," << vi_vj.second << ") "
+	  // 	       << " (" << surfi << "," << surfj << ") "
+	  // 	       << " lnl=" << lnl << space().sDim( lnl ) << std::endl;
+	}
+    }
+  return isHEDSValid;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+void
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::clear()
+{
+  isHEDSValid = false;
+  myHEDS.clear();
+  myContainer = 0;
+  myPositions.clear();
+  myPolygonalFaces.clear();
+  mySurfel2VertexIndex.clear();
+  myLinel2Arc.clear();
+  myPointel2FaceIndex.clear();
+  myVertexIndex2Surfel.clear();
+  myArc2Linel.clear();
+  myFaceIndex2Pointel.clear();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::RealPoint&
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::position( Vertex v )
+{
+  ASSERT( 0 <= v && v < myPositions.size() );
+  return myPositions[ v ];
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+const typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::RealPoint&
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::position( Vertex v ) const
+{
+  ASSERT( 0 <= v && v < myPositions.size() );
+  return myPositions[ v ];
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Size
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::size() const
+{
+  return myPositions.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Size
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::bestCapacity() const
+{
+  return 4;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Size
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::degree( const Vertex & v ) const
+{
+  ASSERT( isValid() );
+  return myHEDS.nbNeighboringVertices( v );
+}
+    
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+template <typename OutputIterator>
+inline
+void  
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::writeNeighbors
+( OutputIterator &it, const Vertex & v ) const
+{
+  ASSERT( isValid() );
+  typedef HalfEdgeDataStructure::VertexIndexRange VertexIndexRange;
+  VertexIndexRange neighbors;
+  myHEDS.getNeighboringVertices( v, neighbors );
+  for ( Vertex nv : neighbors ) *it++ = nv;
+}
+    
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+template <typename OutputIterator, typename VertexPredicate>
+inline
+void  
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::writeNeighbors
+( OutputIterator &it, const Vertex & v, const VertexPredicate & pred) const
+{
+  ASSERT( isValid() );
+  typedef HalfEdgeDataStructure::VertexIndexRange VertexIndexRange;
+  VertexIndexRange neighbors;
+  myHEDS.getNeighboringVertices( v, neighbors );
+  for ( Vertex nv : neighbors ) if ( pred( nv ) ) *it++ = nv;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::ArcRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::outArcs( const Vertex & v ) const
+{
+  ArcRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromVertexIndex( v );
+  Index hei = start_hei;
+  do
+    {
+      const HalfEdge& he = myHEDS.halfEdge( hei );
+      if( INVALID_FACE != he.face ) result.push_back( hei );
+      hei = myHEDS.halfEdge( he.opposite ).next;
+    }
+  while ( hei != start_hei );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::ArcRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::inArcs( const Vertex & v ) const
+{
+  ArcRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromVertexIndex( v );
+  Index hei = start_hei;
+  do
+    {
+      const HalfEdge& he = myHEDS.halfEdge( hei );
+      if( INVALID_FACE != he.face ) result.push_back( he.opposite );
+      hei = myHEDS.halfEdge( he.opposite ).next;
+    }
+  while ( hei != start_hei );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::FaceRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::facesAroundVertex( const Vertex & v ) const
+{
+  FaceRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromVertexIndex( v );
+  Index hei = start_hei;
+  do
+    {
+      const HalfEdge& he = myHEDS.halfEdge( hei );
+      if( INVALID_FACE != he.face ) result.push_back( he.face );
+      hei = myHEDS.halfEdge( he.opposite ).next;
+    }
+  while ( hei != start_hei );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Vertex
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::head( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).toVertex;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Vertex
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::tail( const Arc & a ) const
+{
+  return head( opposite( a ) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Arc
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::opposite( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).opposite;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Arc
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::next( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).next;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Arc
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::arc
+( const Vertex & t, const Vertex & h ) const
+{
+  return myHEDS.halfEdgeIndexFromArc( t, h );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::Face
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::faceAroundArc( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).face;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::FaceRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::facesAroundArc( const Arc & a ) const
+{
+  FaceRange result;
+  Face f = faceAroundArc( a );
+  if ( f != INVALID_FACE ) result.push_back( f );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::VertexRange 
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::verticesAroundFace( const Face & f ) const
+{
+  VertexRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromFaceIndex( f );
+  Index hei = start_hei;
+  do {
+    const HalfEdge& he = myHEDS.halfEdge( hei );
+    ASSERT( ( he.face == f )
+	    && "[IndexedDigitalSurface::verticesAroundFace] invalid face." );
+    result.push_back( he.toVertex );
+    hei = he.next;
+  } while ( hei != start_hei );
+  ASSERT( result.size() >= 3 );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+bool
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::isVertexBoundary( const Vertex& v ) const
+{
+  return myHEDS.isVertexBoundary( v );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+bool
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::isArcBoundary( const Arc& v ) const
+{
+  return INVALID_FACE == myHEDS.halfEdge( v ).face;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::FaceRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::allFaces() const
+{
+  FaceRange result( nbFaces() );
+  for ( Face fi = 0; fi < result.size(); ++fi )
+    result[ fi ] = fi;
+  return result;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::ArcRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::allArcs() const
+{
+  ArcRange result( nbArcs() );
+  for ( Arc fi = 0; fi < result.size(); ++fi )
+    result[ fi ] = fi;
+  return result;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::VertexRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::allVertices() const
+{
+  VertexRange result( nbVertices() );
+  for ( Vertex fi = 0; fi < result.size(); ++fi )
+    result[ fi ] = fi;
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::ArcRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::allBoundaryArcs() const
+{
+  return myHEDS.boundaryHalfEdgeIndices();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::VertexRange
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::allBoundaryVertices() const
+{
+  return myHEDS.boundaryVertices();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TDigitalSurfaceContainer>
+inline
+void
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[IndexedDigitalSurface #V=" << myHEDS.nbVertices()
+      << " #E=" << myHEDS.nbEdges() << " #F=" << myHEDS.nbFaces()
+      << " Chi=" << Euler() << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TDigitalSurfaceContainer>
+inline
+bool
+DGtal::IndexedDigitalSurface<TDigitalSurfaceContainer>::isValid() const
+{
+  return isHEDSValid;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TDigitalSurfaceContainer>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const IndexedDigitalSurface<TDigitalSurfaceContainer> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

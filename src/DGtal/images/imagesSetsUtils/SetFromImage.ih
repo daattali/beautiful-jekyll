@@ -1,0 +1,56 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SetFromImage.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/03/26
+ *
+ * Implementation of inline methods defined in SetFromImage.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+template<typename Set>
+template<typename Image, typename ForegroundPredicate>
+inline
+void 
+DGtal::SetFromImage<Set>::append(Set &aSet,
+         const ForegroundPredicate &isForeground,
+         typename Image::Domain::ConstIterator itBegin, 
+         typename Image::Domain::ConstIterator itEnd)
+{
+  //BOOST_CONCEPT_ASSERT(( CImage<Image> ));
+  
+  for( ; itBegin != itEnd;  ++itBegin)
+    if (isForeground(*itBegin))
+      aSet.insert( *itBegin);
+}
+

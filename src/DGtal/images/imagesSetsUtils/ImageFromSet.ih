@@ -1,0 +1,82 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImageFromSet.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/03/26
+ *
+ * Implementation of inline methods defined in ImageFromSet.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+
+template <typename Image>
+template <typename Set>
+inline
+Image 
+DGtal::ImageFromSet<Image>::create(const Set &aSet, const Value &defaultValue,
+           const bool addBorder,
+           typename Set::ConstIterator itBegin, 
+           typename Set::ConstIterator itEnd)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet<Set> ));
+ 
+  typename Set::Point lower,upper;
+  typename Set::Point dec;
+  
+  if (addBorder)
+      dec = Set::Point::diagonal(1);
+ 
+  aSet.computeBoundingBox(lower,upper);
+
+  Image image(typename Image::Domain(lower - dec ,upper + dec));
+  append<Set>(image,defaultValue, itBegin, itEnd);
+  
+  return image;
+  
+}
+
+
+template<typename Image>
+template<typename Set>
+inline
+void 
+DGtal::ImageFromSet<Image>::append(Image &aImage, const Value &defaultValue,
+           typename Set::ConstIterator itBegin, 
+           typename Set::ConstIterator itEnd)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet<Set> ));
+ 
+  typename Image::Domain domain = aImage.domain();
+
+  for( ; itBegin != itEnd;  ++itBegin)
+    if (domain.isInside( *itBegin))
+      aImage.setValue( *itBegin, defaultValue);
+}
+

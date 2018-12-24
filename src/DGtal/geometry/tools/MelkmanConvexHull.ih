@@ -1,0 +1,260 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MelkmanConvexHull.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/12/20
+ *
+ * Implementation of inline methods defined in MelkmanConvexHull.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::MelkmanConvexHull( Alias<Functor> aFunctor  )
+  : myContainer(), 
+    myBackwardPredicate( aFunctor ),
+    myForwardPredicate( aFunctor )
+{
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::MelkmanConvexHull()
+  : myContainer(),
+    myBackwardPredicate(myDefaultFunctor), 
+    myForwardPredicate(myDefaultFunctor)
+{  
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+void
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::add(const Point& aPoint)
+{
+
+  using namespace DGtal::functions::Hull2D; 
+
+  if (myContainer.size() < 4)
+    {
+      if (myContainer.size() == 0)
+	{
+    myFirstPoint = aPoint;
+
+    myContainer.push_back( aPoint );
+	  myContainer.push_front( aPoint ); 
+	}
+      else if (myContainer.size() == 2)
+	{
+	  myContainer.pop_back(); 
+	  myContainer.push_back( aPoint ); 
+	  myContainer.push_front( aPoint ); 
+	}
+      else if (myContainer.size() == 3)
+	{
+	  //required to deal with the case where the k first input points are aligned. 
+	  if ( !myBackwardPredicate( *boost::next(myContainer.rbegin()), myContainer.back(), aPoint ) )
+	    myContainer.pop_back();
+	  myContainer.push_back( aPoint ); 
+	  if ( !myForwardPredicate( *boost::next(myContainer.begin()), myContainer.front(), aPoint ) )
+	    myContainer.pop_front(); 
+	  myContainer.push_front( aPoint ); 
+	}
+    }
+  else
+    {
+      if ( ( !myBackwardPredicate( *boost::next(myContainer.rbegin()), myContainer.back(), aPoint ) || 
+	     !myForwardPredicate( *boost::next(myContainer.begin()), myContainer.front(), aPoint ) ) )
+	{
+	  //backward scan
+	  updateHullWithAdaptedStack( backStack(myContainer), aPoint, myBackwardPredicate );
+	  myContainer.push_back( aPoint ); 
+	  
+	  //forward scan
+	  updateHullWithAdaptedStack( frontStack(myContainer), aPoint, myForwardPredicate );
+	  myContainer.push_front( aPoint ); 
+	}
+    }
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+typename DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::ConstIterator
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::begin() const
+{
+  if (myContainer.size() == 0)
+    return myContainer.end(); 
+  else
+    return boost::next(myContainer.begin()); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+typename DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::ConstIterator
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::end() const
+{
+  return myContainer.end(); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+void
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[MelkmanConvexHull]" << " #"; 
+  if ( myContainer.size() == 0 ) 
+    out << " 0 " << std::endl;
+  else 
+    out << myContainer.size() - 1 << std::endl; 
+  std::copy( myContainer.begin(), myContainer.end(), 
+	     std::ostream_iterator<Point>( out, "," ) );
+  out << std::endl; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+bool
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::isValid() const
+{
+    return true;
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>&  
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::operator= (const Self & mch)
+{
+    myContainer = mch.myContainer;
+    return *this;
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+const TPoint & 
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::operator[](unsigned int i) const
+{
+  ASSERT( i < myContainer.size() );
+  return myContainer[i];
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+unsigned int 
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::size() const
+{
+  // by definition the first and last points of the deque are the same.
+  return myContainer.size()-1;
+
+}
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+void
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::clear()
+{
+  myContainer.clear();
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TOrientationFunctor>
+inline
+void
+DGtal::MelkmanConvexHull<TPoint, TOrientationFunctor>::reverse()
+{
+  // if convexhull is reduced into a single segment no need to reverse anything.
+  if(myContainer.size()<=3)
+    return;
+  TPoint theLast = myContainer.back();
+  myContainer.pop_back();
+  bool foundFirst = myContainer.back() == myFirstPoint;
+  while(!foundFirst){
+    myContainer.push_front(myContainer.back());
+    myContainer.pop_back();
+    foundFirst = myContainer.back() == myFirstPoint;
+  }
+  myContainer.push_front(myContainer.back());
+  myFirstPoint = theLast;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TPoint, typename TOrientationFunctor>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const MelkmanConvexHull<TPoint, TOrientationFunctor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+template <typename ForwardIterator, 
+	  typename OutputIterator, 
+	  typename Functor >
+inline
+void DGtal::functions::Hull2D::
+melkmanConvexHullAlgorithm(const ForwardIterator& itb, const ForwardIterator& ite,  
+			   OutputIterator res, 
+			   Functor& aFunctor )
+{
+  BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<ForwardIterator> )); 
+  BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<ForwardIterator> )); 
+  typedef typename DGtal::IteratorCirculatorTraits<ForwardIterator>::Value Point; 
+  BOOST_CONCEPT_ASSERT(( boost_concepts::IncrementableIteratorConcept<OutputIterator> )); 
+  BOOST_CONCEPT_ASSERT(( boost_concepts::WritableIteratorConcept<OutputIterator,Point> )); 
+
+  if ( itb != ite )
+    {
+
+      //convex hull computation with Melkman's algorithm
+      DGtal::MelkmanConvexHull<Point, Functor> ch( aFunctor ); 
+      for (ForwardIterator it = itb; it != ite; ++it)
+	ch.add( *it ); 
+
+      std::copy( ch.begin(), ch.end(), res );
+    }
+}
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

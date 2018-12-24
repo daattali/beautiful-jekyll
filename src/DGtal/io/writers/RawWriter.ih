@@ -1,0 +1,110 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file RawWriter.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/22
+ *
+ * Implementation of inline methods defined in RawWriter.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstddef>
+#include <cstdlib>
+#include <fstream>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+template <typename I,typename C>
+template <typename Word>
+bool
+DGtal::RawWriter<I, C>::exportRaw(const std::string& filename, const I& aImage, const Functor& aFunctor)
+{
+  BOOST_CONCEPT_ASSERT((  DGtal::concepts::CUnaryFunctor<Functor, Value, Word> ));
+
+  std::ofstream out;
+  typename I::Domain domain = aImage.domain();
+  typename I::Value val;
+
+  out.open(filename.c_str(), std::ios_base::binary);
+
+  //We scan the domain
+  for (typename I::Domain::ConstIterator it=domain.begin(), itend=domain.end(); it!=itend; ++it)
+  {
+      val = aImage(*it);
+      raw_writer_write_word<Word>(out, aFunctor(val));
+  }
+
+  out.close();
+
+  ///@todo catch IOerror exception
+  return true;
+}
+
+template <typename I,typename C>
+bool
+DGtal::RawWriter<I, C>::exportRaw8(const std::string& filename, const I& aImage, const Functor& aFunctor)
+{
+    return exportRaw<uint8_t>(filename, aImage, aFunctor);
+}
+
+template <typename I,typename C>
+bool
+DGtal::RawWriter<I, C>::exportRaw16(const std::string& filename, const I& aImage, const Functor& aFunctor)
+{
+    return exportRaw<uint16_t>(filename, aImage, aFunctor);
+}
+
+template <typename I,typename C>
+bool
+DGtal::RawWriter<I, C>::exportRaw32(const std::string& filename, const I& aImage, const Functor& aFunctor)
+{
+    return exportRaw<uint32_t>(filename, aImage, aFunctor);
+}
+
+namespace DGtal
+{
+
+template <>
+inline
+std::ostream&
+raw_writer_write_word<uint8_t>(std::ostream& outs, uint8_t value)
+{
+    outs.put(value);
+    return outs;
+}
+
+}
+
+template <typename Word>
+std::ostream&
+DGtal::raw_writer_write_word(std::ostream& outs, Word value)
+{
+    for ( std::size_t i = 0; i < sizeof(Word); ++i )
+        outs.put( reinterpret_cast<unsigned char*>(&value)[i] );
+
+    return outs;
+}
+

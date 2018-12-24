@@ -1,0 +1,168 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2018/06/26
+ *
+ * Implementation of inline methods defined in Parameters.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+// ----------------------------------------------------------------------------
+inline
+DGtal::ParameterValue::ParameterValue ( const std::string& v )
+  : myValue( v )
+{}
+// ----------------------------------------------------------------------------
+template <typename X>
+DGtal::ParameterValue::ParameterValue ( const X& v )
+  : myValue( detail::ValueConverter< X, std::string>::cast( v ) )
+{} 
+// ----------------------------------------------------------------------------
+template <typename T>
+T
+DGtal::ParameterValue::as() const
+{
+  return detail::ValueConverter< std::string, T >::cast( myValue );
+}
+// ----------------------------------------------------------------------------
+inline
+void
+DGtal::ParameterValue::selfDisplay ( std::ostream & out ) const
+{
+  out << myValue;
+}
+
+// ----------------------------------------------------------------------------
+inline
+DGtal::Parameters::Parameters( std::string name, ParameterValue pv )
+{
+  operator()( name, pv );
+}
+// ----------------------------------------------------------------------------
+inline
+DGtal::Parameters::Self&
+DGtal::Parameters::operator()( std::string name, ParameterValue pv )
+{
+  myParameters[ name ] = pv;
+  return *this;
+}
+// ----------------------------------------------------------------------------
+inline
+DGtal::Parameters::Self&
+DGtal::Parameters::operator()( const Parameters& params )
+{
+  // if keys collide, values of params overrides this's values.
+  for(auto& it : params.myParameters)
+    myParameters[it.first] = it.second;
+  return *this;
+}
+// ----------------------------------------------------------------------------
+inline
+DGtal::Parameters::Self
+DGtal::Parameters::operator|( const Self& other ) const
+{
+  return Parameters( *this )( other );
+}
+
+// ----------------------------------------------------------------------------
+inline
+DGtal::ParameterValue
+DGtal::Parameters::operator[]( std::string name ) const
+{
+  auto it = myParameters.find( name );
+  return ( it != myParameters.end() ) ? it->second : ParameterValue( "UNSET PARAMETER" );
+}
+// ----------------------------------------------------------------------------
+inline
+bool
+DGtal::Parameters::count( std::string name ) const
+{
+  auto it = myParameters.find( name );
+  return it != myParameters.end();
+}
+
+// ----------------------------------------------------------------------------
+inline
+void
+DGtal::Parameters::selfDisplay ( std::ostream & out ) const
+{
+  out << "{ ";
+  for ( auto it = myParameters.begin(), itE = myParameters.end();
+	it != itE; )
+    {
+      out << it->first << ": " << it->second;
+      ++it;
+      if ( it != itE ) out << ", ";
+    }
+  out << " }";
+}
+// ----------------------------------------------------------------------------
+inline
+bool
+DGtal::Parameters::isValid() const
+{
+  return true;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+// ----------------------------------------------------------------------------
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+		    const ParameterValue & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+// ----------------------------------------------------------------------------
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+		    const Parameters & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

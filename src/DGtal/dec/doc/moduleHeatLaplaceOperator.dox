@@ -1,0 +1,178 @@
+/** 
+ * @file moduleHeatLaplaceOperator.dox 
+ * @author Thomas Caissard (\c thomas.caissard@liris.cnrs.fr ) 
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2017/09/28
+ *
+ * Documentation file for feature HeatLaplaceOperator
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class. Do not forget to add
+ * an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleHeatLaplaceOperator Heat Kernel Laplace--Beltrami Operator
+@writers Caissard Thomas
+
+[TOC]
+
+\section sectHeatIntro Continuous Laplace--Beltrami operator
+
+Let \f$M\f$ be a smooth manifold. The linear operator \f$\Delta : C^2(\partial
+M) \rightarrow C^2(\partial M)\f$ (where \f$C^2(\partial M)\f$ is the set of
+twice differentiable function acting on \f$\partial M\f$) defined by 
+\f[ \Delta u = \nabla^2 u = \nabla \cdot \nabla u, \f] is called the Laplace--Beltrami
+operator. 
+@note The sign of the operator is arbitrary, and one may found in the
+litterature the alternative definition \f$-\nabla \cdot \nabla u\f$ for
+\f$\Delta u\f$.
+
+For example, in \f$ \mathbb{R}^d \f$, the operator is the sum of the
+second derivatives: \f[ \Delta_{\mathbb{R}^d} u(x) = \sum_i
+\frac{\partial^2}{\partial x_i^2}u(x). \f] This operator can be expressed in
+local coordinates system on a manifold given the metric tensor \f$g_{ij}\f$: \f[ \Delta
+u = \frac{1}{\sqrt{g}} \partial_i \left( \sqrt{|g|}g^{ij}\partial_j u \right),
+\f] with the Einstein notation implied (meaning that repeated indexes are summed
+over), \f$ \sqrt{|g|}\f$ is the absolute value of the determinant of \f$ g_{ij}
+\f$ and \f$ \partial_i = \frac{\partial}{\partial x^i}\f$ is the basis of the
+tangent plane \f$T_p M\f$ at a point \f$p\f$.
+
+The operator can also be written in a coordinate-free manner using the exterior
+calculus theory. Given a function \f$w\f$ (ie. a 0-form) we have \f[ \Delta w =
+\star d \star d w, \f] where \f$\star\f$ is the hodge operator and \f$ d \f$ the
+exterior derivative.
+
+\section subBelkin The Laplace--Beltrami operator from the Heat Equation
+
+Let \f$g : \partial M \times (0, T) \rightarrow \mathbb{R}\f$ be a
+time-dependent function which solves the partial differential equation called
+the heat equation: \f[ \Delta g(x, t) = \frac{\partial}{\partial t}g(x, t), \f]
+with initial condition \f$u = g(\cdot, 0) : \partial M \rightarrow \mathbb{R}\f$
+which is the initial temperature distribution.
+
+\image html heat_diffusion_manifold.png "The heat diffusion on a manifold. The heat kernel is represented in green, the geodesic distance in blue."
+
+An exact solution is: \f[ \int_{y\in \partial M} p(t, x, y) u(y) dy, \f] where
+\f$p \in C^\infty(\mathbb{R}^+ \times \partial M \times \partial M)\f$ is the
+heat kernel \cite rosenberg.
+
+There is a wide range of studies on the behavior of \f$p\f$ when \f$t\f$ tends
+to zero (called small time asymptotics of diffusion process). Early works
+include the famous Varadhan formula \cite varadhan on closed manifolds with or
+without borders later extended by Molchanov \cite molchanov on a wider class of
+shapes: \f[ p(t,x,y) \mathrel{\mathop{\sim}\limits_{t \rightarrow 0}} \frac{e^{-
+\frac{d(x,y)^2}{4 t}}}{(4\pi t)^{\frac{d}{2}}} \f] where \f$d(\cdot,\cdot)\f$
+corresponds to the intrinsic geodesic distance. This approximation is not robust
+in practice and very sensitive to both geodesic distance approximation and
+numerical errors \cite Crane2013. Fortunately we know from Belkin et al. \cite BelkinN08 
+that in small time asymptotics, the geodesic
+distance can be approximated by the \f$l_2\f$ distance: \f[ p(t,x,y)
+\mathrel{\mathop{\sim}\limits_{t \rightarrow 0}} \tilde{p}(t,x,y) := \frac{e^{ -
+\frac{||x - y||^2}{4t} }}{(4 \pi t)^{\frac{d}{2}}}, \f] which leads to the
+following approximated solution of the heat equation: \f[ g(x,t) = \int_{y \in
+\partial M} \tilde{p}(t,x,y) u(y)dy. \f]
+
+By injecting the approximation into the heat equation we obtain: \f[ \Delta g(x,
+t) = \frac{\partial}{\partial t} \int_{ y\in \partial M } \tilde{p}(t, x, y)
+u(y)dy. \f] Using a finite difference on \f$t\f$, and the basic property that
+the integral of the heat kernel must be one: \f[ \Delta g(x, t) = \lim\limits_{t
+\rightarrow 0} \frac{1}{t} \int_{y\in \partial M } \tilde{p}(t, x, y) (u(y) -
+u(x))dy. \f]
+
+\section secDiscre The Discretization on Digital Surfaces
+
+We adapt the formulation of Belkin et al. on digital surfaces (see \cite CaissardDGCI2017).
+In the continuous heat kernel formulation, the parameter \f$t\f$ must tend to zero. 
+On digital surfaces, we set \f$t\f$ as a function of the grid step \f$h\f$, denoted
+\f$t_h\f$, that tends to zero as \f$h\f$ tends to zero.
+
+@note Typically the time parameter is set to \f$t_h = k \cdot h^{\alpha}\f$ with
+\f$\alpha\f$ positive and \f$k\f$ is a constant depending on the input shape.
+
+The discretization on digital surfaces is \f[ (\Delta_{DIGI} \, f)({\mathbf{s}})
+:= \frac{1}{t_h(4 \pi t_h)^{\frac{d}{2}}} \sum_{\mathbf{r}\in \mathbb{F}^d }
+e^{- \frac{||\dot{\mathbf{r}}
+        - \dot{\mathbf{s}}||^2}{4t_h}}  [f(\dot{{\mathbf{r}}})
+    - f(\dot{{\mathbf{s}}})]\mu(\mathbf{r}), \f] where \f$\mathbb{F}^d\f$ is the
+      set of elements dimension \f$d\f$ (for example surfels in a 2D surface
+      embedded in 3D), \f$\dot{\mathbf{r}}\f$ (resp. \f$\dot{\mathbf{s}}\f$) is
+      the centroid of the surfel \f$\mathbf{r}\f$ (resp. \f$\mathbf{s}\f$), and
+      \f$\mu(\mathbf{r})\f$ is equal to the dot product between an estimated
+      normal and the trivial normal orthogonal to the surfel \f$\mathbf{s}\f$.
+      We typically use the Integral Invariant estimator for normal computation.
+
+\section secHowToHeatLaplace Hands on the Operator in DGtal
+
+This section provides an overview on how to use the Heat Laplace in DGtal. The
+operator is embedded inside the DEC structure of DGtal. The following code comes
+from the file exampleHeatLaplace.cpp. We demonstrate the usage of the heat
+operator on a function defined on the unit sphere. The laplace operator in
+spherical coordinates on the unit sphere is \f[ \Delta = \frac{1}{
+\sin^2(\theta) } \frac{\partial^2}{\partial \theta^2} + \frac{1}{\sin(\phi)}
+\frac{\partial}{\partial \phi}( \sin(\phi) \frac{\partial}{\partial \phi} ) \f]
+We choose the function \f$f(x,y,z) = x^2\f$. Its Laplacian is then \f$ \Delta
+f(r, \theta, \phi) = 2 \cos(\theta)^2 ( 2 \cos(\phi)^2 - \sin(\phi)^2 ) + 2(
+\sin(\theta)^2 - cos(\theta)^2 ) \f$.
+
+You must first compute the boundary of the surface, that is here for example the
+set of surfels of the boundary of the unit sphere.
+
+\snippet exampleHeatLaplace.cpp surface_extract
+
+Then, we need to compute the estimated area of a surfel, i.e. the quantity \f$
+\mu \f$. We use the Integral Invariant estimator to compute the estimated
+normals of the surfels (see \ref moduleIntegralInvariant).
+We use the same parameter \f$ \alpha = 1 / 3\f$ for Integral Invariant
+and our Laplace--Beltrami estimator.
+
+\snippet exampleHeatLaplace.cpp normal_estimation
+
+The DEC structure is initialized using the normal estimator (if no normal
+estimators is given, the surface area will be one as default, which leads to a
+poor estimation of the laplace operator)
+
+\snippet exampleHeatLaplace.cpp init_dec
+
+As we compute the laplace operator on surfels, the input function is represented
+by a 2-form in the dec structure.
+
+@note The order of the input surfels is not the same as the internal order of
+DEC. You must use getCellIndex from DEC to retrieve the internal order of a
+cell.
+
+\snippet exampleHeatLaplace.cpp input_function
+
+We can now construct the Laplace operator. It is a DualIdentity of 2-forms, i.e.
+a linear operator acting on 2-forms represented internally by a sparse matrix.
+The function heatLaplace of DEC is templated by the duality of the operator. If
+you want to compute the operator on 0-forms (on points), you must pass PRIMAL as
+template parameter. We use here the dual operator. The function takes as input
+the grid size \f$ h \f$, the time parameter for the convolution \f$ t_h \f$ and
+a variance multiplier for the integration \f$ K \f$.
+
+@note As mentionned earlier, the time parameter is generaly set to \f$ t_h = k
+\cdot h^\alpha \f$ where \f$k\f$ is a constant depending on the input shape
+which roughly corresponds to the size of the Gaussian kernel in the euclidean
+space (here \f$k = 0.1\f$ for the unit sphere).
+
+The integration is done within the cut locus range: we only sum points
+which euclidean distance is inferior to \f$ K \sigma = K \sqrt{2t} \f$ (where
+\f$\sigma\f$ is the variance of the Gaussian function). Indeed it is known
+that almost all the mass under a Gaussian in contained within a few multiples
+of \f$ \sigma \f$ (typically two or three time \f$\sigma\f$).
+
+\snippet exampleHeatLaplace.cpp laplace_operator
+
+Finally, the result is computed with a simple matrix multiplication
+
+\snippet exampleHeatLaplace.cpp operator_result
+
+*/
+
+}

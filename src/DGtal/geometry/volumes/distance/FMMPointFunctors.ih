@@ -1,0 +1,1034 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file FMMPointFunctors.ih
+ * @author Tristan Roussillon (\c
+ * tristan.roussillon@liris.cnrs.fr ) Laboratoire d'InfoRmatique en
+ * Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS,
+ * France
+ *
+ *
+ * @date 2012/02/21
+ *
+ * @brief Implementation of inline methods defined in FMMPointFunctors.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Helper functions defined in the compilation unit (anonymous namespace)
+// see operator() below
+namespace
+{
+    //comparator in absolute value
+    template <typename Value>
+    bool absComparator(const Value& i, const Value& j) 
+    { 
+      return ( std::abs(static_cast<double>(i)) < std::abs(static_cast<double>(j)) ); 
+    }
+
+    //pair second member comparator in absolute value
+    template <typename Pair>
+    bool secondAbsComparator(const Pair& i, const Pair& j) 
+    { 
+      return absComparator( i.second, j.second ); 
+    }
+
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2FirstOrderLocalDistance<TImage,TSet>::L2FirstOrderLocalDistance
+  (Image& aImg, TSet& aSet): myImgPtr(&aImg), mySetPtr(&aSet)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2FirstOrderLocalDistance<TImage,TSet>::L2FirstOrderLocalDistance
+  (const L2FirstOrderLocalDistance& other): myImgPtr(other.myImgPtr), mySetPtr(other.mySetPtr)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2FirstOrderLocalDistance<TImage,TSet>&
+DGtal::L2FirstOrderLocalDistance<TImage,TSet>::operator=
+  (const L2FirstOrderLocalDistance& other)
+{
+  if( this != &other)
+  {
+    myImgPtr = other.myImgPtr; 
+    mySetPtr = other.mySetPtr; 
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+  }
+  return *this; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2FirstOrderLocalDistance<TImage,TSet>::~L2FirstOrderLocalDistance
+  ()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L2FirstOrderLocalDistance<TImage, TSet>::Value
+DGtal::L2FirstOrderLocalDistance<TImage, TSet>::operator()
+  (const Point& aPoint)
+{
+
+  //distance values
+  Values v; 
+  v.reserve(Point::dimension); 
+
+  //two 1-neighbors
+  Point neighbor1 = aPoint; 
+  Point neighbor2 = aPoint;
+ 
+  typename Point::Iterator it1 = neighbor1.begin(); 
+  typename Point::Iterator it2 = neighbor2.begin(); 
+  typename Point::ConstIterator it = aPoint.begin(); 
+  typename Point::ConstIterator itEnd = aPoint.end(); 
+  for ( ; it != itEnd; ++it, ++it1, ++it2)
+    {//for each dimension
+
+      typename Point::Coordinate c = *it; 
+      *it1 = (c+1); 
+      *it2 = (c-1);
+
+      //neighboring values
+      Value d = 0, d1 = 0, d2 = 0; 
+      bool flag1 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor1, d1 );
+      bool flag2 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor2, d2 );
+      if ( flag1 || flag2 ) 
+	{
+	  if ( flag1 && flag2 )
+	    { //take the minimal value
+	      if (std::abs(d1) < std::abs(d2))
+		d = d1;
+	      else 
+		d = d2; 
+	    } else 
+	    {
+	      if (flag1) d = d1;
+	      if (flag2) d = d2; 
+	    }
+
+	  v.push_back(d); 
+	}
+
+      *it1 = c; 
+      *it2 = c;
+    } //end for each dimension
+
+  //computation of the new value
+    return this->compute(v); 
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L2FirstOrderLocalDistance<TImage, TSet>::Value
+DGtal::L2FirstOrderLocalDistance<TImage, TSet>::compute
+(Values& aValueList) const
+{
+  ASSERT(aValueList.size() > 0); 
+
+  if ( aValueList.size() == 1 )
+    {
+      Value d = aValueList.back();
+      if (d >= 0) return d + 1.0; 
+      else return d - 1.0; 
+    } 
+  else 
+    {
+      //function computation
+      typename Values::iterator itMax = 
+	std::max_element( aValueList.begin(), aValueList.end(), absComparator<Value> ); 
+      if ( gradientNorm( *itMax, aValueList ) > 1 )
+	{
+	  aValueList.erase( itMax ); 
+	  return this->compute(aValueList); 
+	}
+      else 
+	{ //resolution
+	  double a = 0; 
+	  double b = 0; 
+	  double c = -1; 
+
+	  for (typename Values::iterator it = aValueList.begin(); 
+	       it != aValueList.end(); ++it)
+	    {
+	      Value d = *it; 
+
+	      a += 1; 
+	      b -= static_cast<double>(2*d);
+	      c += static_cast<double>(d*d); 
+	    }
+ 
+	  //discriminant
+	  double disc = b*b - 4*a*c;
+	  ASSERT(disc >= 0); 
+
+	  if ( b < 0 )
+	      return static_cast<Value>( ( -b + std::sqrt(disc) ) / (2*a) );
+	  else 
+	      return static_cast<Value>( ( -b - std::sqrt(disc) ) / (2*a) ); 
+	}
+    }
+
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L2FirstOrderLocalDistance<TImage, TSet>::Value
+DGtal::L2FirstOrderLocalDistance<TImage, TSet>
+::gradientNorm(const Value& aValue, const Values& aValueList) const
+{
+  Value sum = 0; 
+  for (typename Values::const_iterator it = aValueList.begin(); 
+       it != aValueList.end(); ++it)
+    {
+      Value d = (aValue - *it); 
+      sum += (d*d); 
+    }
+  return sum; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+void
+DGtal::L2FirstOrderLocalDistance<TImage, TSet>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "L2"; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2SecondOrderLocalDistance<TImage,TSet>::L2SecondOrderLocalDistance
+  (Image& aImg, TSet& aSet): myImgPtr(&aImg), mySetPtr(&aSet)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2SecondOrderLocalDistance<TImage,TSet>::L2SecondOrderLocalDistance
+  (const L2SecondOrderLocalDistance& other): myImgPtr(other.myImgPtr), mySetPtr(other.mySetPtr)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2SecondOrderLocalDistance<TImage,TSet>&
+DGtal::L2SecondOrderLocalDistance<TImage,TSet>::operator=
+  (const L2SecondOrderLocalDistance& other)
+{
+  if( this != &other)
+  {
+    myImgPtr = other.myImgPtr; 
+    mySetPtr = other.mySetPtr; 
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+  }
+  return *this; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L2SecondOrderLocalDistance<TImage,TSet>::~L2SecondOrderLocalDistance
+  ()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L2SecondOrderLocalDistance<TImage, TSet>::Value
+DGtal::L2SecondOrderLocalDistance<TImage, TSet>::operator()
+  (const Point& aPoint)
+{
+
+  //distance values
+  List l; 
+  l.reserve(Point::dimension); 
+
+  //two 1-neighbors
+  Point neighbor1 = aPoint; 
+  Point neighbor2 = aPoint;
+ 
+  typename Point::Iterator it1 = neighbor1.begin(); 
+  typename Point::Iterator it2 = neighbor2.begin(); 
+  typename Point::ConstIterator it = aPoint.begin(); 
+  typename Point::ConstIterator itEnd = aPoint.end(); 
+  for ( ; it != itEnd; ++it, ++it1, ++it2)
+    {//for each dimension
+
+      typename Point::Coordinate c = *it; 
+
+      /// first-order
+      double coeff = 1.0; 
+      ++(*it1); 
+      --(*it2);
+      Value d = 0, d1 = 0, d2 = 0; 
+      bool flag1 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor1, d1 );
+      bool flag2 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor2, d2 );
+      if ( flag1 || flag2 ) 
+	{
+	  /// second-order
+	  ++(*it1); 
+	  --(*it2);
+	  Value d12 = 0, d22 = 0; 
+	  bool flag12 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor1, d12 );
+	  bool flag22 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor2, d22 );
+
+	  if ( flag1 && flag2 )
+	    { 
+
+	      if ( flag12 && flag22 )
+		{ //take the minimal value
+		  d1 = getValue( d1, d12 ); 
+		  d2 = getValue( d2, d22 ); 
+		  if (std::abs(d1) < std::abs(d2))
+		    d = d1;
+		  else 
+		    d = d2;
+		  coeff = 1.5; 
+		} 
+	      else 
+		{  //like first-order accurate case
+		  //take the minimal value
+		  if (std::abs(d1) < std::abs(d2))
+		    d = d1;
+		  else 
+		    d = d2; 
+		}
+
+	    } 
+	  else //if not flag1 AND flag2 both true
+	    {
+	      if (flag1) 
+		{
+
+		  if ( flag12 )
+		    {
+		      d1 = getValue( d1, d12 ); 
+		      coeff = 1.5; 
+		    }
+		  d = d1;
+
+		}
+
+	      if (flag2) 
+		{
+
+		  if ( flag22 )
+		    {
+		      d2 = getValue( d2, d22 ); 
+		      coeff = 1.5; 
+		    }
+		  d = d2;
+		} 
+	    }
+
+	  l.push_back( CoeffValue( coeff, d ) );
+
+	} //end if flag1 or flag2
+
+      *it1 = c; 
+      *it2 = c;
+    } //end for each dimension
+
+  //computation of the new value
+    return this->compute(l); 
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L2SecondOrderLocalDistance<TImage, TSet>::Value
+DGtal::L2SecondOrderLocalDistance<TImage, TSet>::compute
+(List& aList) const
+{
+  ASSERT(aList.size() > 0); 
+
+  if ( aList.size() == 1 )
+    {
+      CoeffValue pair = aList.back();
+      if (pair.second >= 0) 
+	return ( (pair.second + 1.0)/(pair.first) ); 
+      else 
+	return ( (pair.second - 1.0)/(pair.first) ); 
+    } 
+  else 
+	{ //resolution
+	  double a = 0; 
+	  double b = 0; 
+	  double c = -1; 
+
+	  for (typename List::iterator it = aList.begin(); 
+	       it != aList.end(); ++it)
+	    {
+	      double coeff = it->first; 
+	      Value v = it->second; 
+
+	      a += (coeff*coeff); 
+	      b -= 2 * coeff * static_cast<double>(v);
+	      c += static_cast<double>(v*v); 
+	    }
+ 
+	  //discriminant
+	  double disc = b*b - 4*a*c;
+	  ASSERT(disc >= 0); 
+
+	  if ( b < 0 )
+	      return static_cast<Value>( ( -b + std::sqrt(disc) ) / (2*a) );
+	  else 
+	      return static_cast<Value>( ( -b - std::sqrt(disc) ) / (2*a) ); 
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L2SecondOrderLocalDistance<TImage, TSet>::Value
+DGtal::L2SecondOrderLocalDistance<TImage, TSet>
+::getValue(const Value& aValue1, const Value& aValue2) const
+{
+  return (2.0*aValue1 - aValue2/2.0); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+void
+DGtal::L2SecondOrderLocalDistance<TImage, TSet>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "L2"; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::LInfLocalDistance<TImage,TSet>::LInfLocalDistance
+  (Image& aImg, TSet& aSet): myImgPtr(&aImg), mySetPtr(&aSet)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::LInfLocalDistance<TImage,TSet>::LInfLocalDistance
+  (const LInfLocalDistance& other): myImgPtr(other.myImgPtr), mySetPtr(other.mySetPtr)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::LInfLocalDistance<TImage,TSet>&
+DGtal::LInfLocalDistance<TImage,TSet>::operator=
+  (const LInfLocalDistance& other)
+{
+  if( this != &other)
+  {
+    myImgPtr = other.myImgPtr; 
+    mySetPtr = other.mySetPtr; 
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+  }
+  return *this; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::LInfLocalDistance<TImage,TSet>::~LInfLocalDistance
+  ()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::LInfLocalDistance<TImage, TSet>::Value
+DGtal::LInfLocalDistance<TImage, TSet>::operator()
+  (const Point& aPoint)
+{
+
+  //distance values
+  Values v; 
+  v.reserve(Point::dimension); 
+
+  //two 1-neighbors
+  Point neighbor1 = aPoint; 
+  Point neighbor2 = aPoint;
+ 
+  typename Point::Iterator it1 = neighbor1.begin(); 
+  typename Point::Iterator it2 = neighbor2.begin(); 
+  typename Point::ConstIterator it = aPoint.begin(); 
+  typename Point::ConstIterator itEnd = aPoint.end(); 
+  for ( ; it != itEnd; ++it, ++it1, ++it2)
+    {//for each dimension
+
+      typename Point::Coordinate c = *it; 
+      *it1 = (c+1); 
+      *it2 = (c-1);
+
+      //neighboring values
+      Value d = 0, d1 = 0, d2 = 0; 
+      bool flag1 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor1, d1 );
+      bool flag2 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor2, d2 );
+      if ( flag1 || flag2 ) 
+	{
+	  if ( flag1 && flag2 )
+	    { //take the minimal value
+ 	      if (std::abs(d1) < std::abs(d2))
+		d = d1;
+	      else 
+		d = d2; 
+	    } else 
+	    {
+	      if (flag1) d = d1;
+	      if (flag2) d = d2; 
+	    }
+
+	  v.push_back(d); 
+	  
+	}
+      
+      *it1 = c; 
+      *it2 = c;
+    } //end for each dimension
+
+  //computation of the new value
+  return this->compute(v); 
+
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::LInfLocalDistance<TImage, TSet>::Value
+DGtal::LInfLocalDistance<TImage, TSet>::compute
+(Values& aValueList) const
+{
+
+  ASSERT(aValueList.size() > 0); 
+
+  if ( aValueList.size() == 1 )
+    {
+      Value d = aValueList.back();
+      if (d >= 0) ++d; 
+      else --d; 
+      return d; 
+    } 
+  else 
+    { //max element
+      typename Values::iterator it = 
+	std::max_element( aValueList.begin(), aValueList.end(), absComparator<Value> ); 
+      return *it; 
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+void
+DGtal::LInfLocalDistance<TImage, TSet>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "LInf"; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L1LocalDistance<TImage,TSet>::L1LocalDistance
+  (Image& aImg, TSet& aSet): myImgPtr(&aImg), mySetPtr(&aSet)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L1LocalDistance<TImage,TSet>::L1LocalDistance
+  (const L1LocalDistance& other): myImgPtr(other.myImgPtr), mySetPtr(other.mySetPtr)
+{
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L1LocalDistance<TImage,TSet>&
+DGtal::L1LocalDistance<TImage,TSet>::operator=
+  (const L1LocalDistance& other)
+{
+  if( this != &other)
+  {
+    myImgPtr = other.myImgPtr; 
+    mySetPtr = other.mySetPtr; 
+      ASSERT( myImgPtr ); 
+      ASSERT( mySetPtr ); 
+  }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+DGtal::L1LocalDistance<TImage,TSet>::~L1LocalDistance
+  ()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L1LocalDistance<TImage, TSet>::Value
+DGtal::L1LocalDistance<TImage, TSet>::operator()
+  (const Point& aPoint)
+{
+
+  //distance values
+  Values v; 
+  v.reserve(2*Point::dimension); 
+
+  //two 1-neighbors
+  Point neighbor1 = aPoint; 
+  Point neighbor2 = aPoint;
+ 
+  typename Point::Iterator it1 = neighbor1.begin(); 
+  typename Point::Iterator it2 = neighbor2.begin(); 
+  typename Point::ConstIterator it = aPoint.begin(); 
+  typename Point::ConstIterator itEnd = aPoint.end(); 
+  for ( ; it != itEnd; ++it, ++it1, ++it2)
+    {//for each dimension
+
+      typename Point::Coordinate c = *it; 
+      *it1 = (c+1); 
+      *it2 = (c-1);
+
+      //neighboring values
+      Value d1 = 0, d2 = 0; 
+      bool flag1 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor1, d1 );
+      bool flag2 = findAndGetValue( *myImgPtr, *mySetPtr, neighbor2, d2 );
+      if (flag1) v.push_back( d1 );
+      if (flag2) v.push_back( d2 ); 
+
+      *it1 = c; 
+      *it2 = c;
+    } //end for each dimension
+
+  //computation of the new value
+  return this->compute(v); 
+
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+typename DGtal::L1LocalDistance<TImage, TSet>::Value
+DGtal::L1LocalDistance<TImage, TSet>::compute
+(Values& aValueList) const
+{
+  ASSERT(aValueList.size() > 0); 
+
+  //min (in absolute values) 
+  typename Values::iterator it = 
+    std::min_element( aValueList.begin(), aValueList.end(), absComparator<Value> ); 
+  Value vmin = *it; 
+
+  //sign
+  if (vmin >= 0) 
+    return vmin + 1; 
+  else 
+    return vmin - 1; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TImage, typename TSet>
+inline
+void
+DGtal::L1LocalDistance<TImage, TSet>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "L1"; 
+}
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// Helper classes defined in the compilation unit (anonymous namespace)
+// see operator() below
+namespace
+{
+    //
+    template<bool complementToOne>
+    struct ValueBetween0And1 
+    {
+      template<typename Value>
+      static Value get(const Value& v)
+      { 
+	ASSERT( (v>=0)&&(v<=1) ); 
+	return v; 
+      }
+    }; 
+    //specialization
+    template< >
+    struct ValueBetween0And1<true> 
+    {
+      template<typename Value>
+      static Value get(const Value& v) 
+      { 
+	ASSERT( (v>=0)&&(v<=1) ); 
+	return (1 - v); 
+      }
+    }; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>
+::L2FirstOrderLocalDistanceFromCells
+  ( ConstAlias<KSpace> aK, Map& aMap): myKSpace(&aK), myMap(&aMap)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>
+::L2FirstOrderLocalDistanceFromCells
+  (const L2FirstOrderLocalDistanceFromCells& other)
+: myKSpace(other.myKSpace), myMap(other.myMap)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>&
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>
+::operator=
+  (const L2FirstOrderLocalDistanceFromCells& other)
+{
+  if( this != &other)
+  {
+    myMap = other.myMap; 
+    myKSpace = other.myKSpace; 
+  }
+  return *this; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>
+::~L2FirstOrderLocalDistanceFromCells
+  ()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+typename DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>::Value
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>::operator()
+  (const Point& aPoint)
+{
+
+  //distance values
+  Values v; 
+  v.reserve(Point::dimension); 
+
+  Cell spel = myKSpace->uSpel( aPoint );  
+  for ( typename KSpace::DirIterator q = myKSpace->uDirs( spel ); 
+	(q != 0); ++q ) 
+    { //for each dimension
+      const DGtal::Dimension dir = *q;
+
+      /// for the direct orientation
+      Cell surfel1 = myKSpace->uIncident( spel, dir, true );
+      ASSERT( myKSpace->uDim( surfel1 )  == (KSpace::dimension - 1) );
+
+      /// for the indirect orientation
+      Cell surfel2 = myKSpace->uIncident( spel, dir, false ); 
+      ASSERT( myKSpace->uDim( surfel2 )  == (KSpace::dimension - 1) );
+
+      //neighboring values
+      Value d = 0; 
+      typename Map::iterator it1 = myMap->find( surfel1 );  
+      typename Map::iterator it2 = myMap->find( surfel2 ); 
+      bool flag1 = ( it1 != myMap->end() );
+      bool flag2 = ( it2 != myMap->end() );
+      if ( flag1 || flag2 ) 
+	{
+	  if ( flag1 && flag2 )
+	    { //take the minimal value
+	      ASSERT( (it1->second >= 0)&&(it1->second <= 1) ); 
+	      ASSERT( (it2->second >= 0)&&(it2->second <= 1) ); 
+	      if (it1->second < it2->second)
+		d = ValueBetween0And1<isIndirect>
+		  ::get( it1->second );
+	      else 
+		d = ValueBetween0And1<isIndirect>
+		  ::get( it2->second ); 
+	    } else 
+	    {
+	      if (flag1) 
+		{
+		  ASSERT( (it1->second >= 0)&&(it1->second <= 1) ); 
+		  d = ValueBetween0And1<isIndirect>
+		  ::get( it1->second );
+		}
+	      if (flag2) 
+		{
+		  ASSERT( (it2->second >= 0)&&(it2->second <= 1) ); 
+		  d = ValueBetween0And1<isIndirect>
+		  ::get( it2->second );
+		}
+	    }
+
+	  if (d == 0) return 0;
+ 
+	  v.push_back(d); 
+	}
+
+    } //end for each dimension
+
+  //computation of the new value
+  return this->compute(v); 
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+typename DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>::Value
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap,isIndirect>::compute
+(Values& aValueList) const
+{
+  ASSERT(aValueList.size() > 0); 
+
+  if ( aValueList.size() == 1 )
+    {
+      return aValueList.back();
+    } 
+  else 
+    { //resolution
+      double a = 0; 
+
+      for (typename Values::iterator it = aValueList.begin(); 
+	   it != aValueList.end(); ++it)
+	{
+	  Value d = *it; 
+	  a += ( 1.0 / static_cast<double>( d*d ) ); 
+	}
+
+      return static_cast<Value>( std::sqrt(a) / a ); 
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TMap, bool isIndirect>
+inline
+void
+DGtal::L2FirstOrderLocalDistanceFromCells<TKSpace,TMap, isIndirect>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "L2"; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TDistanceImage, typename TSet, typename TSpeedFunctor>
+inline
+DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>::SpeedExtrapolator
+(const DistanceImage& aDistImg, const Set& aSet, SpeedFunctor& aSpeedFunc)
+  : myDistImgPtr(&aDistImg), mySetPtr(&aSet), mySpeedFuncPtr(&aSpeedFunc)
+{
+  ASSERT( myDistImgPtr ); 
+  ASSERT( mySetPtr ); 
+  ASSERT( mySpeedFuncPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDistanceImage, typename TSet, typename TSpeedFunctor>
+inline
+DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>::SpeedExtrapolator
+  (const SpeedExtrapolator& other)
+    : myDistImgPtr(other.myDistImgPtr), mySetPtr(other.mySetPtr), mySpeedFuncPtr(other.mySpeedFuncPtr)
+{
+  ASSERT( myDistImgPtr ); 
+  ASSERT( mySetPtr ); 
+  ASSERT( mySpeedFuncPtr ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDistanceImage, typename TSet, typename TSpeedFunctor>
+inline
+DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>&
+DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>::operator=
+  (const SpeedExtrapolator& other)
+{
+  if( this != &other)
+  {
+    myDistImgPtr = other.myDistImgPtr; 
+    mySetPtr = other.mySetPtr; 
+    mySpeedFuncPtr = other.mySpeedFuncPtr; 
+  ASSERT( myDistImgPtr ); 
+  ASSERT( mySetPtr ); 
+  ASSERT( mySpeedFuncPtr ); 
+  }
+  return *this; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDistanceImage, typename TSet, typename TSpeedFunctor>
+inline
+DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>::~SpeedExtrapolator
+  ()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDistanceImage, typename TSet, typename TSpeedFunctor>
+inline
+typename DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>::Value
+DGtal::SpeedExtrapolator<TDistanceImage,TSet,TSpeedFunctor>::operator()
+  (const Point& aPoint)
+{
+
+  //speed values
+  Value num = 0.0, den = 0; 
+
+  //two 1-neighbors for one dimension
+  Point neighbor1 = aPoint; 
+  Point neighbor2 = aPoint;
+ 
+  typename Point::Iterator it1 = neighbor1.begin(); 
+  typename Point::Iterator it2 = neighbor2.begin(); 
+  typename Point::ConstIterator it = aPoint.begin(); 
+  typename Point::ConstIterator itEnd = aPoint.end(); 
+  for ( ; it != itEnd; ++it, ++it1, ++it2)
+    {//for each dimension
+
+      typename Point::Coordinate c = *it; 
+
+      //distance value
+      DistanceValue d = 0; 
+      bool flag = findAndGetValue( *myDistImgPtr, *mySetPtr, aPoint, d );
+      ASSERT( flag ); boost::ignore_unused_variable_warning( flag );
+
+      //neighbors
+      *it1 = (c+1); 
+      *it2 = (c-1);
+      //neighboring speed value
+      Value s = 0; 
+      //neighboring distance values
+      DistanceValue d0 = 0, d1 = 0, d2 = 0; 
+      bool flag1 = findAndGetValue( *myDistImgPtr, *mySetPtr, neighbor1, d1 );
+      bool flag2 = findAndGetValue( *myDistImgPtr, *mySetPtr, neighbor2, d2 );
+      if ( flag1 || flag2 ) 
+	{
+	  if ( flag1 && flag2 )
+	    { //take the minimal value
+	      if (std::abs(d1) < std::abs(d2))
+		{
+		  d0 = d1;
+		  s = (*mySpeedFuncPtr)( neighbor1 );
+		}
+	      else 
+		{
+		  d0 = d2; 
+		  s = (*mySpeedFuncPtr)( neighbor2 );
+		}
+	    } else 
+	    {
+	      if (flag1)
+		{
+		  d0 = d1;
+		  s = (*mySpeedFuncPtr)( neighbor1 );
+		}
+	      if (flag2) 
+		{
+		  d0 = d2; 
+		  s = (*mySpeedFuncPtr)( neighbor2 );
+		}
+	    }
+
+	  Value diff = static_cast<Value>(d - d0);
+	  num += ( s * diff ); 
+	  den += diff;  
+	}
+
+      *it1 = c; 
+      *it2 = c;
+    } //end for each dimension
+
+  //computation of the new value
+  ASSERT(den != 0); 
+  return (num/den); 
+}

@@ -1,0 +1,320 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file EigenDecomposition.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2014/02/27
+ *
+ * Implementation of inline methods defined in EigenDecomposition.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template  <DGtal::Dimension TN, typename TComponent, typename TMatrix>
+void
+DGtal::EigenDecomposition<TN,TComponent,TMatrix>::
+tridiagonalize( Matrix& V, Vector& d, Vector& e )
+{
+  for( Dimension j = 0; j < dimension; ++j )
+    d[ j ] = V ( dimensionMinusOne, j );
+  // Householder reduction to tridiagonal form.
+  for( Dimension i = dimensionMinusOne; i > 0 && i <= dimensionMinusOne; --i )
+    {
+      // Scale to avoid under/overflow.
+      Quantity scale = Quantity( 0.0 );
+      Quantity h = Quantity( 0.0 );
+      for( Dimension k = 0; k < i; ++k )
+      {
+        scale += Quantity( std::fabs( d[ k ] ));
+      }
+
+      if( scale == Quantity( 0.0 ))
+      {
+        e[ i ] = d[ i - 1 ];
+
+        for( Dimension j = 0; j < i; ++j )
+        {
+          d[ j ] = V(( i - 1 ),  j );
+          V.setComponent ( i, j, Quantity( 0.0 ));
+          V.setComponent ( j, i, Quantity( 0.0 ));
+        }
+      }
+      else
+      {
+        // Generate Householder vector.
+        for ( Dimension k = 0; k < i; ++k )
+        {
+          d[ k ] /= scale;
+          h += d[ k ] * d[ k ];
+        }
+
+        Quantity f = d[ i - 1 ];
+        Quantity g = Quantity( std::sqrt( h ));
+
+        if ( f > Quantity( 0.0 ))
+        {
+          g = -g;
+        }
+
+        e[ i ] = scale * g;
+        h -= f * g;
+        d[ i - 1 ] = f - g;
+
+        for ( Dimension j = 0; j < i; ++j)
+        {
+          e[ j ] = Quantity( 0.0 );
+        }
+
+        // Apply similarity transformation to remaining columns.
+        for ( Dimension j = 0; j < i; ++j )
+        {
+          f = d[ j ];
+          V.setComponent ( j, i, f );
+          g = e[ j ] + V( j, j ) * f;
+
+          for ( Dimension k = j + 1; k <= i - 1; ++k )
+          {
+            g += V ( k, j ) * d[ k ];
+            e[ k ] += V ( k, j ) * f;
+          }
+
+          e[ j ] = g;
+        }
+
+        f = Quantity( 0.0 );
+        for ( Dimension j = 0; j < i; ++j )
+        {
+          e[ j ] /= h;
+          f += e[ j ] * d[ j ];
+        }
+
+        double hh = f / ( h + h );
+
+        for ( Dimension j = 0; j < i; ++j )
+        {
+          e[ j ] -= hh * d[ j ];
+        }
+
+        for ( Dimension j = 0; j < i; ++j )
+        {
+          f = d[ j ];
+          g = e[ j ];
+
+          for ( Dimension k = j; k <= i - 1; ++k )
+          {
+            V.setComponent ( k, j, V ( k, j ) - ( f * e[ k ] + g * d[ k ] ));
+          }
+
+          d[ j ] = V( i - 1, j );
+          V.setComponent ( i, j, Quantity( 0.0 ));
+        }
+      }
+      d[ i ] = h;
+    }
+
+    // Accumulate transformations.
+    for ( Dimension i = 0; i < dimensionMinusOne; ++i )
+    {
+      V.setComponent ( dimensionMinusOne, i, V ( i, i ));
+      V.setComponent ( i, i, Quantity( 1.0 ));
+      Quantity h = d[ i + 1 ];
+
+      if ( h != Quantity( 0.0 ) )
+      {
+        for ( Dimension k = 0; k <= i; ++k )
+        {
+          d[ k ] = V ( k, i + 1 ) / h;
+        }
+
+        for ( Dimension j = 0; j <= i; ++j )
+        {
+          Quantity g = Quantity( 0.0 );
+
+          for ( Dimension k = 0; k <= i; ++k )
+          {
+            g += V ( k, i + 1 ) * V( k, j );
+          }
+
+          for ( Dimension k = 0; k <= i; ++k )
+          {
+            V.setComponent ( k, j, V ( k, j ) - ( g * d[ k ] ));
+          }
+        }
+      }
+      for ( Dimension k = 0; k <= i; ++k )
+      {
+        V.setComponent ( k, i + 1, Quantity( 0.0 ));
+      }
+    }
+
+    for ( Dimension j = 0; j < dimension; ++j )
+    {
+      d[ j ] = V ( dimensionMinusOne, j );
+      V.setComponent ( dimensionMinusOne, j, Quantity( 0.0 ));
+    }
+
+    V.setComponent ( dimensionMinusOne, dimensionMinusOne, Quantity( 1.0 ));
+    e[ 0 ] = Quantity( 0.0 );
+}
+
+//-----------------------------------------------------------------------------
+template  <DGtal::Dimension TN, typename TComponent, typename TMatrix>
+void
+DGtal::EigenDecomposition<TN,TComponent,TMatrix>::
+decomposeQL( Matrix& V, Vector& d, Vector e )
+{
+  for ( Dimension i = 1; i < dimension; ++i )
+    e[ i - 1 ] = e[ i ];
+
+  e[ dimensionMinusOne ] = 0.0;
+  
+  Quantity f = Quantity( 0.0 );
+  Quantity tst1 = Quantity( 0.0 );
+  Quantity eps = Quantity( std::pow( 2.0, -52.0 ));
+  for( Dimension l = 0; l < dimension; ++l )
+    {
+      // Find small subdiagonal element
+      tst1 = Quantity( std::max( tst1, std::fabs ( d[ l ] ) + std::fabs( e[ l ] )));
+      Dimension m = l;
+      while ( m < dimension )
+        {
+          if ( std::fabs ( e[ m ] ) <= eps * tst1 ) break;
+          ++m;
+        }
+
+      // If m == l, d[l] is an eigenvalue,
+      // otherwise, iterate.
+      if( m > l )
+        {
+          int iter = 0;
+          do
+            {
+              ++iter;  // (Could check iteration count here.)
+              // Compute implicit shift
+              Quantity g = d[ l ];
+              Quantity p = ( d[ l + 1 ] - g ) / ( Quantity( 2.0 ) * e[ l ] );
+              Quantity r = Quantity( std::sqrt ( p * p + Quantity( 1.0 ) * Quantity( 1.0 )));
+              if( p < 0 ) r = -r;
+              d[ l ] = e[ l ] / ( p + r );
+              d[ l + 1 ] = e[ l ] * ( p + r );
+              Quantity dl1 = d[ l + 1 ];
+              Quantity h = g - d[ l ];
+              for( Dimension i = l + 2; i < dimension; ++i )
+                d[ i ] -= h;
+              f = f + h;
+
+              // Implicit QL transformation.
+              p = d[ m ];
+              Quantity c = Quantity( 1.0 );
+              Quantity c2 = c;
+              Quantity c3 = c;
+              Quantity el1 = e[ l + 1 ];
+              Quantity s = Quantity( 0.0 );
+              Quantity s2 = Quantity( 0.0 );
+              for ( Dimension i = m - 1; i >= l && i <= m - 1; --i )
+                {
+                  c3 = c2;
+                  c2 = c;
+                  s2 = s;
+                  g = c * e[ i ];
+                  h = c * p;
+                  r = Quantity( std::sqrt ( p * p + e[ i ] * e[ i ] ));
+                  e[ i + 1 ] = s * r;
+                  s = e[ i ] / r;
+                  c = p / r;
+                  p = c * d[ i ] - s * g;
+                  d[ i + 1 ] = h + s * ( c * g + s * d[ i ] );
+
+                  // Accumulate transformation.
+                  for( Dimension k = 0; k < dimension; ++k )
+                    {
+                      h = V ( k, i + 1 );
+                      V.setComponent ( k, i + 1, ( s * V ( k, i ) + c * h ));
+                      V.setComponent ( k, i, ( c * V ( k, i ) - s * h ));
+                    }
+                }
+              
+              p = - s * s2 * c3 * el1 * e[ l ] / dl1;
+              e[ l ] = s * p;
+              d[ l ] = c * p;
+              // Check for convergence.
+            }
+          while ( std::fabs ( e[ l ] ) > eps * tst1 );
+        }
+      d[ l ] = d[ l ] + f;
+      e[ l ] = Quantity( 0.0 );
+    }
+  
+  // Sort eigenvalues and corresponding vectors.
+  for ( Dimension i = 0; i < dimensionMinusOne; ++i )
+    {
+      Dimension k = i;
+      Quantity p = d[ i ];
+      
+      for ( Dimension j = i + 1; j < dimension; ++j )
+        {
+          if ( d[ j ] < p )
+            {
+              k = j;
+              p = d[ j ];
+            }
+        }
+      if ( k != i )
+        {
+          d[ k ] = d[ i ];
+          d[ i ] = p;
+          for ( Dimension j = 0; j < dimension; ++j )
+            {
+              p = V ( j, i );
+              V.setComponent ( j, i, V ( j, k ));
+              V.setComponent ( j, k, p );
+            }
+        }
+    }
+}
+//-----------------------------------------------------------------------------
+template  <DGtal::Dimension TN, typename TComponent, typename TMatrix>
+void
+DGtal::EigenDecomposition<TN,TComponent,TMatrix>::
+getEigenDecomposition( const Matrix& matrix, Matrix& eigenVectors, Vector& eigenValues )
+{
+  Vector e;              // Default constructor sets to zero vector;
+  eigenVectors = matrix; // copy matrix
+  eigenValues = e;       // Sets to zero vector
+  tridiagonalize( eigenVectors, eigenValues, e );
+  decomposeQL( eigenVectors, eigenValues, e );
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

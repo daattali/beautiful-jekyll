@@ -1,0 +1,201 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImageCachePolicies.ih
+ * @author Martial Tola (\c martial.tola@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/02/06
+ *
+ * Implementation of inline methods defined in ImageCachePolicies.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+// ----------------------- Specialization DGtal::CACHE_READ_POLICY_LAST ------------------------------
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+TImageContainer *
+DGtal::ImageCacheReadPolicyLAST<TImageContainer, TImageFactory>::getPage(const Point & aPoint)
+{
+  if (myCacheImagesPtr==NULL)
+    return NULL;
+
+  if (myCacheImagesPtr->domain().isInside(aPoint))
+    return myCacheImagesPtr;
+  
+  return NULL;
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+TImageContainer *
+DGtal::ImageCacheReadPolicyLAST<TImageContainer, TImageFactory>::getPage(const Domain & aDomain)
+{
+  if (myCacheImagesPtr==NULL)
+    return NULL;
+
+  if ( (myCacheImagesPtr->domain().lowerBound() == aDomain.lowerBound()) && (myCacheImagesPtr->domain().upperBound() == aDomain.upperBound()) )
+    return myCacheImagesPtr;
+  
+  return NULL;
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+TImageContainer *
+DGtal::ImageCacheReadPolicyLAST<TImageContainer, TImageFactory>::getPageToDetach()
+{
+  return myCacheImagesPtr;
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void 
+DGtal::ImageCacheReadPolicyLAST<TImageContainer, TImageFactory>::updateCache(const Domain &aDomain)
+{
+  myCacheImagesPtr = myImageFactory->requestImage(aDomain);
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheReadPolicyLAST<TImageContainer, TImageFactory>::clearCache()
+{
+  myCacheImagesPtr = NULL;
+}
+
+// ----------------------- Specialization DGtal::CACHE_READ_POLICY_FIFO ------------------------------
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+TImageContainer *
+DGtal::ImageCacheReadPolicyFIFO<TImageContainer, TImageFactory>::getPage(const Point & aPoint)
+{
+  if (myFIFOCacheImages.empty())
+    return NULL;
+
+  for (unsigned int i=0; i<myFIFOCacheImages.size(); i++)
+    if (myFIFOCacheImages[i]->domain().isInside(aPoint))
+      return myFIFOCacheImages[i];
+  
+  return NULL;
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+TImageContainer *
+DGtal::ImageCacheReadPolicyFIFO<TImageContainer, TImageFactory>::getPage(const Domain & aDomain)
+{
+  if (myFIFOCacheImages.empty())
+    return NULL;
+
+  for (unsigned int i=0; i<myFIFOCacheImages.size(); i++)
+    if ( (myFIFOCacheImages[i]->domain().lowerBound() == aDomain.lowerBound()) && (myFIFOCacheImages[i]->domain().upperBound() == aDomain.upperBound()) )
+      return myFIFOCacheImages[i];
+  
+  return NULL;
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+TImageContainer *
+DGtal::ImageCacheReadPolicyFIFO<TImageContainer, TImageFactory>::getPageToDetach()
+{
+  TImageContainer *pageToDetach = NULL;
+  
+  if (myFIFOCacheImages.size() >= myFIFOSizeMax)
+  {
+    pageToDetach = myFIFOCacheImages.front();
+    myFIFOCacheImages.pop_front();
+  }
+  
+  return pageToDetach;
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheReadPolicyFIFO<TImageContainer, TImageFactory>::updateCache(const Domain &aDomain)
+{
+  myFIFOCacheImages.push_back(myImageFactory->requestImage(aDomain));
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheReadPolicyFIFO<TImageContainer, TImageFactory>::clearCache()
+{
+  myFIFOCacheImages.clear();
+}
+
+// ----------------------- Specialization DGtal::CACHE_WRITE_POLICY_WT ------------------------------
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheWritePolicyWT<TImageContainer, TImageFactory>::writeInPage(TImageContainer * anImageContainer, const Point & aPoint, const Value &aValue)
+{
+  anImageContainer->setValue(aPoint, aValue);
+  
+  myImageFactory->flushImage(anImageContainer); // DGtal::CACHE_WRITE_POLICY_WT
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheWritePolicyWT<TImageContainer, TImageFactory>::flushPage(TImageContainer * anImageContainer)
+{
+  boost::ignore_unused_variable_warning(anImageContainer);
+}
+
+// ----------------------- Specialization DGtal::CACHE_WRITE_POLICY_WB ------------------------------
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheWritePolicyWB<TImageContainer, TImageFactory>::writeInPage(TImageContainer * anImageContainer, const Point & aPoint, const Value &aValue)
+{
+  anImageContainer->setValue(aPoint, aValue);
+}
+
+template <typename TImageContainer, typename TImageFactory>
+inline
+void
+DGtal::ImageCacheWritePolicyWB<TImageContainer, TImageFactory>::flushPage(TImageContainer * anImageContainer)
+{
+  myImageFactory->flushImage(anImageContainer); // DGtal::CACHE_WRITE_POLICY_WB
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

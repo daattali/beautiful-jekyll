@@ -1,9 +1,0 @@
-<map id="LibBoard::Polyline" name="LibBoard::Polyline">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="140,513,264,543"/>
-<area shape="rect" id="node3" title="STL class. " alt="" coords="30,309,116,339"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="5,104,141,154"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple. " alt="" coords="148,309,248,339"/>
-<area shape="rect" id="node6" href="$structLibBoard_1_1Path.html" title="A path, according to Postscript and SVG definition. " alt="" coords="311,513,424,543"/>
-<area shape="rect" id="node8" href="$structLibBoard_1_1Point.html" title="Struct representing a 2D point. " alt="" coords="313,114,431,145"/>
-<area shape="rect" id="node9" title="STL class. " alt="" coords="455,114,581,145"/>
-</map>

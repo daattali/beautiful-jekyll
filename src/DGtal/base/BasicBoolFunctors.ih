@@ -1,0 +1,83 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file BasicBoolFunctors.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/10
+ *
+ * Implementation of inline methods defined in BasicBoolFunctors.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::TrueBoolFct0::operator()() const
+{ return true; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::FalseBoolFct0::operator()() const
+{ return false; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::IdentityBoolFct1::operator()( bool b ) const
+{ return b; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::NotBoolFct1::operator()(  bool b ) const
+{ return !b; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::AndBoolFct2::operator()( bool b1, bool b2 ) const
+{ return b1 && b2; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::OrBoolFct2::operator()( bool b1, bool b2 ) const
+{ return b1 || b2; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::XorBoolFct2::operator()( bool b1, bool b2 ) const
+{ return b1 != b2; }
+//------------------------------------------------------------------------------
+inline
+bool
+DGtal::functors::ImpliesBoolFct2::operator()( bool b1, bool b2 ) const
+{ return (! b1 ) || b2; }
+//------------------------------------------------------------------------------
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

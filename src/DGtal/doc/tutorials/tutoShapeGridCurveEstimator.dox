@@ -1,0 +1,172 @@
+/**
+ * @file tutoShapeGridCurveEstimator.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/10/17
+ *
+ * Documentation file for feature tutoShapeGridCurveEstimator
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoShapeGridCurveEstimator Tutorial "Generated shape -> Grid curve -> Length estimation"
+@writers Tristan Roussillon
+
+In this example, we show how to test a
+length estimator of the contour of 
+a generated shape, which is digitized 
+at different resolutions.
+
+Please have a look to shapeGridCurveEstimator.cpp to get the complete source code of this tutorial.
+
+[TOC]
+
+\section secttutoShapeGridCurveEstimator0 Implicit Gauss digitization of a Euclidean shape 
+
+Let us assume that a flower-like shape has been instanciated.  
+We now implicitely consider its digitization according to the Gauss scheme
+(set of digital points lying inside the shape).  
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-dig
+
+@note Similarly to the previous tutorial (\ref tutoImageGridCurveEstimator),
+ the explicit construction of the digital set is not necessary.  
+Since the shape knows its bounding domain, it is enough to have a predicate that 
+indicates, for each point of the domain, 
+whether it belongs to the digital set or not. 
+This is a useful feature when we want to digitize a shape at 
+a high resolution. 
+
+ 
+
+@note The grid step @a h is given in the init method of the GaussDigitizer. 
+The smaller the grid step, the higher the resolution is. 
+
+
+\section secttutoShapeGridCurveEstimator1 Tracking, grid curve, range
+
+The extraction of the contour is performed in a cellular space 
+(with 0-, 1-, and 2-cells), given an adjacency (0-, 1-, 2-adjacency). 
+See \ref moduleCellularTopology for the basic
+concepts of cellular topology. 
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-prepareTracking
+
+Since there is only one connected digital set, 
+a fast method is used to find a first boundary
+element (i.e. a 1-cell between a 2-cell inside 
+the shape and a 2-cell outside the shape). 
+Instead of scanning the whole domain, 
+points are randomly tested, 
+until one point inside the shape and one point 
+outside the shape are found. A dichotomic
+process is then used to retrieve the boundary 
+element that is lying between these two points. 
+
+@note A DGtal::InputException is raised if the method fails 
+to find two different points.  
+
+From one boundary 1-cell, the contour is then implicitely 
+tracked as follows:   
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-tracking
+
+The GridCurve object is merely built from the retrieved contour:
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-instantiation
+
+Here is a picture of the contour:
+
+ @image html images/Flower1.png  "Flower (h=1)" 
+ @image latex images/Flower1.png  "Flower (h=1)" width=5cm
+
+\section secttutoShapeGridCurveEstimator2 Length estimation
+
+The DSS approach chosen below for the length estimation requires a points range: 
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-getRange
+
+Similarly to the previous tutorial (\ref tutoImageGridCurveEstimator),
+we initialize the DSS length estimator from the points range and get 
+the estimated length.
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-lengthEstimation
+
+Note that there is a specific length estimator, which is called true length estimator, 
+because it returns the true length (or a very close value to the true length). 
+The only difference between the true estimator and the other ones is that 
+the true estimator knows the shape and its parameters.  
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-trueLengthEstimation
+
+Thanks to the true estimator, it is very easy to compare the accuracy of the estimators
+against a ground truth. In our example, we have:  
+
+@code
+Length (h=1): 163.646
+ground truth: 165.961
+@endcode
+
+\section secttutoShapeGridCurveEstimator3 Increasing the resolution
+
+In order to have a better accuracy in the estimation, 
+we digitize now the shape at a higher resolution, i.e. 
+with a smaller grid step. We choose as grid step
+h=0.1 instead of h=1: 
+
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-higher
+
+Here is a picture of the contour:
+
+ @image html images/Flower01.png  "Flower (h=0.1)" 
+ @image latex images/Flower01.png  "Flower (h=0.1)" width=5cm
+
+At grid step 0.1, the estimation is better and close to the ground truth (165.961), 
+since we get:  
+@code
+Length (h=0.1): 165.94
+@endcode
+
+\section secttutoShapeGridCurveEstimator5 Length estimator comparison 
+
+Many other length estimators are implemented
+(see L1LengthEstimator, BLUELocalLengthEstimator, 
+RosenProffittLocalLengthEstimator, MLPLengthEstimator, 
+FPLengthEstimator). 
+You can compare them in a multiresolution framework 
+thanks to the nice tool lengthEstimators.cpp. 
+It provides a way of generating a given shape 
+(whose parameters are given as arguments)
+at increasing resolution and list, for each resolution, 
+the ground truth and the length estimated by all the available methods. 
+For instance, the data of the following plot come from this tool: 
+
+ @image html images/graphTuto4.png  "Perimeter of a digitized disk of radius 10" 
+ @image latex images/graphTuto4.png  "Perimeter of a digitized disk of radius 10" width=5cm
+
+\section secttutoShapeGridCurveEstimator4 Required includes
+
+Here are the basic includes: 
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-basicIncludes
+
+In order to generate an implicite or parametric shape, you need this: 
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-shapeIncludes
+
+To retrieve its contour, you should add: 
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-trackingIncludes
+
+And finally the length estimation requires: 
+@snippet tutorial-examples/shapeGridCurveEstimator.cpp shapeGridCurveEstimator-estimationIncludes
+
+
+*/
+
+}

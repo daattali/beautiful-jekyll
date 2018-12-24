@@ -1,0 +1,214 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file InputIteratorWithRankOnSequence.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/04/02
+ *
+ * Implementation of inline methods defined in InputIteratorWithRankOnSequence.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+~InputIteratorWithRankOnSequence()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+InputIteratorWithRankOnSequence( const Sequence & seq, ConstIterator it )
+  : mySequence( new Sequence( seq ) ), myIterator( it )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+InputIteratorWithRankOnSequence( Sequence* ptrSeq, ConstIterator it )
+  : mySequence( ptrSeq ), myIterator( it )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+InputIteratorWithRankOnSequence
+( const CountedPtr<Sequence> & ptrSeq, ConstIterator it )
+  : mySequence( ptrSeq ), myIterator( it )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+InputIteratorWithRankOnSequence( const Self & other )
+  : mySequence( other.mySequence ), myIterator( other.myIterator )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+typename DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::Self &
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator= ( const Self & other )
+{
+  if ( this != &other )
+    {
+      mySequence = other.mySequence;
+      myIterator = other.myIterator;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+typename DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::Value
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator*() const
+{
+  return std::make_pair( *myIterator, (Rank) ( myIterator - mySequence->begin() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+typename DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::Pointer 
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator->() const
+{
+  myTmpValue = this->operator*();
+  return &myTmpValue;
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+typename DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::Self &
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator++()
+{
+  ++myIterator;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+typename DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::Self
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator++( int )
+{
+  Self tmp = *this;
+  ++myIterator;
+  return tmp;
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+bool
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator==( const Self & other ) const
+{
+  if ( mySequence.get() != 0 )
+    {
+      if ( other.mySequence.get() != 0 )
+        return ( myIterator == other.myIterator );
+      else
+        return ( myIterator == mySequence->end() );
+    }
+  else
+    {
+      if ( other.mySequence.get() != 0 )
+        return ( other.myIterator == other.mySequence->end() );
+      else
+        return true;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSequence, typename TRank>
+inline
+bool
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+operator!=( const Self & other ) const
+{
+  return ! this->operator==( other );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSequence, typename TRank>
+inline
+void
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[InputIteratorWithRankOnSequence]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSequence, typename TRank>
+inline
+bool
+DGtal::InputIteratorWithRankOnSequence<TSequence,TRank>::
+isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSequence, typename TRank>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const InputIteratorWithRankOnSequence<TSequence,TRank> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

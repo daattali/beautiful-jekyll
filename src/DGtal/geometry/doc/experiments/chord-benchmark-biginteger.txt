@@ -1,0 +1,61 @@
+# plot "./chord-benchmark-biginteger.txt" using 3:5 title "Chord time(nbpoints), in ms" w lp, x/30 title "linear time x/30"
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 5 50 0.16
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 10 100 0.32
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 20 200 0.74
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 40 400 1.26
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 80 800 2.78
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 160 1600 4.62
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 320 3200 9.76
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 640 6400 16.6
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 1280 12800 33.7
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 2560 25600 67.24
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 5120 51200 137.18
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 10240 102400 270.12
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 20480 204800 535.6
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 40960 409600 1059.72
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+BigInteger 50 81920 819200 2214.66

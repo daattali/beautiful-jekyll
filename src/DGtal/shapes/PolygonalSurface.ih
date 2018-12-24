@@ -1,0 +1,484 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file PolygonalSurface.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2017/02/05
+ *
+ * Implementation of inline methods defined in PolygonalSurface.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TPoint>
+inline
+DGtal::PolygonalSurface<TPoint>::PolygonalSurface
+( Clone<HalfEdgeDataStructure> heds,
+  Clone<PositionsStorage>      pos )
+  : myHEDS( heds ), myPositions( pos )
+{
+  isHEDSValid = ( myPositions.size() == myHEDS.nbVertices() );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+bool
+DGtal::PolygonalSurface<TPoint>::build()
+{
+  if ( isHEDSValid ) {
+    trace.warning() << "[DGtal::PolygonalSurface<TPoint>::build()]"
+                    << " attempting to rebuild a polygonal surface." << std::endl;
+    return false;
+  }
+  isHEDSValid = myHEDS.build( myPolygonalFaces );
+  if ( myHEDS.nbVertices() != myPositions.size() ) {
+    trace.warning() << "[DGtal::PolygonalSurface<TPoint>::build()]"
+                    << " the size of vertex data array (s1) and the number of vertices (s2) in the polygonal surface does not match:"
+                    << " s1=" << myPositions.size()
+                    << " s2=" << myHEDS.nbVertices() << std::endl;
+    isHEDSValid = false;
+  } 
+  return isHEDSValid;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+void
+DGtal::PolygonalSurface<TPoint>::clear()
+{
+  isHEDSValid = false;
+  myHEDS.clear();
+  myPositions.clear();
+  myPolygonalFaces.clear();
+  
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::VertexIndex
+DGtal::PolygonalSurface<TPoint>::addVertex( const Point& vdata )
+{
+  VertexIndex vi = myPositions.size();
+  myPositions.push_back( vdata );
+  return vi;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::FaceIndex
+DGtal::PolygonalSurface<TPoint>::addTriangle
+( VertexIndex v0, VertexIndex v1, VertexIndex v2 )
+{
+  FaceIndex fi = myPolygonalFaces.size();
+  myPolygonalFaces.push_back( PolygonalFace( { v0, v1, v2 } ) );
+  return fi;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::FaceIndex
+DGtal::PolygonalSurface<TPoint>::addQuadrangle
+( VertexIndex v0, VertexIndex v1, VertexIndex v2, VertexIndex v3 )
+{
+  FaceIndex fi = myPolygonalFaces.size();
+  myPolygonalFaces.push_back( PolygonalFace( { v0, v1, v2, v3 } ) );
+  return fi;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::FaceIndex
+DGtal::PolygonalSurface<TPoint>::addPolygonalFace
+( const PolygonalFace& f )
+{
+  FaceIndex fi = myPolygonalFaces.size();
+  myPolygonalFaces.push_back( f );
+  return fi;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Point&
+DGtal::PolygonalSurface<TPoint>::position( Vertex v )
+{
+  ASSERT( 0 <= v && v < myPositions.size() );
+  return myPositions[ v ];
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+const typename DGtal::PolygonalSurface<TPoint>::Point&
+DGtal::PolygonalSurface<TPoint>::position( Vertex v ) const
+{
+  ASSERT( 0 <= v && v < myPositions.size() );
+  return myPositions[ v ];
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Size
+DGtal::PolygonalSurface<TPoint>::size() const
+{
+  return myPositions.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Size
+DGtal::PolygonalSurface<TPoint>::bestCapacity() const
+{
+  return 8;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Size
+DGtal::PolygonalSurface<TPoint>::degree( const Vertex & v ) const
+{
+  ASSERT( isValid() );
+  return myHEDS.nbNeighboringVertices( v );
+}
+    
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+template <typename OutputIterator>
+inline
+void  
+DGtal::PolygonalSurface<TPoint>::writeNeighbors
+( OutputIterator &it, const Vertex & v ) const
+{
+  ASSERT( isValid() );
+  typedef HalfEdgeDataStructure::VertexIndexRange VertexIndexRange;
+  VertexIndexRange neighbors;
+  myHEDS.getNeighboringVertices( v, neighbors );
+  for ( Vertex nv : neighbors ) *it++ = nv;
+}
+    
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+template <typename OutputIterator, typename VertexPredicate>
+inline
+void  
+DGtal::PolygonalSurface<TPoint>::writeNeighbors
+( OutputIterator &it, const Vertex & v, const VertexPredicate & pred) const
+{
+  ASSERT( isValid() );
+  typedef HalfEdgeDataStructure::VertexIndexRange VertexIndexRange;
+  VertexIndexRange neighbors;
+  myHEDS.getNeighboringVertices( v, neighbors );
+  for ( Vertex nv : neighbors ) if ( pred( nv ) ) *it++ = nv;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::ArcRange
+DGtal::PolygonalSurface<TPoint>::outArcs( const Vertex & v ) const
+{
+  ArcRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromVertexIndex( v );
+  Index hei = start_hei;
+  do
+    {
+      const HalfEdge& he = myHEDS.halfEdge( hei );
+      if( INVALID_FACE != he.face ) result.push_back( hei );
+      hei = myHEDS.halfEdge( he.opposite ).next;
+    }
+  while ( hei != start_hei );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::ArcRange
+DGtal::PolygonalSurface<TPoint>::inArcs( const Vertex & v ) const
+{
+  ArcRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromVertexIndex( v );
+  Index hei = start_hei;
+  do
+    {
+      const HalfEdge& he = myHEDS.halfEdge( hei );
+      if( INVALID_FACE != he.face ) result.push_back( he.opposite );
+      hei = myHEDS.halfEdge( he.opposite ).next;
+    }
+  while ( hei != start_hei );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::FaceRange
+DGtal::PolygonalSurface<TPoint>::facesAroundVertex( const Vertex & v ) const
+{
+  FaceRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromVertexIndex( v );
+  Index hei = start_hei;
+  do
+    {
+      const HalfEdge& he = myHEDS.halfEdge( hei );
+      if( INVALID_FACE != he.face ) result.push_back( he.face );
+      hei = myHEDS.halfEdge( he.opposite ).next;
+    }
+  while ( hei != start_hei );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Vertex
+DGtal::PolygonalSurface<TPoint>::head( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).toVertex;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Vertex
+DGtal::PolygonalSurface<TPoint>::tail( const Arc & a ) const
+{
+  return head( opposite( a ) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Arc
+DGtal::PolygonalSurface<TPoint>::opposite( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).opposite;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Arc
+DGtal::PolygonalSurface<TPoint>::next( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).next;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Arc
+DGtal::PolygonalSurface<TPoint>::arc
+( const Vertex & t, const Vertex & h ) const
+{
+  return myHEDS.halfEdgeIndexFromArc( t, h );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::Face
+DGtal::PolygonalSurface<TPoint>::faceAroundArc( const Arc & a ) const
+{
+  return myHEDS.halfEdge( a ).face;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::FaceRange
+DGtal::PolygonalSurface<TPoint>::facesAroundArc( const Arc & a ) const
+{
+  FaceRange result;
+  Face f = faceAroundArc( a );
+  if ( f != INVALID_FACE ) result.push_back( f );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::VertexRange 
+DGtal::PolygonalSurface<TPoint>::verticesAroundFace( const Face & f ) const
+{
+  VertexRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromFaceIndex( f );
+  Index hei = start_hei;
+  do {
+    const HalfEdge& he = myHEDS.halfEdge( hei );
+    ASSERT( ( he.face == f )
+	    && "[PolygonalSurface::verticesAroundFace] invalid face." );
+    result.push_back( he.toVertex );
+    hei = he.next;
+  } while ( hei != start_hei );
+  ASSERT( result.size() >= 3 );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::ArcRange 
+DGtal::PolygonalSurface<TPoint>::arcsAroundFace( const Face & f ) const
+{
+  ArcRange result;
+  const Index start_hei = myHEDS.halfEdgeIndexFromFaceIndex( f );
+  Index hei = start_hei;
+  do {
+    result.push_back( hei );
+    const HalfEdge& he = myHEDS.halfEdge( hei );
+    ASSERT( ( he.face == f )
+	    && "[PolygonalSurface::arcsAroundFace] invalid face." );
+    hei = he.next;
+  } while ( hei != start_hei );
+  ASSERT( result.size() >= 3 );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+bool
+DGtal::PolygonalSurface<TPoint>::isVertexBoundary( const Vertex& v ) const
+{
+  return myHEDS.isVertexBoundary( v );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+bool
+DGtal::PolygonalSurface<TPoint>::isArcBoundary( const Arc& v ) const
+{
+  return INVALID_FACE == myHEDS.halfEdge( v ).face;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::FaceRange
+DGtal::PolygonalSurface<TPoint>::allFaces() const
+{
+  FaceRange result( nbFaces() );
+  for ( Face fi = 0; fi < result.size(); ++fi )
+    result[ fi ] = fi;
+  return result;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::ArcRange
+DGtal::PolygonalSurface<TPoint>::allArcs() const
+{
+  ArcRange result( nbArcs() );
+  for ( Arc fi = 0; fi < result.size(); ++fi )
+    result[ fi ] = fi;
+  return result;
+}
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::VertexRange
+DGtal::PolygonalSurface<TPoint>::allVertices() const
+{
+  VertexRange result( nbVertices() );
+  for ( Vertex fi = 0; fi < result.size(); ++fi )
+    result[ fi ] = fi;
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::ArcRange
+DGtal::PolygonalSurface<TPoint>::allBoundaryArcs() const
+{
+  return myHEDS.boundaryHalfEdgeIndices();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TPoint>
+inline
+typename DGtal::PolygonalSurface<TPoint>::VertexRange
+DGtal::PolygonalSurface<TPoint>::allBoundaryVertices() const
+{
+  return myHEDS.boundaryVertices();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TPoint>
+inline
+void
+DGtal::PolygonalSurface<TPoint>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[PolygonalSurface #V=" << myHEDS.nbVertices()
+      << " #E=" << myHEDS.nbEdges() << " #F=" << myHEDS.nbFaces()
+      << " Chi=" << Euler() << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TPoint>
+inline
+bool
+DGtal::PolygonalSurface<TPoint>::isValid() const
+{
+  return isHEDSValid;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TPoint>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const PolygonalSurface<TPoint> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

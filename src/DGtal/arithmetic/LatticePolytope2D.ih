@@ -1,0 +1,911 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file LatticePolytope2D.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ * @author Emilie Charrier
+ *
+ * @date 2012/04/19
+ *
+ * Implementation of inline methods defined in LatticePolytope2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iterator>
+#include "DGtal/kernel/NumberTraits.h"
+#include "DGtal/kernel/sets/CDigitalSet.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+DGtal::LatticePolytope2D<TSpace,TSequence>::~LatticePolytope2D()
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+DGtal::LatticePolytope2D<TSpace,TSequence>::LatticePolytope2D()
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+DGtal::LatticePolytope2D<TSpace,TSequence>::LatticePolytope2D
+( const Self & other )
+  : myVertices( other.myVertices )
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Self &
+DGtal::LatticePolytope2D<TSpace,TSequence>::operator=
+( const Self & other )
+{ // Nothing to do.
+  if ( this != &other )
+    myVertices = other.myVertices;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::ConstIterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+begin() const
+{
+  return myVertices.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::ConstIterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+end() const
+{
+  return myVertices.end();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Iterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+begin()
+{
+  return myVertices.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Iterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+end()
+{
+  return myVertices.end();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+bool
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+empty() const
+{
+  return myVertices.empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Size
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+size() const
+{
+  return myVertices.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Size
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+max_size() const
+{
+  return myVertices.max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+clear()
+{
+  myVertices.clear();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Iterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+erase( Iterator it )
+{
+  return myVertices.erase( it );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+swap( LatticePolytope2D & other )
+{
+  myVertices.swap( other.myVertices );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::MyIntegerComputer &
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+ic() const
+{
+  return _ic;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Domain
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+boundingBoxDomain() const
+{
+  ConstIterator it = begin();
+  ConstIterator it_end = end();
+  Point infimum = *it;
+  Point supremum = *it;
+  for ( ++it; it != it_end; ++it )
+    {
+      infimum = infimum.inf( *it );
+      supremum = supremum.sup( *it );
+    }
+  return Domain( infimum, supremum );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+purge()
+{
+  Iterator it = begin();
+  Iterator it_end = end();
+  Iterator it_prev;
+  while ( it != it_end )
+    {
+      _A = *it;
+      it_prev = it;
+      ++it;
+      while ( ( it != it_end ) && ( _A == *it ) )
+	it = erase( it );
+    }
+  // Checks case where first vertex is also last vertex.
+  if ( ( size() > 1 ) && ( * begin() == *it_prev ) )
+    erase( begin() );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Iterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+insertBefore( const Iterator & pos, const Point & K )
+{
+  return myVertices.insert( pos, K );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+pushBack( const Point & K )
+{
+  myVertices.push_back( K );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+pushFront( const Point & K )
+{
+  myVertices.push_front( K );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+push_back( const Point & K )
+{
+  myVertices.push_back( K );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+push_front( const Point & K )
+{
+  myVertices.push_front( K );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+const typename DGtal::LatticePolytope2D<TSpace,TSequence>::Integer &
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+twiceArea() const
+{
+  _a = NumberTraits<Integer>::ZERO;
+  ConstIterator it = begin();
+  ConstIterator it_end = end();
+  ConstIterator it_next = it; ++it_next;
+  while ( it_next != it_end )
+    {
+      _a += _ic.crossProduct( *it, *it_next );
+      it = it_next; ++it_next;
+    }
+  _a += _ic.crossProduct( *it, *(begin()) );
+  return _a;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Point3I
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+centroid() const
+{
+  _a = twiceArea();
+  return centroid( _a );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Point3I
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+centroid( const Integer & twice_area ) const
+{
+  _a = _b = NumberTraits<Integer>::ZERO;
+  _A = Point( NumberTraits<Integer>::ZERO, NumberTraits<Integer>::ZERO );
+  ConstIterator it_begin = begin();
+  ConstIterator it = it_begin;
+  ConstIterator it_end = end();
+  if( twice_area > NumberTraits<Integer>::ZERO )
+    {
+      _den = 3 * twice_area;
+      ConstIterator it_next = it; ++it_next;
+      while ( it_next != it_end )
+	{
+	  _ic.getCrossProduct( _c, *it, *it_next );
+	  _B = *it + *it_next;
+	  _B *= _c;
+	  _A += _B;
+	  it = it_next; ++it_next;
+	}
+      _ic.getCrossProduct( _c, *it, *it_begin );
+      _B = *it + *it_begin;
+      _B *= _c;
+      _A += _B;
+    }
+  else
+    {
+      _den = NumberTraits<Integer>::ZERO;
+      for ( ; it != it_end; ++it )
+	{
+	  _A += *it;
+	  ++_den;
+	}
+    }
+  return Point3I( _A[ 0 ], _A[ 1 ], _den );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Integer
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+numberBoundaryPoints() const
+{
+  _a = NumberTraits<Integer>::ZERO;
+  ConstIterator it = begin();
+  ConstIterator it_end = end();
+  ConstIterator it_next = it; ++it_next;
+  while ( it_next != it_end )
+    {
+      _N = *it_next - *it;
+      ic().getGcd( _g, _N[ 0 ], _N[ 1 ] );
+      _a += _g;
+      it = it_next; ++it_next;
+    }
+  _N = *it - *(begin());
+  ic().getGcd( _g, _N[ 0 ], _N[ 1 ] );
+  _a += _g;
+  return _a;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::Integer
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+numberInteriorPoints() const
+{
+  _c1 = numberBoundaryPoints();
+  _c3 = twiceArea();
+  _c = _c3 - _c1 + 2;
+  ASSERT( ic().isZero( _c % 2 ) );
+  return _c / 2;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::SizeCouple
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+findCut( Iterator & it_next_is_outside, Iterator & it_next_is_inside,
+         const HalfSpace & hs )
+{
+  Size nbWithin = (Size) 0; // JOL: problem on macos. unsigned long has no NumberTraits. NumberTraits<Size>::ZERO;
+  Size nb = (Size) 0;       // JOL: problem on macos. unsigned long has no NumberTraits. NumberTraits<Size>::ZERO;
+  Iterator it = begin();
+  Iterator it_prev = it;
+  Iterator it_end = end();
+  it_next_is_outside = it_next_is_inside = it_end;
+  if ( it == it_end )
+    return std::make_pair( (Size) 0, (Size) 0 ); // JOL: problem on macos. unsigned long has no NumberTraits. NumberTraits<Size>::ZERO;
+  bool visibility_begin_vtx; // visibility of begin vertex.
+  bool visibility_prev_vtx;  // visibility of previous vertex when visiting the list.
+  bool visibility_vtx;       // visibility of current vertex when visiting the list.
+  ++nb;
+  if ( ( visibility_begin_vtx = hs( *it++ ) ) ) ++nbWithin; // Assignment
+  visibility_prev_vtx = visibility_begin_vtx;
+  visibility_vtx = visibility_begin_vtx;
+  for ( ; it != it_end; ++it, ++nb )
+    {
+      if ( ( visibility_vtx = hs( *it ) ) ) ++nbWithin; // Assignment
+      if ( visibility_vtx != visibility_prev_vtx )
+        {
+          if ( visibility_prev_vtx )  it_next_is_outside = it_prev;
+          else                        it_next_is_inside  = it_prev;
+        }
+      visibility_prev_vtx = visibility_vtx;
+      it_prev = it;
+    }
+  if ( visibility_vtx != visibility_begin_vtx )
+    {
+      if ( visibility_vtx )  it_next_is_outside = it_prev;
+      else                   it_next_is_inside  = it_prev;
+    }
+  ASSERT( ( nbWithin == 0 ) || ( nbWithin == size() )
+          || ( ( it_next_is_outside != it_end ) && ( it_next_is_inside != it_end )
+               && ( it_next_is_inside != it_next_is_outside ) ) );
+  return std::make_pair( nbWithin, nb );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+bool
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+cut( const HalfSpace & hs )
+{
+  Iterator it_next_is_outside;
+  Iterator it_next_is_inside;
+  SizeCouple nbs = findCut( it_next_is_outside, it_next_is_inside, hs );
+
+  // Take care of easy cases.
+  if ( nbs.first == nbs.second )               { return false; }
+  if ( nbs.first == (Size) 0 ) { clear(); return true; } // JOL see findCut
+
+  // Otherwise, determines A1B1 and A2B2.
+  twiceArea(); // result in _a;
+  HalfSpace hs1 = halfSpace( it_next_is_outside );
+  HalfSpace hs3 = halfSpace( it_next_is_inside );
+  //hs3.negate();
+  _A1 = *it_next_is_outside;
+  ++it_next_is_outside;
+  if ( it_next_is_outside == end() ) it_next_is_outside = begin();
+  _B1 = *it_next_is_outside;
+  _B2 = *it_next_is_inside;
+  ++it_next_is_inside;
+  if ( it_next_is_inside == end() ) it_next_is_inside = begin();
+  _A2 = *it_next_is_inside;
+
+  // Erases outside vertices.
+  while ( it_next_is_outside != it_next_is_inside )
+    {
+      it_next_is_outside = erase( it_next_is_outside );
+      if ( it_next_is_outside == end() ) it_next_is_outside = begin();
+    }
+  // Both iterators point on the right place.
+  if ( _a > NumberTraits<Integer>::ZERO )
+    { //convex not reduced to a straight line segment
+      std::insert_iterator<ClockwiseVertexSequence> itOut
+        = std::inserter<ClockwiseVertexSequence>( myVertices, it_next_is_outside );
+     computeConvexHullBorder( itOut, _A1, _A2, hs1, hs, hs3 );
+    }
+  else //convex reduced to a straight line segment
+    {
+      //compute the new extremity of the straight line segment
+      _v = _B1 - _A1;
+      _ic.reduce( _v );
+      _a = ( hs.c - hs.N.dot( _A1 ) ) / ( hs.N.dot( _v ) );
+      _A1 += _v * _a;
+      insertBefore( it_next_is_outside, _A1 );
+    }
+  purge(); // O(n)
+  return true;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::HalfSpace
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+halfSpace( ConstIterator it ) const
+{
+  Point A( *it ); ++it;
+  if ( it == end() ) it = begin();
+  Point B( *it ); ++it;
+  if ( it == end() ) it = begin();
+  _N[ 0 ] = A[ 1 ] - B[ 1 ];
+  _N[ 1 ] = B[ 0 ] - A[ 0 ];
+  _ic.getDotProduct( _c, _N, A );
+  _ic.getDotProduct( _c1, _N, *it );
+  if ( _c1 > _c )
+    {
+      _N.negate();
+      _c = -_c;
+    }
+  //simplification of the constraint
+  _ic.getGcd( _g, _N[ 0 ], _N[ 1 ] );
+  _N /= _g;
+  return HalfSpace( _N, _ic.floorDiv( _c, _g) );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+typename DGtal::LatticePolytope2D<TSpace,TSequence>::HalfSpace
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+halfSpace( const Point & A, const Point & B, const Point & inP ) const
+{
+  _N[ 0 ] = A[ 1 ] - B[ 1 ];
+  _N[ 1 ] = B[ 0 ] - A[ 0 ];
+  _ic.getDotProduct( _c, _N, A );
+  _ic.getDotProduct( _c1, _N, inP );
+  if ( _c1 > _c )
+    {
+      _N.negate();
+      _c = -_c;
+    }
+  //simplification of the constraint
+  _ic.getGcd( _g, _N[ 0 ], _N[ 1 ] );
+  _N /= _g;
+  return HalfSpace( _N, _ic.floorDiv( _c, _g) );
+}
+
+    /**
+       Computes the set \a aSet all the digital points that belongs to this polygon.
+
+       @param aSet (returns) the set that contains as output all the
+       digital points of this polygon.
+
+       @return the number of inserted points.
+       @todo this method is for now not efficient.
+    */
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+template <typename DigitalSet>
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+getIncludedDigitalPoints( DigitalSet & aSet ) const
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet< DigitalSet > ));
+  typedef typename DigitalSet::Domain DigitalSetDomain;
+  BOOST_STATIC_ASSERT(( concepts::ConceptUtils::SameType< DigitalSetDomain, Domain >::value ));
+  typedef typename DigitalSetDomain::ConstIterator DomainConstIterator;
+  typedef typename DigitalSet::Iterator DigitalSetIterator;
+  aSet.clear();
+  // case 1 : empty polygon.
+  if ( empty() ) return;
+  // case 2 : one vertex.
+  size_t s = size();
+  if ( s == 1 )
+    {
+      aSet.insert( *begin() );
+      return;
+    }
+  // case 3 : 2 vertices
+  if ( s == 2 )
+    {
+      ConstIterator it_vtx = begin();
+      ConstIterator it_vtx2 = it_vtx; ++it_vtx2;
+      HalfSpace hs = halfSpace( it_vtx );
+      Vector orthN( -hs.N[ 1 ], hs.N[ 0 ] );
+      HalfSpace hs_orth( orthN, _ic.dotProduct( orthN, *it_vtx ) );
+      if ( ! hs_orth( *it_vtx2 ) ) hs_orth.negate();
+      HalfSpace hs2 = halfSpace( it_vtx2 );
+      Vector orthN2( -hs2.N[ 1 ], hs2.N[ 0 ] );
+      HalfSpace hs2_orth( orthN2, _ic.dotProduct( orthN2, *it_vtx2 ) );
+      if ( ! hs2_orth( *it_vtx ) ) hs2_orth.negate();
+
+      for ( DomainConstIterator it = aSet.domain().begin(),
+              it_end = aSet.domain().end(); it != it_end; ++it )
+        if ( hs( *it ) ) aSet.insert( *it );
+      for ( DigitalSetIterator it_set = aSet.begin(), it_set_end = aSet.end();
+            it_set != it_set_end; )
+        {
+          DigitalSetIterator it_cur = it_set; ++it_set;
+          if ( ! ( hs_orth( *it_cur )
+                   && hs2( *it_cur )
+                   && hs2_orth( *it_cur ) ) )
+            aSet.erase( it_cur );
+        }
+      return;
+    }
+  // case 4 : >= 3 vertices
+  ConstIterator it_vtx = begin();
+  ConstIterator it_vtx_end = end();
+  HalfSpace hs = halfSpace( it_vtx );
+  for ( DomainConstIterator it = aSet.domain().begin(),
+          it_end = aSet.domain().end(); it != it_end; ++it )
+    if ( hs( *it ) ) aSet.insert( *it );
+  ++it_vtx;
+  for ( ; it_vtx != it_vtx_end; ++it_vtx )
+    {
+      hs = halfSpace( it_vtx );
+      for ( DigitalSetIterator it_set = aSet.begin(), it_set_end = aSet.end();
+            it_set != it_set_end; )
+        {
+          DigitalSetIterator it_cur = it_set; ++it_set;
+          if ( ! hs( *it_cur ) ) aSet.erase( it_cur );
+        }
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+bool
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+getFirstPointsOfHull
+( Vector & v,
+  Point & inPt, // must belong to hs1.
+  Point & outPt,
+  const HalfSpace & hs1,
+  const HalfSpace & hs2 ) const
+{
+  ASSERT( hs1.isOnBoundary( inPt ) );
+  bool exactIntersection;
+
+  // initialize vector directionVector (not definitive)
+  _DV = hs1.tangent();
+
+  //compute the intersection of ray (inPt, _DV) with constraint C2
+  _ic.getCoefficientIntersection( _fl, _ce,
+                                  inPt, _DV, hs2.N, hs2.c );
+
+  // uses the intersection to compute the first vertex of the upper
+  // convex hull (inside convex hull), i.e. the grid point closest to
+  // C2 and satisfying C2
+  _ic.getDotProduct( _a, inPt, hs2.N );
+  // if ( ( _a > hs2.c ) && ( _fl == NumberTraits<Integer>::ZERO ) )
+  //   {
+  //     inPt += _DV * _ce;
+  //     _DV.neg();
+  //   }
+  // else if ( ( ( _a <= hs2.c ) && ( _fl >= NumberTraits<Integer>::ZERO ) )
+  //           || ( ( _a > hs2.c2 ) && ( _fl <= NumberTraits<Integer>::ZERO ) ) )
+  if ( ( ( _a <= hs2.c ) && ( _fl >= NumberTraits<Integer>::ZERO ) )
+       || ( ( _a > hs2.c ) && ( _fl < NumberTraits<Integer>::ZERO ) ) )
+    {
+      inPt += _DV * _fl;
+    }
+  else
+    {
+      inPt += _DV * _ce;
+      _DV.negate();
+    }
+
+  // compute the first vertex of the lower convex hull
+  if ( _fl == _ce )  //integer intersection
+    {
+      outPt = inPt;
+      exactIntersection = true;
+    }
+  else
+    {
+      outPt = inPt + _DV;
+      //initialization of v: valid Bezout vector of u
+      _ic.getValidBezout( v, inPt, _DV, hs1.N, hs1.c, hs2.N, hs2.c, true );
+      exactIntersection = false;
+    }
+
+#ifdef DEBUG_LatticePolytope2D
+  std::cerr << "[CIP::getFirstPointsOfHull] in=" << inPt
+            << " out=" << outPt << " v=" << v << std::endl;
+#endif //DEBUG_LatticePolytope2D
+  ASSERT( hs1.isOnBoundary( inPt ) );
+  ASSERT( hs1.isOnBoundary( outPt ) );
+  ASSERT( hs2( inPt ) );
+  ASSERT( ( exactIntersection && hs2( outPt ) ) || ( ! exactIntersection && ! hs2( outPt ) ) );
+  return exactIntersection;
+}
+
+/**
+   Computes the border of the upper and of the lower convex hull
+   from the starting points inPts[0] (up) and outPts[0]
+   down, along the constraint N2.p <= c2 while the vertices
+   satisfy the constraint N3.p <= c3. The vertices of the two
+   borders are stored at the end of inPts and outPts.
+
+   @param inPts (in, out) as input, contains the first point, as
+   output the sequence of points satisfying \a hs2 and \a hs3.
+
+   @param outPts (in, out) as input, contains the first point, as
+   output the sequence of points not satisfying \a hs2 and satisfying
+   \a hs3.
+
+   @param BV the Bezout vector of the vector between inPts[ 0 ] and outPts[ 0 ].
+
+   @param hs2 the half-space that is approached by the two sequences of points.
+   @param hs3 the limiting half-space which defines the bounds of the approximation.
+ */
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+getAllPointsOfHull( std::vector<Point> & inPts,
+                    std::vector<Point> & outPts,
+                    const Vector & BV,
+                    const HalfSpace & hs2,
+                    const HalfSpace & hs3 ) const
+{
+  ASSERT( hs2.N != hs3.N );
+
+  // _A and _B represents the last computed vertex above and below the constraint resp.
+  // _u, _v pair of Bezout vectors.
+  _v = BV;
+  // initialize A and B
+  _A = inPts[0];
+  _B = outPts[0];
+
+  // while A and B do not lie on the supporting line of hs2
+  // and satisfies hs3 and while v is not parallel to hs2
+  while ( ( ! hs2.isOnBoundary( _A ) ) // stops if A reaches hs2.
+          && ( hs3( _A ) )             // stops if A does not satisfy hs3.
+	  && ( ! hs2.isOnBoundary( _B ) ) // stops if B reaches hs2.
+	  && ( hs3( _B ) )             // stops if B does not satisfy hs3.
+	  && ( _ic.dotProduct( _v, hs2.N ) != NumberTraits<Integer>::ZERO ) )
+    {
+#ifdef DEBUG_LatticePolytope2D
+      std::cerr << "[CIP::getAllPointsOfHull] A=" << _A
+                << " B=" << _B << " v= " << _v << std::endl;
+#endif // DEBUG_LatticePolytope2D
+      if ( _ic.dotProduct( _v, hs2.N ) < NumberTraits<Integer>::ZERO )
+	{ //------ second configuration, we find a new B --------------------
+	  _ic.getCoefficientIntersection( _fl, _ce,
+                                          _B, _v, hs2.N, hs2.c );
+          _u = _B; _u += _v *_fl;
+          if ( hs3( _u ) )
+            { // Point is still within bounds.
+              _B = _u;
+              outPts.push_back( _B );
+#ifdef DEBUG_LatticePolytope2D
+              std::cerr << "[CIP::getAllPointsOfHull] add B=" << _B << std::endl;
+#endif // ifdef DEBUG_LatticePolytope2D
+            }
+          else
+            { // Point is too far away. Check intersection with hs3 instead.
+              _ic.getCoefficientIntersection( _fl, _ce,
+                                              _B, _v, hs3.N, hs3.c );
+              _B += _v * _fl;
+              outPts.push_back( _B );
+#ifdef DEBUG_LatticePolytope2D
+              std::cerr << "[CIP::getAllPointsOfHull] add B=" << _B << std::endl;
+#endif //ifdef DEBUG_LatticePolytope2D
+              ASSERT( hs3( _B ) );
+              break; // necessarily the last point.
+            }
+	}
+      else
+	{ //----- first configuration, we find a new A -----------------------
+	  _ic.getCoefficientIntersection( _fl, _ce,
+                                          _A, _v, hs2.N, hs2.c );
+          _u = _A; _u += _v *_fl;
+          if ( hs3( _u ) )
+            { // Point is still within bounds.
+              _A = _u;
+              inPts.push_back( _A );
+#ifdef DEBUG_LatticePolytope2D
+              std::cerr << "[CIP::getAllPointsOfHull] add A=" << _A << std::endl;
+#endif //ifdef DEBUG_LatticePolytope2D
+            }
+          else
+            { // Point is too far away. Check intersection with hs3 instead.
+              _ic.getCoefficientIntersection( _fl, _ce,
+                                              _A, _v, hs3.N, hs3.c );
+              _A += _v * _fl;
+              inPts.push_back( _A );
+#ifdef DEBUG_LatticePolytope2D
+              std::cerr << "[CIP::getAllPointsOfHull] add A=" << _A << std::endl;
+#endif //ifdef DEBUG_LatticePolytope2D
+              ASSERT( hs3( _A ) );
+              break; // necessarily the last point.
+            }
+	}
+      // update u and v
+      _u = _B;
+      _u -= _A;
+      // From _ic.getValidBezout( _A, _u, _v, N2, c2, N2, c2, 0);
+      // JOL: to check.
+      _ic.getValidBezout( _v, _A, _u, hs2.N, hs2.c, hs2.N, hs2.c, false );
+    }
+  // when the loop finishes, we have to complete the computation
+  // of each convex hull
+  // if ( ! hs3( _A ) ) // A does not satisfy C3, we remove it.
+  //   inPts.pop_back();
+  // else if ( ! hs3( _B ) ) // B does not satisfy C3, we remove it
+  //   outPts.pop_back();
+  // else
+  if ( hs2.isOnBoundary( _A ) ) // A lies on C2 so A is also a vertex of outPts
+    outPts.push_back( _A );
+  else if ( hs2.isOnBoundary( _B ) ) // B lies on C2 so B is also a vertex of inPts
+    inPts.push_back( _B );
+}
+
+/**
+ * compute the convex hull of grid points satisfying the
+ * constraints N1.P<=c1, N2.P<=c2 and N3.P>=c3.
+ *
+ * N2.P<=c2 corresponds to the cut two parts of computation: from
+ * constraint 1 to constraint 3 and from constraint 3 to
+ * constraint 1.
+ *
+ * The computed vertices are inserted at position [pos] in some list.
+ *
+ * @param pointRefC1 and pointRefC3 corresponds to grid point lying on
+ * the supporting lines of C1 and of C3 resp.
+ *
+ * @param pos corresponds to an iterator in the list of vertices
+ * of the convex, to add the next new vertices
+ *
+ * NB: the method also computes grid point satisfying N1.P<=c1 and
+ * N3.P>=c3 but not satisfying N2.P<=c2. They are stored in
+ * "resultdown" of size "nbverticesdown".  the algorithm uses
+ * these points that's why they appear in the code.
+ */
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+template <typename OutputIterator>
+OutputIterator
+DGtal::LatticePolytope2D<TSpace,TSequence>::
+computeConvexHullBorder
+( OutputIterator itOut,
+  const Point & pointRefC1,
+  const Point & pointRefC3,
+  const HalfSpace & hs1,
+  const HalfSpace & hs2,
+  const HalfSpace & hs3 ) const
+{
+  // _u, _v: vectors u and v to determine the next vertex
+  bool exactIntersection;
+  // initializes A, B, u, v and the two first vertices of resultup and
+  // resultdown.
+  _inPts.resize( 1 );    //to store half convex hull border
+  _outPts.resize( 1 );  //to store half convex hull border
+  _inPts[ 0 ] = pointRefC1;
+
+  // exactIntersection is equal to one when the intersection of the
+  // supporting lines of C1 and C2 corresponds to an integer point
+  exactIntersection = getFirstPointsOfHull( _v, _inPts[ 0 ], _outPts[ 0 ],
+                                            hs1, hs2 );
+  if ( ! exactIntersection ) // not integer intersection
+    {
+      //computation of the first part of the border
+      getAllPointsOfHull( _inPts, _outPts, _v, hs2, hs3 );
+    }
+  // fill in convexup
+  for( Size i = 0; i < _inPts.size(); ++i )
+    *itOut++ = _inPts[ i ];
+
+  // second part
+  // initializes A, B, u, v and the two first vertices of resultup and
+  // resultdown.
+  _inPts.resize( 1 );
+  _outPts.resize( 1 );
+  _inPts[0] = pointRefC3;
+  // exactIntersection is equal to one when the intersection of the
+  // supporting lines of C3 and C2 corresponds to an integer point
+  exactIntersection = getFirstPointsOfHull( _v, _inPts[ 0 ], _outPts[ 0 ],
+                                            hs3, hs2 );
+  if ( ! exactIntersection ) // not integer intersection
+  {
+    //computation of the second part of the border
+    getAllPointsOfHull( _inPts, _outPts, _v, hs2, hs1 ); // check not hs1.
+  }
+  //fill in convexup
+  for( Size i = _inPts.size(); i != 0; --i )
+    {
+      *itOut++ = _inPts[ i - 1 ];
+    }
+  return itOut;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TSequence>
+inline
+void
+DGtal::LatticePolytope2D<TSpace,TSequence>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[LatticePolytope2D #Vertices=" << size() << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, typename TSequence>
+inline
+bool
+DGtal::LatticePolytope2D<TSpace,TSequence>::isValid() const
+{
+    return true;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TSequence>
+inline
+std::string
+DGtal::LatticePolytope2D<TSpace,TSequence>::className
+() const
+{
+  return "LatticePolytope2D";
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, typename TSequence>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+		  const LatticePolytope2D<TSpace,TSequence> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

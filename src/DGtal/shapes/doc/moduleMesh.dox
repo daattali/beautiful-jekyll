@@ -1,0 +1,150 @@
+/**
+* @file moduleMesh.dox
+*
+* @author Bertrand Kerautret (\c kerautre@loria.fr )
+* LORIA (CNRS, UMR 7503), University of Nancy, France
+
+* @date 2014/06/27
+*
+* Documentation file for feature moduleMesh
+*
+* This file is part of the DGtal library.
+*/
+
+/* 
+* Useful to avoid writing DGtal:: in front of every class.
+* Do not forget to add an entry in src/DGtal/base/Config.h.in !
+*/
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleMesh Manipulating Simple Mesh 
+@author Bertrand Kerautret
+
+[TOC]
+
+\section sectmoduleMesh1 Simple Mesh Class 
+
+
+The aim of this class is to handle basic simple mesh mainly for
+basic tasks such as to import/export/display of digital surface. This class is able
+to deal with triangulated, quad or polygonal faces and can include
+specific colors to display faces. It also provides several static
+tools to generate simple shapes like tubular objects or the 3d surface
+from height map.
+
+The mesh object stores explicitly the vertices and each face is represented as a list of vertex indices.       
+
+\subsection subsect2moduleMesh Mesh Construction
+
+To construct a Mesh object you need first to include the associated
+header file:
+
+@snippet examples/shapes/mesh3DConstructionAndVisualisation.cpp MeshUseInclude 
+
+
+Then the mesh construction is very simple, for instance you start
+ constructing an empty mesh input and specify if you want to store or
+not the vertex colors in the mesh:
+
+@snippet examples/shapes/mesh3DConstructionAndVisualisation.cpp MeshUseMeshConstructor 
+
+Then you can add some vertices mesh:
+
+@snippet examples/shapes/mesh3DConstructionAndVisualisation.cpp MeshUseMeshAddingPoints 
+
+
+and add  some triangular/quad faces from the vertex indices:
+
+@snippet examples/shapes/mesh3DConstructionAndVisualisation.cpp MeshUseMeshAddingBasicFaces 
+
+
+You can also insert some polygonal faces by defining a vector containing the vertices of the face:
+
+@snippet examples/shapes/mesh3DConstructionAndVisualisation.cpp MeshUseMeshAddingPolygonalFaces 
+
+An example of mesh construction is given here:  mesh3DConstructionAndVisualisation.cpp and will produce the following faces:
+
+   \image html  example3dMeshConstruction.png  "Simple example of 3D mesh construction."
+
+
+\subsection subsect2moduleMeshIO Mesh IO
+
+The Mesh object is integrated in the main IO framework of DGtal. You
+can for instance display a Mesh object directly through a Viewer3d object:
+
+@snippet examples/shapes/mesh3DConstructionAndVisualisation.cpp MeshUseDisplay
+
+(See complete example in mesh3DConstructionAndVisualisation.cpp)
+
+You can also export a mesh by using the MeshWriter class given in the header file:
+@snippet tests/io/writers/testMeshWriter.cpp MeshWriterUseIncludes
+and export it:
+@snippet tests/io/writers/testMeshWriter.cpp MeshWriterUseMeshExport
+
+
+The mesh import is also simple:
+
+- First add the MeshReader file:
+@snippet examples/io/meshFromOFF.cpp includeImportOFF
+
+- import the mesh:
+@snippet examples/io/meshFromOFF.cpp ImportOFFfile
+
+
+
+
+\section sectmoduleMesh2 Generating Basic Mesh 
+
+
+The Mesh class also provides some methods to generate shape mesh
+associated to tubular object or 3d surface from height map.
+
+For instance you can first define the  vector of the 3D skeleton points:
+@snippet tests/shapes/testMesh.cpp testMeshCreateSkeleton
+
+Then you can reconstruct a tubular mesh with a given radius:
+@snippet tests/shapes/testMesh.cpp testMeshCreateTubeMesh
+
+You will obtain such a tube display:
+   \image html  testMeshVisu3d.png  "Resulting mesh of tubular object."
+   \image latex testMeshVisu3d.png  "Resulting mesh of tubular object."  width=5cm
+
+
+
+Another example is given in testMesh.cpp which generates an height
+field from a sequence of height values. In the same way than the previous
+example, you can construct your input height vector:
+
+@snippet tests/shapes/testMesh.cpp testMeshCreateHeightSequence
+
+and then construct the height field mesh:
+
+@snippet tests/shapes/testMesh.cpp testMeshCreateSequenceMesh
+
+
+You will obtain such a small height field display (with previous tube mesh):
+
+   \image html  testMeshVisu3dBis.png  "Resulting mesh of tubular object and height field."
+   \image latex testMeshVisu3dBis.png  "Resulting mesh of tubular object and height field."  width=5cm
+
+@see  tests/shapes/testMesh.cpp
+
+\section sectmoduleMesh3 Converting to/from TriangulatedSurface and PolygonalSurface
+
+Class \ref Mesh does not provide a topology between the face
+elements. If you wish to do so, you should consider using classes \ref
+TriangulatedSurface and \ref PolygonalSurface. You can also use conversions:
+    - \ref Mesh toward \ref TriangulatedSurface with MeshHelpers::mesh2TriangulatedSurface
+    - \ref Mesh toward \ref PolygonalSurface with MeshHelpers::mesh2PolygonalSurface
+    - \ref TriangulatedSurface toward \ref Mesh  with MeshHelpers::triangulatedSurface2Mesh
+    - \ref PolygonalSurface toward \ref Mesh  with MeshHelpers::polygonalSurface2Mesh
+
+See also \ref moduleShortcuts.
+
+@note Classes \ref TriangulatedSurface and \ref PolygonalSurface have
+also specialized methods to export them as OBJ files,.
+
+*/
+
+}

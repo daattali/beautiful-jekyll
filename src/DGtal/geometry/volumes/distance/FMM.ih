@@ -1,0 +1,515 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file FMM.ih
+ * @author Tristan Roussillon (\c
+ * tristan.roussillon@liris.cnrs.fr ) Laboratoire d'InfoRmatique en
+ * Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS,
+ * France
+ *
+ *
+ * @date 2012/01/17
+ *
+ * @brief Implementation of inline methods defined in FMM.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+#include "DGtal/topology/SCellsFunctors.h"
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+const typename DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::Dimension DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::dimension = Point::dimension;
+
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::FMM(Image& aImg, AcceptedPointSet& aSet, 
+      ConstAlias<PointPredicate> aPointPredicate)
+  : myImage( aImg ), myAcceptedPoints( aSet ), 
+    myPointFunctorPtr( new PointFunctor(aImg, aSet) ), 
+    myFlagIsOwning( true ), 
+    myPointPredicate( aPointPredicate ), 
+    myAreaThreshold( std::numeric_limits<Area>::max() ), 
+    myValueThreshold( std::numeric_limits<Value>::max() )
+{
+  if (myAcceptedPoints.size() == 0) throw InputException(); 
+  init(); 
+}
+
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::FMM(Image& aImg, AcceptedPointSet& aSet, 
+      ConstAlias<PointPredicate> aPointPredicate, 
+      const Area& aAreaThreshold, 
+      const Value& aValueThreshold)
+  : myImage( aImg ), myAcceptedPoints( aSet ), 
+    myPointFunctorPtr( new PointFunctor(aImg, aSet) ), 
+    myFlagIsOwning( true ), 
+    myPointPredicate( aPointPredicate ), 
+    myAreaThreshold( aAreaThreshold ), 
+    myValueThreshold( aValueThreshold )
+{
+  if (myAcceptedPoints.size() == 0) throw InputException(); 
+  init();
+}
+
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::FMM(Image& aImg, AcceptedPointSet& aSet, 
+      ConstAlias<PointPredicate> aPointPredicate,
+      PointFunctor& aPointFunctor)
+  : myImage( aImg ), myAcceptedPoints( aSet ), 
+    myPointFunctorPtr( &aPointFunctor ), 
+    myFlagIsOwning( false ), 
+    myPointPredicate( aPointPredicate ), 
+    myAreaThreshold( std::numeric_limits<Area>::max() ), 
+    myValueThreshold( std::numeric_limits<Value>::max() )
+{
+  if (myAcceptedPoints.size() == 0) throw InputException(); 
+  init(); 
+}
+
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::FMM(Image& aImg, AcceptedPointSet& aSet, 
+      ConstAlias<PointPredicate> aPointPredicate, 
+      const Area& aAreaThreshold, 
+      const Value& aValueThreshold,
+      PointFunctor& aPointFunctor)
+  : myImage( aImg ), myAcceptedPoints( aSet ), 
+    myPointFunctorPtr( &aPointFunctor ), 
+    myFlagIsOwning( false ), 
+    myPointPredicate( aPointPredicate ), 
+    myAreaThreshold( aAreaThreshold ), 
+    myValueThreshold( aValueThreshold )
+{
+  if (myAcceptedPoints.size() == 0) throw InputException(); 
+  init();
+}
+
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::~FMM()
+{
+  if (myFlagIsOwning) 
+    delete myPointFunctorPtr; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Static functions :
+
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+template <typename TIteratorOnPoints>
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::initFromPointsRange(const TIteratorOnPoints& itb, const TIteratorOnPoints& ite, 
+		  Image& aImg, AcceptedPointSet& aSet, 
+		  const Value& aValue)
+{
+   
+  aSet.clear(); 
+  for (TIteratorOnPoints it = itb; it != ite; ++it) 
+    {
+      insertAndAlwaysSetValue( aImg, aSet, *it, aValue ); 
+    }
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+template <typename KSpace, typename TIteratorOnBels>
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::initFromBelsRange(const KSpace& aK, 
+		    const TIteratorOnBels& itb, const TIteratorOnBels& ite, 
+		    Image& aImg, AcceptedPointSet& aSet, 
+		    const Value& aValue, 
+		    bool aFlagIsPositive)
+{
+  Value k = -1; 
+  if (aFlagIsPositive) k = 1; 
+
+  aSet.clear(); 
+  for (TIteratorOnBels it = itb; it != ite; ++it) 
+    {
+      //getting incident points
+      functors::SCellToIncidentPoints<KSpace> func( aK ); 
+      typename functors::SCellToIncidentPoints<KSpace>::Output points = func( *it ); 
+      //assignement
+      insertAndAlwaysSetValue( aImg, aSet, points.first, -k*aValue ); 
+      insertAndAlwaysSetValue( aImg, aSet, points.second, k*aValue ); 
+    }
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+template <typename KSpace, typename TIteratorOnBels, typename TImplicitFunction>
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::initFromBelsRange(const KSpace& aK, 
+		    const TIteratorOnBels& itb, const TIteratorOnBels& ite,
+		    const TImplicitFunction& aF, 
+		    Image& aImg, AcceptedPointSet& aSet, 
+		    bool aFlagIsPositive)
+{
+  Value k = -1; 
+  if (aFlagIsPositive) k = 1; 
+
+  /// types
+  typedef typename KSpace::Cell Bel; 
+  typedef typename TImplicitFunction::Value Value; 
+  typedef std::pair<const Bel, Value> BelValue; 
+  typedef std::map<Bel, Value> Buffer;
+  
+  typedef typename functors::SCellToIncidentPoints<KSpace>::Output Pair;  
+  typedef std::vector<Pair> IncidentPoints; 
+  functors::SCellToIncidentPoints<KSpace> getIncidentPoints( aK ); 
+
+  /// 1) store a value for each bel
+  /// (== distance of the inner point to the interface) 
+  IncidentPoints incidentPoints; 
+  Buffer buffer;
+  for (TIteratorOnBels it = itb; it != ite; ++it) 
+    {
+      //getting incident points
+      Pair points = getIncidentPoints( *it );
+      incidentPoints.push_back( points ); 
+
+      //getting values 
+      Value vin = aF( points.first ); 
+      Value vout = aF( points.second ); 
+
+      //computing/storing the new value
+      Value e = std::max(vin, vout) - std::min(vin, vout);
+      Value v = (std::abs(vin)/e); 
+      ASSERT( v >= 0 ); 
+      buffer.insert( BelValue( aK.unsigns( *it ), v ) ); 
+    }
+
+  aSet.clear(); 
+  /// 2) for each inner/outer point
+  /// computes its distance from the values of its incident bels
+  typedef L2FirstOrderLocalDistanceFromCells<KSpace, Buffer, false> Computer4InnerPts; 
+  typedef L2FirstOrderLocalDistanceFromCells<KSpace, Buffer, true> Computer4OuterPts; 
+  Computer4InnerPts computerIn(aK, buffer);    
+  Computer4OuterPts computerOut(aK, buffer);    
+  for (typename IncidentPoints::const_iterator it = incidentPoints.begin(); 
+       it != incidentPoints.end(); ++it) 
+    {
+      //computing the values     
+      Value vin = computerIn( it->first ); 
+      Value vout = computerOut( it->second );
+
+      //assignement
+      insertAndAlwaysSetValue( aImg, aSet, it->first, -k*vin ); 
+      insertAndAlwaysSetValue( aImg, aSet, it->second, k*vout );  
+    }
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+template <typename TIteratorOnPairs>
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::initFromIncidentPointsRange(const TIteratorOnPairs& itb, const TIteratorOnPairs& ite, 
+			      Image& aImg, AcceptedPointSet& aSet, 
+			      const Value& aValue, 
+			      bool aFlagIsPositive)
+{
+  Value k = -1; 
+  if (aFlagIsPositive) k = 1; 
+
+  aSet.clear(); 
+  for (TIteratorOnPairs it = itb; it != ite; ++it) 
+    {
+      insertAndAlwaysSetValue( aImg, aSet, it->first, -k*aValue ); 
+      insertAndAlwaysSetValue( aImg, aSet, it->second, k*aValue ); 
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::compute()
+{
+  Point p = Point::diagonal(0); 
+  Value d = 0; 
+  while ( addNewAcceptedPoint( p, d ) )
+    {   }
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+bool
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::computeOneStep(Point& aPoint, Value& aValue)
+{
+  return addNewAcceptedPoint(aPoint, aValue);
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+typename DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::Value
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::min() const
+{
+  return myMinValue; 
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+typename DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::Value
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::max() const
+{
+  return myMaxValue; 
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+typename DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::Value
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::getMin() const
+{
+  const AcceptedPointSet& set = myAcceptedPoints; 
+  ASSERT( set.size() >= 1 ); 
+
+  typename AcceptedPointSet::ConstIterator it = set.begin(); 
+  typename AcceptedPointSet::ConstIterator itEnd = set.end(); 
+  Value vmin = myImage( *it );  
+  for (++it; it != itEnd; ++it)
+    {
+      Value v = myImage( *it ); 
+      if (v < vmin) vmin = v; 
+    }
+   return vmin; 
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+typename DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::Value
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::getMax() const
+{
+  const AcceptedPointSet& set = myAcceptedPoints; 
+  ASSERT( set.size() >= 1 ); 
+
+  typename AcceptedPointSet::ConstIterator it = set.begin(); 
+  typename AcceptedPointSet::ConstIterator itEnd = set.end(); 
+  Value vmax = myImage( *it );  
+  for (++it; it != itEnd; ++it)
+    {
+      Value v = myImage( *it ); 
+      if (v > vmax) vmax = v; 
+    }
+  return vmax; 
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+bool
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::isValid() const
+{
+  //area threshold
+  if ( (myAcceptedPoints.size() <= 0)
+       || (myAcceptedPoints.size() >= myAreaThreshold) ) return false;
+
+  //distance threshold
+  if ( ( getMin() != min() ) || ( getMax() != max() ) ) return false; 
+  if ( (std::abs(getMin()) >= myValueThreshold)
+       || (getMax() >= myValueThreshold) ) return false; 
+
+  //point predicate
+  bool flagIsOk = true;  
+  const AcceptedPointSet& set = myAcceptedPoints; 
+  typename AcceptedPointSet::ConstIterator it = set.begin(); 
+  typename AcceptedPointSet::ConstIterator itEnd = set.end(); 
+  for ( ; ( (it != itEnd)&&(flagIsOk == true) ); ++it)
+    {
+      if (myPointPredicate( *it ) == false) flagIsOk = false;  
+    }
+  if (!flagIsOk) return false; 
+
+  return true; 
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[FMM " << dimension << "d] ";
+  out << myAcceptedPoints.size() << " accepted points (< " << myAreaThreshold << ")"; 
+  out << " and " << myCandidatePoints.size() << " candidates. "; 
+  out << "dmin: " << min() << ", dmax: " << max(); 
+  out << " (abs < " << myValueThreshold << ")"; 
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Internals
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::init()
+{
+
+  myCandidatePoints.clear(); 
+
+  typename AcceptedPointSet::Iterator it = myAcceptedPoints.begin(); 
+  typename AcceptedPointSet::Iterator itEnd = myAcceptedPoints.end(); 
+  for ( ; it != itEnd; ++it)
+    {
+      update( *it ); 
+    }
+  
+  myMinValue = getMin(); 
+  myMaxValue = getMax(); 
+
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+bool
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>
+::addNewAcceptedPoint(Point& aPoint, Value& aValue)
+{
+
+  if ( (myAcceptedPoints.size()+1) < myAreaThreshold )
+    {//if a new point can be accepted
+
+      bool flagStop = false; 
+      typename CandidatePointSet::iterator it = myCandidatePoints.begin();  
+      typename CandidatePointSet::iterator itEnd = myCandidatePoints.end();  
+      while ( (it != itEnd) && (!flagStop) )
+	{ //while there are candidates and no point has been accepted
+
+	  //pair of min distance
+	  PointValue minPair = *it; 
+
+	  if ( std::abs(minPair.second) < myValueThreshold ) 
+	    { //if distance below a given threshold
+
+	      //the point of min distance is removed from the set of candidates
+	      myCandidatePoints.erase(*it); 
+	      //it can be inserted into the set of accepted points
+	      if ( insertAndSetValue( myImage, myAcceptedPoints,
+	      			      minPair.first, minPair.second ) )
+	      	{ //if it does not belong to the set
+	      	  //the set of candidates is updated with 
+	      	  //the neighbors of the new accepted point
+		  aPoint = minPair.first;
+		  aValue = minPair.second; 
+		  if (aValue > myMaxValue) myMaxValue = aValue; 
+		  if (aValue < myMinValue) myMinValue = aValue; 
+	      	  update( aPoint ); 
+	      	  flagStop = true; 
+	      	}
+	      else 
+		{ //otherwise it has already been accepted
+		  //with a smaller distance and the next candidate
+		  //should be considered
+		  it = myCandidatePoints.begin(); 
+		}
+
+	    }//end if distance below a given threshold
+	  else return false; 
+
+	} //end while there are candidates
+
+      return flagStop; //true if a point has been accepted 
+
+    } //end if a new point can be accepted
+  else return false; 
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+void
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::update(const Point& aPoint)
+{
+ 
+  //neigbors
+  Point neighbor = aPoint; 
+  for (Dimension k = 0; k < dimension; ++k)
+    {
+      typename Point::Coordinate c = neighbor[k]; 
+      neighbor[k] = (c+1); 
+      addNewCandidate(neighbor); 
+      neighbor[k] = (c-1); 
+      addNewCandidate(neighbor); 
+      neighbor[k] = c; 
+    }
+}
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+bool
+DGtal::FMM<TImage, TSet, TPointPredicate, TPointFunctor>::addNewCandidate(const Point& aPoint)
+{
+
+  //if it lies within the computation domain
+  //and if it is not already accepted 
+  if ( (myPointPredicate(aPoint) ) 
+       && ( myAcceptedPoints.find(aPoint) == myAcceptedPoints.end() ) ) 
+    {
+      ASSERT( myPointFunctorPtr ); 
+      Value d = myPointFunctorPtr->operator()( aPoint ); 
+      PointValue newPair( aPoint, d ); 
+      //insert the new candidate with its distance
+      myCandidatePoints.insert(newPair);
+      return true; 
+    } 
+  else return false; 
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TImage, typename TSet, typename TPointPredicate, typename TPointFunctor >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const FMM<TImage, TSet, TPointPredicate, TPointFunctor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

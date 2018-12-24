@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l value_type \&gt;" alt="" coords="63,222,211,272"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::counter" alt="" coords="99,6,247,56"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="216,123,392,154"/>
-</map>

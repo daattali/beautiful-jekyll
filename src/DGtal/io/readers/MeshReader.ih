@@ -1,0 +1,305 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MeshReader.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2012/06/29
+ *
+ * Implementation of inline methods defined in MeshReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+
+
+template <typename TPoint>
+inline
+bool
+DGtal::MeshReader<TPoint>::importOFFFile(const std::string & aFilename, 
+					 DGtal::Mesh<TPoint> & aMesh, 
+					 bool invertVertexOrder)
+{
+  std::ifstream infile;
+  DGtal::IOException dgtalio;
+  try 
+    {
+      infile.open (aFilename.c_str(), std::ifstream::in);
+    }
+  catch( ... )
+    {
+      trace.error() << "MeshReader : can't open " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  std::string str;
+  getline( infile, str );
+  
+  if ( ! infile.good() )
+    {
+      trace.error() << "MeshReader : can't read " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  if ( str.substr(0,3) != "OFF" && str.substr(0,4) != "NOFF")
+    {
+      std::cerr <<"*" <<str<<"*"<< std::endl;
+      trace.error() << "MeshReader : No OFF or NOFF format in " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  if ( str.substr(0,4) == "NOFF")
+    {
+      trace.warning() << "MeshReader : reading NOFF format from importOFFFile (normal vectors will be ignored)..." << std::endl; 
+    }
+
+    // Processing comments
+  do
+    {
+      getline( infile, str );
+      if ( ! infile.good() ){
+	trace.error() << "MeshReader : Invalid format in " << aFilename << std::endl;
+	throw dgtalio;
+      } 
+    }
+  while ( str[ 0 ] == '#' || str=="");
+  std::istringstream str_in( str );
+  int nbPoints, nbFaces, nbEdges;
+  str_in >> nbPoints;
+  str_in >> nbFaces;
+  str_in >> nbEdges;
+
+  // Reading mesh vertex 
+  for(int i=0; i<nbPoints; i++){
+    TPoint p;
+    infile >> p[0];
+    infile >> p[1];
+    infile >> p[2];
+    aMesh.addVertex(p);
+    // Needed since a line can also contain vertex colors
+    getline(infile, str);
+  }
+  
+  // Reading mesh faces
+  for(int i=0; i<nbFaces; i++){
+    // Reading the number of face vertex
+    unsigned int aNbFaceVertex;
+    infile >> aNbFaceVertex;
+    std::vector<unsigned int> aFace;
+    for (unsigned int j=0; j< aNbFaceVertex; j++){
+      unsigned int anIndex;
+      infile >> anIndex;
+      aFace.push_back(anIndex);
+    }
+    if( invertVertexOrder ){
+      for(unsigned int j=0; j < aFace.size()/2; j++){
+	unsigned int tmp=aFace.at(j);
+	aFace.at(j)=aFace.at(aFace.size()-1-j);
+	aFace.at(aFace.size()-1-j)=tmp;
+      }
+    }
+    
+    // Needed since a can also contain vertex colors
+    getline(infile, str);
+    // Contains colors:
+    bool findValidColor=true;
+    if(str!=""){
+      std::istringstream inColor(str);
+      double colorR, colorG, colorB, colorT;
+      findValidColor=inColor.good();
+      if(findValidColor && inColor.good()){
+	inColor >> colorR;
+      }
+      findValidColor &=!inColor.fail();
+      if(findValidColor && inColor.good()){
+	inColor >> colorG;
+      }
+      findValidColor &=!inColor.fail();
+      if(findValidColor && inColor.good()){
+	inColor >> colorB;
+      }
+      findValidColor &=!inColor.fail();
+      
+      if(findValidColor && inColor.good()){
+	inColor >> colorT;
+	// Since alpha is optional:
+	if(inColor.fail()){
+	  colorT=1.0;
+	}
+
+      }else{
+	colorT=1.0;
+      }
+      if(findValidColor){
+	DGtal::Color c((unsigned int)(colorR*255.0), (unsigned int)(colorG*255.0),
+		       (unsigned int)(colorB*255.0), (unsigned int)(colorT*255.0));
+	aMesh.addFace(aFace, c);
+      }else{
+	aMesh.addFace(aFace);
+      }
+    }else{
+      aMesh.addFace(aFace);
+    }
+  }
+  
+  return true;
+}
+
+
+
+
+
+
+template <typename TPoint>
+inline
+bool
+DGtal::MeshReader<TPoint>::importOFSFile(const std::string & aFilename, 
+					 DGtal::Mesh<TPoint> & aMesh, 
+					 bool invertVertexOrder, double scale)
+{
+  std::ifstream infile;
+  DGtal::IOException dgtalio;
+  try 
+    {
+      infile.open (aFilename.c_str(), std::ifstream::in);
+    }
+  catch( ... )
+    {
+      trace.error() << "MeshReader : can't open " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  std::string str;
+  getline( infile, str );
+  
+  if ( ! infile.good() )
+    {
+      trace.error() << "MeshReader : can't read " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  if ( str.substr(0,3) != "OFS")
+    {
+      trace.error() << "MeshReader : No OFS format in " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  
+  // Processing comments
+  do
+    {
+      getline( infile, str );
+      if ( ! infile.good() ){
+	trace.error() << "MeshReader : Invalid format in " << aFilename << std::endl;
+	throw dgtalio;
+      } 
+    }
+  while ( str[ 0 ] == '#' || str=="");
+  std::istringstream str_in( str );
+  int nbPoints;
+  str_in >> nbPoints;
+  
+  // Reading mesh vertex 
+  for(int i=0; i<nbPoints; i++){
+    TPoint p;
+    infile >> p[0];
+    infile >> p[1];
+    infile >> p[2];
+    p[0]*=scale;
+    p[1]*=scale;
+    p[2]*=scale;
+    aMesh.addVertex(p);
+    // Needed since a line can also contain vertex colors
+    getline(infile, str);
+  }
+  do
+    {
+      getline( infile, str );
+      if ( ! infile.good() ){
+	trace.error() << "MeshReader : Invalid format in " << aFilename << std::endl;
+	throw dgtalio;
+      } 
+    }
+  while ( str[ 0 ] == '#' || str=="");
+  std::istringstream str_in2( str );
+  unsigned int nbFaces;
+  str_in2 >> nbFaces;
+  // Reading mesh faces
+  for(unsigned int i=0; i<nbFaces; i++){
+    // Reading the number of face vertex
+    std::vector<unsigned int> aFace;
+    for (unsigned int j=0; j< 3; j++){
+      unsigned int anIndex;
+      infile >> anIndex;
+      aFace.push_back(anIndex);
+    }
+    if( invertVertexOrder ){
+      unsigned int tmp=aFace.at(0);
+	aFace.at(0)=aFace.at(2);
+	aFace.at(2)=tmp;
+    }
+    aMesh.addFace(aFace);
+    getline(infile, str);
+	  
+  }
+
+  return true;
+   
+}
+
+
+  template <typename TPoint>
+  bool
+  DGtal::operator<< (   Mesh<TPoint> & mesh, const std::string &filename ){
+    std::string extension = filename.substr(filename.find_last_of(".") + 1);
+    if(extension== "off") {
+      DGtal::MeshReader<TPoint>::importOFFFile(filename, mesh);
+      return true;
+    }else if(extension== "ofs") {
+      DGtal::MeshReader< TPoint>::importOFSFile(filename, mesh);
+      return true;
+    }
+    
+    return false;
+  }
+
+
+
+
+
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+

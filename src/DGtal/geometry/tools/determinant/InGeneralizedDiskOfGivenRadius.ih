@@ -1,0 +1,234 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file InGeneralizedDiskOfGivenRadius.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/12/10
+ *
+ * Implementation of inline methods defined in InGeneralizedDiskOfGivenRadius.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+InGeneralizedDiskOfGivenRadius(bool isPositive, 
+	      const Integer& aNum2, 
+	      const Integer& aDen2)
+  : myNum2(aNum2), myDen2(aDen2),
+    myIsPositive( isPositive ), 
+    myDetComputer(), 
+    myP( Point() ), 
+    myQ( Point() ), 
+    myR( Point() ), 
+    myComputedNum2( NumberTraits<Integer>::ZERO ), 
+    myComputedDen2( NumberTraits<Integer>::ZERO ), 
+    myPQ0( NumberTraits<Integer>::ZERO ), 
+    myPQ1( NumberTraits<Integer>::ZERO ), 
+    myPQnorm( NumberTraits<Integer>::ZERO ),
+    myQR0( NumberTraits<Integer>::ZERO ), 
+    myQR1( NumberTraits<Integer>::ZERO ), 
+    myQRnorm( NumberTraits<Integer>::ZERO ),
+    myRP0( NumberTraits<Integer>::ZERO ), 
+    myRP1( NumberTraits<Integer>::ZERO ), 
+    myRPnorm( NumberTraits<Integer>::ZERO ),
+    myArea( NumberTraits<Integer>::ZERO ),
+    myAreaFunctor()
+{
+  if (myNum2 < NumberTraits<Integer>::ZERO) 
+    myNum2 = -myNum2; 
+
+  if (myDen2 < NumberTraits<Integer>::ZERO) 
+    myDen2 = -myDen2; 
+
+  myDetComputer.init( myDen2, myNum2 ); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+void 
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+init ( const Point& aP, const Point& aQ )
+{
+  myP = aP;
+  myQ = aQ; 
+
+  myPQ0 = static_cast<Integer>(myQ[0]-myP[0]); 
+  myPQ1 = static_cast<Integer>(myQ[1]-myP[1]);
+  myPQnorm = myPQ0*myPQ0 + myPQ1*myPQ1; 
+  //myPQnorm must not be greater than the squared diameter, ie. 4 * myNum2 / myDen2
+  ASSERT( lengthIsValid( myPQnorm ) ); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+void 
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+init ( const PointArray& aA )
+{
+  init( aA[0], aA[1] ); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+typename DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::Value
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+operator() ( const Point& aR ) const
+{
+  myR = aR; 
+
+  myQR0 = static_cast<Integer>(myR[0]-myQ[0]); 
+  myQR1 = static_cast<Integer>(myR[1]-myQ[1]);
+
+  myRP0 = static_cast<Integer>(myP[0]-myR[0]); 
+  myRP1 = static_cast<Integer>(myP[1]-myR[1]);
+
+  myArea = myAreaFunctor(myPQ0, myPQ1, myQR0, myQR1);
+
+  if (myDen2 == NumberTraits<Integer>::ZERO)
+    { //comparison to an infinite radius
+      if (myIsPositive)
+  	return myArea;
+      else 
+  	return -myArea; 
+    }
+  else
+    { //comparison to a finite radius
+      
+      if (myIsPositive)
+	{
+	  if (myArea > NumberTraits<Integer>::ZERO)
+	    {
+	      finalizeComputation(); 
+	      return -myDetComputer( myComputedDen2, myComputedNum2 );
+	    }
+	  else
+	    return -NumberTraits<Value>::ONE; 
+	}
+      else
+	{
+	  if (myArea < NumberTraits<Integer>::ZERO)
+	    {
+	      finalizeComputation(); 
+	      return myDetComputer( myComputedDen2, myComputedNum2 );
+	    }
+	  else
+	    return NumberTraits<Value>::ONE;
+	}
+    }
+}
+
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+void
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+finalizeComputation () const
+{
+  //squared denominator
+  myComputedDen2 = 4*myArea*myArea;
+
+  //squared numerator
+  myQRnorm = myQR0*myQR0 + myQR1*myQR1; 
+  //myQRnorm must not be greater than the squared diameter, ie. 4 * myNum2 / myDen2
+  ASSERT( lengthIsValid( myQRnorm ) ); 
+
+  myRPnorm = myRP0*myRP0 + myRP1*myRP1;
+  //myRPnorm should be the greatest norm
+  ASSERT( (myRPnorm >= myPQnorm)&&(myRPnorm >= myQRnorm) ); 
+
+  myComputedNum2 = myPQnorm*myQRnorm*myRPnorm; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+void
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[InGeneralizedDiskOfGivenRadius]" << std::endl;
+  out << " radius: sqrt(" << myNum2 << "/" << myDen2 << ")"; 
+  if (myIsPositive) 
+    out << "+"; 
+  else 
+    out << "-"; 
+  out << std::endl; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+bool
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+lengthIsValid(const Integer& aL2) const
+{
+  if (myDen2 == NumberTraits<Integer>::ZERO)
+    return true; 
+  else
+    return ( myDetComputer( 4, aL2 ) <= 0 );
+}
+
+// ----------------------------------------------------------------------------
+template <typename TPoint, typename TDetComputer>
+inline
+bool
+DGtal::InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer>::
+isValid() const
+{
+  return ( (myNum2 > NumberTraits<Integer>::ZERO) &&
+	   (myDen2 >= NumberTraits<Integer>::ZERO) ); 
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+template <typename TPoint, typename TDetComputer>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const InGeneralizedDiskOfGivenRadius<TPoint, TDetComputer> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

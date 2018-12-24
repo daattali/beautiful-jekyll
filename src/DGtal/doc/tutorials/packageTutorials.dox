@@ -1,0 +1,49 @@
+/**
+ * @file packageTutorials.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/10/11
+ *
+ * Documentation file for feature tutorials
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageTutorials Tutorials
+@writers David Coeurjolly, Tristan Roussillon, Bertrand Kerautret, Jacques-Olivier Lachaud, Jérémy Levallois
+
+[TOC]
+
+@section secttuto1 Basic guides
+
+1. \ref tutoFileGridCurveRanges
+2. \ref tutoImageRegionDT
+3. \ref tutoImageGridCurveEstimator
+4. \ref tutoShapeGridCurveEstimator
+5. \ref tutoImageGridCurveExtraction
+6. \ref tutoImageGridVolume3dVolViewer
+
+
+@section secttuto2 Tutorials
+
+1. \ref tutoFMMErosion
+2. \ref tutoPolyhedralisation
+3. \ref tutoVolDTGranulometry
+4. \ref tutoAreaSurface
+5. \ref tutoImageManipulations
+
+@section secttuto3 Helpers, quick development with DGtal
+
+1. \ref moduleShortcuts
+
+*/
+
+}

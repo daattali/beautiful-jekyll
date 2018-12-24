@@ -1,0 +1,290 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Trace.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2009/12/19
+ *
+ * Implementation of inline methods defined in Trace.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <string>
+#include <ostream>
+#include <iostream>
+#include <stack>
+#include <cmath>
+//////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+/**
+ * Constructor.
+ *
+ * @param outputStream  the output stream that will receive the traces.
+ */
+inline
+DGtal::Trace::Trace(DGtal::TraceWriter &writer):
+  myCurrentLevel(0), myCurrentPrefix (""),  myWriter(writer), myProgressBarCurrent(-1), myProgressBarRotation(0), myStyle(false)
+{
+}
+
+/**
+ * Destructor.
+ *
+ * We send a last postfixReset to prevent bugs in some TraceWriterTerm
+ * terminals.
+ */
+inline
+DGtal::Trace::~Trace()
+{
+  if (myStyle)
+    myWriter.outputStream() << myWriter.postfixReset();
+}
+
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+inline
+void
+DGtal::Trace::selfDisplay( std::ostream & out ) const
+{
+  out << "[Trace]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+inline
+bool
+DGtal::Trace::isValid() const
+{
+  return true;
+}
+
+/**
+ * Reset all the variables of the Trace object (indentation level and
+ * keyword stack).
+ *
+ */
+inline
+void
+DGtal::Trace::reset()
+{
+  myProgressBarCurrent = -1;
+  myProgressBarRotation = 0;
+  myCurrentLevel = 0;
+  myCurrentPrefix = "";
+  //FIXME may leak??
+  while( !myKeywordStack.empty() )
+      myKeywordStack.pop();
+  while( !myClockStack.empty() )
+    myClockStack.pop();
+
+}
+
+/**
+ * Enter a new block and increase the indentation level
+ * @param keyword contains a label to the new block
+ *
+ */
+inline
+void
+DGtal::Trace::beginBlock(const std::string &keyword)
+{
+  myWriter.outputStream()<< myCurrentPrefix
+                         << myWriter.prefixEmphase()
+                         << "New Block ["<<keyword << "]"
+                         << myWriter.postfixReset()
+                         <<std::endl;
+  myCurrentLevel++;
+  myCurrentPrefix += TRACE_PATTERN;
+  myKeywordStack.push(keyword);
+  myProgressBarCurrent = -1;
+  myProgressBarRotation = 0;
+
+  //Block timer start
+  Clock *c = new(Clock);
+  c->startClock();
+  myClockStack.push(c);
+}
+
+/**
+ * Leave a current block, decrease the indentation level and display
+ * the associate keyword with ellapsed time in ms.
+ *
+ * @return  the ellapsed time in the block in milliseconds (Class Clock).
+ *
+ */
+inline double
+DGtal::Trace::endBlock()
+{
+  double tick;
+  Clock *localClock;
+
+  ASSERT (myCurrentLevel >0);
+
+  localClock =  myClockStack.top();
+  tick = localClock->stopClock();
+
+  myCurrentLevel--;
+  myCurrentPrefix = "";
+  for(unsigned int i = 0; i < myCurrentLevel; i++)
+    myCurrentPrefix += TRACE_PATTERN;
+
+  myWriter.outputStream() << myCurrentPrefix
+                          << myWriter.prefixEmphase()
+                          << "EndBlock [" << myKeywordStack.top()
+                          << "] (" << tick<<" ms)"
+                          << myWriter.postfixReset()<< std::endl;
+  myKeywordStack.pop();
+  myClockStack.pop();
+  delete localClock;
+  return tick;
+}
+
+/**
+ * Create a string with an indentation prefix for a warning trace.
+ * The string is postfixed by the keyword "[WRNG]"
+ * @return the output stream with the prefix
+ */
+inline std::ostream &
+DGtal::Trace::warning()
+{
+  myWriter.outputStream() <<  myCurrentPrefix << myWriter.prefixWarning();
+  myStyle = true;
+  return  myWriter.outputStream();
+}
+
+
+/**
+ * Create an output message with an indentation prefix for an emphased (bold) trace.
+ * The string is postfixed by the keyword "[ERR]"
+ * @return the output stream with the prefix
+ */
+inline std::ostream &
+DGtal::Trace::error()
+{
+  myWriter.outputStream() <<  myCurrentPrefix << myWriter.prefixError();
+  myStyle = true;
+  return  myWriter.outputStream();
+}
+
+
+/**
+ * Create a string with an indentation prefix for an emphased trace.
+ *
+ * @return the output stream with the prefix
+ */
+inline std::ostream &
+DGtal::Trace::emphase()
+{
+  myWriter.outputStream() <<  myCurrentPrefix << myWriter.prefixEmphase();
+  myStyle = true;
+  return  myWriter.outputStream();
+}
+
+/**
+ * Create a string with an indentation prefix for a normal trace.
+ * @return the cerr output stream with the prefix
+ */
+inline std::ostream &
+DGtal::Trace::info()
+{
+  myWriter.outputStream() <<  myCurrentPrefix;
+
+  if (myStyle)
+    myWriter.outputStream() << myWriter.prefixInfo();
+
+  myStyle = false;
+  return  myWriter.outputStream();
+}
+
+inline void
+DGtal::Trace::progressBar(const double currentValue, const double maximumValue)
+{
+  // how wide you want the progress meter to be
+  double fraction = currentValue /maximumValue;
+  // part of the progressmeter that's already "full"
+  int dotz = static_cast<int>(floor(fraction * PROGRESSBARWIDTH));
+  if (dotz > PROGRESSBARWIDTH) dotz = PROGRESSBARWIDTH;
+
+  // if the fullness hasn't changed skip display
+  if (dotz == myProgressBarCurrent) return;
+
+  myProgressBarCurrent = dotz;
+  myProgressBarRotation++;
+
+  // create the "meter"
+  int ii=0;
+  myWriter.outputStream() << myCurrentPrefix<<"[";
+  // part  that's full already
+  for ( ; ii < dotz;ii++)
+    {
+      myWriter.outputStream()<< "#";
+    }
+  // remaining part (spaces)
+  for ( ; ii < PROGRESSBARWIDTH;ii++)
+    {
+      myWriter.outputStream()<< " ";
+    }
+  // and back to line begin - do not forget the fflush to avoid output buffering problems!
+
+  const std::string rotation_string = "|\\-/";
+  myProgressBarRotation %= 4;
+
+  myWriter.outputStream()<< "] " << rotation_string[myProgressBarRotation] << " " << (int)(fraction*100)<<"/100\r";
+  myWriter.outputStream().flush();
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'Trace'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'Trace' to write.
+ * @return the output stream after the writing.
+ */
+inline
+std::ostream&
+DGtal::operator<<( std::ostream & out,
+                   const Trace & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

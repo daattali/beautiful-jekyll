@@ -1,8 +1,0 @@
-<map id="DGtal::concepts::CDomainAdjacency&lt; T &gt;" name="DGtal::concepts::CDomainAdjacency&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CAdjacency.html" title="DGtal::concepts::CAdjacency\&lt; T \&gt;" alt="" coords="1605,124,1848,153"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces..." alt="" coords="688,135,899,182"/>
-<area shape="rect" id="node17" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="DGtal::concepts::CUndirected\lSimpleLocalGraph\&lt; Adj \&gt;" alt="" coords="1003,229,1213,275"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html" title="DGtal::concepts::CVertex\lPredicateArchetype\&lt; Vertex \&gt;" alt="" coords="357,191,576,238"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html" title="Aim: Defines a an archetype for concept CVertexPredicate. " alt="" coords="7,191,231,238"/>
-<area shape="rect" id="node15" href="$structDGtal_1_1concepts_1_1CAdjacency.html" title="Aim: The concept CAdjacency defines an elementary adjacency relation between points of a digital spac..." alt="" coords="1308,229,1513,275"/>
-</map>

@@ -1,0 +1,246 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Ellipse2D.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/04/12
+ *
+ * Implementation of inline methods defined in Ellipse2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::Ellipse2D<T>::~Ellipse2D()
+{
+}
+
+template <typename T>
+inline
+DGtal::Ellipse2D<T>::Ellipse2D(const double x0, const double y0,
+             const double a0, const double a1, const double theta)
+  : myCenter(x0,y0), myAxis1(a0),myAxis2(a1),myTheta(theta)
+{}
+
+
+template <typename T>
+inline
+DGtal::Ellipse2D<T>::Ellipse2D(const RealPoint2D &aPoint,
+             const double a0, const double a1, const double theta)
+  : myCenter(aPoint), myAxis1(a0),myAxis2(a1),myTheta(theta)
+{}
+
+template <typename T>
+inline
+DGtal::Ellipse2D<T>::Ellipse2D(const Point &aPoint,
+             const double a0, const double a1, const double theta) 
+  : myAxis1(a0),myAxis2(a1),myTheta(theta)
+{
+  myCenter = aPoint;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// ------------- Implementation of 'StarShaped' services ------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return the angle parameter between 0 and 2*Pi corresponding to
+ * this point for the shape.
+ */
+template <typename T>
+inline
+double
+DGtal::Ellipse2D<T>::parameter( const RealPoint2D & pp ) const
+{
+  RealPoint2D v2d( pp );
+  v2d -= myCenter;
+  
+  double angle; 
+
+  if ( v2d[0] == 0.0 ) 
+    {
+      if ( v2d[1] >0 )
+        angle = M_PI/2.0; 
+      else 
+        angle = 1.5*M_PI; 
+    }
+  else if (  ( v2d[0] > 0.0 ) && (   v2d[1] >= 0.0 ) )
+    angle = atan(v2d[1]/v2d[0]);
+  else if (  ( v2d[0] > 0.0 ) && (   v2d[1] <= 0.0 ) )
+    angle = 2*M_PI + atan(v2d[1]/v2d[0]);
+  else if (  ( v2d[0] < 0.0 ) && (   v2d[1] >= 0.0 ) )
+    angle = atan(v2d[1]/v2d[0]) + M_PI;
+  else // (  ( v2d[0] < 0.0 ) && (   v2d[1] <= 0.0 ) )
+    angle = atan(v2d[1]/v2d[0]) + M_PI;
+
+   return angle;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x(t),y(t)) which is the position on the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Ellipse2D<T>::RealPoint2D 
+DGtal::Ellipse2D<T>::x( double t ) const
+{
+  double a2 = myAxis1*myAxis1;
+  double b2 = myAxis2*myAxis2;
+  double costth = cos( t - myTheta );
+  //  double sintth = sin( t - myTheta );
+  double cost = cos( t );
+  double sint = sin( t );
+  double rho = myAxis2 / sqrt( 1.0 - ((a2-b2)/a2)*costth*costth);
+    //myAxis2*myAxis1 / sqrt( a2 - (a2-b2)*costth*costth);
+  RealPoint2D v( rho*cost, 
+     rho*sint );
+  v += myCenter;
+  return v;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x'(t),y'(t)) which is the tangent to the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Ellipse2D<T>::RealVector2D 
+DGtal::Ellipse2D<T>::xp( const double t ) const
+{
+  double a2 = myAxis1*myAxis1;
+  double b2 = myAxis2*myAxis2;
+  double costth = cos( t - myTheta );
+  double sintth = sin( t - myTheta );
+  double cost = cos( t );
+  double sint = sin( t );
+  double rho = myAxis2 / sqrt( 1.0 - ((a2-b2)/a2)*costth*costth);
+  double a = myAxis1; 
+  double b = myAxis2;
+  double rhod= a*b*(b2-a2)*sintth*costth
+    / std::pow( a2*sintth*sintth + b2*costth*costth, 1.5 );
+  RealPoint2D v( rhod*cost - rho*sint, rhod*sint + rho*cost );
+  
+  return v;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x''(t),y''(t)).
+ */
+template <typename T>
+inline
+typename DGtal::Ellipse2D<T>::RealVector2D
+DGtal::Ellipse2D<T>::xpp( const double t ) const
+{
+  double a2 = myAxis1*myAxis1;
+  double b2 = myAxis2*myAxis2;
+  double costth = cos( t - myTheta );
+  double sintth = sin( t - myTheta );
+  double cost = cos( t );
+  double sint = sin( t );
+  double rho = myAxis2 / sqrt( 1.0 - ((a2-b2)/a2)*costth*costth);
+
+  double a = myAxis1; 
+  double b = myAxis2;
+  double rhod = a*b*(b2-a2)*sintth*costth
+    / std::pow( a2*sintth*sintth + b2*costth*costth, 1.5 );
+  double rhodd = a*b*(b2-a2)
+    / std::pow( a2*sintth*sintth + b2*costth*costth, 2.5 )
+    * ( (costth*costth - sintth*sintth) * (a2*sintth*sintth + b2*costth*costth)
+  + 3.0*(b2-a2)*sintth*sintth*costth*costth );
+  
+  RealPoint2D v( rhodd*cost - 2.0*rhod*sint - rho*cost, 
+     rhodd*sint + 2.0*rhod*cost - rho*sint );
+  return v;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::Ellipse2D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Ellipse2D] center= "<<myCenter<<" big axis="<<myAxis1
+      <<" small axis="<<myAxis2<<" phase="<<myTheta;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::Ellipse2D<T>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const Ellipse2D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

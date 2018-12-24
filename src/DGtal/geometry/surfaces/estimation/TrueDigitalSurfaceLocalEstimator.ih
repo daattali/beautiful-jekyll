@@ -1,0 +1,233 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file TrueDigitalSurfaceLocalEstimator.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2014/02/14
+ *
+ * Implementation of inline methods defined in TrueDigitalSurfaceLocalEstimator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+~TrueDigitalSurfaceLocalEstimator()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+TrueDigitalSurfaceLocalEstimator()
+  : myKSpace( 0 ), myFct( 0 ), myEmbedder(),
+    myShape( 0 ), myH( 1.0 ),
+    myMaxIter( 20 ), myAccuracy( 0.0001 ), myGamma( 0.5 )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+TrueDigitalSurfaceLocalEstimator( const Self& other )
+  : myKSpace( other.myKSpace ), myFct( other.myFct ), myEmbedder( other.myEmbedder ),
+    myShape( other.myShape ), myH( other.myH ),
+    myMaxIter( other.myMaxIter ), myAccuracy( other.myAccuracy ), myGamma( other.myGamma )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>&
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+operator=( const Self& other )
+{
+  if ( this != &other )
+    {
+      myKSpace = other.myKSpace;
+      myFct = other.myFct;
+      myEmbedder = other.myEmbedder;
+      myShape = other.myShape;
+      myH = other.myH;
+      myMaxIter = other.myMaxIter;
+      myAccuracy = other.myAccuracy;
+      myGamma = other.myGamma;
+    }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+typename DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::Scalar
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+h() const
+{
+  return myH;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+void 
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+attach( ConstAlias<Shape> aShape )
+{
+  myShape = aShape;
+  if ( ( myShape != 0 ) && ( myFct != 0 ) ) myFct->attach( myShape );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+void 
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+setParams(  ConstAlias<KSpace> ks, 
+            Clone<GeometricFunctor> fct,
+            const int maxIter, 
+            const Scalar accuracy, 
+            const Scalar gamma )
+{
+  myKSpace = ks;
+  myFct = fct;
+  if ( ( myShape != 0 ) && ( myFct != 0 ) ) myFct->attach( myShape );
+  myEmbedder = SCellEmbedder( *myKSpace );
+  myMaxIter = maxIter;
+  myAccuracy = accuracy;
+  myGamma = gamma;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+template <typename SurfelConstIterator>
+inline
+void 
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+init( const Scalar _h,
+      SurfelConstIterator /* itb */,
+      SurfelConstIterator /* ite */ )
+{
+  myH = _h;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+template <typename SurfelConstIterator>
+inline
+typename DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::Quantity
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+eval( SurfelConstIterator it ) const
+{
+  ASSERT( isValid() );
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<SurfelConstIterator> ));
+  return myFct->operator()( embed( *it ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+template <typename OutputIterator, typename SurfelConstIterator>
+inline
+OutputIterator
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+eval( SurfelConstIterator itb,
+      SurfelConstIterator ite,
+      OutputIterator result ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<SurfelConstIterator> ));
+  BOOST_CONCEPT_ASSERT(( boost::OutputIterator<OutputIterator,Quantity> ));
+  for ( ; itb != ite; ++itb )
+    *result++ = this->eval( itb );
+  return result;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+typename DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::RealPoint
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+embed( Surfel surfel ) const
+{
+  ASSERT( isValid() );
+  RealPoint p = myEmbedder( surfel );
+  p *= myH;
+  return ( myMaxIter > 0 ) 
+    ? myShape->nearestPoint( p, myAccuracy, myMaxIter, myGamma )
+    : p;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+void
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[TrueDigitalSurfaceLocalEstimator]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+bool
+DGtal::TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor>::
+isValid() const
+{
+  return ( myKSpace != 0 )
+    && ( myFct != 0 )
+    && ( myShape != 0 )
+    && ( myEmbedder.isValid() );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TKSpace, typename TShape, typename TGeometricFunctor>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const TrueDigitalSurfaceLocalEstimator<TKSpace, TShape, TGeometricFunctor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

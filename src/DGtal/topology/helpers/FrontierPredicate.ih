@@ -1,0 +1,137 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file FrontierPredicate.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/12/10
+ *
+ * Implementation of inline methods defined in FrontierPredicate.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::
+~FrontierPredicate()
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::  
+FrontierPredicate( ConstAlias<KSpace> aSpace, ConstAlias<Image> anImage,
+                   const Value & l1, const Value & l2 )
+  : myPtrSpace( &aSpace ), myPtrImage( &anImage ),
+    myLabel1( l1 ), myLabel2( l2 )
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::  
+FrontierPredicate( const FrontierPredicate & other )
+  : myPtrSpace( other.myPtrSpace ), myPtrImage( other.myPtrImage ),
+    myLabel1( other.myLabel1 ), myLabel2( other.myLabel2 )
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+DGtal::functors::FrontierPredicate<TKSpace,TImage> &
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::  
+operator=( const FrontierPredicate & other )
+{
+  if ( this != &other )
+    {
+      myPtrSpace = other.myPtrSpace;
+      myPtrImage = other.myPtrImage;
+      myLabel1 = other.myLabel1;
+      myLabel2 = other.myLabel2;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+bool
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::
+operator()( const Surfel & s ) const
+{
+  Dimension orthDir = myPtrSpace->sOrthDir( s );
+  bool orthDirect = myPtrSpace->sDirect( s, orthDir );
+  SCell int_spel = myPtrSpace->sIncident( s, orthDir, orthDirect );
+  Point int_p = myPtrSpace->sCoords( int_spel );
+  Point out_p = int_p;
+  out_p[ orthDir ] += orthDirect ? -1 : 1;
+  return ( (*myPtrImage)( int_p ) == myLabel1 )
+    && ( (*myPtrImage)( out_p ) == myLabel2 );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+void
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[FrontierPredicate]";
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TImage>
+inline
+bool
+DGtal::functors::FrontierPredicate<TKSpace,TImage>::
+isValid() const
+{
+    return true;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'FrontierPredicate'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'FrontierPredicate' to write.
+ * @return the output stream after the writing.
+ */
+template <typename TKSpace, typename TImage>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const DGtal::functors::FrontierPredicate<TKSpace,TImage> & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

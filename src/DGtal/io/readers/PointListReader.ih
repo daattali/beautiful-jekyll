@@ -1,0 +1,193 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file PointListReader.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/03/31
+ *
+ * Implementation of inline methods defined in PointListReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <sstream>
+#include <fstream>
+#include <limits>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+
+
+template<typename TPoint>
+inline
+std::vector<TPoint>
+DGtal::PointListReader<TPoint>::getPointsFromFile (const std::string &filename,  std::vector<unsigned int> aVectPosition)
+{
+  std::ifstream infile;
+  infile.open (filename.c_str(), std::ifstream::in);
+  return DGtal::PointListReader<TPoint>::getPointsFromInputStream(infile, aVectPosition);
+}
+
+
+
+template<typename TPoint>
+inline
+std::vector<TPoint>
+DGtal::PointListReader<TPoint>::getPointsFromInputStream (std::istream &in,  std::vector<unsigned int>  aVectPosition)
+{
+  if(aVectPosition.size()==0){
+    for(unsigned int i=0; i<TPoint::dimension; i++){
+      aVectPosition.push_back(i);
+    }
+  }
+  std::vector<TPoint> vectResult;
+  std::string str;
+  getline(in, str );
+  while ( in.good() ){
+    if ( ( str != "" ) && ( str[ 0 ] != '#' ) ){
+      std::istringstream in_str( str );
+      unsigned int idx = 0;
+      std::string val;
+      unsigned int nbFound=0;
+      TPoint p;
+      while ( !in_str.fail()&& (nbFound<TPoint::dimension)){
+        std::operator>>(in_str,val);
+        if(!in_str.fail()){
+          std::istringstream valFromStr( val );
+          typename TPoint::Component valConverted;
+          valFromStr >> valConverted;
+          if(!valFromStr.fail()){
+            for(unsigned int j=0; j< TPoint::dimension; j++){
+              if (idx == aVectPosition.at(j) ){
+                nbFound++;
+                p[j]=valConverted;
+              }
+            }
+          }
+        }
+        ++idx;
+      }
+      if(nbFound==TPoint::dimension){
+        vectResult.push_back(p);
+      }
+    }
+    getline(in, str );
+  }
+  return vectResult;
+}
+
+
+
+
+template<typename TPoint>
+inline
+std::vector< std::vector<TPoint> >
+DGtal::PointListReader<TPoint>::getPolygonsFromFile(const std::string &filename){
+  std::ifstream infile;
+  infile.open (filename.c_str(), std::ifstream::in);
+  return DGtal::PointListReader<TPoint>::getPolygonsFromInputStream(infile);
+}
+
+
+template<typename TPoint>
+inline
+std::vector< std::vector<TPoint> >
+DGtal::PointListReader<TPoint>::getPolygonsFromInputStream(std::istream & in){
+  std::vector< std::vector< TPoint > > vectResult;
+  std::string str;
+  getline(in, str );
+  while ( in.good() ){
+    if ( ( str != "" ) && ( str[ 0 ] != '#' ) ){
+      std::vector <TPoint> aContour;
+      std::istringstream in_str( str );
+      std::string  valStr="";
+      bool isOK = true;
+      TPoint p;
+      unsigned int index =0;
+      while ( in_str.good() ){
+        std::operator>>(in_str, valStr);
+        std::istringstream word_str( valStr );
+        word_str >> p[index];
+        isOK = isOK &&  !word_str.fail();
+        index++;
+        if(isOK && index % (TPoint::dimension)==0){
+          aContour.push_back(p);
+          index=0;
+        }
+      }
+      vectResult.push_back(aContour);
+    }
+
+    getline(in, str );
+  }
+  return vectResult;
+
+}
+
+
+
+
+
+
+
+template<typename TPoint>
+template<typename TInteger>
+inline
+std::vector<  DGtal::FreemanChain< TInteger>  >
+DGtal::PointListReader<TPoint>::getFreemanChainsFromFile (const std::string &filename){
+  std::vector< FreemanChain<  TInteger> >   vectResult;
+  std::ifstream infile;
+  infile.open (filename.c_str(), std::ifstream::in);
+  std::string str;
+  getline(infile, str );
+  while ( infile.good() ){
+    if ( ( str != "" ) && ( str[ 0 ] != '#' ) ){
+      std::istringstream in_str( str );
+      int x0=0, y0=0;
+      std::string fcChain;
+      bool isOK = (in_str.operator>> ( x0 ) ) && 
+                   (in_str.operator>> (y0) ) && 
+                   std::operator>> (in_str, fcChain);
+      FreemanChain< TInteger> fc(fcChain, x0, y0);
+      if(isOK)
+        {
+          vectResult.push_back(fc);
+        }
+      else
+        {
+          std::cerr << "Ignoring entry invalid FreemanChain" << std::endl;
+        }
+    }
+    getline(infile, str );
+  }
+  return vectResult;
+}
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,72 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageDEC.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/04/04
+ *
+ * Documentation file for feature DEC
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/doc/mainpage.dox
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageDEC  DEC package
+
+@managers David Coeurjolly, Pierre Gueth
+
+@since 0.8
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+Discrete exterior calculus (DEC) provides an easy and efficient way to describe linear operator over various structure.
+Basic operators, such as Hodge duality operator or exterior derivative, can be combined to create classical vector analysis operator such as gradient, curl and divergence.
+
+@note To use this package, you have to build DGtal with the Eigen option (and with Cairo option to have the examples compiled). By using cmake you have to use these options:  -DWITH_EIGEN=true -DWITH_CAIRO=true.
+
+@b Modules
+- \ref moduleDECIntroduction
+- \ref moduleDECEmbedding
+- \ref moduleDECPoisson
+- \ref moduleDECHelmoltz
+- \ref moduleDECPropagation
+- \ref moduleHeatLaplaceOperator
+
+@b Package @b Concepts @b Overview
+- \ref packageDECConcepts
+
+@b Related @b examples
+- exampleDECSurface.cpp
+- examplePropagation.cpp
+- exampleDiscreteExteriorCalculusUsage.cpp
+- exampleDiscreteExteriorCalculusSolve.cpp
+- exampleDiscreteExteriorCalculusChladni.cpp
+
+*/
+
+}

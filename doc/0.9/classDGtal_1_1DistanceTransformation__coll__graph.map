@@ -1,6 +1,0 @@
-<map id="DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;" name="DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1VoronoiMap.html" title="Aim: Implementation of the linear in time Voronoi map construction. " alt="" coords="5,292,257,344"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutputImage \&gt;" alt="" coords="62,192,200,231"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="94,5,232,44"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="203,105,364,131"/>
-</map>

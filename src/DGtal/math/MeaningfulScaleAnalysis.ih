@@ -1,0 +1,201 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MeaningfulScaleAnalysis.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2015/12/27
+ *
+ * Implementation of inline methods defined in MeaningfulScaleAnalysis.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/math/SimpleLinearRegression.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+template<typename TProfile>
+DGtal::MeaningfulScaleAnalysis<TProfile>::MeaningfulScaleAnalysis( ConstAlias<Profile> aProfile): myProfile(aProfile) 
+{  
+}
+
+
+template<typename TProfile>
+DGtal::MeaningfulScaleAnalysis<TProfile>::~MeaningfulScaleAnalysis()
+{
+}
+
+
+template<typename TProfile>
+void 
+DGtal::MeaningfulScaleAnalysis<TProfile>::computeMeaningfulScales ( std::vector< std::pair< unsigned int,
+                                                                    unsigned int > > & intervals,
+                                                                    const unsigned int minSize,
+                                                                    const double maxSlope,
+                                                                    const double minSlope ) const
+{
+  std::vector<typename TProfile::Value> x;
+  std::vector<typename  TProfile::Value> y;
+  myProfile.getProfile( x, y );
+  unsigned int l = 0;
+  for ( unsigned int k = 1; k < x.size(); ++k )
+    {
+      double slope = ( y[ k ] - y[ k - 1 ] ) / ( x[ k ] - x[ k - 1 ] );
+      if ( ( slope > maxSlope ) 
+	   || ( slope < minSlope ) 
+	   || ( (k+1) == x.size() ) )
+	{
+	  if ( ( k - 1 - l ) >= minSize )
+	    intervals.push_back( std::make_pair( l+1, k ) );
+	  l = k;
+	}
+    }
+}
+
+template<typename TProfile>
+std::pair<bool, double> 
+DGtal::MeaningfulScaleAnalysis<TProfile>::getSlopeFromMeaningfulScales(const double maxSlope, 
+                                                                       const double minSlope,
+                                                                       const unsigned int minSize) const {
+  std::pair<bool, double> resuSlope(false, 0.0);
+  std::vector< std::pair< unsigned int, unsigned int > > vectIntervals;
+  this->computeMeaningfulScales(vectIntervals, minSize, maxSlope, minSlope);
+  std::vector<typename TProfile::Value> vx;
+  std::vector<typename TProfile::Value> vy;
+
+  myProfile.getProfile( vx, vy );
+  // no meaningfulScale interval: 
+  
+  if(vectIntervals.size()!=0 && vectIntervals.at(0).first<vectIntervals.at(0).second )
+    {
+      resuSlope.first=true;
+    }
+  else
+    {
+      std::pair<unsigned int, unsigned int> interAll(1, vx.size());
+      vectIntervals.push_back(interAll); 
+    }
+  SimpleLinearRegression SLR;
+
+  unsigned int mfsBeg = vectIntervals.at(0).first-1;
+  unsigned int mfsEnd = vectIntervals.at(0).second-1;
+  
+  // Only two sampled points
+  if ( mfsEnd-mfsBeg == 1 )
+    {
+      Z2i::RealPoint pt1(vx.at(mfsBeg),vy.at(mfsBeg));
+      Z2i::RealPoint pt2(vx.at(mfsEnd),vy.at(mfsEnd));
+      double slope = (pt2[1] - pt1[1])/(pt2[0] -pt1[0]);
+      resuSlope.second = slope;
+      return resuSlope;
+    }
+  for(unsigned int i=mfsBeg; i<=mfsEnd; i++)
+    {
+      SLR.addSample(vx.at(i), vy.at(i));
+    }
+  SLR.computeRegression();
+  resuSlope.second = SLR.slope();
+  return resuSlope;
+}
+
+
+
+template<typename TProfile>
+unsigned int
+DGtal::MeaningfulScaleAnalysis<TProfile>::noiseLevel ( const unsigned int minSize,
+                                                       const double maxSlope,
+                                                       const double minSlope ) const
+{
+  std::vector< std::pair< unsigned int, unsigned int > > intervals;
+  this->computeMeaningfulScales( intervals, minSize, maxSlope, minSlope );
+  return ( intervals.size() != 0 )
+    ? intervals[ 0 ].first
+    : 0;
+}
+
+
+
+
+template<typename TProfile>
+unsigned int
+DGtal::MeaningfulScaleAnalysis<TProfile>::lowerBoundedNoiseLevel( const unsigned int minSize,
+                                                                  const double maxSlope,
+                                                                  const double minSlope,
+                                                                  const double lowerBoundAtScale1,
+                                                                  const double lowerBoundSlope ) const
+{
+  std::vector< std::pair< unsigned int, unsigned int > > intervals;
+  this->computeMeaningfulScales( intervals, minSize, maxSlope, minSlope );
+  std::vector<typename TProfile::Value> x;
+  std::vector<typename TProfile::Value> y;
+  myProfile.getProfile( x, y );
+  for ( unsigned int i = 0; i < intervals.size(); ++i )
+    {
+      bool above = true;
+      for ( unsigned int k = intervals[ i ].first; ( k <= intervals[ i ].second ); ++k )
+	{
+	  if ( y[ k ] < ( lowerBoundAtScale1 + lowerBoundSlope*x[ k ] ) )
+	    {
+	      above = false;
+	      break;
+	    }
+	}
+      if ( above ) return intervals[ i ].first;
+    }
+  // Failure. No detected noise level.
+  return 0;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'MeaningfulScaleAnalysis'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'MeaningfulScaleAnalysis' to write.
+ * @return the output stream after the writing.
+ */
+template<typename TProfile>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const MeaningfulScaleAnalysis<TProfile> & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

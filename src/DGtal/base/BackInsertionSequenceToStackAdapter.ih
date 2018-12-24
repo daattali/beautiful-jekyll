@@ -1,0 +1,146 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file BackInsertionSequenceToStackAdapter.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/12/07
+ *
+ * Implementation of inline methods defined in BackInsertionSequenceToStackAdapter.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::
+BackInsertionSequenceToStackAdapter(Alias<Container> aContainer)
+  : myContainerPtr(&aContainer)
+{
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+typename DGtal::BackInsertionSequenceToStackAdapter<TSequence>::Size
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::size() const
+{
+  return myContainerPtr->size();
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+bool
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::empty() const
+{
+  return myContainerPtr->empty();
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+typename DGtal::BackInsertionSequenceToStackAdapter<TSequence>::Value&
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::top()
+{
+  return myContainerPtr->back();
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+const typename DGtal::BackInsertionSequenceToStackAdapter<TSequence>::Value&
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::top() const
+{
+  return myContainerPtr->back();
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+void
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::push(const Value& aValue)
+{
+  myContainerPtr->push_back(aValue); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+void
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::pop()
+{
+  myContainerPtr->pop_back(); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+void
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[BackInsertionSequenceToStackAdapter]";
+}
+
+// ----------------------------------------------------------------------------
+template <typename TSequence>
+inline
+bool
+DGtal::BackInsertionSequenceToStackAdapter<TSequence>::isValid() const
+{
+  return (myContainerPtr != 0);
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSequence>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const BackInsertionSequenceToStackAdapter<TSequence> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+
+template <typename TSequence>
+inline
+DGtal::BackInsertionSequenceToStackAdapter<TSequence> 
+DGtal::backStack ( TSequence& aSequence )
+{
+  return BackInsertionSequenceToStackAdapter<TSequence>( aSequence ); 
+}
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

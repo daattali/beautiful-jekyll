@@ -1,0 +1,198 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file BasicPointFunctors.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ * @date 2012/02/02
+ *
+ * Implementation of inline methods defined in BasicPointFunctors.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+template <typename S>
+inline
+DGtal::functors::Projector<S>::Projector(const Integer& aDefaultInteger)
+ : myDims(), myDefaultInteger(aDefaultInteger)
+{ //default projection
+  Dimension k = 0; 
+  for ( ; k < dimension; ++k)
+  {
+    myDims[k] = k; 
+  } 
+}
+
+
+template <typename S>
+template <typename TIterator>
+inline
+void
+DGtal::functors::Projector<S>::init( const TIterator& itb, const TIterator& ite )
+{
+  BOOST_STATIC_ASSERT ((boost::is_same< Dimension, 
+   typename std::iterator_traits<TIterator>::value_type >::value)); 
+
+  TIterator it = itb; 
+  Dimension k = 0; 
+  for ( ; ( (k < dimension)&&(it != ite) ); ++it, ++k)
+  {
+    myDims[k] = *it; 
+  } 
+  for ( ; k < dimension; ++k)
+  {
+    myDims[k] = dimension; 
+  } 
+}
+
+
+template <typename S>
+inline
+void
+DGtal::functors::Projector<S>::initRemoveOneDim(const Dimension &dimRemoved)
+{ 
+  std::vector<Dimension> vectDims;
+  Dimension aCurrentPos = 0;
+  Dimension k=0;
+  for ( ; k < dimension; ++k)
+  {
+    if(k!=dimRemoved){
+      vectDims.push_back(aCurrentPos);
+    }
+    aCurrentPos++;
+  }  
+  init(vectDims.begin(), vectDims.end());
+}
+
+
+
+
+template <typename S>
+inline
+void
+DGtal::functors::Projector<S>::initAddOneDim( const Dimension &newDim)
+{ 
+  std::vector<Dimension> vectDims;
+  Dimension maxIndex = dimension; 
+  Dimension aCurrentPos = 0;
+  Dimension k=0;
+  for ( ; k < dimension; ++k)
+  {
+    if(k==newDim){
+      vectDims.push_back(maxIndex);
+    }else{
+      vectDims.push_back(aCurrentPos);
+      aCurrentPos++;
+    }
+  }  
+  init(vectDims.begin(), vectDims.end());  
+}
+
+
+
+template <typename S>
+template <typename TInputPoint>
+inline
+typename DGtal::functors::Projector<S>::Point
+DGtal::functors::Projector<S>::operator()( const TInputPoint& aPoint ) const
+{
+ 	BOOST_STATIC_ASSERT ((boost::is_same< typename TInputPoint::Coordinate, 
+   Integer >::value));
+ 
+  Point res; 
+
+  typename std::array<Dimension,dimension>::const_iterator it = myDims.begin(); 
+  typename std::array<Dimension,dimension>::const_iterator itEnd = myDims.end();
+
+  Dimension k = 0; 
+  for ( ; it != itEnd; ++it, ++k)
+  {
+    Dimension l = *it; 
+    if (l < TInputPoint::dimension) 
+      res[k] = aPoint[l]; 
+    else 
+      res[k] = myDefaultInteger; 
+  } 
+  
+  return res; 
+}
+//------------------------------------------------------------------------------
+
+template< typename TP, typename TD, typename TV >
+inline
+DGtal::functors::PointFunctorFromPointPredicateAndDomain< TP, TD, TV >::PointFunctorFromPointPredicateAndDomain
+( ConstAlias< PointPredicate > aPtrPredicate,
+  ConstAlias< Domain > aDomain,
+  const Value aTrueValue,
+  const Value aFalseValue )
+    : myPtrPredicate( &aPtrPredicate ), myDomain( &aDomain), myTrueValue( aTrueValue ), myFalseValue( aFalseValue )
+{
+
+}
+
+template< typename TP, typename TD, typename TV >
+inline
+DGtal::functors::PointFunctorFromPointPredicateAndDomain< TP, TD, TV >::PointFunctorFromPointPredicateAndDomain( const PointFunctorFromPointPredicateAndDomain & other )
+    : myPtrPredicate( other.myPtrPredicate ), myDomain( other.myDomain), myTrueValue( other.myTrueValue ), myFalseValue( other.myFalseValue )
+{
+}
+
+template< typename TP, typename TD, typename TV >
+inline
+typename DGtal::functors::PointFunctorFromPointPredicateAndDomain< TP, TD, TV >::Value
+DGtal::functors::PointFunctorFromPointPredicateAndDomain< TP, TD, TV >::operator()( const Point& aPoint ) const
+{
+    if( myDomain->isInside( aPoint ))
+    {
+        if( myPtrPredicate->operator()( aPoint ) )
+            return myTrueValue;
+        else
+            return myFalseValue;
+    }
+    return myFalseValue;
+}
+
+template <typename TP, typename TD, typename TV>
+inline
+DGtal::functors::PointFunctorFromPointPredicateAndDomain<TP,TD, TV> &
+DGtal::functors::PointFunctorFromPointPredicateAndDomain<TP,TD, TV>::operator=( const PointFunctorFromPointPredicateAndDomain<TP,TD,TV> &other)
+{
+  ASSERT( ( myDomain->lowerBound() <= other.myDomain->lowerBound() )
+    && ( myDomain->upperBound() >= other.myDomain->upperBound() )
+    && "This domain should include the domain of the other set in case of assignment." );
+
+  myPtrPredicate = other.myPtrPredicate;
+  myDomain = other.myDomain;
+  myTrueValue = other.myTrueValue;
+  myFalseValue = other.myFalseValue;
+
+  return *this;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

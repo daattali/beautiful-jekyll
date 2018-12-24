@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$structDGtal_1_1DrawWithBoardModifier.html" title="DGtal::DrawWithBoardModifier" alt="" coords="7,31,212,62"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CustomStyle.html" title="DGtal::CustomStyle" alt="" coords="261,5,403,35"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1SetMode.html" title="Modifier class in a Board2D stream. Useful to choose your own mode for a given class. Realizes the concept CDrawableWithBoard2D." alt="" coords="272,58,392,89"/>
-</map>

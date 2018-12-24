@@ -1,8 +1,0 @@
-<map id="DGtal::functors::SphericalHoughNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;" name="DGtal::functors::SphericalHoughNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="221,181,335,206"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="224,17,332,42"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="921,13,1094,51"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1SphericalAccumulator.html" title="DGtal::SphericalAccumulator\l\&lt; RealPoint \&gt;" alt="" coords="1236,225,1429,263"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1SphericalAccumulator.html" title="Aim: implements an accumulator (as histograms for 1D scalars) adapted to spherical point samples..." alt="" coords="911,190,1104,229"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="198,103,358,155"/>
-</map>

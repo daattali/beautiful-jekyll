@@ -1,0 +1,218 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file CircleFrom3Points.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/09/22
+ *
+ * @brief Implementation of inline methods defined in CircleFrom3Points.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TPoint>
+inline
+DGtal::CircleFrom3Points<TPoint>::~CircleFrom3Points()
+{
+}
+
+template <typename TPoint>
+inline
+DGtal::CircleFrom3Points<TPoint>::CircleFrom3Points()
+{
+}
+
+template <typename TPoint>
+inline
+void
+DGtal::CircleFrom3Points<TPoint>::init(
+        const Point& aFirstPoint, 
+        const Point& aSecondPoint,
+        const Point& aThirdPoint)
+{
+  myP = aFirstPoint;
+  myQ = aSecondPoint;
+  myR = aThirdPoint;
+}
+
+
+template <typename TPoint>
+inline
+DGtal::CircleFrom3Points<TPoint>::CircleFrom3Points(
+        const Point& aFirstPoint, 
+        const Point& aSecondPoint,
+        const Point& aThirdPoint):
+        myP(aFirstPoint),
+        myQ(aSecondPoint),
+        myR(aThirdPoint)
+{
+}
+
+
+template <typename TPoint>
+inline
+DGtal::CircleFrom3Points<TPoint>::CircleFrom3Points(
+        const CircleFrom3Points & other):
+        myP(other.myP),
+        myQ(other.myQ),
+        myR(other.myR)
+{
+}
+
+
+template <typename TPoint>
+inline
+DGtal::CircleFrom3Points<TPoint>&
+DGtal::CircleFrom3Points<TPoint>::operator=(
+        const CircleFrom3Points & other)
+{
+  myP = other.myP;
+  myQ = other.myQ;
+  myR = other.myR;
+  return *this;
+}
+
+
+
+template <typename TPoint>
+inline
+typename DGtal::CircleFrom3Points<TPoint>::Distance
+DGtal::CircleFrom3Points<TPoint>::signedDistance(const Point& aP) const
+{
+  Vector u( (myP[0]-aP[0])*(myR[1]-aP[1])-(myR[0]-aP[0])*(myP[1]-aP[1]), 
+                  (myR[0]-aP[0])*(myR[0]-myP[0])+(myR[1]-aP[1])*(myR[1]-myP[1]) );
+  Vector v( (myP[0]-aP[0])*(myQ[1]-aP[1])-(myQ[0]-aP[0])*(myP[1]-aP[1]), 
+                  (myQ[0]-aP[0])*(myQ[0]-myP[0])+(myQ[1]-aP[1])*(myQ[1]-myP[1]) );
+
+  return -( (u[0] * v[1]) - (u[1] * v[0]) );
+}
+
+template <typename TPoint>
+inline
+void
+DGtal::CircleFrom3Points<TPoint>::getParameters(double& cx, double& cy, double& rr) const
+{
+  Vector u(myP - myQ);
+  Vector v(myR - myP);
+
+  Coordinate area = (u[0] * v[1]) - (u[1] * v[0]);
+
+  if (area == 0) {
+    std::cerr << "Infinite radius detected in method getParameters() of CircleFrom3Points" << std::endl;
+    throw InfiniteNumberException();
+  } else {
+
+    //center
+    double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+    double pz, qz, rz;
+    pz = std::pow( NumberTraits<Coordinate>::castToDouble(myP[0]),2.0 )/areaD 
+        + std::pow( NumberTraits<Coordinate>::castToDouble(myP[1]),2.0 )/areaD;
+    qz = std::pow( NumberTraits<Coordinate>::castToDouble(myQ[0]),2.0 )/areaD 
+        + std::pow( NumberTraits<Coordinate>::castToDouble(myQ[1]),2.0 )/areaD;
+    rz = std::pow( NumberTraits<Coordinate>::castToDouble(myR[0]),2.0 )/areaD 
+        + std::pow( NumberTraits<Coordinate>::castToDouble(myR[1]),2.0 )/areaD;
+
+    cx = NumberTraits<Coordinate>::castToDouble(myP[1])*(qz-rz)
+        -NumberTraits<Coordinate>::castToDouble(myQ[1])*(pz-rz)
+        +NumberTraits<Coordinate>::castToDouble(myR[1])*(pz-qz);
+    cy = -NumberTraits<Coordinate>::castToDouble(myP[0])*(qz-rz)
+         +NumberTraits<Coordinate>::castToDouble(myQ[0])*(pz-rz)
+         -NumberTraits<Coordinate>::castToDouble(myR[0])*(pz-qz);
+
+    //radius
+    double a, b, c; 
+    a = std::pow( NumberTraits<Coordinate>::castToDouble(myQ[0]-myP[0]),2.0 )
+       +std::pow( NumberTraits<Coordinate>::castToDouble(myQ[1]-myP[1]),2.0 );
+    b = std::pow( NumberTraits<Coordinate>::castToDouble(myR[0]-myQ[0]),2.0 )
+       +std::pow( NumberTraits<Coordinate>::castToDouble(myR[1]-myQ[1]),2.0 );
+    c = std::pow( NumberTraits<Coordinate>::castToDouble(myR[0]-myP[0]),2.0 )
+       +std::pow( NumberTraits<Coordinate>::castToDouble(myR[1]-myP[1]),2.0 );
+
+    rr = ( ( std::sqrt(a)/std::abs(areaD) )*std::sqrt(b)*std::sqrt(c) );
+
+  }
+}
+
+template <typename TPoint>
+inline
+double
+DGtal::CircleFrom3Points<TPoint>::getCurvature() const
+{
+  Vector u(myP - myQ);
+  Vector v(myR - myP);
+
+  //4 times the area of the triangle 
+  Coordinate area = (u[0] * v[1]) - (u[1] * v[0]);
+  double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+  
+  //length of the sides of the triangle 
+  double a, b, c; 
+  a = std::pow( NumberTraits<Coordinate>::castToDouble(myQ[0]-myP[0]),2.0 )
+     +std::pow( NumberTraits<Coordinate>::castToDouble(myQ[1]-myP[1]),2.0 );
+  b = std::pow( NumberTraits<Coordinate>::castToDouble(myR[0]-myQ[0]),2.0 )
+     +std::pow( NumberTraits<Coordinate>::castToDouble(myR[1]-myQ[1]),2.0 );
+  c = std::pow( NumberTraits<Coordinate>::castToDouble(myR[0]-myP[0]),2.0 )
+     +std::pow( NumberTraits<Coordinate>::castToDouble(myR[1]-myP[1]),2.0 );
+
+  //curvature
+  return -( areaD/ (std::sqrt(a)*std::sqrt(b)*std::sqrt(c)) );
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename TPoint>
+inline
+std::string
+DGtal::CircleFrom3Points<TPoint>::className() const
+{
+  return "CircleFrom3Points";
+}
+
+template <typename TPoint>
+inline
+void
+DGtal::CircleFrom3Points<TPoint>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[CircleFrom3Points] passing through:\n";
+  out << myP << myQ << myR;
+}
+
+template <typename TPoint>
+inline
+bool
+DGtal::CircleFrom3Points<TPoint>::isValid() const
+{
+    return true;
+}
+
+

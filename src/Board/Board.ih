@@ -1,0 +1,82 @@
+/* -*- mode: c++ -*- */
+/**
+ * @file
+ * @author Sebastien Fourey <http://www.greyc.ensicaen.fr/~seb>
+ * @date   Sat Aug 18 2007
+ * 
+ * @brief Definition of inline methods of the Board class.  
+ */
+/*
+ * \@copyright This File is part of the Board library which is
+ * licensed under the terms of the GNU Lesser General Public Licence.
+ * See the LICENCE file for further details.
+ */
+
+namespace LibBoard {
+
+inline
+void
+Board::clear( unsigned char red, unsigned char green, unsigned char blue )
+{
+  clear( DGtal::Color( red, green, blue ) );
+}
+
+inline
+Board &
+Board::setLineStyle( Shape::LineStyle style )
+{
+  _state.lineStyle = style;
+  return *this;
+}
+
+inline
+Board &
+Board::setLineCap( Shape::LineCap cap )
+{
+  _state.lineCap = cap;
+  return *this;
+}
+  
+inline
+Board &
+Board::setLineJoin( Shape::LineJoin join )
+{
+  _state.lineJoin = join;
+  return *this;
+}
+
+inline
+void
+Board::fillGouraudTriangle( const double x1, const double y1,
+          const DGtal::Color & color1,
+          const double x2, const double y2, 
+          const DGtal::Color & color2,
+          const double x3, const double y3,
+          const DGtal::Color & color3,
+          unsigned char divisions,
+          int depthValue /* = -1 */ )
+{
+  fillGouraudTriangle( Point( x1, y1 ), color1,
+           Point( x2, y2 ), color2,
+           Point( x3, y3 ), color3,
+           divisions, depthValue );           
+}
+
+inline
+void
+Board::fillGouraudTriangle( const double x1, const double y1,
+          const float brightness1,
+          const double x2, const double y2, 
+          const float brightness2,
+          const double x3, const double y3,
+          const float brightness3,
+          unsigned char divisions,
+          int depthValue /* = -1 */ )
+{
+  fillGouraudTriangle( Point( x1, y1 ), brightness1,
+           Point( x2, y2 ), brightness2,
+           Point( x3, y3 ), brightness3,
+           divisions, depthValue );
+}
+
+} // namespace LibBoard

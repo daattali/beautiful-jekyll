@@ -1,0 +1,494 @@
+/**
+ * @file moduleIteratorsRanges.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/11/21
+ *
+ * Documentation file for feature moduleIteratorsRanges
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleIteratorsRanges Iterators and ranges
+@writers Tristan Roussillon
+
+[TOC]
+
+This part of the manual describes basic concepts of iterators and ranges. 
+It also presents several tools available in DGtal to ease their use: 
+traits class, useful functions, adapters, etc.
+ 
+DGtal users usually have to play with ranges to iterate over finite sets of elements.   
+
+\section secIteratorRangesIterators Introduction to iterators
+
+The concept of *iterator* is one of the main concept introduced 
+in the [STL](www.cplusplus.com/reference/std/iterator/ "STL iterators")
+ in order to make data structures and algorithms independent: 
+a programmer would be able to apply one algorithm on different data structures. 
+Algorithms typically take iterators as arguments, so a data structure 
+is only required to provide a way to access its elements using iterators.
+An iterator is any object that, pointing to some element stored in a data structure, 
+can be incremented so that it points to the next element. An iterator has at least, 
+the dereference (`*`) and increment (`++`) operators, but can have more operators 
+to implement extra functionalities. Depending on the functionality they implement, 	
+they belong to one of the several categories of iterators.  
+Following [The Boost.Iterator Library]
+(http://www.boost.org/doc/libs/1_49_0/libs/iterator/doc/index.html "Boost iterators"), 
+which extends the hierarchy of concepts proposed in the STL
+and separates access and traversal functionalities, 
+we consider in DGtal the following access and traversal categories:
+
+-    Readable iterator: `*i` returns an instance of V (value type) and `i->m` is equivalent to `(*i).m`
+-    Writable iterator: `*i = o`
+-    LValue iterator: `*i` returns an instance of `V&`
+
+1.   Incrementable iterator: dereference (`*`), indirection (`->`) and increment (`++`) operators. 
+2.   Single-pass iterator: equality operators (`==` and `!=`). 
+3.   Forward iterator: default constructor. 
+4.   Bidirectional iterator: decrement (`--`) operator.  
+5.   Random access iterator: arithmetic and comparison operators (`<`, `<=`, `>`, `>=`).  
+
+Each traversal category of level *l* obviously implements the functionalities of all the categories *k < l*
+and one or more extra functionalities. 
+For each category, the main difference with the previous
+ categories is provided in the above list, but [The Boost.Iterator Library]
+(http://www.boost.org/doc/libs/1_49_0/libs/iterator/doc/index.html "Boost iterators")
+gives more details. 
+
+The following diagram sums up the main iterator concepts: 
+
+@dot
+digraph GITERATORS {
+rankdir=BT;
+
+  subgraph accessConcepts {
+    rank=source
+    style=solid;
+    color=black; 
+    node [style=solid,color=black];
+
+    "ReadableIteratorConcept";
+    "WritableIteratorConcept";
+    "LValueIteratorConcept";
+
+  }
+
+  subgraph traversalConcepts {
+
+    style=solid;
+    color=black; 
+    node [style=solid,color=black];
+
+"RandomAccessTraversalConcept" -> "BidirectionalTraversalConcept";
+"BidirectionalTraversalConcept" -> "ForwardTraversalConcept";
+"ForwardTraversalConcept" -> "SinglePassTraversalConcept";
+"SinglePassTraversalConcept" -> "IncrementableTraversalConcept";  
+
+  }
+
+ label = "boost_concepts";
+}
+@enddot
+
+\section secIteratorRangesRanges Introduction to ranges
+
+A *range* of elements stored in a data structure (container) 
+may be implicitly described by a well-chosen pair of iterators. 
+Any pair does not define a valid range, even with iterators 
+having nonsingular values. 
+An iterator `j` is reachable from an iterator `i`
+if and only if `i` can be made equal to `j` with finitely 
+many applications of the increment operator.
+If `j` is reachable from `i`, one can iterate over the range 
+bounded by `i` and `j`, from the one pointed to by `i` and up to, but not including, 
+the one pointed to by `j`. Such a range is valid and is denoted by [`i,j`). 
+
+In linear data structures, any iterator pointing to the last element
+is incremented so that it points to the *past-the-end* element, 
+ie. it points past the last element (just as a regular pointer to an array guarantees
+ that there is a pointer value pointing past the last element of the array).  
+
+If an iterator `begin` points to the first element of a data structure 
+and an iterator `end` points to the past-the-end element, iterating over the range 
+[`begin,end`) is a way of iterating over all the elements of the underlying data structure. 
+Note that if the underlying data structure is empty, it only has a past-the-end element. 
+As a consequence, a range [`i,i`) denotes an empty range.    
+A range of a linear data structure is illustrated below (normal values are depicted with 
+a small straight segment, whereas the past-the-end value is depicted with a cross).
+In this example, [`i,j`) is not a valid range because `j` cannot be reached from `i`
+and the whole range may be denoted by [`begin,end`). 
+
+ @image html linearRange.png  "Linear range"
+ @image latex linearRange.png  "Linear range"
+
+\subsection subsecIteratorRangesRangesMainConcepts Main concepts
+
+Some objects have the capability to provide 
+a pair of iterators describing a (valid) range. 
+For instance, methods `begin()` and `end()` of STL containers
+return two iterators bounding the range of elements contained
+in the data structure. Similarly, in DGtal, there are several 
+concepts of range having at least these `begin()` and `end()` methods. 
+
+The concept [CConstSinglePassRange](@ref concepts::CConstSinglePassRange)
+ describes any object for which, 
+one can iterate at least one time over a range of elements.  
+Models of concepts::CConstSinglePassRange have a nested type ConstIterator, 
+which is a readable and (at least) single-pass iterator.  
+Instances of ConstIterator are returned by `begin()` 
+and `end()` methods.     
+
+The concept [CConstBidirectionalRange](@ref concepts::CConstBidirectionalRange), 
+which is a refinement of concepts::CConstSinglePassRange,
+describes any collection of elements that can be scanned several times, 
+either forward or backward.  
+Models of this concept have obviously a nested type ConstIterator, but it 
+is a readable and (at least) bidirectional iterator. They have in addition 
+a nested type ConstReverseIterator, which is a readable and bidirectional 
+iterator too. Finally, `begin()` and `end()` methods return instances of 
+ConstIterator, whereas `rbegin()` and `rend()` methods return instances of 
+ConstReverseIterator. 
+     
+The concept [CSinglePassRange](@ref concepts::CSinglePassRange) 
+(resp. [CBidirectionalRange](@ref concepts::CBidirectionalRange)) is 
+a refinement of concepts::CConstSinglePassRange (resp. concepts::CConstBidirectionalRange) 
+for not constant, mutable elements. All their models have a nested type
+Iterator (resp. ReverseIterator), which are the readable and writable 
+counterparts of ConstIterator (resp. ConstReverseIterator).    
+
+These four concepts and their links are depicted in the following figure: 
+
+@dot
+digraph GBASE {
+  rankdir=BT;
+
+  subgraph cluster_0 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CSinglePassRange [ label="CSinglePassRange" URL="\ref concepts::CSinglePassRange"];
+    CConstSinglePassRange [ label="CConstSinglePassRange" URL="\ref concepts::CConstSinglePassRange"];
+    CBidirectionalRange [ label="CBidirectionalRange" URL="\ref concepts::CBidirectionalRange"];
+    CConstBidirectionalRange [ label="CConstBidirectionalRange" URL="\ref concepts::CConstBidirectionalRange"];
+
+    CSinglePassRange-> CConstSinglePassRange;
+    CConstBidirectionalRange -> CConstSinglePassRange;
+    CBidirectionalRange -> CSinglePassRange;
+    CBidirectionalRange -> CConstBidirectionalRange;
+
+    label = "Base";
+  }
+
+}
+@enddot
+
+
+\section secIteratorRangesAdatpers Adapters to iterators
+
+In DGtal, several adapters to iterators are provided. 
+
+\subsection subsecIteratorRangesAdaptersReverse  Reverse iterator
+
+Any bidirectional iterator may have a reverse counterpart, ie. 
+an adapter that enables a backward scanning by calling 
+the decrement operator instead of the increment operator and conversely. 
+Bidirectional ranges provide reverse iterators that can be used 
+as follows: 
+
+    template<typename Range>
+    void anyProcedure(const Range& aRange)
+      {
+        BOOST_CONCEPT_ASSERT(( concepts::CBidirectionalRange<Range> )); 
+        ...
+        for (typename Range::ReverseIterator ri = r.rbegin(), 
+             typename Range::ReverseIterator riEnd = r.rend(); 
+             ri != riEnd; ++ri)
+          {
+             ...
+          }
+       }
+
+
+In order to take profit of the whole DGtal framework, you should use
+DGtal::ReverseIterator instead of std::reverse_iterator or
+even boost::reverse_iterator. 
+
+    #include "DGtal/base/ReverseIterator.h"
+    ...
+    template<typename Iterator>
+    void anyProcedure(const Iterator& anIterator)
+      {
+        ...
+        DGtal::ReverseIterator<Iterator> ri(anIterator); 
+        ASSERT( ri.base() == anIterator ); //ie. anIterator is the underlying iterator of ri
+        ...
+      }
+
+@note Reverse iterators are a little tricky because `*ri == *--ri.base()`
+(or equivalently `*++ri == *ri.base()`), 
+so that when an iterator is reversed, the reversed version does not point to 
+the same element in the range, but to the one preceding it.      
+
+@note **Developer trick**: there is no erase or insert method taking a reverse iterator
+as input argument in STL containers. Static methods are provided to do that in a small
+struct called OpInSTLContainers.  
+
+\subsection subsecIteratorRangesAdaptersAdapters  On-line transformations
+
+DGtal also provides adapters to iterators that transforms the data 
+returned by the dereference (and indirection) operator into other data, 
+possibly of different type. The transformation is delegated to a *functor*. 
+Dereferencing any adapted iterator consists in applying the functor on the
+data to which points the underlying iterator:    
+
+    #include "DGtal/base/ConstIteratorAdapter.h"
+    ...
+    template<typename Iterator, typename Functor, typename ReturnType>
+    void anyProcedure(const Iterator& anIterator, const Functor& aFunctor)
+      {
+        ...
+        DGtal::ConstAdapterIterator<Iterator, Functor, ReturnType> a(i, f);
+        ASSERT( *a == f(*i) ); //ie. *a and f(*i) return equivalent instances of ReturnType  
+        ...
+      } 
+
+The class ConstIteratorAdapter adapts any (at least) readable and 
+(at least) incremental iterator with any functor, whereas the class
+ IteratorAdapter adapts any readable, writable, Lvalue and (at least)
+incremental iterator. 
+
+<!-- TODO and outputIteratorAdapter ? --!> 
+ 
+
+\subsection subsecIteratorRangesAdaptersCirculators  Circulators
+
+Like [Cgal](http://www.cgal.org/ "CGAL"), DGtal extends the concept of
+ iterator to circular data structures by defining the concept of
+ circular iterator or *circulator* for short.
+
+The class Circulator is an adapter that creates a circulator from a classic iterator. 
+
+In circular data structures, any pairs of iterators [`i,j`) always describes a valid range 
+(ie. `j` is always reachable from `i`) and there is no past-the-end element.
+A range of a circular data structure is illustrated below. 
+In this example, [`i,j`) is of course a valid range.  
+
+ @image html circularRange.png  "Circular range"
+ @image latex circularRange.png  "Circular range"
+
+As long as `i != j`, circulators are quite similar to classic iterator
+in the subrange [`i,j`). More precisely, forward and bidirectional circulators 
+behave exactly like classic forward and bidirectional iterators 
+(note that there is no incrementable or single-pass circulator). 
+However, there is a semantic difference between random access circulators 
+and iterators for some arithmetic and comparison operators.
+Indeed, even if we have `i + (j-i) = j`, (ie. `i` must be incremented 
+`j-i` times so that it reaches `j`) for both circulators and 
+iterators, we have two major differences, sum up in 
+the following table: 
+
+| classic iterators        | circulators                |
+|--------------------------|----------------------------|
+| (i <= j) iff ((j-i) >= 0) | (i <= j) is always true    |
+| (i-j) + (j-i) = 0        | (i-j) + (j-i) = range size |
+
+On the other hand, circulators and iterators are quite different for 
+iterating over **all** the elements of a given range.
+In linear data structures, due to the existence of a past-the-end element, 
+the whole range is not different from any subranges: it is described by 
+a pair of iterators [`i,j`) such that `j` is reachable from `i`. If the data 
+structure does not contain any element, an iterator `k` can point to the 
+past-the-end element and [`k,k`) describes the valid and empty associated range.   
+
+However, in (truly) circular data structures, there is no past-the-end element.
+How to describe a whole range using circulators ? 
+Circulators have a specific state in the case of an empty data structure 
+so that it is enough to consider one circulator `k` to check
+whether the underlying data structure is empty or not. 
+Note that any default-constructed circulator, by convention,
+is in the same state as circulators provided by empty data structures. 
+ 
+Since the empty case is managed by this internal state, [`k,k`) can be viewed 
+then as describing a whole range of elements, if a whole range is required.  
+
+The do-while structure is the basic way of circulating over a range of elements: 
+
+    do 
+      {
+        ...
+        ++c; 
+      } while( c != cEnd);   
+
+The generic way of iterating over a range of elements whatever the type of iterators
+(either iterator or circulator) uses the generic function `isNotEmpty()`: 
+
+    #include "DGtal/base/IteratorFunctions.h"
+    ...
+    template<typename IC>
+    void anyProcedure(const IC& ic1, const IC& ic2)
+      {
+        if ( isNotEmpty( ic1, ic2 ) )
+          { //if the range is not empty
+            IC ic = ic1; 
+            do 
+              {//iterating over the range
+              ...
+              ++ic; 
+              } while( ic != ic2);   
+          }
+      }
+
+<!-- TODO range adapter, range factory (in geometry package) --!> 
+
+\section secIteratorRangesUtils Iterator Utilities
+
+To ease the use of iterators and circulators, several tools are available. 
+
+\subsection subsecIteratorRangesUtilsFuns Useful functions
+
+In the file DGtal/base/IteratorFunctions.h, there are several 
+functions, like the `isNotEmpty()` function used above, that
+are specialized with respect to the type and category of iterators. 
+
+Here is the list of available functions: 
+- `isEmpty()`, `isNotEmpty()`: check if a (whole) range is empty.
+- `advanceIterator()`: increments a given iterator `n` times. 
+- `subRangeSize()`, `rangeSize()`: return the size of a given range, 
+described by a pair of iterators. 
+- `subRangeMiddle()`, `rangeMiddle()`: return the iterator lying in the middle of a given range, 
+described by a pair of iterators. 
+
+Note that in the `rangeXXX()` methods, the range given as input argument is 
+assumed to be the whole range of elements stored in a container possibly empty, 
+whereas in the `subRangeXXX()` methods, the range given as input argument is 
+assumed to be any subrange of an existing and not empty container. This distinction
+is only relevant for circulators and the `subRangeXXX()` functions are perfectly 
+equivalent to the `rangeXXX()` functions for classic iterators.   
+
+\subsection subsecIteratorRangesUtilsTags Categories and other associated types
+
+Sometimes, we need information about iterators. Is it a circulator ?
+What is its traversal category ? What is the type of the data ? 
+In DGtal, the traits class IteratorCirculatorTraits provides
+this information thanks to the following nested types: 
+
+- Type: type of iterator (either IteratorType or CirculatorType)
+- Category: traversal category, (either ForwardCategory, BidirectionalCategory or RandomAccessCategory) 
+- Value: type T of the data 
+- Difference: difference between two iterators
+- Pointer: pointer to the data (usually T*). 
+- Reference: reference to the data (usually T&). 
+
+For instance, redefining the value type is done as follows: 
+
+    #include "DGtal/base/IteratorTraits.h" 
+    ...
+    template<typename IC>
+    void anyProcedure(const IC& ic)
+      {
+        typedef typename IteratorCirculatorTraits<IC>::Value ValueType; 
+        ...
+      }
+    
+
+\subsection subsecIteratorRangesUtilsTagsDispatching For developers: Tag dispatching 
+
+If you want to specialize some classes or functions according to iterators tags
+(basically type and category), you may use function overloading. This technique 
+is called [tag dispatching](http://www.generic-programming.org/languages/cpp/techniques.php#tag_dispatching). 
+You may find examples of tag dispatching in IteratorFunctions.h and IteratorFunctions.ih
+
+\subsection subsecIteratorRangesUtilsTagsNew For developers: How to create new iterators ? 
+
+When you create a new iterator, you have to be sure that it contains all STL required nested types 
+so that IteratorCirculatorTraits works fine: 
+- iterator_category
+- value_type
+- difference_type
+- pointer
+- reference
+
+By default, the type of any new iterator is IteratorType. 
+If you create a new circulator, you have to define
+a nested type called *Type* as CirculatorType. 
+The class Circulator is a good example of what a circulator should look like. 
+
+
+Moreover, you have to be sure that it implements all operators required by its category
+(dereference, indirection, pre- and post- incrementation, etc.). 
+If your iterator should be readable and forward, you have to be sure that it is both a 
+model of readable and forward iterator by concept checking. 
+
+\subsection subsecIteratorRangeUtilsIteratorCompletion For developers: interface completion for classes with random-access iterators over points
+
+When you create a class that exposes a random-access iterator related to points, IteratorCompletion can help you to complete the iterator interface of your class: from a basic set of methods (`begin()` and `end()` returning mutable and constant iterators), IteratorCompletion adds to your class reverse iterators and ranges, and the corresponding access methods (`rbegin`, `rend`, `range`, etc.).
+
+See the documentation of IteratorCompletion for more details and an usage example.
+
+\subsection subsecIteratorRangesUtilsConcepts Concepts checking
+
+The basic way of checking whether a given type is a model of a given concept or not
+is to use the BOOST_CONCEPT_ASSERT mechanism. In the following snippet, 
+type *I* is expected to be a model of readable iterator and forward iterator. 
+If it turns out that it is not a model of these concepts, a compilation error is raised. 
+
+    template<typename I>
+    void anyProcedure(const I& i)
+      {
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ReadableIteratorConcept<I> )); 
+        BOOST_CONCEPT_ASSERT(( boost_concepts::ForwardTraversalConcept<I> )); 
+        ...
+      }
+
+\section secIteratorRangesApps Applications
+
+In DGtal, iterators and ranges are heavily used in several packages. 
+We detail below their use in two packages: Geometry and Image. 
+
+\subsection secIteratorRangesAppsGeometry Iterators and ranges in the Geometry package
+ 
+One module of the geometry package is the analysis of one-dimensional 
+discrete structures. This is a (not exhaustive) list of such structures
+ used in digital geometry: 
+
+- digital curves
+    - 2d, 3d, nd
+    - 4-connected, 8-connected, disconnected
+    - interpixels, pixels
+    - open, closed
+
+- chaincodes
+
+Since these structures are one-dimensional, discrete and finite, 
+they can be viewed as linear or circular range of elements. 
+Segmentation algorithms extract from the whole range of elements,
+ possibly overlapping subranges called *segments*. 
+
+See @ref moduleGridCurveAnalysis for further details. 
+
+\subsection secIteratorRangesAppsImage Iterators and ranges in the Image package
+
+The concept of image is a refinement of the concept of *point functor*, 
+which describes a mapping between the points of a digital space and a set of values. 
+In addition, an image is bounded by a domain, ie. a finite and constant set 
+of digital points. 
+
+All images provide an access to its domain (`domain()` method), 
+which is a range of digital points, 
+as well as an access to a range of values (`constRange() or range()` methods).   
+
+See @ref moduleSpacePointVectorDomain and @ref moduleImages for further details. 
+
+*/
+
+}

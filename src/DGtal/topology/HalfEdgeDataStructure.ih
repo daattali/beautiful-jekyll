@@ -1,0 +1,480 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file HalfEdgeDataStructure.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2017/02/03
+ *
+ * Implementation of inline methods defined in HalfEdgeDataStructure.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+inline
+DGtal::HalfEdgeDataStructure::Size
+DGtal::HalfEdgeDataStructure::getUnorderedEdgesFromPolygonalFaces
+( const std::vector<PolygonalFace>& polygonal_faces, std::vector< Edge >& edges_out )
+{
+  typedef std::set< Edge > EdgeSet;
+  typedef std::set< VertexIndex > VertexIndexSet;
+  VertexIndexSet vertexSet;
+  EdgeSet edgeSet;
+  for( const PolygonalFace& P : polygonal_faces )
+    {
+      ASSERT( P.size() >= 3 ); // a face has at least 3 vertices
+      for ( unsigned int i = 0; i < P.size(); ++i )
+	{
+	  edgeSet.insert( Edge( P[ i ], P[ (i+1) % P.size() ] ) );
+	  vertexSet.insert( P[ i ] );
+	}
+    }
+  edges_out.resize( edgeSet.size() );
+  Size e = 0;
+  for ( const Edge& edge : edgeSet )
+    {
+      edges_out.at(e) = edge;
+      ++e;
+    }
+  return vertexSet.size();
+}
+
+//-----------------------------------------------------------------------------
+inline
+bool
+DGtal::HalfEdgeDataStructure::
+build( const Size num_vertices, 
+       const std::vector<Triangle>& triangles,
+       const std::vector<Edge>&     edges )
+{
+  bool ok = true;
+  Arc2FaceIndex de2fi;
+  // Visiting triangles to associates faces to arcs.
+  FaceIndex fi = 0;
+  for( const Triangle& T : triangles )
+    {
+      auto it01 = de2fi.find( Arc( T.v[0], T.v[1] ) );
+      auto it12 = de2fi.find( Arc( T.v[1], T.v[2] ) );
+      auto it20 = de2fi.find( Arc( T.v[2], T.v[0] ) );
+      if ( ( it01 != de2fi.end() ) || ( it12 != de2fi.end() ) || ( it20 != de2fi.end() ) )
+        {
+          trace.warning() << "[HalfEdgeDataStructure::build] Some arcs belongs to more than one face. Dropping triangle."
+                          << " Triangle (" << T.v[ 0 ] << "," << T.v[ 1 ] << "," << T.v[ 2 ] << ")"
+                          << " arc01 " << ( it01 != de2fi.end() ? it01->second : HALF_EDGE_INVALID_INDEX )
+                          << " arc12 " << ( it12 != de2fi.end() ? it12->second : HALF_EDGE_INVALID_INDEX )
+                          << " arc20 " << ( it20 != de2fi.end() ? it20->second : HALF_EDGE_INVALID_INDEX )
+                          << std::endl;
+	  ok = false;
+	  // JOL: if we continue here, we may create infinite loops
+	  // afterwards. Stopping now.
+	  break;
+        }
+      de2fi[ Arc( T.v[0], T.v[1] ) ] = fi;
+      de2fi[ Arc( T.v[1], T.v[2] ) ] = fi;
+      de2fi[ Arc( T.v[2], T.v[0] ) ] = fi;
+      fi++;
+    }
+  // JOL: if we continue here, we may create infinite loops
+  // afterwards. Stopping now.
+  if ( !ok ) return false;
+  // Clearing and resizing data structure to start from scratch and
+  // prepare everything.
+  clear();
+  Size num_edges = edges.size();
+  Size num_triangles = triangles.size();
+  myVertexHalfEdges.resize( num_vertices, HALF_EDGE_INVALID_INDEX );
+  myFaceHalfEdges.resize( num_triangles, HALF_EDGE_INVALID_INDEX );
+  myEdgeHalfEdges.resize( num_edges, HALF_EDGE_INVALID_INDEX );
+  myHalfEdges.reserve( num_edges*2 );
+  // Visiting edges to connect everything.
+  for( EdgeIndex ei = 0; ei < num_edges; ++ei )
+    {
+      const Edge& edge = edges[ ei ];
+
+      // Add the halfedge_t structures to the end of the list.
+      const Index he0index = myHalfEdges.size();
+      myHalfEdges.push_back( HalfEdge() );
+      HalfEdge& he0 = myHalfEdges.back();
+      const Index he1index = myHalfEdges.size();
+      myHalfEdges.push_back( HalfEdge() );
+      HalfEdge& he1 = myHalfEdges.back();
+
+      // The face will be HALF_EDGE_INVALID_INDEX if it is a boundary half-edge.
+      he0.face = arc2FaceIndex( de2fi, edge.v[0], edge.v[1] );
+      he0.toVertex = edge.v[1];
+      he0.edge = ei;
+
+      // The face will be HALF_EDGE_INVALID_INDEX if it is a boundary half-edge.
+      he1.face = arc2FaceIndex( de2fi, edge.v[1], edge.v[0] );
+      he1.toVertex = edge.v[0];
+      he1.edge = ei;
+
+      // Store the opposite half-edge index.
+      he0.opposite = he1index;
+      he1.opposite = he0index;
+
+      // Also store the index in our myArc2Index map.
+      assert( myArc2Index.find( Arc( edge.v[0], edge.v[1] ) ) == myArc2Index.end() );
+      assert( myArc2Index.find( Arc( edge.v[1], edge.v[0] ) ) == myArc2Index.end() );
+      myArc2Index[ std::make_pair( edge.v[0], edge.v[1] ) ] = he0index;
+      myArc2Index[ std::make_pair( edge.v[1], edge.v[0] ) ] = he1index;
+
+      // If the vertex pointed to by a half-edge doesn't yet have an out-going
+      // halfedge, store the opposite halfedge.
+      // Also, if the vertex is a boundary vertex, make sure its
+      // out-going halfedge is a boundary halfedge.
+      // NOTE: Halfedge data structure can't properly handle butterfly vertices.
+      //       If the mesh has butterfly vertices, there will be multiple outgoing
+      //       boundary halfedges.  Because we have to pick one as the vertex's outgoing
+      //       halfedge, we can't iterate over all neighbors, only a single wing of the
+      //       butterfly.
+      if( myVertexHalfEdges[ he0.toVertex ] == HALF_EDGE_INVALID_INDEX || HALF_EDGE_INVALID_INDEX == he1.face )
+        myVertexHalfEdges[ he0.toVertex ] = he0.opposite;
+      if( myVertexHalfEdges[ he1.toVertex ] == HALF_EDGE_INVALID_INDEX || HALF_EDGE_INVALID_INDEX == he0.face )
+        myVertexHalfEdges[ he1.toVertex ] = he1.opposite;
+
+      // If the face pointed to by a half-edge doesn't yet have a
+      // halfedge pointing to it, store the halfedge.
+      if( HALF_EDGE_INVALID_INDEX != he0.face && myFaceHalfEdges[ he0.face ] == HALF_EDGE_INVALID_INDEX )
+        myFaceHalfEdges[ he0.face ] = he0index;
+      if( HALF_EDGE_INVALID_INDEX != he1.face && myFaceHalfEdges[ he1.face ] == HALF_EDGE_INVALID_INDEX )
+        myFaceHalfEdges[ he1.face ] = he1index;
+
+      // Store one of the half-edges for the edge.
+      assert( myEdgeHalfEdges[ ei ] == HALF_EDGE_INVALID_INDEX );
+      myEdgeHalfEdges[ ei ] = he0index;
+    }
+
+  // Now that all the half-edges are created, set the remaining next_he field.
+  // We can't yet handle boundary halfedges, so store them for later.
+  HalfEdgeIndexRange boundary_heis;
+  for( Index hei = 0; hei < myHalfEdges.size(); ++hei )
+    {
+      HalfEdge& he = myHalfEdges.at( hei );
+      // Store boundary halfedges for later.
+      if( HALF_EDGE_INVALID_INDEX == he.face )
+        {
+          boundary_heis.push_back( hei );
+          continue;
+        }
+
+      const Triangle& face = triangles[ he.face ];
+      const VertexIndex i  = he.toVertex;
+      VertexIndex       j  = HALF_EDGE_INVALID_INDEX;
+      if( face.v[0] == i ) j = face.v[1];
+      else if( face.v[1] == i ) j = face.v[2];
+      else if( face.v[2] == i ) j = face.v[0];
+      ASSERT( HALF_EDGE_INVALID_INDEX != j );
+      he.next = myArc2Index[ Arc( i, j ) ];
+    }
+
+  // Make a map from vertices to boundary halfedges (indices)
+  // originating from them.  NOTE: There will only be multiple
+  // originating boundary halfedges at butterfly vertices.
+  std::map< VertexIndex, std::set< Index > > vertex2outgoing_boundary_hei;
+  for ( Index hei : boundary_heis )
+    {
+      const VertexIndex origin_v = myHalfEdges[ myHalfEdges[ hei ].opposite ].toVertex;
+      vertex2outgoing_boundary_hei[ origin_v ].insert( hei );
+      if( vertex2outgoing_boundary_hei[ origin_v ].size() > 1 )
+        {
+          trace.error() << "Butterfly vertex encountered." << std::endl;
+	  ok = false;
+        }
+    }
+
+  // For each boundary halfedge, make its next_he one of the boundary halfedges
+  // originating at its to_vertex.
+  for ( Index hei : boundary_heis )
+    {
+      HalfEdge& he = myHalfEdges[ hei ];
+
+      std::set< Index >& outgoing = vertex2outgoing_boundary_hei[ he.toVertex ];
+      if( !outgoing.empty() )
+        {
+          std::set< Index >::iterator outgoing_hei = outgoing.begin();
+          he.next = *outgoing_hei;
+          outgoing.erase( outgoing_hei );
+        }
+    }
+
+  #ifndef NDEBUG
+  for( auto it = vertex2outgoing_boundary_hei.begin();
+       it != vertex2outgoing_boundary_hei.end(); ++it )
+    {
+      ASSERT( it->second.empty() );
+    }
+  #endif
+  return ok;
+}
+
+
+//-----------------------------------------------------------------------------
+inline
+bool
+DGtal::HalfEdgeDataStructure::
+build( const Size                        num_vertices, 
+       const std::vector<PolygonalFace>& polygonal_faces,
+       const std::vector<Edge>&          edges )
+{
+  // TODO
+  bool ok = true;
+  Arc2FaceIndex de2fi;
+  // Visiting triangles to associates faces to arcs.
+  FaceIndex fi = 0;
+  for( const PolygonalFace& P : polygonal_faces )
+    {
+      ASSERT( P.size() >= 3 ); // a face has at least 3 vertices
+      bool face_ok = true;
+      for ( unsigned int i = 0; i < P.size(); ++i )
+	{
+	  const VertexIndex v0 = P[ i ];
+	  const VertexIndex v1 = P[ (i+1) % P.size() ];
+	  auto it01 = de2fi.find( Arc( v0, v1 ) );
+	  if ( it01 != de2fi.end() )
+	    {
+	      trace.warning() << "[HalfEdgeDataStructure::build] Arc (" << v0 << "," << v1 << ")"
+			      << " of polygonal face " << fi << " belongs to more than one face. "
+			      << " Dropping face " << fi << std::endl;
+	      face_ok = false;
+	      break;
+	    }
+	}
+      if ( face_ok )
+	for ( unsigned int i = 0; i < P.size(); ++i )
+	  {
+	    const VertexIndex v0 = P[ i ];
+	    const VertexIndex v1 = P[ (i+1) % P.size() ];
+	    de2fi[ Arc( v0, v1 ) ] = fi;
+	  }
+      // JOL: if we continue here, we may create infinite loops
+      // afterwards. Stopping now.
+      else  return false;
+      fi++;
+    }
+  // Clearing and resizing data structure to start from scratch and
+  // prepare everything.
+  clear();
+  Size num_edges    = edges.size();
+  Size num_polygons = polygonal_faces.size();
+  myVertexHalfEdges.resize( num_vertices, HALF_EDGE_INVALID_INDEX );
+  myFaceHalfEdges.resize( num_polygons, HALF_EDGE_INVALID_INDEX );
+  myEdgeHalfEdges.resize( num_edges, HALF_EDGE_INVALID_INDEX );
+  myHalfEdges.reserve( num_edges*2 );
+  // Visiting edges to connect everything.
+  for( EdgeIndex ei = 0; ei < num_edges; ++ei )
+    {
+      const Edge& edge = edges[ ei ];
+
+      // Add the halfedge_t structures to the end of the list.
+      const Index he0index = myHalfEdges.size();
+      myHalfEdges.push_back( HalfEdge() );
+      HalfEdge& he0 = myHalfEdges.back();
+      const Index he1index = myHalfEdges.size();
+      myHalfEdges.push_back( HalfEdge() );
+      HalfEdge& he1 = myHalfEdges.back();
+
+      // The face will be HALF_EDGE_INVALID_INDEX if it is a boundary half-edge.
+      he0.face = arc2FaceIndex( de2fi, edge.v[0], edge.v[1] );
+      he0.toVertex = edge.v[1];
+      he0.edge = ei;
+
+      // The face will be HALF_EDGE_INVALID_INDEX if it is a boundary half-edge.
+      he1.face = arc2FaceIndex( de2fi, edge.v[1], edge.v[0] );
+      he1.toVertex = edge.v[0];
+      he1.edge = ei;
+
+      // Store the opposite half-edge index.
+      he0.opposite = he1index;
+      he1.opposite = he0index;
+
+      // Also store the index in our myArc2Index map.
+      assert( myArc2Index.find( Arc( edge.v[0], edge.v[1] ) ) == myArc2Index.end() );
+      assert( myArc2Index.find( Arc( edge.v[1], edge.v[0] ) ) == myArc2Index.end() );
+      myArc2Index[ std::make_pair( edge.v[0], edge.v[1] ) ] = he0index;
+      myArc2Index[ std::make_pair( edge.v[1], edge.v[0] ) ] = he1index;
+
+      // If the vertex pointed to by a half-edge doesn't yet have an out-going
+      // halfedge, store the opposite halfedge.
+      // Also, if the vertex is a boundary vertex, make sure its
+      // out-going halfedge is a boundary halfedge.
+      // NOTE: Halfedge data structure can't properly handle butterfly vertices.
+      //       If the mesh has butterfly vertices, there will be multiple outgoing
+      //       boundary halfedges.  Because we have to pick one as the vertex's outgoing
+      //       halfedge, we can't iterate over all neighbors, only a single wing of the
+      //       butterfly.
+      if( myVertexHalfEdges[ he0.toVertex ] == HALF_EDGE_INVALID_INDEX
+	  || HALF_EDGE_INVALID_INDEX == he1.face )
+        myVertexHalfEdges[ he0.toVertex ] = he0.opposite;
+      if( myVertexHalfEdges[ he1.toVertex ] == HALF_EDGE_INVALID_INDEX
+	  || HALF_EDGE_INVALID_INDEX == he0.face )
+        myVertexHalfEdges[ he1.toVertex ] = he1.opposite;
+
+      // If the face pointed to by a half-edge doesn't yet have a
+      // halfedge pointing to it, store the halfedge.
+      if( HALF_EDGE_INVALID_INDEX != he0.face
+	  && myFaceHalfEdges[ he0.face ] == HALF_EDGE_INVALID_INDEX )
+        myFaceHalfEdges[ he0.face ] = he0index;
+      if( HALF_EDGE_INVALID_INDEX != he1.face
+	  && myFaceHalfEdges[ he1.face ] == HALF_EDGE_INVALID_INDEX )
+        myFaceHalfEdges[ he1.face ] = he1index;
+
+      // Store one of the half-edges for the edge.
+      assert( myEdgeHalfEdges[ ei ] == HALF_EDGE_INVALID_INDEX );
+      myEdgeHalfEdges[ ei ] = he0index;
+    }
+
+  // Now that all the half-edges are created, set the remaining next_he field.
+  // We can't yet handle boundary halfedges, so store them for later.
+  HalfEdgeIndexRange boundary_heis;
+  for( Index hei = 0; hei < myHalfEdges.size(); ++hei )
+    {
+      HalfEdge& he = myHalfEdges.at( hei );
+      // Store boundary halfedges for later.
+      if( HALF_EDGE_INVALID_INDEX == he.face )
+        {
+          boundary_heis.push_back( hei );
+          continue;
+        }
+
+      const PolygonalFace& face = polygonal_faces[ he.face ];
+      const VertexIndex      i  = he.toVertex;
+      auto it = std::find( face.cbegin(), face.cend(), i );
+      if ( it == face.cend() )
+	{
+	  trace.error() << "[HalfEdgeDataStructure::build]"
+			<< " Unable to find vertex " << i << " in face "
+			<< he.face << std::endl;
+	  ok = false;
+	}
+      else
+	{
+	  // Go to next.
+	  ++it;
+	  it      = ( it == face.cend() ) ? face.cbegin() : it;
+	  const VertexIndex      j  = *it ;
+	  he.next = myArc2Index[ Arc( i, j ) ];
+	}
+    }
+
+  // Make a map from vertices to boundary halfedges (indices)
+  // originating from them.  NOTE: There will only be multiple
+  // originating boundary halfedges at butterfly vertices.
+  std::map< VertexIndex, std::set< Index > > vertex2outgoing_boundary_hei;
+  for ( Index hei : boundary_heis )
+    {
+      const VertexIndex origin_v = myHalfEdges[ myHalfEdges[ hei ].opposite ].toVertex;
+      vertex2outgoing_boundary_hei[ origin_v ].insert( hei );
+      if( vertex2outgoing_boundary_hei[ origin_v ].size() > 1 )
+        {
+          trace.error() << "[HalfEdgeDataStructure::build]"
+			<< " Butterfly vertex encountered at he index=" << hei
+			<< std::endl;
+	  ok = false;
+        }
+    }
+
+  // For each boundary halfedge, make its next_he one of the boundary halfedges
+  // originating at its to_vertex.
+  for ( Index hei : boundary_heis )
+    {
+      HalfEdge& he = myHalfEdges[ hei ];
+
+      std::set< Index >& outgoing = vertex2outgoing_boundary_hei[ he.toVertex ];
+      if( !outgoing.empty() )
+        {
+          std::set< Index >::iterator outgoing_hei = outgoing.begin();
+          he.next = *outgoing_hei;
+          outgoing.erase( outgoing_hei );
+        }
+    }
+
+  #ifndef NDEBUG
+  for( auto it = vertex2outgoing_boundary_hei.begin();
+       it != vertex2outgoing_boundary_hei.end(); ++it )
+    {
+      ASSERT( it->second.empty() );
+    }
+  #endif
+  return ok;
+}
+
+//-----------------------------------------------------------------------------
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+inline
+void
+DGtal::HalfEdgeDataStructure::selfDisplay ( std::ostream & out ) const
+{
+  out << "[HalfEdgeDataStructure"
+      << " #he=" << myHalfEdges.size()
+      << " #V=" << myVertexHalfEdges.size()
+      << " #E=" << myEdgeHalfEdges.size()
+      << " #F=" << myFaceHalfEdges.size()
+      << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+inline
+bool
+DGtal::HalfEdgeDataStructure::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const HalfEdgeDataStructure & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

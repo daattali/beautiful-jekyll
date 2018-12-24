@@ -1,0 +1,159 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ClosedIntegerHalfPlane.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/04/27
+ *
+ * Implementation of inline methods defined in ClosedIntegerHalfPlane.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::ClosedIntegerHalfPlane<TSpace>::~ClosedIntegerHalfPlane()
+{}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::ClosedIntegerHalfPlane<TSpace>::
+ClosedIntegerHalfPlane( const Vector & aN, const Integer & aC )
+  : N( aN ), c( aC ) 
+{}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+bool
+DGtal::ClosedIntegerHalfPlane<TSpace>::
+operator()( const Point & p ) const
+{
+  return N.dot( p ) <= c;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+bool
+DGtal::ClosedIntegerHalfPlane<TSpace>::
+isOnBoundary( const Point & p ) const
+{
+  return N.dot( p ) == c;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::ClosedIntegerHalfPlane<TSpace>::Vector
+DGtal::ClosedIntegerHalfPlane<TSpace>::
+tangent() const
+{
+  return Vector( -N[ 1 ], N[ 0 ] );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+void
+DGtal::ClosedIntegerHalfPlane<TSpace>::
+negate()
+{
+  N.negate(); // = Point( -N[ 0 ], -N[ 1 ] ); 
+  c = -c;
+}
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::ClosedIntegerHalfPlane<TSpace>::
+ClosedIntegerHalfPlane( const Point & A, const Point & B, 
+                        const Point & inP, IntegerComputer<Integer> & ic )
+{
+  N[ 0 ] = A[ 1 ] - B[ 1 ];
+  N[ 1 ] = B[ 0 ] - A[ 0 ];
+  ic.getDotProduct( c, N, A );
+  Integer c1;
+  ic.getDotProduct( c1, N, inP );
+  if ( c1 > c )
+    {
+      N.negate();
+      c = -c;
+    }
+  //simplification of the constraint
+  Integer g = ic.gcd( N[ 0 ], N[ 1 ] );
+  N /= g;
+  ic.floorDiv( c, g );  
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace>
+inline
+void
+DGtal::ClosedIntegerHalfPlane<TSpace>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ClosedIntegerHalfPlane N=" << N << " c=" << c << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace>
+inline
+bool
+DGtal::ClosedIntegerHalfPlane<TSpace>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const ClosedIntegerHalfPlane<TSpace> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

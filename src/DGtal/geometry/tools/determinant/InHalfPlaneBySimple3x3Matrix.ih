@@ -1,0 +1,110 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file InHalfPlaneBySimple3x3Matrix.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/11/22
+ *
+ * Implementation of inline methods defined in InHalfPlaneBySimple3x3Matrix.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------------------------------------------------------------
+template <typename TP, typename TI>
+inline
+void
+DGtal::InHalfPlaneBySimple3x3Matrix<TP,TI>::init( const Point& aP, const Point& aQ )
+{
+  myMatrix.setComponent( 0, 0, static_cast<Integer>( aP[0] ) ); 
+  myMatrix.setComponent( 0, 1, static_cast<Integer>( aP[1] ) ); 
+  myMatrix.setComponent( 0, 2, NumberTraits<Integer>::ONE ); 
+  myMatrix.setComponent( 1, 0, static_cast<Integer>( aQ[0] ) ); 
+  myMatrix.setComponent( 1, 1, static_cast<Integer>( aQ[1] ) ); 
+  myMatrix.setComponent( 1, 2, NumberTraits<Integer>::ONE ); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TP, typename TI>
+inline
+void
+DGtal::InHalfPlaneBySimple3x3Matrix<TP,TI>::init( const PointArray& aA )
+{
+  init( aA[0], aA[1] ); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TP, typename TI>
+inline
+typename DGtal::InHalfPlaneBySimple3x3Matrix<TP,TI>::Value
+DGtal::InHalfPlaneBySimple3x3Matrix<TP,TI>::operator()( const Point& aR ) const
+{
+  myMatrix.setComponent( 2, 0, static_cast<Integer>( aR[0] ) ); 
+  myMatrix.setComponent( 2, 1, static_cast<Integer>( aR[1] ) ); 
+  myMatrix.setComponent( 2, 2, NumberTraits<Integer>::ONE ); 
+  return myMatrix.determinant(); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TP, typename TI>
+inline
+void
+DGtal::InHalfPlaneBySimple3x3Matrix<TP,TI>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[InHalfPlaneBySimple3x3Matrix]";
+}
+
+// ----------------------------------------------------------------------------
+template <typename TP, typename TI>
+inline
+bool
+DGtal::InHalfPlaneBySimple3x3Matrix<TP,TI>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TP, typename TI>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const InHalfPlaneBySimple3x3Matrix<TP,TI> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

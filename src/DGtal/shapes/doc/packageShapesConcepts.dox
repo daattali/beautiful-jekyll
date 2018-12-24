@@ -1,0 +1,87 @@
+/**
+ * @file packageShapesConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/03/16
+ *
+ * Documentation file for feature GeometryPackageConcepts
+ *
+ * This file is part of the DGtal library.
+ */
+
+namespace DGtal {
+  //----------------------------------------
+  /*!
+    @page packageShapesConcepts Shape Concepts
+    @writers David Coeurjolly
+
+    @dot
+    digraph GGeom   {
+    rankdir=BT;
+  
+    subgraph cluster_ext {
+    rank = same;
+    style=invis;
+
+   
+    }
+    subgraph cluster_concepts_1 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+               
+    CEuclideanOrientedShape [ URL="\ref concepts::CEuclideanOrientedShape" ];
+    CEuclideanBoundedShape [ URL="\ref concepts::CEuclideanBoundedShape" ];
+    CDigitalOrientedShape [ URL="\ref concepts::CDigitalOrientedShape" ];
+    CDigitalBoundedShape [ URL="\ref concepts::CDigitalBoundedShape" ];
+   
+    CImplicitFunction [ URL="\ref concepts::CImplicitFunction" ];
+    CImplicitFunctionDiff1 [ URL="\ref concepts::CImplicitFunctionDiff1" ];
+    
+    CImplicitFunctionDiff1 -> CImplicitFunction;
+
+    label="Shapes (main concepts)";
+    }
+ 
+
+    subgraph cluster_models {
+    style=filled;
+    color="#ccffcc";
+    node [style=filled,color=white];
+    label="Shapes (main models)";
+
+    StarShaped2D [ URL="\ref StarShaped2D" ];
+    StarShaped3D [ URL="\ref StarShaped3D" ];
+    Flower2D [URL="\ref Flower2D"];
+    Ball2D [URL="\ref Ball2D"];
+    AccFlower2D [URL="\ref AccFlower2D"];
+    NGon2D [URL="\ref NGon2D"];
+    Ball3D [URL="\ref Ball3D"];
+    ImplicitPolynomial3Shape [URL="\ref ImplicitPolynomial3Shape"];
+
+    StarShaped2D -> CEuclideanBoundedShape;
+    StarShaped2D -> CEuclideanOrientedShape;
+    StarShaped2D -> CDigitalBoundedShape;
+    StarShaped2D -> CDigitalOrientedShape;
+
+    StarShaped3D -> CEuclideanBoundedShape;
+    StarShaped3D -> CEuclideanOrientedShape;
+    StarShaped3D -> CDigitalBoundedShape;
+    StarShaped3D -> CDigitalOrientedShape;
+
+    Flower2D -> StarShaped2D;
+    NGon2D -> StarShaped2D;
+    Ball2D -> StarShaped2D;
+    AccFlower2D -> StarShaped2D;
+    Ball3D -> StarShaped3D;
+
+    ImplicitPolynomial3Shape -> CImplicitFunction;
+    ImplicitPolynomial3Shape -> CEuclideanOrientedShape;
+    }
+    }
+    @enddot
+
+ 
+  */
+}

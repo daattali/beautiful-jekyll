@@ -1,0 +1,84 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SetPredicate.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/10
+ *
+ * Implementation of inline methods defined in SetPredicate.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+DGtal::deprecated::SetPredicate<TDigitalSet>::
+SetPredicate( ConstAlias<DigitalSet> aSet )
+  : mySet( aSet )
+{
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+DGtal::deprecated::SetPredicate<TDigitalSet>::
+SetPredicate( const SetPredicate & other )
+  : mySet( other.mySet )
+{
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+DGtal::deprecated::SetPredicate<TDigitalSet>&
+DGtal::deprecated::SetPredicate<TDigitalSet>::
+operator=( const SetPredicate & other )
+{
+  if (this != &other)
+    {
+      mySet = other.mySet;
+    }
+  return *this; 
+}
+//------------------------------------------------------------------------------
+template <typename TDigitalSet>
+inline
+bool
+DGtal::deprecated::SetPredicate<TDigitalSet>::
+operator()( const Point & p ) const
+{
+  return mySet->find( p ) != mySet->end();
+}
+//------------------------------------------------------------------------------
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

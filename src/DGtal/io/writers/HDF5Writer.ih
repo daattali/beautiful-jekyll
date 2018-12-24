@@ -1,0 +1,168 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file HDF5Writer.ih
+ * @author Martial Tola (\c martial.tola@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/09/11
+ *
+ * Implementation of inline methods defined in HDF5Writer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <fstream>
+#include "DGtal/io/Color.h"
+
+#include <hdf5.h>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+#define RANK_3D         3
+#define SIZE_CHUNK      10      // for compressed dataset
+
+namespace DGtal {
+  template<typename I,typename F>
+  bool
+  HDF5Writer<I,F>::exportHDF5_3D(const std::string & filename, const I & aImage, const std::string & aDataset,
+			    const Functor & aFunctor)
+  {
+    DGtal::IOException dgtalio;
+  
+    typename I::Domain::Vector size;
+    const typename I::Domain::Point &upBound = aImage.domain().upperBound();
+    const typename I::Domain::Point &lowBound = aImage.domain().lowerBound();
+    size[0]=upBound[0]-lowBound[0]+1;
+    size[1]=upBound[1]-lowBound[1]+1;
+    size[2]=upBound[2]-lowBound[2]+1;
+
+    typename I::Domain domain = aImage.domain();
+    typename I::Value val;
+    
+    hid_t               file, dataset;                // file and dataset handles
+    hid_t               datatype, dataspace;          // handles
+    hsize_t             dimsf[RANK_3D];               // dataset dimensions
+    herr_t              status;
+    DGtal::uint8_t      *data;
+    int                 i;
+    
+    // compressed dataset
+    hid_t plist_id;
+    hsize_t cdims[RANK_3D];
+    // compressed dataset
+    
+    try
+      {
+        data = (DGtal::uint8_t*)malloc(size[2]*size[1]*size[0] * sizeof(DGtal::uint8_t));
+        if (data == NULL)
+        {
+          trace.error() << " malloc error" << std::endl;
+          return false;
+        }
+        
+	// We scan the domain instead of the image because we cannot
+	// trust the image container Iterator
+	i=0;
+	for(typename I::Domain::ConstIterator it = domain.begin(), itend=domain.end();
+	    it!=itend;
+	    ++it)
+	  {
+	    val = aImage( (*it) );
+	    data[i++] = aFunctor(val);
+	  }
+	  
+	/*
+        * Create a new file using H5F_ACC_TRUNC access,
+        * default file creation properties, and default file
+        * access properties.
+        */
+        file = H5Fcreate(filename.c_str(), H5F_ACC_TRUNC, H5P_DEFAULT, H5P_DEFAULT);
+
+        // Describe the size of the array and create the data space for fixed size dataset.
+        dimsf[0] = size[2];
+        dimsf[1] = size[1];
+        dimsf[2] = size[0];
+        dataspace = H5Screate_simple(RANK_3D, dimsf, NULL);
+        
+        // compressed dataset
+        plist_id  = H5Pcreate(H5P_DATASET_CREATE);
+
+        // Dataset must be chunked for compression.
+        cdims[0] = SIZE_CHUNK;
+        cdims[1] = SIZE_CHUNK;
+        cdims[2] = SIZE_CHUNK;
+        status = H5Pset_chunk(plist_id, RANK_3D, cdims);
+
+        // --> Compression levels :
+        // 0            No compression
+        // 1            Best compression speed; least compression
+        // 2 through 8  Compression improves; speed degrades
+        // 9            Best compression ratio; slowest speed
+        //
+        // Set ZLIB / DEFLATE Compression using compression level 6.
+        status = H5Pset_deflate(plist_id, 6);
+        // compressed dataset
+
+        /*
+        * Define datatype for the data in the file.
+        */
+        datatype = H5Tcopy(H5T_NATIVE_UINT8);
+        status = H5Tset_order(datatype, H5T_ORDER_LE);
+
+        /*
+        * Create a new dataset within the file using defined dataspace and
+        * datatype and default dataset creation properties.
+        */
+        dataset = H5Dcreate2(file, aDataset.c_str(), datatype, dataspace,
+                            H5P_DEFAULT, /*H5P_DEFAULT*/plist_id, H5P_DEFAULT); // here to activate compressed dataset
+
+        // Write the data to the dataset using default transfer properties.
+        status = H5Dwrite(dataset, H5T_NATIVE_UINT8, H5S_ALL, H5S_ALL, H5P_DEFAULT, data);
+        if (status)
+        {
+          trace.error() << " H5Dwrite error" << std::endl;
+          free(data);
+          return false;
+        }
+
+        // Close/release resources.
+        H5Sclose(dataspace);
+        H5Tclose(datatype);
+        H5Dclose(dataset);
+        // compressed dataset
+        H5Pclose(plist_id);
+        // compressed dataset
+        H5Fclose(file);
+        
+        free(data);
+      }
+    catch( ... )
+      {
+	trace.error() << "HDF5 writer IO error on export " << filename << std::endl;
+	throw dgtalio;
+      }
+    return true;
+  }
+
+}//namespace

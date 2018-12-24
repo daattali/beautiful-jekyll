@@ -1,7 +1,0 @@
-<map id="DGtal::CountedPtrOrPtr&lt; T &gt;" name="DGtal::CountedPtrOrPtr&lt; T &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtrOrPtr.html" title="DGtal::CountedPtrOrPtr\l\&lt; ConfigMap \&gt;" alt="" coords="431,5,593,44"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtrOrPtr.html" title="DGtal::CountedPtrOrPtr\l\&lt; std::unordered_map\&lt;\l Point, unsigned int \&gt; \&gt;" alt="" coords="431,68,593,120"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtrOrPtr.html" title="DGtal::CountedPtrOrPtr\l\&lt; PointToMaskMap \&gt;" alt="" coords="431,144,593,183"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtrOrPtr.html" title="DGtal::CountedPtrOrPtr\l\&lt; boost::dynamic_bitset\&lt;\&gt; \&gt;" alt="" coords="417,207,606,245"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtrOrPtr.html" title="DGtal::CountedPtrOrPtr\l\&lt; DummyTbl \&gt;" alt="" coords="431,269,593,308"/>
-</map>

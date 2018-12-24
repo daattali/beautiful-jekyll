@@ -1,0 +1,113 @@
+
+/**
+ * @file packageArithmeticConcepts.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/03/16
+ *
+ * Documentation file for feature ArithmeticPackageConcepts
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageArithmeticConcepts Arithmetic Concepts and Models
+@writers Jacques-Olivier Lachaud
+
+ @dot   
+digraph GARITHMETIC {
+    rankdir= BT
+
+    subgraph cluster_ext {
+	rank = same;
+        style=invis;
+        subgraph cluster_base {
+                 style=filled;
+                 color="#eeeeff";
+                 node [style=filled,color=white];
+                 label="base";
+
+                 CBackInsertable [ label="CBackInsertable" URL="\ref concepts::CBackInsertable" ];
+                 CConstSinglePassRange [ label="CConstSinglePassRange" URL="\ref concepts::CConstSinglePassRange" ];
+        }
+        subgraph cluster_kernel {
+                 style=filled;
+                 color="#ddddee";
+                 node [style=filled,color=white];
+                 label="kernel";
+
+                 CInteger [ label="CInteger" URL="\ref concepts::CInteger" ];
+                 CSignedNumber [ label="CSignedNumber" URL="\ref concepts::CSignedNumber" ];
+                 CUnsignedNumber [ label="CUnsignedNumber" URL="\ref concepts::CUnsignedNumber" ];
+                 CSpace [ label="CSpace" URL="\ref concepts::CSpace" ];
+        }
+        subgraph cluster_boost {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="boost";
+
+                 boost_CopyConstructible [ label="boost::CopyConstructible" URL="\ref boost::CopyConstructible" ];
+                 boost_DefaultConstructible [ label="boost::DefaultConstructible" URL="\ref boost::DefaultConstructible" ];
+                 boost_Assignable [ label="boost::Assignable" URL="\ref boost::Assignable" ];
+                 boost_Sequence [ label="boost::Sequence" URL="\ref boost::Sequence" ];
+        }
+    }
+  
+    subgraph cluster_concepts {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=white];
+        label="arithmetic (main concepts)";
+
+        CPositiveIrreducibleFraction [ label="CPositiveIrreducibleFraction" URL="\ref concepts::CPositiveIrreducibleFraction" ] ;
+    }
+    CPositiveIrreducibleFraction -> CBackInsertable;
+    CPositiveIrreducibleFraction -> CConstSinglePassRange;
+    CPositiveIrreducibleFraction -> boost_DefaultConstructible;
+    CPositiveIrreducibleFraction -> boost_CopyConstructible;
+    CPositiveIrreducibleFraction -> boost_Assignable;
+    CPositiveIrreducibleFraction -> CInteger [label="use",style=dashed];
+    CPositiveIrreducibleFraction -> CSignedNumber [label="use",style=dashed];
+  
+    subgraph cluster_models {
+        style=filled;
+        color="#ccffcc";
+        node [style=filled,color=white];
+        label="arithmetic (main models)";
+
+        SternBrocot_Fraction [ label="SternBrocot::Fraction" URL="\ref SternBrocot::Fraction" ] ;
+        LightSternBrocot_Fraction [ label="LightSternBrocot::Fraction" URL="\ref LightSternBrocot::Fraction" ] ;
+        LighterSternBrocot_Fraction [ label="LighterSternBrocot::Fraction" URL="\ref LighterSternBrocot::Fraction" ] ;
+        IntegerComputer [ label="IntegerComputer" URL="\ref IntegerComputer" ] ;
+        LatticePolytope2D [ label="LatticePolytope2D" URL="\ref LatticePolytope2D" ] ;
+        ClosedIntegerHalfPlane [ label="ClosedIntegerHalfPlane" URL="\ref ClosedIntegerHalfPlane" ] ;
+    }
+
+    SternBrocot_Fraction -> CPositiveIrreducibleFraction;
+    LightSternBrocot_Fraction -> CPositiveIrreducibleFraction;
+    LighterSternBrocot_Fraction -> CPositiveIrreducibleFraction;
+    IntegerComputer -> boost_DefaultConstructible;
+    IntegerComputer -> boost_CopyConstructible;
+    IntegerComputer -> boost_Assignable;
+    IntegerComputer -> CInteger [label="use",style=dashed];
+    IntegerComputer -> CUnsignedNumber [label="use",style=dashed];
+    LatticePolytope2D -> CSpace [label="use",style=dashed];
+    LatticePolytope2D -> boost_DefaultConstructible;
+    LatticePolytope2D -> boost_CopyConstructible;
+    LatticePolytope2D -> boost_Assignable;
+    LatticePolytope2D -> boost_Sequence;
+    ClosedIntegerHalfPlane -> CSpace [label="use",style=dashed];
+}
+@enddot
+
+*/
+
+}

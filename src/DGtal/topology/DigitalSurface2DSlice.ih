@@ -1,0 +1,264 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSurface2DSlice.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/02/29
+ *
+ * Implementation of inline methods defined in DigitalSurface2DSlice.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+~DigitalSurface2DSlice()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+DigitalSurface2DSlice( DigitalSurfaceTracker* tracker, 
+                       Dimension i )
+{
+  init( tracker, i );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+bool 
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+init( DigitalSurfaceTracker* tracker, Dimension i )
+{
+  const KSpace & K = tracker->surface().space();
+  Surfel start_s = tracker->current(); // the start surfel
+  Surfel current_s = start_s; // the current surfel during the extraction
+  Surfel next_s;     // the surfel after the current surfel during the extraction
+  uint8_t code = 0;// the code turn when going to the next surfel.
+  Dimension j = i; // the current tracking direction.
+  if ( K.sOrthDir( start_s ) == i ) return false;
+  do
+    {
+      mySurfels.push_back( current_s );
+      bool direct = K.sDirect( current_s, j );
+      code = tracker->adjacent( next_s, j, direct );
+      if ( code == 0 ) break; // slice is open
+      if ( code != 2 ) // 1 or 3, swap tracking dir and orthogonal dir.
+        j = K.sOrthDir( current_s );
+      tracker->move( next_s );
+      current_s = next_s;
+    }
+  while ( next_s != start_s );
+  // Test if we have looped or if the slice is open.
+  myIsClosed = code != 0;
+  unsigned int shift = 0;
+  if ( ! myIsClosed )
+    { // open slice 
+      tracker->move( start_s );
+      j = i;
+      current_s = start_s;
+      bool indirect = ! K.sDirect( current_s, j );
+      while ( ( code = tracker->adjacent( next_s, j, indirect ) ) )
+        { // valid movement;
+          mySurfels.push_front( next_s );
+          ++shift;
+          if ( code != 2 ) // 1 or 3, swap tracking dir and orthogonal dir.
+            j = K.sOrthDir( current_s );
+          tracker->move( next_s );
+          current_s = next_s;
+          indirect = ! K.sDirect( current_s, j );
+        }
+    }
+  myStart = begin() + shift;
+  return true;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::Size
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+size() const
+{
+  return mySurfels.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+bool
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+isClosed() const
+{
+  return myIsClosed;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstIterator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+start() const
+{
+  return myStart;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstReverseIterator 
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+rstart() const
+{
+  return ConstReverseIterator( myStart + 1 );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstCirculator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+cstart() const
+{
+  return ConstCirculator( myStart, begin(), end() );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstReverseCirculator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+rcstart() const
+{
+  return ConstReverseCirculator( rstart(), rbegin(), rend() );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstIterator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+begin() const
+{
+  return mySurfels.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstIterator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+end() const
+{
+  return mySurfels.end();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstReverseIterator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+rbegin() const
+{
+  return mySurfels.rbegin();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstReverseIterator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+rend() const
+{
+  return mySurfels.rend();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstCirculator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+c() const
+{
+  return ConstCirculator( this->begin(), this->begin(), this->end() );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::ConstReverseCirculator
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::
+rc() const
+{
+  return ConstReverseCirculator( ConstReverseIterator( begin() + 1 ),
+                                 rbegin(),
+                                 rend() );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TDigitalSurfaceTracker>
+inline
+void
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSurface2DSlice]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TDigitalSurfaceTracker>
+inline
+bool
+DGtal::DigitalSurface2DSlice<TDigitalSurfaceTracker>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TDigitalSurfaceTracker>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const DigitalSurface2DSlice<TDigitalSurfaceTracker> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

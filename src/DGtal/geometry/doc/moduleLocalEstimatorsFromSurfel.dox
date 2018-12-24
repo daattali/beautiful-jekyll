@@ -1,0 +1,147 @@
+/**
+ * @file moduleLocalEstimatorsFromSurfel.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/11/03
+ *
+ * Documentation file for feature LocalEstimatorsFromSurfel
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page LocalEstimatorsFromSurfel Local digital surface estimators from surfel functors
+@writers David Coeurjolly
+
+[TOC]
+
+Part of the \ref packageGeometry.
+
+
+\section sectLocalEstimatorsFromSurfel1 Introduction
+
+
+Many estimators of local quantities, such as curvature or normal
+vector field, on a digital surface can be defined locally as a
+function which associates a quantity to a local surface patch centered
+at the surfel @e s.  Such local estimators can be characterized by:
+
+- a digital surface in which the computation is performed;
+
+- a functor to call on surfels in the neighborhood;
+
+- a metric to specify the shape of the neighborhood to consider;
+
+- a radius to define the neighborhood (ball for the specified metric);
+
+- as any estimator, a gridstep @a h.
+
+When evaluating the estimator at a given surfel, neighboring surfels
+are traversed (using a DistanceBreadthFirstVisitor parametrized by the
+specified metric) and each surfel is sent to the surfel functor.
+
+\section sectLocalEstimImpDetails Implementation details
+
+In DGtal, we implement this class of estimator using the generic
+LocalEstimatorsFromSurfel class. Such class is parametrized by the
+following template parameters:
+-  a model of digital surface concept (concepts::CDigitalSurfaceContainer)
+-  a model of concepts::CMetricSpace to be used in the neighborhood construction.
+-  a functor to define the  estimator on surfel set (model of
+concepts::CLocalEstimatorFromSurfelFunctor)
+-  a convolution function to weight neighboring surfels.
+
+This class provides three main methods:
+
+- @e init(h,radius): to init the estimators for a given gridstep and a
+  given kernel neighborhood.
+- @e eval( aSurfelIterator ): the evaluate the functor at @a
+  aSurfelIterator.
+- @e eval( aSurfelItBegin, aSurfelItEnd): evaluate the estimator on a
+  range of surfels.
+
+The core of the estimators are thus specified in the surfel functor
+(model of concepts::CLocalEstimatorFromSurfelFunctor). In DGtal, we have defined
+several functors:
+
+- functors::ElementaryConvolutionNormalVectorEstimator: Normal vector estimation
+  based on weighted average of surfel elementary normal vectors (@cite lenoir1996, @cite papier1998)
+
+ 
+- functors::TensorVotingFeatureExtraction implements a functor to
+  detect feature points on a digital surface using tensor voting
+  strategy (see @cite tensor-voting-ParkLL12).  More precisely, the
+  functor accumulates tensor votes @f$I - vv^T/\|vv^T\|@f$ for each
+  surfel added during the scan (@f$v@f$ being the vector from the
+  center of the neighborhood to the added surfel). Then, the @e eval()
+  method returns the ratio @f$\frac{\lambda_1+\lambda_2}{\lambda_3}@f$
+  of the eigenvalues (@f$\lambda_1\leq\lambda_2\leq\lambda_3@f$) of
+  the accumulated tensor votes.
+
+- functors::SphereFittingEstimator: this functor requires the
+  WITH_PATATE flag and the Patate Library dependency. The functor
+  performs a sphere fitting on the neighborhood following
+  @cite mellado2012growing . The output of the estimator is a structure
+  containing the fitted sphere parameters (e.g. its center and
+  radius). Please refer to @cite mellado2012growing for details on the
+  @e tau, @e kappa and @e eta parameters.
+  
+- functors::MongeJetFittingGaussianCurvatureEstimator,
+  functors::MongeJetFittingMeanCurvatureEstimator,
+  functors::MongeJetFittingNormalVectorEstimator,
+  functors::MongeJetFittingPrincipalCurvaturesEstimator: return
+  differential quantity by a polynomial surface fitting @cite CGal,
+  @cite Cazals2005 . These estimators require CGAL and Eigen3
+  dependency (WITH_CGAL, WITH_EIGEN).
+
+- functors::LinearLeastSquareFittingNormalVectorEstimator: normal vector
+  estimation from least square fitting of the embedded sufel
+  points. This functor also needs CGAL dependency.
+
+- functors::SphericalHoughNormalVectorEstimator: Robsut normal vector estimation using a spherical hough voting (@cite BoulchM12).
+
+@advanced Implementing your own surfel patch based estimator is quite
+simple. Please have a look to concepts::CLocalEstimatorFromSurfelFunctor or the
+source code of any of its models.
+
+\section sectLocalEstimatorsFromSurfel2 Usage Example
+
+In this section, we give a step by step example (see @ref exampleEstimatorFromSurfelFunctors.cpp) . Let's start by
+defining a digital surface from a implicit digital ellipse.
+
+@snippet exampleEstimatorFromSurfelFunctors.cpp SurfelFunctorsInit
+
+We then define some types (note that we use the @e WITH_CGAL define to
+make sure that the user has enabled CGAL). Since local functors based
+on Monge Jet Fitting and CGAL do not require any weigths, we just
+consider a constant weight functor returning 1.0 for each surfel. For
+the functors::ElementaryConvolutionNormalVectorEstimator, we consider a Gaussian
+kernel with @f$ \sigma=2.0@f$. Please aslo note that the distance
+visitor is based on a Euclidean @f$ l_2@f$ metric:
+
+@snippet exampleEstimatorFromSurfelFunctors.cpp SurfelFunctorsType
+
+
+We now create the instances for gridstep @f$ h=1.0 @f$ and a kernel
+radius 5.0:
+
+@snippet exampleEstimatorFromSurfelFunctors.cpp SurfelFunctorsInstances
+
+
+We can now estimate the quantities at a surfel given by an iterator
+(here, the iterator at surface.begin()):
+
+@snippet exampleEstimatorFromSurfelFunctors.cpp SurfelFunctorsEstim
+
+@see exampleEstimatorFromSurfelFunctors.cpp
+
+*/
+
+}

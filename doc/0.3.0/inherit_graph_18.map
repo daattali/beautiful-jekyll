@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$structDGtal_1_1CInteger.html" title="Aim: The concept CInteger specifies what are the usual integer numbers, more precisely the ones that ..." alt="" coords="5,32,163,61"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CSignedInteger.html" title="DGtal::CSignedInteger\&lt; T \&gt;" alt="" coords="220,5,420,35"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CUnsignedInteger.html" title="DGtal::CUnsignedInteger\&lt; T \&gt;" alt="" coords="212,59,428,88"/>
-</map>

@@ -1,0 +1,759 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file   Board3D.ih
+ * @author Martial Tola <http://liris.cnrs.fr/martial.tola/>
+ * @date   mercredi 22 juin 2011
+ *
+ * @brief
+ *
+ * Implementation of inline methods defined in Board3D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/io/CDrawableWithDisplay3D.h"
+#include "DGtal/io/Color.h"
+
+#include <limits>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+/**
+ * Set the default color for future drawing.
+ *
+ * @param aColor: a DGtal::Color (allow to set a trasnparency value).
+ *
+ **/
+template < typename Space, typename KSpace>
+inline
+DGtal::Board3D<Space, KSpace> &
+DGtal::Board3D<Space, KSpace>::operator<<(const DGtal::Color & aColor)
+{
+  myDefaultColor=aColor;
+  return *this;
+}
+
+
+/**
+ * Draws the drawable [object] in this board. It should satisfy
+ * the concept CDrawableWithBoard3D, which requires for instance a
+ * method setStyle( Board3D & ).
+ *
+ * @param object any drawable object.
+ * @return a reference on 'this'.
+ */
+template < typename Space, typename KSpace>
+template <typename TDrawableWithDisplay3D>
+inline
+DGtal::Board3D<Space, KSpace> &
+DGtal::Board3D<Space, KSpace>::operator<<( const TDrawableWithDisplay3D & object )
+{
+  BOOST_CONCEPT_ASSERT((concepts::CDrawableWithDisplay3D< TDrawableWithDisplay3D, Space, KSpace>));
+  
+  DGtal::Display3DFactory<Space,KSpace>::draw(*this, object);
+  return *this;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Standard services - public :
+
+/*!
+ * \brief Constructor.
+ */
+template < typename Space, typename KSpace>
+inline
+DGtal::Board3D<Space, KSpace>::Board3D() : Display3D<Space,KSpace>()
+{
+  init();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param outOBJ the output stream where the object is written.
+ */
+template < typename Space, typename KSpace>
+inline
+void
+DGtal::Board3D<Space, KSpace>::selfDisplay ( std::ostream & outOBJ ) const
+{
+  outOBJ << "[Board3D]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template < typename Space, typename KSpace>
+bool
+DGtal::Board3D<Space, KSpace>::isValid() const
+{
+  return true;
+}
+
+
+/**
+ * Save a OBJ image.
+ * @param filename filename of the image to save.
+ */
+template < typename Space, typename KSpace>
+inline
+void DGtal::Board3D<Space, KSpace>::saveOBJ(const std::string & filename, const bool normalization)
+{
+  
+  size_t k, j; //id of each elements and sub elements of a list for the .OBJ identification
+  std::ofstream outOBJ; //OBJ file where to write
+  std::ofstream outMTL; //MTL file where to write
+
+  //the filename without OBJ any extention
+  std::string noExt;
+  size_t lastdot = filename.find_last_of(".");
+  if (lastdot != std::string::npos)
+    noExt = filename.substr(0, lastdot);
+  else
+    noExt = filename;
+    
+  std::stringstream nameOBJ;
+  std::stringstream nameMTL;
+  nameOBJ << noExt << ".obj";
+  nameMTL << noExt << ".mtl";
+  
+  outOBJ.open(nameOBJ.str().c_str());
+  outOBJ << "#  OBJ format"<< std::endl;
+  outOBJ << "# generated from Board3D from the DGtal library"<< std::endl;
+  outOBJ << "mtllib " <<  nameMTL.str() << std::endl;
+  outOBJ << std::endl;
+  
+  outMTL.open(nameMTL.str().c_str());
+  outMTL << "#  MTL format"<< std::endl;
+  outMTL << "# generated from Board3D from the DGtal library"<< std::endl;
+  
+  
+  //myClippingPlaneList++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //std::vector< clippingPlaneD3D >::const_iterator
+  {
+    if(Board3D<Space, KSpace>::myClippingPlaneList.size()> 0)
+    {
+      trace.info() << "number of clipping plane : "
+      << Board3D<Space, KSpace>::myClippingPlaneList.size() << std::endl;
+    }
+  }
+  
+  // normalization -----------------------------------------------------------------------
+  double scale = 1.0;
+  typename Space::RealPoint shift(0.0,0.0,0.0);
+  if (normalization)
+  {
+    //We center  the shape W.r.t. its bounding box
+    for(unsigned int i=0; i < 3; i++)
+      shift[i] = (this->myBoundingPtUp[i] + this->myBoundingPtLow[i])/2.0;
+    
+    //We compute the scale of the largest direction so that it fits
+    //in [-1/2,1/2] interval
+    double tmpwidth;
+    
+    int i =0;
+    while ((i<3) && (this->myBoundingPtUp[i]  - this->myBoundingPtLow[i] == 0))
+      i++;
+    ASSERT_MSG(i < 3, "Error when computing the scale from the bounding box. The Bbox seems to be empty.");
+    
+    scale = 1.0/(this->myBoundingPtUp[i]  - this->myBoundingPtLow[i]);
+    for( ; i < 3; i++)
+    {
+      tmpwidth =  (this->myBoundingPtUp[i]  - this->myBoundingPtLow[i]);
+      if ((tmpwidth != 0.0) && (scale  > 1.0/tmpwidth))
+        scale = 1.0/tmpwidth;
+    }
+    outOBJ << "# Normalization was used. Scale= "<< scale << " and Shift= "<<shift<< std::endl;
+  }
+  
+  // Draw the shapes -----------------------------------------------------------------------
+  
+  ///Temporary variables
+  typename Space::RealPoint apoint, apoint1, apoint2, apoint3, apoint4;
+  
+  // myBallSetList++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  {
+    k=0;//id of each BallSetList for the .OBJ identification
+    for ( typename std::vector< std::vector< typename Board3D<Space, KSpace>::BallD3D> >::const_iterator it = Board3D<Space, KSpace>::myBallSetList.begin();
+         it != Board3D<Space, KSpace>::myBallSetList.end(); it++)
+    {
+      std::ostringstream tmpStream; // checking that points exist before creating an object
+      for (typename std::vector<  typename Board3D<Space, KSpace>::BallD3D>::const_iterator s_it = it->begin();
+           s_it != it->end(); s_it++)
+      {
+        //test if a clipping plane do not cut it
+        bool notCut =true;
+        typename std::vector< typename Board3D<Space, KSpace>::ClippingPlaneD3D>::const_iterator itClip = Board3D<Space, KSpace>::myClippingPlaneList.begin();
+        while (itClip !=Board3D<Space, KSpace>::myClippingPlaneList.end() && notCut )
+        {
+          double d2 = ( itClip->a * (*s_it)[0]) + (itClip->b * (*s_it)[1]) + ( itClip->c * (*s_it)[2] ) + itClip->d;
+          notCut = ( d2 >= 0);
+          
+          itClip ++;
+        }
+        if (notCut)
+        {
+          double thetaResolution = s_it->resolution;
+          double thetaStep= (2.0*M_PI)/thetaResolution;
+          double phiResolution = s_it->resolution;
+          double phiStep= M_PI/phiResolution;
+          
+          double radius = s_it->radius*scale;
+          double xCenter = (s_it->center[0]-shift[0])*scale;
+          double yCenter = (s_it->center[1]-shift[0])*scale;
+          double zCenter = (s_it->center[2]-shift[0])*scale;
+          
+          for(unsigned int jj =0; jj < phiResolution; jj++)
+          {
+            double phi0 = M_PI/2.0-jj*phiStep;
+            double phi1 = M_PI/2.0-(jj+1)*phiStep;
+            for(unsigned int i =0; i < thetaResolution; i++)
+            {
+              double theta0 =  i * thetaStep;
+              double theta1 =  (i+1) * thetaStep;
+              tmpStream << "v " << xCenter+cos(phi0)*cos(theta0)*radius
+              << " "  << yCenter+ cos(phi0)*sin(theta0)*radius << " " << zCenter+ sin(phi0)*radius << std::endl;
+              tmpStream << "v " << xCenter+cos(phi0)*cos(theta1)*radius
+              << " " << yCenter+ cos(phi0)*sin(theta1)*radius << " " << zCenter+ sin(phi0)*radius << std::endl;
+              tmpStream << "v " << xCenter+cos(phi1)*cos(theta0)*radius << " "
+              << yCenter+ cos(phi1)*sin(theta0)*radius << " " <<zCenter+ sin(phi1)*radius << std::endl;
+              tmpStream << "f " << "-1" << " " << "-2" << " " << "-3"<< std::endl;
+              
+              tmpStream << "v " << xCenter+cos(phi0)*cos(theta1)*radius
+              << " " << yCenter+ cos(phi0)*sin(theta1)*radius << " " << zCenter+ sin(phi0)*radius << std::endl;
+              tmpStream << "v " << xCenter+cos(phi1)*cos(theta0)*radius << " "
+              << yCenter+ cos(phi1)*sin(theta0)*radius << " " <<zCenter+ sin(phi1)*radius << std::endl;
+              tmpStream << "v " << xCenter+cos(phi1)*cos(theta1)*radius << " "
+              << yCenter+ cos(phi1)*sin(theta1)*radius << " " <<zCenter+ sin(phi1)*radius << std::endl;
+              tmpStream << "f " << "-3" << " " << "-2" << " " << "-1"<< std::endl;
+            }
+          }
+        }
+      }
+      
+      if (tmpStream.str().size() > 0)
+      {
+        std::stringstream name;
+        name << Board3D<Space, KSpace>::myBallSetNameList.at(k);
+        if ( name.str() == "")
+        {
+          name << "myBallSetList_" << k ;
+        }
+        
+        typename std::vector< typename Board3D<Space, KSpace>::BallD3D>::const_iterator itBegin = it->begin();
+        unsigned int matid = getMaterialIndex(itBegin->color);
+        std::stringstream matName;
+        matName <<  "Mat_" << matid;
+        outOBJ << "o  " << name.str() << std::endl;
+        outOBJ << "usemtl " << matName.str() << std::endl;
+        outOBJ << tmpStream.str();
+      }
+      k++;
+    }
+  }
+  
+  // myLineSetList+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  {
+    j =0;
+    k=0;//id of each LineSetList for the .OBJ identification
+    for(typename std::vector<std::vector< typename Board3D<Space, KSpace>::LineD3D> >::const_iterator it =Board3D<Space, KSpace>::myLineSetList.begin();
+        it!= Board3D<Space, KSpace>::myLineSetList.end();   it++)
+    {
+      std::ostringstream tmpStream;
+      for (typename std::vector< typename Board3D<Space, KSpace>::LineD3D>::const_iterator s_it = it->begin();
+           s_it != it->end();++s_it)
+      {
+        
+        //test if a clipping plane do not cut it
+        bool notCut =true;
+        double width = s_it->width;
+        typename std::vector< typename Board3D<Space, KSpace>::ClippingPlaneD3D>::const_iterator itClip = Board3D<Space, KSpace>::myClippingPlaneList.begin();
+        while (itClip !=Board3D<Space, KSpace>::myClippingPlaneList.end() && notCut )
+        {
+          double a = itClip->a;
+          double b = itClip->b;
+          double c = itClip->c;
+          double d = itClip->d;
+          double d2 ;
+          d2 = ( a * s_it->point1[0]) + (b * (s_it->point1[1] -width)) + ( c * s_it->point1[2] ) + d;
+          notCut = ( d2 >= 0);
+          d2 = ( a * s_it->point1[0]) + (b * (s_it->point1[1] +width)) + ( c * s_it->point1[2] ) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point2[0]) + (b * (s_it->point2[1] +width)) + ( c * s_it->point2[2] ) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point2[0]) + (b * (s_it->point2[1] -width)) + ( c * s_it->point2[2] ) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point1[0]) + (b * s_it->point1[1]) + ( c * (s_it->point1[2] -width )) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point1[0]) + (b * s_it->point1[1]) + ( c * (s_it->point1[2] +width )) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point2[0]) + (b * s_it->point2[1]) + ( c * (s_it->point2[2] +width )) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point2[0]) + (b * s_it->point2[1]) + ( c * (s_it->point2[2] -width )) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          
+          itClip ++;
+        }
+        
+        if (notCut)
+        {
+          // OBJ dont know how to draw lines, have to make a
+          // cuboid with a depth and height of a pixel width
+          
+          apoint1 = ((s_it->point1) - shift)*scale;
+          apoint2 = ((s_it->point2) - shift)*scale;
+          tmpStream << "v " << apoint1[0]     << " " << apoint1[1] -width << " " << apoint1[2] -width << std::endl;
+          tmpStream << "v " << apoint1[0]     << " " << apoint1[1] -width << " " << apoint1[2] +width << std::endl;
+          tmpStream << "v " << apoint1[0]     << " " << apoint1[1] +width << " " << apoint1[2] -width << std::endl;
+          tmpStream << "v " << apoint1[0]     << " " << apoint1[1] +width << " " << apoint1[2] +width<< std::endl;
+
+          tmpStream << "v " << apoint2[0]     << " " << apoint2[1] -width << " " << apoint2[2] -width << std::endl;
+          tmpStream << "v " << apoint2[0]     << " " << apoint2[1] -width << " " << apoint2[2] +width << std::endl;
+          tmpStream << "v " << apoint2[0]     << " " << apoint2[1] +width << " " << apoint2[2] -width << std::endl;
+          tmpStream << "v " << apoint2[0]     << " " << apoint2[1] +width << " " << apoint2[2] +width<< std::endl;
+         
+          tmpStream  << "vn " <<  "0"  << " " << "0" << " " << "1" << std::endl;//up
+          tmpStream  << "vn " <<  "0"  << " " << "0" << " " << "-1" << std::endl;//back
+   
+          tmpStream  << "f " << "-7//" << " " << "-8//" << " " << "-4//"<< " " << "-3//" << std::endl;//left
+          tmpStream << "f " << "-5//" << " " << "-7//" << " " << "-3//"<< " " << "-1//"<< std::endl;//front
+          tmpStream << "f " << "-3//-2" << " " << "-4//-2" << " " << "-2//-2"<< " " << "-1//-2"<< std::endl;//up
+          tmpStream << "f " << "-8//-1" << " " << "-7//-1" << " " << "-5//-1"<< " " << "-6//-1"<< std::endl;//back
+          tmpStream << "f " << "-2//" << " " << "-4//" << " " << "-8//"<< " " << "-6//"<< std::endl;//down
+          tmpStream << "f " << "-1//" << " " << "-2//" << " " << "-6//"<< " " << "-5//"<< std::endl;//right
+          
+          j++;
+        }
+      }
+      if (tmpStream.str() != "")
+      {
+        std::stringstream name;
+        name << Board3D<Space, KSpace>::myLineSetNameList.at(k);
+        if ( name.str()== "")
+        {
+          name << "myLineSetList_" << k ;
+        }
+        
+        typename std::vector< typename Board3D<Space, KSpace>::LineD3D>::const_iterator itBegin = it->begin();
+        unsigned int matid = getMaterialIndex(itBegin->color);
+        std::stringstream matName;
+        matName <<  "Mat_" << matid;
+        outOBJ << "o  " << name.str() << std::endl;
+        outOBJ << "usemtl " << matName.str() << std::endl;
+        outOBJ << tmpStream.str();
+      }
+      
+      k++;
+    }
+  }
+  
+  // myCubeSetList++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  {
+    j  = 0 ; //id of each Cube sub list for the .OBJ identification
+    
+    
+    //Foreach list
+    for(typename Board3D<Space, KSpace>::CubesMap::const_iterator it =Board3D<Space, KSpace>::myCubesMap.begin();
+        it != Board3D<Space, KSpace>::myCubesMap.end();   it++)
+    {
+    
+        std::stringstream name;
+        std::ostringstream tmpStream;
+
+        name << "myCubeSetList_" << it->first ;
+        outOBJ << "o  " << name.str() << std::endl;
+      
+      
+      //For each list, we force the cube color to be set in the OBJ file
+      unsigned int prevMaterialIndex = std::numeric_limits<unsigned int>::max();  //index to the last voxel material
+      
+      //Foreach cube in the list
+      for (typename std::vector< typename Board3D<Space, KSpace>::CubeD3D>::const_iterator s_it = it->second.begin();
+           s_it != it->second.end(); ++s_it)
+      {
+        //Color
+        unsigned int matid = getMaterialIndex(s_it->color);
+        if (matid != prevMaterialIndex)
+        {
+          std::stringstream matName;
+          matName <<  "Mat_" << matid;
+          outOBJ << "usemtl " << matName.str() << std::endl;
+          prevMaterialIndex = matid;
+        }
+        
+        double wid = s_it->width;
+        double x = s_it->center[0];
+        double y = s_it->center[1];
+        double z = s_it->center[2];
+        
+        double x1 = x - wid;
+        double x2 = x + wid;
+        double y1 = y - wid;
+        double y2 = y + wid;
+        double z1 = z - wid;
+        double z2 = z + wid;
+        //test if a clipping plane do not cut it
+        bool notCut =true;
+        typename std::vector< typename Board3D<Space, KSpace>::ClippingPlaneD3D>::const_iterator itClip = Board3D<Space, KSpace>::myClippingPlaneList.begin();
+        while (itClip !=Board3D<Space, KSpace>::myClippingPlaneList.end() && notCut )
+        {
+          double a = itClip->a;
+          double b = itClip->b;
+          double c = itClip->c;
+          double d = itClip->d;
+          double d2 = ( a * x1) + (b * y1) + ( c * z2 ) + d;
+          notCut = ( d2 >= 0);
+          
+          d2 = ( a * x2) + (b * y1) + ( c * z2) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * x1) + (b * y1) + ( c * z1) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * x2) + (b * y1) + ( c * z1) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * x1) + (b * y2) + ( c * z2) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * x2) + (b * y2) + ( c * z2) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * x1) + (b * y2) + ( c * z1) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * x2) + (b * y2) + ( c * z1) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          
+          itClip ++;
+        }
+        
+        //OPT cube
+        
+        if (notCut)
+        {
+          // this version is  one cube with (x,y,z) the center of it and wid its distance between it and its faces
+          
+          x1 = (x1-shift[0])*scale;
+          y1 = (y1-shift[1])*scale;
+          z1 = (z1-shift[2])*scale;
+          x2 = (x2-shift[0])*scale;
+          y2 = (y2-shift[1])*scale;
+          z2 = (z2-shift[2])*scale;
+          
+          outOBJ  << "v " << x1   << " " << y1 << " " << z1 << std::endl;
+          outOBJ  << "v " << x1   << " " << y2 << " " << z1 << std::endl;
+          outOBJ  << "v " << x2   << " " << y2 << " " << z1 << std::endl;
+          outOBJ  << "v " << x2   << " " << y1 << " " << z1 << std::endl;
+          outOBJ  << "v " << x1   << " " << y1 << " " << z2 << std::endl;
+          outOBJ  << "v " << x1   << " " << y2 << " " << z2 << std::endl;
+          outOBJ  << "v " << x2   << " " << y2 << " " << z2 << std::endl;
+          outOBJ  << "v " << x2   << " " << y1 << " " << z2 << std::endl;
+       
+          outOBJ << "f " << "-8" << " " << "-7" << " " <<"-6" << " " <<"-5" << std::endl;//bottom
+          outOBJ << "f " << "-8" << " " << "-4" << " " <<"-3" << " " <<"-7" << std::endl;//back
+          outOBJ << "f " << "-2" << " " << "-1" << " " <<"-5" << " " <<"-6" << std::endl;//front
+          outOBJ << "f " << "-7" << " " << "-3" << " " <<"-2" << " " <<"-6" << std::endl;//right
+          outOBJ << "f " << "-8" << " " << "-5" << " " <<"-1" << " " <<"-4" << std::endl;//left
+          outOBJ << "f " << "-4" << " " << "-1" << " " <<"-2" << " " <<"-3" << std::endl;//top
+
+          
+       
+        }
+        
+      
+      j++;
+      
+      }
+      k++;
+    }
+
+  }
+  
+  //OPT quad
+  // myQuadList++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  {
+    k = 0; // id of each list
+    Color previousCol;
+    std::stringstream matName;
+    //we init the previousCol var.
+    if (Board3D<Space, KSpace>::myQuadsMap.begin() != Board3D<Space, KSpace>::myQuadsMap.end())
+      previousCol = Board3D<Space, KSpace>::myQuadsMap.begin()->second.begin()->color;
+    
+    
+    
+    //Foreach lists
+    for (typename Board3D<Space, KSpace>::QuadsMap::const_iterator it = Board3D<Space, KSpace>::myQuadsMap.begin();
+         it != Board3D<Space, KSpace>::myQuadsMap.end(); it++)
+    {
+      
+      outOBJ << "o  myQuadSetList_" << it->first <<std::endl;
+      //For each list, we force the material
+      unsigned int matid = getMaterialIndex(previousCol);
+      outOBJ << "usemtl Mat_" << matid << std::endl;
+      
+      
+      //We scan the quads of the list
+      for (typename std::vector<typename Board3D<Space, KSpace>::QuadD3D>::const_iterator aQuad = it->second.begin();
+           aQuad!=it->second.end();aQuad ++)
+      {
+        if (previousCol != aQuad->color)
+        {
+          previousCol = aQuad->color;
+          
+          matid = getMaterialIndex(previousCol);
+          outOBJ << "usemtl Mat_" << matid << std::endl;
+        }
+        
+        apoint1 = (aQuad->point1 -shift)*scale;
+        apoint2 = (aQuad->point2 -shift)*scale;
+        apoint3 = (aQuad->point3 -shift)*scale;
+        apoint4 = (aQuad->point4 -shift)*scale;
+        
+        outOBJ << "v " << apoint1[0]     << " " << apoint1[1]      << " " << apoint1[2] << std::endl;
+        outOBJ << "v " << apoint2[0]     << " " << apoint2[1]      << " " << apoint2[2] << std::endl;
+        outOBJ << "v " << apoint3[0]     << " " << apoint3[1]      << " " << apoint3[2] << std::endl;
+        outOBJ << "v " << apoint4[0]     << " " << apoint4[1]      << " " << apoint4[2] << std::endl;
+        outOBJ << "vn " << aQuad->nx     << " " << aQuad->ny      << " " << aQuad->nz << std::endl;
+        outOBJ << "f " << "-4//-1" << " " << "-3//-1" << " " << "-2//-1"<< " " << "-1//-1"<< std::endl;
+      }
+      
+    }
+  }
+  
+  //OPT triangle
+  
+  // myTriangleList++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  {
+    //std::vector<triangleD3D>::const_iterator
+    k = 0; // id of each list
+    for(typename std::vector<std::vector< typename Board3D<Space, KSpace>::TriangleD3D> >::const_iterator it =Board3D<Space, KSpace>::myTriangleSetList.begin();
+        it != Board3D<Space, KSpace>::myTriangleSetList.end();   it++)
+    {
+      std::ostringstream tmpStream;
+      for (typename std::vector< typename Board3D<Space, KSpace>::TriangleD3D>::const_iterator s_it = it->begin();
+           s_it != it->end(); ++s_it)
+      {
+        //test if a clipping plane do not cut it
+        bool notCut =true;
+        typename std::vector< typename Board3D<Space, KSpace>::ClippingPlaneD3D>::const_iterator itClip =
+        Board3D<Space, KSpace>::myClippingPlaneList.begin();
+        while (itClip !=Board3D<Space, KSpace>::myClippingPlaneList.end() && notCut )
+        {
+          double a = itClip->a;
+          double b = itClip->b;
+          double c = itClip->c;
+          double d = itClip->d;
+          double d2 = ( a * s_it->point1[0]) + (b * s_it->point1[1]) + ( c * s_it->point1[2] ) + d;
+          notCut = ( d2 >= 0);
+          d2 = ( a * s_it->point2[0]) + (b * s_it->point2[1]) + ( c * s_it->point2[2]) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          d2 = ( a * s_it->point3[0]) + (b * s_it->point3[1]) + ( c * s_it->point3[2]) + d;
+          notCut = ( notCut  && ( d2 >= 0) );
+          
+          itClip ++;
+        }
+        if (notCut)
+        {
+          apoint1 = (s_it->point1 - shift)*scale;
+          apoint2 = (s_it->point2 - shift)*scale;
+          apoint3 = (s_it->point3 - shift)*scale;
+          
+          
+          tmpStream << "v " << apoint1[0]     << " " << apoint1[1]      << " " << apoint1[2] << std::endl;
+          tmpStream << "v " << apoint2[0]     << " " << apoint2[1]      << " " << apoint2[2] << std::endl;
+          tmpStream << "v " << apoint3[0]     << " " << apoint3[1]      << " " << apoint3[2] << std::endl;
+          
+          tmpStream << "vn " << s_it->nx    << " " << s_it->ny     << " " << s_it->nz << std::endl;
+          
+          tmpStream << "f " << "-3//-1" << " " << "-2//-1"<< " " << "-1//-1"<< std::endl;
+        }
+      }
+      
+      if (tmpStream.str() != "")
+      {
+        std::stringstream name;
+        name << Board3D<Space, KSpace>::myTriangleSetNameList.at(k);
+        if ( name.str() == "")
+        {
+          name << "myTriangleSetList_" << k ;
+        }
+        typename std::vector< typename Board3D<Space, KSpace>::TriangleD3D>::const_iterator itBegin = it->begin();
+        unsigned int matid = getMaterialIndex(itBegin->color);
+        std::stringstream matName;
+        matName <<  "Mat_" << matid;
+        outOBJ << "o  " << name.str() << std::endl;
+        outOBJ << "usemtl " << matName.str() << std::endl;
+        outOBJ << tmpStream.str();
+      }
+      k++;
+    }
+  }
+  
+  //OPT scell
+  
+  // Drawing all Khalimsky Space Cells --------------------------------------------------------------------
+  
+  // Prism (from updateList)+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  {
+    j=0;
+    k=0;
+    std::ostringstream tmpStream;
+    
+    for (typename std::vector< typename Board3D<Space, KSpace>::QuadD3D>::iterator s_it = Board3D<Space, KSpace>::myPrismList.begin();
+         s_it != Board3D<Space, KSpace>::myPrismList.end();
+         ++s_it)
+    {
+      //test if a clipping plane do not cut it
+      bool notCut =true;
+      typename std::vector< typename Board3D<Space, KSpace>::ClippingPlaneD3D>::const_iterator itClip = Board3D<Space, KSpace>::myClippingPlaneList.begin();
+      while (itClip !=Board3D<Space, KSpace>::myClippingPlaneList.end() && notCut )
+      {
+        double a = itClip->a;
+        double b = itClip->b;
+        double c = itClip->c;
+        double d = itClip->d;
+        double d2 = ( a * s_it->point1[0]) + (b * s_it->point1[1]) + ( c * s_it->point1[2] ) + d;
+        notCut = ( d2 >= 0);
+        d2 = ( a * s_it->point2[0]) + (b * s_it->point2[1]) + ( c * s_it->point2[2]) + d;
+        notCut = ( notCut  && ( d2 >= 0) );
+        d2 = ( a * s_it->point3[0]) + (b * s_it->point3[1]) + ( c * s_it->point3[2]) + d;
+        notCut = ( notCut  && ( d2 >= 0) );
+        d2 = ( a * s_it->point4[0]) + (b * s_it->point4[1]) + ( c * s_it->point4[2]) + d;
+        notCut = ( notCut  && ( d2 >= 0) );
+        
+        itClip ++;
+      }
+      if (notCut)
+      {
+        apoint1 = (s_it->point1 -shift)*scale;
+        apoint2 = (s_it->point2 -shift)*scale;
+        apoint3 = (s_it->point3 -shift)*scale;
+        apoint4 = (s_it->point4 -shift)*scale;
+        
+        tmpStream << "v " << apoint1[0]     << " " << apoint1[1]      << " " << apoint1[2] << std::endl;
+        tmpStream << "v " << apoint2[0]     << " " << apoint2[1]      << " " << apoint2[2] << std::endl;
+        tmpStream << "v " << apoint3[0]     << " " << apoint3[1]      << " " << apoint3[2] << std::endl;
+        tmpStream << "v " << apoint4[0]     << " " << apoint4[1]      << " " << apoint4[2] << std::endl;
+        
+        tmpStream << "vn " << s_it->nx    << " " << s_it->ny     << " " << s_it->nz << std::endl;
+        
+        tmpStream << "f " << "-4//-1" << " " << "-3//-1" << " " << "-2//-1"<< " " << "-1//-1" << std::endl;
+        
+        j++;
+        
+      }
+      if (tmpStream.str() != "")
+      {
+        std::stringstream name;
+        name << "myPrismList" << j;
+        std::stringstream matName;
+        matName << "myPrismList" << j << "MAT";
+        typename std::vector< typename Board3D<Space, KSpace>::QuadD3D>::const_iterator itBegin = Board3D<Space, KSpace>::myPrismList.begin();
+        unsigned int matid = getMaterialIndex(itBegin->color);
+        matName <<  "Mat_" << matid;
+        outOBJ << "o  " << name.str() << std::endl;
+        outOBJ << "usemtl " << matName.str() << std::endl;
+        outOBJ << tmpStream.str();
+      }
+    }
+    
+    
+  }
+  
+  //end Prism (from updateList)+++++++++++++++++++++++++++++++
+  outMTL  << myMTLBuffer.str();
+  
+  outOBJ.close();
+  outMTL.close();
+}
+
+
+
+
+template < typename Space, typename KSpace>
+inline
+void
+DGtal::Board3D<Space, KSpace>::init()
+{
+  
+  myMaterialIndex = 0;
+  
+  Board3D<Space, KSpace>::createNewCubeList();
+  Board3D<Space, KSpace>::createNewLineList();
+  Board3D<Space, KSpace>::createNewBallList();
+  
+  Board3D<Space, KSpace>::myCurrentFillColor = DGtal::Color (220, 220, 220);
+  Board3D<Space, KSpace>::myCurrentLineColor = DGtal::Color (22, 22, 222, 50);
+  Board3D<Space, KSpace>::myDefaultColor= DGtal::Color(255, 255, 255);
+  Board3D<Space, KSpace>::myModes["Board3D"]="SolidMode";
+  
+  std::string nameLineSet;
+  Board3D<Space, KSpace>::myLineSetNameList.push_back(nameLineSet);
+  
+  std::string nameBallSet;
+  Board3D<Space, KSpace>::myBallSetNameList.push_back(nameBallSet);
+  
+  
+  std::string nameQuad;
+  Board3D<Space, KSpace>::myQuadSetNameList.push_back(nameQuad);
+  
+  std::string nameTriangle;
+  Board3D<Space, KSpace>::myTriangleSetNameList.push_back(nameTriangle);
+  
+  std::string namePolygon;
+  Board3D<Space, KSpace>::myPolygonSetNameList.push_back(namePolygon);
+}
+///////////////////////////////////////////////////////////////////////////////
+template < typename Space, typename KSpace>
+inline
+unsigned int
+DGtal::Board3D<Space, KSpace>::getMaterialIndex(const DGtal::Color &aColor)
+{
+  std::map<DGtal::Color, unsigned int>::iterator it;
+  
+  it = myMaterialMap.find(aColor);
+  
+  //The material exists
+  if (it != myMaterialMap.end())
+    return it->second;
+  
+  myMaterialMap.insert( std::pair<DGtal::Color,unsigned int>(aColor,myMaterialIndex) );
+  std::stringstream matName ;
+  matName << "Mat_" <<myMaterialIndex;
+  myMTLBuffer << "newmtl " << matName.str()  <<std::endl;
+  myMTLBuffer << "Ka " << aColor.red()/255.0 << " " << aColor.green()/255.0 << " " << aColor.blue()/255.0 << std::endl;
+  myMTLBuffer << "Kd " << aColor.red()/255.0 << " " << aColor.green()/255.0 << " " << aColor.blue()/255.0 << std::endl;
+  myMTLBuffer << "Ks 0 0 0" << std::endl;
+  myMTLBuffer << "d " << aColor.alpha()/255.0 << std::endl;
+  myMTLBuffer << "illum 2" << std::endl << std::endl;
+  
+  myMaterialIndex++;
+  return (myMaterialIndex - 1);
+}
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

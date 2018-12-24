@@ -1,0 +1,232 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file AccFlower2D.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/04/12
+ *
+ * Implementation of inline methods defined in AccFlower2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::AccFlower2D<T>::~AccFlower2D()
+{
+}
+
+template <typename T>
+inline
+DGtal::AccFlower2D<T>::AccFlower2D(const double x0, const double y0,
+           const double radius, const double smallRadius,
+           const unsigned int k, const double phi)
+  :  myCenter(x0,y0), myRadius(radius), myVarRadius(smallRadius), 
+     myK(k), myPhi(phi)
+{
+  myKp = 2 * myK/ ( M_PI * M_PI );
+}
+
+
+template <typename T>
+inline
+DGtal::AccFlower2D<T>::AccFlower2D(const RealPoint2D &aPoint, const double radius,
+           const double smallRadius,
+           const unsigned int k, const double phi)
+  : myCenter(aPoint), myRadius(radius), myVarRadius(smallRadius), 
+    myK(k), myPhi(phi)
+{
+  myKp = 2 * myK/ ( M_PI * M_PI );
+}
+
+template <typename T>
+inline
+DGtal::AccFlower2D<T>::AccFlower2D(const Point &aPoint, const double radius,
+           const double smallRadius,
+           const unsigned int k, const double phi)
+  : myRadius(radius), myVarRadius(smallRadius), myK(k), myPhi(phi)
+{
+  myCenter = aPoint;
+  myKp = 2 * myK/ ( M_PI * M_PI );
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// ------------- Implementation of 'StarShaped' services ------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return the angle parameter between 0 and 2*Pi corresponding to
+ * this point for the shape.
+ */
+template <typename T>
+inline
+double
+DGtal::AccFlower2D<T>::parameter( const RealPoint2D & pp ) const
+{
+  RealPoint2D p( pp );
+  p -= myCenter;
+
+  double angle = atan2( p[1], p[0] );
+  angle = ( angle < 0.0 ) ? angle + 2 * M_PI : angle;
+
+  return angle;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x(t),y(t)) which is the position on the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::AccFlower2D<T>::RealPoint2D 
+DGtal::AccFlower2D<T>::x(const double t ) const
+{
+  double tt =t;
+  while ( tt >= M_PI ) tt -= 2 * M_PI; 
+  while ( tt < -M_PI ) tt += 2 * M_PI;
+  
+  double ktn = myKp * tt * tt * tt;
+  double r = myRadius + myVarRadius * cos( ktn );
+  RealPoint2D c( r * cos( tt ), r * sin( tt ) );
+  c += myCenter;
+  return c;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x'(t),y'(t)) which is the tangent to the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::AccFlower2D<T>::RealVector2D 
+DGtal::AccFlower2D<T>::xp( const double tt ) const
+{
+  double t= tt;
+  while ( t >= M_PI ) t -= 2 * M_PI; 
+  while ( t < -M_PI ) t += 2 * M_PI;
+  
+  double ktn = myKp * t * t * t;
+  double ktnp = 3 * myKp * t * t ;
+
+  double r = myRadius + myVarRadius * cos( ktn );
+  double rp = - myVarRadius * sin( ktn ) * ktnp;
+  RealPoint2D c( rp * cos( t ) - r * sin( t ),
+     rp * sin( t ) + r * cos( t ) );
+  return c;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x''(t),y''(t)).
+ */
+template <typename T>
+inline
+typename DGtal::AccFlower2D<T>::RealVector2D
+DGtal::AccFlower2D<T>::xpp( const double tt ) const
+{
+  double t=tt;
+  while ( t >= M_PI ) t -= 2 * M_PI; 
+  while ( t < -M_PI ) t += 2 * M_PI;
+  
+  double ktn = myKp * t * t * t;
+  double ktnp = 3 * myKp * t * t;
+  double ktnpp = 6 * myKp * t;
+  
+  double r = myRadius + myVarRadius * cos( ktn );
+  double rp = - myVarRadius * sin( ktn ) * ktnp;
+  double rpp = - myVarRadius * cos( ktn ) * ktnp * ktnp - 
+    myVarRadius * sin( ktn ) * ktnpp;
+  
+  RealPoint2D c( rpp * cos( t ) - 2 * rp * sin( t ) - r * cos( t ),
+     rpp * sin( t ) + 2 * rp * cos( t ) - r * sin( t ) );
+  return c;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::AccFlower2D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[AccFlower2D] center= "<<myCenter<<" radius="<<myRadius<<" smallradius="<<myVarRadius
+      <<" myK="<<myK<<" phase-shift="<<myPhi;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::AccFlower2D<T>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const AccFlower2D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

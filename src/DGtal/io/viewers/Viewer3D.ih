@@ -1,0 +1,2120 @@
+/**
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESSpace FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Viewer3D.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/01/03
+ *
+ * Implementation of inline methods defined in Viewer3D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#ifdef _MSC_VER
+#define NOMINMAX
+#include <windows.h>
+#include <GL/gl.h>
+#include "DGtal/io/viewers/windows/GL/glext.h"
+#endif
+
+#include "DGtal/io/viewers/Viewer3D.h"
+
+#include <algorithm> 
+#include <limits>
+#include <QColor>
+#include <QTextEdit>
+#include <QMessageBox>
+#include <QTextStream>
+#include <QDir>
+
+#include <cstdlib>
+#include "DGtal/io/CDrawableWithDisplay3D.h"
+#include "DGtal/io/viewers/CDrawableWithViewer3D.h"
+#include "DGtal/io/viewers/Viewer3DFactory.h"
+#include "QGLViewer/manipulatedFrame.h"
+#include "QGLViewer/manipulatedCameraFrame.h"
+//////////////////////////////////////////////////////////////////////////////
+
+using namespace std;
+using namespace qglviewer;
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods //
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::rotateDomain(
+Image2DDomainD3D & anDom, double angleRotation, ImageDirection rotationDir )
+{
+  DGtal::PointVector<3, int> pt;
+  pt[0] = (int) (anDom.point1[0]+anDom.point2[0]+anDom.point3[0]+anDom.point4[0])/4.0;
+  pt[1] = (int) (anDom.point1[1]+anDom.point2[1]+anDom.point3[1]+anDom.point4[1])/4.0;
+  pt[2] = (int) (anDom.point1[2]+anDom.point2[2]+anDom.point3[2]+anDom.point4[2])/4.0;
+  rotateImageVertex(anDom, angleRotation, rotationDir);
+
+  std::vector<typename DGtal::Display3D<TSpace, TKSpace>::LineD3D> & aVectLine =
+  Viewer3D<TSpace, TKSpace>::myLineSetList.at( anDom.myLineSetIndex );
+  for(unsigned int i = 0; i< aVectLine.size();i++){
+    typename DGtal::Display3D<TSpace, TKSpace>::LineD3D & aLine =
+    aVectLine.at( i );
+    rotateLineD3D(aLine, pt, angleRotation, rotationDir );
+  }
+
+}
+
+template <typename TSpace, typename TKSpace>
+template <typename TValues>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::rotatePoint(
+TValues & x, TValues & y, TValues & z, double cx, double cy, double cz,
+double angleRotation, ImageDirection rotationDir )
+{
+  double dx = x-cx; double dy = y-cy; double dz = z-cz;
+  if(rotationDir  == zDirection){
+    x = cx+dx*cos(angleRotation)-dy*sin(angleRotation);
+    y = cy+dx*sin(angleRotation)+dy*cos(angleRotation);
+  }
+  if(rotationDir  == yDirection){
+    x = cx+dx*cos(angleRotation)-dz*sin(angleRotation);
+    z = cz+dx*sin(angleRotation)+dz*cos(angleRotation);
+  }
+  if(rotationDir  == xDirection){
+    y = cy+dy*cos(angleRotation)-dz*sin(angleRotation);
+    z = cz+dy*sin(angleRotation)+dz*cos(angleRotation);
+  }
+}
+
+template <typename TSpace, typename TKSpace>
+template <typename TContainer>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::rotateLineD3D(
+typename DGtal::Display3D<TSpace, TKSpace>::LineD3D & aLine,
+DGtal::PointVector<3, int, TContainer> pt, double angleRotation,
+ImageDirection dirRotation )
+{
+  double dx1 = aLine.point1[0] - pt[0]; double dy1 = aLine.point1[1] - pt[1]; double dz1 = aLine.point1[2] - pt[2];
+  double dx2 = aLine.point2[0] - pt[0]; double dy2 = aLine.point2[1] - pt[1]; double dz2 = aLine.point2[2] - pt[2];
+  if(dirRotation==zDirection){
+     aLine.point1[0]=pt[0]+dx1*std::cos(angleRotation)-dy1*std::sin(angleRotation);
+     aLine.point1[1]=pt[1]+dx1*std::sin(angleRotation)+dy1*std::cos(angleRotation);
+
+     aLine.point2[0]=pt[0]+dx2*std::cos(angleRotation)-dy2*std::sin(angleRotation);
+     aLine.point2[1]=pt[1]+dx2*std::sin(angleRotation)+dy2*std::cos(angleRotation);
+
+  }else if(dirRotation==xDirection){
+    aLine.point1[1]=pt[1]+dy1*std::cos(angleRotation)-dz1*std::sin(angleRotation);
+    aLine.point1[2]=pt[2]+dy1*std::sin(angleRotation)+dz1*std::cos(angleRotation);
+
+    aLine.point2[1]=pt[1]+dy2*std::cos(angleRotation)-dz2*std::sin(angleRotation);
+    aLine.point2[2]=pt[2]+dy2*std::sin(angleRotation)+dz2*std::cos(angleRotation);
+  }else  if(dirRotation==yDirection){
+    aLine.point1[0]=pt[0]+dx1*std::cos(angleRotation)-dz1*std::sin(angleRotation);
+    aLine.point1[2]=pt[2]+dx1*std::sin(angleRotation)+dz1*std::cos(angleRotation);
+
+    aLine.point2[0]=pt[0]+dx2*std::cos(angleRotation)-dz2*std::sin(angleRotation);
+    aLine.point2[2]=pt[2]+dx2*std::sin(angleRotation)+dz2*std::cos(angleRotation);
+  }else{
+    trace.error() << "No direction!!"<< std::endl;
+  }
+
+}
+
+template <typename TSpace, typename TKSpace>
+inline unsigned int DGtal::Viewer3D<TSpace, TKSpace>::getCurrentDomainNumber()
+{
+  return static_cast<unsigned int>(myImageDomainList.size());
+}
+
+template <typename TSpace, typename TKSpace>
+inline unsigned int DGtal::Viewer3D<TSpace, TKSpace>::getCurrentGLImageNumber()
+{
+  return static_cast<unsigned int>(myGSImageList.size());
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::addTextureImage(
+const typename Viewer3D<TSpace, TKSpace>::TextureImage & image )
+{
+  myGSImageList.push_back(image);
+  Display3D<TSpace, TKSpace>::updateBoundingBox( image.point1 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( image.point2 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( image.point3 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( image.point4 );
+}
+
+template <typename TSpace, typename TKSpace>
+template <typename TImageType, typename TFunctor>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::updateTextureImage(
+unsigned int imageIndex, const TImageType & image, const TFunctor & aFunctor,
+double xTranslation, double yTranslation, double zTranslation,
+double rotationAngle, ImageDirection rotationDir )
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CConstImage < TImageType > ));
+  assert ( imageIndex< myGSImageList.size());
+  typename Viewer3D<TSpace, TKSpace>::TextureImage & anImage =
+  myGSImageList.at( imageIndex );
+  Display::updateBoundingBox(RealPoint(anImage.point1[0]+xTranslation,
+                                                   anImage.point1[1]+yTranslation,
+                                                   anImage.point1[2]+zTranslation));
+  Display::updateBoundingBox(RealPoint(anImage.point2[0]+xTranslation,
+                                                   anImage.point2[1]+yTranslation,
+                                                   anImage.point2[2]+zTranslation));
+  Display::updateBoundingBox(RealPoint(anImage.point3[0]+xTranslation,
+                                                   anImage.point3[1]+yTranslation,
+                                                   anImage.point3[2]+zTranslation));
+  Display::updateBoundingBox(RealPoint(anImage.point4[0]+xTranslation,
+                                                   anImage.point4[1]+yTranslation,
+                                                   anImage.point4[2]+zTranslation));
+  anImage.updateImageDataAndParam(image, aFunctor, xTranslation, yTranslation, zTranslation);
+  if(anImage.myDrawDomain)
+    {
+      *this << DGtal::Translate2DDomain(anImage.myIndexDomain, xTranslation, yTranslation, zTranslation);
+    }
+
+  if(rotationAngle!=0.0){
+    rotateDomain(myImageDomainList.at(anImage.myIndexDomain), rotationAngle, rotationDir);
+    rotateImageVertex(anImage, rotationAngle, rotationDir);
+  }
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::updateOrientationTextureImage(
+unsigned int imageIndex, double xPosition, double yPosition, double zPosition,
+ImageDirection newDirection )
+{
+  assert ( imageIndex< myGSImageList.size());
+  typename Viewer3D<TSpace, TKSpace>::TextureImage & anImage =
+  myGSImageList.at( imageIndex );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImage.point1 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImage.point2 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImage.point3 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImage.point4 );
+  anImage.updateImageOrientation(newDirection, xPosition, yPosition, zPosition);
+  if(anImage.myDrawDomain)
+    {
+      *this << DGtal::Update2DDomainPosition<Space ,KSpace >(anImage.myIndexDomain,
+                                                             newDirection,
+                                                             xPosition,
+                                                             yPosition, zPosition);
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::updateEmbeddingTextureImage(
+unsigned int anImageIndex, typename Space::Point aPoint1,
+typename Space::Point aPoint2, typename Space::Point aPoint3,
+typename Space::Point aPoint4 )
+{
+  assert ( anImageIndex< myGSImageList.size());
+  typename Viewer3D<TSpace, TKSpace>::TextureImage & anImage =
+  myGSImageList.at( anImageIndex );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aPoint1 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aPoint2 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aPoint3 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aPoint4 );
+  anImage.updateImage3DEmbedding(aPoint1, aPoint2, aPoint3, aPoint4);
+}
+
+template <typename TSpace, typename TKSpace>
+inline void
+DGtal::Viewer3D<TSpace, TKSpace>::TextureImage::updateImageOrientation(
+ImageDirection normalDir, double xBottomLeft, double yBottomLeft,
+double zBottomLeft )
+{
+  if(normalDir==zDirection)
+    {
+      point1[0] = xBottomLeft-0.5; point1[1] = yBottomLeft-0.5; point1[2] = zBottomLeft;
+      point2[0] = xBottomLeft+myImageWidth-0.5; point2[1] = yBottomLeft-0.5; point2[2] = zBottomLeft;
+      point3[0] = xBottomLeft+myImageWidth-0.5; point3[1] = yBottomLeft+myImageHeight-0.5; point3[2] = zBottomLeft;
+      point4[0] = xBottomLeft-0.5; point4[1] = yBottomLeft+myImageHeight-0.5; point4[2] = zBottomLeft;
+    }else if(normalDir==yDirection)
+    {
+      point1[0] = xBottomLeft-0.5; point1[1] = yBottomLeft; point1[2] = zBottomLeft-0.5;
+      point2[0] = xBottomLeft+myImageWidth-0.5; point2[1] = yBottomLeft; point2[2] = zBottomLeft-0.5;
+      point3[0] = xBottomLeft+myImageWidth-0.5; point3[1] = yBottomLeft; point3[2] = zBottomLeft+myImageHeight-0.5;
+      point4[0] = xBottomLeft-0.5; point4[1] = yBottomLeft; point4[2] = zBottomLeft+myImageHeight-0.5;
+    }else if(normalDir==xDirection)
+    {
+      point1[0] = xBottomLeft; point1[1] = yBottomLeft-0.5; point1[2]= zBottomLeft-0.5;
+      point2[0] = xBottomLeft; point2[1] = yBottomLeft+myImageWidth-0.5; point2[2] = zBottomLeft-0.5;
+      point3[0] = xBottomLeft; point3[1] = yBottomLeft+myImageWidth-0.5; point3[2] = zBottomLeft+myImageHeight-0.5;
+      point4[0] = xBottomLeft; point4[1] = yBottomLeft-0.5; point4[2] = zBottomLeft+myImageHeight-0.5;
+    }
+  myDirection=normalDir;
+}
+
+template <typename TSpace, typename TKSpace>
+inline void
+DGtal::Viewer3D<TSpace, TKSpace>::Image2DDomainD3D::updateDomainOrientation(
+ImageDirection normalDir, double xBottomLeft, double yBottomLeft,
+double zBottomLeft )
+{
+  if(normalDir==zDirection)
+    {
+      point1[0] = xBottomLeft-0.5; point1[1] = yBottomLeft-0.5; point1[2] = zBottomLeft;
+      point2[0] = xBottomLeft+myDomainWidth-0.5; point2[1] = yBottomLeft-0.5; point2[2] = zBottomLeft;
+      point3[0] = xBottomLeft+myDomainWidth-0.5; point3[1] = yBottomLeft+myDomainHeight-0.5; point3[2] = zBottomLeft;
+      point4[0] = xBottomLeft-0.5; point4[1] = yBottomLeft+myDomainHeight-0.5; point4[2] = zBottomLeft;
+    }else if(normalDir==yDirection)
+    {
+      point1[0] = xBottomLeft-0.5; point1[1] = yBottomLeft; point1[2] = zBottomLeft-0.5;
+      point2[0] = xBottomLeft+myDomainWidth-0.5; point2[1] = yBottomLeft; point2[2] = zBottomLeft-0.5;
+      point3[0] = xBottomLeft+myDomainWidth-0.5; point3[1] = yBottomLeft; point3[2] = zBottomLeft+myDomainHeight-0.5;
+      point4[0] = xBottomLeft-0.5; point4[1] = yBottomLeft; point4[2] = zBottomLeft+myDomainHeight-0.5;
+    }else if(normalDir==xDirection)
+    {
+      point1[0] = xBottomLeft; point1[1] = yBottomLeft-0.5; point1[2]= zBottomLeft-0.5;
+      point2[0] = xBottomLeft; point2[1] = yBottomLeft+myDomainWidth-0.5; point2[2] = zBottomLeft-0.5;
+      point3[0] = xBottomLeft; point3[1] = yBottomLeft+myDomainWidth-0.5; point3[2] = zBottomLeft+myDomainHeight-0.5;
+      point4[0] = xBottomLeft; point4[1] = yBottomLeft-0.5; point4[2] = zBottomLeft+myDomainHeight-0.5;
+    }
+  myDirection=normalDir;
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::Image2DDomainD3D::translateDomain(
+double xTranslation, double yTranslation, double zTranslation )
+{
+  point1[0] += xTranslation; point1[1] += yTranslation; point1[2] += zTranslation;
+  point2[0] += xTranslation; point2[1] += yTranslation; point2[2] += zTranslation;
+  point3[0] += xTranslation; point3[1] += yTranslation; point3[2] += zTranslation;
+  point4[0] += xTranslation; point4[1] += yTranslation; point4[2] += zTranslation;
+}
+
+template <typename TSpace, typename TKSpace>
+template <typename TDomain>
+void DGtal::Viewer3D<TSpace, TKSpace>::addImage2DDomainD3D(
+const TDomain & aDomain, std::string mode, const DGtal::Color & aColor )
+{
+  typename DGtal::Viewer3D<TSpace, TKSpace>::Image2DDomainD3D anImageDomain(
+  aDomain );
+  anImageDomain.color = aColor;
+  anImageDomain.myMode = mode;
+  anImageDomain.myLineSetIndex =
+  Viewer3D<TSpace, TKSpace>::myLineSetList.size();
+
+  myImageDomainList.push_back(anImageDomain);
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImageDomain.point1 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImageDomain.point2 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImageDomain.point3 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anImageDomain.point4 );
+
+  std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D> vectLines =
+  compute2DDomainLineRepresentation( anImageDomain );
+  Viewer3D<TSpace, TKSpace>::myLineSetList.push_back( vectLines );
+}
+
+template <typename TSpace, typename TKSpace>
+inline std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D>
+DGtal::Viewer3D<TSpace, TKSpace>::compute2DDomainLineRepresentation(
+typename DGtal::Viewer3D<TSpace, TKSpace>::Image2DDomainD3D & anImageDomain )
+{
+  std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D>
+  vectLinesResu = compute2DDomainLineRepresentation( anImageDomain, 0.05 );
+  std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D>
+  vectLinesVerso = compute2DDomainLineRepresentation( anImageDomain, -0.05 );
+  for(unsigned int i=0; i<vectLinesVerso.size(); i++)
+    {
+      vectLinesResu.push_back(vectLinesVerso.at(i));
+    }
+  return vectLinesResu;
+}
+
+template <typename TSpace, typename TKSpace>
+inline std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D>
+DGtal::Viewer3D<TSpace, TKSpace>::compute2DDomainLineRepresentation(
+typename DGtal::Viewer3D<TSpace, TKSpace>::Image2DDomainD3D & anImageDomain,
+double delta )
+{
+  std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D> aLineSet;
+  typename Viewer3D<TSpace, TKSpace>::LineD3D aLine;
+  aLine.color = anImageDomain.color;
+  aLine.width=0.1;
+
+  if( anImageDomain.myMode=="BoundingBox")
+    {
+      aLine.point1[0]=anImageDomain.point1[0]; aLine.point1[1]=anImageDomain.point1[1]; aLine.point1[2]=anImageDomain.point1[2];
+      aLine.point2[0]=anImageDomain.point2[0]; aLine.point2[1]=anImageDomain.point2[1]; aLine.point2[2]=anImageDomain.point2[2];
+      aLineSet.push_back(aLine);
+      aLine.point1[0]=anImageDomain.point2[0]; aLine.point1[1]=anImageDomain.point2[1]; aLine.point1[2]=anImageDomain.point2[2];
+      aLine.point2[0]=anImageDomain.point3[0]; aLine.point2[1]=anImageDomain.point3[1]; aLine.point2[2]=anImageDomain.point3[2];
+      aLineSet.push_back(aLine);
+      aLine.point1[0]=anImageDomain.point3[0]; aLine.point1[1]=anImageDomain.point3[1]; aLine.point1[2]=anImageDomain.point3[2];
+      aLine.point2[0]=anImageDomain.point4[0]; aLine.point2[1]=anImageDomain.point4[1]; aLine.point2[2]=anImageDomain.point4[2];
+      aLineSet.push_back(aLine);
+      aLine.point1[0]=anImageDomain.point4[0]; aLine.point1[1]=anImageDomain.point4[1]; aLine.point1[2]=anImageDomain.point4[2];
+      aLine.point2[0]=anImageDomain.point1[0]; aLine.point2[1]=anImageDomain.point1[1]; aLine.point2[2]=anImageDomain.point1[2];
+      aLineSet.push_back(aLine);
+    }else if(anImageDomain.myMode=="InterGrid")
+    {
+      if(anImageDomain.myDirection==zDirection)
+        {
+          //lines align to the x direction
+          for(unsigned int i=0; i <= anImageDomain.myDomainHeight; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]; aLine.point1[1] = anImageDomain.point1[1]+i; aLine.point1[2] = anImageDomain.point1[2]+delta;
+              aLine.point2[0] = anImageDomain.point2[0]; aLine.point2[1] = anImageDomain.point2[1]+i; aLine.point2[2] = anImageDomain.point2[2]+delta;
+              aLineSet.push_back(aLine);
+            }
+          //lines align to the y direction
+          for(unsigned int i=0; i <= anImageDomain.myDomainWidth; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+i; aLine.point1[1] = anImageDomain.point1[1]; aLine.point1[2] = anImageDomain.point1[2]+delta;
+              aLine.point2[0] = anImageDomain.point4[0]+i; aLine.point2[1] = anImageDomain.point4[1]; aLine.point2[2] = anImageDomain.point4[2]+delta;
+              aLineSet.push_back(aLine);
+            }
+        }else if(anImageDomain.myDirection==xDirection)
+        {
+          //lines align to the y direction
+          for(unsigned int i=0; i <= anImageDomain.myDomainHeight; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+delta; aLine.point1[1] = anImageDomain.point1[1]; aLine.point1[2] = anImageDomain.point1[2]+i;
+              aLine.point2[0] = anImageDomain.point1[0]+delta; aLine.point2[1] = anImageDomain.point2[1]; aLine.point2[2] = anImageDomain.point1[2]+i;
+              aLineSet.push_back(aLine);
+            }
+
+          //lines align to the z direction
+          for(unsigned int i=0; i <= anImageDomain.myDomainWidth; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+delta; aLine.point1[1] = anImageDomain.point1[1]+i; aLine.point1[2] = anImageDomain.point1[2];
+              aLine.point2[0] = anImageDomain.point1[0]+delta; aLine.point2[1] = anImageDomain.point1[1]+i; aLine.point2[2] = anImageDomain.point4[2];
+              aLineSet.push_back(aLine);
+            }
+        }else if(anImageDomain.myDirection==yDirection)
+        {
+          //lines align to the x direction
+          for(unsigned int i=0; i <= anImageDomain.myDomainHeight; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]; aLine.point1[1] = anImageDomain.point1[1]+delta; aLine.point1[2] = anImageDomain.point1[2]+i;
+              aLine.point2[0] = anImageDomain.point2[0]; aLine.point2[1] = anImageDomain.point1[1]+delta; aLine.point2[2] = anImageDomain.point1[2]+i;
+              aLineSet.push_back(aLine);
+            }
+
+          //lines align to the z direction
+          for(unsigned int i=0; i <= anImageDomain.myDomainWidth; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+i; aLine.point1[1] = anImageDomain.point1[1]+delta; aLine.point1[2] = anImageDomain.point1[2];
+              aLine.point2[0] = anImageDomain.point1[0]+i; aLine.point2[1] = anImageDomain.point1[1]+delta; aLine.point2[2] = anImageDomain.point4[2];
+              aLineSet.push_back(aLine);
+            }
+        }
+    }else if(anImageDomain.myMode=="Grid")
+    {
+      if(anImageDomain.myDirection==zDirection)
+        {
+          //lines align to the x direction
+          for(unsigned int i=0; i < anImageDomain.myDomainHeight; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]; aLine.point1[1] = anImageDomain.point1[1]+i+0.5; aLine.point1[2] = anImageDomain.point1[2]+delta;
+              aLine.point2[0] = anImageDomain.point2[0]; aLine.point2[1] = anImageDomain.point2[1]+i+0.5; aLine.point2[2] = anImageDomain.point2[2]+delta;
+              aLineSet.push_back(aLine);
+            }
+          //lines align to the y direction
+          for(unsigned int i=0; i < anImageDomain.myDomainWidth; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+i+0.5; aLine.point1[1] = anImageDomain.point1[1]; aLine.point1[2] = anImageDomain.point1[2]+delta;
+              aLine.point2[0] = anImageDomain.point4[0]+i+0.5; aLine.point2[1] = anImageDomain.point4[1]; aLine.point2[2] = anImageDomain.point4[2]+delta;
+              aLineSet.push_back(aLine);
+            }
+        }else if(anImageDomain.myDirection==xDirection)
+        {
+          //lines align to the y direction
+          for(unsigned int i=0; i < anImageDomain.myDomainHeight; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+delta; aLine.point1[1] = anImageDomain.point1[1]; aLine.point1[2] = anImageDomain.point1[2]+i+0.5;
+              aLine.point2[0] = anImageDomain.point1[0]+delta; aLine.point2[1] = anImageDomain.point2[1]; aLine.point2[2] = anImageDomain.point1[2]+i+0.5;
+              aLineSet.push_back(aLine);
+            }
+
+          //lines align to the z direction
+          for(unsigned int i=0; i < anImageDomain.myDomainWidth; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+delta; aLine.point1[1] = anImageDomain.point1[1]+i+0.5; aLine.point1[2] = anImageDomain.point1[2];
+              aLine.point2[0] = anImageDomain.point1[0]+delta; aLine.point2[1] = anImageDomain.point1[1]+i+0.5; aLine.point2[2] = anImageDomain.point4[2];
+              aLineSet.push_back(aLine);
+            }
+        }else if(anImageDomain.myDirection==yDirection)
+        {
+          //lines align to the x direction
+          for(unsigned int i=0; i < anImageDomain.myDomainHeight; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]; aLine.point1[1] = anImageDomain.point1[1]+delta; aLine.point1[2] = anImageDomain.point1[2]+i+0.5;
+              aLine.point2[0] = anImageDomain.point2[0]; aLine.point2[1] = anImageDomain.point1[1]+delta; aLine.point2[2] = anImageDomain.point1[2]+i+0.5;
+              aLineSet.push_back(aLine);
+            }
+
+          //lines align to the z direction
+          for(unsigned int i=0; i < anImageDomain.myDomainWidth; i++)
+            {
+              aLine.point1[0] = anImageDomain.point1[0]+i+0.5; aLine.point1[1] = anImageDomain.point1[1]+delta; aLine.point1[2] = anImageDomain.point1[2];
+              aLine.point2[0] = anImageDomain.point1[0]+i+0.5; aLine.point2[1] = anImageDomain.point1[1]+delta; aLine.point2[2] = anImageDomain.point4[2];
+              aLineSet.push_back(aLine);
+            }
+        }
+    }
+  return aLineSet;
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::updateAn2DDomainOrientation(
+unsigned int domainIndex, double xPosition, double yPosition, double zPosition,
+ImageDirection newDirection )
+{
+  ASSERT( domainIndex < myImageDomainList.size());
+  typename Viewer3D<TSpace, TKSpace>::Image2DDomainD3D & aDomain =
+  myImageDomainList.at( domainIndex );
+
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aDomain.point1 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aDomain.point2 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aDomain.point3 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( aDomain.point4 );
+  aDomain.updateDomainOrientation(newDirection, xPosition, yPosition, zPosition);
+
+  std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D> vectNewLines =
+  compute2DDomainLineRepresentation( aDomain );
+  std::vector<typename DGtal::Viewer3D<TSpace, TKSpace>::LineD3D> & vectLines =
+  Viewer3D<TSpace, TKSpace>::myLineSetList.at( aDomain.myLineSetIndex );
+  vectLines.clear();
+  for(unsigned int i=0; i<vectNewLines.size(); i++)
+    {
+      vectLines.push_back(vectNewLines.at(i));
+    }
+
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::translateAn2DDomain(
+unsigned int domainIndex, double xTranslation, double yTranslation,
+double zTranslation )
+{
+  typename Viewer3D<TSpace, TKSpace>::Image2DDomainD3D & anDomain =
+  myImageDomainList.at( domainIndex );
+  anDomain.translateDomain(xTranslation, yTranslation, zTranslation);
+
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anDomain.point1 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anDomain.point2 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anDomain.point3 );
+  Display3D<TSpace, TKSpace>::updateBoundingBox( anDomain.point4 );
+
+  std::vector<typename DGtal::Display3D<TSpace, TKSpace>::LineD3D> & vectLines =
+  Viewer3D<TSpace, TKSpace>::myLineSetList.at( anDomain.myLineSetIndex );
+  for(unsigned int i=0; i<vectLines.size(); i++){
+    typename DGtal::Display3D<TSpace, TKSpace>::LineD3D & aLine =
+    vectLines.at( i );
+    aLine.point1[0]=aLine.point1[0]+xTranslation; aLine.point1[1]=aLine.point1[1]+yTranslation; aLine.point1[2]=aLine.point1[2]+zTranslation;
+    aLine.point2[0]=aLine.point2[0]+xTranslation; aLine.point2[1]=aLine.point2[1]+yTranslation; aLine.point2[2]=aLine.point2[2]+zTranslation;
+  }
+}
+
+template <typename TSpace, typename TKSpace>
+inline std::string
+DGtal::Viewer3D<TSpace, TKSpace>::TextureImage::className() const
+{
+  return "TextureImage";
+}
+
+template <typename TSpace, typename TKSpace>
+inline DGtal::Viewer3D<TSpace, TKSpace> & DGtal::Viewer3D<TSpace, TKSpace>::
+operator<<( const DGtal::Color & aColor )
+{
+  myDefaultColor=aColor;
+  return *this;
+}
+
+template <typename TSpace, typename TKSpace>
+inline DGtal::Viewer3D<TSpace, TKSpace> & DGtal::Viewer3D<TSpace, TKSpace>::
+operator<<( const typename Viewer3D<TSpace, TKSpace>::StreamKey & key )
+{
+  switch (key)
+    {
+    case Viewer3D<TSpace, TKSpace>::updateDisplay:
+      Viewer3D<TSpace, TKSpace>::updateList();
+      break;
+
+    case Viewer3D<TSpace, TKSpace>::addNewList:
+      Viewer3D<TSpace, TKSpace>::createNewCubeList();
+      break;
+
+    case Viewer3D<TSpace, TKSpace>::shiftSurfelVisu:
+      Viewer3D<TSpace, TKSpace>::myCurrentfShiftVisuPrisms += 0.3;
+      break;
+    }
+  return *this;
+}
+
+template <typename TSpace, typename TKSpace>
+template <typename TDrawableWithViewer3D>
+inline DGtal::Viewer3D<TSpace, TKSpace> & DGtal::Viewer3D<TSpace, TKSpace>::
+operator<<( const TDrawableWithViewer3D & object )
+{
+  BOOST_CONCEPT_ASSERT((concepts::CDrawableWithViewer3D< TDrawableWithViewer3D, Space, KSpace >));
+
+  DGtal::Viewer3DFactory<TSpace, TKSpace>::draw( *this, object );
+  return *this;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators //
+
+template <typename TSpace, typename TKSpace>
+inline std::ostream & DGtal::
+operator<<( std::ostream & out, const Viewer3D<TSpace, TKSpace> & object )
+{
+  object.selfDisplay ( out );
+  return out;
+}
+
+// //
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+// heritage of parents templates methods //
+
+
+// end of heritage //
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+// surcharge of parents methods //
+
+
+// end of surcharge //
+///////////////////////////////////////////////////////////////////////////////
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::drawWithNames()
+{
+  // JOL: 2014/10/15. This method is called only when the user tries
+  // to select some graphic object through QGLViewer. By default,
+  // selection is left clic + shift key.
+  // JOL: 2014/10/15. This is my addition for interacting with
+  // quads. Seems to work well.
+  if ( myExtension != 0 )
+    myExtension->drawWithNames( *this );
+
+  glCallList ( myQuadsMapId );
+
+  glCallList ( myCubesMapId );
+
+  for ( unsigned int i = 0; i < Viewer3D<TSpace, TKSpace>::myLineSetList.size();
+        i++ )
+  {
+    glCallList( myLineSetListId + i );
+    }
+
+    for ( unsigned int i = 0;
+          i < Viewer3D<TSpace, TKSpace>::myBallSetList.size(); i++ )
+    {
+      glCallList(myBallSetListId+i);
+    }
+
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::draw()
+{
+
+  glUpdateBackground();
+  
+  if ( myExtension != 0 )
+    myExtension->draw( *this );
+
+  glPushMatrix();
+  glMultMatrixd ( manipulatedFrame()->matrix() );
+  glPushMatrix();
+  glScalef(myGLScaleFactorX, myGLScaleFactorY, myGLScaleFactorZ);
+
+  glLightfv(GL_LIGHT0, GL_SPECULAR, myLightSpecularCoeffs);
+  glLightfv(GL_LIGHT0, GL_DIFFUSE, myLightDiffuseCoeffs);
+  glLightfv(GL_LIGHT0, GL_AMBIENT, myLightAmbientCoeffs);
+  if( myLightPositionFixToCamera ){
+        updateLightCoordsFromCamera();  
+  }else{
+    updateRelativeCameraFromLightPosition();
+  }
+  glLightfv(GL_LIGHT0, GL_POSITION, myLightPosition);  
+  
+  unsigned int i = 0;
+  typename vector<
+  typename Viewer3D<TSpace, TKSpace>::ClippingPlaneD3D>::const_iterator it =
+  Viewer3D<TSpace, TKSpace>::myClippingPlaneList.begin();
+
+  // OpenGL can't draw more than GL_MAX_CLIP_PLANES clipping plane
+  while ( i < GL_MAX_CLIP_PLANES &&
+          it != Viewer3D<TSpace, TKSpace>::myClippingPlaneList.end() )
+  {
+    double eq[ 4 ];
+    eq[ 0 ] = it->a;
+    eq[ 1 ] = it->b;
+    eq[ 2 ] = it->c;
+    eq[ 3 ] = it->d;
+    glEnable( GL_CLIP_PLANE0 + i );
+    glClipPlane( GL_CLIP_PLANE0 + i, eq );
+    i++;
+    it++;
+    }
+  if (i == GL_MAX_CLIP_PLANES)
+    {
+      std::cerr <<"Warning maximal clipping plane added" << std::endl;
+    }
+
+  Vec centerS = sceneCenter();
+  Vec posCam = camera()->position();
+  double distCam =sqrt ( ( posCam.x-centerS.x ) * ( posCam.x-centerS.x ) +
+                         ( posCam.y-centerS.y ) * ( posCam.y-centerS.y ) +
+                         ( posCam.z-centerS.z ) * ( posCam.z-centerS.z ) );
+  for(unsigned int j=0; j< myVectTextureImage.size(); j++)
+    {
+      GLTextureImage &textureImg = myVectTextureImage.at(j);
+      glPushName ( textureImg.myTextureName );
+      glEnable(GL_TEXTURE_2D);
+      glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+      glBindTexture(GL_TEXTURE_2D, textureImg.myTextureName);
+      glBegin(GL_QUADS);
+      glColor4ub ( 255.0, 255.0, 255.0, 255.0 );
+      glNormal3d(textureImg.vectNormal[0], textureImg.vectNormal[1], textureImg.vectNormal[2]);
+
+      glTexCoord2f(0, 0);
+      glVertex3f(textureImg.point1[0], textureImg.point1[1], textureImg.point1[2]);
+      glTexCoord2f(textureImg.myTextureFitX, 0.0);
+      glVertex3f(textureImg.point2[0], textureImg.point2[1], textureImg.point2[2]);
+      glTexCoord2f(textureImg.myTextureFitX, textureImg.myTextureFitY);
+      glVertex3f(textureImg.point3[0], textureImg.point3[1], textureImg.point3[2]);
+      glTexCoord2f(0.0, textureImg.myTextureFitY);
+      glVertex3f(textureImg.point4[0], textureImg.point4[1], textureImg.point4[2]);
+      glEnd();
+      glDisable(GL_TEXTURE_2D);
+
+    }
+
+    for ( unsigned int j = 0;
+          j < Viewer3D<TSpace, TKSpace>::myLineSetList.size(); j++ )
+    {
+      if ( Viewer3D<TSpace, TKSpace>::myLineSetList.at( j ).size() != 0 )
+      {
+        glLineWidth(
+        max( myGLLineMinWidth,
+             Viewer3D<TSpace, TKSpace>::myLineSetList.at( j ).at( 0 ).width ) );
+        }
+      glCallList(myLineSetListId+j);
+    }
+
+  glCallList(myPrismListId);
+  
+  glCallList( myCubesMapId );
+
+  for ( unsigned int j = 0; j < Viewer3D<TSpace, TKSpace>::myBallSetList.size();
+        j++ )
+  {
+    if ( myUseGLPointsForBalls )
+    {
+      if ( Viewer3D<TSpace, TKSpace>::myBallSetList.at( j ).size() != 0 )
+      {
+        glPointSize( max(
+        myGLPointMinWidth,
+        ( Viewer3D<TSpace, TKSpace>::myBallSetList.at( j ).at( 0 ).radius ) ) );
+      }
+    }
+    else
+      glLightModeli( GL_LIGHT_MODEL_TWO_SIDE, GL_FALSE );
+
+    glCallList( myBallSetListId + j );
+    glUpdateLightRenderingMode();
+    }
+  
+  glDisable(GL_CULL_FACE);
+  glCallList(myQuadsMapId);
+  if(myViewWire)
+    {
+      glLineWidth(
+      max( myGLLineMinWidth,
+           Viewer3D<TSpace, TKSpace>::myMeshDefaultLineWidth / distCam ) );
+      glCallList(myQuadsMapWiredId);
+    }
+
+  glDisable(GL_CULL_FACE);
+  glCallList(myTriangleSetListId);
+  if(myViewWire)
+    {
+      glLineWidth(
+      max( myGLLineMinWidth,
+           Viewer3D<TSpace, TKSpace>::myMeshDefaultLineWidth / distCam ) );
+      glCallList(myTriangleSetListWiredId);
+    }
+
+  glDisable(GL_CULL_FACE);
+  glCallList(myPolygonSetListId);
+  if(myViewWire)
+    {
+      glLineWidth(
+      max( myGLLineMinWidth,
+           Viewer3D<TSpace, TKSpace>::myMeshDefaultLineWidth / distCam ) );
+      glCallList(myPolygonSetListWiredId);
+    }
+
+  if(myIsMovingLight){
+    drawLight(GL_LIGHT0);
+  }
+  
+   glPopMatrix();
+   glPopMatrix();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::selfDisplay( std::ostream & out ) const
+{
+  out << "[Viewer3D]";
+}
+
+template <typename TSpace, typename TKSpace>
+bool DGtal::Viewer3D<TSpace, TKSpace>::isValid() const
+{
+  return true;
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::init()
+{
+  if ( myExtension != 0 )
+    myExtension->init( *this );
+  myAutoSaveState = false;
+  myIsMovingLight = false;
+  myLigthRotationStep = 0.01;
+  myRefMouseXPos = 0;
+  myRefMouseYPos = 0;
+  
+  myLightPositionRefCamera[0] = myLightPositionRefCameraDefault[0];
+  myLightPositionRefCamera[1] = myLightPositionRefCameraDefault[1];
+  myLightPositionRefCamera[2] = myLightPositionRefCameraDefault[2];
+  updateLightCoordsFromCamera();
+
+  glClearColor (0.0, 0.0, 0.0, 0.0);
+  glShadeModel (GL_SMOOTH);  
+
+  glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, myMaterialShininessCoeff);
+  glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, myMaterialSpecularCoeffs);
+
+  
+  glLightfv(GL_LIGHT0, GL_SPECULAR, myLightSpecularCoeffs);
+  glLightfv(GL_LIGHT0, GL_DIFFUSE, myLightDiffuseCoeffs);
+  glLightfv(GL_LIGHT0, GL_AMBIENT, myLightAmbientCoeffs);
+  
+  glLightfv(GL_LIGHT0, GL_POSITION, myLightPosition);
+  
+  glEnable(GL_LIGHTING);
+  glEnable(GL_LIGHT0);
+  glEnable(GL_DEPTH_TEST);
+
+  Viewer3D<TSpace, TKSpace>::myMeshDefaultLineWidth = 10.0;
+  myNbListe=0;
+  myViewWire=false;
+  setBackgroundColor ( QColor ( 217, 228, 255, 255 ) );
+  setForegroundColor ( QColor ( 217, 22, 25, 255  ) );
+
+  Viewer3D<TSpace, TKSpace>::createNewCubeList();
+  vector<typename Viewer3D<TSpace, TKSpace>::LineD3D> listeLine;
+  Viewer3D<TSpace, TKSpace>::myLineSetList.push_back( listeLine );
+  vector<typename Viewer3D<TSpace, TKSpace>::BallD3D> listeBall;
+  Viewer3D<TSpace, TKSpace>::myBallSetList.push_back( listeBall );
+  Viewer3D<TSpace, TKSpace>::myCurrentFillColor = Color( 220, 220, 220 );
+  Viewer3D<TSpace, TKSpace>::myCurrentLineColor = Color( 22, 22, 222, 50 );
+  myDefaultBackgroundColor = Color ( backgroundColor().red(), backgroundColor().green(),
+                                     backgroundColor().blue() );
+  myIsBackgroundDefault=true;
+  Viewer3D<TSpace, TKSpace>::myBoundingPtLow[ 0 ] =
+  -10.0; // numeric_limits<double>::max( );
+  Viewer3D<TSpace, TKSpace>::myBoundingPtLow[ 1 ] =
+  -10.0; // numeric_limits<double>::max( );
+  Viewer3D<TSpace, TKSpace>::myBoundingPtLow[ 2 ] =
+  -10.0; // numeric_limits<double>::max( );
+
+  Viewer3D<TSpace, TKSpace>::myBoundingPtUp[ 0 ] =
+  -10.0; // numeric_limits<double>::min( );
+  Viewer3D<TSpace, TKSpace>::myBoundingPtUp[ 1 ] =
+  -10.0; // numeric_limits<double>::min( );
+  Viewer3D<TSpace, TKSpace>::myBoundingPtUp[ 2 ] =
+  -10.0; // numeric_limits<double>::min( );
+  Viewer3D<TSpace, TKSpace>::createNewCubeList();
+  typename std::vector<typename Viewer3D<TSpace, TKSpace>::CubeD3D> aKSCubeList;
+
+  Viewer3D<TSpace, TKSpace>::myCurrentfShiftVisuPrisms = 0.0;
+  Viewer3D<TSpace, TKSpace>::myDefaultColor            = Color( 255, 255, 255 );
+  camera()->showEntireScene();
+  setKeyDescription ( Qt::Key_E, "Export the current display into OFF file (just Cube, surfel and SurfelPrism for now)." );
+  setKeyDescription ( Qt::Key_W, "Switch display with and without wired view of triangle and quad faces." );
+  setKeyDescription ( Qt::Key_T, "Sort elements for display improvements." );
+  setKeyDescription ( Qt::Key_L, "Load last visualisation settings (from a .qglviewer.xml file generated by using SHIFT+L)");
+  setKeyDescription ( Qt::ShiftModifier+Qt::Key_L, "Save visualisation settings." );
+  setKeyDescription ( Qt::Key_B, "Switch background color with White/Black colors." );
+  setKeyDescription ( Qt::Key_C, "Show camera informations." );
+  setKeyDescription ( Qt::Key_R, "Reset default scale for 3 axes to 1.0f." );
+  setKeyDescription ( Qt::Key_D, "Enable/Disable the two side face rendering." );
+  setKeyDescription ( Qt::Key_O, "Switch the ball display mode (quad ball display (default) or OpenGL point)." );
+  setKeyDescription ( Qt::Key_M, "Switch the rendering mode bewteen Default, Metallic and Plastic mode." );
+  setKeyDescription ( Qt::Key_P, "Switch the light source position mode between the camera mode (default: the light source position is fixed according to the camera position) and scene mode (the light source position is fixed according the scene coordinate system)." );
+  setKeyDescription( Qt::Key_Z,
+                     "Move away the light source according to the scence "
+                     "center (move closer with  SHIFT+Z)" );
+  setKeyDescription( Qt::ShiftModifier + Qt::Key_Z,
+                     "Move closer the light source according to the scence "
+                     "center (move awya with key  Z)" );
+
+#if !defined (QGLVIEWER_VERSION) || QGLVIEWER_VERSION < 0x020500
+  setMouseBindingDescription((Qt::ControlModifier|Qt::ShiftModifier) + Qt::LeftButton, "move light source position defined in the main coordinate system (an x-axis (resp. y-axis) mouse move changes the azimuth (resp. inclination) angle of the light source). Note that light source is always looking at the center point (0,0,0).");
+#else
+  setMouseBindingDescription(Qt::ControlModifier|Qt::ShiftModifier, Qt::LeftButton, "move light source position defined in the main coordinate system (an x-axis (resp. y-axis) mouse move changes the azimuth (resp. inclination) angle of the light source). Note that light source is always looking at the center point (0,0,0).");
+#endif
+
+
+  glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
+
+#if !defined (QGLVIEWER_VERSION) || QGLVIEWER_VERSION < 0x020500
+  setMouseBindingDescription ( Qt::ShiftModifier+Qt::RightButton, "Delete the mouse selected list." );
+#else
+  setMouseBindingDescription ( Qt::ShiftModifier, Qt::RightButton, "Delete the mouse selected list." );
+#endif
+
+  setManipulatedFrame ( new ManipulatedFrame() );
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::sortSurfelFromCamera()
+{
+  CompFarthestVoxelFromCamera comp;
+  comp.posCam= camera()->position();
+
+  for ( auto & mapElem : Viewer3D<TSpace, TKSpace>::myCubesMap )
+
+  {
+    DGtal::trace.info() << "sort quad size" << mapElem.second.size()
+                        << std::endl;
+    sort( mapElem.second.begin(), mapElem.second.end(), comp );
+    }
+  CompFarthestSurfelFromCamera compSurf;
+  DGtal::trace.info() << "sort surfel size"
+                      << Viewer3D<TSpace, TKSpace>::myPrismList.size()
+                      << std::endl;
+  sort( Viewer3D<TSpace, TKSpace>::myPrismList.begin(),
+        Viewer3D<TSpace, TKSpace>::myPrismList.end(), compSurf );
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::sortTriangleFromCamera()
+{
+  CompFarthestTriangleFromCamera comp;
+  comp.posCam= camera()->position();
+  for ( auto & listElem : Viewer3D<TSpace, TKSpace>::myTriangleSetList )
+  {
+    sort( listElem.begin(), listElem.end(), comp );
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::sortQuadFromCamera()
+{
+  CompFarthestSurfelFromCamera comp;
+  comp.posCam= camera()->position();
+
+  for ( auto & listElem : Viewer3D<TSpace, TKSpace>::myQuadsMap )
+  {
+    DGtal::trace.info() << "sort quad size" << listElem.second.size()
+                        << std::endl;
+    sort( listElem.second.begin(), listElem.second.end(), comp );
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::sortPolygonFromCamera()
+{
+  CompFarthestPolygonFromCamera comp;
+  comp.posCam= camera()->position();
+
+  for ( auto & listElem : Viewer3D<TSpace, TKSpace>::myPolygonSetList )
+  {
+    DGtal::trace.info() << "sort polygon size" << listElem.size() << std::endl;
+    sort( listElem.begin(), listElem.end(), comp );
+    }
+
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::postSelection( const QPoint & point )
+{
+  bool handled = false;
+  if ( myExtension != 0 )
+    handled = myExtension->postSelection( *this, point );
+  if ( handled )
+    return;
+
+  camera()->convertClickToLine ( point, myOrig, myDir );
+  bool found;
+  this->myPosSelector= point;
+  mySelectedPoint = camera()->pointUnderPixel ( point, found );
+  if ( found )
+    {
+      DGtal::trace.info() << "Element of liste= " << selectedName() << "selected" << endl;
+      // JOL: 2014/10/15
+      mySelectedElementId = selectedName();
+      void* aData = 0;
+      SelectCallbackFct fct = getSelectCallback3D( selectedName(), aData );
+      if ( fct ) fct( this, selectedName(), aData );
+      // I leave the remaining code.      
+      updateList(false);
+    }else if (mySelectedElementId != -1)
+    {
+      mySelectedElementId = -1;
+      updateList(false);
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::updateList(
+bool needToUpdateBoundingBox )
+{
+
+  // glDeleteLists
+  glDeleteLists(myCubesMapId, 1);
+  glDeleteLists(myLineSetListId, myNbLineSetList);
+  glDeleteLists(myBallSetListId, myNbBallSetList);
+  glDeleteLists(myTriangleSetListId, 1);
+  glDeleteLists(myTriangleSetListWiredId, 1);
+  glDeleteLists(myPrismListId, 1);
+  glDeleteLists(myPolygonSetListId, 1);
+  glDeleteLists(myPolygonSetListWiredId, 1);
+  glDeleteLists(myQuadsMapId, 1);
+  glDeleteLists(myQuadsMapWiredId, 1);
+
+  // Storing ID for each list
+  myCubesMapId = glGenLists(1);
+  myLineSetListId =
+  glGenLists( static_cast<GLsizei>(Viewer3D<TSpace, TKSpace>::myLineSetList.size() ));
+  myNbLineSetList = static_cast<unsigned int>(Viewer3D<TSpace, TKSpace>::myLineSetList.size());
+  myBallSetListId =
+  glGenLists( static_cast<GLsizei>(Viewer3D<TSpace, TKSpace>::myBallSetList.size() ) );
+  myNbBallSetList          = static_cast<unsigned int>(Viewer3D<TSpace, TKSpace>::myBallSetList.size());
+  myTriangleSetListId = glGenLists(1);
+  myTriangleSetListWiredId = glGenLists(1);
+  myCubeSetListWiredId = glGenLists(1);
+  myPolygonSetListId = glGenLists(1);
+  myPolygonSetListWiredId = glGenLists(1);
+  myQuadsMapId = glGenLists(1);
+  myQuadsMapWiredId = glGenLists(1);
+  myPrismListId = glGenLists(1);
+
+
+  myNbListe=0;
+
+  glEnable ( GL_BLEND );
+  glEnable ( GL_MULTISAMPLE_ARB );
+  glEnable ( GL_SAMPLE_ALPHA_TO_COVERAGE_ARB );
+  glBlendFunc ( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
+
+  glCreateListCubesMaps( Viewer3D<TSpace, TKSpace>::myCubesMap, myCubesMapId );
+
+  glCreateListQuadD3D( Viewer3D<TSpace, TKSpace>::myPrismList, myPrismListId );
+  myNbListe++;
+
+  for ( unsigned int j = 0; j < Viewer3D<TSpace, TKSpace>::myLineSetList.size();
+        j++ )
+  {
+    glCreateListLines( Viewer3D<TSpace, TKSpace>::myLineSetList.at( j ),
+                       myLineSetListId + j );
+    myNbListe++;
+    }
+
+    for ( unsigned int j = 0;
+          j < Viewer3D<TSpace, TKSpace>::myBallSetList.size(); j++ )
+    {
+      glCreateListBalls( Viewer3D<TSpace, TKSpace>::myBallSetList.at( j ),
+                         myBallSetListId + j );
+      myNbListe++;
+    }
+
+
+  // First list: quad faces.
+    glCreateListQuadMaps( Viewer3D<TSpace, TKSpace>::myQuadsMap, myQuadsMapId );
+    myNbListe++;
+
+    // Second list: Wired version of quad face.
+    glCreateListQuadMapsWired( Viewer3D<TSpace, TKSpace>::myQuadsMap,
+                               myQuadsMapWiredId );
+    myNbListe++;
+
+    // Third list: Triangle faces.
+    glCreateListTriangles( Viewer3D<TSpace, TKSpace>::myTriangleSetList,
+                           myTriangleSetListId );
+    myNbListe++;
+
+    // Fourth list: Wired version of triangle face.
+    glCreateListTrianglesWired( Viewer3D<TSpace, TKSpace>::myTriangleSetList,
+                                myTriangleSetListWiredId );
+    myNbListe++;
+
+    // Fifth list: Polygonal faces.
+    glCreateListPolygons( Viewer3D<TSpace, TKSpace>::myPolygonSetList,
+                          myPolygonSetListId );
+    myNbListe++;
+
+    // Sixth list: Wired version of polygonal face.
+    glCreateListPolygonsWired( Viewer3D<TSpace, TKSpace>::myPolygonSetList,
+                               myPolygonSetListWiredId );
+    myNbListe++;
+
+    // Seventh list: Textured images.
+    glUpdateTextureImages( myGSImageList );
+
+    if ( needToUpdateBoundingBox &&
+         Viewer3D<TSpace, TKSpace>::myBoundingPtChangedTag )
+    {
+      setSceneBoundingBox(
+      qglviewer::Vec( Viewer3D<TSpace, TKSpace>::myBoundingPtLow[ 0 ],
+                      Viewer3D<TSpace, TKSpace>::myBoundingPtLow[ 1 ],
+                      Viewer3D<TSpace, TKSpace>::myBoundingPtLow[ 2 ] ),
+      qglviewer::Vec( Viewer3D<TSpace, TKSpace>::myBoundingPtUp[ 0 ],
+                      Viewer3D<TSpace, TKSpace>::myBoundingPtUp[ 1 ],
+                      Viewer3D<TSpace, TKSpace>::myBoundingPtUp[ 2 ] ) );
+      showEntireScene();
+      Viewer3D<TSpace, TKSpace>::myBoundingPtChangedTag = false;
+    }
+    update();
+    glPopMatrix();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glDrawGLBall(
+const typename Viewer3D<TSpace, TKSpace>::BallD3D & aBall )
+{
+  double thetaResolution = aBall.resolution;
+  double thetaStep= (2.0*M_PI)/thetaResolution;
+  double phiResolution = aBall.resolution;
+  double phiStep= M_PI/phiResolution;
+
+  double radius = aBall.radius;
+  double xCenter = aBall.center[0];
+  double yCenter = aBall.center[1];
+  double zCenter = aBall.center[2];
+  glBegin(GL_QUAD_STRIP);
+  for(unsigned int j =0; j < phiResolution; j++)
+    {
+      double phi0 = M_PI/2.0-j*phiStep;
+      double phi1 = M_PI/2.0-(j+1)*phiStep;
+      for(unsigned int i =0; i <= thetaResolution; i++)
+        {
+          double theta0 =  i * thetaStep;
+          glColor4ub ( aBall.color.red(), aBall.color.green(), aBall.color.blue(), aBall.color.alpha() );
+          glNormal3f(cos(phi0)*cos(theta0), cos(phi0)*sin(theta0), sin(phi0));
+          glVertex3f(xCenter+cos(phi0)*cos(theta0)*radius,yCenter+ cos(phi0)*sin(theta0)*radius, zCenter+ sin(phi0)*radius);
+          glNormal3f(cos(phi1)*cos(theta0), cos(phi1)*sin(theta0), sin(phi1));
+          glVertex3f(xCenter+cos(phi1)*cos(theta0)*radius,yCenter+ cos(phi1)*sin(theta0)*radius, zCenter+ sin(phi1)*radius);
+        }
+    }
+  glEnd();
+  
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::mousePressEvent( QMouseEvent * e )
+{
+  bool handled = false;
+  // Checks if an extension is present.
+  if ( myExtension != 0 )
+  {
+    handled = myExtension->mousePressEvent( *this, e );
+    if ( handled )
+      return;
+  }
+
+  if(e->modifiers() == (Qt::ControlModifier|Qt::ShiftModifier))
+    {
+      myIsMovingLight=true;
+      myRefMouseXPos = e->x();
+      myRefMouseYPos = e->y();
+      if( myLightPositionFixToCamera )
+        {
+           updateLightCoordsFromCamera();
+        }
+      myLightR = sqrt( myLightPosition[0]* myLightPosition[0]+
+                       myLightPosition[1]* myLightPosition[1]+
+                       myLightPosition[2]* myLightPosition[2]);
+      myLightTheta = asin( myLightPosition[2]/myLightR);
+      myLightPhi = atan2( myLightPosition[1], myLightPosition[0]);
+    }
+  else
+    {
+      QGLViewer::mousePressEvent(e);
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::mouseReleaseEvent( QMouseEvent * e )
+{
+  bool handled = false;
+  // Checks if an extension is present.
+  if ( myExtension != 0 )
+  {
+    handled = myExtension->mouseReleaseEvent( *this, e );
+    if ( handled )
+      return;
+  }
+
+  if(e->modifiers() == (Qt::ControlModifier|Qt::ShiftModifier) || myIsMovingLight){
+    myIsMovingLight=false;
+    update();
+  }else{
+    QGLViewer::mouseReleaseEvent(e);
+  }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::mouseMoveEvent( QMouseEvent * e )
+{
+  bool handled = false;
+  // Checks if an extension is present.
+  if ( myExtension != 0 )
+  {
+    handled = myExtension->mouseMoveEvent( *this, e );
+    if ( handled )
+      return;
+  }
+
+  if(e->modifiers() == (Qt::ControlModifier|Qt::ShiftModifier)){
+    int varX = e->x() - myRefMouseXPos;
+    int varY = e->y() - myRefMouseYPos;
+    myLightPhi -= varY * myLigthRotationStep;
+    myLightTheta -= varX * myLigthRotationStep / 2.0;
+    myLightPosition[0] = myLightR*cos(myLightTheta)*cos(myLightPhi);
+    myLightPosition[1] = myLightR*cos(myLightTheta)*sin(myLightPhi);
+    myLightPosition[2] = myLightR*sin(myLightTheta);
+    if(myLightPositionFixToCamera){
+      updateRelativeCameraFromLightPosition();
+    }
+    glLightfv(GL_LIGHT0, GL_POSITION, myLightPosition);
+    myRefMouseXPos = e->x();
+    myRefMouseYPos = e->y();
+    update();
+  }else{
+    QGLViewer::mouseMoveEvent(e);
+  }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::keyPressEvent( QKeyEvent * e )
+{
+  bool handled = false;
+  // Checks if an extension is present.
+  if ( myExtension != 0 )
+  {
+    handled = myExtension->keyPressEvent( *this, e );
+    if ( handled )
+      return;
+  }
+
+  if( e->key() == Qt::Key_D)
+    {
+      myIsDoubleFaceRendering = !myIsDoubleFaceRendering;
+      glUpdateLightRenderingMode();
+      update();
+
+    }
+  if( e->key() == Qt::Key_E)
+    {
+      trace.info() << "Exporting mesh..." ;
+      operator>><TSpace, TKSpace>( *this, "exportedMesh.off" );
+      trace.info() << "[done]"<< endl ;
+    }
+  if( e->key() == Qt::Key_M)
+    {
+      switch (myRenderingMode)
+        {
+        case RenderingMode::RenderingDefault : 
+          myRenderingMode = RenderingMode::RenderingMetallic;
+          break;
+        case RenderingMode::RenderingMetallic : 
+          myRenderingMode = RenderingMode::RenderingPlastic;
+          break;
+        case RenderingMode::RenderingPlastic :
+          myRenderingMode = RenderingMode::RenderingLambertian;
+          break;
+        case RenderingMode::RenderingLambertian : 
+          myRenderingMode = RenderingMode::RenderingDefault;
+          break;
+        } 
+      updateRenderingCoefficients(myRenderingMode);
+    }
+
+  
+
+  if ( ( e->key() ==Qt::Key_W ) )
+    {
+      myViewWire=!myViewWire;
+      updateList(false);
+      update();
+    }
+    if ( e->key() == Qt::Key_Z )
+    {
+      if ( myLightPositionFixToCamera )
+      {
+        updateLightCoordsFromCamera();
+      }
+      myLightR = sqrt( myLightPosition[ 0 ] * myLightPosition[ 0 ] +
+                       myLightPosition[ 1 ] * myLightPosition[ 1 ] +
+                       myLightPosition[ 2 ] * myLightPosition[ 2 ] );
+      myLightTheta = asin( myLightPosition[ 2 ] / myLightR );
+      myLightPhi   = atan2( myLightPosition[ 1 ], myLightPosition[ 0 ] );
+
+      stringstream ss;
+      if ( e->modifiers() == Qt::ShiftModifier )
+      {
+        myLightR += 5.0;
+        ss << "Move away light source at distance: " << myLightR;
+      }
+      else
+      {
+        myLightR -= 5.0;
+        ss << "Move closer light source at distance: " << myLightR;
+      }
+      displayMessage( QString( ss.str().c_str() ), 3000 );
+      myLightPosition[ 0 ] = myLightR * cos( myLightTheta ) * cos( myLightPhi );
+      myLightPosition[ 1 ] = myLightR * cos( myLightTheta ) * sin( myLightPhi );
+      myLightPosition[ 2 ] = myLightR * sin( myLightTheta );
+      if ( myLightPositionFixToCamera )
+      {
+        updateRelativeCameraFromLightPosition();
+      }
+      myIsMovingLight = true;
+      glLightfv( GL_LIGHT0, GL_POSITION, myLightPosition );
+      update();
+    }
+
+    if ( ( e->key() == Qt::Key_P ) )
+    {
+      myLightPositionFixToCamera =! myLightPositionFixToCamera;
+      updateLightCoordsFromCamera();
+      if(myLightPositionFixToCamera)
+        {
+          displayMessage(QString("Light source position fixed to camera."), 3000);
+          updateRelativeCameraFromLightPosition();
+        }
+      else
+        {
+          displayMessage(QString("Light source position fixed to main scene."), 3000);
+          //updateLightCoordsFromCamera();
+        }
+      update();
+    }
+  
+  if ( ( e->key() ==Qt::Key_O ) )
+    {
+      myUseGLPointsForBalls = !myUseGLPointsForBalls;
+      updateList(false);
+      update();
+    }
+
+  if ( ( e->key() ==Qt::Key_R ) )
+    {
+      myGLScaleFactorX=1.0f;
+      myGLScaleFactorY=1.0f;
+      myGLScaleFactorZ=1.0f;
+      update();
+    }
+
+  if ( ( e->key() ==Qt::Key_T ) )
+    {
+      handled=true;
+      DGtal::trace.info() << "sorting surfel according camera position....";
+      sortSurfelFromCamera();
+      sortTriangleFromCamera();
+      sortQuadFromCamera();
+      sortPolygonFromCamera();
+      DGtal::trace.info() << " [done]"<< std::endl;
+      updateList(false);
+      update();
+    }
+  if ( ( e->key() ==Qt::Key_B ) )
+    {
+      handled=true;
+      myIsBackgroundDefault=!myIsBackgroundDefault;
+      glUpdateBackground();
+      update();
+    }
+
+ if ( ( e->key() ==Qt::Key_L ) )
+    {
+      if(e->modifiers()==Qt::ShiftModifier){
+        saveStateToFile();
+      }else{
+        restoreStateFromFile();
+        update();
+      }
+    }
+  if ( ( e->key() ==Qt::Key_C ) )
+   {
+      handled=true;
+      GLint Viewport[4];
+      GLdouble Projection[16], Modelview[16];
+
+      glGetIntegerv ( GL_VIEWPORT , Viewport );
+      glGetDoublev ( GL_MODELVIEW_MATRIX , Modelview );
+      glGetDoublev ( GL_PROJECTION_MATRIX, Projection );
+
+      for ( unsigned short m=0; m<4; ++m )
+        {
+          for ( unsigned short l=0; l<4; ++l )
+            {
+              double sum = 0.0;
+              for ( unsigned short k=0; k<4; ++k )
+                sum += Projection[l+4*k]*Modelview[k+4*m];
+            }
+        }
+
+      DGtal::trace.info() << "Viewport: ";
+      for ( unsigned short l=0; l<4; ++l )
+        DGtal::trace.info() << Viewport[l] << ", ";
+      DGtal::trace.info() << std::endl;
+
+      Vec cp = camera()->position();
+      Vec cd = camera()->viewDirection();
+      Vec cup = camera()->upVector();
+
+      DGtal::trace.info() << "camera.position: " ;
+      for ( unsigned short l=0; l<3; ++l )
+        DGtal::trace.info() << cp[l] << ", ";
+      DGtal::trace.info() << std::endl;
+
+      DGtal::trace.info() << "camera.direction: ";
+      for ( unsigned short l=0; l<3; ++l )
+        DGtal::trace.info() << cd[l] << ", ";
+      DGtal::trace.info() << std::endl;
+
+      DGtal::trace.info() << "camera.upVector: ";
+      for ( unsigned short l=0; l<3; ++l )
+        DGtal::trace.info() << cup[l] << ", ";
+      DGtal::trace.info() << std::endl;
+
+      DGtal::trace.info() << "zNear: " << camera()->zNear() << " - zFar: " << camera()->zFar() << std::endl;
+    }
+
+  if ( !handled )
+    QGLViewer::keyPressEvent ( e );
+}
+
+template <typename TSpace, typename TKSpace>
+QString DGtal::Viewer3D<TSpace, TKSpace>::helpString() const
+{
+  QString text;
+  if ( myExtension != 0 )
+    text += myExtension->helpString( *this );
+
+  text += "<h2> Viewer3D</h2>";
+  text += "Use the mouse to move the camera around the object. ";
+  text += "You can respectively revolve around, zoom and translate with the three mouse buttons. ";
+  text += "Left and middle buttons pressed together rotate around the camera view direction axis<br><br>";
+  text += "Pressing <b>Alt</b> and one of the function keys (<b>F1</b>..<b>F12</b>) defines a camera keyFrame. ";
+  text += "Simply press the function key again to restore it-> Several keyFrames define a ";
+  text += "camera path. Paths are saved when you quit the application and restored at next start.<br><br>";
+  text += "Press <b>F</b> to display the frame rate, <b>A</b> for the world axis, ";
+  text += "<b>Alt+Return</b> for full screen mode and <b>Control+S</b> to save a snapshot. ";
+  text += "See the <b>Keyboard</b> tab in this window for a complete shortcut list.<br><br>";
+  text += "Double clicks automates single click actions: A left button double click aligns the closer axis with the camera (if close enough). ";
+  text += "A middle button double click fits the zoom of the camera and the right button re-centers the scene.<br><br>";
+  text += "A left button double click while holding right button pressed defines the camera <i>Revolve Around Ball</i>. ";
+  text += "See the <b>Mouse</b> tab and the documentation web pages for details.<br><br>";
+  text += "Press <b>Escape</b> to exit the viewer.";
+  return text;
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListCubesMaps(
+const typename DGtal::Display3D<TSpace, TKSpace>::CubesMap & aCubeMap,
+unsigned int idList )
+{
+  glNewList ( idList , GL_COMPILE );
+  
+  for (auto &mapElem: aCubeMap)
+    {
+      glPushName ( mapElem.first );
+      glEnable ( GL_LIGHTING );
+      glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_FALSE);
+      glBegin ( GL_QUADS );      
+      bool useColorSelection = false;
+      if(mySelectedElementId == mapElem.first)
+        useColorSelection = true;
+      
+      for (auto   &cube: mapElem.second)
+        {
+          if(useColorSelection)
+            {
+              unsigned char m =  (cube.color.red()+ cube.color.green()+ cube.color.blue())/3;
+              if(m>128)
+                {
+                  glColor4ub ( std::max((int)(cube.color.red())-mySelectionColorShift, 0),
+                               std::max((int)(cube.color.green())-mySelectionColorShift, 0),
+                               std::max((int)(cube.color.blue())-mySelectionColorShift, 0),
+                               cube.color.alpha());              
+                }
+              else{
+                glColor4ub ( std::min(cube.color.red()+mySelectionColorShift, 255),
+                             std::min(cube.color.green()+mySelectionColorShift, 255),
+                             std::min(cube.color.blue()+mySelectionColorShift, 255),
+                             cube.color.alpha());              
+              } 
+            }
+          else
+            { 
+              glColor4ub ( cube.color.red(), cube.color.green(), cube.color.blue(),cube.color.alpha());
+            }
+          double _width= cube.width;
+          //z+
+          glNormal3f ( 0.0, 0.0, 1.0 );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]+_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]-_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]-_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]+_width, cube.center[2]+_width );
+          //z-
+          glNormal3f ( 0.0, 0.0, -1.0 );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]+_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]+_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]-_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]-_width, cube.center[2]-_width );
+          //x+
+          glNormal3f ( 1.0, 0.0, 0.0 );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]-_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]-_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]+_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]+_width, cube.center[2]+_width );
+          //x-
+          glNormal3f ( -1.0, 0.0, 0.0 );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]-_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]+_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]+_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]-_width, cube.center[2]-_width );
+          //y+
+          glNormal3f ( 0.0, 1.0, 0.0 );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]+_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]+_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]+_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]+_width, cube.center[2]-_width );
+          //y-
+          glNormal3f ( 0.0, -1.0, 0.0 );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]-_width, cube.center[2]+_width );
+          glVertex3f ( cube.center[0]-_width, cube.center[1]-_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]-_width, cube.center[2]-_width );
+          glVertex3f ( cube.center[0]+_width, cube.center[1]-_width, cube.center[2]+_width );
+        }
+      glEnd();
+      glPopName();
+    }
+  glEndList();
+  glUpdateLightRenderingMode();
+  
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListQuadD3D(
+const VectorQuad & aVectQuad, unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glPushName ( myNbListe );
+  glEnable ( GL_DEPTH_TEST );
+  glEnable ( GL_BLEND );
+  glEnable ( GL_MULTISAMPLE_ARB );
+  glEnable ( GL_SAMPLE_ALPHA_TO_COVERAGE_ARB );
+  glBlendFunc ( GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA );
+
+  glBegin ( GL_QUADS );
+  for ( auto const &q: aVectQuad )
+    {
+      glColor4ub ( q.color.red(), q.color.green(),
+                   q.color.blue(), q.color.alpha() );
+      glNormal3f ( q.nx, q.ny, q.nz );
+      glVertex3f ( q.point1[0], q.point1[1] , q.point1[2] );
+      glVertex3f ( q.point2[0], q.point2[1] , q.point2[2] );
+      glVertex3f ( q.point3[0], q.point3[1] , q.point3[2] );
+      glVertex3f ( q.point4[0], q.point4[1] , q.point4[2] );
+    }
+  glEnd();
+  glEndList();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListLines(
+const VectorLine & aVectLine, unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glDisable ( GL_LIGHTING );
+  glPushName ( myNbListe );
+  glBegin ( GL_LINES );
+  for (auto const &l: aVectLine )
+    {
+      glColor4ub ( l.color.red(), l.color.green(),
+                   l.color.blue(), l.color.alpha() );
+      glVertex3f ( l.point1[0], l.point1[1], l.point1[2] );
+      glVertex3f ( l.point2[0], l.point2[1], l.point2[2] );
+    }
+  glEnd();
+  glEnable ( GL_LIGHTING );
+  glEndList();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListBalls(
+const VectorBall & aVectBall, unsigned int idList )
+{
+  if(myUseGLPointsForBalls)
+    {
+      glNewList ( idList, GL_COMPILE );
+      glDepthMask ( GL_TRUE );
+      glDisable ( GL_TEXTURE_2D );
+      glDisable ( GL_POINT_SMOOTH );
+      glDisable ( GL_LIGHTING );
+      glPushName ( myNbListe );
+      glBegin ( GL_POINTS );
+      for ( auto const &ball: aVectBall )
+        {
+          glColor4ub ( ball.color.red(), ball.color.green(),
+                       ball.color.blue(), ball.color.alpha() );
+          glVertex3f ( ball.center[0], ball.center[1], ball.center[2] );
+        }
+      glEnd();
+      glEnable ( GL_LIGHTING );
+      glEndList();
+    }
+  else
+    {
+      glNewList ( idList, GL_COMPILE );
+      glPushName ( myNbListe );
+      glDepthMask ( GL_TRUE );
+      glDisable ( GL_TEXTURE_2D );
+      glDisable ( GL_POINT_SMOOTH );
+      for ( auto const & b: aVectBall)
+        {
+          glDrawGLBall ( b );
+        }
+      glEnd();
+      glEndList();
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListQuadMaps(
+const typename DGtal::Display3D<TSpace, TKSpace>::QuadsMap & aQuadMap,
+unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  for (auto & mapElem: aQuadMap)
+    {
+      glPushName ( mapElem.first );
+      glEnable ( GL_LIGHTING );
+      glBegin ( GL_QUADS );
+      bool useColorSelection = false;
+      if(mySelectedElementId == mapElem.first)
+        useColorSelection = true;
+      
+      for (auto &q: mapElem.second)
+        {
+          if(useColorSelection)
+            {
+              unsigned char m = (q.color.red()+ q.color.green()+ q.color.blue())/3;
+              if(m>128)
+                {
+                  glColor4ub ( std::max((int)(q.color.red())-mySelectionColorShift, 0),
+                               std::max((int)(q.color.green())-mySelectionColorShift, 0),
+                               std::max((int)(q.color.blue())-mySelectionColorShift, 0),
+                               q.color.alpha());              
+                }
+              else{
+                glColor4ub ( std::min(q.color.red()+mySelectionColorShift, 255),
+                             std::min(q.color.green()+mySelectionColorShift, 255),
+                             std::min(q.color.blue()+mySelectionColorShift, 255),
+                             q.color.alpha());              
+              } 
+            }
+          else
+            {
+              glColor4ub ( q.color.red(), q.color.green(), q.color.blue(), q.color.alpha());              
+              
+            }
+
+          glNormal3f ( q.nx, q.ny ,q.nz );
+          glVertex3f ( q.point1[0], q.point1[1], q.point1[2] );
+          glVertex3f ( q.point2[0], q.point2[1], q.point2[2] );
+          glVertex3f ( q.point3[0], q.point3[1], q.point3[2] );
+          glVertex3f ( q.point4[0], q.point4[1], q.point4[2] );
+        }
+      glEnd();
+      glPopName();
+    }
+  glEndList();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListQuadMapsWired(
+const typename DGtal::Display3D<TSpace, TKSpace>::QuadsMap & aQuadMap,
+unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glPushName ( myNbListe );
+  glDisable ( GL_LIGHTING );
+  glBegin ( GL_LINES );
+  
+  for (auto const &mapElem: aQuadMap)
+    {
+      for(auto const &q: mapElem.second)
+        {
+          glColor4ub ( 150.0,150.0,150.0,255.0 );
+          glColor4ub( Viewer3D<TSpace, TKSpace>::myCurrentLineColor.red(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.green(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.blue(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.alpha() );
+          glVertex3f ( q.point1[0], q.point1[1], q.point1[2] );
+          glVertex3f ( q.point2[0], q.point2[1], q.point2[2] );
+          glVertex3f ( q.point2[0], q.point2[1], q.point2[2] );
+          glColor4ub( Viewer3D<TSpace, TKSpace>::myCurrentLineColor.red(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.green(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.blue(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.alpha() );
+          glVertex3f ( q.point3[0], q.point3[1], q.point3[2] );
+          glVertex3f ( q.point3[0], q.point3[1], q.point3[2] );
+          glVertex3f ( q.point4[0], q.point4[1], q.point4[2] );
+          glColor4ub( Viewer3D<TSpace, TKSpace>::myCurrentLineColor.red(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.green(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.blue(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.alpha() );
+          glVertex3f ( q.point4[0], q.point4[1], q.point4[2] );
+          glVertex3f ( q.point1[0], q.point1[1], q.point1[2] );
+        }
+    }
+  glEnd();
+  glEndList();
+
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListTriangles(
+const std::vector<VectorTriangle> & aVectTriangle, unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glPushName ( myNbListe );
+  glEnable ( GL_LIGHTING );
+  glBegin ( GL_TRIANGLES );
+  for(auto const &tList: aVectTriangle)
+    {
+      for (auto const &t: tList)
+        {
+          glColor4ub (t.color.red(),t.color.green(),t.color.blue(),t.color.alpha() );
+          glNormal3f (t.nx,t.ny ,t.nz );
+          glVertex3f (t.point1[0],t.point1[1],t.point1[2] );
+          glVertex3f (t.point2[0],t.point2[1],t.point2[2] );
+          glVertex3f (t.point3[0],t.point3[1],t.point3[2] );
+        }
+    }
+  glEnd();
+  glEndList();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListTrianglesWired(
+const std::vector<VectorTriangle> & aVectTriangle, unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glPushName ( myNbListe );
+  glDisable ( GL_LIGHTING );
+  glBegin ( GL_LINES );
+  for (auto const &tList: aVectTriangle)
+    {
+      for (auto const &t: tList)
+        {
+          glColor4ub( Viewer3D<TSpace, TKSpace>::myCurrentLineColor.red(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.green(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.blue(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.alpha() );
+          glVertex3f (t.point1[0],t.point1[1],t.point1[2] );
+          glVertex3f (t.point2[0],t.point2[1],t.point2[2] );
+          glVertex3f (t.point2[0],t.point2[1],t.point2[2] );
+          glVertex3f (t.point3[0],t.point3[1],t.point3[2] );
+          glVertex3f (t.point3[0],t.point3[1],t.point3[2] );
+          glVertex3f (t.point1[0],t.point1[1],t.point1[2] );
+        }
+    }
+  glEnd();
+  glEndList();
+
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListPolygons(
+const std::vector<VectorPolygon> & aVectPolygon, unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glPushName ( myNbListe );
+  glEnable ( GL_LIGHTING );
+  
+  for(auto const &pList: aVectPolygon)
+    {
+      for (auto const &p: pList)
+        {
+          glBegin ( GL_POLYGON );
+          glColor4ub ( p.color.red(), p.color.green(), p.color.blue(), p.color.alpha() );
+          glNormal3f ( p.nx, p.ny ,p.nz );
+          for(unsigned int j=0;j < (p.vertices).size();j++)
+            {
+              glVertex3f ( (p.vertices).at(j)[0], (p.vertices).at(j)[1], (p.vertices).at ( j )[2] );
+            }
+          glEnd();
+        }
+    }
+  glEndList();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glCreateListPolygonsWired(
+const std::vector<VectorPolygon> & aVectPolygon, unsigned int idList )
+{
+  glNewList ( idList, GL_COMPILE );
+  glPushName ( myNbListe );
+  glDisable ( GL_LIGHTING );
+  glBegin ( GL_LINES );
+  for(auto const &pList: aVectPolygon)
+    { 
+      for (auto const &p: pList)
+        {
+          glColor4ub( Viewer3D<TSpace, TKSpace>::myCurrentLineColor.red(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.green(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.blue(),
+                      Viewer3D<TSpace, TKSpace>::myCurrentLineColor.alpha() );
+          for(unsigned int j=0;j < (p.vertices).size();j++)
+            {
+              glVertex3f ( (p.vertices).at(j)[0], (p.vertices).at(j)[1], (p.vertices).at ( j )[2] );
+              glVertex3f ( (p.vertices).at((j+1)%(p.vertices).size())[0],
+                           (p.vertices).at((j+1)%(p.vertices).size())[1],
+                           (p.vertices).at ( (j+1)%(p.vertices).size() )[2] );
+            }
+        }
+    }
+  glEnd();
+  glEndList();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glUpdateTextureImages(
+const VectorTextureImage & aVectImage )
+{
+
+  for(unsigned int j=0; j<myVectTextureImage.size(); j++){
+    glDeleteTextures(1,&(myVectTextureImage[j].myTextureName));
+  }
+  myVectTextureImage.clear();
+  for(unsigned int j=0; j<aVectImage.size(); j++)
+    {
+      typename Viewer3D<TSpace, TKSpace>::TextureImage aGSImage =
+      aVectImage.at( j );
+      GLTextureImage textureImg(aGSImage);
+
+      glGenTextures(1, &textureImg.myTextureName);
+      glBindTexture(GL_TEXTURE_2D, textureImg.myTextureName);
+
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+      glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+      if ( textureImg.myMode == Viewer3D<TSpace, TKSpace>::GrayScaleMode )
+      {
+        glTexImage2D( GL_TEXTURE_2D, 0, GL_LUMINANCE, textureImg.myBufferWidth,
+                      textureImg.myBufferHeight, 0, GL_LUMINANCE,
+                      GL_UNSIGNED_BYTE, textureImg.myTextureImageBufferGS );
+      }
+      else if ( textureImg.myMode == Viewer3D<TSpace, TKSpace>::RGBMode )
+      {
+        glTexImage2D( GL_TEXTURE_2D, 0, GL_RGB, textureImg.myBufferWidth,
+                      textureImg.myBufferHeight, 0, GL_RGB, GL_UNSIGNED_BYTE,
+                      textureImg.myTextureImageBufferRGB );
+        }
+      myVectTextureImage.push_back(textureImg);
+    }
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glUpdateLightRenderingMode() const
+{
+  if(myIsDoubleFaceRendering)
+    glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
+  else
+    glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_FALSE);
+}
+
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::glUpdateBackground() 
+{
+  
+  if ( !myIsBackgroundDefault )
+  {
+    setBackgroundColor ( QColor ( 255, 255,255, 255 ) );
+  }
+  else
+  {
+    setBackgroundColor ( QColor ( myDefaultBackgroundColor.red(),
+                                  myDefaultBackgroundColor.green(),
+                                  myDefaultBackgroundColor.blue(),
+                                  myDefaultBackgroundColor.alpha()));
+  }
+}
+
+
+template <typename TSpace, typename TKSpace>
+QDomElement
+DGtal::Viewer3D<TSpace, TKSpace>::domElement( const QString & name,
+                                              QDomDocument & document ) const
+{
+  // Creates a custom node for a light  position
+  QDomElement deRendering = document.createElement("Rendering");
+  deRendering.setAttribute("mode", myRenderingMode);
+  QDomElement de = document.createElement("Light");
+  de.setAttribute("pos_light_x", myLightPosition[0]);
+  de.setAttribute("pos_light_y", myLightPosition[1]);
+  de.setAttribute("pos_light_z", myLightPosition[2]);
+  // Get default state domElement and append custom node
+  QDomElement res = QGLViewer::domElement(name, document);
+  res.appendChild(de);
+  res.appendChild(deRendering);
+  return res;
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::initFromDOMElement(
+const QDomElement & element )
+{
+  // Restore standard state
+  QGLViewer::initFromDOMElement(element);
+  QDomElement child=element.firstChild().toElement();
+  while (!child.isNull())
+  {
+    if (child.tagName() == "Rendering")
+      {
+        myRenderingMode = (RenderingMode)(child.attribute("mode").toInt());
+      }
+    if (child.tagName() == "Light")
+    {
+      if (child.hasAttribute("pos_light_x"))
+        {
+          myLightPosition[0] = child.attribute("pos_light_x").toDouble();
+        }
+      
+      if (child.hasAttribute("pos_light_y"))
+        {
+          myLightPosition[1] = child.attribute("pos_light_y").toDouble();
+        }
+      if (child.hasAttribute("pos_light_z"))
+        {
+          myLightPosition[2] = child.attribute("pos_light_z").toDouble();
+        }
+    }
+    child = child.nextSibling().toElement();
+  }
+  if(myLightPositionFixToCamera){
+    updateRelativeCameraFromLightPosition();
+  }
+  updateRenderingCoefficients(myRenderingMode, false);
+  update();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::closeEvent( QCloseEvent * e )
+{
+  if (myAutoSaveState)
+  {
+    saveStateToFile();
+  }
+  QGLViewer::closeEvent(e);
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::setGLDoubleRenderingMode(
+bool doubleSidedRendering )
+{
+  myIsDoubleFaceRendering = doubleSidedRendering;
+  glUpdateLightRenderingMode();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::setGLMaterialShininessCoefficient(
+const GLfloat matShininessCoeff )
+{
+  myMaterialShininessCoeff = matShininessCoeff;  
+  update();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::setGLLightAmbientCoefficients(
+const GLfloat lightAmbientCoeffs[ 4 ] )
+{
+  myLightAmbientCoeffs[0] =  lightAmbientCoeffs[0];
+  myLightAmbientCoeffs[1] =  lightAmbientCoeffs[1];
+  myLightAmbientCoeffs[2] =  lightAmbientCoeffs[2];
+  myLightAmbientCoeffs[3] =  lightAmbientCoeffs[3]; 
+  update();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::setGLLightDiffuseCoefficients(
+const GLfloat lightDiffuseCoeffs[ 4 ] )
+{
+  myLightDiffuseCoeffs[0] =  lightDiffuseCoeffs[0];
+  myLightDiffuseCoeffs[1] =  lightDiffuseCoeffs[1];
+  myLightDiffuseCoeffs[2] =  lightDiffuseCoeffs[2];
+  myLightDiffuseCoeffs[3] =  lightDiffuseCoeffs[3];
+  update();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::setUseGLPointForBalls(
+const bool useOpenGLPt )
+{
+  myUseGLPointsForBalls = useOpenGLPt;
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::updateRenderingCoefficients(
+const RenderingMode aRenderMode, bool displayState )
+{
+  stringstream ss; 
+  ss << "Rendering mode ";
+    
+  GLfloat newCoefDiff, newCoefSpec = 1.0f;
+  switch (aRenderMode) 
+    {
+    case RenderingMode::RenderingDefault :
+      newCoefDiff = myDefaultRenderDiff;
+      newCoefSpec = myDefaultRenderSpec;
+      ss << "Default (diffuse with few specular)";
+      break;
+    case RenderingMode::RenderingMetallic :
+      newCoefDiff = myMetallicRenderDiff;
+      newCoefSpec = myMetallicRenderSpec;
+      ss << "Metallic (diffuse with specular)";
+      break;
+    case RenderingMode::RenderingPlastic :
+      newCoefDiff = myPlasticRenderDiff;
+      newCoefSpec = myPlasticRenderSpec;
+      ss << "Plastic (few diffuse with large specular)";
+      break;
+    case RenderingMode::RenderingLambertian :
+      newCoefDiff = myLambertRenderDiff;
+      newCoefSpec = myLambertRenderSpec;
+      ss << "Lambertian (only diffuse)";
+      break;
+    }
+  for (unsigned int i = 0; i<3; i++) 
+    myLightDiffuseCoeffs[i] = newCoefDiff;
+  myLightDiffuseCoeffs[3] = 1.0;
+  for (unsigned int i = 0; i<3; i++) 
+    myLightSpecularCoeffs[i] = newCoefSpec;
+  myLightSpecularCoeffs[3] = 1.0;
+  if (displayState)
+    {
+      displayMessage(QString(ss.str().c_str()), 3000);
+    }
+  update();
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::setGLLightSpecularCoefficients(
+const GLfloat lightSpecularCoeffs[ 4 ] )
+{
+  myLightSpecularCoeffs[0] =  lightSpecularCoeffs[0];
+  myLightSpecularCoeffs[1] =  lightSpecularCoeffs[1];
+  myLightSpecularCoeffs[2] =  lightSpecularCoeffs[2];
+  myLightSpecularCoeffs[3] =  lightSpecularCoeffs[3];
+  update();
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::show()
+{
+  QGLViewer::show();
+  updateList(false);
+}
+
+template <typename TSpace, typename TKSpace>
+inline void DGtal::Viewer3D<TSpace, TKSpace>::paintGL()
+{
+  if ( displaysInStereo() )
+  {
+    for ( int view = 1; view >= 0; --view )
+    {
+      // Clears screen, set model view matrix with shifted matrix for ith buffer
+      preDrawStereo( view );
+      postDraw();
+      // Used defined method. Default is empty
+      if ( camera()->frame()->isManipulated() )
+        fastDraw();
+      else
+        draw();
+    }
+  }
+  else
+  {
+    // Clears screen, set model view matrix...
+    preDraw();
+    postDraw();
+    // Used defined method. Default calls draw()
+    if ( camera()->frame()->isManipulated() )
+      fastDraw();
+    else
+      draw();
+    // Add visual hints: axis, camera, grid...
+  }
+  Q_EMIT drawFinished( true );
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::updateLightCoordsFromCamera()
+{
+  Vec posLCam;
+  posLCam[0] = myLightPositionRefCamera[0];
+  posLCam[1] = myLightPositionRefCamera[1];
+  posLCam[2] = myLightPositionRefCamera[2];  
+  Vec posL = camera()->worldCoordinatesOf(posLCam);
+  myLightPosition[0] = static_cast<GLfloat>(posL[0]);
+  myLightPosition[1] = static_cast<GLfloat>(posL[1]);
+  myLightPosition[2] = static_cast<GLfloat>(posL[2]);
+  myLightPosition[3] = 1.0f;
+}
+
+template <typename TSpace, typename TKSpace>
+void DGtal::Viewer3D<TSpace, TKSpace>::updateRelativeCameraFromLightPosition()
+{
+  Vec posL;
+  posL[0] = myLightPosition[0];
+  posL[1] = myLightPosition[1];
+  posL[2] = myLightPosition[2];  
+  Vec posLCam = camera()->cameraCoordinatesOf(posL); 
+  myLightPositionRefCamera[0] = static_cast<GLfloat>(posLCam[0]);
+  myLightPositionRefCamera[1] = static_cast<GLfloat>(posLCam[1]);
+  myLightPositionRefCamera[2] = static_cast<GLfloat>(posLCam[2]);
+}
+
+
+

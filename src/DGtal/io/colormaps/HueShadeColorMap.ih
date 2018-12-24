@@ -1,0 +1,227 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file HueShadeColorMap.ih
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @date 2010/07/19
+ *
+ * Implementation of inline methods defined in HueShadeColorMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+template <typename Value, int DefaultCycles>
+inline
+DGtal::HueShadeColorMap<Value,DefaultCycles>::HueShadeColorMap
+( const Value & amin,
+  const Value & amax,
+  const unsigned int cycles )
+  : myMin( amin ), myMax( amax ), myCycles( cycles )
+{
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+
+template <typename Value, int DefaultCycles>
+inline
+DGtal::HueShadeColorMap<Value,DefaultCycles>::HueShadeColorMap
+( const HueShadeColorMap<Value,DefaultCycles> & other )
+  : myMin( other.myMin ), myMax( other.myMax ), myCycles( other.myCycles )
+{ 
+  ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+}
+
+template <typename Value, int DefaultCycles>
+inline
+DGtal::HueShadeColorMap<Value,DefaultCycles>::~HueShadeColorMap()
+{
+}
+
+template <typename Value, int DefaultCycles>
+DGtal::HueShadeColorMap<Value,DefaultCycles> &
+DGtal::HueShadeColorMap<Value,DefaultCycles>::operator=
+( const HueShadeColorMap<Value,DefaultCycles> & other )
+{
+  if ( &other != this ) {
+    myMin = other.myMin;
+    myMax = other.myMax;
+    ASSERT_MSG(myMin < myMax, "Max should be strictly greather than Min in a colormap.");
+    myCycles = other.myCycles;
+  }
+  return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template<typename Value, int DefaultCycles>
+inline
+const Value &
+DGtal::HueShadeColorMap<Value,DefaultCycles>::min() const
+{
+  return myMin;
+}
+
+template<typename Value, int DefaultCycles>
+inline
+const Value &
+DGtal::HueShadeColorMap<Value,DefaultCycles>::max() const
+{
+  return myMax;
+}
+
+template<typename Value, int DefaultCycles>
+inline
+void
+DGtal::HueShadeColorMap<Value,DefaultCycles>::setCycles( int cycles )
+{
+  myCycles = cycles;
+}
+
+
+template<typename Value, int DefaultCycles>
+inline
+DGtal::Color
+DGtal::HueShadeColorMap<Value,DefaultCycles>::operator()
+  ( const Value & value ) const
+{
+  return getColor( myCycles, myMin, myMax, value );
+}
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Value, int DefaultCycles>
+inline
+void
+DGtal::HueShadeColorMap<Value,DefaultCycles>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[HueShadeColorMap " 
+      << " min=" << myMin
+      << " max=" << myMax
+      << " cycles=" << myCycles
+      << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Value, int DefaultCycles>
+inline
+bool
+DGtal::HueShadeColorMap<Value,DefaultCycles>::isValid() const
+{
+    return true;
+}
+
+template <typename Value, int DefaultCycles>
+inline
+DGtal::Color
+DGtal::HueShadeColorMap<Value,DefaultCycles>::getColor
+( const unsigned int cycles,
+  const Value & min,
+  const Value & max,
+  const Value & value )
+{
+  ASSERT_MSG(min < max, "Max should be strictly greather than Min in a colormap.");
+  const double scale = ( value - min ) / static_cast<double>( max - min );
+  const double hue = 360 * ( scale * cycles - floor(scale * cycles));
+  double red, green, blue;
+  HueShadeColorMap<Value,DefaultCycles>::HSVtoRGB( red, green, blue, hue, 0.9, 1.0 );
+  return Color( static_cast<int>( red * 255), 
+    static_cast<int>( green * 255),
+    static_cast<int>( blue * 255) );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Value, int DefaultCycles>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const HueShadeColorMap<Value,DefaultCycles> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - private :
+
+template <typename Value, int DefaultCycles>
+inline
+void
+DGtal::HueShadeColorMap<Value,DefaultCycles>::HSVtoRGB
+( double & r, double & g, double & b,
+  const double h, const double s, const double v)
+{
+  int i;
+  double f, p, q, t;
+  if( s == 0 ) {                     // achromatic (gray)
+    r = g = b = v;
+    return;
+  }
+  i = static_cast<int>( floor( h / 60 ) );
+  f = ( h / 60 ) - i;                        // factorial part of h
+  p = v * ( 1.0 - s );
+  q = v * ( 1.0 - s * f );
+  t = v * ( 1.0 - s * ( 1.0 - f ) );
+  switch( i ) {
+  case 0:
+    r = v; g = t; b = p;
+    break;
+  case 1:
+    r = q; g = v; b = p;
+    break;
+  case 2:
+    r = p; g = v; b = t;
+    break;
+   case 3:
+     r = p; g = q; b = v;
+     break;
+  case 4:
+    r = t;  g = p; b = v;
+    break;
+  default:    // case 5:
+    r = v; g = p; b = q;
+    break;
+  }
+}
+
+

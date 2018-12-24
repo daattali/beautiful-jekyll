@@ -1,0 +1,230 @@
+/**
+* @file moduleShape.dox
+* @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+* Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+*
+* @date 2011/11/26
+*
+* Documentation file for feature moduleShape
+*
+* This file is part of the DGtal library.
+*/
+
+/*
+* Useful to avoid writing DGtal:: in front of every class.
+* Do not forget to add an entry in src/DGtal/base/Config.h.in !
+*/
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleShape Shapes, Shapers and Digitizers
+@author Jacques-Olivier Lachaud, David Coeurjolly, Jérémy Levallois
+
+[TOC]
+@see shapes/exampleEuclideanShapesDecorator.cpp
+
+@seeDGtalTools @ref shapeGenerator
+
+   \section sectmoduleShape1 Introduction of Concepts
+
+In DGtal, we use the generic terminology shape to describe either
+explicit objects (e.g. spheres, cubes,...) or implicit ones (from a
+real valued functions, from a predicate on points,...).
+
+An important usage of these notions in DGtal can be found in the shape
+factory and shape generators tools (see below). However, they can also
+be used to describe predicate on points (for example to construct a
+digital set from an image and a binary predicate to describe the
+region/pixel of interest).
+
+Hence, shapes can be  compact or not (i.e. bounded), oriented or not and
+finally, defined on either the Euclidean space, or the Digital
+one. All these cases are formalized in the following concepts:
+
+ - concepts::CDigitalBoundedShape: Digital shape with lower/upper bounds
+
+ - concepts::CEuclideanBoundedShape: Euclidean shape with lower/upper bounds
+
+ - concepts::CDigitalOrientedShape: Digital shape with an orientation predicate
+
+ - concepts::CEuclideanOrientedShape: Euclidean shape with an orientation predicate
+
+@note An orientation predicate is a method with the following
+interface:
+@code
+DGtal::Orientation orientation( const Point & aPoint )  //for Digital oriented shape
+DGtal::Orientation orientation( const RealPoint & aRealPoint )  //for Euclidean oriented shape
+@endcode
+The DGtal::Orientation values can be {INSIDE, ON, OUTSIDE}.
+
+
+\section sectmoduleShape2 Shapers and Digitizers
+
+Given a bounded and oriented shape, we have several process to
+construct a digital set: given a domain, we can construct the set of points for which
+the  orientation predicate returns INSIDE (defined in Common.h).
+
+For Digital shapes, the set construction (called a @a shaper in the
+following) is quite simple since we just have to define the local domain from the shape
+upper/lower bounds and to scan all grid points.
+
+@note A digital shaper helper method is available in the Shapes class, e.g.:
+@code
+#include <DGtal/shapes/Shapes.h>
+...
+Shapes<Domain>::digitalShaper( myOutputSet, myInputShape)
+@endcode
+
+When considering an Euclidean shape @f$E@f$, we first need to specify a
+digitization process. At this point, DGtal contains a GaussDigitizer
+parametrized by a step grid h and which construct a digital shape
+which corresponds to the grid points in @f$h\cdot{Z}^n@f$ which
+are also in @f$E@f$.
+
+For a flexible digitization, here you have all the steps involved in
+the digitization of an Euclidean shape (@a aShape of type @a Shape):
+
+@code
+  // Creates a digitizer on the window (xLow, xUp).
+  RealPoint xLow( -5.3, -4.3 );
+  RealPoint xUp( 7.4, 4.7 );
+  GaussDigitizer<Space,Shape> dig;
+  dig.attach( aShape ); // attaches the shape.
+  dig.init( xLow, xUp, h );
+
+  // The domain size is given by the digitizer according to the window
+  // and the step.
+  Domain domain = dig.getDomain();
+  MySet aSet( domain );
+  // Creates a set from the digitizer.
+  Shapes<Domain>::digitalShaper( aSet, dig );
+@endcode
+
+@note A simpler (but less flexible) possibility is to use the Euclidean shaper helper method is available in the Shapes class, e.g.:
+@code
+#include <DGtal/shapes/Shapes.h>
+...
+Shapes<Domain>::euclideanShaper( myOutputSet, myInputShape, h)
+@endcode
+In this case, lower and upper bounds are given from the Euclidean
+shape characteristics.
+
+The following figures illustrate the digitization of an ellipse with
+several grid step values.
+
+@image html gauss-ellipse-1.png  "Digitization of a parametric ellipse h=1"
+@image latex gauss-ellipse-1.png   "Digitization of a parametric ellipse h=1" width=5cm
+
+@image html gauss-ellipse-0_5.png  "Digitization of a parametric ellipse h=0.5"
+@image latex gauss-ellipse-0_5.png   "Digitization of a parametric ellipse h=0.5" width=5cm
+
+@image html gauss-ellipse-0_25.png  "Digitization of a parametric ellipse h=0.25"
+@image latex gauss-ellipse-0_25.png   "Digitization of a parametric ellipse h=0.25" width=5cm
+
+@note A command line tool is available to generate multigrid shapes: shapeGenerator
+
+
+\section sectmoduleShape3 Shape Factory
+
+DGtal implements many Euclidean shapes to be used in a multigrid
+analysis of a differential estimator for example. All shapes available
+in DGtal are models of CEuclideanBoundedShape and CEuclideanOrientedShape.
+
+These shapes are either parametric or implicit ones (see
+"shapes/parametric" and "shapes/implicit" files). In order to have a
+simple access to all shapes, just include the "shapes/ShapeFactory.h"
+header file.
+
+@note In dimension 2,
+parametric shapes provide fine approximation of differential
+quantities (length, tangent, curvature,...). These information can be used to
+evaluate digital differential estimators.
+
+The following pictures illustrate some of the shapes defined in
+digital in dimension 2 (note that shapes are defined from a set of
+parameters which are not specified in the captions).
+
+
+
+@image html flower1.png  "Flower h=1"
+@image html flower01.png  "Flower h=0.1"
+@image html accflower1.png  "Accelerated flower h=1"
+@image html accflower01.png  "Accelerated flower h=0.1"
+@image html triangle1.png  "Triangle h=1"
+@image html triangle01.png  "Triangle h=0.1"
+@image html circle1.png  "Circle h=1"
+@image html circle01.png  "Circle h=0.1"
+@image html square1.png  "Square h=1"
+@image html square01.png  "Square h=0.1"
+@image html ellipse1.png  "Ellipse h=1"
+@image html ellipse01.png  "Ellipse h=0.1"
+@image html astroid1.png  "Astroid h=1"
+@image html astroid01.png  "Astroid h=0.1"
+@image html lemniscate1.png  "Lemniscate h=1"
+@image html lemniscate01.png  "Lemniscate h=0.1"
+@image latex flower1.png  "Flower h=1" width=5cm
+@image latex flower01.png  "Flower h=0.1" width=5cm
+@image latex accflower1.png  "Accelerated flower h=1" width=5cm
+@image latex accflower01.png  "Accelerated flower h=0.1" width=5cm
+@image latex triangle1.png  "Triangle h=1" width=5cm
+@image latex triangle01.png  "Triangle h=0.1" width=5cm
+@image latex circle1.png  "Circle h=1" width=5cm
+@image latex circle01.png  "Circle h=0.1" width=5cm
+@image latex square1.png  "Square h=1" width=5cm
+@image latex square01.png  "Square h=0.1" width=5cm
+@image latex ellipse1.png  "Ellipse h=1" width=5cm
+@image latex ellipse01.png  "Ellipse h=0.1" width=5cm
+@image latex astroid1.png  "Astroid h=1" width=5cm
+@image latex astroid01.png  "Astroid h=0.1" width=5cm
+@image latex lemniscate1.png  "Lemniscate h=1" width=5cm
+@image latex lemniscate01.png  "Lemniscate h=0.1" width=5cm
+
+
+
+\section sectmoduleShape4 Constructive Solid Geometry tree on Shapes
+
+In DGtal, you can also use some CSG operations on Euclidean (resp. Digital)
+Shapes, using EuclideanShapesCSG (resp. DigitalShapesCSG).
+See examples in exampleEuclideanShapesDecorator.cpp.
+
+
+As a root for your CSG tree, you need a shape ShapeA, model of
+concepts::CEuclideanBoundedShape and concepts::CEuclideanOrientedShape (concepts::CDigitalBoundedShape and
+concepts::CDigitalOrientedShape).
+Then, you can add (plus()), remove (minus()), intersect (intersection()) any
+ShapeB, models of concepts::CEuclideanBoundedShape and concepts::CEuclideanOrientedShape
+(concepts::CDigitalBoundedShape and concepts::CDigitalOrientedShape) you want. You can combine
+plus(), minus() and intersection() operations.
+
+Example for minus operation on two Euclidean Shapes :
+@snippet shapes/exampleEuclideanShapesDecorator.cpp EuclideanShapesDecoratorUsage
+
+The following images show you binary operations apply on two Ball2D (results are
+ in orange) and in 3D :
+
+@image html union_shapes.png "Plus operation"
+@image html intersection_shapes.png "Intersection operation"
+@image html minus_shapes.png "Minus operation"
+@image html union_shapes_golf.png "Minus operations" width=5cm
+@image latex union_shapes.png "Plus operation" width=5cm
+@image latex intersection_shapes.png "Intersection operation" width=5cm
+@image latex minus_shapes.png "Minus operation" width=5cm
+@image latex union_shapes_golf.png "Minus operations" width=5cm
+
+@see shapes/exampleEuclideanShapesDecorator.cpp
+*/
+
+
+
+
+
+}
+
+
+
+/**
+Example of EuclideanShapesDecorator
+@see @ref moduleShape
+@image html example-EuclideanShapesDecorator.png "Result obtained from CSG operations with implicit balls. "
+@example shapes/exampleEuclideanShapesDecorator.cpp
+**/

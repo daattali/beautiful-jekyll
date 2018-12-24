@@ -1,0 +1,514 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Naive3DDSSComputer.ih
+ * @author Kacper Pluta (\c kacper.pluta@esiee.fr )
+ * Laboratoire d'Informatique Gaspard-Monge - LIGM, A3SI, France
+ *
+ * @date 2014/10/07
+ *
+ * Implementation of inline methods defined in Naive3DDSSComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+/**
+ * Default constructor.
+ * not valid
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::Naive3DDSSComputer()
+{
+  //projections
+  std::vector<DGtal::Dimension> v1,v2,v3;
+  v1.push_back(0);
+  v1.push_back(1);
+  v2.push_back(0);
+  v2.push_back(2);
+  v3.push_back(1);
+  v3.push_back(2);
+  myProjXY.init(v1.begin(),v1.end());
+  myProjXZ.init(v2.begin(),v2.end());
+  myProjYZ.init(v3.begin(),v3.end());
+  blockXY = blockXZ = blockYZ = false;
+}
+
+/**
+ * Constructor with initialisation
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::Naive3DDSSComputer(const ConstIterator& it)
+{
+  //projections
+  std::vector<DGtal::Dimension> v1,v2,v3;
+  v1.push_back(0);
+  v1.push_back(1);
+  v2.push_back(0);
+  v2.push_back(2);
+  v3.push_back(1);
+  v3.push_back(2);
+  myProjXY.init(v1.begin(),v1.end());
+  myProjXZ.init(v2.begin(),v2.end());
+  myProjYZ.init(v3.begin(),v3.end());
+
+  init(it);
+}
+
+/**
+ * Initialisation.
+ * @param it an iterator on a sequence of points
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::init ( const ConstIterator& it )
+{
+  //begin and end iterators
+  myBegin = it;
+  myEnd = it;
+  myEnd++;
+  //adapters and projections
+  IteratorAdapter XYit(it,myProjXY);
+  myXYalgo.init(XYit);
+  IteratorAdapter XZit(it,myProjXZ);
+  myXZalgo.init(XZit);
+  IteratorAdapter YZit(it,myProjYZ);
+  myYZalgo.init(YZit);
+  blockXY = blockXZ = blockYZ = false;
+}
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ * Forbidden by default.
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::Naive3DDSSComputer (
+                                          const Naive3DDSSComputer<TIterator,TInteger,connectivity> & other ) :
+  myProjXY(other.myProjXY), myProjXZ(other.myProjXZ), myProjYZ(other.myProjYZ),
+  myXYalgo(other.myXYalgo), myXZalgo(other.myXZalgo), myYZalgo(other.myYZalgo),
+  myBegin(other.myBegin), myEnd(other.myEnd)
+{
+    blockXY = other.blockXY;
+    blockXZ = other.blockXZ;
+    blockYZ = other.blockYZ;
+}
+
+/**
+ * Assignment.
+ * @param other the object to copy.
+ * @return a reference on 'this'.
+ * Forbidden by default.
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> &
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::operator= (
+                                      const Naive3DDSSComputer<TIterator,TInteger,connectivity> & other )
+{
+  myProjXY = other.myProjXY;
+  myProjXZ = other.myProjXZ;
+  myProjYZ = other.myProjYZ;
+  myXYalgo = other.myXYalgo;
+  myXZalgo = other.myXZalgo;
+  myYZalgo = other.myYZalgo;
+  myBegin = other.myBegin;
+  myEnd = other.myEnd;
+  blockXY = other.blockXY;
+  blockXZ = other.blockXZ;
+  blockYZ = other.blockYZ;
+  return *this;
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+typename DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::Self
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::getSelf() const 
+{
+  return Self();
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+typename DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::Reverse
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::getReverse() const 
+{
+  return Reverse();
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::isInDSS ( const Point3d & point) const 
+{
+  char test = 0;
+  if ( myXYalgo.isInDSS ( myProjXY ( point ) ) ) test++;
+  if ( myXZalgo.isInDSS ( myProjXZ ( point ) ) ) test++;
+  if ( myYZalgo.isInDSS ( myProjYZ ( point ) ) ) test++;
+  return test >= 2 ? true : false;
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::isInDSS ( const ConstIterator & it) const 
+{
+  char test = 0;
+  if ( myXYalgo.isInDSS ( myProjXY ( *it ) ) ) test++;
+  if ( myXZalgo.isInDSS ( myProjXZ ( *it ) ) ) test++;
+  if ( myYZalgo.isInDSS ( myProjYZ ( *it ) ) ) test++;
+  return test >= 2 ? true : false;
+}
+
+/**
+ * Equality operator.
+ * @param other the object to compare with.
+ * @return 'true' either if the points perfectly match
+ * or if the first points match to the last ones
+ * (same DSS scanned in the conversed way)
+ * and 'false' otherwise
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::operator==(
+                                      const Naive3DDSSComputer<TIterator,TInteger,connectivity>& other ) const
+{
+  return (  ( (	myXYalgo == other.myXYalgo ) &&
+            (	myXZalgo == other.myXZalgo ) &&
+            (	myYZalgo == other.myYZalgo ) ) ||
+            ( (*myBegin == *other.myBegin) &&
+            (*myEnd == *other.myEnd) ) );
+}
+
+/**
+ * Difference operator.
+ * @param other the object to compare with.
+ * @return 'false' if equal
+ * 'true' otherwise
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::operator!=(
+                                      const Naive3DDSSComputer<TIterator,TInteger,connectivity> & other ) const
+{
+  return (!(*this == other));
+}
+
+/**
+ * Tests whether the union between a point
+ * (add to the front of the DSS
+ * with respect to the scan orientation)
+ * and a DSS is a DSS.
+ * Computes the parameters of the new DSS
+ * with the added point if true.
+ * @param it an iterator on a sequence of points
+ * @return 'true' if the union is a DSS, 'false' otherwise.
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::extendFront()
+{
+    if ( !isExtendableFront() ) return false;
+
+    char test = 0;
+    if ( extendFront ( myXYalgo, blockXY ) ) test++;
+    if ( extendFront ( myXZalgo, blockXZ ) ) test++;
+    if ( extendFront ( myYZalgo, blockYZ ) ) test++;
+    if ( test >= 2 )
+    {
+        myEnd++;
+        return true;
+    }
+    else return false;
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::extendFront ( ArithmeticalDSSComputer2d & DSS2D, bool & blocked )
+{
+  if ( DSS2D.isExtendableFront() && !blocked )
+  {
+    Point2d p = DSS2D.front();
+    DSS2D.extendFront();
+    if ( DSS2D.front() != p )
+      return true;
+    else
+    {
+      DSS2D.retractFront();
+      blocked = true;
+      return false;
+    }
+  }
+  return false;
+}
+
+/** Tests whether the 3D DSS can be extended at the front.
+ *
+ * @return 'true' if yes, 'false' otherwise
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator, TInteger,connectivity>::isExtendableFront()
+{
+    char test = 0;
+    if ( myXYalgo.isExtendableFront() && !blockXY ) test++;
+    if ( myXZalgo.isExtendableFront() && !blockXZ ) test++;
+    if ( myYZalgo.isExtendableFront() && !blockYZ ) test++;
+    if ( test >= 2 ) return true; else return false;
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+TIterator
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::begin() const {
+  return myBegin;
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+TIterator
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::end() const {
+  return myEnd;
+}
+
+//-----------------------------------------------------------------
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::isValid() const
+{
+  return ( ( myXYalgo.isValid() ) &&
+           ( myXZalgo.isValid() ) &&
+           ( myYZalgo.isValid() ) );
+}
+
+/**
+ * Computes the parameters
+ * (direction, intercept, thickness)
+ * of the DSS
+ * @param direction
+ * @param intercept
+ * @param thickness
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>
+::getParameters ( Point3d& direction, PointR3d& intercept, PointR3d& thickness ) const
+{
+  auto lenXY = std::distance ( myXYalgo.begin(), myXYalgo.end() );
+  auto lenXZ = std::distance ( myXZalgo.begin(), myXZalgo.end() );
+  auto lenYZ = std::distance ( myYZalgo.begin(), myYZalgo.end() );
+  if ( lenXY > lenYZ && lenXZ > lenYZ ) 
+  { //XY-plane, XZ-plane
+    
+    Integer a1 = myXYalgo.b();
+    Integer b1 = myXYalgo.a();
+    Integer a2 = myXZalgo.b();
+    Integer c1 = myXZalgo.a();
+    
+    if ( c1 == 0 || ( a1 == 0 && a2 == 0 ) )
+      direction = Point3d ( a1, b1, c1 );
+    else
+    {
+      if ( b1 == 0  )
+	direction = Point3d ( a2, b1, c1 );
+      else
+      {
+	direction = Point3d ( a1 * a2 , a2 * b1 , a1 * c1 );
+      }
+    }
+    
+    Integer mu1 = myXYalgo.mu();
+    Integer mu2 = myXZalgo.mu();
+    intercept[0] = std::make_pair ( 0, 1 ); intercept[1] = std::make_pair ( -mu1, a1 ); intercept[2] = std::make_pair ( -mu2, a2 );
+    
+    Integer omega1 = myXYalgo.omega()-1;
+    Integer omega2 = myXZalgo.omega()-1;
+    thickness[0] = std::make_pair ( 0, 1 ); thickness[1] = std::make_pair ( -omega1, a1 ); thickness[2] = std::make_pair ( -omega2, a2 );
+    
+  }
+  else 
+  {
+    if ( lenYZ > lenXZ && lenXY > lenXZ ) 
+    { //XY-plane, YZ-plane
+      
+      Integer a1 = myXYalgo.b();
+      Integer b1 = myXYalgo.a();
+      Integer b2 = myYZalgo.b();
+      Integer c2 = myYZalgo.a();
+      
+      if ( a1 == 0 || ( b2 == 0 && b1 == 0 ) )
+	direction = Point3d ( a1, b2, c2 );
+      else
+      {
+	if ( c2 == 0 )
+	  direction = Point3d ( a1, b1, c2 );
+	else
+	{
+	  direction = Point3d ( b2 * a1 , b1 * b2 , b1 * c2 );
+	}
+      }
+      
+      Integer mu1 = myXYalgo.mu();
+      Integer mu2 = myYZalgo.mu();
+      intercept[0] = std::make_pair ( mu1, b1 ); intercept[1] = std::make_pair ( 0, 1 ); intercept[2] = std::make_pair ( -mu2, b2 );
+      
+      Integer omega1 = myXYalgo.omega()-1;
+      Integer omega2 = myYZalgo.omega()-1;
+      thickness[0] = std::make_pair ( omega1, b1 ); thickness[1] = std::make_pair ( 0, 1 ); thickness[2] = std::make_pair ( -omega2, b2 );
+      
+    } 
+    else 
+    { //YZ-plane, XZ-plane
+      Integer b2 = myYZalgo.b();
+      Integer c2 = myYZalgo.a();
+      Integer a2 = myXZalgo.b();
+      Integer c1 = myXZalgo.a();
+      
+      if ( a2 == 0 || ( c2 == 0 && c1 == 0 ) )
+	direction = Point3d ( a2, b2, c2 );
+      else
+      {
+	if ( b2 == 0 )
+	  direction = Point3d ( a2, b2, c1 );
+	else
+	{
+	  direction = Point3d ( c2 * a2, c1 * b2, c1 * c2 );
+	}
+      }
+      
+      Integer mu1 = myYZalgo.mu();
+      Integer mu2 = myXZalgo.mu();
+      intercept[0] = std::make_pair ( mu2, c1 ); intercept[1] = std::make_pair ( mu1, c2 ); intercept[2] = std::make_pair ( 0, 1 );
+      
+      Integer omega1 = myYZalgo.omega()-1;
+      Integer omega2 = myXZalgo.omega()-1;
+      thickness[0] = std::make_pair ( omega2, c1 ); thickness[1] = std::make_pair ( omega1, c2 ); thickness[2] = std::make_pair ( 0, 1);
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+const typename DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::ArithmeticalDSSComputer2d &
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::arithmeticalDSS2dXY() const
+{
+  return myXYalgo;
+}
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+const typename DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::ArithmeticalDSSComputer2d &
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::arithmeticalDSS2dXZ() const
+{
+  return myXZalgo;
+}
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+const typename DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::ArithmeticalDSSComputer2d &
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::arithmeticalDSS2dYZ() const
+{
+  return myYZalgo;
+}
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+const typename DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::ArithmeticalDSSComputer2d &
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::arithmeticalDSS2d( Dimension i ) const
+{
+  ASSERT( i < 3 );
+  switch ( i ) {
+  case 0: return myYZalgo; break;
+  case 1: return myXZalgo; break;
+  default: return myXYalgo; break;
+  }
+}
+
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+bool
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::validArithmeticalDSS2d( Dimension i ) const
+{
+  ASSERT( i < 3 );
+  auto lenXY = std::distance ( myXYalgo.begin(), myXYalgo.end() );
+  auto lenXZ = std::distance ( myXZalgo.begin(), myXZalgo.end() );
+  auto lenYZ = std::distance ( myYZalgo.begin(), myYZalgo.end() );
+  if ( i == 0 && ( lenYZ >= lenXZ || lenYZ >= lenXY ) )
+    return true; 
+  else if ( i == 1 && ( lenXZ >= lenXY || lenXZ >= lenYZ ) )
+    return true; 
+  else if ( i == 2 && ( lenXY >= lenXZ || lenXY >= lenYZ ) )
+  return true;
+  return false;
+}
+
+/**
+ * @return the style name used for drawing this object.
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+std::string
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::className() const
+{
+  return "Naive3DDSSComputer";
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+//------------------------------------------------------------------------------
+//   TEXT DISPLAY
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity>::selfDisplay ( std::ostream & out)
+{
+  out << "[Naive3DDSSComputer] " << " [XYprojection] " << myXYalgo << " [XZprojection] ";
+  out << myXZalgo << " [YZprojection] " << myYZalgo << " [End Naive3DDSSComputer]" <<  std::endl;
+}
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

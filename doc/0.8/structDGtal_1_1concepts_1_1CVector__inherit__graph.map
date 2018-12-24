@@ -1,6 +1,0 @@
-<map id="DGtal::concepts::CVector&lt; T &gt;" name="DGtal::concepts::CVector&lt; T &gt;">
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CDynamicVector.html" title="Aim: Represent any dynamic sized column vector having sparse or dense representation. " alt="" coords="5,232,201,276"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CStaticVector.html" title="Aim: Represent any static sized column vector having sparse or dense representation. " alt="" coords="225,232,400,276"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure. " alt="" coords="112,81,303,109"/>
-<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html. " alt="" coords="121,5,293,33"/>
-</map>

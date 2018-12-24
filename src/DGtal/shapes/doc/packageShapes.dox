@@ -1,0 +1,74 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageShapes.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/01/16
+ *
+ * Documentation file for feature Shapes
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/doc/mainpage.dox
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageShapes  Shapes package
+
+@managers Jacques-Olivier Lachaud, David Coeurjolly
+
+@since 0.6
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+
+This package contains shape related concepts, models and algorithms.
+It provides a generic framework and tools to construct multigrid
+shapes in DGtal. More precisely, this package contains analytical
+objects (parametric, implicit, from point sets,...) with digitization schemes to
+make concrete such objects in a given grid step grid.
+
+Since 0.9.4, there is a module that provides classes and services to
+represent combinatorial surfaces, based on an half-edge data
+structure.
+
+@b Modules
+
+- \ref moduleShape (Jacques-Olivier Lachaud, David Coeurjolly, Adrien Krähenbühl)
+- \ref moduleMesh (Bertrand Kerautret)
+- \ref moduleMeshVoxelization (David Coeurjolly, Monir Hadji)
+- \ref moduleHalfEdgeMesh (Jacques-Olivier Lachaud)
+
+@b Package @b Concepts @b Overview
+
+  - \ref packageShapesConcepts
+
+@b Related @b documentation @b pages
+
+
+*/
+
+}

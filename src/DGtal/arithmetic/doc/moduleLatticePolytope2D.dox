@@ -1,0 +1,194 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+   
+@page moduleLatticePolytope2D  Lattice polytopes in the digital plane ZxZ (convex polygons with vertices at integer coordinates)
+
+@writers Jacques-Olivier Lachaud
+
+Part of the \ref packageArithmetic.
+
+This module gathers classes and functions to represent lattice
+polytopes in 2D (otherwise saide, convex polygons with vertices at
+integer coordinates) and digital half-spaces. The main part of the
+module is the class LatticePolytope2D, which represents these
+polytopes. This module is a possible solution for solving \b integer \b
+linear \b programming in the \b plane. It is thus the basis for the
+COBA algorithm for \b recognizing \b digital \b planes (see
+COBANaivePlaneComputer).
+
+[TOC]
+
+\section dgtal_lattice_polytope_2d_sec1 Creating a lattice polytope in Z2
+
+The class LatticePolytope2D represents an arbitary convex polygon
+in the 2D plane whose vertices have integer coordinates. It is
+parameterized by a digital space \a TSpace (a model of CSpace with
+dimension 2) and by the container class \a TSequence for storing
+vertices (a model of [boost::Sequence
+http://www.sgi.com/tech/stl/Sequence.html] over TSpace::Point, default
+is std::list<TSpace::Point>). The class LatticePolytope2D contains as a data member some \a TSequence instance and you may use all the standard
+methods of sequences. All the useful data of a LatticePolytope2D are in
+the \a TSequence data member.
+
+The class LatticePolytope2D is a model of <a
+href="http://www.sgi.com/tech/stl/Sequence.html">boost::Sequence</a>,
+but also of boost::DefaultConstructible, boost::CopyConstructible,
+boost::Assignable. This class is also a model of
+CDrawableWithBoard2D. You may therefore display it on a Board2D
+object. 
+
+Since a sequence is ordered, its order defines the order of vertices
+along the polygon, i.e. any vertex in the sequence forms an edge with
+the previous vertex and another edge with the next vertex. Note that
+the vertices must follow the \b clockwise ordering, i.e. the inside of
+the polygon is to the right-hand side when moving along the polygon. The
+following example defines a triangle in the standard limited integer
+planes Z2i::Z2 (integer coordinates are \c int32_t):
+
+@code
+#include "DGtal/arithmetic/LatticePolytope2D.h"
+using namespace Z2i;
+...
+typedef LatticePolytope2D<Z2> CIP;
+CIP triangle;
+triangle.push_front( Point( 0, 0 ) );
+triangle.push_front( Point( 0, 7 ) );
+triangle.push_front( Point( 10, 0 ) );
+@endcode
+
+\note This class contains a mutable object IntegerComputer as well as
+several other mutable members to perform computations efficiently (see
+dgtal_integer_computations). However these private data members are
+not copied nor assigned. They exists so as to avoid memory managements
+when using big integers.
+
+You may use any insertion/deletion methods of a sequence (insert,
+erase, push_back, push_front, etc). Be careful however, in order that
+the object has a correct behaviour in more elaborate methods like
+LatticePolytope2D::cut() or LatticePolytope2D::findCut, you must
+enforce that inserted or deleted vertices leave the polytope convex.
+
+\section dgtal_lattice_polytope_2d_sec2 Displaying 2D lattice polytopes
+
+A LatticePolytope2D is a model of CDrawableWithBoard2D. Therefore
+it is displayable on a Board2D with the operator \c <<. The following
+example displays a square in red over its domain.
+
+@snippet arithmetic/lower-integer-convex-hull.cpp lower-integer-convex-hull-instantiation
+
+You may choose colors with the usual CustomStyle / CustomColors
+mechanism. Furthermore, choosing Color::None for filling colors allows
+to draw only the boundary of the polygon.
+
+@image html lower-integer-convex-hull.png "Display of a LatticePolytope2D object in red (a square of side 20)"
+@image latex lower-integer-convex-hull.png "Display of a LatticePolytope2D object in red (a square of side 20)" width=5cm
+
+\section dgtal_lattice_polytope_2d_sec3 Converting a 2D lattice polytope into a digital set
+
+It is sometimes useful to enumerate all the integer points lying
+within the polygon bounds. The method
+LatticePolytope2D::getIncludedDigitalPoints() is templated by the
+type \a TDigitalSet, which must be a model of CDigitalSet. It modifies
+the digital set given in parameter so as to holds these points. For
+now, the complexity is not optimal. If \a D is the size of the domain
+of \a TDigitalSet, \a N the number of vertices of the polygon, then
+the complexity is upper bounded by O(ND log(D)) (if \a TDigitalSet is DigitalSetBySTLSet).
+
+@code
+// cip is some lattice polytope
+Domain domain = cip.boundingBoxDomain();
+DigitalSet aSet( domain );
+cip.getIncludedDigitalPoints( aSet );
+// aSet contains the digital points inside or on the boundary of the polygon.
+board << aSet; // displays them.
+@endcode
+
+\section dgtal_lattice_polytope_2d_sec4 Basic services: vertices, centroid, area
+
+Since a LatticePolytope2D is a sequence, you may iterate over the
+vertices with the usual LatticePolytope2D::begin()and
+LatticePolytope2D::end(), with two versions of iterators (Iterator
+and ConstIterator). To know if the polygon has no vertices, it is
+faster to use LatticePolytope2D::empty(). Otherwise you may obtain
+the following information:
+
+- number of vertices: LatticePolytope2D::size()
+
+- the double of the area, which is an integer:
+  LatticePolytope2D::twiceArea()
+
+- the exact centroid of the polygon as a triplet of integers (x,y,g),
+  where the centroid rational coordinates are (x/g,y/g):
+  LatticePolytope2D::centroid().
+
+A LatticePolytope2D \a P may have zero area (in this case it has at
+most two vertices).  Thanks to Pick formula, you can also get the
+exact number \a b of points on the boundary and the exact number \a i
+of points in the interior of the polygon: \f$ A(P) = i + b/2 - 1 \f$.
+
+- number of interior points: LatticePolytope2D::numberInteriorPoints
+- number of boundary points: LatticePolytope2D::numberBoundaryPoints
+
+@snippet arithmetic/lower-integer-convex-hull.cpp lower-integer-convex-hull-stats
+
+
+\section dgtal_lattice_polytope_2d_sec5 Polygon edges define half-planes
+
+A lattice polytope polygon may be defined by a list of vertices (with some
+properties) but also as the intersection of half-planes. For instance,
+if \f$ (v_i)_{i=0..n-1} \f$ are the vertices of the polytope, then the
+polytope is also the intersection of the half-planes which contains the
+polytope centroid and whose boundary contains edges
+\f$(v_i,v_{i+1})\f$.
+
+You may use the following methods:
+
+- to get the half-plane defined by an edge:
+  LatticePolytope2D::halfSpace() with an iterator on the first
+  vertex.
+
+- to get an arbitrary half-plane defined by three points (two on the
+  boundary, one inside): LatticePolytope2D::halfSpace( const Point & A, const Point & B, const Point & inP ) const.
+
+- Given some half-plane, finds the edges/vertices of this polygon that
+  crosses/borders this half-plane:
+  LatticePolytope2D::findCut(). Also returns the number of
+  vertices inside the half-plane.
+
+
+\section dgtal_lattice_polytope_2d_sec6 Cutting the polygon by half-planes
+
+You may also update a LatticePolytope2D by intersecting it with
+half-planes, i.e. linear constraints of the form ax+by <= c. The
+polygon is updated so that all its vertices have integer coordinates
+and the constraints are fulfilled. This means for instance that a set
+of linear constraints may have a non-empty interior (in the Euclidean
+space sense), but the resulting polygon may be empty or have an empty
+interior. However, it is guaranteed that all integer solutions are
+kept.
+
+This snippet is taken from example lower-integer-convex-hull.cpp. It
+cuts the polygon by calling LatticePolytope2D::cut. An half-plane
+is specified beforehands by instantiating a
+LatticePolytope2D::HalfSpace. Note that it is a redefinition of the
+class ClosedIntegerHalfPlane.
+
+@snippet arithmetic/lower-integer-convex-hull.cpp lower-integer-convex-hull-process
+
+@image html lower-integer-convex-hull-cut.png "Square of side 20 cut by the half-plane 3x+13y <= 19"
+@image latex lower-integer-convex-hull-cut.png "Square of side 20 cut by the half-plane 3x+13y <= 19" width=5cm
+
+This shows the successive polygons obtained by cutting a square with constraints -5x+8y <= c.
+
+@image html lower-animation.gif "Square cut by the half space -5x+8y <= c, for c from -130 to 130"
+
+
+*/
+
+
+}

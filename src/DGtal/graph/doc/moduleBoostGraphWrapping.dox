@@ -1,0 +1,305 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/**
+
+   @page moduleBoostGraphWrapping Interfacing with boost::graph library
+
+   @writers by Jacques-Olivier Lachaud
+
+   Part of the \ref packageGraph.
+   [TOC]
+
+   This module shows how to use the Boost Graph library in DGtal.
+
+   @section dgtal_graph_boost_1 The Boost Graph library.
+
+   The Boost Graph Library
+   (http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/index.html) is
+   a very rich library for handling graph concepts, structures and
+   algorithms. It uses a lot generic programming to define a typology
+   of graphs through a hierarchy of concept, and then it provides many
+   generic algorithms on these graphs. Standard implementation of
+   graphs are also provided (adjacency list, incidence
+   matrix). Furthermore this library uses the Boost Property Map
+   Library
+   (http://www.boost.org/doc/libs/1_52_0/libs/property_map/doc/property_map.html)
+   to associate data with vertices or edges in a very efficient and
+   generic way. 
+
+   For these reasons, it would be interesting that DGtal graphs match
+   boost graph concepts. However, this cannot be done in full
+   genericity with the present DGtal graph concepts. For instance,
+   only finite graphs are handled by boost graphs. Furthermore, it is
+   tricky to have light boost graphs (i.e. graphs constructed
+   on-the-fly), because boost graphs require multipass iterators on
+   vertices and edges. 
+
+   For now, the only models that are wrapped to satisfy boost
+   graph concepts are:
+   - DigitalSurface.
+   - Object, since 0.9.2.
+
+   @note A natural question is why DGtal graph concepts do not match
+   exactly boost graph concepts. This is for mainly three reasons:
+   - DGtal graph concepts are very light compared to boost graph, and
+     new models are thus easier to define.
+   - boost graphs only handle finite graphs and we would like to see
+     the adjacency graph of digital spaces as a graph.
+   - boost graphs do not handle implicitly defined graphs, like graphs
+     discover on-the-fly.
+   If you really need boost graph, a copy / conversion is still possible.
+
+   @section dgtal_graph_boost_2 Wrapping DigitalSurface as a boost graph
+
+   The file DigitalSurfaceBoostGraphInterface.h defines the boost
+   graph traits for any kind of digital surface (see
+   DigitalSurface). With these definitions, a DigitalSurface is a
+   model of boost::VertexListGraphConcept,
+   boost::AdjacencyGraphConcept, boost::IncidenceGraphConcept,
+   boost::EdgeListGraphConcept. You may use a DigitalSurface as any
+   boost graph instance in boost graph algorithms (see
+   http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/table_of_contents.html).
+
+   @remark Note that, for now, vertex iterators are taken as is from
+   the DigitalSurface container. Hence, they must be models of
+   boost::MultiPassInputIterator. This \b is the case for containers
+   SetOfSurfels, DigitalSetBoundary, ImplicitDigitalSurface,
+   ExplicitDigitalSurface. Containers LightImplicitDigitalSurface and
+   LightExplicitDigitalSurface are thus \b not valid.
+
+   @subsection dgtal_graph_boost_2_1 Making DigitalSurface a boost graph model
+
+   To use a DigitalSurface as a boost graph, you must include the
+   header file DigitalSurfaceBoostGraphInterface.h \b before including
+   boost graph headers (!).
+
+@code
+...
+#include "DGtal/topology/DigitalSurface.h"
+...
+#include "DGtal/graph/DigitalSurfaceBoostGraphInterface.h"
+#include <boost/graph/graph_concepts.hpp>
+#include <boost/graph/breadth_first_search.hpp>
+...
+@endcode
+   
+  A model of boost graph must satisfy a given number of traits (to
+  define types) as well as functions acting on these types. This is
+  done through specialization of boost::graph_traits. This is done for
+  concrete realizations of template class DigitalSurface. The
+  following snippet shows the boost graph way to get the types associated to a graph.
+
+@code
+typedef DigitalSurface< .... > Graph; // your preferred model of digital surface
+typedef boost::graph_traits<Graph>::vertex_descriptor vertex_descriptor;   // ie DigitalSurface::Vertex
+typedef boost::graph_traits<Graph>::edge_descriptor edge_descriptor;       // ie DigitalSurface::Arc
+typedef boost::graph_traits<Graph>::vertices_size_type vertices_size_type; // ie DigitalSurface::Size
+typedef boost::graph_traits<Graph>::vertex_iterator vertex_iterator;       // the iterator for visiting all vertices
+typedef boost::graph_traits<Graph>::out_edge_iterator out_edge_iterator;   // the iterator for visiting out edges of a vertex
+typedef boost::graph_traits<Graph>::edge_iterator edge_iterator;           // the iterator for visiting all edges
+@endcode
+
+  You may check that a DigitalSurface satisfies several graph concepts
+
+@code
+BOOST_CONCEPT_ASSERT(( boost::VertexListGraphConcept<Graph> ));
+BOOST_CONCEPT_ASSERT(( boost::AdjacencyGraphConcept<Graph> ));
+BOOST_CONCEPT_ASSERT(( boost::IncidenceGraphConcept<Graph> ));
+BOOST_CONCEPT_ASSERT(( boost::EdgeListGraphConcept<Graph> ));
+@endcode  
+
+   @subsection dgtal_graph_boost_2_2 The boost graph way of visiting vertices
+
+   For any boost graph, there is a function boost::vertices that
+   returns a pair of multipass input iterator on vertices representing
+   the range of vertices of the graph. The following snippet shows how
+   it works.
+
+@code
+Graph g(...); // your instance of digital surface
+for ( std::pair<vertex_iterator, vertex_iterator> vp = boost::vertices( g ); 
+      vp.first != vp.second; ++vp.first )
+  {
+     vertex_descriptor v1 = *vp.first;
+     trace.info() << v1 << std::endl; // displays each vertex
+  }
+@endcode
+
+   @subsection dgtal_graph_boost_2_3 The boost graph way of visiting edges
+
+   For models of EdgeListGraphConcept, there is a function boost::edges that
+   returns a pair of multipass input iterator on edges representing
+   the range of (oriented) edges of the graph. The following snippet shows how
+   it works.
+
+@code
+unsigned int nbEdges = 0;
+for ( std::pair<edge_iterator, edge_iterator> ve = boost::edges( g ); 
+      ve.first != ve.second; ++ve.first, ++nbEdges )
+  {
+    edge_descriptor e = *ve.first;
+    vertex_descriptor v1 = boost::source( e, g );
+    vertex_descriptor v2 = boost::target( e, g );
+    trace.info() << "Edge " << nbEdges << " is " 
+                 << v1 << " -> " << v2 << std::endl;
+  }
+@endcode
+
+   @subsection dgtal_graph_boost_2_4 The boost graph way of getting adjacent vertices
+
+   For models of IncidenceGraphConcept, there is a function
+   boost::out_edges that returns a pair of multipass input iterator on
+   the edges that starts at the given vertex and ends on adjacent
+   vertices. The following snippet shows how it works.
+
+@code
+for ( std::pair<vertex_iterator, vertex_iterator> vp = boost::vertices( g ); 
+      vp.first != vp.second; ++vp.first )
+  {
+    vertex_descriptor v1 = *vp.first;
+    trace.info() << "Neighbors of " << v1 << " are";
+    for ( std::pair<out_edge_iterator, out_edge_iterator> ve = boost::out_edges( v1, g ); 
+          ve.first != ve.second; ++ve.first )
+      {
+        vertex_descriptor v2 = boost::target( *ve.first, g );
+        trace.info() << " " << v2;
+      }
+      trace.info() << std::endl;
+  }
+@endcode
+
+   @subsection dgtal_graph_boost_2_5 Property maps for more elaborate algorithms
+
+   If you wish to use algorithms of the Boost Graph Library, most of
+   them requires mapping from vertex or edge to some value (for
+   instance a color for marking already visited vertices or a scalar
+   for storing a distance or a weight). This is done very generically
+   in Boost Graph through property maps. The system is rather complex
+   but allows you to use indifferently in your algorithms an external
+   map (for instance a std::map< vertex_descriptor, int >) or an
+   embedded value in the vertex_descriptor type.
+
+   Standard boost graphs models offer simple mechanism to get a given
+   property map for a graph. In DGtal, graph models do not integrate
+   -- for now -- property maps. Therefore, only external property maps
+   can be used. The snippet below shows how to create two property
+   maps for the digital surface \c g, using standard property map
+   wrappers given in the Boost Property Map Library.
+
+@code
+#include <boost/property_map/property_map.hpp>
+...
+
+  // get the property map for coloring vertices (used for not visiting twice the same vertex).
+  typedef std::map< vertex_descriptor, boost::default_color_type > StdColorMap; // the container type
+  StdColorMap colorMap;                                                         // the container instance (will store computations).
+  boost::associative_property_map< StdColorMap > propColorMap( colorMap );      // a facade aroundcolorMap 
+
+  // get the property map for labelling vertices (the mapping Vertex -> Size that stores the component label for each vertex)
+  typedef std::map< vertex_descriptor, vertices_size_type > StdComponentMap;
+  StdComponentMap componentMap;
+  boost::associative_property_map< StdComponentMap > propComponentMap( componentMap );
+@endcode
+
+  We may afterwards use this property maps in boost graph
+  algorithms. This snippet extracts the connected components of the
+  graph \c g, and labels each vertex with its component (result is
+  stored in \c componentMap, hence is also accessible with \c
+  propComponentMap).
+
+@code
+  // g must be a model of VertexListGraph
+  vertices_size_type nbComp =
+    boost::connected_components // boost graph connected components algorithm.
+    ( g, // the graph
+      propComponentMap, // the mapping vertex -> label
+      boost::color_map( propColorMap ) // this map is used internally when computing connected components.
+      );
+  trace.info() << "- nbComponents = " << nbComp << std::endl;
+@endcode
+
+  Note that \c propColorMap is given a \b named parameter with a call
+  to boost::color_map. This is the method used in the Boost Graph
+  Library to give handle parameters, especially when the algorithm
+  requires a lot of parameters, some of them being optionnal. This is explained in section
+  (http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/bgl_named_params.html).
+
+@note You may of course use the VertexMap rebind mechanism when
+creating your property map, as follows.
+
+@code
+  // Works if VertexMap is a correct model of boost::UniqueAssociativeContainer and boost::PairAssociativeContainer.
+  typedef typename Graph::VertexMap< vertices_size_type > MyComponentMap;
+  MyComponentMap componentMap;
+  boost::associative_property_map< MyComponentMap > propComponentMap( componentMap );
+@endcode
+
+  @subsection dgtal_graph_boost_2_6 A breadth-first visit with the Boost Graph Library
+
+  We need to store distances to the start vertex, therefore we create
+  a dedicated property map (here \c propDistanceMap). The algorithm
+  also requires a queue (here \c Q) and a first vertex (\c start).
+
+@code
+  // get the property map for storing distances
+  typedef std::map< vertex_descriptor, unsigned int > StdDistanceMap;
+  StdDistanceMap distanceMap;
+  boost::associative_property_map< StdDistanceMap > propDistanceMap( distanceMap );
+  boost::queue< vertex_descriptor > Q;            // std::queue does not have top().
+  vertex_descriptor start = *( g.begin() );
+  boost::breadth_first_visit                      // boost graph breadth first visiting algorithm.
+    ( g,     // the graph
+      start, // the starting vertex
+      Q,     // the buffer for breadth first queueing
+      boost::make_bfs_visitor( boost::record_distances( propDistanceMap, boost::on_tree_edge() ) ), // only record distances
+      propColorMap  // necessary for visiting vertices
+      );
+@endcode
+
+  The following snippet computes a vertex that is as far away as
+  possible from \c start.
+
+@code
+  unsigned int maxD = 0;
+  vertex_descriptor furthest = start;
+  for ( std::pair<vertex_iterator, vertex_iterator> vp = boost::vertices( g ); 
+        vp.first != vp.second; ++vp.first )
+    {
+      unsigned int d = boost::get( propDistanceMap, *vp.first );
+      if ( d > maxD ) 
+        {
+          maxD = d;
+          furthest = *vp.first;
+        }
+    }
+  trace.info() << "- d[ " << furthest << " ] = " << maxD << std::endl;
+@endcode
+
+  @subsection dgtal_graph_boost_2_7 More complex algorithms
+
+You may have a look at \ref
+graph/testDigitalSurfaceBoostGraphInterface.cpp to see a few more
+examples of using Boost Graph algorithms (max-flow and min-cut).
+
+  @subsection dgtal_graph_boost_3 Wrapping Object as a boost graph
+
+   The file \ref ObjectBoostGraphInterface.h defines the boost
+   graph traits for any kind of Object (see
+   Object). With those definitios, an Object is a model of
+   VertexListGraphConcept, AdjacencyGraphConcept,
+   IncidenceGraphConcept, EdgeListGraphConcept.
+   You may use an Object as a graph in any Boost Graph Library
+   algorithm that satisfies the mentioned concepts.
+
+   You may have a look at \ref
+   graph/testObjectBoostGraphInterface.cpp for examples
+   on how to use Object as a graph. Also see DigitalSurface section,
+   as the interfaces are similar.
+
+*/
+
+}

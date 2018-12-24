@@ -1,0 +1,485 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSetBySTLSet.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et
+ * Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @date 2010/07/01
+ *
+ * Implementation of inline methods defined in DigitalSetBySTLSet.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename Domain, typename Compare>
+inline
+DGtal::DigitalSetBySTLSet<Domain, Compare>::~DigitalSetBySTLSet()
+{
+}
+
+/**
+ * Constructor.
+ * Creates the empty set in the domain [d].
+ *
+ * @param d any counted pointer on domain.
+ */
+template <typename Domain, typename Compare>
+inline
+DGtal::DigitalSetBySTLSet<Domain, Compare>::DigitalSetBySTLSet
+( Clone<Domain> d, const Compare & c )
+  : myDomain( d ), mySet( c )
+{
+}
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ */
+template <typename Domain, typename Compare>
+inline
+DGtal::DigitalSetBySTLSet<Domain, Compare>::DigitalSetBySTLSet( const DigitalSetBySTLSet<Domain, Compare> & other )
+  : myDomain( other.myDomain ), mySet( other.mySet )
+{
+}
+
+/**
+ * Assignment.
+ * @param other the object to copy.
+ * @return a reference on 'this'.
+ */
+template <typename Domain, typename Compare>
+inline
+DGtal::DigitalSetBySTLSet<Domain, Compare> &
+DGtal::DigitalSetBySTLSet<Domain, Compare>::operator= ( const DigitalSetBySTLSet<Domain, Compare> & other )
+{
+  ASSERT( ( domain().lowerBound() <= other.domain().lowerBound() )
+    && ( domain().upperBound() >= other.domain().upperBound() )
+    && "This domain should include the domain of the other set in case of assignment." );
+  mySet = other.mySet;
+  return *this;
+}
+
+
+/**
+ * @return the embedding domain.
+ */
+template <typename Domain, typename Compare>
+inline
+const Domain &
+DGtal::DigitalSetBySTLSet<Domain, Compare>::domain() const
+{
+  return *myDomain;
+}
+
+template <typename Domain, typename Compare>
+inline
+DGtal::CowPtr<Domain> 
+DGtal::DigitalSetBySTLSet<Domain, Compare>::domainPointer() const
+{
+  return myDomain;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+/**
+ * @return the number of elements in the set.
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::Size
+DGtal::DigitalSetBySTLSet<Domain, Compare>::size() const
+{
+  return (unsigned int)mySet.size();
+}
+
+/**
+ * @return 'true' iff the set is empty (no element).
+ */
+template <typename Domain, typename Compare>
+inline
+bool
+DGtal::DigitalSetBySTLSet<Domain, Compare>::empty() const
+{
+  return mySet.empty();
+}
+
+
+/**
+ * Adds point [p] to this set.
+ *
+ * @param p any digital point.
+ * @pre p should belong to the associated domain.
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::insert( const Point & p )
+{
+  // ASSERT( domain().isInside( p ) );
+  mySet.insert( p );
+}
+
+
+/**
+ * Adds the collection of points specified by the two iterators to
+ * this set.
+ *
+ * @param first the start point in the collection of Point.
+ * @param last the last point in the collection of Point.
+ * @pre all points should belong to the associated domain.
+ */
+template <typename Domain, typename Compare>
+template <typename PointInputIterator>
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::insert( PointInputIterator first, PointInputIterator last )
+{
+  mySet.insert( first, last );
+}
+
+
+/**
+ * Adds point [p] to this set if the point is not already in the
+ * set.
+ *
+ * @param p any digital point.
+ *
+ * @pre p should belong to the associated domain.
+ * @pre p should not belong to this.
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::insertNew( const Point & p )
+{
+  // ASSERT( domain().isInside( p ) );
+  mySet.insert( p );
+}
+
+/**
+ * Adds the collection of points specified by the two iterators to
+ * this set.
+ *
+ * @param first the start point in the collection of Point.
+ * @param last the last point in the collection of Point.
+ *
+ * @pre all points should belong to the associated domain.
+ * @pre each point should not belong to this.
+ */
+template <typename Domain, typename Compare>
+template <typename PointInputIterator>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::insertNew
+( PointInputIterator first, PointInputIterator last )
+{
+  mySet.insert( first, last );
+}
+
+/**
+ * Removes point [p] from the set.
+ *
+ * @param p the point to remove.
+ * @return the number of removed elements (0 or 1).
+ */
+template <typename Domain, typename Compare>
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::Size
+DGtal::DigitalSetBySTLSet<Domain, Compare>::erase( const Point & p )
+{
+  return (unsigned int)mySet.erase( p );
+}
+
+/**
+ * Removes the point pointed by [it] from the set.
+ *
+ * @param it an iterator on this set.
+ * Note: generally faster than giving just the point.
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::erase( Iterator it )
+{
+  mySet.erase( it );
+}
+
+/**
+ * Clears the set.
+ * @post this set is empty.
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::clear()
+{
+  mySet.clear();
+}
+
+/**
+ * @param p any digital point.
+ * @return a const iterator pointing on [p] if found, otherwise end().
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::ConstIterator
+DGtal::DigitalSetBySTLSet<Domain, Compare>::find( const Point & p ) const
+{
+  return mySet.find( p );
+}
+
+/**
+ * @param p any digital point.
+ * @return an iterator pointing on [p] if found, otherwise end().
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::Iterator
+DGtal::DigitalSetBySTLSet<Domain, Compare>::find( const Point & p )
+{
+  return mySet.find( p );
+}
+
+/**
+ * @return a const iterator on the first element in this set.
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::ConstIterator
+DGtal::DigitalSetBySTLSet<Domain, Compare>::begin() const
+{
+  return mySet.begin();
+}
+
+/**
+ * @return a const iterator on the element after the last in this set.
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::ConstIterator
+DGtal::DigitalSetBySTLSet<Domain, Compare>::end() const
+{
+  return mySet.end();
+}
+
+/**
+ * @return an iterator on the first element in this set.
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::Iterator
+DGtal::DigitalSetBySTLSet<Domain, Compare>::begin()
+{
+  return mySet.begin();
+}
+
+/**
+ * @return a iterator on the element after the last in this set.
+ */
+template <typename Domain, typename Compare>
+inline
+typename DGtal::DigitalSetBySTLSet<Domain, Compare>::Iterator
+DGtal::DigitalSetBySTLSet<Domain, Compare>::end()
+{
+  return mySet.end();
+}
+
+/**
+ * set union to left.
+ * @param aSet any other set.
+ */
+template <typename Domain, typename Compare>
+inline
+DGtal::DigitalSetBySTLSet<Domain, Compare> &
+DGtal::DigitalSetBySTLSet<Domain, Compare>::operator+=( const DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  if ( this != &aSet )
+    {
+      Iterator it_dst = end();
+      for ( ConstIterator it_src = aSet.begin();
+      it_src != aSet.end();
+      ++it_src )
+  {
+    // Use hint it_dst to go faster.
+    it_dst = mySet.insert( it_dst, *it_src );
+  }
+    }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename Domain, typename Compare>
+inline
+bool
+DGtal::DigitalSetBySTLSet<Domain, Compare>
+::operator()( const Point & p ) const
+{
+  return find( p ) != end();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Other Set services -----------------------------
+
+
+template <typename Domain, typename Compare>
+template <typename TOutputIterator>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::computeComplement(TOutputIterator& ito) const
+{
+  typename Domain::ConstIterator itPoint = domain().begin();
+  typename Domain::ConstIterator itEnd = domain().end();
+  while ( itPoint != itEnd ) {
+    if ( find( *itPoint ) == end() ) {
+      *ito++ = *itPoint;
+    }
+    ++itPoint;
+  }
+}
+
+/**
+ * Builds the complement in the domain of the set [other_set] in
+ * this.
+ *
+ * @param other_set defines the set whose complement is assigned to 'this'.
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::assignFromComplement
+( const DigitalSetBySTLSet<Domain, Compare> & other_set )
+{
+  clear();
+  typename Domain::ConstIterator itPoint = domain().begin();
+  typename Domain::ConstIterator itEnd = domain().end();
+  while ( itPoint != itEnd ) {
+    if ( other_set.find( *itPoint ) == other_set.end() ) {
+      insert( *itPoint );
+    }
+    ++itPoint;
+  }
+}
+
+/**
+ * Computes the bounding box of this set.
+ *
+ * @param lower the first point of the bounding box (lowest in all
+ * directions).
+ * @param upper the last point of the bounding box (highest in all
+ * directions).
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::computeBoundingBox
+( Point & lower, Point & upper ) const
+{
+  lower = domain().upperBound();
+  upper = domain().lowerBound();
+  ConstIterator it = begin();
+  ConstIterator itEnd = end();
+  while ( it != itEnd ) {
+    lower = lower.inf( *it );
+    upper = upper.sup( *it );
+    ++it;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Domain, typename Compare>
+inline
+void
+DGtal::DigitalSetBySTLSet<Domain, Compare>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSetBySTLSet]" << " size=" << size();
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Domain, typename Compare>
+inline
+bool
+DGtal::DigitalSetBySTLSet<Domain, Compare>::isValid() const
+{
+  return true;
+}
+
+
+// --------------- CDrawableWithBoard2D realization -------------------------
+
+/**
+ * Default drawing style object.
+ * @return the dyn. alloc. default style for this object.
+ */
+
+/**
+ * @return the style name used for drawing this object.
+ */
+template<typename Domain, typename Compare>
+inline
+std::string
+DGtal::DigitalSetBySTLSet<Domain, Compare>::className() const
+{
+  return "DigitalSetBySTLSet";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline function                                         //
+
+template <typename Domain, typename Compare>
+inline
+std::ostream &
+DGtal::operator<< ( std::ostream & out, const DGtal::DigitalSetBySTLSet<Domain, Compare> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

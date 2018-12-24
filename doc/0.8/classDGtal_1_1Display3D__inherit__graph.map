@@ -1,8 +1,0 @@
-<map id="DGtal::Display3D&lt; Space, KSpace &gt;" name="DGtal::Display3D&lt; Space, KSpace &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1Board3D.html" title="The class Board3D is a type of Display3D which export the figures in the format OBJ/MTL when calling ..." alt="" coords="325,5,502,49"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1Board3DTo2D.html" title="Class for PDF, PNG, PS, EPS, SVG export drawings with Cairo with 3D&#45;&gt;2D projection. " alt="" coords="336,73,491,117"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Viewer3D.html" title="DGtal::Viewer3D\&lt; Space,\l KSpace \&gt;" alt="" coords="322,141,505,185"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; Sp,\l KSp \&gt;" alt="" coords="331,209,496,253"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; S,\l KS \&gt;" alt="" coords="335,277,492,321"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1Board3DTo2D.html" title="DGtal::Board3DTo2D\l\&lt; S, KS \&gt;" alt="" coords="619,156,774,199"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="DGtal::LambdaMST3D&lt; DSSSegmentationComputer, LambdaFunction &gt;" name="DGtal::LambdaMST3D&lt; DSSSegmentationComputer, LambdaFunction &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1LambdaMST3DEstimator.html" title="DGtal::LambdaMST3DEstimator\l\&lt; Z3i::Space, DSSSegmentationComputer,\l TangentFromDSS3DFunctor\&lt; DSSSegmentationComputer\l::SegmentComputer, LambdaFunction \&gt; \&gt;" alt="" coords="2783,67,3180,149"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="DGtal::InHalfPlaneBySimple3x3\lMatrix\&lt; Point, double \&gt;" alt="" coords="1812,99,2031,146"/>
-<area shape="rect" id="node20" href="$classDGtal_1_1LambdaMST3DEstimator.html" title="DGtal::LambdaMST3DEstimator\l\&lt; TSpace, TSegmentation,\l Functor \&gt;" alt="" coords="2175,32,2399,96"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1SimpleMatrix.html" title="DGtal::SimpleMatrix\l\&lt; Integer, 3, 3 \&gt;" alt="" coords="1163,93,1312,139"/>
-<area shape="rect" id="node17" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o..." alt="" coords="1425,143,1644,190"/>
-<area shape="rect" id="node14" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="819,137,1003,183"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="160,103,280,132"/>
-</map>

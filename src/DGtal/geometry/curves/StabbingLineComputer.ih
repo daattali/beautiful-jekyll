@@ -1,0 +1,549 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file StabbingLineComputer.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/09/26
+ *
+ * Implementation of inline methods defined in StabbingLineComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TConstIterator>
+inline
+DGtal::StabbingLineComputer<TConstIterator>::StabbingLineComputer()
+:myBegin(), myEnd(), myPreimagePtr(), myFlagIsInit(false), myFlagIsCW(true)
+{
+}
+
+template <typename TConstIterator>
+inline
+DGtal::StabbingLineComputer<TConstIterator>::StabbingLineComputer( const Self& other )
+:myBegin(other.myBegin), myEnd(other.myEnd), myPreimagePtr(other.myPreimagePtr), 
+myFlagIsInit(other.myFlagIsInit), myFlagIsCW(other.myFlagIsCW)
+{
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Self&
+DGtal::StabbingLineComputer<TConstIterator>::operator= ( const Self& other )
+{
+  if ( this != &other )
+  {
+    myBegin = other.myBegin;
+    myEnd = other.myEnd;
+    myPreimagePtr = other.myPreimagePtr;
+    myFlagIsInit = other.myFlagIsInit; 
+    myFlagIsCW = other.myFlagIsCW; 
+  }
+  return *this;
+}
+
+template <typename TConstIterator>
+inline
+DGtal::StabbingLineComputer<TConstIterator>::~StabbingLineComputer()
+{
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::operator==( const Self& other ) const
+{
+  if (isValid()&&other.isValid())
+  {
+    Pair firstPair( *myBegin );
+    Pair oFirstPair( *(other.myBegin) ); 
+    if ( (firstPair.first == oFirstPair.first)
+       &&(firstPair.second == oFirstPair.second) )
+    {
+      ConstIterator it (myEnd); 
+      --it;
+      Pair lastPair( *it );  
+      ConstIterator oIt (other.myEnd); 
+      --oIt;
+      Pair oLastPair( *oIt ); 
+     
+      if ( (lastPair.first == oLastPair.first)
+         &&(lastPair.second == oLastPair.second) )
+      {
+        return ( *myPreimagePtr == *(other.myPreimagePtr) ); 
+      }
+      else return false; 
+    } 
+    else return false; 
+  }
+  else 
+  {
+    return ( (!isValid()) && (!other.isValid()) );
+  }
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::operator!=( const Self& other ) const
+{
+  return !(*this == other); 
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Reverse
+DGtal::StabbingLineComputer<TConstIterator>::getReverse() const
+{
+  return Reverse(); 
+}
+
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Self
+DGtal::StabbingLineComputer<TConstIterator>::getSelf() const
+{
+  return Self(); 
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isValid() const
+{
+  if ( myPreimagePtr.get() != 0 )
+  {
+    return myPreimagePtr->isValid(); 
+  }
+  else 
+  {
+    return false;
+  }
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::ConstIterator
+DGtal::StabbingLineComputer<TConstIterator>::begin() const
+{
+  return myBegin;
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::ConstIterator
+DGtal::StabbingLineComputer<TConstIterator>::end() const
+{
+  return myEnd;
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Point
+DGtal::StabbingLineComputer<TConstIterator>::Uf() const
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  return myPreimagePtr->Uf();
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Point
+DGtal::StabbingLineComputer<TConstIterator>::Ul() const
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  return myPreimagePtr->Ul();
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Point
+DGtal::StabbingLineComputer<TConstIterator>::Lf() const
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  return myPreimagePtr->Lf();
+}
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::Point
+DGtal::StabbingLineComputer<TConstIterator>::Ll() const
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  return myPreimagePtr->Ll();
+}
+
+
+template <typename TConstIterator>
+inline
+typename DGtal::StabbingLineComputer<TConstIterator>::PreimagePtr
+DGtal::StabbingLineComputer<TConstIterator>::getPreimage() const
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  return myPreimagePtr;
+}
+
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isClockwiseOriented() const
+{
+  return myFlagIsCW;
+}
+
+
+template <typename TConstIterator>
+inline
+void
+DGtal::StabbingLineComputer<TConstIterator>::getParameters(double& alpha, double& beta, double& gamma) const
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  myPreimagePtr->getSeparatingStraightLine(alpha, beta, gamma);
+}
+
+template <typename TConstIterator>
+inline
+void
+DGtal::StabbingLineComputer<TConstIterator>::projects(double& x, double& y, 
+                const double& alpha, const double& beta, const double& gamma) const
+{
+  ASSERT( (alpha!=0)||(beta!=0) );
+  double d2 = ( alpha * alpha + beta * beta );
+  double s = beta*x - alpha*y; 
+  x = (beta*s - alpha*gamma)/d2;
+  y = -(alpha*s + beta*gamma)/d2;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Growth operations                                                        //
+
+template <typename TConstIterator>
+inline
+void
+DGtal::StabbingLineComputer<TConstIterator>::init(const ConstIterator& anIt)
+{
+  myBegin = anIt; 
+  myEnd = anIt; 
+  ++myEnd; 
+  Pair aPair( *anIt); 
+  myPreimagePtr = PreimagePtr( new Preimage( aPair.first, aPair.second, StraightLine() ) );
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isConcave()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  Pair aPair( *myEnd ); 
+  bool isExterior = false; 
+
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isExterior = myPreimagePtr->isLeftExteriorAtTheFront( aPair.first, aPair.second ); 
+    else
+      isExterior = myPreimagePtr->isRightExteriorAtTheBack( aPair.first, aPair.second ); 
+    
+  }
+
+  return isExterior; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isConvex()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  Pair aPair( *myEnd ); 
+  bool isExterior = false; 
+
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isExterior = myPreimagePtr->isRightExteriorAtTheFront( aPair.first, aPair.second ); 
+    else
+      isExterior = myPreimagePtr->isLeftExteriorAtTheBack( aPair.first, aPair.second ); 
+    
+  }
+
+  return isExterior; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isOppositeEndConcave()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  ConstIterator it( myBegin ); 
+  --it; 
+  Pair aPair( *it ); 
+  bool isExterior = false; 
+
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isExterior = myPreimagePtr->isRightExteriorAtTheBack( aPair.first, aPair.second ); 
+    else
+      isExterior = myPreimagePtr->isLeftExteriorAtTheFront( aPair.first, aPair.second ); 
+    
+  }
+
+  return isExterior; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isOppositeEndConvex()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  ConstIterator it( myBegin ); 
+  --it; 
+  Pair aPair( *it ); 
+  bool isExterior = false; 
+
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isExterior = myPreimagePtr->isLeftExteriorAtTheBack( aPair.first, aPair.second ); 
+    else
+      isExterior = myPreimagePtr->isRightExteriorAtTheFront( aPair.first, aPair.second ); 
+    
+  }
+
+  return isExterior; 
+}
+
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isExtendableFront()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  Pair aPair( *myEnd ); 
+  bool isOK = false; 
+  
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isOK = myPreimagePtr->canBeAddedAtTheFront( aPair.first, aPair.second ); 
+    else
+      isOK = myPreimagePtr->canBeAddedAtTheBack( aPair.first, aPair.second ); 
+    
+  } else
+  { //not initialized yet
+    if ( myPreimagePtr->canBeAddedAtTheFront( aPair.first, aPair.second ) )
+      isOK = true; 
+    else if ( myPreimagePtr->canBeAddedAtTheBack( aPair.first, aPair.second ) )
+      isOK = true; 
+  }
+  
+  return isOK; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::extendFront()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  Pair aPair( *myEnd ); 
+  bool isOK = false; 
+  
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isOK = myPreimagePtr->addFront( aPair.first, aPair.second ); 
+    else
+      isOK = myPreimagePtr->addBack( aPair.first, aPair.second ); 
+    
+  } else
+  { //not initialized yet
+    if ( myPreimagePtr->addFront( aPair.first, aPair.second ) )
+    {
+      myFlagIsCW = true;
+      isOK = true; 
+    }
+    else if ( myPreimagePtr->addBack( aPair.first, aPair.second ) )
+    {
+      myFlagIsCW = false;
+      isOK = true; 
+    }
+    myFlagIsInit = true; 
+  }
+  
+  if (isOK) 
+  {
+    ++myEnd; 
+    return true; 
+  } else return false; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::isExtendableBack()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  ConstIterator it( myBegin ); 
+  --it; 
+  Pair aPair( *it ); 
+  bool isOK = false; 
+  
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isOK = myPreimagePtr->canBeAddedAtTheBack( aPair.first, aPair.second ); 
+    else
+      isOK = myPreimagePtr->canBeAddedAtTheFront( aPair.first, aPair.second ); 
+    
+  } else
+  { //not initialized yet
+    if ( myPreimagePtr->canBeAddedAtTheBack( aPair.first, aPair.second ) )
+      isOK = true; 
+    else if ( myPreimagePtr->canBeAddedAtTheFront( aPair.first, aPair.second ) )
+      isOK = true; 
+  }
+  
+  return isOK; 
+}
+
+template <typename TConstIterator>
+inline
+bool
+DGtal::StabbingLineComputer<TConstIterator>::extendBack()
+{
+  ASSERT( myPreimagePtr.get() != 0 ); 
+  ConstIterator it( myBegin ); 
+  --it; 
+  Pair aPair( *it ); 
+  bool isOK = false; 
+  
+  if (myFlagIsInit)
+  { //initialized
+    
+    if (myFlagIsCW) 
+      isOK = myPreimagePtr->addBack( aPair.first, aPair.second ); 
+    else
+      isOK = myPreimagePtr->addFront( aPair.first, aPair.second ); 
+    
+  } else
+  { //not initialized yet
+    if ( myPreimagePtr->addBack( aPair.first, aPair.second ) )
+    {
+      myFlagIsCW = true;
+      isOK = true; 
+    }
+    else if ( myPreimagePtr->addFront( aPair.first, aPair.second ) )
+    {
+      myFlagIsCW = false;
+      isOK = true; 
+    }
+    myFlagIsInit = true; 
+  }
+  
+  if (isOK) 
+  {
+    myBegin = it; 
+    return true; 
+  } else return false; 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Display :
+
+template <typename TConstIterator>
+inline
+void
+DGtal::StabbingLineComputer<TConstIterator>::selfDisplay ( std::ostream & out ) const
+{
+  out << std::endl;
+  out << "[StabbingLineComputer]" << std::endl;
+  if (isValid())
+  {
+    Pair firstPair( *myBegin ); 
+    out << "\t From " << firstPair.first << firstPair.second << std::endl; 
+    ConstIterator it (myEnd); 
+    --it;
+    Pair lastPair( *it );  
+    out << "\t To " << lastPair.first << lastPair.second << std::endl; 
+    ASSERT( myPreimagePtr.get() != 0 ); 
+    out << (*myPreimagePtr); 
+  }
+  else
+  {
+    out << "\t not valid" << std::endl; 
+  }
+  out << "[end of StabbingLineComputer]" << std::endl;
+}
+
+template <typename TConstIterator>
+inline
+std::string
+DGtal::StabbingLineComputer<TConstIterator>::className() const
+{
+  return "StabbingLineComputer";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TConstIterator>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const StabbingLineComputer<TConstIterator> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

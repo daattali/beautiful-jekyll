@@ -1,0 +1,449 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MultiStatistics.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @author Jacques-Olivier Lachaud
+ * @date 2015/11/09
+ *
+ * Implementation of inline methods defined in MultiStatistics.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iostream>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline 
+
+
+inline
+DGtal::MultiStatistics::MultiStatistics( const unsigned int size, 
+                                         const bool storeSamples )
+{
+  mySamples = 0;
+  myExp = 0;
+  myExp2 = 0;
+  myVar = 0;
+  myUnbiasedVar = 0;
+  myMax = 0;
+  myMin = 0;
+  myValues = 0;
+  myIndiceMax = 0;
+  myIndiceMin = 0;
+  myIsTerminate = false;
+  init( size, storeSamples );
+}
+
+
+
+
+
+
+
+inline
+DGtal::MultiStatistics::~MultiStatistics()
+{
+  erase();
+}
+
+
+
+
+void
+DGtal::MultiStatistics::read( std::istream & in, MultiStatistics & samples,
+                              const std::vector<unsigned int> & indices )
+{
+  std::string str;
+  getline( in, str );
+  while ( in.good() )
+    {
+      if ( ( str != "" ) 
+	   && ( str[ 0 ] != '#' ) )
+	{
+          std::istringstream in_str( str );
+	  unsigned int idx = 1;
+	  double val;
+	  while ( in_str.good() )
+	    {
+	      in_str >> val;
+	      for ( unsigned int j = 0; j < indices.size(); ++j )
+		if ( indices[ j ] == idx )
+		  {
+		    samples.addValue( j, val );
+		    // cout << "Adding " << val << " to " << j << endl;
+		  }
+	      ++idx;
+	    }
+	}
+      getline( in, str );
+    }
+}
+
+
+
+inline
+unsigned int
+DGtal::MultiStatistics::nb() const
+{
+  return myNb;
+}
+
+
+inline
+unsigned int
+DGtal::MultiStatistics::samples( const unsigned int k ) const
+{
+  return mySamples[ k ];
+}
+
+
+inline
+double 
+DGtal::MultiStatistics::mean( const unsigned int k ) const
+{
+  ASSERT(myIsTerminate);
+  return myExp[ k ];
+}
+
+
+
+inline
+double 
+DGtal::MultiStatistics::variance( const unsigned int k ) const
+{
+  ASSERT(myIsTerminate);
+  return myVar[ k ];
+}
+
+
+
+inline
+double 
+DGtal::MultiStatistics::unbiasedVariance( const unsigned int k ) const
+{
+  ASSERT(myIsTerminate);
+  return myUnbiasedVar[ k ];
+}
+
+
+inline
+double 
+DGtal::MultiStatistics::max( const unsigned int k ) const
+{
+  return myMax[ k ];
+}
+
+
+inline
+unsigned int
+DGtal::MultiStatistics::maxIndice( const unsigned int k ) const
+{
+  return myIndiceMax[ k ];
+}
+
+
+
+inline
+double 
+DGtal::MultiStatistics::min( const unsigned int k ) const
+{
+  return myMin[ k ];
+}
+
+inline
+unsigned int 
+DGtal::MultiStatistics::minIndice( const unsigned int k ) const
+{
+  return myIndiceMin[ k ];
+}
+
+
+
+inline
+double
+DGtal::MultiStatistics::value( const unsigned int k, const unsigned int i ) const
+{
+  if ( myStoreSamples ) {
+    ASSERT( ( k < myNb )
+		       && ( myValues != 0 ) 
+		       && ( i < mySamples[ k ] ) );
+    return myValues[ k ][ i ];
+  }
+  return 0.0;
+}
+
+
+inline 
+void
+DGtal::MultiStatistics::addValue( unsigned int k, double v )
+{
+  ASSERT( k < myNb );
+  mySamples[ k ] += 1;
+  myExp[ k ] += v;
+  myExp2[ k ] += v*v;
+  if ( mySamples[ k ] == 1 )
+    {
+      myMax[ k ] = v;
+      myMin[ k ] = v;
+      myIndiceMax[k]=0;
+      myIndiceMin[k]=0;
+      
+    }
+  else if ( v > myMax[ k ] ){
+    myMax[ k ] = v;
+    myIndiceMax[k]=mySamples[k]-1;
+  }
+  else if ( v < myMin[ k ] ){
+    myMin[ k ] = v;
+    myIndiceMin[k]=mySamples[k]-1;
+  }
+  if ( myStoreSamples )
+    myValues[ k ].push_back( v );
+  myIsTerminate = false;
+}
+
+
+template <class Iter>
+inline
+void
+DGtal::MultiStatistics::addValues( const unsigned int k, Iter b, Iter e )
+{
+  for ( ; b != e; ++b )
+    addValue( k, *b );
+  myIsTerminate = false;
+}
+
+
+
+void 
+DGtal::MultiStatistics::terminate()
+{
+  for ( unsigned int k = 0; k < myNb; ++k )
+    {
+      myExp[ k ] /= mySamples[ k ];
+      myExp2[ k ] /= mySamples[ k ];
+      myVar[ k ] = myExp2[ k ] - myExp[ k ] * myExp[ k ];
+      if ( mySamples[ k ] > 1 )
+        myUnbiasedVar[ k ] = mySamples[ k ] * myVar[ k ] / ( mySamples[ k ] - 1 );
+      else
+        myUnbiasedVar[ k ] = 0;
+
+    }
+    myIsTerminate = true;
+}
+
+
+void 
+DGtal::MultiStatistics::init( unsigned int size, bool storeSamples )
+{
+  erase();
+  if ( size == 0 ) return;
+  myNb = size;
+  mySamples = new unsigned int[ size ];
+  myExp = new double[ size ];
+  myExp2 = new double[ size ];
+  myVar = new double[ size ];
+  myUnbiasedVar = new double[ size ];
+  myMax = new double[ size ];
+  myMin = new double[ size ];
+  myIndiceMax = new unsigned int[ size ];
+  myIndiceMin = new unsigned int[ size ];
+  myStoreSamples = storeSamples;
+  if ( myStoreSamples )
+    myValues = new std::vector<double>[ size ];
+  clear();
+  myIsTerminate = false;
+}
+
+
+
+
+void 
+DGtal::MultiStatistics::clear()
+{
+  if ( myNb == 0 ) return;
+  for ( unsigned int i = 0; i < myNb; ++ i )
+    {
+      mySamples[ i ] = 0;
+      myExp[ i ] = 0.0;
+      myExp2[ i ] = 0.0;
+      myVar[ i ] = 0.0;
+      myUnbiasedVar[ i ] = 0.0;
+      myMax[ i ] = 0.0;
+      myMin[ i ] = 0.0;
+      myIndiceMin[ i ] = 0;
+      myIndiceMax[ i ] = 0;
+      
+      if ( myStoreSamples ) {
+	myValues[ i ].clear();
+	myValues[ i ].reserve( 128 );
+      }
+    }
+  myIsTerminate = false;
+}
+
+
+
+void 
+DGtal::MultiStatistics::erase() 
+{
+  if ( mySamples != 0 ) delete[] mySamples;
+  if ( myExp != 0 ) delete[] myExp;
+  if ( myExp2 != 0 ) delete[] myExp2;
+  if ( myVar != 0 ) delete[] myVar;
+  if ( myUnbiasedVar != 0 ) delete[] myUnbiasedVar;
+  if ( myMax != 0 ) delete[] myMax;
+  if ( myMin != 0 ) delete[] myMin;
+  if ( myIndiceMax != 0 ) delete[] myIndiceMax;
+  if ( myIndiceMin != 0 ) delete[] myIndiceMin;
+  if ( myValues != 0 ) delete[] myValues;
+
+  mySamples = 0;
+  myExp = 0;
+  myExp2 = 0;
+  myVar = 0;
+  myUnbiasedVar = 0;
+  myNb = 0;
+  myMin = 0;
+  myMax = 0;
+  myIndiceMin = 0;
+  myIndiceMax = 0;  
+  myValues = 0;
+ 
+  myStoreSamples = false;
+}
+
+
+
+double
+DGtal::MultiStatistics::covariance( const unsigned int x, const unsigned int y,
+                                    const unsigned int s, unsigned int e ) const
+{
+  ASSERT( ( x < myNb ) && ( y < myNb ) && ( x != y )
+		     && myStoreSamples 
+		     && ( samples( x ) == samples( y ) ) );
+  unsigned int size = samples( x );
+  double coVariance = 0.0;
+  double mx = 0.0;
+  double my = 0.0;
+
+  if ( e == 0 ) e = size;
+  ASSERT( e > s );
+  for( unsigned int k = s; k != e; ++k )
+    {
+      coVariance += value( x, k ) * value( y, k );
+      mx += value( x, k );
+      my += value( y, k );
+    }
+  mx /= ( e - s );
+  my /= ( e - s );
+  coVariance = coVariance / ( e - s );
+  coVariance = coVariance - mx * my;
+  return coVariance;
+}
+
+
+
+std::pair<double,double> 
+DGtal::MultiStatistics::linearRegression( const unsigned int x, const unsigned int y ) const
+{
+  ASSERT( ( x < myNb ) && ( y < myNb ) && ( x != y )
+		     && myStoreSamples 
+		     && ( samples( x ) == samples( y ) ) );
+
+  double cov = covariance( x, y );
+  double slope = cov / unbiasedVariance( x );
+  double b = mean( y ) - slope * mean( x );
+  return std::make_pair( slope, b );
+}
+
+
+
+double
+DGtal::MultiStatistics::median( unsigned int k ) 
+{
+  ASSERT( myStoreSamples );
+  
+  nth_element( myValues[ k ].begin(), myValues[ k ].begin()+(myValues[k].size()/2), 
+	       myValues[ k ].end());
+  return *(myValues[ k ].begin()+(myValues[k].size()/2));
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+
+void 
+DGtal::MultiStatistics::selfDisplay( std::ostream& out ) const
+{
+  out << "[Statistics] nb=" << nb() << std::endl;
+}
+
+
+bool
+DGtal::MultiStatistics::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+
+
+
+
+
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'MultiStatistics'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'MultiStatistics' to write.
+ * @return the output stream after the writing.
+ */
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                  const MultiStatistics & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

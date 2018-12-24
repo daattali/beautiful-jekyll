@@ -1,0 +1,120 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file LambdaMST2D.ih
+ * @author Kacper Pluta (\c kacper.pluta@esiee.fr )
+ * Laboratoire d'Informatique Gaspard-Monge - LIGM, France
+ *
+ * @date 2014/10/03
+ *
+ * This file is part of the DGtal library.
+ */
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+inline
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::LambdaMST2DEstimator() : dssSegments ( 0 ) {}
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+inline
+void
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::init ( const ConstIterator & itb, const ConstIterator & ite )
+{
+  myBegin = itb;
+  myEnd = ite;
+}
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+inline
+void
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::attach ( Alias<TSegmentation>  segmentComputer )
+{
+  dssSegments = &segmentComputer;
+}
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+inline
+bool
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::isValid () const
+{
+  return ( dssSegments != 0 );
+}
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+inline
+typename TSpace::RealVector
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::eval( const typename DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::ConstIterator & it )
+{
+  assert ( dssSegments != 0 );
+  typename TSegmentation::SegmentComputerIterator DSS = dssSegments->begin();
+  typename TSegmentation::SegmentComputerIterator lastDSS = dssSegments->end();
+  Value tangent, partial;
+  for ( ; DSS != lastDSS; ++DSS )
+  {
+    if ( DSS->isInDSS ( *it ) )
+    {
+      unsigned int pos = std::distance ( DSS.begin(), std::find ( DSS.begin(), DSS.end(), *it ) );
+      unsigned int dssLen = std::distance ( DSS.begin(), DSS.end() );
+      SegmentComputer comp ( *DSS );
+      partial = myFunctor ( comp, pos, dssLen );
+      tangent += partial;
+    }
+  }
+  if ( tangent.second != 0. )
+    return tangent.first / tangent.second;
+  else
+    return tangent.first;
+}
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+template <typename OutputIterator>
+inline
+OutputIterator
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::eval ( const typename DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::ConstIterator & itb, 
+								      const typename DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::ConstIterator & ite, 
+                                                                      OutputIterator result )
+{
+  assert ( myBegin != myEnd && isValid() && myBegin <= itb && ite <= myEnd && itb != ite );
+  dssSegments->setSubRange ( itb, ite );
+  std::vector < Value > outValues ( std::distance ( itb, ite ) );
+  typename TSegmentation::SegmentComputerIterator DSS = dssSegments->begin();
+  typename TSegmentation::SegmentComputerIterator lastDSS = dssSegments->end();
+  for ( ; DSS != lastDSS; ++DSS )
+  {
+    unsigned int dssLen = std::distance ( DSS.begin(), DSS.end() );
+    SegmentComputer comp ( *DSS );
+    for ( unsigned int i = 0; i < dssLen; i++ )
+      outValues[ std::distance ( itb, DSS.begin() ) + i ] += myFunctor ( comp, i, dssLen );
+  }
+  accumulate ( outValues, result );
+  return result;
+}
+
+template < typename TSpace, typename TSegmentation, typename Functor >
+template <typename OutputIterator>
+inline
+void
+DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >::accumulate ( std::vector < Value > & outValues, OutputIterator & result  )
+{
+  for ( unsigned int i = 0; i < outValues.size(); i++ )
+  {
+    Value & tangent = outValues[i];
+    if ( tangent.second != 0. )
+      *result++ = ( tangent.first / tangent.second );
+    else
+      *result++ = tangent.first;
+  }
+}

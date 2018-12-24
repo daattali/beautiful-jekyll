@@ -1,9 +1,0 @@
-<map id="DGtal::DigitalSetBySTLSet&lt; TDomain, TCompare &gt;" name="DGtal::DigitalSetBySTLSet&lt; TDomain, TCompare &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; Domain \&gt;" alt="" coords="956,84,1145,113"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l Domain \&gt;" alt="" coords="599,14,748,61"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,9,155,55"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,55,455,84"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="600,84,747,113"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="589,179,757,243"/>
-<area shape="rect" id="node20" title="STL class. " alt="" coords="620,267,727,296"/>
-</map>

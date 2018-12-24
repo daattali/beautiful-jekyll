@@ -1,0 +1,167 @@
+/**
+ * @file moduleIntroduction.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/02/17
+ * 
+ * Documentation file for the introduction to DGtal
+ *
+ * This file is part of the DGtal library.
+ */
+namespace DGtal {
+
+//----------------------------------------
+/*!
+
+
+@page moduleIntroduction Introduction
+@writers Tristan Roussillon
+
+@date 2012/02/17
+
+
+DGtal follows the paradigm of generic programming,  which aims at expressing data structures 
+and algorithms in a broadly adaptable form so that they are directly usable for higher-level tools 
+and software. 
+
+Instead of coding data structures and algorithms with a set of predefined types, 
+the code relies on abstract entities gathering syntactic, semantic and complexity constraints
+called <em>concepts</em>. Such data structures and algorithms are implemented in C++ 
+with templated (or parametrized) classes of functions. 
+A concept describes a set of types by listing their common interface
+(associated types and methods). The types that satisfy a concept are called <em>models</em>.    
+Since the types are known at compile-time, syntactical errors can be detected early, 
+generated code can be optimized and efficiency is preserved. In DGtal, the name of the 
+concepts always begin by C. 
+
+[TOC]
+
+ \section dgtalintroBasicConcepts Main concepts
+
+The core of DGtal is built on a small set of concepts: 
+
+ \subsection dgtalintroBasicConceptsSpace Space
+
+concepts::CSpace: The concept of digital space  
+describes digital spaces of arbitrary dimension, with user-chosen integer types.
+See \ref moduleNumber and \ref moduleSpacePointVectorDomain of \ref packageKernel for more infomation. 
+The only available model of this concept is SpaceND, which defines fundamental 
+types associated to a digital space like the type of point or vector lying in the space, etc.
+The point is a key geometrical element since digital geometry algorithms often deal with
+explicit or implicit sets of points.  
+
+ \subsection dgtalintroBasicConceptsExplicitSet Explicit sets of points
+
+concepts::CDomain, concepts::CDigitalSet: The concepts of domain and of digital set both describe
+sets of points that can be enumerated from a first point to a last one.  
+The main difference is that the former is not-mutable, basically used to bound the space
+part where the computations have to be performed, while the latter is mutable.
+A key model of domain is HyperRectDomain, which is used to bound usual images. 
+DigitalSetBySTLVector and DigitalSetBySTLSet are two models of digital set. 
+See \ref moduleDigitalSets of \ref packageKernel for more infomation. 
+
+With a digital topology, ie. a couple of adjacency relations, 
+describing how points are close to each others, 
+various digital objects can be constructed from digital sets.   
+The \ref packageTopology also contains cartesian cellular topology 
+to define, track and extract digital surfaces. 
+
+Note that a digital set can be converted into a domain (DigitalSetDomain), 
+in order to construct an ad hoc domain or to bound some local computations within a subdomain.   
+
+ \subsection dgtalintroBasicConceptsImplicitSet Implicit sets of points
+
+concepts::CPointFunctor, concepts::CPointPredicate: 
+The concept of point <em>functor</em> describe a mapping between 
+the points of a digital space and a set of values. 
+If the set of values is {0,1}, this mapping is called a point <em>predicate</em>.  
+The main method of the models of these concept is the `operator()`, 
+which must take a point as argument and must return a value.
+Some models of point predicate are adapters: 
+- of point functors by the means of value comparators like Thresholder
+(functors::PointFunctorPredicate), 
+- of explicit sets of points, ie. domains (functors::DomainPredicate)
+and digital sets.
+
+ \subsection dgtalintroBasicConceptsImage Image
+
+concepts::CConstImage, concepts::CImage: 
+The concept of constant image is a point functor bounded by a domain. 
+It is thus a refinement of the concept of point functor, 
+describing a mapping between points and values, but having in addition a domain, 
+returned by the method domain(), and a range of values, returned by the method range().  
+The returned range has begin(), end(), rbegin() and rend() methods returning 
+constant iterators as every models of concepts::CConstBidirectionalRange, but has also 
+overloaded versions of begin() and rbegin() methods taking a point as
+input argument in order to iterate on the values from a given location.  
+The concept of image provides extra services to update values.  
+Any model of concepts::CImage must have a method setValue() taking a point and a value as input arguments. 
+In addition, their inner range must have outputIterator() and routputIterator() methods 
+returning output iterators, which provides a way of incrementaly filling an image
+between two points of its domain. 
+Different models of image are available: ImageContainerBySTLVector, 
+ImageContainerBySTLMap, experimental::ImageContainerByHashTree and
+ ImageContainerByITKImage, a wrapper for ITK images. More details are provided
+in the \ref packageImage documentation page. 
+
+ \section dgtalintroPackages Main packages 
+
+DGtal is divided into several packages, containing concepts, models and algorithms. 
+
+ \subsection dgtalintroPackagesKernel Kernel
+ 
+The \ref packageKernel contains the main concepts of DGtal described above 
+and used in other higher level packages. 
+For instance, it defines number types and fundamental structures
+ like digital space, domains, digital sets and basic mappings 
+between digital points and values, 
+ie. basic point functors and point predicates.
+
+ \subsection dgtalintroPackagesTopology Topology
+
+The \ref packageTopology contains topology related concepts, models and algorithms,
+ used in other higher level packages. 
+It contains both the classical digital topology (à la Rosenfeld) and 
+the cartesian cellular topology (à la Herman). 
+Generic tools and methods are provided for defining adjacency relations, 
+(signed) cells and incidence operations, extracting connected components, 
+identifying simple points, tracking the boundary of a given shape, 
+scanning digital surfaces, etc. 
+This package is notably used by the geometry package, especially to define curves and surfaces.
+
+ \subsection dgtalintroPackagesGeometry Geometry
+
+The \ref packageGeometry contains geometry related concepts, models and algorithms. 
+It provides a generic framework for the segmentation of one-dimensional 
+discrete structures, like strings, contours of 2d digital objects or nd digital curves.
+It also provides a generic framework for the estimation of geometrical quantities, 
+either global, like length, or local, like normal or curvature.
+Several estimators are built from some well chosen segmentations. 
+On the other hand, this package contains tools for the analysis of volumes 
+of arbitrary dimension, by the means of separable and incremental distance transforms.  
+
+ \subsection dgtalintroPackagesImage Image
+
+The \ref packageImage contains the concept of image and its models: 
+either containers like ImageContainerBySTLVector, 
+ImageContainerBySTLMap, ImageContainerByHashTree
+ ImageContainerByITKImage or adapters like ConstImageAdapter, 
+which provides a virtual view of the true values contained in the 
+adapted image, or Image, which is a light proxy on another image. 
+Moreover, it provides many functions for converting digital sets into images,
+conversely, images into digital sets by value comparators, 
+and filling images from point functors or other images.  
+
+ \subsection dgtalintroPackagesIO IO
+
+In \ref packageIO, we present DGtal tools and utilities to import/export images and 
+visualize digital data using interactive (viewers) and non-interactive (boards) mechanisms.
+
+
+*/
+
+}
+
+
+

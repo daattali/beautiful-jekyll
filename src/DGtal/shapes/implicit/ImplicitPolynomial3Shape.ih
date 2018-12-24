@@ -1,0 +1,328 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImplicitPolynomial3Shape.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2012/02/14
+ *
+ * Implementation of inline methods defined in ImplicitPolynomial3Shape.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::ImplicitPolynomial3Shape<TSpace>::~ImplicitPolynomial3Shape()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+ImplicitPolynomial3Shape( const Polynomial3 & poly )
+{
+  init( poly );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::ImplicitPolynomial3Shape<TSpace> &
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+operator=( const ImplicitPolynomial3Shape & other )
+{
+  if ( this != &other )
+  {
+    myPolynomial = other.myPolynomial;
+
+    myFx= other.myFx;
+    myFy= other.myFy;
+    myFz= other.myFz;
+
+    myFxx= other.myFxx;
+    myFxy= other.myFxy;
+    myFxz= other.myFxz;
+
+    myFyx= other.myFyx;
+    myFyy= other.myFyy;
+    myFyz= other.myFyz;
+
+    myFzx= other.myFzx;
+    myFzy= other.myFzy;
+    myFzz= other.myFzz;
+
+    myUpPolynome = other.myUpPolynome;	
+    myLowPolynome = other.myLowPolynome;
+  }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+void
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+init( const Polynomial3 & poly )
+{
+  myPolynomial = poly;
+
+  myFx= derivative<0>( poly );
+  myFy= derivative<1>( poly );
+  myFz= derivative<2>( poly );
+
+  myFxx= derivative<0>( myFx );
+  myFxy= derivative<1>( myFx );
+  myFxz= derivative<2>( myFx);
+
+  myFyx= derivative<0>( myFy );
+  myFyy= derivative<1>( myFy );
+  myFyz= derivative<2>( myFy );
+
+  myFzx= derivative<0>( myFz );
+  myFzy= derivative<1>( myFz );
+  myFzz= derivative<2>( myFz );
+
+  // These two polynomials are used for mean curvature estimation.
+  myUpPolynome = myFx*(myFx*myFxx+myFy*myFyx+myFz*myFzx)+
+				myFy*(myFx*myFxy+myFy*myFyy+myFz*myFzy)+
+				myFz*(myFx*myFxz+myFy*myFyz+myFz*myFzz)-
+				( myFx*myFx +myFy*myFy+myFz*myFz )*(myFxx+myFyy+myFzz);
+
+  myLowPolynome = myFx*myFx +myFy*myFy+myFz*myFz;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+double
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+operator()(const RealPoint &aPoint) const
+{
+  return myPolynomial( aPoint[ 0 ] )( aPoint[ 1 ] )( aPoint[ 2 ] );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+bool
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+isInside(const RealPoint &aPoint) const
+{
+  return orientation( aPoint ) == INSIDE;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+DGtal::Orientation
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+orientation(const RealPoint &aPoint) const
+{
+  Ring v = this->operator()(aPoint);
+  if ( v < (Ring)0 )
+    return INSIDE;
+  else if ( v > (Ring)0 )
+    return OUTSIDE;
+  else
+    return ON;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::ImplicitPolynomial3Shape<TSpace>::RealVector
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+gradient( const RealPoint &aPoint ) const
+{
+  // ISO C++ tells that an object created at return time will not be
+  // copied into the caller context, but will be already defined in
+  // the correct context.
+  return RealVector
+      ( myFx ( aPoint[ 0 ] )( aPoint[ 1 ] )( aPoint[ 2 ] ),
+        myFy ( aPoint[ 0 ] )( aPoint[ 1 ] )( aPoint[ 2 ] ),
+        myFz ( aPoint[ 0 ] )( aPoint[ 1 ] )( aPoint[ 2 ] ) );
+
+}
+
+
+// ------------------------------------------------------------ Added by Anis Benyoub
+//-----------------------------------------------------------------------------
+
+/**
+ * @param aPoint any point in the Euclidean space.
+ * This computation is based on the hessian formula of the mean curvature
+ * k=-(∇F ∗ H (F ) ∗ ∇F T − |∇F |^2 *Trace(H (F ))/2|∇F |^3
+ * we define it as positive for a sphere
+ * @return the mean curvature value of the polynomial at \a aPoint.
+ * 
+*/
+template <typename TSpace>
+inline
+double
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+meanCurvature( const RealPoint &aPoint ) const
+{
+  double temp= myLowPolynome( aPoint[ 0 ] )( aPoint[ 1 ] )( aPoint[ 2 ] );
+  temp = sqrt(temp);
+  double downValue = 2.0*(temp*temp*temp);
+  double upValue = myUpPolynome( aPoint[ 0 ] )( aPoint[ 1 ] )( aPoint[ 2 ] );
+
+
+  return -(upValue/downValue);
+}
+
+
+
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+double
+DGtal::ImplicitPolynomial3Shape<TSpace>::
+gaussianCurvature( const RealPoint &aPoint ) const
+{
+  /*
+    JOL: new Gaussian curvature formula (in sage)
+    var('Fx','Fy','Fz','Fxx','Fxy','Fxz','Fyy','Fyz','Fzz')
+    M=Matrix(4,4,[[Fxx,Fxy,Fxz,Fx],[Fxy,Fyy,Fyz,Fy],[Fxz,Fyz,Fzz,Fz],[Fx,Fy,Fz,0]])
+    det(M)
+# Fxz^2*Fy^2 - 2*Fx*Fxz*Fy*Fyz + Fx^2*Fyz^2 - 2*Fxy*Fxz*Fy*Fz + 2*Fx*Fxz*Fyy*Fz - 2*Fx*Fxy*Fyz*Fz + 2*Fxx*Fy*Fyz*Fz + Fxy^2*Fz^2 - Fxx*Fyy*Fz^2 + 2*Fx*Fxy*Fy*Fzz - Fxx*Fy^2*Fzz - Fx^2*Fyy*Fzz
+    G = -det(M) / ( Fx^2 + Fy^2 + Fz^2 )^2
+   */
+  const double   x = aPoint[ 0 ];
+  const double   y = aPoint[ 1 ];
+  const double   z = aPoint[ 2 ];
+  const double  Fx = myFx( x )( y )( z );
+  const double  Fy = myFy( x )( y )( z );
+  const double  Fz = myFz( x )( y )( z );
+  const double Fx2 = Fx * Fx;
+  const double Fy2 = Fy * Fy;
+  const double Fz2 = Fz * Fz;
+  const double  G2 = Fx2 + Fy2 + Fz2;
+  const double Fxx = myFxx( x )( y )( z );
+  const double Fxy = myFxy( x )( y )( z );
+  const double Fxz = myFxz( x )( y )( z );
+  const double Fyy = myFyy( x )( y )( z );
+  const double Fyz = myFyz( x )( y )( z );
+  const double Fzz = myFzz( x )( y )( z );
+  const double Ax2 = ( Fyz * Fyz - Fyy * Fzz ) * Fx2;
+  const double Ay2 = ( Fxz * Fxz - Fxx * Fzz ) * Fy2; 
+  const double Az2 = ( Fxy * Fxy - Fxx * Fyy ) * Fz2;
+  const double Axy = ( Fxy * Fzz - Fxz * Fyz ) * Fx * Fy;
+  const double Axz = ( Fxz * Fyy - Fxy * Fyz ) * Fx * Fz;
+  const double Ayz = ( Fxx * Fyz - Fxy * Fxz ) * Fy * Fz;
+  const double det = Ax2 + Ay2 + Az2 + 2 * ( Axy + Axz + Ayz );
+  return - det / ( G2*G2 );
+}
+
+template< typename TSpace >
+inline
+void
+DGtal::ImplicitPolynomial3Shape<TSpace>::principalCurvatures
+( const RealPoint & aPoint,
+  double & k1,
+  double & k2 ) const
+{
+    double H = meanCurvature( aPoint );
+    double G = gaussianCurvature( aPoint );
+    double tmp = std::sqrt( fabs( H * H - G ));
+    k2 = H + tmp;
+    k1 = H - tmp;
+}
+
+
+/**
+ *@param aPoint any point in the Euclidean space.
+ *@param accuracy refers to the precision 
+ *@param maxIter refers to the maximum iterations the fonction user authorises
+ *@param gamma refers to the step
+ *@return the nearest point on the surface to the one given in parameter.
+ */
+template <typename TSpace>
+inline
+typename DGtal::ImplicitPolynomial3Shape<TSpace>::RealPoint 
+DGtal::ImplicitPolynomial3Shape<TSpace>::nearestPoint
+( const RealPoint &aPoint, const double accuracy, 
+  const int maxIter, const double gamma ) const
+{
+   RealPoint X = aPoint;
+   for ( int numberIter = 0; numberIter < maxIter; numberIter++ )
+     {
+       double val_X = (*this)( X );
+       if ( fabs( val_X ) < accuracy ) break;
+       RealVector grad_X = (*this).gradient( X );
+       double  n2_grad_X = grad_X.dot( grad_X );
+       if ( n2_grad_X > 0.000001 ) grad_X /= n2_grad_X;
+       X -= val_X * gamma * grad_X ;
+     }
+   return X;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace>
+inline
+void
+DGtal::ImplicitPolynomial3Shape<TSpace>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ImplicitPolynomial3Shape] P(x,y,z) = " << myPolynomial;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace>
+inline
+bool
+DGtal::ImplicitPolynomial3Shape<TSpace>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const ImplicitPolynomial3Shape<TSpace> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

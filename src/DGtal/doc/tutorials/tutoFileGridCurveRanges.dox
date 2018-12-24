@@ -1,0 +1,132 @@
+/**
+ * @file tutoFileGridCurveRanges.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/10/17
+ *
+ * @brief Documentation file for tutorial "File -> Grid Curve -> Ranges"
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoFileGridCurveRanges Tutorial "File -> Grid Curve -> Ranges"
+@writers Tristan Roussillon
+[TOC]
+
+\section secttutofileGridCurveRanges0 Declaration
+
+In this example, we show how to use the GridCurve object, 
+which is key to analyze digital curves.  
+
+Using the Z2i shortcut, you can merely declare it as follows: 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-declaration
+
+@note The GridCurve object stands for an open or closed oriented grid curve, 
+i.e. an alternating sequence of signed 0- and 1-cells. 
+
+\section secttutofileGridCurveRanges1 Reading a grid curve from a file
+
+You can load your grid curve from a text file that contains the coordinates 
+of some points
+(each coordinate separated by a white space and one point per line). 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-ex
+
+For instance, the file smallSquare.dat used above contains: 
+@code
+0 0
+0 1
+0 2
+0 3
+1 3
+...
+@endcode
+
+Using the STL file stream, you can initialize your grid curve
+from the file data as follows: 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-read
+
+@note The coordinates of each point are assumed to be the digital coordinates
+of the 0-cells. These points are thus assumed to be 4-connected. The grid curve
+is assumed to be closed iff the first and last point are equal or 4-connected. 
+
+@note A DGtal::IOException is raised in the case of IO errors and a 
+DGtal::ConnectivityException is raised if the points are not 4-connected. 
+
+\section secttutofileGridCurveRanges2 Displaying a grid curve with Board2D
+
+DGtal::Board2D is a nice way of displaying many 2D objects.  
+See @ref moduleBoard2D
+for further details. 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-board
+
+Using the stream mechanism of DGtal::Board2D, 
+you can write your grid curve in a vector-graphics file
+(here in postscript, but xfig, svg, pdf are other available formats). 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-displayCurve
+
+Here is a png conversion of the resulting image: 
+
+ @image html images/DisplayGridCurveTuto.png  "A small closed grid curve" 
+ @image latex images/DisplayGridCurveTuto.png  "A small closed grid curve" width=5cm
+
+\section secttutofileGridCurveRanges3 Ranges
+
+A same digital curve may be viewed in very different ways:  
+either as an alternating sequence of cells, or as a sequence of 
+points, or as a sequence of codes, and so one.  
+Moreover, some processing algorithms require a specific 
+type of elements: either 4-connected points, 8-connected points, 
+grid edges, and so one.    
+That is why the GridCurve object provides many ranges, i.e.  
+objects that provides services to iterate over a sequence of elements.  
+
+For instance, if you have to (or want to) work with 8-connected digital curves, 
+you can get the grid curve inner points as follows:   
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-displayInnerPoints
+
+ @image html images/DisplayInnerPointsTuto.png  "Inner points" 
+ @image latex images/DisplayInnerPointsTuto.png  "Inner points" width=5cm
+
+If you have to (or want to) work with separating algorithms, 
+you can get the grid curve incident points as follows: 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-displayIncidentPoints
+
+ @image html images/DisplayIncidentPointsTuto.png  "Incident points" 
+ @image latex images/DisplayIncidentPointsTuto.png  "Incident points" width=5cm
+
+See GridCurve for the exhaustive list of available ranges and their basic usage. 
+See @ref moduleGridCurveAnalysis for a general introduction about digital curves analysis. 
+
+\section secttutofileGridCurveRanges4 Required includes
+
+Here are the basic includes:
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-basicIncludes
+
+@note StdDefs.h contains the Z2i namespace, which provides many type shortcuts. 
+It includes the header required for the GridCurve object. 
+ConfigExamples.h only provides the files sample path. 
+
+In order to use the drawing mechanism, you have to include: 
+
+@snippet tutorial-examples/fileGridCurveRanges.cpp fileGridCurveRanges-displayIncludes
+
+
+*/
+
+}

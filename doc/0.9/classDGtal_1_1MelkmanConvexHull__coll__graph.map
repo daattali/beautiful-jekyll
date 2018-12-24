@@ -1,7 +1,0 @@
-<map id="DGtal::MelkmanConvexHull&lt; TPoint, TOrientationFunctor &gt;" name="DGtal::MelkmanConvexHull&lt; TPoint, TOrientationFunctor &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1PredicateFromOrientationFunctor2.html" title="DGtal::PredicateFromOrientation\lFunctor2\&lt; Functor, true, false \&gt;" alt="" coords="980,21,1196,59"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1functors_1_1Thresholder.html" title="Aim: A small functor with an operator () that compares one value to a threshold value according to tw..." alt="" coords="245,46,434,85"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1PredicateFromOrientationFunctor2.html" title="Aim: Small adapter to models of COrientationFunctor2. It is a model of concepts::CPointPredicate. It is also a ternary predicate on points, useful for basic geometric tasks such as convex hull computation. " alt="" coords="575,38,790,90"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1PredicateFromOrientationFunctor2.html" title="DGtal::PredicateFromOrientation\lFunctor2\&lt; Functor, false, false \&gt;" alt="" coords="980,90,1196,129"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="282,137,397,162"/>
-</map>

@@ -1,0 +1,176 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImageContainerBySTLMap.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/06/15
+ *
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/02/13
+ *
+ * Implementation of inline methods defined in ImageContainerBySTLMap.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+template <typename TDomain, typename TValue>
+const typename TDomain::Dimension DGtal::ImageContainerBySTLMap<TDomain,
+								TValue>::dimension = TDomain::Space::dimension;
+
+//------------------------------------------------------------------------------
+
+template <typename TDomain, typename TValue>
+inline
+DGtal::ImageContainerBySTLMap<TDomain,TValue>
+::ImageContainerBySTLMap( Clone<const Domain> aDomain, const Value& aValue)
+  : myDomainPtr( aDomain ), myDefaultValue( aValue )
+{
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+DGtal::ImageContainerBySTLMap<TDomain,TValue>
+::ImageContainerBySTLMap(const ImageContainerBySTLMap& other)
+  : Parent(other),
+    myDomainPtr(other.myDomainPtr), myDefaultValue(other.myDefaultValue)
+{
+}
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+DGtal::ImageContainerBySTLMap<TDomain,TValue>&
+DGtal::ImageContainerBySTLMap<TDomain,TValue>
+::operator=(const ImageContainerBySTLMap& other)
+{
+  if (this != &other)
+    {
+      Parent::operator=(other);
+      myDomainPtr = other.myDomainPtr;
+      myDefaultValue = other.myDefaultValue;
+    }
+  return *this;
+}
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::~ImageContainerBySTLMap( )
+{
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+typename DGtal::ImageContainerBySTLMap<TDomain,TValue>::Value
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::operator()(const Point &aPoint) const
+{
+  ASSERT( this->domain().isInside( aPoint ) );
+  ConstIterator it = this->find( aPoint );
+  if ( it == this->end() )
+    return myDefaultValue;
+  else
+    return it->second;
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+void
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::setValue(const Point &aPoint, const Value &aValue)
+{
+  ASSERT( this->domain().isInside( aPoint ) );
+  std::pair<typename std::map<Point,Value>::iterator, bool>
+    res = this->insert( std::pair<Point,Value>(aPoint, aValue) );
+  if (res.second == false)
+    res.first->second = aValue;
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+const typename DGtal::ImageContainerBySTLMap<TDomain,TValue>::Domain&
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::domain() const
+{
+  return *myDomainPtr;
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+typename DGtal::ImageContainerBySTLMap<TDomain,TValue>::ConstRange
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::constRange() const
+{
+  return ConstRange( *this );
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+typename DGtal::ImageContainerBySTLMap<TDomain,TValue>::Range
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::range()
+{
+  return Range( *this );
+}
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+typename DGtal::ImageContainerBySTLMap<TDomain,TValue>::OutputIterator
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::outputIterator()
+{
+  return OutputIterator( *this );
+}
+
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+bool
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::isValid() const
+{
+  return true;
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+void
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Image - STLMap] size=" << this->size() << " valuetype="
+      << sizeof(TValue) << "bytes Domain=" << *myDomainPtr;
+}
+
+//------------------------------------------------------------------------------
+template <typename TDomain, typename TValue>
+inline
+std::string
+DGtal::ImageContainerBySTLMap<TDomain,TValue>::className() const
+{
+  return "ImageContainerBySTLMap";
+}

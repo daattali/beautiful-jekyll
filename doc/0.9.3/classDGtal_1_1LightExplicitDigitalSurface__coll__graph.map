@@ -1,7 +1,0 @@
-<map id="DGtal::LightExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;" name="DGtal::LightExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1LightExplicitDigitalSurface_1_1Tracker.html" title="DGtal::LightExplicitDigital\lSurface\&lt; TKSpace, TSurfelPredicate\l \&gt;::Tracker" alt="" coords="1387,30,1626,82"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1SurfelNeighborhood.html" title="DGtal::SurfelNeighborhood\l\&lt; KSpace \&gt;" alt="" coords="1052,105,1233,143"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1SurfelAdjacency.html" title="DGtal::SurfelAdjacency\l\&lt; KSpace::dimension \&gt;" alt="" coords="354,78,513,117"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1SurfelNeighborhood.html" title="Aim: This helper class is useful to compute the neighboring surfels of a given surfel, especially over a digital surface or over an object boundary. Two signed surfels are incident if they share a common n&#45;2 cell. This class uses a SurfelAdjacency so as to determine adjacent surfels (either looking for them from interior to exterior or inversely). " alt="" coords="714,146,895,185"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1SurfelAdjacency.html" title="Aim: Represent adjacencies between surfel elements, telling if it follows an interior to exterior ord..." alt="" coords="5,78,165,117"/>
-</map>

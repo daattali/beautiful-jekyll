@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; SignalData\&lt; TValue \&gt; \&gt;" alt="" coords="188,302,444,333"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; SignalData\&lt; TValue \&gt; \&gt;" alt="" coords="5,203,283,234"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt; T \&gt;::counter" alt="" coords="69,6,280,37"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="211,105,371,135"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer." alt="" coords="307,203,443,234"/>
-</map>

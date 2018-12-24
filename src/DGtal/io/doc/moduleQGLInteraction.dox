@@ -1,0 +1,136 @@
+
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/**
+ * @page moduleQGLInteraction Limited interaction when using selection with QGLViewer Viewer3D stream mechanism
+ *  
+ *
+ * This part of the manual describes how to select objects in 3D
+ * scenes when using a Viewer3D object. The principle is to handle one
+ * or several reactions or callback functions to the viewer. They are
+ * then called when the user selects an object in a 3d scene displayed
+ * in the viewer. Selection with QGLViewer is usually done with a
+ * shift + left click on the object of interest. The "name" of the
+ * clicked object is then given as parameter to the reaction/callback
+ * function, so that further processing taking into account the
+ * selected object is made possible. By default the selected elements
+ * are highlighted (in dark or light color depending of the original
+ * color element).
+ *  
+ * Actually the elements which can be selected interactively are the following:
+ * 
+ * |   Element type         | list type   | can be selected |
+ * |:----------------------:|:----------: |:---------------:|
+ * | Surfel (Quad3D)        | std::map    |       YES       |
+ * | Voxel (Cube3D)         | std::map    |       YES       |
+ * | Line (LineD3D)         | std::vector |       NO        |
+ * | Point (BallD3D)        | std::vector |       NO        |
+ * | Triangles (TriangleD3D)| std::vector |       NO        |
+ * | Polygon (PolygonD3D)   | std::vector |       NO        |
+ *  
+ *  
+ * @author Jacques-Olivier Lachaud
+ * @author Bertrand Kerautret
+ *
+ * Related examples: viewer3D-10-interaction.cpp
+ *
+ * [TOC]
+ *
+ * @note This functionality is not really useful for developing a full
+ * interactive 3D application. It is for now limited to surfel and voxel
+ * selection, with simple visual feedback. However, this functionality is
+ * rather easy to use, hence may be found useful when prototyping.
+ * 
+ * \section QGLInteraction_sec1 Giving names to graphical objects
+ *
+ * An OpenGL name is an integer that can be affected to a graphical
+ * object or list. Here, if you put in a viewer stream a SetName3D
+ * object, then objects outputed afterwards are given this
+ * name. Assuming that you have a vector of surfels (cells of
+ * dimension 2), and you want to assign a different name to each
+ * surfel, you may proceed as follows when displaying them.
+ *
+ * \code
+ * Viewer3D<> viewer( K ); // K is some KhalimskySpaceND
+ * std::vector<SCell> v;   // fill it with surfels
+ * ...
+ * int name = 0;
+ * for ( std::vector<SCell>::const_iterator it = v.begin(), itE = v.end(); it != itE; ++it )
+ *   viewer << SetName3D( name++ ) << *it;
+ * \endcode
+ *
+ * Now, all surfels have a different name. Note that if you wish some
+ * objects to be unselectable, you may precise a negative (-1) name.
+ *
+ *
+ * \section QGLInteraction_sec2 Assigning reactions or callback functions
+ *
+ * A reaction or callback function for a selection in a QGLViewer
+ * window has the following signature:
+ *
+ * \code
+ * int reaction( void* viewer, int32_t name, void* data );
+ * \endcode
+ *
+ * You may assign one reaction for a given interval of names. You may
+ * thus group together some graphical objects by assigning different
+ * reactions to different groups. This is again done using the stream
+ * mechanism with an object SetSelectCallback3D. You may also precise
+ * a pointer to some object with a lifetime at least as long as the
+ * calls to the reaction. This is a way of giving information to the
+ * reaction or callback function.
+ *
+ * \code
+ * viewer << SetSelectCallback3D( reaction,  &data, 0, v.size() - 1 );
+ * \endcode
+ *
+ * Here, we have set the same reaction for all surfels (names between
+ * 0 and v.size()-1).
+ *
+ *
+ * \section QGLInteraction_sec3 Writing a reaction or callback function
+ *
+ * As said above, a reaction or callback function to a QGLViewer
+ * selection event must have the following prototype:
+ *
+ * \code
+ * int reaction( void* viewer, int32_t name, void* data );
+ * \endcode
+ *
+ * It receives as input a pointer \a viewer to the viewer object on
+ * which the selection was performed, the OpenGL \a name of the
+ * selected graphical object, and a pointer \a data to the data that
+ * was provided at creation of the reaction or callback
+ * function. Generally, in the object pointed by \a data, one stores a
+ * way to convert the name into some logical 3d object, like a surfel.
+ * If we go on with our example, we could proceed as follows:
+ *
+ * \code
+ * int myReaction( void* viewer, int32_t name, void* data )
+ * {
+ *   std::vector<SCell>* ptrV = (std::vector<SCell>*) data;
+ *   cout << "Surfel " << (*ptrV)[ name ] << " selected." << endl;
+ *   return 0;
+ * }
+ * ...
+ * QApplication app( argc, argv );
+ * Viewer3D<> viewer( K ); // K is some KhalimskySpaceND
+ * std::vector<SCell> v;   // fill it with surfels
+ * ...
+ * int name = 0;
+ * for ( std::vector<SCell>::const_iterator it = v.begin(), itE = v.end(); it != itE; ++it )
+ *   viewer << SetName3D( name++ ) << *it;
+ * viewer << SetSelectCallback3D( myReaction,  &v, 0, v.size() - 1 );
+ * viewer << Viewer3D<>::updateDisplay;
+ * return app.exec();
+ * \endcode
+ *
+ * You may have a look at viewer3D-10-interaction.cpp for another
+ * example.
+ */
+
+}

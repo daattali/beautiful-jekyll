@@ -1,0 +1,125 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file CanonicEmbedder.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/02/28
+ *
+ * Implementation of inline methods defined in CanonicEmbedder.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cmath>
+#include "DGtal/kernel/NumberTraits.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::CanonicEmbedder<TSpace>::Point
+DGtal::CanonicEmbedder<TSpace>::floor( const RealPoint & p ) const
+{
+  Point dp;
+  for ( Dimension i = 0; i < dp.size(); ++i )
+    dp[ i ] = (Integer) floor( p[ i ] );
+  return dp;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::CanonicEmbedder<TSpace>::Point
+DGtal::CanonicEmbedder<TSpace>::ceil( const RealPoint & p ) const
+{
+  Point dp;
+  for ( Dimension i = 0; i < dp.size(); ++i )
+    dp[ i ] = (Integer) ceil( p[ i ] );
+  return dp;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::CanonicEmbedder<TSpace>::Point
+DGtal::CanonicEmbedder<TSpace>::round( const RealPoint & p ) const
+{
+  Point dp;
+  for ( Dimension i = 0; i < dp.size(); ++i )
+    dp[ i ] = (Integer) round( p[ i ] );
+  return dp;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::CanonicEmbedder<TSpace>::RealPoint
+DGtal::CanonicEmbedder<TSpace>::embed( const Point & dp ) const
+{
+  return this->operator()( dp );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+typename DGtal::CanonicEmbedder<TSpace>::RealPoint
+DGtal::CanonicEmbedder<TSpace>::operator()( const Point & dp ) const
+{
+  RealPoint p;
+  for ( Dimension i = 0; i < dp.size(); ++i )
+    p[ i ] = NumberTraits<Integer>::castToDouble( dp[ i ] );
+  return p;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace>
+inline
+bool
+DGtal::CanonicEmbedder<TSpace>::isValid( ) const
+{
+  return true;
+}
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'CanonicEmbedder'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'CanonicEmbedder' to write.
+ * @return the output stream after the writing.
+ */
+template <typename TSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const CanonicEmbedder<TSpace> & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

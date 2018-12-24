@@ -1,7 +1,0 @@
-<map id="DGtal::CImage&lt; I &gt;" name="DGtal::CImage&lt; I &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="5,270,189,301"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CTrivialConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="45,187,269,218"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CTrivialImage.html" title="Aim: Defines the concept describing an image without extra ranges, which is a refinement of CTrivialC..." alt="" coords="214,270,401,301"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CPointFunctor.html" title="DGtal::CPointFunctor\&lt; I \&gt;" alt="" coords="62,105,252,135"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CPointFunctor.html" title="Aim: Defines a functor on points." alt="" coords="60,6,255,37"/>
-</map>

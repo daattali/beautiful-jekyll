@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Rectangle.html" title="A rectangle." alt="" coords="5,166,144,197"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points." alt="" coords="12,86,137,117"/>
-<area shape="rect" id="node6" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="16,6,133,37"/>
-</map>

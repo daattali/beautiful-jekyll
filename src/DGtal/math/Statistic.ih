@@ -1,0 +1,388 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/06/24
+ *
+ * Implementation of inline methods defined in Statistics.h
+ * 
+ * BAckport from ImaGene
+ *
+ * This file is part of the DGtal library.
+ */
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iostream>
+#include <algorithm>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+/**
+ * Destructor. 
+ */
+template <typename TQuantity>
+inline
+DGtal::Statistic<TQuantity>::~Statistic()
+{}
+
+
+template <typename TQuantity>
+inline
+DGtal::Statistic<TQuantity>::Statistic(bool storeSample)
+  : mySamples( 0 ), myExp( NumberTraits<Quantity>::ZERO ), myExp2( NumberTraits<Quantity>::ZERO ),  myMax( NumberTraits<Quantity>::ZERO ),myMin( NumberTraits<Quantity>::ZERO ), myMedian(NumberTraits<Quantity>::ZERO),  myStoreSamples (storeSample),
+    myIsTerminated(false)
+{
+  myValues=  std::vector<Quantity> ();
+}
+
+
+
+template <typename TQuantity>
+inline
+DGtal::Statistic<TQuantity>::Statistic
+( const Statistic<TQuantity> & other )
+  : mySamples( other.mySamples ), 
+    myExp( other.myExp ), 
+    myExp2( other.myExp2 ), 
+    myMax( other.myMax ),
+    myMin( other.myMin ), 
+    myMedian( other.myMedian), 
+    myStoreSamples (other.myStoreSamples),
+    myIsTerminated(other.myIsTerminated)
+{
+  if(myStoreSamples){
+    myValues=  std::vector<TQuantity> ();
+    for(unsigned int i=0; i<other.myValues.size(); i++){
+      myValues.push_back(other.myValues.at(i));
+    }
+  }
+  
+}
+
+
+
+template <typename TQuantity>
+inline
+DGtal::Statistic<TQuantity> & 
+DGtal::Statistic<TQuantity>::operator=
+( const Statistic<TQuantity> & other )
+{
+  if ( this != &other )
+    {
+      mySamples = other.mySamples;
+      myExp = other.myExp;
+      myExp2 = other.myExp2;
+      myMin = other.myMin;
+      myMax = other.myMax;
+      myMedian = other.myMedian;
+      myStoreSamples = other.myStoreSamples;
+      myIsTerminated=other.myIsTerminated;
+      if(myStoreSamples){
+        myValues=  std::vector<Quantity> ();
+        for(unsigned int i=0; i<other.myValues.size(); i++){
+          myValues.push_back(other.myValues.at(i));
+        }
+      }
+    }
+  return *this;
+}
+ 
+
+
+
+template <typename TQuantity>
+inline
+DGtal::Statistic<TQuantity> & 
+DGtal::Statistic<TQuantity>::operator+=
+( const Statistic<TQuantity> & other )
+{
+  if ( other.mySamples != 0 )
+    {
+      if ( ( mySamples == 0 ) || ( other.myMin < myMin ) )
+        myMin = other.myMin;
+      if ( ( mySamples == 0 ) || ( other.myMax > myMax ) )
+        myMax = other.myMax;
+    }
+  mySamples += other.mySamples;
+  myExp += other.myExp;
+  myExp2 += other.myExp2;
+  myIsTerminated=false;
+  
+  if(myStoreSamples && other.myStoreSamples){
+    for(unsigned int i=0; i<other.myValues.size(); i++){
+      myValues.push_back(other.myValues.at(i));
+    }
+  }else{
+    myStoreSamples=false;
+  }
+  return *this;
+}
+
+
+
+
+template <typename TQuantity>
+inline
+DGtal::Statistic<TQuantity> 
+DGtal::Statistic<TQuantity>::operator+
+( const Statistic<TQuantity> & other ) const
+{
+  Statistic<TQuantity> stat( *this );
+  stat += other;
+  return stat;
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TQuantity>
+inline
+typename DGtal::Statistic<TQuantity>::ConstIterator
+DGtal::Statistic<TQuantity>::begin() const
+{
+  return myValues.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TQuantity>
+inline
+typename DGtal::Statistic<TQuantity>::ConstIterator
+DGtal::Statistic<TQuantity>::end() const
+{
+  return myValues.end();
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Accessors ------------------------------
+
+
+template <typename TQuantity>
+inline
+unsigned int 
+DGtal::Statistic<TQuantity>::samples() const
+{
+  return mySamples;
+}
+
+template <typename TQuantity>
+inline
+unsigned int 
+DGtal::Statistic<TQuantity>::size() const
+{
+  return myValues.size();
+}
+template <typename TQuantity>
+inline
+TQuantity
+DGtal::Statistic<TQuantity>::operator[]( unsigned int i ) const
+{
+  return i < size() ? myValues[ i ] : Quantity();
+}
+
+template <typename TQuantity>
+inline
+double
+DGtal::Statistic<TQuantity>::mean() const
+{
+  return NumberTraits<Quantity>::castToDouble(myExp) / 
+    static_cast<double>(mySamples );
+}
+
+
+template <typename TQuantity>
+inline
+double
+DGtal::Statistic<TQuantity>::variance() const
+{
+  return ( NumberTraits<Quantity>::castToDouble(myExp2) / (double) mySamples ) - mean() * mean();
+}
+
+
+template <typename TQuantity>
+inline
+double
+DGtal::Statistic<TQuantity>::unbiasedVariance() const
+{
+  ASSERT( mySamples != 0 );
+  return ( (double) mySamples ) * variance() 
+    / ( (double) mySamples );
+}
+
+
+template <typename TQuantity>
+inline
+TQuantity
+DGtal::Statistic<TQuantity>::max() const
+{
+  return myMax;
+}
+
+
+template <typename TQuantity>
+inline
+TQuantity
+DGtal::Statistic<TQuantity>::min() const
+{
+  return myMin;
+}
+
+
+template <typename TQuantity>
+inline
+TQuantity
+DGtal::Statistic<TQuantity>::median() 
+{
+  ASSERT( myStoreSamples || myIsTerminated );
+  if(myIsTerminated){
+    return myMedian;
+  }
+  else{
+    ASSERT(myValues.size()>0);
+    nth_element( myValues.begin(), myValues.begin()+(myValues.size()/2), 
+                 myValues.end());
+    return *(myValues.begin()+(myValues.size()/2));
+  }
+}
+
+
+
+template <typename TQuantity>
+inline
+void 
+DGtal::Statistic<TQuantity>::addValue( TQuantity v )
+{
+  if ( mySamples == 0 )
+    {
+      myMin = v;
+      myMax = v;
+    }
+  else if ( v < myMin ) myMin = v;
+  else if ( v > myMax ) myMax = v;
+  myExp += v;
+  myExp2 += v * v;
+  ++mySamples;
+  if(myStoreSamples){
+    myValues.push_back(v);
+  }
+}
+  
+
+
+template <typename TQuantity>
+template <class Iter>
+inline
+void 
+DGtal::Statistic<TQuantity>::addValues( Iter b, Iter e )
+{
+  for ( ; b != e; ++b )
+    addValue( *b );
+}
+
+
+
+template <typename TQuantity>
+inline
+void
+DGtal::Statistic<TQuantity>::clear()
+{
+  mySamples = 0;
+  myExp = NumberTraits<Quantity>::ZERO;
+  myExp2 = NumberTraits<Quantity>::ZERO;
+  myMin = NumberTraits<Quantity>::ZERO;
+  myMax = NumberTraits<Quantity>::ZERO;
+  myMedian=NumberTraits<Quantity>::ZERO;
+  myIsTerminated=false;
+  if(myStoreSamples){
+    myValues.clear();
+  }
+}
+
+
+
+
+template< typename TQuantity> 
+inline
+void 
+DGtal::Statistic<TQuantity>::terminate()
+{
+  if(myStoreSamples){
+    myMedian=median();
+    // JOL: Perhaps a cleanUp() or dispose() method is
+    // preferable. Sometimes, it is useful to access also the values.
+    // myValues.clear();
+    myStoreSamples=false;
+    myIsTerminated=true;
+  } 
+}
+ 
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+template <typename TQuantity>
+inline
+void 
+DGtal::Statistic<TQuantity>::selfDisplay
+( std::ostream& thatStream ) const
+{
+  thatStream << "[Statistic "
+             << " nb=" << samples()
+             << " exp=" << mean()
+             << " var=" << variance()
+             << " uvar=" << unbiasedVariance()
+             << " min=" << min()
+             << " max=" << max();
+  if(myIsTerminated){    
+    thatStream << " median =" << myMedian;
+  }
+  thatStream << "]";
+}
+
+
+template <typename TQuantity>
+inline
+bool 
+DGtal::Statistic<TQuantity>::OK() const
+{
+  return true;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+
+template <typename TQuantity>
+inline
+std::ostream&
+DGtal::operator<<( std::ostream & thatStream, 
+                   const Statistic<TQuantity> & that_object_to_display )
+{
+  that_object_to_display.selfDisplay( thatStream );
+  return thatStream;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

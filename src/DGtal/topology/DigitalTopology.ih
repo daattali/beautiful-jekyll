@@ -1,0 +1,191 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalTopology.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/07
+ *
+ * Implementation of inline methods defined in DigitalTopology.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::~DigitalTopology()
+{
+}
+
+/**
+ * Defines the digital topology (kappa,lambda).
+ *
+ * @param aKappa a const reference to the adjacency object chosen
+ * for the foreground topology.
+ *
+ * @param aLambda a const reference to the adjacency object chosen
+ * for the background topology.
+ *
+ * @param props an hint of the properties of this digital
+ * topology, default is UNKNOWN.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::DigitalTopology( ConstAlias<ForegroundAdjacency> aKappa, 
+       ConstAlias<BackgroundAdjacency> aLambda,
+       DigitalTopologyProperties props )
+  : myKappa( aKappa ), myLambda( aLambda ), 
+    myProps( props )
+{
+}
+
+
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::DigitalTopology ( const DigitalTopology & other )
+  : myKappa( other.myKappa ), myLambda( other.myLambda ), 
+    myProps( other.myProps )
+{
+}
+
+
+/**
+ * @return a const reference to the foreground connectedness.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+const TForegroundAdjacency & 
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>::kappa() const
+{
+  return myKappa;
+}
+
+/**
+ * @return a const reference to the background connectedness.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+const TBackgroundAdjacency & 
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>::lambda() const
+{
+  return myLambda;
+}
+
+/**
+ * @return JORDAN iff the topology is Jordan, NOT_JORDAN iff the
+ * topology is known to be NOT_JORDAN, UNKNOWN otherwise.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+DGtal::DigitalTopologyProperties 
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>::properties() const
+{
+  return myProps;
+}
+
+/**
+ * @return a digital topology object which is the reverse
+ * topology of this (ie. \f[ (\lambda,\kappa) \f].
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+typename DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::ReverseTopology 
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::reverseTopology() const
+{
+  return ReverseTopology( myLambda, myKappa, myProps );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+void
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalTopology kappa=" << myKappa 
+      << " lambda=" << myLambda;
+  if ( properties() == JORDAN_DT ) out << " [Jordan]";
+  else if ( properties() == NOT_JORDAN_DT ) out << " [Not Jordan]";
+  else if ( properties() == UNKNOWN_DT ) out << " [Unknown]";
+  else out << properties();
+  out << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+bool
+DGtal::DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency>
+::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TForegroundAdjacency, typename TBackgroundAdjacency>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const DigitalTopology<TForegroundAdjacency,TBackgroundAdjacency> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

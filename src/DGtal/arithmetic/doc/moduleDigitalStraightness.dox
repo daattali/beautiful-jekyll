@@ -1,0 +1,203 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+   
+@page moduleDigitalStraightness  Patterns, digital straight lines and subsegments
+
+@writers Jacques-Olivier Lachaud
+
+Part of the \ref packageArithmetic.
+  
+This part of the manual describes digital straightness from a
+combinatoric and arithmetic point of view.  It tells you how to create
+patterns, digital straight lines in the first quadrant, and how to
+compute subsegments in sublinear time (algorithms SmartDSS [Said, Lachaud, Feschet 2009 : \cite Said_2009_dgci ] and ReversedSmartDSS [Said, Lachaud 2011 : \cite Said_2011_dgci]). Full proofs and details on these two algorithms are given in [Lachaud, Said 2013 : \cite Lachaud_2013-dam-ap ].
+
+[TOC]
+
+
+\section dgtal_digstraighness_sec1 Standard digital straight lines and patterns
+
+A \b standard \b digital \b straight \b line in 2D (DSL) is the following
+subset of \f$ Z^2 \f$:
+
+\f$ \{(x,y) \in Z^2, \mu \le a x - by < \mu + |a| +|b|-1 \} \f$
+
+where the integers \f$ (a,b,\mu) \f$, \f$ gcd(a,b)=1 \f$, are called
+the \b characteristics of the straight line [ Reveilles \cite Reveilles_1991_thesis , Debled and Reveilles \cite Debled_1995_ijprai ].
+
+It is well known that this set of digital points is a simple
+4-connected curve. Here is a representation of the straight line
+(3,5,-5).
+
+@image html dsl-standard-s.png "Standard Digital Straight Line of characteristics (3,5,-5)"
+@image latex dsl-standard-s.png "Standard Digital Straight Line of characteristics (3,5,-5)" width=5cm
+
+The \b slope of the DSL is \f$ a/b \f$, while \f$ \mu \f$ is the \b
+shift at origin. The \e remainder of the DSL is the value \f$ ax-by
+\f$. \b Upper \b leaning \b points have remainer \f$ \mu \f$ while \b
+lower \b leaning \b points have value \f$ \mu + |a| +|b|-1 \f$.
+
+
+\section dgtal_digstraighness_sec2 Patterns
+
+\subsection dgtal_digstraighness_sec2_1 Definition of patterns
+
+A \b pattern of slope \f$ a/b \f$ is the freeman chaincode between two
+consecutive upper leaning points of any DSL with slope \f$ a/b \f$.
+
+Patterns are specific subsegments of digital straight lines
+(DSL). They depend only on the slope of the DSL, i.e. the irreducible
+fraction \f$ a/b \f$.
+
+\subsection dgtal_digstraighness_sec2_2 Creating patterns in DGtal
+
+Package Arithmetic provides the class Pattern to represent a
+pattern. Patterns are instantiated either by a fraction or two
+integers \e p and \e q. They are therefore parameterized by the type
+of irreducible fraction you wish to use (see \ref
+moduleIrreducibleFraction). You may define patterns as follows:
+
+@see pattern.cpp
+
+@snippet arithmetic/pattern.cpp pattern-types
+@snippet arithmetic/pattern.cpp pattern-instantiation
+
+To get the freeman chaincode of the pattern, you may use the methods
+Pattern::rE and Pattern::rEs.
+
+@snippet arithmetic/pattern.cpp pattern-process
+
+@verbatim
+$ ./examples/arithmetic/pattern 11 17 
+0010010100101001010010100101
+$ ./examples/arithmetic/pattern 11 17 SUB
+((00|1)|(0|0101)(0|0101)(0|0101)(0|0101)(0|0101))
+@endverbatim
+
+\subsection dgtal_digstraighness_sec2_3 Recursive properties of patterns
+
+Recursive definitions of pattern are related to the continued fraction
+of the slope. We choose here to present the Berstel recursive
+definition. If \f$ z=p/q=[u_0;u_1,\ldots,u_n] \f$ is the slope of the
+pattern, the pattern may be obtained from the following recursive
+formulas:
+
+\f$ E(z_{-1})=1, E(z_{0})=0, E(z_{2k+1})=E(z_{2k})^{u_{2k+1}}
+E(z_{2k-1}), E(z_{2k})=E(z_{2k-2}) E(z_{2k-1})^{u_{2k}}. \f$
+
+Let us look again at the pattern of 11/17. First, the convergents are:
+
+@verbatim
+$ ./examples/arithmetic/convergents 11 17 
+z = [0,1,1,1,5]
+z_0 = 0 / 1
+z_1 = 1 / 1
+z_2 = 1 / 2
+z_3 = 2 / 3
+z_4 = 11 / 17
+@endverbatim
+
+@verbatim
+E(0/1) = 0
+E(1/1) = E([0;1]) = E(0/1)^1 E(z_-1) = 0.1
+E(1/2) = E([0;1,1]) = E(0/1) E(1/1)^1 = 0.01
+E(2/3) = E([0;1,1,1]) = E(1/2)^1 E(1/1) = 001.01
+E(11/17) = E([0;1,1,1,5]) = E(1/2) E(2/3)^5 = 001.(00101)^5
+@endverbatim
+
+Which is exactly the sought pattern.
+
+There are several methods to compute the Bézout vector of a pattern or
+the coordinates of its upper and lower leaning points (see reference
+of class Pattern).
+
+\section dgtal_digstraighness_sec3 Digital straight lines and subsegments
+
+\subsection dgtal_digstraighness_sec3_1 Creating a digital straight line
+
+For now, you may only instantiate digital straight lines whose 
+slope is in the first quadrant. If \f$ (a,b,\mu) \f$ are the 
+characteristics of the line, then \f$ a \ge 0, b \ge 0 \f$.
+
+@code
+...
+#include "DGtal/arithmetic/StandardDSLQ0.h"
+...
+typedef ... Fraction;
+typedef StandardDSLQ0<Fraction> DSL;
+...
+DSL D( 3, 5, -5 );
+@endcode
+
+\subsection dgtal_digstraighness_sec3_2 A DSL is a sequence of points in the digital plane
+
+A DSL provides the function operator StandardDSLQ0::operator(), taking a \e Point \e p
+and returning 'true' iff \e p belongs to the set of points of the DSL. It is
+indeed a model of concepts::CPointPredicate.
+
+The \e Point type is PointVector<2,Fraction::Integer>.
+
+You may visit the DSL from left to right with iterators
+of type StandardDSLQ0::ConstIterator. You just precise the 
+starting point with StandardDSLQ0::begin and the point after
+the last with StandardDSLQ0::end.
+
+You can compare if a point precedes another point (to the left) 
+on the DSL with methods StandardDSLQ0::before and StandardDSLQ0::beforeOrEqual.
+
+\subsection dgtal_digstraighness_sec3_3 Getting several characteristics
+
+You have access to the following information:
+- characteristics \f$(a,b,\mu)\f$ with StandardDSLQ0::a, StandardDSLQ0::b, 
+  StandardDSLQ0::mu
+- value \f$\mu+a+b-1\f$ with StandardDSLQ0::mup
+- slope as irreducible fraction with StandardDSLQ0::slope
+- pattern of same slope with StandardDSLQ0::pattern
+- vector of the pattern (i.e (b,a)) with StandardDSLQ0::v
+- remainder of the DSL with StandardDSLQ0::r
+- first upper leaning point with x>=0 with StandardDSLQ0::U
+- first lower leaning point after the first upper leaning point with StandardDSLQ0::L
+
+\subsection dgtal_digstraighness_sec3_4 Getting points on a DSL
+
+For convenience, you have the following methods to determine points 
+belonging to a DSL:
+- given an x-coordinate, find the point with lowest y-coordinate on the DSL with StandardDSLQ0::lowestY
+- given an x-coordinate, find the point with uppermost y-coordinate on the DSL with StandardDSLQ0::uppermostY
+- given a y-coordinate, find the point with lowest x-coordinate on the DSL with StandardDSLQ0::lowestX
+- given a y-coordinate, find the point with uppermost x-coordinate on the DSL with StandardDSLQ0::uppermostX
+
+\subsection dgtal_digstraighness_sec3_5 Fast computation of subsegments
+
+Given two points \e A and \e B on the DSL, you can determine the exact
+characteristics of the subsegment [A,B] in sublinear time with two
+algorithms: SmartDSS [Said, Lachaud, Feschet 2009 : \cite Said_2009_dgci ] and ReversedSmartDSS [Said, Lachaud 2011 : \cite Said_2011_dgci].
+In fact, these algorithms return the DSL which covers [A,B] and whose
+characteristics are minimal.
+
+- method StandardDSLQ0::smartDSS, given this DSL, \e A and \e B, returns this
+  minimal DSL in time proportional to the sum of the quotients of 
+  the output DSL.
+
+- method StandardDSLQ0::reversedSmartDSS, given this DSL, \e A and \e B, returns this
+  minimal DSL in time proportional to the difference of depth between the input and 
+  the output slope.
+
+You may have a look at the following programs to check these algorithms
+(the many variants come from the different choices for the algorithm 
+and the fraction type):
+
+- testStandardDSLQ0-smartDSS-benchmark.cpp
+- testStandardDSLQ0-reversedSmartDSS-benchmark.cpp
+- testStandardDSLQ0-LSB-reversedSmartDSS-benchmark.cpp
+- testStandardDSLQ0-LrSB-reversedSmartDSS-benchmark.cpp
+
+
+*/
+
+}

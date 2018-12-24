@@ -1,0 +1,369 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file UmbrellaComputer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/10/28
+ *
+ * Implementation of inline methods defined in UmbrellaComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::~UmbrellaComputer()
+{
+  if ( myTracker != 0 ) delete myTracker;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::UmbrellaComputer()
+  : myTracker( 0 )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::
+UmbrellaComputer( const UmbrellaComputer<TDigitalSurfaceTracker> & other )
+  : myTracker( 0 )
+{
+  if ( other.myTracker != 0 )
+    {
+      myTracker = new DigitalSurfaceTracker( *other.myTracker );
+      myState = other.myState;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker> & 
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::
+operator=( const UmbrellaComputer<TDigitalSurfaceTracker> & other )
+{
+  if ( this != &other )
+    {
+      if ( myTracker != 0 ) 
+	{
+	  delete myTracker;
+	  myTracker = 0;
+	}
+      if ( other.myTracker != 0 )
+	{
+	  myTracker = new DigitalSurfaceTracker( *other.myTracker );
+	  myState = other.myState;
+	}
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+void 
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::init
+( const DigitalSurfaceTracker & tracker, 
+  Dimension k, bool epsilon, Dimension j )
+{
+  if ( myTracker != 0 )
+    delete myTracker;
+  myTracker = new DigitalSurfaceTracker( tracker );
+  ASSERT( space().isSpaceClosed() 
+          && "[UmbrellaComputer] It is necessary to work with a closed cellular space since umbrellas use separators and pivots, which must exist for arbitrary surfels. Please build a closed KhalimskySpaceND for instance if you wish to work with faces in digital surfaces." );
+  myState.surfel = myTracker->current();
+  myState.k = k;
+  myState.epsilon = epsilon;
+  myState.j = j;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+void
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::getState
+( State & aState ) const
+{
+  ASSERT( myTracker != 0 );
+  aState = myState;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+void
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::setState( const State & aState )
+{
+  ASSERT( myTracker != 0 );
+  myTracker->move( aState.surfel );
+  myState = aState;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+const typename DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::State &
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::state() const
+{
+  return myState;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+const typename DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::KSpace &
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::space() const
+{
+  return myTracker->surface().space();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Accessor services ------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+const typename DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::Surfel &
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::surfel() const
+{
+  ASSERT( myTracker != 0 );
+  ASSERT( myTracker->current() == myState.surfel );
+  return myState.surfel; 
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::SCell
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::separator() const
+{
+  ASSERT( myTracker != 0 );
+  return space().sIncident( surfel(),
+			    separatorDir(),
+			    separatorOrientation() );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+typename DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::SCell
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::pivot() const
+{
+  ASSERT( myTracker != 0 );
+  return space()->sDirectIncident( separator(), trackDir() );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::Dimension
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::orthDir() const
+{
+  ASSERT( myTracker != 0 );
+  return myTracker->orthDir();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::Dimension
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::trackDir() const
+{
+  return myState.j;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+bool
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::trackOrientation() const
+{
+  return space().sDirect( separator(), trackDir() );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+DGtal::Dimension
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::separatorDir() const
+{
+  return myState.k;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+bool
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::separatorOrientation() const
+{
+  return myState.epsilon;
+}
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Pivoting services ------------------------------
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+unsigned int
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::next()
+{
+  ASSERT( myTracker != 0 );
+  
+  DGtal::Dimension j = trackDir();
+  // Delta^mu_t = +p
+  bool mu = trackOrientation(); // m_space->sdirect( separator(), j );
+  SCell sp;
+  unsigned int code = myTracker->adjacent( sp, j, mu );
+  if ( code != 0 )
+    { // Then the face has a successor.
+      DGtal::Dimension i = orthDir();
+      SCell s = myTracker->current();
+      myState.j = myState.k; // m_track_dir = m_separator_dir;
+      myTracker->move( sp );
+      myState.surfel = sp;
+      if ( code != 2 ) // s and sp are not aligned.
+	{
+	  bool track_direct_orientation 
+	    = space().sDirect( s, j );
+	  bool nu = space().sDirect( sp, i );
+	  myState.k = i; // m_separator_dir = i;
+	  myState.epsilon = ( mu == track_direct_orientation ) ^ nu;
+	    // m_separator_orientation = ( mu == track_direct_orientation ) ^ nu;
+	}
+      else
+	{
+	  myState.k = j; //m_separator_dir = j;
+	  myState.epsilon = ! mu; // m_separator_orientation = ! mu;
+	}
+    }
+  return code;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+unsigned int 
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::previous()
+{
+  ASSERT( myTracker != 0 );
+
+//   cerr << "[DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::previous()] begin" << endl;
+  
+//   cerr << "(f=" << face()
+//        << ",s=" << separator()
+//        << ",p=" << pivot()
+//        << ",i=" << m_tracker->orthDir()
+//        << ",j=" << trackDir()
+//        << ",k=" << separatorDir()
+//        << ",E=" << separatorOrientation() 
+//        << ")";
+//   cerr << endl;
+  DGtal::Dimension j = trackDir();
+  // Delta^mu_t = +p
+  DGtal::Dimension i = orthDir();
+  bool mu = trackOrientation(); // m_space->sdirect( separator(), j );
+  SCell sp;
+  unsigned int code = myTracker->adjacent( sp, separatorDir(), 
+					   separatorOrientation() );
+  // Kn_sid sp = m_tracker->adjacent( m_separator_dir, m_separator_orientation );
+  //  cerr << "(" << face() << "," << sp << ")";
+  if ( code != 0 )
+    { // Then the face has a successor.
+      DGtal::Dimension k = separatorDir();
+      myTracker->move( sp );
+      myState.surfel = sp;
+      myState.k = j; 
+      myState.epsilon = mu;
+      myState.j = ( code != 2 )
+	? i  // s and sp are not aligned.
+	: k; // s and sp are aligned.
+    }
+//   cerr << "(f=" << face()
+//        << ",s=" << separator()
+//        << ",p=" << pivot()
+//        << ",i=" << m_tracker->orthDir()
+//        << ",j=" << trackDir()
+//        << ",k=" << separatorDir()
+//        << ",E=" << separatorOrientation() 
+//        << ")";
+//   cerr << endl;
+//   cerr << "[DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::previous()] end" << endl;
+  return code;
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceTracker>
+inline
+bool 
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::adjacent()
+{
+  ASSERT( myTracker != 0 );
+  DGtal::Dimension old_j = trackDir(); // uint old_j = m_track_dir;
+  if ( previous() == 0 ) return false;
+  bool mu = trackOrientation(); // m_space->sdirect( separator(), m_track_dir );
+  myState.k = myState.j; //  m_separator_dir = m_track_dir;
+  myState.epsilon = mu; // m_separator_orientation = mu;
+  myState.j = old_j; // m_track_dir = old_j;
+  return true;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TDigitalSurfaceTracker>
+inline
+void
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[UmbrellaComputer]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TDigitalSurfaceTracker>
+inline
+bool
+DGtal::UmbrellaComputer<TDigitalSurfaceTracker>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TDigitalSurfaceTracker>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const UmbrellaComputer<TDigitalSurfaceTracker> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

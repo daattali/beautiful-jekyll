@@ -1,6 +1,0 @@
-<map id="DGtal::IteratorCompletion&lt; TDerived &gt;" name="DGtal::IteratorCompletion&lt; TDerived &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1IteratorCompletion.html" title="DGtal::IteratorCompletion\l\&lt; ArrayImageAdapter\&lt; TArrayIterator,\l HyperRectDomain\&lt; TSpace \&gt; \&gt; \&gt;" alt="" coords="388,7,631,59"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1IteratorCompletion.html" title="DGtal::IteratorCompletion\l\&lt; MyImage\&lt; T, N \&gt; \&gt;" alt="" coords="423,83,596,122"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html" title="Aim: Image adapter for generic arrays with sub&#45;domain view capability. " alt="" coords="681,7,910,59"/>
-<area shape="rect" id="node5" title="[includes] " alt="" coords="734,90,857,115"/>
-</map>

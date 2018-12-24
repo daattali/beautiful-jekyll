@@ -1,0 +1,60 @@
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 5 50 0
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 10 100 0.02
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 20 200 0.04
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 40 400 0.08
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 80 800 0.16
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 160 1600 0.3
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 320 3200 0.6
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 640 6400 1.16
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 1280 12800 2.42
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 2560 25600 5.08
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 5120 51200 10.52
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 10240 102400 21.56
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 20480 204800 45.08
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 40960 409600 92.88
+# Usage: ./tests/geometry/surfaces/testChordNaivePlaneComputer-benchmark <nbtries> <nbpoints> <diameter>.
+# Test class ChordNaivePlaneComputer. Points are randomly chosen in [-diameter,diameter]^3.
+# Integer nbtries nbpoints diameter time/plane(ms)
+int64_t 50 81920 819200 205.66

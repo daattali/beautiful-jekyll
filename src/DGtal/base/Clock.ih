@@ -1,0 +1,183 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Clock.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2009/12/11
+ *
+ * Implementation of methods defined in Clock.h
+ *
+ * This file is part of the DGtal library (backported from Imagene)
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// class Clock
+//////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Constructor.
+ */
+inline
+DGtal::Clock::Clock()
+{
+}
+
+
+//- Starts a clock.
+inline
+void
+DGtal::Clock::startClock()
+{
+
+#ifdef WIN32
+  myFirstTick = clock();
+  if (myFirstTick == (clock_t) -1)
+    {
+      std::cerr << "[Clock::startClock] Error: can't start clock." << std::endl;
+    }
+#else
+#ifdef __MACH__ // OS X does not have clock_gettime, use clock_get_time
+  clock_serv_t cclock;
+  mach_timespec_t mts;
+  host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &cclock);
+  clock_get_time(cclock, &mts);
+  mach_port_deallocate(mach_task_self(), cclock);
+  myTimerStart.tv_sec = mts.tv_sec;
+  myTimerStart.tv_nsec = mts.tv_nsec;
+#else
+  clock_gettime(CLOCK_REALTIME, &myTimerStart);
+#endif
+#endif
+}
+
+
+//- @return the time (in ms) since the last 'startClock()' or 'restartClock()'.
+inline
+double
+DGtal::Clock::stopClock() const
+{
+
+#ifdef WIN32
+  clock_t last_tick = clock();
+  if (last_tick == (clock_t) -1)
+    {
+      std::cerr << "[Clock::stopClock] Error: can't stop clock." << std::endl;
+    }
+  return (double) ((double) 1000.0 * (double)(last_tick - myFirstTick)
+     / (double) CLOCKS_PER_SEC);
+#else
+  struct timespec current;
+
+#ifdef __MACH__ // OS X does not have clock_gettime, use clock_get_time
+  clock_serv_t cclock;
+  mach_timespec_t mts;
+  host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &cclock);
+  clock_get_time(cclock, &mts);
+  mach_port_deallocate(mach_task_self(), cclock);
+  current.tv_sec = mts.tv_sec;
+  current.tv_nsec = mts.tv_nsec;
+#else
+  clock_gettime(CLOCK_REALTIME, &current); //Linux gettime
+#endif
+
+  return (( current.tv_sec - myTimerStart.tv_sec) *1000 +
+    ( current.tv_nsec - myTimerStart.tv_nsec)/1000000.0);
+#endif
+
+}
+
+inline
+double
+DGtal::Clock::restartClock()
+{
+
+#ifdef WIN32
+  clock_t last_tick = clock();
+  if (last_tick == (clock_t) -1)
+    {
+      std::cerr << "[Clock::stopClock] Error: can't restart clock." << std::endl;
+    }
+  const double delta = ((double) 1000.0 * (double)(last_tick - myFirstTick)
+     / (double) CLOCKS_PER_SEC);
+  myFirstTick = last_tick;
+  return delta;
+#else
+  struct timespec current;
+
+#ifdef __MACH__ // OS X does not have clock_gettime, use clock_get_time
+  clock_serv_t cclock;
+  mach_timespec_t mts;
+  host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &cclock);
+  clock_get_time(cclock, &mts);
+  mach_port_deallocate(mach_task_self(), cclock);
+  current.tv_sec = mts.tv_sec;
+  current.tv_nsec = mts.tv_nsec;
+#else
+  clock_gettime(CLOCK_REALTIME, &current); //Linux gettime
+#endif
+
+  const double delta = (( current.tv_sec - myTimerStart.tv_sec) *1000 +
+    ( current.tv_nsec - myTimerStart.tv_nsec)/1000000.0);
+  myTimerStart.tv_sec = current.tv_sec;
+  myTimerStart.tv_nsec = current.tv_nsec;
+  return delta;
+#endif
+
+}
+
+
+/**
+ * Destructor.
+ */
+inline
+DGtal::Clock::~Clock()
+{
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+inline
+void
+DGtal::Clock::selfDisplay( std::ostream & out ) const
+{
+  out << "[Clock]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+inline
+bool
+DGtal::Clock::isValid() const
+{
+  return true;
+}
+
+

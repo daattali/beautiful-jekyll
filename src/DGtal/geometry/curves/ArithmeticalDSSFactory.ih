@@ -1,0 +1,315 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ArithmeticalDSSFactory.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/10/28
+ *
+ * Implementation of inline methods defined in ArithmeticalDSSFactory.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+
+#include "DGtal/geometry/curves/ArithmeticalDSSConvexHull.h"
+#include "DGtal/kernel/NumberTraits.h"
+#include "DGtal/base/OneItemOutputIterator.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency>
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::
+createSubsegment(const DSL& aDSL, const Point& aF, const Point& aL)
+{
+  ASSERT( aDSL.isInDSL( aF ) ); 
+  ASSERT( aDSL.isInDSL( aL ) ); 
+  ASSERT( aDSL.beforeOrEqual(aF, aL) ); 
+
+  //specific case: DSS of one point
+  if (aF == aL)
+    {
+      return DSS( aF );      
+    }
+  //otherwise
+  else 
+    {
+      //running smartCH to compute the minimal characteristics AND the leaning points
+      OneItemOutputIterator<Point> lastUpperVertex, lastLowerVertex;
+      using namespace functions; 
+     
+      Vector v = smartCH( aDSL, aF, ( aDSL.position(aL) - aDSL.position(aF) ),
+			  lastUpperVertex, lastLowerVertex );
+      
+      //DSS construction
+      Point U = lastUpperVertex.get(); 
+      DSL dsl( v[1], v[0], DSL::remainder(v[1], v[0], U) ); 
+      Point L = lastLowerVertex.get() + dsl.shift();
+      //NB: U (resp. L) can be the first or the last upper (resp. lower) leaning point 
+      // of the DSS according to the relative order of their position.
+      ASSERT( dsl.position(v) != 0 ); 
+      Position qUForward = ( dsl.position(aL) - dsl.position(U) ) / dsl.position(v);  
+      Position qLForward = ( dsl.position(aL) - dsl.position(L) ) / dsl.position(v); 
+      Position qUBackward = ( dsl.position(U) - dsl.position(aF) ) / dsl.position(v);  
+      Position qLBackward = ( dsl.position(L) - dsl.position(aF) ) / dsl.position(v); 
+      return DSS( v[1], v[0], dsl.mu(), DSL::remainder(v[1], v[0], L), aF, aL,  
+		  (U - qUBackward * v), (U + qUForward * v ), 
+		  (L - qLBackward * v), (L + qLForward * v ), 
+		  dsl.steps(), dsl.shift() );
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency>
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::
+createSubsegment(const DSS& aDSS, const Point& aF, const Point& aL)
+{
+  ASSERT( aDSS.dsl().isInDSL( aF ) ); 
+  ASSERT( aDSS.dsl().isInDSL( aL ) ); 
+  ASSERT( aDSS.dsl().beforeOrEqual(aF, aL) ); 
+  ASSERT( aDSS.dsl().beforeOrEqual(aDSS.back(), aL) ); 
+  ASSERT( aDSS.dsl().beforeOrEqual(aF, aDSS.front()) ); 
+
+  //specific case: DSS of one point
+  if (aF == aL)
+    {
+      return DSS( aF );      
+    }
+  //otherwise
+  else 
+    {
+      DSS leftSubsegment = createLeftSubsegment(aDSS, aL);
+      DSS tmp = leftSubsegment.negate();
+      DSS subsegment = createLeftSubsegment(tmp, aF); 
+      return subsegment.negate(); 
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency>
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::
+createLeftSubsegment(const DSS& aDSS, const Point& aL)
+{
+  //running reversedSmartCH to compute the minimal characteristics AND the leaning points
+  OneItemOutputIterator<Point> lastUpperVertex, lastLowerVertex;
+  using namespace functions; 
+  Vector v = reversedSmartCH( aDSS, aDSS.position(aL),
+			     lastUpperVertex, lastLowerVertex );
+
+  //DSS construction
+  Point U = lastUpperVertex.get(); 
+  DSL dsl( v[1], v[0], DSL::remainder(v[1], v[0], U) ); 
+  Point L = lastLowerVertex.get() + dsl.shift();
+  //NB: U (resp. L) can be the first or the last upper (resp. lower) leaning point 
+  // of the DSS according to the relative order of their position. 
+  ASSERT( dsl.position(v) != 0 ); 
+  Position qUForward = ( dsl.position(aL) - dsl.position(U) ) / dsl.position(v);  
+  Position qLForward = ( dsl.position(aL) - dsl.position(L) ) / dsl.position(v); 
+  Position qUBackward = ( dsl.position(U) - dsl.position(aDSS.back()) ) / dsl.position(v);  
+  Position qLBackward = ( dsl.position(L) - dsl.position(aDSS.back()) ) / dsl.position(v); 
+  return DSS( v[1], v[0], dsl.mu(), DSL::remainder(v[1], v[0], L), aDSS.back(), aL,  
+	      (U - qUBackward * v), (U + qUForward * v ), 
+	      (L - qLBackward * v), (L + qLForward * v ), 
+	      dsl.steps(), dsl.shift() );
+}
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency>
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::createPattern(const Point& aF, const Point& aL)
+{
+
+  //specific case: a and b are both null
+  if (aF == aL)
+    {
+      return DSS( aF );      
+    }
+  //otherwise
+  else 
+    {
+
+      //upper leaning points 
+      Point Uf, Ul, Lf, Ll; 
+      Uf = aF; 
+      Ul = aL; 
+
+      //direction vector
+      Vector u2 = aL - aF; 
+      IntegerComputer<Coordinate> computer; 
+      Coordinate gcd = computer.gcd(u2[0], u2[1]); 
+
+      //irreductible direction vector
+      Vector u = Vector(u2[0]/gcd, u2[1]/gcd);
+
+      //intercept
+      Integer mu = DSL::remainder(u[1], u[0], Uf); 
+
+      //DSL
+      DSL dsl(u[1], u[0], mu); 
+
+      //lower leaning points
+      if ( dsl.steps().second == Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO) )
+	{ //specific case: there is only one step, 
+	  //ie. either a == 0, or b == 0, or 
+	  //(a == 1 and b == 1) in the naive case
+	  Lf = Uf;  
+	  Ll = Ul;  
+
+	  return DSS(dsl.a(), dsl.b(), 
+		     mu, mu, aF, aL, 
+		     Uf, Ul, Lf, Ll, 
+		     dsl.steps(), dsl.shift());
+	}
+      else 
+	{ //otherwise
+	  Coordinate signedUnity = -1; 
+	  Vector v = bezoutVector(u[1], u[0], signedUnity);
+	  Lf = Uf + v - dsl.shift()*signedUnity; 
+	  Ll = Uf + u*(gcd-1) + v - dsl.shift()*signedUnity; 
+
+	  return DSS(dsl.a(), dsl.b(), 
+		     mu, DSL::remainder(u[1], u[0], Lf), 
+		     aF, aL, 
+		     Uf, Ul, Lf, Ll, 
+		     dsl.steps(), dsl.shift());
+	}
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency>
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::createDSS(const Coordinate& aA, const Coordinate& aB, const Point& aFirst, const Point& aLast, const Point& aU)
+{
+  Point Uf, Ul, Lf, Ll;
+  DSL dsl(aA,aB,DSL::remainder(aA,aB,aU));
+  
+  Vector u(aB,aA);
+
+
+  //Upper leaning points
+  
+  Vector t = (aLast-aU)/u;
+  Integer k1 = (t[0]>t[1])?t[1]:t[0];
+
+  Ul = aU + u*k1;
+
+  t = (aU-aFirst)/u;
+  Integer k2 = (t[0]>t[1])?t[1]:t[0];
+  Uf = aU - u*k2;
+  
+  
+  //Lower leaning points
+  if ( dsl.steps().second == Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO) )
+    { //specific case: there is only one step, 
+	  //ie. either a == 0, or b == 0, or 
+	  //(a == 1 and b == 1) in the naive case
+      Lf = Uf;  
+      Ll = Ul;  
+    }
+  else 
+    { //otherwise
+      Coordinate signedUnity = -1; 
+      Vector v = bezoutVector(aA, aB, signedUnity);
+      v += dsl.shift(); // "forward" vector from an upper to a lower leaning point
+      Vector w = v - u; // "backward" vector from an upper to a lower leaning point
+      if(dsl.beforeOrEqual(aFirst,Uf+w)) // there is a lower leaning point before Uf
+	Lf = Uf + w;
+      else
+	Lf = Uf + v;
+      
+      if(dsl.beforeOrEqual(Ul+v,aLast))
+	Ll = Ul + v;
+      else
+	Ll = Ul + w;
+    }
+  
+  DSS res(dsl.a(), dsl.b(), aFirst, aLast, Uf, Ul, Lf, Ll);
+  
+  assert(res.isValid());
+
+  return res;
+
+}
+
+
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency>
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::createReversedPattern(const Point& aF, const Point& aL)
+{
+  DGtal::ArithmeticalDSS<TCoordinate,TInteger,adjacency> pattern = createPattern(aL, aF); 
+  return pattern.negate(); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::Vector
+DGtal::ArithmeticalDSSFactory<TCoordinate,TInteger,adjacency>::
+bezoutVector(const Coordinate& aA, 
+	     const Coordinate& aB, 
+	     const Coordinate& aR)
+{
+  ASSERT( (aR == 1)||(aR == -1) ); 
+
+  //compute one Bezout vector
+  IntegerComputer<Coordinate> computer; 
+  Vector v = computer.extendedEuclid(aA, -aB, aR); 
+  ASSERT( (aA*v[0]-aB*v[1]) == aR );
+
+  // compute the one whose component
+  // have a sign equal to the direction
+  // vector components
+  // modify v if and only if aB and v[0] or aA and v[1] have strictly different signs
+
+  if ( (aB > 0)&&(v[0] < 0) )
+    v += Vector(aB,aA); 
+  else if ( (aB < 0)&&(v[0] > 0) )
+    v += Vector(aB,aA); 
+  else if ( ( aA > 0 )&&(v[1] < 0) )
+    v += Vector(aB,aA);
+  else if ( ( aA < 0 )&&(v[1] > 0) )
+    v += Vector(aB,aA);
+  
+  ASSERT( (aA*v[0]-aB*v[1]) == aR );
+ 
+  // Assert that for the pairs (aA,v[1]) and (aB,v[0]) either one member is null, or they have the same sign
+  ASSERT( (aA ==0 || v[1] == 0 || (aA > 0 && v[1] > 0) || (aA < 0 && v[1] <0)) && (aB ==0 || v[0] == 0 || (aB > 0 && v[0] > 0) || (aB < 0 && v[0] <0)));
+  
+  return v; 
+}
+
+
+

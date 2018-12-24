@@ -1,0 +1,399 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ArithmeticalDSLKernel.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/07/02
+ *
+ * Implementation of inline methods defined in ArithmeticalDSLKernel.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------------------------------------------------------------
+template <typename TCoordinate, unsigned short adjacency>
+template <typename TInteger>
+inline
+typename DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>::Vector 
+DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>
+::shift(const TInteger& a, const TInteger& b) 
+{
+  Vector res;
+  if (b == NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO)     //no octant
+	res = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+      else if (a > NumberTraits<TInteger>::ZERO) //octant 2
+	res = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+      else // (a < 0)                            //octant 6
+	res = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+    }
+  else if (b > NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO)     //octant 0 
+	res = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{
+	  if (b > a)                             //octant 0
+	    res = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	  else                                   //octant 1
+	    res = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else // (a < 0)
+	{ 
+	  if (b >= -a)                           //octant 7
+	    res = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	  else                                   //octant 6
+	    res = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	}	    
+    }
+  else // (b < 0) 
+    { 
+      if (a == NumberTraits<TInteger>::ZERO)      //octant 4
+	res = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{
+	  if (-b >= a)                            //octant 3
+	    res = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	  else                                    //octant 2
+	    res = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else // (a < 0) 
+	{
+	  if (-b > -a)                            //octant 4
+	    res = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	  else                                    //octant 5
+	    res = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	}
+    }
+  return res; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TCoordinate, unsigned short adjacency>
+template <typename TInteger>
+inline
+typename DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>::Steps 
+DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>
+::steps(const TInteger& a, const TInteger& b) 
+{
+  Steps steps; 
+  if (b == NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO) 
+	{ //no octant
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{ //octant 2
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else // (a < 0)
+	{ //octant 6
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}	    
+    }
+  else if (b > NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO)
+	{ //octant 0
+	  steps.first = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{
+	  if (b == a)
+	    {
+	      steps.first = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	      steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	    }
+	  else if (b > a)
+	    { //octant 0
+	      steps.first = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	      steps.second = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	    }
+	  else // (b < a)
+	    { //octant 1
+	      steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	      steps.first = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	    }
+	}
+      else //(a < 0)
+	{ 
+	  if (b == -a)
+	    {
+	      steps.first = Vector(NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	      steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	    }
+	  else if (b > -a)
+	    { //octant 7
+	      steps.second = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	      steps.first = Vector(NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	    }
+	  else // (b < -a)
+	    { //octant 6
+	      steps.first = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	      steps.second = Vector(NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	    }
+	}	    
+    }
+  else // (b < 0)
+    { 
+      if (a == NumberTraits<TInteger>::ZERO)
+	{ //octant 4
+	  steps.first = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{
+	  if (-b == a)
+	    {
+	      steps.first = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	      steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	    }
+	  else if (-b > a)
+	    { //octant 3
+	      steps.second = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	      steps.first = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	    }
+	  else // (-b < a)
+	    { //octant 2
+	      steps.first = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	      steps.second = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	    }	    
+	}
+      else // (a < 0)
+	{
+	  if (-b == -a)
+	    {
+	      steps.first = Vector(-NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	      steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	    }
+	  else if (-b > -a)
+	    { //octant 4
+	      steps.first = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	      steps.second = Vector(-NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	    }
+	  else // (-b < -a)
+	    { //octant 5
+	      steps.second = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	      steps.first = Vector(-NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	    }
+	}
+    }
+  return steps; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TCoordinate, unsigned short adjacency>
+template <typename TInteger>
+inline
+TInteger 
+DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>
+::norm(const TInteger& a, const TInteger& b) 
+{
+  if (b >= NumberTraits<TInteger>::ZERO)
+    {
+      if (a >= NumberTraits<TInteger>::ZERO)
+	{
+	  if (b >= a)
+	    return b;
+	  else 
+	    return a; 
+	}
+      else 
+	{
+	  if (b >= -a)
+	    return b;
+	  else 
+	    return -a; 
+	}
+    }
+  else
+    {
+      if (a >= NumberTraits<TInteger>::ZERO)
+	{
+	  if (-b >= a)
+	    return -b;
+	  else 
+	    return a; 
+	}
+      else 
+	{
+	  if (-b >= -a)
+	    return -b;
+	  else 
+	    return -a; 
+	}
+    }
+}
+
+// ----------------------------------------------------------------------------
+template <typename TCoordinate>
+template <typename TInteger>
+inline
+typename DGtal::ArithmeticalDSLKernel<TCoordinate,4>::Vector 
+DGtal::ArithmeticalDSLKernel<TCoordinate,4>
+::shift(const TInteger& a, const TInteger& b) 
+{
+  Vector res; 
+  if (b == NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO)
+	{ //no quadrant
+	  res = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{ //quadrant 1
+	  res = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	}
+      else // (a < 0)
+	{ //quadrant 3
+	  res = Vector(-NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	}	    
+    }
+  else if (b > NumberTraits<TInteger>::ZERO)
+    {
+      if (a >= NumberTraits<TInteger>::ZERO)
+	{ //quadrant 0
+	  res = Vector(NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	}
+      else // (a < 0) 
+	{ //quadrant 3
+	  res = Vector(-NumberTraits<TCoordinate>::ONE,-NumberTraits<TCoordinate>::ONE); 
+	}	    
+    }
+  else // (b < 0) 
+    { 
+      if (a > NumberTraits<TInteger>::ZERO)
+	{ //quadrant 1
+	  res = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	}
+      else // (a <= 0)
+	{ //quadrant 2
+	  res = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ONE); 
+	}
+    }
+  return res; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TCoordinate>
+template <typename TInteger>
+inline
+typename DGtal::ArithmeticalDSLKernel<TCoordinate,4>::Steps 
+DGtal::ArithmeticalDSLKernel<TCoordinate,4>
+::steps(const TInteger& a, const TInteger& b) 
+{
+  Steps steps;
+  if (b == NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO)
+	{ //no quadrant
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{ 
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else // (a < 0)
+	{ 
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}	    
+    }
+  else if (b > NumberTraits<TInteger>::ZERO)
+    {
+      if (a == NumberTraits<TInteger>::ZERO)
+	{
+	  steps.first = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{ //quadrant 0
+	  steps.first = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	}
+      else // (a < 0) 
+	{ //quadrant 3
+	  steps.second = Vector(NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	}	    
+    }
+  else // (b < 0) 
+    { 
+      if (a == NumberTraits<TInteger>::ZERO)
+	{
+	  steps.first = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO); 
+	}
+      else if (a > NumberTraits<TInteger>::ZERO)
+	{ //quadrant 1
+	  steps.second = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.first = Vector(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ONE); 
+	}
+      else // (a < 0)
+	{ //quadrant 2
+	  steps.first = Vector(-NumberTraits<TCoordinate>::ONE,NumberTraits<TCoordinate>::ZERO); 
+	  steps.second = Vector(NumberTraits<TCoordinate>::ZERO,-NumberTraits<TCoordinate>::ONE); 
+	}
+    }
+  return steps; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename TCoordinate>
+template <typename TInteger>
+inline
+TInteger 
+DGtal::ArithmeticalDSLKernel<TCoordinate,4>
+::norm(const TInteger& a, const TInteger& b) 
+{
+  if (b >= NumberTraits<TInteger>::ZERO)
+    {
+      if (a >= NumberTraits<TInteger>::ZERO)
+	return b+a; 
+     else 
+       return b-a; 
+    }
+  else
+    {
+      if (a >= NumberTraits<TInteger>::ZERO)
+	return -b+a; 
+      else 
+	return -b-a; 
+    }
+}
+
+

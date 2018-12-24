@@ -1,0 +1,163 @@
+/**
+ * @file moduleBuildDGtal.dox
+ * @authors David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr ) - Martial Tola (\c martial.tola@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/05/04
+ *
+ * Documentation file for feature FAQDGtalCmake
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleBuildDGtal Building DGtal
+@writers David Coeurjolly - Martial Tola
+
+
+This part of the manual describes how to build DGtal on Linux, Mac OS X and Windows.
+
+[TOC]
+
+\section intro Introduction and first build
+
+The DGtal library uses <a href="http://www.cmake.org">cmake</a> to
+manage the project build on various systems.
+
+To build DGtal in is minimal configuration, you need at least these
+dependencies:
+
+- \e c++ compiler (g++, clang++, ...) with C++11 features (gcc>4.6 for instance)
+- \e [cmake](http://cmake.org) (>3.1, optionally cmake-gui),
+- \e |boost](http://www.boost.org) boost >= 1.46.0  (no need to have the libraries installed)
+- \e zlib (already available in most OS)
+
+To build DGtal in is full configuration, you may need these dependencies too:
+
+- \e gmp,
+- \e cairo,
+- \e qglviewer,
+- \e graphicsmagick,
+- \e insighttoolkit (ITK),
+- \e [HDF5](http://www.hdfgroup.org/HDF5/)
+- \e [CGAL](http://cgal.org) (build with Eigen enabled)
+- \e [Eigen] (http://eigen.tuxfamily.org/index.php?title=Main_Page)
+
+
+If you want to generate the documentation, you would need:
+- \e doxygen >= 1.8.0,
+- \e graphviz.
+
+
+\subsection linux Build on Linux-based distributions
+
+To build DGtal from the source archive, we use the CMake tool to
+generate a Makefile or a project file for various IDE (KDevelop,
+Xcode, Codeblock...).  In most linux distributions, all mandatory and
+optional dependencies are available as packages (debian, ubuntu,
+...). Please refer to your package manager to find the appropriate
+package name and versions.
+
+
+An important feature of cmake is the "out-of-source" build
+process. Let us suppose that DGtal sources are in the DGTALSOURCES
+folder. Hence, in a terminal you can create a build folder:
+@code
+cd DGTALSOURCES
+mkdir build
+cd build
+@endcode
+
+Next, use the cmake command to generate your Unix Makefile project
+(default generator on Unix/Linux) like below for the minimal DGtal configuration:
+@code
+cmake ..
+@endcode
+
+For the full DGtal configuration, you have to set these options with cmake:
+@code
+cmake .. -DWITH_GMP=true -DWITH_ITK=true -DWITH_CAIRO=true -DWITH_QGLVIEWER=true -DWITH_MAGICK=true
+@endcode
+
+If no error occurs, you can build the DGtal lib and install it:
+@code
+make
+sudo make install
+@endcode
+
+
+\subsection macos Build on Mac OS X
+
+Then, since recent Mac OS systems are unix-like operating systems, the
+easiest way to compile DGtal with cmake/make is to follow Linux-based
+instructions from source code archive.
+
+If you use  <a href="http://mxcl.github.com/homebrew/">Homebrew</a>
+package manager on Mac, DGtal is available in the package repository:
+@code
+brew install dgtal
+@endcode
+and to get build options:
+@code
+brew options dgtal
+@endcode
+
+
+\section cmakeDGtal Main DGtal cmake options
+
+In DGtal CMakeLists.txt, several options can be specified to custom the
+library build. First, cmake has predefined build options (\e CMAKE_BUILD_TYPE) such as:
+  - \e CMAKE_BUILD_TYPE
+     - \b Debug: debug mode (e.g. C++ debug flags, DEBUG variable, ...)
+     - \b Release: release build (e.g. optimized C++ compiler options, NDEBUG variable, ...)
+  - \e CMAKE_INSTALL_PREFIX: a string containing the DGtal install path
+  (e.g. by default on some linux: "/usr/local/").
+
+Beside these options, user can also specify these options:
+
+- \e BUILD_EXAMPLES (ON/OFF): to build DGtal examples (default: ON)
+- \e BUILD_TESTING (ON/OFF): to build the test suite (default: OFF)
+
+- \e VERBOSE (ON/OFF): to define the \e VERBOSE variable
+ (default: OFF). If set to ON, verbose
+ messages are traced out.
+
+- \e DEBUG_VERBOSE (ON/OFF): to define the \e DEBUG_VERBOSE variable
+ (default: OFF). If set to ON, verbose
+debug messages are traced out.
+
+
+- \e  BUILD_SHARED_LIBS (ON/OFF): to build the lib as a shared library (default: ON) but \b must be \b OFF actually on \b Windows
+
+
+
+\subsection win Build on Windows / Visual Studio
+
+DGtal core library compiles on Windows using Visual Studio 2015 or
+newer (note that building DGtal on cygwin or MinGW environments is
+trivial using linux based build). Since DGtal requires C++11 features
+since release 0.9.1, compiling the library with older Visual Studio
+compilers is not supported.
+
+To generate the Visual Studio project, use the cmake (or cmake-gui)
+tools with recent Visual Studio target. During the project generation,
+you would have to specify the path to @e boost headers (or paths
+needed for any optional dependency such as GMP, CGAL, Cairo...).
+
+@note Do not forget to set @e BUILD_SHARED_LIBS cmake to false (static DGtal lib target).
+
+
+@advanced When working on DGtal within github, we have set up a Windows
+container (using [appeveyor](http://www.appeveyor.com) for continuous
+integration. In the "appeveyor.yml" script, you would find information about
+how we compile the DGtal library on this windows environnement.
+
+*/
+
+}

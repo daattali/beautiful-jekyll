@@ -1,0 +1,295 @@
+/**
+ * @file moduleGeometricPredicates.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/11/28
+ *
+ * Documentation file for feature moduleGeometricPredicates
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleGeometricPredicates Implementation of geometric predicates
+@writers Tristan Roussillon
+
+Several algorithms of the \ref packageGeometry rely on geometric predicates. 
+For instance, any convex hull algorithm relies on an orientation test
+(see @ref moduleHull2D for algorithms computing the convex hull of a finite 
+planar set of points).  
+If the test is not exact or if it is not robust to possible overflows, 
+the algorithm can return an incorrect result or can even infinitely loop. 
+We provide below several solutions to cope with such problems. 
+
+[TOC]
+
+\section sectmoduleGeometricPredicates0 Introduction
+
+In our framework, we consider points in a space of dimension \f$ n \f$. 
+The orientation of \f$ k+1 \f$ points \f$ (p_1, \ldots, p_{k+1}) \f$
+ is given by the sign of the algebraic distance between \f$ p_{k+1} \f$ 
+and an algebraic variety, chosen such that it is uniquely defined 
+by the first \f$ k \f$ points \f$ (p_1, \ldots, p_{k}) \f$. 
+
+An algebraic variety is the set of points where a given \f$n\f$-variate polynomial \f$ \mathcal{P} \f$
+is evaluated to zero, ie. \f$ \{ x \in \mathbb{R}^n | \mathcal{P}(x) = 0 \} \f$. 
+ We consider only \f$ n\f$-variate polynomials that are sums of exactly \f$ k+1 \f$ monomials, 
+so that they are uniquely defined by exactly \f$ k \f$ points. 
+The algebraic distance of \f$ p_{k+1} \f$ to the algebraic variety of polynomial \f$ \mathcal{P} \f$ is  
+equal to \f$ \mathcal{P}(p_{k+1}) \f$. 
+
+Examples of algebraic varieties are: 
+- in dimension two
+  - line (\f$ k = 2 \f$)
+  - circle (\f$ k = 3 \f$)
+  - circle of given radius and orientation (\f$ k = 2 \f$) 
+  - circle passing by a given point (\f$ k = 2 \f$) 
+- in dimension three
+  - plane (\f$ k = 3 \f$)
+  - sphere (\f$ k = 4 \f$)
+
+The main concept of this module is COrientationFunctor, but there are also
+refinements, which are specific to small polynomials: COrientationFunctor2 and COrientationFunctor3. 
+
+Models of COrientationFunctor provide a method init() taking a static array of \f$ k \f$ points 
+\f$ (p_1, \ldots, p_{k}) \f$ as argument. This initialization step is geometrically 
+equivalent to defining the unique shape \f$ \mathcal{S} \f$ passing by these \f$ k \f$ points. 
+Models of COrientationFunctor are also refinements of CPointFunctor. 
+As such, they provide a parenthesis operator, which takes an extra point 
+\f$ p_{k+1} \f$ as argument and returns a signed value that is: 
+- 0 if \f$ p_{k+1} \f$ is lying on \f$ \mathcal{S} \f$.
+- strictly negative if \f$ p_{k+1} \f$ belongs to the @a interior of \f$ \mathcal{S} \f$.  
+- strictly positive if \f$ p_{k+1} \f$ belongs to the @a exterior of \f$ \mathcal{S} \f$. 
+
+@note @a Interior and @a exterior are not geometric concepts, but algebraic ones: 
+they depend on the lexicographic order of the points. For example, for a circle 
+passing by three points in the plane, the geometric interior coincides 
+with the algebraic interior iff the three points are counter-clockwise oriented.  
+
+Geometric predicates, which return a boolean, usually adapt models of COrientationFunctor, 
+which return an algebraic distance, 
+so that either
+- strictly positive values, 
+- non-negative values, 
+- strictly negative values, 
+- or non-positive values
+are accepted. 
+
+PredicateFromOrientationFunctor2 is an example of such adapter. 
+
+
+\section sectmoduleGeometricPredicates1 Orientation of three points in the plane
+
+In order to determine whether 3 given points are aligned, clockwise oriented
+or counter-clockwise oriented, we provide several predicates. They are actually
+adaptations of some models of COrientationFunctor2, devoted to the computation 
+of the distance of a point to a line. 
+
+Instances of such classes must be initialized from two points \f$ P, Q \f$
+and provide a parenthesis operator taking a third point \f$ R \f$ as argument and 
+returning a signed value. 
+
+The resulting value may be interpreted as follows:  
+- equal to 0 if \f$ P, Q, R \f$ belong to the same line  
+- strictly positive if \f$ R \f$ belongs to the open half-plane lying on the left of the oriented line \f$ (PQ) \f$ 
+(ie. \f$ P, Q, R \f$ are counter-clockwise oriented)  
+- strictly negative if \f$ R \f$ belongs to the open half-plane lying on the right of the oriented line \f$ (PQ) \f$
+(ie. \f$ P, Q, R \f$ are clockwise oriented)
+
+
+\subsection subsectmoduleGeometricPredicates11 Basic usage
+
+Let us assume that we are working with the following domain: 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp DomainDefinition
+
+To determine the orientation of the three following points... 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp ProblemStatement
+
+...you must construct an orientation functor as follows: 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorDefinition
+
+Then, you can adapt this functor in order to get a predicate: 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp PredicateDefinition
+
+The default behavior of PredicateFromOrientationFunctor2 is to return 'true' for 
+strictly positive functor values. 
+
+The test can be done in one or two separate steps as follows: 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorInitialization
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp PredicateUsage
+
+
+\note This small example, which may be found in exampleInHalfPlane.cpp, 
+requires the following headers: 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorIncludes
+
+
+\subsection subsectmoduleGeometricPredicates12 List of available functors
+
+Two useful classes have been implemented: 
+ - InHalfPlaneBySimple3x3Matrix, an orientation functor based on the determinant of a 3x3 matrix:
+
+   \f$ 
+   \begin{vmatrix}
+   P_x & Q_x & R_x \\
+   P_y & Q_y & R_y \\
+     1 &   1 &   1 
+   \end{vmatrix} 
+   \f$
+ 
+ - InHalfPlaneBy2x2DetComputer, an orientation functor that reduces the computation to 
+   the determinant of a 2x2 matrix: 
+
+   \f$ 
+   \begin{vmatrix}
+   Q_x - P_x & R_x - P_x \\
+   Q_y - P_y & R_y - P_y 
+   \end{vmatrix} 
+   \f$
+
+   InHalfPlaneBy2x2DetComputer delegates the computation of this determinant to a model of C2x2DetComputer.  
+   - Simple2x2DetComputer, which merely computes \f$ (Q_x - P_x)(R_y - P_y) - (Q_y - P_y)(R_x - P_x) \f$.  
+   - AvnaimEtAl2x2DetSignComputer, an implementation of [Avnaim et.al., 1997 : \cite AvnaimEtAlAlgorithmica1997]
+     that returns the sign of the determinant without increasing the size of the matrix entries. 
+   - Filtered2x2DetComputer, which is a lazy adapter of any other determinant computer: the adaptee is only used 
+     for determinants close to zero. 
+
+Most classes are template classes parametrized by a type for the points 
+(or its coordinates) and an integral type for the computations. 
+All these implementations return an exact value (or sign), provided that 
+the integral type used for the computations is well chosen with respect to
+ the coordinates of the points. 
+
+Let \f$ x \f$ and \f$ x' \f$ be respectively \f$ b \f$-bits and \f$ b' \f$-bits integers. 
+The sum \f$ x+x' \f$ may require \f$ \max(b,b')+1 \f$ bits and the product 
+\f$ xx' \f$ may require \f$ b+b' \f$ bits. 
+Consequently, we can determine the number of bits required for the different computations.  
+If the coordinates of the points are \f$ b \f$-bits integers, 
+both InHalfPlaneBySimple3x3Matrix 
+and InHalfPlaneBy2x2DetComputer with Simple2x2DetComputer
+may return determinant values of \f$ 2b + 3 \f$ bits. 
+However, InHalfPlaneBy2x2DetComputer with AvnaimEtAl2x2DetSignComputer
+only require integers of \f$ b+1 \f$ bits. 
+
+\subsection subsectmoduleGeometricPredicates13 How to avoid overflows ?
+
+For coordinates of \f$ 30 \f$ bits, lying within the range \f$ ]-2^{30}; 2^{30}[ \f$, 
+we recommand to use InHalfPlaneBySimple3x3Matrix with DGtal::int64_t as result type. 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorDefinition30
+
+For coordinates of \f$ 52 \f$ bits, lying within the range \f$ ]-2^{52}; 2^{52}[ \f$, 
+we recommand to use InHalfPlaneBy2x2DetComputer with a lazy implementation of 
+[Avnaim et.al., 1997 : \cite AvnaimEtAlAlgorithmica1997] using the \f$ 53 \f$ bits of 
+the mantissa of the double-precision floating-point data type. 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorDefinition52
+
+For coordinates of \f$ 62 \f$ bits, lying within the range \f$ ]-2^{62}; 2^{62}[ \f$, 
+we recommand to use InHalfPlaneBy2x2DetComputer with an implementation of 
+[Avnaim et.al., 1997 : \cite AvnaimEtAlAlgorithmica1997] using DGtal::int64_t as 
+a working type. 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorDefinition62
+
+For greater coordinates, we recommand to use InHalfPlaneBy2x2DetComputer
+together with Simple2x2DetComputer using DGtal::BigInteger as integral types (WITH_GMP ON). 
+@snippet geometry/tools/determinant/exampleInHalfPlane.cpp FunctorDefinition62plus
+
+\subsection subsectmoduleGeometricPredicates14 Benchmark
+
+Experimental tests justify the above recommendations. 
+In testInHalfPlane-benchmark.cpp, we compare several methods: 
+- `3x3` : InHalfPlaneBySimple3x3Matrix
+- `2x2` : InHalfPlaneBy2x2DetComputer with Simple2x2DetComputer
+- `2x2-avnaim` : InHalfPlaneBy2x2DetComputer with AvnaimEtAl2x2DetSignComputer
+- `2x2-avnaim++` : a combination of InHalfPlaneBy2x2DetComputer, Filtered2x2DetComputer 
+and AvnaimEtAl2x2DetSignComputer 
+
+Input and output types follow the name of the method. For instance, the `3x3-int32-int64`-method
+runs on coordinates of type DGtal::int32_t and return a determinant of type DGtal::int64_t.  
+ 
+We ran all the above methods on a laptop (Intel core i5 2.50GHz, 4GB RAM) with Ubuntu 12.04. 
+testInHalfPlane-benchmark.cpp was compiled in Release mode with gcc 4.6.3. 
+
+We performed 1 million orientation tests 
+on five different kinds of inputs:   
+ 1. Three points \f$ P, Q, R \f$ of random coordinates. 
+ 2. Random \f$ P \f$ and \f$ Q \f$ and \f$ R = Q \f$ (null determinants).  
+ 3. Random \f$ P \f$ and \f$ Q \f$ and \f$ R = P \f$ (null determinants).  
+ 4. \f$ P = (0,0) \f$ and \f$ Q-P = k\vec{u}, R-P = l\vec{u} \f$ 
+with random \f$ k, l, \vec{u}_x  \vec{u}_y \f$ (null determinants).  
+ 5. \f$ P = (0,0) \f$ and \f$ Q-P = k\vec{u} + \epsilon, R-P = l\vec{u} + \epsilon \f$ 
+with random \f$ k, l, \vec{u}_x  \vec{u}_y \f$ and \f$ \epsilon \f$ (determinants close to zero).  
+
+For coordinates of \f$ 30 \f$ bits, 
+we obtain the following results (running times are in seconds): 
+
+| method vs input           |   1. |   2. |   3. |   4. |   5. |
+|---------------------------|------|------|------|------|------|
+| 3x3-int32-int64           | 0.28 | 0.18 | 0.18 | 0.13 | 0.18 |
+| 3x3-int32-BigInt          | 2.54 |  2.3 |  2.4 | 2.34 | 2.36 |
+| 2x2-int32-int64           | 0.28 | 0.18 | 0.19 | 0.12 |  0.2 |
+| 2x2-int32-BigInt          | 0.61 |  0.5 | 0.46 | 0.45 | 0.52 |
+| 2x2-avnaim-int32-int32    | 0.32 |  0.2 | 0.18 |  0.3 | 0.36 |
+| 2x2-avnaim-int32-double   | 0.33 | 0.21 | 0.19 | 0.38 | 0.46 |
+| 2x2-avnaim++-int32-double | 0.28 | 0.21 |  0.2 | 0.38 | 0.19 |
+
+Best methods are `3x3-int32-int64` and `2x2-int32-int64`. 
+We therefore recommend to use `3x3-int32-int64`, whose type 
+is simpler to define. 
+
+\note 
+ - As expected `2x2-avnaim++-int32-double` performs well, 
+   excepted for null determinants (columns 2, 3 and 4), 
+   because more steps are required in such cases to take a decision.  
+ - `2x2-int32-BigInt` outperforms `3x3-int32-BigInt` because 
+   the allocation/desallocation of BigIntegers, which represent
+   a substantial part of running time, is minimized in Simple2x2DetComputer. 
+
+For coordinates of \f$ 52 \f$ bits, 
+we obtain the following results: 
+
+| method vs input            |   1. |   2. |   3. |   4. |   5. |
+|----------------------------|------|------|------|------|------|
+| 3x3-double-BigInt          | 3.32 | 3.02 | 3.01 |  2.7 | 2.75 |
+| 2x2-double-BigInt          | 1.08 | 0.91 | 0.72 | 0.76 | 0.84 |
+| 2x2-avnaim-int64-int64     | 0.55 | 0.36 | 0.34 | 0.87 | 0.94 |
+| 2x2-avnaim-double-int64    | 0.56 | 0.37 | 0.35 | 0.87 | 0.94 |
+| 2x2-avnaim-int64-double    | 0.52 | 0.34 | 0.33 |  0.6 | 0.65 |
+| 2x2-avnaim-double-double   |  0.5 | 0.33 | 0.31 | 0.58 | 0.68 |
+| 2x2-avnaim++-int64-double  |  0.5 | 0.35 | 0.33 | 0.62 | 0.24 |
+| 2x2-avnaim++-double-double | 0.46 | 0.34 | 0.32 | 0.67 | 0.26 |
+
+The best method is the lazy implementation of 
+[Avnaim et.al., 1997 : \cite AvnaimEtAlAlgorithmica1997] 
+using the \f$ 53 \f$ bits of the mantissa of the double data type, 
+ie. `2x2-avnaim++-double-double` (last line).  
+
+For coordinates of \f$ 62 \f$ bits,
+we obtain the following results:
+
+| method vs input               |   1. |   2. |   3. |   4. |   5. |
+|-------------------------------|------|------|------|------|------|
+| 3x3-BigInt-BigInt             |  7.4 | 6.62 | 4.89 |  2.4 | 2.54 |
+| 2x2-BigInt-BigInt             | 4.76 | 3.54 | 3.49 | 1.28 | 1.44 |
+| 2x2-avnaim-int64-int64        | 0.65 | 0.42 |  0.4 | 0.98 | 1.06 |
+| 2x2-avnaim++-int64-longdouble |  0.6 | 0.42 |  0.4 | 0.78 | 0.26 |
+
+Best methods are `2x2-avnaim-int64-int64` and `2x2-avnaim++-int64-longdouble`,
+where long double is implemented as the 80-bit extended precision type.
+If this implementation is available on your system, you should use  
+`2x2-avnaim++-int64-longdouble` in order to perform faster computations
+in the case of (quasi)-collinear (but not confunded) points (columns 4 and 5). 
+
+
+<!-- \section sectmoduleGeometricPredicates2 Incircle test -->
+
+
+*/
+
+}

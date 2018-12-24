@@ -1,0 +1,158 @@
+/* -*- mode: c++ -*- */
+/**
+ * @file   Shapes.ih
+ * @author Sebastien Fourey <http://www.greyc.ensicaen.fr/~seb>
+ * @date   Feb. 2010
+ * 
+ * @brief  Shapes inline methods
+ */
+/*
+ * \@copyright This File is part of the Board library which is
+ * licensed under the terms of the GNU Lesser General Public Licence.
+ * See the LICENCE file for further details.
+ */
+
+namespace LibBoard {
+
+Shape::Shape( DGtal::Color pen,
+        DGtal::Color fill,
+        double lineWidth, 
+        LineStyle style,
+        const LineCap cap,
+        const LineJoin join,
+        int depthValue )
+  : _depth( depthValue ),
+    _penColor( pen ),
+    _fillColor( fill ), 
+    _lineWidth( lineWidth ),
+    _lineStyle( style ),
+    _lineCap( cap ), 
+    _lineJoin( join )
+{
+}
+
+Dot::Dot( double x, double y,
+    DGtal::Color color, 
+    double lineWidth,
+    int depthValue )
+  : Shape( color, 
+     DGtal::Color::None, 
+     lineWidth, SolidStyle, RoundCap, MiterJoin, depthValue ),
+    _x( x ), _y( y ) 
+{
+}
+
+Line::Line( double x1, double y1, double x2, double y2, 
+      DGtal::Color color, 
+      double lineWidth,
+      const LineStyle style,
+      const LineCap cap,
+      const LineJoin join,
+      int depthValue )
+  : Shape( color, DGtal::Color::None, lineWidth, style, cap, join, depthValue ),
+    _x1( x1 ), _y1( y1 ), _x2( x2 ), _y2( y2 )
+{
+}
+
+
+
+Arrow::Arrow( double x1, double y1, double x2, double y2,
+        DGtal::Color pen,
+        DGtal::Color fill,
+        double lineWidth, 
+        const LineStyle style,
+        const LineCap cap,
+        const LineJoin join,
+        int depthValue )
+  : Line( x1, y1, x2, y2, pen, lineWidth, style, cap, join, depthValue ) 
+{
+  Shape::_fillColor = fill;
+}
+
+Polyline::Polyline( const std::vector<Point> & points, 
+        bool closed,
+        DGtal::Color pen,
+        DGtal::Color fill,
+        double lineWidth,
+        const LineStyle lineStyle,
+        const LineCap cap,
+        const LineJoin join,
+        int depthValue )
+  : Shape( pen, fill, lineWidth, lineStyle, cap, join, depthValue ),
+    _path( points, closed )
+{
+}
+
+Polyline::Polyline( const Path & path, 
+        DGtal::Color pen,
+        DGtal::Color fill,
+        double lineWidth,
+        const LineStyle lineStyle,
+        const LineCap cap,
+        const LineJoin join,
+        int depthValue )
+  : Shape( pen, fill, lineWidth, lineStyle, cap, join, depthValue ),
+    _path( path )
+{
+}
+
+  Polyline::Polyline( bool closed,
+          DGtal::Color pen,
+          DGtal::Color fill,
+          double lineWidth,
+          const LineStyle lineStyle,
+          const LineCap cap,
+          const LineJoin join,
+          int depthValue )
+    : Shape( pen, fill, lineWidth, lineStyle, cap, join, depthValue ),
+      _path( closed )
+{
+}
+
+Rectangle::Rectangle( double xLeft,
+          double yTop,
+          double rectWidth, 
+          double rectHeight,
+          DGtal::Color pen,
+          DGtal::Color fill,
+          double lineWidth, 
+          const LineStyle style,
+          const LineCap cap,
+          const LineJoin join,
+          int depthValue )
+  : Polyline( std::vector<Point>(), true, pen, fill,
+        lineWidth, style, cap, join, depthValue )
+{
+  _path <<  Point( xLeft, yTop );
+  _path << Point( xLeft + rectWidth, yTop );
+  _path << Point( xLeft + rectWidth, yTop - rectHeight );
+  _path << Point( xLeft, yTop - rectHeight );
+}
+  
+Rectangle::Rectangle( const Rect & rect,
+          DGtal::Color pen,
+          DGtal::Color fill,
+          double lineWidth,
+          const LineStyle style,
+          const LineCap cap,
+          const LineJoin join,
+          int depthValue )
+  : Polyline( std::vector<Point>(), true, pen, fill, lineWidth, style, cap, join, depthValue ) {
+  _path << Point( rect.left, rect.top );
+  _path << Point( rect.left + rect.width, rect.top );
+  _path << Point( rect.left + rect.width, rect.top - rect.height );
+  _path << Point( rect.left, rect.top - rect.height );
+}
+
+
+  
+Image::Image( double x0, double y0, double aWidth, double aHeight, 
+        std::string fileName, int depthValue, double alpha )
+  : Rectangle(x0, y0, aWidth, aHeight, DGtal::Color::None, DGtal::Color::None, 0.0, SolidStyle, RoundCap, MiterJoin, depthValue ), 
+    _x0(x0), _y0(y0), _width(aWidth), _height(aHeight), _filename(fileName), _alpha (alpha)
+{
+}
+  
+
+
+} // namespace LibBoard

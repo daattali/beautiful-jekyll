@@ -1,9 +1,0 @@
-<map id="DGtal::TransformedPrism" name="DGtal::TransformedPrism">
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream. " alt="" coords="1622,33,1851,58"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1KhalimskySpaceND.html" title="DGtal::KhalimskySpaceND\l\&lt; 3, int \&gt;" alt="" coords="1646,82,1827,121"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; dim, Integer \&gt;" alt="" coords="498,81,629,119"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1KhalimskyCell.html" title="DGtal::KhalimskyCell\l\&lt; dim, Integer \&gt;" alt="" coords="1062,95,1209,134"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1KhalimskyCell.html" title="Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates. " alt="" coords="771,131,917,170"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex..." alt="" coords="1338,150,1518,189"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="194,74,353,126"/>
-</map>

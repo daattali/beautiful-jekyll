@@ -1,0 +1,120 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Filtered2x2DetComputer.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/11/20
+ *
+ * Implementation of inline methods defined in Filtered2x2DetComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------------------------------------------------------------
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::Filtered2x2DetComputer<T>::init(const ArgumentInteger& aA, const ArgumentInteger& aB)
+{
+  myA = aA; 
+  myB = aB; 
+}
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::Filtered2x2DetComputer<T>::ResultInteger
+DGtal::Filtered2x2DetComputer<T>::operator()(const ArgumentInteger& aX, const ArgumentInteger& aY) const
+{
+  ArgumentInteger det = (myA*aY - myB*aX); 
+  if ( det != 0.0 )
+    { //if not zero, we can conclude because of the IEC-559 / IEEE-754 standard.
+      return (det > 0.0) ? NumberTraits<ResultInteger>::ONE : -NumberTraits<ResultInteger>::ONE;  
+    }
+  else 
+    { //otherwise, we must use another method.
+      myDetComputer.init(myA, myB); 
+      return myDetComputer.operator()(aX, aY); 
+    }
+}
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::Filtered2x2DetComputer<T>::ResultInteger
+DGtal::Filtered2x2DetComputer<T>::operator()(const ArgumentInteger& aA, const ArgumentInteger& aB, 
+					     const ArgumentInteger& aX, const ArgumentInteger& aY)
+{
+  init(aA, aB); 
+  return operator()(aX, aY); 
+}
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::Filtered2x2DetComputer<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Filtered2x2DetComputer]";
+}
+
+// ----------------------------------------------------------------------------
+template <typename T>
+inline
+bool
+DGtal::Filtered2x2DetComputer<T>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const Filtered2x2DetComputer<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

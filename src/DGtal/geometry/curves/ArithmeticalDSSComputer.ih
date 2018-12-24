@@ -1,0 +1,527 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ArithmeticalDSSComputer.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/01
+ *
+ * Implementation of inline methods defined in ArithmeticalDSSComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <boost/version.hpp>
+#if BOOST_VERSION < 105800
+#include <boost/math/common_factor_rt.hpp>
+#else
+#include <boost/integer/common_factor_rt.hpp>
+#endif
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+ArithmeticalDSSComputer()
+  : myDSS( Point(0,0) ), myBegin(), myEnd()
+{
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+ArithmeticalDSSComputer(const ConstIterator& it)
+  : myDSS( *it ), myBegin(it), myEnd(it)
+{
+  ++myEnd;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+void DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+init(const ConstIterator& it)
+{
+  myBegin = it;
+  myEnd = it;
+  ++myEnd;
+  Point p = *it;
+  myDSS = DSS( p );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+ArithmeticalDSSComputer ( const ArithmeticalDSSComputer<TIterator,TInteger,adjacency> & other )
+  : myDSS(other.myDSS), myBegin(other.myBegin), myEnd(other.myEnd)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>&
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+operator=( const ArithmeticalDSSComputer<TIterator,TInteger,adjacency> & other )
+{
+  if ( this != &other )
+    {
+      myDSS = other.myDSS;
+      myBegin = other.myBegin;
+      myEnd = other.myEnd;
+    }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Reverse
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>
+::getReverse() const
+{
+  return Reverse();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Self
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>
+::getSelf() const
+{
+  return Self();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+operator==( const ArithmeticalDSSComputer<TIterator,TInteger,adjacency>& other ) const
+{
+  return ( (myBegin == other.myBegin)
+	   && (myEnd == other.myEnd)
+	   && (myDSS == other.myDSS) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::
+operator!=( const ArithmeticalDSSComputer<TIterator,TInteger,adjacency> & other ) const
+{
+  return (!(*this == other));
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                       Update methods                                      //
+///////////////////////////////////////////////////////////////////////////////
+//--------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isExtendableFront()
+{
+  return myDSS.isExtendableFront( *myEnd );
+}
+
+//--------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isExtendableBack()
+{
+  ConstIterator it = myBegin;
+  --it;
+  return myDSS.isExtendableBack( *it );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::extendFront()
+{
+  if (myDSS.extendFront(*myEnd))
+    {
+      ++myEnd;
+      return true;
+    }
+  else
+    return false;
+}
+
+//--------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::extendBack()
+{
+  ConstIterator it = myBegin;
+  --it;
+  if (myDSS.extendBack(*it))
+    {
+      myBegin = it;
+      return true;
+    }
+  else
+    return false;
+}
+
+//--------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::retractFront()
+{
+  if (myDSS.retractFront())
+    {
+      --myEnd;
+      return true;
+    }
+  else
+    return false;
+}
+
+//--------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::retractBack()
+{
+  if (myDSS.retractBack())
+    {
+      ++myBegin;
+      return true;
+    }
+  else
+    return false;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                       Accessors                                           //
+///////////////////////////////////////////////////////////////////////////////
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+const typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Primitive&
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::primitive() const
+{
+  return myDSS;
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::remainder(const Point & aPoint) const
+{
+  return myDSS.remainder( aPoint );
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::remainder(const ConstIterator & it) const
+{
+  return remainder(*it);
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::position(const Point & aPoint) const
+{
+  return myDSS.position( aPoint );
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::position(const ConstIterator & it) const
+{
+  return position(*it);
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isInDSL(const Point & aPoint) const
+{
+  return myDSS.isInDSL( aPoint );
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isInDSL(const ConstIterator & it) const
+{
+  return isInDSL(*it);
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isInDSS(const Point & aPoint) const
+{
+  return myDSS.isInDSS( aPoint );
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isInDSS(const ConstIterator & it) const
+{
+  return isInDSS(*it);
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::a() const
+{
+  return myDSS.a();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::b() const
+{
+  return myDSS.b();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::mu() const
+{
+  return myDSS.mu();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TInteger
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::omega() const
+{
+  return myDSS.omega();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Point
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Uf() const
+{
+  return myDSS.Uf();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Point
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Ul() const
+{
+  return myDSS.Ul();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Point
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Lf() const
+{
+  return myDSS.Lf();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Point
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Ll() const
+{
+  return myDSS.Ll();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Point
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::back() const
+{
+  return myDSS.back();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::Point
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::front() const
+{
+  return myDSS.front();
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TIterator
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::begin() const
+{
+  return myBegin;
+}
+
+//-------------------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+TIterator
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::end() const
+{
+  return myEnd;
+}
+
+//-----------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::isValid() const
+{
+  return ( (myDSS.isValid())&&(isNotEmpty(myBegin,myEnd)) );
+}
+
+//-----------------------------------------------------------------
+template <typename TIterator, typename TInteger, unsigned short adjacency>
+inline
+void
+DGtal::ArithmeticalDSSComputer<TIterator,TInteger,adjacency>::selfDisplay ( std::ostream & out) const
+{
+  out << "[ArithmeticalDSSComputer] " << myDSS;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                       Alias                                               //
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+DGtal::StandardDSS4Computer<TIterator,TInteger>::
+StandardDSS4Computer()
+  : Super()
+{
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+DGtal::StandardDSS4Computer<TIterator,TInteger>::
+StandardDSS4Computer(const ConstIterator& it)
+  : Super(it)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+DGtal::StandardDSS4Computer<TIterator,TInteger>::
+StandardDSS4Computer ( const StandardDSS4Computer<TIterator,TInteger> & other )
+  : Super(other)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+typename DGtal::StandardDSS4Computer<TIterator,TInteger>&
+DGtal::StandardDSS4Computer<TIterator,TInteger>::
+operator=( const StandardDSS4Computer<TIterator,TInteger> & other )
+{
+  if (this != & other)
+    Super::operator=( other );
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+DGtal::NaiveDSS8Computer<TIterator,TInteger>::
+NaiveDSS8Computer()
+  : Super()
+{
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+DGtal::NaiveDSS8Computer<TIterator,TInteger>::
+NaiveDSS8Computer(const ConstIterator& it)
+  : Super(it)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+DGtal::NaiveDSS8Computer<TIterator,TInteger>::
+NaiveDSS8Computer ( const NaiveDSS8Computer<TIterator,TInteger> & other )
+  : Super(other)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TIterator, typename TInteger>
+inline
+typename DGtal::NaiveDSS8Computer<TIterator,TInteger>&
+DGtal::NaiveDSS8Computer<TIterator,TInteger>::
+operator=( const NaiveDSS8Computer<TIterator,TInteger> & other )
+{
+  if (this != & other)
+    Super::operator=( other );
+  return *this;
+}

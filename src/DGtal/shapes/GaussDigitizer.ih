@@ -1,0 +1,254 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file GaussDigitizer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/06/29
+ *
+ * Implementation of inline methods defined in GaussDigitizer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cmath>
+#include "DGtal/kernel/NumberTraits.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>::~GaussDigitizer()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>::GaussDigitizer()
+  : myEShape( 0 )
+{}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+DGtal::GaussDigitizer<TSpace,TEuclideanShape> &
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>::
+operator=( const GaussDigitizer & other )
+{
+  if ( this != &other )
+    {
+      myEShape = other.myEShape;
+      myPointEmbedder = other.myPointEmbedder;
+      myLowerPoint = other.myLowerPoint;
+      myUpperPoint = other.myUpperPoint;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+void 
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::attach( ConstAlias<EuclideanShape> shape )
+{
+  myEShape = shape;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+void 
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::init( const RealPoint & xLow, const RealPoint & xUp, 
+  typename RealVector::Component gridStep )
+{
+  myPointEmbedder.init( gridStep );
+  myLowerPoint = myPointEmbedder.floor( xLow );
+  myUpperPoint = myPointEmbedder.ceil( xUp );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+void 
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::init( const RealPoint & xLow, const RealPoint & xUp, 
+  const RealVector & aGridSteps )
+{
+  myPointEmbedder.init( aGridSteps );
+  myLowerPoint = myPointEmbedder.floor( xLow );
+  myUpperPoint = myPointEmbedder.ceil( xUp );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+const typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::PointEmbedder &
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::pointEmbedder() const
+{
+  return myPointEmbedder;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Domain
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::getDomain() const
+{
+  return Domain( getLowerBound(), getUpperBound() );
+}
+ 
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Point
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::floor( const RealPoint & p ) const
+{
+  return myPointEmbedder.floor( p );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Point
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::ceil( const RealPoint & p ) const
+{
+  return myPointEmbedder.ceil( p );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Point
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::round( const RealPoint & p ) const
+{
+  return myPointEmbedder.round( p );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::RealPoint
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::embed( const Point & p ) const
+{
+  return myPointEmbedder.embed( p );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+bool
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::operator()( const Point & p ) const
+{
+  ASSERT( myEShape != 0 );
+  return ((myEShape->orientation( embed( p ) ) == INSIDE)
+          || (myEShape->orientation( embed( p ) ) == ON));
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+const typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Point &
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::getLowerBound() const
+{
+  return myLowerPoint;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+const typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Point &
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::getUpperBound() const
+{
+  return myUpperPoint;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::Vector
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::resolution() const
+{
+  return getUpperBound() - getLowerBound();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TEuclideanShape>
+inline
+typename DGtal::GaussDigitizer<TSpace,TEuclideanShape>::RealVector
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>
+::gridSteps() const
+{
+  return myPointEmbedder.gridSteps();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TEuclideanShape>
+inline
+void
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[GaussDigitizer]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, typename TEuclideanShape>
+inline
+bool
+DGtal::GaussDigitizer<TSpace,TEuclideanShape>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, typename TEuclideanShape>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const GaussDigitizer<TSpace,TEuclideanShape> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

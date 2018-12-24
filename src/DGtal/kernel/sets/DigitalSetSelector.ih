@@ -1,0 +1,72 @@
+  /**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSetSelector.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @author Sebastien Fourey (\c Sebastien.Fourey@greyc.ensicaen.fr )
+ * Groupe de Recherche en Informatique, Image, Automatique et
+ * Instrumentation de Caen - GREYC (CNRS, UMR 6072), ENSICAEN, France
+ *
+ * @date 2010/07/01
+ *
+ * Implementation of inline methods defined in DigitalSetSelector.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// TEMPLATE SPECIALIZATION
+///////////////////////////////////////////////////////////////////////////////
+namespace DGtal {
+
+  /**
+   * DigitalSetSelector specializarion when Preferences is
+   * SMALL_DS+LOW_VAR_DS+LOW_ITER_DS+LOW_BEL_DS
+   */
+  template <typename Domain>
+  struct DigitalSetSelector<Domain, SMALL_DS+LOW_VAR_DS+LOW_ITER_DS+LOW_BEL_DS>
+  {
+    /**
+     * Adequate digital set representation for the given preferences.
+     */
+    typedef DigitalSetBySTLVector<Domain> Type;
+  };
+
+  /**
+   * DigitalSetSelector specializarion when Preferences is
+   * SMALL_DS+LOW_VAR_DS+HIGH_ITER_DS+LOW_BEL_DS
+   */
+  template <typename Domain>
+  struct DigitalSetSelector<Domain, SMALL_DS+LOW_VAR_DS+HIGH_ITER_DS+LOW_BEL_DS>
+  {
+    /**
+     * Adequate digital set representation for the given preferences.
+     */
+    typedef DigitalSetBySTLVector<Domain> Type;
+  };
+
+
+  
+}
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

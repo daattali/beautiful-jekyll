@@ -1,0 +1,70 @@
+/**
+ * @file moduleHowToUseDGtal-qmake.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/05/25
+ *
+ * Documentation file for feature HowToUseDGtal
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleHowToUseDGtal-qmake How to use DGtal in my own project with other build systems?
+@author Bertrand Kerautret
+
+
+In \ref moduleHowToUseDGtal, we have described a simple way to use DGtal in your own project with the cmake build system. We detail here hints to use DGtal with different systems.
+
+[TOC]
+
+\section HowToUseDGtal_QMAKE Using qmake tools
+
+
+To use the qmake tools provided by QT you have to edit the
+configuration file \em helloworld.pro to specify the use of the DGtal lib:
+
+@code
+TEMPLATE = app
+
+LIBS += -lDGtal 
+SOURCES += helloworld.cpp
+@endcode
+ 
+
+
+
+If you plane to use 3d-viewer features you have to specify it by
+adding a definition transmitted to the compiler:
+
+@code
+DEFINES += WITH_VISU3D_QGLVIEWER
+@endcode
+
+
+Moreover you also have to specify that you need to link the part of
+DGtal containing the 3D features (and add if needed the link with \em
+qglviewer ):
+
+@code
+LIBS += -lDGtal  -lDGtal-visu3d  -framework qglviewer 
+@endcode
+
+
+@warning If you want to use other optional  DGtal dependencies (ITK,
+ImageMagick, ...), you  have to add all associated DEFINES flags and
+LIBS variables.
+
+
+
+
+*/
+
+}

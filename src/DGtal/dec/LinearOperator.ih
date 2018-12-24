@@ -1,0 +1,158 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file LinearOperator.ih
+ * @author Pierre Gueth (\c pierre.gueth@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/03/26
+ *
+ * Implementation of inline methods defined in LinearOperator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::LinearOperator(ConstAlias<Calculus> _calculus)
+    :  myContainer((&_calculus)->kFormLength(order_out, duality_out), (&_calculus)->kFormLength(order_in, duality_in)), myCalculus(&_calculus)
+{
+    clear();
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::LinearOperator(ConstAlias<Calculus> _calculus, const Container& _container)
+    :  myContainer(_container), myCalculus(&_calculus)
+{
+    ASSERT( myCalculus->kFormLength(order_out, duality_out) == myContainer.rows() );
+    ASSERT( myCalculus->kFormLength(order_in, duality_in) == myContainer.cols() );
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>&
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::operator=(const LinearOperator& _operator)
+{
+    myContainer = _operator.myContainer;
+    myCalculus = _operator.myCalculus;
+    return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+void
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::clear()
+{
+    myContainer.clear();
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+void
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::selfDisplay(std::ostream& os) const
+{
+    os << "[";
+    os << duality_in << " " << order_in << "-form => " << duality_out << " " << order_out << "-form";
+    os << " ";
+    os << "(" << myContainer.cols() << " => " << myContainer.rows() << ")";
+    os << "]";
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_out, duality_out, order_in, duality_in>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::transpose() const
+{
+    return TransposedLinearOperator(*myCalculus, myContainer.transpose());
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+bool
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>::isValid() const
+{
+    return myCalculus != NULL;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+std::ostream&
+DGtal::operator<<(std::ostream& out, const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& object)
+{
+    object.selfDisplay(out);
+    return out;
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>
+DGtal::operator+(const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator_a, const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator_b)
+{
+    ASSERT( linear_operator_a.myCalculus == linear_operator_b.myCalculus );
+    typedef DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out> OutputOperator;
+    return OutputOperator(*linear_operator_a.myCalculus, linear_operator_a.myContainer + linear_operator_b.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>
+DGtal::operator-(const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator_a, const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator_b)
+{
+    ASSERT( linear_operator_a.myCalculus == linear_operator_b.myCalculus );
+    typedef DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out> OutputOperator;
+    return OutputOperator(*linear_operator_a.myCalculus, linear_operator_a.myContainer - linear_operator_b.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>
+DGtal::operator*(const typename Calculus::Scalar& scalar, const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator)
+{
+    typedef DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out> OutputOperator;
+    return OutputOperator(*linear_operator.myCalculus, scalar * linear_operator.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::KForm<Calculus, order_out, duality_out>
+DGtal::operator*(const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator, const DGtal::KForm<Calculus, order_in, duality_in>& input_form)
+{
+    ASSERT( linear_operator.myCalculus == input_form.myCalculus );
+    return DGtal::KForm<Calculus, order_out, duality_out>(*linear_operator.myCalculus, linear_operator.myContainer * input_form.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_fold, DGtal::Duality duality_fold, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>
+DGtal::operator*(const DGtal::LinearOperator<Calculus, order_fold, duality_fold, order_out, duality_out>& operator_left, const DGtal::LinearOperator<Calculus, order_in, duality_in, order_fold, duality_fold>& operator_right)
+{
+    ASSERT( operator_right.myCalculus == operator_right.myCalculus );
+    typedef DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out> OutputOperator;
+    return OutputOperator(*operator_left.myCalculus, operator_left.myContainer * operator_right.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>
+DGtal::operator-(const DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out>& linear_operator)
+{
+    typedef DGtal::LinearOperator<Calculus, order_in, duality_in, order_out, duality_out> OutputOperator;
+    return OutputOperator(*linear_operator.myCalculus, -linear_operator.myContainer);
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

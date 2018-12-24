@@ -1,5 +1,0 @@
-<map id="DGtal::TangentFromDCAEstimator&lt; DCAComputer &gt;" name="DGtal::TangentFromDCAEstimator&lt; DCAComputer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html" title="DGtal::detail::PosDepScale\lIndepSCEstimator\&lt; DCAComputer,\l detail::TangentVectorFromDCA \&gt;" alt="" coords="707,32,954,101"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1detail_1_1TangentVectorFromDCA.html" title="DGtal::detail::TangentVector\lFromDCA" alt="" coords="237,4,440,54"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html" title="DGtal::detail::PosDepScale\lIndepSCEstimator\&lt; TSegmentComputer,\l Functor, ReturnType \&gt;" alt="" coords="198,78,480,146"/>
-</map>

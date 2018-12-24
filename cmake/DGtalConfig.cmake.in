@@ -1,0 +1,189 @@
+# - Config file for the DGtal package
+# It defines the following variables
+#  DGTAL_INCLUDE_DIRS - include directories for DGtal
+#  DGTAL_LIBRARY_DIRS - library directories for DGtal (normally not used!)
+#  DGTAL_LIBRARIES    - libraries to link against
+#  DGTAL_VERSION      - version of the DGtal library
+
+# Tell the user project where to find our headers and libraries
+set(DGTAL_INCLUDE_DIRS "@DGTAL_INCLUDE_DIRS@;@DGtalLibInc@")
+set(DGTAL_LIBRARY_DIRS "@DGTAL_LIB_DIR@")
+set(DGTAL_VERSION "@DGTAL_VERSION@")
+
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("@DGTAL_CMAKE_DIR@/DGtalLibraryDepends.cmake")
+
+
+
+#------------------------------------------------------------------------------
+# -- Environement variables
+#------------------------------------------------------------------------------
+if (UNIX)
+  add_definitions(-DUNIX)
+endif (UNIX)
+if (WIN32)
+  add_definitions(-DWIN32)
+endif (WIN32)
+if (APPLE)
+  add_definitions(-DAPPLE)
+endif (APPLE)
+
+
+#------------------------------------------------------------------------------
+# -- Removing some strange warnings when compiling with VS Express
+#------------------------------------------------------------------------------
+IF(MSVC)
+ IF(NOT DEFINED CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_NO_WARNINGS)
+    SET(NOT DEFINED CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_NO_WARNINGS ON)
+  ENDIF(NOT DEFINED CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_NO_WARNINGS)
+ENDIF(MSVC)
+
+#------------------------------------------------------------------------------
+# Remove some MS Visual c++ flags
+#------------------------------------------------------------------------------
+IF(MSVC)
+
+  ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS -D_CRT_NONSTDC_NO_DEPRECATE -D_SCL_SECURE_NO_WARNINGS)
+  #------------------------------------------------------------------------------
+  # for GMP / MPIR (MT)
+  #------------------------------------------------------------------------------
+  SET(CMAKE_EXE_LINKER_FLAGS /NODEFAULTLIB:\"libcmtd.lib;libcmt.lib\")
+ENDIF(MSVC)
+
+
+#------------------------------------------------
+#---- We propagate definitions for #define marco
+#---- according to dependencies detected during
+#---- the build.
+#------------------------------------------------
+IF(@DEBUG_VERBOSE_DGTAL@)
+  ADD_DEFINITIONS(-DDEBUG_VERBOSE)
+  MESSAGE(STATUS "Debug verbose mode activated")
+ENDIF(@DEBUG_VERBOSE_DGTAL@)
+
+IF (@VERBOSE_DGTAL@)
+  ADD_DEFINITIONS(-DVERBOSE)
+  MESSAGE(STATUS "Verbose mode activated")
+ENDIF(@VERBOSE_DGTAL@)
+
+IF (@COLOR_WITH_ALPHA_ARITH_DGTAL@)
+  ADD_DEFINITIONS(-DCOLOR_WITH_ALPHA_ARITH)
+ENDIF(@COLOR_WITH_ALPHA_ARITH_DGTAL@)
+
+# Set c++11 flag only if needed.
+# When user or compiler have not set any std flag.
+try_compile( CPP11_COMPATIBLE_FLAG_SET_BY_USER
+  ${CMAKE_BINARY_DIR}/CMakeTmp
+  @DGTAL_CMAKE_DIR@/cpp11_check.cpp
+  CMAKE_FLAGS "-DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS}"
+  OUTPUT_VARIABLE OUTPUT
+  )
+
+IF (NOT CPP11_COMPATIBLE_FLAG_SET_BY_USER)
+  set(CMAKE_CXX_STANDARD 11) # C++11...
+  set(CMAKE_CXX_STANDARD_REQUIRED ON) #...is required...
+  set(CMAKE_CXX_EXTENSIONS ON)
+  MESSAGE(STATUS "  c++11 enabled by cmake. ")
+ENDIF()
+
+IF(@GMP_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_GMP ")
+  SET(WITH_GMP 1)
+ENDIF(@GMP_FOUND_DGTAL@)
+
+IF(@MAGICK++_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_MAGICK ")
+  SET(WITH_MAGICK 1)
+ENDIF(@MAGICK++_FOUND_DGTAL@)
+
+IF(@ITK_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_ITK ")
+  SET(WITH_ITK 1)
+  #--------------------------------------------
+  #ITK issue (we need an explicit find_package)
+  #--------------------------------------------
+  FIND_PACKAGE(ITK REQUIRED)
+  INCLUDE( ${ITK_USE_FILE} )
+ENDIF(@ITK_FOUND_DGTAL@)
+
+IF(@CAIRO_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_CAIRO ")
+  SET(WITH_CAIRO 1)
+ENDIF(@CAIRO_FOUND_DGTAL@)
+
+IF(@HDF5_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_HDF5 ")
+  SET(WITH_HDF5 1)
+ENDIF(@HDF5_FOUND_DGTAL@)
+
+if (@QGLVIEWER_FOUND_DGTAL@)
+  add_definitions("-DWITH_VISU3D_QGLVIEWER ")
+  set(WITH_VISU3D_QGLVIEWER 1)
+  set(DGTAL_INCLUDE_DIRS ${DGTAL_INCLUDE_DIRS} @QGLVIEWER_INCLUDE_DIR@)
+endif (@QGLVIEWER_FOUND_DGTAL@)
+
+#-- We force the Qt rediscovering
+if (@QT4_FOUND_DGTAL@)
+  find_package(Qt4 REQUIRED COMPONENTS QtCore QtGUI QtXml QtOpenGL)
+  set(QT_USE_QTXML 1)
+  add_definitions("-DWITH_QT4")
+  set(WITH_QT4 1)
+  include(${QT_USE_FILE})
+  set(DGTAL_INCLUDE_DIRS ${DGTAL_INCLUDE_DIRS} ${QT_INCLUDE_DIR})
+endif (@QT4_FOUND_DGTAL@)
+
+if (@QT5_FOUND_DGTAL@)
+  find_package(Qt5 COMPONENTS Widgets OpenGL Xml REQUIRED)
+  add_definitions("-DWITH_QT5")
+  set(WITH_QT5 1)
+  set(Qt5_DIR @Qt5_DIR@)
+  set(DGTAL_INCLUDE_DIRS ${DGTAL_INCLUDE_DIRS}
+                         ${Qt5Widgets_INCLUDE_DIRS}
+                         ${Qt5OpenGL_INCLUDE_DIRS}
+                         ${Qt5Xml_INCLUDE_DIRS})
+endif (@QT5_FOUND_DGTAL@)
+
+IF(@OPENMP_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_OPENMP ")
+  SET(WITH_OPENMP 1)
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} @OpenMP_CXX_FLAGS@")
+  SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} @OpenMP_C_FLAGS@")
+  ADD_DEFINITIONS("-DWITH_OPENMP ")
+ENDIF(@OPENMP_FOUND_DGTAL@)
+
+
+IF(@EIGEN_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_EIGEN ")
+  SET(WITH_EIGEN 1)
+  SET(DGTAL_INCLUDE_DIRS ${DGTAL_INCLUDE_DIRS} @EIGEN3_INCLUDE_DIR@ )
+ENDIF(@EIGEN_FOUND_DGTAL@)
+
+
+IF(@CGAL_FOUND_DGTAL@)
+  find_package(CGAL COMPONENTS Core Eigen3)
+  include( ${CGAL_USE_FILE} )
+  ADD_DEFINITIONS("-DWITH_CGAL ")
+  SET(WITH_CGAL 1)
+ENDIF(@CGAL_FOUND_DGTAL@)
+
+IF(@FFTW3_FOUND_DGTAL@)
+  ADD_DEFINITIONS("-DWITH_FFTW3 ")
+  SET(WITH_FFTW3 1)
+
+  IF(@FFTW3_FLOAT_FOUND_DGTAL@)
+    ADD_DEFINITIONS("-DWITH_FFTW3_FLOAT ")
+  ENDIF(@FFTW3_FLOAT_FOUND_DGTAL@)
+
+  IF(@FFTW3_DOUBLE_FOUND_DGTAL@)
+    ADD_DEFINITIONS("-DWITH_FFTW3_DOUBLE ")
+  ENDIF(@FFTW3_DOUBLE_FOUND_DGTAL@)
+
+  IF(@FFTW3_LONG_FOUND_DGTAL@)
+    ADD_DEFINITIONS("-DWITH_FFTW3_LONG ")
+  ENDIF(@FFTW3_LONG_FOUND_DGTAL@)
+
+ENDIF(@FFTW3_FOUND_DGTAL@)
+
+# These are IMPORTED targets created by DGtalLibraryDepends.cmake
+set(DGTAL_LIBRARIES DGtal)

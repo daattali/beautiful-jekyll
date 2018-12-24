@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$structDGtal_1_1CBoundedInteger.html" title="Aim: The concept CBoundedInteger specifies what are the bounded integer numbers. Hence, it is a refinement of CInteger Concept ensuring that the numbers are bounded." alt="" coords="200,5,395,35"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CSignedInteger.html" title="Aim: Concept checking for Signed Integer." alt="" coords="205,58,389,89"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1CUnsignedInteger.html" title="Aim: Concept checking for Unsigned Integer." alt="" coords="199,111,396,142"/>
-</map>

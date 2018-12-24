@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1LambdaMST3DEstimator.html" title="DGtal::LambdaMST3DEstimator\l\&lt; Z3i::Space, DSSSegmentationComputer,\l TangentFromDSS3DFunctor\&lt; DSSSegmentationComputer\l::SegmentComputer, LambdaFunction \&gt; \&gt;" alt="" coords="5,5,378,71"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1LambdaMST3D.html" title="Aim: Simplify creation of Lambda MST tangent estimator. " alt="" coords="426,12,630,64"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1adjacency__iterator.html" title="boost::graph_traits\l\&lt; DGtal::DigitalSurface\l\&lt; TDigitalSurfaceContainer\l \&gt; \&gt;::adjacency_iterator" alt="" coords="171,5,368,80"/>
-<area shape="rect" id="node3" href="$classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1edge__iterator.html" title="boost::graph_traits\l\&lt; DGtal::DigitalSurface\l\&lt; TDigitalSurfaceContainer\l \&gt; \&gt;::edge_iterator" alt="" coords="171,104,368,179"/>
-<area shape="rect" id="node4" href="$classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1out__edge__iterator.html" title="boost::graph_traits\l\&lt; DGtal::DigitalSurface\l\&lt; TDigitalSurfaceContainer\l \&gt; \&gt;::out_edge_iterator" alt="" coords="171,203,368,277"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html" title="Aim: This class aims at representing an iterator that provides a way to scan the points of a DSL..." alt="" coords="171,301,368,360"/>
-</map>

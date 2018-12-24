@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="741,5,963,35"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DrawableWithDisplay3D \&gt;" alt="" coords="707,58,997,89"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt; T \&gt;::counter" alt="" coords="5,21,216,51"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="332,58,492,89"/>
-<area shape="rect" id="node11" title="STL class." alt="" coords="812,111,892,142"/>
-<area shape="rect" id="node13" title="STL class." alt="" coords="329,111,495,142"/>
-</map>

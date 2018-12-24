@@ -1,0 +1,309 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file IntegralInvariantVolumeEstimator.ih
+ * @author Jeremy Levallois (\c jeremy.levallois@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), INSA-Lyon, France
+ * LAboratoire de MAthématiques - LAMA (CNRS, UMR 5127), Université de Savoie, France
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2014/05/12
+ *
+ * Implementation of inline methods defined in IntegralInvariantVolumeEstimator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/math/BasicMathFunctions.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+~IntegralInvariantVolumeEstimator()
+{
+  clear();
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+void
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+clear()
+{
+  for( unsigned int i = 0; i < myKernelsSet.size(); ++i )
+    if ( myKernelsSet[ i ] != 0 ) delete myKernelsSet[ i ];
+  myH = 1.0;
+  myRadius = 0.0;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+IntegralInvariantVolumeEstimator( VolumeFunctor fct )
+  : myFct( fct ),
+    myKernelFunctor(NumberTraits<Value>::ONE),
+    myKernels(), myKernelsSet(),
+    myKernel( 0 ), myDigKernel( 0 ), 
+    myPointPredicate( 0 ), myShapeDomain( 0 ),
+    myShapePointFunctor( 0 ), myShapeSpelFunctor( 0 ),
+    myConvolver( 0 ),
+    myH( 1.0 ), myRadius( 0.0 )
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+IntegralInvariantVolumeEstimator
+( ConstAlias< KSpace > K, 
+  ConstAlias< PointPredicate > aPointPredicate,
+  VolumeFunctor fct )
+  : myFct( fct ), 
+    myKernelFunctor(NumberTraits<Value>::ONE),
+    myKernels(), myKernelsSet(),
+    myKernel( 0 ), myDigKernel( 0 ),
+    myPointPredicate( aPointPredicate ), myShapeDomain( 0 ),
+    myShapePointFunctor( 0 ), myShapeSpelFunctor( 0 ),
+    myConvolver( 0 ),
+    myH( 1.0 ), myRadius( 0.0 )
+{
+  CountedConstPtrOrConstPtr<KSpace> ptrK( K );
+  myShapeDomain = CountedPtr<Domain>( new Domain( ptrK->lowerBound(), ptrK->upperBound() ) );
+  myShapePointFunctor = CountedPtr<ShapePointFunctor>( new ShapePointFunctor( *myPointPredicate, *myShapeDomain, 1, 0 ) );
+  myShapeSpelFunctor = CountedPtr<ShapeSpelFunctor>( new ShapeSpelFunctor( *myShapePointFunctor, K ) );
+  myConvolver = CountedPtr<Convolver>( new Convolver( *myShapeSpelFunctor, myKernelFunctor, K ) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+IntegralInvariantVolumeEstimator
+( const Self& other )
+  : myFct( other.myFct ),
+    myKernelFunctor( other.myKernelFunctor ),
+    myKernels( other.myKernels ), myKernelsSet( other.myKernelsSet ),
+    myKernel( other.myKernel ), myDigKernel( other.myDigKernel ), 
+    myPointPredicate( other.myPointPredicate ), myShapeDomain( other.myShapeDomain ),
+    myShapePointFunctor( other.myShapePointFunctor ), myShapeSpelFunctor( other.myShapeSpelFunctor ),
+    myConvolver( other.myConvolver ),
+    myH( other.myH ), myRadius( other.myRadius )
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+typename DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::Self&
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+operator= ( const Self& other )
+{
+  if ( this != &other )
+    {
+      myFct = other.myFct;
+      // myKernelFunctor = other.myKernelFunctor;
+      myKernels = other.myKernels;
+      myKernelsSet = other.myKernelsSet;
+      myKernel = other.myKernel;
+      myDigKernel = other.myDigKernel;
+      myPointPredicate = other.myPointPredicate;
+      myShapeDomain = other.myShapeDomain;
+      myShapePointFunctor = other.myShapePointFunctor;
+      myShapeSpelFunctor = other.myShapeSpelFunctor;
+      myConvolver = other.myConvolver;
+      myH = other.myH;
+      myRadius = other.myRadius;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+typename DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::Scalar
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+h() const
+{ 
+  return myH;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+void
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+attach
+( ConstAlias< KSpace > K, 
+  ConstAlias<PointPredicate> aPointPredicate )
+{
+  myPointPredicate = aPointPredicate;
+  CountedConstPtrOrConstPtr<KSpace> ptrK( K );
+  myShapeDomain = CountedPtr<Domain>( new Domain( ptrK->lowerBound(), ptrK->upperBound() ) );
+  myShapePointFunctor = CountedPtr<ShapePointFunctor>( new ShapePointFunctor( *myPointPredicate, *myShapeDomain, 1, 0 ) );
+  myShapeSpelFunctor = CountedPtr<ShapeSpelFunctor>( new ShapeSpelFunctor( *myShapePointFunctor, K ) );
+  myConvolver = CountedPtr<Convolver>( new Convolver( *myShapeSpelFunctor, myKernelFunctor, K ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+void
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+setParams
+( const double dRadius )
+{
+  ASSERT( ( dRadius > 0.0 )
+          && "[DGtal::IntegralInvariantVolumeEstimator:setParams] Radius parameter dRadius must be positive." );
+  myRadius = dRadius;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+template <typename SurfelConstIterator>
+inline
+void
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+init
+( const double _h, SurfelConstIterator /* itb */, SurfelConstIterator /* ite */ )
+{
+  ASSERT( ( _h > 0.0 )
+          && "[DGtal::IntegralInvariantVolumeEstimator:init] Gridstep parameter h must be positive." );
+  ASSERT( ( myRadius > 0.0 )
+          && "[DGtal::IntegralInvariantVolumeEstimator:init] Radius parameter dRadius must have been initialized with a call to 'setParams'." );
+  ASSERT( ( myConvolver != 0 )
+          && "[DGtal::IntegralInvariantVolumeEstimator:init] Shape of interest must have been initialized with a call to 'attach'." );
+
+  typedef typename RealPoint::Component Scalar;
+  // Clear stuff
+  for( unsigned int i = 0; i < myKernelsSet.size(); ++i )
+    if ( myKernelsSet[ i ] != 0 ) delete myKernelsSet[ i ];
+
+  myH = _h;
+  double eRadius = myRadius * myH; // Euclidean radius of the ball kernel.
+  
+  myFct.init( myH, eRadius );
+
+  RealPoint rOrigin = RealPoint::zero;
+  Point pOrigin = Point::zero;
+  myKernel = CountedPtr<KernelSupport>( new KernelSupport( rOrigin, eRadius ) ); // acquired
+  myDigKernel = CountedPtr<DigitalShapeKernel>( new DigitalShapeKernel() );
+  myDigKernel->attach( *myKernel );
+  myDigKernel->init( myKernel->getLowerBound() + Point::diagonal(-1), myKernel->getUpperBound() + Point::diagonal(1), myH );
+  Domain neighborhood( Point::diagonal(-1), Point::diagonal(1) );
+  unsigned int n = functions::power( (unsigned int) 3, Space::dimension );
+  myKernels = std::vector< PairIterators > ( n );
+  myKernelsSet = std::vector< DigitalSet* >( n );
+  unsigned int offset = 0;
+  unsigned int middle = n / 2;
+  RealPoint shiftPoint;
+  for ( typename Domain::ConstIterator it_neigh = neighborhood.begin(),
+          it_neigh_end = neighborhood.end(); 
+        it_neigh != it_neigh_end; 
+        ++it_neigh, ++offset )
+    {
+      /// Computation of shifting masks
+      if( offset == middle ) continue; // no shift
+      for ( Dimension k = 0; k < Space::dimension; ++k )
+        shiftPoint[ k ] = (Scalar) (*it_neigh)[ k ];
+      shiftPoint *= (Scalar) myH;
+      KernelSupport* kernelShifted = new KernelSupport( shiftPoint, eRadius );
+      EuclideanMinus* current = new EuclideanMinus( myKernel );
+      current->minus( kernelShifted );
+      DigitalShape digCurrent;
+      digCurrent.attach( *current );
+      digCurrent.init( myKernel->getLowerBound() + Point::diagonal(-1), myKernel->getUpperBound() + Point::diagonal(1), myH );
+      
+      myKernelsSet[ offset ] = new DigitalSet( digCurrent.getDomain() );
+      Shapes< Domain>::digitalShaper ( *(myKernelsSet[ offset ]), digCurrent );
+      
+      myKernels[ offset ].first  = myKernelsSet[ offset ]->begin();
+      myKernels[ offset ].second = myKernelsSet[ offset ]->end();
+      
+      delete current;
+      delete kernelShifted;
+    }
+    /// End of computation of masks
+    myConvolver->init( pOrigin, *myDigKernel, myKernels );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+template <typename SurfelConstIterator>
+inline
+typename DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::Quantity
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::
+eval
+( SurfelConstIterator it ) const
+{
+  return myFct( myConvolver->eval( it ) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+template <typename OutputIterator, typename SurfelConstIterator>
+inline
+OutputIterator
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::eval
+( SurfelConstIterator itb,
+  SurfelConstIterator ite,
+  OutputIterator result ) const
+{
+  myConvolver->eval( itb, ite, result, myFct );
+  return result;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+void
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::selfDisplay
+( std::ostream & out ) const
+{
+  out << "[IntegralInvariantVolumeEstimator h=" << myH
+      << " digR=" << myRadius << " eucR=" << (myH*myRadius) << " ]";
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+bool
+DGtal::IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor>::isValid() const
+{
+  return ( myH > 0 ) && ( myRadius > 0 ) && ( myConvolver != 0 );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate, typename TVolumeFunctor>
+inline
+std::ostream&
+DGtal::operator<<
+( std::ostream & out, 
+  const IntegralInvariantVolumeEstimator<TKSpace, TPointPredicate, TVolumeFunctor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}

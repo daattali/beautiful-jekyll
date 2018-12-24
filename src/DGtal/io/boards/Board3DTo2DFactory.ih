@@ -1,0 +1,716 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+* @file   Board3DTo2DFactory.ih
+* @author Aline Martin <aline.martin@insa-lyon.fr>
+* @date   mardi 2 juillet 2013
+ *
+ * @brief
+ *
+ * Implementation of inline methods defined in Board3DTo2DFactory.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+#include "DGtal/helpers/StdDefs.h"
+#include "DGtal/images/ImageHelper.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+
+template < typename Space, typename KSpace>
+inline
+void DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                                    const DGtal::CameraPosition & cp )
+{
+  board.setCameraPosition(cp.eyex, cp.eyey, cp.eyez);
+}
+
+template < typename Space, typename KSpace>
+inline
+void DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                                    const DGtal::CameraDirection & cd )
+{
+  board.setCameraDirection(cd.dirx, cd.diry, cd.dirz);
+}
+
+template < typename Space, typename KSpace>
+inline
+void DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::CameraUpVector & cuv )
+{
+
+  board.setCameraUpVector(cuv.upx, cuv.upy, cuv.upz);
+}
+
+template < typename Space, typename KSpace>
+inline
+void DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                                    const DGtal::CameraZNearFar & cz )
+{
+  board.setNearFar(cz.ZNear, cz.ZFar);
+}
+
+//----------------------------------------------------------------------------------------------
+// heritage of methods
+
+
+// SphericalAccumulator
+/**
+   * Display an spherical accumulator in 3D. Bin values are mapped
+   * using a default HueShadeColorMap.
+   *
+   * @param board current board
+   * @param accumulator the accumulator to board
+   * @param shift translate vector for board purposes (default:
+   * zero vector)
+   * @param radius scale factor for the unit sphere radius (default:1)
+   * @tparam TVector a vector model
+   */
+template <typename Space, typename KSpace>
+template <typename TVector>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const  DGtal::SphericalAccumulator<TVector> & accumulator,
+                  const typename DGtal::SphericalAccumulator<TVector>::RealVector & shift,
+                  const double radius)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw ( board, accumulator, shift, radius);
+}
+
+// SphericalAccumulator
+
+// Mesh
+template <typename Space, typename KSpace>
+template <typename TPoint>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsFaces( Board3DTo2D<Space, KSpace> & board,  const DGtal::Mesh<TPoint> & aMesh )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsFaces( board, aMesh);
+}
+
+template <typename Space, typename KSpace>
+template <typename TPoint>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const  DGtal::Mesh<TPoint> & aMesh )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw (board, aMesh);
+}
+
+// Mesh
+
+// StandardDSS6Computer
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsBalls( Board3DTo2D<Space, KSpace> & board, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBalls(board, arithm);
+}
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsBoundingBox( Board3DTo2D<Space, KSpace> & board, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBoundingBox(board, arithm);
+}
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw(board , arithm);
+}
+
+// StandardDSS6Computer
+
+
+////
+
+// Naive3DDSSComputer
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsBalls( Board3DTo2D<Space, KSpace> & board, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBalls(board, arithm);
+}
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsBoundingBox( Board3DTo2D<Space, KSpace> & board, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBoundingBox(board, arithm);
+}
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw(board , arithm);
+}
+
+// Naive3DDSSComputer
+
+
+// DigitalSetBySTLSet
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPavingTransparent( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingTransparent(board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPaving( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsGrid( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid(board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aSet);
+}
+
+// DigitalSetBySTLSet
+
+
+// DigitalSetByAssociativeContainer
+/**
+ * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+ * @return the dyn. alloc. default style for this object.
+ */
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPavingTransparent( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingTransparent(board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPaving( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsGrid( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid(board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aSet);
+}
+
+// DigitalSetByAssociativeContainer
+
+
+
+// DigitalSetBySTLVector
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPavingTransparent( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingTransparent( board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPaving( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsGrid( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid(board, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aSet);
+}
+
+// DigitalSetBySTLVector
+
+
+// HyperRectDomain
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+template<typename TSpace>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::HyperRectDomain<TSpace> & aDomain )
+{
+  return  DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template<typename TSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsBoundingBox( Board3DTo2D<Space, KSpace> & board, const DGtal::HyperRectDomain<TSpace> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBoundingBox( board, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template<typename TSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsGrid( Board3DTo2D<Space, KSpace> & board, const DGtal::HyperRectDomain<TSpace> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid( board, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template<typename TSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPavingBalls( Board3DTo2D<Space, KSpace> & board, const DGtal::HyperRectDomain<TSpace> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingBalls( board, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template<typename TSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPaving( Board3DTo2D<Space, KSpace> & board, const DGtal::HyperRectDomain<TSpace> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( board, aDomain);
+}
+
+
+template <typename Space, typename KSpace>
+template<typename TSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::HyperRectDomain<TSpace> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aDomain);
+}
+
+
+// HyperRectDomain
+
+
+// KhalimskyCell
+template <typename Space, typename KSpace>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const typename KSpace::Cell & aCell )
+{
+  return   DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aCell);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const typename KSpace::Cell & aCell )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aCell);
+}
+
+// KhalimskyCell
+
+
+// Object
+template <typename Space, typename KSpace>
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::Object<TDigitalTopology, TDigitalSet> & anObject )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, anObject);
+}
+
+template <typename Space, typename KSpace>
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawWithAdjacencies( Board3DTo2D<Space, KSpace> & board, const DGtal::Object<TDigitalTopology, TDigitalSet> & anObject )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawWithAdjacencies( board, anObject);
+}
+template <typename Space, typename KSpace>
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::Object<TDigitalTopology, TDigitalSet> & anObject )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, anObject);
+}
+
+// Object
+
+
+// PointVector
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsGrid( Board3DTo2D<Space, KSpace> & board, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid( board, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPaving( Board3DTo2D<Space, KSpace> & board, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( board, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::drawAsPavingWired( Board3DTo2D<Space, KSpace> & board, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingWired( board, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent1, typename TComponent2, typename TContainer1, typename TContainer2>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::PointVector<dim, TComponent1, TContainer1> & aPoint, const DGtal::PointVector<dim, TComponent2, TContainer2> & aPoint2 )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aPoint, aPoint2);
+}
+
+// PointVector
+
+
+// SignedKhalimskyCell
+/**
+   * Default DGtal::Board3DTo2DFactory<Space,KSpace>::drawing style object.
+   * @return the dyn. alloc. default style for this object.
+   */
+template <typename Space, typename KSpace>
+inline
+DGtal::DrawableWithBoard3DTo2D *
+DGtal::Board3DTo2DFactory<Space,KSpace>::defaultStyle( std::string str, const typename KSpace::SCell & aSCell )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, aSCell);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const typename KSpace::SCell &aSCell )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aSCell);
+}
+
+// SignedKhalimskyCell
+
+// GridCurve
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::GridCurve<KSpace> & aGrid )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aGrid);
+}
+
+// GridCurve
+
+// SCellsRange
+template <typename Space, typename KSpace>
+template < typename TIterator, typename TSCell>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( DGtal::Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::Identity, TSCell> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// SCellsRange
+
+// PointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, functors::SCellToPoint<KSpace>, typename KSpace::Point> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// PointsRange
+
+// MidPointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, CanonicSCellEmbedder<KSpace>, typename KSpace::Space::RealPoint> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// MidPointsRange
+
+// ArrowsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, functors::SCellToArrow<KSpace>, std::pair<typename KSpace::Point, typename KSpace::Vector > > & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// ArrowsRange
+
+// InnerPointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, functors::SCellToInnerPoint<KSpace>, typename KSpace::Point> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// InnerPointsRange
+
+// OuterPointsRange
+template< typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, functors::SCellToOuterPoint<KSpace>, typename KSpace::Point> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// OuterPointsRange
+
+// IncidentPointsRange
+template< typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board,
+                  const DGtal::ConstRangeAdapter<TIterator, functors::SCellToIncidentPoints<KSpace>,std::pair<typename KSpace::Point, typename KSpace::Point > > & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aRangeAdapter);
+}
+
+// IncidentPointsRange
+
+
+template< typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::SetMode3D & aMode)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aMode);
+}
+
+
+template < typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::CustomStyle3D & aStyle)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aStyle);
+}
+
+template < typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::CustomColors3D & aColor)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aColor);
+}
+
+template < typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::ClippingPlane & aClipping)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aClipping);
+}
+
+
+template < typename Space, typename KSpace>
+inline
+void
+DGtal::Board3DTo2DFactory<Space,KSpace>::draw( Board3DTo2D<Space, KSpace> & board, const DGtal::TransformedPrism & aTransformedPrism)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( board, aTransformedPrism);
+}
+
+
+// end heritage
+//----------------------------------------------------------------------------------------------

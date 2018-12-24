@@ -1,5 +1,0 @@
-<map id="DGtal::concepts::CSparseMatrix&lt; T, TripletInterator &gt;" name="DGtal::concepts::CSparseMatrix&lt; T, TripletInterator &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CMatrix.html" title="Aim: Represent any static or dynamic sized matrix having sparse or dense representation. " alt="" coords="90,192,290,217"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure. " alt="" coords="149,92,320,131"/>
-<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="156,5,313,31"/>
-</map>

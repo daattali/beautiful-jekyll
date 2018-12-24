@@ -1,0 +1,40 @@
+
+/*! \namespace DGtal
+*  \brief \p DGtal is the top-level namespace which contains all DGtal
+*         functions and types.
+*/
+
+/*! \namespace DGtal::experimental
+*  \brief \p Experimental functions and types of the DGtal library.
+*/
+
+/*! \namespace DGtal::deprecated
+*  \brief \p Deprecated functions and types of the DGtal library.
+*/
+
+/*! \namespace DGtal::concepts
+*  \brief \p concepts namespace gathers concepts in DGtal and concept utils.
+*/
+
+
+/*! \namespace DGtal::functors
+*  \brief \p functors namespace gathers all DGtal functors.
+*/
+
+/*! \namespace DGtal::functions
+*  \brief \p functions namespace gathers all DGtal functionsxs.
+*/
+
+/*! \namespace DGtal::detail
+*  \brief \p detail namespace gathers internal classes and functions.
+*/
+
+
+/*! \namespace DGtal::Z2i
+ *  \brief \p Z2i this namespace gathers  the standard of types for 2D imagery.
+*/
+
+/*! \namespace DGtal::Z3i
+ *  \brief \p Z3i this namespace gathers  the standard of types for 3D imagery.
+*/
+

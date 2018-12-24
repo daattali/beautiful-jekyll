@@ -1,0 +1,173 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file KForm.ih
+ * @author Pierre Gueth (\c pierre.gueth@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/03/26
+ *
+ * Implementation of inline methods defined in KForm.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::KForm<Calculus, order, duality>::ones(ConstAlias<Calculus> _calculus)
+{
+    KForm<Calculus, order, duality> kform(_calculus);
+    kform.myContainer.fill(1);
+    return kform;
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::KForm<Calculus, order, duality>::zeros(ConstAlias<Calculus> _calculus)
+{
+    KForm<Calculus, order, duality> kform(_calculus);
+    return kform;
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::KForm<Calculus, order, duality>::dirac(ConstAlias<Calculus> _calculus, const typename Calculus::Cell& _cell)
+{
+    KForm<Calculus, order, duality> kform(_calculus);
+    kform.myContainer( _calculus->getCellIndex(_cell) ) = 1;
+    return kform;
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>::KForm(ConstAlias<Calculus> _calculus)
+    : myContainer((&_calculus)->kFormLength(order, duality)), myCalculus(&_calculus)
+{
+    clear();
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>::KForm(ConstAlias<Calculus> _calculus, const Container& _container)
+    : myContainer(_container),  myCalculus(&_calculus)
+{
+    ASSERT( myCalculus->kFormLength(order, duality) == myContainer.rows() );
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>&
+DGtal::KForm<Calculus, order, duality>::operator=(const KForm& _form)
+{
+    myContainer = _form.myContainer;
+    myCalculus = _form.myCalculus;
+    return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+void
+DGtal::KForm<Calculus, order, duality>::selfDisplay(std::ostream& out) const
+{
+    out << "[" << duality << " " << order << "-form (" << myContainer.rows() << ")]";
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+std::string
+DGtal::KForm<Calculus, order, duality>::className() const
+{
+    return "KForm";
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+typename DGtal::KForm<Calculus, order, duality>::SCell
+DGtal::KForm<Calculus, order, duality>::getSCell(const typename DGtal::KForm<Calculus, order, duality>::Index& index) const
+{
+    return myCalculus->getSCell(order, duality, index);
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+typename DGtal::KForm<Calculus, order, duality>::Index
+DGtal::KForm<Calculus, order, duality>::length() const
+{
+    return myCalculus->kFormLength(order, duality);
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+void
+DGtal::KForm<Calculus, order, duality>::clear()
+{
+    myContainer.clear();
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+bool
+DGtal::KForm<Calculus, order, duality>::isValid() const
+{
+    return myCalculus != NULL;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+std::ostream&
+DGtal::operator<<(std::ostream& out, const DGtal::KForm<Calculus, order, duality>& object)
+{
+    object.selfDisplay(out);
+    return out;
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::operator+(const DGtal::KForm<Calculus, order, duality>& form_a, const DGtal::KForm<Calculus, order, duality>& form_b)
+{
+    ASSERT( form_a.myCalculus == form_b.myCalculus );
+    return DGtal::KForm<Calculus, order, duality>(*form_a.myCalculus, form_a.myContainer + form_b.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::operator-(const DGtal::KForm<Calculus, order, duality>& form_a, const DGtal::KForm<Calculus, order, duality>& form_b)
+{
+    ASSERT( form_a.myCalculus == form_b.myCalculus );
+    return DGtal::KForm<Calculus, order, duality>(*form_a.myCalculus, form_a.myContainer - form_b.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::operator*(const typename Calculus::Scalar& scalar, const DGtal::KForm<Calculus, order, duality>& form)
+{
+    return DGtal::KForm<Calculus, order, duality>(*form.myCalculus, scalar * form.myContainer);
+}
+
+template <typename Calculus, DGtal::Order order, DGtal::Duality duality>
+DGtal::KForm<Calculus, order, duality>
+DGtal::operator-(const DGtal::KForm<Calculus, order, duality>& form)
+{
+    return DGtal::KForm<Calculus, order, duality>(*form.myCalculus, -form.myContainer);
+}
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

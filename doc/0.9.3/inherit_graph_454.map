@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structDGtal_1_1functors_1_1ConstantPointPredicate.html" title="DGtal::functors::Constant\lPointPredicate\&lt; TPoint,\l false \&gt;" alt="" coords="5,5,176,57"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1functors_1_1FalsePointPredicate.html" title="Aim: The predicate that returns always false. " alt="" coords="224,12,405,51"/>
-</map>

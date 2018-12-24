@@ -1,7 +1,0 @@
-<map id="DGtal::DrawWithBoard3DTo2DModifier" name="DGtal::DrawWithBoard3DTo2DModifier">
-<area shape="rect" id="node3" href="$structDGtal_1_1CameraDirection.html" title="CameraDirection class to set camera direction. " alt="" coords="527,5,701,33"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CameraPosition.html" title="CameraPosition class to set camera position. " alt="" coords="531,57,697,85"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CameraUpVector.html" title="CameraUpVector class to set camera up&#45;vector. " alt="" coords="527,109,701,137"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CameraZNearFar.html" title="CameraZNearFar class to set near and far distance. " alt="" coords="528,161,700,189"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawableWithDisplay3D.html" title="DGtal::DrawableWithDisplay3D" alt="" coords="5,84,224,112"/>
-</map>

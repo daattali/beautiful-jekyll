@@ -1,0 +1,244 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file MeshVoxelizer.ih
+ *
+ * @date 2016/01/24
+ *
+ * Implementation of inline methods defined in MeshVoxelizer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+/////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+/////////////////////////////////////////////////////////////////////////////
+#include <algorithm>
+/////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services --------------------------------
+
+// ---------------------------------------------------------
+template <typename TDigitalSet, int Separation>
+inline
+double
+DGtal::MeshVoxelizer<TDigitalSet,Separation>::distance(const PointR3& M,
+                                                       const VectorR3& n,
+                                                       const PointZ3& voxel)
+{
+  ASSERT( n.norm()!=0 );
+  double distance = 0.;
+  double d = n.dot(M);
+
+  distance = n.dot(voxel) - d;
+
+  if(distance < 0)
+    distance *= -1;
+
+  distance /= n.norm();
+
+  return distance;
+}
+
+// ---------------------------------------------------------
+template <typename TDigitalSet, int Separation>
+inline
+typename DGtal::MeshVoxelizer<TDigitalSet,Separation>::TriangleOrientation
+DGtal::MeshVoxelizer<TDigitalSet, Separation>::pointIsInside2DTriangle(const PointR2& A,
+                                                                       const PointR2& B,
+                                                                       const PointR2& C,
+                                                                       const PointR2& v)
+{
+  // AC
+  double val1 = (C[1] - A[1])*(v[0] - A[0]) + (C[0] - A[0])*(A[1] - v[1]);
+  // CB
+  double val2 = (B[1] - C[1])*(v[0] - C[0]) + (B[0] - C[0])*(C[1] - v[1]);
+  // BA
+  double val3 = (A[1] - B[1])*(v[0] - B[0]) + (A[0] - B[0])*(B[1] - v[1]);
+
+  // 0 : outside
+  // 1 : inside
+  // 2 : on edge
+  // 3 : on vertex
+  if( ( val1 == 0. && val2 == 0. ) ||
+      ( val1 == 0. && val3 == 0. ) ||
+      ( val2 == 0. && val3 == 0. ) )
+    return ONVERTEX;
+  else if(val1 < 0. || val2 < 0. || val3 < 0.)
+    return OUTSIDE;
+  else if(val1 == 0. || val2 == 0. || val3 == 0.)
+    return ONEDGE;
+  else
+    return INSIDE;
+}
+
+// ---------------------------------------------------------
+template <typename TDigitalSet, int Separation>
+inline
+bool
+DGtal::MeshVoxelizer<TDigitalSet, Separation>::pointIsInsideVoxel(const PointR3& P,
+                                                                  const PointZ3& v)
+{
+  bool isInside = true;
+
+  PointR3 PP = P - v;
+  for(int i(0); i < 3; i++)
+    isInside = isInside && ( -0.5 <= PP[i] && PP[i] <= 0.5 );
+
+  return isInside;
+}
+
+// ---------------------------------------------------------
+template <typename TDigitalSet, int Separation>
+inline
+void
+DGtal::MeshVoxelizer<TDigitalSet, Separation>::voxelizeTriangle(DigitalSet &outputSet,
+                                                                const PointR3& A,
+                                                                const PointR3& B,
+                                                                const PointR3& C,
+                                                                const VectorR3& n,
+                                                                const std::pair<PointR3, PointR3>& bbox)
+{
+  OrientationFunctor orientationFunctor;
+
+  //geometric predicate
+  PredicateFromOrientationFunctor2<OrientationFunctor> pointPredicate( orientationFunctor );
+
+  // foreach intersection target
+  for(unsigned int i(0); i < myIntersectionTarget().size(); i++)
+  {
+    // 2D projection of A ; B ; C
+    PointR2 AA = myIntersectionTarget.project(i, A);
+    PointR2 BB = myIntersectionTarget.project(i, B);
+    PointR2 CC = myIntersectionTarget.project(i, C);
+
+    // check orientation
+    if(! pointPredicate(AA, BB, CC))
+      std::swap(AA, CC);
+
+    // traverse all voxel of current face bounding box
+    PointZ3 v = bbox.first;
+    for(; v[1] <= bbox.second[1]; v[1]++)
+      for(v[0] = bbox.first[0]; v[0] <= bbox.second[0]; v[0]++)
+        for(v[2] = bbox.first[2]; v[2] <= bbox.second[2]; v[2]++)
+        {
+          auto target = myIntersectionTarget(i);
+          // check if points are on different side
+          target.myFirst += v;
+          target.mySecond += v;
+
+          VectorR3 a2myFirst = A - target.myFirst;
+          VectorR3 a2mySecond = A - target.mySecond;
+
+          VectorR3 w = target.mySecond - target.myFirst;
+          double den = n.dot(w);
+
+          bool isSameSide = den == 0 // target on plane
+            || ( a2myFirst.dot(n) * a2mySecond.dot(n) > 0 ); // target on one side
+
+          // if target is on the same side -> skip current iteration
+          if( isSameSide )
+            continue;
+
+          PointR2 pp = myIntersectionTarget.project(i, v);
+
+          // check if current voxel projection is inside ABC projection
+          if(pointIsInside2DTriangle(AA, BB, CC, pp) != OUTSIDE)
+          {
+            if (outputSet.domain().isInside( v ) )
+              outputSet.insert(v);
+          }
+        }
+  }
+}
+
+// ---------------------------------------------------------
+template <typename TDigitalSet, int Separation>
+template <typename MeshPoint>
+inline
+void
+DGtal::MeshVoxelizer<TDigitalSet,Separation>::voxelize(DigitalSet &outputSet,
+                                                       const MeshPoint &a,
+                                                       const MeshPoint &b,
+                                                       const MeshPoint &c,
+                                                       const double scaleFactor)
+{
+  std::pair<PointR3, PointR3> bbox;
+  VectorR3 n, e1, e2;
+  PointR3 A, B, C;
+
+  //Scaling + casting to PointR3
+  A = a*scaleFactor;
+  B = b*scaleFactor;
+  C = c*scaleFactor;
+
+  e1 = B - A;
+  e2 = C - A;
+  n = e1.crossProduct(e2).getNormalized();
+
+  //Boundingbox
+  bbox.first = A;
+  bbox.second = A;
+  bbox.first = bbox.first.inf( B );
+  bbox.first = bbox.first.inf( C );
+  bbox.second = bbox.second.sup( B );
+  bbox.second = bbox.second.sup( C );
+
+  ASSERT( bbox.first <= bbox.second);
+
+  //Rounding the bbox
+  std::transform( bbox.first.begin(), bbox.first.end(), bbox.first.begin(),
+                  [](typename PointR3::Component cc) { return std::floor(cc);});
+  std::transform( bbox.second.begin(), bbox.second.end(), bbox.second.begin(),
+                  [](typename PointR3::Component cc) { return std::ceil(cc);});
+
+  // voxelize current triangle to myDigitalSet
+  voxelizeTriangle( outputSet, A, B, C, n, bbox);
+}
+
+// ---------------------------------------------------------
+template <typename TDigitalSet, int Separation>
+template <typename MeshPoint>
+inline
+void
+DGtal::MeshVoxelizer<TDigitalSet, Separation>::voxelize(DigitalSet &outputSet,
+                                                        const Mesh<MeshPoint> &aMesh,
+                                                        const double scaleFactor)
+{
+  DigitalSet rawEmpty{outputSet.domain()};
+#ifdef WITH_OPENMP
+#pragma omp parallel for schedule(dynamic)
+#endif
+  for(unsigned int i = 0; i < aMesh.nbFaces(); i++)
+  {
+    DigitalSet currentSet{rawEmpty};
+    MeshFace currentFace = aMesh.getFace(i);
+    for(unsigned int j=0; j + 2 < currentFace.size(); ++j)
+    {
+      voxelize(currentSet, aMesh.getVertex(currentFace[0]),
+               aMesh.getVertex(currentFace[j+1]),
+               aMesh.getVertex(currentFace[j+2]),
+               scaleFactor);
+    }
+
+#ifdef WITH_OPENMP
+   #pragma omp critical
+#endif
+    {
+      outputSet += currentSet;
+    }
+  }
+}

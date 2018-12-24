@@ -1,0 +1,2122 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file KhalimskySpaceND.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/02/08
+ *
+ * Implementation of inline methods defined in KhalimskySpaceND.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <DGtal/io/Color.h>
+#include <DGtal/kernel/NumberTraits.h>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Namescape scope definition of static constants.
+///////////////////////////////////////////////////////////////////////////////
+
+template < DGtal::Dimension dim, typename TInteger >
+  const constexpr
+  DGtal::Dimension
+  DGtal::KhalimskySpaceND<dim, TInteger>::dimension;
+
+template < DGtal::Dimension dim, typename TInteger >
+  const constexpr
+  DGtal::Dimension
+  DGtal::KhalimskySpaceND<dim, TInteger>::DIM;
+
+template < DGtal::Dimension dim, typename TInteger >
+  const constexpr
+  typename DGtal::KhalimskySpaceND<dim, TInteger>::Sign
+  DGtal::KhalimskySpaceND<dim, TInteger>::POS;
+
+template < DGtal::Dimension dim, typename TInteger >
+  const constexpr
+  typename DGtal::KhalimskySpaceND<dim, TInteger>::Sign
+  DGtal::KhalimskySpaceND<dim, TInteger>::NEG;
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// KhalimskyCell
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::KhalimskyCell< dim, TInteger >::
+KhalimskyCell( Integer )
+     : myPreCell()
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::KhalimskyCell< dim, TInteger >::
+KhalimskyCell( const Point & p )
+  : myPreCell( p )
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::KhalimskyCell< dim, TInteger >::
+KhalimskyCell( const PreCell & aCell )
+  : myPreCell( aCell )
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::KhalimskyCell< dim, TInteger >::
+operator DGtal::KhalimskyPreCell< dim, TInteger > const& () const
+{
+  return myPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::KhalimskyPreCell< dim, TInteger > const &
+DGtal::KhalimskyCell< dim, TInteger >::
+preCell () const
+{
+  return myPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::KhalimskyCell< dim, TInteger >::
+operator DGtal::KhalimskyPreCell< dim, TInteger > & ()
+{
+  return myPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+bool
+DGtal::KhalimskyCell< dim, TInteger >::
+operator==( const KhalimskyCell & other ) const
+{
+  return myPreCell == other.myPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+bool
+DGtal::KhalimskyCell< dim, TInteger >::
+operator!=( const KhalimskyCell & other ) const
+{
+  return myPreCell != other.myPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+bool
+DGtal::KhalimskyCell< dim, TInteger >::
+operator<( const KhalimskyCell & other ) const
+{
+  return myPreCell < other.myPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+std::ostream &
+DGtal::operator<<( std::ostream & out,
+       const KhalimskyCell< dim, TInteger > & object )
+{
+  out << static_cast< const KhalimskyPreCell<dim, TInteger> & >(object);
+  return out;
+}
+
+//------------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+std::string
+DGtal::KhalimskyCell<dim, TInteger>::
+className() const
+{
+  return "KhalimskyCell";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// SignedKhalimskyCell
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+SignedKhalimskyCell( Integer )
+  : mySPreCell()
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+SignedKhalimskyCell( const Point & p, bool positive )
+  : mySPreCell( p, positive )
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+SignedKhalimskyCell( const SPreCell & aCell )
+  : mySPreCell( aCell )
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+operator DGtal::SignedKhalimskyPreCell< dim, TInteger > const& () const
+{
+  return mySPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::SignedKhalimskyPreCell< dim, TInteger > const &
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+preCell() const
+{
+  return mySPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+operator DGtal::SignedKhalimskyPreCell< dim, TInteger > & ()
+{
+  return mySPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+bool
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+operator==( const SignedKhalimskyCell & other ) const
+{
+  return mySPreCell == other.mySPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+bool
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+operator!=( const SignedKhalimskyCell & other ) const
+{
+  return mySPreCell != other.mySPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+bool
+DGtal::SignedKhalimskyCell< dim, TInteger >::
+operator<( const SignedKhalimskyCell & other ) const
+{
+  return mySPreCell < other.mySPreCell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim,
+     typename TInteger >
+inline
+std::ostream &
+DGtal::operator<<( std::ostream & out,
+       const SignedKhalimskyCell< dim, TInteger > & object )
+{
+  out << static_cast< const SignedKhalimskyPreCell<dim, TInteger> & >(object);
+  return out;
+}
+
+//------------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger >
+inline
+std::string
+DGtal::SignedKhalimskyCell<dim, TInteger>::
+className() const
+{
+  return "SignedKhalimskyCell";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// KhalimskySpaceNDHelper
+///////////////////////////////////////////////////////////////////////////////
+namespace DGtal
+{
+
+template <
+  DGtal::Dimension dim,
+  typename TInteger
+>
+class KhalimskySpaceNDHelper< KhalimskySpaceND< dim, TInteger > >
+{
+private:
+  // Private typedefs
+  using KhalimskySpace = KhalimskySpaceND< dim, TInteger >;
+  using Point = PointVector< dim, TInteger >;
+  using Cell  = KhalimskyCell< dim, TInteger >;
+  using SCell = SignedKhalimskyCell< dim, TInteger >;
+
+  /// Returns derived mutable instance
+  KhalimskySpace& derived()
+    {
+      return *static_cast<KhalimskySpace*>(this);
+    }
+
+  /// Returns derived constant instance
+  KhalimskySpace const & derived() const
+    {
+      return *static_cast<KhalimskySpace const*>(this);
+    }
+
+
+public:
+  // Provided helpers
+
+  /// @return true is the specified dimension is periodic
+  inline
+  bool isDimensionPeriodicHelper( DGtal::Dimension d ) const
+    {
+      return derived().myClosure[ d ] == KhalimskySpace::PERIODIC;
+    }
+
+  /// @return true is there is at least one periodic dimension.
+  inline
+  bool isAnyDimensionPeriodicHelper() const
+    {
+      return myIsAnyDimensionPeriodic;
+    }
+
+  /** Modifies a khalimsky coordinate according to the dimension periodicity.
+   * @param[in,out] aKCoord the coordinate to modify.
+   * @param d the coordinate dimension.
+   */
+  inline
+  void updateKCoordHelper( typename Point::Coordinate & aKCoord, DGtal::Dimension d ) const
+    {
+      if ( isDimensionPeriodicHelper( d ) )
+        {
+          aKCoord = ( aKCoord - derived().myCellLower.myPreCell.coordinates[ d ] ) % myCellExtent[ d ];
+          aKCoord += ( ( aKCoord < 0 ) ?
+                derived().myCellUpper.myPreCell.coordinates[ d ] + 1
+              : derived().myCellLower.myPreCell.coordinates[ d ]
+          );
+        }
+    }
+
+  /** Returns a given khalimsky coordinate modified according to the dimension periodicity.
+   * @param[in] aKCoord the coordinate to modify.
+   * @param d the coordinate dimension.
+   * @returns the modified coordinate.
+   */
+  inline
+  typename Point::Coordinate returnKCoordHelper( typename Point::Coordinate aKCoord, DGtal::Dimension d ) const
+    {
+      updateKCoordHelper( aKCoord, d );
+      return aKCoord;
+    }
+
+  /** Modifies khalimsky coordinates of a point according to the dimension periodicity.
+   * @param[in,out] aKCoords  the khalimksy coordinates.
+   */
+  inline
+  void updateKCoordsHelper( Point & aKCoords ) const
+    {
+      if ( isAnyDimensionPeriodicHelper() )
+        {
+          for ( DGtal::Dimension i = 0; i < dim; ++i )
+            updateKCoordHelper( aKCoords[ i ], i );
+        }
+    }
+
+  /** Returns given khalimsky coordinates of a point modified according to the dimension periodicity.
+   * @param[in] aKCoords  the khalimksy coordinates.
+   */
+  inline
+  Point returnKCoordsHelper( Point aKCoords ) const
+    {
+      updateKCoordsHelper( aKCoords );
+      return aKCoords;
+    }
+
+  /** Modifies a cell's khalimsky coordinate according to the dimension periodicity.
+   * @param[in,out] aCell an unsigned cell.
+   * @param d the coordinate dimension.
+   */
+  inline
+  void updateCellHelper( Cell & aCell, DGtal::Dimension d ) const
+    {
+      updateKCoordHelper( aCell.myPreCell.coordinates[ d ], d );
+    }
+
+  /** Modifies a cell's khalimsky coordinates according to the dimension periodicity.
+   * @param[in,out] aCell an unsigned cell.
+   */
+  inline
+  void updateCellHelper( Cell & aCell ) const
+    {
+      updateKCoordsHelper( aCell.myPreCell.coordinates );
+    }
+
+  /** Modifies a cell's khalimsky coordinate according to the dimension periodicity.
+   * @param[in,out] aCell a signed cell.
+   * @param d the coordinate dimension.
+   */
+  inline
+  void updateSCellHelper( SCell & aCell, DGtal::Dimension d ) const
+    {
+      updateKCoordHelper( aCell.mySPreCell.coordinates[ d ], d );
+    }
+
+  /** Modifies a cell's khalimsky coordinates according to the dimension periodicity.
+   * @param[in,out] aCell a signed cell.
+   */
+  inline
+  void updateSCellHelper( SCell & aCell ) const
+    {
+      updateKCoordsHelper( aCell.mySPreCell.coordinates );
+    }
+
+public:
+  /// Initialization
+  bool initHelper()
+    {
+      myIsAnyDimensionPeriodic = false;
+      for ( DGtal::Dimension i = 0; i < dim; ++i )
+        {
+          myIsAnyDimensionPeriodic |= isDimensionPeriodicHelper( i );
+          myCellExtent[ i ] = derived().myCellUpper.myPreCell.coordinates[ i ] - derived().myCellLower.myPreCell.coordinates[ i ] + 1;
+        }
+
+      return true;
+    }
+
+
+private:
+  // Optimization data
+  Point myCellExtent; ///< Extent between the extremal cells.
+  bool  myIsAnyDimensionPeriodic; ///< true if there is at least one periodic dimension.
+};
+
+} // namespace DGtal
+
+///////////////////////////////////////////////////////////////////////////////
+// KhalimskySpaceND
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+DGtal::KhalimskySpaceND< dim, TInteger>::
+~KhalimskySpaceND()
+{
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+DGtal::KhalimskySpaceND< dim, TInteger>::
+KhalimskySpaceND()
+{
+  Point low, high;
+  for ( DGtal::Dimension i = 0; i < dimension; ++i )
+    {
+      low[ i ]  = NumberTraits< Integer >::min() / 2 + 1;
+      high[ i ] = NumberTraits< Integer >::max() / 2 - 1;
+    }
+  init( low, high, true );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+init( const Point & lower,
+      const Point & upper,
+      bool isClosed )
+{
+  std::array<Closure, dimension> closure;
+  for ( DGtal::Dimension i = 0; i < dimension; ++i )
+    closure[ i ] = isClosed ? CLOSED : OPEN;
+
+  return init( lower, upper, closure );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+init( const Point & lower,
+      const Point & upper,
+      Closure closure )
+{
+  std::array<Closure, dimension> dimClosure;
+  dimClosure.fill( closure );
+
+  return init( lower, upper, dimClosure );
+}
+
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+init( const Point & lower,
+      const Point & upper,
+      const std::array<Closure, dim> & closure )
+{
+  myLower = lower;
+  myUpper = upper;
+  myClosure = closure;
+
+  if ( NumberTraits< Integer >::isBounded() == BOUNDED )
+    {
+      for ( DGtal::Dimension i = 0; i < dimension; ++i )
+        {
+          if ( ( lower[ i ] <= ( NumberTraits< Integer >::min() / 2 ) )
+            || ( upper[ i ] >= ( NumberTraits< Integer >::max() / 2 ) ) )
+              return false;
+        }
+    }
+
+  for ( DGtal::Dimension i = 0; i < dimension; ++i )
+    {
+      PreCellularGridSpace::uSetKCoord( myCellLower.myPreCell, i, ( lower[ i ] * 2 ) + ( closure[ i ] != OPEN   ? 0 : 1 ) );
+      PreCellularGridSpace::uSetKCoord( myCellUpper.myPreCell, i, ( upper[ i ] * 2 ) + ( closure[ i ] == CLOSED ? 2 : 1 ) );
+
+    }
+
+  return this->initHelper();
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Size
+DGtal::KhalimskySpaceND< dim, TInteger>::
+size( DGtal::Dimension k ) const
+{
+  ASSERT( k < dimension );
+  return myUpper[ k ] + NumberTraits<Integer>::ONE - myLower[ k ];
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger>::
+min( DGtal::Dimension k ) const
+{
+  return myLower[ k ];
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger>::
+max( DGtal::Dimension k ) const
+{
+  return myUpper[ k ];
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+const typename DGtal::KhalimskySpaceND< dim, TInteger>::Point &
+DGtal::KhalimskySpaceND< dim, TInteger>::
+lowerBound() const
+{
+  return myLower;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+const typename DGtal::KhalimskySpaceND< dim, TInteger>::Point &
+DGtal::KhalimskySpaceND< dim, TInteger>::
+upperBound() const
+{
+  return myUpper;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+const typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell &
+DGtal::KhalimskySpaceND< dim, TInteger>::
+lowerCell() const
+{
+  return myCellLower;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+const typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell &
+DGtal::KhalimskySpaceND< dim, TInteger>::
+upperCell() const
+{
+  return myCellUpper;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsValid( const PreCell & p, Dimension k ) const
+{
+  return cIsValid( p.coordinates, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsValid( const PreCell & p ) const
+{
+  return cIsValid( p.coordinates );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+cIsValid( const Point & p, Dimension k ) const
+{
+  return   p[ k ] <= PreCellularGridSpace::uKCoord( myCellUpper, k )
+        && p[ k ] >= PreCellularGridSpace::uKCoord( myCellLower, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+cIsValid( const Point & p ) const
+{
+  for ( Dimension k = 0; k < DIM; ++ k )
+    if ( ! cIsValid( p, k ) )
+      return false;
+
+  return true;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sIsValid( const SPreCell & p, Dimension k ) const
+{
+  return cIsValid( p.coordinates, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sIsValid( const SPreCell & p ) const
+{
+  return cIsValid( p.coordinates );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+isSpaceClosed() const
+{
+  for ( Dimension i = 0; i < dimension; ++i )
+    if ( myClosure[ i ] == OPEN )
+      return false;
+
+  return true;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+isSpaceClosed( Dimension k ) const
+{
+  return myClosure[ k ] != OPEN;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+isSpacePeriodic() const
+{
+  for ( Dimension i = 0; i < dimension; ++i )
+    if ( myClosure[ i ] != PERIODIC )
+      return false;
+
+  return true;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+isSpacePeriodic( Dimension k ) const
+{
+  return myClosure[ k ] == PERIODIC;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+isAnyDimensionPeriodic() const
+{
+  return this->isAnyDimensionPeriodicHelper();
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uCell( const PreCell & c ) const
+{
+  return uCell( c.coordinates );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uCell( const Point & kp ) const
+{
+  ASSERT( cIsInside( kp ) );
+  return Cell( this->returnKCoordsHelper( kp ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uCell( Point p, const PreCell & c ) const
+{
+  return uCell( PreCellularGridSpace::uCell( p, c ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sCell( const SPreCell & c  ) const
+{
+  return sCell( c.coordinates, c.positive ? POS : NEG );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sCell( const Point & kp, Sign sign ) const
+{
+  ASSERT( cIsInside( kp ) );
+  return SCell( this->returnKCoordsHelper( kp ), sign == POS );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sCell( Point p, const SPreCell & c ) const
+{
+  return sCell( PreCellularGridSpace::sCell( p, c ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uSpel( Point p ) const
+{
+  return uCell( PreCellularGridSpace::uSpel( p ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSpel( Point p, Sign sign ) const
+{
+  return sCell( PreCellularGridSpace::sSpel( p, sign ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uPointel( Point p ) const
+{
+  return uCell( PreCellularGridSpace::uPointel( p ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sPointel( Point p, Sign sign ) const
+{
+  return sCell( PreCellularGridSpace::sPointel( p, sign ) );
+}
+//-----------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uKCoord( const Cell & c, DGtal::Dimension k ) const
+{
+  ASSERT( uIsValid(c) );
+  return PreCellularGridSpace::uKCoord( c, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uCoord( const Cell & c, DGtal::Dimension k ) const
+{
+  ASSERT( uIsValid(c) );
+  return PreCellularGridSpace::uCoord( c, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Point const &
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uKCoords( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+  return PreCellularGridSpace::uKCoords( c );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Point
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uCoords( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+  return PreCellularGridSpace::uCoords( c );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sKCoord( const SCell & c, DGtal::Dimension k ) const
+{
+  ASSERT( sIsValid(c) );
+  return PreCellularGridSpace::sKCoord( c, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sCoord( const SCell & c, DGtal::Dimension k ) const
+{
+  ASSERT( sIsValid(c) );
+  return PreCellularGridSpace::sCoord( c, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Point const &
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sKCoords( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+  return PreCellularGridSpace::sKCoords( c );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Point
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sCoords( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+  return PreCellularGridSpace::sCoords( c );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Sign
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSign( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+  return PreCellularGridSpace::sSign( c );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+signs( const Cell & p, Sign s ) const
+{
+  return sCell( PreCellularGridSpace::signs( p, s ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+unsigns( const SCell & p ) const
+{
+  return uCell( PreCellularGridSpace::unsigns( p ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::SCell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sOpp( const SCell & p ) const
+{
+  return sCell( PreCellularGridSpace::sOpp( p ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uSetKCoord( Cell & c, DGtal::Dimension k, Integer i ) const
+{
+  PreCellularGridSpace::uSetKCoord( c.myPreCell, k, i );
+  this->updateCellHelper( c, k );
+  ASSERT( uIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSetKCoord( SCell & c, DGtal::Dimension k, Integer i ) const
+{
+  PreCellularGridSpace::sSetKCoord( c.mySPreCell, k, i );
+  this->updateSCellHelper( c, k );
+  ASSERT( sIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uSetCoord( Cell & c, DGtal::Dimension k, Integer i ) const
+{
+  PreCellularGridSpace::uSetCoord( c.myPreCell, k, i );
+  this->updateCellHelper( c, k );
+  ASSERT( uIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSetCoord( SCell & c, DGtal::Dimension k, Integer i ) const
+{
+  PreCellularGridSpace::sSetCoord( c.mySPreCell, k, i );
+  this->updateSCellHelper( c, k );
+  ASSERT( sIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uSetKCoords( Cell & c, const Point & kp ) const
+{
+  PreCellularGridSpace::uSetKCoords( c.myPreCell, kp );
+  this->updateCellHelper( c );
+  ASSERT( uIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSetKCoords( SCell & c, const Point & kp ) const
+{
+  PreCellularGridSpace::sSetKCoords( c.mySPreCell, kp );
+  this->updateSCellHelper( c );
+  ASSERT( sIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uSetCoords( Cell & c, const Point & p ) const
+{
+  PreCellularGridSpace::uSetCoords( c.myPreCell, p );
+  this->updateCellHelper( c );
+  ASSERT( uIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSetCoords( SCell & c, const Point & p ) const
+{
+  PreCellularGridSpace::sSetCoords( c.mySPreCell, p );
+  this->updateSCellHelper( c );
+  ASSERT( sIsValid(c) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sSetSign( SCell & c, Sign s ) const
+{
+  PreCellularGridSpace::sSetSign( c.mySPreCell, s );
+}
+//-----------------------------------------------------------------------------
+// ------------------------- Cell topology services -----------------------
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uTopology( const Cell & p ) const
+{
+  return PreCellularGridSpace::uTopology( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sTopology( const SCell & p ) const
+{
+  return PreCellularGridSpace::sTopology( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+DGtal::Dimension
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uDim( const Cell & p ) const
+{
+  return PreCellularGridSpace::uDim( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+DGtal::Dimension
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sDim( const SCell & p ) const
+{
+  return PreCellularGridSpace::sDim( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsSurfel( const Cell & b ) const
+{
+  return PreCellularGridSpace::uIsSurfel( b );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sIsSurfel( const SCell & b ) const
+{
+  return PreCellularGridSpace::sIsSurfel( b );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsOpen( const Cell & p, DGtal::Dimension k ) const
+{
+  return PreCellularGridSpace::uIsOpen( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sIsOpen( const SCell & p, DGtal::Dimension k ) const
+{
+  return PreCellularGridSpace::sIsOpen( p, k );
+}
+
+//-----------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::DirIterator
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uDirs( const Cell & p ) const
+{
+  return PreCellularGridSpace::uDirs( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::DirIterator
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sDirs( const SCell & p ) const
+{
+  return PreCellularGridSpace::sDirs( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::DirIterator
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uOrthDirs( const Cell & p ) const
+{
+  return PreCellularGridSpace::uOrthDirs( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::DirIterator
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sOrthDirs( const SCell & p ) const
+{
+  return PreCellularGridSpace::sOrthDirs( p );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+DGtal::Dimension
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uOrthDir( const Cell & s ) const
+{
+  return PreCellularGridSpace::uOrthDir( s );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+DGtal::Dimension
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sOrthDir( const SCell & s ) const
+{
+  return PreCellularGridSpace::sOrthDir( s );
+}
+//-----------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uFirst( const PreCell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+
+  return myClosure[ k ] == OPEN ?
+        2 * myLower[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 2 )
+      : 2 * myLower[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 0 );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uFirst( const PreCell & p ) const
+{
+  Cell cell;
+  for ( Dimension k = 0; k < dimension; ++k )
+    PreCellularGridSpace::uSetKCoord( cell.myPreCell, k, uFirst( p, k ) );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uLast( const PreCell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+
+  return myClosure[ k ] == CLOSED ?
+        2 * myUpper[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 2 )
+      : 2 * myUpper[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 0 );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uLast( const PreCell & p ) const
+{
+  Cell cell;
+  for ( Dimension k = 0; k < dimension; ++k )
+    PreCellularGridSpace::uSetKCoord( cell.myPreCell, k, uLast( p, k ) );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uGetIncr( const Cell & p, DGtal::Dimension k ) const
+{
+  Cell cell( PreCellularGridSpace::uGetIncr( p, k ) );
+  this->updateCellHelper( cell, k );
+  ASSERT( uIsValid(cell) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsMax( const Cell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+  ASSERT( uIsInside(p) );
+  return
+        ! this->isDimensionPeriodicHelper( k )
+    &&  PreCellularGridSpace::uKCoord( p, k ) >= uLast( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsInside( const PreCell & p, DGtal::Dimension k ) const
+{
+  return cIsInside( p.coordinates, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsInside( const PreCell & p ) const
+{
+  return cIsInside( p.coordinates );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+cIsInside( const Point & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+  return this->isDimensionPeriodicHelper( k )
+      || cIsValid( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+cIsInside( const Point & p ) const
+{
+  for ( Dimension k = 0; k < DIM; ++k )
+    if ( ! cIsInside( p, k ) )
+      return false;
+
+  return true;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uGetMax( Cell p, DGtal::Dimension k ) const
+{
+  PreCellularGridSpace::uSetKCoord( p.myPreCell, k, uLast( p, k ) );
+  ASSERT( uIsValid( p ) );
+  return p;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uGetDecr( const Cell & p, DGtal::Dimension k ) const
+{
+  Cell cell( PreCellularGridSpace::uGetDecr( p, k ) );
+  this->updateCellHelper( cell, k );
+  ASSERT( uIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uIsMin( const Cell & p, DGtal::Dimension k ) const
+{
+  ASSERT( uIsInside(p) );
+  return
+        ! this->isDimensionPeriodicHelper( k )
+    &&  PreCellularGridSpace::uKCoord( p, k ) <= uFirst( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uGetMin( Cell p, DGtal::Dimension k ) const
+{
+  PreCellularGridSpace::uSetKCoord( p.myPreCell, k, uFirst( p, k ) );
+  ASSERT( uIsValid(p) );
+  return p;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uGetAdd( const Cell & p, DGtal::Dimension k, Integer x ) const
+{
+  Cell cell( PreCellularGridSpace::uGetAdd( p, k, x ) );
+  this->updateCellHelper( cell, k );
+  ASSERT( uIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uGetSub( const Cell & p, DGtal::Dimension k, Integer x ) const
+{
+  Cell cell( PreCellularGridSpace::uGetSub( p, k, x ) );
+  this->updateCellHelper( cell, k );
+  ASSERT( uIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uDistanceToMax( const Cell & p, DGtal::Dimension k ) const
+{
+  using KPS = PreCellularGridSpace;
+  ASSERT( k < DIM );
+  ASSERT( uIsValid(p) );
+  return ( KPS::uKCoord( myCellUpper, k ) - KPS::uKCoord( p, k ) ) >> 1;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uDistanceToMin( const Cell & p, DGtal::Dimension k ) const
+{
+  using KPS = PreCellularGridSpace;
+  ASSERT( k < DIM );
+  ASSERT( uIsValid(p) );
+  return ( KPS::uKCoord( p, k ) - KPS::uKCoord( myCellLower, k ) ) >> 1;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uTranslation( const Cell & p, const Vector & vec ) const
+{
+  Cell cell( PreCellularGridSpace::uTranslation( p, vec ) );
+  this->updateCellHelper( cell );
+  ASSERT( uIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Cell
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uProjection( const Cell & p, const Cell & bound, DGtal::Dimension k ) const
+{
+  Cell cell( PreCellularGridSpace::uProjection( p, bound, k ) );
+  ASSERT( uIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uProject( Cell & p, const Cell & bound, DGtal::Dimension k ) const
+{
+  PreCellularGridSpace::uProject( p.myPreCell, bound, k );
+  ASSERT( uIsValid( p ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+uNext( Cell & p, const Cell & lower, const Cell & upper ) const
+{
+  ASSERT( uIsValid(p) );
+  ASSERT( uIsValid(lower) );
+  ASSERT( uIsValid(upper) );
+  ASSERT( uTopology(p) == uTopology(lower)
+      &&  uTopology(p) == uTopology(upper) );
+
+  using KPS = PreCellularGridSpace;
+
+  DGtal::Dimension k = NumberTraits<Dimension>::ZERO;
+  if ( KPS::uKCoord( p, k ) == KPS::uKCoord( upper, k ) )
+    {
+      if ( p == upper ) return false;
+      KPS::uProject( p.myPreCell, lower, k );
+
+      for ( k = 1; k < DIM; ++k )
+        {
+          if ( KPS::uKCoord( p, k ) == KPS::uKCoord( upper, k ) )
+            KPS::uProject( p.myPreCell, lower, k );
+          else
+            {
+              KPS::uSetKCoord( p.myPreCell, k, this->returnKCoordHelper( KPS::uKCoord( p, k ) + 2, k ) );
+              break;
+            }
+        }
+      return true;
+    }
+
+  KPS::uSetKCoord( p.myPreCell, k, this->returnKCoordHelper( KPS::uKCoord( p, k ) + 2, k ) );
+  return true;
+}
+
+//-----------------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sFirst( const SPreCell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+
+  return myClosure[ k ] == OPEN ?
+        2 * myLower[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 2 )
+      : 2 * myLower[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 0 );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sFirst( const SPreCell & p ) const
+{
+  SCell cell;
+  for ( Dimension k = 0; k < dimension; ++k )
+    PreCellularGridSpace::sSetKCoord( cell.mySPreCell, k, sFirst( p, k ) );
+
+  PreCellularGridSpace::sSetSign( cell.mySPreCell, PreCellularGridSpace::sSign( p ) );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger>::Integer
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sLast( const SPreCell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+  return myClosure[ k ] == CLOSED ?
+        2 * myUpper[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 2 )
+      : 2 * myUpper[ k ] + ( NumberTraits<Integer>::odd( p.coordinates[ k ] ) ? 1 : 0 );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sLast( const SPreCell & p ) const
+{
+  SCell cell;
+  for ( Dimension k = 0; k < dimension; ++k )
+    PreCellularGridSpace::sSetKCoord( cell.mySPreCell, k, sLast( p, k ) );
+
+  PreCellularGridSpace::sSetSign( cell.mySPreCell, PreCellularGridSpace::sSign( p ) );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sGetIncr( const SCell & p, DGtal::Dimension k ) const
+{
+  SCell cell( PreCellularGridSpace::sGetIncr( p, k ) );
+  this->updateSCellHelper( cell, k );
+  ASSERT( sIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sIsMax( const SCell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+  ASSERT( sIsInside(p) );
+  return
+        ! this->isDimensionPeriodicHelper( k )
+    &&  PreCellularGridSpace::sKCoord( p, k ) >= sLast( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sIsInside( const SPreCell & p, DGtal::Dimension k ) const
+{
+  return cIsInside( p.coordinates, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+sIsInside( const SPreCell & p ) const
+{
+  return cIsInside( p.coordinates );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sGetMax( SCell p, DGtal::Dimension k ) const
+{
+  PreCellularGridSpace::sSetKCoord( p.mySPreCell, k, sLast( p, k ) );
+  ASSERT( sIsValid( p ) );
+  return p;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sGetDecr( const SCell & p, DGtal::Dimension k ) const
+{
+  SCell cell( PreCellularGridSpace::sGetDecr( p, k ) );
+  this->updateSCellHelper( cell, k );
+  ASSERT( sIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sIsMin( const SCell & p, DGtal::Dimension k ) const
+{
+  ASSERT( k < DIM );
+  ASSERT( sIsInside(p) );
+  return
+        ! this->isDimensionPeriodicHelper( k )
+    &&  PreCellularGridSpace::sKCoord( p, k ) <= sFirst( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sGetMin( SCell p, DGtal::Dimension k ) const
+{
+  PreCellularGridSpace::sSetKCoord( p.mySPreCell, k, sFirst( p, k ) );
+  ASSERT( sIsValid( p ) );
+  return p;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sGetAdd( const SCell & p, DGtal::Dimension k, Integer x ) const
+{
+  SCell cell( PreCellularGridSpace::sGetAdd( p, k, x ) );
+  this->updateSCellHelper( cell, k );
+  ASSERT( sIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sGetSub( const SCell & p, DGtal::Dimension k, Integer x ) const
+{
+  SCell cell( PreCellularGridSpace::sGetSub( p, k, x ) );
+  this->updateSCellHelper( cell, k );
+  ASSERT( sIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sDistanceToMax( const SCell & p, DGtal::Dimension k ) const
+{
+  using KPS = PreCellularGridSpace;
+  ASSERT( k < DIM );
+  ASSERT( sIsValid( p ) );
+  return ( KPS::uKCoord( myCellUpper, k ) - KPS::sKCoord( p, k ) ) >> 1;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+TInteger
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sDistanceToMin( const SCell & p, DGtal::Dimension k ) const
+{
+  using KPS = PreCellularGridSpace;
+  ASSERT( k < DIM );
+  ASSERT( sIsValid( p ) );
+  return ( KPS::sKCoord( p, k ) - KPS::uKCoord( myCellLower, k ) ) >> 1;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sTranslation( const SCell & p, const Vector & vec ) const
+{
+  SCell cell( PreCellularGridSpace::sTranslation( p, vec ) );
+  this->updateSCellHelper( cell );
+  ASSERT( sIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sProjection( const SCell & p, const SCell & bound, DGtal::Dimension k ) const
+{
+  SCell cell( PreCellularGridSpace::sProjection( p, bound, k ) );
+  ASSERT( sIsValid( cell ) );
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sProject( SCell & p, const SCell & bound, DGtal::Dimension k ) const
+{
+  PreCellularGridSpace::sProject( p.mySPreCell, bound, k );
+  ASSERT( sIsValid( p ) );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sNext( SCell & p, const SCell & lower, const SCell & upper ) const
+{
+  ASSERT( sIsValid(p) );
+  ASSERT( sIsValid(lower) );
+  ASSERT( sIsValid(upper) );
+  ASSERT( sTopology(p) == sTopology(lower)
+      &&  sTopology(p) == sTopology(upper) );
+
+  using KPS = PreCellularGridSpace;
+
+  DGtal::Dimension k = NumberTraits<Dimension>::ZERO;
+  if ( KPS::sKCoord( p, k ) == KPS::sKCoord( upper, k ) )
+    {
+      if ( p == upper ) return false;
+      KPS::sProject( p.mySPreCell, lower, k );
+
+      for ( k = 1; k < DIM; ++k )
+        {
+          if ( KPS::sKCoord( p, k ) == KPS::sKCoord( upper, k ) )
+            KPS::sProject( p.mySPreCell, lower, k );
+          else
+            {
+              KPS::sSetKCoord( p.mySPreCell, k, this->returnKCoordHelper( KPS::sKCoord( p, k ) + 2, k ) );
+              break;
+            }
+        }
+      return true;
+    }
+
+  KPS::sSetKCoord( p.mySPreCell, k, this->returnKCoordHelper( KPS::sKCoord( p, k ) + 2, k ) );
+  return true;
+}
+
+//-----------------------------------------------------------------------------
+// ----------------------- Neighborhood services --------------------------
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uNeighborhood( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+
+  Cells N;
+  N.push_back( c );
+  for ( DGtal::Dimension k = 0; k < DIM; ++k )
+    {
+      if ( ! uIsMin( c, k ) )
+        N.push_back( uGetDecr( c, k ) );
+      if ( ! uIsMax( c, k ) )
+        N.push_back( uGetIncr( c, k ) );
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sNeighborhood( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+
+  SCells N;
+  N.push_back( c );
+  for ( DGtal::Dimension k = 0; k < DIM; ++k )
+    {
+      if ( ! sIsMin( c, k ) )
+        N.push_back( sGetDecr( c, k ) );
+      if ( ! sIsMax( c, k ) )
+        N.push_back( sGetIncr( c, k ) );
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uProperNeighborhood( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+
+  Cells N;
+  for ( DGtal::Dimension k = 0; k < DIM; ++k )
+    {
+      if ( ! uIsMin( c, k ) )
+        N.push_back( uGetDecr( c, k ) );
+      if ( ! uIsMax( c, k ) )
+        N.push_back( uGetIncr( c, k ) );
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sProperNeighborhood( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+
+  SCells N;
+  for ( DGtal::Dimension k = 0; k < DIM; ++k )
+    {
+      if ( ! sIsMin( c, k ) )
+        N.push_back( sGetDecr( c, k ) );
+      if ( ! sIsMax( c, k ) )
+        N.push_back( sGetIncr( c, k ) );
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uAdjacent( const Cell & p, DGtal::Dimension k, bool up ) const
+{
+  ASSERT( k < DIM );
+  ASSERT( uIsValid(p) );
+  ASSERT( ( up && !uIsMax(p, k) ) || ( !up && !uIsMin(p, k) ) );
+  return up ? uGetIncr( p, k ) : uGetDecr( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sAdjacent( const SCell & p, DGtal::Dimension k, bool up ) const
+{
+  ASSERT( k < DIM );
+  ASSERT( sIsValid(p) );
+  ASSERT( ( up && !sIsMax(p, k) ) || ( !up && !sIsMin(p, k) ) );
+  return up ? sGetIncr( p, k ) : sGetDecr( p, k );
+}
+
+// ----------------------- Incidence services --------------------------
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uIncident( const Cell & c, DGtal::Dimension k, bool up ) const
+{
+  ASSERT( k < dim );
+  ASSERT( uIsValid(c) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || ( ! up ) || ( uKCoord( c, k ) < uKCoord( myCellUpper, k ) ) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || (   up ) || ( uKCoord( myCellLower, k ) < uKCoord( c, k ) ) );
+
+  Cell cell( PreCellularGridSpace::uIncident( c, k, up ) );
+  this->updateCellHelper( cell, k );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sIncident( const SCell & c, DGtal::Dimension k, bool up ) const
+{
+  ASSERT( k < dim );
+  ASSERT( sIsValid(c) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || ( ! up ) || ( sKCoord( c, k ) < uKCoord( myCellUpper, k ) ) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || (   up ) || ( uKCoord( myCellLower, k ) < sKCoord( c, k ) ) );
+
+  SCell cell( PreCellularGridSpace::sIncident( c, k, up ) );
+  this->updateSCellHelper( cell, k );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uLowerIncident( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+
+  Cells N;
+  for ( DirIterator q = uDirs( c ); q != 0; ++q )
+    {
+      const DGtal::Dimension k = *q;
+      if ( this->isDimensionPeriodicHelper( k ) )
+        {
+          N.push_back( uIncident( c, k, false ) );
+          N.push_back( uIncident( c, k, true ) );
+        }
+      else
+        {
+          const Integer x = uKCoord( c, k );
+          if ( PreCellularGridSpace::uKCoord( myCellLower, k ) < x )
+            N.push_back( uIncident( c, k, false ) );
+          if ( x < PreCellularGridSpace::uKCoord( myCellUpper, k ) )
+            N.push_back( uIncident( c, k, true ) );
+        }
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uUpperIncident( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+
+  Cells N;
+  for ( DirIterator q = uOrthDirs( c ); q != 0; ++q )
+    {
+      const DGtal::Dimension k = *q;
+      if ( this->isDimensionPeriodicHelper( k ) )
+        {
+          N.push_back( uIncident( c, k, false ) );
+          N.push_back( uIncident( c, k, true ) );
+        }
+      else
+        {
+          const Integer x = uKCoord( c, k );
+          if ( PreCellularGridSpace::uKCoord( myCellLower, k ) < x )
+            N.push_back( uIncident( c, k, false ) );
+          if ( x < PreCellularGridSpace::uKCoord( myCellUpper, k ) )
+            N.push_back( uIncident( c, k, true ) );
+        }
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sLowerIncident( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+
+  SCells N;
+  for ( DirIterator q = sDirs( c ); q != 0; ++q )
+    {
+      const DGtal::Dimension k = *q;
+      if ( this->isDimensionPeriodicHelper( k ) )
+        {
+          N.push_back( sIncident( c, k, false ) );
+          N.push_back( sIncident( c, k, true ) );
+        }
+      else
+        {
+          const Integer x = sKCoord( c, k );
+          if ( PreCellularGridSpace::uKCoord( myCellLower, k ) < x )
+            N.push_back( sIncident( c, k, false ) );
+          if ( x < PreCellularGridSpace::uKCoord( myCellUpper, k ) )
+            N.push_back( sIncident( c, k, true ) );
+        }
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sUpperIncident( const SCell & c ) const
+{
+  ASSERT( sIsValid(c) );
+
+  SCells N;
+  for ( DirIterator q = sOrthDirs( c ); q != 0; ++q )
+    {
+      const DGtal::Dimension k = *q;
+      if ( this->isDimensionPeriodicHelper( k ) )
+        {
+          N.push_back( sIncident( c, k, false ) );
+          N.push_back( sIncident( c, k, true ) );
+        }
+      else
+        {
+          const Integer x = sKCoord( c, k );
+          if ( PreCellularGridSpace::uKCoord( myCellLower, k ) < x )
+            N.push_back( sIncident( c, k, false ) );
+          if ( x < PreCellularGridSpace::uKCoord( myCellUpper, k ) )
+            N.push_back( sIncident( c, k, true ) );
+        }
+    }
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uAddFaces( Cells& faces, const Cell& c, Dimension axis ) const
+{
+  using KPS = PreCellularGridSpace;
+
+  const DGtal::Dimension dim_of_c = uDim( c );
+  if ( axis >= dim_of_c ) return;
+
+  DirIterator q = uDirs( c );
+  for ( Dimension i = 0; i < axis; ++i ) ++q;
+
+  // We test incident cells existence within the current Khalimsky space.
+  const Integer x = KPS::uKCoord( c, *q );
+  bool has_f1 = this->isDimensionPeriodicHelper( *q ) || KPS::uKCoord( myCellLower, *q ) < x ;
+  bool has_f2 = this->isDimensionPeriodicHelper( *q ) || x < KPS::uKCoord( myCellUpper, *q ) ;
+
+  Cell f1, f2;
+  if ( has_f1 ) f1 = uIncident( c, *q, false );
+  if ( has_f2 ) f2 = uIncident( c, *q, true );
+
+  if ( has_f1 ) faces.push_back( f1 );
+  if ( has_f2 ) faces.push_back( f2 );
+
+  if ( has_f1 ) uAddFaces( faces, f1, axis );
+  if ( has_f2 ) uAddFaces( faces, f2, axis );
+
+  uAddFaces( faces, c, axis+1 );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uAddCoFaces( Cells& cofaces, const Cell& c, Dimension axis ) const
+{
+  using KPS = PreCellularGridSpace;
+
+  const DGtal::Dimension dim_of_c = uDim( c );
+  if ( axis >= dimension - dim_of_c ) return;
+
+  DirIterator q = uOrthDirs( c );
+  for ( Dimension i = 0; i < axis; ++i ) ++q;
+
+  // We test incident cells existence within the current Khalimsky space.
+  const Integer x = KPS::uKCoord( c, *q );
+  bool has_f1 = this->isDimensionPeriodicHelper( *q ) || KPS::uKCoord( myCellLower, *q ) < x ;
+  bool has_f2 = this->isDimensionPeriodicHelper( *q ) || x < KPS::uKCoord( myCellUpper, *q ) ;
+
+  Cell f1, f2;
+  if ( has_f1 ) f1 = uIncident( c, *q, false );
+  if ( has_f2 ) f2 = uIncident( c, *q, true );
+
+  if ( has_f1 ) cofaces.push_back( f1 );
+  if ( has_f2 ) cofaces.push_back( f2 );
+
+  if ( has_f1 ) uAddCoFaces( cofaces, f1, axis );
+  if ( has_f2 ) uAddCoFaces( cofaces, f2, axis );
+
+  uAddCoFaces( cofaces, c, axis+1 );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uFaces( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+
+  Cells N;
+  uAddFaces( N, c, 0 );
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::Cells
+DGtal::KhalimskySpaceND< dim, TInteger >::
+uCoFaces( const Cell & c ) const
+{
+  ASSERT( uIsValid(c) );
+
+  Cells N;
+  uAddCoFaces( N, c, 0 );
+  return N;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sDirect( const SCell & p, DGtal::Dimension k ) const
+{
+  return PreCellularGridSpace::sDirect( p, k );
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sDirectIncident( const SCell & p, DGtal::Dimension k ) const
+{
+  using KPS = PreCellularGridSpace;
+
+  ASSERT( k < dim );
+  ASSERT( sIsValid(p) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || ( ! KPS::sDirect( p, k ) ) || ( KPS::sKCoord( p, k ) < KPS::uKCoord( myCellUpper, k ) ) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || (   KPS::sDirect( p, k ) ) || ( KPS::uKCoord( myCellLower, k ) < KPS::sKCoord( p, k ) ) );
+
+  SCell cell( KPS::sDirectIncident( p, k ) );
+  this->updateSCellHelper( cell, k );
+
+  return cell;
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+typename DGtal::KhalimskySpaceND< dim, TInteger >::SCell
+DGtal::KhalimskySpaceND< dim, TInteger >::
+sIndirectIncident( const SCell & p, DGtal::Dimension k ) const
+{
+  using KPS = PreCellularGridSpace;
+
+  ASSERT( k < dim );
+  ASSERT( sIsValid(p) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || (   KPS::sDirect( p, k ) ) || ( KPS::sKCoord( p, k ) < KPS::uKCoord( myCellUpper, k ) ) );
+  ASSERT( this->isDimensionPeriodicHelper( k ) || ( ! KPS::sDirect( p, k ) ) || ( KPS::uKCoord( myCellLower, k ) < KPS::sKCoord( p, k ) ) );
+
+  SCell cell( KPS::sIndirectIncident( p, k ) );
+  this->updateSCellHelper( cell, k );
+
+  return cell;
+}
+
+
+
+
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+void
+DGtal::KhalimskySpaceND< dim, TInteger>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[KhalimskySpaceND<" << dimension << ">] { ";
+  out << "{ ";
+  for ( Dimension i = 0; i < dimension; ++i )
+    out << ( myClosure[i] == OPEN ? "OPEN " : ( myClosure[i] == CLOSED ? "CLOSED " : "PERIODIC " ) );
+  out << "}, ";
+  out << "lower = " << myLower << ", ";
+  out << "upper = " << myUpper;
+  out << " }";
+
+}
+//-----------------------------------------------------------------------------
+template < DGtal::Dimension dim, typename TInteger>
+inline
+bool
+DGtal::KhalimskySpaceND< dim, TInteger>::
+isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+template < DGtal::Dimension dim, typename TInteger>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+      const KhalimskySpaceND< dim, TInteger> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

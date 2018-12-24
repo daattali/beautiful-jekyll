@@ -1,8 +1,0 @@
-<map id="DGtal::SimpleAssociativeCategory" name="DGtal::SimpleAssociativeCategory">
-<area shape="rect" id="node7" href="$structDGtal_1_1MultisetAssociativeCategory.html" title="DGtal::MultisetAssociative\lCategory" alt="" coords="739,5,925,51"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1SetAssociativeCategory.html" title="DGtal::SetAssociativeCategory" alt="" coords="723,75,941,104"/>
-<area shape="rect" id="node11" href="$structDGtal_1_1UnorderedMultisetAssociativeCategory.html" title="DGtal::UnorderedMultiset\lAssociativeCategory" alt="" coords="740,127,924,174"/>
-<area shape="rect" id="node13" href="$structDGtal_1_1UnorderedSetAssociativeCategory.html" title="DGtal::UnorderedSetAssociative\lCategory" alt="" coords="719,197,945,243"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1AssociativeCategory.html" title="DGtal::AssociativeCategory" alt="" coords="241,105,436,135"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1ContainerCategory.html" title="DGtal::ContainerCategory" alt="" coords="5,105,192,135"/>
-</map>

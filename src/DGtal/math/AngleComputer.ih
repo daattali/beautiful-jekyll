@@ -1,0 +1,238 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file AngleComputer.ih
+ *
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @author (backported by) Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/08/31
+ *
+ * Implementation of inline methods defined in AngleComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+
+/**
+ * @param i any angle.
+ * @return the corresponding angle in [0:2pi[
+ */
+inline
+float 
+DGtal::AngleComputer::cast( float i )
+{
+  while ( i < 0.0f ) i += (float) (M_PI*2.0);
+  while ( i > (double)(M_PI*2.0) ) i -= (float)(M_PI*2.0);
+  return i;
+}
+
+    
+/**
+ * Less comparator modulo. Be careful, modulo comparisons have no
+ * sense when the absolute difference of the values are around pi.
+ *
+ * @param i any angle in [0:2pi[
+ * @param j any angle in [0:2pi[
+ * @return 'true' if [i] strictly precedes [j] in a window 'pi'.
+ */
+inline
+bool
+DGtal::AngleComputer::less( float i, float j )
+{
+  float d = j - i;
+  if ( d > 0.0f )
+    return d < M_PI;
+  else
+    return (-d) >= M_PI;
+}
+
+
+/**
+ * Performs j - i modulo 2pi, assuming less(i,j) is true.
+ *
+ * @param j any angle in [0:2pi[
+ * @param i any angle in [0:2pi[
+ * @return the value j - i, always positive. 
+ */
+inline
+float 
+DGtal::AngleComputer::posDiff( float j, float i )
+{
+  return ( i <= j ) ? j - i : j + (float)(M_PI*2.0) - i;
+}
+
+/**
+ * Performs j - i, assuming th result is in [-pi:pi[
+ *
+ * @param j any angle in [0:2pi[
+ * @param i any angle in [0:2pi[
+ * @return the value j - i, always positive. 
+ */
+inline
+float 
+DGtal::AngleComputer::deviation( float j, float i )
+{
+  return less( i, j ) ? posDiff( j, i ) : -posDiff( i, j );
+}
+
+
+/**
+ * Equivalent to 'less( i, j ) ? i : j'.
+ *
+ * @param i any angle in [0:2pi[
+ * @param j any angle in [0:2pi[
+ * @return the smallest angle of [i] and [j] in a window 'pi'.
+ */
+inline
+float 
+DGtal::AngleComputer::min( float i, float j )
+{
+  return less( i, j ) ? i : j;
+}
+
+/**
+ * Equivalent to 'less( i, j ) ? j : i'.
+ *
+ * @param i any angle in [0:2pi[
+ * @param j any angle in [0:2pi[
+ * @return the greatest angle of [i] and [j] in a window 'pi'.
+ */
+inline
+float 
+DGtal::AngleComputer::max( float i, float j )
+{
+  return less( i, j ) ? j : i;
+}
+
+
+
+/**
+ * @param i any angle.
+ * @return the corresponding angle in [0:2pi[
+ */
+inline
+double 
+DGtal::AngleComputer::cast( double i )
+{
+  while ( i < 0.0 ) i += (float)(M_PI*2.0);
+  while ( i > (float)(M_PI*2.0) ) i -= (float)(M_PI*2.0);
+  return i;
+}
+
+    
+/**
+ * Less comparator modulo. Be careful, modulo comparisons have no
+ * sense when the absolute difference of the values are around pi.
+ *
+ * @param i any angle in [0:2pi[
+ * @param j any angle in [0:2pi[
+ * @return 'true' if [i] strictly precedes [j] in a window 'pi'.
+ */
+inline
+bool
+DGtal::AngleComputer::less( double i, double j )
+{
+  double d = j - i;
+  if ( d > 0.0 )
+    return d < M_PI;
+  else
+    return (-d) >= M_PI;
+}
+
+
+/**
+ * Performs j - i modulo 2pi, assuming less(i,j) is true.
+ *
+ * @param j any angle in [0:2pi[
+ * @param i any angle in [0:2pi[
+ * @return the value j - i, always positive. 
+ */
+inline
+double 
+DGtal::AngleComputer::posDiff( double j, double i )
+{
+  return ( i <= j ) ? j - i : j + (float)(M_PI*2.0) - i;
+}
+
+/**
+ * Performs j - i, assuming th result is in [-pi:pi[
+ *
+ * @param j any angle in [0:2pi[
+ * @param i any angle in [0:2pi[
+ * @return the value j - i, always positive. 
+ */
+inline
+double 
+DGtal::AngleComputer::deviation( double j, double i )
+{
+  return less( i, j ) ? posDiff( j, i ) : -posDiff( i, j );
+}
+
+
+/**
+ * Equivalent to 'less( i, j ) ? i : j'.
+ *
+ * @param i any angle in [0:2pi[
+ * @param j any angle in [0:2pi[
+ * @return the smallest angle of [i] and [j] in a window 'pi'.
+ */
+inline
+double 
+DGtal::AngleComputer::min( double i, double j )
+{
+  return less( i, j ) ? i : j;
+}
+
+/**
+ * Equivalent to 'less( i, j ) ? j : i'.
+ *
+ * @param i any angle in [0:2pi[
+ * @param j any angle in [0:2pi[
+ * @return the greatest angle of [i] and [j] in a window 'pi'.
+ */
+inline
+double 
+DGtal::AngleComputer::max( double i, double j )
+{
+  return less( i, j ) ? j : i;
+}
+
+
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

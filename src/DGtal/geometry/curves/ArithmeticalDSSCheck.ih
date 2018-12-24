@@ -1,0 +1,170 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ArithmeticalDSSCheck.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/10/28
+ *
+ * Implementation of inline functions defined in ArithmeticalDSSCheck.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+
+#include "ArithmeticalDSLKernel.h"
+#include "DGtal/kernel/NumberTraits.h"
+#include "DGtal/arithmetic/IntegerComputer.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::functions::
+checkOnePoint(const ArithmeticalDSS<TCoordinate,TInteger,adjacency>& aDSS)
+{
+  ASSERT(aDSS.front()==aDSS.back()); 
+
+  //Vector type redefinition 
+  typedef typename ArithmeticalDSS<TCoordinate,TInteger,adjacency>::Vector V;
+ 
+  return ( (aDSS.a()==NumberTraits<TCoordinate>::ZERO)
+	   &&(aDSS.b()==NumberTraits<TCoordinate>::ZERO)
+	   &&(aDSS.mu()==NumberTraits<TInteger>::ZERO)
+	   &&(aDSS.omega()==NumberTraits<TInteger>::ZERO)
+	   &&(aDSS.Uf()==aDSS.back())
+	   &&(aDSS.Lf()==aDSS.back())
+	   &&(aDSS.Ul()==aDSS.front())
+	   &&(aDSS.Ll()==aDSS.front())
+	   &&(aDSS.shift()==V(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO))
+	   &&(aDSS.steps().first==V(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO))
+	   &&(aDSS.steps().second==V(NumberTraits<TCoordinate>::ZERO,NumberTraits<TCoordinate>::ZERO)) ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::functions::
+checkPointsRemainder(const ArithmeticalDSS<TCoordinate,TInteger,adjacency>& aDSS)
+{
+  ASSERT(aDSS.front()!=aDSS.back()); 
+
+  //'true' if valid, 'false' otherwise
+  bool isValid; 
+
+  if (aDSS.remainder(aDSS.Uf()) != aDSS.mu()) 
+    isValid = false;
+  else if (aDSS.remainder(aDSS.Ul()) != aDSS.mu()) 
+    isValid = false;
+  else if (aDSS.remainder(aDSS.Lf()) != aDSS.mu()+aDSS.omega()-1) 
+    { isValid = false; std::cout << aDSS.remainder(aDSS.Lf()) << " " << aDSS.mu()+aDSS.omega()-1 << std::endl;} 
+  else if (aDSS.remainder(aDSS.Ll()) != aDSS.mu()+aDSS.omega()-1) 
+    { isValid = false; std::cout << aDSS.remainder(aDSS.Ll()) << " " << aDSS.mu()+aDSS.omega()-1 << std::endl;}
+  else if (aDSS.isInDSL(aDSS.front()))
+    isValid = true;
+  else if (aDSS.isInDSL(aDSS.back()))
+    isValid = true; 
+  else 
+    isValid = false;
+
+  return isValid; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::functions::
+checkPointsPosition(const ArithmeticalDSS<TCoordinate,TInteger,adjacency>& aDSS)
+{
+  ASSERT(aDSS.front()!=aDSS.back()); 
+
+  //Vector type redefinition 
+  typedef typename ArithmeticalDSS<TCoordinate,TInteger,adjacency>::Vector V;
+  V v(aDSS.b(), aDSS.a()); 
+  //Length of direction vector
+  TInteger lv = aDSS.position(v); 
+
+  //Position of end points and leaning points
+  TInteger posBack = aDSS.position(aDSS.back()); 
+  TInteger posUf = aDSS.position(aDSS.Uf()); 
+  TInteger posLf = aDSS.position(aDSS.Lf()); 
+  TInteger posUl = aDSS.position(aDSS.Ul()); 
+  TInteger posLl = aDSS.position(aDSS.Ll()); 
+  TInteger posFront = aDSS.position(aDSS.front()); 
+
+  bool isValid = ( ((posUf - posBack) < lv)
+		   && ((posLf - posBack) < lv)
+		   && ((posFront - posUl) < lv)
+		   && ((posFront - posLl) < lv)
+		   && ((posUl - posUf)%lv == 0)
+		   && ( ( ((posUl - posUf) >= 0) && (lv >= 0) ) 
+			|| ( ((posUl - posUf) < 0) && (lv < 0) ) ) 
+		   && ((posLl - posLf)%lv == 0)
+		   && ( ( ((posLl - posLf) >= 0) && (lv >= 0) ) 
+			|| ( ((posLl - posLf) < 0) && (lv < 0) ) ) 
+		   ); 
+
+  return isValid; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::functions::
+checkAll(const ArithmeticalDSS<TCoordinate,TInteger,adjacency>& aDSS)
+{ 
+  //'true' if valid, 'false' otherwise
+  bool isValid;  
+
+  //special case with one point
+  if (aDSS.front() == aDSS.back())  
+    isValid = checkOnePoint(aDSS);
+ 
+  //otherwise  
+  else 
+    {
+
+      if (!aDSS.dsl().isValid()) 
+	isValid = false; 
+      else if (!checkPointsRemainder(aDSS))
+	isValid = false; 
+      else if (!checkPointsPosition(aDSS))
+	isValid = false; 
+      else 
+	isValid = true; 
+
+    }
+
+  return isValid; 
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

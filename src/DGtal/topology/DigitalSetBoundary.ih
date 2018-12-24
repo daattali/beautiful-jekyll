@@ -1,0 +1,319 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSetBoundary.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2011/09/01
+ *
+ * Implementation of inline methods defined in DigitalSetBoundary.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iterator>
+#include "DGtal/topology/helpers/Surfaces.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::~Tracker()
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::Tracker( ConstAlias<DigitalSurfaceContainer> aSurface, 
+           const Surfel & s )
+  : mySurface( aSurface ), myNeighborhood()
+{
+  myNeighborhood.init( & surface().space(), 
+                       & surface().surfelAdjacency(),
+                       s );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::Tracker( const Tracker & other )
+  : mySurface( other.mySurface ), myNeighborhood( other.myNeighborhood )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+const typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::DigitalSurfaceContainer &
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::surface() const
+{
+  return mySurface;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+const typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::Surfel &
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::current() const
+{
+  return myNeighborhood.surfel();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::Dimension
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::orthDir() const
+{
+  return myNeighborhood.orthDir();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+void
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::move( const Surfel & s )
+{
+  ASSERT( surface().isInside( s ) );
+  myNeighborhood.setSurfel( s );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::uint8_t
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Tracker
+::adjacent( Surfel & s, Dimension d, bool pos ) const
+{
+  return static_cast<uint8_t>
+    ( myNeighborhood.getAdjacentOnPointPredicate( s, surface().digitalSet(), d, pos ) );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::~DigitalSetBoundary()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::DigitalSetBoundary
+( const DigitalSetBoundary & other )
+  : myKSpace( other.myKSpace ), myDigitalSet( other.myDigitalSet ), 
+    mySurfelAdjacency( other.mySurfelAdjacency ),
+    mySurfels( other. mySurfels )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::DigitalSetBoundary
+( ConstAlias<KSpace> aKSpace, 
+  const DigitalSet & aSet,
+  const Adjacency & adj )
+  : myKSpace( aKSpace ), myDigitalSet( aSet ), mySurfelAdjacency( adj )
+{
+  computeSurfels();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+const 
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Adjacency & 
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::surfelAdjacency() const
+{
+  return mySurfelAdjacency;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Adjacency & 
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::surfelAdjacency()
+{
+  return mySurfelAdjacency;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+const 
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::DigitalSet & 
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::digitalSet() const
+{
+  return myDigitalSet;
+}
+
+//-----------------------------------------------------------------------------
+// --------- CDigitalSurfaceContainer realization -------------------------
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+const typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::KSpace & 
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::space() const
+{
+  return myKSpace;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+bool
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::isInside
+( const Surfel & s ) const
+{
+  Dimension k = myKSpace.sOrthDir( s );
+  // checks if the surfel is on the space boundary.
+  if ( myKSpace.sIsMax( s, k ) || myKSpace.sIsMin( s, k ) )
+    return false;
+  // p1 must be in the set and p2 must not be in the set.
+  SCell spel1 = myKSpace.sDirectIncident( s, k ); 
+  Point p1 = myKSpace.sCoords( spel1 );
+  if ( myDigitalSet.find( p1 ) != myDigitalSet.end() )
+    {
+      SCell spel2 = myKSpace.sIndirectIncident( s, k ); 
+      Point p2 = myKSpace.sCoords( spel2 );
+      return ! ( myDigitalSet.find( p2 ) != myDigitalSet.end() );
+    }
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::SurfelConstIterator
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::begin() const
+{
+  return mySurfels.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::SurfelConstIterator
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::end() const
+{
+  return mySurfels.end();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::Size
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::nbSurfels() const
+{
+  return (unsigned int)mySurfels.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+bool
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::empty() const
+{
+  return mySurfels.empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+typename DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::DigitalSurfaceTracker* 
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::newTracker
+( const Surfel & s ) const
+{
+  return new Tracker( *this, s );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+DGtal::Connectedness
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::connectedness() const
+{
+  return UNKNOWN;
+}
+
+// ------------------------- Hidden services ------------------------------
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TDigitalSet>
+inline
+void
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::computeSurfels()
+{
+  // Since 0.6, models of CDigitalSet are models of concepts::CPointPredicate.
+  // SetPredicate<DigitalSet> isInSet( myDigitalSet );
+  mySurfels.clear();
+  std::back_insert_iterator<SurfelStorage> output_it =
+    std::back_inserter( mySurfels );
+  Surfaces<KSpace>::sWriteBoundary( output_it,
+                                    myKSpace,
+                                    myDigitalSet,
+                                    myKSpace.lowerBound(), 
+                                    myKSpace.upperBound() );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TKSpace, typename TDigitalSet>
+inline
+void
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSetBoundary]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TKSpace, typename TDigitalSet>
+inline
+bool
+DGtal::DigitalSetBoundary<TKSpace,TDigitalSet>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TKSpace, typename TDigitalSet>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const DigitalSetBoundary<TKSpace,TDigitalSet> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,43 @@
+## Sources associated to the module io
+##
+
+
+##########################################
+#### boards
+##########################################
+
+SET(DGTAL_SRC ${DGTAL_SRC}
+  DGtal/io/Color)
+
+
+SET(DGTALIO_SRC ${DGTALIO_SRC}
+  DGtal/io/boards/Board2D
+  DGtal/io/boards/Board3D
+  DGtal/io/Display2DFactory
+  DGtal/io/Display3DFactory)
+
+
+if( WITH_CAIRO )
+SET(DGTALIO_SRC ${DGTALIO_SRC}
+    DGtal/io/boards/Board3DTo2D)
+endif( WITH_CAIRO )
+
+
+##########################################
+#### readers
+##########################################
+
+if( WITH_HDF5 )
+SET(DGTALIO_SRC ${DGTALIO_SRC} 
+    DGtal/io/readers/HDF5Reader)
+endif( WITH_HDF5 )
+
+
+##########################################
+#### writers
+##########################################
+
+if( WITH_HDF5 )
+SET(DGTALIO_SRC ${DGTALIO_SRC} 
+    DGtal/io/writers/HDF5Writer)
+endif( WITH_HDF5 )

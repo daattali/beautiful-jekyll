@@ -1,0 +1,125 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file VolWriter.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/22
+ *
+ * Implementation of inline methods defined in VolWriter.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <fstream>
+#include <sstream>
+#include "DGtal/io/Color.h"
+#include <boost/iostreams/filtering_streambuf.hpp>
+#include <boost/iostreams/copy.hpp>
+#include <boost/iostreams/filter/zlib.hpp>
+
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+
+namespace DGtal {
+  template<typename I,typename F>
+  bool VolWriter<I,F>::exportVol(const std::string & filename,
+                                 const I & aImage,
+                                 const bool compressed,
+                                 const Functor & aFunctor)
+  {
+    DGtal::IOException dgtalio;
+    
+    std::ofstream out;
+    typename I::Domain domain = aImage.domain();
+    const typename I::Domain::Point &upBound = domain.upperBound();
+    const typename I::Domain::Point &lowBound = domain.lowerBound();
+    typename I::Domain::Point p = I::Domain::Point::diagonal(1);
+    typename I::Domain::Vector size = (upBound - lowBound) + p;
+    typename I::Domain::Vector center = lowBound + ((upBound - lowBound)/2);
+    
+    typename I::Value val;
+    
+    try
+    {
+      std::stringstream header;
+      std::stringstream main;
+      out.open(filename.c_str());
+      
+      //Vol format
+      header << "Center-X: " << center[0] <<std::endl;
+      header << "Center-Y: " << center[1] <<std::endl;
+      header << "Center-Z: " << center[2] <<std::endl;
+      header << "X: "<< size[0]<<std::endl;
+      header << "Y: "<< size[1]<<std::endl;
+      header << "Z: "<< size[2]<<std::endl;
+      header << "Voxel-Size: 1"<<std::endl;
+      header << "Alpha-Color: 0"<<std::endl;
+      header << "Voxel-Endian: 0"<<std::endl;
+      header << "Int-Endian: 0123"<<std::endl;
+      if (compressed)
+        header << "Version: 3"<<std::endl;
+      else
+        header << "Version: 2"<<std::endl;
+      
+      header << "."<<std::endl;
+      
+      //We scan the domain
+      for(typename I::Domain::ConstIterator it = domain.begin(), itend=domain.end();
+          it!=itend;
+          ++it)
+      {
+        val = aImage( (*it) );
+        main.put( aFunctor(val) );
+      }
+     
+      if (compressed)
+      {
+        boost::iostreams::filtering_streambuf<boost::iostreams::input> out_compressed;
+        out_compressed.push(boost::iostreams::zlib_compressor());
+        out_compressed.push( main );
+        boost::iostreams::copy(out_compressed, header);
+        boost::iostreams::copy(header, out);
+        out.close();
+      }
+      else
+      {
+        //We flush the header
+        out << header.str();
+        out.close();
+        out.open(filename.c_str(),std::ios_base::binary | std::ios_base::app);
+        out << main.str();
+        out.close();
+      }
+    }
+    catch( ... )
+    {
+      trace.error() << "Vol writer IO error on export " << filename << std::endl;
+      throw dgtalio;
+    }
+    return true;
+  }
+  
+}//namespace

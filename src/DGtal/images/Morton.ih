@@ -1,0 +1,140 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Morton.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/09/10
+ *
+ * Header file for module Morton.cpp
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+// Inclusions
+#include <iostream>
+//////////////////////////////////////////////////////////////////////////////
+
+namespace DGtal
+  {
+   
+  template  <typename HashKey, typename Point >
+  Morton<HashKey,Point>::Morton()
+  {
+    // @todo precomputation of the dilate masks
+    //myDilateMasks[0] = 25;
+  }
+
+
+  template  <typename HashKey, typename Point >
+  void Morton<HashKey,Point>:: interleaveBits ( const Point  & aPoint, HashKey & output ) const
+    {
+      //number of bits of the input integers (casted according to the hashkeysize)
+      // max of this with sizeof(Coordinate)*8
+      unsigned  int coordSize = ( sizeof ( HashKey ) <<3 ) / dimension;
+
+      output = 0;
+      for ( unsigned int i = 0; i < coordSize; ++i )
+        for ( unsigned int n = 0; n < dimension; ++n )
+          {
+            if ( ( aPoint[n] ) & ( static_cast<Coordinate> ( 1 ) << i ) )
+              output |= static_cast<Coordinate> ( 1 ) << (( i*dimension ) +n);
+          }
+    }
+
+
+  template  <typename HashKey, typename Point >
+  HashKey  Morton<HashKey,Point>::keyFromCoordinates ( const std::size_t treeDepth,
+      const Point & coordinates ) const
+    {
+      HashKey result = 0;
+
+      interleaveBits ( coordinates, result );
+      // by convention, the root node has the key 0..01
+      // it makes it easy to determine the depth of a node by it's key (looking
+      // at the position of the most significant bit that is equal to 1)
+      result |= ( static_cast<HashKey> ( 1 ) << dimension*treeDepth );
+
+      return result;
+    }
+
+
+
+  template  <typename HashKey, typename Point >
+  void Morton<HashKey,Point>::childrenKeys ( const HashKey key, HashKey* result ) const
+    {
+      HashKey keycopy = key;
+
+      keycopy <<= dimension;
+      //generate a mask of the form 1..111000 with dimension "0"
+      HashKey mask  = ( static_cast<HashKey> ( ~0 ) << dimension );
+      for ( std::size_t i = 0;
+            i < POW<2,dimension>::VALUE;
+            ++i )
+        {
+          result[i] = ( keycopy & mask ) |i;
+        }
+    }
+
+  template  <typename HashKey, typename Point >
+  void Morton<HashKey,Point>::brotherKeys ( const HashKey key, HashKey* result ) const
+    {
+      //generate a mask of the form 1..111000 with dimension "0"
+      HashKey mask  = ( static_cast<HashKey> ( ~0 ) << dimension );
+      std::size_t j = 0;
+      for ( std::size_t i = 0; i < POW<2,dimension>::VALUE; ++i )
+        {
+          HashKey key2 = ( key & mask ) |i;
+          if ( key2 != key )
+            {
+              result[j] = key2;
+              ++j;
+            }
+        }
+    }
+
+  template  <typename HashKey, typename Point >
+  void Morton<HashKey,Point>::coordinatesFromKey ( const HashKey key, Point & coordinates ) const
+    {
+      HashKey akey = key;
+      //remove the first bit equal 1
+      for ( int i = ( sizeof ( HashKey ) <<3 )-1; i >= 0; --i )
+        if ( akey & Bits::mask<HashKey> ( i ) )
+          {
+            akey &= ~Bits::mask<HashKey> ( i );
+            break;
+          }
+
+      //deinterleave the bits
+      for ( std::size_t i = 0; i < dimension; ++i )
+		{
+			coordinates[(Dimension)i] = 0;
+
+			for ( std::size_t bitPos = 0; bitPos < ( sizeof ( HashKey ) <<3 ) / dimension; ++bitPos )
+			{
+				if ( akey & Bits::mask<HashKey> ( (unsigned int)(bitPos*dimension+i) ) )
+				{
+					coordinates[(Dimension)i] |= Bits::mask<HashKey> ( (unsigned int)bitPos );
+				}
+			}
+		}
+    }
+
+}

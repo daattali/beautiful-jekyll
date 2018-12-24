@@ -1,0 +1,508 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Pattern.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/03/07
+ *
+ * Implementation of inline methods defined in Pattern.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::Pattern<TFraction>::~Pattern()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::Pattern<TFraction>::Pattern( Fraction f )
+  : mySlope( f )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::Pattern<TFraction>::Pattern( const Self & other )
+  : mySlope( other.mySlope )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction> &
+DGtal::Pattern<TFraction>::operator=( const Self & other )
+{
+  mySlope = other.mySlope;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::Pattern<TFraction>::Pattern( Integer p, Integer q )
+{
+  IntegerComputer<Integer> ic;
+  Integer g = ic.gcd( p, q );
+  p /= g;
+  q /= g;
+  mySlope = Fraction( p, q );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+std::string
+DGtal::Pattern<TFraction>::
+rE() const
+{
+  if ( mySlope.null() ) return "eps";
+  else if ( mySlope.k() == -2 )
+    {
+      return "0";
+    }
+  else if ( mySlope.k() == -NumberTraits<Quotient>::ONE )
+    {
+      return "1";
+    }
+  else if ( mySlope.k() == NumberTraits<Quotient>::ZERO )
+    {
+      std::string s( static_cast<int32_t>(NumberTraits<Integer>::castToInt64_t( mySlope.p() )),
+                    '1' );
+      return '0' + s;
+    }
+  else
+    {
+      Fraction f1, f2;
+      Quotient nb1, nb2;
+      mySlope.getSplitBerstel( f1, nb1, f2, nb2 );
+      std::string s;
+      Self p1( f1 );
+      Self p2( f2 );
+      for ( Quotient i = 0; i < nb1; ++i ) s += p1.rE();
+      for ( Quotient i = 0; i < nb2; ++i ) s += p2.rE();
+      return s;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+std::string
+DGtal::Pattern<TFraction>::
+rEs( const std::string & seps ) const
+{
+  if ( mySlope.null() ) return "eps";
+  else if ( mySlope.k() == -2 )
+    {
+      return "0";
+    }
+  else if ( mySlope.k() == -NumberTraits<Quotient>::ONE )
+    {
+      return "1";
+    }
+  else if ( mySlope.k() == NumberTraits<Quotient>::ZERO )
+    {
+      std::string s( static_cast<int32_t>(NumberTraits<Integer>::castToInt64_t( mySlope.p() )), '1' );
+      return '0' + s;
+    }
+  // else if ( mySlope.k() == NumberTraits<Quotient>::ONE )
+  //   {
+  //     std::string s( NumberTraits<Quotient>::castToInt64_t( mySlope.u() ), '0' );
+  //     return s + '1';
+  //   }
+  else
+    {
+      Fraction f1, f2;
+      Quotient nb1, nb2;
+      mySlope.getSplitBerstel( f1, nb1, f2, nb2 );
+      std::string s( 1, seps[ 0 ] );
+      Self p1( f1 );
+      Self p2( f2 );
+      for ( Quotient i = 0; i < nb1; ++i ) s += p1.rEs( seps );
+      s += seps[ 1 ];
+      for ( Quotient i = 0; i < nb2; ++i ) s += p2.rEs( seps );
+      s += seps[ 2 ];
+      return s;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Fraction
+DGtal::Pattern<TFraction>::
+slope() const
+{
+  return mySlope;
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Integer
+DGtal::Pattern<TFraction>::
+length() const
+{
+  return mySlope.p() + mySlope.q();
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Integer
+DGtal::Pattern<TFraction>::
+posU( Quotient k ) const
+{
+  ASSERT( ! slope().null() );
+  if ( k == NumberTraits<Quotient>::ZERO ) return NumberTraits<Integer>::ZERO;
+  else if ( k == NumberTraits<Quotient>::ONE ) return length();
+  else return length() * ((Integer) k);
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Integer
+DGtal::Pattern<TFraction>::
+posL( Quotient k ) const
+{
+  ASSERT( ! slope().null() );
+  Integer pL = slope().odd() ? length() - previousPattern().length()
+    : previousPattern().length();
+  if ( k == NumberTraits<Quotient>::ZERO ) return pL;
+  else if ( k == NumberTraits<Quotient>::ONE ) return pL + length();
+  else return pL + length() * ((Integer) k);
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Point2I
+DGtal::Pattern<TFraction>::
+U( Quotient k ) const
+{
+  ASSERT( ! slope().null() );
+  if ( k == NumberTraits<Quotient>::ZERO ) 
+    return Point2I( NumberTraits<Integer>::ZERO,
+                    NumberTraits<Integer>::ZERO );
+  else if ( k == NumberTraits<Quotient>::ONE ) 
+    return Point2I( slope().q(), 
+                    slope().p() );
+  else 
+    return Point2I( slope().q() * ((Integer) k ), 
+                    slope().p() * ((Integer) k) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Point2I
+DGtal::Pattern<TFraction>::
+L( Quotient k ) const
+{
+  ASSERT( ! slope().null() );
+  Point2I pL( NumberTraits<Integer>::ONE,
+             -NumberTraits<Integer>::ONE ); // (1,-1)
+  pL += bezout();
+  if ( k == NumberTraits<Quotient>::ZERO ) 
+    return pL;
+  else
+    return pL + U( k );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Vector2I
+DGtal::Pattern<TFraction>::
+bezout() const
+{
+  return slope().odd() 
+    ? U( 1 ) - previousPattern().U( 1 ) 
+    : previousPattern().U( 1 );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+typename DGtal::Pattern<TFraction>::Vector2I
+DGtal::Pattern<TFraction>::
+v() const
+{
+  return Vector2I( slope().q(), slope().p() );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+DGtal::Pattern<TFraction>
+DGtal::Pattern<TFraction>::
+previousPattern() const
+{
+  ASSERT( ( ! slope().null() ) ); 
+  // && ( slope().p() != NumberTraits<Quotient>::ZERO ) );
+  return Self( slope().previousPartial() );
+    
+  // if ( slope().k() > NumberTraits<Quotient>::ZERO )
+  //   return Self( slope().previousPartial() );
+  // else // if ( slope().k() == NumberTraits<Quotient>::ZERO )
+  //   return ( slope().p() == NumberTraits<Quotient>::ZERO )
+  //     ? Self( Fraction( 1, 0 ) )
+  //     : Self( Fraction( 0, 1 ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+bool
+DGtal::Pattern<TFraction>::
+getSmallestCoveringSubpattern( Pattern & subpattern,
+                               Quotient & nb,
+                               Vector2I & startPos,
+                               Integer posA, Integer posB,
+                               bool reversed ) const
+{
+  bool different = false;
+  Integer l = length();
+  
+  ASSERT( ( 0 <= posA ) && ( posA < posB ) && ( posB <= l ) );
+  if ( slope().p() == 0 || slope().q() == 0 ) // trivial pattern
+    {
+      ASSERT( posA == 0 && posB == 1 );
+      subpattern = *this;
+      nb = 1;
+      startPos = Vector2I( NumberTraits<Integer>::ZERO, 
+                           NumberTraits<Integer>::ZERO );
+      different = false;
+    }
+  else if ( reversed ? slope().even() : slope().odd() )
+    { // Odd pattern: E(z_n) = E( z_{n-1} )^u E( z_{n-2} )
+      Self prevP = previousPattern();
+      Integer prevL = prevP.length();
+      Integer k1 = posA / prevL;
+      // Integer r1 = posA % prevL;
+      if ( posB > slope().u() * prevL )  
+        { // B at extremity in the E( z_{n-2} ) part
+          nb = (int32_t) 
+            ( NumberTraits<Quotient>::castToInt64_t( slope().u() )
+              - NumberTraits<Integer>::castToInt64_t( k1 ) ); // number of E( z_{n-1} ) from A.
+          // subpattern is E( z_{n-1} )^nb E( z_{n-2} )
+          subpattern = Self( slope().father( nb ) );
+          nb = 1;
+          startPos = prevP.v() * k1;
+          different = k1 != 0;
+        }
+      else
+        { // B within some pattern E( z_{n-1} )
+          Integer k2 = ( posB + prevL - 1 ) / prevL;
+          nb = (int32_t) NumberTraits<Integer>::castToInt64_t( k2 - k1 ); 
+          ASSERT( nb > 0 );
+          // subpattern is E( z_{n-1} )^nb
+          subpattern = prevP;
+          startPos = prevP.v() * k1;
+          different = true;
+        }
+    }
+  else // slope() is even
+    { // Even pattern: E(z_n) = E( z_{n-2} ) E( z_{n-1} )^u
+      Self prevP = previousPattern();
+      Integer prevL = prevP.length();
+      Integer k1 = ( l - posB ) / prevL;
+      // Integer r1 = ( l - posB ) % prevL;
+      if ( ( l - posA ) > slope().u() * prevL )  
+        { // A at extremity in the E( z_{n-2} ) part
+          nb = (int32_t) 
+            ( NumberTraits<Quotient>::castToInt64_t( slope().u() )
+              - NumberTraits<Integer>::castToInt64_t( k1 ) ); // number of E( z_{n-1} ) from B.
+          // subpattern is E( z_{n-2} ) E( z_{n-1} )^nb 
+          // slope().selfDisplay( std::cerr );
+          // std::cerr << " nb=" << nb << " ";
+          // slope().father( nb ).selfDisplay( std::cerr );
+          // std::cerr << std::endl;
+          subpattern = Self( slope().father( nb ) );
+          nb = 1;
+          startPos = Vector2I( NumberTraits<Integer>::ZERO,
+                               NumberTraits<Integer>::ZERO );
+          different = k1 != 0;
+        }
+      else
+        { // A within some pattern E( z_{n-1} )
+          Integer k2 = ( l - posA + prevL - 1 ) / prevL;
+          nb = (int32_t) NumberTraits<Integer>::castToInt64_t( k2 - k1 ); 
+          ASSERT( nb > 0 );
+          // subpattern is E( z_{n-1} )^nb
+          subpattern = prevP;
+          startPos = v() - prevP.v() * k2;
+          different = true;
+        }
+    }
+  return different;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TFraction>
+inline
+bool
+DGtal::Pattern<TFraction>::
+getGreatestIncludedSubpattern( Pattern & subpattern,
+                               Quotient & nb,
+                               Vector2I & startPos,
+                               Integer posA, Integer posB,
+                               bool reversed ) const
+{
+  bool null_pattern = false;
+  Integer l = length();
+  ASSERT( ( 0 <= posA ) && ( posA < posB ) && ( posB <= l ) );
+  if ( slope().p() == 0 || slope().q() == 0 ) // trivial pattern
+    {
+      ASSERT( posA == 0 && posB == 1 );
+      subpattern = *this;
+      nb = 1;
+      startPos = Vector2I( NumberTraits<Integer>::ZERO, 
+                           NumberTraits<Integer>::ZERO );
+      null_pattern = false;
+    }
+  else if ( reversed ? slope().even() : slope().odd() )
+    { // Odd pattern: E(z_n) = E( z_{n-1} )^u E( z_{n-2} )
+      Self prevP = previousPattern();
+      Integer prevL = prevP.length();
+      Integer k1 = ( posA + prevL - 1 ) / prevL;
+      if ( posB == l )
+        { // B at right extremity of the E( z_{n-2} ) part
+          if ( posA > slope().u() * prevL )
+            {
+              subpattern = Fraction();
+              nb = 0;
+              null_pattern = true;
+            }
+          else
+            { // subpattern is E( z_{n-1} )^nb E( z_{n-2} )
+              nb = (int32_t) 
+                ( NumberTraits<Quotient>::castToInt64_t( slope().u() )
+                  - NumberTraits<Integer>::castToInt64_t( k1 ) ); // number of E( z_{n-1} ) from A.
+              subpattern = Self( slope().father( nb ) );
+              nb = 1;
+              startPos = prevP.v() * k1;
+              null_pattern = false;
+            }
+        }
+      else
+        { // B within some pattern E( z_{n-1} ) or strictly in E ( z_{n-2} )
+          Integer k2 = posB / prevL;
+          nb = (int32_t) NumberTraits<Integer>::castToInt64_t( k2 - k1 ); 
+          // subpattern is E( z_{n-1} )^nb or null
+          if ( nb < 0 ) nb = 0;
+          subpattern = nb == 0 ? Pattern() : prevP;
+          startPos = prevP.v() * k1;
+          null_pattern = nb == 0;
+        }
+    }
+  else // slope() is even
+    { // Even pattern: E(z_n) = E( z_{n-2} ) E( z_{n-1} )^u
+      Self prevP = previousPattern();
+      Integer prevL = prevP.length();
+      Integer k1 = ( l - posB + prevL - 1 ) / prevL;
+      if ( posA == 0 )
+        { // A at left extremity of the E( z_{n-2} ) part
+          // subpattern is E( z_{n-2} ) E( z_{n-1} )^nb 
+          if ( ( l - posB ) > slope().u() * prevL )
+            {
+              subpattern = Fraction();
+              nb = 0;
+              null_pattern = true;
+            }
+          else
+            {
+              nb = (int32_t)
+                ( NumberTraits<Quotient>::castToInt64_t( slope().u() )
+                  - NumberTraits<Integer>::castToInt64_t( k1 ) ); // number of E( z_{n-1} ) from B.
+              subpattern = Self( slope().father( nb ) );
+              nb = 1;
+              startPos = Vector2I( NumberTraits<Integer>::ZERO,
+                                   NumberTraits<Integer>::ZERO );
+              null_pattern = false;
+            }
+        }
+      else
+        { // A within some pattern E( z_{n-1} ) or strictly in E ( z_{n-2} )
+          Integer k2 = ( l - posA ) / prevL;
+          nb = (int32_t) NumberTraits<Integer>::castToInt64_t( k2 - k1 ); 
+          // subpattern is E( z_{n-1} )^nb or null
+          if ( nb < 0 ) nb = 0;
+          subpattern = nb == 0 ? Pattern() : prevP;
+          startPos = v() - prevP.v() * k2;
+          null_pattern = nb == 0;
+        }
+    }
+
+  return ! null_pattern;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TFraction>
+inline
+void
+DGtal::Pattern<TFraction>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Pattern] f=";
+  mySlope.selfDisplay( out );
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TFraction>
+inline
+bool
+DGtal::Pattern<TFraction>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TFraction>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const Pattern<TFraction> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

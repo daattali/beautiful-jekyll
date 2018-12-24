@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Ellipse.html" title="An ellipse." alt="" coords="113,374,239,403"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="5,278,131,307"/>
-<area shape="rect" id="node6" href="$classLibBoard_1_1Color.html" title="Structure representing an RGB triple." alt="" coords="9,86,127,115"/>
-<area shape="rect" id="node9" href="$structLibBoard_1_1Point.html" title="Struct representing a 2D point." alt="" coords="155,278,272,307"/>
-</map>

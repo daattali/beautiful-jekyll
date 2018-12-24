@@ -1,0 +1,166 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file PGMWriter.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/22
+ *
+ * Implementation of inline methods defined in PGMWriter.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <fstream>
+#include "DGtal/io/Color.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+
+namespace DGtal {
+
+template<typename I,typename C>
+bool
+PGMWriter<I,C>::exportPGM(const std::string & filename, const I & aImage,
+			  const Functor & aFunctor,  bool saveASCII, bool topbotomOrder)
+{
+  BOOST_STATIC_ASSERT(I::Domain::dimension == 2);
+
+  std::ofstream out;
+  typename I::Domain domain = aImage.domain();
+  typename I::Value val;
+  typename I::Domain::Point p = I::Domain::Point::diagonal(1);
+  typename I::Domain::Vector size =  (domain.upperBound() - domain.lowerBound()) + p;
+
+  out.open(filename.c_str());
+  
+  //PPM format
+  if(saveASCII){
+    out << "P2"<<std::endl;
+  }else{
+    out << "P5"<<std::endl;
+  }
+
+  out << "#DGtal PNM Writer"<<std::endl;
+  out << size[0]<<" "<< size[1]<<std::endl;
+  out << "255" <<std::endl;
+  
+  if(!topbotomOrder){
+    //We scan the domain instead of the image becaus we cannot
+    //trust the image container Iterator
+    for(typename I::Domain::ConstIterator it = domain.begin(), itend=domain.end();
+	it!=itend;
+	++it)
+      {
+
+	val = aImage( (*it) );
+	if(saveASCII){
+	  out << ((int) aFunctor(val) )<<" ";
+	}else{
+	  out << ((char)((int) aFunctor(val)));
+	}
+      }
+  }else{
+    typename I::Domain::Point ptUpper=  domain.upperBound();
+    
+    for(typename HyperRectDomain<typename I::Domain::Space>::ConstSubRange::ConstReverseIterator itY = domain.subRange(1, ptUpper).rbegin(), itYend=domain.subRange(1, ptUpper).rend();  itY!=itYend; ++itY)
+      {    
+	typename I::Domain::Point ptUpperY=  *itY;
+	
+	for(typename HyperRectDomain<typename I::Domain::Space>::ConstSubRange::ConstIterator it = domain.subRange(0, ptUpperY).begin(), itend=domain.subRange(0, ptUpperY).end();
+	    it!=itend;
+	    ++it)
+	  {
+	    val = aImage( (*it) );
+	    if(saveASCII){
+	      out << ((int) aFunctor(val))<<" ";
+	  }else{
+	      out << ((char) aFunctor(val));
+	    }
+	    
+	  }
+      }
+  }
+  
+  out.close(); 
+
+  ///@todo catch IOerror excpetion
+  return true;
+}
+
+template<typename I,typename C>
+bool
+PGMWriter<I,C>::exportPGM3D(const std::string & filename, const I & aImage,
+			    const Functor&aFunctor, bool saveASCII)
+
+{
+  ///@todo  the Value of I should match with the one in C
+
+  BOOST_STATIC_ASSERT(I::Domain::dimension == 3);
+
+  std::ofstream out;
+  typename I::Domain domain(aImage.domain().lowerBound(), aImage.domain().upperBound());
+  typename I::Value val;
+  typename I::Domain::Point p = I::Domain::Point::diagonal(1);
+  typename I::Domain::Vector size =  (domain.upperBound() - domain.lowerBound()) + p;
+
+  Color col;
+  out.open(filename.c_str());
+  
+  std::string extension = filename.substr(filename.find_last_of(".") + 1);
+  
+  //PPM format
+  if(saveASCII){
+    out <<( (extension=="pgm")? "P2": "P2-3D" )<< std::endl;
+  }else{
+    out << ( (extension=="pgm")? "P5" : "P5-3D")<<std::endl;
+  }
+  out << "#DGtal PNM Writer"<<std::endl;
+  out << size[0]<<" "<< size[1]<<" "<< size[2]<<std::endl;
+  out << "255" <<std::endl;
+
+  //We scan the domain instead of the image becaus we cannot
+  //trust the image container Iterator
+  for(typename I::Domain::ConstIterator it = domain.begin(), itend=domain.end();
+      it!=itend;
+      ++it)
+    {
+
+      val = aImage( (*it) );
+      if(saveASCII){
+	out << ((int) aFunctor( val ))<<" ";
+      }else{	
+	out << ((char)((int) aFunctor(val)));
+      }
+
+    }
+  
+  out.close(); 
+
+  ///@todo catch IOerror excpetion
+  return true;
+}
+
+
+}//namespace

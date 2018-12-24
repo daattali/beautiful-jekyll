@@ -1,0 +1,222 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Linearizer.ih
+ * @author Roland Denis (\c roland.denis@univ-smb.fr )
+ * LAboratory of MAthematics - LAMA (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2015/06/18
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstddef>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+namespace DGtal
+{
+
+  /// Tools
+  namespace
+  {
+
+    /** Helper that calculates the dimension index given the current linearization step.
+     *
+     * The step I is always decrementing from N-1 to 0.
+     *
+     * @tparam TStorageOrder  Storage order (RowMajorStorage of ColMajorStorage).
+     * @tparam N              Dimension of the space.
+     * @tparam I              Current step.
+     */
+    template < typename TStorageOrder, std::size_t N, std::size_t I >
+    struct linearizer_helper;
+
+    template < std::size_t N, std::size_t I >
+    struct linearizer_helper< RowMajorStorage, N, I >
+      {
+        enum { dim = I }; ///< Dimension index related to the step I.
+      };
+
+    template < std::size_t N, std::size_t I >
+    struct linearizer_helper< ColMajorStorage, N, I >
+      {
+        enum { dim = N-1 - I }; ///< Dimension index related to the step I.
+      };
+
+    /** Templated static structure for linearization of the coordinates of a point.
+     *
+     * @tparam TSize  Type of the linearizared index.
+     * @tparam TStorageOrder  Storage order (RowMajorStorage of ColMajorStorage).
+     * @tparam N      Dimension of the space.
+     * @tparam I      Current step.
+     */
+    template < typename TSize, typename TStorageOrder, std::size_t N, std::size_t I = N-1  >
+    struct linearizer_impl
+      {
+
+        /**
+         * Return the linearized index from the coordinates of a point.
+         *
+         * @tparam    TPoint    Type of the point.
+         * @tparam    TExtent   Type of the domain's extent.
+         * @param[in] aPoint    The point to linearize.
+         * @param[in] anExtent  The extent of the domain.
+         * @return    the linearized index of the point.
+         */
+        template < typename TPoint, typename TExtent >
+        static inline
+        TSize apply( TPoint const& aPoint, TExtent const& anExtent )
+          {
+            return
+                aPoint[ linearizer_helper<TStorageOrder, N, I>::dim ]
+              + anExtent[ linearizer_helper<TStorageOrder, N, I>::dim ] * linearizer_impl< TSize, TStorageOrder, N, I-1 >::apply( aPoint, anExtent );
+          }
+      };
+
+    /**
+     * Specialization of the structure linearizer_impl for the last step.
+     *
+     * It is actually used as a terminate condition of the recursive process.
+     */
+    template < typename TSize, typename TStorageOrder, std::size_t N >
+    struct linearizer_impl< TSize, TStorageOrder, N, 0 >
+      {
+        template < typename TPoint, typename TExtent >
+        static inline
+        TSize apply( TPoint const& aPoint, TExtent const& /* anExtent */ )
+          {
+            return aPoint[ linearizer_helper<TStorageOrder, N, 0>::dim ];
+          }
+      };
+
+    /** Templated static structure for de-linearization of a point index.
+     *
+     * @tparam TStorageOrder  Storage order (RowMajorStorage of ColMajorStorage).
+     * @tparam N      Dimension of the space.
+     * @tparam I      Current step.
+     */
+    template < typename TStorageOrder, std::size_t N, std::size_t I = N-1  >
+    struct delinearizer_impl
+      {
+
+        /**
+         * Return the de-linearized point from the linearized index of the point.
+         *
+         * @tparam    TPoint    Type of the point.
+         * @tparam    TExtent   Type of the domain's extent.
+         * @tparam    TSize     Type of the linearized index.
+         * @param[out]  aPoint    The point after de-linearization.
+         * @param[in]   anExtent  The extent of the domain.
+         * @param[in]   anIndex   The linearized index of the point.
+         */
+        template < typename TPoint, typename TExtent, typename TSize >
+        static inline
+        void apply( TPoint& aPoint, TExtent const& anExtent, TSize anIndex )
+          {
+            typename TExtent::Scalar const dim_extent = anExtent[ linearizer_helper<TStorageOrder, N, I>::dim ];
+            aPoint[ linearizer_helper<TStorageOrder, N, I>::dim ] = anIndex % dim_extent;
+            delinearizer_impl< TStorageOrder, N, I-1 >::apply( aPoint, anExtent, anIndex / dim_extent );
+          }
+      };
+
+    /**
+     * Specialization of the structure delinearizer_impl for the last step.
+     *
+     * It is actually used as a terminate condition of the recursive process.
+     */
+    template < typename TStorageOrder, std::size_t N >
+    struct delinearizer_impl< TStorageOrder, N, 0 >
+      {
+        template < typename TPoint, typename TExtent, typename TSize >
+        static inline
+        void apply( TPoint& aPoint, TExtent const& /* anExtent */, TSize anIndex )
+          {
+            aPoint[ linearizer_helper<TStorageOrder, N, 0>::dim ] = anIndex;
+          }
+      };
+
+  } // anonymous namespace
+
+  /// Linearized index of a point, given the domain lower-bound and extent.
+  template <typename TSpace, typename TStorageOrder>
+  typename Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::Size
+  Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::
+      getIndex( Point aPoint, Point const& aLowerBound, Extent const& anExtent )
+    {
+      aPoint -= aLowerBound;
+      return linearizer_impl<Size, TStorageOrder, Domain::dimension>::apply(aPoint, anExtent);
+    }
+
+  /// Linearized index of a point, given the domain extent.
+  template <typename TSpace, typename TStorageOrder>
+  typename Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::Size
+  Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::
+      getIndex( Point aPoint, Extent const& anExtent )
+    {
+      return linearizer_impl<Size, TStorageOrder, Domain::dimension>::apply(aPoint, anExtent);
+    }
+
+  /// Linearized index of a point, given a domain.
+  template <typename TSpace, typename TStorageOrder>
+  typename Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::Size
+  Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::
+      getIndex( Point aPoint, Domain const& aDomain )
+    {
+      return linearizer_impl<Size, TStorageOrder, Domain::dimension>::apply(aPoint - aDomain.lowerBound(), aDomain.upperBound()-aDomain.lowerBound()+Point::diagonal(1));
+    }
+
+  /// De-linearization of an index, given the domain lower-bound and extent.
+  template <typename TSpace, typename TStorageOrder>
+  typename Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::Point
+  Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::
+      getPoint( Size anIndex, Point const& aLowerBound, Extent const& anExtent )
+    {
+      Point point;
+      delinearizer_impl<TStorageOrder, Domain::dimension>::apply(point, anExtent, anIndex);
+      return point + aLowerBound;
+    }
+
+  /// De-linearization of an index, given the domain extent.
+  template <typename TSpace, typename TStorageOrder>
+  typename Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::Point
+  Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::
+      getPoint( Size anIndex, Extent const& anExtent )
+    {
+      Point point;
+      delinearizer_impl<TStorageOrder, Domain::dimension>::apply(point, anExtent, anIndex);
+      return point;
+    }
+
+  /// De-linearization of an index, given a domain.
+  template <typename TSpace, typename TStorageOrder>
+  typename Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::Point
+  Linearizer< HyperRectDomain<TSpace>, TStorageOrder >::
+      getPoint( Size anIndex, Domain const& aDomain )
+    {
+      Point point;
+      delinearizer_impl<TStorageOrder, Domain::dimension>::apply(point, aDomain.upperBound()-aDomain.lowerBound()+Point::diagonal(1), anIndex);
+      return point + aDomain.lowerBound();
+    }
+
+} // namespace DGtal
+

@@ -1,0 +1,102 @@
+/**
+ * @file moduleHowToUseDGtal.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/05/25
+ *
+ * Documentation file for feature HowToUseDGtal
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleHowToUseDGtal How to use DGtal in my own project ?
+@writers David Coeurjolly
+
+
+[TOC]
+
+Once you have installed the DGtal library, this documentation
+describes the ways to link your project and the installed DGtal libs
+and making sure that the dependencies are correct.
+
+We recommend to use the @em cmake system  since using
+a simple command, all dependencies used to build your installed
+DGtal version will be associated and linked to your project. 
+
+
+Let us consider the following helloworld project with the C++ file
+\em helloworld.cpp :
+
+@code
+#include <DGtal/base/Common.h>
+
+int main(int argc, char** argv)
+{
+  
+  DGtal::trace.info() << "Helloworld from DGtal ";
+  DGtal::trace.emphase() << "(version "<< DGTAL_VERSION << ")"<< std::endl;
+  
+  return 0;
+}
+@endcode
+
+This simple example just use the "trace" mechanism in DGtal but it
+requires @em helloworld.cpp to be linked to DGtal.
+
+\section HowToUseDGtal_CMAKE Using cmake tools
+
+To compile this file with cmake, you have a CMakeLists.txt file that
+looks like:
+@code
+PROJECT(Helloworld)
+
+ADD_EXECUTABLE(helloworld helloworld)
+
+@endcode
+
+
+When you installed DGtal, cmake created all the configuration
+files that you would need to import DGtal settings in your project in the  "${CMAKE_INSTALL_PREFIX}/share/DGtal/CMake/"
+folder. For example on linux/unix systems, standard installation creates configuration
+files in /usr/local/share/DGtal/CMake/".
+
+The most important file in this folder is @em DGtalConfig.cmake which
+contains everything you need. Just copy (or better, link) this file in
+your project source directory. Then, to link helloworld to DGtal, you just have to update the
+CMakeLists.txt such that: 
+
+@code
+PROJECT(Helloworld)
+
+#Required in DGtal
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+FIND_PACKAGE(DGtal REQUIRED)
+INCLUDE_DIRECTORIES(${DGTAL_INCLUDE_DIRS})
+LINK_DIRECTORIES(${DGTAL_LIBRARY_DIRS})
+
+ADD_EXECUTABLE(helloworld helloworld)
+TARGET_LINK_LIBRARIES(helloworld ${DGTAL_LIBRARIES})
+@endcode
+
+Additionally, you can control the version of the DGtal library with
+for example :
+@code
+FIND_PACKAGE(DGtal 0.3.1 REQUIRED)
+@endcode
+that will produce an error if your DGtal installed library has an
+older version than 0.3.1.
+
+
+
+*/
+
+}

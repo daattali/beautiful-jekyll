@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<!--
+  Delegate command file.
+
+  Commands which specify
+
+    decode="in_format" encode="out_format"
+
+  specify the rules for converting from in_format to out_format
+  These rules may be used to translate directly between formats.
+
+  Commands which specify only
+
+    decode="in_format"
+
+  specify the rules for converting from in_format to some format that
+  GraphicsMagick will automatically recognize. These rules are used to
+  decode formats.
+
+  Commands which specify only
+
+   encode="out_format"
+
+  specify the rules for an "encoder" which may accept any input format.
+
+  For delegates other than gs-color, gs-mono, and mpeg-encode
+  the substitution rules are as follows:
+
+    %i  input image filename
+    %o  output image filename
+    %u  unique temporary filename
+    %z  secondary unique temporary filename
+
+    %#  input image signature
+    %b  image file size
+    %c  input image comment
+    %d  original filename directory part
+    %e  original filename extension part
+    %f  original filename
+    %t  original filename top (base) part
+    %g  window group
+    %h  image rows (height)
+    %k  input image number colors
+    %l  input image label
+    %m  input image format ("magick")
+    %n  input image number of scenes
+    %p  page number
+    %q  input image depth
+    %r  input image storage class, colorspace, and matte
+    %s  scene number
+    %w  image columns (width)
+    %x  input image x resolution
+    %y  input image y resolution
+    %[  input image attribute (e.g. "%[EXIF:Orientation]")
+    %%  pass through literal %
+
+  Under Unix, all text (non-numeric) substitutions should be
+  surrounded with double quotes for the purpose of security, and
+  because any double quotes occuring within the substituted text will
+  be escaped using a backslash.
+
+  Commands (excluding file names) containing one or more of the
+  special characters ";&|><" (requiring that multiple processes be
+  executed) are executed via the Unix shell with text substitutions
+  carefully excaped to avoid possible compromise.  Otherwise, commands
+  are executed directly without use of the Unix shell.
+
+  Use 'gm convert -list delegates' to verify how the contents of this
+  file has been parsed.
+
+ -->
+<delegatemap>
+  <delegate decode="autotrace" stealth="True" command='"autotrace" -output-format svg -output-file "%o" "%i"' />
+  <delegate decode="browse" stealth="True" command='"xdg-open" "http://www.GraphicsMagick.org/" &'  />
+  <delegate decode="cgm" command='"ralcgm" -d ps < "%i" > "%o" 2>/dev/null' />
+  <delegate decode="dcraw" command='"dcraw" -c -w "%i" > "%o"' />
+  <delegate decode="dot" command='"dot" -Tps "%i" -o "%o"' />
+  <delegate decode="dvi" command='"dvips" -q -o "%o" "%i"' />
+  <delegate decode="edit" stealth="True" command='"xterm" -title "Edit Image Comment" -e vi "%o"' />
+  <delegate decode="emf" command='"wmf2eps" -o "%o" "%i"' />
+  <delegate decode="eps" encode="pdf" mode="bi" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pdfwrite "-sOutputFile=%o" -- "%i" -c quit' />
+  <delegate decode="eps" encode="ps" mode="bi" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pswrite "-sOutputFile=%o" -- "%i" -c quit' />
+  <delegate decode="fig" command='"fig2dev" -L ps "%i" "%o"' />
+  <delegate decode="gplt" command='"echo" "set size 1.25,0.62; set terminal postscript portrait color solid; set output \"%o\"; load \"%i\"" > "%u"; "gnuplot" "%u"' />
+
+  <!-- Read monochrome Postscript, EPS, and PDF  -->
+  <delegate decode="gs-mono" stealth="True" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pbmraw -dTextAlphaBits=%u -dGraphicsAlphaBits=%u -r%s %s "-sOutputFile=%s" -- "%s" -c quit' />
+
+  <!-- Read grayscale Postscript, EPS, and PDF  -->
+  <delegate decode="gs-gray" stealth="True" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pgmraw -dTextAlphaBits=%u -dGraphicsAlphaBits=%u -r%s %s "-sOutputFile=%s" -- "%s" -c quit' />
+
+  <!-- Read colormapped Postscript, EPS, and PDF  -->
+  <delegate decode="gs-palette" stealth="True" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pcx256 -dTextAlphaBits=%u -dGraphicsAlphaBits=%u -r%s %s "-sOutputFile=%s" -- "%s" -c quit' />
+
+  <!-- Read color Postscript, EPS, and PDF  -->
+  <delegate decode="gs-color" stealth="True" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=ppmraw -dTextAlphaBits=%u -dGraphicsAlphaBits=%u -r%s %s "-sOutputFile=%s" -- "%s" -c quit' />
+
+  <!-- Read color+alpha Postscript, EPS, and PDF  -->
+  <delegate decode="gs-color+alpha" stealth="True" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pngalpha -dTextAlphaBits=%u -dGraphicsAlphaBits=%u -r%s %s "-sOutputFile=%s" -- "%s" -c quit' />
+
+  <!-- Read CMYK Postscript, EPS, and PDF  -->
+  <delegate decode="gs-cmyk" stealth="True" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pam -dTextAlphaBits=%u -dGraphicsAlphaBits=%u -r%s %s "-sOutputFile=%s" -- "%s" -c quit' />
+
+  <delegate decode="hpg" command='"hp2xx" -q -m eps -f `basename "%o"` "%i" && mv -f `basename "%o"` "%o"' />
+  <delegate decode="hpgl" command='"hp2xx" -q -m eps -f `basename "%o"` "%i" && mv -f `basename "%o"` "%o"' />
+  <!-- Read HTML file  -->
+  <delegate decode="htm" command='"html2ps" -U -o "%o" "%i"' />
+  <!-- Read HTML file  -->
+  <delegate decode="html" command='"html2ps" -U -o "%o" "%i"' />
+  <delegate decode="ilbm" command='"ilbmtoppm" "%i" > "%o"' />
+  <!-- Read UNIX manual page  -->
+  <delegate decode="man" command='"groff" -man -Tps "%i" > "%o"' />
+  <!-- Read MPEG file using mpeg2decode  -->
+  <delegate decode="mpeg" command='"mpeg2decode" -q -b "%i" -f -o3 "%u%%05d"; gm convert -temporary "%u*.ppm" "miff:%o" ; rm -f "%u"*.ppm ' />
+  <!-- Write MPEG file using mpeg2encode -->
+  <delegate encode="mpeg-encode" stealth="True" command='"mpeg2encode" "%i" "%o"' />
+  <!-- Convert PDF to Encapsulated Poscript using Ghostscript -->
+  <delegate decode="pdf" encode="eps" mode="bi" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=epswrite "-sOutputFile=%o" -- "%i" -c quit' />
+  <!-- Convert PDF to Postcript using Ghostscript -->
+  <delegate decode="pdf" encode="ps" mode="bi" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pswrite "-sOutputFile=%o" -- "%i" -c quit' />
+  <!-- Convert PNM file to ILBM format using ppmtoilbm -->
+  <delegate decode="pnm" encode="ilbm" mode="encode" command='"ppmtoilbm" -24if "%i" > "%o"' />
+  <delegate decode="pnm" encode="launch" mode="encode" command='"gimp" "%i"' />
+  <delegate decode="pnm" encode="win" mode="encode" command='"gm" display -immutable "%i"' />
+  <!-- Read Persistance Of Vision file using povray  -->
+  <delegate decode="pov" command='povray "+i"%i"" +o"%o" +fn%q +w%w +h%h +a -q9 -kfi"%s" -kff"%n"
+    "gm" convert -adjoin "%o*.png" "%o"' />
+  <delegate decode="ps" encode="eps" mode="bi" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=epswrite "-sOutputFile=%o" -- "%i" -c quit' />
+  <delegate decode="ps" encode="pdf" mode="bi" command='"gs" -q -dBATCH -dMaxBitmap=50000000 -dNOPAUSE -sDEVICE=pdfwrite "-sOutputFile=%o" -- "%i" -c quit' />
+  <delegate decode="ps" encode="print" mode="encode" command='"/usr/bin/lpr" "%i"' />
+  <!-- Read Radiance file using ra_ppm -->
+  <delegate decode="rad" command='"ra_ppm" -g 1.0 "%i" "%o"' />
+  <!-- Convert RGBA file to URT RLE using rawtorle -->
+  <delegate decode="rgba" encode="rle" mode="encode" command='"gm" mogrify -flip -size %wx%h "rgba:%i"
+    "rawtorle" -w %w -h %h -n 4 -o "%o" "%i"' />
+   <!-- Scan an image using Sane's scanimage -->
+  <delegate decode="scan" command='"scanimage" -d "%i" > "%o"' />
+  <!-- Read HTML file  -->
+  <delegate decode="shtml" command='"html2ps" -U -o "%o" "%i"' />
+  <!-- Convert ASCII text to Postscript using 'enscript' command -->
+  <delegate decode="txt" encode="ps" mode="bi" command='"enscript" -o "%o" "%i"' />
+  <!-- Render WMF file using wmf2eps (fallback in case libwmf not available) -->
+  <delegate decode="wmf" command='"wmf2eps" -o "%o" "%i"' />
+  <delegate encode="show" stealth="True" command='"gm" display -immutable -delay 0 -window_group %g -title "%l of %f" "tmp:%o" &' />
+</delegatemap>

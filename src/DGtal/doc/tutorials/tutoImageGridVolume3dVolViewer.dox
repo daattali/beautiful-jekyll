@@ -1,0 +1,116 @@
+/**
+ * @file tutoImageGridVolume3dVolViewer.dox
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/03/23
+ *
+ * Documentation file for feature 3dSimpleVolViewer
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoImageGridVolume3dVolViewer   Tutorial "Image -> Region -> Volume ->  3dVolViewer : a simple 3D volume viewer in less than 50 lines" 
+@author Bertrand Kerautret
+
+
+  This part of the manual describes a simple tool written in less 
+  than 50 lines which allows to perform a simple 3D volume
+  viewer.
+   
+  The viewer is based on Viewer3D and the input file is simply a ".vol" and all voxels contained
+  in an interval can be displayed in 3D. The source program 3dVolViewer.cpp can be found in the DGtalTools project. We give here a rapid description of the main parts of the simple viewer.
+   
+  First we set the program option using boost 
+   @code
+   namespace po = boost::program_options;   
+    general_opt.add_options()
+    ("help,h", "display this message")
+    ("input-file,i", po::value<std::string>(), "volume file" " (default: standard input)")
+    ("thresholdMin,m",  po::value<int>()->default_value(0), "threshold min to define binary shape" ) 
+    ("thresholdMax,M",  po::value<int>()->default_value(255), "threshold max to define binary shape" )
+    ("transparency,t",  po::value<uint>()->default_value(255), "transparency") ; 
+   @endcode
+   
+   Then argument are parsed and stored:
+   @code
+   po::variables_map vm;
+   po::store(po::parse_command_line(argc, argv, general_opt), vm);  
+   po::notify(vm);     
+   
+   string inputFilename = vm["input-file"].as<std::string>();
+   int thresholdMin = vm["thresholdMin"].as<int>();
+   int thresholdMax = vm["thresholdMax"].as<int>();
+   unsigned char transp = vm["transparency"].as<uint>();
+   @endcode
+
+   The image can be loaded simply as follows:
+   @code
+    typedef ImageSelector<Domain, unsigned char>::Type Image;
+    Image image = VolReader<Image>::importVol( inputFilename );
+   @endcode
+   and its associated domain is obtain with:
+
+   @code
+   Domain domain(image.lowerBound(), image.upperBound());
+   @endcode
+
+
+   We use the \c GradientColorMap to obtain a pretty rendering a grey level volume information.
+   @code 
+   GradientColorMap<long> gradient( thresholdMin, thresholdMax);
+   gradient.addColor(LibBoard::Color::Blue);
+   gradient.addColor(LibBoard::Color::Green);
+   gradient.addColor(LibBoard::Color::Yellow);
+   gradient.addColor(LibBoard::Color::Red);
+   @endcode
+
+
+   Finally we only have to display the voxels with Viewer3D:
+
+   @code
+   for(Domain::ConstIterator it = domain.begin(), itend=domain.end(); it!=itend; ++it){
+      unsigned char  val= image( (*it) );     
+      LibBoard::Color c= gradient(val);
+      if(val<=thresholdMax && val >=thresholdMin){
+          viewer <<  CustomColors3D(QColor((float)(c.red()), (float)(c.green()),(float)(c.blue()), transp),
+			            QColor((float)(c.red()), (float)(c.green()),(float)(c.blue()), transp));     
+          viewer << *it;     
+     }     
+   }
+   viewer << Viewer3D<>::updateDisplay;
+   @endcode
+
+   By executing the following command line from the build directory of DGtalTools:
+   
+   @code
+   ./visualisation/3dVolViewer -i ../examples/samples/lobster.vol  -m 30 -M 255 -t 10
+   @endcode
+   You will get the following visualisation:
+
+   \image html visuVol3D.png " Example of visualisation obtained with  3dVolViewer"  width=5cm 
+   
+
+   You can also add a clipping plane:
+
+   @code 
+   viewer << ClippingPlane(0,0,-1, 20);
+   @endcode
+
+   You will get the following visualisation:
+
+   \image html visuVol3Dclipping.png " Example of visualisation obtained with  3dVolViewer"  width=5cm 
+
+
+
+
+*/
+
+}

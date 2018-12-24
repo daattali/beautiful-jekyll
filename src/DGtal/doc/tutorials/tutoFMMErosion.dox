@@ -1,0 +1,186 @@
+/**
+ * @file tutoFMMErosion.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/06/19
+ *
+ * Documentation file for feature tutoFMMErosion
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoFMMErosion Tutorial: Local morphological opening of a 3d volume by the Fast Marching Method
+@writers Tristan Roussillon
+[TOC]
+
+\section secttutoFMMErosion1 Goal of the tutorial
+
+In this tutorial, we will see how to use the FMM class in order to perform a basic processing on a 3d volume.
+The FMM class is part of the \ref packageGeometry. 
+In the same time, we will learn how to read and write vol files (see \ref packageIO) 
+and we will get familiar with digital surfaces (see \ref packageTopology). 
+ 
+In order to smooth the digital surface of a 3d volume, we want to perform a mophological opening 
+(i.e. an erosion followed by a dilation) with a circular structural element of small radius. Since the radius 
+is small, we do not want to scan the whole image but we want to work only in narrow band around the digital surface. 
+That is why, we think that using the FMM class is a good idea. 
+
+\section secttutoFMMErosion2 Some steps 
+
+We will detail the implementation of some crucial steps: 
+
+- reading a vol image.
+- tracking a digital surface.
+- performing a local erosion by FMM. 
+- writing a vol image. 
+
+The whole example is available in FMMErosion.cpp.
+
+\subsection subsecttutoFMMErosion21  Reading a vol
+
+First of all, we choose a type for the binary image representing the 3d volume. 
+Then, we create the image and fill it by reading a vol file with VolReader. 
+  
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionImageReading
+
+See also \ref moduleIO.
+
+\subsection subsecttutoFMMErosion22  Tracking a surface
+
+We now track the digital surface of the volume in order to work in a narrow band around it. 
+
+This can be done in two steps: 
+
+- We search for a boundary element (@e bel for short), i.e. a surfel lying between the volume 
+  and its background. 
+
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionStartingBel
+
+- We define and track the digital surface from the starting bel.   
+
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionTracking
+
+\note In this snippet, we do not explicitly track the digital surface. The digital surface is @e light, 
+i.e. it does not contain any surfel, but computes them on-line. 
+ 
+See also \ref moduleDigitalSurfaces and \ref moduleDigitalSurfaceHelpers.
+
+\subsection subsecttutoFMMErosion23  Local erosion
+
+In order to perform a local morphological erosion, the idea is to incrementally 
+compute the band of points to remove by marching out from the digital surface, 
+but only @e inside the initial volume.   
+We stop as soon as we detect a point whose (Euclidean) distance from the digital 
+surface is greater than a given threshold (called @e maximalDistance below), 
+which corresponds to the radius of the structuring element. 
+
+As explained in \ref moduleFMM, we must define 
+- a type for the set of points for which we compute the distance values (called AcceptedPointSet below),  
+- a type for the image that stores the distance values (called DistanceImage below), 
+- a type for the point predicate that implicitly represents the volume. 
+  Here, we use the binary image as a point predicate. 
+ 
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionFMMTypes
+
+Then, we construct and initalize the two external data structures, i.e. 
+the set of points and the image of distance values. We arbitrarily set 
+the distance values of all the inner points to \f$ 0.5 \f$.  
+
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionFMMInit
+
+Finally, we instanciate the FMM class and perform the computation as follows: 
+
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionFMM
+
+Note that we set the last (optional) argument to @e maximalDistance in order to 
+bound the computation. Consequently, it remains to flip from the volume to the background
+all the points belonging to @e pointSet. Indeed, they are all located inside the volume, 
+at a distance from the digital surface that is less than @e maximalDistance by definition. 
+
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionErosion
+ 
+\subsection subsecttutoFMMErosion24  Writing a vol
+
+In order to export the updated binary image in a vol file, 
+we use VolWriter as follows:  
+  
+@snippet tutorial-examples/FMMErosion.cpp FMMErosionImageWriting
+
+\note In order to visualize a vol file with QGLViewer, you can 
+use the tool @e 3dVolViewer of the DGtalTools project 
+(https://github.com/DGtal-team/DGtalTools).
+
+\section secttutoFMMErosion3 Your challenge  
+
+You know how to perform a local morphological erosion.
+All the previous snippets are taken from FMMErosion.cpp.
+The local morphological dilation as well as the final 
+morphological opening, which is an erosion followed by a
+dilation, are left as an exercise. 
+
+\subsection subsecttutoFMMErosion31  Excercise
+
+Your challenge is to code: 
+
+1. a local morphological dilation, 
+2. a local morphological opening, 
+3. a tool that performs a local morphological opening on all connected components. The vol file and the radius of 
+   the structural element must be program options. 
+
+\subsection subsecttutoFMMErosion32  Hints
+
+The dilation operation will look like the erosion operation. There are however three small differences: 
+
+- Contrary to the erosion operation that is bounded by the volume, the dilation operation must be limited 
+  to the background, but inside the domain. On one hand, you may adapt the binary image, 
+  used as a point predicate in FMMErosion.cpp, with functors::NotPointPredicate in order to bound the computation to the background. 
+  On the other hand, you may adapt the domain with functors::DomainPredicate in order to limit the computation to the domain. 
+  Finally, you may use functors::BinaryPointPredicate to combine these two point predicates. Thus, you may define
+  the following types: 
+
+\code
+    using namespace DGtal::functors;
+    typedef NotPointPredicate<BinaryImage> BackgroundPredicate; 
+    typedef BinaryPointPredicate<
+      BackgroundPredicate, 
+      DomainPredicate<Domain> > Predicate; 	      
+\endcode
+
+Once these types are defined, you can construct your new point predicate as follows: 
+
+\code
+    BackgroundPredicate backgroundPredicate( binaryImage );
+    DomainPredicate<Domain> domainPredicate( domain );
+    Predicate pred( backgroundPredicate, domainPredicate, andBF2 ); 
+\endcode
+
+  Note that most point predicate adapters are defined in BasicPointPredicates.h. Moreover, functors::andBF2 is a binary functor 
+  defined in BasicBoolFunctors.h 
+
+- You must initialize the accepted point set from the outer points of the digital surface. You may use functors::SCellToOuterPoint defined 
+  in SCellsFunctors.h instead of functors::SCellToInnerPoint.  
+
+- Obviously, after the computation, you must flip the points of the accepted point set from the background to the volume in order to 
+  complete the dilation operation. 
+
+
+*/
+
+/**
+Example of tutorial 1: Local morphological opening of a 3d volume by the Fast Marching Method
+@see @ref tutoFMMErosion
+\image html tutoFMMerode.png  "erosion using FMM."
+@example tutorial-examples/FMMErosion.cpp
+ 
+*/
+
+
+}

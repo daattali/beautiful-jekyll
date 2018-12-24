@@ -1,6 +1,0 @@
-<map id="DGtal::CPredicate&lt; T, TElement &gt;" name="DGtal::CPredicate&lt; T, TElement &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CUnaryFunctor.html" title="DGtal::CUnaryFunctor\l\&lt; T, TElement, bool \&gt;" alt="" coords="227,295,391,339"/>
-<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html. " alt="" coords="5,5,178,33"/>
-<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="88,97,261,124"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results. " alt="" coords="223,188,384,232"/>
-</map>

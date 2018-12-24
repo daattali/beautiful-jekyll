@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title="STL class. " alt="" coords="5,75,119,100"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1ImageContainerBySTLVector.html" title="DGtal::ImageContainerBySTLVector\l\&lt; TDomain, TValue \&gt;" alt="" coords="167,5,401,44"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1ImageContainerBySTLVector.html" title="DGtal::ImageContainerBySTLVector\l\&lt; Domain, Storage * \&gt;" alt="" coords="167,68,401,107"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1ImageContainerBySTLVector.html" title="DGtal::ImageContainerBySTLVector\l\&lt; Domain, Value \&gt;" alt="" coords="167,131,401,169"/>
-</map>

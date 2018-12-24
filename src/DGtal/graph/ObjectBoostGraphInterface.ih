@@ -1,0 +1,120 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ObjectBoostGraphInterface.ih
+ * @author Pablo Hernandez-Cerdan. Institute of Fundamental Sciences.
+ * Massey University. Palmerston North, New Zealand
+ *
+ * @date 2016/02/01
+ *
+ * Implementation of inline methods defined in ObjectBoostGraphInterface.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template < class TDigitalTopology, class TDigitalSet >
+inline
+std::pair<
+  typename boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::vertex_iterator,
+  typename boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::vertex_iterator
+  >
+boost::vertices( const DGtal::Object< TDigitalTopology, TDigitalSet > & obj )
+{
+  return std::make_pair( obj.begin(), obj.end() );
+}
+//-----------------------------------------------------------------------------
+template < class TDigitalTopology, class TDigitalSet >
+inline
+boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::edge_iterator::
+edge_iterator()
+  : myGraph( 0 )
+{}
+//-----------------------------------------------------------------------------
+template < class TDigitalTopology, class TDigitalSet >
+inline
+boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::edge_iterator::
+edge_iterator( const Adapted & graph,
+               const vertex_iterator & itB, const vertex_iterator & itE )
+  : myGraph( &graph ),
+    myVertexRange( itB, itE ),
+    myOutEdgeRange()
+{
+  if ( myVertexRange.first != myVertexRange.second )
+    {
+      myOutEdgeRange = boost::out_edges( *myVertexRange.first, *myGraph );
+    }
+}
+//-----------------------------------------------------------------------------
+template < class TDigitalTopology, class TDigitalSet >
+inline
+const typename boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::Edge &
+boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::edge_iterator::
+dereference() const
+{
+  ASSERT( myVertexRange.first != myVertexRange.second );
+  ASSERT( myOutEdgeRange.first != myOutEdgeRange.second );
+  return *( myOutEdgeRange.first );
+}
+//-----------------------------------------------------------------------------
+template < class TDigitalTopology, class TDigitalSet >
+inline
+bool
+boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::edge_iterator::
+equal( const edge_iterator & other ) const
+{
+  bool thisAtEnd = ( myVertexRange.first == myVertexRange.second );
+  bool otherAtEnd = ( other.myVertexRange.first == other.myVertexRange.second );
+  if ( thisAtEnd || otherAtEnd ) return thisAtEnd && otherAtEnd;
+  else
+    {
+      ASSERT( myOutEdgeRange.first != myOutEdgeRange.second );
+      ASSERT( other.myOutEdgeRange.first != other.myOutEdgeRange.second );
+      return *myOutEdgeRange.first == *other.myOutEdgeRange.first;
+    }
+}
+//-----------------------------------------------------------------------------
+template < class TDigitalTopology, class TDigitalSet >
+inline
+void
+boost::graph_traits< DGtal::Object< TDigitalTopology, TDigitalSet > >::edge_iterator::
+increment()
+{
+  ++myOutEdgeRange.first;
+  if ( myOutEdgeRange.first == myOutEdgeRange.second )
+    {
+      ++myVertexRange.first;
+      if ( myVertexRange.first != myVertexRange.second )
+        myOutEdgeRange = boost::out_edges( *myVertexRange.first, *myGraph );
+    }
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

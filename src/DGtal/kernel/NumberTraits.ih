@@ -1,0 +1,131 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file NumberTraits.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/03
+ *
+ * Implementation of inline methods defined in NumberTraits.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <limits>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+/**
+ * @return the zero of this integer.
+ */
+template <typename T>
+inline
+typename DGtal::NumberTraits<T>::ReturnType
+DGtal::NumberTraits<T>::zero()
+{
+#if (defined(WIN32))
+    return 0;
+#else
+    return ZERO;
+#endif
+}
+
+/**
+ * @return the one of this integer.
+ */
+template <typename T>
+inline
+typename DGtal::NumberTraits<T>::ReturnType
+DGtal::NumberTraits<T>::one()
+{
+#if (defined(WIN32))
+    return 1;
+#else
+    return ONE;
+#endif
+}
+
+/**
+ * @return the minimum possible value for this type of integer or
+ * ONE if not bounded or unknown.
+ */
+template <typename T>
+inline
+typename DGtal::NumberTraits<T>::ReturnType
+DGtal::NumberTraits<T>::min()
+{
+    return ONE;
+}
+
+/**
+ * @return the maximum possible value for this type of integer or
+ * ZERO if not bounded or unknown.
+ */
+template <typename T>
+inline
+typename DGtal::NumberTraits<T>::ReturnType
+DGtal::NumberTraits<T>::max()
+{
+    return ZERO;
+}
+
+/**
+ * @return the number of significant digits for this integer type,
+ * or 0 if unbounded or unknown.
+ */
+template <typename T>
+inline
+unsigned int
+DGtal::NumberTraits<T>::digits()
+{
+    return 0;
+}
+
+/**
+ * @return 1 if bounded, 0, if not bounded, 2 if unknown.
+ */
+template <typename T>
+inline
+DGtal::BoundEnum
+DGtal::NumberTraits<T>::isBounded()
+{
+    return BOUND_UNKNOWN;
+}
+
+/**
+ * @return 1 if unsigned, 0, if signed, 2 if unknown.
+ */
+template <typename T>
+inline
+DGtal::SignEnum
+DGtal::NumberTraits<T>::isSigned()
+{
+    return SIGN_UNKNOWN;
+}
+
+///////////////////////////////////////////////////////////////////////////////

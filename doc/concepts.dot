@@ -1,0 +1,131 @@
+### Dot graph of DGtal concepts
+# D. Coeurjolly
+
+
+ 
+digraph G {
+  rankdir=BT;
+  
+  subgraph cluster_0 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CUnsignedInteger -> CInteger;
+    CEuclideanRing -> CCommutativeRing ;
+    CSignedInteger ->  CInteger;
+
+    CSpace;
+    CSpace -> CInteger [label="use",style=dashed];
+    CSpace -> CUnsignedInteger[label="use",style=dashed];
+
+    CPointFunctor;
+    CPointPredicate;
+
+    CDomain;
+	
+    CDigitalSet;
+    label = "Kernel";
+  }
+
+  subgraph cluster_1 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CSinglePassRange -> CConstSinglePassRange;
+    CConstBidirectionalRange -> CConstSinglePassRange;
+    CBidirectionalRange -> CConstBidirectionalRange;
+    CBidirectionalRange -> CSinglePassRange;
+
+    CLabel;
+    CQuantity -> CLabel;
+    label = "Base";
+  }
+
+  subgraph cluster_2 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CConstImage -> CPointFunctor;
+    CImage -> CConstImage; 
+
+    label="Images";
+  }
+	
+  subgraph cluster_3 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+    CDigitalBoundedShape;
+    CDigitalOrientedShape;
+    CEuclideanBoundedShape;
+    CEuclideanOrientedShape;
+    CImplicitFunctionDiff1 -> CImplicitFunction;
+	  
+    label="Shapes";
+  }
+	
+  subgraph cluster_4 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+          
+    CDigitalSurfaceContainer -> boost_CopyConstructible;
+    CDigitalSurfaceTracker -> boost_CopyConstructible;
+    CDomainAdjacency -> CAdjacency ; 
+    CUndirectedSimpleGraph -> CSinglePassConstRange;
+    CUndirectedSimpleGraph -> CUndirectedSimpleLocalGraph;
+
+    label="Topology";
+  }
+  subgraph cluster_5 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+               
+    CForwardSegmentComputer -> CTrivialSegmentComputer -> CSegment; 
+    CBidirectionalSegmentComputer -> CForwardSegmentComputer; 
+    CDynamicSegmentComputer-> CForwardSegmentComputer;
+    CDynamicBidirectionalSegmentComputer->          CDynamicSegmentComputer;
+    CDynamicBidirectionalSegmentComputer->          CBidirectionalSegmentComputer;
+
+    CSeparableMetric;
+    label="Geometry";
+  }
+	
+    CPointFunctor -> CLabel [label="use",style=dashed];
+    CConstImage -> CDomain [label="use",style=dashed];
+    CDomain -> CSpace [label="use",style=dashed];
+
+
+
+  CConstSinglePassRange -> boost_SinglePassIteratorConcept [label="use",style=dashed];
+  CSinglePassRange -> boost_SinglePassIteratorConcept [label="use",style=dashed] ;
+ 
+  CDigitalSet -> boost_CopyConstructible;
+  CSegment ->  boost_CopyConstructible ;
+
+  CLabel -> boost_DefaultConstructible;
+  CSegment ->boost_DefaultConstructible;
+
+  CDigitalSet -> boost_Assignable ;
+  CLabel -> boost_Assignable;
+  CInteger -> boost_Assignable;
+  CSegment -> boost_Assignable;
+  CCommutativeRing -> boost_Assignable;
+  CPointFunctor -> boost_Assignable;
+  CPointPredicate -> boost_Assignable;
+  
+  boost_BirectionalIterator;
+
+  CQuantity -> boost_LessThanComparable;
+
+  CInteger-> boost_EqualityComparable;
+  CLabel-> boost_EqualityComparable;
+  CSegment-> boost_EqualityComparable;
+  CCommutativeRing-> boost_EqualityComparable;
+  CCommutativeRing-> boost_EqualityComparable;
+  CInteger-> boost_EqualityComparable;
+}

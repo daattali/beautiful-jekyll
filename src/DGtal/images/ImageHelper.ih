@@ -1,0 +1,360 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImageHelper.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/02/15
+ *
+ * Implementation of inline methods defined in ImageHelper.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <vector>
+#include <iostream>
+#include "DGtal/kernel/PointVector.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+//------------------------------------------------------------------------------
+template<typename I, typename O, typename P>
+inline
+void 
+DGtal::setFromPointsRangeAndPredicate(const I& itb, const I& ite, const O& ito, const P& aPred)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CPointPredicate<P> )); 
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<I> ));
+  BOOST_CONCEPT_ASSERT(( boost::OutputIterator<O,typename P::Point> ));
+
+  functors::NotPointPredicate<P> nPred( aPred ); 
+  std::remove_copy_if(itb, ite, ito, nPred); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I, typename O, typename F>
+inline
+void 
+DGtal::setFromPointsRangeAndFunctor(const I& itb, const I& ite, const O& ito, 
+				    const F& aFunctor, const typename F::Value& aThreshold)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CPointFunctor<F> )); 
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<I> ));
+  BOOST_CONCEPT_ASSERT(( boost::OutputIterator<O,typename F::Point> ));
+
+  typedef functors::Thresholder<typename F::Value,false,false> T; 
+  T t( aThreshold ); 
+  functors::Composer<F, T, bool> aPred(aFunctor, t); 
+  std::remove_copy_if(itb, ite, ito, aPred); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I, typename O>
+inline
+void 
+DGtal::setFromImage(const I& aImg, const O& ito, const typename I::Value& aThreshold)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CConstImage<I> )); 
+
+  typename I::Domain d = aImg.domain(); 
+  setFromPointsRangeAndFunctor(d.begin(), d.end(), ito, aImg, aThreshold); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I, typename O>
+inline
+void 
+DGtal::setFromImage(const I& aImg, const O& ito, 
+		    const typename I::Value& low, 
+		    const typename I::Value& up)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CConstImage<I> )); 
+  ASSERT( low < up ); 
+
+  //domain
+  typename I::Domain d = aImg.domain(); 
+  //predicate from two thresholders and an image
+  typedef functors::Thresholder<typename I::Value,true,false> T1; 
+  T1 t1( low ); 
+  typedef functors::Thresholder<typename I::Value,false,false> T2; 
+  T2 t2( up ); 
+  typedef functors::PredicateCombiner< T1, T2, functors::OrBoolFct2 > P; 
+  P p( t1, t2, functors::OrBoolFct2() ); 
+  functors::Composer<I, P, bool> aPred(aImg, p); 
+  //call
+  std::remove_copy_if(d.begin(), d.end(), ito, aPred); 
+}
+
+//------------------------------------------------------------------------------
+template<typename It, typename Im>
+inline
+void 
+DGtal::imageFromRangeAndValue(const It& itb, const It& ite, Im& aImg, 
+			      const typename Im::Value& aValue)
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<It> ));
+  BOOST_CONCEPT_ASSERT(( concepts::CImage<Im> )); 
+
+  typename Im::Domain d = aImg.domain(); 
+  for (It it = itb; it != ite; ++it)
+    {
+      if (d.isInside( *it )) 
+	aImg.setValue( *it, aValue ); 
+    }
+}
+
+//------------------------------------------------------------------------------
+template<typename R, typename I>
+inline
+void 
+DGtal::imageFromRangeAndValue(const R& aRange, I& aImg, 
+			      const typename I::Value& aValue)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CConstSinglePassRange<R> ));
+  BOOST_CONCEPT_ASSERT(( concepts::CImage<I> )); 
+
+  imageFromRangeAndValue( aRange.begin(), aRange.end(), aImg, aValue); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I, typename F>
+inline
+void 
+DGtal::imageFromFunctor(I& aImg, const F& aFun)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CImage<I> )); 
+  BOOST_CONCEPT_ASSERT(( concepts::CPointFunctor<F> ));
+
+  typename I::Domain d = aImg.domain();
+
+  std::transform(d.begin(), d.end(), aImg.range().outputIterator(), aFun ); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I1, typename I2>
+inline
+void 
+DGtal::imageFromImage(I1& aImg1, const I2& aImg2)
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CImage<I1> )); 
+  BOOST_CONCEPT_ASSERT(( concepts::CConstImage<I2> )); 
+
+  typename I2::ConstRange r = aImg2.constRange(); 
+  std::copy( r.begin(), r.end(), aImg1.range().outputIterator() ); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I, typename S, typename D, typename V>
+struct InsertAndSetValue
+{ 
+  static bool implementation(I& aImg, S& aSet, 
+			     const typename D::Point& aPoint, 
+			     const V& aValue)
+  {
+    // std::pair<typename S::Iterator, bool> res 
+    //   = aSet.insert( aPoint ); 
+    // aImg.setValue( aPoint, aValue ); 
+    // return res.second;  
+
+    bool found = true; 
+    if ( aSet.find( aPoint ) == aSet.end() )
+      { //if not found
+	found = false; 
+	aSet.insert( aPoint );
+	aImg.setValue( aPoint, aValue ); 
+      }      
+    return !found; 
+  } 
+}; 
+//------------------------------------------------------------------------------
+//Partial specialization
+template<typename D, typename V>
+struct InsertAndSetValue<
+  DGtal::ImageContainerBySTLMap<D,V>, 
+  DGtal::DigitalSetFromMap<DGtal::ImageContainerBySTLMap<D,V> >,
+  D, V >
+{ 
+  static bool implementation
+  (DGtal::ImageContainerBySTLMap<D,V>& aImg, 
+   DGtal::DigitalSetFromMap<DGtal::ImageContainerBySTLMap<D,V> >& /*aSet*/, 
+   const typename D::Point& aPoint, 
+   const V& aValue)
+  {
+    typedef typename D::Point P; 
+    typedef typename DGtal::ImageContainerBySTLMap<D,V>::iterator Iterator; 
+
+    std::pair<P, V> 
+      pair( aPoint, aValue );  
+    std::pair<Iterator, bool> res 
+      = aImg.insert( pair ); 
+    return res.second;  
+  } 
+}; 
+
+//------------------------------------------------------------------------------
+template<typename I, typename S>
+inline
+bool
+DGtal::insertAndSetValue(I& aImg, S& aSet, 
+			 const typename I::Point& aPoint, 
+			 const typename I::Value& aValue ) 
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CImage<I> )); 
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet<S> )); 
+  BOOST_STATIC_ASSERT(( boost::is_same< typename I::Point, typename S::Point >::value ));
+
+  typedef typename I::Domain D; 
+  typedef typename I::Value V; 
+  return InsertAndSetValue<I,S,D,V>::implementation(aImg, aSet, aPoint, aValue); 
+}
+
+//------------------------------------------------------------------------------
+template<typename I, typename S, typename D, typename V>
+struct InsertAndAlwaysSetValue
+{ 
+  static bool implementation(I& aImg, S& aSet, 
+			     const typename D::Point& aPoint, 
+			     const V& aValue)
+  {
+    bool found = false; 
+    if ( aSet.find( aPoint ) != aSet.end() )
+      found = true;       
+    //always set value
+    aSet.insert( aPoint );
+    aImg.setValue( aPoint, aValue ); 
+    return !found; 
+  } 
+}; 
+//------------------------------------------------------------------------------
+//Partial specialization
+template<typename D, typename V>
+struct InsertAndAlwaysSetValue<
+  DGtal::ImageContainerBySTLMap<D,V>, 
+  DGtal::DigitalSetFromMap<DGtal::ImageContainerBySTLMap<D,V> >,
+  D, V >
+{ 
+  static bool implementation
+  (DGtal::ImageContainerBySTLMap<D,V>& aImg, 
+   DGtal::DigitalSetFromMap<DGtal::ImageContainerBySTLMap<D,V> >& /*aSet*/, 
+   const typename D::Point& aPoint, 
+   const V& aValue)
+  {
+    typedef typename D::Point P; 
+    typedef typename DGtal::ImageContainerBySTLMap<D,V>::iterator Iterator; 
+
+    std::pair<P, V> 
+      pair( aPoint, aValue );  
+    std::pair<Iterator, bool> res 
+      = aImg.insert( pair );
+    bool flag = res.second; 
+    if (flag == false) //set value even in this case
+      res.first->second = aValue;
+    return flag; 
+  } 
+}; 
+
+//------------------------------------------------------------------------------
+template<typename I, typename S>
+inline
+bool
+DGtal::insertAndAlwaysSetValue(I& aImg, S& aSet, 
+			       const typename I::Point& aPoint, 
+			       const typename I::Value& aValue ) 
+{
+  
+  BOOST_CONCEPT_ASSERT(( concepts::CImage<I> )); 
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet<S> )); 
+  BOOST_STATIC_ASSERT(( boost::is_same< typename I::Point, typename S::Point >::value ));
+
+  typedef typename I::Domain D; 
+  typedef typename I::Value V; 
+  return InsertAndAlwaysSetValue<I,S,D,V>::implementation(aImg, aSet, aPoint, aValue); 
+}
+
+
+//------------------------------------------------------------------------------
+template<typename I, typename S, typename D, typename V>
+struct FindAndGetValue
+{ 
+  static bool implementation(const I& aImg, const S& aSet, 
+			     const typename D::Point& aPoint, 
+			     V& aValue)
+  {
+    if ( aSet.find( aPoint ) != aSet.end() )
+      { 
+	aValue = aImg( aPoint );
+	return true; 
+      }      
+    else return false; 
+  } 
+}; 
+//------------------------------------------------------------------------------
+//Partial specialization
+template<typename D, typename V>
+struct FindAndGetValue<
+  DGtal::ImageContainerBySTLMap<D,V>, 
+  DGtal::DigitalSetFromMap<DGtal::ImageContainerBySTLMap<D,V> >,
+  D, V >
+{ 
+  static bool implementation
+  (const DGtal::ImageContainerBySTLMap<D,V>& aImg, 
+   const DGtal::DigitalSetFromMap<DGtal::ImageContainerBySTLMap<D,V> >& /*aSet*/, 
+   const typename D::Point& aPoint, 
+   V& aValue)
+  {
+    typedef typename DGtal::ImageContainerBySTLMap<D,V>::const_iterator ConstIterator; 
+
+    ConstIterator it = aImg.find( aPoint ); 
+    if ( it != aImg.end() )
+      {
+	aValue = it->second; 
+	return true; 
+      }
+    else return false; 
+  } 
+}; 
+
+//------------------------------------------------------------------------------
+template<typename I, typename S>
+inline
+bool
+DGtal::findAndGetValue(const I& aImg, const S& aSet, 
+		       const typename I::Point& aPoint, 
+		       typename I::Value& aValue ) 
+{
+  
+  BOOST_CONCEPT_ASSERT(( concepts::CConstImage<I> )); 
+  BOOST_CONCEPT_ASSERT(( concepts::CDigitalSet<S> )); 
+  BOOST_STATIC_ASSERT(( boost::is_same< typename I::Point, typename S::Point >::value ));
+
+  typedef typename I::Domain D; 
+  typedef typename I::Value V; 
+  return FindAndGetValue<I,S,D,V>::implementation(aImg, aSet, aPoint, aValue); 
+}
+
+
+
+
+
+
+
+

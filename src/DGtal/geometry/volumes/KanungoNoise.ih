@@ -1,0 +1,144 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file KanungoNoise.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/03/06
+ *
+ * Implementation of inline methods defined in KanungoNoise.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <random>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// -----------------------------------------------------
+template <typename TP, typename TD, typename TS>
+inline
+DGtal::KanungoNoise<TP,TD, TS>::KanungoNoise(ConstAlias<TP> aPredicate, ConstAlias<Domain> aDomain, const double alpha):
+  myPredicate(aPredicate), myDomain(aDomain), myAlpha(alpha)
+{
+  std::mt19937 rng;
+  std::uniform_real_distribution<double> dis(0.0, 1.0);
+  
+  ASSERT(alpha>0 && alpha < 1);
+  double p;
+  
+  //We copy the point set
+  mySet = new  DigitalSet( new Domain( aDomain ) );
+
+  typedef ExactPredicateLpSeparableMetric< typename Domain::Space, 2> L2;
+  typedef DistanceTransformation< typename Domain::Space, PointPredicate, L2> DTPredicate;
+  typedef DistanceTransformation< typename Domain::Space, functors::NotPointPredicate<PointPredicate> , L2> DTNotPredicate;
+
+  //DT computation for l2metric
+  L2 l2;
+  functors::NotPointPredicate<PointPredicate> negPred(myPredicate);
+ 
+  DTPredicate DTin(myDomain, myPredicate, l2);
+  DTNotPredicate DTout(myDomain, negPred, l2);
+
+  for(typename Domain::ConstIterator it = myDomain.begin(), itend = myDomain.end();
+      it != itend; ++it)
+  {
+    p = dis(rng);
+    if ( myPredicate(*it) )
+    {
+      if ( p >= std::pow( alpha, 1.0+DTin(*it) ) )
+       mySet->insertNew( *it );
+    }
+    else
+    {
+      if ( p < std::pow( alpha, 1.0+DTout(*it) ) )
+       mySet->insertNew( *it );
+    }
+  }
+}
+// -----------------------------------------------------
+template <typename TP, typename TD, typename TS>
+inline
+DGtal::KanungoNoise<TP,TD, TS>::~KanungoNoise()
+{
+  delete mySet;
+}
+// -----------------------------------------------------
+template <typename TP, typename TD, typename TS>
+inline
+DGtal::KanungoNoise<TP,TD, TS> &
+DGtal::KanungoNoise<TP,TD, TS>::operator=( const KanungoNoise<TP,TD,TS> &other)
+{
+  ASSERT( ( myDomain.lowerBound() <= other.myDomain.lowerBound() )
+    && ( myDomain.upperBound() >= other.myDomain.upperBound() )
+    && "This domain should include the domain of the other set in case of assignment." );
+
+  //We do not copy the predicate
+
+  myAlpha = other.myAlpha;
+  mySet = other.mySet;
+  
+  return *this;
+}
+// ---------------------------------------------  --------
+template <typename TP, typename TD, typename TS>
+inline
+bool
+DGtal::KanungoNoise<TP,TD, TS>::operator()(const Point &aPoint) const
+{
+  return mySet->operator()(aPoint);
+}
+// -----------------------------------------------------
+template <typename TP, typename TD, typename TS>
+inline
+void
+DGtal::KanungoNoise<TP,TD, TS>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[KanungoNoise] Alpha="<<myAlpha<<" Set  "<< *mySet;
+}
+// -----------------------------------------------------
+template <typename TP, typename TD, typename TS>
+inline
+bool
+DGtal::KanungoNoise<TP,TD, TS>::isValid() const
+{
+    return mySet->isValid();
+}
+// -----------------------------------------------------
+template <typename TP, typename TD, typename TS>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const KanungoNoise<TP,TD, TS> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

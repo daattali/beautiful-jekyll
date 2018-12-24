@@ -1,0 +1,273 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SimpleLinearRegression.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2013/10/25
+ *
+ * Implementation of inline methods defined in Histogram.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iostream>
+#include <boost/math/distributions/students_t.hpp>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+/**
+ * Adds the samples (y,x). Does not compute immediately the
+ * regression. See 'computeRegression' for computing the
+ * regression with the current samples.
+ *
+ * @param begin_x an iterator on the first x-data
+ * @param end_x an iterator after the last x-data
+ * @param begin_y an iterator on the first y-data
+ *
+ * @see computeRegression
+ */
+template <class XIterator, class YIterator>
+inline
+void
+DGtal::SimpleLinearRegression::addSamples
+( XIterator begin_x, XIterator end_x, YIterator begin_y )
+{
+  for ( ; begin_x != end_x; ++begin_x, ++begin_y )
+    {
+      addSample( *begin_x, *begin_y );
+    }
+}
+
+
+inline
+void
+DGtal::SimpleLinearRegression::addSample(const double x, const double y )
+{
+  myX.push_back( x );
+  myY.push_back( y );
+  mySumX += x;
+  mySumX2 += x*x;
+  mySumY += y;
+  mySumXY += x*y;
+  ++myN;
+ }
+
+/**
+ * @return the slope of the linear regression (B1 in Y=B0+B1*X).
+ */
+inline
+double
+DGtal::SimpleLinearRegression::slope() const
+{
+  return myB[ 1 ];
+}
+
+/**
+ * @return the intercept of the linear regression (B0 in Y=B0+B1*X).
+ */
+inline
+double
+DGtal::SimpleLinearRegression::intercept() const
+{
+  return myB[ 0 ];
+}
+
+/**
+ * Given a new x, predicts its y (hat{y}) according to the linear
+ * regression model.
+ *
+ * @param x any value.
+ * @return the estimated y value, ie hat{y} = B0 + B1*x.
+ */
+inline
+double
+DGtal::SimpleLinearRegression::estimateY( double x ) const
+{
+  return x * myB[ 1 ] + myB[ 0 ];
+}
+
+/**
+ * @return the current estimation of the variance of the Gaussian
+
+ * perturbation (i.e. variance of U).
+ */
+inline
+double
+DGtal::SimpleLinearRegression::estimateVariance() const
+{
+  ASSERT( ( myN >= 3 ) && "[DGtal::SimpleLinearRegression::estimateVariance] need at least 3 datas to estimate variance.");
+  return myNormU2 / ( myN - 2 );
+}
+
+/**
+ * Destructor.
+ */
+DGtal::SimpleLinearRegression::~SimpleLinearRegression()
+{
+}
+
+/**
+ * Constructor.
+ * The object is invalid.
+ *
+ * @param eps_zero the value below which the absolute value of the
+ * determinant is considered null.
+ */
+DGtal::SimpleLinearRegression::SimpleLinearRegression( double eps_zero )
+  : myEpsilonZero( eps_zero ), myN( 0 )
+{
+  clear();
+}
+
+/**
+ * Clear all datas.
+ */
+inline
+void
+DGtal::SimpleLinearRegression::clear()
+{
+  myN = 0;
+  mySumX = 0.0;
+  mySumX2 = 0.0;
+  mySumY = 0.0;
+  mySumXY = 0.0;
+  myY.clear();
+  myX.clear();
+  myB[ 0 ] = 0.0;
+  myB[ 1 ] = 0.0;
+  myD = 0.0;
+}
+
+/**
+ * Computes the regression of the current parameters.
+ *
+ * @return 'true' if the regression was valid (non null number of
+ * samples, rank of X is 2), 'false' otherwise.
+ */
+inline
+bool
+DGtal::SimpleLinearRegression::computeRegression()
+{
+  if ( myN <= 2 ) return false;
+  myD = myN * mySumX2 - ( mySumX * mySumX );
+
+  if ( ( myD > -myEpsilonZero ) && ( myD < myEpsilonZero ) )
+    {
+      myD = 0.0;
+      return false;
+    }
+  myB[ 1 ] = ( -mySumX * mySumY + myN * mySumXY ) / myD;
+  myB[ 0 ] = mySumY/(double)myN - myB[ 1 ]*mySumX/(double)myN;
+  myU.clear();
+  myNormU2 = 0.0;
+  for ( unsigned int i = 0; i < myN; ++i )
+    {
+      double u = myY[ i ] - myB[ 0 ] - myB[ 1 ] * myX[ i ];
+      myU.push_back( u );
+      myNormU2 += u * u;
+    }
+  
+  return true;
+}
+
+
+
+/**
+ * Given a test confidence value (1-[a]), return the expected interval
+ * of value for Y, given a new [x], so that the model is still
+ * linear. One may thus check if a new pair (y,x) is still in the
+ * current linear model or not.
+ *
+ * @param x any x value.
+ *
+ * @param a the expected confidence value for the test (a=0.05
+ * means 95% of confidence).
+ *
+ * @return the expected interval [min_y, max_y] such that any
+ * value y within confirms the current linear model.
+ */
+inline
+std::pair<double,double>
+DGtal::SimpleLinearRegression::trustIntervalForY( const double x,
+                                                  const double a ) const
+{
+  double t = ( mySumX2 - 2.0 * x * mySumX + myN * x * x ) / myD;
+  double c = sqrt( estimateVariance() * ( 1 + t ) );
+  boost::math::students_t_distribution<double> T( myN - 2 );
+  double q = boost::math::quantile( T, 1.0 - a/2.0 );
+  return std::make_pair( estimateY( x ) - q*c, estimateY( x ) + q*c );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param that_stream the output stream where the object is written.
+ */
+inline
+void
+DGtal::SimpleLinearRegression::selfDisplay( std::ostream& that_stream ) const
+{
+  that_stream << "[SimpleLinearRegression]  Number of samples="<< myN;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+bool
+DGtal::SimpleLinearRegression::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'SimpleLinearRegression'.
+ * @param that_stream the output stream where the object is written.
+ * @param that_object_to_display the object of class 'SimpleLinearRegression' to write.
+ * @return the output stream after the writing.
+ */
+std::ostream&
+DGtal::operator<<( std::ostream & that_stream,
+		 const SimpleLinearRegression & that_object_to_display )
+{
+  that_object_to_display.selfDisplay( that_stream );
+  return that_stream;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

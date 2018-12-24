@@ -1,0 +1,114 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file NeighborhoodConfigurations.ih
+ *
+ * @author Pablo Hernandez-Cerdan. Institute of Fundamental Sciences.
+ * Massey University. Palmerston North, New Zealand
+ *
+ * @date 2018/01/01
+ *
+ * Implementation of header NeighborhoodConfigurations.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+#include <fstream>
+#include "DGtal/kernel/SpaceND.h"
+#include "DGtal/kernel/domains/HyperRectDomain.h"
+// zlib + boost for reading compressed tables
+#include <boost/iostreams/filtering_streambuf.hpp>
+#include <boost/iostreams/copy.hpp>
+#include <boost/iostreams/filter/zlib.hpp>
+namespace DGtal{
+  namespace functions {
+/*---------------------------------------------------------------------*/
+
+  DGtal::CountedPtr< boost::dynamic_bitset<> >
+  loadTable(const std::string &input_filename,
+            const unsigned int known_size,
+            const bool compressed)
+  {
+    using ConfigMap = boost::dynamic_bitset<> ;
+    CountedPtr<ConfigMap> table(new ConfigMap(known_size));
+    try {
+      std::ifstream in_file(input_filename);
+      if (compressed) {
+        namespace io = boost::iostreams ;
+        io::filtering_streambuf<io::input> filter;
+        filter.push(io::zlib_decompressor());
+        filter.push(in_file);
+        std::stringstream compressed_stream;
+        io::copy(filter,compressed_stream);
+        compressed_stream >> *table ;
+      } else {
+        in_file >> *table ;
+      }
+      in_file.close();
+    } catch(std::exception &e) {
+      throw std::runtime_error("loadTable error in: " + input_filename + " with exception: " +  e.what());
+    }
+
+    return table ;
+  }
+
+  template<unsigned int N>
+  inline
+  DGtal::CountedPtr< boost::dynamic_bitset<> >
+  loadTable(const std::string &input_filename, const bool compressed)
+  {
+    if (N == 3) // Default
+      return loadTable(input_filename, 67108864, compressed);
+    if (N == 2)
+      return loadTable(input_filename, 256, compressed);
+    throw std::domain_error("loadTable<N> error, template parameter N = "
+        + std::to_string(N) + " is invalid (use N = 2 or N = 3)");
+
+  }
+
+/*---------------------------------------------------------------------*/
+
+  template<typename TPoint>
+  inline
+  DGtal::CountedPtr<
+  std::unordered_map<TPoint, NeighborhoodConfiguration > >
+  mapZeroPointNeighborhoodToConfigurationMask()
+  {
+    using Map = std::unordered_map<TPoint, NeighborhoodConfiguration> ;
+    NeighborhoodConfiguration mask = 1 ;
+    CountedPtr<Map> mapPtr(new Map);
+    Map& amap  = *mapPtr;
+    auto p1 = TPoint::diagonal(-1);
+    auto p2 = TPoint::diagonal(1);
+    auto center = TPoint::diagonal(0);
+    // HyperRect Domain with lexicograpicOrder ensures same order.
+    using Space = SpaceND< TPoint::dimension , DGtal::int32_t>;
+    using Domain = HyperRectDomain< Space >;
+    const Domain domain(p1, p2);
+    for ( auto it = domain.begin(), itE = domain.end() ;
+        it!=itE ; ++it)
+    {
+      if (*it == center ) continue;
+      amap[*it] = mask;
+      mask <<= 1 ;
+    }
+
+    return mapPtr;
+  }
+
+  } // namespace functions
+} // namespace DGtal

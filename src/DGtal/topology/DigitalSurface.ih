@@ -1,0 +1,928 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSurface.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2011/09/01
+ *
+ * Implementation of inline methods defined in DigitalSurface.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <map>
+#include "DGtal/graph/CVertexPredicate.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::~DigitalSurface()
+{
+  if ( myTracker != 0 ) delete myTracker;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::DigitalSurface
+( const DigitalSurface & other )
+  : myContainer( other.myContainer ),
+    myTracker( new DigitalSurfaceTracker( *other.myTracker ) ),
+    myUmbrellaComputer( other.myUmbrellaComputer )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::DigitalSurface
+( const TDigitalSurfaceContainer & aContainer )
+  : myContainer( new DigitalSurfaceContainer( aContainer ) )
+{
+  if ( ! myContainer->empty() )
+    {
+      Surfel s = *( myContainer->begin() );
+      myTracker = myContainer->newTracker( s ); 
+      myUmbrellaComputer.init( *myTracker, 0, false, 1 );
+    }
+  else 
+    myTracker = 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::DigitalSurface
+( TDigitalSurfaceContainer* containerPtr )
+  : myContainer( containerPtr )
+{
+  if ( ! myContainer->empty() )
+    {
+      Surfel s = *( myContainer->begin() );
+      myTracker = myContainer->newTracker( s );
+      myUmbrellaComputer.init( *myTracker, 0, false, 1 );
+    }
+  else 
+    myTracker = 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+DGtal::DigitalSurface<TDigitalSurfaceContainer> &
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::operator=
+( const DigitalSurface & other )
+{
+  if ( this != &other )
+    {
+      myContainer = other.myContainer;
+      if ( myTracker != 0 ) delete myTracker;
+      myTracker = new DigitalSurfaceTracker( *other.myTracker );
+      myUmbrellaComputer = other.myUmbrellaComputer;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+const TDigitalSurfaceContainer &
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::container() const
+{
+  return *myContainer;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+TDigitalSurfaceContainer &
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::container()
+{
+  return *myContainer;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::ConstIterator
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::begin() const
+{
+  return myContainer->begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::ConstIterator
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::end() const
+{
+  return myContainer->end();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Size
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::size() const
+{
+  return myContainer->nbSurfels();
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Size
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::bestCapacity() const
+{
+  return KSpace::dimension*2 - 2;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Size
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::degree
+( const Vertex & v ) const
+{
+  Size d = 0;
+  Vertex s;
+  myTracker->move( v );
+  for ( typename KSpace::DirIterator q = container().space().sDirs( v );
+        q != 0; ++q )
+    {
+      if ( myTracker->adjacent( s, *q, true ) )
+        ++d;
+      if ( myTracker->adjacent( s, *q, false ) )
+        ++d;
+    }
+  return d;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+template <typename OutputIterator>
+inline
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+writeNeighbors( OutputIterator & it,
+                const Vertex & v ) const
+{
+  Vertex s;
+  myTracker->move( v );
+  for ( typename KSpace::DirIterator q = container().space().sDirs( v );
+        q != 0; ++q )
+    {
+      if ( myTracker->adjacent( s, *q, true ) )
+        *it++ = s;
+      if ( myTracker->adjacent( s, *q, false ) )
+        *it++ = s;
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+template <typename OutputIterator, typename VertexPredicate>
+inline
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+writeNeighbors( OutputIterator & it,
+                const Vertex & v,
+                const VertexPredicate & pred ) const
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CVertexPredicate< VertexPredicate > ));
+  Vertex s;
+  myTracker->move( v );
+  for ( typename KSpace::DirIterator q = container().space().sDirs( v );
+        q != 0; ++q )
+    {
+      if ( myTracker->adjacent( s, *q, true ) )
+        {
+          if ( pred( s ) ) *it++ = s;
+        }
+      if ( myTracker->adjacent( s, *q, false ) )
+        {
+          if ( pred( s ) ) *it++ = s;
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::ArcRange
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+outArcs( const Vertex & v ) const
+{
+  ArcRange arcs;
+  Vertex s;
+  myTracker->move( v );
+  for ( typename KSpace::DirIterator q = container().space().sDirs( v );
+        q != 0; ++q )
+    {
+      Dimension i = *q;
+      if ( myTracker->adjacent( s, i, true ) )
+        arcs.push_back( Arc( v, i, true ) );
+      if ( myTracker->adjacent( s, i, false ) )
+        arcs.push_back( Arc( v, i, false ) );
+    }
+  return arcs;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::ArcRange
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+inArcs( const Vertex & v ) const
+{
+  ArcRange arcs;
+  Vertex s;
+  myTracker->move( v );
+  for ( typename KSpace::DirIterator q = container().space().sDirs( v );
+        q != 0; ++q )
+    {
+      Dimension i = *q;
+      if ( myTracker->adjacent( s, i, true ) )
+        arcs.push_back( opposite( Arc( v, i, true ) ) );
+      if ( myTracker->adjacent( s, i, false ) )
+        arcs.push_back( opposite( Arc( v, i, false ) ) );
+    }
+  return arcs;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::FaceRange
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+facesAroundVertex( const Vertex & v ) const
+{
+  typedef typename ArcRange::const_iterator ArcRangeConstIterator;
+  // std::cerr << "  - facesAroundVertex(" << v << ")" << std::endl;
+  ArcRange arcs = outArcs( v );
+  FaceRange faces;
+  std::back_insert_iterator<FaceRange> output_it = std::back_inserter( faces );
+  for ( ArcRangeConstIterator it = arcs.begin(), it_end = arcs.end();
+	it != it_end; ++it )
+    {
+      // std::cerr << "     + arc " << tail( *it )
+      //           << " -> " << head( *it ) << std::endl;
+      FaceRange faces_of_arc = facesAroundArc( *it );
+      output_it = 
+	std::copy( faces_of_arc.begin(), faces_of_arc.end(), output_it );
+    }
+  return faces;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Vertex
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+head( const Arc & a ) const
+{
+  Vertex s;
+  myTracker->move( a.base );
+  uint8_t code = myTracker->adjacent( s, a.k, a.epsilon );
+  ASSERT( code != 0 ); boost::ignore_unused_variable_warning(code);
+  return s;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Vertex
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+tail( const Arc & a ) const
+{
+  return a.base;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Arc
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+opposite( const Arc & a ) const
+{
+  Vertex s;
+  myTracker->move( a.base );
+  uint8_t code = myTracker->adjacent( s, a.k, a.epsilon );
+  ASSERT( code != 0 );
+  if ( code == 2 ) return Arc( s, a.k, ! a.epsilon );
+  else 
+    {
+      bool orientation = container().space().sDirect( a.base, a.k );
+      unsigned int i = myTracker->orthDir();
+      return Arc( s, i, 
+		  ( orientation == a.epsilon )
+		  != container().space().sDirect( s, i ) );
+    } 
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Arc
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+arc( const Vertex & t, const Vertex & h ) const
+{
+  const KSpace & K = container().space();
+  Point p1 = K.sKCoords( t );
+  Point p2 = K.sKCoords( h );
+  p2 -= p1;
+  for ( typename KSpace::DirIterator q = K.sDirs( t );
+        q != 0; ++q )
+    {
+      Dimension i = *q;
+      if ( p2[ i ] != 0 ) return Arc( t, i, p2[ i ] > 0 );
+    }
+  ASSERT( false && "DGtal::DigitalSurface<TDigitalSurfaceContainer>::arc( tail, head ): tail and head are not adjacent." );
+  return Arc( t, 0, true );
+  // // JOL 2017/07/4: bad test.
+  // for ( typename KSpace::DirIterator q = K.sDirs( h );
+  //       q != 0; ++q )
+  //   {
+  //     Dimension i = *q;
+  //     if ( p1[ i ] != 0 ) return Arc( t, i, p1[ i ] > 0 );
+  //   }
+  // ASSERT( false && "DGtal::DigitalSurface<TDigitalSurfaceContainer>::arc( tail, head ): tail and head are not adjacent." );
+  // return Arc( t, 0, true );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::FaceRange
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+facesAroundArc( const Arc & a ) const
+{
+  FaceRange faces;
+  UmbrellaState state( a.base, a.k, a.epsilon, 0 );
+  myUmbrellaComputer.setState( state );
+  SCell sep = myUmbrellaComputer.separator();
+  // Faces are to be found along direction spanned by the separator.
+  for ( typename KSpace::DirIterator q = container().space().sDirs( sep );
+        q != 0; ++q )
+    {
+      state.j = *q;
+      faces.push_back( computeFace( state ) );
+    }
+  return faces;
+  
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::VertexRange
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+verticesAroundFace( const Face & f ) const
+{
+  VertexRange vertices;
+  myUmbrellaComputer.setState( f.state );
+  for ( unsigned int i = 0; i < f.nbVertices; ++i )
+    {
+      vertices.push_back( myUmbrellaComputer.surfel() );
+      myUmbrellaComputer.previous();
+    }
+  return vertices;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::FaceSet
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+allFaces() const
+{
+  FaceSet all_faces;
+  for ( ConstIterator it = begin(), it_end = end(); it != it_end; ++it )
+    {
+      FaceRange local_faces = facesAroundVertex( *it );
+      all_faces.insert( local_faces.begin(), local_faces.end() );
+    }
+  return all_faces;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::FaceSet
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+allClosedFaces() const
+{
+  FaceSet all_faces;
+  for ( ConstIterator it = begin(), it_end = end(); it != it_end; ++it )
+    {
+      FaceRange local_faces = facesAroundVertex( *it );
+      for ( typename FaceRange::const_iterator lit = local_faces.begin(),
+              lit_end = local_faces.end(); lit != lit_end; ++lit )
+        if ( lit->isClosed() )
+          all_faces.insert( *lit );
+    }
+  return all_faces;
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::FaceSet
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+allOpenFaces() const
+{
+  FaceSet all_faces;
+  for ( ConstIterator it = begin(), it_end = end(); it != it_end; ++it )
+    {
+      FaceRange local_faces = facesAroundVertex( *it );
+      for ( typename FaceRange::const_iterator lit = local_faces.begin(),
+              lit_end = local_faces.end(); lit != lit_end; ++lit )
+        if ( ! lit->isClosed() )
+          all_faces.insert( *lit );
+    }
+  return all_faces;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::Face
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+computeFace( UmbrellaState state ) const
+{
+  myUmbrellaComputer.setState( state );
+  Surfel start = state.surfel;
+  unsigned int nb = 0;
+  unsigned int code;
+  do
+    {
+      // std::cerr << "       + s/surf " 
+      //           << myUmbrellaComputer.state().surfel<< std::endl;
+      ++nb;
+      code = myUmbrellaComputer.previous();
+      if ( code == 0 ) break; // face is open
+      if ( myUmbrellaComputer.state() < state ) 
+        state = myUmbrellaComputer.state();
+    }
+  while ( myUmbrellaComputer.surfel() != start );
+  if ( code == 0 ) // open face
+    { // Going back to count the number of incident vertices.
+      nb = 0;
+      do 
+        {
+          // std::cerr << "       + c/surf "
+          //           << myUmbrellaComputer.state().surfel<< std::endl;
+          ++nb;
+          code = myUmbrellaComputer.next();
+        }
+      while ( code != 0 );
+      return Face( myUmbrellaComputer.state(), nb, false );
+    }
+  else             // closed face
+    return Face( state, nb, true );
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::SCell
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+separator( const Arc & a ) const
+{
+  return container().space().sIncident( a.base, a.k, a.epsilon );
+}
+//-----------------------------------------------------------------------------
+// template <typename TDigitalSurfaceContainer>
+// inline
+// typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::SCell
+// DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+// separator( const Face & f ) const
+// {
+//   return container().space().sIncident( f.state.surfel, f.state.k, 
+//                                         f.state.epsilon );
+// }
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+inline
+typename DGtal::DigitalSurface<TDigitalSurfaceContainer>::SCell
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+pivot( const Face & f ) const
+{
+  SCell sep = container().space().sIncident( f.state.surfel, f.state.k, 
+                                             f.state.epsilon );
+  return container().space().sDirectIncident( sep, f.state.j );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TDigitalSurfaceContainer>
+inline
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSurface]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TDigitalSurfaceContainer>
+inline
+bool
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::isValid() const
+{
+  return myTracker != 0;
+}
+
+//-----------------------------------------------------------------------------
+/**
+   Writes/Displays the object on an output stream.
+   @param out the output stream where the object is written.
+*/
+template <typename TDigitalSurfaceContainer>
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+exportSurfaceAs3DOFF ( std::ostream & out ) const
+{
+  typedef DGtal::uint64_t Number;
+  // Numbers all vertices.
+  std::map<Vertex, Number> index;
+  Number nbv = 0;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    index[ *it ] = nbv++;
+  // Get faces
+  // std::cerr << "- " << nbv << " vertices." << std::endl;
+  FaceSet faces = allClosedFaces();
+  // Compute the number of edges and faces.
+  Number nbe = 0;
+  Number nbf = 0;
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        { nbe += itf->nbVertices; ++nbf; }
+      else
+        { nbe += itf->nbVertices - 1; }
+    }
+  // std::cerr << "- " << nbf << " faces." << std::endl;
+  // Outputs OFF header.
+  out << "OFF" << std::endl
+      << "# Generated by DGtal::DigitalSurface." << std::endl
+      << nbv << " " << nbf << " " << ( nbe / 2 ) << std::endl;
+  // Outputs vertex coordinates (the 3 first ones).
+  const KSpace & K = container().space();
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    {
+      Point p = K.sKCoords( *it );
+      out << p[ 0 ] << " " << p[ 1 ] << " " << p[ 2 ] << std::endl;
+      // double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+    }
+  // Outputs closed faces.
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        {
+          out << itf->nbVertices;
+          VertexRange vtcs = verticesAroundFace( *itf );
+          for ( typename VertexRange::const_iterator
+                  itv = vtcs.begin(), itv_end = vtcs.end();
+                itv != itv_end; ++itv )
+            out << " " << index[ *itv ];
+          out << std::endl;
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+template <typename CellEmbedder>
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+exportEmbeddedSurfaceAs3DOFF
+( std::ostream & out,
+  const CellEmbedder & cembedder ) const
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CCellEmbedder< CellEmbedder > ));
+
+  typedef DGtal::uint64_t Number;
+  // Numbers all vertices.
+  std::map<Vertex, Number> index;
+  Number nbv = 0;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    index[ *it ] = nbv++;
+  // Get faces
+  // std::cerr << "- " << nbv << " vertices." << std::endl;
+  FaceSet faces = allClosedFaces();
+  // Compute the number of edges and faces.
+  Number nbe = 0;
+  Number nbf = 0;
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        { nbe += itf->nbVertices; ++nbf; }
+      else
+        { nbe += itf->nbVertices - 1; }
+    }
+  // std::cerr << "- " << nbf << " faces." << std::endl;
+  // Outputs OFF header.
+  out << "OFF" << std::endl
+      << "# Generated by DGtal::DigitalSurface." << std::endl
+      << nbv << " " << nbf << " " << ( nbe / 2 ) << std::endl;
+  // Outputs vertex coordinates (the 3 first ones).
+  typedef typename CellEmbedder::RealPoint RealPoint;
+  const KSpace & K = container().space();
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    {
+      RealPoint p( cembedder( K.unsigns( *it ) ) );
+      out << p[ 0 ] << " " << p[ 1 ] << " " << p[ 2 ] << std::endl;
+      // double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+    }
+  // Outputs closed faces.
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        {
+          out << itf->nbVertices;
+          VertexRange vtcs = verticesAroundFace( *itf );
+          for ( typename VertexRange::const_iterator
+                  itv = vtcs.begin(), itv_end = vtcs.end();
+                itv != itv_end; ++itv )
+            out << " " << index[ *itv ];
+          out << std::endl;
+        }
+    }
+}
+  
+//-----------------------------------------------------------------------------
+template <typename TDigitalSurfaceContainer>
+template <typename CellEmbedder>
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+exportEmbeddedSurfaceAs3DNOFF
+( std::ostream & out,
+  const CellEmbedder & cembedder ) const
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CCellEmbedder< CellEmbedder > ));
+  BOOST_CONCEPT_ASSERT(( concepts::CWithGradientMap< CellEmbedder > ));
+
+  typedef typename CellEmbedder::GradientMap GradientMap;
+  typedef typename CellEmbedder::Cell MyCell;
+  typedef typename CellEmbedder::RealPoint RealPoint;
+  typedef typename CellEmbedder::RealVector RealVector;
+  typedef DGtal::uint64_t Number;
+
+  // Gets the gradient map.
+  GradientMap gradMap = cembedder.gradientMap();
+  // Numbers all vertices.
+  std::map<Vertex, Number> index;
+  Number nbv = 0;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    index[ *it ] = nbv++;
+  // Get faces
+  // std::cerr << "- " << nbv << " vertices." << std::endl;
+  FaceSet faces = allClosedFaces();
+  // Compute the number of edges and faces.
+  Number nbe = 0;
+  Number nbf = 0;
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        { nbe += itf->nbVertices; ++nbf; }
+      else
+        { nbe += itf->nbVertices - 1; }
+    }
+  // std::cerr << "- " << nbf << " faces." << std::endl;
+  // Outputs OFF header.
+  out << "NOFF" << std::endl
+      << "# Generated by DGtal::DigitalSurface." << std::endl
+      << nbv << " " << nbf << " " << ( nbe / 2 ) << std::endl;
+  // Outputs vertex coordinates (the 3 first ones).
+  const KSpace & K = container().space();
+  RealPoint p;
+  RealVector v;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    {
+      MyCell c = K.unsigns( *it );
+      p = cembedder( c );
+      v = gradMap( c );
+      //cembedder.embedSCell( *it, p, v );
+      double norm = v.norm();
+      if ( norm != 0.0 ) v /= norm;
+      out << p[ 0 ] << " " << p[ 1 ] << " " << p[ 2 ] << " "
+          << v[ 0 ] << " " << v[ 1 ] << " " << v[ 2 ] << std::endl;
+      // double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+    }
+  // Outputs closed faces.
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        {
+          out << itf->nbVertices;
+          VertexRange vtcs = verticesAroundFace( *itf );
+          for ( typename VertexRange::const_iterator
+                  itv = vtcs.begin(), itv_end = vtcs.end();
+                itv != itv_end; ++itv )
+            out << " " << index[ *itv ];
+          out << std::endl;
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------  
+template <typename TDigitalSurfaceContainer>
+template <typename SCellEmbedderWithGradientMap>
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+exportAs3DNOFF
+( std::ostream & out,
+  const SCellEmbedderWithGradientMap & scembedder ) const
+{
+  BOOST_CONCEPT_ASSERT(( concepts::CSCellEmbedder< SCellEmbedderWithGradientMap > ));
+  BOOST_CONCEPT_ASSERT(( concepts::CWithGradientMap< SCellEmbedderWithGradientMap > ));
+
+  typedef typename SCellEmbedderWithGradientMap::GradientMap GradientMap;
+  typedef typename SCellEmbedderWithGradientMap::SCell MySCell;
+  typedef typename SCellEmbedderWithGradientMap::RealPoint RealPoint;
+  typedef typename SCellEmbedderWithGradientMap::RealVector RealVector;
+  typedef DGtal::uint64_t Number;
+
+  // Gets the gradient map.
+  GradientMap gradMap = scembedder.gradientMap();
+  // Numbers all vertices.
+  std::map<Vertex, Number> index;
+  Number nbv = 0;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    index[ *it ] = nbv++;
+  // Get faces
+  // std::cerr << "- " << nbv << " vertices." << std::endl;
+  FaceSet faces = allClosedFaces();
+  // Compute the number of edges and faces.
+  Number nbe = 0;
+  Number nbf = 0;
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        { nbe += itf->nbVertices; ++nbf; }
+      else
+        { nbe += itf->nbVertices - 1; }
+    }
+  // std::cerr << "- " << nbf << " faces." << std::endl;
+  // Outputs OFF header.
+  out << "NOFF" << std::endl
+      << "# Generated by DGtal::DigitalSurface." << std::endl
+      << nbv << " " << nbf << " " << ( nbe / 2 ) << std::endl;
+  // Outputs vertex coordinates (the 3 first ones).
+  RealPoint p;
+  RealVector v;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    {
+      MySCell c = *it;
+      p = scembedder( c );
+      v = gradMap( c );
+      //cembedder.embedSCell( *it, p, v );
+      double norm = v.norm();
+      if ( norm != 0.0 ) v /= norm;
+      out << p[ 0 ] << " " << p[ 1 ] << " " << p[ 2 ] << " "
+          << v[ 0 ] << " " << v[ 1 ] << " " << v[ 2 ] << std::endl;
+      // double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+    }
+  // Outputs closed faces.
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        {
+          out << itf->nbVertices;
+          VertexRange vtcs = verticesAroundFace( *itf );
+          for ( typename VertexRange::const_iterator
+                  itv = vtcs.begin(), itv_end = vtcs.end();
+                itv != itv_end; ++itv )
+            out << " " << index[ *itv ];
+          out << std::endl;
+        }
+    }
+}
+
+//-----------------------------------------------------------------------------  
+template <typename TDigitalSurfaceContainer>
+template <typename CellEmbedder>
+void
+DGtal::DigitalSurface<TDigitalSurfaceContainer>::
+exportEmbeddedIteratedSurfaceAs3DNOFF
+( std::ostream & out,
+  const CellEmbedder & cembedder ) const
+{
+  typedef DGtal::uint64_t Number;
+  // Numbers all vertices.
+  std::map<Vertex, Number> index;
+  Number nbv = 0;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    index[ *it ] = nbv++;
+  // Get faces
+  // std::cerr << "- " << nbv << " vertices." << std::endl;
+  FaceSet faces = allClosedFaces();
+  // Compute the number of edges and faces.
+  Number nbe = 0;
+  Number nbf = 0;
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        { nbe += itf->nbVertices; ++nbf; }
+      else
+        { nbe += itf->nbVertices - 1; }
+    }
+  // std::cerr << "- " << nbf << " faces." << std::endl;
+  // Outputs OFF header.
+  out << "NOFF" << std::endl
+      << "# Generated by DGtal::DigitalSurface." << std::endl
+      << nbv << " " << nbf << " " << ( nbe / 2 ) << std::endl;
+  // Outputs vertex coordinates (the 3 first ones).
+  typedef typename CellEmbedder::RealPoint RealPoint;
+  typedef typename CellEmbedder::RealVector RealVector;
+  const KSpace & K = container().space();
+  RealPoint p;
+  RealVector v;
+  for ( ConstIterator it = begin(), it_end = end();
+        it != it_end; ++it )
+    {
+      cembedder.embedSurfel( it, p, v );
+      double norm = v.norm();
+      if ( norm != 0.0 ) v /= norm;
+      out << p[ 0 ] << " " << p[ 1 ] << " " << p[ 2 ] << " "
+          << v[ 0 ] << " " << v[ 1 ] << " " << v[ 2 ] << std::endl;
+      // double areaD = NumberTraits<Coordinate>::castToDouble(area)*2.0; 
+    }
+  // Outputs closed faces.
+  for ( typename FaceSet::const_iterator
+          itf = faces.begin(), itf_end = faces.end();
+        itf != itf_end; ++itf )
+    {
+      if ( itf->isClosed() ) 
+        {
+          out << itf->nbVertices;
+          VertexRange vtcs = verticesAroundFace( *itf );
+          for ( typename VertexRange::const_iterator
+                  itv = vtcs.begin(), itv_end = vtcs.end();
+                itv != itv_end; ++itv )
+            out << " " << index[ *itv ];
+          out << std::endl;
+        }
+    }
+}
+  
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TDigitalSurfaceContainer>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const DigitalSurface<TDigitalSurfaceContainer> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

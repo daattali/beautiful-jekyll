@@ -1,0 +1,319 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Expander.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/10
+ *
+ * Implementation of inline methods defined in Expander.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename TObject>
+inline
+DGtal::Expander<TObject>::~Expander()
+{
+}
+
+/**
+ * Constructor from a point. This point provides the initial core
+ * of the expander.
+ *
+ * @param object the digital object in which the expander expands.
+ * @param p any point in the given object.
+ */
+template <typename TObject>
+inline
+DGtal::Expander<TObject>
+::Expander( ConstAlias<Object> object, const Point & p )
+  : myEmbeddingDomain( (&object)->pointSet().domain() ),
+    myObject( object ),
+    myObjectDomain( myObject.pointSet() ),
+    myObjectAdjacency( myObjectDomain, myObject.adjacency() ),
+    myCore( myEmbeddingDomain ), 
+    myLayer( myEmbeddingDomain ),
+    myDistance( 0 ), myFinished( false ),
+    myNotInCorePred( myCore )
+{
+  ASSERT( myObjectDomain.isInside( p ) );
+  myCore.insertNew( p );
+  computeNextLayer( myCore );
+}
+
+/**
+ * Constructor from iterators. All points visited between the
+ * iterators should be distinct two by two. The so specified set
+ * of points provides the initial core of the expander.
+ *
+ * @tparam the type of an InputIterator pointing on a Point.
+ *
+ * @param object the digital object in which the expander expands.
+ * @param b the begin point in a set.
+ * @param e the end point in a set.
+ */
+template <typename TObject>
+template <typename PointInputIterator>
+inline
+DGtal::Expander<TObject>
+::Expander( ConstAlias<Object> object,
+      PointInputIterator b, PointInputIterator e )
+  : myEmbeddingDomain( (&object)->pointSet().domain() ),
+    myObject( object ),
+    myObjectDomain( myObject.pointSet() ),
+    myObjectAdjacency( myObjectDomain, myObject.adjacency() ),
+    myCore( myEmbeddingDomain ), 
+    myLayer( myEmbeddingDomain ),
+    myDistance( 0 ), myFinished( false ),
+    myNotInCorePred( myCore )
+{
+  myCore.insertNew( b, e );  
+  computeNextLayer( myCore );
+}
+
+
+/**
+ * @return 'true' if all possible elements have been visited.
+ */
+template <typename TObject>
+inline
+bool
+DGtal::Expander<TObject>::finished() const
+{
+  return myFinished;
+}
+
+/**
+ * @return the current distance to the initial core, or
+ * equivalently the index of the current layer.
+ */
+template <typename TObject>
+inline
+typename DGtal::Expander<TObject>::Size 
+DGtal::Expander<TObject>::distance() const
+{
+  return myDistance;
+}
+
+
+/**
+ * Extract next layer. You might used begin() and end() to access
+ * all the elements of the new layer.
+ *
+ * @return 'true' if there was another layer, or 'false' if it was the
+ * last (ie. reverse of finished() ).
+ */
+template <typename TObject>
+inline
+bool
+DGtal::Expander<TObject>
+::nextLayer()
+{
+  endLayer();
+  computeNextLayer( myLayer );
+  return ! finished();
+}
+
+/**
+ * Push the layer into the current core. Must be called before
+ * computeNextLayer.
+ */
+template <typename TObject>
+inline
+void
+DGtal::Expander<TObject>
+::endLayer()
+{
+  myCore.insertNew( myLayer.begin(), myLayer.end() );
+}
+
+/**
+ * Computes the next layer just around [src]. The member 'm_core' must
+ * be up to date (i.e, [src] is a subset of 'm_core').  'm_layer' is
+ * cleared in this method.  At first call, [src] should be 'm_core',
+ * then [src] should be 'm_layer'.
+ *
+ * @param src the set around which the new layer is computed.
+ */
+template <typename TObject>
+inline
+void
+DGtal::Expander<TObject>
+::computeNextLayer( const DigitalSet & src )
+{
+  if ( finished() ) return;
+
+  ConstIterator p = src.begin();
+  ConstIterator pEnd = src.end();
+  typedef std::set<Point> SetContainer;
+  typedef std::insert_iterator< SetContainer > Inserter;
+  SetContainer newLayer;
+  Inserter inserter( newLayer, newLayer.begin() );
+  
+  // const ObjectDomainPredicate & objectPred = myObjectDomain.predicate();
+  typedef typename ObjectDomain::Predicate ObjectDomainPredicate; 
+  typedef functors::BinaryPointPredicate< ObjectDomainPredicate, 
+    NotInCoreDomainPredicate > Predicate;
+
+  Predicate cPred( myObjectDomain.predicate(), 
+                   myNotInCorePred,
+                   functors::andBF2 );
+  // Computes the 1-neighborhood of the core.
+  for ( ; p != pEnd; ++p )
+    {
+      myObjectAdjacency.writeNeighbors
+        ( inserter, *p, cPred );
+      // std::cerr << *p;
+      // for ( unsigned int i = 0; i < v.size(); ++i )
+      //   {
+      //     std::cerr << " " << v[ i ];
+      //     newLayer.insert( v[ i ] );
+      //   }
+      // std::cerr << std::endl;
+      // v.clear();
+    }
+  // std::cerr << "Core.size=" << myCore.size() 
+  //       << " prevLayer.size=" << src.size()
+  //       << " nextLayer.size=" << newLayer.size()
+  //       << std::endl;
+  // Termination test.
+  if ( newLayer.empty() )
+    myFinished = true;
+  else
+    {
+      myDistance++;
+      myLayer.clear();
+      myLayer.insertNew( newLayer.begin(), newLayer.end() );
+    }
+}
+
+
+/**
+ * @return the iterator on the first element of the layer.
+ */
+template <typename TObject>
+inline
+const typename DGtal::Expander<TObject>::DigitalSet &
+DGtal::Expander<TObject>
+::core() const
+{
+  return myCore;
+}
+
+/**
+ * @return a const reference on the (current) layer set of points.
+ */
+template <typename TObject>
+inline
+const typename DGtal::Expander<TObject>::DigitalSet &
+DGtal::Expander<TObject>
+::layer() const
+{
+  return myLayer;
+}
+
+/**
+ * @return the iterator on the first element of the layer.
+ */
+template <typename TObject>
+inline
+typename DGtal::Expander<TObject>::ConstIterator
+DGtal::Expander<TObject>
+::begin() const
+{
+  return myLayer.begin();
+}
+
+/**
+ * @return the iterator after the last element of the layer.
+ */
+template <typename TObject>
+inline
+typename DGtal::Expander<TObject>::ConstIterator
+DGtal::Expander<TObject>
+::end() const
+{
+  return myLayer.end();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TObject>
+inline
+void
+DGtal::Expander<TObject>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Expander layer=" << myDistance 
+      << " layer.size=" << myLayer.size()
+      << " finished=" << myFinished
+      << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TObject>
+inline
+bool
+DGtal::Expander<TObject>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TObject>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const Expander<TObject> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,237 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file NGon2D.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/04/12
+ *
+ * Implementation of inline methods defined in NGon2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::NGon2D<T>::~NGon2D()
+{
+}
+
+template <typename T>
+inline
+DGtal::NGon2D<T>::NGon2D(const double x0, const double y0, 
+       const double radius, const unsigned int k,
+       const double phi):
+  myCenter(x0,y0), myRadius(radius), myK(k), myPhi(phi)
+{}
+
+
+template <typename T>
+inline
+DGtal::NGon2D<T>::NGon2D(const RealPoint2D &aPoint,
+       const double radius, const unsigned int k,
+       const double phi):
+  myCenter(aPoint), myRadius(radius) , myK(k), myPhi(phi)
+{}
+
+template <typename T>
+inline
+DGtal::NGon2D<T>::NGon2D(const Point &aPoint, 
+       const double radius, const unsigned int k,
+       const double phi):
+  myRadius(radius), myK(k), myPhi(phi)
+{
+  myCenter = aPoint;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// ------------- Implementation of 'StarShaped' services ------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return the angle parameter between 0 and 2*Pi corresponding to
+ * this point for the shape.
+ */
+template <typename T>
+inline
+double
+DGtal::NGon2D<T>::parameter( const RealPoint2D & pp ) const
+{
+  RealPoint2D p( pp );
+  p -= myCenter;
+
+  double angle = atan2( p[1], p[0] );
+  angle = ( angle < 0.0 ) ? angle + 2 * M_PI : angle;
+
+  return angle;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x(t),y(t)) which is the position on the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::NGon2D<T>::RealPoint2D 
+DGtal::NGon2D<T>::x( double t ) const
+{
+  double angle = t - myPhi;
+  angle = (angle < 0.0) ? angle + 2 * M_PI : angle;
+
+  // seek the vertices between the point, then compute the vector from one vertex to the next one.
+
+  unsigned int intervale_lower = static_cast<unsigned int>( floor( ( angle ) * myK / (2.0 * M_PI ) ) );
+  unsigned int intervale_upper = intervale_lower == ( myK - 1 ) ? 0 : intervale_lower + 1;
+  double dist = myRadius * cos( M_PI / myK );
+  RealPoint2D s1 ( myRadius * cos( myPhi + intervale_lower * 2.0 * M_PI / myK ),
+                   myRadius * sin( myPhi + intervale_lower * 2.0 * M_PI / myK ));
+  RealPoint2D s2 ( myRadius * cos( myPhi + intervale_upper * 2.0 * M_PI / myK ),
+                   myRadius * sin( myPhi + intervale_upper * 2.0 * M_PI / myK ));
+  RealPoint2D s3 ( s2[0] - s1[0],
+                   s2[1] - s1[1]);
+
+  //double line_angle = atan2f( (float)s3[ 1 ], (float)s3[ 0 ]);
+  double line_angle = atan2( s3[1], s3[0] );
+  //line_angle = (line_angle < 0.0) ? angle + 2 * M_PI : line_angle;
+
+  double rho = dist / ( cos(t - line_angle - 0.5 * M_PI) );
+
+  RealPoint2D c( - rho*cos(t), - rho*sin(t) );
+
+  c += myCenter;
+
+  return c;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x'(t),y'(t)) which is the tangent to the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::NGon2D<T>::RealVector2D 
+DGtal::NGon2D<T>::xp( const double t ) const
+{
+  // seek the vertices between the point, then compute the vector from one vertex to the next one.
+  // TODO check if angle equals that of a vertex ?
+  double angle = t - myPhi; 
+  while ( angle < 0.0 )
+    angle += 2.0*M_PI;
+  
+  unsigned int intervalle_lower = static_cast<unsigned int>( floor( angle * myK / (2.0 * M_PI ) ) );
+  unsigned int intervalle_upper = intervalle_lower == ( myK -1 ) ? 0 : intervalle_lower+1;
+  //float dist = myRadius*sin ( M_PI / myK );
+  RealPoint2D s1 ( myRadius*cos(myPhi + intervalle_lower*2.0*M_PI/myK),
+       myRadius*sin(myPhi + intervalle_lower*2.0*M_PI/myK) );
+  RealPoint2D s2 ( myRadius*cos(myPhi + intervalle_upper*2.0*M_PI/myK),
+       myRadius*sin(myPhi + intervalle_upper*2.0*M_PI/myK) );
+  s2 -= s1;
+  
+  //normalize
+  double norm = s2.norm();
+  s2[0] /= norm;
+  s2[1] /= norm;
+ 
+  return s2;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x''(t),y''(t)).
+ */
+template <typename T>
+inline
+typename DGtal::NGon2D<T>::RealVector2D
+DGtal::NGon2D<T>::xpp( const double /*t*/ ) const
+{
+  RealVector2D c(0,0);
+  return c;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::NGon2D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[NGon2D] center= "<<myCenter<<" radius="<<myRadius<<" number of sides="<<myK
+      << " phase-shift="<<myPhi;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::NGon2D<T>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+      const NGon2D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

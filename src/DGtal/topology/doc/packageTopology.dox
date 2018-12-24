@@ -1,0 +1,109 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageTopology.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/09/19
+ *
+ * Documentation file for package Topology
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageTopology Topology package
+   
+@managers Jacques-Olivier Lachaud
+
+@since 0.4
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+This package contains digital topology related concepts, objects and
+methods which are used in other higher level packages. For example, it
+contains the classical topology tools (à la Rosenfeld), cartesian
+cellular topology, and digital surface topology (à la Herman). Generic
+tools and methods are provided for extracting connected components,
+identifying simple points, determining the neighborhood over a digital
+surface, tracking the boundary of a shape, defining cells and
+incidence operations. This package is notably used by the geometry
+package, especially to define curves and surfaces.
+
+Since 0.4.1, high-level classes are provided to navigate onto digital
+surfaces and to represent the topology on the surface. Since 0.9.4,
+the topology of a 3D digital surface can be precomputed and stored as
+a half-edge data structure.
+
+Since 0.9.1, a class for representing cubical complexes is provided
+and offers many services (incidence, closure, link, star, collapse,
+boundary, union, etc).
+
+Since 0.9.4, there is a module that provides classes and services to
+represent combinatorial surfaces, based on an half-edge data
+structure.
+
+
+@b Modules
+ - \ref moduleDigitalTopology (Jacques-Olivier Lachaud, Bertrand Kerautret)
+ - \ref moduleCellularTopology (Jacques-Olivier Lachaud)
+ - \ref moduleDigitalSurfaces (Jacques-Olivier Lachaud)
+ - \ref moduleDigitalSurfaceHelpers (Jacques-Olivier Lachaud, Bertrand Kerautret)
+ - \ref moduleCubicalComplex (Jacques-Olivier Lachaud)
+ - \ref moduleVoxelComplex (Pablo Hernandez-Cerdan)
+ - \ref moduleHalfEdgeMesh (Jacques-Olivier Lachaud)
+
+
+ @b Package @b Concepts @b Overview
+ - \ref packageTopologyConcepts1
+ - \ref packageTopologyConcepts2
+
+
+ @b Related @b documentation @b pages
+
+ @b Related @b examples
+  - 3dBorderExtraction.cpp, 3dBorderExtractionImg.cpp, homotopicThinning3D.cpp, criticalKernelsThinning3D
+  - ctopo-1.cpp, ctopo-1-3d.cpp, ctopo-1s-3d.cpp, khalimskySpaceScanner.cpp
+  - ctopo-2.cpp, ctopo-2-3d.cpp, 3dKSSurfaceExtraction.cpp
+  - volScanBoundary.cpp, volTrackBoundary.cpp, volBreadthFirstTraversal.cpp, frontierAndBoundary.cpp
+
+*/
+
+}
+
+
+
+/**
+Creates precomputed tables for determining whether some point is simple within an 2D object.
+@image html table4_8.png  "Resulting table for 4-8 topology."
+@example topology/generateSimplicityTables2D.cpp
+*/
+
+/**
+Creates precomputed  tables for determining whether some point is simple within an 3D object.
+@example topology/generateSimplicityTables3D.cpp
+*/

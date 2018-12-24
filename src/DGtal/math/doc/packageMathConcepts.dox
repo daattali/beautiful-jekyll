@@ -1,0 +1,161 @@
+/**
+ * @file packageGraphConcepts.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2013/10/25
+ *
+ * Documentation file for feature Math
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ *
+ *
+ * The content is just an example of dot graph structure. Please
+ * update it.
+ *
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageMathConcepts  Math Main Concepts
+
+@writers Jacques-Olivier Lachaud, Pierre Gueth, David Coeurjolly
+
+@dot
+digraph GMath {
+    rankdir= BT
+
+    subgraph cluster_ext {
+	rank = same;
+        
+
+        subgraph cluster_kernel {
+                 style=filled;
+                 color="#ddddee";
+                 node [style=filled,color=white];
+                 label="kernel";
+
+		 CCommutativeRing [ label="CCommutativeRing" URL="\ref concepts::CCommutativeRing" ];
+		 CEuclideanRing [ label="CEuclideanRing" URL="\ref concepts::CEuclideanRing" ];
+        }
+        subgraph cluster_io {
+                 style=filled;
+                 color="#e4e4ff";
+                 node [style=filled,color=white];
+                 label="io";
+
+        }
+        subgraph cluster_boost {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="boost";
+
+                 boost_CopyConstructible [ label="boost::CopyConstructible" URL="\ref boost::CopyConstructible" ];
+                 boost_DefaultConstructible [ label="boost::DefaultConstructible" URL="\ref boost::DefaultConstructible" ];
+                 boost_InputIterator [ label="boost::InputIterator" URL="\ref boost::InputIterator" ];
+                 boost_is_integral [ label="boost::is_integral" URL="\ref boost::is_integral" ];
+                 boost_is_unsigned [ label="boost::is_unsigned" URL="\ref boost::is_unsigned" ];
+        }
+        subgraph cluster_std {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="std";
+
+       }
+       
+    }
+    
+   subgraph cluster_math_cc {
+	rank = same;
+
+   subgraph cluster_math_linalg {
+                 style=filled;
+                 color="#e4e4ff";
+                 node [style=filled,color=white];
+                 label="math/linalg";
+
+                 CVectorSpace [ label="CVectorSpace" URL="\ref concepts::CVectorSpace" ];
+                 CMatrix [ label="CMatrix" URL="\ref concepts::CMatrix" ];
+                 CStaticMatrix [ label="CStaticMatrix" URL="\ref concepts::CStaticMatrix" ];
+                 CDynamicMatrix [ label="CDynamicMatrix" URL="\ref concepts::CDynamicMatrix" ];
+                 CDenseMatrix [ label="CDenseMatrix" URL="\ref concepts::CDenseMatrix" ];
+                 CSparseMatrix [ label="CSparseMatrix" URL="\ref concepts::CSparseMatrix" ];
+
+                 CVector [ label="CVector" URL="\ref concepts::CVector" ];
+                 CStaticVector [ label="CStaticVector" URL="\ref concepts::CStaticVector" ];
+                 CDynamicVector [ label="CDynamicVector" URL="\ref concepts::CDynamicVector" ];
+                 CDenseVector [ label="CDenseVector" URL="\ref concepts::CDenseVector" ];
+
+                 CLinearAlgebra [ label="CLinearAlgebra" URL="\ref concepts::CLinearAlgebra" ];
+                 CLinearAlgebraSolver [ label="CLinearAlgebraSolver" URL="\ref concepts::CLinearAlgebraSolver" ];
+        }
+
+        CVector -> CVectorSpace;
+        CStaticVector -> CVector;
+        CStaticVector -> boost_DefaultConstructible;
+        CDynamicVector -> CVector;
+        CDenseVector -> CVector;
+
+        CMatrix -> CVectorSpace;
+        CStaticMatrix -> CMatrix;
+        CStaticMatrix -> boost_DefaultConstructible;
+        CDynamicMatrix -> CMatrix;
+        CDenseMatrix -> CMatrix;
+        CSparseMatrix -> CMatrix;
+
+        CLinearAlgebra -> CMatrix;
+        CLinearAlgebra -> CVector;
+
+        CLinearAlgebraSolver -> CLinearAlgebra;
+        CLinearAlgebraSolver -> boost_DefaultConstructible;
+
+
+    subgraph cluster_concepts {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=white];
+        label="Math (main concepts)";
+        
+        CBinner [ label="CBinner" URL="\ref concepts::CBinner" ] ;
+    }
+}
+    CBinner -> boost_CopyConstructible;
+    CBinner -> CEuclideanRing [label="use",style=dashed] ;
+    CBinner -> boost_is_integral [label="use",style=dashed] ;
+    CBinner -> boost_is_unsigned [label="use",style=dashed] ;
+
+    
+	subgraph cluster_models {
+        	 style=filled;
+		 color="#ccffcc";
+        	 node [style=filled,color=white];
+        	 label="Math (main models and classes)";
+
+		 Statistic [ label="Statistic" URL="\ref Statistic" ] ;
+        	 RegularBinner [ label="RegularBinner" URL="\ref RegularBinner" ] ;
+		 Histogram [ label="Histogram" URL="\ref Histogram" ] ;
+                 SimpleMatrix [ label = "SimpleMatrix" URL= "\ref SimpleMatrix"];
+        }
+
+	Statistic -> CCommutativeRing [label="tparam",style=dashed] ;
+	Statistic -> boost_InputIterator [label="use",style=dashed] ;
+	RegularBinner -> CBinner;
+	Histogram -> CBinner [label="tparam",style=dashed];
+	Histogram -> CEuclideanRing [label="tparam",style=dashed];
+	Histogram -> boost_InputIterator [label="use",style=dashed];
+  SimpleMatrix -> CStaticMatrix;
+  SimpleMatrix -> CDenseMatrix;
+
+        
+}
+@enddot
+
+*/
+
+}

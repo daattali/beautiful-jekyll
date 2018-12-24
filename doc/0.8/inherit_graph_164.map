@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title="STL class. " alt="" coords="5,109,117,137"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1ConnectivityException.html" title="DGtal::ConnectivityException" alt="" coords="174,5,382,33"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1InfiniteNumberException.html" title="DGtal::InfiniteNumberException" alt="" coords="165,57,391,85"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1InputException.html" title="DGtal::InputException" alt="" coords="197,109,359,137"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1IOException.html" title="DGtal::IOException" alt="" coords="207,161,349,189"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1MemoryException.html" title="DGtal::MemoryException" alt="" coords="188,213,368,241"/>
-</map>

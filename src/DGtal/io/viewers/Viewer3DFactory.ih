@@ -1,0 +1,1008 @@
+/**
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Viewer3DFactory.ih
+ * @author Aline Martin <aline.martin@insa-lyon.fr>
+ * @date mardi 2 juillet 2013
+ *
+ * @brief
+ *
+ * Implementation of inline methods defined in Viewer3DFactory.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+#include <string>
+
+#include "DGtal/helpers/StdDefs.h"
+#include "DGtal/images/ImageHelper.h"
+#include "DGtal/io/Display3DFactory.h"
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods //
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators //
+
+template <typename Space, typename KSpace>
+inline
+void DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                                                 const DGtal::CameraPosition & cp )
+{
+  viewer.setCameraPosition(cp.eyex, cp.eyey, cp.eyez);
+}
+
+template <typename Space, typename KSpace>
+inline
+void DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                                   const DGtal::CameraDirection & cd )
+{
+  viewer.setCameraDirection(cd.dirx, cd.diry, cd.dirz);
+}
+
+template <typename Space, typename KSpace>
+inline
+void DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::CameraUpVector & cuv )
+{
+
+  viewer.setCameraUpVector(cuv.upx, cuv.upy, cuv.upz);
+}
+
+template <typename Space, typename KSpace>
+inline
+void DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                                   const DGtal::CameraZNearFar & cz )
+{
+  viewer.setNearFar(cz.ZNear, cz.ZFar);
+}
+
+
+
+// AddTextureImage3DWithFunctor
+template <typename Space, typename KSpace>
+template<typename TImageType, typename TFunctor>
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::AddTextureImage3DWithFunctor<TImageType, TFunctor, Space, KSpace> & anAddGS3D )
+{
+  drawImage3D(viewer, *anAddGS3D.my3DImage, anAddGS3D.myFunctor, anAddGS3D.myMode);
+}
+// AddTextureImage3DWithFunctor
+
+// AddTextureImage2DWithFunctor
+template <typename Space, typename KSpace>
+template<typename TImageType, typename TFunctor>
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::AddTextureImage2DWithFunctor<TImageType, TFunctor, Space, KSpace> & anAddGS2D )
+{
+  drawImage2D(viewer, *anAddGS2D.my2DImage, anAddGS2D.myFunctor, anAddGS2D.myMode);
+}
+// AddTextureImage2DWithFunctor
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::UpdateImagePosition<Space, KSpace> & anUpdate)
+{
+  viewer.updateOrientationTextureImage(anUpdate.myIndex, anUpdate.myPosXBottomLeft, anUpdate.myPosYBottomLeft,
+                                       anUpdate.myPosZBottomLeft, anUpdate.myNewDirection);
+}
+
+template< typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::UpdateLastImagePosition<Space, KSpace> & anUpdate )
+{
+  unsigned int index = viewer.getCurrentGLImageNumber()-1;
+  viewer.updateOrientationTextureImage(index, anUpdate.myPosXBottomLeft, anUpdate.myPosYBottomLeft,
+                                       anUpdate.myPosZBottomLeft, anUpdate.myNewDirection);
+}
+
+template< typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space, KSpace>::draw( Viewer3D<Space,KSpace> & viewer, const DGtal::UpdateImage3DEmbedding<Space, KSpace> & anUpdate)
+{
+  viewer.updateEmbeddingTextureImage(anUpdate.myIndex, anUpdate.myNewPoint1, anUpdate.myNewPoint2, anUpdate.myNewPoint3, anUpdate.myNewPoint4);
+}
+
+
+template< typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> &viewer, const DGtal::Update2DDomainPosition<Space, KSpace> & anUpdate)
+{
+  viewer.updateAn2DDomainOrientation(anUpdate.myIndex, anUpdate.myPosXBottomLeft, anUpdate.myPosYBottomLeft,
+                                     anUpdate.myPosZBottomLeft, anUpdate.myNewDirection);
+}
+
+template< typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> &viewer, const DGtal::Translate2DDomain & anTranslation)
+{
+  viewer.translateAn2DDomain(anTranslation.myIndex, anTranslation.myTranslateX, anTranslation.myTranslateY,
+                             anTranslation.myTranslateZ);
+}
+
+template <typename Space, typename KSpace>
+template<typename TImageType, typename TFunctor>
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::UpdateImageData<TImageType, TFunctor> & anUpdate)
+{
+  viewer.updateTextureImage(anUpdate.myIndex, *(anUpdate.myImage), anUpdate.myFunctor, anUpdate.myTranslateX,
+                            anUpdate.myTranslateY, anUpdate.myTranslateZ, anUpdate.myRotationAngle, anUpdate.myRotationDir);
+}
+
+template <typename Space, typename KSpace>
+template < typename TImageType3D, typename TFunctor>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawImage3D( Viewer3D<Space, KSpace> & viewer, const TImageType3D & anImage3D, const TFunctor & aFunctor,
+                                     typename Viewer3D<Space, KSpace>::TextureMode aTextureMode)
+{
+  std::string mode = viewer.getMode( anImage3D.className() );
+  ASSERT( (mode=="BoundingBox" || mode=="InterGrid" || mode=="Grid"|| mode=="") ||
+          ("DGtal::Viewer3DFactory<Space,KSpace>::draw( DViewer3D<Space, KSpace> & viewer,const TImageType3D & anImage ): Unknown mode "+mode)=="");
+
+  typedef TImageType3D Image3D;
+
+  functors::Projector<DGtal::Z2i::Space> invFunctorY; invFunctorY.initRemoveOneDim(1);
+  DGtal::Z2i::Domain domainY(invFunctorY(anImage3D.domain().lowerBound()),
+                             invFunctorY(anImage3D.domain().upperBound()));
+  functors::Projector<DGtal::Z2i::Space> invFunctorZ; invFunctorZ.initRemoveOneDim(2);
+  DGtal::Z2i::Domain domainZ(invFunctorZ(anImage3D.domain().lowerBound()),
+                             invFunctorZ(anImage3D.domain().upperBound()));
+  functors::Projector<DGtal::Z2i::Space> invFunctorX; invFunctorX.initRemoveOneDim(0);
+  DGtal::Z2i::Domain domainX(invFunctorX(anImage3D.domain().lowerBound()),
+                             invFunctorX(anImage3D.domain().upperBound()));
+
+
+
+  typedef DGtal::ConstImageAdapter<Image3D, DGtal::Z2i::Domain, DGtal::functors::Projector< Z3i::Space>,
+                                   typename Image3D::Value, DGtal::functors::Identity > SliceImageAdapter;
+  DGtal::functors::Identity idV;
+  DGtal::functors::Projector<DGtal::Z3i::Space> aSliceFunctorY((int)(anImage3D.domain().lowerBound()[1]));
+
+  aSliceFunctorY.initAddOneDim(1);
+  SliceImageAdapter sliceImageY(anImage3D, domainY, aSliceFunctorY, idV);
+
+  viewer<< SetMode3D( sliceImageY.className(), mode );
+  viewer << DGtal::AddTextureImage2DWithFunctor<SliceImageAdapter, TFunctor,Space, KSpace> (sliceImageY, aFunctor, aTextureMode );
+
+  viewer << DGtal::UpdateLastImagePosition<Space, KSpace>( Viewer3D<Space, KSpace>::yDirection,
+                                                           anImage3D.domain().lowerBound()[0],
+                                                           anImage3D.domain().lowerBound()[1]-0.5,
+                                                           anImage3D.domain().lowerBound()[2]);
+
+  functors::Projector<DGtal::Z3i::Space> aSliceFunctorX((int)(anImage3D.domain().lowerBound()[0]));
+  aSliceFunctorX.initAddOneDim(0);
+  SliceImageAdapter sliceImageX(anImage3D, domainX, aSliceFunctorX, idV);
+  viewer << DGtal::AddTextureImage2DWithFunctor<SliceImageAdapter, TFunctor , Space, KSpace> (sliceImageX, aFunctor, aTextureMode );
+  viewer << DGtal::UpdateLastImagePosition<Space, KSpace> ( Viewer3D<Space, KSpace>::xDirection,
+                                                            anImage3D.domain().lowerBound()[0] -0.5,
+                                                            anImage3D.domain().lowerBound()[1],
+                                                            anImage3D.domain().lowerBound()[2]);
+
+  functors::Projector<DGtal::Z3i::Space> aSliceFunctorZ((int)(anImage3D.domain().lowerBound()[2]));
+  aSliceFunctorZ.initAddOneDim(2);
+  SliceImageAdapter sliceImageZ(anImage3D, domainZ, aSliceFunctorZ, idV);
+  viewer << DGtal::AddTextureImage2DWithFunctor<SliceImageAdapter, TFunctor , Space, KSpace>(sliceImageZ, aFunctor, aTextureMode );
+  viewer << DGtal::UpdateLastImagePosition<Space, KSpace> ( Viewer3D<Space, KSpace>::zDirection,
+                                                            anImage3D.domain().lowerBound()[0],
+                                                            anImage3D.domain().lowerBound()[1],
+                                                            anImage3D.domain().lowerBound()[2]-0.5);
+
+
+  // other symetrics faces
+  functors::Projector<DGtal::Z3i::Space> aSliceFunctorYl((int)(anImage3D.domain().upperBound()[1]));
+  aSliceFunctorYl.initAddOneDim(1);
+  SliceImageAdapter sliceImageYl(anImage3D, domainY, aSliceFunctorYl, idV);
+  viewer << DGtal::AddTextureImage2DWithFunctor<SliceImageAdapter, TFunctor , Space, KSpace>(sliceImageYl, aFunctor , aTextureMode);
+  viewer << DGtal::UpdateLastImagePosition<Space, KSpace> ( Viewer3D<Space, KSpace>::yDirection,
+                                                            anImage3D.domain().lowerBound()[0],
+                                                            0.5+anImage3D.domain().upperBound()[1],
+                                                            anImage3D.domain().lowerBound()[2]);
+
+
+  functors::Projector<DGtal::Z3i::Space> aSliceFunctorXl((int)(anImage3D.domain().upperBound()[0]));
+  aSliceFunctorXl.initAddOneDim(0);
+  SliceImageAdapter sliceImageXl(anImage3D, domainX, aSliceFunctorXl, idV);
+  viewer << DGtal::AddTextureImage2DWithFunctor<SliceImageAdapter, TFunctor, Space, KSpace>(sliceImageXl, aFunctor, aTextureMode );
+  viewer << DGtal::UpdateLastImagePosition<Space, KSpace> ( Viewer3D<Space, KSpace>::xDirection,
+                                                            0.5+anImage3D.domain().upperBound()[0],
+                                                            anImage3D.domain().lowerBound()[1],
+                                                            anImage3D.domain().lowerBound()[2] );
+
+  functors::Projector<DGtal::Z3i::Space> aSliceFunctorZl((int)(anImage3D.domain().upperBound()[2]));
+  aSliceFunctorZl.initAddOneDim(2);
+  SliceImageAdapter sliceImageZl(anImage3D, domainZ, aSliceFunctorZl, idV);
+  viewer << DGtal::AddTextureImage2DWithFunctor<SliceImageAdapter, TFunctor, Space, KSpace>(sliceImageZl, aFunctor , aTextureMode);
+  viewer << DGtal::UpdateLastImagePosition<Space, KSpace>( Viewer3D<Space, KSpace>::zDirection,
+                                                           anImage3D.domain().lowerBound()[0],
+                                                           anImage3D.domain().lowerBound()[1],
+                                                           0.5+ anImage3D.domain().upperBound()[2] );
+}
+
+// ImageContainerBySTLVector (2D)
+template <typename Space, typename KSpace>
+template <typename TValue>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ImageContainerBySTLVector<DGtal::Z2i::Domain, TValue> & anImage )
+{
+  drawImage2D(viewer, anImage, functors::Cast<unsigned int> (), Viewer3D<Space,KSpace>::GrayScaleMode);
+}
+// ImageContainerBySTLVector (2D)
+
+
+// ImageContainerBySTLMap (2D)
+template <typename Space, typename KSpace>
+template <typename TValue>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ImageContainerBySTLMap<DGtal::Z2i::Domain, TValue> & anImage )
+{
+  drawImage2D(viewer, anImage, functors::Cast<unsigned int> (), anImage.myMode);
+}
+// ImageContainerBySTLMap (2D)
+
+
+// ImageContainerBySTLVector (3D)
+template <typename Space, typename KSpace>
+template <typename TValue>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ImageContainerBySTLVector<DGtal::Z3i::Domain, TValue> & anImage3D )
+{
+  drawImage3D(viewer, anImage3D, functors::Cast<unsigned int> (), Viewer3D<Space,KSpace>::GrayScaleMode);
+}
+// ImageContainerBySTLVector (3D)
+
+// ImageContainerBySTLMap (3D)
+template <typename Space, typename KSpace>
+template <typename TValue>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ImageContainerBySTLMap<DGtal::Z3i::Domain, TValue> & anImage3D )
+{
+  drawImage3D(viewer, anImage3D, functors::Cast<unsigned int> (), anImage3D.myMode);
+}
+// ImageContainerBySTLMap (3D)
+
+
+// ConstImageAdapter (2D)
+template <typename Space, typename KSpace>
+template <typename TImageContainer, typename TFunctorD, typename TNewValue, typename TFunctorValue>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ConstImageAdapter<TImageContainer, DGtal::Z2i::Domain, TFunctorD, TNewValue, TFunctorValue> & anImage )
+{
+  drawImage2D(viewer, anImage, functors::Cast<unsigned int> (), Viewer3D<Space,KSpace>::GrayScaleMode );
+}
+// ConstImageAdapter (2D)
+
+// ImageAdapter (2D)
+template <typename Space, typename KSpace>
+template <typename TImageContainer, typename TFunctorD, typename TNewValue, typename TFunctorValue, typename TFunctorValueVm1>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ImageAdapter<TImageContainer, DGtal::Z2i::Domain, TFunctorD, TNewValue, TFunctorValue, TFunctorValueVm1> & anImage )
+{
+  drawImage2D(viewer, anImage, functors::Cast<unsigned int> (), anImage.myMode);
+}
+// ImageAdapter (2D)
+
+
+// ConstImageAdapter (3D)
+template <typename Space, typename KSpace>
+template <typename TImageContainer, typename TFunctorD, typename TNewValue, typename TFunctorValue>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const ConstImageAdapter<TImageContainer, DGtal::Z3i::Domain, TFunctorD,
+                              TNewValue, TFunctorValue> & anImage )
+{
+  drawImage3D(viewer, anImage, functors::Cast<unsigned int> (), Viewer3D<Space,KSpace>::GrayScaleMode);
+}
+// ConstImageAdapter (3D)
+
+// ImageAdapter (3D)
+template <typename Space, typename KSpace>
+template <typename TImageContainer, typename TFunctorD, typename TNewValue,
+          typename TFunctorValue, typename TFunctorValueVm1>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                                            const ImageAdapter<TImageContainer, DGtal::Z3i::Domain, TFunctorD,
+                                            TNewValue, TFunctorValue, TFunctorValueVm1> & anImage )
+{
+  drawImage3D(viewer, anImage, functors::Cast<unsigned int> (), anImage.myMode);
+}
+// ImageAdapter (3D)
+
+//HyperRectDomain
+template <typename Space, typename KSpace>
+template <typename SpaceDom>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                                            const DGtal::HyperRectDomain<SpaceDom> & aDomain )
+{
+  std::string mode = viewer.getMode( aDomain.className() );
+  ASSERT((SpaceDom::dimension==3)|| (SpaceDom::dimension==2));
+  
+  ASSERT((SpaceDom::dimension!=3) || (mode=="" || mode=="Grid" || mode=="Paving"|| mode=="PavingPoints"|| mode=="PavingGrids" ||
+                                    mode=="BoundingBox")||
+         ("DGtal::Display3DFactory<Space,KSpace>::draw( Display3D<Space, KSpace> & viewer, const DGtal::HyperRectDomain<Space> & aDomain ): Unknown mode "+mode)=="");
+
+    
+  ASSERT((SpaceDom::dimension!=2) || (mode=="" || mode=="BoundingBox" || mode=="InterGrid"|| mode=="Grid") ||
+         ("DGtal::Display3DFactory<Space,KSpace>::draw( Display3D<Space, KSpace> & viewer, const DGtal::HyperRectDomain<Space> & aDomain ): Unknown mode "+mode)=="");
+  
+  if(SpaceDom::dimension == 3){
+    if ( mode == "BoundingBox" )
+      {
+	viewer.createNewLineList(aDomain.className());
+	drawAsBoundingBox( viewer, aDomain );
+      }else if( ( mode == "" ) || (mode == "Grid"))
+      {
+	viewer.createNewLineList(aDomain.className());
+	drawAsGrid( viewer, aDomain );
+      }
+    else if ( mode == "Paving" )
+      {
+	viewer.createNewCubeList( );
+	drawAsPaving( viewer, aDomain );
+      }else if ( mode == "PavingGrids" )
+      {
+	viewer.createNewLineList(aDomain.className());
+	viewer.createNewCubeList( );
+	drawAsGrid( viewer, aDomain );
+	drawAsPaving( viewer, aDomain );
+      }
+  }else if(SpaceDom::dimension == 2)
+    {
+      if (mode=="")
+        mode="BoundingBox";
+      viewer.addImage2DDomainD3D(aDomain, mode);
+    }  
+
+}
+//end HyperRectDomain
+
+//----------------------------------------------------------------------------------------------
+// heritage of methods
+
+
+// SphericalAccumulator
+template <typename Space, typename KSpace>
+template <typename TVector>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::SphericalAccumulator<TVector> & accumulator,
+                                            const typename DGtal::Z3i::RealVector & shift,
+                              const double radius)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw ( viewer, accumulator, shift, radius);
+}
+// SphericalAccumulator
+
+// Mesh
+template <typename Space, typename KSpace>
+template <typename TPoint>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsFaces( Viewer3D<Space, KSpace> & viewer, const DGtal::Mesh<TPoint> & aMesh )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsFaces( viewer, aMesh);
+}
+
+template <typename Space, typename KSpace>
+template <typename TPoint>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::Mesh<TPoint> & aMesh )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw (viewer, aMesh);
+}
+// Mesh
+
+// StandardDSS6Computer
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsBalls( Viewer3D<Space, KSpace> & viewer, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBalls(viewer, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsBoundingBox( Viewer3D<Space, KSpace> & viewer, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBoundingBox(viewer, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::StandardDSS6Computer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw(viewer , arithm);
+}
+// StandardDSS6Computer
+
+
+// Naive3DDSSComputer
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsBalls( Viewer3D<Space, KSpace> & viewer, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBalls(viewer, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsBoundingBox( Viewer3D<Space, KSpace> & viewer, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBoundingBox(viewer, arithm);
+}
+
+template <typename Space, typename KSpace>
+template <typename TIterator, typename TInteger, int connectivity>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::Naive3DDSSComputer<TIterator,TInteger,connectivity> & arithm )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw(viewer , arithm);
+}
+// Naive3DDSSComputer
+
+// DigitalSetBySTLSet
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPavingTransparent( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingTransparent(viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPaving( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsGrid( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid(viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Compare>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLSet<Domain, Compare> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aSet);
+}
+// DigitalSetBySTLSet
+
+
+// DigitalSetByAssociativeContainer
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPavingTransparent( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingTransparent(viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPaving( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsGrid( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid(viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain, typename Container>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetByAssociativeContainer<Domain, Container> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aSet);
+}
+// DigitalSetByAssociativeContainer
+
+// DigitalSetBySTLVector
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPavingTransparent( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingTransparent( viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPaving( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsGrid( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid(viewer, aSet);
+}
+
+template <typename Space, typename KSpace>
+template<typename Domain>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::DigitalSetBySTLVector<Domain> & aSet )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aSet);
+}
+// DigitalSetBySTLVector
+
+
+// HyperRectDomain
+template <typename Space, typename KSpace>
+template <typename SpaceDom>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::HyperRectDomain<SpaceDom> & aDomain )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template <typename SpaceDom>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsBoundingBox( Viewer3D<Space, KSpace> & viewer, const DGtal::HyperRectDomain<SpaceDom> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsBoundingBox( viewer, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template <typename SpaceDom>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsGrid( Viewer3D<Space, KSpace> & viewer, const DGtal::HyperRectDomain<SpaceDom> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid( viewer, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template <typename SpaceDom>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPavingBalls( Viewer3D<Space, KSpace> & viewer, const DGtal::HyperRectDomain<SpaceDom> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingBalls( viewer, aDomain);
+}
+
+template <typename Space, typename KSpace>
+template <typename SpaceDom>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPaving( Viewer3D<Space, KSpace> & viewer, const DGtal::HyperRectDomain<SpaceDom> & aDomain )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( viewer, aDomain);
+}
+
+
+// HyperRectDomain
+
+
+// KhalimskyCell
+template <typename Space, typename KSpace>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const typename KSpace::Cell & aCell )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle(str, aCell);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const typename KSpace::Cell & aCell )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aCell);
+}
+// KhalimskyCell
+
+
+// Object
+template <typename Space, typename KSpace>
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::Object<TDigitalTopology, TDigitalSet> & anObject )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, anObject);
+}
+
+template <typename Space, typename KSpace>
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawWithAdjacencies( Viewer3D<Space, KSpace> & viewer, const DGtal::Object<TDigitalTopology, TDigitalSet> & anObject )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawWithAdjacencies( viewer, anObject);
+}
+
+template <typename Space, typename KSpace>
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::Object<TDigitalTopology, TDigitalSet> & anObject )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, anObject);
+}
+// Object
+
+
+// PointVector
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  return DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsGrid( Viewer3D<Space, KSpace> & viewer, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsGrid( viewer, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPaving( Viewer3D<Space, KSpace> & viewer, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPaving( viewer, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawAsPavingWired( Viewer3D<Space, KSpace> & viewer, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::drawAsPavingWired( viewer, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent, typename TContainer>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::PointVector<dim, TComponent, TContainer> & aPoint )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aPoint);
+}
+
+template <typename Space, typename KSpace>
+template< DGtal::Dimension dim, typename TComponent1, typename TComponent2, typename TContainer1, typename TContainer2>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::PointVector<dim, TComponent1, TContainer1> & aPoint, const DGtal::PointVector<dim, TComponent2, TContainer2> & aPoint2 )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aPoint, aPoint2);
+}
+// PointVector
+
+
+// SignedKhalimskyCell
+template <typename Space, typename KSpace>
+inline
+DGtal::DrawableWithViewer3D *
+DGtal::Viewer3DFactory<Space,KSpace>::defaultStyle( std::string str, const typename KSpace::SCell & aSCell )
+{
+  return  DGtal::Display3DFactory<Space,KSpace>::defaultStyle( str, aSCell);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const typename KSpace::SCell & aSCell )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aSCell);
+}
+// SignedKhalimskyCell
+
+// GridCurve
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::GridCurve<KSpace> & aGrid )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aGrid);
+}
+// GridCurve
+
+// SCellsRange
+template <typename Space, typename KSpace>
+template < typename TIterator, typename TSCell>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( DGtal::Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, DGtal::functors::Identity, TSCell> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// SCellsRange
+
+// PointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, functors::SCellToPoint<KSpace>, typename KSpace::Point> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// PointsRange
+
+// MidPointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, CanonicSCellEmbedder<KSpace>, typename KSpace::Space::RealPoint> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// MidPointsRange
+
+// ArrowsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, functors::SCellToArrow<KSpace>, std::pair<typename KSpace::Point, typename KSpace::Vector > > & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// ArrowsRange
+
+// InnerPointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, functors::SCellToInnerPoint<KSpace>, typename KSpace::Point> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// InnerPointsRange
+
+// OuterPointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, functors::SCellToOuterPoint<KSpace>, typename KSpace::Point> & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// OuterPointsRange
+
+// IncidentPointsRange
+template <typename Space, typename KSpace>
+template <typename TIterator>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer,
+                              const DGtal::ConstRangeAdapter<TIterator, functors::SCellToIncidentPoints<KSpace>,std::pair<typename KSpace::Point, typename KSpace::Point > > & aRangeAdapter )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aRangeAdapter);
+}
+// IncidentPointsRange
+
+
+
+template <typename Space, typename KSpace>
+template < typename TImageType2D, typename TFunctor>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::drawImage2D( Viewer3D<Space, KSpace> & viewer, const TImageType2D & anImage, const TFunctor & aFunctor,
+                                     typename Viewer3D<Space, KSpace>::TextureMode aTextureMode )
+{
+  std::string mode = viewer.getMode( anImage.className() );
+  ASSERT( (mode=="BoundingBox" || mode=="InterGrid" || mode=="Grid"|| mode=="") ||
+          ("DGtal::Display3DFactory<Space,KSpace>::draw( Display3D<Space, KSpace> & viewer,const TImageType2D & anImage ): Unknown mode "+mode)=="");
+
+  if(mode=="")
+    {
+      typename Viewer3D<Space, KSpace>::TextureImage aGSImage(anImage, aFunctor,Viewer3D<Space, KSpace>::zDirection, 0,0,0, aTextureMode);
+      viewer.addTextureImage(aGSImage);
+    }else if(mode=="BoundingBox" || mode == "InterGrid" || mode == "Grid")
+    {
+      typename Viewer3D<Space, KSpace>::TextureImage aGSImage(anImage, aFunctor, Viewer3D<Space, KSpace>::zDirection, 0,0,0, aTextureMode);
+      aGSImage.myDrawDomain = true;
+      viewer << SetMode3D( anImage.domain().className(), mode );
+      viewer << anImage.domain();
+      aGSImage.myIndexDomain = viewer.getCurrentDomainNumber()-1;
+      viewer.addTextureImage(aGSImage);
+    }
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::SetMode3D & aMode)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aMode);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::CustomStyle3D & aStyle)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aStyle);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::CustomColors3D & aColor)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aColor);
+}
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::ClippingPlane & aClipping)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aClipping);
+}
+
+
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::draw( Viewer3D<Space, KSpace> & viewer, const DGtal::TransformedPrism & aTransformedPrism)
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aTransformedPrism);
+}
+
+//-----------------------------------------------------------------------------
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::
+draw( Viewer3D<Space,KSpace> & viewer, const DGtal::SetName3D& aName3d )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aName3d );
+}
+//-----------------------------------------------------------------------------
+template <typename Space, typename KSpace>
+inline
+void
+DGtal::Viewer3DFactory<Space,KSpace>::
+draw( Viewer3D<Space,KSpace> & viewer, const DGtal::SetSelectCallback3D& aFct )
+{
+  DGtal::Display3DFactory<Space,KSpace>::draw( viewer, aFct );
+}
+//-----------------------------------------------------------------------------
+
+
+// end heritage
+//----------------------------------------------------------------------------------------------
+
+
+//
+///////////////////////////////////////////////////////////////////////////////

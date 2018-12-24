@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1FreemanChain.html" title="DGtal::FreemanChain\&lt; TInteger \&gt;" alt="" coords="5,181,245,211"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="83,85,168,115"/>
-<area shape="rect" id="node6" title="STL class." alt="" coords="33,5,217,35"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\&lt; 2, Integer \&gt;" alt="" coords="269,181,499,211"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="261,85,507,115"/>
-</map>

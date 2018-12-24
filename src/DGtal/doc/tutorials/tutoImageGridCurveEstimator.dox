@@ -1,0 +1,122 @@
+/**
+ * @file tutoImageGridCurveEstimator.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/10/17
+ *
+ * @brief Documentation file for tutorial "Image -> Region -> Grid curve -> Length estimation"
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoImageGridCurveEstimator Tutorial "Image -> Region -> Grid curve -> Length estimation"
+@writers Tristan Roussillon
+
+In this example, we show how to retrieve 
+the contour of a connected subset of an image
+and estimate its perimeter.   
+[TOC]
+
+\section secttutoImageGridCurveEstimator0 Extracting a digital set from an image
+
+Let us assume that the following image has been loaded into 
+an image object: 
+
+
+ @image html images/imageDomainTuto2.png  "S gray level image" 
+ @image latex images/imageDomainTuto2.png  "S gray level image" width=5cm
+
+
+First of all, we implicitely extract a digital set from an image, 
+using a simple threshold on gray level values:
+
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-predicate
+
+@note The explicit construction of the digital set is not necessary.  
+Since the domain of the image is known (methods lowerBound() and upperBound()), 
+it is indeed enough to have a predicate that indicates, 
+for each point of the domain, 
+whether it belongs to the digital set or not. 
+
+This predicate returns true for each dark pixel of the following image: 
+
+ @image html images/imageDomainTuto2bis.png  "S binary image" 
+ @image latex images/imageDomainTuto2bis.png  "S binary image" width=5cm
+
+\section secttutoImageGridCurveEstimator1 Extracting the contours of a digital set
+
+The extraction of the contour is performed in a cellular space 
+(with 0-, 1-, and 2-cells), given an adjacency (0-, 1-, 2-adjacency). 
+See \ref moduleCellularTopology for the basic
+concepts of cellular topology. 
+
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-prepareTracking
+
+Then, the contour of each connected component can be retrieved as follows:   
+
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-tracking
+
+
+\section secttutoImageGridCurveEstimator2 Grid curve instantiation
+
+The GridCurve object is merely built from one retrieved contour, 
+which is stored as a vector of signed 1-cells:
+
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-instantiation
+
+
+\section secttutoImageGridCurveEstimator3 Length estimation
+
+Now, we want to get a perimeter estimation of the grid curve @a c. 
+Several length estimators have been implemented in DGtal, 
+but we are using in what follows the one based on a greedy segmentation 
+of the curve into digital straight segments (DSS). 
+
+Since the DSS recognition algoritm deals with digital points, 
+we get the points range of the grid curve @a c. 
+
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-getRange
+
+The DSS segmentation looks like this: 
+
+ @image html images/GridCurveDSSSegmentationTuto3.png  "DSS segmentation " 
+ @image latex images/GridCurveDSSSegmentationTuto3.png  "DSS segmentation " width=5cm
+
+Then, we initialize the DSS length estimator from the points range 
+and get the estimated length.
+
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-lengthEstimation
+
+You should see in the standard output:
+
+@code
+Length: 723.238 
+@endcode
+
+
+\section secttutoImageGridCurveEstimator4 Required includes
+
+You should include these common files: 
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-basicIncludes
+
+For loading the image and extracting a digital set by thresholding: 
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-imageIncludes
+
+For extracting the contours of the digital set: 
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-trackingIncludes
+
+And finally, for estimating the length of the retrieved contours, 
+you should include this: 
+@snippet tutorial-examples/imageGridCurveEstimator.cpp imageGridCurveEstimator-estimatorIncludes
+
+*/
+
+}

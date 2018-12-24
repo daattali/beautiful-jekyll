@@ -1,0 +1,521 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+   
+@page moduleIrreducibleFraction  Irreducible fraction, continued fractions
+
+@writers Jacques-Olivier Lachaud
+
+  Part of the \ref packageArithmetic.
+  
+This part of the manual describes how to create and use irreducible
+fractions. More precisely, several representations of irreducible
+fractions are provided. They are based on the Stern-Brocot tree
+structure. With these fractions, amortized constant time operations
+are provided for computing reduced fractions.
+
+Part of the code is a backport from <a
+href="https://gforge.liris.cnrs.fr/projects/imagene">ImaGene</a>. \cite ImaGene
+[TOC]
+
+\section dgtal_irrfrac_sec1 Introduction to positive irreducible fraction.
+
+A positive \b irreducible \b fraction is a fraction \e p / \e q, such
+that \e p and \e q are positive integers and gcd(\e p, \e q)=1. The
+fractions \f$\frac{0}{1}\f$ (zero) and \f$\frac{1}{0}\f$ (infinite)
+are added for convenience. Standard operations like '+', '-', '*', or
+'/' can be defined over these fractions: it is a matter of playing
+with numerators and denominators.
+
+However, these fractions have other properties that are useful in the
+context of digital geometry, especially in digital straightness. These
+other properties are related to Euclid algorithm, the Stern-Brocot
+tree, and simple continued fractions.
+
+\subsection dgtal_irrfrac_sec1_1 Euclid algorithm
+
+The well-known Euclid algorithm is useful to compute the greatest
+common divisor of two integers \e p and \e q. However, its
+intermediate computations are also useful. Let us play with 8/3 (see
+IntegerComputer::gcd).
+
+| p |=| u |*| q |+| r |
+|---|-|---|-|---|-|---|
+| 8 |=| 2 |*| 3 |+| 2 |
+| 3 |=| 1 |*| 2 |+| 1 |
+| 2 |=| 2 |*| 1 |+| 0 |
+| 1 | |   |*| 0 | |   |
+
+At each iteration, \e p takes the former value of \e q, \e q takes the
+former value of \e r. The algorithm stops when \e q is null. Then \e p
+is the gcd (1 here).
+
+The values of \e u are called the \b quotients of \f$\frac{p}{q}\f$,
+and are numbered from 0. A unique way to describe \f$\frac{p}{q}\f$
+is the sequence \f$u_0,u_1,\ldots,u_k\f$, which is in fact denoted as
+\f$[u_0;u_1,\ldots,u_k]\f$. This sequence \b characterizes the
+fraction.
+
+\subsection dgtal_irrfrac_sec1_2 Continued fraction
+
+In fact, one can prove that
+\f$\frac{p}{q}=u_0+\frac{1}{u_1+\frac{1}{\ldots+\frac{1}{u_k}}}\f$,
+which is the simple continued fraction of \e p / \e q.
+
+The successive fractions \f$\frac{p_i}{q_i}=[u_0;u_1,\ldots,u_i]\f$,
+for \f$k < i\f$ are called the \e principal \e convergents of
+\f$\frac{p}{q}\f$, and are the best approximations of this fraction for
+the size of their denominator.
+
+A \e i-\e reduced of a continued fraction is its \e k - \e i-th
+convergent. The \e depth of the fraction is \e k.
+
+A nice property of convergents with respect to their fraction is that even convergents
+are smaller than the fraction while odd convergents are greater.
+
+\subsection dgtal_irrfrac_sec1_3 Stern-Brocot tree
+
+Another (but one-to-one) way of seeing irreducible fractions is the
+Stern-Brocot tree. Place the fractions 0/1 and 1/0 at the top, then
+for each pair of consecutive fractions \f$\frac{p}{q}\f$ and
+\f$\frac{p'}{q'}\f$ compute its mediant \f$\frac{p+p'}{q+q'}\f$. The
+fraction 1/1 appears first, then 1/2 and 2/1, then 1/3, 2/3, 3/2, 3/1,
+etc.
+
+@image html Sternbrocot.png "Stern-Brocot tree of irreducible fractions."
+@image latex Sternbrocot.png "Stern-Brocot tree of irreducible fractions." width=10cm
+
+Now the sequence of quotients \f$u_0, u_1,\ldots, u_k \f$ is exactly
+the sequence of right-then-left moves in the Stern-Brocot tree from
+node 1/1 when \f$ u_0 \ge 1 \f$, except for the last \f$ u_k \f$ where
+there is one less movement. Otherwise, when \f$ u_0 = 0 \f$, the
+sequence \f$ u_1,\ldots, u_k \f$ is exactly the sequence of
+left-then-right moves in the Stern-Brocot tree from node 1/1, except
+for the last \f$ u_k \f$ where there is one less movement.
+
+Looking back at \f$ 8/3=[2;1,2] \f$ gives 2 right moves, 1 left move,
+then 2-1 right move.
+
+
+\section dgtal_irrfrac_sec2 Implementation of irreducible fractions.
+
+When playing with irreducible fractions, computing reduced fractions
+or partial quotients is one of the main task. For instance, splitting
+formula and Berstel splitting formula is intensively used by
+algorithms related to digital straightness. Therefore, we must have
+representations of irreducible fractions which are efficient for that
+kind of requests.
+
+Several representations have been implemented in the Arithmetic package. 
+Their interface are common (see \ref dgtal_irrfrac_sec2_1) so that a user can 
+choose which representation suits him best.
+
+\subsection dgtal_irrfrac_sec2_1 Irreducible fraction concept
+
+Irreducible fractions are first described abstractly with the concept CPositiveIrreducibleFraction.
+Note that the following operations are defined for each irreducible fraction.
+
+
+| Name          | Expression | Type requirements   | Return type | Precondition     | Semantics | Post condition | Complexity |
+|---------------|------------|---------------------|-------------|------------------|-----------|----------------|------------|
+| Constructor   | \c Fraction( \e p, \e q )|       | \e X        |     | creates the fraction p'/q', where p'=p/g, q'=q/g, g=gcd(p,q) | | o(\e p+\e q) |
+| numerator     | \e x.\c p()|                     | \e Integer  | ! \e x.\c null() | returns the numerator|     | O(1) |
+| denominator   | \e x.\c q()|                     | \e Integer  | ! \e x.\c null() | returns the denominator|   | O(1) |
+| quotient      | \e x.\c u()|                     | \e Size     | ! \e x.\c null() | returns the quotient \f$u_k\f$ | | O(1) |
+| depth         | \e x.\c k()|                     | \e Size     | ! \e x.\c null() | returns the depth \e k |   | O(1) |
+| null test     | \e x.\c null()|                  | \c bool     |                  | returns 'true' if the fraction is null 0/0 (default fraction) | | O(1) |
+| even parity   |\e x.\c even()|                   | \c bool     | ! \e x.\c null() | returns 'true' iff the fraction is even, i.e. \e k is even | | O(1) |
+| odd parity    |\e x.\c odd()|                    | \c bool     | ! \e x.\c null() | returns 'true' iff the fraction is odd, i.e. \e k is odd | | O(1) |
+|               |            |                     |             |                  |           |                |            |
+| left descendant| \e x.\c left()|                 | \e X        | ! \e x.\c null() | returns the left descendant of p/q in the Stern-Brocot tree | | O(1) |
+| right descendant|\e x.\c right()|                | \e X        | ! \e x.\c null() | returns the right descendant of p/q in the Stern-Brocot tree | | O(1) |
+| father        |\e x.\c father()|                 | \e X        | ! \e x.\c null() | returns the father of this fraction, ie \f$[u_0,...,u_k - 1]\f$ | | O(1) |
+| m-father      |\e x.\c father(\e m)|             | \e X        | ! \e x.\c null(), \e m>=0 | returns the \e m-father of this fraction, ie \f$[u_0,...,u_{k-1}, m]\f$ | | O( \e m) |
+| previousPartial|\e x.\c previousPartial()|       | \e X        | ! \e x.\c null() | returns the previous partial of this fraction, ie \f$[u_0,...,u_{k-1}]\f$ | | O(1) |
+| inverse       |\e x.\c inverse()|                | \e X        | ! \e x.\c null() | returns the inverse of this fraction, ie \f$[0,u_0,...,u_k]\f$ if \f$u_0 \neq 0 \f$ or \f$[u_1,...,u_k]\f$ otherwise | | O(1) |
+| \e m-th partial |\e x.\c partial(m)|             | \e X        | ! \e x.\c null() | returns the \e m-th partial of this fraction, ie \f$[u_0,...,u_m]\f$ | | O(1) |
+| \e m-th reduced |\e x.\c reduced(m)|             | \e X        | ! \e x.\c null() | returns the \e m-th reduced of this fraction, equivalently the \f$k-m\f$ partial, ie \f$[u_0,...,u_{k-m}]\f$ | | O(1) |
+| splitting formula |\e x.\c getSplit(\e x1, \e x2)| | \c void   | ! \e x.\c null() | modifies fractions \e x1 and \e x2 such that \f$ x1 \oplus x2 = x \f$| | O(1) |
+| Berstel splitting formula |\e x.\c getSplitBerstel(\e x1, \e n1, \e x2, \e n2)| | \c void | ! \e x.\c null() | modifies fractions \e x1 and \e x2 and integers \e n1 and \e n2 such that \f$ (x1)^{n1} \oplus (x2)^{n2}  = x \f$| | O(1) |
+| Continued fraction coefficients |\e x.\c getCFrac(\e quots)| | \c void |             | modifies the vector \e quots such that it contains the quotients \f$u_0,u_1,...,u_k \f$| | O(k) |
+|               |            |                     |             |                  |           |                |            |
+| equality      |\e x.\c equals(\e p, \e q)|       | \c bool     |                  | returns 'true' iff the fraction is equal to \f$ p / q \f$. | | O(1) |
+| less than     |\e x.\c lessThan(\e p, \e q)|     | \c bool     |                  | returns 'true' iff the fraction is inferior to \f$ p / q \f$. | | O(1) |
+| more than     |\e x.\c moreThan(\e p, \e q)|     | \c bool     |                  | returns 'true' iff the fraction is superior to \f$ p / q \f$. | | O(1) |
+| equality ==   |\e x == \e y|                     | \c bool     |                  | returns 'true' iff the fraction is equal to \e y. | | O(1) |
+| inequality != |\e x != \e y|                     | \c bool     |                  | returns 'true' iff the fraction is different from \e y. | | O(1) |
+| less than <   |\e x <  \e y|                     | \c bool     |                  | returns 'true' iff the fraction is inferior to \e y. | | O(1) |
+| more than >   |\e x >  \e y|                     | \c bool     |                  | returns 'true' iff the fraction is superior to \e y. | | O(1) |
+|               |            |                     |             |                  |           |                |            |
+| Next continued fraction | \e x.pushBack( pair )| |             |                  | transforms this fraction \f$[0,u_0,...,u_k]\f$ into \f$[0,u_0,...,u_k,m]\f$, where \e pair is \f$(m,k+1)\f$ | | O(m) |
+| Next continued fraction | \e x.push_back( pair )| |            |                  | transforms this fraction \f$[0,u_0,...,u_k]\f$ into \f$[0,u_0,...,u_k,m]\f$, where \e pair is \f$(m,k+1)\f$ | | O(m) |
+|               |            |                     |             |                  |           |                |            |
+| Begin visiting quotients | \e x.begin()|         | \e ConstIterator |             | returns a forward iterator on the beginning of the sequence of quotients \f$[u_0,...,u_k]\f$ | | |
+| End visiting quotients | \e x.end()|             | \e ConstIterator |             | returns a forward iterator after the end of the sequence of quotients \f$[u_0,...,u_k]\f$ | | |
+
+Inner types are:
+
+- \e Integer: the type for representing a numerator or a denominator.
+
+- \e Size: the type for representing partial quotients, i.e. the integers
+  that appear in the continued fractions of p/q. Might be the same as
+  Integer but may be also smaller, since quotients are generally much
+  smaller than the convergent numerators and denominators.
+
+- \e Value and \e value_type: the type \c std::pair<Size,Size>, useful
+  to create back insertion sequence.
+
+- \e ConstIterator and \e const_iterator: the type for visiting the quotients of the
+  fraction in sequence. The value of the iterator has type \e Value.
+
+Notations are:
+
+- \e X : A type that is a model of CPositiveIrreducibleFraction
+- \e x : object of type \e X, which is below some fraction written \f$[u_0, \ldots, u_k]\f$ as a continued fraction
+- \e x1, \e x2, \e y : other objects of type \e X
+- \e p, \e q : object of type \e Integer
+- \e m, \e n1, \e n2 : objects of type \e Size
+- \e quots : an object of type \c std::vector<Size>
+- \e pair : a object of \c std::pair<Size,Size>, here (m,k+1)  
+
+
+\subsection dgtal_irrfrac_sec2_2 Naive approach
+
+A naive approach is to represent an irreducible fraction with three arrays of integers: 
+the numerators (p_i), the denominators (q_i), the quotients (u_i).
+
+However, each time we duplicate the fraction, or each time we compute a reduced fraction,
+the complexity of the operation is proportional to the depth of the fraction, i.e. in O(k).
+
+We wish to have amortized O(1) complexity for these operations. Therefore, we take another path.
+
+\subsection dgtal_irrfrac_sec2_3 First approach with Stern-Brocot tree
+
+This approach is implemented in the class SternBrocot::Fraction (see also class SternBrocot).
+We construct on demand parts of the Stern-Brocot tree structure. 
+For instance, if one wish to manipule fraction 8/3, the following
+nodes of the tree are computed once and for all: 0/1, 1/0, 1/1, 2/1, 
+1/2, 3/1, 1/3, 5/2, 2/5, 8/3, 3/8.
+
+Each node in the Stern-Brocot is created once. The node stores
+information on the irreducible fraction itself (p/q, the
+partial quotient u, the depth k), but also pointers to
+ascendants, descendants and inverse in the Stern-Brocot tree.
+Nodes are constructed on demand, when the user ask for
+descendant or for a specific fraction.
+
+A fraction SternBrocot::Fraction is just a pointer to the corresponding 
+node in the Stern-Brocot tree. Looking for a reduced partial is just moving 
+from node to node.
+
+@code
+#include "DGtal/arithmetic/SternBrocot.h"
+...
+typedef SternBrocot<DGtal::int64_t,DGtal::int32_t> SB;
+typedef SB::Fraction Fraction;
+typedef Fraction::ConstIterator ConstIterator;
+
+Fraction f1( 117, 45 ); // 117/45
+Fraction f2; // null 0/0
+f2.push_back( std::make_pair( 2, 0 ) ); // u_0 = 2
+f2.push_back( std::make_pair( 1, 1 ) ); // u_1 = 1
+f2.push_back( std::make_pair( 2, 2 ) ); // u_2 = 2
+// f2 = 8/3
+// Displays quotients of f1.
+for ( ConstIterator it = f1.begin(), itend = f1.end();
+      it != itend; ++it )
+  std::cout << "u_" << (*it).second 
+            << " = " << (*it).first << std::endl;
+@endcode
+
+You may have a look at testSternBrocot.cpp to see how to use these fractions.
+
+Also inverses and reduced fractions are quickly computed, 
+this representation has two disadvantages:
+- it is memory costly: many nodes are created for a fraction. In fact \f$2\sum_{i=1..k} u_i\f$ nodes may be created.
+- it is not optimal in terms of complexity. Reduced takes O(1) but computing \f$[u_0,...,u_{k-1},m]\f$ takes O(u_k-m).
+
+\subsection dgtal_irrfrac_sec2_4 Second approach with Stern-Brocot tree
+
+This approach is implemented in the class LighterSternBrocot::Fraction
+(see also class LighterSternBrocot).
+
+There are two main differences with the class SternBrocot. The
+first one is that inverses are not stored. With this optimization,
+there are twice less nodes and each node is lighter. The second one
+lies in the access to the children of a node. Here, a map type M is
+   provided so that a node \f$ [u_0; u_1, ..., u_n] \f$ can access its child
+   node \f$ [u_0; u_1, ..., u_n, k] \f$ in the time of the operation
+   M::operator[]. This representation is also different from
+   LightSternBrocot in the sense that nodes have only one set of child
+   nodes and that only fractions greater than 1/1 are stored.
+
+   In this representation, the fraction 1/1 has depth 0, like 2/1,
+   3/1, etc. Furthermore, each fraction \f$ [u_0,...,u_n] \f$ has an origin
+   which is the fraction \f$ [u_0,...,u_{n-1},1] \f$. It is the top extremity
+   of this branch. The origin has depth n-1 since \f$ [u_0,...,u_{n-1},1] \f$
+   = \f$ [u_0,...,u_{n-1}+1] \f$. Inversely a k-child of \f$ [u_0,...,u_n] \f$, for k
+   >= 2, is the fraction \f$ [u_0,...,u_n - 1, k] \f$. A 1-child of a fraction
+   f is itself, except for the fraction 1/0 where its 1-child is 1/1
+   by convention.
+
+   In practice, also this class has supposedly a better complexity
+   than SternBrocot, it is 1% slower for integers smaller than 10^9
+   and 5% slower for integers smaller than 10^4. Note however that it
+   takes like 7 times less memory (and asymptotically less when the
+   number of computations tends toward infinity).
+
+   This class is not to be instantiated, since it is useless to
+   duplicate it. Use static method LighterSternBrocot::fraction or constructor of LighterSternBrocot::Fraction to obtain
+   your fractions.
+
+@code
+#include "DGtal/arithmetic/LighterSternBrocot.h"
+...
+typedef SternBrocot<DGtal::int64_t, DGtal::int32_t, DGtal::StdMapRebinder> SB;
+typedef SB::Fraction Fraction;
+typedef Fraction::ConstIterator ConstIterator;
+
+Fraction f1( 117, 45 ); // 117/45
+Fraction f2; // null 0/0
+f2.push_back( std::make_pair( 2, 0 ) ); // u_0 = 2
+f2.push_back( std::make_pair( 1, 1 ) ); // u_1 = 1
+f2.push_back( std::make_pair( 2, 2 ) ); // u_2 = 2
+// f2 = 8/3
+// Displays quotients of f1.
+for ( ConstIterator it = f1.begin(), itend = f1.end();
+      it != itend; ++it )
+  std::cout << "u_" << (*it).second 
+            << " = " << (*it).first << std::endl;
+@endcode
+
+You may have a look at testLighterSternBrocot.cpp to see how to use these fractions.
+
+\section dgtal_irrfrac_sec3 Using irreducible fractions.
+
+\subsection dgtal_irrfrac_sec3_1 Choosing your integers for fractions
+
+Available fractions allows you to choose the ultimate precision 
+you wish to have for your fractions.
+
+You have two different integral types for irreducible fractions: TInteger and TSize. 
+The type TInteger defines the integral type for the numerators and the denominators.
+The type TSize defines the integral type for the quotients and for the depth of the 
+fraction. 
+
+\note It is worthy to note that quotients are in general much much smaller than 
+numerators and denominators (except for fractions p/1 or 1/q). You may choose 
+thus a smaller type for TSize (like DGtal::int32_t) than for TInteger 
+(for instance DGtal::int64_t).
+
+You may for instance choose your fractions like:
+@code
+// With SternBrocot
+typedef SternBrocot<DGtal::int64_t,DGtal::int32_t>::Fraction Fraction; // not so big fractions
+typedef SternBrocot<DGtal::BigInteger,DGtal::BigInteger>::Fraction Fraction; // arbitrary large fractions
+
+// With LighterSternBrocot
+typedef LighterSternBrocot<DGtal::int64_t,DGtal::int32_t,DGtal::StdMapRebinder>::Fraction Fraction; // not so big fractions
+typedef LighterSternBrocot<DGtal::BigInteger,DGtal::BigInteger,DGtal::StdMapRebinder>::Fraction Fraction; // arbitrary large fractions
+@endcode
+
+\note If you wish to instantiate fractions with integral types
+other than DGtal::int32_t, DGtal::int64_t, DGtal::BigInteger, then you 
+must instantiate the singleton of the class. For instance, add somewhere
+in your code:
+
+@code
+// With SternBrocot
+typedef SternBrocot<IntegralType1,IntegralType2>::Fraction Fraction; // not so big fractions
+
+template <>
+SternBrocot<IntegralType1,IntegralType2>*
+SternBrocot<IntegralType1,IntegralType2>::singleton = 0;
+@endcode
+
+\note In some sense, \e IntegralType2 should be promotable to \e IntegralType1. 
+I.e., if \e t1 is of type \e IntegralType1 and \e t2 is of type \e IntegralType2 then
+
+@code
+t1 = (IntegralType1) t2; 
+@endcode
+should be valid.
+
+\subsection dgtal_irrfrac_sec3_2 Instantiating fractions
+
+You may instantiate a fraction directly by giving the numerator \e p and denominator \e q. 
+Note that if \f$ g = gcd(p,q) \neq 1 \f$, the instantiated fraction is \f$ \frac{p'}{q'} \f$ 
+where \f$ p'=p/g, q'=q/g \f$. We follow the example convergents.cpp.
+
+First we give the correct includes:
+
+@snippet arithmetic/convergents.cpp convergents-basicIncludes
+
+Then the useful types:
+
+@snippet arithmetic/convergents.cpp convergents-types
+
+The program is given \e p and \e q in arguments \e argv. The fraction is
+instantiated as follows:
+
+@snippet arithmetic/convergents.cpp convergents-instantiation
+
+\subsection dgtal_irrfrac_sec3_3 Obtaining quotients
+
+You may visit the quotients of a fraction by using the single-pass iterators
+provided by the class. A fraction is indeed a model of CSinglePassConstRange.
+The quotients are computed and stored with the call to \c begin(). We therefore
+advise you to store the begin() iterator in a variable. Then, all other
+operations with iterators (copy, displacement, comparison, dereferenciation) are O(1).
+We display the quotients of the fraction \e f as follows.
+
+@snippet arithmetic/convergents.cpp convergents-cfrac
+
+\note The iterator value is the pair \f$ (u_i,i) \f$ where \f$ 0 \le i \le k \f$ 
+and \e k is the depth of the fraction. The type is therefore a \c std::pair<Size,Size>.
+This is done for consistency with \c push_back method.
+
+\subsection dgtal_irrfrac_sec3_3_bis Obtaining all the convergents of a fraction
+
+One way of obtaining all the convergents of a fraction is simply to create the fraction
+progressively by adding quotients one at a time. You may use the methods \c pushBack or \c push_back 
+to do so. This can be done as follows:
+
+@snippet arithmetic/convergents.cpp convergents-convergents
+
+You may now execute this program to get the quotients and the convergents of a 
+given fraction. We give below several examples:
+
+@verbatim
+# A Fibonacci fraction
+$ ./examples/arithmetic/convergents 21 34
+z = [0,1,1,1,1,1,1,2]
+z_0 = 0 / 1
+z_1 = 1 / 1
+z_2 = 1 / 2
+z_3 = 2 / 3
+z_4 = 3 / 5
+z_5 = 5 / 8
+z_6 = 8 / 13
+z_7 = 21 / 34
+
+# Approximations of pi
+$ ./examples/arithmetic/convergents 103993 33102
+z = [3,7,15,1,292]
+z_0 = 3 / 1
+z_1 = 22 / 7
+z_2 = 333 / 106
+z_3 = 355 / 113
+z_4 = 103993 / 33102
+
+# A huge fraction
+$ ./examples/arithmetic/convergents-biginteger 243224233245235253407096734543059 4324213412343432913758138673203834
+z = [0,17,1,3,1,1,12,1,2,33,2,1,1,1,1,49,1,1,1,1,17,34,1,1,304,1,2,1,1,1,2,1,48,1,20,2,3,5,1,1,16,9,1,1,5,1,2,2,7,4,3,1,7,1,1,17,1,1,29,1,12,2,5]
+z_0 = 0 / 1
+z_1 = 1 / 17
+z_2 = 1 / 18
+z_3 = 4 / 71
+z_4 = 5 / 89
+...
+z_18 = 23610961 / 419772458
+...
+z_40 = 832739221613445323225 / 14805030169237188131024
+...
+z_62 = 243224233245235253407096734543059 / 4324213412343432913758138673203834
+@endverbatim
+
+\subsection dgtal_irrfrac_sec3_4 Fractions are back insertable
+
+Since fractions have a \c push_back method, you can use \c std::back_inserter 
+to create a \c std::back_insert_iterator on your fraction. The code
+for computing a fraction from its quotients looks like: 
+
+@see fraction.cpp
+
+@snippet arithmetic/fraction.cpp fraction-from-quotients
+
+which gives
+
+@verbatim
+# More precise approximation of pi
+$ ./examples/arithmetic/fraction 3 7 15 1 292 1 1 1 2 1 3 1 14
+z = 80143857 / 25510582
+@endverbatim
+
+\subsection dgtal_irrfrac_sec3_5 Computing reduced fractions
+
+If \f$ z_k \f$ is a fraction, its 1-reduced is \f$ z_{k-1} \f$, its 2-reduced is \f$ z_{k-2} \f$
+and so on. Reduced are in particular used for computing Bézout vectors, or in splitting formulas.
+You may use the methods \c reduced (SternBrocot::Fraction::reduced, 
+LighterSternBrocot::Fraction::reduced) or \c partial (SternBrocot::Fraction::partial,
+LighterSternBrocot::Fraction::partial) to obtain them.
+
+Assume \e f is the fraction \f$ 103993 / 33102 = [3;7,15,1,292] \f$. Then
+@code
+Fraction z_3 = f.reduced( 1 ); // [3;7,15,1] but in fact [3;7,16]
+Fraction z_2 = f.reduced( 2 ); // [3;7,15] 
+@endcode
+
+\note The depth of a \e i-reduced fraction is necessarily \f$ k - i \f$.
+It may be \f$ k - i - 1 \f$.
+
+You dispose also of the methods \c getSplit and \c getSplitBerstel to obtain directly
+the decomposition of a fraction into two fractions. Their "mediant sum" gives the fraction itself.
+Fractions are seen as vectors in this case.
+
+@see SternBrocot::Fraction::getSplit, LighterSternBrocot::Fraction::getSplit,
+SternBrocot::Fraction::getSplitBerstel, LighterSternBrocot::Fraction::getSplitBerstel.
+
+\subsection dgtal_irrfrac_sec3_6 Getting ancestors in the Stern-Brocot tree
+
+Convergents or partials, and reduced fractions are ancestors of a given fractions. 
+There exist in-between ancestors which are not given by these methods. We list them below
+with their exact definition, assuming \e f is \f$ [u_0,...,u_{k-1},u_k] \f$:
+
+- \e i-\b convergent or \e i-\b partial: the fraction \f$ z_i=[u_0,...,u_i] \f$.
+  Method \c partial,  SternBrocot::Fraction::partial, LighterSternBrocot::Fraction::partial.
+- \e i-\b reduced fraction: the fraction \f$ z_{k-i}=[u_0,...,u_{k-i}] \f$.
+  Method \c reduced,  SternBrocot::Fraction::reduced, LighterSternBrocot::Fraction::reduced.
+- \b father fraction: the fraction \f$ z'=[u_0,...,u_{k-1},u_{k} - 1] \f$.
+  Method \c father,  SternBrocot::Fraction::father, LighterSternBrocot::Fraction::father.
+- \e m-\b father fraction: the fraction \f$ z'=[u_0,...,u_{k-1},m] \f$.
+  Method \c father(Size m),  SternBrocot::Fraction::father(Size m) const, LighterSternBrocot::Fraction::father(Size m) const.
+- \b origin fraction: the fraction \f$ z'=[u_0,...,u_{k-1},1] \f$.
+  Method \c origin,  SternBrocot::Fraction::origin, LighterSternBrocot::Fraction::origin.
+
+\subsection dgtal_irrfrac_sec3_7 Inverse of a fraction
+
+You can get the inverse of a fraction in O(1) with the
+method \c inverse (SternBrocot::Fraction::inverse, LighterSternBrocot::Fraction::inverse).
+
+\subsection dgtal_irrfrac_sec3_8 Rational approximation of floating-point number
+
+A simple way to get rational approximation of a "real" number is to
+use the mapping: \f$ G(x)=\frac{1}{x- \lfloor x \rfloor} \f$. The
+successive \f$ \lfloor x \rfloor \f$ gives the successive quotients of
+the rational approximation. You may have a look at example
+approximation.cpp.
+
+@snippet arithmetic/approximation.cpp approximation-process
+
+
+\subsection dgtal_irrfrac_sec3_9 Standard arithmetic operations '+', '-', '*', '/'
+
+There are not implemented yet and continued fractions are not the best
+representation for doing them. Here, you must use numerators and
+denominators to perform computations with these fractions.
+
+\todo Arithmetic operations will soon be implemented with usual
+arithmetic operations on numerators and denominators. Furthermore, a
+dedicated system for performing arithmetic operations using only
+quotients (and guaranteed O(log(k)) complexity) is also under
+development.
+
+*/
+
+
+}

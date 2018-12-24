@@ -1,0 +1,1070 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Object.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @author Pablo Hernandez-Cerdan. Institute of Fundamental Sciences.
+ * Massey University. Palmerston North, New Zealand
+ *
+ * @date 2016/02/01
+ *
+ * Implementation of inline methods defined in Object.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/kernel/sets/DigitalSetDomain.h"
+#include "DGtal/topology/DigitalTopology.h"
+#include "DGtal/topology/MetricAdjacency.h"
+#include "DGtal/topology/DigitalTopologyTraits.h"
+#include "DGtal/graph/BreadthFirstVisitor.h"
+#include "DGtal/graph/Expander.h"
+#include "DGtal/topology/NeighborhoodConfigurations.h"
+#include "DGtal/topology/helpers/NeighborhoodConfigurationsHelper.h"
+
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Constructor.
+ *
+ * @param aTopology the digital topology chosen for this set, a copy of
+ * which is stored in the object.
+ *
+ * @param aPointSet the set of points of the object. It is copied
+ * in the object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet>::Object()
+  : myTopo( nullptr ),
+    myPointSet( nullptr ),
+    myConnectedness( UNKNOWN ),
+    myTable( nullptr ),
+    myNeighborConfigurationMap( nullptr ),
+    myTableIsLoaded( false )
+{
+}
+
+/**
+ * Constructor.
+ *
+ * @param aTopology the digital topology chosen for this set, a copy of
+ * which is stored in the object.
+ *
+ * @param aPointSet the set of points of the object. It is copied
+ * in the object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet>::Object
+( Clone<DigitalTopology> aTopology,
+  Clone<DigitalSet> aPointSet,
+  Connectedness cxn )
+  : myTopo( aTopology ),
+    myPointSet( aPointSet ),
+    myConnectedness( cxn ),
+    myTable( nullptr ),
+    myNeighborConfigurationMap( nullptr ),
+    myTableIsLoaded(false)
+{
+}
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ *
+ * The copy is smart in the sense that the digital set is
+ * referenced, and will be copied only if the set is changed.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet>::Object
+( const Object & other )
+  : myTopo( other.myTopo ),
+    myPointSet( other.myPointSet ),
+    myConnectedness( other.myConnectedness ),
+    myTable( other.myTable ),
+    myNeighborConfigurationMap( other.myNeighborConfigurationMap ),
+    myTableIsLoaded(other.myTableIsLoaded)
+{
+}
+
+/**
+ * Constructor of an empty object by providing a domain.
+ *
+ * @param aTopology the digital topology chosen for this set, a copy of
+ * which is stored in the object.
+ *
+ * @param aDomain any domain related to the given topology.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet>::Object
+( Clone<DigitalTopology> aTopology,
+  Clone<Domain> aDomain )
+  : myTopo( new DigitalTopology( aTopology ) ),
+    myPointSet( new DigitalSet( aDomain ) ),
+    myConnectedness( CONNECTED ),
+    myTable( nullptr ),
+    myNeighborConfigurationMap( nullptr ),
+    myTableIsLoaded(false)
+{
+}
+
+
+/**
+ * Destructor.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet>::~Object()
+{
+}
+
+/**
+ * Assignment.
+ * @param other the object to copy.
+ * @return a reference on 'this'.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet> &
+DGtal::Object<TDigitalTopology, TDigitalSet>::operator=
+( const Object & other )
+{
+  if ( this != &other )
+  {
+    myTopo = other.myTopo;
+    myPointSet = other.myPointSet;
+    myConnectedness = other.myConnectedness;
+    myTable = other.myTable;
+    myNeighborConfigurationMap = other.myNeighborConfigurationMap;
+    myTableIsLoaded = other.myTableIsLoaded;
+  }
+  return *this;
+}
+
+/**
+ * @return the number of elements in the set.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Size
+DGtal::Object<TDigitalTopology, TDigitalSet>::size() const
+{
+  return myPointSet->size();
+}
+
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+void
+DGtal::Object<TDigitalTopology, TDigitalSet>::setTable( Alias<boost::dynamic_bitset<> > input_table)
+{
+  myTable = input_table;
+  myNeighborConfigurationMap = DGtal::functions::mapZeroPointNeighborhoodToConfigurationMask<Point>();
+  myTableIsLoaded = true;
+}
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::NeighborhoodConfiguration
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+getNeighborhoodConfigurationOccupancy(const Point & center,
+          const std::unordered_map< Point,
+          NeighborhoodConfiguration> & mapZeroNeighborhoodToMask) const
+{
+  using DomainConstIterator = typename Domain::ConstIterator;
+  Point p1 = Point::diagonal( -1 );
+  Point p2 = Point::diagonal(  1 );
+  Point c = Point::diagonal( 0 );
+  Domain cube_domain( p1, p2 );
+  const auto & not_found( this->pointSet().end() );
+  NeighborhoodConfiguration cfg{0};
+  for ( DomainConstIterator it = cube_domain.begin(); it != cube_domain.end(); ++it ) {
+    if( *it != c  &&
+        this->pointSet().find( center + *it ) != not_found )
+      cfg |= mapZeroNeighborhoodToMask.at(*it) ;
+  }
+  return cfg;
+
+}
+/**
+ * A const reference to the embedding domain.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+const typename DGtal::Object<TDigitalTopology, TDigitalSet>::Domain &
+DGtal::Object<TDigitalTopology, TDigitalSet>::domain() const
+{
+  return myPointSet->domain();
+}
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::CowPtr<typename DGtal::Object<TDigitalTopology, TDigitalSet>::Domain>
+DGtal::Object<TDigitalTopology, TDigitalSet>::domainPointer() const
+{
+  return myPointSet->domainPointer();
+}
+
+
+/**
+ * A const reference on the point set defining the points of the
+ * digital object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+const TDigitalSet &
+DGtal::Object<TDigitalTopology, TDigitalSet>::pointSet() const
+{
+  return *myPointSet;
+}
+
+/**
+ * A reference on the point set defining the points of the
+ * digital object (may duplicate the set).
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+TDigitalSet &
+DGtal::Object<TDigitalTopology, TDigitalSet>::pointSet()
+{
+  myConnectedness = UNKNOWN;
+  return *myPointSet;
+}
+
+/**
+ * @return a const reference to the topology of this object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+const TDigitalTopology &
+DGtal::Object<TDigitalTopology, TDigitalSet>::topology() const
+{
+  return *myTopo;
+}
+
+/**
+ * @return a const reference to the adjacency of this object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+const typename TDigitalTopology::ForegroundAdjacency &
+DGtal::Object<TDigitalTopology, TDigitalSet>::adjacency() const
+{
+  return myTopo->kappa();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Object services --------------------------------
+
+/**
+ * Let A be this object with foreground adjacency k and N_k(p) the
+ * k-neighborhood of p. Returns the set A intersected with N_k(p).
+ *
+ * @param p any point (in the domain of the digital object, not
+ * necessarily in the object).
+ *
+ * @return the kappa-neighborhood of [p] in this object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::SmallObject
+DGtal::Object<TDigitalTopology, TDigitalSet>::neighborhood
+( const Point & p ) const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  adjacency().writeNeighbors( back_ins_it, p );
+  tmp_local_points.push_back( p );
+
+  // A neighborhood is small, so is defined the digital object.
+  SmallObject neighA( myTopo, pointSet().domainPointer() );
+  const ContainerConstIterator it_end( tmp_local_points.end() );
+  const DigitalSetConstIterator not_found( pointSet().end() );
+  SmallSet & neighASet = neighA.pointSet();
+  for ( ContainerConstIterator it = tmp_local_points.begin();
+      it != it_end;
+      ++it )
+    if ( pointSet().find( *it ) != not_found )
+      neighASet.insertNew( *it ); // insertNew is guaranteed by construction.
+  return neighA;
+}
+
+/**
+ * @param p any point (in the domain of the digital object, not
+ * necessarily in the object).
+ *
+ * @return the cardinal of the kappa-neighborhood of [p] in this object.
+ *
+ * @see neighborhood
+ *
+ * NB: faster than computing the neighborhood then computing its cardinal.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Size
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::neighborhoodSize( const Point & p ) const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  adjacency().writeNeighbors( back_ins_it, p );
+  tmp_local_points.push_back( p );
+
+  // A neighborhood is small, so is defined the digital object.
+  const ContainerConstIterator it_end( tmp_local_points.end() );
+  const DigitalSetConstIterator not_found( pointSet().end() );
+  Size nb = 0;
+  for ( ContainerConstIterator it = tmp_local_points.begin();
+      it != it_end;
+      ++it )
+    if ( pointSet().find( *it ) != not_found )
+      ++nb;
+  return nb;
+}
+
+
+/**
+ * Let A be this object with foreground adjacency k and N*_k(p)
+ * the proper k-neighborhood of p. Returns the set A intersected
+ * with N*_k(p).
+ *
+ * @param p any point (in the domain of the digital object, not
+ * necessarily in the object).
+ *
+ * @return the kappa-neighborhood of [p] in this object, without p.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::SmallObject
+DGtal::Object<TDigitalTopology, TDigitalSet>::properNeighborhood
+( const Point & p ) const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  adjacency().writeNeighbors( back_ins_it, p );
+
+  // A neighborhood is small, so is defined the digital object.
+  SmallObject neighA( myTopo, pointSet().domainPointer() );
+  const ContainerConstIterator it_end( tmp_local_points.end() );
+  const DigitalSetConstIterator not_found( pointSet().end() );
+  SmallSet & neighASet = neighA.pointSet();
+  for ( ContainerConstIterator it = tmp_local_points.begin();
+      it != it_end;
+      ++it )
+    if ( pointSet().find( *it ) != not_found )
+      neighASet.insertNew( *it ); // insertNew is guaranteed by construction.
+  return neighA;
+}
+
+/**
+ * @param p any point (in the domain of the digital object, not
+ * necessarily in the object).
+ *
+ * @return the cardinal of the kappa-neighborhood of [p] in this object.
+ *
+ * @see properNeighborhood
+ *
+ * NB: faster than computing the proper neighborhood then
+ * computing its cardinal.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Size
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::properNeighborhoodSize( const Point & p ) const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  adjacency().writeNeighbors( back_ins_it, p );
+
+  // A neighborhood is small, so is defined the digital object.
+  const ContainerConstIterator it_end( tmp_local_points.end() );
+  const DigitalSetConstIterator not_found( pointSet().end() );
+  Size nb = 0;
+  for ( ContainerConstIterator it = tmp_local_points.begin();
+      it != it_end;
+      ++it )
+    if ( pointSet().find( *it ) != not_found )
+      ++nb;
+  return nb;
+}
+
+
+
+/**
+ * @return the border of this object (the set of points of this
+ * which is lambda()-adjacent with some point of the background).
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+DGtal::Object<TDigitalTopology, TDigitalSet>
+DGtal::Object<TDigitalTopology, TDigitalSet>::border() const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+  //typedef typename Domain::Predicate Predicate;
+
+  // Intermediate container that is fast writable.
+  const DigitalSet & mySet = pointSet();
+  Object<DigitalTopology, DigitalSet> output( topology(),
+					      mySet.domainPointer() );
+  DigitalSet & outputSet = output.pointSet();
+
+  // Loop on all points of the set.
+  Container tmp_local_points;
+  const DigitalSetConstIterator it_end = mySet.end();
+  for ( DigitalSetConstIterator it = mySet.begin();
+      it != it_end;
+      ++it )
+  {
+    std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+    // Computing neighborhood within domain.
+    topology().lambda().writeNeighbors
+    ( back_ins_it, *it, domain().predicate() );
+    // Checks if any point is not in the object.
+    const ContainerConstIterator itc_end( tmp_local_points.end() );
+    for ( ContainerConstIterator itc = tmp_local_points.begin();
+        itc != itc_end;
+        ++itc )
+      if ( pointSet().find( *itc ) == it_end )
+      {
+        outputSet.insertNew( *it );
+        break;
+      }
+    tmp_local_points.clear();
+  }
+  return output;
+}
+
+/**
+ * Computes the connected components of the object and writes
+ * them on the output iterator [it].
+ *
+ * @tparam OutputObjectIterator the type of an output iterator in
+ * a container of Object s.
+ *
+ * @param it the output iterator. *it is an Object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+template <typename OutputObjectIterator>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Size
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::writeComponents( OutputObjectIterator & it ) const
+{
+  Size nb_components = 0;
+  if ( pointSet().empty() )
+  {
+    myConnectedness = CONNECTED;
+    return nb_components;
+  }
+  else
+    if ( connectedness() == CONNECTED )
+    {
+      *it++ = *this;
+      return 1;
+    }
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+  DigitalSetConstIterator it_object = pointSet().begin();
+  Point p( *it_object++ );
+
+  // first component.
+  BreadthFirstVisitor< Object, std::set<Vertex> > visitor( *this, p );
+  while ( ! visitor.finished() ) visitor.expand();
+  DigitalSet visited( domainPointer() );
+  visited.insertNew( visitor.markedVertices().begin(),
+                     visitor.markedVertices().end() );
+  *it++ = Object( myTopo, visited, CONNECTED );
+  ++nb_components;
+  while ( it_object != pointSet().end() )
+  {
+    p = *it_object++;
+    if ( visited.find( p ) == visited.end() )
+    {
+      BreadthFirstVisitor< Object, std::set<Vertex> > visitor2( *this, p );
+      while ( ! visitor2.finished() ) visitor2.expand();
+      DigitalSet visited2( domainPointer() );
+      visited2.insertNew( visitor2.markedVertices().begin(),
+                          visitor2.markedVertices().end() );
+      *it++ = Object( myTopo, visited2, CONNECTED );
+      ++nb_components;
+      visited += visited2;
+    }
+  }
+  // Expander<Object> expander( *this, p );
+  // while ( expander.nextLayer() )
+  //   ;
+  // Object component( myTopo, expander.core(), CONNECTED );
+  // *it++ = component;
+  // ++nb_components;
+  // DigitalSet visited( expander.core() );
+  // while ( it_object != pointSet().end() )
+  // {
+  //   p = *it_object++;
+  //   if ( visited.find( p ) == visited.end() )
+  //   {
+  //     Expander<Object> expander2( *this, p );
+  //     while ( expander2.nextLayer() )
+  //       ;
+  //     Object component2( myTopo, expander2.core(), CONNECTED );
+  //     *it++ = component2;
+  //     ++nb_components;
+  //     visited += expander2.core();
+  //   }
+  // }
+  myConnectedness = nb_components == 1 ? CONNECTED : DISCONNECTED;
+  return nb_components;
+}
+
+/**
+ * @return the connectedness of this object. Either CONNECTED,
+ * DISCONNECTED, or UNKNOWN.
+ *
+ * @see computeConnectedness
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+DGtal::Connectedness
+DGtal::Object<TDigitalTopology, TDigitalSet>::connectedness() const
+{
+  return myConnectedness;
+}
+
+/**
+ * If 'connectedness() == UNKNOWN', computes the connectedness of
+ * this object. After that, the connectedness of 'this' is either
+ * CONNECTED or DISCONNECTED.
+ *
+ * @return the connectedness of this object. Either CONNECTED or
+ * DISCONNECTED.
+ *
+ * @see connectedness
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+DGtal::Connectedness
+DGtal::Object<TDigitalTopology, TDigitalSet>::computeConnectedness() const
+{
+  if ( myConnectedness == UNKNOWN )
+  {
+    if ( pointSet().empty() )
+      myConnectedness = CONNECTED;
+    else
+    {
+      // Take first point
+      Vertex p = *( pointSet().begin() );
+      BreadthFirstVisitor< Object, std::set<Vertex> > visitor( *this, p );
+      while ( ! visitor.finished() )
+       {
+         visitor.expand();
+       }
+      myConnectedness = ( visitor.visitedVertices().size() == pointSet().size() )
+        ? CONNECTED : DISCONNECTED;
+      // JOL: 2012/11/16 There is apparently now a bug in expander !
+      // Very weird considering this was working in 2012/05. Perhaps
+      // this is related to some manipulations in predicates.
+      //
+      // Expander<Object> expander( *this, p );
+      // // and expand.
+      // while ( expander.nextLayer() )
+      //   ;
+      // myConnectedness = ( expander.core().size() == pointSet().size() )
+      //     ? CONNECTED : DISCONNECTED;
+    }
+  }
+  return myConnectedness;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Graph services ------------------------------
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::ConstIterator
+DGtal::Object<TDigitalTopology, TDigitalSet>::begin() const
+{
+  return myPointSet->begin();
+}
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::ConstIterator
+DGtal::Object<TDigitalTopology, TDigitalSet>::end() const
+{
+  return myPointSet->end();
+}
+
+/**
+ * @param v any vertex of the object
+ *
+ * @return the number of neighbors of this vertex
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Size
+DGtal::Object<TDigitalTopology, TDigitalSet>::degree
+( const Vertex & v ) const
+{
+  return properNeighborhoodSize( v );
+}
+
+/**
+ * @return the maximum number of neighbors for a vertex of this object
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Size
+DGtal::Object<TDigitalTopology, TDigitalSet>::bestCapacity() const
+{
+  return myTopo->kappa().bestCapacity();
+}
+
+/**
+ * Writes the neighbors of a vertex using an output iterator
+ *
+ *
+ * @tparam OutputObjectIterator the type of an output iterator writing
+ * in a container of vertices.
+ *
+ * @param it the output iterator
+ *
+ * @param v the vertex whose neighbors will be writeNeighbors
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+template <typename OutputIterator>
+inline
+void
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+writeNeighbors( OutputIterator & it,
+                const Vertex & v ) const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  adjacency().writeNeighbors( back_ins_it, v );
+
+  // A neighborhood is small, so is defined the digital object.
+  const ContainerConstIterator it_end( tmp_local_points.end() );
+  const DigitalSetConstIterator not_found( pointSet().end() );
+  for ( ContainerConstIterator cit = tmp_local_points.begin();
+      cit != it_end;
+      ++cit )
+    if ( pointSet().find( *cit ) != not_found )
+      *it++ = *cit;
+}
+
+/**
+ * Writes the neighbors of a vertex which satisfy a predicate using an
+ * output iterator
+ *
+ *
+ * @tparam OutputObjectIterator the type of an output iterator writing
+ * in a container of vertices.
+ *
+ * @tparam VertexPredicate the type of the predicate
+ *
+ * @param it the output iterator
+ *
+ * @param v the vertex whose neighbors will be written
+ *
+ * @param pred the predicate that must be satisfied
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+template <typename OutputIterator, typename VertexPredicate>
+inline
+void
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+writeNeighbors( OutputIterator & it,
+                const Vertex & v,
+                const VertexPredicate & pred ) const
+{
+  typedef std::vector<Vertex> Container;
+  typedef typename Container::const_iterator ContainerConstIterator;
+  typedef typename DigitalSet::ConstIterator DigitalSetConstIterator;
+
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  adjacency().writeNeighbors( back_ins_it, v );
+
+  // A neighborhood is small, so is defined the digital object.
+  const ContainerConstIterator it_end( tmp_local_points.end() );
+  const DigitalSetConstIterator not_found( pointSet().end() );
+  for ( ContainerConstIterator cit = tmp_local_points.begin();
+      cit != it_end;
+      ++cit )
+    if ( ( pointSet().find( *cit ) != not_found ) && pred(*cit) )
+      *it++ = *cit;
+}
+
+/**
+ * @note For this to work with graph algorithms, the source of the edge must be the input vertex, even on undirected graphs.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::EdgeRange
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+outEdges( const Vertex & v) const
+{
+  typedef std::vector<Vertex> Container;
+
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+
+  EdgeRange out_edges;
+  this->writeNeighbors(back_ins_it, v);
+  for ( auto && cit = tmp_local_points.begin();
+      cit != tmp_local_points.end(); ++cit )
+    out_edges.emplace_back(Edge(v, *cit, true));
+
+  return out_edges;
+}
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Vertex
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+head( const Edge & e ) const
+{
+  return e.vertices[1];
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Vertex
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+tail( const Edge & e ) const
+{
+  return e.vertices[0];
+}
+//-----------------------------------------------------------------------------
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::Edge
+DGtal::Object<TDigitalTopology, TDigitalSet>::
+opposite( const Edge & v) const
+{
+  // boolean constructor to force order of vertices.
+  return Edge(v.vertices[1],v.vertices[0], true);
+}
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Simple points -------------------------------
+
+/**
+ * Geodesic neighborhood of point [p] and order [k] in the object
+ * for the given metric adjacency.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+template <typename TAdjacency>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::SmallObject
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::geodesicNeighborhood
+( const TAdjacency & adj, const Point & p, unsigned int k ) const
+{
+  // Local types.
+  typedef std::vector<Vertex> Container;
+  typedef MetricAdjacency<Space, Space::dimension> AlphaAdjacency;
+  typedef MetricAdjacency<Space, 1> OmegaAdjacency;
+  typedef DGtal::DigitalTopology<TAdjacency, OmegaAdjacency> LocalTopology;
+  typedef Object<LocalTopology, SmallSet> LocalObject;
+  typedef HyperRectDomain<Space> LocalDomain;
+
+  AlphaAdjacency alpha;
+  OmegaAdjacency omega;
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  alpha.writeNeighbors( back_ins_it, p, *myPointSet ); // p is not a neighbor itself.
+
+  // Construct local domain.
+  Point p1 = p - Point::diagonal(1);
+  Point p2 = p + Point::diagonal(1);
+  CowPtr<LocalDomain> aDomain( new LocalDomain( p1, p2 ) );
+
+  // Construct local X.
+  LocalTopology aTopology( adj, omega );
+  LocalObject X( aTopology, aDomain );
+  X.pointSet().insertNew( tmp_local_points.begin(), tmp_local_points.end() );
+
+  // A neighborhood is small, so is defined the digital object.
+  typename LocalObject::SmallObject neighAdj = X.properNeighborhood( p );
+
+  BreadthFirstVisitor<LocalObject, std::set<Vertex> > visitor
+    ( X, neighAdj.pointSet().begin(),
+      neighAdj.pointSet().end() );
+  while ( ! visitor.finished() )
+    {
+      typename LocalObject::Size d = visitor.current().second;
+      if ( d < k )       visitor.expand(); // we need to go further
+      else if ( d == k ) visitor.ignore(); // no need to go further
+      else break; // to far away, we exit
+    }
+  visitor.terminate();
+  SmallObject geodesicN( this->topology(), aDomain );
+  geodesicN.pointSet().insertNew( visitor.markedVertices().begin(),
+                                  visitor.markedVertices().end()  );
+
+  // JOL: 2012/11/16 There is apparently now a bug in expander !
+  // Very weird considering this was working in 2012/05. Perhaps
+  // this is related to some manipulations in predicates.
+  // Expander<LocalObject> expander( X,
+  //     neighAdj.pointSet().begin(),
+  //     neighAdj.pointSet().end() );
+  // for ( unsigned int i = 1; ( i < k ) && ( ! expander.finished() ); ++i )
+  //   expander.nextLayer();
+  // SmallObject geodesicN( this->topology(), expander.core() );
+  return geodesicN;
+
+}
+
+/**
+ * Geodesic neighborhood of point [p] and order [k] in the
+ * complemented object for the given metric adjacency.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+template <typename TAdjacency>
+inline
+typename DGtal::Object<TDigitalTopology, TDigitalSet>::SmallComplementObject
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::geodesicNeighborhoodInComplement
+( const TAdjacency & adj, const Point & p, unsigned int k ) const
+{
+  // Local types.
+  typedef std::vector<Vertex> Container;
+  typedef MetricAdjacency<Space, Space::dimension> AlphaAdjacency;
+  typedef MetricAdjacency<Space, 1> OmegaAdjacency;
+  typedef DGtal::DigitalTopology<TAdjacency, OmegaAdjacency> LocalTopology;
+  typedef Object<LocalTopology, SmallSet> LocalObject;
+  typedef HyperRectDomain<Space> LocalDomain;
+  // DigitalSetDomain<DigitalSet> limitedX( *myPointSet );
+  AlphaAdjacency alpha;
+  OmegaAdjacency omega;
+  // Intermediate container that is fast writable.
+  Container tmp_local_points;
+  std::back_insert_iterator< Container > back_ins_it( tmp_local_points );
+  functors::NotPointPredicate<DigitalSet> not_pred_is_in_X( *myPointSet );
+  alpha.writeNeighbors( back_ins_it, p, not_pred_is_in_X );
+
+  // Construct local domain.
+  Point p1 = p - Point::diagonal(1);
+  Point p2 = p + Point::diagonal(1);
+  CowPtr<LocalDomain> aDomain( new LocalDomain( p1, p2 ) );
+
+  // Construct local Xcomp.
+  LocalTopology aTopology( adj, omega );
+  LocalObject Xcomp( aTopology, aDomain );
+  Xcomp.pointSet().insertNew( tmp_local_points.begin(), tmp_local_points.end() );
+
+  // A neighborhood is small, so is defined the digital object.
+  typename LocalObject::SmallObject neighAdj = Xcomp.properNeighborhood( p );
+
+  BreadthFirstVisitor<LocalObject, std::set<Vertex> > visitor
+    ( Xcomp, neighAdj.pointSet().begin(),
+      neighAdj.pointSet().end() );
+  while ( ! visitor.finished() )
+    {
+      typename LocalObject::Size d = visitor.current().second;
+      if ( d < k )       visitor.expand(); // we need to go further
+      else if ( d == k ) visitor.ignore(); // no need to go further
+      else break; // to far away, we exit
+    }
+  visitor.terminate();
+
+  SmallComplementObject geodesicN( this->topology().reverseTopology(),
+                                   aDomain );
+  geodesicN.pointSet().insertNew( visitor.markedVertices().begin(),
+                                  visitor.markedVertices().end()  );
+
+  // JOL: 2012/11/16 There is apparently now a bug in expander !
+  // Very weird considering this was working in 2012/05. Perhaps
+  // this is related to some manipulations in predicates.
+  // Expander<LocalObject> expander( Xcomp,
+  //     neighAdj.pointSet().begin(),
+  //     neighAdj.pointSet().end() );
+  // for ( unsigned int i = 1; ( i < k ) && ( ! expander.finished() ); ++i )
+  //   expander.nextLayer();
+  // SmallComplementObject geodesicN( this->topology().reverseTopology(),
+  //     expander.core() );
+  return geodesicN;
+}
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+bool
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::isSimpleFromTable(
+    const Point & center,
+    const boost::dynamic_bitset<> & input_table,
+    const std::unordered_map< Point,
+    NeighborhoodConfiguration> & mapZeroNeighborhoodToMask) const
+{
+  return input_table[this->getNeighborhoodConfigurationOccupancy(center, mapZeroNeighborhoodToMask)];
+}
+/**
+ * [Bertrand, 1994] A voxel v is simple for a set X if #C6 [G6 (v,
+ * X)] = #C18[G18(v, X^c)] = 1, where #Ck [Y] denotes the number
+ * of k-connected components of a set Y.
+ *
+ * We adapt this definition to (kappa,lambda) connectednesses. Be
+ * careful, such a definition is valid only for Jordan couples in
+ * dimension 2 and 3.
+ *
+ * @return 'true' if this point is simple.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+bool
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::isSimple( const Point & v ) const
+{
+  if(myTableIsLoaded == true)
+    return isSimpleFromTable(v, *myTable, *myNeighborConfigurationMap);
+
+  static const int kappa_n =
+    DigitalTopologyTraits< ForegroundAdjacency, BackgroundAdjacency, Space::dimension >::GEODESIC_NEIGHBORHOOD_SIZE;
+  static const int lambda_n =
+    DigitalTopologyTraits< BackgroundAdjacency, ForegroundAdjacency, Space::dimension >::GEODESIC_NEIGHBORHOOD_SIZE;
+
+  SmallObject Gkappa_X
+  = geodesicNeighborhood( topology().kappa(),
+			  v, kappa_n ); // Space::dimension );
+  if ( Gkappa_X.computeConnectedness() == CONNECTED )
+  {
+    if ( Gkappa_X.pointSet().empty() )
+      return false;
+    SmallComplementObject Glambda_compX
+      = geodesicNeighborhoodInComplement( topology().lambda(),
+					  v, lambda_n ); // Space::dimension );
+    return ( Glambda_compX.computeConnectedness()
+	     == CONNECTED )
+      && ( ! Glambda_compX.pointSet().empty() );
+  }
+  return false;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+void
+DGtal::Object<TDigitalTopology, TDigitalSet>
+::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Object"
+  << " topology=" << myTopo
+  << " counts=" << myPointSet.count()
+  << " set=" << *myPointSet
+  << " cxn=" << myConnectedness
+  << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+bool
+DGtal::Object<TDigitalTopology, TDigitalSet>::isValid() const
+{
+  return ( *myPointSet != 0 ) && (*myTopo != 0 );
+}
+
+/**
+ * Default drawing style object.
+ * @return the dyn. alloc. default style for this object.
+ */
+
+
+/**
+ * @return the style name used for drawing this object.
+ */
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+std::string
+DGtal::Object<TDigitalTopology, TDigitalSet>::className() const
+{
+  return "Object";
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TDigitalTopology, typename TDigitalSet>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+    const Object<TDigitalTopology, TDigitalSet> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

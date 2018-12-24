@@ -1,0 +1,142 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file GraphVisitorRange.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2013/01/31
+ *
+ * Implementation of inline methods defined in GraphVisitorRange.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TGraphVisitor>
+inline
+DGtal::GraphVisitorRange<TGraphVisitor>::
+~GraphVisitorRange()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TGraphVisitor>
+inline
+DGtal::GraphVisitorRange<TGraphVisitor>::
+GraphVisitorRange( GraphVisitor* visitorPtr )
+  : myVisitor( visitorPtr )
+{
+  ASSERT( visitorPtr != 0 );
+}
+//-----------------------------------------------------------------------------
+template <typename TGraphVisitor>
+inline
+typename DGtal::GraphVisitorRange<TGraphVisitor>::ConstIterator
+DGtal::GraphVisitorRange<TGraphVisitor>::
+begin() const
+{
+  ASSERT( myVisitor.unique() );
+  return ConstIterator( myVisitor );
+}
+//-----------------------------------------------------------------------------
+template <typename TGraphVisitor>
+inline
+typename DGtal::GraphVisitorRange<TGraphVisitor>::ConstIterator
+DGtal::GraphVisitorRange<TGraphVisitor>::
+end() const
+{
+  return ConstIterator();
+}
+//-----------------------------------------------------------------------------
+template <typename TGraphVisitor>
+inline
+typename DGtal::GraphVisitorRange<TGraphVisitor>::NodeConstIterator
+DGtal::GraphVisitorRange<TGraphVisitor>::
+beginNode() const
+{
+  ASSERT( myVisitor.unique() );
+  return NodeConstIterator( myVisitor );
+}
+//-----------------------------------------------------------------------------
+template <typename TGraphVisitor>
+inline
+typename DGtal::GraphVisitorRange<TGraphVisitor>::NodeConstIterator
+DGtal::GraphVisitorRange<TGraphVisitor>::
+endNode() const
+{
+  return NodeConstIterator();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TGraphVisitor>
+inline
+void
+DGtal::GraphVisitorRange<TGraphVisitor>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[GraphVisitorRange in_traversal=" 
+      << ( myVisitor.unique() ? "no" : "yes" ) << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TGraphVisitor>
+inline
+bool
+DGtal::GraphVisitorRange<TGraphVisitor>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TGraphVisitor>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const GraphVisitorRange<TGraphVisitor> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,178 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file PPMReader.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/04/29
+ *
+ * Implementation of inline methods defined in PPMReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+#include "DGtal/io/Color.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+
+template <typename TImageContainer, typename TFunctor>
+inline
+TImageContainer 
+DGtal::PPMReader<TImageContainer, TFunctor>::importPPM(const std::string & aFilename,
+						       const TFunctor &aFunctor, 
+						       bool topbotomOrder )
+{
+  std::ifstream infile;
+  DGtal::IOException dgtalio;
+  BOOST_STATIC_ASSERT( (ImageContainer::Domain::dimension == 2));
+  try 
+    {
+      infile.open (aFilename.c_str(), std::ifstream::in);
+    }
+  catch( ... )
+    {
+      trace.error() << "PPMReader : can't open " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  bool isASCIImode = false;
+  std::string str;
+  getline( infile, str );
+  if ( ! infile.good() )
+    {
+      trace.error() << "PPMReader : can't read " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  if ( str != "P6" &&  str != "P3")
+    {
+      trace.error() << "PPMReader : No P6 or P3 format in " << aFilename << std::endl;
+      throw dgtalio;
+    }
+  if(str== "P3")
+    {
+      isASCIImode=true;
+    }
+  do
+    {
+      getline( infile, str );
+      if ( ! infile.good() )
+	{
+	  trace.error() << "PPMReader : Invalid format in " << aFilename << std::endl;
+	  throw dgtalio;
+	} 
+    }
+  while ( str[ 0 ] == '#' || str=="");
+  std::istringstream str_in( str );
+  unsigned int w, h;
+  str_in >> w >> h;
+  
+   
+  typename TImageContainer::Point firstPoint;
+  typename TImageContainer::Point lastPoint;
+      
+  firstPoint = TImageContainer::Point::zero;
+  lastPoint[0] = w-1;
+  lastPoint[1] = h-1;
+  
+  typename TImageContainer::Domain domain(firstPoint,lastPoint);
+  TImageContainer image(domain);
+
+  getline( infile, str );
+  std::istringstream str2_in( str );
+  unsigned int max_value;
+  str2_in >> max_value;  
+
+  if ( ! infile.good() )
+    {
+      trace.error() << "PPMReader : Invalid format in " << aFilename << std::endl;
+      throw dgtalio;
+    } 
+  
+  unsigned int nb_read = 0;
+  if(!isASCIImode)
+    infile >> std::noskipws;
+  else
+    infile >> std::skipws;
+  
+  for(unsigned int y=0; y <h; y++)
+    for(unsigned int x=0; x <w; x++)
+      {
+	  typename TImageContainer::Point pt;
+	  if (topbotomOrder){
+	    pt[0]=x; pt[1]=h-1-y;
+	  }else{
+	    pt[0]=x; pt[1]=y;
+	  }
+	  
+	  
+	  if(!isASCIImode)
+	    {
+	      unsigned char r,g,b; 
+	      infile >> r; infile >> g; infile >> b;
+	      if ( infile.good() )
+		{ 
+		  Color aColor(r,g,b);
+		  nb_read+=3;
+		  image.setValue( pt, aFunctor(aColor) );
+		}
+	    }
+	  else
+	    {
+	      int r,g,b; 
+	      infile >> r; infile >> g; infile >> b;
+	      if ( infile.good() )
+		{
+		  Color aColor((unsigned char)r, (unsigned char)g, (unsigned char)b);
+		  nb_read+=3;
+		  image.setValue( pt, aFunctor(aColor) );
+		}
+	    }
+      }
+  if ( infile.fail() || infile.bad() )
+    {
+      trace.error() << "# nbread=" << nb_read << std::endl;
+      throw dgtalio;
+    }
+  infile >> std::skipws;
+  return  image;
+}
+
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

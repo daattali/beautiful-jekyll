@@ -1,0 +1,1032 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file OneBalancedWordComputer.ih
+ * @author Xavier Provençal (\c xavier.provencal@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2011/04/29
+ *
+ * Implementation of inline methods defined in OneBalancedWordComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::OneBalancedWordComputer()
+{ }
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::~OneBalancedWordComputer()
+{ }
+
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void 
+DGtal::OneBalancedWordComputer<TConstIterator, TInteger>::init( 
+                    const ConstIterator & it,
+                    const Point & start,
+                    Vector (*displacements) (Code) )
+{
+  myCodeHandler.init( it );
+  myFirstLetter = 0;
+
+  myBegin = it;
+  myEnd = it;
+  ++myEnd;
+
+  myLastLetter = 0;
+  myPatternBegin = 0;
+  myPatternEnd = 0;
+  myLeftPatternLength = 0;
+  myNextBefore =0;
+  myNextAfter = 0; 
+  myNbRepeat = 1;
+
+  myDisplacements = displacements;
+
+  myFirstPoint = start;
+  myLastPoint = myFirstPoint + displacement( getCode( myFirstLetter) );
+
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::init(const ConstPointIterator & i)
+{
+  *this = *( i.getDSS() );
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::init(const FreemanChainCode & fc)
+{
+  init( fc.chain.begin(), fc.firstPoint(), FreemanChainCode::displacement );
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::init(const typename FreemanChainCode::ConstIterator& it)
+{
+  std::string::const_iterator string_it = it.getChain()->chain.begin();
+  string_it += it.position();
+  init( string_it, *it, FreemanChainCode::displacement );
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::OneBalancedWordComputer ( const Self & other ) :
+  myCodeHandler       ( other.myCodeHandler ),
+  myBegin             ( other.myBegin ),
+  myEnd               ( other.myEnd ),
+  myFirstPoint        ( other.myFirstPoint ),
+  myLastPoint         ( other.myLastPoint ),
+  myFirstLetter       ( other.myFirstLetter ),
+  myLastLetter        ( other.myLastLetter ),
+  myNbRepeat          ( other.myNbRepeat ), 
+  myPatternBegin      ( other.myPatternBegin ), 
+  myPatternEnd        ( other.myPatternEnd ), 
+  myLeftPatternLength ( other.myLeftPatternLength ), 
+  myNextBefore        ( other.myNextBefore ), 
+  myNextAfter         ( other.myNextAfter ),
+  myDisplacements     ( other.myDisplacements )
+{}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger> & 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::operator= ( const Self & other )
+{
+  myCodeHandler       = other.myCodeHandler;
+  myBegin             = other.myBegin;
+  myEnd               = other.myEnd;
+  myFirstPoint        = other.myFirstPoint;
+  myLastPoint         = other.myLastPoint;
+  myFirstLetter       = other.myFirstLetter;
+  myLastLetter        = other.myLastLetter;
+  myNbRepeat          = other.myNbRepeat;
+  myPatternBegin      = other.myPatternBegin ;
+  myPatternEnd        = other.myPatternEnd;
+  myLeftPatternLength = other.myLeftPatternLength;
+  myNextBefore        = other.myNextBefore;
+  myNextAfter         = other.myNextAfter;
+  myDisplacements     = other.myDisplacements;
+  return *this;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Self 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getSelf( ) const
+{
+  return OneBalancedWordComputer( );
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::operator==( const Self & other ) const
+{
+  return ( ( begin() == other.begin() ) && ( end() == other.end() ) );
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::operator!=( const Self & other ) const
+{
+  return !(*this == other);
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Reverse
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getReverse() const
+{
+  return Reverse();
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::extendFront()
+{
+  Code letterRead = getCode( myLastLetter + 1 );
+  Code letterExpected = getCode( myNextAfter );
+
+  // Test if the new letter forms a longer prefix of the main pattern
+  // If the new letter is not what was expected, either the main pattern
+  // has to grow or either the DSS may not be extended.
+  if ( letterRead == letterExpected ) {
+    // Test if it is a complete repetition of the main pattern
+    if ( myNextAfter == myPatternEnd ) {
+      ++myNbRepeat;
+      myNextAfter = myPatternBegin;
+    } else {
+      ++myNextAfter;
+    }
+
+  } else if ( isTrivial() ) {
+    myLeftPatternLength = 1;
+    myNbRepeat = 1;
+    myPatternEnd = myLastLetter + 1;
+    myNextBefore = myPatternEnd;
+
+  } else if ( nextIsLL( myNextAfter ) && ( letterRead == getBigLetter() ) ) {
+    // The previous main pattern is now the left subpattern
+    myLeftPatternLength    = mainPatternLength();
+    myNbRepeat             = 1;
+    Size myOldSuffixLength = suffixLength();
+    myPatternEnd           = myLastLetter + 1;
+    myNextBefore           = myPatternEnd - myOldSuffixLength;
+    myNextAfter            = myPatternBegin;
+
+  } else if ( isUL( myNextAfter ) && ( letterRead == getSmallLetter() ) ) {
+    //In this case thw whole main pattern is modified! Not only complexified.
+    Size myOldLeftPatternLength = myLeftPatternLength;
+    Size myOldSuffixLength = suffixLength();
+    myNbRepeat = 1;
+    myLeftPatternLength = mainPatternLength();
+    myPatternEnd = myLastLetter + 1;
+
+    // test if the suffix is long enough to contain the new first upper
+    // leaning point (beginning of the main pattern) 
+    if ( myOldSuffixLength < myOldLeftPatternLength ) {
+      myPatternBegin = myPatternBegin + myLeftPatternLength 
+        - myOldLeftPatternLength;
+      myNextBefore = myPatternEnd - myLeftPatternLength +
+        myOldLeftPatternLength - myOldSuffixLength;
+    } else {
+      //TODO : test this!
+      myPatternBegin = myPatternBegin - myOldLeftPatternLength;
+      myNextBefore = myPatternEnd - (myOldSuffixLength - myOldLeftPatternLength);
+    }
+    myNextAfter = myPatternBegin;
+
+  } else {
+    return false;
+  }
+  ++myEnd;
+  ++myLastLetter;
+  myLastPoint += displacement( getCode( myLastLetter ) );
+  return true;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::extendBack()
+{
+  Code letterRead = getCode( myFirstLetter - 1 );
+  Code letterExpected = getCode( myNextBefore );
+
+  // Test if the new letter forms a longer suffix of the main pattern
+  // If the new letter is not what was expected, either the main pattern
+  // has to grow or either the DSS may not be extended.
+  if ( letterRead == letterExpected ) {
+    // Test if it forms a complete repetition of the main pattern
+    if ( myNextBefore == myPatternBegin ) {
+      //cout << "Case 1" << endl;
+      ++myNbRepeat;
+      // Move main pattern one iteration backward, nb 'myNextBefore' is
+      // already one iteration before.
+      Size mpl = mainPatternLength();
+      myPatternBegin -= mpl;
+      myPatternEnd   -= mpl;
+      myNextAfter    -= mpl;
+      myNextBefore    = myPatternEnd;
+    } else {
+      --myNextBefore;
+      //cout << "Case 2" << endl;
+    }
+
+
+  } else if ( isTrivial() ) {
+    //cout << "Case 3" << endl;
+    myLeftPatternLength = myNbRepeat;
+    myPatternEnd += myNbRepeat-1;
+    myNbRepeat = 1;
+    myPatternBegin = myFirstLetter - 1;
+    myNextBefore = myPatternEnd;
+    myNextAfter  = myPatternBegin;
+
+  } else if ( previousIsLL( myNextBefore ) && ( letterRead == getSmallLetter() ) ) {
+    //cout << "Case 4" << endl;
+    // The previous main pattern is now the left subpattern
+    Size myOldMainPatternLength = mainPatternLength();
+    Size myOldLeftPatternLength = myLeftPatternLength;
+    //Size myOldRightPatternLength = myOldMainPatternLength - myOldLeftPatternLength;
+
+    myPatternBegin = myFirstLetter - 1;
+    myPatternEnd += (myNbRepeat-1) * myOldMainPatternLength;
+    myLeftPatternLength = mainPatternLength() - myOldMainPatternLength;
+    myNbRepeat = 1;
+    myNextBefore = myPatternEnd;
+    myNextAfter -= myOldLeftPatternLength;
+
+  } else if ( isUL( myNextBefore ) && ( letterRead == getBigLetter() ) ) {
+    //In this case the whole main pattern is modified! Not only complexified.
+    Size myOldMainPatternLength  = mainPatternLength();
+    Size myOldRightPatternLength = myOldMainPatternLength - myLeftPatternLength;
+    Size myOldPrefixLength       = prefixLength();
+
+    myPatternBegin = myFirstLetter - 1;
+
+    // test if the prefix is long enough to contain the new Last Upper
+    // Leaning point
+    if ( myOldPrefixLength < myOldRightPatternLength ) {
+      //cout << "Case 5" << endl;
+      myNextAfter = myNextAfter - myOldMainPatternLength + myLeftPatternLength;
+      myPatternEnd = myPatternEnd 
+        + (myNbRepeat - 1)*myOldMainPatternLength 
+        - myLeftPatternLength;
+
+    } else {
+      //cout << "Case 6" << endl;
+      myNextAfter = myNextAfter - myOldMainPatternLength - myOldRightPatternLength;
+      myPatternEnd = myPatternEnd 
+        + myNbRepeat*myOldMainPatternLength 
+        - myLeftPatternLength;
+    }
+    myNbRepeat = 1;
+    myNextBefore = myPatternEnd;
+    myLeftPatternLength = mainPatternLength() - myOldMainPatternLength;
+
+  } else {
+    //cout << "Case 7" << endl;
+    return false;
+  }
+  --myBegin;
+  --myFirstLetter;
+  myFirstPoint -= displacement( getCode( myFirstLetter ) );
+  return true;
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::retractBack()
+{
+
+  if ( myNextBefore != myPatternEnd ) {
+    //Normal case
+    //cout << "Case 1" << endl;
+    ++myNextBefore;
+
+  } else if ( isTrivial() ) {
+    // In this case, it can be shorten only if there is more than one
+    // repetition.
+    //cout << "Case 2" << endl;
+    if ( myNbRepeat == 1 ) return false;
+    myPatternBegin = myPatternEnd = myNextBefore = ++myNextAfter;
+    --myNbRepeat;
+
+  } else if ( myNbRepeat >= 2 ) { 
+    // Got more than one repetition, it suffices to consider the next
+    // repetition of the main pattern with one less repetition.
+    //cout << "Case 3" << endl;
+    Size myOldMainPatternLength = mainPatternLength();
+    myPatternBegin += myOldMainPatternLength;
+    myPatternEnd   += myOldMainPatternLength;
+    myNextAfter    += myOldMainPatternLength;
+    myNextBefore = myPatternBegin;
+    --myNbRepeat;
+
+  } else {
+    //Only one repetition, the slope is modified.
+    Size myOldMainPatternLength = mainPatternLength();
+    Size myOldLeftPatternLength = myLeftPatternLength;
+    Size myOldRightPatternLength = myOldMainPatternLength - myOldLeftPatternLength;
+
+    if ( prefixLength() >= myOldRightPatternLength ) {
+      // A second Lower Leaning Point has been read in the prefix at
+      // the end of the main pattern. The slope is simply reversed.
+      //cout << "Case 4" << endl;
+      myLeftPatternLength = myOldRightPatternLength;
+      myPatternBegin     += myOldRightPatternLength;
+      myPatternEnd       += myOldRightPatternLength;
+      myNextBefore = myPatternEnd - myOldRightPatternLength + 1;
+
+    } else if ( myOldLeftPatternLength < myOldRightPatternLength ) {
+      // Remove one repetition of the left Berstel pattern.
+      //cout << "Case 5" << endl;
+      myPatternBegin += myOldLeftPatternLength;
+      myNextBefore -= ( myOldLeftPatternLength - 1 );
+      myNextAfter += myOldLeftPatternLength;
+
+    } else if ( myOldLeftPatternLength > myOldRightPatternLength ) {
+      // The complexity of the slope is modified.
+      //cout << "Case 6" << endl;
+      Size myNbBerstelRight = (myOldRightPatternLength > 1) ?
+        myOldMainPatternLength / myOldRightPatternLength :
+        myOldMainPatternLength - 1;
+      Size myBerstelLeftLength = myOldMainPatternLength - 
+        ( myNbBerstelRight * myOldRightPatternLength ); 
+      // Right subpattern becomes the main pattern
+      myNbRepeat = myNbBerstelRight;
+      myPatternBegin += myBerstelLeftLength;
+      myPatternEnd = myPatternBegin + myOldRightPatternLength - 1;
+      myNextBefore = myPatternEnd - myBerstelLeftLength + 1;
+      myNextAfter += myBerstelLeftLength;
+      myLeftPatternLength = (myPatternBegin == myPatternEnd) ? 
+        0 : myBerstelLeftLength;
+
+    } else {
+      // Special case of slope 1/1 with no prefix read, only a trivial
+      // DSS remains.
+      //cout << "Case 7" << endl;
+      myNextBefore = myNextAfter = myPatternBegin = myPatternEnd;
+      myLeftPatternLength = 0;
+    }
+  }
+
+  ++myBegin;
+  myFirstPoint += displacement( getCode( myFirstLetter ) );
+  ++myFirstLetter;
+  return true;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::retractFront()
+{
+  if ( myNextAfter != myPatternBegin ) {
+    // Normal case
+    //cout << "Case 1" << endl;
+    --myNextAfter;
+
+  } else if ( isTrivial() ) {
+    // In this case, it can be shorten only if there is more than one
+    // repetition.
+    //cout << "Case 2" << endl;
+    if ( myNbRepeat == 1 ) return false;
+    --myNbRepeat;
+
+  } else if ( myNbRepeat >= 2 ) {
+    // Got more than one repetition, it suffices to consider the next
+    // repetition of the main pattern with one less repetition.
+    //cout << "Case 3" << endl;
+    --myNbRepeat;
+    myNextAfter = myPatternEnd;
+
+  } else {
+    //Only one repetition, the slope is modified.
+    Size myOldMainPatternLength = mainPatternLength();
+    Size myOldLeftPatternLength = myLeftPatternLength;
+    Size myOldRightPatternLength = myOldMainPatternLength -
+      myOldLeftPatternLength;
+
+    if ( suffixLength() >= myOldLeftPatternLength ) {
+      // A second Lower Leaning Point has been read in the suffix at
+      // the front of the main pattern. The slope is simply reversed.
+      //cout << "Case 4" << endl;
+      myLeftPatternLength = myOldRightPatternLength;
+      myPatternBegin -= myOldLeftPatternLength;
+      myPatternEnd   -= myOldLeftPatternLength;
+      myNextAfter = myPatternBegin + myOldLeftPatternLength - 1;
+
+    } else if ( myOldLeftPatternLength > myOldRightPatternLength ) {
+      // Remove one repetition of the right Berstel pattern.
+      //cout << "Case 5" << endl;
+      myPatternEnd -= myOldRightPatternLength;
+      myNextAfter += ( myOldRightPatternLength - 1 );
+      myNextBefore -= myOldRightPatternLength; 
+      myLeftPatternLength -= myOldRightPatternLength;
+
+    } else if ( myOldLeftPatternLength < myOldRightPatternLength ) {
+      // The complexity of the slope is modified.
+      //cout << "Case 6" << endl;
+      Size myNbBerstelLeft = (myOldLeftPatternLength > 1) ?
+           myOldMainPatternLength / myOldLeftPatternLength :
+        myOldMainPatternLength - 1;
+      Size myBerstelRightLength = myOldMainPatternLength - 
+        ( myNbBerstelLeft * myOldLeftPatternLength ); 
+      Size myOldSuffixLength = suffixLength();
+
+      // Left subpattern becomes the main pattern.
+      myNbRepeat = myNbBerstelLeft;
+      myLeftPatternLength = myOldLeftPatternLength - myBerstelRightLength;
+      myPatternEnd = myPatternBegin + myOldLeftPatternLength - 1;
+      myNextBefore = myPatternEnd - myOldSuffixLength;
+      myNextAfter = myPatternBegin + myBerstelRightLength - 1;
+
+    } else {
+      // Special case of slope 1/1 with no prefix read, only a trivial
+      // DSS remains.
+      //cout << "Case 7" << endl;
+      myNextBefore = myNextAfter = myPatternEnd = myPatternBegin;
+      myLeftPatternLength = 0;
+    }
+  }
+  --myEnd;
+  myLastPoint -= displacement( getCode( myLastLetter ) );
+  --myLastLetter;
+  return true;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::isExtendableFront()
+{
+  Code letterRead = getCode( myLastLetter + 1 );
+  Code letterExpected = getCode( myNextAfter );
+  if ( letterRead == letterExpected ) 
+    {
+      return true;
+    }
+  else if ( isTrivial() ) 
+    {
+      return true;
+    } 
+  else if ( nextIsLL( myNextAfter ) && ( letterRead == getBigLetter() ) ) 
+    {
+      return true;
+    }
+  else if ( isUL( myNextAfter ) && ( letterRead == getSmallLetter() ) ) 
+    {
+      return true;
+    }
+    return false;
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::isExtendableBack()
+{
+  Code letterRead = getCode( myFirstLetter - 1);
+  Code letterExpected = getCode( myNextBefore );
+  if ( letterRead == letterExpected ) 
+    {
+      return true;
+    }
+  else if ( isTrivial() ) 
+    {
+      return true;
+    }
+  else if ( previousIsLL( myNextBefore ) && ( letterRead == getSmallLetter() ) ) 
+    {
+      return true;
+    }
+  else if ( isUL( myNextBefore ) && ( letterRead == getBigLetter() ) ) 
+    {
+      return true;
+    }
+    return false;
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::setPosition( 
+   const typename DGtal::OneBalancedWordComputer<TConstIterator, TInteger>::Point & p )
+{
+  Vector v = myLastPoint - myFirstPoint;
+  myFirstPoint = p;
+  myLastPoint  = p+v;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::translate( 
+   const typename DGtal::OneBalancedWordComputer<TConstIterator, TInteger>::Vector & v )
+{
+  myFirstPoint += v;
+  myLastPoint  += v;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::isValid() const
+{
+  return (
+      ( myFirstLetter  <= myPatternBegin ) &&
+      ( myPatternBegin <= myPatternEnd ) &&
+      ( myPatternEnd   <= myLastLetter ) && 
+      ( myNextBefore   >= myPatternBegin ) &&
+      ( myNextBefore   <= myPatternEnd ) &&
+      ( myNextAfter   >= myPatternBegin ) &&
+      ( myNextAfter   <= myPatternEnd ) &&
+      ( (myLeftPatternLength == 0 ) || 
+        (myLeftPatternLength < mainPatternLength() ) ) );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void
+DGtal::OneBalancedWordComputer<TConstIterator, TInteger >::selfDisplay ( std::ostream & out ) const
+{
+  std::string s;
+  for (int i=myFirstLetter; i<= myLastLetter; i++) 
+    s += getCode( i );
+  s += ".";
+  for (int i=myLastLetter+1; i<myLastLetter+4 ; i++) 
+    s += getCode( i );
+  out << "[OneBalancedWordComputer]\n";
+  out << "myCodes             = " << s << "\n";
+  out << "myFirstPoint        = " << myFirstPoint << "\n";
+  out << "myLastPoint         = " << myLastPoint << "\n";
+  out << "myFirstLetter       = " << myFirstLetter << "\n";
+  out << "myLastLetter        = " << myLastLetter << "\n";
+  out << "myNbRepeat          = " << myNbRepeat << "\n";
+  out << "myPatternBegin      = " << myPatternBegin  << "\n";
+  out << "myPatternEnd        = " << myPatternEnd << "\n";
+  out << "myLeftPatternLength = " << myLeftPatternLength << "\n";
+  out << "myNextBefore        = " << myNextBefore << "\n";
+  out << "myNextAfter         = " << myNextAfter << "\n";
+  DSL d = getArithmeticalDescription(); 
+  out << "(a,b,mu,omega)      = (" << d.a() << ", " << d.b() << ", " 
+      << d.mu() << ", " << d.omega() << ")\n"; 
+  out << "[End OneBalancedWordComputer]" << std::endl;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Code
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getSmallLetter() const
+{
+  return getCode( myPatternBegin );
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Code
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getBigLetter() const
+{
+  return getCode( myPatternEnd );
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Code
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getCode(Index pos)  
+{
+  return myCodeHandler.getCode( pos  );
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Code
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getCode(Index pos)  const
+{
+  return myCodeHandler.getCode( pos  );
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Size
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::mainPatternLength() const
+{
+  return myPatternEnd - myPatternBegin + 1;
+}
+
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Vector
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::mainPatternVector() const
+{
+  ConstPointIterator it = pointBegin();
+  while ( ! isUL ( it.getIndex() ) )
+    ++it;
+  Point p_uf = *it;
+  ++it; /* At least one letter in the pattern */
+  if ( ! isTrivial() ) 
+    {
+      while ( ! isUL ( it.getIndex() ) )
+        ++it;
+      ++it;
+    }
+  return *it - p_uf;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Size
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::suffixLength() const
+{
+  return ( myPatternEnd - myNextBefore );
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Size
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::prefixLength() const
+{
+  return ( myNextAfter - myPatternBegin );
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::isUL ( Index pos ) const
+{
+  return ( (pos == myPatternBegin) || ( pos == myPatternEnd ) );
+}
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::nextIsLL ( Index pos ) const
+{
+  return ( (pos - myPatternBegin) == mainPatternLength() - myLeftPatternLength - 1) ;
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::previousIsLL ( Index pos ) const
+{
+  return ( (pos - myPatternBegin) == mainPatternLength() - myLeftPatternLength ) ;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+bool DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::isTrivial() const
+{
+  // If there is no left subpattern, then the DSS is trivial.
+  return ( myLeftPatternLength == 0 );
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::ConstIterator 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::begin() const
+{
+  return myBegin;
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::ConstIterator 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::end() const
+{
+  return myEnd;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::ConstPointIterator 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::pointBegin() const
+{
+  return ConstPointIterator( this, myFirstLetter, myFirstPoint );
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::ConstPointIterator 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::pointEnd() const
+{
+  ConstPointIterator it ( this, myLastLetter+1, myLastPoint );
+  return ++it;
+}
+
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Integer
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getA() const
+{
+  return getArithmeticalDescription().a();
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Integer
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getB() const
+{
+  return getArithmeticalDescription().b();
+}
+  
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Integer
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getMu() const
+{
+  return getArithmeticalDescription().mu();
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Integer
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getOmega() const
+{
+  return getArithmeticalDescription().omega();
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::DSL
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::getArithmeticalDescription() const
+{
+  DGtal::IntegerComputer<TInteger> ic;
+
+  ConstPointIterator itBegin = pointBegin();
+  while ( itBegin.getIndex() != myPatternBegin ) 
+    itBegin++;
+  ConstPointIterator itEnd = pointEnd();
+  while ( itEnd.getIndex() != myPatternEnd+1 ) 
+    itEnd--;
+  ConstPointIterator it;
+  Size myRightPatternLenght = mainPatternLength() - myLeftPatternLength;
+  it = itBegin;
+  for (int i=0; i<myRightPatternLenght; i++)
+    it++;
+  Point pb = *itBegin;
+  Point pe = *itEnd;
+  Point po = *it;
+  Vector v = pe - pb;
+
+  Integer r1 = v[1]*pb[0] - v[0]*pb[1];
+  Integer r2 = v[1]*po[0] - v[0]*po[1];
+  Integer bound = ic.min (r1, r2);
+
+  return DSL(v[1], v[0], bound); 
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+void DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::computeLeaningPoints( 
+              Point & uf, Point & ul, 
+              Point & lf, Point & ll ) const
+{
+  ConstPointIterator it = pointBegin();
+  while ( ! isUL ( it.getIndex() ) )
+    ++it;
+  uf = *it;
+
+  Vector v = mainPatternVector();
+  ul = uf + v*myNbRepeat;
+
+  while ( ! previousIsLL ( it.getIndex() ) )
+    ++it;
+  lf = ( suffixLength() >= myLeftPatternLength ) ?  *it - mainPatternVector() : *it;
+
+  int nbLowerRepeats = ( prefixLength() >= mainPatternLength() - myLeftPatternLength ) 
+    ? myNbRepeat : myNbRepeat - 1;
+  ll =  *it + v*nbLowerRepeats;
+
+  if ( remainder( uf ) > remainder( lf ) ) 
+    {
+      swap ( uf, lf );
+      swap ( ul, ll );
+    }
+}
+
+
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Point 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Uf() const
+{
+  Point uf, ul, lf, ll;
+  computeLeaningPoints( uf, ul, lf, ll );
+  return uf;
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Point 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Ul() const
+{
+  Point uf, ul, lf, ll;
+  computeLeaningPoints( uf, ul, lf, ll );
+  return ul;
+}
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Point 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Lf() const
+{
+  Point uf, ul, lf, ll;
+  computeLeaningPoints( uf, ul, lf, ll );
+  return lf;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Point 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Ll() const
+{
+  Point uf, ul, lf, ll;
+  computeLeaningPoints( uf, ul, lf, ll );
+  return ll;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Vector 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::displacement( Code c ) const
+{
+  return this->myDisplacements( c );
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Integer 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::remainder(const Point & aPoint) const
+{
+  DSL d = getArithmeticalDescription();
+  return (d.a()*aPoint[0] - d.b()*aPoint[1]);
+}
+
+
+// ----------------------- Accessors --------------------------------------
+
+
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Point 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::back() const
+{
+  return myFirstPoint;
+}
+
+
+// ------------------------------------------------------------------------
+template < typename TConstIterator, typename TInteger >
+inline
+typename DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::Point 
+DGtal::OneBalancedWordComputer<TConstIterator,TInteger>::front() const
+{
+  return myLastPoint;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template < typename TConstIterator, typename TInteger >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const OneBalancedWordComputer<TConstIterator, TInteger> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

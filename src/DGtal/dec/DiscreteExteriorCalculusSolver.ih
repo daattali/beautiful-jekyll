@@ -1,0 +1,90 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DiscreteExteriorCalculusSolver.ih
+ * @author Pierre Gueth (\c pierre.gueth@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systemes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2014/03/27
+ *
+ * Implementation of inline methods defined in DiscreteExteriorCalculusSolver.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename C, typename S, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>::DiscreteExteriorCalculusSolver()
+  : myCalculus(NULL)
+{
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename C, typename S, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+void
+DGtal::DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>::selfDisplay(std::ostream& out) const
+{
+    out << "[DiscreteExteriorCalculusSolver]";
+}
+
+template <typename C, typename S, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>&
+DGtal::DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>::compute(const Operator& linear_operator)
+{
+    myLinearAlgebraSolver.compute(linear_operator.myContainer);
+    myCalculus = linear_operator.myCalculus;
+    return *this;
+}
+
+template <typename C, typename S, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+DGtal::KForm<C, order_in, duality_in>
+DGtal::DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>::solve(const InputKForm& input_kform) const
+{
+    ASSERT( myCalculus == input_kform.myCalculus );
+    SolutionKForm solution(*input_kform.myCalculus, myLinearAlgebraSolver.solve(input_kform.myContainer));
+    return solution;
+}
+
+template <typename C, typename S, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+bool
+DGtal::DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>::isValid() const
+{
+    if (myCalculus == NULL) return false;
+    return myLinearAlgebraSolver.info() == 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename C, typename S, DGtal::Order order_in, DGtal::Duality duality_in, DGtal::Order order_out, DGtal::Duality duality_out>
+std::ostream&
+DGtal::operator<<(std::ostream& out, const DiscreteExteriorCalculusSolver<C, S, order_in, duality_in, order_out, duality_out>& object)
+{
+    object.selfDisplay(out);
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

@@ -1,6 +1,0 @@
-<map id="DGtal::detail::PosDepScaleIndepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;" name="DGtal::detail::PosDepScaleIndepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="DGtal::InHalfPlaneBySimple3x3\lMatrix\&lt; Point, double \&gt;" alt="" coords="999,14,1217,61"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1SimpleMatrix.html" title="DGtal::SimpleMatrix\l\&lt; Integer, 3, 3 \&gt;" alt="" coords="349,7,499,54"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o..." alt="" coords="612,58,831,105"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="5,7,189,54"/>
-</map>

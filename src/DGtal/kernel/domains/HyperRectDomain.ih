@@ -1,0 +1,214 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file HyperRectDomain.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * @author Guillaume Damiand
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/05/25
+ *
+ * Implementation of inline methods defined in HyperRectDomain.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/io/Color.h"
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+DGtal::HyperRectDomain<TSpace>::HyperRectDomain()
+  : myLowerBound(Point::zero),
+    myUpperBound(Point::zero - Point::diagonal(1)), // So that it gives an empty domain.
+    myPredicate( myLowerBound, myUpperBound ),
+    myIteratorBegin(myLowerBound,
+        myLowerBound,
+        myUpperBound),
+    myIteratorEnd(myUpperBound,
+        myLowerBound,
+        myUpperBound)
+{ 
+  ++myIteratorEnd;
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+DGtal::HyperRectDomain<TSpace>::HyperRectDomain ( const Point &lowerPoint,
+              const Point &upperPoint ) :
+    myLowerBound(lowerPoint),
+    myUpperBound(upperPoint),
+    myPredicate( myLowerBound, myUpperBound ),
+    myIteratorBegin(myLowerBound,
+        myLowerBound,
+        myUpperBound),
+    myIteratorEnd(myUpperBound,
+      myLowerBound,
+      myUpperBound)
+{
+  ASSERT_MSG( // For an empty domain, lower = upper + diag(1) so that begin() == end().
+      myLowerBound.isLower(myUpperBound) || myLowerBound == myUpperBound + Point::diagonal(1),
+      "The lower bound must be lower than the upper bound or, for an empty domain, be equal to the upper bound + diagonal(1)."
+  );
+  ASSERT_MSG( // Check that begin() == end() for empty domains.
+      ConstIterator(myUpperBound+Point::diagonal(1), myUpperBound+Point::diagonal(1), myUpperBound) == ++ConstIterator(myUpperBound, myUpperBound+Point::diagonal(1), myUpperBound),
+      "ConstIterator is not compatible with the definition of an empty domain."
+  ); 
+  
+  ++myIteratorEnd;
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+DGtal::HyperRectDomain<TSpace>
+::HyperRectDomain( const typename DGtal::HyperRectDomain<TSpace> &aDomain) :
+    myLowerBound(aDomain.lowerBound()),
+    myUpperBound(aDomain.upperBound()),
+    myPredicate( myLowerBound, myUpperBound ),
+    myIteratorBegin(myLowerBound,
+        myLowerBound,
+        myUpperBound),
+    myIteratorEnd(myUpperBound,
+      myLowerBound,
+      myUpperBound)
+{ 
+  ++myIteratorEnd; 
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+DGtal::HyperRectDomain<TSpace>::~HyperRectDomain()
+{}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+DGtal::HyperRectDomain<TSpace> &
+DGtal::HyperRectDomain<TSpace>
+::operator= ( const typename DGtal::HyperRectDomain<TSpace> & other )
+{
+  if ( this != &other )
+    {
+      myLowerBound = other.myLowerBound;
+      myUpperBound = other.myUpperBound;
+      myPredicate = other.myPredicate;    
+      new(&myIteratorBegin) ConstIterator(myLowerBound,myLowerBound,myUpperBound);
+      new(&myIteratorEnd) ConstIterator(myUpperBound,myLowerBound,myUpperBound);
+      ++myIteratorEnd;
+    }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+const typename DGtal::HyperRectDomain<TSpace>::Point &
+DGtal::HyperRectDomain<TSpace>::lowerBound() const
+{
+  return myLowerBound;
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+bool
+DGtal::HyperRectDomain<TSpace>::isInside( const Point & p ) const
+{
+  return myPredicate( p );
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+bool
+DGtal::HyperRectDomain<TSpace>::isEmpty() const
+{
+  return ! myLowerBound.isLower(myUpperBound);
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+const typename DGtal::HyperRectDomain<TSpace>::Predicate &
+DGtal::HyperRectDomain<TSpace>::predicate() const
+{
+  return myPredicate;
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+const typename DGtal::HyperRectDomain<TSpace>::Point &
+DGtal::HyperRectDomain<TSpace>::upperBound() const
+{
+  return myUpperBound;
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+void
+DGtal::HyperRectDomain<TSpace>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[HyperRectDomain] = [" << myLowerBound << "]x["
+      << myUpperBound << "]";
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+bool
+DGtal::HyperRectDomain<TSpace>::isValid() const
+{
+  return true;
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+std::string
+DGtal::HyperRectDomain<TSpace>::className() const
+{
+  return "HyperRectDomain";
+}
+
+//-----------------------------------------------------------------------------
+template<typename TSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+    const HyperRectDomain<TSpace> & object )
+{
+  object.selfDisplay ( out );
+  return out;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+

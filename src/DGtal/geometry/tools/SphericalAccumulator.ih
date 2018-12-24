@@ -1,0 +1,381 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SphericalAccumulator.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/09/17
+ *
+ * Implementation of inline methods defined in SphericalAccumulator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Constructor.
+ */
+template <typename T>
+inline
+DGtal::SphericalAccumulator<T>::SphericalAccumulator(const Size aP)
+{
+  myTotal = 0;
+  myNphi = aP;
+  myNtheta = 2*myNphi;
+  myAccumulator.resize(myNphi*myNtheta,0);
+  myAccumulatorDir.resize(myNphi*myNtheta, Vector::zero);
+  myBinNumber = 0;
+
+  myMaxBinTheta = 0;
+  myMaxBinPhi= 0;
+
+
+  for(Size posPhi=0; posPhi < myNphi; posPhi++)
+    for(Size posTheta=0; posTheta < myNtheta; posTheta++)
+      {
+	double dphi = M_PI/((double)myNphi-1);
+	double Ntheta_i = floor(2.0*((double)myNphi)*sin((double)posPhi*dphi)) ;  
+	
+	if (((posPhi == 0) || (posPhi == (myNphi-1))) && (posTheta==0))
+	  myBinNumber++;
+	else
+	  if ((posPhi < myNphi) && (posTheta<Ntheta_i) && (posTheta< myNtheta))
+	    myBinNumber ++;
+      }
+}
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::SphericalAccumulator<T>::~SphericalAccumulator()
+{
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+void DGtal::SphericalAccumulator<T>::binCoordinates(const Vector &aDir, 
+						    Size &posPhi, 
+						    Size &posTheta) const
+{
+  double theta,phi, theta2;
+  double norm = aDir.norm();
+  
+  ASSERT(norm != 0);
+
+  phi = acos(NumberTraits<typename T::Component>::castToDouble(aDir[2])/norm);
+  
+  double dphi = M_PI/(double)(myNphi-1);
+  double Nthetai;
+  posPhi = static_cast<Size>(floor( (phi+dphi/2.) *(myNphi-1)/  M_PI));
+  if(posPhi == 0 || posPhi== (myNphi-1))
+    {
+      posTheta =0;
+    }
+  else
+    {
+      theta2=atan2(NumberTraits<typename T::Component>::castToDouble(aDir[1]),
+                  NumberTraits<typename T::Component>::castToDouble(aDir[0]));
+ 
+      if(theta2<0)
+	theta = theta2 + 2.0*M_PI;
+      else
+      theta = theta2;
+      Nthetai = floor(2.0*(myNphi)*sin(posPhi*dphi));
+      double dtheta = 2.0*M_PI/(Nthetai);
+      posTheta = static_cast<Size>(floor( (theta+dtheta/2.0)/dtheta));
+      
+      if (posTheta >= Nthetai)
+	posTheta -= Nthetai;
+    }
+  
+  ASSERT(posPhi < myNphi);
+  ASSERT( isValidBin(posPhi,posTheta) );
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+void DGtal::SphericalAccumulator<T>::addDirection(const Vector &aDir)
+{
+  Size posPhi,posTheta;
+ 
+  binCoordinates(aDir , posPhi, posTheta);
+  myAccumulator[posTheta + posPhi*myNtheta] += 1;
+  myAccumulatorDir[posTheta + posPhi*myNtheta] += aDir;
+  myTotal ++;
+  
+  //Max bin update
+  if (  myAccumulator[posTheta + posPhi*myNtheta] >
+	myAccumulator[ myMaxBinTheta  + myMaxBinPhi*myNtheta])
+    {
+      myMaxBinTheta = posTheta;
+      myMaxBinPhi = posPhi;
+    }
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::SphericalAccumulator<T>::Quantity
+DGtal::SphericalAccumulator<T>::samples() const
+{
+  return myTotal;
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::SphericalAccumulator<T>::maxCountBin(Size &phi, Size &theta) const
+{
+  phi = myMaxBinPhi;
+  theta = myMaxBinTheta;
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::SphericalAccumulator<T>::Quantity
+DGtal::SphericalAccumulator<T>::count(const Size &posPhi, 
+				      const Size &posTheta) const
+{
+  ASSERT( isValidBin(posPhi,posTheta) );
+  return myAccumulator[posTheta + posPhi*myNtheta];
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+T
+DGtal::SphericalAccumulator<T>::representativeDirection(const Size &posPhi,
+							const Size &posTheta) const
+{
+  ASSERT( isValidBin(posPhi,posTheta) );
+  Vector p=myAccumulatorDir[posTheta + posPhi*myNtheta] ;
+  return p;
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+T
+DGtal::SphericalAccumulator<T>::representativeDirection(ConstIterator &it) const
+{
+  Size dist = it - myAccumulator.begin();
+  Vector p = *(myAccumulatorDir.begin() + dist);
+  return p;
+}
+// --------------------------------------------------------
+// --------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::SphericalAccumulator<T>::binCoordinates(ConstIterator &it, 
+					       Size &posPhi,
+					       Size &posTheta) const
+{
+  Size dist = it - myAccumulator.begin();
+  posPhi = dist/ myNtheta;
+  posTheta = dist % myNtheta;
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+bool
+DGtal::SphericalAccumulator<T>::isValidBin(const Size &posPhi, 
+					   const Size &posTheta) const
+{
+  ASSERT( myNphi != 1 );
+  double dphi = M_PI/((double)myNphi-1.0);
+  double Ntheta_i = floor(2.0*((double)myNphi)*sin((double)posPhi*dphi));  
+  
+  if ((posPhi == 0) || (posPhi == (myNphi-1)))
+    return (posTheta==0);
+  else
+    return (posPhi < myNphi) && (posTheta<Ntheta_i) && (posTheta< myNtheta);
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::SphericalAccumulator<T>::getBinGeometry(const Size &posPhi,
+					       const Size &posTheta,
+					       RealVector &a,
+					       RealVector &b,
+					       RealVector &c,
+					       RealVector &d) const
+{
+  ASSERT( isValidBin(posPhi,posTheta) );
+  double dphi = M_PI/(double)((double)myNphi-1);
+  double phi= (double)posPhi*dphi;
+  double dtheta;
+  double Nthetai = floor(2.0*(myNphi)*sin(phi) ); 
+  double theta = 0.0;
+
+  if ((posPhi == 0) ||(posPhi == (myNphi-1)))
+    {
+      a[0]=cos(theta-dphi/2.0)*sin(phi -dphi/2.0);
+      a[1]=sin(theta-dphi/2.0)*sin(phi -dphi/2.0);
+      a[2]=cos(phi -dphi/2.0);
+      
+      b[0]=cos(theta+dphi/2.0)*sin(phi -dphi/2.0);
+      b[1]=sin(theta+dphi/2.0)*sin(phi -dphi/2.0);
+      b[2]=cos(phi -dphi/2.0);
+      
+      c[0]=cos(theta-dphi/2.0)*sin(phi+dphi/2.0);
+      c[1]=sin(theta-dphi/2.0)*sin(phi+dphi/2.0);
+      c[2]=cos(phi+dphi/2.0);      
+      
+      d[0]=cos(theta+dphi/2.0)*sin(phi+dphi/2.0);
+      d[1]=sin(theta+dphi/2.0)*sin(phi+dphi/2.0);
+      d[2]=cos(phi+dphi/2.0);      
+    }
+  
+  else
+      {
+        dtheta = 2.0*M_PI/(Nthetai);
+        theta=posTheta*dtheta;
+        
+        a[0]=cos(theta-dtheta/2.0)*sin(phi -dphi/2.0);
+        a[1]=sin(theta-dtheta/2.0)*sin(phi -dphi/2.0);
+        a[2]=cos(phi -dphi/2.0);
+  
+  
+        if ((double)posTheta -1 >= Nthetai)
+          {
+            b[0]=cos(-dtheta/2.0)*sin(phi -dphi/2.0);
+            b[1]=sin(-dtheta/2.0)*sin(phi -dphi/2.0);
+            b[2]=cos(phi -dphi/2.0);
+      
+            c[0]=cos(- dtheta/2.0)*sin(phi+dphi/2.0);
+            c[1]=sin( - dtheta/2.0)*sin(phi+dphi/2.0);
+            c[2]=cos(phi+dphi/2.0);      
+          }
+        else
+          {
+            b[0]=cos(theta+dtheta/2.0)*sin(phi -dphi/2.0);
+            b[1]=sin(theta+dtheta/2.0)*sin(phi -dphi/2.0);
+            b[2]=cos(phi -dphi/2.0);
+      
+            c[0]=cos(theta+dtheta/2.0)*sin(phi+dphi/2.0);
+            c[1]=sin(theta+dtheta/2.0)*sin(phi+dphi/2.0);
+            c[2]=cos(phi+dphi/2.0);      
+          }
+  
+        d[0]=cos(theta-dtheta/2.0)*sin(phi+dphi/2.0);
+        d[1]=sin(theta-dtheta/2.0)*sin(phi+dphi/2.0);
+        d[2]=cos(phi+dphi/2.0);      
+      }
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+typename DGtal::SphericalAccumulator<T>::RealVector
+DGtal::SphericalAccumulator<T>::getBinDirection(const Size &posPhi,
+                                                const Size &posTheta) const
+{
+  ASSERT( isValidBin(posPhi,posTheta) );
+  double dphi = M_PI/(double)((double)myNphi-1);
+  double phi= (double)posPhi*dphi;
+  double Nthetai = floor(2.0*(myNphi)*sin(phi) ); 
+  RealVector midpoint;
+  double theta;
+
+  if ((posPhi == 0) || (posPhi == (myNphi-1)))
+    theta = 0;
+  else
+    theta=posTheta*2.0*M_PI/(Nthetai);
+    
+  midpoint[0]=cos(theta)*sin(phi);
+  midpoint[1]=sin(theta)*sin(phi);
+  midpoint[2]=cos(phi);
+  
+  return midpoint;     
+}
+// --------------------------------------------------------
+template <typename T>
+inline
+void
+DGtal::SphericalAccumulator<T>::clear()
+{
+  myTotal = 0;
+  for(Size i=0; i < myNphi; i++)
+    for(Size j=0; j < myNtheta; j++)
+      if (isValidBin(i,j))
+        myAccumulator[j + i*myNtheta]=0;
+      else
+        myAccumulator[j+ i*myNtheta]=-1;
+      
+  std::fill(myAccumulatorDir.begin(), myAccumulatorDir.end(), Vector::zero);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::SphericalAccumulator<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[SphericalAccumulator] Nphi="<<myNphi<<"  Ntheta=" <<myNtheta
+      <<"  Number of samples="<<myTotal
+      <<"  Number of bins="<<myBinNumber;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::SphericalAccumulator<T>::isValid() const
+{
+    return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const SphericalAccumulator<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

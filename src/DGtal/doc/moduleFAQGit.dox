@@ -1,0 +1,417 @@
+/**
+ * @file moduleFAQGit.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/05/14
+ *
+ * Documentation file for feature FAQGit
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page moduleFAQGit Git/Github source code management in DGtal
+@author David Coeurjolly
+
+This part of the manual describes how the DGtal Git repository is used on github
+and gives a couple of details on the git system.
+
+[TOC]
+
+\section sectGIT1 Setting up your account and working copy
+
+\subsection subsectGIT11 Create an account on github.com
+
+- go to github.com, then Signup -> Free account for opensource projects.
+- choose login/password and it's done
+- once it's ok, you're transferred to your "dashboard" with three
+options "Set up Git", "Create a Repo", "Fork a Repo" and "Be Social"
+- Select the first one.
+
+\subsection subsectGIT12 Set up git
+
+Github documentation is quite straightforward (see help/set up git in the Github web site). 
+
+In order to be to establish a secure connection between your computer and github servers
+and to be able to "push" changes to github servers, two methods are available:
+the SSH method or the HTTPS method, which is now recommended.  
+
+Note that in the HTTPS method, URLs look like "https://github.com/yourlogin/DGtal.git",
+whereas in the SSH method URLs look like "git@github.com:yourlogin/DGtal.git". 
+The HTTPS method is used below. 
+
+In the meantime, you can also update your account settings
+(https://github.com/account)
+
+\subsection subsectGIT13 Fork DGtal
+
+Before going into details on git and git-commands, let's fork the initial DGtal repository. 
+So, once you're logged in on github
+
+  - go to  https://github.com/DGtal-team/DGtal
+  - click on the "Fork" button.
+  - once the fork is finished, you'll have your own copy of DGtal
+with the following path: https://github.com/yourlogin/DGtal
+  - At this URL, you're able to browse the sources, see the commit log,
+report issues, view/edit wiki pages,..
+
+\section sectGIT3 Normal workflow
+
+\subsection subsectGIT31 Set remote repositories and get a local copy 
+
+Once you have fork the initial DGtal repository, 
+you can clone your fork to have a local copy of your own (remote) copy of DGtal:
+
+@code
+git clone https://github.com/yourlogin/DGtal.git
+@endcode
+
+In order to easily access to the initial DGtal repository, 
+you can set it as a remote repository, called "upstream": 
+@code
+git remote add upstream https://github.com/DGtal-team/DGtal.git
+@endcode
+
+Git remotes are great because they allows to have multiple pull/push
+repositories. You can see the list of your remote repositories: 
+
+@code
+git remote
+git remote -v
+@endcode
+
+At this point, you should have two remote repositories: 
+ - origin, your own copy of the initial DGtal repository.
+ - upstream, the remote repository you have just added containing the initial DGtal repository.
+
+You can see the state of a remote repository called "remotename" with the command 
+"git remote show": 
+
+@code
+git remote show remotename
+@endcode
+
+In the normal workflow, you can pull from the main DGtal
+repository (upstream)... 
+
+@code
+git pull upstream master
+@endcode
+
+...but only push to your own copy of DGtal (origin). 
+
+@code
+git push origin yourbranch
+@endcode
+
+
+The merge between the two repositories is done by another developper 
+after a pull request. 
+To make a pull request, go to http://github.com/yourlogin/DGtal, 
+click on "Pull Request". Then, choose the two branches you would like 
+to merge (master in upstream and yourbranch in origin), write your 
+comments and click on "Send Pull Request". 
+
+
+\subsection subsectGIT32 Edit files and commit in branches
+
+
+0- Before starting to work, pull the upstream (you have to be online). 
+
+@code
+git pull upstream master
+@endcode
+
+
+
+
+1- By default, you have a main local branch called master. 
+Create a local branch "cool-feature". 
+
+@code
+git branch cool-feature
+@endcode
+
+Note that you can see the list of your local branches: 
+
+@code
+git branch
+@endcode
+
+Note also that the branch marked with a star is your 
+current local branch. At this point you should see
+@code
+- * master
+- cool-feature
+@endcode
+
+2- Jump onto your new local branch:
+
+@code
+git checkout cool-feature
+@endcode
+
+After taping the command "git branch" you should see now: 
+@code
+ - master
+ - * cool-feature
+@endcode
+
+3- Add files, edit files, commit local branch
+
+@code
+git add newFile
+git commit -a -m "This commit concerns the cool-feature in newFile ..."
+@endcode
+
+Note that you can use the command "git status" or "git log" to have useful infos
+about the current branch state and the commits history. 
+
+4- Push to your fork (you have to be online)
+
+@code
+git push origin cool-feature
+@endcode
+
+This creates a new branch in your remote copy of DGtal, 
+which is called "cool-feature", like your local branch. 
+
+But this is a shortcut to: 
+
+@code
+git push origin cool-feature:cool-feature
+@endcode
+
+You can thus give a different name for 
+your remote branch as follows:  
+
+@code
+git push origin cool-feature:another-name
+@endcode
+
+
+5- If you have to work on another issue (e.g. bug #42), 
+you can create a new local branch "bug42" from your master,
+jump onto it, commit edits, and push: 
+
+@code
+git checkout master
+git branch bug42
+git checkout bug42
+git commit -a -m "Bug #42 fixed....."
+git push origin bug42
+@endcode
+  
+
+6- Once you have finished to work on an issue, 
+go to http://github.com/yourlogin/DGtal and ask for a "Pull Request"
+
+7- Once the "Pull Request" has been validate and the merge done, 
+you can remove your local branch: 
+
+@code
+git checkout master
+git branch -d cool-feature
+@endcode
+
+And you can also remove the associated remote branch 
+(because everything should be merged into either the "master" of your fork, or the "master" of DGtal-team):
+
+@code
+git push origin :cool-feature
+@endcode
+  
+
+\section sectGITCommands Useful git commands
+
+In this section, we detail couple of useful  git commands.
+
+\subsection ssCom1 git stash
+
+Let suppose you have  edited some files and that you figure out that these modifications should be in another branch (or you figure out that your are working on the wrong branch). The command
+@code
+git stash
+@endcode
+will put all your edits (uncommited edits) into a patch stack (and remove them from your working copy). Then, you can create your new local branch and "pop" your edit from the stack to reapply the changes. E.g.:
+@code
+git pull //up-to-date branch "master"
+//...
+//edits
+//...
+//well... these edits should be in a separate branch!
+git stash
+git branch newLocalBranch
+git checkout newLocalBranch
+git stash pop
+//...
+//edits
+git commit -a -m "...." //commit to new branch
+@endcode
+To cleanup your stack: "git stash clear"
+@note In the previous example, it wouldn't have  been possible to create/checkout a new branch since your current branch contained uncommited edits.
+ 
+
+
+\subsection ssCom2 git Tracking Branches
+
+Tracking branches are directely associated to a remote branch. On
+tracked branch you can directely apply push and pull with no other
+argument. After a clone the resulting origin branch is a tracking branch.
+
+@code
+git checkout --track aRemote/aBranch
+@endcode
+
+Then you will work on the new tracked branch aBranch
+
+@note
+the option --track work only from git version 1.6.2 and later. But you can perform equivalent with the following command:
+@code 
+git checkout -b [myBranchName] [aRemoteName]/[aBranch]
+@endcode 
+
+
+
+\subsection ssCom3 git Deleting a remote Branch
+
+After working on your remote branch you can remove it from your server
+by using this particular syntax:
+
+@code 
+ git push aRemoteName :theBranchToDelete
+@endcode
+
+
+
+
+\section sectGIT2 Basic comparison SVN/GIT
+
+\subsection ss21 Clone == Checkout
+@code
+ 	svn checkout https://liris.cnrs.fr/dgtal/trunk
+	<==>
+	git clone git@github.com:DGtal-team/DGtal
+or
+	git clone https://DGtal-team@github.com/DGtal-team/DGtal
+@endcode
+the clone will "clone" the repository with all its branches (default one
+"master" <==> "trunk" in SVN)
+
+\subsection ss22 Update, Edit, add, commit, push
+
+  - Fetch the changes from the server
+@code
+	svn update <==> git pull
+@endcode
+
+  - add a file into the VC system:
+@code
+	svn add file <==> git add file
+@endcode
+
+  - See the current status of your working copy
+@code
+	svn status <==> git status
+@endcode
+
+  - commit locally your changes (git only)
+@code
+	git commit (commit the added files)
+	git commit -a (commit the added files and the modified files)
+@endcode
+
+  - push the modifications to the server (in the git case, you'll push
+all your local commits)
+@code
+	svn commit <==> git push
+@endcode
+
+  - create a branch
+@code
+	svn copy URL URL (server side branch, you need to be online)
+	<==>
+	git branch toto (offline local branch)
+@endcode
+
+  - Jump to another branch
+@code
+	svn switch URL (server-side branch...)
+	<==>	
+	git checkout toto (offline branch)
+@endcode
+
+  - merge branches
+@code
+	svn merge URL (assuming your WC is trunk)
+	svn commit...
+	<==>
+	git checkout master (we go back to the "trunk")
+	git merge toto (merger toto->trunk)	
+	git commit -a ...
+@endcode
+
+
+
+
+\section sectGIT5 Resolving GIT conflict (uncommon)
+
+Even it is very rare, conflit can appear when you try to apply a pull:
+
+@code 
+>git pull upstream master
+
+remote: Counting objects: 1, done.
+remote: Total 1 (delta 0), reused 1 (delta 0)
+Unpacking objects: 100% (1/1), done.
+From github.com:DGtal-team/DGtal
+ * branch            master     -> FETCH_HEAD
+Auto-merging doc/cellular-topology.dox
+CONFLICT (content): Merge conflict in doc/cellular-topology.dox
+Auto-merging src/DGtal/topology/KhalimskySpaceND.ih
+Automatic merge failed; fix conflicts and then commit the result.
+@endcode
+
+
+
+To resolve the conflict you just have to apply the command:
+
+@code
+> git mergetool
+@endcode
+
+It will lunch simple tools like opendiff on MacOSX allowing to select the main file. After saving the merged file, you simply have to commit the new change:
+
+@code
+> git commit -m "Merging GIT conflict! " -a
+> git pull upstream master
+@endcode
+
+
+
+
+
+
+For further details, there exist plenty of git tutorials on the web. I
+strongly encourage you to have a look to the progit.org one
+(http://progit.org/book/).
+
+GitRef is also very nice: http://gitref.org/index.html
+
+Important things:
+	- git branches are local (but we can publish a branch too)
+	- easy merge
+	- except pull/push, everything else can be done offline (with a
+consistent history).
+
+
+
+*/
+
+}

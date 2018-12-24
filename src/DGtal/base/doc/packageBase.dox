@@ -1,0 +1,62 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageBase.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/12/21
+ *
+ * Documentation file for feature Base
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/packageBase/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageBase  Base package
+
+@author David Coeurjolly, Jacques-Olivier Lachaud, Tristan Roussillon
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+This package gathers many concepts and stand-alone classes that are used in other packages.   
+
+@b Modules
+
+- \ref moduleIteratorsRanges (Tristan Roussillon)
+-      Smart pointers --- coming soon ---
+- \ref moduleCloneAndReference (Jacques-Olivier Lachaud)
+- \ref moduleSetFunctions (Jacques-Olivier Lachaud)
+
+@b Package @b Concepts @b Overview
+- \ref packageBaseConcepts
+
+
+@b Related @b documentation @b pages
+
+*/
+
+}

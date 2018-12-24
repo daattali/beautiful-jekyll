@@ -1,0 +1,252 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ParallelStrip.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2013/09/26
+ *
+ * Implementation of inline methods defined in ParallelStrip.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cmath>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::~ParallelStrip()
+{}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::ParallelStrip()
+{}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::ParallelStrip
+( Scalar aMu, const RealVector & N, Scalar aNu )
+  : myMu( aMu ), myN( N ), myNu( aNu )
+{
+  Scalar l = myN.norm();
+  if ( l != 1.0 ) {
+    myMu /= l;
+    myN  /= l;
+    myNu /= l;
+  }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::ParallelStrip
+( const ParallelStrip& other )
+  : myMu( other.myMu ), myN( other.myN ), myNu( other.myNu )
+{
+  ASSERT( myNu != NumberTraits<Scalar>::ZERO );
+  ASSERT( myN.norm1() != NumberTraits<Scalar>::ZERO );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>&
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::operator=( const ParallelStrip & other )
+{
+  if ( this != &other )
+    {
+      myMu = other.myMu;
+      myN = other.myN;
+      myNu = other.myNu;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+typename DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::Scalar
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::mu() const
+{
+  return myMu;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+const typename DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::RealVector&
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::normal() const
+{
+  return myN;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+typename DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::Scalar
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::nu() const
+{
+  return myNu;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+typename DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::Scalar
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::width() const
+{
+  return nu();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::Dimension
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::mainAxis() const
+{
+  Dimension i = 0;
+  for ( Dimension k = 1; k < Space::dimension; ++k )
+    if ( std::abs( myN[ k ] ) > std::abs( myN[ i ] ) )
+      i = k;
+  return i;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+typename DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::Scalar
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::axisWidth() const
+{
+  Dimension i = mainAxis();
+  return std::abs( nu() / myN[ i ] );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+DGtal::Dimension
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::mainDiagonal() const
+{
+  Dimension d = 0;
+  Dimension i = 1;
+  for ( Dimension k = 0; k < Space::dimension; ++k )
+    {
+      if ( myN[ k ] < NumberTraits<Scalar>::ZERO )
+        d += i;
+      i <<= 1;
+    }
+  return d;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+typename DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::Scalar
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::diagonalWidth() const
+{
+  return nu() * sqrt( Space::dimension ) / myN.norm1();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+void
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::getBounds( Scalar & aMu, Scalar & mu_plus_nu ) const
+{
+  aMu = myMu;
+  mu_plus_nu = myMu + myNu;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+bool
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::operator()( const Point & p ) const
+{
+  Scalar s = NumberTraits<Scalar>::ZERO;
+  for ( Dimension i = 0; i < Space::dimension; ++i )
+    s += myN[ i ] * NumberTraits<typename Point::Coordinate>::castToDouble( p[ i ] );
+  return ( muIncluded ? ( mu() <= s ) : ( mu() < s ) )
+    && ( muPlusNuIncluded ? ( s <= mu() + nu() ) : ( s < mu() + nu() ) );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+bool
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::operator()( const RealPoint & p ) const
+{
+  Scalar s = myN.dot( p );
+  return ( muIncluded ? ( mu() <= s ) : ( mu() < s ) )
+    && ( muPlusNuIncluded ? ( s <= mu() + nu() ) : ( s < mu() + nu() ) );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+void
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ParallelStrip " << mu()
+      << ( muIncluded ? " <= " : " < " )
+      << "( " << myN[ 0 ];
+  for ( Dimension i = 1; i < Space::dimension; ++i )
+    out << ", " << myN[ i ];
+  out << " ).X"
+      << ( muPlusNuIncluded ? " <= " : " < " )
+      << (mu()+nu()) << "]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+bool
+DGtal::ParallelStrip<TSpace, muIncluded, muPlusNuIncluded>::isValid() const
+{
+  return ( nu() >= NumberTraits<Scalar>::ZERO )
+    && ( normal().norm1() > NumberTraits<Scalar>::ZERO );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, bool muIncluded, bool muPlusNuIncluded>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+		  const ParallelStrip<TSpace, muIncluded, muPlusNuIncluded> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

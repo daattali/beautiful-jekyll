@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="DGtal::PointVector\l\&lt; 2, Integer \&gt;" alt="" coords="1089,132,1229,181"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="675,97,858,147"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1CombinatorialDSS_1_1CodeHandler.html" title="DGtal::CombinatorialDSS\l\&lt; TConstIterator, TInteger\l \&gt;::CodeHandler\&lt; ConstIterator \&gt;" alt="" coords="1037,205,1280,273"/>
-<area shape="rect" id="node18" href="$classDGtal_1_1CombinatorialDSS_1_1CodeHandler.html" title="DGtal::CombinatorialDSS\l\&lt; TConstIterator, TInteger\l \&gt;::CodeHandler\&lt; TIterator,\l iterator_type \&gt;" alt="" coords="665,173,868,260"/>
-<area shape="rect" id="node14" title="STL class." alt="" coords="157,269,285,300"/>
-</map>

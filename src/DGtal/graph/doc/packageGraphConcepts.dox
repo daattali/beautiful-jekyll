@@ -1,0 +1,148 @@
+/**
+ * @file packageGraphConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/01/20
+ *
+ * Documentation file for feature Graph
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ *
+ *
+ * The content is just an example of dot graph structure. Please
+ * update it.
+ *
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageGraphConcepts  Graph Main Concepts
+
+@writers Jacques-Olivier Lachaud
+
+@dot
+digraph GGraph {
+    rankdir= BT
+
+    subgraph cluster_ext {
+	rank = same;
+        style=invis;
+        subgraph cluster_base {
+                 style=filled;
+                 color="#eeeeff";
+                 node [style=filled,color=white];
+                 label="base";
+
+                 CPredicate [ label="CPredicate" URL="\ref concepts::CPredicate" ];
+        }
+        subgraph cluster_kernel {
+                 style=filled;
+                 color="#ddddee";
+                 node [style=filled,color=white];
+                 label="kernel";
+                 
+        }
+        subgraph cluster_io {
+                 style=filled;
+                 color="#e4e4ff";
+                 node [style=filled,color=white];
+                 label="io";
+
+        }
+        subgraph cluster_boost {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="boost";
+
+                 boost_Assignable [ label="boost::Assignable" URL="\ref boost::Assignable" ];
+                 boost_CopyConstructible [ label="boost::CopyConstructible" URL="\ref boost::CopyConstructible" ];
+                 boost_OutputIterator [ label="boost::OutputIterator" URL="\ref boost::OutputIterator" ];
+                 boost_UniqueAssociativeContainer  [ label="boost::UniqueAssociativeContainer" URL="\ref boost::UniqueAssociativeContainer" ];
+                 boost_PairAssociativeContainer  [ label="boost::PairAssociativeContainer" URL="\ref boost::PairAssociativeContainer" ];
+        }
+        subgraph cluster_std {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="std";
+
+       }
+    }
+  
+    subgraph cluster_concepts {
+        style=filled;
+        color=lightgrey;
+        node [style=filled,color=white];
+        label="Graph (main concepts)";
+        
+        CUndirectedSimpleLocalGraph [ label="CUndirectedSimpleLocalGraph" URL="\ref concepts::CUndirectedSimpleLocalGraph" ] ;
+        CUndirectedSimpleGraph [ label="CUndirectedSimpleGraph" URL="\ref concepts::CUndirectedSimpleGraph" ] ;
+        CVertexPredicate [ label="CVertexPredicate" URL="\ref concepts::CVertexPredicate" ] ;
+        CVertexMap [ label="CVertexMap" URL="\ref concepts::CVertexMap" ] ;
+        CGraphVisitor [ label="CGraphVisitor" URL="\ref concepts::CGraphVisitor" ] ;
+    }
+
+    CVertexPredicate -> CPredicate;
+    CVertexMap -> boost_Assignable;
+    CUndirectedSimpleGraph -> CUndirectedSimpleLocalGraph;
+    CUndirectedSimpleLocalGraph -> CVertexMap [label="use",style=dashed] ;
+    CUndirectedSimpleLocalGraph -> boost_OutputIterator [label="use",style=dashed] ;
+    CUndirectedSimpleLocalGraph -> CVertexPredicate [label="use",style=dashed] ;
+    CGraphVisitor -> boost_CopyConstructible;
+
+    subgraph cluster_down {
+    
+    subgraph cluster_models {
+        style=filled;
+        color="#ccffcc";
+        node [style=filled,color=white];
+        label="Graph (main models and classes)";
+
+        CVertexPredicateArchetype [ label="CVertexPredicateArchetype" URL="\ref concepts::CVertexPredicateArchetype" ] ;
+        STLMapToVertexMapAdapter [ label="STLMapToVertexMapAdapter" URL="\ref STLMapToVertexMapAdapter" ] ;
+        BreadthFirstVisitor [ label="BreadthFirstVisitor" URL="\ref BreadthFirstVisitor" ] ;
+        DepthFirstVisitor [ label="DepthFirstVisitor" URL="\ref DepthFirstVisitor" ] ;
+        DistanceBreadthFirstVisitor [ label="DistanceBreadthFirstVisitor" URL="\ref DistanceBreadthFirstVisitor" ] ;
+        GraphVisitorRange [ label="GraphVisitorRange" URL="\ref GraphVisitorRange" ] ;
+        }
+
+    subgraph cluster_topology {
+        style=filled;
+        color="#ccffcc";
+        node [style=filled,color=white];
+        label="Topology (related concepts and models)";
+
+        CAdjacency  [ label="CAdjacency" URL="\ref concepts::CAdjacency" ] ;
+        DigitalSurface [ label="DigitalSurface" URL="\ref DigitalSurface" ] ;
+        IndexedDigitalSurface [ label="IndexedDigitalSurface" URL="\ref IndexedDigitalSurface" ] ;
+        Object [ label="Object" URL="\ref Object" ] ;
+        }
+
+    CVertexPredicateArchetype -> CVertexPredicate;
+    STLMapToVertexMapAdapter -> CVertexMap;
+    STLMapToVertexMapAdapter -> boost_UniqueAssociativeContainer [label="use",style=dashed] ;
+    STLMapToVertexMapAdapter -> boost_PairAssociativeContainer [label="use",style=dashed] ;
+    CAdjacency -> CUndirectedSimpleLocalGraph;
+    DigitalSurface -> CUndirectedSimpleGraph;
+    IndexedDigitalSurface -> CUndirectedSimpleGraph;
+    Object -> CUndirectedSimpleGraph;
+    BreadthFirstVisitor -> CUndirectedSimpleLocalGraph  [label="use",style=dashed] ;
+    BreadthFirstVisitor -> CGraphVisitor ;
+    DepthFirstVisitor -> CUndirectedSimpleLocalGraph  [label="use",style=dashed] ;
+    DepthFirstVisitor -> CGraphVisitor ;
+    DistanceBreadthFirstVisitor -> CUndirectedSimpleLocalGraph  [label="use",style=dashed] ;
+    DistanceBreadthFirstVisitor -> CGraphVisitor ;
+    GraphVisitorRange -> CGraphVisitor  [label="use",style=dashed] ;
+    }
+}
+@enddot
+
+*/
+
+}

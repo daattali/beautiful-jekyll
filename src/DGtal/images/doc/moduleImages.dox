@@ -1,0 +1,539 @@
+/**
+ * @file moduleImages.dox
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/11/15
+ * 
+ * @brief Documentation file about the images in DGtal
+ *
+ * This file is part of the DGtal library.
+ */
+namespace DGtal {
+
+//----------------------------------------
+/*!
+
+
+@page moduleImages Images
+@authors Tristan Roussillon, David Coeurjolly, Martial Tola, Roland Denis
+@date 2012/12/05
+
+[TOC]
+
+\section dgtalImagesAbstract Overview
+
+The concept of @a point @a functor describes a mapping between 
+the points of a digital space and a set of values. 
+The only method of a point functor is the `operator()`, 
+which must take a point as argument and must return a value.
+
+The concept of @a constant image is a point functor bounded by a domain. 
+It is thus a refinement of the concept of point functor, 
+describing a mapping between points and values, but having in addition a domain, 
+returned by the `domain` method, and a range of values 
+(for each point of the domain), returned by the `constRange` method.  
+
+The concept of @a image, which is a refinement of the concept of constant image, 
+provides extra services to update values.  
+Any model of image must have a method `setValue` 
+taking a point and a value as input parameters
+and updating the value associated with the given point with the given value.  
+In addition, they must have a range, returned by the `range` method,
+providing output iterators.  
+
+Different models of images are available: ImageContainerBySTLVector, 
+ImageContainerBySTLMap, ImageContainerByITKImage (a wrapper for ITK images)
+and --- coming soon --- experimental::ImageContainerByHashTree.
+
+ \section dgtalImagesDetails Let us go into details 
+
+In this section, the concepts and the main services 
+to read and write values in images are detailed.  
+
+  \subsection dgtalImagesConcepts Concepts
+
+Any model of the concept concepts::CPointFunctor must have two nested types:
+ 
+  - Point, which specifies the type for a point.
+  - Value, which specifies the type for a value.
+
+Moreover, it must have the following method: 
+
+  - `operator()`, which takes a point as argument
+and returns a value, like a function.
+
+The concept concepts::CConstImage is a refinement of concepts::CPointFunctor. 
+Its models must have two extra nested types: 
+
+  - Domain, a model of concepts::CDomain
+  - ConstRange, a model of concepts::CConstBidirectionalRangeFromPoint
+
+Obviously, there are two methods 
+that return instances of these two types: 
+
+  - `domain`, which returns a constant reference on the image domain
+  - `constRange`, which returns a range providing constant bidirectional 
+iterators on the image values (associated to each point of the image domain)
+
+You can see @ref moduleSpacePointVectorDomain for more
+details about spaces and domains and @ref dgtalImagesRanges 
+for more details about ranges in images.
+
+The concept concepts::CImage is a refinement of concepts::CConstImage.  
+Images, instead of constant ones, provide services
+to update values. 
+The main way of assigning values to points is the 
+following method: 
+
+  - `setValue`, which updates a given value at a given point. 
+
+Moreover, in addition to the ConstRange, images must have
+the following inner type: 
+
+  - Range, a model of concepts::CConstBidirectionalRangeFromPoint, like ConstRange,
+and a model of concepts::CBidirectionalRangeWithWritableIteratorFromPoint, which must provide 
+output iterators for incrementally updating a (sub)range of values.   
+
+Obviously, you can get an instance of this type using the following method: 
+
+  - `range`, which returns a range providing both constant bidirectional 
+iterators and output iterators. 
+
+Lastly, note that the Value type in the (constant) images
+is expected to be at least a model of concepts::CLabel, ie.  
+to be default-constructible, assignable and equality comparable.
+
+@note In the snippets of the following subsections, 
+the type of image used is `Image` and its instances are `image`, `image1`, `image2`. 
+
+  \subsection dgtalImagesMainMethods Main methods
+
+
+All models of images have a domain returned by the method `domain`. 
+This domain is the set of points for which the image is defined
+and has values. Since a domain is a range, you can straightforwardly 
+use it in order to iterate over the points of an image. 
+
+@code
+//iterate over the points
+Image::Domain d = image.domain(); 
+for (Image::Domain::ConstIterator it = d.begin(), itEnd = d.end(); 
+     it != itEnd; ++it)
+{}
+@endcode
+
+Models of images have also two main methods in order to 
+read or write values at a given point: 
+
+- `operator()` to get the value associated to a given point 
+- `setValue` to assign a value to a given point. 
+
+@code
+//process the values
+Image::Domain d = image.domain(); 
+for (Image::Domain::ConstIterator it = d.begin(), itEnd = d.end(); 
+     it != itEnd; ++it)
+{
+  Image::Value v = image( *it ); 
+  v += 5; //adding 5 to all values
+  image.setValue( v ); 
+}
+@endcode
+
+Note that this method of iterating over the values of an image
+is not always the fastest and that is why we also provide ranges of values. 
+
+
+  \subsection dgtalImagesRanges Ranges of values
+
+Constant images provide a constant range of values returned by the `constRange` method.
+As every model of concepts::CConstBidirectionalRange, it provides `begin`, `end`, `rbegin` and `rend`
+ methods returning constant iterators to iterate over the values in the forward or
+backward direction. 
+
+@code
+//iterate over the values
+Image::ConstRange r = image.constRange(); 
+for (Image::ConstRange::ConstIterator it = r.begin(), itEnd = r.end(); 
+     it != itEnd; ++it)
+{} 
+@endcode
+
+However, this range is also a model of concepts::CConstBidirectionalRangeFromPoint, 
+which is a refinement of concepts::CConstBidirectionalRange. That is why it also has 
+overloaded versions of the `begin` and `rbegin` methods taking a point as input argument. 
+This provides a way of iterating on sub-ranges defined from points.  
+
+@code
+//iterator on the origin (0, ... , 0)
+Image::ConstRange::ConstIterator it = r.begin( Image::Point::diagonal(0) )
+@endcode
+
+Note that if the point does not belong to the domain, 
+the returned iterators (resp. reverse iterators) 
+must be equal to the `end` (resp. `rend`) methods. 
+
+@code
+ASSERT( image.constRange().begin( image.domain().end() ) == image.constRange().end() )
+@endcode
+
+Images provide in addition to a constant range, a richer range returned by the `range` method.
+This range is not only a model of concepts::CBidirectionalRangeFromPoint, but also a model 
+of concepts::CBidirectionalRangeWithWritableIteratorFromPoint. That is why, it must have two methods:   
+`outputIterator` and `routputIterator` returning output iterators. Moreover, 
+it must have overloaded versions of these methods taking a point as input argument. 
+Thus, these output iterators are useful in order to incrementaly fill (a part of) an image. 
+For instance, you can fill an image from the values of another one 
+(assumed to have the same domain) as follows: 
+
+@code
+Image::Range r1 = image1.range(); 
+Image::ConstRange r2 = image2.constRange(); 
+std::copy( r2.begin(), r2.end(), r1.outputIterator() ); 
+@endcode
+
+ \section dgtalImagesModels Main models
+
+Different models of images are available: ImageContainerBySTLVector, 
+ImageContainerBySTLMap, experimental::ImageContainerByHashTree and 
+ImageContainerByITKImage, a wrapper for ITK images. 
+
+  \subsection dgtalImagesModelsVector ImageContainerBySTLVector
+
+ImageContainerBySTLVector is a model of concepts::CImage 
+that inherits the STL vector class. 
+The hyper-rectangular domain, which the only model
+of domain accepted, is linearized so that  
+each point is mapped, from its coordinates, into an index 
+and each index is mapped into a unique value, as in any 
+one-dimensional array. 
+
+Let \f$ n \f$ be the domain size (the number of points). 
+At construction all the needed space is allocated 
+and filled with a default value (0) in \f$ O(n) \f$ space and time. 
+After that, you can access to the value associated
+to any point at any time. Each access for reading (`operator()`)
+or writing ('setValue`) values is in \f$ O(1) \f$.
+
+The (constant) range of this class only used the built-in iterators
+of the underlying STL vector. It is therefore a fast way of 
+iterating over the values of the image. 
+
+  \subsection dgtalImagesModelsMap ImageContainerBySTLMap
+
+ImageContainerBySTLMap is a model of concepts::CImage
+that inherits the STL map class. 
+The domain can be any set of points. 
+Values are stored and associated to points
+in pairs point-value. 
+The set of points stored in 
+this way may be any domain subset. 
+A default value (user-defined) is automatically 
+associated to each point of the domain that
+does not belong the subset for which values are known. 
+Once constructed (in \f$ O(1) \f$), the image is valid and every point of the
+image domain has a value, which can be read and overwritten.
+
+The pairs point-value are stored in a red-black tree, 
+where the points are used as keys, so that  
+each access for reading (`operator()`)
+or writing (`setValue`) values is in \f$ O(log m) \f$, 
+where \f$ m \f$ is the cardinal of the subset for which values
+are known (less or equal to the domain size \f$ n \f$).  
+
+The (constant) range of this class adapts the domain iterators
+in order to deal with values instead of points. The `operator*`
+of the iterators provided by the range calls the `operator()` 
+and use the `setValue` method of the class. 
+
+
+
+\subsection dgtalImagesModelsHashTree ImageContainerByHashTree
+
+experimental::ImageContainerByHashTree is an experimental image
+container implementing a pointerless nD-tree structure. In dimension 2
+and 3, this structure is similar to quadtree and octree repsectively
+in which hierarchical links between a node and its children is given
+by prefix of a binary representation of the node coordinates using
+Morton keys. Finally, data values are stored in the structure in a
+hash table whose hash function is a suffix on the Morton key code. 
+
+Such container is well adapted for high resolution sparse images.
+
+For more details, please refer to @cite Lewiner2009a
+
+ \section dgtalImagesAdapters Image Adapter classes
+
+ImageAdapter, ConstImageAdapter are perfect swiss-knifes to transform
+and adapt images (change their domain definition, change their value
+types, ...). These classses are parametrized by several types and
+functor in order to adapt the behavior of image getters/setters (@a operator() and @a
+setValue methods). These adapted behaviors are computed on-the-fly
+when calling these methods.
+
+
+* ConstImageAdapter requires several types and functors to create a
+"read-only" adapted image (operator(), constRange(), ...)
+
+* ImageAdapter requires a supplementary functor and allows write
+ access to the image (@a setValue methods, range(), ... )
+
+@note Functors used to convert domains or values may be complex. Keep
+in mind that each time operator() or setValue() methods are called,
+such functors are evaluated (with potential side-effects depending on
+the functors).
+
+In addition, ArrayImageAdapter allows to convert any iterable storage
+(like a C-style array or some DGtal image models), to a concepts::CImage (or concepts::CConstImage) model 
+with the possibility to restrict his visibility to a sub-domain
+of the definition domain.
+
+\subsection constimage  ConstImageAdapter 
+
+ConstImageAdapter is a small class that adapts any (constant or not)
+image into a constant one, which provides a virtual view (so
+read-only) of the true values contained in the adapted image.  The
+class is parametrized by several template arguments:
+* @a TImageContainer: the type of image to adapt.
+* @a TNewDomain: the type of the new domain.
+* @a TFunctorD: type of functor used to convert image domain points to
+new domain points
+* @a TNewValue: type of the new image value type.
+* @a TFucntorV: functor to convert values.
+
+
+The values associated to access the point values are adapted  
+ with a functor @a g and a functor @a f given at construction so that 
+ operator() calls @a f(img(g(aPoint))), instead of calling directly 
+ img.operator() of the underlying image @a img.
+
+Functor g (and/or functor f) can be a default functor, i.e. a
+ simple functor that just returns its argument.
+
+In order to illustrate the next ConstImageAdapter usage samples,
+ we are going a) to use these includes:
+
+@snippet images/exampleConstImageAdapter.cpp include 
+
+b) then define these types and variables:
+
+@snippet images/exampleConstImageAdapter.cpp def 
+
+c) then define a simple 16x16 (1,1) to (16,16) image (of 'unsigned char' type):
+
+@snippet images/exampleConstImageAdapter.cpp image_creation 
+
+filled with 0 to 255 values like that:
+
+@snippet images/exampleConstImageAdapter.cpp image_filling 
+
+which looks like that with a simple HueShadeColorMap varying from 0 to 255 and with (1,1) the first bottom-left point:
+
+\image html image.png " (1) simple 16x16 image: (1,1) to (16,16) drawn with a simple HueShadeColorMap varying from 0 to 255." 
+\image latex image.png " (1) simple 16x16 image: (1,1) to (16,16) drawn with a simple HueShadeColorMap varying from 0 to 255." width=5cm 
+
+Here is now the construction of a simple image adapter that 
+ use a subdomain of the initial image domain to
+ access the first bottom-left 8x8 image: 
+
+@snippet images/exampleConstImageAdapter.cpp ConstImageAdapterForSubImage_creation 
+
+and here is the result:
+\image html subImage.png " (2) first bottom-left 8x8 image: (1,1) to (8,8) adapted from image (1) with a subdomain." 
+\image latex subImage.png " (2) first bottom-left 8x8 image: (1,1) to (8,8) adapted from image (1) with a subdomain." width=5cm 
+
+
+Here is then the construction of an image adapter that 
+ use a specific domain: here, only one pixel on two in x and y coordinates, created like that:
+
+@snippet images/exampleConstImageAdapter.cpp specificDomain_creation
+
+from the initial image domain. 
+
+@snippet images/exampleConstImageAdapter.cpp ConstImageAdapterForSpecificImage_creation
+
+Here is the result:
+
+\image html specificImage.png " (3) 16x16 image: (1,1) to (16,16) adapted from image (1) with a specific domain." 
+\image latex specificImage.png " (3) 16x16 image: (1,1) to (16,16) adapted from image (1) with a specific domain." width=5cm </TD>
+
+Here is now the construction of an image adapter that 
+ is a thresholded view of the initial scalar image: 
+
+@snippet images/exampleConstImageAdapter.cpp ConstImageAdapterForThresholderImage_creation
+
+and here is the result with a simple GrayscaleColorMap varying from 0 to 1:
+
+\image html thresholderImage.png " (4) 16x16 image: (1,1) to (16,16) adapted from image (1) with a thresholder set to 127." 
+\image latex thresholderImage.png " (4) 16x16 image: (1,1) to (16,16) adapted from image (1) with a thresholder set to 127." width=5cm 
+
+Here is finally the construction of an image adapter that 
+ use a functor to change 'unsigned char' values to 'double'
+ values using a log scale functor defined like that:
+
+@snippet images/exampleConstImageAdapter.cpp LogScaleFunctor
+
+defined from the initial image: 
+
+@snippet images/exampleConstImageAdapter.cpp ConstImageAdapterForLogScale_creation
+
+and here is the result with a simple HueShadeColorMap varying from 0. to logScale(255):
+
+\image html logImage.png " (5) 16x16 image: (1,1) to (16,16) adapted from image (1) with a log scale functor." 
+\image latex logImage.png " (5) 16x16 image: (1,1) to (16,16) adapted from image (1) with a log scale functor." width=5cm 
+
+
+\subsection imageadat  ImageAdapter 
+
+ImageAdapter is a small class that adapts an image (like
+ConstImageAdapter) but provides a virtual access (reading and writing)
+of the true values contained in the adapted image.  It uses a given
+Domain (i.e. a subdomain) but work directly (for reading and writing
+processes) thanks to an alias (i.e. a pointer) on the original Image
+given in argument.
+
+This class requires an additional templare paremter:
+* @a TFunctoVm1: functor to convert adapted image values to the original
+ image values. 
+
+The values associated to accessing the point values are adapted  
+ with a functor g and a functor f given at construction so that 
+ operator() calls f(img(g(aPoint))), instead of calling directly 
+ operator() of the underlying image img.
+
+The values associated to writing the points are adapted  
+ with a functor @a g and a functor @f$ f^{-1}@f$ given at construction so that 
+ setValue() is @a img.setValue(g(aPoint), f-1(aValue)).
+
+The use is the same that for ConstImageAdapter.
+
+\subsection arrayimageadat ArrayImageAdapter
+The ArrayImageAdapter class is less generic than ImageAdapter but is able to adapt
+any storage that have a random-access iterator to a concepts::CImage model.
+It is thus usable on C-style array but also on STL container like `std::vector`
+(and therefore on ImageContainerBySTLVector) and on another ArrayImageAdapter instances.
+
+In addition, this class allows to restrict the visibility to a sub-domain of the definition domain
+and provides a read-write random-access iterator (depending on the mutability of the storage's iterator)
+with fast access to the underlying point (no need to iterate over the domain).
+
+A common usage of this last feature is for padded raw data.
+
+In order to illustrate the following ArrayImageAdapter usages, we need some common includes:
+@snippet images/exampleArrayImageAdapter.cpp include
+and the next definitions:
+@snippet images/exampleArrayImageAdapter.cpp def
+
+From a C-style array, we can create an image that spans the full definition domain:
+@snippet images/exampleArrayImageAdapter.cpp raw_image_creation
+and fill it using common iterator syntax:
+@snippet images/exampleArrayImageAdapter.cpp image_filling
+that gives us the following result:
+\image html ArrayImageAdapter_image.png " (6) simple 16x16 image: (1,1) to (16,16) drawn with a simple HueShadeColorMap varying from 0 to 255."
+\image latex ArrayImageAdapter_image.png " (6) simple 16x16 image: (1,1) to (16,16) drawn with a simple HueShadeColorMap varying from 0 to 255." width=5cm
+
+We can now create a read-only view of the same image on a sub-domain:
+@snippet images/exampleArrayImageAdapter.cpp ConstArrayImageAdapterForSubImage_creation
+that gives us:
+\image html ArrayImageAdapter_subImage.png " (7) first bottom-left 8x8 image: (1,1) to (8,8) adapted from image (1) with a subdomain."
+\image latex ArrayImageAdapter_subImage.png " (7) first bottom-left 8x8 image: (1,1) to (8,8) adapted from image (1) with a subdomain." width=5cm
+
+If we want to modify the image through this adapter, we must create a read-write instance using the following syntax:
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterForSubImage_creation
+or the alternate method using the helpers:
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterForSubImage_alternateCreation
+and we can then modify it using the common syntax with a domain iterator:
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterForSubImage_modifByDomain
+
+\image html ArrayImageAdapter_subImage_modifByDomain.png " (8) modifying the first bottom-left 8x8 image through the sub-domain view with a domain iterator."
+\image latex ArrayImageAdapter_subImage_modifByDomain.png " (8) modifying the first bottom-left 8x8 image through the sub-domain view with a domain iterator." width=5cm
+
+Alternatively, there is a computationally faster syntax (no need to linearize the point) using the method `getPoint` featured by the ArrayImageAdapter iterators (see ArrayImageIterator):
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterForSubImage_modifByImage
+
+\image html ArrayImageAdapter_subImage_modifByImage.png " (9) modifying the first bottom-left 8x8 image through the sub-domain view with an image iterator."
+\image latex ArrayImageAdapter_subImage_modifByImage.png " (9) modifying the first bottom-left 8x8 image through the sub-domain view with an image iterator." width=5cm
+
+It is also possible to use ArrayImageAdater on any image model that provides a random-access iterator, like ImageContainerBySTLVector:
+@snippet images/exampleArrayImageAdapter.cpp ImageSTL_creation
+and adapt it using:
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterFromImageSTL
+or, thanks to the helpers:
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterFromImageSTL_alternate
+
+From there, we can use all the previous features or, for example, use available STL algorithms:
+@snippet images/exampleArrayImageAdapter.cpp ArrayImageAdapterFromImageSTL_copy
+
+\image html ArrayImageAdapter_subImage_copyToImageSTL.png " (10) modifying the first bottom-left 8x8 image of a ImageContainerBySTLVector through the sub-domain view."
+\image latex ArrayImageAdapter_subImage_copyToImageSTL.png " (10) modifying the first bottom-left 8x8 image of a ImageContainerBySTLVector through the sub-domain view." width=5cm
+
+
+\section dgtalImagesFunctions Useful classes and functions
+
+In addition to the image containers and the image adapters described in the previous sections, 
+there are also image proxys: 
+
+Image is a light proxy on image containers based on a COW pointer.
+It can be constructed, copied, assigned, deleted without any special care. 
+ 
+Moreover, in ImageHelper.h, many useful functions are provided. 
+
+1. Conversely, others convert images into digital sets with value comparators:
+setFromPointsRangeAndPredicate, setFromPointsRangeAndFunctor, setFromImage.
+
+2. Some of them convert digital sets into images,
+imageFromRangeAndValue assigns a given value in an image to each point of a given range.
+
+3. Some functions are available to fastly fill images 
+from point functors or other images: imageFromFunctor and imageFromImage.
+
+4. Lastly, some functor like the Projector from BasicPointFunctors can be useful to manipulate domain points and permits to extract N-1 images from ND images (see example \ref extract2DImagesFrom3D.cpp).  
+
+
+\subsection SubSampleFct Subsampling functor 
+
+In association with ConstImageAdapter or ImageAdapter you can apply
+image subsampling using a domain subsampler (BasicDomainSubSampler from the BasicPointFunctors class). The example
+\ref imageBasicSubsampling.cpp illustrates such a simple image subsampling  (in 2D and
+3D).
+
+To apply the subsampling, you first have to import the headers
+associated with the ConstImageAdapter and to the BasicDomainSubSampler: 
+
+
+@snippet images/imageBasicSubsampling.cpp imageBasicSubsamplingHeaders
+
+
+Then you can define some image types including the ConstImageAdapter:
+
+@snippet images/imageBasicSubsampling.cpp imageBasicSubsamplingType2D
+
+A subsampling functor can be constructed from a given grid size and a shift vector:
+
+@snippet images/imageBasicSubsampling.cpp imageBasicSubsamplingSubSampler2D
+
+Afterwards the ConstImageAdapter can be defined as follows:
+
+@snippet images/imageBasicSubsampling.cpp imageBasicSubsamplingConstImageAdapterSubSampling2D
+
+The resulting image can be exported with the GenericWriter class:
+
+@snippet  images/imageBasicSubsampling.cpp imageBasicSubsamplingExport2D
+
+
+You will obtain such a result (with also the result on 3D images):
+ \image html imageBasicSubsamplingExample.png "Illustration of the resulting subsampling given by the imageBasicSubsampling.cpp example".
+
+
+*/
+}
+
+
+
+
+
+
+
+
+

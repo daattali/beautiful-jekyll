@@ -1,0 +1,245 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImplicitFunctionDiff1LinearCellEmbedder.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2012/02/14
+ *
+ * Implementation of inline methods defined in ImplicitFunctionDiff1LinearCellEmbedder.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+~ImplicitFunctionDiff1LinearCellEmbedder()
+{}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+ImplicitFunctionDiff1LinearCellEmbedder()
+  : myPtrK( 0 ), myPtrFct( 0 ), myPtrEmbedder( 0 )
+{}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+ImplicitFunctionDiff1LinearCellEmbedder( const ImplicitFunctionDiff1LinearCellEmbedder & other )
+  : myPtrK( other.myPtrK ), 
+    myPtrFct( other.myPtrFct ), 
+    myPtrEmbedder( other.myPtrEmbedder )
+{}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder> &
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+operator=( const ImplicitFunctionDiff1LinearCellEmbedder & other )
+{
+  if ( this != &other )
+    {
+      myPtrK = other.myPtrK;
+      myPtrFct = other.myPtrFct;
+      myPtrEmbedder = other.myPtrEmbedder;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+void 
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+init( ConstAlias<KSpace> K, ConstAlias<ImplicitFunctionDiff1> f, ConstAlias<Embedder> e )
+{
+  myPtrK = &K;
+  myPtrFct = &f;
+  myPtrEmbedder = &e;
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+typename DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::GradientMap
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+gradientMap() const
+{
+  return GradientMap( *this );
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+typename DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::RealPoint
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+embed( const Point & p ) const
+{
+  ASSERT( myPtrEmbedder != 0 );
+  return myPtrEmbedder->embed( p );
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+typename DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::RealPoint
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+embedCell( const Cell & cell ) const
+{
+  return this->operator()( cell );
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+typename DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::RealPoint
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+operator()( const Cell & cell ) const
+{
+  ASSERT( this->isValid() );
+  // embed first the spel related to the cell.
+  Point p1( myPtrK->uCoords( cell ) );
+  RealPoint x1( embed( p1 ) );
+  ImplicitFctValue y1 = (*myPtrFct)( x1 );
+  for ( typename KSpace::DirIterator qit = myPtrK->uOrthDirs( cell ); 
+        qit != 0; ++qit )
+    { // cell is closed along this dimension.
+      // estimate coordinate by interpolation, looking for f(...)=0.
+      Dimension k = *qit;
+      Point p2( p1 ); --p2[ k ];
+      RealPoint x2( embed( p2 ) );
+      ImplicitFctValue y2 = (*myPtrFct)( x2 );
+      x1[ k ] -= y1 * ( x2[ k ] - x1[ k ] ) / ( y2 - y1 );
+    }
+  return x1;
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+typename DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::RealPoint
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+embedSCell( const SCell & scell ) const
+{
+  ASSERT( this->isValid() );
+  // embed first the spel related to the cell.
+  Point p1( myPtrK->sCoords( scell ) );
+  RealPoint x1( embed( p1 ) );
+  ImplicitFctValue y1 = (*myPtrFct)( x1 );
+  for ( typename KSpace::DirIterator qit = myPtrK->sOrthDirs( scell ); 
+        qit != 0; ++qit )
+    { // cell is closed along this dimension.
+      // estimate coordinate by interpolation, looking for f(...)=0.
+      Dimension k = *qit;
+      Point p2( p1 ); --p2[ k ];
+      RealPoint x2( embed( p2 ) );
+      ImplicitFctValue y2 = (*myPtrFct)( x2 );
+      x1[ k ] -= y1 * ( x2[ k ] - x1[ k ] ) / ( y2 - y1 );
+    }
+  return x1;
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+void
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+embed( const Point & p, RealPoint & x, RealVector & grad ) const
+{
+  x = embed( p );
+  grad = myPtrFct->gradient( x );
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+void
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+embedCell( const Cell & cell, RealPoint & x, RealVector & grad ) const
+{
+  x = embedCell( cell );
+  grad = myPtrFct->gradient( x );
+}
+//-----------------------------------------------------------------------------
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+void
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+embedSCell( const SCell & scell, RealPoint & x, RealVector & grad ) const
+{
+  x = embedSCell( scell );
+  grad = myPtrFct->gradient( x );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+void
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[ImplicitFunctionDiff1LinearCellEmbedder]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+bool
+DGtal::ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder>::
+isValid() const
+{
+  return ( myPtrK != 0 ) && ( myPtrFct != 0 ) && ( myPtrEmbedder != 0 );
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template < typename TKSpace, typename TImplicitFunctionDiff1, typename TEmbedder >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const ImplicitFunctionDiff1LinearCellEmbedder<TKSpace, TImplicitFunctionDiff1, TEmbedder> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

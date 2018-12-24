@@ -1,0 +1,186 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SimpleMatrixSpecializations.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/07/19
+ *
+ * Implementation of inline methods defined in SimpleMatrixSpecializations.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+template <typename M, DGtal::Dimension TM, DGtal::Dimension TN>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,TM,TN>::Component 
+DGtal::SimpleMatrixSpecializations<M,TM,TN>::minorDeterminant(const Matrix &aM,
+                                                       const DGtal::Dimension ai, 
+                                                       const DGtal::Dimension aj)
+{
+  BOOST_STATIC_ASSERT(TM == TN);
+  ASSERT(ai<TM);
+  ASSERT(aj<TN);
+  DGtal::SimpleMatrix<Component,TM-1,TN-1> mat;
+  DGtal::Dimension indexR=0;
+  DGtal::Dimension indexC=0;
+  for (DGtal::Dimension i=0; i<TM; i++)
+    for (DGtal::Dimension j=0; j<TN; j++)
+      {
+        if (i!=ai && j!=aj)
+          {
+	    ASSERT(indexR < TM -1);
+	    ASSERT(indexC < TN -1);
+            mat.setComponent(indexR,indexC, aM(i,j));
+            indexC++;
+          }
+        if (indexC==TM-1)
+          {
+            indexC=0;
+            indexR++;
+          }
+
+        if (indexR==TM-1)
+          return mat.determinant();
+      }
+ 
+  return mat.determinant();
+}
+
+template <typename M, DGtal::Dimension TM, DGtal::Dimension TN>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,TM,TN>::Component 
+DGtal::SimpleMatrixSpecializations<M,TM,TN>::determinant(const Matrix &aM)
+{
+  BOOST_STATIC_ASSERT(TM == TN);
+  
+  Component d = DGtal::NumberTraits<Component>::ZERO;
+  for(DGtal::Dimension i= 0; i< TM; ++i)
+    d += aM(i,0) * aM.cofactor(i,0);
+  return d;
+}
+// ----------------------- Specialization 1x1 ------------------------------
+    
+template <typename M>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,1,1>::Component 
+DGtal::SimpleMatrixSpecializations<M,1,1>::minorDeterminant(const Matrix &aM,
+                                                            const DGtal::Dimension i, 
+                                                            const DGtal::Dimension j)
+{
+  boost::ignore_unused_variable_warning( aM );
+  boost::ignore_unused_variable_warning( i );
+  boost::ignore_unused_variable_warning( j );
+  ASSERT(false && "Not defined for 1x1 matrices");
+  return NumberTraits<Component>::ZERO;
+}
+
+template <typename M>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,1,1>::Component 
+DGtal::SimpleMatrixSpecializations<M,1,1>::determinant(const Matrix &aM)
+{
+ 
+  return aM(0,0);
+}
+// ----------------------- Specialization 2x2 ------------------------------
+    
+template <typename M>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,2,2>::Component 
+DGtal::SimpleMatrixSpecializations<M,2,2>::minorDeterminant(const Matrix &aM,
+                                                       const DGtal::Dimension i, 
+                                                       const DGtal::Dimension j)
+{
+  ASSERT(i<2);
+  ASSERT(j<2);
+ return aM((i+1) % 2,(j+1) % 2);
+}
+
+template <typename M>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,2,2>::Component 
+DGtal::SimpleMatrixSpecializations<M,2,2>::determinant(const Matrix &aM)
+{
+ 
+  return aM(0,0)*aM(1,1) - aM(0,1)*aM(1,0);
+}
+// ----------------------- Specialization 3x3 ------------------------------
+
+template <typename M>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,3,3>::Component 
+DGtal::SimpleMatrixSpecializations<M,3,3>::minorDeterminant(const Matrix &aM,
+                                                       const DGtal::Dimension ai, 
+                                                       const DGtal::Dimension aj)
+{
+  ASSERT(ai<3);
+  ASSERT(aj<3);
+  DGtal::SimpleMatrix<Component,2,2> mat;
+  DGtal::Dimension indexR=0;
+  DGtal::Dimension indexC=0;
+  for (DGtal::Dimension i=0; i<3; i++)
+    for (DGtal::Dimension j=0; j<3; j++)
+      {
+        if (i!=ai && j!=aj)
+          {
+	    ASSERT(indexR < 3 -1);
+	    ASSERT(indexC < 3 -1);
+            mat.setComponent(indexR,indexC, aM(i,j));
+            indexC++;
+          }
+        if (indexC==3-1)
+          {
+            indexC=0;
+            indexR++;
+          }
+
+        if (indexR==3-1)
+          return mat.determinant(); //DGtal::SimpleMatrixSpecializations<M,2,2>::determinant(mat);
+      }
+ 
+  return mat.determinant(); //DGtal::SimpleMatrixSpecializations<M,2,2>::determinant(mat);
+}
+
+template <typename M>
+inline 
+typename DGtal::SimpleMatrixSpecializations<M,3,3>::Component 
+DGtal::SimpleMatrixSpecializations<M,3,3>::determinant(const Matrix &aM)
+{
+  return aM(0,0) * ( (aM(1,1)*aM(2,2))-
+                     (aM(1,2)*aM(2,1)) )-
+    aM(1,0) * ( (aM(0,1)*aM(2,2))-
+                (aM(0,2)*aM(2,1)) )
+    + aM(2,0) * ( (aM(0,1)*aM(1,2))-
+                  (aM(0,2)*aM(1,1)) );
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

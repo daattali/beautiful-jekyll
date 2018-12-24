@@ -1,0 +1,466 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file SimpleMatrix.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/07/10
+ *
+ * Implementation of inline methods defined in SimpleMatrix.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+
+/**
+ * Destructor.
+ */
+template <typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T,TM, TN>::~SimpleMatrix()
+{
+}
+
+
+/**
+ * Constructor.
+ */
+template <typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T,TM, TN>::SimpleMatrix()
+{
+  for ( DGtal::Dimension i = 0; i < TM*TN; ++i )
+    myValues[ i ] = NumberTraits<Component>::ZERO;
+  const Component one       =  NumberTraits<Component>::ONE;
+  const Component minus_one = -NumberTraits<Component>::ONE;
+  //Cofactor coefs computation
+  for (DGtal::Dimension i=0; i<TM; i++)
+    for (DGtal::Dimension j=0; j<TN; j++)
+      myCofactorCoefs[i*N+j] = ( (i+j) & 1 )
+        ? minus_one : one;
+}
+
+/**
+ * Constructor.
+ */
+template <typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T,TM, TN>::SimpleMatrix(std::initializer_list<T> values)
+{
+  DGtal::Dimension i = 0;
+  for ( const T *p = values.begin(); p != values.end() && i < TM*TN; ++p, ++i )
+    myValues[ i ] = *p;
+  for ( ; i < TM*TN; ++i )
+    myValues[ i ] = NumberTraits<Component>::ZERO;
+
+  const Component one       = NumberTraits<Component>::ONE;
+  const Component minus_one = -NumberTraits<Component>::ONE;
+  // Cofactor coefs computation
+  for ( i = 0; i < TM; i++ )
+    for ( DGtal::Dimension j       = 0; j < TN; j++ )
+      myCofactorCoefs[ i * N + j ] = ( ( i + j ) & 1 ) ? minus_one : one;
+}
+//------------------------------------------------------------------------------
+
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T ,TM, TN>::SimpleMatrix(const Self& other)
+{
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+  {
+    myValues[ i ] = other.myValues[i];
+    myCofactorCoefs[ i ] = other.myCofactorCoefs[i];
+  }
+}
+
+//---------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+void
+DGtal::SimpleMatrix<T, TM, TN>::clear()
+{
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    myValues[ i ] = NumberTraits<T>::ZERO;
+}
+//---------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+void
+DGtal::SimpleMatrix<T, TM, TN>::constant(const T &aSc)
+{
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    myValues[ i ] = aSc;
+}
+//---------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+void
+DGtal::SimpleMatrix<T, M,N>::identity( ) 
+{
+  BOOST_STATIC_ASSERT( M == N);
+
+  //fast clear
+  this->clear();
+  for (DGtal::Dimension i=0; i<M; i++)
+        this->setComponent( i, i , NumberTraits<T>::ONE);
+}
+//---------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+typename DGtal::SimpleMatrix<T, TM, TN>::RowVector
+DGtal::SimpleMatrix<T, TM, TN>::row(const DGtal::Dimension i) const
+{
+  ASSERT(i<M);
+  RowVector v;
+  for ( DGtal::Dimension j = 0; j < N; ++j )
+    v[ j ] = this->operator()(i,j);
+  return v;
+}
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+typename DGtal::SimpleMatrix<T, TM, TN>::ColumnVector
+DGtal::SimpleMatrix<T, TM, TN>::column(const DGtal::Dimension j) const
+{
+  ASSERT(j<N);
+  ColumnVector v;
+  for ( DGtal::Dimension i = 0; i < M; ++i )
+    v[ i ] = this->operator()(i,j);
+  return v;
+}
+//---------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+template<typename TC>
+inline
+DGtal::SimpleMatrix<T, TM, TN> &
+DGtal::SimpleMatrix<T, TM, TN>::operator=(const SimpleMatrix<TC,M,N>& other)
+{
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    myValues[ i ] = static_cast<T>(other.myValues[i]);
+  return *this;
+}
+
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T, TM, TN> 
+DGtal::SimpleMatrix<T, TM, TN>::operator+(const Self& other) const
+{
+  SimpleMatrix<T,TM,TN> res;
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    res.myValues[ i ] = this->myValues[i] + other.myValues[i];
+  return res;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T, TM, TN> &
+DGtal::SimpleMatrix<T, TM, TN>::operator+=(const Self& other)
+{
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    myValues[ i ] += other.myValues[i];
+  return *this;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+T
+DGtal::SimpleMatrix<T, M,N>::cofactor(const DGtal::Dimension i,
+				      const DGtal::Dimension j ) const
+{
+  BOOST_STATIC_ASSERT(M == N);
+  return minorDeterminant(i,j)*myCofactorCoefs[i*N+j];
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+DGtal::SimpleMatrix<T, M,N>
+DGtal::SimpleMatrix<T, M,N>::cofactor( ) const
+{
+  DGtal::SimpleMatrix<T, M,N> mat;
+  BOOST_STATIC_ASSERT(M == N);
+  
+  for (DGtal::Dimension i=0; i<M; i++)
+    for (DGtal::Dimension j=0; j<M; j++)
+      mat.setComponent( i, j , cofactor(i,j));
+
+  return mat;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+T
+DGtal::SimpleMatrix<T, M,N>::minorDeterminant(const DGtal::Dimension i, 
+                                              const DGtal::Dimension j) const
+{
+  return SimpleMatrixSpecializations<Self,M,N>::minorDeterminant(*this,i,j);
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+T
+DGtal::SimpleMatrix<T, M,N>::determinant() const
+{
+  return SimpleMatrixSpecializations<Self,M,N>::determinant(*this);
+}
+
+   //------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+typename DGtal::SimpleMatrix<T, TM, TN> 
+DGtal::SimpleMatrix<T, TM, TN>::inverse() const
+{
+  BOOST_STATIC_ASSERT(TM == TN);
+
+  SimpleMatrix<T,TM,TM> r = cofactor().transpose();
+
+  //determinant
+  T det = determinant();
+  ASSERT(det != 0);
+  return r/det;
+}
+
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T, TM, TN> 
+DGtal::SimpleMatrix<T, TM, TN>::operator-(const Self& other) const
+{
+  SimpleMatrix<T,TM,TN> res;
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    res.myValues[ i ] = this->myValues[i] - other.myValues[i];
+  return res;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<T, TM, TN> &
+DGtal::SimpleMatrix<T, TM, TN>::operator-=(const Self& other)
+{
+  for ( DGtal::Dimension i = 0; i < M*N; ++i )
+    myValues[ i ] -= other.myValues[i];
+  return *this;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+bool
+DGtal::SimpleMatrix<T, TM, TN>::operator==(const Self& other) const
+{
+  return myValues == other.myValues;
+}
+
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+typename DGtal::SimpleMatrix<T, TN, TM> 
+DGtal::SimpleMatrix<T, TM, TN>::transpose() const
+{
+  DGtal::SimpleMatrix<T, TN, TM> res;
+  for (DGtal::Dimension i=0; i<M; i++)
+    for (DGtal::Dimension j=0; j<N; j++)
+      res.setComponent(j,i, this->operator()(i,j)); 
+  return res;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+typename DGtal::SimpleMatrix<T,M,N>::ColumnVector  
+DGtal::SimpleMatrix<T, M, N>::operator*(const RowVector& other) const
+{
+  ColumnVector res;
+  for (DGtal::Dimension i=0; i<M; i++)
+    for (DGtal::Dimension k=0; k<N; k++)
+      res[i]  += this->operator()(i, k )*other[k];
+  
+  return res;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+typename DGtal::SimpleMatrix<T,M,M>  
+DGtal::SimpleMatrix<T, M, N>::operator*(const DGtal::SimpleMatrix<T,N,M>& other) const
+{
+  SimpleMatrix<T,M,M> res;
+  T e = NumberTraits<T>::ZERO;
+  for (DGtal::Dimension i=0; i<M; i++)
+    for (DGtal::Dimension j=0; j<M; j++)
+      {
+        for (DGtal::Dimension k=0; k<N; k++)
+          {
+            e += this->operator()(i, k )*other(k ,j );
+          }
+             
+        res.setComponent(i,j,e);
+        
+        e = NumberTraits<T>::ZERO;
+      }
+  return res;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+DGtal::SimpleMatrix<T, M,N> &  
+DGtal::SimpleMatrix<T, M, N>::operator/=(const T& other) 
+{
+  for (DGtal::Dimension i=0; i<M*N; i++)
+    this->myValues[i] /= other;
+    
+  return *this;
+}//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+DGtal::SimpleMatrix<T, M,N>  
+DGtal::SimpleMatrix<T, M, N>::operator/(const T& other) const
+{
+  Self resultat;
+  for (DGtal::Dimension i=0; i<M*N; i++)
+    resultat.myValues[i] = myValues[i]/other;
+    
+  return resultat;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+DGtal::SimpleMatrix<T, M,N> & 
+DGtal::SimpleMatrix<T, M,N>::operator*=(const T& other)
+{
+  for (DGtal::Dimension i=0; i<M*N; i++)
+    this->myValues[i] *= other;
+    
+  return *this;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension M, DGtal::Dimension N>
+inline
+DGtal::SimpleMatrix<T, M,N>  
+DGtal::SimpleMatrix<T, M,N>::operator*(const T& other) const
+{
+  Self resultat;
+  for (DGtal::Dimension i=0; i<M*N; i++)
+    resultat.myValues[i] = other*myValues[i];
+    
+  return resultat;
+}
+
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+void
+DGtal::SimpleMatrix<T, TM, TN>::setComponent(const DGtal::Dimension i,
+					     const DGtal::Dimension j, 
+					     const T &aValue)
+{
+  ASSERT(i<M);
+  ASSERT(j<N);
+  myValues[i*N + j] = aValue;
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+T
+DGtal::SimpleMatrix<T, TM, TN>::operator()(const DGtal::Dimension i, 
+					   const DGtal::Dimension j) const
+{
+  ASSERT(i<M);
+  ASSERT(j<N);  
+  return myValues[i*N + j];
+}
+//------------------------------------------------------------------------------
+template<typename T, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+T&
+DGtal::SimpleMatrix<T, TM, TN>::operator()(const DGtal::Dimension i, 
+					   const DGtal::Dimension j)
+{
+  ASSERT(i<M);
+  ASSERT(j<N);  
+  return myValues[i*N + j];
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T, DGtal::Dimension TM, DGtal::Dimension TN >
+inline
+void
+DGtal::SimpleMatrix<T,TM,TN>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[SimpleMatrix] "<<M<<"x"<<N<< " [";
+  for(DGtal::Dimension i = 0; i < M; ++i)
+    {
+      out<<"[";
+      for(DGtal::Dimension j = 0; j < N; ++j)
+        out<< this->operator()(i,j)<<" ";
+      out<<"]";
+    }
+  out<<"]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T,DGtal::Dimension M,DGtal::Dimension N>
+inline
+bool
+DGtal::SimpleMatrix<T,M,N>::isValid() const
+{
+    return true;
+}
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T,DGtal::Dimension M,DGtal::Dimension N>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const SimpleMatrix<T,M,N> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+template <typename TComponent, DGtal::Dimension TM, DGtal::Dimension TN>
+inline
+DGtal::SimpleMatrix<TComponent, TM, TN>
+operator* ( const TComponent& scalar, const DGtal::SimpleMatrix<TComponent, TM, TN>& matrix)
+{
+		return matrix * scalar;
+}

@@ -1,0 +1,138 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file TableReader.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2013/11/30
+ *
+ * Implementation of inline methods defined in TableReader.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <sstream>
+#include <fstream>
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+
+
+
+template<typename TQuantity>
+inline
+std::vector<TQuantity>
+DGtal::TableReader<TQuantity>::getColumnElementsFromFile (const std::string &aFilename,  unsigned int aPosition)
+{
+  std::ifstream infile;
+  infile.open (aFilename.c_str(), std::ifstream::in);
+  return TableReader<TQuantity>::getColumnElementsFromInputStream(infile, aPosition);
+}
+
+template <typename TQuantity>
+inline std::vector<TQuantity>
+DGtal::TableReader<TQuantity>::getColumnElementsFromInputStream(
+std::istream & in, unsigned int aPosition )
+{
+  std::vector<TQuantity> vectResult;
+  std::string str;
+  getline(in, str );
+  while ( in.good() )
+  {
+    if ( ( str != "" ) && ( str[ 0 ] != '#' ) )
+    {
+      std::istringstream in_str( str );
+      std::string wordVal;
+      TQuantity val;
+      bool found       = false;
+      unsigned int idx = 0;
+      while ( in_str.good() && !found )
+      {
+        std::operator>>( in_str, wordVal );
+        std::istringstream word_str( wordVal );
+        word_str >> val;
+        bool isOK = !word_str.fail();
+        if ( isOK && idx == aPosition )
+        {
+          found = true;
+          vectResult.push_back( val );
+        }
+        idx++;
+      }
+    }
+    getline( in, str );
+  }
+  return vectResult;
+}
+
+template <typename TQuantity>
+inline std::vector<std::vector<TQuantity>>
+DGtal::TableReader<TQuantity>::getLinesElementsFromFile(
+const std::string & aFilename )
+{
+  std::ifstream infile;
+  infile.open( aFilename.c_str(), std::ifstream::in );
+  return DGtal::TableReader<TQuantity>::getLinesElementsFromInputStream(
+  infile );
+}
+
+template <typename TQuantity>
+inline std::vector<std::vector<TQuantity>>
+DGtal::TableReader<TQuantity>::getLinesElementsFromInputStream(
+std::istream & in )
+{
+  std::vector<std::vector<TQuantity>> vectResult;
+  std::string str;
+  getline( in, str );
+  while ( in.good() )
+  {
+    std::vector<TQuantity> aLine;
+    if ( ( str != "" ) && ( str[ 0 ] != '#' ) )
+    {
+      std::istringstream in_str( str );
+      std::string wordVal;
+      TQuantity val;
+      while ( in_str.good() )
+      {
+        std::operator>>( in_str, wordVal );
+        std::istringstream word_str( wordVal );
+        word_str >> val;
+        if ( !word_str.fail() )
+        {
+          aLine.push_back( val );
+        }
+      }
+      vectResult.push_back( aLine );
+    }
+    getline( in, str );
+  }
+  return vectResult;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

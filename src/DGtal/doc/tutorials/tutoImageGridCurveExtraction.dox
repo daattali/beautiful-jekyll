@@ -1,0 +1,195 @@
+/**
+ * @file tutoImageGridCurveExtraction.dox
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2011/05/02
+ *
+ * Documentation file for Extracting level set boundary from Image
+ *
+ * This file is part of the DGtal library.
+ */
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page tutoImageGridCurveExtraction  Tutorial "Image -> Region -> Grid curve ->  Extracting level set boundary from Image"
+
+@author Bertrand Kerautret
+
+This part of the manual describes a simple way to extract a level set
+boundary as a FreemanChain contour from an gray level image. The first
+step is to extract the thresholed Digital set from the image
+(see. \ref DGtal::SetFromImage) and then to track its boundary
+(see. \ref DGtal::Surfaces). An example can also be found in the
+example tutorial-examples/freemanChainFromImage.cpp
+
+ 
+[TOC]
+
+
+\section step1 DigitalSet from thresholded image 
+
+The digitalSet can be obtained after thresholding a given image. As
+described in the section \ref moduleIO a image can simply be imported
+with readers as for instance in PGMReader: 
+
+@snippet freemanChainFromImage.cpp freemanChainFromImage-imageImport
+
+
+
+From the imported image you can extract a DigitalSet by using thresholds:
+@snippet  freemanChainFromImage.cpp freemanChainFromImage-setAppend
+
+
+
+ 
+You can display the thresholded set:
+@snippet freemanChainFromImage.cpp freemanChainFromImage-displaySet
+
+  @image html fcExtraction0.png  
+
+A KhalimskySpaceND is also needed to extract the region boundary, you can
+simply use the domain of the imported image to initialise a KhalimskySpaceND:
+
+
+@snippet freemanChainFromImage.cpp freemanChainFromImage-ksspace 
+
+
+Another important element is to define the SurfelAdjacency used to
+track the DigitalSet boundary:
+
+@snippet freemanChainFromImage.cpp freemanChainFromImage-adj
+
+
+
+\section step2 Contour extraction
+
+Afterwards the set of all 4-connected contours can be extracted by
+using the function extractAllPointContours4C from DGtal::Surfaces:
+
+@snippet freemanChainFromImage.cpp freemanChainFromImage-extraction
+
+
+
+
+\section step3 Freemanchain construction and display
+
+From the previous vector containing the contour points, we can
+construct and display its associated FreemanChain.
+
+@snippet freemanChainFromImage.cpp freemanChainFromImage-fcConstruction
+
+
+
+Since the reconstructed freemanchain represents the inter pixels
+boundary of the digital set we can specify it by using the mode "InterGrid" as follows:
+
+@snippet freemanChainFromImage.cpp freemanChainFromImage-fcdysplay
+
+
+
+By using the display color defining in the example
+tutorial-examples/freemanChainFromImage.cpp you may obtain the
+following result where each contour are represented with a specific
+color:
+
+
+  @image html images/fcExtraction.png 
+
+
+Note that if you change the SurfelAdjacency used in the contour extraction:
+
+@code
+SurfelAdjacency<2> sAdj( false );
+@endcode
+
+
+you will obtain the followings contours:
+
+
+ @image html images/fcExtraction2.png 
+
+
+
+
+
+\section  FCfromImageTools Extracting and displaying contours from the DGtalTools project 
+
+Project available in the DGtal website (http://libdgtal.org/tools/)
+
+
+The directory 2dContourTools contains command line program "pgm2freeman" 
+allowing to simply extract level set contours from an pgm image:
+
+@code
+./converters/pgm2freeman --image ../../DGTal/examples/samples/church.pgm --minSize 300 --contourSelect 129 526 300 --thresholdRangeMin 100 5 220 > contours.fc ;
+@endcode
+ 
+
+This example will load the pgm source file "church.pgm" and applies
+successive thresholds [100,105], [100, 110]....  [100, 220] and selects
+all the boundary contours with a minimal size equals to 300 and with
+a distance between its barycenter and point (129 526) less than 300.
+
+
+The resulting file "contours.fc" contains a freemanchain on each line
+and can be displayed with the command line program "displayContours":
+
+
+@code 
+ ./visualisation/displayContours --FreemanChain contours.fc --backgroundImage ../../DGtal/examples/samples/church.png  --outputFile  levelSetImage.eps
+@endcode
+
+
+You will obtain the following result in eps (you can also use the pdf format if cairo
+is installed on your system). 
+
+@image html images/churchLevelSets.png
+@image latex images/churchLevelSets.png width=6cm "Church level sets."
+
+
+By adding the obption @code
+--alphaBG 0.5 @endcode the backgroundImage will be rendered with
+transparency.
+
+@image html images/churchLevelSetsTransp.png
+@image latex images/churchLevelSetsTransp.png width=6cm "Church level sets."
+
+
+\section secttutoImageGridCurveExctraction5 Required includes
+
+You need to include the DGTal basic header files: 
+
+@snippet tutorial-examples/freemanChainFromImage.cpp freemanChainFromImage-basicIncludes
+
+
+To import the image and create digital set you need to include the following header files:
+
+@snippet tutorial-examples/freemanChainFromImage.cpp freemanChainFromImage-ImageSetIncludes
+
+
+To track the frontier of the digital set and create the digital set you nedd to include:
+
+@snippet tutorial-examples/freemanChainFromImage.cpp freemanChainFromImage-trackingFCIncludes
+
+
+
+For the display with gradient color:
+
+@snippet tutorial-examples/freemanChainFromImage.cpp freemanChainFromImage-displayIncludes
+
+
+*/
+
+
+}
+
+
+
+
+

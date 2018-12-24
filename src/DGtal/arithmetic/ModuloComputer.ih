@@ -1,0 +1,192 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ModuloComputer.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2010/07/02
+ *
+ * Implementation of inline methods defined in ModuloComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+/**
+ * Initializes the modulo computer with the value [m].
+ * @param m any non-zero integer.
+ */
+template <typename T>
+inline
+DGtal::ModuloComputer<T>::ModuloComputer( UnsignedIntegerParamType  m )
+  : k( m )
+{
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+
+    
+/**
+ * Increment the value [i] modulo.
+ * @param i any value between 0 and [k] (excluded).
+ */
+template <typename T>
+inline
+void 
+DGtal::ModuloComputer<T>::increment( UnsignedInteger & i ) const
+{
+  if ( ++i == k ) i = 0;
+}
+
+
+/**
+ * Decrement the value [i] modulo.
+ * @param i any value between 0 and [k] (excluded).
+ */
+template <typename T>
+inline
+void 
+DGtal::ModuloComputer<T>::decrement( UnsignedInteger & i ) const
+{
+  if ( i == 0 ) i = k;
+  --i;
+}
+
+
+/**
+ * @param i any value between 0 and [k] (excluded).
+ * @return the incremented value of [i] modulo [k].
+ */
+template <typename T>
+inline
+typename DGtal::ModuloComputer<T>::UnsignedInteger 
+DGtal::ModuloComputer<T>::next( UnsignedIntegerParamType i ) const
+{
+  
+  return ( (i+1) == k ) ? 0 : (i+1);
+}
+
+
+/**
+ * @param i any value between 0 and [k] (excluded).
+ * @return the decremented value of [i] modulo [k].
+ */
+template <typename T>
+inline
+typename DGtal::ModuloComputer<T>::UnsignedInteger 
+DGtal::ModuloComputer<T>::previous( UnsignedIntegerParamType i ) const
+{
+  return ( i == 0 ) ? k - 1 : i - 1;
+}
+
+
+/**
+ * @param i any integer value.
+ * @return the value of [i] modulo [k].
+ */
+template <typename T>
+inline
+typename DGtal::ModuloComputer<T>::UnsignedInteger 
+DGtal::ModuloComputer<T>::cast( IntegerParamType i ) const
+{
+  Integer tmp = i;
+  while ( tmp < 0 ) tmp += k;
+  UnsignedInteger ip = (Integer) tmp;
+  while ( ip >= k ) ip -= k;
+  return ip;
+}
+
+    
+/**
+ * Less comparator modulo. Be careful, modulo comparisons have no
+ * sense when the absolute difference of the values are around k / 2.
+ *
+ * @param i any value between 0 and [k] (excluded).  @param j any
+ * value between 0 and [k] (excluded).  @return 'true' if [i] strictly
+ * precedes [j] in a window 'floor([k]/2)'.  @see k
+ */
+template <typename T>
+inline
+bool 
+DGtal::ModuloComputer<T>::less( UnsignedIntegerParamType i, UnsignedIntegerParamType j ) const
+{
+  Integer d = ( (T) j ) - ( (T) i );
+  if ( d > 0 )
+    return d < (T) ( k / 2 );
+  else
+    return (-d) >= (T) ( k / 2 );
+}
+
+
+/**
+ * Performs j - i modulo, assuming less(i,j) is true.
+ *
+ * @param j any value between 0 and [k] (excluded).
+ * @param i any value between 0 and [k] (excluded).
+ * @return the value j - i, always positive. 
+ */
+template <typename T>
+inline
+typename DGtal::ModuloComputer<T>::UnsignedInteger 
+DGtal::ModuloComputer<T>::posDiff( UnsignedIntegerParamType  j, UnsignedIntegerParamType i ) const
+{
+  return ( i <= j ) ? j - i : j + k - i;
+}
+
+
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::ModuloComputer<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ModuloComputer]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::ModuloComputer<T>::isValid() const
+{
+    return true;
+}
+
+
+

@@ -1,5 +1,0 @@
-<map id="DGtal::GradientColorMap&lt; PValue, PDefaultPreset, PDefaultFirstColor, PDefaultLastColor &gt;" name="DGtal::GradientColorMap&lt; PValue, PDefaultPreset, PDefaultFirstColor, PDefaultLastColor &gt;">
-<area shape="rect" id="node3" href="$classDGtal_1_1GradientColorMap.html" title="DGtal::GradientColorMap\l\&lt; unsigned char, DGtal\l::CMAP_COOL \&gt;" alt="" coords="437,5,619,69"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1GradientColorMap.html" title="DGtal::GradientColorMap\l\&lt; unsigned char, DGtal\l::CMAP_HOT \&gt;" alt="" coords="437,93,619,157"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1GradientColorMap.html" title="DGtal::GradientColorMap\l\&lt; unsigned int \&gt;" alt="" coords="437,181,619,227"/>
-</map>

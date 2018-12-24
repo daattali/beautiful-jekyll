@@ -1,0 +1,22 @@
+/*
+ * @file
+ */
+
+ShapeList::ShapeList( int depthValue )
+  : Shape( DGtal::Color::None, DGtal::Color::None, 1.0, SolidStyle, ButtCap, MiterJoin, depthValue ),
+    _nextDepth( std::numeric_limits<int>::max() - 1 )
+{ }
+
+template<typename T>
+T &
+ShapeList::last( const unsigned int position )
+{
+  if ( position < _shapes.size() ) {
+    std::vector<Shape*>::reverse_iterator it = _shapes.rbegin() + position;
+    return dynamic_cast<T&>( *(*it) );
+  } else {
+    error << "Trying to access an element that does not exist (" 
+  << position << "/" << _shapes.size() << ").\n";
+    throw -1;
+  }
+}

@@ -1,0 +1,283 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file StarShaped2D.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/04/12
+ *
+ * Implementation of inline methods defined in StarShaped2D.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+/////////////////////////////////////////////////////////////////////////////
+// ------------------------- star-shaped services -------------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return 'true' if the point is inside the shape, 'false' if it
+ * is strictly outside.
+ */
+template<typename TSpace>
+inline
+DGtal::Orientation
+DGtal::StarShaped2D<TSpace>::orientation( const RealPoint & p ) const
+{
+    RealPoint x_rel = x( parameter( p ));
+    x_rel -= center();
+    RealPoint p_rel( p );
+    p_rel -= center();
+
+    double d_x = x_rel.norm();
+    double d_p = p_rel.norm();
+    double diff = d_p - d_x;
+
+    if ( diff > 0.0 )
+        return OUTSIDE;
+    else if ( diff < 0.0 )
+        return INSIDE;
+    else
+        return ON;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x'(t),y'(t)) made unitary which is the unit
+ * tangent to the shape boundary.  
+ */
+template<typename TSpace>
+inline
+typename DGtal::StarShaped2D<TSpace>::RealPoint
+DGtal::StarShaped2D<TSpace>::tangent( double t ) const
+{
+  RealPoint tgt( xp( t ) );
+  double norm = tgt.norm();
+  tgt /= norm;
+  return tgt;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x''(t),y''(t)) made unitary which is the unit
+ * normal to the shape boundary looking inside the shape.  
+b */
+template<typename TSpace>
+inline
+typename DGtal::StarShaped2D<TSpace>::RealPoint
+DGtal::StarShaped2D<TSpace>::normal( double t ) const
+{
+  RealPoint tgt( tangent( t ) );
+  return RealPoint( -tgt[1], tgt[0]);
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the algebraic curvature at point (x(t),y(t)), positive
+ * is convex, negative is concave when shape is to the left and
+ * the shape boundary is followed counterclockwise.
+ */
+template<typename TSpace>
+inline
+double 
+DGtal::StarShaped2D<TSpace>::curvature( double t ) const
+{
+  RealPoint tgt( xp( t ) );
+  RealPoint dt( xpp( t ) );
+  double norm = tgt.norm();
+  double curv = ( dt[0] * tgt[1] - dt[1] * tgt[0] ) / ( norm * norm * norm );
+  return - curv;
+}
+  
+
+/**
+ * @param t1 any angle between 0 and 2*Pi.
+ * @param t2 any angle between 0 and 2*Pi, further from [t1].
+ * @param nb the number of points used to estimate the arclength between x(t1) and x(t2).
+ * @return the estimated arclength.
+ */
+template<typename TSpace>
+inline
+double
+DGtal::StarShaped2D<TSpace>::arclength( double t1, double t2, unsigned int nb ) const
+{
+  while ( t2 < t1 ) t2 += 2.0*M_PI;
+
+  RealPoint x0( x( t1 ) );
+  double l = 0.0;
+  // JOL 2008/08/28
+  for ( unsigned int i = 1; i <= nb; ++i )
+    {
+      double t = ( ( t2 - t1 ) * i ) / nb;
+      RealPoint x1( x( t1 + t ) );
+      l += sqrt( ( x1[0] - x0[0] )*( x1[0] - x0[0] )
+         + ( x1[1] - x0[1] )*( x1[1] - x0[1] ) );
+      x0 = x1;
+    }
+  return l;
+}
+
+/**
+  * Return a point on the segment [inner;outer] that is at most \f$\epsilon\f$ from the shape in \f$L_2\f$ norm.
+  *
+  * @param inner a point that is inside the shape
+  * @param outer a point that is outside the shape
+  * @param epsilon error parameter
+  *
+  * @return the intersected point.
+  */
+template <typename TSpace>
+inline
+typename DGtal::StarShaped2D<TSpace>::RealPoint
+DGtal::StarShaped2D<TSpace>::findIntersection( const typename DGtal::StarShaped2D<TSpace>::RealPoint& inner, 
+                                               const typename DGtal::StarShaped2D<TSpace>::RealPoint& outer, 
+                                               double epsilon ) const
+{
+  typename DGtal::StarShaped2D<TSpace>::RealPoint mid = RealPoint(0.5 * (inner + outer));
+
+  if((inner - outer).norm() < epsilon) return mid; // We found a point that is at distance epsilon from the shape
+  else if(orientation(mid) == Orientation::INSIDE)  return findIntersection( mid, outer, epsilon ); // The point lies inside the shape
+  else if(orientation(mid) == Orientation::ON)      return mid; // The point is right onto the shape
+  else if(orientation(mid) == Orientation::OUTSIDE) return findIntersection( inner, mid, epsilon ); // The point lies outside the shape
+
+  ASSERT( false ); //this should not be reached
+  return RealPoint(0., 0.);
+}
+
+/**
+  * Return a point that lies between the projection of left and right and that is the closest regarding the \f$L_2\f$ norm
+  *
+  * @param p the point to be projected
+  * @param left a point that is supposed to be projected left of p (regarding the angle)
+  * @param right a point that is supposed to be projected right of p (regarding the angle)
+  * @param step precision of the approximation
+  *
+  * @return a point.
+  **/
+template <typename TSpace>
+inline
+typename DGtal::StarShaped2D<TSpace>::RealPoint
+DGtal::StarShaped2D<TSpace>::closestPointWithWitnesses( const typename DGtal::StarShaped2D<TSpace>::RealPoint& p, const typename DGtal::StarShaped2D<TSpace>::RealPoint& left, 
+    const typename DGtal::StarShaped2D<TSpace>::RealPoint& right, const int step) const
+{
+  double left_angl = parameter(left);
+  double right_angl = parameter(right);
+
+  std::vector<typename DGtal::StarShaped2D<TSpace>::RealPoint> points;
+
+  for(int i = 0; i < step; i++)
+  {
+    double arc = fabs(right_angl - left_angl);
+    if(arc > M_PI) arc = 2 * M_PI - arc;
+    const double current_angl = fmod(left_angl + arc / step * i, 2 * M_PI);
+
+    RealPoint temp = x(current_angl);
+    points.push_back(temp);
+  }
+
+  double p_norm = 1e15;
+  RealPoint p_return = Point(0., 0.);
+
+  for(unsigned int i = 0; i < points.size(); i++)
+  {
+    const double p_norm_current = (points[i] - p).norm();
+    if(p_norm_current < p_norm)
+    {
+      p_return = points[i];
+      p_norm = p_norm_current;
+    }
+  }
+
+  return p_return;
+}
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::StarShaped2D<T>::~StarShaped2D()
+{
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::StarShaped2D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[StarShaped2D]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::StarShaped2D<T>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+        const StarShaped2D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

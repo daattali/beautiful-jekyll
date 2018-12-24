@@ -1,0 +1,835 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ArithmeticalDSL.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/06/28
+ *
+ * Implementation of inline methods defined in ArithmeticalDSL.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::ArithmeticalDSL(const Coordinate& aA, const Coordinate& aB, 
+		  const Integer& aLowerBound, const Integer& aUpperBound, 
+		  const Steps& aSteps, const Vector& aShift)
+  :
+  mySteps(aSteps), myShift(aShift), 
+  myA(aA), myB(aB), 
+  myLowerBound(aLowerBound), myUpperBound(aUpperBound)
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::ArithmeticalDSL(const Coordinate& aA, const Coordinate& aB, 
+		  const Integer& aMu)
+  :
+  mySteps( DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>::steps(aA, aB) ), 
+  myShift( DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>::shift(aA, aB) ),
+  myA(aA), myB(aB), 
+  myLowerBound( aMu ), 
+  myUpperBound( aMu )
+{
+  if ( (aA != 0)&&(aB !=0 ) )
+    myUpperBound = aMu + remainder( myShift ) - NumberTraits<Integer>::ONE; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::ArithmeticalDSL(const ArithmeticalDSL<TCoordinate, TInteger, adjacency>& aOther)
+  : 
+  mySteps(aOther.mySteps), myShift(aOther.myShift),
+  myA(aOther.myA), myB(aOther.myB), 
+  myLowerBound(aOther.myLowerBound), myUpperBound(aOther.myUpperBound)
+{}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>&
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::operator=(const ArithmeticalDSL<TCoordinate, TInteger, adjacency>& aOther)
+{
+  if ( this != &aOther )
+    {
+      myA = aOther.myA;
+      myB = aOther.myB;
+      myLowerBound = aOther.myLowerBound;
+      myUpperBound = aOther.myUpperBound;
+      mySteps = aOther.mySteps; 
+      myShift = aOther.myShift; 
+    }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::negate() const
+{
+    return DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>(-myA, -myB, -myUpperBound, -myLowerBound, 
+					       std::make_pair(-mySteps.first, -mySteps.second), 
+					       -myShift);  
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::equalsTo(const ArithmeticalDSL<TCoordinate, TInteger, adjacency>& aOther) const
+{
+  return ( (myA == aOther.myA) && 
+	   (myB == aOther.myB) &&  
+	   (myLowerBound == aOther.myLowerBound) &&  
+	   (myUpperBound == aOther.myUpperBound) );
+  //NB: other redondant members are not tested
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::operator==(const ArithmeticalDSL<TCoordinate, TInteger, adjacency>& aOther) const
+{
+  return ( equalsTo(aOther) || equalsTo(aOther.negate()) ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::operator!=(const ArithmeticalDSL<TCoordinate, TInteger, adjacency>& aOther) const
+{
+  return !( operator==(aOther) ); 
+}
+
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>
+::sameOctant( const ArithmeticalDSL & aOther, typename ArithmeticalDSL<TCoordinate, TInteger,adjacency>::Octant::first_type *theOctant ) const  
+{
+  Octant octantThis, octantOther;
+  
+  octantThis = this->octant();
+  octantOther = aOther.octant();
+    
+  if(octantThis.first==octantOther.first || octantThis.first==octantOther.second)
+    {
+      *theOctant = octantThis.first;
+      return true;
+    }
+  else
+    if(octantThis.second==octantOther.first || octantThis.second == octantOther.second)
+      {
+	*theOctant = octantThis.second;
+	return true;
+      }
+    else
+      return false;
+}  
+  
+
+
+
+// ----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate,TInteger,adjacency>::Octant
+DGtal::ArithmeticalDSL<TCoordinate,TInteger, adjacency>
+::octant() const
+{
+  Octant res;
+  
+  if (myB== NumberTraits<TInteger>::ZERO)
+    {
+      if (myA == NumberTraits<TInteger>::ZERO) 
+	{ //no octant
+	  res = std::make_pair(-1,-1);
+	}
+      else if (myA > NumberTraits<TInteger>::ZERO)
+	{ //octant 1,2
+	  res = std::make_pair(1,2);
+	}
+      else // (myA < 0)
+	{ //octant 5,6
+	  res = std::make_pair(5,6);
+	}	    
+    }
+  else if (myB> NumberTraits<TInteger>::ZERO)
+    {
+      if (myA == NumberTraits<TInteger>::ZERO)
+	{ //octant 0,7
+	  res = std::make_pair(0,7);
+	}
+      else if (myA > NumberTraits<TInteger>::ZERO)
+	{
+	  if (myB== myA)
+	    { //octant 0,1
+	      res = std::make_pair(0,1);
+	    }
+	  else if (myB> myA)
+	    { //octant 0
+	      res = std::make_pair(0,0);
+	    }
+	  else // (myB< myA)
+	    { //octant 1
+	      res = std::make_pair(1,1);
+	    }
+	}
+      else //(myA < 0)
+	{ 
+	  if (myB== -myA)
+	    {
+	      res = std::make_pair(6,7);
+	    }
+	  else if (myB> -myA)
+	    { //octant 7
+	      res = std::make_pair(7,7);
+	    }
+	  else // (myB< -myA)
+	    { //octant 6
+	      res = std::make_pair(6,6);
+	    }
+	}	    
+    }
+  else // (myB< 0)
+    { 
+      if (myA == NumberTraits<TInteger>::ZERO)
+	{ //octant 3,4
+	  res = std::make_pair(3,4);
+	}
+      else if (myA > NumberTraits<TInteger>::ZERO)
+	{
+	  if (-myB == myA)
+	    {
+	      res = std::make_pair(2,3);
+	    }
+	  else if (-myB > myA)
+	    { //octant 3
+	      res = std::make_pair(3,3);
+	    }
+	  else // (-myB < myA)
+	    { //octant 2
+	      res = std::make_pair(2,2);
+	    }	    
+	}
+      else // (myA < 0)
+	{
+	  if (-myB== -myA)
+	    {
+	      res = std::make_pair(4,5);
+	    }
+	  else if (-myB> -myA)
+	    { //octant 4
+	      res = std::make_pair(4,4);
+	    }
+	  else // (-myB< -myA)
+	    { //octant 5
+	      res = std::make_pair(5,5);
+	    }
+	}
+    }
+
+
+  return res;
+  
+
+}
+
+
+
+
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::~ArithmeticalDSL()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::isValid() const
+{
+  bool flagIsValid; //'true' if valid, 'false' otherwise 
+
+  if ( (myA != 0) || (myB != 0) )
+    {
+      Integer gcd = IntegerComputer<Coordinate>::staticGcd(myA, myB); 
+      if (gcd != NumberTraits<Coordinate>::ONE) 
+	flagIsValid = false; //a,b must be relatively prime
+      else if (!checkShiftAndSteps())
+	flagIsValid = false; //redondant parameters must be consistent
+      else 
+	flagIsValid = true; 
+    }
+  else 
+    flagIsValid = false; //a and b cannot be both null
+
+  return flagIsValid; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::checkShiftAndSteps() const
+{
+  ASSERT( (myA != 0) || (myB != 0) ); 
+
+  bool flagIsValid; //'true' if valid, 'false' otherwise
+
+  if (mySteps != DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>::steps(myA, myB))
+    flagIsValid = false; 
+  else if (myShift != DGtal::ArithmeticalDSLKernel<TCoordinate,adjacency>::shift(myA, myB))
+    flagIsValid = false; 
+  else if ( ( (mySteps.second[0] != NumberTraits<Coordinate>::ZERO)
+	      ||(mySteps.second[1] != NumberTraits<Coordinate>::ZERO) )
+	    &&( (mySteps.first - mySteps.second) != myShift ) )
+    flagIsValid = false;
+  else if ( remainder( myShift ) != (myUpperBound - myLowerBound + NumberTraits<Integer>::ONE) )
+    flagIsValid = false; 
+  else 
+    flagIsValid = true; 
+
+  return flagIsValid; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Coordinate
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::a() const
+{
+  return myA; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Coordinate
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::b() const
+{
+  return myB; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Integer
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::mu() const
+{
+  return myLowerBound; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Integer
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::omega() const
+{
+  return remainder(myShift); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Position
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::patternLength() const
+{
+  return ( -static_cast<Position>(myShift[1]) * static_cast<Position>(myB)
+	   +static_cast<Position>(myShift[0]) * static_cast<Position>(myA) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Vector
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::shift() const
+{
+  return myShift; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Steps
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::steps() const
+{
+  return mySteps; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Integer
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::remainder(const Coordinate& aA, 
+								    const Coordinate& aB, 
+								    const Point& aPoint)
+{
+  return static_cast<Integer>(aA) * static_cast<Integer>(aPoint[0])
+    - static_cast<Integer>(aB) * static_cast<Integer>(aPoint[1]);
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Integer
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::remainder(const Point& aPoint) const
+{
+  return DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::remainder(myA, myB, aPoint); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Integer
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::orthogonalPosition(const Point& aPoint) const
+{
+  return static_cast<Integer>(myB) * static_cast<Integer>(aPoint[0])
+    + static_cast<Integer>(myA) * static_cast<Integer>(aPoint[1]);
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Position
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::position(const Point& aPoint) const
+{
+  return ( -static_cast<Position>(myShift[1]) * static_cast<Position>(aPoint[0])
+    +static_cast<Position>(myShift[0]) * static_cast<Position>(aPoint[1]) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Point
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::getPoint() const
+{
+  ASSERT( omega() != NumberTraits<Integer>::ZERO );
+
+  Integer shiftRemainder = omega(); 
+  Integer q = ( myLowerBound / shiftRemainder ); 
+  if ( (myLowerBound >= NumberTraits<Integer>::ZERO)
+       &&(myLowerBound != (q * shiftRemainder)) )
+    q++; 
+  Point origin = toCoordinate(q) * myShift;
+
+  ASSERT( position(origin) == NumberTraits<Position>::ZERO );  
+  ASSERT( isInDSL(origin) );  
+
+  return origin; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Point
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::getPoint(const Position& aPosition) const
+{
+  ASSERT( omega() != NumberTraits<Integer>::ZERO );
+
+  Integer shiftRemainder = omega();
+  Point startingPoint = static_cast<Coordinate>(aPosition) * mySteps.first;
+  Integer bound = (myLowerBound-remainder(startingPoint));  
+  Integer q = ( bound / shiftRemainder ); 
+  if ( (bound >= NumberTraits<Integer>::ZERO)
+       &&(bound != (q * shiftRemainder)) )
+    q++; 
+  Point res = startingPoint + (toCoordinate(q) * myShift);
+
+  ASSERT( position(res) == aPosition ); 
+  ASSERT( isInDSL(res) );
+
+  return res; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::before(const Point& aP1, const Point& aP2) const
+{
+  return ( position( aP1 ) < position( aP2 ) ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::beforeOrEqual(const Point& aP1, const Point& aP2) const
+{
+  return ( position( aP1 ) <= position( aP2 ) ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::isInDSL(const Point& aPoint) const
+{
+  Integer r = remainder(aPoint);
+  return ( (r >= myLowerBound)&&(r <= myUpperBound) );
+}
+
+
+//------------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate,TInteger,adjacency>::isUpperLeaningPoint(const Point& aPoint) const
+{
+  return (remainder(aPoint)==myLowerBound);
+}
+
+//----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate,TInteger,adjacency>::isLowerLeaningPoint(const Point& aPoint) const
+{
+  return (remainder(aPoint)==myUpperBound);
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::operator()(const Point& aPoint) const
+{
+  return isInDSL(aPoint); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::begin(const Point& aPoint) const
+{
+  ASSERT( isInDSL(aPoint) ); 
+  return ConstIterator(this, aPoint);
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::end(const Point& aPoint) const
+{
+  ASSERT( isInDSL(aPoint) ); 
+  ConstIterator it(this, aPoint); 
+  it++; 
+  return it;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstReverseIterator
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::rbegin(const Point& aPoint) const
+{
+  ASSERT( isInDSL(aPoint) ); 
+  return ConstReverseIterator( end(aPoint) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstReverseIterator
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::rend(const Point& aPoint) const
+{
+  ASSERT( isInDSL(aPoint) ); 
+  return ConstReverseIterator( begin(aPoint) );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+void
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ArithmeticalDSL] ";
+  out << "(" << myA << "," << myB << "," << myLowerBound << "," << omega() << ")" << std::endl; 
+  out << "by steps " << mySteps.first << " " << mySteps.second << std::endl; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Coordinate
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::toCoordinate(const Integer& aI)
+{
+  return DGtal::detail::toCoordinateImpl<Integer, Coordinate>::cast(aI); 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                   Iterators services                                      //
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::ConstIterator()
+  : myDSLPtr(0), myCurrentPoint()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator
+::ConstIterator( const ArithmeticalDSL* aDSL, const Point& aPoint )
+  : myDSLPtr(aDSL), myCurrentPoint(aPoint)
+{
+  myQuantityToAdd = myDSLPtr->remainder(myDSLPtr->mySteps.first);
+  myQuantityToRemove = myQuantityToAdd - myDSLPtr->remainder(myDSLPtr->mySteps.second); 
+  myCurrentRemainder = myDSLPtr->remainder( myCurrentPoint ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::
+ConstIterator( const ConstIterator & aOther )
+  : myDSLPtr( aOther.myDSLPtr ), myCurrentPoint( aOther.myCurrentPoint ),
+    myQuantityToAdd( aOther.myQuantityToAdd ), 
+    myQuantityToRemove( aOther.myQuantityToRemove ), 
+    myCurrentRemainder( aOther.myCurrentRemainder ) 
+{ } 
+
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator& 
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::
+operator= ( const ConstIterator & aOther ) 
+{
+  if (this != &aOther)
+    {
+      myDSLPtr = aOther.myDSLPtr; 
+      myCurrentPoint = aOther.myCurrentPoint; 
+      myQuantityToAdd = aOther.myQuantityToAdd; 
+      myQuantityToRemove = aOther.myQuantityToRemove; 
+      myCurrentRemainder = aOther.myCurrentRemainder; 
+    }
+  return *this; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::~ConstIterator()
+{
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Integer
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::remainder() const 
+{
+  return myCurrentRemainder; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Point const
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::dereference() const 
+{
+  return myCurrentPoint; 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+void
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::increment()
+{
+  myCurrentRemainder += myQuantityToAdd; 
+  if ( myCurrentRemainder <= myDSLPtr->myUpperBound )
+    {
+      myCurrentPoint += myDSLPtr->mySteps.first; 
+    }
+  else
+    {
+      myCurrentRemainder -= myQuantityToRemove; 
+      myCurrentPoint += myDSLPtr->mySteps.second; 
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+void
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::decrement()
+{
+  myCurrentRemainder -= myQuantityToAdd; 
+  if ( myCurrentRemainder >= myDSLPtr->myLowerBound )
+    {
+      myCurrentPoint -= myDSLPtr->mySteps.first; 
+    }
+  else
+    {
+      myCurrentRemainder += myQuantityToRemove; 
+      myCurrentPoint -= myDSLPtr->mySteps.second; 
+    }
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+bool
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator::
+equal(const ConstIterator& aOther) const
+{
+  ASSERT( myDSLPtr == aOther.myDSLPtr );
+  return myCurrentPoint == aOther.myCurrentPoint;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+void
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator
+::advance(const Position& aShift)
+{
+  myCurrentPoint = myDSLPtr->getPoint( myDSLPtr->position(myCurrentPoint) + aShift ); 
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+typename DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::Position
+DGtal::ArithmeticalDSL<TCoordinate, TInteger, adjacency>::ConstIterator
+::distance_to(const ConstIterator& aOther) const
+{
+  return ( myDSLPtr->position(aOther.myCurrentPoint) - myDSLPtr->position(myCurrentPoint) ); 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//                        Aliases                                            //
+///////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TI>
+inline
+DGtal::StandardDSL<TCoordinate, TI>::
+StandardDSL(const Coordinate& aA, 
+	    const Coordinate& aB,
+	    const Integer& aMu) 
+  : Super(aA, aB, aMu) 
+{}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TI>
+inline
+DGtal::StandardDSL<TCoordinate, TI>::
+StandardDSL ( const StandardDSL & aOther )
+  : Super( aOther ) 
+{} 
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TI>
+inline
+DGtal::StandardDSL<TCoordinate, TI>& 
+DGtal::StandardDSL<TCoordinate, TI>::
+operator= ( const StandardDSL & aOther )
+{
+  if (this != & aOther)
+    Super::operator=( aOther );
+  return *this;      
+}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TI>
+inline
+DGtal::NaiveDSL<TCoordinate, TI>::
+NaiveDSL(const Coordinate& aA, 
+	 const Coordinate& aB,
+	 const Integer& aMu)
+  : Super(aA, aB, aMu) 
+{}
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TI>
+inline
+DGtal::NaiveDSL<TCoordinate, TI>::
+NaiveDSL ( const NaiveDSL & aOther )
+  : Super( aOther ) 
+{} 
+
+//-----------------------------------------------------------------------------
+template <typename TCoordinate, typename TI>
+inline
+DGtal::NaiveDSL<TCoordinate, TI>& 
+DGtal::NaiveDSL<TCoordinate, TI>::
+operator= ( const NaiveDSL & aOther )
+{
+  if (this != & aOther)
+    Super::operator=( aOther );
+  return *this;      
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TCoordinate, typename TInteger, unsigned short adjacency>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const ArithmeticalDSL<TCoordinate, TInteger, adjacency> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

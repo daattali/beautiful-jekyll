@@ -1,0 +1,292 @@
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+   
+@page moduleCloneAndReference Parameter passing, cloning and referencing
+
+@writers Jacques-Olivier Lachaud
+
+Part of the \ref packageBase.
+
+This module gathers classes to make easier and more readable parameter
+passing by expliciting its type in the signature of functions and
+methods. The main classes are \ref Clone, \ref Alias and \ref
+ConstAlias. They can be used in conjunction with smart pointer classes
+\ref CountedPtr, \ref CowPtr, \ref CountedPtrOrPtr, \ref
+CountedConstPtrOrConstPtr. These classes do not add a significant
+slowdown (between 0 and 10%) in elementary cases, while they can save
+50% of time in some cases (with lazy duplication and move).
+
+[TOC]
+
+Related tests are testCloneAndAliases.cpp, testClone2.cpp.
+
+\section moduleCloneAndReference_sec1 Categories of parameter passing
+
+In the following, the \b programmer is the one that has written the
+function/method \c f being called, while the \b user is the one that
+has written the code that calls \c f.
+
+\subsection moduleCloneAndReference_sec11 Parameter passing in C++
+
+From a C++ point of view, you may pass an object of type \c T as
+parameter to \c f through the following mechanism:
+
+- by \b value with \c f(\c T \c t ). It is \e mostly used when passing
+  native types (like \c int, \c bool, etc), small objects like
+  iterators, as \b input. It indicates to the user that its argument
+  is \b duplicated (at least once) and \b not \b modified. The user
+  may also give a \b right-\b value object as parameter, though \b
+  without \b move possibility.
+
+- by \b const \b reference with \c f(\c const \c T& \c t ). This form
+  is \e generally used as an \b alternative to \b passing-by-value, to
+  pass bigger objects as \b input. It may \e sometimes indicate to the
+  user that the argument is \b const \b referenced in \c f for further
+  uses, especially when \c f is a constructor/method of another object. It
+  is \b unclear whether the <b> lifetime of the argument should exceed
+  the lifetime of \c f </b>. This fact is clarified generally by the
+  documentation.
+
+- by \b const \b pointer with \c f(\c const \c T* \c ptrT ). This form
+  is \e sometimes used as an alternative to passing-by-value, to pass
+  bigger objects as \b input while authorizing an invalid object (null
+  pointer). Although this form is more C-like, it may be used in some
+  C++ situation (like creating or destroying relations between
+  objects). It may \e sometimes indicate to the user that the argument
+  is \b const \b pointed in \c f for further uses, especially when \c
+  f is a constructor/method of another object. It is \b unclear
+  whether the <b> lifetime of the argument should exceed the lifetime
+  of \c f </b>. This fact is clarified generally by the documentation.
+
+- by \b reference with \c f(\c T& \c t ). It is \e generally used for
+  \b modifying an object (\b input-output or \b output). It
+  may \e sometimes indicate to the user that the argument is \b
+  referenced in \c f for further uses and
+  modifications, especially when \c f is a constructor/method of an
+  object. It is \b unclear whether the <b> lifetime of the
+  argument should exceed the lifetime of \c f </b>. This fact is
+  clarified generally by the documentation.
+
+- by \b pointer with \c f( \c T* \c ptrT ). This form is \e sometimes
+  used as an alternative to passing-by-reference for \b modifying an
+  object (\b input-output or \b output). Although this form is more
+  C-like, it may be used also for specifying \b acquisition of the
+  object (which should then have been dynamically allocated).  It may
+  \e sometimes indicate to the user that the argument is \b pointed in
+  \c f for further uses and modifications, especially when \c f is a
+  constructor/method of an object. It is \b unclear whether the <b>
+  lifetime of the argument should exceed the lifetime of \c f
+  </b>. This fact is clarified generally by the documentation.
+ 
+The preceding discussion shows that standard parameter passing is \e
+ambiguous by nature, since each parameter passing method has several
+meanings. The user is forced to checked carefully the documentation
+(at best) or the full code to see how parameters are used.
+
+\subsection moduleCloneAndReference_sec12 Alternative definition for parameter passing
+
+The \b programmer should explicit its \e intent to the user in an unambiguous way directly in the signature of \c f. We propose the following taxonomy:
+
+-# \b input parameters
+    -# \b immediate \b use. The \e argument is used immediately in \c f, it is \e not \e pointed nor \e referenced for \e further \e use, and its lifetime is whatever.
+    -# \b immediate \b cloning. The \e argument is cloned in \c f for \e further \b secure \e use or \e modifications, and hence its lifetime is whatever.
+    -# \b long-term \b const \b aliasing. The \e argument is aliased in \c f for \e further \e use. The user is warned that he must adapt the lifetime of the argument consequently (generally the lifetime of the other object). The user knows that its argument will not be modified.
+    -# \b object \b transfer or \b pointer \b acquisition. The \e argument was dynamically allocated and you wish to transfer its ownership to another object through call of \c f. This is a \b cloning for the \e programmer induced by a specific call by the \e user with a pointer.
+-# \b input-output and \b output parameters
+    -# \b immediate \b use.  The \e argument is used immediately in \c f, it is \e not \e pointed or \e referenced for \e further \e use, and its lifetime is whatever. The argument is \e modified by \c f.
+    -# \b long-term \b aliasing (or \b sharing). The \e argument is aliased in \c f for \e further \e use and \e modifications. The user is warned that he must adapt the lifetime of the argument consequently (generally the lifetime of the other object). The user knows that its argument is shared by another object.
+
+
+\section moduleCloneAndReference_sec2 Parameter passing with Clone, Alias and ConstAlias
+
+Classes Clone, Alias, and ConstAlias are defined in order to accept several arguments from the \e user. Symmetrically, they may be automatically converted into several types for the \e programmer. Not all combinations are allowed, but several optimizations are made, most notably by avoiding duplication if possible, by performing lazy duplication, or by moving objects. Furthermore, even for long-term aliasing, the \e user may choose at compile time between either an unsecure or secure aliasing method, depending on its application.
+
+Therefore, those three classes are useful both from an efficiency and pragmatic point of view.
+
+
+\subsection moduleCloneAndReference_sec21 Disambiguating parameter passing
+
+We propose the following ways to pass parameters without ambiguity:
+
+| input parameter             | immediate use      | immediate cloning / object transfer  | long-term const-aliasing |
+|-----------------------------|--------------------|--------------------------------------|--------------------------|
+| basic types, small object   | `f( T t )`         | `f( Clone<T> t )`                    | `f( ConstAlias<T> t )`   |
+| bigger objects              | `f( const T& t )`  | `f( Clone<T> t )`                    | `f( ConstAlias<T> t )`   |
+| User must be careful of argument lifetime| no    | no                                   | yes                      |
+
+| input-output / output parameter| immediate use      | long-term aliasing / sharing |
+|--------------------------------|--------------------|--------------------|
+| any type/object                | `f( T& t )`        | `f( Alias<T> t )`  |
+| User must be careful of argument lifetime| no       | yes                |
+
+\note Parameter passing by \b pointer may be used in place of references in the first column, altough this is not encouraged. Indeed, you have to think about your parameter passing by pointer to determine whether it is truely an immediate use or an implicit \c Clone<T*>. You may use a parameter passing by \b pointer in the following cases:
+- you wish to alias / const-alias an object that may be \e null (0) in some cases, like in an optional object association. In this case, you should use a \b pointer member.
+- you are manipulating arrays: pointers relate to cells of your array and are in fact \e iterators passed by value. Perhaps consider a typedef to remove ambiguity.
+
+
+\subsection moduleCloneAndReference_sec22 User passing an argument to a Clone parameter
+
+A parameter `( Clone<T> cT )` accepts several types of arguments constructed from \c T. The true behavior of \c Clone depends also on the way the \e programmer uses the object \c cT in the function/method. The object \c cT may be used to initialize 3 different types of object (often a data member): \c T, \c T*, @link CowPtr CowPtr<T>@endlink. The following table sums up the different conversions \e Argument toward \e member.
+
+
+|Argument type:    |\c const \c T& |    \c T*      |\c CountedPtr<T>| \c CowPtr<T>   |\c T&& (c++11)|
+|------------------|---------------|---------------|----------------|----------------|--------------|
+|To:\c T           | Dupl.  O(N)   |Acq. Dupl. O(N)| Dupl. O(N)     | Dupl. O(N)     | Move. O(1)   |
+|To:\c T*          | Dupl.  O(N)   |   Acq. O(1)   | Dupl. O(N)     | Dupl. O(N)     | Move. O(1)   |
+|To:@link CowPtr CowPtr<T>@endlink   | Dupl.  O(N)   |   Acq. O(1)   | Lazy. O(1)/O(N)| Lazy. O(1)/O(N)| Move. O(1)   |
+
+where O(N) stands for the time to duplicate an instance of \c T, and with the following abbreviations:
+- \b Dupl. Object is duplicated.
+- \b Lazy. Object is lazily duplicated, meaning only when the user writes on it (which may be never).
+- \b Acq. Dynamically allocated pointer is acquired. User should take care himself of deletion only if storing the parameter with a pointer.
+- \b Move. The object is moved into the new object. This is  generally much faster than copy. This is true for instance for all classical STL containers. You can also write a specific \c  move constructor for your class.
+
+It is clear that worst case is duplication while sometimes \ref Clone
+is constant time (while guaranteeing object invariance and
+life-time).
+
+\note A conversion to \c T* means pointer acquisition. Hence the programmer should take care of deletion of the object.
+Otherwise, deletion is automatic for \c T or \c CowPtr<T> member. Furthermore, a conversion to a \c T* requires the use of the address operator (\c operator&) by the \e developer. If argument is `Clone<T> a`, and member name is `b`:
+
+|member type:|     \c T          |     \c T*  |\c CowPtr<T>|
+|-----------|-------------------|------------|-----------|
+|member deletion:|  automatic   |  \b manual | automatic |
+|conversion:| automatic: `b(a)` |  address: `b(&a)`| automatic: `b(a)` |
+
+\note When choosing a `Clone<T>` parameter, the \e programmer should really consider using a `CowPtr<T>` member to store it, since it is the most versatile and optimizable variant. The only advantage of the two others storing methods (\c T  and  \c T*) is that there is one less indirection. 
+
+@code
+struct BigFatA { ... };
+
+struct B {
+  // versatile constructor. Accepts 5 different versions.
+  B( Clone<BigFatA> a ) : myOwnFat( a ) {}  
+  void f() { myOwnFat->do(); }
+  CowPtr<BigFatA> myOwnFat;
+};
+
+BigFatA a1;
+B b1( a1 ); // cloned
+B b2( new BigFatA( "I am the one " ) ); // acquired 
+CountedPtr<BigFatA> counted_ptr = new BigFatA( "I am the other one" ); 
+B b3( counted_ptr ); // O(1) since lazy duplication (waiting for a write).
+B b4( BigFatA( "Moving one" ) ); // this one is created directly in b4 (with c++11).
+@endcode
+
+This version acquires the given argument. Note the use of the address operator \c operator& and the \c delete in the destructor.
+
+@code
+struct BigFatA { ... };
+
+struct B {
+  // versatile constructor. Accepts 5 different versions.
+  B( Clone<BigFatA> a ) : myAcquiredFat( &a ) {} // note the address operator
+  ~B() { delete myAcquiredFat; }                 // required because of pointer acquisition
+  void f() { myOwnFat->do(); }
+  BigFatA* myAcquiredFat;
+};
+
+BigFatA a1;
+B b1( a1 ); // cloned
+B b2( new BigFatA( "I am the one " ) ); // acquired 
+CountedPtr<BigFatA> counted_ptr = new BigFatA( "I am the other one" ); 
+B b3( counted_ptr ); // duplicated
+B b4( BigFatA( "Moving one" ) ); // this one is created directly in b4 (with c++11).
+@endcode
+
+\subsection moduleCloneAndReference_sec23 User passing an argument to an Alias parameter
+
+A parameter `( Alias<T> cT )` accepts several types of arguments constructed from \c T. The true behavior of \c Alias depends also on the way the \e programmer uses the object \c cT in the function/method. The object \c cT may be used to initialize 3 different types of object (often a data member): \c T&, \c T*, \c CountedPtrOrPtr<T>. The following table sums up the different conversions \e Argument toward \e member.
+
+
+
+|Argument type     |    \c T&      |    \c T*      |\c CountedPtr<T>|\c CountedPtrOrPtr<T>|
+|------------------|---------------|---------------|----------------|---------------------|
+|To: \c T&         | Shared. O(1)  | Shared. O(1)  |                |                     |
+|To: \c T*         | Shared. O(1)  | Shared. O(1)  |                |                     |
+|To: @link CountedPtrOrPtr CountedPtrOrPtr<T>@endlink| Shared. O(1)| Shared. O(1)| Shared. O(1), \b secure | Shared. O(1), \b secure |
+
+\note When choosing an `Alias<T>` parameter, the \e programmer should really consider using a `CountedPtrOrPtr<T>` member to store it, since it is the most secure-able variant. The only advantage of the two others storing methods (\c T&  and  \c T*) is that there is one less boolean test and indirection. 
+
+\note A conversion to a \c T* requires the use of the address operator (\c operator&) by the \e developer. If argument is `Alias<T> a`, and member name is `b`:
+
+|member type:|    \c T&         |     \c T*        |\c CountedPtrOrPtr<T>|
+|-----------|-------------------|------------------|-----------|
+|conversion:| automatic: `b(a)` |  address: `b(&a)`| automatic: `b(a)` |
+
+
+
+\advanced As one can see, if the \e programmer has chosen a `CountedPtrOrPtr<T>` for storing the alias, the \e user can choose between a \b secure \b long-term \b aliasing (with a `CountedPtr<T>` or `CountedPtrOrPtr<T>` argument) or \b non \b secure \b long-term \b aliasing (with a \c T& or \c T* argument).
+
+
+@code
+struct BigFatA { ... };
+
+struct B {
+  // versatile constructor. Accepts 4 different versions.
+  B( Alias<BigFatA> a ) : mySharedFat( a ) {}
+  void f() { mySharedFat->do(); }
+  CountedPtrOrPtr<BigFatA> mySharedFat;
+};
+
+BigFatA a1;
+B b1( a1 ); // aliased (unsecure)
+BigFatA adr = new BigFatA( "I am the one " )
+B b2( adr ); // aliased
+CountedPtr<BigFatA> counted_ptr = new BigFatA( "I am the other one" ); 
+B b3( counted_ptr ); // secure aliased
+delete counted_ptr; // b3 is still fine.
+delete adr;
+@endcode
+
+
+\subsection moduleCloneAndReference_sec24  User passing an argument to a ConstAlias parameter
+
+A parameter `( ConstAlias<T> cT )` accepts several types of arguments constructed from \c T. The true behavior of \c ConstAlias depends also on the way the \e programmer uses the object \c cT in the function/method. The object \c cT may be used to initialize 3 different types of object (often a data member): \c T&, \c T*, \c CowPtr<T>. The following table sums up the different conversions \e Argument toward \e member.
+
+|Argument          |\c const \c T& |\c const \c T* |\c CountedPtr<T>|\c CountedPtrOrPtr<T>|\c CountedConstPtrOrConstPtr<T>|
+|------------------|---------------|---------------|----------------|------------|---|
+|To: \c const T&   | Shared. O(1)  | Shared. O(1)  |                |            |   |
+|To: \c const T*   | Shared. O(1)  | Shared. O(1)  |                |            |   |
+|To: \link CountedConstPtrOrConstPtr CountedConstPtrOrConstPtr<T>\endlink|Shared. O(1)|Shared. O(1)|Shared. O(1), \b secure|Shared. O(1), \b secure| Shared. O(1), \b secure|
+
+\note When choosing a `ConstAlias<T>` parameter, the \e programmer should really consider using a `CountedConstPtrOrConstPtr<T>` member to store it, since it is the most secure-able variant. The only advantage of the two others storing methods (\c const \c T&  and \c const \c T*) is that there is one less boolean test and indirection. 
+
+\note A conversion to a `const T*` requires the use of the address operator (\c operator&) by the \e developer. If argument is `ConstAlias<T> a`, and member name is `b`:
+
+|member type:| \c const \c T&   |  \c const \c T*  |\c CountedConstPtrOrConstPtr<T>|
+|-----------|-------------------|------------------|-----------|
+|conversion:| automatic: `b(a)` |  address: `b(&a)`| automatic: `b(a)` |
+
+
+\advanced  As one can see, if the \e programmer has chosen a `CountedConstPtrOrConstPtr<T>` for storing the const alias, the \e user can choose between a \b secure \b long-term \b const-aliasing (with a `CountedPtr<T>` or `CountedPtrOrPtr<T>` or `CountedConstPtrOrConstPtr<T>` argument) or \b non \b secure \b long-term \b const-aliasing (with a \c T& or \c T* argument).
+
+@code
+struct BigFatA { ... };
+
+struct B {
+  // versatile constructor. Accepts 5 different versions.
+  B( ConstAlias<BigFatA> a ) : myConstSharedFat( a ) {}
+  void f() const { myConstSharedFat->do(); } // const method
+  CountedConstPtrOrConstPtr<BigFatA> myConstSharedFat;
+};
+
+BigFatA a1;
+B b1( a1 ); // const-aliased (unsecure)
+BigFatA adr = new BigFatA( "I am the one " )
+B b2( adr ); // aliased
+CountedPtr<BigFatA> counted_ptr = new BigFatA( "I am the other one" ); 
+B b3( counted_ptr ); // secure aliased
+delete counted_ptr; // b3 is still fine.
+delete adr;
+@endcode
+
+
+*/
+
+
+} // namespace DGtal

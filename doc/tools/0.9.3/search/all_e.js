@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['ofs2off',['ofs2off',['../ofs2off.html',1,'']]],
-  ['operator_28_29',['operator()',['../structMainWindow_1_1ColorMapFunctor.html#af4be1b48904e0ac8c75404e22fcf8725',1,'MainWindow::ColorMapFunctor']]],
-  ['operator_3c_3c',['operator&lt;&lt;',['../namespaceDGtal.html#a66aca9ad97cfa71ddd5b1333a392d50d',1,'DGtal::operator&lt;&lt;(std::ostream &amp;out, const ATu0v1&lt; TKSpace, TLinearAlgebra &gt; &amp;object)'],['../namespaceDGtal.html#a5300b1e749539de1f4f27d8781c637f3',1,'DGtal::operator&lt;&lt;(std::ostream &amp;out, const ATu2v0&lt; TKSpace, TLinearAlgebra &gt; &amp;object)']]],
-  ['operator_3d',['operator=',['../structDGtal_1_1ATu0v1.html#aff2ed2775395c1d8ff6bd7bfa62003b2',1,'DGtal::ATu0v1::operator=(const ATu0v1 &amp;other)=delete'],['../structDGtal_1_1ATu0v1.html#a1029714be430e2f24ecd1a70b41310fd',1,'DGtal::ATu0v1::operator=(ATu0v1 &amp;&amp;other)=delete'],['../structDGtal_1_1ATu2v0.html#adbff2db05b44295b23dc0d9335800857',1,'DGtal::ATu2v0::operator=(const ATu2v0 &amp;other)=delete'],['../structDGtal_1_1ATu2v0.html#a45535107c1a287160e40b4af3fd2516a',1,'DGtal::ATu2v0::operator=(ATu2v0 &amp;&amp;other)=delete'],['../structDGtal_1_1DECImage2D.html#a1254170c4184f7e88336b551996a48d2',1,'DGtal::DECImage2D::operator=(const DECImage2D &amp;other)=delete'],['../structDGtal_1_1DECImage2D.html#a7976cf4162bab21cf8fffaa52de556a7',1,'DGtal::DECImage2D::operator=(DECImage2D &amp;&amp;other)=delete']]]
-];

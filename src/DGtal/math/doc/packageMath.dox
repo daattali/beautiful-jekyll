@@ -1,0 +1,68 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageMath.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/04/05
+ *
+ * Documentation file for feature packageMath
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageMath Mathematical package
+
+@managers Jacques-Olivier Lachaud
+
+@since 0.5
+
+@b LICENSE: LGPL
+
+
+@b Package @b Overview
+
+This package gathers various mathematical subpackages and modules. For
+now, it consists essentially in a module for defining multivariate
+polynomials, and some classes for simple statistic analysis.
+
+@b Modules 
+- \ref modulePolynomial (Jacques-Olivier Lachaud, Felix Fontein)
+
+@b Package @b Concepts @b Overview
+ - \ref packageMathConcepts
+
+@b Related @b documentation @b pages
+ - Classes that computes the determinant of small matrices are available in \ref packageGeometry. See \ref moduleGeometricPredicates. 
+
+@b Related @b examples
+
+- polynomial-derivative.cpp, polynomial2-derivative.cpp.
+- trackImplicitPolynomialSurfaceToOFF.cpp
+
+
+*/
+
+}

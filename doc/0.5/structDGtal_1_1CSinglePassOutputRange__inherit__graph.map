@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$structDGtal_1_1CBidirectionalOutputRange.html" title="Aim: refined concept of bidirectional range which require that a reverse output iterator exists..." alt="" coords="365,5,656,35"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1CSinglePassOutputRangeFromPoint.html" title="Aim: refined concept of single pass range with a outputIterator() method from a point." alt="" coords="340,58,681,89"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CBidirectionalOutputRangeFromPoint.html" title="Aim: refined concept of single pass range with an routputIterator() method from a point..." alt="" coords="731,5,1080,35"/>
-</map>

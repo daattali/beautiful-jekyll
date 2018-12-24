@@ -1,0 +1,337 @@
+
+/* 
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+
+/*!
+   
+@page moduleCOBANaivePlaneRecognition Detailed explanation of COBA plane recognition algorithm
+
+@writers Jacques-Olivier Lachaud
+
+Part of the \ref packageGeometry.
+
+This module gathers classes and functions to recognize piece of naive
+planes, and more generally piece of planes with arbitrary rational
+axis-thickness. It is based on an implementation of the COBA Algorithm
+[Charrier, Buzer 1998 : \cite Charrier_2008_dgci]. For the user,
+everything is gathered in classes COBANaivePlaneComputer and
+COBAGenericNaivePlaneComputer, which are additive primitive computers.  File
+viewer3D-7-planes.cpp gives a very simple example of use-case. File
+greedy-plane-segmentation.cpp is a non trivial example that uses this
+plane recognition algorithm.
+
+[TOC]
+
+Related examples are viewer3D-7-planes.cpp,
+greedy-plane-segmentation.cpp, greedy-plane-segmentation-ex2.cpp.
+
+\section moduleCOBANaivePlaneRecognition_sec1 What planes are recognized by the COBA algorithm ?
+
+The COBA algorithm recognizes planes defined with some equation \f$
+\mu \le \vec{N} \cdot \vec{x} < \mu + \epsilon \f$, where \f$ N_z \f$ (for
+instance) is 1. This is ok for instance for recognizing \b naive \b
+planes defined by \f$ d \le ax+by+cz < d + \omega \f$ where \f$ \omega
+= \max(a,b,c) \f$. Assign indeed \f$ \mu = d / \omega, \vec{N} =
+(a,b,c) / \omega, \epsilon = 1 \f$. Extension to integer multiples or
+rational multiples of such planes is straightforward, and is hence
+provided.
+
+The user thus specifies a main axis \a axis and a rational width
+(i.e. \f$ \epsilon \f$ as \a widthNumerator / \a widthDenominator ) at
+initialization (see COBANaivePlaneComputer::init()).
+
+The idea of the COBA algorithm is to transform the problem into a
+linear integer programming problem in the digital plane \f$ Z^2
+\f$. If the main axis is \a z, then the algorithm looks for unknown
+variables \f$ (N_x,N_y) \f$. Given a set of points \f$ (\vec{P}_i)
+\f$, it computes (or maintains in the incremental form) the 2D space
+of solutions induced by these points. More precisely, each point
+induces two linear constraints \f$ \mu \le \vec{N} \cdot \vec{P}_i \f$
+and \f$ \vec{N} \cdot \vec{P}_i < \mu + \epsilon \f$. 
+
+Instead of keeping this problem in \f$ R^2 \f$, the problem is cast in
+\f$ (hZ)^2 \f$, where the parameter \a h is the sampling step and is
+sufficiently small to capture a solution when there is one. When
+initializing the algorithm, the user must give the \a diameter of the
+set of points \f$ (\vec{P}_i) \f$ (here largest vector in \f$\infty\f$
+norm), see COBANaivePlaneComputer::init().
+
+It is proven that if \f$ 0 < h < 1/(2D^3) \f$, where \a D is the
+diameter, then if there is a solution, there is a rational solution
+with denominator less than \f$ 2D^3 \f$.
+
+The COBA algorithm uses therefore a 2D lattice polytope (a convex
+polygon with vertices at integer coordinates), and class
+LatticePolytope2D, to maintain the set of rational
+solutions. Experimentally, even for a great number of points
+(<=100000), this convex set has generally fewer than 12 vertices (see
+\ref moduleCOBANaivePlaneRecognition_sec3).
+
+A drawback of the COBA algorithm is that it does \b not provide the \b
+minimal \b characteristics of the recognized plane. This is due to the
+sampling method. In practice, the extracted normal is close to the
+minimal (integer) one.
+
+\note Another problem is that parameter \f$ \mu \f$ is also
+unknown. To cope with that problem, a given solution (the centroid) is
+picked up and the maximal and minimal bounds are computed from it. If
+for a new point the bounds are too big, then a new direction is chosen
+by following the gradient of the induced constraints, and the
+algorithm optimizes iteratively the direction so as to get a direction
+with feasible bounds or no solutions. All this is hidden to the user,
+but explains the worst-case complexity.
+
+\note You may have a look at \ref packageArithmetic, more
+precisely at module \ref moduleLatticePolytope2D to see how
+lattice polytopes are represented.
+
+\section moduleCOBANaivePlaneRecognition_sec2 How to recognize a plane ?
+
+The main class is COBANaivePlaneComputer. It is templated by the digital space
+\a TSpace, an arbitrary model of CSpace with dimension equal to 3, and
+by the internal integer type \a TInternalInteger, which should be an
+integral type with big enough precision to perform computations in the
+subsampled \f$ Z^2 \f$. 
+
+The most important inner types are (most of the others are
+redefinitions so that this object is a model of
+boost::ForwardContainer):
+
+- \a Point: the type of point that will be checked in the
+  algorithm. Defined as \a TSpace::Point.
+
+- \a InternalInteger: the type of integer used in
+  computations. Defined as \a TInternalInteger.
+
+- \a PointSet: the type that defines the set of points stored in this
+  object (for now, std::set<Point>).
+
+- \a ConstIterator: the type of iterator to visit the set of points
+  that composed the currently recognized plane.
+
+You may instantiate a COBANaivePlaneComputer as follows:
+
+@code 
+#include "DGtal/geometry/surfaces/COBANaivePlaneComputer.h" 
+...
+using namespace Z3i;               // digital space is Z3
+...
+COBANaivePlaneComputer<Z3, int64_t> plane; // int64_t is enough for diameter 100
+plane.init( 2, 100, 1, 1 );        // axis is z, diameter is 100, epsilon=1/1
+@endcode
+
+Assuming you have a sequence of points stored in a container \a v, you
+may recognize if it is a piece of z-axis naive plane with the
+following piece of code:
+
+@code
+bool isZNaivePlane( const vector<Point> & v )
+{
+  COBANaivePlaneComputer<Z3, int64_t> plane; // int64_t is enough for diameter 500
+  plane.init( 2, 500, 1, 1 );        // axis is z, diameter is 500, epsilon=1/1
+  for ( vector<Point>::const_iterator it = v.begin(), itEnd = v.end();
+        it != itEnd; ++it )
+    if ( ! plane.extend( *it ) ) return false;
+  return true;
+}
+@endcode
+
+Therefore, the main methods for recognizing a plane are:
+
+- COBANaivePlaneComputer::extend(const Point &): given a \a Point, it updates
+  this plane such that it includes also this new point. If this is
+  possible, it returns \c true, otherwise it returns \c false and the
+  object is in the same state as before the call.
+
+- COBANaivePlaneComputer::isExtendable(const Point &)const: given a \a Point,
+  it checks whether or not there is a plane that includes also this
+  new point. It returns \c true in this case, otherwise it returns \c
+  false. The object is left unchanged whatever the result.
+
+- COBANaivePlaneComputer::extend(TInputIterator it, TInputIterator itE):
+  given a range [it,itE) of \a Point, it updates this plane such that
+  it includes also this range of points. If this is possible, it returns \c
+  true, otherwise it returns \c false and the object is in the same
+  state as before the call.
+
+- COBANaivePlaneComputer::isExtendable(TInputIterator it, TInputIterator itE)const:
+  given a range [it,itE) of \a Point, it checks whether
+  or not there is a plane that includes also this range of new
+  points. It returns \c true in this case, otherwise it returns \c
+  false. The object is left unchanged whatever the result.
+
+
+\note Calling COBANaivePlaneComputer::isExtendable before
+COBANaivePlaneComputer::extend does not induce a speed up on the second
+method. You should prefer calling directly COBANaivePlaneComputer::extend()
+whenever you wish to extend the plane at this point.
+
+You may also have a look at example viewer3D-7-planes.cpp.
+
+@image html coba-naive-plane.png "Piece of naive plane containing the four green points. There is no naive plane containing also any one of the red points."
+@image latex coba-naive-plane.png "Piece of naive plane containing the four green points. There is no naive plane containing also any one of the red points." width=5cm
+
+
+\note \a TInternalInteger specifies the type of integer used in
+internal computations. The type should be able to hold integers of
+order (2*D^3)^2 if D is the diameter of the set of digital points. In
+practice, diameter is limited to 20 for int32_t, diameter is
+approximately 500 for int64_t, and whatever with BigInteger/GMP
+integers. For huge diameters, the slow-down is polylogarithmic with
+the diameter.
+
+\section moduleCOBANaivePlaneRecognition_sec3 Extracting plane characteristics
+
+You may obtain the current normal to the plane as a 3D vector over
+some real-value type (e.g. \c float, \c double) with the templated
+methods COBANaivePlaneComputer::getNormal (one component has norm 1) and
+COBANaivePlaneComputer::getUnitNormal (the 2-norm of the vector is 1).
+
+You may obtain the upper and lower bounds of the scalar products with
+COBANaivePlaneComputer::getBounds.
+
+@note The COBA algorithm does not give you the minimal characteristics
+of the plane that contains all the input points. It provides you one
+feasible solution.
+
+
+\section moduleCOBANaivePlaneRecognition_sec4 Speed and computational complexity of COBA algorithm
+
+It is not a trivial task to determine bounds on the computational
+complexity of this algorithm that depends only on the number of points
+\a N. Indeed, the determinant factor on the complexity is the number
+of times \a k that the plane parameters are updated. Another factor is
+the number of vertices \a v of the current convex set of
+solutions. 
+
+- The parameter \a k depends on the order of added point. It is
+  related to the depth of bidimensional continued fraction of the
+  plane normal (since each update corresponds to a refinement of the
+  plane normal). A rule of thumb upper bound is some \f$ O(\log^2(D))
+  \f$, but experiments suggest a much lower bound.
+
+- The parameter \a v seems mostly bounded in experiments. It is of
+  course bounded by \f$ O(D^\frac{2}{3}) \f$, which is the 2D lattice
+  polytope with the maximum number of sides in a D x D box. However,
+  experiments suggest a more likely \f$ \log \log D \f$.
+
+- Note also that each time a new point is inserted, we check if it has
+  already been added. With std::set, this implies a \f$O(\log N)\f$
+  cost.
+
+Putting everything together gives some \f$ O(N \log N +
+k(v+N+\log(D))\log^2(D)) \f$. Neglecting \a v gives \f$ O( N (\log N +
+k \log^3 D ) ) \f$.
+
+We have runned the following benchmark to estimate the average speed
+of COBA algorithm. For each experiment, 1000 naive planes were
+randomly chosen. Then, for an input diameter \a D, \a N points are
+randomly chosen in the parallelepiped D x D x D, such that they belong
+to the plane. We measure the time \a T to recognize these points as a
+naive plane (all calls to extend succeed). We also measure the number
+of updates \a k for this recognition. The following figures show the
+obtained results for a number of points varying from 50 to 100000 and
+a diameter varying from 50 to 1000000. It shows that the algorithm
+performs better in practice than the given upper bounds, even assuming
+\f$ k = \log \log D \f$ and \a v constant.
+
+\note All computations were made with \a TInternalInteger set to
+BigInteger.
+
+@image html COBA-timings.png "Time (in ms) to recognize a naive plane as a function of the number of points N (x-axis) and the diameter (y-axis). Time is averaged over 1000 random recognitions."
+@image latex COBA-timings.png "Time (in ms) to recognize a naive plane as a function of the number of points N (x-axis) and the diameter (y-axis). Time is averaged over 1000 random recognitions." width=5cm
+
+@image html COBA-updates.png "Number of updates (and deviation) when recognizing a naive plane, as a function of the number of points N (x-axis) and the diameter (y-axis). This number is averaged over 1000 random recognitions."
+@image latex COBA-updates.png "Number of updates (and deviation) when recognizing a naive plane, as a function of the number of points N (x-axis) and the diameter (y-axis). This number is averaged over 1000 random recognitions." width=5cm
+
+
+\section moduleCOBANaivePlaneRecognition_sec5 Application to greedy segmentation into digital planes
+
+Example greedy-plane-segmentation.cpp illustrates the use of
+COBANaivePlaneComputer to segment a digital surface into connected pieces of
+digital planes.
+
+The surface will be define as some digital surface in a thresholded 3D image. The image is loaded here.
+
+@snippet geometry/surfaces/greedy-plane-segmentation.cpp greedy-plane-segmentation-loadVolume
+
+Then the digital surface is built within this volume.
+
+@snippet geometry/surfaces/greedy-plane-segmentation.cpp greedy-plane-segmentation-makeSurface
+
+We define a few types. Note the COBANaivePlaneComputer and the structure
+SegmentedPlane, which will store information for each plane.
+
+@snippet geometry/surfaces/greedy-plane-segmentation.cpp greedy-plane-segmentation-typedefs
+
+We proceed to the segmentation itself. Note that we iterate over each
+surface element (surfel or vertex). Only vertices not processed can
+define the starting point of a new plane. Then a breadth-first
+traversal is initiated from this vertex and vertices are added to the
+plane as long as it is possible.
+
+@snippet geometry/surfaces/greedy-plane-segmentation.cpp greedy-plane-segmentation-segment
+
+We display it using 3D viewers.
+
+@snippet geometry/surfaces/greedy-plane-segmentation.cpp greedy-plane-segmentation-visualization
+
+@image html greedy-plane-segmentation-al-w1.png "Greedy segmentation of Al capone into naive planes."
+@image latex greedy-plane-segmentation-al-w1.png "Greedy segmentation of Al capone into naive planes." width=6cm
+
+@note This approach to plane segmentation is very naive. Because there
+are favored axes when iterating (vertices are not randomly picked up),
+this technique has indeed the drawback of favoring "slice planes",
+which are not very useful.
+
+@note \b Exercice 1. Randomize the greedy plane recognition. The
+simplest approach is first to put all vertices into a vector, then
+suffle it with STL algorithms. And then iterate over this shuffled
+set.
+
+@note \b Exercice 2. Enhance the polyhedrization by selecting first
+the vertices that induces the biggest planes. This is much slower than
+above, but will give nicer results. For each vertex, computes its best
+plane by breadth-first traversal. Stores the obtained size (or better
+moments). Do that for each vertex independently. Put them in a
+priority queue, the first to be popped should be the ones with the
+biggest size. The remaining of the algorithm is unchanged.
+
+\section moduleCOBANaivePlaneRecognition_sec6 What if you do not know the main axis beforehands ?
+
+In this case, you should use the class COBAGenericNaivePlaneComputer. You use
+it similarly to COBANaivePlaneComputer, but you do not need to specify a main
+axis when calling COBAGenericNaivePlaneComputer::init().
+
+@code 
+#include "DGtal/geometry/surfaces/COBAGenericNaivePlaneComputer.h" 
+...
+using namespace Z3i;            // digital space is Z3
+...
+COBAGenericNaivePlaneComputer<Z3, int64_t> plane; // int64_t is enough for diameter 100
+plane.init( 100, 1, 1 );        // diameter is 100, epsilon=1/1
+@endcode
+
+Then, you may use methods COBAGenericNaivePlaneComputer::clear(),
+COBAGenericNaivePlaneComputer::extend(),
+COBAGenericNaivePlaneComputer::isExtendable(), etc, similarly as for class
+COBANaivePlaneComputer. The advantage is that the object detects progressively
+what is the correct main axis. You may know what is a correct main
+axis by calling COBAGenericNaivePlaneComputer::active().
+
+\note The principle of COBAGenericNaivePlaneComputer is to have three
+instances of COBANaivePlaneComputer at the beginning, one per possible
+axis. When extending the object by adding points, all active instances
+are extended. If any one of the active instance fails, it is removed
+from the active instances. It is guaranteed that if there is a naive
+plane (of specified width) that contains the given set of points, then
+the object COBAGenericNaivePlaneComputer will have at least one active
+COBANaivePlaneComputer instance. COBAGenericNaivePlaneComputer is thus a correct
+recognizer of arbitrary pieces of naive planes.
+
+*/
+
+
+}

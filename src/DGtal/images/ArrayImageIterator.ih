@@ -1,0 +1,348 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/*
+ * @file ArrayImageIterator.ih
+ * @author Roland Denis (\c roland.denis@univ-smb.fr )
+ * LAboratory of MAthematics - LAMA (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2015/06/19
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <DGtal/base/Assert.h>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+//------------------------------------------------------------------------------
+/// Default constructor.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator()
+  : myIterableClassPtr(nullptr)
+{}
+
+//------------------------------------------------------------------------------
+/// Iterator from a point.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator( IterableClass* anIterableClassPtr, Domain const& aFullDomain, Domain const& aViewDomain, Point const& aPoint )
+  : myIterableClassPtr( anIterableClassPtr )
+  , myFullDomain{ aFullDomain }
+  , myViewDomain{ aViewDomain }
+  , myFullExtent( myFullDomain.upperBound() - myFullDomain.lowerBound() + Point::diagonal(1) )
+  , myViewExtent( myViewDomain.upperBound() - myViewDomain.lowerBound() + Point::diagonal(1) )
+  , myPoint{ aPoint }
+  , myFullIndex( Self::Linearizer::getIndex( myPoint - myFullDomain.lowerBound(), myFullExtent ) )
+{
+  ASSERT_MSG(
+      myFullDomain.lowerBound().isLower( myViewDomain.lowerBound() )
+      && myFullDomain.upperBound().isUpper( myViewDomain.upperBound() ),
+      "The viewable domain must be included into the full domain."
+      );
+  ASSERT_MSG(
+      myViewDomain.isInside(aPoint),
+      "The point is outside the viewable domain !"
+      );
+}
+
+//------------------------------------------------------------------------------
+/// Iterator pointing to the first value.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator( IterableClass* anIterableClassPtr, Domain const& aFullDomain, Domain const& aViewDomain )
+  : ArrayImageIterator{ anIterableClassPtr, aFullDomain, aViewDomain, aViewDomain.lowerBound() }
+{}
+
+//------------------------------------------------------------------------------
+/// Iterator pointing to the first value and spanning the whole domain.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator( IterableClass* anIterableClassPtr, Domain const& aFullDomain )
+  : ArrayImageIterator{ anIterableClassPtr, aFullDomain, aFullDomain }
+{}
+
+//------------------------------------------------------------------------------
+/// Iterator pointing after the last value of the viewable domain.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator( IterableClass* anIterableClassPtr, Domain const& aFullDomain, Domain const& aViewDomain, bool /* last */ )
+  : ArrayImageIterator{ anIterableClassPtr, aFullDomain, aViewDomain, aViewDomain.upperBound() }
+{
+  increment();
+}
+
+//------------------------------------------------------------------------------
+/// Iterator pointing after the last value of the whole domain.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator( IterableClass* anIterableClassPtr, Domain const& aFullDomain, bool /* last */ )
+  : ArrayImageIterator{ anIterableClassPtr, aFullDomain, aFullDomain, true }
+{}
+
+//------------------------------------------------------------------------------
+/// Copy constructor with type interoperability.
+template <typename TIterableClass>
+template <typename TOtherIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator(
+    ArrayImageIterator<TOtherIterableClass> const& other,
+    typename std::enable_if< std::is_convertible<TOtherIterableClass*, IterableClass*>::value >::type*
+)
+  : myIterableClassPtr( other.myIterableClassPtr )
+  , myFullDomain{ other.myFullDomain }
+  , myViewDomain{ other.myViewDomain }
+  , myFullExtent{ other.myFullExtent }
+  , myViewExtent{ other.myViewExtent }
+  , myPoint{ other.myPoint }
+  , myFullIndex{ other.myFullIndex }
+{}
+
+//------------------------------------------------------------------------------
+/// Move constructor with type interoperability.
+template <typename TIterableClass>
+template <typename TOtherIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+ArrayImageIterator(
+    ArrayImageIterator<TOtherIterableClass> && other,
+    typename std::enable_if< std::is_convertible<TOtherIterableClass*, IterableClass*>::value >::type*
+) noexcept
+  : myIterableClassPtr( std::move(other.myIterableClassPtr) )
+  , myFullDomain{ std::move(other.myFullDomain) }
+  , myViewDomain{ std::move(other.myViewDomain) }
+  , myFullExtent{ std::move(other.myFullExtent) }
+  , myViewExtent{ std::move(other.myViewExtent) }
+  , myPoint{ std::move(other.myPoint) }
+  , myFullIndex{ std::move(other.myFullIndex) }
+{}
+
+//------------------------------------------------------------------------------
+/// Destructor.
+template <typename TIterableClass>
+DGtal::ArrayImageIterator<TIterableClass>::
+~ArrayImageIterator()
+{}
+
+//------------------------------------------------------------------------------
+/// Copy assignment with type interoperability.
+template <typename TIterableClass>
+template <typename TOtherIterableClass>
+typename std::enable_if<
+    std::is_convertible<TOtherIterableClass*, TIterableClass*>::value,
+    typename DGtal::ArrayImageIterator<TIterableClass>::Self&>::type
+DGtal::ArrayImageIterator<TIterableClass>::
+operator= ( ArrayImageIterator<TOtherIterableClass> const& other )
+{
+  myIterableClassPtr = other.myIterableClassPtr;
+  myFullDomain = other.myFullDomain;
+  myViewDomain = other.myViewDomain;
+  myFullExtent = other.myFullExtent;
+  myViewExtent = other.myViewExtent;
+  myPoint = other.myPoint;
+  myFullIndex = other.myFullIndex;
+  return *this;
+}
+
+//------------------------------------------------------------------------------
+/// Move assignment constructor with type interoperability.
+template <typename TIterableClass>
+template <typename TOtherIterableClass>
+typename std::enable_if<
+    std::is_convertible<TOtherIterableClass*, TIterableClass*>::value,
+    typename DGtal::ArrayImageIterator<TIterableClass>::Self&>::type
+DGtal::ArrayImageIterator<TIterableClass>::
+operator= ( ArrayImageIterator<TOtherIterableClass> && other )
+{
+  myIterableClassPtr = std::move(other.myIterableClassPtr);
+  myFullDomain = std::move(other.myFullDomain);
+  myViewDomain = std::move(other.myViewDomain);
+  myFullExtent = std::move(other.myFullExtent);
+  myViewExtent = std::move(other.myViewExtent);
+  myPoint = std::move(other.myPoint);
+  myFullIndex = std::move(other.myFullIndex);
+  return *this;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+//------------------------------------------------------------------------------
+/// Return the point behind this iterator.
+template <typename TIterableClass>
+inline
+typename DGtal::ArrayImageIterator<TIterableClass>::Point const&
+DGtal::ArrayImageIterator<TIterableClass>::
+    getPoint() const noexcept
+{
+  return myPoint;
+}
+
+//------------------------------------------------------------------------------
+/// Return the distance from this iterator to a given point.
+template <typename TIterableClass>
+inline
+std::ptrdiff_t
+DGtal::ArrayImageIterator<TIterableClass>::
+distance_to( Point const& aPoint ) const noexcept
+{
+  ASSERT_MSG(
+      myViewDomain.isInside(aPoint),
+      "The point is outside the viewable domain !"
+      );
+  return
+    static_cast<std::ptrdiff_t>( Linearizer::getIndex(aPoint, myViewDomain.lowerBound(), myViewExtent) )
+    - static_cast<std::ptrdiff_t>( Linearizer::getIndex(myPoint, myViewDomain.lowerBound(), myViewExtent) );
+}
+
+//------------------------------------------------------------------------------
+/// Writes/Displays the object on an output stream.
+template <typename TIterableClass>
+inline
+void
+DGtal::ArrayImageIterator<TIterableClass>::
+    selfDisplay ( std::ostream & out ) const
+{
+  out << "[ArrayImageIterator] pointing to " << getPoint();
+}
+
+//------------------------------------------------------------------------------
+///Checks the validity/consistency of the object.
+template <typename TIterableClass>
+inline
+bool
+DGtal::ArrayImageIterator<TIterableClass>::isValid() const
+{
+    return myIterableClassPtr != nullptr;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Hidden services :
+
+//------------------------------------------------------------------------------
+/// Increment of one step.
+template <typename TIterableClass>
+void
+DGtal::ArrayImageIterator<TIterableClass>::
+increment()
+{
+  ++myFullIndex;
+  ++myPoint[0];
+  for ( auto i = 1; i < (int)Domain::dimension && myPoint[i-1] > myViewDomain.upperBound()[i-1]; ++i )
+    {
+      myPoint[i-1] = myViewDomain.lowerBound()[i-1];
+      ++myPoint[i];
+      std::size_t cum = myFullExtent[i-1] - myViewExtent[i-1];
+      for ( auto j = 0; j < i-1; ++j )
+        cum *= myFullExtent[j];
+
+      myFullIndex += cum;
+    }
+}
+
+//------------------------------------------------------------------------------
+/// Decrement of one step.
+template <typename TIterableClass>
+void
+DGtal::ArrayImageIterator<TIterableClass>::
+decrement()
+{
+  --myFullIndex;
+  --myPoint[0];
+  for ( Dimension i = 1; i < Domain::dimension && myPoint[i-1] < myViewDomain.lowerBound()[i-1]; ++i )
+    {
+      myPoint[i-1] = myViewDomain.upperBound()[i-1];
+      --myPoint[i];
+      std::size_t accum = myFullExtent[i-1] - myViewExtent[i-1];
+      for ( int j = 0; j < (int)i-1; ++j )
+        accum *= myFullExtent[j];
+
+      myFullIndex -= accum;
+    }
+}
+
+//------------------------------------------------------------------------------
+/// Equality.
+template <typename TIterableClass>
+inline
+bool
+DGtal::ArrayImageIterator<TIterableClass>::
+equal( Self const& other ) const
+{
+  return myFullIndex == other.myFullIndex;
+}
+
+//------------------------------------------------------------------------------
+/// Dereference.
+template <typename TIterableClass>
+inline
+typename DGtal::ArrayImageIterator<TIterableClass>::Reference
+DGtal::ArrayImageIterator<TIterableClass>::
+dereference() const
+{
+  return myIterableClassPtr->dereference( myPoint, myFullIndex );
+}
+
+//------------------------------------------------------------------------------
+/// Distance to other iterator.
+template <typename TIterableClass>
+inline
+std::ptrdiff_t
+DGtal::ArrayImageIterator<TIterableClass>::
+distance_to( Self const& other ) const
+{
+  return distance_to( other.myPoint );
+}
+
+//------------------------------------------------------------------------------
+/// Advance by n steps.
+template <typename TIterableClass>
+void
+DGtal::ArrayImageIterator<TIterableClass>::
+advance( std::ptrdiff_t n )
+{
+  const auto pos = Self::Linearizer::getIndex( myPoint, myViewDomain.lowerBound(), myViewExtent );
+  myPoint = Self::Linearizer::getPoint( pos + n, myViewDomain.lowerBound(), myViewExtent );
+  myFullIndex = Self::Linearizer::getIndex( myPoint, myFullDomain.lowerBound(), myFullExtent );
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+    const ArrayImageIterator<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+

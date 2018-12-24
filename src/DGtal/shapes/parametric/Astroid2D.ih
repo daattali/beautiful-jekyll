@@ -1,0 +1,200 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+ /**
+  * @file Astroid2D.ih
+  * @author Chouaib Fellah, Adrien Krähenbühl (\c krahenbuhl@unistra.fr )
+  * Laboratoire des sciences de l'ingénieur, de l'informatique et de l'imagerie - ICube (UMR 7357), France
+  *
+  * @date 2018/06/12
+  *
+  * Implementation of inline methods defined in Astroid2D.h
+  *
+  * This file is part of the DGtal library.
+  */
+
+///////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ----------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename T>
+inline
+DGtal::Astroid2D<T>::~Astroid2D()
+{
+}
+
+template <typename T>
+inline
+DGtal::Astroid2D<T>::Astroid2D( const double x0, const double y0,
+  const double a, const double b ) : myCenter(x0,y0), myA(a), myB(b)
+{}
+
+template <typename T>
+inline
+DGtal::Astroid2D<T>::Astroid2D( const RealPoint2D &aPoint,
+  const double a, const double b ) : myCenter(aPoint), myA(a), myB(b)
+{}
+
+template <typename T>
+inline
+DGtal::Astroid2D<T>::Astroid2D( const Point2D &aPoint,
+  const double a, const double b ) : myA(a), myB(b)
+{
+  myCenter = aPoint;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ------------- Implementation of 'StarShaped' services ----------------------
+
+/**
+ * @param p any point in the plane.
+ *
+ * @return the angle parameter between 0 and 2*Pi corresponding to
+ * this point for the shape.
+ */
+template <typename T>
+inline
+double
+DGtal::Astroid2D<T>::parameter( const RealPoint2D & pp ) const
+{
+  RealPoint2D p( pp );
+  p -= myCenter;
+  double angle;
+
+  if ( p[0] == 0. && p[1] > 0. )
+    angle = M_PI/2.0;
+  else if ( p[0] == 0. && p[1] < 0. )
+    angle = 3.0*M_PI/2.0;
+  else if ( p[1] == 0. && p[0] >= 0. )
+    angle = 0.0;
+  else if ( p[1] == 0. && p[0] < 0. )
+    angle = M_PI;
+  else
+  {
+    if( p[1]/p[0] < 0. )
+      angle = atan(-pow(-(myA*p[1])/(myB*p[0]) , 1/3.));
+    else
+      angle = atan(pow(( myA*p[1])/(myB*p[0]) , 1/3.));
+
+    if ( p[1] < 0. && p[0] > 0. )
+      angle += M_PI;
+    else if ( p[0] < 0. && p[1] > 0. )
+      angle += 2*M_PI;
+    else if ( p[0] < 0. && p[1] < 0. )
+      angle += M_PI;
+  }
+
+  return angle;
+}
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x(t),y(t)) which is the position on the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Astroid2D<T>::RealPoint2D
+DGtal::Astroid2D<T>::x( double t ) const
+{
+  RealPoint2D c( myA*pow(cos(t),3), myB*pow(sin(t),3) );
+  c += myCenter;
+  return c;
+}
+
+
+/**
+ * @param t any angle between 0 and 2*Pi.
+ *
+ * @return the vector (x'(t),y'(t)) which is the tangent to the
+ * shape boundary.
+ */
+template <typename T>
+inline
+typename DGtal::Astroid2D<T>::RealVector2D
+DGtal::Astroid2D<T>::xp( const double t ) const
+{
+
+  RealVector2D c( myA * 3*(-sin(t))*pow(cos(t),2),
+                  myB * 3*cos(t)*pow(sin(t),2) );
+  return c;
+}
+
+template <typename T>
+inline
+typename DGtal::Astroid2D<T>::RealVector2D
+DGtal::Astroid2D<T>::xpp( const double t ) const
+{
+  RealVector2D c( -myA * 3*pow(cos(t),3)+6*pow(sin(t),2)*cos(t),
+                   myB * (6*pow(cos(t),2)*sin(t) - 3*pow(sin(t),3)) );
+  return c;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename T>
+inline
+void
+DGtal::Astroid2D<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Astroid2D] center= "<<myCenter<<" a="<<myA<<" b="<<myB;
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename T>
+inline
+bool
+DGtal::Astroid2D<T>::isValid() const
+{
+    return true;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+      const Astroid2D<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

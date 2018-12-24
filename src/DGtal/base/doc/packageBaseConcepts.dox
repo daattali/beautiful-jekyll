@@ -1,0 +1,98 @@
+/**
+ * @file packageBaseConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/03/16
+ *
+ * Documentation file for feature packageBaseConcepts
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageBaseConcepts Base Concepts
+@writers David Coeurjolly
+@writers Jacques-Olivier Lachaud
+
+
+@dot
+digraph GBASE {
+  rankdir=BT;
+
+  subgraph cluster_ext {
+    style=filled;
+    color=white;
+    label = "std/boost concepts"
+    boost_OutputIterator [ label="OutputIterator" URL="\ref boost::OutputIterator" ];
+    boost_SinglePassIteratorConcept [ label="SinglePassIteratorConcept" URL="\ref boost_concepts::SinglePassIteratorConcept" ];
+    boost_Assignable [ label="Assignable" URL="\ref boost::Assignable" ];
+    boost_LessThanComparable [ label="LessThanComparable" URL="\ref boost::LessThanComparable" ];
+    boost_DefaultConstructible [ label="DefaultConstructible" URL="\ref boost::DefaultConstructible" ];
+    boost_EqualityComparable [ label="EqualityComparable" URL="\ref boost::EqualityComparable" ];
+  }
+
+  subgraph cluster_0 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CSinglePassRange [ label="CSinglePassRange" URL="\ref concepts::CSinglePassRange"];
+    CConstSinglePassRange [ label="CConstSinglePassRange" URL="\ref concepts::CConstSinglePassRange"];
+    CSinglePassRangeFromPoint [ label="CSinglePassRangeFromPoint" URL="\ref concepts::CSinglePassRangeFromPoint"];
+    CConstSinglePassRangeFromPoint [ label="CConstSinglePassRangeFromPoint" URL="\ref concepts::CConstSinglePassRangeFromPoint"];
+    CBidirectionalRange [ label="CBidirectionalRange" URL="\ref concepts::CBidirectionalRange"];
+    CConstBidirectionalRange [ label="CConstBidirectionalRange" URL="\ref concepts::CConstBidirectionalRange"];
+    CBidirectionalRangeFromPoint [ label="CBidirectionalRangeFromPoint" URL="\ref concepts::CBidirectionalRangeFromPoint"];
+    CConstBidirectionalRangeFromPoint [ label="CConstBidirectionalRangeFromPoint" URL="\ref concepts::CConstBidirectionalRangeFromPoint"];
+    CSinglePassRangeWithWritableIterator [ label="CSinglePassRangeWithWritableIterator" URL="\ref concepts::CSinglePassRangeWithWritableIterator"];
+    CSinglePassRangeWithWritableIteratorFromPoint [ label="CSinglePassRangeWithWritableIteratorFromPoint" URL="\ref concepts::CSinglePassRangeWithWritableIteratorFromPoint"];
+    CBidirectionalRangeWithWritableIterator [ label="CBidirectionalRangeWithWritableIterator" URL="\ref concepts::CBidirectionalRangeWithWritableIterator"];
+    CBidirectionalRangeWithWritableIteratorFromPoint [ label="CBidirectionalRangeWithWritableIteratorFromPoint" URL="\ref concepts::CBidirectionalRangeWithWritableIteratorFromPoint"];
+
+    CLabel [ label="CLabel" URL="\ref concepts::CLabel"];
+    CQuantity [ label="CQuantity" URL="\ref concepts::CQuantity"];
+    CPredicate [ label="CPredicate" URL="\ref concepts::CPredicate"];
+    CBackInsertable [ label="CBackInsertable" URL="\ref concepts::CBackInsertable"];
+    CUnaryFunctor [ label="CUnaryFunctor" URL="\ref concepts::CUnaryFunctor"];
+
+    CSinglePassRange -> CConstSinglePassRange ;
+    CSinglePassRangeFromPoint -> CConstSinglePassRangeFromPoint;
+    CSinglePassRangeFromPoint -> CSinglePassRange;
+    CConstSinglePassRangeFromPoint -> CConstSinglePassRange;
+
+    CBidirectionalRange -> CSinglePassRange;
+    CBidirectionalRange -> CConstBidirectionalRange;
+    CBidirectionalRangeFromPoint -> CConstBidirectionalRange;
+    CBidirectionalRangeFromPoint -> CConstBidirectionalRangeFromPoint;
+    CConstBidirectionalRangeFromPoint -> CConstBidirectionalRange;
+
+    CBidirectionalRangeWithWritableIterator -> CSinglePassRangeWithWritableIterator;
+    CBidirectionalRangeWithWritableIteratorFromPoint -> CBidirectionalRangeWithWritableIterator;
+
+    label = "Base";
+  }
+
+  CSinglePassRangeWithWritableIterator -> boost_OutputIterator [label="use", style=dashed];
+  CConstSinglePassRange -> boost_SinglePassIteratorConcept [label="use",style=dashed];
+  CSinglePassRange ->  boost_SinglePassIteratorConcept [label="use",style=dashed] ;
+  CPredicate -> boost_Assignable;
+  CQuantity -> boost_LessThanComparable;
+  CQuantity -> CLabel;
+  CPredicate -> CUnaryFunctor;
+  CLabel -> boost_DefaultConstructible;
+  CLabel -> boost_Assignable;
+  CLabel -> boost_EqualityComparable;
+  CUnaryFunctor -> boost_Assignable;
+  }
+ @enddot
+
+*/
+
+}

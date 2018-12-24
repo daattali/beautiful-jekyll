@@ -1,0 +1,170 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file OwningOrAliasingPtr.ih
+ * @author Tristan Roussillon (\c tristan.roussillon@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/11/14
+ *
+ * Implementation of inline methods defined in OwningOrAliasingPtr.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+template <typename T>
+inline
+DGtal::OwningOrAliasingPtr<T>::OwningOrAliasingPtr(const T& aValue)
+  :myPtr( new T(aValue) ), myFlagIsOwning( true ) 
+{
+}
+
+template <typename T>
+inline
+DGtal::OwningOrAliasingPtr<T>::OwningOrAliasingPtr(T* aPtr, bool aFlagIsOwning)
+  :myPtr( aPtr ), myFlagIsOwning( aFlagIsOwning ) 
+{
+}
+
+template <typename T>
+inline
+DGtal::OwningOrAliasingPtr<T>::OwningOrAliasingPtr(const DGtal::OwningOrAliasingPtr<T>& other)
+  : myFlagIsOwning( other.myFlagIsOwning ) 
+{
+  ASSERT( myFlagIsOwning == other.myFlagIsOwning ); 
+  if (myFlagIsOwning)
+    myPtr = new Value( *other.myPtr ); //copy of the data
+  else
+    myPtr = other.myPtr; //copy of the alias
+}
+
+template <typename T>
+inline
+DGtal::OwningOrAliasingPtr<T>&
+DGtal::OwningOrAliasingPtr<T>::operator=(const DGtal::OwningOrAliasingPtr<T>& other)
+{
+  if ( this != &other )
+    {
+      //free old data (if needed)
+      if (myFlagIsOwning)
+        delete(myPtr); 
+      //acquire new data
+      myFlagIsOwning = other.myFlagIsOwning;
+      if (myFlagIsOwning)
+        myPtr = new Value( *other.myPtr ); //copy of the data
+      else
+        myPtr = other.myPtr; //copy of the alias
+    }
+  return *this;
+}
+
+template <typename T>
+inline
+DGtal::OwningOrAliasingPtr<T>::~OwningOrAliasingPtr()
+{
+  //free if @a myPtr owns the data
+  if (myFlagIsOwning)
+    delete(myPtr); 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+template <typename T>
+inline
+typename DGtal::OwningOrAliasingPtr<T>::Pointer
+DGtal::OwningOrAliasingPtr<T>::get() const
+{
+  return myPtr;
+}
+
+template <typename T>
+inline
+typename DGtal::OwningOrAliasingPtr<T>::Pointer
+DGtal::OwningOrAliasingPtr<T>::operator->() const
+{
+  return myPtr;
+}
+
+template <typename T>
+inline
+typename DGtal::OwningOrAliasingPtr<T>::Reference
+DGtal::OwningOrAliasingPtr<T>::operator*() const
+{
+  ASSERT( myPtr != NULL ); 
+  return *myPtr;
+}
+
+template <typename T>
+inline
+bool
+DGtal::OwningOrAliasingPtr<T>::isOwning() const
+{
+  return myFlagIsOwning;
+}
+
+template <typename T>
+inline
+bool
+DGtal::OwningOrAliasingPtr<T>::isValid() const
+{
+  return true;
+}
+
+template <typename T>
+inline
+void
+DGtal::OwningOrAliasingPtr<T>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[OwningOrAliasingPtr]";
+  if (myPtr != NULL)
+    out << "  " << myPtr << " " << (*myPtr);
+  else 
+    out << "  " << myPtr << " " << "NULL";
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename T>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const OwningOrAliasingPtr<T> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

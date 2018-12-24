@@ -1,0 +1,437 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file modulePolynomial.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/04/05
+ *
+ * Documentation file for feature modulePolynomial
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page modulePolynomial Multivariate polynomials
+
+@writers Felix Fontein, Jacques-Olivier Lachaud
+
+@since 0.5
+
+@b LICENSE: LGPL
+
+Part of \ref packageMath.
+
+@b Module @b Overview
+
+This module provides classes to represent polynomials, like \f$
+x^3-3x-1 \f$, and multi-variate polynomials, like \f$ xy^2-yz \f$, \f$
+x^4-y^2z^2+z^4 \f$, etc.  The number of variables is fixed at
+compilation time. Essentially, a n-variate polynomial is defined as a
+standard polynomial whose coefficients are n-1-variate polynomials.
+
+The following examples are related to this module:
+- polynomial-derivative.cpp, polynomial2-derivative.cpp.
+- trackImplicitPolynomialSurfaceToOFF.cpp
+
+[TOC]
+
+\section dgtal_mpolynomial_sec1 Multivariate polynomial
+
+\subsection dgtal_mpolynomial_sec1_1 What is a multivariate polynomial ?
+
+A \e multivariate \e monomial is a product of powers of zero, one or
+several variables, like \f$ 1, x, x^2, xy, y^3, xy^2z, x^4y^4z^4
+\f$. Sometimes the coefficient in front of the monomial is also
+included in the definition of the monomial. A \e multivariate \e
+polynomial is a sum of products of a coefficient with a multivariate
+monomial. 
+
+A \e polynomial is a special case of multivariate polynomial where
+there is only one variable. The terms \e variable and \e
+indeterminate are synonymous. When you define a multivariate
+polynomial, you must precise its number of variables. The variables
+are numbered from 0 to \e n - 1, if \e n is the number of variables.
+
+\subsection dgtal_mpolynomial_sec1_2 The class MPolynomial
+
+The class MPolynomial is the base class for representing arbitrary
+multivariate polynomials, i.e. an element of \f$ K[X_0, ..., X_{-1}]
+\f$, where \e K is some ring. The class MPolynomial<n,K> is
+parameterized by \a n, the number of indeterminates, and by \a K,
+the type of the coefficients, which should be at least a ring. 
+
+If you wish to declare a monovariate polynomial P1(x) over the \c
+int ring and a 2-variate polynomial P2(x,y) over the \c double
+field, you write the following lines:
+
+@code
+#include "DGtal/math/MPolynomial.h"
+...
+MPolynomial<1,int> P1;
+MPolynomial<2,double> P2;
+@endcode
+
+In fact, the complete polynomial type is MPolynomial <n, K, A>, where A is
+an allocator for K, for example std::allocator<K>; this is also the
+default parameter. Usually this parameter does not need to be
+changed.
+
+This is implemented recursively: MPolynomial <n, K> is a polynomial in
+one indeterminate with coefficients in MPolynomial <n-1, K>. The last
+instance, MPolynomial <0, K>, is essentially equal to K.
+
+
+Generally, a multivariate polynomial is created by summing
+multivariate monomials and constants. The following snippet creates
+the 3-variate polynomial "durchblick", \f$ Pd(x,y,z) =
+x^3y+xz^3+y^3z+z^3+5z \f$.
+@code
+MPolynomial<3, double> Pd
+= mmonomial<double>( 3, 1, 0 )
++ mmonomial<double>( 1, 0, 3 )
++ mmonomial<double>( 0, 3, 1 )
++ mmonomial<double>( 0, 0, 3 )
++ 5 * mmonomial<double>( 0, 0, 1 );
+@endcode
+
+A constant multivariate polynomial is created simply with:
+@code
+MPolynomial<3, double> Pc = 1.0;
+@endcode
+
+Creation is thus accomplished using the functions mmonomial<K,
+A>(e_0, ..., e_{n-1}), where A again is std::allocator<K> by
+default. This creates a polynomial of type MPolynomial <n, K, A>
+which consists of exactly one monomial @f$ X_0^{e_0} * ... *
+X_{n-1}^{e_{n-1}}@f$ having coefficient 1.
+
+Otherwise, polynomials are created through operations, derivations,
+etc.
+
+\subsection dgtal_mpolynomial_sec1_3 Interface of the class MPolynomial
+
+Let us describe the interface:
+
+- MPolynomial::isZero: Every polynomial has a predicate isZero(),
+testing whether the polynomial is the zero polynomial. Note that
+it is not the same to be a zero polynomial in \e n variables or to
+be a zero polynomial in \e n' variables, \e n != \e n'.
+- Moreover, it has basic arithmetic, i.e. addition, subtraction,
+multiplication; this is realized via operator
+overloading. Assignment and comparison operators are also
+provided.
+- MPolynomial::degree, MPolynomial::leading: Polynomials have a
+degree function \c degree(), returning the degree as a polynomial
+in the first indeterminate, as well as a method \c leading(),
+returning the leading term (which is of type \c const
+MPolynomial<n-1, K> &). Note that the degree of the zero
+polynomial is -1. For instance, \f$ 1 + xy^2 + x^4yz \f$ is a degree 4
+polynomial in \e x. Its leading term is \f$ x^4yz \f$.
+
+@code
+MPolynomial<3, double> Q = mmonomial<double>( 0, 0, 0 )
++ mmonomial<double>( 1, 2, 0 ) + mmonomial<double>( 4, 1, 1 );
+std::cout << "Q(x,y,z)=1+xy^2+x^4yz = " << Q << std::endl;
+std::cout << " degree = " << Q.degree() << std::endl;
+std::cout << " leading= " << Q.leading() << std::endl;
+@endcode
+
+@verbatim
+Q(x,y,z)=1+xy^2+x^4yz = (1 + 1 X_1^2 X_0 + 1 X_2 X_1 X_0^4)
+ degree = 4
+ leading= 1 X_1 X_0
+@endverbatim
+ 
+- MPolynomial::operator[]: The i-th coefficient can be obtained by
+writing f[i] if f is of type MPolynomial <n, K>; then f[i] is of
+type MPolynomial <n - 1, K>. In case i is larger than the degree of
+f, a zero polynomial will be returned, and in case f is not
+constant, the internal space for the coefficients will be enlarged
+to have space for the i-th coefficient. Note that one should call
+f.normalize() afterwards if one accessed f[i] for non-const f to
+ensure that degree and leading coefficients will be computed
+correctly afterwards.
+ 
+    @code
+  std::cout << "         Q[0]         = " << Q[ 0 ] << std::endl;
+  std::cout << "         Q[1]         = " << Q[ 1 ] << std::endl;
+  std::cout << "         Q[2]         = " << Q[ 2 ] << std::endl;
+  std::cout << "         Q[3]         = " << Q[ 3 ] << std::endl;
+  std::cout << "         Q[4]         = " << Q[ 4 ] << std::endl;
+    @endcode
+
+  You may notice that Q[i] are n-1-variate polynomials, i.e., x,y
+stands for the former y,z variables.
+
+  @verbatim
+         Q[0]         = 1
+         Q[1]         = 1 X_0^2
+         Q[2]         = 0
+         Q[3]         = 0
+         Q[4]         = 1 X_1 X_0
+  @endverbatim
+
+- MPolynomial::operator(): The polynomial can be evaluated using
+operator(). If f is of type MPolynomial <n, K, A>, then f(x) with x
+of type S will return an object of type MPolynomialEvaluator <n, K, A,
+S>. This object can be casted to MPolynomial <n-1, S> to obtain f
+with the first indeterminate evaluated as x. Note that S must be a
+type to which elements of K can be casted. One can also continue
+evaluating with the MPolynomialEvaluator <n, K, A, S> object, yielding
+MPolynomialEvaluatorImpl <k, K, ..., A, S> objects, k < n. These object
+hierarchy ensures that polynomial evaluation is efficient,
+i.e. after (good enough) optimization of the compiler, is
+essentially a block of code of (n-k+1) nested for-loops.
+
+@verbatim
+double v = Q(1)(2)(3); // evaluation at (x,y,z)=(1,2,3)
+@endverbatim
+
+- Polynomials can be written to std::ostream's using
+operator<<. There is also a member function
+MPolynomial::selfDisplay(std::ostream &) const. Note that the
+first indeterminate in MPolynomial<n, K> is denoted by X_0, and
+the last by X_{n-1}.
+
+- Finally, there is a method swap() to swap two polynomial's
+contents. The polynomials have to be of the same type.This is
+for instance useful in some algorithms of the STL.
+
+\subsection dgtal_mpolynomial_sec1_4 How monomials and coefficients are stored ?
+
+The coefficients are stored in a std::vector<K>; while
+MPolynomial<1, K> uses std::vector<K>, MPolynomial<n, K> for n > 1
+uses std::vector <MPolynomial<n-1, K> *>, i.e. pointers to
+coefficients are stored. This is implemented using the "intelligent"
+vector IVector<K> template.
+
+\subsection dgtal_mpolynomial_sec1_5 Computing partial derivatives
+
+The library also offers to compute partial derivatives. Given a
+polynomial f of type MPolynomial<n, K>, one can compute the partial
+derivative with respect to the j-th variable of f by writing
+derivative<j>(f). Note that K is required to allow multiplication by
+int's for this to work.
+
+@code
+std::cout << "Q(x,y,z)=1+xy^2+x^4yz = " << Q << std::endl;
+std::cout << " dQ/dx        = " << derivative<0>(Q) << std::endl;
+  std::cout << "         dQ/dy        = " << derivative<1>(Q) << std::endl;
+  std::cout << "         dQ/dz        = " << derivative<2>(Q) << std::endl;
+  @endcode
+
+  @verbatim
+Q(x,y,z)=1+xy^2+x^4yz = (1 + 1 X_1^2 X_0 + 1 X_2 X_1 X_0^4)
+         dQ/dx        = (1 X_1^2 + 4 X_2 X_1 X_0^3) // y^2+4zyx^3
+         dQ/dy        = (2 X_1 X_0 + 1 X_2 X_0^4)   // 2yx+zx^4
+         dQ/dz        = 1 X_1 X_0^4                 // yx^4
+@endverbatim
+
+You may have a look at example polynomial-derivative.cpp to see how to
+get derivatives of simple polynomials:
+
+@snippet math/polynomial-derivative.cpp polynomial-derivative-basicIncludes
+@snippet math/polynomial-derivative.cpp polynomial-derivative-types
+@snippet math/polynomial-derivative.cpp polynomial-derivative-process
+
+Along the same lines, the example polynomial2-derivative.cpp computes
+first- and second-order partial derivatives of a 2-variate polynomial.
+
+@snippet math/polynomial2-derivative.cpp polynomial2-derivative-basicIncludes
+@snippet math/polynomial2-derivative.cpp polynomial2-derivative-types
+@snippet math/polynomial2-derivative.cpp polynomial2-derivative-process
+
+
+\subsection dgtal_mpolynomial_sec1_6 Computing euclidean division and greatest commond divisor (gcd)
+
+Finally, there exist functions euclidDiv() (parameters f, g, q, r), requiring
+parameters f, g of type const MPolynomial <1, K> & and q, r of type
+MPolynomial <1, K> &. This function computes q, r of f, g such that
+degree(r) < degree(g) and f = q*g + r, i.e. it does long division of
+f by g, storing the quotient in q and the remainder in r. Note that
+euclidDiv() only works if K is a field, or if everything appearing
+is divisible by g.leading().
+
+There is another function, gcd() (parameters f, g), accepting f, g of type const
+MPolynomial <1, K> & and returning a MPolynomial <1, K> object. It
+computes the monic greatest common divisor of f and g using the
+euclidean algorithm. In every step, the remainder is made
+monic. This function is ignoring potential round-off errors, and
+this function needs that K is (kind of) a field. Use with care.
+
+\section dgtal_mpolynomial_sec2 Efficiency considerations.
+
+\subsection dgtal_mpolynomial_sec2_1 Best suited polynomials 
+
+The class is tuned so as to be efficient for rather dense
+polynomials. More precisely, this class is not space nor time
+efficient for a polynomial like \f$ 1+x+x^{100000} \f$. This class is
+rather efficient for low-degree polynomials, even if there are many
+monomials. In fact, it factors the computation of the first
+variables.
+
+For instance, \f$ x^2y^2+x^2z^2+x^4y^2z+x^4y^2z^3 \f$ is represented
+as \f$ x^2(1(z^2)+y^2(1))+x^4(y^2(z+z^3)) \f$. As one can see, \f$
+x^2 \f$ is computed once, which is nice, but \f$ y^2 \f$ is computed
+twice. When you design a polynomial, you should choose the variable
+order well so as to choose the one that factors at best
+computations.
+
+\subsection dgtal_mpolynomial_sec2_2 Repetitive evaluations in space
+
+Consider the following simple code, which integrates some
+information in cubic part of the space:
+
+  @code
+  MPolynomial<3, double> P = mmonomial<double>( 3, 1, 0 )
+    + mmonomial<double>( 1, 0, 3 )
+    + mmonomial<double>( 0, 3, 1 )
+    + mmonomial<double>( 0, 0, 3 )
+    + 5 * mmonomial<double>( 0, 0, 1 );
+  double total = 0.0;
+  for ( double x = -1.0; x < 1.0; x += step )
+    {
+      for ( double y = -1.0; y < 1.0; y += step )
+        {
+          for ( double z = -1.0; z < 1.0; z += step )
+            total += P(x)(y)(z);
+        }
+    }
+  @endcode
+
+  This function takes 206ms for a step 0.01, for 8000000 evaluations.
+
+In fact, you can factor evaluations of the first variables at the
+beginning of the inner loops.
+@code
+MPolynomial<3, double> P = //...
+  double total1 = 0.0;
+  for ( double x = -1.0; x < 1.0; x += step )
+    {
+      MPolynomial<2, double> PX = P( x );
+      for ( double y = -1.0; y < 1.0; y += step )
+        {
+          MPolynomial<1, double> PXY = PX( y );
+          for ( double z = -1.0; z < 1.0; z += step )
+            total1 += PXY( z );
+        }
+    }
+  @endcode
+
+  This function takes 69ms for a step 0.01, for 8000000 evaluations.
+The C version where the function is explicitely compiled takes 22ms.
+
+\section dgtal_mpolynomial_sec3 Input and output for multivariate polynomials
+
+You may simply output a polynomial an output stream with the usual
+operator<<.
+
+@code
+MPolynomial<3,int> Q = mmonomial<int>(0,0,0) + mmonomial<int>(1,2,0) + mmonomial<int>(4,1,1);
+std::cout << "Q(x,y,z)=1+xy^2+x^4yz = " << Q << std::endl;
+@endcode
+
+You may also input a polynomial from an input stream with the usual
+operator>>. However, it is required to include file
+"MPolynomialReader.h".
+
+@code
+#include <string>
+#include <sstream>
+#include "DGtal/io/readers/MPolynomialReader.h"
+...
+string s = "1+xy^2+x^4yz".
+std::istringstream sin( s );
+MPolynomial<3,int> P;
+sin >> P;
+trace.info() << "- Read " << P << std::endl;
+@endcode
+
+You may read successively several polynomials from the input stream:
+you just have to separate them with newlines. The input stream is read
+as long as the input is valid for the multivariate polynomial grammar.
+
+If you wish to handle better error recovery when creating a
+polynomial, you can use the method MPolynomialReader::read
+directly. You may look at example polynomial-read.cpp for a more
+concrete example.
+
+In input, you may write the variables either simply \c x, \c y, \c z,
+\c t for the first four variables, or more generically \c X_0, \c X_1,
+..., \c X_m, where \c m is an integer number that is smaller than
+the number of variables of the polynomial.
+
+For instance, you may test polynomial-derivative.cpp and
+polynomial2-derivative.cpp as follows:
+
+@verbatim
+$ ./examples/math/polynomial-derivative "1+x+x^2-3*x^4"
+P(X_0)   = (1 + 1 X_0 + 1 X_0^2 + -3 X_0^4)
+P'(X_0)  = (1 + 2 X_0 + -12 X_0^3)
+P''(X_0) = (2 + -36 X_0^2)
+$ ./examples/math/polynomial-derivative "(2 + -36 X_0^2)"
+P(X_0)   = (2 + -36 X_0^2)
+P'(X_0)  = -72 X_0
+P''(X_0) = -72
+@endverbatim
+
+@verbatim
+$ ./examples/math/polynomial2-derivative "(x-3)^2 + (y-2)^2 - 4"
+P(X_0,X_1)        = ((9 + -4 X_1 + 1 X_1^2) + -6 X_0 + 1 X_0^2)
+dP/dX_0(X_0,X_1)  = (-6 + 2 X_0)
+dP/dX_1(X_0,X_1)  = (-4 + 2 X_1)
+d/dX_1 dP/dX_0(X_0,X_1) = 0
+d/dX_0 dP/dX_1(X_0,X_1) = 0
+d/dX_0 dP/dX_0(X_0,X_1) = 2
+d/dX_1 dP/dX_1(X_0,X_1) = 2
+@endverbatim
+
+\section dgtal_mpolynomial_sec4 Displaying implicit 3-variate polynomials
+
+If you wish to display surfaces defined as 0-locii of polynomials \f$
+P(x,y,z) \f$, then you may have a look at example
+trackImplicitPolynomialSurfaceToOFF.cpp. The following program
+extract a linear approximation of the given polynomial as a
+triangulated surface in OFF format.
+
+@verbatim
+$ ./examples/topology/trackImplicitPolynomialSurfaceToOFF "(x^2+y^2+2*z^2-1)*(z^2x-0.1)" -2 -2 -2 2 2 2 0.02
+# Digital surface has 112826 surfels.
+# output in marching-cube.off (in 1809ms)
+# You may display it with your favorite OFF displayer (like geomview, etc).
+$ ctmviewer marching-cube.off
+@endverbatim
+
+@image html nice-mpolynomial.png "Implicit polynomial surface (x^2+y^2+2*z^2-1)*(z^2x-0.1) between [-2,-2,-2] and [2,2,2], step 0.02."
+@image latex nice-mpolynomial.png width=0.5\textwidth "Implicit polynomial surface (x^2+y^2+2*z^2-1)*(z^2x-0.1) between [-2,-2,-2] and [2,2,2], step 0.02."
+
+
+@see polynomial-read.cpp, polynomial-derivative.cpp, polynomial2-derivative.cpp.
+@see trackImplicitPolynomialSurfaceToOFF.cpp.
+@see testMPolynomial.cpp, testMPolynomialReader.cpp.
+
+*/
+
+
+}

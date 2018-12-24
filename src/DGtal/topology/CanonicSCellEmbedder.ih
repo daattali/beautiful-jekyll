@@ -1,0 +1,140 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file CanonicSCellEmbedder.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/02/28
+ *
+ * Implementation of inline methods defined in CanonicSCellEmbedder.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <cmath>
+#include "DGtal/kernel/NumberTraits.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+DGtal::CanonicSCellEmbedder<TKSpace>::
+~CanonicSCellEmbedder()
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+DGtal::CanonicSCellEmbedder<TKSpace>::
+CanonicSCellEmbedder()
+  : myKSpace( 0 )
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+DGtal::CanonicSCellEmbedder<TKSpace>::
+CanonicSCellEmbedder( ConstAlias<KSpace> aKSpace )
+  : myKSpace( &aKSpace )
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+DGtal::CanonicSCellEmbedder<TKSpace>::
+CanonicSCellEmbedder( const Self & other )
+  : myKSpace( other.myKSpace )
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+typename DGtal::CanonicSCellEmbedder<TKSpace>::Self &
+DGtal::CanonicSCellEmbedder<TKSpace>::
+operator=( const Self & other )
+{
+  myKSpace = other.myKSpace;
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+const typename DGtal::CanonicSCellEmbedder<TKSpace>::KSpace &
+DGtal::CanonicSCellEmbedder<TKSpace>::space() const
+{
+  ASSERT( this->isValid() );
+  return *myKSpace;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+typename DGtal::CanonicSCellEmbedder<TKSpace>::RealPoint
+DGtal::CanonicSCellEmbedder<TKSpace>::embed( const SCell & scell ) const
+{
+  return this->operator()( scell );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+typename DGtal::CanonicSCellEmbedder<TKSpace>::RealPoint
+DGtal::CanonicSCellEmbedder<TKSpace>::operator()( const SCell & scell ) const
+{
+  ASSERT( this->isValid() );
+  Point dp = myKSpace->sKCoords( scell );
+  RealPoint p;
+  for ( Dimension i = 0; i < dp.size(); ++i )
+    p[ i ] = ( NumberTraits<Integer>::castToDouble( dp[ i ] ) / 2.0 ) - 0.5; /// In Khalimsky Space, 0-SCells have even coordinates, while in the embedding, voxel centers have integer coordinates, we need to shift all coordinates by -1/2.
+  return p;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace>
+inline
+bool
+DGtal::CanonicSCellEmbedder<TKSpace>::isValid( ) const
+{
+  return myKSpace != 0;
+}
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'CanonicSCellEmbedder'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'CanonicSCellEmbedder' to write.
+ * @return the output stream after the writing.
+ */
+/*template <typename TKSpace>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const CanonicSCellEmbedder<TKSpace> & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}*/
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

@@ -1,0 +1,439 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file COBAGenericNaivePlaneComputer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/09/20
+ *
+ * Implementation of inline methods defined in COBAGenericNaivePlaneComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+~COBAGenericNaivePlaneComputer()
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+COBAGenericNaivePlaneComputer()
+{ // Object is invalid
+  _axesToErase.reserve( 3 );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+COBAGenericNaivePlaneComputer( const COBAGenericNaivePlaneComputer & other )
+  : myAxes( other.myAxes )
+{
+  for ( AxisConstIterator it = myAxes.begin(), itE = myAxes.end();
+        it != itE; ++it )
+    myComputers[ *it ] = other.myComputers[ *it ];
+  _axesToErase.reserve( 3 );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger> &
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+operator=( const COBAGenericNaivePlaneComputer & other )
+{
+  if ( this != &other )
+    {
+      myAxes = other.myAxes;
+      for ( AxisConstIterator it = myAxes.begin(), itE = myAxes.end();
+            it != itE; ++it )
+        myComputers[ *it ] = other.myComputers[ *it ];
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+DGtal::Dimension
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+active() const
+{
+  ASSERT( myAxes.size() > 0 );
+  return myAxes[ 0 ];
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::MyIntegerComputer &
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+ic() const
+{
+  return myComputers[ active() ].ic();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+clear()
+{
+  myAxes.clear();
+  for ( unsigned int i = 0; i < 3; ++i )
+    {
+      myAxes.push_back( i );
+      myComputers[ i ].clear();
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+init( InternalInteger diameter,
+      InternalInteger widthNumerator,
+      InternalInteger widthDenominator )
+{
+  clear();
+  for ( unsigned int i = 0; i < 3; ++i )
+    myComputers[ i ].init( i, diameter, widthNumerator, widthDenominator );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::ConstIterator
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+begin() const
+{
+  return myComputers[ active() ].begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::ConstIterator
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+end() const
+{
+  return myComputers[ active() ].end();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+size() const
+{
+  return myComputers[ active() ].size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+empty() const
+{
+  return myComputers[ active() ].empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+max_size() const
+{
+  return myComputers[ active() ].max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+maxSize() const
+{
+  return max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Size
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+complexity() const
+{
+  return myComputers[ active() ].complexity();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+operator()( const Point & p ) const
+{
+  return myComputers[ active() ].operator()( p );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+extendAsIs( const Point & p )
+{
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  for ( AxisConstIterator it = myAxes.begin(), itE = myAxes.end();
+        it != itE; ++it )
+    {
+      nbok += myComputers[ *it ].operator()( p ) ? 1 : 0;
+    }
+  if ( nbok != 0 ) // at least one is ok.
+    {
+      for ( AxisIterator it = myAxes.begin(); it != myAxes.end(); )
+        // cannot put end() in variable, since end() moves when
+        // modifiying a vector.
+        {
+          bool ok = myComputers[ *it ].extendAsIs( p );
+          if ( ! ok )
+            it = myAxes.erase( it );
+          else
+            ++it;
+        }
+      ASSERT( ! myAxes.empty() );
+      return true;
+    }
+  return false;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+extend( const Point & p )
+{
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  _axesToErase.clear();
+  for ( AxisConstIterator axIt = myAxes.begin(), axItE = myAxes.end();
+        axIt != axItE; ++axIt )
+    {
+      bool ok = myComputers[ *axIt ].extend( p );
+      if ( ! ok ) _axesToErase.push_back( *axIt );
+      else ++nbok;
+    }
+  if ( nbok != 0 ) // at least one is ok.
+    { // if one is ok, we must remove ko ones from the list of active
+      // axes.
+      AxisIterator axIt = myAxes.begin();
+      for ( unsigned int i = 0; i < _axesToErase.size(); ++i )
+        {
+          while ( *axIt != _axesToErase[ i ] ) ++axIt;
+          axIt = myAxes.erase( axIt );
+        }
+      return true;
+    }
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+isExtendable( const Point & p ) const
+{
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  for ( AxisConstIterator it = myAxes.begin(), itE = myAxes.end();
+        it != itE; ++it )
+    {
+      nbok += myComputers[ *it ].isExtendable( p ) ? 1 : 0;
+    }
+  return nbok != 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+extend( TInputIterator it, TInputIterator itE )
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  _axesToErase.clear();
+  for ( AxisConstIterator axIt = myAxes.begin(), axItE = myAxes.end();
+        axIt != axItE; ++axIt )
+    {
+      bool ok = myComputers[ *axIt ].extend( it, itE );
+      if ( ! ok ) _axesToErase.push_back( *axIt );
+      else ++nbok;
+    }
+  if ( nbok != 0 ) // at least one is ok.
+    { // if one is ok, we must remove ko ones from the list of active
+      // axes.
+      AxisIterator axIt = myAxes.begin();
+      for ( unsigned int i = 0; i < _axesToErase.size(); ++i )
+        {
+          while ( *axIt != _axesToErase[ i ] ) ++axIt;
+          axIt = myAxes.erase( axIt );
+        }
+      return true;
+    }
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename TInputIterator>
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+isExtendable( TInputIterator it, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+
+  ASSERT( isValid() );
+  unsigned int nbok = 0;
+  for ( AxisConstIterator axIt = myAxes.begin(), axItE = myAxes.end();
+        axIt != axItE; ++axIt )
+    {
+      nbok += myComputers[ *axIt ].isExtendable( it, itE ) ? 1 : 0;
+    }
+  return nbok != 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Primitive
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+primitive() const
+{
+  return myComputers[ active() ].primitive();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename Vector3D>
+inline
+void
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+getNormal( Vector3D & normal ) const
+{
+  myComputers[ active() ].getNormal( normal );
+}
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+template <typename Vector3D>
+inline
+void
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+getUnitNormal( Vector3D & normal ) const
+{
+  myComputers[ active() ].getUnitNormal( normal );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+getBounds( double & min, double & max ) const
+{
+  myComputers[ active() ].getBounds( min, max );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+const typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Point &
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+minimalPoint() const
+{
+  return myComputers[ active() ].minimalPoint();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInternalInteger>
+inline
+const typename DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::Point &
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::
+maximalPoint() const
+{
+  return myComputers[ active() ].maximalPoint();
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TInternalInteger>
+inline
+void
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[COBAGenericNaivePlane";
+  for ( AxisConstIterator axIt = myAxes.begin(), axItE = myAxes.end();
+        axIt != axItE; ++axIt )
+    out << " " << myComputers[ *axIt ];
+  out << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, typename TInternalInteger>
+inline
+bool
+DGtal::COBAGenericNaivePlaneComputer<TSpace, TInternalInteger>::isValid() const
+{
+  return myComputers[ active() ].isValid();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Internals
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, typename TInternalInteger>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+		  const COBAGenericNaivePlaneComputer<TSpace, TInternalInteger> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

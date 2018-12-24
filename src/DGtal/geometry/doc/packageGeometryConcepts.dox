@@ -1,0 +1,165 @@
+/**
+ * @file packageGeometryConcepts.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/03/16
+ *
+ * Documentation file for feature packageGeometryConcepts
+ *
+ * This file is part of the DGtal library.
+ */
+
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageGeometryConcepts Geometry Concepts
+@writers David Coeurjolly, Jacques-Olivier Lachaud
+
+@dot
+digraph GGeom   {
+  rankdir=BT;
+
+  subgraph cluster_ext {
+      rank = same;
+      style=invis;
+
+      subgraph cluster_boost {
+                 style=filled;
+                 color=white;
+                 node [style=filled,color=orange];
+                 label="boost";
+
+                 boost_CopyConstructible;
+                 boost_DefaultConstructible;
+                 boost_Assignable;
+                 boost_EqualityComparable;
+      }
+
+  }
+  subgraph cluster_concepts_1 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CSegment [ URL="\ref concepts::CSegment" ];
+    CBidirectionalSegmentComputer  [ URL="\ref concepts::CBidirectionalSegmentComputer" ];
+    CIncrementalSegmentComputer [ URL="\ref concepts::CIncrementalSegmentComputer" ];
+    CForwardSegmentComputer [ URL="\ref concepts::CForwardSegmentComputer" ];
+    CSegmentFactory [ URL="\ref concepts::CSegmentFactory" ];
+    CDynamicBidirectionalSegmentComputer [ URL="\ref concepts::CDynamicBidirectionalSegmentComputer" ];
+    CDynamicSegmentComputer [ URL="\ref concepts::CDynamicSegmentComputer" ];
+
+    CBidirectionalSegmentComputer -> CForwardSegmentComputer -> CIncrementalSegmentComputer -> CSegmentFactory -> CSegment;
+    CDynamicSegmentComputer-> CForwardSegmentComputer ;
+    CDynamicBidirectionalSegmentComputer->          CDynamicSegmentComputer  ;
+
+    CDynamicBidirectionalSegmentComputer->          CBidirectionalSegmentComputer;
+
+    label="geometry/curves (main concepts)";
+  }
+
+subgraph cluster_concepts_2 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+  CMetricSpace [label="CMetricSpace" URL="@ref concepts::CMetricSpace"];
+    CDigitalMetricSpace [label="CDigitalMetricSpace" URL="@ref concepts::CDigitalMetricSpace"];
+    CSeparableMetric [label="CSeparableMetric" URL="@ref concepts::CSeparableMetric"];
+    CDigitalSeparableMetric [label="CDigitalSeparableMetric"];
+    CPowerMetric [label="CPowerMetric" URL="@ref concepts::CPowerMetric"];
+    CPowerSeparableMetric [label="CPowerSeparableMetric" URL="@ref concepts::CPowerSeparableMetric"];
+
+    CSeparableMetric -> CMetricSpace;
+    CSeparableMetric -> CMetricSpace;
+    CDigitalSeparableMetric -> CDigitalMetricSpace;
+    CDigitalSeparableMetric -> CSeparableMetric;
+    CPowerSeparableMetric -> CPowerMetric;
+
+    label="geometry/volumes (main concepts)";
+  }
+
+  subgraph cluster_concepts_3 {
+    style=filled;
+    color=lightgrey;
+    node [style=filled,color=white];
+
+    CPrimitiveComputer [ URL="\ref concepts::CPrimitiveComputer" ];
+    CIncrementalPrimitiveComputer [ URL="\ref concepts::CIncrementalPrimitiveComputer" ];
+    CAdditivePrimitiveComputer [ URL="\ref concepts::CAdditivePrimitiveComputer" ];
+    CDigitalSurfaceLocalEstimator [ URL="\ref concepts::CDigitalSurfaceLocalEstimator" ];
+
+    CAdditivePrimitiveComputer -> CIncrementalPrimitiveComputer -> CPrimitiveComputer;
+    label="geometry/surfaces (main concepts)";
+  }
+
+
+  CMetric -> boost_CopyConstructible;
+  CMetric -> boost_Assignable;
+  CPowerMetric -> boost_CopyConstructible;
+  CPowerMetric -> boost_Assignable;
+
+  CSegment -> boost_CopyConstructible ;
+  CSegment -> boost_DefaultConstructible;
+  CSegment -> boost_Assignable;
+  CSegment -> boost_EqualityComparable;
+
+  CPrimitiveComputer -> boost_DefaultConstructible;
+  CPrimitiveComputer -> boost_CopyConstructible;
+  CPrimitiveComputer -> boost_Assignable;
+
+  subgraph cluster_models {
+     style=filled;
+     color="#ccffcc";
+     node [style=filled,color=white];
+     label="geometry/surfaces (main models)";
+
+     COBANaivePlaneComputer [ URL="\ref COBANaivePlaneComputer" ];
+     COBAGenericNaivePlaneComputer [ URL="\ref COBAGenericNaivePlaneComputer" ];
+     COBAGenericStandardPlaneComputer [ URL="\ref COBAGenericStandardPlaneComputer" ];
+     ChordNaivePlaneComputer [ URL="\ref ChordNaivePlaneComputer" ];
+     ChordGenericNaivePlaneComputer [ URL="\ref ChordGenericNaivePlaneComputer" ];
+     ChordGenericStandardPlaneComputer [ URL="\ref ChordGenericStandardPlaneComputer" ];
+     TrueDigitalSurfaceLocalEstimator [ URL="\ref TrueDigitalSurfaceLocalEstimator" ];
+     VCMDigitalSurfaceLocalEstimator [ URL="\ref VCMDigitalSurfaceLocalEstimator" ];
+  }
+
+  subgraph cluster_models_vol {
+     style=filled;
+     color="#ccffcc";
+     node [style=filled,color=white];
+     label="geometry/volumes (main models)";
+
+     ExactPredicateLpSeparableMetric [ URL="\ref ExactPredicateLpSeparableMetric" ];
+     ExactPredicateLpPowerSeparableMetric [ URL="\ref ExactPredicateLpPowerSeparableMetric" ];
+     InexactPredicateLpSeparableMetric [ URL="\ref InexactPredicateLpSeparableMetric" ];
+  }
+
+
+  ExactPredicateLpPowerSeparableMetric -> CPowerSeparableMetric;
+  ExactPredicateLpSeparableMetric -> CSeparableMetric;
+  InexactPredicateLpSeparableMetric -> CSeparableMetric;
+
+  COBAGenericNaivePlaneComputer -> CAdditivePrimitiveComputer;
+  COBAGenericNaivePlaneComputer -> COBANaivePlaneComputer [label="use",style=dashed];
+  COBANaivePlaneComputer -> CAdditivePrimitiveComputer;
+  COBAGenericStandardPlaneComputer -> CAdditivePrimitiveComputer;
+  COBAGenericStandardPlaneComputer -> COBANaivePlaneComputer [label="use",style=dashed];
+  ChordGenericNaivePlaneComputer -> CAdditivePrimitiveComputer;
+  ChordGenericNaivePlaneComputer -> ChordNaivePlaneComputer [label="use",style=dashed];
+  ChordNaivePlaneComputer -> CAdditivePrimitiveComputer;
+  ChordGenericStandardPlaneComputer -> CAdditivePrimitiveComputer;
+  ChordGenericStandardPlaneComputer -> ChordNaivePlaneComputer [label="use",style=dashed];
+
+  TrueDigitalSurfaceLocalEstimator -> CDigitalSurfaceLocalEstimator
+  VCMDigitalSurfaceLocalEstimator -> CDigitalSurfaceLocalEstimator
+  CDigitalSurfaceLocalEstimator -> boost_DefaultConstructible;
+  CDigitalSurfaceLocalEstimator -> boost_CopyConstructible;
+  CDigitalSurfaceLocalEstimator -> boost_Assignable;
+ }
+@enddot
+
+
+*/
+}

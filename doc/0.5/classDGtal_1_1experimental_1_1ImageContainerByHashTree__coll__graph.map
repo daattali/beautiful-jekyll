@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Node.html" title="DGtal::experimental::ImageContainerByHashTree\&lt; TDomain, TValue, THashKey \&gt;::Node" alt="" coords="404,47,940,78"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1Morton.html" title="DGtal::Morton\&lt; HashKey, Point \&gt;" alt="" coords="564,219,780,250"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1Morton.html" title="Aim: Implements the binary Morton code construction in nD." alt="" coords="5,219,237,250"/>
-</map>

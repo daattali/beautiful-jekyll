@@ -1,0 +1,553 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSetBySTLVector.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5807), University of Savoie, France
+ *
+ * @date 2010/07/01
+ *
+ * Implementation of inline methods defined in DigitalSetBySTLVector.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <algorithm>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+/**
+ * Destructor.
+ */
+template <typename Domain>
+inline
+DGtal::DigitalSetBySTLVector<Domain>::~DigitalSetBySTLVector()
+{
+}
+
+/**
+ * Constructor.
+ * Creates the empty set in the domain [d].
+ *
+ * @param d any domain.
+ */
+template <typename Domain>
+inline
+DGtal::DigitalSetBySTLVector<Domain>::DigitalSetBySTLVector
+( Clone<Domain> d )
+  : myDomain( d ), myVector()
+{
+}
+
+/**
+ * Copy constructor.
+ * @param other the object to clone.
+ */
+template <typename Domain>
+inline
+DGtal::DigitalSetBySTLVector<Domain>::DigitalSetBySTLVector
+( const DigitalSetBySTLVector & other )
+  : myDomain( other.myDomain ), myVector( other.myVector )
+{
+}
+
+/**
+ * Assignment.
+ * @param other the object to copy.
+ * @return a reference on 'this'.
+ */
+template <typename Domain>
+inline
+DGtal::DigitalSetBySTLVector<Domain> &
+DGtal::DigitalSetBySTLVector<Domain>::operator=
+( const DigitalSetBySTLVector & other )
+{
+  ASSERT( ( domain().lowerBound() <= other.domain().lowerBound() )
+    && ( domain().upperBound() >= other.domain().upperBound() )
+    && "This domain should include the domain of the other set in case of assignment." );
+  myVector = other.myVector;
+  return *this;
+}
+
+
+/**
+ * @return the embedding domain.
+ */
+template <typename Domain>
+inline
+const Domain & 
+DGtal::DigitalSetBySTLVector<Domain>::domain() const
+{
+  return *myDomain;
+}
+
+template <typename Domain>
+inline
+DGtal::CowPtr<Domain> 
+DGtal::DigitalSetBySTLVector<Domain>::domainPointer() const
+{
+  return myDomain;
+}
+
+
+
+// ----------------------- Standard Set services --------------------------
+
+/**
+ * @return the number of elements in the set.
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::Size
+DGtal::DigitalSetBySTLVector<Domain>::size() const
+{
+  return (unsigned int)myVector.size();
+}
+
+/**
+ * @return 'true' iff the set is empty (no element).
+ */
+template <typename Domain>
+inline
+bool
+DGtal::DigitalSetBySTLVector<Domain>::empty() const
+{
+  return myVector.empty();
+}
+     
+/**
+ * Adds point [p] to this set.
+ *
+ * @param p any digital point.
+ * @pre p should belong to the associated domain.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::insert( const Point & p )
+{
+  // ASSERT( domain().isInside( p ) );
+  Iterator it = find( p );
+  if ( it == end() ) 
+    myVector.push_back( p );
+}
+
+/**
+ * Adds the collection of points specified by the two iterators to
+ * this set.
+ *
+ * @param first the start point in the collection of Point.
+ * @param last the last point in the collection of Point.
+ * @pre all points should belong to the associated domain.
+ */
+template <typename Domain>
+template <typename PointInputIterator>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::insert
+( PointInputIterator first, PointInputIterator last )
+{
+  for ( ; first != last; ++first )
+    insert( *first );
+}
+
+/**
+ * Adds point [p] to this set if the point is not already in the
+ * set. There is no defined behavior if the point is already in
+ * the set (for instance, may be present twice).
+ *
+ * @param p any digital point.
+ *
+ * @pre p should belong to the associated domain.
+ * @pre p should not belong to this.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::insertNew( const Point & p )
+{
+  // ASSERT( domain().isInside( p ) );
+  ASSERT( find( p ) == end() );
+  myVector.push_back( p );
+}
+
+/**
+ * Adds the collection of points specified by the two iterators to
+ * this set. The collection should contain distinct points. Each
+ * of these points should also not belong already to the set.
+ * set. There is no defined behavior if the preceding requisites
+ * are not satisfied (for instance, points may be present several
+ * times in the set).
+ *
+ * @param first the start point in the collection of Point.
+ * @param last the last point in the collection of Point.
+ *
+ * @pre all points should belong to the associated domain.
+ * @pre each point should not belong to this.
+ */
+template <typename Domain>
+template <typename PointInputIterator>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::insertNew
+( PointInputIterator first, PointInputIterator last )
+{
+  while ( first != last )
+    myVector.push_back( *first++ );
+  // std::copy( first, last, myVector.end() );
+}
+
+
+/**
+ * Removes point [p] from the set.
+ * 
+ * @param p the point to remove.
+ * @return the number of removed elements (0 or 1).
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::Size
+DGtal::DigitalSetBySTLVector<Domain>::erase( const Point & p )
+{
+  Iterator it = find( p );
+  if ( it != end() )
+    {
+      erase( it );
+      return 1;
+    }
+  return 0;
+}
+
+/**
+ * Removes the point pointed by [it] from the set.
+ * 
+ * @param it an iterator on this set.
+ * @pre it should point on a valid element ( it != end() ).
+ * Note: generally faster than giving just the point.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::erase( Iterator it )
+{
+  //take a mutable iterator
+  typename std::iterator_traits<Iterator>::difference_type d = it - this->begin();   
+  typename std::vector<Point>::iterator it2 = myVector.begin() + d;
+  //swap  
+  *it2 = myVector.back();
+  myVector.pop_back();
+}
+
+/**
+ * Removes the collection of points specified by the two iterators from
+ * this set.
+ *
+ * @param first the start point in this set.
+ * @param last the last point in this set.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::erase( Iterator first, Iterator last )
+{
+  while ( ( last != end() ) 
+    && ( first != last ) )
+    {
+      //take a mutable iterator
+      typename std::iterator_traits<Iterator>::difference_type d = first - this->begin();   
+      typename std::vector<Point>::iterator first2 = myVector.begin() + d;
+      //swap
+      *first2 = myVector.back();
+      myVector.pop_back();
+      //advance
+      first++; 
+    }
+  if ( first != last )
+    while ( first != end() )
+      myVector.pop_back();
+}
+
+/**
+ * Clears the set.
+ * @post this set is empty.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::clear()
+{
+  myVector.clear();
+}
+
+/**
+ * @param p any digital point.
+ * @return a const iterator pointing on [p] if found, otherwise end().
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::ConstIterator 
+DGtal::DigitalSetBySTLVector<Domain>::find( const Point & p ) const
+{
+  const ConstIterator it_end = end();
+  for ( ConstIterator it = begin(); it != it_end; ++it )
+    if ( p == *it ) return it;
+  return it_end;
+}
+
+/**
+ * @param p any digital point.
+ * @return an iterator pointing on [p] if found, otherwise end().
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::Iterator 
+DGtal::DigitalSetBySTLVector<Domain>::find( const Point & p )
+{
+  const Iterator it_end = end();
+  for ( Iterator it = begin(); it != it_end; ++it )
+    if ( p == *it ) return it;
+  return it_end;
+}
+
+
+/**
+ * @return a const iterator on the first element in this set.
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::ConstIterator 
+DGtal::DigitalSetBySTLVector<Domain>::begin() const
+{
+  return myVector.begin();
+}
+
+/**
+ * @return a const iterator on the element after the last in this set.
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::ConstIterator 
+DGtal::DigitalSetBySTLVector<Domain>::end() const
+{
+  return myVector.end();
+}
+
+
+/**
+ * @return an iterator on the first element in this set.
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::Iterator 
+DGtal::DigitalSetBySTLVector<Domain>::begin()
+{
+  return myVector.begin();
+}
+
+
+/**
+ * @return a iterator on the element after the last in this set.
+ */
+template <typename Domain>
+inline
+typename DGtal::DigitalSetBySTLVector<Domain>::Iterator 
+DGtal::DigitalSetBySTLVector<Domain>::end()
+{
+  return myVector.end();
+}
+
+/**
+ * set union to left.
+ * @param aSet any other set.
+ */
+template <typename Domain>
+inline
+DGtal::DigitalSetBySTLVector<Domain> & 
+DGtal::DigitalSetBySTLVector<Domain>
+::operator+=( const DigitalSetBySTLVector<Domain> & aSet )
+{
+  if ( this != &aSet )
+    {
+      std::vector<Point> other( aSet.myVector );
+      std::stable_sort( other.begin(), other.end() );
+      std::stable_sort( myVector.begin(), myVector.end() );
+      std::vector<Point> new_vector;
+      new_vector.reserve( size() + other.size() );
+      std::set_union( begin(), end(), other.begin(), other.end(), 
+          std::back_insert_iterator< std::vector<Point> >
+          ( new_vector ) );
+      myVector.swap( new_vector );
+    }
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template <typename Domain>
+inline
+bool
+DGtal::DigitalSetBySTLVector<Domain>
+::operator()( const Point & p ) const
+{
+  return find( p ) != end();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Other Set services -----------------------------
+    
+
+template <typename Domain>
+template <typename TOutputIterator>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::computeComplement(TOutputIterator& ito) const
+{
+  typename Domain::ConstIterator itPoint = domain().begin();
+  typename Domain::ConstIterator itEnd = domain().end();
+  while ( itPoint != itEnd ) {
+    if ( std::find( begin(), end(), *itPoint ) == end() ) {
+      *ito++ = *itPoint;
+    }
+    ++itPoint;
+  }
+}
+
+/**
+ * Builds the complement in the domain of the set [other_set] in
+ * this.
+ *
+ * @param other_set defines the set whose complement is assigned to 'this'.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::assignFromComplement
+( const DigitalSetBySTLVector<Domain> & other_set )
+{
+  clear();
+  typename Domain::ConstIterator itPoint = domain().begin();
+  typename Domain::ConstIterator itEnd = domain().end();
+  while ( itPoint != itEnd ) {
+    if ( std::find( other_set.begin(),
+        other_set.end(),
+        *itPoint ) == other_set.end() ) {
+      insert( *itPoint );
+    }
+    ++itPoint;
+  }
+}
+    
+/**
+ * Computes the bounding box of this set.
+ *
+ * @param lower the first point of the bounding box (lowest in all
+ * directions).
+ * @param upper the last point of the bounding box (highest in all
+ * directions).
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::computeBoundingBox
+( Point & lower, Point & upper ) const
+{
+  if ( begin() != end() )
+    {
+      ConstIterator it = begin();
+      ConstIterator it_end = end();
+      upper = lower = *it;
+      for ( ; it != it_end; ++it )
+  if ( it->isLower( lower ) ) lower = *it;
+  else if ( it->isUpper( upper ) ) upper = *it;
+    }
+  else
+    {
+      lower = domain().upperBound();
+      upper = domain().lowerBound();
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename Domain>
+inline
+void
+DGtal::DigitalSetBySTLVector<Domain>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSetBySTLVector]" << " size=" << size();
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename Domain>
+inline
+bool
+DGtal::DigitalSetBySTLVector<Domain>::isValid() const
+{
+    return true;
+}
+
+
+
+// --------------- CDrawableWithBoard2D realization -------------------------
+
+
+/**
+ * @return the style name used for drawing this object.
+ */
+template<typename Domain>
+inline
+std::string
+DGtal::DigitalSetBySTLVector<Domain>::className() const
+{
+  return "DigitalSetBySTLVector";
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline function                                         //
+
+template <typename Domain>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+        const DigitalSetBySTLVector<Domain> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

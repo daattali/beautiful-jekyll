@@ -1,0 +1,766 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Mesh.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ *
+ * @date 2012/06/29
+ *
+ * Implementation of inline methods defined in Mesh.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <limits> 
+#include <cstdlib>
+#include <DGtal/kernel/BasicPointPredicates.h>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+/**
+ * Constructor.
+ */
+template <typename TPoint>
+inline
+DGtal::Mesh<TPoint>::Mesh(bool saveFaceColor)
+{
+  mySaveFaceColor=saveFaceColor;
+  myDefaultColor = DGtal::Color::White;
+}
+
+/**
+ * Constructor.
+ */
+template <typename TPoint>
+inline
+DGtal::Mesh<TPoint>::Mesh(const DGtal::Color &aColor)
+{
+  mySaveFaceColor=false;
+  myDefaultColor = aColor;
+}
+
+/**
+ * Destructor.
+ */
+template <typename TPoint>
+inline
+DGtal::Mesh<TPoint>::~Mesh()
+{
+}
+
+
+template <typename TPoint>
+inline
+DGtal::Mesh<TPoint>::Mesh ( const Mesh & other ): myFaceList(other.myFaceList), 
+                                                  myVertexList(other.myVertexList), 
+                                                  myFaceColorList(other.myFaceColorList),
+                                                  mySaveFaceColor(other.mySaveFaceColor),
+                                                  myDefaultColor(other.myDefaultColor)
+{
+
+}
+
+template <typename TPoint>
+inline
+DGtal::Mesh<TPoint> &
+DGtal::Mesh<TPoint>::operator= ( const Mesh & other )
+{
+  myFaceList = other.myFaceList;
+  myVertexList = other.myVertexList;
+  myFaceColorList = other.myFaceColorList;
+  mySaveFaceColor = other.mySaveFaceColor;
+  myDefaultColor = other. myDefaultColor;
+  return *this;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TPoint>
+inline
+void
+DGtal::Mesh<TPoint>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[Mesh]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TPoint>
+inline
+bool
+DGtal::Mesh<TPoint>::isValid() const
+{
+    return true;
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+    
+
+
+
+
+
+template<typename TPoint>
+inline
+DGtal::Mesh<TPoint>::Mesh(const VertexStorage &vertexSet)
+{
+  mySaveFaceColor=false;
+  for(int i =0; i< vertexSet.size(); i++)
+    {
+      myVertexList.push_back(vertexSet.at(i));
+    }
+  
+}    
+
+
+
+template<typename TPoint>
+inline
+void
+DGtal::Mesh<TPoint>::addVertex(const TPoint &point)
+{
+  myVertexList.push_back(point);
+}    
+
+
+
+template<typename TPoint>
+inline
+void
+DGtal::Mesh<TPoint>::addTriangularFace(unsigned int indexVertex1, unsigned int indexVertex2, 
+						 unsigned int indexVertex3, const DGtal::Color &aColor)
+{
+  MeshFace aFace;
+  aFace.push_back(indexVertex1);
+  aFace.push_back(indexVertex2);
+  aFace.push_back(indexVertex3);
+  myFaceList.push_back(aFace);
+  if(mySaveFaceColor)
+    {
+      myFaceColorList.push_back(aColor);
+    }
+}    
+
+
+
+
+template<typename TPoint>
+inline
+void
+DGtal::Mesh<TPoint>::addQuadFace(unsigned int indexVertex1, unsigned int indexVertex2, 
+					   unsigned int indexVertex3, unsigned int indexVertex4, 
+					   const DGtal::Color &aColor)
+{
+  MeshFace aFace;
+  aFace.push_back(indexVertex1);
+  aFace.push_back(indexVertex2);
+  aFace.push_back(indexVertex3);
+  aFace.push_back(indexVertex4);
+  myFaceList.push_back(aFace);
+  if(mySaveFaceColor)
+    {
+      myFaceColorList.push_back(aColor);
+    }
+}    
+
+
+
+template<typename TPoint>
+inline
+void 
+DGtal::Mesh<TPoint>::addFace(const MeshFace &aFace,  const DGtal::Color &aColor){
+  myFaceList.push_back(aFace);
+  if(mySaveFaceColor)
+    {
+      myFaceColorList.push_back(aColor);
+    }
+}
+
+
+
+template<typename TPoint>
+inline
+void 
+DGtal::Mesh<TPoint>::removeFaces(const std::vector<unsigned int> &facesIndex){
+  DGtal::Mesh<TPoint> newMesh(true);
+  std::vector<unsigned int> indexVertexFaceCard(nbVertex());
+  std::vector<bool> indexFaceOK(nbFaces());
+  std::fill(indexVertexFaceCard.begin(), indexVertexFaceCard.end(), 0);
+  std::fill(indexFaceOK.begin(), indexFaceOK.end(), true);
+  for (unsigned int i = 0; i<facesIndex.size(); i++){
+    indexFaceOK[facesIndex[i]]=false;
+  }
+  // for each face remaining in the mesh we add +1 to each vertex used in a face
+  for(unsigned int i = 0; i < nbFaces(); i++){
+    if( indexFaceOK[i] ){
+      DGtal::Mesh<TPoint>::MeshFace aFace = getFace(i);
+      for (unsigned int j=0; j< aFace.size() ; j++) {
+        indexVertexFaceCard[aFace[j]] += 1;
+      }
+    }
+  }  
+  // we remove all vertex with a face == 0 and compute the new vertex association:
+  std::vector<unsigned int> newVertexIndex;
+  unsigned int currentIndex=0;
+  for (unsigned int i=0; i< nbVertex(); i++) {
+    if (indexVertexFaceCard[i]!=0){
+      newMesh.addVertex(getVertex(i));
+      newVertexIndex.push_back(currentIndex);
+      currentIndex++;
+    }else{
+      newVertexIndex.push_back(0);
+    }
+  }
+  for (unsigned int i = 0; i < nbFaces(); i++) {
+    if(indexFaceOK[i]){
+      MeshFace aFace = getFace(i);
+      MeshFace aNewFace = aFace;
+      // translate the old face with new index:
+      for (unsigned int j=0; j< aFace.size() ; j++) {
+        aNewFace[j] = newVertexIndex[aFace[j]];
+      }
+      newMesh.addFace(aNewFace);
+      newMesh.setFaceColor(newMesh.nbFaces()-1, getFaceColor(i));
+    }
+  }
+  myFaceList = newMesh.myFaceList;
+  myVertexList = newMesh.myVertexList;
+  myFaceColorList = newMesh.myFaceColorList;
+}
+
+
+
+
+
+template<typename TPoint>
+inline
+const TPoint &
+DGtal::Mesh<TPoint>::getVertex(unsigned int i) const 
+{
+  return myVertexList.at(i);
+}    
+
+
+
+template<typename TPoint>
+inline
+TPoint &
+DGtal::Mesh<TPoint>::getVertex(unsigned int i)  
+{
+  return myVertexList.at(i);
+}    
+
+
+
+template<typename TPoint>
+inline
+const typename  DGtal::Mesh<TPoint>::MeshFace & 
+DGtal::Mesh<TPoint>::getFace(unsigned int i) const
+{
+  return myFaceList.at(i);
+}    
+
+
+template<typename TPoint>
+inline
+typename  DGtal::Mesh<TPoint>::MeshFace & 
+DGtal::Mesh<TPoint>::getFace(unsigned int i) 
+{
+  return myFaceList.at(i);
+}    
+
+
+template<typename TPoint>
+inline
+typename DGtal::Mesh<TPoint>::RealPoint 
+DGtal::Mesh<TPoint>::getFaceBarycenter(unsigned int i) const
+{
+  DGtal::Mesh<TPoint>::RealPoint c;
+  MeshFace aFace = getFace(i);
+  for ( auto &j: aFace){
+    TPoint p = getVertex(j);
+    for (typename TPoint::Dimension k = 0; k < TPoint::dimension; k++){
+      c[k] += static_cast<typename RealPoint::Component>(p[k]) ;
+    }
+  }
+  return c/static_cast<typename RealPoint::Component>(aFace.size());
+}
+
+
+template<typename TPoint>
+inline
+typename DGtal::Mesh<TPoint>::Size
+DGtal::Mesh<TPoint>::nbFaces() const
+{
+  return myFaceList.size();
+}
+
+template<typename TPoint>
+inline
+typename DGtal::Mesh<TPoint>::Size
+DGtal::Mesh<TPoint>::nbVertex() const
+{
+  return myVertexList.size();
+}
+
+
+template<typename TPoint>
+inline
+const DGtal::Color & 
+DGtal::Mesh<TPoint>::getFaceColor(unsigned int i) const
+{
+  if(mySaveFaceColor)
+    {
+      return myFaceColorList.at(i);
+    }
+  else
+    {
+      return myDefaultColor;
+    }
+}
+
+template <typename TPoint>
+struct MeshBoundingBoxCompPoints
+{
+MeshBoundingBoxCompPoints(typename TPoint::Dimension d): myDim(d){};
+bool operator() (const TPoint &p1, const TPoint &p2){return p1[myDim]<p2[myDim];};
+typename TPoint::Dimension myDim;
+};
+
+template<typename TPoint>
+inline
+std::pair<TPoint, TPoint>  
+DGtal::Mesh<TPoint>::getBoundingBox() const
+{
+  std::pair<TPoint, TPoint> theResult;  
+  TPoint lowerBound, upperBound;
+  for(unsigned int i=0; i< TPoint::size(); i++)
+    {
+      const MeshBoundingBoxCompPoints<TPoint> cmp_points(i);
+      upperBound[i] = (*(std::max_element(vertexBegin(), vertexEnd(), cmp_points)))[i];
+      lowerBound[i] = (*(std::min_element(vertexBegin(), vertexEnd(), cmp_points)))[i];
+    }
+  theResult.first = lowerBound ;
+  theResult.second = upperBound ;
+  return theResult;
+}
+
+
+template<typename TPoint>
+inline
+void
+DGtal::Mesh<TPoint>::setFaceColor(const unsigned int index,
+                                  const DGtal::Color &aColor) 
+{
+  if (!mySaveFaceColor)
+    {
+      for(unsigned int i = 0; i<myFaceList.size(); i++)
+        {
+          myFaceColorList.push_back(myDefaultColor);
+        }
+      mySaveFaceColor=true;
+    }
+  myFaceColorList.at(index) = aColor;
+}
+
+
+template<typename TPoint>
+inline
+bool 
+DGtal::Mesh<TPoint>::isStoringFaceColors() const
+{
+  return mySaveFaceColor;
+}
+
+
+
+
+template<typename TPoint> 
+inline     
+void 
+DGtal::Mesh<TPoint>::invertVertexFaceOrder(){
+  for(unsigned int i=0; i<myFaceList.size(); i++)
+    {
+      std::vector<unsigned int> & aFace =  myFaceList.at(i);
+      for(unsigned int j=0; j < aFace.size()/2; j++)
+        {
+          unsigned int tmp=aFace.at(j);
+          aFace.at(j)=aFace.at(aFace.size()-1-j);
+          aFace.at(aFace.size()-1-j)=tmp;
+        }
+    }
+}
+
+template<typename TPoint> 
+inline     
+void 
+DGtal::Mesh<TPoint>::clearFaces(){
+  myFaceList.clear();
+}
+    
+template<typename TPoint>
+inline
+void 
+DGtal::Mesh<TPoint>::changeScale(const double aScale){
+  for(typename VertexStorage::iterator it = vertexBegin(); it != vertexEnd(); it++)
+    {
+      (*it) *= aScale;
+    }
+}
+
+
+template<typename TPoint>
+inline
+double 
+DGtal::Mesh<TPoint>::subDivideTriangularFaces(const double minArea){
+  double maxArea = 0;
+  std::vector<Mesh<TPoint>::MeshFace> facesToAdd;
+  for(unsigned int i =0; i< nbFaces(); i++)
+    {
+      typename Mesh<TPoint>::MeshFace aFace = getFace(i);
+      if(aFace.size()==3)
+        {
+          TPoint p1 = getVertex(aFace[0]);
+          TPoint p2 = getVertex(aFace[1]);
+          TPoint p3 = getVertex(aFace[2]);
+          TPoint c = (p1+p2+p3)/3.0;
+          double a  = ((p2-p1).crossProduct(p3-p1)).norm()/2.0;
+          if (a>maxArea)
+            {
+              maxArea = a;
+            }
+        
+          if(a>minArea)
+            {
+              addVertex(c);
+              MeshFace f1, f2, f3;
+              f1.push_back(aFace[0]); 
+              f1.push_back(aFace[1]);
+              f1.push_back(nbVertex()-1); 
+              facesToAdd.push_back(f1);
+          
+              f2.push_back(aFace[1]); 
+              f2.push_back(aFace[2]);
+              f2.push_back(nbVertex()-1); 
+              facesToAdd.push_back(f2);
+          
+              f3.push_back(aFace[2]); 
+              f3.push_back(aFace[0]);
+              f3.push_back(nbVertex()-1); 
+              facesToAdd.push_back(f3);
+            }
+          else
+            {
+              facesToAdd.push_back(aFace);
+            }
+      
+        }
+    }
+  clearFaces();
+  for(unsigned i=0; i<facesToAdd.size(); i++)
+    {
+      addFace(facesToAdd[i]);
+    }
+  return maxArea;
+}
+
+
+
+template<typename TPoint>
+inline
+unsigned int  
+DGtal::Mesh<TPoint>::quadToTriangularFaces(){
+  unsigned int nbQuadT=0;
+  std::vector<Mesh<TPoint>::MeshFace> facesToAdd;
+  for(unsigned int i =0; i< nbFaces(); i++)
+    {
+      typename Mesh<TPoint>::MeshFace aFace = getFace(i);
+      if(aFace.size()==4)
+        {
+          MeshFace f1, f2;
+          f1.push_back(aFace[0]); 
+          f1.push_back(aFace[1]);
+          f1.push_back(aFace[2]);
+          facesToAdd.push_back(f1);
+          
+          f2.push_back(aFace[2]); 
+          f2.push_back(aFace[3]);
+          f2.push_back(aFace[0]);          
+          facesToAdd.push_back(f2);
+          nbQuadT++;
+        }
+          else
+            {
+              facesToAdd.push_back(aFace);
+            }
+    }
+  clearFaces();
+  for(unsigned i=0; i<facesToAdd.size(); i++)
+    {
+      addFace(facesToAdd[i]);
+    }
+  return nbQuadT;
+}
+
+    
+
+
+//------------------------------------------------------------------------------
+template<typename TPoint>
+inline
+std::string
+DGtal::Mesh<TPoint>::className() const
+{
+  return "Mesh";
+}
+
+
+
+
+
+
+template <typename TPoint>
+inline
+void 
+DGtal::Mesh<TPoint>::createTubularMesh(DGtal::Mesh<TPoint> &aMesh, const std::vector<TPoint> &aSkeleton, 
+                                       const double aRadius, 
+                                       const double angleStep, const DGtal::Color &aMeshColor)
+{
+  std::vector<double> aVecR;
+  aVecR.push_back(aRadius);
+  DGtal::Mesh<TPoint>::createTubularMesh(aMesh, aSkeleton, 
+                                         aVecR, angleStep, aMeshColor);
+  
+}
+
+
+template <typename TPoint>
+inline
+void 
+DGtal::Mesh<TPoint>::createTubularMesh(DGtal::Mesh<TPoint> &aMesh, const std::vector<TPoint> &aSkeleton, 
+                                       const std::vector<double> &aVectRadius, 
+                                       const double angleStep, const DGtal::Color &aMeshColor)
+{
+  auto nbVertexInitial = aMesh.nbVertex();
+  ASSERT(aVectRadius.size() > 0);
+  // Generating vertices..
+  for(auto i = 0; i< (int)aSkeleton.size(); i++)
+    {
+      TPoint vectDir;
+      TPoint uDir1, uDirPrec;
+      TPoint uDir2;
+      TPoint firstPoint;
+      
+      if(i != (int)aSkeleton.size()-1)
+        { 
+          vectDir = aSkeleton.at(i+1) - aSkeleton.at(i);
+        }
+      else
+        {
+          vectDir = aSkeleton.at(i) - aSkeleton.at(i-1);
+        }
+      
+      double d = -vectDir[0]* aSkeleton.at(i)[0] - vectDir[1]*aSkeleton.at(i)[1]
+                 - vectDir[2]*aSkeleton.at(i)[2];
+      TPoint pRefOrigin;
+        if(vectDir[0]!=0)
+          {
+            pRefOrigin [0]= -d/vectDir[0];
+            pRefOrigin [1]= 0.0;
+            pRefOrigin [2]= 0.0;
+            if(aSkeleton.at(i) ==  pRefOrigin ||
+               (vectDir[1]==0 && vectDir[2]==0))
+              {
+                pRefOrigin[1]=-1.0;
+              }
+            
+          }
+        else if (vectDir[1]!=0)
+          {
+            pRefOrigin [0]= 0.0;
+            pRefOrigin [1]= -d/vectDir[1];
+            pRefOrigin [2]= 0.0;
+            if(aSkeleton.at(i) ==  pRefOrigin ||
+               (vectDir[0]==0 && vectDir[2]==0))
+              {
+                pRefOrigin[0]=-1.0;
+              }
+          }else if (vectDir[2]!=0)
+          {
+            pRefOrigin [0]= 0.0;
+            pRefOrigin [1]= 0.0;
+            pRefOrigin [2]= -d/vectDir[2];
+            if(aSkeleton.at(i) ==  pRefOrigin ||
+               (vectDir[0]==0 && vectDir[1]==0))
+              {
+                pRefOrigin[0]=-1.0;
+              }
+          }        
+        uDir1=(pRefOrigin-aSkeleton.at(i))/((pRefOrigin-aSkeleton.at(i)).norm());        
+        uDir2[0] = uDir1[1]*vectDir[2]-uDir1[2]*vectDir[1];
+        uDir2[1] = uDir1[2]*vectDir[0]-uDir1[0]*vectDir[2];
+        uDir2[2] = uDir1[0]*vectDir[1]-uDir1[1]*vectDir[0];
+        uDir2/=uDir2.norm();      
+        for(double a = 0.0; a < 2.0*M_PI; a += angleStep)
+          {
+            TPoint vMove = aVectRadius.at(i%aVectRadius.size())*(uDir1*cos(a) + uDir2*sin(a));  
+            aMesh.addVertex(vMove + aSkeleton[i]);
+            if(a==0)
+              {
+                firstPoint = vMove + aSkeleton[i]+vectDir;
+              }
+            
+          }
+    }
+  unsigned int nbPtPerFaces = static_cast<unsigned int>((aMesh.nbVertex()-nbVertexInitial)/aSkeleton.size());
+  
+  // Generating faces...
+  for(auto i = 0; i< (int)aSkeleton.size()-1; i++)
+  {
+    if (aSkeleton.at(i)==aSkeleton.at(i+1)){
+      trace.warning() << "Two skeleton points are identical, ignoring one point." << std::endl;
+      continue;
+    }
+    // Computing best shift between two consecutive ring points to generate tube face.
+    // (criteria defined by the minimal distance between 4 sampling points)
+    double minDistance = std::numeric_limits<double>::max();
+    TPoint ptRefRing1 = aMesh.getVertex(nbVertexInitial+i*nbPtPerFaces);
+    TPoint ptRefRing2 = aMesh.getVertex(nbVertexInitial+i*nbPtPerFaces+nbPtPerFaces/4);
+    TPoint ptRefRing3 = aMesh.getVertex(nbVertexInitial+i*nbPtPerFaces+2*(nbPtPerFaces/4));
+    TPoint ptRefRing4 = aMesh.getVertex(nbVertexInitial+i*nbPtPerFaces+3*(nbPtPerFaces/4));
+
+    unsigned int shift = 0;
+    TPoint vectDir;
+    if(i != (int)aSkeleton.size()-1)
+    {
+      vectDir = aSkeleton.at(i+1) - aSkeleton.at(i);
+    }
+    else
+    {
+      vectDir = aSkeleton.at(i) - aSkeleton.at(i-1);
+    }
+    
+    for(unsigned int k=0; k<nbPtPerFaces; k++)
+    {
+      TPoint pScan1 = aMesh.getVertex(nbVertexInitial+(i+1)*nbPtPerFaces+k);
+      TPoint pScan2 = aMesh.getVertex(nbVertexInitial+(i+1)*nbPtPerFaces+
+                                        (nbPtPerFaces/4+k)%nbPtPerFaces);
+      TPoint pScan3 = aMesh.getVertex(nbVertexInitial+(i+1)*nbPtPerFaces+
+                                        (2*(nbPtPerFaces/4)+k)%nbPtPerFaces);
+      TPoint pScan4 = aMesh.getVertex(nbVertexInitial+(i+1)*nbPtPerFaces+
+                                        (3*(nbPtPerFaces/4)+k)%nbPtPerFaces);
+      double distance = (ptRefRing1 - pScan1).norm()+(ptRefRing2 - pScan2).norm()+
+                        (ptRefRing3 - pScan3).norm()+(ptRefRing4 - pScan4).norm();
+      if(distance<minDistance){
+        shift = k;
+        minDistance = distance;
+      }
+
+    }
+    for(unsigned int k=0; k<nbPtPerFaces; k++)
+    {
+      Mesh<TPoint>::MeshFace aFace;
+      aMesh.addQuadFace(nbVertexInitial+k+i*nbPtPerFaces,
+                        nbVertexInitial+(shift+k)%nbPtPerFaces+nbPtPerFaces*(i+1),
+                        nbVertexInitial+(shift+k+1)%nbPtPerFaces+nbPtPerFaces*(i+1),
+                        nbVertexInitial+(k+1)%nbPtPerFaces+i*nbPtPerFaces,
+                        aMeshColor);
+    }
+  }
+}
+
+
+
+
+
+template <typename TPoint>
+template <typename TValue>
+inline
+void
+DGtal::Mesh<TPoint>::createMeshFromHeightSequence(Mesh<TPoint> &aMesh,  const std::vector<TValue> & anValueSequence,
+                                                  const unsigned int lengthSequence,
+                                                  double stepX, double stepY, double stepZ, 
+                                                  const DGtal::Color &aMeshColor ){
+  unsigned int nbVertexInitial = aMesh.nbVertex();
+  // Generating vertices..
+  int i = 0;
+  unsigned int posY = 0;
+  while(i+(int)lengthSequence-1 < (int)anValueSequence.size()){
+    for(unsigned int j = 0; j < lengthSequence; j++, i++){
+      aMesh.addVertex(TPoint(j*stepX, posY*stepY,  stepZ*anValueSequence.at(i)));
+    }
+    posY++;
+  }  
+  // Generating faces...
+  i = 0;
+  posY = 0;
+  while(i+(int)lengthSequence-1 < (int)anValueSequence.size() - (int)lengthSequence){
+    for(auto j = 0; j < (int)lengthSequence-1; j++, i++){
+      aMesh.addQuadFace(nbVertexInitial+i, nbVertexInitial+i+1, 
+                        nbVertexInitial+i+1+lengthSequence, 
+                        nbVertexInitial+i+lengthSequence,
+                        aMeshColor);
+    }
+    i++;
+    posY++;
+  }
+}
+
+
+
+
+template <typename TPoint>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		    const Mesh<TPoint> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+
+
+
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

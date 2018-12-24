@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1CIncrementalSegmentComputer.html" title="Aim: Defines the concept describing an incremental segment computer, ie. a model of CSegmentFactory t..." alt="" coords="44,286,251,336"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CSegmentFactory.html" title="Aim: Defines the concept describing a segment ie. a valid and not empty subrange, which can construct..." alt="" coords="141,203,356,234"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CSegment.html" title="Aim: Defines the concept describing a segment, ie. a valid and not empty range." alt="" coords="221,105,389,135"/>
-<area shape="rect" id="node8" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; T \&gt;" alt="" coords="218,6,392,37"/>
-</map>

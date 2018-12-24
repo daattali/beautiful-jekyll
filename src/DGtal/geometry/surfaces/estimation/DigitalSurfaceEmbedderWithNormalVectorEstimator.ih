@@ -1,0 +1,240 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file DigitalSurfaceEmbedderWithNormalVectorEstimator.ih
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/02/14
+ *
+ * Implementation of inline methods defined in DigitalSurfaceEmbedderWithNormalVectorEstimator.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+~DigitalSurfaceEmbedderWithNormalVectorEstimator()
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+DigitalSurfaceEmbedderWithNormalVectorEstimator()
+  : myDSEmbedder( 0 ), myEstimator( 0 )
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+DigitalSurfaceEmbedderWithNormalVectorEstimator
+( ConstAlias<DigitalSurfaceEmbedder> aDSEmbedder,
+  ConstAlias<NormalVectorEstimator> anEstimator )
+  : myDSEmbedder( &aDSEmbedder ),
+    myEstimator( &anEstimator )
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+DigitalSurfaceEmbedderWithNormalVectorEstimator
+( const Self & other )
+  : myDSEmbedder( other.myDSEmbedder ),
+    myEstimator( other.myEstimator )
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::Self &
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+operator=
+( const Self & other )
+{
+  myDSEmbedder = other.myDSEmbedder;
+  myEstimator = other.myEstimator;
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+const typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::Surface &
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+surface() const
+{
+  ASSERT( this->isValid() );
+  return myDSEmbedder->surface();
+}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::RealPoint
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+operator()( const SCell & scell ) const
+{
+  ASSERT( this->isValid() );
+  return myDSEmbedder->operator()( scell );
+}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::RealVector
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+gradient( const SCell & scell ) const
+{
+  ASSERT( this->isValid() );
+  return myEstimator->eval( scell );
+}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::GradientMap
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+gradientMap() const
+{
+  ASSERT( this->isValid() );
+  return GradientMap( *this );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+void
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+selfDisplay ( std::ostream & out ) const
+{
+  out << "[DigitalSurfaceEmbedderWithNormalVectorEstimator]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+bool
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+isValid() const
+{
+  return ( myEstimator != 0 ) && ( myDSEmbedder != 0 )
+    && ( myEstimator->isValid() ) && ( myDSEmbedder->isValid() );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// class DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+~DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap()
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap()
+  : myEmbedder( 0 )
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap
+( ConstAlias<Embedder> embedder )
+  : myEmbedder( &embedder )
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap
+( const Self & other )
+  : myEmbedder( other.myEmbedder )
+{}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::Self &
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+operator=
+( const Self & other )
+{
+  myEmbedder = other.myEmbedder;
+  return *this;
+}
+
+//-----------------------------------------------------------------------------
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+typename DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::Value
+DGtal::DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap<TDigitalSurfaceEmbedder, TNormalVectorEstimator>::
+operator()( const Argument & arg ) const
+{
+  ASSERT( myEmbedder != 0 );
+  return myEmbedder->gradient( arg );
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template < typename TDigitalSurfaceEmbedder, typename TNormalVectorEstimator >
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+                    const DigitalSurfaceEmbedderWithNormalVectorEstimator<TDigitalSurfaceEmbedder, TNormalVectorEstimator> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

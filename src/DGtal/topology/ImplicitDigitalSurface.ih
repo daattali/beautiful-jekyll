@@ -1,0 +1,330 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImplicitDigitalSurface.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2011/09/01
+ *
+ * Implementation of inline methods defined in ImplicitDigitalSurface.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include <iterator>
+#include "DGtal/topology/helpers/Surfaces.h"
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::~Tracker()
+{}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::Tracker( ConstAlias<DigitalSurfaceContainer> aSurface, 
+           const Surfel & s )
+  : mySurface( aSurface ), myNeighborhood()
+{
+  myNeighborhood.init( & surface().space(), 
+                       & surface().surfelAdjacency(),
+                       s );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::Tracker( const Tracker & other )
+  : mySurface( other.mySurface ), myNeighborhood( other.myNeighborhood )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+const typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::DigitalSurfaceContainer &
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::surface() const
+{
+  return mySurface;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+const typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::Surfel &
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::current() const
+{
+  return myNeighborhood.surfel();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::Dimension
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::orthDir() const
+{
+  return myNeighborhood.orthDir();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+void
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::move( const Surfel & s )
+{
+  ASSERT( surface().isInside( s ) );
+  myNeighborhood.setSurfel( s );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::uint8_t
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Tracker
+::adjacent( Surfel & s, Dimension d, bool pos ) const
+{
+  return static_cast<uint8_t>
+    ( myNeighborhood.getAdjacentOnPointPredicate( s, surface().pointPredicate(), d, pos ) );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::~ImplicitDigitalSurface()
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::ImplicitDigitalSurface
+( const ImplicitDigitalSurface & other )
+  : myKSpace( other.myKSpace ), 
+    myPointPredicate( other.myPointPredicate ), 
+    mySurfelAdjacency( other.mySurfelAdjacency ),
+    mySurfels( other. mySurfels )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::ImplicitDigitalSurface
+( ConstAlias<KSpace> aKSpace,
+  ConstAlias<PointPredicate> aPP,
+  const Adjacency & adj,
+  const Surfel & s, 
+  bool closed )
+  : myKSpace( aKSpace ), myPointPredicate( aPP ), mySurfelAdjacency( adj )
+{
+  computeSurfels( s, closed );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+const 
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Adjacency & 
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::surfelAdjacency() const
+{
+  return mySurfelAdjacency;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Adjacency & 
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::surfelAdjacency()
+{
+  return mySurfelAdjacency;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+const 
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::PointPredicate & 
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::pointPredicate() const
+{
+  return myPointPredicate;
+}
+
+//-----------------------------------------------------------------------------
+// --------- CDigitalSurfaceContainer realization -------------------------
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+const typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::KSpace & 
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::space() const
+{
+  return myKSpace;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+bool
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::isInside
+( const Surfel & s ) const
+{
+  Dimension k = myKSpace.sOrthDir( s );
+  // checks if the surfel is on the space boundary.
+  if ( myKSpace.sIsMax( s, k ) || myKSpace.sIsMin( s, k ) )
+    return false;
+  // p1 must be in the set and p2 must not be in the set.
+  SCell spel1 = myKSpace.sDirectIncident( s, k );
+  Point p1 = myKSpace.sCoords( spel1 );
+  if ( myPointPredicate( p1 ) )
+    {
+      SCell spel2 = myKSpace.sIndirectIncident( s, k );
+      Point p2 = myKSpace.sCoords( spel2 );
+      return ! myPointPredicate( p2 );
+    }
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::SurfelConstIterator
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::begin() const
+{
+  return mySurfels.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::SurfelConstIterator
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::end() const
+{
+  return mySurfels.end();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::Size
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::nbSurfels() const
+{
+  return static_cast<Size>(mySurfels.size());
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+bool
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::empty() const
+{
+  return mySurfels.empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+typename DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::DigitalSurfaceTracker* 
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::newTracker
+( const Surfel & s ) const
+{
+  return new Tracker( *this, s );
+}
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+DGtal::Connectedness
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::connectedness() const
+{
+  return CONNECTED;
+}
+
+// ------------------------- Hidden services ------------------------------
+//-----------------------------------------------------------------------------
+template <typename TKSpace, typename TPointPredicate>
+inline
+void
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::computeSurfels
+( const Surfel & p, bool closed )
+{
+  mySurfels.clear();
+  typename KSpace::SCellSet surface;
+  if ( closed )
+    Surfaces<KSpace>::trackClosedBoundary( surface,
+                                           myKSpace,
+                                           mySurfelAdjacency,
+                                           myPointPredicate,
+                                           p );
+  else
+    Surfaces<KSpace>::trackBoundary( surface,
+                                     myKSpace,
+                                     mySurfelAdjacency,
+                                     myPointPredicate,
+                                     p );
+  for ( typename KSpace::SCellSet::const_iterator it = surface.begin(),
+          it_end = surface.end(); it != it_end; ++it )
+    mySurfels.push_back( *it );
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TKSpace, typename TPointPredicate>
+inline
+void
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::selfDisplay ( std::ostream & out ) const
+{
+  out << "[ImplicitDigitalSurface]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TKSpace, typename TPointPredicate>
+inline
+bool
+DGtal::ImplicitDigitalSurface<TKSpace,TPointPredicate>::isValid() const
+{
+  return true;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TKSpace, typename TPointPredicate>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out, 
+		  const ImplicitDigitalSurface<TKSpace,TPointPredicate> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

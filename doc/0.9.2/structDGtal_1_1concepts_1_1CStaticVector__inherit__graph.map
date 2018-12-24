@@ -1,6 +1,0 @@
-<map id="DGtal::concepts::CStaticVector&lt; T &gt;" name="DGtal::concepts::CStaticVector&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CVector.html" title="Aim: Represent any static or dynamic sized column vector having sparse or dense representation. " alt="" coords="5,179,224,208"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure. " alt="" coords="24,83,205,130"/>
-<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="29,5,200,35"/>
-<area shape="rect" id="node8" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html. " alt="" coords="248,179,480,208"/>
-</map>

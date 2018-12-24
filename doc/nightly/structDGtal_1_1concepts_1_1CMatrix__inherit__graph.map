@@ -1,8 +1,0 @@
-<map id="DGtal::concepts::CMatrix&lt; T &gt;" name="DGtal::concepts::CMatrix&lt; T &gt;">
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CDenseMatrix.html" title="Aim: Represent any dynamic or static sized matrix having dense representation. " alt="" coords="678,5,917,31"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CDynamicMatrix.html" title="Aim: Represent any dynamic sized matrix having sparse or dense representation. " alt="" coords="705,55,890,93"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CSparseMatrix.html" title="Aim: Represent any dynamic or static sized matrix having sparse representation. " alt="" coords="709,117,885,156"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CStaticMatrix.html" title="Aim: Represent any static sized matrix having sparse or dense representation. " alt="" coords="714,180,880,219"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure. " alt="" coords="211,87,382,125"/>
-<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html. " alt="" coords="5,93,163,119"/>
-</map>

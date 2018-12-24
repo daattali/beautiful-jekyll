@@ -1,5 +1,0 @@
-<map id="DGtal::CConstImage&lt; I &gt;" name="DGtal::CConstImage&lt; I &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CTrivialConstImage.html" title="Aim: Defines the concept describing a read&#45;only image, which is a refinement of CPointFunctor." alt="" coords="5,187,229,218"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CPointFunctor.html" title="DGtal::CPointFunctor\&lt; I \&gt;" alt="" coords="22,105,212,135"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CPointFunctor.html" title="Aim: Defines a functor on points." alt="" coords="20,6,215,37"/>
-</map>

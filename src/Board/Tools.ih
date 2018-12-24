@@ -1,0 +1,37 @@
+/* -*- mode: c++ -*- */
+/**
+ * @file   Tools.ih
+ * @author Sebastien Fourey <http://www.greyc.ensicaen.fr/~seb>
+ * @date   June 2010
+ * 
+ * @brief  Tools (def. of inline functions and methods)
+ */
+/*
+ * \@copyright This File is part of the Board library which is
+ * licensed under the terms of the GNU Lesser General Public Licence.
+ * See the LICENCE file for further details.
+ */
+
+namespace LibBoard {
+
+  void secured_strncpy( char * dst, const char * src, size_t count )
+{
+#if defined( _MSC_VER )
+  strncpy_s( dst, count, src, _TRUNCATE );
+#else
+  strncpy( dst, src, count );
+#endif // defined( _MSC_VER )
+}
+
+void secured_ctime( char * str, const time_t * t, size_t count )
+{
+#if defined( _MSC_VER )
+  ctime_s( str, count, t );
+#else
+  strncpy( str, ctime(t), count );
+#endif // defined( _MSC_VER )  
+}
+
+
+
+} // namespace LibBoard

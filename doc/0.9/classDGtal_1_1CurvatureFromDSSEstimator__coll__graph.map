@@ -1,5 +1,0 @@
-<map id="DGtal::CurvatureFromDSSEstimator&lt; DSSComputer &gt;" name="DGtal::CurvatureFromDSSEstimator&lt; DSSComputer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html" title="DGtal::detail::Curvature\lFromDSSBaseEstimator\&lt;\l DSSComputer, detail::Curvature\lFromDSSLengthAndWidth \&gt;" alt="" coords="602,28,817,93"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1detail_1_1CurvatureFromDSSLengthAndWidth.html" title="DGtal::detail::Curvature\lFromDSSLengthAndWidth" alt="" coords="187,5,365,44"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html" title="DGtal::detail::Curvature\lFromDSSBaseEstimator\&lt;\l DSSComputer, Functor \&gt;" alt="" coords="189,69,363,121"/>
-</map>

@@ -1,0 +1,288 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file Profile.ih
+ * @author Bertrand Kerautret (\c kerautre@loria.fr )
+ * LORIA (CNRS, UMR 7503), University of Nancy, France
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ * 
+ * @date 2015/11/08
+ *
+ * Implementation of inline methods defined in Profile.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+#include "DGtal/math/SimpleLinearRegression.h"
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline methods                                          //
+
+template<typename TValueFunctor, typename TValue>
+DGtal::Profile<TValueFunctor, TValue>::~Profile()
+{
+  if ( myXsamples != 0 ) delete myXsamples;
+  if ( myStats != 0 ) delete myStats; 
+}
+
+template<typename TValueFunctor, typename TValue>
+DGtal::Profile<TValueFunctor, TValue>::Profile()
+  : myXsamples( 0 ), myStats( 0 ), myProfileDef(MEAN), myStoreValInStats(false)
+{
+}
+
+
+template<typename TValueFunctor, typename TValue>
+DGtal::Profile<TValueFunctor, TValue>::Profile(ProfileType type)
+  : myXsamples( 0 ), myStats( 0 ), myProfileDef(type), myStoreValInStats(false)
+{
+}
+
+
+template<typename TValueFunctor, typename TValue>
+void 
+DGtal::Profile<TValueFunctor, TValue>::clear()
+{
+  if ( myXsamples != 0 ) 
+    {
+      delete myXsamples;
+      myXsamples = 0;
+    }
+  if ( myStats != 0 ) 
+    {
+      delete myStats;
+      myStats = 0;
+    }
+  
+}
+
+
+template<typename TValueFunctor, typename TValue>
+void 
+DGtal::Profile<TValueFunctor, TValue>::init(const unsigned int nb, const bool storeValsInStats )
+{
+  clear();
+  myXsamples = new std::vector<TValue>( nb );
+  myStats = new std::vector< Statistic<TValue> >;
+  myStoreValInStats= storeValsInStats;
+  for ( unsigned int i = 0; i < nb; ++i )
+    {
+      (*myXsamples)[ i ] = (TValue) ( i + 1 );
+      myStats->push_back(Statistic<TValue>(storeValsInStats));
+    }
+}
+
+
+template<typename TValueFunctor, typename TValue>
+void
+DGtal::Profile<TValueFunctor, TValue>::addValue( const unsigned int indexX, const TValue value )
+{
+  ASSERT( isValid() && ( indexX < myXsamples->size() ) );
+  (*myStats)[ indexX ].addValue( value );
+}
+
+template<typename TValueFunctor, typename TValue>
+void
+DGtal::Profile<TValueFunctor, TValue>::addStatistic
+( const unsigned int indexX, const Statistic<TValue> & stat )
+{
+  ASSERT( isValid() && ( indexX < myXsamples->size() ) );
+  (*myStats)[ indexX ] += stat;
+}
+
+
+template<typename TValueFunctor, typename TValue>
+void
+DGtal::Profile<TValueFunctor, TValue>::getProfile
+( std::vector<TValue> & x, std::vector<TValue> & y ) const
+{
+  ASSERT( isValid() );
+  for ( unsigned int i = 0; i < myXsamples->size(); ++i) 
+    {
+      x.push_back( myFunctor( (*myXsamples)[ i ] ) );
+      switch (myProfileDef){
+      case MAX:
+	y.push_back( myFunctor( (*myStats)[ i ].max() ) );
+	break;
+      case MIN:
+	y.push_back( myFunctor( (*myStats)[ i ].min() ) );
+	break;
+      case MEDIAN:
+	y.push_back (myFunctor( (*myStats)[ i ].median() ));
+	break;
+      case MEAN:
+      default: 
+        y.push_back( myFunctor( (*myStats)[ i ].mean() ) );
+	break;
+
+      }
+    }
+}
+
+
+
+
+
+
+template<typename TValueFunctor, typename TValue>
+void 
+DGtal::Profile<TValueFunctor, TValue>::stopStatsSaving()
+{
+  for ( unsigned int i = 0; i < myStats->size(); ++i )
+    {
+      ((*myStats).at( i )).terminate();
+    } 
+}
+
+template<typename TValueFunctor, typename TValue>
+inline
+DGtal::Profile<TValueFunctor, TValue>::Profile( const Profile & other ){
+  if(other.myStats!=0 && other.myXsamples!=0)
+    {
+      myXsamples = new std::vector<TValue>( other.myXsamples->size() );
+      myStats = new std::vector< Statistic<TValue> > ( other.myXsamples->size());
+      myProfileDef = other.myProfileDef;
+      myStoreValInStats= other.myStoreValInStats;
+      for ( unsigned int i = 0; i < other.myXsamples->size(); ++i )
+        {
+          (*myXsamples)[ i ] = (*other.myXsamples)[i];
+          (*myStats)[ i ] = (*other.myStats)[i];
+        }
+    }
+  else
+    {
+      myStats=0;
+      myXsamples=0;
+      myProfileDef = other.myProfileDef;
+      myStoreValInStats = false;
+    }
+}
+
+template<typename TValueFunctor, typename TValue>
+inline
+DGtal::Profile<TValueFunctor, TValue> & 
+DGtal::Profile<TValueFunctor, TValue>::operator=
+( const DGtal::Profile<TValueFunctor, TValue> & other )
+{
+  if ( this != &other ) 
+    {
+      if(other.myStats!=0 && other.myXsamples!=0)
+        {
+          myXsamples = new std::vector<TValue>( other.myXsamples->size() );
+          myStats = new std::vector< Statistic<TValue> > ( other.myXsamples->size());
+          myProfileDef = other.myProfileDef;
+          myStoreValInStats= other.myStoreValInStats;
+          for ( unsigned int i = 0; i < other.myXsamples->size(); ++i )
+            {
+              (*myXsamples)[ i ] = (*other.myXsamples)[i];
+              (*myStats)[ i ] = (*other.myStats)[i];
+            }
+        }
+      else
+        {
+          myStats=0;
+          myXsamples=0;
+          myProfileDef = other.myProfileDef;
+          myStoreValInStats=false;
+        }
+    }
+  
+  return *this;
+}
+
+
+
+template<typename TValueFunctor, typename TValue>
+template <typename Iterator>
+inline
+void 
+DGtal::Profile<TValueFunctor, TValue>::init( Iterator  beginXvalues, Iterator endXvalues,
+                                             const bool storeValsInStats )
+{
+  clear();
+  myStoreValInStats= storeValsInStats;
+  myXsamples = new std::vector<TValue>;
+  myStats = new std::vector< Statistic<TValue> >;
+  
+  unsigned int nb = 0;
+  for ( ;  beginXvalues != endXvalues; ++ beginXvalues, ++nb )
+    {
+      myXsamples->push_back( * beginXvalues );
+      myStats->push_back(Statistic<TValue>( myStoreValInStats));
+    }
+}
+
+
+template<typename TValueFunctor, typename TValue>
+void 
+DGtal::Profile<TValueFunctor, TValue>::selfDisplay( std::ostream& out ) const
+{
+  out << "[Profile]";
+}
+
+template<typename TValueFunctor, typename TValue>
+bool
+DGtal::Profile<TValueFunctor, TValue>::isValid() const
+{
+  return myXsamples != 0;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions and external operators                 //
+
+/**
+ * Overloads 'operator<<' for displaying objects of class 'Profile'.
+ * @param out the output stream where the object is written.
+ * @param object the object of class 'Profile' to write.
+ * @return the output stream after the writing.
+ */
+template<typename TValueFunctor, typename TValue>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const Profile<TValueFunctor, TValue> & object )
+{
+    object.selfDisplay ( out );
+    return out;
+}
+
+
+template<typename TValueFunctor, typename TValue>
+inline
+void 
+DGtal::Profile<TValueFunctor, TValue>::setType(ProfileType type){
+  ASSERT(myProfileDef==MEAN || myProfileDef==MAX || myProfileDef==MIN || myProfileDef==MEDIAN);
+  myProfileDef = type; 
+}
+    
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

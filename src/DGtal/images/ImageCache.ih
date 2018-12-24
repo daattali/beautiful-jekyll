@@ -1,0 +1,129 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ImageCache.ih
+ * @author Martial Tola (\c martial.tola@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2013/01/24
+ *
+ * Implementation of inline methods defined in ImageCache.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Interface - public :
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TImageContainer, typename TImageFactory, typename TReadPolicy, typename TWritePolicy>
+inline
+void
+DGtal::ImageCache<TImageContainer, TImageFactory, TReadPolicy, TWritePolicy>::selfDisplay ( std::ostream & out ) const
+{
+    out << "[ImageCache] ";
+}
+
+template <typename TImageContainer, typename TImageFactory, typename TReadPolicy, typename TWritePolicy>
+inline
+bool
+DGtal::ImageCache<TImageContainer, TImageFactory, TReadPolicy, TWritePolicy>::read(const Point & aPoint, Value &aValue) const
+{
+    ImageContainer *myImagePtr = myReadPolicy->getPage(aPoint);
+    if (myImagePtr)
+    {
+      aValue = myImagePtr->operator()(aPoint);
+      return true;
+    }
+    
+    return false;
+}
+
+template <typename TImageContainer, typename TImageFactory, typename TReadPolicy, typename TWritePolicy>
+inline
+TImageContainer *
+DGtal::ImageCache<TImageContainer, TImageFactory, TReadPolicy, TWritePolicy>::getPage(const Domain & aDomain) const
+{
+    return myReadPolicy->getPage(aDomain);
+}
+
+template <typename TImageContainer, typename TImageFactory, typename TReadPolicy, typename TWritePolicy>
+inline
+bool
+DGtal::ImageCache<TImageContainer, TImageFactory, TReadPolicy, TWritePolicy>::write(const Point & aPoint, const Value &aValue)
+{
+    ImageContainer *myImagePtr = myReadPolicy->getPage(aPoint);
+    if (myImagePtr)
+    {
+      myWritePolicy->writeInPage(myImagePtr, aPoint, aValue);
+      return true;
+    }
+    
+    return false;
+}
+
+template <typename TImageContainer, typename TImageFactory, typename TReadPolicy, typename TWritePolicy>
+inline
+void 
+DGtal::ImageCache<TImageContainer, TImageFactory, TReadPolicy, TWritePolicy>::update(const Domain &aDomain)
+{
+    ImageContainer *myImagePtr = myReadPolicy->getPageToDetach();
+    
+    if (myImagePtr)
+    {
+      myWritePolicy->flushPage(myImagePtr);
+      
+      myImageFactoryPtr->detachImage(myImagePtr);
+    }
+    
+    myReadPolicy->updateCache(aDomain);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TImageContainer, typename TImageFactory, typename TReadPolicy, typename TWritePolicy>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const ImageCache<TImageContainer, TImageFactory, TReadPolicy, TWritePolicy> & object )
+{
+    object.selfDisplay( out );
+    return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+

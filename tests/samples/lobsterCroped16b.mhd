@@ -1,0 +1,8 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = True
+DimSize = 51 91 31
+ElementSize = 1.0 1.0 1.0
+ElementType = MET_USHORT
+ElementDataFile = lobsterCroped16b.raw

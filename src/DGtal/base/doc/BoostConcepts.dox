@@ -1,0 +1,58 @@
+/**
+ * @file BoostConcepts.dox
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ *
+ * @date 2012/12/19
+ *
+ * Documentation file for feature Boost
+ *
+ * This file is part of the DGtal library.
+ */
+
+#error This file is not supposed to be included in a C++/C header or source file.
+
+/**
+   Dummy namespace used for generating the documentation. Gathers
+   boost concept definitions and refers to the corresponding
+   documentation.
+
+   More generally, you may also want to look at
+   - the STL main page: http://www.sgi.com/tech/stl/index.html
+   - the BOOST concept check main page http://www.boost.org/libs/concept_check/concept_check.htm
+   - the BOOST iterator library main page http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/index.html 
+
+*/
+namespace boost_concepts {
+
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/ReadableIterator.html
+  template <typename Iterator> struct ReadableIteratorConcept {};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/WritableIterator.html
+  template <typename Iterator, typename ValueType>
+  struct WritableIteratorConcept {};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/SwappableIterator.html
+  template <typename Iterator>
+  struct SwappableIteratorConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/LvalueIteratorConcept.html
+  template <typename Iterator>
+  struct LvalueIteratorConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/IncrementableIterator.html
+  template <typename Iterator>
+  struct IncrementableIteratorConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/SinglePassIterator.html
+  template <typename Iterator>
+  struct SinglePassIteratorConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/ForwardTraversal.html
+  template <typename Iterator>
+  struct ForwardTraversalConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/BidirectionalTraversal.html
+  template <typename Iterator>
+  struct BidirectionalTraversalConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/RandomAccessTraversal.html
+  template <typename Iterator>
+  struct RandomAccessTraversalConcept{};
+  /// Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/InteroperableIterator.html
+  template <typename Iterator, typename ConstIterator>
+  struct InteroperableIteratorConcept{};
+}
+

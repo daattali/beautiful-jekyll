@@ -1,0 +1,1218 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file ChordNaivePlaneComputer.ih
+ * @author Jacques-Olivier Lachaud (\c jacques-olivier.lachaud@univ-savoie.fr )
+ * Laboratory of Mathematics (CNRS, UMR 5127), University of Savoie, France
+ * @author Yan Gérard
+ * @author Isabelle Debled-Rennesson
+ * @author Paul Zimmermann
+ *
+ * @date 2012/09/20
+ *
+ * Implementation of inline methods defined in ChordNaivePlaneComputer.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+~ChordNaivePlaneComputer()
+{ // Nothing to do.
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+ChordNaivePlaneComputer() : z( -1 )
+{ // Object is invalid
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+ChordNaivePlaneComputer( const ChordNaivePlaneComputer & other )
+  : z( other.z ), x( other.x ), y( other.y ),
+    myWidth0( other.myWidth0 ),
+    myWidth1( other.myWidth1 ),
+    myPointSet( other.myPointSet ),
+    myState( other.myState )
+{
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar> &
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+operator=( const ChordNaivePlaneComputer & other )
+{
+  if ( this != &other )
+    {
+      z = other.z;
+      x = other.x;
+      y = other.y;
+      myWidth0 = other.myWidth0;
+      myWidth1 = other.myWidth1;
+      myPointSet = other.myPointSet;
+      myState = other.myState;
+    }
+  return *this;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+clear()
+{
+  myPointSet.clear();
+  myState.nbValid = 0;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+init( Dimension axis,
+      InternalScalar widthNumerator,
+      InternalScalar widthDenominator )
+{
+  ASSERT( ( axis < 3 ) );
+  myWidth0 = widthNumerator;
+  myWidth1 = widthDenominator;
+  switch ( axis ) {
+  case 0: x = 1; y = 2; z = 0; break;
+  case 1: x = 2; y = 0; z = 1; break;
+  case 2: x = 0; y = 1; z = 2; break;
+  }
+  clear();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::Size
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+size() const
+{
+  return myPointSet.size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+empty() const
+{
+  return myPointSet.empty();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::ConstIterator
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+begin() const
+{
+  return myPointSet.begin();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::ConstIterator
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+end() const
+{
+  return myPointSet.end();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::Size
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+max_size() const
+{
+  return myPointSet.max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::Size
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+maxSize() const
+{
+  return max_size();
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+operator()( const Point & p ) const
+{
+  _d = internalDot( myState.N, p );
+  return ( _d >= myState.min ) && ( _d <= myState.max );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+extendAsIs( const InputPoint & p )
+{
+  ASSERT( isValid() );
+  if ( empty() ) {
+    myPointSet.insert( p );
+    return setUp1( p );
+  }
+  bool ok = this->operator()( p );
+  if ( ok ) myPointSet.insert( p );
+  return ok;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+extend( const InputPoint & p )
+{
+  unsigned int loop;
+  ASSERT( isValid() );
+  // Checks if algorithm is initialized.
+  if ( extendAsIs( p ) )
+    {
+      // std::cout << "extended as is: " << p << std::endl;
+      return true;
+    }
+  std::pair<Iterator,bool> ins = myPointSet.insert( p );
+  Iterator itP = ins.first;
+  ASSERT( ins.second == true );
+  if ( myState.nbValid < 3 )
+    { // initial case
+      _state.nbValid = findTriangle( _state, myPointSet.begin(), myPointSet.end() );
+      // std::cout << "findTriangle #=" << _state.nbValid << std::endl;
+      setUpNormal( _state );
+    }
+  else
+    _state = myState;
+  unsigned int result = 0; // 0: computing, 1: too large, 2: found.
+  for ( loop = 0; result == 0; ++loop )
+    {
+      computeHeight( _state );
+      if ( ( _state.height * myWidth1 ) >= ( _state.N[ z ] * myWidth0 ) ) // because width is strict
+        result = 1;
+      else
+        {
+          computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+          if ( checkWidth( _state ) )
+            { // Ok. Found it.
+              result = 2;
+            }
+          else if ( _state.nbValid >= 2 )
+            { // in case 2 and 3, we have a starting triangle.
+              InputPoint M = _state.ptMax - _state.ptMin;
+              if ( ( M[ x ] == 0 ) && ( M[ y ] == 0 ) )
+                { // Case where M is aligned with axis, width is M[ z ].
+                  result = M[ z ] * myWidth1 >= myWidth0 ? 1 : 2;
+                }
+              else
+                {
+                  newCurrentTriangle( _state, M );
+                  computeNormal( _state );
+                }
+            }
+          else
+            { // in case 1, normal is already aligned with main axis.
+              _state.A = _state.ptMax - _state.ptMin;
+            }
+        }
+      if (loop>=1000) {
+        trace.warning() << "[ChordNaivePlaneComputer::extend()]"
+                  << " more than 1000 loops, computing error suspected" << std::endl;
+        trace.warning() << "- Former state: " << *this << std::endl;
+        trace.warning() << "- Current state: ";
+        selfDisplay( trace.warning(), _state );
+        trace.warning() << std::endl;
+        trace.warning() << "- Points: ";
+        for ( ConstIterator it = this->begin(), itE = this->end();
+              it != itE; ++it )
+          trace.warning() << " " << *it;
+        trace.warning() << std::endl;
+        trace.warning() << "- Added Points: " << p;
+        trace.warning() << std::endl;
+        result = 1;
+      }
+    }
+  // was unable to find a correct plane.
+  if ( result == 2 )
+    myState = _state;
+  else
+    myPointSet.erase( itP );
+  return result == 2;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+isExtendable( const InputPoint & p ) const
+{
+  unsigned int loop;
+  ASSERT( isValid() );
+  if ( empty() || this->operator()( p ) ) return true;
+  std::pair<Iterator,bool> ins = myPointSet.insert( p );
+  Iterator itP = ins.first;
+  ASSERT( ins.second == true );
+  if ( myState.nbValid < 3 )
+    { // initial case
+      _state.nbValid = findTriangle( _state, myPointSet.begin(), myPointSet.end() );
+      // std::cout << "findTriangle #=" << _state.nbValid << std::endl;
+      setUpNormal( _state );
+    }
+  else
+    _state = myState;
+  unsigned int result = 0; // 0: computing, 1: too large, 2: found.
+  for ( loop = 0; result == 0; ++loop )
+    {
+      computeHeight( _state );
+      if ( ( _state.height * myWidth1 ) >= ( _state.N[ z ] * myWidth0 ) ) // check >=
+        result = 1;
+      else
+        {
+          computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+          if ( checkWidth( _state ) )
+            { // Ok. Found it.
+              result = 2;
+            }
+          else if ( _state.nbValid >= 2 )
+            { // in case 2 and 3, we have a starting triangle.
+              InputPoint M = _state.ptMax - _state.ptMin;
+              if ( ( M[ x ] == 0 ) && ( M[ y ] == 0 ) )
+                { // Case where M is aligned with axis, width is M[ z ].
+                  result = M[ z ] * myWidth1 >= myWidth0 ? 1 : 2;
+                }
+              else
+                {
+                  newCurrentTriangle( _state, M );
+                  computeNormal( _state );
+                }
+            }
+          else
+            { // in case 1, normal is already aligned with main axis.
+              _state.A = _state.ptMax - _state.ptMin;
+            }
+        }
+      if (loop>=1000) {
+        trace.warning() << "[ChordNaivePlaneComputer::isExtendable()]"
+                  << " more than 1000 loops, computing error suspected" << std::endl;
+        trace.warning() << "- Former state: " << *this << std::endl;
+        trace.warning() << "- Current state: ";
+        selfDisplay( trace.warning(), _state );
+        trace.warning() << std::endl;
+        trace.warning() << "- Points: ";
+        for ( ConstIterator it = this->begin(), itE = this->end();
+              it != itE; ++it )
+          trace.warning() << " " << *it;
+        trace.warning() << std::endl;
+        trace.warning() << "- Added Points: " << p;
+        trace.warning() << std::endl;
+        result = 1;
+      }
+    }
+  // Goes back to starting state.
+  myPointSet.erase( itP );
+  return result == 2;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+satisfies( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  ASSERT( isValid() );
+  state.nbValid = 0;
+  if ( itB == itE ) return true;
+  unsigned int loop;
+  state.nbValid = findTriangle( state, itB, itE );
+  setUpNormal( state );
+  unsigned int result = 0; // 0: computing, 1: too large, 2: found.
+  for ( loop = 0; result == 0; ++loop )
+    {
+      computeHeight( state );
+      if ( ( state.height * myWidth1 ) >= ( state.N[ z ] * myWidth0 ) ) // because width is strict
+        result = 1;
+      else
+        {
+          computeMinMax( state, itB, itE );
+          if ( checkWidth( state ) )
+            result = 2;
+          else if ( state.nbValid >= 2 )
+            { // in case 2 and 3, we have a starting triangle.
+              InputPoint M = _state.ptMax - _state.ptMin;
+              if ( ( M[ x ] == 0 ) && ( M[ y ] == 0 ) )
+                { // Case where M is aligned with axis, width is M[ z ].
+                  result = M[ z ] * myWidth1 >= myWidth0 ? 1 : 2;
+                }
+              else
+                {
+                  newCurrentTriangle( _state, M );
+                  computeNormal( _state );
+                }
+            }
+          else
+            { // in case 1, normal is already aligned with main axis.
+              state.A = state.ptMax - state.ptMin;
+            }
+        }
+      if (loop>=1000) {
+        trace.warning() << "[ChordNaivePlaneComputer::satisfies()]"
+                  << " more than 1000 loops, computing error suspected" << std::endl;
+        trace.warning() << "- Former state: " << *this << std::endl;
+        trace.warning() << "- Current state: ";
+        selfDisplay( trace.warning(), state );
+        trace.warning() << std::endl;
+        trace.warning() << "- Added Points: ";
+        for ( TInputIterator it = itB; it != itE; ++it )
+          trace.warning() << " " << *it;
+        trace.warning() << std::endl;
+        result = 1;
+      }
+    }
+  return result == 2;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+satisfies( TInputIterator itB, TInputIterator itE ) const
+{
+  return satisfies( _state, itB, itE );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+inline
+std::pair<TInternalScalar, TInternalScalar>
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+computeAxisWidth( Dimension axis, TInputIterator itB, TInputIterator itE )
+{
+  ChordNaivePlaneComputer plane;
+  plane.init( axis );
+  return plane.axisWidth( itB, itE );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+std::pair<TInternalScalar, TInternalScalar>
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+axisWidth( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  ASSERT( isValid() );
+  state.nbValid = 0;
+  if ( itB == itE ) return std::make_pair( (TInternalScalar) 0, (TInternalScalar) 0 );
+  state.nbValid = findTriangle( state, itB, itE );
+  setUpNormal( state );
+  computeMinMax( state, itB, itE );
+  InternalVector formerN; // memorizes former normal vector.
+  formerN[ 0 ] = state.N[ 0 ]; formerN[ 1 ] = state.N[ 1 ]; formerN[ 2 ] = state.N[ 2 ];
+  std::pair<TInternalScalar, TInternalScalar> width( state.max - state.min, state.N[ z ] );
+  bool optimum = false;
+  for ( unsigned int loop = 0; ! optimum; ++loop )
+    {
+      computeHeight( state );
+      if ( state.nbValid >= 2 )
+        { // in case 2 and 3, we have a starting triangle.
+          InputPoint M = state.ptMax - state.ptMin;
+          if ( ( M[ x ] == 0 ) && ( M[ y ] == 0 ) )
+            { // Case where M is aligned with axis, width is M[ z ].
+              width.first = M[ z ];
+              width.second = 1;
+              optimum = true;
+              break;
+            }
+          else
+            {
+              newCurrentTriangle( state, M );
+              computeNormal( state );
+            }
+        }
+      else
+        { // in case 1, normal is already aligned with main axis.
+          state.A = state.ptMax - state.ptMin;
+        }
+      computeMinMax( state, itB, itE );
+      // To determine the optimum position:
+      // - it is not enough to look at the current width and check for the smallest one.
+      // - it is not enough to look at the current vector ptMax - ptMin to see if it is changing
+      // - it suffices to look at the normal vector and check that it has changed.
+      if ( ( formerN[ 0 ] == state.N[ 0 ] )
+           && ( formerN[ 1 ] == state.N[ 1 ] )
+           && ( formerN[ 2 ] == state.N[ 2 ] ) )
+        { // optimum
+          optimum = true;
+        }
+      else
+        { // better width found.
+          width.first = state.max - state.min;
+          width.second = state.N[ z ];
+          formerN[ 0 ] = state.N[ 0 ]; formerN[ 1 ] = state.N[ 1 ]; formerN[ 2 ] = state.N[ 2 ];
+        }
+      if (loop>=1000) {
+        trace.warning() << "[ChordNaivePlaneComputer::axisWidth()]"
+                  << " more than 1000 loops, computing error suspected" << std::endl;
+        trace.warning() << "- Former state: " << *this << std::endl;
+        trace.warning() << "- Current state: ";
+        selfDisplay( trace.warning(), state );
+        trace.warning() << std::endl;
+        trace.warning() << "- Added Points: ";
+        for ( TInputIterator it = itB; it != itE; ++it )
+          trace.warning() << " " << *it;
+        trace.warning() << std::endl;
+        optimum = true;
+      }
+    }
+  return width;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+inline
+std::pair<TInternalScalar, TInternalScalar>
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+axisWidth( TInputIterator itB, TInputIterator itE ) const
+{
+  return axisWidth( _state, itB, itE );
+}
+
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+extend( TInputIterator itB, TInputIterator itE )
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  if ( itB == itE ) return true;
+  unsigned int loop;
+  ASSERT( isValid() );
+  if ( empty() ) { // case where object is empty.
+    bool ok = satisfies( _state, itB, itE );
+    if ( ok ) // ideal case: all points false within current plane.
+      {
+        myState = _state;
+        myPointSet.insert( itB, itE );
+        // std::cout << "- (Group extend) satisfies for " << *this << std::endl;
+      }
+    return ok;
+  }
+  // Object contains already some points.
+  _state = myState;
+  bool changed = updateMinMax( _state, itB, itE );
+  if ( ! changed ) { // cases where added points did not change the bounds.
+    myPointSet.insert( itB, itE );
+    // std::cout << "- (Group extend) unchanged for " << *this << std::endl;
+    return true;
+  }
+  if ( myState.nbValid < 3 )
+    { // initial case
+      _state.nbValid = findMixedTriangle( _state,
+                                          myPointSet.begin(), myPointSet.end(),
+                                          itB, itE );
+      setUpNormal( _state );
+      // std::cout << "- (Group extend) findTriangle #=" << _state.nbValid << std::endl;
+    }
+  else
+    {
+      _state = myState;
+      // std::cout << "- (Group extend) Getting state " << std::endl;
+    }
+  unsigned int result = 0; // 0: computing, 1: too large, 2: found.
+  for ( loop = 0; result == 0; ++loop )
+    {
+      computeHeight( _state );
+      // std::cout << "  - " << loop << "/h=" << _state.height
+      //           << "/N=" << _state.N[ z ]
+      //           << " : ";
+      // selfDisplay( std::cout, _state );
+      // std::cout << std::endl;
+      if ( ( _state.height * myWidth1 ) >= ( _state.N[ z ] * myWidth0 ) ) // because width is strict
+        result = 1;
+      else
+        {
+          computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+          updateMinMax( _state, itB, itE );
+          if ( checkWidth( _state ) )
+            { // ok, plane is fine.
+              result = 2;
+            }
+          else if ( _state.nbValid >= 2 )
+            { // in case 2 and 3, we have a starting triangle.
+              InputPoint M = _state.ptMax - _state.ptMin;
+              if ( ( M[ x ] == 0 ) && ( M[ y ] == 0 ) )
+                { // Case where M is aligned with axis, width is M[ z ].
+                  result = M[ z ] * myWidth1 >= myWidth0 ? 1 : 2;
+                }
+              else
+                {
+                  newCurrentTriangle( _state, M );
+                  computeNormal( _state );
+                }
+            }
+          else
+            { // in case 1, normal is already aligned with main axis.
+              _state.A = _state.ptMax - _state.ptMin;
+            }
+        }
+      if (loop>=1000) {
+        trace.warning() << "[ChordNaivePlaneComputer::extend(Iterator,Iterator)]"
+                  << " more than 1000 loops, computing error suspected" << std::endl;
+        trace.warning() << "- Former state: " << *this << std::endl;
+        trace.warning() << "- Current state: ";
+        selfDisplay( trace.warning(), _state );
+        trace.warning() << std::endl;
+        trace.warning() << "- Points: ";
+        for ( ConstIterator it = this->begin(), itEnd = this->end();
+              it != itEnd; ++it )
+          trace.warning() << " " << *it;
+        trace.warning() << std::endl;
+        trace.warning() << "- Added Points: ";
+        for ( TInputIterator it2 = itB; it2 != itE; ++it2 )
+          trace.warning() << " " << *it2;
+        trace.warning() << std::endl;
+        result = 1;
+      }
+    }
+  // find a correct plane.
+  if ( result == 2 )
+    {
+      myState = _state;
+      myPointSet.insert( itB, itE );
+      return true;
+    }
+  // was unable to find a correct plane.
+  return false;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+isExtendable( TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  if ( itB == itE ) return true;
+  unsigned int loop;
+  ASSERT( isValid() );
+  if ( empty() )
+    { // case where object is empty.
+      return satisfies( _state, itB, itE );
+    }
+  // Object contains already some points.
+  _state = myState;
+  bool changed = updateMinMax( _state, itB, itE );
+  if ( ! changed )
+    { // cases where added points did not change the bounds.
+      return true;
+    }
+  if ( myState.nbValid < 3 )
+    { // initial case
+      _state.nbValid = findMixedTriangle( _state,
+                                          myPointSet.begin(), myPointSet.end(),
+                                          itB, itE );
+      setUpNormal( _state );
+    }
+  else
+    {
+      _state = myState;
+    }
+  unsigned int result = 0; // 0: computing, 1: too large, 2: found.
+  for ( loop = 0; result == 0; ++loop )
+    {
+      computeHeight( _state );
+      if ( ( _state.height * myWidth1 ) >= ( _state.N[ z ] * myWidth0 ) ) // because width is strict
+        result = 1;
+      else
+        {
+          computeMinMax( _state, myPointSet.begin(), myPointSet.end() );
+          updateMinMax( _state, itB, itE );
+          if ( checkWidth( _state ) )
+            { // ok, plane is fine.
+              result = 2;
+            }
+          else if ( _state.nbValid >= 2 )
+            { // in case 2 and 3, we have a starting triangle.
+              InputPoint M = _state.ptMax - _state.ptMin;
+              if ( ( M[ x ] == 0 ) && ( M[ y ] == 0 ) )
+                { // Case where M is aligned with axis, width is M[ z ].
+                  result = M[ z ] * myWidth1 >= myWidth0 ? 1 : 2;
+                }
+              else
+                {
+                  newCurrentTriangle( _state, M );
+                  computeNormal( _state );
+                }
+            }
+          else
+            { // in case 1, normal is already aligned with main axis.
+              _state.A = _state.ptMax - _state.ptMin;
+            }
+        }
+      if (loop>=1000) {
+        trace.warning() << "[ChordNaivePlaneComputer::isExtendable(Iterator,Iterator)]"
+                  << " more than 1000 loops, computing error suspected" << std::endl;
+        trace.warning() << "- Former state: " << *this << std::endl;
+        trace.warning() << "- Current state: ";
+        selfDisplay( trace.warning(), _state );
+        trace.warning() << std::endl;
+        trace.warning() << "- Points: ";
+        for ( ConstIterator it = this->begin(), itEnd = this->end();
+              it != itEnd; ++it )
+          trace.warning() << " " << *it;
+        trace.warning() << std::endl;
+        trace.warning() << "- Added Points: ";
+        for ( TInputIterator it2 = itB; it2 != itE; ++it2 )
+          trace.warning() << " " << *it2;
+        trace.warning() << std::endl;
+        result = 1;
+      }
+    }
+  // find a correct plane.
+  return result == 2;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::Primitive
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+primitive() const
+{
+  typedef typename Space::RealVector RealVector;
+  typedef typename RealVector::Component Scalar;
+  RealVector N;
+  for ( Dimension i = 0; i < 3; ++i )
+    N[ i ] = NumberTraits<InternalScalar>::castToDouble( myState.N[ i ] );
+  Scalar min = NumberTraits<InternalScalar>::castToDouble( myState.min );
+  Scalar max = NumberTraits<InternalScalar>::castToDouble( myState.max );
+  return Primitive( min, N, max - min );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename Vector3D>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+getNormal( Vector3D & normal ) const
+{
+  for ( Dimension i = 0; i < 3; ++i )
+    normal[ i ] = NumberTraits<InternalScalar>::castToDouble( myState.N[ i ] );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+const typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::InternalVector&
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+exactNormal() const
+{
+  return myState.N;
+}
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename Vector3D>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+getUnitNormal( Vector3D & normal ) const
+{
+  getNormal( normal );
+  double l = sqrt( normal[ 0 ] * normal[ 0 ]
+		   + normal[ 1 ] * normal[ 1 ]
+		   + normal[ 2 ] * normal[ 2 ] );
+  normal[ 0 ] /= l;
+  normal[ 1 ] /= l;
+  normal[ 2 ] /= l;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+getBounds( double & min, double & max ) const
+{
+  double nx = NumberTraits<InternalScalar>::castToDouble( myState.N[ 0 ] );
+  double ny = NumberTraits<InternalScalar>::castToDouble( myState.N[ 1 ] );
+  double nz = NumberTraits<InternalScalar>::castToDouble( myState.N[ 2 ] );
+  double l = sqrt( nx*nx + ny*ny + nz*nz );
+  min = NumberTraits<InternalScalar>::castToDouble( myState.min ) / l;
+  max = NumberTraits<InternalScalar>::castToDouble( myState.max ) / l;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+const typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::InputPoint &
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+minimalPoint() const
+{
+  ASSERT( ! this->empty() );
+  return myState.ptMin;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+const typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::InputPoint &
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+maximalPoint() const
+{
+  ASSERT( ! this->empty() );
+  return myState.ptMax;
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TVector1, typename TVector2>
+inline
+typename DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::InternalScalar
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+internalDot( const TVector1 & u, const TVector2 & v )
+{
+  return (InternalScalar) u[ 0 ] * (InternalScalar) v[ 0 ]
+    +    (InternalScalar) u[ 1 ] * (InternalScalar) v[ 1 ]
+    +    (InternalScalar) u[ 2 ] * (InternalScalar) v[ 2 ];
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TVector1, typename TVector2>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+internalCross( InternalVector & n, const TVector1 & u, const TVector2 & v )
+{
+  n[ 0 ] = (InternalScalar) u[ 1 ] * (InternalScalar) v[ 2 ] - (InternalScalar) u[ 2 ] * (InternalScalar) v[ 1 ];
+  n[ 1 ] = (InternalScalar) u[ 2 ] * (InternalScalar) v[ 0 ] - (InternalScalar) u[ 0 ] * (InternalScalar) v[ 2 ];
+  n[ 2 ] = (InternalScalar) u[ 0 ] * (InternalScalar) v[ 1 ] - (InternalScalar) u[ 1 ] * (InternalScalar) v[ 0 ];
+}
+
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::selfDisplay ( std::ostream & out ) const
+{
+  selfDisplay( out, myState );
+}
+/**
+ * Writes/Displays the object on an output stream.
+ * @param out the output stream where the object is written.
+ */
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::selfDisplay ( std::ostream & out, const State & state ) const
+{
+  double min, max;
+  double N[ 3 ];
+  out << "[ChordNaivePlaneComputer"
+      << " axis=" << z << " w=" << myWidth0 << "/" << myWidth1
+      << " size=" << size()
+      << " N=(" << state.N[ 0 ] << "," << state.N[ 1 ] << "," << state.N[ 2 ] << ")"
+      << " A=(" << state.A[ 0 ] << "," << state.A[ 1 ] << "," << state.A[ 2 ] << ")"
+      << " B=(" << state.B[ 0 ] << "," << state.B[ 1 ] << "," << state.B[ 2 ] << ")"
+      << " C=(" << state.C[ 0 ] << "," << state.C[ 1 ] << "," << state.C[ 2 ] << ")"
+      << " #=" << state.nbValid
+      << " min=" << state.min
+      << " max=" << state.max
+      << ": ";
+  this->getUnitNormal( N );
+  this->getBounds( min, max );
+  out << min << " <= "
+      << N[ 0 ] << " * x + "
+      << N[ 1 ] << " * y + "
+      << N[ 2 ] << " * z "
+      << " <= " << max << " ]";
+}
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::isValid() const
+{
+  return z < 3;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Internals
+///////////////////////////////////////////////////////////////////////////////
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+setUpNormal( State & state ) const
+{
+  switch ( state.nbValid ) {
+  case 1: setUpNormal1( state ); break;
+  case 2: setUpNormal2( state ); break;
+  case 3: setUpNormal3( state ); break;
+  }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+setUpNormal1( State & state ) const
+{
+  state.A.reset();
+  state.B.reset();
+  state.C.reset();
+  state.N[ x ] = state.N[ y ] = NumberTraits<InternalScalar>::ZERO;
+  state.N[ z ] = NumberTraits<InternalScalar>::ONE;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+setUpNormal2( State & state ) const
+{ // In this case, we create an imaginary point in the plane 0xy, orthogonal to direction AB.
+  state.N[ x ] = state.N[ y ] = NumberTraits<InternalScalar>::ZERO;
+  state.N[ z ] = NumberTraits<InternalScalar>::ONE;
+  state.A = state.B - state.A;
+  // 3 next lines compute internalCross( state.C, state.A, state.N );
+  state.C[ x ] = state.A[ y ];
+  state.C[ y ] = -state.A[ x ];
+  state.C[ z ] = 0;
+  if ( ( state.C[ x ] != 0 ) || ( state.C[ y ] != 0 ) )
+    // zero iff _state.A is aligned with main axis
+    internalCross( state.N, state.C, state.A );
+  state.B = -state.A - state.C;
+  if ( state.N[ z ] < 0 ) {
+    state.N[ 0 ] = -state.N[ 0 ];
+    state.N[ 1 ] = -state.N[ 1 ];
+    state.N[ 2 ] = -state.N[ 2 ];
+    InputPoint M = state.A;
+    state.A = state.B;
+    state.B = M;
+  }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+setUpNormal3( State & state ) const
+{
+  state.A = state.B - state.A; // p2 - p1;
+  state.B = state.C - state.B; // p3 - p2;
+  state.C = -state.A - state.B;// p1 - p3;
+  computeNormal( state );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+setUp1( const InputPoint & p1 )
+{
+  myState.nbValid = 1;
+  myState.height = NumberTraits<InternalScalar>::ZERO;
+  setUpNormal1( myState );
+  myState.ptMax = p1;
+  myState.ptMin = p1;
+  myState.max = (InternalScalar) p1[ z ];
+  myState.min = myState.max;
+  return true;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+int
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+signDelta( const InputPoint & A, const InputPoint & B, const InputPoint & C ) const
+{
+  InternalScalar res =
+    ( (InternalScalar) (B[ x ]-A[ x ]) ) * ( (InternalScalar) (C[ y ]-A[ y ]) )
+    - ( (InternalScalar) (B[ y ]-A[ y ]) ) * ( (InternalScalar) (C[ x ]-A[ x ]) );
+  return ( res > (InternalScalar) 0 )
+    ? 1 : ( ( res < (InternalScalar) 0 ) ? -1 : 0 );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+int
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+signDelta( const InputPoint & A, const InputPoint & C ) const
+{ // B is zero
+  InternalScalar res =
+    ( (InternalScalar) (-A[ x ]) ) * ( (InternalScalar) (C[ y ]-A[ y ]) )
+    + ( (InternalScalar) (A[ y ]) ) * ( (InternalScalar) (C[ x ]-A[ x ]) );
+  return ( res > (InternalScalar) 0 )
+    ? 1 : ( ( res < (InternalScalar) 0 ) ? -1 : 0 );
+}
+
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+updateMinMax( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  bool changed = false;
+  for ( ; itB != itE; ++itB )
+    {
+      _d = internalDot( state.N, *itB );
+      if ( _d > state.max ) {
+        state.max = _d;
+        state.ptMax = *itB;
+        changed = true;
+      } else if ( _d < state.min ) {
+        state.min = _d;
+        state.ptMin = *itB;
+        changed = true;
+      }
+    }
+  return changed;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+computeMinMax( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  ASSERT( itB != itE );
+  _d = internalDot( state.N, *itB );
+  state.min = state.max = _d;
+  state.ptMin = state.ptMax = *itB;
+  ++itB;
+  for ( ; itB != itE; ++itB )
+    {
+      _d = internalDot( state.N, *itB );
+      if ( _d > state.max ) {
+        state.max = _d;
+        state.ptMax = *itB;
+      } else if ( _d < state.min ) {
+        state.min = _d;
+        state.ptMin = *itB;
+      }
+    }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+unsigned int
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+findTriangle( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  if ( itB == itE ) return 0;
+  state.A = *itB++; // first point
+  for ( ; ( itB != itE ) && alignedAlongAxis( state.A, *itB ); ++itB )
+    ;
+  if ( itB == itE ) return 1;
+  state.B = *itB++; // second point
+  for ( ; ( itB != itE ) && ( signDelta( state.A, state.B, *itB ) == 0 ); ++itB )
+    ;
+  if ( itB == itE ) return 2;
+  state.C = *itB;   // third point
+  return 3;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+unsigned int
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+findTriangle1( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  for ( ; ( itB != itE ) && alignedAlongAxis( state.A, *itB ); ++itB )
+    ;
+  if ( itB == itE ) return 1;
+  state.B = *itB++; // second point
+  for ( ; ( itB != itE ) && ( signDelta( state.A, state.B, *itB ) == 0 ); ++itB )
+    ;
+  if ( itB == itE ) return 2;
+  state.C = *itB;   // third point
+  return 3;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator>
+unsigned int
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+findTriangle2( State & state, TInputIterator itB, TInputIterator itE ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator> ));
+  for ( ; ( itB != itE ) && ( signDelta( state.A, state.B, *itB ) == 0 ); ++itB )
+    ;
+  if ( itB == itE ) return 2;
+  state.C = *itB;   // third point
+  return 3;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+template <typename TInputIterator1, typename TInputIterator2>
+unsigned int
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+findMixedTriangle( State & state,
+                   TInputIterator1 itB1, TInputIterator1 itE1,
+                   TInputIterator2 itB2, TInputIterator2 itE2 ) const
+{
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator1> ));
+  BOOST_CONCEPT_ASSERT(( boost::InputIterator<TInputIterator2> ));
+  if ( itB1 == itE1 ) return findTriangle( state, itB2, itE2 ) ;
+  state.A = *itB1++; // first point
+  for ( ; ( itB1 != itE1 ) && alignedAlongAxis( state.A, *itB1 ); ++itB1 )
+    ;
+  if ( itB1 == itE1 ) return findTriangle1( state, itB2, itE2 );
+
+  state.B = *itB1++; // second point
+  for ( ; ( itB1 != itE1 ) && ( signDelta( state.A, state.B, *itB1 ) == 0 ); ++itB1 )
+    ;
+  if ( itB1 == itE1 ) return findTriangle2( state, itB2, itE2 );
+  state.C = *itB1;   // third point
+  return 3;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+alignedAlongAxis( const InputPoint & p1, const InputPoint & p2 ) const
+{
+ return ( p1[ x ] == p2[ x ] ) && ( p1[ y ] == p2[ y ] );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+computeHeight( State & state ) const
+{
+  state.height = internalDot( state.A, state.N );
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+void
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+computeNormal( State & state ) const
+{
+  ASSERT( state.nbValid >= 2 );
+  internalCross( state.N, state.B - state.A, state.C - state.A );
+  if ( state.N[ z ] < 0 ) {
+    state.N[ 0 ] = -state.N[ 0 ];
+    state.N[ 1 ] = -state.N[ 1 ];
+    state.N[ 2 ] = -state.N[ 2 ];
+    InputPoint M = state.A;
+    state.A = state.B;
+    state.B = M;
+  }
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+checkWidth( const State & state ) const
+{
+  return ( state.max - state.min ) <= state.height;
+}
+//-----------------------------------------------------------------------------
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+bool
+DGtal::ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar>::
+newCurrentTriangle( State & state, const InputPoint & M ) const
+{
+  ASSERT( state.nbValid >= 2 );
+  int da =  signDelta( state.A, M ); // A, O, M
+  int db =  signDelta( state.B, M ); // B, O, M
+  int dc =  signDelta( state.C, M ); // C, O, M
+  if ( ( da >= 0 ) && ( db <= 0 ) ) {
+    if ( ( signDelta( state.A, state.B ) == 0 ) && ( da == 0 ) ) {
+      if ( ( state.A[ x ] * M[ x ] > 0 ) || ( state.A[ y ] * M[ y ] > 0 ) )
+        state.A = M;
+      else
+        state.B = M;
+    } else
+      state.C = M;
+  } else if ( ( db >= 0 ) && ( dc <= 0 ) ) {
+    if ( ( signDelta( state.B, state.C ) ==0 ) && ( db == 0 ) ) {
+      if ( ( state.B[ x ] * M[ x ] > 0 ) || ( state.B[ y ] * M[ y ] > 0 ) )
+        state.B = M;
+      else
+        state.C = M;
+    } else
+      state.A = M;
+  } else if ( ( dc >= 0 ) && ( da <= 0 ) ) {
+    if ( ( signDelta( state.C, state.A ) ==0 ) && ( dc == 0 ) ) {
+      if ( ( state.C[ x ] * M[ x ] > 0 ) || ( state.C[ y ] * M[ y ] > 0 ) )
+        state.C = M;
+      else
+        state.A = M;
+    } else
+      state.B = M;
+  } else {
+    trace.warning() << "[ChordNaivePlaneComputer::newCurrentTriangle]"
+              << " cannot find a triangle cutting the main axis" << std::endl;
+    return false;
+  }
+  return true;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Implementation of inline functions                                        //
+
+template <typename TSpace, typename TInputPoint, typename TInternalScalar>
+inline
+std::ostream&
+DGtal::operator<< ( std::ostream & out,
+                    const ChordNaivePlaneComputer<TSpace, TInputPoint, TInternalScalar> & object )
+{
+  object.selfDisplay( out );
+  return out;
+}
+
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////

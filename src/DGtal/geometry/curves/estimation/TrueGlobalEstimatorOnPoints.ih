@@ -1,0 +1,146 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2011/06/27
+ *
+ * Implementation of inline methods defined in TrueGlobalEstimatorOnPoints.h.h
+ *
+ * This file is part of the DGtal library.
+ */
+
+
+//////////////////////////////////////////////////////////////////////////////
+#include <cstdlib>
+//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// IMPLEMENTATION of inline methods.
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+// ----------------------- Standard services ------------------------------
+
+
+/**
+ * Constructor.
+ */
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::TrueGlobalEstimatorOnPoints(const double h, 
+                      const ConstIteratorOnPoints& itb, 
+                      const ConstIteratorOnPoints& ite,
+                      PShape* aShape,
+                      const bool& isClosed) 
+{
+  init(h,itb,ite,aShape,isClosed);
+}
+
+/**
+ * Init.
+ */
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+void
+DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::init(const double h, 
+                  const ConstIteratorOnPoints& itb, 
+                  const ConstIteratorOnPoints& ite,
+                  PShape* aShape,
+                  const bool& isClosed) 
+{
+  myH = h;
+
+  myBegin = itb;
+  myEnd = ite;
+  
+  myFlagIsClosed = isClosed;
+  myFlagIsInit = true;
+  
+  myFunctor =  ParametricShapeFunctor(aShape);
+  
+}
+
+/**
+ * @return the estimated quantity at *it
+ * from itb till ite
+ */
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+typename DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::Quantity
+DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::eval()
+{
+  ASSERT(myH>0);
+  if (myFlagIsClosed) {
+    return myFunctor();
+  } else {
+    //get the first and last points
+    ConstIteratorOnPoints i = myBegin;
+    ConstIteratorOnPoints j(i); ++j; 
+    for ( ; j != myEnd ; ++i, ++j) {}
+    //myH is the coordinates unit
+    RealPoint p( *myBegin );
+    p *= myH;
+    RealPoint p2( *i );
+    p2 *= myH;
+    return myFunctor(p,p2);
+  }
+}
+
+  
+/**
+ * @return the estimated quantity at *it
+ */
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+typename DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::Quantity 
+DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::eval(const ConstIteratorOnPoints& itb,
+                   const ConstIteratorOnPoints& ite)
+{
+  ASSERT(myH>0);
+  if (myFlagIsClosed) {
+    return myFunctor();
+  } else {
+    //get the first and last points
+    ConstIteratorOnPoints i = itb;
+    ConstIteratorOnPoints j(i); ++j; 
+    for ( ; j != ite; ++i, ++j) {};
+    //myH is the coordinates unit
+    RealPoint p( *itb );
+    p *= myH;
+    RealPoint p2( *i );
+    p2 *= myH;
+    return myFunctor(p,p2);
+  }
+}
+
+
+/**
+ * Checks the validity/consistency of the object.
+ * @return 'true' if the object is valid, 'false' otherwise.
+ */
+template <typename CIt, typename PShape, typename PShapeFunctor>
+inline
+bool
+DGtal::TrueGlobalEstimatorOnPoints<CIt,PShape,PShapeFunctor>::isValid() const
+{
+    return myFlagIsInit;
+}
+
+

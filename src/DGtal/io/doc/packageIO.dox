@@ -1,0 +1,62 @@
+/**
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Lesser General Public License as
+ *  published by the Free Software Foundation, either version 3 of the
+ *  License, or  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ **/
+
+/**
+ * @file packageIO.dox
+ * @author David Coeurjolly (\c david.coeurjolly@liris.cnrs.fr )
+ * Laboratoire d'InfoRmatique en Image et Systèmes d'information - LIRIS (CNRS, UMR 5205), CNRS, France
+ *
+ * @date 2012/05/10
+ *
+ * Documentation file for feature IO
+ *
+ * This file is part of the DGtal library.
+ */
+
+/*
+ * Useful to avoid writing DGtal:: in front of every class.
+ * Do not forget to add an entry in src/DGtal/base/Config.h.in !
+ */
+namespace DGtal {
+//----------------------------------------
+/*!
+@page packageIO  IO package
+
+@managers David Coeurjolly, Bertrand Kerautret
+
+@b LICENSE: LGPL.  GPL if you use QGLViewer (Viewer3D)
+
+
+@b Package @b Overview
+
+In this package, we present DGtal tools and utilities to import/export images and visualize digital data using interactive (viewers) and non-interactive (boards) mechanisms.
+
+@b Modules
+
+- \ref moduleBoard2D (Jacques-Olivier Lachaud, Nicolas Normand, David Coeurjolly, Martial Tola)
+- \ref moduleDisplay3D (Bertrand Kerautret, Martial Tola, Aline Martin, David Coeurjolly)
+  - \ref moduleQGLInteraction (Jacques-Olivier Lachaud, Bertrand Kerautret)
+  - \ref moduleQGLExtension (Jacques-Olivier Lachaud)
+- \ref moduleIO (David Coeurjolly, Bertrand Kerautret, Martial Tola, Pierre Gueth)
+
+@b Package @b Concepts @b Overview
+
+- packageIOConcepts
+
+
+*/
+
+}
