@@ -135,6 +135,7 @@ staticman:
   branch     : # "master"
   endpoint   : # URL of your own deployment with trailing slash, will fallback to the public GitLab instance
   # reCaptcha for Staticman (OPTIONAL)
+  # If you use recaptcha, you must also set these parameters in staticman.yml
   reCaptcha:
     siteKey  : # Use your OWN site key.  You may apply to Google for one.
     secret   : # (!) ENCRYPT your password by opening https://staticman3.herokuapp.com/v3/encrypt/{your-site-secret}
