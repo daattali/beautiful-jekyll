@@ -129,6 +129,17 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
 
+# Staticman support
+staticman:
+  repository : # GitHub username/repo-name e.g. "daattali/beautiful-jekyll"
+  branch     : # "master"
+  endpoint   : # URL of your own deployment with trailing slash, will fallback to the public GitLab instance
+  # reCaptcha for Staticman (OPTIONAL)
+  # If you use recaptcha, you must also set these parameters in staticman.yml
+  reCaptcha:
+    siteKey  : # Use your OWN site key.  You may apply to Google for one.
+    secret   : # (!) ENCRYPT your password by opening https://staticman3.herokuapp.com/v3/encrypt/{your-site-secret}
+
 # --- Misc --- #
 
 # Facebook App ID
