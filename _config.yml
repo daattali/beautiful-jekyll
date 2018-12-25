@@ -131,14 +131,14 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Staticman support
 staticman:
-  repository : # GitHub username/repo-name e.g. "daattali/beautiful-jekyll"
-  branch     : # "master"
-  endpoint   : # URL of your own deployment with trailing slash, will fallback to the public GitLab instance
-  # reCaptcha for Staticman (OPTIONAL)
-  # If you use recaptcha, you must also set these parameters in staticman.yml
+  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  branch     : # eg. "master" If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+  endpoint   : # URL of your own deployment (with trailing slash) (will fallback to a public GitLab instance)
   reCaptcha:
-    siteKey  : # Use your OWN site key.  You may apply to Google for one.
-    secret   : # (!) ENCRYPT your password by opening https://staticman3.herokuapp.com/v3/encrypt/{your-site-secret}
+    # reCaptcha for Staticman (OPTIONAL)
+    # If you use reCaptcha, you must also set these parameters in staticman.yml
+    siteKey  : # Use your own site key, you need to apply for one on Google
+    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
