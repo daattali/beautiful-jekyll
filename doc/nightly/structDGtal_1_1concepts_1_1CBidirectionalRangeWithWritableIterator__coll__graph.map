@@ -1,4 +1,0 @@
-<map id="DGtal::concepts::CBidirectionalRangeWithWritableIterator&lt; T, Value &gt;" name="DGtal::concepts::CBidirectionalRangeWithWritableIterator&lt; T, Value &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIterator.html" title="Aim: refined concept of const single pass range which require that an output iterator exists..." alt="" coords="103,192,311,244"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="182,92,387,131"/>
-</map>

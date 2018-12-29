@@ -1,3 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1functors_1_1BasicDomainSubSampler.html" title="Aim: Functor that subsamples an initial domain by given a grid size and a shift vector. By this way, for a given point considered in a new domain, it allows to recover the point coordinates in the source domain. Such functor can be usefull to apply basic image subsampling in any dimensions by using ImageAdapter class. " alt="" coords="5,5,225,57"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor &gt;" name="DGtal::LambdaMST3DEstimator&lt; TSpace, TSegmentation, Functor &gt;">
-<area shape="rect" id="node3" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="DGtal::InHalfPlaneBySimple3x3\lMatrix\&lt; Point, double \&gt;" alt="" coords="1679,55,1889,93"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1SimpleMatrix.html" title="DGtal::SimpleMatrix\l\&lt; Integer, 3, 3 \&gt;" alt="" coords="1071,55,1211,93"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o..." alt="" coords="1317,88,1527,127"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1). " alt="" coords="754,88,926,127"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="150,61,257,87"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="DGtal::concepts::CAdjacency&lt; Adj &gt;" name="DGtal::concepts::CAdjacency&lt; Adj &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="DGtal::concepts::CUndirected\lSimpleLocalGraph\&lt; Adj \&gt;" alt="" coords="920,61,1118,100"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html" title="DGtal::concepts::CVertex\lPredicateArchetype\&lt; Vertex \&gt;" alt="" coords="324,71,523,109"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces..." alt="" coords="629,29,827,68"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html" title="Aim: Defines a an archetype for concept CVertexPredicate. " alt="" coords="5,71,212,109"/>
-</map>

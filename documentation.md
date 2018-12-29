@@ -26,7 +26,7 @@ title: Documentation & Help
 * [Report a bug or a feature request][21]
 
 [1]: http://dgtal.org/doc/stable/
-[2]: http://dgtal.org/doc/nightly/index.html "DGtal Nightly Doxygen Doc."
+[2]: https://dgtal-team.github.io/Documentation-nightly/ "DGtal Nightly Doxygen Doc."
 [3]: http://dgtal.org/doc/docset/DGtal.xml
 [4]: http://kapeli.com/dash
 [5]: http://zealdocs.org/
