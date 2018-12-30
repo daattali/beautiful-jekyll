@@ -1,5 +1,17 @@
+---
+layout: post
+title:  Building Recommender System in Spark : Alternating Least Squares Algorithm
+subtitle:  Matrix Factorization
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [spark,pyspark, python, big data,distributed datasets,ALS]
+---
 
-### Building Recommender System in Spark : Alternating Least Squares Algorithm
+
+
+
+
+
 
 A common challenge  for online companies such as in  retail marketing is that of recommending new products to users in personalized settings (e.g. Amazon's product recommender system, and ebay recom-mendations). Often not only is interest in recommending new products but also recommending products that have been purchased in the past by the shopper and adding a targeted discount coupon with the goal of  increasing sales. A common approach to solving this problem is through matrix factorization, where given the ratings
 that users have given certain items and are tasked with predicting their ratings for the rest of the items. 
