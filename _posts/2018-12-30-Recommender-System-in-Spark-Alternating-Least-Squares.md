@@ -9,7 +9,7 @@ tags: [spark,pyspark,matrix factorization, Alternating Least Squares]
 
 
 
-
+#### Building Recommender System in Spark : Alternating Least Squares Algorithm
 
 
 
