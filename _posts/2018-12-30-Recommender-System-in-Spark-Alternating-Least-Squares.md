@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Building Recommender System in Spark  Alternating Least Squares Algorithm 
-subtitle: RDDs and DataFrames
+subtitle: Personlized Recommendation with Matrix Factorization 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
-tags: [spark, python, big data,distributed datasets]
+tags: [spark,pyspark,matrix factorization, Alternating Least Squares]
 ---
 
 
