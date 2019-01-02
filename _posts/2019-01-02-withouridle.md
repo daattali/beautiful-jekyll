@@ -6,7 +6,7 @@ permalink: /_programming_/
 
 কোন কিছু `install` করা ছাড়াই পাইথন দিয়ে প্রোগ্রামিং শিখুন । প্রথমেই *https://repl.it* ওয়েবসাইট এ যান । ল্যাঙ্গুয়েজ হিসেবে পাইথন ৩ সিলেক্ট করুন । 
 <p align=center>
-<img src="https://user-images.githubusercontent.com/35966401/50602178-d4f80d00-0ee0-11e9-9124-393bf65948fb.png" alt="">
+<img src="https://user-images.githubusercontent.com/35966401/50602178-d4f80d00-0ee0-11e9-9124-393bf65948fb.png" alt="h">
 </p> 
 
 কাজ শেষ, এবার কোড করার পালা । চলুন শুরু করা যাক ঃ
