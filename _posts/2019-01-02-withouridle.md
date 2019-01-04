@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ইনস্টল ছাড়াই পাইথন 
+tags: [python, programming]
 permalink: /_programming_/
 ---
 
