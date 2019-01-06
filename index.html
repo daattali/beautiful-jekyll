@@ -22,7 +22,25 @@ bigimg:
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Postado em
+      <!-- Whitespace added for readability -->
+      {% assign m = post.date | date: "%-m" %}
+      {{ post.date | date: "%-d" }}
+      {% case m %}
+        {% when '1' %}Janeiro
+        {% when '2' %}Fevereiro
+        {% when '3' %}Março
+        {% when '4' %}Abril
+        {% when '5' %}Maio
+        {% when '6' %}Junho
+        {% when '7' %}Julho
+        {% when '8' %}Agosto
+        {% when '9' %}Setembro
+        {% when '10' %}Outubro
+        {% when '11' %}Novembro
+        {% when '12' %}Dezembro
+      {% endcase %}
+      {{ post.date | date: "%Y" }}
     </p>
 
     <div class="post-entry-container">
