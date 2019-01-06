@@ -1,6 +1,8 @@
 ---
 layout: post
-title: প্রোগ্রামিং 
+title: প্রোগ্রামিং
+subtitle: দেখা যাক 
+tags: [javascript, programming]
 permalink: /__programming__/
 ---
 
