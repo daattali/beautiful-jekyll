@@ -8,7 +8,19 @@ comments: true
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
+      {% if page.tags %}
+        <div class="blog-tags">
+          Tags:
+          {% if site.link-tags %}
+            {% for tag in page.tags %}
+              <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+            {% endfor %}
+          {% else %}
+            {{ page.tags | join: ", " }}
+          {% endif %}
+        </div>
+      {% endif %}
+      
       {% if page.gh-repo %}
         {% assign gh_split =  page.gh-repo | split:'/'  %}
         {% assign gh_user =  gh_split[0]  %}
@@ -35,19 +47,6 @@ comments: true
       <article role="main" class="blog-post">
         {{ content }}
       </article>
-
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
-          {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
-          {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
-        </div>
-      {% endif %}
 
       {% if page.social-share %}
         {% include social-share.html %}

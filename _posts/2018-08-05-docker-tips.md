@@ -5,7 +5,7 @@ subtitle: 5 dicas muito úteis para seu dia a dica com o docker.
 date: 2018-08-05 13:00:00
 image: /img/docker-tips.png
 share-img: /img/docker-tips.png
-tags: docker, devops, dicas, ferramentas, tips, tricks
+tags: [docker, devops, dicas, ferramentas, tips, tricks]
 categories: docker dicas
 ---
 

@@ -5,7 +5,7 @@ subtitle: tenha cuidado com tudo
 date: 2018-01-29 23:10:00
 image: /img/anonymous-hacker.jpg
 share-img: /img/anonymous-hacker.jpg
-tags: segurança, dicas
+tags: [seguranca, dicas]
 categories: geral
 ---
 

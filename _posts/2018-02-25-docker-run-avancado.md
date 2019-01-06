@@ -5,7 +5,7 @@ subtitle: muito alem de um simples docker run...[Parte 1]
 date: 2018-02-26 22:00:00
 image: /img/docker_logo_2.png
 share-img: /img/docker_logo_2.png
-tags: tutorial, docker, dicas
+tags: [tutorial, docker, dicas]
 categories: tutorial docker
 ---
 

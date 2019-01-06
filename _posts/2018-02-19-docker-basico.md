@@ -5,7 +5,7 @@ subtitle: uma baleia que está mudando o modo como fizemos deploy...
 date: 2018-02-19 21:00:00
 image: /img/docker_logo.jpg
 share-img: /img/docker_logo.jpg
-tags: tutorial, docker, dicas
+tags: [tutorial, docker, dicas]
 categories: tutorial
 ---
 

@@ -5,7 +5,7 @@ subtitle: Subindo uma infra na aws utilizando CloudFormation
 date: 2018-03-14 13:00:00
 image: /img/iac_icon.png
 share-img: /img/iac_icon.png
-tags: iac, devops, infragil, ferramentas
+tags: [iac, devops, infragil, ferramentas]
 categories: devops iac
 ---
 
