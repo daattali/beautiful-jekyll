@@ -13,7 +13,7 @@ For instance, you can use the _Get-VMHost_ cmdlet to list your vSphere hosts. We
 
 A cmdlet is essentially a simplified way, provided by VMware, of doing something that you could do in a more convoluted way. Well, when you work with SRM you have no choice but to go with the latter. But that's fine because it is a very interesting and instructional process.
 
-I wrote a short 3 parts guide for the Vembu as a guest blogger to help folks who want to get started with the SRM module. I also provide a few functions I wrote that I needed for my scripting and also to serve as an example to help understand the whole thing.
+I wrote a short 3 parts guide for Vembu as a guest blogger to help folks who want to get started with the SRM module. I also provide a few functions I wrote that I needed for my scripting and also to serve as an example to help understand the whole thing.
 
 [SRM in PowerCLI: Part 1 – Introduction](https://www.vembu.com/blog/srm-powercli-introduction/ "SRM in PowerCLI part 1")
 
