@@ -15,8 +15,7 @@ We expect students ("you") to do the same. For more detailed information, see UB
 
 ## Our Standards
 
-Examples of behavior that contributes to creating a positive environment
-include:
+Examples of behaviour that contributes to creating a positive environment include:
 
 * Using welcoming and inclusive language
 * Being respectful of differing viewpoints and experiences
@@ -24,7 +23,7 @@ include:
 * Focusing on what is best for the community
 * Showing empathy towards other community members
 
-Examples of unacceptable behavior by participants include:
+Examples of unacceptable behaviour include:
 
 * The use of sexualized language or imagery and unwelcome sexual attention or
   advances
@@ -44,8 +43,8 @@ We will happily refer to you by your prefered personal pronoun and name.
 ## Our Responsibilities
 
 We are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+behaviour and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behaviour.
 
 ## Scope
 
@@ -57,7 +56,7 @@ account, or any of our social media accounts.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
+Instances of abusive, harassing, or otherwise unacceptable behaviour may be
 reported by contacting us. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. We are
