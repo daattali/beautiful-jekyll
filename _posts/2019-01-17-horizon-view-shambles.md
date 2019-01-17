@@ -5,7 +5,7 @@ DATE: ''
 date: 2019-01-17 09:02:13 +0100
 
 ---
-I started working with Horizon View for a customer a little less than a year ago. I had never used the product before and boy was life sweet. Although before ranting at Horizon View it is worth mentioning that the environment in which it is deployed is pretty complex. I consider this post a mix of self therapy and archives.
+I started working with Horizon View for a customer a little less than a year ago. I had never used the product before and boy was life sweet. I will consider this post a mix of self therapy and archives (I know, makes sense to me). Although before ranting at Horizon View it is worth mentioning that the environment in which it is deployed is pretty complex. 
 
 I will keep updating this post with new issues that worth the tale so I hope not a lot... If you encountered some of them or have information/ideas/theories **please share in the comments!**
 
