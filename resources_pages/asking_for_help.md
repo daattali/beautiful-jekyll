@@ -10,8 +10,6 @@ One reason we use Slack is so that you can ask for help. If you have a general q
 The reason for this is that often many students have the same question and it is much more efficient to have them answered in a public forum. Beyond that, it's often comforting for students to see other students asking questions,
 and generally encourages a vibrant Slack ecosystem.
 
-If you need to ask a course-related question privately, please open up a direct message thread with the lab instructor _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also keeps the others up to date on what is happening in the course.
-
 #### Anonymity
 
 If you want to ask a question anonymously, you can invoke the "Anonymous bot" with `/abot`.
