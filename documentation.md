@@ -18,9 +18,6 @@ title: Documentation & Help
 * [<img class="alignnone wp-image-289 size-medium" title="presDGTalFlux3DFinal_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presDGTalFlux3DFinal_thumb-300x79.png" alt="" width="300" height="79" />][16][DGtal 3D Streams (updated for DGtal version 0.6) ][17]
 * <img class="alignnone wp-image-416 size-medium" title="presentationDGtalProject_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presentationDGtalProject_thumb-300x75.png" alt="" width="300" height="75" />[DGtal Project Management][18]
 
-### Mailing lists
-* DGtal users: dgtal-users@lists.gforge.liris.cnrs.fr (subscription: [http://lists.gforge.liris.cnrs.fr/mailman/listinfo/dgtal-users][19])
-* DGtal devs: dgtal-devel@lists.gforge.liris.cnrs.fr (subscription:[ http://lists.gforge.liris.cnrs.fr/mailman/listinfo/dgtal-devel][20])
 
 ### Help us
 * [Report a bug or a feature request][21]
