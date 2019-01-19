@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to ask for help
+title: Asking for help
 ---
 
 

@@ -18,7 +18,7 @@ subtitle: For MDS students and beyond
 - [Course and lab repositories](/resources_pages/lab_submission)
 - [General lab instructions](/resources_pages/general_lab_instructions)
 - [Slack guidelines](/resources_pages/slack)
-- [How to ask for help](/resources_pages/asking_for_help)
+- [How to ask questions on Slack](/resources_pages/asking_for_help)
 - [MDS quizzes](/resources_pages/quiz)
 - [Career and professional development](/resources_pages/CareerandIndustryResources)
 - [Resources offered by UBC](/resources_pages/UBC_resources)
