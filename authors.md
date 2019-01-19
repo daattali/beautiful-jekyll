@@ -10,7 +10,7 @@ title: Authors
 
 ## DGtalTools Package Manager
 
-* Bertrand Kerautret (LORIA, Université de Lorraine)
+* Bertrand Kerautret (LIRIS, Université de Lyon)
 
 ## Main development team
 
@@ -36,7 +36,7 @@ title: Authors
 * Jérémy Gaillard (LIRIS, INSA-Lyon)
 * Xi Wang (LIRIS – CEN Météo-France)
 * Nicolas Silva (LIRIS, INSA-Lyon)
-* Jean-David Genevaux (LIRIS, Lyon 1)
+* Jean-David Genevaux (LIRIS, Lyon 1  )
 
 For any comment/question about the library itself, please use the mailing lists detailed in the [Documentation & Help][1] page. For any other request:
 
