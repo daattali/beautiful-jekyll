@@ -1,12 +1,12 @@
 ***
 
-| Date            | Time              |Course                                  |Seat Plan
+| Day            | Time              |Course                                  |Seat Plan
 | ------          | -----             | -----                                  |-----
-| *13-12-2018*  |  12:00 - 02:00 PM | *CSE214 Object Oriented Programming*   | 
-| *14-12-2018*  |  03:00 - 05:00 PM | *CSE221 Algorithms*                 | 316DT5(22) , 317DT5(16)
-| *15-12-2018*  |  12:00 - 02:00 PM | *MAT211 Engineering Mathematics*        |  Retake will take care of it
-|  *17-12-2018* |  03:00 - 05:00 PM | *STA133 Statistics and Probability*     |316DT5(18) , 317DT5(18), 318DT5(1)
-| *19-12-2018*  |  09:00 - 11:00 AM | *CSE224 Electronic Devices and Circuits* |304DT5(6) , 310DT5(26), 316DT5(11)
+| *Monday*  |  8:30-10:00 AM | 10:00-11:30 AM   | i
+| *Tuesday*  |  2:30-4:00 PM | 4:00-5:30 PM              |i
+| *wednesday*  |  10:00 - 11:30 AM | 11:30-2:30PM       |  i
+|  *Thursday* |  1:00-2:30 PM | 2:30-4:00 PM   |4:00-5:30 PM|o
+
 
 ***
                            |-----|-----
