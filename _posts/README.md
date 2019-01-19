@@ -1,6 +1,6 @@
 ***
 
-| Day            | Time              |Course                                  |Seat Plan
+| Day            | Time              |Time                             |u
 | ------          | -----             | -----                                  |-----
 | *Monday*  |  8:30-10:00 AM | 10:00-11:30 AM   | i
 | *Tuesday*  |  2:30-4:00 PM | 4:00-5:30 PM              |i
