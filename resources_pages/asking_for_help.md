@@ -12,6 +12,10 @@ and generally encourages a vibrant Slack ecosystem.
 
 If you need to ask a course-related question privately, please open up a direct message thread with the lab instructor _and_ the TA(s) for the relevant course. This allows the most qualified/available person to answer, and also keeps the others up to date on what is happening in the course.
 
+#### Anonymity
+
+If you want to ask a question anonymously, you can invoke the "Anonymous bot" with `/abot`.
+
 #### Asking a procedural question
 
 If you want to ask a procedural question (not about the material, for example asking to reschedule a quiz due to an important event or job interview) then you can leave out the TA(s) and just communicate with the lab instructor.
