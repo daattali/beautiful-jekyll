@@ -5,7 +5,7 @@ title: Authors
 
 ## DGtal Editorial Board
 
-* David Coeurjolly (LIRIS, CNRS)
+* [David Coeurjolly](https://perso.liris.cnrs.fr/david.coeurjolly/) (LIRIS, CNRS)
 * Jacques-Olivier Lachaud (LAMA, Université de Savoie)
 
 ## DGtalTools Package Manager
