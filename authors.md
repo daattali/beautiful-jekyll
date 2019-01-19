@@ -14,7 +14,7 @@ title: Authors
 
 ## Main development team
 
-* David Coeurjolly (LIRIS, CNRS)
+* [David Coeurjolly](https://perso.liris.cnrs.fr/david.coeurjolly/) (LIRIS, CNRS)
 * Guillaume Damiand (LIRIS, CNRS)
 * Pierre Gueth (LIRIS, CNRS)
 * Sébastien Fourey (GREYC, ENSICAEN)
