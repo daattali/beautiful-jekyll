@@ -23,7 +23,7 @@ description: Professional globetrotter
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: ""
+  Blog: ""
   Portfolio:
     - Code: "https://github.com/crypdick"
     - Publications: "https://scholar.google.com/citations?user=4ODJ78oAAAAJ"
