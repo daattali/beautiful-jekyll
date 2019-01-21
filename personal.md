@@ -10,7 +10,10 @@ published: true
 <span class="fa fa-user about-icon"></span>
 I'm a series of spacetime events called Ricardo (or Richard). I was born in Florida to Cuban and Argentine parents (español es mi lengua materna). I'm a high tech low-life, an outdoorsy great indoorsman; voice-activated, user-friendly, self-cleaning, and compostable. I'm a non-believer and an overachiever, laid-back but forward-thinking, a supercharged subversive, a hands-on footloose. I'm a relentless nerd and SJW.
 </p>
-
+<p class="about-text">
+<span class="fa fa-cloud about-icon"></span>
+My dream is to use <strong>artificial intelligence technology for social good</strong>. For more info, see my work page above.
+</p>
 
 
 ## Travel
