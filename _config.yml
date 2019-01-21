@@ -24,8 +24,13 @@ description: Professional globetrotter
 # List of links in the navigation bar
 navbar-links:
   About Me: ""
+  Portfolio:
+    - Code: "https://github.com/crypdick"
+    - Publications: "https://scholar.google.com/citations?user=4ODJ78oAAAAJ"
+    - CV & Resume: cv
+    - Photography: "https://www.flickr.com/photos/richarddecal/albums/72157640025469005/"
   Work: "work"
-  Play: "play"
+  Personal: "personal"
 nav-search: "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
