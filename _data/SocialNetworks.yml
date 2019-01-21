@@ -6,6 +6,11 @@
 #            site.social-network-links.<key>
 #   icon: Specify a valid fontawesome icon class
 
+flickr:
+  name: "Flickr"
+  baseURL: "https://www.flickr.com/photos/"
+  icon: "fa-flickr"
+
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
