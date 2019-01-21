@@ -237,6 +237,12 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
     docker run -d -p 4000:4000 --name beautiful-jekyll -v "$PWD":/srv/jekyll beautiful-jekyll
     ```
 
+Note: If you encounter write permission problems with `Gemfile.lock`, try:
+
+```bash
+touch Gemfile.lock
+chmod a+w Gemfile.lock
+```
 
 Now that Docker is set up, you do not need to run the above steps again. You can now view your website at http://localhost:4000/. You can start the container again in the future with:
 
