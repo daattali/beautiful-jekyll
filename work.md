@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Work Projects
+title: My Work
 published: true
 meta-title: Richard Decal - CV - resume
 meta-description: CV for Richard B. Decal
