@@ -22,7 +22,6 @@ For detailed information about my education, conferences, talks, teaching, etc. 
   
     <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download Academic CV (pdf)</a>
 
-</a>
 </div>
 </center>
 
