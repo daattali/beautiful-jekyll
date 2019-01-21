@@ -6,6 +6,16 @@ meta-title: Richard Decal - CV - resume
 meta-description: CV for Richard B. Decal
 ---
 
+I am interested in leveraging artificial intelligence to make the world a better place. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
+
+- Sequester atmospheric carbon, reduce pollution
+- Educate with pedagogical chatbots
+- Improve government transparency
+- Data-driven journalism
+- Improve health forecasting
+- Improve privacy and decentralization of the Internet using smart contracts and DApps
+
+For detailed information about my education, conferences, talks, teaching, etc. please refer to me CV:
 <center>
 <div class="get-started-wrap">
   <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/blob/master/Richard-Decal-resume.pdf">Download AI Resume (pdf)</a>
@@ -19,28 +29,6 @@ meta-description: CV for Richard B. Decal
 This is a comment which is
 completely ignored.
 {:/comment}
-
-## Education
-
-**Master's Data Science** - *New College of Florida*, Florida, USA - 2017 → 2018
-
-**Machine Learning Engineer Nanodegree** - *Udacity* - 2017
-
-**B.A. Chemistry/Biology (honors)** - *New College of Florida*, Florida, USA - 2007 → 2011
-Thesis: *Ebbs and Glows: Quantifying Small RNA Concentrations in C. elegans*
-
-
----
-
-## Publications
-"Analysis of neural subtypes reveals selective mitochondrial dysfunction in dopaminergic neurons from _Parkin_ mutants. [Download](https://www.researchgate.net/publication/225302391_Analysis_of_neural_subtypes_reveals_selective_mitochondrial_dysfunction_in_dopaminergic_neurons_from_parkin_mutants)
-
-
-"Destruction complex function in the Wnt-signalling pathway of _Drosophila_ requires multiple interactions between Adenomatous polposis coli 2 and Armadillo". [Download](https://www.researchgate.net/publication/51884043_Destruction_Complex_Function_in_the_Wnt_Signaling_Pathway_of_Drosophila_Requires_Multiple_Interactions_Between_Adenomatous_Polyposis_Coli_2_and_Armadillo)
-
-“Ebbs and Glows: Quantifying Small RNA Concentrations in _C. elegans_”. Undergraduate thesis. 
-
----
 
 ## Projects
 
