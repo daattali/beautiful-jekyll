@@ -23,9 +23,9 @@ description: Professional globetrotter
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  CV: "cv"
-  Projects: "projects"
+  About Me: ""
+  Work: "work"
+  Play: "play"
 nav-search: "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
