@@ -6,6 +6,13 @@ comments: true
 published: true
 ---
 
+<p class="about-text">
+<span class="fa fa-user about-icon"></span>
+I'm a series of spacetime events called Ricardo (or Richard). I was born in Florida to Cuban and Argentine parents (español es mi lengua materna). I'm a high tech low-life, an outdoorsy great indoorsman; voice-activated, user-friendly, self-cleaning, and compostable. I'm a non-believer and an overachiever, laid-back but forward-thinking, a supercharged subversive, a hands-on footloose. I'm a relentless nerd and SJW.
+</p>
+
+
+
 ## Travel
 
 - I am currently converting a jumbo news crew van into a tiny home. It has roof-top solar, a fridge/freezer, and fits everything I own!
@@ -14,6 +21,7 @@ published: true
 
 ## Volunteering, Activism, Organizing
 
+- I helped organize a Surveilence Self-Defense Workshop for Activists with TA3M Seattle.
 - I organized and led a protest against Congress's plans to end the Internet's decentralized nature. Downtown Seattle, December 2014.
 - I spent a month and a half volunteering full-time on Mota Lava, Vanuatu. I was helping communities be more resilient by teaching them to make virgin coconut oil and facilitating business deals. I gave various lectures at the local school and helped get paint for the local church.
 - I've volunteered on various organic farms and intentional communities, including the [Awaawaroa Bay Eco Village](https://www.facebook.com/awaawaroabay) and [Wilderland Trust](https://www.facebook.com/WilderlandTrust/), and various other WWOOF and HelpX hosts.
