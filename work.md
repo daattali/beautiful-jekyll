@@ -25,13 +25,9 @@ For detailed information about my education, conferences, talks, teaching, etc. 
 </div>
 </center>
 
+---
 
-{::comment}
-This is a comment which is
-completely ignored.
-{:/comment}
-
-## Projects
+# Projects
 
 ### Reinforcement Learning for Tracing Neuron Morphologies
 _[Hanchuan Peng](https://www.alleninstitute.org/what-we-do/brain-science/research/products-tools/vaa3d/) lab. [Allen Institute for Brain Science](https://www.alleninstitute.org/what-we-do/brain-science/), Seattle, WA, USA - Summer 2018_
