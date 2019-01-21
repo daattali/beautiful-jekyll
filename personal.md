@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Personal Projects
+title: About Me
 subtitle: 
 comments: true
 published: true
@@ -15,6 +15,7 @@ I'm a series of spacetime events called Ricardo (or Richard). I was born in Flor
 My dream is to use <strong>artificial intelligence technology for social good</strong>. <a href="./work">Read more here</a>.
 </p>
 
+---
 
 ## Travel
 
