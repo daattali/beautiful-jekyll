@@ -6,16 +6,16 @@ meta-title: Richard Decal - CV - resume
 meta-description: CV for Richard B. Decal
 ---
 
-I am interested in leveraging **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
+I want to leverageg **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
 
-- Sequester atmospheric carbon, reduce pollution
+- Sequester atmospheric carbon and reduce pollution
 - Educate with pedagogical chatbots
 - Improve government transparency
-- Data-driven journalism
+- Create data-driven journalism and detect fake news
 - Improve health forecasting
 - Improve privacy and decentralization of the Internet using smart contracts and DApps
 
-For detailed information about my education, conferences, talks, teaching, etc. please refer to me CV:
+For detailed information about my education, conferences, talks, teaching, etc. please refer to my CV:
 <center>
 <div class="get-started-wrap">
   <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/blob/master/Richard-Decal-resume.pdf">Download AI Resume (pdf)</a>
