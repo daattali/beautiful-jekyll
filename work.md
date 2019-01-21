@@ -21,6 +21,10 @@ For detailed information about my education, conferences, talks, teaching, etc. 
   <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/blob/master/Richard-Decal-resume.pdf">Download AI Resume (pdf)</a>
   
     <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/crypdick/Decal-LaTeX-CV/raw/master/RDecal%20CV.pdf">Download Academic CV (pdf)</a>
+
+    <a href="https://stackoverflow.com/users/4212158/crypdick">
+<img src="https://stackoverflow.com/users/flair/4212158.png" width="208" height="58" alt="profile for crypdick at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for crypdick at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
 </div>
 </center>
 
