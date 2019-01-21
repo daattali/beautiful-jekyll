@@ -6,7 +6,7 @@ meta-title: Richard Decal - CV - resume
 meta-description: CV for Richard B. Decal
 ---
 
-I want to leverageg **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
+I want to leverage **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
 
 - Sequester atmospheric carbon and reduce pollution
 - Educate with pedagogical chatbots
