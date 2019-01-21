@@ -60,15 +60,3 @@ _[Katherine Walstrom](https://www.ncf.edu/directory/listing/katherine-walstrom/)
 
 My thesis proposes a model for RNA Helicase A function in endogenous _C. elegans_ RNAi pathways.
 
----
-
-## Teaching, Volunteering, and Causes
-- **Shell No!**
-- **Black Lives Matter**
-- **Prison abolishion**
-- **Mass surveillance, cryptoactivism**
-- **Net neutrality**
-- **Wikipedia** - Contributor since 2008. [User page](https://en.wikipedia.org/wiki/User:Richard.decal)
-- **Brain Awareness Week 2015**
-- **Upward Bound**
-
