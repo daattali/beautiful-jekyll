@@ -12,7 +12,7 @@ I'm a series of spacetime events called Ricardo (or Richard). I was born in Flor
 </p>
 <p class="about-text">
 <span class="fa fa-cloud about-icon"></span>
-My dream is to use <strong>artificial intelligence technology for social good</strong>. For more info, see my work page above.
+My dream is to use <strong>artificial intelligence technology for social good</strong>. For more info, see my <a href="work">work page</a>.
 </p>
 
 
