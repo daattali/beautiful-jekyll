@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Curriculum Vitae
+title: Work Projects
 published: true
 meta-title: Richard Decal - CV - resume
-meta-description: Academic CV for Richard B. Decal
+meta-description: CV for Richard B. Decal
 ---
-These are my academic and work achievements. For personal projects, check out my **[projects page](/projects)**.
 
 <center>
 <div class="get-started-wrap">
@@ -23,7 +22,7 @@ completely ignored.
 
 ## Education
 
-**Master's Data Science** - *New College of Florida*, Florida, USA - 2017 → Expected Dec. 2018
+**Master's Data Science** - *New College of Florida*, Florida, USA - 2017 → 2018
 
 **Machine Learning Engineer Nanodegree** - *Udacity* - 2017
 
