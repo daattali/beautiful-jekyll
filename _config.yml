@@ -23,7 +23,7 @@ description: Professional globetrotter
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: ""
+  About Me: "aboutme"
   CV: "cv"
   Projects: "projects"
 nav-search: "search"
