@@ -1,20 +1,15 @@
 ---
 layout: page
-title: Projects
-subtitle: What keeps me busy
+title: Personal Projects
+subtitle: 
 comments: true
 published: true
 ---
 
-This is a collection of some of my personal projects. For my academic work, please see **[my CV](/cv)**.
-
-
----
-
 ## Travel
 
-- I am currently building my tiny home inside a retired news crew van.
-- I have been to 26 countries so far! I've done 3 major bicycle tours (from Seattle to San Francisco, around Taiwan, and around New Zealand).
+- I am currently converting a jumbo news crew van into a tiny home. It has roof-top solar, a fridge/freezer, and fits everything I own!
+- I have been to 26 countries so far :) I've done 3 major bicycle tours (from Seattle to San Francisco, around Taiwan, and around New Zealand).
 - I've hitchhiked over 10,000 miles in the US, Taiwan, Thailand, Australia, and New Zealand.
 
 ## Volunteering, Activism, Organizing
@@ -38,5 +33,6 @@ This is a collection of some of my personal projects. For my academic work, plea
 
 ## Computing
 
-- **Home server** - I am proud of my home server. I built it myself and run the following services: wallabag, owncloud, bittorrent, ZeroNet, IPFS, and Tor node.
+- **Home server** - I am proud of my home server. I built it myself and run the following services: wallabag, nextcloud, bittorrent, ZeroNet, IPFS, and Tor node.
 - **[Mobile library](https://github.com/PirateBox-Dev/PirateBox-Mesh)** - I converted a Raspberry Pi into an awesome mobile filesharing mesh network.
+- **Personal Assistant** - I also converted a Raspberry Pi into a fully open-source digital assistant, similar to an Amazon Echo.
