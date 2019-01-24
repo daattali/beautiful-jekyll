@@ -1,12 +1,14 @@
 ---
 layout: post
 title: 2D Convolution for image processing
+date:   2019-01-06 14:34:25
 tags: [Image]
 permalink: /_convolution_/
 ---
 # Input Image 
 
-At first we need an image called input image given below .
+At first we need an image . In the given example we see a image as a matrix . 
+Basically, images are represented as a 2D matrix .
 
 ![image](https://user-images.githubusercontent.com/35966401/51075430-6facd480-16b5-11e9-9cb7-f28c0b91f39f.png)
 
@@ -36,8 +38,8 @@ Put it into the output image are given below . That's we calculate our convoutio
 ![image](https://user-images.githubusercontent.com/35966401/51075448-b995ba80-16b5-11e9-969f-a198994a796b.png)
 
 
-### References : [Definition in Bangla](https://www.youtube.com/watch?v=iK_C8ORGS2M)
-### [Convolution 2D](http://www.songho.ca/dsp/convolution/convolution2d_example.html)  [Convolution FAQ](https://cs.stackexchange.com/questions/11591/2d-convolution-flipping-the-kernel)
-
-
+### References : 
+[Definition in Bangla](https://www.youtube.com/watch?v=iK_C8ORGS2M)
+ [Convolution 2D](http://www.songho.ca/dsp/convolution/convolution2d_example.html) 
+ [Convolution FAQ](https://cs.stackexchange.com/questions/11591/2d-convolution-flipping-the-kernel)
 
