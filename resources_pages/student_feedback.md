@@ -1,0 +1,12 @@
+---
+layout: page
+title: Student feedback
+---
+
+The MDS team received feedback from the MDS students in two primary ways: monthly feedback sessions with the [block rep](/resources_pages/block_rep), and the formal UBC teaching evaluations. These document attempts to clarify the roles of the these two feedback channels.  
+
+We see the roles of block rep feedback vs. the official UBC course evaluations as roughly formative vs. summative assessment, respectively. That is, the block rep's role is to give us information to help us improve, rather than give us an A+ or a C-. These results will be heard/read by the core MDS team, and the information will be used to improve the program. Since we get this feedback _during_ the block, we can sometimes make immediate changes within a given course. The formal UBC course evaluations, on the other hand, come after the course ends. They are also seen by a different group of people, including the department heads and the Dean. These will become part of the instructors' "files" and may influence things like tenure/promotion, or raise a red flag if the evaluations are very poor. While we certainly do read all the comments on the official evaluations (and therefore they are also useful in improving our teaching), you can also think of them as a place to record your thoughts on our teaching quality. Whether or not these evaluations actually do a good job of evaluating teaching is a topic of heated debate, though; see e.g., [this article](https://link.springer.com/article/10.1007/s10755-014-9313-4).
+
+Another difference is that the block rep session can be used to give feedback on aspects of the program that are not course-specific. For example, the overall workload, career support, classrooms and other space issues, etc.
+
+Finally, please keep in mind that we do not gain access to our formal UBC course evaluations until after the entire term is over. This means we receive the feedback for Blocks 1-3 in Janury and for Blocks 4-6 in May. This is quite a long delay: for example, for a course in Block 1 that runs in September, we don't receive the feedback (submitted in early October) until ~3 months later. This is another reason that block rep feedback is so important - even if there is not enough time to make a change within the current block, we might adapt the following block based on your feedback, still well before we receive the formal evaluations.
