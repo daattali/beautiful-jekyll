@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About me
+layout: default
+
 
 ---
 
