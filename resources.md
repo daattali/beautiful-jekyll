@@ -20,6 +20,7 @@ subtitle: For MDS students and beyond
 - [Slack guidelines](/resources_pages/slack)
 - [How to ask questions on Slack](/resources_pages/asking_for_help)
 - [MDS quizzes](/resources_pages/quiz)
+- [MDS quiz instructions](/resources_pages/quiz_instructions)
 - [Career and professional development](/resources_pages/CareerandIndustryResources)
 - [Resources offered by UBC](/resources_pages/UBC_resources)
 - [Block rep guidelines](/resources_pages/block_rep)
