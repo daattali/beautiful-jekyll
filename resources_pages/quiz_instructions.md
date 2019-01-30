@@ -64,10 +64,13 @@ Just leave your laptop in the quiz room.
 
 ## Instructions for TA's
 
-If the lab instructor will not be in the quiz room:
-
-1. Come to the lab room with an attendance sheet.
-2. If the quiz is administered through GitHub:
+1. Go to the classroom at least 5 mins before the quiz time.
+2. Bring a blank sheet of paper with you. Pass it around a couple of minutes before the quiz starts and ask the students to write their name on it. You can hand it or take a picture and send it to us later. 
+3. Try to walk around and make sure that at least one of the TAs stays at the back of the classroom.
+4. Report to us if you observe any form of academic dishonesty or chatting in the classroom.
+5. Ask the students to stay in the classroom for the full time even after they are done. (If students start leaving the classroom it can be distracting for other students.)
+6. If you encounter issues during the quiz, inform the lab instructor through Slack.
+7. If the quiz is administered through GitHub:
 	- You will be notified via Slack by the lab instructor when the quiz becomes available, as well as when the quiz will be closed. When this happens, notify the students to begin, and notify students of the time the quiz will be closed.
 	- You will be notified via Slack by the lab instructor when the quiz has successfully been closed. Notify the students when this happens.
-3. If you encounter issues during the quiz, inform the lab instructor through Slack. It's a good idea to keep an eye on Slack now and then during the lab period to stay in the loop in case other sections are having issues. 
+	- It's a good idea to keep an eye on Slack now and then during the lab period to stay in the loop in case other sections are having issues. 
