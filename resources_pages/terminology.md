@@ -154,7 +154,7 @@ In each equivalence class below, the terms tend to be used interchangeably (even
 
 * regression coefficients = weights = parameters
 * residual variance = noise variance
-* inputs = predictors = features = explanatory variables = regressors = independent variables = covariates
+* inputs = predictors = features = explanatory variables = regressors = independent variables = covariates = attributes
 * outputs = outcomes = targets = response variables = dependent variables. Also called a label if it's categorical.
 * Gaussian distribution = Normal distribution = bell curve
 * sensitivity = recall (see Error types above)
