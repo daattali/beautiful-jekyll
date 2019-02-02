@@ -70,7 +70,7 @@
 						if ($("#assetName").val()) {
 							newAssetName = $("#assetName").val();
 						}
-						
+
 
 						body = body.replace('{0}', newAssetName)
 						body = body.replace('{1}', user.userName)
@@ -94,7 +94,7 @@
 							$("#message").html("Created Data Catalog Asset named " + newAssetName + "  ");
 							//$("#search").attr("href", "https://aue-su1.azuredatacatalog.com/#/browse?searchTerms=" + newAssetName);
 							$("#search").attr("href", "https://aue-su1.azuredatacatalog.com/#/browse?searchTerms=timestamp%20%3E%20'1%2F23%2F2019'");
-							$("#resultsArea").fadeIn( 800 );
+							$("#resultsArea").fadeIn(800);
 
 						}).fail(function (error) {
 							console.log("Data catalog call failed.");
@@ -114,7 +114,7 @@
 	</script>
 
 	<style>
-		body {
+body {
   background: powderblue;
   padding: 20px;
   font-family: Helvetica;
@@ -176,22 +176,21 @@ input {
 	<div id="banner">
 		<img src='emotions-3459666_640.jpg' />
 		<h1>Data Catalog REST API example</h1>
-		<ul>
-			<ul id="UserName">
-			</ul>
 
-			<h2>create asset</h2>
-			<input type="text" id="assetName" />
-			<br/>
-			<button>Create Asset</button>
+		<span id="UserName"></span>
 
-			<p id="resultsArea" class="alert-box success" style="display:none;">
-				<span id="message"></span>
-				<br/>
-				<a id="search" href='#' target="_blank">View in Azure Data Catalog</a>
-			</p>
+		<h2>create asset</h2>
+		<input type="text" id="assetName" />
+		<br />
+		<button>Create Asset</button>
 
-				<!-- If your admin hasn't done it then you may need to <a href='https://login.microsoftonline.com/eggy.onmicrosoft.com/oauth2/authorize?client_id=2114ef90-f5c0-4cde-83db-aeaf2912229b&response_type=code&redirect_uri=http://127.0.0.1:8887/DataCatalogJs.html&nonce=1234&resource=https://graph.windows.net&prompt=admin_consent'>authorise</a> -->
+		<div id="resultsArea" class="alert-box success" style="display:none;">
+			<span id="message"></span>
+			<br />
+			<a id="search" href='#' target="_blank">View in Azure Data Catalog</a>
+		</div>
+
+		<!-- If your admin hasn't done it then you may need to <a href='https://login.microsoftonline.com/eggy.onmicrosoft.com/oauth2/authorize?client_id=2114ef90-f5c0-4cde-83db-aeaf2912229b&response_type=code&redirect_uri=http://127.0.0.1:8887/DataCatalogJs.html&nonce=1234&resource=https://graph.windows.net&prompt=admin_consent'>authorise</a> -->
 	</div>
 </body>
 
