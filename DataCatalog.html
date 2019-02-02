@@ -5,6 +5,7 @@
 
 	<title>Data Catalog - REST API Demo - Authenticate an Office 365 user with ADAL JS</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>body{font:normal normal normal 14px/1.5em "Century Gothic", sans-serif;}</style>
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,7 +22,7 @@
 				azureAD: "eggy.onmicrosoft.com",
 				// ClientId of Azure AD application principal, web, need to ensure users are granted app permissions and app has permissions to data catalog
 				clientId: "c98fd384-0c09-4471-93a5-02b51589820d",
-				randomName: Date.now().toFixed()
+				randomName: "Asset" + Date.now().toFixed()
 			}
 
 			// Create config and get AuthenticationContext
@@ -37,7 +38,7 @@
 			};
 			var authContext = new AuthenticationContext(config);
 
-			var isCallback = authContext.isCallback(window.location.hash + 'a');
+			var isCallback = authContext.isCallback(window.location.hash);
 			authContext.handleWindowCallback();
 
 			if (isCallback && !authContext.getLoginError()) {
@@ -49,13 +50,16 @@
 				authContext.login();
 			}
 
-			$("#UserName").html("Welcome " + user.userName);
+			$("#UserName").html(user.userName);
 			$("#assetName").val(variables.randomName);
 
 			$("button").on("click", function () {
 				authContext.acquireToken(config.endpoints.dataCatalogUri, function (error, token) {
 					if (error || !token) {
 						console.log("ADAL error occurred: " + error);
+
+						$("#errorMessage").html("ADAL error occurred: " + error);
+						$("#errorArea").fadeIn(800);
 						return;
 					}
 					else {
@@ -64,7 +68,8 @@
 						// var dataCatalogUri = "https://api.azuredatacatalog.com/catalogs/DefaultCatalog/views/tables?api-version=2016-03-30";
 						//var body ='{{ "properties" : {{ "fromSourceSystem" : false, "name": "{0}", "dataSource": {{ "sourceType": "SQL Server", "objectType": "Table", }}, "dsl": {{ "protocol": "tds", "authentication": "windows", "address": {{ "server": "test.contoso.com", "database": "Northwind", "schema": "dbo", "object": "{0}" }} }}, "lastRegisteredBy": {{ "upn": "{1}" }}, }}, "annotations" : {{ "schema": {{ "properties" : {{ "fromSourceSystem" : false, "columns": [ {{ "name": "OrderID", "isNullable": false, "type": "int", "maxLength": 4, "precision": 10 }}, {{ "name": "CustomerID", "isNullable": true, "type": "nchar", "maxLength": 10, "precision": 0 }}, {{ "name": "OrderDate", "isNullable": true, "type": "datetime", "maxLength": 8, "precision": 23 }}, ], }} }}, "previews": [ {{ "properties": {{ "preview": [ {{ "OrderId": 1, "CustomerID": 11, "OrderDate": null }}, {{ "OrderId": 2, "CustomerID": 12, "OrderDate": "08/02/2017" }} ], "key": "SqlExtractor", "fromSourceSystem": true }} }} ], "tableDataProfiles": [ {{ "properties": {{ "dataModifiedTime": "2015 -12-31T00:32:22.4832805-08:00", "schemaModifiedTime": "2015 -12-31T00:32:22.4832805-08:00", "size": 9223372036854775807, "numberOfRows": 9223372036854775807, "key": "Test", "fromSourceSystem": true }} }} ], "columnsDataProfiles": [ {{ "properties": {{ "columns": [ {{ "columnName": "OrderId", "type": "int", "min": "1", "max": "1002", "stdev": 50, "avg": 201, "nullCount": 0, "distinctCount": 12121212 }} ], "key": "Test", "fromSourceSystem": true }} }} ], }} }}';
 						var dataCatalogUri = "https://api.aue.datacatalog.azure.com/catalogs/DefaultCatalog/views/tables?api-version=2016-03-30";
-						var body = '{ "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "name": "{0}", "dataSource": { "sourceType": "SQL Server", "objectType": "Table" }, "dsl": { "protocol": "tds", "authentication": "windows", "address": { "server": "MyServer.contoso.com", "database": "NORTHWND", "schema": "dbo", "object": "Orders" } }, "lastRegisteredBy": { "upn": "{1}", "firstName": "User1FirstName", "lastName": "User1LastName" } }, "annotations": { "schema": { "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "columns": [ { "name": "OrderID", "isNullable": false, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "CustomerID", "isNullable": true, "type": "nchar", "maxLength": 10, "precision": 0 }, { "name": "EmployeeID", "isNullable": true, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "OrderDate", "isNullable": true, "type": "datetime", "maxLength": 8, "precision": 23 } ] } } } }';
+						//						var body = '{ "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "name": "[[name]]", "dataSource": { "sourceType": "[[sourceType]]", "objectType": "Table" }, "dsl": { "protocol": "tds", "authentication": "windows", "address": { "server": "MyServer.contoso.com", "database": "NORTHWND", "schema": "dbo", "object": "Orders" } }, "lastRegisteredBy": { "upn": "[[upn]]", "firstName": "User1FirstName", "lastName": "User1LastName" } }, "annotations": { "schema": { "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "columns": [ { "name": "OrderID", "isNullable": false, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "CustomerID", "isNullable": true, "type": "nchar", "maxLength": 10, "precision": 0 }, { "name": "EmployeeID", "isNullable": true, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "OrderDate", "isNullable": true, "type": "datetime", "maxLength": 8, "precision": 23 } ] } } } }';
+						var body = '{ "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "name": "[[name]]", "dataSource": { "sourceType": "[[sourceType]]", "objectType": "Table" }, "dsl": { "protocol": "tds", "authentication": "windows", "address": { "server": "[[server]]", "database": "[[database]]", "schema": "dbo", "object": "Orders" } }, "lastRegisteredBy": { "upn": "[[upn]]", "firstName": "User1FirstName", "lastName": "User1LastName" } }, "annotations": { "schema": { "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "columns": [ { "name": "OrderID", "isNullable": false, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "CustomerID", "isNullable": true, "type": "nchar", "maxLength": 10, "precision": 0 }, { "name": "EmployeeID", "isNullable": true, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "OrderDate", "isNullable": true, "type": "datetime", "maxLength": 8, "precision": 23 } ] } } } }';
 
 						var newAssetName = variables.randomName;
 						if ($("#assetName").val()) {
@@ -72,11 +77,15 @@
 						}
 
 
-						body = body.replace('{0}', newAssetName)
-						body = body.replace('{1}', user.userName)
+						body = body.replace('[[name]]', newAssetName);
+						body = body.replace('[[upn]]', user.userName);
+						body = body.replace('[[sourceType]]', $("#sourceType").val());
+						body = body.replace('[[database]]', $("#database").val());
+						body = body.replace('[[server]]', $("#server").val());
 
 						//NOTE: body text based on this page but example was invalid: https://docs.microsoft.com/en-us/rest/api/datacatalog/data-catalog-data-asset#register-or-update
 						console.log("about to send " + body);
+						$(".alert-box").hide();
 						$.ajax({
 							type: "POST",
 							//dataType: "jsonp",
@@ -98,7 +107,10 @@
 
 						}).fail(function (error) {
 							console.log("Data catalog call failed.");
+							//debugger;
 							console.log(error);
+							$("#errorMessage").html(error.responseText.toString());
+							$("#errorArea").fadeIn(800);
 						});
 						console.log("Data catalog ended.");
 					}
@@ -114,10 +126,16 @@
 	</script>
 
 	<style>
-body {
+		body {
   background: powderblue;
   padding: 20px;
   font-family: Helvetica;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #banner-message {
@@ -165,33 +183,96 @@ input {
     border-color: #d6e9c6;
     display: none;
 }
+.error {
+    color: white;
+    background-color: #ff0000;
+    border-color: #ff0000;
+    display: none;
+}
 
+#dcForm li{
+	list-style: none;
+}
+#dcForm li span{
+	width: 9em;
+    display: inline-block;
+    text-align: right;
+	margin-right: 1em;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("emotions-3459666_640.jpg");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.topright {
+	position: absolute;
+    top: -116px;
+    right: -83px;
+    font-size: 14px;
+	color: grey;
+}
 
 		</style>
+
 
 </head>
 
 <body>
 
-	<div id="banner">
-		<img src='emotions-3459666_640.jpg' />
-		<h1>Data Catalog REST API example</h1>
+	<div class="hero-image">
+		<div class="hero-text">
+			<h1 style="font-size:30px">Custom Data Catalog Example</h1>
+			<p>Single page application using REST Api</p>
+			<span id="UserName" class="topright"></span>
+		</div>
+	</div>
 
-		<span id="UserName"></span>
+
+	<div id="dcForm">
+
+		<!-- <img src='emotions-3459666_640.jpg' /> -->
+		
 
 		<h2>create asset</h2>
-		<input type="text" id="assetName" />
-		<br />
-		<button>Create Asset</button>
 
-		<div id="resultsArea" class="alert-box success" style="display:none;">
-			<span id="message"></span>
-			<br />
-			<a id="search" href='#' target="_blank">View in Azure Data Catalog</a>
-		</div>
+		<ul>
+			<li><span>Name</span><input type="text" id="assetName" /></li>
+			<li><span>Source Type</span><input type="text" id="sourceType" value="SQL Server" /></li>
+			<li><span>Database</span><input type="text" id="database" value="NorthWnd" /></li>
+			<li><span>Server</span><input type="text" id="server" value="MyServer.contoso.com" /></li>
+			<li><button>Create Asset</button></li>
+		</ul>
+
+
 
 		<!-- If your admin hasn't done it then you may need to <a href='https://login.microsoftonline.com/eggy.onmicrosoft.com/oauth2/authorize?client_id=2114ef90-f5c0-4cde-83db-aeaf2912229b&response_type=code&redirect_uri=http://127.0.0.1:8887/DataCatalogJs.html&nonce=1234&resource=https://graph.windows.net&prompt=admin_consent'>authorise</a> -->
 	</div>
+
+	<div id="resultsArea" class="alert-box success" style="display:none;">
+		<span id="message"></span>
+		<br />
+		<a id="search" href='#' target="_blank">View in Azure Data Catalog</a>
+	</div>
+
+	<div id="errorArea" class="alert-box error" style="display:none;">
+		<span id="errorMessage"></span>
+	</div>
+
 </body>
 
 </html>
