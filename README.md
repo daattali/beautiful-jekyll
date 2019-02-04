@@ -5,7 +5,7 @@
 
 > *Copyright 2018 [Dean Attali](https://deanattali.com)*
 
-**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) to see it in use, or see examples of websitstaticmans other people created using this theme [here](#showcased-users-success-stories).
+**Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#showcased-users-success-stories).
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/daattali/20) for developing and maintaining this template.**
 
@@ -237,6 +237,12 @@ Beautiful Jekyll is meant to be so simple to use that you can do it all within t
     docker run -d -p 4000:4000 --name beautiful-jekyll -v "$PWD":/srv/jekyll beautiful-jekyll
     ```
 
+Note: If you encounter write permission problems with `Gemfile.lock`, try:
+
+```bash
+touch Gemfile.lock
+chmod a+w Gemfile.lock
+```
 
 Now that Docker is set up, you do not need to run the above steps again. You can now view your website at http://localhost:4000/. You can start the container again in the future with:
 
