@@ -72,9 +72,9 @@
 						//						var body = '{ "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "name": "[[name]]", "dataSource": { "sourceType": "[[sourceType]]", "objectType": "Table" }, "dsl": { "protocol": "tds", "authentication": "windows", "address": { "server": "MyServer.contoso.com", "database": "NORTHWND", "schema": "dbo", "object": "Orders" } }, "lastRegisteredBy": { "upn": "[[upn]]", "firstName": "User1FirstName", "lastName": "User1LastName" } }, "annotations": { "schema": { "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "columns": [ { "name": "OrderID", "isNullable": false, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "CustomerID", "isNullable": true, "type": "nchar", "maxLength": 10, "precision": 0 }, { "name": "EmployeeID", "isNullable": true, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "OrderDate", "isNullable": true, "type": "datetime", "maxLength": 8, "precision": 23 } ] } } } }';
 						var body1 = '{ "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "name": "[[name]]", "dataSource": { "sourceType": "[[sourceType]]", "objectType": "Table" }, "dsl": { "protocol": "tds", "authentication": "windows", "address": { "server": "[[server]]", "database": "[[database]]", "schema": "dbo", "object": "Orders" } }, "lastRegisteredBy": { "upn": "[[upn]]", "firstName": "User1FirstName", "lastName": "User1LastName" } }, "annotations": { "schema": { "roles": [ { "role": "Contributor", "members": [ { "objectId": "00000000-0000-0000-0000-000000000201" } ] } ], "properties": { "fromSourceSystem": true, "columns": [ { "name": "OrderID", "isNullable": false, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "CustomerID", "isNullable": true, "type": "nchar", "maxLength": 10, "precision": 0 }, { "name": "EmployeeID", "isNullable": true, "type": "int", "maxLength": 4, "precision": 10 }, { "name": "OrderDate", "isNullable": true, "type": "datetime", "maxLength": 8, "precision": 23 } ] } } } }';
 
-						var bodyDatabase = '{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"name":"[[name]]","fromSourceSystem":false,"dsl":{"protocol":"tds","authentication":"protocol","address":{"server":"[[server]]","database":"[[database]]"}},"dataSource":{"sourceType":"SQL Server","objectType":"Database"},"lastRegisteredBy":{"upn":"[[upn]]","firstName":"Angela","lastName":"But","objectId":"978d7185-db84-4abd-b0bf-80457a54fd41"}},"annotations":{"descriptions":[{"properties":{"fromSourceSystem":false,"key":"978d7185db844abdb0bf80457a54fd41","description":"studesc"}}],"friendlyName":{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"fromSourceSystem":false,"friendlyName":"[[friendlyName]]"}}}}';
-						var fileBody ='{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"name":"[[name]]","fromSourceSystem":false,"dsl":{"protocol":"file","authentication":"none","address":{"path":"[[database]]"}},"dataSource":{"sourceType":"File System","objectType":"File"},"lastRegisteredBy":{"upn":"angela@eggy.onmicrosoft.com","firstName":"Angela","lastName":"But","objectId":"978d7185-db84-4abd-b0bf-80457a54fd41"}},"annotations":{"descriptions":[{"properties":{"fromSourceSystem":false,"key":"978d7185db844abdb0bf80457a54fd41","description":"fileDesc"}}],"friendlyName":{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"fromSourceSystem":false,"friendlyName":"[[friendlyName]]"}}}}';
-
+						var bodyDatabase = '{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"name":"[[name]]","fromSourceSystem":false,"dsl":{"protocol":"tds","authentication":"protocol","address":{"server":"[[server]]","database":"[[database]]"}},"dataSource":{"sourceType":"SQL Server","objectType":"Database"},"lastRegisteredBy":{"upn":"[[upn]]","firstName":"Angela","lastName":"But"}},"annotations":{"descriptions":[{"properties":{"fromSourceSystem":false,"key":"978d7185db844abdb0bf80457a54fd41","description":"studesc"}}],"friendlyName":{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"fromSourceSystem":false,"friendlyName":"[[friendlyName]]"}}}}';
+						var fileBody ='{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"name":"[[name]]","fromSourceSystem":false,"dsl":{"protocol":"file","authentication":"none","address":{"path":"[[database]]"}},"dataSource":{"sourceType":"File System","objectType":"File"},"lastRegisteredBy":{"upn":"[[upn]]","firstName":"Angela","lastName":"But"}},"annotations":{"descriptions":[{"properties":{"fromSourceSystem":false,"key":"978d7185db844abdb0bf80457a54fd41","description":"fileDesc"}}],"friendlyName":{"roles":[{"role":"Contributor","members":[{"objectId":"00000000-0000-0000-0000-000000000201"}]}],"properties":{"fromSourceSystem":false,"friendlyName":"[[friendlyName]]"}}}}';
+//,"objectId":"978d7185-db84-4abd-b0bf-80457a54fd41"
 						var newAssetName = variables.randomName;
 						if ($("#assetName").val()) {
 							newAssetName = $("#assetName").val();
@@ -85,13 +85,19 @@
 						if ($("#sourceType").val() == "File"){
 							body = fileBody;
 							dataCatalogUri = dataCatalogUriFile;
+							//replace all single \ with \\
+							var filePath = $("#database").val().replace('\\','\\\\');
+							body = body.replace('[[database]]', filePath);
+						}
+						else{
+							body = body.replace('[[database]]', $("#database").val());
 						}
 
 						body = body.replace('[[name]]', newAssetName);
 						body = body.replace('[[friendlyName]]', newAssetName);
 						body = body.replace('[[upn]]', user.userName);
 						body = body.replace('[[sourceType]]', $("#sourceType").val());
-						body = body.replace('[[database]]', $("#database").val());
+						
 						body = body.replace('[[server]]', $("#server").val());
 
 						//NOTE: body text based on this page but example was invalid: https://docs.microsoft.com/en-us/rest/api/datacatalog/data-catalog-data-asset#register-or-update
@@ -174,7 +180,7 @@ a#search{
 	display: inline-block;
 }
 
-input {
+input, select {
   border-radius: 5px;
   padding: 8px 14px;
   font-size: 15px;
@@ -210,6 +216,16 @@ input {
     text-align: right;
 	margin-right: 1em;
 }
+
+#dcForm li span{
+	width: 9em;
+    display: inline-block;
+    text-align: right;
+	margin-right: 1em;
+
+	margin-right: 0.7em;
+}
+
 
 
 .hero-image {
@@ -263,7 +279,13 @@ input {
 
 		<ul>
 			<li><span>Name</span><input type="text" id="assetName" /></li>
-			<li><span>Source Type</span><input type="text" id="sourceType" value="SQL Server" /></li>
+			<!-- <li><span>Source Type</span><input type="text" id="sourceType" value="SQL Server" /></li> -->
+			<li><span style="margin-right: 0.7em;">Source Type</span>
+				<select id="sourceType" value="SQL Server">
+					<option value="SQL Server">SQL Server</option>
+					<option value="File">File</option>
+				</select>
+			</li>
 			<li><span>Database/Path</span><input type="text" id="database" value="NorthWnd" /></li>
 			<li><span>Server</span><input type="text" id="server" value="MyServer.contoso.com" /></li>
 			<li><button>Create Asset</button></li>
