@@ -172,18 +172,18 @@ zh-HK:
 # German / Deutsch
 # ----------------
 de: &DEFAULT_DE
-  comments_label             : "Hinterlassen Sie einen Kommentar"
+  comments_label             : "Hinterlasse einen Kommentar"
   comments_title             : "Kommentare"
-  comment_form_info          : "Ihre E-Mail Adresse wird nicht veröffentlicht. Benötigte Felder sind markiert"
+  comment_form_info          : "Die E-Mail Adresse wird nicht veröffentlicht. Benötigte Felder sind markiert"
   comment_form_comment_label : "Kommentar"
   comment_form_md_info       : "Markdown wird unterstützt."
   comment_form_name_label    : "Name"
-  comment_form_email_label   : "E-Mail-Addresse"
+  comment_form_email_label   : "E-Mail-Adresse"
   comment_form_website_label : "Webseite (optional)"
   comment_btn_submit         : "Kommentar absenden"
   comment_btn_submitted      : "Versendet"
-  comment_success_msg        : "Danke für Ihren Kommentar! Er wird auf der Seite angezeigt, nachdem er geprüft wurde."
-  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte füllen Sie alle benötigten Felder aus und versuchen Sie es erneut."
+  comment_success_msg        : "Danke für den Kommentar! Er wird nach Prüfung auf der Seite angezeigt."
+  comment_error_msg          : "Entschuldigung, es gab einen Fehler. Bitte fülle alle benötigten Felder aus und versuche es erneut."
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
