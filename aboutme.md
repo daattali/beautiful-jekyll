@@ -16,4 +16,9 @@ Those two areas are:
 
 **Full stack web development in .NET Core and Angular.**
 
-On this site you can follow my learning process and see my results. Parallel to my learning process I will be making a project for [Ordbogen](https://www.ordbogen.com/). A Danish company who specializes in language specific applications such as dictionaries etc. On here you will also have access to my repositories and read about the project alongside my learning process.
+On this site you can follow my learning process and see my results. Parallel to my learning process I will be making a project for [Ordbogen](https://www.ordbogen.com/). A Danish company who specializes in language specific applications such as dictionaries etc. On this website you will also be given access to my repositories and read about the project alongside my learning process.
+
+I hope you enjoy your stay.
+
+Best regards
+Julian
