@@ -11,4 +11,4 @@ During the last two months of the MDS program (mid April to late June each year)
 - For more information on becoming a partner, see our [partner information page](/capstone/partner_info).
 - For guidelines on submitting a proposal, see our [proposal page](/capstone/proposal).
 - For various important dates and deadlines, see our [timeline and procedures page](/capstone/timeline).
-- For a list of past projects, see our [past projects page](/capstone/past_projects).
+- For a list of past projects, see our [past projects page](/capstone/past_projects) and [this page](https://masterdatascience.ubc.ca/why-ubc/partners).
