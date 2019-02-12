@@ -8,17 +8,17 @@
 
 facebook:
   name: "Facebook"
-  baseURL: "https://www.facebook.com/nmlemus"
+  baseURL: "https://www.facebook.com/"
   icon: "fa-facebook"
 
 github:
   name: "GitHub"
-  baseURL: "https://github.com/nmlemus"
+  baseURL: "https://github.com/"
   icon: "fa-github"
 
 twitter:
   name: "Twitter"
-  baseURL: "https://twitter.com/nmlemus"
+  baseURL: "https://twitter.com/"
   icon: "fa-twitter"
 
 reddit:
@@ -38,7 +38,7 @@ email:
 
 linkedin:
   name: "LinkedIn"
-  baseURL: "https://www.linkedin.com/in/noel-moreno-lemus-a9140961/"
+  baseURL: "https://linkedin.com/in/"
   icon: "fa-linkedin"
 
 xing:
