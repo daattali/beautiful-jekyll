@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-# title: Noel Personal Web Site
+title: Noel Moreno Lemus
 
 # Short description of your site
 description: My Personal Blog!
@@ -27,6 +27,7 @@ navbar-links:
   Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
+    - Curriculum Lattes: "http://lattes.cnpq.br/0845486662407480"
     - GitHub Repos: "https://github.com/nmlemus/"
   Author's home: "https://www.linkedin.com/in/noel-moreno-lemus-a9140961/"
 
