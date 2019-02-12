@@ -72,13 +72,13 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
-  facebook: daattali
-  github: daattali
-  twitter: daattali
+  email: "nmlemus@gmail.com"
+  facebook: https://www.facebook.com/nmlemus
+  github: https://github.com/nmlemus
+  twitter: nmlemus
 #  reddit: yourname
 #  google-plus: +DeanAttali
-#  linkedin: daattali
+  linkedin: https://www.linkedin.com/in/noel-moreno-lemus-a9140961/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
