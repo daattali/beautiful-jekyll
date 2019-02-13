@@ -58,7 +58,7 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 #### Late Submissions
 
-A late submission is defined as any work, incuding quizzes, submitted after the deadline. For a late submission, the student will receive a 50% scaling of their grade for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
+A late submission is defined as any work, including quizzes, submitted after the deadline. For a late submission, the student will receive a 50% scaling of their grade for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
 
 ## Quizzes
 
