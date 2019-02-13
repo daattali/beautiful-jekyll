@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designing MDS
+subtitle: Initial decisions and updates
 ---
 
 Since launching the UBC MDS program in 2016, we've received a lot of questions on why we designed MDS the way we did. The post will address the following design decisions:
