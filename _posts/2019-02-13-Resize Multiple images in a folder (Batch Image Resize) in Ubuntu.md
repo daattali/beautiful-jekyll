@@ -1,4 +1,8 @@
-# Resize Multiple images in a folder (Batch Image Resize) in Ubuntu
+---
+layout: post
+title: Resize Multiple images in a folder (Batch Image Resize) in Ubuntu
+tags: [Ubuntu, Linux, Image resize, Imagemagick]
+---
  
 You can resize multiple image files (jpg/png/gif….) stored in a folder by the imagemagick package. Here is step-by-step guideline:
 Install ImageMagick
