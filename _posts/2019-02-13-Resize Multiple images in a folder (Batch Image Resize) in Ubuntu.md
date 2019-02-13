@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resize Multiple images in a folder (Batch Image Resize) in Ubuntu
+gh-badge: [star, fork, follow]
 tags: [Ubuntu, Linux, Image resize, Imagemagick]
 ---
  
