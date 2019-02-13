@@ -7,7 +7,7 @@ tags: [Ubuntu, Linux, Image resize, Imagemagick]
 You can resize multiple image files (jpg/png/gif….) stored in a folder by the imagemagick package. Here is step-by-step guideline:
 Install ImageMagick
 
-1. Install imagemagick from Ubuntu Software Center
+- Install imagemagick from Ubuntu Software Center
 
 Or, in the terminal:
 
@@ -17,15 +17,15 @@ sudo apt-get install imagemagick
 
 Copy all of your images to a folder
 
-2. Put all your image files in a single directory.
+- Put all your image files in a single directory.
 
 And don’t forget to take backup of your photos in a separate location.
 
-3. Open a terminal and go to this directory:
+- Open a terminal and go to this directory:
 
 cd <directory-location>
 
-4. Now, enter following command to resize all of the images to a specific percentage. For examples, for the following command, all of the images will be reduced to 50% of their dimension maintaining the ratio.
+- Now, enter following command to resize all of the images to a specific percentage. For examples, for the following command, all of the images will be reduced to 50% of their dimension maintaining the ratio.
 
 ~~~
 mogrify -resize 50% -format jpg *
