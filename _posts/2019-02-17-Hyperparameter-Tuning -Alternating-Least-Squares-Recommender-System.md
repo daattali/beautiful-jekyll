@@ -1,3 +1,13 @@
+---
+layout: post
+title: Hyperparameter Tuning Alternating Least Squares Algorithm 
+subtitle: Colaborative Filtering with Matrix Factorization 
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [Colaborative Filtering,spark,pyspark,matrix factorization, Alternating Least Squares]
+---
+
+
 
 ### Colaborative Filtering :  Hyperparameter Tuning Alternating Least Squares Algorithm
 
@@ -53,7 +63,7 @@ pd.set_option('display.max_columns',500)
 
 
 ```python
-path='/Users/nanaakwasiabayieboateng/PythonRecommenderSystem'
+path='/PythonRecommenderSystem'
 
 
 # Check current working directory.
@@ -77,8 +87,8 @@ import multiprocessing as mp
 pool = mp.Pool(mp.cpu_count())
 ```
 
-    Current working directory /Users/nanaakwasiabayieboateng/SparkPython2
-    Directory changed successfully /Users/nanaakwasiabayieboateng/PythonRecommenderSystem
+    Current working directory /SparkPython2
+    Directory changed successfully /PythonRecommenderSystem
 
 
 The Digital Music review dataset from the Amazon product dataset used in this work can be found [here](http://jmcauley.ucsd.edu/data/amazon/links.html)
@@ -1084,7 +1094,7 @@ single_pred.withColumn("prediction", (sttdev_rating*col("prediction") + mean_rat
 ```python
 #save to folder models which is created in the writing process
 #folder models must not already be present
-path="/Users/nanaakwasiabayieboateng/PythonRecommenderSystem/models"
+path="/models"
 
 
 model = CVModelEXplicit
