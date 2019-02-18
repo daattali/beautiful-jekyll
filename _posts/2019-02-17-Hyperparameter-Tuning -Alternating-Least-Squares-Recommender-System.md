@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hyperparameter Tuning Alternating Least Squares Algorithm 
+title: Hyperparameter Tuning The Alternating Least Squares Algorithm 
 subtitle: Colaborative Filtering with Matrix Factorization 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
