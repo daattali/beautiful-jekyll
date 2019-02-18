@@ -9,7 +9,7 @@ tags: [Colaborative Filtering,spark,pyspark,matrix factorization, Alternating Le
 
 
 
-### Colaborative Filtering :  Hyperparameter Tuning Alternating Least Squares Algorithm
+### Colaborative Filtering :  Hyperparameter Tuning The Alternating Least Squares Algorithm
 
 
 
