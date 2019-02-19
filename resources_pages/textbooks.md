@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Course Textbooks
+title: Useful Textbooks
 ---
 
 ## About this document
-This document is a compilation of textbooks referenced in MDS courses.
+This document is a compilation of textbooks referenced in MDS courses. The original version was created by an MDS student, [Talha Siddiqui](https://github.com/talhaadnan100).
 
-| Textbook |	Author(s) |	Year | Course Code |	Couse Name | Comments |
+| Textbook |	Author(s) |	Year | Course Code |	Course Name | Comments |
 |----------|------------|------|-------------|-------------|----------|
 |A Course in Machine Learning|Hal Daumé III|2017|DSCI 571, 572, 573, 563, 575|Supervised Learning I, Supervised Learning II, Feature and Model Selection, Supervised Learning II, Advanced Machine Learning||
 |Advanced R|Hadley Wickham|2014|DSCI 511|Programming for Data Science|This is a prominent resource for R as a programming language, allowing the reader to dig deep into R. It anticipates readers to already have some programming background. Its first part on Foundations is closely aligned with the objectives of DSCI 511, and is therefore the textbook for the second half of the course. Gaining familiarity with this book will likely be an asset in your data science career.|
