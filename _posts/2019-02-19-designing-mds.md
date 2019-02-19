@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Designing MDS
-subtitle: Initial decisions and updates
+title: Designing a Master of Data Science program
+subtitle: Goals, design decisions, and lessons learned 
 ---
 
 Since launching the UBC MDS program in 2016, we've received a lot of questions on why we designed MDS the way we did. The post will address the following design decisions:
