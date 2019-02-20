@@ -123,6 +123,10 @@ google_analytics: "UA-112188182-1"
 
 # --- For the blog's "Twitter card" --- #
 
+twitter:
+  username: UBCMDS
+  card: summary
+
 # Google Tag Manager ID
 #gtm: ""
 
