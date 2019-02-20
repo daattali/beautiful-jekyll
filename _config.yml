@@ -46,7 +46,7 @@ avatar: "/img/mdslogo.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: /img/mdslogo.png
+# title-img: /img/mdslogo.png
 
 # --- Background colour/image options --- #
 
