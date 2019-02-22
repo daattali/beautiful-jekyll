@@ -8,12 +8,12 @@
 
 facebook:
   name: "Facebook"
-  baseURL: "https://www.facebook.com/"
+  baseURL: "https://www.facebook.com/ameenullahtajmuhammad"
   icon: "fa-facebook"
 
 github:
   name: "GitHub"
-  baseURL: "https://github.com/"
+  baseURL: "https://github.com/AminullahTajMuhammad"
   icon: "fa-github"
 
 twitter:
