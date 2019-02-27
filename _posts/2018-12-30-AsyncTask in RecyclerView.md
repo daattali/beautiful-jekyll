@@ -1,4 +1,3 @@
-## AsyncTask in RecyclerView
 
 Basically, this article based on ***Today I Learned*** category and it’s a tutorial based article where it tells about, how to use AsyncTask in RecyclerView. So, Let’s started.
 
