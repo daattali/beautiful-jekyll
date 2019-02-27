@@ -2,7 +2,7 @@
 layout: post
 title: 5 reasons why I am writing
 subtitle: A journey of my writing starts today
-tags: [Writing, Why i am writing, Journey ogf my writing, Reasons of writing, Communication skills]
+tags: [Writing, Why i am writing, Journey of my writing, Reasons of writing, Communication skills]
 ---
 
 ![Photo by [Green Chameleon](https://unsplash.com/@craftedbygc?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10368/0*KCRQzOOw3sHAzSf3)
