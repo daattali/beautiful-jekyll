@@ -4,7 +4,7 @@ title: AsyncTask in RecyclerView
 subtitle: Each post also has a 
 tags: [Android, AsyncTask in RecyclerView]
 comments: true
-
+----
 
 ## AsyncTask in RecyclerView
 
