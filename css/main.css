@@ -108,6 +108,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
+  display: none;
   background-color: {{ site.navbar-col }};
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -224,6 +225,7 @@ img {
   content: " \25BC";
 }
 .navbar-custom .nav .navlinks-children {
+  display: none;
   width: 100%;
   display: none;
   word-break: break-word;
@@ -519,9 +521,6 @@ footer .theme-by {
   display: none;
 }
 @media only screen and (min-width: 768px) {
-  .intro-header {
-    margin-top: 130px;
-  }
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
@@ -585,6 +584,7 @@ footer .theme-by {
 }
 
 #header-gh-btns {
+  display: none;
   margin-bottom: 15px;
 }
 @media only screen and (max-width: 500px) {
