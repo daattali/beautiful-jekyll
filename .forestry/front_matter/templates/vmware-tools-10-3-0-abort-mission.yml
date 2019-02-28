@@ -16,7 +16,7 @@ fields:
 - type: datetime
   name: DATE
 pages:
-- _posts/how-to-reset-the-password-of-auto-generated-vcenter-service-accounts-on-windows.md
+- _posts/2019-02-28-how-to-reset-the-password-of-auto-generated-vcenter-service-accounts-on-windows.md
 - _posts/2019-02-25-speed-up-powercli.md
 - _posts/2019-01-17-horizon-view-shambles.md
 - _posts/2019-01-16-powercli-srm-module-how-to-use-it.md
