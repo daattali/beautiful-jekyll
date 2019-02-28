@@ -19,7 +19,7 @@ Then we ran into hardware problems with customized VSAN ready nodes where they w
 
 Funnily enough VSAN would still work fine and the VMs on it too so there's that... ESXi could still run as it's loaded in RAM but no logs persist as they are store on local disk. The only way to troubleshoot was the real time vmkernel log in the DCUI (alt+F12). After reviewing the logs I found a lot of records pointing the finger at the storage controller of the 2 dedicated boot disks. (This controller is the "customized" bit of the ready node - certified by the vendor - or is it?)
 
-VMware confirmed and recommended to upgrade the firmware driver of this controller to the latest version which I did. The issue hasn't come back since but it's not been long so I'm not putting my money on it - This is a case of wait and see. \[EDIT\] It's been over 2 months now and running fine on that front. I think we can assume the upgrade firmware/driver fixed this issue.
+VMware confirmed and recommended to upgrade the firmware driver of this controller to the latest version which I did. The issue hasn't come back since but it's not been long so I'm not putting my money on it - This is a case of wait and see. \[EDIT 28/02/2019\] It's been over 2 months now and running fine on that front. I think we can assume the upgrade firmware/driver fixed this issue.
 
 ### Issue #3: Because why not
 
