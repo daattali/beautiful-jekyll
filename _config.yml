@@ -24,7 +24,7 @@ description: I am Aminullah Taj Muhammad student of Computer Science. I am from 
 # List of links in the navigation bar
 navbar-links:
   About Me:
-    - About Me: "about me\About Me.md"
+    - About Me: "about-me/About-Me.md"
   Resources:
     - Github: "https://github.com/AminullahTajMuhammad"
     - Learn markdown: "http://www.markdowntutorial.com/"
