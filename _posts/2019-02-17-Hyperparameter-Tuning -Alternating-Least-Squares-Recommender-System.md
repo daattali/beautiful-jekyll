@@ -17,7 +17,7 @@ Collaborative filtering is commonly used for recommender systems.
 This can be formulated as a learning problem in which we are given the ratings
 that users have given certain items and are tasked with predicting their ratings for the rest of the items. A user-item matrix can be constructed as follows:
 Given n users and m items,  an n . m matrix A  in which the
-(u; i)th entry is rui { the rating for item i by user u. The matrix A has many unobserved ratings which is represented as missing ratings.
+(u; i)th entry is r_ui { the rating for item i by user u}. The matrix A has many unobserved ratings which is represented as missing ratings.
 
 The following packages are required  for analysis in this post.They are loaded below.
 
@@ -91,9 +91,9 @@ pool = mp.Pool(mp.cpu_count())
     Directory changed successfully /PythonRecommenderSystem
 
 
-The Digital Music review dataset from the Amazon product dataset used in this work can be found [here](http://jmcauley.ucsd.edu/data/amazon/links.html)
-.This dataset contains didgital music reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
-This dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs).The discription of the dataset is as follows:
+The Digital Music review dataset from the Amazon product dataset used in this work can be found in this link [here](http://jmcauley.ucsd.edu/data/amazon/links.html)
+. This dataset contains didgital music reviews and metadata from Amazon, including 142.8 million reviews spanning May 1996 - July 2014.
+This dataset includes reviews (ratings, text, helpfulness votes), product metadata ( descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). The discription of the dataset is as follows:
 reviewerID - ID of the reviewer, e.g. A2SUAM1J3GNN3B
 asin - ID of the product, e.g. 0000013714
 reviewerName - name of the reviewer
