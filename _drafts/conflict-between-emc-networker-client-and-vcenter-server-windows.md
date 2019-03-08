@@ -7,9 +7,9 @@ date: 2019-03-08 12:17:59 +0100
 ---
 I sat for a good 2 minutes looking for a fun title for this post but I couldn't come up with anything worth it. I wanted to do so because I find this issue to be really lame but also a little funny somehow.
 
-I encountered a really strange issue with a customer on a Windows based vCenter server. (I know Windows will be deprecated soon but this is another discussion and it is still supported as of now).
+I encountered a really strange issue with a customer on a Windows based vCenter server. (I know Windows will be deprecated soon but this is another discussion and it is still supported as of now). I am going to simplify what happened and consolidate the useful bits.
 
-The vCenter rebooted after one of the guys patched the server for Windows updates. This usually is a routine task, but this time, after the server completed its reboot, the web client would display a single-sign-on error which made the server unusable. A few hits online on this issue but nothing really useful.
+The vCenter rebooted after one of the guys patched the server for Windows updates. Nothing wrong here, this usually is a routine task, but this time, after the server completed its reboot, the web client would display a single-sign-on error which made the server unusable. A few hits online on this issue but nothing really useful.
 
 \+++ PIC
 
@@ -29,20 +29,17 @@ We went through the vCenter logs and always ended up with the same generic kind 
 * Connect directly to a vSphere host (vCenter being down).
 * Create a new VM (no template to deploy from).
 * Install Windows and vCenter (skipping the steps).
-
-And sure enough it would work. After rebooting the server the services came online, all good (Not going in the details but a restore of the DB would cause problems with licenses and vpxa agents so we decided to go with a fresh install. Not much config in this vCenter).
-
 * Install the Networker client + SQL database module.
 
 At the time we were not suspecting the Networker agent so we tried reinstalling with the embedded database and several different things until one of the guys uninstalled the Networker client, then rebooted and all the services came back up. If you reinstall the client, vCenter keeps working and the backup software works, but if you reboot the server you will run into the same issue as described.
 
-Sure enough we contacted the EMC support to ask what's going on and how we are supposed to backup our vCenter DB if the client keeps crashing vCenter. The response from the support was golden, it went something like:
+Sure enough we contacted the EMC support to ask what's going on and how we are supposed to backup our vCenter DB if the client keeps crashing vCenter. The response from the support was gold, it went something like this:
 
-> We can't find any entries regarding the backup of vCenter in out documentation. You are not supposed to back up vCenter. If you want to do so you can make a dump of the DB and copy it to a shared location.
+> We can't find any entries regarding the backup of vCenter in our documentation. You are not supposed to back up vCenter. If you want to do so you can make a dump of the DB and copy it to a shared location.
 
 \+ PIC 96
 
-We were really surprised and disappointed by this answer as it is a clear case of _"We have no idea what's going on so - We don't support it, deal with it - bye"_. I am used to the VMware support trying to put the blame on the manufacturer and vice versa but that's another level here. 
+Why am I paying for this software again? Oh yea, backups... We were really surprised and disappointed by this answer as it is a clear case of _"We have no idea what's going on so - We don't support it, deal with it - bye"_. I am used to the VMware support trying to put the blame on the third party and vice versa but that's another level here. 
 
 So, it turns out the Networker client had been installed several months ago after the server was last rebooted, meaning the issue would have occurred anytime after that day.
 
