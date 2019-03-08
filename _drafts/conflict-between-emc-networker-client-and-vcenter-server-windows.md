@@ -37,7 +37,7 @@ Sure enough we contacted the EMC support to ask what's going on and how we are s
 
 > We can't find any entries regarding the backup of vCenter in our documentation. You are not supposed to back up vCenter. If you want to do so you can make a dump of the DB and copy it to a shared location.
 
-\+ PIC 96
+![](/img/1996.JPG "Yea robocopy !")
 
 Why am I paying for this software again? Oh yea, backups... We were really surprised and disappointed by this answer as it is a clear case of _"We have no idea what's going on so - We don't support it, deal with it - bye"_. I am used to the VMware support trying to put the blame on the third party and vice versa but that's another level here. 
 
