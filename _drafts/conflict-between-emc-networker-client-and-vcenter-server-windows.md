@@ -5,7 +5,7 @@ DATE: ''
 date: 2019-03-08 12:17:59 +0100
 
 ---
-I sat for a good 2 minutes looking for a fun title for this post but I couldn't come up with anything worth it. I wanted to do so because I find this issue to be really lame but also a little funny somehow.
+I sat for a good 2 minutes looking for a fun title for this post but I couldn't come up with anything worth it. I wanted to do so because I find this issue to be really lame but also a little funny somehow. 
 
 I encountered a really strange issue with a customer on a Windows based vCenter server. (I know Windows will be deprecated soon but this is another discussion and it is still supported as of now). I am going to simplify what happened and consolidate the useful bits.
 
