@@ -896,7 +896,7 @@ The following line creates the alternating least squares model. Then the model i
 
 #### Hyperparameter Tuning
 
-The following parameters in the ALS are to be tuned. The paper Large- Scale Parallel for Colaborative Filtering for the Netflix Price is available on this link [here](https://github.com/tolleiv/thesis/blob/master/Research/Papers/__Zhou08%20-%20Large-scale%20Parallel%20Collaborative%20Filtering%20for%20the%20Netflix%20Prize.pdf). For a detailed explanation of the model, reading through the paper would be appropriate.
+The following parameters in the ALS are to be tuned. The paper Large- Scale Parallel  Colaborative Filtering for the Netflix Price is available on this link [here](https://github.com/tolleiv/thesis/blob/master/Research/Papers/__Zhou08%20-%20Large-scale%20Parallel%20Collaborative%20Filtering%20for%20the%20Netflix%20Prize.pdf). For a detailed explanation of the model, reading through the paper would be appropriate.
 
 **numBlocks** is the number of blocks the users and items will be partitioned into in order to parallelize computation (defaults to 10).
 
