@@ -935,7 +935,7 @@ max_rating,min_rating = DFF.select(max("rating"), min("rating")).first()
 
 DFF=DFF.withColumn("rating_Normalized", (col("rating") - mean_rating) / sttdev_rating)
 
-DFF=DFF.withColumn("rating_minmax", (col("rating") - max_rating) /(max_rating-min_rating))
+DFF=DFF.withColumn("rating_minmax", (col("rating") - min_rating) /(max_rating-min_rating))
 
 
 
