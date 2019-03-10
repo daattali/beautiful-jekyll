@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hyperparameter Tuning  The Alternating Least-SquaresAlgorithm for A Recommender System. 
-subtitle: Personlized Recommendation with Matrix Factorization 
+subtitle: Personalized Recommendation with Matrix Factorization 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
 tags: [spark,pyspark,matrix factorization, Alternating Least Squares]
