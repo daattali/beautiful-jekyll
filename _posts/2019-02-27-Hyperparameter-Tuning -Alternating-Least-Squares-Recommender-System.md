@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building Recommender System in Spark Using Alternating Least Squares Algorithm 
+title: Hyperparameter Tuning  The Alternating Least-SquaresAlgorithm for A Recommender System. 
 subtitle: Personlized Recommendation with Matrix Factorization 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
