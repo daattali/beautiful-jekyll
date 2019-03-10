@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Building Recommender System in Spark Using Alternating Least Squares Algorithm 
