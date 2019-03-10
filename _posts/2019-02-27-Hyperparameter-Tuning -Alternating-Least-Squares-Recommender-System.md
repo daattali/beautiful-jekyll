@@ -1,4 +1,16 @@
 
+---
+layout: post
+title: Building Recommender System in Spark Using Alternating Least Squares Algorithm 
+subtitle: Personlized Recommendation with Matrix Factorization 
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [spark,pyspark,matrix factorization, Alternating Least Squares]
+---
+
+
+
+
 ### Colaborative Filtering :  Hyperparameter Tuning Alternating Least Squares Algorithm
 
 
@@ -53,7 +65,7 @@ pd.set_option('display.max_columns',500)
 
 
 ```python
-path='/Users/nanaakwasiabayieboateng/PythonRecommenderSystem'
+path='/PythonRecommenderSystem'
 
 
 # Check current working directory.
@@ -77,8 +89,8 @@ import multiprocessing as mp
 pool = mp.Pool(mp.cpu_count())
 ```
 
-    Current working directory /Users/nanaakwasiabayieboateng/SparkPython2
-    Directory changed successfully /Users/nanaakwasiabayieboateng/PythonRecommenderSystem
+    Current working directory /SparkPython2
+    Directory changed successfully /PythonRecommenderSystem
 
 
 The Digital Music review dataset from the Amazon product dataset used in this work can be found [here](http://jmcauley.ucsd.edu/data/amazon/links.html)
@@ -1017,7 +1029,7 @@ predictions.show(5)
     |userId|itemId|rating|         predictnew|
     +------+------+------+-------------------+
     |1562.0| 148.0|   4.0| 1.3738184571266174|
-    | 357.0| 148.0|   5.0|-1.4132280349731445|
+    | 357.0| 148.0|   5.0| 1.4132280349731445|
     |5678.0| 463.0|   4.0| 1.5864256620407104|
     |2144.0| 463.0|   4.0| 1.6909311413764954|
     |3369.0| 471.0|   5.0| 2.3148409128189087|
@@ -1100,7 +1112,7 @@ single_pred.withColumn("prediction", (sttdev_rating*col("prediction") + mean_rat
 ```python
 #save to folder models which is created in the writing process
 #folder models must not already be present
-path="/Users/nanaakwasiabayieboateng/PythonRecommenderSystem/models"
+path="/PythonRecommenderSystem/models"
 
 
 model = CVModelEXplicit
