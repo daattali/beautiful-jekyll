@@ -560,8 +560,8 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
 
+![ ]( /img/SPARK_ML/1.png)
 
 Correlations between independent variables.
 
@@ -581,8 +581,8 @@ for i in range(n):
 ```
 
 
-![png](output_20_0.png)
 
+![ ]( /img/SPARK_ML/2.png)
 
 
 ```python
@@ -605,7 +605,8 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+
+![ ]( /img/SPARK_ML/3.png)
 
 
 #### Preprocessing Data
@@ -1078,7 +1079,8 @@ plt.show()
 ```
 
 
-![png](output_34_0.png)
+
+![ ]( /img/SPARK_ML/4.png)
 
 
 Summarize the model over the training set, we can also obtain the receiver-operating characteristic and areaUnderROC.
@@ -1096,7 +1098,8 @@ print('Training Dataset AUC: {}'.format(trainingSummary.areaUnderROC))
 ```
 
 
-![png](output_36_0.png)
+
+![ ]( /img/SPARK_ML/5.png)
 
 
     Training Dataset AUC: 0.9045120993163305
@@ -1132,7 +1135,8 @@ plt.show()
 ```
 
 
-![png](output_39_0.png)
+
+![ ]( /img/SPARK_ML/6.png)
 
 
 Evaluate our Logistic Regression model.
