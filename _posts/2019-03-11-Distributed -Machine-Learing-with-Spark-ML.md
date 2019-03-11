@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Distributed Machine Learning with Spark ML. 
+title:  Distributed Machine Learning with Spark ML. 
 subtitle: Elastic Net Logistic Regression, Gradient-Bossting Machines, Random Forest Models in Spark 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
