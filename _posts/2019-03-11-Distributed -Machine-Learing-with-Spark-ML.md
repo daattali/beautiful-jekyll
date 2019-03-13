@@ -29,6 +29,7 @@ A host of Regression and classification models are available in Spark ML libary.
 * Isotonic regression
 * Random Forests
 
+Load the rquired libraries below
 
 ```python
 import pyspark.sql.types as typ
@@ -78,7 +79,7 @@ findspark.init()
 
 
 ```python
-path="/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/Anomalydetection/bank/"
+path="/Anomalydetection/bank/"
 ```
 
 #### Description of Data
@@ -1228,7 +1229,7 @@ PySpark allows you to save the Pipeline definition for later use.
 ```python
 from pyspark.mllib.classification import LogisticRegressionWithLBFGS, LogisticRegressionModel
 
-pipelinePath = '/Users/nanaakwasiabayieboateng/SparkPython2/Logistic_Pipeline'
+pipelinePath = '/Logistic_Pipeline'
 pipelineModel.write().overwrite().save(pipelinePath)
 
 #loadedPipelineModel = PipelineModel.load(modelPath)
