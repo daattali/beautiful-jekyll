@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hyperparameter Tuning  The Alternating Least-SquaresAlgorithm for A Recommender System. 
+title: Hyperparameter Tuning  The Alternating Least-Squares Algorithm for A Recommender System. 
 subtitle: Personalized Recommendation with Matrix Factorization 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
