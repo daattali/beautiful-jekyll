@@ -26,7 +26,7 @@ subtitle: For MDS students and beyond
 - [Resources offered by UBC](/resources_pages/UBC_resources)
 - [Block rep guidelines](/resources_pages/block_rep)
 - [Student feedback about the program](/resources_pages/student_feedback)
-- [Guidelines for working with others](/teamwork/)
+- [Guidelines for working with others](/resources_pages/teamwork/)
 
 #### Possibly of general interest
 
