@@ -1,3 +1,11 @@
+---
+layout: post
+title: Hands On Web Scrapping in Python. 
+subtitle: Text Mining and Natural Language Processing Part One
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [BeautifulSoup,request,NLTK, text mining]
+---
 
 ## Hands On  Web Scraping in Python
 
@@ -63,13 +71,13 @@ The find_all function with a specified attrs which can be obtained from the html
 
 ```python
 from IPython.display import Image
-Image(filename='/Users/nanaakwasiabayieboateng/PythonNLTK/indeedfca.png')
+Image(filename='/indeedfca.png')
 ```
 
 
 
 
-![png](output_3_0.png)
+![ ]( /img/Webscrapping/1.png)
 
 
 
@@ -622,7 +630,7 @@ We can write the dataframe to file ,so we wouldn't have to repeat the extraction
 df = AllData
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
-writer = pd.ExcelWriter('/Users/nanaakwasiabayieboateng/PythonNLTK/AllData.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('/AllData.xlsx', engine='xlsxwriter')
 
 # Convert the dataframe to an XlsxWriter Excel object.
 df.to_excel(writer, sheet_name='Sheet1')
@@ -637,7 +645,7 @@ writer.save()
 ```python
 # Create a Pandas dataframe from the data.
 
-pd.DataFrame.to_csv(AllData,'/Users/nanaakwasiabayieboateng/PythonNLTK/AllData.csv')
+pd.DataFrame.to_csv(AllData,'/AllData.csv')
 ```
 
 We can generate random user agent to deal with websites that require browser information from a user agent inorder to show you content.
