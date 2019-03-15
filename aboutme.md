@@ -19,7 +19,7 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
 -  R, Matlab, Python, C++, Octave, SAS, Stata
 
 
-###   my history 
+###   My History 
  I  begun my  academic research career  in  bio-statistical fields such as applying statistical models in investigating  pediatric  and thoracic oncology. I have being involved in applying state of the art machine learning, deep learning and natural language processing techniques in solving problems in the automobile industry, finance and insurance industries. 
  
      
