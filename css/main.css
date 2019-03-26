@@ -743,10 +743,6 @@ td.gutter {
   border-left-color: #3CB371;
 }
 
-}
-
-
-
 /* Fix table border github gist snippets */
 
 .gist, .gist-file table tr {
