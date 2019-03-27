@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://crafting-software.github.io"
+url: "https://andreeadociu.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Crafting Software site
+title: Crafting Software Innovation
 
 # Short description of your site
 # description: A virtual proof that name is awesome!
@@ -36,15 +36,15 @@ title: Crafting Software site
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+ #title-img: /img/avatar-icon.png
 
 # --- Background colour/image options --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
+#navbar-col: "#F5F5F5"
+#navbar-text-col: "#404040"
+#navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
@@ -55,9 +55,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+ #navbar-img: "/img/header_1366px.png"
+ # footer-img: "/img/bgimage.png"
+  #page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
 
