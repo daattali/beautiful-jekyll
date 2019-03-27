@@ -1,0 +1,13 @@
+<map id="DGtal::FrechetShortcut&lt; TIterator, TInteger &gt;" name="DGtal::FrechetShortcut&lt; TIterator, TInteger &gt;">
+<area shape="rect" id="node1" title="Aim: On&#45;line computation Computation of the longest shortcut according to the Fréchet distance for a ..." alt="" coords="1451,73,1609,112"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1128,73,1326,112"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1FrechetShortcut_1_1Backpath.html" title=" " alt="" coords="865,67,1022,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="547,24,619,49"/>
+<area shape="rect" id="node5" title=" " alt="" coords="501,84,665,123"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1FrechetShortcut_1_1Backpath_1_1occulter__attributes.html" title=" " alt="" coords="150,5,307,71"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="169,95,288,120"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,60,44,85"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,128,44,153"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="348,148,461,173"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1FrechetShortcut_1_1Cone.html" title=" " alt="" coords="1148,136,1306,188"/>
+</map>

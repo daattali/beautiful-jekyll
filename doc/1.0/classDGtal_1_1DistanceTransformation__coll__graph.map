@@ -1,0 +1,14 @@
+<map id="DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;" name="DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;">
+<area shape="rect" id="node1" title="Aim: Implementation of the linear in time distance transformation for separable metrics." alt="" coords="1280,103,1532,155"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1VoronoiMap.html" title="Aim: Implementation of the linear in time Voronoi map construction." alt="" coords="979,103,1231,155"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title=" " alt="" coords="650,22,788,61"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title=" " alt="" coords="5,13,143,51"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="260,35,421,61"/>
+<area shape="rect" id="node6" title=" " alt="" coords="635,85,803,110"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="284,87,398,113"/>
+<area shape="rect" id="node8" title=" " alt="" coords="55,95,94,121"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="287,139,395,165"/>
+<area shape="rect" id="node9" title=" " alt="" coords="640,134,798,173"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="639,234,799,286"/>
+<area shape="rect" id="node12" title=" " alt="" coords="297,247,384,273"/>
+</map>

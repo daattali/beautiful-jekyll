@@ -1,0 +1,52 @@
+<map id="testChamferDT.cpp" name="testChamferDT.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2923,5,3058,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1609,819,1682,844"/>
+<area shape="rect" id="node3" title=" " alt="" coords="195,432,234,457"/>
+<area shape="rect" id="node4" title=" " alt="" coords="4602,672,4678,697"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title=" " alt="" coords="2011,512,2168,537"/>
+<area shape="rect" id="node31" title=" " alt="" coords="4678,79,4773,104"/>
+<area shape="rect" id="node32" href="$StdDefs_8h_source.html" title=" " alt="" coords="897,79,1063,104"/>
+<area shape="rect" id="node46" href="$ChamferNorm2D_8h_source.html" title=" " alt="" coords="3550,332,3740,371"/>
+<area shape="rect" id="node48" href="$CMetricSpace_8h_source.html" title=" " alt="" coords="2907,332,3080,371"/>
+<area shape="rect" id="node50" href="$CSeparableMetric_8h_source.html" title=" " alt="" coords="3029,239,3225,277"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2693,592,2771,617"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1291,592,1418,617"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1442,592,1614,617"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1638,592,1797,617"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1820,592,1990,617"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2014,592,2196,617"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2220,585,2364,624"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2389,592,2585,617"/>
+<area shape="rect" id="node14" title=" " alt="" coords="986,672,1043,697"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2608,592,2669,617"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title=" " alt="" coords="4120,745,4261,771"/>
+<area shape="rect" id="node18" href="$Trace_8h_source.html" title=" " alt="" coords="4077,592,4214,617"/>
+<area shape="rect" id="node23" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="3830,672,4031,697"/>
+<area shape="rect" id="node24" href="$Assert_8h_source.html" title=" " alt="" coords="4335,672,4476,697"/>
+<area shape="rect" id="node25" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="3613,672,3806,697"/>
+<area shape="rect" id="node26" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="836,592,1015,617"/>
+<area shape="rect" id="node27" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1140,745,1311,771"/>
+<area shape="rect" id="node28" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="2896,592,3083,617"/>
+<area shape="rect" id="node29" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1335,745,1537,771"/>
+<area shape="rect" id="node30" href="$Exceptions_8h_source.html" title=" " alt="" coords="1561,745,1729,771"/>
+<area shape="rect" id="node17" title=" " alt="" coords="4242,819,4296,844"/>
+<area shape="rect" id="node19" title=" " alt="" coords="4052,819,4121,844"/>
+<area shape="rect" id="node20" title=" " alt="" coords="4055,672,4108,697"/>
+<area shape="rect" id="node21" href="$Clock_8h_source.html" title=" " alt="" coords="3512,745,3648,771"/>
+<area shape="rect" id="node22" href="$TraceWriter_8h_source.html" title=" " alt="" coords="3824,745,3995,771"/>
+<area shape="rect" id="node33" href="$SpaceND_8h_source.html" title=" " alt="" coords="360,432,528,457"/>
+<area shape="rect" id="node34" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1964,332,2113,371"/>
+<area shape="rect" id="node36" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="975,425,1140,464"/>
+<area shape="rect" id="node37" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="2724,432,2938,457"/>
+<area shape="rect" id="node38" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="544,339,765,364"/>
+<area shape="rect" id="node39" href="$Object_8h_source.html" title=" " alt="" coords="2612,339,2775,364"/>
+<area shape="rect" id="node40" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="333,239,507,277"/>
+<area shape="rect" id="node41" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="245,332,419,371"/>
+<area shape="rect" id="node42" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="1736,152,1894,191"/>
+<area shape="rect" id="node44" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="1186,325,1430,377"/>
+<area shape="rect" id="node45" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title=" " alt="" coords="942,325,1162,377"/>
+<area shape="rect" id="node35" href="$CSpace_8h_source.html" title=" " alt="" coords="1894,432,2052,457"/>
+<area shape="rect" id="node43" title=" " alt="" coords="3501,432,3558,457"/>
+<area shape="rect" id="node47" href="$ChamferNorm2D_8ih_source.html" title=" " alt="" coords="4406,425,4602,464"/>
+<area shape="rect" id="node49" href="$CQuantity_8h_source.html" title=" " alt="" coords="3163,432,3325,457"/>
+</map>

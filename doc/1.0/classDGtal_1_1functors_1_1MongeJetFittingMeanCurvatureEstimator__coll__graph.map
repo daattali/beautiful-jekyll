@@ -1,0 +1,6 @@
+<map id="DGtal::functors::MongeJetFittingMeanCurvatureEstimator&lt; TSurfel, TEmbedder &gt;" name="DGtal::functors::MongeJetFittingMeanCurvatureEstimator&lt; TSurfel, TEmbedder &gt;">
+<area shape="rect" id="node1" title="Aim: Estimates Mean curvature using CGAL Jet Fitting and Monge Form." alt="" coords="5,265,211,317"/>
+<area shape="rect" id="node2" title=" " alt="" coords="22,179,195,204"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="52,92,165,117"/>
+<area shape="rect" id="node4" title=" " alt="" coords="89,5,128,31"/>
+</map>

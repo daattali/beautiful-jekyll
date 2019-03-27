@@ -1,0 +1,9 @@
+<map id="DGtal::DigitalSetByAssociativeContainer&lt; TDomain, TContainer &gt;" name="DGtal::DigitalSetByAssociativeContainer&lt; TDomain, TContainer &gt;">
+<area shape="rect" id="node1" title="Aim: A wrapper class around a STL associative container for storing sets of digital points within som..." alt="" coords="120,379,349,417"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title=" " alt="" coords="68,292,243,317"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title=" " alt="" coords="5,192,143,231"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title=" " alt="" coords="5,5,143,44"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="146,105,307,131"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer." alt="" coords="167,199,304,224"/>
+<area shape="rect" id="node7" title=" " alt="" coords="268,292,355,317"/>
+</map>

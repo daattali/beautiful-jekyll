@@ -1,0 +1,52 @@
+<map id="testLambdaMST2D.cpp" name="testLambdaMST2D.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2009,5,2170,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1277,1165,1350,1191"/>
+<area shape="rect" id="node3" title=" " alt="" coords="3882,85,3948,111"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2503,505,2566,531"/>
+<area shape="rect" id="node5" title=" " alt="" coords="191,859,249,884"/>
+<area shape="rect" id="node6" href="$Common_8h_source.html" title=" " alt="" coords="1694,859,1850,884"/>
+<area shape="rect" id="node28" title=" " alt="" coords="3971,85,4066,111"/>
+<area shape="rect" id="node29" href="$StdDefs_8h_source.html" title=" " alt="" coords="2141,165,2307,191"/>
+<area shape="rect" id="node41" href="$PointListReader_8h_source.html" title=" " alt="" coords="999,325,1172,364"/>
+<area shape="rect" id="node46" href="$ArithmeticalDSSComputer_8h_source.html" title="Header file for module ArithmeticalDSSComputer.cpp." alt="" coords="468,679,660,717"/>
+<area shape="rect" id="node49" href="$LambdaMST2D_8h_source.html" title=" " alt="" coords="2127,79,2321,117"/>
+<area shape="rect" id="node50" href="$SaturatedSegmentation_8h_source.html" title="Header file for module SaturatedSegmentation.cpp." alt="" coords="3933,772,4109,811"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1350,939,1429,964"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1053,1019,1129,1044"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1714,939,1841,964"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1864,939,2037,964"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2061,939,2219,964"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2243,939,2413,964"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2437,939,2619,964"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2642,932,2787,971"/>
+<area shape="rect" id="node15" title=" " alt="" coords="894,939,1090,964"/>
+<area shape="rect" id="node16" title=" " alt="" coords="3529,1019,3586,1044"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1114,939,1174,964"/>
+<area shape="rect" id="node18" href="$Config_8h_source.html" title=" " alt="" coords="1587,1092,1728,1117"/>
+<area shape="rect" id="node19" href="$Trace_8h_source.html" title=" " alt="" coords="1553,939,1690,964"/>
+<area shape="rect" id="node20" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1351,1019,1553,1044"/>
+<area shape="rect" id="node21" href="$Assert_8h_source.html" title=" " alt="" coords="1576,1019,1717,1044"/>
+<area shape="rect" id="node22" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="690,1092,883,1117"/>
+<area shape="rect" id="node23" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="2912,939,3091,964"/>
+<area shape="rect" id="node24" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1017,1092,1188,1117"/>
+<area shape="rect" id="node25" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="3114,939,3302,964"/>
+<area shape="rect" id="node26" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1212,1092,1414,1117"/>
+<area shape="rect" id="node27" href="$Exceptions_8h_source.html" title=" " alt="" coords="296,939,464,964"/>
+<area shape="rect" id="node30" href="$SpaceND_8h_source.html" title=" " alt="" coords="1956,685,2124,711"/>
+<area shape="rect" id="node33" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="2433,772,2583,811"/>
+<area shape="rect" id="node34" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="3592,772,3757,811"/>
+<area shape="rect" id="node35" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="781,779,995,804"/>
+<area shape="rect" id="node36" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="2249,592,2471,617"/>
+<area shape="rect" id="node37" href="$Object_8h_source.html" title=" " alt="" coords="3593,685,3756,711"/>
+<area shape="rect" id="node38" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="1753,499,1927,537"/>
+<area shape="rect" id="node39" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="1804,585,1978,624"/>
+<area shape="rect" id="node40" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="1680,239,1838,277"/>
+<area shape="rect" id="node44" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="3275,672,3519,724"/>
+<area shape="rect" id="node45" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title=" " alt="" coords="2546,672,2766,724"/>
+<area shape="rect" id="node31" href="$CInteger_8h_source.html" title=" " alt="" coords="2081,779,2242,804"/>
+<area shape="rect" id="node32" href="$PointVector_8h_source.html" title=" " alt="" coords="1120,779,1298,804"/>
+<area shape="rect" id="node42" href="$FreemanChain_8h_source.html" title="Header file for module FreemanChain.cpp." alt="" coords="1014,412,1172,451"/>
+<area shape="rect" id="node43" href="$PointListReader_8ih_source.html" title=" " alt="" coords="767,412,940,451"/>
+<area shape="rect" id="node47" title=" " alt="" coords="398,779,437,804"/>
+<area shape="rect" id="node48" href="$ReverseIterator_8h_source.html" title=" " alt="" coords="512,779,706,804"/>
+</map>

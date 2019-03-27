@@ -1,0 +1,47 @@
+<map id="testBits.cpp" name="testBits.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1959,5,2049,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1760,79,1816,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2661,385,2718,411"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1721,532,1794,557"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title=" " alt="" coords="1668,225,1825,251"/>
+<area shape="rect" id="node44" href="$Bits_8h_source.html" title="A collection of functions to help with bitwise manipulations." alt="" coords="1941,79,2067,104"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2127,305,2206,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2642,459,2718,484"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2230,305,2357,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="94,305,266,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="290,305,449,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="472,305,642,331"/>
+<area shape="rect" id="node12" title=" " alt="" coords="666,305,848,331"/>
+<area shape="rect" id="node13" title=" " alt="" coords="872,299,1016,337"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1041,305,1237,331"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1260,305,1321,331"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title=" " alt="" coords="1013,459,1155,484"/>
+<area shape="rect" id="node18" href="$Trace_8h_source.html" title=" " alt="" coords="1396,305,1532,331"/>
+<area shape="rect" id="node25" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="599,385,801,411"/>
+<area shape="rect" id="node26" href="$Assert_8h_source.html" title=" " alt="" coords="1167,385,1308,411"/>
+<area shape="rect" id="node29" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="331,385,525,411"/>
+<area shape="rect" id="node30" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="1593,385,1772,411"/>
+<area shape="rect" id="node31" href="$BasicTypes_8h_source.html" title=" " alt="" coords="2022,385,2194,411"/>
+<area shape="rect" id="node34" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="2430,305,2618,331"/>
+<area shape="rect" id="node42" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1796,385,1998,411"/>
+<area shape="rect" id="node43" href="$Exceptions_8h_source.html" title=" " alt="" coords="1835,305,2003,331"/>
+<area shape="rect" id="node17" title=" " alt="" coords="810,532,864,557"/>
+<area shape="rect" id="node19" title=" " alt="" coords="413,532,483,557"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1039,385,1092,411"/>
+<area shape="rect" id="node21" href="$Clock_8h_source.html" title=" " alt="" coords="1383,385,1519,411"/>
+<area shape="rect" id="node24" href="$TraceWriter_8h_source.html" title=" " alt="" coords="516,459,687,484"/>
+<area shape="rect" id="node28" href="$Trace_8ih_source.html" title=" " alt="" coords="825,385,964,411"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1794,459,1854,484"/>
+<area shape="rect" id="node23" href="$Clock_8ih_source.html" title=" " alt="" coords="1381,459,1520,484"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1178,459,1358,484"/>
+<area shape="rect" id="node32" title=" " alt="" coords="2024,459,2146,484"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1928,459,2000,484"/>
+<area shape="rect" id="node35" title=" " alt="" coords="2558,385,2637,411"/>
+<area shape="rect" id="node36" href="$Color_8h_source.html" title=" " alt="" coords="2318,385,2434,411"/>
+<area shape="rect" id="node39" href="$BasicBoolFunctors_8h_source.html" title=" " alt="" coords="2797,385,3011,411"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2322,459,2475,484"/>
+<area shape="rect" id="node38" href="$Color_8ih_source.html" title=" " alt="" coords="2499,459,2618,484"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2844,459,2974,484"/>
+<area shape="rect" id="node41" href="$BasicBoolFunctors_8ih_source.html" title=" " alt="" coords="2998,459,3215,484"/>
+<area shape="rect" id="node45" href="$ExpressionTemplates_8h_source.html" title=" " alt="" coords="1941,152,2171,177"/>
+</map>

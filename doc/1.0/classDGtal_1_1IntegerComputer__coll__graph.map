@@ -1,0 +1,13 @@
+<map id="DGtal::IntegerComputer&lt; TInteger &gt;" name="DGtal::IntegerComputer&lt; TInteger &gt;">
+<area shape="rect" id="node1" title="Aim: This class gathers several types and methods to make computation with integers." alt="" coords="1424,177,1587,215"/>
+<area shape="rect" id="node2" title=" " alt="" coords="706,46,853,71"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="354,63,467,89"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,94,44,119"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1NumberTraitsImpl.html" title="Aim: The traits class for all models of Cinteger (implementation)" alt="" coords="150,117,318,155"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1NumberTraits.html" title=" " alt="" coords="1192,174,1335,213"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="695,113,864,165"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="503,174,671,213"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1NumberTraits.html" title="Aim: The traits class for all models of Cinteger." alt="" coords="888,181,1061,206"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1SpaceND.html" title=" " alt="" coords="1193,247,1335,286"/>
+<area shape="rect" id="node11" href="$classDGtal_1_1SpaceND.html" title=" " alt="" coords="896,247,1053,286"/>
+</map>

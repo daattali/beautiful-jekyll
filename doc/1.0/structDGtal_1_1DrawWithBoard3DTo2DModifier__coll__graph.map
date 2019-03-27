@@ -1,0 +1,4 @@
+<map id="DGtal::DrawWithBoard3DTo2DModifier" name="DGtal::DrawWithBoard3DTo2DModifier">
+<area shape="rect" id="node1" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="11,79,206,117"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawableWithDisplay3D.html" title=" " alt="" coords="5,5,212,31"/>
+</map>

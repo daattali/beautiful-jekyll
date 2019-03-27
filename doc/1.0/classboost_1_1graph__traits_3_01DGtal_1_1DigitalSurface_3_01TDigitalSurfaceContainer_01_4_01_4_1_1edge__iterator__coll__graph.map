@@ -1,0 +1,11 @@
+<map id="boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::edge_iterator" name="boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::edge_iterator">
+<area shape="rect" id="node1" title=" " alt="" coords="1351,44,1532,109"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1069,5,1226,71"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n&#45;1&#45;cells in a nD space, together with adjacency relation between these cell..." alt="" coords="1051,95,1244,133"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title=" " alt="" coords="692,63,870,101"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title=" " alt="" coords="24,52,162,91"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="306,73,467,99"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1UmbrellaComputer.html" title=" " alt="" coords="694,125,868,164"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1UmbrellaComputer_1_1State.html" title=" " alt="" coords="5,121,180,173"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1UmbrellaComputer.html" title="Aim: Useful for computing umbrellas on &#39;DigitalSurface&#39;s, ie set of n&#45;1 cells around a n&#45;3 cell." alt="" coords="297,191,477,229"/>
+</map>

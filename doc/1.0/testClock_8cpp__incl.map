@@ -1,0 +1,45 @@
+<map id="testClock.cpp" name="testClock.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="231,5,332,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,61,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="362,239,420,264"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1508,385,1580,411"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title=" " alt="" coords="1370,79,1527,104"/>
+<area shape="rect" id="node21" href="$Clock_8h_source.html" title=" " alt="" coords="1781,239,1918,264"/>
+<area shape="rect" id="node6" title=" " alt="" coords="581,159,659,184"/>
+<area shape="rect" id="node7" title=" " alt="" coords="765,312,841,337"/>
+<area shape="rect" id="node8" title=" " alt="" coords="683,159,810,184"/>
+<area shape="rect" id="node9" title=" " alt="" coords="935,159,1108,184"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1182,159,1341,184"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1607,159,1777,184"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1852,159,2034,184"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2057,152,2202,191"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2538,159,2734,184"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2758,159,2818,184"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title=" " alt="" coords="2713,312,2855,337"/>
+<area shape="rect" id="node18" href="$Trace_8h_source.html" title=" " alt="" coords="2377,159,2514,184"/>
+<area shape="rect" id="node25" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="2209,239,2410,264"/>
+<area shape="rect" id="node26" href="$Assert_8h_source.html" title=" " alt="" coords="2930,239,3070,264"/>
+<area shape="rect" id="node29" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="1991,239,2185,264"/>
+<area shape="rect" id="node30" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="1102,239,1280,264"/>
+<area shape="rect" id="node31" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1587,239,1758,264"/>
+<area shape="rect" id="node34" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="369,159,556,184"/>
+<area shape="rect" id="node42" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="136,239,338,264"/>
+<area shape="rect" id="node43" href="$Exceptions_8h_source.html" title=" " alt="" coords="1364,159,1532,184"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2757,385,2811,411"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2432,385,2501,411"/>
+<area shape="rect" id="node20" title=" " alt="" coords="2434,239,2486,264"/>
+<area shape="rect" id="node24" href="$TraceWriter_8h_source.html" title=" " alt="" coords="2224,312,2395,337"/>
+<area shape="rect" id="node28" href="$Trace_8ih_source.html" title=" " alt="" coords="2510,239,2650,264"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1728,312,1787,337"/>
+<area shape="rect" id="node23" href="$Clock_8ih_source.html" title=" " alt="" coords="1861,312,2000,337"/>
+<area shape="rect" id="node27" title=" " alt="" coords="2929,312,3108,337"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1435,312,1557,337"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1582,312,1653,337"/>
+<area shape="rect" id="node35" title=" " alt="" coords="732,239,810,264"/>
+<area shape="rect" id="node36" href="$Color_8h_source.html" title=" " alt="" coords="884,239,999,264"/>
+<area shape="rect" id="node39" href="$BasicBoolFunctors_8h_source.html" title=" " alt="" coords="444,239,658,264"/>
+<area shape="rect" id="node37" title=" " alt="" coords="865,312,1018,337"/>
+<area shape="rect" id="node38" href="$Color_8ih_source.html" title=" " alt="" coords="1042,312,1161,337"/>
+<area shape="rect" id="node40" title=" " alt="" coords="527,312,657,337"/>
+<area shape="rect" id="node41" href="$BasicBoolFunctors_8ih_source.html" title=" " alt="" coords="286,312,503,337"/>
+</map>

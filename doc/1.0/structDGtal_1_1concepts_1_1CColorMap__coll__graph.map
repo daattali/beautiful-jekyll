@@ -1,0 +1,4 @@
+<map id="DGtal::concepts::CColorMap&lt; CMap &gt;" name="DGtal::concepts::CColorMap&lt; CMap &gt;">
+<area shape="rect" id="node1" title="Aim: Defines the concept describing a color map. A color map converts a value within a given range in..." alt="" coords="5,213,196,252"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component." alt="" coords="54,66,148,91"/>
+</map>

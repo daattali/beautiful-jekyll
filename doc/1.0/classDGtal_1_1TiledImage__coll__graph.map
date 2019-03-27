@@ -1,0 +1,4 @@
+<map id="DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;" name="DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;">
+<area shape="rect" id="node1" title="Aim: implements a tiled image from a &quot;bigger/original&quot; one from an ImageFactory." alt="" coords="5,119,271,184"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1ImageCache.html" title="Aim: implements an images cache with &#39;read and write&#39; policies." alt="" coords="25,5,252,57"/>
+</map>

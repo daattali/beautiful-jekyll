@@ -1,0 +1,5 @@
+<map id="DGtal::functors::IIFirstPrincipalDirectionFunctor&lt; TSpace, TMatrix &gt;" name="DGtal::functors::IIFirstPrincipalDirectionFunctor&lt; TSpace, TMatrix &gt;">
+<area shape="rect" id="node1" title="Aim: A functor Matrix &#45;&gt; RealVector that returns the first principal curvature direction by diagonali..." alt="" coords="5,205,176,257"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="11,92,170,144"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,5,134,31"/>
+</map>

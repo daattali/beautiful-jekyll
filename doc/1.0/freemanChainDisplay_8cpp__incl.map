@@ -1,0 +1,52 @@
+<map id="freemanChainDisplay.cpp" name="freemanChainDisplay.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2164,5,2337,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1389,892,1462,917"/>
+<area shape="rect" id="node3" title=" " alt="" coords="115,79,181,104"/>
+<area shape="rect" id="node4" href="$Common_8h_source.html" title=" " alt="" coords="1683,585,1840,611"/>
+<area shape="rect" id="node22" href="$BasicTypes_8h_source.html" title=" " alt="" coords="296,665,467,691"/>
+<area shape="rect" id="node29" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1436,239,1585,277"/>
+<area shape="rect" id="node38" href="$ImageSelector_8h_source.html" title=" " alt="" coords="598,79,800,104"/>
+<area shape="rect" id="node42" href="$SpaceND_8h_source.html" title=" " alt="" coords="2102,245,2269,271"/>
+<area shape="rect" id="node46" href="$FreemanChain_8h_source.html" title="Header file for module FreemanChain.cpp." alt="" coords="3389,325,3547,364"/>
+<area shape="rect" id="node47" href="$MagickReader_8h_source.html" title=" " alt="" coords="3432,505,3651,531"/>
+<area shape="rect" id="node48" href="$Board2D_8h_source.html" title=" " alt="" coords="3725,505,3907,531"/>
+<area shape="rect" id="node49" href="$StdDefs_8h_source.html" title=" " alt="" coords="2344,159,2509,184"/>
+<area shape="rect" id="node50" title=" " alt="" coords="3777,79,3906,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1903,665,1982,691"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2390,745,2466,771"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2006,665,2133,691"/>
+<area shape="rect" id="node8" title=" " alt="" coords="694,665,866,691"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2157,665,2315,691"/>
+<area shape="rect" id="node10" title=" " alt="" coords="2440,665,2610,691"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2634,665,2816,691"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2840,659,2984,697"/>
+<area shape="rect" id="node13" title=" " alt="" coords="3009,665,3205,691"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1149,745,1206,771"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1616,665,1677,691"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title=" " alt="" coords="1247,819,1388,844"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="1456,665,1592,691"/>
+<area shape="rect" id="node18" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1230,745,1431,771"/>
+<area shape="rect" id="node19" href="$Assert_8h_source.html" title=" " alt="" coords="1558,745,1698,771"/>
+<area shape="rect" id="node20" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="1513,819,1706,844"/>
+<area shape="rect" id="node21" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="891,665,1069,691"/>
+<area shape="rect" id="node26" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="1144,665,1331,691"/>
+<area shape="rect" id="node27" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1730,819,1932,844"/>
+<area shape="rect" id="node28" href="$Exceptions_8h_source.html" title=" " alt="" coords="1956,819,2124,844"/>
+<area shape="rect" id="node23" title=" " alt="" coords="589,745,648,771"/>
+<area shape="rect" id="node24" title=" " alt="" coords="296,745,418,771"/>
+<area shape="rect" id="node25" title=" " alt="" coords="443,745,515,771"/>
+<area shape="rect" id="node30" href="$CSpace_8h_source.html" title=" " alt="" coords="1432,332,1590,357"/>
+<area shape="rect" id="node32" href="$NumberTraits_8h_source.html" title=" " alt="" coords="1663,505,1854,531"/>
+<area shape="rect" id="node33" href="$BasicPointPredicates_8h_source.html" title=" " alt="" coords="867,505,1103,531"/>
+<area shape="rect" id="node34" href="$CDomain_8h_source.html" title=" " alt="" coords="643,499,792,537"/>
+<area shape="rect" id="node35" href="$HyperRectDomain__Iterator_8h_source.html" title=" " alt="" coords="2344,499,2538,537"/>
+<area shape="rect" id="node36" href="$CConstBidirectionalRange_8h_source.html" title=" " alt="" coords="1128,499,1336,537"/>
+<area shape="rect" id="node37" href="$HyperRectDomain_8ih_source.html" title=" " alt="" coords="1715,325,1864,364"/>
+<area shape="rect" id="node31" href="$CInteger_8h_source.html" title=" " alt="" coords="1836,419,1996,444"/>
+<area shape="rect" id="node39" href="$CLabel_8h_source.html" title=" " alt="" coords="322,505,467,531"/>
+<area shape="rect" id="node40" href="$ImageContainerBySTLMap_8h_source.html" title=" " alt="" coords="505,412,706,451"/>
+<area shape="rect" id="node41" href="$ImageContainerBySTLVector_8h_source.html" title=" " alt="" coords="993,152,1194,191"/>
+<area shape="rect" id="node44" href="$ImageContainerByHashTree_8h_source.html" title=" " alt="" coords="693,152,894,191"/>
+<area shape="rect" id="node45" href="$ImageSelector_8ih_source.html" title=" " alt="" coords="306,159,515,184"/>
+<area shape="rect" id="node43" href="$PointVector_8h_source.html" title=" " alt="" coords="3128,419,3306,444"/>
+</map>

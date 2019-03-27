@@ -1,0 +1,5 @@
+<map id="DGtal::functors::VCMMeanAbsoluteCurvatures3DFunctor&lt; TVCMOnDigitalSurface &gt;" name="DGtal::functors::VCMMeanAbsoluteCurvatures3DFunctor&lt; TVCMOnDigitalSurface &gt;">
+<area shape="rect" id="node1" title="Aim: A functor Surfel &#45;&gt; Quantity that returns the mean of absolute curvatures at given surfel: (abs(..." alt="" coords="18,205,219,257"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title=" " alt="" coords="5,105,232,144"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="29,5,209,44"/>
+</map>

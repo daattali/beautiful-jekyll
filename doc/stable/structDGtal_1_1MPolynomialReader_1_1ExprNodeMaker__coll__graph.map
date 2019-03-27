@@ -1,5 +1,0 @@
-<map id="DGtal::MPolynomialReader&lt; n, TRing, TAlloc, TIterator &gt;::ExprNodeMaker" name="DGtal::MPolynomialReader&lt; n, TRing, TAlloc, TIterator &gt;::ExprNodeMaker">
-<area shape="rect" id="node3" href="$classDGtal_1_1MPolynomial.html" title="DGtal::MPolynomial\l\&lt; n, Ring, Alloc \&gt;" alt="" coords="335,55,474,93"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1MPolynomial.html" title="Aim: Represents a multivariate polynomial, i.e. an element of , where K is some ring or field..." alt="" coords="5,56,144,95"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1MPolynomialReader.html" title="Aim: This class converts a string polynomial expression in a multivariate polynomial. " alt="" coords="307,117,502,156"/>
-</map>

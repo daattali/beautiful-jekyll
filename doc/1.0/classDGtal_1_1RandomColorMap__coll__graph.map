@@ -1,0 +1,11 @@
+<map id="DGtal::RandomColorMap" name="DGtal::RandomColorMap">
+<area shape="rect" id="node1" title="Aim: access to random color from a gradientColorMap." alt="" coords="1466,243,1637,268"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1GradientColorMap.html" title=" " alt="" coords="1148,196,1319,235"/>
+<area shape="rect" id="node3" title=" " alt="" coords="445,183,573,221"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1GradientColorMap.html" title="Aim: This class template may be used to (linearly) convert scalar values in a given range into a colo..." alt="" coords="769,112,986,177"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component." alt="" coords="176,176,270,201"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="166,244,280,269"/>
+<area shape="rect" id="node9" title=" " alt="" coords="597,257,745,296"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,244,44,269"/>
+<area shape="rect" id="node8" title=" " alt="" coords="477,115,540,140"/>
+</map>

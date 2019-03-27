@@ -1,0 +1,33 @@
+<map id="DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;" name="DGtal::COBAGenericStandardPlaneComputer&lt; TSpace, TInternalInteger &gt;">
+<area shape="rect" id="node1" title="Aim: A class that recognizes pieces of digital planes of given axis width. When the diagonal width is..." alt="" coords="3937,873,4139,925"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1COBANaivePlaneComputer.html" title=" " alt="" coords="3574,719,3801,758"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2848,747,2966,773"/>
+<area shape="rect" id="node29" href="$classDGtal_1_1COBANaivePlaneComputer.html" title="Aim: A class that contains the COBA algorithm (Emilie Charrier, Lilian Buzer, DGCI2008) for recognizi..." alt="" coords="3140,719,3368,758"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="1585,595,1745,647"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1COBANaivePlaneComputer_1_1State.html" title=" " alt="" coords="2793,635,3021,687"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1PointVector.html" title=" " alt="" coords="1931,649,2076,687"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1LatticePolytope2D.html" title=" " alt="" coords="2517,317,2688,355"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1939,289,2068,327"/>
+<area shape="rect" id="node28" href="$classDGtal_1_1LatticePolytope2D.html" title="Aim: Represents a 2D polytope, i.e. a convex polygon, in the two&#45;dimensional digital plane...." alt="" coords="2182,351,2353,390"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1239,705,1327,730"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="2555,763,2651,789"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2248,771,2287,797"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1199,18,1367,57"/>
+<area shape="rect" id="node12" href="$classDGtal_1_1SpaceND.html" title=" " alt="" coords="896,85,1053,123"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1SpaceND.html" title=" " alt="" coords="1212,95,1354,134"/>
+<area shape="rect" id="node13" title="STL class." alt="" coords="364,117,457,142"/>
+<area shape="rect" id="node14" title=" " alt="" coords="5,295,44,321"/>
+<area shape="rect" id="node17" title="STL class." alt="" coords="918,425,1031,450"/>
+<area shape="rect" id="node21" href="$structDGtal_1_1NumberTraitsImpl.html" title="Aim: The traits class for all models of Cinteger (implementation)" alt="" coords="150,289,318,327"/>
+<area shape="rect" id="node15" href="$classDGtal_1_1IntegerComputer.html" title=" " alt="" coords="1922,217,2085,255"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1209,387,1357,413"/>
+<area shape="rect" id="node24" href="$classDGtal_1_1IntegerComputer.html" title="Aim: This class gathers several types and methods to make computation with integers." alt="" coords="1584,145,1746,183"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1391,822,1560,847"/>
+<area shape="rect" id="node19" href="$structDGtal_1_1NumberTraits.html" title=" " alt="" coords="1211,309,1354,347"/>
+<area shape="rect" id="node20" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="695,342,864,394"/>
+<area shape="rect" id="node23" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="503,289,671,327"/>
+<area shape="rect" id="node26" href="$structDGtal_1_1NumberTraitsImpl.html" title=" " alt="" coords="695,223,864,275"/>
+<area shape="rect" id="node22" href="$structDGtal_1_1NumberTraits.html" title="Aim: The traits class for all models of Cinteger." alt="" coords="888,295,1061,321"/>
+<area shape="rect" id="node25" href="$structDGtal_1_1NumberTraits.html" title=" " alt="" coords="1211,246,1354,285"/>
+<area shape="rect" id="node31" href="$structDGtal_1_1COBAGenericStandardPlaneComputer_1_1Transform.html" title=" " alt="" coords="3587,937,3788,989"/>
+</map>

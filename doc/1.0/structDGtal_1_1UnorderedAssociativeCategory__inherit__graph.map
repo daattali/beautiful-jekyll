@@ -1,0 +1,9 @@
+<map id="DGtal::UnorderedAssociativeCategory" name="DGtal::UnorderedAssociativeCategory">
+<area shape="rect" id="node1" title=" " alt="" coords="460,100,654,139"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1UnorderedMapAssociativeCategory.html" title=" " alt="" coords="702,5,921,44"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1UnorderedMultimapAssociativeCategory.html" title=" " alt="" coords="721,68,901,107"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1UnorderedMultisetAssociativeCategory.html" title=" " alt="" coords="725,131,897,169"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1UnorderedSetAssociativeCategory.html" title=" " alt="" coords="705,193,918,232"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1AssociativeCategory.html" title=" " alt="" coords="228,107,412,132"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1ContainerCategory.html" title=" " alt="" coords="5,107,180,132"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="DGtal::functors::BasicDomainSubSampler&lt; TDomain, TInteger, TValue &gt;" name="DGtal::functors::BasicDomainSubSampler&lt; TDomain, TInteger, TValue &gt;">
+<area shape="rect" id="node1" title="Aim: Functor that subsamples an initial domain by given a grid size and a shift vector...." alt="" coords="57,292,277,344"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,192,152,217"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="22,92,136,117"/>
+<area shape="rect" id="node4" title=" " alt="" coords="59,5,98,31"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="176,179,336,231"/>
+<area shape="rect" id="node6" title=" " alt="" coords="212,92,300,117"/>
+</map>

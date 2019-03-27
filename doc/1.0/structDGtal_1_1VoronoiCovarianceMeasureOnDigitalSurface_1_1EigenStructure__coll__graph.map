@@ -1,0 +1,9 @@
+<map id="DGtal::VoronoiCovarianceMeasureOnDigitalSurface&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction &gt;::EigenStructure" name="DGtal::VoronoiCovarianceMeasureOnDigitalSurface&lt; TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction &gt;::EigenStructure">
+<area shape="rect" id="node1" title="Structure to hold a diagonalized matrix." alt="" coords="1021,47,1256,126"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1)." alt="" coords="754,13,926,51"/>
+<area shape="rect" id="node3" title=" " alt="" coords="438,13,599,51"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="150,19,257,45"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,19,44,45"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="760,113,920,165"/>
+<area shape="rect" id="node7" title=" " alt="" coords="475,126,562,151"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="DGtal::RegularPointEmbedder&lt; TSpace &gt;" name="DGtal::RegularPointEmbedder&lt; TSpace &gt;">
+<area shape="rect" id="node1" title="Aim: A simple point embedder where grid steps are given for each axis. Note that the real point (0,..." alt="" coords="5,205,207,244"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="26,92,186,144"/>
+<area shape="rect" id="node3" title=" " alt="" coords="62,5,150,31"/>
+</map>

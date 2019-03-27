@@ -1,0 +1,52 @@
+<map id="testLighterSternBrocot.cpp" name="testLighterSternBrocot.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2545,5,2724,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="717,805,776,831"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2907,952,2980,977"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2636,412,2694,437"/>
+<area shape="rect" id="node5" title=" " alt="" coords="3777,412,3840,437"/>
+<area shape="rect" id="node6" title=" " alt="" coords="3864,412,3911,437"/>
+<area shape="rect" id="node7" href="$Common_8h_source.html" title=" " alt="" coords="1822,645,1979,671"/>
+<area shape="rect" id="node30" href="$CPointPredicate_8h_source.html" title=" " alt="" coords="3431,485,3638,511"/>
+<area shape="rect" id="node32" href="$CPositiveIrreducibleFraction_8h_source.html" title=" " alt="" coords="2163,325,2340,364"/>
+<area shape="rect" id="node38" href="$IntegerComputer_8h_source.html" title=" " alt="" coords="1466,239,1629,277"/>
+<area shape="rect" id="node42" href="$LighterSternBrocot_8h_source.html" title=" " alt="" coords="2466,239,2627,277"/>
+<area shape="rect" id="node46" href="$LightSternBrocot_8h_source.html" title=" " alt="" coords="2993,239,3174,277"/>
+<area shape="rect" id="node48" href="$Pattern_8h_source.html" title=" " alt="" coords="1226,165,1400,191"/>
+<area shape="rect" id="node49" href="$StandardDSLQ0_8h_source.html" title=" " alt="" coords="1226,79,1400,117"/>
+<area shape="rect" id="node50" href="$ArithmeticalDSSComputer_8h_source.html" title="Header file for module ArithmeticalDSSComputer.cpp." alt="" coords="2804,325,2995,364"/>
+<area shape="rect" id="node8" title=" " alt="" coords="3036,725,3115,751"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1664,805,1740,831"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1680,725,1807,751"/>
+<area shape="rect" id="node11" title=" " alt="" coords="672,725,845,751"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1880,725,2039,751"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2062,725,2233,751"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2256,725,2439,751"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2462,719,2606,757"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2631,725,2827,751"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1468,805,1526,831"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2851,725,2911,751"/>
+<area shape="rect" id="node19" href="$Config_8h_source.html" title=" " alt="" coords="221,879,362,904"/>
+<area shape="rect" id="node21" href="$Trace_8h_source.html" title=" " alt="" coords="157,725,293,751"/>
+<area shape="rect" id="node22" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="288,805,490,831"/>
+<area shape="rect" id="node23" href="$Assert_8h_source.html" title=" " alt="" coords="21,805,162,831"/>
+<area shape="rect" id="node24" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="436,879,630,904"/>
+<area shape="rect" id="node25" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="869,725,1047,751"/>
+<area shape="rect" id="node26" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1173,725,1344,751"/>
+<area shape="rect" id="node27" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="1469,725,1656,751"/>
+<area shape="rect" id="node28" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2912,879,3114,904"/>
+<area shape="rect" id="node29" href="$Exceptions_8h_source.html" title=" " alt="" coords="3240,725,3408,751"/>
+<area shape="rect" id="node20" title=" " alt="" coords="131,952,185,977"/>
+<area shape="rect" id="node31" href="$CPredicate_8h_source.html" title=" " alt="" coords="3442,565,3611,591"/>
+<area shape="rect" id="node33" href="$CBackInsertable_8h_source.html" title=" " alt="" coords="2762,565,2963,591"/>
+<area shape="rect" id="node34" href="$CConstSinglePassRange_8h_source.html" title=" " alt="" coords="925,559,1128,597"/>
+<area shape="rect" id="node35" href="$CInteger_8h_source.html" title=" " alt="" coords="2047,412,2208,437"/>
+<area shape="rect" id="node36" href="$CIntegralNumber_8h_source.html" title=" " alt="" coords="1173,485,1384,511"/>
+<area shape="rect" id="node37" href="$NumberTraits_8h_source.html" title=" " alt="" coords="1858,565,2048,591"/>
+<area shape="rect" id="node39" href="$CUnsignedNumber_8h_source.html" title=" " alt="" coords="1408,485,1631,511"/>
+<area shape="rect" id="node40" href="$SpaceND_8h_source.html" title=" " alt="" coords="1704,332,1871,357"/>
+<area shape="rect" id="node41" href="$IntegerComputer_8ih_source.html" title=" " alt="" coords="1466,325,1629,364"/>
+<area shape="rect" id="node43" href="$StdRebinders_8h_source.html" title=" " alt="" coords="3313,332,3497,357"/>
+<area shape="rect" id="node44" href="$InputIteratorWithRankOnSequence_8h_source.html" title=" " alt="" coords="3121,325,3289,364"/>
+<area shape="rect" id="node45" href="$LighterSternBrocot_8ih_source.html" title=" " alt="" coords="2415,325,2576,364"/>
+<area shape="rect" id="node47" href="$LightSternBrocot_8ih_source.html" title=" " alt="" coords="3521,325,3702,364"/>
+</map>

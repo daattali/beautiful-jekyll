@@ -1,4 +1,0 @@
-<map id="DGtal::detail::PosIndepScaleDepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;" name="DGtal::detail::PosIndepScaleDepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html" title="DGtal::detail::PosIndepScale\lDepSCEstimator\&lt; DCAComputer,\l detail::CurvatureFromDCA\&lt;\l isCCW \&gt; \&gt;" alt="" coords="509,5,731,71"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CurvatureFromDCAEstimator.html" title="DGtal::CurvatureFromDCAEstimator\l\&lt; DCAComputer, isCCW \&gt;" alt="" coords="781,19,1017,57"/>
-</map>

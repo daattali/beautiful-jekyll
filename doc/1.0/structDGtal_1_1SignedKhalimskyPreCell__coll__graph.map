@@ -1,0 +1,6 @@
+<map id="DGtal::SignedKhalimskyPreCell&lt; dim, TInteger &gt;" name="DGtal::SignedKhalimskyPreCell&lt; dim, TInteger &gt;">
+<area shape="rect" id="node1" title="Represents a signed cell in an unbounded cellular grid space by its Khalimsky coordinates and a boole..." alt="" coords="32,305,218,344"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1PointVector.html" title=" " alt="" coords="59,205,190,244"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,93,31"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="105,92,265,144"/>
+</map>
