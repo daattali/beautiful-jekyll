@@ -1,0 +1,52 @@
+<map id="cubicalComplexThinning.cpp" name="cubicalComplexThinning.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1367,5,1559,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="6,79,135,104"/>
+<area shape="rect" id="node3" href="$StdDefs_8h_source.html" title=" " alt="" coords="3224,152,3389,177"/>
+<area shape="rect" id="node27" href="$CubicalComplex_8h_source.html" title=" " alt="" coords="5104,492,5325,517"/>
+<area shape="rect" id="node33" href="$ParDirCollapse_8h_source.html" title=" " alt="" coords="4757,79,4971,104"/>
+<area shape="rect" id="node36" href="$GaussDigitizer_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape." alt="" coords="1016,492,1219,517"/>
+<area shape="rect" id="node41" href="$DGtal_2shapes_2Shapes_8h_source.html" title=" " alt="" coords="1382,232,1544,257"/>
+<area shape="rect" id="node47" href="$EuclideanShapesDecorator_8h_source.html" title=" " alt="" coords="559,485,769,524"/>
+<area shape="rect" id="node48" href="$Flower2D_8h_source.html" title=" " alt="" coords="4486,485,4655,524"/>
+<area shape="rect" id="node50" href="$Board2D_8h_source.html" title=" " alt="" coords="5,672,187,697"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2502,845,2575,871"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title=" " alt="" coords="2714,765,2871,791"/>
+<area shape="rect" id="node7" href="$SpaceND_8h_source.html" title=" " alt="" coords="3739,492,3906,517"/>
+<area shape="rect" id="node12" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1907,572,2056,611"/>
+<area shape="rect" id="node14" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="3062,665,3226,704"/>
+<area shape="rect" id="node15" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="2398,492,2612,517"/>
+<area shape="rect" id="node18" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="3564,405,3785,431"/>
+<area shape="rect" id="node19" href="$Object_8h_source.html" title=" " alt="" coords="3165,492,3328,517"/>
+<area shape="rect" id="node21" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="3460,312,3634,351"/>
+<area shape="rect" id="node22" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="3961,399,4135,437"/>
+<area shape="rect" id="node23" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="3228,225,3386,264"/>
+<area shape="rect" id="node25" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="2082,659,2326,711"/>
+<area shape="rect" id="node26" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title=" " alt="" coords="2603,659,2824,711"/>
+<area shape="rect" id="node6" title=" " alt="" coords="4594,845,4670,871"/>
+<area shape="rect" id="node8" href="$PointVector_8h_source.html" title=" " alt="" coords="3859,579,4037,604"/>
+<area shape="rect" id="node9" title=" " alt="" coords="3962,672,4016,697"/>
+<area shape="rect" id="node10" title=" " alt="" coords="4769,672,4826,697"/>
+<area shape="rect" id="node11" href="$NumberTraits_8h_source.html" title=" " alt="" coords="2847,672,3038,697"/>
+<area shape="rect" id="node13" href="$CDomain_8h_source.html" title=" " alt="" coords="1488,665,1637,704"/>
+<area shape="rect" id="node16" href="$ConstAlias_8h_source.html" title=" " alt="" coords="2362,579,2529,604"/>
+<area shape="rect" id="node17" href="$CountedConstPtrOrConstPtr_8h_source.html" title=" " alt="" coords="1864,665,2058,704"/>
+<area shape="rect" id="node20" href="$Alias_8h_source.html" title=" " alt="" coords="3605,672,3737,697"/>
+<area shape="rect" id="node24" href="$CCellularGridSpaceND_8h_source.html" title=" " alt="" coords="4365,572,4533,611"/>
+<area shape="rect" id="node28" title=" " alt="" coords="5154,672,5299,697"/>
+<area shape="rect" id="node29" title=" " alt="" coords="5424,572,5568,611"/>
+<area shape="rect" id="node30" href="$ContainerTraits_8h_source.html" title=" " alt="" coords="5105,579,5298,604"/>
+<area shape="rect" id="node31" href="$CSTLAssociativeContainer_8h_source.html" title=" " alt="" coords="5373,759,5566,797"/>
+<area shape="rect" id="node32" href="$CubicalComplex_8ih_source.html" title=" " alt="" coords="5643,579,5867,604"/>
+<area shape="rect" id="node34" href="$CubicalComplexFunctions_8h_source.html" title=" " alt="" coords="4902,399,5112,437"/>
+<area shape="rect" id="node35" href="$ParDirCollapse_8ih_source.html" title=" " alt="" coords="5070,152,5287,177"/>
+<area shape="rect" id="node37" href="$RegularPointEmbedder_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape." alt="" coords="515,665,691,704"/>
+<area shape="rect" id="node38" href="$CEuclideanOrientedShape_8h_source.html" title=" " alt="" coords="362,572,587,611"/>
+<area shape="rect" id="node39" href="$CEuclideanBoundedShape_8h_source.html" title=" " alt="" coords="712,572,939,611"/>
+<area shape="rect" id="node40" href="$GaussDigitizer_8ih_source.html" title=" " alt="" coords="962,579,1168,604"/>
+<area shape="rect" id="node42" href="$SurfelAdjacency_8h_source.html" title=" " alt="" coords="866,672,1086,697"/>
+<area shape="rect" id="node43" href="$Surfaces_8h_source.html" title=" " alt="" coords="1294,572,1451,611"/>
+<area shape="rect" id="node44" href="$CDigitalOrientedShape_8h_source.html" title=" " alt="" coords="1160,665,1363,704"/>
+<area shape="rect" id="node45" href="$CDigitalBoundedShape_8h_source.html" title=" " alt="" coords="1525,572,1731,611"/>
+<area shape="rect" id="node46" href="$DGtal_2shapes_2Shapes_8ih_source.html" title=" " alt="" coords="1133,319,1299,344"/>
+<area shape="rect" id="node49" href="$StarShaped2D_8h_source.html" title=" " alt="" coords="4557,572,4726,611"/>
+</map>

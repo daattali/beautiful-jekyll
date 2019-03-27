@@ -1,0 +1,4 @@
+<map id="DGtal::functors::ConstImageFunctorHolder&lt; TDomain, TValue, TFunctor &gt;::ConstRange" name="DGtal::functors::ConstImageFunctorHolder&lt; TDomain, TValue, TFunctor &gt;::ConstRange">
+<area shape="rect" id="node1" title="Constant range on a ConstImageFunctorHolder." alt="" coords="5,119,225,171"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1functors_1_1ConstImageFunctorHolder.html" title="Transform a point&#45;dependent (and possibly domain&#45;dependent) functor into a constant image." alt="" coords="20,5,210,57"/>
+</map>

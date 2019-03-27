@@ -1,0 +1,51 @@
+<map id="boost::Assignable&lt; T &gt;" name="boost::Assignable&lt; T &gt;">
+<area shape="rect" id="node1" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="5,744,163,769"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="302,5,447,44"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="531,53,676,92"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="300,307,449,345"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="302,369,447,408"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="299,432,450,471"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="531,201,676,240"/>
+<area shape="rect" id="node15" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="531,252,676,291"/>
+<area shape="rect" id="node17" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="276,140,473,179"/>
+<area shape="rect" id="node19" href="$structDGtal_1_1C2x2DetComputer.html" title="Aim: This concept gathers all models that are able to compute the (sign of the) determinant of a 2x2 ..." alt="" coords="272,495,476,520"/>
+<area shape="rect" id="node20" href="$structDGtal_1_1concepts_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible,..." alt="" coords="276,544,473,569"/>
+<area shape="rect" id="node22" href="$structDGtal_1_1concepts_1_1CLMSTDSSFilter.html" title="Aim: Defines the concept describing a functor which filters DSSes for L&#45;MST calculations." alt="" coords="246,593,503,619"/>
+<area shape="rect" id="node23" href="$structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html" title="Aim: Defines the concept describing a functor which calculates a direction of the 2D DSS and an eccen..." alt="" coords="266,643,483,681"/>
+<area shape="rect" id="node24" href="$structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces." alt="" coords="290,705,459,744"/>
+<area shape="rect" id="node27" href="$structDGtal_1_1concepts_1_1CPolarPointComparator2D.html" title="Aim: This concept gathers classes that are able to compare the position of two given points &#160;around a..." alt="" coords="277,768,472,807"/>
+<area shape="rect" id="node28" href="$structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html" title="Aim: Defines positive irreducible fractions, i.e. fraction p/q, p and q non&#45;negative integers,..." alt="" coords="284,831,464,869"/>
+<area shape="rect" id="node29" href="$structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics." alt="" coords="255,893,493,919"/>
+<area shape="rect" id="node31" href="$structDGtal_1_1concepts_1_1CPrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points,..." alt="" coords="282,943,467,981"/>
+<area shape="rect" id="node33" href="$structDGtal_1_1concepts_1_1CSegment.html" title="Aim: Defines the concept describing a segment, ie. a valid and not empty range." alt="" coords="266,1005,483,1031"/>
+<area shape="rect" id="node35" href="$structDGtal_1_1concepts_1_1CSegmentComputerEstimator.html" title="Aim: This concept is a refinement of CCurveLocalGeometricEstimator devoted to the estimation of a geo..." alt="" coords="281,1055,468,1093"/>
+<area shape="rect" id="node36" href="$structDGtal_1_1concepts_1_1CStack.html" title="Aim: This concept gathers classes that provide a stack interface." alt="" coords="276,1117,473,1143"/>
+<area shape="rect" id="node37" href="$structDGtal_1_1concepts_1_1CSurfelLocalEstimator.html" title="Aim: This concept describes an object that can process a range of surfels (that are supposed to belon..." alt="" coords="290,1167,458,1205"/>
+<area shape="rect" id="node39" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure." alt="" coords="289,1229,460,1268"/>
+<area shape="rect" id="node43" href="$structDGtal_1_1concepts_1_1CVertexMap.html" title="Aim: models of CVertexMap concept implement mapping between graph vertices and values." alt="" coords="289,1292,460,1331"/>
+<area shape="rect" id="node44" href="$structDGtal_1_1deprecated_1_1concepts_1_1CConvolutionWeights.html" title="Aim: defines models of centered convolution kernel used for normal vector integration for instance." alt="" coords="254,1355,495,1393"/>
+<area shape="rect" id="node45" href="$structboost_1_1Assignable.html" title=" " alt="" coords="295,1417,454,1443"/>
+<area shape="rect" id="node49" href="$structboost_1_1Assignable.html" title=" " alt="" coords="527,1472,680,1497"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CCellEmbedder.html" title="Aim: A cell embedder is a mapping from unsigned cells to Euclidean points. It adds inner types to fun..." alt="" coords="708,7,957,32"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1concepts_1_1CPredicate.html" title=" " alt="" coords="1114,71,1303,109"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point." alt="" coords="1365,77,1615,103"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1concepts_1_1CPointEmbedder.html" title="Aim: A point embedder is a mapping from digital points to Euclidean points. It adds inner types to fu..." alt="" coords="705,315,960,340"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1concepts_1_1CPointFunctor.html" title="Aim: Defines a functor on points." alt="" coords="713,376,952,401"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1concepts_1_1CSCellEmbedder.html" title="Aim: A cell embedder is a mapping from signed cells to Euclidean points. It adds inner types to funct..." alt="" coords="704,439,961,464"/>
+<area shape="rect" id="node14" href="$structDGtal_1_1concepts_1_1CPredicate.html" title=" " alt="" coords="1114,143,1303,181"/>
+<area shape="rect" id="node16" href="$structDGtal_1_1concepts_1_1CPredicate.html" title=" " alt="" coords="1114,225,1303,264"/>
+<area shape="rect" id="node18" href="$structDGtal_1_1concepts_1_1CPredicate.html" title="Aim: Defines a predicate function, ie. a functor mapping a domain into the set of booleans." alt="" coords="738,129,927,168"/>
+<area shape="rect" id="node21" href="$structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal." alt="" coords="726,544,939,569"/>
+<area shape="rect" id="node25" href="$structDGtal_1_1concepts_1_1CDigitalMetricSpace.html" title="Aim: defines the concept of digital metric spaces." alt="" coords="747,737,918,776"/>
+<area shape="rect" id="node26" href="$structDGtal_1_1concepts_1_1CSeparableMetric.html" title="Aim: defines the concept of separable metrics." alt="" coords="736,675,930,713"/>
+<area shape="rect" id="node30" href="$structDGtal_1_1concepts_1_1CPowerSeparableMetric.html" title="Aim: defines the concept of separable metrics." alt="" coords="717,880,948,919"/>
+<area shape="rect" id="node32" href="$structDGtal_1_1concepts_1_1CIncrementalPrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points given on..." alt="" coords="731,943,934,981"/>
+<area shape="rect" id="node34" href="$structDGtal_1_1concepts_1_1CSegmentFactory.html" title="Aim: Defines the concept describing a segment ie. a valid and not empty subrange, which can construct..." alt="" coords="739,1005,926,1044"/>
+<area shape="rect" id="node38" href="$structDGtal_1_1concepts_1_1CDigitalSurfaceLocalEstimator.html" title="Aim: This concept describes an object that can process a range over some generic digital surface so a..." alt="" coords="739,1117,926,1156"/>
+<area shape="rect" id="node40" href="$structDGtal_1_1concepts_1_1CDiscreteExteriorCalculusVectorSpace.html" title="Aim: Lift linear algebra container concept into the dec package." alt="" coords="720,1180,945,1219"/>
+<area shape="rect" id="node41" href="$structDGtal_1_1concepts_1_1CMatrix.html" title="Aim: Represent any static or dynamic sized matrix having sparse or dense representation." alt="" coords="732,1243,933,1268"/>
+<area shape="rect" id="node42" href="$structDGtal_1_1concepts_1_1CVector.html" title="Aim: Represent any static or dynamic sized column vector having sparse or dense representation." alt="" coords="732,1292,933,1317"/>
+<area shape="rect" id="node46" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="726,1411,940,1449"/>
+<area shape="rect" id="node48" href="$structDGtal_1_1concepts_1_1CUnaryFunctor_3_01X_00_01A_01_6_00_01R_01_6_01_4.html" title=" " alt="" coords="726,1348,940,1387"/>
+<area shape="rect" id="node47" href="$structDGtal_1_1concepts_1_1CUnaryFunctor.html" title=" " alt="" coords="1101,1439,1315,1477"/>
+</map>

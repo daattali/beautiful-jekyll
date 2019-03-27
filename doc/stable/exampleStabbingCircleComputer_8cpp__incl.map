@@ -1,0 +1,52 @@
+<map id="exampleStabbingCircleComputer.cpp" name="exampleStabbingCircleComputer.cpp">
+<area shape="rect" id="node1" title="An example file for StabbingCircleComputer." alt="" coords="3195,5,3437,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1782,819,1855,844"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="1724,512,1881,537"/>
+<area shape="rect" id="node29" href="$StdDefs_8h_source.html" title=" " alt="" coords="1105,79,1270,104"/>
+<area shape="rect" id="node42" title=" " alt="" coords="3964,79,4094,104"/>
+<area shape="rect" id="node43" href="$StabbingCircleComputer_8h_source.html" title="Header file for module StabbingCircleComputer.cpp." alt="" coords="3225,152,3406,191"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2402,592,2480,617"/>
+<area shape="rect" id="node5" title=" " alt="" coords="726,672,802,697"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2505,592,2631,617"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2655,592,2827,617"/>
+<area shape="rect" id="node8" title=" " alt="" coords="3198,592,3356,617"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2852,592,3022,617"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1673,592,1855,617"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1878,585,2023,624"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2047,592,2243,617"/>
+<area shape="rect" id="node13" title=" " alt="" coords="644,672,702,697"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2267,592,2327,617"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="1124,745,1265,771"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="1209,592,1345,617"/>
+<area shape="rect" id="node21" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1094,672,1295,697"/>
+<area shape="rect" id="node22" href="$Assert_8h_source.html" title=" " alt="" coords="878,672,1018,697"/>
+<area shape="rect" id="node23" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="22,745,215,771"/>
+<area shape="rect" id="node24" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="3583,592,3761,617"/>
+<area shape="rect" id="node25" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1794,745,1965,771"/>
+<area shape="rect" id="node26" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="796,592,983,617"/>
+<area shape="rect" id="node27" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1989,745,2192,771"/>
+<area shape="rect" id="node28" href="$Exceptions_8h_source.html" title=" " alt="" coords="2216,745,2384,771"/>
+<area shape="rect" id="node16" title=" " alt="" coords="326,819,380,844"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1421,672,1491,697"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1515,672,1567,697"/>
+<area shape="rect" id="node20" href="$Clock_8h_source.html" title=" " alt="" coords="1482,745,1619,771"/>
+<area shape="rect" id="node30" href="$SpaceND_8h_source.html" title=" " alt="" coords="492,425,659,451"/>
+<area shape="rect" id="node31" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1890,419,2040,457"/>
+<area shape="rect" id="node32" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="1154,419,1318,457"/>
+<area shape="rect" id="node33" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="2324,425,2537,451"/>
+<area shape="rect" id="node34" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="391,332,612,357"/>
+<area shape="rect" id="node35" href="$Object_8h_source.html" title=" " alt="" coords="1150,332,1313,357"/>
+<area shape="rect" id="node37" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="797,239,971,277"/>
+<area shape="rect" id="node38" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="797,325,971,364"/>
+<area shape="rect" id="node39" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="921,152,1079,191"/>
+<area shape="rect" id="node40" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="785,412,1028,464"/>
+<area shape="rect" id="node41" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title=" " alt="" coords="1341,412,1562,464"/>
+<area shape="rect" id="node36" href="$CowPtr_8h_source.html" title=" " alt="" coords="2562,425,2707,451"/>
+<area shape="rect" id="node44" href="$SegmentComputerUtils_8h_source.html" title=" " alt="" coords="3564,325,3737,364"/>
+<area shape="rect" id="node45" href="$StabbingLineComputer_8h_source.html" title=" " alt="" coords="2899,239,3071,277"/>
+<area shape="rect" id="node46" href="$Preimage2D_8h_source.html" title="Header file for module Preimage2D.cpp." alt="" coords="2912,325,3058,364"/>
+<area shape="rect" id="node47" href="$Point2ShapePredicate_8h_source.html" title="Header file for module Point2ShapePredicate.cpp." alt="" coords="2915,419,3085,457"/>
+<area shape="rect" id="node48" href="$CircleFrom2Points_8h_source.html" title="Representation of a CircleFrom2Points uniquely defined by two 2D points." alt="" coords="3268,325,3438,364"/>
+<area shape="rect" id="node49" href="$CircleFrom3Points_8h_source.html" title="Representation of a CircleFrom3Points uniquely defined by two 2D points." alt="" coords="3464,419,3634,457"/>
+<area shape="rect" id="node50" href="$StabbingCircleComputer_8ih_source.html" title=" " alt="" coords="3095,239,3278,277"/>
+</map>

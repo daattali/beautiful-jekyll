@@ -1,0 +1,52 @@
+<map id="exampleInHalfPlane.cpp" name="exampleInHalfPlane.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2880,5,3046,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1797,772,1870,797"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="2075,465,2232,491"/>
+<area shape="rect" id="node25" href="$SpaceND_8h_source.html" title=" " alt="" coords="2599,179,2766,204"/>
+<area shape="rect" id="node30" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="825,79,975,117"/>
+<area shape="rect" id="node37" href="$Simple2x2DetComputer_8h_source.html" title=" " alt="" coords="2268,272,2519,311"/>
+<area shape="rect" id="node39" href="$SimpleIncremental2x2DetComputer_8h_source.html" title=" " alt="" coords="2847,265,3078,317"/>
+<area shape="rect" id="node41" href="$AvnaimEtAl2x2DetSignComputer_8h_source.html" title=" " alt="" coords="1932,165,2142,217"/>
+<area shape="rect" id="node45" href="$Filtered2x2DetComputer_8h_source.html" title=" " alt="" coords="3804,165,3990,217"/>
+<area shape="rect" id="node48" href="$InHalfPlaneBy2x2DetComputer_8h_source.html" title=" " alt="" coords="3575,165,3780,217"/>
+<area shape="rect" id="node49" href="$PredicateFromOrientationFunctor2_8h_source.html" title=" " alt="" coords="3534,365,3786,417"/>
+<area shape="rect" id="node50" href="$InHalfPlaneBySimple3x3Matrix_8h_source.html" title=" " alt="" coords="3153,265,3399,317"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2241,545,2319,571"/>
+<area shape="rect" id="node5" title=" " alt="" coords="3455,625,3531,651"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2343,545,2470,571"/>
+<area shape="rect" id="node7" title=" " alt="" coords="767,545,940,571"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2494,545,2653,571"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2727,545,2897,571"/>
+<area shape="rect" id="node10" title=" " alt="" coords="2921,545,3103,571"/>
+<area shape="rect" id="node11" title=" " alt="" coords="3126,539,3271,577"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1370,545,1566,571"/>
+<area shape="rect" id="node13" title=" " alt="" coords="3010,625,3067,651"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1642,545,1702,571"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="1572,699,1713,724"/>
+<area shape="rect" id="node16" href="$Trace_8h_source.html" title=" " alt="" coords="1726,545,1863,571"/>
+<area shape="rect" id="node17" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1383,625,1585,651"/>
+<area shape="rect" id="node18" href="$Assert_8h_source.html" title=" " alt="" coords="1724,625,1865,651"/>
+<area shape="rect" id="node19" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="1737,699,1930,724"/>
+<area shape="rect" id="node20" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="964,545,1143,571"/>
+<area shape="rect" id="node21" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1954,699,2126,724"/>
+<area shape="rect" id="node22" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="3294,545,3482,571"/>
+<area shape="rect" id="node23" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2200,699,2402,724"/>
+<area shape="rect" id="node24" href="$Exceptions_8h_source.html" title=" " alt="" coords="2273,625,2441,651"/>
+<area shape="rect" id="node26" href="$CInteger_8h_source.html" title=" " alt="" coords="1697,279,1858,304"/>
+<area shape="rect" id="node29" href="$PointVector_8h_source.html" title=" " alt="" coords="2594,279,2772,304"/>
+<area shape="rect" id="node27" href="$CEuclideanRing_8h_source.html" title=" " alt="" coords="2745,379,2951,404"/>
+<area shape="rect" id="node28" href="$NumberTraits_8h_source.html" title=" " alt="" coords="1899,379,2090,404"/>
+<area shape="rect" id="node31" href="$CSpace_8h_source.html" title=" " alt="" coords="1013,179,1171,204"/>
+<area shape="rect" id="node32" href="$BasicPointPredicates_8h_source.html" title=" " alt="" coords="267,379,503,404"/>
+<area shape="rect" id="node33" href="$CDomain_8h_source.html" title=" " alt="" coords="93,372,243,411"/>
+<area shape="rect" id="node34" href="$HyperRectDomain__Iterator_8h_source.html" title=" " alt="" coords="527,372,721,411"/>
+<area shape="rect" id="node35" href="$CConstBidirectionalRange_8h_source.html" title=" " alt="" coords="846,372,1055,411"/>
+<area shape="rect" id="node36" href="$HyperRectDomain_8ih_source.html" title=" " alt="" coords="1195,172,1344,211"/>
+<area shape="rect" id="node38" href="$Simple2x2DetComputer_8ih_source.html" title=" " alt="" coords="2214,372,2468,411"/>
+<area shape="rect" id="node40" href="$SimpleIncremental2x2DetComputer_8ih_source.html" title=" " alt="" coords="3026,365,3257,417"/>
+<area shape="rect" id="node42" href="$ExpressionTemplates_8h_source.html" title=" " alt="" coords="1332,379,1561,404"/>
+<area shape="rect" id="node43" href="$CBoundedNumber_8h_source.html" title=" " alt="" coords="1129,279,1349,304"/>
+<area shape="rect" id="node44" href="$AvnaimEtAl2x2DetSignComputer_8ih_source.html" title=" " alt="" coords="1932,265,2142,317"/>
+<area shape="rect" id="node46" href="$C2x2DetComputer_8h_source.html" title=" " alt="" coords="3574,272,3794,311"/>
+<area shape="rect" id="node47" href="$Filtered2x2DetComputer_8ih_source.html" title=" " alt="" coords="3991,265,4177,317"/>
+</map>

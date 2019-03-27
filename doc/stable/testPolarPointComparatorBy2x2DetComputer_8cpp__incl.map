@@ -1,0 +1,52 @@
+<map id="testPolarPointComparatorBy2x2DetComputer.cpp" name="testPolarPointComparatorBy2x2DetComputer.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1090,5,1265,44"/>
+<area shape="rect" id="node2" title=" " alt="" coords="846,685,919,711"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="1218,379,1374,404"/>
+<area shape="rect" id="node36" href="$PointVector_8h_source.html" title=" " alt="" coords="2431,205,2609,231"/>
+<area shape="rect" id="node47" href="$PolarPointComparatorBy2x2DetComputer_8h_source.html" title=" " alt="" coords="819,92,1034,144"/>
+<area shape="rect" id="node4" title=" " alt="" coords="557,459,635,484"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2406,539,2482,564"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1233,459,1359,484"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2760,459,2933,484"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1383,459,1542,484"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1566,459,1736,484"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1760,459,1942,484"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1965,452,2110,491"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2134,459,2330,484"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1579,539,1637,564"/>
+<area shape="rect" id="node14" title=" " alt="" coords="472,459,533,484"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="1799,612,1940,637"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="810,459,947,484"/>
+<area shape="rect" id="node23" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1661,539,1862,564"/>
+<area shape="rect" id="node24" href="$Assert_8h_source.html" title=" " alt="" coords="2112,539,2253,564"/>
+<area shape="rect" id="node27" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="970,539,1163,564"/>
+<area shape="rect" id="node28" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="2557,459,2736,484"/>
+<area shape="rect" id="node29" href="$BasicTypes_8h_source.html" title=" " alt="" coords="514,539,686,564"/>
+<area shape="rect" id="node32" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="1021,459,1208,484"/>
+<area shape="rect" id="node34" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="782,612,984,637"/>
+<area shape="rect" id="node35" href="$Exceptions_8h_source.html" title=" " alt="" coords="245,612,413,637"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1788,685,1842,711"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1395,685,1464,711"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1187,539,1240,564"/>
+<area shape="rect" id="node20" href="$Clock_8h_source.html" title=" " alt="" coords="760,539,896,564"/>
+<area shape="rect" id="node22" href="$TraceWriter_8h_source.html" title=" " alt="" coords="1282,612,1454,637"/>
+<area shape="rect" id="node26" href="$Trace_8ih_source.html" title=" " alt="" coords="1264,539,1403,564"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1008,612,1067,637"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2093,612,2272,637"/>
+<area shape="rect" id="node30" title=" " alt="" coords="539,612,661,637"/>
+<area shape="rect" id="node31" title=" " alt="" coords="685,612,757,637"/>
+<area shape="rect" id="node33" title=" " alt="" coords="3007,539,3086,564"/>
+<area shape="rect" id="node37" title=" " alt="" coords="2699,299,2752,324"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2775,299,2827,324"/>
+<area shape="rect" id="node39" title=" " alt="" coords="2851,299,2909,324"/>
+<area shape="rect" id="node40" title=" " alt="" coords="2213,379,2296,404"/>
+<area shape="rect" id="node41" title=" " alt="" coords="2933,299,2985,324"/>
+<area shape="rect" id="node42" href="$CBidirectionalRange_8h_source.html" title=" " alt="" coords="1729,292,1903,331"/>
+<area shape="rect" id="node43" href="$NumberTraits_8h_source.html" title=" " alt="" coords="1927,299,2118,324"/>
+<area shape="rect" id="node44" href="$CEuclideanRing_8h_source.html" title=" " alt="" coords="952,299,1158,324"/>
+<area shape="rect" id="node45" href="$ArithmeticConversionTraits_8h_source.html" title=" " alt="" coords="2142,292,2368,331"/>
+<area shape="rect" id="node46" href="$PointVector_8ih_source.html" title=" " alt="" coords="2494,299,2674,324"/>
+<area shape="rect" id="node48" href="$C2x2DetComputer_8h_source.html" title=" " alt="" coords="698,199,918,237"/>
+<area shape="rect" id="node49" href="$Simple2x2DetComputer_8h_source.html" title=" " alt="" coords="942,199,1194,237"/>
+<area shape="rect" id="node50" href="$PolarPointComparatorBy2x2DetComputer_8ih_source.html" title=" " alt="" coords="459,192,674,244"/>
+</map>

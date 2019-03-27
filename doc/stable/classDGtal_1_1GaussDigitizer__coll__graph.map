@@ -1,0 +1,9 @@
+<map id="DGtal::GaussDigitizer&lt; TSpace, TEuclideanShape &gt;" name="DGtal::GaussDigitizer&lt; TSpace, TEuclideanShape &gt;">
+<area shape="rect" id="node1" title="Aim: A class for computing the Gauss digitization of some Euclidean shape, i.e. its intersection with..." alt="" coords="1218,63,1421,101"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title=" " alt="" coords="859,5,1053,44"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="493,5,673,44"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1RegularPointEmbedder.html" title=" " alt="" coords="855,120,1057,159"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="194,107,353,159"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1RegularPointEmbedder.html" title="Aim: A simple point embedder where grid steps are given for each axis. Note that the real point (0,..." alt="" coords="482,181,683,220"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,120,93,145"/>
+</map>

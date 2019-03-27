@@ -1,0 +1,6 @@
+<map id="DGtal::ImageCacheReadPolicyFIFO&lt; TImageContainer, TImageFactory &gt;" name="DGtal::ImageCacheReadPolicyFIFO&lt; TImageContainer, TImageFactory &gt;">
+<area shape="rect" id="node1" title="Aim: implements a &#39;FIFO&#39; read policy cache." alt="" coords="5,265,279,304"/>
+<area shape="rect" id="node2" title=" " alt="" coords="37,179,247,204"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="85,92,199,117"/>
+<area shape="rect" id="node4" title=" " alt="" coords="123,5,161,31"/>
+</map>

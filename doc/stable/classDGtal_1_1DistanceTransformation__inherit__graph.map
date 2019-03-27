@@ -1,0 +1,4 @@
+<map id="DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;" name="DGtal::DistanceTransformation&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;">
+<area shape="rect" id="node1" title="Aim: Implementation of the linear in time distance transformation for separable metrics." alt="" coords="5,105,257,157"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1VoronoiMap.html" title="Aim: Implementation of the linear in time Voronoi map construction." alt="" coords="5,5,257,57"/>
+</map>

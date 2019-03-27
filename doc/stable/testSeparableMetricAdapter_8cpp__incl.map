@@ -1,0 +1,52 @@
+<map id="testSeparableMetricAdapter.cpp" name="testSeparableMetricAdapter.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1557,5,1768,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="1566,905,1639,931"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="1740,599,1897,624"/>
+<area shape="rect" id="node26" href="$SeparableMetricAdapter_8h_source.html" title=" " alt="" coords="1649,165,1882,204"/>
+<area shape="rect" id="node34" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="1042,252,1286,304"/>
+<area shape="rect" id="node37" href="$InexactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="378,252,571,304"/>
+<area shape="rect" id="node39" href="$VoronoiMap_8h_source.html" title="Linear in time distance transformation." alt="" coords="3215,79,3383,117"/>
+<area shape="rect" id="node48" href="$Board2D_8h_source.html" title=" " alt="" coords="3356,452,3537,477"/>
+<area shape="rect" id="node50" href="$StdDefs_8h_source.html" title=" " alt="" coords="1357,172,1523,197"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1330,679,1409,704"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1662,832,1738,857"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1846,679,1973,704"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2804,679,2977,704"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2097,679,2255,704"/>
+<area shape="rect" id="node9" title=" " alt="" coords="3002,679,3172,704"/>
+<area shape="rect" id="node10" title=" " alt="" coords="3196,679,3378,704"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2280,672,2424,711"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2449,679,2645,704"/>
+<area shape="rect" id="node13" title=" " alt="" coords="810,759,867,784"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2668,679,2729,704"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="1099,832,1240,857"/>
+<area shape="rect" id="node16" href="$Trace_8h_source.html" title=" " alt="" coords="1069,679,1206,704"/>
+<area shape="rect" id="node17" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1259,759,1461,784"/>
+<area shape="rect" id="node18" href="$Assert_8h_source.html" title=" " alt="" coords="1095,759,1236,784"/>
+<area shape="rect" id="node19" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="739,832,933,857"/>
+<area shape="rect" id="node20" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="613,679,792,704"/>
+<area shape="rect" id="node21" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1394,832,1566,857"/>
+<area shape="rect" id="node22" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="1634,679,1822,704"/>
+<area shape="rect" id="node24" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="1756,759,1958,784"/>
+<area shape="rect" id="node25" href="$Exceptions_8h_source.html" title=" " alt="" coords="2257,832,2425,857"/>
+<area shape="rect" id="node23" href="$Color_8h_source.html" title=" " alt="" coords="1989,759,2104,784"/>
+<area shape="rect" id="node27" href="$CMetricSpace_8h_source.html" title=" " alt="" coords="2131,259,2304,297"/>
+<area shape="rect" id="node31" href="$ConstAlias_8h_source.html" title=" " alt="" coords="3003,452,3170,477"/>
+<area shape="rect" id="node33" href="$SeparableMetricAdapter_8ih_source.html" title=" " alt="" coords="1648,259,1883,297"/>
+<area shape="rect" id="node28" href="$CSpace_8h_source.html" title=" " alt="" coords="969,365,1127,391"/>
+<area shape="rect" id="node29" href="$CInteger_8h_source.html" title=" " alt="" coords="600,452,760,477"/>
+<area shape="rect" id="node30" href="$CEuclideanRing_8h_source.html" title=" " alt="" coords="562,525,768,551"/>
+<area shape="rect" id="node32" href="$CountedPtr_8h_source.html" title=" " alt="" coords="3207,525,3377,551"/>
+<area shape="rect" id="node35" href="$BasicMathFunctions_8h_source.html" title=" " alt="" coords="1046,525,1269,551"/>
+<area shape="rect" id="node36" href="$ExactPredicateLpSeparableMetric_8ih_source.html" title=" " alt="" coords="701,352,945,404"/>
+<area shape="rect" id="node38" href="$InexactPredicateLpSeparableMetric_8ih_source.html" title=" " alt="" coords="93,352,286,404"/>
+<area shape="rect" id="node40" title=" " alt="" coords="3757,599,3814,624"/>
+<area shape="rect" id="node41" title=" " alt="" coords="3798,172,3850,197"/>
+<area shape="rect" id="node42" href="$ImageContainerBySTLVector_8h_source.html" title=" " alt="" coords="3336,165,3536,204"/>
+<area shape="rect" id="node43" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1957,259,2107,297"/>
+<area shape="rect" id="node44" href="$CImage_8h_source.html" title=" " alt="" coords="2945,599,3108,624"/>
+<area shape="rect" id="node45" href="$CPointPredicate_8h_source.html" title=" " alt="" coords="3785,525,3991,551"/>
+<area shape="rect" id="node46" href="$CSeparableMetric_8h_source.html" title=" " alt="" coords="2745,165,2941,204"/>
+<area shape="rect" id="node47" href="$VoronoiMap_8ih_source.html" title=" " alt="" coords="3873,165,4041,204"/>
+<area shape="rect" id="node49" href="$Board_8h_source.html" title=" " alt="" coords="3502,525,3610,551"/>
+</map>

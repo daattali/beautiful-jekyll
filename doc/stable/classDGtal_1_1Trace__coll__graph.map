@@ -1,0 +1,15 @@
+<map id="DGtal::Trace" name="DGtal::Trace">
+<area shape="rect" id="node1" title="implementation of basic methods to trace out messages with indentation levels." alt="" coords="275,441,371,467"/>
+<area shape="rect" id="node2" title=" " alt="" coords="244,348,402,373"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="347,255,426,280"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="312,155,437,193"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="177,255,285,280"/>
+<area shape="rect" id="node7" title=" " alt="" coords="76,341,207,380"/>
+<area shape="rect" id="node6" title=" " alt="" coords="211,161,250,187"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1Clock.html" title=" " alt="" coords="5,255,101,280"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1TraceWriter.html" title="Virtual Class to implement trace writers." alt="" coords="433,348,565,373"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="469,255,563,280"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="461,155,595,193"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="451,80,605,105"/>
+<area shape="rect" id="node13" title="STL class." alt="" coords="478,5,578,31"/>
+</map>

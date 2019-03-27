@@ -1,0 +1,5 @@
+<map id="DGtal::functors::IIPrincipalCurvatures3DFunctor&lt; TSpace, TMatrix &gt;" name="DGtal::functors::IIPrincipalCurvatures3DFunctor&lt; TSpace, TMatrix &gt;">
+<area shape="rect" id="node1" title="Aim: A functor Matrix &#45;&gt; std::pair&lt;Real,Real&gt; that returns the first and the second principal curvatu..." alt="" coords="5,205,215,257"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="31,92,190,144"/>
+<area shape="rect" id="node3" title=" " alt="" coords="67,5,154,31"/>
+</map>

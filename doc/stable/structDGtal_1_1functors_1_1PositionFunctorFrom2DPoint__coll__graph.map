@@ -1,0 +1,6 @@
+<map id="DGtal::functors::PositionFunctorFrom2DPoint&lt; Vector, TPosition &gt;" name="DGtal::functors::PositionFunctorFrom2DPoint&lt; Vector, TPosition &gt;">
+<area shape="rect" id="node1" title="Functor that returns the position of any point/vector with respect to a digital straight line of shif..." alt="" coords="5,332,203,384"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1FreemanChain.html" title=" " alt="" coords="29,232,180,271"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1FreemanChain.html" title=" " alt="" coords="29,132,180,171"/>
+<area shape="rect" id="node4" title=" " alt="" coords="69,5,140,31"/>
+</map>

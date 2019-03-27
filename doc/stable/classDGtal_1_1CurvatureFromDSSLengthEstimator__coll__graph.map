@@ -1,0 +1,12 @@
+<map id="DGtal::CurvatureFromDSSLengthEstimator&lt; DSSComputer &gt;" name="DGtal::CurvatureFromDSSLengthEstimator&lt; DSSComputer &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="2667,34,2888,73"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html" title=" " alt="" coords="2403,21,2618,86"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title=" " alt="" coords="1679,34,1889,73"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html" title=" " alt="" coords="2003,65,2178,117"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1SimpleMatrix.html" title=" " alt="" coords="1071,34,1211,73"/>
+<area shape="rect" id="node9" href="$classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o..." alt="" coords="1317,67,1527,106"/>
+<area shape="rect" id="node5" title=" " alt="" coords="438,34,599,73"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1)." alt="" coords="754,67,926,106"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="150,41,257,66"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,41,44,66"/>
+</map>

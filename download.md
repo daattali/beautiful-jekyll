@@ -4,8 +4,7 @@ title: Download
 ---
 ### Releases
 
-* Last stable DGtal release: [DGtal-0.9.4.1.tar.gz][1]
-* [All releases][2]
+* Last stable DGtal release: [DGtal 1.0][2]
 
 ### Development version
 

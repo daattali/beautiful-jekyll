@@ -4,9 +4,9 @@ title: Documentation & Help
 ---
 
 ### Documentation
-* [User guide and stable API documentation][1] (0.9.4.1)
+* [User guide and stable API documentation][1] (1.0)
 * [Nightly build doxygen documentation][2]
-* [Documentation docset URL][3] (0.9.4.1, for [Dash][4] or [Zeal][5] tools)
+* [Documentation docset URL][3] (1.0, for [Dash][4] or [Zeal][5] tools)
 
 ### Slides of DGtal Meeting (29/08/2011)
 * [<img class="alignnone wp-image-413 size-medium" title="presentationDGtalMeeting2012_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presentationDGtalMeeting2012_thumb-e1415195647526-300x76.png" alt="" width="300" height="76" />][6][Introduction to DGtal and its concepts][7]

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,33,87,59"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1IsAPointVector.html" title="Type trait to check if a given type is a PointVector." alt="" coords="145,5,326,31"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1IsArithmeticConversionValid.html" title="Helper to determine if an arithmetic operation between two given types has a valid result type (ie is..." alt="" coords="135,55,335,93"/>
+</map>

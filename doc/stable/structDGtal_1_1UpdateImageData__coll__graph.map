@@ -1,0 +1,52 @@
+<map id="DGtal::UpdateImageData&lt; TImageType, TFunctor &gt;" name="DGtal::UpdateImageData&lt; TImageType, TFunctor &gt;">
+<area shape="rect" id="node1" title="class to modify the data of an given image and also the possibility to translate it (optional)." alt="" coords="2818,635,2996,674"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithViewer3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="2426,879,2651,905"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="2050,1125,2279,1150"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1Viewer3D.html" title=" " alt="" coords="2448,341,2629,379"/>
+<area shape="rect" id="node45" href="$classDGtal_1_1Viewer3D.html" title=" " alt="" coords="2820,246,2994,285"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2120,234,2209,259"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Display3D.html" title=" " alt="" coords="2072,1062,2257,1101"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids..." alt="" coords="1137,889,1342,927"/>
+<area shape="rect" id="node40" href="$classDGtal_1_1Display3D.html" title="Aim: This semi abstract class defines the stream mechanism to display 3d primitive (like BallVector,..." alt="" coords="1640,1062,1816,1101"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1145,649,1334,687"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1Display3D_1_1SelectCallbackFctStore.html" title=" " alt="" coords="664,653,893,691"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="730,551,827,577"/>
+<area shape="rect" id="node11" title=" " alt="" coords="338,695,377,721"/>
+<area shape="rect" id="node21" title="STL class." alt="" coords="719,1129,838,1154"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1131,1326,1348,1365"/>
+<area shape="rect" id="node13" title="STL class." alt="" coords="300,1250,414,1275"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1120,1249,1359,1287"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1150,1153,1329,1205"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1132,1411,1347,1450"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1158,1698,1321,1723"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1119,1599,1360,1638"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1156,711,1323,750"/>
+<area shape="rect" id="node37" title=" " alt="" coords="696,1186,861,1211"/>
+<area shape="rect" id="node39" title=" " alt="" coords="696,941,861,966"/>
+<area shape="rect" id="node43" title=" " alt="" coords="3475,443,3677,482"/>
+<area shape="rect" id="node46" title=" " alt="" coords="1384,427,1616,466"/>
+<area shape="rect" id="node48" title=" " alt="" coords="1840,302,2026,341"/>
+<area shape="rect" id="node14" title=" " alt="" coords="59,1159,98,1185"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1120,1755,1359,1807"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1CountedPtr.html" title=" " alt="" coords="688,2015,869,2054"/>
+<area shape="rect" id="node17" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title=" " alt="" coords="10,2042,148,2081"/>
+<area shape="rect" id="node18" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="277,2022,438,2047"/>
+<area shape="rect" id="node19" title="STL class." alt="" coords="739,1745,818,1770"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1167,1474,1312,1513"/>
+<area shape="rect" id="node20" title="STL class." alt="" coords="294,1959,420,1998"/>
+<area shape="rect" id="node36" title=" " alt="" coords="1142,1014,1337,1053"/>
+<area shape="rect" id="node38" title=" " alt="" coords="1142,826,1337,865"/>
+<area shape="rect" id="node24" href="$structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html" title=" " alt="" coords="679,1066,878,1105"/>
+<area shape="rect" id="node25" href="$structDGtal_1_1Display3D_1_1CommonD3D.html" title=" " alt="" coords="269,549,446,587"/>
+<area shape="rect" id="node34" href="$structDGtal_1_1Display3D_1_1QuadD3D.html" title=" " alt="" coords="690,489,867,527"/>
+<area shape="rect" id="node26" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component." alt="" coords="31,353,126,378"/>
+<area shape="rect" id="node47" href="$structDGtal_1_1Viewer3D_1_1Image2DDomainD3D.html" title=" " alt="" coords="666,319,891,358"/>
+<area shape="rect" id="node28" href="$structDGtal_1_1CanonicCellEmbedder.html" title="Aim: A trivial embedder for signed and unsigned cell, which corresponds to the canonic injection of c..." alt="" coords="1141,1537,1338,1575"/>
+<area shape="rect" id="node29" href="$structDGtal_1_1CanonicEmbedder.html" title="Aim: A trivial embedder for digital points, which corresponds to the canonic injection of Zn into Rn." alt="" coords="1153,1077,1326,1115"/>
+<area shape="rect" id="node35" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="278,363,437,415"/>
+<area shape="rect" id="node44" href="$structDGtal_1_1Viewer3D_1_1GLTextureImage.html" title=" " alt="" coords="3173,246,3369,285"/>
+<area shape="rect" id="node49" href="$structDGtal_1_1Viewer3D_1_1TextureImage.html" title=" " alt="" coords="688,234,869,273"/>
+<area shape="rect" id="node41" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,..." alt="" coords="1149,951,1330,990"/>
+<area shape="rect" id="node42" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title=" " alt="" coords="669,990,889,1042"/>
+<area shape="rect" id="node50" href="$structDGtal_1_1Viewer3D_1_1Extension.html" title=" " alt="" coords="2074,171,2255,210"/>
+</map>

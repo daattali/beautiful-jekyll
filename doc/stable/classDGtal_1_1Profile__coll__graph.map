@@ -1,0 +1,11 @@
+<map id="DGtal::Profile&lt; TValueFunctor, TValue &gt;" name="DGtal::Profile&lt; TValueFunctor, TValue &gt;">
+<area shape="rect" id="node1" title="Aim: This class can be used to represent a profile (PX, PY) defined from an input set of samples (Xi,..." alt="" coords="10,593,211,632"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,249,144,274"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="143,92,257,117"/>
+<area shape="rect" id="node5" title=" " alt="" coords="233,493,376,532"/>
+<area shape="rect" id="node7" title=" " alt="" coords="122,179,278,204"/>
+<area shape="rect" id="node4" title=" " alt="" coords="181,5,219,31"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1Statistic.html" title=" " alt="" coords="221,407,387,432"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1Statistic.html" title="Aim: This class processes a set of sample values for one variable and can then compute different stat..." alt="" coords="249,319,439,345"/>
+<area shape="rect" id="node9" title=" " alt="" coords="305,179,384,204"/>
+</map>

@@ -1,0 +1,52 @@
+<map id="testTensorVoting.cpp" name="testTensorVoting.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="3084,5,3229,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="2079,832,2151,857"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="2104,525,2261,551"/>
+<area shape="rect" id="node22" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="3348,605,3535,631"/>
+<area shape="rect" id="node23" href="$Color_8h_source.html" title=" " alt="" coords="3812,685,3927,711"/>
+<area shape="rect" id="node26" href="$StdDefs_8h_source.html" title=" " alt="" coords="864,79,1029,104"/>
+<area shape="rect" id="node36" href="$CanonicSCellEmbedder_8h_source.html" title=" " alt="" coords="2231,432,2425,471"/>
+<area shape="rect" id="node38" href="$GraphVisitorRange_8h_source.html" title=" " alt="" coords="2793,432,2964,471"/>
+<area shape="rect" id="node39" href="$Board2D_8h_source.html" title=" " alt="" coords="4164,439,4345,464"/>
+<area shape="rect" id="node40" href="$GradientColorMap_8h_source.html" title=" " alt="" coords="3825,432,3970,471"/>
+<area shape="rect" id="node41" href="$DGtal_2shapes_2Shapes_8h_source.html" title=" " alt="" coords="1379,159,1541,184"/>
+<area shape="rect" id="node42" href="$GaussDigitizer_8h_source.html" title="Computes the Gauss digitization of some Euclidean shape." alt="" coords="1435,245,1638,271"/>
+<area shape="rect" id="node43" href="$DistanceBreadthFirstVisitor_8h_source.html" title=" " alt="" coords="3089,432,3284,471"/>
+<area shape="rect" id="node44" href="$LpMetric_8h_source.html" title=" " alt="" coords="2551,432,2719,471"/>
+<area shape="rect" id="node45" href="$LocalEstimatorFromSurfelFunctorAdapter_8h_source.html" title=" " alt="" coords="3052,325,3260,377"/>
+<area shape="rect" id="node46" href="$BasicEstimatorFromSurfelsFunctors_8h_source.html" title=" " alt="" coords="3309,425,3558,477"/>
+<area shape="rect" id="node47" href="$LightImplicitDigitalSurface_8h_source.html" title=" " alt="" coords="2844,332,3028,371"/>
+<area shape="rect" id="node48" href="$TensorVotingFeatureExtraction_8h_source.html" title="Computes the true quantity to each element of a range associated to a parametric shape." alt="" coords="3583,425,3801,477"/>
+<area shape="rect" id="node49" href="$ImplicitHyperCube_8h_source.html" title=" " alt="" coords="3993,432,4140,471"/>
+<area shape="rect" id="node50" href="$ImplicitBall_8h_source.html" title=" " alt="" coords="4420,432,4567,471"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2566,605,2645,631"/>
+<area shape="rect" id="node5" title=" " alt="" coords="3403,759,3479,784"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2718,605,2845,631"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2868,605,3041,631"/>
+<area shape="rect" id="node8" title=" " alt="" coords="3065,605,3223,631"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1128,605,1299,631"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1322,605,1504,631"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1528,599,1672,637"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1697,605,1893,631"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2969,685,3026,711"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1916,605,1977,631"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="1964,759,2105,784"/>
+<area shape="rect" id="node16" href="$Trace_8h_source.html" title=" " alt="" coords="2153,605,2290,631"/>
+<area shape="rect" id="node17" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="1769,685,1970,711"/>
+<area shape="rect" id="node18" href="$Assert_8h_source.html" title=" " alt="" coords="2046,685,2186,711"/>
+<area shape="rect" id="node19" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="2483,759,2677,784"/>
+<area shape="rect" id="node20" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="976,759,1155,784"/>
+<area shape="rect" id="node21" href="$BasicTypes_8h_source.html" title=" " alt="" coords="1029,685,1200,711"/>
+<area shape="rect" id="node24" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2207,759,2409,784"/>
+<area shape="rect" id="node25" href="$Exceptions_8h_source.html" title=" " alt="" coords="2363,685,2531,711"/>
+<area shape="rect" id="node27" href="$SpaceND_8h_source.html" title=" " alt="" coords="774,439,941,464"/>
+<area shape="rect" id="node28" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1333,332,1483,371"/>
+<area shape="rect" id="node29" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="94,432,258,471"/>
+<area shape="rect" id="node30" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="333,439,547,464"/>
+<area shape="rect" id="node31" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="587,339,808,364"/>
+<area shape="rect" id="node32" href="$Object_8h_source.html" title=" " alt="" coords="233,339,396,364"/>
+<area shape="rect" id="node33" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="984,239,1158,277"/>
+<area shape="rect" id="node34" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="882,332,1056,371"/>
+<area shape="rect" id="node35" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="1661,152,1819,191"/>
+<area shape="rect" id="node37" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="1168,425,1411,477"/>
+</map>

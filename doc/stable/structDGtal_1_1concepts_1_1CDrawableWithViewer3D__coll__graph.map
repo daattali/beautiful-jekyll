@@ -1,0 +1,52 @@
+<map id="DGtal::concepts::CDrawableWithViewer3D&lt; T, S, KS &gt;" name="DGtal::concepts::CDrawableWithViewer3D&lt; T, S, KS &gt;">
+<area shape="rect" id="node1" title="Aim: The concept CDrawableWithViewer3D specifies what are the classes that admit an export with Viewe..." alt="" coords="3532,366,3721,405"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html" title=" " alt="" coords="3293,733,3482,771"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1DrawableWithDisplay3D.html" title=" " alt="" coords="2673,827,2879,853"/>
+<area shape="rect" id="node49" href="$structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html" title=" " alt="" coords="2976,733,3170,771"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1Display3D.html" title=" " alt="" coords="2702,1585,2850,1623"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids..." alt="" coords="1946,585,2151,623"/>
+<area shape="rect" id="node39" href="$classDGtal_1_1Display3D.html" title="Aim: This semi abstract class defines the stream mechanism to display 3d primitive (like BallVector,..." alt="" coords="2373,1078,2549,1117"/>
+<area shape="rect" id="node50" href="$classDGtal_1_1Display3D.html" title=" " alt="" coords="2699,765,2854,803"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1954,1997,2142,2035"/>
+<area shape="rect" id="node7" href="$structDGtal_1_1Display3D_1_1SelectCallbackFctStore.html" title=" " alt="" coords="1473,1951,1702,1990"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="1539,2014,1635,2039"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1125,1846,1164,1871"/>
+<area shape="rect" id="node19" title="STL class." alt="" coords="1527,1633,1647,1658"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1940,245,2157,283"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="1087,818,1201,843"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1928,522,2168,561"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1959,905,2138,957"/>
+<area shape="rect" id="node25" title=" " alt="" coords="1941,699,2155,738"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1966,1527,2130,1553"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1928,838,2168,877"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1964,1639,2132,1678"/>
+<area shape="rect" id="node36" title=" " alt="" coords="1505,1105,1669,1130"/>
+<area shape="rect" id="node38" title=" " alt="" coords="1505,917,1670,942"/>
+<area shape="rect" id="node12" title=" " alt="" coords="814,143,853,169"/>
+<area shape="rect" id="node44" title="STL class." alt="" coords="1090,914,1198,939"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1929,2123,2167,2175"/>
+<area shape="rect" id="node14" href="$classDGtal_1_1CountedPtr.html" title=" " alt="" coords="1497,2137,1677,2175"/>
+<area shape="rect" id="node15" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title=" " alt="" coords="765,2159,903,2198"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="1064,2139,1225,2165"/>
+<area shape="rect" id="node17" title="STL class." alt="" coords="1548,1805,1627,1830"/>
+<area shape="rect" id="node28" title=" " alt="" coords="1975,1815,2121,1854"/>
+<area shape="rect" id="node18" title="STL class." alt="" coords="1081,1783,1207,1822"/>
+<area shape="rect" id="node35" title=" " alt="" coords="1951,1207,2145,1246"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1951,981,2146,1019"/>
+<area shape="rect" id="node22" href="$structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html" title=" " alt="" coords="1487,1154,1687,1193"/>
+<area shape="rect" id="node23" href="$structDGtal_1_1Display3D_1_1CommonD3D.html" title=" " alt="" coords="1056,1343,1232,1382"/>
+<area shape="rect" id="node32" href="$structDGtal_1_1Display3D_1_1QuadD3D.html" title=" " alt="" coords="1499,1566,1675,1605"/>
+<area shape="rect" id="node24" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple with alpha component." alt="" coords="786,1362,881,1387"/>
+<area shape="rect" id="node26" href="$structDGtal_1_1CanonicCellEmbedder.html" title="Aim: A trivial embedder for signed and unsigned cell, which corresponds to the canonic injection of c..." alt="" coords="1950,1753,2146,1791"/>
+<area shape="rect" id="node27" href="$structDGtal_1_1CanonicEmbedder.html" title="Aim: A trivial embedder for digital points, which corresponds to the canonic injection of Zn into Rn." alt="" coords="1962,1577,2135,1615"/>
+<area shape="rect" id="node33" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="194,1533,353,1585"/>
+<area shape="rect" id="node45" href="$classDGtal_1_1PointVector.html" title=" " alt="" coords="498,1478,629,1517"/>
+<area shape="rect" id="node34" title=" " alt="" coords="5,1471,93,1497"/>
+<area shape="rect" id="node40" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,..." alt="" coords="1958,1086,2139,1125"/>
+<area shape="rect" id="node41" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title=" " alt="" coords="1477,1029,1697,1081"/>
+<area shape="rect" id="node42" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title="Internal class of KhalimskySpaceND that provides some optimizations depending on the space type." alt="" coords="1034,1175,1254,1214"/>
+<area shape="rect" id="node43" title=" " alt="" coords="1518,966,1656,1005"/>
+<area shape="rect" id="node47" href="$structDGtal_1_1KhalimskyPreCell.html" title=" " alt="" coords="750,2006,917,2045"/>
+<area shape="rect" id="node46" href="$structDGtal_1_1KhalimskyCell.html" title=" " alt="" coords="1514,2063,1660,2102"/>
+<area shape="rect" id="node48" href="$structDGtal_1_1KhalimskyCell.html" title="Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates." alt="" coords="1071,2006,1217,2045"/>
+</map>

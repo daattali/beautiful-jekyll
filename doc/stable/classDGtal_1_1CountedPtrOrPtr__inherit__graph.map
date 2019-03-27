@@ -1,0 +1,8 @@
+<map id="DGtal::CountedPtrOrPtr&lt; T &gt;" name="DGtal::CountedPtrOrPtr&lt; T &gt;">
+<area shape="rect" id="node1" title="Aim: Smart or simple pointer on T. It can be a smart pointer based on reference counts or a simple po..." alt="" coords="5,151,198,176"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="431,5,593,44"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="431,68,593,120"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="431,144,593,183"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="417,207,606,245"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1CountedPtrOrPtr.html" title=" " alt="" coords="431,269,593,308"/>
+</map>

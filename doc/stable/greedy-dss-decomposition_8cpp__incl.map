@@ -1,0 +1,52 @@
+<map id="greedy&#45;dss&#45;decomposition.cpp" name="greedy&#45;dss&#45;decomposition.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2241,5,2444,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="2974,659,3031,684"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2674,805,2747,831"/>
+<area shape="rect" id="node4" title=" " alt="" coords="550,319,618,344"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title=" " alt="" coords="2263,492,2420,517"/>
+<area shape="rect" id="node24" href="$Color_8h_source.html" title=" " alt="" coords="301,659,416,684"/>
+<area shape="rect" id="node29" href="$Board2D_8h_source.html" title=" " alt="" coords="1001,79,1183,104"/>
+<area shape="rect" id="node33" href="$ArithmeticalDSSComputer_8h_source.html" title="Header file for module ArithmeticalDSSComputer.cpp." alt="" coords="1400,225,1592,264"/>
+<area shape="rect" id="node34" href="$FreemanChain_8h_source.html" title="Header file for module FreemanChain.cpp." alt="" coords="693,225,851,264"/>
+<area shape="rect" id="node39" href="$StdDefs_8h_source.html" title=" " alt="" coords="1701,232,1867,257"/>
+<area shape="rect" id="node41" href="$GradientColorMap_8h_source.html" title=" " alt="" coords="295,399,441,437"/>
+<area shape="rect" id="node44" href="$DGtal_2shapes_2Shapes_8h_source.html" title=" " alt="" coords="2718,232,2880,257"/>
+<area shape="rect" id="node50" href="$GreedySegmentation_8h_source.html" title="Header file for module GreedySegmentation.cpp." alt="" coords="3762,399,3924,437"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2849,579,2927,604"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2355,732,2431,757"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1179,579,1306,604"/>
+<area shape="rect" id="node9" title=" " alt="" coords="3700,579,3873,604"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1330,579,1489,604"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1512,579,1682,604"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1706,579,1888,604"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1912,572,2056,611"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2081,579,2277,604"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2300,579,2361,604"/>
+<area shape="rect" id="node16" href="$Config_8h_source.html" title=" " alt="" coords="957,732,1099,757"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="969,579,1106,604"/>
+<area shape="rect" id="node18" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="919,659,1121,684"/>
+<area shape="rect" id="node19" href="$Assert_8h_source.html" title=" " alt="" coords="1247,659,1388,684"/>
+<area shape="rect" id="node20" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="2481,659,2674,684"/>
+<area shape="rect" id="node21" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="3295,579,3473,604"/>
+<area shape="rect" id="node22" href="$BasicTypes_8h_source.html" title=" " alt="" coords="2625,732,2796,757"/>
+<area shape="rect" id="node23" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="2436,579,2623,604"/>
+<area shape="rect" id="node27" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2748,659,2950,684"/>
+<area shape="rect" id="node28" href="$Exceptions_8h_source.html" title=" " alt="" coords="3052,579,3220,604"/>
+<area shape="rect" id="node25" title=" " alt="" coords="194,732,347,757"/>
+<area shape="rect" id="node26" href="$Color_8ih_source.html" title=" " alt="" coords="371,732,490,757"/>
+<area shape="rect" id="node30" href="$Board_8h_source.html" title=" " alt="" coords="144,492,251,517"/>
+<area shape="rect" id="node31" href="$CountedPtr_8h_source.html" title=" " alt="" coords="1081,405,1250,431"/>
+<area shape="rect" id="node32" href="$Display2DFactory_8h_source.html" title="Header file for module Display2DFactory." alt="" coords="1259,152,1448,177"/>
+<area shape="rect" id="node40" href="$Style2DFactory_8h_source.html" title="Header file for module Style2DFactory." alt="" coords="801,152,975,177"/>
+<area shape="rect" id="node43" href="$Board2D_8ih_source.html" title=" " alt="" coords="1000,152,1184,177"/>
+<area shape="rect" id="node35" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="773,312,947,351"/>
+<area shape="rect" id="node36" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="2111,312,2260,351"/>
+<area shape="rect" id="node37" href="$CDomain_8h_source.html" title=" " alt="" coords="3537,399,3687,437"/>
+<area shape="rect" id="node38" href="$NumberTraits_8h_source.html" title=" " alt="" coords="2090,405,2281,431"/>
+<area shape="rect" id="node42" href="$GradientColorMap_8ih_source.html" title=" " alt="" coords="326,485,474,524"/>
+<area shape="rect" id="node45" href="$SurfelAdjacency_8h_source.html" title=" " alt="" coords="2615,405,2835,431"/>
+<area shape="rect" id="node46" href="$Surfaces_8h_source.html" title=" " alt="" coords="2794,312,2950,351"/>
+<area shape="rect" id="node47" href="$CDigitalOrientedShape_8h_source.html" title=" " alt="" coords="3010,399,3214,437"/>
+<area shape="rect" id="node48" href="$CDigitalBoundedShape_8h_source.html" title=" " alt="" coords="3509,312,3715,351"/>
+<area shape="rect" id="node49" href="$CEuclideanOrientedShape_8h_source.html" title=" " alt="" coords="3287,399,3513,437"/>
+</map>

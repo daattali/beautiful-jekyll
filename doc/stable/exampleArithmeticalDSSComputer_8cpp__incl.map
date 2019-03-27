@@ -1,0 +1,52 @@
+<map id="exampleArithmeticalDSSComputer.cpp" name="exampleArithmeticalDSSComputer.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="3274,5,3526,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="2658,905,2731,931"/>
+<area shape="rect" id="node3" href="$Common_8h_source.html" title=" " alt="" coords="1964,599,2121,624"/>
+<area shape="rect" id="node26" href="$BasicTypes_8h_source.html" title=" " alt="" coords="3336,679,3507,704"/>
+<area shape="rect" id="node32" href="$StdDefs_8h_source.html" title=" " alt="" coords="1517,79,1683,104"/>
+<area shape="rect" id="node46" href="$ArithmeticalDSSComputer_8h_source.html" title="Header file for module ArithmeticalDSSComputer.cpp." alt="" coords="3590,419,3781,457"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2097,679,2175,704"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2678,759,2754,784"/>
+<area shape="rect" id="node6" title=" " alt="" coords="2199,679,2326,704"/>
+<area shape="rect" id="node7" title=" " alt="" coords="2350,679,2522,704"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2546,679,2705,704"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1224,679,1394,704"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1418,679,1600,704"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1624,672,1768,711"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1793,679,1989,704"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1474,759,1531,784"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2012,679,2073,704"/>
+<area shape="rect" id="node15" href="$Config_8h_source.html" title=" " alt="" coords="679,832,820,857"/>
+<area shape="rect" id="node17" href="$Trace_8h_source.html" title=" " alt="" coords="650,679,787,704"/>
+<area shape="rect" id="node22" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="663,759,865,784"/>
+<area shape="rect" id="node23" href="$Assert_8h_source.html" title=" " alt="" coords="499,759,640,784"/>
+<area shape="rect" id="node24" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="995,832,1189,857"/>
+<area shape="rect" id="node25" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="3032,679,3211,704"/>
+<area shape="rect" id="node29" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="962,679,1150,704"/>
+<area shape="rect" id="node30" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="2704,832,2906,857"/>
+<area shape="rect" id="node31" href="$Exceptions_8h_source.html" title=" " alt="" coords="3683,679,3851,704"/>
+<area shape="rect" id="node16" title=" " alt="" coords="500,905,554,931"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1041,759,1111,784"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1135,759,1188,784"/>
+<area shape="rect" id="node20" href="$Clock_8h_source.html" title=" " alt="" coords="1313,759,1449,784"/>
+<area shape="rect" id="node21" title=" " alt="" coords="2621,832,2680,857"/>
+<area shape="rect" id="node27" title=" " alt="" coords="3384,759,3506,784"/>
+<area shape="rect" id="node28" title=" " alt="" coords="3288,759,3360,784"/>
+<area shape="rect" id="node33" href="$SpaceND_8h_source.html" title=" " alt="" coords="2608,425,2776,451"/>
+<area shape="rect" id="node36" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="1013,512,1163,551"/>
+<area shape="rect" id="node37" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="534,512,698,551"/>
+<area shape="rect" id="node38" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="296,519,510,544"/>
+<area shape="rect" id="node39" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="1759,332,1980,357"/>
+<area shape="rect" id="node40" href="$Object_8h_source.html" title=" " alt="" coords="144,425,307,451"/>
+<area shape="rect" id="node41" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="2506,239,2680,277"/>
+<area shape="rect" id="node42" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="2630,325,2804,364"/>
+<area shape="rect" id="node43" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="2105,152,2263,191"/>
+<area shape="rect" id="node44" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="854,412,1098,464"/>
+<area shape="rect" id="node45" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title=" " alt="" coords="1463,412,1684,464"/>
+<area shape="rect" id="node34" href="$CInteger_8h_source.html" title=" " alt="" coords="2993,519,3154,544"/>
+<area shape="rect" id="node35" href="$PointVector_8h_source.html" title=" " alt="" coords="2710,519,2888,544"/>
+<area shape="rect" id="node47" title=" " alt="" coords="3939,519,3978,544"/>
+<area shape="rect" id="node48" href="$ReverseIterator_8h_source.html" title=" " alt="" coords="3488,519,3682,544"/>
+<area shape="rect" id="node49" href="$ArithmeticalDSS_8h_source.html" title=" " alt="" coords="3706,512,3864,551"/>
+<area shape="rect" id="node50" href="$ArithmeticalDSSComputer_8ih_source.html" title=" " alt="" coords="4002,512,4196,551"/>
+</map>

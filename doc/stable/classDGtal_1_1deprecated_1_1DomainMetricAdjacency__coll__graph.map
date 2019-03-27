@@ -1,0 +1,10 @@
+<map id="DGtal::deprecated::DomainMetricAdjacency&lt; Domain, maxNorm1, dimension &gt;" name="DGtal::deprecated::DomainMetricAdjacency&lt; Domain, maxNorm1, dimension &gt;">
+<area shape="rect" id="node1" title="Aim: Describes digital adjacencies in a digital domain that are defined with the 1&#45;norm and the infin..." alt="" coords="1204,85,1435,137"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1HyperRectDomain.html" title="Aim: Parallelepidec region of a digital space, model of a &#39;CDomain&#39;." alt="" coords="917,91,1089,130"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1HyperRectDomain__Iterator.html" title=" " alt="" coords="430,11,602,50"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,38,79,63"/>
+<area shape="rect" id="node8" href="$structDGtal_1_1functors_1_1IsWithinPointPredicate.html" title="Aim: The predicate returns true when the point is within the given bounds." alt="" coords="237,59,406,98"/>
+<area shape="rect" id="node5" href="$structDGtal_1_1functors_1_1IsWithinPointPredicate.html" title=" " alt="" coords="626,91,791,130"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="242,159,401,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,173,93,198"/>
+</map>

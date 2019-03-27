@@ -1,0 +1,5 @@
+<map id="DGtal::functors::VCMNormalVectorFunctor&lt; TVCMOnDigitalSurface &gt;" name="DGtal::functors::VCMNormalVectorFunctor&lt; TVCMOnDigitalSurface &gt;">
+<area shape="rect" id="node1" title="Aim: A functor Surfel &#45;&gt; Quantity that returns the outer normal vector at given surfel." alt="" coords="5,205,271,244"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title=" " alt="" coords="25,105,251,144"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="48,5,228,44"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="DGtal::PreCellDirectionIterator&lt; dim, TInteger &gt;" name="DGtal::PreCellDirectionIterator&lt; dim, TInteger &gt;">
+<area shape="rect" id="node1" title="This class is useful for looping on all &quot;interesting&quot; coordinates of a pre&#45;cell." alt="" coords="24,505,226,544"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1KhalimskyPreCell.html" title=" " alt="" coords="41,405,209,444"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1PointVector.html" title=" " alt="" coords="59,205,190,244"/>
+<area shape="rect" id="node6" href="$structDGtal_1_1KhalimskyPreCell.html" title="Represents an unsigned cell in an unbounded cellular grid space by its Khalimsky coordinates." alt="" coords="200,305,367,344"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,93,31"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="105,92,265,144"/>
+</map>

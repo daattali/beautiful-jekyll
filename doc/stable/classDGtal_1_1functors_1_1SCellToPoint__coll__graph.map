@@ -1,0 +1,16 @@
+<map id="DGtal::functors::SCellToPoint&lt; KSpace &gt;" name="DGtal::functors::SCellToPoint&lt; KSpace &gt;">
+<area shape="rect" id="node1" title="Aim: transforms a scell into a point." alt="" coords="2359,118,2523,157"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,..." alt="" coords="2100,118,2281,157"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title=" " alt="" coords="1752,6,1972,58"/>
+<area shape="rect" id="node4" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title="Internal class of KhalimskySpaceND that provides some optimizations depending on the space type." alt="" coords="1343,13,1563,51"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1793,82,1931,121"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="1399,89,1507,114"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1127,89,1165,114"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1PointVector.html" title=" " alt="" coords="498,190,629,229"/>
+<area shape="rect" id="node12" href="$structDGtal_1_1KhalimskyPreCell.html" title=" " alt="" coords="1062,235,1230,274"/>
+<area shape="rect" id="node13" href="$structDGtal_1_1KhalimskyPreCell.html" title="Represents an unsigned cell in an unbounded cellular grid space by its Khalimsky coordinates." alt="" coords="750,258,917,297"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5,185,93,210"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="194,227,353,279"/>
+<area shape="rect" id="node11" href="$structDGtal_1_1KhalimskyCell.html" title=" " alt="" coords="1788,197,1935,235"/>
+<area shape="rect" id="node14" href="$structDGtal_1_1KhalimskyCell.html" title="Represents an (unsigned) cell in a cellular grid space by its Khalimsky coordinates." alt="" coords="1380,261,1526,299"/>
+</map>
