@@ -4,7 +4,19 @@ layout: base
 
 {% include header.html type="post" %}
 
-<div class="container">
+<div class="all_pages" id="container_id" style="margin-top: 19.5em; margin-bottom:5.5em; margin-right: 5.5em; margin-left: 10em;"> 
+
+	<div class="iframe-container">
+	          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftingsoftware%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1994256344182739" 
+            width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" 
+            allow="encrypted-media" style:"position: relative; right: 100px;">
+		</iframe>  
+</div> 
+</div>
+	
+	
+	
+	<div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
@@ -40,7 +52,7 @@ layout: base
           Tags:
           {% if site.link-tags %}
           {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+            <a href="{{ site.baseurl }}/tags45#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
           {% else %}
             {{ page.tags | join: ", " }}
@@ -77,3 +89,7 @@ layout: base
     </div>
   </div>
 </div>
+  
+  
+  
+

@@ -1,6 +1,19 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<nav class="navbar navbar-default navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
+	    
+    <div>		    
+      <img class="navImg" src="/img/header_1366px.png" id="navImg"/>
+            
+	  <a href= "https://craftingsoftware.com/" id="navLogo" onclick="https://craftingsoftware.com/';return false;" >
+    		<img class="navImg" src="/img/logoCS.svg"; style = top:25px;left:225px;width:15em; height:18em; class="thumbnails" id="navLogo" /> 
+	   </a>
+	    
+	  
+
+    </div>
+	    
+	         
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -8,18 +21,32 @@
         <span class="icon-bar"></span>
       </button>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title }}"/></a>
       {% else %}
         <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
       {% endif %}
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
+       <ul class="right-navbar" style="margin-right: 20em;">
+	      
+	     
+	      <div id="nav_bar">
+	       <div id="navItems" class="navItems">
+
+    		 <a href="https://craftingsoftware.com/" data-pjax="" id="navItem1" style="opacity: 1;">About</a>
+    		 <a href="https://craftingsoftware.com/team" data-pjax="" id="navItem2" style="opacity: 1;">Team</a>
+     		 <a href="https://craftingsoftware.com/career" data-pjax="" id="navItem3" style="opacity: 1;">Career</a>
+     		 <a href="/" data-pjax="" id="navItem4" style="opacity: 1;">Blog</a>
+     		 <a href="https://craftingsoftware.com/contact" data-pjax="" id="navItem5" style="opacity: 1;">Contact</a>
+	        </div>       
+	      </div>
+	      
+	{% for link in site.navbar-links %}
         {% if link[1].first %}
           <li class="navlinks-container">
             <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
+			  
             <div class="navlinks-children">
               {% for childlink in link[1] %}
                 {% for linkparts in childlink %}
@@ -31,6 +58,7 @@
         {% else %}
           <li>
             {% include navbarlink.html link=link %}
+	
           </li>
         {% endif %}
         {% endfor %}

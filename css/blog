@@ -1,0 +1,19 @@
+.topBlog {
+    height: 15em;
+    width: '100%';
+    background-color: aquamarine;
+}
+
+#hold_my_iframe {
+  display: flex;
+  flex-direction: row;
+}
+
+#blogFrame {
+  flex: 2.5;
+}
+
+.rightSide {
+   flex: 1;
+;
+}

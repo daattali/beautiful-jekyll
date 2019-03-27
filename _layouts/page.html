@@ -4,9 +4,10 @@ layout: base
 
 {% include header.html type="page" %}
 
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<div class="all_pages" id="container_id" style="margin-top: 19.5em; margin-bottom:5.5em; margin-right: 5.5em; margin-left: 10em;"> 
+  <div class="container" role="main" >
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {{ content }}
 	    {% if page.comments %}
         <div class="disqus-comments">
@@ -17,6 +18,65 @@ layout: base
           {% include staticman-comments.html %}
         </div>
 	    {% endif %}
+	   
+      </div>
+	
+    <div class='footer'>
+      <div style="background-color: rgba(0,0,0, .03)" >
+      <div class='footerContent' id='footerContent' style="display: 
+			flex; flex-direction:row-reverse; height:14em; margin: 0 auto; max-width: 110em;">
+        <div class='address'>
+          <span>Central Park Residence, 68 Plopilor St, Cluj-Napoca, CJ 400383, Romania</span>
+          <div>
+            <span class='dark'>contact@craftingsoftware.com</span>
+            <a href="tel:+40745 617 142" class='dark'>+40745 617 142</a>
+          </div>
+        </div>
+        <div class='social'>
+          <img src="/img/craftingLogoColor.svg">
+          <div class='social-icons'>
+            <a target="_blank" href="https://www.facebook.com/craftingsoftware/"> <img class='icon' src="/img/facebookDark.svg"> </a>
+            <a target="_blank" href="https://www.linkedin.com/in/crafting-software-a69694153/"> <img class='icon' src="/img/linkedinDark.svg"> </a>
+          </div>
+        </div>
+        <div class='navItemsDesktop'>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/" data-pjax>About</a>
+          </div>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/team" data-pjax>Team</a>
+          </div>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/career" data-pjax>Career</a>
+          </div>
+           <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://andreeadociu.github.io" data-pjax>Blog</a>
+          </div>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/contact" data-pjax>Contact</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class='copyright'>
+        <span>© 2018 Crafting Software. All rights reserved.</span>
+      </div>
+    </div>
+      
+      
+	  
     </div>
   </div>
-</div>
+	
+ 	<div class="iframe-container">
+	    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftingsoftware%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1994256344182739" 
+            width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" 
+            allow="encrypted-media" style:"position: relative; right: 100px;">
+	    </iframe>  
+        </div>	  
+</div>   
