@@ -46,6 +46,12 @@ hr.small {
   border-radius: 3px;
 }
 
+.intro-header{
+  margin-left:-1.3em;
+}
+
+
+
 .headerBackground{
    padding: 1em;
    background: #ffffff url("../img/header_1366px.svg") no-repeat center center;
@@ -213,7 +219,6 @@ hr.small {
 }
 
   
-  
   /* --- Social --- */
 .social {
   display: flex;
@@ -267,12 +272,9 @@ hr.small {
   }
   
   
-  
- 
-
 .all_pages {
    display: flex;
-   top: 100px !important;
+   margin: 19.5em 5.5em 5.5em 10em;
 }
 
 #nav_bar a:link {
@@ -949,8 +951,8 @@ img {
 
 
 .iframe-container{
-  top: 100px !important;
-  right: 100px !important;
+  /* top: 100px !important;
+  right: 100px !important; */
   
   }
   
