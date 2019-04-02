@@ -19,7 +19,7 @@ title: Gallery
 				</dd></dl>
 				<dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815.png'><img width="145" height="150" src="http://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815-145x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines.png'><img width="145" height="150" src="http://dgtal.org/wp/wp-content/uploads/2016/05/gabari3Dlines-e1463674370815-145x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Illustration of centerline extraction using accumulation and confidence map.

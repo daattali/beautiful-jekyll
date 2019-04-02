@@ -18,7 +18,7 @@ title: Authors
 * Guillaume Damiand (LIRIS, CNRS)
 * Pierre Gueth (LIRIS, CNRS)
 * Sébastien Fourey (GREYC, ENSICAEN)
-* Bertrand Kerautret (LORIA, Université de Lorraine)
+* Bertrand Kerautret (LIRIS, Université de Lyon)
 * Adrien Krähenbühl (LaBRI)
 * Jacques-Olivier Lachaud (LAMA, Université de Savoie)
 * Jérémy Levallois (LIRIS – LAMA, INSA-Lyon)
