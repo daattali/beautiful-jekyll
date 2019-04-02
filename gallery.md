@@ -109,226 +109,226 @@ Red: feature, Blue: smooth part, Green: flat part
 				Another rendering of OBJ file given by vol2obj tool.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/bunny-grey/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bunny-grey-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/bunny-grey.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bunny-grey-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Rendering of digital bunny (using vol2obj tool + blender)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/bunny-mean/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bunny-mean-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/bunny-mean.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bunny-mean-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Example of rendering from OBJ export of a curvature map.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/woodrings/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/woodRings-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/woodRings.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/woodRings-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Example of wood display with Viewer3D and quad mesh embedding in 3D volumetric scan of wood.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/woodtrunk/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/woodTrunk-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/woodTrunk.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/woodTrunk-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Example of wood display with Viewer3D and quad mesh embedding in 3D volumetric scan of wood.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/3d-curve-2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2013/05/3d-curve-2-150x150.png"  alt="3D curve"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2013/05/3d-curve-2.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2013/05/3d-curve-2-150x150.png"  alt="3D curve"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				A view of a 3D curve with its tangential cover and projections (see DGtalTools/visualisation/3dCurveViewer)
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/metrics/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/metrics-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/metrics.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/metrics-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				L_p separable metrics which can be used in DGtal volumetric tools (from left to right, top to bottom, p={1,2,4,0.8,1.3,43.2}.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/snapshot-k-zero/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-K-zero-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-K-zero.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-K-zero-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Gaussian curvature using Integral Invariants (with zero curvature surfels in black).
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/snapshot-mean-zero/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-mean-zero-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-mean-zero.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-mean-zero-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Mean curvature using Integral Invariants (with zero curvature surfels in black).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/voromap-diag-random/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Voromap-diag-random-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Voromap-diag-random.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Voromap-diag-random-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Voronoi diagram map in dimension 2 for a random set of sites
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/voromap-random/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Voromap-random-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Voromap-random.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Voromap-random-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Voronoi diagram map in 2d for a random set of sites (on color per digital voronoi cell)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/visupdf3d/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/visuPdf3D-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/visuPdf3D.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/visuPdf3D-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Export from Display3D to OFF allowing to generate a U3D/PDF format
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/3dmeshexport/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/3DMeshExport-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/3DMeshExport.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/3DMeshExport-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Example of OFF generation from a Display3D object.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/snapshot2-3/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot22-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot2-3.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot22-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Importing 3D Mesh in Display3D viewers
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/table8_4/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/06/table8_4-150x150.png"  alt="Simple point table for topology (8,4)"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/06/table8_4.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/06/table8_4-150x150.png"  alt="Simple point table for topology (8,4)"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Simple point table for topology (8,4).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/table4_8/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/06/table4_8-150x150.png"  alt="Simple point table for topology (4,8)"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/06/table4_8.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/06/table4_8-150x150.png"  alt="Simple point table for topology (4,8)"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Simple point table for topology (4,8).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/snapshot2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot2-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot2.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot2-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Comparison between two convolution kernels (constant convolution kernel and Gaussian Kernel)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/snapshot/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-150x150.jpg" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-150x150.jpg" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Normal vector estimation based on a convolution kernel on elementary normal vector based on a convolution kernel on elementary normal vector
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/mc-lobster-40/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/mc-lobster-40-150x150.png"  alt="Marching-cubes surface of lobster.vol at isovalue 40"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/mc-lobster-40.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/mc-lobster-40-150x150.png"  alt="Marching-cubes surface of lobster.vol at isovalue 40"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Marching-cubes surface of lobster.vol at isovalue 40
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/polynomial-fun2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/polynomial-fun2-150x150.png"  alt="Implicit polynomial surface"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/polynomial-fun2.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/polynomial-fun2-150x150.png"  alt="Implicit polynomial surface"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of implicit polynomial surface &#8220;3*x^2-2*y^2+z^3+5y^2*(z-1)*(z+1)&#8221;
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/gallery/polynomial-fun/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/polynomial-fun-150x150.png"  alt="Surface (x^2+y^2+2z^2-1)*(z^2x-0.1)=0"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/polynomial-fun.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/polynomial-fun-150x150.png"  alt="Surface (x^2+y^2+2z^2-1)*(z^2x-0.1)=0"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of surface defined by some implicit polynomial.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/gallery/capture-decran-2012-02-16-a-13-12-55/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/Capture-d’écran-2012-02-16-à-13.12.55-150x150.png"  alt="Implicit surface &quot;Miau&quot;"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/capture-decran-2012-02-16-a-13-12-55.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/Capture-d’écran-2012-02-16-à-13.12.55-150x150.png"  alt="Implicit surface &quot;Miau&quot;"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of implicit polynomial surface &#8220;Miau&#8221;.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/mpolynomial-durchblick/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/mpolynomial-durchblick-150x150.png"  alt="Surface of implicit polynomial &quot;durchblick&quot;"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/mpolynomial-durchblick.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/mpolynomial-durchblick-150x150.png"  alt="Surface of implicit polynomial &quot;durchblick&quot;"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of surface &#8220;durchblick&#8221; defined by some implicit polynomial.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/gallery/mpolynomial-crixxi/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/mpolynomial-crixxi-150x150.png"  alt="Surface of polynomial &quot;crixxi&quot;"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/mpolynomial-crixxi.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/mpolynomial-crixxi-150x150.png"  alt="Surface of polynomial &quot;crixxi&quot;"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of surface &#8220;crixxi&#8221; defined by some implicit polynomial.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/digital-surface-intersecting-balls/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-intersecting-balls-150x150.png"  alt="Intersection of two balls"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-intersecting-balls.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-intersecting-balls-150x150.png"  alt="Intersection of two balls"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Boundary and frontiers in a labelled image.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/digital-surface-mc-cat10/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-mc-cat10-150x150.png"  alt="cat10 image"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-mc-cat10.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-mc-cat10-150x150.png"  alt="cat10 image"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Marching-cube surface or triangulation of digital surface &#8220;cat10.vol&#8221;.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/digital-surface-bfv-lobster/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-bfv-lobster-150x150.png"  alt="lobster image"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-bfv-lobster.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/digital-surface-bfv-lobster-150x150.png"  alt="lobster image"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Breadth-first traversal onto the &#8220;lobster&#8221; digital surface.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/geomdca/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/geomDCA-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/geomDCA.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/geomDCA-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Saturated decomposition of a digital curve inti digital circular arcs.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/branchdistancemap/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/BranchDistanceMap-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/BranchDistanceMap.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/BranchDistanceMap-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance map from a knot withing a wood beam
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/dgtaluse/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DGtalUse-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/DgtalUse.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DGtalUse-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				DGtal used in a software of 3D branch measurements
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/ksurfelsconnectedorientext/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/KSurfelsConnectedOrientExt-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/KSurfelsConnectedOrientExt.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/KSurfelsConnectedOrientExt-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of connected Signed Khalimsky Cell from DGtalSet
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/surfeltracking/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking-150x150.png"  alt="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/surfelTracking.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking-150x150.png"  alt="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-05-31-a-12-46-13-1024x681/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-05-31-à-12.46.13-1024x681-150x150.png"  alt="Displaying Khalimsky Signed Cells in 3D"/></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-05-31-à-12.46.13-1024x681.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-05-31-à-12.46.13-1024x681-150x150.png"  alt="Displaying Khalimsky Signed Cells in 3D"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Displaying Khalimsky Signed Cells in 3D
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/3dkhalimskycells/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/3DKhalimskyCells-150x150.png"  alt="Displaying Khalimsky Cells in 3D"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/3DKhalimskyCells.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/3DKhalimskyCells-150x150.png"  alt="Displaying Khalimsky Cells in 3D"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Displaying Khalimsky Cells in 3D
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/levelsetextraction-2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2016/05/levelSetExtraction-150x150.png"  /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2016/05/levelSetExtraction.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2016/05/levelSetExtraction-150x150.png"  /></a>
 			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/fcextraction-2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/fcExtraction1-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/fcExtraction1.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/fcExtraction1-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				2D  contour extraction in the Khalimsky cellular model.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-03-29-a-18-34-33/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-29-à-18.34.33-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-29-à-18.34.33.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-29-à-18.34.33-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Visualisation of 3D object border with ClippingPlane objects
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-03-21-a-11-10-11/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-21-à-11.10.11-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-21-à-11.10.11.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-21-à-11.10.11-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Display of 18-6 adjacency  from two 18-6 objects
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-03-19-a-11-52-29/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-11.52.29-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-11.52.29.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-11.52.29-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D Domain visualization with three digital sets
