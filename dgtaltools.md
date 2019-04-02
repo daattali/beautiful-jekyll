@@ -156,10 +156,10 @@ At the moment the DFtalTools-contrib project is organized as follows (<span styl
 
 You can get the DGtalTools by using git:
 
-```git clone git://github.com/DGtal-team/DGtalTools.git``` or the source archive: [DGtalTools-0.9.4-Source.tar.gz][5]
+```git clone git://github.com/DGtal-team/DGtalTools.git``` or the source archive: [DGtalTools-1.0-Source.tar.gz][5]
 
 or the DGtalTools-contrib:
-```git clone git://github.com/DGtal-team/DGtalTools-contrib.git``` or the source archive: [DGtalTools-contrib-0.9.4-Source.tar.gz][6]
+```git clone git://github.com/DGtal-team/DGtalTools-contrib.git``` or the source archive: [DGtalTools-contrib-1.0-Source.tar.gz][6]
 
 Installation:
 
@@ -170,5 +170,5 @@ Installation:
 [2]: http://github.com/DGtal-team/DGtalTools-contrib
 [3]: http://www.ipol.im
 [4]: http://dgtal.org/doc/stable/packageTutorials.html
-[5]: https://github.com/DGtal-team/DGtalTools/archive/0.9.4.tar.gz
-[6]: https://github.com/DGtal-team/DGtalTools-contrib/archive/0.9.4.tar.gz
+[5]: https://github.com/DGtal-team/DGtalTools/archive/1.0.tar.gz
+[6]: https://github.com/DGtal-team/DGtalTools-contrib/archive/1.0.tar.gz
