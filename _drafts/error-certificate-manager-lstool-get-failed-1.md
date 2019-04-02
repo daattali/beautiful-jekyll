@@ -19,25 +19,17 @@ I have no idea what this means so I googled it and ended up on [KB2150057](https
 
 > "This issue occurs when there are third party extensions like nimble storage and veeambackupUI etc. with no valid certificates and failed to get the information for the service ID."
 
-Sure enough there was an old Simplivity extension installed on the server that had been used at some point for a proof of concept but no longer needed. I found the procedure to remove the extension in an [HPE documentation](https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-sv760_000259_aen_us&docLocale=en_US) (they bought the company in 2017), which I performed on the appliance.
+Sure enough there was an old Simplivity extension installed on the server that had been used at some point for a proof of concept but was no longer needed. I found the procedure to remove the extension in an [HPE documentation](https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-sv760_000259_aen_us&docLocale=en_US) (they bought the company in 2017), which I performed on the appliance.
 
-> cd /opt/SimpliVity/SimpliVityExtensionForVSphereClient-10.23.8/
->
-> ./uninstall
->
-> Y
->
-> service-control --stop vsphere-ui vsphere-client
->
-> cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity
->
-> rm -r com.simplivity.web-client-10.23.8
->
-> cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity
->
-> rm -r com.simplivity.web-client-10.23.8
->
-> service-control --start vsphere-ui vsphere-client
+    cd /opt/SimpliVity/SimpliVityExtensionForVSphereClient-10.23.8/
+    ./uninstall
+    Y
+    service-control --stop vsphere-ui vsphere-client
+    cd /etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity
+    rm -r com.simplivity.web-client-10.23.8
+    cd /etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity
+    rm -r com.simplivity.web-client-10.23.8
+    service-control --start vsphere-ui vsphere-client
 
 ![](/img/lstoolget1.jpg)
 
