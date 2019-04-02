@@ -52,6 +52,9 @@ At the moment the DGTalTools project is organized as follows (<span style="color
     * Maximal DCA based estimators
     * Binomial convolver based estimators
     * Integral Invariants based estimators
+
+  - <span style="color: #008b00;">3dCurveTangentEstimator</span>: to estimate the tangent vector to a set of 3D integer points, which are supposed to approximate a 3D curve.
+
   - <span style="color: #00008b;">3dLocalEstimators</span>: program to compare 3D local curvature estimators  (mean, gaussian and principal curvatures) on 3D implicit shapes  with integral invariant and monge via jet fitting (with also noise robustness measure).
   - <span style="color: #00008b;">curvatureBC</span>: curvature estimator using the Binomial convolver.
   - <span style="color: #00008b;">curvatureMCMS</span>: curvature estimator using the maximal segments cover (to be updated for current DGtal version).
@@ -71,9 +74,10 @@ At the moment the DGTalTools project is organized as follows (<span style="color
 
 * * * *
 
-* **shapeGenerator/**:
-  - <span style="color: #00008b;">shapeGenerator</span>: generate multigrid shape
-  - <span style="color: #00008b;">contourGenerator</span>: generate multigrid shape contours
+* **<span style="color: #008b00;">shapeGenerator</span>/**:
+  - <span style="color: #8b0000;">3dParametricCurveDigitizer</span>: a tool for digitization of 3D parametric curves.
+  - <span style="color: #00008b;">shapeGenerator</span>: generate multigrid shape.
+  - <span style="color: #00008b;">contourGenerator</span>: generate multigrid shape contours.
 
 * * * *
 
@@ -100,12 +104,14 @@ At the moment the DGTalTools project is organized as follows (<span style="color
 
 * **volumetric/**:
   - <span style="color: #00008b;">3dVolMarchingCubes</span>: marching cubes form a Vol file
-  - <span style="color: #00008b;">criticalKernelsThinning3D</span>: marching cubes form a Vol file
+  - <span style="color: #008b00;">criticalKernelsThinning3D</span>: marching cubes form a Vol file
   - <span style="color: #00008b;">homotopicThinning3D</span>: ultimate skeleton from vol file
   - <span style="color: #00008b;">volAddBorder</span>: add a 1 voxel boundary with value 0 to a vol file.
   - <span style="color: #00008b;">volCComponentCounter</span>: a simple program to count the number of connected components in a 3D image.
   - <span style="color: #00008b;">volCrop</span>: crop an 3D vol image from to points.
+  - <span style="color: #8b0000;">volFillInterior</span>: tool to fill the interior of a voxel set.
   - <span style="color: #00008b;">volFlip</span>: tool to flip all volume slice images according a given dimension.
+
   - <span style="color: #00008b;">volImageMetrics</span>: apply basic measures from two volumetric images: RMSE and PSNR.
   - <span style="color: #00008b;">volIntensityScale</span>: a simple tool to apply a linear scale of the intensity given in a volumetric file.
   - <span style="color: #00008b;">volReSample</span>: apply a basic re sampling of a 3D volumetric image (.vol, .longvol, .pgm3d) with a given grid size.
