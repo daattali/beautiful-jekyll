@@ -1,9 +1,92 @@
 // Dean Attali / Beautiful Jekyll 2016
+function isCurrentUrl(incomingURL) {
+
+  var currentURL = window.location.href;
+
+  var lastStringURLDimension = -incomingURL.length;
+                    
+  return currentURL.trim().slice(lastStringURLDimension) === incomingURL ;
+}
+
+function fadeOnScroll() {
+  var windowHeight = $('.homeContainer').height();
+
+  if (!isCurrentUrl("team") && !isCurrentUrl("contact") && !isCurrentUrl("career"))
+    $(window).scroll(function (event) {
+    var scrollValue = $(window).scrollTop();
+    if (scrollValue < 1000) {
+      var padding = scrollValue/20;
+      var homeTypographyOpacity = 1 - scrollValue / (windowHeight*0.75);
+      
+      $('.homeTypography').css('opacity', homeTypographyOpacity);
+      $('.homeTypography').css('padding-top', '' + padding + 'em');
+      if (homeTypographyOpacity < 0) {
+        $('.homeTypography').css('visibility','hidden'); 
+      }
+      else {
+        $('.homeTypography').css('visibility','visible');
+      }
+    }
+});
+}
+
 
 var main = {
 
   bigImgEl : null,
   numImgs : null,
+
+  openNavMobileItems: function openNavMobileItems() {
+    //var currentURL = window.location.href;
+    //var body = document.getElementById("body").offsetWidth;
+    var element = $("#navLogo")
+    var windowHeight = $(document).height();
+    // Team
+    var teamTitleHeight = $("#teamPage").height();
+    var teamMemberProfileHeight = $(".member-profile").height();
+    var teamMaxHeight = teamTitleHeight + teamMemberProfileHeight * 2 + windowHeight * 0.06;
+    // Career
+    var careerTitleHeight = $(".career-page-title").height();
+    var careerPositionsHeight = $("#positionsHeight").height();
+    var careerMaxHeight = careerTitleHeight + careerPositionsHeight + 115;
+
+    var display = document.getElementById("navMobileItems");
+
+    if (display.style.zIndex === "1") {
+      display.style.zIndex = "-1";
+      display.style.visibility = "hidden";
+      display.className = display.className.replace(/\bnavMobileItems\b/g, "");
+     // document.getElementById("body").style.overflowY = "visible";
+      document.getElementById('navImg').className = "navImg";
+      document.getElementById('navItemMob1').className = "";
+      document.getElementById('navItemMob2').className = "";
+      document.getElementById('navItemMob3').className = "";
+      document.getElementById('navItemMob4').className = "";
+      document.getElementById("navMobileMenuImg").src = "/img/menuIcon.svg";
+      if (isCurrentUrl("team") && (document.body.scrollTop > teamMaxHeight 
+        || document.documentElement.scrollTop > teamMaxHeight) || isCurrentUrl("career") 
+        && (document.body.scrollTop > careerMaxHeight || document.documentElement.scrollTop > careerMaxHeight) 
+        || !isCurrentUrl("team") && !isCurrentUrl("career") && (document.body.scrollTop > windowHeight 
+        || document.documentElement.scrollTop > windowHeight)) {
+        document.getElementById('navBar').style.backgroundColor = "black";
+      } else {
+        document.getElementById('navBar').style.backgroundColor = "transparent";
+      }
+    } else {
+      display.style.zIndex = "1";
+      display.style.visibility = "visible";
+      display.className += "navMobileItems";
+      document.getElementById('navImg').classList.add("navMobileMenuAnimation");
+      document.getElementById('navItemMob1').classList.add("navMobileMenuAnimationItems");
+      document.getElementById('navItemMob2').classList.add("navMobileMenuAnimationItems");
+      document.getElementById('navItemMob3').classList.add("navMobileMenuAnimationItems");
+      document.getElementById('navItemMob4').classList.add("navMobileMenuAnimationItems");
+      document.getElementById("body").style.overflowY = "hidden";
+      document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
+      document.getElementById('navBar').style.backgroundColor = "transparent";
+    }
+  },
+
 
   init : function() {
     // Shorten the navbar after scrolling a little bit down
@@ -36,6 +119,8 @@ var main = {
         }
       });
     });
+
+  
 
     // Ensure nested navbar menus are not longer than the menu header
     var menus = $(".navlinks-container");
@@ -133,7 +218,9 @@ var main = {
 	  $(".img-desc").hide();
 	}
   }
-};
+
+
+}
 
 // 2fc73a3a967e97599c9763d05e564189
 
