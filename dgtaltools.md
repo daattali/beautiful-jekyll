@@ -64,7 +64,9 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;"> generic3dNormalEstimators</span>: Computes a normal vector field over a digitized 3D implicit surface for several estimators (II\|VCM\|Trivial\|True).
   - <span style="color: #00008b;">statisticsEstimators</span>: compute satistics (L1, L2, Loo) from results of two estimators.
   - <span style="color: #00008b;">tangentBC</span>: tangent estimator using the Binomial convolver.
-  - <span style="color: #00008b;">vol2normalField</span>: compute the normal vector field of a given vol file .
+  - <span style="color: #00008b;">vol2normalField</span>: compute the normal vector field of a given vol file.
+  - <span style="color: #008b00;">volSurfaceRegularization</span>: Regularize a cubical complex into a smooth quadrangulated complex.
+
 
 * * * *
 
@@ -116,7 +118,7 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;">volIntensityScale</span>: a simple tool to apply a linear scale of the intensity given in a volumetric file.
   - <span style="color: #00008b;">volReSample</span>: apply a basic re sampling of a 3D volumetric image (.vol, .longvol, .pgm3d) with a given grid size.
   - <span style="color: #00008b;">volSegment</span>: Segment volumetric file from a simple threshold which can be set automatically from the otsu estimation.
-  - <span style="color: #00008b;">volShapeMetrics</span>: apply shape measures for comparing two volumetric images A and B (shape defined from thresholds)
+  - <span style="color: #00008b;">volShapeMetrics</span>: apply shape measures for comparing two volumetric images A and B (shape defined from thresholds).
   - <span style="color: #00008b;">volSubSample</span>: sub sample a vol file (division by 2 in each direction)
   - Measures from voxel partition (true/false+-, precision recall, f-measure)
   - Measures bases on euclidean distance between the two Shape A and B.
