@@ -4,7 +4,7 @@ title: DGtalTools
 ---
 
 
-[DGtalTools][1] is  separate github project containing tools constructed using DGtal library. The main goal of this part is to gather simple and useful tools exploiting the structures and algorithms defined in DGtal. Note that in complement to DGtalTools, the [DGtalTools-contrib][2] project was added to gather specific research tools or prototypes. The resulting tools could be useful to:
+[DGtalTools][1] is a separate github project containing tools constructed using DGtal library. The main goal of this part is to gather simple and useful tools exploiting the structures and algorithms defined in DGtal. Note that in complement to DGtalTools, the [DGtalTools-contrib][2] project was added to gather specific research tools or prototypes. The resulting tools could be useful to:
 
 * Share and apply DGtal algorithms to various data from different domains.
 * Construct demonstration tools like online demonstrations (as for instance the one of the [Image Processing Online][3]).

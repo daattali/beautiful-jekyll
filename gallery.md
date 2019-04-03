@@ -334,184 +334,184 @@ Red: feature, Blue: smooth part, Green: flat part
 				3D Domain visualization with three digital sets
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-03-19-a-20-14-53/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-20.14.53-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-20.14.53.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-20.14.53-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D Domain visualization with some elements (domain displayed in &#8220;Paving&#8221; mode)
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/domainpointillustration/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-19-à-01.45.24-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D Domain visualization with some elements (domain displayed in “Grid” mode)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-03-17-a-14-50-35/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D Domain visualization with two digital sets
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-01-06-a-21-39-21/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-06-à-21.39.21-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-06-à-21.39.21.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-06-à-21.39.21-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D homotopic shape thinning in the (6,26)-adjacency.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-04-02-a-01-41-20/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-04-02-à-01.41.20-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-04-02-à-01.41.20.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-04-02-à-01.41.20-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance Transformation using the Euclidean distance using a random set of seeds.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-04-02-a-02-15-47/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-04-02-à-02.15.47-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-04-02-à-02.15.47.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-04-02-à-02.15.47-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance Transformation in 3D using the Manhattan distance (l_1).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/gallery/alcaponedistancemap/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/AlCaponeDistanceMap-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance Transformation using the Euclidean distance
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-01-06-a-10-03-54/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-06-à-10.03.54-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-06-à-10.03.54.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-06-à-10.03.54-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D Distance transformation using the chessboard (l_infinity) distance.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/gallery/capture-decran-2011-01-05-a-02-04-04/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-05-à-02.04.04-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-05-à-02.04.04.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-01-05-à-02.04.04-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D volume visualization
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/exampledss-3/'><img width="150" height="118" src="http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3-150x118.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3.png'><img width="150" height="118" src="http://dgtal.org/wp/wp-content/uploads/2010/10/exampleDSS-3-150x118.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Example of the decomposition of a simple 4-connected curve into maximal Discrete Straight Segments (greedy algorithm).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/segmentation/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/segmentation-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/segmentation.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/segmentation-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Decomposition of a contour into standard Discrete Straight Segments using a greedy process.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/contours-2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/contourS1-150x150.gif" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/contourS1.gif'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/contourS1-150x150.gif" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Visualisation of some iso contours
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/klokannoise/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise.png/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Contour visualization with original source image
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/image-postdt-border/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/image-postDT-border-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/image-postDT-border.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/image-postDT-border-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance Transformation using the Euclidean distance using a random set of seeds.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/image-dt-l1/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/image-DT-l1-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/image-DT-l1.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/image-DT-l1-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance Transformation in 2D using the Manhattan distance (l_1).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/image-dt-linfty/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/image-DT-linfty-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/image-DT-linfty.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/image-DT-linfty-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Distance Transformation using the Chessboard (l_infinity) distance.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/shape-thinning-8-4/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/11/shape-thinning-8-4-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/11/shape-thinning-8-4.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/11/shape-thinning-8-4-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				2D homotopic shape thinning in the (8,4)-adjacency
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/shape-thinning-4-8/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/11/shape-thinning-4-8-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/11/shape-thinning-4-8.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/11/shape-thinning-4-8-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				2D homotopic shape thinning in (4,8)-topology
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/colormaps/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/colormaps-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/colormaps.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/colormaps-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Examples of colormaps available in the DGtalBoard system.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/hashtree-vector/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/hashtree-vector-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/hashtree-vector.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/hashtree-vector-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Implicit function representation on a classical ImageContainer.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/hashtree/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/hashtree-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/hashtree.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/hashtree-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Implicit domain representation using a Pointerless QuadTree (a.k.a. HashTree in n-D).
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/house8-8/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house8-8-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/house8-8.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house8-8-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Filling of a 2D domain with (8,8)-adjacency.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/house8-4/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house8-4-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/house8-4.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house8-4-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Filling of a 2D domain with (8,4)-adjacency.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/house4-8/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house4-8-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/house4-8.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house4-8-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Filling of a 2D domain with (4,8)-adjacency.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/house4-4/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house4-4-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/house4-4.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/house4-4-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Filling of a 2D domain with (4,4)-adjacency.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/bubble-object-color-borders-48/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-color-borders-48-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-color-borders-48.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-color-borders-48-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Border tracking and labelling using the 4-adjacency.
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/bubble-object-border-2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-border1-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-border1.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-border1-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Border tracking and labelling using the 8-adjacency.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/bubble-object-border/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-border-150x150.png"  /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-border.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/bubble-object-border-150x150.png"  /></a>
 			</dt></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/simpleset-color/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color.png 199w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-color.png 199w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/simpleset/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet.png 200w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet.png 200w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/diskwithadj4-2/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41.png 300w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj41.png 300w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/diskwithadj8/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8.png 300w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/DiskWithAdj8.png 300w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/gallery/simpleset-grid/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid-300x300.png 300w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid-150x150.png"  srcset="http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid-150x150.png 150w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid-300x300.png 300w, http://dgtal.org/wp/wp-content/uploads/2010/10/simpleSet-grid.png 400w" sizes="(max-width: 150px) 100vw, 150px" /></a>
 			</dt></dl>
 			<br style='clear: both' />
 		</div>
