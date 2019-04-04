@@ -21,8 +21,24 @@ common-js:
  {% include head.html %}
 
       <link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png"/>
-  
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script> 
+
   <body>
+
+      <div class = "drop-menu" id="drop-menu-id">
+      
+          <div class="navMobileMenu" onclick="main.openNavMobileItems()" id="navMobileMenu">
+              <img class='icon' id="navMobileMenuImg" src="/img/menuIcon.svg" style="margin: 0 auto 0 auto">
+           </div>
+      
+           <div class="navImg" id="navImg">
+            <img id="navImg" src="/img/logoCS.svg" style="margin: 0 auto 0 auto">
+         </div>
+      
+      </div>  
+	
+  
         
          
     {% include gtm_body.html %}

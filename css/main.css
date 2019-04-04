@@ -180,11 +180,19 @@ hr.small {
 
 
 /* --- @media --- */
+
 /* ipad */
 @media only screen and (max-width: 860px){
 
   #container_id2{
     margin: auto;
+  }
+
+  .navItems{
+     position: absolute !important;
+     top: 40px !important;
+     left: 400px !important;
+     right: 0px !important;
   }
 }
 
@@ -213,6 +221,10 @@ hr.small {
     content: url("/img/header_1366px.svg");
   }
 
+  .navBar{
+    position: absolute !important;
+  }
+
 
 }
 
@@ -234,6 +246,16 @@ hr.small {
   
 }
 
+@media only screen and (max-width: 840px){
+  .navBar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100vw;
+     right: 0;
+     min-width: 0px;
+  }   
+}
 
 @media only screen and (min-width: 840px){
 
@@ -328,6 +350,8 @@ hr.small {
 
   .iframe-container{
     margin-left: 6em;
+    height:500;
+    width:500;
   }
 
 }
@@ -397,6 +421,7 @@ hr.small {
     margin-left:-18em;
     height: 30px;
     width:40px;
+    /*position:absolute;*/
 
   }
 
@@ -523,10 +548,6 @@ hr.small {
   opacity: 0.54;
 }
 
-@media only screen and (max-width: 400px){
- 
-  
-}
 
 @media only screen and (max-width: 520px){
 
@@ -552,7 +573,12 @@ hr.small {
   .iframe-container{
     margin:auto;
     width: 90%;
-    padding: 150px;
+    left: 1px;
+    padding: 0px;
+  }
+
+  .social{
+    width: 1000px !important; 
   }
 
   .row{
@@ -591,6 +617,139 @@ hr.small {
   }
 }
   
+/* --- SlideDown --- */
+
+.slideDown {
+  height: 11em;
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 250ms;
+  -webkit-animation-duration: 250ms;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  visibility: visible;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        top: -2em;
+    } 
+    100% {
+        opacity: 1;
+        top: 0em;
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        opacity: 0;
+        top: -2em;
+    } 
+    100% {
+        opacity: 1;
+        top: 0em;
+    }
+}
+
+.slideDownItems {
+  top: 0.5em; 
+  height: 3em;
+  width: 3em;
+  animation-name: slideDownItems;
+  -webkit-animation-name: slideDownItems;
+  animation-duration: 250ms;
+  -webkit-animation-duration: 250ms;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  visibility: visible;
+}
+
+.slideDownItems3{
+  top: 0.5em; 
+  height: 3em;
+  width: 25em;
+  animation-name: slideDownItems;
+  -webkit-animation-name: slideDownItems;
+  animation-duration: 250ms;
+  -webkit-animation-duration: 250ms;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  visibility: visible;
+}
+
+.slideDownItems2 {
+  top: 1em; 
+  height: 2em;
+  animation-name: slideDownItems;
+  -webkit-animation-name: slideDownItems;
+  animation-duration: 250ms;
+  -webkit-animation-duration: 250ms;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  visibility: visible;
+}
+
+@keyframes slideDownItems {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideDownItems {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+.slideDownMenuBar {
+  animation-name: slideDownMenuBar;
+  -webkit-animation-name: slideDownMenuBar;
+  animation-duration: 350s;
+  -webkit-animation-duration: 350ms;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  visibility: visible;
+}
+
+@keyframes slideDownMenuBar {
+    0% {
+        opacity: 0;
+        width: 0;
+        top: 0vh;
+    } 
+    100% {
+        opacity: 1;
+        width: 100vw;
+        top: 80vh;
+    }
+}
+
+@-webkit-keyframes slideDownMenuBar {
+    0% {
+        opacity: 0;
+        top: 80vh;
+    } 
+    100% {
+        opacity: 1;
+        top: 80vh;
+    }
+}
+
+@keyframes hoverMenuItems {
+    0% {
+        opacity: 0.7;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
 
 /* --- NavItemsDesktop ---  */
 
@@ -680,14 +839,6 @@ hr.small {
 
 #navbar a:active {
  color: white !important;
-}
-
-.right-navbar{           
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  color: #ffffff;
-  justify-content: space-between;
 }
 
 .main-content {
@@ -850,10 +1001,6 @@ img {
   margin-top: -25px;
 }
 
-.all_pages{
-  background: coral;
-}
-
 /* --- Navbar --- */
 
 .navbar-custom {
@@ -883,6 +1030,7 @@ img {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: {{ site.hover-col }};
+
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -1078,7 +1226,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0,0,0, .03);
+  
 }
 
 
@@ -1168,6 +1316,7 @@ img {
   color: #999;
   font-size: 15px;
   margin-bottom: 30px;
+
 }
 
 .blog-tags a {
@@ -1260,6 +1409,7 @@ img {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   margin: 10px 0 0;
+  
 }
 .intro-header .post-heading .post-subheading {
   margin-bottom: 20px;

@@ -1,102 +1,127 @@
-<nav class="navbar navbar-default navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-	    
-    <div>		    
-      <img class="navImg" src="/img/header_1366px.png" id="navImg"/>
-            
-	  <a href= "https://craftingsoftware.com/" id="navLogo" onclick="https://craftingsoftware.com/';return false;" >
-    		<img class="navImg" src="/img/logoCS.svg"; style = top:25px;left:225px;width:15em; height:18em; class="thumbnails" id="navLogo" /> 
-	   </a>
-	    
-	  
-
-    </div>
-	    
-	         
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
  
-      {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title }}"/></a>
-      {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
-      {% endif %}
-    </div>
-    <div class = "drop-menu" id="drop-menu-id">
+ <head>
+
+  <link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+
+
+
+
+</head>
+
+<body id="body">
+
+
+ 
+
+  <nav class="navbar navbar-default navbar-custom">
+
+
+      <div class="navBar" id="navBar">   
+  
+          <div id="navItems" class="navItems" style="position:absolute; right: 4em; top: 3em; z-index:1;">
+            <a href="https://craftingsoftware.com/" data-pjax="" id="navItem1" style="opacity: 1;">About</a>
+            <a href="https://craftingsoftware.com/team" data-pjax="" id="navItem2" style="opacity: 1;">Team</a>
+            <a href="https://craftingsoftware.com/career" data-pjax="" id="navItem3" style="opacity: 1;">Career</a>
+            <a href="/" data-pjax="" id="navItem4" style="opacity: 1;">Blog</a>
+            <a href="https://craftingsoftware.com/contact" data-pjax="" id="navItem5" style="opacity: 1;">Contact</a>
+          </div>    
+           
+           <div style="z-index:-1; visibility: hidden;" id="navMobileItems" onclick="main.openNavMobileItems()">
+             <a href="https://craftingsoftware.com/" data-pjax id="navItemMob1" onClick="menu.highlightNavigationItems(href)">About</a>
+             <a href="https://craftingsoftware.com/team" data-pjax id="navItemMob2" onClick="menu.highlightNavigationItems(href)">Team</a>
+             <a href="https://craftingsoftware.com/career" data-pjax id="navItemMob3" onClick="menu.highlightNavigationItems(href)">Career</a>
+             <a href="/" data-pjax id="navItemMob5" onClick="menu.highlightNavigationItems(href)">Blog</a>
+             <a href="https://craftingsoftware.com/contact" data-pjax id="navItemMob4" onClick="menu.highlightNavigationItems(href)">Contact</a>
+           </div>
       
+       </div>
+          
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        
+      <div>		    
+        <img class="navImg" src="/img/header_1366px.png" id="navImg"/>
+              
+      <a href= "https://craftingsoftware.com/" id="navLogo" onclick="https://craftingsoftware.com/';return false;" >
+          <img class="navImg" src="/img/logoCS.svg"; style = top:25px;left:225px;width:15em; height:18em; class="thumbnails" id="navLogo" /> 
+       </a>
+        
+      
+  
+      </div>
+
+
+      </div>
+    
+      
+      <div class = "drop-menu" id="drop-menu-id">
+        
         <div class="navMobileMenu" onclick="main.openNavMobileItems()" id="navMobileMenu">
             <img class='icon' id="navMobileMenuImg" src="/img/menuIcon.svg" style="margin: 0 auto 0 auto">
-         </div>
+        </div>
     
+        <div class="navImg" id="navImg">
+          <img id="navImg" src="/img/logoCS.svg" style="margin: 0 auto 0 auto">
+        </div>
     
-    </div>
-    
-    <div class="collapse navbar-collapse" id="main-nbar">
-       <ul class="right-navbar" style="margin-right: 20em;">
-	      
-	     
-	      <div class="navBar" id="navBar">   
-
-
-	       <div id="navItems" class="navItems">
-    		 <a href="https://craftingsoftware.com/" data-pjax="" id="navItem1" style="opacity: 1;">About</a>
-    		 <a href="https://craftingsoftware.com/team" data-pjax="" id="navItem2" style="opacity: 1;">Team</a>
-     		 <a href="https://craftingsoftware.com/career" data-pjax="" id="navItem3" style="opacity: 1;">Career</a>
-     		 <a href="/" data-pjax="" id="navItem4" style="opacity: 1;">Blog</a>
-     		 <a href="https://craftingsoftware.com/contact" data-pjax="" id="navItem5" style="opacity: 1;">Contact</a>
-          </div>    
-          
+      </div>
          
-
-         <div style="z-index:-1; visibility: hidden;" id="navMobileItems" onclick="main.openNavMobileItems()">
-           <a href="https://craftingsoftware.com/" data-pjax id="navItemMob1" onClick="App.highlightNavigationItems(href)">About</a>
-           <a href="https://craftingsoftware.com/team" data-pjax id="navItemMob2" onClick="App.highlightNavigationItems(href)">Team</a>
-           <a href="https://craftingsoftware.com/career" data-pjax id="navItemMob3" onClick="App.highlightNavigationItems(href)">Career</a>
-           <a href="/" data-pjax id="navItemMob5" onClick="App.highlightNavigationItems(href)">Blog</a>
-           <a href="https://craftingsoftware.com/contact" data-pjax id="navItemMob4" onClick="App.highlightNavigationItems(href)">Contact</a>
-         </div>
-
-	      </div>
-	      
-	{% for link in site.navbar-links %}
-        {% if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-			  
-            <div class="navlinks-children">
-              {% for childlink in link[1] %}
-                {% for linkparts in childlink %}
-                  {% include navbarlink.html link=linkparts %}
+          
+    {% for link in site.navbar-links %}
+          {% if link[1].first %}
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
+          
+              <div class="navlinks-children">
+                {% for childlink in link[1] %}
+                  {% for linkparts in childlink %}
+                    {% include navbarlink.html link=linkparts %}
+                  {% endfor %}
                 {% endfor %}
-              {% endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li>
-            {% include navbarlink.html link=link %}
-	
-          </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
+              </div>
+            </li>
+          {% else %}
+            <li>
+              {% include navbarlink.html link=link %}
+    
+            </li>
+          {% endif %}
+          {% endfor %}
+  
+  
+    {% if page.image and (layout.show-avatar or page.show-avatar) %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ site.url }}">
+          <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
+      </a>
+      </div>
     </div>
+    {% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ site.url }}">
+          <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
+      </a>
+      </div>
+    </div>
+    {% endif %}
+  
+    </div>
+  
+  
+    
+  </nav>
 
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }}">
-	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }}">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
 
-  </div>
-</nav>
+
+
+</body>
+
+</html>

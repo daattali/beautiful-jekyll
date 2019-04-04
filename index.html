@@ -1,60 +1,249 @@
----
-layout: page
-title:  
-subtitle:  
-use-site-title: false
----
-<div class="articles">
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+ 
+ <head>
+    
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Crafting Software Innovation</title>
+
+  <meta name="author" content="Crafting Software" />
+
+  
+
+  <script src="/js/main.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Crafting Software Innovation - " href="/feed.xml" />
+
+  
+
+  
+
+  
+
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Crafting Software Innovation" />
+  
+
+   
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {% if post.image %} {% endif %} {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count =...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://0.0.0.0:4000/" />
+  <link rel="canonical" href="http://0.0.0.0:4000/" />
+  
+
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Crafting Software Innovation" />
+  
+
+  
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {% if post.image %} {% endif %} {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count =...">
+  
+
+  
+
+  
+
+  
+
+</head>
+
+
+      <link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png"/>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script> 
+
+  <body id="body">
+
+      <div class = "drop-menu" id="drop-menu-id">
+      
+          <div class="navMobileMenu" onclick="main.openNavMobileItems()" id="navMobileMenu">
+              <img class='icon' id="navMobileMenuImg" src="/img/menuIcon.svg" style="margin: 0 auto 0 auto">
+           </div>
+      
+      
+      </div>  
+	
+  
+        
+
+
+
+
+     
+    
+
+  
+    <nav class="navbar navbar-default navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	    
+    <div>		    
+      <img class="navImg" src="/img/header_1366px.png" id="navImg"/>
+            
+	  <a href= "https://craftingsoftware.com/" id="navLogo" onclick="https://craftingsoftware.com/';return false;" >
+    		<img class="navImg" src="/img/logoCS.svg"; style = top:25px;left:225px;width:15em; height:18em; class="thumbnails" id="navLogo" /> 
+	   </a>
+	    
+	  
+
+    </div>
+	    
+	         
+ 
+      
+  
+
+	     
+	      <div class="navBar" id="navBar">   
+
+
+	       <div id="navItems" class="navItems" style="position:absolute; right: 4em; top: 3em;  z-index:1;">
+    		 <a href="https://craftingsoftware.com/" data-pjax="" id="navItem1" onClick="menu.highlightNavigationItems(href)" style="opacity: 1;">About</a>
+    		 <a href="https://craftingsoftware.com/team" data-pjax="" id="navItem2" onClick="menu.highlightNavigationItems(href)" style="opacity: 1;">Team</a>
+     		 <a href="https://craftingsoftware.com/career" data-pjax="" id="navItem3" onClick="menu.highlightNavigationItems(href)" style="opacity: 1;">Career</a>
+     		 <a href="/" data-pjax="" id="navItem4" onClick="menu.highlightNavigationItems(href)" style="opacity: 1;">Blog</a>
+     		 <a href="https://craftingsoftware.com/contact" data-pjax="" id="navItem5" onClick="menu.highlightNavigationItems(href)" style="opacity: 1;">Contact</a>
+          </div>    
+          
+         
+
+         <div style="z-index:-1; visibility: hidden;" id="navMobileItems" onclick="main.openNavMobileItems()">
+           <a href="https://craftingsoftware.com/" data-pjax id="navItemMob1" onClick="menu.highlightNavigationItems(href)">About</a>
+           <a href="https://craftingsoftware.com/team" data-pjax id="navItemMob2" onClick="menu.highlightNavigationItems(href)">Team</a>
+           <a href="https://craftingsoftware.com/career" data-pjax id="navItemMob3" onClick="menu.highlightNavigationItems(href)">Career</a>
+           <a href="/" data-pjax id="navItemMob5" onClick="menu.highlightNavigationItems(href)">Blog</a>
+           <a href="https://craftingsoftware.com/contact" data-pjax id="navItemMob4" onClick="menu.highlightNavigationItems(href)">Contact</a>
+         </div>
+
+	      </div>
+	      
+      <a class="navbar-brand" href="http://0.0.0.0:4000"></a>
+      
+    </div>
+    <div class = "drop-menu" id="drop-menu-id">
+      
+        <div class="navMobileMenu" onclick="main.openNavMobileItems()" id="navMobileMenu">
+            <img class='icon' id="navMobileMenuImg" src="/img/menuIcon.svg" style="margin: 0 auto 0 auto">
+         </div>
+   
+    
+    </div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+<div class="intro-header"></div>
+
+
+
+<div class="all_pages" id="container_id"  onload="consoleFunction()" style="margin-top: 15em;"> 
+   
+  <div class="container" role="main" >
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="articles">
 	
 <div class="posts-list">
-  {% for post in paginator.posts %}
+  
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+    <a href="/2015-02-28-test-markdown/">
+	  <h2 class="post-title">Test markdown</h2>
 
-	  {% if post.subtitle %}
+	  
 	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
+	    Each post also has a subtitle
 	  </h3>
-	  {% endif %}
+	  
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Posted on February 28, 2015
     </p>
 
     <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
+      
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+        You can write regular markdown here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.
+
+
+        
+        
+          <a href="/2015-02-28-test-markdown/" class="post-read-more">[Read&nbsp;More]</a>
+        
       </div>
     </div>
 
-    {% if post.tags.size > 0 %}
+    
     <div class="blog-tags">
       Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
+      
+      
+      <a href="/tags#test">test</a>
+      
+      
     </div>
-    {% endif %}
+    
 
    </article>
-  {% endfor %}
+  
 		
             
         </div>
@@ -65,3 +254,76 @@ use-site-title: false
 
 
 </div>
+
+	    
+	   
+      </div>
+
+    
+	     <div class="iframe-container" >
+	          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftingsoftware%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1994256344182739" 
+            width="500" height="500" scrolling="no" frameborder="0" allowTransparency="true" 
+            allow="encrypted-media" >
+		        </iframe>  
+	     </div>	  
+	  </div>   
+	
+    <div class='footer'>
+      <div style="background-color: rgba(0,0,0, .03)" >
+      <div class='footerContent' id='footerContent' style="display: 
+			flex; flex-direction:row-reverse; height:14em; margin: 0 auto; max-width: 110em;">
+        <div class='address'>
+          <span>Central Park Residence, 68 Plopilor St, Cluj-Napoca, CJ 400383, Romania</span>
+          <div>
+            <span class='dark'>contact@craftingsoftware.com</span>
+            <a href="tel:+40745 617 142" class='dark'>+40745 617 142</a>
+          </div>
+        </div>
+        <div class='social'>
+          <img id = "craftingLogoColor_id" src="/img/craftingLogoColor.svg">
+          <div class='social-icons'>
+            <a target="_blank" href="https://www.facebook.com/craftingsoftware/"> <img class='icon' src="/img/facebookDark.svg"> </a>
+            <a target="_blank" href="https://www.linkedin.com/in/crafting-software-a69694153/"> <img class='icon' src="/img/linkedinDark.svg"> </a>
+          </div>
+        </div>
+        <div class='navItemsDesktop' style="width: 300px; margin-left:-5em;">
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/" data-pjax>About</a>
+          </div>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/team" data-pjax>Team</a>
+          </div>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/career" data-pjax>Career</a>
+          </div>
+           <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://andreeadociu.github.io" data-pjax>Blog</a>
+          </div>
+          <div class='navItemDesktop'>
+            <img class='navIcon' src="/img/right-arrow.svg">
+            <a href="https://craftingsoftware.com/contact" data-pjax>Contact</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class='copyright'>
+        <span>© 2018 Crafting Software. All rights reserved.</span>
+      </div>
+    </div>
+      
+      
+	  
+    </div>
+  </div>
+	
+
+
+       
+
+    <script type="text/javascript" src="../js/iframeResizer.contentWindow.min.js"></script>
+  </body>
+</html>

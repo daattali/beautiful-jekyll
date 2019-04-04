@@ -30,21 +30,109 @@ function fadeOnScroll() {
 });
 }
 
+function getFixedNavigationBar(navBar, navImg, navLogo, navItems, navMobileMenu) {
+  navBar.style.position = "fixed";
+  navBar.style.height = "4em";
+  navBar.style.opacity = "0.9";
+  navBar.style.backgroundColor = "black";
+
+  navImg.style.display = "none";
+
+  navLogo.src = "/img/logo.svg";
+
+  navBar.classList.add('slideDown');
+  navLogo.classList.add("slideDownItems");
+  navItems.classList.add("slideDownItems3");
+  navMobileMenu.classList.add("slideDownItems2");
+}
+
+function getTopNavigatioBar(body, navBar, navImg, navLogo, navItems, navMobileMenu) {
+  navBar.style.position = "absolute";
+  navBar.style.opacity = "1";
+  navBar.style.backgroundColor = "transparent";
+
+  navLogo.src = "/img/logoCS.svg";
+  navImg.style.display = "flex";
+
+  navBar.className = "navBar";
+  navLogo.className = "navLogo";
+  navItems.className = "navItems";
+  navMobileMenu.className = "navMobileMenu";
+}
+
+function scroll() {
+  var body = document.getElementById("body").offsetWidth;
+  var windowHeight = $(window).height();
+  // Team
+  var teamTitleHeight = $("#teamPage").height();
+  var teamMemberProfileHeight = $(".member-profile").height();
+  var teamMaxHeight = teamTitleHeight + teamMemberProfileHeight * 2 + windowHeight * 0.06;
+  // Career
+  var careerTitleHeight = $(".career-page-title").height();
+  var careerPositionsHeight = $("#positionsHeight").height();
+  var careerMaxHeight = careerTitleHeight + careerPositionsHeight + 115;
+
+  var navBar = document.getElementById("navBar");
+  var navImg = document.getElementById("navImg");
+
+  if (isCurrentUrl("team")) {
+    if ((document.body.scrollTop > teamMaxHeight || document.documentElement.scrollTop > teamMaxHeight) && $('.mobile-profile').html() == "") {
+      getFixedNavigationBar(navBar, navImg, navLogo, navItems, navMobileMenu);
+    } else {
+      getTopNavigatioBar(body, navBar, navImg, navLogo, navItems, navMobileMenu);
+    }
+  } else if (isCurrentUrl("career")) {
+    if (document.body.scrollTop > careerMaxHeight || document.documentElement.scrollTop > careerMaxHeight) {
+      getFixedNavigationBar(navBar, navImg, navLogo, navItems, navMobileMenu);
+    } else {
+      getTopNavigatioBar(body, navBar, navImg, navLogo, navItems, navMobileMenu);
+    }
+  } else {
+    if (document.body.scrollTop > windowHeight || document.documentElement.scrollTop > windowHeight) {
+      getFixedNavigationBar(navBar, navImg, navLogo, navItems, navMobileMenu);
+    } else {
+      getTopNavigatioBar(body, navBar, navImg, navLogo, navItems, navMobileMenu);
+    }
+  }
+}
+
+
 
 var main = {
 
   bigImgEl : null,
   numImgs : null,
 
+  highlightNavigationItems: function highlightNavigationItems(docHref) {
+    var navItems = $(".navItems a");
+    var navMobileItems = $("#navMobileItems a");
+    for (var i = 0; i < navItems.length; i++) {
+      if (navItems[i].href == docHref || navMobileItems[i].href == docHref) {
+        $(navItems[i]).css("opacity", "1");
+        $(navMobileItems[i]).css("opacity", "1");
+      } else {
+        $(navItems[i]).css("opacity", "0.7");
+        $(navMobileItems[i]).css("opacity", "0.7");
+      }
+    }
+    if (isCurrentUrl("team")) {
+      configPopups();
+    }
+  },
+
   openNavMobileItems: function openNavMobileItems() {
-    //var currentURL = window.location.href;
-    //var body = document.getElementById("body").offsetWidth;
-    var element = $("#navLogo")
-    var windowHeight = $(document).height();
+    var currentURL = window.location.href;
+    var body = document.getElementById("body").offsetWidth;
+    var windowHeight = $(window).height();
+
+   // var element = $("#navLogo")
+
+
     // Team
     var teamTitleHeight = $("#teamPage").height();
     var teamMemberProfileHeight = $(".member-profile").height();
     var teamMaxHeight = teamTitleHeight + teamMemberProfileHeight * 2 + windowHeight * 0.06;
+
     // Career
     var careerTitleHeight = $(".career-page-title").height();
     var careerPositionsHeight = $("#positionsHeight").height();
@@ -53,10 +141,11 @@ var main = {
     var display = document.getElementById("navMobileItems");
 
     if (display.style.zIndex === "1") {
+      console.log("@@@@@@@@@@@@@@@@@@");
       display.style.zIndex = "-1";
       display.style.visibility = "hidden";
       display.className = display.className.replace(/\bnavMobileItems\b/g, "");
-     // document.getElementById("body").style.overflowY = "visible";
+      document.getElementById("body").style.overflowY = "visible";
       document.getElementById('navImg').className = "navImg";
       document.getElementById('navItemMob1').className = "";
       document.getElementById('navItemMob2').className = "";
@@ -67,23 +156,30 @@ var main = {
         || document.documentElement.scrollTop > teamMaxHeight) || isCurrentUrl("career") 
         && (document.body.scrollTop > careerMaxHeight || document.documentElement.scrollTop > careerMaxHeight) 
         || !isCurrentUrl("team") && !isCurrentUrl("career") && (document.body.scrollTop > windowHeight 
-        || document.documentElement.scrollTop > windowHeight)) {
+        || document.documentElement.scrollTop > windowHeight)) { 
         document.getElementById('navBar').style.backgroundColor = "black";
-      } else {
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+       } else {
         document.getElementById('navBar').style.backgroundColor = "transparent";
       }
     } else {
+      
       display.style.zIndex = "1";
       display.style.visibility = "visible";
+      console.log("#############################", display.style.visibility);
       display.className += "navMobileItems";
       document.getElementById('navImg').classList.add("navMobileMenuAnimation");
       document.getElementById('navItemMob1').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob2').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob3').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob4').classList.add("navMobileMenuAnimationItems");
+      document.getElementById('navItemMob5').classList.add("navMobileMenuAnimationItems");
       document.getElementById("body").style.overflowY = "hidden";
-      document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
+      //document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
       document.getElementById('navBar').style.backgroundColor = "transparent";
+      document.getElementById("navLogo").src = "/img/logoCS.svg";
+      
+      document.getElementById("body").style.overflowY = "hidden";
     }
   },
 
