@@ -1,33 +1,31 @@
-// Dean Attali / Beautiful Jekyll 2016
 function isCurrentUrl(incomingURL) {
 
   var currentURL = window.location.href;
 
   var lastStringURLDimension = -incomingURL.length;
-                    
-  return currentURL.trim().slice(lastStringURLDimension) === incomingURL ;
+
+  return currentURL.trim().slice(lastStringURLDimension) === incomingURL;
 }
 
 function fadeOnScroll() {
   var windowHeight = $('.homeContainer').height();
-
   if (!isCurrentUrl("team") && !isCurrentUrl("contact") && !isCurrentUrl("career"))
     $(window).scroll(function (event) {
-    var scrollValue = $(window).scrollTop();
-    if (scrollValue < 1000) {
-      var padding = scrollValue/20;
-      var homeTypographyOpacity = 1 - scrollValue / (windowHeight*0.75);
-      
-      $('.homeTypography').css('opacity', homeTypographyOpacity);
-      $('.homeTypography').css('padding-top', '' + padding + 'em');
-      if (homeTypographyOpacity < 0) {
-        $('.homeTypography').css('visibility','hidden'); 
+      var scrollValue = $(window).scrollTop();
+      if (scrollValue < 1000) {
+        var padding = scrollValue / 20;
+        var homeTypographyOpacity = 1 - scrollValue / (windowHeight * 0.75);
+
+        $('.homeTypography').css('opacity', homeTypographyOpacity);
+        $('.homeTypography').css('padding-top', '' + padding + 'em');
+        if (homeTypographyOpacity < 0) {
+          $('.homeTypography').css('visibility', 'hidden');
+        }
+        else {
+          $('.homeTypography').css('visibility', 'visible');
+        }
       }
-      else {
-        $('.homeTypography').css('visibility','visible');
-      }
-    }
-});
+    });
 }
 
 function getFixedNavigationBar(navBar, navImg, navLogo, navItems, navMobileMenu) {
@@ -37,7 +35,6 @@ function getFixedNavigationBar(navBar, navImg, navLogo, navItems, navMobileMenu)
   navBar.style.backgroundColor = "black";
 
   navImg.style.display = "none";
-
   navLogo.src = "/img/logo.svg";
 
   navBar.classList.add('slideDown');
@@ -96,12 +93,9 @@ function scroll() {
   }
 }
 
-
-
 var main = {
-
-  bigImgEl : null,
-  numImgs : null,
+  bigImgEl: null,
+  numImgs: null,
 
   highlightNavigationItems: function highlightNavigationItems(docHref) {
     var navItems = $(".navItems a");
@@ -125,9 +119,6 @@ var main = {
     var body = document.getElementById("body").offsetWidth;
     var windowHeight = $(window).height();
 
-   // var element = $("#navLogo")
-
-
     // Team
     var teamTitleHeight = $("#teamPage").height();
     var teamMemberProfileHeight = $(".member-profile").height();
@@ -141,7 +132,6 @@ var main = {
     var display = document.getElementById("navMobileItems");
 
     if (display.style.zIndex === "1") {
-      console.log("@@@@@@@@@@@@@@@@@@");
       display.style.zIndex = "-1";
       display.style.visibility = "hidden";
       display.className = display.className.replace(/\bnavMobileItems\b/g, "");
@@ -152,21 +142,18 @@ var main = {
       document.getElementById('navItemMob3').className = "";
       document.getElementById('navItemMob4').className = "";
       document.getElementById("navMobileMenuImg").src = "/img/menuIcon.svg";
-      if (isCurrentUrl("team") && (document.body.scrollTop > teamMaxHeight 
-        || document.documentElement.scrollTop > teamMaxHeight) || isCurrentUrl("career") 
-        && (document.body.scrollTop > careerMaxHeight || document.documentElement.scrollTop > careerMaxHeight) 
-        || !isCurrentUrl("team") && !isCurrentUrl("career") && (document.body.scrollTop > windowHeight 
-        || document.documentElement.scrollTop > windowHeight)) { 
+      if (isCurrentUrl("team") && (document.body.scrollTop > teamMaxHeight
+        || document.documentElement.scrollTop > teamMaxHeight) || isCurrentUrl("career")
+        && (document.body.scrollTop > careerMaxHeight || document.documentElement.scrollTop > careerMaxHeight)
+        || !isCurrentUrl("team") && !isCurrentUrl("career") && (document.body.scrollTop > windowHeight
+          || document.documentElement.scrollTop > windowHeight)) {
         document.getElementById('navBar').style.backgroundColor = "black";
-        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-       } else {
+      } else {
         document.getElementById('navBar').style.backgroundColor = "transparent";
       }
     } else {
-      
       display.style.zIndex = "1";
       display.style.visibility = "visible";
-      console.log("#############################", display.style.visibility);
       display.className += "navMobileItems";
       document.getElementById('navImg').classList.add("navMobileMenuAnimation");
       document.getElementById('navItemMob1').classList.add("navMobileMenuAnimationItems");
@@ -175,25 +162,23 @@ var main = {
       document.getElementById('navItemMob4').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob5').classList.add("navMobileMenuAnimationItems");
       document.getElementById("body").style.overflowY = "hidden";
-      //document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
       document.getElementById('navBar').style.backgroundColor = "transparent";
       document.getElementById("navLogo").src = "/img/logoCS.svg";
-      
+
       document.getElementById("body").style.overflowY = "hidden";
     }
   },
 
-
-  init : function() {
+  init: function () {
     // Shorten the navbar after scrolling a little bit down
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeOut(500);
-        } else {
-            $(".navbar").removeClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeIn(500);
-        }
+    $(window).scroll(function () {
+      if ($(".navbar").offset().top > 50) {
+        $(".navbar").addClass("top-nav-short");
+        $(".navbar-custom .avatar-container").fadeOut(500);
+      } else {
+        $(".navbar").removeClass("top-nav-short");
+        $(".navbar-custom .avatar-container").fadeIn(500);
+      }
     });
 
     // On mobile, hide the avatar when expanding the navbar menu
@@ -205,9 +190,9 @@ var main = {
     });
 
     // On mobile, when clicking on a multi-level navbar menu, show the child links
-    $('#main-navbar').on("click", ".navlinks-parent", function(e) {
+    $('#main-navbar').on("click", ".navlinks-parent", function (e) {
       var target = e.target;
-      $.each($(".navlinks-parent"), function(key, value) {
+      $.each($(".navlinks-parent"), function (key, value) {
         if (value == target) {
           $(value).parent().toggleClass("show-children");
         } else {
@@ -215,8 +200,6 @@ var main = {
         }
       });
     });
-
-  
 
     // Ensure nested navbar menus are not longer than the menu header
     var menus = $(".navlinks-container");
@@ -226,15 +209,15 @@ var main = {
       navbar.append(fakeMenuHtml);
       var fakeMenu = $(".fake-menu");
 
-      $.each(menus, function(i) {
+      $.each(menus, function (i) {
         var parent = $(menus[i]).find(".navlinks-parent");
         var children = $(menus[i]).find(".navlinks-children a");
         var words = [];
-        $.each(children, function(idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
+        $.each(children, function (idx, el) { words = words.concat($(el).text().trim().split(/\s+/)); });
         var maxwidth = 0;
-        $.each(words, function(id, word) {
+        $.each(words, function (id, word) {
           fakeMenu.html("<a>" + word + "</a>");
-          var width =  fakeMenu.width();
+          var width = fakeMenu.width();
           if (width > maxwidth) {
             maxwidth = width;
           }
@@ -244,80 +227,76 @@ var main = {
 
       fakeMenu.remove();
     }
-
-    // show the big header image
     main.initImgs();
   },
 
-  initImgs : function() {
+  initImgs: function () {
     // If the page was large images to randomly select from, choose an image
     if ($("#header-big-imgs").length > 0) {
       main.bigImgEl = $("#header-big-imgs");
       main.numImgs = main.bigImgEl.attr("data-num-img");
 
-          // 2fc73a3a967e97599c9763d05e564189
-	  // set an initial image
-	  var imgInfo = main.getImgInfo();
-	  var src = imgInfo.src;
-	  var desc = imgInfo.desc;
-  	  main.setImg(src, desc);
+      // 2fc73a3a967e97599c9763d05e564189
+      // set an initial image
+      var imgInfo = main.getImgInfo();
+      var src = imgInfo.src;
+      var desc = imgInfo.desc;
+      main.setImg(src, desc);
 
-	  // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-  	  var getNextImg = function() {
-	    var imgInfo = main.getImgInfo();
-	    var src = imgInfo.src;
-	    var desc = imgInfo.desc;
+      // For better UX, prefetch the next image so that it will already be loaded when we want to show it
+      var getNextImg = function () {
+        var imgInfo = main.getImgInfo();
+        var src = imgInfo.src;
+        var desc = imgInfo.desc;
 
-		var prefetchImg = new Image();
-  		prefetchImg.src = src;
-		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
+        var prefetchImg = new Image();
+        prefetchImg.src = src;
+        // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
-  		setTimeout(function(){
-                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
-  		  $(".intro-header.big-img").prepend(img);
-  		  setTimeout(function(){ img.css("opacity", "1"); }, 50);
+        setTimeout(function () {
+          var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
+          $(".intro-header.big-img").prepend(img);
+          setTimeout(function () { img.css("opacity", "1"); }, 50);
 
-		  // after the animation of fading in the new image is done, prefetch the next one
-  		  //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-		  setTimeout(function() {
-		    main.setImg(src, desc);
-			img.remove();
-  			getNextImg();
-		  }, 1000);
-  		  //});
-  		}, 6000);
-  	  };
+          // after the animation of fading in the new image is done, prefetch the next one
+          //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+          setTimeout(function () {
+            main.setImg(src, desc);
+            img.remove();
+            getNextImg();
+          }, 1000);
+          //});
+        }, 6000);
+      };
 
-	  // If there are multiple images, cycle through them
-	  if (main.numImgs > 1) {
-  	    getNextImg();
-	  }
+      // If there are multiple images, cycle through them
+      if (main.numImgs > 1) {
+        getNextImg();
+      }
     }
   },
 
-  getImgInfo : function() {
-  	var randNum = Math.floor((Math.random() * main.numImgs) + 1);
+  getImgInfo: function () {
+    var randNum = Math.floor((Math.random() * main.numImgs) + 1);
     var src = main.bigImgEl.attr("data-img-src-" + randNum);
-	var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
+    var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
 
-	return {
-	  src : src,
-	  desc : desc
-	}
+    return {
+      src: src,
+      desc: desc
+    }
   },
 
-  setImg : function(src, desc) {
-	$(".intro-header.big-img").css("background-image", 'url(' + src + ')');
-	if (typeof desc !== typeof undefined && desc !== false) {
-	  $(".img-desc").text(desc).show();
-	} else {
-	  $(".img-desc").hide();
-	}
+  setImg: function (src, desc) {
+    $(".intro-header.big-img").css("background-image", 'url(' + src + ')');
+    if (typeof desc !== typeof undefined && desc !== false) {
+      $(".img-desc").text(desc).show();
+    } else {
+      $(".img-desc").hide();
+    }
   }
-
 
 }
 
 // 2fc73a3a967e97599c9763d05e564189
-
 document.addEventListener('DOMContentLoaded', main.init);

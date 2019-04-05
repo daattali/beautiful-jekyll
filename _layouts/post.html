@@ -8,74 +8,64 @@ layout: base
   }
 </script>
 
-<div class="all_pages" id="container_id2"> 
-
-
-<div class="container">
+<div class="all_pages" id="container_id2">
+  <div class="container">
     {% include header.html type="post" %}
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
- 
-
-      <article role="main" class="blog-post">
-        {{ content }}
-      </article>
-
-      {% if page.tags.size > 0 %}
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <article role="main" class="blog-post">
+          {{ content }}
+        </article>
+        {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags:
           {% if site.link-tags %}
           {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags45#{{- tag -}}">{{- tag -}}</a>
+          <a href="{{ site.baseurl }}/tags45#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
           {% else %}
-            {{ page.tags | join: ", " }}
+          {{ page.tags | join: ", " }}
           {% endif %}
         </div>
-      {% endif %}
+        {% endif %}
 
-      {% if page.social-share %}
+        {% if page.social-share %}
         {% include social-share.html %}
-      {% endif %}
-
-      <ul class="pager blog-pager">
-        {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-        </li>
         {% endif %}
-        {% if page.next.url %}
-        <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-        </li>
-        {% endif %}
-      </ul>
 
-      {% if page.comments %}
+        <ul class="pager blog-pager">
+          {% if page.previous.url %}
+          <li class="previous">
+            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+              data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
+          </li>
+          {% endif %}
+          {% if page.next.url %}
+          <li class="next">
+            <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+              data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
+          </li>
+          {% endif %}
+        </ul>
+
+        {% if page.comments %}
         <div class="disqus-comments">
           {% include disqus.html %}
         </div>
-          {% include fb-comment.html %}
+        {% include fb-comment.html %}
         <div class="staticman-comments">
           {% include staticman-comments.html %}
         </div>
-      {% endif %}
+        {% endif %}
+      </div>
     </div>
   </div>
 
-
+  <div class="iframe-container">
+    <iframe
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftingsoftware%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1994256344182739"
+      width="500" height="500"  scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" >
+    </iframe>
+  </div>
 
 </div>
-
-
-<div class="iframe-container">
-  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftingsoftware%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1994256344182739" 
-   width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" 
-  allow="encrypted-media" style="position: relative; right: 100px;" >
-  </iframe>  
-</div>	  
-
-</div>	
-
-

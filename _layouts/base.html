@@ -1,53 +1,31 @@
 ---
 common-css:
-  - "/css/bootstrap.min.css"
-  - "/css/bootstrap-social.css"
-  - "/css/main.css"
+- "/css/bootstrap.min.css"
+- "/css/bootstrap-social.css"
+- "/css/main.css"
 common-ext-css:
-  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+- "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
-  - "Lora:400,700,400italic,700italic"
-  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+- "Lora:400,700,400italic,700italic"
+- "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
 common-js:
-  - "/js/jquery-1.11.2.min.js"
-  - "/js/bootstrap.min.js"
-  - "/js/main.js"
+- "/js/jquery-1.11.2.min.js"
+- "/js/bootstrap.min.js"
+- "/js/main.js"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
- 
- {% include head.html %}
+{% include head.html %}
+<link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
 
-      <link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png"/>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script> 
+<body>
+  {% include gtm_body.html %}
+  {% include nav.html %}
+  {{ content }}
+  <script type="text/javascript" src="../js/iframeResizer.contentWindow.min.js"></script>
+</body>
 
-  <body>
-
-      <div class = "drop-menu" id="drop-menu-id">
-      
-          <div class="navMobileMenu" onclick="main.openNavMobileItems()" id="navMobileMenu">
-              <img class='icon' id="navMobileMenuImg" src="/img/menuIcon.svg" style="margin: 0 auto 0 auto">
-           </div>
-      
-           <div class="navImg" id="navImg">
-            <img id="navImg" src="/img/logoCS.svg" style="margin: 0 auto 0 auto">
-         </div>
-      
-      </div>  
-	
-  
-        
-         
-    {% include gtm_body.html %}
-  
-    {% include nav.html %}
-
-    {{ content }}
-       
-
-    <script type="text/javascript" src="../js/iframeResizer.contentWindow.min.js"></script>
-  </body>
 </html>
