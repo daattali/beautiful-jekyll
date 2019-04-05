@@ -21,10 +21,8 @@ The **approximate** timeline is below, followed by additional detail on each eve
 | [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2019  |
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 15, 2019 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | March 15, 2019  |
-| [Kickoff meetings](#kickoff-meetings)    | April 1 - April 15, 2019 |
-| [Phase 1: student proposals](#student-proposals) |  May 5, 2019 |
-| [Phase 2: project development](#project-development-stage) | May 5 - June 20, 2019   |
-| [Student presentations](#project-presentations) | June 15 - June 25, 2019 |
+| [Kickoff meetings](#kickoff-meetings)    | April 1 - April 19, 2019 |
+| [Project](#project) | April 23 - June 27, 2019 |
 
 #### Proposal revision process
 
@@ -75,25 +73,6 @@ Based on student interest, the MDS leadership team assigns student groups to the
 
 The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project.
 
-#### Student proposal stage
+#### Project
 
-Students propose the data product and approach.
-
-  1. The student team works with each other, colleagues, and teaching fellows to develop an approach in a 2-day hackathon.
-  2. Students present the proposal at UBC, to solicit ideas and feedback.
-  3. Students write the proposal. This will be passed to the capstone partner to check that the proposed product is indeed in line with the capstone partner's needs.
-
-#### Project development stage
-
-Students develop the data product. This involves:
-
-  - Regular meetings with the teaching fellow mentor.
-  - Regular meetings with the capstone partner.
-
-#### Project presentations
-
-Towards the end of June, students present their project in the following settings:
-
-  - To their classmates at UBC (graded by the project mentors).
-  - At their partner organization.
-  - At an end-of-program celebration at UBC.
+The project itself. At the end, partners can expect the students to present at the partner organizations. Partners will also be invited to an end-of-program celebration at UBC.
