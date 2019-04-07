@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: How did I become a developer?
+subtitle: My journey be become a web developer without IT degree.
+tags: [random, journey]
 comments: true
 ---
 
@@ -30,7 +28,7 @@ How about a yummy crepe?
 
 Here's a code chunk:
 
-~~~
+~~~javascript
 var foo = function(x) {
   return(x + 5);
 }
