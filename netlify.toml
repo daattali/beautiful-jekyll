@@ -1,0 +1,41 @@
+[build]
+  command = "jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+
+# REDIRECT and HEADERS examples.
+# Uncomment to use. Directives in this file will ALWAYS override any identical
+# directives present in either _redirects and _headers files, and also any
+# settings added in Netlify's admin interface.
+
+# Redirects and headers are GLOBAL for all builds – they do not get scoped to
+# contexts no matter where you define them in the file.
+# For context-specific rules, use _headers or _redirects files, which are
+# applied PER-DEPLOY.
+
+# For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
+
+# Redirect rule example
+
+#[[redirects]]
+#  from = "/*"
+#  to = "/blog/:splat"
+
+# The default HTTP status code is always 301, but you can define a different
+# one e.g. status = 302
+
+# Headers rule example
+# For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
+
+#[[headers]]
+#   Define which paths this specific [[headers]] block will cover.
+#   for = "/*"
+
+#[headers.values]
+#   X-Frame-Options = "DENY"
+#   X-XSS-Protection = "1; mode=block"
+#   Content-Security-Policy = "frame-ancestors https://www.facebook.com"
+
+# For more information see:- https://www.netlify.com/docs/netlify-toml-reference/

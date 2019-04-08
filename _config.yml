@@ -189,6 +189,7 @@ link-tags: true
 
 # Exclude these files from production site
 exclude:
+  - vendor
   - CHANGELOG.md
   - CNAME
   - Dockerfile
