@@ -63,6 +63,8 @@ Let's return to the example weather data above, which is "1D data" (despite bein
 ### Concluding thoughts
 
 The three points above summarize my main ideas about teaching CNNs. I also have developed some smaller strategies, like setting the padding parameter such that the size of the hidden representation does not change after passing through a convolutional layer. If you're interested, you can check out this and more in my lecture [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). So far I have given this lecture twice, and it seems to have been effective. Perhaps someone will find it useful!
+
+
 --------
 
 [Mike Gelbart](https://www.mikegelbart.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Computer Science.
