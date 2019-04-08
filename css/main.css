@@ -181,11 +181,11 @@ hr.small {
     margin: auto;
   }
   .navItems {
-    position: absolute !important;
-    top: 40px !important;
-    left: 400px !important;
-    right: 0px !important;
-  }
+    position: absolute; 
+    top: 40px; 
+    left: 400px; 
+    right: 0px; 
+  } 
 }
 @media only screen and (min-width: 2680px) {
   .navItems {
@@ -295,13 +295,6 @@ hr.small {
     display: block;
     margin: auto;
   }
-  .iframe-container {
-    margin-left: 6em;
-    height: 500;
-    width: 500;
-  }
-}
-@media only screen and (max-width: 1260px) {
   #container_id2 {
     display: block;
     margin: auto;
