@@ -23,6 +23,7 @@ description: A personal blog about water-related issues and challenges.
 
 # List of links in the navigation bar
 navbar-links:
+  Blog: "blog"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
@@ -55,7 +56,7 @@ footer-link-col: "#404040"
 # instead of colour
 
 # navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
+# footer-img: "/img/bgimage.png"A personal blog about water-related issues and challenges.pag
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
@@ -77,7 +78,7 @@ social-network-links:
 #  twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
-  linkedin: daattali
+  linkedin: elisiaw
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -91,14 +92,14 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
+  twitter: false
+  facebook: false
   google: false
   linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "sacredaquatics.netlify.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -162,6 +163,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+
+paginate_path: "/blog/page:num/"
 
 kramdown:
   input: GFM

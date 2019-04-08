@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Sacred Aquatics
+title: Blog
 subtitle: A personal blog about water-related issues and challenges.
-use-site-title: true
 ---
 
-<!-- <div class="posts-list">
+<div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -69,4 +68,4 @@ use-site-title: true
   </li>
   {% endif %}
 </ul>
-{% endif %} -->
+{% endif %}
