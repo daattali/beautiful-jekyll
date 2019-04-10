@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog
+title: Sacred Aquatics
 subtitle: A personal blog about water-related issues and challenges.
 ---
 

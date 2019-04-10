@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://username.github.io"
+url: "sacredaquatics.netlify.com"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -163,8 +163,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-
-paginate_path: "/blog/page:num/"
+paginate_path: "blog/page:num"
 
 kramdown:
   input: GFM
