@@ -34,7 +34,7 @@ Again, one can read off the number of parameters from the diagram with relative 
 
 I like these diagrams for several reasons. First off, students are already used to these types of diagrams from learning about fully-connected networks. The main difference here is that _the base operation has changed from multiplication to convolution_. Everything else stays the same: add up the results from each of the arrows to get the result in an output node; apply a bias and a nonlinear activation at each output node; the circles contain hidden representations and the arrows contain learnable parameters; etc. Second, I like these diagrams because they work equally well for the 1D and 2D case, thus creating a framework for illustrating convnets of various types. Contrast this with the row-of-boxes diagram above, which is more specific to 2D. The diagram also clearly differentiates between the hidden representations (circles) and parameters (arrows), unlike the row-of-boxes diagram, which draws them both as boxes.
 
-Note: a former student pointed out that these circle-and-arrow diagrams are really showing the computational graph of the layer, in which the circles are variables and the arrows/edges are computations. Computational graphs are increasingly prevalent in machine learning, for example in the contexts of automatic differentiation and probabilistic programming.
+Another small tangent: a former student pointed out that these circle-and-arrow diagrams are really showing the computational graph of the layer, in which the circles are variables and the arrows/edges are computations. Computational graphs are increasingly prevalent in machine learning, for example in the contexts of automatic differentiation and probabilistic programming.
 
 ### Shape of the data
 
@@ -75,7 +75,7 @@ Here is my answer to the above question: in the first and third cases, I would e
 
 ### Concluding thoughts
 
-The three points above summarize my main ideas about teaching CNNs. I also have developed some smaller strategies, like setting the convolution behaviour hyperparameter such that the inputs and outputs are the same size. If you're interested, you can check out this and more in my lecture [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). So far I have given this lecture twice, and it seems to have been effective. Perhaps someone will find it useful!
+The three points above summarize my main ideas about teaching CNNs. I also have developed some smaller strategies, like setting the convolution behaviour such that the inputs and outputs are the same size, which eliminates an extra potential source of confusion. If you're interested, you can check out this and more in my lecture [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). So far I have given this lecture twice, and it seems to have been effective. Perhaps someone will find it useful!
 
 
 --------
