@@ -8,7 +8,7 @@ When I first learned about convolutional neural networks (also known as CNNs, or
 
 ![](https://cdn-images-1.medium.com/max/1600/1*qyc21qM0oxWEuRaj-XJKcw.png)
 
-I will call this a "row-of-boxes" diagram. In my experience, this type of diagram is common in both CNN papers _and_ CNN teachings, even though the audiences are very different in those two situations. I would argue that row-of-boxes diagrams are targeted at people who already understand CNNs, not students seeing them for the first time. Given the diagram issue and other obstacles, it took me a few iterations to fully understand CNNs when I was a student.
+I will call this a "row-of-boxes" diagram. In my experience, this type of diagram is common in both CNN papers _and_ CNN lessons, even though the audiences are very different in those two contexts. I would argue that row-of-boxes diagrams are targeted at people who already understand CNNs, not students seeing them for the first time. Given the diagram issue and other obstacles, it took me a few iterations to fully understand CNNs when I was a student.
 
 In this post, I will describe my approach for teaching CNNs here in the [UBC MDS program](https://masterdatascience.ubc.ca/), which I am hoping is more clear. A Jupyter notebook implementation of my lesson can be found [here](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). My approach comprises three main principles for teaching CNNs: using circle-and-arrow diagrams, focussing on the shape of the data, and teaching 1D convnets before 2D and beyond. The post is structured around these three ideas.
 
@@ -18,11 +18,11 @@ My first principle is replacing row-of-boxes diagrams with the "circle-and-arrow
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg)
 
-When this diagram represents a fully-connected network, each circle represents a feature (or _channel_ in CNN parlance), and each arrow represents a learnable parameter. We can generalize these diagrams so that each circle (channel) now contains a signal (1D, 2D, etc.) instead of a number, and each arrow now represents a filter (again, 1D, 2D, etc.) instead of a number. Here is an example for a 1D convolutional layer:
+When this diagram represents a fully-connected network, each circle represents a feature (or _channel_ in CNN parlance), and each arrow represents a learnable parameter. We can generalize these diagrams so that each circle (channel) now contains a signal (1D, 2D, etc.) instead of a number, and each arrow now represents a filter (again, 1D, 2D, etc.) instead of a number. Here is an example for a 1D convolutional layer, with the corresponding Keras code at the top:
 
 ![](../img/blog/CNN/Conv1D.png)
 
-The above diagram, one can read off the number of learnable parameters in the layer: 10 arrows, at 3 parameters each, yields 30 params; then, add the 5 biases (one per output circle, just like the fully-connected case) for a total of 35. 
+In the above diagram, one can read off the number of learnable parameters in the layer: 10 arrows, at 3 parameters each, yields 30 params; then, add the 5 biases (one per output circle, just like the fully-connected case) for a total of 35. 
 
 A small tangent: when teaching, I like to emphasize that the number of parameters (of this layer) does not depend on the sequence length, which is 100 in this case. This is a big win for CNNs vs. fully-connected nets: by taking advantage of the structure of the data we limit the number of parameters, thus effectively incorporating our prior knowledge.
 
@@ -30,7 +30,9 @@ Back to the diagrams. We can draw a very similar diagram for a 2D convolutional 
 
 ![](../img/blog/CNN/Conv2D.png)
 
-I like these diagrams for several reasons. First off, students are already used to these types of diagrams from learning about fully-connected networks. The main difference here is that _the base operation has changed from multiplication to convolution_. Everything else stays the same: add up the results from each of the arrows to get the result in an output node; apply a bias and a nonlinear activation at each output node; the circles contain hidden representatinos and the arrows contain learnable parameters; etc. Second, I like these diagrams because they work equally well for the 1D and 2D case, thus creating a framework for illustrating convnets of various types. Contrast this with the row-of-boxes diagram above, which is more specific to 2D. Finally, the diagram clearly differentiates between the hidden representations (circles) and parameters (arrows), unlike the row-of-boxes diagram, which draws them both as boxes. 
+Again, one can read off the number of parameters from the diagram with relative ease; see the right-hand side of the figure.
+
+I like these diagrams for several reasons. First off, students are already used to these types of diagrams from learning about fully-connected networks. The main difference here is that _the base operation has changed from multiplication to convolution_. Everything else stays the same: add up the results from each of the arrows to get the result in an output node; apply a bias and a nonlinear activation at each output node; the circles contain hidden representations and the arrows contain learnable parameters; etc. Second, I like these diagrams because they work equally well for the 1D and 2D case, thus creating a framework for illustrating convnets of various types. Contrast this with the row-of-boxes diagram above, which is more specific to 2D. Finally, the diagram clearly differentiates between the hidden representations (circles) and parameters (arrows), unlike the row-of-boxes diagram, which draws them both as boxes. 
 
 
 ### Shape of the data
@@ -47,7 +49,9 @@ I start the lesson with some synthetic data containing measurements of temperatu
 
 In the discussion, I emphasize that the shape of one training example has gone from a vector (as in the standard supervised learning setup) to a 2D array. In other words, I would say in class, the 2D array above is just one training example, not the entire data set. I believe discussing the data's _shape_ in this way is very powerful when teaching CNNs. If you look through the [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb), you'll see a slow progression: first, applying a single convolutional layer with one feature, then multiple features, then multiple training examples, then multiple layers, and finally the idea of flattening the hidden representation before applying a fully-connected layer at the end. For each case, we carefully examine the shape of the hidden representation and also the shape of the weights, identifying the meaning of the different dimensions in any multidimensional array. For example, with a 1D convolutional layer, the hidden representations are 3D arrays (number of examples by length of sequence by number of features) and the weights are also 3D arrays (length of filters by number of input channels by number of output channels).  
 
-Returning to the data table above, I also emphasize that the two dimensions are not interchangeable: the rows constitute an _ordered_ or _structured_ dimension, whereas the columns are an unordered set of features. This helps students establish a framework for thinking about the multidimensional arrays, by classifying the dimensions in this way. 
+Returning to the data table above, I also emphasize that the two dimensions are not interchangeable: the rows constitute an _ordered_ or _structured_ dimension, whereas the columns are an unordered set of features. This helps students establish a framework for thinking about the multidimensional arrays, by classifying the dimensions in this way. It also helps explain why a 1D convnet has 2D training examples, a 2D convnet has 3D training examples, etc.
+
+A note on the word "dimension": this is highly confusing word, because it can mean the number of axes of an array, or the number of elements in a vector; in this lecture, I am generally using the former meaning. See the "dimension vs. size vs. length (of a vector)" entry of our [terminology document](https://ubc-mds.github.io/resources_pages/terminology/) for more info.
 
 
 ### Starting with 1D convnets
@@ -58,7 +62,7 @@ Let's return to the example weather data above, which is "1D data" (despite bein
 
 ### Quiz question
 
-For those who are interested, here is a quiz question I created to follow this lesson, which is meant to test this idea of structured vs. unstructured data dimensions:
+For those who are interested, here is a quiz question I created to follow this lesson, which is meant to address the distinction between structured vs. unstructured data dimensions:
 
 > Consider using a 2D convnet for image classification. For each of the following changes to your data set, do you expect the test error would increase, decrease, or stay the same? Assume the transformation is applied before training and the same transformation is applied to both train and test. 
 > 
