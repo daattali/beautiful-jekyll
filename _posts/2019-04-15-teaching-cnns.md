@@ -2,6 +2,7 @@
 layout: post
 title: Teaching CNNs
 subtitle: Unpacking convolutional neural networks
+share-img: "https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg"
 ---
 
 When I first learned about convolutional neural networks (also known as CNNs, or convnets), I was shown a picture much like the one below, which is from the [AlexNet paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf):
