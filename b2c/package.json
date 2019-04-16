@@ -1,0 +1,11 @@
+{
+  "name": "msal-js-devapp-b2c",
+  "version": "1.1.0",
+  "license": "MIT",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "morgan": "^1.5.2",
+    "path": "^0.11.14"
+  }
+}
