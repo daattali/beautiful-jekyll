@@ -34,10 +34,10 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <div>
-          <img class="navImg" src="/img/header_1366px.png" id="navImg" />
+          <img class="navImg" src="/img/header_1366px.png" id="navImgHeader" />
           <a href="https://craftingsoftware.com/" id="navLogo" onclick="https://craftingsoftware.com/';return false;">
-            <img class="navImg" src="/img/logoCS.svg" ; style=top:25px;left:225px;width:15em; height:18em;
-              class="thumbnails" id="navLogo" />
+            <img class="navImg" id="navLogoImg" src="/img/logoCS.svg" ; style=top:25px;left:225px;width:15em; height:18em;
+              class="thumbnails" />
           </a>
         </div>
       </div>
@@ -46,9 +46,7 @@
         <div class="navMobileMenu" onclick="main.openNavMobileItems()" id="navMobileMenu">
           <img class='icon' id="navMobileMenuImg" src="/img/menuIcon.svg" style="margin: 0 auto 0 auto">
         </div>
-        <div class="navImg" id="navImg">
-          <img id="navImg" src="/img/logoCS.svg" style="margin: 0 auto 0 auto">
-        </div>
+        
       </div>
 
       {% for link in site.navbar-links %}

@@ -162,6 +162,7 @@ var main = {
       document.getElementById('navItemMob4').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob5').classList.add("navMobileMenuAnimationItems");
       document.getElementById("body").style.overflowY = "hidden";
+      document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
       document.getElementById('navBar').style.backgroundColor = "transparent";
       document.getElementById("navLogo").src = "/img/logoCS.svg";
 
