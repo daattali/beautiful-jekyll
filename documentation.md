@@ -6,6 +6,7 @@ title: Documentation & Help
 ### Documentation
 * [User guide and stable API documentation][1] (1.0)
 * [Nightly build doxygen documentation][2]
+* [Nightly build doxygen documentation of DGtalTools][22]
 * [Documentation docset URL][3] (1.0, for [Dash][4] or [Zeal][5] tools)
 
 ### Slides of DGtal Meeting (29/08/2011)
@@ -43,3 +44,4 @@ title: Documentation & Help
 [19]: http://lists.gforge.liris.cnrs.fr/mailman/listinfo/dgtal-users "subscription"
 [20]: http://lists.gforge.liris.cnrs.fr/mailman/listinfo/dgtal-devel "subscription"
 [21]: https://github.com/DGtal-team/DGtal/issues
+[22]: https://dgtal-team.github.io/doctools-nightly

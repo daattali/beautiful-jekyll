@@ -15,7 +15,7 @@ The source code of the tools can also be used to non DGtal familiar user to sho
 
 ### DGtalTools content:
 At the moment the DGTalTools project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.0):
-
+(see also the nightly build doxygen [documentation of the tools](https://dgtal-team.github.io/doctools-nightly/))
 * **converters/**: utilities to convert various simple file formats:
   * <span style="color: #00008b;">convertVol</span>: a simple generic volume image converters (can process actually pgm3d, vol, longvol, raw (for writing)).
   * <span style="color: #00008b;">dicom2vol</span>: convert dicom images into 3d volumic file (need itk option in DGtal).
@@ -125,7 +125,7 @@ At the moment the DGTalTools project is organized as follows (<span style="color
   - <span style="color: #00008b;">volTrValues</span>: a basic tool to transform the voxel values from an input/output set.
 
 ### DGtalTools-contrib content:
-At the moment the DFtalTools-contrib project is organized as follows (<span style="color: #00008b;">new</span> or <span style="color: #00008b;">improved</span> in 0.9.4):
+At the moment the DFtalTools-contrib project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.0):
 
 * **Geometry2d/**:
   - <span style="color: #00008b;">houghLineDetect</span>: to detect line segment from Hough transform (using OpenCV).
@@ -138,18 +138,19 @@ At the moment the DFtalTools-contrib project is organized as follows (<span styl
 * * * *
 
 * **Geometry3d/**:
-  - <span style="color: #00008b;">basicEditMesh</span>: to apply basic mesh edition (scale change, mesh face contraction, face filtering).
+  - <span style="color: #008b00;">basicEditMesh</span>: to apply basic mesh edition (scale change, mesh face contraction, face filtering).
   - <span style="color: #00008b;">basicMorphoFilter</span>: apply basic morpho filter from a ball structural element.
   - <span style="color: #00008b;">computeMeshDistances</span>: computes for each face of a mesh A the minimal distance to another mesh B.
-  - <span style="color: #00008b;">off2sdp</span>: a tool to convert a mesh into a set of points (.sdp).
   - <span style="color: #00008b;">off2obj</span>: tool to convert a mesh represented in off format into obj format.
+  - <span style="color: #00008b;">off2sdp</span>: a tool to convert a mesh into a set of points (.sdp).
   - <span style="color: #00008b;">volLocalMax</span>: extract the local maximas of a vol image within a spherical kernel.
   - <span style="color: #00008b;">xyzScale</span>: a basic tool to adjust the scale of an xyz file.
 
 * * * *
 
 * **Visualisation/**:
-  - <span style="color: #00008b;">displayLineSegments</span>: new tool allowing to display line segment in an output image.
+  - <span style="color: #8b0000;">displayLineSegments</span>: new tool allowing to display line segment in an output image.
+  - <span style="color: #8b0000;">displaySetOf2dPts</span>: tool to display sets of 2d points.
   - <span style="color: #00008b;">displayTgtCoverAlphaTS</span>: to display alpha-thick segment given on a simple contour.
   - <span style="color: #00008b;">graphViewer</span>: add a new tool allowing to display graph from edges, vertex and radii.
   - <span style="color: #00008b;">meshViewerEdit</span>: tool to visualize a mesh and to apply simple edits (face removal, color edits...).
