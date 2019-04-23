@@ -20,6 +20,7 @@ Vue.js의 일원이 되는 여러 방법이 있겠지만, 소소한 Commit 이�
 - 매우 빠르다.
 - 매우 안전하다.
 - 신뢰가 된다.  
+
 하지만 아직 이제 처음 써보는 것이라서 와닿지는 않는다. 현재로서는 명령어를 전환해야 해서 귀찮다는 생각이 조금 든다. 이제 Yarn으로 Vue 프로젝트를 함께 해봐야지... Core도 좋지만 CLI도 무언가 만들어 보고 싶다는 생각이 있다. Template을 몇 만들어 보고 싶다는 생각도 있고 Webpack구성을 조금 만져보던가 Parcel로 대체하는 것도 고민이 된다. (흠 하지만 NPM Package 하는 것들도 Post 하고 싶은데... Yarn으로 바꿔볼까 고민이 되지만 아직 하지도 않을 일을 고민해서는 뭐 될 것도 없겠지..)
 
 ## 아재같을 순 있겠지만..
@@ -31,7 +32,8 @@ Npm에서 Yarn으로 넘어갈 생각을 하다보니 예전 Source Safe에서 S
 - npm -g install myPackage => yarn global add myPackage
 - npm init => yarn init
 - npm run => yarn run
-- npm test => yarn test
+- npm test => yarn test  
+
 내가 자주쓰는 명령어 위주로 정리를 해보았다. 이제 시작을 해봐야지.(pack도 종종 쓰는데 pack은 더 공부를 해보고 다룰가 한다.)
 
 ## 삼천포로 빠지고 말았다. Vue 설정은 어디로...
