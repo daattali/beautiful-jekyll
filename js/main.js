@@ -136,11 +136,12 @@ var main = {
       display.style.visibility = "hidden";
       display.className = display.className.replace(/\bnavMobileItems\b/g, "");
       document.getElementById("body").style.overflowY = "visible";
-      document.getElementById('navImg').className = "navImg";
+      // document.getElementById('navImg').className = "navImg";
       document.getElementById('navItemMob1').className = "";
       document.getElementById('navItemMob2').className = "";
       document.getElementById('navItemMob3').className = "";
       document.getElementById('navItemMob4').className = "";
+      // document.getElementById("navLogo").src = "/img/logoCS.svg";
       document.getElementById("navMobileMenuImg").src = "/img/menuIcon.svg";
       if (isCurrentUrl("team") && (document.body.scrollTop > teamMaxHeight
         || document.documentElement.scrollTop > teamMaxHeight) || isCurrentUrl("career")
@@ -155,17 +156,17 @@ var main = {
       display.style.zIndex = "1";
       display.style.visibility = "visible";
       display.className += "navMobileItems";
-      document.getElementById('navImg').classList.add("navMobileMenuAnimation");
+      //document.getElementById('navImg').classList.add("navMobileMenuAnimation");
       document.getElementById('navItemMob1').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob2').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob3').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob4').classList.add("navMobileMenuAnimationItems");
       document.getElementById('navItemMob5').classList.add("navMobileMenuAnimationItems");
       document.getElementById("body").style.overflowY = "hidden";
-      document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
+      // document.getElementById("navMobileMenuImg").src = "/img/closeButtonWhite.svg";
       document.getElementById('navBar').style.backgroundColor = "transparent";
-      document.getElementById("navLogo").src = "/img/logoCS.svg";
 
+      // document.getElementById("navLogo").src = "/img/logoCS.svg";
       document.getElementById("body").style.overflowY = "hidden";
     }
   },

@@ -5,7 +5,6 @@ layout: page
 <div class="all_pages" id="container_id">
   <div class="container" id="tags_id" role="main">
 
-
     {%- capture site_tags -%}
     {%- for tag in site.tags -%}
     {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
@@ -13,15 +12,11 @@ layout: page
     {%- endcapture -%}
     {%- assign tags_list = site_tags | split:',' | sort -%}
 
-
-
     <h1 style="margin-top:7em;">Tag Index</h1>
     {%- for tag in tags_list -%}
-
     <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag"
         aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
     {%- endfor -%}
-
     <div id="full-tags-list">
       {%- for tag in tags_list -%}
       <h2 id="{{- tag -}}" class="linked-section">
@@ -36,14 +31,10 @@ layout: page
             <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%B %d, %Y" -}}</time>
           </div>
         </div>
-
-
         {%- endfor -%}
       </div>
       {%- endfor -%}
     </div>
-
-
     <div class="iframe-container" id="iframe_tags">
       <iframe
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcraftingsoftware%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1994256344182739"
@@ -51,59 +42,5 @@ layout: page
         style="margin-left:15em;">
       </iframe>
     </div>
-
-    
-
-    </div>
-
-
   </div>
-
-  <!-- <div class='footer'>
-    <div style="background-color: rgba(0,0,0, .03)">
-      <div class='footerContent' id='footerContent' style="display: 
-      flex; flex-direction:row-reverse; height:14em; margin: 0 auto; max-width: 110em;">
-        <div class='address'>
-          <span>Central Park Residence, 68 Plopilor St, Cluj-Napoca, CJ 400383, Romania</span>
-          <div>
-            <span class='dark'>contact@craftingsoftware.com</span>
-            <a href="tel:+40745 617 142" class='dark'>+40745 617 142</a>
-          </div>
-        </div>
-        <div class='social'>
-          <img id="craftingLogoColor_id" src="/img/craftingLogoColor.svg">
-          <div class='social-icons'>
-            <a target="_blank" href="https://www.facebook.com/craftingsoftware/"> <img class='icon'
-                src="/img/facebookDark.svg"> </a>
-            <a target="_blank" href="https://www.linkedin.com/in/crafting-software-a69694153/"> <img class='icon'
-                src="/img/linkedinDark.svg"> </a>
-          </div>
-        </div>
-        <div class='navItemsDesktop' style="width: 600px; margin-left:-5em;">
-          <div class='navItemDesktop'>
-            <img class='navIcon' src="/img/right-arrow.svg">
-            <a href="https://craftingsoftware.com/" data-pjax>About</a>
-          </div>
-          <div class='navItemDesktop'>
-            <img class='navIcon' src="/img/right-arrow.svg">
-            <a href="https://craftingsoftware.com/team" data-pjax>Team</a>
-          </div>
-          <div class='navItemDesktop'>
-            <img class='navIcon' src="/img/right-arrow.svg">
-            <a href="https://craftingsoftware.com/career" data-pjax>Career</a>
-          </div>
-          <div class='navItemDesktop'>
-            <img class='navIcon' src="/img/right-arrow.svg">
-            <a href="/" data-pjax>Blog</a>
-          </div>
-          <div class='navItemDesktop'>
-            <img class='navIcon' src="/img/right-arrow.svg">
-            <a href="https://craftingsoftware.com/contact" data-pjax>Contact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='copyright'>
-      <span>© 2019 Crafting Software. All rights reserved.</span>
-    </div>
-</div> -->
+</div>

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-    <meta name="author" content="Crafting Software" />
-    <title>Crafting Software Innovation</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script> 
-    <script src="/js/main.js"></script>
-    <link rel="alternate" type="application/rss+xml" title="Crafting Software Innovation - " href="/feed.xml" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/bootstrap-social.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png"/>
-    <meta property="og:title" content="Crafting Software Innovation" />
-    <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {% if post.image %} {% endif %} {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count =...">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <meta name="author" content="Crafting Software" />
+  <title>Crafting Software Innovation</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+  <script src="/js/main.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Crafting Software Innovation - " href="/feed.xml" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap-social.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon_16x16.png" />
+  <meta property="og:title" content="Crafting Software Innovation" />
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {% if post.image %} {% endif %} {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count =...">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://0.0.0.0:4000/" />
     <link rel="canonical" href="http://0.0.0.0:4000/" />  
@@ -110,7 +111,6 @@
 	    </div>	  
     </div>   
 
- 
     <div class='footer'>
       <div style="background-color: rgba(0,0,0, .03)" >
       <div class='footerContent' id='footerContent' style="display: 
@@ -157,7 +157,6 @@
         <span>© 2019 Crafting Software. All rights reserved.</span>
       </div>
     </div>
-
     <script type="text/javascript" src="../js/iframeResizer.contentWindow.min.js"></script>
   </body>
 </html>
