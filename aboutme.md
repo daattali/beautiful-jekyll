@@ -1,16 +1,19 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Software and Music are...
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is [Changbae](bangchangbae@gmail.com).
+I would like to create a better tomorrow.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### my Job
+I am a software engineer. This is my [resume](https://www.linkedin.com/in/%EC%B0%BD%EB%B0%B0-%EB%B0%A9-13285578/).
+I want to post something related with software.
 
-What else do you need?
 
-### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### my Music
+[Blue Crayon](https://music.naver.com/artist/home.nhn?artistId=1931822) is my band name. Sometimes I did by myself. Sometimes I did with my friends.
+
+[Just Pop](https://www.youtube.com/watch?v=-HLHIaxAt9M&list=PLENvGnOwveaUa8loc2PGe_D199FHkgUaH) was my band name with my company colleagues. [The other movie](https://www.youtube.com/watch?v=NW8zSjabeTg&list=PLENvGnOwveaUa8loc2PGe_D199FHkgUa). Now we did stop. But someday we will come together.
