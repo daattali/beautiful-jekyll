@@ -205,7 +205,7 @@ Red: feature, Blue: smooth part, Green: flat part
 				Comparison between two convolution kernels (constant convolution kernel and Gaussian Kernel)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-150x150.jpg" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2010/10/snapshot.jpg'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/snapshot-150x150.jpg" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Normal vector estimation based on a convolution kernel on elementary normal vector based on a convolution kernel on elementary normal vector
@@ -229,7 +229,7 @@ Red: feature, Blue: smooth part, Green: flat part
 				Extraction of surface defined by some implicit polynomial.
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon portrait'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/capture-decran-2012-02-16-a-13-12-55.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/Capture-d’écran-2012-02-16-à-13.12.55-150x150.png"  alt="Implicit surface &quot;Miau&quot;"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/Capture-d’écran-2012-02-16-à-13.12.55.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2012/02/Capture-d’écran-2012-02-16-à-13.12.55-150x150.png"  alt="Implicit surface &quot;Miau&quot;"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Extraction of implicit polynomial surface &#8220;Miau&#8221;.
@@ -277,7 +277,7 @@ Red: feature, Blue: smooth part, Green: flat part
 				Distance map from a knot withing a wood beam
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/DgtalUse.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DGtalUse-150x150.png" /></a>
+				<a href='https://dgtal.org/wp/wp-content/uploads/2010/10/DGtalUse.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/DGtalUse-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				DGtal used in a software of 3D branch measurements
@@ -289,7 +289,7 @@ Red: feature, Blue: smooth part, Green: flat part
 				Extraction of connected Signed Khalimsky Cell from DGtalSet
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2012/02/surfelTracking.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking-150x150.png"  alt="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space"/></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/surfelTracking-150x150.png"  alt="Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space"/></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Tracking 2D surfel boundary from single surfel Cell of 3D Khalimsky Space
@@ -346,7 +346,7 @@ Red: feature, Blue: smooth part, Green: flat part
 				3D Domain visualization with some elements (domain displayed in “Grid” mode)
 				</dd></dl><br style="clear: both" /><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/Capture-d’écran-2011-03-17-à-14.50.35-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				3D Domain visualization with two digital sets
@@ -406,7 +406,7 @@ Red: feature, Blue: smooth part, Green: flat part
 				Visualisation of some iso contours
 				</dd></dl><dl class='gallery-item'>
 			<dt class='gallery-icon landscape'>
-				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise.png/'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise-150x150.png" /></a>
+				<a href='http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise.png'><img width="150" height="150" src="http://dgtal.org/wp/wp-content/uploads/2010/10/klokanNoise-150x150.png" /></a>
 			</dt>
 				<dd class='wp-caption-text gallery-caption'>
 				Contour visualization with original source image
