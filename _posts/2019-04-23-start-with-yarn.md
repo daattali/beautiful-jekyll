@@ -30,14 +30,16 @@ Vue.js의 일원이 되는 여러 방법이 있겠지만, 소소한 Commit 이�
 ## 아재같을 순 있겠지만..
 Npm에서 Yarn으로 넘어갈 생각을 하다보니 예전 Source Safe에서 SVN이나 CVS로 넘어갈 때 생각이 난다. SVN에서 git으로 옮길때도 매우 귀찮았었다. 하지만 지금 생각해보면 SVN 명령어가 기억이 흐릿흐릿 하다. 사실 넘어가는 과정은 큰 산 같았지만 넘어가고 보면 예전이 기억이 안난다. 그만큼 새로 선택한 툴이 편하다는 것이겠지.. SVN이나 git으로 넘어간 후로는 누가 checkout을 하고 가버리는 수정할 수 없어 관리자나 checkout을 한 분(이라고 쓰고 놈이라고 읽는다)를 찾을 필요도 없어졌다. 대신 내가 막 수정해서 올리려고 했는데 충돌이 난다는 메세지를 얻게 되었지만 예전의 고통을 생각해보면 병합은 일도 아니다 무튼 Yarn도 그럴 것이라고 생각해보지만 아직은 Yarn과 Npm이 Source Safe와 git 같지는 않기에 병행해서 사용할 것 같다는 생각은 한다. 다시 Yarn으로 돌아와서 [Yarn vs npm: Everything You Need to Know](https://www.sitepoint.com/yarn-vs-npm/)과 여러 포스트를 참고해서 정리를 해보았다. 정리를 해보니아래와 같은 결과를 얻을 수 있었다.  
 
-- npm install => yarn 
-- npm install myPackage => yarn add myPackage
-- npm install myPackage --save-dev => yarn add myPackage --dev
-- npm uninstall myPackage --save-dev => yarn remove myPackage --dev
-- npm -g install myPackage => yarn global add myPackage
-- npm init => yarn init
-- npm run => yarn run
-- npm test => yarn test  
+| NPM | YARN |
+| :------ |:--- |
+| npm install | yarn |
+| npm install myPackage | yarn add myPackage |
+| npm install myPackage --save-dev | yarn add myPackage --dev |
+| npm uninstall myPackage --save-dev | yarn remove myPackage --dev |
+| npm -g install myPackage | yarn global add myPackage |
+| npm init | yarn init |
+| npm run | yarn run |
+| npm test | yarn test |
 
 내가 자주쓰는 명령어 위주로 정리를 해보았다. 이제 시작을 해봐야지.(pack도 종종 쓰는데 pack은 더 공부를 해보고 다룰가 한다.)  
 
