@@ -97,7 +97,6 @@ plotted on top. The color gradient shows counts of trees in each grid cell.
 
 This is the standard way to fit X- and Y- splines in `mgcv`:
 
-
 ```r
   # the gam model with s() indicating that I fit splines
   space.only <- gam(count~s(x, y), data=all.data, family = "poisson")
