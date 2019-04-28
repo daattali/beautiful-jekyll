@@ -42,13 +42,13 @@ avatar: "/img/Centre-logo.jpg"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#026c45"
 navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#013220"
+navbar-children-col: "#026c45"
+page-col: "#FFFFFF"
 link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
+hover-col: "#6c025e"
+footer-col: "#026c45"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
