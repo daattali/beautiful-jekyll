@@ -25,7 +25,8 @@ description: Statistical support for researchers
 navbar-links:
   About: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn R: "https://datacarpentry.org/"
+    - Learn git: "https://www.youtube.com/watch?v=HVsySz-h9r4"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://pages.github.com/"
   Home: "http://davan690.github.io/"
