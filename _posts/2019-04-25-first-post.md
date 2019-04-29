@@ -1,8 +1,10 @@
 ---
+
+title: "The beginning"
+subtitle: "Starting a website is a daunting process and I've tried many times but thats for another blog post."
 layout: post
-title: The beginning
-subtitle: Starting a website is a daunting process and I've tried many times but thats for another blog post.
-image: /img/hello_world.jpeg
+image: /img/Centre-logo.jpeg
+
 ---
 
 "This" webpage is a simple collection of detailed resources and information I use for my phd work, as part of the statistics network and other research projects. I have needed an accessible location to store statistics and ecology resources for a while now and the combination of [Jekyll]("") and [GitPages]("") makes it the right time to work on it. I have always written personal notes on methods and techniques I use or recommend such as the [tidyverse]("") approach or the [UBC]("") statistics course or the [markdown]("") script I am writing this post in. Now I work in Markdown almost exclusively it means these can easily be posted as blogs or webposts.
