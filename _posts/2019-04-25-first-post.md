@@ -22,7 +22,7 @@ So far on the website I have four simple pages:
 - [Invasive species research]("")
     - my phd drafts
 
-# Coming
+# Coming soon
 
 - [Reproducibility]("")
 

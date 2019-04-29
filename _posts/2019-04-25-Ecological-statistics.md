@@ -1,17 +1,35 @@
 ---
+title: "Ecological Statistics"
 layout: post
-title: Ecological statistics
 ---
 
-Statistics in ecology can be a tricky endevour with real data. My PhD work focuses on Bayesian Hierarical Modelling with Ecological Data. These are the resources I have used and still do at times. To begin to understand and teach Bayesian methods I often refer to older and often more understood statistical methods.
+Statistics in ecology can be a tricky endevour with real data. My PhD research focuses on Bayesian Hierarical Modelling with Ecological Data. These are the resources I have used and still do at times. To begin to understand and teach Bayesian methods I often refer to older and often more understood statistical methods.
 
-Some more general ecological application can be found at: 
+## General ecological statistics
 
-## Courses and Tutorials
+These are the resources I often talk about and personally use regularly. I have only added my brief notes and am no way affiliated or represent any of the resources below. 
 
-As the education enviroment changes with the development of computational advances there are now many many online learning tools. Until recently, I have been a big advocate for DataCamp. However, since the recent [sexual harrassment]("https://medium.com/@heathernolis/on-datacamp-aafd82f94e60/) violations. 
+I haven't meet many of these researchers and developers but hopefully one day. Most of the resources are open-source and are forked to my personal [github account](https://github.com/davan690/).
 
-I have thought about what the most approariate action is but I personally have no desire to advocate for DataCamp. I have therefore removed my class subscription to the DataCamp website which means that the current students will not have access to the paid content. During the time between then and now, I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the class. To build this, send through the analysis or method and I will see what I can do if it is not below. This is the beginning of my list:
 
-### Data Carpentary
+[Colby Ecology Course](https://colbyecology.github.io/): A mathematical ecology course that I have not done but I think it looks pretty kol. Let me know if anyone does it.
 
+https://github.com/davan690/The Statistics Network  My personal list of resources but in particular look at the `usefulr` repository. I am updating this as and when I find new resources. Mostly, this list is to support my own development and to remind myself how to do many of these R and Markdown tricks and tips I find on the web. 
+
+<a href="http://stat545.com/Classroom/" >STAT545This is an amazing graduate course from the University of British Columbia. I will often return to this course to check code and explanations I need.
+
+<a href="https://monashbioinformaticsplatform.github.io/r-more/topics/tidyverse.html" > Monash helpThis is a simple html page similar to this with information for Monash bio-informatics platform.
+
+https://www.rstudio.com/resources/cheatsheets/" Cheat-sheets These are really important and RStudio do many good ones. There are many other variations out there though.
+
+<h2> Bio-informatics </h2>
+
+A very limited list of genetics options. I am no way an expert with these packages or analyses.
+
+<a href="https://al2na.github.io/compgenr/Genomics workbook  from compgenr package
+
+<a href="https://isugenomics.github.io/bioinformatics-workbook/" >Comparative Genomics workbook
+
+<a href="https://cran.r-project.org/web/packages/dartR/vignettes/IntroTutorial_dartR.pdf" >DartR Genomics workbook
+
+<a href="https://github.com/green-striped-gecko/PopGenReport" >R population genetics workbook

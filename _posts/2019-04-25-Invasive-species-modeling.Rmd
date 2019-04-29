@@ -1,0 +1,17 @@
+---
+title: "Invasive species modelling"
+subtitle: PhD Research
+layout: post
+---
+
+My PhD work involves modelling invasive species dynamics in NZ forests. There is more detail for my supervisors and colleagues.
+
+## New Zealand Beech forest dynamics
+
+This publication clarifies the discrepancy between; two modelling papers that suggest mesopredator release of rodents is possible in New Zealand forest systems and; several field studies that have presented limited but conflicting support for increases in mouse abundance following predator control. We used an experimental design to test the differences between the two "frames of though" and found that there is no evidence to suggest mice will become more abundant after predator removal ([*additional resources can be found here*](https://davan690.github.io/)).
+
+## New Zealand mixed-forest dynamics
+
+My GIT account is a work in  [progress](https://github.com/davan690/). 
+
+Here is an [example](https://github.com/davan690/PestManagement/blob/master/README.md) individual based pest modelling This is a `repo` from a recent publication on dynamic pest management from Dean Anderson and others.
