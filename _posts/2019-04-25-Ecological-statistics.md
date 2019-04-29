@@ -3,7 +3,9 @@ layout: post
 title: Ecological statistics
 ---
 
-Statistics in ecology can be a tricky endevour with real data. My PhD work focuses on Bayesian Hierarical Modelling with Ecological Data. These are the resources I have used and still do at times. 
+Statistics in ecology can be a tricky endevour with real data. My PhD work focuses on Bayesian Hierarical Modelling with Ecological Data. These are the resources I have used and still do at times. To begin to understand and teach Bayesian methods I often refer to older and often more understood statistical methods.
+
+Some more general ecological application can be found at: 
 
 ## Courses and Tutorials
 

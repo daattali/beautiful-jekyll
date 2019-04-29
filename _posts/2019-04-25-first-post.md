@@ -1,25 +1,49 @@
 ---
 layout: post
 title: The beginning
+subtitle: Starting a website is a daunting process and I've tried many times but thats for another blog post.
 image: /img/hello_world.jpeg
 ---
 
-Starting a website is a daunting process. But here we go ... The website is a learning resource for thoughts, questions, analysis and results inspired by discussions during statistics drop-in sessions at University. These drop-in sessions have come about from a competition that I competed in last year (2017). In this competition, I proposed a university-wide statistical support network in 90 seconds.
+"This" webpage is a simple collection of detailed resources and information I use for my phd work, as part of the statistics network and other research projects. I have needed an accessible location to store statistics and ecology resources for a while now and the combination of [Jekyll]("") and [GitPages]("") makes it the right time to work on it. I have always written personal notes on methods and techniques I use or recommend such as the [tidyverse]("") approach or the [UBC]("") statistics course or the [markdown]("") script I am writing this post in. Now I work in Markdown almost exclusively it means these can easily be posted as blogs or webposts.
 
-I didn't win anything substantial. (There was $12 000 funding up for grabs) but my pitch is [here]("https://www.youtube.com/watch?v=2EXo0Iue1es&index=1&list=PLy1v_xE3ZjaA4PFdt_FJNBLljLAiuNTiV/") Although I did not get funded that evening I did begin to build a series of relationships and collaborations that would lead to a model of this being funding until the current time.
+Here is the [webpage]("https://github.com/davan690/davan690.github.io/") repository for more computer minded (open-source resources and my research), and a [facebook]("https://www.facebook.com/StatisticsNetwork/")/[twitter]("") feed for new blog posts about statistics and ecology (not all from me).
 
-This network is built on the back of the philosophy that collaboration and support are the building blocks of world-leading research and hold many of the solutions we are all hunting for. There is one clear object for this webpage. To provide a location where researchers and others interested in statistics can discuss and be supported to learn statistics. BUT we all have a different way of approaching challanges so to begin the content will reflex my research and tools I am using.
+# Current website
 
-I have created a simple [facebook]("https://www.facebook.com/StatisticsNetwork/") feed for new and interesting blog posts about statistics. Information from the website will be posted there is well. All resources are open-source. 
+So far on the website I have four simple pages:
 
-And on the website I have four simple posts so far:
+- [General statistics]("")
+    - resources I use for statistics support
 
-- General statistics
-- Ecological statistics
-- Invasive species research
+- [Ecological statistics]("")
+    - resources I use for my PhD
 
-1.  Comment, discuss or [email]("anthony.davidson@canberra.edu.au") any points that don't make sense.
+- [Invasive species research]("")
+    - my phd drafts
 
-2.  Or via the website [here]("").
+# Coming
 
-3.  Or even better fork the repository [here]("https://github.com/davan690") and add any comments via git commits.
+- [Reproducibility]("")
+
+- [Coding Sessions]("")
+
+- [Bio-informatics]("")
+
+# Contact
+
+*Contact me* if you have any ideas or would like can contribute in any way
+
+[Comment]("") on social media
+
+**or**
+
+[Email]("anthony.davidson@canberra.edu.au") any points that don't make sense.
+
+**or even better**
+
+[Fork]("https://github.com/davan690") the repository and add any comments via git commits.
+
+Welcome to the "Pit of Success!" ^[Wickham quote]
+
+[Image from a great talk Hadley wickham gave last year]("")
