@@ -10,4 +10,16 @@ I didn't win anything substantial. (There was $12 000 funding up for grabs) but 
 
 This network is built on the back of the philosophy that collaboration and support are the building blocks of world-leading research and hold many of the solutions we are all hunting for. There is one clear object for this webpage. To provide a location where researchers and others interested in statistics can discuss and be supported to learn statistics. BUT we all have a different way of approaching challanges so to begin the content will reflex my research and tools I am using.
 
-I have created a simple [facebook]("https://www.facebook.com/StatisticsNetwork/") feed for new and interesting blog posts about statistics. Information from the website will be posted there iswell. All resources are open-source. Please comment and discuss any points that don't make sense. Or even better fork the [here]("https://github.com/davan690") and add any comments via git. 
+I have created a simple [facebook]("https://www.facebook.com/StatisticsNetwork/") feed for new and interesting blog posts about statistics. Information from the website will be posted there is well. All resources are open-source. 
+
+And on the website I have four simple posts so far:
+
+- General statistics
+- Ecological statistics
+- Invasive species research
+
+1.  Comment, discuss or [email]("anthony.davidson@canberra.edu.au") any points that don't make sense.
+
+2.  Or via the website [here]("").
+
+3.  Or even better fork the repository [here]("https://github.com/davan690") and add any comments via git commits.
