@@ -27,7 +27,7 @@ So far on the website I have three simple pages:
 
 Here is the [webpage]("https://github.com/davan690/davan690.github.io/") repository for more computer minded (open-source resources and my research), and a [facebook]("https://www.facebook.com/StatisticsNetwork/")/[twitter]("") feed for new blog posts about statistics and ecology (not all from me). Welcome to the "Pit of Success!" ^[Wickham quote]
 
-[Image from a great talk Hadley Wickham gave last year]("https://i.imgur.com/7J1bEaJ.mp4")
+[Image from a great talk Hadley Wickham gave last year](https://i.imgur.com/7J1bEaJ.mp4)
 
 <h2>Feedback and comments</h2>
 
