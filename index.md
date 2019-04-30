@@ -3,13 +3,13 @@ layout: home
 title: "The Statistics Network"
 ---
 
-[General statistics]({% post_url 2018-04-25-General-statistics.md %})
+[General statistics](https://davan690.github.io/2019-04-25-General-statistics/)
 - Resources I use for statistics support
 
-[Ecological statistics]({% post_url 2018-04-27-Ecological-statistics.md %})
+[Ecological statistics](https://davan690.github.io/2019-04-27-Ecological-statistics/)
 - Resources I use for my PhD
 
-[Invasive species research]({% post_url 2018-04-30-Invasive-species-modeling.md %})
+[Invasive species research](https://davan690.github.io/2019-04-30-Invasive-species-modeling/)
 - My phd research
 - Draft manuscripts
 
