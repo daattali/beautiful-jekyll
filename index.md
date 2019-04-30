@@ -17,12 +17,10 @@ title: "Statistics"
 
 [Reproducibility](https://www.nature.com/articles/d41586-019-00067-3/)
 
-[Coding Sessions](https://ourcodingclub.github.io//")
+[Coding Sessions](https://ourcodingclub.github.io/)
 
 [Bio-informatics]("https://en.wikipedia.org/wiki/Bioinformatics/)
 
-Here is the [webpage](https://github.com/davan690/davan690.github.io/) repository for more computer minded (open-source resources and my research), and a [facebook](https://www.facebook.com/StatisticsNetwork/)/[twitter](https://twitter.com/ANTSstats) feed for new blog posts about statistics and ecology (not all from me). Welcome to the "Pit of Success!"^[Wickham quote]
+Here is the [webpage](https://github.com/davan690/davan690.github.io/) repository for more computer minded (open-source resources and my research), and a [facebook](https://www.facebook.com/StatisticsNetwork/)/[twitter](https://twitter.com/ANTSstats/) feed for new blog posts about statistics and ecology (not all from me). Welcome to the "Pit of Success!" [Great meme from a talk Hadley Wickham gave last year](https://i.imgur.com/7J1bEaJ.mp4)
 
-[Image from a great talk Hadley Wickham gave last year](https://i.imgur.com/7J1bEaJ.mp4)
-
-[Feedback and comments](https://github.com/davan690/aboutme/)
+## News

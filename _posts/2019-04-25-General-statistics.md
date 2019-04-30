@@ -45,19 +45,18 @@ This is an open source community that teaches R and other data tools. They also 
 
 #### [Data Science (DS)](https://www.rfordatasci.com/)
 
-These resources are very helpful but take a slightly different approach to ecological studies however the pay is much better as a "data scientist" [DS](https://www.rfordatasci.com/) in the current job market. 
+These resources are very helpful but take a slightly different approach to ecological studies however the pay is much better as a "data scientist" [DS](https://www.rfordatasci.com/) in the current job market.
 
-The DS community is great and even have there own [slack channel](). I still haven't found a great resource for this but here are a few general videos to start here; [basic](https://www.youtube.com/watch?v=poQ61RZKzwE) overview but has a boring intro *or*  [microsoft](https://www.youtube.com/watch?v=gNV9EqwXCpw) video here but its pretty dry.
+The DS community is great and even have there own slack channel. I still haven't found a great resource for this but here are a few general videos to start here; [basic](https://www.youtube.com/watch?v=poQ61RZKzwE) overview but has a boring intro *or*  [microsoft](https://www.youtube.com/watch?v=gNV9EqwXCpw) video here but its pretty dry.
 
 # More specific resources
 
-- [Ecological statistics]()
+- [Ecological statistics](https://davan690.github.io/2019-04-27-Ecological-statistics/)
+
+- [Invasive species research](https://davan690.github.io/2019-04-30-Invasive-species-modeling/)
 
 - Health (coming)
 
 - Hierarchical modelling (coming)
 
 - Bayesian modelling (coming)
-
-- [Invasive species modelling]()
-  - Mostly just my PhD work at the moment
