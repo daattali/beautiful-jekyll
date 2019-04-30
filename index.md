@@ -1,15 +1,7 @@
 ---
+layout: home
 title: "The Statistics Network"
-type: homepage
----
-
-<head>
-<div class="banner" style="padding:5px; text-align:center;">
-<div class="banner-content">
-<p>This webpage is a simple collection of detailed resources and information I use for my phd work, as part of the statistics network and other research projects. The resources here are open-source and can be accessed <a href="https://github.com/davan690/" class="btn btn-primary">here</a>. I hope with time these resources will develop into a learning resource for researchers and small business owners, regardless of statistical knowledge. I post some of the interesting social media posts <a href="https://www.facebook.com/StatisticsNetwork/" class="btn btn-primary">here</a></p>
-</div>
-</div>
-</head>
+--
 
 So far on the website I have three simple pages:
 
