@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Statistics"
+title: ""
 ---
 
 ## So far
