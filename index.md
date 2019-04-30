@@ -2,6 +2,7 @@
 title: "The Statistics Network"
 type: homepage
 ---
+
 <head>
 <div class="banner" style="padding:5px; text-align:center;">
 <div class="banner-content">
@@ -9,23 +10,20 @@ type: homepage
 </div>
 </div>
 </head>
-  
-Here is the [webpage]("https://github.com/davan690/davan690.github.io/") repository for more computer minded (open-source resources and my research), and a [facebook]("https://www.facebook.com/StatisticsNetwork/")/[twitter]("") feed for new blog posts about statistics and ecology (not all from me).
 
-# Current website
-
-So far on the website I have four simple pages:
+So far on the website I have three simple pages:
 
 - [General statistics]("")
-    - resources I use for statistics support
+    - Resources I use for statistics support
 
 - [Ecological statistics]("")
-    - resources I use for my PhD
+    - Resources I use for my PhD
 
 - [Invasive species research]("")
-    - my phd drafts
+    - My phd research
+    - Draft manuscripts
 
-# Coming soon
+## Coming soon
 
 - [Reproducibility]("")
 
@@ -33,7 +31,7 @@ So far on the website I have four simple pages:
 
 - [Bio-informatics]("")
 
-<h2>Blog posts</h2>
+# Recent news
 
 <div class="posts-list">
   {% for post in paginator.posts %}
@@ -99,23 +97,9 @@ So far on the website I have four simple pages:
   </li>
   {% endif %}
 </ul>
-{% endif %}  
+{% endif %} 
 
-# Contact
-
-*Contact me* if you have any ideas or would like can contribute in any way
-
-[Comment]("") on social media
-
-**or**
-
-[Email]("anthony.davidson@canberra.edu.au") any points that don't make sense.
-
-**or even better**
-
-[Fork]("https://github.com/davan690") the repository and add any comments via git commits.
-
-Welcome to the "Pit of Success!" ^[Wickham quote]
+Here is the [webpage]("https://github.com/davan690/davan690.github.io/") repository for more computer minded (open-source resources and my research), and a [facebook]("https://www.facebook.com/StatisticsNetwork/")/[twitter]("") feed for new blog posts about statistics and ecology (not all from me). Welcome to the "Pit of Success!" ^[Wickham quote]
 
 [Image from a great talk Hadley Wickham gave last year]("")
 
