@@ -3,10 +3,6 @@ title: "General statistics"
 layout: post
 ---
 
-- [General](# Courses and Tutorials)
-- [Open Source](# Open-source)
-- [Additional resources](# More specific resources)
-
 Here is a collection of entry level statistics and research resources. As the education environment changes with the development of computational advances there are now many many on-line learning tools. Until recently, I have been a big advocate for DataCamp. However, since the recent [sexual harrassment](https://medium.com/@heathernolis/on-datacamp-aafd82f94e60/) violations I personally have no desire to advocate for DataCamp. I have therefore removed my class subscription to the DataCamp website which means that the current students will not have access to the paid content.
 
 # Courses and Tutorials
