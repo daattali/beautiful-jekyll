@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "The Statistics Network"
+title: "Statistics"
 ---
 
 I have three simple pages so far:
