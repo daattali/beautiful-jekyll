@@ -10,28 +10,23 @@ Here is a collection of entry level statistics and research resources. As the ed
 During the time between then and now, I found many other subscription based learning sites like DataCamp:
 
 - [LinkedIn Learning](https://www.linkedin.com/learning/)
-
 - [Udemy](https://www.udemy.com/)
-
 - [Khan Academy](https://www.khanacademy.org/)
-
 - [Coursa](https://www.coursera.org/)
-
 - [Codecademy](https://www.codecademy.com/)
-
 - [EdX](https://www.edx.org/)
 
 #### Online databases
 
+And I even found some databases of online courses to make searching easier!
+
 - [Class central](https://www.classcentral.com/): A database of on-line courses
-
 - [Australian open universities database](https://www.open.edu.au/online-courses/)
-
 - [Even SEEK](https://www.seek.com.au/learning/search/courses/mode-online/)
 
 # Open-source
 
-I also found many more open-source tutorials, vignettes and courses tucked away in the depths of github and Google so I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the DataCamp classes. To build this, send through the analysis or statistical methods you use and I will see what I can do if it is not below.
+I found many more open-source tutorials, vignettes and courses tucked away in the depths of github and Google so I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the DataCamp classes. To build this, send through the analysis or statistical methods you use and I will see what I can do if it is not below.
 
 #### [Data Carpentry](https://datacarpentry.org/)
 
@@ -48,11 +43,7 @@ The DS community is great and even have there own slack channel. I still haven't
 # More specific resources
 
 - [Ecological statistics](https://davan690.github.io/2019-04-27-Ecological-statistics/)
-
 - [Invasive species research](https://davan690.github.io/2019-04-30-Invasive-species-modeling/)
-
 - Health (coming)
-
 - Hierarchical modelling (coming)
-
 - Bayesian modelling (coming)
