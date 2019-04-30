@@ -17,6 +17,7 @@ type: homepage
 - [Invasive species research]("")
     - My phd research
     - Draft manuscripts</p>
+    
 <p>The resources here are open-source and can be accessed <a href="https://github.com/davan690/" class="btn btn-primary">here</a>.</p>
 <p>I post some of the interesting social media posts <a href="https://www.facebook.com/StatisticsNetwork/" class="btn btn-primary">here</a></p>
 </head>

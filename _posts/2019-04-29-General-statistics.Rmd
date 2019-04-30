@@ -32,7 +32,7 @@ During the time between then and now, I found many other subscription based lear
 
 ## Open-source
 
-I also found many more open-source tutorials, vignettes and courses tucked away in the depths of github and Google so I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the DataCamp classes. To build this, send through the analysis or statistical methods you use and I will see what I can do if it is not below. 
+I also found many more open-source tutorials, vignettes and courses tucked away in the depths of github and Google so I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the DataCamp classes. To build this, send through the analysis or statistical methods you use and I will see what I can do if it is not below.
 
 #### [Data Carpentry](https://datacarpentry.org/)
 
