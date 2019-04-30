@@ -10,7 +10,15 @@ layout: base
       </div>
     </div>
 
-<div class="container" role="main">
+ <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="container" role="main" text-align:right>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {{ content }}
