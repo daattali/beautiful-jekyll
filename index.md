@@ -6,8 +6,6 @@ title: "The Statistics Network"
 - [General statistics]({% post_url 2018-04-25-General-statistics %})
     - Resources I use for statistics support
 
-[Some Link]
-
 - [Ecological statistics]({% post_url 2018-04-27-Ecological-statistics %})
     - Resources I use for my PhD
 
