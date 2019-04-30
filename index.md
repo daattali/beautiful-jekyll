@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "The Statistics Network"
+title: "Statistics"
 ---
 
 [General statistics](https://davan690.github.io/2019-04-25-General-statistics/)
