@@ -3,18 +3,6 @@ layout: home
 title: "Statistics"
 ---
 
-## So far
-
-[General statistics](./_posts/2019-04-29-General-statistics/)
-Resources I use for statistics support
-
-[Ecological statistics]("")
-Resources I use for my PhD
-
-[Invasive species research]("")
-My phd research
-Draft manuscripts
-
 ## Coming soon
 
 [Reproducibility]("")
