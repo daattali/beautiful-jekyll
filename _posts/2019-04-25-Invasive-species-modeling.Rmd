@@ -14,7 +14,7 @@ Population dynamics of interacting invasive species in New Zealand forests
 
 <- PRIVATE ->
 
-This folder has the working documents for my PhD publications. I would normally keep these files on dropbox or something similar. During this PhD I have been creating a reproducable workflow for my scientific career using version control. I am now in the process of slowly transfering projects version control using GIT and GIThub. Once I publish results and copyright is released I will publish the final documents on the Open Science Framework (OSF) or other scientific repo/server.
+This folder has the working documents for my PhD publications. I would normally keep these files on dropbox or something similar. During this PhD I have been creating a reproducible workflow for my scientific career using version control. I am now in the process of slowly transferring projects version control using GIT and GIThub. Once I publish results and copyright is released I will publish the final documents on the Open Science Framework (OSF) or other scientific repo/server.
 
 ## Thesis Overview
 
@@ -26,9 +26,9 @@ To do this I will construct ecological models that describe the population dynam
 
 In this thesis I will use observed data to build ecosystem models that allow researchers to directly quantify the interactions among invasive species (Peng 2015).
 
-1. To build a research sythesis database of the theoretical relationships proposed in over 100 years of conservation research in NZ and the experimental work supporting these models. We need a uniform set of models and notation to develop from (e.g. Holland et al. 2015; Ruscoe et al. 2005; Choquenot & Ruscoe 2000; Ruscoe et al. 2004; King et al. 2003).
+1. To build a research synthesis database of the theoretical relationships proposed in over 100 years of conservation research in NZ and the experimental work supporting these models. We need a uniform set of models and notation to develop from (e.g. Holland et al. 2015; Ruscoe et al. 2005; Choquenot & Ruscoe 2000; Ruscoe et al. 2004; King et al. 2003).
 
-2. Use a combined theortical modelling and experimental approach to clarify the outcomes of invasive species control in three large-scale ecological datasets (Chapters 2,3,4). I build and test previous research that has attempted to characterize these interactions between invasive species, resources and native species in New Zealand Forests (Choquenot & Ruscoe 2000 + +).
+2. Use a combined theoretical modelling and experimental approach to clarify the outcomes of invasive species control in three large-scale ecological datasets (Chapters 2,3,4). I build and test previous research that has attempted to characterize these interactions between invasive species, resources and native species in New Zealand Forests (Choquenot & Ruscoe 2000 + +).
 
 3. Advances in ecological modelling tools have opened up opportunities to assess and parameterize theoretical models from observational data (King 2012). Along with this comes the correct partitioning of observation and process error. We use statistical software such as JAGS (Plummer 2010), WinBUGS (Suess & Trumbo 2010) and STAN (STAN development Team 2015) to develop the understanding of how these sources of error may effect the goals and targets of conservation managers and researchers alike.
 
@@ -48,13 +48,13 @@ Creating a database of research to understand the current knowledge of observati
 
 Dealing with Reproducibility *Why and how to make a reproducible workflow for invasive species research in New Zealand*
 
-This chapter creates a workflow that allows the ability to access and use the invasive species database in a reproducable way.... Etc etc
+This chapter creates a workflow that allows the ability to access and use the invasive species database in a reproducible way.... Etc etc
 
 Importance of reproducibility between community groups etc
 
 We also conduct a meta-analysis to shows that even though the time it takes to reproduce a workflow comes back THIS>...
 
-- Citation records (google scholar and elsivear)
+- Citation records (Google scholar and elsivear)
 - Collaborations (international vs domestic)
 - Outreach (twitter/fb).
 
@@ -82,7 +82,7 @@ Packages used:
 
 ### NZ mixed forests
 
-**Background:** This chapter will extend on the modelling explored for the beech forest system (Chapter Two). Previous research has shown that complex interactions between native and exotic species exist in NZ mixed forest systems (Ruscoe et al. 2011; Ruscoe et al. 2012). This chapter parameterizes a model to account for these different interactions in an extension of the beech forest model in the previous chapter to account for different food resources and other invasive species dynamics.
+**Background:** This chapter will extend on the modelling explored for the beech forest system (Chapter Two). Previous research has shown that complex interactions between native and exotic species exist in NZ mixed forest systems (Ruscoe et al. 2011; Ruscoe et al. 2012). This chapter parametrises a model to account for these different interactions in an extension of the beech forest model in the previous chapter to account for different food resources and other invasive species dynamics.
 
 **Objectives:** This chapter has the overall objective to model additional interactions and species in a New Zealand forest system. Beech forests have a limited number of species producing food for invasive mammals. When the ecosystem has more resources with different availability to the mesopredators the system is expected to have different outcomes (Choquenot & Ruscoe 2000). For example, mice populations are thought to persist in podocarp/hardwood forests at higher densities than adjoining beech forest (Choquenot & Ruscoe 2000).
 
@@ -106,7 +106,7 @@ Research on the same dataset has investigated differences in the abundance indic
 
 ## Apllication chapter
 
-THe effects of incorrectly modelling observation and process error for PFNZ2050
+The effects of incorrectly modelling observation and process error for PFNZ2050
 
 ## Dicussion chapter
 

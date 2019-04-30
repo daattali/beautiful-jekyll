@@ -3,7 +3,7 @@ title: "General statistics"
 layout: post
 ---
 
-Here is a collection of entry level statistics and research resources. As the education enviroment changes with the development of computational advances there are now many many online learning tools. Until recently, I have been a big advocate for DataCamp. However, since the recent [sexual harrassment](https://medium.com/@heathernolis/on-datacamp-aafd82f94e60/) violations I personally have no desire to advocate for DataCamp. I have therefore removed my class subscription to the DataCamp website which means that the current students will not have access to the paid content.
+Here is a collection of entry level statistics and research resources. As the education environment changes with the development of computational advances there are now many many on-line learning tools. Until recently, I have been a big advocate for DataCamp. However, since the recent [sexual harrassment](https://medium.com/@heathernolis/on-datacamp-aafd82f94e60/) violations I personally have no desire to advocate for DataCamp. I have therefore removed my class subscription to the DataCamp website which means that the current students will not have access to the paid content.
 
 ## Courses and Tutorials
 
@@ -24,7 +24,7 @@ During the time between then and now, I found many other subscription based lear
 
 #### Online databases
 
-- [Class central](https://www.classcentral.com/): A database of online courses
+- [Class central](https://www.classcentral.com/): A database of on-line courses
 
 - [Australian open universities database](https://www.open.edu.au/online-courses/)
 
@@ -32,7 +32,7 @@ During the time between then and now, I found many other subscription based lear
 
 ## Open-source
 
-I also found many more open-source tutorials, vignettes and courses tucked away in the depths of github and google so I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the DataCamp classes. To build this, send through the analysis or statistical methods you use and I will see what I can do if it is not below. 
+I also found many more open-source tutorials, vignettes and courses tucked away in the depths of github and Google so I have build a simple webpage with a collection of open-sources tools covering the same or similar content that we covered in the DataCamp classes. To build this, send through the analysis or statistical methods you use and I will see what I can do if it is not below. 
 
 #### [Data Carpentry](https://datacarpentry.org/)
 
@@ -52,7 +52,7 @@ The DS community is great and even have there own [slack channel](). I still hav
 
 - Health (coming)
 
-- Hierarical modelling (coming)
+- Hierarchical modelling (coming)
 
 - Bayesian modelling (coming)
 
