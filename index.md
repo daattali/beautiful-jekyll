@@ -7,6 +7,7 @@ title: "Statistics"
   <div class="banner-content">
   <p>This webpage is a simple collection of detailed resources and information I use for my phd work, as part of the statistics network and other research projects.  I hope with time these resources will develop into a learning resource for researchers and small business owners, regardless of statistical knowledge.</p><p>The resources here are open-source and can be accessed <a href="https://github.com/davan690/" class="btn btn-primary">here</a></p><p>I post some of the interesting social media posts <a href="https://www.facebook.com/StatisticsNetwork/" class="btn btn-primary">here</a></p
 </div>
+</div>
 
 ## So far
 
