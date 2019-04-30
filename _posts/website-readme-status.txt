@@ -1,3 +1,6 @@
+---
+layout: page
+---
 
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/daattali/20) for developing and maintaining this template.**
 
