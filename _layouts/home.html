@@ -37,7 +37,9 @@ layout: base
 </div>
 
 <div class="posts">
-  {% for post in site.posts %}
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+           {% for post in site.posts %}
     <article class="post">
 
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
@@ -49,4 +51,6 @@ layout: base
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+</div>
+</div>
 </div>
