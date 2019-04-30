@@ -7,3 +7,4 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+.Rproj.user
