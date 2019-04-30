@@ -3,17 +3,15 @@ layout: home
 title: "The Statistics Network"
 ---
 
-So far on the website I have three simple pages:
-
-- [General statistics]("")
+- [General statistics]({% post_url 2018-04-25-General-statistics %})
     - Resources I use for statistics support
-    
-[Some Link]({% post_url 2018-04-25-first-post %})
 
-- [Ecological statistics]("")
+[Some Link]
+
+- [Ecological statistics]({% post_url 2018-04-27-Ecological-statistics %})
     - Resources I use for my PhD
 
-- [Invasive species research]("")
+- [Invasive species research]({% post_url 2018-04-30-Invasive-species-modeling %})
     - My phd research
     - Draft manuscripts
 
