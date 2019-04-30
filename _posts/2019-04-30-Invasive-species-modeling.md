@@ -8,13 +8,7 @@ My PhD work involves modelling invasive species dynamics in NZ forests. There is
 
 ### ALL MATERIAL IS DRAFT ONLY
 
-<- PRIVATE ->
-
-Population dynamics of interacting invasive species in New Zealand forests
-
-<- PRIVATE ->
-
-This folder has the working documents for my PhD publications. I would normally keep these files on dropbox or something similar. During this PhD I have been creating a reproducible workflow for my scientific career using version control. I am now in the process of slowly transferring projects version control using GIT and GIThub. Once I publish results and copyright is released I will publish the final documents on the Open Science Framework (OSF) or other scientific repo/server.
+**Title:** Population dynamics of interacting invasive species in New Zealand forests
 
 ## Thesis Overview
 
