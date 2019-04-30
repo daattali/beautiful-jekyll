@@ -3,7 +3,7 @@ layout: home
 title: "Statistics"
 ---
 
-I have three simple pages so far:
+## So far
 
 [General statistics]("")
 Resources I use for statistics support
