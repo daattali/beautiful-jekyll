@@ -10,7 +10,7 @@ title: "Statistics"
 
 ## So far
 
-[General statistics]("")
+[General statistics](./_posts/2019-04-29-General-statistics/)
 Resources I use for statistics support
 
 [Ecological statistics]("")
