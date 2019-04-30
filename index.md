@@ -1,6 +1,6 @@
 ---
+layout: base
 title: "The Statistics Network"
-type: homepage
 ---
 
 <head>
