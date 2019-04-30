@@ -7,6 +7,8 @@ So far on the website I have three simple pages:
 
 - [General statistics]("")
     - Resources I use for statistics support
+    
+[Some Link]({% post_url 2018-04-25-first-post %})
 
 - [Ecological statistics]("")
     - Resources I use for my PhD
