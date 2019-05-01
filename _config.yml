@@ -25,9 +25,9 @@ description: Statistical support for researchers
 navbar-links:
   Home: http://davan690.github.io/
   My resources:
-    - General Statistics: https://davan690.github.io/2019-04-25-General-statistics/
+    - General Statistics: https://davan690.github.io/2019-04-26-General-statistics/
     - Ecological Statistics: https://davan690.github.io/2019-04-27-Ecological-statistics/
-    - Invasive species research: https://davan690.github.io/2019-04-30-Invasive-species-modeling/
+    - Invasive species research: https://davan690.github.io/2019-04-28-Invasive-species-modeling/
   External links:
     - Learn R: "https://datacarpentry.org/"
     - Learn git: "https://www.youtube.com/watch?v=HVsySz-h9r4"
@@ -78,16 +78,16 @@ author:
 social-network-links:
   rss: true
   email: "anthony.davidson@canberra.edu.au"
-#  facebook: daattali
-#  github: daattali
-#  twitter: daattali
+  facebook: StatisticsNetwork
+  github: davan690
+  twitter: antsStats
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: statistical_adventures
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
@@ -97,8 +97,8 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-#  twitter: true
-#  facebook: true
+  twitter: true
+  facebook: true
 #  google: false
 #  linkedin: true
 
