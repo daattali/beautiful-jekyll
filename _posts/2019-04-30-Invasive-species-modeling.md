@@ -4,6 +4,43 @@ subtitle: PhD Research
 layout: post
 ---
 
+# Key resources
+
+## Reproducible project
+
+- [BES reproduciblity guide](https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf)
+- [My reproducible workflow]()
+
+### Science crisis publications
+
+- Nature
+- Science
+- PNAS
+
+## Software
+
+- [Rstudio](https://rstudio.com)
+- [vs-code](https://code.visualstudio.com)
+
+## Tools
+
+- [GIT](https://git-scm.com)
+- [GIThub desktop](https://github.com)
+- [Zotero](https://www.zotero.org)
+- [R](https://www.r-project.org)
+- [Jekyll](https://jekyllrb.com)
+- [JAGS](http://mcmc-jags.sourceforge.net)
+- [Slack](https://slack.com/intl/en-au/)
+- And all the normal processing tools
+
+## Science communication
+
+- [Research gate](https://www.researchgate.net)
+- [Website](https://davan690.github.io)
+- [FB statistics]()
+- [Twitter](https://twitter.com/antsstats)
+- [GIThub](https://davan690.github.io/)
+
 ### --- ALL MATERIAL IS DRAFT ONLY --
 
 # Thesis
