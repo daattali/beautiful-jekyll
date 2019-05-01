@@ -1,6 +1,6 @@
 ---
 title: "New Zealand beech forests"
-subtitle: "Data chapter 1"
+subtitle: "Draft material" 
 layout: post
 ---
 

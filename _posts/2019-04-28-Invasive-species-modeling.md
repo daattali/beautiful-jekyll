@@ -1,10 +1,8 @@
 ---
 title: "Invasive species modelling"
-subtitle: "PhD Research"
+subtitle: "Draft material"
 layout: page
 ---
-
-### --- ALL MATERIAL IS DRAFT ONLY --
 
 # Thesis
 
@@ -24,14 +22,14 @@ Post [here](https://davan690.github.io/2019-05-01-Key-thesis-objectives)
 Full layout: here currently but as the documents increase I will convert this into a bookdown document (and then a html book).
 
 * Introduction: [coming...](https://davan690.github.io/2019-05-02-Introduction-thesis)
-* Beech Forest Dynamics: [draft here](https://davan690.github.io/2019-05-01-beech-forest-pub-thesis)
-* Mixed Forest Dynamics: [coming](https://davan690.github.io/2019-05-04-mpd-forest-pub)
+* Beech Forest Dynamics: [draft here](https://davan690.github.io/2019-05-02-beech-forest-pub-thesis)
+* Mixed Forest Dynamics: [coming](https://davan690.github.io/2019-05-04-mpd-forest-pub-thesis)
 * DOC paper: [coming](https://davan690.github.io/2019-05-04-doc-pub-thesis)
 * Discussion: [coming]()
 
 ### Additional Chapters
 
-* Reproducibility in PFNZ2050: [here](https://davan690.github.io/2019-05-02-Introduction-thesis)
+* Reproducibility in PFNZ2050: [here](https://davan690.github.io/2019-05-08-reproducible-code)
 * Invasive species database: [here](https://davan690.github.io/2019-05-02-Introduction-thesis)
 * Choices in modelling population dynamics: [here]()
 
@@ -42,7 +40,7 @@ These pages and posts extend throughout the other pages on this site is well but
 ## Reproducible research projects
 
 - [BES reproduciblity guide](https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf)
-- [My reproducible workflow]()
+- [My reproducible workflow](https://davan690.github.io/2019-05-08-reproducible-code)
 
 ## GUIs
 
