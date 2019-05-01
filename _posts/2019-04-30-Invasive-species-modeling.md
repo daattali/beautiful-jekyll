@@ -4,43 +4,6 @@ subtitle: PhD Research
 layout: post
 ---
 
-# Key resources
-
-## Reproducible project
-
-- [BES reproduciblity guide](https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf)
-- [My reproducible workflow]()
-
-### Science crisis publications
-
-- Nature
-- Science
-- PNAS
-
-## Software
-
-- [Rstudio](https://rstudio.com)
-- [vs-code](https://code.visualstudio.com)
-
-## Tools
-
-- [GIT](https://git-scm.com)
-- [GIThub desktop](https://github.com)
-- [Zotero](https://www.zotero.org)
-- [R](https://www.r-project.org)
-- [Jekyll](https://jekyllrb.com)
-- [JAGS](http://mcmc-jags.sourceforge.net)
-- [Slack](https://slack.com/intl/en-au/)
-- And all the normal processing tools
-
-## Science communication
-
-- [Research gate](https://www.researchgate.net)
-- [Website](https://davan690.github.io)
-- [FB statistics]()
-- [Twitter](https://twitter.com/antsstats)
-- [GIThub](https://davan690.github.io/)
-
 ### --- ALL MATERIAL IS DRAFT ONLY --
 
 # Thesis
@@ -57,11 +20,18 @@ Post [here](https://davan690.github.io/2019-05-01-Key-thesis-objectives)
 
 ## Overall PhD
 
-Full layout [here](https://davan690.github.io/phd-thesis)
+Full layout: [here]()
+Introduction: [coming]()
+Beech Forest Dynamics: [here](https://davan690.github.io/phd-thesis)
+Mixed Forest Dynamics: [coming]()
+DOC paper: [coming]()
+Discussion: [coming]()
 
-### Contents page
+### Additional Chapters
 
-coming...
+Reproducibility in PFNZ2050: [here]()
+Invasive species database: [here]()
+Choices in modelling population dynamics: [here]()
 
 ## Introduction 1.1
 
@@ -139,6 +109,43 @@ The effects of incorrectly modelling observation and process error for PFNZ2050
 
 Overall conclusion
 
-## Key Resources
+# Key Resources
+
+## Reproducible project
+
+- [BES reproduciblity guide](https://www.britishecologicalsociety.org/wp-content/uploads/2017/12/guide-to-reproducible-code.pdf)
+- [My reproducible workflow]()
+
+### Science crisis publications
+
+- Nature
+- Science
+- PNAS
+
+## Software
+
+- [Rstudio](https://rstudio.com)
+- [vs-code](https://code.visualstudio.com)
+
+## Tools
+
+- [GIT](https://git-scm.com)
+- [GIThub desktop](https://github.com)
+- [Zotero](https://www.zotero.org)
+- [R](https://www.r-project.org)
+- [Jekyll](https://jekyllrb.com)
+- [JAGS](http://mcmc-jags.sourceforge.net)
+- [Slack](https://slack.com/intl/en-au/)
+- And all the normal processing tools
+
+## Science communication
+
+- [Research gate](https://www.researchgate.net)
+- [Website](https://davan690.github.io)
+- [FB statistics](https://facebook.com/StatisticsNetwork)
+- [Twitter](https://twitter.com/antsstats)
+- [GIThub](https://davan690.github.io/)
+
+## Example Journal Articles
 
 Here is an [example](https://github.com/davan690/PestManagement/blob/master/README.md) individual based pest modelling This is a `repo` from a recent publication on dynamic pest management from Dean Anderson and others.
