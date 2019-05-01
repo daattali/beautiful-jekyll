@@ -6,71 +6,6 @@ layout: post
 
 ### --- ALL MATERIAL IS DRAFT ONLY --
 
-# Thesis
-
-My PhD work involves modelling invasive species dynamics in NZ forests. There is more detail for my supervisors and colleagues.
-
-## Running title
-
-Population dynamics of interacting invasive species in New Zealand forests
-
-## Thesis Overview
-
-Post [here](https://davan690.github.io/2019-05-01-Key-thesis-objectives)
-
-## Overall PhD
-
-Full layout: [here]()
-Introduction: [coming]()
-Beech Forest Dynamics: [here](https://davan690.github.io/phd-thesis)
-Mixed Forest Dynamics: [coming]()
-DOC paper: [coming]()
-Discussion: [coming]()
-
-### Additional Chapters
-
-Reproducibility in PFNZ2050: [here]()
-Invasive species database: [here]()
-Choices in modelling population dynamics: [here]()
-
-## Introduction 1.1
-
-Invasive species database *A database (DB) for invasive species in New Zealand (NZ)*
-
-Creating a database of research to understand the current knowledge of observation and/or population level demographics of New Zealand invasive species.
-
-**NOTE:** This is already part of a standard literature review and if this does not get any further than that it is a bonus.
-
-## Introduction 1.2
-
-Dealing with Reproducibility *Why and how to make a reproducible workflow for invasive species research in New Zealand*
-
-This chapter creates a workflow that allows the ability to access and use the invasive species database in a reproducible way.... Etc etc
-
-Importance of reproducibility between community groups etc
-
-We also conduct a meta-analysis to shows that even though the time it takes to reproduce a workflow comes back THIS>...
-
-- Citation records (Google scholar and elsivear)
-- Collaborations (international vs domestic)
-- Outreach (twitter/fb).
-
-Packages used:
-
-- Revtools
-- Scholar
-- Python?
-
-## Data Chapter 1
-
-**Status:** [1st draft with Richard](https://www.dropbox.com/s/m5hte0n2vyl1dt2/Davidson_2019_BeechForest_19022019.docx?dl=0)
-
-### NZ beech forests
-
-*Merky forests. What can we expect from stoat control in NZ forests? - Food vs. Predation.*
-
-**Abstract:** This publication clarifies the discrepancy between; two modelling papers that suggest mesopredator release of rodents is possible in New Zealand forest systems and; several field studies that have presented limited but conflicting support for increases in mouse abundance following predator control. We used an experimental design to test the differences between the two "frames of though" and found that there is no evidence to suggest mice will become more abundant after predator removal ([*additional resources can be found here*](https://davan690.github.io/)).
-
 ## Data Chapter 2
 
 *A more complex set of interreacting invasive species.*
@@ -95,19 +30,21 @@ AIMS:
 
 Research on the same dataset has investigated differences in the abundance indices for invasive species (Ruscoe et al. 2011). The response of invertebrates to different invasive species control was also investigated (Ruscoe et al. 2012). I will extend on these analyses to build an overall model incorporating the additional invasive species  My GIT account is a work in  [progress](https://github.com/davan690/).
 
-## Data Chapter 3
+# Overall PhD
 
-*A more complex set of interreacting invasive species and reduced data quality*
+Full layout: here currently but as the documents increase I will convert this into a bookdown document (and then a html book).
 
-**Status:** [Planning stage]()
+Introduction: [coming...]()
+Beech Forest Dynamics: [draft here](https://davan690.github.io/phd-thesis)
+Mixed Forest Dynamics: [coming]()
+DOC paper: [coming]()
+Discussion: [coming]()
 
-## Apllication chapter
+### Additional Chapters
 
-The effects of incorrectly modelling observation and process error for PFNZ2050
-
-## Dicussion chapter
-
-Overall conclusion
+Reproducibility in PFNZ2050: [here]()
+Invasive species database: [here]()
+Choices in modelling population dynamics: [here]()
 
 # Key Resources
 
