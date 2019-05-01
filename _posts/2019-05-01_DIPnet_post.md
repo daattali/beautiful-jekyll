@@ -3,7 +3,7 @@ layout: post
 title: The Diversity of the Indo-Pacific Network 
 author: Eric Crandall
 ---
-![](dipnet_color_300px.png)
+![](../img/dipnet_color_300px.png)
 
 Stretching from East Africa to Easter Island (Rapa Nui), the tropical Indo-Pacific is the largest biogeographic region in the world! Like a bullseye in the middle of the Indo-Pacific, right in the Indo-Malay-Philippines Archipelago, sits the Coral Triangle: the site of highest marine biodiversity in the world. Biodiversity declines in all directions as you move away from the Coral Triangle, creating a spectacular gradient of species diversity that characterizes the whole Indo-Pacific. The processes underlying this gradient are a persistent source of inquiry for biodiversity scientists around the world, and yet, despite its massive size and diversity, the Indo-Pacific ranks fifth among major marine regions for scientific studies on marine ecology and evolution ![Figure 1](../img/Indo_Pacific_SSI.jpg).
 
