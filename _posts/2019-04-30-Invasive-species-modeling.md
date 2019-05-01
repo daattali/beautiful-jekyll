@@ -6,9 +6,9 @@ layout: post
 
 My PhD work involves modelling invasive species dynamics in NZ forests. There is more detail for my supervisors and colleagues.
 
-### ALL MATERIAL IS DRAFT ONLY
+### --- ALL MATERIAL IS DRAFT ONLY ---
 
-**Title:** Population dynamics of interacting invasive species in New Zealand forests
+Population dynamics of interacting invasive species in New Zealand forests
 
 ## Thesis Overview
 
