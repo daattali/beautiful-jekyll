@@ -9,15 +9,16 @@ title: "Statistics"
 [Ecological statistics](https://davan690.github.io/2019-04-27-Ecological-statistics/)
 - Resources I use for my PhD
 
-[Invasive species research](https://davan690.github.io/2019-04-30-Invasive-species-modeling/)
+[Invasive species research](https://davan690.github.io/2019-04-28-Invasive-species-modeling/)
 - My phd research
 - Draft manuscripts
 
 [Reproducibility](https://www.nature.com/articles/d41586-019-00067-3/)
 - coming soon
+- [poor draft](https://davan690.github.io/2019-05-08-reproducible-code.md/)
 
 [Coding Sessions](https://ourcodingclub.github.io/)
-- coming soon
+- proposal coming soon
 
 [Bio-informatics]("https://en.wikipedia.org/wiki/Bioinformatics/)
 - a little bit in this [page](https://davan690.github.io/2019-04-27-Ecological-statistics/)

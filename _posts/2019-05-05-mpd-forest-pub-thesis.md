@@ -1,6 +1,6 @@
 ---
 title: "Mixed-forest dynamics"
-subtitle: "Data Chapter 2"
+subtitle: "Draft" 
 layout: post
 ---
 
