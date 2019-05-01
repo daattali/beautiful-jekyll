@@ -10,14 +10,14 @@ The website is a learning resource for thoughts, questions, analysis and results
 
 # Contact
 
-*Contact me* if you have any ideas or would like can contribute in any way
+*Contact me* if you have any ideas or would like to contribute in any way:
 
-[Comment]("") on social media
+[Comment](https:/facebook.com/StatisticsNetwork/) on social media
 
 **or**
 
-[Email]("anthony.davidson@canberra.edu.au") any points that don't make sense.
+[Email](anthony.davidson@canberra.edu.au") any points that don't make sense.
 
 **or even better**
 
-[Fork]("https://github.com/davan690") the repository and add any comments via git commits.
+[Fork](https://github.com/davan690) the repository and add any comments via git commits.
