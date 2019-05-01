@@ -1,6 +1,6 @@
 ---
 title: "Key thesis objectives"
-subtitle: PhD Research
+subtitle: "PhD Research"
 layout: post
 ---
 

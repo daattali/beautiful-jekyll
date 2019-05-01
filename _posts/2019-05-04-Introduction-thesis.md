@@ -1,6 +1,6 @@
 ---
-title: "Invasive species modelling"
-subtitle: PhD Research
+title: "Thesis introduction"
+subtitle: "PhD Research"
 layout: post
 ---
 

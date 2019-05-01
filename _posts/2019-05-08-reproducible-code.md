@@ -1,45 +1,8 @@
 ---
-title: 'Reproducible code'
-subtitle: 'Draft'
-Author One: Anthony Davidson, anthony.davidson@canberra.edu.au
-date: "April 2019"
-output:
-  html_document:
-    theme: journal
-  pdf_document: default
-  word_document:
-    fig_caption: yes
-editor_options:
-  chunk_output_type: console
-bibliography: reproduce.bib
+title: "Reproducible workflow"
+subtitle: "Science"
+layout: post
 ---
-
-```{r global-options, message=FALSE, warning=FALSE, include=FALSE}
-# export .r code only
-# knitr::purl("./Davidson_2019_BeechForest.Rmd")
-
-# render draft to webpage
-# rmarkdown::render(input = "Davidson_2019_BeechForest.Rmd",
-#                   output_format = "html_document",
-#                   output_file = "Davidson_2019_t.html")
-
-#document global rules
-knitr::opts_chunk$set(comment=NA,
-                      echo=FALSE,
-                      message=FALSE, 
-                      warning=FALSE)
-# how do I do this??
-# ,eval = FALSE,include = FALSE
-
-# libraries needed
-# source("./Rcode/r-packages-needed.R", echo = FALSE)
-
-# themes
-# source("./Rcode/davidson-2019-theme.r", echo = FALSE)
-
-#overall code
-# source("./Rcode/manuscript-source-code.R", echo = FALSE)
-```
 
 There are many many different posts on reproducible workflows. This document collects the current resources avaliable in R and RMarkdown. I have developed this document from a combination of different git repositories:
 
