@@ -1,14 +1,14 @@
 ---
 title: "Invasive species modelling"
-subtitle: PhD Research
-layout: post
+subtitle: "PhD Research"
+layout: page
 ---
 
 ### --- ALL MATERIAL IS DRAFT ONLY --
 
 # Thesis
 
-My PhD work involves modelling invasive species dynamics in NZ forests. There is more detail for my supervisors and colleagues. Please excuse all the '404' errors as I am learning and working as I go. 
+My PhD work involves modelling invasive species dynamics in NZ forests. There is more detail for my supervisors and colleagues. Please excuse all the '404' errors as I am learning and working as I go. Using version control and git means that I am able to use other coders templates and test things out before committing.
 
 ## Running title
 

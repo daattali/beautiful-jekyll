@@ -1,6 +1,6 @@
 ---
-title: "Invasive species modelling"
-subtitle: PhD Research
+title: "DOC species modelling"
+subtitle: "Data Chapter 3"
 layout: post
 ---
 
@@ -11,7 +11,6 @@ layout: post
 *A more complex set of interreacting invasive species and reduced data quality*
 
 **Status:** [Planning stage]()
-
 
 # Overall PhD
 

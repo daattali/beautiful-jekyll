@@ -1,18 +1,16 @@
 ---
-title: "Invasive species modelling"
-subtitle: PhD Research
+title: "Mixed-forest dynamics"
+subtitle: "Data Chapter 2"
 layout: post
 ---
 
 ### --- ALL MATERIAL IS DRAFT ONLY --
 
-## Data Chapter 2
-
-*A more complex set of interreacting invasive species.*
+*A more complex set of interacting invasive species.*
 
 **Status:** [Analysis underway](https://www.dropbox.com/s/fm57ns1jndmkmq1/Davidson_2019_mpd_manuscript.docx?dl=0)
 
-### NZ mixed forests
+# NZ mixed forests
 
 **Background:** This chapter will extend on the modelling explored for the beech forest system (Chapter Two). Previous research has shown that complex interactions between native and exotic species exist in NZ mixed forest systems (Ruscoe et al. 2011; Ruscoe et al. 2012). This chapter parametrises a model to account for these different interactions in an extension of the beech forest model in the previous chapter to account for different food resources and other invasive species dynamics.
 
