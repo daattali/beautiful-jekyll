@@ -4,31 +4,27 @@ subtitle: PhD Research
 layout: post
 ---
 
+### --- ALL MATERIAL IS DRAFT ONLY --
+
+# Thesis
+
 My PhD work involves modelling invasive species dynamics in NZ forests. There is more detail for my supervisors and colleagues.
 
-### --- ALL MATERIAL IS DRAFT ONLY ---
+## Running title
 
 Population dynamics of interacting invasive species in New Zealand forests
 
 ## Thesis Overview
 
-The overarching aim of this PhD is to examine the role of predation, competition and resource flow in regulating invasive mammal populations in NZ forests. This research can then be used support other forecasting models to estimate the likely effects of species removals on the objectives set by the government of New Zealand under “Predator Free New Zealand 2050 (PFNZ2050).
+Post [here](https://davan690.github.io/2019-05-01-Key-thesis-objectives)
 
-To do this I will construct ecological models that describe the population dynamics of interacting invasive species in New Zealand forests. I will use the understanding derived from these models to predict the effects of management manipulations and reduce the likelihood of unanticipated outcomes. Aligning this ecological research with good research practise that insures the results are reproducible and replicable by allowing open access to statistical code and analysis.
+## Overall PhD
 
-## Key points this thesis will cover
+Full layout [here](https://davan690.github.io/phd-thesis)
 
-In this thesis I will use observed data to build ecosystem models that allow researchers to directly quantify the interactions among invasive species (Peng 2015).
+### Contents page
 
-1. To build a research synthesis database of the theoretical relationships proposed in over 100 years of conservation research in NZ and the experimental work supporting these models. We need a uniform set of models and notation to develop from (e.g. Holland et al. 2015; Ruscoe et al. 2005; Choquenot & Ruscoe 2000; Ruscoe et al. 2004; King et al. 2003).
-
-2. Use a combined theoretical modelling and experimental approach to clarify the outcomes of invasive species control in three large-scale ecological datasets (Chapters 2,3,4). I build and test previous research that has attempted to characterize these interactions between invasive species, resources and native species in New Zealand Forests (Choquenot & Ruscoe 2000 + +).
-
-3. Advances in ecological modelling tools have opened up opportunities to assess and parameterize theoretical models from observational data (King 2012). Along with this comes the correct partitioning of observation and process error. We use statistical software such as JAGS (Plummer 2010), WinBUGS (Suess & Trumbo 2010) and STAN (STAN development Team 2015) to develop the understanding of how these sources of error may effect the goals and targets of conservation managers and researchers alike.
-
-## Thesis introduction
-
-Overall PhD summary **Have started first draft in GIThub**
+coming...
 
 ## Introduction 1.1
 
