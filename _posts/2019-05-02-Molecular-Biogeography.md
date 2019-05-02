@@ -14,7 +14,7 @@ I'm afraid our results are a bit of a mess (Figure 2). There was no clear "winne
 
 ![(Figure 2 - Histogram of species support for each regionalization)](../img/PHIST_Bars.jpg)
 
-In the end, we took a look at the large regions hypothesized by both Briggs and Bowen (2012) and Spalding et al. (2007), and measured pairwise $\Phi_(st)$ across each of the boundaries (Figure 3). Sure enough, we found median $\Phi_(st)$ to be less than 0.025 across all of these putative "barriers." That doesn't mean that there is high (or even any) gene flow between these populations though. I did a simple set of coalescent simulations for a population with 500K effective individuals which split 10K generations ago into two populations of 250K with no gene flow between them. Median $\Phi_(st)$ for this set of simulations was 0.023 - right in line with what we observed across the putative barriers.
+In the end, we took a look at the large regions hypothesized by both Briggs and Bowen (2012) and Spalding et al. (2007), and measured pairwise $\Phi_{st}$ across each of the boundaries (Figure 3). Sure enough, we found median $\Phi_(st)$ to be less than 0.025 across all of these putative "barriers." That doesn't mean that there is high (or even any) gene flow between these populations though. I did a simple set of coalescent simulations for a population with 500K effective individuals which split 10K generations ago into two populations of 250K with no gene flow between them. Median $\Phi_(st)$ for this set of simulations was 0.023 - right in line with what we observed across the putative barriers.
 
 ![(Figure 3 - Median PHI_st and bootstrapped 95% CI across each of 5 putative Indo-Pacific Barriers )](../img/phist_medians.jpg)
 
