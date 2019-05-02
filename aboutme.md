@@ -1,16 +1,32 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Jason "The Developer" Devore
+permalink: /aboutme/
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+This is the web site of Jason Devore: Python developer.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Social Media
 
-What else do you need?
+[Github](https://github.com/jasondevelops)
 
-### my history
+[Twitter](https://twitter.com/jason_develops)
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+[linkedIn](https://www.linkedin.com/in/jason-develops/)
+
+### Pronouns
+
+he/him/his
+
+### Current Location
+
+Kansas City Metro Area
+
+### Skills
+
+Python with an emphasis on the Django web application framework. JavaScript. C#. HTML. CSS. SQL. Linux with emphasis in Debian and Ubuntu.
+
+### Hobbies
+
+Bicycling. Electronic music production. Dancing. Gardening. Web design.
