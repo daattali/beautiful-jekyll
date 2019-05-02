@@ -4,6 +4,7 @@ title:  "First Post"
 date:   2015-10-12 14:00:00
 categories:
 excerpt: "The first post for the blog detailing why I am creating it and what the reader can expect."
+image: /img/young-me.png
 tags: meta
 ---
 Greetings, netizens! I am Jason Devore, the Developer (or just "Jason Developer" to keep things short). Welcome to my blog!
