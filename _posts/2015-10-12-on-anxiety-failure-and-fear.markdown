@@ -4,6 +4,7 @@ title:  "On Anxiety, Failure, and Fear"
 date:   2015-10-12 15:00:00
 categories:
 excerpt: "This essay is my outlook on how anxiety, failure, and fear relate to each other and what can be done to overcome them."
+image: /img/dark-storm.png
 tags: personal
 ---
 >I must not fear.
