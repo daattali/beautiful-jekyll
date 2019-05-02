@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About Me
-subtitle: Jason "The Developer" Devore
+subtitle: Who is Jason "The Developer" Devore?
 permalink: /aboutme/
 ---
 
-This is the web site of Jason "The Developer" Devore.
+Greetings! My name is Jason Devore and I am a software developer with expertise in Python and Django. I have over a decade in professional software experience across a variety of problem domains including educational, engineering, and financial sectors.
 
 ### Social Media
 
 
-[Github](https://github.com/jasondevelops)
+[Github](https://github.com/devoredevelops)
 
 [LinkedIn](https://www.linkedin.com/in/jason-develops/)
 
@@ -24,10 +24,26 @@ he/him/his
 
 Kansas City Metro Area
 
-### Skills
+### Skills (in order of importance)
 
-Python with an emphasis on the Django web application framework. JavaScript. C#. HTML. CSS. SQL. Linux with emphasis in Debian and Ubuntu.
+* Python (Django)
+* JavaScript (AngularJS, jQuery)
+* SQL (MySQL, PostgreSQL, SQL Server)
+* Linux (CentOS, Debian, Ubuntu)
+* Ansible
+* Docker
+* Shell Script (BASH)
+* Git (GitLab, GitHub)
+* HTML
+* CSS
 
 ### Hobbies
 
-Bicycling. Electronic music production. Dancing. Gardening. Web design.
+* Music production
+* Bicycling
+* Web design
+* Gardening
+
+### Contact
+
+My resume is available upon request: please email me at ```sayhello ≪at≫ devoredevelops ≪dot≫ com``` for inquiries.
