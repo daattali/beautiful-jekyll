@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Welcomed to San Francisco!"
+title:  "Welcomed to San Francisco"
 date:   2016-04-09 11:00:00
 categories:
-excerpt: "First post in a series about a week-long vacation in San Francisco staying at a hacker hostel."
+excerpt: "My vacation in San Francisco."
+image: /img/postmates.png
 tags: personal
 ---
 I have found myself in South of Market staying at a hacker hostel for over a week. While most stay here for business purposes, my trip is for pleasure. I'm visiting a friend form high school to attend a concert and explore the area with her.
