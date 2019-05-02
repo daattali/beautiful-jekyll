@@ -1,19 +1,20 @@
 ---
 layout: page
-title: About me
+title: About Me
 subtitle: Jason "The Developer" Devore
 permalink: /aboutme/
 ---
 
-This is the web site of Jason Devore: Python developer.
+This is the web site of Jason "The Developer" Devore.
 
 ### Social Media
 
+
 [Github](https://github.com/jasondevelops)
 
-[Twitter](https://twitter.com/jason_develops)
+[LinkedIn](https://www.linkedin.com/in/jason-develops/)
 
-[linkedIn](https://www.linkedin.com/in/jason-develops/)
+[Twitter](https://twitter.com/jason_develops)
 
 ### Pronouns
 
