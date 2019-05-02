@@ -1,9 +1,26 @@
 # --- General options --- #
 
+<<<<<<< HEAD
+=======
+# url is the full website URL
+# baseurl is the website's URL without the hostname
+
+# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
+url: "https://jasondevelops.com"
+baseurl: ""
+
+# If you are building a GitHub project page then use these settings:
+#url: "http://username.github.io/projectname"
+#baseurl: "/projectname"
+
+# Of course don't forget to change the username and projectname to YOUR username and project
+
+>>>>>>> Update options
 # Name of website
-title: My website
+title: 👨🏻‍💻 JasonDevelops.com 
 
 # Short description of your site
+<<<<<<< HEAD
 description: A virtual proof that I'm awesome
 
 # --- Local development options ---
@@ -15,20 +32,26 @@ description: A virtual proof that I'm awesome
 
 # baseurl should be an empty string
 #baseurl: ""
+=======
+description: Personal Web Site of Jason Devore
+>>>>>>> Update options
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+<<<<<<< HEAD
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
   Author's home: "http://deanattali.com"
+=======
+>>>>>>> Update options
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/headshot-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -60,7 +83,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: Jason Devore
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -68,12 +91,22 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
+<<<<<<< HEAD
   email: "someone@example.com"
   facebook: deanattali
   github: daattali
   twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
+=======
+  email: "sayhello@jasondevelops.com"
+  # facebook: daattali
+  github: jasondevelops
+  twitter: jason_develops
+#  reddit: yourname
+#  google-plus: +DeanAttali
+  linkedin: jason-develops
+>>>>>>> Update options
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -93,7 +126,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "JasonDevelops.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -156,7 +189,7 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
