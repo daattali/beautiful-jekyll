@@ -4,6 +4,7 @@ title:  "From Information Systems to Computer Science"
 date:   2015-11-01 18:30:00
 categories:
 excerpt:  "This article covers how I intend to continue my education by improving my understanding of computer science principals."
+image: /img/belleville-personal-computer.png
 tags: technology, education, computer science, information systems
 ---
 A little background: I was introduced to writing HTML at the age of ten by a friend of mine. We wrote web pages using his dad’s 386 (with a turbo button, which I loved pressing) with Windows 95, a 28.8k dial-up connection and a program called [Aracnophylia](http://www.arachnoid.com/arachnophilia/index.php). Over several years, my friends and I were posting regularly to our web sites hosted on [Maxpages](http://www.screenshots.com/maxpages.com/2005-07-15), [Angelfire](http://www.angelfire.lycos.com/), [GeoCities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities), and more. In my mid-teenage years, I spent more time designing layouts and customizing the perl-based content management systems that ran on shared hosting services. Without this hobby, I may have never gotten into technology and programming as a career in the first place. Looking back, I can’t imagine doing anything else now.
