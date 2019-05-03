@@ -5,7 +5,7 @@ date:   2015-10-12 14:00:00
 categories:
 excerpt: "The first post for the blog detailing why I am creating it and what the reader can expect."
 image: /img/young-me.png
-tags: meta
+# tags: meta
 ---
 Greetings, netizens! I am Jason "The Developer" Devore. Welcome to my blog!
 
