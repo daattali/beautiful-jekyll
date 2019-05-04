@@ -19,6 +19,6 @@ KK Jagadeesan, C Wierzbicka, T Laurell, B Sellergren, S Shinde, **Multiplexed MA
 
 #### 2013
 
-S Kumar, KK Jagadeesan, AG Joshi, G Sumana, **Immuno-CoPS (conducting paper strips) for futuristic cost-effective cancer diagnostics* _Rsc Advances_ 3 (29), 11846-11853	2013
+S Kumar, KK Jagadeesan, AG Joshi, G Sumana, **Immuno-CoPS (conducting paper strips) for futuristic cost-effective cancer diagnostics** _Rsc Advances_ 3 (29), 11846-11853	2013
 
-KK Jagadeesan, S Kumar, G Sumana **Application of conducting paper for selective detection of troponin** _Electrochemistry Communications_
+KK Jagadeesan, S Kumar, G Sumana [**Application of conducting paper for selective detection of troponin**](https://www.sciencedirect.com/science/article/pii/S1388248112001403) _Electrochemistry Communications_ 20, 71-74
