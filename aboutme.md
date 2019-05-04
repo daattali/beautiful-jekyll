@@ -3,7 +3,7 @@ layout: page
 title: Kishore Jagadeesan
 ---
 
-##  Postdoctoral Research Associate, [Environmental Chemistry & Public Heath Research Group](https://kasprzykhordern.wordpress.com/), Department of Chemistry, University of Bath, UK 
+###  Postdoctoral Research Associate, [Environmental Chemistry & Public Heath Research Group](https://kasprzykhordern.wordpress.com/), Department of Chemistry, University of Bath, UK 
 
 ### Education
 * Ph.D (2017), Biomedical Engineering, [University of Bath](http://bme.lth.se/)
