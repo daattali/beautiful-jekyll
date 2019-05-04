@@ -1,13 +1,18 @@
 ---
 layout: page
-title: 
-subtitle: Kishore Jagadeesan
+title: About me
+css: "/css/aboutme.css"
 ---
-### About me:
 
-#### Postdoctoral Research Associate in [Environmental Chemistry & Public Heath Research Group](https://kasprzykhordern.wordpress.com/), Department of Chemistry, University of Bath, UK 
+<div id="aboutme-section">
 
-#### Education
-* Ph.D (2017), Biomedical Engineering, [University of Bath](http://bme.lth.se/)
-* M.Sc (1992), Analytical chemistry, [University of Madras](http://www.unom.ac.in/)
-* B.Sc (1989), Chemistry, [PSG College of Arts and Science, Coimbatore](http://www.psgcas.ac.in/)
+<p class="about-text">
+<span class="fa fa-briefcase about-icon"></span>
+Currently a <a href="/shiny"><strong>Postdoctoral Research Associate</strong></a> in <a href="https://kasprzykhordern.wordpress.com/" target="_blank"> Environmental Chemistry & Public Heath Research Group </a>, Department of Chemistry, University of Bath, UK 
+</p>
+
+<p class="about-text">
+<span class="fa fa-graduation-cap about-icon"></span>
+Finished my PhD in <strong>Biomedical Engineering</strong> from the Lund University. My PhD thesis involved screening of solid-phase extraction materials using mass spectrometry and developed MALDIViz, a comprehensive informatics tool for handling dataset from the screening studies.</p>
+
+</div>
