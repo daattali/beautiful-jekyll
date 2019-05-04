@@ -21,15 +21,16 @@ description: Kishore's Personal website
 
 # --- Navigation bar options --- #
 
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/kish_01.png"
+
 # List of links in the navigation bar
 navbar-links:
   Home: ""
   About Me: "aboutme"
   Projects: "projects"
   
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/kish_01.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -72,6 +73,7 @@ social-network-links:
   email: "jkkishore85@gmail.com"
   facebook: kishorechemist
   github: jkkishore85
+  og_image: "/img/kish_01.png"
 # twitter: jkkishore85
 #  reddit: yourname
 #  google-plus: +DeanAttali
