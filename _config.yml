@@ -29,7 +29,8 @@ avatar: "/img/kish_01.png"
 navbar-links:
   Home: ""
   About Me: "aboutme"
-  Projects: "projects"
+  Projects: 
+    - MALDIViz: "https://jkkishore85.shinyapps.io/maldiviz/"
   
 
 # If you want to have an image logo in the top-left corner instead of the title text,
