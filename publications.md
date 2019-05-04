@@ -10,9 +10,13 @@ M Duarte, KK Jagadeesan, J Billing, E Yilmaz, T Laurell and S Ekström *Solid-ph
 
 KK Jagadeesan, C Rossetti, AA Qader, L Reubsaet, B Sellergren, T Laurell and S Ekström *Filter Plate–Based Screening of MIP SPE Materials for Capture of the Biomarker Pro-Gastrin-Releasing Peptide* _SLAS Discovery_	2017
 
+##### 2016
+
 X Shen, C Huang, S Shinde, KK Jagadeesan, S Ekström, E Frit,  *Catalytic formation of disulfide bonds in peptides by molecularly imprinted microgels at oil/water interfaces* _ACS applied materials & interfaces_ 8 (44), 30484-30491	2016
 
 KK Jagadeesan, C Wierzbicka, T Laurell, B Sellergren, S Shinde, *Multiplexed MALDI-MS arrays for screening of MIP solid phase extraction materials* _Journal of Chromatography B_ 1021, 213-220 2016
+
+###### 2013
 
 S Kumar, KK Jagadeesan, AG Joshi, G Sumana, *Immuno-CoPS (conducting paper strips) for futuristic cost-effective cancer diagnostics* _Rsc Advances_ 3 (29), 11846-11853	2013
 
