@@ -594,6 +594,63 @@ footer .theme-by {
   }
 }
 
+/* --- Post and page layout --- */
+
+header.header-page {
+  margin-bottom: 20px;
+}
+
+header.header-page .page-heading {
+  text-align: center;
+}
+
+header.header-post .post-heading h1 {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+header.header-page .page-heading h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+header.header-post .post-heading .post-subheading,
+header.header-page .page-heading .page-subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+
+header.header-post .post-heading .post-subheading {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  header.header-post .post-heading h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header.header-page .page-heading h1 {
+    font-size: 50px;
+  }
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 /* --- Pager --- */
 
 .pager li a {
