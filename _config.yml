@@ -31,6 +31,7 @@ navbar-links:
   About Me: "aboutme"
   Projects: 
     - MALDIViz: "https://jkkishore85.shinyapps.io/maldiviz/"
+  Publications: "publications"
   
 
 # If you want to have an image logo in the top-left corner instead of the title text,
