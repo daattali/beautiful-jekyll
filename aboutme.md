@@ -13,6 +13,6 @@ Currently a <strong>Postdoctoral Research Associate</strong> in <a href="https:/
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-Finished my PhD in <strong>Biomedical Engineering</strong> from the Lund University. My PhD thesis involved screening of solid-phase extraction materials using mass spectrometry and developed <a href="/MALDIViz"><strong>MALDIViz</strong></a>, a comprehensive informatics tool for handling dataset from the screening studies.</p>
+<strong>PhD (Biomedical Engineering)</strong> from Lund University. My PhD thesis involved development of high-throughput Mass spectrometry method to screen solid-phase extraction materials and developed <a href="/MALDIViz"><strong>MALDIViz</strong></a>, a comprehensive informatics tool for handling dataset from the screening studies.</p>
 
 </div>
