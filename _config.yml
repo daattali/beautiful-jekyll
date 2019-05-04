@@ -14,20 +14,22 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Kishore Jagadeesan's Website
+title: Kishore Jagadeesan
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Kishore's Personal website
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
+  Home: ""
   About Me: "aboutme"
+  Projects: "projects"
   
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/kish_01.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -70,7 +72,7 @@ social-network-links:
   email: "jkkishore85@gmail.com"
   facebook: kishorechemist
   github: jkkishore85
-  twitter: jkkishore85
+# twitter: jkkishore85
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  linkedin: daattali
@@ -153,7 +155,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "United Kingdom/London"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
