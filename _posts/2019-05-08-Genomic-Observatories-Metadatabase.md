@@ -4,7 +4,7 @@ title: Genomic Observatories Metadatabase (GeOMe)
 author: Eric Crandall
 ---
 
-![GeOMe Logo](Logo_1_RGB.jpg)
+![GeOMe Logo](../img/Logo_1_RGB.jpg)
 
 For my last post, I wanted to talk about metadata. These are the data that describe the who, what, where and how of the genomic data that we submit to Genbank SRA and/or to Dryad. Despite efforts by journals to require that this information be submitted alongside the genetic data, many papers provide minimal information: Pope et al. (2015) found that 31% of papers in Molecular Ecology did not provide enough information to recreate the analysis.
 
