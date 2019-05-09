@@ -212,8 +212,7 @@ img {
 }
 
 .container-fluid  {
-  padding-left: max(15px, env(safe-area-inset-left));
-  padding-right: max(15px, env(safe-area-inset-right));
+  padding: 50px;
 }
 
 /* Multi-level navigation links */
