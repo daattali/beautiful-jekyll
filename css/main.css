@@ -212,8 +212,8 @@ img {
 }
 
 .container-fluid  {
-  padding-left: min(15px, env(safe-area-inset-left));
-  padding-right: min(15px, env(safe-area-inset-right));
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Multi-level navigation links */
