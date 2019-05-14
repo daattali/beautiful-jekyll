@@ -104,7 +104,7 @@ Many personalization settings in `_config.yml`, such as setting your name and si
 
 ### Allowing users to leave comments
 
-If you want to enable comments on your site, Beautiful Jekyll supports either the [Disqus](https://disqus.com/) comments plugin, [Facebook](https://developers.facebook.com/docs/plugins/comments) comments, [Staticman](https://staticman.net) or [just-comments](https://just-comments.com). If any of these are set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
+If you want to enable comments on your site, Beautiful Jekyll supports either the [Disqus](https://disqus.com/) comments plugin, [Facebook](https://developers.facebook.com/docs/plugins/comments) comments, [Staticman](https://staticman.net) or [JustComments](https://just-comments.com). If any of these are set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
 
 #### Disqus comments
 
@@ -118,9 +118,9 @@ To use Facebook comments, create a Facebook app using [Facebook developers](http
 
 To use Staticman, you first need to invite `staticmanlab` as a collaborator to your repository (by going to your repository **Settings** page, navigate to the **Collaborators** tab, and add the username `staticmanlab`), and then accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`. Lastly, fill in your `repository` and `branch` in the Staticman section of `_config.yml`.
 
-#### Just-Comments comments
+#### JustComments
 
-To use Just-comments you first need to have an account. After you just need to copy the API key to the just-comments property in `_config.yml` file.
+To use JustComments you first need to have an account. After you just need to copy the API key to the `just-comments` property in `_config.yml` file.
 
 ### Adding Google Analytics to track page views
 
