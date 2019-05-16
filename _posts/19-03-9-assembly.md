@@ -9,33 +9,7 @@ permalink: /_asm_/
 অ্যাসেম্বলি এর ঝামেলা মুক্ত করার উপায় বের করার জন্য ! `কোড` নিয়েই কথা হবে । 
 
 # যোগ এর প্রোগ্রাম দিয়ে শুরু হোক
-```asm
-INCLUDE 'EMU8086.INC'   ;
-.MODEL SMALL            ;
-.STACK 100H             ;  এগুলু ফরয ! মুখস্ত করে নেন ।
-.CODE                   ;
-MAIN PROC               ; 
 
-    PRINT 'ENTER X : '      ;  PRINT SIMPLY PRINT WHICH IS GIVEN BY YOU 
-1   MOV AH,1                ;
-2   INT 21H                 ;   INPUT X
-3   MOV BL,AL
-    
-    PRINTN 
-    PRINT 'ENTER Y : '
-4   MOV AH,1                ;  
-5   INT 21H                 ;   INPUT Y
-6   MOV BH,AL
-    
-7   ADD BL,BH               ; ADD means BL = BL + BH 
-8   SUB BL,30H              ; SUB means BL = BL - 30H
-    
-    PRINTN                  ; PRINTN REFERS TO NEW LINE
-    PRINT 'RESULT : '
-9     MOV AH,2              ;   OUTPUT 
-10    MOV DL,BL             ;   OUTPUT 
-11    INT 21H
-```
 > হাবিজাবি কি এসব ? 
  
 >> দেখি কি হয় । 
