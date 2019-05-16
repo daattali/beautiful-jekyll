@@ -11,7 +11,7 @@ I will keep updating this post with new issues that worth the tale so I hope not
 
 ### Issue #1: A taste of apocalypse
 
-* **_Root cause:_** _Horizon View: 7.4.0 7400497 version problem_
+* **_Root cause:_** _Horizon View: 7.4.0 - 7400497 buggy version_
 
 [The first issue](https://communities.vmware.com/thread/591103 "Call of duty: Horizon View") I encountered was really bad. Whenever the connection servers would lose connectivity to vCenter, even for a short amount of time, everything would go awol. Errors all over the place, no provisioning, a real battlefield with body parts everywhere. Proper messy. The only way to fix it was to shut down everything in the right order and power it back on. Not "ideal" in production... VMware later provided us with a hotfix (_7.4.0 8741716_) and it's been ok since then. Fingers crossed.
 
@@ -29,7 +29,7 @@ VMware confirmed and recommended to upgrade the firmware driver of this controll
 
 ### Issue #3: Because why not
 
-* **_Root cause:_** _Unknown - Upgrade recommended by VMware_
+* **_Root cause:_** _Unknown - Upgrade recommended by VMware support_
 
 This third riot is rather fresh. I was happily updating the VMtools and compatibility of the connection server VMs in the second pod after our 6.5 migration. One by one. Every time I wait for it to come back to green in the admin console and I move on to the next one. I was laughing.
 
