@@ -7,11 +7,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+<<<<<<< HEAD
       {%- if site.title-img -%}
         <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
       {%- else -%}
         <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
       {%- endif -%}
+=======
+      {% if site.title-img %}
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
+      {% else %}
+        <a class="navbar-brand" href="{{ site.url }}">👨‍💻{{ site.title }}</a>
+      {% endif %}
+>>>>>>> Update site title
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
