@@ -20,7 +20,7 @@ The best thing about blogs is that people share what they learn, make tutorials 
 </a>
 </p>
 
-I am passionate in new technologies in general but my heart goes to virtualization for which I grew a real interest and is in a way the foundation of every growing IT technologies nowadays. Containers, clouds, SDS, SDN, you name it, 95% chances that there is a hypervisor somewhere in the background. When time allows it I run nested labs to test new features and products for potential implementation in my professional environment... or just to try new cool stuff.
+I am passionate in new technologies in general but my heart goes to virtualization for which I grew a real interest and is in a way the foundation of every growing IT technologies nowadays. Containers, clouds, SDS, SDN, you name it, 95% chances that there is a hypervisor somewhere in the background. When time permits I run nested labs to test new features and products for potential implementation in my professional environment... or just to try new cool stuff with no real purpose.
 
 I hope you find what you are after in this blog and learn some stuff along the way, Cheers!
 
