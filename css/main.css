@@ -22,7 +22,7 @@ p {
   margin: 30px 0;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-weight: 800;
 }
 a {
@@ -472,7 +472,6 @@ footer .theme-by {
   transition: opacity 1s linear;
 }
 .intro-header .page-heading {
-  font-family: 'Pacifico', cursive;
   text-align: center;
 }
 .intro-header.big-img .page-heading,
