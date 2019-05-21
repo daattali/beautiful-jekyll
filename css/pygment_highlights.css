@@ -70,13 +70,13 @@
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
 
 code {
-  background-color: "#282C34";
-  color: whitesmoke;
+  background-color: "#282C34" !important;
+  color: whitesmoke !important;
 }
 
 pre {
-  background-color: "#282C34";
-  color: whitesmoke;
+  background-color: "#282C34" !important;
+  color: whitesmoke !important;
 }
 
 /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
