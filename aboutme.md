@@ -7,9 +7,9 @@ subtitle: Here's a little about me
 My name is Steven Graham. I am a distinguished computer engineer with a life long passion for computing and technology.
 I am skilled in the following areas:
 
-- Web Application Development (HTML/CSS/JavaScript/PHP)
-- Database Administration (MySQL/MsSQL/PostgreSQL/Oracle)
-- Server Administration (Windows/Linux)
+- Web Application Development (***HTML/CSS/JavaScript/PHP***)
+- Database Administration (***MySQL/MsSQL/PostgreSQL/Oracle***)
+- Server Administration (***Windows/Linux**)
 - GIS Spatial Data Analyst/Programmer
 - Master Systems Builder/Technician
 - Software Engineer
