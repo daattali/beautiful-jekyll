@@ -124,9 +124,13 @@ img {
 }
 
 .navbar-custom .navbar-brand {
-  margin-left: 5px !important;
+  margin-left: -10px !important;
   font-family: 'Pacifico', cursive;
   font-size:  26px;
+}
+
+.navbar-custom .nav {
+  marg-right: 5px;
 }
 
 .navbar-custom .navbar-brand,
