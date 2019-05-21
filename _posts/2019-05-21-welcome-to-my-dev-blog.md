@@ -1,11 +1,11 @@
 ---
 layout: post
-published: false
 title: Welcome to my Dev Blog!
 tags:
   - General
   - Blog
 comments: true
+published: true
 date: '2019-05-21'
 ---
 ## What to expect
