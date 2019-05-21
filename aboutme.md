@@ -11,6 +11,11 @@ I am skilled in the following areas:
 - Database Administration (MySQL/MsSQL/PostgreSQL/Oracle)
 - Server Administration (Windows/Linux)
 - GIS Spatial Data Analyst/Programmer
+- Master Systems Builder/Technician
+- Software Engineer
+- Hardware Engineer
+- Network Engineer
+- Telephony Engineer
 - System/Process Anaylst
 
 
