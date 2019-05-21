@@ -3,8 +3,11 @@ layout: post
 published: true
 title: Getting Started with Leaflet
 tags:
-  - General
-  - Blog
+  - Dev
+  - Leaflet
+  - Map
+  - Mapping
+  - GIS
 comments: true
 date: '2019-05-21'
 ---
