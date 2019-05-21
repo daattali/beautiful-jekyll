@@ -690,7 +690,7 @@ code table, code table td, code table th, code table tbody, code table tr,
 td.gutter pre {
   padding: 0;
   border: none;
-  background-color: #fff;
+  background-color: #292D34;
 }
 .highlight > pre {
   padding: 0;
