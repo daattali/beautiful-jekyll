@@ -124,6 +124,7 @@ img {
 }
 
 .navbar-custom .navbar-brand {
+  margin-left: 5px;
   font-family: 'Pacifico', cursive;
   font-size:  26px;
 }
