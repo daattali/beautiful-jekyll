@@ -1,0 +1,171 @@
+
+/*
+ * GitHub style for Pygments syntax highlighter, for use with Jekyll
+ * Courtesy of GitHub.com 
+ * 
+ * src: https://github.com/aahan/pygments-github-style
+ */
+
+.highlight pre, pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.highlight {
+  .hll {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+  .c {
+    color: #999988;
+    font-style: italic;
+  }
+  .err {
+    color: #a61717;
+    background-color: #e3d2d2;
+  }
+  .k, .o {
+    font-weight: bold;
+  }
+  .cm {
+    color: #999988;
+    font-style: italic;
+  }
+  .cp {
+    color: #999999;
+    font-weight: bold;
+  }
+  .c1 {
+    color: #999988;
+    font-style: italic;
+  }
+  .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .gd {
+    color: #000000;
+    background-color: #ffdddd;
+    .x {
+      color: #000000;
+      background-color: #ffaaaa;
+    }
+  }
+  .ge {
+    font-style: italic;
+  }
+  .gr {
+    color: #aa0000;
+  }
+  .gh {
+    color: #999999;
+  }
+  .gi {
+    color: #000000;
+    background-color: #ddffdd;
+    .x {
+      color: #000000;
+      background-color: #aaffaa;
+    }
+  }
+  .go {
+    color: #888888;
+  }
+  .gp {
+    color: #555555;
+  }
+  .gs {
+    font-weight: bold;
+  }
+  .gu {
+    color: #800080;
+    font-weight: bold;
+  }
+  .gt {
+    color: #aa0000;
+  }
+  .kc, .kd, .kn, .kp, .kr {
+    font-weight: bold;
+  }
+  .kt {
+    color: #445588;
+    font-weight: bold;
+  }
+  .m {
+    color: #009999;
+  }
+  .s {
+    color: #dd1144;
+  }
+  .n {
+    color: #333333;
+  }
+  .na {
+    color: teal;
+  }
+  .nb {
+    color: #0086b3;
+  }
+  .nc {
+    color: #445588;
+    font-weight: bold;
+  }
+  .no {
+    color: teal;
+  }
+  .ni {
+    color: purple;
+  }
+  .ne, .nf {
+    color: #990000;
+    font-weight: bold;
+  }
+  .nn {
+    color: #555555;
+  }
+  .nt {
+    color: navy;
+  }
+  .nv {
+    color: teal;
+  }
+  .ow {
+    font-weight: bold;
+  }
+  .w {
+    color: #bbbbbb;
+  }
+  .mf, .mh, .mi, .mo {
+    color: #009999;
+  }
+  .sb, .sc, .sd, .s2, .se, .sh, .si, .sx {
+    color: #dd1144;
+  }
+  .sr {
+    color: #009926;
+  }
+  .s1 {
+    color: #dd1144;
+  }
+  .ss {
+    color: #990073;
+  }
+  .bp {
+    color: #999999;
+  }
+  .vc, .vg, .vi {
+    color: teal;
+  }
+  .il {
+    color: #009999;
+  }
+  .gc {
+    color: #999;
+    background-color: #EAF2F5;
+  }
+}
