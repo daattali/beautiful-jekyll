@@ -12,7 +12,7 @@ date: '2019-05-21'
 
 I have started this Development blog as I am a distinguished computer engineer with extensive knowledge that I would like to keep a log of to reference in future for myself and other developers. 
 <!--more-->
-For more information about me please see the [About Me](/aboutme) page.
+For more information about me please see the [About Me]({{ site.baseurl }}{% link aboutme) page.
 
 I hope to cover a lot of topics and provide knowledge in HTML/CSS/JavaScript/PHP code.
 
