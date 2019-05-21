@@ -23,7 +23,7 @@ Start a basic HTML template
   </body>
 </html>
 ```
-
+<!--more-->
 Include Leaflet CSS file in the head section of your document:
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css">
