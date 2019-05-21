@@ -256,6 +256,13 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-codepen
+
+codepen:
+  theme: 11473
+  height: 300
+  preview: false
+  default_tab: result
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
