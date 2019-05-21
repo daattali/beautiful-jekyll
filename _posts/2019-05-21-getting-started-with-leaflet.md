@@ -134,7 +134,6 @@ For more information please see the [Leaflet Quick Start Guide](https://leafletj
 
 See it in action on CodePen 
 
-{% codepen https://codepen.io/blindingstars/pen/YbQKMQ %}
 <p class="codepen" data-height="465" data-theme-id="dark" data-default-tab="result" data-user="ItsMeStevieG" data-slug-hash="YbQKMQ" style="height: 465px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Getting Started with Leaflet">
   <span>See the Pen <a href="https://codepen.io/ItsMeStevieG/pen/YbQKMQ/">
   Getting Started with Leaflet</a> by Stevie G (<a href="https://codepen.io/ItsMeStevieG">@ItsMeStevieG</a>)
