@@ -13,6 +13,9 @@ date: '2019-05-21'
 ---
 ![](https://thepracticaldev.s3.amazonaws.com/i/1bnfsz7moboq2ngou41i.png)
 
+Lets take a look at the basic functionality of how to implement a leaflet map on your own website.
+<!--more-->
+
 Start a basic HTML template
 ```html
 <!DOCTYPE html>
@@ -26,7 +29,7 @@ Start a basic HTML template
   </body>
 </html>
 ```
-<!--more-->
+
 Include Leaflet CSS file in the head section of your document:
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css">
