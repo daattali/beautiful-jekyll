@@ -23,7 +23,7 @@ description: Technology/>Simplified
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "index"
+  Home: ""
   About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
