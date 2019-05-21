@@ -16,11 +16,14 @@ I am skilled in the following areas:
 ### My history
 
 ***One Zero Communications***
+
 Design & Developed POS System for One Zero to manage and sell mobile phones, plans, accessories etc
 
 ***Fleet Logistics/Ezy2c***
+
 Designed, developed and managed the online tracking portal and servers for Fleet Logistics and helped the company grow throughout its transition to Ezy2c.
 
 ***GIS Spatial Data Analyst/Programmer***
+
 I am currently employed by Tenterfield Shire Council and have been developing and revamping the entire mapping system and data.
 I have been working to integrate councils existing systems with the mapping system to provide accurate data and next generation  web services.
