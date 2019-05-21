@@ -20,12 +20,13 @@ Lets take a look at how to customise Leaflet mapping and add a sidebar interface
 <!--more-->
 
 **Prerequites:**
-[Font Awesome](https://fontawesome.com/)
-[Bootstrap 4](https://getbootstrap.com/)
-[jQuery](https://jquery.com/)
-[LeafletJS](https://leafletjs.com/)
-[Leaflet Draw](https://github.com/Leaflet/Leaflet.draw)
-[Leaflet Sidebar v2](https://github.com/nickpeihl/leaflet-sidebar-v2)
+
+- [Font Awesome](https://fontawesome.com/)
+- [Bootstrap 4](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
+- [LeafletJS](https://leafletjs.com/)
+- [Leaflet Draw](https://github.com/Leaflet/Leaflet.draw)
+- [Leaflet Sidebar v2](https://github.com/nickpeihl/leaflet-sidebar-v2)
 
 Firstly start a basic HTML5 Template page.
 ```html
