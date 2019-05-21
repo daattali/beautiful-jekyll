@@ -13,6 +13,7 @@ I am skilled in the following areas:
 - GIS Spatial Data Analyst/Programmer
 - System/Process Anaylst
 
+
 ### My history
 
 ***One Zero Communications***
