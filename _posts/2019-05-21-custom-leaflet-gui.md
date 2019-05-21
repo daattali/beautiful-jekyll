@@ -1,9 +1,23 @@
 ---
 layout: post
-published: false
+published: true
 title: Custom Leaflet GUI
+tags:
+  - Dev
+  - Leaflet
+  - Map
+  - Mapping
+  - GIS
+  - Bootstrap
+  - jQuery
+  - Custom
+comments: true
+date: '2019-05-21'
 ---
 ![](https://thepracticaldev.s3.amazonaws.com/i/h3a3v1a7dvgpbj2burvh.png)
+
+Lets take a look at how to customise Leaflet mapping and add a sidebar interface.
+<!--more-->
 
 **Prerequites:**
 [Font Awesome](https://fontawesome.com/)
