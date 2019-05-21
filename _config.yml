@@ -151,6 +151,7 @@ staticman:
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
+excerpt_separator: <!--more-->
 excerpt_length: 50
 
 # Character used to separate site title and description in HTML document title
