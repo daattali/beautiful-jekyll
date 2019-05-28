@@ -4,7 +4,6 @@ title: About me
 css: "/css/aboutme.css"
 ---
 
-<div id="aboutme-section">
 
 ```{r, echo=FALSE}
 numericInput("rows", "How many cars?", 5)
@@ -14,6 +13,9 @@ renderTable({
 })
 
 ```
+
+<div id="aboutme-section">
+
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
