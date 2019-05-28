@@ -4,16 +4,6 @@ title: About me
 css: "/css/aboutme.css"
 ---
 
-
-```{r, echo=FALSE}
-numericInput("rows", "How many cars?", 5)
-
-renderTable({
-  head(cars, input$rows)
-})
-
-```
-
 <div id="aboutme-section">
 
 
