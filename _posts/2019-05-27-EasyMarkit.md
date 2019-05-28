@@ -4,7 +4,7 @@ title: Winning the EasyMarkit AI Hackathon
 category: blog
 ---
 
-On April 6, 2019, EasyMarkit hosted their first Hackathon in Vancouver where teams were asked to offer an AI solution to improve patient communication. My team Sigma (Bailey Lei, Alex Pak, Betty Zhou) was awarded first place based on the accuracy of our model in predicting communication response from patients.
+On April 6, 2019, EasyMarkit hosted their first Hackathon in Vancouver where teams were asked to offer an AI solution to improve patient communication. My team Sigma ([Bailey Lei](https://www.linkedin.com/in/baileylei), [Alex Pak](https://www.linkedin.com/in/pakalexh), [Betty Zhou](https://www.linkedin.com/in/bettybhzhou)) was awarded first place based on the accuracy of our model in predicting communication response from patients.
 
 ##### About EasyMarkit AI Hackathon
 
