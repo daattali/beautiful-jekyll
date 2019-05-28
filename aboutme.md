@@ -6,6 +6,15 @@ css: "/css/aboutme.css"
 
 <div id="aboutme-section">
 
+```{r, echo=FALSE}
+numericInput("rows", "How many cars?", 5)
+
+renderTable({
+  head(cars, input$rows)
+})
+
+```
+
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
 Currently <strong>Postdoctoral Research Associate</strong> in <a href="https://kasprzykhordern.wordpress.com/" target="_blank"> Environmental Chemistry & Public Heath Research Group </a>, Department of Chemistry, University of Bath, UK 
