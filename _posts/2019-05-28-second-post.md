@@ -1,4 +1,5 @@
 ---
+runtime: shiny
 output: html_document
 ---
 install.packages("rmarkdown")
