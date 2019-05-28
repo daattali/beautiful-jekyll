@@ -1,12 +1,19 @@
 ---
-layout: post
-title: Embed shiny
-image: /img/hello_world.jpeg
+output: html_document
 ---
 
-<html>
-<head><title>Shiny App Iframe</title></head>
-<body>
-<iframe id="example1" src="" style="border: none; width: 100%; height: 850px" frameborder="0"></iframe>
-</body>
-</html>
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see .
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
