@@ -9,7 +9,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Currently <strong>Postdoctoral Research Associate</strong> in <a href="https://kasprzykhordern.wordpress.com/" target="_blank"> Environmental Chemistry & Public Heath Research Group </a>, Department of Chemistry, University of Bath, UK 
+Currently <strong>Postdoctoral Research Associate</strong> in <a href="https://kasprzykhordern.wordpress.com/" target="_blank"> Environmental Chemistry & Public Health Research Group </a>, Department of Chemistry, University of Bath, UK 
 </p>
 
 <p class="about-text">
