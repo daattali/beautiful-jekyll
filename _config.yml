@@ -1,17 +1,19 @@
 # --- General options --- #
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# To spare yourself from trouble, just leave url and baseurl undefined,
+# GitHub can automatically set these properties accordingly for user
+# page and project page.
+#
+# Indeed you can still set the properties yourself, in that case don't
+# forget to change the username and projectname to YOUR username and project
 
-# If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://username.github.io"
-baseurl: ""
+# url is the website URL up to host name, without trailing slash
+#url: "https://username.github.io"
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
+# For GitHub user page, baseurl is empty string. Don't set to "/".
+# For GitHub project page, set it to project name with leading slash,
+# e.g. "/myproject". However, don't add trailing slash.
+#baseurl: ""
 
 # Name of website
 title: My website
