@@ -220,6 +220,7 @@ Want your website featured here? [Contact me](https://deanattali.com/aboutme#con
 | [sharepointoscar.github.io](http://sharepointoscar.github.io) | Oscar Medina | Independent Hacker |
 | [ocram85.com](https://ocram85.com) | Marco Blessing | A personal blog about PowerShell and automation |
 | [khanna.cc](https://khanna.cc/) | Harry Khanna | Law and software |
+| [Dormeo Ergo Sum](https://www.brendonbody.com/) | Brendon Body | The blog where I talk about nerdy computer stuff |
 
 ## Advanced: Local development using Docker
 
