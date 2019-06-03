@@ -1,34 +1,40 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: Deploying Plotly Dash app to the cloud
+subtitle: Lessons learned 
+tags: [code]
 comments: true
 ---
+
+Plotly is great
+Flask locally
+However, I ran into issues just following the documentation and boilerplate examples.
+
+Deploying continuous, autorestart etc.
+
+Caprover was really easy,
+now, Caprover is available for deploying other dash apps to the running instance!
+Turns out you can't run with python. need gunicorn.
+Here is my example captain file:
+
+
+"App needs to be callable"
+need a dockerfile
+ports.
+didnt upgrade pip. this made my pandas dependencies silently not get updated correctly. Also, make sure to run this all as one line or it might not work.
+
+```python
+import flask
+
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, server=server)
+```
+
+The port of the 
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 **Here is some bold text**
-
-## Here is a secondary heading
-
-Here's a useless table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-
-How about a yummy crepe?
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
-
-Here's a code chunk:
 
 ~~~
 var foo = function(x) {
