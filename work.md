@@ -29,6 +29,11 @@ For detailed information about my education, conferences, talks, teaching, etc. 
 
 # Projects
 
+### Improving Cardiac Patient Care
+_[Pacemate](www.pacemate.com) - Feb. 2019 → Now_
+
+I am currently employed at a implantable heart device analytics company. I can't discuss my research, yet-- stay tuned!
+
 ### Reinforcement Learning for Tracing Neuron Morphologies
 _[Hanchuan Peng](https://www.alleninstitute.org/what-we-do/brain-science/research/products-tools/vaa3d/) lab. [Allen Institute for Brain Science](https://www.alleninstitute.org/what-we-do/brain-science/), Seattle, WA, USA - Summer 2018_
 
