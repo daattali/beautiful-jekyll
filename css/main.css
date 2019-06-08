@@ -13,7 +13,7 @@ body {
   position: relative;
   background-color: {{ site.page-col }};
   {% if site.page-img %}
-  background-image: url({{ site.page-img }});
+  background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
 }
@@ -110,7 +110,7 @@ img {
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
-  background-image: url({{ site.navbar-img }});
+  background-image: url({{ site.navbar-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
 }
@@ -267,7 +267,7 @@ footer {
   font-size: 14px;
   background-color: {{ site.footer-col }};
   {% if site.footer-img %}
-  background-image: url({{ site.footer-img }});
+  background-image: url({{ site.footer-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
 }
