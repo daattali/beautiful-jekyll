@@ -34,8 +34,8 @@ Npm에서 Yarn으로 넘어갈 생각을 하다보니 예전 Source Safe에서 S
 | :------ |:--- |
 | npm install | yarn |
 | npm install myPackage | yarn add myPackage |
-| npm install myPackage --save-dev | yarn add myPackage --dev |
-| npm uninstall myPackage --save-dev | yarn remove myPackage --dev |
+| npm install myPackage &#45;&#45;save-dev | yarn add myPackage &#45;&#45;dev |
+| npm uninstall myPackage &#45;&#45;save-dev | yarn remove myPackage &#45;&#45;dev |
 | npm -g install myPackage | yarn global add myPackage |
 | npm init | yarn init |
 | npm run | yarn run |
