@@ -73,13 +73,6 @@ steering-list:
     url: https://dnr.cals.cornell.edu/people/nina-therkildsen/
     twitter: 
     github:
-  - name: Oz Schmitz
-    img: /img/people/oz-schmitz.jpg
-    desc:  Studies the evolutionary ecology of trophic interactions and nutrient cycling in terrestrial ecosystems. Oastler Professor of Population and Community Ecology, Yale School of Forestry & Environmental Studies.
-    website: http://schmitz.environment.yale.edu/
-    url: http://schmitz.environment.yale.edu/
-    twitter: 
-    github:
   - name: Erik Sotka 
     img: /img/people/erik-sotka.jpg
     desc:  Evolutionary ecologist. Professor, College of Charleston.
