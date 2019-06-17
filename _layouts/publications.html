@@ -8,7 +8,7 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {% assign years = site.publications | group_by: "year" %}
-      {% assign yearsSorted = years | sort: "names" %}
+      {% assign yearsSorted = years | sort: "authors" %}
       {% for publication in yearsSorted %}
       <div class="publication">
         <a href="{{ publication.url }}">
