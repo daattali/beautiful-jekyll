@@ -7,17 +7,17 @@ layout: base
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {% assign years = site.publications | group_by: "year" %}
-      {% assign yearsSorted = years | sort: "authors" %}
+      {% assign years = site.publications | group_by: "article_year" %}
+      {% assign yearsSorted = years | sort: "article_authors" %}
       {% for publication in yearsSorted %}
       <div class="publication">
-        <a href="{{ publication.url }}">
-          {{% publication.authors %}} ({{% publication.year %}}) {{% publication.title %}} <i>{{% publication.journal %}}</i>
-          {% if publication.volume %}
-            :{{% publication.volume %}}
+        <a href="{{ publication.article_url }}">
+          {{% publication.article_authors %}} ({{% publication.article_year %}}) {{% publication.article_title %}} <i>{{% publication.article_journal %}}</i>
+          {% if publication.article_volume %}
+            :{{% publication.article_volume %}}
           {% endif %}
-          {% if publication.pages %}
-            ,{{% publication.pages %}}
+          {% if publication.article_pages %}
+            ,{{% publication.article_pages %}}
           {% endif %}
         </a>
       </div>
