@@ -12,12 +12,12 @@ layout: base
       {% for publication in yearsSorted %}
       <div class="publication">
         <a href="{{ publication.article_url }}">
-          {{% publication.article_authors %}} ({{% publication.article_year %}}) {{% publication.article_title %}} <i>{{% publication.article_journal %}}</i>
+          {{ publication.article_authors }} ({{ publication.article_year }}) {{ publication.article_title }} <i>{{ publication.article_journal }}</i>
           {% if publication.article_volume %}
-            :{{% publication.article_volume %}}
+            :{{ publication.article_volume }}
           {% endif %}
           {% if publication.article_pages %}
-            ,{{% publication.article_pages %}}
+            ,{{ publication.article_pages }}
           {% endif %}
         </a>
       </div>
