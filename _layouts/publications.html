@@ -11,7 +11,7 @@ layout: base
       {% for publication in site.publications %}
         <li>
           <a href="{{ publication.article_url }}">
-            {{ publication.article_title }}
+            {{ publication.article_authors }} ({{ publication.article_year }}) {{ publication.article_title }} <i>{{ publication.article_journal }}</i>
           </a>
         </li>
       {% endfor %}
