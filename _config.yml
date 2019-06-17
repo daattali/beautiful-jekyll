@@ -26,7 +26,7 @@ navbar-links:
   Home: ""
   Research: "research"
   Publications: "publications"
-  Lab Members: "lab-members"
+  Lab Members: "lab_members"
   Software:
     - CLARITE: "https://halllab.github.io/clarite-python/"
 
