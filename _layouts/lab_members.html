@@ -24,14 +24,14 @@ layout: base
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <h1>Former Members</h1>
       {% for member in site.members %}
-        {% if member.current == false %}
+        {% unless member.current %}
           <h2>
             <a href="{{ member.url }}">
               {{ member.name }} - {{ member.position }}
             </a>
           </h2>
           <p>{{ member.content | markdownify }}</p>
-        {% endif %}
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
