@@ -23,7 +23,7 @@ description: Official website for the Hall Lab at Penn State University
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Home: "/"
   Research: "research"
   Publications: "publications"
   Lab Members: "lab_members"
@@ -196,6 +196,11 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+
+# Collections
+collections:
+  - members
+      output: true
 
 # prose.io config
 prose:
