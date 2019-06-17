@@ -13,10 +13,10 @@ layout: base
       <div class="publication">
         <a href="{{ publication.url }}">
           {{publication.authors}} ({{publication.year}}) {{publication.title}} <i>{{publication.journal}}</i>
-          { if publication.volume % }
+          {% if publication.volume %}
             :{{publication.volume}}
           {% endif %}
-          { if publication.pages % }
+          {% if publication.pages %}
             ,{{publication.pages}}
           {% endif %}
         </a>
