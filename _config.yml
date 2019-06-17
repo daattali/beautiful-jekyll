@@ -199,8 +199,8 @@ exclude:
 
 # Collections
 collections:
-  - members
-      output: true
+  members:
+    output: true
 
 # prose.io config
 prose:
