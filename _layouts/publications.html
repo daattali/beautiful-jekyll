@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      {% assign years = site.publications | group_by: "year" %}
+      {% assign yearsSorted = years | sort: "names" %}
+      {% for publication in yearsSorted %}
+      <div class="publication">
+        <a href="{{ publication.url }}">
+          {{publication.authors}} ({{publication.year}}) {{publication.title}} <i>{{publication.journal}}</i>
+          { if publication.volume % }
+            :{{publication.volume}}
+          {% endif %}
+          { if publication.pages % }
+            ,{{publication.pages}}
+          {% endif %}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

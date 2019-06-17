@@ -201,6 +201,8 @@ exclude:
 collections:
   members:
     output: true
+  publications:
+    output: false
 
 # prose.io config
 prose:

@@ -7,7 +7,7 @@ layout: base
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      # Current Members
+      <h1>Current Members</h1>
       {% for member in site.members %}
         {% if member.current %}
           <h2>
@@ -22,7 +22,7 @@ layout: base
   </div>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      # Former Members
+      <h1>Former Members</h1>
       {% for member in site.members %}
         {% if member.current == false %}
           <h2>
