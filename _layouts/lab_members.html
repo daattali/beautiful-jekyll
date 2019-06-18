@@ -4,26 +4,30 @@ layout: base
 
 {% include header.html type="page" %}
 
+{% assign membersSorted = site.members | sort: "order" %}
+
 <div class="container" role="main">
+  <h1>Current Members</h1>
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <h1>Current Members</h1>
-      {% for member in site.members %}
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="display:flex">
+      {% for member in membersSorted %}
         {% if member.current %}
-          <h2>
-            <a href="{{ member.url }}">
-              {{ member.name }} - {{ member.position }}
-            </a>
-          </h2>
-          <p>{{ member.content | markdownify }}</p>
+          <a class="thumbnail col-lg-3 col-md-4" href="{{ member.url }}">
+            <img class="card-img-top" src="{{ member.image }}" alt="Photo of {{member.name}}">
+            <div class="caption">
+              <h3>{{ member.name }}</h3>
+              <h4>{{ member.position}}</h4>
+            </div>
+          </a>
         {% endif %}
       {% endfor %}
     </div>
   </div>
+  <!-- Commented out section for former members (none currently listed)
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <h1>Former Members</h1>
-      {% for member in site.members %}
+      {% for member in membersSorted %}
         {% unless member.current %}
           <h2>
             <a href="{{ member.url }}">
@@ -35,4 +39,4 @@ layout: base
       {% endfor %}
     </div>
   </div>
-</div>
+  -->
