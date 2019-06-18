@@ -7,15 +7,19 @@ layout: base
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <ul>
-      {% for publication in site.publications %}
-        <li>
-          <a href="{{ publication.article_url }}">
-            {{ publication.article_authors }} ({{ publication.article_year }}) {{ publication.article_title }} <i>{{ publication.article_journal }}</i>
-          </a>
-        </li>
+      <div class="list-group">
+      {% assign publicationsSorted = site.publications | sort: "article_authors" | sort: "article_year" | reverse %}
+      {% for publication in publicationsSorted %}
+        <div class="list-group">
+          <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action">
+              {{ publication.article_authors }} <b>({{ publication.article_year }})</b></br>
+              {{ publication.article_title }}</br>
+              <i>{{publication.article_journal}}</i>
+              {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
+              {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
+          </a> 
       {% endfor %}
-      </ul>
+    </div> 
     </div>
   </div>
 </div>
