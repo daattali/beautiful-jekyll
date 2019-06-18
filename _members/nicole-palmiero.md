@@ -1,7 +1,7 @@
 ---
 name: Nicole Palmiero
 position: Research Technician
-image: ../img/members/nicole-palmiero.webp
+image: /img/members/nicole-palmiero.webp
 current: true
 order: 4
 ---

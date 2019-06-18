@@ -1,7 +1,7 @@
 ---
 name: Jiayan Zhou
 position: PhD Student (Pathobiology)
-image: ../img/members/jiayan-zhou.webp
+image: /img/members/jiayan-zhou.webp
 current: true
 order: 2
 ---
