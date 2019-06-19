@@ -6,22 +6,17 @@ tags: [code]
 comments: true
 ---
 
-Plotly is great
-Flask locally
-However, I ran into issues just following the documentation and boilerplate examples.
+I love Plotly Dash and Flask, but I ran into issues while trying to deploy it in a production environment with continuous deployment, such that the latest version of my app was live as I was developing it.
 
-Deploying continuous, autorestart etc.
+For this, I found that [CapRover](https://caprover.com) was really powerful, for deployment, but the examples for Flask apps were not great (and the Plotly Dash documentaion was bad, too, because I think they want you to pay for their enterprise solution).
 
-Caprover was really easy,
-now, Caprover is available for deploying other dash apps to the running instance!
-Turns out you can't run with python. need gunicorn.
-Here is my example captain file:
+Here are the various errors I ran into and how I solved them.
 
+The main issue was that you can no longer run `python app.py` on the server anymore, since Flask needs to be running below gunicorn. Also, I didn't have experience writing Docker files, so it took some time to get mine right.
 
-"App needs to be callable"
-need a dockerfile
-ports.
-didnt upgrade pip. this made my pandas dependencies silently not get updated correctly. Also, make sure to run this all as one line or it might not work.
+When I tried running gunicorn using the boilerplate, I started getting an "App needs to be callable" error. This was caused by not exposing the right internal variables inside my `app.py`.
+
+For instance, inside your main script:
 
 ```python
 import flask
@@ -30,51 +25,31 @@ server = flask.Flask(__name__)
 app = dash.Dash(__name__, server=server)
 ```
 
-The port of the 
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Here is my example captain file:
 
-**Here is some bold text**
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
 ```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
+{
+	"schemaVersion" : 2 ,
+	"dockerfileLines" :[
+		"FROM python:3.7.0-alpine",
+    "RUN apk add --update curl gcc g++",
+    "RUN ln -s /usr/include/locale.h /usr/include/xlocale.h",
+    "RUN mkdir -p /usr/src/app", 
+    "WORKDIR /usr/src/app",
+    "COPY requirements.txt /usr/src/app",
+    "RUN pip install --upgrade pip && pip install --no-cache-dir -r /usr/src/app/requirements.txt",
+    "COPY ./ /usr/src/app",
+		"RUN ls -la /usr/src/app",
+		"EXPOSE 80 5000 27017 8050",
+		"CMD [ \"gunicorn\", \"-b\", \":5000\", \"app:server\" ]"
+	]
 }
-foo(3)
-{% endhighlight %}
+```
+Here, the `app:server` section refers to the name of the python script (in my case, `app.py` and the exposed `server` variable).
 
-## Boxes
-You can add notification, warning and error boxes like this:
+Another big issue was that the Pandas dependencies were silently not being installed correctly. To fix this, you need to `sudo pip install --upgrade pip && sudo pip install -r /path/to/requirements.txt`. Running all the pip installs as a single line turns out to be crucial!
 
-### Notification
+Finally, gunicorn did not use the default CapRover port of 80. So, in my Caprover config I had to change it to the one that is being printed out in your terminal. 
 
-{: .box-note}
-**Note:** This is a notification box.
 
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
