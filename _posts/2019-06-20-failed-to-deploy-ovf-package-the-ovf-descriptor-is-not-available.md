@@ -22,6 +22,6 @@ In the flex client at least I would get a description. The helpful kind that VMw
 
 At this point I know this is not going to help because my vCenter certificate is issued by a CA and the root is trusted. I tried what the KB mentions but it did nothing.
 
-Credits to Sasha_G. for the solution in this [VMTN](https://communities.vmware.com/thread/573590?start=15&tstart=0). **That's right, I was using the short name (which is in the SAN of my certificate by the way). I tried with the FQDN and it worked.**
+Credits to Sasha_G. for the solution in this [VMTN](https://communities.vmware.com/thread/573590?start=15&tstart=0). **That's right, I was using the short name to access vCenter (which is in the SAN of my certificate by the way). I tried with the FQDN and it worked.**
 
-Turns out the error description contained the solution all along (Not on purpose though -> see url). Now I have no idea how I managed to live that long without ever encountering this issue, I guess I don't use short as I often as I thought...
+Turns out the error description contained the solution all along (Not on purpose though -> see url). Now I have no idea how I managed to live that long without ever encountering this issue, I guess I don't use short names as I often as I thought...
