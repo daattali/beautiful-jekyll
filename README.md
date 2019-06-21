@@ -176,10 +176,13 @@ If you're not sure what the difference is, you can probably safely ignore this s
 
 If you want to use this theme to host a website that will be available at `https://YOURUSERNAME.github.io`, then you do not need to read this section. That is called a User Page, you can only have one User Page in your GitHub account, and it is what you get by default when forking this project.
 
-If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/REPONAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for each repository you have on GitHub. There are two important things to note when creating a project page:
+If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/REPONAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for each repository you have on GitHub.
 
-1. In the configuration file (`_config.yml`), you should set `baseurl` to be `/projectname` instead of `""`.
-2. Project Pages are served from a branch named `gh-pages`, and you should be generating all the website content on that branch. When you fork Beautiful Jekyll, you'll already have a `gh-pages` branch but you should delete it and generate it again from the `master` branch. The reason is that the `gh-pages` branch in its current form does not have the updated code of Beautiful Jekyll, so you need to create that branch from the `master` branch (which is where all my new features and work go into).
+There are two important point to note, assuming your project website will be served under `gh-pages` branch (check [Github Page official documentation](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) for usable source):
+
+1. When copying files from this repository, **only copy from `master` branch** of this theme, which is where all my new features and work go into. After copying stuff to `gh-pages` branch under your project...
+
+2. Adjust all configurations and templates according to your taste, but in particular, there is no need to set `url` and `baseurl` inside `_config.yml`. Github will fill in the variables for you. Just push the changes and enjoy!
 
 ## Showcased users (success stories!)
 
@@ -279,6 +282,17 @@ The default style of Beautiful Jekyll is to feature the blog feed on the front p
 #### What size do you recommend using for the `bigimg` photos?
 
 Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to this, because every person will view your site on a different browser with different dimensions. Some browsers will have very wide aspect ratio, some will be narrower, some will be vertical (such as phones), different phones have different screens, etc. The image will always be centered, so the only tip I can give is that you should make sure the important part of the image is in the middle so that it'll always show. Other than that, every browser will show a different clipping of the image.
+
+#### After recent update some links in my project page appear to be broken!
+
+Since late June 2019, some URL related setting are adjusted to be in line with how Jekyll uses them officially. Project page absolute links might appear to be broken if you haven't propagated all necessary changes to your local templates, or you have created additional templates making use of old settings. If links contain duplicated project path component, this is most likely the cause. In summary:
+
+| &nbsp; | Old behavior | New behavior |
+| --- | --- | --- |
+| `url` setting | `https://user.github.io/project` | (unset, GitHub auto detect) |
+| `baseurl` setting | `/project` | (unset, GitHub auto detect) |
+| Absolute link construction | `{{ site.url }}/your/path` | `{{ '/your/path' \| absolute_url }}` |
+| Relative link construction | `{{ site.baseurl }}/your/path` | `{{ '/your/path' \| relative_url }}` |
 
 ## Credits
 
