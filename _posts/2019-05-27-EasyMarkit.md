@@ -19,3 +19,8 @@ We trained the model with all default features initially, then removed irrelevan
 We evaluated several models such as logistic regression and random forest, but ultimately settled on Light Gradient Boosting Machine (LightGBM). The accuracy from LightGBM was about the same as XGBoost, but its training time was a lot faster. We tried to perform random grid search during hyperparameter tuning, but it took too long, and given the time constraint, tuning it manually worked better. We ended up selecting the hyperparameters that gave us the lowest approximation error (gap between train and validation) as opposed to the lowest validation error. This was quite a difficult decision for our team since we were only allowed one submission. However, the model with the lowest validation error had a very high approximation error, which felt too risky, so we went with a model with a slightly higher validation error and much lower approximation error. When the results were announced, the reported test accuracy was within 0.1% of what our model predicted with the validation set.
 
 Overall, our team learned a lot from the hackathon and winning it was a pretty awesome experience. It was great to witness our team's ability to perform under pressure. One strategy we employed under time pressure was taking regular breaks to improve overall performance.
+
+
+--------
+
+[Bailey Lei](https://www.linkedin.com/in/baileylei) is a current student in the 2018-2019 MDS cohort.
