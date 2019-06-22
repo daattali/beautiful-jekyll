@@ -176,13 +176,15 @@ If you're not sure what the difference is, you can probably safely ignore this s
 
 If you want to use this theme to host a website that will be available at `https://YOURUSERNAME.github.io`, then you do not need to read this section. That is called a User Page, you can only have one User Page in your GitHub account, and it is what you get by default when forking this project.
 
-If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/REPONAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for each repository you have on GitHub.
+If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/PROJECTNAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for any repository you have on GitHub.
 
-There are two important point to note, assuming your project website will be served under `gh-pages` branch (check [Github Page official documentation](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) for usable source):
+**When using this theme for a Project Page, by default your website will be served from the `gh-pages` branch**, so you must take the following steps: 
 
-1. When copying files from this repository, **only copy from `master` branch** of this theme, which is where all my new features and work go into. After copying stuff to `gh-pages` branch under your project...
+1. [Delete the existing `gh-pages` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
 
-2. Adjust all configurations and templates according to your taste, but in particular, there is no need to set `url` and `baseurl` inside `_config.yml`. Github will fill in the variables for you. Just push the changes and enjoy!
+2. [Create a new branch named `gh-pages` from the `master` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#creating-a-branch)
+
+Alternatively, instead of the above two steps, you can opt to use the `master` branch instead of `gh-pages` branch as your website's source by choosing that option in the main Settings page. 
 
 ## Showcased users (success stories!)
 
