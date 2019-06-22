@@ -26,4 +26,13 @@ After installing tasksel package on your system, let’s install LAMP setup on y
 sudo tasksel install lamp-server
 ```
 
+Setup will be completed within few minutes. The MySQL server is installed without any password configured for the root user. You can simply access MySQL without any password.
+
+Then execute the below command to set a new password and secure MySQL installation through a command line wizard.
+
+```console
+sudo mysql_secure_installation
+```
+
+
  
