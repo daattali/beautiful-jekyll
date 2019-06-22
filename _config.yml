@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> Abs link patch (#506)
@@ -24,10 +25,13 @@ baseurl: ""
 =======
 >>>>>>> Abs link patch (#506)
 >>>>>>> Abs link patch (#506)
+=======
+>>>>>>> Update _config.yml
 # Name of website
 title: DevoreDevelops.com
 
 # Short description of your site
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 description: A virtual proof that I'm awesome
@@ -60,11 +64,15 @@ description: A virtual proof that I'm awesome
 #baseurl: ""
 >>>>>>> Abs link patch (#506)
 >>>>>>> Abs link patch (#506)
+=======
+description: Personal Web Site of Jason Devore
+>>>>>>> Update _config.yml
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   About Me: "aboutme"
@@ -88,6 +96,9 @@ navbar-links:
   Author's home: "http://deanattali.com"
 >>>>>>> Abs link patch (#506)
 >>>>>>> Abs link patch (#506)
+=======
+  About Me🧐: "aboutme"
+>>>>>>> Update _config.yml
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
