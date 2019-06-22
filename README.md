@@ -283,14 +283,14 @@ The default style of Beautiful Jekyll is to feature the blog feed on the front p
 
 Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to this, because every person will view your site on a different browser with different dimensions. Some browsers will have very wide aspect ratio, some will be narrower, some will be vertical (such as phones), different phones have different screens, etc. The image will always be centered, so the only tip I can give is that you should make sure the important part of the image is in the middle so that it'll always show. Other than that, every browser will show a different clipping of the image.
 
-#### After recent update some links in my project page appear to be broken!
+#### My project page appear to be broken after a recent update!
 
-Since late June 2019, some URL related setting are adjusted to be in line with how Jekyll uses them officially. Project page absolute links might appear to be broken if you haven't propagated all necessary changes to your local templates, or you have created additional templates making use of old settings. If links contain duplicated project path component, this is most likely the cause. In summary:
+In June 2019, some URL related settings have been adjusted to be more in-line with how Jekyll uses them officially. Project Page absolute links might appear to be broken if you haven't propagated all necessary changes to your local templates, or if you have created additional templates making use of old settings. If a link contains a duplicated project path component, this is most likely the cause. In summary:
 
 | &nbsp; | Old behavior | New behavior |
 | --- | --- | --- |
-| `url` setting | `https://user.github.io/project` | (unset, GitHub auto detect) |
-| `baseurl` setting | `/project` | (unset, GitHub auto detect) |
+| `url` setting | `https://user.github.io/projectname` | (unset, GitHub auto detects) |
+| `baseurl` setting | `/projectname` | (unset, GitHub auto detects) |
 | Absolute link construction | `{{ site.url }}/your/path` | `{{ '/your/path' \| absolute_url }}` |
 | Relative link construction | `{{ site.baseurl }}/your/path` | `{{ '/your/path' \| relative_url }}` |
 
