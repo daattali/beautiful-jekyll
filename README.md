@@ -118,6 +118,8 @@ To use Facebook comments, create a Facebook app using [Facebook developers](http
 
 To use Staticman, you first need to invite `staticmanlab` as a collaborator to your repository (by going to your repository **Settings** page, navigate to the **Collaborators** tab, and add the username `staticmanlab`), and then accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`. Lastly, fill in your `repository` and `branch` in the Staticman section of `_config.yml`.
 
+Optional: It is suggested to enable reCAPTCHA to avoid massive spam comments.  You may refer to `_config.yml` for detailed instructions.
+
 #### JustComments
 
 To use JustComments you first need to have an account. After you just need to copy the API key to the `just-comments` property in `_config.yml` file.
