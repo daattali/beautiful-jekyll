@@ -4,7 +4,7 @@ title: My Work
 published: true
 meta-title: Richard Decal - CV - resume
 meta-description: CV for Richard B. Decal
-bigimg: /img/AIBS_presentation.jpg
+bigimg: /img/AIBS_presentation_crop.jpg
 ---
 
 I want to leverage **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
