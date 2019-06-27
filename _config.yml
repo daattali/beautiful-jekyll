@@ -53,13 +53,13 @@ avatar: "/img/R_Python.png"
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#778899"
-navbar-text-col: "#FFFFFF"
+navbar-text-col: "#000000"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#778899"
-footer-text-col: "#FFFFFF"
+footer-text-col: "#000000"
 footer-link-col: "#404040"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
