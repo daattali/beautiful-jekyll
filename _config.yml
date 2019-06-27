@@ -18,7 +18,7 @@ baseurl: ""
 title: Nana Boateng
 
 # Short description of your site
-description: Machine Learning, Statistical Modeling
+description: Machine Learning, Data Science,  Statistical Modeling
 
 # --- Navigation bar options --- #
 
@@ -52,8 +52,8 @@ avatar: "/img/R_Python.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
+navbar-col: "#1E90FF"
+navbar-text-col: "#FFFFFF"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
@@ -85,7 +85,7 @@ social-network-links:
   email: "unltd148@yahoo.co.uk"
   #facebook: daattali
   github: NanaAkwasiAbayieBoateng
-  twitter: daattali
+  #twitter: daattali
   linkedin:  nana-boateng-26b9a226 
   stackoverflow: "5948567/Gucci148" 
   twitter: thegucci148 
