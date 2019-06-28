@@ -15,6 +15,7 @@ fields:
 - type: datetime
   name: DATE
 pages:
+- _posts/get-lun-information-in-powercli.md
 - _posts/2019-06-20-failed-to-deploy-ovf-package-the-ovf-descriptor-is-not-available.md
 - _posts/2019-03-08-conflict-between-emc-networker-client-and-vcenter-server-windows.md
 - _posts/2019-02-25-speed-up-powercli.md
