@@ -109,7 +109,7 @@ Open /etc/apt/sources.list and add the following line to the end of the file (ch
 
 Next, add the key ID for the CRAN network:
 ```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 ```
 
 Then, update the repository:
@@ -134,15 +134,15 @@ R --version
 
 you should see something like this if you were successful:
 ```
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
+R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
 GNU General Public License versions 2 or 3.
 For more information about these matters see
-http://www.gnu.org/licenses/.
+https://www.gnu.org/licenses/.
 ```
 
 #### RStudio
