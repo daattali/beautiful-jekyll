@@ -464,7 +464,8 @@ aggr(heart_data , col=c('navyblue','yellow'),
 
 
 
-![png](output_21_1.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/1.png)
 
 
 The variable thalach has moderate correlation with the age variable. There are no significant 
@@ -479,7 +480,9 @@ plot_correlation(heart_data,type = "continuous",theme_config = list(legend.posit
 ```
 
 
-![png](output_23_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/2.png)
+
 
 
 Another way to obatin the summary  statistics for each variable in the data is with the skim_to_wide function from the sikmr package.
@@ -556,7 +559,8 @@ geom_text(aes(label=round(n,2),vjust=-0.2),color="black",size = 6)+
 ```
 
 
-![png](output_26_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/3.png)
 
 
 
@@ -1100,7 +1104,8 @@ box()
 ```
 
 
-![png](output_48_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/4.png)
 
 
 
@@ -1117,7 +1122,7 @@ Varplot(feature=h2o_glmdata$variable,Importance=h2o_glmdata$relative_importance)
 ```
 
 
-![png](output_49_0.png)
+![ ]( /img/ML-INTERPRETABILITY-R/5.png)
 
 
 
@@ -1228,7 +1233,8 @@ plot(imp)+ ggtitle("Auto ML")
 ```
 
 
-![png](output_57_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/6.png)
 
 
 #### Partial Dependence Plot
@@ -1252,7 +1258,8 @@ gridExtra::grid.arrange(p1, p2, nrow = 2)
 ```
 
 
-![png](output_59_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/7.png)
 
 
 
@@ -1272,7 +1279,8 @@ gridExtra::grid.arrange(p3,p4, nrow = 2)
 ```
 
 
-![png](output_60_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/8.png)
 
 
 
@@ -1292,7 +1300,8 @@ gridExtra::grid.arrange(p5,p6, nrow = 2)
 ```
 
 
-![png](output_61_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/9.png)
 
 
 #### Feature effects
@@ -1314,7 +1323,8 @@ gridExtra::grid.arrange(c2$plot()+ ggtitle("Auto ML"), c1$plot(),nrow = 2)
 ```
 
 
-![png](output_63_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/10.png)
 
 
 
@@ -1335,7 +1345,7 @@ gridExtra::grid.arrange(c3$plot()+ ggtitle("Auto ML"),
 ```
 
 
-![png](output_64_0.png)
+![ ]( /img/ML-INTERPRETABILITY-R/11.png)
 
 
 
@@ -1353,7 +1363,8 @@ gridExtra::grid.arrange(c5$plot()+ ggtitle("Auto ML"), c6$plot(),nrow = 2)
 ```
 
 
-![png](output_65_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/12.png)
 
 
 
@@ -1370,7 +1381,8 @@ plot(lime.explain)
 ```
 
 
-![png](output_66_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/13.png)
 
 
 
@@ -1382,7 +1394,8 @@ plot(lime.explain)
 ```
 
 
-![png](output_67_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/14.png)
 
 
 #### Measure interactions
@@ -1397,7 +1410,8 @@ plot(interact)
 ```
 
 
-![png](output_69_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/15.png)
 
 
   SHapley Additive exPlanations (SHAP) : Explain single predictions with game theory
@@ -1417,7 +1431,8 @@ shapley$plot()
 ```
 
 
-![png](output_71_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/16.png)
 
 
 h2o
@@ -1443,27 +1458,32 @@ p7[[5]]
 
 
 
-![png](output_74_1.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/17.png)
 
 
 
-![png](output_74_2.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/18.png)
 
 
 
-![png](output_74_3.png)
+![ ]( /img/ML-INTERPRETABILITY-R/19.png)
 
 
 
-![png](output_74_4.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/20.png)
 
 
 
-![png](output_74_5.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/21.png)
 
 
 
-![png](output_74_6.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/22.png)
 
 
 DALEX
@@ -1485,13 +1505,7 @@ class(train_tbl$target)
 
 train_tbl$target<-as.numeric(train_tbl$target)
 
-#prostate[, 2] <- as.factor(prostate[, 2])
 
-#train_tbl[,"cp"]<-h2o::as.factor(train_tbl[,"cp"])
-    
-#train_tbl$cp<-as.factor(train_tbl$cp)
-
-#class(as.h2o(train_tbl[,"cp"]))
 ```
 
 
@@ -1542,7 +1556,7 @@ plot(mp_h2o_glm, mp_h2o_gbm, mp_h2o_automl)
 ```
 
 
-![png](output_79_0.png)
+![ ]( /img/ML-INTERPRETABILITY-R/23.png)
 
 
 
@@ -1552,7 +1566,8 @@ plot(mp_h2o_glm, mp_h2o_gbm, mp_h2o_automl, geom = "boxplot")
 ```
 
 
-![png](output_80_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/24.png)
 
 
 #### Variable importance
@@ -1572,7 +1587,8 @@ plot(vi_h2o_glm, vi_h2o_gbm, vi_h2o_automl)
 ```
 
 
-![png](output_82_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/25.png)
 
 
 #### Partial Dependence Plot
@@ -1596,7 +1612,8 @@ plot(pdp_h2o_glm, pdp_h2o_gbm, pdp_h2o_automl)
 ```
 
 
-![png](output_84_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/26.png)
 
 
 #### Acumulated Local Effects plot
@@ -1616,7 +1633,8 @@ plot(ale_h2o_glm,ale_h2o_automl,ale_h2o_gbm)
 ```
 
 
-![png](output_86_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/27.png)
 
 
 #### Prediction understanding
@@ -1639,7 +1657,8 @@ plot(pb_h2o_glm, pb_h2o_gbm, pb_h2o_automl)
 ```
 
 
-![png](output_88_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/28.png)
 
 
 #### Variable importance
@@ -1665,7 +1684,8 @@ plot(vi_h2o_glm, vi_h2o_gbm, vi_h2o_automl)
 ```
 
 
-![png](output_90_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/29.png)
 
 
 
@@ -1709,7 +1729,8 @@ plot(model_lok)
 ```
 
 
-![png](output_93_0.png)
+
+![ ]( /img/ML-INTERPRETABILITY-R/30.png)
 
 
 
