@@ -287,6 +287,10 @@ The default style of Beautiful Jekyll is to feature the blog feed on the front p
 
 Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to this, because every person will view your site on a different browser with different dimensions. Some browsers will have very wide aspect ratio, some will be narrower, some will be vertical (such as phones), different phones have different screens, etc. The image will always be centered, so the only tip I can give is that you should make sure the important part of the image is in the middle so that it'll always show. Other than that, every browser will show a different clipping of the image.
 
+#### How do I use MathJax equations in my posts?
+
+MathJax can be easily integrated into your website with a one-line addition. You can see [this discussion](https://github.com/daattali/beautiful-jekyll/issues/195) for more information.
+
 #### My project page appear to be broken after a recent update!
 
 In June 2019, some URL related settings have been adjusted to be more in-line with how Jekyll uses them officially. Project Page absolute links might appear to be broken if you haven't propagated all necessary changes to your local templates, or if you have created additional templates making use of old settings. If a link contains a duplicated project path component, this is most likely the cause. In summary:
