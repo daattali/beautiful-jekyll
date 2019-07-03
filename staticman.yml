@@ -98,7 +98,7 @@ comments:
 
   # reCAPTCHA (OPTIONAL)
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
-  # Use your OWN siteKey and secret.
+  # Either use your OWN siteKey and secret, or change them to the empty string "".
   reCaptcha:
     enabled: false
     siteKey: "6Lcv8G8UAAAAAEqV1Y-XEPum00C_DxhD6O--qkFo"
