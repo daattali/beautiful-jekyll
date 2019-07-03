@@ -8,7 +8,7 @@ use-site-title: true
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
+    <a href="{{ post.url | relative_url }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
 
 	  {% if post.subtitle %}
@@ -25,8 +25,8 @@ use-site-title: true
     <div class="post-entry-container">
       {% if post.image %}
       <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}">
         </a>
       </div>
       {% endif %}
@@ -34,7 +34,7 @@ use-site-title: true
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
     </div>
@@ -44,7 +44,7 @@ use-site-title: true
       Tags:
       {% if site.link-tags %}
       {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
       {% endfor %}
       {% else %}
         {{ post.tags | join: ", " }}
@@ -60,12 +60,12 @@ use-site-title: true
 <ul class="pager main-pager">
   {% if paginator.previous_page %}
   <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
   </li>
   {% endif %}
   {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
   </li>
   {% endif %}
 </ul>
