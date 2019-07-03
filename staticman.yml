@@ -100,7 +100,7 @@ comments:
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
   # Use your OWN siteKey and secret.
   reCaptcha:
-    enabled: false
+    enabled: true
     siteKey: "6Lcv8G8UAAAAAEqV1Y-XEPum00C_DxhD6O--qkFo"
     # (!) ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
     # i.e. https://staticman3.herokuapp.com/v3/encrypt/{your-site-secret}
