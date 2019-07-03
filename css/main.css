@@ -103,6 +103,11 @@ img {
   margin-top: -25px;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
 /* --- Navbar --- */
 
 .navbar-custom {
