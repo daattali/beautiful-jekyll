@@ -118,7 +118,7 @@ To use Facebook comments, create a Facebook app using [Facebook developers](http
 
 To use Staticman, you first need to invite `staticmanlab` as a collaborator to your repository (by going to your repository **Settings** page, navigate to the **Collaborators** tab, and add the username `staticmanlab`), and then accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`. Lastly, fill in your `repository` and `branch` in the Staticman section of `_config.yml`.
 
-It is suggested to enable reCAPTCHA to avoid massive spam comments.  You may refer to `_config.yml` for detailed instructions.  If you wish to keep reCAPTCHA disabled, to avoid getting a comment submission error, at the bottom of `staticman.yml`, please change `siteKey` and `secret` to the empty string, like `secret: ""`.
+Optional: It is suggested to enable reCAPTCHA to avoid massive spam comments.  You may refer to `_config.yml` for detailed instructions.
 
 Optional: You might want to configure a webhook to prevent inactive branches representing merged comments from stacking up.  You may refer to [Staticman's documenation](https://staticman.net/docs/webhooks) for details.  Please input the **Payload URL** according to your chosen `endpoint`.  For example, the default `endpoint` is `https://staticman3.herokuapp.com/v3/entry/github/`, so the corresponding **Payload URL** should be `https://staticman3.herokuapp.com/v1/webhook`.
 
