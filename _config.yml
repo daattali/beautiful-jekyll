@@ -126,7 +126,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
 
-# Staticman support
+# Staticman support (parameters under this section are CASE-sensitive)
 staticman:
   repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : # eg. "master" If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
