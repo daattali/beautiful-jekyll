@@ -27,6 +27,7 @@ subtitle: For MDS students and beyond
 - [Block rep guidelines](/resources_pages/block_rep)
 - [Student feedback about the program](/resources_pages/student_feedback)
 - [Guidelines for working with others](/resources_pages/teamwork/)
+- [Contributing to the MDS blog](/resources_pages/contributing_blog/)
 
 #### Possibly of general interest
 
