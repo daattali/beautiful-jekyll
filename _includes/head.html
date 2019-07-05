@@ -12,7 +12,7 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
 
   {% include gtag.html %}
   {% include gtm_head.html %}
@@ -26,7 +26,7 @@
 
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css | relative_url }}" />
     {% endfor %}
   {% endif %}
 
@@ -44,7 +44,7 @@
 
   {% if page.css %}
     {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | prepend: site.baseurl | replace: '//', '/' }}" />
+      <link rel="stylesheet" href="{{ css | relative_url }}" />
     {% endfor %}
   {% endif %}
 
@@ -80,19 +80,20 @@
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="{{ site.title }}" />
 
-  {% if page.share-img %}
-  <meta property="og:image" content="{{ site.url }}{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% if page.id %}
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% else %}
+  <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}" />
   {% endif %}
 
-  {% if page.id %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-  {% else %}
-  <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
-  <link rel="canonical" href="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
+  {% if page.share-img %}
+  <meta property="og:image" content="{{ page.share-img }}" />
+  {% elsif site.avatar %}
+  <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
+
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -118,13 +119,18 @@
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ site.url }}{{ page.share-img }}" />
   {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
+  <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
   
   {% include google_analytics.html %}
 
   {% if site.matomo %}
   {% include matomo.html %}
+  {% endif %}
+
+  {% if page.comments and site.staticman.repository and site.staticman.branch %}
+  <!-- Staticman -->
+  <link rel="stylesheet" href="{{ "/css/staticman.css" | relative_url }}" />
   {% endif %}
 
 </head>

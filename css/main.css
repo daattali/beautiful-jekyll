@@ -13,7 +13,7 @@ body {
   position: relative;
   background-color: {{ site.page-col }};
   {% if site.page-img %}
-  background-image: url({{ site.page-img }});
+  background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
 }
@@ -52,8 +52,6 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .main-content {
-    padding-left: env(safe-area-inset-left);
-    padding-right: env(safe-area-inset-right);
     padding-top: 130px;
   }
 }
@@ -112,7 +110,7 @@ img {
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
-  background-image: url({{ site.navbar-img }});
+  background-image: url({{ site.navbar-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
 }
@@ -211,11 +209,6 @@ img {
   }
 }
 
-.container-fluid  {
-  padding-left: max(15px, env(safe-area-inset-left));
-  padding-right: max(15px, env(safe-area-inset-right));
-}
-
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
@@ -274,7 +267,7 @@ footer {
   font-size: 14px;
   background-color: {{ site.footer-col }};
   {% if site.footer-img %}
-  background-image: url({{ site.footer-img }});
+  background-image: url({{ site.footer-img | relative_url }});
   background-attachment: fixed;
   {% endif %}
 }
@@ -715,7 +708,7 @@ td.gutter {
 }
 
 /* --- Notification boxes --- */
-.box-note, .box-warning, .box-error {
+.box-note, .box-warning, .box-error, .box-success {
   padding: 15px 15px 15px 10px;
   margin: 20px 20px 20px 5px;
   border: 1px solid #eee;
@@ -736,6 +729,11 @@ td.gutter {
 .box-error {
   background-color: #f4dddb;
   border-left-color: #c0392b;
+}
+
+.box-success {
+  background-color: #98FB98;
+  border-left-color: #3CB371;
 }
 
 /* Fix table border github gist snippets */

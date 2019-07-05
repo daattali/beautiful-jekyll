@@ -8,7 +8,7 @@
        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId={{ site.fb_comment_id }}&autoLogAppEvents=1';
        fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5"></div>
+    <div class="fb-comments" data-href="{{ page.url | absolute_url }}" data-width="100%" data-numposts="5"></div>
     <noscript>Please enable JavaScript to view the comments powered by Facebook.</noscript>
 </div>
 {%- endif -%}
