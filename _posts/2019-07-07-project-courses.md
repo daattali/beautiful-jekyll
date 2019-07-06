@@ -5,9 +5,7 @@ title: Teaching Data Science using project-based courses in the UBC Master of Da
 
 ### Outline
 
-- What is Data Science and why are project-based courses necessary in a Data Science curriculum
-  - definition
-  - real world data science projects on the job/in the research lab are like snowflakes, and not cookies
+Data Science is the act of extracting value from data through reproducible and auditable processes. This definition is intentionally broad such that it may encompasses all the different things Data Scientists do to gain insights and knowledge from data, and the things that need to be done can be very different depending on the application of knowledge or insights needed to be garnered from the data. How can we teach aspiring Data Scientists "what things need to be done" to answer their data question? Typical lecture and lab based courses are one way to give prescribed and well-defined examples, and at the beginning of a Data Science education these are necessary. But only ever being exposed to prescribed and  well-defined problem sets hardly prepares the aspiring data scientist for real world data science work in either industry or the research lab, where projects are more like snowflakes than cookies (Figure 1). Project-based courses where data is messy, the task is not perfectly defined and people are required to collaborate and work together to extract value from the data is a more real-world-like setting where students have the opportunity try, have successes and failures across many more axes of Data Science than are typically available in a focused lecture/lab-based course. 
 
 - A brief history/context of project-based courses in MDS
 
