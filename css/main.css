@@ -668,37 +668,43 @@ pre {
   font-size: 16px;
   line-height: 1.5em;
 }
-pre code {
-  white-space: pre;
-}
-pre.highlight, .highlight > pre, td.code pre {
-  background-color: #FAFAFA;
-  background-image: linear-gradient(#F9F9F9 50%, #FDFDFD 50%);
-  background-repeat: repeat;
-  background-size: 3em 3em;
-  background-position: 0px 10px;
-  border-left: 7px solid #444;
-}
-code table, code table td, code table th, code table tbody, code table tr,
-td.gutter pre {
-  padding: 0;
+.highlight pre {
   border: none;
-  background-color: #fff;
+  background: none;
+  margin: 0;
 }
 .highlight > pre {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.06), rgba(0,0,0,0.06) 1.5em, rgba(0,0,0,0.03) 1.5em, rgba(0,0,0,0.03) 3em);
+  background-size: auto 3em;
+  background-position-y: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-left: 7px solid #444;
+}
+.highlight > pre:not([class~="highlight"]) { /* code block with line number */
   padding: 0;
 }
-.highlight > pre.highlight {
-  padding: 9.5px;
+.highlight table, .highlight tr, .highlight td { /* to be removed after fixing table styles */
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
 }
-td.code pre {
-  border-width: 0 0 0 2px;
-  border-style: solid;
-  border-color: #444;
+.highlight pre.lineno {
+  color: rgba(0,0,0,0.3);
   border-radius: 0;
+  border-right: 2px solid #444;
 }
-td.gutter {
-  padding-top: 3px;
+
+/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+.lineno {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.lineno::selection, .lineno::-moz-selection {
+  background: none;
 }
 
 /* --- Social media sharing section --- */
