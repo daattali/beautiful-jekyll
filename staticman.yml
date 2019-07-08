@@ -4,7 +4,8 @@
 # another one to handle posts.
 # To encrypt strings use the following endpoint:
 # https://{STATICMAN API INSTANCE}/v3/encrypt/{TEXT TO BE ENCRYPTED}
-# {STATICMAN API INSTANCE} defaults to staticman3.herokuapp.com
+# {STATICMAN API INSTANCE} should match the `endpoint` in the theme config
+# file. It defaults to "staticman3.herokuapp.com".
 
 comments:
   # (*) REQUIRED
@@ -22,10 +23,9 @@ comments:
 
   # (*) REQUIRED
   #
-  # Name of the branch being used. Must match the one sent in the URL of the
-  # request.
-  branch: "master"   #  use "master" for user page
-  #branch: "gh-pages" #  use "gh-pages" for project page
+  # Name of the branch being used. Must match the `branch` in the theme config
+  # file.
+  branch: "master"   #  use "master" for user page or "gh-pages" for project pages
 
   commitMessage: "New comment by {fields.name}"
 
@@ -97,12 +97,14 @@ comments:
     email: md5
 
   # reCAPTCHA (OPTIONAL)
-  # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
-  # Use your OWN siteKey and secret.
+  # To enable reCAPTCHA:
+  # 1. Set `enabled` to `true`
+  # 2. Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
+  # 3. Uncomment `siteKey` and `secret` and fill them in with your values
   reCaptcha:
     enabled: false
-    siteKey: "6Lcv8G8UAAAAAEqV1Y-XEPum00C_DxhD6O--qkFo"
-    # (!) ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
-    # i.e. https://staticman3.herokuapp.com/v3/encrypt/{your-site-secret}
-    # For more information, https://staticman.net/docs/encryption
-    secret: "p5uHlH9hCqpMJaGKXdt5MEWFo7K6fX8hoYUwR3aIafOI6rtItLauaDCkGOucysJtrVZy+sHffioGzMsOU64JFDSyPQgrXujegcOHFRXHhD4fOUuBXSvV+OZ8JhSPTGWaRcQcoiGX4pT5hlebLddOl59b6sn6kU1ODQcEbhP83xVLZlaTWOrNrF5Wvy3TMXpH5gyl1tZEORxADAShMYyUbNR7XZYLEg1DfgIBHfIg3cKwdFt7KVLejFGKIiBYRAZDE2JuHItNmzJ2x9JgSK3E+XnShV5tuWpncnyFonJVHGEky/zRfUVLHobDMcJ/u9nlZqE8u47W+833F1WaIYuwNw=="
+    #siteKey: ""
+    # ENCRYPT reCaptcha secret key using Staticman /encrypt endpoint
+    # i.e. https://{STATICMAN API INSTANCE}/v3/encrypt/{your-site-secret}
+    # For more information, visit https://staticman.net/docs/encryption
+    #secret: ""
