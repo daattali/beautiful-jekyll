@@ -5,6 +5,26 @@ subtitle: For the MDS Capstone course
 
 ---
 
+2019:
+
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Quantifying the Responses to Open-Ended Survey Questions_
+- [BGC Engineering](https://bgcengineering.ca/): _Automated Landslide Detection and Delineation from Digital Terrain Data_               
+- [British Columbia Maritime Employers Association](http://www.bcmea.com/): _Improving Labour Forecasting to Promote the Competitiveness of BC Ports_
+- [E-Comm 911](https://www.ecomm911.ca/): _Predictive Staffing Model to Help Save Life and Protect Property_
+- [Fresh Prep](https://www.freshprep.ca/): _Forecasting Meal Kit Orders_
+- [Management Information Systems Group, UBC Sauder School of Business](https://www.sauder.ubc.ca/Faculty/Divisions/Management_Information_Systems_Division): _Extracting a Corporate Social Network from SEC Filings_
+- [Minerai de fer Québec / Quebec Iron Ore](https://mineraiferquebec.com/?lang=en): _Image recognition of rock types for identification of rock formations_
+- [Minerai de fer Québec / Quebec Iron Ore](https://mineraiferquebec.com/?lang=en): _Predicting geological properties from drill metrics to predict rock composition_
+- [Providence Health Care](http://www.providencehealthcare.org/): _Forecasting of Staffing Needs_
+- [QxMD](https://qxmd.com/): _Generate cross-product recommendations to help get medical research adopted in clinical practice_
+- [QxMD](https://qxmd.com/): _Match real-time news stories with medical research literature_
+- [RStudio](https://www.rstudio.com/): _What the Git Is Going On Here!?_      |
+- [Realtor.com](https://www.realtor.com/): _Estimate the Value of Key Local attributes used in buying decisions_
+- Seahorse Strategies: _Predicting the Stock Market_
+- [TRIUMF](https://www.triumf.ca/): _π-e-μ AI_
+- [TeejLab](https://teejlab.com/): _Technical Legal Risk Assessment for Data Services_
+- [Tetrad](http://www.tetrad.com/): _Understanding Restaurant Sales_
+- [UrbanLogiq](https://www.urbanlogiq.com/): _Indicators of Crash Severity_
 
 2018:
 
