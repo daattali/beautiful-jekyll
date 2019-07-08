@@ -18,7 +18,7 @@ subtitle: For the MDS Capstone course
 - [Providence Health Care](http://www.providencehealthcare.org/): _Forecasting of Staffing Needs_
 - [QxMD](https://qxmd.com/): _Generate cross-product recommendations to help get medical research adopted in clinical practice_
 - [QxMD](https://qxmd.com/): _Match real-time news stories with medical research literature_
-- [RStudio](https://www.rstudio.com/): _What the Git Is Going On Here!?_      |
+- [RStudio](https://www.rstudio.com/): _What the Git Is Going On Here!?_
 - [Realtor.com](https://www.realtor.com/): _Estimate the Value of Key Local attributes used in buying decisions_
 - Seahorse Strategies: _Predicting the Stock Market_
 - [TRIUMF](https://www.triumf.ca/): _π-e-μ AI_
