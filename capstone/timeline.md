@@ -5,24 +5,22 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-This year's capstone course will run __April 22, 2019 - June 27, 2019__ (10 weeks).
+This year's capstone course will run __May 4, 2020 - June 30, 2020__ (8 weeks).
 
 The **approximate** timeline is below, followed by additional detail on each event.
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| Suggested initial submission of proposal | November 15, 2018 |
-| [Proposal deadline](#proposal-revision-process) | December 31, 2018  |
-| [Students rate proposals](#students-rate-proposals) | January 10, 2019  |
+| Suggested initial submission of proposal | November 15, 2019 |
+| [Proposal deadline](#proposal-revision-process) | December 31, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
-| [Partners accept invitations](#partners-accept-invitations) | January 30, 2019  |
-| [Capstone fair](#capstone-fair)       | March 1, 2019 |
-| [Students rate the projects](#students-rate-the-projects)  | early March, 2019 |
-| [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 15, 2019  |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 15, 2019 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | March 15, 2019  |
-| [Kickoff meetings](#kickoff-meetings)    | April 1 - April 19, 2019 |
-| [Project](#project) | April 23 - June 27, 2019 |
+| [Capstone fair](#capstone-fair)       | February 13-14, 2020 |
+| [Students rate the projects](#students-rate-the-projects)  | late February, 2019 |
+| [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 1, 2020  |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 1, 2020 |
+| [Students are assigned to projects](#students-are-assigned-to-projects) | March 1, 2020  |
+| [Kickoff meetings](#kickoff-meetings)    | March-April, 2020 |
+| [Project](#project) | May 4, - June 30, 2020 |
 
 #### Proposal revision process
 
@@ -31,10 +29,6 @@ Members of an organization interested in participating as a capstone partner sho
 Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
 
 We recommend your first submission of the proposal to be well before the December 31st deadline, so that we can offer suggestions in case it needs revision.
-
-#### Students rate proposals
-
-A list of finalized proposals, along with one-sentence summaries, will be posted on a "project board" viewable by the students. The students will then rate their interest in the proposals.
 
 #### Selection of proposals
 
@@ -52,11 +46,6 @@ Capstone partners must attend the Capstone Fair, to be held in February 2019 (da
 #### Students rate the projects
 
 After the capstone fair, the students assign a final rating to the projects.
-
-
-#### Partners provide legal documents and declare conflicts of interest
-
-Before students rate the projects, they should have access to any legal documents they would need to sign in order to work on the project. Thus, partners must provide these documents before the rating stage. Furthermore, students should be aware of any potential conflicts of interest before rating the project, so partners are asked to declare these as well.
 
 
 #### Partners provide data
