@@ -7,20 +7,20 @@ subtitle: For MDS Capstone Projects
 
 This year's capstone course will run __May 4, 2020 - June 30, 2020__ (8 weeks).
 
-The **approximate** timeline is below, followed by additional detail on each event.
+The approximate timeline is below, followed by additional detail on each event.
 
 | Event | Deadline/Period |
 | ----- | ---- |
 | Suggested initial submission of proposal | November 15, 2019 |
 | [Proposal deadline](#proposal-revision-process) | December 31, 2019  |
-| [Selection of proposals](#selection-of-proposals) | January 15, 2019   |
+| [Selection of proposals](#selection-of-proposals) | January 15, 2020   |
 | [Capstone fair](#capstone-fair)       | February 13-14, 2020 |
-| [Students rate the projects](#students-rate-the-projects)  | late February, 2019 |
+| [Students rate the projects](#students-rate-the-projects)  | late February, 2020 |
 | [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 1, 2020  |
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 1, 2020 |
 | [Students are assigned to projects](#students-are-assigned-to-projects) | March 1, 2020  |
 | [Kickoff meetings](#kickoff-meetings)    | March-April, 2020 |
-| [Project](#project) | May 4, - June 30, 2020 |
+| [Project](#project) | May 4 - June 30, 2020 |
 
 #### Proposal revision process
 
