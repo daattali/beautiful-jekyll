@@ -22,6 +22,7 @@ description: A Rookie Player of Machine Learning and Natural Language Processing
 navbar-links:
   About Me: "aboutme"  
   Author's home: "https://wangyuhan95.github.io/"
+  Tags Index: "tags"
   CV: "cv"
 
 # Image to show in the navigation bar - image must be a square (width = height)
