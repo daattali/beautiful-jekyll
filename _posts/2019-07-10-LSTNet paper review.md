@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LSTNet Paper Review
-subtitle: Paper frome SIGIR 2018, Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks
+subtitle: Paper from SIGIR 2018, Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks
 tags: [Paper Review, DeepLearning]
 ---
 
