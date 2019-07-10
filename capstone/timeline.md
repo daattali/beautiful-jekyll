@@ -16,9 +16,8 @@ The approximate timeline is below, followed by additional detail on each event.
 | [Selection of proposals](#selection-of-proposals) | January 15, 2020   |
 | [Capstone fair](#capstone-fair)       | February 13-14, 2020 |
 | [Students rate the projects](#students-rate-the-projects)  | late February, 2020 |
-| [Partners provide legal documents](#partners-provide-legal-documents-and-declare-conflicts-of-interest) | March 1, 2020  |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | March 1, 2020 |
-| [Students are assigned to projects](#students-are-assigned-to-projects) | March 1, 2020  |
+| [Partners are notified of our decisions](#partners-are-notified-of-our-decisions) | March 1, 2020 |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2020 |
 | [Kickoff meetings](#kickoff-meetings)    | March-April, 2020 |
 | [Project](#project) | May 4 - June 30, 2020 |
 
@@ -47,6 +46,9 @@ Capstone partners must attend the Capstone Fair, to be held in February 2019 (da
 
 After the capstone fair, the students assign a final rating to the projects.
 
+#### Partners are notified of our decisions
+
+Based on student interest, the MDS leadership team decides which projects will move forward. Student groups are assigned to the projects at the same time.. 
 
 #### Partners provide data
 
@@ -54,13 +56,9 @@ Before a project is accepted, the partner must provide MDS with a demonstration 
 
 Partners should feel free to ask us for our standard agreement at any point in the selection procedure.
 
-#### Students are assigned to projects
-
-Based on student interest, the MDS leadership team assigns student groups to the projects. In the unlikely scenario that there is insufficient interest in a project, no student group will be assigned to that project.
-
 #### Kickoff meetings
 
-The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project.
+The students will arrange a date and time with their capstone partner and teaching fellow mentor to have an initial meeting to discuss the project. It is common that students sign any required legal documents at this meeting, which means the students should be sent the documents for review well in advance.
 
 #### Project
 
