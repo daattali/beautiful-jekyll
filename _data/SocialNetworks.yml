@@ -15,6 +15,10 @@ github:
   name: "GitHub"
   baseURL: "https://github.com/"
   icon: "fa-github"
+weibo:
+  name:"weibo"
+  baseURL:"https://weibo.com/"
+  icon:"fa-weibo"
 
 twitter:
   name: "Twitter"
