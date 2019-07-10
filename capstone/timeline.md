@@ -11,7 +11,7 @@ The approximate timeline is below, followed by additional detail on each event.
 
 | Event | Deadline/Period |
 | ----- | ---- |
-| Suggested initial submission of proposal | November 15, 2019 |
+| Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November 15, 2019 |
 | [Proposal deadline](#proposal-revision-process) | December 20, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2020   |
 | [Capstone fair](#capstone-fair)       | February 13-14, 2020 |
@@ -20,6 +20,7 @@ The approximate timeline is below, followed by additional detail on each event.
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2020 |
 | [Kickoff meetings](#kickoff-meetings)    | March-April, 2020 |
 | [Project](#project) | May 4 - June 30, 2020 |
+| [Kickoff hackathon](#hackathon) | May 4 and 5, 2020 |
 
 #### Proposal revision process
 
@@ -39,7 +40,7 @@ The successful capstone partners accept the offers, and confirm their attendance
 
 #### Capstone fair
 
-Capstone partners must attend the Capstone Fair, to be held in February 2019 (date TBD), to meet with the students and answer any questions they may have. Detailed information will be emailed to each capstone partner.
+Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner.
 
 
 #### Students rate the projects
@@ -63,3 +64,7 @@ The students will arrange a date and time with their capstone partner and teachi
 #### Project
 
 The project itself. At the end, partners can expect the students to present at the partner organizations. Partners will also be invited to an end-of-program celebration at UBC.
+
+#### Hackathon
+
+The Capstone project starts with a 2-day hackathon at the UBC main Point Grey campus. Capstone partners are strongly encouraged to attend the morning of the 2nd day of the hackathon. In the past, students have found this very valuable, as they were able to ask questions about their dataset and clarify other data science issues with the partner.
