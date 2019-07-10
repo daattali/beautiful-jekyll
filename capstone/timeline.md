@@ -12,7 +12,7 @@ The approximate timeline is below, followed by additional detail on each event.
 | Event | Deadline/Period |
 | ----- | ---- |
 | Suggested initial submission of proposal | November 15, 2019 |
-| [Proposal deadline](#proposal-revision-process) | December 31, 2019  |
+| [Proposal deadline](#proposal-revision-process) | December 20, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2020   |
 | [Capstone fair](#capstone-fair)       | February 13-14, 2020 |
 | [Students rate the projects](#students-rate-the-projects)  | late February, 2020 |
