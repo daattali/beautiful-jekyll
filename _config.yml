@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: WangYu-han's Blog
+title: Blog Home Page
 
 # Short description of your site
 description: A Rookie Player of Machine Learning and Natural Language Processing.
@@ -245,5 +245,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
