@@ -14,11 +14,11 @@ The approximate timeline is below, followed by additional detail on each event.
 | Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November 15, 2019 |
 | [Proposal deadline](#proposal-revision-process) | December 20, 2019  |
 | [Selection of proposals](#selection-of-proposals) | January 15, 2020   |
-| [Capstone fair](#capstone-fair)       | February 13-14, 2020 |
+| [Capstone fair](#capstone-fair)       | February 13 and 14, 2020 |
 | [Students rate the projects](#students-rate-the-projects)  | late February, 2020 |
 | [Partners are notified of our decisions](#partners-are-notified-of-our-decisions) | March 1, 2020 |
 | [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2020 |
-| [Kickoff meetings](#kickoff-meetings)    | March-April, 2020 |
+| [Kickoff meetings](#kickoff-meetings)    | March - April, 2020 |
 | [Project](#project) | May 4 - June 30, 2020 |
 | [Kickoff hackathon](#hackathon) | May 4 and 5, 2020 |
 
