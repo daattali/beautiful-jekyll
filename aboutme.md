@@ -5,8 +5,11 @@ subtitle: A Rookie Player of Machine Learning and Natural Language Processing.
 ---
 
 My name is Wang Yu-han, a Master of Management Science and Engineering(2020 expected).
+
 My research interest is Machine Learning Application and NLP tasks like NER and Setiment Analysis.
-University:Dalian Maritime University
+
+University:Dalian Maritime University.
+
 Location:Dalian, LiaoNing, Chian.
 
 
