@@ -3,6 +3,7 @@ layout: post
 title: Rapidly evolving seas in the Florida Keys
 author: Nicola G. Kriefall, PhD student, Boston University
 ---
+by Nicola Kriefall (thenicolakriefall@gmail.com)
 
 ![Healthycoral](../img/RTfishandfav.JPG)
 
