@@ -3,7 +3,6 @@ layout: post
 title: LSTNet Paper Review
 subtitle: Paper frome SIGIR 2018, Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks
 tags: [Paper Review, DeepLearning]
-comments: true
 ---
 
 #### 一、概述
@@ -20,12 +19,15 @@ LSTM提出后，基于其可存贮序列数据的历史信息的特性，也有�
 ##### CNN Component
 正常的CNN 序列处理，就和做CNN文本处理一样，Conv1D模型，多个卷积核做卷积操作，最后作为RNN层的训练数据。
 激活函数RELU。
+
 ![](https://upload-images.jianshu.io/upload_images/10029502-5baf1b0fb7bdedc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![CNN Component](https://upload-images.jianshu.io/upload_images/10029502-e61f3e35e3bbc607.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### RNN Component
+
 正常的一层GRU ， 激活函数RELU。
+
 ![GRU](https://upload-images.jianshu.io/upload_images/10029502-3ea21eca3f525d80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
@@ -34,20 +36,28 @@ p是设置跳跃的间隔距离
 ![Recurrent-skip Component](https://upload-images.jianshu.io/upload_images/10029502-f3ae60c8ecfe351a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![Recurrent-skip Component](https://upload-images.jianshu.io/upload_images/10029502-2720315585321ec9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-#####Attention Component
+
+##### Attention Component
+
 ![Attention](https://upload-images.jianshu.io/upload_images/10029502-9452de9aba564b36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 H^R,t 是隐层（上一层RNN）的matrix，h是Hmatrix中的column
 即H = [h t-q, ... , h t-1] 
 αt就是得到的注意力矩阵，将Ht * αt 得到注意力加权过的新的隐层序列。
+
 ![ht](https://upload-images.jianshu.io/upload_images/10029502-b545761d79584d2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 最后一个window 的隐层向量使用简单的线性投影得到。
+
 ##### AR Component
+
 ![AR](https://upload-images.jianshu.io/upload_images/10029502-6c7b9526585518ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### LSTNet Architecture
+
 ![](https://upload-images.jianshu.io/upload_images/10029502-53ec561bfa816784.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ##### 目标函数
+
 在大多数预测任务中，都把最小均方误差做为默认的损失函数。而在LSTNet中，使用绝对误差作为目标函数。
 ![](https://upload-images.jianshu.io/upload_images/10029502-781004dd58b519fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -55,6 +65,7 @@ H^R,t 是隐层（上一层RNN）的matrix，h是Hmatrix中的column
 SGD & Adam
 
 #### 四、评测任务
+
 ***Baseline***
 ![](https://upload-images.jianshu.io/upload_images/10029502-41fb526b7dcc38a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![](https://upload-images.jianshu.io/upload_images/10029502-8891d94bb0cd4c14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
