@@ -20,46 +20,46 @@ LSTM提出后，基于其可存贮序列数据的历史信息的特性，也有�
 正常的CNN 序列处理，就和做CNN文本处理一样，Conv1D模型，多个卷积核做卷积操作，最后作为RNN层的训练数据。
 激活函数RELU。
 
-![](https://upload-images.jianshu.io/upload_images/10029502-5baf1b0fb7bdedc1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://imgsrc.baidu.com/forum/pic/item/ee1ce6cd7b899e5183977efc4ca7d933c9950d27.jpg)
 
-![CNN Component](https://upload-images.jianshu.io/upload_images/10029502-e61f3e35e3bbc607.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![CNN Component](http://imgsrc.baidu.com/forum/pic/item/a86ba9773912b31b01ad88c18818367ad8b4e178.jpg)
 
 ##### RNN Component
 
 正常的一层GRU ， 激活函数RELU。
 
-![GRU](https://upload-images.jianshu.io/upload_images/10029502-3ea21eca3f525d80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![GRU](http://imgsrc.baidu.com/forum/pic/item/5164b9014a90f603de71d9af3712b31bb251ed78.jpg)
 
 
 ##### Skip - RNN Component
 p是设置跳跃的间隔距离
-![Recurrent-skip Component](https://upload-images.jianshu.io/upload_images/10029502-f3ae60c8ecfe351a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Recurrent-skip Component](http://imgsrc.baidu.com/forum/pic/item/02d5c895d143ad4b423002288c025aafa50f0626.jpg)
 
-![Recurrent-skip Component](https://upload-images.jianshu.io/upload_images/10029502-2720315585321ec9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Recurrent-skip Component](http://imgsrc.baidu.com/forum/pic/item/2de5738da977391203e7c089f6198618347ae278.jpg)
 
 ##### Attention Component
 
-![Attention](https://upload-images.jianshu.io/upload_images/10029502-9452de9aba564b36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Attention](http://imgsrc.baidu.com/forum/pic/item/5032b31c8701a18b3b2a57a7902f07082a38fe78.jpg)
 
 H^R,t 是隐层（上一层RNN）的matrix，h是Hmatrix中的column
 即H = [h t-q, ... , h t-1] 
 αt就是得到的注意力矩阵，将Ht * αt 得到注意力加权过的新的隐层序列。
 
-![ht](https://upload-images.jianshu.io/upload_images/10029502-b545761d79584d2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![ht](http://imgsrc.baidu.com/forum/pic/item/f5958bd4b31c87011a77f70e297f9e2f0508ff78.jpg)
 最后一个window 的隐层向量使用简单的线性投影得到。
 
 ##### AR Component
 
-![AR](https://upload-images.jianshu.io/upload_images/10029502-6c7b9526585518ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![AR](http://imgsrc.baidu.com/forum/pic/item/e81c828ba61ea8d3a42e30ec990a304e241f5834.jpg)
 
 ##### LSTNet Architecture
 
-![](https://upload-images.jianshu.io/upload_images/10029502-53ec561bfa816784.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://imgsrc.baidu.com/forum/pic/item/d8a978f0f736afc3e6127b8dbd19ebc4b6451226.jpg)
 
 ##### 目标函数
 
 在大多数预测任务中，都把最小均方误差做为默认的损失函数。而在LSTNet中，使用绝对误差作为目标函数。
-![](https://upload-images.jianshu.io/upload_images/10029502-781004dd58b519fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://imgsrc.baidu.com/forum/pic/item/7082034f78f0f73631e008e90455b319eac41326.jpg)
 
 ##### 优化策略
 SGD & Adam
@@ -67,11 +67,11 @@ SGD & Adam
 #### 四、评测任务
 
 ***Baseline***
-![](https://upload-images.jianshu.io/upload_images/10029502-41fb526b7dcc38a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](https://upload-images.jianshu.io/upload_images/10029502-8891d94bb0cd4c14.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](https://upload-images.jianshu.io/upload_images/10029502-6fe2986629c4343d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://imgsrc.baidu.com/forum/pic/item/9941d933c895d1433f9ba0cb7df0820258af074b.jpg)
+![](http://imgsrc.baidu.com/forum/pic/item/49bed109b3de9c829f69bd676281800a18d84334.jpg)
+![](http://imgsrc.baidu.com/forum/pic/item/0aefb3de9c82d158838e1d598e0a19d8bd3e4234.jpg)
 ##### 4.5 Main Results
-![image.png](https://upload-images.jianshu.io/upload_images/10029502-c2873e3c1d767052.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://imgsrc.baidu.com/forum/pic/item/637fa9014c086e06da697aa30c087bf408d1cb78.jpg)
 
   ***Reference：***
 [Original Paper (LSTNet)](http://nyc.lti.cs.cmu.edu/yiming/Publications/lai-sigir18.pdf)
