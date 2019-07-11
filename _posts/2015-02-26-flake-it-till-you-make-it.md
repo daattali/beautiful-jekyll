@@ -10,17 +10,26 @@ tags:
   - PHP
 published: false
 ---
-### Install TaskSel
+### Step 1: Update Software Packages
 
-The tasksel package is available under default repositories on most of Ubuntu, Debian, and LinuxMint operating systems. Use the following command to install it.
+Before we install the LAMP stack, it’s a good idea to update repository and software packages. Run the following command on your Ubuntu 18.04/19.04 OS.
+
+```console
+sudo apt update && sudo apt upgrade
+```
+
+
+### Step 2: Install TaskSel
+
+Instead of installing Apache, MySQL, and PHP separately, Tasksel offers a convenient way to get a LAMP stack running quickly.
 
 ```console
 sudo apt-get install tasksel
 ```
 
-### Installing LAMP Using TaskSel
+### Step 3: Installing LAMP Using TaskSel
 
-After installing tasksel package on your system, let’s install LAMP setup on your Ubuntu, Debian, and LinuxMint system. Execute tasksel command in the terminal with sudo access to install lamp-server.
+After installing tasksel package on your system, let’s install LAMP setup on your Ubuntu system. Execute tasksel command in the terminal with sudo access to install lamp-server.
 
 ```console
 sudo tasksel install lamp-server
@@ -34,5 +43,3 @@ Then execute the below command to set a new password and secure MySQL installati
 sudo mysql_secure_installation
 ```
 
-
- 
