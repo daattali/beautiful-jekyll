@@ -41,5 +41,7 @@ We'll see a simple code using tensorflow & then a computational graph of this co
 <img src='https://user-images.githubusercontent.com/35966401/52075213-f4548980-25b5-11e9-8e2a-17c785153180.png' alt=' '>
 </p>
                                                                                                               
-Let's practice !                                                                                                           
+Let's practice !      
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=mtOxnkKuaqE" frameborder="0"></iframe>
 
