@@ -43,5 +43,5 @@ We'll see a simple code using tensorflow & then a computational graph of this co
                                                                                                               
 Let's practice !      
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=mtOxnkKuaqE" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mtOxnkKuaqE" frameborder="0"></iframe>
 
