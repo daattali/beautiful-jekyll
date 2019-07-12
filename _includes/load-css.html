@@ -1,0 +1,39 @@
+{% comment %}
+Unified CSS settings so that no distinguishment between internal / external
+script is needed.
+
+Combine layout.common-css, layout.css, page.css, other conditional sheets
+and main.css, then dedup the list.
+{% endcomment %}
+{%- assign all_css = layout.common-css -%}
+{%- if layout.css -%}{%- assign all_css = all_css | concat: layout.css -%}{%- endif -%}
+{%- if   page.css -%}{%- assign all_css = all_css | concat:   page.css -%}{%- endif -%}
+
+{%- if page.comments and site.staticman.repository and site.staticman.branch -%}
+{%- assign all_css = all_css | push: '/css/staticman.css' -%}
+{%- endif -%}
+
+{%- assign all_css = all_css | push: site.css.main | compact | uniq -%}
+
+{%- for css in all_css -%}
+
+  {%- if css.first -%}
+    {%- assign href = css.first[0] -%}
+    {%- assign prop = css.first[1] -%}
+  {%- else -%}
+    {%- assign href = css -%}
+    {%- assign prop = nil -%}
+  {%- endif -%}
+
+  {%- capture attrs -%}
+  {%- if prop.sri -%}
+    {%- comment -%}
+    SRI is only useful for remote resource, but still adding filter anyway for safety
+    {%- endcomment -%}
+    href="{{ href | relative_url }}" integrity="{{ prop.sri }}" crossorigin="anonymous"
+  {%- else -%}
+    href="{{ href | relative_url }}"
+  {%- endif -%}
+  {%- endcapture %}
+  <link rel="stylesheet" {{ attrs }}>
+{% endfor -%}
