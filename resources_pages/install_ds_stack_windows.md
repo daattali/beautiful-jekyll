@@ -55,25 +55,25 @@ After installation, test if you were successful by opening the Git Bash program 
 
 ## Python
 
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.6
+We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __strongly recommend__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
 
-Head to <https://www.anaconda.com/download/#windows> and download the Anaconda version for Windows with **Python 3.6**. After the download has finished, run the installer selecting the following options:
+Head to <https://www.anaconda.com/download/#windows> and download the Anaconda version for Windows with **Python 3.7**. After the download has finished, run the installer selecting the following options:
   - On the **Advanced Installation Options** page, check both boxes (see image below)
   - For all other pages, use the default options
 
 ![](/resources_pages/imgs/anaconda_windows.png)
 
-After installation, open Command Prompt (select the Start button, type cmd, and click Command Prompt from the list) and type the following to ask for the version:
+After installation, open Command Prompt (select the Start button, type cmd, and click Command Prompt from the list) and type the following:
 ```
-python --version
+python
 ```
-you should see something like this if you were successful:
+you should see something like this (in the first line) if you were successful:
 
 ```
-Python 3.6.5 :: Anaconda, Inc.
+Python 3.7.3 (default, Mar 27 2019, 17:13:21) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
 ```
 
-If instead you see `Python 2.7.X :: Anaconda custom (64-bit)` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.6**.
+If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.6**.
 
 To see if Jupyter was successfully installed in the Anaconda Python distribution type the following in Command Prompt:
 
