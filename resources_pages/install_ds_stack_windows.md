@@ -96,7 +96,7 @@ conda update anaconda
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
 #### R
-Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (Should look something like this: Download R 3.5.1 for Windows). Open the file and follow the installer instructions.
+Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (Should look something like this: Download R 3.6.1 for Windows). Open the file and follow the installer instructions.
 
 
 #### RStudio
