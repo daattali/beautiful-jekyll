@@ -83,7 +83,7 @@ jupyter lab
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
 
-![](/resources_pages/imgs/jupyter_lab.png)
+![](/resources_pages/imgs/jupyter_lab.PNG)
 
 
 If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in the Command Prompt follows:
