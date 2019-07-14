@@ -78,12 +78,12 @@ If instead you see `Python 2.7.X` you installed the wrong version. Follow [these
 To see if Jupyter was successfully installed in the Anaconda Python distribution type the following in Command Prompt:
 
 ```
-jupyter notebook
+jupyter lab
 ```
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
 
-![](/resources_pages/imgs/jupyter.png)
+![](/resources_pages/imgs/jupyter_lab.png)
 
 
 If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in the Command Prompt follows:
