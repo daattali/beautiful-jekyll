@@ -154,7 +154,7 @@ To be able to call R scripts from the Powershell or Git Bash you need to be able
 
 ![](/resources_pages/imgs/env2.png)
 
-After following the instructions above, in Powershell type the following to ask for the version:
+After following the instructions above, restart Powershell and type the following:
 ``` 
 Rscript --version
 ```
@@ -188,7 +188,7 @@ Download the installer from [http://mirror.ctan.org/systems/texlive/tlnet/instal
 
 *note - if a screen appears titled "Windows protected your PC", click on "More info" link and the "Run anyway" button*
 
-After installation, in Command Prompt type the following to ask for the version:
+After installation, restart Powershell and type the following to ask for the version:
 
 ```
 latex --version
@@ -214,12 +214,11 @@ Compiled with xpdf version 4.00
 ## Make
 We will be using Make to automate our analysis scripts. More on this later!
 
-Go to https://github.com/gnu-mcu-eclipse/windows-build-tools/releases and download `
-gnu-mcu-eclipse-build-tools-2.10-20180103-1919-win64.zip`. 
+Go to https://github.com/gnu-mcu-eclipse/windows-build-tools/releases and download `gnu-mcu-eclipse-windows-build-tools-2.12-20190422-1053-win64.zip`. 
 
 Unpack the archive and copy it into the %userprofile%\AppData\Roaming\GNU MCU Eclipse (for example C:\Users\User\AppData\Roaming\GNU MCU Eclipse) folder.
 
-After installation, in Command Prompt type the following to ask for the version:
+After installation, restart Powershell and type the following to ask for the version:
 
 ```
 make --version
@@ -228,10 +227,9 @@ make --version
 you should see something like this if you were successful:
 
 ```
-C:\Users\ilg\AppData\Roaming\GNU MCU Eclipse\Build Tools\2.10-20180103-1919\bin>make --version
-GNU Make 4.1
-Built for i686-w64-mingw32
-Copyright (C) 1988-2014 Free Software Foundation, Inc.
+GNU Make 4.2.1
+Built for i686-pc-msys
+Copyright (C) 1988-2016 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
