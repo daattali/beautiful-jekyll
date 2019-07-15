@@ -62,7 +62,7 @@ Head to <https://www.anaconda.com/download/#windows> and download the Anaconda v
 
 ![](/resources_pages/imgs/anaconda_windows.png)
 
-After installation, open Command Prompt (select the Start button, type cmd, and click Command Prompt from the list) and type the following:
+After installation, open Powershell (select the Start button, type powershell, and click Windows Powershell from the list) and type the following:
 ```
 python
 ```
@@ -74,7 +74,7 @@ Python 3.7.3 (default, Mar 27 2019, 17:13:21) [MSC v.1915 64 bit (AMD64)] :: Ana
 
 If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution type the following in Command Prompt:
+To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Powershell and type the following:
 
 ```
 jupyter lab
@@ -85,7 +85,7 @@ A browser should have launched and you should see a page that looks like the scr
 ![](/resources_pages/imgs/jupyter_lab.PNG)
 
 
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in the Command Prompt follows:
+If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In powershell, type the following:
 ```
 conda update conda
 conda update anaconda
@@ -241,7 +241,7 @@ You will use Docker to create reproducible, sharable and shippable computing env
 
 After signing-up and signing into the Docker Store, go here: https://store.docker.com/editions/community/docker-ce-desktop-windows and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen.
 
-After installation, in Command Prompt type the following to ask for the version:
+After installation, restart Powershell and type the following to ask for the version:
 
 ```
 docker run hello-world
