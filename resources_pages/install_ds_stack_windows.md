@@ -164,29 +164,26 @@ you should see something like this if you were successful:
 R scripting front-end version 3.6.1 (2019-07-05)
 ```
 
-### Atom Text Editor
+### Visual Studio Code
 
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Atom.
+We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. At "Select Additional Tasks" make sure that "Add to path" is selected (I also like to select all the other three items as well - see figure below).
 
-Got to https://flight-manual.atom.io/getting-started/sections/installing-atom/ and follow the installation instructions. 
+![](/resources_pages/imgs/vs_code.png)
 
-To test that atom is installed and can be opened from the Command Prompt, in Command Prompt the following to ask for the version:
+You can test that VS code is installed and can be opened from the Powershell by running the following command:
 
 ```
-atom --version
+code --version
 ```
 
 you should see something like this if you were successful:
 ```
-Atom    : 1.28.2
-Electron: 2.0.5
-Chrome  : 61.0.3163.100
-Node    : 8.9.3
+1.36.1
+2213894ea0415ee8c85c5eea0d0ff81ecc191529
+x64
 ```
 
-If `which atom ` command doesn't return anything then you need to do more work to install the `atom` and `apm` commands by adding the path to them via environmental variables as you did for [Rscript](#rscript) above. Usually atom is installed in `C:\Users\UserAppData\Local\atom`.
-
-
+If this did not work, you probably forgot of adding VS code to path.
 
 ## LaTeX
 
