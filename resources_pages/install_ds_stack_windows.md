@@ -183,8 +183,6 @@ you should see something like this if you were successful:
 x64
 ```
 
-If this did not work, you probably forgot of adding VS code to path.
-
 ## LaTeX
 
 Download the installer from [http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe). After downloading run the `install-tl-windows.exe` file and follow the installation instructions choosing the default options.
