@@ -19,7 +19,6 @@ These instructions will walk you through installing the required Data Science so
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [Visual Studio code](#visual-studio-code)
 - [LaTeX](#latex)
-- [SQLite](#sqlite)
 - [Make](#make)
 - [Docker](#docker)
 
@@ -211,37 +210,6 @@ Compiled with libpng 1.6.34; using libpng 1.6.34
 Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.00
 ```
-
-## SQLite
-
-- Got to https://www.sqlite.org/download.html and search for “Precompiled Binaries for Windows” Section. Download the zip file called sqlite-dll-win32-x86-xxxx.zip or sqlite-dll-win64-x64-xxxx.zip (depending upon your system configuration) as well as sqlite-tools-win32-x86-xxxx.zip 
-- Create a folder in your `C` directory called `sqlite` and unzip both the files which you have downloaded. You should now see the following files there:
-  ```
-  sqldiff.exe
-  sqlite3.def 
-  sqlite3.dll
-  sqlite3.exe
-  sqlite3_analyzer.exe
-  ```
-Now add `C:\sqlite` to your PATH environmental variables as you did for [Rscript](#rscript) above. After you have done this open Command Prompt and type the following to open SQLite:
-
-```
-sqlite3
-```
-
-you should see something like this if it is installed:
-
-```
-SQLite version 3.24.0 2018-06-04 19:24:41
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
-sqlite>
-```
-
-Type `.quit` to exit.
-
-*note - if you want to use Git Bash to run SQLite3 then you need to type `winpty sqlite3` instead of `sqlite3`*
 
 ## Make
 We will be using Make to automate our analysis scripts. More on this later!
