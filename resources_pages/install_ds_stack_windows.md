@@ -142,7 +142,7 @@ Sometimes a kernel loads, but doesn't work if installation was not done correctl
 
 #### Rscript
 
-To be able to call R scripts from the CMD or Git Bash you need to be able to execute the Rscript program from there. To make this possible you need to add the the file path of the directory/folder that houses the Rscript program (i.e., location where this program lives on your computer) to the Windows PATH system variable. You can modify the PATH system variable using System Utility in control panel on Windows. We outline below how to do this:
+To be able to call R scripts from the Powershell or Git Bash you need to be able to execute the Rscript program from there. To make this possible you need to add the the file path of the directory/folder that houses the Rscript program (i.e., location where this program lives on your computer) to the Windows PATH system variable. You can modify the PATH system variable using System Utility in control panel on Windows. We outline below how to do this:
 
 - Hit the windows key to get to the windows search bar and type: `edit environ`
 - This should bring up a menu item that will take you to where you can edit the Environment Variables. It should look something like this:
@@ -151,17 +151,17 @@ To be able to call R scripts from the CMD or Git Bash you need to be able to exe
   
 - Double click on the "Path" entry from the top box. This should bring you to a new window titled "Edit Enviroment Variables". 
 
-- Here, click on an empty line and then click **Browse**. This will open a dialogue box within which you can navigate to the folder where Rscript is installed (usually `C:\Program Files\R\R-3.5.1\bin`) and click **OK**. Close all remaining windows by clicking **OK**.
+- Here, click on an empty line and then click **Browse**. This will open a dialogue box within which you can navigate to the folder where Rscript is installed (usually `C:\Program Files\R\R-3.6.1\bin`) and click **OK**. Close all remaining windows by clicking **OK**.
 
 ![](/resources_pages/imgs/env2.png)
 
-After following the instructions above, in Command Prompt type the following to ask for the version:
+After following the instructions above, in Powershell type the following to ask for the version:
 ``` 
 Rscript --version
 ```
 you should see something like this if you were successful:
 ```
-R scripting front-end version 3.5.1 (2018-07-02)
+R scripting front-end version 3.6.1 (2019-07-05)
 ```
 
 ### Atom Text Editor
