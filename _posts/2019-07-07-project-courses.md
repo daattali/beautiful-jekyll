@@ -21,26 +21,31 @@ All project-based courses are group projects in MDS of 3-4 students, where we st
 
 ## Challenges of running project-based courses
 
-- Challenges (and our solutions) for teaching Data Science using a project-based format:
-  - the jump from going from concepts in lecture slides to doing the thing in the project can be a huge cognitive leap, solutions:
-    - toy examples that students work through in lecture (active learning)
-  - getting students to generalize or practice concepts learnt in the course more than once (e.g., once your particular data set is read into R/Python you don't have to do that again for your project), solutions:
-    - again, toy examples worked through (active learning) in lectures
-    - students are required to send code to the project repo via pull requests that must be reviewed by someone else
-    - presentation of code and peer review session
-  - matching the lectures materials to the stages of the project development
-    - reverse/backwards course design is necessary (plan out project and then work lecture schedule around that)
-    - everything you want them to learn needs to be assessed, and so for this kind of course, it needs to be explicitly required as part of the project
-  - facilitating people to work well together
-    - group work contract & code of conduct at beginning of project
-    - create motivation by having the project be "real" enough to be part of their portfolio and have them develop in public
-    - require project-related communication via GitHub issues (so they can be seen by the whole group as well as the instructional team)
-    - team work document (and holding a significant portion of the grade towards this)
-  - giving sufficient and timely feedback (especially for larger class sizes) as well as grading
-    - TA training/guidance
-      - peer feedback sessions where groups collectively see and recevie feedback from 6 other projects
-      - calibrate feedback as a group on several projects for each feedback/grading milestone
-      - limit feedback to 3-5 key points (more is overwhelming anyways, and equal but timely feedback to all is better than lengthy feedback that is unevenly distributed over time across groups)
+From running 8 project-based Data Science courses over 2 years we have run into our fair share of challenges. Through student feedback, consultation with other educators and trial and error we have arrived at solutions to several of these. Below we discuss the 5 greatest challenges we have faced in these courses and present solutions that have worked for us in the MDS program.
+
+#### 1. Putting concepts learned in lecture into practice
+- toy examples that students work through in lecture (active learning)
+
+#### 2. Practice doing something more than once, and building a generalization of that concept/thing
+- again, toy examples worked through (active learning) in lectures
+- students are required to send code to the project repo via pull requests that must be reviewed by someone else
+- presentation of code and peer review session
+
+#### 3. Aligning lecture topics with project timeline
+- reverse/backwards course design is necessary (plan out project and then work lecture schedule around that)
+- everything you want them to learn needs to be assessed, and so for this kind of course, it needs to be explicitly required as part of the project
+
+#### 4. Getting people to work well together 
+- group work contract & code of conduct at beginning of project
+- create motivation by having the project be "real" enough to be part of their portfolio and have them develop in public
+- require project-related communication via GitHub issues (so they can be seen by the whole group as well as the instructional team)
+- team work document (and holding a significant portion of the grade towards this)
+
+#### 5. Giving sufficient and timely feedback and grades
+- TA training/guidance
+- peer feedback sessions where groups collectively see and recevie feedback from 6 other projects
+- calibrate feedback as a group on several projects for each feedback/grading milestone
+- limit feedback to 3-5 key points (more is overwhelming anyways, and equal but timely feedback to all is better than lengthy feedback that is unevenly distributed over time across groups)
 
 ## Discussion
 
