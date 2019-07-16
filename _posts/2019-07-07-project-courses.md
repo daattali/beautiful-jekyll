@@ -24,7 +24,7 @@ All project-based courses are group projects in MDS of 3-4 students, where we st
 From running 8 project-based Data Science courses over 2 years we have run into our fair share of challenges. Through student feedback, consultation with other educators and trial and error we have arrived at solutions to several of these. Below we discuss the 5 greatest challenges we have faced in these courses and present solutions that have worked for us in the MDS program.
 
 #### 1. Putting concepts learned in lecture into practice
-- toy examples that students work through in lecture (active learning)
+There is a sizable leap in cognition required to take a concept learned in a controlled class setting to application of that concept in an uncontroled and realistic setting, such as in a project. For example, in DSCI XXX students learn about XXX and ... One solution we have come to use to address this challenge is the use of guided toy/contained examples that students work through in lecture after learning about the concept. We think that this active learning approach where the students are encouraged and expected to get a small working example of the thing does three things, 1. reinforces the concepts presented in-class, 2. gives them a working example they can refer back too, and 3. ???
 
 #### 2. Practice doing something more than once, and building a generalization of that concept/thing
 - again, toy examples worked through (active learning) in lectures
