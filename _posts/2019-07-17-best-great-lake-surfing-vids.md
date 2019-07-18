@@ -16,7 +16,7 @@ Here are a handful of videos that inspired me to get out there, buy a surfboard 
 
 **#2 Step Into Liquid (Surfing Wisconsin Scene)** - A small part from the feature length film Step Into Liquid. The whole movie is worth watching, but this Great Lake Surfing scene holds a special place in my heart. Looking back, I'm pretty sure this was the first ever footage I saw of surfing in the lakes. Don't expect to see any nice waves or gnarly turns, but you will see that "the stoke is global".
 
-{% include youtubePlayer.html id=2LLk0YhhRdQ %}
+{% include youtubePlayer.html id="2LLk0YhhRdQ" %}
 
 **#3 Globe and Mail Short** - A good short from the Globe and Mail on board shaping and surfing in the lakes.
 
