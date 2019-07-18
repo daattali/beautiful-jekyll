@@ -12,7 +12,7 @@ Here are a handful of videos that inspired me to get out there, buy a surfboard 
 
 **#1 On Days Like These We Must Surf** - My favourite Great Lake surfing video. The message, don't take any day (or wave) for granted.
 
-[https://vimeo.com/185271186](https://vimeo.com/185271186)
+{% include vimeoPlayer.html id="185271186" %}
 
 **#2 Step Into Liquid (Surfing Wisconsin Scene)** - A small part from the feature length film Step Into Liquid. The whole movie is worth watching, but this Great Lake Surfing scene holds a special place in my heart. Looking back, I'm pretty sure this was the first ever footage I saw of surfing in the lakes. Don't expect to see any nice waves or gnarly turns, but you will see that "the stoke is global".
 
