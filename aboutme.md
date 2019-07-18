@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Baisal Ergeshev
+subtitle: Sometimes it is the people no one imagines anything of who do the things that no one can imagine. 
+                                                                                          Christopher Morcom
 ---
 
 My name is Inigo Montoya. I have the following qualities:
