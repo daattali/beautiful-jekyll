@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Baisal Ergeshev
-subtitle: >_"Sometimes it is the people no one imagines anything of 
+subtitle: _"Sometimes it is the people no one imagines anything of 
             who do the things that no one can imagine."_
                                                             _Christopher Morcom_
 
