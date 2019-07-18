@@ -1,7 +1,12 @@
 ---
 layout: post
-title: First post!
+title: Data science test post
+tags: [data-science]
 image: /img/hello_world.jpeg
 ---
 
-This is my first post, how exciting!
+this is a data science test post
+
+# h1
+
+## h2

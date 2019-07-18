@@ -20,6 +20,7 @@ description: A blog by Sam Edwardes
 
 # List of links in the navigation bar
 navbar-links:
+  Test Blog: "testblog"
   Data Science: "datascience"
   Outdoors: "outdoors"
   About Me: "aboutme"
