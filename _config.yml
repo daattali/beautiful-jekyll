@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My projects
+title: Baisal Ergeshev
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Awesome Life Tips!
 
 # --- Navigation bar options --- #
 
@@ -42,7 +42,7 @@ avatar: "/img/avatar-icon.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#edf1f2"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
