@@ -20,22 +20,22 @@ Here are a handful of videos that inspired me to get out there, buy a surfboard 
 
 **#3 Globe and Mail Short** - A good short from the Globe and Mail on board shaping and surfing in the lakes.
 
-{% include youtubePlayer.html id=yJRQEjfS0To %}
+{% include youtubePlayer.html id="yJRQEjfS0To" %}
 
 **#4 Red Bull Surfing in the Great Lakes** - Just some awesome footage from superior. Proof that it can get real in the lakes.
 
-{% include youtubePlayer.html id=6sMWoG0llYo %}
+{% include youtubePlayer.html id="6sMWoG0llYo" %}
 
 **#5 Surfing the Great Lakes**  - Short cinematic shots of surfing on a snowy day in Lake Michigan.
 
-{% include youtubePlayer.html id=e_ENuxyO1j0 %}
+{% include youtubePlayer.html id="e_ENuxyO1j0" %}
 
 ## Honourable mentions
 
 **Step Into Liquid (Tanker Surfing Texas Scene)** - It may not be on a lake, but you see the same obscure passion.
 
-{% include youtubePlayer.html id=wrC0jOwX2ck %}
+{% include youtubePlayer.html id="wrC0jOwX2ck" %}
 
 **Kelly Slaters Perfect Wave** - Once they start making more of these, we will be able to catch perfect waves anywhere...
 
-{% include youtubePlayer.html id=hVxPJ9heetc %}
+{% include youtubePlayer.html id="hVxPJ9heetc" %}
