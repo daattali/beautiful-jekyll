@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Best Great Lake Surving Videos
+title: The Best Great Lake Surfing Videos
 tags: [outdoors, surfing]
 ---
 
