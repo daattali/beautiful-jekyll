@@ -67,16 +67,6 @@
   position: relative;
 }
 /*
- Disabled state
- ========================================================================== */
-.staticman-comments input[disabled], .staticman-comments textarea[disabled], .staticman-comments input[readonly], .staticman-comments textarea[readonly] {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-.staticman-comments button[disabled] {
-  display: none;
-}
-/*
  Focus & active state
  ========================================================================== */
 .staticman-comments input:focus, .staticman-comments textarea:focus {
