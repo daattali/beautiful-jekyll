@@ -1,20 +1,20 @@
 ---
 layout: post
-title: What's for dinner? Predicting customer order probabilities.
+title: What's for dinner? Predicting customer order probabilities
 subtitle: An MDS capstone project reflection
 ---
 
 One of the things that drew to me data science is its applicability to pretty much any field you can name: technology, healthcare, finance, retail, education, government, entertainment, agriculture, real estate, etc. There's no domain too large or small and no organization that would not benefit from having a data scientist (or a team of data scientists!) on staff to solve interesting problems.
 
-I recently completed the [Master of Data Science](https://masterdatascience.ubc.ca/) program at the University of British Columbia, a 10-month intensive program focused on computing, statistics, and machine learning. After 8 months of coursework, the program concludes with an 2-month [capstone project](https://ubc-mds.github.io/capstone/about/). My capstone team worked with Vancouver-based meal prep delivery company [Fresh Prep](https://www.freshprep.ca/) to build a predictive model for customer ordering. Fresh Prep can use our model to understand which of their customers are likely to order in a given week, and target their marketing strategies in an attempt to increase order rates.
+I recently completed the [Master of Data Science](https://masterdatascience.ubc.ca/) program at the University of British Columbia, a 10-month intensive program focused on computing, statistics, and machine learning. After 8 months of coursework, the program concludes with an 2-month [capstone project](https://ubc-mds.github.io/capstone/about/). My capstone team worked with Vancouver-based [meal kit](https://en.wikipedia.org/wiki/Meal_kit) company [Fresh Prep](https://www.freshprep.ca/) to build a predictive model for customer ordering. Fresh Prep can use our model to understand which of their customers are likely to order in a given week, and target their marketing strategies in an attempt to increase order rates.
 
 ## Some background about the project
 
-A Fresh Prep customer has a status of either **active** or **paused.** Orders are automatically generated for all customers regardless of status; however, for paused customers these orders are also automatically skipped. Here's an example from my account, which is active:
+Each week, Fresh Prep customers are presented with a list of meal options through a web app. When the customer orders, a Fresh Prep bag is delivered to their door. The kit includes a recipe card and the necessary ingredients, often partially prepared (e.g. onions are pre-chopped) to facilitate easy cooking. Here is a screenshot of the web app: 
 
 <img src="../img/blog/capstone_freshprep/order_page_hztl2.jpg" class="fit image">
 
-Our task was to determine which active customers skip their orders (opt-out) and which paused customers unskip (place) their orders. Answering this question provided Fresh Prep with more than just the number of orders predicted for a given week. By having greater insight into which customers are ordering rather than simply how many, the company has the ability to target those who are uncertain and see if they can increase the likelihood of these undecided customers placing an order.
+The screenshot shows that my June 25 order is **billed** (meaning I ordered) and my July 2 order is **skipped** (meaning I opted out). Our task was to predict, for a given week in the future (e.g. next week), who will bill and who will skip. In practice, our model produces a probability for each customer: close to 1 means very likely to order, and close to 0 means very unlikely to order. These predictions provide Fresh Prep with not only a forecast of the total number of upcoming orders, but also the ability to focus their marketing efforts on customers for whom we are uncertain (i.e., their probability of ordering is around 0.5).
 
 ## The meat and potatoes
 
