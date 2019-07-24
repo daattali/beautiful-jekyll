@@ -10,7 +10,7 @@ I recently completed the [Master of Data Science](https://masterdatascience.ubc.
 
 ## Some background about the project
 
-Each week, Fresh Prep customers are presented with a list of meal options through a web app. When the customer orders, a Fresh Prep bag is delivered to their door. The kit includes a recipe card and the necessary ingredients, often partially prepared (e.g. onions are pre-chopped) to facilitate easy cooking. Here is a screenshot of the web app: 
+Each week, Fresh Prep customers are presented with a list of meal options through a web app. When the customer orders, a Fresh Prep bag is delivered to their door. The kit includes a recipe card and the necessary ingredients, often partially prepared (e.g. onions are pre-chopped) to facilitate easy cooking. Here is a screenshot of the web app:
 
 <img src="../img/blog/capstone_freshprep/order_page_hztl2.jpg" class="fit image">
 
@@ -26,20 +26,18 @@ Our work was focused in five main areas to address the project’s objective:
 4. Predictive Modeling
 5. Data Visualization
 
-**Data Wrangling.** TODO (1 sentence is fine - mention timezones? :))
+**Data Wrangling.** We wrangled and condensed the given relational database into a clean, useful dataset - experiencing the woes of dealing with timezones along the way.
 
-**EDA**. Our EDA allowed us to uncover a number of insights. For example, Fresh Prep customers can decide to bill/skip an order up to 4 weeks in advance. We measured when customers were making their decisions within this 4-week window. Our results are illustrated in the following plot:
+**EDA.** Our EDA allowed us to uncover a number of insights. For example, Fresh Prep customers can decide to bill/skip an order up to 4 weeks in advance. We measured when customers were making their decisions within this 4-week window. Our results are illustrated in the following plot:
 
-<img src="../img/blog/capstone_freshprep/figure08-cumulative.png" class="fit image">
-
-TODO: make this image just for active, and remove the "active" label
+<img src="../img/blog/capstone_freshprep/cumulative.png" class="fit image">
 
 This plot shows that customers make their decisions at a fairly steady rate, with a "jump" in decision-making every 7 days. These jumps turn out to correspond to Tuesdays, which is when customers are emailed about their pending orders.  
 
 **Feature Engineering.** A significant component of this project involved creating the features that were used in our model, given a rather large amount of raw data. It was necessary to determine which elements had the strongest relevance in estimating a customer's order probability. From the insights we gleaned via our EDA we built features for our model to train and predict on. After testing weights and model performance we settled on 14 features, with the most predictive ones being:
 
 - Smoothed billed order rate: Each customer's historical order rate, smoothed with an [empirical Bayes method](http://varianceexplained.org/r/empirical_bayes_baseball/) to account for newer clients with a small number of orders in their histories.
-- Seasonal billed rate: To capture seasonality, our model considers the average order rate for the corresponding week the year prior. 
+- Seasonal billed rate: To capture seasonality, our model considers the average order rate for the corresponding week the year prior.
 - Last week's decision: A binary feature indicating whether or not the customer ordered in the previous week. In our work we discovered that customers do have a tendency towards their same behavior from the previous week. (Note that this feature can only be used when forecasting 1 week ahead, so forecasting 2 weeks ahead is harder.)
 - Number of email types: The number of different email categories a customer is subscribed to.
 
@@ -49,18 +47,18 @@ The models output a probability of ordering for each customer and these are summ
 
 <img src="../img/blog/capstone_freshprep/model-performance.png" class="fit image">
 
-For the entire June 2018 to June 2019 time frame, our model has mean absolute percentage error ([MAPE](https://www.dataquest.io/blog/understanding-regression-error-metrics/)) of 4.6% on the total number of order. If we concentrate on dates only in 2019, in other words the more recent period where the model has more training data to work with, the error is just 1.5%. In other words: for a hypothetical week in which Fresh Prep expects 1000 orders, the error is around 15 orders.
+For the entire June 2018 to June 2019 time frame, our model has mean absolute percentage error ([MAPE](https://www.dataquest.io/blog/understanding-regression-error-metrics/)) of 4.6% on the total number of orders. If we concentrate on dates only in 2019, the more recent period where the model has more training data to work with, the error is just 1.5%. In other words: for a hypothetical week in which Fresh Prep expects 1000 orders, the error is around 15 orders.
 
 
-**Data Visualization.** We developed an interactive [Tableau](https://www.tableau.com/) dashboard to visualize the predictions. Below is a screenshot of the predictive pane of our dashboard (with fabricated data, to maintain confidentialty):
+**Data Visualization.** We developed an interactive [Tableau](https://www.tableau.com/) dashboard to visualize the predictions. Below is a screenshot of the predictive pane of our dashboard (with fabricated data, to maintain confidentiality):
 
 <img src="../img/blog/capstone_freshprep/dash-predictive.png" class="fit image">
 
-The dashboard's user can drill down into various demographics (e.g. vegetarians), focus on various demographic areas, and see the client IDs of interesting subsets of customers. 
+The dashboard's user can drill down into various demographics (e.g. vegetarians), focus on various demographic areas, and see the client IDs of interesting subsets of customers.
 
 ## What I learned
 
-For me, the capstone project was the ideal opportunity to revisit many of the concepts taught in the program's coursework. It is one thing to take coursework in data science concepts such as wrangling, regression, supervised learning, or feature selection & engineering. It is a far more enlightening experience to actually apply these methods to real-world data for an actual organization. The capstone project solidified my understanding of these techniques, how to apply and interpret them, and how to choose which tools are the right ones for the problem at hand.
+For me, the capstone project was the ideal opportunity to revisit many of the concepts taught in the program's coursework. It is one thing to take courses in data science concepts such as wrangling, regression, supervised learning, or feature selection & engineering. It is a far more enlightening experience to actually apply these methods to real-world data for an actual organization. The capstone project solidified my understanding of these techniques, how to apply and interpret them, and how to choose which tools are the right ones for the problem at hand.
 
 Throughout the 10-week project I found myself returning to lecture notes and lab work from various courses, solidifying my knowledge of what had been learned earlier, and applying it to authentic data. The pace of the program in its first 8 months is quite intense, and in some cases I hadn't fully grasped some of the material. Capstone gave me the opportunity to return to these topics, and in a real-world applicable context, reinforce them tangibly. It demonstrated how the insights our team discovered might be used by the company. Lastly, the capstone experience made me feel on the whole much more confident in my skills as a data scientist. I found the experience to be genuinely rewarding and enjoyable.
 
