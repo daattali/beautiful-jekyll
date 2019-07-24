@@ -16,49 +16,47 @@ Each week, Fresh Prep customers are presented with a list of meal options throug
 
 The screenshot shows that my June 25 order is **billed** (meaning I ordered) and my July 2 order is **skipped** (meaning I opted out). Our task was to predict, for a given week in the future (e.g. next week), who will bill and who will skip. In practice, our model produces a probability for each customer: close to 1 means very likely to order, and close to 0 means very unlikely to order. These predictions provide Fresh Prep with not only a forecast of the total number of upcoming orders, but also the ability to focus their marketing efforts on customers for whom we are uncertain (i.e., their probability of ordering is around 0.5).
 
-## The meat and potatoes
+## Components of the project
 
-Our work was focused in four main areas to address the project’s objective:
+Our work was focused in five main areas to address the project’s objective:
 
 1. Data Wrangling
 2. Exploratory Data Analysis (EDA)
 3. Feature Engineering
-4. Predictive Model
+4. Predictive Modeling
+5. Data Visualization
 
-In parallel with wrangling the raw data into a usable dataset, we visualized it. EDA allowed us to uncover a series of insights. For example, active customers tend to plan further out than paused customers do. This is illustrated in the following plot, which shows the number of days prior to the Sunday starting a Fresh Prep week that a customer chooses to skip or place their order:
+**Data Wrangling.** TODO (1 sentence is fine - mention timezones? :))
+
+**EDA**. Our EDA allowed us to uncover a number of insights. For example, Fresh Prep customers can decide to bill/skip an order up to 4 weeks in advance. We measured when customers were making their decisions within this 4-week window. Our results are illustrated in the following plot:
 
 <img src="../img/blog/capstone_freshprep/figure08-cumulative.png" class="fit image">
 
-A significant component of this project involved creating the features that were used in our model, given a rather large amount of raw data. It was necessary to determine which elements had the strongest ability in estimating a customer’s order probability. From the insights we gleaned via our EDA we built features for our model to train and predict on. After testing weights and model performance we settled on 14 features, with the most predictive ones being:
+TODO: make this image just for active, and remove the "active" label
 
-- **smoothed billed order rate:** Each customer's historical billed order rate up to a given order, smoothed with an [empirical Bayes method](http://varianceexplained.org/r/empirical_bayes_baseball/) to account for newer clients with a small number of orders in their histories.
-- **weekly billed rate:** To capture seasonality, this weekly billed rate is the average rate for the corresponding week the year prior. We made an assumption that there is no trend, from last year to this year, in the billing rate.
-- **lag one:** Whether or not the customer ordered 1 week prior. In our work we discovered that customers do have a tendency towards their same behavior from the previous week.
-- **number of email types:** The number of different email categories a customer is subscribed to.
+This plot shows that customers make their decisions at a fairly steady rate, with a "jump" in decision-making every 7 days. These jumps turn out to correspond to Tuesdays, which is when customers are emailed about their pending orders.  
 
-There is a simpler question and a more difficult question at play here. The simple question is: _**how many**_ orders will there be each week? The harder question, which is the problem we tackled, is: _**who**_ will order each week? Answering the harder question also provides a solution to the easier one.
+**Feature Engineering.** A significant component of this project involved creating the features that were used in our model, given a rather large amount of raw data. It was necessary to determine which elements had the strongest relevance in estimating a customer's order probability. From the insights we gleaned via our EDA we built features for our model to train and predict on. After testing weights and model performance we settled on 14 features, with the most predictive ones being:
 
-We trained two [Logistic Regression](https://towardsdatascience.com/logistic-regression-b0af09cdb8ad) models on the data – one for active customers and one for paused. We chose this type of model because it provided more interpretable weights as well as more trustworthy probabilities than other models. This decision was key as it allowed us to explain to our partner what was driving the predictions.
+- Smoothed billed order rate: Each customer's historical order rate, smoothed with an [empirical Bayes method](http://varianceexplained.org/r/empirical_bayes_baseball/) to account for newer clients with a small number of orders in their histories.
+- Seasonal billed rate: To capture seasonality, our model considers the average order rate for the corresponding week the year prior. 
+- Last week's decision: A binary feature indicating whether or not the customer ordered in the previous week. In our work we discovered that customers do have a tendency towards their same behavior from the previous week. (Note that this feature can only be used when forecasting 1 week ahead, so forecasting 2 weeks ahead is harder.)
+- Number of email types: The number of different email categories a customer is subscribed to.
 
-The models output a probability of ordering for each customer and these are summed up to provide the expected number of orders for a given week. Our model gives predictions for one, two, or three weeks out, and thus allows Fresh Prep to plan for ingredients, delivery drivers, and other factors accordingly.
+**Predictive Modeling.** We used [Logistic Regression](https://towardsdatascience.com/logistic-regression-b0af09cdb8ad) for our prediction. We chose this model because it provided more interpretable regression weights as well as more trustworthy probabilities than other models.
 
-The performance of the model is visualized in the following figure:
+The models output a probability of ordering for each customer and these are summed up to provide the expected number of orders for a given week. Our model outputs predictions for one, two, or three weeks out, and thus allows Fresh Prep to plan for ingredients, delivery drivers, and other factors accordingly. The performance of the model is visualized in the following figure:
 
 <img src="../img/blog/capstone_freshprep/model-performance.png" class="fit image">
 
-Our model has 4.6 mean absolute percentage error ([MAPE](https://www.dataquest.io/blog/understanding-regression-error-metrics/)) on the total number of actual orders from June 2018 to June 2019. What this translates to: for a week in which Fresh Prep expects 1000 orders, the error is around 46 orders. If we concentrate on dates only in 2019 the model has just 1.5 MAPE. These later predictions have the benefit of being trained on more data. Translation: for a week in which Fresh Prep expects 1000 orders, the error is around 15 orders.
+For the entire June 2018 to June 2019 time frame, our model has mean absolute percentage error ([MAPE](https://www.dataquest.io/blog/understanding-regression-error-metrics/)) of 4.6% on the total number of order. If we concentrate on dates only in 2019, in other words the more recent period where the model has more training data to work with, the error is just 1.5%. In other words: for a hypothetical week in which Fresh Prep expects 1000 orders, the error is around 15 orders.
 
-The interactive [Tableau](https://www.tableau.com/) dashboard we developed visualizes the predictions. (All credit for building the dashboard goes to my teammate [Hayley Boyce](https://www.hayleyfboyce.com/).) Fresh Prep can utilize this in their communication strategy to their customers by seeing which customers have which probabilities of ordering.
 
-We provided a descriptive dashboard, displaying customer histories:
-
-<img src="../img/blog/capstone_freshprep/dash-descriptive.png" class="fit image">
-
-And we provided a predictive dashboard, displaying future predictions:
+**Data Visualization.** We developed an interactive [Tableau](https://www.tableau.com/) dashboard to visualize the predictions. Below is a screenshot of the predictive pane of our dashboard (with fabricated data, to maintain confidentialty):
 
 <img src="../img/blog/capstone_freshprep/dash-predictive.png" class="fit image">
 
-Note: the customer data presented in these images is fabricated, due to a non-disclosure agreement.
+The dashboard's user can drill down into various demographics (e.g. vegetarians), focus on various demographic areas, and see the client IDs of interesting subsets of customers. 
 
 ## What I learned
 
@@ -68,7 +66,7 @@ Throughout the 10-week project I found myself returning to lecture notes and lab
 
 ## Acknowledgements
 
-I want to thank my team members, [Hayley Boyce](https://www.hayleyfboyce.com/), [Orphelia Ellogne](https://ellognea.github.io/), & [Maninder Kohli](https://github.ubc.ca/mani); [Joseph Goldes](https://www.linkedin.com/in/josephgoldes/) and [Philip Nelson](https://github.com/pnelson) from Fresh Prep; as well as our faculty mentor, [Mike Gelbart](https://www.mikegelbart.com/).
+I want to thank my team members, [Hayley Boyce](https://www.hayleyfboyce.com/), [Orphelia Ellogne](https://ellognea.github.io/), & [Maninder Kohli](https://github.ubc.ca/mani); our partners from Fresh Prep, [Joseph Goldes](https://www.linkedin.com/in/josephgoldes/) and [Philip Nelson](https://github.com/pnelson); and our faculty mentor, [Mike Gelbart](https://www.mikegelbart.com/).
 
 ---------
 
