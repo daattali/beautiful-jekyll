@@ -1,16 +1,14 @@
 ---
 layout: post
-title: What's for Dinner? Predicting customer order probabilities
+title: What's for dinner? Predicting customer order probabilities.
 subtitle: An MDS capstone project reflection
 ---
 
 <img src="../img/blog/capstone_freshprep/Logo.png" class="fit image">
 
-One of the things that drew to me data science is its applicability to pretty much any field you can name: technology, healthcare, finance, retail, education, government, entertainment, agriculture, real estate, etc. There's no domain too large or small and no organization that would not benefit from having a data scientist (or a team of them!) on staff to solve interesting problems.
+One of the things that drew to me data science is its applicability to pretty much any field you can name: technology, healthcare, finance, retail, education, government, entertainment, agriculture, real estate, etc. There's no domain too large or small and no organization that would not benefit from having a data scientist (or a team of data scientists!) on staff to solve interesting problems.
 
-I recently completed a [Masters Degree in Data Science](https://ubc-mds.github.io/about/) at the University of British Columbia, a 10-month intensive program focused on computing, statistics, and machine learning. After 8 months of coursework, the program concludes with an 2-month industry [capstone project](https://ubc-mds.github.io/capstone/about/). My capstone team worked with Vancouver-based meal prep delivery company [Fresh Prep](https://www.freshprep.ca/?r=awfu-9uvc0) to build a predictive model for customer ordering. Fresh Prep can use our model to understand which customers are likely to order or not, and target their marketing strategies in an attempt to increase order rates.
-
-It is one thing to take coursework in data science concepts, such as wrangling, regression, supervised learning, or feature selection & engineering. It is a far more enlightening experience to actually apply these methods to real-world data for an actual company. The capstone project allowed me to have a much more solid understanding of these techniques, how to apply and interpret them, and how to choose which tools are the right ones for the problem you want to solve.
+I recently completed the [Master of Data Science](https://masterdatascience.ubc.ca/) program at the University of British Columbia, a 10-month intensive program focused on computing, statistics, and machine learning. After 8 months of coursework, the program concludes with an 2-month [capstone project](https://ubc-mds.github.io/capstone/about/). My capstone team worked with Vancouver-based meal prep delivery company [Fresh Prep](https://www.freshprep.ca/) to build a predictive model for customer ordering. Fresh Prep can use our model to understand which of their customers are likely to order in a given week, and target their marketing strategies in an attempt to increase order rates.
 
 ## Some background about the project
 
@@ -66,8 +64,14 @@ Note: the customer data presented in these images is fabricated, due to a non-di
 
 ## What I learned
 
-For me, the capstone project was the ideal opportunity to revisit many of the concepts taught in the program's coursework. Throughout the 10-week project I found myself returning to lecture notes and lab work from various courses, solidifying my knowledge of what had been learned earlier, and applying it to authentic data. The pace of the program in its first 8 months is quite intense, and in some cases I hadn't fully grasped some of the material. Capstone gave me the opportunity to return to these topics, and in a real-world applicable context, reinforce them tangibly. It demonstrated how the insights our team discovered might be used by the company. Lastly, the capstone experience made me feel on the whole much more confident in my skills as a data scientist. I found the experience to be genuinely rewarding and enjoyable.
+For me, the capstone project was the ideal opportunity to revisit many of the concepts taught in the program's coursework. It is one thing to take coursework in data science concepts such as wrangling, regression, supervised learning, or feature selection & engineering. It is a far more enlightening experience to actually apply these methods to real-world data for an actual organization. The capstone project solidified my understanding of these techniques, how to apply and interpret them, and how to choose which tools are the right ones for the problem at hand.
+
+Throughout the 10-week project I found myself returning to lecture notes and lab work from various courses, solidifying my knowledge of what had been learned earlier, and applying it to authentic data. The pace of the program in its first 8 months is quite intense, and in some cases I hadn't fully grasped some of the material. Capstone gave me the opportunity to return to these topics, and in a real-world applicable context, reinforce them tangibly. It demonstrated how the insights our team discovered might be used by the company. Lastly, the capstone experience made me feel on the whole much more confident in my skills as a data scientist. I found the experience to be genuinely rewarding and enjoyable.
 
 ## Acknowledgements
 
-I want to thank my team members, [Hayley Boyce](https://www.hayleyfboyce.com/), [Orphelia Ellogne](https://ellognea.github.io/), & [Maninder Kohli](https://github.ubc.ca/mani), Joseph Goldes and Philip Nelson from Fresh Prep, as well as our faculty mentor, [Mike Gelbart](https://www.mikegelbart.com/).
+I want to thank my team members, [Hayley Boyce](https://www.hayleyfboyce.com/), [Orphelia Ellogne](https://ellognea.github.io/), & [Maninder Kohli](https://github.ubc.ca/mani); [Joseph Goldes](https://www.linkedin.com/in/josephgoldes/) and [Philip Nelson](https://github.com/pnelson) from Fresh Prep; as well as our faculty mentor, [Mike Gelbart](https://www.mikegelbart.com/).
+
+---------
+
+[Rachel K. Riggs](https://rachelkriggs.github.io/about/) graduated from the UBC MDS program in 2019.
