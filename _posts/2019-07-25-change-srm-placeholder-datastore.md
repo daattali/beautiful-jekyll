@@ -36,6 +36,6 @@ At this point I sometimes had weird issues where the VMs would display an error 
 
 ![](/img/phds6.png)
 
-7. Then the VMs should appear as protected. You can also check that the placeholder VMs disappeared from the old datastore and appear in the new one.
+7. Then the VMs should appear as protected. You can also check that the placeholder VMs disappeared from the old datastore and appear in the new one. 
 
 ![](/img/phds9.png)
