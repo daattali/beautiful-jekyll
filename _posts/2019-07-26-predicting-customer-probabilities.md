@@ -47,7 +47,7 @@ The model outputs a probability of ordering for each customer and these are summ
 
 <img src="../img/blog/capstone_freshprep/model-performance.png" class="fit image">
 
-For the entire June 2018 to June 2019 time frame, our model has mean absolute percentage error ([MAPE](https://www.dataquest.io/blog/understanding-regression-error-metrics/)) of 4.6% on the total number of orders. If we concentrate on dates only in 2019, the more recent period where the model has more training data to work with, the error is just 1.5%. In other words: for a hypothetical week in which Fresh Prep expects 1000 orders, the error is around 15 orders.
+As the figure shows, our model seriously overestimated orders during Christmas and New Year's! For the entire June 2018 to June 2019 time frame, our model has mean absolute percentage error ([MAPE](https://www.dataquest.io/blog/understanding-regression-error-metrics/)) of 4.6% on the total number of orders. If we concentrate on dates only in 2019, the more recent period where the model has more training data to work with, the error is just 1.5%. In other words: for a hypothetical week in which Fresh Prep expects 1000 orders, the error is around 15 orders.
 
 
 **Data Visualization.** We developed an interactive [Tableau](https://www.tableau.com/) dashboard to visualize the predictions. Below is a screenshot of the predictive pane of our dashboard (with fabricated data, to maintain confidentiality):
