@@ -50,7 +50,9 @@ One solution we have come to help students make this leap is the use of guided t
 *Something about chunking - breaking a project into discrete chunks like this that they can practice, lets the students learn the chunks, and then use the project to reinforce these things, as well learn how to put the differnet chunks together (less cognitively overwhelming than trying to learn and do everything at once in a project).*
 
 #### 2. Practice doing something more than once, and building a generalization of that concept/thing
+A related, but still separable challenge of teaching Data Science using a project-based course format is to give the students repeated practice and exposure to tasks needed to complete the project. For example, in a project where students are required to write a script that downloads data from the web, once the script is written, this task doesn't have to be done again, and as a consequence without intentional course design, there could easily be is no additional practice or reinforcement of this part of doing a data analysis.
 
+In lecture toy-examples, as described above, are one possible ...
 
 
 - again, toy examples worked through (active learning) in lectures
