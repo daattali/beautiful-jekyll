@@ -43,7 +43,7 @@ This plot shows that customers make their decisions at a fairly steady rate, wit
 
 **Predictive Modeling.** We used [Logistic Regression](https://towardsdatascience.com/logistic-regression-b0af09cdb8ad) for our prediction. We chose this model because it provided more interpretable regression weights as well as more trustworthy probabilities than other models.
 
-The models output a probability of ordering for each customer and these are summed up to provide the expected number of orders for a given week. Our model outputs predictions for one, two, or three weeks out, and thus allows Fresh Prep to plan for ingredients, delivery drivers, and other factors accordingly. The performance of the model is visualized in the following figure:
+The model outputs a probability of ordering for each customer and these are summed up to provide the expected number of orders for a given week. Our model outputs predictions for one, two, or three weeks out, and thus allows Fresh Prep to plan for ingredients, delivery drivers, and other factors accordingly. The performance of the model is visualized in the following figure:
 
 <img src="../img/blog/capstone_freshprep/model-performance.png" class="fit image">
 
