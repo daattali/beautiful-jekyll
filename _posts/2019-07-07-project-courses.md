@@ -52,12 +52,7 @@ One solution we have come to help students make this leap is the use of guided t
 #### 2. Practice doing something more than once, and building a generalization of that concept/thing
 A related, but still separable challenge of teaching Data Science using a project-based course format is to give the students repeated practice and exposure to tasks needed to complete the project. For example, in a project where students are required to write a script that downloads data from the web, once the script is written, this task doesn't have to be done again, and as a consequence without intentional course design, there could easily be is no additional practice or reinforcement of this part of doing a data analysis.
 
-In lecture toy-examples, as described above, are one possible ...
-
-
-- again, toy examples worked through (active learning) in lectures
-- students are required to send code to the project repo via pull requests that must be reviewed by someone else
-- presentation of code and peer review session
+In lecture toy-examples, as described above, are one possible solution. Beyond this we have found some other solutions that have also helped. One is that we run all our projects as group projects and use version control with Git & GitHub, and we require students to send code to the project GitHub repository via pull requests that must be reviewed and accepted by someone else. This means that in a group project, even if only one person writes the code, others in the group who didn't at least have to review code written for that purpose. Another solution we have implemented is that the third in-lab session of these courses is a presentation of code and peer review session. DESCRIBE THIS SESSION. This is again, another opportunity where students are exposed to key concepts and tools covered in the project and are required to thoughtfully consider and critique how others have applied these concepts and tools in their data analysis projects.
 
 #### 3. Aligning lecture topics with project timeline
 - reverse/backwards course design is necessary (plan out project and then work lecture schedule around that)
