@@ -24,7 +24,7 @@ The approximate timeline is below, followed by additional detail on each event.
 
 #### Proposal revision process
 
-Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/partner_info/#proposals).
+Members of an organization interested in participating as a capstone partner should submit a project [proposal](/capstone/partner_info/#proposals).
 
 Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
 
@@ -40,7 +40,7 @@ The successful capstone partners accept the offers, and confirm their attendance
 
 #### Capstone fair
 
-Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner.
+Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf)
 
 
 #### Students rate the projects

@@ -2,12 +2,11 @@
 layout: page
 title: Proposals
 subtitle: For MDS Capstone Projects
-
 ---
 
 The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
 
-**Proposals should be submitted through our proposal form [here](https://docs.google.com/forms/d/e/1FAIpQLScWR72aF9RBSAyAP8UzGn89yv73dU_0y91T7joUFodMU05Hvg/viewform?usp=sf_link).**
+**Proposals should be submitted through our proposal form at (LINK FOR 2020 WILL BE POSTED SOON). A sample proposal is available [here](/capstone/sample_proposal).**
 
 The instructions for filling out the form are below:
 
