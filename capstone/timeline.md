@@ -40,7 +40,7 @@ The successful capstone partners accept the offers, and confirm their attendance
 
 #### Capstone fair
 
-Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf)
+Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf).
 
 
 #### Students rate the projects
