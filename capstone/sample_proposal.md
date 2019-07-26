@@ -4,7 +4,7 @@ title: Sample Capstone Proposal
 ---
 
 ## Organization Name
-Management Information Systems Group, UBC [Sauder School of Business](https://www.sauder.ubc.ca/)
+Management Information Systems Group, [UBC Sauder School of Business](https://www.sauder.ubc.ca/)
 
 ## About Your Organization
 We are faculty members at UBC Sauder School of Business. Big Data and Data Science are creating profound impacts on various fields including Information Systems research. Our research interests include Business Analytics, which has the aim of gaining business insights from internal and external data sources in order to make timely data-driven decisions for competitive advantage in the complex business environments. 
