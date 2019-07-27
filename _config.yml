@@ -23,6 +23,7 @@ description: Tecnología, Programación and others...
 
 # List of links in the navigation bar
 navbar-links:
+  Books: "books"
   About Me: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
