@@ -23,6 +23,7 @@ description: Tecnología, Programación and others...
 
 # List of links in the navigation bar
 navbar-links:
+  Read later: "articles"
   Books: "books"
   About Me: "aboutme"
 #  Resources:
@@ -249,6 +250,13 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
+
+plugins_dir: ./_plugins
+
+jekyll_get:
+  - data: articles
+    json: 'http://gsx2json.com/api?id=1Fu1FNyVpz92iLJlWYeIngWEVcesZwMJ_F1WQmbefh0s&sheet=1'
+    cache: false
 
 plugins:
   - jekyll-paginate
