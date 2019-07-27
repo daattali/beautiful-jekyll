@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A few words to describe me
 published: true
 ---
 
@@ -15,7 +15,7 @@ Actualmente estoy en [NetSuite](https://www.netsuite.com/) dando lo mejor de mi 
 
 ## Me gusta...
 
-Me gusta programar, por lo que disfruto mi trabajo. También me gusta viajar y un buen día en la playa. Y aunque no sea uno de mis puntos fuertes, también me gusta cocinar. Por lo general en mi tiempo libre me gusta ir al cine, leer sobre tecnología o ver alguna conferencia de [Devoxx](https://www.youtube.com/channel/UCCBVCTuk6uJrN3iFV_3vurg) o [GoTo](https://www.youtube.com/user/GotoConferences) que me llame la atención.
+Me gusta programar, por lo que disfruto mi trabajo. También me gusta viajar y un buen día en la playa. Y aunque no sea uno de mis puntos fuertes, también me gusta cocinar. Por lo general en mi tiempo libre me gusta ir al cine, leer sobre tecnología o asistir a un buen meetup.
 
 ## ¿Por qué un blog?
 
