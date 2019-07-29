@@ -164,10 +164,15 @@ https://www.gnu.org/licenses/.
 ```
 
 #### RStudio
-Chose and download the appropriate Ubuntu version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. 
+Chose and download the appropriate Ubuntu version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download]. 
 
-Open a terminal window and type the following commands to install the dependencies and RStudio:
+For Ubuntu 19.04 you can download `RStudio 1.2.1335 - Ubuntu 18/Debian 10 (64-bit)`, then run the following command:
+```
+sudo apt install ./Downloads/rstudio-1.2.1335-amd64.deb
+```
+and you should be able to open RStudio. 
 
+For other linux versions, open Terminal and type the following commands to install the dependencies and RStudio:
 ```
 # Modified from: https://blog.sergiouri.be/2018/05/ubuntu-1804-setup-rstudio.html
 
