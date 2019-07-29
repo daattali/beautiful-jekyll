@@ -114,10 +114,16 @@ We will be using R, another programming language, a lot in the program. We will 
 #### R
 
 Open /etc/apt/sources.list and add the following line to the end of the file (choose the correct one for your version of Ubuntu):
+  - for Ubuntu 19.04 (Disco) add:
   - for Ubuntu 18.04.1 (Bionic Beaver) add: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
   - for Ubuntu 17.10.1 (Artful Aardvark) add: `deb https://cloud.r-project.org/bin/linux/ubuntu artful/`
   - for Ubuntu 16.04.4 (Xenial Xerus) add: `deb https://cloud.r-project.org/bin/linux/ubuntu xenial/`
   - for Ubuntu 14.04.5 (Trusty Tahr) add: `deb https://cloud.r-project.org/bin/linux/ubuntu trusty/`
+
+Alternatively, you can just type `sudo apt-add-repository` in Terminal followed by the corresponding line for your version. For example:
+```
+sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+```
 
 Next, add the key ID for the CRAN network:
 ```
@@ -146,7 +152,7 @@ R --version
 
 you should see something like this if you were successful:
 ```
-R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+R version 3.6.1 (2019-07-05) -- "Action of the Toes"
 Copyright (C) 2019 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
