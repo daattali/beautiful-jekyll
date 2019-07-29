@@ -44,7 +44,7 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio. To install the latest version of Git, open Terminal and type the following command:
+We will be using the command line version of Git as well as Git through RStudio. To install the latest version of Git, open Terminal and type the following commands:
 ```
 sudo apt-add-repository ppa:git-core/ppa
 sudo apt-get update
@@ -63,31 +63,43 @@ git version 2.22.0
 
 ## Python
 
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.6
+We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#linux) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
 
-Head to https://www.anaconda.com/download/#linux and download the Anaconda version for Linux with **Python 3.6**. Follow the instructions on that page to run the installer.
-
-After installation, in terminal type the following to ask for the version:
+Head to https://www.anaconda.com/download/#linux and download the Anaconda version for Linux with **Python 3.7** (make sure the linux tab is selected). Once the download is finished, open Terminal and execute the following commands:
 ```
-python --version
+bash paht/to/the/file
+```
+
+For example,
+```
+bash ~/Downloads/Anaconda3-2019.07-Linux-x86-64.sh
+```
+The instructions for the installation will then appear: (1) press Enter; (2) once the licence agreement shows, you can keep pressing enter to go through the whole document, or press Q to quit; (3) Type `yes` to accept the licence agreement; (4) you can accept the default installation location (just press Enter once again); (5) Type `yes` once again to accept the installer to run `conda init`.
+
+After installation, restart Terminal and type:
+```
+python3
 ```
 you should see something like this if you were successful:
 
 ```
-Python 3.6.5 :: Anaconda custom (64-bit)
+Python 3.7.3 (default, Mar 27 2019, 22:11:17) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
 ```
 
-If instead you see `Python 2.7.X :: Anaconda custom (64-bit)` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.6**.
+If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
 To see if Jupyter was successfully installed in the Anaconda Python distribution type the following in the terminal:
 
 ```
-jupyter notebook
+jupyter lab
 ```
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
 
-![](/resources_pages/imgs/jupyter.png)
+![](/resources_pages/imgs/jupyter_lab.PNG)
 
 
 If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
