@@ -44,10 +44,10 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio.
-
-Open Terminal and type the following command:
+We will be using the command line version of Git as well as Git through RStudio. To install the latest version of Git, open Terminal and type the following command:
 ```
+sudo apt-add-repository ppa:git-core/ppa
+sudo apt-get update
 sudo apt-get install git
 ```
 
@@ -58,7 +58,7 @@ git --version
 you should see something like this if you were successful:
 
 ```
-git version 2.17.0
+git version 2.22.0
 ```
 
 ## Python
