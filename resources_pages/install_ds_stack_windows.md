@@ -4,7 +4,7 @@ title: Windows
 subtitle: MDS software stack install instructions for Windows
 ---
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- runs one of the following operating systems: macOS Yosemite 10.10.3 or later, Ubuntu 14.04 or later, Windows 10 Professional, Enterprise or Education (1511 November update, Build 10586 or later).
+- Windows 10 Professional, Enterprise or Education (1511 November update, Build 10586 or later).
 - can connect to networks via a wireless connection (and preferably also a wired connection)
 - has at least 40 GB disk space available
 - has at least 4 GB of RAM
@@ -237,9 +237,9 @@ There is NO WARRANTY, to the extent permitted by law.
 
 ## Docker
 
-You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one here: https://store.docker.com/signup?next=%2F%3Fref%3Dlogin
+You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up and signing into the Docker Store, go here: https://store.docker.com/editions/community/docker-ce-desktop-windows and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen.
+After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen.
 
 After installation, restart Powershell and type the following to ask for the version:
 
