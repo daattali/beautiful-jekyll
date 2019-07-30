@@ -66,7 +66,7 @@ We will be using Python for a large part of the program, including many popular 
 
 Head to https://www.anaconda.com/download/#linux and download the Anaconda version for Linux with **Python 3.7** (make sure the linux tab is selected). Once the download is finished, open Terminal and execute the following commands:
 ```
-bash paht/to/the/file
+bash path/to/the/file
 ```
 
 For example,
@@ -113,11 +113,11 @@ We will be using R, another programming language, a lot in the program. We will 
 #### R
 
 Type `sudo apt-add-repository` in Terminal followed by the corresponding line for your version:
-  - for Ubuntu 19.04 (Disco) add: `deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/`
-  - for Ubuntu 18.04.1 (Bionic Beaver) add: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
-  - for Ubuntu 17.10.1 (Artful Aardvark) add: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
-  - for Ubuntu 16.04.4 (Xenial Xerus) add: `deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/`
-  - for Ubuntu 14.04.5 (Trusty Tahr) add: `deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/`
+  - for Ubuntu 19.04 (Disco) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/'`
+  - for Ubuntu 18.04.1 (Bionic Beaver) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'`
+  - for Ubuntu 17.10.1 (Artful Aardvark) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'`
+  - for Ubuntu 16.04.4 (Xenial Xerus) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/'`
+  - for Ubuntu 14.04.5 (Trusty Tahr) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/'`
 
 For example, for Ubuntu 19.04 (Disco):
 ```
