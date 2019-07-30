@@ -158,7 +158,7 @@ https://www.gnu.org/licenses/.
 ```
 
 #### RStudio
-Chose and download the appropriate Ubuntu version of (RStudio)[www.rstudio.com/products/rstudio/download/#download]. 
+Chose and download the appropriate Ubuntu version of [RStudio](www.rstudio.com/products/rstudio/download/#download). 
 
 Double click the file and click `install`, or, alternatively, run the following command:
 ```
