@@ -227,7 +227,7 @@ Sometimes a kernel loads, but doesn't work if installation was not done correctl
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-### Visual Studio Code
+## Visual Studio Code
 
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Double-click the item, and click in install. That's it!
 
