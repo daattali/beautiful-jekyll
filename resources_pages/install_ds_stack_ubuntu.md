@@ -230,20 +230,21 @@ Sometimes a kernel loads, but doesn't work if installation was not done correctl
 
 ### Visual Studio Code
 
-Atom Text Editor
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Atom.
+We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Double-click the item, and click in install. That's it!
 
-Got to https://flight-manual.atom.io/getting-started/sections/installing-atom/#platform-linux and follow the installation instructions. 
 
-To test that atom is installed and can be opened from the command line/terminal, in terminal type the following to ask for the version:
+
+You can test that VS code is installed and can be opened from Terminal by running the following command:
 
 ```
-which atom
+code --version
 ```
 
 you should see something like this if you were successful:
 ```
-/usr/local/bin/atom
+1.36.1
+2213894ea0415ee8c85c5eea0d0ff81ecc191529
+x64
 ```
 
 ## LaTeX
@@ -275,7 +276,7 @@ Compiled with poppler version 0.62.0
 
 ## Make
 
-We will be using Make to automate our analysis scripts. More on this later! 
+We will be using Make to automate our analysis scripts. More on this later!
 
 To install Make, open Terminal and type the following command:
 ```
