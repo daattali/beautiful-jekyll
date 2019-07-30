@@ -160,7 +160,7 @@ https://www.gnu.org/licenses/.
 #### RStudio
 Chose and download the appropriate Ubuntu version of [RStudio](www.rstudio.com/products/rstudio/download/#download). 
 
-Double click the file and click `install`, or, alternatively, run the following command:
+Double click the file and click `install` or, alternatively, run the following command:
 ```
 sudo apt install ./Downloads/rstudio-1.2.1335-amd64.deb
 ```
