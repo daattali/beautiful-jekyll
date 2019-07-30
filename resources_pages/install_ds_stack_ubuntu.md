@@ -171,23 +171,21 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 ![](/resources_pages/imgs/RStudio.png)
 
 #### IR kernel
-Open a terminal window and type the following commands to install the dependencies:
+In Terminal window type the following commands:
 
 ```
-sudo aptitude install libcurl4-openssl-dev libssl-dev libgit2-dev
+R
 ```
 
-Open RStudio and type the following commands into the Console panel:
+This will open R in terminal. In R, type:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
-devtools::install_github('IRkernel/IRkernel')
+install.packages('IRkernel')
 ```
 
-Next, open terminal and type the following:
-
+Once it is finished (it might take a minute), type
 ```
-R -e "IRkernel::installspec()"
+IRkernel::installspec()
 ```
 
 To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
