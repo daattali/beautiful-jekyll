@@ -71,7 +71,7 @@ bash path/to/the/file
 
 For example,
 ```
-bash ~/Downloads/Anaconda3-2019.07-Linux-x86-64.sh
+bash Downloads/Anaconda3-2019.07-Linux-x86_64.sh
 ```
 The instructions for the installation will then appear: (1) press Enter; (2) once the licence agreement shows, you can keep pressing enter to go through the whole document, or press Q to quit; (3) Type `yes` to accept the licence agreement; (4) you can accept the default installation location (just press Enter once again); (5) Type `yes` once again to accept the installer to run `conda init`.
 
