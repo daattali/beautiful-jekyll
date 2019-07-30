@@ -5,7 +5,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 ---
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- Ubuntu 14.04 or later (we __strongly__ recommend 18.04 or later).
+- Ubuntu 14.04 or later (we __strongly__ recommend 18.04).
 - can connect to networks via a wireless connection (and preferably also a wired connection)
 - has at least 40 GB disk space available
 - has at least 4 GB of RAM
@@ -251,13 +251,7 @@ Compiled with poppler version 0.62.0
 ## Make
 
 We will be using Make to automate our analysis scripts. More on this later!
-
-To install Make, open Terminal and type the following command:
-```
-sudo apt-get install build-essential
-```
-
-After installation, in terminal type the following to ask for the version:
+Make already comes installed in Ubutun 18.04. You check by executing the following command in Terminal:
 ```
 make --version
 ```
@@ -271,6 +265,13 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
+
+If not, to install Make, open Terminal and type the following command:
+```
+sudo apt-get install build-essential
+```
+
+After, type `make --version` to make sure you were successful. 
 
 ## Docker
 
