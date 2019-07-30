@@ -112,14 +112,14 @@ We will be using R, another programming language, a lot in the program. We will 
 
 #### R
 
-Open /etc/apt/sources.list and add the following line to the end of the file (choose the correct one for your version of Ubuntu):
+Type `sudo apt-add-repository` in Terminal followed by the corresponding line for your version:
   - for Ubuntu 19.04 (Disco) add: `deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/`
   - for Ubuntu 18.04.1 (Bionic Beaver) add: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
-  - for Ubuntu 17.10.1 (Artful Aardvark) add: `deb https://cloud.r-project.org/bin/linux/ubuntu artful/`
-  - for Ubuntu 16.04.4 (Xenial Xerus) add: `deb https://cloud.r-project.org/bin/linux/ubuntu xenial/`
-  - for Ubuntu 14.04.5 (Trusty Tahr) add: `deb https://cloud.r-project.org/bin/linux/ubuntu trusty/`
+  - for Ubuntu 17.10.1 (Artful Aardvark) add: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
+  - for Ubuntu 16.04.4 (Xenial Xerus) add: `deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/`
+  - for Ubuntu 14.04.5 (Trusty Tahr) add: `deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/`
 
-Alternatively, you can just type `sudo apt-add-repository` in Terminal followed by the corresponding line for your version. For example, for Ubuntu 19.04 (Disco):
+For example, for Ubuntu 19.04 (Disco):
 ```
 sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/`
 ```
