@@ -214,23 +214,19 @@ Next, open terminal and type the following:
 R -e "IRkernel::installspec()"
 ```
 
-To see if you were successful, try running Jupyter Notebook and seeing if you have working R kernel. To launch the Jupyter type the following in the terminal:
+To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
 
 ```
-jupyter notebook
+jupyter lab
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. Now click on "New" and then "R" (circled in red on the screenshot below) to launch an Jupyter notebook with an R kernel.
+A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
 
-![](/resources_pages/imgs/IR_kernel_1.png)
-
-A notebook is using the R kernel if you see R in the right-hand side of the notebook (circled in red on the screenshot below).
-
-![](/resources_pages/imgs/IR_kernel_2.png)
+![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
 
 Sometimes a kernel loads, but doesn't work if installation was not done correctly. To test whether your installation was done correctly now type `(x <- 5)` in the code cell and click on the run button to run the cell. If your R kernel works you should see the number 5 printed below the cell.
 
-![](/resources_pages/imgs/IR_kernel_3.png)
+![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 ### Atom Installation
 
