@@ -163,7 +163,7 @@ https://www.gnu.org/licenses/.
 ```
 
 #### RStudio
-Chose and download the appropriate Ubuntu version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download]. 
+Chose and download the appropriate Ubuntu version of RStudio from www.rstudio.com/products/rstudio/download/#download. 
 
 For Ubuntu 19.04 you can download `RStudio 1.2.1335 - Ubuntu 18/Debian 10 (64-bit)`, then run the following command:
 ```
