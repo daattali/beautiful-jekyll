@@ -20,7 +20,7 @@ These instructions will walk you through installing the required Data Science so
 - [R, IRkernel and RStudio](#r-irkernel-and-rstudio)
 - [Atom Text Editor](#atom-text-editor)
 - [LaTeX](#latex)
-- [SQLite](#sqlite)
+- [Visual Studio Code](#Visual-Studio-Code)
 - [Make](#make)
 - [Docker](#docker)
 
@@ -228,7 +228,7 @@ Sometimes a kernel loads, but doesn't work if installation was not done correctl
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-### Atom Installation
+### Visual Studio Code
 
 Atom Text Editor
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Atom.
@@ -272,36 +272,6 @@ Compiled with libpng 1.6.34; using libpng 1.6.34
 Compiled with zlib 1.2.8; using zlib 1.2.8
 Compiled with poppler version 0.62.0
 ```
-
-## SQLite
-
-Open Terminal and type the following command:
-```
-sudo apt-get update
-sudo apt-get install sqlite3 libsqlite3-dev
-```
-
-To test that it was successfully installed, in terminal type the following to open SQLite:
-
-```
-sqlite3
-```
-
-you should see something like this if it is installed:
-```
-SQLite version 3.22.0 2018-01-22 18:45:57
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
-sqlite> 
-```
-Type `.quit` to exit.
-
-If you run into trouble installing SQLite try doing a software update first: 
-```
-sudo apt-get update && sudo apt-get upgrade
-```
-
 
 ## Make
 
