@@ -119,9 +119,9 @@ Type `sudo apt-add-repository` in Terminal followed by the corresponding line fo
   - for Ubuntu 16.04.4 (Xenial Xerus) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/'`
   - for Ubuntu 14.04.5 (Trusty Tahr) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/'`
 
-For example, for Ubuntu 19.04 (Disco):
+For example, for Ubuntu 18.04 (Bionic Beaver):
 ```
-sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/'
+sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 ```
 
 Next, add the key ID for the CRAN network:
@@ -138,11 +138,6 @@ Then, install the R binaries:
 ```
 sudo apt-get install r-base
  ```
-
-Finally, install the r-base-dev package:
-```
-sudo apt-get install r-base-dev
-```
 
 After installation, in terminal type the following to ask for the version:
 ```
