@@ -275,9 +275,9 @@ After, type `make --version` to make sure you were successful.
 
 ## Docker
 
-You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one (here)[https://store.docker.com/signup?next=%2F%3Fref%3Dlogin].
+You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the installation instructions (here)[https://docs.docker.com/install/linux/docker-ce/ubuntu/]
+After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the installation instructions [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
 After installation, in terminal type the following to ask for the version:
 ```
