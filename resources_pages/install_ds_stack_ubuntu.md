@@ -18,9 +18,8 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python and Jupyter](#python)
 - [R, IRkernel and RStudio](#r-irkernel-and-rstudio)
-- [Atom Text Editor](#atom-text-editor)
+- [Visual Studio Code](#visual-studio-code)
 - [LaTeX](#latex)
-- [Visual Studio Code](#Visual-Studio-Code)
 - [Make](#make)
 - [Docker](#docker)
 
