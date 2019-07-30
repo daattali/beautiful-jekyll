@@ -158,31 +158,13 @@ https://www.gnu.org/licenses/.
 ```
 
 #### RStudio
-Chose and download the appropriate Ubuntu version of RStudio from www.rstudio.com/products/rstudio/download/#download. 
+Chose and download the appropriate Ubuntu version of (RStudio)[www.rstudio.com/products/rstudio/download/#download]. 
 
-For Ubuntu 19.04 you can download `RStudio 1.2.1335 - Ubuntu 18/Debian 10 (64-bit)`, then run the following command:
+Double click the file and click `install`, or, alternatively, run the following command:
 ```
 sudo apt install ./Downloads/rstudio-1.2.1335-amd64.deb
 ```
 and you should be able to open RStudio. 
-
-For other linux versions, open Terminal and type the following commands to install the dependencies and RStudio:
-```
-# Modified from: https://blog.sergiouri.be/2018/05/ubuntu-1804-setup-rstudio.html
-
-wget http://ftp.ca.debian.org/debian/pool/main/g/gstreamer0.10/libgstreamer0.10-0_0.10.36-1.5_amd64.deb
-wget http://ftp.ca.debian.org/debian/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-
-sudo apt install libjpeg62 gdebi
-
-sudo gdebi libgstreamer0.10-0_0.10.36-1.5_amd64.deb
-sudo gdebi libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-
-sudo gdebi rstudio-*.deb
-
-rm libgstreamer0.10-0_0.10.36-1.5_amd64.deb
-rm libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
-```
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
