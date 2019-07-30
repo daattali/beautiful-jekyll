@@ -121,7 +121,7 @@ Type `sudo apt-add-repository` in Terminal followed by the corresponding line fo
 
 For example, for Ubuntu 19.04 (Disco):
 ```
-sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/`
+sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/'
 ```
 
 Next, add the key ID for the CRAN network:
