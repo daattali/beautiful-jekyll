@@ -5,7 +5,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 ---
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- runs one of the following operating systems: macOS Yosemite 10.10.3 or later, Ubuntu 14.04 or later, Windows 10 Professional, Enterprise or Education (1511 November update, Build 10586 or later).
+- Ubuntu 14.04 or later (we __strongly__ recommend 18.04 or later).
 - can connect to networks via a wireless connection (and preferably also a wired connection)
 - has at least 40 GB disk space available
 - has at least 4 GB of RAM
