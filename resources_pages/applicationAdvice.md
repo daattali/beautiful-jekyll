@@ -19,7 +19,7 @@ If your ultimate goal is to pursue a PhD in statistics or computer science, MDS 
 A strong Letter of Intent (LOI) should be...
 
 - **specific to you.** The LOI should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.
-- **specific to UBC MDS.** The LOI should be specific to the UBC MDS program, and should demonstrate that you understand the nature and goals of the program.
+- **specific to UBC MDS.** The LOI should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results.
 - **polished.** The LOI should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
 
 #### 3. References
