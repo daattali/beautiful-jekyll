@@ -18,7 +18,7 @@ If your ultimate goal is to pursue a PhD in statistics or computer science, MDS 
 
 A strong Letter of Intent (LOI) should be...
 
-- **specific to you.** The LOI should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. 
+- **specific to you.** The LOI should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.
 - **specific to UBC MDS.** The LOI should be specific to the UBC MDS program, and should demonstrate that you understand the nature and goals of the program.
 - **polished.** The LOI should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
 
@@ -30,20 +30,28 @@ no matter how famous they are, if your referee doesn't know you then the letter 
 This issue arises particularly often with past course instructors.
 If a letter from a past instructor simply states your grade in the course (even if it is a great grade!), 
 it does not add any new information not already contained within your transcripts.
+Finally, references from supervisors/managers/professors are typically much stronger than references friends friends/colleagues/classmates. 
 
 Before asking for a reference letter, speak with the potential referee: 
 do they have something particular and special to say about you? Do they have the time and willingness to write the letter in a timely manner?
 Do they seem enthusiastic to provide a reference letter for you?
 
-#### 4. If something is unclear, explain it
+#### 4. If something might be unclear to us, explain it
 
 Your application is your opportunity to communicate all relevant information to the admissions committee. 
-Thus, it's in your best interest to provide the committee with sufficient information to make a decision.
-For example, perhaps you took a year off, or two, which creates a gap in your resume. Even if you believe your
-activities during that time don't contribute to your credentials as an MDS applicant, you should explain how the time was spent.
-This will eliminate any unanswered questions the committee might have about your file. 
-As another example, if you have some particularly poor grades but there is a noteworthy reason for your performance, you should explain it. 
+Thus, it's in your best interest to provide the committee with sufficient information to make a decision. Examples of unusual situations 
+that may warrant an explanation:
+
+- A gap year or two in your resume
+- You are currently enrolled in a degree program with an end date after the MDS start date
+- You have attended a large number of academic institutions
+- Your previous degrees span a much shorter or longer amount of time than typical
+- Your grades are generally strong but are very poor for one or two semesters
+- etc.
+
+To elaborate on the final example above, if you have some particularly poor grades but there is a noteworthy reason for your performance, you should explain it. For example, perhaps you were working full time, caring for an ill family member, or simply unmotivated because you were not excited about what you were studying. 
 The explanation doesn't erase the grade but it creates a clearer picture of you as an applicant than an unexplained low grade. 
+
 
 #### Disclaimer
 
