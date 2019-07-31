@@ -22,6 +22,8 @@ A strong Letter of Intent (LOI) should be...
 - **specific to UBC MDS.** The LOI should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results.
 - **polished.** The LOI should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
 
+Part of the LOI can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
+
 #### 3. References
 
 Letters of reference should help the admissions committee to get a complete understanding of a candidate. 
