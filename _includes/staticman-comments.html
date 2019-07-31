@@ -20,7 +20,7 @@
     <div class="page__comments-form">
       <h3 class="page__comments-title">{{ site.data.ui-text[site.locale].comments_label | default: "Leave a Comment" }}</h3>
       <p class="small">{{ site.data.ui-text[site.locale].comment_form_info | default: "Your email address will not be published. Required fields are marked" }} <span class="required">*</span></p>
-      <form id="new_comment" class="page__comments-form js-form form" method="post" action="{{ site.staticman.endpoint | default: 'https://staticman3.herokuapp.com/v3/entry/github/' }}{{ site.staticman.repository }}/{{ site.staticman.branch }}/comments">
+      <form id="new_comment" class="page__comments-form js-form form" method="post">
         <div class="form-group">
           <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label><br>
           <textarea type="text" rows="12" cols="36" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
@@ -48,7 +48,8 @@
         </div>
         <!-- Start comment form alert messaging -->
         <p class="hidden js-notice">
-          <strong class="js-notice-text"></strong>
+          <strong class="js-notice-text-success hidden">{{ site.data.ui-text[site.locale].comment_success_msg | default: "Thanks for your comment! It will show on the site once it has been approved." }}</strong>
+          <strong class="js-notice-text-failure hidden">{{ site.data.ui-text[site.locale].comment_error_msg | default: "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again." }}</strong>
         </p>
         <!-- End comment form alert messaging -->
         {% if site.staticman.reCaptcha.siteKey %}
@@ -58,6 +59,7 @@
         {% endif %}
         <div class="form-group">
           <button type="submit" id="comment-form-submit" tabindex="5" class="btn btn--primary btn--large">{{ site.data.ui-text[site.locale].comment_btn_submit | default: "Submit Comment" }}</button>
+          <button type="submit" id="comment-form-submitted" tabindex="5" class="btn btn--primary btn--large hidden" disabled>{{ site.data.ui-text[site.locale].comment_btn_submitted | default: "Submitted" }}</button>
         </div>
       </form>
     </div>
@@ -67,6 +69,13 @@
       <script async src="https://www.google.com/recaptcha/api.js"></script>
     {% endif %}
   </div>
+
   <!-- Load script to handle comment form submission -->
-  {% include staticman-script.html %}
+  <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+  <script>
+    if (typeof jQuery == 'undefined') {
+      document.write('<script src="{{ "/js/jquery-1.11.2.min.js" | relative_url }}"></scr' + 'ipt>');
+    }
+  </script>
+  <script src="{{ "/js/staticman.js" | relative_url }}"></script>
 {% endif %}
