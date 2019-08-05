@@ -26,7 +26,7 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Violence Rate](https://medium.com/@b.ergeshev/violence-comparison-between-the-bronx-and-queens-1e1d8b3dba1b)
+https://medium.com/@b.ergeshev/violence-comparison-between-the-bronx-and-queens-1e1d8b3dba1b
 
 Here's a code chunk:
 
