@@ -1,7 +1,7 @@
 ---
 
 layout: page
-title: Baisal Ergeshev
+title: About me
 subtitle: 
                        
 
