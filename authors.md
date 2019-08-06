@@ -10,7 +10,7 @@ title: Authors
 
 ## DGtalTools Package Manager
 
-* Bertrand Kerautret (LIRIS, Université de Lyon)
+* Bertrand Kerautret (LIRIS, Université Lumière Lyon 2)
 
 ## Main development team
 
@@ -18,14 +18,14 @@ title: Authors
 * Guillaume Damiand (LIRIS, CNRS)
 * Pierre Gueth (LIRIS, CNRS)
 * Sébastien Fourey (GREYC, ENSICAEN)
-* Bertrand Kerautret (LIRIS, Université de Lyon)
-* Adrien Krähenbühl (LaBRI)
+* Bertrand Kerautret (LIRIS, Université Lumière Lyon 2)
+* Adrien Krähenbühl (ICube, Université de Strasbour)
 * Jacques-Olivier Lachaud (LAMA, Université de Savoie)
-* Jérémy Levallois (LIRIS – LAMA, INSA-Lyon)
+* Jérémy Levallois (Allegorithmic, Lyon)
 * Nicolas Normand (IRCCyN, Université de Nantes)
 * Xavier Provençal (LAMA, Université de Savoie)
 * Laurent Provot (LIMOS, Auvergne University)
-* Tristan Roussillon (LIRIS, Université Lumière Lyon 2)
+* Tristan Roussillon (LIRIS, INSA-Lyon)
 * Isabelle Sivignon (GIPSA-lab, CNRS)
 * Martial Tola (LIRIS, CNRS)
 
@@ -36,7 +36,7 @@ title: Authors
 * Jérémy Gaillard (LIRIS, INSA-Lyon)
 * Xi Wang (LIRIS – CEN Météo-France)
 * Nicolas Silva (LIRIS, INSA-Lyon)
-* Jean-David Genevaux (LIRIS, Lyon 1  )
+* Jean-David Genevaux (LIRIS, Lyon 1)
 
 For any comment/question about the library itself, please use the mailing lists detailed in the [Documentation & Help][1] page. For any other request:
 
