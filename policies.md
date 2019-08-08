@@ -10,9 +10,9 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 ## Attendance
 
-Regular attendance is expected of students in all their classes (including lectures, laboratories, tutorials, seminars, etc.). Students who are unavoidably absent because of illness or other reasons should inform the instructor(s) of the course(s) as soon as possible, preferably, prior to the start of the class/lab.
+Regular attendance is expected of students in all their classes (including lectures, laboratories, tutorials, seminars, etc.). Students who are unavoidably absent because of illness or other reasons should inform the instructor(s) of the course(s) as soon as possible, preferably, prior to the start of the class/lab/quiz.
 
-Students who miss a quiz or assignment need to provide a doctor's note and make arrangements (e.g., schedule a make-up quiz) with a Lab Instructor as soon as possible. Failing to present a doctor's note may result in a grade of zero.
+Students may miss **one** quiz or assignment (across the whole program) without providing a doctor's note; instead, the student should email the Lab Instructor a brief letter, signed by the student, stating that they were absent for a legitimate medical reason. All future absences will require a doctor's note as documentation. Failing to present a doctor's note may result in a grade of zero. 
 
 Students who miss more than 3 days of classes/labs in a row need to provide documentation in the form of a doctor's note or written request for leave to the MDS Leadership Team. Failing to present a doctor's note or written request may result in a failing grade. The Leadership Team will contact the student with an action plan to make up any missed quizzes or assignments.
 
