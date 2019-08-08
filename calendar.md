@@ -8,8 +8,9 @@ title: MDS Calendar
 Legend:
 
 - Blue: lectures
-- Brown: other required activities
-- Orange: extracurricular/optional activities
-- Other colours: labs
+- Dark red and green: labs
+- Brown: other academic activities
+- Orange: extracurricular activities/events
+
 
 Note: you can click the small arrow in the upper-right to turn off certain calendars (like lab sections you're not in). You can also import these calendars directly into your own Google Calendar. If so, we suggest importing all calendars except for lab sections you're not in.
