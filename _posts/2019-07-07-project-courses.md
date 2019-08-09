@@ -59,10 +59,17 @@ Another challenge that we have come across in teaching Data Science via project 
 
 
 #### 4. Getting people to work well together 
-- group work contract & code of conduct at beginning of project
-- create motivation by having the project be "real" enough to be part of their portfolio and have them develop in public
-- require project-related communication via GitHub issues (so they can be seen by the whole group as well as the instructional team)
-- team work document (and holding a significant portion of the grade towards this)
+One of the most important aspects and challenges of group projects is getting people to collaborate and work well together. In our courses we assign students to different groups for each project to give them much practice in working with many different people in a lower stakes environment (compared to on the job) and to mirror the real work world where people rarely get to choose their co-workers. To facilitate and help our students collaborate effectively with eachother on the projects in the assigned groups we employ five strategies: 
+
+1. We now begin the first group-work session of the course with an exercise to have the groups collaboratively create a group work contract. 
+
+2. We require that they include a code of conduct and contributors documents in their project repositories to communicate to eachother, and the outside world, what is acceptable behaviour when contributing and how people are expected to contribute to the document.
+
+3. We try to create motivation for all members to contribute to the project by having the project be "real" enough to be part of their Data Science portfolio to help them with their job search. Additionally, we have them develop in the public under the UBC-MDS Github organization so that everyone ends up with the same portfolio piece to share and it is clear to the outside world who the key developers/contributors were (as evidenced by the contributors tab on their GitHub repository).
+
+4. We instruct students to have all their project-related communication happen via GitHub issues. This requirement is put in place so that communications can be seen by the whole group (as well as the instructional team).
+
+5. We assign part of the students grade to team work (20% of the project). This sends a strong signal to the students that working well with their project members is an important and critical part of the success of their project. To assess each students' team work we review the project's GitHub history to evaluate how much each member contributed to the project and have all the students fill out out [team work document](https://github.com/UBC-MDS/DSCI_591_capstone-proj/blob/master/deliverables/team_work/team_work.pdf). In this document they have to rate how well each member of the team, including themselves, did on preparation, participation and communication, helped the group excel as well as cooperation. In that form, we also ask the students to state the roles of each of the group members in the project, as well discuss what went well and what went poorly during their team project experience. By combining the GitHub history and the team work documents we can get a clear picture of how each person contributed to the project and assign a fair grade to them based on their team work performance. 
 
 #### 5. Giving sufficient and timely feedback and grades
 - TA training/guidance
