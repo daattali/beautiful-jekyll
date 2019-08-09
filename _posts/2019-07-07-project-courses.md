@@ -84,6 +84,10 @@ Finally, as discussed earlier in this article, we also run peer feedback session
 
 ## Discussion
 
+The challenges and the solutions that we have encountered and implemented in our Data Science project-based courses has led to improved student learning (as observed by what students are capable of doing in their final Data Science Capstone project at the end of the program). One of the biggest improvements we observed between the Capstone projects comparing the year where we had no project-based courses and the following years where we did was the decrease in technical debt at the end of the Capstone project. In particular, the Capstone projects in the years where we have run the project-based courses, have been much easier for new users (e.g., our Capstone industry, govenment or academic partners) to start using and extending the projects. In addition to the Instructional team's observed improvements in student performance, we have also observed improved student satisfaction and perceived value from these course when run as project-based courses as opposed to when we ran them as traditional lecture/lab-based courses (as evidenced by student course evaluations, surveys and anectdotal discussions with students and alumni).
+
+ 
+
 - Caveats
   - Advanced/intermediate GitHub skills required by students means this is not great as is for lower level undergraduate courses:
     - Git/GitHub is too advanced of a tool (as well as the way we use it in these projects) for an intro ugrad course. Solution, have students take a course to learn Git/GitHub beforehand, or use a simpler collaboration tool (e.g., Google Colab and/or Kaggle kernels) and some simple GitHub features (issues for collaboration and use the GitHub website upload tool to upload a version of the project for peer review session and the final submission).
