@@ -1,0 +1,15 @@
+{{- with .Title | default .Site.Title }}
+<meta property="og:title" content="{{ . }}" />
+{{- end }}
+{{- with .Description | default .Params.subtitle | default .Summary }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+{{- with .Params.share_img | default .Params.image | default .Site.Params.logo }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{- end }}
+{{- with .Site.Params.fb_app_id }}
+<meta property="fb:app_id" content="{{ . }}" />
+{{- end }}
+<meta property="og:url" content="{{ .URL | absLangURL }}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />

@@ -1,0 +1,74 @@
+# Content
+- id: dateFormat
+  translation: "January 2, 2006"
+- id: shortdateFormat
+  translation: "2 Jan, 2006 15:04:05"
+- id: postedOnDate
+  translation: "发表于 {{ .Count }}"
+- id: lastModified
+  translation: "(上次修改时间 {{ .Count }})"
+- id: translationsLabel
+  translation: "其它语言: "
+- id: translationsSeparator
+  translation: ", "
+- id: readMore
+  translation: "阅读全文"
+- id: olderPosts
+  translation: "下一页"
+- id: newerPosts
+  translation: "上一页"
+- id: previousPost
+  translation: "前一篇"
+- id: nextPost
+  translation: "后一篇"
+- id: readTime
+  translation: "分钟"
+- id: words
+  translation: "个字"
+
+
+# 404 page
+- id: pageNotFound
+  translation: "啊哦，这篇文章不存在。 (404 错误)"
+
+# Footer
+- id: poweredBy # Accepts HTML
+  translation: '由 <a href="http://gohugo.io">Hugo v{{ .Hugo.Version }}</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 移植自 <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
+
+# Navigation
+- id: toggleNavigation
+  translation: "切换导航"
+- id: languageSwitcherLabel
+  translation: "语言"
+- id: gcseLabelShort
+  translation: "搜索"
+- id: gcseLabelLong
+  translation: "搜索 {{ .Site.Title }}"
+- id: gcseClose
+  translation: "关闭"
+
+# Staticman
+- id: noComment
+  translation: "没有意见"
+- id: oneComment
+  translation: "评论"
+- id: moreComment
+  translation: "评论"
+- id: useMarkdown
+  translation: "您可以使用Markdown语法"
+- id: yourName
+  translation: "你的名字"
+- id: yourEmail
+  translation: "您的电子邮件地址"
+- id: yourWebsite
+  translation: "你的网页"
+
+# Delayed Disqus
+- id: show
+  translation: "显示"
+- id: comments
+  translation: "条评论" 
+
+# Related posts
+- id: seeAlso
+  translation: "也可以看看"

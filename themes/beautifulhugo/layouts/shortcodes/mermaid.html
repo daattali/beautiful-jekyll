@@ -1,0 +1,7 @@
+<link href="{{"css/mermaid.css" | relURL}}" type="text/css" rel="stylesheet"/>
+<script defer src="{{"js/mermaid.js" | relURL}}">
+    mermaid.initialize({startOnLoad:true});
+</script>
+<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}" >
+    {{ safeHTML .Inner  }}
+</div>

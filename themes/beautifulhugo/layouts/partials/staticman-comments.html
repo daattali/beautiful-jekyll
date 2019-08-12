@@ -1,0 +1,93 @@
+<section class="js-comments staticman-comments">
+
+  {{ $slug := replace .URL "/" "" }}
+
+  {{ if .Site.Data.comments }}
+    {{ $comments := index $.Site.Data.comments $slug }}
+    {{ if $comments }}
+      {{ if gt (len $comments) 1  }}
+        <h3>{{ len $comments  }} {{ i18n "moreComment" }}</h3>
+      {{ else }}
+        <h3>{{ len $comments  }} {{ i18n "oneComment" }}</h3>
+      {{ end }}
+    {{ else }}
+      <h3>{{ i18n "noComment" }}</h3>
+    {{ end }}
+
+
+    {{ $.Scratch.Set "hasComments" 0 }}
+    {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
+      {{ if not .parent }}
+        {{ $.Scratch.Add "hasComments" 1 }}
+        <article id="comment-{{ $.Scratch.Get "hasComments" }}" class="static-comment">
+          <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=48">
+          {{ if .website }}
+          <h4 class="comment-author"><a rel="external nofollow" href="{{ .website }}">{{ .name }}</a></h4>
+          {{ else }}
+          <h4 class="comment-author">{{ .name }}</h4>
+          {{ end }}
+          <div class="comment-timestamp"><a href="#comment-{{ $.Scratch.Get "hasComments" }}" title="Permalink to this comment"><time datetime="{{ .date }}">{{ dateFormat (default (i18n "shortdateFormat") .Site.Params.dateformat) .date}}</time></a></div>
+          <div class="comment-content"><p>{{ .comment | markdownify }}</p></div>
+        </article>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+
+
+<form class="js-form form" method="post" action="{{ .Site.Params.staticman.api }}">
+  <input type="hidden" name="options[slug]" value="{{ replace .URL "/" "" }}">
+  <input type="hidden" name="options[parent]" value="">
+
+  {{ if .Site.Params.staticman.recaptcha }}
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ .Site.Params.staticman.recaptcha.sitekey }}">
+  <input type="hidden" name="options[reCaptcha][secret]"  value="{{ .Site.Params.staticman.recaptcha.secret }}">
+  {{ end }}
+
+  <fieldset>
+  <div class="textfield">
+    <textarea name="fields[comment]" type="text" placeholder="{{ i18n "useMarkdown" }}"></textarea>
+  </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input name="fields[name]" type="text" placeholder="{{ i18n "yourName" }}"/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="email" name="fields[email]"  placeholder="{{ i18n "yourEmail" }}"/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="textfield">
+      <input type="text" name="fields[website]"  placeholder="{{ i18n "yourWebsite" }}"/>
+    </div>
+  </fieldset>
+
+  {{ if .Site.Params.staticman.recaptcha }}
+  <fieldset>
+    <div class="g-recaptcha" data-sitekey="{{ .Site.Params.staticman.recaptcha.sitekey }}"></div>
+  </fieldset>
+  {{ end }}
+
+  <fieldset>
+    <button class="button">
+      Submit
+    </button>
+  </fieldset>
+</form>
+</section>
+
+<article class="modal">
+  <div class="title">
+    <h2 class="js-modal-title"></h2>
+  </div>
+  <div class="js-modal-text"></div>
+  <div>
+    <button class="js-close-modal">Close</button>
+  </div>
+</article>

@@ -1,0 +1,82 @@
+---
+title: ggplot2 and Joy Division
+author: ~
+date: '2016-03-24'
+slug: joy-division-plot
+categories: []
+tags: []
+type: 'post'
+subtitle: ''
+image: ''
+---
+
+
+
+<p>A while ago I had had a great time answering <a href="http://stackoverflow.com/questions/33619980/spread-out-density-plots-with-ggplot/33620860#33620860">a question</a> on stackoverflow that was asking about recreating a plot from a <a href="http://fivethirtyeight.com/features/the-most-conservative-and-most-liberal-elite-law-schools/?ex_cid=538twitter">fivethirtyeight article</a> in ggplot2. You can see the original and my attempt below. I was satisfied with the style, but felt a bit dirty introducing a <code>for</code> loop.</p>
+<table>
+<thead>
+<tr class="header">
+<th>fivethirtyeight original</th>
+<th>ggplot2 version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://fivethirtyeight.com/wp-content/uploads/2014/12/roeder-feature-lawschools1.png?w=575" alt="fivethirtyeight original" style="height: 400px;"/></td>
+<td><img src="http://i.stack.imgur.com/jT65k.png" alt="ggplot2 version" style="height: 400px;"/></td>
+</tr>
+</tbody>
+</table>
+<p>Recreating other well known data visualisations is a reasonably common challenge for people who are into that sort of thing (see all the different recreations of Minard’s famous figure, some of them collected <a href="http://www.datavis.ca/gallery/re-minard.php">here</a>).</p>
+<p>Working through the fivethirtyeight example above, I realised that it was a very similar approach to the iconic <a href="https://en.wikipedia.org/wiki/Unknown_Pleasures">Joy Division album sleeve from Unknown Pleasures</a>, apparently from a visualisation of data from radio pulses, and quite possibly the most famous figure from a PhD thesis (<a href="http://thecreatorsproject.vice.com/blog/the-story-behind-joy-divisions-iconic-iunknown-pleasuresi-album-cover">more back story</a>).</p>
+<p>Anyway, after a quick search I was really surprised that I couldn’t find anyone recreating this figure in ggplot2, so I thought I’d give it a go. In the end I think I spent the most time trying to generate data that approximately similar to the original, and I’m not entirely satisfied, so please let me know if you can do a better job!</p>
+<p>Firstly to generate some data that somewhat reflects the original, which seems to be made up of multiple distributions + a whole lot of noise:</p>
+<pre class="r"><code>set.seed(1234)
+
+j1 &lt;- data.frame(Group = 1:50, 
+                 n1 = sample(c(500, 1000, 2500, 5000), 50, TRUE, c(0.1, 0.2, 0.4, 0.3)),
+                 n2 = sample(c(200, 400, 500, 1000), 50, TRUE, prob = c(0.3, 0.5, 0.15, 0.05)),
+                 m1 = runif(50, -1, 1),
+                 m2 = rnorm(50, 5, 0.5),
+                 sd1 = sample(c(0.7, 1.5, 2.5), 50, TRUE, prob = c(0.15, 0.5, 0.35)),
+                 sd2 = sample(c(0.7, 1, 3.5), 50, TRUE, prob = c(0.05, 0.6, 0.35)))
+j2 &lt;- j1 %&gt;% 
+  group_by(Group) %&gt;% 
+  do(x = c(rnorm(.$n1, .$m1, .$sd1), rnorm(.$n2, .$m2, .$sd2))) %&gt;% 
+  tidy(x)</code></pre>
+<p>I’m fairly certain there would be neater ways to do this, if you’ve got a better idea, let me know…</p>
+<pre class="r"><code>j3 &lt;- j2 %&gt;% 
+  mutate(GroupNum = rev(as.numeric(Group))) %&gt;% 
+  group_by(Group, GroupNum) %&gt;% 
+  do(tidy(density(.$x, n = 100))) %&gt;% 
+  group_by() %&gt;% 
+  mutate(ymin = GroupNum * (max(y) / 10), #This constant controls how much overlap between groups there is
+         ymax = y + ymin)
+
+j4 &lt;- j3 %&gt;% 
+  group_by(Group, GroupNum) %&gt;% 
+  do(data.frame(approx(.$x, .$ymax, xout = seq(min(j3$x), max(j3$x), length.out = 250)))) %&gt;% 
+  mutate(y = ifelse(is.na(y), j3$ymin[j3$Group == Group][1], y),
+         ymin = j3$ymin[j3$Group == Group][1],
+         ymaxN = y + rnorm(n(), 0.001, 0.005)) %&gt;% 
+  arrange(x) %&gt;% 
+  mutate(ymaxN = ifelse(row_number() %in% c(1, n()), ymin + min(ymaxN - ymin), ymaxN))
+
+j4$ymaxS &lt;- smooth(j4$ymaxN, kind = &quot;S&quot;, endrule = &quot;copy&quot;, do.ends = FALSE)</code></pre>
+<p>Again, I’m sure there are neater ways to do this, but I ended up doing my own density estimation to be able to use <code>geom_ribbon</code>, since the plot is essentially <code>geom_density</code> but removed from the x axis. As stated above, I really don’t feel comfortable with the <code>for</code>, but couldn’t figure a way to map to a grouping in this context.</p>
+<pre class="r"><code>p &lt;- ggplot()
+for (i in rev(unique(j4$GroupNum))) {
+  p &lt;- p + geom_ribbon(data = j4[j4$GroupNum == i,], aes(x = x, ymin = ymin + min(j4$ymaxN - j4$ymin), ymax = ymaxS, group = GroupNum), colour = &quot;#F0F0F0&quot;, fill = &quot;black&quot;) +
+    geom_hline(yintercept = j4$ymin[j4$GroupNum == i][1] + min(j4$ymaxN - j4$ymin), colour = &quot;#000000&quot;)
+}
+p &lt;- p + 
+  coord_fixed(13) +
+  theme(panel.grid = element_blank(),
+          panel.background = element_rect(fill = &quot;#000000&quot;),
+          axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          axis.title = element_blank())</code></pre>
+<p>And the final result:</p>
+<p><img src="/post/2016-03-24-joy-division-plot_files/figure-html/print_plot-1.png" width="720" style="display: block; margin: auto auto auto 0;" /></p>
+<p>While I’m certainly not getting it <a href="http://ajournalofmusicalthings.com/an-epic-joy-division-tattoo/">tattooed on my back</a>, I’m reasonably satisfied with the end result.</p>
+<p>You can find the source for this post on <a href="https://github.com/alexwhan/alexwhan.github.io/blob/master/_source/2016-03-24-joy-division-plot.Rmd">github</a></p>

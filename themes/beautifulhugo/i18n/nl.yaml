@@ -1,0 +1,74 @@
+# Content
+- id: dateFormat
+  translation: "2006-01-02"
+- id: shortdateFormat
+  translation: "2 Jan, 2006 15:04:05"
+- id: postedOnDate
+  translation: "Gepost op {{ .Count }}"
+- id: lastModified
+  translation: "(Laatst gewijzigd op {{ .Count }})"
+- id: translationsLabel
+  translation: "Andere talen: "
+- id: translationsSeparator
+  translation: ", "
+- id: readMore
+  translation: "Meer lezen"
+- id: olderPosts
+  translation: "Oudere berichten"
+- id: newerPosts
+  translation: "Nieuwere berichten"
+- id: previousPost
+  translation: "Vorige bericht"
+- id: nextPost
+  translation: "Volgende bericht"
+- id: readTime
+  translation: "minuten"
+- id: words
+  translation: "woorden"
+
+
+# 404 page
+- id: pageNotFound
+  translation: "Oeps, deze pagina bestaat niet. (404 Error)"
+
+# Footer
+- id: poweredBy # Accepts HTML
+  translation: '<a href="http://gohugo.io">Hugo v{{ .Hugo.Version }}</a>-aangedreven &nbsp;&bull;&nbsp; Thema door <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> aangepast voor <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>'
+
+# Navigation
+- id: toggleNavigation
+  translation: "Navigatie"
+- id: languageSwitcherLabel
+  translation: "Taal"
+- id: gcseLabelShort
+  translation: "Zoeken"
+- id: gcseLabelLong
+  translation: "Zoek {{ .Site.Title }}"
+- id: gcseClose
+  translation: "Sluiten"
+
+# Staticman
+- id: noComment
+  translation: "Geen commentaar"
+- id: oneComment
+  translation: "reactie"
+- id: moreComment
+  translation: "reacties"
+- id: useMarkdown
+  translation: "Je kunt Markdown-syntax gebruiken"
+- id: yourName
+  translation: "Jouw naam"
+- id: yourEmail
+  translation: "Jouw e-mailadres"
+- id: yourWebsite
+  translation: "Jouw website"
+
+# Delayed Disqus
+- id: show
+  translation: "Laat"
+- id: comments
+  translation: "reacties zien" 
+
+# Related posts
+- id: seeAlso
+  translation: "Zie ook"

@@ -1,0 +1,13 @@
+{{ if or .Params.socialShare (and .Site.Params.socialShare (ne .Params.socialShare false)) }}
+<!-- Social Share Button HTML -->
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      <!-- Twitter -->
+      <li>
+        <a href="//twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}&amp;via={{ .Site.Author.twitter }}" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  {{ end }}

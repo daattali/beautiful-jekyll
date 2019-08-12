@@ -1,0 +1,91 @@
+{{- if eq .Kind "taxonomyTerm" }}
+  {{- range $key, $value := .Data.Terms.ByCount }}
+    {{- $.Scratch.Add "most_used" (slice $value.Name) }}
+  {{- end }}
+  {{- if not ($.Scratch.Get "most_used") }}
+    {{- $description := printf "A full overview of all pages with %s, ordered by %s" .Data.Plural .Data.Singular | truncate 180 }}
+    {{- $.Scratch.Set "Description" $description }}
+  {{- else }}
+    {{- $description := printf "A full overview of all pages with %s, ordered by %s, such as: %s" .Data.Plural .Data.Singular ( delimit ( $.Scratch.Get "most_used" ) ", " ", and " ) | truncate 180 }}
+    {{- $.Scratch.Set "Description" $description }}
+  {{- end }}
+
+  {{- $title := printf "Overview of all pages with %s, ordered by %s" .Data.Plural .Data.Singular }}
+  {{- $.Scratch.Set "Title" $title }}
+{{- else if eq .Kind "taxonomy" }}
+  {{- $description := printf "Overview of all pages with the %s #%s, such as: %s" .Data.Singular $.Title ( index .Pages 0).Title | truncate 160 }}
+  {{- $.Scratch.Set "Description" $description }}
+
+  {{- $title := printf "Overview of all pages with the %s #%s" .Data.Singular $.Title }}
+  {{- $.Scratch.Set "Title" $title }}
+{{- else }}
+  {{- $.Scratch.Set "Description" ( .Description | default .Params.subtitle | default .Summary ) }}
+  {{- $.Scratch.Set "Title" ( .Title | default .Site.Title ) }}
+{{- end }}
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- Site Title, Description, Author, and Favicon -->
+{{- with ($.Scratch.Get "Title") }}
+  <title>{{ . }} - {{ $.Site.Title }}</title>
+  <meta property="og:title" content="{{ . }}" />
+  <meta name="twitter:title" content="{{ . | truncate 70 }}" />
+{{- end }}
+{{- with ($.Scratch.Get "Description") }}
+  <meta name="description" content="{{ . }}">
+  <meta property="og:description" content="{{ . }}">
+  <meta name="twitter:description" content="{{ . | truncate 200 }}">
+{{- end }}
+{{- with .Site.Author.name }}
+  <meta name="author" content="{{ . }}"/>
+{{- end }}
+{{- partial "seo/main.html" . }}  
+{{- with .Site.Params.favicon }}
+  <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+{{- end -}}
+<!-- Social Media Tags -->
+{{- with .Params.share_img | default .Params.image | default .Site.Params.logo }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+{{- end }}
+  <meta name="twitter:card" content="summary" />
+{{- with .Site.Author.twitter }}
+  <meta name="twitter:site" content="@{{ . }}" />
+  <meta name="twitter:creator" content="@{{ . }}" />
+{{- end }}
+{{- with .Site.Params.fb_app_id }}
+  <meta property="fb:app_id" content="{{ . }}" />
+{{- end }}
+  <meta property="og:url" content="{{ .URL | absLangURL }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+<!-- Hugo Version number -->
+  {{ .Hugo.Generator -}}
+<!-- Links and stylesheets -->
+  <link rel="alternate" href="{{ "index.xml" | absLangURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ "css/main.css" | absURL }}" />
+  {{- if .Site.Params.staticman -}}
+  <link rel="stylesheet" href="{{ "css/staticman.css" | absURL }}" />
+  {{- end -}}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  {{- if .Site.Params.useHLJS }}
+  <link rel="stylesheet" href="{{ "css/highlight.min.css" | absURL }}" />
+  {{- else -}}
+  <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" />
+  {{- end -}}
+  <link rel="stylesheet" href="{{ "css/codeblock.css" | absURL }}" />
+  
+  {{- if .Site.Params.staticman.recaptcha -}}
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  {{- end -}}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+{{- partial "head_custom.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}

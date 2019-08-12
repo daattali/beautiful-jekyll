@@ -1,0 +1,258 @@
+---
+title: Snakes, ladder, dplyr and purrr
+author: ~
+date: '2016-05-30'
+slug: snakes-ladders-dplyr-purrr
+categories: []
+tags: ['purrr', 'dplyr']
+type: 'post'
+subtitle: ''
+image: ''
+---
+
+
+
+<p>On the weekend I was playing snakes and ladders with my sons. Since it’s a game without any element of skill, and relies completely on the roll of the dice, I haven’t played the game for about as long as I can remember. The first game we played was over pretty quickly, but the second lasted for what seemed like an eternity, and well past the endurance of the boys’ attention span. As one of us got near the end, we landed on the final snake.</p>
+<p>Frustration waxed; interest waned.</p>
+<p>Eventually I employed the parental right of rigging the dice throw so that the game mercifully ended, and we could move on to something a bit more interesting (like <a href="http://www.amazon.com/Educational-Insights-2953-Castle-Logix/dp/B000NNLNW8">Castle Logix</a> - really clever design).</p>
+<p>Anyway, I began to wonder what the probability was of playing a game that went on that long. Since there is no human decision (skill) involved, it should be reasonably straightforward to run some simulations and get some answers.</p>
+<p>I’ve also been wanting to get a bit of practice with <a href="https://github.com/hadley/purrr/">purrr</a>, Hadley’s functional programming package. So, what follows is at times probably more complex than it could be, but represents my learning process, and is one approach to managing data in a bunch of nicely organised lists.</p>
+<p>The first step was to represent the game board we were using. You’ll notice it’s heavier on snakes than ladders!</p>
+<p>Firstly to define the snake and ladder positions and effects:</p>
+<pre class="r"><code>#Define the starting location of the snakes
+snakes &lt;- data_frame(square = c(19, 24, 28, 34, 40, 49, 55, 59),
+                     effect = c(-15, -15, -15, -14, -24, -12, -13, -14))
+#And the ladders
+ladders &lt;- data_frame(square = c(2, 6, 22, 30, 38, 43),
+                      effect = c(13, 15, 14, 11, 20, 14))
+
+snakes_ladders &lt;- bind_rows(snake = snakes, ladder = ladders, .id = &quot;type&quot;)</code></pre>
+<p>Next to define the board layout - game play progresses in serpentine fashion (appropriately). This includes the dimensions, the order of progression through the board, and adding the snakes and ladders.</p>
+<pre class="r"><code>board_layout &lt;- data_frame(square = 1:60, y = rep(1:10, each = 6)) %&gt;% 
+  group_by(y) %&gt;% 
+  mutate(x = ifelse(y %% 2 == 1,
+                    1:6, 6:1))
+
+#Add snakes and ladders to the board
+game_board &lt;- board_layout %&gt;% 
+  left_join(snakes_ladders) %&gt;% 
+  mutate(effect = ifelse(is.na(effect), 0, effect))
+
+#Get the finish position of snakes and ladders, and tidy
+effects_df &lt;- snakes_ladders %&gt;% 
+  mutate(id = 1:nrow(.),
+         result_square = square + effect) %&gt;% 
+  gather(start_result, square, square, result_square) %&gt;% 
+  select(square, id, type) %&gt;% 
+  left_join(game_board %&gt;% select(-type))</code></pre>
+<p>To check it’s all making sense, I’ll compare the virtual board with the physical one. Notice I changed the numbering since the board makers decided to use zero-based numbering…</p>
+<p><img src="/post/2016-05-30-snakes-ladders-dplyr-purrr_files/figure-html/make_board_2-1.png" width="1350" style="display: block; margin: auto auto auto 0;" /></p>
+<div class="figure">
+<img src="real_board.jpg" alt="The actual ‘board’" />
+<p class="caption">The actual ‘board’</p>
+</div>
+<p>Maybe not a marketing success, but functionally the same.</p>
+<p>Next I needed to make some functions to simulate the players and the turns each players takes.</p>
+<p>There would be lots of ways of doing this, but I decided to represent each player as a list object made up of vectors representing the position in which the player finished each turn, and another vector representing the full path they took (including traversing snakes and ladders). Each game would then be structured as a list of the player lists.</p>
+<p>Since I can’t predict the number of turns, I can’t pre-allocate the vector length, and so we enter the second circle of the <a href="http://www.burns-stat.com/pages/Tutor/R_inferno.pdf">R Inferno</a> by growing these objects, but since they’re pretty small I hope you’ll forgive me.</p>
+<pre class="r"><code>#A function to make a list of players
+make_players &lt;- function(n) {
+  players &lt;- map(1:n, function(x) list(sq = 1, path = 1)) %&gt;% 
+    setNames(paste0(&quot;player&quot;, 1:n))
+}
+
+#A function to represent a turn
+turn &lt;- function(player, effects) {
+  sq_i &lt;- length(player[[&quot;sq&quot;]])
+  path_i &lt;- length(player[[&quot;path&quot;]])
+  roll &lt;- sample(1:6, 1)
+  sq_temp &lt;- player[[&quot;sq&quot;]][sq_i] + roll
+  effect &lt;- effects[sq_temp]
+  if(sq_temp &lt; 60) sq_new &lt;- sq_temp + effect
+  else sq_new &lt;- 60
+  player[[&quot;sq&quot;]][sq_i + 1] &lt;- sq_new
+  player[[&quot;path&quot;]][path_i + 1] &lt;- ifelse(sq_temp &gt; 60, 60, sq_temp)
+  if(effect != 0 &amp; !is.na(effect)) player[[&quot;path&quot;]][path_i + 2] &lt;- sq_new
+  return(player)
+}</code></pre>
+<p>I’ll check the functions by making a very simple simulation:</p>
+<pre class="r"><code>players &lt;- make_players(2)
+players</code></pre>
+<pre><code>## $player1
+## $player1$sq
+## [1] 1
+## 
+## $player1$path
+## [1] 1
+## 
+## 
+## $player2
+## $player2$sq
+## [1] 1
+## 
+## $player2$path
+## [1] 1</code></pre>
+<pre class="r"><code>#Each player starts at square 1
+
+turn(players[[1]], game_board$effect)</code></pre>
+<pre><code>## $sq
+## [1] 1 5
+## 
+## $path
+## [1] 1 5</code></pre>
+<pre class="r"><code>#The function is returning player1&#39;s list after their first turn</code></pre>
+<p>Since the path vectors of the different players aren’t necessarily the same lengths (since it will be longer for each snake/ladder), I needed to be able to pad the vectors with NA. This is something that doesn’t seem to have a straightforward, canon approach, so I made a little function to deal with it.</p>
+<pre class="r"><code>pad_na &lt;- function(vec, length) {
+  if(length(vec) &lt; length) vec[(length(vec) + 1):length] &lt;- NA
+  return(vec)
+}
+
+pad_list_na &lt;- function(list) {
+  max_length &lt;- max(unlist(map(list, length)))
+  list_out &lt;- map(list, pad_na, length = max_length)
+}</code></pre>
+<p>And now the function to actually simulate a game. This needed to take the number of players and board layout, give each player a turn until one of them reached the finish, and then return each player’s locations throughout the game, as well as their path.</p>
+<p>This brings me to list columns - the element of dplyr’s <code>do</code> and purrr output that I’ve found most challenging in the couple of months I’ve played around with them. List columns are incredibly powerful, meaning you can store dataframes, models, figures, anything. So instead of having a pile of lists cluttering up the workspace, these objects stay neatly arranged with the structure from which they were created.</p>
+<p>That being said, trying to deal with those columns has made me feel like:</p>
+<p>And I’m clearly not the only one, given some of the conversations that have happened in #rstats</p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+<a href="https://twitter.com/noamross"><span class="citation">@noamross</span></a> <a href="https://twitter.com/polesasunder"><span class="citation">@polesasunder</span></a> I am actually planning to teach dplyr::do() tomorrow and I'm, like, what do people do with these list-columns?!? 😯
+</p>
+— Jenny Bryan (<span class="citation">@JennyBryan</span>) <a href="https://twitter.com/JennyBryan/status/653766755010019329">October 13, 2015</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>So far I have relied more or less completely on <a href="https://github.com/dgrtwo/broom">broom</a> (which is brilliant in lots of situations) for dealing with list output from <code>dplyr::do()</code>, but there’s often a lack of flexibility. I think this is where purrr is the knight in shining armour.</p>
+<p>In this game simulation function each player’s list takes a turn until one of them reaches the finish. The lists are then transposed to allow each players position and path to be made into a dataframe, and these dataframes are then returned in a list. Using <code>mutate</code> lets me add the list for each simulation into a new column.</p>
+<pre class="r"><code>sim_game &lt;- function(n, board) {
+  players &lt;- make_players(n)
+  while(max(unlist(flatten(players))) &lt; max(board$square)) {
+    for(i in 1:n) {
+      players[[i]] &lt;- turn(players[[i]], board$effect)
+    }
+  }
+  players_tr &lt;- players %&gt;% 
+    transpose()
+  sq_df &lt;- players_tr[[&quot;sq&quot;]] %&gt;%
+    as_data_frame %&gt;%
+    gather(player, square) %&gt;%
+    mutate(player = sub(&quot;player&quot;, &quot;&quot;, player))
+  path_df &lt;- players_tr[[&quot;path&quot;]] %&gt;% 
+    pad_list_na %&gt;% 
+    as_data_frame %&gt;% 
+    gather(player, square) %&gt;% 
+    mutate(player = as.numeric(sub(&quot;player&quot;, &quot;&quot;, player)))
+  # return(sq_df)
+  return(list(sq = sq_df, path = path_df))
+}</code></pre>
+<p>The structure of the complete simulation can then be setup in dataframe, where each row represents the parameters to be used for each game. I’ll run 2500 simulations for 2, 3, and 4 players. I get the output column (recall it’s a list of two dataframes), and then separate these out into their own columns. That’s inefficient, but convenient in this case. I’m also calculating the number of turns for each game and making a new column for that as well.</p>
+<pre class="r"><code>game_df &lt;- data_frame(game = rep(1:2500, 3), players = rep(2:4, each = 2500)) %&gt;% 
+  rowwise() %&gt;% 
+  mutate(output = map(players, sim_game, board = game_board),
+         sq = list(sq = output[[1]]),
+         path = list(path = output[[2]]),
+         n = nrow(sq)/players - 1)
+game_df</code></pre>
+<pre><code>## Source: local data frame [7,500 x 6]
+## Groups: &lt;by row&gt;
+## 
+## # A tibble: 7,500 x 6
+##     game players output           sq                path                  n
+##    &lt;int&gt;   &lt;int&gt; &lt;list&gt;           &lt;list&gt;            &lt;list&gt;            &lt;dbl&gt;
+##  1     1       2 &lt;named list [2]&gt; &lt;tibble [28 x 2]&gt; &lt;tibble [40 x 2]&gt;    13
+##  2     2       2 &lt;named list [2]&gt; &lt;tibble [46 x 2]&gt; &lt;tibble [64 x 2]&gt;    22
+##  3     3       2 &lt;named list [2]&gt; &lt;tibble [36 x 2]&gt; &lt;tibble [46 x 2]&gt;    17
+##  4     4       2 &lt;named list [2]&gt; &lt;tibble [22 x 2]&gt; &lt;tibble [30 x 2]&gt;    10
+##  5     5       2 &lt;named list [2]&gt; &lt;tibble [12 x 2]&gt; &lt;tibble [18 x 2]&gt;     5
+##  6     6       2 &lt;named list [2]&gt; &lt;tibble [34 x 2]&gt; &lt;tibble [40 x 2]&gt;    16
+##  7     7       2 &lt;named list [2]&gt; &lt;tibble [26 x 2]&gt; &lt;tibble [34 x 2]&gt;    12
+##  8     8       2 &lt;named list [2]&gt; &lt;tibble [44 x 2]&gt; &lt;tibble [54 x 2]&gt;    21
+##  9     9       2 &lt;named list [2]&gt; &lt;tibble [16 x 2]&gt; &lt;tibble [20 x 2]&gt;     7
+## 10    10       2 &lt;named list [2]&gt; &lt;tibble [32 x 2]&gt; &lt;tibble [40 x 2]&gt;    15
+## # ... with 7,490 more rows</code></pre>
+<p>So I now have a dataframe with the outcomes from 7500 snakes and ladders simulations, as well as general satisfaction with how I’ve spent the last several hours.</p>
+<p>Obviously the next step is to take a look at how those probabilities have turned out:</p>
+<pre class="r"><code>ggplot(game_df, aes(n)) + geom_density(aes(fill = factor(players)), alpha = 0.5) +
+  scale_fill_brewer(type = &#39;qual&#39;) +
+  theme(panel.grid = element_blank(), axis.ticks = element_blank(),
+        axis.line = element_line(size = 1, colour = &quot;black&quot;)) +
+  geom_segment(aes(x = 40, xend = 40, y = 0.05, yend = 0.0125), arrow = arrow(angle = 20), size = 1.5) +
+  annotate(geom = &quot;text&quot;, x = 40, y = 0.06, label = &quot;Our game&quot;)</code></pre>
+<p><img src="/post/2016-05-30-snakes-ladders-dplyr-purrr_files/figure-html/output_1-1.png" width="1350" style="display: block; margin: auto auto auto 0;" /></p>
+<p>I guess it’s pretty much as you’d expect based on the game’s format - there’s a minimum possible number of turns required, giving the left censoring, and no theoretical upper limit. It turns out there’s a semi-interesting <a href="https://en.wikipedia.org/wiki/Snakes_and_Ladders">Wikipedia article</a>, with a section about the mathematics of the game, if you’re dying to go into this further.</p>
+<p>I’m more interested in using the dataframe structures to be able to extract useful information from this type of exercise. Because we’ve got all the simulation and output data organised in this way, it’s actually pretty straightforward.</p>
+<p>As an exercise, I’ll plot the games with the three highest and lowest number of turns for each number of players.</p>
+<p>First I’ll make a function to produce a figure describing the games (along with creating some offsets so that player paths don’t overlap so much)</p>
+<pre class="r"><code>#Define the offsets for each combination of players
+offsets &lt;- map(2:4, 
+               function(x) return(data_frame(player = 1:x, players = x))) %&gt;% 
+  bind_rows() %&gt;% 
+  group_by(players) %&gt;% 
+  mutate(offset = scales::rescale(player, c(-0.15, 0.15)))
+
+make_game_p &lt;- function(game, game_board, offsets) {
+  path_dat &lt;- game %&gt;%  
+    mutate(players = length(unique(player))) %&gt;% 
+    left_join(offsets) %&gt;% 
+    left_join(game_board)
+p &lt;-  ggplot(game_board, aes(x, y)) + 
+    geom_tile(aes(fill = type), colour = &quot;black&quot;, alpha = 0.5) +
+    geom_path(data = path_dat, 
+              aes(x = x + offset, y = y + offset, colour = factor(player)), 
+              arrow = arrow(angle = 15), show.legend = FALSE, size = 2) +
+    scale_color_viridis(discrete = TRUE) +
+    scale_fill_manual(values = c(&quot;#006DDB&quot;, &quot;#920000&quot;), na.value = &quot;#669999&quot;) +
+    theme(panel.background = element_rect(fill = &quot;transparent&quot;),
+          axis.text = element_blank(), axis.ticks = element_blank(),
+          axis.title = element_blank(),
+          legend.title = element_blank())
+return(p)
+}</code></pre>
+<p>I can test it by applying it to random game:</p>
+<pre class="r"><code>game_df %&gt;% 
+  ungroup %&gt;% 
+  filter(row_number() == 123) %&gt;% 
+  select(path) %&gt;% 
+  unnest() %&gt;% 
+  make_game_p(game_board, offsets)</code></pre>
+<p><img src="/post/2016-05-30-snakes-ladders-dplyr-purrr_files/figure-html/figure_test-1.png" width="864" /></p>
+<p>Seems to be working pretty well. Onto the exercise. Here is an example of storing the figure output in a list column:</p>
+<pre class="r"><code>extremes &lt;- game_df %&gt;% 
+  group_by(players) %&gt;% 
+  arrange(n) %&gt;% 
+  filter(row_number() %in% c(1:3, (n() - 2):n())) %&gt;% 
+  group_by(players, game) %&gt;% 
+  mutate(path_figure = purrr::map(path, make_game_p, game_board = game_board, offsets = offsets))
+
+extremes %&gt;% 
+  select(game, players, path_figure) #Otherwise the output is too wide</code></pre>
+<pre><code>## # A tibble: 18 x 3
+## # Groups:   players, game [18]
+##     game players path_figure
+##    &lt;int&gt;   &lt;int&gt; &lt;list&gt;     
+##  1   127       2 &lt;gg&gt;       
+##  2   180       2 &lt;gg&gt;       
+##  3   202       2 &lt;gg&gt;       
+##  4    22       3 &lt;gg&gt;       
+##  5    48       3 &lt;gg&gt;       
+##  6   113       3 &lt;gg&gt;       
+##  7    10       4 &lt;gg&gt;       
+##  8    39       4 &lt;gg&gt;       
+##  9   151       4 &lt;gg&gt;       
+## 10  1446       4 &lt;gg&gt;       
+## 11   316       4 &lt;gg&gt;       
+## 12  2460       4 &lt;gg&gt;       
+## 13   367       3 &lt;gg&gt;       
+## 14  1164       3 &lt;gg&gt;       
+## 15   171       3 &lt;gg&gt;       
+## 16   867       2 &lt;gg&gt;       
+## 17  1480       2 &lt;gg&gt;       
+## 18  1011       2 &lt;gg&gt;</code></pre>
+<p>By looking in the path_figure column, you can see I’ve now got a figure per row, which you’ll remember represents one simulation.</p>
+<p>This is obviously something of a contrived example, but I think I’ll find plenty of use for this functionality. It’s probably worth mentioning that it’s not necessary to use <code>mutate()</code> to add the data to the dataframe. A separate object can be created, or other functions like <code>walk()</code> can be used for their side effects, such as saving each plot.</p>
+<p>In this case, we can use the figure column to pass directly into <code>arrangeGrob()</code>, for example, to arrange:</p>
+<pre class="r"><code>extreme_plots &lt;- gridExtra::arrangeGrob(grobs = extremes$path_figure, nrow = 6)
+grid::grid.draw(extreme_plots)</code></pre>
+<p><img src="/post/2016-05-30-snakes-ladders-dplyr-purrr_files/figure-html/grid_draw-1.png" width="672" /></p>
+<p>This is clearly not an ideal format, but let’s leave that for another day.</p>
+<p>While this exercise took me longer than I thought, at the end of it I think I’m much more comfortable working with list columns, and can see that I’ll be applying them much more in my work.</p>

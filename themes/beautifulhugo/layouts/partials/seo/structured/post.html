@@ -1,0 +1,47 @@
+<script type="application/ld+json"> {
+  "@context" : "http://schema.org",
+  "@type" : "BlogPosting",
+  {{ if .Params.categories }}{{ range .Params.categories }}"articleSection" : "{{ . }}",{{ end }}{{ end }}
+  "name" : "{{ .Title | safeJS }}",
+  "headline" : "{{ .Title | safeJS }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "description" : "{{ if .Description }}{{ .Description | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify  }}{{ end }}{{ end }}",
+  "inLanguage" : "{{ .Lang }}",
+  {{ if .Params.author -}}
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Params.author }}"
+  },
+  {{- else if .Site.Author.name -}}
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Author.name }}"
+  },
+  {{- end }}
+  "copyrightYear" : "{{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}",
+  {{ if not .PublishDate.IsZero -}}
+    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  {{- else if not .Date.IsZero -}}
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  {{- end }}
+  {{ with .Lastmod -}}
+    "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  {{- end }}
+  "url" : "{{ .Permalink }}",
+  "wordCount" : "{{ .WordCount }}",
+  "image" : "{{ .Site.Params.logo | absURL }}",
+  "keywords" : [ "{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}" ],
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "{{ .Site.BaseURL }}",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "{{ .Site.Params.logo | absURL }}",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+} </script>
