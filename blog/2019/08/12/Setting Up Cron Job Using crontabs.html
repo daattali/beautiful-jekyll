@@ -1,0 +1,62 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+</head>
+<body>
+<a name=1></a><b>Setting Up Cron Job Using  <i>crontab</i></b><b>: <br/></b> <br/> <br/><b>Step 1: </b>Open a Terminal Window (Command Line) in Linux. <br/> <br/><b>Step 2: </b>The following is a list of cron directories:
+<pre>
+•  /etc/cron.hourly
+•  /etc/cron.daily
+•  /etc/cron.weekly
+•  /etc/cron.monthly
+</pre>
+Copy your shell script ‘script.sh` or ‘script’ into one of the directories above.  <br/>If you need to run the script hourly, place your script file in the “cron.hourly” <br/>folder. For daily, place it inside the “cron.daily” and so forth.  <br/>
+ <br/><b>Step 3: </b>Give the shell script the correct permission. For example, if script is called <br/>“script.sh”, set permission as follows: <br/> <br/><i>cd /etc/cron.daily/ <br/>chmod 755 script.sh <br/> <br/></i><b>Step 4: </b>Add new cron job to crontab: <br/> <br/>crontab –e <br/> <br/>This opens vi editor for you. Create the cron command using the following syntax: <br/> <br/>
+1.  The number of minutes after the hour (0 to 59)  <br/>2.  The hour in military time (24 hour) format (0 to 23)  <br/>3.  The day of the month (1 to 31)  <br/>4.  The month (1 to 12)  <br/>5.  The day of the week(0 or 7 is Sun, or use name)  <br/>6.  The command to run  <br/>
+More graphically they would look like this:
+<pre>
+*     *     *     *     *  Command to be executed
+-     -     -     -     -
+|     |     |     |     |
+|     |     |     |     +----- Day of week (0-7)
+|     |     |     +------- Month (1 - 12)
+|     |     +--------- Day of month (1 - 31)
+|     +----------- Hour (0 - 23)
++------------- Min (0 - 59)
+</pre>
+An example command would be <b>“0 0 * * * /etc/cron.daily/script.sh”</b>. This <br/>would mean that the shell script will exactly execute at midnight every <br/>night.  <br/>
+<hr/>
+<a name=2></a> <br/>To save the changes to the crontab that you just made, hit ESC key, and <br/>then type <b>:w</b> followed by <b>:q</b> to exit.  <br/> <br/><b>To list existing cron jobs: <br/> <br/></b> <br/>
+ <br/>
+crontab –l <br/>
+ <br/><b>To remove an existing cron job: <br/> </b><br/>
+•  <b>Enter: </b>crontab –e<b> <br/></b>•  Delete the line that contains your cron job <br/>•  Hit ESC &gt; :w &gt; :q<b> <br/> </b><br/>
+<hr/>
+</body>
+</html>

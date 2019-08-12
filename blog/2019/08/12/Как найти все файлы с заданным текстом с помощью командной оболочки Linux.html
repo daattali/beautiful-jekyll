@@ -1,0 +1,2373 @@
+﻿<!DOCTYPE html><html class=" ya-page_js_yes" lang="ru"><head>
+
+<title>Как найти все файлы с заданным текстом с помощью командной оболочки Linux</title>
+<meta name="description" content="В этой статье приведены некоторые полезные советы о том, как найти все файлы в любом конкретном каталоге или во всей файловой системе, содержащие любое заданное слово или строку.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style data-savepage-href="/style2.css" type="text/css">
+/* any: { */
+
+/* todo: все урлы в полный формат! */
+
+#obr { margin:0; }
+#obr div { text-indent: 4em; color: red; font-weight:bold; font-size:110%; text-align:justify; padding:2%; width:96%; }
+
+.ac { float: left; text-align: center; }
+.al { float: left; text-align: left; }
+.ar { float: left; text-align: right; }
+.aj { float: left; text-align: justify; }
+
+.sbe { float: left; width: 100%; border-bottom: solid 1px gray; margin: 5px 0;}
+.sbi { float: right; padding: 5px; vertical-align: middle;}
+.sbi h4 { position: relative; top: 6px; color: black; margin: 0; }
+
+.adc { text-align: center; }
+.adl { text-align: left; }
+.adr { text-align: right; }
+
+
+#mns:before { content:"Уважаемый посетитель, у вас отключен JavsScript, из-за этого блокируется отображение рекламы. Но за счет рекламы оплачивается работа"
+"авторов и переводчиков. Если вы хотите регулярно читать новые статьи и переводы на нашем сайте, пожалуйста, включите JavaScript. Вывод рекламы на сайте "
+"оптимизирован и не должен создавать проблем даже при использовании узких каналов связи.";}
+
+#mab:before { content:"Уважаемый посетитель, вероятно у вас блокируется вывод рекламы. Но за счет рекламы оплачивается "
+"работа авторов и переводчиков. Если вы хотите регулярно читать новые статьи и переводы на нашем сайте, пожалуйста, сделайте исключение "
+"для нашего сайта в наcтройках блокирующего плагина. Вывод рекламы на сайте оптимизирован и не должен создавать "
+"проблем даже при использовании узких каналов связи.";}
+
+.ib {
+	display: inline-block;
+/*	border: solid 2px blue; */
+}
+
+ h1, h2  { text-align: center; }
+
+/* h1, h2, h3, h4, h5, h6  { text-align: center; } */
+
+.w10  { float: left; width: 10%; box-sizing: border-box; }
+.w20  { float: left; width: 20%; box-sizing: border-box; }
+.w30  { float: left; width: 30%; box-sizing: border-box; }
+.w40  { float: left; width: 40%; box-sizing: border-box; }
+.w50  { float: left; width: 50%; box-sizing: border-box; }
+.w60  { float: left; width: 60%; box-sizing: border-box; }
+.w70  { float: left; width: 70%; box-sizing: border-box; }
+.w80  { float: left; width: 80%; box-sizing: border-box; }
+.w90  { float: left; width: 90%; box-sizing: border-box; }
+.w100 { float: left; width: 100%; box-sizing: border-box; }
+
+.tab_row { display: table-row; }
+
+a:link, a:visited, a:active {
+	font-size: 12px;
+	color: #1179C1;
+	font-family: Verdana;
+	font-weight: normal;
+}
+
+a:hover { color: #F30303;}
+
+.cmt_del input {
+	border: none;
+	background: transparent;
+	font-size: 12px;
+	color: #1179C1;
+	font-family: Verdana;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.cmt_del input:hover { color: #F30303;}
+
+.err_msg {
+	color: red;
+}
+
+#page_stat {
+	text-align: center;
+}
+
+#page_stat table {
+	display: inline-block;
+	text-align: right;
+}
+
+
+/* } */
+html {
+	height: 100%;
+}
+
+body {
+	width: auto;
+	height: 100%;
+	font-size: 12px;
+	background: white;
+	font-family: Verdana;
+	/* alink="#F26D00" link="#0857A6" vlink="#0857A6"; */
+}
+
+.center {
+	text-align: center;
+}
+
+/* header: { */
+header {
+	display: block;
+	width: 100%;
+	height: 88px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#inhead {
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #D3EAFA;
+	background: linear-gradient(to top,#D3EAFA,#FFFFFF,#FFFFFF);
+}
+
+#logo {
+	display: table-cell;
+	text-align: left;
+/*	background: url("/img/logo.jpg"); */
+	background-repeat: no-repeat;
+	height: 88px;
+	max-width: 468px;
+}
+
+#cban {
+	display: table-cell;
+	/* text-align: justify; */
+	text-align: center;
+}
+
+#rban {
+	display: table-cell;
+	text-align: right;
+	vertical-align: middle;
+/*
+	vertical-align: bottom;
+	vertical-align: middle;
+	vertical-align: top;
+ */
+}
+
+#rban a {
+	display: inline-block;
+}
+
+/* } hrader: */
+
+/* gnr_menu: { */
+
+#menu3 a {
+	font-size: 80%;
+}
+
+.small {
+	font-size: 66%;
+}
+
+
+.menu_box {
+	z-index: 1;
+	display: table;
+	width: 100%;
+	margin: 0 0 1em 0 ;
+	padding: 0;
+/*	background: white; */
+	background:  #0067b1;
+	text-decoration: none;
+	box-shadow: 2px 2px 2px;
+	border-radius: 5px;
+	overflow: visible;
+	/*
+	overflow: hidden;
+	box-sizing: border-box;
+	box-sizing: content-box;
+	border: solid 2px red;
+	*/
+}
+
+/*
+.menu3_box {
+	z-index: 1;
+	display: table;
+	width: 100%;
+	margin: 0 0 1em 0 ;
+	padding: 0;
+	background:  #0067b1;
+	text-decoration: none;
+	box-shadow: 2px 2px 2px;
+	border-radius: 5px;
+	overflow: visible;
+}
+*/
+
+.menu_box a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.menu_box li {
+	z-index: 0;
+	display: table-cell;
+	text-align: center;
+	padding: 0.7em 0;
+	background:  #0067b1;
+	background: linear-gradient(#0067b1,#004c86);
+	border-left: solid 2px #8CBAD2;
+}
+
+#menu3 li {
+	padding: 0.5em 0;
+}
+
+.menu_box li:hover {
+	z-index: 2;
+	position: relative;
+	top: -5px;
+	left: -5px;
+	transform: scale(1.05,1.07);
+	box-shadow: 2px 2px 2px;
+	border-radius: 5px;
+	/*
+	border: solid 2px #8CBAD2;
+	*/
+}
+
+.menu_box .lbtn {
+	border-left: none;
+	border-radius: 0 0 0 5px;
+}
+
+.menu_box .rbtn {
+	border-radius: 0 0 5px 0;
+}
+
+
+
+/* } */
+
+/* inner: { */
+#inner {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* border-collapse: collapse;    separate border-spacing: 0; */
+	/* border-spacing: 6px; */
+}
+
+.tab_div {
+	float: left;
+	clear: both;
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/* border-collapse: collapse ;  separate. */
+	/* vertical-align: top; */
+}
+
+
+.tab_row {
+	display: table-row;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.tab_cell {
+	position: relative;
+	vertical-align: top;
+	display: table-cell;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.v_aggr {
+	position: relative;
+	display: table-cell;
+	width: auto;
+	background: #E8E8E8;
+	/*
+	*/
+}
+
+.v_sep {
+	position: relative;
+	display: table-cell;
+	width: 12px !important;
+	box-sizing: border-box;
+	vertical-align: top;
+	/*
+	background: blue;
+	*/
+}
+
+.g_sep {
+	position: relative;
+	z-index: 10;
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	padding: 0;
+	margin: 0;
+	/*
+	background: gray;
+	background: green;
+	*/
+}
+
+
+.text_box {
+	position: relative;
+	z-index: 7;
+	display: block;
+	overflow: hidden;
+	border-radius: 5px;
+	box-sizing: border-box;
+	/*
+	overflow: auto;
+	padding: 1em;
+	background: #E8FFE8;
+	border: solid 1px silver;
+	background: #E8FFE8;
+	background: #FFE8E8;
+	*/
+}
+
+
+.h100 {
+	position: absolute;
+	display: table-cell;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	vertical-align: bottom;
+	background: black;
+}
+
+
+.text_head  {
+	width: 100%;
+	font-weight: bold;
+	font-size: 150%; /* добавил kos */
+	color: green; /* добавил kos */
+	background: #D3EAFA;
+	background: linear-gradient(to bottom,#D3EAFA,#FFFFFF,#FFFFFF);
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+	padding: 0.5em 2% 0 2% ;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+.text_header  {  /* добавил kos */
+	width: 100%;
+	font-weight: bold;
+	font-size: 150%; /* добавил kos */
+	color: green; /* добавил kos */
+	background: #D3EAFA;
+	background: linear-gradient(to bottom,#D3EAFA,#FFFFFF,#FFFFFF);
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+	padding: 0.5em 2% 0 2% ;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+
+.text_box h5 {
+	display: block;
+	vertical-align: top;
+	color: red;
+	margin: 0 0.5em;
+	font-weight: bold;
+	font-size: 105%;
+}
+
+.bred {
+	color: red;
+	margin: 0 0.5em;
+	font-weight: bold;
+	font-size: inherit;
+}
+
+.text_box a {
+	text-decoration: none;
+}
+
+.text_box ul {
+	margin: 0;
+	padding: 0;
+}
+
+.text_box ol {
+	margin: 0;
+	padding: 0;
+}
+
+.text_box ul li ul { margin-left: 10px;}
+.text_box ol li ul { margin-left: 10px;}
+.text_box ul li ol { margin-left: 10px;}
+.text_box ol li ol { margin-left: 10px;}
+
+/*
+.text_box ul2 {
+	margin: 10;
+	padding: 10;
+}
+*/
+
+.text_box li {
+	margin: 11px 0;
+	list-style-position: inside;  /* | outside */
+}
+
+
+.text_body  {
+	padding: 11px;
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+.text_body img {
+	text-align: left;
+	box-sizing: content-box;
+}
+
+
+.text_body li { margin: 0.5em 0 0 0; }
+
+.box_frame {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	border: solid 1px silver;
+	border-radius: 5px;
+	/** box-shadow: 2px 2px 2px; */
+	width:  100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.zi3 { z-index: 3; }
+.zi9 { z-index: 9; }
+
+
+/* левая колонка  */
+#left_col {
+	position: relative;
+	display: table-cell;
+	z-index: 1;
+	width: 210px;
+	min-width: 210px;
+	max-width: 210px;
+	text-align: center;
+	background: white;
+	vertical-align: top;
+	/*
+	background: #E8E8FF;
+	*/
+	padding: 0;
+	margin:  0;
+	margin: 0 0 1% 0;
+	margin-bottom: calc(0% + 12px);
+}
+
+#left_col .text_head {
+	z-index: 7;
+	font-size: 105%;
+	vertical-align: top;
+}
+
+
+#left_col li {
+	width: 200px;
+}
+
+.left_ext {
+	position: relative;
+	float: left;
+	width: 100%;
+	opacity: 0.99;
+	z-index: 1;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+#left_up_ext {
+	position: relative;
+	float: left;
+	z-index: 3;
+	display: block;
+	width:  100%;
+	padding: 0;
+	margin:  0;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+#left_up {
+	position: relative;
+	float: left;
+	z-index: 9;
+	display: block;
+	/*
+	background: #FFE8E8;
+	*/
+	width:  100%;
+	background: white;
+	padding: 0;
+	box-sizing: border-box;
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+#left_in_ext {
+	position: relative;
+	float: left;
+	z-index: 3;
+	display: block;
+	width:  100%;
+	padding: 0;
+	margin:  0;
+	box-sizing: border-box;
+}
+
+#left_in {
+	position: relative;
+	float: left;
+	display: block;
+	background: white;
+	z-index: 9;
+	left: 0;
+	/*
+	background: #E0FFFF;
+	*/
+	width:  100%;
+	padding: 0;
+	box-sizing: border-box;
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	border-radius: 5px;
+}
+
+#left_ext_fr {
+	z-index: 1;
+	width: 100%;
+	left: 0px;
+	top:  0px;
+	box-sizing: border-box;
+	/*
+	border-color: red;
+	border-color: red;
+	background: blue;
+	*/
+}
+
+#left_cover_up {
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: -1px;
+	width:  103%;
+	height: 18px;
+	box-sizing: border-box;
+	background: white;
+}
+
+
+#left_cover_dn {
+	position: absolute;
+	z-index: 2;
+	top: 18px;
+	left: -1px;
+	width:  103%;
+	height: 100%;
+	background: white;
+	box-sizing: border-box;
+}
+
+
+#left_up_fr {
+	z-index: 3;
+	width: 100%;
+	left: 0px;
+	top:  0px;
+	box-sizing: border-box;
+	/*
+	*/
+}
+
+ .googleblock1 {
+    width: 200px;
+    background: #ccc;
+/*    padding: 3px; */
+    border: solid 1px black;
+    float: left;
+   }
+/* основная колонка */
+
+.main_uno {
+	position: relative;
+	float: left;
+	clear: both;
+ 	width: 100%;
+}
+
+.main_duo {
+	position: relative;
+	float: left;
+	clear: none;
+	width: 49.5%;
+	width: calc(50% - 6px);
+}
+
+
+.main_exc {
+	position: relative;
+	float: left;
+	width: 100%;
+	clear: none;
+}
+
+
+#main_1fr {
+	z-index: 2;
+	left: 0px;
+	top:  0px;
+	width: 49.5%;
+	width: calc(50% - 6px);
+	border-width: 1px;
+	/*
+	background: red;
+	*/
+}
+
+#main_2fr {
+	z-index: 2;
+	left: 0px;
+	top:  0px;
+	left: 50.5%;
+	left: calc(50% + 6px);
+	width: 49.5%;
+	width: calc(50% - 6px);
+	border-width: 1px;
+	/*
+	border-color: blue;
+	background: blue;
+	*/
+}
+
+
+#mw_fr {
+	z-index: 1;
+	/*
+	border-color: green;
+	border-width: 4px;
+	*/
+}
+
+
+.fv_sep {
+	position: relative;
+	float: left;
+	clear: none;
+	width: 1%;
+	width: calc(0% + 2px);
+	background: red;
+}
+
+.fg_sep {
+	position: relative;
+	float: left;
+	height: 1%;
+	clear: both;
+	height: (0% + 12px);
+	/*
+	background: black;
+	*/
+}
+
+
+.main_cover_up {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 101%;
+	/* width: calc(100% + 6px); */
+	height: 18px;
+	box-sizing: border-box;
+	background: white;
+}
+
+.main_cover_dn {
+	position: absolute;
+	z-index: 2;
+	top: 14px;
+	left: -2px;
+	width:  101%;
+	height: 100%;
+	box-sizing: border-box;
+	background: white;
+	/*
+	border-color: red;
+	background: red;
+	background: red;
+	background: blue;
+	*/
+}
+
+.main_cover_2up {
+	position: absolute;
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	width:  101%;
+	height: 18px;
+	margin: 0 0 1% 1%;
+	margin-left: calc(0% + 12px);
+	box-sizing: border-box;
+	background: white;
+}
+
+.main_cover_2dn {
+	position: absolute;
+	z-index: 2;
+	top: 18px;
+	left: -2px;
+	width:  101%;
+	height: 100%;
+	box-sizing: border-box;
+	background: white;
+	margin: 0 0 1% 1%;
+	margin-left: calc(0% + 12px);
+	/*
+	border-color: red;
+	background: red;
+	background: red;
+	background: blue;
+	*/
+}
+
+
+
+
+
+#main_fr1 {
+	width: 49%;
+	left:   1%;
+}
+
+#main_fr2 {
+	width: 49%;
+	left:  51%;
+}
+
+#main_fr3 {
+	z-index: 1;
+	width: 100%;
+}
+
+#main_fr1a {
+	width: 49.7%;
+	left:   0;
+}
+
+#main_fr1b {
+	width: 49.7%;
+	left:  50.3%;
+}
+
+
+#main_col {
+	vertical-align: top;
+	position: relative;
+	display: table-cell;
+	/*
+	background: #D8FFD8;
+	*/
+	padding: 0;
+	margin:  0;
+}
+
+.mdn {
+	margin: 0 0 1% 0;
+	margin-bottom: calc(0% + 12px);
+}
+
+#main_ext {
+	vertical-align: top;
+	position: relative;
+	/*
+	background: yellow;
+	background: #D8D8D8;
+	*/
+	float: left;
+	clear: both;
+	display: block;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.main_c1 {
+	width: 100%;
+	margin:  0;
+}
+
+.main_c2a {
+	width: 49.7%;
+	margin: 0;
+}
+
+.main_c2b {
+	width: 49.7%;
+	margin: 0 0 0 0.6%;
+}
+
+
+.main_c2m {
+	width: 99%;
+	margin: 0 0 0 1%;
+}
+
+.main_c3 {
+	width: 49%;
+	margin:  0 0 0 1%;
+}
+
+.ufr {
+	border-right: solid 1px silver;
+	border-top:   solid 1px silver;
+	border-left:  solid 1px silver;
+	/* box-shadow: 2px 2px 2px; */
+}
+
+.ofr {
+	border: solid 1px silver;
+	/* box-shadow: 2px 2px 2px; */
+}
+
+#main_1up {
+	position: relative;
+	z-index: 9;
+	float: left;
+	/*
+	background: #FFE8E8;
+	*/
+	clear: both;
+	width: 100%;
+	padding: 0;
+	/*
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	*/
+	box-sizing: border-box;
+	background: white;
+	border-radius: 5px;
+}
+
+
+/* п╡п╫п╣я┬п╫п╦п╧ div п╢п╩я▐ п╫п╦п╤п╫п╣пЁп╬ п╠п╩п╬п╨п╟ п╡ п╨п╬п╩п╬п╫п╨п╣ */
+.exdn1 {
+	position: relative;
+	z-index: 9;
+	float: left;
+	width:  100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* div п╢п╩я▐ п╡п╣я─я┘п╫п╣п╧ я┌п╣п╫п╦  */
+.shup  {
+	position: absolute;
+	float: left;
+	z-index: 4;
+	top: 0px;
+	left: 0px;
+	width:  100%;
+	height: 17px;
+	/* box-shadow: 2px 2px 2px;
+	background: white;
+	*/
+	margin: 0;
+	box-sizing: border-box;
+	border-top: solid 1px silver;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#main_1dn {
+	position: relative;
+	z-index: 9;
+	float: left;
+	/*
+	background: #FFE8E8;
+	background: white;
+	*/
+	width: 100%;
+	clear: both;
+	padding: 0;
+	box-sizing: border-box;
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	border-radius: 5px;
+}
+
+#main_2up {
+	position: relative;
+	z-index: 9;
+	float: left;
+	/*
+	background: #E8FFE8;
+	*/
+	clear: both;
+	width: 100%;
+	padding: 0;
+	margin-left: calc(0% + 12px);
+	box-sizing: border-box;
+	/*
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	*/
+	border-radius: 5px;
+	background: white;
+}
+
+
+.exdn2 {
+	position: relative;
+	z-index: 9;
+	float: left;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	clear: both;
+	margin-left: 1%;
+	margin-left: calc(0% + 12px);
+}
+
+
+#main_2dn {
+	position: relative;
+	z-index: 9;
+	float: left;
+	/*
+	background: #E8FFE8;
+	*/
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	/*
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	background: white;
+	*/
+	border-radius: 5px;
+}
+
+
+#main_wide {
+	position: relative;
+	z-index: 9;
+	float: left;
+	/*
+	background: #FFFFE8;
+	*/
+	background: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border-top: solid 1px silver;
+	border-left: solid 1px silver;
+	border-right: solid 1px silver;
+	border-radius: 5px;
+}
+
+.red_bg   { background: red; }
+.green_bg { background: green; }
+.blue_bg  { background: blue; }
+.silv_bg  { background: silver; }
+.yel_bg   { background: yellow; }
+
+main {
+	position: relative;
+	display: table-row;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* центральная колонка на странице index */
+#site_box {
+	padding-left: 12px;
+	width: 50%;
+	/* border-left: solid 7px white; */
+}
+
+#site_box .text_head { font-size: 125%; }
+
+/* правя колонка на странице index */
+#soft_box {
+	display: table-cell;
+	min-width: 300px;
+	text-align: justify;
+	padding-left: 12px;
+	/* width: 55%; */
+	/* border-left: solid 7px white; */
+}
+
+#soft_box .text_head { font-size: 125%; }
+
+#left_up {
+	width: 100%;
+	float: left;
+	padding: 0;
+	/* margin:  0; */
+	box-sizing: border-box;
+}
+
+#left_in {
+	width: 100%;
+	float: left;
+	padding: 0;
+	/* margin:  0; */
+	box-sizing: border-box;
+}
+
+#last_cmt p {
+	text-indent: 2em;
+	margin: 0.1em 0.1em 0.5em 0.1em;
+}
+
+#last_cmt span {
+	font-style: italic;
+	color: #000080;
+}
+
+
+#last_msg p {
+	text-indent: 2em;
+	margin: 0.1em 0.1em 0.5em 0.1em;
+}
+
+#last_msg span {
+	font-style: italic;
+	color: #000080;
+}
+
+
+/* login: { */
+
+#login_box {
+	float: left;
+	width: 100%;
+	display: table;
+	margin:  0;
+}
+
+#login_left {
+	display: table-cell;
+	width: 66%;
+	padding: 6px; /* */
+	text-align: left;
+	vertical-align: bottom;
+	box-sizing: border-box;
+}
+
+#login_right  {
+	display: table-cell;
+	width: 34%;
+	padding: 0;
+	text-align: right;
+	vertical-align: bottom;
+	box-sizing: border-box;
+}
+
+
+#login_right .ya-site-form {
+	display: inline-box;
+}
+
+
+.href_twit {
+	float: right;
+	position: relative;
+	margin: 0.5em;
+/*
+	width: 60px;
+	position: absolute;
+	top: 0.5em;
+	left: 1%;
+*/
+/*	width: 99%; */
+	text-align: right;
+	overflow: hidden;
+}
+
+.href_rss {
+	float: left;
+	/* width:70px; */
+	position: absolute;
+	top: 0.5em;
+	left: 1%;
+	/* width: 99%; */
+	text-align: left;
+	overflow: hidden;
+}
+
+.href_rss img {
+	display: inline-block;
+}
+
+
+
+.href_mail {
+	float: right;
+	/* width:70px; */
+	position: absolute;
+	top: 0.5em;
+	width: 99%;
+	padding: -2em;
+	text-align: right;
+	overflow: hidden;
+}
+
+.href_mail img {
+	display: inline-block;
+}
+
+/* } */
+
+.box468x60 {
+	height: 60px;
+	width: 468px;
+	border: none;
+	text-align: center;
+}
+
+/* main: { */
+
+/* } */
+
+.jandex {
+	position: relative;
+	width: 100%;
+	min-width: 400px;
+	padding-left: 12px;
+	box-sizing: border-box;
+}
+
+
+footer {
+	float: left;
+	clear: both;
+	position: relative;
+	width: 100%;
+	margin: 7px 0;
+	padding: 0;
+}
+
+footer ul {
+	position: relative;
+	list-style: none;
+	display: table;
+	width: 100%;
+	margin: 1em;
+	padding: 0;
+}
+
+.footer li {
+	position: relative;
+	display: table-cell;
+	text-align: center;
+	padding:  0;
+}
+
+.multimap {
+	display: none;
+	visibility: hidden;
+}
+
+
+/* стили для конкретных страниц */
+
+/*
+#site_pub { width: 50%; }
+#soft_pub { width: 50%; }
+*/
+
+/*
+	background-image: url("data:image/[ png | jpg | gif... ];base64,(-= Base64 КОД =-)");
+*/
+
+/* lib.php: { */
+
+/* google reclams */
+.goog_box {
+	position: relative;
+	text-align: center;
+}
+
+.adsbygoogle {
+	display:inline-block;
+	width:728px;
+	height:90px;
+}
+/* --------------- */
+
+
+
+#lib_php li {
+	list-style-position: inside;  /* | outside */
+}
+
+#lib_php td {
+	padding: 10px;
+}
+
+#lib_php .text_body {
+	font-size: 120%;
+	padding: 20px;
+	text-align: justify;
+}
+
+/* } lib_php: */
+
+
+#login_info {
+	padding: 0 11px 11px 11px;
+}
+
+#login_info h3 {
+	margin: 0 0 11px 0;
+}
+
+#login_info p {
+	text-align: center;
+}
+
+.goog_hr {
+	width: 600px;
+}
+
+#gb_1 {
+  padding: 5px;
+  border-bottom: solid 1px silver;
+}
+
+#gb_2 {
+  padding: 5px;
+  border-top: solid 1px silver;
+}
+
+
+/* } nlib_php: */
+
+/* err404_php: { */
+
+#page404  {
+	font-size: 125%;
+	text-align: center;
+	border: solid 1px gray ;
+	border-radius: 5px;
+	background: #D3EAFA;
+	line-height: 1em;
+	margin: 1em 2%;
+	width: 96%;
+}
+
+#page404 h2 {
+	font-size: 150%;
+}
+
+#page404 input {
+	margin: 1em 0;
+}
+
+#demo {
+	margin-left: 15%;
+}
+
+#demo h1, #demo h2, #demo h3, #demo h4, #demo h5, #demo h6  {
+	text-align: center;
+}
+
+/* } err404_php: */
+
+#footer_top {
+	display: table;
+	/* float: left; */
+	width: 100%;
+	text-align: center;
+	/* vertical-align: middle; */
+}
+
+#footer_gnr {
+	float: left;
+	width: 100%;
+}
+
+#counters {
+	/*float: left; */
+	display: table;
+	width: 100%;
+}
+
+#page_bottom {
+	float: left;
+	width: 100%;
+}
+
+#rb1 {
+	/* border: solid 2px blue;
+	vertical-align: middle;
+	float: left;
+	min-height: 1px;
+	*/
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#cb {
+	/* display: inline-block;
+	margin: 0 auto;
+	*/
+	display: table-cell;
+	width: 41px;
+	vertical-align: middle;
+}
+
+#rb2 {
+	/*
+	vertical-align: middle;
+	min-height: 1px;
+	float: right;
+	*/
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* toc = table of content */
+.toc a {
+	font-weight: bold;
+}
+
+ul li ul {
+	margin-left: 10px;
+}
+
+ul li ul li ul {
+	margin-left: 20px;
+}
+
+a { color: blue; text-decoration: none; }
+pre { color:brown; font-size: 12px; font-family: Monospace; overflow-x: auto; }
+p { text-align:justify; font-size: 12px; color: #000000; font-family: Verdana; font-weight:normal; }
+textarea { color: brown; font-size: 12px; font-family:Monospace; }
+tt { color:brown; font-size: 12px; font-family:Monospace; }
+.red { color: red; }
+code { color:brown; font-size: 12px; font-family:Monospace; }
+
+
+#rmr {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+/* контейнер для размещения колонок полной высоты  */
+.column_box {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: visible;
+	/*
+	overflow: visible;
+	border: solid 1px red;
+	background: #FFFFE8;
+	*/
+}
+
+
+/* вертикальный разделитель между колонками */
+.vsep {
+	position: relative;
+	display: table-cell;
+	padding: 0;
+	margin: 0;
+	width: 1%;
+	width: calc(0px + 12px);
+	clear: none;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+
+/* контейер для размещения элементов в отдельной колонке c рамкой! */
+.column {
+	position: relative;
+	display: table-cell;
+	padding: 0;
+	margin: 0;
+	clear: none;
+	vertical-align: top;
+	box-sizing: border-box;
+	overflow: visible;
+}
+
+
+/* контейер для размещения элементов в отдельной колонке БЕЗ рамки! */
+.column0 {
+	position: relative;
+	display: table-cell;
+	padding: 0;
+	margin: 0;
+	clear: none;
+	vertical-align: top;
+	box-sizing: border-box;
+	overflow: visible;
+}
+
+
+.zcolumn:last-child {
+	padding-right: 0.5%;
+	padding-right: calc(0% + 12px);
+	padding-right: 0;
+}
+
+/* отдельный элемент в колонке (element in column) */
+.eic {
+	position: relative;
+	float: left;
+	display: block;
+	width:  100%;
+	clear: both;
+	opacity: .99;
+	/*
+	overflow: auto;
+	overflow: visible;
+	background: #FFE8E8;
+	*/
+}
+
+
+.eic {
+	margin-top: 0;
+	margin-top: calc(0% + 12px);
+}
+
+
+/* скругление тени у нижнего элемента в колонке */
+.eic:last-child:before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	float: left;
+	width:  100%;
+	height: 9px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	vertical-align: top;
+}
+
+
+.eic:nth-child(1) {
+	margin-top: 0;
+}
+
+
+/* содержимое элемента колонки  */
+.ine {
+	position: relative;
+	float: left;
+	padding: 0;
+	z-index: 2;
+	width:  100%;
+	box-sizing: border-box;
+	border: solid 1px silver;
+	border-radius: 5px;
+	background: white;
+	vertical-align: top;
+	/*
+	padding: 1em;
+	 */
+}
+
+.agreg {
+	border: none;
+	padding: 0;
+	border-radius: 5px;
+}
+
+.eic:last-child .ine {
+	border-bottom: none;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.eic:last-child {
+	margin-bottom: 4px;
+}
+
+/* cover для маскировки общей рамки колонки */
+/* выводится у всех элементов, кроме последнего */
+/* может потребоваться настройка left/width */
+.eic:nth-last-child(n+2):before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 100%;
+	top: calc(100% - 4px);
+	left: -0.5%;
+	width: 101%;
+	left:  calc(0px - 4px);
+	width: calc(100% + 8px);
+	height: 20px;
+	background: white;
+	/*
+	background: #E0FFE0;
+	opacity: .99;
+	*/
+}
+
+/* рамка для выравнивания высоты колонки  */
+.column:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top:0;
+	left:0;
+	height:100%;
+	width: 100%;
+	float: left;
+	display: block;
+	background: white;
+	clear: both;
+	box-sizing: border-box;
+	border-left: solid 1px silver;
+	border-right: solid 1px silver;
+	border-bottom: solid 1px silver;
+	border-radius: 5px;
+	vertical-align: top;
+	/*
+	background: #FFE8E8;
+	*/
+}
+
+
+.agreg {
+	width: 100%;
+}
+
+.cw50 {
+	width: 49.5%;
+	width: clac(50% - 12px);
+}
+
+.div_foot {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	margin: -1.5em;
+}
+
+#left_col {
+	width: 220px;
+	min-width: 220px;
+	max-width: 220px;
+}
+
+.eval {
+	width: 100%;
+	text-align: center;
+	font-size: 110%;
+}
+
+.eval form {
+	display: inline-block;
+}
+
+.eval form b {
+	position: relative;
+	top: -0.11em;
+}
+
+.eval input {
+	margin-left: 1em;
+	position: relative;
+	top: 0.11em;
+}
+
+.cmt_head {
+	width: 100%;
+	text-align: left;
+	font-size: 150%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.cmt_text {
+	width: 100%;
+	text-align: left;
+}
+
+.cmt_text a {
+	margin-left: 2em;
+}
+
+.cmt_box {
+	width: 100%;
+	text-align: center;
+	clear: both;
+}
+
+.cmt_box div {
+	margin-top: 0.5em;
+	display: inline-block;
+}
+
+.cmt_box div button {
+	float: left;
+	clear: both;
+}
+
+.cmt_box form div {
+	float: left;
+	clear: both;
+}
+
+
+.cmt_box textarea  {
+	float: left;
+	clear: both;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.cmt_box h3 {
+	float: left;
+	clear: both;
+	margin-top: 0.5em;
+	text-align: left;
+	font-weight: normal;
+}
+
+.cmt_box h4 {
+	float: left;
+	clear: both;
+	margin-top: 0.5em;
+	text-align: left;
+	font-weight: normal;
+}
+
+.cmt_box textarea {
+	float: left;
+	clear: both;
+	width: 40em;
+	height: 8em;
+	margin-top: 0.1em;
+}
+
+.cmt_box input {
+	margin-top: 0.5em;
+	float: right;
+	clear: both;
+}
+
+.cmt_del {
+	display: inline-block;
+}
+
+
+/*
+#box_ec {
+	width: 100%;
+	text-align: center;
+}
+
+#box_ec form,textarea,h3,h4 {
+	float: left;
+	clear: both;
+	margin-bottom: 0;
+}
+
+#box_ec form {
+	display: inline-block;
+}
+
+#box_ec textarea {
+	width: 40em;
+	height: 20em;
+}
+
+#box_ec input {
+	margin-left: 1em;
+	position: relative;
+	top: 0.11em;
+}
+*/
+
+/* adm: */
+
+#admin_page h2,#admin_page h3 {
+	text-align: center;
+}
+
+#admin_ext {
+	text-align: center;
+}
+
+#admin_ext h2 a {
+	display: inline-block;
+	font-size: 150%;
+	text-decoration: underline;
+
+}
+
+#admin_mid {
+	display: inline-block;
+}
+
+#admin_box {
+	display: table;
+	padding: 2em;
+}
+
+#admin_box > div {
+	display: table-row;
+	text-align: left;
+}
+
+#admin_box h4 {
+	padding: 0.5em;
+	display: table-cell;
+	text-align: left;
+}
+
+#admin_box  {
+	text-align: right;
+}
+
+#admin_box h4 input {
+	display: inline;
+	text-align: left;
+}
+
+#admin_box #rsub {
+	text-align: right;
+}
+
+#page_list caption {
+	padding: 8px;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#page_list table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#page_list table td {
+	padding: 4px;
+	border: solid 1px #D0D0D0;
+}
+
+#page_list td:nth-child(1) {
+	width: 5em;
+	text-align: right;
+}
+
+#page_list td:nth-child(2),#page_list td:nth-child(3) {
+	text-align: left;
+}
+
+#page_list thead td {
+	text-align: center !important;
+	font-weight: bold;
+}
+
+.page_nav {
+	width: 100%;
+}
+
+.page_nav td:nth-child(1)  {
+	width: 30%;
+	text-align: left;
+}
+
+.page_nav td:nth-child(2)  {
+	width: 40%;
+	text-align: center;
+}
+
+.page_nav td:nth-child(3)  {
+	width: 40%;
+	text-align: right;
+}
+
+
+/* media: */
+
+@media screen and (max-width: 50em) {
+
+	/* контейнер для размещения колонок полной высоты  */
+	.column_box {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		overflow: visible;
+		/*
+		border: solid 1px red;
+		background: #FFFFE8;
+		*/
+	}
+
+
+	/* вертикальный разделитель между колонками */
+	.vsep {
+		position: relative;
+		display: none;
+		padding: 0;
+		margin: 0;
+		width: 0;
+		height: 0;
+		clear: none;
+	}
+
+
+	/* контейер для размещения элементов в отдельной колонке */
+	.column {
+		position: relative;
+		display: block;
+		padding: 0;
+		width:  100%;
+		margin: 0;
+		clear: none;
+		vertical-align: top;
+		box-sizing: border-box;
+		overflow: auto;
+	}
+
+
+
+	/* отдельный элемент в колонке (element in column) */
+	.eic {
+		position: relative;
+		float: left;
+		display: block;
+		width:  100%;
+		clear: both;
+		opacity: .99;
+		/*
+		overflow: auto;
+		overflow: visible;
+		background: #FFE8E8;
+		*/
+	}
+
+	.eic {
+		overflow: hidden;
+		margin-top: 1%;
+		margin-top: calc(0% + 12px);
+	}
+
+	/* скругление тени у нижнего элемента в колонке */
+	.eic:last-child:before {
+		content: "";
+		position: absolute;
+		display: none;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		float: left;
+		width:  0;
+		height: 0;
+		box-sizing: border-box;
+		border-radius: 5px;
+		vertical-align: top;
+	}
+
+
+	.eic:nth-child(1) {
+		margin-top: 1%;
+		margin-top: calc(0% + 12px);
+	}
+
+	#eagreg {
+		margin-top: 0;
+	}
+
+
+	/* содержимое элемента колонки  */
+	.ine {
+		position: relative;
+		float: left;
+		padding: 0;
+		z-index: 2;
+		width:  100%;
+		height: 100%;
+		box-sizing: border-box;
+		border: solid 1px silver;
+		border-radius: 5px;
+		background: white;
+		vertical-align: top;
+	}
+
+	.agreg {
+		border: none;
+		padding: 0;
+		border-radius: 5px;
+	}
+
+	.eic:last-child .ine {
+		border: solid 1px silver;
+		/*border-bottom-right-radius: 5px;*/
+		/*border-bottom-left-radius: 5px;*/
+	}
+
+	.eic:last-child {
+		margin-bottom: 5px;
+	}
+
+	/* cover для маскировки общей рамки колонки */
+	/* выводится у всех элементов, кроме последнего */
+	/* может потребоваться настройка left/width */
+	.eic:nth-last-child(n+2):before {
+		content: "";
+		display: none;
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 0;
+		height: 0;
+		/*
+		background: #E0FFE0;
+		opacity: .99;
+		*/
+	}
+
+	/* рамка для выравнивания высоты колонки  */
+	.column:before {
+		content: "";
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		height: 0;
+		width: 0;
+		float: left;
+		background: white;
+		border: none;
+		/*
+		background: #FFE8E8;
+		*/
+	}
+
+	.agreg {
+		width: 100%;
+	}
+
+	.cw50 {
+		width: 100%;
+	}
+
+	#left_col {
+		display: block;
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		text-align: center;
+		overflow: auto;
+	}
+
+	#left_col .eic {
+		display: inline-block;
+		clear: none;
+		margin-right: 1%;
+		box-sizing: border-box;
+	}
+
+	#left_col .text_head {
+		padding: 6px;
+		line-height: 14px;
+	}
+
+	#left_up {
+		width: 33%;
+		min-width: 33%;
+		max-width: 33%;
+		height: 263px;
+		border: solid 1px silver;
+		border-radius: 5px;
+		/*
+		width: 210px;
+		min-width: 210px;
+		max-width: 210px;
+		*/
+	}
+
+	#left_in {
+		/* width: 65%; min-width: 65%; max-width: 65%; */
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		height: 263px;
+		overflow: hidden;
+		border: solid 1px silver;
+		border-radius: 5px;
+	}
+
+	#left_in .center {
+		height: 100%;
+	}
+
+	#left_col .text_body {
+		height: 100%;
+		box-sizing: border-box;
+	}
+
+	.menu_box {
+		display: block;
+		text-align: center;
+		word-wrap: break-word;
+		width: 100%;
+	}
+
+	.menu_box li {
+		padding: 0.8em;
+		display: inline-block;
+		border-left: solid 1px #8CBAD2;
+		border-right: solid 1px #8CBAD2;
+		margin: 0;
+	}
+
+	.menu_box .lbtn {
+		border-left: solid 1px #8CBAD2;
+	}
+
+	#menu3 li {
+		padding: 0.7em ;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	#login_box {
+		float: left;
+		width: 100%;
+		display: block;
+		margin:  0;
+	}
+
+	#login_left {
+		display: block;
+		width: 100%;
+		/* width: 80%; */
+		padding: 6px; /* */
+		text-align: left;
+		vertical-align: bottom;
+		box-sizing: border-box;
+	}
+
+	#login_right  {
+		display: block;
+		width: 100%;
+		padding: 0;
+		text-align: left;
+		vertical-align: bottom;
+		box-sizing: border-box;
+	}
+}
+
+.date
+{
+    color: red; /* Цвет текста */
+    font-weight: 700; /* жирное начертание */
+}
+
+.tt
+{color: brown; font-size: 12; font-family: monospace}
+
+.monospace
+{color: brown; font-size: 10; font-family: Arial, Helvetica, monospace}
+
+
+
+.ffm_bitstream{ font-family:"Bitstream Vera Sans Mono";}
+.ffm_century  { font-family:"Century Schoolbook L";}
+.ffm_avant    { font-family:"Avant Garde Gothic";}
+.ffm_courier  { font-family:"Courier";}
+.ffm_cournew  { font-family:"Courier New", "Courier";}
+.ffm_dejavu   { font-family:"DejaVu Serif Condensed", "serif";}
+.ffm_droid    { font-family:"Droid Serif", "serif";}
+.ffm_fantasy  { font-family:"fantasy";}
+.ffm_fixed    { font-family:"Fixed", "monospace";}
+.ffm_helv     { font-family:"Helvetica", "Arial";}
+.ffm_verd     { font-family:"Verdana", "Arial", "Helvetica";}
+.ffm_iface    { font-family:"Interface User", "sans-serif";}
+.ffm_libermono{ font-family:"Liberation Mono";}
+.ffm_libersans{ font-family:"Liberation Sans";}
+.ffm_liberseri{ font-family:"Liberation Serif";}
+.ffm_luximono { font-family:"Luxi Mono";}
+.ffm_mono     { font-family:"monospace";}
+.ffm_mssans   { font-family:"MS sans", "Arial", "Helvetica";}
+.ffm_nimb9    { font-family:"Nimbus Roman No9 L", "serif";}
+.ffm_nimbsans { font-family:"Nimbus Sans L";}
+.ffm_pragm    { font-family:"Pragmatica", "sans-serif";}
+.ffm_symbol   { font-family:"Symbol";}
+.ffm_tahoma   { font-family:"Tahoma";}
+.ffm_timesnr  { font-family:"Times New Roman", "Times, serif";}
+.ffm_times    { font-family:"Times", "serif";}
+.ffm_wingdings{ font-family:"Wingdings";}
+
+.blue         { color: "blue";}
+.green        { color: "green";}
+.gray         { color: "gray";}
+.red          { color: "red";}
+.dviolet      { color: "darkviolet";}
+.maroon       { color: "maroon";}
+.white        { color: "white";}
+
+.fwd_bold { font-weight: bold;}
+.fwd_norm { font-weight: normal;}
+
+.fsz_8p  { font-size: 8px; }
+.fsz_9p  { font-size: 9px; }
+.fsz_10p { font-size: 10px; }
+.fsz_11p { font-size: 11px; }
+.fsz_12p { font-size: 12px; }
+.fsz_14p { font-size: 14px; }
+.fsz_15p { font-size: 15px; }
+.fsz_16p { font-size: 16px; }
+.fsz_18p { font-size: 18px; }
+.fsz_20p { font-size: 20px; }
+.fsz_25p { font-size: 25px; }
+.fsz_26p { font-size: 26px; }
+
+
+.fsz_xxsmal { font-size: xx-smal; }
+.fsz_xsmal  { font-size: x-smal; }
+.fsz_smal   { font-size: smal; }
+.fsz_medium { font-size: medium; }
+.fsz_large  { font-size: large; }
+.fsz_xlarge { font-size: x-large; }
+.fsz_xxlarge{ font-size: xx-large; }
+
+/* 11- xx-small=9px, x-small=10px , small=13px, medium=16px, large=18px, x-large=24px, xx-large=32px larger */
+
+.tm16b { font-size: 16px; }
+
+.fsz_p1  { font-size: larger; }
+.fsz_p2  { font-size: 156.25%; }
+.fsz_p3  { font-size: 195.3125%; }
+.fsz_p4  { font-size: 244.1406%; }
+.fsz_p5  { font-size: 305.1757%; }
+
+.fsz_m1  { font-size: smaller; }
+.fsz_m2  { font-size: 64%; }
+.fsz_m3  { font-size: 51.2%; }
+.fsz_m4  { font-size: 40.96%; }
+.fsz_m5  { font-size: 32.768%; }
+
+</style>
+
+<link rel="icon" href="data:image/x-icon;base64,R0lGODlhEAAQAOYAAL6+vhUVFf///QgICCQkJE1NTVtbW5qZl9e4Rdzq//P3+RUOANnb+uGuAE8xFrvE6zxETryLGXZ7iN6zFP/xAOTk5NDNzLW1tdjY2Lq6uvj4+AQEBHh4ePz6+jMzMwkJCQMHCgMDA2paRampqfPgPmJnegwKGXp6eoyMjBsRAUZKXevDCf/jAefn51xcXBslNf/NCuesAJ+ow//mAJ6ensvLy9nZ2eeoAO/7/+Tm6wAAB/7WAAYGBgAEDgICAmRkZP/cAv/XANvDDPqxACkpKf/qGuXl5bO1tRkZGf///iYoLHl5eWJiYiwsLKqqqjU2RC4oOkpKSkhISP/jACYmJisrK/vcPCUlJTIyMgsLC5igugwMDA4ODuvr6//YAEFBQXpRGayTLxEPG/LCDq9yG/b29pKbuj5GbrrE38OhL/39+XR0dH6EsP/XERASG8fHx9PT0lQ+ANfX19HHvIaGhjk5OVtbVv77IKxxAJmKf15eXQAAAP///wAAAAAAAAAAACH5BAAAAAAALAAAAAAQABAAAAfDgHyCgnJrTVc/AIOLgkx7j3s+W18ajHx0kI9VHHt1lkiZexs8jyOLRlmPIZkDe1iLNXsGBY9SFy6PXF2DTgQCHTpufEllBI9vg0d2IGZPKjJ7cAd7HxiDFhBnYEITYQsPJXsDNoM5YmkzRUAsdyQpj4qCCQ5TFDBtVmNecT17J4tQ8ATZsaJBDAQmlOghMkjACzZkhtyIMIePhD1R9mQQhGIPHy0i8jAQpCbAIyp8WuyhwUcBGhyLlkDiE8CDpUEVIAUCADs=">
+</head>
+<body class="doc" lang="ru">
+
+		<div class="column_box">
+				<div class="column">
+<div id="main_in" class="eic">
+	<div class="ine">
+		<div class="text_box">
+			<div class="text_body">
+	<h1>Как найти все файлы с заданным текстом с помощью командной оболочки Linux</h1>
+
+<p>Оригинал: <a href="https://linuxconfig.org/how-to-find-all-files-with-a-specific-text-using-linux-shell">How to find all files with a specific text using Linux shell</a>
+<br>Автор: Lubos Rendek
+<br>Дата публикации: 30 ноября 2017 года
+<br>Перевод: А. Кривошей
+<br>Дата перевода: август 2018 г.
+</p>
+<p>В этой статье приведены некоторые полезные советы о том, как найти все файлы в любом конкретном каталоге или во всей файловой системе, содержащие любое заданное слово или строку.</p>
+<h2>Условные обозначения</h2>
+<p># - требует, чтобы данная команда выполнялась с привилегиями root либо непосредственно пользователем root, либо с помощью команды sudo.<br>
+$ - данная команда должна выполняться обычным непривилегированным пользователем.</p>
+<h2>Примеры</h2>
+<h3>Нерекурсивный поиск всех файлов с определенной строкой.</h3>
+<p>Первый пример команды будет искать строку  "stretch" во всех файлах в каталоге /etc/, исключая любые подкаталоги:</p>
+<pre># grep -s stretch /etc/*
+/etc/os-release:PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+/etc/os-release:VERSION="9 (stretch)"
+</pre>
+<p>Параметр -s будет подавлять сообщения об ошибках о несуществующих или нечитаемых файлах. На выходе отображаются имена файлов, а также выводится строка с запрошенным текстом.</p>
+<h3>Рекурсивный поиск всех файлов с определенной строкой.</h3>
+<p>Вышеприведенная команда пропускает все подкаталоги. Рекурсивный поиск означает перемещение по всем подкаталогам. Следующая команда будет искать строку "stretch" во всех файлах в каталоге /etc/, включая все подкаталоги:</p>
+<textarea cols="50" style="width:100%" rows="15" wrap="OFF"># grep -R stretch /etc/*
+/etc/apt/sources.list:# deb cdrom:[Debian GNU/Linux testing _Stretch_ - Official Snapshot amd64 NETINST Binary-1 20170109-05:56]/ stretch main
+/etc/apt/sources.list:#deb cdrom:[Debian GNU/Linux testing _Stretch_ - Official Snapshot amd64 NETINST Binary-1 20170109-05:56]/ stretch main
+/etc/apt/sources.list:deb http://ftp.au.debian.org/debian/ stretch main
+/etc/apt/sources.list:deb-src http://ftp.au.debian.org/debian/ stretch main
+/etc/apt/sources.list:deb http://security.debian.org/debian-security stretch/updates main
+/etc/apt/sources.list:deb-src http://security.debian.org/debian-security stretch/updates main
+/etc/dictionaries-common/words:backstretch
+/etc/dictionaries-common/words:backstretch's
+/etc/dictionaries-common/words:backstretches
+/etc/dictionaries-common/words:homestretch
+/etc/dictionaries-common/words:homestretch's
+/etc/dictionaries-common/words:homestretches
+/etc/dictionaries-common/words:outstretch
+/etc/dictionaries-common/words:outstretched
+/etc/dictionaries-common/words:outstretches
+/etc/dictionaries-common/words:outstretching
+/etc/dictionaries-common/words:stretch
+/etc/dictionaries-common/words:stretch's
+/etc/dictionaries-common/words:stretched
+/etc/dictionaries-common/words:stretcher
+/etc/dictionaries-common/words:stretcher's
+/etc/dictionaries-common/words:stretchers
+/etc/dictionaries-common/words:stretches
+/etc/dictionaries-common/words:stretchier
+/etc/dictionaries-common/words:stretchiest
+/etc/dictionaries-common/words:stretching
+/etc/dictionaries-common/words:stretchy
+/etc/grub.d/00_header:background_image -m stretch `make_system_path_relative_to_its_root "$GRUB_BACKGROUND"`
+/etc/os-release:PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+/etc/os-release:VERSION="9 (stretch)"
+</textarea>
+<h3>Поиск всех файлов, содержащих определенное слово</h3>
+<p>В приведенном выше примере команды grep перечислены все файлы, содержащие строку stretch. Также показаны строки с  stretches, stretched и т. д. Параметр -w grep используется для отображения только определенного слова:</p>
+<textarea cols="50" style="width:100%" rows="10" wrap="OFF"># grep -Rw stretch /etc/*
+/etc/apt/sources.list:# deb cdrom:[Debian GNU/Linux testing _Stretch_ - Official Snapshot amd64 NETINST Binary-1 20170109-05:56]/ stretch main
+/etc/apt/sources.list:#deb cdrom:[Debian GNU/Linux testing _Stretch_ - Official Snapshot amd64 NETINST Binary-1 20170109-05:56]/ stretch main
+/etc/apt/sources.list:deb http://ftp.au.debian.org/debian/ stretch main
+/etc/apt/sources.list:deb-src http://ftp.au.debian.org/debian/ stretch main
+/etc/apt/sources.list:deb http://security.debian.org/debian-security stretch/updates main
+/etc/apt/sources.list:deb-src http://security.debian.org/debian-security stretch/updates main
+/etc/dictionaries-common/words:stretch
+/etc/dictionaries-common/words:stretch's
+/etc/grub.d/00_header:background_image -m stretch `make_system_path_relative_to_its_root "$GRUB_BACKGROUND"`
+/etc/os-release:PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+/etc/os-release:VERSION="9 (stretch)"
+</textarea>
+<h3>Вывод только имен файлов, содержащих определенный текст</h3>
+<p>Вышеприведенные команды могут давать избыточный вывод. В следующем примере будут отображаться только имена файлов в каталоге /etc/ рекурсивно, содержащих строку "stretch":</p>
+<pre># grep -Rl stretch /etc/*
+/etc/apt/sources.list
+/etc/dictionaries-common/words
+/etc/grub.d/00_header
+/etc/os-release
+</pre>
+<h3>Поиск без учета регистра</h3>
+<p>Все поисковые запросы по умолчанию чувствительны к регистру, то есть любой поиск строки "stretch" отображает только файлы, содержащие точные совпадения в верхнем и нижнем регистре. С помощью опции -i команда также будет выводить любые строки, содержащие Stretch, STRETCH, StReTcH и т. д.</p>
+<pre># grep -Ril stretch /etc/*
+/etc/apt/sources.list
+/etc/dictionaries-common/default.hash
+/etc/dictionaries-common/words
+/etc/grub.d/00_header
+/etc/os-release
+</pre>
+<h3>Включение или исключение из поиска заданных имен файлов</h3>
+<p>С помощью команды grep также можно включать в поиск только определенные файлы. Например, мы хотели бы искать  конкретный текст/строку только в конфигурационных файлах с расширением .conf. В следующем примере будут найдены все файлы с расширением .conf в каталоге /etc, содержащие строку bash:</p>
+<pre># grep -Ril bash /etc/*.conf
+</pre>
+<p>или</p>
+<pre># grep -Ril --include=\*.conf bash /etc/*
+/etc/adduser.conf
+</pre>
+<p>Аналогично, используя опцию --exclude, можно исключать любые заданные имена файлов:</p>
+<pre># grep -Ril --exclude=\*.conf bash /etc/*
+/etc/alternatives/view
+/etc/alternatives/vim
+/etc/alternatives/vi
+/etc/alternatives/vimdiff
+/etc/alternatives/rvim
+/etc/alternatives/ex
+/etc/alternatives/rview
+/etc/bash.bashrc
+/etc/bash_completion.d/grub
+/etc/cron.daily/apt-compat
+/etc/cron.daily/exim4-base
+/etc/dictionaries-common/default.hash
+/etc/dictionaries-common/words
+/etc/inputrc
+/etc/passwd
+/etc/passwd-
+/etc/profile
+/etc/shells
+/etc/skel/.profile
+/etc/skel/.bashrc
+/etc/skel/.bash_logout
+</pre>
+<h3>Исключение из поиска заданных директорий</h3>
+<p>Как и файлы, мы можем исключать из поиска заданные директории. Для этого используется опция --exclude-dir. В приведенном ниже примере мы ищем все файлы в директории  /etc, содержащие строку stretch, исключая директорию /etc/grub.d</p>
+<pre># grep --exclude-dir=/etc/grub.d -Rwl stretch /etc/*
+/etc/apt/sources.list
+/etc/dictionaries-common/words
+/etc/os-release
+</pre>
+<h3>Вывод номера строки, содержащей заданную строку</h3>
+<p>Используя опцию -n, мы можем получать информацию о номере строки, содержащей заданную строку:</p>
+<pre># grep -Rni bash /etc/*.conf
+/etc/adduser.conf:6:DSHELL=/bin/bash
+</pre>
+<h3>Поиск всех  файлов, не содержащих заданную строку</h3>
+<p>В последнем примере мы используем опцию -v, чтобы вывести список всех файлов, не содержащих заданное ключевое слово:</p>
+<pre># grep -Rlv stretch /etc/*
+</pre>
+<hr>
+<p><i>По приведенным ниже ссылкам вы найдете дополнительные материалы о поиске файлов в консоли Linux:</i></p>
+<p>
+</p><ul>
+<li><a href="http://rus-linux.net/MyLDP/consol/linux-find-command.html">14 примеров практического использования команды find в Linux</a></li>
+<li><a href="http://rus-linux.net/MyLDP/consol/find-recent-file.html">Как найти недавно модифицированные файлы в Linux</a></li>
+<li><a href="http://rus-linux.net/MyLDP/consol/pdfgrep.html">Поиск текста в PDF-документах из командной строки с помощью pdfgrep</a></li>
+<li><a href="http://rus-linux.net/MyLDP/consol/GNU-text-processing-overview-1.html">Обзор утилит GNU для обработки текста. Часть 1А: Основы</a></li>
+<li><a href="http://rus-linux.net/MyLDP/consol/linux-locate-command.html">8 примеров использования команды locate в Linux</a></li>
+</ul>
+<p></p>
+			</div>
+		</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

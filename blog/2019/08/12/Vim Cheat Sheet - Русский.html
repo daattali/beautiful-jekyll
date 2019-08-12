@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html><html><head>
+
+<meta charset="utf-8">
+<title>Vim Cheat Sheet - Русский</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+<meta name="description" content="A mobile friendly VIM cheat sheet">
+<link rel="shortcut icon" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABW5JREFUWAmlV1toHFUY/s6ZvXYTiw2tD23F1EsEi7EKFi2KUSQg9kmEogi+BXzwrdbSS7RqQXwQi1T7oi9eHtQKpqDVghKpkLa0aWyp0dAaGzc0TZOGXJbs7sz4/WdndmdmZ5IWTzg51///vv87lzmrwFTufrZTa/eAUvrxquNIVyMp1aizFm6FhsKNiJ0/aGkN13X7HeW8mjly5Kxa7N56n6XdXy2lbi1HwX2riLNlSZgJybPSJGG77rSt3ce0q5xDieDi42bBDelkcBmuMFDBVDYO6YzWW2Ijj4liabcGuYmw19tUCAkqsUVLJT7dEFzYNKJWeLC5Jdippu4EJ8vSSbBr8h/oULQJE4hxsiywOIyxC+AsWW0QiDgRYLdSgWvb8UdPaSCbCYPLcpbLyYAZzucJEIfK81ojEAEXDwKsN2+GurOdDTfkVKRz5ubhHjsGVanCFXsBX7MG+qkuzmUbERs2nZ9/ASaucNiq+2soUO/yzEnAffIJ5i6zTuJO3EqSbbswPo5/jh5FB8kJIbdahVq/DurFFwDLClEQO7G5MDCAdhLOZ606PeoRTj6ISqexeOBDjL69HzajcwhgM0saPvgRfnvpZfw9NYVhT3JFed0zg7B7XoFDcrxojA1vPdiLixja9xb+IoHBUgkV16kHo4MbyAc3KIwqOzuLtdev1wgICckcLE9PozI5ibSVwr92FRe5V0DFJHL3+efgrF4NR/YP17uysIDTvW9g9JvDyDCoqWoFZ+bmUBXl6MsoIJUQuGEgoxrm7vbBpaShJlCKEVss08xjBBvL54Ed2+F0P20iF9vyzAxO79yF4vc/IMVxc+zYP8n5Q/Pz4O6JHEMfOFjK5iGw2WTSL3WqY1kkR3Dl2Mgy4vxr21Hd9ADchRI0Iy1RoaE9vbh24mQdXAiIbYr5KpU4RSViN2EDn5uLf1ECcoQ05VeUPb9uLTa8vgOFjntgc301lZkvFjG0ew9mfj+H1ApGToc+uJSSNfMsg0nFSu8zkMEYBYwDrn3h3g60M/Lc7etR5VrrbBazly7h3O69mBsZqUUeAx4ksYwCgt+sgFspo3XjRrTv2ok05a9K5LkcZv4Yxvm9vShdvgyLbT9yARTpfeB6SXLJBMTIS8ElcHnsWjo7cdu2bbBWrTJHTCKfHjyLC2/uw+LEhAcugDXpb55AAFzOcZCAHLfWRx8x1GySEfBrAycw/M5+VHlkLbZlj9Si5LQai9joZSysgAm6EblfCxEQaO9CEvCr/f0Yefc92LIHuAEb8jYUEKB6v9QNL/5vImCGBKGRzE3G3ark+AWSgF/58SdcfP8DfrSoBI9eEkioP5aACdWPN4DiVUWBIAGJdPy7Powe/NjcAzrFIxmMknZ+W6L067WSYxKo1+8tQQI4J/l7wCcg34jiV19j7JNPa47/B7gQCu+B5uBNj1FA7m7efMXPPsf4F1/CRM1rNRxdeH1vZEy0S4CtdRMXjly5vL/HGfXE4W9r6x0HLrKKmZTRbGSPGSs/s1U+9bFJEd0tFPDnXRtQ5PkuDQ5BieQ6BsADF+B4AoSIkmJ7ySWQl47m8brj5ClM8tO8QHCL4HGOJPKlwGPHaNP0IIlKIYcvl8vjobY2rEyn4MRE0SR3cE4SMa9fp+VxuVRiaLJGK7SFB1tvQYH7QZSJA21WJlkVmStvCc3n0XH5rRabBKi2rcxLqIUGm1pakZf5QRI0jiNkbIPz/DrnZ7mcfBUd166FHvmhGCVhHEZYyXKsJIn7Cy3gT7oQiRAhQzyJFJAhOF9W0ymNHp3t6zvPn8pdJNEvzy8/yQVkst/hlUKijQ7uzuZMj2y+JPBwP6dxqshOz/1lOF0PE/s/hPIUap6dWnsAAAAASUVORK5CYII=">
+<style>*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.grid-block{clear:both;letter-spacing:-.31em;display:-webkit-flex;-webkit-flex-flow:row wrap;display:-ms-flexbox;-ms-flex-flow:row wrap;overflow:hidden;text-rendering:optimizespeed;width:100%}.grid-block,.grid-1,.grid-lg-1-2,.grid-lg-1-3{display:inline-block;float:left;letter-spacing:normal;padding:0px 10px;vertical-align:top;word-spacing:normal;text-rendering:auto;width:100%;zoom:1}@media screen and (min-width: 64em){.grid-lg-1-2{width:50%}.grid-lg-1-3{width:33.3333%}}body{background-color:#fff;color:#000;font-family:Georgia, serif;font-size:16px}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{color:inherit;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:500;letter-spacing:normal;line-height:1.1;margin-top:20px;margin-bottom:10px}h1{font-size:45px;margin-bottom:0px;margin-top:30px}h1 a{color:#FA4949}h2{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:24px}a{color:#1a0dab;text-decoration:none}a:hover{text-decoration:underline}p{margin:12px 0;line-height:20px;letter-spacing:normal}ul{padding:0}li{border-bottom:1px dashed #e0e0e0;line-height:1.55;list-style-type:none;padding:7px 0}kbd{background-color:#eee;color:#000;border-radius:0;box-shadow:none;font-family:'Inconsolata', monospace;font-size:1em;font-weight:bold;padding:4px}.container{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;background:#fff;margin:0 auto;width:100%;max-width:1170px}.well{background:#f8f8f8;border:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none;min-height:20px;margin-bottom:20px;padding:19px}.link-to-repo{margin:20px 0;text-align:center}.link-to-repo p{margin-bottom:inherit}.ja{font-size:13px}.ja h2{font-size:20px}.ja kbd{font-size:16px}.box{background:#f8f8f8;border:1px solid #E7E7E7;margin:10px 0;width:100%}.box .grid-block{padding:0}.box-header{background:#EBEBEB;min-height:30px;padding:10px}.box-header h2{font-size:16px;margin:5px 0}.box-body{font-size:14px;display:block;clear:both;overflow:hidden;padding:0 10px;padding-bottom:20px}.box-body li{border-bottom:none;line-height:inherit;list-style-type:none;padding:7px 7px}@media print{html,body{height:90%}body{line-height:1.3;font-size:10px}h1{font-size:20px;margin-left:0;margin-bottom:8px;margin-top:0}h2{font-size:10px;margin-bottom:-10px;margin-top:0;line-height:10px}#footer,.link-to-repo{height:0px;display:none}.commands-container{clear:both;overflow:hidden}.commands-container>.grid-block:first-child{width:60%}.commands-container>.grid-block:last-child .grid-lg-1-3{width:50%}.grid-block{clear:none;float:left;display:inline-block;overflow:hidden;width:40%}.grid-1{padding:0;margin:0}.grid-lg-1-3{display:inline-block;float:left;letter-spacing:normal;padding:0;word-spacing:normal;text-rendering:auto;width:33.3333%;zoom:1}li{line-height:initial;padding:4px 5px}kbd{color:#000;font-size:12px;padding:0}.well{height:0px;display:none}}@page{margin:0.5cm}
+</style>
+</head>
+<body class="ru">
+  <div class="container">
+    <div class="grid-block">
+      <div class="grid-1">
+        <h1><a class="site-title" href="/">Vim Cheat Sheet</a></h1>
+      </div>
+    </div>
+
+    <div class="commands-container">
+      <div class="grid-block">
+        <div class="grid-lg-1-3">
+          <h2>Общее</h2>
+          <ul>
+            <li><kbd>:help keyword</kbd> - открыть помощь для keyword</li>
+            <li><kbd>:saveas file</kbd> - сохранить как file</li>
+            <li><kbd>:close</kbd> - закрыть текущую панель</li>
+            <li><kbd>K</kbd> - открыть справочное руководство для слова под курсором</li>
+          </ul>
+          <h2>Перемещение курсора</h2>
+          <ul>
+            <li><kbd>h</kbd> - передвинуть курсор влево</li>
+            <li><kbd>j</kbd> - передвинуть курсор вниз</li>
+            <li><kbd>k</kbd> - передвинуть курсор вверх</li>
+            <li><kbd>l</kbd> - передвинуть курсор вправо</li>
+            <li><kbd>H</kbd> - переместиться к началу экрана</li>
+            <li><kbd>M</kbd> - переместиться к середине экрана</li>
+            <li><kbd>L</kbd> - переместиться к концу экрана</li>
+            <li><kbd>w</kbd> - переместиться вперед на начало слова</li>
+            <li><kbd>W</kbd> - переместиться вперед на начало слова (слово может содержать пунктуацию)</li>
+            <li><kbd>e</kbd> - переместиться вперед на конец слова</li>
+            <li><kbd>E</kbd> - переместиться вперед на конец слова (слово может содержать пунктуацию)</li>
+            <li><kbd>b</kbd> - переместиться назад на начало слова</li>
+            <li><kbd>B</kbd> - переместиться назад на начало слова (слово может содержать пунктуацию)</li>
+            <li><kbd>%</kbd> - move to matching character (default supported pairs: '()', '{}', '[]' - use <code>:h matchpairs</code> in vim for more info)</li>
+            <li><kbd>0</kbd> - переместиться на начало строки</li>
+            <li><kbd>^</kbd> - переместиться на первый непробельный символ строки</li>
+            <li><kbd>$</kbd> - переместиться на конец строки</li>
+            <li><kbd>g_</kbd> - переместиться к последнему непустому символу в строке</li>
+            <li><kbd>gg</kbd> - переместиться на первую строку документа</li>
+            <li><kbd>G</kbd> - переместиться на последнюю строку документа</li>
+            <li><kbd>5G</kbd> - переместить на пятую строку</li>
+            <li><kbd>fx</kbd> - переместиться к следующему вхождению символа x</li>
+            <li><kbd>tx</kbd> - переместиться перед следующим вхождением символа x</li>
+            <li><kbd>Fx</kbd> - jump to previous occurence of character x</li>
+            <li><kbd>Tx</kbd> - jump to after previous occurence of character x</li>
+            <li><kbd>;</kbd> - repeat previous f, t, F or T movement</li>
+            <li><kbd>,</kbd> - repeat previous f, t, F or T movement, backwards</li>
+            <li><kbd>}</kbd> - переместиться к следующему параграфу (или функции/блоку при редактировании кода)</li>
+            <li><kbd>{</kbd> - переместиться к предыдущему параграфу (или функции/блоку при редактировании кода)</li>
+            <li><kbd>zz</kbd> - center cursor on screen</li>
+            <li><kbd>Ctrl</kbd> + <kbd>e</kbd> - move screen down one line (without moving cursor)</li>
+            <li><kbd>Ctrl</kbd> + <kbd>y</kbd> - move screen up one line (without moving cursor)</li>
+            <li><kbd>Ctrl</kbd> + <kbd>b</kbd> - переместиться назад на целый экран</li>
+            <li><kbd>Ctrl</kbd> + <kbd>f</kbd> - переместиться вперед на целый экран</li>
+            <li><kbd>Ctrl</kbd> + <kbd>d</kbd> - переместиться вперед на половину экрана</li>
+            <li><kbd>Ctrl</kbd> + <kbd>u</kbd> - переместиться назад на половину экрана</li>
+          </ul>
+          <div class="well">
+            <strong>Tip</strong> Добавьте число перед командой перемещения курсора для того, чтобы повторить её. Например, <kbd>4j</kbd> перемещает курсор на 4 строки вниз.
+          </div>
+          <h2>Режим вставки - вставка/добавление текста</h2>
+          <ul>
+            <li><kbd>i</kbd> - вставка перед курсором</li>
+            <li><kbd>I</kbd> - вставка в начало строки</li>
+            <li><kbd>a</kbd> - вставка (добавление) после курсора</li>
+            <li><kbd>A</kbd> - вставка (добавление) в конец строки</li>
+            <li><kbd>o</kbd> - добавление новой строки под текущей</li>
+            <li><kbd>O</kbd> - добавление новой строки над текущей</li>
+            <li><kbd>ea</kbd> - вставка (добавление) после конца слова</li>
+            <li><kbd>Esc</kbd> - выход из режима вставки</li>
+          </ul>
+        </div>
+        <div class="grid-lg-1-3">
+          <h2>Редактирование</h2>
+          <ul>
+            <li><kbd>r</kbd> - заменить один символ</li>
+            <li><kbd>J</kbd> - присоединить нижнюю строку к текущей</li>
+            <li><kbd>gJ</kbd> - join line below to the current one without space in between</li>
+            <li><kbd>gwip</kbd> - reflow paragraph</li>
+            <li><kbd>cc</kbd> - заменить всю строку</li>
+            <li><kbd>c$</kbd> - заменить до конца строки</li>
+            <li><kbd>ciw</kbd> - change (replace) entire word</li>
+            <li><kbd>cw</kbd> - заменить до конца слова</li>
+            <li><kbd>s</kbd> - удалить символ и заменить текст</li>
+            <li><kbd>S</kbd> - удалить строку и заменить текст (то же что cc)</li>
+            <li><kbd>xp</kbd> - переставить две буквы (удалить и вставить)</li>
+            <li><kbd>u</kbd> - отменить</li>
+            <li><kbd>Ctrl</kbd> + <kbd>r</kbd> - повторить</li>
+            <li><kbd>.</kbd> - повторить последнюю команду</li>
+          </ul>
+          <h2>Выделение текста (визуальный режим)</h2>
+          <ul>
+            <li><kbd>v</kbd> - включить режим выделения текста, выделить строки, затем выполнить команду (например, y-копирование)</li>
+            <li><kbd>V</kbd> - включить построчный режим выделения</li>
+            <li><kbd>o</kbd> - переместиться на другой конец выделенной области</li>
+            <li><kbd>Ctrl</kbd> + <kbd>v</kbd> - включить режим выделения блоков</li>
+            <li><kbd>O</kbd> - переместить на другой угол блока</li>
+            <li><kbd>aw</kbd> - выделить слово</li>
+            <li><kbd>ab</kbd> - блок в ()</li>
+            <li><kbd>aB</kbd> - блок в {}</li>
+            <li><kbd>ib</kbd> - внутренний блок в ()</li>
+            <li><kbd>iB</kbd> - внутренний блок в {}</li>
+            <li><kbd>Esc</kbd> - выйти из режима выделения текста</li>
+          </ul>
+          <h2>Визуальные команды</h2>
+          <ul>
+            <li><kbd>&gt;</kbd> - сместить текст вправо</li>
+            <li><kbd>&lt;</kbd> - сместить текст влево</li>
+            <li><kbd>y</kbd> - скопировать выделенный текст</li>
+            <li><kbd>d</kbd> - удалить выделенный текст</li>
+            <li><kbd>~</kbd> - переключить регистр</li>
+          </ul>
+          <h2>Регистры</h2>
+          <ul>
+            <li><kbd>:reg</kbd> - показать содержимое регистров</li>
+            <li><kbd>"xy</kbd> - поместить содержимое в регистр x</li>
+            <li><kbd>"xp</kbd> - вставить содержимое регистра x</li>
+          </ul>
+          <div class="well">
+            <strong>Tip</strong> Содержимое регистров сохраняется в ~/.viminfo, и будет восстановлено при следующем запуске vim.
+          </div>
+          <div class="well">
+            <strong>Tip</strong> В нулевом регистре всегда хранится содержимое последней команды копирования.
+          </div>
+          <h2>Метки</h2>
+          <ul>
+            <li><kbd>:marks</kbd> - список меток</li>
+            <li><kbd>ma</kbd> - установить метку A на текущей позиции</li>
+            <li><kbd>`a</kbd> - переместиться к метке A</li>
+            <li><kbd>y`a</kbd> - скопировать до метки A</li>
+          </ul>
+          <h2>Макросы</h2>
+          <ul>
+            <li><kbd>qa</kbd> - записать макрос A</li>
+            <li><kbd>q</kbd> - остановить запись макроса</li>
+            <li><kbd>@a</kbd> - run macro a</li>
+            <li><kbd>@@</kbd> - выполнить последний макрос</li>
+          </ul>
+        </div>
+        <div class="grid-lg-1-3">
+          <h2>Вырезать и вставить</h2>
+          <ul>
+            <li><kbd>yy</kbd> - скопировать строку</li>
+            <li><kbd>2yy</kbd> - скопировать 2 строки</li>
+            <li><kbd>yw</kbd> - скопировать слово</li>
+            <li><kbd>y$</kbd> - скопировать до конца строки</li>
+            <li><kbd>p</kbd> - вставить буфер обмена после курсора</li>
+            <li><kbd>P</kbd> - вставить буфер обмена перед курсором</li>
+            <li><kbd>dd</kbd> - удалить (вырезать) строку</li>
+            <li><kbd>2dd</kbd> - удалить (вырезать) 2 строки</li>
+            <li><kbd>dw</kbd> - удалить (вырезать) слово</li>
+            <li><kbd>D</kbd> - удалить (вырезать) до конца строки</li>
+            <li><kbd>d$</kbd> - удалить (вырезать) до конца строки</li>
+            <li><kbd>x</kbd> - удалить (вырезать) символ</li>
+          </ul>
+          <h2>Выход и сохранение</h2>
+          <ul>
+            <li><kbd>:w</kbd> - сохранить файл, но не выходить</li>
+            <li><kbd>:w !sudo tee %</kbd> - сохранить файл с sudo</li>
+            <li><kbd>:wq</kbd> or <kbd>:x</kbd> or <kbd>ZZ</kbd> - сохранить файл и выйти</li>
+            <li><kbd>:q</kbd> - выйти (терпит неудачу в случае несохраненных изменений)</li>
+            <li><kbd>:q!</kbd> or <kbd>ZQ</kbd> - выйти и потерять несохраненные изменения</li>
+            <li><kbd>:wqa</kbd> - write (save) and quit on all tabs</li>
+          </ul>
+          <h2>Поиск и замена</h2>
+          <ul>
+            <li><kbd>/pattern</kbd> - поиск шаблона</li>
+            <li><kbd>?pattern</kbd> - обратный поиск шаблона</li>
+            <li><kbd>\vpattern</kbd> - 'very magic' режим: все не алфавитно-цифровые символы интерпретируются как специальные (экранирование не требуется)</li>
+            <li><kbd>n</kbd> - повторить поиск в том же направлении</li>
+            <li><kbd>N</kbd> - повторить поиск в обратном направлении</li>
+            <li><kbd>:%s/old/new/g</kbd> - заменить все вхождения шаблона в файл на указанное значение</li>
+            <li><kbd>:%s/old/new/gc</kbd> - заменить все вхождения шаблона в файл на указанное значение с подтверждением</li>
+            <li><kbd>:noh</kbd> - отключить подсвечивание результатов поиска</li>
+          </ul>
+          <h2>Поиск в нескольких файлах</h2>
+          <ul>
+            <li><kbd>:vimgrep /pattern/ {file}</kbd> - поиск по шаблону в нескольких файлах</li>
+          </ul>
+          <div class="well">
+            e.g.
+            <kbd>:vimgrep /foo/ **/*</kbd>
+          </div>
+          <ul>
+            <li><kbd>:cn</kbd> - переместиться к следующему совпадению</li>
+            <li><kbd>:cp</kbd> - переместиться к предыдущему совпадению</li>
+            <li><kbd>:copen</kbd> - открыть окно со списком результатов</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-block">
+        <div class="grid-lg-1-3">
+          <h2>Работа с несколькими файлами</h2>
+          <ul>
+            <li><kbd>:e file</kbd> - редактировать файл в новом буфере</li>
+            <li><kbd>:bnext</kbd> or <kbd>:bn</kbd> - перейти к следующему буферу</li>
+            <li><kbd>:bprev</kbd> or <kbd>:bp</kbd> - перейти к предыдущему буферу</li>
+            <li><kbd>:bd</kbd> - удалить буфер (закрыть файл)</li>
+            <li><kbd>:ls</kbd> - список всех открытых буферов</li>
+            <li><kbd>:sp file</kbd> - открыть файл в новом буфере и разделить окно</li>
+            <li><kbd>:vsp file</kbd> - открыть файл в новом буфере и вертикально разделить окно</li>
+            <li><kbd>Ctrl</kbd> + <kbd>ws</kbd> - разделить окно</li>
+            <li><kbd>Ctrl</kbd> + <kbd>ww</kbd> - переключение окон</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wq</kbd> - закрыть окно</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wv</kbd> - разделить окно вертикально</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wh</kbd> - переместить курсор в левое окно (вертикально разделение)</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wl</kbd> - переместить курсор в правое окно (вертикальное разделение)</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wj</kbd> - переместить курсор в окно ниже (горизонтальное разделение)</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wk</kbd> - переместить курсор в окно выше (горизонтальное разделение)</li>
+          </ul>
+        </div>
+        <div class="grid-lg-1-3">
+          <h2>Вкладки</h2>
+          <ul>
+            <li><kbd>:tabnew</kbd> or <kbd>:tabnew file</kbd> - открыть файл в новой вкладке</li>
+            <li><kbd>Ctrl</kbd> + <kbd>wT</kbd> - переместить текущее окно в собственную вкладку</li>
+            <li><kbd>gt</kbd> or <kbd>:tabnext</kbd> or <kbd>:tabn</kbd> - переключиться на следующую вкладку</li>
+            <li><kbd>gT</kbd> or <kbd>:tabprev</kbd> or <kbd>:tabp</kbd> - переключиться на предыдущую вкладку</li>
+            <li><kbd>#gt</kbd> - переключить на вкладку номер #</li>
+            <li><kbd>:tabmove #</kbd> - переместить текущую вкладку на # позицию (нумерация с 0)</li>
+            <li><kbd>:tabclose</kbd> or <kbd>:tabc</kbd> - закрыть текущую вкладку и все её окна</li>
+            <li><kbd>:tabonly</kbd> or <kbd>:tabo</kbd> - закрыть все вкладки кроме текущей</li>
+            <li><kbd>:tabdo</kbd> command - выполнить <code>command</code> на всех вкладках (к примеру <code>:tabdo q</code> - закрывает все открытые вкладки)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="grid-block link-to-repo">
+        <p>Checkout the source on <a href="https://github.com/rtorr/vim-cheat-sheet" target="_blank" rel="noopener">Github</a></p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

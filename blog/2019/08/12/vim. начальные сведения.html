@@ -1,0 +1,815 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+
+<style>
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+body {
+  font: 1.0em/1.4em Tahoma, Arial, Helvetica, sans-serif;
+  text-align: justify;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQImWO4d+/ef2TAgMy5d+8eQgCmkgGZ8/////8AQt4+NeQNbpAAAAAASUVORK5CYII=");
+  /*background: linear-gradient(#e0e0e0, white);*/
+  margin: 0.5em;
+}
+h1, h2, h3, h4, h5, h6, h7, h8 {
+  color: #996633;
+  margin: 40px 0 20px 0;
+}
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid #FF0000;
+    -webkit-transition: color .15s ease-out;
+    -moz-box-sizing: color .15s ease-out;
+    transition: color .15s ease-out;
+}
+.link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #00FF00;
+    -webkit-transition: color .15s ease-out;
+    -moz-box-sizing: color .15s ease-out;
+    transition: color .15s ease-out;
+}
+.monospaced, pre {
+  font: 1.2em/1.0em monospace;
+  /*font-size: 1.2em;*/
+  /*font-family: monospace;*/
+  /*background: #fdf6e3;*/
+  border: 1px solid #bfbfbf;
+  border-radius: 1px;
+  box-shadow: 0 0 5px rgba(117, 117, 117, 0.3);
+  /*padding: 6px 10px;*/
+  overflow-x: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+pre + code {
+  /*background: #e3e3e3,linear-gradient(90deg, hsl(40,20%,70%), hsl(40,100%,50%), hsl(40,10%,10%));*/
+  background-color: #3f3f3f;
+  display: block;
+  padding: 1em;
+}
+pre > code {
+  padding: 5px 20px;
+  font: 1.0em/1.0em monospace;
+  font-size: calc(100% + 0.0em);
+  color: #fff;
+}
+code {
+  font: 1.4em/1.0em monospace;
+  font-size: calc(100% + 0.3em);
+  background-color: #3f3f3f;
+  display: block;
+  color: #fff;
+  padding: 1em;
+  margin: 10px 0;
+}
+.admin {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAATCAYAAABPwleqAAAABmJLR0QA%2FwD%2FAP%2BgvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QIODg07hej8twAAAPVJREFUOMtjtLe3%2F89AJmBC4XHqMSiGTWAwDotjEOBkxC2GTTMTvw4DHxcDAwOXOoMAHytOMew2%2F2diYIQKM0JZWMWggAUiLsjAr%2B3AICihzMAMcSsDj34Ig%2FzXvwyM3EhiesEMMi8uMLy6eo3h1z%2BoZiZhJwZ5Y1sGZEexSZkyiKAFEJu0GYO4tAYD04tmhkevf0Oc%2Fe%2FrPYYvP4gM4h%2F3GT5%2F%2FcPAwMDAwIgcVUziMQx6niYMzAzfGd5tb2C4%2F%2FInVjHsAUZRPA8ZzaPxzPifAWLSf4b%2FjP9xi2HT%2FO%2FTdYbPPxgYGH7cZvj06TdOMbhdlJQkABGmfHksf2KWAAAAAElFTkSuQmCC);
+  background-size: 14px 16px;
+  background-position: top 10px right 10px;
+  background-repeat: no-repeat;
+}
+.user {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAYAAAABmx%2FyAAAABmJLR0QA%2FwD%2FAP%2BgvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QIODTcYAGDt5QAAAl9JREFUOMudlEtPE2EUhp%2B5tbSlBWrLVXCUW0wEEZEFmzEaNCSsjSt%2FgEsXrlmbuHFljP%2BAEBMvwRhZGBMXpigaNCIUazUiFWgZSqHttOOi0zojNAG%2B1XfmzDPvN%2Be83xE0TTM5whL3PJFaaRm%2Fw%2Fkbt2kLuw4BujuoC7lAbKUuHEA4MAj%2FXhbMgygKiP4ewmcu4C6LnxqlST2OtI%2BsoGmaieCipvs6XSODFci%2Bir%2BfsjAzQyZv2hUF5LZr9FaBAMTmcToHVcd%2FiQgNBM8NIQOQZOPdK3atZHbhOclMaa8EQ0g2UEYK4vVbR4pPEl8K0DNoxXqE2ONF9K5mssvvyTtAdjEMwAVivUqNkrKlTczdKGvz0X2qaiRIxpKlKHCF3qujeMpeqG1EkffvpKSq7RP5RByhbRi%2FV0BQPJU%2BSuEhmvpH8LtSpFdXKRQdoDpBMcXWcoQdsQlfKIRTxI07PEBju4t07Cu5wv8GMNZJRe4zPzWJVUgKKxH0bStouETnSB9KVcuZhco293Oa6KO7%2FFornVE6cZl6n1Ddq47vGD9IzH2hhIbw%2BpQyWINH1WhUWx0NtntY8tVaCjkKVoVkMTRG90UNBYPghwdEF%2B2MjNIyxsnhDstKS2xuGSWwuB0jk9eoU2R8Z2%2FSfzpT4TwDt%2BiTyw7Ooc9Ok86Vi7Mzx7cXT9CzVt7ltfmqDG2RenuP5cUNTMe1ApBDBHo0wp0D1B%2BzzJtdQf8%2By59Pr0ltZqtcZGMN%2FfMU0ZlnlT7ufHzI0puXe6Cq7ahcV1M4xLDKxtlcz0NhBT2hU23qCEedq38BARrE3XRNy94AAAAASUVORK5CYII%3D);
+  background-size: 12px 16px;
+  background-position: top 10px right 10px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+pre, code {
+  word-break : break-all; /* webkit */
+  word-wrap  : break-word;
+  word-wrap  : normal;
+  white-space: pre;
+  white-space: -moz-pre-wrap; /* fennec */
+  white-space: pre-wrap;
+  white-space: pre\9; /* IE7+ */
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* */
+#page-wrapper {
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+  border-left: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  padding: 1.5em;
+  margin: auto;
+  max-width: 1200px;
+}
+   @media screen and (min-width: 1200px) {
+    #page-wrapper {width:1100px;margin:0.5em;}
+   }
+   @media screen and (max-width: 1000px) {
+    #page-wrapper {margin:0.5em;}
+   }
+   @media screen and (max-width: 800px) {
+    #page-wrapper {margin:0;min-width:600px;}
+   }
+
+.region-bottom {
+  width: 100%;
+  position: relative;
+  margin-top: 1.5em;
+  height: 166px;
+}
+#block-block-5 {
+  font-size: 0.875em;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.category-title {
+  margin: 0 25px;
+}
+/* */
+
+.notetitle {
+  font: bold 1.0em/1.0 sans-serif;
+  color: #d7cfcf;
+  background: #2f2f2f; /* Цвет фона */
+  border: 1px solid #2f2f2f; /* Параметры рамки */
+ }
+.notetitle {
+  font-size: 16px; /* Размер текста */
+  display: inline-block; /* Заголовок равен ширине текста */
+  position: relative; /* Относительное позиционирование */
+  border-bottom: none; /* Убираем внизу линию */
+  margin-bottom: -1px; /* Сдвигаем вверх на толщину линии */
+  padding: 5px 10px; /* Поля вокруг заголовка */
+}
+.notetitle::after {
+  content: ''; /* Добавляем пустое содержание для тени */
+  display: block; /* Блочный элемент */
+  position: absolute; /* Абсолютное позиционирование */
+  top: -1px; bottom: 0;
+  left: -1px; right: -1px; /* Тень чуть больше ширины и высоты заголовка */
+  box-shadow: 0 0 5px rgba(117, 117, 117, 0.3); /* Тень */
+  z-index: -1; /* Тень под блоком текста */
+ }
+.note {
+  color: #2f2f2f;
+  border: 1px solid #2f2f2f; /* Параметры рамки */
+  background: #fdf6e3; /* Цвет фона */
+  padding: 7px; /* Поля вокруг текста */
+  margin: 1em 0 1em 0; /* Значение отступов */
+  box-shadow: 0 0 5px rgba(117, 117, 117, 0.3);
+}
+.date {
+  text-align: right;
+  color: #fff;
+  background: #999;
+  display: inline-block;
+}
+</style>
+
+<style type="text/css">
+/**
+ * @file
+ * HTML Element Styling
+ *
+ * Ok, I admit it. I fooled you. This isn't a "reset" stylesheet. Instead this
+ * is the place where you should set (not reset) the default styling for all
+ * HTML elements.
+ *
+ * @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+ * @see http://snook.ca/archives/html_and_css/no_css_reset/
+ */
+
+
+/*
+ * Fonts
+ *
+ * Our font size and line height declarations are based on the following
+ * articles:
+ * - http://www.alistapart.com/articles/howtosizetextincss
+ * - http://24ways.org/2006/compose-to-a-vertical-rhythm
+ *
+ * All modern browsers use a 16px default font size. Specifying the font-size
+ * and line-height in ems (relative to the 16px default font) allows the user
+ * to resize the font in the browser and produces the most consistent results
+ * across different browsers.
+ */
+body {
+  font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+}
+
+#skip-to-nav,
+#page {
+  /*
+   * To use a 12px font size on the page, delete the 14px declarations.
+   * to use a 14px font size on the page, delete the 12px declarations.
+   */
+
+  /* Use a 12px base font size with a 18px line height */
+  /* font-size: 0.75em; */ /* 16px x .75 = 12px */
+  /* line-height: 1.5em; */ /* 12px x 1.5 = 18px */
+
+  /* Use a 14px base font size with a 21px line height */
+  /* font-size: 0.875em; */ /* 16px x .875 = 14px */
+  /* line-height: 1.5em; */ /* 14px x 1.5 = 21px */
+
+  /* Use a 16px base font size */
+  /* font-size: 1em; */
+  /* line-height: 1.5em; */
+
+/*font-size: 0.875em;*/
+font-size: 0.875em;
+line-height: 1.5em;
+
+}
+
+/*
+ * Instead of relying on the fonts that are available on a user's computer, you
+ * can use web fonts which, like images, are resources downloaded to the user's
+ * browser. Because of the bandwidth and rendering resources required, web fonts
+ * should be used with care.
+ *
+ * Numerous resources for web fonts can be found on Google. Here are a few
+ * websites where you can find Open Source fonts to download:
+ * - http://www.fontsquirrel.com/fontface
+ * - http://www.theleagueofmoveabletype.com
+ *
+ * In order to use these fonts, you will need to convert them into formats
+ * suitable for web fonts. We recommend the free-to-use Font Squirrel's
+ * Font-Face Generator:
+ *   http://www.fontsquirrel.com/fontface/generator
+ *
+ * The following is an example @font-face declaration. This font can then be
+ * used in any ruleset using a property like this:  font-family: Example, serif;
+
+@font-face {
+  font-family: 'Example';
+  src: url('../fonts/example.eot');
+  src: url('../fonts/example.eot?iefix') format('eot'),
+    url('../fonts/example.woff') format('woff'),
+    url('../fonts/example.ttf') format('truetype'),
+    url('../fonts/example.svg#webfontOkOndcij') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ */
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset {
+  /* The following font family declarations are based on the Microsoft core web
+   * fonts which are common fonts available on most computer systems. The DejaVu
+   * and Nimbus Sans fonts are commonly available on Linux systems where the MS
+   * fonts are less common. Tahoma and Helvetica are also widely available.
+   *
+   * A user's web browser will look at the comma-separated list and will
+   * attempt to use each font in turn until it finds one that is available
+   * on the user's computer. The final "generic" font (sans-serif, serif or
+   * monospace) hints at what type of font to use if the web browser doesn't
+   * find any of the fonts in the list.
+
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Tahoma, Verdana, "DejaVu Sans", sans-serif;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+
+   */
+
+  font-family: Verdana,sans-serif;
+  outline: none;
+  color: #444444;
+}
+
+kbd,
+samp,
+tt,
+var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+
+codebox {
+  display: block;
+  /*border: 1px solid #DDD;*/
+  border: 1px solid #CCCCCC;
+  /*background: #EEE;*/
+  background: #F8F8F8;
+  font-family: monospace;
+  font-size: 1.1em;
+  margin-top: 1.571em;
+  margin-left: 0em;
+  max-height: 400px;
+  padding: 0.667em 0.917em;
+  overflow: auto;
+  clear: right;
+  white-space: nowrap;
+}
+
+
+pre {
+  display: block;
+  /*border: 1px solid #DDD;*/
+  border: 1px solid #CCCCCC;
+  /*background: #EEE;*/
+  background: #F8F8F8;
+  font-family: monospace;
+  font-size: 1.1em;
+  margin-top: 1.571em;
+  margin-left: 0em;
+  max-height: 400px;
+  padding: 0.667em 0.917em;
+  overflow: auto;
+  clear: right;
+  /*white-space: pre;*/
+}
+
+/*
+ * Block-level elements
+ *
+ * To achieve a pleasant vertical rhythm, we use the 1.5em line height of our
+ * base font as the top and bottom margins for our block level elements and make
+ * the line heights of any larger fonts be a multiple of 1.5 ems. For more
+ * information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+blockquote,
+ul, ol, dl,
+hr, table, fieldset {
+  margin: 1.5em 0;/
+}
+
+/* Headings */
+h1 {
+  color: #777777;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  margin: 0;
+  font-weight: 400;
+  margin-top: 0.5em;
+/*  margin: 0.75em 0; */
+  /* 0.75em is equivalent to 1.5em in the page's base font. font. Remember, a
+     margin specified in ems is relative to the element's font-size, not to the
+     pages' base font size. So, for example, if we want a 1.5em margin (relative
+     to the base font), we have to divide that length by the element's
+     font-size:  1.5em / 2em = 0.5em  */
+/*  margin: 0 25px; */
+}
+
+h3 {
+  border-bottom: 1px solid #EBEBEB;
+  clear: right;
+  color: #4E4E4E;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0.7em 0 0;
+  overflow: hidden;
+}
+
+h2 {
+ color: #4E4E4E;
+ font-size: 1.3em;
+ margin: 0;
+ overflow: hidden;
+ border-bottom: 4px double #EBEBEB;
+ line-height: 1.5em;
+ margin-top: 0.7em;
+ font-weight: bold;
+ clear: right;
+}
+
+.node.view-mode-full h2 {
+/* background: url("core-images/h2.png") no-repeat scroll left center / 18px auto rgba(0, 0, 0, 0); */
+/* padding-left: 1.3em; */
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.1em;
+  margin: 1.364em 0; /* Equivalent to 1.5em in the page's base font: 1.5 / 1.1 = 1.364 */
+}
+
+/* Other block-level elements */
+p {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+hr {
+  height: 1px;
+  border: 1px solid #666;
+}
+
+address {
+}
+
+/*
+ * Lists
+ *
+ * We need to standardize the list item indentation.
+ */
+ul,
+ol {
+  margin-left: 0; /* LTR */
+  padding-left: 2em; /* LTR */
+  /* overflow: auto; */
+}
+
+ul li.expanded {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.item-list ul /* Drupal overrides */ {
+  margin: 1.5em 0;
+  padding: 0 0 0 2em; /* LTR */
+}
+
+ul ul, ul ol,
+ol ol, ol ul,
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.item-list ul li,
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf /* Drupal override */ {
+  margin: 0;
+  padding: 0;
+}
+
+ul          { list-style-type: disc; }
+ul ul       { list-style-type: circle; }
+ul ul ul    { list-style-type: square; }
+ul ul ul ul { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+ol ol       { list-style-type: lower-alpha; }
+ol ol ol    { list-style-type: decimal; }
+
+dl {
+}
+
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 2em; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Tables
+ *
+ * Drupal provides table styling which is only useful for its admin section
+ * forms, so we override this default CSS. (We set it back in forms.css.)
+ */
+table {
+  border-collapse: collapse;
+  /* width: 100%; */ /* Prevent cramped-looking tables */
+}
+
+th {
+  text-align: left; /* LTR */
+  padding: 0;
+  border-bottom: none;
+}
+
+tbody {
+  border-top: none;
+}
+
+thead {
+}
+
+tfoot {
+}
+
+caption {
+}
+
+colgroup {
+}
+
+col {
+}
+
+tr {
+}
+
+td {
+}
+
+.table1 {
+  border: 1px solid #CCC;
+  border-radius: 10px 10px 10px 10px;
+  border-collapse: separate;
+  clear: left;
+}
+
+.table1 td:nth-child(1) {
+  text-align:center;
+}
+
+.table1 tr:nth-child(2n+1) {
+  background-color: #EEE;
+}
+
+.table1 th {
+  background-color: #CCC;
+  padding: 4px 10px;
+  text-align:center;
+}
+.table1 td {
+  padding: 2px 10px 4px;
+  border: 1px solid #CCC;
+}
+.table1 tr td {
+}
+
+.table1 tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+.table1 tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table1 tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.table1 tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+
+/*
+ * Forms
+ */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  padding: 0.5em;
+}
+
+legend {
+}
+
+label {
+}
+
+input {
+
+}
+
+select {
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #DCDCDC;
+  border-radius: 3px 3px 3px 3px;
+  margin-bottom: 5px;
+  outline: medium none;
+  padding: 8px;
+}
+
+textarea:focus {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #666666;
+  box-shadow: 0 0 5px #999999;
+}
+
+.button:link, .button:visited {
+  background-color: #464451;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    -webkit-transition: color .15s ease-out;
+    transition: color .15s ease-out;
+}
+.button:hover, .button:active {
+  background-color: #E32636;
+  color: white;
+  font-stretch: bold;
+}
+
+/*
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+
+a {
+  outline: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3F7FBF;
+}
+
+a:visited {
+  color: #3F7FBF;
+}
+
+a:hover {
+  color: #225E9B;
+  padding: 0;
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: underline;
+}
+
+a:active {
+}
+
+
+.node-title a {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #999;
+  padding: 2px 4px;
+  /*top, right, bottom, left text-decoration: none;*/
+  transition: 0.7s;
+  -moz-transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  font-size: 0.81em;
+}
+
+.node-title a:hover {
+  -moz-transition: color 0.2s linear 0s;
+  -webkit-transition: color 0.2s linear 0s;
+  -o-transition: color 0.2s linear 0s;
+  transition: color 0.2s linear 0s;
+  color: #225E9B;
+  padding: 0 0 0px;
+  text-decoration: underline;
+  }
+
+.node-title a:focus {
+  color: #225E9B;
+}
+
+
+/*
+ * Other inline elements
+ */
+img {
+  border: 0;
+  /* vertical-align: bottom; */ /* Suppress the space beneath the baseline */
+}
+
+abbr, /* Abbreviations */
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+q {
+}
+
+cite {
+}
+
+strong, b {
+}
+
+hl {
+  background-color: #EBEBE2;
+  padding: 0 1px;
+}
+
+
+em, i {
+}
+
+code,
+kbd,
+samp,
+tt,
+var /* Code, keyboard input, sample output, teletype, variable */ {
+}
+
+del {
+}
+
+ins {
+}
+
+big {
+}
+
+small {
+}
+
+sub {
+}
+
+sup {
+}
+</style>
+<link type="image/x-icon" rel="shortcut icon" href="data:image/gif;base64,R0lGODlhEAAQAMQQAGJUIpuMUeTbuuLYtevkzfHt4Ojhxu%2Fr2vbz6%2Fj28Pz8%2Bf3%2B%2F%2FTw5eXdwPn49O3o1f%2F%2F%2FwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABAALAAAAAAQABAAAAVeICCOJGSewKKuKgAFJwQodE27AWwCjpPnPVxulygai8IhAMFsMl0xGYPxC0wZpFFhy%2B12RYeweDwWPR7VdOAsIrjfcLjIQK%2Fb7aJGQ13ViwSAgYKCIgOGh4iIWYuLIQA7">
+<title>vim: начальные сведения</title>
+</head>
+
+<body id="top">
+
+<div id="page-wrapper">
+
+<h1>vim: начальные сведения</h1><p></p>
+<p>Текстовый редактор vi и его расширенная версия vim уже очень давно являются стандартом в мире Linux. С одной стороны, vim является очень мощным редактором, имеющим огромное количество возможностей, а с другой стороны, vi обычно присутствует в любой системе (даже минимальной, получаемой при загрузке в rescue-режиме с установочного компакт-диска дистрибутива), поэтому в некоторых случаях он может быть единственным имеющимся текстовым редактором (хотя бы для таких случаев, когда поправить какой-нибудь жизненно важный конфиг можно только vi, знать основы работы с ним необходимо всем).</p>
+<p>vi(m) существует в 3 вариантах: vi - небольшой консольный редактор, имеющий немного возможностей; vim - консольный редактор с расширенными возможностями; gvim - графический вариант vim. vim может быть собран без поддержки X Window System (полученный исполняемый файл будет называться vim), либо с ее поддержкой (тогда редактор можно будет вызвать командами vim или gvim, причем команда vim в консоли будет вызывать консольный вариант). Большую часть описываемых ниже действий можно производить и в vi, и в (g)vim.</p>
+<p>Для начала запустим vim командой vim newfile.txt (чтобы создать новый файл). Мы увидим пустое окно редактора с строкой статуса внизу, курсором в 1-й строке и значком ~ в начале всех остальных строк. Нижняя строка в vim обычно показывает текущую позицию в файле, кроме того, в ней вводятся команды vim, начинающиеся с двоеточия (об этом позже). Значки ~ в начале строк означают, что эти строки не принадлежат редактируемому файлу (т.е. конец файла находится над 1-й строчкой с ~). Сразу после запуска vim находится в т.н. основном режиме (normal mode), в котором текст вводить нельзя. В этом режиме можно выполнять команды обработки текста, нажимая различные клавиши с буквами (в этом основное отличие vim от других редакторов). В частности, перемещаться по тексту можно не только стрелками, но и клавишами h-j-k-l. Для эффективной работы в vim надо знать основные комбинации клавиш. Например, dd удаляет текущую строку, а gqap переформатирует текущий абзац. Но об этом ниже, а сейчас нажмем i или Ins и перейдем в режим вставки. Это обычный режим, в котором можно вводить текст. Наберите что-нибудь и нажмите Esc для возврата в основной режим. Теперь нажмите двоеточие. Внизу экрана откроется командная строка vim. Она нужна для ввода таких команд, как открытие, сохранение файлов, изменение настроек, поиск с заменой и т.д. Нажмите клавишу w и Enter. Файл newfile.txt будет записан на диск. Командой</p>
+<p>:w newfile2.txt<enter></enter></p>
+<p>можно сохранить редактируемый файл под другим именем. Команда</p>
+<p>:q<enter></enter></p>
+<p>выходит из vim. Комбинируя w и q, можно выйти с сохранением файла:</p>
+<p>:wq<enter></enter></p>
+<p>Если надо выйти без сохранения изменений, надо ввести команду</p>
+<p>:q!</p>
+<p>Самая полезная команда - помощь. Выполняется так:</p>
+<p>:help ключевое_слово</p>
+<p>Здесь ключевым словом может быть в т.ч. команда (например, :help :help), комбинация клавиш (:help dd) или просто слово-тема (:help syntax)</p>
+<p>Теперь рассмотрим некоторые команды основного режима. Напомню, что вводятся они простыми нажатиями клавиш (без двоеточия).</p>
+<p>Команды перемещения. Как я уже сказал, клавиши h, j, k и l передвигают курсор аналогично стрелкам. Клавиши w и b передвигают курсор на слово вперед и назад соответственно. Клавиши ^ и $ аналогичны Home и End (те, кто знаком с регулярными выражениями, сразу запомнят эти клавиши). Чтобы передвинуться на несколько "шагов" (слов, символов, строк) сразу, надо ввести цифрами количество шагов, а затем нажать клавишу передвижения. Например, 3w передвинет на 3 слова вперед. Большинство команд в vim позволяют выполнить их таким же образом заданное количество раз. Далее, комбинация gg переместит курсор в начало файла, а G (т.е. Shift-g) - в конец. 17gg или 17G переместят на 17-й строку файла. Клавиша % переместит к скобке, парной той, которая находится под курсором (если она есть).</p>
+<p>Команды отмены. Сначала скажу про очень важную icon_wink.gif для любого текстового редактора команду - команду отмены. Клавиша u отменяет последнюю операцию (поддерживается многоуровневая отмена, т.е. последовательные нажатия отменяют все более старые действия), U - все операции в текущей строке. Ctrl-R повторяет последнее отмененное действие (также многоуровнево).</p>
+<p>Команды удаления. Клавиша x (как и Del) удаляет символ под курсором, а X - перед курсором. Комбинация клавиши d и команды перемещения удаляет от курсора до позиции, в которую он переместился бы. Например, d$ удаляет до конца строки (это же делает клавиша D), dgg до начала файла, а d3w (как и 3dw) - следующие 3 слова. Такие команды (комбинация действия и команды перемещения) также часто используются в vim. dd удаляет текущую строку, а d3d - 3 строки, начиная от текущей.</p>
+<p>Команды редактирования. Обычно редактирование осуществляется в режиме вставки или режиме замены. Для переключения в режим вставки из основного, а также между вставкой и заменой служит клавиша Ins. Кроме того, клавишей i также можно переключиться из основного режима в режим вставки, а клавишей R - сразу в режим замены.Иногда полезны следующие команды переключения: a и A передвигают курсор соответственно на символ влево и до конца строки, а затем включают режим вставки. o и O сначала открывают новую строку соответственно ниже и выше курсора. c{перемещение} действует аналогично d{перемещение}, но после удаления переходит в режим вставки. Еще пара интересных команд - r{символ} заменяет символ под курсором на введенный, не выходя из основного режима (полезно, когда надо исправить в файле всего один символ - вообще не надо переключаться между режимами), ~ изменяет регистр символа под курсором.</p>
+<p>Команды работы с буферами обмена. В vim может быть несколько (более 60) буферов обмена (называемых здесь регистрами). Они названы символами a-z, A-Z и 0-9. Все приведенные ниже команды могут начинаться с символа " (кавычка), за которым следует обозначение используемого регистра (о различных регистрах, в т.ч. специальных, можно прочитать в встроенной справке по команде :help registers). Все операции удаления помещают удаляемый текст в регистр. Для копирования вместо d надо использовать клавишу y (одно отличие - Y копирует текущую строку). Для вставки используйте клавишу p (вставляет после курсора) или P (перед курсором).</p>
+<p>Визуальный режим. Одно из важнейших преимуществ vim перед vi. В визуальном режиме перемещение курсора выделяет текст. Перейти в этот режим из основного можно клавишей v (включается посимвольное выделение), V (выделяются целые строки) или Ctrl-V (прямоугольное выделение). Над выделенным текстом можно производить действия, в основном режиме требующие указания "передвижения". Так, работают одиночные клавиши d и y, а также gq (форматирует выделенный текст).</p>
+<p>Я перечислил лишь основные приемы работы vim. В частности, не были упомянуты возможности поиска и замены, ручное и автоматическое форматирование текста и т.д. Но об этом в другой раз. Кстати, кроме этой статьи новичкам в vim поможет программа vimtutor из состава vim.</p>
+
+<p align="center"> Поиск и замена</p>
+<p>Для простого поиска по содержимому буфера (от курсора вниз) в обычном режиме нажмите клавишу /, введите регулярное выражение и нажмите Enter. Для повторного поиска нажмите n. В строке для регулярного выражения можно клавишами "вверх" и "вниз" перебирать последние использованные образцы поиска. Для поиска вверх от курсора вместо / нажимайте ?.</p>
+<p>Команда для замены выглядит в общем виде так:</p>
+<p>:%s/что_заменить/на_что_заменить/флаги</p>
+<p>здесь % означает, что замена выполняется во всем файле (можно этот символ опустить, тогда замена будет производиться только в текущей строке). Строки для поиска и замены - обычные регулярные выражения (можете почитать :help regexp). Самые полезные из флагов это g (заменять все вхождения, а не только 1-е), c (запрашивать подтверждение замены), i (игнорировать регистр символов).</p>
+<p></p><p align="center"> Форматирование текста</p>
+<p>Команды :le, :ce и :ri выравнивают текст (точнее, по умолчанию текущую строку или выделенный в визуальном режиме блок) соответственно по левому краю, центру и правому краю. Ширина области текста определяется переменной textwidth. Комбинация клавиш gqap переформатирует текущий абзац (делая ширину каждой его строки меньше либо равной textwidth и дополняя слишком короткие строки словами из следующих).</p>
+<p></p><p align="center"> Некоторые полезности для программистов</p>
+<p>Автоматические отступы - это очень полезная вещь при написании программ. Если режим autoindent включен (командой :set autoindent или просто :set ai, в дальнейшем буду указывать лишь короткие имена режимов), каждая новая строка будет начата с таким же отступом, как предыдущая. Кроме того, если включен режим cindent (:set cin), при написании определенных конструкций, по правилам оформления кода требующих увеличения или уменьшения отступа, отступ будет автоматически изменен на величину shiftwidth (установите эту величину в соответствии с используемым стилем оформления).</p>
+<p>Беда всех программистов - отсутствие единообразия в использовании Tab для создания отступов и в принятой в различных редакторах длине Tab. В vim есть несколько параметров, связанных с этой проблемой. Режим smarttab (:set sta) при включении позволяет нажатием Tab в начале строки вводить не tabstop символов, а shiftwidth, т.е. величину принятого отступа вместо принятого размера Tab. Параметр tabstop равен числу символов, в которые "раскрывается" на экране встреченный vim'ом в файле символ Tab. Режим expandtab (:set et) заставляет vim при открытии файла заменять все символы Tab на соответствующее число пробелов, причем при простом сохранении такого файла пробелы будут сохранены вместо символов Tab. Поэтому при редактировании файла, раскрытие Tab'ов в котором нежелательно (например, .diff-файлы или Makefile), имеет смысл сразу после открытия дать команду :set noet ts=8 (что равносильно :set noexpandtab и :set tabstop=8).</p>
+<p>Клавиши &lt; и &gt; сдвигают выделенный блок на величину shiftwidth влево и вправо соответственно.</p>
+<p>Клавиша = форматирует выделенный в визуальном режиме блок на основе того же алгоритма, что и cindent. Впрочем, можно выставить значение переменной equalprg равным, например, indent - программе для автоматического форматирования C-исходников (о ней я обязательно расскажу как-нибудь).</p>
+
+</div>
+
+</body>
+</html>
