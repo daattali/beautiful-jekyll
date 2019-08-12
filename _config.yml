@@ -4,7 +4,7 @@
 title: johny.zlo notes
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: short notes
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -89,7 +89,8 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
-  linkedin: true
+  github: true
+  #linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
