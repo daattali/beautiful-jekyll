@@ -1,3 +1,9 @@
+---
+layout: post
+title: Addition utilities
+image: /img/pinguinchik.svg
+---
+
 # addition components (#top)
 
 <h3 id="nav"> navigations </h3>
