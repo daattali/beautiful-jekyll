@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Addition utilities
-#image: /img/pinguinchik.svg
 ---
 
 # addition components (#top)
