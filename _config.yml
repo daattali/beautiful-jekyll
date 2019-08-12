@@ -67,7 +67,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+  rss: false
   email: "johnyzlo@yahoo.com"
   facebook: johnyzlo
   github: johnyzlo
@@ -87,7 +87,8 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  email: true
+  #twitter: true
   facebook: true
   github: true
   #linkedin: true
@@ -157,7 +158,7 @@ title-separator: "-"
 timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:year/:month/:day/:title.html #/:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
