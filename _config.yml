@@ -51,9 +51,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+navbar-img: "/img/bgimage.png"
+footer-img: "/img/bgimage.png"
+page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
 
@@ -67,7 +67,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: false
+  #rss: false
   email: "johnyzlo@yahoo.com"
   facebook: johnyzlo
   github: johnyzlo
@@ -87,15 +87,15 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  email: true
+  #email: true
   #twitter: true
-  facebook: true
-  github: true
+  #facebook: true
+  #github: true
   #linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "johnyzlo.github.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "johnyzlo.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -130,7 +130,7 @@ url-pretty: "johnyzlo.github.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
-  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  repository : JohnyZlo/johnyzlo.github.io # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
   endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
   reCaptcha:
