@@ -1,13 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Need added more simple information
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+*My name is johny.zlo. It's my site for notes*
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- cheatsheets
+- informations
+- keybindings
+- notes
 
 What else do you need?
 
