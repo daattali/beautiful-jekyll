@@ -85,7 +85,7 @@ board_p <- ggplot(game_board, aes(x, y)) +
 print(board_p)
 ```
 
-![The actual 'board'](img/real_board.jpg)
+![The actual 'board'](/img/real_board.jpg)
 
 Maybe not a marketing success, but functionally the same.
 
