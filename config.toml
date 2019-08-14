@@ -1,4 +1,4 @@
-baseurl = "https://alexwhan.com/"
+baseurl = "http://alexwhan.com/"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 title = "Inscrutable Errors"
