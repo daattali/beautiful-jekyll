@@ -1,3 +1,11 @@
+---
+layout: post
+title: List of Free Learning Resources
+subtitle: (https://ebookfoundation.github.io/free-programming-books/)[https://ebookfoundation.github.io/free-programming-books/]
+tags: [notes]
+comments: true
+---
+
 ### Index
 
 * [0 - Language Agnostic](#0---language-agnostic)
