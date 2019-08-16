@@ -1,10 +1,10 @@
 ---
 layout: post
 title: List of Free Learning Resources
-subtitle: [https://ebookfoundation.github.io/free-programming-books/](https://ebookfoundation.github.io/free-programming-books/)
 tags: [notes]
 comments: true
 ---
+# List of Free Learning Resources [https://ebookfoundation.github.io/free-programming-books/](https://ebookfoundation.github.io/free-programming-books/)
 
 ### Index
 
