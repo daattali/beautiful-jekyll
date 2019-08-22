@@ -4,13 +4,13 @@ title: macOS
 subtitle: MDS software stack install instructions for macOS
 ---
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- runs one of the following operating systems: macOS Yosemite 10.10.3 or later, Ubuntu 14.04 or later, Windows 10 Professional, Enterprise or Education (1511 November update, Build 10586 or later).
-- can connect to networks via a wireless connection (and preferably also a wired connection)
-- has at least 40 GB disk space available
-- has at least 4 GB of RAM
-- uses a 64-bit CPU
-- is 4 years old or newer at the start of the program
-- uses English as the default language
+- runs one of the following operating systems: macOS Yosemite 10.10.3 or later;
+- can connect to networks via a wireless connection (and preferably also a wired connection);
+- has at least 40 GB disk space available;
+- has at least 4 GB of RAM;
+- uses a 64-bit CPU;
+- is 4 years old or newer at the start of the program;
+- uses English as the default language;
 
 ## Table of Contents
 - [GitHub](#github)
@@ -18,9 +18,8 @@ These instructions will walk you through installing the required Data Science so
 - [Python and Jupyter](#python)
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
-- [Atom Text Editor](#atom-text-editor)
+- [Visual Studio Code](#visual-studio-code)
 - [LaTeX](#latex)
-- [SQLite](#sqlite)
 - [Make](#make)
 - [Docker](#docker)
 
@@ -42,8 +41,6 @@ This step is required for
 - working collaboratively
 
 
-
-
 ## Git
 
 We will be using the command line version of Git as well as Git through RStudio. 
@@ -62,16 +59,16 @@ git --version
 you should see something like this if you were successful:
 
 ```
-git version 2.17.0
+git version 2.23.0
 ```
 
 If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
 
 ## Python
 
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.6
+We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
 
-Head to https://www.anaconda.com/download/#macos and download the Anaconda version for Mac OS with **Python 3.6**. Follow the instructions on that page to run the installer.
+Head to https://www.anaconda.com/download/#macos and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
 
 After installation, in terminal type the following to ask for the version:
 ```
@@ -80,26 +77,28 @@ python --version
 you should see something like this if you were successful:
 
 ```
-Python 3.6.5 :: Anaconda custom (64-bit)
+Python 3.7.3 (default, Mar 27 2019, 22:11:17) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
 ```
 
-If instead you see `Python 2.7.X :: Anaconda custom (64-bit)` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.6**.
+If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution type the following in the terminal:
+To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Powershell and type the following:
 
 ```
-jupyter notebook
+jupyter lab
 ```
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
 
-![](/resources_pages/imgs/jupyter.png)
+![](/resources_pages/imgs/jupyter_lab.PNG)
 
 
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
+If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In powershell, type the following:
 ```
-    conda update conda
-    conda update anaconda
+conda update conda
+conda update anaconda
 ```
 
 ## R, IRkernel and RStudio
@@ -115,15 +114,15 @@ R --version
 
 you should see something like this if you were successful:
 ```
-R version 3.5.0 (2018-04-23) -- "Joy in Playing"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
+R version 3.6.1 (2019-07-05) -- "Action of the Toes"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
 GNU General Public License versions 2 or 3.
 For more information about these matters see
-http://www.gnu.org/licenses/.
+https://www.gnu.org/licenses/.
 ```
 
 #### RStudio
@@ -148,47 +147,39 @@ Next, open terminal and type the following:
 R -e "IRkernel::installspec()"
 ```
 
-To see if you were successful, try running Jupyter Notebook and seeing if you have working R kernel. To launch the Jupyter type the following in the terminal:
+To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
 
 ```
-jupyter notebook
+jupyter lab
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. Now click on "New" and then "R" (circled in red on the screenshot below) to launch an Jupyter notebook with an R kernel.
+A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
 
-![](/resources_pages/imgs/IR_kernel_1.png)
-
-A notebook is using the R kernel if you see R in the right-hand side of the notebook (circled in red on the screenshot below).
-
-![](/resources_pages/imgs/IR_kernel_2.png)
+![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
 
 Sometimes a kernel loads, but doesn't work if installation was not done correctly. To test whether your installation was done correctly now type `(x <- 5)` in the code cell and click on the run button to run the cell. If your R kernel works you should see the number 5 printed below the cell.
 
-![](/resources_pages/imgs/IR_kernel_3.png)
+![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-### PostgreSQL 
+## PostgreSQL 
 
 We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256715). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` to test if you were successful.
 
-## Atom Text Editor
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Atom.
+### Visual Studio Code
 
-Got to https://flight-manual.atom.io/getting-started/sections/installing-atom/ and follow the installation instructions. 
+We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Follow the installation instructions.
 
-To test that atom is installed and can be opened from the command line/terminal, in terminal type the following to ask for the version:
+You can test that VS code is installed and can be opened from the Powershell by running the following command:
 
 ```
-which atom
+code --version
 ```
 
 you should see something like this if you were successful:
 ```
-/usr/local/bin/atom
-```
-
-If `which atom ` command doesn't return anything then you need to do more work to install the `atom` and `apm` commands. Open Atom by clicking on its icon (from Finder, Applications or Launchpad) and then type Cmd+Shift+P to get the "Command Palette" (a free form text prompt - see the image below) and in that type: "Window: Install Shell Commands". You will be prompted for an administrator password.
-
-![](/resources_pages/imgs/atom_cp.png)
+1.36.1
+2213894ea0415ee8c85c5eea0d0ff81ecc191529
+x64
 
 ## LaTeX
 
@@ -215,28 +206,6 @@ Compiled with libpng 1.6.21; using libpng 1.6.21
 Compiled with zlib 1.2.8; using zlib 1.2.8
 Compiled with xpdf version 3.04
 ```
-
-## SQLite
-
-SQLite should already be installed on your Mac. To be sure, in terminal type the following to open SQLite:
-
-```
-sqlite3
-```
-
-you should see something like this if it is installed:
-```
-SQLite version 3.13.0 2016-05-18 10:57:30
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
-sqlite>
-```
-
-Type `.quit` to exit.
-
-If for some reason SQLite is not already installed, follow the instructions [here](http://www.tutorialspoint.com/sqlite/sqlite_installation.htm) under the "Install SQLite on Mac OS X" header
-
 
 ## Make
 We will be using Make to automate our analysis scripts. More on this later! You should have this installed if you ran the command ```xcode-select --install``` from the [Git installation instructions](#git). If you didn't yet install Git, do this now!
