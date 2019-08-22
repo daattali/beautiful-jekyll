@@ -180,6 +180,7 @@ you should see something like this if you were successful:
 1.36.1
 2213894ea0415ee8c85c5eea0d0ff81ecc191529
 x64
+```
 
 ## LaTeX
 
