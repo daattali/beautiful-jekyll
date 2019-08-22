@@ -169,6 +169,14 @@ We will be using PostgreSQL as our database management system. You can download 
 
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Follow the installation instructions.
 
+Once the installation finishes, run the following command in Terminal:
+```
+cat << EOF >> ~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
+
 You can test that VS code is installed and can be opened from Terminal by running the following command:
 
 ```
