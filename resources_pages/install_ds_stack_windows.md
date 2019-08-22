@@ -166,7 +166,7 @@ R scripting front-end version 3.6.1 (2019-07-05)
 
 ### PostgreSQL 
 
-We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256714). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure to remember it later. For all the other options, use the default. You can execute `SQL Shell` to test if you were successful.
+We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256714). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` to test if you were successful.
 
 ### Visual Studio Code
 
