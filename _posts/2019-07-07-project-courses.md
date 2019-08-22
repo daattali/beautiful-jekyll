@@ -61,4 +61,4 @@ Although our project courses seem to be effective, a caveat to consider before i
 Overall, from our experience with the UBC MDS program, I believe that project-based courses are necessary for a well-rounded data science education. These courses give students the opportunity to work in more real-world situations where the "right" answer is less well-defined, collaboration is required and many aspects of data science are brought together. We also believe that students should have the opportunity to do more than one project in their data science program so that they can repeatedly practice an entire project from beginning to end in a lower stakes environment before they are required to do so on the job. 
 
 --------
-[Tiffany Timbers](https://www.tiffanytimbers.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Computer Science.
+[Tiffany Timbers](https://www.tiffanytimbers.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Statistics.
