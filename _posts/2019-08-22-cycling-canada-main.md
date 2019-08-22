@@ -16,7 +16,7 @@ The trip itself took 48 days (including 3 rest days), and we covered over 6,500k
 
 ![shaka on highway](https://i.imgur.com/o6EbUxh.jpg)
 
-When we arrived in the prairies I was pleased to discover they were not as boring as most people may think. Although extremely flat, we saw lots of wildlife, and had some amazing experiences. If you ever end up in Piapot Saskatchewan make sure to go here:  http://www.piapotsaloon.com/history.htm and ask for Glen. We had one of our most memorable nights. It involved shotguns, pickup trucks, and great hospitality.
+When we arrived in the prairies I was pleased to discover they were not as boring as most people may think. Although extremely flat, we saw lots of wildlife, and had some amazing experiences. If you ever end up in Piapot Saskatchewan make sure to go to the [Piapot Saloon](http://www.piapotsaloon.com/history.html) and ask for Glen. We had one of our most memorable nights. It involved shotguns, pickup trucks, and great hospitality.
 
 ![cycling on highway](https://i.imgur.com/4EHf8ST.jpg)
 
