@@ -4,6 +4,8 @@ title: Cycling Across Canada Route
 tags: [cycling, outdoors]
 ---
 
+### [Trip Home](http://samedwardes.com/2019-08-22-cycling-canada-main/) | [Route](http://samedwardes.com/2019-08-22-cycling-canada-route/)
+
 The trip began in Victoria B.C. where we dipped our tires into the Pacific Ocean at the Terry Fox Memorial. From there we cycled East to Halifax where we finished at Crystal Crescent Beach, dipping our tires into the Atlantic.
 
 ## Trip Route

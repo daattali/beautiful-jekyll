@@ -2,9 +2,9 @@
 title: Data Science
 ---
 
-> *Page under construction*
-
 Here are links to a few of my favourite projects:
-- [Tableau Public Profile](https://public.tableau.com/profile/sam.edwardes#!/)
-- [Shiny App Server Location Prediction](https://samedwardes.shinyapps.io/location-predictions/)
-- [R mardownd plotly example](http://samedwardes.com/euro_assylum/European_Asylum_noCode)
+
+| Project | Details | Image |
+|---------|---------|-------|
+| [Tableau Public Profile](https://public.tableau.com/profile/sam.edwardes#!/)  | My public profile of Tableau visualizations. | |
+| [Text Prediction Model]( https://samedwardes.shinyapps.io/text-prediction-model/) | The text prediction model uses the so called "Stupid Backoff" to predict what the next word you wish to type is based on the previously typed words. | ![screenshot of text prediction app](https://i.imgur.com/igWgVTk.png) |
