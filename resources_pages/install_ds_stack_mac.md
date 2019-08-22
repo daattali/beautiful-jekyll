@@ -84,7 +84,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution, restart bash and type the following:
+To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Terminal and type the following:
 
 ```
 jupyter lab
@@ -95,7 +95,7 @@ A browser should have launched and you should see a page that looks like the scr
 ![](/resources_pages/imgs/jupyter_lab.PNG)
 
 
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In bash, type the following:
+If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In Terminal, type the following:
 ```
 conda update conda
 conda update anaconda
@@ -147,7 +147,7 @@ Next, open terminal and type the following:
 R -e "IRkernel::installspec()"
 ```
 
-To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in bash:
+To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in Terminal:
 
 ```
 jupyter lab
@@ -169,7 +169,7 @@ We will be using PostgreSQL as our database management system. You can download 
 
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Follow the installation instructions.
 
-You can test that VS code is installed and can be opened from Bash by running the following command:
+You can test that VS code is installed and can be opened from Terminal by running the following command:
 
 ```
 code --version
