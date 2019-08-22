@@ -2,6 +2,7 @@
 layout: post
 title: Cycling Across Canada
 tags: [cycling, outdoors]
+image: https://i.imgur.com/jSPI62V.jpg
 ---
 
 ### [Trip Home](http://samedwardes.com/2019-08-22-cycling-canada-main/) | [Route](http://samedwardes.com/2019-08-22-cycling-canada-route/)
