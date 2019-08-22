@@ -62,3 +62,5 @@ Overall, from our experience with the UBC MDS program, I believe that project-ba
 
 --------
 [Tiffany Timbers](https://www.tiffanytimbers.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Statistics.
+
+[Mike Gelbart](https://www.mikegelbart.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Computer Science.
