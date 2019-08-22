@@ -20,7 +20,7 @@ All projects are developed openly on GitHub.com. Students are required to commun
 Below we briefly describe the project courses in the MDS program. The courses titles link to our [publicly available teaching materials](https://github.com/ubc-mds/public) for each course. 
 
 #### 1. [DSCI 522: Data Science Workflows](https://github.com/UBC-MDS/DSCI_522_dsci-workflows)
-Here the project involves a complete data analysis, from data import to communication of results, with emphasis on reproducibility and transparency. Students are asked to identify a data set, question and hypothesis for the analysis. To complete the analysis they write 4-5 R and Python scripts, as well as a reproducible report (in [Jupyter](https://jupyter.org/) or [R Markdown](https://rmarkdown.rstudio.com/)), and they automate their data analysis workflow using GNU Make. Software and environment dependencies are made shippable and shareable via containerization with Docker. 
+Here the project involves a complete data analysis, from data import to communication of results, with emphasis on reproducibility and transparency. Students are asked to identify a data set, question and hypothesis for the analysis. To complete the analysis they write 4-5 R and Python scripts, as well as a reproducible report (in [Jupyter](https://jupyter.org/) or [R Markdown](https://rmarkdown.rstudio.com/)), and they automate their data analysis workflow using GNU Make. Software and environment dependencies are made shippable and shareable via containerization with Docker.
 
 #### 2. [DSCI 532: Data Visualization II](https://github.com/UBC-MDS/DSCI_532_viz-2)
 Here the project involves creating an interactive data visualization app. Students are asked to identify a data set and use an interactive data visualization tool (e.g., R Shiny or Plotly Dash) to create and deploy an interactive dashboard for exploratory data analysis. Emphasis is placed on iterative improvements of the interactive dashboard based upon user feedback. 
@@ -61,6 +61,11 @@ Although our project courses seem to be effective, a caveat to consider before i
 Overall, from our experience with the UBC MDS program, we believe that project-based courses are necessary for a well-rounded data science education. These courses give students the opportunity to work in more real-world situations where the "right" answer is less well-defined, collaboration is required and many aspects of data science are brought together. We also believe that students should have the opportunity to do more than one project in their data science program so that they can repeatedly practice an entire project from beginning to end in a lower stakes environment before they are required to do so on the job. 
 
 --------
+
+## Authors:
 [Tiffany Timbers](https://www.tiffanytimbers.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Statistics.
 
 [Mike Gelbart](https://www.mikegelbart.com/) is Option Co-Director of the MDS Vancouver program and an Instructor in the UBC Department of Computer Science.
+
+## Acknowledgements: 
+We would like to acknowledge [Tiffany Timbers](https://www.tiffanytimbers.com/), [Vincenzo Coia](https://vincenzocoia.github.io/), [Varada Kolhatkar](https://kvarada.github.io/), [Meghan Allen](https://www.cs.ubc.ca/~meghana/), [Tamara Munzner](https://www.cs.ubc.ca/~tmm/), [Cydney Neilson](http://www.cydney.org/Home.html) and [Paul Gustafson](http://www.paulgstf.com/) as the Instructors who developed, shaped and delivered the project-based courses in MDS over the last three years. 
