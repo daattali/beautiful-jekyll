@@ -5,8 +5,6 @@ tags: [cycling, outdoors]
 image: https://i.imgur.com/jSPI62V.jpg
 ---
 
-### [Trip Home](http://samedwardes.com/2019-08-22-cycling-canada-main/) | [Route](http://samedwardes.com/2019-08-22-cycling-canada-route/)
-
 During my first year of university my friend Cory and I began to plan a cycling trip across Canada. I don’t exactly remember where the idea came from, but it quickly developed from a dream to something that could actually happen. We decided to raise money for the B.C. Cancer Foundation, as both of our families have been effected by cancer. We raised over $15,000 from friends, families, and local businesses. The experiences of fundraising, and the completion of the actual cycling trip have been two of the most rewarding experiences of my life.
 
 ![Sam and Cory Pacific Ocean start](https://i.imgur.com/jSPI62V.jpg)
@@ -30,3 +28,5 @@ Quebec and the Maritimes provided safer riding, and the amazing feeling of the f
 ![Imgur](https://i.imgur.com/JMBZgpu.jpg)
 
 After 47 days of cycling we arrived to the outskirts of Halifax late at night and crashed at Cory’s father’s house in Waverly. At this point it felt like we had finally accomplished our goal. We were able to sleep in, and the next morning set out on a short ride to Crystal Crescent Beach where we decided we would finish. Cory’s cousin joined us for the final day, and a small welcome party awaited us on the beach. Several km out we grabbed a bottle of Champagne to pop, and minutes later we dipped our tires into the Atlantic ocean, signifying the completion of our coast to coast journey. After 48 days of soar muscles, sunshine, rain, speed, headwinds and tailwinds it felt surreal that it was over. It took my body several days to realize that it could finally rest, and I felt very tired and weak for several days after the trip. If you have the time and funds to make this trip happen it is 100% worth it. You will be tested in every way, and it is not easy, but nothing worth doing is. Go out there, explore, and try it for yourself.
+
+### [Trip Home](http://samedwardes.com/2019-08-22-cycling-canada-main/) | [Route](http://samedwardes.com/2019-08-22-cycling-canada-route/)
