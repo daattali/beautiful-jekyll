@@ -181,6 +181,7 @@ R
 This will open R in terminal. In R, type:
 
 ```
+install.packages('tidyverse')
 install.packages('IRkernel')
 ```
 
@@ -199,7 +200,7 @@ A browser should have launched and you should see a page that looks like the scr
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
 
-Sometimes a kernel loads, but doesn't work if installation was not done correctly. To test whether your installation was done correctly now type `(x <- 5)` in the code cell and click on the run button to run the cell. If your R kernel works you should see the number 5 printed below the cell.
+Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
