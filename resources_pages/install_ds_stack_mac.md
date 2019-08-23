@@ -107,7 +107,7 @@ We will be using R, another programming language, a lot in the program. We will 
 #### R
 Go to https://cran.r-project.org/bin/macosx/ and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
 
-After installation, in terminal type the following to ask for the version:
+After installation, in Terminal type the following to ask for the version:
 ```
 R --version
 ```
@@ -124,6 +124,9 @@ GNU General Public License versions 2 or 3.
 For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
+
+Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
+
 
 #### RStudio
 Chose and download the Mac version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. Open the file and follow the installer instructions.
