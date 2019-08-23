@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Project courses in MDS
+share-img: "https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/mds-group-contract.jpg?raw=true"
 ---
 
 How can we train effective data scientists? Traditional lecture/lab-based courses typically involve prescribed and well-defined examples, and we found this format very effective for foundational courses that focus on a particular area of statistics, machine learning or computer programming. However,  real-world data science differs greatly from these courses: data is messy, the tasks are not perfectly defined, knowledge must be integrated from various areas of data science, and collaboration with others is typically required. Our [Master of Data Science](https://ubc-mds.github.io/about/) (MDS) program ends with an [8-week full-time Capstone course](https://ubc-mds.github.io/capstone/about/), which provides much of the needed hands-on experience. However, based on student and instructor feedback, it was evident that we needed to do more. Thus, to augment and prepare students for Capstone, we have started transforming some of our traditional lecture/lab-based courses into smaller project-based courses as well.
