@@ -1,10 +1,38 @@
 [
     {
-        "title": "The Prince",
-        "url": "https://www.goodreads.com/book/show/28862.The_Prince",
-        "author": "Niccolò Machiavelli",
+        "title": "Effective Java Programming Language Guide",
+        "url": "https://www.goodreads.com/book/show/105099.Effective_Java_Programming_Language_Guide",
+        "author": "Joshua Bloch",
         "comment": "In progress...",
         "rating": "TBD"
+    },
+    {
+        "title": "Growing Object-Oriented Software, Guided by Tests",
+        "url": "https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests",
+        "author": "Steve Freeman, Nat Pryce",
+        "comment": "In progress...",
+        "rating": "TBD"
+    },
+    {
+        "title": "ATDD by Example: A Practical Guide to Acceptance Test-Driven Development",
+        "url": "https://www.goodreads.com/book/show/13705173-atdd-by-example",
+        "author": "Markus Gärtner",
+        "comment": "In queue...",
+        "rating": "In queue..."
+    },
+    {
+        "title": "Domain-Driven Design Distilled",
+        "url": "https://www.goodreads.com/book/show/28602719-domain-driven-design-distilled",
+        "author": "Vaughn Vernon",
+        "comment": "In queue...",
+        "rating": "In queue..."
+    },
+    {
+        "title": "The Pragmatic Programmer: From Journeyman to Master",
+        "url": "https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer",
+        "author": " Andy Hunt",
+        "comment": "A lot of useful advices about how to write quality code presented in the form of analogies and short stories.",
+        "rating": "⭐️️️️️️️⭐️️️️️️️⭐️️️️️️️⭐️️️️️️️"
     },
     {
         "title": "The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win",
