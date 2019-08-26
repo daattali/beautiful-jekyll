@@ -16,6 +16,12 @@ Students may miss **one** quiz or assignment (across the whole program) without 
 
 Students who miss more than 3 days of classes/labs in a row need to provide documentation in the form of a doctor's note or written request for leave to the MDS Leadership Team. Failing to present a doctor's note or written request may result in a failing grade. The Leadership Team will contact the student with an action plan to make up any missed quizzes or assignments.
 
+#### Late arrivals in lecture
+
+Students arriving late to MDS lectures can be distracting for the instructor and other students. While the ideal solution is for everyone to arrive on time, the following procedures are in place to minimize the disruption caused by any late arrivals.
+
+In our main lecture hall, DMP 110, all students arriving late must enter through the east door, which leads to the back of the lecture hall. Furthermore, late students shall only sit in the folding seats at the back wall or stand in the northeast corner, until a break or group activity in the lecture, at which time you are free to take a regular seat.
+
 ## Grades and Academic Standing
 
 #### General grading scheme
