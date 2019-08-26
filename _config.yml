@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: My website
+title: Become to Developer
 
 # Short description of your site
 description: A virtual proof that I'm awesome
@@ -22,9 +22,8 @@ description: A virtual proof that I'm awesome
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+    - Huu Duan: "http://fb.com/duannhqb"
+  Author's home: "http://fb.com/duannhqb"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -68,10 +67,9 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "duannhqb@gmail.com"
+  facebook: duannhqb
+  github: duannhqb
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -80,7 +78,7 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+   telephone: +84389185187
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -93,7 +91,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "duannhqb.githud.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
