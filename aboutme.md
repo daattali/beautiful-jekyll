@@ -1,16 +1,21 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: software engineer enjoying to learn new things. 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### tech stack
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Front-end
+  - Javascript
+    - React & Redux
+    - Backbone & marionette
+  - HTML&CSS
+    - SCSS 
 
-What else do you need?
+- Server-side
+  - Python
+    - Django framework
+  - Java
+    - Spring 
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
