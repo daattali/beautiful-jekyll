@@ -1,7 +1,15 @@
 ---
 layout: post
-title: First post!
+title: My first dev blog post
 image: /img/hello_world.jpeg
 ---
 
-This is my first post, how exciting!
+It's my first dev blog post. I already have another blog, but it left for a log time.
+
+I will write something here about my developer life.
+In a short time something will be posted.
+
+Hope happy dev life :)
+
+See you soon.
+
