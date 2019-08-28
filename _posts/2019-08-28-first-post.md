@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My first dev blog post
+category: etc
 ---
 
 It's my first dev blog post. I already have another blog, but it left for a long time.
