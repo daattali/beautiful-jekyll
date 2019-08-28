@@ -28,7 +28,7 @@ These instructions will walk you through installing the required Data Science so
 In MDS we will use [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
 
 #### GitHub.com
-If you do not yet have one, sign up for a free account at https://github.com/ .
+If you do not yet have one, sign up for a free account at [GitHub.com](https://github.com/).
 
 #### GitHub.ubc.ca
 For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login using your CWL:
