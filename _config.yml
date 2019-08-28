@@ -6,9 +6,6 @@ title: Dioong's dev log
 # Short description of your site
 description: A virtual proof that I'm awesome
 
-disqus_url: http://disqus.com/by/dioong
-disqus_id: dioong
-
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -115,7 +112,7 @@ share-links-active:
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "dioong"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
