@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My first dev blog post
-image: /img/hello_world.jpeg
 ---
 
 It's my first dev blog post. I already have another blog, but it left for a long time.
