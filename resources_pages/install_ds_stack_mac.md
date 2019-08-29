@@ -43,14 +43,18 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio. 
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. There are some new Git commands that we will use that are only available as of Git 2.23, thus to get this newest version we will ask you to install Git using a tool called [Homebrew](https://brew.sh/), and thus we will install Homebrew first and then Git. 
 
-Open Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and type the following command:
+Open Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and type the following command to install Homebrew:
 ```
-xcode-select --install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-This will install git and many other very useful applications as well (including Make).
+Next, install Git using Homebrew. Do this by typing the following in the Terminal:
+
+```
+brew install git
+```
 
 After installation, in terminal type the following to ask for the version:
 ```
