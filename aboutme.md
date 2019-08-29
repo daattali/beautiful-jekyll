@@ -9,6 +9,8 @@ subtitle: software engineer enjoying to learn new things.
 - Front-end
   - Javascript
     - React & Redux
+    - Typescript
+    - Rxjs 
     - Backbone & marionette
   - HTML&CSS
     - SCSS 
