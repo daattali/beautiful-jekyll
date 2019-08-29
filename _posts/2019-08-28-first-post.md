@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My first dev blog post
-category: life
 tags: [life]
 ---
 
