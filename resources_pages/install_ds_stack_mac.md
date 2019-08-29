@@ -105,7 +105,7 @@ conda update anaconda
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
 #### R
-Go to https://cran.r-project.org/bin/macosx/ and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
+Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
 
 After installation, in Terminal type the following to ask for the version:
 ```
@@ -129,7 +129,7 @@ Note: Although it is possible to install R through Anaconda, we highly recommend
 
 
 #### RStudio
-Chose and download the Mac version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. Open the file and follow the installer instructions.
+Chose and download the Mac version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
@@ -140,11 +140,10 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 Open RStudio and type the following commands into the Console panel:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest', 'tidyverse'))
-devtools::install_github('IRkernel/IRkernel')
+install.packages(c('IRkernel', 'tidyverse'))
 ```
 
-Next, open terminal and type the following:
+Next, open **terminal** and type the following:
 
 ```
 R -e "IRkernel::installspec()"
