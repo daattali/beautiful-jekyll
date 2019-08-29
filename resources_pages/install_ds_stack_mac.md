@@ -179,7 +179,7 @@ export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/
 EOF
 ```
 
-You can test that VS code is installed and can be opened from Terminal by running the following command:
+You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
 ```
 code --version
@@ -198,11 +198,11 @@ LaTeX allows to use syntax to write nicely formatted mathematical expressions an
 
 1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg). 
 2. Open the ```.pkg``` file and run the installer with default options.
-3. BasicTeX has a few missing files we'll need. To install these files, open terminal and run:
+3. BasicTeX has a few missing files we'll need. To install these files, restart terminal and run:
 ```
-$ sudo tlmgr update --self
-$ sudo tlmgr install framed
-$ sudo tlmgr install titling
+sudo tlmgr update --self
+sudo tlmgr install framed
+sudo tlmgr install titling
 ```
 
 After installation, in terminal type the following to ask for the version:
@@ -212,10 +212,18 @@ latex --version
 you should see something like this if you were successful:
 
 ```
+pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019)
+kpathsea version 6.3.1
+Copyright 2019 Han The Thanh (pdfTeX) et al.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the pdfTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.21; using libpng 1.6.21
-Compiled with zlib 1.2.8; using zlib 1.2.8
-Compiled with xpdf version 3.04
+Compiled with libpng 1.6.36; using libpng 1.6.36
+Compiled with zlib 1.2.11; using zlib 1.2.11
+Compiled with xpdf version 4.01
 ```
 
 ## Make
@@ -243,7 +251,7 @@ You will use Docker to create reproducible, sharable and shippable computing env
 
 After signing-up and signing into the Docker Store, go here: https://store.docker.com/editions/community/docker-ce-desktop-mac and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen. 
 
-After installation, in terminal type the following to ask for the version:
+To test if Docker is working, after installation open the Docker app by clicking on its icon (from Finder, Applications or Launchpad). Next open Terminal and type the following:
 ```
 docker run hello-world
 ```
@@ -252,11 +260,30 @@ you should see something like this if you were successful:
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-c04b14da8d14: Pull complete
-Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9
+1b930d010525: Pull complete 
+Digest: sha256:451ce787d12369c5df2a32c85e5a03d52cbcef6eb3586dd03075f3034f10adcd
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
 ```
 
 ## Attributions
