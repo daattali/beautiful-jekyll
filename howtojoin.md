@@ -15,5 +15,9 @@ We will use the listserv to send updates about activities.
 
 We'd also love to showcase your artwork or photos on our website, especially if it aligns with the themes of the network. Send your submissions to evolvingseas@gmail.com
 
+### 4) Join the Slack channel at [evolvingseas.slack.com](evolvingseas.slack.com). 
+
+To join the channel please [visit this site](https://join.slack.com/t/evolvingseas/shared_invite/enQtNTI4MjcwMjg5NTM5LWFiMGM0OTczMzllODg3NGQxYzBlNTA4NTE2OWI5ZWEwNjU3MTQ2ZTk3OWYxMjA5NzQxMmQwNTVmZDE1ZGE0NDc).
+
 
 
