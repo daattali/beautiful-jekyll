@@ -28,7 +28,7 @@ These instructions will walk you through installing the required Data Science so
 In MDS we will use [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
 
 #### GitHub.com
-If you do not yet have one, sign up for a free account at https://github.com/ .
+If you do not yet have one, sign up for a free account at [GitHub.com](https://github.com/).
 
 #### GitHub.ubc.ca
 For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login using your CWL:
@@ -68,7 +68,7 @@ If you run into trouble, please see that Install Git > Mac OS section from [Happ
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
 
-Head to https://www.anaconda.com/download/#macos and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
+Head to [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos) and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
 
 After installation, in terminal type the following to ask for the version:
 ```
@@ -84,7 +84,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Terminal and type the following:
+To see if Jupyter was successfully installed in the Anaconda Python distribution, **quit and restart Terminal** and type the following:
 
 ```
 jupyter lab
@@ -105,7 +105,7 @@ conda update anaconda
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
 #### R
-Go to https://cran.r-project.org/bin/macosx/ and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
+Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
 
 After installation, in Terminal type the following to ask for the version:
 ```
@@ -129,7 +129,7 @@ Note: Although it is possible to install R through Anaconda, we highly recommend
 
 
 #### RStudio
-Chose and download the Mac version of RStudio from https://www.rstudio.com/products/rstudio/download/#download. Open the file and follow the installer instructions.
+Chose and download the Mac version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
@@ -140,11 +140,10 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 Open RStudio and type the following commands into the Console panel:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest', 'tidyverse'))
-devtools::install_github('IRkernel/IRkernel')
+install.packages(c('IRkernel', 'tidyverse'))
 ```
 
-Next, open terminal and type the following:
+Next, open **terminal** and type the following:
 
 ```
 R -e "IRkernel::installspec()"
@@ -170,9 +169,9 @@ We will be using PostgreSQL as our database management system. You can download 
 
 ## Visual Studio Code
 
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Follow the installation instructions.
+We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions.
 
-Once the installation finishes, run the following command in Terminal:
+Once the installation finishes, copy the Visual Code Studio app from the Downloads folder to the Applications folder. Next run the following command in Terminal:
 ```
 cat << EOF >> ~/.bash_profile
 # Add Visual Studio Code (code)
@@ -180,7 +179,7 @@ export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/
 EOF
 ```
 
-You can test that VS code is installed and can be opened from Terminal by running the following command:
+You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
 ```
 code --version
@@ -197,13 +196,13 @@ x64
 
 LaTeX allows to use syntax to write nicely formatted mathematical expressions and equations. For this program we only need the smaller BasicTeX package.
 
-1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg ).
+1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg). 
 2. Open the ```.pkg``` file and run the installer with default options.
-3. BasicTeX has a few missing files we'll need. To install these files, open terminal and run:
+3. BasicTeX has a few missing files we'll need. To install these files, restart terminal and run:
 ```
-$ sudo tlmgr update --self
-$ sudo tlmgr install framed
-$ sudo tlmgr install titling
+sudo tlmgr update --self
+sudo tlmgr install framed
+sudo tlmgr install titling
 ```
 
 After installation, in terminal type the following to ask for the version:
@@ -213,10 +212,18 @@ latex --version
 you should see something like this if you were successful:
 
 ```
+pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019)
+kpathsea version 6.3.1
+Copyright 2019 Han The Thanh (pdfTeX) et al.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the pdfTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.21; using libpng 1.6.21
-Compiled with zlib 1.2.8; using zlib 1.2.8
-Compiled with xpdf version 3.04
+Compiled with libpng 1.6.36; using libpng 1.6.36
+Compiled with zlib 1.2.11; using zlib 1.2.11
+Compiled with xpdf version 4.01
 ```
 
 ## Make
@@ -244,7 +251,7 @@ You will use Docker to create reproducible, sharable and shippable computing env
 
 After signing-up and signing into the Docker Store, go here: https://store.docker.com/editions/community/docker-ce-desktop-mac and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen. 
 
-After installation, in terminal type the following to ask for the version:
+To test if Docker is working, after installation open the Docker app by clicking on its icon (from Finder, Applications or Launchpad). Next open Terminal and type the following:
 ```
 docker run hello-world
 ```
@@ -253,11 +260,30 @@ you should see something like this if you were successful:
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-c04b14da8d14: Pull complete
-Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9
+1b930d010525: Pull complete 
+Digest: sha256:451ce787d12369c5df2a32c85e5a03d52cbcef6eb3586dd03075f3034f10adcd
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
 ```
 
 ## Attributions
