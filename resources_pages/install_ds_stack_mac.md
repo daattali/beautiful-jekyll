@@ -68,7 +68,7 @@ If you run into trouble, please see that Install Git > Mac OS section from [Happ
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
 
-Head to https://www.anaconda.com/download/#macos and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
+Head to [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos) and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
 
 After installation, in terminal type the following to ask for the version:
 ```
@@ -84,7 +84,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Terminal and type the following:
+To see if Jupyter was successfully installed in the Anaconda Python distribution, **quit and restart Terminal** and type the following:
 
 ```
 jupyter lab
