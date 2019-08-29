@@ -231,7 +231,11 @@ Compiled with xpdf version 4.01
 ```
 
 ## Make
-We will be using Make to automate our analysis scripts. More on this later! You should have this installed if you ran the command ```xcode-select --install``` from the [Git installation instructions](#git). If you didn't yet install Git, do this now!
+We will be using Make to automate our analysis scripts. More on this later! To install Make type the following in the Terminal:
+
+```
+xcode-select --install
+``` 
 
 To test if Make is successfully installed, in Terminal type the following to ask for the version:
 ```
