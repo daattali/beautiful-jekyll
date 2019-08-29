@@ -196,7 +196,7 @@ x64
 
 LaTeX allows to use syntax to write nicely formatted mathematical expressions and equations. For this program we only need the smaller BasicTeX package.
 
-1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg ).
+1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg). 
 2. Open the ```.pkg``` file and run the installer with default options.
 3. BasicTeX has a few missing files we'll need. To install these files, open terminal and run:
 ```
