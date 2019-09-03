@@ -31,6 +31,7 @@ subtitle: For MDS students and beyond
 
 #### Possibly of general interest
 
+- [Our vision statement](/vision/)
 - [Installation instructions for the MDS software stack](/resources_pages/installation_instructions)
 - [Publicly available teaching materials](https://github.com/UBC-MDS/public)
 - [Data science terminology](/resources_pages/terminology)
