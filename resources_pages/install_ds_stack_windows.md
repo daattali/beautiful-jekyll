@@ -224,7 +224,7 @@ Go to https://github.com/gnu-mcu-eclipse/windows-build-tools/releases and downlo
 
 Unpack the archive and copy it into the %userprofile%\AppData\Roaming\GNU MCU Eclipse (for example C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse) folder. 
 
-Next, like you did when installing [Rscript](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/resources_pages/install_ds_stack_windows.md#rscript), you need to add the folder where `make.exe` is located to the _PATH_, which is %userprofile%\AppData\Roaming\GNU MCU Eclipse\Build Tools\2.12-20190422-1053\bin (for example, C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse\Build Tools\2.12-20190422-1053\bin).
+Next, like you did when installing [Rscript](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/resources_pages/install_ds_stack_windows.md#rscript), you need to add the folder where `make.exe` is located to the _PATH_ variable. The `make.exe` file is located in C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse\Build Tools\2.12-20190422-1053\bin.
 
 After installation, restart Powershell and type the following to ask for the version:
 
