@@ -31,7 +31,7 @@ Our vision for MDS has three areas of focus: building a world-class data science
 
 ### Engagement and leadership in the data science community
 
-- MDS is a world-class hub that promotes sharing of data science knowledge and data science pedagogy, including through our blog and open-source resources.
+- MDS is a world-class hub that promotes sharing of data science knowledge and data science pedagogy, including through our [blog](https://ubc-mds.github.io) and [open-source resources](https://github.com/ubc-mds/public).
 - We regularly attend, and organize, conferences that foster discussions about the responsible use of data science and data science pedagogy.
 - We maintain a public description of how we define data science, including its scope and boundaries. We engage with the data science community to build a definition that is agreed upon by a wide audience.
 - MDS alumni form a thriving network of responsible stewards and practitioners of data science, who are well posed to spread the responsible use of data science in their respective organizations, and to influence global change through data science.
