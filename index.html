@@ -10,11 +10,10 @@ use-site-title: true
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {% assign newsSorted = site.news | sort: "date" | reverse %}
-      <ul class="news-list">
+      <ul class="list-group">
       {% for news in newsSorted limit:2 %}
-        <li class="news-list-item">
-          <h3>{{ news.title }}</h3>
-          <i>{{ news.date | date: '%B %d, %Y' }}</i></br>
+        <li class="list-group-item">
+          <h3>{{ news.title }}</h3> - <i>{{ news.date | date: '%B %d, %Y' }}</i></br>
           <p>{{news.content}}</p>
         </li>
       {% endfor %}
