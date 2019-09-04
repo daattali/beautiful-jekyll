@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Cycling Across Canada Route
+title: Cycling Across Canada - Route Details
 tags: [cycling, outdoors]
+bigimg: https://i.imgur.com/JMBZgpu.jpg
 ---
 
 The trip began in Victoria B.C. where we dipped our tires into the Pacific Ocean at the Terry Fox Memorial. From there we cycled East to Halifax where we finished at Crystal Crescent Beach, dipping our tires into the Atlantic.
