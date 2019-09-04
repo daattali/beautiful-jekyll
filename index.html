@@ -5,22 +5,22 @@ subtitle: Building computational tools to elucidate the complex genetic and envi
 use-site-title: true
 ---
 
-<div class="news-list">
-  <h2>Hall Lab News</h2>
+<h2 style="text-align: center">Hall Lab News</h2>
+<div class="card-columns">
   {% assign newsSorted = site.news | sort: "date" | reverse %}
-  <div class="list-group">
   {% for news in newsSorted limit:2 %}
-    <div class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">{{ news.title }}</h5>
-          <small>{{ news.date | date: '%B %d, %Y' }}</small>
-      </div>
-      <p class="mb-1">{{news.content}}</p>
+  <div class="card">
+    {% if news.img %}
+      <img class="card-img-top" src={{news.img}} alt="News Image">
+    {% endif %}
+    <div class="card-body">
+      <h5 class="card-title">{{ news.title }}</h5>
+      <small>{{ news.date | date: '%B %d, %Y' }}</small>
+      <p class="card-text">{{ news.content }}</p>
     </div>
-  {% endfor %}
   </div>
-</div>
-  
+  {% endfor %}
+</div> 
 
 <div class="posts-list">
   {% for post in paginator.posts %}
