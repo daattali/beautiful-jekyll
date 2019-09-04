@@ -12,9 +12,7 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 Regular attendance is expected of students in all their classes (including lectures, laboratories, tutorials, seminars, etc.). Students who are unavoidably absent because of illness or other reasons should inform the instructor(s) of the course(s) as soon as possible, preferably, prior to the start of the class/lab/quiz.
 
-Students may miss **one** quiz or assignment (across the whole program) without providing a doctor's note; instead, the student should email the Lab Instructor a brief letter, signed by the student, stating that they were absent for a legitimate medical reason. All future absences will require a doctor's note as documentation. Failing to present a doctor's note may result in a grade of zero. 
-
-Students who miss more than 3 days of classes/labs in a row need to provide documentation in the form of a doctor's note or written request for leave to the MDS Leadership Team. Failing to present a doctor's note or written request may result in a failing grade. The Leadership Team will contact the student with an action plan to make up any missed quizzes or assignments.
+Students who miss an assignment or quiz should immediately email a completed and signed [academic concession form](https://github.ubc.ca/MDS-2019-20/announcements/blob/master/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration%2C%202019.pdf) to the course's Lab Instructor. Note that this includes illness but also cases of conflicting responsibilities (e.g., having to care for a family member) or compassionate grounds. Upon receiving the form, the Lab Instructor and/or MDS Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
 
 #### Late arrivals in lecture
 
