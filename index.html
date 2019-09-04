@@ -9,15 +9,13 @@ use-site-title: true
   <h2>Hall Lab News</h2>
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {% assign newsSorted = site.news | sort: "date" | reverse | limit 2 %}
+      {% assign newsSorted = site.news | sort: "date" | reverse %}
       <ul class="news-list">
-      {% for news in newsSorted %}
+      {% for news in newsSorted limit:2 %}
         <li class="news-list-item">
-          <a href="{{ news.url }}" class="list-group-item list-group-item-action">
-            <h3>{{ news.title }}</h3>
-            <i>{{ news.date | date: '%B %d, %Y' }}</i></br>
-            <p>{{news.content}}</p>
-          </a>
+          <h3>{{ news.title }}</h3>
+          <i>{{ news.date | date: '%B %d, %Y' }}</i></br>
+          <p>{{news.content}}</p>
         </li>
       {% endfor %}
       </ul>

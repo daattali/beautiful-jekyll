@@ -202,9 +202,9 @@ collections:
   members:
     output: true
   publications:
-    output: true 
+    output: false 
   news:
-    output: true
+    output: false
 
 # prose.io config
 prose:
