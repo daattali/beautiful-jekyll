@@ -9,9 +9,8 @@ use-site-title: true
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <div class="list-group">
-      {% assign newsSorted = site.news | sort: "date" | reverse % | limit 5}
+      {% assign newsSorted = site.news | sort: "date" | reverse | limit 5 %}
       {% for news in newsSorted %}
-      {{
         <div class="list-group">
           <a href="{{ news.url }}" class="list-group-item list-group-item-action">
             <b>({{ news.title }})</b></br>
@@ -19,7 +18,6 @@ use-site-title: true
             <p>{{news.content}}</p>
           </a>
         </div>
-      }}
       {% endfor %}
       </div> 
     </div>
