@@ -7,20 +7,18 @@ use-site-title: true
 
 <div class="news-list">
   <h2>Hall Lab News</h2>
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {% assign newsSorted = site.news | sort: "date" | reverse %}
-      <div class="list-group">
-      {% for news in newsSorted limit:2 %}
-        <div class="list-group-item list-group-item-action flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">{{ news.title }}</h5>
-              <small>{{ news.date | date: '%B %d, %Y' }}</small>
-          </div>
-          <p class="mb-1">{{news.content}}</p>
-        </div>
-      {% endfor %}
+  {% assign newsSorted = site.news | sort: "date" | reverse %}
+  <div class="list-group">
+  {% for news in newsSorted limit:2 %}
+    <div class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ news.title }}</h5>
+          <small>{{ news.date | date: '%B %d, %Y' }}</small>
       </div>
+      <p class="mb-1">{{news.content}}</p>
     </div>
+  {% endfor %}
+  </div>
 </div>
   
 
