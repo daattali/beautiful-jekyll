@@ -13,10 +13,10 @@ use-site-title: true
       {% for news in newsSorted %}
         <div class="list-group">
           <a href="{{ news.url }}" class="list-group-item list-group-item-action">
-              <b>({{ news.title }})</b></br>
-              {{ news.date | date: '%B %d, %Y' }}</br>
-              <p>{{news.content}}</p>
-            </a>
+            <b>({{ news.title }})</b></br>
+            {{ news.date | date: '%B %d, %Y' }}</br>
+            <p>{{news.content}}</p>
+          </a>
         </div>
       {% endfor %}
       </div> 
