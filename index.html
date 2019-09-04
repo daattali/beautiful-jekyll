@@ -12,9 +12,9 @@ use-site-title: true
   {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
   <div class="panel-heading">
     <h3>{{ news.title }}</h3>
-    <i>{{ news.date | date: '%B %d, %Y' }}</i>
   </div>
-  <div class="panelbody">
+  <i>{{ news.date | date: '%B %d, %Y' }}</i>
+  <div class="panel-body">
     {{ news.content }}
   </div>
 </div>
