@@ -17,9 +17,10 @@ layout: base
               <i>{{publication.article_journal}}</i>
               {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
               {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
-          </a> 
+          </a>
+        </div>
       {% endfor %}
-    </div> 
+      </div> 
     </div>
   </div>
 </div>
