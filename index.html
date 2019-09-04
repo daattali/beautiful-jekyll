@@ -8,14 +8,14 @@ use-site-title: true
 <h2 style="text-align: center">Hall Lab News</h2>
 {% assign newsSorted = site.news | sort: "date" | reverse %}
 {% for news in newsSorted limit:3 %}
-<div class="card border-dark mb-3" style="max-width: 18rem;">
-  {% if news.img %}
-    <img class="card-img-top" src={{news.img}} alt="News Image">
-  {% endif %}
-  <div class="card-body text-dark">
-    <h3 class="card-title">{{ news.title }}</h3>
-    <small>{{ news.date | date: '%B %d, %Y' }}</small>
-    <p class="card-text">{{ news.content }}</p>
+<div class="panel panel-info">
+  {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
+  <div class="panel-heading">
+    <h3>{{ news.title }}</h3>
+    <i>{{ news.date | date: '%B %d, %Y' }}</i>
+  </div>
+  <div class="panelbody">
+    {{ news.content }}
   </div>
 </div>
 {% endfor %}
