@@ -21,7 +21,7 @@ Scroll past the video and pictures below to read more about the trip.
 
 ### Trip Route
 
-| Start | End                      | Km                       | Time     | Average Speed (km/hr) | Max Speed (km/hr) |          |
+| Day | Start                      | End                       | KM     | Time | Average Speed (km/hr) | Max Speed (km/hr)         |
 |-------|--------------------------|--------------------------|----------|-----------------------|-------------------|----------|
 | Day 1 | Lisboa                   | Praia Da Gale (Campsite) | 73.73    | 4hr 22min             | 17.14             | 48.78    |
 | Day 2 | Praia Da Gale (Campsite) | Milfontes                | 77.79    | 4hr 26min             | 17.7              | 44.17    |
