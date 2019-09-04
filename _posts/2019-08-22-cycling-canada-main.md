@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cycling Across Canada
+title: Cycling Across Canada - Main Post
 tags: [cycling, outdoors]
 ---
 
