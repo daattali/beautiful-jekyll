@@ -135,9 +135,9 @@ Then, update the repository:
 sudo apt-get update
  ```
 
-Then, install the following packages:
+Next, install the following packages:
 ```
-sudo apt-get install curl libssl-dev libcurl4-openssl-dev r-base
+sudo apt-get install curl libssl-dev libcurl4-openssl-dev libpq-dev libxml2-dev r-base
  ```
 
 After installation, in terminal type the following to ask for the version:
