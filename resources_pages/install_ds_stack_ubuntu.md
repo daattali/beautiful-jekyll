@@ -275,7 +275,7 @@ Compiled with poppler version 0.62.0
 ## Make
 
 We will be using Make to automate our analysis scripts. More on this later!
-Make already comes installed in Ubutun 18.04. You check by executing the following command in Terminal:
+Make already comes installed in Ubutun 18.04, you can check by executing the following command in Terminal:
 ```
 make --version
 ```
@@ -290,7 +290,7 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
-If not, to install Make, open Terminal and type the following command:
+If not, to install Make open Terminal and type the following command:
 ```
 sudo apt-get install build-essential
 ```
