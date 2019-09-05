@@ -135,7 +135,7 @@ Then, update the repository:
 sudo apt-get update
  ```
 
-Then, install the R binaries:
+Then, install the following packages:
 ```
 sudo apt-get install curl libssl-dev libcurl4-openssl-dev r-base
  ```
