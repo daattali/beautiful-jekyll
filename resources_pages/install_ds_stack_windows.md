@@ -171,7 +171,7 @@ We will be using PostgreSQL as our database management system. You can download 
 
 ### Visual Studio Code
 
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. At "Select Additional Tasks" make sure that "Add to path" is selected (I also like to select all the other three items as well - see figure below).
+We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. At "Select Additional Tasks" make sure that "Add to path" is selected (I also like to select all the other three items - see figure below).
 
 ![](/resources_pages/imgs/vs_code.png)
 
