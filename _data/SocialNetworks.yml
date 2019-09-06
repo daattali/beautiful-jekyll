@@ -9,37 +9,32 @@
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
-  icon: "fa-facebook"
+  icon: "fab fa-facebook-f"
 
 github:
   name: "GitHub"
   baseURL: "https://github.com/"
-  icon: "fa-github"
+  icon: "fab fa-github-alt"
 
 twitter:
   name: "Twitter"
   baseURL: "https://twitter.com/"
-  icon: "fa-twitter"
+  icon: "fab fa-twitter"
 
 reddit:
   name: "Reddit"
   baseURL: "https://reddit.com/u/"
-  icon: "fa-reddit"
+  icon: "fab-reddit"
 
 email:
   name: "Email me"
   baseURL: "mailto:"
-  icon: "fa-envelope"
+  icon: "fas fa-envelope"
 
 linkedin:
   name: "LinkedIn"
   baseURL: "https://linkedin.com/in/"
-  icon: "fa-linkedin"
-
-xing:
-  name: "Xing"
-  baseURL: "https://www.xing.com/profile/"
-  icon: "fa-xing"
+  icon: "fab fa-linkedin-in"
 
 stackoverflow:
   name: "StackOverflow"

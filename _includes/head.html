@@ -10,11 +10,9 @@
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
-
+  
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
 
-  {% include gtag.html %}
-  {% include gtm_head.html %}
   {% include google_analytics.html %}
 
   {% if layout.common-ext-css %}
@@ -118,14 +116,6 @@
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
-
-  {% if site.matomo %}
-  {% include matomo.html %}
-  {% endif %}
-
-  {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <!-- Staticman -->
-  <link rel="stylesheet" href="{{ "/css/staticman.css" | relative_url }}" />
-  {% endif %}
-
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/667b714b91.js"></script>
 </head>

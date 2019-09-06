@@ -9,14 +9,12 @@
             <li>
             {%- if curkey == 'rss' -%}
               <a href="{{ '/feed.xml' | relative_url }}" title="{{ element.name }}">
-            {%- elsif curkey == 'yelp' -%}
-              <a href="https://{{ site.social-network-links[curkey] }}.yelp.com" title="{{ element.name }}">
             {%- else -%}
               <a href="{{element.baseURL}}{{ site.social-network-links[curkey] }}" title="{{ element.name }}">
             {%- endif -%}
                 <span class="fa-stack fa-lg" aria-hidden="true">
                   <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa {{ element.icon }} fa-stack-1x fa-inverse"></i>
+                  <i class="{{ element.icon }} fa-stack-1x fa-inverse"></i>
                 </span>
                 <span class="sr-only">{{ element.name }}</span>
               </a>
@@ -32,17 +30,10 @@
       &nbsp;&bull;&nbsp;
       <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
       {% endif %}
-
-      {% if site.matomo %}
-        {% if site.matomo.opt-out %}
-          &nbsp;&bull;&nbsp;
-          <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
-        {% endif %}
-      {% endif%}
       </p>
           <!-- Please don't remove this, keep my open source work credited :) -->
     <p class="theme-by text-muted">
-      Theme by
+      Theme by Dean Attali
       <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
     </p>
       </div>
