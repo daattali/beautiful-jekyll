@@ -34,6 +34,6 @@ The stack for this project is Python+Django. The app is running in a docker cont
 
 #### [Passar no Código](https://www.passarnocodigo.com/)
 
-Really old stuff, sorry :(. This was my first experience with angular 1. Basically it is a site where the users can practice for their driving license exam.
+This website is a platform where the users can practice for their Portuguese driving license exam. This app provides some tools that the users can use to practice before taking the real driving license exam. The users can do multiple modes of exams, for example with different difficulty levels. The users can also track their progress, with the statistics provided the users can choose the best moment to take the real exam.
 
-  The frontend is using angular and the backend PHP with Yii framework.
+  This is a JHipster project (reactJs + Spring boot).
