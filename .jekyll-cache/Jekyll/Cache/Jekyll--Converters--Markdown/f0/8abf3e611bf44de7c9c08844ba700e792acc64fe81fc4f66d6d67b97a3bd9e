@@ -1,9 +1,0 @@
-I"�<p><em>I’ll talk about projects (even some small code bits) I’ve done in past or currently working on, which I think are pretty cool. If I feel like I need to talk a lot about a project, I’ll make a blog post about it as well</em></p>
-
-<p>Let’s begin</p>
-
-<h2 id="natural-language-processing">Natural Language Processing</h2>
-
-<p><strong><em>Predicting NASDAQ movements using News</em></strong> <a href="https://github.com/anti-mony/NASDAQ-Movement-Prediction"><i class="fab fa-github"></i></a><br />
-I did this project very recently from July-August 2019, where I tried to predict how the NASDAQ Composite index moves based on the news that comes in daily. I’m actually going to make a post about this one, there’s so muc to talk about here.</p>
-:ET
