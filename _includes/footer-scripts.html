@@ -1,14 +1,32 @@
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+{% if layout.common-ext-js %}
+  {% for js in layout.common-ext-js %}
+    {% include ext-js.html js=js %}
+  {% endfor %}
+{% endif %}
 
-{% if include.full %}
-  <script src="/js/main.js"></script>
+{% if layout.common-js %}
+  {% for js in layout.common-js %}
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    {% if js contains 'jquery' %}
+      <script>
+      	if (typeof jQuery == 'undefined') {
+          document.write('<script src="{{ js | relative_url }}"></scr' + 'ipt>');
+      	}
+      </script>
+    {% else %}
+      <script src="{{ js | relative_url }}"></script>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if page.ext-js %}
+  {% for js in page.ext-js %}
+    {% include ext-js.html js=js %}
+  {% endfor %}
 {% endif %}
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ js }}"></script>
+    <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
-
-{% include google_analytics.html %}

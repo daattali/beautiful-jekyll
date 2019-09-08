@@ -1,0 +1,92 @@
+# You can define your custom social network links here.
+# Use the same key you added in _config.yml -> social-network-links.
+# In addition to that you need to specify the following properties:
+#   name: Specify a user-friendly name that will be used as a link title
+#   baseURL: Define a base URL which will be combined with the value of
+#            site.social-network-links.<key>
+#   icon: Specify a valid fontawesome icon class
+
+facebook:
+  name: "Facebook"
+  baseURL: "https://www.facebook.com/"
+  icon: "fa-facebook"
+
+github:
+  name: "GitHub"
+  baseURL: "https://github.com/"
+  icon: "fa-github"
+
+twitter:
+  name: "Twitter"
+  baseURL: "https://twitter.com/"
+  icon: "fa-twitter"
+
+reddit:
+  name: "Reddit"
+  baseURL: "https://reddit.com/u/"
+  icon: "fa-reddit"
+
+email:
+  name: "Email me"
+  baseURL: "mailto:"
+  icon: "fa-envelope"
+
+linkedin:
+  name: "LinkedIn"
+  baseURL: "https://linkedin.com/in/"
+  icon: "fa-linkedin"
+
+xing:
+  name: "Xing"
+  baseURL: "https://www.xing.com/profile/"
+  icon: "fa-xing"
+
+stackoverflow:
+  name: "StackOverflow"
+  baseURL: "https://stackoverflow.com/users/"
+  icon: "fa-stack-overflow"
+
+snapchat:
+  name: "Snapchat"
+  baseURL: "https://www.snapchat.com/add/"
+  icon: "fa-snapchat-ghost"
+
+instagram:
+  name: "Instagram"
+  baseURL: "https://www.instagram.com/"
+  icon: "fa-instagram"
+
+youtube:
+  name: "YouTube"
+  baseURL: "https://www.youtube.com/"
+  icon: "fa-youtube"
+
+spotify:
+  name: "Spotify"
+  baseURL: "https://open.spotify.com/user/"
+  icon: "fa-spotify"
+
+telephone:
+  name: "Phone"
+  baseURL: "tel:"
+  icon: "fa-phone"
+
+rss:
+  name: "RSS"
+  baseURL: "{{ '/feed.xml' | relative_url }}"
+  icon: "fa-rss"
+
+steam:
+  name: "Steam"
+  baseURL: "https://steamcommunity.com/id/"
+  icon: "fa-steam"
+
+twitch:
+  name: "Twitch"
+  baseURL: "https://www.twitch.tv/"
+  icon: "fa-twitch"
+
+yelp:
+  name: "Yelp"
+  baseURL: "https://{{ site.author.yelp }}.yelp.com"
+  icon: "fa-yelp"
