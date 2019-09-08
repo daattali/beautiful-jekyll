@@ -298,7 +298,7 @@ footer .theme-by {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top: 51px; /* The small navbar is 50px tall + 1px border */
+  margin-top: 0; /* The small navbar is 50px tall + 1px border */
   margin-bottom: 35px;
 }
 .intro-header.big-img .big-img-transition {
@@ -322,7 +322,7 @@ footer .theme-by {
 .intro-header.big-img .post-heading {
   padding: 100px 0;
   color: #FFF;
-  text-shadow: 1px 1px 3px #000;
+  text-shadow: -1px 0 6px #000000bf, 0 1px 6px #000000bf, 1px 0 6px #000000bf, 0 -1px 6px #000000bf;
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
@@ -372,7 +372,7 @@ footer .theme-by {
     margin-top: 130px;
   }
   .intro-header.big-img {
-    margin-top: 91px; /* Full navbar is small navbar + 20px padding on each side when expanded */
+    margin-top: 0; /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
   .intro-header.big-img .page-heading,
   .intro-header.big-img .post-heading {
@@ -641,4 +641,9 @@ pre {
   color: #808080;
   font-style: italic;
   font-size: 16px;
+}
+
+.social-link-list-item {
+  display: inline;
+  margin-right: 16px;
 }

@@ -16,6 +16,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
 
   {% if layout.common-googlefonts %}
     {% for font in layout.common-googlefonts %}
@@ -97,5 +98,7 @@
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
   {% endif %}
+
+  <!--script src="https://kit.fontawesome.com/d6d10ed666.js"></script-->
 
 </head>
