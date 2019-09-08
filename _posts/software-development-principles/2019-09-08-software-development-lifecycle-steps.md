@@ -1,3 +1,10 @@
+---
+layout: post
+title: Software Development Lifecycle Steps
+subtitle: Software Development Lifecycle Steps about
+tags: [processes]
+---
+
 # Software Development Lifecycle Steps
 
 [https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/](https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/)

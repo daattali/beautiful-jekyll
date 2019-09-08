@@ -1,3 +1,10 @@
+---
+layout: post
+title: Functional and Non-functional requirement
+subtitle: Functional and Non-functional requirement about
+tags: [processes]
+---
+
 # Functional and Non-functional requirement
 
 [The difference between functional and non-functional requirements | ReQtest](https://reqtest.com/requirements-blog/understanding-the-difference-between-functional-and-non-functional-requirements/)
