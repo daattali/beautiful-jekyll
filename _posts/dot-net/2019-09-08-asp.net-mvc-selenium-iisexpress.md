@@ -1,0 +1,137 @@
+The goal of this blog entry is to explain how you can create integration tests for ASP.NET MVC applications by using a combination of Selenium WebDriver and IISExpress.
+
+Integration tests are useful when you want to test an entire user story. For example, you might want to test whether a user can successfully add an item to a shopping cart. Adding an item to a shopping cart might require the execution of C# code, database code, and JavaScript code. Using an integration test, you can verify that the entire process of buying an item from your website works.
+
+Typically, an integration test is contrasted with a unit test. A unit test is used to test a unit of code in isolation. A unit test is typically used to verify the behavior of a single method (Does the AddNumbers() method return the right value?). An integration test is used to test many components and methods working together (Can a user add an item to a shopping cart?).
+
+Normally, unit tests are created by developers while they write the code for an application. Integration tests, in contrast, are typically written by Quality Assurance engineers after code has been written.
+
+Another important difference between unit tests and integration tests are the speed of the tests. Unit tests must be fast. Typically, you run your unit tests each and every time a developer checks in code. Integration tests, in contrast, might be much slower than unit tests. Typically, you run all of your integration tests once a day in the middle of the night. Because integration tests require the execution of actual browsers, integration tests can be agonizingly slow.
+
+The ASP.NET MVC framework was designed from the ground up to make it easy to write unit tests for your code. For example, you can unit test your controller actions without spinning up a web server.
+
+On the other hand, the ASP.NET MVC framework has no built-in support for integration tests. If you want to write integration tests then you need a way to simulate the interactions of a web browser with your ASP.NET MVC application. In this blog entry, you learn how to use the open-source Selenium WebDriver testing framework to build integration tests which work with ASP.NET MVC. 
+
+# Spinning Up IISExpress when Executing a Test
+
+In an integration test, you perform a test against a live website. Therefore, the first problem that we must solve is how to launch a live website automatically when executing tests with Visual Studio.
+
+> ======== Begin Note ======Visual Studio supports a type of test called an ASP.NET Unit Test which starts the ASP.NET Developer Web Server (Cassini) automatically. In other words, an ASP.NET Unit Test does exactly what we want. You create an ASP.NET Unit Test by adding three special attributes to a test method:[TestMethod()][HostType(“ASP.NET”)][UrlToTest(“http://localhost:25153/Home/Index”)][AspNetDevelopmentServerHost(@”C:TestSelenium”, “/”)]public void TestMethod1() {…}Unfortunately, ASP.NET Unit Tests only work with ASP.NET Web Form applications and not ASP.NET MVC applications. The [URLToTest] attribute must point at an ASP.NET Web Forms page. This attribute does not work with ASP.NET MVC controller actions. Therefore, if we want to launch a web server when performing a test with an ASP.NET MVC application, we must take on the responsibility of launching the web server ourselves. ========= End Note ==============
+
+We’ll start a live website by taking advantage of IISExpress. IISExpress is a lightweight version of IIS that you can start from the command-line. You get IISExpress automatically when you install Visual Studio 2010 Service Pack 1 using the [Microsoft Web Platform Installer](http://www.microsoft.com/web/downloads/platform.aspx). IISExpress is also available as a separate download using the Web Platform Installer.
+
+After you install IISExpress, you can run iisexpress.exe from the command line. Open a command prompt and switch to either your *Program FilesIIS Express* or *Program Files (x86)IIS Express* directory (depending on your operating system). Next, enter the following command to launch a website located at the path c:MyWebsite using port 2020:
+
+> iisexpress /path:c:MyWebsite /port:2020
+
+The IISExpress web server will keep running until you hit Q to quit. Each time you make a request against the MyWebsite site using a web browser, you’ll see the request logged to the window.
+
+[](https://www.notion.so/c81659ec4c4a408dae920b6da4bd6b66#584781d4e8a84bbfa3bc81d1ea048803)
+
+Warning: You can only have one instance of IISExpress open at a particular port at a time. If you attempt to open IISExpress with the same port number twice then you will get an error.
+
+We want to automate this process of starting IISExpress so that we can start IISExpress automatically in our tests. Listing 1 contains a base class named SeleniumTest.
+
+Listing 1 – SeleniumTest.cs (First Attempt)
+
+[Untitled](https://www.notion.so/f994136c80ba4b0998cfbde6965ba091)
+
+Notice that the class in Listing 1 has a required parameter for its constructor. You must specify the name of the application being tested. The base class in Listing 1 assumes that your solution contains at least two projects: the MVC project being tested and the test project itself (see Figure 2). The GetApplicationPath() method calculates the path of the ASP.NET MVC application being tested relative to the path of the Test project.
+
+Figure 2 – Solution Structure
+
+[](https://www.notion.so/c81659ec4c4a408dae920b6da4bd6b66#bb614aa823544e049e0a4f884b045839)
+
+The SeleniumTest class includes a StartIIS() method which uses the .NET framework Process class to start IISExpress in a new process. The StartIIS() method is called by the TestInitialize() method. Immediately before each test is run, a new instance of IISExpress is started. In the TestCleanup() method, after the test completes, the IISExpress instance is stopped.
+
+The SeleniumTest class is a base class. Listing 2 illustrates how you can use the SeleniumTest base class with an actual test.
+
+Listing 2 – A simple integration test
+
+[Untitled](https://www.notion.so/0740e1dba8154f1594ce9666844bffa4)
+
+The integration test is contained in the TestMethod1() method. This method creates a new instance of the .NET Framework WebClient class. The WebClient class represents a simple Web Browser. Next, the WebClient class is used to perform a GET request against an ASP.NET MVC controller action named /home/index. If the ASP.NET MVC view returned by the /home/index action includes the string “hello” then the test completes successfully (see Figure 3).
+
+Figure 3 – An integration test with a successful conclusion
+
+[](https://www.notion.so/c81659ec4c4a408dae920b6da4bd6b66#c41a1f212ad4488ca6b027fa4d8108f6)
+
+Each time you run the tests in your solution, IISExpress is started automatically. In fact, IISExpress is started and stopped for each test. This can make running the tests slow. However, by stopping and starting IISExpress with each test, you are providing more test isolation. For example, if one test crashes IIS then IIS will work again for the next test.
+
+In this section, we used the WebClient class to make requests against our ASP.NET MVC application. This is a useful, but limited class. We want to be able to simulate actual browsers such as Internet Explorer, Firefox, and Google Chrome. We want to be able to easily test JavaScript/jQuery code. In the next section, we’ll use Selenium WebDriver to drive actual web browsers in our integration tests.
+
+# Using Selenium WebDriver
+
+Selenium is an open-source browser automation testing framework. You can use Selenium WebDriver to control (drive) browsers such as Internet Explorer, Firefox, and Google Chrome from C# code. It is the most mature integration testing framework.
+
+The easiest way to install Selenium WebDriver is to use NuGet. Within Visual Studio, select the menu option Tools, Library Package Manager Console to open the Package Manager console. Within the Package Manager Console, make sure that you select your Test project from the dropdown list. Finally, execute the following command to install Selenium Web Driver (see Figure 4):
+
+Install-Package Selenium.WebDriver
+
+Figure 4 – Installing Selenium WebDriver
+
+[](https://www.notion.so/c81659ec4c4a408dae920b6da4bd6b66#2ea8ff15bad9411f94101af969a731bb)
+
+You can use Selenium WebDriver to control instances of Internet Explorer, Firefox, Google Chrome, and the Android browser. You don’t need to do any special configuration to start using Selenium Web Driver with Firefox.
+
+If you want to use Selenium WebDriver with Google Chrome then you first need to download chromedriver.exe from the Chromium website and add chromedriver.exe to your Test project. You can download chromedriver.exe from the Chromium download page here:
+
+> http://code.google.com/p/chromium/downloads/list
+
+Download the *ChromeDriver server for win32* and add chromedriver.exe to your Test project.
+
+Finally, to get Internet Explorer to work, you need to change the Protected Mode Settings for Internet Explorer. Open Internet Explorer and choose the menu option Tools, Internet Options and select the Security tab (see Figure 5). For each zone – Internet, Local intranet, Trusted sites, Restricted sites – you need to set Protected Mode to the same value (either checked or not checked).
+
+Listing 5 – Changing Internet Explorer Protected Mode
+
+[](https://www.notion.so/c81659ec4c4a408dae920b6da4bd6b66#a439e3ec361b45389024fe1b7591a1b2)
+
+After you get everything setup, you can use Selenium WebDriver to drive browsers by creating instances of the Selenium FirefoxDriver, ChromeDriver, and InternetExplorerDriver classes. Each of the driver classes implements the IWebDriver interface.
+
+Imagine, for example, that you want to test the ASP.NET MVC in Listing 3. This view contains a button and a DIV tag. When you click the button, jQuery is used to display the hidden message in the DIV tag.
+
+Listing 3 – An ASP.NET MVC View with jQuery
+
+[Untitled](https://www.notion.so/80c741f9bd334f4f9255c7f9da614e41)
+
+The view in Listing 3 is not a super advanced view, but it does contain features that are difficult to test without running an actual browser. The view requires JavaScript and jQuery.
+
+In order to test the view, we need to start an instance of a web browser, click the button, and verify that the hidden message is displayed.
+
+First, we need to modify our TestSelenium base class. The modified version of this class is contained in Listing 4.
+
+Listing 4 – TestSelenium.cs (final version)
+
+[Untitled](https://www.notion.so/c38988aed59c4e899b9f3767349c302d)
+
+Notice that the TestInitialize() method in Listing 4 has been modified to create an instance of the FirefoxDriver, ChromeDriver, and InternetExplorerDriver Selenium drivers. Instances of these drivers are created in TestInitialize() and then they are shutdown in the TestCleanup() method by calling Quit().
+
+Listing 5 demonstrates how you can use the FirefoxDriver to test the ASP.NET MVC view using the Firefox web browser.
+
+Listing 5 – Using the Selenium FirefoxDriver
+
+[Untitled](https://www.notion.so/4dcea33bb2b540a59ebad359b6fd3424)
+
+When you run the IndexFirefoxTest() in Listing 5, an instance of IISExpress is started. Next, instances of Firefox, Chrome, and Internet Explorer are created. The test is run and the instances of the browsers are closed.
+
+Typically, you want to run a test using an instance of all three browsers. The test in Listing 6 illustrates how you can run the same test for multiple types of browsers.
+
+Listing 6 – Running the same test for multiple browsers
+
+[Untitled](https://www.notion.so/7535ac9f146f427bbdb69e21a2db8da9)
+
+In Listing 6, the IndexTest is broken into two methods. The IndexTest() method is decorated with the [TestMethod] attribute and it is this method which is called by the Visual Studio test runner. This method calls the IndexTestByDriver() method three times passing the Firefox, Chrome, and Internet Explorer Selenium drivers.
+
+Fortunately, all of the Selenium drivers implement the same IWebDriver interface. This makes it easy to write a single test which can be used with multiple types of browsers.
+
+The IWebDriver interface exposes all of the methods for controlling a web browser. For example, you can use the IWebDriver Navigate() method to navigate to a particular URL, refresh a browser, or move back and forth in browser history.
+
+You can use the IWebDriver FindElement() method to find elements by a number of different criteria including element Id, element name, class name, tag name, and link text.
+
+After you retrieve an element with FindElement(), you can use methods such as Click(), SendKeys(), and Submit() to interact with forms and links in a view.
+
+# Summary
+
+In this blog entry, I discussed how you can use Selenium WebDriver in combination with IISExpress to create integration tests for ASP.NET MVC applications. You can use integration tests to test complex user interactions with an ASP.NET MVC application such as the entire experience of adding an item to a shopping cart.
+
+The advantage of using Selenium WebDriver is that you can use WebDriver to drive actual browser instances such as Firefox, Internet Explorer, and Google Chrome. Because actual browser instances are used, you are able to test your ASP.NET MVC applications against real browsers with all of their warts and quirks.
