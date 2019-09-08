@@ -21,10 +21,9 @@ description: A blog where I post interesting articles, thoughts and books notes 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+  Posts:
+    - All: "home"
+    - By tags: "tags"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -69,7 +68,7 @@ author:
 social-network-links:
   rss: false
   email: "maxim.gorbatyuk@outlook.com"
-  facebook: deanattali
+#  facebook: deanattali
   github: maximgorbatyuk
 #  twitter: daattali
 #  reddit: yourname

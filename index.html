@@ -1,11 +1,11 @@
 ---
 layout: page
-title: My blog
-subtitle: This is where I will tell everybody everything that I think or/adn worry about.
+title: Maxim Gorbatyuk's blog
+subtitle: This is where I will tell everybody everything that I think or/and worry about.
 use-site-title: true
 ---
 
-<div class="posts-list">
+<div class="posts-list my-3">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
@@ -44,7 +44,7 @@ use-site-title: true
       Tags:
       {% if site.link-tags %}
       {% for tag in post.tags %}
-      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">#{{- tag -}}</a>
       {% endfor %}
       {% else %}
         {{ post.tags | join: ", " }}

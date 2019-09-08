@@ -3,22 +3,24 @@ layout: page
 title: 'Tag Index'
 ---
 
-{%- capture site_tags -%}
+<div class="mt-2">
+    {%- capture site_tags -%}
     {%- for tag in site.tags -%}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+    {%- endcapture -%}
+    {%- assign tags_list = site_tags | split:',' | sort -%}
 
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
+    {%- for tag in tags_list -%}
+        <a href="#{{- tag -}}" class="btn btn-outline-primary tag-btn">#{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+    {%- endfor -%}
+</div>
+
 
 <div id="full-tags-list">
 {%- for tag in tags_list -%}
     <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fa fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+        #{{- tag -}}&nbsp;({{site.tags[tag].size}})
     </h2>
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
