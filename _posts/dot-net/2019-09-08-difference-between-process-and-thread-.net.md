@@ -1,4 +1,8 @@
-# Разница между Process и Thread (C#)
+---
+layout: post
+title: Разница между Process и Thread (C#)
+tags: [.net, development, theory]
+---
 
 A thread is analogous to the operating system process in which your application runs. Just as processes run in parallel on a computer, threads run in parallel within a single process. 
 

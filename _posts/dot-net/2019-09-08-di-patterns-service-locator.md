@@ -1,12 +1,12 @@
-# DI Паттерны. Service Locator
-
+---
+layout: post
+title: DI Паттерны. Service Locator
+tags: [.net, development, design patterns]
 ---
 
-Источник [http://sergeyteplyakov.blogspot.com/2013/03/di-service-locator.html](http://sergeyteplyakov.blogspot.com/2013/03/di-service-locator.html) 
-
-Еще ссылка по теме [https://habr.com/post/270005/](https://habr.com/post/270005/)
-
-И еще кратко на SO: [https://stackoverflow.com/a/4985582](https://stackoverflow.com/a/4985582)
+- Источник [Блог Сергея Теплякова](http://sergeyteplyakov.blogspot.com/2013/03/di-service-locator.html) 
+- Еще ссылка по теме [https://habr.com/post/270005/](https://habr.com/post/270005/)
+- И еще кратко на SO: [https://stackoverflow.com/a/4985582](https://stackoverflow.com/a/4985582)
 
 ---
 

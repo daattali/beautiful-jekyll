@@ -1,4 +1,8 @@
-# На спор: прочитав до конца, вы поймёте, как и почему именно так работает GC
+---
+layout: post
+title: Как и почему именно так работает GC
+tags: [.net, development, theory]
+---
 
 Источник: [habr](https://habr.com/ru/company/clrium/blog/464169/)
 

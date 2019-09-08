@@ -1,4 +1,8 @@
-# ConfigureAwait, кто виноват и что делать?
+---
+layout: post
+title: ConfigureAwait, кто виноват и что делать?
+tags: [.net, development, theory, async]
+---
 
 Источник: [habr](https://habr.com/ru/company/clrium/blog/463587/)
 

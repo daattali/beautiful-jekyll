@@ -1,4 +1,12 @@
-# Programming stuff: Ключевые концепции DDD
+---
+layout: post
+title: Ключевые концепции DDD
+tags: [.net, development, theory]
+---
+
+Источник: Блог Сергея Теплякова.
+
+---
 
 … и рецензия книги Эрика Эванса “Domain-Driven Design: Tackling Complexity in the Heart of Software”
 

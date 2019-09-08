@@ -1,6 +1,12 @@
-# Что такое AppDomain
+---
+layout: post
+title: Что такое AppDomain
+tags: [.net, development, theory]
+---
 
 Ответ одного чела на StackOverflow ([https://stackoverflow.com/a/12233139](https://stackoverflow.com/a/12233139))
+
+---
 
 An App-domain implements the concept of a contiguous virtual memory space that holds the code and the in-memory resources that can be directly accesses or referenced.
 
