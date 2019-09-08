@@ -5,8 +5,6 @@ subtitle: О проектировании и некоторых законах �
 tags: [copypaste, design]
 ---
 
-# Психология дизайна
-
 [Оригинальная статья](https://alistapart.com/article/psychology-of-design#section7)
 
 ---

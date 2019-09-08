@@ -5,8 +5,6 @@ subtitle: Readable code about
 tags: [processes]
 ---
 
-# What Is Readable Code?
-
 > Code creates interfaces. But code itself is also an interface.
 
 For something so important, code readability is shockingly ill-defined. We often present it as a grab bag of rules: Use expressive variable names. When a function gets big, split it into smaller functions. Use standard design patterns.
@@ -27,7 +25,7 @@ Unreadable code reads like a novel trying to pass itself off as code. Covered in
 
 There’s a difference between readability and code readability.
 
-# Code creates interfaces. But the code itself is also an interface.
+> Code creates interfaces. But the code itself is also an interface.
 
 Is code readable when it looks pretty? Looking pretty is a nice side effect of readability, but it’s not that useful. Maybe on the margins, it helps with employee retention. But so does a good dental plan. Plus, everyone has a different opinion of what “looks pretty.” Soon enough, this definition of readability spirals into a vortex of tabs, spaces, braces, camel casing, and the other formatting holy wars. No one will faint upon seeing misaligned arguments, despite the attention they attract during code review.
 

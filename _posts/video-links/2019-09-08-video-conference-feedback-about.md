@@ -6,8 +6,6 @@ gh-badge: [star, follow]
 tags: [video]
 ---
 
-# Этапы эволюции обратной связи в команде разработки
-
 [![Preview](http://img.youtube.com/vi/UO6tUOVGmUs/0.jpg)](http://www.youtube.com/watch?v=UO6tUOVGmUs)
 
 ---

@@ -5,9 +5,9 @@ subtitle: Software Development Lifecycle Steps about
 tags: [processes]
 ---
 
-# Software Development Lifecycle Steps
+[softwaretestinghelp.com](https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/)
 
-[https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/](https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/)
+---
 
 ## 1. Requirement gathering and analysis
 

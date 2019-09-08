@@ -5,8 +5,6 @@ subtitle: Definition of Done and Definition of Ready
 tags: [processes]
 ---
 
-# Definition of Done (Ready)
-
 **Definition of Done** - A list of criteria which must be met before a product increment is considered "done". 
 
 Pros:

@@ -4,8 +4,6 @@ title: Семь «абсолютных истин» джуниора, от ко�
 tags: [copypaste, development]
 ---
 
-# Семь «абсолютных истин» джуниора, от которых пришлось отучиваться
-
 Copied from: [habr.com](https://habr.com/ru/post/455459/)
 
 Original: [Monica Lent](https://monicalent.com/blog/2019/06/03/absolute-truths-unlearned-as-junior-developer/)

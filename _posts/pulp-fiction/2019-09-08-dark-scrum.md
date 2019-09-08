@@ -5,8 +5,6 @@ subtitle: Копия статьи о скраме и его вариациях �
 tags: [copypaste, processes]
 ---
 
-# Мрачный Скрам
-
 [Источник](https://www.krivitsky.com/2017/06/06/%D0%BC%D1%80%D0%B0%D1%87%D0%BD%D1%8B%D0%B9-%D1%81%D0%BA%D1%80%D0%B0%D0%BC/).
 
 [Оригинал](https://ronjeffries.com/articles/016-09ff/defense/)

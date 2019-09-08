@@ -5,8 +5,6 @@ subtitle: О том, какие роли есть в программирова�
 tags: [copypaste, career, hr]
 ---
 
-# Junior, Middle, Senior — в чем разница и куда дальше?
-
 [Source](https://dataart.ru/news/junior-middle-senior-v-chem-raznifa-i-kuda-dalshe/)
 
 ---

@@ -4,8 +4,6 @@ title: SOLID паттерны в виде таблицы
 tags: [design, development]
 ---
 
-# SOLID паттерны в виде таблицы
-
 Источник: блог Сергея Теплякова.
 
 # Single responsibility

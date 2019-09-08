@@ -5,8 +5,6 @@ subtitle: О том, как сделать процесс кодревью пр�
 tags: [copypaste, code review]
 ---
 
-# Code review по-человечески
-
 ## Источники:
 * [Перевод. Часть 1](https://habr.com/ru/post/340550/.com[perevod]-code-review-po-chelovecheski-cha/) ([Оригинальная статья](https://mtlynch.io/human-code-reviews-1/))
 * [Перевод. Часть 2](https://habr.com/ru/post/342244/.com[perevod]-code-review-po-chelovecheski-cha/) ([Оригинальная статья](https://mtlynch.io/human-code-reviews-2/))

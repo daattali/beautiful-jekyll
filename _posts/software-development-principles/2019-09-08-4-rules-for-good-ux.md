@@ -5,8 +5,6 @@ subtitle: Четыре правила интуитивного UX
 tags: [design]
 ---
 
-# Четыре правила интуитивного UX
-
 Источник: [habr](https://habr.com/ru/post/464459/)
 
 Оригинал: [learnui.design.blog](https://learnui.design/blog/4-rules-intuitive-ux.html)

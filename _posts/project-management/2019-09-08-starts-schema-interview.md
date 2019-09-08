@@ -4,8 +4,6 @@ title: Модель S.T.A.R.S. для оценки Soft-Skills
 tags: [original, project management]
 ---
 
-# Модель S.T.A.R.S. для оценки Soft-Skills
-
 # Situation
 Попроси рассказать кандидата о ситуации. Контекст, предпосылки и т.д.
 
