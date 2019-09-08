@@ -55,16 +55,12 @@ title: Blog
 </div>
 
 {% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
+<div class="w-100 pb-1">
   {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
-  </li>
+  <a href="{{ paginator.previous_page_path | relative_url }}" class="float-left d-inline-block btn btn-outline-secodnary">&larr; Previous page</a>
   {% endif %}
   {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
-  </li>
+  <a href="{{ paginator.next_page_path | relative_url }}" class="float-right d-inline-block btn btn-outline-primary">Next page &rarr;</a>
   {% endif %}
-</ul>
+</div>
 {% endif %}

@@ -46,16 +46,14 @@ layout: base
       </div>
     {% endif %}
 
-    <ul class="pager blog-pager">
+    <ul class="d-flex justify-content-between">
       {% if page.previous.url %}
-      <li class="previous">
-        <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous</a>
-      </li>
+      <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}"
+        class="btn btn-outline-secodnary">&larr; Previous</a>
       {% endif %}
       {% if page.next.url %}
-      <li class="next">
-        <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next &rarr;</a>
-      </li>
+      <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}"
+        class="btn btn-outline-primary">Next &rarr;</a>
       {% endif %}
     </ul>
   </div>
