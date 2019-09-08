@@ -1,0 +1,13 @@
+# CI / CD / CD
+
+[https://www.redhat.com/en/topics/devops/what-is-ci-cd](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+
+Continuous Integration, Continuous Delivery and Continuous Deployment
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6af0fc30-d53b-48d1-b698-ffe42208081e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45PPS3XCEJ%2F20190817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20190817T161757Z&X-Amz-Expires=86400&X-Amz-Security-Token=AgoJb3JpZ2luX2VjEMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIBrTARNGEn%2Bcn%2FJyvvuuG94nKalpzn8OpTUWPZOBPnIgAiEAhjtR3r8ii4uO2HsxbVHYQhn5rD3PSgnNkt3QrljhlYUq2gMIXhAAGgwyNzQ1NjcxNDkzNzAiDJ8%2BLisyYg4NetRf8Sq3AzlOI8gUw%2FQi96kXCmg96HOq8zG%2BtAjBQ6KcJbJAKnAcCHd0WLeVlW9exzdnrcQMeQk6p5fZaFu0OFdY%2BXWojbljJMCjP1qSOQRSpYQhII6fQ7ZFcFojpOfK7waiD5P83IXm4%2BvUXLSo66%2Fkp6xrLjEbXVQc9f7euA7i%2FSev2KkkpvrvhHAYAG2ZEB2mhNfjH05oApyleRKhSpThOrTDw9Ya9qkQgP%2FZrZhKN2yZ%2FrtAjJCYnG0MLTSm8HBu0aX%2BgMpBoZX%2Fyy5MgTgH4A2l61m1Ja7zyj9GesfaNDH%2BqT1xML9Msce3lBhyCF%2FVdk9m21C0Tivk0ROohkv3GzOMnBzsPDMXDxEOhRLoKMmaXBtWWcxeycNR5J7eGj%2FJrKS1n%2BL7cTSYmG4cidcEVDHlLKf954tTGVcXO%2FWYyYK7V1ayaSSgh%2BDkUSNjBhB%2Fe0zEQw9xDkJ0PQm6l9cjq%2BXpQhjEi6QDbb9ZLnNeg1Q0gSx1Z5lKmhLHhIQmtdDdf387L7TRuZMTjeuE0fqayyr9uOWDiyVLMm0dmQQKRqXbUygLA8MBY7nwFIycG4ygGEj6zbe20TB8jdUwzPXf6gU6tAHP9pOdEzONYCea9uZFX8Z6MNiI4EV73%2FkbC%2Bvx4zGXegao3VPMEjCOiEyWolTebw%2FnIM1VSUTxmIlkN%2FvEIamqWh7Vs30pYbMuh9NHHgwmSA2PYLHsp1zqwo8RBJbrtJXjDHjwYGobWyxEC5x2l2mx1dUfVbgqP2cw7Iiy%2BLQljUay%2FNctlSsZ0eUCannyrgGgfbWBw5OMELl%2BD0krXrnp4yvsg%2B7V86hts%2FM9obexoPtQb5I%3D&X-Amz-Signature=c8b444bd38447d613fc5d7e03c8f96df335311159cd37d943d8b7f387b55d7b6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+Continuous Integration helps developers merge their code changes back to shared branch more frequently. Once te changes are merged, they are validated by automatically building the app and running different tests (unit and integration) to ensure the changes haven't broken the app.
+
+Continuous Delivery. Following the automation of build and unit/integration testing in CI, Delivery automates the release of that validated code to a repository. The goal is to have codebase that is always ready for deployment to a production environment.
+
+Continuous Deployment. The final stage of mature CI/CD is deployment. CDeployment is an extension of CDelivery and it automates releasing an app to production.Because there is no manual gate at the stage of the pipeline before production, CDeployment relies heavily on well-designed test automation.

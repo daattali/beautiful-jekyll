@@ -1,0 +1,11 @@
+# SQL JOIN
+
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cd2369c0-9bf6-44cb-8481-197c89f3b738/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45N5YF33L6%2F20190817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20190817T163252Z&X-Amz-Expires=86400&X-Amz-Security-Token=AgoJb3JpZ2luX2VjEMX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIAPshkp%2FF3BuodF7lfPdxXu2J8e6b8lAVN5ZENAen0DjAiB4CTC7y9Czk5VO6Bv0vuyLJVvhuTKQV2Vw6YaDF4Z7SCraAwheEAAaDDI3NDU2NzE0OTM3MCIM%2F32hecaaKcovjlUvKrcDp8Pt2axpoNIc%2B4Bdg2xnOa3xmOpskYpxco6X0S8ZgaWb29GMlJEG%2B2B3xPMtYPHvXgkrjIJr0jFWmKUl2xpn3pVPLcwof6JKyMUUNhPWlSejvXd7owEK4EQIOCBtAnfSjW6NEkvkBccYyVBA7aXDSm51HtdMDyXNHrm5rYC33zsXET2B6qlrlmtfwsaGQ94o0bQqnJ6PT13Loas4L7vzYgBuN1QfM4nRnK47hp%2B96NtBxhTcmieZkqY2ahAhtmJEU78wdVmn%2BEQsoyYY0ckWrrqqr2W3PVMgpZYRc0gke32RBtADJDkM1WdNM0P3d299MdNozLsvW1IiNgMSQW1EFkP0liSYtQOfm1JyDYm5xH7MUhMZS9qwYUS4LCKsvVLDxBgX%2F1UKNHRJNIB%2BBwsV9st0Zgr5D2u2XfUw9pLERp0dFrPkcVlDP67mwIuU3VtUNKIPtfEWlwRKZO2pAVj4nwbeDOULIXZvyJEcXW7qgT%2Bb26lCOzDIBkLK%2FvpEZ0fVvyFT8r6%2BU9ZoyZGkEQdrOk8Qphh%2BESca0TryYzLULE1GCaYjTOIPygauMKtAhxqpsMaiq0huqTDK%2B9%2FqBTq1AQxrI0eS%2Fi64fAaqMI6KybD7QwyVAwRCxCtHJtOfvSV2743k1HILIYmerBJYtsMgoFGd2cfhFm9jQetEHuskLTLOFTUpy%2B8Pm6vFsejC%2F8MEe2mcoQAkM13u4phZjwrOl%2Bj5jo3%2BTRifVfmms0nvQ1O0%2FDLmC8SVlqbc9N6kxqQVBeAKHK8PYou8o3sYQEapTHt5SGp%2Bin4uaNO7fPmxTb2LtFL8x7hXe0gZemORcrbFGewaf4w%3D&X-Amz-Signature=699c9cbd3a8624466470c1f7f88cca14e145564e3ebe16e498f069f50f0a8386&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+
+INNER JOIN returns records that have matching values in both tables.
+
+LEFT (Outer) JOIN returns all records from the left table, and the matched records from the right table
+
+RIGHT JOIN returns all records from the right table, and the matched records from the left table
+
+FULL JOIN returns all records when there is a match in either left or right table.
