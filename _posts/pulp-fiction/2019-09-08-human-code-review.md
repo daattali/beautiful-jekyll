@@ -1,8 +1,17 @@
+---
+layout: post
+title: Code review по-человечески
+subtitle: О том, как сделать процесс кодревью приятным для всех
+tags: [copypaste, code review]
+---
+
 # Code review по-человечески
 
-Источники:
+## Источники:
 * [Перевод. Часть 1](https://habr.com/ru/post/340550/.com[perevod]-code-review-po-chelovecheski-cha/) ([Оригинальная статья](https://mtlynch.io/human-code-reviews-1/))
 * [Перевод. Часть 2](https://habr.com/ru/post/342244/.com[perevod]-code-review-po-chelovecheski-cha/) ([Оригинальная статья](https://mtlynch.io/human-code-reviews-2/))
+
+---
 
 ![](https://hsto.org/webt/59/e8/43/59e843159a875757508106.png)
 

@@ -1,3 +1,9 @@
+---
+layout: post
+title: Модель S.T.A.R.S. для оценки Soft-Skills
+tags: [original, project management]
+---
+
 # Модель S.T.A.R.S. для оценки Soft-Skills
 
 # Situation

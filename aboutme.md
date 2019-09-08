@@ -1,15 +1,19 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+# About this blog
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+# About me
 
-What else do you need?
+My name is Maxim Gorbatyuk, and I am from Almaty, Kazakhstan. Also I am:
+
+- Senior software engineer in EPAM company
+- .NET developer
+- Angular developer
+- interested in project management and team leading
+- addicted to getting new knowledge, skiing, snowboarding, hiking and Starbacks coffee
 
 ### my history
 

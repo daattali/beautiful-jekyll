@@ -1,6 +1,15 @@
-# [ Психология дизайна ] — The Psychology of Design
+---
+layout: post
+title: Психология дизайна
+subtitle: О проектировании и некоторых законах дизайна
+tags: [copypaste, design]
+---
+
+# Психология дизайна
 
 [Оригинальная статья](https://alistapart.com/article/psychology-of-design#section7)
+
+---
 
 ![](https://habrastorage.org/webt/zt/0j/7p/zt0j7p76uxbpnlrofp5pcbmzfre.png)
 

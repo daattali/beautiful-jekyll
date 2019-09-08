@@ -1,4 +1,10 @@
-# Инфографика из книги "Просто космос"
+---
+layout: post
+title: Выжимка книги "Просто космос"
+tags: [copypaste, books, education]
+---
+
+# Выжимка книги "Просто космос"
 
 ![Источник](https://www.mann-ivanov-ferber.ru/assets/files/content-pages/infografika/prosto-kosmos/mif-prostocosmos-011.jpg)
 
