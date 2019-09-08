@@ -46,7 +46,7 @@ layout: base
       </div>
     {% endif %}
 
-    <ul class="d-flex justify-content-between">
+    <ul class="d-flex justify-content-between p-0">
       {% if page.previous.url %}
       <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}"
         class="btn btn-outline-secodnary">&larr; Previous</a>
@@ -56,4 +56,5 @@ layout: base
         class="btn btn-outline-primary">Next &rarr;</a>
       {% endif %}
     </ul>
+
   </div>
