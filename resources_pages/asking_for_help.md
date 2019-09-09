@@ -78,3 +78,15 @@ Examples of content that are better posted on Slack include:
 
 - a conceptual question about something covered in lecture/lab
 - asking for help with a bug in your code
+
+#### Multi-post questions/comments
+
+Keep in mind that when you post in Slack, people may get notifications. Therefore, it is often best to write out your whole message before posting. For example, if you write
+
+> Hi Mike
+(10 seconds later)
+> I have a question about DSCI 551
+(10 seconds later)
+> Your question here
+
+Then I will receive a notification at the start, which will potentially pull my attention to Slack before there is anything for me to read. Thus, it is more efficient if there is enough content for someone to read and digest before posting the first time. This applies both to direct messages and channel posts.
