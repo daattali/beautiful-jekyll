@@ -93,4 +93,4 @@ Keep in mind that when you post in Slack, people may get notifications. Therefor
 
 > Your question here
 
-Then I will receive a notification at the start, which will potentially pull my attention to Slack before there is anything for me to read. Thus, it is more efficient if there is enough content for someone to read and digest before posting the first time. This applies both to direct messages and channel posts.
+Then other users will receive a notification at the start, which will potentially pull their attention to Slack before there is anything meaningful to read. Thus, it is more efficient if there is enough content for someone to read and digest before posting the first time. This applies both to direct messages and channel posts.
