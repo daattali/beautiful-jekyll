@@ -66,6 +66,8 @@ This post is well-crafted for the following reasons:
 - The code and error message are formatted properly.
 - the actual command used to run the code (`python test.py`) is specified.
 
+.
+
 #### Where to ask
 
 Slack is intended for ephemeral content. If you have a question/post/comment that may be useful in the long-term, please
@@ -76,8 +78,10 @@ instead open an Issue in the students repo of the relevant course on GitHub. Exa
 
 Examples of content that are better posted on Slack include:
 
-- a conceptual question about something covered in lecture/lab
-- asking for help with a bug in your code
+- a conceptual question about something covered in lecture/lab.
+- asking for help with a bug in your code.
+
+.
 
 #### Multi-post questions/comments
 
