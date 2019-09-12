@@ -4,7 +4,7 @@ title: Mac 입력 방식
 subtitle: 새로 맥을 받고 나서 가장 고민한 가장 가벼운 문제
 gh-repo: changbaebang/changbaebang.github.io
 gh-badge: [star, fork, follow]
-tags: [Mac, 언어변경, 사소한고민]
+tags: [Mac, 언어변경, 사소한고민, 한영변환]
 comments: true
 ---
 
