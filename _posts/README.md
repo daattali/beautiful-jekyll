@@ -1,8 +1,8 @@
 ***
 
-| Day            | Time              |Time     |
-| ------          | -----             | ----|
-| *Sunday* | System Analysis & Design     |801 DT CSE323(F) MMM 801 DT CSE321(F) ZNT  |                
+| Day      | Course                       |Course Code (Initial)| Time & Room |Room
+| ------   | -----                        | ----           | ---             |-----
+| *Sunday* | System Analysis & Design     | CSE323(F) MMM  | 08:30-10:00  | 801DT           
 
 
 ***
