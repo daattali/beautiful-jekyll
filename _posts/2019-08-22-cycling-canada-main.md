@@ -8,13 +8,23 @@ bigimg: https://i.imgur.com/jSPI62V.jpg
 During my first year of university my friend Cory and I began to plan a cycling trip across Canada. I don’t exactly remember where the idea came from, but it quickly developed from a dream to something that could actually happen. We decided to raise money for the B.C. Cancer Foundation, as both of our families have been effected by cancer. We raised over $15,000 from friends, families, and local businesses. The experiences of fundraising, and the completion of the actual cycling trip have been two of the most rewarding experiences of my life.
 
 ## Blog Post Index
+
+Click on one of the links below to jump to a specific section:
+
+- [Video](#video)
 - [Trip Summary](#trip-summary)
 - [Trip Route](#-trip-route)
+- [Gear and Equipment](#-gear)
+- [Other Resources](#-resources)
 
+{: #video }
+## Video
 {% include youtubePlayer.html id="3YpODZVO5wY" %}
 
-## Trip Summary
+*You can also find a longer video [here](https://youtu.be/MxRifZOeY4Y), but YouTube deleted all of the audio.*
+
 {: #trip-summary }
+## Trip Summary
 
 ![Sam and Cory Pacific Ocean start](https://i.imgur.com/jSPI62V.jpg)
 
@@ -36,8 +46,8 @@ Quebec and the Maritimes provided safer riding, and the amazing feeling of the f
 
 After 47 days of cycling we arrived to the outskirts of Halifax late at night and crashed at Cory’s father’s house in Waverly. At this point it felt like we had finally accomplished our goal. We were able to sleep in, and the next morning set out on a short ride to Crystal Crescent Beach where we decided we would finish. Cory’s cousin joined us for the final day, and a small welcome party awaited us on the beach. Several km out we grabbed a bottle of Champagne to pop, and minutes later we dipped our tires into the Atlantic ocean, signifying the completion of our coast to coast journey. After 48 days of soar muscles, sunshine, rain, speed, headwinds and tailwinds it felt surreal that it was over. It took my body several days to realize that it could finally rest, and I felt very tired and weak for several days after the trip. If you have the time and funds to make this trip happen it is 100% worth it. You will be tested in every way, and it is not easy, but nothing worth doing is. Go out there, explore, and try it for yourself.
 
-## Trip Route
 {: #trip-route }
+## Trip Route
 
 The trip began in Victoria B.C. where we dipped our tires into the Pacific Ocean at the Terry Fox Memorial. From there we cycled East to Halifax where we finished at Crystal Crescent Beach, dipping our tires into the Atlantic.
 
@@ -143,3 +153,44 @@ The trip began in Victoria B.C. where we dipped our tires into the Pacific Ocean
 - From Truro to Halifax we took Hwy 2
 - From Halifax to Sambro (Crystal Crescent Beach) we took Hwy 349
 - Then we were done
+
+{: #gear }
+## Gear and Equipment
+
+#### Surly Long Haul Trucker
+
+We both rode this bike and had different experiences. I like mine and had no problems with it.  Although slightly heavy it did seem to be durable.  Just make sure to change your tires halfway through the trip to avoid flats.
+
+![Surly Long Haul Trucker](https://i.imgur.com/hGpAbqS.jpg)
+
+#### Axiom Rear Panniers
+
+These rear panniers worked pretty well.  Although not at all waterproof they can hold lots and I really liked the accessible pockets on the back and front.  They were also pretty durable and held strong for the trip.
+
+![Axiom Rear Panniers](https://i.imgur.com/RMx6z11.jpg)
+
+#### Axiom New Waterproof Front Panniers
+
+I got these in Thunder Bay after days of rain.  They are very waterproof and I liked them a lot.  Although heavier they are easy to quickly open and shut.  Most importantly these will keep your things bone dry.
+
+![Axiom Front Panniers](https://i.imgur.com/LJXZeXp.jpg)
+
+#### Thoughts
+
+Overall our gear worked out pretty well.  We had just about over 50 pounds which was manageable but at times felt pretty heavy.  If your not sure if you need it... Don't bring it!  We were lucky to ride a few days without our gear because we had family or friends come visit us and take the gear for us.  With the weight off biking is way easier, and you will go way faster especially up hill.  The most important things I would highlight are get at least 1 waterproof bag, get a camel back and drink as much water as possible, get a durable bike, good rain gear is very nice to have when you get stuck in the rain for days, make sure your tent is super easy to assemble (its hard when your so tired after riding all day), and the solar panel from Voltaic was really nice to have to always have power.
+
+#### Clothing
+
+1 Rain/Warmer Jacket, 1 Toque, 4 Pairs of Socks, 4 Boxers, 4 T-shirts, 1 Athletic Shorts, 1 Bathing Suite, 1 Light Sweater, 1 Skull Cap, 1 set of waterproof booties, 1 Rainpants, 1 Towel, 1 Sunglasses Bike Jersey, 2 Bike Shorts, 1 Fleece
+
+#### Gear
+
+Camping Gear and Other, MEC two man tent, MEC sleeping Bags, Axiom Front and Rear racks, Food (Usually enough for two days), Flashlight and head light, Tarp, 4 extra tubes (2 each), Hand pump, Bike Multi Purpose Tool, Knee Brace, Basic Toiletries, First Aid Kit, Harmonica, Solar Panel Charger (For phones and Ipod), Fire Starters (Never used these), Water Filter, Camel Back, Bug Spray and Sunscreen
+
+{: #resources }
+## Other Resources
+
+- http://bikingacrosscanada.ca/index.php - A great resource to help plan your bike trip
+- http://www.tourducanada.com/ - A company that will guide you across Canada. A great small Canadian run business
+- http://coast2coast2cure.blogspot.com/ - My friend Glen's journey across Canada
+- http://www.cs.umanitoba.ca/~durocher/trips/bike/canada2006/index.html - A resource I used to help plan my trip
