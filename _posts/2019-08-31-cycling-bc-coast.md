@@ -22,8 +22,22 @@ I ended up deciding on the route above. In only 3 days of riding, this route wou
 | 2   | Fanny Bay      | Dan Bosch Park | 78.73         | 04:55                | 16.01                |
 | 3   | Dan Bosch Park | Vancouver      | 110.9         | 07:18                | 15.19                |
 
-{% include youtubePlayer.html id="PHSyl3_2CYU" %}
+## Blog Post Index
 
+Click on one of the links below to jump to a specific section:
+
+- [Video](#video)
+- [Day 1](#day1)
+- [Day 2](#day2)
+- [Day 3](#day3)
+- [Route Details](#route)
+- [Gear](#gear)
+
+{: #video }
+## Video
+{% include youtubePlayer.html id="rRCjnmArToI" %}
+
+{: #day1 }
 ### Day 1
 
 Day 1 totalled 116.98 KM of cycling and 7:03 saddle time. The last time I rode over 100 KM in a day was about a year ago, so the ride was a little bit challenging. Starting in Vancouver, I crossed the Lions Gate Bridge to West Vancouver. Biking along Marine Drive was a very scenic route filled with epic views and multi-million dollar mansions on both sides.
@@ -46,6 +60,7 @@ With the light fading, I was becoming tired, hungry, and was eager to find a pla
 ![camp site water view](https://i.imgur.com/puBaCWi.jpg)
 
 
+{: #day2 }
 ### Day 2
 
 Day 2 was my shortest day. I cycled 78.73 KM with a total saddle time of 4:55. Day 2 was also probably the most enjoyable day. The ride from Fanny Bay to the Little River ferry terminal was mostly flat and I avoided the highway heat and sun by starting early. I caught the 9:55 AM ferry to Powell River and was able to enjoy a beautiful ferry ride across the Straight of Georgia. 
@@ -76,6 +91,7 @@ It was probably one of the nicest campsites I have ever had. Unfortunately my ir
 
 ![tent and Ruby Lake at sunset](https://i.imgur.com/cCSaCxU.jpg)
 
+{: #day3 }
 ### Day 3
 
 After a restless night and little sleep I was tired and ready to head home. Day 3 saw me cycle 110.9 KM with 7:18 of saddle time. After departing first thing in the morning from Dan Bosch Park I started to cycle South towards the Langdale ferry terminal (Gibsons). The ride for the most part was enjoyable, but traffic steadily picked up the further south I travelled.
@@ -92,9 +108,21 @@ From Sechelt to the Langdale ferry terminal was the worst stretch of the trip fo
 
 After crossing from Langdale back to Horseshoe Bay, I followed the same route home sticking to Marine Drive. This time with very sore and tired legs.
 
+{: #route }
 ### Route Details
 
 Overall I was very happy with the route I chose and would recommend the same route to others. I would consider possibly adding another day or two onto the trip to decrease the daily saddle time and increase time to relax and enjoy.
+
+- 307 KM cycled
+- 19:16 total saddle time
+- 4 ferries
+- 3 days and 2 nights
+
+| Day | Start          | Finish         | Distance (KM) | Saddle Time | Avg. Speed (KM/Hour) |
+|-----|----------------|----------------|---------------|----------------------|----------------------|
+| 1   | Vancouver      | Fanny Bay      | 116.98        | 07:03                | 16.59                |
+| 2   | Fanny Bay      | Dan Bosch Park | 78.73         | 04:55                | 16.01                |
+| 3   | Dan Bosch Park | Vancouver      | 110.9         | 07:18                | 15.19                |
 
 **Day 1:**
 
@@ -127,6 +155,7 @@ Overall I was very happy with the route I chose and would recommend the same rou
 - Took the ferry from Langdale back to Horseshoe Bay.
 - Cycled back home to Kitsilano via Marine Drive.
 
+{: #gear }
 ### Gear
 
 I had way more gear than required for this trip... But for me the gear is half the fun. 

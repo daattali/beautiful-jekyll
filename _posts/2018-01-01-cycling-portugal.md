@@ -9,6 +9,18 @@ While studying abroad in Istanbul I took my semester break to travel to Portugal
 
 I found it very difficult to try and force myself to slow down and stop. I think I developed a tendency from my Canada ride to keep going until I have reached my goal for the day. I planned 7 days of riding for the trip, which would have allowed for me to go approximately only 50km each day and still reach my destination. Instead I did the trip with 4 days of riding, and took only 1 rest day. I did do an ok job of stopping to enjoy myself at least though. I made a camp fire the first night, had a long surf session the second day, and met up and went out with friends in Lagos the third night. Arriving early also allowed me to spend more time in Faro which turned out to be a really nice city.
 
+## Blog Post Index
+
+Click on one of the links below to jump to a specific section:
+
+- [Video](#video)
+- [Trip Route](#route)
+- [Gear and Equipment](#gear)
+
+
+{: #video }
+## Video
+
 Scroll past the video and pictures below to read more about the trip.
 
 {% include youtubePlayer.html id="eH_wRd9wvEo" %}
@@ -19,6 +31,7 @@ Scroll past the video and pictures below to read more about the trip.
 
 ![highway and bridge](https://i.imgur.com/1kdOSq6.jpg)
 
+{: #route }
 ### Trip Route
 
 | Day | Start                      | End                       | KM     | Time | Average Speed (km/hr) | Max Speed (km/hr)         |
@@ -42,6 +55,7 @@ There is also a problem of not many ideal camping spots. While there are lots of
 
 ![sunset camping](https://i.imgur.com/TUpwBtb.jpg)
 
+{: #gear}
 ### Gear and Equipment
 
 ![bike at ferry](https://i.imgur.com/YVpCn9o.jpg)
