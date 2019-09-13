@@ -1,10 +1,16 @@
 ***
 
-| Day      | Course                       |Course Code (Initial)| Time & Room |Room
-| ------   | -----                        | ----           | ---             |-----
-| *Sunday* | System Analysis & Design     | CSE323(F) MMM  | 08:30-10:00  | 801DT           
-
-
+| Day      | Course                       |Course Code (Initial)| Time  |Room |
+| ------   | -----                        | ----           | ---             |----- |
+| *Sunday* |  Operating Systems    | CSE323(F) MMM  | 08:30-10:00  | 801DT |
+|        |System Analysis & Design|CSE321(F) ZNT|10:00-11:30 |801 DT  |
+| *Tuesday*|  System Analysis & Design  | CSE321(F) ZNT  |    08:30-10:00         |901DT |
+|    |   Computer Architecture and Organization | CSE322(F) DMR  | 10:00-11:30   |901 DT |
+|*Wednesday*|Operating Systems|CSE323(F) MMM|08:30-10:00 |310 DT  |
+|     |Economics | ECO314(F) SMR |10:00-11:30 | 310 DT |
+|      |Computer Architecture and Organization |CSE322(F) DMR |11.30-01:00|310 DT |
+|*Thursday* | Economics|ECO314(F) SMR|01:00-02:30 |106 DT |
+|      |Operating Systems Lab |   L-902CSEB CSE324(F) MMM |02:30-04:00|L-902 CSE   |
 ***
 
 
