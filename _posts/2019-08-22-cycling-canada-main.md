@@ -8,14 +8,15 @@ bigimg: https://i.imgur.com/jSPI62V.jpg
 During my first year of university my friend Cory and I began to plan a cycling trip across Canada. I don’t exactly remember where the idea came from, but it quickly developed from a dream to something that could actually happen. We decided to raise money for the B.C. Cancer Foundation, as both of our families have been effected by cancer. We raised over $15,000 from friends, families, and local businesses. The experiences of fundraising, and the completion of the actual cycling trip have been two of the most rewarding experiences of my life.
 
 ## Blog Post Index
-- [Trip Summary](##-Trip-Summary)
-- [Trip Route](##-Trip-Route)
+- [Trip Summary](#trip-summary)
+- [Trip Route](#-trip-route)
 
 {% include youtubePlayer.html id="3YpODZVO5wY" %}
 
-![Sam and Cory Pacific Ocean start](https://i.imgur.com/jSPI62V.jpg)
-
 ## Trip Summary
+{: #trip-summary }
+
+![Sam and Cory Pacific Ocean start](https://i.imgur.com/jSPI62V.jpg)
 
 The trip itself took 48 days (including 3 rest days), and we covered over 6,500km. We started in Victoria B.C. (dipping our tires into the Pacific Ocean) and finished in Halifax Nova Scotia. Everyday brought a new challenge, but our friends and family supporting us back home, and the people we met along the way pushed us to keep going. Looking back Cory and I were both unprepared at the start of the trip. Throughout the Western mountain ranges we both experienced  physical pain. It was also a learning experience figuring out would and wouldn’t work in terms of camping. Although extremely challenging, the mountains also presented many rewards such as breath taking scenery, extreme speeds, fresh air, kind people and new experiences.
 
@@ -36,6 +37,7 @@ Quebec and the Maritimes provided safer riding, and the amazing feeling of the f
 After 47 days of cycling we arrived to the outskirts of Halifax late at night and crashed at Cory’s father’s house in Waverly. At this point it felt like we had finally accomplished our goal. We were able to sleep in, and the next morning set out on a short ride to Crystal Crescent Beach where we decided we would finish. Cory’s cousin joined us for the final day, and a small welcome party awaited us on the beach. Several km out we grabbed a bottle of Champagne to pop, and minutes later we dipped our tires into the Atlantic ocean, signifying the completion of our coast to coast journey. After 48 days of soar muscles, sunshine, rain, speed, headwinds and tailwinds it felt surreal that it was over. It took my body several days to realize that it could finally rest, and I felt very tired and weak for several days after the trip. If you have the time and funds to make this trip happen it is 100% worth it. You will be tested in every way, and it is not easy, but nothing worth doing is. Go out there, explore, and try it for yourself.
 
 ## Trip Route
+{: #trip-route }
 
 The trip began in Victoria B.C. where we dipped our tires into the Pacific Ocean at the Terry Fox Memorial. From there we cycled East to Halifax where we finished at Crystal Crescent Beach, dipping our tires into the Atlantic.
 
