@@ -1,15 +1,11 @@
 ***
 
-| Day            | Time              |Time                             |u
-| ------          | -----             | -----                                  |-----
-| *Monday*  |  8:30-10:00 AM | 10:00-11:30 AM   | i
-| *Tuesday*  |  2:30-4:00 PM | 4:00-5:30 PM              |i
-| *wednesday*  |  10:00 - 11:30 AM | 11:30-2:30PM       |  i
-|  *Thursday* |  1:00-2:30 PM | 2:30-4:00 PM   |4:00-5:30 PM|o
+| Day            | Time              |Time     |
+| ------          | -----             | ----|
+| *Sunday* | System Analysis & Design     |801 DT CSE323(F) MMM 801 DT CSE321(F) ZNT  |                
 
 
 ***
-                           |-----|-----
 
 
 ![image](https://user-images.githubusercontent.com/35966401/49700090-5ae7a780-fc04-11e8-922b-2ced8c7a5564.png)<p align='center'> *Image credit : IBM Cognitive Class* </p>
