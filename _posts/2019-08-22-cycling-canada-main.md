@@ -13,9 +13,9 @@ Click on one of the links below to jump to a specific section:
 
 - [Video](#video)
 - [Trip Summary](#trip-summary)
-- [Trip Route](#-trip-route)
-- [Gear and Equipment](#-gear)
-- [Other Resources](#-resources)
+- [Trip Route](#trip-route)
+- [Gear and Equipment](#gear)
+- [Other Resources](#resources)
 
 {: #video }
 ## Video
@@ -190,7 +190,7 @@ Camping Gear and Other, MEC two man tent, MEC sleeping Bags, Axiom Front and 
 {: #resources }
 ## Other Resources
 
-- http://bikingacrosscanada.ca/index.php - A great resource to help plan your bike trip
-- http://www.tourducanada.com/ - A company that will guide you across Canada. A great small Canadian run business
-- http://coast2coast2cure.blogspot.com/ - My friend Glen's journey across Canada
-- http://www.cs.umanitoba.ca/~durocher/trips/bike/canada2006/index.html - A resource I used to help plan my trip
+- [http://bikingacrosscanada.ca/index.php](http://bikingacrosscanada.ca/index.php) - A great resource to help plan your bike trip
+- [http://www.tourducanada.com/](http://www.tourducanada.com/) - A company that will guide you across Canada. A great small Canadian run business
+- [http://coast2coast2cure.blogspot.com/](http://coast2coast2cure.blogspot.com/) - My friend Glen's journey across Canada
+- [http://www.cs.umanitoba.ca/~durocher/trips/bike/canada2006/index.html](http://www.cs.umanitoba.ca/~durocher/trips/bike/canada2006/index.html) - A resource I used to help plan my trip

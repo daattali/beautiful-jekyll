@@ -27,17 +27,19 @@ I ended up deciding on the route above. In only 3 days of riding, this route wou
 Click on one of the links below to jump to a specific section:
 
 - [Video](#video)
-- [Day 1](#day1)
-- [Day 2](#day2)
-- [Day 3](#day3)
+- [Trip Summary](#trip)
 - [Route Details](#route)
 - [Gear](#gear)
 
 {: #video }
 ## Video
+
 {% include youtubePlayer.html id="rRCjnmArToI" %}
 
-{: #day1 }
+{: #trip }
+## Trip Summary
+
+
 ### Day 1
 
 Day 1 totalled 116.98 KM of cycling and 7:03 saddle time. The last time I rode over 100 KM in a day was about a year ago, so the ride was a little bit challenging. Starting in Vancouver, I crossed the Lions Gate Bridge to West Vancouver. Biking along Marine Drive was a very scenic route filled with epic views and multi-million dollar mansions on both sides.
@@ -60,7 +62,6 @@ With the light fading, I was becoming tired, hungry, and was eager to find a pla
 ![camp site water view](https://i.imgur.com/puBaCWi.jpg)
 
 
-{: #day2 }
 ### Day 2
 
 Day 2 was my shortest day. I cycled 78.73 KM with a total saddle time of 4:55. Day 2 was also probably the most enjoyable day. The ride from Fanny Bay to the Little River ferry terminal was mostly flat and I avoided the highway heat and sun by starting early. I caught the 9:55 AM ferry to Powell River and was able to enjoy a beautiful ferry ride across the Straight of Georgia. 
@@ -91,7 +92,7 @@ It was probably one of the nicest campsites I have ever had. Unfortunately my ir
 
 ![tent and Ruby Lake at sunset](https://i.imgur.com/cCSaCxU.jpg)
 
-{: #day3 }
+
 ### Day 3
 
 After a restless night and little sleep I was tired and ready to head home. Day 3 saw me cycle 110.9 KM with 7:18 of saddle time. After departing first thing in the morning from Dan Bosch Park I started to cycle South towards the Langdale ferry terminal (Gibsons). The ride for the most part was enjoyable, but traffic steadily picked up the further south I travelled.

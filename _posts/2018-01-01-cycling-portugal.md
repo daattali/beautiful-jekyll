@@ -7,6 +7,8 @@ bigimg: https://i.imgur.com/1UfEY2c.jpg
 
 While studying abroad in Istanbul I took my semester break to travel to Portugal and cycle from Lisbon to Faro. The goal of the trip was to really enjoy the nature. I wanted it to be slow paced and relaxing. I wanted to take many stops, and enjoy all the sights and sounds. When I cycled across Canada there was no stopping to smell the roses. We were really determined to get across the country in 50 days, so we missed a lot of cool sights along the way for the sake of time.
 
+![cliffs and flowers](https://i.imgur.com/yb6qjV4.jpg)
+
 I found it very difficult to try and force myself to slow down and stop. I think I developed a tendency from my Canada ride to keep going until I have reached my goal for the day. I planned 7 days of riding for the trip, which would have allowed for me to go approximately only 50km each day and still reach my destination. Instead I did the trip with 4 days of riding, and took only 1 rest day. I did do an ok job of stopping to enjoy myself at least though. I made a camp fire the first night, had a long surf session the second day, and met up and went out with friends in Lagos the third night. Arriving early also allowed me to spend more time in Faro which turned out to be a really nice city.
 
 ## Blog Post Index
@@ -25,8 +27,6 @@ Scroll past the video and pictures below to read more about the trip.
 
 {% include youtubePlayer.html id="eH_wRd9wvEo" %}
 
-![cliffs and flowers](https://i.imgur.com/yb6qjV4.jpg)
-
 ![coffee](https://i.imgur.com/LQrDGEk.jpg)
 
 ![highway and bridge](https://i.imgur.com/1kdOSq6.jpg)
@@ -41,7 +41,7 @@ Scroll past the video and pictures below to read more about the trip.
 | Day 3 | Milfontes                | Lagos                    | 103      | 6hr 40min             | 15.61             | 42.57    |
 | Day 4 | Rest Day                 | Rest Day                 | Rest Day | Rest Day              | Rest Day          | Rest Day |
 | Day 5 | Lagos                    | Faro                     | 86       | 4hr 43min             | 18.54             | 43.36    |
-| Total |                          |                          | 340.52   | 20hr 33min            | 17.2475           | 48.78    |
+| **Total** |                          |                          | **340.52**   | **20hr 33min**            | **17.2475**           | **48.78**    |
 
 This route proved to be a decent one. It was not overly challenging, and provided nice scenery. For the most part there was not very much traffic, with the exception being my ride from Lago's to Faro along the south. In this stretch there was way too much traffic! The terrain is mostly natural, with some fun climbs and decants, the best one being just outside of Lagos. Heading south, as you near the city you are treated to a pretty gruelling climb, and then rewarded with some awesome down hill.
 
