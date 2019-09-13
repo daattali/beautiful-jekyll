@@ -9,7 +9,7 @@ title: About me
 
 My name is Maxim Gorbatyuk, and I am from Almaty, Kazakhstan. Also I am:
 
-- Senior software engineer in EPAM company
+- Senior software engineer at EPAM company
 - .NET developer
 - Angular developer
 - interested in project management and team leading
