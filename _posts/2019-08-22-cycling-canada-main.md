@@ -9,6 +9,8 @@ During my first year of university my friend Cory and I began to plan a cycling 
 
 [Trip Summary](##-Trip-Summary) <br>[Trip Route](##-Trip-Route)
 
+{% include youtubePlayer.html id="3YpODZVO5wY" %}
+
 ![Sam and Cory Pacific Ocean start](https://i.imgur.com/jSPI62V.jpg)
 
 ## Trip Summary
