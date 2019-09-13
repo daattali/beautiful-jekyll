@@ -12,6 +12,8 @@ All submitted labs **MUST** do the following:
 
 2. In the main `README.md` file in the lab/assignment repo, you must make it clear where all files are for all assignments, as well as explain anything that we need to know to understand your submission. Your README must also include a clickable link to your main report. Please link to the most readable rendered version of your report; in other words, the version you want the grader to look at if viewing everything through the web browser. This may be an .ipynb, .md, .Rmd, .pdf, etc. depending on the situation. For example, if there are lots of LaTeX equations then .pdf will look better than .Rmd in the browser.
 
+    Note: before the deadline, we recommend that you review your submission from within GitHub in a web browser. It occasionally happens that parts of one's work, such as LaTeX equations, look fine in Jupyter but become corrupted when rendered in GitHub. In these situations there is usually a quick fix; you can/should seek help from the course staff if you need help resolving such issues. It is important that your submission renders faithfully in GitHub because that is typically how the grader will be viewing it.
+
 3. Your work must be reproducible from beginning to end. That means:
   - all data must be in the repo, or linked to and grabbed by your code (*e.g.,* `curl`, `wget`, `read_csv("<URL>")` etc)
   - all data cleaning/wrangling must be done programmatically (*i.e.,* in R, Python, etc) so that it is reproducible
