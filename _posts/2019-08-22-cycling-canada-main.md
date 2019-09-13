@@ -7,7 +7,9 @@ bigimg: https://i.imgur.com/jSPI62V.jpg
 
 During my first year of university my friend Cory and I began to plan a cycling trip across Canada. I don’t exactly remember where the idea came from, but it quickly developed from a dream to something that could actually happen. We decided to raise money for the B.C. Cancer Foundation, as both of our families have been effected by cancer. We raised over $15,000 from friends, families, and local businesses. The experiences of fundraising, and the completion of the actual cycling trip have been two of the most rewarding experiences of my life.
 
-[Trip Summary](##-Trip-Summary) <br>[Trip Route](##-Trip-Route)
+## Blog Post Index
+- [Trip Summary](##-Trip-Summary)
+- [Trip Route](##-Trip-Route)
 
 {% include youtubePlayer.html id="3YpODZVO5wY" %}
 

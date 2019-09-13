@@ -22,7 +22,7 @@ I ended up deciding on the route above. In only 3 days of riding, this route wou
 | 2   | Fanny Bay      | Dan Bosch Park | 78.73         | 04:55                | 16.01                |
 | 3   | Dan Bosch Park | Vancouver      | 110.9         | 07:18                | 15.19                |
 
-
+{% include youtubePlayer.html id="PHSyl3_2CYU" %}
 
 ### Day 1
 
