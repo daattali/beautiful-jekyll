@@ -2,7 +2,7 @@
 
 ## About
 
-[samedwardes.com](samedwardes.com)
+[samedwardes.com](http://www.samedwardes.com)
 
 The blog is based oof of the **Beautiful Jekyll** theme by [Dean Attali](https://deanattali.com). See below for more details.
 
