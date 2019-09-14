@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Clustered and non-clustered indices
+category: database
 tags: [education, development]
 ---
 

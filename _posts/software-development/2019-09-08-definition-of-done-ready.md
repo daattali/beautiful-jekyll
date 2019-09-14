@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Definition of Done
-subtitle: Definition of Done and Definition of Ready
+category: software development
 tags: [processes]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Рецепт полезного код-ревью от разработчика из Яндекса
+category: pulp fiction
 tags: [copypaste, code review, development]
 ---
 

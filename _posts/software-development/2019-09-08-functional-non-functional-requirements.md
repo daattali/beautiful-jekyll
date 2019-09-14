@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Functional and Non-functional requirement
-subtitle: Functional and Non-functional requirement about
+category: software development
 tags: [processes]
 ---
 

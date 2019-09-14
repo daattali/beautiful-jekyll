@@ -2,6 +2,7 @@
 layout: post
 title: Code review по-человечески
 subtitle: О том, как сделать процесс кодревью приятным для всех
+category: pulp fiction
 tags: [copypaste, code review]
 ---
 

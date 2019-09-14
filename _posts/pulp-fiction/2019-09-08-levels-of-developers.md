@@ -2,6 +2,7 @@
 layout: post
 title: Junior, Middle, Senior — в чем разница и куда дальше?
 subtitle: О том, какие роли есть в программировании, и как их менять
+category: pulp fiction
 tags: [copypaste, career, hr]
 ---
 

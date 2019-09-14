@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Фотография. Основы экспозиции
+category: pulp fiction
 tags: [copypaste, technologies, photography]
 ---
 

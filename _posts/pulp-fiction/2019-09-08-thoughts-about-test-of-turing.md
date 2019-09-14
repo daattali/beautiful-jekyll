@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Суть теста Тьюринга
+category: pulp fiction
 tags: [original]
 ---
 

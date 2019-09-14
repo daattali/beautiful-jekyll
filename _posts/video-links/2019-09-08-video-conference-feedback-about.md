@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Этапы эволюции обратной связи в команде разработки
-subtitle: Ссылка на видеозапись выступления про обратную связь в компании
+category: video
 gh-badge: [star, follow]
 tags: [video]
 ---
+
+Ссылка на видеозапись выступления про обратную связь в компании
 
 [![Preview](http://img.youtube.com/vi/UO6tUOVGmUs/0.jpg)](http://www.youtube.com/watch?v=UO6tUOVGmUs)
 

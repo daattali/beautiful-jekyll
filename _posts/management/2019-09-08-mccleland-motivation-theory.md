@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Теория мотивации Макклелланда
+category: management
 tags: [copypaste, project management, motivation]
 ---
 

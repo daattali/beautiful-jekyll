@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Книга "5 пороков команды"
+category: book
 tags: [copypaste, books, education]
 ---
 

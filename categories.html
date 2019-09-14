@@ -1,0 +1,28 @@
+---
+layout: page
+title: 'Categories'
+---
+
+<div class="mt-2">
+
+    {% for category in site.categories %}
+
+        <div class="category-wrapper mb-3">
+            <h3>{{ category[0] }}</h3>
+
+            <div class="pl-3">
+                <div class="list-group list-group-flush">
+                    {% for post in category[1] %}
+                        <a href="{{ post.url | relative_url }}" class="d-flex list-group-item list-group-item-action justify-content-between">
+                            <span>{{- post.title -}}</span>
+                            <span class="font-italic text-muted" datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</span>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            
+        </div>
+        
+      {% endfor %}
+</div>

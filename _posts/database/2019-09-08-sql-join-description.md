@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SQL JOIN description
+category: database
 tags: [education, development]
 ---
 

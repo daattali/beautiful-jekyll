@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ConfigureAwait, кто виноват и что делать?
+category: .net
 tags: [.net, development, theory, async]
 ---
 

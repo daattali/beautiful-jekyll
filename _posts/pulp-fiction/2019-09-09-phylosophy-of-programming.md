@@ -2,6 +2,7 @@
 layout: post
 title: Философия программирования
 subtitle: О том, зачем нужно программирование как таковое, и как история повлияла на программирование
+category: pulp fiction
 tags: [copypaste, pulp fiction]
 ---
 

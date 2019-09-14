@@ -2,6 +2,7 @@
 layout: post
 title: Психология дизайна
 subtitle: О проектировании и некоторых законах дизайна
+category: pulp fiction
 tags: [copypaste, design]
 ---
 

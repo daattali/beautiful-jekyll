@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Как и почему именно так работает GC
+category: .net
 tags: [.net, development, theory]
 ---
 

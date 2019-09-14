@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Четыре правила интуитивного UX
-subtitle: Четыре правила интуитивного UX
+category: software development
 tags: [design]
 ---
 

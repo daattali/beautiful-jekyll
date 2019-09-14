@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Семь «абсолютных истин» джуниора, от которых пришлось отучиваться
+category: pulp fiction
 tags: [copypaste, development]
 ---
 

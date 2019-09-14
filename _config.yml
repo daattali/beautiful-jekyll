@@ -22,6 +22,7 @@ description: A blog where I post interesting articles, thoughts and books notes 
 navbar-links:
   Blog: "blog"
   Tags: "tags"
+  Categories: "categories"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter

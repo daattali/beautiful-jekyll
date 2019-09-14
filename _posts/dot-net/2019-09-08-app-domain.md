@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Что такое AppDomain
+category: .net
 tags: [.net, development, theory]
 ---
 

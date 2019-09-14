@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Software developer skill matrix
+category: management
 tags: [copypaste, career]
 ---
 

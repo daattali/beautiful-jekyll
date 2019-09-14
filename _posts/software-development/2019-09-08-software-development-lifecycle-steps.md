@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Development Lifecycle Steps
-subtitle: Software Development Lifecycle Steps about
+category: software development
 tags: [processes]
 ---
 

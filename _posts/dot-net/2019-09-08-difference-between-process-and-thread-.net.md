@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Разница между Process и Thread (C#)
+category: .net
 tags: [.net, development, theory]
 ---
 

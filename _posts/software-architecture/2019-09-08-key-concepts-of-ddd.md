@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Ключевые концепции DDD
-tags: [.net, development, theory]
+category: software architecture
+tags: [.net, development, theory, copypaste]
 ---
 
 Источник: Блог Сергея Теплякова.

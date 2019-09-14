@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Про рынок ИТ в России по-честному
+category: human resources
 tags: [copypaste, career, hr]
 ---
 

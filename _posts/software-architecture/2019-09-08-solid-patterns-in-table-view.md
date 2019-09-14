@@ -1,7 +1,8 @@
 ---
 layout: post
 title: SOLID паттерны в виде таблицы
-tags: [design, development]
+category: software architecture
+tags: [design patterns, development]
 ---
 
 Источник: блог Сергея Теплякова.

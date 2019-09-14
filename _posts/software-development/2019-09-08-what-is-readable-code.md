@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Is Readable Code?
-subtitle: Readable code about
+category: software development
 tags: [processes]
 ---
 

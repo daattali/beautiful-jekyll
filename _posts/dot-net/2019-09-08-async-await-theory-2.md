@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Асинхронный рассинхрон; антипаттерны в работе с async/await в .NET
+category: .net
 tags: [.net, development, theory, async]
 ---
 

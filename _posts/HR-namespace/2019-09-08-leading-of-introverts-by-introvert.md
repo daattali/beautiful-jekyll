@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Управление интровертами интровертом или опыт руководства техническими командами
+category: human resources
 tags: [copypaste, career, management]
 ---
 

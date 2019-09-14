@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Выжимка книги "Просто космос"
+category: book
 tags: [copypaste, books, education]
 ---
 

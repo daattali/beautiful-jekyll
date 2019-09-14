@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DI Паттерны. Service Locator
+category: software architecture
 tags: [.net, development, design patterns]
 ---
 

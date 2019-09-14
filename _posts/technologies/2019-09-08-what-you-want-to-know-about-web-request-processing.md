@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Все, что вы хотели знать об обработке запросов, но стеснялись спросить
+category: technologies
 tags: [copypaste, education, development]
 ---
 

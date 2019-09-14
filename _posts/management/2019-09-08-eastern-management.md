@@ -2,6 +2,7 @@
 layout: post
 title: Восточный менеджмент
 subtitle: О принципах восточного менеджмента
+category: management
 tags: [original, project management]
 ---
 

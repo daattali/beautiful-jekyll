@@ -2,6 +2,7 @@
 layout: post
 title: Мрачный скрам
 subtitle: Копия статьи о скраме и его вариациях в энтерпрайзе
+category: pulp fiction
 tags: [copypaste, processes]
 ---
 

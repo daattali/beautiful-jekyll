@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Подводные камни HttpClient в .NET
+category: .net
 tags: [.net, development, theory]
 ---
 
@@ -18,6 +19,7 @@ tags: [.net, development, theory]
 
 Первая проблема HttpClient — неочевидная **утечка соединений**. Достаточно часто мне приходилось встречать код, где он создается на выполнение каждого запроса:
 
+```csharp
     public async Task<string> GetSomeText(Guid textId)
     {
         using (var client = new HttpClient())
@@ -25,9 +27,11 @@ tags: [.net, development, theory]
             return await client.GetStringAsync($"http://someservice.com/api/v1/some-text/{textId}");
         }
     }
+```
 
 К сожалению, такой подход приводит к большой трате ресурсов и высокой вероятности получить переполнение списка открытых соединений. Для того, чтобы наглядно показать проблему, достаточно выполнить следующий код:
 
+```csharp
     static void Main(string[] args)
     {
         for(int i = 0; i < 10; i++)
@@ -38,6 +42,7 @@ tags: [.net, development, theory]
             }
         }
     }
+```
 
 И по завершении посмотреть список открытых соединений через netstat:
 
@@ -62,6 +67,7 @@ tags: [.net, development, theory]
 Вторая проблема HttpClient — неочевидный **лимит одновременных соединений с сервером**. Предположим, вы используете привычный вам .NET Framework 4.7, с помощью которого разрабатываете высоконагруженный сервис, где есть обращения к другим сервисам по HTTP. Потенциальная проблема с утечкой соединений учтена, поэтому для всех запросов используется один и тот же экземпляр HttpClient. Что может быть не так?
 Проблему легко можно увидеть, выполнив следующий код:
 
+```csharp
     static void Main(string[] args)
     {
         var client = new HttpClient();
@@ -80,33 +86,41 @@ tags: [.net, development, theory]
         var response = await client.GetAsync(url);
         Console.WriteLine($"Received response {response.StatusCode} from {url}");
     }
+```
 
 Указанный в ссылке ресурс позволяет задержать ответ сервера на указнное время, в данном случае — 5 секунд.
 
 Как несложно заметить после выполнения приведенного выше кода — через каждые 5 секунд приходит всего по 2 ответа, хотя было создано 10 одновременных запросов. Связано это с тем, что взаимодействие с HTTP в обычном .NET фреймворке, помимо всего прочего, идет через специальный класс System.Net.ServicePointManager, контролирующий различные аспекты HTTP соединений. В этом классе есть свойство DefaultConnectionLimit, указывающее, сколько одновременных подключений можно создавать для каждого домена. И так исторически сложилось, что по умолчанию значение свойства равно 2.
 Если в указанный выше пример кода добавить в самом начале
 
+```csharp
     ServicePointManager.DefaultConnectionLimit = 5;
+```
 
 то выполнение примера заметно ускорится, так как запросы будут выполняться пачками по 5.
 И прежде чем перейти к тому, как это работает в .NET Core, следует чуть больше сказать о ServicePointManager. Рассмотренное выше свойство указывает количество соединений по умолчанию, которое будет использоваться при последующих соединениях с любым доменом. Но вместе с этим, есть возможность управления параметрами для каждого доменного имени индивидуально и делается это через класс ServicePoint:
 
+```csharp
     var delayServicePoint = ServicePointManager.FindServicePoint(new Uri("http://slowwly.robertomurray.co.uk"));
     delayServicePoint.ConnectionLimit = 3;
     var habrServicePoint = ServicePointManager.FindServicePoint(new Uri("https://habr.com"));
     habrServicePoint.ConnectionLimit = 5;
+```
 
 После выполнения этого кода любое взаимодействие с Хабром через один и тот же экземпляр HttpClient будет использовать 5 одновременных соединений, а с сайтом «slowwly» — 3 соединения.
 Здесь есть еще интересный нюанс — лимит количества соединений для локальных адресов (localhost) по умолчанию равен int.MaxValue. Просто посмотрите результаты выполнения этого кода, предварительно не устанавливая DefaultConnectionLimit:
 
+```csharp
     var habrServicePoint = ServicePointManager.FindServicePoint(new Uri("https://habr.com"));
     Console.WriteLine(habrServicePoint.ConnectionLimit);
     
     var localServicePoint = ServicePointManager.FindServicePoint(new Uri("http://localhost"));
     Console.WriteLine(localServicePoint.ConnectionLimit);
+```
 
 Теперь все-таки перейдем к .NET Core. Хоть ServicePointManager и по-прежнему существует в пространстве имен System.Net, на поведение HttpClient в .NET Core он не влияет. Вместо этого, параметрами HTTP подключения можно управлять с помощью HttpClientHandler (или SocketsHttpHandler, о котором поговорим позже):
 
+```csharp
     static void Main(string[] args)
     {
         var handler = new HttpClientHandler();
@@ -131,6 +145,7 @@ tags: [.net, development, theory]
         var response = await client.GetAsync(url);
         Console.WriteLine($"Received response {response.StatusCode} from {url}");
     }
+```
 
 Приведенный выше пример будет себя вести точно также, как и начальный пример для обычного .NET Framework — устанавливать только 2 соединения одновременно. Но если убрать строчку с установкой свойства MaxConnectionsPerServer, количество одновременных соединений будет намного выше, так как по умолчанию в .NET Core значение этого свойства равно int.MaxValue.
 
@@ -154,6 +169,7 @@ tags: [.net, development, theory]
 
 Ниже приведен пример кода, с помощью которого можно понаблюдать за поведением описанных выше параметров:
 
+```csharp
     var client = new HttpClient();
     
     ServicePointManager.DnsRefreshTimeout = 120000;
@@ -166,6 +182,7 @@ tags: [.net, development, theory]
         client.GetAsync("https://habr.com").Wait();
         Thread.Sleep(10000);
     }
+```
 
 Во время работы тестовой программы можно в цикле запустить netstat через PowerShell для наблюдения за соединениями, которые она устанавливает.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Что такое канбан и чем он полезен?
+category: management
 tags: [copypaste, project management, processes]
 ---
 

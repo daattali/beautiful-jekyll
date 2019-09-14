@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Модель S.T.A.R.S. для оценки Soft-Skills
+category: management
 tags: [original, project management]
 ---
 
