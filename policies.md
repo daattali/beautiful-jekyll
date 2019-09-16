@@ -12,7 +12,9 @@ The Master of Data Science Policies and Regulations are part of the campus-wide 
 
 Regular attendance is expected of students in all their classes (including lectures, laboratories, tutorials, seminars, etc.). Students who are unavoidably absent because of illness or other reasons should inform the instructor(s) of the course(s) as soon as possible, preferably, prior to the start of the class/lab/quiz.
 
-Students who miss an assignment or quiz should immediately email a completed and signed [academic concession form](https://github.ubc.ca/MDS-2019-20/announcements/blob/master/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration%2C%202019.pdf) to the course's Lab Instructor. Note that this includes illness but also cases of conflicting responsibilities (e.g., having to care for a family member) or compassionate grounds. Upon receiving the form, the Lab Instructor and/or MDS Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
+Students who miss an assignment or quiz for a justified reasons (more on this below) should immediately email a completed and signed [academic concession form](https://github.ubc.ca/MDS-2019-20/announcements/blob/master/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration%2C%202019.pdf) to the course's Lab Instructor. Upon receiving the form, the Lab Instructor and/or MDS Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
+
+From the UBC Senate [policy on academic concession](https://senate.ubc.ca/sites/senate.ubc.ca/files/downloads/20190515_V_135_Academic_Concession-Approved.pdf), grounds for academic concession can be illness, cases of conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
 
 #### Late arrivals in lecture
 
