@@ -7,7 +7,7 @@ title: Categories
     <div class="tags-expo-list">
         {% for tag in site.categories %}
         <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-        {% endfor -%}
+        {% endfor %}
     </div>
     <hr/>
     <div class="tags-expo-section">
@@ -26,4 +26,3 @@ title: Categories
         {% endfor %}
     </div>
 </div>
-{% endraw %}
