@@ -15,7 +15,7 @@ fields:
 - type: datetime
   name: DATE
 pages:
-- _posts/vmware-converter-you-cannot-use-a-disconnected-inventory-object-for-a-destination.md
+- _posts/2019-09-17-vmware-converter-you-cannot-use-a-disconnected-inventory-object-for-a-destination.md
 - _posts/change-srm-placeholder-datastore.md
 - _posts/get-lun-information-in-powercli.md
 - _posts/2019-01-16-powercli-srm-module-how-to-use-it.md
