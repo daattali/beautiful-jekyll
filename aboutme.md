@@ -4,10 +4,7 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
+My name is Hoai Chung Nguyen. I'm a Android developer
 
 What else do you need?
 
