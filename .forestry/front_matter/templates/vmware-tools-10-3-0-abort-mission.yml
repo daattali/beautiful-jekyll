@@ -17,12 +17,12 @@ fields:
 pages:
 - _posts/change-srm-placeholder-datastore.md
 - _posts/get-lun-information-in-powercli.md
+- _posts/2019-01-16-powercli-srm-module-how-to-use-it.md
+- _posts/2018-11-27-test.md
 - _posts/2019-06-20-failed-to-deploy-ovf-package-the-ovf-descriptor-is-not-available.md
 - _posts/2019-03-08-conflict-between-emc-networker-client-and-vcenter-server-windows.md
 - _posts/2019-02-25-speed-up-powercli.md
-- _posts/2019-01-16-powercli-srm-module-how-to-use-it.md
 - _posts/2019-02-28-how-to-reset-the-password-of-auto-generated-vcenter-service-accounts-on-windows.md
 - _posts/2019-01-17-horizon-view-shambles.md
-- _posts/2018-11-27-test.md
 - _posts/2018-12-03-canceling-hung-tools-upgrade-task.md
 - _posts/2019-04-02-error-certificate-manager-lstool-get-failed-1.md
