@@ -12,4 +12,4 @@ For day to day work (manage virtual machines) these permissions are usually enou
 
 ![](/img/converter-host-perm.png)
 
-To fix this error you need to add the Read-Only permissions on at least one host on the cluster.
+To fix this error you need to **add the Read-Only permissions on at least one host in the cluster**.
