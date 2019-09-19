@@ -112,7 +112,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #C7C7C7;
+  color: #666666;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -220,7 +220,7 @@ img {
     text-align: center;
   }  
   .navbar-custom .nav .navlinks-container:hover {
-    background: #666666;
+    background: #eee;
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
