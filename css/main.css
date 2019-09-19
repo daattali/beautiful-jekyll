@@ -221,6 +221,7 @@ img {
   }  
   .navbar-custom .nav .navlinks-container:hover {
     background: #eee;
+    color: #95ee77;
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
