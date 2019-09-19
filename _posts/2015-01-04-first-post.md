@@ -4,4 +4,8 @@ title: First post!
 image: /img/hello_world.jpeg
 ---
 
-mới add font Be Vietnam vào blog
+Mới add font Be Vietnam vào blog
+
+Từ nay sẽ siêng viết blog hơn 
+
+Bởi vì blog này free
