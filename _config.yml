@@ -23,6 +23,8 @@ description: Virtualization technologies - Xavier Avrillier
 
 # List of links in the navigation bar
 navbar-links:
+  Ebook : 
+     PowerCLI (Altaro): "https://www.altaro.com/ebook/powercli.php?LP=sc-vmblog-Article-ebook-powercli&Cat=SC&utm_campaign=ebook-powercli&utm_medium=sc&utm_source=sc-vmblog&utm_content=article"
   About Me: "aboutme"
   Contact: "contact"
   #Resources:
