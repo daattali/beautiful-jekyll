@@ -1,11 +1,5 @@
 # --- General options --- #
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> Abs link patch (#506)
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
@@ -19,23 +13,9 @@ baseurl: ""
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
-<<<<<<< HEAD
->>>>>>> Update options
-=======
-=======
->>>>>>> Abs link patch (#506)
->>>>>>> Abs link patch (#506)
-=======
->>>>>>> Update _config.yml
 # Name of website
 title: DevoreDevelops.com
 
-# Short description of your site
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-description: A virtual proof that I'm awesome
-
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -45,14 +25,7 @@ description: A virtual proof that I'm awesome
 
 # baseurl should be an empty string
 #baseurl: ""
-=======
 description: Personal Web Site of Jason Devore
->>>>>>> Update options
-=======
-description: Personal Web Site of Jason Devore
-=======
-description: A virtual proof that I'm awesome
-
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -62,43 +35,12 @@ description: A virtual proof that I'm awesome
 
 # baseurl should be an empty string
 #baseurl: ""
->>>>>>> Abs link patch (#506)
->>>>>>> Abs link patch (#506)
-=======
-description: Personal Web Site of Jason Devore
->>>>>>> Update _config.yml
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  About Me: "aboutme"
-<<<<<<< HEAD
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
-=======
->>>>>>> Update options
-=======
   About Me🧐: "aboutme"
->>>>>>> Update emojis
-=======
-  About Me🧐: "aboutme"
-=======
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
->>>>>>> Abs link patch (#506)
->>>>>>> Abs link patch (#506)
-=======
-  About Me🧐: "aboutme"
->>>>>>> Update _config.yml
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -142,26 +84,19 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-<<<<<<< HEAD
-<<<<<<< HEAD
   email: "someone@example.com"
   facebook: deanattali
   github: daattali
   twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
-=======
-  email: "sayhello@jasondevelops.com"
-=======
   email: "sayhello@devoredevelops.com"
->>>>>>> Rename site, socials
   # facebook: daattali
   github: devoredevelops
   twitter: jason_develops
 #  reddit: yourname
 #  google-plus: +DeanAttali
   linkedin: jason-develops
->>>>>>> Update options
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
