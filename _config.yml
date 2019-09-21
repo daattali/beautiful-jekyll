@@ -20,7 +20,7 @@ description: Personal site for economics and coding.
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "I am currently in my 5th year of an Economics PhD at New York University. My academic research interests are primarily focused on industrial organization, applied econometrics and behavioral economics. Outside of my academic research, I like to code, play around with interesting datasets, climb and bike around the city."
+  About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
