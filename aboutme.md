@@ -1,1 +1,1 @@
-Test file in about me section
+I am currently in my 5th year of an Economics PhD at New York University. My academic research interests are primarily focused on industrial organization, applied econometrics and behavioral economics. Outside of my academic research, I like to code, play around with interesting datasets, climb and bike around the city.
