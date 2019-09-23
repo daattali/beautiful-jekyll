@@ -63,3 +63,27 @@ You could also identify the host that is holding a lock on the file using the "v
     Size       : 6287261696
 
 Now we know that ESX-Host-01 has its coredump file stored on the datastore we want to move it from.
+
+##### Moving the coredump file to another datastore
+
+* List current coredump file for the host.
+
+    $esxcli = Get-EsxCli -VMHost ESX-Host-01 -V2
+    
+    PS> $esxcli.system.coredump.file.list.invoke()
+
+![](/img/corefile3.png)
+
+* Disable the current coredump file. The **Active** and **Configured** properties are now st to **False**.
+
+    PS> $esxcli.system.coredump.file.set.invoke(@{unconfigure=$true})
+    true
+
+![](/img/corefile4.png)
+
+* Remove the coredump file. Not mandatory. You see in the screenshot that the line disappeared.
+
+    PS> $esxcli.system.coredump.file.remove.Invoke(@{file="/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/vmkdump/E3C23887-677B-8B46-A501-E4F9AD2877A4.dumpfile"})
+    true
+
+![](/img/corefile5.png)
