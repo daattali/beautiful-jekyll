@@ -39,4 +39,4 @@ You can also use PowerCLI.
 
 ##### Identifying the hosts using the files
 
-You could identify the host that is holding a lock on the file using the "vmkfstools -D xxx" in SSH but I wanted to use the coredump commands provided by esxcli.
+You could also identify the host that is holding a lock on the file using the "vmkfstools -D xxx" in SSH but I wanted to use the coredump commands provided by esxcli.
