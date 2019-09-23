@@ -76,6 +76,7 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 * Disable the current coredump file. The **Active** and **Configured** properties are now set to **False** if you run the list method again.
 
     PS> $esxcli.system.coredump.file.set.invoke(@{unconfigure=$true})
+    
     true
 
 ![](/img/corefile4.png)
@@ -83,6 +84,7 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 * Remove the coredump file (not mandatory). You see in the screenshot that the line disappeared (the file is also gone in the datastore).
 
     PS> $esxcli.system.coredump.file.remove.Invoke(@{file="/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/vmkdump/E3C23887-677B-8B46-A501-E4F9AD2877A4.dumpfile"})
+    
     true
 
 ![](/img/corefile5.png)
@@ -90,6 +92,7 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 * Create a new file and enable it. The new file is now active and configured on the new datastore. 
 
     PS> $esxcli.system.coredump.file.add.Invoke(@{datastore="Datastore-02";enable=$true})
+    
     true
 
 ![](/img/corefile6.png)
