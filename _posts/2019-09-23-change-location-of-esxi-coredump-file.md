@@ -87,7 +87,7 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 
 ![](/img/corefile5.png)
 
-* Create a new file and enable it. The new file is now active and configured on the new datastore.
+* Create a new file and enable it. The new file is now active and configured on the new datastore. 
 
     PS> $esxcli.system.coredump.file.add.Invoke(@{datastore="Datastore-02";enable=$true})
     true
