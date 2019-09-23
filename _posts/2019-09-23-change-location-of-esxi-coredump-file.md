@@ -43,6 +43,7 @@ You could also identify the host that is holding a lock on the file using the "v
 
 * The command below will list the coredump file information about each cluster host and store it in a variable. 
 
+    ```
     $corefile =  get-cluster MyCluster &#124; Get-VMHost &#124; ForEach-Object{
     
     $esxcli = Get-EsxCli -VMHost $_ -V2
@@ -50,9 +51,11 @@ You could also identify the host that is holding a lock on the file using the "v
     $esxcli.system.coredump.file.list.invoke() &#124; where active -eq $true &#124; select @{l="vmhost";e={$esxcli.VMHost.name}},*
     
     }
+    ```
 
 * We can then use this information to find which coredump file is stored in the incriminated datastore by filtering using its UID gathered previously.
 
+    ```
     PS> $corefile &#124; where path -match "/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/"
     
     vmhost     : ESX-Host-01
@@ -60,6 +63,7 @@ You could also identify the host that is holding a lock on the file using the "v
     Configured : true
     Path       : /vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/vmkdump/E3C23887-677B-8B46-A501-E4F9AD2877A4.dumpfile
     Size       : 6287261696
+    ```
 
 Now we know that ESX-Host-01 has its coredump file stored on the datastore we want to move it from.
 
@@ -67,32 +71,40 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 
 * List current coredump file for the host.
 
+    ```
     $esxcli = Get-EsxCli -VMHost ESX-Host-01 -V2
     
     PS> $esxcli.system.coredump.file.list.invoke()
+    ```
 
 ![](/img/corefile3.png)
 
 * Disable the current coredump file. The **Active** and **Configured** properties are now set to **False** if you run the list method again.
 
+    ```
     PS> $esxcli.system.coredump.file.set.invoke(@{unconfigure=$true})
     
     true
+    ```
 
 ![](/img/corefile4.png)
 
 * Remove the coredump file (not mandatory). You see in the screenshot that the line disappeared (the file is also gone in the datastore).
 
+    ```
     PS> $esxcli.system.coredump.file.remove.Invoke(@{file="/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/vmkdump/E3C23887-677B-8B46-A501-E4F9AD2877A4.dumpfile"})
     
     true
+    ```
 
 ![](/img/corefile5.png)
 
 * Create a new file and enable it. The new file is now active and configured on the new datastore. 
 
+    ```
     PS> $esxcli.system.coredump.file.add.Invoke(@{datastore="Datastore-02";enable=$true})
     
     true
+    ```
 
 ![](/img/corefile6.png)
