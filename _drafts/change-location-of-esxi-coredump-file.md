@@ -81,9 +81,16 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 
 ![](/img/corefile4.png)
 
-* Remove the coredump file. Not mandatory. You see in the screenshot that the line disappeared.
+* Remove the coredump file. Not mandatory. You see in the screenshot that the line disappeared (the file is also gone in the datastore).
 
     PS> $esxcli.system.coredump.file.remove.Invoke(@{file="/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/vmkdump/E3C23887-677B-8B46-A501-E4F9AD2877A4.dumpfile"})
     true
 
 ![](/img/corefile5.png)
+
+* Create a new file and enable it.
+
+    PS> $esxcli.system.coredump.file.add.Invoke(@{datastore="MG-P-ESXCS64_local_R1";enable=$true})
+    true
+
+![](/img/corefile6.png)
