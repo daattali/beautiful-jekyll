@@ -6,7 +6,7 @@ DATE:
 ---
 A core dump, also referred to as crash dump or memory dump, contains the content of the memory at a given point in time. It is usually created when the system or program crashes. It is a way of saving evidences that could help troubleshoot the root cause of the issue. It would be awkward if the housekeeper mopped the floor at the crime scene before Gil Grissom and his pals arrived... Anyway, I digress.
 
-ESXi has three coredump mecanisms to save crash information including a network location, a partition or a file (the topic of this article). 
+ESXi has three coredump mecanisms to save crash information including a network location, a partition or a file (the topic of this article).
 
 The coredump file is created by ESXi at boot time. The size (function of the memory installed in the host), location and names are defined automatically. Sometimes a local datastore is selected and sometimes it is a shared one. There are a few reasons why you would want to change the location of the file, including but not limited to:
 
@@ -24,8 +24,15 @@ They are stored in a folder name "**vmkdump**" in the datastore and have a uniqu
 
 ##### Identifying the datastore UID
 
-We will need it later to identify the host owning the files. You can find it in "**Datastore**">"**Summary**">"**Details**">"**Location**".
+We will need it later to identify the host owning the files. You can find it in "**Datastore**">"**Summary**">"**URL**".
 
 ![](/img/corefile2.png)
 
 You can also use PowerCLI.
+
+    PS> (get-datastore *XXXX*).ExtensionData.summary
+    
+    Datastore          : Datastore-datastore-120
+    Name               : XXX-XXX-XXX-XXX
+    Url                : ds:///vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/
+    ...
