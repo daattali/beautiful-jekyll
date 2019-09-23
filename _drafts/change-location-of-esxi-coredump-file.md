@@ -36,3 +36,7 @@ You can also use PowerCLI.
     Name               : XXX-XXX-XXX-XXX
     Url                : ds:///vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/
     ...
+
+##### Identifying the hosts using the files
+
+You could identify the host that is holding a lock on the file using the "vmkfstools -D xxx" in SSH but I wanted to use the coredump commands provided by esxcli.
