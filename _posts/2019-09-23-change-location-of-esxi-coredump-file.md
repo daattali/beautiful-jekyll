@@ -41,7 +41,7 @@ You can also use PowerCLI.
 
 You could also identify the host that is holding a lock on the file using the "vmkfstools -D xxx" in SSH but I wanted to stay in PowerCLI with the coredump commands provided by esxcli.
 
-* The command below will list the coredump file information about each cluster host and store it in a variable.
+* The command below will list the coredump file information about each cluster host and store it in a variable. 
 
     $corefile =  get-cluster MyCluster &#124; Get-VMHost &#124; ForEach-Object{
     
