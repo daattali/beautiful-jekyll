@@ -44,13 +44,17 @@ You could also identify the host that is holding a lock on the file using the "v
 * The command below will list the coredump file information about each cluster host and store it in a variable.
 
     $corefile =  get-cluster MyCluster | Get-VMHost | ForEach-Object{
+    
     $esxcli = Get-EsxCli -VMHost $_ -V2
+    
     $esxcli.system.coredump.file.list.invoke() | where active -eq $true | select @{l="vmhost";e={$esxcli.VMHost.name}},*
+    
     }
 
 * We can then use this information to find which coredump file is stored in the incriminated datastore by filtering using its UID gathered previously.
 
     PS> $corefile | where path -match "/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/"
+    
     vmhost     : ESX-Host-01
     Active     : true
     Configured : true
@@ -64,6 +68,7 @@ Now we know that ESX-Host-01 has its coredump file stored on the datastore we wa
 * List current coredump file for the host.
 
     $esxcli = Get-EsxCli -VMHost ESX-Host-01 -V2
+    
     PS> $esxcli.system.coredump.file.list.invoke()
 
 ![](/img/corefile3.png)
