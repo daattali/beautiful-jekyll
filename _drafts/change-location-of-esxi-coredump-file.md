@@ -40,3 +40,24 @@ You can also use PowerCLI.
 ##### Identifying the hosts using the files
 
 You could also identify the host that is holding a lock on the file using the "vmkfstools -D xxx" in SSH but I wanted to stay in PowerCLI with the coredump commands provided by esxcli.
+
+* The command below will list the coredump file information about each cluster host and store it in a variable.
+
+    $corefile =  get-cluster iolan*|Get-VMHost | ForEach-Object{
+    
+    $esxcli = Get-EsxCli -VMHost $_ -V2
+    
+    $esxcli.system.coredump.file.list.invoke() | where active -eq $true | select @{l="vmhost";e={$esxcli.VMHost.name}},*
+    
+    }
+
+* We can then use this information to find which coredump file is stored in the incriminated datastore by filtering using its UID gathered previously.
+
+    PS> $corefile | where path -match "/vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/"
+    
+    
+    vmhost     : ESX-Host-01
+    Active     : true
+    Configured : true
+    Path       : /vmfs/volumes/570e3e4a-a3cbd39f-5335-e41f13815e0b/vmkdump/E3C23887-677B-8B46-A501-E4F9AD2877A4.dumpfile
+    Size       : 6287261696
