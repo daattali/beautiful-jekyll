@@ -15,7 +15,7 @@ fields:
 - type: datetime
   name: DATE
 pages:
-- _posts/change-location-of-esxi-coredump-file.md
+- _posts/2019-09-23-change-location-of-esxi-coredump-file.md
 - _posts/2019-09-19-download-my-ebook-on-powercli-courtesy-of-altaro-software.md
 - _posts/2019-04-02-error-certificate-manager-lstool-get-failed-1.md
 - _posts/2019-03-08-conflict-between-emc-networker-client-and-vcenter-server-windows.md
