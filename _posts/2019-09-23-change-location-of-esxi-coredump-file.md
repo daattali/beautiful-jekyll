@@ -8,7 +8,7 @@ A core dump, also referred to as crash dump or memory dump, contains the content
 
 ESXi has three coredump mecanisms to save crash information including a network location, a partition or a file (the topic of this article).
 
-The coredump file is created by ESXi at boot time. The size (function of the memory installed in the host), location and names are defined automatically. Sometimes a local datastore is selected and sometimes it is a shared one. There are a few reasons why you may want to change the location of the file, including but not limited to:
+The coredump file is created by ESXi at boot time. The size (function of the memory installed in the host), location and names are defined automatically. Sometimes a local datastore is selected and sometimes it is a shared one. There are a few reasons why you may want to change the location of the file, including but not limited to :
 
 * Is it preventing you from decommissioning a datastore?
 * Are you running out of space on this datastore?
