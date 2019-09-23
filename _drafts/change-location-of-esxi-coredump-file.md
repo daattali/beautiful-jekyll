@@ -4,7 +4,7 @@ title: Change location of ESXi coredump file
 DATE: 
 
 ---
-A core dump, also referred to as crash dump or memory dump, contains the content of the memory at a given point in time. It is usually created when the system or program crashes. It is a way of saving evidences that could help troubleshoot the root cause of the issue. It would be awkward if the housekeeper mopped the floor at the crime scene before Gil Grissom and his pals arrived... Anyway, I digress.
+A core dump, also referred to as crash dump or memory dump, contains the content of the memory at a given point in time. It is usually created when the system or program crashes. It is a way of saving evidence that could help troubleshoot the root cause of the issue. It would be awkward if the housekeeper mopped the floor at the crime scene before Gil Grissom and his pals arrived... Anyway, I digress.
 
 ESXi has three coredump mecanisms to save crash information including a network location, a partition or a file (the topic of this article).
 
