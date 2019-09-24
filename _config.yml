@@ -21,6 +21,7 @@ description: Personal site for economics and coding.
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  Research : "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
