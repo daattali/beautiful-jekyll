@@ -2,11 +2,11 @@
 layout: page
 title: Team Contract
 ---
-###Preliminary Information
+### Preliminary Information
 
 ![RES]({{site.baseurl}}/img/team.png){: .center-block :}
 
-###Guiding Principles
+### Guiding Principles
 
 1. Positive and proactive attitudes towards the project
 2. Don’t limit ideas! Think outside the box
@@ -57,3 +57,8 @@ Gavin: Focuses on the website design and app design process
 4. We will revisit the contract if there is a major concern
 5. Only revise when the majority of the team members think it’s necessary
 6. Talk about these issues before changing the contract
+
+### Sources
+
+- [Iris's Course Page](https://sites.google.com/williams.edu/csci376-2018/assignments/team-contracts?authuser=0)
+- Referred to [Pin](http://www.lester-lee.com/curious-places/proposal/) for an example
