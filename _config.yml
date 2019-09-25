@@ -22,7 +22,7 @@ title: RES
 navbar-links:
   Group Proposal: "proposal"
     - #Group Contract: https://hcires.github.io/teamcontract/
-  Resources:
+  #Resources:
     - #Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - #Learn markdown: "http://www.markdowntutorial.com/"
   Author's home: "https://22hh8.github.io/myproject/"
