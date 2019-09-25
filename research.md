@@ -1,3 +1,5 @@
+## Research
+
 ## Published 
 
 Petrocelli, J., Rubin, A. & Stevens, R. (2016). The Sin of Prediction: When Mentally Simulated Alternatives Compete with Reality. Personality and Social Psychology Bulletin, 42(12), doi: 10.1177/0146167216669122. <br/>
