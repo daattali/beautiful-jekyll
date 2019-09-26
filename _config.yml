@@ -20,11 +20,10 @@ description: A website all about our project
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+  Team Members:
+    - Peter Hollander: "http://peterhollander.github.io"
+    - Learn markdown: "http://ojb2.github.io"
+    - Teiheim Edwards: "http://teiheim.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
