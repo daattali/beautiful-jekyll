@@ -67,6 +67,7 @@ dv=df[[x for x in df.columns if x!='Class']]
 ```
 
 <details>
+
 ```python
 # ~~ Create frequency plot of transactions by fraud type ~~ #
 def make_frequency_plot(iv):
@@ -120,6 +121,7 @@ def make_frequency_plot(iv):
     # Show plot
     plt.show()
 ```
+
 </details>
 
 
