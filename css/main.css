@@ -667,6 +667,7 @@ table tr td :last-child {
 pre {
   font-size: 16px;
   line-height: 1.5em;
+  white-space: pre-wrap;
 }
 .highlight pre {
   border: none;
