@@ -130,7 +130,7 @@ make_frequency_plot(iv)
 ```
 
 
-![png](posts_images/2019-09-30-Logistic Regressions and Rare Events/output_12_0.png){:class="img-responsive"}
+![png](posts_images/2019-09-30-Logistic Regressions and Rare Events/output_12_0.png)
 
 
 ## Defining our stratified sampling method
