@@ -29,7 +29,7 @@ A weighted likelihood approach simply attempts to re-weight our data to account 
 
 
 
-<font size="+3"> <center> $\omega_{c}$ is the sample weight given to class $c$ </center> </font> 
+<font size="+1.5"> <center> $\omega_{c}$ is the sample weight given to class $c$ </center> </font> 
 
 In our Bernoulli case, there are only two classes, so c only takes two values, $c \in \{0,1\}$.  Thus, the weighted log likelihood is simply:
 
