@@ -181,19 +181,20 @@ class oversample_KFold(KFold):
              df (dataframe) : data used in model estimation
              
            Outputs:
-             stratified_train_ix, test_ix (tuple) : tuple of training and test indices (same as 
-                                           KFold class)
+             stratified_train_ix, test_ix (tuple) : tuple of training and test indices 
+                                                    (same as KFold class)
            
            Note: 
            
-            To form the stratified_train_ix we use the following sampling procedure goes as follows.
-            Create a sample of size df.shape[0]. Within each row, we draw a pair of random numbers:
+            To form the stratified_train_ix we use the following sampling procedure.
+            Create a sample of size df.shape[0]. Within each row, we draw a pair of 
+            random numbers:
             
             1. Draw Z from a uniform random. 
-               If Z <= sample_weight : in step (2) sample from the negative class (class = 0)
-               If Z >  sample_weight : in step (2) sample from the positivie class (class = 1)
+               If Z <= sample_weight : in step (2) sample from negative class (class = 0)
+               If Z >  sample_weight : in step (2) sample from positivie class (class = 1)
             
-            2. Draw W from a discrete uniform distribution with size = number of observations in
+            2. Draw W from a discrete uniform distribution with size = # observations in
                 the class being drawn from.
                
                For example, if:
@@ -202,8 +203,8 @@ class oversample_KFold(KFold):
                               Number Obs in Class 0 = 10
                               Number Obs in Class 1 = 20
                             then: 
-                              W is drawn from discrete uniform with size = 10 (i.e. each observation
-                                has a 1/10 probability of being drawn)
+                              W is drawn from discrete uniform with size = 10 
+                               (i.e. each observation has 1/10 probability)
                
           These pairs (Z,W) create a new set of indices for our test dataset. 
         
