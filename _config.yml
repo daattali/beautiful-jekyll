@@ -14,7 +14,7 @@ description: Personal site for economics and coding.
 #url: "https://example.com"
 
 # baseurl should be an empty string
-#baseurl: ""
+baseurl: ""
 
 # --- Navigation bar options --- #
 
