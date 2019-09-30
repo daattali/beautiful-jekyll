@@ -61,6 +61,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+# ~ User defined functions ~ #
+from user_defined_function import make_frequency_plot
+from user_defined_function import make_scores_plot
+
 # ~ Read in our data ~ #
 path_to_data='/home/ryan/Downloads/creditcard.csv'
 df=pd.read_csv(path_to_data)
@@ -71,65 +75,6 @@ iv=df['Class']
 dv=df[[x for x in df.columns if x!='Class']]
 ```
 
-<details>
-<summary>
-
-```python
-# ~~ Create frequency plot of transactions by fraud type ~~ #
-def make_frequency_plot(iv):
-    # Initialize figure 
-    fig = plt.figure(figsize=(8,6))
-    ax = fig.add_subplot(111)
-
-    # Sum fraud/non-fraud cases
-    y_values=[sum(iv==0),sum(iv==1)]
-    x_range=[0,0.25]
-
-    # Create bar plot
-    plt.bar(x_range,
-            y_values,
-            width=(0.50)*(x_range[1]-x_range[0]),
-           alpha=0.65)
-
-    # Hide the right and top spines
-    ax.spines['right'].set_visible(False)
-    ax.spines['top'].set_visible(False)
-
-    # Set axis tick values
-    ax.tick_params(axis=u'x', which=u'both',length=0)
-    plt.yticks(fontsize=14,fontname="Serif")
-    plt.xticks(x_range,
-               ['Non-Fraudulent',"Fraudulent"],
-               fontsize=18,
-               fontname='Serif')
-
-    # Set axis labels #
-    plt.ylabel('Number of Transactions',
-               fontsize=16,
-               fontname='Serif')
-
-    # Create Title #
-    plt.title('Number of Transactions \n by Fraud Status',
-              fontsize=18,
-              fontname='Serif',
-              y=1.08)
-
-    # Add labels above bar plot
-    ax.text(x_range[0]-0.07, y_values[0]+10000, '{0:,.0f} Cases'.format(y_values[0]), 
-            color='black', 
-            fontweight='bold',
-            fontsize=18)
-    ax.text(x_range[1]-0.05, y_values[1]+10000, '{0:<} Cases'.format(y_values[1]), 
-            color='red', 
-            fontweight='bold',
-            fontsize=18)
-
-    # Show plot
-    plt.show()
-```
-
-</summary>
-</details>
 
 
 ```python
@@ -226,8 +171,10 @@ class oversample_KFold(KFold):
             n_class_0 = sum(select_class_draws==0)
             n_class_1 = sum(select_class_draws==1)
             # ~ Within each class, draw a random number to select each index ~ #
-            oversample_train_index = ([class_0_train[x] for x in np.random.randint(low=0,high=len(class_0_train)-1,size=n_class_0)] +
-                                     [class_1_train[x] for x in np.random.randint(low=0,high=len(class_1_train)-1,size=n_class_1)])
+            class_0_draws=np.random.randint(low=0,high=len(class_0_train)-1,size=n_class_0)
+            class_1_draws=np.random.randint(low=0,high=len(class_1_train)-1,size=n_class_1)
+            oversample_train_index = ([class_0_train[x] for x in class_0_draws] +
+                                     [class_1_train[x] for x in class_1_draws])
             # ~ Yield indices for train and test data ~ #
             stratified_train_ix=np.array(oversample_train_ix)
             yield stratified_train_ix, test_ix
@@ -262,7 +209,8 @@ from sklearn.linear_model import LogisticRegression
 
 # (1) : Seperate numeric and categorical variables
 # (2) : Create transforms (imputation + standardization) for both types
-numeric_features = list(dv.dtypes[((dv.dtypes=='int64') | (dv.dtypes=='float64')) ].index.values)
+numeric_bool=((dv.dtypes=='int64') | (dv.dtypes=='float64'))
+numeric_features = list(dv.dtypes[numeric_bool].index.values)
 numeric_transformer = Pipeline(steps=[
     ('imputer', SimpleImputer(strategy='median')),
     ('scaler', StandardScaler())])
@@ -285,7 +233,7 @@ clf = Pipeline(steps=[('preprocessor', preprocessor),
 
 ## Model Estimation
 
-This is the meat of this exericse. What we will do is estimate both a weighted logistic regression and a standard logistic regression with stratified random sampling. We will then plot three relevant model score metrics: accuracy, recall and precision. What we will see is how bad accuracy is for predictions of rare events. We will then see how recall and precision for both of the models are basically the same, which will allow us to use the sampling procedure for more complicated models. The model pipeline will use a 10 fold cross validation.
+This is the meat of this exericse. What we will do is estimate both a weighted logistic regression and a standard logistic regression with stratified random sampling. We will then plot three relevant model score metrics: accuracy, recall and precision. What we will see is how bad accuracy is for predictions of rare events. We will then see how recall and precision for both of the models are basically the same, which will allow us to use the sampling procedure for more complicated models. To reduce prediction error, we will use a 10 fold cross validation fixing our random seed to start the runs.
 
 
 ```python
@@ -332,11 +280,12 @@ for sample_weight in weights:
     # ~ Model with weighting ~ #
     else:
         # ~ Weighted Likelihood ~ #
+        data_weights=[[1-sample_weight,sample_weight][x==1] for x in iv]
         weighted_scores = cross_validate(clf,dv,iv,cv=kfold_obj,
                         scoring={'accuracy':make_scorer(accuracy_score),
                                  'recall':make_scorer(recall_score),
                                  'average_precision_score':make_scorer(average_precision_score)},
-                       fit_params={'classifier__sample_weight':[[1-sample_weight,sample_weight][x==1] for x in iv]})
+                       fit_params={'classifier__sample_weight':data_weights})
         
         # ~ Calculate different scoring rules ~ #
         mean_accuracy_weighted=np.mean(weighted_scores['test_accuracy'])
@@ -345,9 +294,12 @@ for sample_weight in weights:
 
         
         # ~ Stratified Sample ~ #
-        oversample_kfold_obj = oversample_KFold(n_splits=n_splits,random_state=seed,sample_weight=sample_weight)
-        oversampling_scores = scores = cross_validate(clf,dv,iv,cv=oversample_kfold_obj,
-                                        scoring={'accuracy':make_scorer(accuracy_score),
+        oversample_kfold_obj = oversample_KFold(n_splits=n_splits,
+                                                random_state=seed,
+                                                sample_weight=sample_weight)
+        oversampling_scores = scores = cross_validate(clf,dv,iv,
+                                                      cv=oversample_kfold_obj,
+                                                  scoring={'accuracy':make_scorer(accuracy_score),
                                                  'recall':make_scorer(recall_score),
                                                  'average_precision_score':make_scorer(average_precision_score)})
         
@@ -460,150 +412,32 @@ This dovetails nicely with thinking about the exact loss function you are trying
 
 However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, you probably also care about minimizing false positives. With this in mind, we can look at precision. As makes sense, we no longer want to put all our weight on the fraud cases when training the algorithm.  
 
-<details>
-    
-```python
-import matplotlib.pyplot as plt
-from matplotlib import font_manager
-
-# ~~~ Plot accuracy ~~~ #
-
-def plot_scores(df,score):
-
-    # Keep only score we want to plot
-    subsetDF=df.loc[df['score']==score]
-    
-    # ~ Create figure ~ #
-    fig,ax=plt.subplots(1,2,sharey=True)
-    for i,axes in enumerate(ax):
-        # ~ Plot average precision by weight ~ #
-        if i==0:
-            estimator='wmle'
-        else:
-            estimator='stratified'
-        
-        # ~ Get data to plot ~ #
-        plotDF=subsetDF.loc[subsetDF['estimator']==estimator]
-        
-        # ~ Plot data ~ #
-        axes.plot(plotDF.loc[plotDF.weight!=0,'weight'],
-                plotDF.loc[plotDF.weight!=0,'score_value'],
-                '.',
-                markersize=10,
-               color='red',
-               alpha=0.65)
-
-        # ~ Plot horizontal line with average preicsion for weight = 0 ~ #
-        axes.axhline(float(plotDF.loc[plotDF.weight==0]['score_value']),
-                 xmin=min(plotDF.loc[plotDF.weight==0].weight),
-                 xmax=max(plotDF.loc[plotDF.weight!=0].weight),
-                 linestyle='--',
-                 color='#030ffc',
-                 alpha=0.8)
-        
-        if estimator=='stratified':
-            if score=='accuracy':
-                axes.text(max(plotDF.loc[plotDF.weight!=0].weight)+0.05, float(plotDF.loc[plotDF.weight==0]['score_value']), 
-                     "{0:.3%} MLE".format(float(plotDF.loc[plotDF.weight==0]['score_value'])),
-                     fontsize=12,
-                     fontweight=600,
-                     color='blue',
-                     alpha=0.6)
-            else:
-                axes.text(max(plotDF.loc[plotDF.weight!=0].weight)+0.05, float(plotDF.loc[plotDF.weight==0]['score_value']), 
-                     "{0:.0%} MLE".format(float(plotDF.loc[plotDF.weight==0]['score_value'])),
-                     fontsize=12,
-                     fontweight=600,
-                     color='blue',
-                     alpha=0.6)
-
-        # ~ Turn of splines
-        axes.spines['right'].set_visible(False)
-        axes.spines['left'].set_visible(False)
-        axes.spines['top'].set_visible(False)
-
-        # ~ Font Style ~ #
-        ticks_font = font_manager.FontProperties(family='Serif', style='normal',
-                                                 size=14, weight=530, stretch='normal')
-        
-        # ~ Change xticks ~ #
-        axes.set_xticks(np.arange(0,1.25,.25))
-        for tick in axes.xaxis.get_major_ticks():
-            tick.label.set_fontproperties(ticks_font)
-            tick.label.set_rotation(45)
-        
-        for tick in axes.yaxis.get_major_ticks():
-            tick.label.set_fontproperties(ticks_font)
-            
-        # ~ Set title ~ #
-        if estimator=='wmle':
-            axes.set_title('Weighted MLE',fontsize=15,fontweight=500,family='Serif')
-        if estimator=='stratified':
-            axes.set_title('Stratified Sample',fontsize=15,fontweight=500,family='Serif')
-        
-        # set y and x axis as percentages
-        y_vals = axes.get_yticks()
-        axes.set_yticklabels(['{:.2%}'.format(x) for x in y_vals],
-                            family='Serif')
-        x_vals = axes.get_xticks()
-        axes.set_xticklabels(['{:.0%}'.format(x) for x in x_vals],
-                            family='Serif')
-        
-        # ~ Add label to y axis ~ #
-        if estimator=='wmle':
-            if score=='accuracy':
-                axes.set_ylabel('Accuracy',fontsize=18,fontweight=550,family='Serif')
-            if score=='recall':
-                axes.set_ylabel('Recall',fontsize=18,fontweight=550,family='Serif')
-            if score=='precision':
-                axes.set_ylabel('Average Precision',fontsize=18,fontweight=550,family='Serif')
-        
-
-    # ~ Change axes ~ #
-    fig.text(0.55, -0.05, 'Weight to Fraud Cases ($\omega_{1}$)', ha='center',
-            fontsize=16,fontweight=550,family='Serif')
-    
-    if score=='accuracy':
-        fig.text(0.15,1.05,'Accuracy : Weighted MLE v. Stratified Sample',
-                fontsize=16,fontweight=750,family='Serif')
-    if score=='recall':
-        fig.text(0.15,1.05,'Recall : Weighted MLE v. Stratified Sample',
-                fontsize=16,fontweight=750,family='Serif')
-    
-    if score=='precision':
-        fig.text(0.15,1.05,'Precision : Weighted MLE v. Stratified Sample',
-                fontsize=16,fontweight=750,family='Serif')
-    # ~ Show plot ~ #
-    plt.tight_layout()
-    plt.show()
-```
-
-</details>
-
 ```python
 # ~~ Plot all the measurements ~~ #
 
 # ~ Accuracy ~ #
-plot_scores(scoresDF,'accuracy')
+make_scores_plot(scoresDF,'accuracy')
 
 # ~ Recall ~ #
-plot_scores(scoresDF,'recall')
+make_scores_plot(scoresDF,'recall')
 
 # ~ Precision ~ #
-plot_scores(scoresDF,'precision')
+make_scores_plot(scoresDF,'precision')
 ```
 
-
-<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png" class=center>
-
-
-
-<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png" class=center>
+<center>
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png" class=center>
+</center>
 
 
+<center>
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png" class=center>
+</center>
 
-<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class=center>
 
+<center>
+<img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class=center>
+</center>
 
 # Summary
 
