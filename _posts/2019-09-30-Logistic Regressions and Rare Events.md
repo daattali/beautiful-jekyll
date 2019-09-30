@@ -1,6 +1,6 @@
 # Introduction
 
-I previously worked on designing some problem sets for a PhD class. One of the assigments dealt with a simple classification problem using data that I took from a [kaggle challenge](https://www.kaggle.com/mlg-ulb/creditcardfraud) trying to predict fraudelent credit card transactions. The goal of the problem is to predict the probability that a specific credit card transaction is fraudelent. One unforseen issue with the data was that the unconditional probability that a single credit card transaction is fraudelent is very small. This type of data is known as rare events data, and is common in many areas such as disease detection, conflict prediction and, of course, fraud detection. 
+I previously worked on designing some problem sets for a PhD class. One of the assigments dealt with a simple classification problem using data that I took from a [kaggle challenge](https://www.kaggle.com/mlg-ulb/creditcardfraud) trying to predict fraudulent credit card transactions. The goal of the problem is to predict the probability that a specific credit card transaction is fraudulent. One unforseen issue with the data was that the unconditional probability that a single credit card transaction is fraudulent is very small. This type of data is known as rare events data, and is common in many areas such as disease detection, conflict prediction and, of course, fraud detection. 
 
 This note is to compare two common techniques to improve classification with rare events data. The basic idea behind these techniques is to increase the discriminative power of a classification algorithm by giving more weight to rare events. One technique attempts to use sampling weights in the likelihood function itself, whereas, the other is a type of case-control design where we over-sample from the rare class. Which is preferrable depends on both predictive performance, as well as, computational complexity. In this example, we will be "fixing" computational complexity by comparing predictive performance across logistic regression models estimated using MLE. What is interesting about these techniques is they are equivalent up to sampling error. One hope of this note is show that simulation error is small. This will allow us to use this re-sampling techniques in more complex models. 
 
@@ -48,7 +48,7 @@ To summarize, this exercise will compare predictive performance using two sepera
 
 # Data Analysis 
 
-We read in our data and split the dependent and independent variables from one another. Here the independent variable is defined as "Class". We can see in the graph below that there are only 492 transactions that are fraudelent out of 284,807 total transactions.
+We read in our data and split the dependent and independent variables from one another. Here the independent variable is defined as "Class". We can see in the graph below that there are only 492 transactions that are fraudulent out of 284,807 total transactions.
 
 
 ```python
@@ -93,7 +93,7 @@ def make_frequency_plot(iv):
     ax.tick_params(axis=u'x', which=u'both',length=0)
     plt.yticks(fontsize=14,fontname="Serif")
     plt.xticks(x_range,
-               ['Non-Fraudelent',"Fraudelent"],
+               ['Non-Fraudulent',"Fraudulent"],
                fontsize=18,
                fontname='Serif')
 
@@ -446,9 +446,9 @@ scoresDF.head()
 
 We have three different performance metrics: accuracy, recall and precision. The blue lines in each plot are the metrics value for the standard MLE with no sample weights. The x-axis are the sample weights given to the rare events, or $\omega_{1}$ in our notation above. As you increase this sample weight, you give more weight to rare event options. 
 
-There are two things to note from these graphs. First, both our weight maximum likelihood and our stratified sampling procedure produce the same results. This is good as it motivates using this sampling procedure in more complicated exercises. Second, accuracy is a very poor measure for rare events cases. This makes sense because if your classifier simply predicted that every transaction was not fraudelent, it would be right 99.99% of the time. 
+There are two things to note from these graphs. First, both our weight maximum likelihood and our stratified sampling procedure produce the same results. This is good as it motivates using this sampling procedure in more complicated exercises. Second, accuracy is a very poor measure for rare events cases. This makes sense because if your classifier simply predicted that every transaction was not fraudulent, it would be right 99.99% of the time. 
 
-This dovetails nicely with thinking about the exact loss function you are trying to pin down in this problem. Who are the stakeholders for this sort of algorithm, that would be a bank or credit card company. For a credit card company, missing an instance of fraud is much worse than calling an instance of non-fraud a fraudelent activity. The bank is on the hook for fraudelent charges, so they want to minimize those as much as possible. With that in mind, they may want to detect all the cases of fraud, regardless of the cases of non-fraud. To me, this sounds like recall, the closer to 1 the better. If we just cared about recall, then we should only train on the fraud cases, as the classifiers are monotonically increasing as you increase weight towards the fraud cases.
+This dovetails nicely with thinking about the exact loss function you are trying to pin down in this problem. Who are the stakeholders for this sort of algorithm, that would be a bank or credit card company. For a credit card company, missing an instance of fraud is much worse than calling an instance of non-fraud a fraudulent activity. The bank is on the hook for fraudulent charges, so they want to minimize those as much as possible. With that in mind, they may want to detect all the cases of fraud, regardless of the cases of non-fraud. To me, this sounds like recall, the closer to 1 the better. If we just cared about recall, then we should only train on the fraud cases, as the classifiers are monotonically increasing as you increase weight towards the fraud cases.
 
 However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, you probably also care about minimizing false positives. With this in mind, we can look at precision. As makes sense, we no longer want to put all our weight on the fraud cases when training the algorithm.  
 
@@ -586,15 +586,15 @@ plot_scores(scoresDF,'precision')
 ```
 
 
-![png](https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png)
+<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png" class=center>
 
 
 
-![png](https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png)
+<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png" class=center>
 
 
 
-![png](https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png)
+<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class=center>
 
 
 # Summary
