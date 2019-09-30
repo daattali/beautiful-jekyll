@@ -451,7 +451,8 @@ This dovetails nicely with thinking about the exact loss function you are trying
 
 However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, you probably also care about minimizing false positives. With this in mind, we can look at precision. As makes sense, we no longer want to put all our weight on the fraud cases when training the algorithm.  
 
-
+<details>
+    
 ```python
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
@@ -568,13 +569,13 @@ def plot_scores(df,score):
     plt.show()
 ```
 
+</details>
 
 ```python
 # ~~ Plot all the measurements ~~ #
 
 # ~ Accuracy ~ #
 plot_scores(scoresDF,'accuracy')
-
 
 # ~ Recall ~ #
 plot_scores(scoresDF,'recall')
@@ -584,15 +585,15 @@ plot_scores(scoresDF,'precision')
 ```
 
 
-![png](output_12_0.png)
+![png](https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png)
 
 
 
-![png](output_12_1.png)
+![png](https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png)
 
 
 
-![png](output_12_2.png)
+![png](https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png)
 
 
 # Summary
