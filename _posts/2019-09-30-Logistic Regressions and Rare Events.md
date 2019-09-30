@@ -129,8 +129,9 @@ def make_frequency_plot(iv):
 make_frequency_plot(iv)
 ```
 
-
-<img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_3_0.png">
+<center>
+    <img src="https://github.com/ryanlstevens/ryanlstevens.github.io/blob/master/posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_3_0.png" class="center">
+</center>
 
 
 ## Defining our stratified sampling method
