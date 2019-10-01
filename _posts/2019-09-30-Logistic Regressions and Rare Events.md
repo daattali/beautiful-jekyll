@@ -31,10 +31,10 @@ A weighted likelihood approach simply attempts to re-weight our data to account 
 
 <font size="+1.5"> <center> $\omega_{c}$ is the sample weight given to class $c$ </center> </font> 
 
-In our Bernoulli case, there are only two classes, so c only takes two values, $c \in \{0,1\}$.  Thus, the weighted log likelihood is simply:
+In our Bernoulli case, there are only two classes, so c only takes two values, $c \in {0,1}$.  Thus, the weighted log likelihood is simply:
 
 \begin{equation}
-    \mathcal{L}_{\omega}(\beta \vert Y,X) = \sum_{Y_{i}=1} \omega_{1}ln(\pi_{i}) + \sum_{Y_{i}=0} \omega_{0}ln(1-\pi_{i})
+    \mathcal{L}_{\omega}(\beta \vert Y,X) = \sum_{Y_{i}==1} ln(\pi_{i}) + \sum_{Y_{i}==0} ln(1-\pi_{i})
 \end{equation}
 
 ## Stratified Sampling
