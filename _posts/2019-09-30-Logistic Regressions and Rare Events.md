@@ -3,6 +3,7 @@ layout : post
 title : Logistic Regressions and Rare Events - Weighted Maximum Likelihood versus Oversampling
 ---
 
+
 # Introduction
 
 I previously worked on designing some problem sets for a PhD class. One of the assigments dealt with a simple classification problem using data that I took from a [kaggle challenge](https://www.kaggle.com/mlg-ulb/creditcardfraud) trying to predict fraudulent credit card transactions. The goal of the problem is to predict the probability that a specific credit card transaction is fraudulent. One unforseen issue with the data was that the unconditional probability that a single credit card transaction is fraudulent is very small. This type of data is known as rare events data, and is common in many areas such as disease detection, conflict prediction and, of course, fraud detection. 
