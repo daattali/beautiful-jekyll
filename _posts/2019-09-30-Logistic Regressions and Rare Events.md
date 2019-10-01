@@ -433,7 +433,7 @@ make_scores_plot(scoresDF,'precision')
 
 
 <center>
-    <img src=".../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class="center">
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class="center">
 </center>
 
 # Summary
