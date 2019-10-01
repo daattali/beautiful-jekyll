@@ -85,7 +85,7 @@ make_frequency_plot(iv)
 
 ## Defining our stratified sampling method
 
-I am doing all this in python. While sci-kit learn has a K-Fold class, that produces K-splits of the data, my specific task requires the following sampling procedure:
+I am doing all this in python. While sklearn has a K-Fold class, which produces K-splits of the data, my specific task requires the following sampling procedure:
 
 1. Split data into K-folds defined as $k \in \{1,..,K\}$
 2. Within a training set in fold $k$, run our stratified sampling procedure
