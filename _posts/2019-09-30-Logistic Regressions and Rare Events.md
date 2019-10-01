@@ -31,10 +31,10 @@ A weighted likelihood approach simply attempts to re-weight our data to account 
 
 <font size="+1.5"> <center> $\omega_{c}$ is the sample weight given to class $c$ </center> </font> 
 
-In our Bernoulli case, there are only two classes, so c only takes two values, $c \in {0,1}$.  Thus, the weighted log likelihood is simply:
+In our Bernoulli case, there are only two classes, so c only takes two values, $c=0$ or $c=1$.  Thus, the weighted log likelihood is simply:
 
 \begin{equation}
-    \mathcal{L}(\beta \vert Y,X,\omega) = \sum_{Y_{i}==1} ln(\pi_{i}) + \sum_{Y_{i}==0} ln(1-\pi_{i})
+    \mathcal{L}(\beta \vert Y,X,\omega) = \sum_{Y_{i}==1} \omega_{1} ln(\pi_{i}) + \sum_{Y_{i}==0} \omega_{0} ln(1-\pi_{i})
 \end{equation}
 
 ## Stratified Sampling
@@ -407,7 +407,7 @@ There are two things to note from these graphs. First, both our weight maximum l
 
 This dovetails nicely with thinking about the exact loss function you are trying to pin down in this problem. Who are the stakeholders for this sort of algorithm, that would be a bank or credit card company. For a credit card company, missing an instance of fraud is much worse than calling an instance of non-fraud a fraudulent activity. The bank is on the hook for fraudulent charges, so they want to minimize those as much as possible. With that in mind, they may want to detect all the cases of fraud, regardless of the cases of non-fraud. To me, this sounds like recall, the closer to 1 the better. If we just cared about recall, then we should only train on the fraud cases, as the classifiers are monotonically increasing as you increase weight towards the fraud cases.
 
-However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, you probably also care about minimizing false positives. With this in mind, we can look at precision. As makes sense, we no longer want to put all our weight on the fraud cases when training the algorithm.  
+However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, if you are a credit card company, you probably care about minimizing false positives, or these bad customer experiences. With this in mind, we can look at precision. As you can see, precision is not monotonically increasing as we give more weight to the fraud cases. This makes sense as we give only weight to fraud cases, we are likely to undertrain our non-fraud cases. 
 
 ```python
 # ~~ Plot all the measurements ~~ #
@@ -438,4 +438,4 @@ make_scores_plot(scoresDF,'precision')
 
 # Summary
 
-The above exercise shows that sampling error makes the difference between weighted MLE and stratified sampling almost indistinguishable. As a follow-up, I hope to show how to improve on this sampling procedure. A key place for improvement is the independence in sampling across classes. The current algorithm selects a class, then an observation from that class. However, it may be better to select an observation of interest, say an example of fraud, then select a very similar example of non-fraud to distinguish the differences between them. The underlying idea is that it is easy to spot obvious non-fraud, such as someone purchasing a cup of coffee from the same coffee shop they always buy from, however, it is hard to distinguish between non-obvious non-fraud and non-obvious fraud, such as someone making a purchase on vacation in a foreign country versus someone in a foreign country using your card. 
+The above exercise shows two things. First, that sampling error makes the difference between weighted MLE and stratified sampling almost indistinguishable. Second, when faced with rare events data, it is very important to pick the right metric to select your algorithm. As a follow-up, I hope to show how to improve on this sampling procedure. A key place for improvement is the independence in sampling across classes. The current algorithm selects a class, then an observation from that class. However, it may be better to select an observation of interest, say an example of fraud, then select a very similar example of non-fraud to distinguish the differences between them. The underlying idea is that it is easy to spot obvious non-fraud, such as someone purchasing a $4 cup of coffee from their local coffee shop, and these are not the important cases that the algorithm relies upon to train. The key idea will be to use the most "informative" points for training, but that will have to wait until next time. 
