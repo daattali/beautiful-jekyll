@@ -34,7 +34,7 @@ A weighted likelihood approach simply attempts to re-weight our data to account 
 In our Bernoulli case, there are only two classes, so c only takes two values, $c \in {0,1}$.  Thus, the weighted log likelihood is simply:
 
 \begin{equation}
-    \mathcal{L}_{\omega}(\beta \vert Y,X) = \sum_{Y_{i}==1} ln(\pi_{i}) + \sum_{Y_{i}==0} ln(1-\pi_{i})
+    \mathcal{L}(\beta \vert Y,X,\omega) = \sum_{Y_{i}==1} ln(\pi_{i}) + \sum_{Y_{i}==0} ln(1-\pi_{i})
 \end{equation}
 
 ## Stratified Sampling
