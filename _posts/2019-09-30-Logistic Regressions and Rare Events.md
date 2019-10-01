@@ -73,11 +73,8 @@ df=pd.read_csv(path_to_data)
 df=df[[x for x in df.columns if x!='Time']]
 iv=df['Class']
 dv=df[[x for x in df.columns if x!='Class']]
-```
 
-
-
-```python
+# ~~ Create plot of frequency of classes ~~ #
 make_frequency_plot(iv)
 ```
 
@@ -426,17 +423,17 @@ make_scores_plot(scoresDF,'precision')
 ```
 
 <center>
-    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png" class=center>
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png" class="center">
 </center>
 
 
 <center>
-    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png" class=center>
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png" class="center">
 </center>
 
 
 <center>
-<img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class=center>
+    <img src=".../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class="center">
 </center>
 
 # Summary
