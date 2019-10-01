@@ -1,6 +1,6 @@
 ---
-title : Logistic Regressions and Rare Events : Weighted Maximum Likelihood versus Oversampling
 layout : post
+title : Logistic Regressions and Rare Events : Weighted Maximum Likelihood versus Oversampling
 ---
 
 # Introduction
