@@ -276,12 +276,11 @@ for sample_weight in weights:
     # ~ Model with weighting ~ #
     else:
         # ~ Weighted Likelihood ~ #
-        data_weights=[[1-sample_weight,sample_weight][x==1] for x in iv]
         weighted_scores = cross_validate(clf,dv,iv,cv=kfold_obj,
                         scoring={'accuracy':make_scorer(accuracy_score),
                                  'recall':make_scorer(recall_score),
                                  'average_precision_score':make_scorer(average_precision_score)},
-                       fit_params={'classifier__sample_weight':data_weights})
+                       fit_params={'classifier__sample_weight':[[1-sample_weight,sample_weight][x==1] for x in iv]})
         
         # ~ Calculate different scoring rules ~ #
         mean_accuracy_weighted=np.mean(weighted_scores['test_accuracy'])
@@ -290,19 +289,16 @@ for sample_weight in weights:
 
         
         # ~ Stratified Sample ~ #
-        oversample_kfold_obj = oversample_KFold(n_splits=n_splits,
-                                                random_state=seed,
-                                                sample_weight=sample_weight)
-        oversampling_scores = scores = cross_validate(clf,dv,iv,
-                                                      cv=oversample_kfold_obj,
-                                                  scoring={'accuracy':make_scorer(accuracy_score),
+        oversample_kfold_obj = oversample_KFold(n_splits=n_splits,random_state=seed,sample_weight=sample_weight)
+        oversampling_scores = scores = cross_validate(clf,dv,iv,cv=oversample_kfold_obj,
+                                        scoring={'accuracy':make_scorer(accuracy_score),
                                                  'recall':make_scorer(recall_score),
                                                  'average_precision_score':make_scorer(average_precision_score)})
         
         # ~ Calculate different scoring rules ~ #
-        mean_accuracy_oversample=np.mean(weighted_scores['test_accuracy'])
-        mean_recall_oversample=np.mean(weighted_scores['test_recall'])
-        mean_avg_precision_oversample=np.mean(weighted_scores['test_average_precision_score'])
+        mean_accuracy_oversample=np.mean(oversampling_scores['test_accuracy'])
+        mean_recall_oversample=np.mean(oversampling_scores['test_recall'])
+        mean_avg_precision_oversample=np.mean(oversampling_scores['test_average_precision_score'])
         
     # ~~~ Append data to list ~~~ #
     accuracy_list.append((sample_weight,mean_accuracy_weighted,mean_accuracy_oversample))
@@ -402,11 +398,11 @@ scoresDF.head()
 
 We have three different performance metrics: accuracy, recall and precision. The blue lines in each plot are the metrics value for the standard MLE with no sample weights. The x-axis are the sample weights given to the rare events, or $\omega_{1}$ in our notation above. As you increase this sample weight, you give more weight to rare event options. 
 
-There are two things to note from these graphs. First, both our weight maximum likelihood and our stratified sampling procedure produce the same results. This is useful as it motivates using this sampling procedure in more complicated exercises. Second, accuracy is a very poor measure for rare events cases. This makes sense because if your classifier simply predicted that every transaction was not fraudulent, it would be right 99.9% of the time. 
+There are two things to note from these graphs. First, both our weight maximum likelihood and our stratified sampling procedure produce very similar results. This is good as it motivates using this sampling procedure in more complicated exercises. Second, accuracy is a very poor measure for rare events cases. This makes sense because if your classifier simply predicted that every transaction was not fraudulent, it would be right 99.99% of the time. 
 
 This dovetails nicely with thinking about the exact loss function you are trying to pin down in this problem. Who are the stakeholders for this sort of algorithm, that would be a bank or credit card company. For a credit card company, missing an instance of fraud is much worse than calling an instance of non-fraud a fraudulent activity. The bank is on the hook for fraudulent charges, so they want to minimize those as much as possible. With that in mind, they may want to detect all the cases of fraud, regardless of the cases of non-fraud. To me, this sounds like recall, the closer to 1 the better. If we just cared about recall, then we should only train on the fraud cases, as the classifiers are monotonically increasing as you increase weight towards the fraud cases.
 
-However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, if you are a credit card company, you probably care about minimizing false positives, or these bad customer experiences. With this in mind, we can look at precision. As you can see, precision is not monotonically increasing as we give more weight to the fraud cases. This makes sense as we give only weight to fraud cases, we are likely to undertrain our non-fraud cases. 
+However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, you probably also care about minimizing false positives. With this in mind, we can look at precision. As makes sense, we no longer want to put all our weight on the fraud cases when training the algorithm.
 
 ```python
 # ~~ Plot all the measurements ~~ #
