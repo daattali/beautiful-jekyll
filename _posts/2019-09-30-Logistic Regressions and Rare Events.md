@@ -45,9 +45,9 @@ Instead of incorporating weights directly into the likelihood, we can instead re
 
 Because I am estimating using MLE in both approaches, these techniques are similar in computational complexity. However, as may be clear, the second technique is indifferent to the model you are estimating. This same procedure can be used for SVMs, Neural Networks and more complex models. Furthermore, it is flexible and additional stages of sampling or decision rules for inclusion in the sample can be changed. My next note will focus on an extension of this stratified procedure that attempts to create matched samples based on "closeness" of observations across the classes.
 
-Another thing to note is a peculiarity about sklearn, the library has a `StratifiedKFold` method in the model_selection library. However, this method simply samples while preserving the balance between the classes. For example, if class 0 has 10 observations and class 1 has 90 observations, the splits will keep the proportion of 0 to 1 the same, i.e. there will always be 1 observation from class 0 to 9 observations from class 1. This procedure would be the limit of the above procedure if you set $\omega_{c} = \mbox{Proportion in Class c$ and re-ran the procedure an "infinite" number of times. 
+Another thing to note is a peculiarity about sklearn, the library has a `StratifiedKFold` method in the model_selection library. However, this method creates folds which preserve the balance between the classes. For example, if class 0 has 10 observations and class 1 has 90 observations, the splits will keep the proportion of 0 to 1 the same, i.e. there will always be 1 observation from class 0 to 9 observations from class 1. This procedure would be the limit of the above procedure if you set $\omega_{c} = \mbox{Proportion in Class c}$ and re-ran the procedure an "infinite" number of times. 
 
-## Data + Model
+## Quick Summary
 
 To summarize, this exercise will compare predictive performance using two seperate ways to re-weight our data. Given some pre-chosen weights, $(\omega_{0},\omega_{1})$:
 
