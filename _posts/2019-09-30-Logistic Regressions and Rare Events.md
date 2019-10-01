@@ -233,7 +233,7 @@ clf = Pipeline(steps=[('preprocessor', preprocessor),
 
 ## Model Estimation
 
-This is the meat of this exericse. What we will do is estimate both a weighted logistic regression and a standard logistic regression with stratified random sampling. We will then plot three relevant model score metrics: accuracy, recall and precision. What we will see is how bad accuracy is for predictions of rare events. We will then see how recall and precision for both of the models are basically the same, which will allow us to use the sampling procedure for more complicated models. To reduce prediction error, we will use a 10 fold cross validation fixing our random seed to start the runs.
+This is the meat of this exericse. What we will do is estimate both a weighted logistic regression and a standard logistic regression with stratified random sampling. We will then plot three relevant model score metrics: accuracy, recall and precision. What we will see is how bad accuracy is for predictions of rare events. We will then see how the two strategies differ in their recall versus the precision.
 
 
 ```python
@@ -400,13 +400,13 @@ scoresDF.head()
 
 ## Model Performance 
 
-We have three different performance metrics: accuracy, recall and precision. The blue lines in each plot are the metrics value for the standard MLE with no sample weights. The x-axis are the sample weights given to the rare events, or $\omega_{1}$ in our notation above. As you increase this sample weight, you give more weight to rare event options. 
+We have three different performance metrics: accuracy, recall and precision. The blue lines in each plot are the metrics value for the standard MLE with no sample weights. The x-axis are the sample weights given to the rare events, or $\omega_{1}$ in our notation above. As you increase this sample weight, you give more weight to rare event options. Note, that I run the models between 0.05 and 0.95, hence why the stratified sample procedure starts above the MLE line. Also, I only ran the re-sampling methods once, thus there is some noise in these estimates. However, given the monotonicity of the lines in the stratified sampling graphs, the sampling error must be minor.
 
-There are two things to note from these graphs. First, both our weight maximum likelihood and our stratified sampling procedure produce very similar results. This is good as it motivates using this sampling procedure in more complicated exercises. Second, accuracy is a very poor measure for rare events cases. This makes sense because if your classifier simply predicted that every transaction was not fraudulent, it would be right 99.99% of the time. 
+There are two things to note from these graphs. First, accuracy is a bad measure for both of these models. Looking at the stratified sample, even when giving nearly all weight to the stratified sample, the model has an accuracy of around 75%. Second, stratified sampling performs vastly better on recall, and for higher weights vastly worse on precision than weighted MLE. 
 
-This dovetails nicely with thinking about the exact loss function you are trying to pin down in this problem. Who are the stakeholders for this sort of algorithm, that would be a bank or credit card company. For a credit card company, missing an instance of fraud is much worse than calling an instance of non-fraud a fraudulent activity. The bank is on the hook for fraudulent charges, so they want to minimize those as much as possible. With that in mind, they may want to detect all the cases of fraud, regardless of the cases of non-fraud. To me, this sounds like recall, the closer to 1 the better. If we just cared about recall, then we should only train on the fraud cases, as the classifiers are monotonically increasing as you increase weight towards the fraud cases.
+This dovetails nicely with thinking about the exact loss function you are trying to pin down in this problem. The stakeholders for this sort of algorithm  would be a credit card company. For a credit card company, missing an instance of fraud is much worse than calling an instance of non-fraud a fraudulent activity. The company is on the hook for fraudulent charges, so they want to minimize those as much as possible. With that in mind, they may want to detect all the cases of fraud, regardless of the cases of non-fraud. To me, this sounds like recall, the closer to 1 the better. If we just cared about recall, then our stratified sampling model does much better.
 
-However, there is some cost to a credit card company from rejecting too many charges, and that is customer experience. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, you probably also care about minimizing false positives. With this in mind, we can look at precision. As makes sense, we no longer want to put all our weight on the fraud cases when training the algorithm.
+However, there is some cost to a credit card company from rejecting too many charges. If you are a customer of a credit card company that denies all your charges, then you would probably get another credit card. In this case, a credit card company probably also care about minimizing false positives. With this in mind, we can look at precision. What we see if for low weights re-sampling does about as good as weighted MLE, but for higher weights it does much worse. 
 
 ```python
 # ~~ Plot all the measurements ~~ #
@@ -422,19 +422,19 @@ make_scores_plot(scoresDF,'precision')
 ```
 
 <center>
-    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_0.png" class="center">
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_13_0.png" class="center">
 </center>
 
 
 <center>
-    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_1.png" class="center">
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_14_0.png" class="center">
 </center>
 
 
 <center>
-    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_12_2.png" class="center">
+    <img src="../posts_images/2019-09-30-Logistic%20Regressions%20and%20Rare%20Events/output_15_0.png" class="center">
 </center>
 
 # Summary
 
-The above exercise shows two things. First, that sampling error makes the difference between weighted MLE and stratified sampling almost indistinguishable. Second, when faced with rare events data, it is very important to pick the right metric to select your algorithm. As a follow-up, I hope to show how to improve on this sampling procedure. A key place for improvement is the independence in sampling across classes. The current algorithm selects a class, then an observation from that class. However, it may be better to select an observation of interest, say an example of fraud, then select a very similar example of non-fraud to distinguish the differences between them. The underlying idea is that it is easy to spot obvious non-fraud, such as someone purchasing a $4 cup of coffee from their local coffee shop, and these are not the important cases that the algorithm relies upon to train. The key idea will be to use the most "informative" points for training, but that will have to wait until next time. 
+The above exercise shows that model selection metrics are important for your task at hand. When faced with rare events data, accuracy performs poorly, whereas, recall and precision depend on the model at hand. As a follow-up, I hope to show how to improve on the re-sampling procedure. A key place for improvement is the independence in sampling across classes. The current algorithm selects a class, then an observation from that class. However, it may be better to select an observation of interest, say an example of fraud, then select a very similar example of non-fraud to distinguish the differences between them. The underlying idea is that it is easy to spot obvious non-fraud, such as someone purchasing a $4 cup of coffee from their local coffee shop, and these are not the important cases that the algorithm relies upon to train. The idea will be to use the most "informative" points for training.
