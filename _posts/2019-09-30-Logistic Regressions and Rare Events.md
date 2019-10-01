@@ -16,9 +16,7 @@ All of the code and a hyperlink to the data are available on my [github](https:/
 
 # The Problem
 
-To motivate the problem, let's simply compare our standard likelihood when our data is Bernoulli distributed with a sample weighted likelihood. 
-
-Assume $Y_{i} \vert X_{i}$ is Bernoulli distributed, then our standard log-likelihood is simply:
+To motivate the problem, let's simply compare our standard likelihood when our data is Bernoulli distributed with a sample weighted likelihood. Assume $Y_{i} \vert X_{i}$ is Bernoulli distributed, with the probablity of $Y_{i}=1$, or $\pi_{i}$, parameterized by the linear function $\betaX_{i}$. Our standard log-likelihood is simply:
 
 \begin{equation}
     \mathcal{L}(\beta \vert Y, X) = \sum_{Y_{i}==1} ln(\pi_{i}) + \sum_{Y_{i}==0} ln(1-\pi_{i})
