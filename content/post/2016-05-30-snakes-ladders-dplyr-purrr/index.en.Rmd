@@ -1,11 +1,11 @@
 ---
-title: Snakes, ladder, dplyr and purrr
-author: ~
+title: Snakes, ladders, dplyr and purrr
+author: Alex Whan
 date: '2016-05-30'
 slug: snakes-ladders-dplyr-purrr
 categories: []
 tags: ['purrr', 'dplyr']
-type: 'post'
+type: ''
 subtitle: ''
 image: ''
 ---
@@ -85,7 +85,7 @@ board_p <- ggplot(game_board, aes(x, y)) +
 print(board_p)
 ```
 
-![The actual 'board'](/img/real_board.jpg)
+![The actual 'board'](real_board.jpg)
 
 Maybe not a marketing success, but functionally the same.
 

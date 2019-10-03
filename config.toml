@@ -1,4 +1,4 @@
-baseurl = "http://alexwhan.com/"
+baseurl = "/"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 title = "Inscrutable Errors"
@@ -9,6 +9,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+relativeURLS = true
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
