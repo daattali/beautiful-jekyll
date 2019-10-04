@@ -10,6 +10,7 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 relativeURLS = true
+enableEmoji = true
 #pygmentsUseClassic = true
 #pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
@@ -21,6 +22,8 @@ relativeURLS = true
   #logo = "img/avatar-icon.png" # Expecting square dimensions
   #favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
+  navbarTitle = "Inscrutable errors"
+  description = "Alex Whan's blog"
   commit = false
   rss = true
   comments = true
