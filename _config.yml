@@ -24,6 +24,7 @@ description: internal website for the UBC Master of Data Science
 # List of links in the navigation bar
 navbar-links:
   Program:
+    - About : "about"
     - Our vision: "vision"
     - At a glance: "img/schedule.pdf"
     - Course Descriptions: "descriptions"
