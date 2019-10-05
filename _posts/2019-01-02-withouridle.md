@@ -2,7 +2,7 @@
 layout: post
 title: ইনস্টল ছাড়াই পাইথন 
 tags: [python, programming]
-permalink: /_programming_/
+permalink: /py/
 ---
 
 শিরোনাম দেখে বুঝে ফেলেছেন আজকে আমরা কোন কিছু `install` করা ছাড়াই পাইথন দিয়ে প্রোগ্রামিং শিখব ।
