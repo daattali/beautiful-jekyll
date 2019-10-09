@@ -124,6 +124,11 @@ share-links-active:
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
 
+#pagination
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "blog/page:num"
+
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
   repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
