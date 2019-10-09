@@ -11,7 +11,7 @@ I am currently in my 5th Year of an Economics PhD at New York University. My aca
 
 ## Some links
 
-[My github page](https://github.com/ryanlstevens/)
+[My github page](https://github.com/ryanlstevens/) <br>
 [My medium page](https://medium.com/@ryan.louis.stevens)
 
 ## Packages
