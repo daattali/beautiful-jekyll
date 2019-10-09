@@ -49,7 +49,9 @@ Note: to complicate things slightly, we actually find it useful to also have C- 
 
 #### Re-grading
 
-If you have concerns about the way your work was graded, please contact the TA who graded it _within one week of having the grade returned to you_. After this one-week window, we may deny your request for re-evaluation. Also, please keep in mind that your grade may go up or down as a result of re-grading.
+If you have a question about the way your work was graded, please contact the TA who graded it for an explanation. If you would like to contest your grade, you should notify the instructor. In these cases, the instructor will re-grade the entire piece of work, not only the parts in question. Please keep in mind that your grade may go up or down as a result of re-grading, and that instructors often grade more critically than TAs. We expect these re-grade requests to happen rarely, e.g. 0-2 times per student over the year.
+
+Furthermore, all requests for explanations and regrades must be submitted _within one week of having the grade returned to you_. After this one-week window, we may deny your request for re-evaluation. 
 
 #### Letter grades
 
