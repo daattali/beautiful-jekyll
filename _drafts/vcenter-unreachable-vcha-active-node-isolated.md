@@ -12,4 +12,12 @@ Pretty strange, I proceeded to migrate (vMotion) the active to another ESXi host
 
 It turns out the datacenter team had moved some cables as part of a "planned" maintenance in which 2 of the 3 hosts were moved to another switch stack. However the network team forgot to add the VLAN of the VCHA subnet in the trunk that links the new stack.
 
+**_VLAN not in the trunk. No VCHA traffic._**
+
+![](/img/vcha-move1.JPG)
+
+**VL_AN in trunk. VCHA traffic restored_**
+
+![](/img/vcha-move2.JPG)
+
 **Moral of the story**: If your VCHA enabled vCenter disappears, check the VCHA traffic network before dropping a nuke on it.
