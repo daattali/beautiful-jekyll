@@ -16,7 +16,7 @@ It turns out the datacenter team had moved some cables as part of a "planned" ma
 
 ![](/img/vcha-move1.JPG)
 
-**VL_AN in trunk. VCHA traffic restored_**
+**_VLAN in trunk. VCHA traffic restored._**
 
 ![](/img/vcha-move2.JPG)
 
