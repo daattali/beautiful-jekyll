@@ -20,6 +20,7 @@ description: Waukesha Y Guides
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "index"
   About: "about"
   Membership: "membership"
   Contact: "contact"
