@@ -1,4 +1,5 @@
-## About
+
+## About the Y-Guides
 
 Y Guides brings fathers and their children closer together!
 The Y-guides is a non-profit organization run by dads.  The goal of the program is to foster the companionship and understanding between Fathers and their sons/daughters.  Events emphasize the important role that parents play in the growth and development of their children.  These events create memories that will last a lifetime.
