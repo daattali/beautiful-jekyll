@@ -9,7 +9,7 @@ This post today is going to walk through how to set up a flask application and c
 
 I am going to create a barebones Flask application called "flask_backed_with_aws". The folder structure for the application is as follows:
 
-```
+```shell
 flask_backend_with_aws/
 |
 |-flask_backend_with_aws.py
