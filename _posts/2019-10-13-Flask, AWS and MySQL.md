@@ -1,3 +1,7 @@
+---
+layout : post
+title : Flask, AWS and MySQL
+---
 
 ## Introduction
 
