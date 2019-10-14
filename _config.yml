@@ -68,7 +68,7 @@ author:
 social-network-links:
   rss: false
   email: "waukeshayguides@gmail.com"
-  facebook: waukeshayguides
+  facebook: Y-Adventure-Guides-Waukesha-116232588419922
 # github: daattali
 # twitter: daattali
 #  reddit: yourname
@@ -92,7 +92,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "yguides.net"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "yguides.net"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
