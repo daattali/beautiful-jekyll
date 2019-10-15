@@ -1,16 +1,28 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Victor
+subtitle: a data scientist and aspiring statistician
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Self-directed and driven data scientist with comprehensive accomplishments applying statistical modeling, machine learning and
+data visualization to ensure success and achieve goals. Known as an innovative thinker with strong SQL, Python, R acumen and
+Julia. Demonstrated success developing and seamlessly executing plans across complex data sets. Recognized for maximizing
+performance by implementing appropriate data mining strategies through analysis of details to gain understanding of the data
+structures, databases, relationships and business needs. Highly organized, creative problem solver who excels at producing business
+value by applying data science best practices to challenging problems.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### Work
+Los Angeles Capital Management Los Angeles, CA, USA.
+Research Analyst (Intern) July 2018 – December 2018
 
-### my history
+Ritual.co Toronto, ON
+Data Scientist February 2019 – Present
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### Education
+
+UCLA ANDERSON SCHOOL OF MANAGEMENT Los Angeles, CA, December 2018
+
+UCLA Department of Chemistry Los Angeles, CA PhD Program in Chemistry. N.D. June, 2017
+
+University of Pittsburgh Pittsburgh, PA, May 2016

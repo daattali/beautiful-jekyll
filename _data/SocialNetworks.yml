@@ -90,3 +90,8 @@ yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
   icon: "fa-yelp"
+
+wechat:
+  name: "Wechat"
+  baseURL: "https://www.wechat.com/en/"
+  icon: "fa-wechat"

@@ -70,8 +70,9 @@ social-network-links:
   rss: true
   email: "someone@example.com"
   facebook: deanattali
-  github: daattali
-  twitter: daattali
+  github: victorhuangkk
+  wechat: victorhuangkk
+#  twitter: victorhuangkk
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -80,7 +81,7 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: +16477034207
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -90,10 +91,11 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
+  wechat: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -156,7 +158,7 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Canada/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
