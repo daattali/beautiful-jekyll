@@ -163,9 +163,8 @@ head(downloads)
 The graph below illustrates the popularity of some the common packages for finding AUC in R. The pROC looks  to be the most popular. Some of these popular packages have issues such as breaking down when the input is a very large vector or the data very imbalanced, they can evaluate to different AUC values. The goal of this post is investigate which of these packages is robust and evaluates consistent AUC values. The Stack Overflow link [here](https://stackoverflow.com/questions/53301729/difference-between-auprc-in-caret-and-prroc) talks about some of these diferences between packages. fOR EXAMPLE the PRROC package computes the AUC for the random forest model trained in theis post as 0.5 wheras most of the other packages compute the AUC  value as 0.984898. This snapshot shows an example where the MLmetrics package breaks down for a vector of size around 600,000.
 
 
-```r
-#![img]("C:\\Users\\nboateng\\Downloads\\Capture.PNG")
-```
+
+![ ]( /img/ROC_AUC/Capture.PNG)
 
 
 
@@ -192,8 +191,8 @@ ggplot(downloads, aes(end, downloads, group=package, color=package )) +
   theme(axis.text.x=element_text(angle=45, hjust=1))
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
+![ ]( /img/ROC_AUC/1.png)
 
 
 ```r
@@ -235,7 +234,8 @@ ggplot(downloads, aes(end, downloads, group=package, color=package )) +
   theme(axis.text.x=element_text(angle=45, hjust=1))
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/2.png)
 
 
 #### Train Random Forest Model
@@ -323,7 +323,8 @@ pred.class <- predict(m1, newdata = hacide.test)
 ROSE::roc.curve(hacide.test$cls,pred.prob[,2])
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/3.png)
 
 ```
 ## Area under the curve (AUC): 0.985
@@ -426,7 +427,8 @@ plot(sens.ci, type="shape", col="lightblue")
 ## definition shape.
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/4.png)
 
 ```r
 #plot(sens.ci, type="bars")
@@ -484,7 +486,8 @@ rocplot <- ggplot(df, aes(m = predictions, d = labels))+ geom_roc(n.cuts=20,labe
 rocplot + style_roc(theme = theme_grey) + geom_rocci(fill="pink") 
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/5.png)
 
 ```r
 plotROC::calc_auc(rocplot)
@@ -526,7 +529,8 @@ precrec_obj <- evalmod(scores = df$predictions, labels = df$labels)
 autoplot(precrec_obj)
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/6.png)
 
 ```r
 precrec::auc(precrec_obj)
@@ -642,7 +646,8 @@ preds_neg <-  pred.prob[hacide.test$cls==0]  #preds for true negative class
 plot(PRROC::roc.curve(preds_pos, preds_neg, curve = TRUE))
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-18-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/7.png)
 
 ```r
 PRROC::roc.curve(preds_pos, preds_neg,curve=FALSE)
@@ -698,7 +703,8 @@ ggplot2::autoplot(bnch)
 ## Coordinate system already present. Adding new coordinate system, which will replace the existing one.
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-20-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/8.png)
 
 
 
@@ -740,7 +746,8 @@ as_tibble(results)
 ggplot2::autoplot(results)
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-22-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/9.png)
 
 
 
@@ -756,7 +763,9 @@ results %>%
     geom_smooth(method = "lm", se = F, colour = "grey50")
 ```
 
-![](ROC_AUC_files/figure-html/unnamed-chunk-23-1.png)<!-- -->
+
+![ ]( /img/ROC_AUC/10.png)
+
 
 
 The MLmetrics package and the ROC_AUC function appears to be much faster than the other packages. On the otherhand the mltools package did not experience any break down during its usage unlike the MLmetric package.
