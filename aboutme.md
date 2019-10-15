@@ -13,16 +13,14 @@ value by applying data science best practices to challenging problems.
 
 
 ### Work
-Los Angeles Capital Management Los Angeles, CA, USA.
-Research Analyst (Intern) July 2018 – December 2018
+Los Angeles Capital Management           Los Angeles, CA, USA.
+Research Analyst (Intern)                July 2018 – December 2018
 
-Ritual.co Toronto, ON
-Data Scientist February 2019 – Present
+Ritual.co                                Toronto, ON
+Data Scientist                           February 2019 – Present
 
 ### Education
 
-UCLA ANDERSON SCHOOL OF MANAGEMENT Los Angeles, CA, December 2018
+UCLA ANDERSON SCHOOL OF MANAGEMENT       Los Angeles, CA, December 2018
 
-UCLA Department of Chemistry Los Angeles, CA PhD Program in Chemistry. N.D. June, 2017
-
-University of Pittsburgh Pittsburgh, PA, May 2016
+University of Pittsburgh                 Pittsburgh, PA, May 2016

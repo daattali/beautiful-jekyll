@@ -22,9 +22,10 @@ description: A virtual proof that I'm awesome
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+    - Tidyverse: "https://www.tidyverse.org/"
+    - A/B Test Framework: "https://guanhua-huang.shinyapps.io/ritual_a_b_test/"
+    - XArray: "http://xarray.pydata.org/en/stable/"
+  Ritual: "https://ritual.co/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -67,9 +68,9 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
-  email: "someone@example.com"
-  facebook: deanattali
+  rss: false
+  email: "victorhuangkk@g.ucla.edu"
+  facebook: victorhuangkk
   github: victorhuangkk
   wechat: victorhuangkk
 #  twitter: victorhuangkk
@@ -88,7 +89,7 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
   linkedin: true
   wechat: true
