@@ -1,0 +1,13 @@
+---
+layout: page
+use-site-title: true
+published: true
+---
+
+<h2>Events</h2>
+
+<ul>
+{% for event in site.data.events %}
+   <li>{{ event.name }}</li>
+{% endfor %}
+</ul>
