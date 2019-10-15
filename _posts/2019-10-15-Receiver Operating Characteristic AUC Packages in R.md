@@ -16,7 +16,7 @@ date: "October 14, 2019"
 toc_depth: 5  # upto three depths of headings (specified by #, ## and ###)
 number_sections: true  ## if you want number sections at each table header
 highlight: tango  # specifies the syntax highlighting style
-tags:  AUC, ROC
+tags:  AUC, ROC,Precision-Recall curves,package download library
 ---
 
 
