@@ -1,6 +1,6 @@
 ---
 title: " Receiver Operating Characteristic AUC Packages in R"
-subtitle: Visualization with ggplot Extensions
+subtitle: Comparison of Varoius Packages
 #output: rmarkdown::github_document
 
 output:
