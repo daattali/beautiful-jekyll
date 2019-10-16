@@ -11,7 +11,7 @@ published: true
 <li>
 	<div class="event">
 	    <div class="event_name">{{ event.name }}</div>
-	    <span class="event_date">{{ event.date }}</span>
+	    <span class="event_date">{{ event.date | date: "%a, %b %d %Y" }}</span>
 	    <span class="event_time">{{ event.time }}</span>
 	</div>
 	<div class="clearfix"></div>

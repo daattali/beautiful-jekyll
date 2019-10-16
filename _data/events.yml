@@ -1,25 +1,29 @@
 - name: Parade Float Building
-  date: "2019-11-06"
+  date: 2019-11-09
   time: TBD
   location: Waukesha YMCA
 
 - name: Waukesha Christmas Parade
-  date: "November 24th, 2019"
+  date: 2019-11-24
   time: 4:00pm - 8:00pm
   location: Downtown Waukesha
 
 - name: Bell Ringing
-  date: "December 7th, 2019"
+  date: 2019-12-07
   time: TBD
   location: Bob and Kurt's Sentry
 
 - name: Boy's Winter Camp
-  date: "January 11th - 12th, 2020"
+  date: 2020-01-11
   time: All Day
   location: Lutherdale
 
 - name: Girls's Winter Camp
-  date: "January 25th - 12th, 2020"
+  date: 2020-01-25 
   time: All Day
   location: Lutherdale
 
+- name: Father Daughter Dance
+  date: 2020-02-08
+  time: 8:00pm
+  location: Waukesha YMCA
