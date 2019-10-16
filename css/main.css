@@ -777,3 +777,16 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+.event ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event_name {
+  text-align: left;
+  font-weight: bold;
+}
+
+

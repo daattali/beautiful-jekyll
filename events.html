@@ -6,8 +6,12 @@ published: true
 
 <h2>Events</h2>
 
-<ul>
+<ul class="events">
 {% for event in site.data.events %}
-   <li>{{ event.name }}</li>
+<li>
+	<div class="event_name">{{ event.name }}</div>
+	<span class="event_date">{{ event.date }}</span>
+	<span class="event_time">{{ event.time }}</span>
+</li>
 {% endfor %}
 </ul>
