@@ -778,10 +778,18 @@ pre {
   font-size: 16px;
 }
 
-.event ul {
-  list-style-type: none;
+.events ul {
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.events li {
+  margin-bottom: 10px;
+}
+
+.event {
+  width: 75%
 }
 
 .event_name {
@@ -789,4 +797,13 @@ pre {
   font-weight: bold;
 }
 
+.event_date {
+  text-align: left;
+  float: left;
+}
+
+.event_time {
+  text-align: right;
+  float: right;
+}
 
