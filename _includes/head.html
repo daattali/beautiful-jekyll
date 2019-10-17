@@ -66,14 +66,6 @@
   <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
 
-   {% if page.meta-description %}
-  <meta property="og:description" content="{{ page.meta-description }}">
-  {% elsif page.subtitle %}
-  <meta property="og:description" content="{{ page.subtitle }}">
-  {% else %}
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
-  {% endif %}
-
 
   <meta property="og:type" content="website" />
 
@@ -105,13 +97,6 @@
   <meta name="twitter:title" content="{{ site.title }}" />
   {% endif %}
 
-  {% if page.meta-description %}
-  <meta name="twitter:description" content="{{ page.meta-description }}">
-  {% elsif page.subtitle %}
-  <meta name="twitter:description" content="{{ page.subtitle }}">
-  {% else %}
-  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
-  {% endif %}
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
