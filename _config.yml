@@ -23,9 +23,11 @@ description: Tecnología, Programación and others...
 
 # List of links in the navigation bar
 navbar-links:
-  Read later: "articles"
-  Books: "books"
-  About Me: "aboutme"
+  About Me:
+    - MeetUps: "meetups"
+    - Read later: "articles"
+    - Books: "books"
+    - Who I am?: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
@@ -260,6 +262,9 @@ jekyll_get:
     cache: false
   - data: books_review
     json: 'http://gsx2json.com/api?id=1XKI7LtPmxx9q8vmoPmVJ3gGREi7KV7_E8Jj8KDqMUs8&sheet=1'
+    cache: false
+  - data: meetups
+    json: 'http://gsx2json.com/api?id=1-yMoDny1Uu0gK2LLXkabO8Y72OZkUCpcdJyHeMdBLo0&sheet=2'
     cache: false
 
 plugins:
