@@ -4,7 +4,6 @@ title: About me
 subtitle: 
 ---
 
-My name is Irfan Habib!
+👋Hi I'm your host Irfan Habib!
 
-### My story
-
+I'm a software engineer at GoCardless where I look after the Data Platform! 

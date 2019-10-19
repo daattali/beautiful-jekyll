@@ -1,7 +1,10 @@
-# Welcome to Beautiful Jekyll!
-# This config file is meant for settings that affect your entire website. When you first
-# set up your website you should go through all these settings and edit them, but after
-# the initial set up you won't need to come back to this file often.
+# --- General options --- #
+
+# Name of website
+title: "My Corner of the Internet"
+
+# Short description of your site
+description: A virtual proof that I'm awesome
 
 # --- Required options --- #
 
@@ -16,9 +19,13 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - LinkedIn: "https://www.linkedin.com/in/irfanhabib/"
+    - GitHub: "https://github.com/irfanhabib"
+  Author's home: "http://irfanhabib.com"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/avatar-icon.png"
 
 # --- Logo --- #
 
@@ -34,21 +41,21 @@ round-avatar: true
 #title-img: /path/to/image
 
 
-# --- Footer social media links --- #
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: Irfan Habib
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
-#  medium: yourname
+  rss: true
+  email: "irfan+site@irfanhabib.com"
+  facebook: irfanhabib
+  github: irfanhabib
+  twitter: irfanhabib
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: irfanhabib
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -99,6 +106,7 @@ post_search: true
 #keywords: "my,list,of,keywords"
 
 # --- Colours / background image --- #
+url-pretty: "irfanhabib.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
@@ -216,7 +224,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Europe/London"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
