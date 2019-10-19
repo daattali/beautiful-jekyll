@@ -258,6 +258,9 @@ jekyll_get:
   - data: articles
     json: 'http://gsx2json.com/api?id=1Fu1FNyVpz92iLJlWYeIngWEVcesZwMJ_F1WQmbefh0s&sheet=1'
     cache: false
+  - data: books_review
+    json: 'http://gsx2json.com/api?id=1XKI7LtPmxx9q8vmoPmVJ3gGREi7KV7_E8Jj8KDqMUs8&sheet=1'
+    cache: false
 
 plugins:
   - jekyll-paginate
