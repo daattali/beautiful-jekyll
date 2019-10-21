@@ -22,7 +22,7 @@ As highlighted by Palumbi et al. (2019), the potential trade-offs involved in ad
 
 ### About the Author
 
-
+[Áki Jarl Láruson](https://akijarl.wordpress.com/) is a Postdoctoral Researcher in the lab of Dr. Katie Lotterhos, in the Department of Marine and Environmental Sciences at Northeastern University. Dr. Láruson studies approaches to detect genomic signatures of adaptation, as well as molecular evolution in marine invertebrates.
 
 ### Bibliography
 Beaugrand, G. & Kirby, R. (2018) How do marine pelagic species respond to climate change? Theories and observations. Annu. Rev. Mar. Sci. 10:169–97.
