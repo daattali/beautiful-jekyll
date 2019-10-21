@@ -14,4 +14,4 @@ We will host a Genomics workshop to develop community standards and recommendati
 
 The workshop will be held at [USC Wrigley Institute](https://dornsife.usc.edu/wrigley/wmsc/) on Catalina Island from August 15 to August 19, 2020. 
 
-Information will be sent out on the Research Coordinated Network's[list serve](https://listserv.neu.edu/cgi-bin/wa?SUBED1=RCN-ECS&A=1), so be sure to sign up to receive updates. 
+Information will be sent out on the Research Coordinated Network's [list serve](https://listserv.neu.edu/cgi-bin/wa?SUBED1=RCN-ECS&A=1), so be sure to sign up to receive updates. 
