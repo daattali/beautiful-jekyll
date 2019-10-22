@@ -1,4 +1,5 @@
 ---
+layout: member
 name: Anastasia Lucas
 position: Hall Lab Affiliate
 image: /img/members/anastasia-lucas.webp

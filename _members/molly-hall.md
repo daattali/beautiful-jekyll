@@ -1,4 +1,5 @@
 ---
+layout: member
 name: Molly Hall
 position: Assistant Professor
 image: ../img/members/molly-hall.webp

@@ -1,4 +1,5 @@
 ---
+layout: member
 name: Jiayan Zhou
 position: PhD Student (Pathobiology)
 image: /img/members/jiayan-zhou.webp

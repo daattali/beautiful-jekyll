@@ -1,4 +1,5 @@
 ---
+layout: member
 name: Allison Ludman
 position: Undergraduate Researcher
 image: /img/members/allison-ludman.png

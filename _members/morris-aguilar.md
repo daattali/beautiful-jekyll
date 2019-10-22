@@ -1,4 +1,5 @@
 ---
+layout: member
 name: Morris Aguilar
 position: MD/PhD Student (BG)
 image: /img/members/morris-aguilar.jpg
