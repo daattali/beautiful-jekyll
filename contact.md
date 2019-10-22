@@ -10,7 +10,7 @@ use-site-title: true
   </header>
   <div class="contact">
       <div class="col-lg-6">
-        <form method="POST" role="form" action="http://formspree.io/lzulnowski@gmail.com">
+        <form method="POST" role="form" action="http://formspree.io/lukasz@zulnowski.com">
           <input type="hidden" name="_subject" value="Mail z me.zulnowski.com" />
           <input type="text" name="_gotcha" style="display:none" />
           <div class="form-group">

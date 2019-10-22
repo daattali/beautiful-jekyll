@@ -5,7 +5,7 @@
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "https://me.zulnowski.com"
-baseurl: ""
+#baseurl: ""
 
 # Name of website
 title: DevOps / SysOps
@@ -27,7 +27,7 @@ description: Strona domowa Łukasz Żułnowskiego
 # List of links in the navigation bar
 navbar-links:
   O mnie: "aboutme"
-  Blog: ""
+  Blog: "/"
   Kontakt: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -72,12 +72,12 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "lzulnowski@gmail.com"
+  email: "lukasz@zulnowski.com"
   facebook: lzulnowski
   github: buker
   twitter: lzulnowski
 #  reddit: yourname
-  google-plus: +lzulnowski
+#  google-plus: 
   linkedin: zulnowski
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -85,9 +85,9 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
   spotify: lzulnowski
-  telephone: +48794353556
+#  telephone: 
 #  steam: deanat78
-  twitch: lzulnowski
+#  twitch: 
 #  yelp: yourname
 
 # Select which share links to show in posts
@@ -258,3 +258,8 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-minifier
+
+jekyll-minifier:
+  exclude: ['atom.xml', 'feed.xml', 'tags.xml']
