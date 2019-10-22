@@ -5,10 +5,10 @@ layout: base
 {% include header.html type="page" %}
 
 {% assign molly = site.members | where:"group","Molly" | first %}
-{% assign membersStaff = site.members | where:"Staff", page.group %}
-{% assign membersGradstudents = site.members | where:"Grad", page.group %}
-{% assign membersAffiliate = site.members | where:"Affiliate", page.group %}
-{% assign membersUndergrad = site.members | where:"Undergrad", page.group %}
+{% assign membersStaff = site.members | where:"group","Staff" %}
+{% assign membersGradstudents = site.members | where:"group","Grad" %}
+{% assign membersAffiliate = site.members | where:"group","Affiliate" %}
+{% assign membersUndergrad = site.members | where:"group","Undergrad" %}
 
 
 <div class="container" role="main">
