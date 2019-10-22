@@ -4,4 +4,24 @@ layout: base
 
 {% include header.html type="page" %}
 
-{{ content }}
+<div class="container" role="main">
+    <h2>About</h2>
+    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+        {{ content }}
+    </div>
+    <h2>News</h2>
+    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+        {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
+        {% for news in memberNewsSorted %}
+            <div class="panel panel-info">
+                {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
+                <div class="panel-body">
+                {{ news.content }}
+                </div>
+                <div class="panel-footer" style="text-align:right;">
+                <i>{{ news.date | date: '%B %d, %Y' }}</i>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
