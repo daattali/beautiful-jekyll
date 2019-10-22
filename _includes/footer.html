@@ -8,7 +8,7 @@
             {%- assign element = site.data.SocialNetworks[curkey] -%}
             <li>
             {%- if curkey == 'rss' -%}
-              <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
+              <a href="{{ '/feed.xml' | relative_url }}" title="{{ element.name }}">
             {%- elsif curkey == 'yelp' -%}
               <a href="https://{{ site.social-network-links[curkey] }}.yelp.com" title="{{ element.name }}">
             {%- else -%}
@@ -30,7 +30,7 @@
 
       {% if site.url-pretty %}
       &nbsp;&bull;&nbsp;
-      <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+      <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
       {% endif %}
 
       {% if site.matomo %}
@@ -43,7 +43,7 @@
           <!-- Please don't remove this, keep my open source work credited :) -->
     <p class="theme-by text-muted">
       Theme by
-      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
     </p>
       </div>
     </div>
