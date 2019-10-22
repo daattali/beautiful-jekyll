@@ -3,7 +3,7 @@ name: Allison Ludman
 position: Undergraduate Researcher
 image: /img/members/allison-ludman.png
 current: true
-order: 7
+group: Undergrad
 ---
 
 **Education**: 

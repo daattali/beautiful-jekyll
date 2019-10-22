@@ -3,7 +3,7 @@ name: John McGuigan
 position: Programmer/Analyst
 image: /img/members/john-mcguigan.png
 current: true
-order: 5
+Group: Staff
 ---
 
 **Education**: 

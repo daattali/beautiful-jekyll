@@ -3,7 +3,7 @@ name: Molly Hall
 position: Assistant Professor
 image: ../img/members/molly-hall.webp
 current: true
-order: 1
+group: Molly
 ---
 Department of Veterinary and Biomedical Sciences 
 
