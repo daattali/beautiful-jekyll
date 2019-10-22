@@ -10,4 +10,8 @@ Download the Appliance Update Bundle that comes as a zip file and contains 2 fol
 
 Go to the IIS server and extract the 2 folders from the zip file in the folder served by the web server. Something like "c:\\inetpub\\wwwroot\\vc-update-repo". Though as long as it's accessible in http you can put it wherever, I personally leave it in the UMDS_Store folder for simplicity's sake.
 
+Then I typed the path in the custom repository field in the vCenter VAMI interface.
+
+Though once I went ahead and checked for updates I would get an error "Download Failed"
+
 [https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5](https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5 "https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5")
