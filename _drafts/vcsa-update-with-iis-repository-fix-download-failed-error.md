@@ -12,6 +12,10 @@ Go to the IIS server and extract the 2 folders from the zip file in the folder s
 
 Then I typed the path in the custom repository field in the vCenter VAMI interface.
 
-Though once I went ahead and checked for updates I would get an error "Download Failed"
+Which got me a "Download Failed" error under available updates.
+
+To fix that one, go to your ISS server and add a "MIME Type" with the values "sign" / "text/html".
+
+Once that was done
 
 [https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5](https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5 "https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5")
