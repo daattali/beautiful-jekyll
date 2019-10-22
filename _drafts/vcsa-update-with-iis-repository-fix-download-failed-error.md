@@ -14,8 +14,8 @@ Then I typed the path in the custom repository field in the vCenter VAMI interfa
 
 Which got me a "Download Failed" error under available updates.
 
-To fix that one, go to your ISS server and add a "MIME Type" with the values "sign" / "text/html".
+To fix that one, go to your IIS server and add a "MIME Type" with the values "sign" / "text/html".
 
-Once that was done
+Once that's done the appliance accepts the repository and shows the available update. However when I tried to update I got a "Download Failed" error once again but in the next window. 
 
 [https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5](https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5 "https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5")
