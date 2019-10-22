@@ -3,7 +3,7 @@ name: Anastasia Lucas
 position: Hall Lab Affiliate
 image: /img/members/anastasia-lucas.webp
 current: true
-Group: Affiliate
+group: Affiliate
 ---
 
 **Education**:
