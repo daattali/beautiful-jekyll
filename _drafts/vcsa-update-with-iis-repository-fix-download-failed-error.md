@@ -12,10 +12,26 @@ Go to the IIS server and extract the 2 folders from the zip file in the folder s
 
 Then I typed the path in the custom repository field in the vCenter VAMI interface.
 
+#### Download Failed #1
+
 Which got me a "Download Failed" error under available updates.
 
 To fix that one, go to your IIS server and add a "MIME Type" with the values "sign" / "text/html".
 
-Once that's done the appliance accepts the repository and shows the available update. However when I tried to update I got a "Download Failed" error once again but in the next window. 
+Once that's done the appliance accepts the repository and shows the available update. 
 
-[https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5](https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5 "https://stackoverflow.com/questions/18625362/allowing-plus-character-in-path-in-asp-net-and-iis7-5")
+#### Download Failed #2
+
+When I tried to update I got a "Download Failed" error once again but in the next window.  I looked in the IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which have always caused problems everywhere...).
+
+After some digging I discovered that specials characters are rejected by default as a security measure (paranoia?) since IIS 7.
+
+In order to allow the 'plus' characters, edit the "web.config" file located in the root directory.
+
+    <system.webServer>
+        <security>
+            <requestFiltering allowDoubleEscaping="true"/>
+        </security>
+    </system.webServer>
+
+Then restart the IIS website or service and VCSA can finally update from your IIS repository.
