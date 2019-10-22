@@ -5,21 +5,25 @@ subtitle: Building computational tools to elucidate the complex genetic and envi
 use-site-title: true
 ---
 
+{%   assign today = site.time | date: '%s' %}
+
 <h2 style="text-align: center">Hall Lab News</h2>
 {% assign newsSorted = site.news | sort: "date" | reverse %}
-{% for news in newsSorted limit:3 %}
-<div class="panel panel-info">
-  {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
-  <div class="panel-heading">
-    <h3>{{ news.title }}</h3>
-  </div>
-  <div class="panel-body">
-    {{ news.content }}
-  </div>
-  <div class="panel-footer">
-    <i>{{ news.date | date: '%B %d, %Y' }}</i>
-  </div>
-</div>
+{% for news in newsSorted %}
+  {%   assign start = news.date | date: '%s' %}
+  {%   assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 %}
+  {% if daysSince < 61 %}
+    <div class="panel panel-info">
+      {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
+      <div class="panel-body">
+        {{ news.content }}
+      </div>
+      <div class="panel-footer">
+        <i>{{ news.date | date: '%B %d, %Y' }}</i>
+        <i>{{ daysSince }}</i>
+      </div>
+    </div>
+  {% endif %}
 {% endfor %}
 
 <div class="posts-list">
