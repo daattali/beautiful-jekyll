@@ -5,20 +5,31 @@
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "https://me.zulnowski.com"
-baseurl: ""
+#baseurl: ""
 
 # Name of website
 title: DevOps / SysOps
 
 description: Strona domowa Łukasz Żułnowskiego
 
+# --- Local development options ---
+# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
+# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
+
+# url is the the website domain URL without a trailing slash
+#url: "https://example.com"
+
+# baseurl should be an empty string
+#baseurl: ""
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   O mnie: "aboutme"
-  Blog: ""
+  Blog: "/"
   Kontakt: "contact"
+
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar.jpg"
@@ -61,12 +72,12 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "lzulnowski@gmail.com"
+  email: "lukasz@zulnowski.com"
   facebook: lzulnowski
   github: buker
   twitter: lzulnowski
 #  reddit: yourname
-  google-plus: +lzulnowski
+#  google-plus: 
   linkedin: zulnowski
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -74,9 +85,9 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
   spotify: lzulnowski
-  telephone: +48794353556
+#  telephone: 
 #  steam: deanat78
-  twitch: lzulnowski
+#  twitch: 
 #  yelp: yourname
 
 # Select which share links to show in posts
@@ -88,7 +99,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Buker.GitHub.IO"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "me.zulnowski.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -115,8 +126,22 @@ google_analytics: "UA-88936703-1"
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
 disqus: "zulnowski-com"
 
+# If you want to use JustComments fill with the API Key
+#just-comments: "ABCD-EFGH-IJKL"
+
 # To use Facebook Comments, fill in a Facebook App ID
 # fb_comment_id: ""
+
+# To use Staticman comments, fill in repository, branch, and endpoint
+staticman:
+  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
+  reCaptcha:
+    # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
+    # If you use reCaptcha, you must also set these parameters in staticman.yml
+    siteKey  : # Use your own site key, you need to apply for one on Google
+    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
@@ -130,6 +155,9 @@ excerpt_length: 50
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
+
+# Ruby Date Format
+date_format: "%B %-d, %Y"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -230,3 +258,8 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-minifier
+
+jekyll-minifier:
+  exclude: ['atom.xml', 'feed.xml', 'tags.xml']
