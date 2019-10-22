@@ -6,14 +6,14 @@ layout: base
 
 <div class="container" role="main">
     <h2>About</h2>
-    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="row">
         {{ content }}
     </div>
     <h2>News</h2>
-    <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="row" style="justify-content: center;">
         {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
         {% for news in memberNewsSorted %}
-            <div class="panel panel-info">
+            <div class="panel panel-info" style="width:80%;">
                 {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
                 <div class="panel-body">
                 {{ news.content }}
