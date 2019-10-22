@@ -6,7 +6,7 @@ subtitle: Challenges of increasingly dynamic populations in the sea
 
 Recently the IPCC report on the status and trajectory of the global ocean and the cryosphere (the portion of the earth where water mostly exists in a solid state) was released. It paints a clear picture of a rapidly shifting ecosystem that has already undergone remarkable changes in the span of a few decades and is projected to continue changing along similar trajectories (Fig. 1). It’s worth noting that while the report primarily visualizes the difference between the “best case” anthropogenic CO2 reduction scenario RCP 2.6, and the “worst case” business as usual RCP 8.5 scenario, CO2 emissions since 2005 suggest that the RCP 2.6 scenario is already too low to adequately represent future atmospheric CO2 levels (Friedlingstein et al. 2014; Senderson et al. 2016; Millar et al. 2017).
 
-![Fig.1](IPCC_OcCry_Fig1.png)
+![Fig.1](../img/IPCC_OcCry_Fig1.png)
 <sub>Figure 1. Observed and modeled historical changes in the ocean and cryosphere since 1950. Modified from IPCC (2019) Figure SPM.1.</sub>
 
 The report explicitly highlights the important role evolutionary adaptation will play in the ongoing survival of marine populations, citing Scahum and Collins (2014), the report states that while much attention has been given to the evolutionary origin of traits within populations, far fewer studies have considered the stability of trait evolution, or the evolutionary impacts at the level of ecosystems or community function. It goes on the state that while natural adaptation may not be able to keep pace with the rate and magnitude of changes in the ocean and the cryosphere, human assisted evolutionary adaptation may be able to assist in the mitigation of ecosystem decline. 
