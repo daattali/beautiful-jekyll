@@ -12,7 +12,8 @@ Download the Appliance Update Bundle that comes as a zip file and contains 2 fol
 
 Go to the IIS server and extract the 2 folders from the zip file in the folder served by the web server. Something like "c:\\inetpub\\wwwroot\\vc-update-repo". Though as long as it's accessible in http by vCenter you can put it wherever, I personally leave it in the UMDS_Store folder for simplicity's sake.
 
-  
+Then go to the VAMI interface of the vCenter (https://srv-vcnt.local:5480) > **Update** > **Settings** > **Use specified repository** and type in the url where the 2 update folders are accessible.
+
 ![](/img/repo-iis-vcsa2.jpg)
 
 ![](/img/repo-iis-vcsa3.jpg)
