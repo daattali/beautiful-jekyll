@@ -20,9 +20,17 @@ Then go to the VAMI interface of the vCenter (https://srv-vcnt.local:5480) > **U
 
 #### Download Failed #1
 
-Which got me a "Download Failed" error under available updates. This is because the update contains files with the "_.sign_" extension which IIS does not know about and therefor returns a 404 error when trying to access it.
+When I validated I got a "Download Failed" error under available updates. This is because the update contains files with the "_.sign_" extension which IIS does not know about and therefor returns a 404 error when trying to access it.
+
+![](/img/repo-iis-vcsa4.jpg)
 
 To fix that one, go to your IIS server and add a "_MIME Type_" with the extension "_sign_" and type "_text/html_".
+
+![](/img/repo-iis-vcsa5.jpg)
+
+![](/img/repo-iis-vcsa6.jpg)
+
+![](/img/repo-iis-vcsa7.jpg)
 
 Once that's done the appliance accepts the repository and shows the available update.
 
