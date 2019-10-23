@@ -10,7 +10,7 @@ Download the Appliance Update Bundle that comes as a zip file and contains 2 fol
 
 ![](/img/repo-iis-vcsa1.JPG)
 
-Go to the IIS server and extract the 2 folders from the zip file in the folder served by the web server. Something like "c:\\inetpub\\wwwroot\\vc-update-repo". Though as long as it's accessible in http by vCenter you can put it wherever, I personally leave it in the UMDS_Store folder for simplicity's sake.
+Go to the IIS server and extract the 2 folders from the zip file in the folder served by the web server. Something like "_c:\\inetpub\\wwwroot\\vc-update-repo_". Though as long as it's accessible in http by vCenter you can put it wherever, I personally leave it in the UMDS_Store folder for simplicity's sake.
 
 Then go to the VAMI interface of the vCenter (https://srv-vcnt.local:5480) > **Update** > **Settings** > **Use specified repository** and type in the url where the 2 update folders are accessible.
 
@@ -20,9 +20,11 @@ Then go to the VAMI interface of the vCenter (https://srv-vcnt.local:5480) > **U
 
 #### Download Failed #1
 
-When I validated I got a "Download Failed" error under available updates. This is because the update contains files with the "_.sign_" extension which IIS does not know about and therefor returns a 404 error when trying to access it.
+When I validated I got a "Download Failed" error under available updates. This is because the "_Manifest_" folder contains files with the "_.sign_" extension which IIS does not know about and therefore returns a 404 error when trying to access it.
 
 ![](/img/repo-iis-vcsa4.jpg)
+
+![](/img/repo-iis-vcsa10-1.jpg)
 
 To fix that one, go to your IIS server and add a "_MIME Type_" with the extension "_sign_" and type "_text/html_".
 
@@ -36,9 +38,11 @@ Once that's done the appliance accepts the repository and shows the available up
 
 #### Download Failed #2
 
-When I tried to go ahead with the update I received a "Download Failed" error once again in the next window. I looked in the IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which are infamous troublemakers...).
+When I tried to go ahead with the update I received a "Download Failed" error once again in the next window. I looked at the latest IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which are infamous troublemakers...).
 
-![](/img/repo-iis-vcsa8.jpg)
+located in **_c:\\inetpub\\logs\\LogFiles\\W3SVC1_**
+
+![](/img/repo-iis-vcsa8-1.jpg)
 
 If you try to open this file in a browser it results in a 404 as well.
 
