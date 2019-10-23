@@ -4,7 +4,7 @@ title: VCSA update with IIS repository - Fix "Download failed" error
 DATE: 
 
 ---
-Recently I needed to patch a vCenter Appliance (VCSA). It's not something we do often but I have quite a few vCenters. I also have a UMDS server with IIS on it for host patching so I thought why not use it as a repository for VCSA updates instead of mounting an ISO like it's 1996. (Note that the vCenters have no access to internet so online repository is not an option).
+Recently I needed to patch a vCenter Appliance (VCSA). It's not something we do often but I have quite a few vCenters. I also have a UMDS server with IIS 7 on it for host patching so I thought why not use it as a repository for VCSA updates instead of mounting an ISO like it's 1996. (Note that the vCenters have no access to internet so online repository is not an option).
 
 Download the Appliance Update Bundle that comes as a zip file and contains 2 folders named "manifest" and "package-pool".
 
