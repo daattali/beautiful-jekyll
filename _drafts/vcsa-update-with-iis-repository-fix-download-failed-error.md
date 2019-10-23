@@ -10,21 +10,21 @@ Download the Appliance Update Bundle that comes as a zip file and contains 2 fol
 
 ![](/img/repo-iis-vcsa1.JPG)
 
-Go to the IIS server and extract the 2 folders from the zip file in the folder served by the web server. Something like "c:\\inetpub\\wwwroot\\vc-update-repo". Though as long as it's accessible in http you can put it wherever, I personally leave it in the UMDS_Store folder for simplicity's sake.
+Go to the IIS server and extract the 2 folders from the zip file in the folder served by the web server. Something like "c:\\inetpub\\wwwroot\\vc-update-repo". Though as long as it's accessible in http by vCenter you can put it wherever, I personally leave it in the UMDS_Store folder for simplicity's sake.
 
 Then I typed the path in the custom repository field in the vCenter VAMI interface.
 
 #### Download Failed #1
 
-Which got me a "Download Failed" error under available updates.
+Which got me a "Download Failed" error under available updates. This is because the update contains files with the "_.sign_" extension which IIS does not know about and therefor returns a 404 error when trying to access it.
 
-To fix that one, go to your IIS server and add a "MIME Type" with the values "sign" / "text/html".
+To fix that one, go to your IIS server and add a "_MIME Type_" with the extension "_sign_" and type "_text/html_".
 
 Once that's done the appliance accepts the repository and shows the available update.
 
 #### Download Failed #2
 
-When I tried to update I got a "Download Failed" error once again but in the next window.  I looked in the IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which have always caused problems everywhere...).
+When I tried to go ahead with the update I received a "Download Failed" error once again but in the next window. I looked in the IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which are infamous troublemakers...).
 
 After some digging I discovered that specials characters are rejected by default as a security measure (paranoia?) since IIS 7.
 
@@ -36,4 +36,4 @@ In order to allow the 'plus' characters, edit the "web.config" file located in t
         </security>
     </system.webServer>
 
-Then restart the IIS website or service and VCSA can finally update from your IIS repository.
+Then restart the IIS website or service and VCSA can finally update from your IIS repository. As you can see my knowledge of IIS is function of my Googling skills but I got it to work in the end.
