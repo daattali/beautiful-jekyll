@@ -20,7 +20,7 @@ Then go to the VAMI interface of the vCenter (https://srv-vcnt.local:5480) > **U
 
 #### Download Failed #1
 
-When I validated I got a "Download Failed" error under available updates. This is because the "_Manifest_" folder contains files with the "_.sign_" extension which IIS does not know about and therefore returns a 404 error when trying to access it.
+When I validated I got a "Download Failed" error under available updates. This is because the "_Manifest_" folder contains files with the "_.sign_" extension which IIS does not know about and therefore returns a 404 error when trying to access it. [Credits to VMTN](https://communities.vmware.com/thread/533434).
 
 ![](/img/repo-iis-vcsa4.jpg)
 
