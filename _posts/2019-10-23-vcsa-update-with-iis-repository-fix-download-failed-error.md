@@ -36,11 +36,17 @@ Once that's done the appliance accepts the repository and shows the available up
 
 #### Download Failed #2
 
-When I tried to go ahead with the update I received a "Download Failed" error once again but in the next window. I looked in the IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which are infamous troublemakers...).
+When I tried to go ahead with the update I received a "Download Failed" error once again in the next window. I looked in the IIS logs and noticed that most files of the update were [returning ](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)http 200 (OK) except one http 404 (not found). I immediately saw that it is the only one with "+" in its name which is a special character (which are infamous troublemakers...).
+
+![](/img/repo-iis-vcsa8.jpg)
+
+If you try to open this file in a browser it results in a 404 as well.
+
+![](/img/repo-iis-vcsa9.jpg)
 
 After some digging I discovered that specials characters are rejected by default as a security measure (paranoia?) since IIS 7.
 
-In order to allow the 'plus' characters, edit the "web.config" file located in the root directory.
+In order to allow the 'plus' characters, edit the "web.config" file located in the root directory of the website.
 
     <system.webServer>
         <security>
@@ -48,4 +54,4 @@ In order to allow the 'plus' characters, edit the "web.config" file located in t
         </security>
     </system.webServer>
 
-Then restart the IIS website or service and VCSA can finally update from your IIS repository. As you can see my knowledge of IIS is function of my Googling skills but I got it to work in the end.
+Restart the IIS website or service and VCSA can finally update from your IIS repository. As you can see my knowledge of IIS is function of my Googling skills but I got it to work in the end.
