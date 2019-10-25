@@ -16,7 +16,7 @@ The game contains several types of bonuses, some have a positive effect, and som
 The game contains and end screen which shows the player’s scores.
 The game also contains background music and sound effects when the penguins hit the ball and the obstacles.
 
-You can play the game at: https://simmer.io/@EyalGolan/polarescapev4
+You can play the game [here](https://simmer.io/@EyalGolan/polarescapev4).
 
 Gameplay demo video:
 
