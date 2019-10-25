@@ -106,7 +106,6 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  font-size: 18px;
   background-color: {{ site.navbar-col }};
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -118,7 +117,7 @@ img {
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
