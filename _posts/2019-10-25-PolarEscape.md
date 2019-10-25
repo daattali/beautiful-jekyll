@@ -1,19 +1,16 @@
 ---
 layout: post
 title: PolarEscape
-subtitle: A game by Eyal Golan, Yuval Kasner and Assaf Molad.
-gh-repo: daattali/beautiful-jekyll
+subtitle: A basic 3D unity game
+gh-repo: https://github.com/eyalgolan/PolarEscapeBasic
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
 
-PolarEscpae is a race game in which penguins need to pass a ball through the finish line, while going through an obstacle course. The player that passes the ball through the finish line – wins.
-The game consists of a menu screen, how to play screen, 2 "regular levels", a special fire level, a credit screen and an end screen.
-In the “regular” levels, the ground and obstacles are made of ice, and in the fire level they are made of lava and fire. The first “regular” level is relatively easy, while the second level contains moving surfaces and a harder obstacle course.
-The game contains several types of bonuses, some have a positive effect, and some a negative one. For example, a bonus with a positive effect is the extra speed bonus. In the fire level, there is a bonus with a negative effect that throws the penguin back to the start of the obstacle course.
-The game contains and end screen which shows the player’s scores.
-The game also contains background music and sound effects when the penguins hit the ball and the obstacles.
+PolarEscape is a simple 2 player race game I've built.
+
+I've made this game as I was learning unity.
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
