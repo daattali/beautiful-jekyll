@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PolarEscape
+title: PolarEscapeBasic
 subtitle: A basic 3D unity game
 gh-repo: https://github.com/eyalgolan/PolarEscapeBasic
 gh-badge: [star, fork, follow]
