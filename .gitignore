@@ -7,5 +7,4 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
-/.vs/slnx.sqlite
-/.vs/rmsmath.github.io/config/applicationhost.config
+/.vs/*

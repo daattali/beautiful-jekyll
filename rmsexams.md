@@ -11,4 +11,4 @@ These are our past exams and answer keys.
 | 2019-2020 Benchmark      | October 25, 2019 | <a href="here">Exam</a> | <a href="here">Key</a>
 
 If you would like to use our content for exams at your organization, please
-contact us at <a href="mailto:mathcontests@rmsptsa.org">mailto:mathcontests@rmsptsa.org</a>.
+contact us at <a href="mailto:mathcontests@rmsptsa.org">mathcontests@rmsptsa.org</a>.
