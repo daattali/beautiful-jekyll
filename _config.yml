@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: My website
+title: Redmond Middle School Math Club
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Public information regarding the Redmond Middle School math club.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -60,7 +60,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: RMS Math Club
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
