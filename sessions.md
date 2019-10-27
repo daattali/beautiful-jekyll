@@ -9,7 +9,9 @@ every level of experience in order to foster an environment of skill development
 
 # Expectations
 Math club members are expected to regularly attend our weekly practice sessions on Fridays from 2:50-4:00 in Red Cedar pod.
-They are also expected to complete and bring their Math Club-assigned homework each week.
+They are also expected to complete and bring their Math Club-assigned homework each week. There are no special performance
+expectations beyond participation. We recognize that every student develops at their own pace and try to provide a
+positive and productive experience for everyone.
 
 # Varsity
 The Varsity room is for members of our Varsity group, which is an earn-in group formed within the math club.
