@@ -29,13 +29,13 @@ challenging competition problems. Please remind your student that homework compl
 attend the Club room, so they need to bring it with them each week.
 
 # Homework Room
-Those who did not complete the homework—or those who need help with the topic—will attend the Homework room.
-The focus of the Homework room is to help the students build a better foundation in that week’s topic so they
+Those who did not complete the homeworkâ€”or those who need help with the topicâ€”will attend the Homework room.
+The focus of the Homework room is to help the students build a better foundation in that weekâ€™s topic so they
 can feel more confident in tackling future homework assignments. The coach will work through each of the
 homework questions and cover additional enrichment as time permits.
 
 # Competitions & Teams
-All students are encouraged—but not required—to participate in all eligible competitions.
+All students are encouraged-but not required-to participate in all eligible competitions.
 Parents are responsible for forming teams, which may draw from both the Varsity and Club members.
 Signup spreadsheets will be provided to help parents in forming teams on a per-competition basis.
 
@@ -44,6 +44,6 @@ We are required to staff each room with a parent proctor for the duration of eac
 You will need to be physically in the room from 2:50-4:00 but will not be required to participate in 
 the class beyond keeping student respectful of their environment. After the session, you will need to 
 turn the lights off and lock the doors. Please add yourself to the signup sheet for primary and backup 
-proctor volunteers. It’s the responsibility of any given week’s primary to make sure the backup will 
-take their place if they can’t make it. You will also need to be an LWSD approved volunteer
+proctor volunteers. Itâ€™s the responsibility of any given weekâ€™s primary to make sure the backup will 
+take their place if they canâ€™t make it. You will also need to be an LWSD approved volunteer
 (https://www.lwsd.org/get-involved/volunteering-in-lwsd).
