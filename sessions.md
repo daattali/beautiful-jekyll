@@ -1,19 +1,22 @@
 ---
 layout: page
-title: Practice sessions
-subtitle: Weekly practice sessions at RMS
+title: Coaching sessions
+subtitle: Weekly coaching sessions at RMS
 ---
 
-RMS Math Club membership is available to all students at Redmond Middle School. We provide training for students at
-every level of experience in order to foster an environment of skill development.
+RMS Math Club membership is available to all students at Redmond Middle School. We provide coaching for students at
+every level of experience in order to foster an environment of skill development. Learn more about joining
+<a href="http://rmsptsa.org/Page/Programs/Math%20Club" target="_blank">here</a>.
 
 # Expectations
-Math club members are expected to regularly attend our weekly practice sessions on Fridays from 2:50-4:00 in Red Cedar pod.
+Math club members are expected to regularly attend our weekly coaching sessions on Fridays from 2:50-4:00 in Red Cedar pod.
 They are also expected to complete and bring their Math Club-assigned homework each week. There are no special performance
 expectations beyond participation. We recognize that every student develops at their own pace and try to provide a
 positive and productive experience for everyone.
 
-# Varsity
+Our coaching sessions are held across three rooms: Varsity, Club, and Homework.
+
+# Varsity Room
 The Varsity room is for members of our Varsity group, which is an earn-in group formed within the math club.
 Membership qualification is objective and based purely on performance in math competitions.
 The focus of this group is to provide in-depth training on advanced topics for the students who have proven 
@@ -36,7 +39,7 @@ challenging competition problems. Please remind your student that homework compl
 attend the Club room, so they need to bring it with them each week.
 
 # Homework Room
-Those who did not complete the homework—or those who need help with the topic—will attend the Homework room.
+Those who did not complete the homework-or those who need help with the topic-will attend the Homework room.
 The focus of the Homework room is to help the students build a better foundation in that week’s topic so they
 can feel more confident in tackling future homework assignments. The coach will work through each of the
 homework questions and cover additional enrichment as time permits.
@@ -52,5 +55,5 @@ You will need to be physically in the room from 2:50-4:00 but will not be requir
 the class beyond keeping student respectful of their environment. After the session, you will need to 
 turn the lights off and lock the doors. Please add yourself to the signup sheet for primary and backup 
 proctor volunteers. It’s the responsibility of any given week’s primary to make sure the backup will 
-take their place if they can’t make it. You will also need to be an LWSD approved volunteer
-(https://www.lwsd.org/get-involved/volunteering-in-lwsd).
+take their place if they can’t make it. You will also need to be an
+<a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a>.

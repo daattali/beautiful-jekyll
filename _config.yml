@@ -21,8 +21,9 @@ description: Public information regarding the Redmond Middle School math club.
 # List of links in the navigation bar
 navbar-links:
   Sessions: "sessions"
+  Schedule/Homework: "schedule"
   Competitions: "competitions"
-  RMS Exams: "rmsexams"
+  RMS Exams: "exams"
   Resources:
     - Art of Problem Solving: "https://artofproblemsolving.com/"
   
