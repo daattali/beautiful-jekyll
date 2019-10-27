@@ -4,7 +4,7 @@ title: Competitions
 subtitle: Our competition calendar
 ---
 
-| Competition  | Date           | Location  | Registration |
+| Date | Competition | Location  | Registration |
 | ------------- |:-------------:| -----:| ---:|
-| [RMS] 2019-2020 Benchmark  | October 25, 2019 | RMS Math Club | Open to members
+|October 25, 2019 |  RMS 2019-2020 Benchmark  | RMS Math Club | Open to RMSMC members
 
