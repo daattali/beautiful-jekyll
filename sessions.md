@@ -13,3 +13,11 @@ The focus of this group is to provide in-depth training on advanced topics for t
 results in middle school math competitions. Every sanctioned competition will provide an opportunity for any 
 student to earn their way into the group moving forward. Once in the group, weekly homework and attendance is
 mandatory, and those who do not participate are at risk of relegation. 
+
+## Varsity Qualifiers
+- Top 10 in the RMS Math Club Benchmark or Final exams
+- Honor Roll of Distinction (top 1%) of the AMC 8
+- Making the RMS Mathcounts team (top 10 in school round)
+- Making an RMS Math is Cool Masters team (top 4 from RMS grade in Math is Cool regional)
+- Individual placement (trophy-level) in sanctioned events like Math is Cool, Knights of Pi, or the Washington State Math Championships
+
