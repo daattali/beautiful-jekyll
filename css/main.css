@@ -230,14 +230,13 @@ img {
   border-width: 0 1px 1px 1px;
   font-weight: normal;
 }
-@media only screen and (max-width: 767px) {
-  .navbar-custom .nav .navlinks-container.show-children {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  .navbar-custom .nav .navlinks-container.show-children .navlinks-children {
-    display: block;
-  }
+.navbar-custom .nav .navlinks-container.show-children {
+  background: rgba(0, 0, 0, 0.2);
 }
+.navbar-custom .nav .navlinks-container.show-children .navlinks-children {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar-custom .nav .navlinks-container {
     text-align: center;
@@ -757,6 +756,8 @@ pre {
 .navbar-default button.navbar-toggle:focus,
 .navbar-default button.navbar-toggle:hover {
   background-color: initial;
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .navbar-default button.navbar-toggle[aria-expanded="true"] {
