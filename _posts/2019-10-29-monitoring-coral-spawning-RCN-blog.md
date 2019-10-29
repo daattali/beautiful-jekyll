@@ -12,17 +12,22 @@ Coral spawning generally occurs once a year in the warmest month and is timed wi
 
 ![Plating corals 40-50m deep at the FGBNMS. Image credit: GFOE/NOAA](../img/plating-corals-rcn-fig1.png)
 
-
+<sub>Figure 1. Plating corals 40-50 m deep at the FGBNMS. Image credit: GFOE/NOAA
+  
 On the night of the big predicted coral spawn, we launched ROV _Yogi_ 45m down and successfully documented spawning of _Montastraea cavernosa, Orbicella franksi,_ and _Orbicella faveolata_.  _M. cavernosa_ is a gonochoric species; male _M. cavernosa_ colonies release sperm prior to the females releasing their bundles of eggs, and scientists think that the presence of sperm serves as one of the signals for the females to spawn. _O. franksi_ and _O. faveolata_ are both hermaphroditic species, and each colony releases bundles containing both egg and sperm. Normally, when we are scuba diving during coral spawning, we have to be strategic in determining the timing of the dive to maximize how much coral spawning activity we can observe. With ROV _Yogi,_ we were able to document a more complete window of spawning. Following our first observation of _M. cavernosa_ male spawning, ROV _Yogi_ remained in the water, watching half an hour later when the first female spawned and still a couple of hours later as females continued to spawn. This sort of data collection would be impossible to achieve using recreational scuba diving. Based on ascent rates of gamete bundles from the ROV footage, we are hoping to determine how likely it is that gamete release is timed so that deeper water corals can mix and fertilize with gametes of shallower water corals. This information, along with any information we gain about differential thermal tolerance of deep and shallow water corals, will provide context about the deep refugia hypothesis, which is the theory that deep-water habitats may serve as a refuge under climate change.
 
 
 ![_Montastraea cavernosa_ eggs in the polyps on a female colony, soon to be released (left). Sperm  released from a male _M. cavernosa_ colony (right). Image credit: GFOE/NOAA]( ../img/mcavernosa-rcn-fig2.png)
+
+<sub>Figure 2. _Montastraea cavernosa_ eggs in the polyps on a female colony, soon to be released (left). Sperm released from a male _M.cavernosa_ colony (right). Image credit: GFOE/NOAA
 
 In addition to extending the time we were afforded underwater, ROV _Yogi_ and the GFOE engineers made it possible to take some unique samples during this cruise. By attaching a modified Erlenmeyer flask to the end of a suction arm on _Yogi,_ we were able to somewhat mimic the design of coral spawning tents that are traditionally used to collect gametes by research divers. _Yogi_ could hover over a spawning colony, and the buoyant egg-sperm bundles would collect in the flask and get transferred to a compartment in a rotating rosette. 
 
 A couple of days before spawning, we also used _Yogi_ to collect samples of adult corals from the deeper coral reef depths, which we brought on deck of the _R/V Manta_ to spawn. We collected eight colony fragments from separate _O. faveolata_ colonies. Coral samples were collected under a scientific permit issued by FGBNMS, and also under consultation with the National Marine Fisheries Service (NMFS), as this species is listed as threatened. Not all of the colonies brought back to the boat spawned, but the ones that did spawned at the same time as conspecific (same species) colonies previously documented at shallower depths. Not only did these individuals of the same coral species spawn according to a predicted narrow window of their shallower counterparts, but the collected fragments on the boat also spawned at the same time. Observing this incredible synchrony has to have been one of the most astounding experiences of my time in the marine sciences. 
 
 ![ROV _Yogi_ samples a plating coral. Image credit: GFOE/NOAA]( ../img/sampling-coral-rcn-fig3.png)
+
+<sub>Figure 3. ROV _Yogi_ samples a plating coral. Image credit: GFOE/NOAA
 
 Participating in this teleprescence cruise was an incredible opportunity to document and live stream coral spawning to the public in real time. It allowed us to showcase a natural phenomenon that makes coral reef ecosystems so unique in a time when the future of reefs looks very bleak. Excitement was high on the boat - we even had someone tweet at us “tune in now to hear some very giddy scientists!” Hopefully the information we gain from this trip, and from future spawning trips to the FGBNMS, will help us better understand how healthy reefs, like those of the FGBNMS, might serve as refugia to global change. 
 
