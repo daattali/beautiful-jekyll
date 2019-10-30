@@ -17,7 +17,7 @@ The game contains and end screen which shows the player’s scores.
 The game also contains background music and sound effects when the penguins hit the ball and the obstacles.
 
 
-You can play the game [here](https://simmer.io/@EyalGolan/polarescapev4).
+**You can play the game [here](https://simmer.io/@EyalGolan/polarescapev4) (The game is for PC).**
 
 
 Gameplay demo video:
