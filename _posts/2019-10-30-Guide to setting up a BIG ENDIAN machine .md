@@ -5,17 +5,18 @@ This is how:
 ```
 sudo mount -o loop /home/<your_user>/floppy /mnt/tmp
 ```
-&nbsp;&nbsp;&nbsp; then copy your files to ```/mnt/tmp```. 
+&nbsp;&nbsp;&nbsp;&nbsp; then copy your files to ```/mnt/tmp```. 
 
 3. In order to start the machine:
 ```
 qemu-system-mips64 -M malta -kernel vmlinux-2.6.32-5-5kc-malta -hda debian_squeeze_mips_standard.qcow2 -append "root=/dev/sda1 console=tty0" -drive file=/home/<your_user>/floppy,if=floppy,format=raw,index=0
 ```
-&nbsp;&nbsp;&nbsp; or (depends if you downloded squeeze or wheezy):
+&nbsp;&nbsp;&nbsp;&nbsp; or (depends if you downloded squeeze or wheezy):
 ```
 qemu-system-mips64 -M malta -kernel vmlinux-3.2.0-4-5kc-malta -hda debian_wheezy_mips_standard.qcow2 -append "root=/dev/sda1 console=tty0" -drive file=/home/<your_user>/floppy,if=floppy,format=raw,index=0
 ```
-&nbsp;&nbsp;&nbsp; The password of root is root.
+&nbsp;&nbsp;&nbsp;&nbsp; The password of root is root.
+
 4. Mount the floppy:
 ```
 modprobe floppy
