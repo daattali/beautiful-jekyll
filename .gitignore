@@ -7,3 +7,6 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+Gemfile
+Gemfile.lock
+.gitignore
