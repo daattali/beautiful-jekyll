@@ -1,6 +1,6 @@
 A while back I wrote a program that checks if the machine I'm running the program on is little or big endian. In order to check that the program recognizes a big endian machine, I needed to setup such a machine, and run my program on it.
 This is how:
-1. Go to [people.debian.org/~aurel32/qemu/mips/](https://people.debian.org/~aurel32/qemu/mips/), download **debian_squeeze_mips** or **debian_whezzy_mips** , and **vmlinux-3.2.0.4-5kc-malta** to your machine.
+1. Go to [https://people.debian.org/~aurel32/qemu/mips/](https://people.debian.org/~aurel32/qemu/mips/), download **debian_squeeze_mips** or **debian_whezzy_mips** , and **vmlinux-3.2.0.4-5kc-malta** to your machine.
 2. In order to copy your files to the big endian machine:
 ```
 sudo mount -o loop /home/<your_user>/floppy /mnt/tmp
