@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guide to setting up a BIG ENDIAN machine
+title: Guide to setting up a big endian machine
 tags: [Guide, Big endian, endianness, debian]
 comments: true
 ---
