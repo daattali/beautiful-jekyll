@@ -5,7 +5,8 @@ This is how:
 ```
 sudo mount -o loop /home/<your_user>/floppy /mnt/tmp
 ```
-then copy your files to ```/mnt/tmp```
+then copy your files to ```/mnt/tmp```.
+
 3. In order to start the machine:
 ```
 qemu-system-mips64 -M malta -kernel vmlinux-2.6.32-5-5kc-malta -hda debian_squeeze_mips_standard.qcow2 -append "root=/dev/sda1 console=tty0" -drive file=/home/<your_user>/floppy,if=floppy,format=raw,index=0
