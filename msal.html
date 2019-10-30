@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Authenticate an Office 365 user with ADAL JS</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<style>body{font:normal normal normal 14px/1.5em "Century Gothic", sans-serif;}</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://alcdn.msauth.net/lib/1.1.3/js/msal.js"></script>
+<script type="text/javascript">
+			$(document).ready(function() {
+				"use strict";
+				
+				// Assign variables
+ const msalConfig = {
+     auth: {
+       clientId: 'c4a602f1-be44-4916-ad57-27245eca17fd'
+     }
+   };
+
+   const msalInstance = new Msal.UserAgentApplication(msalConfig);
+
+   msalInstance.handleRedirectCallback((error, response) => {
+     // handle redirect response or error
+   });
+
+   var loginRequest = {
+     scopes: ["user.read"] // optional Array<string>
+   };
+   
+    $('#message').html("starting login....");
+
+   msalInstance.loginPopup(loginRequest)
+     .then(response => {
+       // handle response
+       $('#message').html("welcome " + response.idTokenClaims.preferred_username);
+     
+     })
+     .catch(err => {
+       // handle error
+       $('#message').html("error");
+     });
+     
+     			
+
+			
+				
+			});
+		</script>
+</head>
+<body>
+	<!-- MSAL.JS https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-core/README.md -->
+	<h1>
+	  Welcome to MSAL.JS demo
+	  <a href='https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types#single-page-apps-javascript'>Microsoft identity platform OAuth2 2.0 implicit flow diagram</a>
+	</h1>
+
+	<div id="message">
+	startup
+	</div>
+	
+	<p/>
+	<div>
+	<h2>Setup steps:</h2>
+	<ul>
+	<li>Add app registration</li>
+	<li> ensure the following is set in the manifest 	"oauth2AllowIdTokenImplicitFlow": true,
+	"oauth2AllowImplicitFlow": true,
+</li>
+	</div>
+</body>
+</html>
