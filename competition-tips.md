@@ -42,7 +42,7 @@ At the same time, understand that there are some reasonable limitations to what 
 needing to multiply two 10-digit numbers by hand, then consider that you may be missing something in the form of a more
 elegant solution. This comes up a lot with exponents and factorials, so expect fractions to have a lot of cancelling out.
  
-## 4) Know what you can bring to the competition and don’t forget it.
+## 4) Know what you can bring to the competition and don't forget it.
 Pretty much every competition requires that you bring pencils. Prefer mechanical pencils that do not need to be sharpened
 and bring a spare just in case.
 
