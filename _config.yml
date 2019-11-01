@@ -23,7 +23,7 @@ navbar-links:
   Sessions: "sessions"
   Schedule/Homework: "schedule"
   Competitions: "competitions"
-  Top 10: "competition-tips"
+  Top 10 Tips: "competition-tips"
   RMS Exams: "exams"
   Resources:
     - Art of Problem Solving: "https://artofproblemsolving.com/"
