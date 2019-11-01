@@ -11,10 +11,10 @@ description: A virtual proof that I'm awesome
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+-#url: "https://example.com"
 
 # baseurl should be an empty string
-#baseurl: ""
+-#baseurl: "https://github.com/Cupzaa/daattalitest.github.io.git"
 
 # --- Navigation bar options --- #
 
