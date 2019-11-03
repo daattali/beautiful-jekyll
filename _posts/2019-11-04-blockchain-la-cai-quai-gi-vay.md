@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Block chain là cái quái gì vậy
+title: Block chain là cái quái gì vậy ???
 author: [tony]
 categories: [technology]
 tags: [blockchain]
@@ -43,7 +43,7 @@ Hãy cùng suy nghĩ xem chuyện gì vừa xảy ra ? Cả bạn và Joe đều
 
 Và đó chính là vấn đề của các hệ thống đang tồn tại.
 
-> ***Để tạo dựng niềm tin giữa các cá nhân, chúng ta phải phụ thuộc vào một bên thứ ba***
+> Để tạo dựng niềm tin giữa các cá nhân, chúng ta phải phụ thuộc vào một bên thứ ba
 
 Trong nhiều năm qua, chúng ta đều phải phụ thuộc vào những bên trung gian để có thể tin tưởng lẫn nhau. ***Vậy, phụ thuộc vào họ thì có vấn đề gì ?***
 
