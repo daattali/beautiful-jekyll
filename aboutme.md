@@ -4,6 +4,7 @@ title: About me
 #subtitle: Why you'd want to go on a date with me
 ---
 
-### 이요한 개발자 
+### 
 
+## 웹개발자 이요한입니다. 
 
