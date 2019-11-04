@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yohan Blog</title>
+    <description>Yohan Dev Blog</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>게임회사 면접 질문정리</title>
+        <description>
+          면접질문을 정리한 글 - 
+          저번주 목요일에 지인소개로 강남에 직원수 40명정도 되는 게임회사에서 면접을 보러 갔었다. 준비안해도 어느정도 답할 수 있겠지~ 라는 생각으로 갔다가 완전 탈탈 털리고 지인한테 미안할 정도로 체면도 못 세우고 나왔다… 그날 면접보고나오면서 내가 개발에 대한 이론 지식이 한참 딸리고 우물안의 개구리였구나 라는 생각이 들었고 지금 본 면접질문을 블로그에 정리해서 또다른 면접기회가...
+        </description>
+        <pubDate>Tue, 29 Oct 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019-10-29-question/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-10-29-question/</guid>
+      </item>
+    
+  </channel>
+</rss>
