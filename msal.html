@@ -2,11 +2,11 @@
 <html>
 <head>
 
-<title>Authenticate an Office 365 user with ADAL JS</title>
+<title>Authenticate with MSAL.js</title>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <style>body{font:normal normal normal 14px/1.5em "Century Gothic", sans-serif;}</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://alcdn.msauth.net/lib/1.1.3/js/msal.js"></script>
+<script src="https://alcdn.msauth.net/lib/1.1.0/js/msal.js"></script>
 <script type="text/javascript">
 			$(document).ready(function() {
 				"use strict";
@@ -14,7 +14,21 @@
 				// Assign variables
  const msalConfig = {
      auth: {
-       clientId: 'c4a602f1-be44-4916-ad57-27245eca17fd'
+      //  clientId: 'c4a602f1-be44-4916-ad57-27245eca17fd',
+       clientId: '49d7da3f-5378-48f1-b78d-5cfd981784d5',      
+      authority: "https://login.microsoftonline.com/9e1c4e36-4f81-4b67-b7cd-ed19cb8c61b5/"
+      // ,
+      // "optionalClaims":  
+      // {
+      //   "idToken": [
+      //       {
+      //         "name": "extension_b88ed72f651948889656244039339c5f_stuExtensionAttriibute1",
+      //         "source": "user",
+      //         "essential": true,
+      //         "additionalProperties": []
+      //       }
+      //     ]
+      //   }
      }
    };
 
@@ -25,7 +39,12 @@
    });
 
    var loginRequest = {
-     scopes: ["user.read"] // optional Array<string>
+     scopes: [
+     //"openid", 
+     "profile", 
+     "User.Read", "User.Read.All"
+    ,"User.ReadBasic.All"], // optional Array<string>
+      prompt: 'select_account'
    };
    
     $('#message').html("starting login....");
@@ -34,10 +53,20 @@
      .then(response => {
        // handle response
        $('#message').html("welcome " + response.idTokenClaims.preferred_username);
-     
+       $('#claims').html("<a href='https://jwt.ms/#id_token=" +response.idToken.rawIdToken + "' target='_blank'>jwt.ms</a>");
+       console.log(response.idTokenClaims);
+
+
+    var $a = "";
+    //  $.each( response.idTokenClaims, function( key, value ) {
+    //   $a+=  key + ": " + value;
+    // });
+    // $('claims').html( $a );
+
      })
      .catch(err => {
        // handle error
+       console.log(err);
        $('#message').html("error");
      });
      
@@ -52,14 +81,21 @@
 	<!-- MSAL.JS https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-core/README.md -->
 	<h1>
 	  Welcome to MSAL.JS demo
-	  <a href='https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types#single-page-apps-javascript'>Microsoft identity platform OAuth2 2.0 implicit flow diagram</a>
-	</h1>
-
+  </h1>
+  <a href='https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types#single-page-apps-javascript'>Microsoft identity platform OAuth2 2.0 implicit flow diagram</a>
+  <br/>
+  <a href='https://aka.ms/aadv2'>msal.js getting started</a>
+  <br/>
+  <a href='https://github.com/Azure-Samples/active-directory-javascript-graphapi-v2'>Call Graph API from a JavaScript Single Page Application using msal.js</a>
+ 
+  <h2>
 	<div id="message">
 	startup
-	</div>
+  </div>
+</h2>
+  
+  <div id="claims"></div>
 	
-	<p/>
 	<div>
 	<h2>Setup steps:</h2>
 	<ul>
