@@ -4,8 +4,8 @@ title: Competitions
 subtitle: Our competition calendar
 ---
 
-| Date | Competition | Time & Location  | Registration |
-| ------------- |:-------------:| -----:| ---:|
+| Date | Competition | Time & Location | Registration |
+| ------------- |-------------| -----| ---|
 |October 25, 2019 | RMS Benchmark | RMS Red Cedar Pod 2:50-4:00 | Automatic for all math club members
 |November 12, 2019 | <a href="https://www.maa.org/math-competitions/amc-8" target="_blank">AMC 8</a> | RMS Red Cedar Pod 2:50-4:00 | <a href="mailto:mathcontests@rmsptsa.org">Email</a>
 |December 3, 2019 | RMS Mathcounts School | RMS Red Cedar Pod 2:50-4:00 | Automatic for all math club members
