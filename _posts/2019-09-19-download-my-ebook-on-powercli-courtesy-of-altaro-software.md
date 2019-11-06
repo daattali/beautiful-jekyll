@@ -19,4 +19,4 @@ I had the opportunity over the summer to write an ebook on the subject for [Alta
 * Using Get-Esxcli.
 * ...
 
-[Download the ebook here.](https://www.altaro.com/ebook/powercli.php?LP=sc-vmblog-Article-ebook-powercli&Cat=SC&utm_campaign=ebook-powercli&utm_medium=sc&utm_source=sc-vmblog&utm_content=article)
+[Download the ebook here.](https://www.altaro.com/ebook/powercli.php?LP=vxav-Web-listing-ebook-powercli&Cat=SC&utm_source=vxav&utm_medium=sc&utm_campaign=ebook-powercli&utm_content=web-listing)
