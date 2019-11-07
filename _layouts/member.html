@@ -16,7 +16,7 @@ layout: base
             <div class="panel panel-info" style="width:80%;">
                 {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
                 <div class="panel-body">
-                {{ news.content }}
+                    {{news.content | markdownify}}
                 </div>
                 <div class="panel-footer" style="text-align:right;">
                 <i>{{ news.date | date: '%B %d, %Y' }}</i>
