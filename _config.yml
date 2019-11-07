@@ -205,6 +205,8 @@ collections:
     output: false 
   news:
     output: false
+  positions:
+    output: false
 
 # prose.io config
 prose:
