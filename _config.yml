@@ -27,6 +27,7 @@ navbar-links:
   Research: "research"
   Publications: "publications"
   Lab Members: "lab_members"
+  Open Positions: "positions"
   Software:
     - CLARITE: "https://www.hall-lab.org/clarite-python/"
 
