@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 2020 Genomics Workshop
+title: 2020-2021 Junior Research Exchanges
 ---
 
 In 2020 we will be offering $500-$2000 stipends for 10-20 junior research exchanges.
