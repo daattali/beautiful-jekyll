@@ -14,15 +14,15 @@ While we also anticipate a few students may pursue further graduate studies in a
 our program is not geared towards preparing students for further graduate studies in statistics or computer science. 
 If your ultimate goal is to pursue a PhD in statistics or computer science, MDS is likely not the best fit for you.
 
-#### 2. Letter of Intent 
+#### 2. Personal Statement
 
-A strong Letter of Intent (LOI) should be...
+A strong personal statement should be...
 
-- **specific to you.** The LOI should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.
-- **specific to UBC MDS.** The LOI should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results.
-- **polished.** The LOI should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
+- **specific to you.** The personal statement should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.
+- **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results.
+- **polished.** The personal statement should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
 
-Part of the LOI can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
+Part of the personal statement can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
 
 #### 3. References
 
