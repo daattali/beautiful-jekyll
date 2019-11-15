@@ -13,6 +13,8 @@ You can see the app live here:
 
 [https://dash-heroku-cookie-cutter.herokuapp.com/](https://dash-heroku-cookie-cutter.herokuapp.com/)
 
+![img](https://imgur.com/uNeuIfZ.png)
+
 GitHub repo here:
 
 [https://github.com/SamEdwardes/dash-heroku-cookie-cutter](https://github.com/SamEdwardes/dash-heroku-cookie-cutter)
