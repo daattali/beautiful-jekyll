@@ -2,7 +2,6 @@
 layout: post
 title: How to Deploy a Containerized Python Dash App to Heroku
 tags: [data-science, python, dashboards, viz]
-bigimg: https://imgur.com/uNeuIfZ.png
 ---
 
 I love using Plotly to build interative visulizations. The syntax is very similar accross R and Python, and plots looks great.
