@@ -30,36 +30,3 @@ Instead, I had to go to the AWS EC2 console and to open the rules. On the left, 
  * Source: leave alone (should automatically have "0.0.0.0/0; ::/0")
 
 Save, and now you should be able to access your VPS with mosh. Good luck!
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
