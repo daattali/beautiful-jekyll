@@ -1,14 +1,43 @@
 ---
 layout: page
-title: 2020-2021 Junior Research Exchanges
+title: 2020-2021 Junior Professional Development Exchanges
 ---
 
-In 2020 we will be offering $500-$2000 stipends for 10-20 junior research exchanges.
+We invite advanced undergraduate students, graduate students, and postdoctoral researchers to apply for competitive research exchange awards ($500-$3000) aimed at expanding their area of expertise or professional network beyond their field of training. Proposed activities should fall under the themes of the RCN. For example, a student with a marine-focused research project may propose to visit a non-marine evolution lab. Conversely, a student studying evolutionary processes in a terrestrial system may propose to visit a marine lab. Applicants must be currently working at a US institution and the proposed exchange must take place in the US. Applicants need not be US citizens or permanent residents.
 
-Applications are open for advanced undergraduate students, graduate students, and postdoctoral researchers to propose research exchanges that will expand their area of expertise or professional network beyond their field of training, under the themes of the RCN. For example, a student with a marine-focused research project may propose to visit a non-marine evolution lab. Conversely, a student studying evolutionary processes in a terrestrial system may propose to visit a marine lab.
+Applicants can propose 1 week to 2 month visits (the $3000 is available only for a visit up to 2 months). The applicant can propose to give a seminar, learn a skill, and/or initiate a collaboration. We anticipate funding 10-20 exchanges, depending on the number of applicants and duration of proposed visits. Applicants should provide a budget and justification for the proposed research exchange with dollar amounts in the following categories: travel, lodging, food, materials and supplies. The applicant will need ensure that what they are requesting is below the maximum amount calculated on the [gsa.gov](gsa.gov) website (see application for specific instructions).
 
-Applicants can propose 1-2 week “networking visits.” They can propose to give a seminar, learn a skill, start a collaboration, or get critical feedback on research plan or results. (Need more specific info)
+If the application is approved, the applicant will receive a stipend for the amount approved (which may not equal the amount requested). The host laboratory is encouraged to provide assistance to applicants to secure appropriate housing.
 
-Applicants should provide a budget for their visit. If their application is approved, they will recieve a stipend for the amount requested.
+### Application
 
-[Link to Application]()
+[Link to Application](https://docs.google.com/forms/d/e/1FAIpQLSd0_Qwizvb6Y6GzlxT6Pxl0gUrBG3omT-Qc0QSw73WQItZ6zQ/viewform)
+
+The application consists of several questions about your participation in the RCN at the end of which you will be asked to upload a single combined document (filename Last_First.pdf) with your:
+
+* Curriculum Vitae
+* Description of your project (no more than one page)
+* Letter of support from the host labHost letter must include the following text: “I [host name] agree to undertake the tasks assigned to me and my organization, as described in the proposal of activities by [applicant name],and I commit to provide and make available the resources specified therein.”
+* Letter of support from your current PI/advisor 
+
+You will also need to provide a separate:
+
+* Budget and justification. List the requested amount and justification for the following categories: meals and incidentals, lodging, travel, and materials and supplies. Please ensure that the amount requested in each category is less than maximum allowable government rates (see instructions for "Budget calculations" below).
+
+Awards will be distributed to the successful applicant as a stipend based on their proposed budget. The research exchange must occur between March 2020 and March 2021.
+
+We understand that certain individuals may have special circumstances that may make it difficultfor them to travel (e.g. pregnancy, young children, disability). If you have special circumstances, please email us at evolvingseas@gmail.comto determine if there is another way you can apply for support for your professional development.
+
+#### Budget calculations
+
+Please see the application for the specific format for stipend requests.
+
+Applicants may request up to a $3000 stipend, split among the following categories: meals and incidentals, lodging, travel, and materials and supplies. Requests must be less than or equal to maximum allowable government rates (instructions for looking these up are described below). For each category, applicants may request a total amount that is less than or equal to the maximum allowable. You will need to enter specific rates in your application.
+
+* **Calculate the maximum allowable for lodging, meals and incidental expenses for the state you will be visiting.** Go to: https://www.gsa.gov/travel-resources. Enter the State and City you will be visiting. Select “Look up rates for Fiscal Year.” Choose the year you will be traveling. 
+
+* **If you will be flying, calculate total maximum allowable for airfare.** Go to https://cpsearch.fas.gsa.gov/cpsearch/search.do. Choose a departure and arrival city. Note that not all city pairs will produce estimates, please use the closetcity pairs for your calculation. Click on the price listed under “Govt YCA Fare.” Click on Round Trip
+
+* **If you will be driving, please request $0.58/mile**
+Instructions for mileage rates
+
