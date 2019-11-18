@@ -1,0 +1,39 @@
+failed
+sudo -u www-data php occ files:scan --all
+
+directories are all wrong because of snap install
+
+turns out, the correct command is nextcloud.occ
+
+sudo -u www-data nextcloud.occ files:scan --all
+
+/usr/bin/snap run nextcloud.occ files:scan --all
+
+```/etc/systemd/system/nextcloud.refresh-files.service 
+
+[Unit]
+Description=Nextcloud scan files https://docs.nextcloud.com/server/stable/admin_manual/configuration_server/background_jobs_configuration.html
+
+[Service]
+ExecStart=/usr/bin/snap run nextcloud.occ files:scan --all
+
+[Install]
+WantedBy=basic.target
+```
+
+```/etc/systemd/system/nextcloudcron.timer
+[Unit]
+Description=Run Nextcloud filescan every day
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1d
+Unit=nextcloud.refresh-files.service
+
+[Install]
+WantedBy=timers.target
+```
+
+systemctl daemon-reload
+systemctl enable --now nextcloud.refresh-files.service
+systemctl enable --now nextcloudcron.timer
