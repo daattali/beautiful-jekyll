@@ -7,7 +7,6 @@ tags: [microservice]
 comments: true
 ---
 
-# Microservice - những kiến thức căn bản
 Author: [@tunghust](https://github.com/tunghust)
 
 
