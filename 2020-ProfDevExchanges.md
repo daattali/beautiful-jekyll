@@ -35,7 +35,7 @@ We understand that certain individuals may have special circumstances that may m
 
 In the application, we ask that you report the maximum allowable government rates in addtion to your requested stipend amounts in the four categories (and in addition to the written justification). Please see the application for the specific format for stipend requests.
 
-Instructions for looking maximum allowable government rates (please ensure your stipend request does not exceed the maximum allowable):
+Instructions for looking up maximum allowable government rates (please ensure your stipend request does not exceed the maximum allowable):
 
 * **Calculate the maximum allowable for lodging, meals and incidental expenses for the state you will be visiting.** Go to: https://www.gsa.gov/travel-resources. Enter the State and City you will be visiting. Select “Look up rates for Fiscal Year.” Choose the year you will be traveling. 
 
