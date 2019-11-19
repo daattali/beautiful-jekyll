@@ -13,23 +13,20 @@ Awards will be distributed to the successful applicant as a stipend based on the
 
 We understand that certain individuals may have special circumstances that may make it difficultfor them to travel (e.g. pregnancy, young children, disability). If you have special circumstances, please email us at evolvingseas@gmail.com to determine if there is another way you can apply for support for your professional development.
 
+Interested in hosting? [Sign up here if you'd like to be a host](https://docs.google.com/spreadsheets/d/1e8PmMia5X9-IzGs9zvjSs2CX6kCz34aKZNhRUlGyLa8/edit#gid=0). (Hosts do not have to be chosen from this list)
+
 ### Application Deadline January 31, 2020
 
 [Link to Application](https://docs.google.com/forms/d/e/1FAIpQLSd0_Qwizvb6Y6GzlxT6Pxl0gUrBG3omT-Qc0QSw73WQItZ6zQ/viewform)
 
-Interested in hosting? [Sign up here if you'd like to be a host](https://docs.google.com/spreadsheets/d/1e8PmMia5X9-IzGs9zvjSs2CX6kCz34aKZNhRUlGyLa8/edit#gid=0). (Hosts do not have to be chosen from this list)
+In addtion to the application, please email a a single combined document (filename Last_First.pdf) to evolvingseas@gmail.com with the following:
 
-The application consists of several questions about your participation in the RCN at the end of which you will be asked to upload a single combined document (filename Last_First.pdf) with your:
-
-* **Curriculum Vitae**
 * **Description of your project** (no more than one page)
+* **Budget and Justification.** List the requested amount and describe the justification for the following categories: meals and incidentals, lodging, travel, and materials and supplies. The maximum should not exceed $3000. Please ensure that the amount requested in each category is less than maximum allowable government rates (see instructions for "Budget calculations" below).
 * **Letter of support from the host lab.**
   * Host letter must include the following text: “I [host name] agree to undertake the tasks assigned to me and my organization, as described in the proposal of activities by [applicant name],and I commit to provide and make available the resources specified therein.”
 * **Letter of support from your current PI/advisor**
-
-You will also need to provide a separate:
-
-* **Budget and Justification.** List the requested amount and describe the justification for the following categories: meals and incidentals, lodging, travel, and materials and supplies. The maximum should not exceed $3000. Please ensure that the amount requested in each category is less than maximum allowable government rates (see instructions for "Budget calculations" below).
+* **Curriculum Vitae**
 
 
 #### Budget calculations
