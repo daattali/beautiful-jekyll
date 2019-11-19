@@ -9,7 +9,11 @@ Applicants can propose 1 week to 2 month visits (the $3000 is only available for
 
 If the application is approved, the applicant will receive a stipend for the amount approved (which may not equal the amount requested). The host laboratory is encouraged to provide assistance to applicants to secure appropriate housing.
 
-### Application Deadline January 31, 2021
+Awards will be distributed to the successful applicant as a stipend based on their proposed budget. The research exchange must occur between March 2020 and March 2021.
+
+We understand that certain individuals may have special circumstances that may make it difficultfor them to travel (e.g. pregnancy, young children, disability). If you have special circumstances, please email us at evolvingseas@gmail.com to determine if there is another way you can apply for support for your professional development.
+
+### Application Deadline January 31, 2020
 
 [Link to Application](https://docs.google.com/forms/d/e/1FAIpQLSd0_Qwizvb6Y6GzlxT6Pxl0gUrBG3omT-Qc0QSw73WQItZ6zQ/viewform)
 
@@ -27,9 +31,6 @@ You will also need to provide a separate:
 
 * **Budget and Justification.** List the requested amount and describe the justification for the following categories: meals and incidentals, lodging, travel, and materials and supplies. The maximum should not exceed $3000. Please ensure that the amount requested in each category is less than maximum allowable government rates (see instructions for "Budget calculations" below).
 
-Awards will be distributed to the successful applicant as a stipend based on their proposed budget. The research exchange must occur between March 2020 and March 2021.
-
-We understand that certain individuals may have special circumstances that may make it difficultfor them to travel (e.g. pregnancy, young children, disability). If you have special circumstances, please email us at evolvingseas@gmail.com to determine if there is another way you can apply for support for your professional development.
 
 #### Budget calculations
 
