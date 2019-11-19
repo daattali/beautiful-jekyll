@@ -17,11 +17,11 @@ Interested in hosting? [Sign up here if you'd like to be a host](https://docs.go
 
 The application consists of several questions about your participation in the RCN at the end of which you will be asked to upload a single combined document (filename Last_First.pdf) with your:
 
-* Curriculum Vitae
-* Description of your project (no more than one page)
-* Letter of support from the host lab. 
+* **Curriculum Vitae**
+* **Description of your project** (no more than one page)
+* **Letter of support from the host lab.**
   * Host letter must include the following text: “I [host name] agree to undertake the tasks assigned to me and my organization, as described in the proposal of activities by [applicant name],and I commit to provide and make available the resources specified therein.”
-* Letter of support from your current PI/advisor 
+* **Letter of support from your current PI/advisor**
 
 You will also need to provide a separate:
 
