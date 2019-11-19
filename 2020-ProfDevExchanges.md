@@ -9,7 +9,7 @@ Applicants can propose 1 week to 2 month visits (the $3000 is only available for
 
 If the application is approved, the applicant will receive a stipend for the amount approved (which may not equal the amount requested). The host laboratory is encouraged to provide assistance to applicants to secure appropriate housing.
 
-### Application
+### Application Deadline January 31, 2021
 
 [Link to Application](https://docs.google.com/forms/d/e/1FAIpQLSd0_Qwizvb6Y6GzlxT6Pxl0gUrBG3omT-Qc0QSw73WQItZ6zQ/viewform)
 
