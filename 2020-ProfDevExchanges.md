@@ -13,6 +13,8 @@ If the application is approved, the applicant will receive a stipend for the amo
 
 [Link to Application](https://docs.google.com/forms/d/e/1FAIpQLSd0_Qwizvb6Y6GzlxT6Pxl0gUrBG3omT-Qc0QSw73WQItZ6zQ/viewform)
 
+Interested in hosting? [Sign up here if you'd like to be a host](https://docs.google.com/spreadsheets/d/1e8PmMia5X9-IzGs9zvjSs2CX6kCz34aKZNhRUlGyLa8/edit#gid=0). (Hosts do not have to be chosen from this list)
+
 The application consists of several questions about your participation in the RCN at the end of which you will be asked to upload a single combined document (filename Last_First.pdf) with your:
 
 * Curriculum Vitae
