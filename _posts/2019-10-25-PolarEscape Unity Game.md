@@ -4,7 +4,7 @@ title: PolarEscape Unity Game
 subtitle: A race game by Eyal Golan, Yuval kasner and Assaf Molad
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
-tags: [unity]
+tags: [Unity, C#]
 comments: true
 ---
 
