@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AR Tank Game
-subtitle: an AR two player shooting game by Eyal Golanand Yuval Kasner.
+subtitle: an AR two player shooting game by Eyal Golan and Yuval Kasner.
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
 tags: [Unity, Vuforia, C#, AR]
@@ -25,4 +25,4 @@ In order to shoot, press the fire toggle.
 Gameplay demo video:
 
 
-[![](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/Screenshot_20191111-215148_ARTankGame.jpg?raw=true)](https://www.youtube.com/watch?v=M1CzciP6dNo "ARTankGame")
+[![](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/Screenshot_20191111-215148_ARTankGame.jpg?raw=true = 250x250)](https://www.youtube.com/watch?v=M1CzciP6dNo "ARTankGame")
