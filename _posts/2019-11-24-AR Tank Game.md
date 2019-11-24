@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AR Thank Game
+title: AR Tank Game
 subtitle: an AR two player shooting game by Eyal Golanand Yuval Kasner.
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
@@ -25,4 +25,4 @@ In order to shoot, press the fire toggle.
 Gameplay demo video:
 
 
-[![](http://img.youtube.com/vi/KSnQ8MmZt7g/0.jpg)](https://www.youtube.com/watch?v=M1CzciP6dNo "ARTankGame")
+[![](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/Screenshot_20191111-215148_ARTankGame.jpg?raw=true)](https://www.youtube.com/watch?v=M1CzciP6dNo "ARTankGame")
