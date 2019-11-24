@@ -23,4 +23,4 @@ The game also contains background music and sound effects when the penguins hit 
 Gameplay demo video:
 
 
-[![70%](http://img.youtube.com/vi/KSnQ8MmZt7g/0.jpg)](http://www.youtube.com/watch?v=KSnQ8MmZt7g "PolarEscape Unity Game")
+[![](http://img.youtube.com/vi/KSnQ8MmZt7g/0.jpg)](http://www.youtube.com/watch?v=KSnQ8MmZt7g "PolarEscape Unity Game")
