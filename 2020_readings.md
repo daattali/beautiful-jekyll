@@ -160,7 +160,7 @@ Evatt Chirgwin, Dustin Marshall, Carla Sgrò, & Keyne Monro
 
 Jennifer Donelson, Santiago Salinas, Philip Munday, Lisa Shama
 
-## Week 6 (April 17, 2020):
+## Week 6 (April 17):
 
 ### Topic: Synthesis
 
