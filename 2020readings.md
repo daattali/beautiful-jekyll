@@ -1,300 +1,204 @@
 ---
 layout: page
-title: 2018-2019 Coordinated readings
-subtitle: To help educate evolutionary biologists about the kinds of questions that marine scientists care about and to help educate marine scientists about the kinds of questions that evolutionary biologists care about, we have developed a recommended reading list of classic papers in both fields.
+title: 2020 Coordinated readings
+subtitle: To help educate evolutionary biologists about the kinds of questions that marine scientists care about and to help educate marine scientists about the kinds of questions that evolutionary biologists care about, we have developed a recommended reading list of papers about phenotypic plasticity.
 ---
 
-To facilitate broad discussions about literature among members of the RCN, we have set up Slack channel at [evolvingseas.slack.com](evolvingseas.slack.com). To join the channel please [visit this site](https://join.slack.com/t/evolvingseas/shared_invite/enQtNTI4MjcwMjg5NTM5LWFiMGM0OTczMzllODg3NGQxYzBlNTA4NTE2OWI5ZWEwNjU3MTQ2ZTk3OWYxMjA5NzQxMmQwNTVmZDE1ZGE0NDc). The steering committee has developed a reading list for Winter/Spring 2019, with a schedule for discussions every two weeks and questions for discussion. We encourage you to discuss the papers with other participants prior to joining the larger discussion on slack. For each topic, your group should choose one person to post a summary to the Slack channel that summarizes the group’s reaction to the papers and discussion questions. 
+To facilitate discussions aamong members of the RCN, we have set up Slack channel at [evolvingseas.slack.com](evolvingseas.slack.com). To join the channel please [visit this site](https://join.slack.com/t/evolvingseas/shared_invite/enQtNTI4MjcwMjg5NTM5LWFiMGM0OTczMzllODg3NGQxYzBlNTA4NTE2OWI5ZWEwNjU3MTQ2ZTk3OWYxMjA5NzQxMmQwNTVmZDE1ZGE0NDc). The steering committee has developed a reading list for Spring 2020, with a schedule for discussions every two weeks. We encourage you to discuss the papers with other participants prior to joining the larger discussion on slack. For each topic, your group should choose one person to post a summary to the Slack channel that summarizes the group’s reaction to the papers and discussion questions. We have made efforts to improve representation and diversity in our selected readings. Please scroll to the bottom of this page for a diversity summary.
 
-Some suggestions to forming a discussion group 1) Start a group at your home institution and meet once or twice during each two-week period (any time during the two weeks is fine) to read and discuss the papers, 2) Find colleagues on the RCN list (linked here) and discuss with them virtually before joining the larger discussion, or 3) If a participant has trouble finding enough critical mass to form a group, that participant can read the papers and discuss them with the community on Slack. 
+To form a discussion group 1) Start a group at your home institution and meet once or twice during each two-week period (any time during the two weeks is fine) to read and discuss the papers, 2) Discuss papers virtually before joining the larger discussion via the #Virtual_Discussion group on the RCN slack. 
 
-All participants can also use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups.
+All participants can use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups. Additionally, this year we will have a weekly thread dedicated to resolving questions that emerge from the readings. Moderators will monitor threads and respond to questions. We encourage individuals or groups to use these threads to clarify any uncertainties. 
 
-#### We encourage all participants who would like to attend one of our workshops in the next three years (Synthesis, Genomics, or Training/Integration) to participate in the discussions on the Slack channel.
+## New Theme and Format
+For our second set of coordinated readings, we focus on phenotypic plasticity. Phenotypic plasticity is the ability of single genotypes to express different phenotypes in different environments. Plasticity has the potential to promote adaptation, constrain adaptation, or be the adaptive response itself, so it plays an important role in adaptation to changing environments. 
 
-## Theme and rationale
-For our first set of coordinated readings, we decided to focus the scale of spatial and temporal variability in the ocean, with a focus on how this variability may influence evolutionary processes. We are interested in having discussions about how adaptive change in populations may be structured in space in time, particularly in the case when gene flow is stronger than selection. Some of the readings were also designed to spark discussions about what constitutes evidence for adaptation and how we should design studies to detect adaptation. Keep in mind there are many themes that we hope to discuss in the future (e.g., evolutionary rescue, eco-evo dynamics and evolution in a community context, plasticity and epigenetics, evolutionary perspectives on conservation biology) if this first set of coordinated readings is successful.
+A central goal of the RCN-ECS is to synthesize and integrate ideas about evolution in changing seas. This year, rather than posting questions unique to each week's theme, we have two overarching questions to serve as guideposts for weekly discussions. We will devote the final week for groups to gather, synthesize previous discussions, and provide answers to the two questions. We encourage groups to generate bold and testable predictions and to distance themselves from simply summarizing past discussions. 
+
+## Discussion Questions: 
+
+**1. Under what conditions do we expect plasticity to evolve, and in what traits? When will plasticity be adaptive, nonadaptive (neutral), or maladaptive?**
+
+**2. What are the conditions (organismal traits, genomic, theoretical, etc) in which plasticity promotes/constrains adaptation?**
+
 
 ## Note that the date posted for each week below is the date we expect the discussion to be completed and summaries posted to the Slack channel.
 
-## Week 1 (Deadline for discussion January 19)
+## Week 1 (Deadline for discussion February 7)
 
-### Topic - Spatial and temporal scale of environmental variation
+### Topic - Definitions of plasticity
 
 **Rationale:**
-
-The ocean is structured in space and time. There is benthic structure and pelagic structure. While benthic structure is similar to structure in terrestrial systems, there are only weak terrestrial parallels to pelagic structure which is critical to both habitat pattern and dispersal in the ocean. This week we want the RCN to think about how the scales of environmental variabilty is reflected in evolution of marine populations.
+There are myriad forms that phenotypic plasticity can take with many different terms to describe these patterns. These papers will help the RCN establish shared language and examine the utility and origins of these definitions. 
 
 **Paper 1:**  (Paper and Link)
 
-[Comparison of marine and terrestrial ecosystems: suggestions of an evolutionary perspective influenced by environmental variation](https://academic.oup.com/icesjms/advance-article/doi/10.1093/icesjms/fsy149/5161207)
+[Evolution of phenotypic plasticity: patterns of plasticity and the emergence of ecotypes](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/j.1469-8137.2005.01322.x%4010.1002/%28ISSN%291469-8137%28CAT%29SpecialIssues%28VI%29Plantecologicaldevelopment)
 
-John H Steele, Kenneth H Brink & Beth E Scott
+Gerdien De Jong
 
 **Paper 2:** 
 
-[Microgeographic adaptation and the spatial scale of evolution](https://www.sciencedirect.com/science/article/pii/S0169534714000159)
+[Phenotypic plasticity, global change, and the speed of adaptive evolution](https://hal.archives-ouvertes.fr/hal-02269780/file/COIS%20%20submitted%20version.pdf)
 
-Jonathan L. Richardson, Mark C. Urban, Daniel I. Bolnick & David K. Skelly
+Patricia Gibert, Vincent Debat, Cameron Ghalambor
+
 
 **Optional Background Paper:**
 
-[Why Life Histories Evolve Differently in the Sea](https://academic.oup.com/icb/article/30/1/197/133967)
+[Genotype-environment interaction and the evolution of phenotypic plasticity](https://www.jstor.org/stable/2408649?seq=1#metadata_info_tab_contents)
 
-Richard R. Strathmann
+Sara Via and Russell Lande
 
-**Discussion Questions:**
 
-1. Are marine systems less or more variable environments than terrestrial systems and how does this vary across scales? 
+## Week 2 (February 21):
 
-2. How can we link the scale of environmental variability to microgeographic adaptation in the ocean? Could other mechanisms be at play?
-
-## Week 2 (February 2):
-
-### Topic - Local adaptation (Conceptual)
+### Topic - Fluctuating Environment
 
 **Rationale:**
 
-This week we want the RCN to think about different ways we define local adaptation and come to a consensus on a definition of local adaptation that we should use as we move forward with the discussions and in the RCN.
+Fluctuating environments favor the evolution of phenotypic plasticity. Is this always true?  
 
 **Paper 1:**  (Paper and Link)
 
-[Conceptual issues in local adaptation](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1461-0248.2004.00684.x)
+[Environmental stability affects phenotypic evolution in a globally distributed marine picoplankton](https://www.nature.com/articles/ismej2015102)
 
-Tadeusz J. Kawecki & Dieter Ebert
-
-**Paper 2:** 
-
-[A practical guide to measuring local adaptation](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.12150)
-
-François Blanquart, Oliver Kaltz, Scott L. Nuismer & Sylvain Gandon
-
-
-**Discussion Questions:**
-
-1. What are the implications for how we individually define local adaptation on how we study it and what we think about the processes that drive it?
-
-2. What definition of local adaption should we (the RCN-ECS network) should use?
-
-
-## Week 3 (February 16):
-
-### Topic: Local adaptation - Case Studies 
-
-**Rationale:**
-
-Many consider reciprocal transplant to be the gold standard for demonstrating local adaptation, but recently genomic data collected from different populations has been used to argue for local adaptation. This week we want the RCN to compare and contrast different approaches toward measuring local adaptation.
-
-**Paper 1:**  (Paper and Link)
-
-[Local adaptation along a continuous coastline: prey recruitment drives differentiation in a predatory snail](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/09-0536.1)
-
-Eric Sanford & David J. Worth
+Elisa Schaum, Björn Rost, Sinéad Collins
 
 **Paper 2:** 
 
-[Genomic differentiation between temperate and tropical Australian populations of Drosophila melanogaster](http://www.genetics.org/content/187/1/245)
+[Keeping your options open: Maintenance of thermal plasticity during adaptation to a stable environment](https://onlinelibrary.wiley.com/doi/pdf/10.1111/evo.12828?casa_token=lnS3wUJK0jcAAAAA:nndnQhYIFnAQh8DTiFGO9s_Dqdp2D4h6qIIh0Ft6oSUlZcueWLvmfJk3Alu3PTTzSerJg99qOPDRndxR)
 
-Bryan Kolaczkowski, Andrew D. Kern, Alisha K. Holloway & David J. Begun
+Inês Fragata, Miguel Lopes-Cunha, Margarida Bárbaro, Bárbara Kellen, Margarida Lima, Gonçalo Faria, Sofia Seabra, Mauro Santos, Pedro Simões, Margarida Matos
 
 **Optional Background Paper:**
 
-**Discussion Questions:**
+[The genetics of phenotypic plasticity. X. Variation versus
+uncertainty](https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.217)
 
-1. When does landscape genomic data present good evidence of local adaptation (without experiments)?
+Samuel Scheiner and Bob Holt
 
-2. How do the different research approaches (experimental vs. genomic) give different insights?
+## Week 3 (March 6):
 
-3. How are the processes that drive local adaptation in the snail differ from the fly? How are they similar?
-
-## Week 4 (March 2):
-
-### Topic: Evolution of genomic architecture
+### Topic: Costs and benefits of plasticity
 
 **Rationale:**
 
-Many marine species are characterized by high levels of gene flow. Traditional population genetic theory predicts that local adaptation will only occur when the strength of selection is greater than migration (gene flow). This week we want the RCN to consider different ways that local adaptation may evolve when the strength of selection is less than migration (gene flow) and the kinds of genomic architectures that evolve in this case.
+Plasticity is associate with tradeoffs. This week we want the RCN to discuss how these tradeoffs affect the development and evolution of phenotypic plasticity.
 
 **Paper 1:**  (Paper and Link)
 
-[Chromosome Inversions, Local Adaptation and Speciation](http://www.genetics.org/content/173/1/419.short)
+[Modeling the interplay between plastic tradeoffs and evolution in changing environments](https://www.biorxiv.org/content/10.1101/711531v1.full)
 
-Mark Kirkpatrick & Nick Barton
+Mikhail Tikhonov, Shamit Kachru, and Daniel S. Fisher
 
 **Paper 2:** 
 
-[Local Adaptation by Alleles of Small Effect](https://www.journals.uchicago.edu/doi/abs/10.1086/682405)
+[Constraints on the evolution of phenotypic plasticity: limits and costs of phenotype and plasticity](https://www.nature.com/articles/hdy20158)
 
-Sam Yeaman
+Courtney Murren, Josh Auld, H. Callahan, Cameron Ghalambor, Corey Handelsman, Mary Heskel, Joel Kingsolver, Heidi MacLean, Joanna Masel, Heather Maughan, David Pfennig, Rick Relyea, S. Seiter, Emily Snell-Rood, Ulrich Karl Steiner, Carl Schlichting
 
 **Optional Background Paper:**
 
-[The genetic theory of adaptation: a brief history](https://www.nature.com/articles/nrg1523)
+[Costs and limits of phenotypic plasticity](https://www.researchgate.net/publication/222246681_DeWitt_TJ_Sih_A_Wilson_DS_Costs_and_limits_of_phenotypic_plasticity_Trends_Evol_Ecol_13_77-81)
 
-H. Allen Orr
+Thomas Dewitt, Andrew Sih, David Sloan Wilson
 
-**Discussion Questions:**
+## Week 4 (March 20):
 
-1. What kind of genomic architectures to expect to evolve under high gene flow?
-
-2. How does genomic architecture constrain adaptation?
-
-3. What are the implications of different genomic architectures for our ability to study adaptation using genomic data?
-
-## Week 5 (March 16):
-
-### Topic: Dispersal
+### Topic: Genomic architecture of plasticity
 
 **Rationale:**
 
-Many marine species have a bipartite life cycle with a pelagic phase as larvae dispersed by currents, and a benthic stage as adults. This week, we want the RCN to think about how dispersal is a key driver of marine population dynamics, and the consequences of dispersal and life history on evolutionary dynamics.
+Plasticity is a heritable trait and thus can evolve. This week we want the RCN to think about the various ways that genomic architecture can affect the evolution of phenotypic plasticity. 
 
 **Paper 1:**  (Paper and Link)
 
-[Going against the flow: maintenance of alongshore variation in allele frequency in a coastal ocean](https://www.int-res.com/abstracts/meps/v335/p69-84/)
+[Constraints, independence, and evolution of thermal plasticity: Probing genetic architecture of long- and short-term thermal acclimation](https://www.pnas.org/content/112/14/4399)
 
-James M. Pringle & John P. Wares
+Alison Gerken, Olivia Eller, Daniel Hahn, & Theodore Morgan
 
 **Paper 2:** 
 
-[A Latitudal Gradient in Recruitment of Intertidal Invertebrates in NE Pacific Ocean](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/0012-9658(2001)082%5B1799:ALGIRO%5D2.0.CO%3B2)
+[Ecological Genetic Conflict: Genetic Architecture Can Shift the Balance between Local Adaptation and Plasticity](https://www.journals.uchicago.edu/doi/10.1086/700719)
 
-Sean R. Connolly, Bruce A. Menge & Joan Roughgarden
+Olof Leimar, Sasha Dall, John McNamara, Bram Kuijper, Peter Hammerstein
 
 **Optional Background Paper:**
 
-[Ecological and Evolutionary Consequences of Linked Life-History Stages in the Sea](https://www.sciencedirect.com/science/article/pii/S0960982211008980)
+[Determining the evolutionary forces shaping G × E](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15103)
 
-Dustin J.Marshall & Steven G.Morgan
+Emily Josephs
 
-**Discussion Questions:**
+## Week 5 (April 3):
 
-1. How might pelagic life histories with asymmetrical dispersal, coupled with genetic correlations between larvae and adult traits, constrain or promote adaptation?
-
-2. When and where do we expect population genetic structure to be generated and/or maintained?
-
-## Week 6 (March 30):
-
-### Topic: Population genetics
+### Topic: Transgenerational Plasticity
 
 **Rationale:**
 
-Consequences of dispersal via ocean currents are potentially high variance in reproductive success and a combination of continuous and discrete genetic structure. This week we want the RCN to think about how dispersal via ocean currents may affect how we model evolutionary processes (like the coalescent), and potentially come to a consensus on how we should describe genetic structure.
+The environment experienced by parents can influence plasticity observed in offspring. This week we want groups to discuss how transgenerational processes affect the evolution of phenotypic plasticity.
 
 **Paper 1:**  (Paper and Link)
 
-[Coalescent Processes when the Distribution of Offspring Number among Individuals is Highly Skewed](http://www.genetics.org/content/genetics/early/2006/02/01/genetics.105.052175.full.pdf)
+[Transgenerational Plasticity in Human-Altered Environments](https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(19)30277-0)
 
-Bjarki Eldon & John Wakeley
+Sarah Donelan, Jennifer Hellmann, Alison Bell, Barney Luttbeg, John Orrock, Michael Sheriff, & Andrew Sih
 
-**Paper 2:** 
+**Choose one of the following:** 
 
-[Inferring Continuous and Discrete Population Genetic Structure Across Space](http://www.genetics.org/content/210/1/33)
+[Personal and transgenerational cues are nonadditive at the phenotypic and molecular level](https://www.nature.com/articles/s41559-018-0605-4.epdf?author_access_token=-_yN0ZzXUKpyHk8cA4zdndRgN0jAjWel9jnR3ZoTv0P_0d4LmMVISXZcfOe8WAluWraXmrCnW6hyz2-UjeKa-5egwjdV9flMOTE5vAOqDYEpTmqwAFxIOoOJ7Z2TzlmbvwIklu4VzDd44OX0rsfxXQ%3D%3D)
 
-Gideon S. Bradburd, Graham M. Coop & Peter L. Ralph
+Laura Stein, Syed Abbas Bukhari, Alison Bell
+
+[How does parental environment influence the potential for adaptation to global change?](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2018.1374)
+
+Evatt Chirgwin, Dustin Marshall, Carla Sgrò, & Keyne Monro
 
 **Optional Background Paper:**
 
-[Gene genealogies and the coalescent process](http://web.eve.ucdavis.edu/pbg298/pdfs/Hudson_OxfordSurveysEvolBiol_1991.pdf)
+[Transgenerational plasticity and climate change experiments: Where do we go from here?](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.13903)
 
-Richard R. Hudson
+Jennifer Donelson, Santiago Salinas, Philip Munday, Lisa Shama
 
-**Discussion Questions:**
+## Week 6 (April 17, 2020):
 
-1. What are the implications for sweepstakes reproduction on how we model evolutionary processes in the ocean?
-
-2. Given the complexity of marine dispersal dynamics, do you think that we as a field should adopt the Bradburd et al approach for characterizing population structure?
-
-3. Given the potential for high variance in reproductive success, overlapping generations, and a combination of continuous and discrete population structure, how should we sample for population studies (across space and across cohorts)?
-
-## Week 7 (April 13):
-
-### Topic: Genetic Load
+### Topic: Synthesis
 
 **Rationale:**
 
-Genetic load occurs when the fitness of a genotype in its environment is less than the theoretically optimum genotype. This week we want the RCN to consider different ways that oceanographic processes may create genetic load and how this relates to the scales of environmental heterogeneity.
+Please use this week to synthesize your group's discussions from the past five readings and preparing answers to the two overarching questions. Again, we encourage groups to consider the discussions from the perspective of future research and provide answers in the form of testable predictions. 
 
-**Paper 1:**  (Paper and Link)
+In addition, groups may consider where do we go from here? Where is consensus? What areas are ripe for research? 
 
-[Local Adaptation Interacts with Expansion Load during Range Expansion: Maladaptation Reduces Expansion Load](https://www.journals.uchicago.edu/doi/abs/10.1086/690673)
+**Optional Background Paper**  (Paper and Link)
 
-Kimberly J. Gilbert, Nathaniel P. Sharp, Amy L. Angert, Gina L. Conte, Jeremy A. Draghi, Frédéric Guillaume, Anna L. Hargreaves, Remi Matthey-Doret, & Michael C. Whitlock
+[Key Questions on the Role of Phenotypic Plasticity in Eco-Evolutionary Dynamics](https://academic.oup.com/jhered/article/107/1/25/2622828)
 
-**Paper 2:** 
+Andrew Hendry
 
-[Phenotype-environment mismatches reduce connectivity in the sea](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1461-0248.2009.01408.x)
+## Diversity Summary ##
 
-D. J. Marshall, K. Monro, M. Bode, M. J. Keough & S. Swearer
-
-**Optional Background Paper:**
-
-[Mutation Load: The Fitness of Individuals in Populations Where Deleterious Alleles Are Abundant](https://www.annualreviews.org/doi/abs/10.1146/annurev-ecolsys-110411-160257?casa_token=X7_3UbK-3I0AAAAA%3AHeeaPgLct7p1IimLQ7Vejvq5sdFhTYRAlBNhbRpqlyinuFI3RxDbsMx2MZ4oZQdud-WwriXmgPud1A)
-
-Aneil F. Agrawal & Michael C. Whitlock
-
-**Discussion Questions:**
-
-1. What's the relationship between phenotype-environment mismatches and genetic load?
-
-2. How does dispersal scale and the scale of environmental heterogeneity contribute to genetic load?
-
-## Week 8 (April 27):
-
-### Topic: Balancing selection
-
-**Rationale:**
-
-Balancing selection occurs when polymorphism is maintained in a metapopulation by selection. This week we want the RCN to consider empirical and theoretical arguments for how environmental fluctuations in time can maintain polymorphism in populations.
-
-**Paper 1:**  (Paper and Link)
-
-[Genomic Evidence of Rapid and Stable Adaptive Oscillations over Seasonal Time Scales in Drosophila](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004775)
-
-Alan O. Bergland, Emily L. Behrman, Katherine R. O'Brien, Paul S. Schmidt & Dmitri A. Petrov
-
-**Paper 2:** 
-
-[Seasonally fluctuating selection can maintain polymorphism at many loci via segregation lift](https://www.pnas.org/content/114/46/E9932.short)
-
-Meike J. Wittmann, Alan O. Bergland, Marcus W. Feldman, Paul S. Schmidt & Dmitri A. Petrov
+| Paper | Female Author? | Non-US Researcher | Biome | Paper Type |
+|---|---|---|---|---|
+|DeJong 2005 | | X | | Theory |
+|Gibert et al. 2019 | First author | X |terrestrial| Review |
+|Via and Lande 1985| First author | | | Theory |
+|Schaum et al. 2016 | First and last author | X | Marine | Empirical |
+|Fragata et al. 2015 | First author | X | Terrestrial | Empirical |
+|Scheiner and Holt 2012 | |  |  | Theory |
+|Tikhonov et al. 2019 | |  |  | Theory |
+|Murren et al. 2015 | First author |  |  | Review |
+|DeWitt et al. 1998 | |  |  | Review |
+|Gerken 2015 | First author |  | Terrestrial | Review |
+|Leimar et al. 2019 | | X |  | Theory |
+|Josephs 2018 | First author |  |  | Review |
+|Donelan et al. 2019 | First author |  |  | Review/opinion |
+|Stein et al. 2018 | First and last author |  | Freshwater | Empirical |
+|Chirgwin 2018 | Middle author |  | Marine | Empirical |
+|Donelson et al 2017 | First author |  |  | Review |
+|Hendry 2016 | | X |  | Review |
 
 
 
-**Discussion Questions:**
 
-1. What constitutes strong evidence for fluctuating selection, especially if the trait under fluctuating selection is maintained by many loci with small effects?
 
-2. What are the benefits (or consequences) of fluctuating selection for long-term changes in the environment?
-
-## Week 9 (May 11):
-
-### Topic: Plasticity
-
-**Rationale:** Plasticity is the environmentally induced production of alternate phenotypes from a given genotype (Dewitt and Scheiner 2004). While the evolution of plasticity and the effects of plasticity on the evolutionary trajectory of populations are huge topics, this week we wanted to contrast a classic and more recent study in which plasticity evolved.
-
-**Paper 1:**  (Paper and Link)
-
-[Genetic Assimilation of an Acquired Character](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1558-5646.1953.tb00070.x)
-
-C. H. Waddington
-
-**Paper 2:** 
-
-[Plasticity predicts evolution in a marine alga](https://royalsocietypublishing.org/doi/full/10.1098/rspb.2014.1486)
-
-C. Elisa Schaum & Sinéad Collins
-
-**Optional Background Paper:**
-
-[Adaptive versus non‐adaptive phenotypic plasticity and the potential for contemporary adaptation in new environments](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2435.2007.01283.x)
-
-C. K. Ghalambor, J. K. McKay, S. P. Carroll, & D. N. Reznick
-
-**Discussion Questions:**
-
-1. Compare and contrast the two experiments. In what way are they similar and different?
-
-2. How does plasticity in an ancestral population determine evolutionary trajectory? 
-
-3. Do empirical results agree or disagree with theoretical arguments?
