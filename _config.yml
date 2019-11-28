@@ -23,11 +23,13 @@ navbar-links:
   Coaching: 
     - Sessions: "sessions"
     - Schedule & Homework: "schedule"
+    - Coaches: "coaches"
+    - Parents: "parents"
   Competitions:
     - Schedule: "competitions"
+    - RMS Exams: "exams"
     - Top 10 Tips: "competition-tips"
   Resources:
-    - RMS Exams: "exams"
     - Art of Problem Solving: "https://artofproblemsolving.com/"
   
 # Image to show in the navigation bar - image must be a square (width = height)

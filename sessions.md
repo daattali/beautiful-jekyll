@@ -51,9 +51,4 @@ Signup spreadsheets will be provided to help parents in forming teams on a per-c
 
 # Parent Proctors
 We are required to staff each room with a parent proctor for the duration of each math club meeting.
-You will need to be physically in the room from 2:50-4:00 but will not be required to participate in 
-the class beyond keeping student respectful of their environment. After the session, you will need to 
-turn the lights off and lock the doors. Please add yourself to the signup sheet for primary and backup 
-proctor volunteers. It’s the responsibility of any given week’s primary to make sure the backup will 
-take their place if they can’t make it. You will also need to be an
-<a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a>.
+Please see the <a href="/parents">parent proctor page</a> for details.
