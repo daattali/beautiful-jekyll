@@ -6,7 +6,7 @@ subtitle: A 120-minute sample practice plan
 
 This is a sample team practice plan designed for a 120-minute session. This is provided as an example of how you can structure
 a practice to prepare for a competition. In this case, you would select a past Math Is Cool year (like 
-[6th grade 2018-2019 Masters](http://www.academicsarecool.com/#/samples)) and use those questions.
+<a href="http://www.academicsarecool.com/#/samples" target="_blank">2018-2019 6th grade Masters</a>)) and use those questions.
 
 | Start | End | Topic |
 | :--- | :--- | :--- |
