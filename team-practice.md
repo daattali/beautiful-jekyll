@@ -9,7 +9,7 @@ a practice to prepare for a competition. In this case, you would select a past M
 [6th grade 2018-2019 Masters](http://www.academicsarecool.com/#/samples)) and use those questions.
 
 | Start | End | Topic |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 0m | 10m | Start with college bowl questions to warm up.* This is a good activity to start with in case some members are late.
 | 10m | 15m | Discussion of practice plan and Q&A.
 | 15m | 35m | Discuss a topic for the week.* This might be covering a few questions for a specific topic or challenging questions from that MIC's individual test.
@@ -19,4 +19,4 @@ a practice to prepare for a competition. In this case, you would select a past M
 | 90m | 100m | Relays and review.
 | 100m | 120m | College bowl for remainder of time.
 
-* If you would like to run in 90 minutes instead, you can cut these.
+\* If you would like to run in 90 minutes instead, you can cut these.
