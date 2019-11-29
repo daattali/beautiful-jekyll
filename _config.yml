@@ -30,7 +30,7 @@ navbar-links:
     - Schedule: "competitions"
     - RMS Exams: "exams"
     - Top 10 Individual Tips: "competition-tips"
-    - Top 10 Team Tips: "competeamtition-tips"
+    - Top 10 Team Tips: "team-tips"
   Resources:
     - Art of Problem Solving: "https://artofproblemsolving.com/"
   
