@@ -24,6 +24,7 @@ bring their own pencils and blank scratch paper, which may be plain, ruled, or g
 and/or an eraser. No other aids, including calculators, are permitted on any of our internal exams.
 
 ## Exam Schedule
+
 | Month | Exam |
 | --- | --- |
 | October | Benchmark |
@@ -37,6 +38,7 @@ have the results shared with the membership by the end of that weekend. Top fini
 anonymous score data. Students can pick up their answer sheets to learn their scores at the next meeting.
 
 ## Past Exams & Keys
+
 | Date | Exam | Key |
 | ------------- | ------------- |
 | October 25, 2019 | <a href="/files/RMS%201920B%20Exam.pdf">2019-2020 Benchmark</a> | <a href="/files/RMS%201920B%20Exam%20Key.pdf">Answer Key</a>
