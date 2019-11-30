@@ -7,6 +7,10 @@ tags: [blockchain]
 comments: true
 ---
 
+Author: [@tonybui](https://github.com/tonybuivn)
+
+
+
 Trừ khi bạn là người Sao Hỏa, còn không mình chắc chắn bạn đã từng nghe nói đến Bitcoin và Blockchain. 
 
 Đây là 2 từ khóa nổi bật, là xu hướng, là chủ đề ưa thích trong thời gian gần đây - buzzword of the years. Ngay cả với những người chưa từng quan tâm đến [cryptocurrency](http://bitcoinvietnamnews.com/2017/02/cryptocurrency-la-gi.html) hay hiểu cách nó hoạt động cũng bàn luận về nó. Tôi có nhiều người bạn không làm trong ngành kỹ thuật, và vài tuần trở lại đây họ luôn buzzing tôi để nhờ giải thích về những từ khóa mới này. Tôi đoán có hàng ngàn người ngoài kia cũng có cảm giác tương tự như vậy.
