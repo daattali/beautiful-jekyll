@@ -1,6 +1,6 @@
 ---
 layout: post
-title: To be
+title: To be or not to be
 subtitle: ... or not to be?
 tags: [books, shakespeare, test]
 ---
