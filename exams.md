@@ -42,7 +42,7 @@ anonymous score data. Students can pick up their answer sheets to learn their sc
 | Date | Exam | Key |
 | ------------- | ------------- |
 | October 25, 2019 | <a href="/files/RMS%201920B%20Exam.pdf">2019-2020 Benchmark</a> | <a href="/files/RMS%201920B%20Exam%20Key.pdf">Answer Key</a>
-| December 6, 2019 | 2019-2020 Mathcounts School | Answer Key
+| December 6, 2019 | <a href="/files/RMS%201920M%20Exam.pdf">2019-2020 Mathcounts School</a> | <a href="/files/RMS%201920M%20Exam%20Key.pdf">Answer Key</a>
 
 ## Other Internal Competition Rounds
 During the course of the season we may also administer additional competition rounds, such as mock team rounds. Those rounds may follow 
