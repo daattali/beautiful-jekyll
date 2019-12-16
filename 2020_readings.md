@@ -15,8 +15,8 @@ All participants can use the thread feature in Slack to post additional question
 Under `Channels` click the `+` and search for `2020-spring-readings`
 
 Each week will have two threads: 
-  * Under the thread `Week X. <Topic Name> Post your group's discussions here,` click on the chat icon `Reply to thread` to post a summary of your group's discussions.
-  * To ask a question about the papers, use the thread `Week X. <Topic Name> Questions for Understanding. If you have any technical questions about the papers, post them here and the moderators will do their best to answer them!`
+  * Under the thread `Week X. <Topic Name> Post your group's discussions here,` click on the chat icon `Reply to thread` to post a summary of your group's discussions (see image below).
+  * To ask a question about the papers, use the thread `Week X. <Topic Name> Questions for Understanding.` If you have any technical questions about the papers, post them here and the moderators will do their best to answer them!
 
 ![image](https://github.com/RCN-ECS/CnGV/blob/master/results/2020Plasticity_SlackNavImage.png)
 
