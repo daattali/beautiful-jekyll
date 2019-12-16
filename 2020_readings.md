@@ -18,12 +18,12 @@ Each week will have two threads:
   * Under the thread `Week X. <Topic Name> Post your group's discussions here,` click on the chat icon `Reply to thread` to post a summary of your group's discussions.
   * To ask a question about the papers, use the thread `Week X. <Topic Name> Questions for Understanding. If you have any technical questions about the papers, post them here and the moderators will do their best to answer them!`
 
-ADD PHOTO HERE
+![image](https://github.com/RCN-ECS/CnGV/blob/master/results/2020Plasticity_SlackNavImage.png)
 
 ## New Theme and Format
 For our second set of coordinated readings, we focus on phenotypic plasticity. Phenotypic plasticity is the ability of a single genotype to express different phenotypes in different environments. Plasticity has the potential to promote adaptation, constrain adaptation, or be the adaptive response itself, so it plays an important role in adaptation to changing environments. 
 
-A central goal of the RCN-ECS is to synthesize and integrate ideas about evolution in changing seas. This year, rather than posting questions unique to each week's theme, we have two overarching questions to serve as guideposts for weekly discussions. We will devote the final week for groups to gather, synthesize previous discussions, and provide answers to the two questions. We encourage groups to generate bold and testable predictions and to distance themselves from simply summarizing past discussions. 
+A central goal of the RCN-ECS is to synthesize and integrate ideas about evolution in changing seas. This year, rather than posting questions unique to each week's theme, we have two overarching questions to serve as guideposts for weekly discussions. We will devote the final week for groups to gather together, synthesize previous discussions, and provide answers to the two questions. We encourage groups to generate bold and testable predictions and to distance themselves from simply summarizing past discussions. 
 
 ## Discussion Questions: 
 
