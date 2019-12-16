@@ -176,7 +176,7 @@ Jennifer Donelson, Santiago Salinas, Philip Munday, Lisa Shama
 
 **Rationale:**
 
-Please use this week to synthesize your group's discussions from the past five readings and preparing answers to the two overarching questions. Again, we encourage groups to consider the discussions from the perspective of future research and provide answers in the form of testable predictions. 
+Please use this week to synthesize your group's discussions from the past five readings and prepare answers to the two overarching questions. Again, we encourage groups to consider the discussions from the perspective of future research and provide answers in the form of testable predictions. 
 
 In addition, groups may consider where do we go from here? Where is consensus? What areas are ripe for research? 
 
