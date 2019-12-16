@@ -8,7 +8,17 @@ To facilitate discussions aamong members of the RCN, we have set up Slack channe
 
 To form a discussion group 1) Start a group at your home institution and meet once or twice during each two-week period (any time during the two weeks is fine) to read and discuss the papers, 2) Discuss papers virtually before joining the larger discussion via the #Virtual_Discussion group on the RCN slack. 
 
+## Navigating Slack
+
 All participants can use the thread feature in Slack to post additional questions, and react to comments or questions posed by other groups. Additionally, this year we will have a weekly thread dedicated to resolving questions that emerge from the readings. Moderators will monitor threads and respond to questions. We encourage individuals or groups to use these threads to clarify any uncertainties. 
+
+Under `Channels` click the `+` and search for `2020-spring-readings`
+
+Each week will have two threads: 
+  * Under the thread `Week X. <Topic Name> Post your group's discussions here,` click on the chat icon `Reply to thread` to post a summary of your group's discussions.
+  * To ask a question about the papers, use the thread `Week X. <Topic Name> Questions for Understanding. If you have any technical questions about the papers, post them here and the moderators will do their best to answer them!`
+
+
 
 ## New Theme and Format
 For our second set of coordinated readings, we focus on phenotypic plasticity. Phenotypic plasticity is the ability of a single genotype to express different phenotypes in different environments. Plasticity has the potential to promote adaptation, constrain adaptation, or be the adaptive response itself, so it plays an important role in adaptation to changing environments. 
