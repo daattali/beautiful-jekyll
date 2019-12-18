@@ -4,7 +4,7 @@ layout: base
 
 {% include header.html type="page" %}
 
-{% assign newsByYear = site.news | group_by_exp: "newspost", "newspost.date | date: '%Y'" | sort "name" | reverse %}
+{% assign newsByYear = site.news | group_by_exp: "newspost", "newspost.date | date: '%Y'" | sort: "name" | reverse %}
 
 <div class="container" role="main">
   {% for year in newsByYear %}
