@@ -4,11 +4,11 @@ layout: base
 
 {% include header.html type="page" %}
 
-{% assign years = site.publications | map: 'article_year' | reverse  %}
+{% assign years = site.publications | map: 'article_year' | uniq | reverse  %}
 
 <div class="container" role="main">
   {% for year in years %}
-    <h3>{{ year }}</h3>
+    <h3 style="text-align:center;">{{ year }}</h3>
     {% assign publicationsSorted = site.publications | where: 'article_year', year |sort: "article_authors" %}
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
