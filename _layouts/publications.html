@@ -9,7 +9,7 @@ layout: base
 <div class="container" role="main">
   {% for year in years %}
     <h3>{{ year }}</h3>
-    {% assign publicationsSorted = site.publications | where 'article_year', year |sort: "article_authors" %}
+    {% assign publicationsSorted = site.publications | where: 'article_year', year |sort: "article_authors" %}
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="list-group">
