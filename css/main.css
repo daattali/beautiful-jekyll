@@ -53,17 +53,17 @@ hr.small {
   width: 100%;
   display: inline-block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   color: #404040;
   background-color: #f5f5f5;
   border: 1px solid;
   border-radius: 3px;
   border-color: #404040;
+  text-decoration: none;
 }
 .btn-read-all:hover,
 .btn-read-all:focus{
-  color: #f5f5f5;
-  border-color: #f5f5f5;
-  background-color: {{ site.hover-col }};
+  color: {{ site.hover-col }};
 }
 
 .main-content {
