@@ -47,6 +47,20 @@ hr.small {
   border-radius: 3px;
 }
 
+/* Custom button class for 'read all news' and maybe others */
+.btn-read-all{
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: {{ site.link-col }};
+}
+.btn-read-all:hover,
+.btn-read-all:focus{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: {{ site.hover-col }};
+}
+
 .main-content {
   padding-top: 80px;
 }

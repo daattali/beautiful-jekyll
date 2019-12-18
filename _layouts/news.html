@@ -12,7 +12,7 @@ layout: base
     {% assign newsSorted = year.items | sort: "date" %}
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        {% for n in newsSorted %}
+        {% for news in newsSorted %}
           <div class="panel panel-info">
             {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
             <div class="panel-body">
