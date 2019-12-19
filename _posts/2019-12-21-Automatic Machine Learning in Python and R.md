@@ -1,5 +1,6 @@
 
 ---
+layout: post
 title: " Automatic Machine Learning "
 subtitle: automl in Python and R
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
@@ -1638,7 +1639,7 @@ ggplot(Energy_Data, aes(x = Appliances)) +
 
 
 ![png](output_35_0.png)
-
+![ ]( /img/AUTOML/automl.PNG)
 
 
 ```python
