@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Automatic Machine Learning 
-subtitle: automl in Python and R 
+title:  Automatic Machine Learning
+subtitle: automl in Python and R
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
-tags: [automl, h2o automl , autokeras, google cloud platform,autoxgboost, automatic deep learning
+tags: [automl, h2o.ai automl , autokeras, google cloud platform,autoxgboost, automatic deep learning]
 ---
+
+
 
 
 #### Automated Machine Learning 
