@@ -1,11 +1,11 @@
 
 ---
 layout: post
-title: " Automatic Machine Learning "
-subtitle: automl in Python and R
+title: Hyperparameter Tuning  The Alternating Least-Squares Algorithm for A Recommender System. 
+subtitle: Personalized Recommendation with Matrix Factorization 
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
-tags:  [automl, h2o, autokeras, google cloud platform, automatic deep learning]
+tags: [spark,pyspark,matrix factorization, Alternating Least Squares]
 ---
 
 
