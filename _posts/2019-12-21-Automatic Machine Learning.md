@@ -1536,7 +1536,7 @@ ggplot(Energy_Data, aes(x = Appliances)) +
 
 
 
-![ ]( /img/AUTOML/automl.PNG)
+![ ]( /img/AUTOML/automl.png)
 
 
 ```python
