@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Robert Zeydelis
+title: Bobby Zeydelis
 subtitle: Something, something, something 
 
 use-site-title: true
@@ -10,12 +10,12 @@ use-site-title: true
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+	  <h3 class="post-title">{{ post.title }}</h3>
 
 	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
+	  <h4 class="post-subtitle">
 	    {{ post.subtitle }}
-	  </h3>
+	  </h4>
 	  {% endif %}
     </a>
 
