@@ -2048,6 +2048,7 @@ print(yardstick::rsq(pred$data,truth,response))
     
       warnings.warn(x, RRuntimeWarning)
     
-
-    
+![ ]( /img/AUTOML/1.png)
+ ![ ]( /img/AUTOML/2.png)   
+ ![ ]( /img/AUTOML/3.png)
   
