@@ -4,18 +4,6 @@
   {% endfor %}
 {% endif %}
 
-{% if page.ext-js %}
-  {% for js in page.ext-js %}
-    {% include ext-js.html js=js %}
-  {% endfor %}
-{% endif %}
-
-{% if page.js %}
-  {% for js in page.js %}
-    <script src="{{ js | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
-
 {% if layout.common-js %}
   {% for js in layout.common-js %}
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
@@ -28,5 +16,17 @@
     {% else %}
       <script src="{{ js | relative_url }}"></script>
     {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if page.ext-js %}
+  {% for js in page.ext-js %}
+    {% include ext-js.html js=js %}
+  {% endfor %}
+{% endif %}
+
+{% if page.js %}
+  {% for js in page.js %}
+    <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
