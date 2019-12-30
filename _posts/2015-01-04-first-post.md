@@ -76,7 +76,7 @@ class GetDeepSearchResults(ZillowResults):
     }
 ```
 
-** Test out the results! **
+**Test out the results!**
 
 ```
 from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults
