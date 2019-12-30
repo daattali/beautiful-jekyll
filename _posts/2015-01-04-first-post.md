@@ -4,9 +4,9 @@ title: How to get Rent Zestimate using PyZillow (Zillow API)
 image: /img/hello_world.jpeg
 ---
 
-Zillow's API is a great tool to quickly retrieve real estate data to help calculate ROI on a potential property. If you haven't used the API, you should check it out [here](https://www.zillow.com/howto/api/APIOverview.htm).
+Zillow's API is a great tool to quickly retrieve real estate data to help calculate ROI on a property. If you haven't used the API, you should check it out [here](https://www.zillow.com/howto/api/APIOverview.htm).
 
-I use the PyZillow python wrapper for Zillow's API because it makes it seamless to pull Zillow data straight into Python with a few simple functions. If you are not new to the PyZillow package and you have ran into issues pulling rent data, then look no further as I have your simple solution right here!
+I use the PyZillow python wrapper for Zillow's API, so I can pull Zillow data right into Python with a few simple functions. If you are not new to the PyZillow package and you have ran into issues pulling rent data, then look no further as I have your simple solution right here!
 
 
 **Step 1:** Download the pyzillow package:
@@ -16,7 +16,7 @@ Open command line or terminal and type the following line:
 
 **Step 2:** We need to open up the pyzillow.py file and add the rent zestimate parameter:
 
-If you don't know where your pyzillow file is, you can search for the file "pyzillow.py". I know if you have a Mac, then you can press cmd + space and type in pyzillow.py and it should appear. You can do the same thing with windows and search for the file by typing pyzillow.py in the start menu
+If you don't know where your pyzillow file is, you can search for the file "pyzillow.py". If you have a Mac, then you can press command + space and type in pyzillow.py and it should appear. You can do the same thing with Windows and search for the file by typing pyzillow.py in the start menu.
 
 
 Once you have opened the file, find the `get_deep_search_results` function and inside the function, you should see the `params`. We are going to add the rent zestimate parameter inside here to be able to access the data.
@@ -37,9 +37,9 @@ def get_deep_search_results(self, address, zipcode):
     return self.get_data(url, params)
  ```
     
-** Step 3 ** We add the rent zestimate to the attribute mapping dictionary:
+**Step 3:** We add the rent zestimate to the attribute mapping dictionary:
 
-Find the `lass GetDeepSearchResults(ZillowResults)` and add the following:
+Find the class `GetDeepSearchResults(ZillowResults)` and add the following:
 ``
 'rentzestimate_amount': 'result/rentzestimate/amount'
 ``
@@ -84,7 +84,7 @@ from pyzillow.pyzillow import ZillowWrapper, GetDeepSearchResults
 address = ['11 Avenue B, Johnson City, NY']
 zip_code = ['13790']
 
-zillow_data = ZillowWrapper('X1-ZWz1835knufc3v_38l6u')
+zillow_data = ZillowWrapper('YOUR-ZILLOW-API-KEY')
 deep_search_response = zillow_data.get_deep_search_results(address, zip_code)
 result = GetDeepSearchResults(deep_search_response)
 
