@@ -1,0 +1,17 @@
+---
+layout: post
+title:  Why should you write tests for your codes 2019
+subtitle: Each post also has a subtitle
+gh-repo: daattali/beautiful-jekyll
+gh-badge: [star, fork, follow]
+tags: [test]
+comments: true
+---
+
+* Test is the live document of the code
+* Tests never lie
+* You can understand how a piece of code works by checking its tests
+* Tests help you have confidence when refactoring
+* Tests help you quickly check effect of new codes on old ones
+* Tests help you have critical thinking while coding and write better code
+* Tests can run many times by a computer and save your time
