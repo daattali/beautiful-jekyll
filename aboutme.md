@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: software engineer enjoying to learn new things. 
+subtitle: software engineer enjoying to learn new things.
 ---
 
 ### tech stack
@@ -10,14 +10,13 @@ subtitle: software engineer enjoying to learn new things.
   - Javascript
     - React & Redux
     - Typescript
-    - Rxjs 
     - Backbone & marionette
   - HTML&CSS
-    - SCSS 
+    - SCSS
 
 - Server-side
   - Python
     - Django framework
   - Java
-    - Spring 
+    - Spring
 
