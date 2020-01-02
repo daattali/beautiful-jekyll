@@ -24,7 +24,7 @@ foo.bas = 'hello';
 Originally the syntax for is `<Foo>` but, It conflicts with JSX syntax. so We can use `as Foo` as well with tsx files.
 It's different from `Casting`. Because `Casting` is generally runtime operation. But `Type Assertion` is compile time operation to provide hint to compiler.
 
-What is Type Casting?
+## What is Type Casting?
 In Typescript, Type Casting is not used.
 
-[good reference](https://basarat.gitbooks.io/typescript/docs/types/type-assertion.html)
+[more details](https://basarat.gitbooks.io/typescript/docs/types/type-assertion.html)
