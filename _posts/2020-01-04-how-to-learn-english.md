@@ -4,12 +4,12 @@ title: How to learn english.
 tags: [english]
 ---
 
-From 3 month ago, I started to new job. I need to improve english (especially speaking) because new company consist of colleagues speaking english.
-Unlike before, There are a lot of contents to help study english.  I Know there is a best way, but I thought there would be a way to learn English that suits me. So I tried various way to learn English such as shadowing, listening to english article, watching disney with english subtitle.
+3 months ago, I started a new job. I need to improve my English (especially speaking) because the new company consists of colleagues speaking English.
 
-All of way are good, but I missed which skill is my main prioority. I have many oppotunity to explain something to my colleagues, so I should focus speaking thant othter skills. As result of I've figured out, I found the way suits me. It's not special way.
+Unlike before, There are a lot of contents to help learn English.  I know there is a best way, but I thought there would be a way to learn English that suits me. So I tried various ways to learn English such as shadowing script, listening to English article and watching Disney with English subtitles.
 
-Just memorize words and catch the 뉘앙쓰, and then make my own sentence multiple times. It more effective way than just memorizing.
+All of the ways have their advantages. But I didn't feel improving my English while I was trying.  I thought that I need to determine which skill is my main priority. I have to explain something to my colleagues in the office, so I should focus on improving speaking than other skills. As a result of I've figured out, I found a way to suit me. It's not a special thing. Here it is. Memorize words and catch the Nuance of it as reading various sentences containing those words. And then make my own sentence multiple times. From my perspective, It a more effective way than just memorizing.
+
 
 
 
