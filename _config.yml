@@ -21,9 +21,9 @@ description: Professional Profile
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
+  Papers:
+  Articles:
+  Commentary in the media:
   Author's home: "http://emildimanchev.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -32,7 +32,7 @@ avatar: "/img/Dimanchev B+Wcopy copy.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: "/img/Dimanchev B+Wcopy copy.jpg"
+# title-img: "/img/Dimanchev B+Wcopy copy.jpg"
 
 # --- Background colour/image options --- #
 
