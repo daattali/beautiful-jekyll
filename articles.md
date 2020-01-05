@@ -1,6 +1,6 @@
 ---
 title: Articles
-subtitle: invited op-eds and other articles
+subtitle: Invited op-eds and other articles
 layout: page
 ---
 
