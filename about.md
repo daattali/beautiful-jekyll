@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About me
 ---
 
 Hi there, I am Emil Dimanchev and I am a climate policy researcher, consultant, and writer. My areas of expertise include energy systems, carbon pricing, and techno-economic modeling. My work aims to address timely decarbonization challenges and inform climate policy design. In my research, I leverage diverse methods matched to the problem at hand, with a focus on quantitative models. I currently work at the MIT Center for Energy and Environmental Policy Research where my work covers deep decarbonization and climate policy instrument choice.
