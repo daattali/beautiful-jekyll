@@ -20,12 +20,15 @@ title: Authors
 * Adrien Krähenbühl (ICube, Université de Strasbour)
 * Jacques-Olivier Lachaud (LAMA, Université de Savoie)
 * Jérémy Levallois (Allegorithmic, Lyon)
+* Raphael Lenain (Univ. Poitiers)
+* Boris Mansencal (LaBRI, Univ. Bordeaux)
 * Nicolas Normand (IRCCyN, Université de Nantes)
 * Xavier Provençal (LAMA, Université de Savoie)
 * Laurent Provot (LIMOS, Auvergne University)
 * Tristan Roussillon (LIRIS, INSA-Lyon)
 * Isabelle Sivignon (GIPSA-lab, CNRS)
 * Martial Tola (LIRIS, CNRS)
+
 
 
 ## Students
@@ -35,6 +38,7 @@ title: Authors
 * Xi Wang (LIRIS – CEN Météo-France)
 * Nicolas Silva (LIRIS, INSA-Lyon)
 * Jean-David Genevaux (LIRIS, Lyon 1)
+* Johanna Delanoy (GraphDeco, INRIA)
 
 For any comment/question about the library itself, please use the mailing lists detailed in the [Documentation & Help][1] page. For any other request:
 
