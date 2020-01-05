@@ -21,7 +21,7 @@ description: Climate and Energy Policy Research
 # List of links in the navigation bar
 navbar-links:
   About: "aboutme"
-  Papers:
+  Papers: "papers"
   Articles:
   Commentary in the media:
   Author's home: "http://emildimanchev.github.io"
