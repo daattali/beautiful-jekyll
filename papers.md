@@ -9,30 +9,30 @@ Thomson Reuters (lead author) 2016 - [EU Climate Ambition - Falling Short of Lon
 
 Thomson Reuters (contributing author) 2016 - [California Dreaming: Implications of an EU ETS Price Floor](https://www.dropbox.com/s/y78glqnwphhofl1/California%20Dreaming%20-%20Implications%20of%20an%20EU%20ETS%20price%20floor.pdf?dl=0)
 
-Thomson Reuters (contributing author) 2016 - Animal Spirits versus the Big Picture: Why the outlook for the carbon price is still bullish
+Thomson Reuters (contributing author) 2016 - [Animal Spirits versus the Big Picture: Why the outlook for the carbon price is still bullish](https://emildimantchev.files.wordpress.com/2017/05/animal-spirits-versus-the-big-picture-eu-carbon-price-outlook.pdf)
 
-Thomson Reuters (contributing author) 2015 - EU ETS Phase 4 Proposal: Learning to Share
+Thomson Reuters (contributing author) 2015 - [EU ETS Phase 4 Proposal: Learning to Share](https://emildimantchev.files.wordpress.com/2018/03/learning-to-share-eu-ets-phase-4-proposal_.pdf)
 
-Thomson Reuters (contributing author) 2015 - 2030 EU Carbon Price Forecast: Peering through the political fog
+Thomson Reuters (contributing author) 2015 - [2030 EU Carbon Price Forecast: Peering through the political fog](https://emildimantchev.files.wordpress.com/2017/07/peering-through-the-political-fog.pdf)
 
-Thomson Reuters (lead author) 2014- Look before you leap: analysis on the design of the Market Stability Reserve
+Thomson Reuters (lead author) 2014- [Look before you leap: analysis on the design of the Market Stability Reserve](https://www.dropbox.com/s/gn32t1errchg8v8/Look%20before%20you%20leap%20-%20MSR%20Design.pdf?dl=0)
 
-Thomson Reuters (lead author) 2014 - Winds of Reform: Examining the design parameters of the Market Stability Reserve
+Thomson Reuters (lead author) 2014 - [Winds of Reform: Examining the design parameters of the Market Stability Reserve](https://www.dropbox.com/s/3jsty94woblbe2t/Winds%20of%20Reform%20-%20MSR%20Design%20Parameters.pdf?dl=0)
 
-Thomson Reuters (contributing author) 2014 - Carbon 2014 - Into Smoother Waters
+Thomson Reuters (contributing author) 2014 - [Carbon 2014 - Into Smoother Waters](https://emildimantchev.files.wordpress.com/2016/06/carbon-market-survey-2014-into-smoother-waters.pdf)
 
-Thomson Reuters (lead author) 2013 - Carbon 2013 - At a tipping point
+Thomson Reuters (lead author) 2013 - [Carbon 2013 - At a tipping point](https://emildimantchev.files.wordpress.com/2016/06/carbon-2013-at-a-tipping-point.pdf)
 
-Thomson Reuters (contributing author) 2012 - Carbon 2012 - A market waiting for Godot
+Thomson Reuters (contributing author) 2012 - [Carbon 2012 - A market waiting for Godot](https://emildimantchev.files.wordpress.com/2017/04/carbon_2012.pdf)
 
-Thomson Reuters (lead author) 2012 - Cloudy skies ahead for aviation in the EU ETS
+Thomson Reuters (lead author) 2012 - [Cloudy skies ahead for aviation in the EU ETS](https://emildimantchev.files.wordpress.com/2016/10/point-carbon-analysis.pdf)
 
-Thomson Reuters (lead author) 2012 - California-Acre partnership - setting the stage for compliance REDD credits
+Thomson Reuters (lead author) 2012 - [California-Acre partnership - setting the stage for compliance REDD credits](https://emildimantchev.files.wordpress.com/2017/03/1-1909008redd-cma-2012.pdf)
 
-Thomson Reuters (lead author) 2012 - Phase 3 allocation: racing against the clock
+Thomson Reuters (lead author) 2012 - [Phase 3 allocation: racing against the clock](https://emildimantchev.files.wordpress.com/2017/09/phase-3_racing-against-the-clock.pdf)
 
 Other
 
-Dimanchev, E. 2019 - Air Quality Co-benefits of Renewable Energy Policy in the U.S. - Master's thesis, Massachusetts Institute of Technology, IDSS (Sept, 2018) - Granted Best Thesis in Technology and Policy award (2019)
+Dimanchev, E. 2019 - [Air Quality Co-benefits of Renewable Energy Policy in the U.S.](https://globalchange.mit.edu/publication/17130) - Master's thesis, Massachusetts Institute of Technology, IDSS (Sept, 2018) - Granted Best Thesis in Technology and Policy award (2019)
 
-Dimanchev, E. 2011 - Biodiversity Conservation Through REDD+ - Senior Thesis, Colorado College - Granted Most Outstanding Thesis in Economics award
+Dimanchev, E. 2011 - [Biodiversity Conservation Through REDD+](https://emildimantchev.files.wordpress.com/2016/06/biodiversity-conservation-through-redd.pdf) - Senior Thesis, Colorado College - Granted Most Outstanding Thesis in Economics award
