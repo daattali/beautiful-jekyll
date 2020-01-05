@@ -1,5 +1,6 @@
 ---
 layout: post
+title: DGtal + Polyscope
 ---
 
 [Polyscope](http://polyscope.run) is a great C++ viewer and user
