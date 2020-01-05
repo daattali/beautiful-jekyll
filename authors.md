@@ -6,19 +6,17 @@ title: Authors
 ## DGtal Editorial Board
 
 * [David Coeurjolly](https://perso.liris.cnrs.fr/david.coeurjolly/) (LIRIS, CNRS)
-* Jacques-Olivier Lachaud (LAMA, Université de Savoie)
+* [Jacques-Olivier Lachaud](https://www.lama.univ-savoie.fr/pagesmembres/lachaud/People/LACHAUD-JO/person.html) (LAMA, Université de Savoie)
 
 ## DGtalTools Package Manager
 
-* Bertrand Kerautret (LIRIS, Université Lumière Lyon 2)
+* [Bertrand Kerautret](https://liris.cnrs.fr/page-membre/bertrand-kerautret) (LIRIS, Université Lumière Lyon 2)
 
 ## Main development team
 
-* [David Coeurjolly](https://perso.liris.cnrs.fr/david.coeurjolly/) (LIRIS, CNRS)
 * Guillaume Damiand (LIRIS, CNRS)
 * Pierre Gueth (LIRIS, CNRS)
 * Sébastien Fourey (GREYC, ENSICAEN)
-* Bertrand Kerautret (LIRIS, Université Lumière Lyon 2)
 * Adrien Krähenbühl (ICube, Université de Strasbour)
 * Jacques-Olivier Lachaud (LAMA, Université de Savoie)
 * Jérémy Levallois (Allegorithmic, Lyon)
