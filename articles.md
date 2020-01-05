@@ -1,5 +1,7 @@
 
 
+
+
 [Pricing CO2 imports would be a win-win for the environment and the economy](https://therift.eu/index.php/2019/09/24/should-the-eu-tax-imported-products-accordingly-to-their-co2-footprint/) – The Rift (September 24, 2019)
 
 [Weakening the state’s renewable energy standards is bad for Ohioans’ health](https://www.ohio.com/opinion/20190629/emil-dimanchev-weakening-states-renewable-energy-standards-is-bad-for-ohioans-health) – Akron Beacon Journal (June 29, 2019)
