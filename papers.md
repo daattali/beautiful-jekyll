@@ -1,5 +1,6 @@
 ---
-subtitle: Peer-reviewed and other publications
+title: Papers
+subtitle: Selection of peer-reviewed papers and other publications
 layout: page
 ---
 
