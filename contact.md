@@ -1,4 +1,5 @@
 ---
+title: Get in touch
 layout: page
 ---
 
