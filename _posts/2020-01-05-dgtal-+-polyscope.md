@@ -17,6 +17,8 @@ Thanks to a generic data adaptation framework,
 estimation, normal vector fields (thanks to the brand new *Shortcuts*
 helpers).
 
+![](http://polyscope.run/media/dgtal_curvature.jpg)
+
 If you want a quick demo, just have a look to the
 [polyscope-dgtal](https://github.com/dcoeurjo/polyscope-dgtal)
 project. 
