@@ -5,8 +5,6 @@ subtitle: Interviews featured in the press
 
 MIT Energy Futures Magazine: “Renewable energy and carbon pricing policies: State-level adoption saves money and lives” (November 22, 2019)
 
-The Economist: “Letters to the editor” (October 12, 2019)
-
 The Verge: “Renewable energy can generate billions of dollars in health benefits, study finds” (August 15, 2019)
 
 MIT News: “Shift to renewable electricity a win-win at statewide level” (August 14, 2019)
