@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Emil Dimanchev website
+title: Emil Dimanchev
 
 # Short description of your site
-description: Professional Profile
+description: Climate and Energy Policy Research
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,7 +20,7 @@ description: Professional Profile
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
   Papers:
   Articles:
   Commentary in the media:
