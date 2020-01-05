@@ -1,13 +1,13 @@
 
 Dimanchev, E., et al. 2019. [Health Co-Benefits of Sub-National Renewable Energy Policy in the U.S.](https://iopscience.iop.org/article/10.1088/1748-9326/ab31d9) *Environmental Research Letters* 14 085012. (Related: [Testimony](http://search-prod.lis.state.oh.us/cm_pub_api/api/unwrap/chamber/133rd_ga/ready_for_publication/committee_docs/cmte_s_energy_pu_1/testimony/cmte_s_energy_pu_1_2019-06-19-0800_742/testimonyemildimanchevmit.pdf) for the Ohio Senate; [Report](https://globalchange.mit.edu/publication/17278) including Ohio case study).
 
-MIT Energy Initiative (contributing author) 2019. Insights Into Future Mobility. A report from the Mobility of the Future study.
+MIT Energy Initiative (contributing author) 2019. [Insights Into Future Mobility.](http://energy.mit.edu/research/mobilityofthefuture/) A report from the Mobility of the Future study.
 
-Mehling M. and Emil Dimanchev. 2017. Achieving the Mexican Mitigation Targets: Options for an Effective Carbon Pricing Policy Mix. Report for the German-Mexican Climate Alliance
+Mehling M. and Emil Dimanchev. 2017. [Achieving the Mexican Mitigation Targets: Options for an Effective Carbon Pricing Policy Mix.](https://www.giz.de/en/downloads/giz2019-EN-Achieving-Mexican-Mitigation-Targets.pdf) Report for the German-Mexican Climate Alliance
 
-Thomson Reuters (lead author) 2016 - EU Climate Ambition - Falling Short of Long-term Targets 
+Thomson Reuters (lead author) 2016 - [EU Climate Ambition - Falling Short of Long-term Targets](https://www.dropbox.com/s/myukagu9e6m1u6a/EU%20Climate%20Ambition%20-%20Falling%20Short%20of%20Long-term%20Targets.pdf?dl=0) 
 
-Thomson Reuters (contributing author) 2016 - California Dreaming: Implications of an EU ETS Price Floor
+Thomson Reuters (contributing author) 2016 - [California Dreaming: Implications of an EU ETS Price Floor](https://www.dropbox.com/s/y78glqnwphhofl1/California%20Dreaming%20-%20Implications%20of%20an%20EU%20ETS%20price%20floor.pdf?dl=0)
 
 Thomson Reuters (contributing author) 2016 - Animal Spirits versus the Big Picture: Why the outlook for the carbon price is still bullish
 
