@@ -1,6 +1,5 @@
-
-
-
+---
+---
 
 [Pricing CO2 imports would be a win-win for the environment and the economy](https://therift.eu/index.php/2019/09/24/should-the-eu-tax-imported-products-accordingly-to-their-co2-footprint/) – The Rift (September 24, 2019)
 
