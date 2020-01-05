@@ -12,7 +12,7 @@ notion of structures (e.g. pointclouds, meshes) and quantities
 
 Thanks to a generic data adaptation framework,
 [polyscope](http://polyscope.run) can be used to quickly to display
-DGtal data such as digital surfaces and quantities like curvature
+[DGtal](http://dgtal.org) data such as digital surfaces and quantities like curvature
 estimation, normal vector fields (thanks to the brand new *Shortcuts*
 helpers).
 
