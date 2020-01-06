@@ -8,4 +8,6 @@ Connect with me on [Twitter](https://twitter.com/EmilDimanchev) where I contempl
 
 Follow my academic publications on [Google Scholar](https://scholar.google.com/citations?user=sYlOL18AAAAJ&hl=en).
 
-Join Good Judgment Open and [connect](https://www.gjopen.com/memberships/57797/scores) there. And do me a favor - tell me where I am wrong.
+Join Good Judgment Open and [connect](https://www.gjopen.com/memberships/57797/scores) there. 
+
+And do me a favor - tell me where I am wrong.
