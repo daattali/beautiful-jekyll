@@ -4,7 +4,7 @@ subtitle:
 layout: page
 ---
 
-Connect with me on [Twitter](https://twitter.com/EmilDimanchev). My purpose there is to highlight under-discussed issues in climate and energy. I focus on important policy developments and insights from recent research. 
+Connect with me on [Twitter](https://twitter.com/EmilDimanchev) where I highlight under-discussed issues in climate and energy with a focus on important policy developments and insights from recent research. 
 
 Follow my academic publications on [Google Scholar](https://scholar.google.com/citations?user=sYlOL18AAAAJ&hl=en).
 
