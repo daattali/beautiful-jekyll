@@ -52,7 +52,7 @@ avatar: "/img/Dimanchev B+Wcopy copy.jpg"
 
 #navbar-col: "#E7E3D4"
 navbar-col: "#4479e1"
-navbar-text-col: "#14A76C" # "#19181A"
+navbar-text-col: "#15DB95" #"#14A76C" # "#19181A"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
