@@ -2,7 +2,7 @@
 layout: page
 title: Emil Dimanchev
 subtitle: Climate and Energy Policy Research
-bigimg: "/img/city_lights_namerica_8k.jpg" : "Image Credit: NASA
+bigimg: "/img/city_lights_namerica_8k.jpg" : "Image Credit: NASA"
 ---
 
 Hi there, I am Emil Dimanchev and I am a climate policy researcher and consultant. My areas of focus include energy systems, carbon pricing, and techno-economic modeling.
