@@ -17,11 +17,11 @@ The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">h
 |December 13, 2019 | Area stretch from homework packet | <a href="/files/RMS%201920M%20Exam.pdf" target="_blank">Mathcounts school exam</a>
 |December 20, 2019 | Fractions stretch from homework packet | 
 |January 10, 2020 | Angles and Arcs stretch from homework packet | 
-|January 17, 2020 | Bases stretch from homework packet | 
-|January 24, 2020 | Probability stretch from homework packet | 
-|January 31, 2020 | Patterns stretch from homework packet | 
-|February 21, 2020 | Travel stretch from homework packet | 
-|February 28, 2020 | Measurement stretch from homework packet | 
+|January 17, 2020 | Bases stretch from homework packet | 2018 Mathcounts State <a href="https://www.mathcounts.org/sites/default/files/u5328/2018%20State%20Sprint%20Round.pdf">Sprint</a> & <a href="https://www.mathcounts.org/sites/default/files/u5328/2018%20State%20Target%20Round.pdf">Target</a>
+|January 24, 2020 | Probability stretch from homework packet | 2017 Mathcounts State <a href="https://www.mathcounts.org/sites/default/files/u5328/2017%20State%20Sprint%20Round.pdf">Sprint</a> & <a href="https://www.mathcounts.org/sites/default/files/u5328/2017%20State%20Target%20Round.pdf">Target</a>
+|January 31, 2020 | Patterns stretch from homework packet | 2016 Mathcounts State <a href="https://www.mathcounts.org/sites/default/files/u1706/2016%20State%20Sprint.pdf">Sprint</a>
+|February 21, 2020 | Travel stretch from homework packet |
+|February 28, 2020 | Measurement stretch from homework packet |
 |March 6, 2020 | Expected Value stretch from homework packet | 
 |March 20, 2020 | Transformations stretch from homework packet | 
 |March 27, 2020 | Modular Arithmetic stretch from homework packet | 
