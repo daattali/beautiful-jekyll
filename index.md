@@ -15,4 +15,4 @@ I have testified in front of legislators on climate policy, served as a consulta
 I am a superforecaster at Good Judgment where I provide analyses on a variety of topics. Sound policy making, on climate change and beyond, requires an understanding of the probability of future scenarios. I have made hundreds of probabilistic predictions on Good Judgment Open and [placed](https://www.gjopen.com/memberships/57797/scores) in the top 0.1 percent of forecasters. I also participated in IARPA's second Geopolitical Forecasting Challenge, where our team placed in the top five.
 
 ### Life
-An ideal day includes - aside from progress toward forward-thinking climate policy - rock climbing with my better half, and a book, or two.
+An ideal day includes - aside from progress toward forward-thinking climate policy - rock climbing with my better half, and a book.
