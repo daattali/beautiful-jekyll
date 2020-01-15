@@ -4,7 +4,7 @@ subtitle:
 layout: page
 ---
 
-Connect with me on [Twitter](https://twitter.com/EmilDimanchev) where I contemplate impactful policy developments and insights from recent research. I try to highlight issues in climate and energy that appear to be under-discussed. 
+Connect with me on [Twitter](https://twitter.com/EmilDimanchev) where I contemplate impactful policy developments and insights from recent research. I try to isolate the signal from the noise and highlight issues in climate and energy that appear to be under-discussed. 
 
 Follow my academic publications on [Google Scholar](https://scholar.google.com/citations?user=sYlOL18AAAAJ&hl=en).
 
