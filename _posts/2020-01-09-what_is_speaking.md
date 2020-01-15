@@ -3,13 +3,9 @@ layout: post
 title: What is speaking
 tags: [english]
 ---
-As far as What I wrote multiple times this blog, Currently I focus on speaking English. To Archive it. I should set What is my ultimate goal and What is I want to be in my mind.
-First, It's about my ultimate goal. When I was in south Korea, My goal was watching hollywood movie without subtitle. I wanted to focus on watching actor's behavior. Watching movie with subtitle make us miss good play of them.
-Now My goal is changed. I want to speak my thought fluently. Basically Speaking is delivering my idea to the listener. This is not only for English but also Korean. Someone's speaking is clear means She or he select proper words and speak with good intonation and organized sentence structure.
+As far as What I wrote multiple times on this blog, Currently I'm focusing on speaking English. To be as fluent as I want to be, I should have defined `What is fluent speaking` in my mind.
+Naturally, I've never heard that My Korean is fluent. We usually say it to those who speak a second language. If someone speaking English as mother language would say 'Your English is fluent.', It means My English is heard to a native clearly.
 
-To be like that I need more vocabulary and practice intonation as well. For now I'm learning not only English but also Speaking from native speaker.
+Basically Speaking is delivering my idea to the listener. This is not only for English but also for Korean.  Someone's speaking is clear means She or he selects legitimate words and speaks with good intonation and organized sentence structure. It's a good point. Even If I make a bad sentence structure or using improper words in Korean, I never heard my Korean is not fluent. But In case of English is different. If I don't choose proper words or non-logical sentence, They say It's because of not being fluent.
 
-During that process, I need to find legimate words and making setence sturcture. It have to happen very fast in my head.
-
-
-
+So now I'm not only learning English but also Logical sentence structure and how to use proper words. I think It's quite helpful for speaking Korean too.
