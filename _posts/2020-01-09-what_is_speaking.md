@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is speaking
-tags: [english]
+tags: [English]
 ---
 As far as What I wrote multiple times on this blog, Currently I'm focusing on speaking English. To be as fluent as I want to be, I should have defined `What is fluent speaking` in my mind.
 Naturally, I've never heard that My Korean is fluent. We usually say it to those who speak a second language. If someone speaking English as mother language would say 'Your English is fluent.', It means My English is heard to a native clearly.
