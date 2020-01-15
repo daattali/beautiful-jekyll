@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to learn english.
-tags: [english]
+title: How to learn English.
+tags: [English]
 ---
 
 3 months ago, I started a new job. I need to improve my English (especially speaking) because the new company consists of colleagues speaking English.
