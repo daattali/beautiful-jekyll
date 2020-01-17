@@ -23,8 +23,8 @@ The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">h
 |February 21, 2020 | Travel stretch from homework packet |  <a href="https://www.mathcounts.org/sites/default/files/u5328/2017%20State%20Target%20Round.pdf">2017 Mathcounts State Target</a>
 |February 28, 2020 | Measurement stretch from homework packet | <a href="https://www.mathcounts.org/sites/default/files/u1706/2016%20State%20Sprint.pdf">2016 Mathcounts State Sprint</a>
 |March 6, 2020 | Expected Value stretch from homework packet |  <a href="https://www.mathcounts.org/sites/default/files/u1706/2016%20State%20Target.pdf">2016 Mathcounts State Target</a>
-|March 20, 2020 | Transformations stretch from homework packet | 
-|March 27, 2020 | Modular Arithmetic stretch from homework packet | 
-|April 3, 2020 | | 
-|April 17, 2020 | | 
+|March 20, 2020 | Transformations stretch from homework packet | <a href="https://www.scarsdaleschools.k12.ny.us/cms/lib5/NY01001205/Centricity/Domain/398/2015%20State%20Competition%20Sprint%20Round.pdf">2015 Mathcounts State Sprint</a>
+|March 27, 2020 | Modular Arithmetic stretch from homework packet | <a href="https://www.scarsdaleschools.k12.ny.us/cms/lib5/NY01001205/Centricity/Domain/398/2015%20State%20Competition%20Target%20Round.pdf">2015 Mathcounts State Target</a>
+|April 3, 2020 | | <a href="https://samsmathclub.com/Forum/index.php?action=dlattach;topic=35.0;attach=43">2014 Mathcounts State Sprint</a>
+|April 17, 2020 | | <a href="https://samsmathclub.com/Forum/index.php?action=dlattach;topic=35.0;attach=44">2014 Mathcounts State Target</a>
 |April 24, 2020 | | 
