@@ -15,7 +15,9 @@ We recommend doing this via Slack. If there isn't a "students only" channel, ple
 
 #### 2. Collect feedback throughout the block
 
-The main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and then also through one or more surveys during the block. We have generally found that surveys with both quantitative and qualitative fields are useful - the text fields allow us to hear individual student comments, and the quantitative fields let us know where the majority sentiment lies. During the meeting (see below), block reps often provide us with a document summarizing the survey results, which we archive for future reference. 
+The main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and then also through one or more surveys during the block. We have generally found that surveys with both quantitative and qualitative fields are useful - the text fields allow us to hear individual student comments, and the quantitative fields let us know where the majority sentiment lies. Furthermore, in your survey we suggest including both a positively-framed question and a constructively-framed question, e.g. "What is working well in this course?" and "What could be improved in this course?".
+
+During the meeting (see below), block reps often provide us with a document summarizing the survey results, which we archive for future reference. 
 
 #### 3. Attend our team meeting
 
