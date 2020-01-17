@@ -5,7 +5,7 @@ title: Block reps
 
 ## MDS Block representatives
 
-Every block, a student volunteers to represent their peers, acting as a liaison between students and MDS leadership (we/our/ours). This allows us to see how the block is going, allowing us to make changes if need be. 
+Every block, one or more students volunteer to represent their peers, acting as a liaison between students and MDS leadership (we/our/ours). This allows us to see how the block is going, allowing us to make changes if need be. 
 
 Here are some guidelines for the "block rep".
 
@@ -15,11 +15,7 @@ We recommend doing this via Slack. If there isn't a "students only" channel, ple
 
 #### 2. Collect feedback throughout the block
 
-The main responsibility is to collect feedback from your classmates. How you do this is up to you. Some block reps use online surveys, or even invite students to meet them in person during a dedicated time.
-
-Each block, we will be dedicating a time during lecture for students to discuss the block as a class. This is a great avenue for the block rep to record some key insights.
-
-The block rep often chooses to create a short informal report (usually in Markdown), which we archive on our end.
+The main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and then also through one or more surveys during the block. We have generally found that surveys with both quantitative and qualitative fields are useful - the text fields allow us to hear individual student comments, and the quantitative fields let us know where the majority sentiment lies. During the meeting (see below), block reps often provide us with a document summarizing the survey results, which we archive for future reference. 
 
 #### 3. Attend our team meeting
 
