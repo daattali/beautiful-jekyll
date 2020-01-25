@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structDGtal_1_1CDrawableWithDisplay3D.html" title="DGtal::CDrawableWithDisplay3\lD\&lt; T, S, KS \&gt;" alt="" coords="7,39,220,86"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CDrawableWithBoard3DTo2D.html" title="DGtal::CDrawableWithBoard3\lDTo2D\&lt; T, S, KS \&gt;" alt="" coords="272,5,477,51"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CDrawableWithViewer3D.html" title="Aim: The concept CDrawableWithViewer3D specifies what are the classes that admit an export with Viewe..." alt="" coords="269,74,480,121"/>
-</map>

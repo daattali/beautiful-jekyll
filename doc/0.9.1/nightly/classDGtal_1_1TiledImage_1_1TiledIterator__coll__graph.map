@@ -1,5 +1,0 @@
-<map id="DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator" name="DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator">
-<area shape="rect" id="node4" href="$classDGtal_1_1HyperRectDomain__Iterator.html" title="DGtal::HyperRectDomain\l_Iterator\&lt; TPoint \&gt;" alt="" coords="447,109,628,155"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1TiledImage.html" title="Aim: implements a tiled image from a &quot;bigger/original&quot; one from an ImageFactory. " alt="" coords="400,178,675,259"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1ImageCache.html" title="Aim: implements an images cache with &#39;read and write&#39; policies. " alt="" coords="5,187,245,251"/>
-</map>

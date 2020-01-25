@@ -1,6 +1,0 @@
-<map id="DGtal::CConstBidirectionalRange&lt; T &gt;" name="DGtal::CConstBidirectionalRange&lt; T &gt;">
-<area shape="rect" id="node5" href="$structDGtal_1_1CBidirectionalRange.html" title="Aim: Defines the concept describing a bidirectional range. " alt="" coords="5,188,235,217"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1CConstBidirectionalRangeFromPoint.html" title="Aim: refined concept of const bidirectional range with a begin() method from a point. " alt="" coords="259,179,448,226"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const single pass range. " alt="" coords="108,5,364,35"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1CBidirectionalRangeFromPoint.html" title="Aim: refined concept of single pass range with a begin() method from a point. " alt="" coords="140,275,332,322"/>
-</map>

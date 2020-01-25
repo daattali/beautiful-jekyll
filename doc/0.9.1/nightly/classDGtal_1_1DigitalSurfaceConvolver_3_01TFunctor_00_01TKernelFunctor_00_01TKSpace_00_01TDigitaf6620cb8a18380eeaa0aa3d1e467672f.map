@@ -1,5 +1,0 @@
-<map id="DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;" name="DGtal::DigitalSurfaceConvolver&lt; TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, 3 &gt;">
-<area shape="rect" id="node4" title="STL class. " alt="" coords="41,111,167,140"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="DGtal::CanonicSCellEmbedder\l\&lt; KSpace \&gt;" alt="" coords="227,217,440,263"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1CanonicSCellEmbedder.html" title="Aim: A trivial embedder for signed cell, which corresponds to the canonic injection of cell centroids..." alt="" coords="227,102,440,149"/>
-</map>

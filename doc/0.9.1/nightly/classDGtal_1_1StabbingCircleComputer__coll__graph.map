@@ -1,9 +1,0 @@
-<map id="DGtal::StabbingCircleComputer&lt; TConstIterator &gt;" name="DGtal::StabbingCircleComputer&lt; TConstIterator &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; StabbingLine\lComputer\&lt; ConstIterator \&gt; \&gt;" alt="" coords="1071,82,1284,129"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l StabbingLineComputer\l\&lt; ConstIterator \&gt; \&gt;" alt="" coords="676,7,849,71"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,11,155,58"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,57,455,87"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="689,95,836,124"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1CircleFrom3Points.html" title="DGtal::CircleFrom3Points\l\&lt; Point \&gt;" alt="" coords="1088,151,1267,198"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1CircleFrom3Points.html" title="Aim: Represents a circle uniquely defined by three 2D points and that is able to return for any given..." alt="" coords="673,151,852,198"/>
-</map>

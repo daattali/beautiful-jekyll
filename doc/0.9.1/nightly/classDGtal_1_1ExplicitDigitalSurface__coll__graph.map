@@ -1,5 +1,0 @@
-<map id="DGtal::ExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;" name="DGtal::ExplicitDigitalSurface&lt; TKSpace, TSurfelPredicate &gt;">
-<area shape="rect" id="node4" title="STL class. " alt="" coords="21,111,147,140"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1SurfelAdjacency.html" title="DGtal::SurfelAdjacency\l\&lt; KSpace::dimension \&gt;" alt="" coords="187,217,360,263"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1SurfelAdjacency.html" title="Aim: Represent adjacencies between surfel elements, telling if it follows an interior to exterior ord..." alt="" coords="189,102,357,149"/>
-</map>

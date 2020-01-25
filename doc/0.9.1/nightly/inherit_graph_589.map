@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html" title="Aim: a cellular embedder for implicit functions, (default constructible, copy constructible, assignable). Model of CCellEmbedder and CWithGradientMap. " alt="" coords="5,13,261,77"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html" title="Forward declaration. " alt="" coords="311,5,548,86"/>
-</map>

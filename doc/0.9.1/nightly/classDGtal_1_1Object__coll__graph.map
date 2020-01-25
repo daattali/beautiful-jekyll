@@ -1,9 +1,0 @@
-<map id="DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;" name="DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; DigitalTopology \&gt;" alt="" coords="963,51,1197,80"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DigitalTopology \&gt;" alt="" coords="635,5,784,51"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="5,73,155,119"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="281,81,455,111"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DigitalSet \&gt;" alt="" coords="635,134,784,181"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer. " alt="" coords="636,77,783,107"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; DigitalSet \&gt;" alt="" coords="979,104,1181,133"/>
-</map>
