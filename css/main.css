@@ -6,8 +6,13 @@ layout: null
 
 /* --- General --- */
 
+html, body {
+  height: 100%;
+}
 body {
   font-family: 'Lora', 'Times New Roman', serif;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   color: #404040;
   position: relative;
@@ -63,6 +68,10 @@ hr.small {
 
 .hideme {
   display: none;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 ::-moz-selection {
@@ -261,6 +270,7 @@ img {
 /* --- Footer --- */
 
 footer {
+  flex-shrink: 0;
   padding: 30px 0;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
