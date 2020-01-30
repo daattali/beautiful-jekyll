@@ -14,4 +14,10 @@ The change has been delayed to March 2020 because too many customers and vendors
 
 If your identity sources are configured as "Active Directory (Windows integrated)" or "LDAPS" you don't need to change anything.
 
-If you have an identity source configured with "simple" LDAP you will need to [enable LDAPS](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html). To enable LDAPS you will need the certificates of the domain controllers, the procedure is described [here](https://ldapwiki.com/wiki/Obtain%20a%20Certificate%20from%20Server).
+If you have an identity source configured with "simple" LDAP you will face failed logins after the update. You need to [enable LDAPS](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html). To enable LDAPS you will need the certificates of the domain controllers, the procedure is described [here](https://ldapwiki.com/wiki/Obtain%20a%20Certificate%20from%20Server).
+
+#### Horizon
+
+The VDI solution is [compatible ](https://kb.vmware.com/s/article/76062)with the update so nothing to do here. However you need to ensure that Horizon connects to vCenter using a secure identity source, otherwise the vCenter object will be in red in the Horizon manager health pane.
+
+#### App Volumes
