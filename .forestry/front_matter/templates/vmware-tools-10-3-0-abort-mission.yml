@@ -29,4 +29,5 @@ pages:
 - _posts/2019-09-23-change-location-of-esxi-coredump-file.md
 - _posts/2019-10-09-vcenter-unreachable-vcha-active-node-isolated.md
 - _posts/2019-10-23-vcsa-update-with-iis-repository-fix-download-failed-error.md
+- _posts/2020-ldap-channel-binding-and-ldap-signing-requirement-for-windows.md
 - _posts/vami-certificate-not-updated-after-certificate-change.md
