@@ -10,7 +10,7 @@ Students are concurrently introduced to R and Python in the MDS in the first wee
 
 <img src="../img/mds-language-overview.png">
 
-<font color="gray"> Distribution of the R and Python programming languages across the University of British Columbia's Master of Data Science program courses.</font>
+**Figure 1.** Distribution of the R and Python programming languages across the University of British Columbia's Master of Data Science program courses.</font>
 
 MDS has spent a significant amount of time considering which tools to teach to enable students to work harmoniously in both R & Python, as well as how to blend these languages within a data science project. Below we list the tools that we teach in the program for working in **both** R & Python, as well as some we specifically use for blending between the two languages within a single project:
 
@@ -29,32 +29,32 @@ In the first month of the program, students are taught to how to program in both
 
 <img src="../img/r_in_jupyter.png" height="450px">
 
-Example of using a Jupyter notebook as lecture notes to teach programming in R for Data Science.
+**Figure 2.** Example of using a Jupyter notebook as lecture notes to teach programming in R for Data Science.
 
 Near the end of the first month in the program, we next start moving the students into a more powerful editor - RStudio. We first have them use RStudio to edit, create and run literate coding documents using R and R Markdown. Then a month or so later in our workflows course, we teach them to use RStudio to develop and run R scripts, as well as Python scripts and R Markdown documents that use Python as the coding engine. This tool use is continued in our collaborative software development course (where they learn to package R & Python code into packages). Having one powerful interactive development environement (IDE) that can be used for both languages is very nice and efficient for the students as they only need to learn the in's and out's of one IDE and they can then do most of their data science things from one place. 
 
 <img src="../img/python_in_rstudio.png" height="450px">
 
-Example of using RStudio as an IDE to develop and run a Python script.
+**Figure 3.** Example of using RStudio as an IDE to develop and run a Python script.
 
 When we teach students how to automate the running of scripts in a specified order, as in a data analysis pipeline, we use and teach the tool GNU Make. Many R and Python-specific tools exist to accomplish this task (e.g., drake, snakemake, etc) but we have chosen GNU Make because it is language agnostic (it can incorporate scripts written in any programming language), it is a good introduction-level tool for pipeline automation, and it is a tool currently used in industry. Furthermore, alumni have reported that learning GNU Make in MDS has facilitated their self-learning on more advanced pipeline automation tools after MDS, such as Apache Airflow and Luigi. 
 
 <img src="../img/Makefile.png" height="450px">
 
-Example of a Makefile that has been written for the purpose of automating a data analysis pipeline.
+**Figure 4.** Example of a Makefile that has been written for the purpose of automating a data analysis pipeline.
 
 In MDS, we focus on teaching the use of containers, such as Docker, to create reproducibile, sharable and shippable compute environments for data anlalysis projects. We chose to focus on containers (e.g., Docker) for a similar reasons to why we chose to focus on GNU Make - it is language agnostic, working with both R & Python (in contrast to other language specific tools like packrat and virtualenv) and is currently used in industry. Additionally, Docker has added advantages 
 in remote computing compared to using a tool like conda alone (which also works with R & Python), and thus learning Docker has several additional advantages.
 
 <img src="../img/Makefile.png" height="450px">
 
-Example of a Dockerfile and a hosting of the resultant Docker image on Docker Hub that can be used for creating a reproducibile, sharable and shippable compute environments for a data anlalysis project.
+**Figure 5.** Example of a Dockerfile and a hosting of the resultant Docker image on Docker Hub that can be used for creating a reproducibile, sharable and shippable compute environments for a data anlalysis project.
 
 Finally, to teach creating interactive data visualizations and dashboards in R and Python, we choose the tool plotly Dash as it is now (as of 2019) compatible with both R and Python. Our choice for plotly Dash is built upon the same rationale as why we choose to use the same IDE for both R and Python - to minimize the unecessary and extraneous cognitive load of learning different systems for different languages when it is not absolutely necessary. By focusing on the same dashboarding tool, the framework and deployment challenges remain the same, and then students can just focus on the language differences. 
 
 <img src="img/plotly-dash.png" height="450px">
 
-Example of using R with plotly Dash to create an interactive data visualization dashboard.
+**Figure 6.** Example of using R with plotly Dash to create an interactive data visualization dashboard.
 
 ### Pedagogical challenges of teaching R and Python concurrently
 
