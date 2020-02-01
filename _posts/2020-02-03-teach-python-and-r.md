@@ -10,7 +10,7 @@ Students are concurrently introduced to R and Python in the MDS in the first wee
 
 <img src="../img/mds-language-overview.png">
 
-<font color="gray"> Distribution of the R and Python programming languages across the University of British Columbia's Master of Data Science program courses.</font>
+<font color="grey"> Distribution of the R and Python programming languages across the University of British Columbia's Master of Data Science program courses.</font>
 
 MDS has spent a significant amount of time considering which tools to teach to enable students to work harmoniously in both R & Python, as well as how to blend these languages within a data science project. Below we list the tools that we teach in the program for working in **both** R & Python, as well as some we specifically use for blending between the two languages within a single project:
 
