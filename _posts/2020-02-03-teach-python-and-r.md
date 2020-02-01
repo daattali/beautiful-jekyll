@@ -110,15 +110,15 @@ I would like to acknowledge all the other Master of Data Science core teaching t
 - [Mike Gelbart](https://www.mikegelbart.com/) 
 - [Vincenzo Coia](https://vincenzocoia.github.io/)
 - [Varada Kolhatkar](https://kvarada.github.io/)
-- [Rodolfo Lourenzutti]()
-- [Firas Moosvi]()
-- [Thomas Beuzen]()
+- [Rodolfo Lourenzutti](https://www.linkedin.com/in/rodolfo-lourenzutti/?originalSubdomain=ca)
+- [Firas Moosvi](http://firas.moosvi.com/)
+- [Thomas Beuzen](https://tomasbeuzen.github.io/)
 
 #### Past
-- [Guilio]()
+- [Giulio Valentino Dalla Riva](https://www.gvdallariva.net/about/)
 
 ### Master of Data Science founders
-- [Jenny Bryan]()
-- [Paul Gustafson]()
-- [Raymond Ng]()
-- [Gail Murphy]()
+- [Jenny Bryan](https://jennybryan.org/)
+- [Paul Gustafson](http://www.paulgstf.com/)
+- [Raymond Ng](https://www.cs.ubc.ca/~rng/)
+- [Gail Murphy](https://blogs.ubc.ca/gailcmurphy/)
