@@ -4,7 +4,7 @@ title: 2020 LDAP channel binding and LDAP signing requirement for Windows
 DATE: 
 
 ---
-In summer 2019 Microsoft [announced ](https://support.microsoft.com/en-ca/help/4520412/2020-ldap-channel-binding-and-ldap-signing-requirement-for-windows)an update scheduled for January 2020 that would change the default behavior of domain controllers with regards to the security of LDAP communications. After this change, domain controllers will reject insecure LDAP communications. To quote Microsoft:
+In summer 2019 Microsoft [announced ](https://support.microsoft.com/en-ca/help/4520412/2020-ldap-channel-binding-and-ldap-signing-requirement-for-windows)an update scheduled for January 2020 that would change the default behavior of domain controllers with regards to the security of LDAP communications. After this change, domain controllers will reject insecure LDAP communications regarding [LDAP signing](https://support.microsoft.com/en-ca/help/935834/how-to-enable-ldap-signing-in-windows-server-2008) and [LDAP Channel binding](https://support.microsoft.com/en-ca/help/4034879/how-to-add-the-ldapenforcechannelbinding-registry-entry). To quote Microsoft:
 
 > ...reject Simple Authentication and Security Layer (SASL) LDAP binds that do not request signing (integrity verification) or to reject LDAP simple binds that are performed on a clear text (non-SSL/TLS-encrypted) connection.
 
