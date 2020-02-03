@@ -4,9 +4,9 @@ title: Integrating R & Python into a Data Science program
 share-img: "https://rstudio.github.io/reticulate/images/reticulated_python.png"
 ---
 
-R and Python are the two leading languages used in industry and academia for data analysis. Thus, to best prepare students in the University of British Columbia's course-based, professional Master of Data Science (MDS) program to be competitive and perform on the job market we have made an explicit decision to have our program teach both the R and Python programming languages. 
+R and Python are the two leading languages used in industry and academia for data analysis. Thus, to best prepare students in the University of British Columbia's course-based, professional Master of Data Science (MDS) program to be competitive and perform on the job market, we have made an explicit decision to teach both languages. 
 
-Students are concurrently introduced to R and Python in the MDS in the first week of the program, and exposed and challenged to do work in both of these languages for all 8 months of their coursework. In some courses, students learn the same skills in both languages (e.g., general programming, data wrangling, visualization, software development and packaging) and in other courses we specialize in one language in order to go more deeply into that topic (e.g., statistical inference in R, and machine learning in Python). In the 2 month-long Capstone project at the end of the program, students are work with their Capstone industry, government or not-for-profit partner to choose the language that best suits the project based on the problem and the language the Capstone partner's organization uses. Below we show a breakdown of how these languages are distributed across the program:
+Students are concurrently introduced to R and Python in the first month of MDS, and they work in both languages for all 8 months of their coursework. In some courses, students learn the same skills in both languages (e.g., general programming, data wrangling, visualization, software development and packaging) and in other courses we specialize in one language in order to go more deeply into that topic (e.g., statistical inference in R, and machine learning in Python). In the 2-month Capstone project at the end of the program, students work with a partner from industry, government or not-for-profit. At the start of the project, the students and partner agree on which programming language will be used. This decision is sometimes based on what best suits the project, and other times is chosen based on what the Capstone partner's organization already uses. Other times the projects involve a mix of both languages. Below we show a breakdown of how these languages are distributed across the program:
 
 <img src="../img/mds-language-overview.png">
 
@@ -25,13 +25,13 @@ MDS has spent a significant amount of time considering which tools to teach to e
 
 ### Examples of how we use and teach these tools
 
-In the first month of the program, students are taught to how to program in both R & Python concurrently. To reduce excessive and uneccessary cognitive load we choose to teach both of these programming lanuages using the same simple code editor - Jupyter (which also allows us to easily use automated feedback and grading on coding assignments - more on this later). This lets students quickly learn **one** simple editor, allowing them to then focus their efforts on learning the two programming languages.
+In the first month of the program, students are taught to how to program in both R & Python concurrently. To reduce excessive and unnecessary cognitive load we choose to teach both of these programming languages using the same simple code editor - Jupyter (which also allows us to easily use automated feedback and grading on coding assignments - more on this later). This lets students quickly learn **one** simple editor, allowing them to then focus their efforts on learning the two programming languages.
 
 <img src="../img/r_in_jupyter.png" height="450px">
 
 **Figure 2.** Example of using a Jupyter notebook as lecture notes to teach programming in R for Data Science.
 
-Near the end of the first month in the program, we next start moving the students into a more powerful editor - RStudio. We first have them use RStudio to edit, create and run literate coding documents using R and R Markdown. Then a month or so later in our workflows course, we teach them to use RStudio to develop and run R scripts, Python scripts, and R Markdown documents that use Python as the coding engine. We continuing teaching R and Python programming with the RStudio IDE in our collaborative software development course (where they learn to package R & Python code into packages). Having one powerful interactive development environement (IDE) that can be used for both languages is very nice and efficient for the students as they only need to learn the in's and out's of one IDE and they can then do most of their data science things from one place. 
+Near the end of the first month in the program, we next start moving the students into a more powerful editor - RStudio. We first have them use RStudio to edit, create and run literate coding documents using R and R Markdown. Then a month or so later in our workflows course, we teach them to use RStudio to develop and run R scripts, Python scripts, and R Markdown documents that use Python as the coding engine. We continuing teaching R and Python programming with the RStudio IDE in our collaborative software development course (where they learn to package R & Python code into packages). Having one powerful interactive development environment (IDE) that can be used for both languages is very nice and efficient for the students as they only need to learn the in's and out's of one IDE and they can then do most of their data science things from one place. 
 
 <img src="../img/python_in_rstudio.png" height="450px">
 
@@ -43,14 +43,14 @@ When we teach students how to automate the running of scripts in a specified ord
 
 **Figure 4.** Example of a Makefile that has been written for the purpose of automating a data analysis pipeline.
 
-In MDS, we focus on teaching the use of containers, such as Docker, to create reproducibile, sharable and shippable compute environments for data anlalysis projects. We chose to focus on containers (e.g., Docker) for a similar reasons to why we chose to focus on GNU Make - it is language agnostic, working with both R & Python (in contrast to other language specific tools like packrat and virtualenv) and is currently used in industry. Additionally, Docker has added advantages 
+In MDS, we focus on teaching the use of containers, such as Docker, to create reproducible, sharable and shippable compute environments for data analysis projects. We chose to focus on containers (e.g., Docker) for a similar reasons to why we chose to focus on GNU Make - it is language agnostic, working with both R & Python (in contrast to other language specific tools like packrat and virtualenv) and is currently used in industry. Additionally, Docker has added advantages 
 in remote computing compared to using a tool like conda alone (which also works with R & Python), and thus learning Docker has several additional advantages.
 
 <img src="../img/Makefile.png" height="450px">
 
-**Figure 5.** Example of a Dockerfile and a hosting of the resultant Docker image on Docker Hub that can be used for creating a reproducibile, sharable and shippable compute environments for a data anlalysis project.
+**Figure 5.** Example of a Dockerfile and a hosting of the resultant Docker image on Docker Hub that can be used for creating a reproducible, sharable and shippable compute environments for a data analysis project.
 
-Finally, to teach creating interactive data visualizations and dashboards in R and Python, we choose the tool plotly Dash as it is now (as of 2019) compatible with both R and Python. Our choice for plotly Dash is built upon the same rationale as why we choose to use the same IDE for both R and Python - to minimize the unecessary and extraneous cognitive load of learning different systems for different languages when it is not absolutely necessary. By focusing on the same dashboarding tool, the framework and deployment challenges remain the same, and then students can just focus on the language differences. 
+Finally, to teach creating interactive data visualizations and dashboards in R and Python, we choose the tool plotly Dash as it is now (as of 2019) compatible with both R and Python. Our choice for plotly Dash is built upon the same rationale as why we choose to use the same IDE for both R and Python - to minimize the unnecessary and extraneous cognitive load of learning different systems for different languages when it is not absolutely necessary. By focusing on the same dashboarding tool, the framework and deployment challenges remain the same, and then students can just focus on the language differences. 
 
 <img src="../img/plotly-dash.png" height="450px">
 
@@ -69,7 +69,7 @@ the top 3 we have faced and discuss what we have done to try and address them.
 
 Given the diverse backgrounds of our MDS students (which we see as a great strength of the program), our students begin MDS with mixed proficiencies of previously learnt R & Python programming skills. To be accepted into the MDS program, students must satisfy our computer science pre-requisite (they must have successfully completed at least one university-level programming course), however this course could have been taught using any programming language. Thus, although all our students have some foundational programming skills when they start MDS, some have never programmed in R, some have never programmed in Python, some have never programmed in either of these languages and some are proficient in both R & Python. This leads to some students needing more help at the beginning of the program to learn these languages, and to some students being "bored" because they already have experience and some level of proficiency in one or both languages.
 
-The address this challenge we have taken a two-pronged approach. To support the more novice R and Python learners we provide coding questions that have immediate feedback (via visible code tests) and hints within MDS homework assignments. This has the added benefit of allowing us to autograde the questions using a tool called [nbgrader](https://nbgrader.readthedocs.io/en/stable/) (which works in both R & Python). In addition to this, we share external resources, such as the [`swirl` R package](https://swirlstats.com/), where students can get more practice (with automated feedback) to further solidify and strengthen their skills. To support and motivate the more experienced R and Python learners we include more advanced optional questions in our MDS homework assignments to challenge them and help improve their programming skills even further.
+The address this challenge we have taken a two-pronged approach. To support the more novice R and Python learners we provide coding questions that have immediate feedback (via visible code tests) and hints within MDS homework assignments. This has the added benefit of allowing us to auto-grade the questions using a tool called [nbgrader](https://nbgrader.readthedocs.io/en/stable/) (which works in both R & Python). In addition to this, we share external resources, such as the [`swirl` R package](https://swirlstats.com/), where students can get more practice (with automated feedback) to further solidify and strengthen their skills. To support and motivate the more experienced R and Python learners we include more advanced optional questions in our MDS homework assignments to challenge them and help improve their programming skills even further.
 
 #### Dual task interference
 
@@ -85,13 +85,13 @@ Each year thereafter, we have worked hard to keep improving the balance of the l
 
 ### Summary
 
-Over the last 4 years we have experimented and oberved our teaching practices and student learning in a data science program that teaches both R & Python. We believe that teaching the two leading languages used in industry and academia for data analysis provides our students with a competitive edge and more opportunities once they graduate from MDS and search for their first data science job. However, we also believe that integrating R & Python into a data science program should not be done haphazardly that and care and concientiousness must be taken to do this sucessfully. We end here with our top four recommendations for those who are considering doing this for their data science programs:
+Over the last 4 years we have experimented and observed our teaching practices and student learning in a data science program that teaches both R & Python. We believe that teaching the two leading languages used in industry and academia for data analysis provides our students with a competitive edge and more opportunities once they graduate from MDS and search for their first data science job. However, we also believe that integrating R & Python into a data science program should not be done haphazardly that and care and conscientiousness must be taken to do this successfully. We end here with our top four recommendations for those who are considering doing this for their data science programs:
 
 1. Carefully choose tools that work well with both languages, and skip the ones that don't.
 
 2. Expect students to have a heterogeneous knowledge base that may differ between languages, and design exercises to address this.
 
-3. Teach the R'isms and the Python'isms and have the students compare and contrast them. Also, assess them on this!
+3. Teach the R-isms and the Python-isms and have the students compare and contrast them. Also, assess them on this!
 
 4. Structure the program so students repeatedly practice both languages, and avoid gaps in one language if possible!
 
