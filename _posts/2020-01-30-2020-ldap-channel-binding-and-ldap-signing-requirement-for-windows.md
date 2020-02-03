@@ -10,19 +10,31 @@ In summer 2019 Microsoft [announced ](https://support.microsoft.com/en-ca/help/4
 
 The change has been delayed to March 2020 to wait after the 2019 holidays. Many administrators restrict configuration changes during the holiday season and they needed to give them more time to prepare and test...
 
+***
+
 #### vCenter
 
 If your identity sources are configured as "Active Directory (Windows integrated)" or "LDAPS" you don't need to change anything.
 
 If you have an identity source configured with "simple" LDAP you will face failed logins after the update. You need to [enable LDAPS](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.psc.doc/GUID-98B36135-CDC1-435C-8F27-5E0D0187FF7E.html). To enable LDAPS you will need the certificates of the domain controllers, the procedure is described [here](https://ldapwiki.com/wiki/Obtain%20a%20Certificate%20from%20Server).
 
+***
+
 #### Horizon
 
 The VDI solution is [compatible ](https://kb.vmware.com/s/article/76062)with the update so nothing to do here. However you need to ensure that Horizon connects to vCenter using a secure identity source, otherwise the vCenter object will be in red in the Horizon manager health pane.
 
+***
+
 #### App Volumes
 
+_EDIT:_
+
+_As I observed in my lab, App Volumes is not compatible with Channel binding as of version 2.18. See_ [_KB77093_](https://kb.vmware.com/s/article/77093)_. VMware is working on a fix, in the meantime it is recommended by VMware to set the registry key LdapEnforceChannelBinding to 0._
+
 Like with vCenter, you need to enable LDAPS or TLS encryption in the AD domain pane. Otherwise you will also fail to connect to it using domain credentials. Find the procedure to enable LDAPS [here](https://docs.vmware.com/en/VMware-App-Volumes/2.18/com.vmware.appvolumes.admin.doc/GUID-4EA6EF73-7800-4241-9162-2C407AC4AA7A.html). Note that it is recommended to enable certificate verification but it will still work without it.
+
+***
 
 #### Other software
 
