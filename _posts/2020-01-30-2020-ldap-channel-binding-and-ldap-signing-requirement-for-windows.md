@@ -28,7 +28,7 @@ The VDI solution is [compatible ](https://kb.vmware.com/s/article/76062)with the
 
 #### App Volumes
 
-_EDIT:_
+_EDIT 03/02/2020:_
 
 _As I observed in my lab, App Volumes is not compatible with Channel binding as of version 2.18. See_ [_KB77093_](https://kb.vmware.com/s/article/77093)_. VMware is working on a fix, in the meantime it is recommended by VMware to set the registry key LdapEnforceChannelBinding to 0._
 
