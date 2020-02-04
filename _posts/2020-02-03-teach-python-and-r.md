@@ -47,7 +47,7 @@ When we teach students how to automate the running of scripts in a specified ord
 
 In MDS, we teach the use of containers, such as Docker, to create reproducible, sharable and shippable compute environments for data analysis projects. Like GNU Make, Docker is language agnostic, working with both R & Python (in contrast to other language specific tools like packrat and virtualenv) and is also heavily used in industry. Additionally, Docker has added advantages in remote computing compared to using a tool like conda alone (which also works with R & Python), and thus learning Docker has several additional advantages.
 
-<img src="../img/Makefile.png" height="450px">
+<img src="../img/docker.png" height="450px">
 
 **Figure 5.** Example of a Dockerfile and the resultant Docker image on Docker Hub, which can be used for creating a reproducible, sharable and shippable compute environments for a data analysis project.
 
