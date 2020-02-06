@@ -10,13 +10,12 @@ title: Documentation & Help
 * [Documentation docset URL][3] (1.0, for [Dash][4] or [Zeal][5] tools)
 
 
-### Slides of Tutorial of Digital Geometry in Pattern Recognition  (26/11/2019)
-[ACPR](https://www.acpr2019.org/program.html) tutorial on Digital Geometry in Pattern Recognition ([GitHub repository](https://kerautret.github.io/ACPR19-DGPRTutorial/))
+### Slides of [ACPR](https://www.acpr2019.org/program.html) Tutorial on Digital Geometry in Pattern Recognition  (26/11/2019)
 
-Extracting Geometric Features with DGtal and Applications:
+Extracting Geometric Features with DGtal and Applications  ([GitHub repository](https://kerautret.github.io/ACPR19-DGPRTutorial/)):
 
 * [<img class="alignnone wp-image-413 size-medium" title="partie1TutoDG_ACPR19_teaser" src="img/partie1TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie1TutoDG_ACPR19_teaser.png)[Part1][23]
-* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie2TutoDG_ACPR19_teaser.png)[Part2][24]
+* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie1TutoDG_ACPR19_teaser.png)[Part2][24]
 
 
 ### Slides of DGtal Meeting (29/08/2011)
