@@ -12,10 +12,12 @@ title: Documentation & Help
 
 ### Slides of Tutorial of Digital Geometry in Pattern Recognition  (26/11/2019)
 [ACPR](https://www.acpr2019.org/program.html) tutorial on Digital Geometry in Pattern Recognition ([GitHub repository](https://kerautret.github.io/ACPR19-DGPRTutorial/))
- Extracting Geometric Features with DGtal and Applications:
-* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser.png" src="" alt="" width="300" height="76" />][6][Part1]
-* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser.png" src="" alt="" width="300" height="76" />][6][Part2]
-gut
+
+Extracting Geometric Features with DGtal and Applications:
+
+* [<img class="alignnone wp-image-413 size-medium" title="img/partie2TutoDG_ACPR19_teaser.png" src="" alt="" width="300" height="76" />][6][Part1]
+* [<img class="alignnone wp-image-413 size-medium" title="img/partie2TutoDG_ACPR19_teaser.png" src="" alt="" width="300" height="76" />][6][Part2]
+
 
 ### Slides of DGtal Meeting (29/08/2011)
 * [<img class="alignnone wp-image-413 size-medium" title="presentationDGtalMeeting2012_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presentationDGtalMeeting2012_thumb-e1415195647526-300x76.png" alt="" width="300" height="76" />][23][Introduction to DGtal and its concepts][7]
