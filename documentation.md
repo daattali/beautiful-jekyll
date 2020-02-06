@@ -15,12 +15,12 @@ title: Documentation & Help
 
 Extracting Geometric Features with DGtal and Applications:
 
-* [<img class="alignnone wp-image-413 size-medium" title="partie1TutoDG_ACPR19_teaser" src="img/partie1TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />][6][Part1]
-* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />][6][Part2]
+* [<img class="alignnone wp-image-413 size-medium" title="partie1TutoDG_ACPR19_teaser" src="img/partie1TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />][img/partie1TutoDG_ACPR19_teaser.png][Part1][23]
+* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />][img/partie2TutoDG_ACPR19_teaser.png][Part2][24]
 
 
 ### Slides of DGtal Meeting (29/08/2011)
-* [<img class="alignnone wp-image-413 size-medium" title="presentationDGtalMeeting2012_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presentationDGtalMeeting2012_thumb-e1415195647526-300x76.png" alt="" width="300" height="76" />][23][Introduction to DGtal and its concepts][7]
+* [<img class="alignnone wp-image-413 size-medium" title="presentationDGtalMeeting2012_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presentationDGtalMeeting2012_thumb-e1415195647526-300x76.png" alt="" width="300" height="76" />][6][Introduction to DGtal and its concepts][7]
 
 * [<img class="alignnone wp-image-297 size-medium" title="domainRange_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/domainRange_thumb-e1415195666598-300x75.png" alt="" width="300" height="75" />][8][Digital Domains][9]
 * [<img class="alignnone wp-image-285 size-medium" title="slidesTopo_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/slidesTopo_thumb-e1415195678710-300x78.png" alt="" width="300" height="78" />][10][Topology package][11]
