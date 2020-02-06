@@ -15,8 +15,8 @@ title: Documentation & Help
 
 Extracting Geometric Features with DGtal and Applications:
 
-* [<img class="alignnone wp-image-413 size-medium" title="img/partie2TutoDG_ACPR19_teaser.png" src="" alt="" width="300" height="76" />][6][Part1]
-* [<img class="alignnone wp-image-413 size-medium" title="img/partie2TutoDG_ACPR19_teaser.png" src="" alt="" width="300" height="76" />][6][Part2]
+* [<img class="alignnone wp-image-413 size-medium" title="partie1TutoDG_ACPR19_teaser" src="img/partie1TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />][6][Part1]
+* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />][6][Part2]
 
 
 ### Slides of DGtal Meeting (29/08/2011)
