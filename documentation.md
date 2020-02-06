@@ -15,7 +15,7 @@ title: Documentation & Help
 Extracting Geometric Features with DGtal and Applications  ([GitHub repository](https://kerautret.github.io/ACPR19-DGPRTutorial/)):
 
 * [<img class="alignnone wp-image-413 size-medium" title="partie1TutoDG_ACPR19_teaser" src="img/partie1TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie1TutoDG_ACPR19_teaser.png)[Part1][23]
-* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie1TutoDG_ACPR19_teaser.png)[Part2][24]
+* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie2TutoDG_ACPR19_teaser.png)[Part2][24]
 
 
 ### Slides of DGtal Meeting (29/08/2011)
