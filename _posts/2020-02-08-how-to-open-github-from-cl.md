@@ -14,8 +14,8 @@ Here is how to do it:
 
 *Note I am working on a Mac, these instructions may not work for Linux or Windows users.*
 
-1. Open your `.bash_profile` or `.zshrc` file.
-2. Copy and paste the code below into the file
+- Open your `.bash_profile` or `.zshrc` file.
+- Copy and paste the code below into the file
 
 ```bash
 gopen(){
@@ -25,7 +25,8 @@ gopen(){
     open "$git_url"
 }
 ```
-3. Restart your command line.
-4. Test that it is working by navigating in the command line to a directory with a remote repo. Type `gopen` into the command line, and it should open your remote repo in your default browser!
+
+- Restart your command line.
+- Test that it is working by navigating in the command line to a directory with a remote repo. Type `gopen` into the command line, and it should open your remote repo in your default browser!
 
 ![screencast](https://i.imgur.com/rMNNld4.gif)
