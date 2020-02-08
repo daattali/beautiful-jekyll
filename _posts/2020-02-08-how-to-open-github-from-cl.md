@@ -1,0 +1,31 @@
+---
+layout: post
+title: How to Open GitHub.com Repo from the Command Line
+tags: [data-science]
+---
+
+During my Masters of Data Science I was often working on my GitHub repos at the same time. Most of our homework was graded on GitHub.com, so it was important to ensure that after pushing my local repo to GitHub.com that everything rendered quickly.
+
+I realized there was no quick way to open the repo on GitHub.com from the command line. This started to become annoying because I would constantly have to navigate to the repo in my browser.
+
+After many months of pain, I found a very quick and simple solution. With a few lines of a bash script you can open the remote repo in your default browser.
+
+Here is how to do it:
+
+*Note I am working on a Mac, these instructions may not work for Linux or Windows users.*
+
+1. Open your `.bash_profile` or `.zshrc` file.
+2. Copy and paste the code below into the file
+
+```bash
+gopen(){
+    # open the current repo in browser
+    # https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr
+    git_url=`git config --get remote.origin.url`
+    open "$git_url"
+}
+```
+3. Restart your command line.
+4. Test that it is working by navigating in the command line to a directory with a remote repo. Type `gopen` into the command line, and it should open your remote repo in your default browser!
+
+![screencast](https://i.imgur.com/iOViiDd.gif)
