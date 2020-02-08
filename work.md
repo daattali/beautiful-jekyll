@@ -73,3 +73,9 @@ _[Katherine Walstrom](https://www.ncf.edu/directory/listing/katherine-walstrom/)
 
 My thesis proposes a model for RNA Helicase A function in endogenous _C. elegans_ RNAi pathways.
 
+
+### Searching for P450 Active site mimics
+_[Paul Scudder](https://www.ncf.edu/directory/listing/paul-scudder/) lab. [New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2008 → 2009_
+
+I partially synthesized precursors to a novel high-valent iron-stabilizing macrocycle based on
+the active site of cytochrome P450.
