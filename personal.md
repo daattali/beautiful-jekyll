@@ -42,6 +42,7 @@ My dream is to use <strong>artificial intelligence technology for social good</s
 ## Art
 
 - I was Artist in Residence at the [Sir James Wallace Arts Trust](www.wallaceartstrust.org.nz) for a few months in 2015. A selection of my works are in circulation around public spaces in New Zealand. Links to my Flickr below!
+- I find the intersection of art and machine learning fascinating. I [maintain a repository](https://github.com/crypdick/awesome-neural-art) of research projects.
 
 ## Neckbeardery
 
