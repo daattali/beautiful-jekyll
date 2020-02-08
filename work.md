@@ -7,14 +7,14 @@ meta-description: CV for Richard B. Decal
 bigimg: /img/AIBS_presentation_crop.jpg
 ---
 
-I want to leverage **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
+My mission is to leverage my talents and interests to do the _most_ good in the world. Naturally, I gravitated to machine learning, which can exponentially amplify my productivity using automation. Broadly, my interests are to avert existential risks (such as climate disaster), empower people, and improve lives. In particular, on a large scale I'd like to:
 
-- Sequester atmospheric carbon and reduce pollution
-- Educate with pedagogical chatbots
-- Improve government transparency
+- Sequester atmospheric carbon, reforest, and reduce pollution
+- De-silo knowledge using pedagogical chatbots
+- Improve government transparency and (small "d") democracy
 - Create data-driven journalism and detect fake news
-- Improve health forecasting
-- Improve privacy and decentralization of the Internet using smart contracts and DApps
+- Improve health outcomes
+- Improve privacy and decentralization of the Internet
 
 For detailed information about my education, conferences, talks, teaching, etc. please refer to my CV:
 <center>
@@ -30,10 +30,15 @@ For detailed information about my education, conferences, talks, teaching, etc. 
 
 # Projects
 
-### Improving Cardiac Patient Care
-_[Pacemate](www.pacemate.com) - Feb. 2019 → Now_
+### Tackling Climate Change Using Automated Afforestation
+_[Dendra Systems](www.dendra.io) - Feb. 2020 → Now_
 
-I am currently employed at a implantable heart device analytics company. I can't discuss my research, yet-- stay tuned!
+I am currently the Lead ML engineer at a start-up fighting climate change and deforestation using tree-planting drones. Stay tuned!
+
+### Improving Remote Monitoring of Cardiac Patients by Automatically Detecting Arrythmias
+_[Pacemate](www.pacemate.com) - Feb. 2019 → Dec. 2019_
+
+I worked as the lead data scientist at an implantable heart device analytics company. I implemented a pipeline to process incoming ECG transmissions from remote devices and classify arrythmias using a deep convolutional neural network. To train this network, I mined years of ground truth data labeled by board-certified electrophysiologists. 
 
 ### Reinforcement Learning for Tracing Neuron Morphologies
 _[Hanchuan Peng](https://www.alleninstitute.org/what-we-do/brain-science/research/products-tools/vaa3d/) lab. [Allen Institute for Brain Science](https://www.alleninstitute.org/what-we-do/brain-science/), Seattle, WA, USA - Summer 2018_
