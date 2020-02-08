@@ -59,9 +59,14 @@ _[Kimberley Community Whale Research Project](https://kimberleycommunitywhaleres
 A community-initiated peer-review at the proposed site of the world’s second-largest liquefied gas processing port. Our peer-review’s estimates of humpback migration and breeding activity near James Price Point revealed gross discrepancies in the original oil conglomerate’s survey.
 
 ### Mitochondrial dysfunction in Parkinson's Disease
-_[Leo Pallanck](http://www.gs.washington.edu/faculty/pallanck.htm) lab. [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2015 → 2016_
+_[Leo Pallanck](http://www.gs.washington.edu/faculty/pallanck.htm) lab. [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2010_
 
-I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was published in PNAS.
+I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was [published in PNAS](https://www.pnas.org/content/109/26/10438.short). I presented a poster at SACNAS 2010.
+
+### Probing Function of Colon Cancer Proteins. 
+_[Brooke M. McCartney](https://www.cmu.edu/bio/people/faculty/mccartney.html) lab. [Carnegie Mellon University](cmu.edu), Dept. of Biological Sciences, Pittsburg, PA, USA - 2009_
+
+I determined that APC2, a protein with probable roles in colon cancer tumorogenesis, did not interact with β-catenin of the Wnt pathway’s destruction complex. I determined that APC2’s conserved N-terminal domain was not essential for its proper localization. This research was [published in Genetics](). I presented a poster at ABRCMS 2009 and Sigma Xi 2009.
 
 ### Quantifying endogenous sRNA concentrations in _C. elegans_
 _[Katherine Walstrom](https://www.ncf.edu/directory/listing/katherine-walstrom/) lab. [New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2010 → 2011_
