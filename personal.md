@@ -19,9 +19,9 @@ My dream is to use <strong>artificial intelligence technology for social good</s
 
 ## Travel
 
-- I am currently converting a jumbo news crew van into a tiny home. It has roof-top solar, a fridge/freezer, and fits everything I own!
-- I have been to 26 countries so far :) I've done 3 major bicycle tours (from Seattle to San Francisco, around Taiwan, and around New Zealand).
+- I have been to 28 countries so far :) I've done 3 major bicycle tours (from Seattle to San Francisco, around Taiwan, and around New Zealand).
 - I've hitchhiked over 10,000 miles in the US, Taiwan, Thailand, Australia, and New Zealand.
+- I converted a jumbo news crew van into a tiny home. It has roof-top solar, a fridge/freezer, and fits everything I own!
 
 ## Volunteering, Activism, Organizing
 
@@ -41,10 +41,11 @@ My dream is to use <strong>artificial intelligence technology for social good</s
 
 ## Art
 
-- I was Artist in Residence at the [Sir James Wallace Arts Trust](www.wallaceartstrust.org.nz) for a few months in 2015. A selection of my works are in circulation around public spaces in New Zealand.
+- I was Artist in Residence at the [Sir James Wallace Arts Trust](www.wallaceartstrust.org.nz) for a few months in 2015. A selection of my works are in circulation around public spaces in New Zealand. Links to my Flickr below!
 
-## Computing
+## Neckbeardery
 
-- **Home server** - I am proud of my home server. I built it myself and run the following services: wallabag, nextcloud, bittorrent, ZeroNet, IPFS, and Tor node.
+- **Cloud server** - I run various services: nextcloud, Plex, seedbox with Lidarr/Radarr/Sonarr/etc., and a Tor node.
 - **[Mobile library](https://github.com/PirateBox-Dev/PirateBox-Mesh)** - I converted a Raspberry Pi into an awesome mobile filesharing mesh network.
-- **Personal Assistant** - I also converted a Raspberry Pi into a fully open-source digital assistant, similar to an Amazon Echo.
+- **Personal Assistant** - I also converted a Raspberry Pi into a fully open-source digital assistant using Mycroft.ai.
+- **Road warrior** - I am in constant persuit of the ultimate boondocking mobile workstation. At the moment, I converted a VR headset into a head mounted display which I tether to cellular internet. I look forward to getting a CTRL Labs dev kit or get a NeuralLink.
