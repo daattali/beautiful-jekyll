@@ -28,4 +28,4 @@ gopen(){
 3. Restart your command line.
 4. Test that it is working by navigating in the command line to a directory with a remote repo. Type `gopen` into the command line, and it should open your remote repo in your default browser!
 
-![screencast](https://i.imgur.com/iOViiDd.gif)
+![screencast](https://i.imgur.com/rMNNld4.gif)
