@@ -63,7 +63,7 @@ _[Leo Pallanck](http://www.gs.washington.edu/faculty/pallanck.htm) lab. [Univers
 
 I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was [published in PNAS](https://www.pnas.org/content/109/26/10438.short). I presented a poster at SACNAS 2010.
 
-### Probing Function of Colon Cancer Proteins. 
+### Probing Function of Colon Cancer Proteins
 _[Brooke M. McCartney](https://www.cmu.edu/bio/people/faculty/mccartney.html) lab. [Carnegie Mellon University](cmu.edu), Dept. of Biological Sciences, Pittsburg, PA, USA - 2009_
 
 I determined that APC2, a protein with probable roles in colon cancer tumorogenesis, did not interact with β-catenin of the Wnt pathway’s destruction complex. I determined that APC2’s conserved N-terminal domain was not essential for its proper localization. This research was [published in Genetics](). I presented a poster at ABRCMS 2009 and Sigma Xi 2009.
