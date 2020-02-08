@@ -19,7 +19,7 @@ My dream is to use <strong>artificial intelligence technology for social good</s
 
 ## Travel
 
-- I have been to 28 countries so far :) I've done 3 major bicycle tours (from Seattle to San Francisco, around Taiwan, and around New Zealand).
+- I have been to 28 countries so far :) I've done 3 major bicycle tours (from Seattle to San Francisco, around Taiwan, and around New Zealand). I've been to 47 of 50 U.S. states.
 - I've hitchhiked over 10,000 miles in the US, Taiwan, Thailand, Australia, and New Zealand.
 - I converted a jumbo news crew van into a tiny home. It has roof-top solar, a fridge/freezer, and fits everything I own!
 
