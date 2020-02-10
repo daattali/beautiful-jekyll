@@ -4,7 +4,7 @@ title: Emil Dimanchev
 subtitle: Climate and Energy Policy Research
 ---
 
-Hi there, I am Emil Dimanchev and I am a climate policy researcher and consultant. My areas of focus include energy systems, carbon pricing, and techno-economic modeling.
+Hi there, I am Emil Dimanchev and I am a climate policy researcher and consultant. My areas of focus include energy systems, policy design, and techno-economic modeling.
 
 ### Research
 I am a Senior Research Associate at the MIT Center for Energy and Environmental Policy Research. My research leverages diverse methods matched to the problem at hand, with a focus on quantitative models. 
