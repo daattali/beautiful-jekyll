@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  ACPR Tutorial on Digital Geometry in Pattern Recognition
+title:  ACPR Tutorials on Digital Geometry in Pattern Recognition
 ---
 
-The presentations of the two tutorial on Digital Geometry in Pattern Recognition are available on the [Ressource section](https://dgtal.org/documentation/):
+The presentations of the two tutorials on Digital Geometry in Pattern Recognition are available on the [Ressource section](https://dgtal.org/documentation/):
 
 
 Extracting Geometric Features with DGtal and Applications  ([GitHub repository](https://kerautret.github.io/ACPR19-DGPRTutorial/)):
