@@ -20,7 +20,7 @@ A strong personal statement should be...
 
 - **specific to you.** The personal statement should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.
 - **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results.
-- **polished.** The personal statement should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines (currently 1 page).
+- **polished.** The personal statement should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines.
 
 Part of the personal statement can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
 
@@ -54,6 +54,7 @@ that may warrant an explanation:
 To elaborate on the final example above, if you have some particularly poor grades but there is a noteworthy reason for your performance, you should explain it. For example, perhaps you were working full time, caring for an ill family member, or simply unmotivated because you were not excited about what you were studying. 
 The explanation doesn't erase the grade but it creates a clearer picture of you as an applicant than an unexplained low grade. 
 
+Another situation worth explaining is if you have unsuccessfully applied to the MDS program in the past. If this is the case, what has changed since you last applied?
 
 #### Disclaimer
 
