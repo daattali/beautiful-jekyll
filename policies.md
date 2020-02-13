@@ -23,6 +23,10 @@ Students arriving late to MDS lectures can be distracting for the instructor and
 
 In our main lecture hall, DMP 110, all students arriving late must enter through the east door, which leads to the back of the lecture hall. Furthermore, late students shall only sit in the folding seats at the back wall or stand in the northeast corner, until a break or group activity in the lecture, at which time you are free to take a regular seat.
 
+#### Bringing children to class
+
+If childcare is not available due to unforeseen circumstances, MDS students/TAs/instructors are welcome to bring their children to lecture and/or lab sessions. If you find yourself in this situation, please let the instructor know that you wish to bring your child to class. If there are any concerns of children disrupting the class, these will be addressed on a case-by-case basis.
+
 ## Grades and Academic Standing
 
 #### General grading scheme
