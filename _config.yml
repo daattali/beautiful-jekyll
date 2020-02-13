@@ -17,7 +17,7 @@ baseurl: ""
 title: Hugo Alves
 
 # Short description of your site
-description: Some stuff about technology!
+description: Random stuff about Java and networking
 
 # --- Navigation bar options --- #
 
@@ -99,7 +99,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "hugo-ma.alves.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "hugo-ma.alves.github.io"
 
 # --- Web Statistics Section --- #
 
