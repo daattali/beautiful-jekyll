@@ -9,6 +9,15 @@ title: Documentation & Help
 * [Nightly build doxygen documentation of DGtalTools][22]
 * [Documentation docset URL][3] (1.0, for [Dash][4] or [Zeal][5] tools)
 
+
+### Slides of [ACPR](https://www.acpr2019.org/program.html) Tutorial on Digital Geometry in Pattern Recognition  (26/11/2019)
+
+Extracting Geometric Features with DGtal and Applications  ([GitHub repository](https://kerautret.github.io/ACPR19-DGPRTutorial/)):
+
+* [<img class="alignnone wp-image-413 size-medium" title="partie1TutoDG_ACPR19_teaser" src="img/partie1TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie1TutoDG_ACPR19_teaser.png)[Part1][23]
+* [<img class="alignnone wp-image-413 size-medium" title="partie2TutoDG_ACPR19_teaser" src="img/partie2TutoDG_ACPR19_teaser.png" alt="" width="300" height="76" />](img/partie2TutoDG_ACPR19_teaser.png)[Part2][24]
+
+
 ### Slides of DGtal Meeting (29/08/2011)
 * [<img class="alignnone wp-image-413 size-medium" title="presentationDGtalMeeting2012_thumb" src="http://dgtal.org/wp/wp-content/uploads/2010/10/presentationDGtalMeeting2012_thumb-e1415195647526-300x76.png" alt="" width="300" height="76" />][6][Introduction to DGtal and its concepts][7]
 
@@ -45,3 +54,5 @@ title: Documentation & Help
 [20]: http://lists.gforge.liris.cnrs.fr/mailman/listinfo/dgtal-devel "subscription"
 [21]: https://github.com/DGtal-team/DGtal/issues
 [22]: https://dgtal-team.github.io/doctools-nightly
+[23]: https://github.com/kerautret/ACPR19-DGPRTutorial/raw/master/docs/partie1TutoDG_ACPR19.pdf
+[24]: https://github.com/kerautret/ACPR19-DGPRTutorial/raw/master/docs/partie2TutoDG_ACPR19.pdf
