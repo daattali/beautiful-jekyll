@@ -33,13 +33,13 @@ In the first month of the program, students are taught to how to program in both
 
 **Figure 2.** Example of using a Jupyter notebook as lecture notes to teach programming in R for Data Science.
 
-Near the end of the first month in the program, we next start moving the students into a more powerful editor: RStudio. We first have them use RStudio to edit, create and run literate coding documents using R and R Markdown. Then, a month or so later in our Data Science Workflows course, we teach them to use RStudio to develop and run R scripts, Python scripts, and R Markdown documents that use Python as the coding engine. We continue teaching R and Python programming with the RStudio interactive development environment (IDE) in our Collaborative Software Development course, where they learn to package R & Python code into packages. Having one powerful IDE that can be used for both languages is very nice and efficient for the students as they only need to learn the ins and outs of one IDE and they can then do most of their data science things from one place. 
+Near the end of the first month in the program, we next start moving the students into a more powerful editor: RStudio. We first have them use RStudio to edit, create and run literate coding documents using R and R Markdown. Then, a month or so later in our Data Science Workflows course, we teach them to use RStudio to develop and run R scripts, Python scripts, and R Markdown documents that use Python as the coding engine. We continue teaching R and Python programming with the RStudio IDE in our Collaborative Software Development course, where they learn to package R & Python code into packages. Having one powerful IDE that can be used for both languages is very nice and efficient for the students as they only need to learn the ins and outs of one IDE and they can then do most of their data science things from one place. 
 
 <img src="../img/python_in_rstudio.png" height="450px">
 
 **Figure 3.** Example of using RStudio as an IDE to develop and run a Python script.
 
-When we teach students how to automate the running of scripts in a specified order, as in a data analysis pipeline, we use and teach the tool GNU Make. Many R and Python-specific tools exist to accomplish this task (e.g., drake, snakemake, etc.) but we have chosen GNU Make because it is language agnostic (it can incorporate scripts written in any programming language), it is a good introduction-level tool for pipeline automation, and it is a tool currently used in industry. Furthermore, alumni have reported that learning GNU Make in MDS has facilitated their self-learning on more advanced pipeline automation tools after MDS, such as Apache Airflow and Luigi. 
+When we teach students how to automate the running of scripts in a specified order, as in a data analysis pipeline, we use and teach the tool GNU Make. Many R and Python-specific tools exist to accomplish this task (e.g., drake, snakemake, etc.) but we have chosen GNU Make because it is language agnostic (it can incorporate scripts written in any programming language), it is a good introduction-level tool for pipeline automation, and it is a tool currently used in industry. Furthermore, alumni have reported that learning GNU Make in MDS has facilitated their self-learning on more advanced pipeline automation tools after MDS, such as [Apache Airflow](https://airflow.apache.org/) and [Luigi](https://luigi.readthedocs.io/en/stable/index.html). 
 
 <img src="../img/Makefile.png" height="450px">
 
@@ -47,7 +47,7 @@ When we teach students how to automate the running of scripts in a specified ord
 
 In MDS, we teach the use of containers, such as Docker, to create reproducible, sharable and shippable compute environments for data analysis projects. Like GNU Make, Docker is language agnostic, working with both R & Python (in contrast to other language specific tools like packrat and virtualenv) and is also heavily used in industry. Additionally, Docker has added advantages in remote computing compared to using a tool like conda alone (which also works with R & Python), and thus learning Docker has several additional advantages.
 
-<img src="../img/Makefile.png" height="450px">
+<img src="../img/docker.png" height="450px">
 
 **Figure 5.** Example of a Dockerfile and the resultant Docker image on Docker Hub, which can be used for creating a reproducible, sharable and shippable compute environments for a data analysis project.
 
@@ -104,22 +104,3 @@ Over the last 4 years we have experimented and observed our teaching practices a
 
 ## Acknowledgements: 
 I would like to acknowledge all the other Master of Data Science core teaching team members (current and past) and the MDS founders who have all helped shape our vision of how to effectively integrate the teaching of R & Python into the MDS program. I would also like to acknowledge [Ian Flores Siaca](https://www.linkedin.com/in/ian-flores-siaca-ba0786a1/), an MDS alum who contributed helpful and insightful feedback and discussion for this blog post.
-
-### Master of Data Science core teaching team members
-
-#### Current
-- [Mike Gelbart](https://www.mikegelbart.com/) 
-- [Vincenzo Coia](https://vincenzocoia.github.io/)
-- [Varada Kolhatkar](https://kvarada.github.io/)
-- [Rodolfo Lourenzutti](https://www.linkedin.com/in/rodolfo-lourenzutti/?originalSubdomain=ca)
-- [Firas Moosvi](http://firas.moosvi.com/)
-- [Thomas Beuzen](https://tomasbeuzen.github.io/)
-
-#### Past
-- [Giulio Valentino Dalla Riva](https://www.gvdallariva.net/about/)
-
-### Master of Data Science founders
-- [Jenny Bryan](https://jennybryan.org/)
-- [Paul Gustafson](http://www.paulgstf.com/)
-- [Raymond Ng](https://www.cs.ubc.ca/~rng/)
-- [Gail Murphy](https://blogs.ubc.ca/gailcmurphy/)
