@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Use Json Patch in Spring application
-categories: [spring]
-tags: [spring, json-p, spring-boot]
+categories: [spring, java]
+tags: [spring, json-p, json-processing, json-patch, spring-boot, jsr-374, rest]
 ---
 
 # What is JSON Patch?
 
 Json Patch is a format defined in [RFC 6902](https://tools.ietf.org/html/rfc6902) that describes changes to a JSON document.
-
 According to RFC 6902 we can define JSON patch like this:
 
 >JSON Patch defines a JSON document structure for expressing a
@@ -39,20 +38,18 @@ If we want to represent changes to this document we can use JSON Patch.
 ]
 ```
 
-Thre previous example represents a set of changes to the original document. This can be very usefull in REST APIs when we want to update a resource. 
-Instead of sending to the server the JSON Document with the full representation of the user we can send the JSON patch with the operation we want to perfom.
+The previous example represents a set of changes to the original document. This can be very usefully for update operations on REST APIs. 
+With JSON Patch we only send to the server a smaller JSON document that represents the changes we want to make to the original resource.
 
 ## Json Patch operations
 
 Each operation consists on the following members:
 
-+ **op** This is a mandatory parameter, it defines the operation we want to perfom. Its value MUST be one of "add", "remove", "replace", "move", "copy", or "test"
-+ **path** This is also a mandatory parameter. It defines the target of the operation. From now we will refer to this field as the "target location"
++ **op** This is a mandatory parameter, it defines the operation we want to perform. Its value MUST be one of "add", "remove", "replace", "move", "copy", or "test"
++ **path** This is also a mandatory parameter. It defines the target of the operation. From now on we will refer to this field as the "target location"
 + **value** This parameter can be optional depending on the operation. It contains the value of the operation.
 
-Lets now see what each operation does.
-
-### add
+#### add
 
 ```json
 [
@@ -60,9 +57,9 @@ Lets now see what each operation does.
 ]
 ```
 
-Adds a new member to the JSON document. In this case it will create the alias property on the User document.
+Adds a new member to the JSON document. In this case it will create the alias property on the document.
 
-### remove
+#### remove
 
 ```json
 [
@@ -72,7 +69,7 @@ Adds a new member to the JSON document. In this case it will create the alias pr
 
 Removes the value at the the target location.
 
-### replace
+#### replace
 
 ```json
 [
@@ -82,7 +79,7 @@ Removes the value at the the target location.
 
 Updates the element at the target location to have the new value. 
 
-### move
+#### move
 
 ```json
 [
@@ -92,7 +89,7 @@ Updates the element at the target location to have the new value.
 
 This operation is the equivalent of a remove followed by an add. In this case it will move the value of the mobilePhoneNumber to the landlinePhoneNumber field.
 
-### copy
+#### copy
 
 ```json
 [
@@ -100,10 +97,11 @@ This operation is the equivalent of a remove followed by an add. In this case it
 ]
 ```
 
-This operation copies the value of the field indicated by from to the field indicated by path.
+This operation copies the value of the "from" field to the target field.
 
 
-## JSON-P: Java API for JSON Processing 1.1 - JSR 374 
+---
+# JSON-P: Java API for JSON Processing 1.1 - JSR 374 
 
 
 The Java API for JSON Processing provides portable APIs to parse, generate, transform, and query JSON. It introduced in Java world the following classes:
@@ -114,16 +112,16 @@ The Java API for JSON Processing provides portable APIs to parse, generate, tran
 | JsonReader   | This class reads JSON data from an input source and creates in-memory object model.|
 |JsonValue | Represents a JSON value that can be an object, an array, a number, a string, true, false or null|
 |JsonStructure	| Super type for the two structured types in JSON: object and array|
-|JsonPatch	| The implementation of JSON patch expalined before|
+|JsonPatch	| The implementation of JSON patch explained before|
 
 
-**Note**: Java Introduced the JSON Patch in the [JSR 374](https://www.jcp.org/en/jsr/detail?id=374)
-. This JSR is the evolution of JSR 353, among other changes it added the support for JSON Pointer and JSON Patch.
+**Note**: Java Introduced the JsonPatch in the [JSR 374](https://www.jcp.org/en/jsr/detail?id=374)
+. This JSR is the evolution of JSR 353, among other changes it added the support for JsonPointer and JsonPatch.
 
 
-These classes provide a full representation of a JSON document and enable us to progrmatically manipulate and create JSON documents.
+These classes provide a full representation of a JSON document and enable us to programmatically manipulate and create JSON documents.
 
-
+---
 # Use JSON Patch in a Spring Controller
 
 
@@ -133,7 +131,7 @@ The first thing to do is to add the JSR 374 API to our project dependencies.
 compile group: 'javax.json', name: 'javax.json-api', version: '1.1.4'
 ```
 
-Since the javax.json package only defines the API we need to also include an implementation. For this tutorial I'll use [Apache Johnzon](https://johnzon.apache.org)
+Since the javax.json package only defines the API, we need to also include an implementation. For this tutorial I'll use [Apache Johnzon](https://johnzon.apache.org)
 
 ```gradle
 compile group: 'org.apache.johnzon', name: 'johnzon-core', version: '1.2.3'
@@ -147,7 +145,8 @@ Now we can create a new endpoint that receives a JsonPatch object.
 @ApiResponses(value = { @ApiResponse(responseCode = "202", description = "The user has been updated" content = @Content)})
 @ResponseStatus(HttpStatus.ACCEPTED)
 public void updateUser(@RequestBody JsonPatch patchDocument) {
-    //TODO patch the user
+    userService.patchUser(patchDocument, email);
+    //the full code can be found in the git repository
 }
 ```
 
@@ -196,9 +195,71 @@ public class JsonPatchHttpMessageConverter extends AbstractHttpMessageConverter<
 }
 ```
 
-Since I don't want to serialize objects to JsonPatch objects I decided to throw a NotImplementedException in the writeInternal method.
+Since I don't want to serialize objects to JsonPatch objects the method writeInternal throws a NotImplementedException.
 
-Now Spring can deserialize the received JSON document to a JsonPatch instance.
+Now Spring can deserialize the received JSON document to a JsonPatch instance. With this JsonPatch instance we can implement our service that will get the original user from the database and apply the requested changes.
 
+```java
+ public void patchUser(JsonPatch patchDocument, String email) {
+        //Gets the original user from the database
+        User originalUser = getUserByEmail(email); //1
+        logger.debug("original user  {}", originalUser);
 
-The full code for this sample is located at ......
+        //Converts the original user to a JsonStructure
+        JsonStructure target = objectMapper.convertValue(originalUser, JsonStructure.class); //2
+        //Applies the patch to the original user
+        JsonValue patchedUser = patchDocument.apply(target); //3
+
+        //Converts the JsonValue to a User instance
+        User modifiedUser = objectMapper.convertValue(patchedUser, User.class); //4
+        logger.debug("modified user {}", modifiedUser);
+
+        //Saves the modified user in the database
+        usersList.put(email, modifiedUser);  //5
+    }
+```
+
+As we can see the code to apply the patch is pretty straightforward. Lets see it step by step.
+
+1. We get the original/unmodified user from the database. 
+2. Convert the user to a JsonStructure using the objectMapper. As said before, the JsonStructure was introduced by JSR-374 and among other classes enable us to programmatically manipulate Json documents.
+3. Apply the patch to the original user, we then get a JsonValue that represents the user with the changes present in the patch.
+4. Convert the JsonValue to a user instance that we can store again on the database.
+5. Store the modified user on the database.
+
+With this implementation we can call the service like this:
+```bash
+curl -X PATCH "http://localhost:8080/users/bruce.wayne%40gotham.com" -H "accept: */*" -H "Content-Type: application/json-patch+json" -d "[{\"op\":\"replace\",\"path\":\"/email\",\"value\":\"batman@gotham.com\"}]"
+```
+
+There is a final step to make the previous code work. The Jackson Object mapper isn't capable of serializing/deserializing the new types defined in JSR-353/JSR-374, like the JsonValue and JsonStructure. To configure Jackson for these new types we must first add the following dependency to the project:
+
+```
+compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr353', version: '2.10.2'
+```
+
+Then we need to create a custom ObjectMapper bean and register the Jackson JSR-353 datatype as a module. In Spring we can create a configuration class to define a new bean:
+
+```java
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr353.JSR353Module;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationConfig {
+
+    @Bean
+    public ObjectMapper objectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.registerModule(new JSR353Module());
+
+        return objectMapper;
+    }
+
+}
+```
+
+Obviously this is a simplified example. On the service we should validate the requested changes, for example we may want to disallow the change of the user email. On a real application we would also need to validate permissions and business rules before making the update.
+
+The complete code can be found at [https://github.com/hugo-ma-alves/json-patch-demo](https://github.com/hugo-ma-alves/json-patch-demo). This repository contains a spring boot application, you just have to run it and then the swagger-ui interface to test the request becomes available at http://localhost:8080/swagger-ui/index.html.
