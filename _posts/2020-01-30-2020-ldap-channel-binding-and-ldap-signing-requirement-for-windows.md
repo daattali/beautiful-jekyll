@@ -6,7 +6,7 @@ DATE:
 ---
 _EDIT 14/02/2020:_
 
-Microsoft release an advisory [ADV190023](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190023) stating that:
+Microsoft pushed the date to August 2020 in an updated advisory [ADV190023](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190023) stating that:
 
 > ...The Updates in March 2020 add new audit events, additional logging, and a remapping of Group Policy values that will enable hardening LDAP Channel Binding and LDAP Signing. The March 2020 updates do not make changes to LDAP signing or channel binding policies or their registry equivalent on new or existing domain controllers.
 
