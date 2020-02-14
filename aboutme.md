@@ -15,4 +15,4 @@ A Python lover . Also try to learn Machine Learning, Computer vision .
 5. Data Mining
 
 ## Accomplishments
-### 1.Crash Course on Python [See certificate](/https://www.coursera.org/account/accomplishments/certificate/MNJ4QBEA2E9K)
+### 1.Crash Course on Python [See certificate](https://www.coursera.org/account/accomplishments/verify/MNJ4QBEA2E9K)
