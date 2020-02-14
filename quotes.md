@@ -3,17 +3,17 @@ title: Commentary
 subtitle: Interviews featured in the press
 ---
 
-MIT Energy Futures Magazine: “Renewable energy and carbon pricing policies: State-level adoption saves money and lives” (November 22, 2019)
+MIT Energy Futures Magazine: [“Renewable energy and carbon pricing policies: State-level adoption saves money and lives”](https://href.li/?http://energy.mit.edu/news/renewable-energy-and-carbon-pricing-policies/) (November 22, 2019)
 
-The Verge: “Renewable energy can generate billions of dollars in health benefits, study finds” (August 15, 2019)
+The Verge: [“Renewable energy can generate billions of dollars in health benefits, study finds”](https://href.li/?https://www.theverge.com/2019/8/15/20807800/renewable-energy-health-benefits-research-mit-study-rust-belt) (August 15, 2019)
 
-MIT News: “Shift to renewable electricity a win-win at statewide level” (August 14, 2019)
+MIT News: [“Shift to renewable electricity a win-win at statewide level”](https://href.li/?http://news.mit.edu/2019/shift-renewable-electricity-win-win-statewide-level-0814) (August 14, 2019)
 
-Axios: “How renewable energy can boost Rust Belt health outcomes” (August 13, 2019)
+Axios: [“How renewable energy can boost Rust Belt health outcomes”](https://href.li/?https://www.axios.com/renewable-energy-rust-belt-health-care-coal-power-4f166795-a1ae-47db-87de-38190080bdbd.html) (August 13, 2019)
 
-Grist: “Let’s hold off on praising China’s new carbon-pricing market” (December 21, 2017)
+Grist: [“Let’s hold off on praising China’s new carbon-pricing market”](https://href.li/?https://grist.org/article/lets-hold-off-on-praising-chinas-new-carbon-pricing-market/) (December 21, 2017)
 
-MIT News: “Helping Mexico design an effective climate policy” (November 17, 2017)
+MIT News: [“Helping Mexico design an effective climate policy”](https://href.li/?http://news.mit.edu/2017/helping-mexico-design-effective-climate-policy-1117) (November 17, 2017)
 
 Climate Home: “Brexit: Why a vote to leave the EU is bad news for the climate” (June 20, 2016)
 
