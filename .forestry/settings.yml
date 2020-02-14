@@ -25,8 +25,4 @@ build:
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site
-  publish_command: bundle exec jekyll build -d _site
-  publish_env:
-  - JEKYLL_ENV=production
-  output_directory: _site
   preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site
