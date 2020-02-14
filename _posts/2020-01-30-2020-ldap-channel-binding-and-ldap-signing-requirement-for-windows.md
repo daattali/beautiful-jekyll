@@ -4,7 +4,7 @@ title: 2020 LDAP channel binding and LDAP signing requirement for Windows
 DATE: 
 
 ---
-EDIT 14/02/2020:
+_EDIT 14/02/2020:_
 
 Microsoft release an advisory [ADV190023](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190023) stating that:
 
