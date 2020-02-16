@@ -19,4 +19,5 @@ Serve as TA for CSE department in Database Management System course.
 5. Data Mining
 
 ## Accomplishments
-#### 1.Crash Course on Python [See certificate](https://www.coursera.org/account/accomplishments/verify/MNJ4QBEA2E9K)
+#### 1. Crash Course on Python [See certificate](https://www.coursera.org/account/accomplishments/verify/MNJ4QBEA2E9K)
+#### 2. Python for Data Science and AI [See certificate](https://www.coursera.org/account/accomplishments/verify/KNNY9NEL7FPY)
