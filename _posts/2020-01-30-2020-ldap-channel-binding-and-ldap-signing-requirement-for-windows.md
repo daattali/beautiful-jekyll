@@ -10,7 +10,7 @@ Microsoft pushed the date to later in 2020 in an updated advisory [ADV190023](ht
 
 > ...The Updates in March 2020 add new audit events, additional logging, and a remapping of Group Policy values that will enable hardening LDAP Channel Binding and LDAP Signing. The March 2020 updates do not make changes to LDAP signing or channel binding policies or their registry equivalent on new or existing domain controllers.
 
-The change that will enable LDAP signing and channel binding on domain controllers configured with default values is now scheduled in August 2020.
+The change that will enable LDAP signing and channel binding on domain controllers configured with default values is now scheduled for '_the second half of calendar year 2020_'.
 
 ***
 
