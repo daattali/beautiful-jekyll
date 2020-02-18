@@ -19,7 +19,7 @@ There is a simple trick that consists in attributing a template to the csr durin
 
 ![](/img/certtemplate2.png)
 
-3. Run certreq with the attrib parameter and specify the template you want to apply (Usually _WebServer_ will do).
+3\. Run certreq with the attrib parameter and specify the template you want to apply (Usually _WebServer_ will do).
 
     certreq -attrib "CertificateTemplate:WebServer"
 
