@@ -5,7 +5,7 @@ title: Author
 ---
 ### About me
 
-The best thing about blogs is that people share what they learn, make tutorials so everyone increase their knowledge in the process. I have always read articles and How-To's be it for my job or not and it helped me a lot. This blog is the opportunity for me to contribute and give back to the community.
+The best thing about blogs is that people can share what they learn, talk from experiences or make tutorials so everyone increase their knowledge in the process. I have always read articles and How-To's, be it for my job or not and it helped me a lot. This blog is the opportunity for me to contribute and give back to the community.
 
 <p align="center">
 <a href="https://vexpert.vmware.com/directory/832">
@@ -20,8 +20,8 @@ The best thing about blogs is that people share what they learn, make tutorials 
 </a>
 </p>
 
-I am passionate in new technologies in general but my heart goes to virtualization for which I grew a real interest and is in a way the foundation of every growing IT technologies nowadays. Containers, clouds, SDS, SDN, you name it, 95% chances that there is a hypervisor somewhere in the background. When time permits I run nested labs to test new features and products for potential implementation in my professional environment... or just to try new cool stuff with no real purpose.
+I am passionate about new technologies in general but my heart goes to virtualization for which I grew a real interest and is in a way the foundation of every growing IT technologies nowadays. Containers, clouds, SDS, SDN, you name it, 95% chances that there is a hypervisor somewhere in the background. When time permits I run nested labs to test new features and products for potential implementation in my professional environment... or just to try new stuff with no real purpose apart from sharing it here.
 
-I hope you find what you are after in this blog and learn some stuff along the way, Cheers!
+I hope you find what you are after in this blog and maybe even learn something along the way, Cheers!
 
 ***
