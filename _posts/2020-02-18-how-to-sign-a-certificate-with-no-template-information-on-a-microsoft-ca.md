@@ -12,10 +12,11 @@ If you have a basic Microsoft CA for lab or production purpose you cannot sign a
 
 There is a simple trick that consists in attributing a template to the csr during the signing process.
 
-1. Open a command prompt as a domain user which has permissions to sign certificates
-2. (Optional) You can get the list of templates using this command:
+1\. Open a command prompt as a domain user which has permissions to sign certificates
 
-       certutil -CATemplates -Config Machine\CAName
+2\. (Optional) You can get the list of templates using this command:
+
+    certutil -CATemplates -Config Machine\CAName
 
 ![](/img/certtemplate2.png)
 
@@ -27,18 +28,18 @@ A popup then asks you to specify the csr file to sign.
 
 ![](/img/certtemplate3.png)
 
-4. Then select the CA to use.
+4\. Then select the CA to use.
 
 ![](/img/certtemplate4.png)
 
-5. Give a name and location to the certificate to produce.
+5\. Give a name and location to the certificate to produce.
 
 ![](/img/certtemplate5.png)
 
-6. The output of the certreq command should like something like this.
+6\. The output of the certreq command should like something like this.
 
 ![](/img/certtemplate6.png)
 
-7. The certificate should new appear in the list of issued certificate in the CA's console.
+7\. The certificate should new appear in the list of issued certificate in the CA's console.
 
 ![](/img/certtemplate7.png)
