@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ideas for Data Storytelling
 subtitle: Brainstorming for what's to come!
 ---
