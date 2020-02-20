@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: What I'm about
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Zachary Luck, currently, I'm a Lambda school student studying data science.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I've been into computers and numbers as far back as I can remember, some of my favorite games, like PAYDAY 2, Path of Exile, and Destiny 2 involve a hefty amount of number-crunching and theorycrafting in order to make the most optimal builds, something I always enjoy doing.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+This website will eventually host a portfolio of various projects I've created, but for right now it'll be kinda barren.
