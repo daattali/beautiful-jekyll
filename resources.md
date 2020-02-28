@@ -19,7 +19,7 @@ subtitle: For MDS students and beyond
 - [General lab instructions](/resources_pages/general_lab_instructions)
 - [MDS rubrics](https://github.com/UBC-MDS/public/tree/master/rubric#guide-to-rubrics)
 - [Slack guidelines](/resources_pages/slack)
-- [How to ask questions on Slack](/resources_pages/asking_for_help)
+- [How to ask questions on Slack](/resources_pages/slack_asking_for_help)
 - [MDS quizzes](/resources_pages/quiz)
 - [MDS quiz instructions](/resources_pages/quiz_instructions)
 - [Career and professional development](/resources_pages/CareerandIndustryResources)
