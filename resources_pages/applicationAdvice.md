@@ -32,7 +32,7 @@ no matter how famous they are, if your referee doesn't know you then the letter 
 This issue arises particularly often with past course instructors.
 If a letter from a past instructor simply states your grade in the course (even if it is a great grade!), 
 it does not add any new information not already contained within your transcripts.
-Finally, references from supervisors/managers/professors are typically much stronger than references friends friends/colleagues/classmates. 
+References from supervisors/managers/professors are typically much stronger than references from friends/colleagues/classmates. Finally, a mix of academic and professional references is preferred, if possible/applicable (we understand there are exceptions, e.g. an academic reference may not make sense if you have been out of school for 10+ years).
 
 Before asking for a reference letter, speak with the potential referee: 
 do they have something particular and special to say about you? Do they have the time and willingness to write the letter in a timely manner?
@@ -49,6 +49,7 @@ that may warrant an explanation:
 - You have attended a large number of academic institutions
 - Your previous degrees span a much shorter or longer amount of time than typical
 - Your grades are generally strong but are very poor for one or two semesters
+- You did not get a reference letter from your main professional/academic experience(s), e.g. main employer on your resume, PhD advisor
 - etc.
 
 To elaborate on the final example above, if you have some particularly poor grades but there is a noteworthy reason for your performance, you should explain it. For example, perhaps you were working full time, caring for an ill family member, or simply unmotivated because you were not excited about what you were studying. 
