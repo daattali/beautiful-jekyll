@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Asking for help
+title: Using Slack and asking for help
 ---
 
 
@@ -12,7 +12,7 @@ and generally encourages a vibrant Slack ecosystem.
 
 #### Anonymity
 
-If you want to ask a question anonymously, you can invoke the "Anonymous bot" with `/abot`.
+If you want to ask a question anonymously, you can invoke the "Anonymous bot" with `/anon`.
 
 #### Asking a procedural question
 
@@ -98,3 +98,11 @@ Keep in mind that when you post in Slack, people may get notifications. Therefor
 > Your question here
 
 Then other users will receive a notification at the start, which will potentially pull their attention to Slack before there is anything meaningful to read. Thus, it is more efficient if there is enough content for someone to read and digest before posting the first time. This applies both to direct messages and channel posts.
+
+#### Professionalism
+
+MDS takes pride in creating a close and inclusive environment in our teaching and learning spaces including our Slack community. We encourage participation in all private, public and direct messaging channels, however, we ask that you follow the Code of Conduct while doing so.
+
+Although Slack is a great tool and is constantly available, we expect you to maintain a respectful and professional relationship with your peers and the academic team. Generally, instructors and TAs will attempt to respond to your questions in a timely manner, but it's important to understand they do have other responsibilities outside of the program. An example of unprofessional Slack usage is messaging an instructor late at night and asking for /expecting an immediate response.
+
+We have added an Anonymous bot `/anon` to the Slack workspace to give students an opportunity to ask questions anonymously if they feel uncomfortable doing so publicly. We kindly ask that you maintain this feature for its designated purpose and continue to follow the code of conduct while applying it.
