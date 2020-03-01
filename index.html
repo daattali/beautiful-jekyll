@@ -11,11 +11,11 @@ use-site-title: true
     <a href="{{ post.url | relative_url }}">
 	  <h2 class="post-title">{{ post.title }}</h2>
 
-	  {% if post.subtitle %}
+	  <!-- {% if post.subtitle %}
 	  <h3 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
-	  {% endif %}
+	  {% endif %} -->
     </a>
 
     <p class="post-meta">
@@ -34,7 +34,8 @@ use-site-title: true
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
+        
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Đọc&nbsp;Tiếp]</a>
         {% endif %}
       </div>
     </div>
