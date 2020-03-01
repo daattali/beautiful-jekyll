@@ -67,29 +67,20 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-#  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
+  email: gladwin.lee.97@gmail.com
+  github: gladwinlee
+  twitter: gladwinlee
+  linkedin: gladwinlee
+  twitch: starhopp3r
+
 
 # Select which share links to show in posts
 share-links-active:
   twitter: true
   facebook: true
   linkedin: true
+  github: true
+  
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
