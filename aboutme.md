@@ -1,16 +1,11 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: People change the world
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Đây là Blog mới của tôi, đây là nơi tôi sẽ lưu lại những gì tôi tìm hiểu được và cả những kinh nghiệm tôi đã và sẽ học được
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### KhaiCM
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Nếu muốn biết tôi là ai bạn có thể tìm tôi qua **Github:** [KhaiCM](https://github.com/KhaiCM) hoặc qua **Facebook:** [Khải](https://www.facebook.com/minh.khai.200997)
