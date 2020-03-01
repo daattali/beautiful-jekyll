@@ -18,8 +18,8 @@ If your ultimate goal is to pursue a PhD in statistics or computer science, MDS 
 
 A strong personal statement should be...
 
-- **specific to you.** The personal statement should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.
-- **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results.
+- **specific to you.** The personal statement should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.  
+- **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results. On the other hand, including the names of various MDS faculty members, unless you have something specific to say, is also generally not helpful.
 - **polished.** The personal statement should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines.
 
 Part of the personal statement can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
