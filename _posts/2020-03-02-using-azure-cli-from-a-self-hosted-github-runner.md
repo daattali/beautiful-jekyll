@@ -61,6 +61,7 @@ jobs:
         echo Hello from Workflow!
         hostname
 ```
+
 1. Commit
 ![github-runner-workflow-commit.png]({{site.baseurl}}/img/github-runner-workflow-commit.png)
 
