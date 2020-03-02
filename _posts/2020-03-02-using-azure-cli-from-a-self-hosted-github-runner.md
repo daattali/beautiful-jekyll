@@ -62,10 +62,10 @@ jobs:
         hostname
 ```
 
-1. Commit
+8. Commit
 ![github-runner-workflow-commit.png]({{site.baseurl}}/img/github-runner-workflow-commit.png)
 
-1. Review the output
+9. Review the output
 ![github-runner-workflow-results.png]({{site.baseurl}}/img/github-runner-workflow-results.png)
 
 ## Summary
