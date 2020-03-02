@@ -1,7 +1,13 @@
 ---
 layout: post
-published: false
-title: Using Azure CLI from a self-hosted GitHub runner
+published: true
+title: Using self-hosted GitHub runner
+tags:
+  - GitHub
+  - ADO
+  - CICD
+subtitle: CI/CD in GitHub.
+date: '2020-03-02'
 ---
 ## In case you haven't heard - Microsoft now has two great DevOps products. 
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
