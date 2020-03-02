@@ -21,28 +21,30 @@ This post is a quick intro into running a self-hosted agent in GitHub. For those
 - Azure DevOps has **Pipelines** for CI/CD, GitHub has **Actions**
 - Azure DevOps has [Microsoft-hosted and self-hosted Pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser) **Agents**, GitHub has [GitHub-hosted and self-hosted](https://help.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) **runners**
 
-The steps are pretty simple
-1. Open your GitHub account and copy script from settings
-1. Add a new workflow to your GitHub repository to use your agent
+The steps are pretty simple:
+- Open your GitHub account and copy script from settings
+- Add a new workflow to your GitHub repository to use your agent
 
 ## Add your runner in GitHub settings | Actions
-1. Select Settings | Actions
+1) Select Settings | Actions then **Add runner**
 ![Image of GitHub Settings page with Actions menu selected]({{site.baseurl}}/img/github-runner.png)
 
-1. Copy the Download script (note it includes the token to authenticate)
+2) Copy the Download script (note it includes the token to authenticate)
 ![github-runner2a.png]({{site.baseurl}}/img/github-runner2a.png)
 
-1. Run on your VM
+3) Run on your VM
 ![github-runner3.png]({{site.baseurl}}/img/github-runner3.png)
 
-1. Your runner should show in self-hosted runner
+4) Your runner should show in self-hosted runner
 ![github-runner4.png]({{site.baseurl}}/img/github-runner4.png)
 
-1. Create a new workflow and add your code
+5) Create a new workflow and add your code
 ![github-runner-workflow1.png]({{site.baseurl}}/img/github-runner-workflow1.png)
-1. Select **Set up a workflow yourself**
+
+6) Select **Set up a workflow yourself**
 ![github-runner-workflow2.png]({{site.baseurl}}/img/github-runner-workflow2.png)
-1. Enter a sample script (uses YAML - if you are new to YAML use a [YAML verifier](https://codebeautify.org/yaml-validator/)
+
+7) Enter a sample script (uses YAML - if you are new to YAML use a [YAML verifier](https://codebeautify.org/yaml-validator/)
 
 ```yaml
 name: CI-Self-Hosted
@@ -61,10 +63,10 @@ jobs:
         echo Hello from Workflow!
         hostname```
 
-8. Commit it
+8) Commit it
 ![github-runner-workflow-commit.png]({{site.baseurl}}/img/github-runner-workflow-commit.png)
 
-9. Review the output
+9) Review the output
 ![github-runner-workflow-results.png]({{site.baseurl}}/img/github-runner-workflow-results.png)
 
 ## Summary
