@@ -42,7 +42,8 @@ The steps are pretty simple
 ![github-runner-workflow1.png]({{site.baseurl}}/img/github-runner-workflow1.png)
 1. Select **Set up a workflow yourself**
 ![github-runner-workflow2.png]({{site.baseurl}}/img/github-runner-workflow2.png)
-1. Enter a sample script (uses YAML - if you are new to YAML use a [YAML verifier](https://codebeautify.org/yaml-validator/#)
+1. Enter a sample script (uses YAML - if you are new to YAML use a [YAML verifier](https://codebeautify.org/yaml-validator/)
+
 ```yaml
 name: CI-Self-Hosted
 
