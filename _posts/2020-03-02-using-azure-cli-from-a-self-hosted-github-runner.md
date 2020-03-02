@@ -61,7 +61,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo Hello from Workflow!
-        hostname```
+        hostname
+```
 
 8) Commit it
 ![github-runner-workflow-commit.png]({{site.baseurl}}/img/github-runner-workflow-commit.png)
