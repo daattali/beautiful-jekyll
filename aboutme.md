@@ -21,3 +21,4 @@ Serve as TA for CSE department in Database Management System course.
 ## Accomplishments
 #### 1. Crash Course on Python [See certificate](https://www.coursera.org/account/accomplishments/verify/MNJ4QBEA2E9K)
 #### 2. Python for Data Science and AI [See certificate](https://www.coursera.org/account/accomplishments/verify/KNNY9NEL7FPY)
+#### 3. Convolutional Neural Networks in TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/verify/TTYFB4JKNANJ)
