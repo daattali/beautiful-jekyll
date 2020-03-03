@@ -14,28 +14,28 @@ We will send a list of people and dates to arrange accommodation as a group, so 
 
 | Date | Location | Main activity |
 | :----: | :----: | :-------: |
-| 02-July | Cusco | Instructors arrival |
-| 03-July | Cusco | Students arrival + organization |
-| 04-July | Cusco | Students arrival + Flexible day |
-| 05-July | Cusco | Leave for Wayqecha |
-| 06-July | Wayqecha | Fieldwork |
-| 07-July | Wayqecha | Fieldwork + Hiking Tres Cruces |
-| 08-July | Wayqecha | Leave for San Pedro |
-| 09-July | San Pedro | Fieldwork |
-| 10-July | San Pedro | Fieldwork |
-| 11-July | San Pedro | Leave for Pantiacolla |
-| 12-July | Pantiacolla | Fieldwork |
-| 13-July | Pantiacolla | Leave for Cocha Cashu |
-| 14-July | Cocha Cashu | Fieldwork |
-| 15-July | Cocha Cashu | Fieldwork |
-| 16-July | Cocha Cashu | Fieldwork |
-| 17-July | Cocha Cashu | Fieldwork |
-| 18-July | Cocha Cashu | Fieldwork | 
-| 19-July | Cocha Cashu | Fieldwork |
-| 20-July | Cocha Cashu | Leave for Pantiacolla |
-| 21-July | Pantiacolla | Leave for San Pedro |
-| 22-July | San Pedro | Leave for Cusco |
-| 23-July | Cusco | Tour to MachuPicchu |
-| 24-July | Aguas Calientes | MachuPicchu + Leave for Cusco |
-| 25-26-27-July | Cusco | Return home! |
+| 17-July | Cusco | Instructors arrival |
+| 18-July | Cusco | Students arrival + organization |
+| 19-July | Cusco | Students arrival + Flexible day |
+| 20-July | Cusco | Leave for Wayqecha |
+| 21-July | Wayqecha | Fieldwork |
+| 22-July | Wayqecha | Fieldwork + Hiking Tres Cruces |
+| 23-July | Wayqecha | Leave for San Pedro |
+| 24-July | San Pedro | Fieldwork |
+| 25-July | San Pedro | Fieldwork |
+| 26-July | San Pedro | Leave for Pantiacolla |
+| 27-July | Pantiacolla | Fieldwork |
+| 28-July | Pantiacolla | Leave for Cocha Cashu |
+| 29-July | Cocha Cashu | Fieldwork |
+| 30-July | Cocha Cashu | Fieldwork |
+| 01-August | Cocha Cashu | Fieldwork |
+| 02-August | Cocha Cashu | Fieldwork |
+| 03-August | Cocha Cashu | Fieldwork | 
+| 04-August | Cocha Cashu | Fieldwork |
+| 05-August | Cocha Cashu | Leave for Pantiacolla |
+| 06-August | Pantiacolla | Leave for San Pedro |
+| 07-August | San Pedro | Leave for Cusco |
+| 08-August | Cusco | |
+| 09-August| Aguas Calientes | Optional visit to MachuPicchu |
+| 09-10-August | Cusco | Return to the Beautiful British Columbia! |
 
