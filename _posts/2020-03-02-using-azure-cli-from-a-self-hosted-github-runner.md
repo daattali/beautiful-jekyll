@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Using self-hosted GitHub runner
+title: Using a self-hosted GitHub runner
 tags:
   - GitHub
   - ADO
