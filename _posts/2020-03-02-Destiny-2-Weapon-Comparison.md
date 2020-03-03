@@ -1,5 +1,5 @@
 ---
-title: Destiny 2: Season of Dawn Weapons Retrospective
+title: Destiny 2 Season of Dawn Weapons Retrospective
 subtitle: Asking and answering the important question of why the best weapons were the best
 ---
 
