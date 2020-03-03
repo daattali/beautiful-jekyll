@@ -8,8 +8,8 @@ comments: true
 In this three-week field course, students will explore topics of tropical diversity, ecology and conservation. You will be introduced to field methods used in ecology as well as the challenges of research in Neotropical forests. Visiting a suite of biological stations from the high Andes to the Amazon basin, students will experience tropical ecosystems first-hand in one of the most spectacular biodiversity hotspots of the world [**Manu Biosphere Reserve**](https://en.wikipedia.org/wiki/Manú_National_Park).
 
 ### When is it?
-Summer 2016.
- **July 4th to July 22nd**
+Summer 2020.
+ **July 18th to August 9th**
 
 
 ### Course description
