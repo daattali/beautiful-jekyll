@@ -6,7 +6,7 @@ comments: true
 ---
 
 **The Jamie Smith Field Course Award** was awarded in the spring of 2016.  
-Details of the application deadline and materials will be updated soon.
+Details on the materials and application deadline for the 2020 field course will be updated soon.
 Jamie Smith taught at UBC for 32 years and was one of the first faculty members to teach the Zoology field course (now called Biology 409) as well as several other field and research focused courses for undergraduate and graduate students. Attending a field course in Virginia when he was an undergraduate at the University of Edinburgh was a very valued experience for him, and he was a devoted field ecologist.
 
 This $1600 award was established following his death in 2005 and will be given to a student who is attending a summer field course, such as Biology 409.
