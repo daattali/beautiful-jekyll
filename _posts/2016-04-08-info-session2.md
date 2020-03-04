@@ -2,7 +2,7 @@
 layout: post
 title: Second Information Session (TBC)
 subtitle: If you missed the previous, please come to this one
-date: 2020-03-01
+date: 2020-02-30
 ---
 
 We want to open a space for those of you that could not attend our first information session. So, We will have a second one, in which we 
