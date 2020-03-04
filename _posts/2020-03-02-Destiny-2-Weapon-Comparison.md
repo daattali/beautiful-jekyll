@@ -60,17 +60,27 @@ While there's no information in the metadata or game manifest that says what qui
 
 ![Sniper rifle archetype comparison graph](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_snipers.png)
 
-Snipers, like shotguns, are also in a weird gray area when it comes to determining which one is the overall best. In terms of stats, pretty much all of them don't matter except for the two hidden, behind the scenes stats, Zoom and Aim Assistance, and even then, it doesn't matter if they're not the most optimal values. Generally speaking, in 99.9% of cases where a guardian is firing at another guardian, a single shot to the head is usually all it takes to take them down. Range doesn't matter. Stability doesn't matter. Handling matters a little bit, but no matter how much you have, scoping in will usually take a fair amount of time. With all of this in mind, surely the aptly named "Rapid-Fire" frames would win out on top, given that you could take down one guardian and not have to wait as long for the weapon to be ready to fire again, but that's not the case. Looking at the graph, there are two obvious standout fan favorites among the many snipers used in Crucible, namely Revoker and Beloved.
+Snipers, like shotguns, are also in a weird gray area when it comes to determining which one is the overall best. In terms of stats, pretty much all of them don't matter except for the two hidden, behind the scenes stats, Zoom and Aim Assistance, and even then, it doesn't matter if they're not the most optimal values. Generally speaking, in 99.9% of cases where a guardian is firing at another guardian, a single shot to the head is usually all it takes to take them down. Range doesn't matter. Stability doesn't matter. Handling matters a little bit, [but having Snapshot Sights is generally more important](https://www.light.gg/db/items/957782887/snapshot-sights/), as no matter how much you have, scoping in will usually take a fair amount of time. With all of this in mind, surely the aptly named "Rapid-Fire" frames would win out on top, given that you could take down one guardian and not have to wait as long for the weapon to be ready to fire again, but that's not the case. Looking at the graph, there are two obvious standout fan favorites among the many snipers used in Crucible, namely Revoker and Beloved.
 
 ### Revoker: The Power of Reversal of Fortune
 
-Revoker is, as the graph states, an aggressive frame sniper rifle. It fires slow but packs a punch, so why is it not only number one in terms of usage on the graph, but the most used gun in Crucible overall? 
+Revoker is, as the graph states, an aggressive frame sniper rifle. It's also a pinnacle weapon which means it has fixed perks; no matter how many times you get it again, it'll always be the same. It fires slow but packs a punch, so why is it not only number one in terms of usage on the graph, but the most used gun in Crucible overall? 
 
 ![Reversal of Fortune description](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/destiny2_2020-03-04_15-03-02.png)
 
-Short answer: this perk right here.
+Short answer: this perk right here (and [Snapshot Sights](https://www.light.gg/db/items/957782887/snapshot-sights/)).
 
 Reversal of Fortune quite literally changes the way a guardian approaches sniping, and using special weapons in general. Instead of hoarding every little bit of special ammo you can and only taking shots when you're certain you can hit them, Reversal of Fortune instead allows guardians to take as many shots as they like, since the consequences for doing so are reduced to a negligable amount. The only way to waste ammo with Revoker would be to miss multiple shots or reload before the perk could activate, as only the last bullet is returned with the perk, and bullets don't get returned when the weapon has a full magazine. In addition, the weapon is an aggressive frame sniper, dealing such a large amount of damage that, even if the shot hits the body and the enemy guardian lives, cleaning up with a primary weapon (preferrably with Quickdraw) is no problem. In short: the weapon ensures that, no matter what, you have at least one shot of special ammo to use against your opponents.
 
 ### Beloved: The Jack of All Trades
 
+Beloved on the other hand is a weapon with randomly rolled perks; it's also really easy to farm, with one run through the PvE activity The Menagerie, you can get two of them, or one, if you've run The Menagerie three times already on that character for that week. It's also got a pretty diverse pool of weapon perks, with the first two slots having your standard affair of barrel and magazine perks, and the last two having some pretty interesting choices:
+
+| Slot One | Slot Two |
+| -------- | -------- |
+| ![](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/brave_2020-03-04_15-47-59.png) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-35.png?raw=true) |
+| ![](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/brave_2020-03-04_15-48-15.png) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-49.png?raw=true) |
+| ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-48-37.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-02.png?raw=true) |
+| ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-48-52.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-16.png?raw=true) |
+| ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-05.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-29.png?raw=true) |
+| ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-19.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-41.png?raw=true) |
