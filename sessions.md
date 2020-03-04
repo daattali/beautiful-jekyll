@@ -26,7 +26,8 @@ mandatory, and those who do not participate are at risk of relegation.
 
 ## Varsity Qualifiers
 - Top 10 in the RMS Math Club Benchmark or Final exams
-- Honor Roll of Distinction (top 1%) of the AMC 8
+- Honor Roll of Distinction (top 1%) on the AMC 8
+- Certificate of Achievement on the AMC 10
 - Making the RMS Mathcounts team (top 10 in school round)
 - Making an RMS Math is Cool Masters team (top 4 from RMS grade in Math is Cool regional)
 - Individual placement (trophy-level) in sanctioned events like Math is Cool, Knights of Pi, or the Washington State Math Championships
