@@ -7,22 +7,70 @@ subtitle: Asking and answering the important question of why the best weapons we
 
 When it comes to answering the question of "What's the best gun in Destiny 2 for PvP?" answering that question is fairly easy. All you need to do is head over to [Destiny Tracker's Insights page](https://destinytracker.com/destiny-2/db/insights) and see what the most used guns are, and those are probably the best. Answering the question of *why*, however, can be somewhat difficult, as there are a multitude of ways one weapon can hold an edge over another. From varying stats, differing time-to-kill (TTK) values between sub-types, different perk pools, or, in the case of exotic weapons, special abilities, these are just a few ways some weapons can rise in use amongst so many choices.
 
+## What makes a good loadout?
+
 ![Picture of typical loadout in Destiny 2](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/destiny2_2020-03-04_08-16-12.png) 
 
-In the Crucible, the most common type of loadout to bring is to pick one primary and one special weapon, denoted by the respective white and green ammo boxes on the icons of the weapons. Shown in the picture above is a loadout comprised of Bygones, a pulse rifle, in the kinetic slot, Mindbender's Ambition, a shotgun, in the energy slot, and Thunderlord, an exotic machine gun in the power slot. Primary weapon have deep, always-full ammo reserves, and are generally used for gunfights, designed to be, as the name implies, a guardian's primary weapon. Special weapons on the other hand, are severely limited in both ammo reserves, but also starting ammo, with most special weapons only starting with two shots to fire. To make up for this, special weapons have the ability to take down enemy guardians in one shot, provided the wielder can meet the requirements to do so; for example, shotgun wielders need to be very close to their enemy to get a one-shot-kill, whereas sniper rifle wielders need to land a shot on an enemy guardian's head to take them down in one blow. |
+In the Crucible, the most common type of loadout to bring is to pick one primary and one special weapon, denoted by the respective white and green ammo boxes on the icons of the weapons. Shown in the picture above is a loadout comprised of Bygones, a pulse rifle, in the kinetic slot, Mindbender's Ambition, a shotgun, in the energy slot, and Thunderlord, an exotic machine gun in the power slot. Primary weapon have deep, always-full ammo reserves, and are generally used for gunfights, designed to be, as the name implies, a guardian's primary weapon. Special weapons on the other hand, are severely limited in both ammo reserves, but also starting ammo, with most special weapons only starting with two shots to fire. To make up for this, special weapons have the ability to take down enemy guardians in one shot, provided the wielder can meet the requirements to do so; for example, shotgun wielders need to be very close to their enemy to get a one-shot-kill, whereas sniper rifle wielders need to land a shot on an enemy guardian's head to take them down in one blow.
 
 ![Picture of an alterante typical loadout in Destiny 2](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/destiny2_2020-03-04_08-32-48.png) 
-###### Side note: The gold borders around the weapon icons denote that the weapon has been "masterworked". Legendary weapons gain 10 points in the given stat noted on the weapon's masterwork icon when fully upgraded, however exotic weapons can gain many more stats, and sometimes even extra perks when masterworked, however the process of doing so is much more rigorous.
+###### Side note: The gold borders around the weapon icons denote that the weapon has been "masterworked". Legendary weapons gain 10 points in the given stat noted on the weapon's masterwork icon when fully upgraded, however exotic weapons can gain many more stats, and sometimes even extra perks when masterworked, however the process of doing so is much more rigorous and the stats and/or perks recieved are fixed.
 
 Incidentally, primary and special weapons are not restricted to the slots they inhabit, as shown by this loadout comprised of Revoker, a sniper rifle, in the kinetic slot, Sunshot, an exotic hand cannon, in the energy slot, and Hammerhead, another machine gun, in the power slot. Additionally, because Sunshot is in the energy slot, that means that Thunderlord, from the previous loadout, had to be unequipped, as guardians can only equip one exotic weapon at a time.
+
+## What weapons are the most popular?
 
 ![Graph of weapon usage by type in Crucible](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_top_100.png)
 
 By far one of the most used types of primary weapons, and weapons in general, are hand cannons. These guns make up over a quarter of all weapons used in the crucible, rivalling that of every other primary weapon type combined. These aptly-named slow-firing revolvers pack quite a punch, with most, if not all, being able to down an enemy guardian in a second or less. These weapons are killer in the hands of skilled players, usually knocking out an opposing guardian in three shots (or three bursts, in the case of Crimson), and are also an exceptional primary weapon choice for mid-range battles. Their superiority in midrange battles also allows for a hefty amount of freedom when it comes to picking a special weapon, and allows guardians to choose one that compliments their playstyle, rather than one required out of necessity.
+
+# Hand Cannons: Three-shot Wonder
 
 ![Graph of handcannon usage by archetype](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_handcannons.png)
 
 With the nerf to hand cannon range that came with the previous season, Season of Undying, all hand cannons, regardless of archetype, now start falling off in damage between twenty-three meters at a range stat of 0, and twenty-six meters at 100. This means that shots fired at enemies outside of that range deal less and less damage the further away the enemy is, making it take more shots, and more time, to take down that enemy. This has resulted in a rise in popularity of lightweight hand cannons like Spare Rations and lightweight-like exotics like Thorn, as well as fast-firing exotics such as The Last Word and Crimson. In addition, the lightweight archetype grants handcannons implicitly high handling and bonus movement speed, essentially changing the battle of range from before to what has now become a battle of speed. In this case, lightweight hand cannons (and by extension the precision hand cannons Luna's Howl and Not Forgotten which have the same time-to-kill) reign supreme, because not only do they have the fastest optimal time-to-kill, but their stats are higher in the catagories that matter, namely handling and aim assistance.
 
 ![Graph of handcannon stats by archetype](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_handcannons_stats.png)
+
+***
+
+## Shotguns: Point-blank Powerhouse
+
+![Graph of shotgun usage by archetype or exotic weapon](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_shotguns.png)
+
+As for shotguns, the main draw here is, again, handling, but also range. Shotguns are a bit weird with how they function in-game; since the pellets they fire scatter randomly across the wide cone in which they fire, it makes determining the distance before damage falloff kicks in difficult, because it's hard to tell the difference between the spread of the pellets and the falloff itself. In addition to that, all shotgun archetypes, while able to one-shot-kill an enemy guardian, do different total amounts of damage, as well as have wildly varying stats. Rapid-fire frames, for example, deal the least amount damage but fire the fastest, allowing for quick follow-up shots, precision frames, of which a few shoot single-pellet slugs, support overwhelming range stats, and aggressive frames fire slowly, but pack the most amount of punch at the cost of range. Incidentally, as shown in the graph above, the aggressive frames win out, with the shotgun Mindbender's Ambition not only seeing over 5% usage in crucible, but making it into the top 10 most used weapons in Crucible.
+
+The question is: why?
+
+What makes Mindbender's so much better than literally every other shotgun in the game?
+
+Well, much like quantum physics, it turns out that the closer two opposing guardians come to each other, the more likely it is that one of them is going to throw a punch rather than shoot their gun, and since melee attacks do half a guardian's health in damage, as well as magnetise the person throwing the punch to their target, the combo of tagging an opponent with an almost-lethal shotgun shot and finishing with a swift right hook emerges. The aggressive frames win out because they can secure the kill more consistently within the five or so meters just outside of melee range.
+
+![Aggressive shotgun stat comparison](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_shotguns_stats.png)
+
+But that's not everything Mindbender's does better, in addition to being quite literally the best aggressive frame shotgun stat-wise, it is also the only aggressive frame shotgun that roll the perk "Quickdraw".
+
+![Quickdraw description](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/destiny2_2020-03-04_13-37-06.png)
+
+While there's no information in the metadata or game manifest that says what quickdraw itself explicitly does, general consensus among the playerbase is that the perk maxes out the handling stat for the weapon, setting it to 100, or at the very least, providing a 50 point bonus. Given that handling is the stat that determines how quickly a weapon is drawn and readied, the split second that Quickdraw shaves off of pulling the weapon out gives that little extra edge in close quarters skirmishes to push it into the top 10.
+
+***
+
+## Sniper Rifles: Easy Pickings
+
+![Sniper rifle archetype comparison graph](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/graph_snipers.png)
+
+Snipers, like shotguns, are also in a weird gray area when it comes to determining which one is the overall best. In terms of stats, pretty much all of them don't matter except for the two hidden, behind the scenes stats, Zoom and Aim Assistance, and even then, it doesn't matter if they're not the most optimal values. Generally speaking, in 99.9% of cases where a guardian is firing at another guardian, a single shot to the head is usually all it takes to take them down. Range doesn't matter. Stability doesn't matter. Handling matters a little bit, but no matter how much you have, scoping in will usually take a fair amount of time. With all of this in mind, surely the aptly named "Rapid-Fire" frames would win out on top, given that you could take down one guardian and not have to wait as long for the weapon to be ready to fire again, but that's not the case. Looking at the graph, there are two obvious standout fan favorites among the many snipers used in Crucible, namely Revoker and Beloved.
+
+### Revoker: The Power of Reversal of Fortune
+
+Revoker is, as the graph states, an aggressive frame sniper rifle. It fires slow but packs a punch, so why is it not only number one in terms of usage on the graph, but the most used gun in Crucible overall? 
+
+![Reversal of Fortune description](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/destiny2_2020-03-04_15-03-02.png)
+
+Short answer: this perk right here.
+
+Reversal of Fortune quite literally changes the way a guardian approaches sniping, and using special weapons in general. Instead of hoarding every little bit of special ammo you can and only taking shots when you're certain you can hit them, Reversal of Fortune instead allows guardians to take as many shots as they like, since the consequences for doing so are reduced to a negligable amount. The only way to waste ammo with Revoker would be to miss multiple shots or reload before the perk could activate, as only the last bullet is returned with the perk, and bullets don't get returned when the weapon has a full magazine. In addition, the weapon is an aggressive frame sniper, dealing such a large amount of damage that, even if the shot hits the body and the enemy guardian lives, cleaning up with a primary weapon (preferrably with Quickdraw) is no problem. In short: the weapon ensures that, no matter what, you have at least one shot of special ammo to use against your opponents.
+
+### Beloved: The Jack of All Trades
 
