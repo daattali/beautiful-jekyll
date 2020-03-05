@@ -85,6 +85,8 @@ Beloved on the other hand is a weapon with randomly rolled perks; it's also real
 | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-05.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-29.png?raw=true) |
 | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-19.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-41.png?raw=true) |
 
+___
+
 ###### Perk descriptions screenshotted from [light.gg](https://www.light.gg/db/items/4190932264/beloved/)
 
 Both slots have a number of combinations to suit the needs of the wielder, obviously, a top pick would be Snapshot Sights and Quickdraw, but even a Beloved with something like No Distractions and Moving target would make for an excellent rifle to provide overwatch over a portion of the map. In addition to its great perk selections, Beloved also has the highest aim assistance stat out of every sniper within its archetype, another factor to contribute to its popularity.
