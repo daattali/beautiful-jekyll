@@ -84,3 +84,50 @@ Beloved on the other hand is a weapon with randomly rolled perks; it's also real
 | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-48-52.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-16.png?raw=true) |
 | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-05.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-29.png?raw=true) |
 | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-49-19.png?raw=true) | ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/brave_2020-03-04_15-50-41.png?raw=true) |
+###### Perk descriptions screenshotted from [light.gg](https://www.light.gg/db/items/4190932264/beloved/)
+
+Both slots have a number of combinations to suit the needs of the wielder, obviously, a top pick would be Snapshot Sights and Quickdraw, but even a Beloved with something like No Distractions and Moving target would make for an excellent rifle to provide overwatch over a portion of the map. In addition to its great perk selections, Beloved also has the highest aim assistance stat out of every sniper within its archetype, another factor to contribute to its popularity.
+
+***
+
+## Bygones: "The Dad Rifle"
+
+Bygones' popularity stems from a similar place as Beloved's, its perk rolls are very broad and provide for a wide variety of combinations most of which are very useful in Crucible. In addition, it has the highest aim assistance stat out of all adaptive frame pulse rifles, and its stats are such that it pretty much overperforms in all catagories. It's stable, accurate, handles quickly, and is all-around a generally decent weapon at most ranges.
+
+## The Wardcliff Coil and Power Weapons in General
+
+When it comes to the power weapon slots, most of the choices are all pretty much the same; what you choose will most likely be what you feel comfortable with, and as such, power weapons are sort of spread out in terms of usage. This is because power weapons, while they usually see use in Crucible matches, are only available when the ammo for it spawns, which is only once or twice a round, and need to be fought over in order to secure it. Then, depending if ammo sharing is on, and you or a teammate grabbed the ammo, your team can load up on a pittance of power ammo, otherwise whoever got there first has a slightly less pitiful amount of power ammo.
+
+The reason behind Wardcliff taking one of the top ten spots is simply due to the weapon's type and exotic perk; The Wardcliff Coil is a rocket launcher, and only gets one shot when power ammo is picked up, however Wardcliff's exotic perk turns that one shot into a volley of about 15-20 tracking micro-rockets when fired, allowing its destructive potential to be spread over a wide area.
+
+The amount you get with ammo sharing is as follows
+ - Rocket Launcher: 1 shot
+ - Grenade Launcher: 3 shots
+ - Machine Gun: 24 shots
+ - Exotic Power Sniper Rifles: 8 shots
+ - Linear Fusion Rifles: 5 shots
+ - Exotic Power Shotguns: 4 shots
+ - Swords: 8 ammo
+ - Leviathan's Breath: 2 shots
+ 
+***
+
+## Conclusion
+
+The top ten, and even top one hundred most used weapons in Destiny 2 Crucible all have a reason for being there. Whether its because of the weapon's ease of use, like Revoker's Reversal of Fortune, incredible abilities or potential rolls, like with Bygones and Beloved, ease of acquisition, like Spare Rations or Dust Rock Blues, or even because it's just statistically the best like Mindbender's, each one deserves the position it holds. If I had to make a list of what factors I would use to definitively rate a weapon, they would be as follows:
+
+**1. Good Perks**
+
+This would be perks like Revoker's Reversal of Fortune, Snapshot Sights, Quickdraw, or exotic perks found on exotic weapons; perks that really define the weapon and make it feel strong when you're using it.
+
+**2. Ease of Use**
+
+Obviously, nobody's a perfect shot all the time, even the most veteran players who do nothing but play Crucible miss shots sometimes, being able to quickly make accurate follow-up shots is a must-have
+
+**3. Personal Choice**
+
+Pick weapons that suit your playstyle. Nobody's forcing you to run The Last Word and Mindbender's Ambition all the time. Figure out your strong spots and emphasize those areas. The top ten list is just what most people are using; they're good weapons, but if you're not good *with* them, then what's the point?
+
+**4. Cover all of your bases**
+
+This is more of a loadout suggestion rather than a weapon one, but being able to have a weapon for every type of gunfight usually helps out. Mix long range scout rifles with a shotgun, use a sniper with an SMG, take a pulse rifle and a fusion rifle and become the ultimate midrange master.
