@@ -105,7 +105,7 @@ Both slots have a number of combinations to suit the needs of the wielder, obvio
 ***
 ## Speaking of Perks
 
-Now is also probably as good a time as any to compare perk popularity among legendary weapons. Since most legendary weapons can have a variety of perk combinations that alter the way the weapon is used in PvP, it's good to know what to look out for in terms of what people are using.
+Now is also probably as good a time as any to compare perk popularity among legendary weapons. Since most legendary weapons can have a variety of perk combinations that alter the way the weapon is used in PvP, it's good to know what to look out for in terms of what other players are using.
 
 ![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/graph_perks.png?raw=true)
 
