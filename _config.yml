@@ -23,7 +23,7 @@ navbar-links:
   About Me: "aboutme"
   Curriculum vitae: "CV" 
   Projects:
-    - ABO-NX "https://hub.wsu.edu/fernandovillanea/abo-teaching-model/"
+    - ABO-NX: "https://hub.wsu.edu/fernandovillanea/abo-teaching-model/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
