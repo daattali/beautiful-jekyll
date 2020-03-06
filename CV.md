@@ -1,7 +1,6 @@
 ---
 layout: page
-title: CV
-subtitle: Here's my CV
+title: Curriculum Vitae
 ---
 
 <object data="/resources/Layman_CV.pdf" type="application/pdf" width="700px" height="700px">
