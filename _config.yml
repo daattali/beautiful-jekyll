@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Nate's site
+title: Nate Layman
 
 # Short description of your site
 description: My virtual warehouse
@@ -21,6 +21,7 @@ description: My virtual warehouse
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
+  #CV: 
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
