@@ -9,7 +9,7 @@ When it comes to most first-person shooters, whether it be Counter-Strike, Call 
 
 In this sense, Destiny 2 is somewhat of an o ddball when it comes to player vs. player (PvP) content. This is mostly due to the nature of the game itself; Destiny 2 is a first-person shooter, as well as a massively multiplayer online action role playing game. In short, this means that, rather than having a small, fixed list of weapons for players to choose from and customize, players are instead rewarded with randomly generated weapons and armor as they play, based on what activites they're doing. In addition to that, there are about five-hundred unique weapons in the game, each with their own stats, perks, special abilities, and drawbacks, and so the question inevitably arises:
 
-## What are the best weapons in Destiny 2 for PvP?
+## What are the most popular weapons in Destiny 2 for PvP?
 
 ![List of top ten most used weapons in Destiny 2 Crucible](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/brave_2020-03-04_08-21-06.png)  
 ###### Data pulled on March 1st from https://destinytracker.com/destiny-2/db/insights
@@ -103,6 +103,13 @@ ___
 Both slots have a number of combinations to suit the needs of the wielder, obviously, a top pick would be Snapshot Sights and Quickdraw, but even a Beloved with something like No Distractions and Moving target would make for an excellent rifle to provide overwatch over a portion of the map. In addition to its great perk selections, Beloved also has the highest aim assistance stat out of every sniper within its archetype, another factor to contribute to its popularity.
 
 ***
+## Speaking of Perks
+
+Now is also probably as good a time as any to compare perk popularity among legendary weapons. Since most legendary weapons can have a variety of perk combinations that alter the way the weapon is used in PvP, it's good to know what to look out for in terms of what people are using.
+
+![](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/img/graph_perks.png?raw=true)
+
+***
 
 ## Bygones: "The Dad Rifle"
 
@@ -128,13 +135,13 @@ The amount you get with ammo sharing is as follows
 
 ## Conclusion
 
-So, the question remains, why are the best weapons in Destiny 2 PvP
+So, the question remains, why are the the most popular weapons in Destiny 2 PvP the most popular?
 
 The top ten, and even top one hundred most used weapons in Destiny 2 PvP all have a reason for being there. Whether its because of the weapon's ease of use, like Revoker's Reversal of Fortune, incredible abilities or potential rolls, like with Bygones and Beloved, ease of acquisition, like Spare Rations or Dust Rock Blues, or even because it's just statistically the best like Mindbender's, each one deserves the position it holds. If I had to make a list of what factors I would use to definitively rate a weapon, they would be as follows:
 
 **1. Good Perks**
 
-This would be perks like Revoker's Reversal of Fortune, Snapshot Sights, Quickdraw, or exotic perks found on exotic weapons; perks that really define the weapon and make it feel strong when you're using it.
+This would be perks like Revoker's Reversal of Fortune, Snapshot Sights, Quickdraw, or some of the perks on the perk comparison graph above; perks that really define the weapon and make it feel strong when you're using it.
 
 **2. Ease of Use**
 
