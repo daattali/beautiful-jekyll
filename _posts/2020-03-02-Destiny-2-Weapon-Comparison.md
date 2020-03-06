@@ -1,13 +1,13 @@
 ---
 title: Destiny 2 Season of Dawn Weapons Retrospective
-subtitle: Asking and answering the important question of why the best weapons were the best
+subtitle: Asking and answering the important question of why the most popular weapons are the most used
 ---
 
 ## Foreword
 
 When it comes to most first-person shooters, whether it be Counter-Strike, Call of Duty, or Rainbow Six, the question inevitably arises: "What's the best weapon?" or "What's the best loadout?" Whatever the game may be, it always seems like players are searching for the most optimal method to play it, especially when it comes to taking down opposing players in first-person shooters.
 
-In this sense, Destiny 2 is somewhat of an o ddball when it comes to player vs. player (PvP) content. This is mostly due to the nature of the game itself; Destiny 2 is a first-person shooter, as well as a massively multiplayer online action role playing game. In short, this means that, rather than having a small, fixed list of weapons for players to choose from and customize, players are instead rewarded with randomly generated weapons and armor as they play, based on what activites they're doing. In addition to that, there are about five-hundred unique weapons in the game, each with their own stats, perks, special abilities, and drawbacks, and so the question inevitably arises:
+In this sense, Destiny 2 is somewhat of an oddball when it comes to player vs. player (PvP) content. This is mostly due to the nature of the game itself; Destiny 2 is a first-person shooter, as well as a massively multiplayer online action role playing game. In short, this means that, rather than having a small, fixed list of weapons for players to choose from and customize, players are instead rewarded with randomly generated weapons and armor as they play, based on what activites they're doing. In addition to that, there are about five-hundred unique weapons in the game, each with their own stats, perks, special abilities, and drawbacks, and so the question inevitably arises:
 
 ## What are the most popular weapons in Destiny 2 for PvP?
 
