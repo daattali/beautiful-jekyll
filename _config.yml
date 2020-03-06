@@ -21,7 +21,7 @@ description: My virtual warehouse
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  CV: "CV" 
+  CV: "CV.md" 
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
