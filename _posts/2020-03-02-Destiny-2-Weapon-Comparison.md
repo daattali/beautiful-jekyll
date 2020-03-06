@@ -120,16 +120,6 @@ Bygones' popularity stems from a similar place as Beloved's, its perk rolls are 
 When it comes to the power weapon slots, most of the choices are all pretty much the same; what you choose will most likely be what you feel comfortable with, and as such, power weapons are sort of spread out in terms of usage. This is because power weapons, while they usually see use in the player vs. player Crucible matches, are only available when the ammo for it spawns, which is only once or twice a round, and need to be fought over in order to secure it. Then, depending if ammo sharing is on, and you or a teammate grabbed the ammo, your team can load up on a pittance of power ammo, otherwise whoever got there first has a slightly less pitiful amount of power ammo.
 
 The reason behind Wardcliff taking one of the top ten spots is simply due to the weapon's type and exotic perk; The Wardcliff Coil is a rocket launcher, and only gets one shot when power ammo is picked up, however Wardcliff's exotic perk turns that one shot into a volley of about 15-20 tracking micro-rockets when fired, allowing its destructive potential to be spread over a wide area.
-
-The amount you get with ammo sharing is as follows
- - Rocket Launcher: 1 shot
- - Grenade Launcher: 3 shots
- - Machine Gun: 24 shots
- - Exotic Power Sniper Rifles: 8 shots
- - Linear Fusion Rifles: 5 shots
- - Exotic Power Shotguns: 4 shots
- - Swords: 8 ammo
- - Leviathan's Breath: 2 shots
  
 ***
 
@@ -141,16 +131,16 @@ The top ten, and even top one hundred most used weapons in Destiny 2 PvP all hav
 
 **1. Good Perks**
 
-This would be perks like Revoker's Reversal of Fortune, Snapshot Sights, Quickdraw, or some of the perks on the perk comparison graph above; perks that really define the weapon and make it feel strong when you're using it.
+This would be perks like Revoker's Reversal of Fortune, Snapshot Sights, Quickdraw, or some of the perks on the perk comparison graph in the "Speaking of Perks" section above; perks that really define the weapon and make it feel strong when you're using it.
 
-**2. Ease of Use**
+**2. Ease of Acquisition**
 
-Obviously, nobody's a perfect shot all the time, even the most veteran players who do nothing but play Crucible miss shots sometimes, being able to quickly make accurate follow-up shots is a must-have
+Obviously, if you can't get a weapon, you won't use it. Weapons with fixed rolls that are the results of quests gain a lot of points here, as do randomly generated legendary weapons that are the result of easy to complete activities. In the case of randomly generated weapons, the more you can get in a shorter amount of time, the more likely you are to have the version that you want.
 
 **3. Personal Choice**
 
-Pick weapons that suit your playstyle. Nobody's forcing you to run The Last Word and Mindbender's Ambition all the time. Figure out your strong spots and emphasize those areas. The top ten list is just what most people are using; they're good weapons, but if you're not good *with* them, then what's the point?
+Not really that present in the top 10 most used weapons in PvP, but once the usage in PvP drops below 0.5%, that's where this starts to kick in. People will usually find a weapon type or specific weapon that really suits them, and use those weapons over the ones that the playerbase deems the best, and that's where the weapons whose usage is under 0.5% comes in; they're coming from players playing casually the way they want to, not dictated what the current meta, "best" weapons are.
 
-**4. Cover all of your bases**
+**4. Covering all of your bases**
 
-This is more of a loadout suggestion rather than a weapon one, but being able to have a weapon for every type of gunfight usually helps out. Mix long range scout rifles with a shotgun, use a sniper with an SMG, take a pulse rifle and a fusion rifle and become the ultimate midrange master.
+This is moreso an overarching force rather than one that determines the most popular weapons. Given that, as mentioned in the beginning of this article, most, if not all loadouts in PvP are comprised of one primary, special, and power weapon, it's no surprise then that this would effect the usages of various weapon types
