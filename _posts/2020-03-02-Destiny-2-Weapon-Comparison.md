@@ -147,9 +147,9 @@ This is moreso an overarching force rather than one that determines the most pop
 
 ## Links
 
-[Code that I used to generate the CSV to plot this data](https://colab.research.google.com/drive/198mYGzNBQCqbC1fictUYVKVVjdXcU91K)
-[Code that I used to generate the graphs in this article](https://colab.research.google.com/drive/1bDLXT2M77Xdfnw6iYh8YIPlXDuxvWr3h)
-[The CSV that I used](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/Destiny2.csv)
-[data.destinysets.com: a visual Destiny 2 manifest lookup app](https://data.destinysets.com/)
-[Light.gg: a way cleaner and more visually friendly manifest lookup app](https://www.light.gg/db/all/)
-[DestinyTracker Insights: where I pulled the weapon usage stats from](https://destinytracker.com/destiny-2/db/insights)
+[Code that I used to generate the CSV to plot this data](https://colab.research.google.com/drive/198mYGzNBQCqbC1fictUYVKVVjdXcU91K)  
+[Code that I used to generate the graphs in this article](https://colab.research.google.com/drive/1bDLXT2M77Xdfnw6iYh8YIPlXDuxvWr3h)  
+[The CSV that I used](https://github.com/Lilchoto3/lilchoto3.github.io/blob/master/Destiny2.csv)  
+[data.destinysets.com: a visual Destiny 2 manifest lookup app](https://data.destinysets.com/)  
+[Light.gg: a way cleaner and more visually friendly manifest lookup app](https://www.light.gg/db/all/)  
+[DestinyTracker Insights: where I pulled the weapon usage stats from](https://destinytracker.com/destiny-2/db/insights)  
