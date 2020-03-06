@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Curriculum Vitae
+title: Curriculum vitae
 ---
 
 <object data="/resources/Layman_CV.pdf" type="application/pdf" width="700px" height="700px">
