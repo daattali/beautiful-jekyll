@@ -144,3 +144,11 @@ Not really that present in the top 10 most used weapons in PvP, but once the usa
 **4. Covering all of your bases**
 
 This is moreso an overarching force rather than one that determines the most popular weapons. Given that, as mentioned in the beginning of this article, most, if not all loadouts in PvP are comprised of one primary, special, and power weapon, it's no surprise then that this would effect the usages of various weapon types
+
+## Links
+
+[Code that I used to generate the CSV to plot this data](https://colab.research.google.com/drive/198mYGzNBQCqbC1fictUYVKVVjdXcU91K)
+[Code that I used to generate the graphs in this article](https://colab.research.google.com/drive/1bDLXT2M77Xdfnw6iYh8YIPlXDuxvWr3h)
+[data.destinysets.com: a visual Destiny 2 manifest lookup app](https://data.destinysets.com/)
+[Light.gg: a way cleaner and more visually friendly manifest lookup app](https://www.light.gg/db/all/)
+[DestinyTracker Insights: where I pulled the weapon usage stats from](https://destinytracker.com/destiny-2/db/insights)
