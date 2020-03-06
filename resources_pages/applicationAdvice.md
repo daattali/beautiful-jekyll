@@ -46,6 +46,7 @@ that may warrant an explanation:
 
 - A gap year or two in your resume
 - You are currently enrolled in a degree program with an end date after the MDS start date
+- You already have a degree that is similar to MDS (e.g. data science, applied statistics)
 - You have attended a large number of academic institutions
 - Your previous degrees span a much shorter or longer amount of time than typical
 - Your grades are generally strong but are very poor for one or two semesters
