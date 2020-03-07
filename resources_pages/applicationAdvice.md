@@ -19,10 +19,14 @@ If your ultimate goal is to pursue a PhD in statistics or computer science, MDS 
 A strong personal statement should be...
 
 - **specific to you.** The personal statement should be as specific to you as possible, and should explain how the MDS program fits into you career trajectory. Try to avoid sentences that could work for any MDS applicant. For example, avoid talking about how data science is changing the world, or about how UBC is a fantastic institution - both are true, but they don't tell us about _you_.  
-- **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results. On the other hand, including the names of various MDS faculty members, unless you have something specific to say, is also generally not helpful.
+- **specific to UBC MDS.** The personal statement should be specific to the UBC MDS program, and should demonstrate that you understand what data science is and what the MDS program is. Reusing a letter you wrote to apply for Master's programs in Statistics or Computer Science, for example, is unlikely to yield good results. 
 - **polished.** The personal statement should be well-written, not contain typos or grammatical errors, use reasonable margins and font sizes, and adhere to the maximum length guidelines.
 
-Part of the personal statement can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
+Other advice for your personal statement:
+
+- While it is useful to explain why MDS is a good fit for you, praising UBC in general is not particularly helpful. Including the names of various MDS faculty members, unless you have something specific to say, is also generally not helpful.
+- If you have been out of school for a long time, and/or studied something very different from data science, the personal statement is a good opportunity to discuss your technical readiness for MDS. Often from your resume and reference letters we cannot tell if your work is technical in nature. Since your work experience is generally an important part of your application, we suggest taking a few sentences to describe in detail what your job(s) entailed.
+- Part of the personal statement can also be used to explain any exceptional or unusual circumstances that pertain to your application; see below for more information. 
 
 #### 3. References
 
