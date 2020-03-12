@@ -25,6 +25,7 @@ navbar-links:
   Projects:
     - PREMPT Lassa Fever: "https://preemptlassawestafrica.ibest.uidaho.edu/"
     - ABO-NX: "https://hub.wsu.edu/fernandovillanea/abo-teaching-model/"
+    - TDOA game: "https://n8-layman.shinyapps.io/tdoa/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
