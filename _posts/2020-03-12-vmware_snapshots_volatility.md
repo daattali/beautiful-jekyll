@@ -5,9 +5,6 @@ subtitle: Get that analysis happening
 tags: [dfir,vmware]
 comments: true
 ---
-
-# 
-
 ## Backround
 I found recently during a CTF Memory image challenge, that analysing memory images from VMWare wasn't necesarily as easy as just having the right profile and files. Hopefully this helps anyone out there who needs to do the same. For this writeup I am using VMWare Workstation Pro v15.5.1
 
