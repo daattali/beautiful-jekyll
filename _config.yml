@@ -22,9 +22,9 @@ description: Bite my shiny metal.... knowledge
 navbar-links:
   About Me: "aboutme"
   Write-Ups by Tag:
-    - Systems Administration: "https://angry-bender.github.io/systems_administration/"
-    - Digital Forensics: "https://angry-bender.github.io/digital_forensics/"
-  Foresnic Scenarios: "scenarios"
+    - Systems Administration: "https://angry-bender.github.io/tags/#sysadmin"
+    - Digital Forensics: "https://angry-bender.github.io/tags/#dfir"
+  Forensic Scenarios: "scenarios"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
