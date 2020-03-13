@@ -2,7 +2,7 @@
 layout: post
 title: Basic Linux Resouces
 subtitle: The resources I used to help make a basic Linux course.
-tags: [sysadmin,linux]
+tags: [sysadmin]
 comments: true
 ---
 
