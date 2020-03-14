@@ -10,9 +10,10 @@ comments: false
 I found recently during a CTF Memory image challenge, that analysing memory images from VMWare wasn't necessarily as easy as just having the right profile and files. Hopefully this helps anyone out there who needs to do the same. For this write-up I am using VMWare Workstation Pro v15.5.1.
 
 ### TLDR
-For volatility to work you need the vmem and vmss files. To get these files the VM needs to be powered on.
+For volatility to work you need the vmem and vmss files. To get these files the VM needs to be powered on, then suspended.
 
 ### Applicable VMWare File Types
+
 File |	Usage |	Description
 --- | --- | ---
 .vmx |	vmname.vmx |	Virtual machine configuration file
@@ -29,7 +30,7 @@ File |	Usage |	Description
 ### What I tried
 First, I tried to get the vmware info with the volatility plugin, and a quick pslist with no luck
 
-![firsttry](https://angry-beder.github.io/img/vmt/firsttry.g
+![firsttry](https://angry-beder.github.io/img/vmt/firsttry.gif)
 
 Secondly, I found [here](https://www.andreafortuna.org/2017/08/07/volatility-my-own-cheatsheet-part-7-analyze-and-convert-crash-dumps-and-hibernation-files/) that you can use raw2dmp to convert the vmemfiles, I thought it might work with volatility. I've found on ADIA forensics appliance it seems to convert, but wont read the files and on a plain Ubuntu machine it wont even convert.
 
