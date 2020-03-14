@@ -26,23 +26,22 @@ File |	Usage |	Description
 .vmem |	** vmware.vmem ** |	Virtual Machine volatile memory file
 
 
-`table to come`
 ### What I tried
 First, I tried to get the vmware info with the volatility plugin, and a quick pslist with no luck
 
-![firsttry](https://angry-beder.github.io/img/vmt/firsttry.gif)
+![firsttry](https://angry-bender.github.io/img/vmt/firsttry.gif)
 
 Secondly, I found [here](https://www.andreafortuna.org/2017/08/07/volatility-my-own-cheatsheet-part-7-analyze-and-convert-crash-dumps-and-hibernation-files/) that you can use raw2dmp to convert the vmemfiles, I thought it might work with volatility. I've found on ADIA forensics appliance it seems to convert, but wont read the files and on a plain Ubuntu machine it wont even convert.
 
-![seccondtry](https://angry-beder.github.io/img/vmt/secondtry.gif)
+![seccondtry](https://angry-bender.github.io/img/vmt/secondtry.gif)
 
 After this, I did some more research into how vmware files work with memory, as I'm sure volatility can handle it. I noted the tool by VMWare vmss2core, dealt with vmem and vmss files. As I know volatility works with vmware files, I thought I would copy just the vmss file and see if the pslist would work again. Note: `2>/dev/null` has been placed due to a error in volatility piping on my Ubuntu workstation
 
-![thirdtry](https://angry-beder.github.io/img/vmt/thirdtry.gif)
+![thirdtry](https://angry-bender.github.io/img/vmt/thirdtry.gif)
 
 Thats the first win. Now... so analysts have the normal familiarity with raw memory image workflow, lets see if now we can create a raw file that works with this?
 
-![raw2dmptry](https://angry-beder.github.io/img/vmt/raw2dmptry.gif)
+![raw2dmptry](https://angry-bender.github.io/img/vmt/raw2dmptry.gif)
 
 Huzzah, now we have an image that analysts normally work with, just from copying some vmware files
 
