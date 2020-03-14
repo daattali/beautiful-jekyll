@@ -15,7 +15,8 @@ My name is Nobody(Just cause of personal reason):
 
 ### My history
 
- _6 to 18_ : **Normal** student in **normal** school 
- _19 to 22_ : Had been learning university and it's **normal**,too.
+ - _6 to 18_ : **Normal** student in **normal** school 
+ - _19 to 22_ : Had been learning university and it's **normal**,too.
+ 
  ### I hate normal and good.
  
