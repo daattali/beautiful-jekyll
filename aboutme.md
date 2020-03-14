@@ -4,17 +4,17 @@ title: About me
 subtitle: Hi there, its good to see you
 ---
 
-Welcome to my blog on various topics. I aim to do a few writeups here based on my experience as a systems administrator & cyber security professional
+Welcome to my blog on various topics. I aim to do a few write-ups here based on my experience as a systems administrator & cyber security professional
 
 
-## Writeups Coming Soon
-[CyberPlaybook]
+## Write-ups Coming Soon
+[Cyber Playbook]
 
 [Building a Windows AD]
 
 ## Handy Scripts
 [Ubuntu-Live](https://github.com/angry-bender/UbuntuLive)
-A is a Set of Shell Scripts and files based upon the ubuntu documentation at https://help.ubuntu.com/community/LiveCDCustomizationFromScratch this is designed to work with xenial, and is only for creating a standalone live USB or CD that has a light version of ubuntu on there.
+A is a Set of Shell Scripts and files based upon the Ubuntu documentation at https://help.ubuntu.com/community/LiveCDCustomizationFromScratch this is designed to work with Xenial, and is only for creating a standalone live USB or CD that has a light version of Ubuntu on there.
 
 [Student - Linux Course](https://github.com/angry-bender/linuxtraining)
 The student resources for some Linux training I have developed, The password for the student scripts are available upon request via Reddit
@@ -23,7 +23,7 @@ The student resources for some Linux training I have developed, The password for
 The instructor resources form some Linux training I have developed. This set's up the instructor's laptop.
 
 [SUOPE](https://github.com/angry-bender/SUOPE)
-A modified python exploit for CVE-2018-15473 that will enumerate valid users then spray passwords at a vulnerable SSH Server. This repo is private for now, as it's a POC for my University Studies. The original exploit was published by Justin Gardner, Penetration Tester @ SynerComm AssureIT - Github: <https://github.com/Rhynorater/CVE-2018-15473-Exploit>
+A modified python exploit for CVE-2018-15473 that will enumerate valid users then spray passwords at a vulnerable SSH Server. This repo is private for now, as it's a POC for my University Studies. The original exploit was published by Justin Gardner, Penetration Tester @ SynerComm AssureIT - GitHub: <https://github.com/Rhynorater/CVE-2018-15473-Exploit>
 
 
 ### Contact

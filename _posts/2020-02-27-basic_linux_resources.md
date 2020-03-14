@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Basic Linux Resouces
+title: Basic Linux Resources
 subtitle: The resources I used to help make a basic Linux course.
-tags: [sysadmin]
-comments: true
+tags: [sysadmin, linux]
+comments: false
 ---
 
 
@@ -26,7 +26,7 @@ Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
 ### Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1
 [![](https://img.youtube.com/vi/mHB0Z-HUauo/maxresdefault.jpg)](https://youtu.be/mHB0Z-HUauo)
 
-### Vim Cheatsheet for programmers
+### Vim Cheat sheet for programmers
 ![vim cheatsheet](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png)
 
 ### Grep awk and sed tutorial
@@ -40,17 +40,17 @@ Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
 
 ## Bash Scripting
 ### Internal Variables
-you can use `printenv` or for shell scrtiping the following may be useful
+you can use `printenv` or for shell scripting the following may be useful
 <https://www.tldp.org/LDP/abs/html/internalvariables.html>
 
 I also have found the following variables quire useful, and have used them a lot
 
-variable | explination
+variable | explanation
  --- | ---
  $? | Used for capturing the last processes exit code
  $EUID | Captures the user id that started the script, useful for checking sudo UID 0
  $SUDO_USER | Captures the username that started a bash script
- $PWD | presnet working directory, saves using `$(pwd)`
+ $PWD | present working directory, saves using `$(pwd)`
 
 ### Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177
 [![](https://img.youtube.com/vi/hdcQlmW70KQ/maxresdefault.jpg)](https://youtu.be/hdcQlmW70KQ)
@@ -67,7 +67,7 @@ variable | explination
 
 [Basic Bash guide for beginners (ebook)](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
 
-[Basic Bash scripting for beginners (Youtube Playlist)](https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_)
+[Basic Bash scripting for beginners (YouTube Playlist)](https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_)
 
 ## Basic Linux commands
 
