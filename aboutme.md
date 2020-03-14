@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: This is my blog tell about my stories and stuff,..
 ---
-- ![](img/aboutme.jpg)
+![hi](img/calm-down.png)
 
 ### Information:
 My name is Nobody(Just cause of personal reason):
