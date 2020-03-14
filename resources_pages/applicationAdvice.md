@@ -55,7 +55,7 @@ that may warrant an explanation:
 - You have attended a large number of academic institutions
 - Your previous degrees span a much shorter or longer amount of time than typical
 - Your grades are generally strong but are very poor for one or two semesters
-- You did not get a reference letter from your main professional/academic experience(s), e.g. main employer on your resume, PhD advisor
+- You did not get a reference letter from your prominent professional/academic experience(s), e.g. main employer on your resume, Master's/PhD advisor
 - etc.
 
 To elaborate on the final example above, if you have some particularly poor grades but there is a noteworthy reason for your performance, you should explain it. For example, perhaps you were working full time, caring for an ill family member, or simply unmotivated because you were not excited about what you were studying. 
