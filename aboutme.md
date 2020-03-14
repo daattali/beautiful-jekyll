@@ -3,13 +3,15 @@ layout: page
 title: About me
 subtitle: This is my blog tell about my stories and stuff,..
 ---
-![Iaboutme](img/aboutme.gif)
+- ![Iaboutme](img/aboutme.gif)
+
+### Information:
 My name is Nobody(Just cause of personal reason):
 
 - I am a coder(my skill is very basic ...)
 
 **What else?** 
-I dont know !!! I will tell on my post on Blog. 
+- I dont know !!! I will tell on my post on Blog. 
 
 ### My history
 
