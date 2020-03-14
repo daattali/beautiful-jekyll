@@ -1,16 +1,19 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: This is my blog tell about my stories and stuff,..
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Nobody(Just cause of personal reason):
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I am a coder(my skill is very basic ...)
 
-What else do you need?
+**What else?** 
+I dont know !!! I will tell on my post on Blog. 
 
-### my history
+### My history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+ _6 to 18_ : **Normal** student in **normal** school 
+ _19 to 22_ : Had been learning university and it's **normal**,too.
+ **I hate normal and good. **
+ ![Drag Racing](aboutme.jpg)
