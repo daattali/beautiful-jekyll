@@ -22,8 +22,8 @@ File |	Usage |	Description
 .vmsd |	vmname.vmsd |	Virtual machine snapshots
 .vmsn |	vmname.vmsn |	Virtual machine snapshot data file
 .vswp |	vmname.vswp |	Virtual machine swap file
-.vmss |	** vmname.vmss ** |	Virtual machine suspend file
-.vmem |	** vmware.vmem ** |	Virtual Machine volatile memory file
+.vmss |	**vmname.vmss** |	Virtual machine suspend file
+.vmem |	**vmware.vmem** |	Virtual Machine volatile memory file
 
 
 ### What I tried
