@@ -6,14 +6,15 @@
           {%- for link in site.social-network-links -%}
             {%- assign curkey = link[0] -%}
             {%- assign element = site.data.SocialNetworks[curkey] -%}
-            <li>
             {%- if curkey == 'rss' -%}
-              <a href="{{ '/feed.xml' | relative_url }}" title="{{ element.name }}">
-            {%- elsif curkey == 'yelp' -%}
-              <a href="https://{{ site.social-network-links[curkey] }}.yelp.com" title="{{ element.name }}">
+              {%- capture url -%}{{ '/feed.xml' | relative_url }}{%- endcapture -%}
             {%- else -%}
-              <a href="{{element.baseURL}}{{ site.social-network-links[curkey] }}" title="{{ element.name }}">
+              {%- assign value = site.social-network-links[curkey] -%}
+              {%- assign placeholder = "{value}" -%}
+              {%- capture url -%}{{ element.urlTemplate | replace: placeholder, value }}{%- endcapture -%}
             {%- endif -%}
+            <li>
+              <a href="{{ url }}" title="{{ element.name }}">
                 <span class="fa-stack fa-lg" aria-hidden="true">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa {{ element.icon }} fa-stack-1x fa-inverse"></i>
