@@ -81,7 +81,7 @@ variable | explanation
 <https://kongwenbin.wordpress.com/2016/08/02/overthewire-bandit/>
 
 ## Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))
-<https://github.com/samfree91/linuxtraining>
+<https://github.com/angry-bender/linuxtraining>
 
 ## Arch Linux Installation Fixes
 
