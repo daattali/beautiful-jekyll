@@ -53,7 +53,7 @@ footer-link-col: "#404040"
 
 navbar-img: "/img/pgimg.png"
 footer-img: "/img/pgimg.png"
-page-img: "/img/pgimg.png"
+#page-img: "/img/pgimg.png"
 
 # --- Footer options --- #
 
