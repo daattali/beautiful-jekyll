@@ -125,7 +125,7 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 #just-comments: "ABCD-EFGH-IJKL"
 
 # To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+fb_comment_id: "104859264477462"
 
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
