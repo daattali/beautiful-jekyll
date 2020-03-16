@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: My Blog
+title: Daisy Shop
 
 # Short description of your site
 description: "A virtual proof that I'm awesome"
@@ -52,7 +52,7 @@ footer-link-col: "#404040"
 # instead of colour
 
 #navbar-img: "/img/pgimg.png"
-footer-img: "/img/pgimg.png"
+#footer-img: "/img/pgimg.png"
 #page-img: "/img/pgimg.png"
 
 # --- Footer options --- #
@@ -60,7 +60,7 @@ footer-img: "/img/pgimg.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: No body
+  name: DaisyShop
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
