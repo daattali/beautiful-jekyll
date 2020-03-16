@@ -4,14 +4,14 @@
 title: Daisy Shop
 
 # Short description of your site
-description: "A virtual proof that I'm awesome"
+description: "Version Beta."
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-url: "https://www.facebook.com/Daisy-Shop-104859264477462/"
+#url: "https://www.facebook.com/Daisy-Shop-104859264477462/"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -21,8 +21,8 @@ url: "https://www.facebook.com/Daisy-Shop-104859264477462/"
 # List of links in the navigation bar
 navbar-links:
   
-  Products:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+  Sản Phẩm:
+    - Nước rửa tay: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
   About Me: "aboutme"
   Contact: "http://youtube.com"
