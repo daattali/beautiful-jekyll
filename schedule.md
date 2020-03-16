@@ -4,6 +4,8 @@ title: Session Schedule
 subtitle: Our coaching session schedule
 ---
 
+**While school is out, please attend coaching sessions at [https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A](https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A)**
+
 The Club homework packet may be downloaded <a href="/files/Homework%20Packet.pdf">here</a>.
 
 The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">here</a>.
