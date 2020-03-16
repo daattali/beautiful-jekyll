@@ -11,7 +11,7 @@ description: "A virtual proof that I'm awesome"
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+url: "https://www.facebook.com/Daisy-Shop-104859264477462/"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -70,9 +70,9 @@ author:
 social-network-links:
   rss: true
   email: "freelancer2897@gmail.com"
-  facebook: vietdung
-  github: vietdung
-  twitter: vietdung
+  facebook: Daisy-Shop-104859264477462
+  #github: vietdung
+  #twitter: vietdung
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -94,7 +94,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "https://www.facebook.com/Daisy-Shop-104859264477462/"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -141,7 +141,7 @@ staticman:
 # --- Misc --- #
 
 # Facebook App ID
-# fb_app_id: ""
+fb_app_id: "104859264477462"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
