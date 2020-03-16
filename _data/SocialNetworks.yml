@@ -4,88 +4,89 @@
 #   name: Specify a user-friendly name that will be used as a link title
 #   urlTemplate: Define a URL template. The variable {value} will be replaced
 #                with the value of site.social-network-links.<key>
-#   icon: Specify a valid fontawesome icon class
+#   icon: Specify valid fontawesome icon classes (style + icon),
+#         e.g. "fab fa-github" or "fas fa-rss"
 
 facebook:
   name: "Facebook"
   urlTemplate: "https://www.facebook.com/{value}"
-  icon: "fa-facebook"
+  icon: "fab fa-facebook"
 
 github:
   name: "GitHub"
   urlTemplate: "https://github.com/{value}"
-  icon: "fa-github"
+  icon: "fab fa-github"
 
 twitter:
   name: "Twitter"
   urlTemplate: "https://twitter.com/{value}"
-  icon: "fa-twitter"
+  icon: "fab fa-twitter"
 
 reddit:
   name: "Reddit"
   urlTemplate: "https://reddit.com/u/{value}"
-  icon: "fa-reddit"
+  icon: "fab fa-reddit"
 
 email:
   name: "Email me"
   urlTemplate: "mailto:{value}"
-  icon: "fa-envelope"
+  icon: "fas fa-envelope"
 
 linkedin:
   name: "LinkedIn"
   urlTemplate: "https://linkedin.com/in/{value}"
-  icon: "fa-linkedin"
+  icon: "fab fa-linkedin"
 
 xing:
   name: "Xing"
   urlTemplate: "https://www.xing.com/profile/{value}"
-  icon: "fa-xing"
+  icon: "fab fa-xing"
 
 stackoverflow:
   name: "StackOverflow"
   urlTemplate: "https://stackoverflow.com/users/{value}"
-  icon: "fa-stack-overflow"
+  icon: "fab fa-stack-overflow"
 
 snapchat:
   name: "Snapchat"
   urlTemplate: "https://www.snapchat.com/add/{value}"
-  icon: "fa-snapchat-ghost"
+  icon: "fab fa-snapchat-ghost"
 
 instagram:
   name: "Instagram"
   urlTemplate: "https://www.instagram.com/{value}"
-  icon: "fa-instagram"
+  icon: "fab fa-instagram"
 
 youtube:
   name: "YouTube"
   urlTemplate: "https://www.youtube.com/{value}"
-  icon: "fa-youtube"
+  icon: "fab fa-youtube"
 
 spotify:
   name: "Spotify"
   urlTemplate: "https://open.spotify.com/user/{value}"
-  icon: "fa-spotify"
+  icon: "fab fa-spotify"
 
 telephone:
   name: "Phone"
   urlTemplate: "tel:{value}"
-  icon: "fa-phone"
+  icon: "fas fa-phone"
 
 rss:
   name: "RSS"
-  icon: "fa-rss"
+  icon: "fas fa-rss"
 
 steam:
   name: "Steam"
   urlTemplate: "https://steamcommunity.com/id/{value}"
-  icon: "fa-steam"
+  icon: "fab fa-steam"
 
 twitch:
   name: "Twitch"
   urlTemplate: "https://www.twitch.tv/{value}"
-  icon: "fa-twitch"
+  icon: "fab fa-twitch"
 
 yelp:
   name: "Yelp"
   urlTemplate: "https://{value}.yelp.com"
-  icon: "fa-yelp"
+  icon: "fab fa-yelp"
