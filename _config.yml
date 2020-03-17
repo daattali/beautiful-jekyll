@@ -105,7 +105,7 @@ url-pretty: "https://www.facebook.com/Daisy-Shop-104859264477462/"  # eg. "deana
 #google_analytics: ""
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-56HJKT7"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
