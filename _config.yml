@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Daisy Shop
+title: Daisy Shop - EVERYTHING
 
 # Short description of your site
-description: "Version Beta."
+description: " Đôi khi sự đấu tranh luôn cần phải có trong cuộc sống. Nếu cuộc sống trôi qua thật suôn sẻ, chúng ta sẽ không hiểu được cuộc sống, không có được bản lĩnh, nghị lực như chúng ta cần phải có, cuộc sống thật công bằng, không phải vô cớ mà mọi điều xảy đến với ta"
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
