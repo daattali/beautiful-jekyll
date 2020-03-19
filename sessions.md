@@ -4,6 +4,8 @@ title: Coaching sessions
 subtitle: Weekly coaching sessions at RMS
 ---
 
+**While school is out, please attend coaching sessions at [https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A](https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A)**
+
 RMS Math Club membership is available to all students at Redmond Middle School. We provide coaching for students at
 every level of experience in order to foster an environment of skill development. Learn more about joining
 <a href="http://rmsptsa.org/Page/Programs/Math%20Club" target="_blank">here</a>.
