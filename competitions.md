@@ -1,4 +1,5 @@
-Cancelledd page
+---
+layout: page
 title: Competitions
 subtitle: Our competition calendar
 ---
