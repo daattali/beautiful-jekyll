@@ -86,7 +86,7 @@ variable | explanation
 ## Arch Linux Installation Fixes
 
 Change your VM to UEFI as per the screenshot below
-![VMUEFI](https://angry-bender.github.io/systems_administration/images/lt/vm_uefi.png)
+![VMUEFI](https://angry-bender.github.io/img/lt/vm_uefi.png)
 
 1.I change to pacstrap /mnt base linux linux-firmware
 
@@ -96,7 +96,7 @@ Change your VM to UEFI as per the screenshot below
 
 If you use gdm, and cannot get a terminal see screenshot below from <https://unix.stackexchange.com/questions/504529/arch-gnome-terminal-timeout>
 
-![terminal_timeout](https://angry-bender.github.io/systems_administration/images/lt/terminal-timeout.png)
+![terminal_timeout](https://angry-bender.github.io/img/lt/terminal-timeout.png)
 
 
 
