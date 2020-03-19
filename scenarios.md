@@ -7,7 +7,7 @@ title: Forensics Scenarios
 
 ### Temporary Forensics Scenario
 
-I am currently hosting a Linux Forensics Scenario for 2 weeks (Closes 31APR20) - it is hosted at [LinuxCTF](http://45.76.114.244:8000/register)
+I am currently hosting a Linux Forensics Scenario for 2 weeks (Closes 31MAR20) - it is hosted at [LinuxCTF](http://45.76.114.244:8000/register)
 
 Please leave some feedback when you finish the last question
 
