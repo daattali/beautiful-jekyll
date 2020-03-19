@@ -1,8 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: Speeding up the videos to binge in super speed time
 date: '2020-03-19'
+subtitle: .
 ---
 ## How to speed up your videos whilst working from home
 
