@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: thật sự là không muốn viết about..
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Xin chào, tên mình là Thu Ngân (tên url đã nói lên tất cả :v). Sorry, mình chỉ cho các bạn biết tên thôi còn các thông tin còn lại mình bỏ qua vì:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Riêng tư
+- Sống ẩn :))
+..
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
