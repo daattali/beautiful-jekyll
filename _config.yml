@@ -1,20 +1,20 @@
 # --- General options --- #
 
 # Name of website
-title: My website
+title: nameiscashier's blog
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: simple
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+url: "https://nameiscashier.github.io"
 
 # baseurl should be an empty string
-#baseurl: ""
+baseurl: ""
 
 # --- Navigation bar options --- #
 
