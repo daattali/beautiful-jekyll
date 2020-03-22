@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post!
-image: /img/hello_world.jpeg
+image: /img/hello_world.jpg
 ---
 
-This is my first post, how exciting!
+Đây là bài post đầu tiên của blog :T và mình chẳng biết viết gì vào đây..
