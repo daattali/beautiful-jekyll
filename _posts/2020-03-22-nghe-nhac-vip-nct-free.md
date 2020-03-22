@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [New] Nghe nhạc VIP nhaccuatui miễn phí!
+title: Nghe nhạc VIP nhaccuatui miễn phí!
 subtitle: Nghe nhạc bản quyền free.
 ---
 
