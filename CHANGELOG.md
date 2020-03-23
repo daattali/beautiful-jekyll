@@ -4,6 +4,8 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2020-03-23** Remove just-comments as it's getting killed at the end of the year
+
 **2020-03-16** Upgrade font-awesome to 5.12.1 (#587) (thanks @cketti)
 
 **2018-12-24** Add support for Staticman comments (#440) (thanks @VincentTam)
