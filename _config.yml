@@ -20,6 +20,7 @@ description: My thoughts
 
 # List of links in the navigation bar
 navbar-links:
+  About Me: "aboutme"
   Blog: "blog"
   Resume: "files/nirmal_resume.pdf"
   Contact: "contact"
