@@ -1,0 +1,106 @@
+  
+/***************************/
+/**** INDEX.HTML STYLES ****/
+/***************************/
+
+.index-page {
+    margin: 80px 0 20px;
+}
+
+.index-page h2 {
+    margin: 0;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.index-page h3 {
+    font-size: 14px;
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.index-page h4 {
+    font-size: 14px;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: normal;
+}
+
+.index-page .detail {
+    font-size: 14px;
+}
+
+.index-page .detail hr {
+    width: 100px;
+}
+
+/* Avatar pic */
+.index-page .avatar-img {
+    width: 100px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .index-page {
+        margin-top: 130px
+    }
+
+    .index-page h1 {
+        font-size: 50px;
+    }
+
+    .index-page h2 {
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .index-page .avatar-img {
+        margin-top: 10px;
+    }
+
+
+}
+
+/**********************/
+/**** "PAGE" STYLES ****/
+/*(not really in use)***/
+/**** Source: https://github.com/hkhanna/hkhanna.github.io/blob/master/css/custom.css ****/
+
+/* Make the "page" pages heading smaller and more space above it */
+.intro-header .page-heading h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.intro-header .page-heading .page-subheading {
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+    .intro-header .page-heading h1 {
+        font-size: 50px;
+    }
+
+}
+
+/**********************/
+/**** OTHER STYLES ****/
+/**********************/
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-14 {
+    font-size: 14px;
+}

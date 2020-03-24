@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+css: "/css/custom.css"
+---
+
+<div class="container font-16">
+  <h2>Blog</h2>
+  <p>Math, Programming, Software, and Miscellaneous Thoughts</p>
+  {% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <div class="row form-group">
+      <div class="col-md-2">
+        <code>{{post.date | date: "%Y %b %d"}}</code>
+      </div>
+      <div class="col-md-9">
+        <strong>{{post.title}}</strong>
+        <br>{{post.subtitle}}
+      </div>
+    </div>
+  </a>
+  <hr>
+  {% endfor %}
+
+</div>
