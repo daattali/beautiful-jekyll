@@ -120,6 +120,9 @@ To use Staticman, you first need to invite `staticmanlab` as a collaborator to y
 
 Optional: You may want to configure a webhook to prevent old inactive branches (representing approved comments) from stacking up.  You can refer to [Staticman's documentation](https://staticman.net/docs/webhooks) for details.  Make sure to input the **Payload URL** according to your chosen `endpoint`.  For example, the default `endpoint` is `https://staticman3.herokuapp.com/v3/entry/github/`, so the corresponding **Payload URL** should be `https://staticman3.herokuapp.com/v1/webhook`.
 
+#### Gittalk comments 
+To use gittalk, you first need to register a gitHub application by going to register github application (https://github.com/settings/applications/new), **Note** You must specify the website domain url in the Authorization callback URL field.  Lastly, fill in the github application's `Client ID`、`Client Secret` and `gittalk` parameters in the Gittalk section of `_config.yml`.
+
 ### Adding Google Analytics to track page views
 
 Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.
