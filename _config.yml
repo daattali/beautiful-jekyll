@@ -135,12 +135,12 @@ staticman:
     secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # To use Gittalk comments  https://github.com/gitalk/gitalk#Usage  fill in clientID, clientSecret, repository, owner and admin
-gittalk:
+gitalk:
   # Note: A GitHub Application is needed for authorization, if you don't have one, going to https://github.com/settings/applications/new register a new one.
   # You must specify the website domain url in the Authorization callback URL field.
   clientID:  # GitHub Application Client ID
   clientSecret:   # GitHub Application Client Secret,
-  repository:   # Storage gittalk's repository eg. blog-comments
+  repository:   # Storage gitalk's repository eg. blog-comments
   owner:   # GitHub repo owner,
   admin:   # GitHub repo owner and collaborators, only these guys can initialize github issues eg. 'colynn,daattali'
 

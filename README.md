@@ -120,8 +120,8 @@ To use Staticman, you first need to invite `staticmanlab` as a collaborator to y
 
 Optional: You may want to configure a webhook to prevent old inactive branches (representing approved comments) from stacking up.  You can refer to [Staticman's documentation](https://staticman.net/docs/webhooks) for details.  Make sure to input the **Payload URL** according to your chosen `endpoint`.  For example, the default `endpoint` is `https://staticman3.herokuapp.com/v3/entry/github/`, so the corresponding **Payload URL** should be `https://staticman3.herokuapp.com/v1/webhook`.
 
-#### Gittalk comments 
-To use gittalk, you first need to register a gitHub application by going to register github application (https://github.com/settings/applications/new), **Note** You must specify the website domain url in the Authorization callback URL field.  Lastly, fill in the github application's `Client ID`、`Client Secret` and `gittalk` parameters in the Gittalk section of `_config.yml`.
+#### Gitalk comments 
+To use gitalk, you first need to register a gitHub application by going to register github application (https://github.com/settings/applications/new), **Note** You must specify the website domain url in the Authorization callback URL field.  Lastly, fill in the github application's `Client ID`、`Client Secret` and `gitalk` parameters in the Gittalk section of `_config.yml`.
 
 ### Adding Google Analytics to track page views
 
