@@ -3,6 +3,12 @@ title: Commentary
 subtitle: Interviews featured in the press
 ---
 
+Bloomberg: ["The Key to New York’s Green Dreams May Be Turning Quebec Into a Mega-Battery"](https://www.bloomberg.com/news/articles/2020-02-24/mit-researchers-how-quebec-can-help-bring-green-power-to-new-yor) (February 24, 2020)
+
+PV Magazine ["How Canadian hydro could save New England and New York $5.4 billion"](https://pv-magazine-usa.com/2020/02/24/how-canadian-hydro-could-save-new-england-and-new-york-5-4-billion/) (February 24, 2020)
+
+E&E News ["Study refuels debate about power line CO2 emissions"](https://www.eenews.net/energywire/stories/1062388143?t=https://www.eenews.net/stories/1062388143) (February 19, 2020)
+
 MIT Energy Futures Magazine: [“Renewable energy and carbon pricing policies: State-level adoption saves money and lives”](https://href.li/?http://energy.mit.edu/news/renewable-energy-and-carbon-pricing-policies/) (November 22, 2019)
 
 The Verge: [“Renewable energy can generate billions of dollars in health benefits, study finds”](https://href.li/?https://www.theverge.com/2019/8/15/20807800/renewable-energy-health-benefits-research-mit-study-rust-belt) (August 15, 2019)
