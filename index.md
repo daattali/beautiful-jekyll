@@ -2,6 +2,7 @@
 layout: page
 title: 
 subtitle: 
+social-share: true
 use-site-title: true
 ---
 
