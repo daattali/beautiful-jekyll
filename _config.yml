@@ -151,7 +151,7 @@ title-separator: "-"
 date_format: "%B %-d, %Y"
 
 # Read Time Option
-readtime: true # Change to true to include estimated reading time on posts
+read-time: true # Change to true to include estimated reading time on posts
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
