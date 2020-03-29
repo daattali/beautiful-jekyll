@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Professional Data Science Manifesto
+title: 
 subtitle: 
 use-site-title: true
 ---
