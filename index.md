@@ -1,3 +1,10 @@
+---
+layout: page
+title: Professional Data Science Manifesto
+subtitle: 
+use-site-title: true
+---
+
 Latest technology advancements have made data processing accessible, cheap and fast for everyone. We believe combining engineering practices with the scientific method will extract the most utility from these advancements. So this manifesto proposes a principled methodology for unifying science and technology by valuing:
 
  - **Minimal Viable Products** over prototypes
