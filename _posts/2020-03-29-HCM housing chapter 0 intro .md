@@ -1,6 +1,6 @@
 ---
 layout: post
-title: hcm housing chapter 0
+title: HCM housing chapter 0
 tags: [Data]
 ---
 
