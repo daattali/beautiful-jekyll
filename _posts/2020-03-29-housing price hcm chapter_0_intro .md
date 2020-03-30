@@ -714,7 +714,7 @@ ax.set_title('Các quận nội thành')
 
 
 
-![png](ohttps://github.com/minmax49/minmax49.github.io/blob/master/img/output_25_1.png)
+![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_25_1.png)
 
 
 
