@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HCM housing chapter 0
-tags: [Data]
+tags: [data analyst]
 ---
 
 ```python
