@@ -25,6 +25,7 @@ df = pd.read_csv('data/housing29_03_20.csv',
                             'Ngày hết hạn': pd.to_datetime},
                 )
 print(df.shape)
+
 ```
 
     (14390, 24)
@@ -39,6 +40,7 @@ print(df.shape)
 df.drop(['Loại tin rao','uptime','email','Mã tin đăng',
          'title','url','Địa chỉ','Hướng nhà','Hướng ban công'],
          axis=1, inplace=True)
+         
 ```
 
 - Đổi tên cột nghe cho tây tây (và dễ gọi)
@@ -56,11 +58,13 @@ df.rename(columns = {'Loại hình tin đăng':'type',
                      'Nội thất': 'furniture',
                      }, 
           inplace=True)
+          
 ```
 
 
 ```python
 df.head(1).T
+
 ```
 
 
@@ -193,6 +197,7 @@ df.head(1).T
 
 ```python
 df.info()
+
 ```
 
     <class 'pandas.core.frame.DataFrame'>
@@ -226,6 +231,7 @@ df['type'] = df['type'].map({'Tin thường': 'nomal',
                              'Tin Vip 2': 'v2',
                              'Tin Vip 1': 'v1',
                              'Tin Vip đặc biệt': 'vs'})
+                             
 ```
 
 - Tách giá trị số từ chuỗi ...
@@ -240,6 +246,7 @@ print(df['price_unit'].value_counts(), end='\n\n')
 print(df['area_unit'].value_counts())
 
 #np.unique(df['price_unit'], return_counts=True)
+
 ```
 
     tỷ          13522
@@ -256,6 +263,7 @@ print(df['area_unit'].value_counts())
 
 ```python
 df = df[(df['price_unit'] == 'tỷ') & (df['area_unit'] == 'm²')]
+
 ```
 
 
@@ -263,6 +271,7 @@ df = df[(df['price_unit'] == 'tỷ') & (df['area_unit'] == 'm²')]
 df['price'] = df['price'].astype(float)
 df['area'] = df['area'].astype(float)
 df.describe()
+
 ```
 
 
@@ -367,11 +376,13 @@ df.describe()
 
 ```python
 df['p_m2'] = df['price']/df['area']
+
 ```
 
 
 ```python
 df['toilets']
+
 ```
 
 
@@ -396,6 +407,7 @@ df['toilets']
 ```python
 converts = ['floors','bedrooms', 'facade', 'road_wide']
 df[converts].head(3)
+
 ```
 
 
@@ -456,6 +468,7 @@ df[converts].head(3)
 
 ```python
 df[converts].info()
+
 ```
 
     <class 'pandas.core.frame.DataFrame'>
@@ -483,11 +496,13 @@ def find_number(s):
 for col in converts:
     df[col].fillna('none', inplace=True)
     df[col] = [find_number(s) for s in df[col]]
+    
 ```
 
 
 ```python
 df.head(1).T
+
 ```
 
 
@@ -623,6 +638,7 @@ df.head(1).T
 
 ```python
 df = df[(df['area'] < 200) & (df['price'] < 100)]
+
 ```
 
 Có 24 quận nên chia làm 4 dòng 6 cột vẽ cho đẹp
@@ -657,6 +673,7 @@ for r in range(len(axs)):
 
 ```python
 df = df[df['lat']<20]
+
 ```
 
 
@@ -681,6 +698,7 @@ for r in range(len(axs)):
                         ax = axs[r,c])
         axs[r,c].set_title(label[r,c])
         axs[r,c].get_legend().remove()
+        
 ```
 
 
@@ -709,6 +727,7 @@ for d in df_choise['district'].unique():
     
 ax.get_legend().remove()
 ax.set_title('Các quận nội thành')
+
 
 ```
 
