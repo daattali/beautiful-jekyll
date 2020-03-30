@@ -645,7 +645,7 @@ for r in range(len(axs)):
 ```
 
 
-![png](output_22_0.png)
+![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_22_0.png)
 
 
 
@@ -678,7 +678,8 @@ for r in range(len(axs)):
 ```
 
 
-![png](output_24_0.png)
+![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_24_0.png)
+
 
 
 
@@ -713,7 +714,8 @@ ax.set_title('Các quận nội thành')
 
 
 
-![png](output_25_1.png)
+![png](ohttps://github.com/minmax49/minmax49.github.io/blob/master/img/output_25_1.png)
+
 
 
 Tới đây thì dữ liệu cũng tàm tạm để xây dựng các mô hình dự đoán giá nhà rồi. tuy nhiên mình cũng khá lười nên chỉ viết tới đây thôi. Từ từ sẽ bổ sung sau!
