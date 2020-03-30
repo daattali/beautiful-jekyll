@@ -1,3 +1,8 @@
+---
+layout: post
+title: Credit scorecard chapter 2
+tags: [Scorecard]
+---
 
 Bài viết thứ 2 nằm trong series về **Credit Scorecard** trong các tổ chức tín dụng. Trong bài này chúng ta cùng tìm hiểu cách ứng dụng các mô hình Machine trong chấm điểm tín dụng cũng như tìm ra mô hình tối ưu nhất. 
 
