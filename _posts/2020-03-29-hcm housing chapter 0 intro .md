@@ -651,7 +651,7 @@ for r in range(len(axs)):
 ```
 
 
-![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_22_0.png)
+![Crepe](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_22_0.png)
 
 
 
@@ -684,7 +684,7 @@ for r in range(len(axs)):
 ```
 
 
-![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_24_0.png)
+![Crepe](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_24_0.png)
 
 
 
@@ -720,7 +720,7 @@ ax.set_title('Các quận nội thành')
 
 
 
-![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_25_1.png)
+![Crepe](https://github.com/minmax49/minmax49.github.io/blob/master/img/output_25_1.png)
 
 
 
