@@ -1,3 +1,9 @@
+---
+layout: post
+title: hcm housing chapter 0
+tags: [Data]
+---
+
 ```python
 import pandas as pd
 import numpy as np
