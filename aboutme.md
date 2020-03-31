@@ -21,4 +21,9 @@ subtitle:
 ### Sự nghiệp :
 
 **Tháng 8-2019 Đến 4-2020**
-    - Data analyst tại FeCredit
+
+    - Data analyst tại FeCredit: 
+    
+    
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg)
+
