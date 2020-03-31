@@ -11,10 +11,10 @@ Tên họ : Nguyễn Quang Minh
 
 Bằng cấp : 
 
-    **1. Cử nhân khoa Hệ Thống Thông Tin Quản Lý - ĐH Ngân Hàng tp.HCM**
-    **2. Cử nhân khoa Tài Chính-Ngân Hàng ĐH Ngân Hàng tp.HCM**
+    1. Cử nhân khoa Hệ Thống Thông Tin Quản Lý - ĐH Ngân Hàng tp.HCM
+    2. Cử nhân khoa Tài Chính-Ngân Hàng ĐH Ngân Hàng tp.HCM
 
 Sự nghiệp :
 
     1 Tháng 8-2019 Đến 4-2020
-       - Data analyst tại FeCredit
+      Data analyst tại FeCredit
