@@ -24,6 +24,8 @@ subtitle:
 
     - Data analyst tại FeCredit: 
     
+        Best Performance 2019
+    
     
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg)
 
