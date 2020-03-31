@@ -1,8 +1,17 @@
 ---
 layout: post
 title: HCM housing chapter 0
-tags: [data analyst]
+tags: [data analyst, data science]
 ---
+
+
+Bất động sản là một lĩnh vực mình rất hứng thú, đặc biệt mấy năm gần đây tình hình bất động sản có sự tăng trưởng cực lớn, thị trường đã bùng nổ vào năm 2019, sang năm 2020 thì đã có sự chững lại cùng với đại dịch Covid 19.
+
+Thị trường biến động là thế nhưng chỉ ngồi nghe thì có lẽ chúng ta sẽ không bao giờ hiểu được chuyện gì đang diễn ra ngoài thị trường kia, bản thân tôi thì cũng không đủ tiền để trực tiếp tham gia thị trường vào lúc này, và sẽ thật đáng tiếc nếu bỏ qua gia đoạn đầy thách thức và cơ hội này. 
+
+Nhưng vẫn còn hy vọng, data về các tin đăng rao bán bất động sản thì tràn ngập trên mạng, và may thay tôi cũng có chút kỹ năng để thu thập và sử lý chúng. Vì đó series **HCM housing** ra đời nhằm thỏa mãn niềm đam mê của bản thân và tìm ra các cơ hội đầu tư và cũng là một case study để thấy được data science có tính ứng dụng mạnh thế nào.
+
+
 
 ```python
 import pandas as pd
