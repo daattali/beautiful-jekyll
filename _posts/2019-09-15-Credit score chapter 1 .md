@@ -78,7 +78,8 @@ plt.show()
 ```
 
 
-![png](output_5_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_0.png)
+
 
 
 Biến phân loại:
@@ -90,7 +91,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_1.png)
 
 
 Biểu đồ pairplot để thấy được mối quan hệ của dữ liệu:
@@ -105,7 +106,9 @@ sns.pairplot(df[plot_cols+['label']],
 ```
 
 
-![png](output_9_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_2.png)
+
 
 
 Quan sát thêm sự mối quan hệ giữa các biến với sns.jointplot:
@@ -123,7 +126,8 @@ sns.jointplot("field0", "field1", data=df, kind='hex')
 
 
 
-![png](output_11_1.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_3.png)
+
 
 
 factor "field35" theo "field14" và "label":
