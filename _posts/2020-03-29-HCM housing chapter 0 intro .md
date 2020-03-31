@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HCM housing chapter 0
-tags: [data analyst, data science]
+tags: [data analyst]
 ---
 
 
