@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Credit scorecard chapter 2
+title: Credit scorecard chapter 1
 tags: [credit scorecard]
 ---
 
