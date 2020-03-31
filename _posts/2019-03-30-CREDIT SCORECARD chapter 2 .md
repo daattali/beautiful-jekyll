@@ -565,7 +565,7 @@ plt.show()
 ```
 
 
-![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/credit_scorecard_02.png)
+![png](https://github.com/minmax49/minmax49.github.io/blob/master/img/credit_scorecard_02.png.png)
 
 
 **Với mô hình RandomForestClassifier, chúng ta có thể lấy được độ quan trọng của từng biến tới mô hình:**
