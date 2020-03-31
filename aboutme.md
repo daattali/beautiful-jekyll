@@ -17,4 +17,4 @@ Bằng cấp :
 Sự nghiệp :
 
     1 Tháng 8-2019 Đến 4-2020
-      Data analyst tại FeCredit
+        - Data analyst tại FeCredit
