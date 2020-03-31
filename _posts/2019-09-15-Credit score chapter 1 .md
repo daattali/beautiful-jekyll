@@ -121,9 +121,6 @@ sns.jointplot("field0", "field1", data=df, kind='hex')
 
 
 
-    <seaborn.axisgrid.JointGrid at 0x20ab4d1b1d0>
-
-
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_3.png)
@@ -140,7 +137,6 @@ sns.factorplot("field35", "field14", "label", data=df, kind="violin")
 
 
 
-    <seaborn.axisgrid.FacetGrid at 0x20ab4ccb588>
 
 
 
