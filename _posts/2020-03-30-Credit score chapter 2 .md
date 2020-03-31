@@ -41,6 +41,9 @@ warnings.filterwarnings('ignore')
 ```
 
 
+
+
+
 ```python
 df = pd.read_csv('credit_data.csv')
 df.columns
@@ -76,6 +79,7 @@ Chúng ta sẽ thấy rõ nó hoạt động thế nào sau bước dưới đâ
 object_cols = list(df.dtypes[df.dtypes == 'object'].index)
 df[object_cols].head(3)
 ```
+
 
 
 
@@ -159,6 +163,7 @@ onehot_data.loc[:2,['field2_field2_v0','field2_field2_v1', 'field2_field2_v2']]
 
 
 
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -213,6 +218,7 @@ onehot_data.loc[:2,['field2_field2_v0','field2_field2_v1', 'field2_field2_v2']]
 data = pd.concat([onehot_data, df.drop(object_cols,axis=1)],axis=1)
 ```
 
+
 ### MinMaxScaler
 
 Là kỹ thuật chuẩn hóa dữ liệu phổ biến cho các dữ liệu **Nunberic**. Với cơ chế là đưa dữ liệu về 1 thang đo mới 
@@ -246,6 +252,7 @@ for col in scale_data.columns:
     data[col] = scale_data[col]
 ```
 
+
 ## Bước 2 : TRAINING MODEL
 
 Sau khi dữ liệu đã sạch sẽ thơm tho thì chún ta có thể đem đi xào nấu thỏa thích với đủ thể loại thuật toán machine learning
@@ -264,6 +271,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     stratify = y)
 
 ```
+
 
 ## Define models and gridsearchs
 
@@ -315,6 +323,9 @@ import scikitplot as skplt
 ```
 
 
+
+
+
 ```python
 classifiers = [
     [GridSearchCV(estimator=KNeighborsClassifier(n_jobs=-1), param_grid={
@@ -344,6 +355,7 @@ classifiers = [
     }, scoring='roc_auc', cv=3, n_jobs=-1), "Ada"]
 ]
 ```
+
 
 **Thực hiện GridSearchCV cho từng thuật toán và so sánh kết quả theo AUC**
 
@@ -441,9 +453,12 @@ plt.show()
 do vậy ta dùng bộ best params của mô hình của RF để train mô hình dự báo chính của chúng ta.
 
 
+
 ```python
 results[results['classifier']=='RF']['best_params'].iloc[0]
 ```
+
+
 
 
 
@@ -463,6 +478,8 @@ rf = RandomForestClassifier(criterion='entropy',
                             n_estimators=200)
 rf.fit(X_train, y_train)
 ```
+
+
 
 
 
@@ -500,6 +517,7 @@ score_metrix = pd.DataFrame([('accuracy', acc), ('f1', f1), ('recall', recall),
 score_metrix.set_index(['metrix'], drop=True, inplace=True)
 score_metrix.T
 ```
+
 
 
 
@@ -566,6 +584,7 @@ skplt.metrics.plot_ks_statistic(y_test, rf.predict_proba(X_test),
 plt.legend(fontsize=8) 
 plt.show()
 ```
+
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_02.png.png)
