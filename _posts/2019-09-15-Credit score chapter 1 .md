@@ -41,6 +41,8 @@ warnings.filterwarnings('ignore')
 ```
 
 
+
+
 ```python
 df = pd.read_csv('credit_data.csv')
 df.columns
@@ -49,14 +51,14 @@ df.columns
 
 
 
-    Index(['field0', 'field1', 'field2', 'field3', 'field4', 'field5', 'field6',
-           'field7', 'field8', 'field9', 'field10', 'field11', 'field12',
-           'field13', 'field14', 'field15', 'field16', 'field17', 'field18',
-           'field19', 'field20', 'field21', 'field22', 'field23', 'field24',
-           'field25', 'field26', 'field27', 'field28', 'field29', 'field30',
-           'field31', 'field32', 'field33', 'field34', 'field35', 'field36',
-           'field37', 'field38', 'field39', 'field40', 'label'],
-          dtype='object')
+Index(['field0', 'field1', 'field2', 'field3', 'field4', 'field5', 'field6',
+       'field7', 'field8', 'field9', 'field10', 'field11', 'field12',
+       'field13', 'field14', 'field15', 'field16', 'field17', 'field18',
+       'field19', 'field20', 'field21', 'field22', 'field23', 'field24',
+       'field25', 'field26', 'field27', 'field28', 'field29', 'field30',
+       'field31', 'field32', 'field33', 'field34', 'field35', 'field36',
+       'field37', 'field38', 'field39', 'field40', 'label'],
+      dtype='object')
 
 
 
@@ -147,6 +149,7 @@ sns.factorplot("field35", "field14", "label", data=df, kind="violin")
 
 ## Giới thiệu :
 
+
 Sau khi nhìn qua dữ liệu chắc chúng ta ai cũng muốn hiểu sâu hơn về dữ liệu cũng như khai thác tri thức từ chúng. Một phương pháp thống kê phổ biến dễ hiểu và cũng rất hiệu quả cho các bài toán phân lớp nhị phân thường được nhắc tới đó chính là Logistic regression. 
 
 Mô hình hồi quy logistic là một trong những kỹ thuật thống kê được sử dụng phổ biến nhất để giải quyết vấn đề phân loại nhị phân. Nó được chấp nhận trong hầu hết các lĩnh vực. Hai khái niệm này - Weight of Evidence (WOE) và Information Value (IV) phát triển từ cùng một kỹ thuật hồi quy logistic. Hai thuật ngữ này đã tồn tại trong thế giới chấm điểm tín dụng trong hơn 4-5 thập kỷ. Chúng đã được sử dụng làm chuẩn để sàng lọc các biến trong các dự án mô hình rủi ro tín dụng như xác suất vỡ nợ. Chúng giúp khám phá dữ liệu và các biến. Nó cũng được sử dụng trong dự án phân tích tiếp thị như mô hình phân khúc khách hàng, v.v.
@@ -162,12 +165,15 @@ Với cơ chế phân lớp đễ hiểu và các hàm kích hoạt cơ bản (a
 
 $$\sigma(x) = \frac{1}{1+e^{-x}}$$
 
+
 Về chi tiết cụ thể về cơ chế hoạt động của Logistic regression và hàm activation sigmoid thì mời các bạn các bạn đón đọc trang web rất uy tín dưới đây
+
 
 https://machinelearningcoban.com/2017/01/27/logisticregression/
 
 
 ## Weight of Evidence(WOE)
+
 
 **WOE = In(% of non-events / % of events)**
 
@@ -186,6 +192,7 @@ Các bạn có thể tham khảo thêm về WOE và IV qua các bài viết dư�
 https://medium.com/@sundarstyles89/weight-of-evidence-and-information-value-using-python-6f05072e83eb
 https://www.kaggle.com/pavansanagapati/weight-of-evidence-woe-information-value-iv
 
+
 -----------------------------
 
 ## Code nào :
@@ -203,9 +210,13 @@ from sklearn.linear_model import LogisticRegression
 ```
 
 
+
+
+
 ```python
 df.isna().sum()
 dt_s = df.drop(['field35','field38'], axis=1).copy()
+
 
 y_label = 'label'
 #dt_s  = dt_s[list(clf_info['VAR_NAME'])+ [y_label]]
@@ -227,9 +238,9 @@ X_train = train_woe.loc[:,train_woe.columns != y_label]
 y_test = test_woe.loc[:,y_label]
 X_test = test_woe.loc[:,train_woe.columns != y_label]
 
-# =============================================================================
+# ===================================================
 # --- logistic regression ------
-# =============================================================================
+# ===================================================
 lr = LogisticRegression(n_jobs=-1)
 
 lr.fit(X_train, y_train)
@@ -255,16 +266,16 @@ X_train.columns
 
 
 
-    Index(['field16', 'field36', 'field34_woe', 'field31_woe', 'field18_woe',
-           'field2_woe', 'field40_woe', 'field30_woe', 'field0_woe', 'field27_woe',
-           'field7_woe', 'field17_woe', 'field29_woe', 'field32_woe',
-           'field14_woe', 'field13_woe', 'field25_woe', 'field9_woe', 'field8_woe',
-           'field5_woe', 'field3_woe', 'field12_woe', 'field39_woe', 'field10_woe',
-           'field20_woe', 'field21_woe', 'field22_woe', 'field1_woe',
-           'field37_woe', 'field11_woe', 'field15_woe', 'field4_woe',
-           'field19_woe', 'field23_woe', 'field24_woe', 'field26_woe',
-           'field28_woe', 'field6_woe', 'field33_woe'],
-          dtype='object')
+Index(['field16', 'field36', 'field34_woe', 'field31_woe', 'field18_woe',
+       'field2_woe', 'field40_woe', 'field30_woe', 'field0_woe', 'field27_woe',
+       'field7_woe', 'field17_woe', 'field29_woe', 'field32_woe',
+       'field14_woe', 'field13_woe', 'field25_woe', 'field9_woe', 'field8_woe',
+       'field5_woe', 'field3_woe', 'field12_woe', 'field39_woe', 'field10_woe',
+       'field20_woe', 'field21_woe', 'field22_woe', 'field1_woe',
+       'field37_woe', 'field11_woe', 'field15_woe', 'field4_woe',
+       'field19_woe', 'field23_woe', 'field24_woe', 'field26_woe',
+       'field28_woe', 'field6_woe', 'field33_woe'],
+      dtype='object')
 
 
 
@@ -298,7 +309,9 @@ sc.perf_psi(
 
 
 
+
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_6.png)
+
 
 
 
@@ -310,8 +323,8 @@ sc.perf_psi(
 
 
 
-    {'psi':   variable      PSI
-     0    score  0.00548, 'pic': {'score': <Figure size 432x288 with 2 Axes>}}
+{'psi':   variable      PSI
+ 0    score  0.00548, 'pic': {'score': <Figure size 432x288 with 2 Axes>}}
 
 
 
