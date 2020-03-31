@@ -1,6 +1,11 @@
+---
+layout: post
+title: Credit scorecard chapter 2
+tags: [credit scorecard]
+---
+
 
 # Logistic regression với WOE
-
 
 **Credit Scorecard** với mục tiêu là chấm điểm và phân loại khách hàng, cho phép đưa ra quyết định về chính sách can thiệp nhằm tối ưu hóa hiệu quả kinh doanh.
 
@@ -136,7 +141,8 @@ sns.factorplot("field35", "field14", "label", data=df, kind="violin")
 
 
 
-![png](output_13_1.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_4.pngg)
+
 
 
 ## Giới thiệu :
@@ -286,15 +292,19 @@ sc.perf_psi(
 ```
 
 
-![png](output_19_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_5.png)
 
 
 
-![png](output_19_1.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_6.png)
 
 
 
-![png](output_19_2.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_7.png)
+
 
 
 
@@ -320,7 +330,7 @@ plt.show()
 ```
 
 
-![png](output_20_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_8.png)
 
 
 Vậy là chúng  ta đã đi được khá nhiều kiến thức. 
