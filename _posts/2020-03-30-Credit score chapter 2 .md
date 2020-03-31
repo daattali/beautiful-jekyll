@@ -277,16 +277,17 @@ Nghe hơi rối não nhưng ở đây chúng ta sẽ đề cạp đến 2 khái 
 **Parameter** vs **Hyper Parameter**:
 
 - **Parameter** : Tham số trong các phương trình tối ưu của thuật toán , 
-        vd: khi chúng ta xét hàm tuyến tính: f(x) = a*x + b thì a và b chính là các Parameter 
-        
-        => chúng ta cần tìm các parameter để mô hình fit với tập dữ liệu
+vd: khi chúng ta xét hàm tuyến tính: f(x) = a*x + b thì a và b chính là các Parameter 
+
+=> chúng ta cần tìm các parameter để mô hình fit với tập dữ liệu
+
 - **Hyper Parameter**: Siêu tham số trong các mô hình machine learning
-        vd: khi chúng ta định nghĩa mô hình RandomForestClassifier(max_features='sqrt', criterion='gini')
-        Thì max_features và criterion là các hyper parameter của mô hình là các rule, thuật toán cụ thể mô hình sẽ sử dụng
-        
-        => chúng ta cần tìm các hyper parameter để tìm ra bộ setup tốt nhất cho mô hình machine learning
-         GridSearchCV tìm kiếm hyper parameter tối ưu qua bộ param_grid truyền vào bằng cách chạy từng trường hợp của bộ 
-         param và lựa chọn params cho score tốt nhất
+vd: khi chúng ta định nghĩa mô hình RandomForestClassifier(max_features='sqrt', criterion='gini')
+Thì max_features và criterion là các hyper parameter của mô hình là các rule, thuật toán cụ thể mô hình sẽ sử dụng
+
+=> chúng ta cần tìm các hyper parameter để tìm ra bộ setup tốt nhất cho mô hình machine learning
+GridSearchCV tìm kiếm hyper parameter tối ưu qua bộ param_grid truyền vào bằng cách chạy từng trường hợp của bộ 
+param và lựa chọn params cho score tốt nhất
          
 
 
