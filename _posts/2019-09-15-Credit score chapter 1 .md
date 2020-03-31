@@ -145,7 +145,7 @@ sns.factorplot("field35", "field14", "label", data=df, kind="violin")
 
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_4.pngg)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_4.png)
 
 
 
