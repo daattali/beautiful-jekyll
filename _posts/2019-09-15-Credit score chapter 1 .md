@@ -1,8 +1,6 @@
 
 # Logistic regression với WOE
 
-Nguyễn Quang Minh
-
 
 **Credit Scorecard** với mục tiêu là chấm điểm và phân loại khách hàng, cho phép đưa ra quyết định về chính sách can thiệp nhằm tối ưu hóa hiệu quả kinh doanh.
 
