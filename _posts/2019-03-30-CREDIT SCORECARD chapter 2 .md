@@ -430,7 +430,7 @@ plt.show()
 ```
 
 
-![Crepe](https://github.com/minmax49/minmax49.github.io/blob/master/img/credit_scorecard_01.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_01.png)
 
 
 **Model RF: RandomForestClassifier() cho kết quả AUC cao nhất : 0.77**
@@ -565,8 +565,7 @@ plt.show()
 ```
 
 
-![Crepe](https://github.com/minmax49/minmax49.github.io/blob/master/img/credit_scorecard_02.png.png)
-
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_02.png.png)
 
 **Với mô hình RandomForestClassifier, chúng ta có thể lấy được độ quan trọng của từng biến tới mô hình:**
 
@@ -591,7 +590,8 @@ plt.show()
 
 
 
-![Crepe](https://github.com/minmax49/minmax49.github.io/blob/master/img/credit_scorecard_03.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/credit_scorecard_03.png)
+
 
 
 Vậy là tới đây chúng ta đã biết cách để tìm ra mô hình machine learning tối ưu để giải quyết vấn đề của mình, bài cũng khá dài nên chapter này sẽ tạm dừng tại đây.
