@@ -44,6 +44,8 @@ warnings.filterwarnings('ignore')
 
 
 
+
+
 ```python
 df = pd.read_csv('credit_data.csv')
 df.columns
