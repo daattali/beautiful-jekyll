@@ -1,7 +1,0 @@
-<map id="DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;" name="DGtal::ReverseDistanceTransformation&lt; TWeightImage, TPSeparableMetric, TImageContainer &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1PowerMap.html" title="DGtal::PowerMap\&lt; TWeight\lImage, TPSeparableMetric,\l TImageContainer \&gt;" alt="" coords="1371,17,1570,85"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l OutputImage \&gt;" alt="" coords="622,13,770,62"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1PowerMap.html" title="Aim: Implementation of the linear in time Power map construction. " alt="" coords="902,65,1125,133"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::Counter" alt="" coords="6,11,154,61"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts. " alt="" coords="277,59,453,90"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$Board_8h.html" title="Board.h" alt="" coords="50,166,120,197"/>
-<area shape="rect" id="node5" href="$Board_8cpp.html" title="Board.cpp" alt="" coords="5,246,91,277"/>
-<area shape="rect" id="node8" href="$ShapeList_8h.html" title="Classes ShapeList and Group." alt="" coords="144,86,239,117"/>
-<area shape="rect" id="node13" href="$Transforms_8cpp.html" title="Transforms.cpp" alt="" coords="280,166,403,197"/>
-<area shape="rect" id="node15" href="$Shapes_8cpp.html" title="Shapes.cpp" alt="" coords="314,86,408,117"/>
-<area shape="rect" id="node11" href="$ShapeList_8cpp.html" title="Definition of the ShapeList and Group classes." alt="" coords="145,166,255,197"/>
-</map>

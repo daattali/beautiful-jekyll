@@ -1,7 +1,0 @@
-<map id="DGtal::CQuantity&lt; T &gt;" name="DGtal::CQuantity&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible, assignable and equality comparable. " alt="" coords="336,57,483,85"/>
-<area shape="rect" id="node3" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.boost.org/doc/html/DefaultConstructible.html. " alt="" coords="5,5,241,33"/>
-<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html. " alt="" coords="37,57,210,85"/>
-<area shape="rect" id="node5" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.boost.org/doc/html/EqualityComparable.html. " alt="" coords="7,109,239,137"/>
-<area shape="rect" id="node6" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.boost.org/doc/html/LessThanComparable.html. " alt="" coords="289,109,529,137"/>
-</map>

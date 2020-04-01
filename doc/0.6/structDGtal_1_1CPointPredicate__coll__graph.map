@@ -1,9 +1,0 @@
-<map id="DGtal::CPointPredicate&lt; T &gt;" name="DGtal::CPointPredicate&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CPredicate.html" title="DGtal::CPredicate\&lt;\l T, T::Point \&gt;" alt="" coords="88,555,233,605"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="412,203,573,253"/>
-<area shape="rect" id="node6" href="$structboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="425,105,599,135"/>
-<area shape="rect" id="node24" href="$structDGtal_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="227,203,387,253"/>
-<area shape="rect" id="node8" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html." alt="" coords="193,6,367,37"/>
-<area shape="rect" id="node20" href="$structDGtal_1_1CUnaryFunctor.html" title="DGtal::CUnaryFunctor\l\&lt; T, TElement, bool \&gt;" alt="" coords="225,320,389,370"/>
-<area shape="rect" id="node18" href="$structDGtal_1_1CPredicate.html" title="Aim: Defines a predicate function, ie. a functor mapping a domain into the set of booleans..." alt="" coords="88,438,233,488"/>
-</map>

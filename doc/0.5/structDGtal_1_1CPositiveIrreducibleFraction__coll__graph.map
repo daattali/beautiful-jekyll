@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; T \&gt;" alt="" coords="577,5,740,35"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CBackInsertable.html" title="Aim: Represents types for which a std::back_insert_iterator can be constructed with std::back_inserte..." alt="" coords="327,107,524,138"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const range." alt="" coords="300,158,551,189"/>
-<area shape="rect" id="node13" title="STL class." alt="" coords="156,210,273,241"/>
-</map>

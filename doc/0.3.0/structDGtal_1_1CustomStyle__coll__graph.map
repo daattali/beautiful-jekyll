@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithBoardModifier.html" title="DGtal::DrawWithBoardModifier" alt="" coords="839,5,1052,35"/>
-<area shape="rect" id="node4" title="STL class." alt="" coords="903,59,988,88"/>
-<area shape="rect" id="node6" title="STL class." alt="" coords="357,57,541,87"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DrawableWithDGtalBoard \&gt;" alt="" coords="781,113,1109,143"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt; T \&gt;::counter" alt="" coords="5,139,237,168"/>
-<area shape="rect" id="node12" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="363,176,536,205"/>
-</map>

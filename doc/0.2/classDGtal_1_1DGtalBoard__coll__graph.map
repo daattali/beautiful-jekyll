@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="Board-tagfile$classLibBoard_1_1Board.html" title="Class for EPS, FIG or SVG drawings." alt="" coords="62,507,176,538"/>
-<area shape="rect" id="node4" href="Board-tagfile$structLibBoard_1_1ShapeList.html" title="A group of shapes." alt="" coords="50,409,188,439"/>
-<area shape="rect" id="node6" href="Board-tagfile$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="63,297,180,327"/>
-<area shape="rect" id="node8" href="Board-tagfile$classLibBoard_1_1Color.html" title="Structure representing an RGB triple." alt="" coords="67,93,176,123"/>
-<area shape="rect" id="node14" href="Board-tagfile$structLibBoard_1_1Board_1_1State.html" title="LibBoard::Board::State" alt="" coords="155,353,310,383"/>
-<area shape="rect" id="node17" href="Board-tagfile$structLibBoard_1_1Path.html" title="A path, according to Postscript and SVG definition." alt="" coords="298,409,404,439"/>
-</map>

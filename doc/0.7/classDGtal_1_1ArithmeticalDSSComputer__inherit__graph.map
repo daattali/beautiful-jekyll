@@ -1,6 +1,0 @@
-<map id="DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;" name="DGtal::ArithmeticalDSSComputer&lt; TIterator, TInteger, adjacency &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1ArithmeticalDSSComputer.html" title="DGtal::ArithmeticalDSSComputer\l\&lt; IteratorAdapter, TInteger,\l connectivity \&gt;" alt="" coords="465,4,698,73"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1ArithmeticalDSSComputer.html" title="DGtal::ArithmeticalDSSComputer\l\&lt; TIterator, TInteger, 4 \&gt;" alt="" coords="465,96,698,146"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1NaiveDSS8Computer.html" title="DGtal::NaiveDSS8Computer\l\&lt; TIterator, TInteger \&gt;" alt="" coords="761,59,959,109"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1StandardDSS4Computer.html" title="DGtal::StandardDSS4Computer\l\&lt; TIterator, TInteger \&gt;" alt="" coords="750,132,970,182"/>
-</map>

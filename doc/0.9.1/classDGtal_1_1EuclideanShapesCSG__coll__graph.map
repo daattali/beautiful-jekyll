@@ -1,5 +1,0 @@
-<map id="DGtal::EuclideanShapesCSG&lt; ShapeA, ShapeB &gt;" name="DGtal::EuclideanShapesCSG&lt; ShapeA, ShapeB &gt;">
-<area shape="rect" id="node3" title="STL class. " alt="" coords="183,33,297,58"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="DGtal::CountedConstPtrOr\lConstPtr\&lt; ShapeA \&gt;" alt="" coords="602,95,781,134"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="150,95,330,134"/>
-</map>

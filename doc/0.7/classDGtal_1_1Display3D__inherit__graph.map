@@ -1,9 +1,0 @@
-<map id="DGtal::Display3D&lt; Space, KSpace &gt;" name="DGtal::Display3D&lt; Space, KSpace &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1Board3D.html" title="The class Board3D is a type of Display3D which export the figures in the format OBJ/MTL when calling ..." alt="" coords="337,4,514,54"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1Board3DTo2D.html" title="Class for PDF, PNG, PS, EPS, SVG export drawings with Cairo with 3D&#45;&gt;2D projection. " alt="" coords="348,78,503,128"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Viewer3D.html" title="Aim: The concept CDrawableWithViewer3D specifies what are the classes that admit an export with Viewe..." alt="" coords="334,194,517,244"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1Viewer3D.html" title="Viewer3D\&lt; Space, KSpace \&gt;" alt="" coords="323,267,527,298"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; Sp,\l KSp \&gt;" alt="" coords="343,322,508,372"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1Display3D.html" title="DGtal::Display3D\&lt; S,\l KS \&gt;" alt="" coords="347,395,504,445"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1Board3DTo2D.html" title="DGtal::Board3DTo2D\l\&lt; S, KS \&gt;" alt="" coords="642,203,798,253"/>
-</map>

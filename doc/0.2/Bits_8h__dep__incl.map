@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$ImageContainerByHashTree_8h.html" title="ImageContainerByHashTree.h" alt="" coords="169,160,364,189"/>
-<area shape="rect" href="$ImageContainerByHashTreedav_8h.html" title="ImageContainerByHashTreedav.h" alt="" coords="235,83,451,112"/>
-<area shape="rect" href="$Morton_8h.html" title="Morton.h" alt="" coords="475,83,547,112"/>
-<area shape="rect" href="$testMorton_8cpp.html" title="testMorton.cpp" alt="" coords="493,160,600,189"/>
-<area shape="rect" href="$testHashTree_8cpp.html" title="testHashTree.cpp" alt="" coords="5,237,128,267"/>
-<area shape="rect" href="$testImageContainerByHashTree_8cpp.html" title="testImageContainerByHashTree.cpp" alt="" coords="152,237,381,267"/>
-<area shape="rect" href="$testImageContainerByHashTreeBenchmark_8cpp.html" title="testImageContainerByHashTreeBenchmark.cpp" alt="" coords="405,237,701,267"/>
-</map>

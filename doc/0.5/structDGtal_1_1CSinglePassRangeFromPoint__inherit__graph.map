@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1CSinglePassRange.html" title="Aim: Defines the concept describing a range." alt="" coords="5,86,211,117"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const range." alt="" coords="125,6,365,37"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CConstSinglePassRangeFromPoint.html" title="Aim: refined concept of const single pass range with a begin() method from a point." alt="" coords="235,86,533,117"/>
-</map>

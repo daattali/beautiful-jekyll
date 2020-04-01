@@ -1,8 +1,0 @@
-<map id="DGtal::detail::PosIndepScaleIndepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;" name="DGtal::detail::PosIndepScaleIndepSCEstimator&lt; TSegmentComputer, Functor, ReturnType &gt;">
-<area shape="rect" id="node3" href="$classDGtal_1_1detail_1_1PosIndepScaleIndepSCEstimator.html" title="DGtal::detail::PosIndepScale\lIndepSCEstimator\&lt; DSSComputer,\l detail::TangentVectorFromDSS\l\&lt; DSSComputer \&gt; \&gt;" alt="" coords="581,9,824,96"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1detail_1_1PosIndepScaleIndepSCEstimator.html" title="DGtal::detail::PosIndepScale\lIndepSCEstimator\&lt; DSSComputer,\l detail::NormalizedTangentVectorFromDSS \&gt;" alt="" coords="547,120,858,188"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1detail_1_1PosIndepScaleIndepSCEstimator.html" title="DGtal::detail::PosIndepScale\lIndepSCEstimator\&lt; DSSComputer,\l detail::TangentAngleFromDSS \&gt;" alt="" coords="581,212,824,280"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1TangentVectorFromDSSEstimator.html" title="DGtal::TangentVectorFrom\lDSSEstimator\&lt; DSSComputer \&gt;" alt="" coords="934,28,1159,77"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1TangentFromDSSEstimator.html" title="DGtal::TangentFromDSSEstimator\l\&lt; DSSComputer \&gt;" alt="" coords="928,129,1165,179"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1TangentAngleFromDSSEstimator.html" title="DGtal::TangentAngleFromDSSEstimator\l\&lt; DSSComputer \&gt;" alt="" coords="909,221,1184,271"/>
-</map>

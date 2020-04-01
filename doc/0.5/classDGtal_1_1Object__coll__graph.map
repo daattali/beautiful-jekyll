@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; DigitalTopology \&gt;" alt="" coords="1065,45,1281,75"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DigitalTopology \&gt;" alt="" coords="659,5,899,35"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt; T \&gt;::counter" alt="" coords="5,74,216,105"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="333,74,493,105"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; DigitalSet \&gt;" alt="" coords="675,137,883,167"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer." alt="" coords="711,70,847,101"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; DigitalSet \&gt;" alt="" coords="1081,98,1265,129"/>
-</map>

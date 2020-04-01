@@ -1,7 +1,0 @@
-<map id="LibBoard::Circle" name="LibBoard::Circle">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Ellipse.html" title="An ellipse. " alt="" coords="109,442,236,469"/>
-<area shape="rect" id="node3" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="159,350,284,378"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="45,171,131,198"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="20,5,156,49"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple. " alt="" coords="171,171,272,198"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classDGtal_1_1CircleFrom3Points.html" title="DGtal::CircleFrom3Points\l\&lt; Point \&gt;" alt="" coords="1323,37,1506,87"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1CircleFrom3Points.html" title="Aim: Represents a circle uniquely defined by three 2D points and that is able to return for any given..." alt="" coords="792,37,976,87"/>
-<area shape="rect" id="node10" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; Geometrical\lDSS\&lt; ConstIterator \&gt; \&gt;" alt="" coords="1313,169,1516,219"/>
-<area shape="rect" id="node12" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l GeometricalDSS\&lt; ConstIterator \&gt; \&gt;" alt="" coords="755,122,1013,172"/>
-<area shape="rect" id="node14" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::counter" alt="" coords="6,134,154,184"/>
-<area shape="rect" id="node16" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="280,182,456,213"/>
-<area shape="rect" id="node19" href="$classDGtal_1_1CowPtr.html" title="Aim: Copy on write shared pointer." alt="" coords="809,196,959,227"/>
-</map>

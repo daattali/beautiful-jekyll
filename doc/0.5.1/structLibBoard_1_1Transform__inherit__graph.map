@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$structLibBoard_1_1TransformEPS.html" title="Structure representing a scaling and translation suitable for an EPS output." alt="" coords="4,86,179,117"/>
-<area shape="rect" id="node5" href="$structLibBoard_1_1TransformFIG.html" title="Structure representing a scaling and translation suitable for an XFig output." alt="" coords="204,86,377,117"/>
-<area shape="rect" id="node7" href="$structLibBoard_1_1TransformSVG.html" title="Structure representing a scaling and translation suitable for an SVG output." alt="" coords="401,86,580,117"/>
-<area shape="rect" id="node9" href="$structLibBoard_1_1TransformTikZ.html" title="Structure representing a scaling and translation suitable for an TikZ output." alt="" coords="400,166,581,197"/>
-</map>

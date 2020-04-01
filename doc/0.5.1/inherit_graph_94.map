@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$structDGtal_1_1CPointFunctor.html" title="DGtal::CPointFunctor\&lt; I \&gt;" alt="" coords="6,33,196,63"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1CTrivialConstImage.html" title="DGtal::CTrivialConstImage\&lt; I \&gt;" alt="" coords="246,33,471,63"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1CConstImage.html" title="DGtal::CConstImage\&lt; I \&gt;" alt="" coords="522,5,707,35"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1CTrivialImage.html" title="DGtal::CTrivialImage\&lt; I \&gt;" alt="" coords="521,59,708,90"/>
-<area shape="rect" id="node7" href="$structDGtal_1_1CImage.html" title="DGtal::CImage\&lt; I \&gt;" alt="" coords="758,33,906,63"/>
-</map>

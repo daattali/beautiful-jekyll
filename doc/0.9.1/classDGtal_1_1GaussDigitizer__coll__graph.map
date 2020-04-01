@@ -1,5 +1,0 @@
-<map id="DGtal::GaussDigitizer&lt; TSpace, TEuclideanShape &gt;" name="DGtal::GaussDigitizer&lt; TSpace, TEuclideanShape &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1RegularPointEmbedder.html" title="DGtal::RegularPointEmbedder\l\&lt; Space \&gt;" alt="" coords="820,56,1021,95"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes. " alt="" coords="194,43,353,95"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1RegularPointEmbedder.html" title="Aim: A simple point embedder where grid steps are given for each axis. Note that the real point (0..." alt="" coords="482,117,683,156"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classDGtal_1_1ExactPredicateLpSeparableMetric.html" title="Aim: implements separable l_p metrics with exact predicates. " alt="" coords="165,5,393,44"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html" title="DGtal::ExactPredicateLpSeparable\lMetric\&lt; TSpace, 2, TRawValue \&gt;" alt="" coords="165,68,393,107"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1functors_1_1Max.html" title="DGtal::functors::Max\&lt; T \&gt;" alt="" coords="192,131,366,156"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1functors_1_1Min.html" title="Duplicated STL functors. " alt="" coords="194,180,364,205"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1functors_1_1Minus.html" title="DGtal::functors::Minus\&lt; T \&gt;" alt="" coords="187,229,371,255"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1InexactPredicateLpSeparableMetric.html" title="Aim: implements separable l_p metrics with approximated predicates. " alt="" coords="189,279,369,331"/>
-</map>

@@ -1,9 +1,0 @@
-var searchData=
-[
-  ['r',['R',['../structDGtal_1_1Display3D_1_1pointD3D.html#ab50ac10fe395ac78c0ee242f0178b31c',1,'DGtal::Display3D::pointD3D::R()'],['../structDGtal_1_1Display3D_1_1lineD3D.html#a7eb0acc0d0418fffd8131ea0843016c1',1,'DGtal::Display3D::lineD3D::R()'],['../structDGtal_1_1Display3D_1_1voxelD3D.html#af0af73cd557e222633f6c6f4532643a5',1,'DGtal::Display3D::voxelD3D::R()'],['../structDGtal_1_1Display3D_1_1quadD3D.html#a628da8b3945b706d34c8759bd51312da',1,'DGtal::Display3D::quadD3D::R()'],['../structDGtal_1_1CUnaryFunctor.html#afaa6046ddc9699fcfcb7213610736f02',1,'DGtal::CUnaryFunctor::r()'],['../structDGtal_1_1CConstImage.html#a6cf44e1865531946079a3b8d81664d61',1,'DGtal::CConstImage::r()']]],
-  ['red',['Red',['../classDGtal_1_1Color.html#a72ddfa73d8bbfb75da822547703ec69e',1,'DGtal::Color']]],
-  ['requiredheaders',['requiredHeaders',['../structDGtal_1_1LongvolReader.html#a8c999d573ce99812d409c0ae9b2c259c',1,'DGtal::LongvolReader::requiredHeaders()'],['../structDGtal_1_1VolReader.html#a8360494b0b418be7a25662f6ef061ac6',1,'DGtal::VolReader::requiredHeaders()']]],
-  ['root_5fkey',['ROOT_KEY',['../classDGtal_1_1ImageContainerByHashTree.html#a70cbecb18891687aeb644b72076cc3b5',1,'DGtal::ImageContainerByHashTree']]],
-  ['roundcap',['RoundCap',['structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368ad2b5f9290405771e387b70d62ae0c194',1,'LibBoard::Shape']]],
-  ['roundjoin',['RoundJoin',['structLibBoard_1_1Shape.html#a5618d9c1f412d36189695c557f1b9be2abff2d9f2c1448ab19f2276a143700f71',1,'LibBoard::Shape']]]
-];

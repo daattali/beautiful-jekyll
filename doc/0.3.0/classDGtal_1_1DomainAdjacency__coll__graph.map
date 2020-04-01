@@ -1,4 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1DomainPredicate.html" title="DGtal::DomainPredicate\&lt; Domain \&gt;" alt="" coords="51,101,307,131"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1DomainPredicate.html" title="Aim: The predicate returning true iff the point is in the domain given at construction. It is just a wrapper class around the methods Domain::isInside( const Point &amp; ), where Domain stands for any model of CDomain." alt="" coords="48,5,309,35"/>
-</map>

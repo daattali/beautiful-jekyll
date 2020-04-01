@@ -1,7 +1,0 @@
-<map id="LibBoard::Polyline" name="LibBoard::Polyline">
-<area shape="rect" id="node3" href="$structLibBoard_1_1GouraudTriangle.html" title="A triangle with shaded filling according to colors given for each vertex. " alt="" coords="4,166,197,197"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1Rectangle.html" title="A rectangle. " alt="" coords="223,166,371,197"/>
-<area shape="rect" id="node6" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor. " alt="" coords="396,166,533,197"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="235,6,359,37"/>
-<area shape="rect" id="node5" href="$structLibBoard_1_1Image.html" title="Used to draw image in figure. " alt="" coords="235,246,360,277"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1CPredicate.html" title="DGtal::CPredicate\&lt;\l T, T::Surfel \&gt;" alt="" coords="72,206,216,256"/>
-<area shape="rect" id="node4" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt;T\&gt;" alt="" coords="5,98,171,129"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CPredicate.html" title="Aim: Defines a predicate function, ie. a functor mapping a domain into the set of booleans..." alt="" coords="196,88,340,138"/>
-<area shape="rect" id="node8" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; T \&gt;" alt="" coords="181,6,355,37"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$testDecomposition_8cpp.html" title="testDecomposition.cpp" alt="" coords="5,86,160,117"/>
-<area shape="rect" id="node5" href="$testFreemanChain_8cpp.html" title="testFreemanChain.cpp" alt="" coords="184,86,336,117"/>
-<area shape="rect" id="node7" href="$testMagickReader_8cpp.html" title="testMagickReader.cpp" alt="" coords="360,86,512,117"/>
-<area shape="rect" id="node9" href="$testRawReader_8cpp.html" title="testRawReader.cpp" alt="" coords="536,86,669,117"/>
-<area shape="rect" id="node11" href="$testVolReader_8cpp.html" title="testVolReader.cpp" alt="" coords="693,86,821,117"/>
-</map>

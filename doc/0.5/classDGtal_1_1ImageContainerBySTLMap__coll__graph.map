@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" title="STL class." alt="" coords="5,203,248,234"/>
-<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt; const Domain \&gt;" alt="" coords="272,203,509,234"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt; T \&gt;::counter" alt="" coords="287,6,505,37"/>
-<area shape="rect" id="node12" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="435,105,600,135"/>
-</map>

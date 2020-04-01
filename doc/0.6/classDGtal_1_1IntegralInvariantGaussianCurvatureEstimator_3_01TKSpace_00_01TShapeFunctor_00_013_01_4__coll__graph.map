@@ -1,6 +1,0 @@
-<map id="DGtal::IntegralInvariantGaussianCurvatureEstimator&lt; TKSpace, TShapeFunctor, 3 &gt;" name="DGtal::IntegralInvariantGaussianCurvatureEstimator&lt; TKSpace, TShapeFunctor, 3 &gt;">
-<area shape="rect" id="node6" href="$classDGtal_1_1DigitalSurfaceConvolver.html" title="DGtal::DigitalSurfaceConvolver\l\&lt; ShapeCellFunctor, KernelCellFunctor,\l KSpace, ConstIteratorKernel \&gt;" alt="" coords="1342,90,1618,158"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1DigitalSurfaceConvolver.html" title="DGtal::DigitalSurfaceConvolver\l\&lt; TFunctor, TKernelFunctor,\l TKSpace, TKernelConstIterator,\l dimension \&gt;" alt="" coords="866,4,1094,92"/>
-<area shape="rect" id="node3" title="STL class." alt="" coords="157,182,285,213"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1ConstValueFunctor.html" title="Aim: Define a simple functor that returns a constant value (0 by default)." alt="" coords="1386,284,1574,334"/>
-</map>

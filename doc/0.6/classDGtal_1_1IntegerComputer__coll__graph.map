@@ -1,7 +1,0 @@
-<map id="DGtal::IntegerComputer&lt; TInteger &gt;" name="DGtal::IntegerComputer&lt; TInteger &gt;">
-<area shape="rect" id="node4" title="STL class." alt="" coords="189,74,317,105"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1NumberTraits.html" title="Aim: The traits class for all models of Cinteger." alt="" coords="157,199,350,230"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1NumberTraits.html" title="DGtal::NumberTraits\l\&lt; TInteger \&gt;" alt="" coords="499,195,653,245"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1SpaceND.html" title="DGtal::SpaceND\&lt; 2,\l Integer \&gt;" alt="" coords="501,282,651,332"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1SpaceND.html" title="Aim: SpaceND is a utility class that defines the fundamental structure of a Digital Space in ND..." alt="" coords="170,282,337,332"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;" name="DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1Labels.html" title="DGtal::Labels\&lt; L, Word \&gt;" alt="" coords="611,29,797,59"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1Labels.html" title="Aim: Stores a set of labels in {O..L&#45;1} as a sequence of bits." alt="" coords="286,26,479,57"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1LabelledMap_1_1____FirstBlock.html" title="DGtal::LabelledMap\l\&lt; TData, L, TWord, N,\l M \&gt;::__FirstBlock" alt="" coords="623,83,785,152"/>
-<area shape="rect" id="node10" href="$unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html" title="Used in first block to finish it or to point to the next block." alt="" coords="290,86,476,154"/>
-<area shape="rect" id="node12" href="$structDGtal_1_1LabelledMap_1_1____AnyBlock.html" title="DGtal::LabelledMap\l\&lt; TData, L, TWord, N,\l M \&gt;::__AnyBlock" alt="" coords="5,102,168,170"/>
-</map>

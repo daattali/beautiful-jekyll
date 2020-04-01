@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1CUnaryFunctor.html" title="DGtal::CUnaryFunctor\&lt; T, T::Point, T::RealPoint \&gt;" alt="" coords="5,203,317,234"/>
-<area shape="rect" id="node4" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; T \&gt;" alt="" coords="61,105,219,135"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CUnaryFunctor.html" title="Aim: Defines a unary functor, which associates arguments to results." alt="" coords="243,105,459,135"/>
-<area shape="rect" id="node8" href="$classboost_1_1Assignable.html" title="boost::Assignable\&lt; X \&gt;" alt="" coords="120,6,277,37"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$structLibBoard_1_1GouraudTriangle.html" title="A triangle with shaded filling according to colors given for each vertex." alt="" coords="5,166,200,197"/>
-<area shape="rect" id="node7" href="$structLibBoard_1_1Rectangle.html" title="A rectangle." alt="" coords="224,166,372,197"/>
-<area shape="rect" id="node11" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor." alt="" coords="397,166,536,197"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="236,6,360,37"/>
-<area shape="rect" id="node9" href="$structLibBoard_1_1Image.html" title="Used to draw image in figure." alt="" coords="236,246,361,277"/>
-</map>

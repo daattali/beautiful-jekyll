@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$structDGtal_1_1AbsFunctor.html" title="DGtal::AbsFunctor\&lt; T \&gt;" alt="" coords="197,5,374,35"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1MultiplicationByScalarFunctor.html" title="DGtal::MultiplicationByScalar\lFunctor\&lt; T \&gt;" alt="" coords="182,59,389,109"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1UnaryMinusFunctor.html" title="DGtal::UnaryMinusFunctor\&lt; T \&gt;" alt="" coords="171,133,400,163"/>
-</map>

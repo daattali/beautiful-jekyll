@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classDGtal_1_1Display3D.html" title="Aim: This semi abstract class defines the stream mechanism to display 3d primitive (like PointVector..." alt="" coords="5,31,128,62"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1Board3DTo2D.html" title="Class for PDF, PNG, PS, EPS, SVG export drawings with Cairo with 3D&#45;&gt;2D projection." alt="" coords="177,5,319,35"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Viewer3D.html" title="Aim: Display 3D primitive (like PointVector, DigitalSetBySTLSet, Object ...). This class uses the lib..." alt="" coords="189,58,307,89"/>
-</map>

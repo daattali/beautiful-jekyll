@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$Common_8h.html" title="DGtal/base/Common.h" alt="" coords="700,83,852,112"/>
-<area shape="rect" href="$Trace_8h.html" title="DGtal/utils/Trace.h" alt="" coords="595,160,723,189"/>
-<area shape="rect" href="$TraceWriterTerm_8h.html" title="DGtal/utils/TraceWriterTerm.h" alt="" coords="680,237,872,267"/>
-<area shape="rect" href="$TraceWriterFile_8h.html" title="DGtal/utils/TraceWriterFile.h" alt="" coords="947,237,1131,267"/>
-<area shape="rect" href="$Assert_8h.html" title="DGtal/utils/Assert.h" alt="" coords="1145,160,1281,189"/>
-<area shape="rect" href="$Clock_8h.html" title="DGtal/utils/Clock.h" alt="" coords="296,237,427,267"/>
-<area shape="rect" href="$TraceWriter_8h.html" title="DGtal/utils/TraceWriter.h" alt="" coords="661,315,824,344"/>
-</map>

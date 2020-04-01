@@ -1,6 +1,0 @@
-<map id="DGtal::CustomStyle" name="DGtal::CustomStyle">
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithBoardModifier.html" title="DGtal::DrawWithBoardModifier" alt="" coords="4,231,221,262"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1CountedPtr.html" title="DGtal::CountedPtr\&lt;\l DGtal::DrawableWithBoard2D \&gt;" alt="" coords="246,222,473,272"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CountedPtr_1_1counter.html" title="DGtal::CountedPtr\&lt;\l T \&gt;::counter" alt="" coords="248,6,396,56"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="365,123,541,154"/>
-</map>

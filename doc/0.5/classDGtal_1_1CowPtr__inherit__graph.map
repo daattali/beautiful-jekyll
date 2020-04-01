@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; SignalData\&lt; TValue \&gt; \&gt;" alt="" coords="453,23,709,54"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; GeometricalDSS\&lt; ConstIterator \&gt; \&gt;" alt="" coords="419,77,744,107"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; SignalData\&lt; Value \&gt; \&gt;" alt="" coords="457,130,705,161"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; DigitalSet \&gt;" alt="" coords="489,183,673,214"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; DigitalTopology \&gt;" alt="" coords="473,237,689,267"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; Preimage \&gt;" alt="" coords="489,290,673,321"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1CowPtr.html" title="DGtal::CowPtr\&lt; TImageContainer \&gt;" alt="" coords="468,343,695,374"/>
-</map>

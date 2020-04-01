@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" href="$PNMWriter_8h.html" title="PNMWriter.h" alt="" coords="191,83,284,112"/>
-<area shape="rect" href="$RawWriter_8h.html" title="RawWriter.h" alt="" coords="51,83,141,112"/>
-<area shape="rect" href="$VolWriter_8h.html" title="VolWriter.h" alt="" coords="308,83,391,112"/>
-<area shape="rect" href="$testColorMaps_8cpp.html" title="testColorMaps.cpp" alt="" coords="415,83,545,112"/>
-<area shape="rect" href="$testPNMRawWriter_8cpp.html" title="testPNMRawWriter.cpp" alt="" coords="5,160,160,189"/>
-<area shape="rect" href="$testRawReader_8cpp.html" title="testRawReader.cpp" alt="" coords="184,160,317,189"/>
-<area shape="rect" href="$testVolReader_8cpp.html" title="testVolReader.cpp" alt="" coords="341,160,469,189"/>
-</map>

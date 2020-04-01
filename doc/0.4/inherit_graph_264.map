@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classDGtal_1_1StarShaped2D.html" title="DGtal::StarShaped2D\&lt; TSpace \&gt;" alt="" coords="7,111,220,142"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1AccFlower2D.html" title="Aim: Model of the concept StarShaped represents any accelerated flower in the plane." alt="" coords="269,5,477,35"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1Ball2D.html" title="Aim: Model of the concept StarShaped represents any circle in the plane." alt="" coords="289,58,457,89"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1Ellipse2D.html" title="Aim: Model of the concept StarShaped represents any ellipse in the plane." alt="" coords="280,111,467,142"/>
-<area shape="rect" id="node9" href="$classDGtal_1_1Flower2D.html" title="Aim: Model of the concept StarShaped represents any flower with k&#45;petals in the plane." alt="" coords="281,165,465,195"/>
-<area shape="rect" id="node11" href="$classDGtal_1_1NGon2D.html" title="Aim: Model of the concept StarShaped represents any regular k&#45;gon in the plane." alt="" coords="284,218,463,249"/>
-</map>

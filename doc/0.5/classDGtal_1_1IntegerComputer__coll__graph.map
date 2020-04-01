@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node4" title="STL class." alt="" coords="204,13,319,43"/>
-<area shape="rect" id="node10" href="$structDGtal_1_1NumberTraits.html" title="Aim: The traits class for all models of Cinteger." alt="" coords="176,194,347,225"/>
-<area shape="rect" id="node8" href="$structDGtal_1_1NumberTraits.html" title="DGtal::NumberTraits\&lt; TInteger \&gt;" alt="" coords="505,203,716,234"/>
-<area shape="rect" id="node13" href="$classDGtal_1_1SpaceND.html" title="DGtal::SpaceND\&lt; 2, Integer \&gt;" alt="" coords="512,290,709,321"/>
-<area shape="rect" id="node15" href="$classDGtal_1_1SpaceND.html" title="Aim: SpaceND is a utility class that defines the fundamental structure of a Digital Space in ND..." alt="" coords="152,290,371,321"/>
-</map>

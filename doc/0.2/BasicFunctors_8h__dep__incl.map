@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$Bits_8h.html" title="A collection of functions to help with bitwise manipulations." alt="" coords="336,86,392,117"/>
-<area shape="rect" id="node5" href="$ImageContainerByHashTree_8h.html" title="ImageContainerByHashTree.h" alt="" coords="183,246,377,277"/>
-<area shape="rect" id="node13" href="$Morton_8h.html" title="Morton.h" alt="" coords="328,166,400,197"/>
-<area shape="rect" id="node16" href="$testMorton_8cpp.html" title="testMorton.cpp" alt="" coords="401,246,511,277"/>
-<area shape="rect" id="node7" href="$testCheckImageConcept_8cpp.html" title="testCheckImageConcept.cpp" alt="" coords="5,326,195,357"/>
-<area shape="rect" id="node9" href="$testHashTree_8cpp.html" title="testHashTree.cpp" alt="" coords="219,326,341,357"/>
-<area shape="rect" id="node11" href="$testImageContainerByHashTree_8cpp.html" title="testImageContainerByHashTree.cpp" alt="" coords="365,326,595,357"/>
-</map>

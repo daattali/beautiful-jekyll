@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structDGtal_1_1CConstSinglePassRangeFromPoint.html" title="DGtal::CConstSinglePassRangeFromPoint\&lt; T, Value \&gt;" alt="" coords="720,9,1059,39"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1CConstSinglePassRange.html" title="Aim: Defines the concept describing a const range." alt="" coords="5,5,245,35"/>
-<area shape="rect" id="node6" href="$structDGtal_1_1CConstSinglePassRangeFromPoint.html" title="Aim: refined concept of const single pass range with a begin() method from a point." alt="" coords="296,35,595,66"/>
-<area shape="rect" id="node9" href="$structDGtal_1_1CSinglePassOutputRange.html" title="Aim: refined concept of single pass range which require that an output iterator exists." alt="" coords="747,62,1032,93"/>
-</map>

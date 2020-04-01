@@ -1,6 +1,0 @@
-<map id="DGtal::LambdaMST3D&lt; DSSSegmentationComputer, LambdaFunction &gt;" name="DGtal::LambdaMST3D&lt; DSSSegmentationComputer, LambdaFunction &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1LambdaMST3DEstimator.html" title="DGtal::LambdaMST3DEstimator\l\&lt; Z3i::Space, DSSSegmentationComputer,\l TangentFromDSS3DFunctor\&lt; DSSSegmentationComputer\l::SegmentComputer, LambdaFunction \&gt; \&gt;" alt="" coords="1391,70,1763,135"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1TangentFromDSS3DFunctor.html" title="DGtal::TangentFromDSS3DFunctor\l\&lt; DSSSegmentationComputer\l::SegmentComputer, LambdaFunction \&gt;" alt="" coords="782,34,1041,86"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1TangentFromDSS3DFunctor.html" title="DGtal::TangentFromDSS3DFunctor\l\&lt; DSS, LambdaFunction \&gt;" alt="" coords="267,51,498,90"/>
-<area shape="rect" id="node6" href="$classDGtal_1_1LambdaMST3DEstimator.html" title="DGtal::LambdaMST3DEstimator\l\&lt; TSpace, TSegmentation,\l Functor \&gt;" alt="" coords="805,118,1018,170"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="LibBoard::Arc" name="LibBoard::Arc">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Circle.html" title="A circle. " alt="" coords="64,579,187,610"/>
-<area shape="rect" id="node3" href="$structLibBoard_1_1Ellipse.html" title="An ellipse. " alt="" coords="197,497,323,527"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="246,398,369,429"/>
-<area shape="rect" id="node5" title="STL class. " alt="" coords="99,194,185,225"/>
-<area shape="rect" id="node6" title="STL class. " alt="" coords="75,6,211,56"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1Color.html" title="Structure representing an RGB triple. " alt="" coords="258,194,357,225"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="LibBoard::QuadraticBezierCurve" name="LibBoard::QuadraticBezierCurve">
-<area shape="rect" id="node2" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor. " alt="" coords="29,152,159,177"/>
-<area shape="rect" id="node3" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points. " alt="" coords="30,79,159,104"/>
-<area shape="rect" id="node4" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape. " alt="" coords="34,5,155,31"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1adjacency__iterator.html" title="boost::graph_traits\l\&lt; DGtal::DigitalSurface\l\&lt; TDigitalSurfaceContainer\l \&gt; \&gt;::adjacency_iterator" alt="" coords="173,4,371,92"/>
-<area shape="rect" id="node3" href="$classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1edge__iterator.html" title="boost::graph_traits\l\&lt; DGtal::DigitalSurface\l\&lt; TDigitalSurfaceContainer\l \&gt; \&gt;::edge_iterator" alt="" coords="173,116,371,204"/>
-<area shape="rect" id="node4" href="$classboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4_1_1out__edge__iterator.html" title="boost::graph_traits\l\&lt; DGtal::DigitalSurface\l\&lt; TDigitalSurfaceContainer\l \&gt; \&gt;::out_edge_iterator" alt="" coords="173,228,371,316"/>
-</map>

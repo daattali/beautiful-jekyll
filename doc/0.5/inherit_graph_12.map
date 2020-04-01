@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classDGtal_1_1AngleLinearMinimizer.html" title="Aim: Used to minimize the angle variation between different angles while taking into accounts min and..." alt="" coords="5,58,200,89"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1AngleLinearMinimizerByAdaptiveStepGradientDescent.html" title="DGtal::AngleLinearMinimizerByAdaptiveStepGradientDescent" alt="" coords="248,5,640,35"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1AngleLinearMinimizerByGradientDescent.html" title="DGtal::AngleLinearMinimizerByGradientDescent" alt="" coords="288,58,600,89"/>
-<area shape="rect" id="node7" href="$classDGtal_1_1AngleLinearMinimizerByRelaxation.html" title="DGtal::AngleLinearMinimizerByRelaxation" alt="" coords="307,111,581,142"/>
-</map>

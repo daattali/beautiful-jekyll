@@ -1,6 +1,0 @@
-<map id="DGtal::CIncrementalPrimitiveComputer&lt; T &gt;" name="DGtal::CIncrementalPrimitiveComputer&lt; T &gt;">
-<area shape="rect" id="node2" href="$structDGtal_1_1CPrimitiveComputer.html" title="Aim: Defines the concept describing an object that computes some primitive from input points..." alt="" coords="324,103,556,134"/>
-<area shape="rect" id="node3" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.boost.org/doc/html/DefaultConstructible.html. " alt="" coords="6,5,242,35"/>
-<area shape="rect" id="node4" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.boost.org/doc/html/CopyConstructible.html. " alt="" coords="13,59,235,90"/>
-<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title="Go to http://www.boost.org/doc/html/Assignable.html. " alt="" coords="38,114,210,145"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;" name="DGtal::LambdaMST2DEstimator&lt; TSpace, TSegmentation, Functor &gt;">
-<area shape="rect" id="node2" href="$classDGtal_1_1LambdaMST2DEstimator.html" title="DGtal::LambdaMST2DEstimator\l\&lt; Z2i::Space, DSSSegmentationComputer,\l TangentFromDSS2DFunctor\&lt; DSSSegmentationComputer\l::SegmentComputer, LambdaFunction \&gt; \&gt;" alt="" coords="568,26,941,91"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1LambdaMST2D.html" title="Aim: Simplify creation of Lambda MST tangent estimator. " alt="" coords="990,33,1194,85"/>
-</map>
