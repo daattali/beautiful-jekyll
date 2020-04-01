@@ -134,17 +134,13 @@ staticman:
     siteKey  : # Use your own site key, you need to apply for one on Google
     secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
-# To use Utterance comments,  you can going to https://utteranc.es/ get more parameters interpretation.
-utterance:
-  # Note: Make sure the repo is public, otherwise your readers will not be able to view the issues/comments.
-  # Make sure the [utterances app](https://github.com/apps/utterances) is installed on the repo, otherwise users will not be able to post comments.
-  #  If your repo is a fork, navigate to it's settings tab and confirm the issues feature is turned on.
-  repo:  # Choose the repository utterances will connect to. eg: owner/repo
-  issue-term: title   # Choose the mapping between blog posts and GitHub issues. eg: pathname, url,specific issue number, etc, going to https://utteranc.es/#Blog Post ↔️ Issue Mapping get more choices.
-  theme: github-light # Choose an Utterances theme that matches your blog. 'github-light' is default
-
-  ## Optional
-  label: blog-comments # Choose the label that will be assigned to issues created by Utterances.
+# To use Utterances comments, fill in repository. See more details about the parameters at https://utteranc.es/
+# Make sure that (1) the repository is public (by defauit it should be), (2) Issues are turned on (if you forked beautiful-jekyll, then by default this will not be true!), (3) You install the Utterances app in your repository https://github.com/apps/utterances
+utterances:
+  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  issue-term: title   # Mapping between blog posts and GitHub issues
+  theme: github-light # Utterances theme
+  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 
 # --- Misc --- #
