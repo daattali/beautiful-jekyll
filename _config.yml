@@ -134,8 +134,8 @@ staticman:
     siteKey  : # Use your own site key, you need to apply for one on Google
     secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
-# To use Utterances comments, fill in repository. See more details about the parameters at https://utteranc.es/
-# Make sure that (1) the repository is public (by defauit it should be), (2) Issues are turned on (if you forked beautiful-jekyll, then by default this will not be true!), (3) You install the Utterances app in your repository https://github.com/apps/utterances
+# To use Utterances comments: (1) fill in repository (make sure the repository is public), (2) Enable Issues in your repository, (3) Install the Utterances app in your repository https://github.com/apps/utterances
+# See more details about the parameters below at https://utteranc.es/
 utterances:
   repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
   issue-term: title   # Mapping between blog posts and GitHub issues
