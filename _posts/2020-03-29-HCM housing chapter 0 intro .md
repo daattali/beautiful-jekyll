@@ -752,9 +752,7 @@ ax.set_title('Các quận nội thành')
 
 
 
-Tới đây thì dữ liệu cũng tàm tạm để xây dựng các mô hình dự đoán giá nhà rồi. tuy nhiên mình cũng khá lười nên chỉ viết tới đây thôi. Từ từ sẽ bổ sung sau!
-
-Kỳ tới mình sẽ làm về các vấn đề hay ho và cũng phức tạp hơn. Đó là phân tích chuỗi thời gian và biến động của giá  theo thời gian, mục đích là phân tích ảnh Hưởng của covid đến giá nhà đât. 
+Tới đây thì dữ liệu cũng tàm tạm để xây dựng các mô hình dự đoán giá nhà rồi, và đó cũng sẽ là chủ để trong kỳ tới. 
 
 Mời các bạn đón đọc !
 
