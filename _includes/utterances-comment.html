@@ -1,10 +1,10 @@
-{% if site.utterance.repo and site.utterance.issue-term  %}
+{% if site.utterances.repo and site.utterances.issue-term  %}
 
 <script src="https://utteranc.es/client.js"
-        repo="{{site.utterance.repo }}"
-        issue-term="{{ site.utterance.issue-term }}"
-        theme="{{ site.utterance.theme}}"
-        label="{{ site.utterance.label}}" 
+        repo="{{site.utterances.repo }}"
+        issue-term="{{ site.utterances.issue-term }}"
+        theme="{{ site.utterances.theme}}"
+        label="{{ site.utterances.label}}" 
         crossorigin="anonymous"
         async>
 </script>
