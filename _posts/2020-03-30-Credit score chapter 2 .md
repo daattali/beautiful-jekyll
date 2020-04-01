@@ -223,7 +223,7 @@ data = pd.concat([onehot_data, df.drop(object_cols,axis=1)],axis=1)
 
 ### MinMaxScaler
 
-Là kỹ thuật chuẩn hóa dữ liệu phổ biến cho các dữ liệu **Nunberic**. Với cơ chế là đưa dữ liệu về 1 thang đo mới 
+Là kỹ thuật chuẩn hóa dữ liệu phổ biến cho các dữ liệu **Numeric**. Với cơ chế là đưa dữ liệu về 1 thang đo mới 
 vd: *MinMaxScaler(feature_range=(-1,1))*
    - -1 : giá trị nhỏ nhất 
    -   1 : giá trị lớn nhất 
