@@ -6,7 +6,7 @@ title: Preparing release 1.1
 
 We are currently working on the release 1.1 of DGtal. To give you a glimpse of this new version, here you have a quick demo:
 
-![Video](../img/regularization.mov)
+![Video](../img/regularization.mp4)
 
 
 This video showcases:
