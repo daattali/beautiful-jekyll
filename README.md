@@ -1,16 +1,15 @@
 # Beautiful Jekyll
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
 
 > *Copyright 2019 [Dean Attali](https://deanattali.com)*
 
 **Beautiful Jekyll** is a ready-to-use template to help you create an awesome website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://deanattali.com/beautiful-jekyll) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) to see it in use, or see examples of websites other people created using this theme [here](#showcased-users-success-stories).
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/daattali/20) for developing and maintaining this template.**
+**If you enjoy this theme, please consider [supporting me](https://github.com/sponsors/daattali) for developing and maintaining this template.**
 
 <p align="center">
-  <a href="https://www.paypal.me/daattali">
+  <a href="https://github.com/sponsors/daattali">
     <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" />
   </a>
 </p>
@@ -114,11 +113,16 @@ To use Disqus, simply sign up to [Disqus](https://disqus.com/) and add your Disq
 
 To use Facebook comments, create a Facebook app using [Facebook developers](https://developers.facebook.com/docs/apps/register), and add the Facebook App ID to the `fb_comment_id` parameter in `_config.yml`.
 
+#### Utterances comments 
+
+To use [Utterances comments](https://utteranc.es/), follow these steps: (1) Enable Issues in your GitHub repository, (2) Install the Utterances app in your repository (go to https://github.com/apps/utterances), (3) Fill in the `repository` parameter in the utterances section of the `_config.yml` file.
+
 #### Staticman comments
 
 To use Staticman, you first need to invite `staticmanlab` as a collaborator to your repository (by going to your repository **Settings** page, navigate to the **Collaborators** tab, and add the username `staticmanlab`), and then accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`. Lastly, fill in the `staticman` parameters in the Staticman section of `_config.yml`. You may also choose a different Staticman instance other than `staticmanlab`.
 
 Optional: You may want to configure a webhook to prevent old inactive branches (representing approved comments) from stacking up.  You can refer to [Staticman's documentation](https://staticman.net/docs/webhooks) for details.  Make sure to input the **Payload URL** according to your chosen `endpoint`.  For example, the default `endpoint` is `https://staticman3.herokuapp.com/v3/entry/github/`, so the corresponding **Payload URL** should be `https://staticman3.herokuapp.com/v1/webhook`.
+
 
 ### Adding Google Analytics to track page views
 
