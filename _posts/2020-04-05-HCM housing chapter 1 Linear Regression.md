@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HCM housing chapter 1
-tags: [data analyst, HCM house prices]
+tags: [HCM house price]
 ---
 
 Bài này mình sẽ nói thêm 1 chút về cách xử lý dữ liệu cũng như xây dựng mô hình dự đoán giá nhà cơ bản và rất đơn giản.
