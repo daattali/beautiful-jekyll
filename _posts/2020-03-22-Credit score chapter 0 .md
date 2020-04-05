@@ -6,7 +6,6 @@ tags: [credit scorecard]
 ---
 
 **Đôi lời tri ân !**
-
 Trước khi vào bài viết đầu tiên về credit scorecard em xin gửi lời cảm ơn chân thành nhất tới anh Lê Việt Hoàng - 
 người anh, người xếp , người đã tin tưởng trao cho cho em mọi điều kiện cũng như cơ hội trong công việc cho em. 
 Và một trong các mục đích em viết series này cũng là mong được góp chút tài liệu để phát triển team ngày 
@@ -59,3 +58,4 @@ Score card cho nhóm nợ B1 và B2 Loan:
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
 
 
+Rất mong các bạn theo dõc các kỳ sau để hiểu hơn về cách xây dựng một mô hình Credit scorecard. Xin cám ơn !
