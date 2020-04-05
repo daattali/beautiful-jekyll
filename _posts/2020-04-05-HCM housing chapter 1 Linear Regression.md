@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HCM housing chapter 1
+subtitle: linear Regression model
 tags: [HCM house price]
 ---
 
