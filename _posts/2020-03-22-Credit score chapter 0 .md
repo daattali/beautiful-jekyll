@@ -41,4 +41,16 @@ cũng có một số dự án đã và đang được ứng dụng. Đó cũng l
 Một số dự án của mình:
 
 
- 
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
+
+
+
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_1.png)
+
+
+
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
+
+
