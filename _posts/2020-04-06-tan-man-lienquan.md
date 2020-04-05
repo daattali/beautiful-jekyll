@@ -13,9 +13,9 @@ tag: tản mạn
 
   Chắc hẳn ở cái thời này thì ai cũng biêt tựa game Liên Quân Mobile (Arena of Valor) là một trò chơi chiến thuật thuộc đấu trường, nhiều người chơi do Garena phát hành. Mình cũng chơi game này được 2 năm rồi, cũng biết đi gần hết các đường, mid thì hơi dở, chuyên rừng và ad. Thực ra mình chơi game cũng không hay, chỉ thuộc dạng người chơi phổ thông. Mình viết bài này cũng chẳng phải kể về cách chơi, chiến thuật trong game hay, cái đó đã có các game thủ top đầu chỉ dẫn mình chỉ muốn viết ra vài dòng cảm nhận sau khi chơi game.
 
-## Điều quan trọng nhất là luôn nhớ mục đích của mình và biết được mình cần làm gì để đạt được nó
+## Luôn nhớ mục đích của mình và biết mình cần làm gì 
 
-  Mình thấy cái game Liên Quân hay, nó không chỉ hay về tính giải trí mà qua đó nó cũng phản ánh cái hiện thực cuộc sống. Người ta tìm đến game để giải trí, nhưng game liên quân luôn chỉ có một bên chiến thắng nên kẻ thua cuộc thì hiếm khi vui, nhiều khi muốn giải trí lại mang thêm bực dọc, cũng đến nực cười là họ lại tiếp tục chơi để tìm sự chiến thắng. Luật chơi khá đơn giản chỉ cần bên nào bị đập nát nhà chính là thua, ấy vậy mà nhiều người chơi dường như quên mất cái điều căn bản đó họ mải đi đánh nhau với đối thủ, họ chiến thắng , họ lại đi tìm đối thủ để tiếp tục đồ sát và rồi cái nhiệm vụ cần hoàn thành là phá nhà chính đối thủ thì họ không làm, họ thua vì mất cơ hội, mấy người văn minh thì còn đỡ còn phần nhiều thì bắt đầu chửi, chửi rừng ngu vì không gank, chửi trợ thủ không hỗ trợ, chử ad ngu rồi chửi cả team bạn à còn chửi cả mạng lag nữa, sau cùng thì vẫn là đổ lỗi. Cũng có người khi thua thì tự nhủ chơi cho vui, nhưng rồi thua hoài rồi cũng hết vui. 
+  Mình thấy cái game Liên Quân hay, nó không chỉ hay về tính giải trí mà qua đó nó cũng phản ánh cái hiện thực cuộc sống. Người ta tìm đến game để giải trí, nhưng game liên quân luôn chỉ có một bên chiến thắng nên kẻ thua cuộc thì hiếm khi vui, nhiều khi muốn giải trí lại mang thêm bực dọc, cũng đến nực cười là họ lại tiếp tục chơi để tìm sự chiến thắng. Luật chơi khá đơn giản chỉ cần bên nào bị đập nát nhà chính là thua, ấy vậy mà nhiều người chơi dường như quên mất cái điều căn bản đó họ mải đi đánh nhau với đối thủ, họ chiến thắng , họ lại đi tìm đối thủ để tiếp tục đồ sát và rồi cái nhiệm vụ cần hoàn thành là phá nhà chính đối thủ thì họ không làm, họ thua vì mất cơ hội, mấy người văn minh thì còn đỡ còn phần nhiều thì bắt đầu chửi, chửi rừng ngu vì không gank, chửi trợ thủ không hỗ trợ, chử ad ngu rồi chửi cả team bạn à còn chửi cả mạng lag nữa, sau cùng thì vẫn là đổ lỗi. Chơi game để vui, muốn vui phải thắng, muốn thắng phải đập nhà !
 
 ## Nghiêm túc với chính mình và luôn tiến bộ
 
@@ -25,6 +25,19 @@ tag: tản mạn
 
   Có một điều thú vị là cuộc sống chúng ta cần tiền, trong game cũng cần tiền. Tiền trong game không mang lại niềm vui trược tiếp cho người chơi nhưng nó có thể khiếm người chơi mua được đồ, có được đồ nhiều hơn tức nhiều tiền hơn thì có thể dễ dàng
 chiếm lợi thế so với đối thủ thậm chí là cân team với mega kill đạt được niềm vui khi bá đạo bản đồ và chiến thắng . **Tiền có thể mua được niềm vui dù là trong game**
+
+## Tiền không chưa đủ
+
+Nhưng làm gì để nhiều tiền, chúng ta phải farm. Nhưng tôi cũng farm từ đầu game tới cuối game mà sao tiền bằng nửa thằng cùng lane team địch có lẽ do kĩ năng kém nên mới vậy ừ là do kỹ năng. Nhưng còn tôi nhiều tiền hơn thằng kia mà solo không lại, con đó hack à, không nó không hack đâu kỹ năng bạn cũng ổn nhưng bạn gặp con tướng mới rồi, nó là con cưng của garena được buff ngập mặt, bạn hơn có món đồ thì nó chấp bạn 2 mạng. Thế mới biết tiền không chưa đủ cần có quan hệ. 
+
+## Một mình không bằng tập thể
+
+Nhiều lúc xem ra mình cũng đã làm tốt các điều trên rồi mà cuối cùng vẫn thua, nhìn lại mới thấy thành viên nhiều tiền thứ hai trong team chỉ bằng một nửa của mình. Một mình xanh chỉ được nhất thời, dù có giết bao mạng chăng nữa mà team feed thì cũng không thể đấu lại đối thủ, đâu thể mega kill mãi được. Vậy nên muốn chiến thắng phải là cả team cùng đồng lòng, một người thọt thì cũng không xong.
+
+Viết lan man quá. khi nào rảnh viết tiếp 2 giờ đêm rồi.
+
+
+
 
 
 
