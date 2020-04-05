@@ -595,37 +595,35 @@ lm = sm.OLS(y_train, X_train1).fit()
 print(lm.summary())
 ```
 
-                                OLS Regression Results                            
-    ==============================================================================
-    Dep. Variable:                  price   R-squared:                       0.565
-    Model:                            OLS   Adj. R-squared:                  0.558
-    Method:                 Least Squares   F-statistic:                     88.16
-    Date:                Sun, 05 Apr 2020   Prob (F-statistic):           7.54e-82
-    Time:                        15:49:23   Log-Likelihood:                -795.61
-    No. Observations:                 484   AIC:                             1607.
-    Df Residuals:                     476   BIC:                             1641.
-    Df Model:                           7                                         
-    Covariance Type:            nonrobust                                         
-    ==============================================================================
-                     coef    std err          t      P>|t|      [0.025      0.975]
-    ------------------------------------------------------------------------------
-    const         -0.9891      0.338     -2.924      0.004      -1.654      -0.324
-    floors         0.3321      0.095      3.501      0.001       0.146       0.518
-    area           0.0257      0.002     10.916      0.000       0.021       0.030
-    facade         0.1948      0.052      3.777      0.000       0.093       0.296
-    road_wide      0.1615      0.022      7.280      0.000       0.118       0.205
-    bedrooms      -0.0531      0.088     -0.607      0.544      -0.225       0.119
-    toilets        0.4166      0.077      5.427      0.000       0.266       0.567
-    furniture      0.1319      0.120      1.098      0.273      -0.104       0.368
-    ==============================================================================
-    Omnibus:                       10.497   Durbin-Watson:                   2.166
-    Prob(Omnibus):                  0.005   Jarque-Bera (JB):               18.606
-    Skew:                           0.022   Prob(JB):                     9.11e-05
-    Kurtosis:                       3.960   Cond. No.                         458.
-    ==============================================================================
-    
-    Warnings:
-    [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.565
+Model:                            OLS   Adj. R-squared:                  0.558
+Method:                 Least Squares   F-statistic:                     88.16
+Date:                Sun, 05 Apr 2020   Prob (F-statistic):           7.54e-82
+Time:                        15:49:23   Log-Likelihood:                -795.61
+No. Observations:                 484   AIC:                             1607.
+Df Residuals:                     476   BIC:                             1641.
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -0.9891      0.338     -2.924      0.004      -1.654      -0.324
+floors         0.3321      0.095      3.501      0.001       0.146       0.518
+area           0.0257      0.002     10.916      0.000       0.021       0.030
+facade         0.1948      0.052      3.777      0.000       0.093       0.296
+road_wide      0.1615      0.022      7.280      0.000       0.118       0.205
+bedrooms      -0.0531      0.088     -0.607      0.544      -0.225       0.119
+toilets        0.4166      0.077      5.427      0.000       0.266       0.567
+furniture      0.1319      0.120      1.098      0.273      -0.104       0.368
+==============================================================================
+Omnibus:                       10.497   Durbin-Watson:                   2.166
+Prob(Omnibus):                  0.005   Jarque-Bera (JB):               18.606
+Skew:                           0.022   Prob(JB):                     9.11e-05
+Kurtosis:                       3.960   Cond. No.                         458.
+==============================================================================
+
 
 
 
