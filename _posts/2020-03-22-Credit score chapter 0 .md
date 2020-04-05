@@ -55,7 +55,7 @@ Score card cho sản phẩm Card:
 
 Score card cho nhóm nợ B1 và B2 Loan:
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_2.png)
 
 
 Rất mong các bạn theo dõc các kỳ sau để hiểu hơn về cách xây dựng một mô hình Credit scorecard. Xin cám ơn !
