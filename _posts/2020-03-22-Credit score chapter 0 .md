@@ -5,7 +5,7 @@ subtitle: Intro
 tags: [credit scorecard]
 ---
 
-**Đôi lời tri ân !**
+
 Trước khi vào bài viết đầu tiên về credit scorecard em xin gửi lời cảm ơn chân thành nhất tới anh Lê Việt Hoàng - 
 người anh, người xếp , người đã tin tưởng trao cho cho em mọi điều kiện cũng như cơ hội trong công việc cho em. 
 Và một trong các mục đích em viết series này cũng là mong được góp chút tài liệu để phát triển team ngày 
