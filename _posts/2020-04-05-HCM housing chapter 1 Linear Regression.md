@@ -633,6 +633,7 @@ lm.summary()
   <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>   
 </tr>
 </table>
+
 <table class="simpletable">
 <tr>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
@@ -662,6 +663,7 @@ lm.summary()
   <th>furniture</th> <td>    0.1319</td> <td>    0.120</td> <td>    1.098</td> <td> 0.273</td> <td>   -0.104</td> <td>    0.368</td>
 </tr>
 </table>
+
 <table class="simpletable">
 <tr>
   <th>Omnibus:</th>       <td>10.497</td> <th>  Durbin-Watson:     </th> <td>   2.166</td>
@@ -675,8 +677,7 @@ lm.summary()
 <tr>
   <th>Kurtosis:</th>      <td> 3.960</td> <th>  Cond. No.          </th> <td>    458.</td>
 </tr>
-</table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-
+</table>
 
 
 
