@@ -245,7 +245,7 @@ print(df['furniture'].value_counts().head())
     Name: furniture, dtype: int64
 
 
-Tuy nhiên có một vấn đề là dữ liệu kiểu nhập tự do nên khá khó phân tích, có đến 1283 giá trị nhập khác nhau trên 2723 giá trị không null
+Tuy nhiên có một vấn đề là dữ liệu kiểu nhập tự do nên khá khó phân tích, có đến 833 giá trị nhập khác nhau trên 1693 giá trị không null
 
 Nhận thấy rằng đa số các nhà có nột thất thì họ mới ghi vào phần 'furniture', do vậy chúng ta có thể tạo 1 trường dữ liệu để thể hiện là nhà có nột thất hay không.
 
