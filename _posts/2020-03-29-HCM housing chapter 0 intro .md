@@ -250,9 +250,6 @@ df['area_unit'] = [p.split(' ')[1] for p in df['area']]
 df['area'] = [p.split(' ')[0] for p in df['area']]
 print(df['price_unit'].value_counts(), end='\n\n')
 print(df['area_unit'].value_counts())
-
-#np.unique(df['price_unit'], return_counts=True)
-
 ```
 
     tỷ          13522
