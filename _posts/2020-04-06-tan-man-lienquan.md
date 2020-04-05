@@ -12,9 +12,9 @@ chỉ muốn ghi lại chút quan điểm sống cũng như góc nhìn của b�
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/lq.jpg)
 
 
-  Chắc hẳn ở cái thời này thì ai cũng biêt tựa game Liên Quân Mobile (tên tiếng anh: Arena of Valor) 
-là một trò chơi chiến thuật thuộc đấu trường, nhiều người chơi do Garena phát hành.
-Mình cũng chơi game này được 2 năm rồi mình cũng biết đi gần hết các đường, mid thì hơi dở, chuyên rừng và ad.
+  Chắc hẳn ở cái thời này thì ai cũng biêt tựa game Liên Quân Mobile (Arena of Valor) 
+là một trò chơi chiến thuật thuộc đấu trường, nhiều người chơi do Garena phát hành. 
+Mình cũng chơi game này được 2 năm rồi, cũng biết đi gần hết các đường, mid thì hơi dở, chuyên rừng và ad.
 Thực ra mình chơi game cũng không hay, chỉ thuộc dạng người chơi phổ thông. Mình viết bài này cũng chẳng phải 
 kể về cách chơi, chiến thuật trong game hay, cái đó đã có các game thủ top đầu chỉ dẫn mình chỉ muốn viết ra 
 vài dòng cảm nhận thôi.
@@ -27,9 +27,13 @@ chơi dường như quên mất cái điều căn bản đó họ mải đi đá
 để tiếp tục đồ sát và rồi cái nhiệm vụ cần hoàn thành là phá nhà chính đối thủ thì họ không làm, họ thua vì mất cơ hội,
 mấy người văn minh thì còn đỡ còn phần nhiều thì bắt đầu chửi, chửi rừng ngu vì không gank, chửi trợ thủ không hỗ trợ,
 chử ad ngu rồi chửi cả team bạn à còn chửi cả mạng lag nữa, sau cùng thì vẫn là đổ lỗi. Cũng có người khi thua thì tự
-nhủ chơi cho vui, nhưng rồi thua hoài rồi cũng hết vui. 
+nhủ chơi cho vui, nhưng rồi thua hoài rồi cũng hết vui. **Điều quan trọng là luôn nhớ mục đích của mình và biết được
+mình cần làm gì để đạt được nó.**
 
-  Game Liên Quận là game đồng đội nên quả thật khi đánh không có team thì những điều trên vẫn luôn xảy đến với ta, dù ít
-hay nhiều.
-
+   Quan trọng hơn hết là thái độ, theo mình biết thì server bên Dài Loan đa số người chơi đều rất nghiêm túc trong
+việc chơi game nên những trường hợp trên ít xảy ra hơn. Mình cũng xem một số video và thấy được họ thực sự nghiêm túc với
+cuộc chơi dù đang ở mức rank rất thấp - mức rank mà Việt Nam đa phần là trẻ trâu. Theo quan sát chủ quan, mình thấy cách một người chơi game phản ánh con người đó, tất nhiên điều kiện tiên quyết là họ phải thích game Liên Quân đã. Có người rất thích game này, nhưng họ chơi hời hợt lắm, họ đi một đường , họ đánh một con tướng , một cách đánh theo lối mòn mà họ cho là tiêu 
+chuẩn. Game cũng ra lâu rồi, nên cộng đồng ngày càng phát triển, độ khó khi chơi cũng tăng theo kẻ không chịu tiến bộ và 
+thay đổi thì khả năng bị hành trong game là khá cao. Xem ra câu nhược nhục cường thực, thích giả sinh tồn vẫn đúng trong
+game. **Luôn phải làm tốt hơn vì ta chỉ tốt nhất thời thôi**
 
