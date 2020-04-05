@@ -595,34 +595,81 @@ lm = sm.OLS(y_train, X_train1).fit()
 print(lm.summary())
 ```
 
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:                  price   R-squared:                       0.565
-Model:                            OLS   Adj. R-squared:                  0.558
-Method:                 Least Squares   F-statistic:                     88.16
-Date:                Sun, 05 Apr 2020   Prob (F-statistic):           7.54e-82
-Time:                        15:49:23   Log-Likelihood:                -795.61
-No. Observations:                 484   AIC:                             1607.
-Df Residuals:                     476   BIC:                             1641.
-Df Model:                           7                                         
-Covariance Type:            nonrobust                                         
-==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const         -0.9891      0.338     -2.924      0.004      -1.654      -0.324
-floors         0.3321      0.095      3.501      0.001       0.146       0.518
-area           0.0257      0.002     10.916      0.000       0.021       0.030
-facade         0.1948      0.052      3.777      0.000       0.093       0.296
-road_wide      0.1615      0.022      7.280      0.000       0.118       0.205
-bedrooms      -0.0531      0.088     -0.607      0.544      -0.225       0.119
-toilets        0.4166      0.077      5.427      0.000       0.266       0.567
-furniture      0.1319      0.120      1.098      0.273      -0.104       0.368
-==============================================================================
-Omnibus:                       10.497   Durbin-Watson:                   2.166
-Prob(Omnibus):                  0.005   Jarque-Bera (JB):               18.606
-Skew:                           0.022   Prob(JB):                     9.11e-05
-Kurtosis:                       3.960   Cond. No.                         458.
-==============================================================================
+
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>          <td>price</td>      <th>  R-squared:         </th> <td>   0.565</td>
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th> <td>   0.558</td>
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   88.16</td>
+</tr>
+<tr>
+  <th>Date:</th>             <td>Sun, 05 Apr 2020</td> <th>  Prob (F-statistic):</th> <td>7.54e-82</td>
+</tr>
+<tr>
+  <th>Time:</th>                 <td>16:03:41</td>     <th>  Log-Likelihood:    </th> <td> -795.61</td>
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>   484</td>      <th>  AIC:               </th> <td>   1607.</td>
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>   476</td>      <th>  BIC:               </th> <td>   1641.</td>
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>     7</td>      <th>                     </th>     <td> </td>   
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>   
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>const</th>     <td>   -0.9891</td> <td>    0.338</td> <td>   -2.924</td> <td> 0.004</td> <td>   -1.654</td> <td>   -0.324</td>
+</tr>
+<tr>
+  <th>floors</th>    <td>    0.3321</td> <td>    0.095</td> <td>    3.501</td> <td> 0.001</td> <td>    0.146</td> <td>    0.518</td>
+</tr>
+<tr>
+  <th>area</th>      <td>    0.0257</td> <td>    0.002</td> <td>   10.916</td> <td> 0.000</td> <td>    0.021</td> <td>    0.030</td>
+</tr>
+<tr>
+  <th>facade</th>    <td>    0.1948</td> <td>    0.052</td> <td>    3.777</td> <td> 0.000</td> <td>    0.093</td> <td>    0.296</td>
+</tr>
+<tr>
+  <th>road_wide</th> <td>    0.1615</td> <td>    0.022</td> <td>    7.280</td> <td> 0.000</td> <td>    0.118</td> <td>    0.205</td>
+</tr>
+<tr>
+  <th>bedrooms</th>  <td>   -0.0531</td> <td>    0.088</td> <td>   -0.607</td> <td> 0.544</td> <td>   -0.225</td> <td>    0.119</td>
+</tr>
+<tr>
+  <th>toilets</th>   <td>    0.4166</td> <td>    0.077</td> <td>    5.427</td> <td> 0.000</td> <td>    0.266</td> <td>    0.567</td>
+</tr>
+<tr>
+  <th>furniture</th> <td>    0.1319</td> <td>    0.120</td> <td>    1.098</td> <td> 0.273</td> <td>   -0.104</td> <td>    0.368</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td>10.497</td> <th>  Durbin-Watson:     </th> <td>   2.166</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.005</td> <th>  Jarque-Bera (JB):  </th> <td>  18.606</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td> 0.022</td> <th>  Prob(JB):          </th> <td>9.11e-05</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 3.960</td> <th>  Cond. No.          </th> <td>    458.</td>
+</tr>
+</table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
 
 
 
