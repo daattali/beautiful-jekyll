@@ -503,8 +503,8 @@ for r in range(len(axs)):
 
 ```
 
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_1.png)
 
-![png](output_24_0.png)
 
 
 **correlation matrix** cho ta thấy sự tương quan giữa các biến, 
@@ -523,7 +523,8 @@ sns.heatmap(corrmat, vmax=.8, annot=True);
 ```
 
 
-![png](output_26_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_2.png)
 
 
 
@@ -550,7 +551,7 @@ top_features.remove('price')
 ```
 
 
-![png](output_29_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_3.png)
 
 
 
@@ -570,7 +571,8 @@ for r in range(len(axs)):
 ```
 
 
-![png](output_30_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_4.png)
 
 
 
@@ -640,7 +642,8 @@ plt.show()
 ```
 
 
-![png](output_34_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_5.png)
+
 
 
 ### Giải thích 1 số thuật ngữ thống kê:
@@ -682,7 +685,9 @@ plt.show()
 ```
 
 
-![png](output_36_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_6.png)
+
 
 
   4. **RMSE**:  Root Mean Square Error
