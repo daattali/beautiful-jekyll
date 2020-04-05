@@ -244,7 +244,7 @@ df['type'] = df['type'].map({'Tin thường': 'nomal',
                              
 ```
 
-- Tách giá trị số từ chuỗi ...
+- Tách giá price, area từ chuỗi ...
 
 
 ```python
@@ -390,28 +390,8 @@ df['p_m2'] = df['price']/df['area']
 ```
 
 
-```python
-df['toilets']
 
-```
-
-
-
-
-    0        NaN
-    1        NaN
-    2        2.0
-    3        NaN
-    4        NaN
-            ... 
-    14385    NaN
-    14386    2.0
-    14387    3.0
-    14388    2.0
-    14389    2.0
-    Name: toilets, Length: 13225, dtype: float64
-
-
+- Tách giá trị số từ chuỗi cá trường 'floors','bedrooms', 'facade', 'road_wide'
 
 
 ```python
@@ -642,7 +622,7 @@ df.head(1).T
 
 
 
-## Bước2: Biểu diễn dữ liệu
+## Bước 2 : Biểu diễn dữ liệu
 - Dữ liệu khá đa dạng nhưng mình chỉ quan tâm tới các diện tích < 200m2 và giá tiền < 100 tỷ:
 
 
