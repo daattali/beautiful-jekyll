@@ -2,7 +2,7 @@
 layout: post
 title: HCM housing chapter 0
 subtitle: Intro
-tags: [HCM house price]
+tags: [HCM housing]
 ---
 
 
