@@ -41,15 +41,20 @@ cũng có một số dự án đã và đang được ứng dụng. Đó cũng l
 Một số dự án của mình:
 
 
+Score card cho nhóm nợ B3 Loan:
+
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
 
 
 
+Score card cho sản phẩm Card:
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_1.png)
 
 
 
+
+Score card cho nhóm nợ B1 và B2 Loan:
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_0.png)
 
