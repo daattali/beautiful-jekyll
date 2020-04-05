@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HCM housing chapter 0
-tags: [data analyst]
+tags: [data analyst, HCM house prices]
 ---
 
 
