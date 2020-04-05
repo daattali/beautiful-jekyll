@@ -2,7 +2,7 @@
 layout: post
 title: HCM housing chapter 1
 subtitle: linear Regression model
-tags: [HCM house price]
+tags: [HCM housing]
 ---
 
 Bài này mình sẽ nói thêm 1 chút về cách xử lý dữ liệu cũng như xây dựng mô hình dự đoán giá nhà cơ bản và rất đơn giản.
