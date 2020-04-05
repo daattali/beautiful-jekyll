@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Credit scorecard chapter 1
-subtitle: linear regression model
+subtitle: Logistic regression model
 tags: [credit scorecard]
 ---
 
