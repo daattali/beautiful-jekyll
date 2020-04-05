@@ -1,3 +1,9 @@
+---
+layout: post
+title: HCM housing chapter 1
+tags: [data analyst]
+---
+
 Bài này mình sẽ nói thêm 1 chút về cách xử lý dữ liệu cũng như xây dựng mô hình dự đoán giá nhà cơ bản và rất đơn giản.
 
 Ứng dụng:
@@ -592,7 +598,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 import statsmodels.api as sm      
 X_train1 = sm.add_constant(X_train)
 lm = sm.OLS(y_train, X_train1).fit()
-print(lm.summary())
+lm.summary()
 ```
 
 
