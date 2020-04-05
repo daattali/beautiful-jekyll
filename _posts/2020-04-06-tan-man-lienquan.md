@@ -5,7 +5,7 @@ chỉ muốn ghi lại chút quan điểm sống cũng như góc nhìn của b�
 đó đọc lại còn có thể à rằng mình đã từng như vậy !
 
 
-![Crepe](https://images.app.goo.gl/5xZKBd91UPabqao18)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/lq.jpg)
 
 
 Chắc hẳn ở cái thời này thì ai cũng biêt tựa game Liên Quân Mobile (tên tiếng anh: Arena of Valor) 
