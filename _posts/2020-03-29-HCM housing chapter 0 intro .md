@@ -237,8 +237,7 @@ df['type'] = df['type'].map({'Tin thường': 'nomal',
                              'Tin Vip 3': 'v3',
                              'Tin Vip 2': 'v2',
                              'Tin Vip 1': 'v1',
-                             'Tin Vip đặc biệt': 'vs'})
-                             
+                             'Tin Vip đặc biệt': 'vs'})                  
 ```
 
 - Tách giá price, area từ chuỗi:
@@ -271,7 +270,6 @@ Chỉ lấy các record có 'price_unit là' 'tỷ' và 'area_unit' là 'm²'
 
 ```python
 df = df[(df['price_unit'] == 'tỷ') & (df['area_unit'] == 'm²')]
-
 ```
 
 Chuyển dữ liệu 'price' và 'area' mới xử lý về kiểu float để tính toán:
@@ -280,7 +278,6 @@ Chuyển dữ liệu 'price' và 'area' mới xử lý về kiểu float để t
 df['price'] = df['price'].astype(float)
 df['area'] = df['area'].astype(float)
 df.describe()
-
 ```
 
 
@@ -385,7 +382,6 @@ df.describe()
 
 ```python
 df['p_m2'] = df['price']/df['area']
-
 ```
 
 
@@ -396,7 +392,6 @@ df['p_m2'] = df['price']/df['area']
 ```python
 converts = ['floors','bedrooms', 'facade', 'road_wide']
 df[converts].head(3)
-
 ```
 
 
@@ -457,7 +452,6 @@ df[converts].head(3)
 
 ```python
 df[converts].info()
-
 ```
 
     <class 'pandas.core.frame.DataFrame'>
@@ -472,8 +466,11 @@ df[converts].info()
     dtypes: object(4)
     memory usage: 516.6+ KB
 
-Nhận thấy giá trị số sẽ bao gồm các phần tử bắt đầu cho đến ký tự '(' trong chuỗi nên ta viết hàm xử lý như dưới:
 
+
+Nhận thấy giá trị số sẽ bao gồm các phần tử bắt đầu cho đến ký tự '(' trong chuỗi nên ta viết hàm xử lý như dưới:
+ 
+ 
 ```python
 def find_number(s):
     if s != 'none':
@@ -624,7 +621,6 @@ df.head(1).T
 
 ```python
 df = df[(df['area'] < 200) & (df['price'] < 100)]
-
 ```
 
 Có 24 quận nên chia làm 4 dòng 6 cột vẽ cho đẹp
@@ -649,7 +645,6 @@ for r in range(len(axs)):
                     scatter_kws={'alpha':0.3, 'color':'grey'},
                     ax = axs[r,c])
         axs[r,c].set_title(label[r,c])
-
 ```
 
 
@@ -684,7 +679,6 @@ for r in range(len(axs)):
                         ax = axs[r,c])
         axs[r,c].set_title(label[r,c])
         axs[r,c].get_legend().remove()
-        
 ```
 
 
@@ -715,14 +709,12 @@ for d in df_choise['district'].unique():
     
 ax.get_legend().remove()
 ax.set_title('Các quận nội thành')
-
-
 ```
 
 
 
 
-    Text(0.5, 1.0, 'Các quận nội thành')
+Các quận nội thành và phân bỏ price:
 
 
 
