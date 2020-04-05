@@ -49,11 +49,10 @@ print(df.shape)
 ```python
 df.drop(['Loại tin rao','uptime','email','Mã tin đăng',
          'title','url','Địa chỉ','Hướng nhà','Hướng ban công'],
-         axis=1, inplace=True)
-         
+         axis=1, inplace=True)         
 ```
 
-- Đổi tên cột nghe cho tây tây (và dễ gọi)
+Đổi tên cột nghe cho tây tây (và dễ gọi)
 
 
 ```python
@@ -74,7 +73,6 @@ df.rename(columns = {'Loại hình tin đăng':'type',
 
 ```python
 df.head(1).T
-
 ```
 
 
@@ -203,11 +201,10 @@ df.head(1).T
 </div>
 
 
-
+Xem thông tin Non-Null và kiểu dữ liệu:
 
 ```python
 df.info()
-
 ```
 
     <class 'pandas.core.frame.DataFrame'>
@@ -233,7 +230,7 @@ df.info()
     dtypes: datetime64[ns](2), float64(3), object(10)
     memory usage: 1.6+ MB
 
-
+Đổi tên giá trị biến trong trường 'type':
 
 ```python
 df['type'] = df['type'].map({'Tin thường': 'nomal',
@@ -244,7 +241,7 @@ df['type'] = df['type'].map({'Tin thường': 'nomal',
                              
 ```
 
-- Tách giá price, area từ chuỗi ...
+- Tách giá price, area từ chuỗi:
 
 
 ```python
@@ -270,12 +267,14 @@ print(df['area_unit'].value_counts())
     Name: area_unit, dtype: int64
 
 
+Chỉ lấy các record có 'price_unit là' 'tỷ' và 'area_unit' là 'm²'
 
 ```python
 df = df[(df['price_unit'] == 'tỷ') & (df['area_unit'] == 'm²')]
 
 ```
 
+Chuyển dữ liệu 'price' và 'area' mới xử lý về kiểu float để tính toán:
 
 ```python
 df['price'] = df['price'].astype(float)
@@ -391,7 +390,7 @@ df['p_m2'] = df['price']/df['area']
 
 
 
-- Tách giá trị số từ chuỗi cá trường 'floors','bedrooms', 'facade', 'road_wide'
+- Tách giá trị số từ chuỗi các trường 'floors','bedrooms', 'facade', 'road_wide'
 
 
 ```python
@@ -473,10 +472,9 @@ df[converts].info()
     dtypes: object(4)
     memory usage: 516.6+ KB
 
-
+Nhận thấy giá trị số sẽ bao gồm các phần tử bắt đầu cho đến ký tự '(' trong chuỗi nên ta viết hàm xử lý như dưới:
 
 ```python
-#x = lambda strs : ''.join(map(str,  [s for s in strs if s.isdigit()]))
 def find_number(s):
     if s != 'none':
         return float(s[: s.find('(')].replace(',','.'))
@@ -486,13 +484,11 @@ def find_number(s):
 for col in converts:
     df[col].fillna('none', inplace=True)
     df[col] = [find_number(s) for s in df[col]]
-    
 ```
 
 
 ```python
 df.head(1).T
-
 ```
 
 
@@ -663,9 +659,9 @@ for r in range(len(axs)):
 
 ```python
 df = df[df['lat']<20]
-
 ```
 
+Biểu đồ quan hệ giữa area và price theo từng quận :
 
 ```python
 cols, rows = 6,4
@@ -696,6 +692,8 @@ for r in range(len(axs)):
 
 
 
+
+Biểu đồ phân bổ price theo từng quận :
 
 ```python
 df_choise =  df[~df['district'].isin(['Hóc Môn', 'Nhà Bè',
