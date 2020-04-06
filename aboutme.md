@@ -12,9 +12,9 @@ subtitle:
 - Giới tính : Nam
 
 -----------------
-### Lý tưởng:
+### Về bản thân:
 
-Luôn cố gắng để hôm nay ta tốt hơn hôm qua một chút. 
+Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phải tốt hơn hôm qua
 
 -----------------
 ### Bằng cấp : 
