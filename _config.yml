@@ -68,7 +68,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+  rss: false
   email: nguyenquangmminh4996@gmail.com
   facebook: Minh4996
   github: minmax49
@@ -80,7 +80,7 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: 0914198598
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
