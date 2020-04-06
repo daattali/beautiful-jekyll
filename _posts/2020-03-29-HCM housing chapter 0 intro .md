@@ -12,6 +12,7 @@ Thị trường biến động là thế nhưng chỉ ngồi nghe thì có lẽ 
 
 Nhưng vẫn còn hy vọng, data về các tin đăng rao bán bất động sản thì tràn ngập trên mạng, và may thay tôi cũng có chút kỹ năng để thu thập và xử lý chúng. Vì đó series **HCM housing** ra đời nhằm thỏa mãn niềm đam mê của bản thân và tìm ra các cơ hội đầu tư và cũng là một case study để thấy được data science có tính ứng dụng mạnh thế nào.
 
+Nguồn data trong toàn series mình crawl từ trang web https://batdongsan.com.vn/, code và data mình có để trên github của mình, nếu bạn nào hứng thú thì có thể clone về nghịch thử. Trong series này mình sẽ không nói đến việc crawl data mà chủ yếu đề cập đến xử lý và phân tích số liệu.
 
 
 ```python
