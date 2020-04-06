@@ -47,6 +47,7 @@ print(df.shape)
 **Phần này xử lý dữ liệu giống trong kỳ trước:**
 
 Chúng ta đã là được các việc sau:
+
     - bỏ 1 số trường không dùng
     - đổi tên trường
     - tách giá trị số từ chuỗi
