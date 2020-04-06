@@ -65,7 +65,7 @@ df.columns
 
 
 
-## Bước 1: TRANFORM DATA
+## Bước 1: Data preprocessing
 
 Do dữ liệu đã được clean nên chúng ta đến thẳng bước tranform data để chuẩn bị training model machine learning
 
@@ -255,7 +255,7 @@ for col in scale_data.columns:
 ```
 
 
-## Bước 2 : TRAINING MODEL
+## Bước 2 : MODEL
 
 Sau khi dữ liệu đã sạch sẽ thơm tho thì chún ta có thể đem đi xào nấu thỏa thích với đủ thể loại thuật toán machine learning
 
