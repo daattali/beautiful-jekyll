@@ -519,7 +519,7 @@ for r in range(len(axs)):
 
 - giá trị cao (max = 1) cho sự đồng biến 
 - giá trị thấp (min =-1) cho nghịch biến 
-- và bàng quang khi = 0.
+- và bàng quan khi = 0.
 
 
 
