@@ -45,18 +45,7 @@ layout: base
           {% else %}
             {{ page.tags | join: ", " }}
           {% endif %}
-          
-          <!-- add here -->
-          {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
-                </div>
-            </div>
-          {%- endfor -%}
-          <!-- end add here -->
-          
+                  
         </div>
       {% endif %}
 
