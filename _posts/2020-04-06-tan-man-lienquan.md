@@ -28,11 +28,13 @@ chiếm lợi thế so với đối thủ thậm chí là cân team với mega k
 
 ## Tiền không chưa đủ
 
-Nhưng làm gì để nhiều tiền, chúng ta phải farm. Nhưng tôi cũng farm từ đầu game tới cuối game mà sao tiền bằng nửa thằng cùng lane team địch có lẽ do kĩ năng kém nên mới vậy ừ là do kỹ năng. Nhưng còn tôi nhiều tiền hơn thằng kia mà solo không lại, con đó hack à, không nó không hack đâu kỹ năng bạn cũng ổn nhưng bạn gặp con tướng mới rồi, nó là con cưng của garena được buff ngập mặt, bạn hơn có món đồ thì nó chấp bạn 2 mạng. Thế mới biết tiền không chưa đủ cần có quan hệ. 
+Nhưng làm gì để nhiều tiền, chúng ta phải farm. Nhưng tôi cũng farm từ đầu game tới cuối game mà sao tiền bằng nửa thằng cùng lane team địch có lẽ do kĩ năng kém nên mới vậy ừ là do kỹ năng. Nhưng còn tôi nhiều tiền hơn thằng kia mà solo không lại, con đó hack à, không nó không hack đâu kỹ năng bạn cũng ổn nhưng bạn gặp con tướng mới rồi, nó là con cưng của garena được buff ngập mặt, bạn hơn có món đồ thì nó chấp bạn 2 mạng. Thế mới biết tiền không chưa đủ. 
 
 ## Một mình không bằng tập thể
 
 Nhiều lúc xem ra mình cũng đã làm tốt các điều trên rồi mà cuối cùng vẫn thua, nhìn lại mới thấy thành viên nhiều tiền thứ hai trong team chỉ bằng một nửa của mình. Một mình xanh chỉ được nhất thời, dù có giết bao mạng chăng nữa mà team feed thì cũng không thể đấu lại đối thủ, đâu thể mega kill mãi được. Vậy nên muốn chiến thắng phải là cả team cùng đồng lòng, một người thọt thì cũng không xong. Lúc đấy mới thấm thía cảnh đơn độc chiến đấu, biết trước thì đã xây dựng đội ngũ lớn mạnh hơn.
+
+
 
 Viết lan man quá. khi nào rảnh viết tiếp 2 giờ đêm rồi.
 
