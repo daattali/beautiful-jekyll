@@ -26,7 +26,6 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 ### Kỹ năng
 
 **Python:**
-
 - Xử lý dữ liệu: Pandas, numpy
 - machine learning: scikit-learn, keras
 - visualization: matplotlib, seaborn
@@ -34,11 +33,9 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 - Lập trình hướng đối tượng
     
 **PL_SQL:**
-
 - Thành thạo các kỹ năng cần thiết để ETL data như tạo package, procedure, function, kết hợp đa luồng.
     
 **BI:**
-    
 - Data studio, đã làm nhiều webapp kết hợp với BI
     
 -----------------
