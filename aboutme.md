@@ -21,6 +21,21 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 
 1. Cử nhân khoa Hệ Thống Thông Tin Quản Lý - ĐH Ngân Hàng tp.HCM
 2. Cử nhân khoa Tài Chính-Ngân Hàng ĐH Ngân Hàng tp.HCM
+
+-----------------
+### Kỹ năng
+Python: 
+    - Xử lý dữ liệu: Pandas, numpy
+    - machine learning: scikit-learn, keras
+    - visualization: matplotlib, seaborn
+    - Thu thập dữ liệu: selenium, beautifulsoup, request-html
+    - Lập trình hướng đối tượng
+    
+PL_SQL:
+    - Thành thạo các kỹ năng cần thiết để ETL data như tạo package, procedure, kết hợp đa luồng.
+    
+BI: 
+    - Data studio, đã làm nhiều webapp kết hợp với BI
     
 -----------------
 ### Sự nghiệp :
