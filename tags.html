@@ -23,7 +23,7 @@ title: 'Tag Series'
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
             <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}} : {{- post.subtitle -}}</a>
+                <a href="{{ post.url | relative_url }}">{{- post.title -}} &nbsp;:&nbsp;{{- post.subtitle -}}</a>
                 <div class="entry-date">
                     <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
                 </div>
