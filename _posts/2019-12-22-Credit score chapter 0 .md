@@ -7,7 +7,7 @@ tags: [credit scorecard]
 
 
 Trước khi vào bài viết đầu tiên về credit scorecard em xin gửi lời cảm ơn chân thành nhất tới anh Lê Việt Hoàng - 
-người anh, người xếp , người đã tin tưởng trao cho em mọi điều kiện cũng như cơ hội trong công việc. 
+người anh, người sếp , người đã tin tưởng trao cho em mọi điều kiện cũng như cơ hội trong công việc. 
 
 Một trong các mục đích em viết series này cũng là mong được góp chút tài liệu để phát triển team ngày 
 càng lớn mạnh hơn nữa. Chúc anh và các anh chị trong "Hội ăn hại" luôn giữ vững được tinh thần làm việc cũng 
