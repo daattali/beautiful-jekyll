@@ -35,7 +35,7 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
     
 **PL_SQL:**
 
-- Thành thạo các kỹ năng cần thiết để ETL data như tạo package, procedure, kết hợp đa luồng.
+- Thành thạo các kỹ năng cần thiết để ETL data như tạo package, procedure, function, kết hợp đa luồng.
     
 **BI:**
     
