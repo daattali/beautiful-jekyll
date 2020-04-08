@@ -162,10 +162,6 @@ Với cơ chế phân lớp đễ hiểu và các hàm kích hoạt cơ bản (a
 
 ![image.png](https://miro.medium.com/max/1280/0*gKOV65tvGfY8SMem.png)
 
-**Hàm sigmoid:**
-
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/sigmoid.png)
-
 
 
 Về chi tiết cụ thể về cơ chế hoạt động của Logistic regression và hàm activation sigmoid thì mời các bạn các bạn đón đọc trang web rất uy tín dưới đây
