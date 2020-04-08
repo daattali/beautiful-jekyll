@@ -227,6 +227,7 @@ Want your website featured here? [Contact me](https://deanattali.com/aboutme#con
 | [sharepointoscar.github.io](http://sharepointoscar.github.io) | Oscar Medina | Independent Hacker |
 | [ocram85.com](https://ocram85.com) | Marco Blessing | A personal blog about PowerShell and automation |
 | [khanna.cc](https://khanna.cc/) | Harry Khanna | Law and software |
+| [blog.divy.work](https://blog.divy.work/) | Divy Srivastava | High school student |
 
 ## Advanced: Local development using Docker
 
