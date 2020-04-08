@@ -164,7 +164,7 @@ Với cơ chế phân lớp đễ hiểu và các hàm kích hoạt cơ bản (a
 
 **Hàm sigmoid:**
 
-$\sigma(x) = \frac{1}{1+e^{-x}}$
+\sigma(x) = \frac{1}{1+e^{-x}}
 
 
 Về chi tiết cụ thể về cơ chế hoạt động của Logistic regression và hàm activation sigmoid thì mời các bạn các bạn đón đọc trang web rất uy tín dưới đây
