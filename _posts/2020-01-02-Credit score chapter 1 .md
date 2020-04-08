@@ -15,8 +15,8 @@ Thí dụ minh họa là một dữ liệu về thông tin cơ bản cũng như 
 Bài toán được giải quyết dựa trên dữ liệu của 10000 khách hàng, bao gồm nhiều thông tin, các thông tin đã được biến đổi cũng như thay đổi tên trường để đảm bảo lý do bảo mật.
 
 Biến output : **label**
-- label = 1: khách hàng không thanh toán 
-- label = 0: khách hàng thanh toán
+- label = 1: khách hàng mục tiêu
+- label = 0: khách hàng bình thường
 
 
 Mục tiêu bài viết : 
@@ -190,9 +190,8 @@ IV là một trong những kỹ thuật hữu ích nhất để chọn các bi�
 
 Các bạn có thể tham khảo thêm về WOE và IV qua các bài viết dưới đây 
 
-https://medium.com/@sundarstyles89/weight-of-evidence-and-information-value-using-python-6f05072e83eb
-https://www.kaggle.com/pavansanagapati/weight-of-evidence-woe-information-value-iv
-
+<a href="https://medium.com/@sundarstyles89/weight-of-evidence-and-information-value-using-python-6f05072e83eb">medium.com</>a
+<a href="https://www.kaggle.com/pavansanagapati/weight-of-evidence-woe-information-value-iv">kaggle.com</>a
 
 -----------------------------
 
