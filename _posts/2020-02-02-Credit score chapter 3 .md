@@ -85,16 +85,6 @@ clf.fit(X_train, y_train)
 Trong bài này sẽ đề cập đến cách diễn giải và trình bày là chính, do vậy ta sẽ dùng mô hình LogisticRegression để làm ví dụ cho đơn giản
 
 
-```python
-pred = clf.predict(X_test)
-pred 
-```
-
-
-
-
-    array([0., 0., 0., ..., 0., 0., 0.])
-
 
 
 ## Dự báo với mô hình
@@ -107,6 +97,15 @@ phương thức predict cho ta kết quả đầu ra với nhãn cụ thể :
 Một cách dễ hiểu nếu kết quả là :
  - 0 tương ứng với khách hàng bình thường
  - 1 tương ứng với khách hàng mục tiêu
+ 
+```python
+pred = clf.predict(X_test)
+pred 
+```
+
+
+    array([0., 0., 0., ..., 0., 0., 0.])
+
 
 Phân bổ của các lớp thực tế:
 
