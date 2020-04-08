@@ -4,7 +4,7 @@ layout: null
 
 @import url("pygment_highlights.css");
 /* --- my --- */
-.kn{
+code{
   font-size:14px;
  }
 /* --- General --- */
