@@ -52,8 +52,10 @@ object_cols = list(df.dtypes[df.dtypes == 'object'].index)
 
 # OneHot
 onehot = OneHotEncoder(handle_unknown='ignore')
-onehot_data = pd.DataFrame(onehot.fit_transform(df[object_cols]).toarray(),
-                           columns=onehot.get_feature_names(object_cols)) # đặt columns names
+onehot_data = pd.DataFrame(
+    onehot.fit_transform(df[object_cols]).toarray(),
+    columns=onehot.get_feature_names(object_cols)
+)
 
 # scale and transform data 
 scaler = MinMaxScaler(feature_range=(-1,1))
