@@ -170,8 +170,8 @@ $$\sigma(x) = \frac{1}{1+e^{-x}}$$
 Về chi tiết cụ thể về cơ chế hoạt động của Logistic regression và hàm activation sigmoid thì mời các bạn các bạn đón đọc trang web rất uy tín dưới đây
 
 
-https://machinelearningcoban.com/2017/01/27/logisticregression/
 
+<a href="https://machinelearningcoban.com/2017/01/27/logisticregression/">machinelearningcoban.com</a>
 
 ## Weight of Evidence(WOE)
 
@@ -190,8 +190,8 @@ IV là một trong những kỹ thuật hữu ích nhất để chọn các bi�
 
 Các bạn có thể tham khảo thêm về WOE và IV qua các bài viết dưới đây 
 
-<a href="https://medium.com/@sundarstyles89/weight-of-evidence-and-information-value-using-python-6f05072e83eb">medium.com</>a
-<a href="https://www.kaggle.com/pavansanagapati/weight-of-evidence-woe-information-value-iv">kaggle.com</>a
+<a href="https://medium.com/@sundarstyles89/weight-of-evidence-and-information-value-using-python-6f05072e83eb">medium.com</a>
+<a href="https://www.kaggle.com/pavansanagapati/weight-of-evidence-woe-information-value-iv">kaggle.com</a>
 
 -----------------------------
 
