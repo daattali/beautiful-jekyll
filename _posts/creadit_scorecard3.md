@@ -144,7 +144,8 @@ plt.show()
 ```
 
 
-![png](output_12_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_1.png)
+
 
 
 Nhìn vào pie chart ta thấy được tỷ lệ giữa 2 class 0, 1 trong kết quả dự báo của tệp test có sự khác biệt so với thực tế. 
@@ -197,7 +198,7 @@ plt.show()
 
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_1.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_2.png)
 
 
 
@@ -287,7 +288,7 @@ for i, c in enumerate([0.5, 0.2]) :
 
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_2.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_3.png)
 
 
 
@@ -346,7 +347,7 @@ plt.show()
 ```
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_3.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_4.png)
 
 
 
@@ -400,7 +401,7 @@ for ax, y, title in zip(axs,[prob,score],['dải xác xuất','dải score']):
 ```
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_4.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_5.png)
 
 
 
@@ -428,7 +429,7 @@ score_PN_rate()
 
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_5.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_6.png)
 
 
 
