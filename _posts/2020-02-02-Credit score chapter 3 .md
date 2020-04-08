@@ -190,7 +190,10 @@ Chúng ta cần làm quen với các khái niệm :
 
 
 ```python
-cr = pd.crosstab( y_test, pred, rownames=['Actual'], colnames=['Predicted'])
+cr = pd.crosstab(y_test, 
+                pred, 
+                rownames=['Actual'], 
+                colnames=['Predicted'])
 sns.heatmap(cr, fmt='', annot=True, cmap="YlGnBu")
 plt.show()
 ```
