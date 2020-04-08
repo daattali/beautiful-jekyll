@@ -5,7 +5,7 @@ layout: null
 @import url("pygment_highlights.css");
 
 /* --- my config --- */
-.language-python highlighter-rouge{
+div.highlight{
   font-size: 14px;
  }
 /* --- General --- */
