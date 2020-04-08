@@ -1,3 +1,10 @@
+---
+layout: post
+title: Credit scorecard chapter 3
+subtitle: Evaluation
+tags: [credit scorecard]
+---
+
 Ở bài trước chúng ta đã có thể xây dựng được mô hình scorecard rồi. Nhưng như vậy là chưa đủ, chúng ta cần trình bày, diễn giải nó một cách khoa học, và dễ hiểu để thuyết phục công ty đưa mô hình vào vận hành.
 
 Do vậy bài này mình sẽ nói về 1 số cách để diễn giải và trình mô hình cho sát với vận hành, với một số đầu mối trong bài các bạn hoàn toàn có thể tự build cho mình các report thật pro. 
