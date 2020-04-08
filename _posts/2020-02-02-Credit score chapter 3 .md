@@ -188,11 +188,14 @@ confusion_matrix: thể hiện có bao nhiêu dữ liệu được dự đoán v
 
 
 
-**Accuracy:** = TP+TN / TP+TN+FP+FN  (Tỷ lệ dự đoán đúng )
+**Accuracy:** = TP+TN / TP+TN+FP+FN  
+    (Tỷ lệ dự đoán đúng )
 
-**Recall:** = TP / TP+FN  (Tỉ lệ Dự đoán true positive trong số những điểm thực sự là positive (TP + FN).)
+**Recall:** = TP / TP+FN  
+    (Tỉ lệ Dự đoán true positive trong số những điểm thực sự là positive (TP + FN).)
 
-**Precision:** = TP / TP+FP  (Tỷ lệ số điểm true positive trong số những điểm được phân loại là positive (TP + FP))
+**Precision:** = TP / TP+FP  
+    (Tỷ lệ số điểm true positive trong số những điểm được phân loại là positive (TP + FP))
 
 
 
