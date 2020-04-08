@@ -14,8 +14,8 @@ Thí dụ minh họa là một dữ liệu về thông tin cơ bản cũng như 
 Bài toán được giải quyết dựa trên dữ liệu của 10000 khách hàng, bao gồm nhiều thông tin, các thông tin đã được biến đổi cũng như thay đổi tên trường để đảm bảo lý do bảo mật.
 
 Biến output : **label**
-- label = 1: khách hàng không thanh toán 
-- label = 0: khách hàng thanh toán
+- label = 1: khách hàng mục tiêu
+- label = 0: khách hàng bình thường
 
 
 Mục tiêu gồm : 
