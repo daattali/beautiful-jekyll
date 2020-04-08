@@ -3,8 +3,10 @@ layout: null
 ---
 
 @import url("pygment_highlights.css");
-
-
+/* --- my --- */
+.kn{
+  font-size:14px;
+ }
 /* --- General --- */
 body {
   font-family: 'Lora', 'Times New Roman', serif;
