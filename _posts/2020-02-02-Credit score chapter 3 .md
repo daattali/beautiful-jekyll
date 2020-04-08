@@ -317,12 +317,12 @@ fpr, tpr, thresholds = roc_curve(y_test.tolist(), prob, pos_label = None)
 for i in extra:
     extrax.append(fpr[i])
     extray.append(tpr[i])
-    print(f"threshold: %.2f, FPR: %.2f, TPR: %.2f" %(thresholds[i], fpr[i], tpr[i]))
+    print(f"threshold:%.2f, FPR:%.2f, TPR:%.2f"%(thresholds[i],fpr[i],tpr[i]))
 ```
 
-    threshold: 0.45, FPR: 0.06, TPR: 0.31
-    threshold: 0.13, FPR: 0.45, TPR: 0.75
-    threshold: 0.07, FPR: 0.85, TPR: 0.97
+    threshold:0.45, FPR:0.06, TPR:0.31
+    threshold:0.13, FPR:0.45, TPR:0.75
+    threshold:0.07, FPR:0.85, TPR:0.97
 
 
 Vẽ ROC curve và thể hiện 3 ví dụ trên biểu đồ:
@@ -340,8 +340,12 @@ plt.title('Receiver operating characteristic')
 plt.legend(loc="lower right")
 for i in extra:
     plt.plot(fpr[i],tpr[i],'bo')
-    plt.plot((0,fpr[i]),(tpr[i],tpr[i]), color='k', linestyle='dashed', linewidth=1, alpha=0.2)    
-    plt.plot((fpr[i],fpr[i]),(0,tpr[i]), color='k', linestyle='dashed', linewidth=1, alpha=0.2)
+    plt.plot((0,fpr[i]),(tpr[i],tpr[i]), 
+            color='k', linestyle='dashed', 
+            linewidth=1, alpha=0.2)    
+    plt.plot((fpr[i],fpr[i]),(0,tpr[i]), 
+            color='k', linestyle='dashed', 
+            linewidth=1, alpha=0.2)
     plt.text(fpr[i]-0.02 ,tpr[i]+0.02, 'threshold: %.2f'%(thresholds[i]))
 plt.yticks(list(plt.xticks()[0]) + extray)
 plt.xticks(list(plt.xticks()[0]) + extrax)
@@ -399,7 +403,7 @@ for ax, y, title in zip(axs,[prob,score],['dải xác xuất','dải score']):
                  ax = ax)
     (mu, sigma) = norm.fit(y)
     ax.set_title('Phân phối '+title)
-    ax.legend(['Normal dist. ($\mu=$ {:.2f} and $\sigma=$ {:.2f} )'.format(mu,sigma)])
+    ax.legend(['Normal dist.($\mu=$ {:.2f} and $\sigma=$ {:.2f} )'.format(mu,sigma)])
 ```
 
 
@@ -448,8 +452,10 @@ nbin = 5
 df_probs = pd.DataFrame({'score':score, 'y':y_test})
 cuts = pd.qcut(score, nbin, precision=5).unique()
 for i,cut in enumerate(cuts.categories):
-    df_probs.loc[(df_probs.score > cut.left) &(df_probs.score <= cut.right),'bin'] = i+1
-    df_probs.loc[(df_probs.score > cut.left) &(df_probs.score <= cut.right),'bin_value'] = cut
+    df_probs.loc[(df_probs.score > cut.left) &
+                (df_probs.score <= cut.right), 'bin'] = i+1
+    df_probs.loc[(df_probs.score > cut.left) &
+                (df_probs.score <= cut.right), 'bin_value'] = cut
 count_g = df_probs.groupby('bin').count()['y']
 total = df_probs.groupby('bin').sum()['y']
 df_range = pd.concat([count_g,total], axis = 1)
