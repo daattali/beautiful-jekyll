@@ -175,12 +175,10 @@ Chúng ta cần làm quen với các khái niệm :
 - **FP** - False Positive: Số lượng dự đoán là 1 và thực tế là 1 
 - **TN** - True Negative: Số lượng dự đoán là 0 và thực tế là 0 
 - **FN** - False Negative: Số lượng dự đoán là 0 và thực tế là 1 
-
-
 - **FPR** - False Positive Rate: Tỷ lệ dự báo sai biến Positive
 - **FNR** - False Negative Rate: Tỷ lệ bỏ sót biến Positive
 
-confusion_matrix: thể hiện có bao nhiêu dữ liệu được dự đoán vào class nào và class thực sự của chúng.
+-**confusion_matrix**: thể hiện có bao nhiêu dữ liệu được dự đoán vào class nào và class thực sự của chúng.
 
 
 
