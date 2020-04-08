@@ -4,8 +4,11 @@ layout: null
 
 @import url("pygment_highlights.css");
 
+/* --- my config --- */
+.language-python highlighter-rouge{
+  font-size: 14px;
+ }
 /* --- General --- */
-
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
