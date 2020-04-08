@@ -124,7 +124,9 @@ plt.show()
 ```
 
 
-![png](output_10_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_0.png)
+
+
 
 
 Phân bổ của các lớp theo dự báo:
@@ -194,7 +196,10 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_1.png)
+
+
 
 
 #### Các chỉ số:
@@ -281,7 +286,10 @@ for i, c in enumerate([0.5, 0.2]) :
 ```
 
 
-![png](output_21_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_2.png)
+
+
 
 
 Giá trị đầu ra của hàm sigmoid luôn nằm trong khoẳng từ 0 đến 1 nếu ta lấy ngưỡng(threshold) là 0.5 và chia dữ liệu làm 2 phần 
@@ -338,7 +346,8 @@ plt.show()
 ```
 
 
-![png](output_25_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_3.png)
+
 
 
 **AUC** - Area Under the Curve là diện tích nằm dưới ROC curve cũng là một tiêu chuẩn đánh giá mô hình, giá trị này càng cao thì mô hình càng tốt. 
@@ -391,7 +400,8 @@ for ax, y, title in zip(axs,[prob,score],['dải xác xuất','dải score']):
 ```
 
 
-![png](output_30_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_4.png)
+
 
 
 **Phân phối của dải score cân xứng hơn hẳn, sẽ phù hợp cho ứng dụng, hỗ trợ vận hành hơn dải xác xuất.**
@@ -417,7 +427,10 @@ score_PN_rate()
 ```
 
 
-![png](output_32_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_5.png)
+
+
 
 
 ### Bước 2: Chuyển dải score về các bin:
@@ -617,7 +630,9 @@ axs[1].grid(which='major', axis = 'y', linestyle='--',color = '#bebebe')
 ```
 
 
-![png](output_37_0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_7.png)
+
 
 
 Với cách thức trên thì việc đưa mô hình vào vận hành là rất thuận tiện rồi. Bài kỳ này xin kết thúc tại đây. 
