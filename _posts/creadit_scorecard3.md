@@ -10,7 +10,8 @@ Mục tiêu gồm :
     2. Các cách triển khai mô hình 
 
 
-![Crepe](intro.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_intro.png)
+
 
 
 
@@ -171,7 +172,8 @@ confusion_matrix: thể hiện có bao nhiêu dữ liệu được dự đoán v
 
 
 
-![Crepe](confusion2.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_confusion.png)
+
 
 
 **Accuracy:** = TP+TN / TP+TN+FP+FN  (Tỷ lệ dự đoán đúng )
