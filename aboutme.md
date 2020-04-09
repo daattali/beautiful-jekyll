@@ -3,6 +3,9 @@ layout: page
 title: About me
 subtitle: 
 ---
+    
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg)
+
 
 ### Thông tin cơ bản
 
