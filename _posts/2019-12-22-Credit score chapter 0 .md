@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Credit scorecard Intro
-subtitle: Credit scorecard chapter 0
+title: Credit Scorecard Intro
+subtitle: Credit Scorecard chapter 0
 tags: [Credit Scorecard]
 ---
 
