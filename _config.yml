@@ -26,6 +26,7 @@ navbar-links:
 #    - Githuh: "https://github.com/minmax49"
 #    - Facebook: "https://www.facebook.com/Minh4996"
   Series: "tags"
+    - Index2: "index2"
   Author's site: "https://sites.google.com/view/nguyen-quang-minh"
   
 # Image to show in the navigation bar - image must be a square (width = height)
