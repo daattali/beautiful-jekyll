@@ -22,6 +22,12 @@ Chuyện là trước đây vài năm mình có tìm kiếm một công cụ nha
 
 Sau khi tìm kiếm trên mạng 1 hồi thì cuối cùng giải pháp từ chính cái anh mà mình đang dùng để tìm kiếm - Google. Với công thức gồm có **Google Spreadsheet** + **Google Apps Script** + **Google Data studio** mình đã build Webapp vượt qua mong đợi của mình về cả tính năng và giao diện.
 
+**Google Spreadsheet** thì chắc các bạn ai cũng biết rồi mình sẽ không giới thiệu nữa. 
+
+**Google Apps Script** là công cụ viết mã kịch bản của Google sử dụng ngôn ngữ Javascript nó giống như VBA của excel vậy.
+
+**Google Data studio** là công cụ BI google, tuy rằng không lâu đời như các công cụ BI khác nhưng nó có tính tương thích cao vì cùng một nhà với các công cụ trên. Do vậy build dashboard, report bằng google data studio phải nói là tuyệt cú mèo
+
 
 
 ## Ý tưởng Một web app đơn giản
