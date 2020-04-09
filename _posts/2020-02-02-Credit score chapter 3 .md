@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Evaluation and deploy
 subtitle: Credit Scorecard chapter 3
 tags: [Credit Scorecard]
