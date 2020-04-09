@@ -11,11 +11,8 @@ title: 'credit scorecard'
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {%- for tag in tags_list -%}
-    {%- if tag == "credit scorecard" -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-
+   {%- if tag == "credit scorecard" -%}
    <div id="full-tags-list">
-
     <div class="post-list">
         {%- for post in site.tags[tag] -%}
             <article class="post-preview">
