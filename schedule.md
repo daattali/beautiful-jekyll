@@ -34,3 +34,9 @@ The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">h
 |April 17, 2020 (<a href="https://youtu.be/BiycX6_hH_s" target="_blank">YouTube</a>) | | WSMC 2018 Team <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194930/algebra8.pdf" target="_blank">Algebra</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194929/geometry8.pdf" target="_blank">Geometry</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194931/probability8.pdf" target="_blank">Probability</a>, <a href="https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/194928/potpourri8.pdf" target="_blank">Potpourri</a>
 |April 22, 2020 (<a href="https://youtu.be/x1PimNXBYRY" target="_blank">YouTube</a>) | Geometric Proportions stretch from homework packet |
 |April 24, 2020 (<a href="https://youtu.be/pbifbWnKHrA" target="_blank">YouTube</a>) | | <a href="https://newport-math-club.nyc3.digitaloceanspaces.com/past-kpmt/kpmt2018-19.zip" target="_blank">18-19 KPMT 7-8 Individual</a>
+|April 29, 2020 (<a href="https://youtu.be/0b1MSFpfCCw" target="_blank">YouTube</a>) | Functions stretch from homework packet |
+|May 6, 2020 (<a href="https://youtu.be/TtboETgyLH0" target="_blank">YouTube</a>) | Work stretch from homework packet |
+|May 13, 2020 (<a href="https://youtu.be/Ofj2kraH5ec" target="_blank">YouTube</a>) | Coordinate Geometry stretch from homework packet |
+|May 20, 2020 (<a href="https://youtu.be/yEjp7it7m_A" target="_blank">YouTube</a>) | Systems of Equations stretch from homework packet |
+|May 27, 2020 (<a href="https://youtu.be/NSmgl2DiH6A" target="_blank">YouTube</a>) | Sequences stretch from homework packet |
+|June 3, 2020 (<a href="https://youtu.be/zOMAPJp1mIw" target="_blank">YouTube</a>) | Similarity stretch from homework packet |
