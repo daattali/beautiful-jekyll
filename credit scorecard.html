@@ -5,10 +5,11 @@ title: 'credit scorecard'
 
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-        {{- tag | last -}}{%- unless forloop.first -%},{%- endunless -%}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
 {%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+{%- assign tags_list = site_tags | split:',' | sort desc -%}
+
 
 {%- for tag in tags_list -%}
    {%- if tag == "credit scorecard" -%}
