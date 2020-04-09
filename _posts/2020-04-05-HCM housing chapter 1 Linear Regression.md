@@ -13,33 +13,6 @@ Bài này mình sẽ nói thêm 1 chút về cách xử lý dữ liệu cũng nh
 
 Let' go
 
-## Load data:
-
-
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt 
-import seaborn as sns
-import warnings
-import matplotlib as mpl
-warnings.filterwarnings("ignore", category=FutureWarning)
-
-
-mpl.rc('axes', labelsize=8)
-mpl.rc('xtick', labelsize=8)
-mpl.rc('ytick', labelsize=8)
-%matplotlib inline
-```
-
-
-```python
-df = pd.read_csv('data/ban-nha-rieng-tp-hcm.csv', 
-                 encoding='utf-16')
-print(df.shape)
-```
-
-    (17737, 24)
 
 
 ## Bước 1 : Clean data
@@ -52,64 +25,6 @@ Chúng ta đã làm được các việc sau:
     - đổi tên trường
     - tách giá trị số từ chuỗi
 
-
-```python
-# bỏ 1 số trường không dùng
-df.drop(['Loại tin rao', 'uptime', 'email', 'Mã tin đăng',
-         'long', 'lat','Loại hình tin đăng', 'Ngày đăng', 'Ngày hết hạn',
-         'title','url','Địa chỉ','Hướng nhà','Hướng ban công'],
-         axis=1, inplace=True)
-
-# đổi tên trường
-df.rename(columns = {
-                     'Số tầng': 'floors',
-                     'Số phòng ngủ': 'bedrooms',
-                     'Số toilet': 'toilets',
-                     'Mặt tiền': 'facade',
-                     'Đường vào': 'road_wide',
-                     'Nội thất': 'furniture',
-                     }, 
-          inplace=True)
-
-# tách giá trị số từ chuỗi
-df['price_unit'] = [p.split(' ')[1] for p in df['price']]
-df['price'] = [p.split(' ')[0] for p in df['price']]
-df['area_unit'] = [p.split(' ')[1] for p in df['area']]
-df['area'] = [p.split(' ')[0] for p in df['area']]
-
-df = df[(df['price_unit'] == 'tỷ') & (df['area_unit'] == 'm²')]
-df['price'] = df['price'].astype(float)
-df['area'] = df['area'].astype(float)
-
-#df['p_m2'] = df['price']*1000/df['area']
-
-converts = ['floors','bedrooms', 'facade', 'road_wide']
-def find_number(s):
-    if s != 'none':
-        return float(s[: s.find('(')].replace(',','.'))
-    else:
-        return np.nan
-    
-for col in converts:
-    df[col].fillna('none', inplace=True)
-    df[col] = [find_number(s) for s in df[col]]
-    
-df = df[(df['area'] < 200) & (df['price'] < 50)]
-
-df = df[(df['facade'] < 50) & (df['toilets'] < 10) &  (df['road_wide'] < 50)]
-
-df.reset_index(inplace=True, drop=True)
-df.drop(['price_unit','area_unit'],
-         axis=1, inplace=True)
-
-df = df[~df['district'].isin(['Hóc Môn','Bình Chánh','Cần Giờ', 'Củ Chi'])]
-
-```
-
-
-```python
-df.head()
-```
 
 
 
@@ -221,12 +136,6 @@ df.head()
 Nhưng vẫn còn 1 trường là 'furniture' chúng ta chưa xử lý, theo ý kiến cá nhân thì giá BDS cũng sẽ được tác động từ nội thất khá nhiều nên là chúng ta vẫn nên xử lý biến này !
 
 
-```python
-print('values :', len(df['furniture'].unique()), end='\n\n')
-print(df[['furniture']].info(), end='\n')
-print(df['furniture'].value_counts().head())
-```
-
     values : 833
     
     <class 'pandas.core.frame.DataFrame'>
@@ -258,19 +167,6 @@ Một cách tốt hơn nữa là chúng ta sẽ phân tích cấu trúc chuỗi 
 Cách này thì mình nghĩ sẽ giữ được nhiều thông tin hơn nên các bạn có cơ hội thì làm thử nhé, mình làm cơ bản cho nhanh đã
 
 
-```python
-df['furniture'].fillna(0, inplace=True)
-df.loc[df['furniture'] != 0, 'furniture'] = 1
-df['furniture'] = df['furniture'].astype(int)
-```
-
-
-```python
-df['furniture'].head()
-```
-
-
-
 
     0    1
     1    1
@@ -284,16 +180,6 @@ df['furniture'].head()
 ### Xử lý missing values
 
 
-```python
-missing = pd.concat(
-    [df.isna().sum()*100/len(df), df.isna().sum()], 
-    axis=1
-)
-missing.columns = ['%null', '#null']
-missing = missing[missing['#null'] >0].sort_values('#null')
-print( 'Missing values: ')
-print(missing)
-```
 
     Missing values: 
                  %null  #null
@@ -308,13 +194,6 @@ Với dữ liệu numeric có một số cách để xử lý dữ liệu missin
 Vậy chúng ta hãy cùng thử nghiệm 1 số phương pháp trên để tìm ra phương án tốt nhất.
 
 Bộ dữ liệu thay thế giá trị missing = 0:
-
-
-```python
-df0 = df.fillna(0)
-df0.head(3)
-```
-
 
 
 
@@ -397,13 +276,6 @@ df0.head(3)
 Bộ dữ liệu thay thế giá trị missing = median:
 
 
-```python
-for col in missing.index:
-    df[col].fillna(df[col].median(), inplace=True)
-df.head(3)
-```
-
-
 
 
 <div>
@@ -483,33 +355,12 @@ df.head(3)
 
 
 
-```python
-df = df[df['district'] == 'Thủ Đức']
-df.drop(['district', 'street'], axis=1, inplace=True)
-```
 
 ##  Bước 2 : Visualization
 
 
 Xem phân phối của các biến:
 
-
-```python
-from scipy.stats import norm
-
-cols, rows = 2,4
-fig, axs = plt.subplots(nrows=rows, ncols=cols, figsize=(12,15))
-fig.subplots_adjust(wspace=0.15, hspace=0.25)
-cols = np.array(df.columns).reshape(rows, cols)
-for r in range(len(axs)):
-    for c in range(len(axs[r])):
-        sns.distplot(df[cols[r,c]],
-                    fit=norm,
-                    ax = axs[r,c])
-        (mu, sigma) = norm.fit(df[cols[r,c]])
-        axs[r,c].legend(['Normal dist. ($\mu=$ {:.2f} and $\sigma=$ {:.2f} )'.format(mu, sigma)],loc='best')
-
-```
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_1.png)
 
@@ -523,23 +374,9 @@ for r in range(len(axs)):
 
 
 
-```python
-#correlation matrix
-corrmat = df.corr()
-f, ax = plt.subplots(figsize=(10, 8))  
-sns.heatmap(corrmat, vmax=.8, annot=True);
-```
-
-
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_2.png)
 
-
-
-```python
-top_features = np.array(corrmat.index[abs(corrmat["price"])>0.5])
-top_features
-```
 
 
 
@@ -551,32 +388,12 @@ top_features
 Top các thuộc tính có tương quan cao với biến price:
 
 
-```python
-top_features = list(corrmat.index[abs(corrmat["price"])>0.5])
-f, ax = plt.subplots(figsize=(5, 4))  
-sns.heatmap(df[top_features].corr(), vmax=.8, annot=True)
-top_features.remove('price')
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_3.png)
 
 
 
-```python
-cols, rows = 2,2
-fig, axs = plt.subplots(nrows=rows, ncols=cols, figsize=(12,8))
-labels = np.array(top_features).reshape(rows, cols)
-for r in range(len(axs)):
-    for c in range(len(axs[r])):
-        sns.regplot(x=labels[r,c], 
-                y='price',
-                data=df,
-                lowess=True,
-                marker=".",
-                scatter_kws={'alpha':0.3, 'color':'grey'},
-                ax=axs[r,c])
-```
 
 
 
@@ -584,24 +401,9 @@ for r in range(len(axs)):
 
 
 
-```python
-from sklearn.model_selection import train_test_split
-
-X = df.drop(['price'], axis=1)
-y = df['price']
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=15)
-```
 
 ### Hồi quy tuyến tính với phương pháp OLS
 
-
-```python
-import statsmodels.api as sm      
-X_train1 = sm.add_constant(X_train)
-lm = sm.OLS(y_train, X_train1).fit()
-lm.summary()
-```
 
 
 <table class="simpletable">
@@ -635,6 +437,7 @@ lm.summary()
 </tr>
 </table>
 
+
 <table class="simpletable">
 <tr>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
@@ -665,6 +468,7 @@ lm.summary()
 </tr>
 </table>
 
+
 <table class="simpletable">
 <tr>
   <th>Omnibus:</th>       <td>10.497</td> <th>  Durbin-Watson:     </th> <td>   2.166</td>
@@ -681,19 +485,6 @@ lm.summary()
 </table>
 
 
-
-
-```python
-ypred = lm.predict(sm.add_constant(X_test))
-ytrain = lm.predict(sm.add_constant(X_train))
-_, ax = plt.subplots(figsize=(12,6))
-df_pred = pd.DataFrame({'y_pred':ypred, 'y_true': y_test})
-df_pred.sort_values('y_true', inplace=True)
-df_pred.reset_index(drop=True, inplace=True)
-df_pred.plot(ax=ax)
-plt.title('Kết quả dự đoán giá nhà theo mô hình hồi quy tuyến tính')
-plt.show()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_5.png)
@@ -721,23 +512,6 @@ plt.show()
     
 
 
-```python
-time = np.arange(0, 15, 0.1)
-values1 = np.sin(time)
-values2 = np.random.uniform(-0.2, 0.2, len(time))
-values3 = np.sort(values2)
-fig, axs = plt.subplots(nrows=1,ncols=3, figsize=(12,3))
-for ax, value in zip(axs,[values1,values3,values2]):
-    ax.set_ylim(-1,1)
-    ax.axhline(y=0, color='k')
-    ax.set_xlabel('time')
-    ax.scatter(time, value)
-axs[0].set_title('Có tương quan giữa các nhiễu')                 
-axs[1].set_title('Có tương quan giữa các nhiễu')
-axs[2].set_title('Không có tương quan giữa các nhiễu')
-plt.show()
-```
-
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_6.png)
@@ -749,10 +523,6 @@ plt.show()
   Là chênh lệch giữa giá trị thực và giá trị dự báo nhằm đánh giá chất lượng hay sự phù hợp của mô hình dự báo.
 
 
-```python
-print('rmse on test:', rmse(y_test.values, ypred.values))
-print('rmse on train:', rmse(y_train.values, ytrain.values))
-```
 
     rmse on test: 1.2007801545340961
     rmse on train: 1.2521709451245022
