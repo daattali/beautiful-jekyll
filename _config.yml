@@ -20,7 +20,7 @@ description: Chia sẻ, tiến bộ!
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "https://minmax49.github.io/"
+#  Home: "https://minmax49.github.io/"
   About Me: "aboutme"
 #  Resources:
 #    - Githuh: "https://github.com/minmax49"
