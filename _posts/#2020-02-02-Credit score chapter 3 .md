@@ -23,63 +23,7 @@ Mục tiêu gồm :
 
 
 
-```python
-import numpy as np
-import pandas as pd
-
-import seaborn as sns
-import matplotlib.pyplot as plt
-%matplotlib inline
-
-import warnings
-warnings.filterwarnings('ignore')
-```
-
 ## Đầu tiên build lại mô hình giống kỳ trước
-
-
-```python
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-```
-
-
-```python
-df = pd.read_csv('credit_data.csv')
-object_cols = list(df.dtypes[df.dtypes == 'object'].index)
-
-# OneHot
-onehot = OneHotEncoder(handle_unknown='ignore')
-onehot_data = pd.DataFrame(
-    onehot.fit_transform(df[object_cols]).toarray(),
-    columns=onehot.get_feature_names(object_cols)
-)
-
-# scale and transform data 
-scaler = MinMaxScaler(feature_range=(-1,1))
-df_num = df.drop(['label'], axis=1)._get_numeric_data()
-scale_data = scaler.fit_transform(df_num )
-scale_data = pd.DataFrame(scale_data, columns=df_num.columns)
-
-# tổng hợp dữ liệu đã được onehot 
-data = pd.concat([onehot_data, df.drop(object_cols,axis=1)],axis=1)
-
-# tổng hợp dữ liệu đã được scale 
-for col in scale_data.columns:
-    data[col] = scale_data[col]
-    
-# TRAINING MODEL
-X = data.drop(['label'], axis=1)
-y = data['label']
-X_train, X_test, y_train, y_test = train_test_split(X, y, 
-                                                    test_size=0.3,
-                                                    random_state = 15, 
-                                                    stratify = y)
-clf = LogisticRegression()
-clf.fit(X_train, y_train)
-```
 
 
 Trong bài này sẽ đề cập đến cách diễn giải và trình bày là chính, do vậy ta sẽ dùng mô hình LogisticRegression để làm ví dụ cho đơn giản
@@ -97,29 +41,12 @@ phương thức predict cho ta kết quả đầu ra với nhãn cụ thể :
 Một cách dễ hiểu nếu kết quả là :
  - 0 tương ứng với khách hàng bình thường
  - 1 tương ứng với khách hàng mục tiêu
- 
-```python
-pred = clf.predict(X_test)
-pred 
-```
-
 
     array([0., 0., 0., ..., 0., 0., 0.])
 
 
 Phân bổ của các lớp thực tế:
 
-
-```python
-sns.set_palette("Set3")
-fig, axs = plt.subplots(ncols=2,figsize=(12,4))
-sns.countplot(y_test, ax=axs[0])
-for x, y in enumerate(pd.value_counts(y_test)):
-    axs[0].text(x, y, str(y), fontsize=12)      
-pd.value_counts(y_test).plot.pie(autopct='%1.2f%%', ax=axs[1])  
-plt.title('Các class trong tệp thực tế')
-plt.show()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_0.png)
@@ -129,17 +56,6 @@ plt.show()
 
 Phân bổ của các lớp theo dự báo:
 
-
-```python
-sns.set_palette("Set2")
-fig, axs = plt.subplots(ncols=2,figsize=(12,4))
-sns.countplot(pred, ax=axs[0])
-for x, y in enumerate(pd.value_counts(pred)):
-    axs[0].text(x, y, str(y), fontsize=12)      
-pd.value_counts(pred).plot.pie(autopct='%1.2f%%', ax=axs[1])  
-plt.title('Các class theo dự báo')
-plt.show()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_1.png)
@@ -189,16 +105,6 @@ Chúng ta cần làm quen với các khái niệm :
 #### confusion_matrix:
 
 
-```python
-cr = pd.crosstab(y_test, 
-                pred, 
-                rownames=['Actual'], 
-                colnames=['Predicted'])
-sns.heatmap(cr, fmt='', annot=True, cmap="YlGnBu")
-plt.show()
-```
-
-
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_2.png)
 
@@ -206,27 +112,6 @@ plt.show()
 
 
 #### Các chỉ số:
-
-
-```python
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import precision_score
-```
-
-
-```python
-y_pred = clf.predict(X_test)
-acc = accuracy_score(y_test, y_pred)
-recall = recall_score(y_test, y_pred )
-precision = precision_score(y_test, y_pred )
-score_metrix = pd.DataFrame([('accuracy', acc), ('recall', recall), 
-                             ('precision', precision)],
-                            columns = ['metrix', 'score'])
-score_metrix.set_index(['metrix'], drop=True, inplace=True)
-score_metrix.T
-```
-
 
 
 
@@ -270,25 +155,6 @@ Quay lại một chút về vấn đề dự đoán với phương thức predic
 
 
 
-```python
-fig, axs = plt.subplots(ncols=2, figsize=(12,4))
-x = np.linspace(-10, 10, 100) 
-z = 1/(1 + np.exp(-x)) 
-for i, c in enumerate([0.5, 0.2]) :
-    y1, y2, y3 = 1 + 0*x, c + 0*x, 0*x
-    axs[i].plot(x, z, linewidth=4, color = 'k') 
-    axs[i].axhline(c, color='k', linestyle='dashed')
-    axs[i].fill_between(x, y2, y1, color='red', alpha='0.1')
-    axs[i].fill_between(x, y3, y2, color='green', alpha='0.1')
-    axs[i].text(-10, c+ 0.02, f'threshold : {c}')
-    axs[i].text(3, c/2, '0 - Negative', fontsize=12, weight='bold')
-    axs[i].text(3, 0.7, '1 - Positive', fontsize=12, weight='bold')
-    axs[i].set_xlabel("x") 
-    axs[i].set_ylabel("Y")
-    axs[i].set_title(f"Phân lớp với threshold : {c}")
-```
-
-
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_3.png)
 
@@ -308,49 +174,13 @@ Receiver operating characteristic - ROC curve sẽ thể hiện được FPR và
 hỗ trợ chúng ta khảo sát và vẽ ROC curve rất tốt.
 
 
-```python
-from sklearn.metrics import roc_curve, auc
-extra = [150, 580, 800]
-extrax, extray = [], []
-prob = clf.predict_proba(X_test)[:, 1:]
-fpr, tpr, thresholds = roc_curve(y_test.tolist(), prob, pos_label = None)
-for i in extra:
-    extrax.append(fpr[i])
-    extray.append(tpr[i])
-    print(f"threshold:%.2f, FPR:%.2f, TPR:%.2f"%(thresholds[i],fpr[i],tpr[i]))
-```
+
+Vẽ ROC curve và thể hiện 3 ví dụ trên biểu đồ:
 
     threshold:0.45, FPR:0.06, TPR:0.31
     threshold:0.13, FPR:0.45, TPR:0.75
     threshold:0.07, FPR:0.85, TPR:0.97
 
-
-Vẽ ROC curve và thể hiện 3 ví dụ trên biểu đồ:
-
-
-```python
-plt.figure(figsize=(12,7))
-plt.plot(fpr, tpr, lw=2, label='ROC curve (area = %0.2f)'%auc(fpr, tpr))
-plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
-plt.xlim([0.0, 1.0])
-plt.ylim([0.0, 1.05])
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.title('Receiver operating characteristic')
-plt.legend(loc="lower right")
-for i in extra:
-    plt.plot(fpr[i],tpr[i],'bo')
-    plt.plot((0,fpr[i]),(tpr[i],tpr[i]), 
-            color='k', linestyle='dashed', 
-            linewidth=1, alpha=0.2)    
-    plt.plot((fpr[i],fpr[i]),(0,tpr[i]), 
-            color='k', linestyle='dashed', 
-            linewidth=1, alpha=0.2)
-    plt.text(fpr[i]-0.02 ,tpr[i]+0.02, 'threshold: %.2f'%(thresholds[i]))
-plt.yticks(list(plt.xticks()[0]) + extray)
-plt.xticks(list(plt.xticks()[0]) + extrax)
-plt.show()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_4.png)
@@ -380,31 +210,6 @@ Tuy nhiên con số xác xuất thì sẽ không được mỹ quan và thân th
 Dữ liệu thường có phân phối lệch trái do số giá trị có class 0 chiếm áp đảo, cho nên điều quan trọng hơn hết là khi ta chuyển dải xác xuất sang dải score ta có thể tổ chức lại phân phối của dải điểm để gần với phân phối chuẩn.
 
 
-```python
-def prob2score(p=0.5 ,foo=4.0, bar=0.0115):
-    p = min(probs[np.where(probs>0)])*1 if p<= 0 else p
-    score  = (np.log(1/p  - 1 ) -foo)/-bar
-    score = 0 if score <0 else score
-    return int(score)
-score = [prob2score(p, 10, 0.0165) for p in prob]
-```
-
-
-```python
-from scipy.stats import norm
-
-fig, axs = plt.subplots(ncols=2, figsize=(12,4))
-for ax, y, title in zip(axs,[prob,score],['dải xác xuất','dải score']):
-    sns.distplot(y,
-                 fit=norm,
-                 hist_kws={"alpha":0.2},
-                 norm_hist=True,
-                 bins = 40,
-                 ax = ax)
-    (mu, sigma) = norm.fit(y)
-    ax.set_title('Phân phối '+title)
-    ax.legend(['Normal dist.($\mu=$ {:.2f} and $\sigma=$ {:.2f} )'.format(mu,sigma)])
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_chapter3_5.png)
@@ -413,25 +218,6 @@ for ax, y, title in zip(axs,[prob,score],['dải xác xuất','dải score']):
 
 **Phân phối của dải score cân xứng hơn hẳn, sẽ phù hợp cho ứng dụng, hỗ trợ vận hành hơn dải xác xuất.**
 
-
-```python
-def score_PN_rate(iter_n = 20):
-    df_temp = pd.DataFrame({'score':score, 'y':y_test})
-    for i in range(0, max(df_temp['score']), iter_n):
-        df_temp.loc[df_temp.score.isin(range(i,i+iter_n)), 'score_r'] = i
-    x1 = df_temp[df_temp.y==1].groupby(['score_r']).agg(len)[['y']]
-    x0 = df_temp[df_temp.y==0].groupby(['score_r']).agg(len)[['y']]
-    x = df_temp.groupby(['score_r']).agg(len)[['y']]
-    x = x.merge(x1,how='left', on='score_r').merge(x0,how='left', on='score_r')
-    x.columns = ['count', 'P','N']
-    x['P'] = x['P']/x['count'] * 100
-    x['N'] = x['N']/x['count'] * 100
-    fig, ax = plt.subplots(figsize=(8,6))
-    x[['P','N']].plot.bar(ax = ax)
-    ax.set_ylabel('%')
-    ax.set_title('Score Positive and Negative rate')
-score_PN_rate()
-```
 
 
 
@@ -446,28 +232,6 @@ Tuy dải score đã đẹp rồi, nhưng ta vẫn cần khái quát chúng hơn
 
 Trường hợp dưới đây mình gon dải score vào 5 bin sao cho số lượng phần tử mỗi bin xấp xỉ nhau, từ đó ta có thể đễ dàng phân tích theo nhiều chiều hơn.
 
-
-```python
-nbin = 5
-df_probs = pd.DataFrame({'score':score, 'y':y_test})
-cuts = pd.qcut(score, nbin, precision=5).unique()
-for i,cut in enumerate(cuts.categories):
-    df_probs.loc[(df_probs.score > cut.left) &
-                (df_probs.score <= cut.right), 'bin'] = i+1
-    df_probs.loc[(df_probs.score > cut.left) &
-                (df_probs.score <= cut.right), 'bin_value'] = cut
-count_g = df_probs.groupby('bin').count()['y']
-total = df_probs.groupby('bin').sum()['y']
-df_range = pd.concat([count_g,total], axis = 1)
-df_range.columns = ['total', 'positive']
-df_range['%positive'] = df_range.positive *100/ df_range.total
-df_range['interval'] = cuts.categories
-```
-
-
-```python
-df_range
-```
 
 
 
@@ -546,12 +310,6 @@ df_range
 
 
 
-```python
-df_probs.head()
-```
-
-
-
 
 <div>
 <style scoped>
@@ -619,24 +377,6 @@ df_probs.head()
 
 
 
-
-```python
-fig, axs = plt.subplots(ncols=2, figsize=(12,5))
-sns.barplot(x=df_range.index, y="%positive", data=df_range,
-            palette="Blues", hue="%positive", dodge=False, ax=axs[0])
-axs[0].grid(which='major', axis = 'y', linestyle='--')
-axs[0].set_xlabel('Bin')
-axs[0].set_title("positive rate")
-for i, v in zip(df_range.index, df_range['%positive']):
-    axs[0].text(i-1.2, v,str(round(v,1))+ '%', fontweight='bold',fontsize = 8)
-axs[0].get_legend().remove()
-sns.boxplot(x="bin", y="score",linewidth=0.5,
-            data=df_probs, ax=axs[1], palette= "Blues") 
-axs[1].set_title('Boxplot Score by Bin')
-axs[1].set_ylabel('Score')
-axs[1].set_xlabel('Bin')
-axs[1].grid(which='major', axis = 'y', linestyle='--',color = '#bebebe')
-```
 
 
 
