@@ -2,7 +2,7 @@
 layout: post
 title: Logistic regression and WOE-IV
 subtitle: Credit scorecard chapter 1
-tags: [credit scorecard]
+tags: [Credit Scorecard]
 ---
 
 
