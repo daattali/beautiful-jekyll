@@ -4,7 +4,7 @@ title: About me
 subtitle: 
 ---
     
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg = 250x250)
 
 
 ### Thông tin cơ bản
