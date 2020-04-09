@@ -523,7 +523,7 @@ Biểu đồ quan hệ giữa area và price theo từng quận :
 
 
 
-Các quận nội thành và phân bỏ price:
+Các quận nội thành và phân bổ price:
 
 
 
