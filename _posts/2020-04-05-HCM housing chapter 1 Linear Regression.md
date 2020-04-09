@@ -406,7 +406,6 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
 ### Hồi quy tuyến tính với phương pháp OLS
 
 
-
 <table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
@@ -438,7 +437,6 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
 </tr>
 </table>
 <br>
-
 <table class="simpletable">
 <tr>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
@@ -468,7 +466,6 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
   <th>furniture</th> <td>    0.1319</td> <td>    0.120</td> <td>    1.098</td> <td> 0.273</td> <td>   -0.104</td> <td>    0.368</td>
 </tr>
 </table>
-
 <br>
 <table class="simpletable">
 <tr>
