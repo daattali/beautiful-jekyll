@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Evaluation and deploy
-subtitle: Credit scorecard chapter 3
+subtitle: Credit Scorecard chapter 3
 tags: [Credit Scorecard]
 ---
 
