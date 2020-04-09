@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Credit scorecard chapter 1
-subtitle: Logistic regression model
+title: Logistic regression and WOE-IV
+subtitle: Credit scorecard chapter 1
 tags: [credit scorecard]
 ---
 
