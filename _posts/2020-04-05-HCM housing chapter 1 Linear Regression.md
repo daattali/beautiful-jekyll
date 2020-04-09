@@ -21,9 +21,9 @@ Let' go
 
 Chúng ta đã làm được các việc sau:
 
-    - bỏ 1 số trường không dùng
-    - đổi tên trường
-    - tách giá trị số từ chuỗi
+- bỏ 1 số trường không dùng
+- đổi tên trường
+- tách giá trị số từ chuỗi
 
 
 
@@ -161,11 +161,11 @@ Nhận thấy rằng đa số các nhà có nột thất thì họ mới ghi và
 
 Một cách tốt hơn nữa là chúng ta sẽ phân tích cấu trúc chuỗi và phân loại nội thất theo:
 
-    - cao cấp
-    - cơ bản
-    - không
-Cách này thì mình nghĩ sẽ giữ được nhiều thông tin hơn nên các bạn có cơ hội thì làm thử nhé, mình làm cơ bản cho nhanh đã
+- cao cấp
+- cơ bản
+- không
 
+Cách này thì mình nghĩ sẽ giữ được nhiều thông tin hơn nên các bạn có cơ hội thì làm thử nhé, mình làm cơ bản cho nhanh đã
 
 
     0    1
