@@ -27,7 +27,7 @@ navbar-links:
 #    - Facebook: "https://www.facebook.com/Minh4996"
   Series: 
     - Tags: "tags"
-    - hcm: "tag_housing"
+    - HCM housing: "HCM housing"
   Author's site: "https://sites.google.com/view/nguyen-quang-minh"
   
 # Image to show in the navigation bar - image must be a square (width = height)
