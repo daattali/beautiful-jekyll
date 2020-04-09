@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Machine learning in scorecard
+title: Scorecard with Machine learning 
 subtitle: Credit scorecard chapter 2
 tags: [credit scorecard]
 ---
