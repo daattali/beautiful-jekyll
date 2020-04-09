@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predict house's price with linear Regression model
+title: Predict house's price 
 subtitle: HCM housing chapter 1 
 tags: [HCM housing]
 ---
