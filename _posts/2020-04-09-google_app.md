@@ -10,7 +10,7 @@ tags: [Google Ecosystem]
 Chúng ta vẫn ngày ngày sử dụng các tiện ích của anh Google và bản thân tôi luôn cảm thấy biết ơn vì điều đó, Gmail, 
 Drive, Youtube, Google Spreadsheet...
 
-![Crepe](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGz_pqXbWaool5DAii_NGXjKo1NTtrNA5-vUrgc4pJPuhHCUV&usqp=CAU| width=200)
+![Crepe](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGz_pqXbWaool5DAii_NGXjKo1NTtrNA5-vUrgc4pJPuhHCUV&usqp=CAU | width=200)
 
 
 
