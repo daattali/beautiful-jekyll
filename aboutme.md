@@ -50,5 +50,7 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
     Best Performance 2019
 
     
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg)
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg" width="300" />
+    
+
 
