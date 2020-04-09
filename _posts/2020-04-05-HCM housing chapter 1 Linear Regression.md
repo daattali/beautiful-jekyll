@@ -437,7 +437,7 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
   <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>     <td> </td>   
 </tr>
 </table>
-
+<br>
 
 <table class="simpletable">
 <tr>
@@ -469,7 +469,7 @@ Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ
 </tr>
 </table>
 
-
+<br>
 <table class="simpletable">
 <tr>
   <th>Omnibus:</th>       <td>10.497</td> <th>  Durbin-Watson:     </th> <td>   2.166</td>
