@@ -6,15 +6,13 @@ tags: [Google Ecosystem]
 ---
 
 
+**"Không biết thì hỏi Google"** bao lâu nay Google đã đi vào đời sông của chúng ta như một phần không thể thiếu như vậy. 
+Chúng ta vẫn ngày ngày sử dụng các tiện ích của anh Google và bản thân tôi luôn cảm thấy biết ơn vì điều đó, Gmail, 
+Drive, Youtube, Google Spreadsheet...
 
 ![Crepe](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTGz_pqXbWaool5DAii_NGXjKo1NTtrNA5-vUrgc4pJPuhHCUV&usqp=CAU)
 
 
-
-
-**"Không biết thì hỏi Google"** bao lâu nay Google đã đi vào đời sông của chúng ta như một phần không thể thiếu như vậy. 
-Chúng ta vẫn ngày ngày sử dụng các tiện ích của anh Google và bản thân tôi luôn cảm thấy biết ơn vì điều đó, Gmail, 
-Drive, Youtube, Google Spreadsheet...
 
 Nhưng hệ sinh thái Google cho chúng ta nhiều hơn thế Chúng ta có thể tự build cho mình một Webapp trên nền tảng Google Ecosystem. Các bạn không nghe lầm đâu, chính là 1 webapp như quản lý phòng khách sạn, quản lý quán cafe hoàn toàn miễn phí và rất đơn giản.
 
