@@ -4,7 +4,7 @@ title: About me
 subtitle: 
 ---
     
-<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" />
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" float="right" />
 
 ### Thông tin cơ bản
 
