@@ -5,7 +5,7 @@ title: 'credit scorecard'
 
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+        {{- tag | last -}}{%- unless forloop.first -%},{%- endunless -%}
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
