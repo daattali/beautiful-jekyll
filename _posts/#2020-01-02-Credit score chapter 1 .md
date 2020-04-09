@@ -26,40 +26,6 @@ Mục tiêu bài viết :
 
 _______________________________
 
-Các thư viện cần dùng:
-
-
-```python
-import numpy as np
-import pandas as pd
-
-import seaborn as sns
-import matplotlib.pyplot as plt
-%matplotlib inline
-
-import warnings
-warnings.filterwarnings('ignore')
-```
-
-
-
-
-```python
-df = pd.read_csv('credit_data.csv')
-df.columns
-```
-
-
-
-
-Index(['field0', 'field1', 'field2', 'field3', 'field4', 'field5', 'field6',
-       'field7', 'field8', 'field9', 'field10', 'field11', 'field12',
-       'field13', 'field14', 'field15', 'field16', 'field17', 'field18',
-       'field19', 'field20', 'field21', 'field22', 'field23', 'field24',
-       'field25', 'field26', 'field27', 'field28', 'field29', 'field30',
-       'field31', 'field32', 'field33', 'field34', 'field35', 'field36',
-       'field37', 'field38', 'field39', 'field40', 'label'],
-      dtype='object')
 
 
 
@@ -72,13 +38,6 @@ Dưới đây mình chủ yếu sử dụng thư viện **seaborn** vì nó khá
 Biểu đồ histogram để thấy được tần suất của dữ liệu:
 
 
-```python
-sns.set_palette("pastel")
-sns.set_style('ticks')
-
-df.hist(figsize=(15,12), bins=20, grid=False, ylabelsize= 7, xlabelsize=7)
-plt.show()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_0.png)
@@ -88,25 +47,12 @@ plt.show()
 Biến phân loại:
 
 
-```python
-sns.countplot(data = df, x = 'label', palette= 'hls' )
-plt.show()
-```
-
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_1.png)
 
 
 Biểu đồ pairplot để thấy được mối quan hệ của dữ liệu:
 
-
-```python
-plot_cols = ["field0", "field1", "field27", "field15"]
-sns.pairplot(df[plot_cols+['label']],
-             vars = plot_cols,
-             hue='label', diag_kind="kde",
-             height=2.5);
-```
 
 
 
@@ -115,11 +61,6 @@ sns.pairplot(df[plot_cols+['label']],
 
 
 Quan sát thêm sự mối quan hệ giữa các biến với sns.jointplot:
-
-
-```python
-sns.jointplot("field0", "field1", data=df, kind='hex')
-```
 
 
 
@@ -132,10 +73,6 @@ sns.jointplot("field0", "field1", data=df, kind='hex')
 
 factor "field35" theo "field14" và "label":
 
-
-```python
-sns.factorplot("field35", "field14", "label", data=df, kind="violin")
-```
 
 
 
@@ -192,112 +129,15 @@ Các bạn có thể tham khảo thêm về WOE và IV qua các bài viết dư�
 
 -----------------------------
 
-## Code nào :
+## Thực hành nào :
 
 Lý thuyết vậy là nhiều rồi, chắc đọc cũng chán ngấy cả người. Vậy chúng ta cùng thực hành chút cho nóng người nào. 
 
 Về phương pháp biến đổi WOE thì có rất nhiều, mình cũng tự custom module để tính woe để theo ý mình nhưng cũng cần kết hợp với các thư viện có sẵn để đạt kết quả tốt nhât:
 
-Thư viện **scorecardpy** được chuyển đổi từ thư viện scorecard từ R qua python rất tiện lợi cho chúng ta
+Dưới đây là kết quả chúng ta dùng thư viện để chạy mô hình credit scorecard
 
 
-```python
-import scorecardpy as sc
-from sklearn.linear_model import LogisticRegression
-```
-
-
-
-
-
-```python
-df.isna().sum()
-dt_s = df.drop(['field35','field38'], axis=1).copy()
-
-
-y_label = 'label'
-#dt_s  = dt_s[list(clf_info['VAR_NAME'])+ [y_label]]
-
-
-# breaking dt into train and test
-train, test = sc.split_df(dt_s, y_label ,seed=1).values()
-
-# woe binning ------
-bins = sc.woebin(dt_s, y=y_label)
-#---------------
-# sc.woebin_plot(bins)
-# converting train and test into woe values
-train_woe = sc.woebin_ply(train, bins)  
-test_woe = sc.woebin_ply(test, bins)
-
-y_train = train_woe.loc[:,y_label]
-X_train = train_woe.loc[:,train_woe.columns != y_label]
-y_test = test_woe.loc[:,y_label]
-X_test = test_woe.loc[:,train_woe.columns != y_label]
-
-# ===================================================
-# --- logistic regression ------
-# ===================================================
-lr = LogisticRegression(n_jobs=-1)
-
-lr.fit(X_train, y_train)
-# score ------
-
-card = sc.scorecard(bins, lr, X_train.columns,points0=150,pdo=-120)
-# credit score
-train_score = sc.scorecard_ply(train, card, print_step=0)
-test_score = sc.scorecard_ply(test, card, print_step=0)
-
-```
-
-    [INFO] creating woe binning ...
-    [INFO] converting into woe values ...
-    [INFO] converting into woe values ...
-    
-
-
-```python
-X_train.columns
-```
-
-
-
-
-Index(['field16', 'field36', 'field34_woe', 'field31_woe', 'field18_woe',
-       'field2_woe', 'field40_woe', 'field30_woe', 'field0_woe', 'field27_woe',
-       'field7_woe', 'field17_woe', 'field29_woe', 'field32_woe',
-       'field14_woe', 'field13_woe', 'field25_woe', 'field9_woe', 'field8_woe',
-       'field5_woe', 'field3_woe', 'field12_woe', 'field39_woe', 'field10_woe',
-       'field20_woe', 'field21_woe', 'field22_woe', 'field1_woe',
-       'field37_woe', 'field11_woe', 'field15_woe', 'field4_woe',
-       'field19_woe', 'field23_woe', 'field24_woe', 'field26_woe',
-       'field28_woe', 'field6_woe', 'field33_woe'],
-      dtype='object')
-
-
-
-
-```python
-# predicted proability
-train_pred = lr.predict_proba(X_train)[:,1]
-test_pred = lr.predict_proba(X_test)[:,1]
-
-# performance ks & roc ------
-train_perf = sc.perf_eva(y_train, train_pred, title = "train")
-test_perf = sc.perf_eva(y_test, test_pred, title = "test")
-
-# score ------
-card = sc.scorecard(bins, lr, X_train.columns)
-# credit score
-train_score = sc.scorecard_ply(train, card, print_step=0)
-test_score = sc.scorecard_ply(test, card, print_step=0)
-
-# psi
-sc.perf_psi(
-  score = {'train':train_score, 'test':test_score},
-  label = {'train':y_train, 'test':y_test}
-)
-```
 
 
 
@@ -320,24 +160,6 @@ sc.perf_psi(
 
 
 
-{'psi':   variable      PSI
- 0    score  0.00548, 'pic': {'score': <Figure size 432x288 with 2 Axes>}}
-
-
-
-
-```python
-IV = {'VAR_NAME':[],'IV':[]}
-for col in list(bins.keys()): 
-    IV['VAR_NAME'].append(col)
-    IV['IV'].append(bins[col]['total_iv'].iloc[0])
-IV = pd.DataFrame(IV["IV"], index = IV['VAR_NAME'],columns=["IV"])
-IV.sort_values("IV",inplace = True) 
-IV = IV[IV.IV >= 0.02]
-fig, ax = plt.subplots(figsize = (8,4),dpi = 100 )
-IV.plot.barh(ax = ax)
-plt.show()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_8.png)
