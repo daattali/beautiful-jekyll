@@ -244,5 +244,3 @@ Trường hợp dưới đây mình gon dải score vào 5 bin sao cho số lư�
 Với cách thức trên thì việc đưa mô hình vào vận hành là rất thuận tiện rồi. Bài kỳ này xin kết thúc tại đây. 
 
 Kỳ sau mình sẽ nói về cách đánh giá lại hiệu quả ứng dụng mô hình và tối ưu vận hành qua mô hình nhân quả.
-
-Mong các bạn đón xem.
