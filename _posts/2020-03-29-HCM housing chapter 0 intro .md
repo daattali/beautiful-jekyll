@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intro
+title: HCM housing Intro
 subtitle: HCM housing chapter 0
 tags: [HCM housing]
 ---
