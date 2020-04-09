@@ -4,7 +4,7 @@
 title: Minh's Blog
 
 # Short description of your site
-description: Chia sẻ, tiến bộ!
+description: My little knowledge!
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -76,7 +76,7 @@ social-network-links:
  # rss: false
   email: nguyenquangminh4996@gmail.com
   facebook: Minh4996
-  github: minmax49
+#  github: minmax49
 #  reddit: yourname
   linkedin: minh-nguyễn-quang-42b18a19a
 #  xing: yourname
