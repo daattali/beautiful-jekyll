@@ -38,12 +38,13 @@ Trong bài này sẽ đề cập đến cách diễn giải và trình bày là 
 
 phương thức predict cho ta kết quả đầu ra với nhãn cụ thể :
 
+    array([0., 0., 0., ..., 0., 0., 0.])
+
 Một cách dễ hiểu nếu kết quả là :
  - 0 tương ứng với khách hàng bình thường
  - 1 tương ứng với khách hàng mục tiêu
 
-    array([0., 0., 0., ..., 0., 0., 0.])
-
+    
 
 Phân bổ của các lớp thực tế:
 
