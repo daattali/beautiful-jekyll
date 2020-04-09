@@ -5,7 +5,7 @@ subtitle:
 ---
     
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg = 250x250)
-
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" height="400" />
 
 ### Thông tin cơ bản
 
