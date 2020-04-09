@@ -34,7 +34,7 @@ Nhưng làm gì để nhiều tiền, chúng ta phải farm. Nhưng tôi cũng f
 Nhiều lúc xem ra mình cũng đã làm tốt các điều trên rồi mà cuối cùng vẫn thua, nhìn lại mới thấy thành viên nhiều tiền thứ hai trong team chỉ bằng một nửa của mình. Một mình xanh chỉ được nhất thời, dù có giết bao mạng chăng nữa mà team feed thì cũng không thể đấu lại đối thủ, đâu thể mega kill mãi được. Đầu game bạn rất mạnh, bạn tiến tới full đồ rất nhanh nhưng rồi muốn chiến thắng thì lại quá khó khăn. Lúc đó mới thấm thía cảnh đơn độc chiến đấu, biết trước thì đã xây dựng đội ngũ lớn mạnh hơn. Thật là muốn đi nhanh thì đi một mình còn muốn đi xa thì cần đi cùng nhau, và nhớ là đi cùng nhau chứ không phải là cùng nhau gánh ai đó, một người thọt thì cũng không xong.
 
 
-Viết lan man quá. khi nào rảnh viết tiếp 2 giờ đêm rồi.
+Viết lan man quá. khi nào rảnh viết tiếp 2 giờ sáng rồi.
 
 
 
