@@ -15,31 +15,6 @@ Nhưng vẫn còn hy vọng, data về các tin đăng rao bán bất động s�
 Nguồn data trong toàn series mình crawl từ trang web https://batdongsan.com.vn/, code và data mình có để trên github của mình, nếu bạn nào hứng thú thì có thể clone về nghịch thử. Trong series này mình sẽ không nói đến việc crawl data mà chủ yếu đề cập đến xử lý và phân tích số liệu.
 
 
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt 
-import seaborn as sns
-%matplotlib inline
-
-import matplotlib as mpl
-mpl.rc('axes', labelsize=8)
-mpl.rc('xtick', labelsize=8)
-mpl.rc('ytick', labelsize=8)
-```
-
-
-```python
-df = pd.read_csv('data/housing29_03_20.csv', 
-                 encoding='utf-16', 
-                 converters={'Ngày đăng': pd.to_datetime, 
-                            'Ngày hết hạn': pd.to_datetime},
-                )
-print(df.shape)
-
-```
-
-    (14390, 24)
 
 
 ## Bước 1 : Clearn data 1 chút
@@ -47,34 +22,7 @@ print(df.shape)
 - Đầu tiên bỏ cột không dùng tới lúc này đi cho gọn ( lúc này chưa dùng thôi nhé)
 
 
-```python
-df.drop(['Loại tin rao','uptime','email','Mã tin đăng',
-         'title','url','Địa chỉ','Hướng nhà','Hướng ban công'],
-         axis=1, inplace=True)         
-```
-
 Đổi tên cột nghe cho tây tây (và dễ gọi)
-
-
-```python
-df.rename(columns = {'Loại hình tin đăng':'type',
-                     'Ngày đăng': 'up_time', 
-                     'Ngày hết hạn': 'end_time',
-                     'Số tầng': 'floors',
-                     'Số phòng ngủ': 'bedrooms',
-                     'Số toilet': 'toilets',
-                     'Mặt tiền': 'facade',
-                     'Đường vào': 'road_wide',
-                     'Nội thất': 'furniture',
-                     }, 
-          inplace=True)
-          
-```
-
-
-```python
-df.head(1).T
-```
 
 
 
@@ -204,9 +152,6 @@ df.head(1).T
 
 Xem thông tin Non-Null và kiểu dữ liệu:
 
-```python
-df.info()
-```
 
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 14390 entries, 0 to 14389
@@ -231,27 +176,10 @@ df.info()
     dtypes: datetime64[ns](2), float64(3), object(10)
     memory usage: 1.6+ MB
 
-Đổi tên giá trị biến trong trường 'type':
+Đổi tên giá trị biến trong trường 'type'
 
-```python
-df['type'] = df['type'].map({'Tin thường': 'nomal',
-                             'Tin Vip 3': 'v3',
-                             'Tin Vip 2': 'v2',
-                             'Tin Vip 1': 'v1',
-                             'Tin Vip đặc biệt': 'vs'})                  
-```
+Tách giá price, area từ chuỗi:
 
-- Tách giá price, area từ chuỗi:
-
-
-```python
-df['price_unit'] = [p.split(' ')[1] for p in df['price']]
-df['price'] = [p.split(' ')[0] for p in df['price']]
-df['area_unit'] = [p.split(' ')[1] for p in df['area']]
-df['area'] = [p.split(' ')[0] for p in df['area']]
-print(df['price_unit'].value_counts(), end='\n\n')
-print(df['area_unit'].value_counts())
-```
 
     tỷ          13522
     thuận         545
@@ -264,19 +192,7 @@ print(df['area_unit'].value_counts())
     Name: area_unit, dtype: int64
 
 
-Chỉ lấy các record có 'price_unit là' 'tỷ' và 'area_unit' là 'm²'
-
-```python
-df = df[(df['price_unit'] == 'tỷ') & (df['area_unit'] == 'm²')]
-```
-
-Chuyển dữ liệu 'price' và 'area' mới xử lý về kiểu float để tính toán:
-
-```python
-df['price'] = df['price'].astype(float)
-df['area'] = df['area'].astype(float)
-df.describe()
-```
+Chỉ lấy các record có 'price_unit là' 'tỷ' và 'area_unit' là 'm²' và chuyển dữ liệu 'price' và 'area' mới xử lý về kiểu float để tính toán:
 
 
 
@@ -378,19 +294,9 @@ df.describe()
 
 
 
-```python
-df['p_m2'] = df['price']/df['area']
-```
-
-
 
 - Tách giá trị số từ chuỗi các trường 'floors','bedrooms', 'facade', 'road_wide'
 
-
-```python
-converts = ['floors','bedrooms', 'facade', 'road_wide']
-df[converts].head(3)
-```
 
 
 
@@ -448,10 +354,6 @@ df[converts].head(3)
 
 
 
-```python
-df[converts].info()
-```
-
     <class 'pandas.core.frame.DataFrame'>
     Int64Index: 13225 entries, 0 to 14389
     Data columns (total 4 columns):
@@ -468,23 +370,6 @@ df[converts].info()
 
 Nhận thấy giá trị số sẽ bao gồm các phần tử bắt đầu cho đến ký tự '(' trong chuỗi nên ta viết hàm xử lý như dưới:
  
- 
-```python
-def find_number(s):
-    if s != 'none':
-        return float(s[: s.find('(')].replace(',','.'))
-    else:
-        return np.nan
-    
-for col in converts:
-    df[col].fillna('none', inplace=True)
-    df[col] = [find_number(s) for s in df[col]]
-```
-
-
-```python
-df.head(1).T
-```
 
 
 
@@ -617,97 +502,23 @@ df.head(1).T
 - Dữ liệu khá đa dạng nhưng mình chỉ quan tâm tới các diện tích < 200m2 và giá tiền < 100 tỷ:
 
 
-```python
-df = df[(df['area'] < 200) & (df['price'] < 100)]
-```
 
 Có 24 quận nên chia làm 4 dòng 6 cột vẽ cho đẹp
 
-set : cols, rows = 4, 6
-
-
-```python
-cols, rows = 6,4
-
-fig, axs = plt.subplots(nrows=rows, ncols=cols, figsize=(18,10))
-fig.subplots_adjust(wspace=0.25, hspace=0.5)
-label = df['district'].unique().reshape(rows, cols)
-
-for r in range(len(axs)):
-    for c in range(len(axs[r])):
-        sns.regplot(x='area', 
-                    y='price',
-                    data=df[df['district']==label[r,c]],
-                    lowess = True,
-                    marker = ".",
-                    scatter_kws={'alpha':0.3, 'color':'grey'},
-                    ax = axs[r,c])
-        axs[r,c].set_title(label[r,c])
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/output_22_0.png)
 
 
 
-```python
-df = df[df['lat']<20]
-```
 
 Biểu đồ quan hệ giữa area và price theo từng quận :
 
-```python
-cols, rows = 6,4
-
-fig, axs = plt.subplots(nrows=rows, ncols=cols, figsize=(18,10))
-fig.subplots_adjust(wspace=0.25, hspace=0.5)
-label = df['district'].unique().reshape(rows, cols)
-
-cmap = sns.cubehelix_palette(dark=.1, light=.8, as_cmap=True)
-for r in range(len(axs)):
-    for c in range(len(axs[r])):
-        sns.scatterplot(x='long', 
-                        y='lat',
-                        size="p_m2",
-                        data=df[df['district']==label[r,c]],
-                        hue="p_m2",
-                        palette=cmap,
-                        #marker = ".",
-                        #scatter_kws={'alpha':0.3, 'color':'grey'},
-                        ax = axs[r,c])
-        axs[r,c].set_title(label[r,c])
-        axs[r,c].get_legend().remove()
-```
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/output_24_0.png)
 
 
-
-
-Biểu đồ phân bổ price theo từng quận :
-
-```python
-df_choise =  df[~df['district'].isin(['Hóc Môn', 'Nhà Bè',
-                                     'Bình Chánh','Cần Giờ', 
-                                     'Củ Chi'])]
-fig, ax = plt.subplots( figsize=(10,10))
-sns.scatterplot(x='long', 
-                y='lat',
-                size="p_m2",
-                hue ='p_m2',
-                hue_order='district',
-                #hue_norm='p_m2',
-                sizes=(10, 100),
-                palette=cmap,
-                data=df_choise,
-                )
-for d in df_choise['district'].unique():
-    ax.text(df[df['district'] == d]['long'].mean(), df[df['district'] == d]['lat'].mean(), d)
-    
-ax.get_legend().remove()
-ax.set_title('Các quận nội thành')
-```
 
 
 
