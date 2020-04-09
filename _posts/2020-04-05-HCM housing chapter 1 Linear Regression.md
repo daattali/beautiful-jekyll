@@ -395,6 +395,7 @@ Top các thuộc tính có tương quan cao với biến price:
 
 
 
+Xem qua quan hệ tuyến tính giữa các biến độc lập và biến phụ thuộc:
 
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/chapter_1_house_prices_predict_4.png)
