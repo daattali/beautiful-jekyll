@@ -23,8 +23,7 @@ tag: tản mạn
 
 ## Mạnh vì gạo, bạo vì tiền
 
-  Có một điều thú vị là cuộc sống chúng ta cần tiền, trong game cũng cần tiền. Tiền trong game không mang lại niềm vui trược tiếp cho người chơi nhưng nó có thể khiếm người chơi mua được đồ, có được đồ nhiều hơn tức nhiều tiền hơn thì có thể dễ dàng
-chiếm lợi thế so với đối thủ thậm chí là cân team với mega kill đạt được niềm vui khi bá đạo bản đồ và chiến thắng . **Tiền có thể mua được niềm vui dù là trong game**
+  Có một điều thú vị là cuộc sống chúng ta cần tiền, trong game cũng cần tiền. Tiền trong game không mang lại niềm vui trực tiếp cho người chơi nhưng nó có thể khiến người chơi mua được đồ, có được đồ nhiều hơn tức nhiều tiền hơn thì có thể dễ dàng chiếm lợi thế so với đối thủ, thậm chí là cân team với mega kill đạt được niềm vui khi bá đạo bản đồ và chiến thắng . **Tiền có thể mua được niềm vui dù là trong game**
 
 ## Tiền không chưa đủ
 
