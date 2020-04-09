@@ -135,7 +135,7 @@ Lý thuyết vậy là nhiều rồi, chắc đọc cũng chán ngấy cả ngư
 
 Về phương pháp biến đổi WOE thì có rất nhiều, mình cũng tự custom module để tính woe để theo ý mình nhưng cũng cần kết hợp với các thư viện có sẵn để đạt kết quả tốt nhât:
 
-Dưới đây là kết quả chúng ta dùng thư viện để chạy mô hình credit scorecard
+Dưới đây là kết quả chúng chạy mô hình credit scorecard
 
 
 
@@ -165,6 +165,6 @@ Dưới đây là kết quả chúng ta dùng thư viện để chạy mô hình
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/creadit_scorecard1_8.png)
 
 
-Vậy là chúng  ta đã đi được khá nhiều kiến thức. 
+Vậy là chúng  ta đã đi lướt qua khá nhiều kiến thức. 
 
 Ở kỳ sau chúng ta sẽ áp dụng nhiều phương pháp và mô hình machine learning hiện đại vào trong bài toán credit scorecard.
