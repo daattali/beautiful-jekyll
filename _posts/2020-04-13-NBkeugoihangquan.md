@@ -1,6 +1,5 @@
 ---
 layout: no-title-post
-title: Các chính sách đưa ra ngày 13/4/2020
 ---
 ## Thủ tướng Abe kêu gọi hàng quán đóng cửa vào buổi tối và đề nghị doanh nghiệp ở 7 tỉnh thành giảm 70% số lượng nhân viên tới nơi làm việc
 
