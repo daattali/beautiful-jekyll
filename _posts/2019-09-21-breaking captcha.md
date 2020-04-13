@@ -30,3 +30,5 @@ Sau đây là một số kết quả dự báo từ mô hình (hình đã qua op
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha2.png" width="700" />
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha3.png" width="700" />
+
+Và bây giờ thì việc khó khăn nhất là captcha đã được hóa giải, công việc tự động khác thì đã có selenium lo, chúng ta có thể vào lấy thông tin trên CIC dễ như ăn cháo với hiệu suất gấp mấy chục lần con người. 
