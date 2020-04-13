@@ -28,6 +28,7 @@ navbar-links:
   Series: 
     - Scorecard: "credit scorecard"
     - HCM-housing: "HCM housing"
+    - Computer-vision: "computer-vision"
     
   Tags: "tags"
   #Author's site: "https://sites.google.com/view/nguyen-quang-minh"
