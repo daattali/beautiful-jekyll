@@ -6,6 +6,7 @@ Tuy nhiên việc thực hiện tự động gặp phải khó khăn đó là vi
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha0.png" width="500" />
 
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha1.png" width="500" />
 
 
 ## Giải pháp
@@ -16,3 +17,7 @@ Trở lại với open-cv và phân tích các đặc trưng của captcha, ta n
 Việc lọc màu cũng là 1 cách rất tốt để lấy mẫu. Ta chỉ cần chọn các ký tự có màu độc lập là có sẵn 1 bộ mẫu ký tự đơn, sau đó gán nhãn. Tiếp tục thực hiện train model CNN và lấy mẫu thêm theo cách trên mô hình rất nhanh sẽ được củng cố độ chính xác. 
 
 Sau đây là một số kết quả dự báo từ mô hình (hình đã qua open-cv nên màu hơi khác, mình lười chỉnh lại): 
+
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha2.png" width="500" />
+
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha3.png" width="500" />
