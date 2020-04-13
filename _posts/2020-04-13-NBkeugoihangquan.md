@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: no-title-post
 title: Thủ tướng Abe kêu gọi hàng quán đóng cửa vào buổi tối và đề nghị doanh nghiệp ở 7 tỉnh thành giảm 70% số lượng nhân viên tới nơi làm việc
 ---
 Dựa trên luật sửa đổi, tình trạng khẩn cấp kéo dài 1 tháng đã được áp dụng đổi với 7 tỉnh thành của Nhật Bản từ  ngày 7/3. 
