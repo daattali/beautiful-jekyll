@@ -20,7 +20,7 @@ description: Thông tin COVID-19 tại Nhật Bản
 
 # List of links in the navigation bar
 navbar-links:
-  Tổng quan: "overview" 
+  Tổng quan: "index" 
   Giới thiệu: "aboutme"
   Liên lạc: "emailus"
 
