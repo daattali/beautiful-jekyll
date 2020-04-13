@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Logistic regression and WOE-IV
+title: Scorecard with Logistic regression and WOE-IV
 subtitle: Credit Scorecard chapter 1
 tags: [Credit Scorecard]
 ---
 
-
-# Logistic regression với WOE
 
 **Credit Scorecard** với mục tiêu là chấm điểm và phân loại khách hàng, cho phép đưa ra quyết định về chính sách can thiệp nhằm tối ưu hóa hiệu quả kinh doanh.
 
