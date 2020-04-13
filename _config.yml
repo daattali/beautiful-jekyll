@@ -21,6 +21,7 @@ description: Thông tin COVID-19 tại Nhật Bản
 # List of links in the navigation bar
 navbar-links:
   Tổng quan: "index" 
+  Chính sách của chính phủ Nhật Bản: "policy"
   Giới thiệu: "aboutme"
   Liên lạc: "emailus"
 
