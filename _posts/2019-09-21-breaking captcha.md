@@ -5,7 +5,7 @@ Dây là dự án thứ 2 của mình tại công ty, dự án này phục vụ 
 Tuy nhiên việc thực hiện tự động gặp phải khó khăn đó là việc check thông tin chỉ được hoàn tất sau khi nhập vào captcha có dạng như sau: 
 
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha_0.png)
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha0.png)
 
 
 ## Giải pháp
