@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predict house's price 
+title: House price prediction
 subtitle: HCM housing chapter 1 
 tags: [HCM housing]
 ---
