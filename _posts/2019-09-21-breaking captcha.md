@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Phá captcha CIC
+title: Breaking captcha CIC
 subtitle: ứng dụng Computer Vision
 tag: Computer Vision
 ---
