@@ -1,6 +1,13 @@
+---
+layout: post
+title: Phá captcha CIC
+subtitle: ứng dụng Computer Vision
+tag: Computer Vision
+---
 
+Thời buổi bây giờ các thuật toán deep learning đã rất phát triển, các pre-trained model thì vô số, việc tiếp cận cũng rất dễ dàng. Tự thấy mình cũng chẳng là gì trong thế giới trí tuệ đó, nhưng mình lại rất thích đem các phát kiến machine learning đó vào ứng dụng trong thực tế. Cũng tự nhủ với mình rằng mình không phát minh ra các thuật toán đó nhưng mình sẽ ứng dụng chúng thật tốt để tạo ra thêm nhiều giá trị cho xã hội. Bài này mình sẽ giới thiệu một ứng dụng nho nhỏ của mình về Computer Vision trong việc tự động các công việc nhàm chán tại công ty.
 
-## Giới thiệu
+### Giới thiệu
 Dây là dự án thứ 2 của mình tại công ty, dự án này phục vụ quá trình thu thập dữ liệu, check thông tin các khách hàng trong diện khả nghi.  Do lượng thông tin khách hàng cần check khá lớn nên việc thực hiện công việc này một các tự động sẽ mang lại rất nhiều lợi ích tiết kiệm thời gian và nguồn lực , tăng hiệu quả hoạt động.
 Tuy nhiên việc thực hiện tự động gặp phải khó khăn đó là việc check thông tin chỉ được hoàn tất sau khi nhập vào captcha có dạng như sau: 
 
@@ -9,7 +16,7 @@ Tuy nhiên việc thực hiện tự động gặp phải khó khăn đó là vi
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha1.png" width="500" />
 
 
-## Giải pháp
+### Giải pháp
 
 Việc tự động lấy dữ liệu có thể dễ dàng thực hiện với thư viện selenium của Python, khó khăn duy nhất cần phải giải quyết là phá được captcha.
 Với sử lý hình ảnh thì deep learning là sự lựa chọn tốt nhất rồi , open-cv cũng không thể bỏ qua được. Đối với bài toán không quá phức tạp như phá captcha, thì sử dụng các thuật toán phức tạp như yolo, ssd, mask_RCNN trở nên khá cồng kềnh.  Cộng với điều kiện máy công ty không có gpu nên khi triển khai, tốc độ thực thi không đạt như mong muốn. Do vậy hướng đi sử dụng pretrain model đã bị gạt bỏ sau một ngày thử nghiệm. 
