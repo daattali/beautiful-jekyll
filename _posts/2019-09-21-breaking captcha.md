@@ -4,8 +4,8 @@
 Dây là dự án thứ 2 của mình tại công ty, dự án này phục vụ quá trình thu thập dữ liệu, check thông tin các khách hàng trong diện khả nghi.  Do lượng thông tin khách hàng cần check khá lớn nên việc thực hiện công việc này một các tự động sẽ mang lại rất nhiều lợi ích tiết kiệm thời gian và nguồn lực , tăng hiệu quả hoạt động.
 Tuy nhiên việc thực hiện tự động gặp phải khó khăn đó là việc check thông tin chỉ được hoàn tất sau khi nhập vào captcha có dạng như sau: 
 
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha0.png" width="500" />
 
-![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/captcha0.png)
 
 
 ## Giải pháp
