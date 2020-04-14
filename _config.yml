@@ -6,21 +6,21 @@ url: 'https://nameiscashier.github.io' # your host
 
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
-  首页: '/'
-  标签: '/tags.html'
-  时间线: '/timeline.html'
+  Res: '/'
+  Tags: '/tags.html'
+  Timeline: '/timeline.html'
   About me: '/about.html'
-  友情链接: '/friendLink.html'
+  FriendLink: '/friendLink.html'
 
 # 博主
 author: true
-name: 'your awesome name'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
-bio: 'your awesome bio'
+name: 'Thu ngan'
+NickName: 'My Name's Cashier
+webtitle: 'nameiscashier.github.io'
+bio: 'Mình tò mò và thích nghệ thuật.'
 about: true
-aboutyou: 'your introduction'
-portraits: '/assets/profile.jpeg' # your portraits image file path
+aboutyou: 'Mau chán và muốn tạo nhiều thứ cho riêng mình.'
+portraits: '/assets/profile.png' # your portraits image file path
 
 # SNS
 SNS: true
