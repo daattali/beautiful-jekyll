@@ -786,3 +786,8 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+/* Embeds */
+.embed-responsive.embed-responsive-1by1 {
+  padding-top: 100%;
+}
