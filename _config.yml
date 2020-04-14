@@ -30,6 +30,7 @@ navbar-links:
     - HCM-housing: "HCM housing"
     - Computer-vision: "computer-vision"
     - NLP: "nlp"
+    - other: "other"
     
   Tags: "tags"
   #Author's site: "https://sites.google.com/view/nguyen-quang-minh"
