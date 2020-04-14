@@ -833,12 +833,12 @@ pre {
   padding-top: 4em;
   padding-bottom: 4em;
 }
-.covi-section__title {
+.covi-section .covi-section__title {
   text-align: center;
   font-size: 2.25em;
-  margin-bottom: 0.75em;
+  margin-bottom: 1.5em;
 }
-.covi-section__content {
+.covi-section .covi-section__content {
   margin-bottom: 1.5em;
 }
 
@@ -847,10 +847,10 @@ pre {
     padding-top: 2em;
     padding-bottom: 2em;
   }
-  .covi-section__title {
+  .covi-section .covi-section__title {
     font-size: 1.5em;
   }
-  .covi-section__content {
+  .covi-section .covi-section__content {
     margin-bottom: 0.75em;
   }
 }
