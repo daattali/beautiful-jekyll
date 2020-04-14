@@ -1,34 +1,32 @@
 ---
-layout: page
-title: 'Tag Index'
+layout: default
+title: 标签
+page-title: tags
+home-title: Let's pick something.
+description:
 ---
 
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-{%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="ex-list">
+        <li class="fadeInUp animated">
+        {% if site.tags.size>0 %}
+            {% for tag in site.tags %}
+            <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+            {% endfor %}
+        {% endif %}
+        </li>
+        {% for tag in site.tags %}
+        <li>
+            <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
+            {% for post in tag[1] %}
+            <a class="tag-post" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+            {% endfor %}
+        </li>
 
-{%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
-{%- endfor -%}
-
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class="linked-section">
-        <i class="fas fa-tag" aria-hidden="true"></i>
-        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
-    </h2>
-    <div class="post-list">
-        {%- for post in site.tags[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
-                </div>
-            </div>
-        {%- endfor -%}
-    </div>
-{%- endfor -%}
-</div>
+        {% endfor%}
+    </ul>
+</main>
+{% include footer.html %}

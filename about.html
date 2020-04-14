@@ -1,0 +1,42 @@
+---
+layout: default
+title: 关于我
+page-title: aboutMe
+home-title: Show you about me.
+description:
+---
+
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="ex-list">
+        <li class="fadeInUp animated">
+        {% if site.author %}
+          <div class="portraits"><img src="{{ site.portraits }}" alt=""></div>
+          <span id="yourname">{{ site.name }}</span>
+          <span id="yourbio">{{ site.bio }}</span>
+          {% if site.about %}
+            <span id="aboutyou">{{ site.aboutyou }}</span>
+          {% endif %}
+        {% endif %}
+        {% if site.SNS %}
+          {% for sns-icon in site.SNS-icon %}
+            <a href="{{ sns-icon[1] }}" title="{{ sns-icon[0] }}">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-{{ sns-icon[0] }}"></use>
+              </svg>
+            </a>
+          {% endfor%}
+        {% endif %}
+      </li>
+      <li class="fadeInUp animated">
+      {% if site.tags.size>0 %}
+          {% for tag in site.tags %}
+          <a href="tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+          {% endfor %}
+      {% endif %}
+      </li>
+    </ul>
+</main>
+{% include footer.html %}

@@ -1,9 +1,34 @@
----
-layout: base
----
+<!-- 首页及其他页面的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+{% include head.html %}
+</head>
+<body>
+<!-- 页面主体 -->
+{{ content }}
 
-<div class="intro-header"></div>
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 5,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
 
-<div role="main" class="container">
-  {{ content }}
-</div>
+</body>
+</html>

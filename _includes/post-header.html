@@ -1,0 +1,41 @@
+{% if page.color.size==0 or page.color==nil %}
+<header id="post-header" style="background-color:#9A85FF;">
+  <div class="top-center">
+      <div class="logo">
+          <a href="{{ "/" | relative_url }}" title="my awesome webtitle" style="color: white;">{{ site.webtitle }}</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              {% for i in site.nav %}
+                <li><a href="{{ i[1] }}" style="color: white;">{{ i[0] }}</a></li>
+              {% endfor %}
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+{% else %}
+<header id="post-header" style="background-color:{{ page.color }};">
+  <div class="top-center">
+      <div class="logo">
+          <a href="{{ "/" | relative_url }}" title="my awesome webtitle" style="color: white;">{{ site.webtitle }}</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              {% for i in site.nav %}
+                <li><a href="{{ i[1] }}" style="color: white;">{{ i[0] }}</a></li>
+              {% endfor %}
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+{% endif %}

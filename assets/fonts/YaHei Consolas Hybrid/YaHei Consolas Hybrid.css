@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "YaHei Consolas Hybrid";
+  src: url("YaHei Consolas Hybrid.woff2") format("woff2"),
+       url("YaHei Consolas Hybrid.woff") format("woff"),
+       url("YaHei Consolas Hybrid.ttf") format("truetype"),
+       url("YaHei Consolas Hybrid.eot") format("embedded-opentype"),
+       url("YaHei Consolas Hybrid.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

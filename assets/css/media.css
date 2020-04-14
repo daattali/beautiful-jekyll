@@ -1,0 +1,133 @@
+@media screen and ( min-width : 601px ){
+  #boot-area{
+    display: none !important;
+  }
+}
+@media screen and ( max-width : 800px ){
+  #index-header{
+    height: 60px;
+  }
+  .top-center{
+      width: 100%;
+      height: 100%;
+  }
+  .logo{
+      font-size: 28px;
+      line-height: 60px;
+      margin-left: 20px;
+  }
+  .top-nav li{
+      margin: 0 7px;
+      line-height: 60px;
+      font-size: 16px;
+  }
+
+  .top span:first-child{
+      top: 180px;
+      font-size: 35px;
+      font-weight: 450;
+      width: 80%;
+  }
+
+  .post-top{
+    height: 395px;
+  }
+  .post-titlearea span:first-child{
+    top: 40px;
+    font-size: 28px;
+    font-weight: 450;
+    width: 95%;
+  }
+  .top span:nth-child(2){
+      top: 260px;
+      font-size: 18px;
+  }
+  .top span:nth-child(3){
+      top: 300px;
+      font-size: 18px;
+  }
+  .top span:nth-child(4){
+      top: 350px;
+      font-size: 18px;
+  }
+  .post-list li,.tags-list li,.ex-list li{
+      width: 90%;
+      height: auto;
+  }
+  .tags-list li{
+    padding: 20px;
+  }
+  .tags-list li a{
+    font-size: 16px;
+  }
+  .post-cover{
+    width: 92%;
+    margin: 15px 4%
+  }
+  .tag-name{
+    font-size: 25px;
+  }
+  .tag-name a{
+    font-size: 18px;
+  }
+  .tag-post{
+    font-size: 18px;
+  }
+
+
+  .post-tag{
+      display: none;
+  }
+
+  .markdown-body{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .comment{width:90%}
+
+  .left-area,.right-area{
+    display: none;
+  }
+  .post-changearea{
+    display: block;
+  }
+
+  .postpage-subtitle{
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+  }
+
+}
+
+@media screen and ( max-width: 650px ){
+  #pc{
+    display: none;
+  }
+  #media{
+    display: block;
+  }
+
+  /* 标签页文章链接字体 */
+  .tag-post{
+    font-size: 14px;
+  }
+}
+
+@media screen and ( max-width: 600px ){
+  .top span:first-child{
+      top: 180px;
+      font-size: 30px;
+      font-weight: 450;
+  }
+  .top-nav{
+    display: none;
+  }
+  .page-link{
+    font-size: 25px;
+  }
+  #top-boot{
+    display:block;
+  }
+}

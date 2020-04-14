@@ -1,0 +1,109 @@
+/* ffad_matro字体 */
+@font-face {
+    font-family: 'ffad_matroregular';
+    src: url('../fonts/ffad_matro/ffad_matro-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/ffad_matro/ffad_matro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ffad_matro/ffad_matro-webfont.woff2') format('woff2'),
+         url('../fonts/ffad_matro/ffad_matro-webfont.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/ffad_matro/ffad_matro-webfont.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/ffad_matro/ffad_matro-webfont.svg#ffad_matroregular') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-----------*/
+
+@font-face {
+    font-family: 'kaushanscript';
+    src: url('../fonts/kaushanscript/kaushanscript.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/kaushanscript/kaushanscript.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kaushanscript/kaushanscript.woff2') format('woff2'),
+         url('../fonts/kaushanscript/kaushanscript.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/kaushanscript/kaushanscript.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/kaushanscript/kaushanscript.svg#kaushanscript') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico/Pacifico.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Pacifico/Pacifico.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Pacifico/Pacifico.woff2') format('woff2'),
+         url('../fonts/Pacifico/Pacifico.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/Pacifico/Pacifico.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/Pacifico/Pacifico.svg#Pacifico') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono/RobotoMono.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/RobotoMono/RobotoMono.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoMono/RobotoMono.woff2') format('woff2'),
+         url('../fonts/RobotoMono/RobotoMono.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/RobotoMono/RobotoMono.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/RobotoMono/RobotoMono.svg#RobotoMono') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fonts/SourceSansPro/SourceSansPro.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/SourceSansPro/SourceSansPro.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SourceSansPro/SourceSansPro.woff2') format('woff2'),
+         url('../fonts/SourceSansPro/SourceSansPro.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/SourceSansPro/SourceSansPro.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/SourceSansPro/SourceSansPro.svg#SourceSansPro') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Ubuntu/Ubuntu.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/Ubuntu/Ubuntu.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/Ubuntu/Ubuntu.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/Ubuntu/Ubuntu.svg#Ubuntu') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'operatormono';
+    src: url('../fonts/operatormono/operatormono.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/operatormono/operatormono.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/operatormono/operatormono.woff2') format('woff2'),
+         url('../fonts/operatormono/operatormono.woff') format('woff'),/* Modern Browsers */
+         url('../fonts/operatormono/operatormono.ttf') format('truetype'),/* Safari, Android, iOS */
+         url('../fonts/operatormono/operatormono.svg#operatormono') format('svg');/* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "YaHei Consolas Hybrid";
+  src: url("../fonts/YaHei Consolas Hybrid/YaHei Consolas Hybrid.woff2") format("woff2"),
+       url("../fonts/YaHei Consolas Hybrid/YaHei Consolas Hybrid.woff") format("woff"),
+       url("../fonts/YaHei Consolas Hybrid/YaHei Consolas Hybrid.ttf") format("truetype"),
+       url("../fonts/YaHei Consolas Hybrid/YaHei Consolas Hybrid.eot") format("embedded-opentype"),
+       url("../fonts/YaHei Consolas Hybrid/YaHei Consolas Hybrid.svg") format("svg");
+}
+
+@font-face {
+  font-family: "DankMonoNormal";
+  src: url("../fonts/DankMonoNormal/DankMonoNormal.woff2") format("woff2"),
+       url("../fonts/DankMonoNormal/DankMonoNormal.woff") format("woff"),
+       url("../fonts/DankMonoNormal/DankMonoNormal.ttf") format("truetype"),
+       url("../fonts/DankMonoNormal/DankMonoNormal.eot") format("embedded-opentype"),
+       url("../fonts/DankMonoNormal/DankMonoNormal.svg") format("svg");
+}

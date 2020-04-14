@@ -1,131 +1,48 @@
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="{{ site.description }}" />
+<meta name="keywords" content="{{ site.keywords }}" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_{{ site.pygmentsTheme }}.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
 
-  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>{{ page.title }}</title>
+<!-- 百度统计 -->
+{% if site.baidu %}
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu-url }}";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+{% endif %}
+<!-- 谷歌分析 -->
+{% if site.google %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-ID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <meta name="author" content="{{ site.author.name }}" />
-
-  {% if page.subtitle %}
-  <meta name="description" content="{{ page.subtitle }}">
-  {% endif %}
-
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
-
-  {% include gtag.html %}
-  {% include gtm_head.html %}
-  {% include google_analytics.html %}
-
-  {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
-  {% endif %}
-
-  {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if layout.common-googlefonts %}
-    {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
-  {% endif %}
-
-  {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}" />
-    {% endfor %}
-  {% endif %}
-
-  {% if page.googlefonts %}
-    {% for font in page.googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
-    {% endfor %}
-  {% endif %}
-
-    <!-- Facebook OpenGraph tags -->
-  {% if site.fb_app_id %}
-  <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
-  {% endif %}
-
-  {% if page.meta-title %}
-  <meta property="og:title" content="{{ page.meta-title }}" />
-  {% elsif page.title %}
-  <meta property="og:title" content="{{ page.title }}" />
-  {% else %}
-  <meta property="og:title" content="{{ site.title }}" />
-  {% endif %}
-
-   {% if page.meta-description %}
-  <meta property="og:description" content="{{ page.meta-description }}">
-  {% elsif page.subtitle %}
-  <meta property="og:description" content="{{ page.subtitle }}">
-  {% else %}
-  <meta property="og:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
-  {% endif %}
-
-
-  <meta property="og:type" content="website" />
-
-  {% if page.id %}
-  <meta property="og:url" content="{{ page.url | absolute_url }}" />
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
-  {% else %}
-  <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}" />
-  <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}" />
-  {% endif %}
-
-  {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.avatar | absolute_url }}" />
-  {% endif %}
-
-
-  <!-- Twitter summary cards -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-
-  {% if page.meta-title %}
-  <meta name="twitter:title" content="{{ page.meta-title }}" />
-  {% elsif page.title %}
-  <meta name="twitter:title" content="{{ page.title }}" />
-  {% else %}
-  <meta name="twitter:title" content="{{ site.title }}" />
-  {% endif %}
-
-  {% if page.meta-description %}
-  <meta name="twitter:description" content="{{ page.meta-description }}">
-  {% elsif page.subtitle %}
-  <meta name="twitter:description" content="{{ page.subtitle }}">
-  {% else %}
-  <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
-  {% endif %}
-
-  {% if page.share-img %}
-  <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.avatar | absolute_url }}" />
-  {% endif %}
-
-  {% if site.matomo %}
-  {% include matomo.html %}
-  {% endif %}
-
-  {% if page.comments and site.staticman.repository and site.staticman.branch %}
-  <!-- Staticman -->
-  <link rel="stylesheet" href="{{ "/css/staticman.css" | relative_url }}" />
-  {% endif %}
-
-</head>
+  gtag('config', '{{ site.google-ID }}');
+</script>
+{% endif %}

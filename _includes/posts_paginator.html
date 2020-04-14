@@ -1,0 +1,26 @@
+{% for post in paginator.posts %}
+  <a href="{{ post.url }}">
+      <li class="fadeInUp animated">
+          {% if post.cover %}
+          <div class="post-cover" style="background:url({{ post.cover }});background-size:cover;background-position:center;"></div>
+          {% endif %}
+          <section class="post-preview">
+              <h2 class="post-title">{{ post.title }}</h2>
+              {% if post.subtitle %}
+              <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+              {% endif %}
+              {% if post.subtitle.size==0 or post.subtitle==nil %}
+              <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+              {% endif %}
+          </section>
+          <footer class="post-tags">
+                {% if post.tags.size > 0 %}
+                    {% for tag in post.tags  %}
+                    <a href={{ "tags.html#" | append: tag | pretend: site.baseurl }} class="post-tag">{{ tag }}</a>
+                    {% endfor %}
+                {% endif %}
+                <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+          </footer>
+      </li>
+  </a>
+{% endfor %}

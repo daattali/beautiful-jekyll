@@ -1,0 +1,24 @@
+---
+layout: default
+title: 友情链接
+page-title: friendLinks
+home-title: This is my friends.
+description:
+---
+
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="ex-list">
+        <li  class="fadeInUp animated">
+          {% for friend in site.friends %}
+            <span class="tag-name" >
+                <a href="{{ friend[1] }}">「&emsp;{{ friend[0] }}&emsp;」</a>
+            </span>
+                </br>
+          {% endfor %}
+        </li>
+    </ul>
+</main>
+{% include footer.html %}
