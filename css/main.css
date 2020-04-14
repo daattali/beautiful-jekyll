@@ -52,7 +52,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .main-content {
-    padding-top: 130px;
+    padding-top: 80px;
   }
 }
 
@@ -436,6 +436,11 @@ footer .theme-by {
   margin: 80px 0 20px;
   position: relative;
 }
+@media (max-width: 639px) {
+  .intro-header {
+    margin: 30px 0 20px;
+  }
+}
 .intro-header.big-img {
   background: no-repeat center center;
   -webkit-background-size: cover;
@@ -513,7 +518,7 @@ footer .theme-by {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    margin-top: 80px;
   }
   .intro-header.big-img {
     margin-top: 91px; /* Full navbar is small navbar + 20px padding on each side when expanded */
@@ -787,7 +792,74 @@ pre {
   font-size: 16px;
 }
 
+/* page header */
+.covi-hero {
+  position: relative;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+.covi-hero__content {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.covi-hero__content h1 {
+  font-size: 3em;
+  line-height: 1.25;
+}
+.covi-hero__content p {
+  font-size: 1.625em;
+  line-height: 1.2;
+}
+@media (max-width: 639px) {
+  .covi-hero__content {
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
+  .covi-hero__content h1 {
+    font-size: 2em;
+  }
+  .covi-hero__content p {
+    font-size: 1.375em;
+  }
+}
+
 /* Embeds */
 .embed-responsive.embed-responsive-1by1 {
   padding-top: 100%;
+}
+
+/* Sections */
+.covi-section {
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.covi-section__title {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 0.75em;
+}
+.covi-section__content {
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 639px) {
+  .covi-section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .covi-section__title {
+    font-size: 1.5em;
+  }
+  .covi-section__content {
+    margin-bottom: 0.75em;
+  }
+}
+
+/* Background */
+.bg--white {
+  background-color: #fff;
+}
+.bg--light-gray {
+  background-color: #ebebeb;
+  color: #333;
 }

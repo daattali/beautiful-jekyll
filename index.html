@@ -1,117 +1,167 @@
 ---
-layout: page
+layout: default
 title: Thông tin COVID-19 tại Nhật Bản
+subtitle: Những thông tin từ nguồn tin chính thống nhất
 ---
 
-<!-- google slides - tổng quan -->
-<div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item"
-        src="https://docs.google.com/presentation/d/e/2PACX-1vRytQ_SqTd0r9a3f6zgqZQjnMwEO774yHzyL-49uZAh5uV5Zzth4NRqGikVSV3UmJ07p-0i3hswwEn0/embed?start=true&loop=true&delayms=10000"
-        frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-    </iframe>
-</div>
-
-<!-- tableau - bản đồ bệnh nhân covid 19 Nhật Bản -->
-<div class="embed-responsive embed-responsive-4by3">
-    <div class="embed-responsive-item">
-        <div class='tableauPlaceholder' id='viz1586766345131' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt=' '
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sb&#47;Sbnhnhntheonikhmbnhtheongy&#47;Bnbnhnhncovid19NhtBn&#47;1_rss.png'
-                        style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='Sbnhnhntheonikhmbnhtheongy&#47;Bnbnhnhncovid19NhtBn' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sb&#47;Sbnhnhntheonikhmbnhtheongy&#47;Bnbnhnhncovid19NhtBn&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='filter' value='publish=yes' />
-            </object>
+<div class="covi-hero">
+    <div class="container">
+        <div class="covi-hero__content">
+            <h1>{{page.title}}</h1>
+            <p>{{page.subtitle}}</p>
         </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1586766345131');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width = '100%';
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
     </div>
 </div>
 
-<!-- google calendar - thông tin covid 19 tại Nhật Bản (events) -->
-<div class="embed-responsive embed-responsive-1by1">
-    <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
-        src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23EF6C00&amp;ctz=Asia%2FTokyo&amp;src=dGhvbmd0aW5jb3ZpZDE5anBAZ21haWwuY29t&amp;color=%23F09300">
-    </iframe>
-</div>
-
-TOKYO
-<!-- tableau - Tokyo Corona Map -->
-<div class="embed-responsive embed-responsive-4by3">
-    <div class="embed-responsive-item">
-        <div class='tableauPlaceholder' id='viz1586778372379' style='position: relative'>
-            <noscript>
-                <a href='#'>
-                    <img alt=' '
-                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3T&#47;3TSR5YCYS&#47;1_rss.png'
-                        style='border: none' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='path' value='shared&#47;3TSR5YCYS' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                    value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3T&#47;3TSR5YCYS&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-            </object>
+<section class="bg--light-gray covi-section">
+    <div class="container">
+        <div class="covi-section__content">
+            <!-- google slides - tổng quan -->
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vRytQ_SqTd0r9a3f6zgqZQjnMwEO774yHzyL-49uZAh5uV5Zzth4NRqGikVSV3UmJ07p-0i3hswwEn0/embed?start=true&loop=true&delayms=10000"
+                    frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+                </iframe>
+            </div>
         </div>
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1586778372379');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width = '100%';
-            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
     </div>
-</div>
+</section>
 
-<!-- google spreadsheets - Số lượng bệnh nhân mới tại Tokyo mỗi ngày -->
-<div class="embed-responsive embed-responsive-16by9 visible-lg">
-    <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3wrkoYWZ-yCrkMlARzLyxSCn3ijYeUMxcIuFg6RlVFG7X__EmYxLPWDpFHxd7bTrIkap2ted57GSQ/pubchart?oid=1336123120&amp;format=interactive">
-    </iframe>
-</div>
-<div class="embed-responsive embed-responsive-1by1 hidden-lg">
-    <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3wrkoYWZ-yCrkMlARzLyxSCn3ijYeUMxcIuFg6RlVFG7X__EmYxLPWDpFHxd7bTrIkap2ted57GSQ/pubchart?oid=1336123120&amp;format=interactive">
-    </iframe>
-</div>
+<section class="bg--white covi-section">
+    <div class="container">
+        <h3 class="covi-section__title">
+            Tổng quan
+        </h3>
 
+        <div class="covi-section__content">
+            <!-- tableau - bản đồ bệnh nhân covid 19 Nhật Bản -->
+            <div class="embed-responsive embed-responsive-4by3">
+                <div class="embed-responsive-item">
+                    <div class='tableauPlaceholder' id='viz1586766345131' style='position: relative'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sb&#47;Sbnhnhntheonikhmbnhtheongy&#47;Bnbnhnhncovid19NhtBn&#47;1_rss.png'
+                                    style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Sbnhnhntheonikhmbnhtheongy&#47;Bnbnhnhncovid19NhtBn' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sb&#47;Sbnhnhntheonikhmbnhtheongy&#47;Bnbnhnhncovid19NhtBn&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1586766345131');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- google spreadsheets - Số lượng bênh nhân covid 19 theo quận -->
-<div class="embed-responsive embed-responsive-1by1">
-    <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTT_Om_7cJZ1tgviWZMAKvuwt-a30k1UNlBgtleGfVpgJczbxw3pNvEWrKb7GZgfBsMII328Z37gkOU/pubchart?oid=325428325&amp;format=interactive">
-    </iframe>
-</div>
+<section class="bg--light-gray covi-section">
+    <div class="container">
+        <div class="covi-section__content">
+            <!-- google calendar - thông tin covid 19 tại Nhật Bản (events) -->
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
+                    src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23EF6C00&amp;ctz=Asia%2FTokyo&amp;src=dGhvbmd0aW5jb3ZpZDE5anBAZ21haWwuY29t&amp;color=%23F09300">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg--white covi-section">
+    <div class="container">
+        <h3 class="covi-section__title">
+            Thông tin tại Tokyo
+        </h3>
+        <div class="covi-section__content">
+            <!-- tableau - Tokyo Corona Map -->
+            <div class="embed-responsive embed-responsive-4by3">
+                <div class="embed-responsive-item">
+                    <div class='tableauPlaceholder' id='viz1586778372379' style='position: relative'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3T&#47;3TSR5YCYS&#47;1_rss.png'
+                                    style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz' style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='path' value='shared&#47;3TSR5YCYS' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3T&#47;3TSR5YCYS&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                        </object>
+                    </div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1586778372379');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="covi-section__content">
+                        <!-- google spreadsheets - Số lượng bệnh nhân mới tại Tokyo mỗi ngày -->
+                        <div class="embed-responsive embed-responsive-16by9 visible-lg">
+                            <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
+                                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3wrkoYWZ-yCrkMlARzLyxSCn3ijYeUMxcIuFg6RlVFG7X__EmYxLPWDpFHxd7bTrIkap2ted57GSQ/pubchart?oid=1336123120&amp;format=interactive">
+                            </iframe>
+                        </div>
+                        <div class="embed-responsive embed-responsive-1by1 hidden-lg">
+                            <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
+                                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3wrkoYWZ-yCrkMlARzLyxSCn3ijYeUMxcIuFg6RlVFG7X__EmYxLPWDpFHxd7bTrIkap2ted57GSQ/pubchart?oid=1336123120&amp;format=interactive">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="covi-section__content">
+                        <!-- google spreadsheets - Số lượng bênh nhân covid 19 theo quận -->
+                        <div class="embed-responsive embed-responsive-1by1">
+                            <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
+                                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTT_Om_7cJZ1tgviWZMAKvuwt-a30k1UNlBgtleGfVpgJczbxw3pNvEWrKb7GZgfBsMII328Z37gkOU/pubchart?oid=325428325&amp;format=interactive">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
