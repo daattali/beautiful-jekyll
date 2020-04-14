@@ -2,7 +2,7 @@
 layout: post
 title: Tản mạn Liên Quân
 subtitle: 
-tag: tản mạn
+tag: [tản mạn, other]
 ---
 
    Đây là bài tản đầu tiên của mình, là tản mạn nên chủ đề cũng khá lan man cũng chỉ muốn ghi lại chút quan điểm sống cũng như góc nhìn của bản thân để đôi lúc nào đó đọc lại còn có thể à rằng mình đã từng như vậy !
