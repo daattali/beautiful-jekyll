@@ -50,13 +50,13 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 
 **Tháng 8-2019 Đến 4-2020** : Data analyst tại FeCredit: 
 
-- Build các model credit scorecard cho phân loại khách hàng tại các nhóm nợ B1,B2,B3 và sản phẩm Card. 
+- Build các model Credit Scorecard cho phân loại khách hàng tại các nhóm nợ B1,B2,B3 và sản phẩm Card. 
 - Tối ưu vận hành hệ thống thu hồi nợ : automation, inovation
 
 ### Thành tích: 
-- Nhiều các mô hình được ứng dụng tốt, gia tăng hiệu quả thu hồi nợ. 
+- Nhiều mô hình được ứng dụng tốt, gia tăng hiệu quả thu hồi nợ. 
 - Tối ưu nhiều quy trình vận hành.
-- **Best Performance 2019** chỉ trong thời gian làm việc 5 tháng (08/2019-12/2010)
+- Đạt **Best Performance 2019** chỉ trong thời gian làm việc 5 tháng (08/2019-12/2019)
 
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg" width="500" />
     
