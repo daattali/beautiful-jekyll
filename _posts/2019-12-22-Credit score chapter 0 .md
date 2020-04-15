@@ -58,5 +58,18 @@ Scorecard cho nhóm nợ B1 và B2 Loan:
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/Scorecard_intro_2.png)
 
+### Một số report mình build để theo dõi performance theo mô hình:
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report0.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report1.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report2.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report3.png)
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/scorecard_report4.png)
+
+
 
 Rất mong các bạn theo dõc các kỳ sau để hiểu hơn về cách xây dựng một mô hình Credit scorecard. Xin cám ơn !
