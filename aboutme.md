@@ -46,7 +46,9 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 - Build các model Credit Scorecard cho phân loại khách hàng tại các nhóm nợ B1,B2,B3 và sản phẩm Card. 
 - Tối ưu vận hành hệ thống thu hồi nợ : automation, inovation
 
-<a href="https://minmax49.github.io/credit%20scorecard/"> Scorecard series</a>
+Mời anh/chị vào đọc series Scorecard series để biết thêm chi tiết:
+<a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a>
+
 ### Thành tích: 
 - Nhiều mô hình được ứng dụng tốt, gia tăng hiệu quả thu hồi nợ. 
 - Tối ưu nhiều quy trình vận hành.
