@@ -20,7 +20,7 @@ description: Thông tin COVID-19 tại Nhật Bản
 
 # List of links in the navigation bar
 navbar-links:
-  Tổng quan: "index" 
+  Tổng quan: "index"
   Số liệu: "datajapan"
   Chính sách của chính phủ Nhật Bản: "policy"
   Bài viết từ chuyên gia: "baiviettuchuyengia"
@@ -59,7 +59,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: 
+  name:
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -97,7 +97,7 @@ url-pretty: "thongtincovid19.github.io/"  # eg. "deanattali.com/beautiful-jekyll
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-163703069-1"
 
 # Google Tag Manager ID
 #gtm: ""
