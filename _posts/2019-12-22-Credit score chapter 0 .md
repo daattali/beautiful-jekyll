@@ -27,7 +27,7 @@ Số điểm càng cao, thì người vay có xác suất vỡ nợ càng thấp
 
 Xác định rủi ro tín dụng để đưa ra các phương án cụ thể:
 
-  - Chấp phê duyệt khoản vay hay không.
+  - Có phê duyệt khoản vay hay không.
   - Được giải ngân bao nhiêu.
   - Vay với lãi suất bao nhiêu.
   - Cần những tài sản đảm bảo gì.
