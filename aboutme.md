@@ -33,12 +33,17 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 - visualization: matplotlib, seaborn
 - Thu thập dữ liệu: selenium, beautifulsoup, request-html
 - Lập trình hướng đối tượng
-    
-**PL_SQL:**
+
+**BIG-DATA:**
+- pyspark
+
+**SQL:**
 - Thành thạo các kỹ năng cần thiết để ETL data như tạo package, procedure, function, kết hợp đa luồng.
     
 **BI:**
 - Data studio, đã làm nhiều webapp kết hợp với BI
+
+
     
 -----------------
 ### Sự nghiệp :
