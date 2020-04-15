@@ -40,13 +40,13 @@ Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phả
 - Data studio, đã làm nhiều webapp kết hợp với BI
 
 
-    
 -----------------
 ### Sự nghiệp :
 **Tháng 8-2019 Đến 4-2020** : Data analyst tại FeCredit: 
 - Build các model Credit Scorecard cho phân loại khách hàng tại các nhóm nợ B1,B2,B3 và sản phẩm Card. 
 - Tối ưu vận hành hệ thống thu hồi nợ : automation, inovation
 
+<a href="https://minmax49.github.io/credit%20scorecard/"> Scorecard series</a>
 ### Thành tích: 
 - Nhiều mô hình được ứng dụng tốt, gia tăng hiệu quả thu hồi nợ. 
 - Tối ưu nhiều quy trình vận hành.
