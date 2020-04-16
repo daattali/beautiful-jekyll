@@ -22,8 +22,8 @@ description: Thông tin COVID-19 tại Nhật Bản
 navbar-links:
   Tổng quan: "index"
   Số liệu: "datajapan"
-  Chính sách của chính phủ Nhật Bản: "policy"
-  Bài viết từ chuyên gia: "baiviettuchuyengia"
+  Tin tức: "policy"
+  Bài viết: "baiviettuchuyengia"
   Giới thiệu: "aboutme"
   Liên lạc: "emailus"
 
