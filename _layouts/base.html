@@ -5,31 +5,35 @@ common-css:
   - "/css/main.css"
 common-ext-css:
   - "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  - "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+  - "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
 common-googlefonts:
   - "Lora:400,700,400italic,700italic"
   - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
 common-js:
   - "/js/jquery-1.11.2.min.js"
+  - "//code.jquery.com/jquery-migrate-1.2.1.min.js"
   - "/js/bootstrap.min.js"
+  - "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+  - "//cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"
   - "/js/main.js"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
   {% include head.html %}
 
   <body>
 
     {% include gtm_body.html %}
-  
+
     {% include nav.html %}
 
     {{ content }}
 
     {% include footer.html %}
-  
+
     {% include footer-scripts.html %}
-  
+
   </body>
 </html>
