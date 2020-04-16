@@ -6,16 +6,58 @@ var main = {
   numImgs : null,
 
   init : function() {
-    // Shorten the navbar after scrolling a little bit down
-    $(window).scroll(function() {
-        if ($(".navbar").offset().top > 50) {
-            $(".navbar").addClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeOut(500);
-        } else {
-            $(".navbar").removeClass("top-nav-short");
-            $(".navbar-custom .avatar-container").fadeIn(500);
-        }
-    });
+    // // Shorten the navbar after scrolling a little bit down
+    // $(window).scroll(function() {
+    //     if ($(".navbar").offset().top > 50) {
+    //         $(".navbar").addClass("top-nav-short");
+    //         $(".navbar-custom .avatar-container").fadeOut(500);
+    //     } else {
+    //         $(".navbar").removeClass("top-nav-short");
+    //         $(".navbar-custom .avatar-container").fadeIn(500);
+    //     }
+    // });
+
+    // Init smooth scroll
+    window.smoothScroll = new SmoothScroll('a[href*="#"]');
+
+    // Init carousel navigation
+    function updateNavCarouselPos() {
+      if (window.pageYOffset > 50) {
+        $(".covi-nav-fixed").css("top", 0);
+      }
+      else {
+        $(".covi-nav-fixed").css("top", 50 - window.pageYOffset);
+      }
+    }
+
+    if ($(".covi-nav-carousel").length > 0) {
+      $(".covi-nav-carousel").slick({
+        arrows: true,
+        centerMode: false,
+        variableWidth: true,
+        infinite: false,
+        draggable: true,
+        slidesToShow: 10,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 5,
+            }
+          }
+        ]
+      });
+      updateNavCarouselPos();
+      $(window).scroll(function() {
+        updateNavCarouselPos();
+      });
+    }
 
     // On mobile, hide the avatar when expanding the navbar menu
     $('#main-navbar').on('show.bs.collapse', function () {
