@@ -4,7 +4,7 @@ layout: base
 
 {% include header.html type="post" %}
 
-<div class="container">
+<div class="container" style="padding-bottom: 32px;">
   {% if page.gh-repo %}
   {% assign gh_split =  page.gh-repo | split:'/'  %}
   {% assign gh_user =  gh_split[0]  %}
