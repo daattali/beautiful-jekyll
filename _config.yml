@@ -32,8 +32,7 @@ avatar: "/img/avatar-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
-
+title-img: "https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/27867402_10156516666549305_1921245965302635270_n.jpg?_nc_cat=108&_nc_sid=7aed08&_nc_ohc=Eyj035t9e0sAX8dbL6I&_nc_ht=scontent-ort2-2.xx&oh=4fc6de54c30e74880e4aa3557aead207&oe=5EBF8C07&dl=1"
 # --- Background colour/image options --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
@@ -59,15 +58,14 @@ footer-link-col: "medium purple"
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: To be determined
+author: Flor Munoz
+  name: Flor Munoz
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
   email: "flormunozdch7@gmail.com"
   facebook: https://www.facebook.com/florlareinamunoz
   github: FlorLaReinaMunoz
@@ -93,7 +91,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "https://github.com/FlorLaReinaMunoz/beautiful-jekyll/"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -136,11 +134,11 @@ url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # To use Utterances comments: (1) fill in repository (make sure the repository is public), (2) Enable Issues in your repository, (3) Install the Utterances app in your repository https://github.com/apps/utterances
 # See more details about the parameters below at https://utteranc.es/
-utterances:
-  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-  issue-term: title   # Mapping between blog posts and GitHub issues
-  theme: github-light # Utterances theme
-  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+#utterances:
+ # repository:  GitHub "https://github.com/FlorLaReinaMunoz/beautiful-jekyll"
+ # issue-term: title   # Mapping between blog posts and GitHub issues
+ # theme: github-light # Utterances theme
+ # label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 
 # --- Misc --- #
@@ -150,11 +148,11 @@ utterances:
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+excerpt_length: 100
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "-"
+title-separator: "~"
 
 # Ruby Date Format
 date_format: "%B %-d, %Y"
@@ -257,6 +255,3 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
