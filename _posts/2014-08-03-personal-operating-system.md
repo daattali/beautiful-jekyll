@@ -4,11 +4,10 @@ title: Design your Personal Operating System — Habits
 <!-- subtitle: Secrets to habit change -->
 permalink: personal-operating-system
 image: https://farm3.staticflickr.com/2182/2328737233_9cd46fe0f2_b.jpg
-image-height: 100px
-image-width: 192px
 modified-date: Sep 16, 2018
 ---
-Habits are behaviors you do without thought. Your default. Your routine. <em>Habits become the operating system you live your life through.</em>
+
+Habits are behaviors you do without thought. Your default. Your routine. **Habits become the operating system you live your life through.**
 
 Marketers, advertisers, psychologists, designers have discovered tiny secrets that help them create behaviors and program an individual’s operating system.
 

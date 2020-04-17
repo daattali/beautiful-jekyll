@@ -4,13 +4,10 @@ title: A Timeless Software Developer Reading List
 subtitle: The 24 books that I recommend to software developers
 permalink: dev-reading-list
 image: /img-posts/devreadinglist-0-thumb.png
-image-height: 192px
-image-width: 192px
 modified-date:
 ---
 
-Learning software development (and continuing one's learning) is a fundamental skill in today's world.
-
+Learning software development is a fundamental skill in today's world.
 I hoped to share a list of books for understanding and growing in software development. I have shared parts of this list with team members who join my team or who I mentor.
 
 ----
