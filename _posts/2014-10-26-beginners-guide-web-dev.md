@@ -4,10 +4,10 @@ title: The Ultimate Beginners Guide To Web Development
 subtitle: Lessons from the Web Lead of an Amazon Web Service
 permalink: beginners-guide-web-dev
 image: https://github.com/fxchen/frankc/raw/master/2014%20October/selfie.jpg
-image-height: 140px
-image-width: 192px
 modified-date: Sep 16, 2018
+categories: ['selected']
 ---
+
 My friends love learning. This guide is an amalgamation of emails I have sent friends and things I have picked up in my journey to learn web development [<a href="#frontend-notes">1</a>]. By the end of this guide you’ll be able to answer the following questions:
 <ul>
   <li>“How might I build a personal website in an afternoon?”</li>

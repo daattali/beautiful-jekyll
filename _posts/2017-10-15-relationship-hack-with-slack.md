@@ -4,12 +4,11 @@ title: Relationship Hack with Slack
 subtitle: A Six Month Experiment
 permalink: relationship-hack-with-slack
 image: /img-posts/slack-0-icon.png
-image-height: 100px
-image-width: 100px
 modified-date: Sep 16, 2018
+categories: ['selected']
 ---
 
-Haley and I have been using Slack as a primary way to communicate in the past 6 months, and its been an authenticity and delight creating relationship hack
+Haley and I have been using Slack as a primary way to communicate in the past 6 months, and its been an authenticity and delight creating relationship hack.
 
 ![Mind blown][image-slack-9-brand]
 <p class="text-muted">via <a href="https://giphy.com/gifs/mind-blown-kVA5mbyY6Z6AU">giphy</a></p>

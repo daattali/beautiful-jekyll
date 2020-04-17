@@ -397,9 +397,9 @@ footer .theme-by {
 }
 .post-image {
   float: right;
-  height: 192px;
-  width: 192px;
-  margin-top: -35px;
+  max-height: 192px;
+  max-width: 192px;
+  /*margin-top: -35px;*/
   filter: grayscale(90%);
 }
 .post-image:hover {
@@ -407,8 +407,8 @@ footer .theme-by {
 }
 .post-image img {
   border-radius: 100px;
-  height: 192px;
-  width: 192px;
+  max-height: 192px;
+  max-width: 192px;
   float:right;
 }
 .post-preview .post-read-more {
@@ -457,14 +457,17 @@ footer .theme-by {
 
 @media only screen and (max-width: 500px) {
   .post-image, .post-image img {
-    height: 100px;
-    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    float:none;
+    clear:both;
   }
 
   .post-image {
     width: 100%;
     text-align: center;
     margin-top: 0;
+    margin-right: 10px;
     float: left;
   }
 }

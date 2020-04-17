@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Recent Articles
+title: Recent
 <!-- subtitle: recent writing -->
 show-avatar : true
 ---
@@ -8,16 +8,16 @@ show-avatar : true
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-     <h3 class="post-title">{{ post.title }}</h3>
-    </a>
-
-    {% if post.subtitle %}
-    <h4 class="post-subtitle">
-      {{ post.subtitle }}
-    </h4>
-    {% endif %}
-
+    <div class="post-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+       <h3 class="post-title">{{ post.title }}</h3>
+      </a>
+      {% if post.subtitle %}
+      <h4 class="post-subtitle">
+        {{ post.subtitle }}
+      </h4>
+      {% endif %}
+    </div>
     <div class="post-entry-container">
       {% if post.image %}
       <div class="post-image">
