@@ -13,7 +13,27 @@ Trong project này bạn có thể sử dụng Markdown để:
 
 ---
 
+## Convert Google Docs thành Markdown
+
+Nếu bạn không quen sử dụng Markdown thì project có chuẩn bị 1 cách để bạn có thể edit nội dung trên Google Docs rồi sinh ra Markdown tương ứng:
+
+1. Login vào Google Drive với account `thongtincovid19jp@gmail.com`
+2. Mở file [Doc2Markdown](https://docs.google.com/document/d/14faU-SCcowvbGhuNyluvc1B6zx42fQoq4Y7LPJp-FGU/edit)
+3. Xóa toàn bộ nội dung của file
+4. Soạn thảo văn bản bạn muốn và chỉnh sửa format bằng Google Docs như bình thường. Chú ý không thay đổi tên file.
+5. Sau khi xong, chọn `Custom Scripts > Convert to Markdown` từ thanh Menu
+6. Check mail `thongtincovid19jp@gmail.com` sẽ có 1 email tiêu đề `[MARKDOWN_MAKER] Doc2Markdown` với 2 file đính kèm.
+7. Click vào file `Docs2Markdown.md`, nội dung file sẽ hiển thị trong browser.
+8. Copy&paste vào chỗ bạn muốn.
+
+Script được viết bởi [Renato Magini](https://github.com/mangini/gdocs2md?fbclid=IwAR1Te3wGR-doE1Fc8I0w3ilGEWEhkQbTFxV6YHEhu_zmaefOXsIx9GGd4Dc), cựu nhân viên Google.
+Chỉnh sửa bởi Nghĩa.
+
+---
+
 ## 1 số syntax thường dùng trong Markdown
+
+Viết trực tiếp bằng markdown thì vẫn nhanh hơn là phải convert qua docs. Dưới đây là 1 số syntax cơ bản để giúp bạn bắt đầu.
 
 - Heading: `#[space][heading text]`
     - VD: `# Hướng dẫn sử dụng Markdown` => (xem trên đầu trang)
@@ -42,21 +62,3 @@ Trong project này bạn có thể sử dụng Markdown để:
 	- VD: `![see me](https://(shortened)/256px-Facebook_icon.svg.png)` => ![see me](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png)
     
 Còn nhiều syntax khác, có thể tham khảo tại [đây](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) hoặc [đây](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
-
----
-
-## Convert Google Docs thành Markdown
-
-Nếu bạn không quen sử dụng Markdown thì project có chuẩn bị 1 cách để bạn có thể edit nội dung trên Google Docs rồi sinh ra Markdown tương ứng:
-
-1. Login vào Google Drive với account `thongtincovid19jp@gmail.com`
-2. Mở file [Doc2Markdown](https://docs.google.com/document/d/14faU-SCcowvbGhuNyluvc1B6zx42fQoq4Y7LPJp-FGU/edit)
-3. Xóa toàn bộ nội dung của file
-4. Soạn thảo văn bản bạn muốn và chỉnh sửa format bằng Google Docs như bình thường. Chú ý không thay đổi tên file.
-5. Sau khi xong, chọn `Custom Scripts > Convert to Markdown` từ thanh Menu
-6. Check mail `thongtincovid19jp@gmail.com` sẽ có 1 email tiêu đề `[MARKDOWN_MAKER] Doc2Markdown` với 2 file đính kèm.
-7. Click vào file `Docs2Markdown.md`, nội dung file sẽ hiển thị trong browser.
-8. Copy&paste vào chỗ bạn muốn.
-
-Script được viết bởi [Renato Magini](https://github.com/mangini/gdocs2md?fbclid=IwAR1Te3wGR-doE1Fc8I0w3ilGEWEhkQbTFxV6YHEhu_zmaefOXsIx9GGd4Dc), cựu nhân viên Google.
-Chỉnh sửa bởi Nghĩa.
