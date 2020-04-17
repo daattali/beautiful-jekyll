@@ -19,7 +19,8 @@ use-site-title: true
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: site.date_format }}
+        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+        Posted on {{ post.date | date: date_format }}
     </p>
 
     <div class="post-entry-container">
@@ -31,9 +32,10 @@ use-site-title: true
       </div>
       {% endif %}
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_length = site.excerpt_length | default: 50 %}
+	{{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+        {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
           <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
       </div>
