@@ -11,7 +11,7 @@ description: A list of my recent works of art
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+#url: "https://github.com/FlorLaReinaMunoz/beautiful-jekyll"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -67,27 +67,33 @@ author: Flor Munoz
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   email: "flormunozdch7@gmail.com"
-  facebook: https://www.facebook.com/florlareinamunoz
-  github: FlorLaReinaMunoz
-  twitter: @lagueritaloca
-#  reddit: yourname
-  linkedin: https://www.linkedin.com/in/florlareinamunoz/
+  facebook: "https://www.facebook.com/florlareinamunoz"
+  github: "FlorLaReinaMunoz"
+  twitter: "@lagueritaloca"
+  reddit: "https://www.reddit.com/user/florlareinamunoz"
+  linkedin: "https://www.linkedin.com/in/florlareinamunoz/"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: lagueradomingera
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: "(512) 766-9077"
 #  steam: deanat78
 #  twitch: yourname
-#  yelp: yourname
+  yelp: "florlareinamunoz.yelp.com"
 
 # Select which share links to show in posts
 share-links-active:
   github: true
   facebook: true
   linkedin: true
+  instagram: true
+  yelp: true
+  telephone: true
+  reddit: true
+  email: true
+  twitter: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -160,7 +166,7 @@ date_format: "%B %-d, %Y"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "America/Central"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
