@@ -4,6 +4,14 @@
 #### 3. Convolutional Neural Networks in TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/verify/TTYFB4JKNANJ)
 #### 4. Natural Language Processing in TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/verify/A3JFCWSYCUFH)
 ***
+| Headlines     | Actual   | __Predicted__ |
+|-----|------|-------|
+|সারা দেশকে করোনা সংক্রমণে ঝুঁকিপূর্ণ ঘোষণা করেছে স্বাস্থ্য অধিদপ্তর|National|National|
+|লিভারপুলের মতো ভুল করবে না সিটি|Sports|Sports |
+|করোনা মোকাবিলায় যে কৌশলে এগিয়ে দরিদ্র এই দেশগুলো|International|International |
+|করোনাবশের চেষ্টায় জাপানের গবেষকেরা|Science |Science|
+|তথ্যপ্রযুক্তি খাতে বড় বিপর্যয়ের আশঙ্কা|Science|Sports|
+
 
 | Day      | __Course Name__    |Course Code (Initial)| Time  |Room |
 | ------   | -----                        | ----           | ---             |----- |
