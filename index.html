@@ -13,6 +13,27 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
   </div>
 </nav>
 
+<div class="container-fluid covi-latest-posts__wrapper bg-warning">
+  <div class="covi-latest-posts">
+    {% assign latest = (site.posts | sort: 'date' | ) | reverse %}
+    {% for post in latest limit: 5 %}
+    <div class="media covi-latest-posts__item">
+      <div class="media-body">
+        <a href="{{ post.url | relative_url }}">
+          <h4 class="media-heading">{{ post.title }}</h4>
+        </a>
+        <p class="post-meta">
+          Posted on {{ post.date | date: site.date_format }}
+        </p>
+        <div class="visible-lg post-entry">
+          {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+          <a class="post-read-more" href="{{ post.url | relative_url }}">[Read&nbsp;More]</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
 <section class="bg--light-gray covi-section">
   <div class="container">

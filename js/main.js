@@ -59,6 +59,20 @@ var main = {
       });
     }
 
+    // Init latest post carousel
+    if ($(".covi-latest-posts").length > 0) {
+      $(".covi-latest-posts").slick({
+        arrows: true,
+        centerMode: false,
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 750,
+        dots: true,
+      });
+    }
+
     // On mobile, hide the avatar when expanding the navbar menu
     $('#main-navbar').on('show.bs.collapse', function () {
       $(".navbar").addClass("top-nav-expanded");
