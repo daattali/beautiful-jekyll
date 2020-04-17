@@ -5,6 +5,7 @@ title: Design your Personal Operating System — Habits
 permalink: personal-operating-system
 image: https://farm3.staticflickr.com/2182/2328737233_9cd46fe0f2_b.jpg
 modified-date: Sep 16, 2018
+categories: ['selected']
 ---
 
 Habits are behaviors you do without thought. Your default. Your routine. **Habits become the operating system you live your life through.**

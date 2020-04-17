@@ -5,6 +5,7 @@ subtitle: A Six Month Experiment
 permalink: relationship-hack-with-slack
 image: /img-posts/slack-0-icon.png
 modified-date: Sep 16, 2018
+categories: ['selected']
 ---
 
 Haley and I have been using Slack as a primary way to communicate in the past 6 months, and its been an authenticity and delight creating relationship hack.

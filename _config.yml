@@ -150,7 +150,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 10
-paginate_path: "writing/page:num/"
+paginate_path: "writing/:num/"
 
 kramdown:
   input: GFM

@@ -21,125 +21,19 @@ I am a maker and avid traveler. I love the outdoors, running, and gymnastics. As
 <hr>
 <p class="spacer"></p>
 
-<h2>selected articles</h2>
-<!--
-Adding articles…
-- change h2 → h4 and h3 → h5
-- remove Post Date
-- Modify style manually for img height
--->
-<div class="posts-list">
-  <article class="post-preview">
-    <a href="/relationship-hack-with-slack">
-      <h4 class="post-title">Relationship Hack with Slack</h4>
-      <h5 class="post-subtitle">
-        A Six Month Experiment
-      </h5>
-    </a>
-    <div class="post-entry-container">
-      <div class="post-image">
-        <a href="/relationship-hack-with-slack">
-          <img style="height: 100px; width: 100px" src="/img-posts/slack-0-icon.png">
-        </a>
-      </div>
-      <div class="post-entry">
-        Haley and I have been using Slack as a primary way to communicate in the past 6 months, and its been an authenticity and delight creating relationship hack
-        <br>
-        <a href="/relationship-hack-with-slack" class="post-read-more">[Read&nbsp;More]</a>
-      </div>
-    </div>
-  </article>
-  <article class="post-preview">
-    <a href="/personal-operating-system">
-      <h4 class="post-title">Design your Personal Operating System — Habits</h4>
-    </a>
-    <div class="post-entry-container">
-      <div class="post-image">
-        <a href="/personal-operating-system">
-          <img style="height: 100px;" src="https://farm3.staticflickr.com/2182/2328737233_9cd46fe0f2_b.jpg">
-        </a>
-      </div>
-      <div class="post-entry">
-        Habits are behaviors you do without thought. Your default. Your routine. Habits become the operating system you live your life through<br>
-        <a href="/personal-operating-system" class="post-read-more">[Read&nbsp;More]</a>
-      </div>
-    </div>
-  </article>
-  <article class="post-preview">
-    <a href="/beginners-guide-web-dev">
-      <h4 class="post-title">The Ultimate Beginners Guide To Web Development</h4>
-        <h5>Lessons from the Web Lead of an Amazon Web Service</h5>
-    </a>
-    <div class="post-entry-container">
-      <div class="post-image">
-        <a href="/beginners-guide-web-dev">
-          <img style="height: 140px;"src="https://github.com/fxchen/frankc/raw/master/2014%20October/selfie.jpg">
-        </a>
-      </div>
-      <div class="post-entry">
-        This guide is an amalgamation of emails I have sent friends and things I have picked up in my journey to learn web development<br>
-        <a href="/beginners-guide-web-dev" class="post-read-more">[Read&nbsp;More]</a>
-      </div>
-    </div>
-  </article>
-</div>
+<h3>recent writing</h3>
+<ul>
+  {% for post in site.posts limit:2 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>  <i>{{post.subtitle}}</i></li>
+  {% endfor %}
+</ul>
 
-<!-- TEMPLATE (change h2 → h4; remove Post Date; Modify style manually for img height)
--->
+<h3>selected writing</h3>
+<ul>
+  {% for post in site.categories['selected'] %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> <i>{{post.subtitle}}</i></li>
+  {% endfor %}
+</ul>
 
-<!-- UNUSED "Featured Projects"
-<div class="row text-center">
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-      {%- assign gh-user = "OCram85"-%}
-      {%- assign gh-project = "Ponduit" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x stack-color"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4>{{- gh-project -}}</h4>
-        <hr class="seperator">
-        <p class="text-muted">A simple Phabricator Conduit client made with Powershell.</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-      {%- assign gh-project = "PSCoverage" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x stack-color"></i>
-          <i class="fa fa-file-code-o fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4>{{- gh-project -}}</h4>
-        <hr class="seperator">
-        <p class="text-muted">A code coverage interface for coveralls.io. Based on Pester coverage reports.</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-    {%- assign gh-project = "PSCredentialStore" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
-        <span class="fa-stack fa-4x">
-          <i class="fa fa-circle fa-stack-2x stack-color"></i>
-          <i class="fa fa-user-secret fa-stack-1x fa-inverse"></i>
-        </span>
-        <h4>{{- gh-project -}}</h4>
-        <hr class="seperator">
-        <p class="text-muted">A simple credential manager to store and reuse multiple credential objects.</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
-      </a>
-    </div>
-  </div>
-</div>
-!-->
+<a href="/writing"><h3>more…</h3></a>
+
