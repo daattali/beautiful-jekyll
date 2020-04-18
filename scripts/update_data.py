@@ -173,6 +173,7 @@ def get_and_cleanse_prefecture_data() -> pd.DataFrame:
     for pref in data['data47']:
         formatted_list.append([pref['name']] + pref['data'] + [sum(pref['data'])])
     df = pd.DataFrame(formatted_list, columns=['Prefecture'] + data['category'] + ['Total'])
+    df['Prefecture'].replace(PREFECTURES, inplace=True)
 
     return df
 
