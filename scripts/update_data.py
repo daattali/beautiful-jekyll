@@ -132,7 +132,7 @@ def get_and_cleanse_tokyo_data(auto_drop: bool = False) -> pd.DataFrame:
         '不明': 'Không rõ',
         '調査中': 'Đang điều tra',
     }, inplace=True)
-    tokyo_data[COL_PATIENT_AGE] = tokyo_data[COL_PATIENT_AGE].apply(lambda x: x[:-1])  # Remove 代 at the end of age
+    tokyo_data[COL_PATIENT_AGE] = tokyo_data[COL_PATIENT_AGE].str.replace('代', 's')
     tokyo_data[COL_PATIENT_AGE].replace({
         '10歳未': 'Dưới 10',
         '100歳以': 'Trên 100',
