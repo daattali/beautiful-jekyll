@@ -27,4 +27,4 @@ dashboard cho ngầu nhỉ, dễ như ăn bánh, bắt đầu thôi.
 
 ## Bước 5: Kéo thả và tận hưởng thành quả thôi !!!
 
-<iframe width="800" height="800" src="https://datastudio.google.com/embed/reporting/d1dabf6a-9412-4595-9406-d09c7e8331ca/page/e1tMB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="800" height="1200" src="https://datastudio.google.com/embed/reporting/d1dabf6a-9412-4595-9406-d09c7e8331ca/page/e1tMB" frameborder="0" style="border:0" allowfullscreen></iframe>
