@@ -186,7 +186,6 @@ var main = {
 
   initMaps: function () {
     // JP map overview
-
     if ($("#map-jp-overview").length > 0) {
       Highcharts.getJSON("./covid19.json", (result) => {
         const data = _.chain(result)
@@ -205,6 +204,10 @@ var main = {
         Highcharts.mapChart("map-jp-overview", {
           chart: {
             map: "countries/jp/jp-all",
+            panning: {
+            	enabled: true,
+            	type: 'xy'
+            }
           },
           title: {
             text: "Bản đồ bệnh nhân COVID-19 Nhật Bản",
@@ -240,6 +243,7 @@ var main = {
                 format: "{point.name}",
               },
               joinBy: ["name", "prefecture"],
+              nullInteraction: true,
             },
             {
               name: "Separators",
@@ -254,6 +258,15 @@ var main = {
               enableMouseTracking: false,
             },
           ],
+          tooltip: {
+            formatter: function (tooltip) {
+              if (this.point.isNull) {
+                return `<span style="color:#f7f7f7">●</span> <span style="font-size: 10px"> Số bệnh nhân</span><br/>${this.point.name}: <b>0</b>`;
+              }
+              // If not null, use the default formatter
+              return tooltip.defaultFormatter.call(this, tooltip);
+            },
+          },
         });
       });
     }
