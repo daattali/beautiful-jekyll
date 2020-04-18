@@ -3,6 +3,8 @@ import json
 import urllib.request
 import sys
 
+import firebase_admin
+from firebase_admin import credentials, firestore
 import pandas as pd
 
 
@@ -32,8 +34,8 @@ PREFECTURES = {
     '愛知県': 'Aichi',
     '三重県': 'Mie',
     '滋賀県': 'Shiga',
-    '京都県': 'Kyoto',
-    '大阪県': 'Osaka',
+    '京都府': 'Kyoto',
+    '大阪府': 'Osaka',
     '兵庫県': 'Hyogo',
     '奈良県': 'Nara',
     '和歌山県': 'Wakayama',
@@ -55,6 +57,13 @@ PREFECTURES = {
     '鹿児島県': 'Kagoshima',
     '沖縄県': 'Okinawa',
 }
+
+DB_PATIENT_ALL = 'patient-all'
+DB_PATIENT_TOKYO = 'patient-tokyo'
+DB_PREFECTURE_BY_DATE = 'prefecture-by-date'
+
+FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
+FIREBASE_BATCH_SIZE = 499  # Max = 500
 
 
 def get_and_cleanse_tokyo_data(auto_drop: bool = False) -> pd.DataFrame:
@@ -212,21 +221,56 @@ def load_patient_database() -> pd.DataFrame:
     with urllib.request.urlopen(request) as url:
         data = json.loads(url.read().decode())
 
-    df = pd.DataFrame([entry['attributes'] for entry in x['features']])
+    df = pd.DataFrame([entry['attributes'] for entry in data['features']])
+    df['Date'].fillna(0, inplace=True)
     df['Date'] = pd.to_datetime(df['Date'], unit='ms')
     return df
+
+
+def batch_data(iterable, n=1):
+    """Divide data into batches of fix length."""
+    l = len(iterable)
+    for ndx in range(0, l, n):
+        yield iterable[ndx:min(ndx + n, l)]
+
+
+def upload_to_firebase(data, client, root, item_key=None, batch_size=FIREBASE_BATCH_SIZE):
+    if item_key not in data.columns:
+        item_key = None
+    data_dict = data.to_dict(orient='record')
+    for batched_data in batch_data(data_dict, batch_size):
+        batch = client.batch()
+        for data_item in batched_data:
+            if item_key is not None:
+                doc_ref = client.collection(root).document(str(data_item[item_key]))
+            else:
+                doc_ref = client.collection(root).document()
+            batch.set(doc_ref, data_item)
+        batch.commit()
 
 
 def main(args=None):
     tokyo_data = get_and_cleanse_tokyo_data()
     patients_by_prefecture = get_and_cleanse_prefecture_data()
-    patient_details = load_patient_database()
-    
+    patients_all = load_patient_database()
+
+    cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
+    app = firebase_admin.initialize_app(cred)
+    client = firestore.client()
+
     now = datetime.datetime.now()
     timestamp = now.strftime('%Y%m%d_%H%M')
-    file_names = ['tokyo', 'all_prefectures', 'all_patients']
-    for file_name, data in zip(file_names, [tokyo_data, patients_by_prefecture, patient_details]):
-        data.to_csv(f'{timestamp}_{file_name}.csv', index=False)
+    params = (
+        # DataFrame              DB name                Key column
+        (tokyo_data,             DB_PATIENT_TOKYO,      'STT'),
+        (patients_by_prefecture, DB_PREFECTURE_BY_DATE, 'Prefecture'),
+        (patients_all,           DB_PATIENT_ALL,        'ObjectId'),
+    )
+
+    for data, db_name, key_column in params:
+        print(f'Uploading {db_name}, key_column={key_column}')
+        data.to_csv(f'{timestamp}_{db_name}.csv', index=False)
+        upload_to_firebase(data, client, db_name, key_column)
     
     return 0
 
