@@ -177,14 +177,54 @@ def get_and_cleanse_prefecture_data() -> pd.DataFrame:
     return df
 
 
+def load_patient_database() -> pd.DataFrame:
+    """Get data from ArcGIS."""
+    URL = (
+        'https://services8.arcgis.com/JdxivnCyd1rvJTrY/ArcGIS/rest/services/v2_covid19_list_csv/FeatureServer/0/'
+        'query?where=1=1'
+        '&geometryType=esriGeometryEnvelope'
+        '&spatialRel=esriSpatialRelIntersects'
+        '&resultType=none'
+        '&distance=0.0'
+        '&units=esriSRUnit_Meter'
+        '&returnGeodetic=false'
+        '&outFields=*'
+        '&returnGeometry=false'
+        '&featureEncoding=esriDefault'
+        '&multipatchOption=xyFootprint&'
+        '&applyVCSProjection=false'
+        '&returnIdsOnly=false'
+        '&returnUniqueIdsOnly=false'
+        '&returnCountOnly=false'
+        '&returnExtentOnly=false'
+        '&returnQueryGeometry=false'
+        '&returnDistinctValues=false'
+        '&cacheHint=false'
+        '&resultRecordCount=0'
+        '&returnZ=false'
+        '&returnM=false'
+        '&returnExceededLimitFeatures=true'
+        '&sqlFormat=none'
+        '&f=pjson'
+    )
+    request = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(request) as url:
+        data = json.loads(url.read().decode())
+
+    df = pd.DataFrame([entry['attributes'] for entry in x['features']])
+    df['Date'] = pd.to_datetime(df['Date'], unit='ms')
+    return df
+
+
 def main(args=None):
     tokyo_data = get_and_cleanse_tokyo_data()
-    _, patients_by_prefecture = get_and_cleanse_prefecture_data()
+    patients_by_prefecture = get_and_cleanse_prefecture_data()
+    patient_details = load_patient_database()
     
     now = datetime.datetime.now()
     timestamp = now.strftime('%Y%m%d_%H%M')
-    file_names = ['tokyo', 'all_prefectures']
-    for file_name, data in zip(file_names, [tokyo_data, patients_by_prefecture]):
+    file_names = ['tokyo', 'all_prefectures', 'all_patients']
+    for file_name, data in zip(file_names, [tokyo_data, patients_by_prefecture, patient_details]):
         data.to_csv(f'{timestamp}_{file_name}.csv', index=False)
     
     return 0
