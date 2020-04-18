@@ -2,7 +2,7 @@
 layout: post
 title: House price visualization
 subtitle: HCM housing chapter 2 
-tags: [HCM housing]
+tags: [HCM housing, Google Ecosystem]
 ---
 
 Hiện mình đang crawl data bất động sản để dự báo xu hướng giá nhà trong trương lai. Trong lúc chờ đợi tại sao không làm tý 
