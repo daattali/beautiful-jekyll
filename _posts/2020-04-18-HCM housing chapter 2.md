@@ -32,4 +32,4 @@ Kết nối Data studio với Google spreadsheet mình vừa tạo
 ## Bước 5: 
 Kéo thả và tận hưởng thành quả thôi !!!
 
-<iframe width="100%" height="580px" src="https://datastudio.google.com/embed/reporting/d1dabf6a-9412-4595-9406-d09c7e8331ca/page/e1tMB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe width="100%" height="780px" src="https://datastudio.google.com/embed/reporting/d1dabf6a-9412-4595-9406-d09c7e8331ca/page/e1tMB" frameborder="0" style="border:0" allowfullscreen></iframe>
