@@ -163,15 +163,18 @@ def get_and_cleanse_tokyo_data(auto_drop: bool = False) -> pd.DataFrame:
 def get_and_cleanse_prefecture_data() -> pd.DataFrame:
     """Get data from NHK and localize to Vietnamese."""
     request = urllib.request.Request(
-        'https://www3.nhk.or.jp/news/special/coronavirus/data/input-pref.json',
+        'https://www3.nhk.or.jp/news/special/coronavirus/data/47newpatients-data.json',
         headers={'User-Agent': 'Mozilla/5.0'}
     )
     with urllib.request.urlopen(request) as url:
         data = json.loads(url.read().decode())
 
-    df = pd.DataFrame(data['prefList'])
-    df['pref'].replace(PREFECTURES, inplace=True)
-    return data['lastupdate'], df
+    formatted_list = []
+    for pref in data['data47']:
+        formatted_list.append([pref['name']] + pref['data'] + [sum(pref['data'])])
+    df = pd.DataFrame(formatted_list, columns=['Prefecture'] + data['category'] + ['Total'])
+
+    return df
 
 
 def main(args=None):
