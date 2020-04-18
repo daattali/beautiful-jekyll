@@ -4,6 +4,8 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2020-04-18** Add ability to disable round logo (thanks @gpotter2)
+
 **2020-04-01** Add support for Utterances comments (#596) (thanks @colynn)
 
 **2020-03-23** Remove just-comments as it's getting killed at the end of the year
