@@ -12,12 +12,18 @@ dashboard cho ngầu nhỉ, dễ như ăn bánh, bắt đầu thôi.
 ## Bước 1:
 Đầu tiên mình sẽ tạo file Google spreadsheet trên Google drive của mình để chứa data mình crawl. 
 
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_0.png)
+
 
 ## Bước 2:
 Tạo dự án Data studio cho mình:
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_1.png)
+
 
 ## Bước 3: 
 Kết nối Data studio với Google spreadsheet mình vừa tạo, định dạng lại các trường dữ liệu
+
+![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_2.png)
 
 ## Bước 4: 
 Kéo thả và tận hưởng thành quả thôi !!!
