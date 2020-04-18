@@ -4,7 +4,7 @@ import urllib.request
 import sys
 
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, storage
 import pandas as pd
 
 
@@ -62,8 +62,10 @@ DB_PATIENT_ALL = 'patient-all'
 DB_PATIENT_TOKYO = 'patient-tokyo'
 DB_PREFECTURE_BY_DATE = 'prefecture-by-date'
 
-FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
+FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
 FIREBASE_BATCH_SIZE = 499  # Max = 500
+FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
+FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
 
 
 def get_and_cleanse_tokyo_data(auto_drop: bool = False) -> pd.DataFrame:
@@ -224,6 +226,7 @@ def load_patient_database() -> pd.DataFrame:
     df = pd.DataFrame([entry['attributes'] for entry in data['features']])
     df['Date'].fillna(0, inplace=True)
     df['Date'] = pd.to_datetime(df['Date'], unit='ms')
+    df['Date'] = df['Date'].dt.strftime('%Y%m%d %H:%M')
     return df
 
 
@@ -249,14 +252,30 @@ def upload_to_firebase(data, client, root, item_key=None, batch_size=FIREBASE_BA
         batch.commit()
 
 
+def upload_to_storage(data, file_name, bucket):
+    """Upload a Dataframe as JSON to Firebase Storage.
+
+    returns
+        storage_ref
+    """
+    storage_ref = file_name + '.json'
+    blob = bucket.blob(storage_ref)
+    blob.upload_from_string(json.dumps(data.to_dict(orient='record')))
+
+    return storage_ref
+
+
 def main(args=None):
+    cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
+    app = firebase_admin.initialize_app(cred,  {
+        'storageBucket': f'{FIREBASE_APP_NAME}.appspot.com'
+    })
+    client = firestore.client()
+    bucket = storage.bucket(app=app)
+
     tokyo_data = get_and_cleanse_tokyo_data()
     patients_by_prefecture = get_and_cleanse_prefecture_data()
     patients_all = load_patient_database()
-
-    cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
-    app = firebase_admin.initialize_app(cred)
-    client = firestore.client()
 
     now = datetime.datetime.now()
     timestamp = now.strftime('%Y%m%d_%H%M')
@@ -270,7 +289,8 @@ def main(args=None):
     for data, db_name, key_column in params:
         print(f'Uploading {db_name}, key_column={key_column}')
         data.to_csv(f'{timestamp}_{db_name}.csv', index=False)
-        upload_to_firebase(data, client, db_name, key_column)
+        # upload_to_firebase(data, client, db_name, key_column)
+        upload_to_storage(data, db_name, bucket)
     
     return 0
 
