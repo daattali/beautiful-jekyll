@@ -37,6 +37,7 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
     <div class="covi-section__content">
       <!-- highmap - bản đồ bệnh nhân covid 19 Nhật Bản -->
       <div id="map-jp-overview"></div>
+      <div class="text-danger text-center" id="map-jp-overview__footer"></div>
     </div>
   </div>
 </section>
@@ -60,7 +61,18 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
       <div class="col-md-6">
         <div class="covi-section__content">
           <!-- highcharts - Số lượng bệnh nhân mới tại Tokyo mỗi ngày -->
-          <div id="graph-daily-tokyo"></div>
+          <!-- <div id="graph-daily-tokyo"></div> -->
+          <!-- google spreadsheets - Số lượng bệnh nhân mới tại Tokyo mỗi ngày -->
+          <div class="embed-responsive embed-responsive-16by9 visible-lg">
+            <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3wrkoYWZ-yCrkMlARzLyxSCn3ijYeUMxcIuFg6RlVFG7X__EmYxLPWDpFHxd7bTrIkap2ted57GSQ/pubchart?oid=1336123120&amp;format=interactive">
+            </iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-1by1 hidden-lg">
+            <iframe class="embed-responsive-item" frameborder="0" scrolling="yes"
+              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3wrkoYWZ-yCrkMlARzLyxSCn3ijYeUMxcIuFg6RlVFG7X__EmYxLPWDpFHxd7bTrIkap2ted57GSQ/pubchart?oid=1336123120&amp;format=interactive">
+            </iframe>
+          </div>
         </div>
       </div>
 

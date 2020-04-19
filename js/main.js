@@ -1,5 +1,3 @@
-// Dean Attali / Beautiful Jekyll 2016
-
 var main = {
   bigImgEl: null,
   numImgs: null,
@@ -116,25 +114,24 @@ var main = {
     // show maps
     main.initMaps();
 
-    // show graphs
-    main.initGraphs();
+    // TODO: show graphs
+    // main.initGraphs();
   },
 
   initFirebase: function () {
-    const firebaseConfig = firebaseConfig = {
+    const firebaseConfig = {
       apiKey: "AIzaSyBWAIFZjF-zSB9SymxXULUCz6BcPYacwL4",
       authDomain: "thongtincovid19-4dd12.firebaseapp.com",
       databaseURL: "https://thongtincovid19-4dd12.firebaseio.com",
       projectId: "thongtincovid19-4dd12",
       storageBucket: "thongtincovid19-4dd12.appspot.com",
       messagingSenderId: "751392916473",
-      appId: "1:751392916473:web:2aa4202b9354c668ed3328"
+      appId: "1:751392916473:web:2aa4202b9354c668ed3328",
     };
 
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   },
-
 
   initImgs: function () {
     // If the page was large images to randomly select from, choose an image
@@ -206,13 +203,32 @@ var main = {
     }
   },
 
-  initMaps: function () {
+  initMaps: async function () {
+    const storage = firebase.storage();
     // JP map overview
     if ($("#map-jp-overview").length > 0) {
-      Highcharts.getJSON("./covid19.json", (result) => {
-        const data = _.chain(result)
-          .get("features")
-          .groupBy("attributes.Prefecture")
+      try {
+        // load data from firebase storage
+        const fileRef = storage.ref("patient-all.json");
+        const url = await fileRef.getDownloadURL().catch((e) => {
+          throw e;
+        });
+        const metadata = await fileRef.getMetadata().catch((e) => {
+          throw e;
+        });
+        const response = await fetch(url).catch((e) => {
+          throw e;
+        });
+        const responseData = await response.json().catch((e) => {
+          throw e;
+        });
+
+        // prepare data to render
+        const updatedAt = moment(metadata.updated)
+          .local()
+          .format("HH:mm DD/MM/YYYY");
+        const data = _.chain(responseData)
+          .groupBy("Prefecture")
           .mapValues((value, key) => {
             return {
               prefecture: key,
@@ -222,7 +238,7 @@ var main = {
           .values()
           .value();
 
-        // Create the chart
+          // Create the chart
         Highcharts.mapChart("map-jp-overview", {
           chart: {
             map: "countries/jp/jp-all",
@@ -290,80 +306,68 @@ var main = {
             },
           },
         });
-      });
+
+        $("#map-jp-overview__footer").html(`<small>Cập nhật lúc: ${updatedAt}.</small>`);
+      } catch (error) {
+        // TODO: error handler
+        console.error(error);
+      }
     }
   },
 
   initGraphs: function () {
     // tokyo daily graph
     if ($("#graph-daily-tokyo").length > 0) {
-      Highcharts.getJSON("https://spreadsheets.google.com/feeds/list/1yPMARIOZEsLh4_ymE7moji0_tmKMHNl4VuuWwzFiSl8/2/public/full?alt=json", result => {
-        const contents = _.chain(result).get("feed.entry").map("content.$t");
-        const formatted = contents.map(c => _.fromPairs(c.split(', ').map(s => s.split(': ')))).value();
-console.debug(_.chain(result).get("feed.entry").value());
-console.debug(contents.value());
-        Highcharts.chart("graph-daily-tokyo", {
-          chart: {
-            type: "column",
-          },
-          legend: {
-            enabled: false,
-          },
-          title: {
-            text: "Số lượng bệnh nhân mới tại Tokyo mỗi ngày",
-          },
-          subtitle: {
-            text: `Nguồn: <a href="https://stopcovid19.metro.tokyo.lg.jp/" target="_blank">https://stopcovid19.metro.tokyo.lg.jp/</a>`,
-          },
-          xAxis: {
-            categories: [
-              "Jan",
-              "Feb",
-              "Mar",
-              "Apr",
-              "May",
-              "Jun",
-              "Jul",
-              "Aug",
-              "Sep",
-              "Oct",
-              "Nov",
-              "Dec",
+      Highcharts.getJSON(
+        "https://spreadsheets.google.com/feeds/list/1yPMARIOZEsLh4_ymE7moji0_tmKMHNl4VuuWwzFiSl8/2/public/full?alt=json",
+        (result) => {
+          const contents = _.chain(result).get("feed.entry").filter(e => _.get(e, "gsx$公表年月日.$t")).value();
+          const formatted = _.chain(contents.slice(0, -1)).mapValues(c => {
+            return {
+              date: _.get(c, "gsx$公表年月日.$t"),
+              count: _.chain(c).get("gsx$countaofno.$t").parseInt().value()
+            };
+          }).orderBy("date", "desc").value();
+          console.debug(formatted);
+          console.debug(_.map(formatted, "count"));
+
+          Highcharts.chart("graph-daily-tokyo", {
+            chart: {
+              type: "column",
+            },
+            legend: {
+              enabled: false,
+            },
+            title: {
+              text: "Số lượng bệnh nhân mới tại Tokyo mỗi ngày",
+            },
+            subtitle: {
+              text: `Nguồn: <a href="https://stopcovid19.metro.tokyo.lg.jp/" target="_blank">https://stopcovid19.metro.tokyo.lg.jp/</a>`,
+            },
+            xAxis: {
+              categories: _.map(formatted, "date"),
+              crosshair: true,
+            },
+            yAxis: {
+              min: 0,
+              title: false,
+            },
+            plotOptions: {
+              column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+              },
+            },
+            series: [
+              {
+                name: "Số bệnh nhân",
+                data: _.map(formatted, "count"),
+                color: "rgba(255,159,64,1)",
+              },
             ],
-            crosshair: true,
-          },
-          yAxis: {
-            min: 0,
-            title: false,
-          },
-          plotOptions: {
-            column: {
-              pointPadding: 0.2,
-              borderWidth: 0,
-            },
-          },
-          series: [
-            {
-              name: "Số bệnh nhân",
-              data: [
-                49.9,
-                71.5,
-                106.4,
-                129.2,
-                144.0,
-                176.0,
-                135.6,
-                148.5,
-                216.4,
-                194.1,
-                95.6,
-                54.4,
-              ],
-              color: "rgba(255,159,64,1)",
-            },
-          ],
-        });
-      });
+          });
+        }
+      );
     }
   },
 };
