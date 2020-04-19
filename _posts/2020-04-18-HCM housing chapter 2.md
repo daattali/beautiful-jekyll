@@ -6,7 +6,7 @@ tags: [HCM housing, Google Ecosystem]
 ---
 
 Hiện mình đang crawl data bất động sản để dự báo xu hướng giá nhà trong trương lai. Trong lúc chờ đợi tại sao không làm tý 
-dashboard cho ngầu nhỉ, dễ như ăn bánh, bắt đầu thôi.
+dashboard cho ngầu nhỉ và chúng ta có thể sử dụng nó để theo dõi diễn biến giá nhà hằng ngày, dễ như ăn bánh, bắt đầu thôi.
 
 
 ## Bước 1: 
