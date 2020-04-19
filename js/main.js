@@ -238,7 +238,7 @@ var main = {
           .values()
           .value();
 
-          // Create the chart
+        // Create the chart
         Highcharts.mapChart("map-jp-overview", {
           chart: {
             map: "countries/jp/jp-all",
@@ -250,9 +250,10 @@ var main = {
           title: {
             text: "Bản đồ bệnh nhân COVID-19 Nhật Bản",
           },
-          // subtitle: {
-          //     text: 'Nguồn: <a href="#">Japan</a>'
-          // },
+          subtitle: {
+            text:
+              'Nguồn: <a href="https://www.mhlw.go.jp/index.html" target="_blank">Bộ Lao động, Y tế và Phúc lợi</a>',
+          },
           mapNavigation: {
             enabled: true,
             buttonOptions: {
@@ -307,7 +308,9 @@ var main = {
           },
         });
 
-        $("#map-jp-overview__footer").html(`<small>Cập nhật lúc: ${updatedAt}.</small>`);
+        $("#map-jp-overview__footer").html(
+          `<small>Cập nhật lúc: ${updatedAt}.</small>`
+        );
       } catch (error) {
         // TODO: error handler
         console.error(error);
@@ -321,13 +324,19 @@ var main = {
       Highcharts.getJSON(
         "https://spreadsheets.google.com/feeds/list/1yPMARIOZEsLh4_ymE7moji0_tmKMHNl4VuuWwzFiSl8/2/public/full?alt=json",
         (result) => {
-          const contents = _.chain(result).get("feed.entry").filter(e => _.get(e, "gsx$公表年月日.$t")).value();
-          const formatted = _.chain(contents.slice(0, -1)).mapValues(c => {
-            return {
-              date: _.get(c, "gsx$公表年月日.$t"),
-              count: _.chain(c).get("gsx$countaofno.$t").parseInt().value()
-            };
-          }).orderBy("date", "desc").value();
+          const contents = _.chain(result)
+            .get("feed.entry")
+            .filter((e) => _.get(e, "gsx$公表年月日.$t"))
+            .value();
+          const formatted = _.chain(contents.slice(0, -1))
+            .mapValues((c) => {
+              return {
+                date: _.get(c, "gsx$公表年月日.$t"),
+                count: _.chain(c).get("gsx$countaofno.$t").parseInt().value(),
+              };
+            })
+            .orderBy("date", "desc")
+            .value();
           console.debug(formatted);
           console.debug(_.map(formatted, "count"));
 
