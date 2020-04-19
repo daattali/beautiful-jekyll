@@ -363,7 +363,8 @@ def main(args=None):
     all_datasets = (
         TokyoPatientsDataset(),
         PrefectureByDateDataset(),
-        PatientDetailsDataset()
+        PatientDetailsDataset(),
+        PatientByCityTokyoDataset(),
     )
 
     for dataset in all_datasets:
@@ -374,6 +375,7 @@ def main(args=None):
         print(f'Created local CSV file')
         dataset.upload_to_storage(bucket)
         print(f'Uploaded JSON to Firebase storage')
+        print('-'*20)
 
     return 0
 

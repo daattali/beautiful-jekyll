@@ -48,11 +48,12 @@ class Dataset(object):
 
         self.dataframe.to_csv(save_path, index=index)
 
-    def to_dict(self, orient='record'):
-        return self.dataframe.to_dict(orient=orient)
+    def to_dict(self, orient='record', replace_nan=False):
+        data = self.dataframe.where(self.dataframe.notnull(), None) if replace_nan else self.dataframe
+        return data.to_dict(orient=orient)
 
     def to_json(self):
-        dict_data = self.to_dict()
+        dict_data = self.to_dict(replace_nan=True)
         json_data = json.dumps(dict_data)
         return json_data
 
@@ -70,7 +71,7 @@ class Dataset(object):
         else:
             raise NotImplementedError(f'Unsupported file type "{extension}"')
 
-        blob.upload_from_string(data_str)
+        blob.upload_from_string(data_str, content_type='application/json')
 
         return storage_ref
 
