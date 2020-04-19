@@ -6,19 +6,20 @@ subtitle:
     
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" text-align="center"/>
 
------------------
+
 ### Thông tin cơ bản
+-----------------
 - Nguyen Quang Minh         
 - District 2, HCM city
 - 0914198598
 
------------------
+
 ### EDUCATION : 
 -----------------
 1. Finance and Banking - Banking University Of Ho Chi Minh City
 2. Management information systems - Banking University Of Ho Chi Minh City
 
------------------
+
 ### SKILLS
 -----------------
 ##### Python:
@@ -37,7 +38,7 @@ subtitle:
 ##### BI: 
 - Data-studio, Python-Dash, has many projects.
 
------------------
+
 ### WORK EXPERIENCE:
 -----------------
 #### VPBank Finance Company Limited - FECREDIT (07/2019 - Present)    
@@ -55,7 +56,8 @@ see more at <a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-
 - Business analysis: Manufacturing, purchasing, selling, inventory and accounting.
 - Building administrative reports.
 
------------------
+
+
 ### HONORS & AWARDS:
 -----------------
 -   Best Performance 2019 of FeCredit
