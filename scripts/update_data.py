@@ -57,6 +57,71 @@ PREFECTURES = {
     '沖縄県': 'Okinawa',
 }
 
+TOKYO_CITIES = {
+    '千代田区': 'Chiyoda',
+    '中央区': 'Chuo',
+    '港区': 'Minato',
+    '新宿区': 'Shinjuku',
+    '文京区': 'Bunkyo',
+    '台東区': 'Taito',
+    '墨田区': 'Sumida',
+    '江東区': 'Koto',
+    '品川区': 'Shinagawa',
+    '目黒区': 'Meguro',
+    '大田区': 'Ota',
+    '世田谷区': 'Setagaya',
+    '渋谷区': 'Shibuya',
+    '中野区': 'Nakano',
+    '杉並区': 'Suginami',
+    '豊島区': 'Toshima',
+    '北区': 'Kita',
+    '荒川区': 'Arakawa',
+    '板橋区': 'Itabashi',
+    '練馬区': 'Nerima',
+    '足立区': 'Adachi',
+    '葛飾区': 'Katsushika',
+    '江戸川区': 'Edogawa',
+    '八王子市': 'Hachioji',
+    '立川市': 'Tachikawa',
+    '武蔵野市': 'Musashino',
+    '三鷹市': 'Mitaka',
+    '青梅市': 'Ome',
+    '府中市': 'Fuchu',
+    '昭島市': 'Akishima',
+    '調布市': 'Chofu',
+    '町田市': 'Machida',
+    '小金井市': 'Kogane',
+    '小平市': 'Kodaira',
+    '日野市': 'Hino',
+    '東村山市': 'Higashimurayama',
+    '国分寺市': 'Kokubunji',
+    '国立市': 'Kunitachi',
+    '福生市': 'Fussa',
+    '狛江市': 'Komae',
+    '東大和市': 'Higashiyamato',
+    '清瀬市': 'Kiyose',
+    '東久留米市': 'Higashikurume',
+    '武蔵村山市': 'Musashimurayama',
+    '多摩市': 'Tama',
+    '稲城市': 'Inagi',
+    '羽村市': 'Hamura',
+    'あきる野市': 'Akiruno',
+    '西東京市': 'Nishitokyo',
+    '瑞穂町': 'Thị trấn Mizuho',
+    '日の出町': 'Thị trấn Hinode',
+    '檜原村': 'Làng Hinohara',
+    '奥多摩町': 'Thị trấn Okutama',
+    '大島町': 'Đảo Oshima',
+    '利島村': 'Đảo Toshima',
+    '新島村': 'Đảo Nijima',
+    '神津島村': 'Đảo Kozushima',
+    '三宅村': 'Đảo Miyake',
+    '御蔵島村': 'Đảo Mikurajima',
+    '八丈町': 'Đảo Hachijo',
+    '青ヶ島村': 'Đảo Aogashima',
+    '小笠原村': 'Đảo Ogasawara',
+}
+
 FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
 FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
 FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
@@ -65,7 +130,7 @@ FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
 class TokyoPatientsDataset(datasets.CsvDataset):
     URL = 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
     NAME = 'patient-tokyo'
-    
+
     COL_NO = 'STT'
     COL_AREA_CODE = 'Mã vùng'
     COL_PREFECTURE = 'Tỉnh/Thành phố'
@@ -106,7 +171,7 @@ class TokyoPatientsDataset(datasets.CsvDataset):
             self.COL_REF,
             self.COL_DISCHARGED,
         ]
-        
+
         # Localize data
         self.dataframe[self.COL_PREFECTURE].replace({
             '東京都': 'Tokyo'
@@ -140,13 +205,13 @@ class TokyoPatientsDataset(datasets.CsvDataset):
             '100歳以': 'Trên 100',
             '不': 'Không rõ',
         }, inplace=True)
-        
+
         return self.dataframe
-        
+
     def _cleanse(self, auto_drop=False):
         # Fill missing data
         self.dataframe[self.COL_PATIENT_ADDRESS].fillna('―', inplace=True)
-        
+
         if auto_drop:
             # Drop meaningless columns (less than 1 unique value)
             self.dataframe.drop(columns=[
@@ -161,20 +226,20 @@ class TokyoPatientsDataset(datasets.CsvDataset):
                 self.COL_REF,
                 self.COL_DISCHARGED,
             ], inplace=True)
-        
+
         return self.dataframe
 
 
 class PrefectureByDateDataset(datasets.JsonDataset):
     URL = 'https://www3.nhk.or.jp/news/special/coronavirus/data/47newpatients-data.json'
     NAME = 'prefecture-by-date'
-    
+
     COL_PREFECTURE = 'Tỉnh/Thành phố'
     COL_TOTAL =  'Tổng'
-    
+
     def __init__(self):
         super().__init__(self.URL, self.NAME)
-    
+
     def _create_dataframe_from_json(self):
         formatted_list = []
         for pref in self.json['data47']:
@@ -186,7 +251,7 @@ class PrefectureByDateDataset(datasets.JsonDataset):
         )
 
         return self.dataframe
-    
+
     def _localize(self):
         self.dataframe[self.COL_PREFECTURE].replace(PREFECTURES, inplace=True)
         return self.dataframe
@@ -222,21 +287,63 @@ class PatientDetailsDataset(datasets.JsonDataset):
         '&f=pjson'
     )
     NAME = 'patient-all'
-    
+
     COL_DATE = 'Date'
-    
+
     def __init__(self):
         super().__init__(self.URL, self.NAME)
-        
+
     def _create_dataframe_from_json(self):
         self.dataframe = pd.DataFrame([entry['attributes'] for entry in self.json['features']])
         return self.dataframe
-    
+
     def _cleanse(self):
         self.dataframe[self.COL_DATE].fillna(0, inplace=True)
         self.dataframe[self.COL_DATE] = pd.to_datetime(self.dataframe[self.COL_DATE], unit='ms')
         self.dataframe[self.COL_DATE] = self.dataframe[self.COL_DATE].dt.strftime('%Y%m%d %H:%M')
         return self.dataframe[self.COL_DATE]
+
+
+class PatientByCityTokyoDataset(datasets.JsonDataset):
+    URL = 'https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/patient.json'
+    NAME = 'patient-by-city-tokyo'
+
+    COL_CODE = 'code'
+    COL_AREA = 'area'
+    COL_LABEL = 'label'
+    COL_RUBY = 'ruby'
+    COL_COUNT = 'count'
+    COL_AREA_VIETNAMESE = 'area_vietnamese'
+    COL_LABEL_VIETNAMESE = 'label_vietnamese'
+
+    def __init__(self):
+        super().__init__(self.URL, self.NAME)
+
+    def _create_dataframe_from_json(self):
+        return pd.DataFrame(self.json['datasets']['data'])
+
+    def _cleanse(self):
+        self.dataframe[self.COL_CODE].fillna(0, inplace=True)
+        self.dataframe[self.COL_CODE] = self.dataframe[self.COL_CODE].astype(int)
+
+        self.dataframe[self.COL_AREA].fillna('-', inplace=True)
+        self.dataframe[self.COL_RUBY].fillna('-', inplace=True)
+
+        return self.dataframe
+
+    def _localize(self):
+        self.dataframe[self.COL_LABEL_VIETNAMESE] = self.dataframe[self.COL_LABEL].replace({
+            **TOKYO_CITIES,
+            '都外': 'Ngoài Tokyo',
+            '調査中': 'Đang điều tra',
+            '小計': 'Tổng số',
+        })
+        self.dataframe[self.COL_AREA_VIETNAMESE] = self.dataframe[self.COL_AREA].replace({
+            '特別区': '23 quận lớn',
+            '多摩地域': 'Địa phận Tama',
+            '島しょ地域': 'Các đảo nhỏ',
+        })
+        return self.dataframe
 
 
 def init_firebase_app():
@@ -246,13 +353,13 @@ def init_firebase_app():
     })
     client = firestore.client()
     bucket = storage.bucket(app=app)
-    
+
     return app, client, bucket
 
 
 def main(args=None):
     app, client, bucket = init_firebase_app()
-    
+
     all_datasets = (
         TokyoPatientsDataset(),
         PrefectureByDateDataset(),
@@ -267,7 +374,7 @@ def main(args=None):
         print(f'Created local CSV file')
         dataset.upload_to_storage(bucket)
         print(f'Uploaded JSON to Firebase storage')
-    
+
     return 0
 
 if __name__ == '__main__':
