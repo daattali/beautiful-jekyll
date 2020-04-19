@@ -36,14 +36,11 @@ subtitle:
 - Build object detection model with keras
 - Build chatbot with ntlk, rasa
     
-**SQL:**
-- Build the data-mart for Machine learning models and reports.
+**SQL:** Build the data-mart for Machine learning models and reports.
     
-**JavaScript:**
-- Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
+**JavaScript:** Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
 
-**BI:** 
-- Data-studio, Python-Dash, has many <a href="https://minmax49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
+**BI:** Data-studio, Python-Dash, has many <a href="https://minmax49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
 
 
 ### WORK EXPERIENCE:
@@ -66,7 +63,10 @@ subtitle:
 ### HONORS & AWARDS:
 -----------------
 - Best Performance 2019 of FeCredit
+
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg" width="500" />
+
 - Entering the semi-finals of the Entropy Data Analytics Competition organized by the John Von Neumann Institute.    
+
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/jvn2017.jpg" width="500" />
 
