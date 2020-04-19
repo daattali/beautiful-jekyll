@@ -175,19 +175,19 @@ img {
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
   display: inline-block;
-  {% if site.round-avatar | default: true %}
+  {% unless site.round-avatar == false %}
   border-radius: 50%;
   margin-left: -50%;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  {% endif %}
+  {% endunless %}
 }
 .navbar-custom .avatar-container .avatar-img {
   width: 100%;
-  {% if site.round-avatar | default: true %}
+  {% unless site.round-avatar == false %}
   border-radius: 50%;
-  {% endif %}
+  {% endunless %}
   display: block;
 }
 
@@ -203,11 +203,11 @@ img {
 
   .navbar-custom .avatar-container .avatar-img-border {
     width: 100%;
-    {% if site.round-avatar | default: true %}
+    {% unless site.round-avatar == false %}
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    {% endif %}
+    {% endunless %}
   }
 
   .navbar-custom .avatar-container .avatar-img {
