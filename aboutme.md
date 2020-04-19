@@ -5,13 +5,11 @@ subtitle:
 ---
     
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" text-align="center"/>
-
-
-### INFO
 -----------------
 - Nguyen Quang Minh         
-- District 2, HCM city
 - 0914198598
+- nguyenquanminh4996@gmail.com
+- District 2, HCM city
 
 
 ### EDUCATION : 
