@@ -1,11 +1,10 @@
-import datetime
-import json
-import urllib.request
 import sys
 
 import firebase_admin
 from firebase_admin import credentials, firestore, storage
 import pandas as pd
+
+import datasets
 
 
 PREFECTURES = {
@@ -58,25 +57,15 @@ PREFECTURES = {
     '沖縄県': 'Okinawa',
 }
 
-DB_PATIENT_ALL = 'patient-all'
-DB_PATIENT_TOKYO = 'patient-tokyo'
-DB_PREFECTURE_BY_DATE = 'prefecture-by-date'
-
 FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
-FIREBASE_BATCH_SIZE = 499  # Max = 500
 FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
 FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
 
 
-def get_and_cleanse_tokyo_data(auto_drop: bool = False) -> pd.DataFrame:
-    """Get data from Tokyo Metropolitan Government and localize to Vietnamese.
+class TokyoPatientsDataset(datasets.CsvDataset):
+    URL = 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
+    NAME = 'patient-tokyo'
     
-    Args:
-        auto_drop (bool): If True, drop all columns with less than 2 unique values.
-    Returns:
-        A `pandas.DataFrame` object containing clean data.
-    """
-    DATA_TOKYO = 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
     COL_NO = 'STT'
     COL_AREA_CODE = 'Mã vùng'
     COL_PREFECTURE = 'Tỉnh/Thành phố'
@@ -93,104 +82,117 @@ def get_and_cleanse_tokyo_data(auto_drop: bool = False) -> pd.DataFrame:
     COL_PATIENT_TRAVEL = 'Có lịch sử đi lại hay không'
     COL_REF = 'Tham khảo'
     COL_DISCHARGED = 'Đã ra viện hay chưa'
-    
-    tokyo_data = pd.read_csv(DATA_TOKYO)
-    
-    # Localize column name
-    tokyo_data.columns = [
-        COL_NO,
-        COL_AREA_CODE,
-        COL_PREFECTURE,
-        COL_DISTRICT,
-        COL_PUBLISHED_DATE,
-        COL_DOW,
-        COL_SYMPTOM_DATE,
-        COL_PATIENT_ADDRESS,
-        COL_PATIENT_AGE,
-        COL_PATIENT_SEX,
-        COL_PATIENT_ATTRIBUTE,
-        COL_PATIENT_STATE,
-        COL_PATIENT_SYMPTOM,
-        COL_PATIENT_TRAVEL,
-        COL_REF,
-        COL_DISCHARGED,
-    ]
-    
-    # Localize data
-    tokyo_data[COL_PREFECTURE].replace({
-        '東京都': 'Tokyo'
-    }, inplace=True)
-    tokyo_data[COL_DOW].replace({
-        '日': 'CN',
-        '月': '2',
-        '火': '3',
-        '水': '4',
-        '木': '5',
-        '金': '6',
-        '土': '7',
-    }, inplace=True)
-    tokyo_data[COL_PATIENT_ADDRESS].replace({
-        '湖北省武漢市': 'Vũ Hán, Hồ Bắc',
-        '湖南省長沙市': 'Trường Sa, Hồ Nam',
-        '都内': 'Nội đô Tokyo',
-        '都外': 'Ngoài Tokyo',
-        '調査中': 'Đang điều tra',
-        **PREFECTURES,
-    }, inplace=True)
-    tokyo_data[COL_PATIENT_SEX].replace({
-        '男性': 'Nam',
-        '女性': 'Nữ',
-        '不明': 'Không rõ',
-        '調査中': 'Đang điều tra',
-    }, inplace=True)
-    tokyo_data[COL_PATIENT_AGE] = tokyo_data[COL_PATIENT_AGE].str.replace('代', 's')
-    tokyo_data[COL_PATIENT_AGE].replace({
-        '10歳未': 'Dưới 10',
-        '100歳以': 'Trên 100',
-        '不': 'Không rõ',
-    }, inplace=True)
-    
-    # Fill missing data
-    tokyo_data[COL_PATIENT_ADDRESS].fillna('―', inplace=True)
-    
-    if auto_drop:
-        # Drop meaningless columns (less than 1 unique value)
-        tokyo_data.drop(columns=[
-            COL_AREA_CODE,
-            COL_PREFECTURE,
-            COL_DISTRICT,
-            COL_SYMPTOM_DATE,
-            COL_PATIENT_ATTRIBUTE,
-            COL_PATIENT_STATE,
-            COL_PATIENT_SYMPTOM,
-            COL_PATIENT_TRAVEL,
-            COL_REF,
-            COL_DISCHARGED,
-        ], inplace=True)
-    
-    return tokyo_data
+
+    def __init__(self):
+        super().__init__(self.URL, self.NAME)
+
+    def _localize(self):
+        # Localize column name
+        self.dataframe.columns = [
+            self.COL_NO,
+            self.COL_AREA_CODE,
+            self.COL_PREFECTURE,
+            self.COL_DISTRICT,
+            self.COL_PUBLISHED_DATE,
+            self.COL_DOW,
+            self.COL_SYMPTOM_DATE,
+            self.COL_PATIENT_ADDRESS,
+            self.COL_PATIENT_AGE,
+            self.COL_PATIENT_SEX,
+            self.COL_PATIENT_ATTRIBUTE,
+            self.COL_PATIENT_STATE,
+            self.COL_PATIENT_SYMPTOM,
+            self.COL_PATIENT_TRAVEL,
+            self.COL_REF,
+            self.COL_DISCHARGED,
+        ]
+        
+        # Localize data
+        self.dataframe[self.COL_PREFECTURE].replace({
+            '東京都': 'Tokyo'
+        }, inplace=True)
+        self.dataframe[self.COL_DOW].replace({
+            '日': 'CN',
+            '月': '2',
+            '火': '3',
+            '水': '4',
+            '木': '5',
+            '金': '6',
+            '土': '7',
+        }, inplace=True)
+        self.dataframe[self.COL_PATIENT_ADDRESS].replace({
+            '湖北省武漢市': 'Vũ Hán, Hồ Bắc',
+            '湖南省長沙市': 'Trường Sa, Hồ Nam',
+            '都内': 'Nội đô Tokyo',
+            '都外': 'Ngoài Tokyo',
+            '調査中': 'Đang điều tra',
+            **PREFECTURES,
+        }, inplace=True)
+        self.dataframe[self.COL_PATIENT_SEX].replace({
+            '男性': 'Nam',
+            '女性': 'Nữ',
+            '不明': 'Không rõ',
+            '調査中': 'Đang điều tra',
+        }, inplace=True)
+        self.dataframe[self.COL_PATIENT_AGE] = self.dataframe[self.COL_PATIENT_AGE].str.replace('代', 's')
+        self.dataframe[self.COL_PATIENT_AGE].replace({
+            '10歳未': 'Dưới 10',
+            '100歳以': 'Trên 100',
+            '不': 'Không rõ',
+        }, inplace=True)
+        
+        return self.dataframe
+        
+    def _cleanse(self, auto_drop=False):
+        # Fill missing data
+        self.dataframe[self.COL_PATIENT_ADDRESS].fillna('―', inplace=True)
+        
+        if auto_drop:
+            # Drop meaningless columns (less than 1 unique value)
+            self.dataframe.drop(columns=[
+                self.COL_AREA_CODE,
+                self.COL_PREFECTURE,
+                self.COL_DISTRICT,
+                self.COL_SYMPTOM_DATE,
+                self.COL_PATIENT_ATTRIBUTE,
+                self.COL_PATIENT_STATE,
+                self.COL_PATIENT_SYMPTOM,
+                self.COL_PATIENT_TRAVEL,
+                self.COL_REF,
+                self.COL_DISCHARGED,
+            ], inplace=True)
+        
+        return self.dataframe
 
 
-def get_and_cleanse_prefecture_data() -> pd.DataFrame:
-    """Get data from NHK and localize to Vietnamese."""
-    request = urllib.request.Request(
-        'https://www3.nhk.or.jp/news/special/coronavirus/data/47newpatients-data.json',
-        headers={'User-Agent': 'Mozilla/5.0'}
-    )
-    with urllib.request.urlopen(request) as url:
-        data = json.loads(url.read().decode())
+class PrefectureByDateDataset(datasets.JsonDataset):
+    URL = 'https://www3.nhk.or.jp/news/special/coronavirus/data/47newpatients-data.json'
+    NAME = 'prefecture-by-date'
+    
+    COL_PREFECTURE = 'Tỉnh/Thành phố'
+    COL_TOTAL =  'Tổng'
+    
+    def __init__(self):
+        super().__init__(self.URL, self.NAME)
+    
+    def _create_dataframe_from_json(self):
+        formatted_list = []
+        for pref in self.json['data47']:
+            formatted_list.append([pref['name']] + pref['data'] + [sum(pref['data'])])
+        dates = self.json['category']
+        self.dataframe = pd.DataFrame(
+            formatted_list,
+            columns=[self.COL_PREFECTURE] + dates + [self.COL_TOTAL]
+        )
 
-    formatted_list = []
-    for pref in data['data47']:
-        formatted_list.append([pref['name']] + pref['data'] + [sum(pref['data'])])
-    df = pd.DataFrame(formatted_list, columns=['Prefecture'] + data['category'] + ['Total'])
-    df['Prefecture'].replace(PREFECTURES, inplace=True)
-
-    return df
+        return self.dataframe
+    
+    def _localize(self):
+        self.dataframe[self.COL_PREFECTURE].replace(PREFECTURES, inplace=True)
+        return self.dataframe
 
 
-def load_patient_database() -> pd.DataFrame:
-    """Get data from ArcGIS."""
+class PatientDetailsDataset(datasets.JsonDataset):
     URL = (
         'https://services8.arcgis.com/JdxivnCyd1rvJTrY/ArcGIS/rest/services/v2_covid19_list_csv/FeatureServer/0/'
         'query?where=1=1'
@@ -219,78 +221,52 @@ def load_patient_database() -> pd.DataFrame:
         '&sqlFormat=none'
         '&f=pjson'
     )
-    request = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(request) as url:
-        data = json.loads(url.read().decode())
-
-    df = pd.DataFrame([entry['attributes'] for entry in data['features']])
-    df['Date'].fillna(0, inplace=True)
-    df['Date'] = pd.to_datetime(df['Date'], unit='ms')
-    df['Date'] = df['Date'].dt.strftime('%Y%m%d %H:%M')
-    return df
-
-
-def batch_data(iterable, n=1):
-    """Divide data into batches of fix length."""
-    l = len(iterable)
-    for ndx in range(0, l, n):
-        yield iterable[ndx:min(ndx + n, l)]
-
-
-def upload_to_firebase(data, client, root, item_key=None, batch_size=FIREBASE_BATCH_SIZE):
-    if item_key not in data.columns:
-        item_key = None
-    data_dict = data.to_dict(orient='record')
-    for batched_data in batch_data(data_dict, batch_size):
-        batch = client.batch()
-        for data_item in batched_data:
-            if item_key is not None:
-                doc_ref = client.collection(root).document(str(data_item[item_key]))
-            else:
-                doc_ref = client.collection(root).document()
-            batch.set(doc_ref, data_item)
-        batch.commit()
+    NAME = 'patient-all'
+    
+    COL_DATE = 'Date'
+    
+    def __init__(self):
+        super().__init__(self.URL, self.NAME)
+        
+    def _create_dataframe_from_json(self):
+        self.dataframe = pd.DataFrame([entry['attributes'] for entry in self.json['features']])
+        return self.dataframe
+    
+    def _cleanse(self):
+        self.dataframe[self.COL_DATE].fillna(0, inplace=True)
+        self.dataframe[self.COL_DATE] = pd.to_datetime(self.dataframe[self.COL_DATE], unit='ms')
+        self.dataframe[self.COL_DATE] = self.dataframe[self.COL_DATE].dt.strftime('%Y%m%d %H:%M')
+        return self.dataframe[self.COL_DATE]
 
 
-def upload_to_storage(data, file_name, bucket):
-    """Upload a Dataframe as JSON to Firebase Storage.
-
-    returns
-        storage_ref
-    """
-    storage_ref = file_name + '.json'
-    blob = bucket.blob(storage_ref)
-    blob.upload_from_string(json.dumps(data.to_dict(orient='record')))
-
-    return storage_ref
-
-
-def main(args=None):
+def init_firebase_app():
     cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
-    app = firebase_admin.initialize_app(cred,  {
+    app = firebase_admin.initialize_app(cred, {
         'storageBucket': f'{FIREBASE_APP_NAME}.appspot.com'
     })
     client = firestore.client()
     bucket = storage.bucket(app=app)
+    
+    return app, client, bucket
 
-    tokyo_data = get_and_cleanse_tokyo_data()
-    patients_by_prefecture = get_and_cleanse_prefecture_data()
-    patients_all = load_patient_database()
 
-    now = datetime.datetime.now()
-    timestamp = now.strftime('%Y%m%d_%H%M')
-    params = (
-        # DataFrame              DB name                Key column
-        (tokyo_data,             DB_PATIENT_TOKYO,      'STT'),
-        (patients_by_prefecture, DB_PREFECTURE_BY_DATE, 'Prefecture'),
-        (patients_all,           DB_PATIENT_ALL,        'ObjectId'),
+def main(args=None):
+    app, client, bucket = init_firebase_app()
+    
+    all_datasets = (
+        TokyoPatientsDataset(),
+        PrefectureByDateDataset(),
+        PatientDetailsDataset()
     )
 
-    for data, db_name, key_column in params:
-        print(f'Uploading {db_name}, key_column={key_column}')
-        data.to_csv(f'{timestamp}_{db_name}.csv', index=False)
-        # upload_to_firebase(data, client, db_name, key_column)
-        upload_to_storage(data, db_name, bucket)
+    for dataset in all_datasets:
+        print(f'Dataset: {dataset.name}')
+        dataset.query_all()
+        print(f'Queried data successfully')
+        dataset.save_csv()
+        print(f'Created local CSV file')
+        dataset.upload_to_storage(bucket)
+        print(f'Uploaded JSON to Firebase storage')
     
     return 0
 
