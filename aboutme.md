@@ -7,7 +7,7 @@ subtitle:
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" text-align="center"/>
 
 
-### Thông tin cơ bản
+### INFO
 -----------------
 - Nguyen Quang Minh         
 - District 2, HCM city
