@@ -68,5 +68,5 @@ see more at <a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-
 - Best Performance 2019 of FeCredit
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg" width="500" />
 - Entering the semi-finals of the Entropy Data Analytics Competition organized by the John Von Neumann Institute.    
-
+<img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/jvn2017.jpg" width="500" />
 
