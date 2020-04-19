@@ -48,7 +48,7 @@ subtitle:
 - Building automation reports on development and operation of Credit Scorecard model.
 - Use machine learning and statistics on optimizing and forecasting business operations.
 
-see more at <a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a> series.
+see more at <a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a> and <a href="https://minmax49.github.io/Statistic/"> Statistic series</a>.
 
 #### SS4U Softwares Join Stock Company (04/2018 - 10/2018)
 
