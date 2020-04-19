@@ -16,8 +16,9 @@ subtitle:
 
 ### EDUCATION : 
 -----------------
-1. Finance and Banking - Banking University Of Ho Chi Minh City
-2. Management information systems - Banking University Of Ho Chi Minh City
+**Banking University Of Ho Chi Minh City**:
+1. Finance and Banking 
+2. Management information systems 
 
 
 ### SKILLS
