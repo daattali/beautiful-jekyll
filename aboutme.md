@@ -22,6 +22,7 @@ subtitle:
 
 ### SKILLS
 -----------------
+
 **Python:**
 - Object-oriented programming. 
 - Data analysis with pandas, numpy
