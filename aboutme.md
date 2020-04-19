@@ -7,54 +7,49 @@ subtitle:
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/me.jpg" width="200" text-align="center"/>
 
 ### Thông tin cơ bản
-- Tên họ : Nguyễn Quang Minh
-- Năm sinh : 1996  
-- Nơi sinh : Hải Phòng
-- Giới tính : Nam
+- Nguyen Quang Minh         
+- District 2, HCM city
+- 0914198598
 
 -----------------
 ### Về bản thân:
 Trong tôi luôn có một động lực thôi thúc rằng hôm nay mình phải tốt hơn hôm qua
 
 -----------------
-### Bằng cấp : 
-1. Cử nhân khoa Hệ Thống Thông Tin Quản Lý - ĐH Ngân Hàng tp.HCM
-2. Cử nhân khoa Tài Chính-Ngân Hàng ĐH Ngân Hàng tp.HCM
+### EDUCATION : 
+1. Finance and Banking - Banking University Of Ho Chi Minh City
+2. Management information systems - Banking University Of Ho Chi Minh City
 
 -----------------
-### Kỹ năng
+### SKILLS
 #### Python:
-- Xử lý dữ liệu: Pandas, numpy
-- machine learning: scikit-learn, keras
-- visualization: matplotlib, seaborn
-- Thu thập dữ liệu: selenium, beautifulsoup, request-html
-- Lập trình hướng đối tượng
-
-#### BIG-DATA:
-- pyspark
-
+    - Object-oriented programming 
+    - Proficient in many libraries (pandas, numpy, selenium, beautiful soup, Sklearn, Keras, Pyspark ...)
+#### Machine learning:
+    - Proficient in building credit scoring model and implementing in business.
 #### SQL:
-- Thành thạo các kỹ năng cần thiết để ETL data như tạo package, procedure, function, kết hợp đa luồng.
-    
-#### BI:
-- Data studio, Python-Dash đã làm nhiều webapp kết hợp với BI
-
+    - Build the data-mart for Machine learning models and reports.
+#### JavaScript:
+    - Build many small web applications.
+#### BI: 
+    - Data-studio, Python-Dash, has many projects.
 
 -----------------
-### Sự nghiệp :
-**Tháng 8-2019 Đến 4-2020** : Data analyst tại FeCredit: 
-- Build các model Credit Scorecard cho phân loại khách hàng tại các nhóm nợ B1,B2,B3 và sản phẩm Card. 
-- Tối ưu vận hành hệ thống thu hồi nợ : automation, inovation
+### WORK EXPERIENCE:
+#### VPBank Finance Company Limited - FECREDIT (07/2019 - Present)                             
+Data analyst: 
+    - Building Credit Scorecard models for Loan - B1, B2, B3 and Card-Product.
+    - Building automation reports on development and operation of Credit Scorecard model.
+    - Use machine learning and statistics on optimizing and forecasting business operations.
 
-Mời anh/chị vào đọc series Scorecard series để biết thêm chi tiết:
-<a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a>
+see more at <a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a> series.
+#### SS4U Softwares Join Stock Company (04/2018 - 10/2018)
+    - Business analysis: Manufacturing, purchasing, selling, inventory and accounting.
+    - Building administrative reports.
 
-### Thành tích: 
-- Nhiều mô hình được ứng dụng tốt, gia tăng hiệu quả thu hồi nợ. 
-- Tối ưu nhiều quy trình vận hành.
-- Đạt **Best Performance 2019** chỉ trong thời gian làm việc 5 tháng (08/2019-12/2019)
-
+### HONORS & AWARDS:
+-   Best Performance 2019 of FeCredit
 <img src="https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/bang.jpg" width="500" />
-    
+- Entering the semi-finals of the Entropy Data Analytics Competition organized by the John Von Neumann Institute.    
 
 
