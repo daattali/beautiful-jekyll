@@ -47,16 +47,16 @@ subtitle:
 
 ### WORK EXPERIENCE:
 -----------------
-**VPBank Finance Company Limited - FECREDIT (07/2019 - Present)**   
-**Data analyst:**
+**Data analyst** at **VPBank Finance Company Limited - FECREDIT (07/2019 - Present)**   
+
 - Building Credit Scorecard models for Loan - B1, B2, B3 and Card-Product.
 - Building automation reports on development and operation of Credit Scorecard model.
 - Use machine learning and statistics on optimizing and forecasting business operations.
 - see more at <a href="https://minmax49.github.io/2019-12-22-Credit-score-chapter-0/"> Scorecard series</a> and <a href="https://minmax49.github.io/Statistic/"> Statistic series</a>.
 
-**SS4U Softwares Join Stock Company (04/2018 - 10/2018)**
 
-**Deployment specialist:**
+**Deployment specialist** at **SS4U Softwares Join Stock Company (04/2018 - 10/2018)**
+
 - Business analysis: Manufacturing, purchasing, selling, inventory and accounting.
 - Building administrative reports.
 
