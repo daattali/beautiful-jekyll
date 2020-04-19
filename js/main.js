@@ -107,12 +107,34 @@ var main = {
       fakeMenu.remove();
     }
 
+    // init firebase
+    main.initFirebase();
+
     // show the big header image
     main.initImgs();
 
     // show maps
     main.initMaps();
+
+    // show graphs
+    main.initGraphs();
   },
+
+  initFirebase: function () {
+    const firebaseConfig = firebaseConfig = {
+      apiKey: "AIzaSyBWAIFZjF-zSB9SymxXULUCz6BcPYacwL4",
+      authDomain: "thongtincovid19-4dd12.firebaseapp.com",
+      databaseURL: "https://thongtincovid19-4dd12.firebaseio.com",
+      projectId: "thongtincovid19-4dd12",
+      storageBucket: "thongtincovid19-4dd12.appspot.com",
+      messagingSenderId: "751392916473",
+      appId: "1:751392916473:web:2aa4202b9354c668ed3328"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  },
+
 
   initImgs: function () {
     // If the page was large images to randomly select from, choose an image
@@ -205,9 +227,9 @@ var main = {
           chart: {
             map: "countries/jp/jp-all",
             panning: {
-            	enabled: true,
-            	type: 'xy'
-            }
+              enabled: true,
+              type: "xy",
+            },
           },
           title: {
             text: "Bản đồ bệnh nhân COVID-19 Nhật Bản",
@@ -267,6 +289,79 @@ var main = {
               return tooltip.defaultFormatter.call(this, tooltip);
             },
           },
+        });
+      });
+    }
+  },
+
+  initGraphs: function () {
+    // tokyo daily graph
+    if ($("#graph-daily-tokyo").length > 0) {
+      Highcharts.getJSON("https://spreadsheets.google.com/feeds/list/1yPMARIOZEsLh4_ymE7moji0_tmKMHNl4VuuWwzFiSl8/2/public/full?alt=json", result => {
+        const contents = _.chain(result).get("feed.entry").map("content.$t");
+        const formatted = contents.map(c => _.fromPairs(c.split(', ').map(s => s.split(': ')))).value();
+console.debug(_.chain(result).get("feed.entry").value());
+console.debug(contents.value());
+        Highcharts.chart("graph-daily-tokyo", {
+          chart: {
+            type: "column",
+          },
+          legend: {
+            enabled: false,
+          },
+          title: {
+            text: "Số lượng bệnh nhân mới tại Tokyo mỗi ngày",
+          },
+          subtitle: {
+            text: `Nguồn: <a href="https://stopcovid19.metro.tokyo.lg.jp/" target="_blank">https://stopcovid19.metro.tokyo.lg.jp/</a>`,
+          },
+          xAxis: {
+            categories: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+            ],
+            crosshair: true,
+          },
+          yAxis: {
+            min: 0,
+            title: false,
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0,
+            },
+          },
+          series: [
+            {
+              name: "Số bệnh nhân",
+              data: [
+                49.9,
+                71.5,
+                106.4,
+                129.2,
+                144.0,
+                176.0,
+                135.6,
+                148.5,
+                216.4,
+                194.1,
+                95.6,
+                54.4,
+              ],
+              color: "rgba(255,159,64,1)",
+            },
+          ],
         });
       });
     }
