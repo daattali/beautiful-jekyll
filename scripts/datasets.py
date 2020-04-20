@@ -28,15 +28,15 @@ class Dataset(object):
             self.dataframe = self._create_dataframe()
             self._localize(**kwargs)
             self._cleanse(**kwargs)
-            
+
         return self.dataframe
-    
+
     def _create_dataframe(self):
         raise NotImplementedError()
 
     def _localize(self, **kwargs):
         pass
-        
+
     def _cleanse(self, **kwargs):
         pass
 

@@ -407,6 +407,11 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
     def __init__(self):
         super().__init__(self.URL, self.NAME, self.SHEET, self.HEADER)
 
+    def _cleanse(self):
+        self.dataframe[self.COL_PUBLISHED_DATE] = self.dataframe[self.COL_PUBLISHED_DATE].astype(str)
+        self.dataframe[self.COL_SYMPTOM_DATE] = self.dataframe[self.COL_SYMPTOM_DATE].astype(str)
+        return self.dataframe
+
     def _localize(self):
         self.dataframe.columns = [
             self.COL_ID,
@@ -418,6 +423,10 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
             self.COL_STATUS,
             self.COL_DISCHARGED,
         ]
+        self.dataframe[self.COL_AGE].replace({
+            '未就学児': 'Dưới 3',
+            '就学児': '3-9',
+        }, inplace=True)
         self.dataframe[self.COL_SEX].replace({
             '女性': 'Female',
             '男性': 'Male',
@@ -426,6 +435,7 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
             **OSAKA_CITIES,
             '府外': 'Ngoài Osaka',
             '大阪府外': 'Ngoài Osaka',
+            '調査中': 'Đang điều tra',
         }, inplace=True)
         self.dataframe[self.COL_DISCHARGED].replace({
             '退院': 'Ra viện',
@@ -434,6 +444,8 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
             '入院調整中': 'Chuẩn bị nhập viện',
             '管外': 'Không quản lý',
         }, inplace=True)
+
+        return self.dataframe
 
 
 def init_firebase_app():
