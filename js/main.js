@@ -63,7 +63,7 @@ var main = {
         infinite: true,
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         speed: 750,
         dots: true,
       });
@@ -266,9 +266,10 @@ var main = {
           title: {
             text: "Bản đồ bệnh nhân COVID-19 Nhật Bản",
           },
-          // subtitle: {
-          //     text: 'Nguồn: <a href="#">Japan</a>'
-          // },
+          subtitle: {
+            text:
+              'Nguồn: <a href="https://mhlw-gis.maps.arcgis.com/apps/opsdashboard/index.html#/c2ac63d9dd05406dab7407b5053d108e" target="_blank">Bộ Lao động, Y tế và Phúc lợi</a>',
+          },
           mapNavigation: {
             enabled: true,
             buttonOptions: {
