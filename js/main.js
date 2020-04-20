@@ -409,6 +409,7 @@ var main = {
           },
           yAxis: {
             min: 0,
+            max: _.max(_.map(data, "count")),
             title: false,
           },
           plotOptions: {
@@ -482,6 +483,7 @@ var main = {
             },
             yAxis: {
               min: 0,
+              max: _.max(_.map(data, "count")),
               title: false,
             },
             plotOptions: {
