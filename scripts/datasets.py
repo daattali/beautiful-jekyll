@@ -98,6 +98,16 @@ class CsvDataset(Dataset):
         return pd.read_csv(self.url)
 
 
+class ExcelDataset(Dataset):
+    def __init__(self, url, name, sheet_id, header_row=0):
+        super().__init__(url, name)
+        self.sheet = sheet_id
+        self.header_row = header_row
+
+    def _create_dataframe(self):
+        return pd.read_excel(self.url, self.sheet, header=self.header_row)
+
+
 class JsonDataset(Dataset):
     def __init__(self, url, name, data_key=None):
         super().__init__(url, name)

@@ -126,6 +126,49 @@ FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
 FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
 FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
 
+OSAKA_CITIES = {
+    '大阪市': 'Osaka',
+    '枚方市': 'Hirakata',
+    '守口市': 'Moriguchi',
+    '箕面市': 'Mino',
+    '東大阪': 'Higashiosaka',
+    '東大阪市': 'Higashiosaka',
+    '吹田市': 'Suita',
+    '松原市': 'Matsubara',
+    '大東市': 'Daito',
+    '堺市': 'Sakai',
+    '高槻市': 'Takatsuki',
+    '摂津市': 'Settsu',
+    '茨木市': 'Ibaraki',
+    '門真市': 'Kadoma',
+    '豊中市': 'Toyonaka',
+    '八尾市': 'Yao',
+    '貝塚市': 'Kaizuka',
+    '池田市': 'Ikeda',
+    '和泉市': 'Izumi',
+    '泉佐野市': 'Izumisano',
+    '岸和田': 'Kishiwada',
+    '岸和田市': 'Kishiwada',
+    '泉大津市': 'Izumiotsu',
+    '羽曳野市': 'Habikino',
+    '河内長野市': 'Kawachinagano',
+    '田尻町': 'Thị trấn Tajiri',
+    '寝屋川市': 'Thị trấn Neyagawa',
+    '藤井寺市': 'Fujidera',
+    '交野市': 'Kano',
+    '熊取町': 'Thị trấn Kumatori',
+    '柏原市': 'Kashiwara',
+    '四條畷市': 'Shijonawate',
+    '高石市': 'Takaishi',
+    '能勢町': 'Thị trấn Nose',
+    '大阪狭山市': 'Osakasayama',
+    '泉南市': 'Sennan',
+    '富田林市': 'Tondabayashi',
+    '阪南市': 'Hannan',
+    '豊能町': 'Thị trấn Toyono',
+    '河南町': 'Thị trấn Henan',
+}
+
 
 class TokyoPatientsDataset(datasets.CsvDataset):
     URL = 'https://stopcovid19.metro.tokyo.lg.jp/data/130001_tokyo_covid19_patients.csv'
@@ -346,6 +389,53 @@ class PatientByCityTokyoDataset(datasets.JsonDataset):
         return self.dataframe
 
 
+class PatientByCityOsakaDataset(datasets.ExcelDataset):
+    URL = 'https://github.com/codeforosaka/covid19/blob/development/data/patients_and_inspections.xlsx?raw=true'
+    NAME = 'patient-by-city-osaka'
+    SHEET = 1
+    HEADER = 1
+
+    COL_ID = 'Id'
+    COL_PUBLISHED_DATE = 'Published date'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_LOCATION = 'Location'
+    COL_SYMPTOM_DATE = 'Symptom date'
+    COL_STATUS = 'Status'
+    COL_DISCHARGED = 'Discharged'
+
+    def __init__(self):
+        super().__init__(self.URL, self.NAME, self.SHEET, self.HEADER)
+
+    def _localize(self):
+        self.dataframe.columns = [
+            self.COL_ID,
+            self.COL_PUBLISHED_DATE,
+            self.COL_AGE,
+            self.COL_SEX,
+            self.COL_LOCATION,
+            self.COL_SYMPTOM_DATE,
+            self.COL_STATUS,
+            self.COL_DISCHARGED,
+        ]
+        self.dataframe[self.COL_SEX].replace({
+            '女性': 'Female',
+            '男性': 'Male',
+        }, inplace=True)
+        self.dataframe[self.COL_LOCATION].replace({
+            **OSAKA_CITIES,
+            '府外': 'Ngoài Osaka',
+            '大阪府外': 'Ngoài Osaka',
+        }, inplace=True)
+        self.dataframe[self.COL_DISCHARGED].replace({
+            '退院': 'Ra viện',
+            '死亡退院': 'Tử vong',
+            '入院中': 'Đang nằm viện',
+            '入院調整中': 'Chuẩn bị nhập viện',
+            '管外': 'Không quản lý',
+        }, inplace=True)
+
+
 def init_firebase_app():
     cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
     app = firebase_admin.initialize_app(cred, {
@@ -365,6 +455,7 @@ def main(args=None):
         PrefectureByDateDataset(),
         PatientDetailsDataset(),
         PatientByCityTokyoDataset(),
+        PatientByCityOsakaDataset(),
     )
 
     for dataset in all_datasets:
