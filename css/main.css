@@ -914,6 +914,7 @@ nav.covi-nav-fixed {
 }
 .slick-prev.slick-arrow {
   left: 8px;
+  z-index: 1;
 }
 .slick-next.slick-arrow {
   right: 8px;
@@ -946,7 +947,7 @@ nav.covi-nav-fixed {
 }
 .covi-latest-posts__item .post-read-more {
   font-weight: bold;
-}  
+}
 
 /* maps */
 #map-jp-overview {
