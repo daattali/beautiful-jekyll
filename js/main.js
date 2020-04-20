@@ -128,8 +128,10 @@ var main = {
     // show maps
     main.initMaps();
 
-    // TODO: show graphs
-    // main.initGraphs();
+    // show graphs
+    main.initDailyGraphs();
+    main.initTokyoByWardGraph();
+    main.initOsakaByWardGraph();
   },
 
   initFirebase: function () {
@@ -332,29 +334,133 @@ var main = {
     }
   },
 
-  initGraphs: function () {
-    // tokyo daily graph
-    if ($("#graph-daily-tokyo").length > 0) {
-      Highcharts.getJSON(
-        "https://spreadsheets.google.com/feeds/list/1yPMARIOZEsLh4_ymE7moji0_tmKMHNl4VuuWwzFiSl8/2/public/full?alt=json",
-        (result) => {
-          const contents = _.chain(result)
-            .get("feed.entry")
-            .filter((e) => _.get(e, "gsx$公表年月日.$t"))
-            .value();
-          const formatted = _.chain(contents.slice(0, -1))
-            .mapValues((c) => {
-              return {
-                date: _.get(c, "gsx$公表年月日.$t"),
-                count: _.chain(c).get("gsx$countaofno.$t").parseInt().value(),
-              };
-            })
-            .orderBy("date", "desc")
-            .value();
-          console.debug(formatted);
-          console.debug(_.map(formatted, "count"));
+  initDailyGraphs: async function () {
+    try {
+      const storage = firebase.storage();
+      // daily graph
+      if ($(".graph-daily").length > 0) {
+        // load data from firebase storage
+        const fileRef = storage.ref("prefecture-by-date.json");
+        const url = await fileRef.getDownloadURL().catch((e) => {
+          throw e;
+        });
+        const metadata = await fileRef.getMetadata().catch((e) => {
+          throw e;
+        });
+        const response = await fetch(url).catch((e) => {
+          throw e;
+        });
+        const responseData = await response.json().catch((e) => {
+          throw e;
+        });
 
-          Highcharts.chart("graph-daily-tokyo", {
+        renderDailyGraph(responseData, "Tokyo", "graph-daily-tokyo");
+        renderDailyGraph(responseData, "Osaka", "graph-daily-osaka");
+      }
+    } catch (error) {
+      // TODO: error handler
+      console.error(error);
+    }
+  },
+
+  initTokyoByWardGraph: async function () {
+    try {
+      const storage = firebase.storage();
+      // daily graph
+      if ($("#graph-byward-tokyo").length > 0) {
+        // load data from firebase storage
+        const fileRef = storage.ref("patient-by-city-tokyo.json");
+        const url = await fileRef.getDownloadURL().catch((e) => {
+          throw e;
+        });
+        const response = await fetch(url).catch((e) => {
+          throw e;
+        });
+        const responseData = await response.json().catch((e) => {
+          throw e;
+        });
+
+        const data = _.chain(responseData)
+          .filter((d) => d.label != "小計")
+          .orderBy("count")
+          .reverse()
+          .value();
+
+        Highcharts.chart("graph-byward-tokyo", {
+          chart: {
+            type: "column",
+          },
+          legend: {
+            enabled: false,
+          },
+          title: {
+            text: `Số bệnh nhân theo quận`,
+          },
+          subtitle: {
+            text: `Nguồn: <a href="https://stopcovid19.metro.tokyo.lg.jp/">Chính quyền thành phố Tokyo</a>`,
+          },
+          xAxis: {
+            categories: _.map(data, "label_vietnamese"),
+            min: 0,
+            max: 10,
+            scrollbar: {
+              enabled: true,
+            },
+          },
+          yAxis: {
+            min: 0,
+            max: _.max(_.map(data, "count")),
+            title: false,
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0,
+            },
+          },
+          series: [
+            {
+              name: "Số bệnh nhân",
+              data: _.map(data, "count"),
+              color: "rgba(255,159,64,1)",
+            },
+          ],
+        });
+      }
+    } catch (error) {
+      // TODO: error handler
+      console.error(error);
+    }
+  },
+
+  initOsakaByWardGraph: async function () {
+    try {
+      const storage = firebase.storage();
+      // daily graph
+      if ($("#graph-byward-osaka").length > 0) {
+        // load data from firebase storage
+        const fileRef = storage.ref("patient-by-city-osaka.json");
+        const url = await fileRef.getDownloadURL().catch((e) => {
+          throw e;
+        });
+        const response = await fetch(url).catch((e) => {
+          throw e;
+        });
+        const responseData = await response.json().catch((e) => {
+          throw e;
+        });
+
+        const data = _.chain(responseData)
+          .groupBy("Location")
+          .mapValues((v, k) => {
+            return { location: k, count: v.length };
+          })
+          .values()
+          .sortBy("count")
+          .reverse()
+          .value();
+
+          Highcharts.chart("graph-byward-osaka", {
             chart: {
               type: "column",
             },
@@ -362,17 +468,22 @@ var main = {
               enabled: false,
             },
             title: {
-              text: "Số lượng bệnh nhân mới tại Tokyo mỗi ngày",
+              text: `Số bệnh nhân theo quận`,
             },
             subtitle: {
-              text: `Nguồn: <a href="https://stopcovid19.metro.tokyo.lg.jp/" target="_blank">https://stopcovid19.metro.tokyo.lg.jp/</a>`,
+              text: `Nguồn: <a href="https://covid19-osaka.info/">Chính quyền thành phố Osaka</a>`,
             },
             xAxis: {
-              categories: _.map(formatted, "date"),
-              crosshair: true,
+              categories: _.map(data, "location"),
+              min: 0,
+              max: 10,
+              scrollbar: {
+                enabled: true,
+              },
             },
             yAxis: {
               min: 0,
+              max: _.max(_.map(data, "count")),
               title: false,
             },
             plotOptions: {
@@ -384,13 +495,15 @@ var main = {
             series: [
               {
                 name: "Số bệnh nhân",
-                data: _.map(formatted, "count"),
+                data: _.map(data, "count"),
                 color: "rgba(255,159,64,1)",
               },
             ],
           });
-        }
-      );
+      }
+    } catch (error) {
+      // TODO: error handler
+      console.error(error);
     }
   },
 };
@@ -398,3 +511,47 @@ var main = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener("DOMContentLoaded", main.init);
+
+function renderDailyGraph(responseData, prefName, graphId) {
+  const data = _.chain(responseData)
+    .filter(["Tỉnh/Thành phố", prefName])
+    .first()
+    .omit(["Tỉnh/Thành phố", "Tổng"])
+    .value();
+  Highcharts.chart(graphId, {
+    chart: {
+      type: "column",
+    },
+    legend: {
+      enabled: false,
+    },
+    title: {
+      text: `Số lượng bệnh nhân mới tại ${prefName} mỗi ngày`,
+    },
+    subtitle: {
+      text: `Nguồn: <a href="https://www3.nhk.or.jp/news/special/coronavirus/" target="_blank">NHK</a> (Số liệu tính đến ${_.last(
+        _.keys(data)
+      )})`,
+    },
+    xAxis: {
+      categories: _.keys(data),
+    },
+    yAxis: {
+      min: 0,
+      title: false,
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0,
+      },
+    },
+    series: [
+      {
+        name: "Số bệnh nhân",
+        data: _.values(data),
+        color: "rgba(255,159,64,1)",
+      },
+    ],
+  });
+}
