@@ -387,34 +387,34 @@ var main = {
 
         Highcharts.chart("graph-byward-tokyo", {
           chart: {
-            type: "bar",
+            type: "column",
+          },
+          legend: {
+            enabled: false,
           },
           title: {
-            text: "Số bệnh nhân theo quận",
+            text: `Số bệnh nhân theo quận`,
           },
           subtitle: {
             text: `Nguồn: <a href="https://stopcovid19.metro.tokyo.lg.jp/">Chính quyền thành phố Tokyo</a>`,
           },
           xAxis: {
             categories: _.map(data, "label_vietnamese"),
-            title: false,
+            min: 0,
+            max: 10,
+            scrollbar: {
+              enabled: true,
+            },
           },
           yAxis: {
             min: 0,
             title: false,
           },
           plotOptions: {
-            bar: {
-              dataLabels: {
-                enabled: false,
-              },
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0,
             },
-          },
-          legend: {
-            enabled: false,
-          },
-          credits: {
-            enabled: false,
           },
           series: [
             {
@@ -458,45 +458,45 @@ var main = {
           .reverse()
           .value();
 
-        Highcharts.chart("graph-byward-osaka", {
-          chart: {
-            type: "bar",
-          },
-          title: {
-            text: "Số bệnh nhân theo quận",
-          },
-          subtitle: {
-            text: `Nguồn: <a href="https://covid19-osaka.info/">Chính quyền thành phố Osaka</a>`,
-          },
-          xAxis: {
-            categories: _.map(data, "location"),
-            title: false,
-          },
-          yAxis: {
-            min: 0,
-            title: false,
-          },
-          plotOptions: {
-            bar: {
-              dataLabels: {
-                enabled: false,
+          Highcharts.chart("graph-byward-osaka", {
+            chart: {
+              type: "column",
+            },
+            legend: {
+              enabled: false,
+            },
+            title: {
+              text: `Số bệnh nhân theo quận`,
+            },
+            subtitle: {
+              text: `Nguồn: <a href="https://covid19-osaka.info/">Chính quyền thành phố Osaka</a>`,
+            },
+            xAxis: {
+              categories: _.map(data, "location"),
+              min: 0,
+              max: 10,
+              scrollbar: {
+                enabled: true,
               },
             },
-          },
-          legend: {
-            enabled: false,
-          },
-          credits: {
-            enabled: false,
-          },
-          series: [
-            {
-              name: "Số bệnh nhân",
-              data: _.map(data, "count"),
-              color: "rgba(255,159,64,1)",
+            yAxis: {
+              min: 0,
+              title: false,
             },
-          ],
-        });
+            plotOptions: {
+              column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+              },
+            },
+            series: [
+              {
+                name: "Số bệnh nhân",
+                data: _.map(data, "count"),
+                color: "rgba(255,159,64,1)",
+              },
+            ],
+          });
       }
     } catch (error) {
       // TODO: error handler
