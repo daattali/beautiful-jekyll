@@ -252,7 +252,7 @@ var main = {
           },
           subtitle: {
             text:
-              'Nguồn: <a href="https://www.mhlw.go.jp/index.html" target="_blank">Bộ Lao động, Y tế và Phúc lợi</a>',
+              'Nguồn: <a href="https://mhlw-gis.maps.arcgis.com/apps/opsdashboard/index.html#/c2ac63d9dd05406dab7407b5053d108e" target="_blank">Bộ Lao động, Y tế và Phúc lợi</a>',
           },
           mapNavigation: {
             enabled: true,
