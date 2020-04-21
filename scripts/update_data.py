@@ -90,7 +90,7 @@ TOKYO_CITIES = {
     '昭島市': 'Akishima',
     '調布市': 'Chofu',
     '町田市': 'Machida',
-    '小金井市': 'Kogane',
+    '小金井市': 'Koganei',
     '小平市': 'Kodaira',
     '日野市': 'Hino',
     '東村山市': 'Higashimurayama',
