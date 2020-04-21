@@ -919,6 +919,7 @@ nav.covi-nav-fixed {
 }
 .slick-prev.slick-arrow {
   left: 8px;
+  z-index: 1;
 }
 .slick-next.slick-arrow {
   right: 8px;
