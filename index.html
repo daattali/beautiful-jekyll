@@ -15,7 +15,7 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
 
 <div class="container-fluid covi-latest-posts__wrapper bg-warning">
   <div class="covi-latest-posts">
-    {% assign latest = (site.posts | sort: 'date' | ) | reverse %}
+    {% assign latest = site.posts | sort: 'date' | reverse %}
     {% for post in latest limit: 5 %}
     <div class="media covi-latest-posts__item">
       <div class="media-body">
