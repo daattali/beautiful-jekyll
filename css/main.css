@@ -385,6 +385,11 @@ footer .theme-by {
   }
 }
 
+/* --- Post --- */
+.blog-post {
+  word-break: break-word;
+}
+
 /* --- Tags --- */
 
 .blog-tags {
@@ -946,7 +951,7 @@ nav.covi-nav-fixed {
 }
 .covi-latest-posts__item .post-read-more {
   font-weight: bold;
-}  
+}
 
 /* maps */
 #map-jp-overview {
