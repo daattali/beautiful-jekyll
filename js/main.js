@@ -405,6 +405,7 @@ var main = {
             max: 10,
             scrollbar: {
               enabled: true,
+              liveRedraw: true
             },
           },
           yAxis: {
@@ -479,6 +480,7 @@ var main = {
               max: 10,
               scrollbar: {
                 enabled: true,
+                liveRedraw: true
               },
             },
             yAxis: {
