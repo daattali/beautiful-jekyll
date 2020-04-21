@@ -167,6 +167,8 @@ OSAKA_CITIES = {
     '阪南市': 'Hannan',
     '豊能町': 'Thị trấn Toyono',
     '河南町': 'Thị trấn Kanan',
+    '羽曳野': 'Habikino',
+    '羽曳野市': 'Habikino',
 }
 
 
