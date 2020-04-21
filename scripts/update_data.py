@@ -113,7 +113,7 @@ TOKYO_CITIES = {
     '奥多摩町': 'Thị trấn Okutama',
     '大島町': 'Đảo Oshima',
     '利島村': 'Đảo Toshima',
-    '新島村': 'Đảo Nijima',
+    '新島村': 'Đảo Niijima',
     '神津島村': 'Đảo Kozushima',
     '三宅村': 'Đảo Miyake',
     '御蔵島村': 'Đảo Mikurajima',
@@ -166,7 +166,7 @@ OSAKA_CITIES = {
     '富田林市': 'Tondabayashi',
     '阪南市': 'Hannan',
     '豊能町': 'Thị trấn Toyono',
-    '河南町': 'Thị trấn Henan',
+    '河南町': 'Thị trấn Kanan',
 }
 
 
