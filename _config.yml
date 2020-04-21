@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: COVID-19 JP
+title: Thông tin COVID-19 tại Nhật Bản
 
 # Short description of your site
-description: Thông tin COVID-19 tại Nhật Bản
+description: Thông tin COVID-19 tại Nhật Bản. Những thông tin từ nguồn tin chính thống nhất.
 
 # opg image
 avatar: "/img/banner.png"
@@ -29,18 +29,17 @@ timezone: "Asia/Tokyo"
 
 # List of links in the navigation bar
 navbar-links:
-  Tổng quan: "index"
-  Số liệu: "datajapan"
-  Tin tức: "policy"
-  Bài viết: "baiviettuchuyengia"
-  Giới thiệu: "aboutme"
-  Liên lạc: "emailus"
+  Home: "index"
+  Số liệu: "data"
+  Tin tức: "news"
+  Bài viết: "articles"
+  Giới thiệu: "about"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: /img/logo.png
 
 # --- Background colour/image options --- #
 
@@ -99,7 +98,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "thongtincovid19.github.io/"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "thongtincovid19.jp"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 

@@ -8,4 +8,7 @@ Với mục tiêu cung cấp những thông tin từ nguồn tin chính thống 
 chúng tôi đã lập nên trang thông tin này.
 Tất cả những dữ liệu được lấy từ nguồn thông tin chính thống (do chính phủ Nhật Bản công bố) và chúng tôi tự tập hợp và phân tích.
 Hãy liên lạc trước khi sao chép hoặc đăng tải.
+Liên lạc qua email: <a href="mailto:thongtincovid19jp@gmail.com">thongtincovid19jp@gmail.com</a>.
+
+{:.container}
 Cảm ơn!
