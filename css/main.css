@@ -433,7 +433,7 @@ footer .theme-by {
 /* --- Post and page headers --- */
 
 .intro-header {
-  margin: 80px 0 20px;
+  margin: 40px 0 20px;
   position: relative;
 }
 @media (max-width: 639px) {
@@ -518,7 +518,7 @@ footer .theme-by {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 80px;
+    margin-top: 40px;
   }
   .intro-header.big-img {
     margin-top: 91px; /* Full navbar is small navbar + 20px padding on each side when expanded */
@@ -798,8 +798,8 @@ pre {
   text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 }
 .covi-hero__content {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .covi-hero__content h1 {
   font-size: 3em;
@@ -920,4 +920,43 @@ nav.covi-nav-fixed {
 }
 .slick-prev:before, .slick-next:before {
   line-height: 25px;
+}
+
+/* latest posts */
+.covi-latest-posts__wrapper {
+  margin-top: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.covi-latest-posts__item {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.covi-latest-posts__item .post-meta {
+  color: #808080;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 10px;
+}
+.covi-latest-posts__item a {
+  text-decoration: none;
+  color: #404040;
+}
+.covi-latest-posts__item .post-read-more {
+  font-weight: bold;
+}  
+
+/* maps */
+#map-jp-overview {
+  height: 500px;
+  min-width: 310px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
 }

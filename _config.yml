@@ -6,6 +6,9 @@ title: COVID-19 JP
 # Short description of your site
 description: Thông tin COVID-19 tại Nhật Bản
 
+# opg image
+avatar: "/img/banner.png"
+
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -68,6 +71,7 @@ author:
 social-network-links:
   rss: true
   email: "thongtincovid19jp@gmail.com"
+  facebook: "Th%C3%B4ng-Tin-Covid-19-t%E1%BA%A1i-Nh%E1%BA%ADt-B%E1%BA%A3n-103103408046262"
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -83,9 +87,9 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
+  twitter: false
   facebook: true
-  linkedin: true
+  linkedin: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -182,7 +186,7 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      show-avatar: false
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
