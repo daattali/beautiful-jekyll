@@ -409,6 +409,7 @@ console.debug(responseData);
             max: 10,
             scrollbar: {
               enabled: true,
+              liveRedraw: true
             },
           },
           yAxis: {
@@ -483,6 +484,7 @@ console.debug(responseData);
               max: 10,
               scrollbar: {
                 enabled: true,
+                liveRedraw: true
               },
             },
             yAxis: {
