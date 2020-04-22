@@ -35,7 +35,9 @@ Let's say after a hardware change you have a gap between vmnic1 and vmnic4 and y
 
     <code>
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type pci --alias vmnic2 --bus-address s00000002.00
-    </code><code>
+    </code>
+    
+    <code>
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type pci --alias vmnic3 --bus-address s00000002.01
     </code>
 
@@ -43,7 +45,9 @@ Let's say after a hardware change you have a gap between vmnic1 and vmnic4 and y
 
     <code>
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type logical --alias vmnic2 --bus-address s00000002.00
-    </code><code>
+    </code>
+    
+    <code>
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type logical --alias vmnic3 --bus-address s00000002.01
     </code>
 
