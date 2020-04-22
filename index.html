@@ -105,7 +105,10 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
         <div class="col-md-12">
           <div class="media covi-post">
             <div class="media-left">
-              <a class="covi-post__thumbnail" href="{{ post.url | relative_url }}">
+              <a
+                class="covi-post__thumbnail"
+                href="{{ post.url | relative_url }}"
+              >
                 {% if post.thumbnail %}
                 <div
                   class="media-object embed-responsive embed-responsive-1by1"
@@ -166,3 +169,5 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
     </div>
   </div>
 </section>
+
+{% include partners.html %}
