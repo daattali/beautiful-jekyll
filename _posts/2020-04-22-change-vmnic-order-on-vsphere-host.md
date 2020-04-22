@@ -10,11 +10,11 @@ Uplink are no exception. vSphere gives them labels (vmnic0, 1, 2...) at the firs
 
 VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive information about the labelling of IO devices. Here is a quick summary of how to change the labels of the uplinks.
 
-* First evacuate the host and put it in maintenance mode (We will need to reboot it).
+* First evacuate the host and put it in maintenance mode (We will need to reboot it.
 * Connect to the host via SSH.
 * List the uplinks and their labels.
 
-> localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
+    localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
 
 The output contains the list of vmnics with their addresses on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the aliases of both of these.
 
