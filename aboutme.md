@@ -29,6 +29,6 @@ My name is Nana Boateng. I am a Statistician, Econometrician  and a Data Scienti
 * Ph.D (2016),  Statistics, University of Memphis
 * M.Sc (2014),  Statistics, University of Memphis
 * MA  (2017),  Economics,  University of Memphis
-* M.Sc (2010),  Mathematics, Middle Tennessee State University
+* M.Sc (2012),  Mathematics, Middle Tennessee State University
 * B.Sc (2007),  Mathematics , Kwame Nkrumah University of Science and Technology
 
