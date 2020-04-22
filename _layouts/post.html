@@ -5,18 +5,18 @@ layout: base
 {% include header.html type="post" %}
 
 <div class="container" style="padding-bottom: 32px;">
-  {% if post.thumbnail %}
+  {% if page.thumbnail %}
   <div
     class="embed-responsive embed-responsive-16by9"
     style="
-      background-image: url({{ post.thumbnail }});
+      background-image: url({{ page.thumbnail }});
       background-position: center;
-      background-size: contain;
+      background-size: 100% auto;
       background-repeat: no-repeat;
       width: 100%;
     "
   >
-    <img src="/img/placeholder.png" alt="{{post.title}}" width="0" height="0" />
+    <img src="{{ page.thumbnail }}" alt="{{post.title}}" width="0" height="0" />
   </div>
   {% endif %}
 

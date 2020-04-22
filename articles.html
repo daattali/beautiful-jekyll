@@ -11,6 +11,24 @@ title: Bài viết
       <div class="media covi-post">
         <div class="media-left">
           <a class="covi-post__thumbnail" href="{{ post.url | relative_url }}">
+            {% if post.thumbnail %}
+            <div
+              class="media-object embed-responsive embed-responsive-1by1"
+              style="
+                background-image: url({{post.thumbnail}});
+                background-position: center;
+                background-size: cover;
+                width: 128px;
+              "
+            >
+              <img
+                src="{{post.thumbnail}}"
+                alt="{{post.title}}"
+                width="0"
+                height="0"
+              />
+            </div>
+            {% else %}
             <div
               class="media-object embed-responsive embed-responsive-1by1"
               style="
@@ -27,6 +45,7 @@ title: Bài viết
                 height="0"
               />
             </div>
+            {% endif %}
           </a>
         </div>
         <div class="media-body">
