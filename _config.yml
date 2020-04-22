@@ -12,9 +12,6 @@ avatar: "/img/banner.png"
 # Publish posts or collection documents with a future date
 future: true
 
-# Set the time zone for site generation
-timezone: "Asia/Tokyo"
-
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
@@ -45,7 +42,7 @@ title-img: /img/logo.png
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#fff"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
@@ -155,19 +152,19 @@ utterances:
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+excerpt_length: 32
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
 
 # Ruby Date Format
-date_format: "%B %-d, %Y"
+date_format: "%d/%m/%Y"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Tokyo"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

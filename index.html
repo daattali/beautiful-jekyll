@@ -4,69 +4,88 @@ title: Thông tin COVID-19 tại Nhật Bản
 subtitle: Những thông tin từ nguồn tin chính thống nhất
 ---
 
-<div class="container-fluid covi-latest-posts__wrapper bg-warning">
-  <div class="covi-latest-posts">
-    {% assign latest = site.posts | sort: 'date' | reverse %} {% for post in
-    latest limit: 5 %}
-    <div class="media covi-latest-posts__item">
-      <div class="media-body">
-        <div class="container">
-          <a href="{{ post.url | relative_url }}">
-            <h4 class="media-heading">{{ post.title }}</h4>
-          </a>
-          <p class="post-meta">
-            Posted on {{ post.date | date: site.date_format }}
-          </p>
-          <div class="visible-lg post-entry">
-            {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-            <a class="post-read-more" href="{{ post.url | relative_url }}">[Read&nbsp;More]</a>
+<section class="bg--white covi-section" id="overview">
+  <div class="container">
+    <div class="covi-section__content">
+      <!-- số liệu thống kê -->
+      <div class="mb-case-overview visible-xs">
+        <div class="case-overview">
+          <small class="case-overview__title">Số ca nhiễm</small>
+          <h3 class="case-overview__number">
+            <span class="case-overview__total">11,119</span>
+            <small class="case-overview__change">(+366)</small>
+          </h3>
+        </div>
+        <div class="case-overview">
+          <small>Ra viện</small>
+          <h3 class="case-overview__number">
+            <span class="case-overview__total">1,356</span>
+            <small class="case-overview__change">(+177)</small>
+          </h3>
+        </div>
+        <div class="case-overview">
+          <small>Tử vong</small>
+          <h3 class="case-overview__number">
+            <span class="case-overview__total">186</span>
+            <small class="case-overview__change">(+15)</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-9">
+          <!-- highmap - bản đồ bệnh nhân covid 19 Nhật Bản -->
+          <div id="map-jp-overview"></div>
+        </div>
+
+        <!-- số liệu thống kê -->
+        <div class="col-sm-3 hidden-xs">
+          <div class="panel panel-default case-overview">
+            <div class="panel-body">
+              <small class="case-overview__title">Số ca nhiễm</small>
+              <h3 class="case-overview__number">
+                <span class="case-overview__total">11,119</span>
+                <small class="case-overview__change">(+366)</small>
+              </h3>
+            </div>
+          </div>
+          <div class="panel panel-default case-overview">
+            <div class="panel-body">
+              <small>Ra viện</small>
+              <h3 class="case-overview__number">
+                <span class="case-overview__total">1,356</span>
+                <small class="case-overview__change">(+177)</small>
+              </h3>
+            </div>
+          </div>
+          <div class="panel panel-default case-overview">
+            <div class="panel-body">
+              <small>Tử vong</small>
+              <h3 class="case-overview__number">
+                <span class="case-overview__total">186</span>
+                <small class="case-overview__change">(+15)</small>
+              </h3>
+            </div>
+          </div>
+
+          <div class="text-right hidden-xs">
+            <a class="text-link" href="/data">Xem thêm →</a>
           </div>
         </div>
       </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
 
-<section class="bg--light-gray covi-section">
-  <div class="container">
-    <div class="covi-section__content">
-      <!-- google slides - tổng quan -->
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe
-          class="embed-responsive-item"
-          src="https://docs.google.com/presentation/d/e/2PACX-1vRytQ_SqTd0r9a3f6zgqZQjnMwEO774yHzyL-49uZAh5uV5Zzth4NRqGikVSV3UmJ07p-0i3hswwEn0/embed?start=true&loop=true&delayms=10000"
-          frameborder="0"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        >
-        </iframe>
-      </div>
+      <div class="text-footage text-center" id="map-jp-overview__footer"></div>
     </div>
   </div>
 </section>
 
-<section class="bg--white covi-section" id="overview">
-  <div class="container">
-    <h3 class="covi-section__title">
-      Tổng quan
-    </h3>
-
-    <div class="covi-section__content">
-      <!-- highmap - bản đồ bệnh nhân covid 19 Nhật Bản -->
-      <div id="map-jp-overview"></div>
-      <div class="text-danger text-center" id="map-jp-overview__footer"></div>
-    </div>
-  </div>
-</section>
-
-<section class="bg--light-gray covi-section">
+<section class="bg--white covi-section no-padding-top">
   <div class="container">
     <div class="covi-section__content">
+      <h2 class="page-header">Dòng sự kiện</h2>
       <!-- timelinejs - thông tin covid 19 tại Nhật Bản (events) -->
       <iframe
-        src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1QQ6epkqUlLgFzR-eLuHAf415XB2URu1YfPRlYN0SYQM&font=Roboto&lang=vi&initial_zoom=1&height=500&start_at_end=true"
+        src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1QQ6epkqUlLgFzR-eLuHAf415XB2URu1YfPRlYN0SYQM&font=Helvetica&lang=vi&initial_zoom=1&height=500&start_at_end=true"
         width="100%"
         height="500"
         frameborder="0"
@@ -75,50 +94,80 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
   </div>
 </section>
 
-<section class="bg--white covi-section" id="tokyo">
+<section class="bg--white covi-section no-padding-top">
   <div class="container">
-    <h3 class="covi-section__title">
-      Thông tin tại Tokyo
-    </h3>
+    <div class="covi-section__content">
+      <h2 class="page-header">Tin tức & Bài viết</h2>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="covi-section__content">
-          <!-- highcharts - Số lượng bệnh nhân mới tại Tokyo mỗi ngày -->
-          <div class="graph-daily" id="graph-daily-tokyo"></div>
+      <div class="row covi-posts">
+        {% assign latest = site.posts | sort: 'date' | reverse %} {% for post in
+        latest limit: 12 %}
+        <div class="col-md-12">
+          <div class="media covi-post">
+            <div class="media-left">
+              <a
+                class="covi-post__thumbnail"
+                href="{{ post.url | relative_url }}"
+              >
+                {% if post.thumbnail %}
+                <div
+                  class="media-object embed-responsive embed-responsive-1by1"
+                  style="
+                    background-image: url({{post.thumbnail}});
+                    background-position: center;
+                    background-size: cover;
+                    width: 128px;
+                  "
+                >
+                  <img
+                    src="{{post.thumbnail}}"
+                    alt="{{post.title}}"
+                    width="0"
+                    height="0"
+                  />
+                </div>
+                {% else %}
+                <div
+                  class="media-object embed-responsive embed-responsive-1by1"
+                  style="
+                    background-image: url(/img/placeholder.png);
+                    background-position: center;
+                    background-size: cover;
+                    width: 128px;
+                  "
+                >
+                  <img
+                    src="/img/placeholder.png"
+                    alt="{{post.title}}"
+                    width="0"
+                    height="0"
+                  />
+                </div>
+                {% endif %}
+              </a>
+            </div>
+            <div class="media-body">
+              <a class="covi-post__title" href="{{ post.url | relative_url }}">
+                <h4 class="media-heading">{{post.title}}</h4>
+              </a>
+              <a class="covi-post__desc" href="{{ post.url | relative_url }}">
+                {{ post.excerpt | strip_html | xml_escape | truncatewords:
+                site.excerpt_length }}
+              </a>
+              <div class="covi-post__meta">
+                {{ post.date | date: site.date_format }}
+              </div>
+            </div>
+          </div>
         </div>
+        {% endfor %}
       </div>
 
-      <div class="col-md-6">
-        <div class="covi-section__content">
-          <!-- highcharts - Số lượng bênh nhân covid 19 theo quận -->
-          <div class="graph-byward" id="graph-byward-tokyo"></div>
-        </div>
+      <div class="text-right hidden-xs">
+        <a class="text-link" href="/news">Xem thêm →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="bg--light-gray covi-section" id="osaka">
-  <div class="container">
-    <h3 class="covi-section__title">
-      Thông tin tại Osaka
-    </h3>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="covi-section__content">
-          <!-- highcharts - Số lượng bệnh nhân mới tại Osaka mỗi ngày -->
-          <div class="graph-daily" id="graph-daily-osaka"></div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="covi-section__content">
-          <!-- highcharts - Số lượng bênh nhân covid 19 theo quận -->
-          <div class="graph-byward" id="graph-byward-osaka"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include partners.html %}

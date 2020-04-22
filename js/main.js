@@ -225,7 +225,7 @@ var main = {
     if ($("#map-jp-overview").length > 0) {
       try {
         // load data from firebase storage
-        const fileRef = storage.ref("patient-all.json");
+        const fileRef = storage.ref("prefecture-by-date.json");
         const url = await fileRef.getDownloadURL().catch((e) => {
           throw e;
         });
@@ -239,20 +239,24 @@ var main = {
           throw e;
         });
 
-        // prepare data to render
-        const updatedAt = moment(metadata.updated)
-          .local()
-          .format("HH:mm DD/MM/YYYY");
         const data = _.chain(responseData)
-          .groupBy("Prefecture")
           .mapValues((value, key) => {
             return {
-              prefecture: key,
-              value: value.length,
+              prefecture: value["Tỉnh/Thành phố"],
+              value: value["Tổng"],
             };
           })
           .values()
           .value();
+console.debug(responseData);
+        // prepare data to render
+        const updatedAt = _.chain(responseData)
+        .first()
+        .omit(["Tỉnh/Thành phố", "Tổng"])
+        .keys()
+        .map(d => moment(d))
+        .max()
+        .value();
 
         // Create the chart
         Highcharts.mapChart("map-jp-overview", {
@@ -268,7 +272,7 @@ var main = {
           },
           subtitle: {
             text:
-              'Nguồn: <a href="https://mhlw-gis.maps.arcgis.com/apps/opsdashboard/index.html#/c2ac63d9dd05406dab7407b5053d108e" target="_blank">Bộ Lao động, Y tế và Phúc lợi</a>',
+              'Nguồn: <a href="https://www3.nhk.or.jp/news/special/coronavirus/" target="_blank">NHK</a>',
           },
           mapNavigation: {
             enabled: true,
@@ -325,7 +329,7 @@ var main = {
         });
 
         $("#map-jp-overview__footer").html(
-          `<small>Cập nhật lúc: ${updatedAt}.</small>`
+          `<small>Thông tin tính đến ngày ${updatedAt.format("DD/MM")}.</small>`
         );
       } catch (error) {
         // TODO: error handler

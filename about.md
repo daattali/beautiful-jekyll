@@ -12,3 +12,5 @@ Liên lạc qua email: <a href="mailto:thongtincovid19jp@gmail.com">thongtincovi
 
 {:.container}
 Cảm ơn!
+
+{% include partners.html %}

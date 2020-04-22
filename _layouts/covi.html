@@ -6,6 +6,7 @@ layout: base
 
 <div role="main">
 
+  {% if page.url != "/" %}
   <div class="covi-hero">
     <div class="container">
       <div class="covi-hero__content">
@@ -14,6 +15,7 @@ layout: base
       </div>
     </div>
   </div>
+  {% endif %}
 
   {{ content }}
 </div>
