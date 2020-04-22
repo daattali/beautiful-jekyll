@@ -14,7 +14,7 @@ VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive inf
 * Connect to the host via SSH.
 * List the uplinks and their labels.
 
-    localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
+    <code>localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic</code>
 
 The output contains the list of vmnics with their addresses on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the aliases of both of these.
 
