@@ -8,7 +8,7 @@ Changing the vmnic order is an unusual thing to do and you may rightfully wonder
 
 Uplink are no exception. vSphere gives them labels (vmnic0, 1, 2...) at the first boot that you then use to configure the vSwitches . However, if you make changes to the harware configuration and reorder the vSwitches you may need to change the labels to make them match the other hosts.
 
-VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive information about the labelling of IO devices. Here is a quick summary of how to change the labels of the uplinks.
+VMware [KB2091560](https://kb.vmware.com/s/article/2091560) gives extensive information about the labelling of IO devices. Here is a quick summary of how to change the labels of the uplinks.
 
 * First evacuate the host and put it in maintenance mode (We will need to reboot it.
 * Connect to the host via SSH.
