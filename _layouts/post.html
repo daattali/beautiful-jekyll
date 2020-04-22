@@ -5,30 +5,18 @@ layout: base
 {% include header.html type="post" %}
 
 <div class="container" style="padding-bottom: 32px;">
-  {% if page.gh-repo %}
-  {% assign gh_split =  page.gh-repo | split:'/'  %}
-  {% assign gh_user =  gh_split[0]  %}
-  {% assign gh_repo =  gh_split[1]  %}
-
-  <div id="header-gh-btns">
-    {% if page.gh-badge.size > 0 %}
-    {% for badge in page.gh-badge %}
-    {% case badge %}
-    {% when 'star'%}
-    <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true"
-      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-    {% when 'watch'%}
-    <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true"
-      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-    {% when 'fork'%}
-    <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true"
-      frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-    {% when 'follow'%}
-    <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0"
-      scrolling="0" width="220px" height="20px"></iframe>
-    {% endcase %}
-    {% endfor %}
-    {% endif %}
+  {% if post.thumbnail %}
+  <div
+    class="embed-responsive embed-responsive-16by9"
+    style="
+      background-image: url({{ post.thumbnail }});
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+    "
+  >
+    <img src="/img/placeholder.png" alt="{{post.title}}" width="0" height="0" />
   </div>
   {% endif %}
 
@@ -38,30 +26,32 @@ layout: base
 
   {% if page.tags.size > 0 %}
   <div class="blog-tags">
-    Tags:
-    {% if site.link-tags %}
-    {% for tag in page.tags %}
+    Tags: {% if site.link-tags %} {% for tag in page.tags %}
     <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-    {% endfor %}
-    {% else %}
-    {{ page.tags | join: ", " }}
-    {% endif %}
+    {% endfor %} {% else %} {{ page.tags | join: ", " }} {% endif %}
   </div>
-  {% endif %}
-
-  {% include social-share.html %}
+  {% endif %} {% include social-share.html %}
 
   <ul class="pager blog-pager">
     {% if page.previous.url %}
     <li class="previous">
-      <a href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top"
-        title="{{page.previous.title}}">&larr; Previous Post</a>
+      <a
+        href="{{ page.previous.url | relative_url }}"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="{{page.previous.title}}"
+        >&larr; Bài trước</a
+      >
     </li>
-    {% endif %}
-    {% if page.next.url %}
+    {% endif %} {% if page.next.url %}
     <li class="next">
-      <a href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top"
-        title="{{page.next.title}}">Next Post &rarr;</a>
+      <a
+        href="{{ page.next.url | relative_url }}"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="{{page.next.title}}"
+        >Bài tiếp theo &rarr;</a
+      >
     </li>
     {% endif %}
   </ul>

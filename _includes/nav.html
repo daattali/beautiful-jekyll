@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-custom top-nav-short">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       {%- if site.title-img -%}
       <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"
@@ -13,12 +13,14 @@
   </div>
 </nav>
 
-<nav class="container-fluid covi-nav-fixed">
-  <div class="covi-nav-carousel">
-    {%- for link in site.navbar-links -%}
-    <li class="covi-nav-item">
-      <span><a class="link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a></span>
-    </li>
-    {%- endfor -%}
+<nav class="covi-nav-fixed">
+  <div class="container">
+    <div class="covi-nav-carousel">
+      {%- for link in site.navbar-links -%}
+      <li class="covi-nav-item">
+        <span><a class="link" href="{{ link[1] | relative_url }}">{{ link[0] }}</a></span>
+      </li>
+      {%- endfor -%}
+    </div>
   </div>
 </nav>
