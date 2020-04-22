@@ -33,14 +33,18 @@ Let's say after a hardware change you have a gap between vmnic1 and vmnic4 and y
 
 * Change the PCI alias. You essentially assign an alias to a Bus address.
 
+    <code>
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type pci --alias vmnic2 --bus-address s00000002.00
     
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type pci --alias vmnic3 --bus-address s00000002.01
+    </code>
 
 * Change the logical alias. Same as before with a different parameter.
 
+    <code>
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type logical --alias vmnic2 --bus-address s00000002.00
     
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type logical --alias vmnic3 --bus-address s00000002.01
+    </code>
 
 * Reboot the host.
