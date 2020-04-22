@@ -16,7 +16,7 @@ The VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive
 
     localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
 
-The output contains the list of vmnics with their pci ID on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the alias on both of them.
+The output contains the list of vmnics with their addresses on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the aliases of both of them.
 
     Bus type  Bus address          Alias
     ------------------------------------
