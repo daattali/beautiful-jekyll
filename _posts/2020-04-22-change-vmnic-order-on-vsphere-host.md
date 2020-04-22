@@ -16,7 +16,7 @@ The VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive
 
     localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
 
-The output contains the list of vmnics with their addresses on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the aliases of both of them.
+The output contains the list of vmnics with their addresses on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the aliases of both of these.
 
     Bus type  Bus address          Alias
     ------------------------------------
@@ -29,7 +29,7 @@ The output contains the list of vmnics with their addresses on the motherboard. 
     logical   pci#s00000001.01#0   vmnic1
     logical   pci#s00000001.00#0   vmnic0
 
-Let's say after a hardware change you have a gap between vmnic1 and vmnic4 and you don't want that. We want to replace vmnic4 with vmnic2 and vmnic5 with vmnic3.
+Let's say after a hardware change you have a gap between vmnic1 and vmnic4 and you are not happy with that. We want to replace vmnic4 with vmnic2 and vmnic5 with vmnic3.
 
 * Change the PCI alias. You essentially assign an alias to a Bus address.
 
