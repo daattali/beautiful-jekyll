@@ -8,9 +8,95 @@ comments: false
 
 
 # Basic Linux courses resources (V1.1)
+## Linux Basics
+## Package Management
+### Tarball Example
+ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/9.1 
+### Using Tarballs
+https://www.tldp.org/HOWTO/Software-Building-HOWTO-3.html
+
+## Linux Distributions
+https://en.wikipedia.org/wiki/Comparison_of_Linux_distributions
+
+https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg
+
+## Linux File systems
+https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel
+
+### Filesystem Heirachy Standard
+www.pathname.com/fhs
+
+https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+
+### Binary Directory Standards
+http://lists.busybox.net/pipermail/busybox/2010-December/074114.html
+
+## Progams & Services
+### Elf Diagram
+![ELF Diagram](https://upload.wikimedia.org/wikipedia/commons/e/e4/ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)
+
+### Process Signals
+https://linux.die.net/man/7/signal
+
+https://www.bogotobogo.com/Linux/linux_process_and_signals.php
+
+### Sysvinit
+https://www.oreilly.com/library/view/essential-system-administration/0596003439/ch04s02.html
+
+https://wiki.gentoo.org/wiki/Sysvinit
+
+### Init System and Daemons (Boot Process)
+https://opensource.com/article/17/2/linux-boot-and-startup
+
+https://www.golinuxcloud.com/beginners-guide-systemd-tutorial-linux/
+
+### Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1
+[![](https://img.youtube.com/vi/mHB0Z-HUauo/maxresdefault.jpg)](https://youtu.be/mHB0Z-HUauo)
+
+### Common Linux Processess / Daemons
+https://www.techrepublic.com/article/linux-101-a-comprehensive-list-of-available-linux-services/
+
+https://meterpreter.org/common-linux-services-list/
+
+## Bash Usage
+
+### Special Characters
+https://docstore.mik.ua/orelly/unix/upt/ch08_19.htm
+
+https://mywiki.wooledge.org/BashGuide/SpecialCharacters
+
+### Grep awk and sed tutorial
+<https://www-users.york.ac.uk/~mijp1/teaching/2nd_year_Comp_Lab/guides/grep_awk_sed.pdf>
+
+### Awk tutorial
+<https://www.tutorialspoint.com/awk/index.htm>
+
+### How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170
+[![](https://img.youtube.com/vi/F7Brrn-L1Zg/maxresdefault.jpg)](https://youtu.be/F7Brrn-L1Zg)
+
+## User Management
+### Home Directory Specifications
+https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+
+### Passwd file specifications
+http://www.linfo.org/etc_passwd.html
+
+## Text Editors
+
+### Vim Cheat sheet for programmers
+![vim cheatsheet](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png)
+
+### Vim Plugins / Features
+http://codyveal.com/posts/vim-killer-features-part-1-text-objects/
+
+https://vimawesome.com
+
+https://www.reddit.com/r/vimporn/
+
 ## Regex
 ### A nice way to test your regex before using it
 <https://regexr.com/>
+
 <https://regex101.com/>
 
 ### IP Address regex
@@ -22,21 +108,6 @@ The valid way of doing it
 
 Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
 
-## Linux Basics
-### Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1
-[![](https://img.youtube.com/vi/mHB0Z-HUauo/maxresdefault.jpg)](https://youtu.be/mHB0Z-HUauo)
-
-### Vim Cheat sheet for programmers
-![vim cheatsheet](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png)
-
-### Grep awk and sed tutorial
-<https://www-users.york.ac.uk/~mijp1/teaching/2nd_year_Comp_Lab/guides/grep_awk_sed.pdf>
-
-### Awk tutorial
-<https://www.tutorialspoint.com/awk/index.htm>
-
-### How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170
-[![](https://img.youtube.com/vi/F7Brrn-L1Zg/maxresdefault.jpg)](https://youtu.be/F7Brrn-L1Zg)
 
 ## Bash Scripting
 ### Internal Variables
@@ -75,6 +146,7 @@ variable | explanation
 
 ## Best troubleshooting websites
 <https://wiki.archlinux.org/>
+
 <https://askubuntu.com/>
 
 ## Over the wire solutions
