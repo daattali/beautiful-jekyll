@@ -4,17 +4,17 @@ title: Change vmnic order on vSphere host
 DATE: 
 
 ---
-Changing the vmnic order is an unusual thing to do and you may rightfully wonder why one would want to do that. Heterogeneous enironments are fully supported but most vSphere administrators aim at having homogeneous hosts with the exact same config in their clusters to simplify operations and avoid human errors.
+Changing the vmnic order is an unusual thing to do and you may rightfully wonder why one would want to do that. Heterogeneous enironments are fully supported but most vSphere administrators aim to have homogeneous hosts with the exact same config in their clusters to simplify operations and avoid human errors.
 
-Uplinks lables are no exceptions. vSphere gives them labels at the first boot that you then use to configure the vSwtiches (vmnic0, 1, 2...). However, if you make changes to the physical configuration and reorder the vSwitches you may need to change the labels to make them match the other hosts.
+Uplink are no exception. vSphere gives them labels (vmnic0, 1, 2...) at the first boot that you then use to configure the vSwitches . However, if you make changes to the harware configuration and reorder the vSwitches you may need to change the labels to make them match the other hosts.
 
-The VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive information about the labelling of the IO devices. Here is a quick summary of how to change the uplinks labels.
+VMware [KB2091560 ](https://kb.vmware.com/s/article/2091560) gives extensive information about the labelling of IO devices. Here is a quick summary of how to change the labels of the uplinks.
 
-* First evacuate the host and put it in maintenance mode. We will need to reboot it.
+* First evacuate the host and put it in maintenance mode (We will need to reboot it).
 * Connect to the host via SSH.
 * List the uplinks and their labels.
 
-    localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
+> localcli --plugin-dir /usr/lib/vmware/esxcli/int deviceInternal alias list | grep vmnic
 
 The output contains the list of vmnics with their addresses on the motherboard. If the NIC runs on a native driver (which is most of the time) there will be a logical ID as well. We need to change the aliases of both of these.
 
@@ -34,11 +34,13 @@ Let's say after a hardware change you have a gap between vmnic1 and vmnic4 and y
 * Change the PCI alias. You essentially assign an alias to a Bus address.
 
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type pci --alias vmnic2 --bus-address s00000002.00
+    
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type pci --alias vmnic3 --bus-address s00000002.01
 
 * Change the logical alias. Same as before with a different parameter.
 
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type logical --alias vmnic2 --bus-address s00000002.00
+    
     localcli --plugin-dir /usr/lib/vmware/esxcli/int/ deviceInternal alias store --bus-type logical --alias vmnic3 --bus-address s00000002.01
 
 * Reboot the host.
