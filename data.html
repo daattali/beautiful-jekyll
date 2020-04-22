@@ -3,12 +3,11 @@ layout: covi
 title: Số liệu
 ---
 
-<section class="covi-section bg--light-gray covi-section">
+<section class="covi-section bg--white covi-section no-padding-top">
   <div class="container">
-    <h3 class="covi-section__title">
-      Số liệu chi tiết toàn nước Nhật
-    </h3>
     <div class="covi-section__content">
+      <h2 class="page-header">Tổng quan</h2>
+
       <!-- tableau - Số bệnh nhân theo nơi khám bệnh -->
       <div class="embed-responsive embed-responsive-4by3">
         <div class='tableauPlaceholder' id='viz1586777412752' style='position: relative'>
@@ -85,11 +84,24 @@ title: Số liệu
   </div>
 </section>
 
-<section class="covi-section bg--white covi-section">
+<section class="bg--white covi-section no-padding-top" id="tokyo">
   <div class="container">
-    <h3 class="covi-section__title">
-      Số liệu chi tiết Tokyo
-    </h3>
+    <h2 class="page-header">Tokyo</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="covi-section__content">
+          <div class="graph-daily" id="graph-daily-tokyo"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="covi-section__content">
+          <div class="graph-byward" id="graph-byward-tokyo"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="covi-section__content">
       <div class="embed-responsive embed-responsive-1by1">
         <iframe
@@ -100,3 +112,23 @@ title: Số liệu
   </div>
 </section>
 
+
+<section class="bg--white covi-section no-padding-top" id="osaka">
+  <div class="container">
+    <h2 class="page-header">Osaka</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="covi-section__content">
+          <div class="graph-daily" id="graph-daily-osaka"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="covi-section__content">
+          <div class="graph-byward" id="graph-byward-osaka"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
