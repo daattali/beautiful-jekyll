@@ -31,4 +31,5 @@ pages:
 - _posts/2019-10-23-vcsa-update-with-iis-repository-fix-download-failed-error.md
 - _posts/2020-01-30-2020-ldap-channel-binding-and-ldap-signing-requirement-for-windows.md
 - _posts/2020-02-18-how-to-sign-a-certificate-with-no-template-information-on-a-microsoft-ca.md
+- _posts/change-vmnic-order-on-vsphere-host.md
 - _posts/vami-certificate-not-updated-after-certificate-change.md
