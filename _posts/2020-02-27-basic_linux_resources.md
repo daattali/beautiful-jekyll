@@ -8,7 +8,293 @@ comments: false
 
 
 # Basic Linux courses resources (V1.1)
-## Linux Basics
+# Bash keyboard commands
+The mouse won’t work, use the left/right arrow keys to move around the line.
+
+When the cursor is where you want it in the line, typing inserts text – i.e. it doesn’t always overtype what’s already there.
+
+## Moving Cursor
+**Ctrl + A** or Home	Moves the cursor to the Start of a line.
+
+**Ctrl + E** or End		Moves the cursor to the End of a line.
+
+**ESC + B**			Moves to the Beginning of the previous or current word.
+
+**Ctrl + K**			Deletes form the current cursor position to the end of the line.
+
+**Ctrl + U**			Deletes from the start of the line to the current cursor position.
+
+**Ctrl + W**		Deletes the WORD before the cursor.
+
+**ALT + B**			Moves Back one word at a time
+
+**ALT + F**			Moves Forward one word at a time
+
+**ALT + C**		capitalises letter where cursor is and moves to end of word
+
+## Exiting a running command or accessing another command window
+
+**Ctrl + C**			Kills the current Process
+
+**Ctrl + Alt + F1-6**		Changes terminals (Up to 6)
+
+**Ctrl + Z**		Suspends the current process (Can be bought back by typing fg)
+
+## Search for text in a file (less, more)
+
+**/pattern**		Searches forward n for next N for previous
+
+# Linux Commands
+## Navigating Linux
+Command | Description
+-------|--------
+`pwd`	| Where am I?
+`whoami`	| who am I
+`id	`| list my user and groups
+`ls –al `|	what the hell is here and can I access it
+`cd <Directory Name>` or `..`  Or `../..`	| change directory or up a directory or up two directories
+`w` | Who is logged on and what are the doing
+`who` | Who is logged onto and what is there session
+`cat /etc/*release*` | System information
+`uname -r` | System information
+
+## Command Line Tricks
+Command | Description
+-------|--------
+`History`	| lists command history
+`!<number from history>`	| Executes that command from history
+`!<string>` |	Repeat last command that started with <string>
+`!?<string>` |	Repeat last command that has substring <string>
+`!!:s/foo/bar/` |	Repeat last command substituting foo for bar
+`grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log | grep <username> 
+
+## Finding a file
+Command | Description
+-------|--------
+`sudo updatedb`	| Update the locatedb
+`locate <filename>` | 	locate somefilename
+`find <directory>` or `. <filename>` |	find a file in a directory or where I am with a name
+ 
+## Reading a file
+Command | Description
+-------|--------
+`Cat <filename>`	| List the contents of a file 
+`less <filename>`	| Browse through a file
+`head <filename>`	| shows first 10 lines of file, can be changed with –n <number of lines>
+`tail <filename>`	| shows last 10 lines of file, can be changed with –n <number of lines>
+`tail –f <filename>` |	Display the last 10 lines and follow a files as it grows (Very useful for debugging)
+ 
+## Editing a file
+Command | Description
+-------|--------
+`vim <filename>`	| advanced text editor for file name
+`nano <filename>`	| basic text editor for file name
+
+## Moving a file
+Command | Description
+-------|--------
+`cp <Source> <destination>`	| copies a file, use –r to copy directories	
+`mv <source> <destination>`	| moves a file or renames a file, use –r for directories	
+`scp <source> <destination>`	| Secure copy over ssh for example **scp file.txt user@server:/tmp/**
+`rsync –a <source> <Destination>` |	very useful for coping LARGE files and directories, has options for retaining permissions	
+`wget http://www.webserver.com/file.txt` | downloads a text file from webserver.com	
+`git clone https://www.github.com/angry-bender/UbuntuLive.git` | Downloads a git project 	
+
+## Deleting a file
+Command | Description
+-------|--------
+`rm <filename>	`| removes a filename
+`rm –r <directoryname>` |	removes a directory and all sub directories
+`rm –rf <directoryname>`	| forces removal of a directory
+ 
+## Changing Permissions on a file
+![permissions](https://2.bp.blogspot.com/-V2eWUJugBJ0/Ui4Y1TJ45aI/AAAAAAAAAzQ/gwxcb-GlTGA/s1600/chmod4.png)
+![usergroupother](https://www.booleanworld.com/wp-content/uploads/2018/04/classes.png)
+Command | Description
+-------|--------
+`chown <user>:<group>` |	Changes ownership on a file
+`chmod 754 <filename>` |	Changes the permissions on a file Number Sequence User, Group, Others 4 = Read,2 = Write,1 = Execute, 0 = No Permission,(4+2+1=7)
+`chmod u=rwx,g=rx,o=r`	 | Changes the permissions on a file u=user,g=group,o=others r=read,w=write,x=execute
+ 
+## Comparing a file
+Command | Description
+-------|--------
+`diff –ur <filename1> <filename2>` |	Compares the difference between two files, without –ur it will just tell us if there is a difference
+
+## History
+Command | Description
+-------|--------
+`History` |	lists command history
+`History 5 `| Lists the 5 previous commands
+`!<number from history>`	| Executes that command from history
+**ctrl-r** | press to search the history, continue pressing to scroll one at a time through search results
+ 
+## System Utilities
+Command | Description
+-------|--------
+`fdisk –l `|	Lists disks and partitions
+`df`	| Lists the mount points for inserted disks
+`ps –aux` |	Lists the running processes
+`Top`	| Lists processes in order
+`kill <pid>` |	Kill a Running process
+`systemctl -l --type service --all` |	Lists all the running Services
+`systemctl <start / stop / restart / status> <service>`	| stop\|start\|restart or get status of a service
+`systemctl list-unit-files --state=enabled` | list startup services
+`journalctl –r`	| View the system log from the most recent entry, to start from the oldest entry use no –r (can be the same as cat /var/log/syslog
+`journalctl -u <servicename>`	| View logs about a particular service
+`journalctl -k `	| View only kernel messages
+`journalctl -f`	| follow messages as they appear
+`sudo mount <device> <directory>`	| mount a hard drive or usb
+`systemctl <disable / enable> <service>`	| enable or disable a system service on startup
+`systemctl <reboot / poweroff  /emergency / default>` |	Reboots, power’s off, enters into single user recovery mode, restores normal operation
+`lsblk`	| lists basic hard drive information
+`lspci`	| lists all pci hardware connected to the computer
+`tar -xzf <filename>` |	extract tar.gz
+`tar -zcvf <tarname>.tar.gz <source-folder-name>` |	make a tar.gz file
+`zcat secure*.gz` | cats out gz log files
+
+## Networking
+### The new systemd way (Manual Configuration)
+Command | Description | Order
+-------|--------|------
+`ip addr`|List your ip interfaces or addresses |	1
+`sudo ip link set <interfacename> up` |	Set the interface to be up	| 2
+`sudo dhclient`	| get a DHCP address	| 3
+`ip addr add 192.168.0.3/24` dev <interfacename> |	Enter a static ip address	| 3
+`ip addr`	| verify your configuration	| 4
+
+### The new legacy way (Manual Configuration)
+Command | Description | Order
+-------|--------|------
+`ifconfig	`|List your interfaces or addresses	| 1
+`ifconfig <interfacename> up`	| Set the interface to be up	| 2
+`ifconfig <interfacename> 0.0.0.0 0.0.0.0 && dhclient`	| get a DHCP address |	3
+`ifconfig <interfacename> 192.168.0.3/24 netmask 255.255.255.0`	| Enter a static ip address |	3
+`ifconfig` 	| verify your configuration	| 4
+
+### Other network utilities & Troubleshooting tools
+Command | Description
+-------|--------
+`dig` / `host` / `nslookup` |	DNS Lookup utility
+`nslookup`	| Simple DNS record lookup
+`nmtui`	 / `nmcli` | network manager terminal user interface
+`whois`	| domain record lookup
+`vi /etc/resolv` | edit dns servers (**Manual Override**)
+`ip route` | view routes and default gateway
+`ip neighbour` | equivalent to windows arp command
+`ip link` | Interface status and MAC Addressess
+`ip addr` | Show ip addressess
+`ip route <add / del> <net / CIDR> via <IP> dev <int>` | Add or remove static route
+`ip route add default via <IP>` | Add Default route
+`ss` | Netstat equivalant (`-tu` minimum info, `-put` process info, `-4put` show ipv4 only, `4punt` show ports as numbers
+
+## Ubuntu Package Management
+Command | Description
+-------|--------
+`apt install <packagename>` |	Installs a package
+`apt remove <packagename>	`| Removes a package
+`apt purge <packagename>`	| Removes a package and all its configuration
+`apt update`	| Updates the package lists
+`apt upgrade`	| Upgrades packages
+`apt autoremove`	| Removes unneeded packages after updates
+`apt list --installed` |	List installed packages
+`dpkg –i <packagename>`	| install a package from a <.deb> file
+`dpkg –r <packagename>`	| remove a package installed by <.deb> file
+`dpkg --list	` | list all installed packages
+`fuser -k /var/lib/apt/lists/lock`	| Tries to kill the process accessing the package lock file gracefully
+`lsof -t /var/lib/apt/lists/lock \| xargs kill -9`	| Tries to kill the process accessing the package lock file ungracefully <Use with caution>
+ 
+ ## User Management
+Command | Description
+-------|--------
+`useradd <username>`	| adds a user	
+`usermod -aG <Groupname> <username>` |	Add user to a group	
+`groupadd <groupname>`	| adds a group	
+`groupdel <groupname>`	| deletes a group	
+`cat /etc/group` |	List groups on system	
+`cat /etc/passwd`	| List users on system	
+`echo <Username>\|<Password> \| chpassword	` | Allows passwords to be scripted in bash for new users	
+
+# Basic Forensics Commands
+## Grep
+Command | Description
+-------|--------
+`grep “boo” <filename>`	| Standard GREP
+`grep –n “boo” <filename>`| 	Prints a line number where the value is present
+`grep –vn “boo” <filename>`| 	opposite of the expression you’ve entered
+`grep –c “boo” <filename>`| 	prints how many times <string> is present
+`grep –l “boo” *`|	prints filenames that contain boo
+`grep –i  “BOO”  <filename>`|	ignores case
+`grep –x “boo”  <filename>	`| Exact Matches
+`grep –A2 “aara” <filename> `|	Prints extra lines for Context
+`grep –E “e$” <filename>	`| Use a Regular expression 
+`egrep ‘<pattern1>\|<pattern2>’ <filename>	`| enhanced grep to search for two patterns simultaneously
+
+## Sed
+Command | Description
+-------|--------
+`sed -e ‘s/<search>/<replace>/’ <filename>` |	Searches for <search> and replaces the first instance with <replace> on each line
+`sed -e ‘s/<search>/<replace>/2’ <filename>` |	Searches for <search> and replaces the second instance with <replace> on each line
+`sed -e ‘1s/<search>/<replace>/1’ <filename>` | Searches for and replaces on a single line
+`sed -e ‘1,4s/<search>/<replace>/1’ <filename>` | Searches for and replaces on the first 4 lines
+`sed -e ‘s/<search>/<replace>/g’ <filename>` |	Replaces every instance of <search> for with <replace> Globally
+`sed -i -e  ‘s/<search>/<replace>/g’ <filename>` |	edits and existing file and replaces the string
+`sed -e ‘s/[0-9]*/(&)/’ <filename>` |	Replaces ([0-9]) for a number of any length (*) and inserts a Bracket around them (&)
+`sed -e ‘/s/\/etc/\/etc\/ssh\/sshd_conf/’` | <filename>	Replaces /etc/ with /etc/ssh/sshd.conf
+
+
+## Awk
+Command | Description
+-------|--------
+`awk [OPTIONS] filename`	|Pattern scanning and text processing
+`awk -f <awkfile> filename` |	Allows the use of an awkfile for processing
+`awk ‘{print $3}’` |	prints all the 3’rd arguments in a file
+
+
+## Regex Reference
+### A nice way to test your regex before using it
+<https://regexr.com/>
+
+<https://regex101.com/>
+
+### IP Address regex
+Not 100% valid, as will match all numbers outside of 255-999, but good for a quick win
+`grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" file.txt`
+
+The valid way of doing it
+`grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" file.txt`
+
+Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
+
+Symbol  | Description
+-------|--------
+`. `	| replaces any character 
+`^` 	| matches start of string 
+`$ `	| matches end of string 
+`*` |	matches up zero or more times the preceding character 
+`\` | 	Represent special characters 
+`() `	| Groups regular expressions 
+`?` |	Matches up exactly one character 
+`|` | 	One OR another character / string I.E boot|boots
+`[abcde]`	| Match any of the listed characters
+`[a-e]`	| Match any character in the range
+`[!abcde]`	| match any character that’s not listed
+`[!a-e]` | match and character not in the range
+`{linux, shell}` |	match any word in the given options
+
+## Other useful tools
+Command | Description
+-------|--------
+`tr a-z`	| Replaces any lowercase letters with uppercase letters
+`tr -s t`	| removes any duplicates of the letter t
+`cut`	| Remove sections from each line of files
+`paste`	| Inserts Sections into each line of files
+`join`	| Join files together
+`sort`	| Sort a file by a five order
+`uniq ` | Report or filter out repeated lines in a file
+`aspell check <filename>` |	spell checks a file interactively 
+
+# Linux Resources
 ## Package Management
 ### Tarball Example
 ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/9.1 
@@ -93,20 +379,6 @@ https://vimawesome.com
 
 https://www.reddit.com/r/vimporn/
 
-## Regex
-### A nice way to test your regex before using it
-<https://regexr.com/>
-
-<https://regex101.com/>
-
-### IP Address regex
-Not 100% valid, as will match all numbers outside of 255-999, but good for a quick win
-`grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" file.txt`
-
-The valid way of doing it
-`grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" file.txt`
-
-Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
 
 
 ## Bash Scripting
