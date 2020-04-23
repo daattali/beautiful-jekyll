@@ -3,6 +3,8 @@ layout: page
 title: 'Tag Index'
 ---
 
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
@@ -25,7 +27,7 @@ title: 'Tag Index'
             <div class="tag-entry">
                 <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
                 <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
                 </div>
             </div>
         {%- endfor -%}
