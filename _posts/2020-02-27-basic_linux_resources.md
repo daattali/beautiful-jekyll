@@ -51,6 +51,7 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 
 Command | Description
 -------|--------
+
 `pwd`	| Where am I?
 `whoami`	| who am I
 `id	`| list my user and groups
