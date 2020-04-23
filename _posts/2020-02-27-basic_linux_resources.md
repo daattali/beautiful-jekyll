@@ -7,7 +7,9 @@ comments: false
 ---
 
 
-# Basic Linux courses resources (V1.1)
+# Basic Linux courses resources (V2.0)
+
+
 # Bash keyboard commands
 The mouse won’t work, use the left/right arrow keys to move around the line.
 
