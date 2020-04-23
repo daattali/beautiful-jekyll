@@ -77,7 +77,7 @@ Command | Description
 `!<string>` |	Repeat last command that started with <string>
 `!?<string>` |	Repeat last command that has substring <string>
 `!!:s/foo/bar/` |	Repeat last command substituting foo for bar
-`grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log | grep <username> 
+`grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log \| grep <username> 
 
 ## Finding a file
 
