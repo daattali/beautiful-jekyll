@@ -435,11 +435,11 @@ you can use `printenv` or for shell scripting the following may be useful
 I also have found the following variables quire useful, and have used them a lot
 
 variable | explanation
- --- | ---
-` $? `| Used for capturing the last processes exit code
- `$EUID` | Captures the user id that started the script, useful for checking sudo UID 0
- `$SUDO_USER `| Captures the username that started a bash script
- `$PWD `| present working directory, saves using `$(pwd)`
+----- | -----
+` $? ` | Used for capturing the last processes exit code
+`$EUID` | Captures the user id that started the script, useful for checking sudo UID 0
+`$SUDO_USER ` | Captures the username that started a bash script
+`$PWD ` | present working directory, saves using `$(pwd)`
 
 ### Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177
 [![](https://img.youtube.com/vi/hdcQlmW70KQ/maxresdefault.jpg)](https://youtu.be/hdcQlmW70KQ)
