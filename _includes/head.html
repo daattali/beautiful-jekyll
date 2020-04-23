@@ -3,15 +3,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
+  <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator | default: '-' }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  
+  {% if site.author.name %}
   <meta name="author" content="{{ site.author.name }}" />
-
+  {% endif %}
+  
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | default: 'Untitled' }} {{ site.title-separator | default: '-' }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
 
   {% include gtag.html %}
   {% include gtm_head.html %}
@@ -62,7 +64,7 @@
   <meta property="og:title" content="{{ page.meta-title }}" />
   {% elsif page.title %}
   <meta property="og:title" content="{{ page.title }}" />
-  {% else %}
+  {% elsif site.title %}
   <meta property="og:title" content="{{ site.title }}" />
   {% endif %}
 
