@@ -61,10 +61,10 @@ Command | Description
 `cd -` | go back to where you were
 `w` | Who is logged on and what are the doing
 `who` | Who is logged onto and what is there session
-`cat /etc/*release*` | System information
+`cat /etc/\*release\*` | System information
 `uname -r` | System information
 `man <command> ` | Traditional unix era help system
-`info <command` | GNU projects helps system, typically more comprehensive, not installed by default
+`info <command>` | GNU projects helps system, typically more comprehensive, not installed by default
 `apropos` | search all man pages for a given keyword alias of `man -k <searchterm>`
 `man <cat number> <command>` view a man page other than the default command manpage
 
