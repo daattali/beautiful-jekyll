@@ -236,7 +236,7 @@ Command | Description
 `fuser -k /var/lib/apt/lists/lock`	| Tries to kill the process accessing the package lock file gracefully
 `lsof -t /var/lib/apt/lists/lock \| xargs kill -9`	| Tries to kill the process accessing the package lock file ungracefully <Use with caution>
  
- ## User Management
+## User Management
  
 Command | Description
 -------|--------
