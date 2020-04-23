@@ -51,7 +51,7 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 
 Command | Description
 -------|--------
-`pwd`	| Where am I?
+`pwd`	| Where am I
 `whoami`	| who am I
 `id	`| list my user and groups
 `ls –al `|	What is in the location
@@ -65,8 +65,8 @@ Command | Description
 `uname -r` | System information
 `man <command> ` | Traditional unix era help system
 `info <command` | GNU projects helps system, typically more comprehensive, not installed by default
-`apropos` | search all man pages for a given keyword (alias of `man -k <searchterm>`)
-`man <cat number> <command>` view a man page other than the default manpage, useful if there are multiple man pages for the same command
+`apropos` | search all man pages for a given keyword alias of `man -k <searchterm>`
+`man <cat number> <command>` view a man page other than the default command manpage
 
 ## Command Line Tricks
 
