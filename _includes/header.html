@@ -36,12 +36,10 @@
       {% endif %}
       
       {% if include.type == "post" %}
-        <div class="row">
-          <span class="post-meta col-lg-6 col-xs-12">Posted on {{ page.date | date: site.date_format }}</span>
+          <span class="post-meta">Posted on {{ page.date | date: site.date_format }}
           {% if page.readtime %}
-            <span class="post-meta col-lg-6 col-xs-12">{% include readtime.html %}</span>
+            {% include readtime.html %}
           {% endif %}
-        </div>
       {% endif %}
         </div>
       </div>
@@ -66,12 +64,10 @@
       {% endif %}
       
       {% if include.type == "post" %}
-        <div class="row">
-          <span class="post-meta col-lg-6 col-xs-12">Posted on {{ page.date | date: site.date_format }}</span>
+          <span class="post-meta">Posted on {{ page.date | date: site.date_format }}
           {% if page.readtime %}
-            <span class="post-meta col-lg-6 col-xs-12">{% include readtime.html %}</span>
+            {% include readtime.html %}
           {% endif %}
-        </div>
       {% endif %}
         </div>
       </div>
