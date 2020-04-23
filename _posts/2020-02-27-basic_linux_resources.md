@@ -53,12 +53,19 @@ Command | Description
 `pwd`	| Where am I?
 `whoami`	| who am I
 `id	`| list my user and groups
-`ls –al `|	what the hell is here and can I access it
-`cd <Directory Name>` or `..`  Or `../..`	| change directory or up a directory or up two directories
+`ls –al `|	What is in the location
+`cd <Directory Name>` | change directory 
+`cd ~` | change to home directory
+`cd ..` | change up a directory
+`cd -` | go back to where you were
 `w` | Who is logged on and what are the doing
 `who` | Who is logged onto and what is there session
 `cat /etc/*release*` | System information
 `uname -r` | System information
+`man <command> ` | Traditional unix era help system
+`info <command` | GNU projects helps system, typically more comprehensive, not installed by default
+`apropos` | search all man pages for a given keyword (alias of `man -k <searchterm>`)
+`man <cat number> <command>` view a man page other than the default manpage, useful if there are multiple man pages for the same command
 
 ## Command Line Tricks
 Command | Description
@@ -85,10 +92,14 @@ Command | Description
 `head <filename>`	| shows first 10 lines of file, can be changed with –n <number of lines>
 `tail <filename>`	| shows last 10 lines of file, can be changed with –n <number of lines>
 `tail –f <filename>` |	Display the last 10 lines and follow a files as it grows (Very useful for debugging)
+`file <filename>` | Displays what kind of file it is
  
 ## Editing a file
 Command | Description
 -------|--------
+`touch <filename>` | make an empty file
+`echo "hello world" > file.txt` | create or overwrite a file with one line, saying hello world
+`echo "Hello world 2" >> file.txt` | append a new line to a file
 `vim <filename>`	| advanced text editor for file name
 `nano <filename>`	| basic text editor for file name
 
@@ -117,6 +128,7 @@ Command | Description
 `chown <user>:<group>` |	Changes ownership on a file
 `chmod 754 <filename>` |	Changes the permissions on a file Number Sequence User, Group, Others 4 = Read,2 = Write,1 = Execute, 0 = No Permission,(4+2+1=7)
 `chmod u=rwx,g=rx,o=r`	 | Changes the permissions on a file u=user,g=group,o=others r=read,w=write,x=execute
+`chgrp <group> <filename>` | change the froup owner of a file or folder
  
 ## Comparing a file
 Command | Description
@@ -136,8 +148,9 @@ Command | Description
 -------|--------
 `fdisk –l `|	Lists disks and partitions
 `df`	| Lists the mount points for inserted disks
-`ps –aux` |	Lists the running processes
-`Top`	| Lists processes in order
+`ps –aux` (Old way) `ps -elf` (New Way) |	Lists the running processes
+`ps -lfu` | lists processess started by a user
+`top`	| Lists processes in order
 `kill <pid>` |	Kill a Running process
 `systemctl -l --type service --all` |	Lists all the running Services
 `systemctl <start / stop / restart / status> <service>`	| stop\|start\|restart or get status of a service
@@ -154,6 +167,7 @@ Command | Description
 `tar -xzf <filename>` |	extract tar.gz
 `tar -zcvf <tarname>.tar.gz <source-folder-name>` |	make a tar.gz file
 `zcat secure*.gz` | cats out gz log files
+`ln -s <location of link> <location of file>` | make a softlink to a file
 
 ## Networking
 ### The new systemd way (Manual Configuration)
@@ -209,13 +223,17 @@ Command | Description
  ## User Management
 Command | Description
 -------|--------
-`useradd <username>`	| adds a user	
+`useradd -m -d /home/<username> -c "Full name" <username>`	| adds a user and creates their home directory	
 `usermod -aG <Groupname> <username>` |	Add user to a group	
+`userdel -r -f <username>` | forces removal of user and home directory
 `groupadd <groupname>`	| adds a group	
 `groupdel <groupname>`	| deletes a group	
+`vigr` | edits groups
+`passwd <username>` | change a users password
 `cat /etc/group` |	List groups on system	
 `cat /etc/passwd`	| List users on system	
 `echo <Username>\|<Password> \| chpassword	` | Allows passwords to be scripted in bash for new users	
+`su - <username>` | switch to a new user and use their shell environment
 
 # Basic Forensics Commands
 ## Grep
