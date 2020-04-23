@@ -297,59 +297,59 @@ Command | Description
 # Linux Resources
 ## Package Management
 ### Tarball Example
-ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/9.1 
+<ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/9.1> 
 ### Using Tarballs
-https://www.tldp.org/HOWTO/Software-Building-HOWTO-3.html
+<https://www.tldp.org/HOWTO/Software-Building-HOWTO-3.html>
 
 ## Linux Distributions
-https://en.wikipedia.org/wiki/Comparison_of_Linux_distributions
+<https://en.wikipedia.org/wiki/Comparison_of_Linux_distributions>
 
-https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg
+<https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg>
 
 ## Linux File systems
-https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel
+<https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel>
 
 ### Filesystem Heirachy Standard
-www.pathname.com/fhs
+<www.pathname.com/fhs>
 
-https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+<https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>
 
 ### Binary Directory Standards
-http://lists.busybox.net/pipermail/busybox/2010-December/074114.html
+<http://lists.busybox.net/pipermail/busybox/2010-December/074114.html>
 
 ## Progams & Services
 ### Elf Diagram
 ![ELF Diagram](https://upload.wikimedia.org/wikipedia/commons/e/e4/ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)
 
 ### Process Signals
-https://linux.die.net/man/7/signal
+<https://linux.die.net/man/7/signal>
 
-https://www.bogotobogo.com/Linux/linux_process_and_signals.php
+<https://www.bogotobogo.com/Linux/linux_process_and_signals.php>
 
 ### Sysvinit
-https://www.oreilly.com/library/view/essential-system-administration/0596003439/ch04s02.html
+<https://www.oreilly.com/library/view/essential-system-administration/0596003439/ch04s02.html>
 
-https://wiki.gentoo.org/wiki/Sysvinit
+<https://wiki.gentoo.org/wiki/Sysvinit>
 
 ### Init System and Daemons (Boot Process)
-https://opensource.com/article/17/2/linux-boot-and-startup
+<https://opensource.com/article/17/2/linux-boot-and-startup>
 
-https://www.golinuxcloud.com/beginners-guide-systemd-tutorial-linux/
+<https://www.golinuxcloud.com/beginners-guide-systemd-tutorial-linux/>
 
 ### Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1
 [![](https://img.youtube.com/vi/mHB0Z-HUauo/maxresdefault.jpg)](https://youtu.be/mHB0Z-HUauo)
 
 ### Common Linux Processess / Daemons
-https://www.techrepublic.com/article/linux-101-a-comprehensive-list-of-available-linux-services/
+<https://www.techrepublic.com/article/linux-101-a-comprehensive-list-of-available-linux-services/>
 
-https://meterpreter.org/common-linux-services-list/
+<https://meterpreter.org/common-linux-services-list/>
 
 ## Bash Usage
 
 ### Special Characters
-https://docstore.mik.ua/orelly/unix/upt/ch08_19.htm
+<https://docstore.mik.ua/orelly/unix/upt/ch08_19.htm>
 
-https://mywiki.wooledge.org/BashGuide/SpecialCharacters
+<https://mywiki.wooledge.org/BashGuide/SpecialCharacters>
 
 ### Grep awk and sed tutorial
 <https://www-users.york.ac.uk/~mijp1/teaching/2nd_year_Comp_Lab/guides/grep_awk_sed.pdf>
@@ -362,10 +362,10 @@ https://mywiki.wooledge.org/BashGuide/SpecialCharacters
 
 ## User Management
 ### Home Directory Specifications
-https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+<https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>
 
 ### Passwd file specifications
-http://www.linfo.org/etc_passwd.html
+<http://www.linfo.org/etc_passwd.html>
 
 ## Text Editors
 
@@ -373,11 +373,11 @@ http://www.linfo.org/etc_passwd.html
 ![vim cheatsheet](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png)
 
 ### Vim Plugins / Features
-http://codyveal.com/posts/vim-killer-features-part-1-text-objects/
+<http://codyveal.com/posts/vim-killer-features-part-1-text-objects/>
 
-https://vimawesome.com
+<https://vimawesome.com>
 
-https://www.reddit.com/r/vimporn/
+<https://www.reddit.com/r/vimporn/>
 
 
 
@@ -390,10 +390,10 @@ I also have found the following variables quire useful, and have used them a lot
 
 variable | explanation
  --- | ---
- $? | Used for capturing the last processes exit code
- $EUID | Captures the user id that started the script, useful for checking sudo UID 0
- $SUDO_USER | Captures the username that started a bash script
- $PWD | present working directory, saves using `$(pwd)`
+` $? `| Used for capturing the last processes exit code
+ `$EUID` | Captures the user id that started the script, useful for checking sudo UID 0
+ `$SUDO_USER `| Captures the username that started a bash script
+ `$PWD `| present working directory, saves using `$(pwd)`
 
 ### Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177
 [![](https://img.youtube.com/vi/hdcQlmW70KQ/maxresdefault.jpg)](https://youtu.be/hdcQlmW70KQ)
