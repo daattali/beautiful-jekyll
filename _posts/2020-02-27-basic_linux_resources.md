@@ -48,6 +48,7 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 
 # Linux Commands
 ## Navigating Linux
+
 Command | Description
 -------|--------
 `pwd`	| Where am I?
@@ -68,6 +69,7 @@ Command | Description
 `man <cat number> <command>` view a man page other than the default manpage, useful if there are multiple man pages for the same command
 
 ## Command Line Tricks
+
 Command | Description
 -------|--------
 `History`	| lists command history
@@ -78,6 +80,7 @@ Command | Description
 `grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log | grep <username> 
 
 ## Finding a file
+
 Command | Description
 -------|--------
 `sudo updatedb`	| Update the locatedb
@@ -85,6 +88,7 @@ Command | Description
 `find <directory>` or `. <filename>` |	find a file in a directory or where I am with a name
  
 ## Reading a file
+
 Command | Description
 -------|--------
 `Cat <filename>`	| List the contents of a file 
@@ -95,6 +99,7 @@ Command | Description
 `file <filename>` | Displays what kind of file it is
  
 ## Editing a file
+
 Command | Description
 -------|--------
 `touch <filename>` | make an empty file
@@ -104,6 +109,7 @@ Command | Description
 `nano <filename>`	| basic text editor for file name
 
 ## Moving a file
+
 Command | Description
 -------|--------
 `cp <Source> <destination>`	| copies a file, use –r to copy directories	
@@ -114,6 +120,7 @@ Command | Description
 `git clone https://www.github.com/angry-bender/UbuntuLive.git` | Downloads a git project 	
 
 ## Deleting a file
+
 Command | Description
 -------|--------
 `rm <filename>	`| removes a filename
@@ -123,6 +130,7 @@ Command | Description
 ## Changing Permissions on a file
 ![permissions](https://2.bp.blogspot.com/-V2eWUJugBJ0/Ui4Y1TJ45aI/AAAAAAAAAzQ/gwxcb-GlTGA/s1600/chmod4.png)
 ![usergroupother](https://www.booleanworld.com/wp-content/uploads/2018/04/classes.png)
+
 Command | Description
 -------|--------
 `chown <user>:<group>` |	Changes ownership on a file
@@ -131,11 +139,13 @@ Command | Description
 `chgrp <group> <filename>` | change the froup owner of a file or folder
  
 ## Comparing a file
+
 Command | Description
 -------|--------
 `diff –ur <filename1> <filename2>` |	Compares the difference between two files, without –ur it will just tell us if there is a difference
 
 ## History
+
 Command | Description
 -------|--------
 `History` |	lists command history
@@ -144,6 +154,7 @@ Command | Description
 **ctrl-r** | press to search the history, continue pressing to scroll one at a time through search results
  
 ## System Utilities
+
 Command | Description
 -------|--------
 `fdisk –l `|	Lists disks and partitions
@@ -170,7 +181,9 @@ Command | Description
 `ln -s <location of link> <location of file>` | make a softlink to a file
 
 ## Networking
+
 ### The new systemd way (Manual Configuration)
+
 Command | Description | Order
 -------|--------|------
 `ip addr`|List your ip interfaces or addresses |	1
@@ -180,6 +193,7 @@ Command | Description | Order
 `ip addr`	| verify your configuration	| 4
 
 ### The new legacy way (Manual Configuration)
+
 Command | Description | Order
 -------|--------|------
 `ifconfig	`|List your interfaces or addresses	| 1
@@ -189,6 +203,7 @@ Command | Description | Order
 `ifconfig` 	| verify your configuration	| 4
 
 ### Other network utilities & Troubleshooting tools
+
 Command | Description
 -------|--------
 `dig` / `host` / `nslookup` |	DNS Lookup utility
@@ -205,6 +220,7 @@ Command | Description
 `ss` | Netstat equivalant (`-tu` minimum info, `-put` process info, `-4put` show ipv4 only, `4punt` show ports as numbers
 
 ## Ubuntu Package Management
+
 Command | Description
 -------|--------
 `apt install <packagename>` |	Installs a package
@@ -221,6 +237,7 @@ Command | Description
 `lsof -t /var/lib/apt/lists/lock \| xargs kill -9`	| Tries to kill the process accessing the package lock file ungracefully <Use with caution>
  
  ## User Management
+ 
 Command | Description
 -------|--------
 `useradd -m -d /home/<username> -c "Full name" <username>`	| adds a user and creates their home directory	
@@ -236,7 +253,9 @@ Command | Description
 `su - <username>` | switch to a new user and use their shell environment
 
 # Basic Forensics Commands
+
 ## Grep
+
 Command | Description
 -------|--------
 `grep “boo” <filename>`	| Standard GREP
@@ -251,6 +270,7 @@ Command | Description
 `egrep ‘<pattern1>\|<pattern2>’ <filename>	`| enhanced grep to search for two patterns simultaneously
 
 ## Sed
+
 Command | Description
 -------|--------
 `sed -e ‘s/<search>/<replace>/’ <filename>` |	Searches for <search> and replaces the first instance with <replace> on each line
@@ -264,6 +284,7 @@ Command | Description
 
 
 ## Awk
+
 Command | Description
 -------|--------
 `awk [OPTIONS] filename`	|Pattern scanning and text processing
@@ -272,16 +293,20 @@ Command | Description
 
 
 ## Regex Reference
+
 ### A nice way to test your regex before using it
 <https://regexr.com/>
 
 <https://regex101.com/>
 
 ### IP Address regex
+
 Not 100% valid, as will match all numbers outside of 255-999, but good for a quick win
+
 `grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" file.txt`
 
 The valid way of doing it
+
 `grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" file.txt`
 
 Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
@@ -295,7 +320,7 @@ Symbol  | Description
 `\` | 	Represent special characters 
 `() `	| Groups regular expressions 
 `?` |	Matches up exactly one character 
-`|` | 	One OR another character / string I.E boot|boots
+`|` | 	One OR another character / string I.E boot\|boots
 `[abcde]`	| Match any of the listed characters
 `[a-e]`	| Match any character in the range
 `[!abcde]`	| match any character that’s not listed
@@ -303,6 +328,7 @@ Symbol  | Description
 `{linux, shell}` |	match any word in the given options
 
 ## Other useful tools
+
 Command | Description
 -------|--------
 `tr a-z`	| Replaces any lowercase letters with uppercase letters
