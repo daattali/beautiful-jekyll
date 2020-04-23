@@ -593,6 +593,18 @@ footer .theme-by {
   }
 }
 
+.reader-time {
+  display: inline-block !important;
+}
+@media (max-width: 767px) {
+  .reader-time {
+    display: block !important;
+  }
+}
+.reader-time .middot { 
+  margin: 0 10px;
+}
+
 /* --- Pager --- */
 
 .pager li a {
