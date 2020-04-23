@@ -356,7 +356,7 @@ Command | Description
 <https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel>
 
 ### Filesystem Heirachy Standard
-<www.pathname.com/fhs>
+<http://www.pathname.com/fhs>
 
 <https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>
 
