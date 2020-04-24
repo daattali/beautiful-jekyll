@@ -5,8 +5,8 @@
 
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator | default: '-' }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   
-  {% if site.author.name %}
-  <meta name="author" content="{{ site.author.name }}" />
+  {% if site.author %}
+  <meta name="author" content="{{ site.author }}" />
   {% endif %}
   
   {% if page.subtitle %}
@@ -96,8 +96,8 @@
 
   <!-- Twitter summary cards -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@{{ site.author.twitter }}" />
-  <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+  <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}" />
+  <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}" />
 
   {% if page.meta-title %}
   <meta name="twitter:title" content="{{ page.meta-title }}" />
