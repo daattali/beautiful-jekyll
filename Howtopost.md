@@ -24,7 +24,7 @@ Dùng cách nào thì bước cuối cùng vẫn cần người khác review. N�
     - Cột E (SourceLink): URL dẫn đến tin gốc
     - Cột F (Hashtag): điền hashtag liên quan đến tỉnh thành mình đang dịch (ví dụ như #fukuoka, #kyushu hay #toàn quốc) hoặc các từ hay được bàn luận đến (ví dụ như #avigan)
 5. Kiểm tra kỹ xem có typo hay format sai hay không
-6. Click nút `Request Update` ở ô F1
+6. Click nút `Request Update` ở ô E1
 7. Báo cho 1 team member khác review
 
 
