@@ -1,18 +1,18 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: OpenStopCovid
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Contact-Tracing Open Source: Développement d'une application mobile pour faciliter le déconfinement
 
 # Your name to show in the footer
-author: Some Person
+author: OpenStopCovid
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "aboutus"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
