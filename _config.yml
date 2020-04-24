@@ -4,7 +4,7 @@
 title: OpenStopCovid
 
 # Short description of your site
-description: Contact-Tracing Open Source: Développement d'une application mobile pour faciliter le déconfinement
+description: 
 
 # Your name to show in the footer
 author: OpenStopCovid
@@ -12,11 +12,16 @@ author: OpenStopCovid
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutus"
+  About Us: "aboutus"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+    - Github: "https://github.com/OpenStopCovid"
+    - iOS app: "https://github.com/OpenStopCovid/dp3t-sdk-ios"
+    - Android app: "https://github.com/OpenStopCovid"
+    - Authority Backend: "https://github.com/OpenStopCovid/dp3t-ms"
+    - Authority UI: "https://github.com/OpenStopCovid/health-authority-ui"
+    - Specifications: "https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf"
+    - Documentation: "https://github.com/DP-3T/documents"
+  Press Kit: "presskit"
 
 # --- Local development options ---
 
@@ -33,10 +38,10 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "https://avatars3.githubusercontent.com/u/63979214"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -49,13 +54,13 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "dataagainstcovid19@gmail.com"
+  facebook: Data-Against-Covid-19-100330834953672
+  github: OpenStopCovid
+  twitter: data_covid
   rss: true
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: data-against-covid-19
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -77,7 +82,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "openstopcovid.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -170,7 +175,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/Paris"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

@@ -1,0 +1,79 @@
+<style>
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+</style>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<ul class="timeline">
+				<li>
+					<a href="#">Creation of the community</a>
+					<p>We are now 1123 individuals</p>
+				</li>
+				<li>
+					<a href="#">Release of veille-coronavirus.fr</a>
+                    <p>Dashboard illustrating the French situation</p>
+				</li>
+				<li>
+					<a href="#">Release of tiny.cc/covidfr</a>
+                    <p>Dashboard illustrating the global situation</p>
+				</li>
+				<li>
+					<a href="#">Release of Covid Data Academics</a>
+                    <p>Putting available academic literature online </p>
+				</li>
+				<li>
+					<a href="#">Release of Pharm’Help</a>
+					<p>Platform for mutual assistance between pharmacies</p>
+				</li>
+				<li>
+					<a href="#">Release of Covid Data share-beds</a>
+					<p>Platform for the exchange of beds, equipment and personnel between hospitals</p>
+				</li>
+				<li>
+					<a href="#">Veille-coronavirus.fr becomes the French official dashboard</a>
+                    <p>It is now being server at dashboard.covid19.data.gouv.fr</p>
+				</li>
+				<li>
+					<a href="#">Emergence of many citizen projects</a>
+					<p>More information on opencovid19-fr.github.io</p>
+				</li>
+				<li>
+					<a href="#">Release of OpenStopCovid</a>
+					<p>An Open Source contact-tracing mobile application for lifting the lockdown</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
