@@ -594,11 +594,11 @@ footer .theme-by {
 }
 
 .reader-time {
-  display: inline-block !important;
+  display: inline-block;
 }
 @media (max-width: 767px) {
   .reader-time {
-    display: block !important;
+    display: block;
   }
 }
 .reader-time .middot { 
