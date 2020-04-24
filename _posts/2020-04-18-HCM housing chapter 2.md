@@ -5,31 +5,30 @@ subtitle: HCM housing chapter 2
 tags: [HCM housing, Google Ecosystem]
 ---
 
-Hiện mình đang crawl data bất động sản để dự báo xu hướng giá nhà trong trương lai. Trong lúc chờ đợi tại sao không làm tý 
-dashboard cho ngầu nhỉ và chúng ta có thể sử dụng nó để theo dõi diễn biến giá nhà hằng ngày, dễ như ăn bánh, bắt đầu thôi.
+Currently, I am crawling real estate data to forecast future house price trends. In the meantime why not make a cool dashboard and we can use it to track daily house price movements, as easy as eating a cake, get started.
 
 
-## Bước 1: 
-Tạo file Google spreadsheet trên Google drive của mình để chứa data mình crawl. 
+## Step 1: 
+Create a Google spreadsheet file on my Google drive to store the data I've collected.
 
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_0.png)
 
 
-## Bước 2: 
-Tạo dự án Data studio cho mình:
+## Step 2: 
+Create your own Data Studio project:
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_1.png)
 
 
-## Bước 3: 
-Kết nối Data studio với Google spreadsheet mình vừa tạo
-
+## Step 3: 
+Connect the Data studio with the Google spreadsheet we just created:
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_2.png)
 
-## Bước 4: 
-Định dạng lại các trường dữ liệu
+## Step 4: 
+Reformat the data fields:
 ![Crepe](https://raw.githubusercontent.com/minmax49/minmax49.github.io/master/img/hcm_housing_chap2_3.png)
 
-## Bước 5: 
-Kéo thả và tận hưởng thành quả thôi !!!
+## Step 5: 
+
+Drag and drop to enjoy the results !!!
 
 <iframe width="100%" height="620px" src="https://datastudio.google.com/embed/reporting/d1dabf6a-9412-4595-9406-d09c7e8331ca/page/e1tMB" frameborder="0" style="border:0" allowfullscreen></iframe>
