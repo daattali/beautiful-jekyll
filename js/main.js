@@ -248,13 +248,13 @@ var main = {
           })
           .values()
           .value();
-console.debug(responseData);
+
         // prepare data to render
         const updatedAt = _.chain(responseData)
         .first()
         .omit(["Tỉnh/Thành phố", "Tổng"])
         .keys()
-        .map(d => moment(d))
+        .map(d => moment(`2020/${d}`))
         .max()
         .value();
 
