@@ -132,6 +132,9 @@ var main = {
     main.initDailyGraphs();
     main.initTokyoByWardGraph();
     main.initOsakaByWardGraph();
+
+    // get statistics
+    main.getStatisticsData();
   },
 
   initFirebase: function () {
@@ -512,6 +515,39 @@ var main = {
       console.error(error);
     }
   },
+
+  getStatisticsData: async function () {
+    try {
+      const storage = firebase.storage();
+      // load data from firebase storage
+      const fileRef = storage.ref("overall.json");
+      const url = await fileRef.getDownloadURL().catch((e) => {
+        throw e;
+      });
+      const metadata = await fileRef.getMetadata().catch((e) => {
+        throw e;
+      });
+      const response = await fetch(url).catch((e) => {
+        throw e;
+      });
+      const responseData = await response.json().catch((e) => {
+        throw e;
+      });
+
+      // print out statistics
+      $("[data-id='total_cases']").text(responseData["total_cases"].toLocaleString());
+      $("[data-id='total_cases_changes']").text(`(+${responseData["total_cases_changes"].toLocaleString()})`);
+      $("[data-id='discharged']").text(responseData["discharged"].toLocaleString());
+      $("[data-id='discharged_changes']").text(`(+${responseData["discharged_changes"].toLocaleString()})`);
+      $("[data-id='death']").text(responseData["death"].toLocaleString());
+      $("[data-id='death_changes']").text(`(+${responseData["death_changes"].toLocaleString()})`);
+      $("[data-id='statistics-updated-at']").text(`Cập nhật lúc ${moment(metadata.updated).format("HH:mm DD/MM/YYYY")}.`);
+
+    } catch (error) {
+      // TODO: error handler
+      console.error(error);
+    }
+  }
 };
 
 // 2fc73a3a967e97599c9763d05e564189
