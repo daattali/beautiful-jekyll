@@ -1,4 +1,4 @@
-# --- Basic general options --- #
+# --- Basic options --- #
 
 # Name of website
 title: My website
@@ -9,9 +9,19 @@ description: A virtual proof that I'm awesome
 # Your name to show in the footer
 author: Some Person
 
+# --- List of links in the navigation bar --- #
+
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+  Author's home: "http://deanattali.com"
+
 # --- Local development options ---
+
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
+# ***If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
 #url: "https://example.com"
@@ -19,15 +29,7 @@ author: Some Person
 # baseurl should be an empty string
 #baseurl: ""
 
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+# --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
@@ -38,7 +40,8 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+#title-img: /path/to/image
+
 
 # --- Footer options --- #
 
@@ -64,7 +67,7 @@ social-network-links:
 #  twitch: yourname
 #  yelp: yourname
 
-# --- More general options --- #
+# --- General options --- #
 
 # Select which social network share links to show in posts
 share-links-active:
@@ -82,7 +85,7 @@ link-tags: true
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
 
-# --- Background colour/image options --- #
+# --- Colours / background image --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
@@ -99,9 +102,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+#navbar-img: "/img/bgimage.png"
+#footer-img: "/img/bgimage.png"
+#page-img: "/img/bgimage.png"
 
 # --- Web Statistics Section --- #
 
@@ -125,12 +128,12 @@ footer-link-col: "#404040"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+#disqus: ""
 
 # To use Facebook Comments, fill in a Facebook App ID
-# fb_comment_id: ""
+#fb_comment_id: ""
 
-# To use Staticman comments, fill in repository, branch, and endpoint
+# To use Staticman comments, fill in "repository", "branch", and "endpoint"
 staticman:
   repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
@@ -141,7 +144,7 @@ staticman:
     siteKey  : # Use your own site key, you need to apply for one on Google
     secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
-# To use Utterances comments: (1) fill in repository (make sure the repository is public), (2) Enable Issues in your repository, 
+# To use Utterances comments: (1) fill in "repository" (make sure the repository is public), (2) Enable Issues in your repository,
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
 # See more details about the parameters below at https://utteranc.es/
 utterances:
@@ -161,7 +164,8 @@ title-separator: "-"
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
-# fb_app_id: ""
+#fb_app_id: ""
+
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
