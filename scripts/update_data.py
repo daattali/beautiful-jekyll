@@ -1,10 +1,20 @@
+import json
+import os
+import re
+import urllib.request
 import sys
 
 import firebase_admin
 from firebase_admin import credentials, firestore, storage
 import pandas as pd
+import pytesseract
 
 import datasets
+
+try:
+    from PIL import Image
+except ImportError:
+    import Image
 
 
 PREFECTURES = {
@@ -122,10 +132,6 @@ TOKYO_CITIES = {
     '小笠原村': 'Đảo Ogasawara',
 }
 
-FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
-FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
-FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
-
 OSAKA_CITIES = {
     '大阪市': 'Osaka',
     '枚方市': 'Hirakata',
@@ -170,6 +176,10 @@ OSAKA_CITIES = {
     '羽曳野': 'Habikino',
     '羽曳野市': 'Habikino',
 }
+
+FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
+FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
+FIREBASE_STORAGE_BUCKET = 'gs://thongtincovid19-4dd12.appspot.com'
 
 
 class TokyoPatientsDataset(datasets.CsvDataset):
@@ -461,16 +471,90 @@ def init_firebase_app():
     return app, client, bucket
 
 
+def get_data_from_image(image_url, desired_size, box):
+    extension = image_url[-3:].lower()
+    assert extension in ['png', 'jpg'], f'Unsupported image type: {extension}'
+    image_name = f'tmp.{extension}'
+
+    urllib.request.urlretrieve(image_url, image_name)
+    image = Image.open(image_name)
+    image = image.resize(desired_size)
+    crop = image.crop(box)
+
+    data = pytesseract.image_to_string(crop)
+    data = data.split('\n')
+
+    os.remove(image_name)
+    return data
+
+
+def to_int(text):
+    text = ''.join(x for x in text if x.isdigit())
+    return int(text)
+
+
+def get_data_from_mhlw():
+    BASE_URL = 'https://www.mhlw.go.jp/'
+    CRAWL_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/newpage_00032.html'
+    QUERY_HEADERS = {
+        'User-Agent': 'Mozilla/5.0',
+    }
+    IMAGE_SIZE_TOTAL = (817, 664)
+    IMAGE_SIZE_SYMPTOM = (0, 0)
+    IMAGE_SIZE_DETAIL = (1130, 767)
+
+    BOX_TOTAL_CASES = (200, 500, 370, 570)
+    BOX_TOTAL_TESTS = (400, 500, 590, 570)
+    BOX_TOTAL_DEATH = (1015, 695, 1125, 760)
+    BOX_TOTAL_DISCHARGED = (900, 695, 1012, 760)
+
+    IMG_PATTERN = '/content/[0-9]{8}/[0-9]{9}\.png'
+    img_pattern = re.compile(IMG_PATTERN)
+
+    request = urllib.request.Request(CRAWL_URL, headers=QUERY_HEADERS)
+    with urllib.request.urlopen(request) as url:
+        dom = url.read().decode()
+
+    urls = img_pattern.findall(dom)
+    assert len(urls) == 3, 'Something changed'
+    total_image_url, symptome_image_url, detail_image_url = [f'{BASE_URL}{url}' for url in urls]
+
+    total_cases, total_cases_changes = get_data_from_image(total_image_url, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES)
+    discharged, discharged_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED)
+    death, death_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH)
+
+    total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
+    discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
+    death, death_changes = to_int(death), to_int(death_changes)
+
+    return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
+
+
 def main(args=None):
     app, client, bucket = init_firebase_app()
 
     all_datasets = (
         TokyoPatientsDataset(),
         PrefectureByDateDataset(),
-        PatientDetailsDataset(),
+        # PatientDetailsDataset(),
         PatientByCityTokyoDataset(),
         PatientByCityOsakaDataset(),
     )
+
+    print('Getting overall data from MHLW')
+    (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw()
+    print(f'Queried data successfully')
+    storage_ref = f'overall.json'
+    blob = bucket.blob(storage_ref)
+    blob.upload_from_string(json.dumps({
+        'total_cases': total_cases,
+        'total_cases_changes': total_cases_changes,
+        'discharged': discharged,
+        'discharged_changes': discharged_changes,
+        'death': death,
+        'death_changes': death_changes
+    }), content_type='application/json')
+    print(f'Uploaded JSON to Firebase storage')
 
     for dataset in all_datasets:
         print(f'Dataset: {dataset.name}')
