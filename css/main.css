@@ -175,9 +175,9 @@ img {
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
   display: inline-block;
+  margin-left: -50%;
   {% unless site.round-avatar == false %}
   border-radius: 50%;
-  margin-left: -50%;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
