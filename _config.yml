@@ -45,15 +45,15 @@ round-avatar: true
 
 # --- Footer options --- #
 
-# Select your active Social Network links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
+# Select the social network links that you want to show in the footer.
+# Uncomment the links you want to show and add your information to each one.
+# If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  rss: true
   email: "someone@example.com"
   facebook: deanattali
   github: daattali
   twitter: daattali
+  rss: true
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname

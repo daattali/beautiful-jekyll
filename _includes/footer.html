@@ -2,28 +2,7 @@
   <div class="container beautiful-jekyll-footer">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-inline text-center footer-links">
-          {%- for link in site.social-network-links -%}
-            {%- assign curkey = link[0] -%}
-            {%- assign element = site.data.SocialNetworks[curkey] -%}
-            {%- if curkey == 'rss' -%}
-              {%- capture url -%}{{ '/feed.xml' | relative_url }}{%- endcapture -%}
-            {%- else -%}
-              {%- assign value = site.social-network-links[curkey] -%}
-              {%- assign placeholder = "{value}" -%}
-              {%- capture url -%}{{ element.urlTemplate | replace: placeholder, value }}{%- endcapture -%}
-            {%- endif -%}
-            <li>
-              <a href="{{ url }}" title="{{ element.name }}">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="{{ element.icon }} fa-stack-1x fa-inverse"></i>
-                </span>
-                <span class="sr-only">{{ element.name }}</span>
-              </a>
-            </li>
-          {%- endfor -%}
-        </ul>
+      {% include social-networks-links.html %}
       <p class="copyright text-muted">
       {% if site.author %}
       {{ site.author }}
@@ -43,11 +22,11 @@
         {% endif %}
       {% endif%}
       </p>
-          <!-- Please don't remove this, keep my open source work credited :) -->
-    <p class="theme-by text-muted">
-      Theme by
-      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    </p>
+      <!-- Please don't remove this, keep my open source work credited :) -->
+      <p class="theme-by text-muted">
+        Theme by
+        <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+      </p>
       </div>
     </div>
   </div>
