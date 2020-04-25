@@ -1,3 +1,4 @@
+import base64
 import json
 import os
 import re
@@ -471,19 +472,22 @@ def init_firebase_app():
     return app, client, bucket
 
 
-def get_data_from_image(image_url, desired_size, box):
-    extension = image_url[-3:].lower()
-    assert extension in ['png', 'jpg'], f'Unsupported image type: {extension}'
-    image_name = f'tmp.{extension}'
-
-    urllib.request.urlretrieve(image_url, image_name)
+def get_data_from_image(image_url, desired_size, box, img_type='.png'):
+    image_name = f'tmp.png'
+    
+    if img_type == '.png':
+        urllib.request.urlretrieve(image_url, image_name)
+    elif img_type == 'base64':
+        with open(image_name, 'wb') as fh:
+            fh.write(base64.decodebytes(image_url.encode()))
+        
     image = Image.open(image_name)
     image = image.resize(desired_size)
     crop = image.crop(box)
-
+    
     data = pytesseract.image_to_string(crop)
     data = data.split('\n')
-
+    
     os.remove(image_name)
     return data
 
@@ -493,7 +497,7 @@ def to_int(text):
     return int(text)
 
 
-def get_data_from_mhlw():
+def get_data_from_mhlw_eng():
     BASE_URL = 'https://www.mhlw.go.jp/'
     CRAWL_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/newpage_00032.html'
     QUERY_HEADERS = {
@@ -502,33 +506,68 @@ def get_data_from_mhlw():
     IMAGE_SIZE_TOTAL = (817, 664)
     IMAGE_SIZE_SYMPTOM = (0, 0)
     IMAGE_SIZE_DETAIL = (1130, 767)
-
+    
     BOX_TOTAL_CASES = (200, 500, 370, 570)
     BOX_TOTAL_TESTS = (400, 500, 590, 570)
     BOX_TOTAL_DEATH = (1015, 695, 1125, 760)
     BOX_TOTAL_DISCHARGED = (900, 695, 1012, 760)
-
+    
     IMG_PATTERN = '/content/[0-9]{8}/[0-9]{9}\.png'
     img_pattern = re.compile(IMG_PATTERN)
-
+    
     request = urllib.request.Request(CRAWL_URL, headers=QUERY_HEADERS)
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
-
+    
     urls = img_pattern.findall(dom)
     assert len(urls) == 3, 'Something changed'
     total_image_url, symptome_image_url, detail_image_url = [f'{BASE_URL}{url}' for url in urls]
-
+    
     total_cases, total_cases_changes = get_data_from_image(total_image_url, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES)
     discharged, discharged_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED)
     death, death_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH)
-
+    
     total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
     discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
     death, death_changes = to_int(death), to_int(death_changes)
-
+    
     return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
 
+
+def get_data_from_mhlw_jp():
+    CRAWL_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html'
+    QUERY_HEADERS = {
+        'User-Agent': 'Mozilla/5.0',
+    }
+    IMAGE_SIZE_TOTAL = (430, 494)
+    IMAGE_SIZE_DETAIL = (1006, 532)
+    
+    BOX_TOTAL_CASES = (160, 418, 298, 490)
+    BOX_TOTAL_DEATH = (904, 467, 978, 525)
+    BOX_TOTAL_DISCHARGED = (815, 467, 900, 525)
+    
+    IMG_PATTERN = 'data:image/png;base64,([^"]+)'
+    img_pattern = re.compile(IMG_PATTERN)
+    
+    request = urllib.request.Request(CRAWL_URL, headers=QUERY_HEADERS)
+    with urllib.request.urlopen(request) as url:
+        dom = url.read().decode()
+    
+    idx1 = dom.find('【１．PCR検査陽性者数】')
+    total_image_base64 = img_pattern.search(dom[idx1:]).group(1)
+    idx2 = dom.find('【３．入退院等の状況】')
+    status_image_base64 = img_pattern.search(dom[idx2:]).group(1)
+    
+    total_cases, total_cases_changes = get_data_from_image(total_image_base64, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES, 'base64')
+    discharged, discharged_changes = get_data_from_image(status_image_base64, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED, 'base64')
+    death, death_changes = get_data_from_image(status_image_base64, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH, 'base64')
+    
+    total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
+    discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
+    death, death_changes = to_int(death), to_int(death_changes)
+    
+    return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
+    
 
 def main(args=None):
     app, client, bucket = init_firebase_app()
@@ -540,9 +579,9 @@ def main(args=None):
         PatientByCityTokyoDataset(),
         PatientByCityOsakaDataset(),
     )
-
+    
     print('Getting overall data from MHLW')
-    (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw()
+    (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw_jp()
     print(f'Queried data successfully')
     storage_ref = f'overall.json'
     blob = bucket.blob(storage_ref)
