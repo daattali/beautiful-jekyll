@@ -14,7 +14,6 @@ author: OpenStopCovid
 navbar-links:
   About Us: "aboutus"
   Resources:
-    - Github: "https://github.com/OpenStopCovid"
     - iOS app: "https://github.com/OpenStopCovid/dp3t-sdk-ios"
     - Android app: "https://github.com/OpenStopCovid"
     - Authority Backend: "https://github.com/OpenStopCovid/dp3t-ms"
