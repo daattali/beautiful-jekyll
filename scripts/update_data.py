@@ -177,6 +177,60 @@ OSAKA_CITIES = {
     '羽曳野': 'Habikino',
     '羽曳野市': 'Habikino',
 }
+SAITAMA_CITIES = {
+    '川口市': 'Kawaguchi',
+    '川越市': 'Kawagoe',
+    '八潮市': 'Yashio',
+    '朝霞市': 'Asaka',
+    '所沢市': 'Tokorozawa',
+    '入間市': 'Iruma',
+    '春日部市': 'Kasukabe',
+    '和光市': 'Wako',
+    '鴻巣市': 'Konosu',
+    '蕨市': 'Warabi',
+    '戸田市': 'Toda',
+    '新座市': 'Niiza',
+    '草加市': 'Soka',
+    '志木市': 'Shiki',
+    '東松山市': 'Higashimatsuyama',
+    '本庄市': 'Honjo',
+    'さいたま市': 'Thành phố Saitama',
+    '越谷市': 'Koshigaya',
+    '小川町': 'Thị trấn Ogawa',
+    '寄居町': 'Thị trấn Yorii',
+    '吉川市': 'Yoshikawa',
+    '宮代町': 'Thị trấn Miyashiro',
+    '川島町': 'Thị trấn Kawajima',
+    '坂戸市': 'Sakado',
+    '桶川市': 'Okegawa',
+    '狭山市': 'Sayama',
+    '日高市': 'Hidaka',
+    '美里町': 'Thị trấn Misato',
+    '上尾市': 'Ageo',
+    '加須市': 'Kazo',
+    '幸手市': 'Satte',
+    '富士見市': 'Fujimi',
+    '鶴ヶ島市': 'Tsurugashima',
+    '熊谷市': 'Kumagaya',
+    '深谷市': 'Fukaya',
+    '飯能市': 'Hanno',
+    '三郷市': 'Misato',
+    '白岡市': 'Shiraoka',
+    '三芳町': 'Thị trấn Miyoshi',
+    '蓮田市': 'Hasuda',
+    '羽生市': 'Hanyu',
+    '吉見町': 'Thị trấn Yoshimi',
+    '伊奈町': 'Thị trấn Ina',
+    'ふじみ野市': 'Fujimino',
+    '久喜市': 'Kuki',
+    '毛呂山町': 'Thị trấn Moroyama',
+    '杉戸町': 'Thị trấn Sugito',
+    '秩父市': 'Chichibu',
+    '上里町': 'Thị trấn Kamisato',
+    '神川町': 'Thị trấn Kamikawa',
+    'ときがわ町': 'Thị trấn Tokigawa',
+    '行田市': 'Gyoda',
+}
 
 FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
 FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
@@ -461,6 +515,59 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
         return self.dataframe
 
 
+class PatientByCitySaitamaDataset(datasets.PdfDataset):
+    BASE_URL = 'https://www.pref.saitama.lg.jp/'
+    URL = 'https://www.pref.saitama.lg.jp/a0701/covid19/jokyo.html'
+    NAME = 'patient-by-city-saitama'
+
+    COL_ID = 'Id'
+    COL_REF = 'Ref'
+    COL_DATE = 'Date'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_LOCATION = 'Location'
+
+    def __init__(self):
+        super().__init__(self._find_url(), self.NAME, include_header=False)
+
+    def _find_url(self):
+        request = urllib.request.Request(self.URL, headers=datasets.QUERY_HEADERS)
+        with urllib.request.urlopen(request) as url:
+            dom = url.read().decode()
+
+        pattern = r'<a target="_blank" href="([^"]+)">陽性確認者一覧[^<]*</a>'
+        url = re.search(pattern, dom).group(1)
+        return f'{self.BASE_URL}{url}'
+
+
+    def _localize(self):
+        self.dataframe.columns = [
+            self.COL_ID,
+            self.COL_REF,
+            self.COL_DATE,
+            self.COL_AGE,
+            self.COL_SEX,
+            self.COL_LOCATION,
+        ]
+        self.dataframe.drop(index=0, inplace=True)
+        self._localize_date(self.COL_DATE)
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+
+        self.dataframe[self.COL_LOCATION].replace({
+            **SAITAMA_CITIES,
+            '調査中': 'Đang điều tra',
+            '川口市外': 'Ngoài Kawaguchi',
+            '県外': 'Ngoài tỉnh',
+            '埼玉県外': 'Ngoài tỉnh',
+            '埼玉県': 'Tỉnh Saitama',
+            '東京都': 'Tokyo',
+        }, inplace=True)
+        self.dataframe[self.COL_LOCATION].fillna('Đang điều tra', inplace=True)
+
+        return self.dataframe
+
+
 def init_firebase_app():
     cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
     app = firebase_admin.initialize_app(cred, {
@@ -474,20 +581,20 @@ def init_firebase_app():
 
 def get_data_from_image(image_url, desired_size, box, img_type='.png'):
     image_name = f'tmp.png'
-    
+
     if img_type == '.png':
         urllib.request.urlretrieve(image_url, image_name)
     elif img_type == 'base64':
         with open(image_name, 'wb') as fh:
             fh.write(base64.decodebytes(image_url.encode()))
-        
+
     image = Image.open(image_name)
     image = image.resize(desired_size)
     crop = image.crop(box)
-    
+
     data = pytesseract.image_to_string(crop)
     data = data.split('\n')
-    
+
     os.remove(image_name)
     return data
 
@@ -500,37 +607,34 @@ def to_int(text):
 def get_data_from_mhlw_eng():
     BASE_URL = 'https://www.mhlw.go.jp/'
     CRAWL_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/newpage_00032.html'
-    QUERY_HEADERS = {
-        'User-Agent': 'Mozilla/5.0',
-    }
     IMAGE_SIZE_TOTAL = (817, 664)
     IMAGE_SIZE_SYMPTOM = (0, 0)
     IMAGE_SIZE_DETAIL = (1130, 767)
-    
+
     BOX_TOTAL_CASES = (200, 500, 370, 570)
     BOX_TOTAL_TESTS = (400, 500, 590, 570)
     BOX_TOTAL_DEATH = (1015, 695, 1125, 760)
     BOX_TOTAL_DISCHARGED = (900, 695, 1012, 760)
-    
+
     IMG_PATTERN = '/content/[0-9]{8}/[0-9]{9}\.png'
     img_pattern = re.compile(IMG_PATTERN)
-    
-    request = urllib.request.Request(CRAWL_URL, headers=QUERY_HEADERS)
+
+    request = urllib.request.Request(CRAWL_URL, headers=datasets.QUERY_HEADERS)
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
-    
+
     urls = img_pattern.findall(dom)
     assert len(urls) == 3, 'Something changed'
     total_image_url, symptome_image_url, detail_image_url = [f'{BASE_URL}{url}' for url in urls]
-    
+
     total_cases, total_cases_changes = get_data_from_image(total_image_url, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES)
     discharged, discharged_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED)
     death, death_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH)
-    
+
     total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
     discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
     death, death_changes = to_int(death), to_int(death_changes)
-    
+
     return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
 
 
@@ -541,33 +645,33 @@ def get_data_from_mhlw_jp():
     }
     IMAGE_SIZE_TOTAL = (430, 494)
     IMAGE_SIZE_DETAIL = (1006, 532)
-    
+
     BOX_TOTAL_CASES = (160, 418, 298, 490)
     BOX_TOTAL_DEATH = (904, 467, 978, 525)
     BOX_TOTAL_DISCHARGED = (815, 467, 900, 525)
-    
+
     IMG_PATTERN = 'data:image/png;base64,([^"]+)'
     img_pattern = re.compile(IMG_PATTERN)
-    
+
     request = urllib.request.Request(CRAWL_URL, headers=QUERY_HEADERS)
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
-    
+
     idx1 = dom.find('【１．PCR検査陽性者数】')
     total_image_base64 = img_pattern.search(dom[idx1:]).group(1)
     idx2 = dom.find('【３．入退院等の状況】')
     status_image_base64 = img_pattern.search(dom[idx2:]).group(1)
-    
+
     total_cases, total_cases_changes = get_data_from_image(total_image_base64, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES, 'base64')
     discharged, discharged_changes = get_data_from_image(status_image_base64, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED, 'base64')
     death, death_changes = get_data_from_image(status_image_base64, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH, 'base64')
-    
+
     total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
     discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
     death, death_changes = to_int(death), to_int(death_changes)
-    
+
     return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
-    
+
 
 def main(args=None):
     app, client, bucket = init_firebase_app()
@@ -578,8 +682,9 @@ def main(args=None):
         # PatientDetailsDataset(),
         PatientByCityTokyoDataset(),
         PatientByCityOsakaDataset(),
+        PatientByCitySaitamaDataset()
     )
-    
+
     print('Getting overall data from MHLW')
     (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw_jp()
     print(f'Queried data successfully')
