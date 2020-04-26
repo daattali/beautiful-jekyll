@@ -32,7 +32,7 @@
 Getting started is *literally* as easy as 1-2-3 :smile:
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps.
 
-![Installation steps](img/install-steps.gif)
+![Installation steps](assets/img/install-steps.gif)
 
 ### 0. Sign up to GitHub
 
@@ -168,6 +168,19 @@ ext-css      | List of external CSS files to include in the page. External CSS f
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
 gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
 gh-badge  | Select which GitHub buttons to display, available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
+
+### Use remote-theme (advanced)
+
+It is possible to use the `remote_theme` feature of GitHub pages. To do so, instead of forking this project:
+
+- Follow all the steps in https://guides.github.com/features/pages/ ***EXCEPT*** the ones where you chose the theme.
+- add `remote_theme: daattali/beautiful-jekyll` to your `_config.yml`
+- add `paginate: 5` (or any value you'd like) to your `_config.yml`. This is the only configuration value that is required.
+- Optionally, if you want to use Staticman, you may need copy `_data/ui-text.yml` into your repo if you want to change the language.
+
+
+Any folder or file that you don't include in your repository will be included by jekyll on build. If you want toreplace a file (css for instance), you'll just need to place it with the exact same path in own jekyll repo (e.g. `assets/css/main.css`)
+
 
 ### Advanced features (including how to use a custom URL address for your site)
 

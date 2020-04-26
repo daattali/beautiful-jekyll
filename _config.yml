@@ -33,7 +33,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: true
@@ -102,9 +102,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-#navbar-img: "/img/bgimage.png"
-#footer-img: "/img/bgimage.png"
-#page-img: "/img/bgimage.png"
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
 
 # --- Web Statistics Section --- #
 
@@ -134,6 +134,7 @@ footer-link-col: "#404040"
 #fb_comment_id: ""
 
 # To use Staticman comments, fill in "repository", "branch", and "endpoint"
+# if using remote_theme, you will need to copy the _data/ui-text.yml to your repository
 staticman:
   repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
@@ -219,9 +220,7 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
-    - /css
-    - /img
-    - /js
+    - /assets
   metadata:
     _posts:
       - name: "layout"
