@@ -4,7 +4,11 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2020-04-25** Added a `home` layout and used it in the index page
+
 **2020-04-24** Adding readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
+
+**2020-04-23** Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
 
 **2020-04-22** Add support for configuring lang attribute on &lt;html&gt; tag (#608) (thanks @skalee)
 
