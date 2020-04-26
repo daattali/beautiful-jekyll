@@ -28,11 +28,6 @@
 - [FAQ and support](#faq-and-support)
 - [Credits and contributions](#credits)
 
-## Prerequisites
-
-- You need to have a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute. This is where your website will live - if you sign up with username `johnsmith` then your website will be `https://johnsmith.github.io`.
-- It would be helpful to understand what Markdown is and how to write it. Markdown is just a way to take a piece of text and format it to look a little nicer.  For example, this whole instruction set that you're reading is written in markdown - it's just text with some words being bold/larger/italicized/etc. I recommend taking 5 minutes to learn markdown [with this amazingly easy yet useful tutorial](https://markdowntutorial.com/).
-
 ## Build your website in 3 steps
 
 Getting started is *literally* as easy as 1-2-3 :smile:
@@ -40,17 +35,21 @@ Scroll down to see the steps involved, but here is a 40-second video just as a r
 
 ![Installation steps](img/install-steps.gif)
 
-### 1. Fork this repository
+### 0. Sign up to GitHub
 
-(Assuming you are on this page and logged into GitHub) Fork this repository by clicking the *Fork* button on the top right corner. Forking means that you now copied this whole project and all the files into your account.
+The easiest way to create your site is by having a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute.
 
-### 2. Rename the repository to `<yourusername>.github.io`
+### 1. Fork this project
 
-This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes.  To do this, click on *Settings* at the top (the cog icon) and there you'll have an option to rename.
+Fork this project by clicking the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all the files into your account.
+
+### 2. Rename the project to `<yourusername>.github.io`
+
+Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes.
 
 ### 3. Customize your website settings
 
-Edit the `_config.yml` file to change all the settings to reflect your site. To edit the file, click on it and then click on the pencil icon (watch the video tutorial above if you're confused).  The settings in the file are fairly self-explanatory and I added comments inside the file to help you further. Any line that begins with a pound sign (`#`) is a comment, and the rest of the lines are actual settings.
+Edit the `_config.yml` file to change all the settings to reflect your site. To edit the file, click on it to view the file and then click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and I added comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings.
 
 Another way to edit the config file (or any other file) is to use [prose.io](https://prose.io/), which is just a simple interface to allow you to more intuitively edit files or add new files to your project.
 
