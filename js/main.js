@@ -132,6 +132,7 @@ var main = {
     main.initDailyGraphs();
     main.initTokyoByWardGraph();
     main.initOsakaByWardGraph();
+    main.initSaitamaByWardGraph();
 
     // get statistics
     main.getStatisticsData();
@@ -360,6 +361,7 @@ var main = {
 
         renderDailyGraph(responseData, "Tokyo", "graph-daily-tokyo");
         renderDailyGraph(responseData, "Osaka", "graph-daily-osaka");
+        renderDailyGraph(responseData, "Saitama", "graph-daily-saitama");
       }
     } catch (error) {
       // TODO: error handler
@@ -477,6 +479,81 @@ var main = {
             },
             subtitle: {
               text: `Nguồn: <a href="https://covid19-osaka.info/">Chính quyền thành phố Osaka</a>`,
+            },
+            xAxis: {
+              categories: _.map(data, "location"),
+              min: 0,
+              max: 10,
+              scrollbar: {
+                enabled: true,
+                liveRedraw: true
+              },
+            },
+            yAxis: {
+              min: 0,
+              max: _.max(_.map(data, "count")),
+              title: false,
+            },
+            plotOptions: {
+              column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+              },
+            },
+            series: [
+              {
+                name: "Số bệnh nhân",
+                data: _.map(data, "count"),
+                color: "rgba(255,159,64,1)",
+              },
+            ],
+          });
+      }
+    } catch (error) {
+      // TODO: error handler
+      console.error(error);
+    }
+  },
+
+  initSaitamaByWardGraph: async function () {
+    try {
+      const storage = firebase.storage();
+      // daily graph
+      if ($("#graph-byward-saitama").length > 0) {
+        // load data from firebase storage
+        const fileRef = storage.ref("patient-by-city-saitama.json");
+        const url = await fileRef.getDownloadURL().catch((e) => {
+          throw e;
+        });
+        const response = await fetch(url).catch((e) => {
+          throw e;
+        });
+        const responseData = await response.json().catch((e) => {
+          throw e;
+        });
+
+        const data = _.chain(responseData)
+          .groupBy("Location")
+          .mapValues((v, k) => {
+            return { location: k, count: v.length };
+          })
+          .values()
+          .sortBy("count")
+          .reverse()
+          .value();
+
+          Highcharts.chart("graph-byward-saitama", {
+            chart: {
+              type: "column",
+            },
+            legend: {
+              enabled: false,
+            },
+            title: {
+              text: `Số bệnh nhân theo quận`,
+            },
+            subtitle: {
+              text: `Nguồn: <a href="https://saitama.stopcovid19.jp/">Chính quyền thành phố Saitama</a>`,
             },
             xAxis: {
               categories: _.map(data, "location"),
