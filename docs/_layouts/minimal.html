@@ -1,0 +1,26 @@
+---
+common-css:
+  - "/assets/css/bootstrap.min.css"
+  - "/assets/css/main-minimal.css"
+common-js:
+  - "/assets/js/jquery-1.11.2.min.js"
+  - "/assets/js/bootstrap.min.js"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <div role="main" class="container main-content">
+      {{ content }}
+    </div>
+
+    {% include footer-minimal.html %}
+
+    {% include footer-scripts.html %}
+
+  </body>
+</html>
