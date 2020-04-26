@@ -161,13 +161,13 @@ social-share | If you don't want to show buttons to share a blog post on social 
 use-site-title | If you want to use the site title rather than page title as HTML document title (ie. browser tab title), use `use-site-title: true`. When set, the document title will take the format `Site Title - Site Description` (eg. `My website - A virtual proof that name is awesome!`). By default, it will use `Page Title` if it exists, or `Site Title` otherwise.
 language    | HTML language code to be set on &lt;html&gt; element (see [W3Schools website](https://www.w3schools.com/tags/ref_language_codes.asp) for more info on this topic).  Language can also be set site-wide in `_config.yml`.
 layout      | What type of page this is (default is `post` for blog posts and `page` for other pages. You can use `minimal` if you don't want a header and footer). The `index.html` file should use the `home` layout to show all the blog posts.
-js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
+gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
+gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
+js          | List of local JavaScript files to include in the page (eg. `/assets/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`). External JavaScript files that support [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) can be specified using the `href` and `sri` parameters eg.<br/>`href: "//code.jquery.com/jquery-3.1.1.min.js"`<br/>`sri: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="`
 css         | List of local CSS files to include in the page
 ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported.
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
-gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
-gh-badge  | Select which GitHub buttons to display, available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
 
 ### Use remote-theme (advanced)
 
@@ -179,7 +179,7 @@ It is possible to use the `remote_theme` feature of GitHub pages. To do so, inst
 - Optionally, if you want to use Staticman, you may need copy `_data/ui-text.yml` into your repo if you want to change the language.
 
 
-Any folder or file that you don't include in your repository will be included by jekyll on build. If you want toreplace a file (css for instance), you'll just need to place it with the exact same path in own jekyll repo (e.g. `assets/css/main.css`)
+Any folder or file that you don't include in your repository will be included by jekyll on build. If you want to replace a file (css for instance), you'll just need to place it with the exact same path in own jekyll repo (e.g. `/assets/css/main.css`)
 
 
 ### Advanced features (including how to use a custom URL address for your site)
