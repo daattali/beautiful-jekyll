@@ -273,10 +273,7 @@ var main = {
           title: {
             text: "Bản đồ bệnh nhân COVID-19 Nhật Bản",
           },
-          subtitle: {
-            text:
-              'Nguồn: <a href="https://www3.nhk.or.jp/news/special/coronavirus/" target="_blank">NHK</a>',
-          },
+          subtitle: false,
           mapNavigation: {
             enabled: true,
             buttonOptions: {
