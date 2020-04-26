@@ -3,6 +3,7 @@ layout: page
 title: Getting started
 subtitle: How to use Beautiful Jekyll
 bigimg: /assets/img/start.jpg
+css: /assets/css/demo.css
 ---
 
 **Beautiful Jekyll** is a ready-to-use template to make help you create an awesome Jekyll or GitHub Pages website quickly. 
@@ -21,21 +22,15 @@ There are only three simple steps, so using **Beautiful Jekyll** is *literally* 
 
 Here is a 40-second video showing how to get started, with the specific steps below.  For a more complete installation guide, [visit the Beautiful Jekyll page](https://github.com/daattali/beautiful-jekyll#readme).
 
-<img src="../img/install-steps.gif" style="width:100%;" alt="Installation steps" />
+<img src="../assets/img/install-steps.gif" style="width:100%;" alt="Installation steps" />
 
-### 1. Fork the Beautiful Jekyll repository 
+### 1. Fork (copy) the Beautiful Jekyll project 
 
-Fork the [repository](https://github.com/daattali/beautiful-jekyll) by clicking the Fork button on the top right corner in GitHub.
+### 2. Rename the project to `yourusername.github.io`
 
-### 2. Rename the repository to `yourusername.github.io`
+### 3. Customize settings in the `config.yml` file to personalize your website
 
-This will create a GitHub User page ready with the **Beautiful Jekyll** template that will be available at http://yourusername.github.io (sometimes it takes a few minutes).
-
-### 3. Customize settings
-
-Edit the `_config.yml` file to change all the settings to reflect your site.  The settings in the file are fairly self-explanatory and I added comments inside the file to help you further.  Every time you make a change to any file, your website will get rebuilt and should be updated at `yourusername.github.io` within a minute.
-
-You can now visit your shiny new website, which will be seeded with several sample blog posts and a couple other pages.
+That's it! You can now visit your shiny new website.
 
 ---
 

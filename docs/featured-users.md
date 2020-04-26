@@ -3,7 +3,7 @@ layout: page
 title: Featured users
 ---
 
-To my huge surprise, Beautiful Jekyll has been used in over 500 websites in its first 6 months, and tens of thousands of times since its inception.  Here isa a sample of some websites that use Beautiful Jekyll.
+Beautiful Jekyll has been used in over 500 websites in its first 6 months, and tens of thousands of times since its inception.  Here is a sample of some websites that use Beautiful Jekyll.
 
 ### Project/company websites
 

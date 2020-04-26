@@ -29,7 +29,7 @@ navbar-links:
 url: "https://deanattali.com/beautiful-jekyll/"
 
 # baseurl should be an empty string
-baseurl: "/beautiful-jekyll"
+#baseurl: "/beautiful-jekyll"
 
 # --- Logo --- #
 
