@@ -10,8 +10,11 @@
 **If you enjoy this theme, please consider [supporting me](http://paypal.me/daattali) or [sponsoring me](https://github.com/sponsors/daattali) for developing and maintaining it for over 5 years.**
 
 <p align="center">
-  <a href="https://paypal.me/daattali">
-    <img src="https://camo.githubusercontent.com/0e9e5cac101f7093336b4589c380ab5dcfdcbab0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f74776f6c66736f6e2f70617970616c2d6769746875622d627574746f6e40312e302e302f646973742f627574746f6e2e737667" />
+  <a style="display: inline-block;" href="https://paypal.me/daattali">
+    <img height="40" src="https://camo.githubusercontent.com/0e9e5cac101f7093336b4589c380ab5dcfdcbab0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f74776f6c66736f6e2f70617970616c2d6769746875622d627574746f6e40312e302e302f646973742f627574746f6e2e737667" />
+  </a>
+  <a style="display: inline-block; margin-left: 10px;" href="https://github.com/sponsors/daattali">
+    <img height="40" src="https://i.imgur.com/034B8vq.png" />
   </a>
 </p>
 
@@ -204,9 +207,7 @@ Alternatively, instead of the above two steps, you can opt to use the `master` b
 
 ## Showcased users (success stories!)
 
-To my huge surprise, Beautiful Jekyll has been used in over 500 websites in its first 6 months alone! Here is a hand-picked selection of some websites that use Beautiful Jekyll.
-
-Want your website featured here? [Contact me](https://deanattali.com/aboutme#contact) to let me know about your website.
+Beautiful Jekyll has been used in over 500 websites in its first 6 months, and tens of thousands of times since its inception.  Here is a sample of some websites that use Beautiful Jekyll.
 
 ### Project/company websites
 
