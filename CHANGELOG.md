@@ -4,6 +4,8 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2020-04-26** Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
+
 **2020-04-25** Added a `home` layout and used it in the index page
 
 **2020-04-24** Adding readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
