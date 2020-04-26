@@ -133,26 +133,28 @@ footer-link-col: "#404040"
 # To use Facebook Comments, fill in a Facebook App ID
 #fb_comment_id: ""
 
-# To use Staticman comments, fill in "repository", "branch", and "endpoint"
-# if using remote_theme, you will need to copy the _data/ui-text.yml to your repository
-staticman:
-  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
-  reCaptcha:
-    # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
-    # If you use reCaptcha, you must also set these parameters in staticman.yml
-    siteKey  : # Use your own site key, you need to apply for one on Google
-    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+# To use Staticman comments, uncomment the following section and fill in
+# "repository", "branch", and "endpoint".
+# If you want to use reCaptcha for staticman (optional for spam protection), then fill
+# in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
+# If using remote_theme, you will need to copy `staticman.yml` and `_data/ui-text.yml` to your repository.
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
+#  reCaptcha:
+#    siteKey  : # Use your own site key, you need to apply for one on Google
+#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
-# To use Utterances comments: (1) fill in "repository" (make sure the repository is public), (2) Enable Issues in your repository,
+# To use Utterances comments: (0) uncomment the following section, (1) fill in
+# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
 # (3) Install the Utterances app in your repository https://github.com/apps/utterances
 # See more details about the parameters below at https://utteranc.es/
-utterances:
-  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-  issue-term: title   # Mapping between blog posts and GitHub issues
-  theme: github-light # Utterances theme
-  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+#utterances:
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 
 # --- Misc --- #
