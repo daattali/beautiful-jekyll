@@ -138,7 +138,7 @@ Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, t
 
 - **post** - To write a blog post, add a markdown or HTML file in the `_posts` folder. As long as you give it YAML front matter (the two lines of three dashes), it will automatically be rendered like a blog post. Look at the existing blog post files to see examples of how to use YAML parameters in blog posts.
 - **page** - Any page outside the `_posts` folder that uses YAML front matter will have a very similar style to blog posts.
-- **home** - You should only have one page that uses the home layout. The home layout is meant to act as the homepage of the blog posts - it will show all the previous blog posts, sorted from newest to oldest. A page using the home layout must be named `index.html`.
+- **home** - The home layout is meant to act as the homepage of your blog posts - it will display all your blog posts, sorted from newest to oldest. A file using the `home` layout must be named `index.html` (not `index.md` or anything else!).
 - **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
 - If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
 
@@ -160,7 +160,7 @@ share-img   | If you want to specify an image to use when sharing the page on Fa
 social-share | If you don't want to show buttons to share a blog post on social media, use `social-share: false` (this feature is turned on by default).
 use-site-title | If you want to use the site title rather than page title as HTML document title (ie. browser tab title), use `use-site-title: true`. When set, the document title will take the format `Site Title - Site Description` (eg. `My website - A virtual proof that name is awesome!`). By default, it will use `Page Title` if it exists, or `Site Title` otherwise.
 language    | HTML language code to be set on &lt;html&gt; element (see [W3Schools website](https://www.w3schools.com/tags/ref_language_codes.asp) for more info on this topic).  Language can also be set site-wide in `_config.yml`.
-layout      | What type of page this is (default is `post` for blog posts and `page` for other pages. You can use `minimal` if you don't want a header and footer). One of your pages should have `home` layout to show all the blog posts, this page must be named `index.html`.
+layout      | What type of page this is (default is `post` for blog posts and `page` for other pages. You can use `minimal` if you don't want a header and footer). The `index.html` file should use the `home` layout to show all the blog posts.
 js          | List of local JavaScript files to include in the page (eg. `/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`). External JavaScript files that support [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) can be specified using the `href` and `sri` parameters eg.<br/>`href: "//code.jquery.com/jquery-3.1.1.min.js"`<br/>`sri: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="`
 css         | List of local CSS files to include in the page
