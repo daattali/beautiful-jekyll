@@ -292,7 +292,7 @@ Beautiful Jekyll is built to be very customizable, and as such, many questions a
 
 #### How do I add a favicon to my site?
 
-Easy! Just place a valid `favicon.ico` (or another valid favicon image) in the root directory of your project. And then wait! It can take a while to update.
+Easy! Just place a valid `favicon.ico` in the root directory of your project. And then wait! It can take a while to update.
 
 #### How do I move the blog to another page instead of having it on the home page?
 
@@ -305,17 +305,6 @@ Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to 
 #### How do I use MathJax equations in my posts?
 
 MathJax can be easily integrated into your website with a one-line addition. You can see [this discussion](https://github.com/daattali/beautiful-jekyll/issues/195) for more information.
-
-#### My project page appear to be broken after a recent update!
-
-In June 2019, some URL related settings have been adjusted to be more in-line with how Jekyll uses them officially. Project Page absolute links might appear to be broken if you haven't propagated all necessary changes to your local templates, or if you have created additional templates making use of old settings. If a link contains a duplicated project path component, this is most likely the cause. In summary:
-
-| &nbsp; | Old behavior | New behavior |
-| --- | --- | --- |
-| `url` setting | `https://user.github.io/projectname` | (unset, GitHub auto detects) |
-| `baseurl` setting | `/projectname` | (unset, GitHub auto detects) |
-| Absolute link construction | `{{ site.url }}/your/path` | `{{ '/your/path' \| absolute_url }}` |
-| Relative link construction | `{{ site.baseurl }}/your/path` | `{{ '/your/path' \| relative_url }}` |
 
 ## Credits
 
@@ -335,6 +324,4 @@ If you do fork or clone this project to use as a template for your site, I would
 
 ## Known limitations
 
-- If you have a project page and you want a custom 404 page, you must have a custom domain.  See https://help.github.com/articles/custom-404-pages/.  This means that if you have a regular User Page you can use the 404 page from this theme, but if it's a website for a specific repository, the 404 page will not be used.
-
-- If there are many navigation bar links and avatar, some of the links may get partially hidden behind the avatar. 
+- If there are many navigation bar links and an avatar, some of the links may get partially hidden behind the avatar. I suggest either re-thinking the number of links, or not using an avatar.
