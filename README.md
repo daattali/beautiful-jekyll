@@ -24,7 +24,6 @@
 - [Add your own content](#add-your-own-content)
 - [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
 - [Features](#features)
-- [Creating a User Page vs a Project Page](#creating-a-user-page-vs-a-project-page)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
 - [Advanced: local development](#advanced-local-development-using-docker)
 - [FAQ and support](#faq-and-support)
@@ -47,7 +46,7 @@ Fork this project by clicking the __*Fork*__ button at the top right corner of t
 
 ### 2. Rename the project to `<yourusername>.github.io`
 
-Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes.
+Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes. Check out the [FAQ](#faq-and-support) if you want to use a different project name. 
 
 ### 3. Customize your website settings
 
@@ -189,22 +188,6 @@ Any folder or file that you don't include in your repository will be included by
 
 I wrote [a blog post](https://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
 
-## Creating a User Page vs a Project Page
-
-If you're not sure what the difference is, you can probably safely ignore this section.
-
-If you want to use this theme to host a website that will be available at `https://YOURUSERNAME.github.io`, then you do not need to read this section. That is called a User Page, you can only have one User Page in your GitHub account, and it is what you get by default when forking this project.
-
-If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/PROJECTNAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for any repository you have on GitHub.
-
-**When using this theme for a Project Page, by default your website will be served from the `gh-pages` branch**, so you must take the following steps: 
-
-1. [Delete the existing `gh-pages` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
-
-2. [Create a new branch named `gh-pages` from the `master` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#creating-a-branch)
-
-Alternatively, instead of the above two steps, you can opt to use the `master` branch instead of `gh-pages` branch as your website's source by choosing that option in the main Settings page. 
-
 ## Showcased users (success stories!)
 
 Beautiful Jekyll has been used in over 500 websites in its first 6 months, and tens of thousands of times since its inception.  Here is a sample of some websites that use Beautiful Jekyll.
@@ -285,6 +268,12 @@ Disclaimer: I personally am NOT using local development so I don't know much abo
 If you need any help, I suggest heading over to the [Jekyll support forum](https://talk.jekyllrb.com/).
 
 Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](https://jekyllrb.com/) or with Google.
+
+#### What if I don't want the website to be `https://<yourusername>.github.io`?
+
+Every GitHub user can have one repository (repository = project) named `<yourusername>.github.io` and the website for that repository will be `https://<yourusername>.github.io`. 
+
+If you want your project to be named something else, for example `MyAwesomeProject`, that's no problem! All you have to do is go to _Settings_ at the top right corner of the page, and rename your repository to `MyAwesomeProject` (remember to click on the _Rename_ button to confirm!). Then you need to scroll down to the _GitHub Pages_ section and choose "master branch" as the source (not "master branch /docs folder"!).
 
 #### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
 
