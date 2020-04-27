@@ -14,6 +14,7 @@ layout: base
       background-size: 100% auto;
       background-repeat: no-repeat;
       width: 100%;
+      margin-top: 48px;
     "
   >
     <img src="{{ page.thumbnail }}" alt="{{post.title}}" width="0" height="0" />
@@ -24,18 +25,13 @@ layout: base
     {{ content }}
   </article>
 
-  {% if page.tags.size > 0 %}
-  <div class="blog-tags">
-    Tags: {% if site.link-tags %} {% for tag in page.tags %}
-    <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-    {% endfor %} {% else %} {{ page.tags | join: ", " }} {% endif %}
-  </div>
-  {% endif %} {% include social-share.html %}
+  {% include social-share.html %}
 
-  <ul class="pager blog-pager">
+  <ul class="pager blog-pager" style="margin-top: 48px;">
     {% if page.previous.url %}
     <li class="previous">
       <a
+        class="covi-featured-link"
         href="{{ page.previous.url | relative_url }}"
         data-toggle="tooltip"
         data-placement="top"
@@ -46,6 +42,7 @@ layout: base
     {% endif %} {% if page.next.url %}
     <li class="next">
       <a
+        class="covi-featured-link"
         href="{{ page.next.url | relative_url }}"
         data-toggle="tooltip"
         data-placement="top"
@@ -55,5 +52,4 @@ layout: base
     </li>
     {% endif %}
   </ul>
-  {% include comments.html %}
 </div>
