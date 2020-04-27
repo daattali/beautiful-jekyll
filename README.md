@@ -61,7 +61,7 @@ After you save your changes to the config file (by clicking on *Commit changes* 
 
 Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
-If you've reached this point, you should skip over the next section (the hard way of setting up a website) and jump straight to [Add your own content](#add-your-own-content).
+*** If you've reached this point, you should skip over the next section (the hard way of setting up a website) and jump straight to [Add your own content](#add-your-own-content). ***
 
 ### The hard way (skip this section if you followed the easy way)
 
