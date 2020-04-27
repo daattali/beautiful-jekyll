@@ -2,7 +2,9 @@
 
 This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
-**2020-04-27** Upgrade gem to 2.1.0 to improve some documentation and fix small bugs from remote_theme migration
+**2020-04-27** Upgrade gem to 2.2.0 to improve some documentation and fix small bugs from remote_theme migration
+
+**2020-04-27** Moved the demo site to an independent URL: https://beautifuljekyll.com 
 
 **2020-04-27** Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
 
