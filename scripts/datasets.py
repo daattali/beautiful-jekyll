@@ -3,6 +3,7 @@ import json
 import urllib.request
 
 import pandas as pd
+import tabula
 
 QUERY_HEADERS = {
     'User-Agent': 'Mozilla/5.0',
@@ -33,6 +34,34 @@ class Dataset(object):
 
     def _create_dataframe(self):
         raise NotImplementedError()
+
+    def _localize_date(self, column, na_value='Đang điều tra'):
+        t = self.dataframe[column].str.extract(r'([0-9]+)月([0-9]+)日')
+        self.dataframe[column] = (t[0] + '/' + t[1]).fillna(na_value)
+        return self.dataframe[column]
+
+    def _localize_age(self, column, na_value='Đang điều tra'):
+        self.dataframe[column] = self.dataframe[column].str.replace('代', 's')
+        self.dataframe[column].replace({
+            '未就学児': 'Dưới 3',
+            '就学児': '3-9',
+            '10歳未': 'Dưới 10',
+            '100歳以': 'Trên 100',
+            '不': 'Không rõ',
+            '調査中': 'Đang điều tra',
+        }, inplace=True)
+        self.dataframe[column].fillna(na_value, inplace=True)
+        return self.dataframe[column]
+
+    def _localize_sex(self, column, na_value='Đang điều tra'):
+        self.dataframe[column].replace({
+            '男性': 'Nam',
+            '女性': 'Nữ',
+            '女児': 'Nữ',
+            '調査中': 'Đang điều tra',
+        }, inplace=True)
+        self.dataframe[column].fillna(na_value, inplace=True)
+        return self.dataframe[column]
 
     def _localize(self, **kwargs):
         pass
@@ -126,3 +155,19 @@ class JsonDataset(Dataset):
 
     def _create_dataframe_from_json(self):
         raise NotImplementedError()
+
+
+class PdfDataset(Dataset):
+    def __init__(self, url, name, data_key=None, pages='all', include_header=True):
+        super().__init__(url, name)
+        self.pages = pages
+        self.include_header = include_header
+
+    def _create_dataframe(self):
+        if self.include_header:
+            dfs = tabula.read_pdf(self.url, pages=self.pages)
+        else:
+            dfs = tabula.read_pdf(self.url, pages=self.pages, pandas_options={'header': None})
+
+        df = pd.concat(dfs)
+        return df
