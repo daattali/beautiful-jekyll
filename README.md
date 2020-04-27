@@ -97,7 +97,7 @@ If you don't include YAML then your file will not use this template.
 
 **Beautiful Jekyll** is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone or your gigantic iMac, and the site will work well on both, though it will look slightly different.
 
-### Customizable
+### Highly customizable
 
 Many personalization settings in `_config.yml`, such as setting your name and site's description, changing the background colour/image, setting your avatar to add a little image in the navigation bar, customizing the links in the menus, customizing what social media links to show in the footer, etc.
 
@@ -131,10 +131,6 @@ Beautiful Jekyll lets you easily add Google Analytics to all your pages. This wi
 ### Sharing blog posts on social media
 
 By default, all blog posts will have buttons at the bottom of the post to allow people to share the current page on Twitter/Facebook/LinkedIn.  You can choose to enable/disable specific social media websites in the `_config.yml` file. You can also turn off the social media buttons on specific blog posts using `social-share: false` in the YAML front matter.
-
-### RSS feed
-
-Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to remote the link to your RSS feed in the footer of every page, find the `rss: true` line in `_config.yml` and change it to `rss: false`.
 
 ### Page types
 
