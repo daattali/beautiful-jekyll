@@ -70,8 +70,9 @@ Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant 
 - Using `remote_theme` with a GitHub repository
 
     - Create a new GitHub repository or go to an existing repository
-    - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source
     - Add `remote_theme: daattali/beautiful-jekyll@2.0.0` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
+    - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source
+    - Your website will be at `https://<yourusername>.github.io\<projectname>`
 
 - Using `remote_theme` with a Ruby Jekyll site
 
