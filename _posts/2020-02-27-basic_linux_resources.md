@@ -377,6 +377,9 @@ Command | Description
 
 <https://wiki.gentoo.org/wiki/Sysvinit>
 
+#### if you want to plau with a sysvinit system
+http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-LiveDVD.iso
+
 ### Sysvinit vs system d (Nice comparison graph)
 <https://access.redhat.com/articles/1189123>
 
