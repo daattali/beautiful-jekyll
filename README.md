@@ -33,7 +33,7 @@
 
 ## Build your website in 3 steps
 
-There's a very easy way to use this theme, and there's a hard way. If you're an advanced user and want to tinker with the hard way, feel free to [skip this section and jump down](#TODO). I suggest going the easy route.  
+There's a very easy way to use this theme, and there's a hard way. If you're an advanced user and want to tinker with the hard way, feel free to [skip this section and jump down](#the-hard-way-skip-this-section-if-you-followed-the-easy-way). I suggest going the easy route.  
 
 ### The easy way (recommended!)
 
