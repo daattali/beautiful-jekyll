@@ -21,6 +21,8 @@
 ### Table of contents
 
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
+  - [The easy way (recommended!)](#the-easy-way-recommended)
+  - [The hard way (skip this section if you followed the easy way)](#the-hard-way-skip-this-section-if-you-followed-the-easy-way)
 - [Add your own content](#add-your-own-content)
 - [Last important thing: parameters for each page](#last-important-thing-parameters-for-each-page)
 - [Features](#features)
@@ -32,29 +34,69 @@
 
 ## Build your website in 3 steps
 
+There's a very easy way to use this theme, and there's a hard way. If you're an advanced user and want to tinker with the hard way, feel free to [skip this section and jump down](#TODO). I suggest going the easy route.  
+
+### The easy way (recommended!)
+
 Getting started is *literally* as easy as 1-2-3 :smile:
 
 Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
 
 ![Installation steps](assets/img/install-steps.gif)
 
-### 1. Fork this project
+#### 1. Fork this project
 
 Fork this project by clicking the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all the files into your account.
 
-### 2. Rename the project to `<yourusername>.github.io`
+#### 2. Rename the project to `<yourusername>.github.io`
 
 Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes. Check out the [FAQ](#faq-and-support) if you want to use a different project name. 
 
-### 3. Customize your website settings
+#### 3. Customize your website settings
 
 Edit the `_config.yml` file to change any settings you want. To edit the file, click on it to view the file and then click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and I added comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings.
 
-### 4. Congratulations! You have a website!
+#### 4. Congratulations! You have a website!
 
 After you save your changes to the config file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
 Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
+
+If you've reached this point, you should skip over the next section (the hard way of setting up a website) and jump straight to [Add your own content](#add-your-own-content).
+
+### The hard way (skip this section if you followed the easy way)
+
+Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant to be used via forking as described above, but due to high demand it's also available as a Github "remote_theme" and as a Ruby Gem. Apart from the method mentioned above, there are three other ways of using beautiful-jekyll. These are advanced uses and you should only use one of these methods if you know how to write jekyll sites from scratch. You should look up the official documentation for whichever method you want to use, but here are the basics:
+
+- Using `remote_theme` with a GitHub repository
+
+    - Create a new GitHub repository or go to an existing repository
+    - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source
+    - Add `remote_theme: daattali/beautiful-jekyll@2.0.0` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
+
+- Using `remote_theme` with a Ruby Jekyll site
+
+    - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
+    - Create a new jekyll site (e.g. `jekyll new mysite`)
+    - Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin
+    - Add `remote_theme: daattali/beautiful-jekyll@2.0.0` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
+    - Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin
+
+- Using the Beautiful-Jekyll theme gem
+
+    - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
+    - Create a new jekyll site (e.g. `jekyll new mysite`)
+    - Add `gem "beautiful-jekyll-theme", "2.0.0"` to your Gemfile
+    - Add `theme: beautiful-jekyll-theme` to your `_config.yml`
+    - Run `bundle`
+    - You can preview the site using `bundle exec jekyll serve` (optionally with `-H 0.0.0.0` if needed)
+
+If you use beautiful-jekyll with the "easy way", you'll have direct access to all the files because you'll be copying the project. But if you use one of these three "hard" methods, many of the theme's files and folders will be hidden from you, so you'll need to:
+
+- Go through beautiful-jekyll's `_config.yml` file and copy any settings you want to use into your project's config file.
+- Some config features will not work because of missing files that you'll need to copy from beautiful-jekyll into your project. To enable the `link-tags` feature, you need to copy `tags.html`. To enable the RSS feed, copy `feed.xml`. If you use staticman comments, copy `staticman.yml` and `_data/ui-text.yml`.
+- If you want the home page to include a feed of all blog posts, create an index.html file and use `layout: home` in its YAML.
+- If you want to replace any file served from beautiful-jekyll (such as a CSS file, a layout, or an include), you'll need to place it with the exact same path in your own jekyll repo (e.g. /assets/css/main.css)
 
 ---
 
