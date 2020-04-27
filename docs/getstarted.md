@@ -92,5 +92,5 @@ If at any point in the future you want to update to a newer version of beautiful
 After setting up your site, you still need to go through the rest of the beautiful-jekyll documentation to learn about all its features and how to use it.
 
 <div class="get-started-wrap">
-  <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/daattali/beautiful-jekyll#add-your-own-content">Read the docs</a>
+  <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/daattali/beautiful-jekyll#add-your-own-content">Read Documentation</a>
 </div>
