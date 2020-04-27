@@ -541,6 +541,7 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
 
 
     def _localize(self):
+        self.dataframe = self.dataframe.iloc[:, 1:]
         self.dataframe.columns = [
             self.COL_ID,
             self.COL_REF,
@@ -564,6 +565,50 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
             '東京都': 'Tokyo',
         }, inplace=True)
         self.dataframe[self.COL_LOCATION].fillna('Đang điều tra', inplace=True)
+
+        return self.dataframe
+
+
+class ClinicDataset(datasets.CsvDataset):
+    COL_ID = 'Id'
+    COL_NAME = 'Name'
+    COL_POSTAL_CODE = 'Postal Code'
+    COL_ADDRESS = 'Address'
+    COL_TEL = 'Tel'
+    COL_WEBSITE = 'Website'
+
+    def __init__(self, url, name, **kwargs):
+        super().__init__(url, name, **kwargs)
+
+    def _localize(self):
+        pass
+
+    def _cleanse(self):
+        self.dataframe = self.dataframe.iloc[:, :6]
+
+        self.dataframe.columns = [
+            self.COL_ID,
+            self.COL_NAME,
+            self.COL_POSTAL_CODE,
+            self.COL_ADDRESS,
+            self.COL_TEL,
+            self.COL_WEBSITE,
+        ]
+
+        self.dataframe = self.dataframe[self.dataframe[self.COL_ID].notnull()]
+        self.dataframe = self.dataframe[self.dataframe[self.COL_POSTAL_CODE].notnull()]
+        self.dataframe[self.COL_ID] = self.dataframe[self.COL_ID].astype(int)
+        self.dataframe[self.COL_POSTAL_CODE] = self.dataframe[self.COL_POSTAL_CODE].astype(str)
+        self.dataframe.fillna('なし', inplace=True)
+
+        for column in [
+            self.COL_NAME,
+            self.COL_POSTAL_CODE,
+            self.COL_ADDRESS,
+            self.COL_TEL,
+            self.COL_WEBSITE,
+        ]:
+            self.dataframe[column] = self.dataframe[column].str.replace('\r', '')
 
         return self.dataframe
 
@@ -646,9 +691,9 @@ def get_data_from_mhlw_jp():
     IMAGE_SIZE_TOTAL = (430, 494)
     IMAGE_SIZE_DETAIL = (1006, 532)
 
-    BOX_TOTAL_CASES = (160, 418, 298, 490)
-    BOX_TOTAL_DEATH = (904, 467, 978, 525)
-    BOX_TOTAL_DISCHARGED = (815, 467, 900, 525)
+    BOX_TOTAL_CASES = (164, 419, 295, 490)
+    BOX_TOTAL_DEATH = (904, 463, 978, 525)
+    BOX_TOTAL_DISCHARGED = (815, 463, 900, 525)
 
     IMG_PATTERN = 'data:image/png;base64,([^"]+)'
     img_pattern = re.compile(IMG_PATTERN)
@@ -657,9 +702,9 @@ def get_data_from_mhlw_jp():
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
 
-    idx1 = dom.find('【１．PCR検査陽性者数】')
+    idx1 = dom.find('PCR検査陽性者数')
     total_image_base64 = img_pattern.search(dom[idx1:]).group(1)
-    idx2 = dom.find('【３．入退院等の状況】')
+    idx2 = dom.find('入退院等の状況')
     status_image_base64 = img_pattern.search(dom[idx2:]).group(1)
 
     total_cases, total_cases_changes = get_data_from_image(total_image_base64, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES, 'base64')
@@ -673,18 +718,7 @@ def get_data_from_mhlw_jp():
     return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
 
 
-def main(args=None):
-    app, client, bucket = init_firebase_app()
-
-    all_datasets = (
-        TokyoPatientsDataset(),
-        PrefectureByDateDataset(),
-        # PatientDetailsDataset(),
-        PatientByCityTokyoDataset(),
-        PatientByCityOsakaDataset(),
-        PatientByCitySaitamaDataset()
-    )
-
+def update_cases_recovered_deaths(bucket):
     print('Getting overall data from MHLW')
     (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw_jp()
     print(f'Queried data successfully')
@@ -699,6 +733,32 @@ def main(args=None):
         'death_changes': death_changes
     }), content_type='application/json')
     print(f'Uploaded JSON to Firebase storage')
+    print('-'*20)
+
+
+def update_clinic(bucket):
+    for pref in PREFECTURES.values():
+        dataset = ClinicDataset(
+            f'clinics/tabula-{pref.lower()}.csv',
+            f'clinic-{pref.lower()}',
+        )
+        print(f'Dataset: {dataset.name}')
+        dataset.query_all()
+        print(f'Queried data successfully')
+        dataset.upload_to_storage(bucket)
+        print(f'Uploaded JSON to Firebase storage')
+        print('-'*20)
+
+
+def update_detailed_data(bucket):
+    all_datasets = (
+        TokyoPatientsDataset(),
+        PrefectureByDateDataset(),
+        # PatientDetailsDataset(),
+        PatientByCityTokyoDataset(),
+        PatientByCityOsakaDataset(),
+        PatientByCitySaitamaDataset()
+    )
 
     for dataset in all_datasets:
         print(f'Dataset: {dataset.name}')
@@ -709,6 +769,13 @@ def main(args=None):
         dataset.upload_to_storage(bucket)
         print(f'Uploaded JSON to Firebase storage')
         print('-'*20)
+
+
+def main(args=None):
+    app, client, bucket = init_firebase_app()
+    update_cases_recovered_deaths(bucket)
+    # update_clinic(bucket)
+    update_detailed_data(bucket)
 
     return 0
 
