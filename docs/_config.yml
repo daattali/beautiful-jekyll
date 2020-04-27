@@ -17,7 +17,7 @@ navbar-links:
   Home: ""
   Resources:
     - Getting started: "getstarted"
-    - Featured users: "featured-users"
+    - Featured users: "https://github.com/daattali/beautiful-jekyll#showcased-users-success-stories"
     - Project page: "https://github.com/daattali/beautiful-jekyll#readme"
   About me: "http://deanattali.com"
   Support me: "http://deanattali.com/aboutme/#feed-meeee"
