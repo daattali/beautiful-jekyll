@@ -32,13 +32,10 @@
 ## Build your website in 3 steps
 
 Getting started is *literally* as easy as 1-2-3 :smile:
-Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps.
+
+Scroll down to see the steps involved, but here is a 40-second video just as a reference as you work through the steps. If you don't already have a [GitHub account](https://github.com/join), you'll need to sign up.
 
 ![Installation steps](assets/img/install-steps.gif)
-
-### 0. Sign up to GitHub
-
-The easiest way to create your site is by having a GitHub account. If you don't have one, [sign up here](https://github.com/join) - it takes one minute.
 
 ### 1. Fork this project
 
