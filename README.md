@@ -27,7 +27,6 @@
 - [Supported YAML front matter parameters](#supported-yaml-front-matter-parameters)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
 - [Advanced: Using `remote_theme`](#advanced-using-remote_theme)
-- [Advanced: local development](#advanced-local-development-using-docker)
 - [FAQ and support](#faq-and-support)
 - [Credits and contributions](#credits)
 
@@ -235,43 +234,6 @@ Below is a summary of the steps required to set up a site with remote themes:
 - Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin.
 - Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin.
 - Serve the jekyll site as usual (e.g. `bundle exec jekyll serve -H 0.0.0.0`)
-
-## Advanced: Local development using Docker
-
-Beautiful Jekyll is meant to be so simple to use that you can do it all within the browser. However, if you'd like to develop locally on your own machine, that's possible too if you're comfortable with command line. Follow these simple steps set that up with Docker:
-
-1. Make sure you have [Docker](https://www.docker.com/) installed.
-
-2. Clone your repository locally.
-
-    ```bash
-    git clone https://github.com/<your_username>/<your_username>.github.io.git
-    ```
-
-3. Run the following shell commands to build the docker image and start the container for the first time:
-
-    ```bash
-    cd <repository_folder>
-    docker build -t beautiful-jekyll "$PWD"
-    docker run -d -p 4000:4000 --name beautiful-jekyll -v "$PWD":/srv/jekyll beautiful-jekyll
-    ```
-
-
-Now that Docker is set up, you do not need to run the above steps again. You can now view your website at http://localhost:4000/. You can start the container again in the future with:
-
-```bash
-docker start beautiful-jekyll
-```
-
-And you can stop the server with:
-
-```bash
-docker stop beautiful-jekyll
-```
-
-Whenever you make any changes to `_config.yml`, you must stop and re-start the server for the new config settings to take effect.
-
-Disclaimer: I personally am NOT using local development so I don't know much about running Jekyll locally. If you follow this route, please don't ask me questions because unfortunately I honestly won't be able to help!
 
 ## FAQ and support
 
