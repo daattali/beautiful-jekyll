@@ -378,7 +378,7 @@ Command | Description
 <https://wiki.gentoo.org/wiki/Sysvinit>
 
 ### Sysvinit vs system d (Nice comparison graph)
-https://access.redhat.com/articles/1189123
+<https://access.redhat.com/articles/1189123>
 
 ### Init System and Daemons (Boot Process)
 <https://opensource.com/article/17/2/linux-boot-and-startup>
