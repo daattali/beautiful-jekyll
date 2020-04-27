@@ -22,9 +22,11 @@
 
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
 - [Add your own content](#add-your-own-content)
-- [Last important thing: YAML front matter ("parameters" for a page)](#last-important-thing-yaml-front-matter-parameters-for-a-page)
+- [Last important thing: parameters for each page)](#last-important-thing-parameters-for-each-page)
 - [Features](#features)
+- [Supported YAML front matter parameters](#supported-yaml-front-matter-parameters)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
+- [Advanced: Using `remote_theme`](#advanced-using-remote_theme)
 - [Advanced: local development](#advanced-local-development-using-docker)
 - [FAQ and support](#faq-and-support)
 - [Credits and contributions](#credits)
@@ -49,7 +51,7 @@ Click on __*Settings*__ at the top (the cog icon) and on that page you'll have a
 
 Edit the `_config.yml` file to change any settings you want. To edit the file, click on it to view the file and then click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and I added comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings.
 
-#### 4. Congratulations! You have your website!
+### 4. Congratulations! You have a website!
 
 After you save your changes to the config file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
@@ -59,22 +61,22 @@ Note that in the video above I only edited one setting in the `_config.yml` file
 
 ## Add your own content
 
-To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write markdown than HTML, so I suggest you do that (use the [tutorial I mentioned above](https://markdowntutorial.com/) if you need to learn markdown). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated the pretty text. Very easy!
+To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It's much easier to write markdown than HTML, so I suggest you do that (use [this great tutorial](https://markdowntutorial.com/) if you need to learn markdown in 5 minutes). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there's a word in bold, a link, a few bullet points), and if you click on the pencil icon to edit the file, you'll see the markdown that generated the pretty text. Very easy!
 
-In contrast, look at [`index.html`](./index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
+In contrast, look at [`tags.html`](./tags.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
 
-Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.  After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
+Files you create inside the [`_posts`](./_posts) directory will be treated as blog entries. You can look at the existing files there to get an idea of how to write blog posts. Note the format of the blog post files - they must follow the naming convention of `YEAR-MONTH-DAY-title.md`. After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
 
-## Last important thing: YAML front matter ("parameters" for a page)
+## Last important thing: parameters for each page
 
-In order to have your new pages use this template and not just be plain pages, you need to add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page. This is where you'll give each page some parameters that I made available, such as a title and subtitle. I'll go into more detail about what parameters are available later. If you don't want to use any parameters on your new page (this also means having no title), then use the empty YAML front matter:
+In order to have your new pages use this template and not just be plain HTML pages, **you must add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page**. This is where you'll be able to give each page some extra parameters such as a title, a subtitle, or an image. [Below is a list of all available parameters](#supported-yaml-front-matter-parameters). If you don't want to use any parameters on a page (this also means having no title), then use the empty YAML front matter:
 
 ```
 ---
 ---
 ```
 
-If you want to use any parameters, write them between the two lines. For example, you can have this at the top of a page:
+If you do want to use any parameters, write them between these two lines. For example, you can have this at the top of a page:
 
 ```
 ---
@@ -83,10 +85,11 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
+You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/aboutme.md) as an example.
 
-**Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**    
-If you don't include YAML then your file will not use the template.
+**Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**
+
+If you don't include YAML then your file will not use this template.
 
 ## Features
 
@@ -131,7 +134,7 @@ By default, all blog posts will have buttons at the bottom of the post to allow 
 
 ### RSS feed
 
-Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to add a link to your RSS feed in the footer of every page, find the `rss: false` line in `_config.yml` and change it to `rss: true`.
+Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, to allow others to subscribe to your posts.  If you want to remote the link to your RSS feed in the footer of every page, find the `rss: true` line in `_config.yml` and change it to `rss: false`.
 
 ### Page types
 
@@ -141,7 +144,7 @@ Beautiful Jekyll automatically generates a simple RSS feed of your blog posts, t
 - **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
 - If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
 
-### YAML front matter parameters
+## Supported YAML front matter parameters
 
 These are the main parameters you can place inside a page's YAML front matter that **Beautiful Jekyll** supports.
 
@@ -167,19 +170,6 @@ ext-js      | List of external JavaScript files to include in the page (eg. `//c
 css         | List of local CSS files to include in the page
 ext-css      | List of external CSS files to include in the page. External CSS files using SRI (see `ext-js` parameter) are also supported.
 googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lobster"]`)
-
-### Use remote-theme (advanced)
-
-It is possible to use the `remote_theme` feature of GitHub pages. To do so, instead of forking this project:
-
-- Follow all the steps in https://guides.github.com/features/pages/ ***EXCEPT*** the ones where you chose the theme.
-- add `remote_theme: daattali/beautiful-jekyll` to your `_config.yml`
-- add `paginate: 5` (or any value you'd like) to your `_config.yml`. This is the only configuration value that is required.
-- Optionally, if you want to use Staticman, you may need copy `_data/ui-text.yml` into your repo if you want to change the language.
-
-
-Any folder or file that you don't include in your repository will be included by jekyll on build. If you want to replace a file (css for instance), you'll just need to place it with the exact same path in own jekyll repo (e.g. `/assets/css/main.css`)
-
 
 ### Advanced features (including how to use a custom URL address for your site)
 
@@ -222,6 +212,30 @@ Beautiful Jekyll has been used in over 500 websites in its first 6 months, and t
 | [sharepointoscar.github.io](http://sharepointoscar.github.io) | Oscar Medina | Independent Hacker |
 | [ocram85.com](https://ocram85.com) | Marco Blessing | A personal blog about PowerShell and automation |
 | [khanna.cc](https://khanna.cc/) | Harry Khanna | Law and software |
+
+## Advanced: Using `remote_theme`
+
+Instead of forking this repository, it's possible to use GitHub's `remote_theme` feature. This is an advanced feature only suitable for people who are familiar with GitHub's remote themes feature and who know how to write jekyll sites from scratch. You can either use remote themes directly on GitHub or a Jekyll plugin - you should look up the official documentation for whichever method you want to use.
+
+Regardless of which of the two methods you choose, after setting up beautiful-jekyll as a remote theme you'll need to:
+
+- Edit the `_config.yml` file (or create it if it doesn't exist) and add a line `remote_theme: daattali/beautiful-jekyll` (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before).
+- Create any pages/blog posts using the YAML parameters and layouts available in Beautiful-Jekyll that are mentioned above.
+- If you want the home page to include a feed of all blog posts, create an `index.html` file and use `layout: home` in its YAML.
+- If you want to replace any file served from beautiful-jekyll (such as a CSS file, a layout, or an include), you'll need to place it with the exact same path in your own jekyll repo (e.g. `/assets/css/main.css`)
+
+Below is a summary of the steps required to set up a site with remote themes:
+
+### Remote themes with a GitHub repository
+
+- Create a new repository or go to an existing repository.
+- Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source (not "master branch /docs folder"!).
+
+### Remote themes with a Ruby Jekyll site
+
+- Create a new jekyll site using `jekyll new <projectname>`.
+- Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin.
+- Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin.
 
 ## Advanced: Local development using Docker
 
