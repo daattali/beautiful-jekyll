@@ -22,7 +22,7 @@
 
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
   - [The easy way (recommended!)](#the-easy-way-recommended)
-  - [The hard way (skip this section if you followed the easy way)](#the-hard-way-skip-this-section-if-you-followed-the-easy-way)
+  - [The hard way (using ruby gems)](#the-hard-way-using-ruby-gems)
 - [Add your own content](#add-your-own-content)
 - [Last important thing: parameters for each page](#last-important-thing-parameters-for-each-page)
 - [Features](#features)
@@ -33,7 +33,7 @@
 
 ## Build your website in 3 steps
 
-There's a very easy way to use this theme, and there's a hard way. If you're an advanced user and want to tinker with the hard way, feel free to [skip this section and jump down](#the-hard-way-skip-this-section-if-you-followed-the-easy-way). I suggest going the easy route.  
+There's a very easy way to use this theme, and there's a hard way. If you're an advanced user and want to tinker with the hard way (using ruby gems), feel free to [skip this section and jump down](#the-hard-way-using-ruby-gems). For most people (including myself), I suggest going the easy route.  
 
 ### The easy way (recommended!)
 
@@ -63,7 +63,9 @@ Note that in the video above I only edited one setting in the `_config.yml` file
 
 *** If you've reached this point, you should skip over the next section (the hard way of setting up a website) and jump straight to [Add your own content](#add-your-own-content). ***
 
-### The hard way (skip this section if you followed the easy way)
+### The hard way (using ruby gems)
+
+If you followed the easy method above, then you already have your site and you can skip this section.
 
 Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant to be used via forking as described above, but due to high demand it's also available as a Github "remote_theme" and as a Ruby Gem. Apart from the method mentioned above, there are three other ways of using beautiful-jekyll. These are advanced uses and you should only use one of these methods if you know how to write jekyll sites from scratch. You should look up the official documentation for whichever method you want to use, but here are the basics:
 
