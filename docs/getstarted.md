@@ -46,9 +46,11 @@ See how easy that is? I wasn't lying - it really can be done in two minutes.
 
 ## Installation steps (as a ruby gem - the hard way)
 
-**For most people (including myself!), I suggest going that route and ignoring this section**. If you're an advanced user and want to use beautiful-jekyll as a ruby gem, then follow these steps.
+**For most people (including myself!), I suggest using the easy way and ignoring this section**. If you're an advanced user and want to use beautiful-jekyll as a ruby gem, then follow these steps.
 
-Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant to be used via forking as described above, but due to high demand it's also available as a Github "remote_theme" and as a Ruby Gem. Apart from the method mentioned above, there are three other ways of using beautiful-jekyll. These are advanced uses and you should only use one of these methods if you know how to write jekyll sites from scratch. You should look up the official documentation for whichever method you want to use, but here are the basics:
+Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant to be used via forking as described above, but due to high demand it's now also available as a Github "remote_theme" and as a Ruby Gem.
+
+There are three other ways of using beautiful-jekyll. These are advanced uses and you should only use one of these methods if you know how to write jekyll sites from scratch. You should look up the official documentation for whichever method you want to use, but here are the basics:
 
 - Using `remote_theme` with a GitHub repository
 
