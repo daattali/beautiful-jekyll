@@ -237,6 +237,7 @@ Below is a summary of the steps required to set up a site with remote themes:
 - Create a new jekyll site using `jekyll new <projectname>`.
 - Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin.
 - Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin.
+- Serve the jekyll site as usual (e.g. `bundle exec jekyll serve -H 0.0.0.0`)
 
 ## Advanced: Local development using Docker
 
