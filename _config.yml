@@ -14,7 +14,7 @@ author: OpenStopCovid
 navbar-links:
   About Us: "aboutus"
   Resources:
-    - App mobile : "https://github.com/fmauquie/react-native-dp3t"
+    - Mobile app : "https://github.com/fmauquie/react-native-dp3t"
     - Authority Backend: "https://github.com/OpenStopCovid/dp3t-ms"
     - Authority UI: "https://github.com/OpenStopCovid/health-authority-ui"
     - Specifications: "https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf"
