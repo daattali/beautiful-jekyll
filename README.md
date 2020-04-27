@@ -22,7 +22,7 @@
 
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
 - [Add your own content](#add-your-own-content)
-- [Last important thing: parameters for each page)](#last-important-thing-parameters-for-each-page)
+- [Last important thing: parameters for each page](#last-important-thing-parameters-for-each-page)
 - [Features](#features)
 - [Supported YAML front matter parameters](#supported-yaml-front-matter-parameters)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
