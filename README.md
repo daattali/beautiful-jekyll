@@ -220,9 +220,10 @@ Instead of forking this repository, it's possible to use GitHub's `remote_theme`
 Regardless of which of the two methods you choose, after setting up beautiful-jekyll as a remote theme you'll need to:
 
 - Edit the `_config.yml` file (or create it if it doesn't exist) and add a line `remote_theme: daattali/beautiful-jekyll` (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before).
+- Go through beautiful-jekyll's `_config.yml` file and copy any settings you want to use into your project's config file.
+  - Some features will not work because of missing files that you'll need to copy from beautiful-jekyll into your project. To enable the `tags` feature, you need to copy `tags.html`. To enable the RSS feed, copy `feed.xml`. If you use staticman comments, copy `staticman.yml` and `_data/ui-text.yml`.
 - Create any pages/blog posts using the YAML parameters and layouts available in Beautiful-Jekyll that are mentioned above.
 - If you want the home page to include a feed of all blog posts, create an `index.html` file and use `layout: home` in its YAML.
-- Some features will not work because of missing files that you'll need to copy from beautiful-jekyll into your project. To enable the `tags` feature, you need to copy `tags.html`. To enable the RSS feed, copy `feed.xml`. If you use staticman comments, copy `staticman.yml` and `_data/ui-text.yml`.
 - If you want to replace any file served from beautiful-jekyll (such as a CSS file, a layout, or an include), you'll need to place it with the exact same path in your own jekyll repo (e.g. `/assets/css/main.css`)
 
 Below is a summary of the steps required to set up a site with remote themes:
