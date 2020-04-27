@@ -266,7 +266,9 @@ Beautiful Jekyll is actively used by thousands of people with wildly varying deg
 
 Every GitHub user can have one repository (repository = project) named `<yourusername>.github.io` and the website for that repository will be `https://<yourusername>.github.io`. 
 
-If you want your project to be named something else, for example `MyAwesomeProject`, that's no problem! All you have to do is go to _Settings_ at the top right corner of the page, and rename your repository to `MyAwesomeProject` (remember to click on the _Rename_ button to confirm!). Then you need to scroll down to the _GitHub Pages_ section and choose "master branch" as the source (not "master branch /docs folder"!).
+If you want your project to be named something else, for example `MyAwesomeProject`, that's no problem! All you have to do is go to _Settings_ at the top right corner of the page, and rename your repository to `MyAwesomeProject` (remember to click on the _Rename_ button to confirm). Then you need to scroll down to the _GitHub Pages_ section and choose "master branch" as the source (not "master branch /docs folder"!).
+
+Now your website will be at `https://<yourusername>.github.io\MyAwesomeProject`.
 
 #### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
 
