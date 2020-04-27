@@ -22,8 +22,6 @@
 
 - [Features](#features)
 - [Build your website in 3 steps](#build-your-website-in-3-steps)
-  - [The easy way (recommended!)](#the-easy-way-recommended)
-  - [The hard way (using ruby gems)](#the-hard-way-using-ruby-gems)
 - [Add your own content](#add-your-own-content)
 - [Last important thing: parameters for each page](#last-important-thing-parameters-for-each-page)
 - [Supported YAML front matter parameters](#supported-yaml-front-matter-parameters)
@@ -49,7 +47,7 @@
 
 ## Build your website in 3 steps
 
-There's a very easy way to use this theme, and there's a hard way. If you're an advanced user and want to tinker with the hard way (using ruby gems), feel free to [skip this section and jump down](#the-hard-way-using-ruby-gems). For most people (including myself), I suggest going the easy route.  
+There's a very easy way to use this theme, and there's a hard way. For most people (including myself!), I suggest going the easy route. If you're an advanced user and want to tinker with the hard way (using ruby gems), then [skip the easy way](https://github.com/daattali/beautiful-jekyll#the-hard-way-using-ruby-gems) if you know what you're doing.
 
 ### The easy way (recommended!)
 
@@ -77,48 +75,10 @@ After you save your changes to the config file (by clicking on *Commit changes* 
 
 Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
-*** If you've reached this point, you should skip over the next section (the hard way of setting up a website) and jump straight to [Add your own content](#add-your-own-content). ***
-
 ### The hard way (using ruby gems)
 
-If you followed the easy method above, then you already have your site and you can skip this section.
+If you followed the easy method above, then you already have your site and you can skip this section. If you want to install beautiful-jekyll using ruby gems, follow the [advanced installation instructions](#https://deanattali.com/beautiful-jekyll/getstarted/#install-steps-hard). 
 
-Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant to be used via forking as described above, but due to high demand it's also available as a Github "remote_theme" and as a Ruby Gem. Apart from the method mentioned above, there are three other ways of using beautiful-jekyll. These are advanced uses and you should only use one of these methods if you know how to write jekyll sites from scratch. You should look up the official documentation for whichever method you want to use, but here are the basics:
-
-- Using `remote_theme` with a GitHub repository
-
-    - Create a new GitHub repository or go to an existing repository
-    - Add `remote_theme: daattali/beautiful-jekyll@2.0.1` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
-    - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source
-    - Your website will be at `https://<yourusername>.github.io\<projectname>`
-
-- Using `remote_theme` with a Ruby Jekyll site
-
-    - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
-    - Create a new jekyll site (e.g. `jekyll new mysite`)
-    - Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin
-    - Add `remote_theme: daattali/beautiful-jekyll@2.0.1` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
-    - Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin
-
-- Using the Beautiful-Jekyll theme gem
-
-    - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
-    - Create a new jekyll site (e.g. `jekyll new mysite`)
-    - Add `gem "beautiful-jekyll-theme", "2.0.1"` to your Gemfile
-    - Add `theme: beautiful-jekyll-theme` to your `_config.yml`
-    - Run `bundle`
-    - You can preview the site using `bundle exec jekyll serve` (optionally with `-H 0.0.0.0` if needed)
-
-If at any point in the future you want to update to a newer version of beautiful-jekyll, you can come back to this page and see if there's a new version. If there is, you can simply update the `remote_theme` or `gem` fields accordingly.
-
-If you use beautiful-jekyll with the "easy way", you'll have direct access to all the files because you'll be copying the project. But if you use one of these three "hard" methods, many of the theme's files and folders will be hidden from you, so you'll need to:
-
-- Go through beautiful-jekyll's `_config.yml` file and copy any settings you want to use into your project's config file.
-- Some config features will not work because of missing files that you'll need to copy from beautiful-jekyll into your project. To enable the `link-tags` feature, you need to copy `tags.html`. To enable the RSS feed, copy `feed.xml`. If you use staticman comments, copy `staticman.yml` and `_data/ui-text.yml`.
-- If you want the home page to include a feed of all blog posts, create an index.html file and use `layout: home` in its YAML.
-- If you want to replace any file served from beautiful-jekyll (such as a CSS file, a layout, or an include), you'll need to place it with the exact same path in your own jekyll repo (e.g. /assets/css/main.css)
-
----
 
 ## Add your own content
 
