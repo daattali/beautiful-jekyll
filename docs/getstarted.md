@@ -40,8 +40,6 @@ See how easy that is? I wasn't lying - it really can be done in two minutes.
   <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/daattali/beautiful-jekyll#readme">Get Started!</a>
 </div>
 
----
-
 <br/><br/>
 
 <div id="install-steps-hard"></div>
