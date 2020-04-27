@@ -128,7 +128,6 @@ google_analytics: "UA-59820529-1"
 # "repository", "branch", and "endpoint".
 # If you want to use reCaptcha for staticman (optional for spam protection), then fill
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
-# If using remote_theme, you will need to copy the _data/ui-text.yml to your repository.
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
