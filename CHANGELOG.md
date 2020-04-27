@@ -4,6 +4,10 @@ This file lists all non-trivial changes to Beautiful Jekyll.
 
 I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
 
+**2020-04-27** Beautiful-Jekyll official ruby gem version 2.0.0, major documentation overhaul
+
+**2020-04-26** Consolidated the demo site, the ruby gem, and the master branch into one
+
 **2020-04-26** Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
 
 **2020-04-25** Added a `home` layout and used it in the index page
