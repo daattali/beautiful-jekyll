@@ -77,7 +77,7 @@ Note that in the video above I only edited one setting in the `_config.yml` file
 
 ### The hard way (using ruby gems)
 
-If you followed the easy method above, then you already have your site and you can skip this section. If you want to install beautiful-jekyll using ruby gems, follow the [advanced installation instructions](#https://deanattali.com/beautiful-jekyll/getstarted/#install-steps-hard). 
+If you followed the easy method above, then you already have your site and you can skip this section. If you want to install beautiful-jekyll using ruby gems, follow the [advanced installation instructions](https://deanattali.com/beautiful-jekyll/getstarted/#install-steps-hard). 
 
 
 ## Add your own content
