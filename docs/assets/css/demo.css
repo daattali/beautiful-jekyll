@@ -1,3 +1,20 @@
+.get-started-wrap {
+  text-align: center;
+}
+.get-started-btn {
+  padding: 15px 30px;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+/* fix in-page anchors to not be behind fixed header */
+:target:before {
+    content: "";
+    display: block;
+    height: 50px; /* navbar height */
+    margin: -50px 0 0;
+}
+
 /* Carbon ads */
 #carbonads {
   display: block;
@@ -55,13 +72,4 @@
   position: absolute;
   right: 0;
   bottom: 0;
-}
-
-.get-started-wrap {
-  text-align: center;
-}
-.get-started-btn {
-  padding: 15px 30px;
-  font-size: 26px;
-  margin-top: 10px;
 }
