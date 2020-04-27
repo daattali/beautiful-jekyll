@@ -226,12 +226,12 @@ Regardless of which of the two methods you choose, after setting up beautiful-je
 
 Below is a summary of the steps required to set up a site with remote themes:
 
-### Remote themes with a GitHub repository
+#### Remote themes with a GitHub repository
 
 - Create a new repository or go to an existing repository.
 - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source (not "master branch /docs folder"!).
 
-### Remote themes with a Ruby Jekyll site
+#### Remote themes with a Ruby Jekyll site
 
 - Create a new jekyll site using `jekyll new <projectname>`.
 - Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin.
