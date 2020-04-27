@@ -116,6 +116,10 @@ Beautiful Jekyll lets you easily add Google Analytics to all your pages. This wi
 
 By default, all blog posts will have buttons at the bottom of the post to allow people to share the current page on Twitter/Facebook/LinkedIn.  You can choose to enable/disable specific social media websites in the `_config.yml` file. You can also turn off the social media buttons on specific blog posts using `social-share: false` in the YAML front matter.
 
+### Advanced features (including how to use a custom URL address for your site)
+
+I wrote [a blog post](https://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
+
 ### Allowing users to leave comments
 
 If you want to enable comments on your site, Beautiful Jekyll supports several different commenting platforms you can choose from: [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), and [Staticman](https://staticman.net). If any of these are set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
@@ -172,10 +176,6 @@ googlefonts | List of Google fonts to include in the page (eg. `["Monoton", "Lob
 - **home** - The home layout is meant to act as the homepage of your blog posts - it will display all your blog posts, sorted from newest to oldest. A file using the `home` layout must be named `index.html` (not `index.md` or anything else!).
 - **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
 - If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
-
-### Advanced features (including how to use a custom URL address for your site)
-
-I wrote [a blog post](https://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
 
 ## Showcased users (success stories!)
 
