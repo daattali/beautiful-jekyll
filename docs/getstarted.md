@@ -42,6 +42,8 @@ See how easy that is? I wasn't lying - it really can be done in two minutes.
 
 ---
 
+<br/><br/>
+
 <div id="install-steps-hard"></div>
 
 ## Installation steps (as a ruby gem - the hard way)
