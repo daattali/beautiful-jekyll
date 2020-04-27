@@ -138,55 +138,18 @@ If you don't include YAML then your file will not use this template.
 
 ## Features
 
-### Mobile-first
-
-**Beautiful Jekyll** is designed to look great on both large-screen and small-screen (mobile) devices. Load up your site on your phone or your gigantic iMac, and the site will work well on both, though it will look slightly different.
-
-### Highly customizable
-
-Many personalization settings in `_config.yml`, such as setting your name and site's description, changing the background colour/image, setting your avatar to add a little image in the navigation bar, and many more.
-
-### Two-level navigation menu
-
-If you have too many pages and your menu is getting cluttered, **Beautiful Jekyll** allows you to separate your menu into two levels for  better page organization.
-
-### Links to your social media
-
-You can easily add links to your email, phone, and all your social media accounts in the footer of every page. You can show as much or as little information as you want.
-
-### Adding Google Analytics to track page views
-
-Beautiful Jekyll lets you easily add Google Analytics to all your pages. This will let you track all sorts of information about visits to your website, such as how many times each page is viewed and where (geographically) your users come from.  To add Google Analytics, simply sign up to [Google Analytics](https://www.google.com/analytics/) to obtain your Google Tracking ID, and add this tracking ID to the `google_analytics` parameter in `_config.yml`.
-
-### Sharing blog posts on social media
-
-By default, all blog posts will have buttons at the bottom of the post to allow people to share the current page on Twitter/Facebook/LinkedIn.  You can choose to enable/disable specific social media websites in the `_config.yml` file. You can also turn off the social media buttons on specific blog posts using `social-share: false` in the YAML front matter.
-
-### Advanced features (including how to use a custom URL address for your site)
-
-I wrote [a blog post](https://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that are applicable to any Jekyll site.  It describes how I used a custom URL for my site (deanattali.com instead of daattali.github.io), how to add a Google-powered search into your site, and provides a few more details about having an RSS feed.
-
-### Allowing users to leave comments
-
-If you want to enable comments on your site, Beautiful Jekyll supports several different commenting platforms you can choose from: [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), and [Staticman](https://staticman.net). If any of these are set in the configuration file, then all blog posts will have comments turned on by default. To turn off comments on a particular blog post, add `comments: false` to the YAML front matter. If you want to add comments on the bottom of a non-blog page, add `comments: true` to the YAML front matter.
-
-#### Disqus comments
-
-To use Disqus, simply sign up to [Disqus](https://disqus.com/) and add your Disqus shortname to the `disqus` parameter in the `_config.yml` file.
-
-#### Facebook comments
-
-To use Facebook comments, create a Facebook app using [Facebook developers](https://developers.facebook.com/docs/apps/register), and add the Facebook App ID to the `fb_comment_id` parameter in `_config.yml`.
-
-#### Utterances comments 
-
-To use [Utterances comments](https://utteranc.es/), follow these steps: (1) Enable Issues in your GitHub repository, (2) Install the Utterances app in your repository (go to https://github.com/apps/utterances), (3) Fill in the `repository` parameter in the utterances section of the `_config.yml` file.
-
-#### Staticman comments
-
-To use Staticman, you first need to invite `staticmanlab` as a collaborator to your repository (by going to your repository **Settings** page, navigate to the **Collaborators** tab, and add the username `staticmanlab`), and then accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`. Lastly, fill in the `staticman` parameters in the Staticman section of `_config.yml`. You may also choose a different Staticman instance other than `staticmanlab`.
-
-Optional: You may want to configure a webhook to prevent old inactive branches (representing approved comments) from stacking up.  You can refer to [Staticman's documentation](https://staticman.net/docs/webhooks) for details.  Make sure to input the **Payload URL** according to your chosen `endpoint`.  For example, the default `endpoint` is `https://staticman3.herokuapp.com/v3/entry/github/`, so the corresponding **Payload URL** should be `https://staticman3.herokuapp.com/v1/webhook`.
+- **Mobile-first**: Designed to look great on both large-screen and small-screen (mobile) devices.   
+- **Highly customizable**: Many personalization settings such as changing the background colour/image, adding a logo.  
+- **Two-level navigation menu**: If you have many pages and your menu is getting cluttered, separate your menu into two levels.
+- **Flexible usage**: Install Beautiful Jekyll directly from GitHub or using a Ruby gem - choose the right [development method](#build-your-website-in-3-steps) for you.  
+- **Battle-tested**:  By using Beautiful Jekyll, you'll be joining tens of thousands of users who used this theme since 2015.  
+- **Links to your social media**: You can easily add links to any of your social media accounts in the footer of every page.  
+- **Comments support**: Add comments to any page using one of the supported commenting platforms: [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).  
+- **Sharing blog posts on social media**: By default, all blog posts have buttons to allow people to share on Twitter/Facebook/LinkedIn.  
+- **Tags**: Any blog post can be tagged with keywords, and an index page showing all the tags is automatically generated.
+- **Tracking analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.  
+- **Photos support**: Any page can have a cover photo around its title, and any blog post can have an associated image.  
+- **More advanced features**: I wrote [a blog post](https://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that can be used in any beautiful-jekyll site.
 
 ## Supported YAML front matter parameters
 
