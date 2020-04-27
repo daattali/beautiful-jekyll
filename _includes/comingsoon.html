@@ -16,7 +16,7 @@ hr {
 
 <div class="bgimg">
     <div class="flex-item">
-        <h1 id="warning">COMING SOON</h1>
+        <h1>COMING SOON</h1>
         <hr>
         <p id="demo"></p>
     </div>
@@ -48,8 +48,8 @@ var x = setInterval(function() {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("warning").style.display = "none";
-        document.getElementById("demo").innerHTML = "COMING SOON";
+        document.getElementById("demo").style.display = "none";
+        document.getElementById("demo").innerHTML = "";
     }
 }, 1000);
 </script>
