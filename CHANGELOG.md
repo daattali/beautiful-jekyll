@@ -1,8 +1,6 @@
 # CHANGELOG
 
-This file lists all non-trivial changes to Beautiful Jekyll.
-
-I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
+This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
 **2020-04-27** Beautiful-Jekyll official ruby gem version 2.0.0, major documentation overhaul
 
