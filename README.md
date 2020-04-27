@@ -72,7 +72,7 @@ Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant 
 - Using `remote_theme` with a GitHub repository
 
     - Create a new GitHub repository or go to an existing repository
-    - Add `remote_theme: daattali/beautiful-jekyll@2.0.0` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
+    - Add `remote_theme: daattali/beautiful-jekyll@2.0.1` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
     - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source
     - Your website will be at `https://<yourusername>.github.io\<projectname>`
 
@@ -81,17 +81,19 @@ Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant 
     - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
     - Create a new jekyll site (e.g. `jekyll new mysite`)
     - Add `gem "jekyll-remote-theme"` to your Gemfile and then run `bundle install` to install the plugin
-    - Add `remote_theme: daattali/beautiful-jekyll@2.0.0` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
+    - Add `remote_theme: daattali/beautiful-jekyll@2.0.1` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
     - Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin
 
 - Using the Beautiful-Jekyll theme gem
 
     - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
     - Create a new jekyll site (e.g. `jekyll new mysite`)
-    - Add `gem "beautiful-jekyll-theme", "2.0.0"` to your Gemfile
+    - Add `gem "beautiful-jekyll-theme", "2.0.1"` to your Gemfile
     - Add `theme: beautiful-jekyll-theme` to your `_config.yml`
     - Run `bundle`
     - You can preview the site using `bundle exec jekyll serve` (optionally with `-H 0.0.0.0` if needed)
+
+If at any point in the future you want to update to a newer version of beautiful-jekyll, you can come back to this page and see if there's a new version. If there is, you can simply update the `remote_theme` or `gem` fields accordingly.
 
 If you use beautiful-jekyll with the "easy way", you'll have direct access to all the files because you'll be copying the project. But if you use one of these three "hard" methods, many of the theme's files and folders will be hidden from you, so you'll need to:
 
