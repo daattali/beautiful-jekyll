@@ -2,6 +2,8 @@
 
 This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
+**2020-04-27** Upgrade gem to 2.0.1 to improve some documentation
+
 **2020-04-27** Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
 
 **2020-04-27** Major documentation overhaul and cleanup of old files 
