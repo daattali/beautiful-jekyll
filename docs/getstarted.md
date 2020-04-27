@@ -52,14 +52,14 @@ Beautiful-Jekyll was initially developed as a GitHub Pages theme that was meant 
 
 There are three other ways of using beautiful-jekyll. These are advanced uses and you should only use one of these methods if you know how to write jekyll sites from scratch. You should look up the official documentation for whichever method you want to use, but here are the basics:
 
-- Using `remote_theme` with a GitHub repository
+- Method 1: Using `remote_theme` with a GitHub repository
 
     - Create a new GitHub repository or go to an existing repository
     - Add `remote_theme: daattali/beautiful-jekyll@2.0.1` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
     - Go to _Settings_, scroll down to the _GitHub Pages_ section, and choose "master branch" as the source
     - Your website will be at `https://<yourusername>.github.io\<projectname>`
 
-- Using `remote_theme` with a Ruby Jekyll site
+- Method 2: Using `remote_theme` with a Ruby Jekyll site
 
     - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
     - Create a new jekyll site (e.g. `jekyll new mysite`)
@@ -67,7 +67,7 @@ There are three other ways of using beautiful-jekyll. These are advanced uses an
     - Add `remote_theme: daattali/beautiful-jekyll@2.0.1` to your `_config.yml` file (make sure to remove any previous `theme` or `remote_theme` parameters that may have been there before)
     - Add `- jekyll-remote-theme` to the plugins section of your `_config.yml` file to activate the plugin
 
-- Using the Beautiful-Jekyll theme gem
+- Method 3: Using the Beautiful-Jekyll theme gem
 
     - Install Ruby and Jekyll (`sudo apt-get install ruby ruby-dev make gcc` and `sudo gem install jekyll bundler`)
     - Create a new jekyll site (e.g. `jekyll new mysite`)
