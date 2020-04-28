@@ -739,6 +739,37 @@ var main = {
           })
           .value();
 
+        // render common legend
+        Highcharts.chart("covi-heatmap-legend", {
+          chart: {
+            type: "heatmap",
+            height: 120,
+            marginTop: 0,
+            marginBottom: 0
+          },
+          title: false,
+          yAxis: {
+            height: 0
+          },
+          colorAxis: {
+            min: 1,
+            max: 50,
+            stops: [
+              [0, "#eee"],
+              [0.25, "#ffcb70"],
+              [0.5, "#feaf4b"],
+              [0.75, "#fb923d"],
+              [1, "#e03131"],
+            ],
+          },
+          legend: {
+            layout: 'horizontal',
+            align: "left",
+            verticalAlign: "top"
+          },
+          tooltip: false,
+        });
+
         renderHeatmap(data, HOKKAIDO_TOHOKU, LIMIT);
         renderHeatmap(data, KANTO_KOSHINETSU, LIMIT);
         renderHeatmap(data, TOKAI_HOKURIKU, LIMIT);
@@ -762,7 +793,13 @@ function renderHeatmap(data, areaObject, LIMIT) {
   const filtered = _.chain(data)
     .filter((d) => _.includes(areaObject.prefs, d.prefecture))
     .value();
-  const dates = _.chain(filtered).map("value").first().keys().value();
+  const dates = _.chain(filtered)
+    .map("value")
+    .first()
+    .keys()
+    .mapValues((d) => moment(`2020/${d}`).format("DD/MM"))
+    .values()
+    .value();
   let seriesData = [];
   filtered.forEach((f, idx) => {
     const values = _.values(f.value);
@@ -775,24 +812,43 @@ function renderHeatmap(data, areaObject, LIMIT) {
   Highcharts.chart(`heatmap-cases-changes-${areaObject.id}`, {
     chart: {
       type: "heatmap",
-      marginTop: 40,
-      marginBottom: 80,
       plotBorderWidth: 1,
-      height: areaObject.prefs.length * 48
+      height: areaObject.prefs.length * 20 + 100,
     },
     boost: {
-      useGPUTranslations: true
+      useGPUTranslations: true,
     },
     title: {
       text: areaObject.label,
       align: "left",
     },
-    xAxis: {
-      categories: dates,
-      showLastLabel: true,
-      min: dates.length - 1 - LIMIT,
-      max: dates.length - 1
-    },
+    xAxis: [
+      {
+        categories: dates,
+        showLastLabel: true,
+        min: dates.length - 1 - LIMIT,
+        max: dates.length - 1,
+        tickWidth: 1,
+        tickInterval: 15,
+        labels: {
+          autoRotation: false,
+        },
+      },
+      {
+        categories: dates,
+        showLastLabel: true,
+        endOnTick: true,
+        min: dates.length - 1 - LIMIT,
+        max: dates.length - 1,
+        tickWidth: 1,
+        tickInterval: 15,
+        labels: {
+          autoRotation: false,
+        },
+        linkedTo: 0,
+        opposite: true,
+      },
+    ],
     yAxis: {
       categories: areaObject.prefs,
       title: null,
@@ -806,9 +862,9 @@ function renderHeatmap(data, areaObject, LIMIT) {
       max: 50,
       stops: [
         [0, "#eee"],
-        [0.25, "#FFCB70"],
-        [0.5, "#FEAF4B"],
-        [0.75, "#FB923D"],
+        [0.25, "#ffcb70"],
+        [0.5, "#feaf4b"],
+        [0.75, "#fb923d"],
         [1, "#e03131"],
       ],
     },
