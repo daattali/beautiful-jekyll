@@ -2,6 +2,8 @@
 
 This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
+**2020-04-28** Add YAML option `nav-short` to have navbar permanently collapsed
+
 **2020-04-28** Add social network link: Calendly
 
 **2020-04-28** Fix bug where RSS link in footer was showing even when turned off

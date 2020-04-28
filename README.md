@@ -128,6 +128,7 @@ image       | If you want to add a personalized image to your blog post that wil
 readtime    | If you want to show how many minutes it will take to read a post in the header, add `readtime: true`.
 share-img   | If you want to specify an image to use when sharing the page on Facebook or Twitter, then provide the image's full URL here.
 social-share | If you don't want to show buttons to share a blog post on social media, use `social-share: false` (this feature is turned on by default).
+nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true` 
 use-site-title | If you want to use the site title rather than page title as HTML document title (ie. browser tab title), use `use-site-title: true`. When set, the document title will take the format `Site Title - Site Description` (eg. `My website - A virtual proof that name is awesome!`). By default, it will use `Page Title` if it exists, or `Site Title` otherwise.
 language    | HTML language code to be set on &lt;html&gt; element (see [W3Schools website](https://www.w3schools.com/tags/ref_language_codes.asp) for more info on this topic).  Language can also be set site-wide in `_config.yml`.
 layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information. 
