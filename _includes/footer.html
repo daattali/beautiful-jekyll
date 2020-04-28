@@ -1,5 +1,5 @@
 <footer>
-  <div class="container beautiful-jekyll-footer">
+  <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
@@ -15,7 +15,7 @@
             {%- endif -%}
             <li>
               <a href="{{ url }}" title="{{ element.name }}">
-                <span class="fa-stack fa-lg" aria-hidden="true">
+                <span class="fa-stack" aria-hidden="true">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="{{ element.icon }} fa-stack-1x fa-inverse"></i>
                 </span>
@@ -24,9 +24,7 @@
             </li>
           {%- endfor -%}
         </ul>
-      <p class="copyright text-muted">
-      {{ site.author.name }}
-      &nbsp;&bull;&nbsp;
+      <p class="copyright text-center">
       {{ site.time | date: '%Y' }}
 
       {% if site.url-pretty %}
@@ -34,18 +32,6 @@
       <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
       {% endif %}
 
-      {% if site.matomo %}
-        {% if site.matomo.opt-out %}
-          &nbsp;&bull;&nbsp;
-          <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
-        {% endif %}
-      {% endif%}
-      </p>
-          <!-- Please don't remove this, keep my open source work credited :) -->
-    <p class="theme-by text-muted">
-      Theme by
-      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    </p>
       </div>
     </div>
   </div>

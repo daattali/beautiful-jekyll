@@ -1,0 +1,67 @@
+<div class="row covi-posts">
+  {% for post in include.posts limit: include.limit %}
+  <div class="col-md-12">
+    <div class="media covi-post">
+      <div class="media-left">
+        <a
+          class="covi-post__thumbnail"
+          href="{{ post.url | relative_url }}"
+        >
+          {% if post.thumbnail %}
+          <div
+            class="media-object embed-responsive embed-responsive-1by1"
+            style="
+              background-image: url({{post.thumbnail}});
+              background-position: center;
+              background-size: cover;
+              width: 128px;
+            "
+          >
+            <img
+              src="{{post.thumbnail}}"
+              alt="{{post.title}}"
+              width="0"
+              height="0"
+            />
+          </div>
+          {% else %}
+          <div
+            class="media-object embed-responsive embed-responsive-1by1"
+            style="
+              background-image: url(/img/placeholder.png);
+              background-position: center;
+              background-size: cover;
+              width: 128px;
+            "
+          >
+            <img
+              src="/img/placeholder.png"
+              alt="{{post.title}}"
+              width="0"
+              height="0"
+            />
+          </div>
+          {% endif %}
+        </a>
+      </div>
+      <div class="media-body">
+        <a class="covi-post__title" href="{{ post.url | relative_url }}">
+          <h4 class="media-heading">{{post.title}}</h4>
+        </a>
+        <a class="covi-post__desc" href="{{ post.url | relative_url }}">
+          {{ post.excerpt | strip_html | xml_escape | truncatewords:
+          site.excerpt_length }}
+        </a>
+        <div class="covi-post__meta">
+          <span>{{ post.date | date: site.date_format }}</span>
+        </div>
+        {% if post.tags.size > 0 %}
+        <span class="covi-post__tags">
+          {{ post.tags | join: " / " }}
+        </span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
