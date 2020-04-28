@@ -3,6 +3,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       {% include social-networks-links.html %}
+      {% if page.footer-extra %}
+        <div class="footer-custom-content">
+          {% include {{ page.footer-extra }} %}
+        </div>
+      {% endif %}
       <p class="copyright text-muted">
       {% if site.author %}
       {{ site.author }}
