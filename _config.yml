@@ -12,11 +12,12 @@ author: OpenStopCovid
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Us: "aboutus"
+  A propos: "aboutus"
+  Infos: "README"
   Resources:
-    - Mobile app : "https://github.com/fmauquie/react-native-dp3t"
-    - Authority Backend: "https://github.com/OpenStopCovid/dp3t-ms"
-    - Authority UI: "https://github.com/OpenStopCovid/health-authority-ui"
+    - Application mobile: "https://github.com/fmauquie/react-native-dp3t"
+    - Serveur de l'application: "https://github.com/OpenStopCovid/dp3t-ms"
+    - Interface médecin: "https://github.com/OpenStopCovid/health-authority-ui"
     - Specifications: "https://github.com/DP-3T/documents/blob/master/DP3T%20White%20Paper.pdf"
     - Documentation: "https://github.com/DP-3T/documents"
   Press Kit: "presskit"
@@ -207,7 +208,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
   - Vagrantfile
 
 # prose.io config

@@ -1,23 +1,11 @@
 ---
 layout: page
 title: OpenStopCovid
-subtitle: An Open Source contact-tracing mobile application<br>for lifting the lockdown
+subtitle: Le traçage numérique éthique pour lutter contre Covid19
 use-site-title: true
 ---
 
-<div class="main-explain-area jumbotron">
-    <p>
-    As the containment of 3 billion people is nearing completion, a mobile application can limit the emergence of a second wave. By recording the proximity of its users, it can calculate a risk score.
-    <br>
-    <br>
-    Some suggest that this calculation should be done by companies or authorities. Instead, we propose to <b>perform your own calculation, for yourself, in your smartphone</b>. This way, your personal data will never escape your control.
-    </p>
-    <div class="get-started-wrap">
-        <a class="btn btn-success btn-lg get-started-btn" href="https://github.com/guillaumefe/guillaumefe.github.io/issues">Ask questions!</a>
-        <a class="btn btn-primary btn-lg get-started-btn" href="https://github.com/OpenStopCovid">Get involved</a>
-    </div>
-    <p>OpenStopCovid is designed to respect your privacy.</p>
-</div>
+{% include jumbotron.html %}
 
 <div class="posts-list">
   {% for post in paginator.posts %}
