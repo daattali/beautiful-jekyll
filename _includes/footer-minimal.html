@@ -1,7 +1,9 @@
 <footer class="footer-min">
   <div class="text-muted">
-	{{ site.author.name }}
+	{% if site.author %}
+	{{ site.author }}
 	&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+	{% endif %}
 	{% if page.date %}
 	  {{ page.date }}
 	{% else %}

@@ -1,8 +1,44 @@
 # CHANGELOG
 
-This file lists all non-trivial changes to Beautiful Jekyll.
+This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
-I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
+**2020-04-29** Upgrade gem to 2.3.0 to include all new features
+
+**2020-04-28** Add YAML option `footer-extra` for including custom content in the footer
+
+**2020-04-28** Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
+
+**2020-04-28** Add YAML option `nav-short` to have navbar permanently collapsed
+
+**2020-04-28** Add social network link: Calendly
+
+**2020-04-28** Fix bug where RSS link in footer was showing even when turned off
+
+**2020-04-27** Upgrade gem to 2.2.0 to improve some documentation and fix small bugs from remote_theme migration
+
+**2020-04-27** Moved the demo site to an independent URL: https://beautifuljekyll.com 
+
+**2020-04-27** Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
+
+**2020-04-27** Major documentation overhaul and cleanup of old files 
+
+**2020-04-26** Beautiful-Jekyll official ruby gem version 2.0.0
+
+**2020-04-26** Consolidated the demo site, the ruby gem, and the master branch into one
+
+**2020-04-26** Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
+
+**2020-04-25** Added a `home` layout and used it in the index page
+
+**2020-04-24** Adding readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
+
+**2020-04-23** Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
+
+**2020-04-22** Add support for configuring lang attribute on &lt;html&gt; tag (#608) (thanks @skalee)
+
+**2020-04-18** Add ability to disable round logo (thanks @gpotter2)
+
+**2020-04-01** Add support for Utterances comments (#596) (thanks @colynn)
 
 **2020-03-23** Remove just-comments as it's getting killed at the end of the year
 
