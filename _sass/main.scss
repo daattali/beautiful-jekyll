@@ -395,3 +395,24 @@ a.btn-social-icon:hover {
 .pager.blog-pager .previous a {
   border: none;
 }
+
+/* heatmap in data page */
+@media (min-width: 768px) {
+  .covi-heatmap-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1000px;
+  }
+  .covi-heatmap-panel {
+    width: calc((100% - 1px) / 2);
+  }
+}
+@media (min-width: 1025px) {
+  .covi-heatmap-wrapper {
+    max-height: 730px;
+  }
+  .covi-heatmap-panel {
+    width: calc((100% - 1px) / 3);
+  }
+}

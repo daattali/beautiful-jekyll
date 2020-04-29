@@ -136,6 +136,9 @@ var main = {
 
     // get statistics
     main.getStatisticsData();
+
+    // show cases changes heatmap
+    main.initHeatmapCasesChanges();
   },
 
   initFirebase: function () {
@@ -255,12 +258,12 @@ var main = {
 
         // prepare data to render
         const updatedAt = _.chain(responseData)
-        .first()
-        .omit(["Tỉnh/Thành phố", "Tổng"])
-        .keys()
-        .map(d => moment(`2020/${d}`))
-        .max()
-        .value();
+          .first()
+          .omit(["Tỉnh/Thành phố", "Tổng"])
+          .keys()
+          .map((d) => moment(`2020/${d}`))
+          .max()
+          .value();
 
         // Create the chart
         Highcharts.mapChart("map-jp-overview", {
@@ -411,7 +414,7 @@ var main = {
             max: 10,
             scrollbar: {
               enabled: true,
-              liveRedraw: true
+              liveRedraw: true,
             },
           },
           yAxis: {
@@ -467,47 +470,47 @@ var main = {
           .reverse()
           .value();
 
-          Highcharts.chart("graph-byward-osaka", {
-            chart: {
-              type: "column",
+        Highcharts.chart("graph-byward-osaka", {
+          chart: {
+            type: "column",
+          },
+          legend: {
+            enabled: false,
+          },
+          title: {
+            text: `Số bệnh nhân theo quận`,
+          },
+          subtitle: {
+            text: `Nguồn: <a href="https://covid19-osaka.info/">Chính quyền thành phố Osaka</a>`,
+          },
+          xAxis: {
+            categories: _.map(data, "location"),
+            min: 0,
+            max: 10,
+            scrollbar: {
+              enabled: true,
+              liveRedraw: true,
             },
-            legend: {
-              enabled: false,
+          },
+          yAxis: {
+            min: 0,
+            max: _.max(_.map(data, "count")),
+            title: false,
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0,
             },
-            title: {
-              text: `Số bệnh nhân theo quận`,
+          },
+          series: [
+            {
+              name: "Số bệnh nhân",
+              data: _.map(data, "count"),
+              color: "rgba(255,159,64,1)",
             },
-            subtitle: {
-              text: `Nguồn: <a href="https://covid19-osaka.info/">Chính quyền thành phố Osaka</a>`,
-            },
-            xAxis: {
-              categories: _.map(data, "location"),
-              min: 0,
-              max: 10,
-              scrollbar: {
-                enabled: true,
-                liveRedraw: true
-              },
-            },
-            yAxis: {
-              min: 0,
-              max: _.max(_.map(data, "count")),
-              title: false,
-            },
-            plotOptions: {
-              column: {
-                pointPadding: 0.2,
-                borderWidth: 0,
-              },
-            },
-            series: [
-              {
-                name: "Số bệnh nhân",
-                data: _.map(data, "count"),
-                color: "rgba(255,159,64,1)",
-              },
-            ],
-          });
+          ],
+        });
       }
     } catch (error) {
       // TODO: error handler
@@ -542,47 +545,47 @@ var main = {
           .reverse()
           .value();
 
-          Highcharts.chart("graph-byward-saitama", {
-            chart: {
-              type: "column",
+        Highcharts.chart("graph-byward-saitama", {
+          chart: {
+            type: "column",
+          },
+          legend: {
+            enabled: false,
+          },
+          title: {
+            text: `Số bệnh nhân theo quận`,
+          },
+          subtitle: {
+            text: `Nguồn: <a href="https://saitama.stopcovid19.jp/">Chính quyền thành phố Saitama</a>`,
+          },
+          xAxis: {
+            categories: _.map(data, "location"),
+            min: 0,
+            max: 10,
+            scrollbar: {
+              enabled: true,
+              liveRedraw: true,
             },
-            legend: {
-              enabled: false,
+          },
+          yAxis: {
+            min: 0,
+            max: _.max(_.map(data, "count")),
+            title: false,
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0,
             },
-            title: {
-              text: `Số bệnh nhân theo quận`,
+          },
+          series: [
+            {
+              name: "Số bệnh nhân",
+              data: _.map(data, "count"),
+              color: "rgba(255,159,64,1)",
             },
-            subtitle: {
-              text: `Nguồn: <a href="https://saitama.stopcovid19.jp/">Chính quyền thành phố Saitama</a>`,
-            },
-            xAxis: {
-              categories: _.map(data, "location"),
-              min: 0,
-              max: 10,
-              scrollbar: {
-                enabled: true,
-                liveRedraw: true
-              },
-            },
-            yAxis: {
-              min: 0,
-              max: _.max(_.map(data, "count")),
-              title: false,
-            },
-            plotOptions: {
-              column: {
-                pointPadding: 0.2,
-                borderWidth: 0,
-              },
-            },
-            series: [
-              {
-                name: "Số bệnh nhân",
-                data: _.map(data, "count"),
-                color: "rgba(255,159,64,1)",
-              },
-            ],
-          });
+          ],
+        });
       }
     } catch (error) {
       // TODO: error handler
@@ -609,24 +612,290 @@ var main = {
       });
 
       // print out statistics
-      $("[data-id='total_cases']").text(responseData["total_cases"].toLocaleString());
-      $("[data-id='total_cases_changes']").text(`(+${responseData["total_cases_changes"].toLocaleString()})`);
-      $("[data-id='discharged']").text(responseData["discharged"].toLocaleString());
-      $("[data-id='discharged_changes']").text(`(+${responseData["discharged_changes"].toLocaleString()})`);
+      $("[data-id='total_cases']").text(
+        responseData["total_cases"].toLocaleString()
+      );
+      $("[data-id='total_cases_changes']").text(
+        `(+${responseData["total_cases_changes"].toLocaleString()})`
+      );
+      $("[data-id='discharged']").text(
+        responseData["discharged"].toLocaleString()
+      );
+      $("[data-id='discharged_changes']").text(
+        `(+${responseData["discharged_changes"].toLocaleString()})`
+      );
       $("[data-id='death']").text(responseData["death"].toLocaleString());
-      $("[data-id='death_changes']").text(`(+${responseData["death_changes"].toLocaleString()})`);
-      $("[data-id='statistics-updated-at']").text(`Cập nhật lúc ${moment(metadata.updated).format("HH:mm DD/MM/YYYY")}.`);
-
+      $("[data-id='death_changes']").text(
+        `(+${responseData["death_changes"].toLocaleString()})`
+      );
+      $("[data-id='statistics-updated-at']").text(
+        `Cập nhật lúc ${moment(metadata.updated).format("HH:mm DD/MM/YYYY")}.`
+      );
     } catch (error) {
       // TODO: error handler
       console.error(error);
     }
-  }
+  },
+
+  initHeatmapCasesChanges: async function () {
+    const storage = firebase.storage();
+
+    const HOKKAIDO_TOHOKU = {
+      id: "hokkaido_tohoku",
+      label: "Hokkaido + Tohoku",
+      prefs: [
+        "Hokkaido",
+        "Aomori",
+        "Iwate",
+        "Miyagi",
+        "Akita",
+        "Yamagata",
+        "Fukushima",
+      ],
+    };
+    const KANTO_KOSHINETSU = {
+      id: "kanto_koshinetsu",
+      label: "Kanto + Koshinetsu",
+      prefs: [
+        "Ibaraki",
+        "Tochigi",
+        "Gunma",
+        "Saitama",
+        "Chiba",
+        "Tokyo",
+        "Kanagawa",
+        "Niigata",
+        "Yamanashi",
+        "Nagano",
+      ],
+    };
+    const TOKAI_HOKURIKU = {
+      id: "tokai_hokuriku",
+      label: "Tokai + Hokuriku",
+      prefs: [
+        "Toyama",
+        "Ishikawa",
+        "Fukui",
+        "Gifu",
+        "Shizuoka",
+        "Aichi",
+        "Mie",
+      ],
+    };
+    const KINKI = {
+      id: "kinki",
+      label: "Kinki",
+      prefs: ["Shiga", "Kyoto", "Osaka", "Hyogo", "Nara", "Wakayama"],
+    };
+    const CHUGOKU = {
+      id: "chugoku",
+      label: "Chugoku",
+      prefs: ["Tottori", "Shimane", "Okayama", "Hiroshima", "Yamaguchi"],
+    };
+    const SHIKOKU = {
+      id: "shikoku",
+      label: "Shikoku",
+      prefs: ["Tokushima", "Kagawa", "Ehime", "Kochi"],
+    };
+    const KYUSHU_OKINAWA = {
+      id: "kyushu_okinawa",
+      label: "Kyushu + Okinawa",
+      prefs: [
+        "Fukuoka",
+        "Saga",
+        "Nagasaki",
+        "Kumamoto",
+        "Oita",
+        "Miyazaki",
+        "Kagoshima",
+        "Okinawa",
+      ],
+    };
+
+    if ($(".heatmap-cases-changes").length > 0) {
+      try {
+        // load data from firebase storage
+        const fileRef = storage.ref("prefecture-by-date.json");
+        const url = await fileRef.getDownloadURL().catch((e) => {
+          throw e;
+        });
+        const metadata = await fileRef.getMetadata().catch((e) => {
+          throw e;
+        });
+        const response = await fetch(url).catch((e) => {
+          throw e;
+        });
+        const responseData = await response.json().catch((e) => {
+          throw e;
+        });
+        const data = _.chain(responseData)
+          .mapValues((value, key) => {
+            return {
+              prefecture: value["Tỉnh/Thành phố"],
+              value: _.chain(value).omit(["Tỉnh/Thành phố", "Tổng"]).value(),
+            };
+          })
+          .value();
+
+        // render common legend
+        Highcharts.chart("covi-heatmap-legend", {
+          chart: {
+            type: "heatmap",
+            height: 120,
+            marginTop: 0,
+            marginBottom: 0,
+          },
+          title: false,
+          yAxis: {
+            height: 0,
+          },
+          colorAxis: {
+            min: 1,
+            max: 50,
+            stops: [
+              [0, "#eee"],
+              [0.25, "#ffcb70"],
+              [0.5, "#feaf4b"],
+              [0.75, "#fb923d"],
+              [1, "#e03131"],
+            ],
+          },
+          legend: {
+            layout: "horizontal",
+            align: "left",
+            verticalAlign: "top",
+          },
+          tooltip: false,
+        });
+
+        renderHeatmap(data, HOKKAIDO_TOHOKU);
+        renderHeatmap(data, KANTO_KOSHINETSU);
+        renderHeatmap(data, TOKAI_HOKURIKU);
+        renderHeatmap(data, KINKI);
+        renderHeatmap(data, CHUGOKU);
+        renderHeatmap(data, SHIKOKU);
+        renderHeatmap(data, KYUSHU_OKINAWA);
+      } catch ($error) {
+        console.error($error);
+      }
+    }
+  },
 };
 
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener("DOMContentLoaded", main.init);
+
+function renderHeatmap(data, areaObject) {
+  const LIMIT = 90;
+
+  // get render data
+  const filtered = _.chain(data)
+    .filter((d) => _.includes(areaObject.prefs, d.prefecture))
+    .value();
+  const dates = _.chain(filtered)
+    .map("value")
+    .first()
+    .keys()
+    .mapValues((d) => moment(`2020/${d}`).format("DD/M"))
+    .values()
+    .value();
+  let seriesData = [];
+  filtered.forEach((f, idx) => {
+    const values = _.values(f.value);
+    values.forEach((v, k) => {
+      seriesData.push([k, idx, v]);
+    });
+  });
+
+  // render
+  Highcharts.chart(`heatmap-cases-changes-${areaObject.id}`, {
+    chart: {
+      type: "heatmap",
+      plotBorderWidth: 1,
+      height: areaObject.prefs.length * 20 + 100,
+    },
+    boost: {
+      useGPUTranslations: true,
+    },
+    title: {
+      text: areaObject.label,
+      align: "left",
+    },
+    xAxis: [
+      {
+        type: "category",
+        categories: dates,
+        showLastLabel: true,
+        startOnTick: true,
+        endOnTick: true,
+        min: dates.length - 1 - LIMIT,
+        max: dates.length - 1,
+        tickWidth: 1,
+        tickPositions: [
+          dates.length - 1 - LIMIT,
+          dates.length - 1 - LIMIT + Math.round(LIMIT / 3),
+          dates.length - 1 - LIMIT + 2 * Math.round(LIMIT / 3),
+          dates.length - 1,
+        ],
+        labels: {
+          autoRotation: false,
+        },
+      },
+      {
+        type: "category",
+        categories: dates,
+        showLastLabel: true,
+        startOnTick: true,
+        endOnTick: true,
+        min: dates.length - 1 - LIMIT,
+        max: dates.length - 1,
+        tickWidth: 1,
+        tickPositions: [
+          dates.length - 1 - LIMIT,
+          dates.length - 1 - LIMIT + Math.round(LIMIT / 3),
+          dates.length - 1 - LIMIT + 2 * Math.round(LIMIT / 3),
+          dates.length - 1,
+        ],
+        labels: {
+          autoRotation: false,
+        },
+        linkedTo: 0,
+        opposite: true,
+      },
+    ],
+    yAxis: {
+      categories: areaObject.prefs,
+      title: null,
+      reversed: true,
+      tickWidth: 1,
+      min: 0,
+      max: areaObject.prefs.length - 1,
+    },
+    colorAxis: {
+      min: 1,
+      max: 50,
+      stops: [
+        [0, "#eee"],
+        [0.25, "#ffcb70"],
+        [0.5, "#feaf4b"],
+        [0.75, "#fb923d"],
+        [1, "#e03131"],
+      ],
+    },
+    legend: false,
+    tooltip: false,
+    series: [
+      {
+        borderWidth: 1,
+        borderColor: "#fff",
+        data: seriesData,
+        tooltip: false,
+        turboThreshold: Number.MAX_VALUE,
+      },
+    ],
+  });
+}
 
 function renderDailyGraph(responseData, prefName, graphId) {
   const data = _.chain(responseData)
