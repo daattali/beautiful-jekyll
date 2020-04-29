@@ -254,6 +254,20 @@ Command | Description
 
 # Basic Forensics Commands
 
+# Set a forensics alias.... to you know, forensicate
+open your `~/.bashrc`
+
+add the following line to the end
+
+
+![bash](https://angry-bender.github.io/img/lt/bash.png)
+
+`alias forensicate="sort | uniq -c | sort -nr`
+
+then, after using an awk, or any method of reducing data down to a single character, pipe it to forensicate, and get your quick wins
+
+![forensicate](https://angry-bender.github.io/img/lt/forensicate.png)
+
 ## Grep
 
 Command | Description
