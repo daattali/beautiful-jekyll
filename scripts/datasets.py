@@ -158,7 +158,7 @@ class JsonDataset(Dataset):
 
 
 class PdfDataset(Dataset):
-    def __init__(self, url, name, data_key=None, pages='all', include_header=True, **kwargs):
+    def __init__(self, url, name, pages='all', include_header=True, **kwargs):
         super().__init__(url, name)
         self.pages = pages
         self.include_header = include_header
@@ -166,9 +166,10 @@ class PdfDataset(Dataset):
 
     def _create_dataframe(self):
         if self.include_header:
-            dfs = tabula.read_pdf(self.url, pages=self.pages, **self.kwargs)
+            df = tabula.read_pdf(self.url, pages=self.pages, **self.kwargs)
         else:
-            dfs = tabula.read_pdf(self.url, pages=self.pages, pandas_options={'header': None}, **self.kwargs)
+            df = tabula.read_pdf(self.url, pages=self.pages, pandas_options={'header': None}, **self.kwargs)
 
-        df = pd.concat(dfs).reset_index()
-        return df
+        if isinstance(df, list):
+            df = pd.concat(df)
+        return df.reset_index()
