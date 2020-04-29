@@ -2,6 +2,8 @@
 
 This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
+**2020-04-29** Upgrade gem to 2.3.0 to include all new features
+
 **2020-04-28** Add YAML option `footer-extra` for including custom content in the footer
 
 **2020-04-28** Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
