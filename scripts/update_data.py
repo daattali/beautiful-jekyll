@@ -2,6 +2,7 @@ import json
 import re
 import urllib.request
 import sys
+import traceback
 
 import firebase_admin
 from firebase_admin import credentials, firestore, storage
@@ -415,6 +416,8 @@ def get_data_from_mhlw():
 
     pdf_url = re.search(r'<a [^>]*href="([^"]+)">国内の入退院の状況について[^<]*</a>', dom).group(1)
     df = tabula.read_pdf(pdf_url, lattice=True)
+    if isinstance(df, list):
+        df = df[0]
 
     number_pattern = re.compile('([0-9]+)\(\+([0-9]+)\)')
     nums = []
@@ -450,7 +453,7 @@ def update_cases_recovered_deaths(bucket):
         print(f'Uploaded JSON to Firebase storage')
     except Exception as e:
         print('Failed to crawl data from MHLW')
-        print(e)
+        traceback.print_exc()
 
 
 def update_clinic(bucket):
@@ -489,7 +492,7 @@ def update_detailed_data(bucket):
             print('-'*20)
         except Exception as e:
             print(f'Failed to get dataset {dataset.name}')
-            print(e)
+            traceback.print_exc()
 
 
 def main(args=None):
