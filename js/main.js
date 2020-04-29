@@ -712,8 +712,6 @@ var main = {
       ],
     };
 
-    const LIMIT = 60; // show data of last LIMIT days
-
     if ($(".heatmap-cases-changes").length > 0) {
       try {
         // load data from firebase storage
@@ -745,11 +743,11 @@ var main = {
             type: "heatmap",
             height: 120,
             marginTop: 0,
-            marginBottom: 0
+            marginBottom: 0,
           },
           title: false,
           yAxis: {
-            height: 0
+            height: 0,
           },
           colorAxis: {
             min: 1,
@@ -763,20 +761,20 @@ var main = {
             ],
           },
           legend: {
-            layout: 'horizontal',
+            layout: "horizontal",
             align: "left",
-            verticalAlign: "top"
+            verticalAlign: "top",
           },
           tooltip: false,
         });
 
-        renderHeatmap(data, HOKKAIDO_TOHOKU, LIMIT);
-        renderHeatmap(data, KANTO_KOSHINETSU, LIMIT);
-        renderHeatmap(data, TOKAI_HOKURIKU, LIMIT);
-        renderHeatmap(data, KINKI, LIMIT);
-        renderHeatmap(data, CHUGOKU, LIMIT);
-        renderHeatmap(data, SHIKOKU, LIMIT);
-        renderHeatmap(data, KYUSHU_OKINAWA, LIMIT);
+        renderHeatmap(data, HOKKAIDO_TOHOKU);
+        renderHeatmap(data, KANTO_KOSHINETSU);
+        renderHeatmap(data, TOKAI_HOKURIKU);
+        renderHeatmap(data, KINKI);
+        renderHeatmap(data, CHUGOKU);
+        renderHeatmap(data, SHIKOKU);
+        renderHeatmap(data, KYUSHU_OKINAWA);
       } catch ($error) {
         console.error($error);
       }
@@ -788,7 +786,9 @@ var main = {
 
 document.addEventListener("DOMContentLoaded", main.init);
 
-function renderHeatmap(data, areaObject, LIMIT) {
+function renderHeatmap(data, areaObject) {
+  const LIMIT = 90;
+
   // get render data
   const filtered = _.chain(data)
     .filter((d) => _.includes(areaObject.prefs, d.prefecture))
@@ -797,7 +797,7 @@ function renderHeatmap(data, areaObject, LIMIT) {
     .map("value")
     .first()
     .keys()
-    .mapValues((d) => moment(`2020/${d}`).format("DD/MM"))
+    .mapValues((d) => moment(`2020/${d}`).format("DD/M"))
     .values()
     .value();
   let seriesData = [];
@@ -824,24 +824,39 @@ function renderHeatmap(data, areaObject, LIMIT) {
     },
     xAxis: [
       {
+        type: "category",
         categories: dates,
         showLastLabel: true,
+        startOnTick: true,
+        endOnTick: true,
         min: dates.length - 1 - LIMIT,
         max: dates.length - 1,
         tickWidth: 1,
-        tickInterval: 15,
+        tickPositions: [
+          dates.length - 1 - LIMIT,
+          dates.length - 1 - LIMIT + Math.round(LIMIT / 3),
+          dates.length - 1 - LIMIT + 2 * Math.round(LIMIT / 3),
+          dates.length - 1,
+        ],
         labels: {
           autoRotation: false,
         },
       },
       {
+        type: "category",
         categories: dates,
         showLastLabel: true,
+        startOnTick: true,
         endOnTick: true,
         min: dates.length - 1 - LIMIT,
         max: dates.length - 1,
         tickWidth: 1,
-        tickInterval: 15,
+        tickPositions: [
+          dates.length - 1 - LIMIT,
+          dates.length - 1 - LIMIT + Math.round(LIMIT / 3),
+          dates.length - 1 - LIMIT + 2 * Math.round(LIMIT / 3),
+          dates.length - 1,
+        ],
         labels: {
           autoRotation: false,
         },
