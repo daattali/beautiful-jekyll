@@ -1,6 +1,4 @@
-import base64
 import json
-import os
 import re
 import urllib.request
 import sys
@@ -8,229 +6,11 @@ import sys
 import firebase_admin
 from firebase_admin import credentials, firestore, storage
 import pandas as pd
-import pytesseract
+import tabula
 
 import datasets
+import localization
 
-try:
-    from PIL import Image
-except ImportError:
-    import Image
-
-
-PREFECTURES = {
-    '北海道': 'Hokkaido',
-    '青森県': 'Aomori',
-    '岩手県': 'Iwate',
-    '宮城県': 'Miyagi',
-    '秋田県': 'Akita',
-    '山形県': 'Yamagata',
-    '福島県': 'Fukushima',
-    '茨城県': 'Ibaraki',
-    '栃木県': 'Tochigi',
-    '群馬県': 'Gunma',
-    '埼玉県': 'Saitama',
-    '千葉県': 'Chiba',
-    '東京都': 'Tokyo',
-    '神奈川県': 'Kanagawa',
-    '新潟県': 'Niigata',
-    '富山県': 'Toyama',
-    '石川県': 'Ishikawa',
-    '福井県': 'Fukui',
-    '山梨県': 'Yamanashi',
-    '長野県': 'Nagano',
-    '岐阜県': 'Gifu',
-    '静岡県': 'Shizuoka',
-    '愛知県': 'Aichi',
-    '三重県': 'Mie',
-    '滋賀県': 'Shiga',
-    '京都府': 'Kyoto',
-    '大阪府': 'Osaka',
-    '兵庫県': 'Hyogo',
-    '奈良県': 'Nara',
-    '和歌山県': 'Wakayama',
-    '鳥取県': 'Tottori',
-    '島根県': 'Shimane',
-    '岡山県': 'Okayama',
-    '広島県': 'Hiroshima',
-    '山口県': 'Yamaguchi',
-    '徳島県': 'Tokushima',
-    '香川県': 'Kagawa',
-    '愛媛県': 'Ehime',
-    '高知県': 'Kochi',
-    '福岡県': 'Fukuoka',
-    '佐賀県': 'Saga',
-    '長崎県': 'Nagasaki',
-    '熊本県': 'Kumamoto',
-    '大分県': 'Oita',
-    '宮崎県': 'Miyazaki',
-    '鹿児島県': 'Kagoshima',
-    '沖縄県': 'Okinawa',
-}
-
-TOKYO_CITIES = {
-    '千代田区': 'Chiyoda',
-    '中央区': 'Chuo',
-    '港区': 'Minato',
-    '新宿区': 'Shinjuku',
-    '文京区': 'Bunkyo',
-    '台東区': 'Taito',
-    '墨田区': 'Sumida',
-    '江東区': 'Koto',
-    '品川区': 'Shinagawa',
-    '目黒区': 'Meguro',
-    '大田区': 'Ota',
-    '世田谷区': 'Setagaya',
-    '渋谷区': 'Shibuya',
-    '中野区': 'Nakano',
-    '杉並区': 'Suginami',
-    '豊島区': 'Toshima',
-    '北区': 'Kita',
-    '荒川区': 'Arakawa',
-    '板橋区': 'Itabashi',
-    '練馬区': 'Nerima',
-    '足立区': 'Adachi',
-    '葛飾区': 'Katsushika',
-    '江戸川区': 'Edogawa',
-    '八王子市': 'Hachioji',
-    '立川市': 'Tachikawa',
-    '武蔵野市': 'Musashino',
-    '三鷹市': 'Mitaka',
-    '青梅市': 'Ome',
-    '府中市': 'Fuchu',
-    '昭島市': 'Akishima',
-    '調布市': 'Chofu',
-    '町田市': 'Machida',
-    '小金井市': 'Koganei',
-    '小平市': 'Kodaira',
-    '日野市': 'Hino',
-    '東村山市': 'Higashimurayama',
-    '国分寺市': 'Kokubunji',
-    '国立市': 'Kunitachi',
-    '福生市': 'Fussa',
-    '狛江市': 'Komae',
-    '東大和市': 'Higashiyamato',
-    '清瀬市': 'Kiyose',
-    '東久留米市': 'Higashikurume',
-    '武蔵村山市': 'Musashimurayama',
-    '多摩市': 'Tama',
-    '稲城市': 'Inagi',
-    '羽村市': 'Hamura',
-    'あきる野市': 'Akiruno',
-    '西東京市': 'Nishitokyo',
-    '瑞穂町': 'Thị trấn Mizuho',
-    '日の出町': 'Thị trấn Hinode',
-    '檜原村': 'Làng Hinohara',
-    '奥多摩町': 'Thị trấn Okutama',
-    '大島町': 'Đảo Oshima',
-    '利島村': 'Đảo Toshima',
-    '新島村': 'Đảo Niijima',
-    '神津島村': 'Đảo Kozushima',
-    '三宅村': 'Đảo Miyake',
-    '御蔵島村': 'Đảo Mikurajima',
-    '八丈町': 'Đảo Hachijo',
-    '青ヶ島村': 'Đảo Aogashima',
-    '小笠原村': 'Đảo Ogasawara',
-}
-
-OSAKA_CITIES = {
-    '大阪市': 'Osaka',
-    '枚方市': 'Hirakata',
-    '守口市': 'Moriguchi',
-    '箕面市': 'Mino',
-    '東大阪': 'Higashiosaka',
-    '東大阪市': 'Higashiosaka',
-    '吹田市': 'Suita',
-    '松原市': 'Matsubara',
-    '大東市': 'Daito',
-    '堺市': 'Sakai',
-    '高槻市': 'Takatsuki',
-    '摂津市': 'Settsu',
-    '茨木市': 'Ibaraki',
-    '門真市': 'Kadoma',
-    '豊中市': 'Toyonaka',
-    '八尾市': 'Yao',
-    '貝塚市': 'Kaizuka',
-    '池田市': 'Ikeda',
-    '和泉市': 'Izumi',
-    '泉佐野市': 'Izumisano',
-    '岸和田': 'Kishiwada',
-    '岸和田市': 'Kishiwada',
-    '泉大津市': 'Izumiotsu',
-    '羽曳野市': 'Habikino',
-    '河内長野市': 'Kawachinagano',
-    '田尻町': 'Thị trấn Tajiri',
-    '寝屋川市': 'Thị trấn Neyagawa',
-    '藤井寺市': 'Fujidera',
-    '交野市': 'Kano',
-    '熊取町': 'Thị trấn Kumatori',
-    '柏原市': 'Kashiwara',
-    '四條畷市': 'Shijonawate',
-    '高石市': 'Takaishi',
-    '能勢町': 'Thị trấn Nose',
-    '大阪狭山市': 'Osakasayama',
-    '泉南市': 'Sennan',
-    '富田林市': 'Tondabayashi',
-    '阪南市': 'Hannan',
-    '豊能町': 'Thị trấn Toyono',
-    '河南町': 'Thị trấn Kanan',
-    '羽曳野': 'Habikino',
-    '羽曳野市': 'Habikino',
-}
-SAITAMA_CITIES = {
-    '川口市': 'Kawaguchi',
-    '川越市': 'Kawagoe',
-    '八潮市': 'Yashio',
-    '朝霞市': 'Asaka',
-    '所沢市': 'Tokorozawa',
-    '入間市': 'Iruma',
-    '春日部市': 'Kasukabe',
-    '和光市': 'Wako',
-    '鴻巣市': 'Konosu',
-    '蕨市': 'Warabi',
-    '戸田市': 'Toda',
-    '新座市': 'Niiza',
-    '草加市': 'Soka',
-    '志木市': 'Shiki',
-    '東松山市': 'Higashimatsuyama',
-    '本庄市': 'Honjo',
-    'さいたま市': 'Thành phố Saitama',
-    '越谷市': 'Koshigaya',
-    '小川町': 'Thị trấn Ogawa',
-    '寄居町': 'Thị trấn Yorii',
-    '吉川市': 'Yoshikawa',
-    '宮代町': 'Thị trấn Miyashiro',
-    '川島町': 'Thị trấn Kawajima',
-    '坂戸市': 'Sakado',
-    '桶川市': 'Okegawa',
-    '狭山市': 'Sayama',
-    '日高市': 'Hidaka',
-    '美里町': 'Thị trấn Misato',
-    '上尾市': 'Ageo',
-    '加須市': 'Kazo',
-    '幸手市': 'Satte',
-    '富士見市': 'Fujimi',
-    '鶴ヶ島市': 'Tsurugashima',
-    '熊谷市': 'Kumagaya',
-    '深谷市': 'Fukaya',
-    '飯能市': 'Hanno',
-    '三郷市': 'Misato',
-    '白岡市': 'Shiraoka',
-    '三芳町': 'Thị trấn Miyoshi',
-    '蓮田市': 'Hasuda',
-    '羽生市': 'Hanyu',
-    '吉見町': 'Thị trấn Yoshimi',
-    '伊奈町': 'Thị trấn Ina',
-    'ふじみ野市': 'Fujimino',
-    '久喜市': 'Kuki',
-    '毛呂山町': 'Thị trấn Moroyama',
-    '杉戸町': 'Thị trấn Sugito',
-    '秩父市': 'Chichibu',
-    '上里町': 'Thị trấn Kamisato',
-    '神川町': 'Thị trấn Kamikawa',
-    'ときがわ町': 'Thị trấn Tokigawa',
-    '行田市': 'Gyoda',
-}
 
 FIREBASE_APP_NAME = 'thongtincovid19-4dd12'
 FIREBASE_PRIVATE_KEY = './thongtincovid19_serviceaccount_privatekey.json'
@@ -301,7 +81,7 @@ class TokyoPatientsDataset(datasets.CsvDataset):
             '都内': 'Nội đô Tokyo',
             '都外': 'Ngoài Tokyo',
             '調査中': 'Đang điều tra',
-            **PREFECTURES,
+            **localization.PREFECTURES,
         }, inplace=True)
         self.dataframe[self.COL_PATIENT_SEX].replace({
             '男性': 'Nam',
@@ -345,7 +125,7 @@ class PrefectureByDateDataset(datasets.JsonDataset):
     NAME = 'prefecture-by-date'
 
     COL_PREFECTURE = 'Tỉnh/Thành phố'
-    COL_TOTAL =  'Tổng'
+    COL_TOTAL = 'Tổng'
 
     def __init__(self):
         super().__init__(self.URL, self.NAME)
@@ -363,7 +143,7 @@ class PrefectureByDateDataset(datasets.JsonDataset):
         return self.dataframe
 
     def _localize(self):
-        self.dataframe[self.COL_PREFECTURE].replace(PREFECTURES, inplace=True)
+        self.dataframe[self.COL_PREFECTURE].replace(localization.PREFECTURES, inplace=True)
         return self.dataframe
 
 
@@ -443,7 +223,7 @@ class PatientByCityTokyoDataset(datasets.JsonDataset):
 
     def _localize(self):
         self.dataframe[self.COL_LABEL_VIETNAMESE] = self.dataframe[self.COL_LABEL].replace({
-            **TOKYO_CITIES,
+            **localization.TOKYO_CITIES,
             '都外': 'Ngoài Tokyo',
             '調査中': 'Đang điều tra',
             '小計': 'Tổng số',
@@ -499,7 +279,7 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
             '男性': 'Male',
         }, inplace=True)
         self.dataframe[self.COL_LOCATION].replace({
-            **OSAKA_CITIES,
+            **localization.OSAKA_CITIES,
             '府外': 'Ngoài Osaka',
             '大阪府外': 'Ngoài Osaka',
             '調査中': 'Đang điều tra',
@@ -539,7 +319,6 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
         url = re.search(pattern, dom).group(1)
         return f'{self.BASE_URL}{url}'
 
-
     def _localize(self):
         self.dataframe = self.dataframe.iloc[:, 1:]
         self.dataframe.columns = [
@@ -556,7 +335,7 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
         self._localize_sex(self.COL_SEX)
 
         self.dataframe[self.COL_LOCATION].replace({
-            **SAITAMA_CITIES,
+            **localization.SAITAMA_CITIES,
             '調査中': 'Đang điều tra',
             '川口市外': 'Ngoài Kawaguchi',
             '県外': 'Ngoài tỉnh',
@@ -577,8 +356,8 @@ class ClinicDataset(datasets.CsvDataset):
     COL_TEL = 'Tel'
     COL_WEBSITE = 'Website'
 
-    def __init__(self, url, name, **kwargs):
-        super().__init__(url, name, **kwargs)
+    def __init__(self, url, name):
+        super().__init__(url, name)
 
     def _localize(self):
         pass
@@ -624,120 +403,58 @@ def init_firebase_app():
     return app, client, bucket
 
 
-def get_data_from_image(image_url, desired_size, box, img_type='.png'):
-    image_name = f'tmp.png'
-
-    if img_type == '.png':
-        urllib.request.urlretrieve(image_url, image_name)
-    elif img_type == 'base64':
-        with open(image_name, 'wb') as fh:
-            fh.write(base64.decodebytes(image_url.encode()))
-
-    image = Image.open(image_name)
-    image = image.resize(desired_size)
-    crop = image.crop(box)
-
-    data = pytesseract.image_to_string(crop)
-    data = data.split('\n')
-
-    os.remove(image_name)
-    return data
-
-
-def to_int(text):
-    text = ''.join(x for x in text if x.isdigit())
-    return int(text)
-
-
-def get_data_from_mhlw_eng():
-    BASE_URL = 'https://www.mhlw.go.jp/'
-    CRAWL_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/newpage_00032.html'
-    IMAGE_SIZE_TOTAL = (817, 664)
-    IMAGE_SIZE_SYMPTOM = (0, 0)
-    IMAGE_SIZE_DETAIL = (1130, 767)
-
-    BOX_TOTAL_CASES = (200, 500, 370, 570)
-    BOX_TOTAL_TESTS = (400, 500, 590, 570)
-    BOX_TOTAL_DEATH = (1015, 695, 1125, 760)
-    BOX_TOTAL_DISCHARGED = (900, 695, 1012, 760)
-
-    IMG_PATTERN = '/content/[0-9]{8}/[0-9]{9}\.png'
-    img_pattern = re.compile(IMG_PATTERN)
-
-    request = urllib.request.Request(CRAWL_URL, headers=datasets.QUERY_HEADERS)
-    with urllib.request.urlopen(request) as url:
-        dom = url.read().decode()
-
-    urls = img_pattern.findall(dom)
-    assert len(urls) == 3, 'Something changed'
-    total_image_url, symptome_image_url, detail_image_url = [f'{BASE_URL}{url}' for url in urls]
-
-    total_cases, total_cases_changes = get_data_from_image(total_image_url, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES)
-    discharged, discharged_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED)
-    death, death_changes = get_data_from_image(detail_image_url, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH)
-
-    total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
-    discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
-    death, death_changes = to_int(death), to_int(death_changes)
-
-    return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
-
-
-def get_data_from_mhlw_jp():
+def get_data_from_mhlw():
     CRAWL_URL = 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html'
     QUERY_HEADERS = {
         'User-Agent': 'Mozilla/5.0',
     }
-    IMAGE_SIZE_TOTAL = (430, 494)
-    IMAGE_SIZE_DETAIL = (1006, 532)
-
-    BOX_TOTAL_CASES = (164, 419, 295, 490)
-    BOX_TOTAL_DEATH = (904, 463, 978, 525)
-    BOX_TOTAL_DISCHARGED = (815, 463, 900, 525)
-
-    IMG_PATTERN = 'data:image/png;base64,([^"]+)'
-    img_pattern = re.compile(IMG_PATTERN)
 
     request = urllib.request.Request(CRAWL_URL, headers=QUERY_HEADERS)
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
 
-    idx1 = dom.find('PCR検査陽性者数')
-    total_image_base64 = img_pattern.search(dom[idx1:]).group(1)
-    idx2 = dom.find('入退院等の状況')
-    status_image_base64 = img_pattern.search(dom[idx2:]).group(1)
+    pdf_url = re.search(r'<a [^>]*href="([^"]+)">国内の入退院の状況について[^<]*</a>', dom).group(1)
+    df = tabula.read_pdf(pdf_url, lattice=True)
 
-    total_cases, total_cases_changes = get_data_from_image(total_image_base64, IMAGE_SIZE_TOTAL, BOX_TOTAL_CASES, 'base64')
-    discharged, discharged_changes = get_data_from_image(status_image_base64, IMAGE_SIZE_DETAIL, BOX_TOTAL_DISCHARGED, 'base64')
-    death, death_changes = get_data_from_image(status_image_base64, IMAGE_SIZE_DETAIL, BOX_TOTAL_DEATH, 'base64')
+    number_pattern = re.compile('([0-9]+)\(\+([0-9]+)\)')
+    nums = []
+    for i in range(len(df)):
+        nums = []
+        for val in df.iloc[i].values:
+            m = number_pattern.search(str(val))
+            if m is None:
+                break
+            nums.append((int(m.group(1)), int(m.group(2))))
+        else:
+            break
+    assert len(nums) == 4
 
-    total_cases, total_cases_changes = to_int(total_cases), to_int(total_cases_changes)
-    discharged, discharged_changes = to_int(discharged), to_int(discharged_changes)
-    death, death_changes = to_int(death), to_int(death_changes)
-
-    return (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes)
+    return nums[0], nums[2], nums[3]
 
 
 def update_cases_recovered_deaths(bucket):
-    print('Getting overall data from MHLW')
-    (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw_jp()
-    print(f'Queried data successfully')
-    storage_ref = f'overall.json'
-    blob = bucket.blob(storage_ref)
-    blob.upload_from_string(json.dumps({
-        'total_cases': total_cases,
-        'total_cases_changes': total_cases_changes,
-        'discharged': discharged,
-        'discharged_changes': discharged_changes,
-        'death': death,
-        'death_changes': death_changes
-    }), content_type='application/json')
-    print(f'Uploaded JSON to Firebase storage')
-    print('-'*20)
+    try:
+        print('Getting overall data from MHLW')
+        (total_cases, total_cases_changes), (discharged, discharged_changes), (death, death_changes) = get_data_from_mhlw()
+        print(f'Queried data successfully')
+        storage_ref = f'overall.json'
+        blob = bucket.blob(storage_ref)
+        blob.upload_from_string(json.dumps({
+            'total_cases': total_cases,
+            'total_cases_changes': total_cases_changes,
+            'discharged': discharged,
+            'discharged_changes': discharged_changes,
+            'death': death,
+            'death_changes': death_changes
+        }), content_type='application/json')
+        print(f'Uploaded JSON to Firebase storage')
+    except Exception as e:
+        print('Failed to crawl data from MHLW')
+        print(e)
 
 
 def update_clinic(bucket):
-    for pref in PREFECTURES.values():
+    for pref in localization.PREFECTURES.values():
         dataset = ClinicDataset(
             f'clinics/tabula-{pref.lower()}.csv',
             f'clinic-{pref.lower()}',
@@ -761,23 +478,29 @@ def update_detailed_data(bucket):
     )
 
     for dataset in all_datasets:
-        print(f'Dataset: {dataset.name}')
-        dataset.query_all()
-        print(f'Queried data successfully')
-        dataset.save_csv()
-        print(f'Created local CSV file')
-        dataset.upload_to_storage(bucket)
-        print(f'Uploaded JSON to Firebase storage')
-        print('-'*20)
+        try:
+            print(f'Dataset: {dataset.name}')
+            dataset.query_all()
+            print(f'Queried data successfully')
+            # dataset.save_csv()
+            # print(f'Created local CSV file')
+            dataset.upload_to_storage(bucket)
+            print(f'Uploaded JSON to Firebase storage')
+            print('-'*20)
+        except Exception as e:
+            print(f'Failed to get dataset {dataset.name}')
+            print(e)
 
 
 def main(args=None):
     app, client, bucket = init_firebase_app()
     update_cases_recovered_deaths(bucket)
+    print('-' * 20)
     # update_clinic(bucket)
     update_detailed_data(bucket)
 
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())
