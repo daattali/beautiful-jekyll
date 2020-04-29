@@ -160,7 +160,6 @@ Beautiful Jekyll has been used in over 500 websites in its first 6 months, and t
 | [repidemicsconsortium.org/](https://www.repidemicsconsortium.org/) | R Epidemics Consortium |
 | [vaccineimpact.org](https://www.vaccineimpact.org/) | Vaccine Impact Modelling Consortium |
 | [derekogle.com/fishR](http://derekogle.com/fishR/) | Using R for Fisheries Analyses |
-| [bigdata.juju.solutions](http://bigdata.juju.solutions) | Creating Big Data solutions Juju Solutions |
 | [joecks.github.io/clipboard-actions](http://joecks.github.io/clipboard-actions/) | Clipboard Actions - an Android app |
 | [deanattali.com/shinyjs](http://deanattali.com/shinyjs/) | shinyjs - an R package |
 | [blabel.github.io](http://blabel.github.io) | Library for canonicalising blank node labels in RDF graphs |
