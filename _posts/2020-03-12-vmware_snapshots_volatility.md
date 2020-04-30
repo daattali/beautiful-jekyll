@@ -9,8 +9,17 @@ comments: false
 ## Introduction
 I found recently during a CTF Memory image challenge, that analysing memory images from VMWare wasn't necessarily as easy as just having the right profile and files. Hopefully this helps anyone out there who needs to do the same. For this write-up I am using VMWare Workstation Pro v15.5.1.
 
+<a name="TOC"></a>
+## Table of Contents
+    * [TLDR](#tldr)
+    * [Applicable VMWare File Types](#applicable-vmware-file-types)
+    * [What I tried](#what-i-tried)
+    * [Takeaway points](#takeaway-points)
+
 ### TLDR
 For volatility to work you need the vmem and vmss files. To get these files the VM needs to be powered on, then suspended.
+
+[*Back to table of contents*](#TOC)
 
 ### Applicable VMWare File Types
 
@@ -25,6 +34,7 @@ File |	Usage |	Description
 .vmss |	**vmname.vmss** |	Virtual machine suspend file
 .vmem |	**vmware.vmem** |	Virtual Machine volatile memory file
 
+[*Back to table of contents*](#TOC)
 
 ### What I tried
 First, I tried to get the vmware info with the volatility plugin, and a quick pslist with no luck
@@ -45,7 +55,12 @@ Thats the first win. Now... so analysts have the normal familiarity with raw mem
 
 Huzzah, now we have an image that analysts normally work with, just from copying some vmware files
 
+[*Back to table of contents*](#TOC)
+
 ## Takeaway points
 So, hopefully now you know how to analyse VMWare Snapshots and Images, and the minimum files required by volatility (vmem & vmss). Also, if you need to triage VMWare memory images, you can now make a .raw file that DFIR teams will know how to workflow as normal, as long as they know the operating system for the Volatility profile
+
+[*Back to table of contents*](#TOC)
+
 
 
