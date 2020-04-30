@@ -36,7 +36,9 @@ subtitle:
 - Build object detection model with keras
 - Build chatbot with ntlk, rasa
     
-**SQL:** Build the data-mart for Machine learning models and reports.
+**Database:** 
+ - **SQL**: Oracle, MySql - build the data-mart for Machine learning models and reports
+ - **No-SQL**: MongoDB - build database for small company.
     
 **JavaScript:** Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
 
