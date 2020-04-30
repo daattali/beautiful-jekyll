@@ -66,6 +66,7 @@ comments: false
          * [Vim Cheat sheet for programmers](#vim-cheat-sheet-for-programmers)
          * [Vim Plugins / Features](#vim-plugins--features)
       * [Bash Scripting](#bash-scripting)
+         * [How to setup a bash IDE](#How-To-Setup-Bash-IDE)
          * [Internal Variables](#internal-variables)
          * [Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177](#building-a-program-with-shell-scripting-linux-terminal-201---haktip-177)
          * [HakTip - Bash Basics: Turn Long Commands into Scripts](#haktip---bash-basics-turn-long-commands-into-scripts)
@@ -580,6 +581,10 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Bash Scripting
+### How To Setup Bash IDE
+
+You can see my post at <https://angry-bender.github.io/2020-04-30-Full_Featured_IDE_For_Bash_Scripting/>
+
 ### Internal Variables
 you can use `printenv` or for shell scripting the following may be useful
 <https://www.tldp.org/LDP/abs/html/internalvariables.html>
