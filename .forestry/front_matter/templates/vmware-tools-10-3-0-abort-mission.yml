@@ -32,4 +32,5 @@ pages:
 - _posts/2020-01-30-2020-ldap-channel-binding-and-ldap-signing-requirement-for-windows.md
 - _posts/2020-02-18-how-to-sign-a-certificate-with-no-template-information-on-a-microsoft-ca.md
 - _posts/2020-04-22-change-vmnic-order-on-vsphere-host.md
+- _posts/host-randomly-not-responding-but-replies-to-ping.md
 - _posts/vami-certificate-not-updated-after-certificate-change.md
