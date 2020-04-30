@@ -11,10 +11,10 @@ I found recently during a CTF Memory image challenge, that analysing memory imag
 
 <a name="TOC"></a>
 ## Table of Contents
-    * [TLDR](#tldr)
-    * [Applicable VMWare File Types](#applicable-vmware-file-types)
-    * [What I tried](#what-i-tried)
-    * [Takeaway points](#takeaway-points)
+* [TLDR](#tldr)
+* [Applicable VMWare File Types](#applicable-vmware-file-types)
+* [What I tried](#what-i-tried)
+* [Takeaway points](#takeaway-points)
 
 ### TLDR
 For volatility to work you need the vmem and vmss files. To get these files the VM needs to be powered on, then suspended.
