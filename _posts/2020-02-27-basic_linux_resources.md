@@ -111,6 +111,9 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 
 **ALT + C**		capitalises letter where cursor is and moves to end of word
 
+
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Exiting a running command or accessing another command window
 
 **Ctrl + C**			Kills the current Process
@@ -119,9 +122,15 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 
 **Ctrl + Z**		Suspends the current process (Can be bought back by typing fg)
 
+
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Search for text in a file (less, more)
 
 **/pattern**		Searches forward n for next N for previous
+
+
+[*Back to table of contents*](#Table-of-Contents)
 
 # Linux Commands
 ## Navigating Linux
@@ -145,6 +154,8 @@ Command | Description
 `apropos` | search all man pages for a given keyword alias of `man -k <searchterm>`
 `man <cat number> <command>` | view a man page other than the default command manpage
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Command Line Tricks
 
 Command | Description
@@ -156,6 +167,8 @@ Command | Description
 `!!:s/foo/bar/` |	Repeat last command substituting foo for bar
 `grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log \| grep <username> 
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Finding a file
 
 Command | Description
@@ -164,6 +177,8 @@ Command | Description
 `locate <filename>` | 	locate somefilename
 `find <directory>` or `. <filename>` |	find a file in a directory or where I am with a name
  
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Reading a file
 
 Command | Description
@@ -175,6 +190,8 @@ Command | Description
 `tail –f <filename>` |	Display the last 10 lines and follow a files as it grows (Very useful for debugging)
 `file <filename>` | Displays what kind of file it is
  
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Editing a file
 
 Command | Description
@@ -184,6 +201,8 @@ Command | Description
 `echo "Hello world 2" >> file.txt` | append a new line to a file
 `vim <filename>`	| advanced text editor for file name
 `nano <filename>`	| basic text editor for file name
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Moving a file
 
@@ -196,6 +215,8 @@ Command | Description
 `wget http://www.webserver.com/file.txt` | downloads a text file from webserver.com	
 `git clone https://www.github.com/angry-bender/UbuntuLive.git` | Downloads a git project 	
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Deleting a file
 
 Command | Description
@@ -204,6 +225,8 @@ Command | Description
 `rm –r <directoryname>` |	removes a directory and all sub directories
 `rm –rf <directoryname>`	| forces removal of a directory
  
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Changing Permissions on a file
 ![permissions](https://2.bp.blogspot.com/-V2eWUJugBJ0/Ui4Y1TJ45aI/AAAAAAAAAzQ/gwxcb-GlTGA/s1600/chmod4.png)
 ![usergroupother](https://www.booleanworld.com/wp-content/uploads/2018/04/classes.png)
@@ -215,11 +238,15 @@ Command | Description
 `chmod u=rwx,g=rx,o=r`	 | Changes the permissions on a file u=user,g=group,o=others r=read,w=write,x=execute
 `chgrp <group> <filename>` | change the froup owner of a file or folder
  
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Comparing a file
 
 Command | Description
 -------|--------
 `diff –ur <filename1> <filename2>` |	Compares the difference between two files, without –ur it will just tell us if there is a difference
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## History
 
@@ -230,6 +257,8 @@ Command | Description
 `!<number from history>`	| Executes that command from history
 **ctrl-r** | press to search the history, continue pressing to scroll one at a time through search results
  
+[*Back to table of contents*](#Table-of-Contents)
+
 ## System Utilities
 
 Command | Description
@@ -257,6 +286,8 @@ Command | Description
 `zcat secure*.gz` | cats out gz log files
 `ln -s <location of link> <location of file>` | make a softlink to a file
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Networking
 
 ### The new systemd way (Manual Configuration)
@@ -269,6 +300,8 @@ Command | Description | Order
 `ip addr add 192.168.0.3/24` dev <interfacename> |	Enter a static ip address	| 3
 `ip addr`	| verify your configuration	| 4
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ### The new legacy way (Manual Configuration)
 
 Command | Description | Order
@@ -278,6 +311,8 @@ Command | Description | Order
 `ifconfig <interfacename> 0.0.0.0 0.0.0.0 && dhclient`	| get a DHCP address |	3
 `ifconfig <interfacename> 192.168.0.3/24 netmask 255.255.255.0`	| Enter a static ip address |	3
 `ifconfig` 	| verify your configuration	| 4
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ### Other network utilities & Troubleshooting tools
 
@@ -296,6 +331,8 @@ Command | Description
 `ip route add default via <IP>` | Add Default route
 `ss` | Netstat equivalant (`-tu` minimum info, `-put` process info, `-4put` show ipv4 only, `4punt` show ports as numbers
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Ubuntu Package Management
 
 Command | Description
@@ -313,6 +350,8 @@ Command | Description
 `fuser -k /var/lib/apt/lists/lock`	| Tries to kill the process accessing the package lock file gracefully
 `lsof -t /var/lib/apt/lists/lock \| xargs kill -9`	| Tries to kill the process accessing the package lock file ungracefully <Use with caution>
  
+[*Back to table of contents*](#Table-of-Contents)
+
 ## User Management
  
 Command | Description
@@ -328,6 +367,8 @@ Command | Description
 `cat /etc/passwd`	| List users on system	
 `echo <Username>\|<Password> \| chpassword	` | Allows passwords to be scripted in bash for new users	
 `su - <username>` | switch to a new user and use their shell environment
+
+[*Back to table of contents*](#Table-of-Contents)
 
 # Basic Forensics Commands
 
@@ -345,6 +386,8 @@ then, after using an awk, or any method of reducing data down to a single charac
 
 ![forensicate](https://angry-bender.github.io/img/lt/forensicate.png)
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Grep
 
 Command | Description
@@ -360,6 +403,8 @@ Command | Description
 `grep –E “e$” <filename>	`| Use a Regular expression 
 `egrep ‘<pattern1>\|<pattern2>’ <filename>	`| enhanced grep to search for two patterns simultaneously
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Sed
 
 Command | Description
@@ -373,6 +418,8 @@ Command | Description
 `sed -e ‘s/[0-9]*/(&)/’ <filename>` |	Replaces ([0-9]) for a number of any length (*) and inserts a Bracket around them (&)
 `sed -e ‘/s/\/etc/\/etc\/ssh\/sshd_conf/’` | <filename>	Replaces /etc/ with /etc/ssh/sshd.conf
 
+[*Back to table of contents*](#Table-of-Contents)
+
 
 ## Awk
 
@@ -382,6 +429,8 @@ Command | Description
 `awk -f <awkfile> filename` |	Allows the use of an awkfile for processing
 `awk ‘{print $3}’` |	prints all the 3’rd arguments in a file
 
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Regex Reference
 
@@ -418,6 +467,8 @@ Symbol  | Description
 `[!a-e]` | match and character not in the range
 `{linux, shell}` |	match any word in the given options
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Other useful tools
 
 Command | Description
@@ -430,6 +481,8 @@ Command | Description
 `sort`	| Sort a file by a five order
 `uniq ` | Report or filter out repeated lines in a file
 `aspell check <filename>` |	spell checks a file interactively 
+
+[*Back to table of contents*](#Table-of-Contents)
 
 # Linux Resources
 ## Package Management
@@ -453,6 +506,8 @@ Command | Description
 
 ### Binary Directory Standards
 <http://lists.busybox.net/pipermail/busybox/2010-December/074114.html>
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Progams & Services
 ### Elf Diagram
@@ -487,6 +542,8 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 
 <https://meterpreter.org/common-linux-services-list/>
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Bash Usage
 
 ### Special Characters
@@ -503,12 +560,16 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 ### How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170
 [![](https://img.youtube.com/vi/F7Brrn-L1Zg/maxresdefault.jpg)](https://youtu.be/F7Brrn-L1Zg)
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## User Management
 ### Home Directory Specifications
 <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>
 
 ### Passwd file specifications
 <http://www.linfo.org/etc_passwd.html>
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Text Editors
 
@@ -522,7 +583,7 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 
 <https://www.reddit.com/r/vimporn/>
 
-
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Bash Scripting
 ### Internal Variables
@@ -555,20 +616,30 @@ variable | explanation
 
 [Basic Bash scripting for beginners (YouTube Playlist)](https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_)
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Basic Linux commands
 
 [SANS Blue team Command Line Cheat Sheet](https://wiki.sans.blue/Tools/pdfs/LinuxCLI101.pdf)
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Best troubleshooting websites
 <https://wiki.archlinux.org/>
 
 <https://askubuntu.com/>
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Over the wire solutions
 <https://kongwenbin.wordpress.com/2016/08/02/overthewire-bandit/>
 
+[*Back to table of contents*](#Table-of-Contents)
+
 ## Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))
 <https://github.com/angry-bender/linuxtraining>
+
+[*Back to table of contents*](#Table-of-Contents)
 
 ## Arch Linux Installation Fixes
 
@@ -584,3 +655,5 @@ Change your VM to UEFI as per the screenshot below
 If you use gdm, and cannot get a terminal see screenshot below from <https://unix.stackexchange.com/questions/504529/arch-gnome-terminal-timeout>
 
 ![terminal_timeout](https://angry-bender.github.io/img/lt/terminal-timeout.png)
+
+[*Back to table of contents*](#Table-of-Contents)
