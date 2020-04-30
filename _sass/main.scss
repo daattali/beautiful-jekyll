@@ -112,6 +112,9 @@ a:hover {
 .covi-section.no-padding-top {
   padding-top: 0;
 }
+.covi-section.no-padding-bottom {
+  padding-bottom: 0;
+}
 .covi-section .covi-section__title {
   text-align: center;
   font-size: 2.25em;
@@ -450,4 +453,9 @@ a.btn-social-icon:hover {
 }
 .covi-select option {
   font-weight: normal;
+}
+
+/* card */
+.covi-card {
+  margin-bottom: 24px;
 }

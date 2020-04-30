@@ -4,9 +4,75 @@ title: Thông tin COVID-19 tại Nhật Bản
 subtitle: Những thông tin từ nguồn tin chính thống nhất
 ---
 
-<section class="bg--white covi-section" id="overview">
-  <div class="container">
-    <div class="covi-section__content">
+
+{% assign featured_posts = site.posts | where: 'featured', true | sort: 'order' %}
+{% if featured_posts.size > 0 %}
+  <section class="bg--white covi-section no-padding-bottom" id="featured">
+    <div class="container">
+      <div class="covi-section__content">
+        <div class="row" style="display: flex; flex-wrap: wrap;">
+          {% for post in featured_posts %}
+          <div class="col-md-4" style="margin-bottom: 24px;">
+            <div class="panel panel-default" style="height: 100%;">
+              <div class="panel-body">
+                <a href="{{ post.url | relative_url }}">
+                  {% if post.thumbnail %}
+                  <div
+                    class="media-object embed-responsive embed-responsive-16by9"
+                    style="
+                    background-image: url({{post.thumbnail}});
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                  "
+                  >
+                    <img
+                      src="{{post.thumbnail}}"
+                      alt="{{post.title}}"
+                      width="0"
+                      height="0"
+                    />
+                  </div>
+                  {% else %}
+                  <div
+                    class="media-object embed-responsive embed-responsive-16by9"
+                    style="
+                      background-image: url(/img/placeholder.png);
+                      background-position: center;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="/img/placeholder.png"
+                      alt="{{post.title}}"
+                      width="0"
+                      height="0"
+                    />
+                  </div>
+                  {% endif %}
+                </a>
+                <div>
+                  <h4>
+                    <i class="fas fa-bookmark" style="color: #e03131;"></i>&nbsp;&nbsp;{{post.title}}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+  <section class="bg--white covi-section" id="overview">
+    <div class="container">
+      <div class="covi-section__content">
+        <h2 class="page-header covi-page-header">Số liệu thống kê</h2>
       <!-- số liệu thống kê -->
       <div class="mb-case-overview visible-xs">
         <div class="case-overview">
