@@ -6,7 +6,7 @@ DATE:
 ---
 In the series of weird and annoying technical issues that I seem to be blessed with, today I bring you one that falls in the category I despise the most, random disconnects.
 
-TL,DR: Random ESXi disconnects after NIC replacement. The fix was to remove and recreate the management vmkernel (also did vMotion just in case).
+_TL,DR: Random ESXi disconnects after NIC replacement. The fix was to remove and recreate the management vmkernel (also did vMotion just in case)._
 
 In short, we removed some 1Gbps cards and added 10Gbps cards to make the cluster homogeneous. The management and VMotion vmkernels were tied to these uplinks. After we did the work on the hardware I reordered the portgroup and uplinks correctly so it matches the newer hosts. Then I quickly realised that the hosts were randomly losing pings and when I rebooted a host I had to restart the management network (not normal at all).
 
@@ -36,7 +36,7 @@ I had a look at vodb.log on the host and found the following records:
 >
 > 2020-04-30T07:31:31.512Z: \[UserLevelCorrelator\] 1175533800us: \[esx.audit.dcui.network.restart\] A management interface Management Network has been restarted. Please consult ESXi Embedded and vCenter Server Setup Guide or follow the Ask VMware link for more information.
 
-I googled this "_Failed criteria 128_" that I had never encountered before and people were recommending all sorts of things like reverting to async driver but my other hosts that work fine have the native driver so didn't make sense. I think it was in an article not directly related that someone suggested recreating the management vmkernel because the hardware replacement can cause conflicts with the mac address of the vmkernel, issued based on the mac of the original NIC.
+I googled this "**_Failed criteria 128_**" that I had never encountered before and people were recommending all sorts of things like reverting to async driver but my other hosts that work fine have the native driver so didn't make sense. I think it was in an article not directly related that someone suggested recreating the management vmkernel because the hardware replacement can cause conflicts with the mac address of the vmkernel, issued based on the mac of the original NIC.
 
 I tried removing and recreating the management vmkernel and here it was, all fixed! You need to log on the DCUI as you will lose your SSH session once you remove the uplink.
 
