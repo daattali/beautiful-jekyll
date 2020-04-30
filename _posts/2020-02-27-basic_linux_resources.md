@@ -6,6 +6,8 @@ tags: [sysadmin, linux]
 comments: false
 ---
 
+# Introduction
+These resources Have been provided for a  Linux course I have had to intruct, it contains a command cheatsheet & posts that will help basic analysts be able use and research how to use linux.
 
 # Basic Linux courses resources (V2.0)
 <a name="Table-of-Contents"></a>
