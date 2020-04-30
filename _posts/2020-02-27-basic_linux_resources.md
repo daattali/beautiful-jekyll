@@ -8,10 +8,8 @@ comments: false
 
 
 # Basic Linux courses resources (V2.0)
-
+<a name="Table-of-Contents"></a>
 # Table of Contents
-
-   * [Basic Linux courses resources (V2.0)](#basic-linux-courses-resources-v20)
    * [Bash keyboard commands](#bash-keyboard-commands)
       * [Moving Cursor](#moving-cursor)
       * [Exiting a running command or accessing another command window](#exiting-a-running-command-or-accessing-another-command-window)
