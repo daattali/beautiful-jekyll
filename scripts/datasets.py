@@ -19,16 +19,17 @@ def batch_data(iterable, n=1):
 
 
 class Dataset(object):
-    def __init__(self, url, name):
+    def __init__(self, url, name, **kwargs):
         self.url = url
         self.name = name
         self.dataframe = None
+        self.kwargs = kwargs
 
-    def query_all(self, **kwargs):
+    def query_all(self):
         if self.dataframe is None:
             self.dataframe = self._create_dataframe()
-            self._localize(**kwargs)
-            self._cleanse(**kwargs)
+            self._localize()
+            self._cleanse()
 
         return self.dataframe
 
@@ -46,9 +47,13 @@ class Dataset(object):
             '未就学児': 'Dưới 3',
             '就学児': '3-9',
             '10歳未': 'Dưới 10',
+            '10歳未満': 'Dưới 10',
             '100歳以': 'Trên 100',
             '不': 'Không rõ',
+            '－': 'Không rõ',
+            'ー': 'Không rõ',
             '調査中': 'Đang điều tra',
+            '非公表': 'Không công bố',
         }, inplace=True)
         self.dataframe[column].fillna(na_value, inplace=True)
         return self.dataframe[column]
@@ -59,15 +64,16 @@ class Dataset(object):
             '女性': 'Nữ',
             '女児': 'Nữ',
             '調査中': 'Đang điều tra',
+            '－': 'Đang điều tra',
         }, inplace=True)
         self.dataframe[column].fillna(na_value, inplace=True)
         return self.dataframe[column]
 
     def _localize(self, **kwargs):
-        pass
+        return self.dataframe
 
     def _cleanse(self, **kwargs):
-        pass
+        return self.dataframe
 
     def save_csv(self, save_path=None, index=False):
         if save_path is None:
@@ -120,26 +126,26 @@ class Dataset(object):
 
 
 class CsvDataset(Dataset):
-    def __init__(self, url, name):
-        super().__init__(url, name)
+    def __init__(self, url, name, **kwargs):
+        super().__init__(url, name, **kwargs)
 
     def _create_dataframe(self):
-        return pd.read_csv(self.url)
+        return pd.read_csv(self.url, **self.kwargs)
 
 
 class ExcelDataset(Dataset):
-    def __init__(self, url, name, sheet_id, header_row=0):
-        super().__init__(url, name)
+    def __init__(self, url, name, sheet_id, header_row=0, **kwargs):
+        super().__init__(url, name, **kwargs)
         self.sheet = sheet_id
         self.header_row = header_row
 
     def _create_dataframe(self):
-        return pd.read_excel(self.url, self.sheet, header=self.header_row)
+        return pd.read_excel(self.url, self.sheet, header=self.header_row, **self.kwargs)
 
 
 class JsonDataset(Dataset):
-    def __init__(self, url, name, data_key=None):
-        super().__init__(url, name)
+    def __init__(self, url, name, **kwargs):
+        super().__init__(url, name, **kwargs)
         self.json = None
 
     def _get_json_from_url(self):
@@ -159,16 +165,15 @@ class JsonDataset(Dataset):
 
 class PdfDataset(Dataset):
     def __init__(self, url, name, pages='all', include_header=True, **kwargs):
-        super().__init__(url, name)
+        super().__init__(url, name, **kwargs)
         self.pages = pages
         self.include_header = include_header
-        self.kwargs = kwargs
 
-    def _create_dataframe(self):
+    def _create_dataframe(self, **kwargs):
         if self.include_header:
-            df = tabula.read_pdf(self.url, pages=self.pages, **self.kwargs)
+            df = tabula.read_pdf(self.url, pages=self.pages, **kwargs)
         else:
-            df = tabula.read_pdf(self.url, pages=self.pages, pandas_options={'header': None}, **self.kwargs)
+            df = tabula.read_pdf(self.url, pages=self.pages, pandas_options={'header': None}, **kwargs)
 
         if isinstance(df, list):
             df = pd.concat(df)
