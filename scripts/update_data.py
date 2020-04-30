@@ -39,8 +39,8 @@ class TokyoPatientsDataset(datasets.CsvDataset):
     COL_REF = 'Tham khảo'
     COL_DISCHARGED = 'Đã ra viện hay chưa'
 
-    def __init__(self):
-        super().__init__(self.URL, self.NAME)
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
 
     def _localize(self):
         # Localize column name
@@ -128,8 +128,8 @@ class PrefectureByDateDataset(datasets.JsonDataset):
     COL_PREFECTURE = 'Tỉnh/Thành phố'
     COL_TOTAL = 'Tổng'
 
-    def __init__(self):
-        super().__init__(self.URL, self.NAME)
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
 
     def _create_dataframe_from_json(self):
         formatted_list = []
@@ -181,8 +181,8 @@ class PatientDetailsDataset(datasets.JsonDataset):
 
     COL_DATE = 'Date'
 
-    def __init__(self):
-        super().__init__(self.URL, self.NAME)
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
 
     def _create_dataframe_from_json(self):
         self.dataframe = pd.DataFrame([entry['attributes'] for entry in self.json['features']])
@@ -207,8 +207,8 @@ class PatientByCityTokyoDataset(datasets.JsonDataset):
     COL_AREA_VIETNAMESE = 'area_vietnamese'
     COL_LABEL_VIETNAMESE = 'label_vietnamese'
 
-    def __init__(self):
-        super().__init__(self.URL, self.NAME)
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
 
     def _create_dataframe_from_json(self):
         return pd.DataFrame(self.json['datasets']['data'])
@@ -252,8 +252,8 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
     COL_STATUS = 'Status'
     COL_DISCHARGED = 'Discharged'
 
-    def __init__(self):
-        super().__init__(self.URL, self.NAME, self.SHEET, self.HEADER)
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, self.SHEET, self.HEADER, **kwargs)
 
     def _cleanse(self):
         self.dataframe[self.COL_PUBLISHED_DATE] = self.dataframe[self.COL_PUBLISHED_DATE].astype(str)
@@ -308,15 +308,15 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
     COL_SEX = 'Sex'
     COL_LOCATION = 'Location'
 
-    def __init__(self):
-        super().__init__(self._find_url(), self.NAME, include_header=False)
+    def __init__(self, **kwargs):
+        super().__init__(self._find_url(), self.NAME, include_header=False, **kwargs)
 
     def _find_url(self):
         request = urllib.request.Request(self.URL, headers=datasets.QUERY_HEADERS)
         with urllib.request.urlopen(request) as url:
             dom = url.read().decode()
 
-        pattern = r'<a target="_blank" href="([^"]+)">陽性確認者一覧[^<]*</a>'
+        pattern = r'<a [^>]*href="([^"]+)">陽性確認者一覧[^<]*</a>'
         url = re.search(pattern, dom).group(1)
         return f'{self.BASE_URL}{url}'
 
@@ -349,6 +349,49 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
         return self.dataframe
 
 
+class PatientByCityKanagawaDataset(datasets.CsvDataset):
+    URL = 'http://www.pref.kanagawa.jp/osirase/1369/data/csv/patient.csv'
+    NAME = 'patient-by-city-kanagawa'
+
+    COL_DATE = 'Date'
+    COL_LOCATION = 'Location'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
+
+    def _localize(self):
+        self.dataframe.columns = [
+            self.COL_DATE,
+            self.COL_LOCATION,
+            self.COL_AGE,
+            self.COL_SEX,
+        ]
+
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('神奈川県', '')
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('内', '')
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健所管', '')
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('及び都', '')
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健福祉事務所管', '市')
+        self.dataframe[self.COL_LOCATION].replace({
+            **localization.KANAGAWA_CITIES,
+            '': 'Tỉnh Kanagawa',
+            'スペイン（横浜市発表）': 'Yokohama',
+            '国外（川崎市発表）': 'Kawasaki',
+            '川崎市外（川崎市発表）': 'Kawasaki',
+            '茅ケ崎市保健所管内及び都内': 'Chigasaki',
+            '川崎市外': 'Ngoài Kawasaki',
+            '横浜市外': 'Ngoài Yokohama',
+            '東京都\u3000': 'Tokyo',
+        }, inplace=True)
+
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+
+        return self.dataframe
+
+
 class ClinicDataset(datasets.CsvDataset):
     COL_ID = 'Id'
     COL_NAME = 'Name'
@@ -357,8 +400,8 @@ class ClinicDataset(datasets.CsvDataset):
     COL_TEL = 'Tel'
     COL_WEBSITE = 'Website'
 
-    def __init__(self, url, name):
-        super().__init__(url, name)
+    def __init__(self, url, name, **kwargs):
+        super().__init__(url, name, **kwargs)
 
     def _localize(self):
         pass
@@ -477,7 +520,8 @@ def update_detailed_data(bucket):
         # PatientDetailsDataset(),
         PatientByCityTokyoDataset(),
         PatientByCityOsakaDataset(),
-        PatientByCitySaitamaDataset()
+        PatientByCitySaitamaDataset(),
+        PatientByCityKanagawaDataset(encoding='cp932'),
     )
 
     for dataset in all_datasets:
@@ -490,7 +534,7 @@ def update_detailed_data(bucket):
             dataset.upload_to_storage(bucket)
             print(f'Uploaded JSON to Firebase storage')
             print('-'*20)
-        except Exception as e:
+        except Exception:
             print(f'Failed to get dataset {dataset.name}')
             traceback.print_exc()
 

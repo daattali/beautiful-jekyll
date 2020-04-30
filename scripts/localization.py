@@ -211,3 +211,17 @@ SAITAMA_CITIES = {
     'ときがわ町': 'Thị trấn Tokigawa',
     '行田市': 'Gyoda',
 }
+
+KANAGAWA_CITIES = {
+    '相模原市': 'Sagamihara',
+    '横浜市': 'Yokohama',
+    '鎌倉市': 'Kamakura',
+    '厚木市': 'Atsugi',
+    '小田原市': 'Odawara',
+    '平塚市': 'Hiratsuka',
+    '藤沢市': 'Fujisawa',
+    '川崎市': 'Kawasaki',
+    '茅ヶ崎市': 'Chigasaki',
+    '茅ケ崎市': 'Chigasaki',
+    '横須賀市': 'Yokosuka',
+}
