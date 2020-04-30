@@ -8,7 +8,9 @@ In the series of weird and annoying technical issues that I seem to be blessed w
 
 _TL,DR: Random ESXi disconnects after NIC replacement. The fix was to remove and recreate the management vmkernel (also did vMotion just in case)._
 
-In short, we removed some 1Gbps cards and added 10Gbps cards to make the cluster homogeneous. The management and VMotion vmkernels were tied to these uplinks. After we did the work on the hardware I reordered the portgroup and uplinks correctly so it matches the newer hosts. Then I quickly realised that the hosts were randomly losing pings and when I rebooted a host I had to restart the management network (not normal at all).
+In short, we removed some 1Gbps cards and added 10Gbps cards to make the cluster homogeneous. The management and VMotion vmkernels were tied to these uplinks. After we did the work on the hardware I reordered the portgroup and uplinks correctly so it matches the newer hosts. 
+
+Then I quickly realised that the hosts were randomly becoming not responsive in vCenter but replying to ping. When I rebooted a host I had to restart the management network (not normal at all). So the host would reply to ping but not on port 902 or 443 at random intervals which told me it wasn't a hardware issue.
 
 I updated the driver and firmware of the NIC but it wasn't that.
 
