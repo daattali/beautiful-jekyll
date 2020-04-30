@@ -7,7 +7,7 @@ comments: false
 ---
 
 # Introduction
-These resources Have been provided for a  Linux course I have had to intruct, it contains a command cheatsheet & posts that will help basic analysts be able use and research how to use linux.
+These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheatsheet & posts that will help basic analysts be able use and research how to use linux.
 
 <a name="Table-of-Contents"></a>
 # Table of Contents
