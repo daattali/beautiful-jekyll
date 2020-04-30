@@ -7,3 +7,14 @@ _site
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# Gem
+Gemfile.lock
+
+# Jupyter
+**/.ipynb_checkpoints/
+**/*.ipynb
+**/__pycache__/
+
+# Private key
+**/thongtincovid19_serviceaccount_privatekey.json
