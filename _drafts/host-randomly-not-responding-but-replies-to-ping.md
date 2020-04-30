@@ -6,11 +6,15 @@ DATE:
 ---
 In the series of weird and annoying technical issues that I seem to be blessed with, today I bring you one that falls in the category I despise the most, random disconnects.
 
-In short, we removed some 1Gbps cards and added 10Gbps cards to make the cluster homogeneous. The management and VMotion vmkernels were tied to these uplinks. After we did the work on the hardware I reordered the portgroup and uplinks correctly so it matches the newer hosts. Then I quickly realised that the hosts were randomly losing pings and when I rebooted a host I had to restart the management network (not normal at all). 
+TL,DR: Random ESXi disconnects after NIC replacement. The fix was to remove and recreate the management vmkernel (also did vMotion just in case).
+
+In short, we removed some 1Gbps cards and added 10Gbps cards to make the cluster homogeneous. The management and VMotion vmkernels were tied to these uplinks. After we did the work on the hardware I reordered the portgroup and uplinks correctly so it matches the newer hosts. Then I quickly realised that the hosts were randomly losing pings and when I rebooted a host I had to restart the management network (not normal at all).
+
+I updated the driver and firmware of the NIC but it wasn't that.
 
 I had a look at vodb.log on the host and found the following records:
 
-> 2020-04-30T07:25:58.464Z: \[netCorrelator\] 842494443us: \[vob.net.pg.uplink.transition.down\] Uplink: vmnic6 is down. Affected portgroup: Management Network. 1 uplinks up. Failed criteria: 128
+> **2020-04-30T07:25:58.464Z: \[netCorrelator\] 842494443us: \[vob.net.pg.uplink.transition.down\] Uplink: vmnic6 is down. Affected portgroup: Management Network. 1 uplinks up. Failed criteria: 128**
 >
 > 2020-04-30T07:25:58.464Z: \[netCorrelator\] 842494494us: \[vob.net.vmnic.linkstate.down\] vmnic vmnic6 linkstate down
 >
@@ -31,3 +35,19 @@ I had a look at vodb.log on the host and found the following records:
 > 2020-04-30T07:31:31.512Z: \[UserLevelCorrelator\] 1175533427us: \[vob.user.dcui.network.restart\] Restarting Management Network
 >
 > 2020-04-30T07:31:31.512Z: \[UserLevelCorrelator\] 1175533800us: \[esx.audit.dcui.network.restart\] A management interface Management Network has been restarted. Please consult ESXi Embedded and vCenter Server Setup Guide or follow the Ask VMware link for more information.
+
+I googled this "_Failed criteria 128_" that I had never encountered before and people were recommending all sorts of things like reverting to async driver but my other hosts that work fine have the native driver so didn't make sense. I think it was in an article not directly related that someone suggested recreating the management vmkernel because the hardware replacement can cause conflicts with the mac address of the vmkernel, issued based on the mac of the original NIC.
+
+I tried removing and recreating the management vmkernel and here it was, all fixed! You need to log on the DCUI as you will lose your SSH session once you remove the uplink.
+
+1. **Remove the vmkernel**
+
+<code>esxcli network ip interface remove -i vmk0</code>
+
+2. **Recreate the vmkernel**
+
+<code>esxcli network ip interface add -i vmk0 -p "Management Network"</code>
+
+3. **Reconfigure the network**
+
+Now you can go back to the DCUI to configure your management interface like you would the first time.
