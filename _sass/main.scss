@@ -5,21 +5,19 @@
 @import "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css";
 @import "//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css";
 
-
-
 /* variables */
 $color-background-white: #fff;
 $color-background-dark: #191919;
-$color-text-main: rgba(0,0,0,.84);
-$color-text-sub: rgba(0,0,0,.54);
+$color-text-main: rgba(0, 0, 0, 0.84);
+$color-text-sub: rgba(0, 0, 0, 0.54);
 $color-text-accent: #e03131;
 $color-text-green: #0f9d58;
 
-$font-sans-serif: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
-$font-serif: 'Times New Roman', Times, serif;
+$font-sans-serif: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+  "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+$font-serif: "Times New Roman", Times, serif;
 
 $gap: 8;
-
 
 /* common */
 body {
@@ -57,7 +55,7 @@ a:hover {
 }
 
 .covi-navbar .navbar-brand:hover,
-.covi-navbar .navbar-brand:focus ,
+.covi-navbar .navbar-brand:focus,
 .covi-navbar .nav li a:hover,
 .covi-navbar .nav li a:focus {
   color: $color-text-main;
@@ -65,15 +63,15 @@ a:hover {
 
 .covi-navbar .navbar-brand-logo {
   padding-top: 0;
-  -webkit-transition: padding .5s ease-in-out;
-  -moz-transition: padding .5s ease-in-out;
-  transition: padding .5s ease-in-out;
+  -webkit-transition: padding 0.5s ease-in-out;
+  -moz-transition: padding 0.5s ease-in-out;
+  transition: padding 0.5s ease-in-out;
 }
 .covi-navbar .navbar-brand-logo img {
   height: 50px;
-  -webkit-transition: height .5s ease-in-out;
-  -moz-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 .covi-navbar .navbar-brand-logo {
   padding-top: 5px;
@@ -180,7 +178,6 @@ nav.covi-nav-fixed {
   color: $color-text-main;
 }
 
-
 /* maps */
 #map-jp-overview {
   height: 500px;
@@ -222,7 +219,8 @@ nav.covi-nav-fixed {
 }
 
 /* featured link */
-.covi-featured-link, .covi-featured-link:hover {
+.covi-featured-link,
+.covi-featured-link:hover {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
@@ -237,7 +235,8 @@ nav.covi-nav-fixed {
   line-height: 17.1429px;
   color: $color-text-sub !important;
 }
-.covi-footage a, .covi-footage a:hover {
+.covi-footage a,
+.covi-footage a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -280,7 +279,7 @@ nav.covi-nav-fixed {
   font-size: 12px;
 }
 @media (max-width: 767px) {
-  .covi-post .covi-post__thumbnail > .media-object{
+  .covi-post .covi-post__thumbnail > .media-object {
     width: 80px !important;
   }
 }
@@ -308,7 +307,8 @@ nav.covi-nav-fixed {
 .slick-next.slick-arrow {
   right: 8px;
 }
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   line-height: 25px;
 }
 
@@ -336,7 +336,6 @@ h2.tl-headline {
   font-weight: 600 !important;
 }
 .tl-text-content {
-
 }
 h3.tl-headline-date {
   color: $color-text-sub;
@@ -352,7 +351,7 @@ footer {
   -webkit-font-smoothing: antialiased;
   background-color: $color-background-dark;
   box-sizing: border-box;
-  color: rgba($color: #fff, $alpha: .7);
+  color: rgba($color: #fff, $alpha: 0.7);
   flex-grow: 0;
   font-size: 18px;
   line-height: 27px;
@@ -362,7 +361,7 @@ footer {
 footer a,
 footer a:hover {
   text-decoration: none;
-  color: rgba($color: #fff, $alpha: .7);
+  color: rgba($color: #fff, $alpha: 0.7);
 }
 
 footer .fa-stack,
@@ -415,4 +414,40 @@ a.btn-social-icon:hover {
   .covi-heatmap-panel {
     width: calc((100% - 1px) / 3);
   }
+}
+
+/* select box */
+// @see https://www.filamentgroup.com/lab/select-css.html
+.covi-select {
+  display: inline;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23e03131%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+.covi-select::-ms-expand {
+  display: none;
+}
+.covi-select:hover {
+  border-color: #888;
+}
+.covi-select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+.covi-select option {
+  font-weight: normal;
 }
