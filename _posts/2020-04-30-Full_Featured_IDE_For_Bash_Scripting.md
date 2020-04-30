@@ -7,7 +7,6 @@ comments: false
 ---
 
 # Introduction
-
 I've had a few collegues ask me how I have a full featured Bash IDE for courses I have developed, So I thought i'd make a post to show people how to do it.
 
 ## Features
