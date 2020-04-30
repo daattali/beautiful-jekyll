@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Linux Resources
+title: Basic Linux Resources (V2.0)
 subtitle: The resources I used to help make a basic Linux course.
 tags: [sysadmin, linux]
 comments: false
@@ -9,7 +9,6 @@ comments: false
 # Introduction
 These resources Have been provided for a  Linux course I have had to intruct, it contains a command cheatsheet & posts that will help basic analysts be able use and research how to use linux.
 
-# Basic Linux courses resources (V2.0)
 <a name="Table-of-Contents"></a>
 # Table of Contents
    * [Bash keyboard commands](#bash-keyboard-commands)
