@@ -36,7 +36,7 @@ Thomson Reuters Point Carbon (contributing author) 2015 - [2030 EU Carbon Price 
 
 Thomson Reuters Point Carbon (contributing author) 2014 - [Carbon Market Survey 2014 - Into Smoother Waters](https://www.dropbox.com/s/x3a12ra42s8os6q/Carbon%20Market%20Survey%202014%20-%20Into%20Smoother%20Waters.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2013 - [Carbon 2013 - At a tipping point](https://emildimantchev.files.wordpress.com/2016/06/carbon-2013-at-a-tipping-point.pdf)
+Thomson Reuters Point Carbon (lead author) 2013 - [Carbon Market Survey 2013 - At a tipping point](https://www.researchgate.net/publication/320882231_Carbon_2013_At_a_Tipping_Point?_sg=5M98oFOZeyGxyUWhIMpSuFgzYsxM_JSBX0ci5zu8_yAat6tFxKt_iguNIYA_hVvL1xKVgEsCtOxnPtUI3VtCqS0gAzImeUvLyQff5qEV.Xk8nZ_xO9upQj9AQ1GG_Adsj0PXFdxuDqaxs9vxIJN4H40gGiVNxCtpte24IrKhLFxKXd0pNfSNG2KFhmSfP3A)
 
 Thomson Reuters Point Carbon (lead author) 2012 - [Cloudy skies ahead for aviation in the EU ETS](https://www.dropbox.com/s/181hl62gkulwgcg/Cloudy%20skies%20ahead%20for%20aviation%20in%20the%20EU%20ETS.pdf?dl=0)
 
