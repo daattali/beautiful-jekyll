@@ -1,4 +1,4 @@
-// Dean Attali / Beautiful Jekyll 2016
+// Dean Attali / Beautiful Jekyll 2020
 
 var main = {
 
