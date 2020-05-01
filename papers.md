@@ -26,28 +26,28 @@ Thomson Reuters Point Carbon (**contributing author**) 2016 - [Animal Spirits ve
 
 ## Other carbon pricing work at Thomson Reuters Point Carbon
 
-Thomson Reuters Point Carbon (contributing author) 2016 - [California Dreaming: Implications of an EU ETS Price Floor](https://www.dropbox.com/s/y78glqnwphhofl1/California%20Dreaming%20-%20Implications%20of%20an%20EU%20ETS%20price%20floor.pdf?dl=0)
+Thomson Reuters Point Carbon (**contributing author**) 2016 - [California Dreaming: Implications of an EU ETS Price Floor](https://www.dropbox.com/s/y78glqnwphhofl1/California%20Dreaming%20-%20Implications%20of%20an%20EU%20ETS%20price%20floor.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2015 - [EU ETS Phase 4 Proposal: Learning to Share](https://www.dropbox.com/s/b94xfb6m82kri3a/Learning%20to%20Share%20EU%20ETS%20Phase%204%20Proposal_.pdf?dl=0)
+Thomson Reuters Point Carbon (**contributing author**) 2015 - [EU ETS Phase 4 Proposal: Learning to Share](https://www.dropbox.com/s/b94xfb6m82kri3a/Learning%20to%20Share%20EU%20ETS%20Phase%204%20Proposal_.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2014 - [Carbon Market Survey 2015 - Consolidation Is The New Trend ](https://www.dropbox.com/s/pghph9t194vxlpy/Carbon%20Market%20Survey%202015.pdf?dl=0)
+Thomson Reuters Point Carbon (**contributing author**) 2014 - [Carbon Market Survey 2015 - Consolidation Is The New Trend ](https://www.dropbox.com/s/pghph9t194vxlpy/Carbon%20Market%20Survey%202015.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2015 - [2030 EU Carbon Price Forecast: Peering Through The Political Fog](https://www.dropbox.com/s/rlertp0yj6avcbt/Peering%20through%20the%20political%20fog.pdf?dl=0)
+Thomson Reuters Point Carbon (**contributing author**) 2015 - [2030 EU Carbon Price Forecast: Peering Through The Political Fog](https://www.dropbox.com/s/rlertp0yj6avcbt/Peering%20through%20the%20political%20fog.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2014 - [Carbon Market Survey 2014 - Into Smoother Waters](https://www.dropbox.com/s/x3a12ra42s8os6q/Carbon%20Market%20Survey%202014%20-%20Into%20Smoother%20Waters.pdf?dl=0)
+Thomson Reuters Point Carbon (**contributing author**) 2014 - [Carbon Market Survey 2014 - Into Smoother Waters](https://www.dropbox.com/s/x3a12ra42s8os6q/Carbon%20Market%20Survey%202014%20-%20Into%20Smoother%20Waters.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2013 - [Carbon Market Survey 2013 - At a tipping point](https://www.researchgate.net/publication/320882231_Carbon_2013_At_a_Tipping_Point?_sg=5M98oFOZeyGxyUWhIMpSuFgzYsxM_JSBX0ci5zu8_yAat6tFxKt_iguNIYA_hVvL1xKVgEsCtOxnPtUI3VtCqS0gAzImeUvLyQff5qEV.Xk8nZ_xO9upQj9AQ1GG_Adsj0PXFdxuDqaxs9vxIJN4H40gGiVNxCtpte24IrKhLFxKXd0pNfSNG2KFhmSfP3A)
+Thomson Reuters Point Carbon (**lead author**) 2013 - [Carbon Market Survey 2013 - At a tipping point](https://www.researchgate.net/publication/320882231_Carbon_2013_At_a_Tipping_Point?_sg=5M98oFOZeyGxyUWhIMpSuFgzYsxM_JSBX0ci5zu8_yAat6tFxKt_iguNIYA_hVvL1xKVgEsCtOxnPtUI3VtCqS0gAzImeUvLyQff5qEV.Xk8nZ_xO9upQj9AQ1GG_Adsj0PXFdxuDqaxs9vxIJN4H40gGiVNxCtpte24IrKhLFxKXd0pNfSNG2KFhmSfP3A)
 
-Thomson Reuters Point Carbon (lead author) 2012 - [Cloudy skies ahead for aviation in the EU ETS](https://www.dropbox.com/s/181hl62gkulwgcg/Cloudy%20skies%20ahead%20for%20aviation%20in%20the%20EU%20ETS.pdf?dl=0)
+Thomson Reuters Point Carbon (**lead author**) 2012 - [Cloudy skies ahead for aviation in the EU ETS](https://www.dropbox.com/s/181hl62gkulwgcg/Cloudy%20skies%20ahead%20for%20aviation%20in%20the%20EU%20ETS.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2012 - [California-Acre partnership - setting the stage for compliance REDD credits](https://www.dropbox.com/s/bd26g50ekkztpp7/REDD%20in%20California.pdf?dl=0)
+Thomson Reuters Point Carbon (**lead author**) 2012 - [California-Acre partnership - setting the stage for compliance REDD credits](https://www.dropbox.com/s/bd26g50ekkztpp7/REDD%20in%20California.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2012 - [Carbon Market Survey 2012 - A market waiting for Godot](https://www.dropbox.com/s/d6fbnejqz6dgq17/carbon_2012.pdf?dl=0)
+Thomson Reuters Point Carbon (**contributing author**) 2012 - [Carbon Market Survey 2012 - A market waiting for Godot](https://www.dropbox.com/s/d6fbnejqz6dgq17/carbon_2012.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2012 - [Phase 3 allocation: racing against the clock](https://www.dropbox.com/s/oa6d04truzsp178/Phase%203_Racing%20against%20the%20clock.pdf?dl=0)
+Thomson Reuters Point Carbon (**lead author**) 2012 - [Phase 3 allocation: racing against the clock](https://www.dropbox.com/s/oa6d04truzsp178/Phase%203_Racing%20against%20the%20clock.pdf?dl=0)
 
 ## Theses
 
-Dimanchev, E. 2019 - [Air Quality Co-benefits of Renewable Energy Policy in the U.S.](https://globalchange.mit.edu/publication/17130) - Master's thesis, Massachusetts Institute of Technology, IDSS (Sept, 2018) - Granted Best Thesis in Technology and Policy award (2019)
+**Dimanchev, E**. 2019 - [Air Quality Co-benefits of Renewable Energy Policy in the U.S.](https://globalchange.mit.edu/publication/17130) - Master's thesis, Massachusetts Institute of Technology, IDSS (Sept, 2018) - Granted Best Thesis in Technology and Policy award (2019)
 
-Dimanchev, E. 2011 - [Biodiversity Conservation Through REDD+](https://emildimantchev.files.wordpress.com/2016/06/biodiversity-conservation-through-redd.pdf) - Senior Thesis, Colorado College - Granted Most Outstanding Thesis in Economics award
+**Dimanchev, E**. 2011 - [Biodiversity Conservation Through REDD+](https://emildimantchev.files.wordpress.com/2016/06/biodiversity-conservation-through-redd.pdf) - Senior Thesis, Colorado College - Granted Most Outstanding Thesis in Economics award
