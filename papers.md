@@ -42,7 +42,7 @@ Thomson Reuters Point Carbon (lead author) 2012 - [Cloudy skies ahead for aviati
 
 Thomson Reuters Point Carbon (lead author) 2012 - [California-Acre partnership - setting the stage for compliance REDD credits](https://www.dropbox.com/s/bd26g50ekkztpp7/REDD%20in%20California.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2012 - [Carbon 2012 - A market waiting for Godot](https://www.dropbox.com/s/d6fbnejqz6dgq17/carbon_2012.pdf?dl=0)
+Thomson Reuters Point Carbon (contributing author) 2012 - [Carbon Market Survey 2012 - A market waiting for Godot](https://www.dropbox.com/s/d6fbnejqz6dgq17/carbon_2012.pdf?dl=0)
 
 Thomson Reuters Point Carbon (lead author) 2012 - [Phase 3 allocation: racing against the clock](https://www.dropbox.com/s/oa6d04truzsp178/Phase%203_Racing%20against%20the%20clock.pdf?dl=0)
 
