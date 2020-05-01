@@ -18,25 +18,27 @@ Thomson Reuters Point Carbon (contributing author) 2016 - [California Dreaming: 
 
 Thomson Reuters Point Carbon (contributing author) 2016 - [Animal Spirits versus the Big Picture: Why the outlook for the carbon price is still bullish](https://emildimantchev.files.wordpress.com/2017/05/animal-spirits-versus-the-big-picture-eu-carbon-price-outlook.pdf)
 
-Thomson Reuters Point Carbon (contributing author) 2015 - [EU ETS Phase 4 Proposal: Learning to Share](https://emildimantchev.files.wordpress.com/2018/03/learning-to-share-eu-ets-phase-4-proposal_.pdf)
+Thomson Reuters Point Carbon (contributing author) 2015 - [EU ETS Phase 4 Proposal: Learning to Share](https://www.dropbox.com/s/b94xfb6m82kri3a/Learning%20to%20Share%20EU%20ETS%20Phase%204%20Proposal_.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2015 - [2030 EU Carbon Price Forecast: Peering through the political fog](https://emildimantchev.files.wordpress.com/2017/07/peering-through-the-political-fog.pdf)
+Thomson Reuters Point Carbon (contributing author) 2014 - [Carbon Market Survey 2015 - Consolidation Is The New Trend ](https://www.dropbox.com/s/pghph9t194vxlpy/Carbon%20Market%20Survey%202015.pdf?dl=0)
+
+Thomson Reuters Point Carbon (contributing author) 2015 - [2030 EU Carbon Price Forecast: Peering Through The Political Fog](https://www.dropbox.com/s/rlertp0yj6avcbt/Peering%20through%20the%20political%20fog.pdf?dl=0)
 
 Thomson Reuters Point Carbon (lead author) 2014- [Look before you leap: analysis on the design of the Market Stability Reserve](https://www.dropbox.com/s/gn32t1errchg8v8/Look%20before%20you%20leap%20-%20MSR%20Design.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2014 - [Winds of Reform: Examining the design parameters of the Market Stability Reserve](https://www.dropbox.com/s/3jsty94woblbe2t/Winds%20of%20Reform%20-%20MSR%20Design%20Parameters.pdf?dl=0)
+Thomson Reuters Point Carbon (contributing author) 2014 - [Carbon Market Survey 2014 - Into Smoother Waters](https://www.dropbox.com/s/x3a12ra42s8os6q/Carbon%20Market%20Survey%202014%20-%20Into%20Smoother%20Waters.pdf?dl=0)
 
-Thomson Reuters Point Carbon (contributing author) 2014 - [Carbon 2014 - Into Smoother Waters](https://emildimantchev.files.wordpress.com/2016/06/carbon-market-survey-2014-into-smoother-waters.pdf)
+Thomson Reuters Point Carbon (lead author) 2014 - [Winds of Reform: Examining the design parameters of the Market Stability Reserve](https://www.dropbox.com/s/3jsty94woblbe2t/Winds%20of%20Reform%20-%20MSR%20Design%20Parameters.pdf?dl=0)
 
 Thomson Reuters Point Carbon (lead author) 2013 - [Carbon 2013 - At a tipping point](https://emildimantchev.files.wordpress.com/2016/06/carbon-2013-at-a-tipping-point.pdf)
 
-Thomson Reuters Point Carbon (contributing author) 2012 - [Carbon 2012 - A market waiting for Godot](https://emildimantchev.files.wordpress.com/2017/04/carbon_2012.pdf)
+Thomson Reuters Point Carbon (lead author) 2012 - [Cloudy skies ahead for aviation in the EU ETS](https://www.dropbox.com/s/181hl62gkulwgcg/Cloudy%20skies%20ahead%20for%20aviation%20in%20the%20EU%20ETS.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2012 - [Cloudy skies ahead for aviation in the EU ETS](https://emildimantchev.files.wordpress.com/2016/10/point-carbon-analysis.pdf)
+Thomson Reuters Point Carbon (lead author) 2012 - [California-Acre partnership - setting the stage for compliance REDD credits](https://www.dropbox.com/s/bd26g50ekkztpp7/REDD%20in%20California.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2012 - [California-Acre partnership - setting the stage for compliance REDD credits](https://emildimantchev.files.wordpress.com/2017/03/1-1909008redd-cma-2012.pdf)
+Thomson Reuters Point Carbon (contributing author) 2012 - [Carbon 2012 - A market waiting for Godot](https://www.dropbox.com/s/d6fbnejqz6dgq17/carbon_2012.pdf?dl=0)
 
-Thomson Reuters Point Carbon (lead author) 2012 - [Phase 3 allocation: racing against the clock](https://emildimantchev.files.wordpress.com/2017/09/phase-3_racing-against-the-clock.pdf)
+Thomson Reuters Point Carbon (lead author) 2012 - [Phase 3 allocation: racing against the clock](https://www.dropbox.com/s/oa6d04truzsp178/Phase%203_Racing%20against%20the%20clock.pdf?dl=0)
 
 ## Theses
 
