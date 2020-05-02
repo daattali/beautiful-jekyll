@@ -9,7 +9,12 @@ If you didn't see the [news](https://devblogs.microsoft.com/visualstudio/introdu
 
 What really got me excited is the ability to self host a codespace environment - you can use your web browser to securely develop software from your own Virtual Machine, server or desktop.
 
-### Great things about
+### Great things about Visual Studio codespaces
+- Use Visual Studo Code from your browser
+- Use extenstions for Visual Studio code in your browser
+- Easy to edit code or documentation without the need for time consuming local installs
+- Want to update your code using Visual Studio Code from your iPad, tablet or phone? You can just open the web browser and you will have access to your development environment
+- Because Visual Studio codespaces is authenticated using Azure AD you get all the benefits of [MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) and [Azure AD Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) to protect your development environment 
 
 ### Benefits of self hosted
 - Use hardware you already have so you don't pay
