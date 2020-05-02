@@ -117,7 +117,7 @@ If you don't include YAML then your file will not use this template.
 
 ## Supported parameters
 
-These are the parameters that **Beautiful Jekyll** supports adding to the YAML front matter of any page. Remember to also look in the `_config.yml` file to see additional settings.
+Below is a list of the parameters that **Beautiful Jekyll** supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional settings.
 
 ### Main paramaters
 
