@@ -1,7 +1,3 @@
-# CHANGELOG
-
-This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
-
 ## v3.0.0
 
 Date: TBD
