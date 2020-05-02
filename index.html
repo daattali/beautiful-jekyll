@@ -55,9 +55,11 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
                   {% endif %}
                 </a>
                 <div>
-                  <h4>
-                    <i class="fas fa-bookmark" style="color: #e03131;"></i>&nbsp;&nbsp;{{post.title}}
-                  </h4>
+                  <a class="covi-featured-post__title" href="{{ post.url | relative_url }}">
+                    <h4>
+                      <i class="fas fa-bookmark" style="color: #e03131;"></i>&nbsp;&nbsp;{{post.title}}
+                    </h4>
+                  </a>
                 </div>
               </div>
             </div>
