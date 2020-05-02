@@ -121,7 +121,7 @@ These are the parameters that **Beautiful Jekyll** supports adding to the YAML f
 
 ### Main paramaters
 
-These are the simple YAML parameters that you are most likely to use on most page.
+These are the basic YAML parameters that you are most likely to use on most pages.
 
 Parameter   | Description
 ----------- | -----------
@@ -133,7 +133,7 @@ comments    | If you want do add comments to a specific page, use `comments: tru
 
 ### Less commonly used parameters
 
-These are parameters that you may not use often, but can come in handy for some people.
+These are parameters that you may not use often, but can come in handy sometimes.
 
 Parameter   | Description
 ----------- | -----------
