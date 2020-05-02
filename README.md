@@ -34,12 +34,11 @@
 - **SIMPLE**: The primary goal of Beautiful Jekyll is to allow literally *anyone* to create a website in a few minutes.
 - **Mobile-first**: Designed to look great on both large-screen and small-screen (mobile) devices.   
 - **Highly customizable**: Many personalization settings such as changing the background colour/image, adding a logo.  
-- **Two-level navigation menu**: If you have many pages and your menu is getting cluttered, separate your menu into two levels.
-- **Flexible usage**: Install Beautiful Jekyll directly from GitHub or using a Ruby gem - choose the right [development method](#build-your-website-in-3-steps) for you.  
+- **Flexible usage**: Use Beautiful Jekyll directly on GitHub or using a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.  
 - **Battle-tested**:  By using Beautiful Jekyll, you'll be joining tens of thousands of users who used this theme since 2015.  
 - **Links to your social media**: You can easily add links to any of your social media accounts in the footer of every page.  
-- **Comments support**: Add comments to any page using one of the supported commenting platforms: [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).  
-- **Sharing blog posts on social media**: By default, all blog posts have buttons to allow people to share on Twitter/Facebook/LinkedIn.  
+- **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).  
+- **Share blog posts on social media**: By default, all blog posts have buttons to allow people to share on Twitter/Facebook/LinkedIn.
 - **Tags**: Any blog post can be tagged with keywords, and an index page showing all the tags is automatically generated.
 - **Tracking analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.  
 - **Photos support**: Any page can have a cover photo around its title, and any blog post can have an associated image.  
@@ -82,9 +81,13 @@ If you followed the easy method above, then you already have your site and you c
 
 ## Add your own content
 
-To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It's much easier to write markdown than HTML, so I suggest you do that (use [this great tutorial](https://markdowntutorial.com/) if you need to learn markdown in 5 minutes). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there's a word in bold, a link, a few bullet points), and if you click on the pencil icon to edit the file, you'll see the markdown that generated the pretty text. Very easy!
+To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file. It's much easier to write markdown than HTML, so I suggest you do that ([here's a great tutorial](https://markdowntutorial.com/) if you need to learn markdown in 5 minutes). You can look at some files on this demo site to get an idea of how to write markdown.
+
+To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there's a word in bold, a link, a few bullet points), and if you click on the pencil icon to edit the file, you'll see the markdown code that generated the pretty text. Very easy!
 
 In contrast, look at [`tags.html`](./tags.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
+
+Any markdown or HTML file that you create will be available on your website under `https://<yourusername>.github.io/<pagename>`. For example, if you create a file `about.md` (or `about.html`) then it'll exist at `https://<yourusername>.github.io/about`. 
 
 Files you create inside the [`_posts`](./_posts) directory will be treated as blog entries. You can look at the existing files there to get an idea of how to write blog posts. Note the format of the blog post files - they must follow the naming convention of `YEAR-MONTH-DAY-title.md`. After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
 
