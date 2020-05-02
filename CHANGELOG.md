@@ -2,25 +2,39 @@
 
 This file lists all non-trivial changes to Beautiful Jekyll. I often make small changes to documentation, to the demo site, or to the general look-and-feel. These and other minor changes will not be listed here.
 
-**2020-04-29** Upgrade gem to 2.3.0 to include all new features
+## v3.0.0
 
-**2020-04-28** Add YAML option `footer-extra` for including custom content in the footer
+Date: TBD
 
-**2020-04-28** Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
+- **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
+- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`.
+- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`. 
+- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people.
+- Added `navbar-border-col` setting in the config file.
+- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px.
+- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015.
+- Improvements to the README instructions.
 
-**2020-04-28** Add YAML option `nav-short` to have navbar permanently collapsed
+## v2.3.0 
 
-**2020-04-28** Add social network link: Calendly
+2020-04-29
 
-**2020-04-28** Fix bug where RSS link in footer was showing even when turned off
+- Add YAML option `footer-extra` for including custom content in the footer
+- Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
+- Add YAML option `nav-short` to have navbar permanently collapsed
+- Add social network link: Calendly
+- Fix bug where RSS link in footer was showing even when turned off
 
-**2020-04-27** Upgrade gem to 2.2.0 to improve some documentation and fix small bugs from remote_theme migration
+## v2.2.0
 
-**2020-04-27** Moved the demo site to an independent URL: https://beautifuljekyll.com 
+2020-04-27
 
-**2020-04-27** Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
+- Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
+- Moved the demo site to an independent URL: https://beautifuljekyll.com 
+- Major documentation overhaul and cleanup of old files 
+- Fix a few bugs from the remote_theme migration
 
-**2020-04-27** Major documentation overhaul and cleanup of old files 
+## Prior to v2.2.0
 
 **2020-04-26** Beautiful-Jekyll official ruby gem version 2.0.0
 
