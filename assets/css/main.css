@@ -229,12 +229,12 @@ img {
 @media (min-width: 768px) {
   .navbar-custom {
     padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .navbar-custom .navbar-brand-logo {
     padding-top: 0;
-	padding-bottom: 0;
+    padding-bottom: 0;
   }
 
   .navbar-custom .navbar-brand-logo img {
@@ -243,7 +243,7 @@ img {
 
   .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+    padding-right: 0.9375rem;
   }
   .navbar-expand-md .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
@@ -293,7 +293,7 @@ img {
 @media (max-width: 767px) {
   .navbar-custom .navbar-collapse {
     border-top: 1px solid {{ site.navbar-border-col | default: "#EAEAEA" }};
-	margin: 0 -1rem;
+    margin: 0 -1rem;
   }
 
   .navbar-custom .navbar-nav {
@@ -318,7 +318,18 @@ img {
   left: 50%;
   width: 3.125rem;
   margin-top: 1.75rem;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
 }
+.navbar-custom.top-nav-short .avatar-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility linear 0.5s, opacity 0.5s ease-in-out;
+  -webkit-transition: visibility linear 0.5s, opacity 0.5s ease-in-out;
+  -moz-transition: visibility linear 0.5s, opacity 0.5s ease-in-out;
+}
+
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
   display: inline-block;
