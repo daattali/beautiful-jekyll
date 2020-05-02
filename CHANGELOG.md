@@ -30,29 +30,23 @@ Date: TBD
 - Major documentation overhaul and cleanup of old files 
 - Fix a few bugs from the remote_theme migration
 
-## Prior to v2.2.0
+## v2.0.0
 
-**2020-04-26** Beautiful-Jekyll official ruby gem version 2.0.0
+2020-04-26
 
-**2020-04-26** Consolidated the demo site, the ruby gem, and the master branch into one
+- Beautiful-Jekyll v2.0.0 available as an official Ruby gem
+- Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
+- Consolidated the demo site, the ruby gem, and the master branch into one
+- Added a `home` layout and used it in the index page
+- Added readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
+- Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
+- Added support for configuring lang attribute on `html` tag (#608) (thanks @skalee)
+- Added ability to disable round logo (thanks @gpotter2)
+- Added support for Utterances comments (#596) (thanks @colynn)
+- Removed 'just-comments' as it's getting killed at the end of the year
+- Upgraded font-awesome to 5.12.1 (#587) (thanks @cketti)
 
-**2020-04-26** Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
-
-**2020-04-25** Added a `home` layout and used it in the index page
-
-**2020-04-24** Adding readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
-
-**2020-04-23** Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
-
-**2020-04-22** Add support for configuring lang attribute on &lt;html&gt; tag (#608) (thanks @skalee)
-
-**2020-04-18** Add ability to disable round logo (thanks @gpotter2)
-
-**2020-04-01** Add support for Utterances comments (#596) (thanks @colynn)
-
-**2020-03-23** Remove just-comments as it's getting killed at the end of the year
-
-**2020-03-16** Upgrade font-awesome to 5.12.1 (#587) (thanks @cketti)
+## Prior to 2020
 
 **2018-12-24** Add support for Staticman comments (#440) (thanks @VincentTam)
 
