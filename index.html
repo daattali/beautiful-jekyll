@@ -10,9 +10,9 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
   <section class="bg--white covi-section no-padding-bottom" id="featured">
     <div class="container">
       <div class="covi-section__content">
-        <div class="row" style="display: flex; flex-wrap: wrap;">
+        <div class="covi-featured-posts" style="display: flex; flex-wrap: wrap;">
           {% for post in featured_posts %}
-          <div class="col-md-4" style="margin-bottom: 24px;">
+          <div class="covi-featured-post" style="margin-bottom: 24px;">
             <div class="panel panel-default" style="height: 100%;">
               <div class="panel-body">
                 <a href="{{ post.url | relative_url }}">
@@ -55,9 +55,11 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
                   {% endif %}
                 </a>
                 <div>
-                  <h4>
-                    <i class="fas fa-bookmark" style="color: #e03131;"></i>&nbsp;&nbsp;{{post.title}}
-                  </h4>
+                  <a class="covi-featured-post__title" href="{{ post.url | relative_url }}">
+                    <h4>
+                      <i class="fas fa-bookmark" style="color: #e03131;"></i>&nbsp;&nbsp;{{post.title}}
+                    </h4>
+                  </a>
                 </div>
               </div>
             </div>

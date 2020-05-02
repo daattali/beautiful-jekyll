@@ -460,3 +460,24 @@ a.btn-social-icon:hover {
 .covi-card {
   margin-bottom: 24px;
 }
+
+/* featured posts */
+.covi-featured-posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.covi-featured-post {
+  width: 100%;
+}
+.covi-featured-post__title,
+.covi-featured-post__title:hover {
+  text-decoration: none;
+  color: $color-text-main;
+}
+@media (min-width: 769px) {
+  .covi-featured-post {
+    width: calc((100% - 1px)/3);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
