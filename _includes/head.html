@@ -30,12 +30,6 @@
     {% endfor %}
   {% endif %}
 
-  {% if layout.common-googlefonts %}
-    {% for font in layout.common-googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}">
-    {% endfor %}
-  {% endif %}
-
   {% if page.ext-css %}
     {% for css in page.ext-css %}
       {% include ext-css.html css=css %}
@@ -48,13 +42,7 @@
     {% endfor %}
   {% endif %}
 
-  {% if page.googlefonts %}
-    {% for font in page.googlefonts %}
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}">
-    {% endfor %}
-  {% endif %}
-
-    <!-- Facebook OpenGraph tags -->
+  <!-- Facebook OpenGraph tags -->
   {% if site.fb_app_id %}
   <meta property="fb:app_id" content="{{ site.fb_app_id }}">
   {% endif %}
