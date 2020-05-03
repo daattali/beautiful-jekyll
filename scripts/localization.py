@@ -260,7 +260,7 @@ CHIBA_CITIES = {
     '銚子市': 'Choshi',
     '鎌ケ谷市': 'Kamagaya',
     '袖ケ浦市': 'Sodegaura',
-    '横芝光町': 'Thị traans Yokoshibahikari',
+    '横芝光町': 'Thị trấn Yokoshibahikari',
     '芝山町': 'Thị trấn Shibayama',
     '勝浦市': 'Katsuura',
     '君津市': 'Kimitsu',
