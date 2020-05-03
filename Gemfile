@@ -1,9 +1,6 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem "jekyll"
-gem "json"
-gem "hash-joiner"
-gem "jekyll-sitemap"
-# enable tzinfo-data for local build
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'
+source "https://rubygems.org"
+
+gemspec
+

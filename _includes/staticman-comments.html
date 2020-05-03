@@ -1,4 +1,5 @@
 {% if site.staticman.repository and site.staticman.branch %}
+<div class="staticman-comments">
   <div class="page__comments">
     <!-- Start static comments -->
     <div class="js-comments">
@@ -24,7 +25,7 @@
         <div class="form-group">
           <label for="comment-form-message">{{ site.data.ui-text[site.locale].comment_form_comment_label | default: "Comment" }} <small class="required">*</small></label><br>
           <textarea type="text" rows="12" cols="36" id="comment-form-message" name="fields[message]" tabindex="1"></textarea>
-          <div class="small help-block"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
+          <div class="small form-text"><a href="https://daringfireball.net/projects/markdown/">{{ site.data.ui-text[site.locale].comment_form_md_info | default: "Markdown is supported." }}</a></div>
         </div>
         <div class="form-group">
           <label for="comment-form-name">{{ site.data.ui-text[site.locale].comment_form_name_label | default: "Name" }} <small class="required">*</small></label>
@@ -74,8 +75,9 @@
   <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
   <script>
     if (typeof jQuery == 'undefined') {
-      document.write('<script src="{{ "/js/jquery-1.11.2.min.js" | relative_url }}"></scr' + 'ipt>');
+      document.write('<script src="{{ "/assets/js/jquery-1.11.2.min.js" | relative_url }}"></scr' + 'ipt>');
     }
   </script>
-  <script src="{{ "/js/staticman.js" | relative_url }}"></script>
+  <script src="{{ "/assets/js/staticman.js" | relative_url }}"></script>
+</div>
 {% endif %}
