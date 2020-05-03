@@ -41,30 +41,40 @@ class Dataset(object):
         self.dataframe[column] = (t[0] + '/' + t[1]).fillna(na_value)
         return self.dataframe[column]
 
-    def _localize_age(self, column, na_value='Đang điều tra'):
+    def _localize_age(self, column, na_value='Không rõ'):
         self.dataframe[column] = self.dataframe[column].str.replace('代', 's')
         self.dataframe[column].replace({
             '未就学児': 'Dưới 3',
             '就学児': '3-9',
             '10歳未': 'Dưới 10',
             '10歳未満': 'Dưới 10',
+            '90s以上': 'Trên 90',
+            '90歳以上': 'Trên 90',
             '100歳以': 'Trên 100',
-            '不': 'Không rõ',
-            '－': 'Không rõ',
-            'ー': 'Không rõ',
-            '調査中': 'Đang điều tra',
-            '非公表': 'Không công bố',
+            '100歳以上': 'Trên 100',
+            '100s以上': 'Trên 100',
+            '不': na_value,
+            '－': na_value,
+            'ー': na_value,
+            '調査中': na_value,
+            '非公表': na_value,
+            '同意なし': na_value,
+            '公表しない': na_value,
         }, inplace=True)
         self.dataframe[column].fillna(na_value, inplace=True)
         return self.dataframe[column]
 
-    def _localize_sex(self, column, na_value='Đang điều tra'):
+    def _localize_sex(self, column, na_value='Không công bố'):
         self.dataframe[column].replace({
             '男性': 'Nam',
             '女性': 'Nữ',
             '女児': 'Nữ',
-            '調査中': 'Đang điều tra',
-            '－': 'Đang điều tra',
+            '調査中': na_value,
+            '－': na_value,
+            '同意なし': na_value,
+            '非公表': na_value,
+            '公表しない': na_value,
+            '不明': na_value,
         }, inplace=True)
         self.dataframe[column].fillna(na_value, inplace=True)
         return self.dataframe[column]

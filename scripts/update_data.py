@@ -77,25 +77,16 @@ class TokyoPatientsDataset(datasets.CsvDataset):
             '土': '7',
         }, inplace=True)
         self.dataframe[self.COL_PATIENT_ADDRESS].replace({
+            **localization.PREFECTURES,
             '湖北省武漢市': 'Vũ Hán, Hồ Bắc',
             '湖南省長沙市': 'Trường Sa, Hồ Nam',
             '都内': 'Nội đô Tokyo',
             '都外': 'Ngoài Tokyo',
             '調査中': 'Đang điều tra',
-            **localization.PREFECTURES,
         }, inplace=True)
-        self.dataframe[self.COL_PATIENT_SEX].replace({
-            '男性': 'Nam',
-            '女性': 'Nữ',
-            '不明': 'Không rõ',
-            '調査中': 'Đang điều tra',
-        }, inplace=True)
-        self.dataframe[self.COL_PATIENT_AGE] = self.dataframe[self.COL_PATIENT_AGE].str.replace('代', 's')
-        self.dataframe[self.COL_PATIENT_AGE].replace({
-            '10歳未': 'Dưới 10',
-            '100歳以': 'Trên 100',
-            '不': 'Không rõ',
-        }, inplace=True)
+        
+        self._localize_age(self.COL_PATIENT_SEX)
+        self._localize_age(self.COL_PATIENT_AGE)
 
         return self.dataframe
 
@@ -224,6 +215,7 @@ class PatientByCityTokyoDataset(datasets.JsonDataset):
 
     def _localize(self):
         self.dataframe[self.COL_LABEL_VIETNAMESE] = self.dataframe[self.COL_LABEL].replace({
+            **localization.PREFECTURES,
             **localization.TOKYO_CITIES,
             '都外': 'Ngoài Tokyo',
             '調査中': 'Đang điều tra',
@@ -271,15 +263,12 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
             self.COL_STATUS,
             self.COL_DISCHARGED,
         ]
-        self.dataframe[self.COL_AGE].replace({
-            '未就学児': 'Dưới 3',
-            '就学児': '3-9',
-        }, inplace=True)
-        self.dataframe[self.COL_SEX].replace({
-            '女性': 'Female',
-            '男性': 'Male',
-        }, inplace=True)
+        
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+        
         self.dataframe[self.COL_LOCATION].replace({
+            **localization.PREFECTURES,
             **localization.OSAKA_CITIES,
             '府外': 'Ngoài Osaka',
             '大阪府外': 'Ngoài Osaka',
@@ -336,13 +325,12 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
         self._localize_sex(self.COL_SEX)
 
         self.dataframe[self.COL_LOCATION].replace({
+            **localization.PREFECTURES,
             **localization.SAITAMA_CITIES,
             '調査中': 'Đang điều tra',
             '川口市外': 'Ngoài Kawaguchi',
             '県外': 'Ngoài tỉnh',
             '埼玉県外': 'Ngoài tỉnh',
-            '埼玉県': 'Tỉnh Saitama',
-            '東京都': 'Tokyo',
         }, inplace=True)
         self.dataframe[self.COL_LOCATION].fillna('Đang điều tra', inplace=True)
 
@@ -375,6 +363,7 @@ class PatientByCityKanagawaDataset(datasets.CsvDataset):
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('及び都', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健福祉事務所管', '市')
         self.dataframe[self.COL_LOCATION].replace({
+            **localization.PREFECTURES,
             **localization.KANAGAWA_CITIES,
             '': 'Tỉnh Kanagawa',
             'スペイン（横浜市発表）': 'Yokohama',
@@ -391,6 +380,64 @@ class PatientByCityKanagawaDataset(datasets.CsvDataset):
 
         return self.dataframe
 
+    
+class PatientByCityChibaDataset(datasets.JsonDataset):
+    URL = 'https://raw.githubusercontent.com/civictechzenchiba/covid19-chiba/development/data/data.json'
+    NAME = 'patient-by-city-chiba'
+
+    COL_DATE_JP = 'Date_JP'
+    COL_DOW = 'Day of Week'
+    COL_LOCATION = 'Location'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_DISCHARGED = 'Discharged'
+    COL_DATE = 'Date'
+
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
+
+    def _create_dataframe_from_json(self):
+        return pd.DataFrame(self.json['patients']['data'])
+
+    def _cleanse(self):
+        self.dataframe[self.COL_DISCHARGED].fillna(0, inplace=True)
+        self.dataframe[self.COL_DISCHARGED] = self.dataframe[self.COL_DISCHARGED].astype(int)
+        self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW], inplace=True)
+
+    def _localize(self):
+        self.dataframe.columns = [
+            self.COL_DATE_JP,
+            self.COL_DOW,
+            self.COL_LOCATION,
+            self.COL_AGE,
+            self.COL_SEX,
+            self.COL_DISCHARGED,
+            self.COL_DATE,
+        ]
+        self.dataframe[self.COL_DISCHARGED] = self.dataframe[self.COL_DISCHARGED].replace({
+            '〇': 1,
+            '': 0,
+        })
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
+            **localization.PREFECTURES,
+            **localization.CHIBA_CITIES,
+            '千葉市': 'Tỉnh Chiba',
+            '中国（武漢市）': 'Vũ Hán (TQ)',
+            'スペイン': 'Tây Ban Nha',
+            'アイルランド': 'Ireland',
+            '南アフリカ': 'Nam Mỹ',
+            'ジンバブエ': 'Zimbabue',
+            'イギリス': 'Anh Quốc',
+            '県外': 'Ngoài tỉnh',
+            '非公表': 'Không công khai',
+        })
+        
+        
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+        
+        return self.dataframe
+    
 
 class ClinicDataset(datasets.CsvDataset):
     COL_ID = 'Id'
@@ -522,6 +569,7 @@ def update_detailed_data(bucket):
         PatientByCityOsakaDataset(),
         PatientByCitySaitamaDataset(),
         PatientByCityKanagawaDataset(encoding='cp932'),
+        PatientByCityChibaDataset(),
     )
 
     for dataset in all_datasets:
