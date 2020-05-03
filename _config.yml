@@ -12,11 +12,12 @@ author: Josemy Duarte
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me:
+  Home: "https://josemyduarte.github.io"
+  Stuff:
     - MeetUps: "meetups"
     - Read later: "articles"
     - Books: "books"
-    - Who I am?: "aboutme"
+  About Me: "aboutme"
 
 # --- Logo --- #
 

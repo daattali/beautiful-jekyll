@@ -13,3 +13,4 @@ Gemfile.lock
 beautiful-jekyll-theme-*.gem
 
 .idea
+vendor
