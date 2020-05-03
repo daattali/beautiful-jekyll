@@ -4,8 +4,8 @@ published: true
 title: 'First steps with Serverless Framework'
 subtitle: 'Building a simple Telegram Bot'
 date: '2019-12-29'
-image: /img/botfather.png
-share-img: /img/botfather.png
+image: /assets/img/botfather.png
+share-img: /assets/img/botfather.png
 tags: [serverless, code]
 ---
 In this post I want to show how I build a simple Telegram bot using serverless functions and using a tool that helped me to develop and test everything locally. I have never built a Telegram bot before, nor have I developed anything serverless or programmed in JS, so it is done by and for beginners. But first, some concepts.
@@ -123,13 +123,13 @@ To run our function locally we need to execute:
 
 That command will list all the functions deployed with the corresponding path. We'll have a server listening for our request in **localhost** over the port **3000** and with a route for the `find` function.
 
-![serverless command](/img/serverless-command.png)
+![serverless command](/assets/img/serverless-command.png)
 
 Now, lets expose this to the internet so our Telegram Bot can make calls to our function. For that we'll use Ngrok. Just execute:
 
 ```ngrok http 3000```
 
-![ngrok](/img/ngrok.png)
+![ngrok](/assets/img/ngrok.png)
 
 We will take the HTTPS url that it gives us (it's different for every execution) in this case [https://bbdfb6d3.ngrok.io](https://bbdfb6d3.ngrok.io) and our Telegram Bot Token and we will make a request to the following URL to set the Webhook URL for the Telegram bot:
 
@@ -137,11 +137,11 @@ We will take the HTTPS url that it gives us (it's different for every execution)
 
 It's important to use the HTTPS version of the URL, without encryption Telegram won't accept it. And if we get a screen like this, we know everything went well:
 
-![webhook](/img/telegram-webhook.png)
+![webhook](/assets/img/telegram-webhook.png)
 
 And now we can speak to our bot with everything running in our machine.
 
-![telegram bot](/img/telegram-bot.png)
+![telegram bot](/assets/img/telegram-bot.png)
 
 ## Deploying to AWS
 
@@ -149,7 +149,7 @@ One of the perks of Serverless CLI is that now with just one command we can go f
 
 `serverless deploy`
 
-![serverless deploy](/img/serverless-deploy.png)
+![serverless deploy](/assets/img/serverless-deploy.png)
 
 That is everything that we need to execute to have our code in AWS. Now we could change the Ngrok URL for this one and everything should work without problems.
 

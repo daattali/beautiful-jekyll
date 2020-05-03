@@ -4,8 +4,8 @@ published: true
 title: '¿Como mantener actualizado el entorno de múltiples desarrolladores?'
 subtitle: git hooks
 date: '2018-09-02'
-image: /img/git-logo.png
-share-img: /img/git-hooks.jpg
+image: /assets/img/git-logo.png
+share-img: /assets/img/git-hooks.jpg
 tags: [devops, git]
 ---
 

@@ -4,8 +4,8 @@ published: true
 title: 'TDD Estilo Londres'
 subtitle: Test Driven Design
 date: '2018-12-09'
-image: /img/london-logo.png
-share-img: /img/doubleloop.png
+image: /assets/img/london-logo.png
+share-img: /assets/img/doubleloop.png
 tags: [programming, tdd, java]
 ---
 
@@ -16,14 +16,14 @@ Cuando se habla de TDD se espera que escribas la mínima cantidad de código nec
 Un ejemplo del estilo antes descrito podría significar iniciar con el modelo (entity o POJO) y una función particular de ordenamiento, antes de desarrollar el controlador que haría uso de ambos.
 
 <p align="center">
-  <img src="/img/classic_tdd.png" alt="Classic TDD flow"/>
+  <img src="/assets/img/classic_tdd.png" alt="Classic TDD flow"/>
 </p>
 
 Este estilo, en algunas ocasiones requiere cierto esfuerzo para encajar las pequeñas unidades en aquellas compuestas. La necesidad de hacer heavy refactors suele ser normal, debido a que al concentrarte en desarrollar la unidad pequeña no contemplas como será utilizado por las capas superiores. Aun así, no suele ser doloroso, porque cuentas con los test unitarios que te garantizan que tu refactor no rompe con la funcionalidad que tenías.
 
 Este estilo de TDD, conocido como *Chicago/Detroit School*, era el único que conocía antes de leer [Growing Object-Oriented Software, Guided by Tests](https://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627), en el cual introducen la idea de un nuevo flow.
 
-![London TDD flow](/img/doubleloop.png)
+![London TDD flow](/assets/img/doubleloop.png)
 
 Este estilo, también conocido como *London School*, conlleva un desarrollo *outside-in* o *top-botoom*. En este caso, y siguiendo el ejemplo anterior, primero se desarrollaría el controlador y luego el modelo y el algoritmo de ordenamiento. Ambos estilos tienen sus pros y sus contras (como todo en nuestro campo). 
 

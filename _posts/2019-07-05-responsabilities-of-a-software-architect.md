@@ -4,8 +4,8 @@ published: true
 title: 'Responsabilities of a Software Architect'
 subtitle: 'Highlights and notes from the book Building Microservices'
 date: '2019-07-05'
-image: /img/building-microservices-book-cover.png
-share-img: /img/building-microservices-book-cover.png
+image: /assets/img/building-microservices-book-cover.png
+share-img: /assets/img/building-microservices-book-cover.png
 tags: [books, notes]
 ---
 

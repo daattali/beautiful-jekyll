@@ -4,8 +4,8 @@ published: true
 title: 'Do I Need to test my code?'
 subtitle: 'What should I test?'
 date: '2019-07-20'
-image: /img/test.jpeg
-share-img: /img/test.jpeg
+image: /assets/img/test.jpeg
+share-img: /assets/img/test.jpeg
 tags: [tests, notes]
 ---
 
