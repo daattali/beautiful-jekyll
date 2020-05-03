@@ -1,4 +1,4 @@
-FROM jekyll/jekyll
+FROM jekyll/jekyll:3.8
 
 COPY --chown=jekyll:jekyll Gemfile .
 COPY --chown=jekyll:jekyll Gemfile.lock .
