@@ -43,25 +43,7 @@ class TokyoPatientsDataset(datasets.CsvDataset):
         super().__init__(self.URL, self.NAME, **kwargs)
 
     def _localize(self):
-        # Localize column name
-        self.dataframe.columns = [
-            self.COL_NO,
-            self.COL_AREA_CODE,
-            self.COL_PREFECTURE,
-            self.COL_DISTRICT,
-            self.COL_PUBLISHED_DATE,
-            self.COL_DOW,
-            self.COL_SYMPTOM_DATE,
-            self.COL_PATIENT_ADDRESS,
-            self.COL_PATIENT_AGE,
-            self.COL_PATIENT_SEX,
-            self.COL_PATIENT_ATTRIBUTE,
-            self.COL_PATIENT_STATE,
-            self.COL_PATIENT_SYMPTOM,
-            self.COL_PATIENT_TRAVEL,
-            self.COL_REF,
-            self.COL_DISCHARGED,
-        ]
+        self._localize_column_names()
 
         # Localize data
         self.dataframe[self.COL_PREFECTURE].replace({
@@ -84,7 +66,7 @@ class TokyoPatientsDataset(datasets.CsvDataset):
             '都外': 'Ngoài Tokyo',
             '調査中': 'Đang điều tra',
         }, inplace=True)
-        
+
         self._localize_age(self.COL_PATIENT_SEX)
         self._localize_age(self.COL_PATIENT_AGE)
 
@@ -253,20 +235,10 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
         return self.dataframe
 
     def _localize(self):
-        self.dataframe.columns = [
-            self.COL_ID,
-            self.COL_PUBLISHED_DATE,
-            self.COL_AGE,
-            self.COL_SEX,
-            self.COL_LOCATION,
-            self.COL_SYMPTOM_DATE,
-            self.COL_STATUS,
-            self.COL_DISCHARGED,
-        ]
-        
+        self._localize_column_names()
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
-        
+
         self.dataframe[self.COL_LOCATION].replace({
             **localization.PREFECTURES,
             **localization.OSAKA_CITIES,
@@ -311,14 +283,7 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
 
     def _localize(self):
         self.dataframe = self.dataframe.iloc[:, 1:]
-        self.dataframe.columns = [
-            self.COL_ID,
-            self.COL_REF,
-            self.COL_DATE,
-            self.COL_AGE,
-            self.COL_SEX,
-            self.COL_LOCATION,
-        ]
+        self._localize_column_names()
         self.dataframe.drop(index=0, inplace=True)
         self._localize_date(self.COL_DATE)
         self._localize_age(self.COL_AGE)
@@ -350,12 +315,9 @@ class PatientByCityKanagawaDataset(datasets.CsvDataset):
         super().__init__(self.URL, self.NAME, **kwargs)
 
     def _localize(self):
-        self.dataframe.columns = [
-            self.COL_DATE,
-            self.COL_LOCATION,
-            self.COL_AGE,
-            self.COL_SEX,
-        ]
+        self._localize_column_names()
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
 
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('神奈川県', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('内', '')
@@ -375,12 +337,9 @@ class PatientByCityKanagawaDataset(datasets.CsvDataset):
             '東京都\u3000': 'Tokyo',
         }, inplace=True)
 
-        self._localize_age(self.COL_AGE)
-        self._localize_sex(self.COL_SEX)
-
         return self.dataframe
 
-    
+
 class PatientByCityChibaDataset(datasets.JsonDataset):
     URL = 'https://raw.githubusercontent.com/civictechzenchiba/covid19-chiba/development/data/data.json'
     NAME = 'patient-by-city-chiba'
@@ -400,24 +359,14 @@ class PatientByCityChibaDataset(datasets.JsonDataset):
         return pd.DataFrame(self.json['patients']['data'])
 
     def _cleanse(self):
-        self.dataframe[self.COL_DISCHARGED].fillna(0, inplace=True)
-        self.dataframe[self.COL_DISCHARGED] = self.dataframe[self.COL_DISCHARGED].astype(int)
         self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW], inplace=True)
 
     def _localize(self):
-        self.dataframe.columns = [
-            self.COL_DATE_JP,
-            self.COL_DOW,
-            self.COL_LOCATION,
-            self.COL_AGE,
-            self.COL_SEX,
-            self.COL_DISCHARGED,
-            self.COL_DATE,
-        ]
-        self.dataframe[self.COL_DISCHARGED] = self.dataframe[self.COL_DISCHARGED].replace({
-            '〇': 1,
-            '': 0,
-        })
+        self._localize_column_names()
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+        self._localize_boolean(self.COL_DISCHARGED)
+
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
             **localization.PREFECTURES,
             **localization.CHIBA_CITIES,
@@ -431,13 +380,45 @@ class PatientByCityChibaDataset(datasets.JsonDataset):
             '県外': 'Ngoài tỉnh',
             '非公表': 'Không công khai',
         })
-        
-        
+
+        return self.dataframe
+
+
+class PatientByCityFukuokaDataset(datasets.JsonDataset):
+    URL = 'https://raw.githubusercontent.com/Code-for-Fukuoka/covid19-fukuoka/development/data/data.json'
+    NAME = 'patient-by-city-fukuoka'
+
+    COL_DATE_JP = 'Date_JP'
+    COL_DOW = 'Day of Week'
+    COL_LOCATION = 'Location'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_DISCHARGED = 'Discharged'
+    COL_DATE = 'Date'
+
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
+
+    def _create_dataframe_from_json(self):
+        return pd.DataFrame(self.json['patients']['data'])
+
+    def _cleanse(self):
+        self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW], inplace=True)
+
+    def _localize(self):
+        self._localize_column_names()
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
-        
+        self._localize_boolean(self.COL_DISCHARGED)
+
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
+            **localization.PREFECTURES,
+            **localization.FUKUOKA_CITIES,
+            '調査中': 'Đang điều tra',
+        })
+
         return self.dataframe
-    
+
 
 class ClinicDataset(datasets.CsvDataset):
     COL_ID = 'Id'
@@ -570,6 +551,7 @@ def update_detailed_data(bucket):
         PatientByCitySaitamaDataset(),
         PatientByCityKanagawaDataset(encoding='cp932'),
         PatientByCityChibaDataset(),
+        PatientByCityFukuokaDataset(),
     )
 
     for dataset in all_datasets:

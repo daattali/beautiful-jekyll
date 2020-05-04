@@ -36,6 +36,11 @@ class Dataset(object):
     def _create_dataframe(self):
         raise NotImplementedError()
 
+    def _localize_column_names(self):
+        col_list = [self.__class__.__dict__[x] for x in self.__class__.__dict__ if x.startswith('COL_')]
+        self.dataframe.columns = col_list
+        return self.dataframe
+
     def _localize_date(self, column, na_value='Đang điều tra'):
         t = self.dataframe[column].str.extract(r'([0-9]+)月([0-9]+)日')
         self.dataframe[column] = (t[0] + '/' + t[1]).fillna(na_value)
@@ -44,6 +49,7 @@ class Dataset(object):
     def _localize_age(self, column, na_value='Không rõ'):
         self.dataframe[column] = self.dataframe[column].str.replace('代', 's')
         self.dataframe[column].replace({
+            '1歳未満': 'Dưới 1',
             '未就学児': 'Dưới 3',
             '就学児': '3-9',
             '10歳未': 'Dưới 10',
@@ -77,6 +83,16 @@ class Dataset(object):
             '不明': na_value,
         }, inplace=True)
         self.dataframe[column].fillna(na_value, inplace=True)
+        return self.dataframe[column]
+
+    def _localize_boolean(self, column, na_value=0):
+        self.dataframe[column].replace({
+            '〇': 1,
+            '○': 1,
+            '': na_value,
+        }, inplace=True)
+        self.dataframe[column].fillna(na_value, inplace=True)
+        self.dataframe[column] = self.dataframe[column].astype(int)
         return self.dataframe[column]
 
     def _localize(self, **kwargs):
