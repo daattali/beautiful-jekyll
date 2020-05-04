@@ -114,7 +114,7 @@ TOKYO_CITIES = {
 }
 
 OSAKA_CITIES = {
-    '大阪市': 'Osaka',
+    '大阪市': 'Thành phố Osaka',
     '枚方市': 'Hirakata',
     '守口市': 'Moriguchi',
     '箕面市': 'Mino',
