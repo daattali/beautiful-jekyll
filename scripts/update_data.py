@@ -420,6 +420,47 @@ class PatientByCityFukuokaDataset(datasets.JsonDataset):
         return self.dataframe
 
 
+class PatientByCityHyogoDataset(datasets.JsonDataset):
+    URL = 'https://raw.githubusercontent.com/stop-covid19-hyogo/covid19/development/data/patients.json'
+    NAME = 'patient-by-city-hyogo'
+
+    COL_ID = 'Id'
+    COL_DATE_JP = 'Date_JP'
+    COL_DOW = 'Day of Week'
+    COL_LOCATION = 'Location'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_DISCHARGED = 'Discharged'
+    COL_REF = 'Reference'
+    COL_DATE = 'Date'
+
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
+
+    def _create_dataframe_from_json(self):
+        return pd.DataFrame(self.json['data'])
+
+    def _cleanse(self):
+        self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW, self.COL_REF], inplace=True)
+
+    def _localize(self):
+        self._localize_column_names()
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+        self._localize_boolean(self.COL_DISCHARGED)
+
+        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
+            **localization.PREFECTURES,
+            **localization.HYOGO_CITIES,
+            '神戸市外': 'Ngoài Kobe',
+            '西宮市外': 'Ngoài Nishinomiya',
+            '非公表': 'Đang điều tra',
+            '調査中': 'Đang điều tra',
+        })
+
+        return self.dataframe
+
+
 class ClinicDataset(datasets.CsvDataset):
     COL_ID = 'Id'
     COL_NAME = 'Name'
@@ -552,6 +593,7 @@ def update_detailed_data(bucket):
         PatientByCityKanagawaDataset(encoding='cp932'),
         PatientByCityChibaDataset(),
         PatientByCityFukuokaDataset(),
+        PatientByCityHyogoDataset(),
     )
 
     for dataset in all_datasets:
