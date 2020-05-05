@@ -487,9 +487,12 @@ class ClinicDataset(datasets.CsvDataset):
 
 def init_firebase_app():
     cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
-    app = firebase_admin.initialize_app(cred, {
-        'storageBucket': f'{FIREBASE_APP_NAME}.appspot.com'
-    })
+    try:
+        app = firebase_admin.initialize_app(cred, {
+            'storageBucket': f'{FIREBASE_APP_NAME}.appspot.com'
+        })
+    except ValueError:
+        app = firebase_admin.get_app()
     client = firestore.client()
     bucket = storage.bucket(app=app)
 
