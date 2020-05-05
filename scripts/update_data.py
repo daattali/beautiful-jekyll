@@ -196,13 +196,15 @@ class PatientByCityTokyoDataset(datasets.JsonDataset):
         return self.dataframe
 
     def _localize(self):
-        self.dataframe[self.COL_LABEL_VIETNAMESE] = self.dataframe[self.COL_LABEL].replace({
-            **localization.PREFECTURES,
-            **localization.TOKYO_CITIES,
-            '都外': 'Ngoài Tokyo',
-            '調査中': 'Đang điều tra',
-            '小計': 'Tổng số',
-        })
+        self.dataframe[self.COL_LABEL_VIETNAMESE] = self._localize_location(
+            column=self.COL_LABEL,
+            localization_dict=localization.TOKYO_CITIES,
+            insider_keys=['東京都'],
+            insider_value='Trong Tokyo',
+            outsider_value='Ngoài Tokyo',
+            others={'小計': 'Tổng số'},
+            inplace=False,
+        )
         self.dataframe[self.COL_AREA_VIETNAMESE] = self.dataframe[self.COL_AREA].replace({
             '特別区': '23 quận lớn',
             '多摩地域': 'Địa phận Tama',
@@ -238,14 +240,14 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
         self._localize_column_names()
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.OSAKA_CITIES,
+            insider_keys=['大阪府'],
+            insider_value='Trong phủ',
+            outsider_value='Ngoài phủ',
+        )
 
-        self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.OSAKA_CITIES,
-            '府外': 'Ngoài Osaka',
-            '大阪府外': 'Ngoài Osaka',
-            '調査中': 'Đang điều tra',
-        }, inplace=True)
         self.dataframe[self.COL_DISCHARGED].replace({
             '退院': 'Ra viện',
             '死亡退院': 'Tử vong',
@@ -288,16 +290,11 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
         self._localize_date(self.COL_DATE)
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
-
-        self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.SAITAMA_CITIES,
-            '調査中': 'Đang điều tra',
-            '川口市外': 'Ngoài Kawaguchi',
-            '県外': 'Ngoài tỉnh',
-            '埼玉県外': 'Ngoài tỉnh',
-        }, inplace=True)
-        self.dataframe[self.COL_LOCATION].fillna('Đang điều tra', inplace=True)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.SAITAMA_CITIES,
+            insider_keys=['埼玉県', '川口市外'],
+        )
 
         return self.dataframe
 
@@ -324,18 +321,12 @@ class PatientByCityKanagawaDataset(datasets.CsvDataset):
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健所管', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('及び都', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健福祉事務所管', '市')
-        self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.KANAGAWA_CITIES,
-            '': 'Tỉnh Kanagawa',
-            'スペイン（横浜市発表）': 'Yokohama',
-            '国外（川崎市発表）': 'Kawasaki',
-            '川崎市外（川崎市発表）': 'Kawasaki',
-            '茅ケ崎市保健所管内及び都内': 'Chigasaki',
-            '川崎市外': 'Ngoài Kawasaki',
-            '横浜市外': 'Ngoài Yokohama',
-            '東京都\u3000': 'Tokyo',
-        }, inplace=True)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.KANAGAWA_CITIES,
+            insider_keys=['', '神奈川県', '川崎市外（川崎市発表）', '川崎市外', '横浜市外'],
+            outsider_keys=['スペイン（横浜市発表）', '国外（川崎市発表）', '東京都\u3000']
+        )
 
         return self.dataframe
 
@@ -367,19 +358,12 @@ class PatientByCityChibaDataset(datasets.JsonDataset):
         self._localize_sex(self.COL_SEX)
         self._localize_boolean(self.COL_DISCHARGED)
 
-        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.CHIBA_CITIES,
-            '千葉市': 'Tỉnh Chiba',
-            '中国（武漢市）': 'Vũ Hán (TQ)',
-            'スペイン': 'Tây Ban Nha',
-            'アイルランド': 'Ireland',
-            '南アフリカ': 'Nam Mỹ',
-            'ジンバブエ': 'Zimbabue',
-            'イギリス': 'Anh Quốc',
-            '県外': 'Ngoài tỉnh',
-            '非公表': 'Không công khai',
-        })
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.CHIBA_CITIES,
+            insider_keys=['千葉県'],
+            outsider_keys=['中国（武漢市）', 'スペイン', 'アイルランド', '南アフリカ', 'ジンバブエ', 'イギリス'],
+        )
 
         return self.dataframe
 
@@ -411,11 +395,11 @@ class PatientByCityFukuokaDataset(datasets.JsonDataset):
         self._localize_sex(self.COL_SEX)
         self._localize_boolean(self.COL_DISCHARGED)
 
-        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.FUKUOKA_CITIES,
-            '調査中': 'Đang điều tra',
-        })
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.FUKUOKA_CITIES,
+            insider_keys=['福岡県'],
+        )
 
         return self.dataframe
 
@@ -448,15 +432,11 @@ class PatientByCityHyogoDataset(datasets.JsonDataset):
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
         self._localize_boolean(self.COL_DISCHARGED)
-
-        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.HYOGO_CITIES,
-            '神戸市外': 'Ngoài Kobe',
-            '西宮市外': 'Ngoài Nishinomiya',
-            '非公表': 'Đang điều tra',
-            '調査中': 'Đang điều tra',
-        })
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.HYOGO_CITIES,
+            insider_keys=['兵庫県', '神戸市外', '西宮市外'],
+        )
 
         return self.dataframe
 

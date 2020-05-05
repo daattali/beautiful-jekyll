@@ -227,6 +227,7 @@ KANAGAWA_CITIES = {
 }
 
 CHIBA_CITIES = {
+    '千葉市': 'Thành phố Chiba',
     '市川市': 'Ichikawa',
     '柏市': 'Kashiwa',
     '松戸市': 'Matsudo',
