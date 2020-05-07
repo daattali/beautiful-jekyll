@@ -8,7 +8,7 @@ Most environments used to use the Integrated Windows Authentication (IWA) as an 
 
 It's not a big deal to set up, it will however add some administrative overhead whenever a domain controller is expired, replaced or a new DC is added. Note that the permissions will be persisted if you are moving from IWA so you won't need to recreate them. You can delete the IWA identity source and add the LDAPS one.
 
-This blog is an extract of a blog written for Altaro Software, you can find the full length article [here](https://www.altaro.com/vmware/understanding-ldap-binding-signing/). Let's go through the steps:
+This blog is an extract of a blog written for Altaro Software, you can find the full length article [here](https://www.altaro.com/vmware/understanding-ldap-binding-signing/). Let's go through the steps :
 
 1. List the domain controllers in the domain that should be the identity source.
 
