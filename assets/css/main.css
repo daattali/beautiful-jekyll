@@ -208,6 +208,7 @@ img {
 
 .navbar-toggler {
   font-size: 1rem;
+  margin: 0.5rem 0;
 }
 .navbar-custom .navbar-toggler:focus,
 .navbar-custom .navbar-toggler:hover {
