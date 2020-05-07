@@ -6,7 +6,7 @@
 - **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people.
 - Added `navbar-border-col` setting in the config file.
 - Add accessibility features where possible.
-- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px.
+- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'.
 - Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015.
 - Remove most of the sample posts so that users only have two sample posts to learn from.
 - Improvements to the README instructions.
