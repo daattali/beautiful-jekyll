@@ -1,7 +1,9 @@
 ---
 layout: post
-published: false
-title: 2020-05-02-visual-studio-codespaces-self-hosted.md
+published: true
+title: Self-hosted Visual Studio Codespaces
+date: '2020-05-09'
+subtitle: .
 ---
 ## Visual Studio Codespaces
 
