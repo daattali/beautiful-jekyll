@@ -15,7 +15,7 @@ If you didn't see the [news](https://devblogs.microsoft.com/visualstudio/introdu
 - Use your bash or other shell from your browser
 - Easy to edit code or documentation without the need for time consuming local installs
 - Want to update your code using Visual Studio Code from your iPad, tablet or phone? You can just open the web browser and you will have access to your development environment
-- Because Visual Studio codespaces is authenticated using Azure Active Directory you get all the benefits of [MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) and [Azure AD Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) to protect your development environment
+- Because Visual Studio Codespaces is authenticated using Azure Active Directory you get all the benefits of [MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) and [Azure AD Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) to protect your development environment
 
 What really got me excited is the ability to self host a codespace environment - you can use your web browser from any device to securely develop software remotely using your own Virtual Machine, server or desktop.
 
@@ -32,7 +32,7 @@ https://online.visualstudio.com/environments
 
 Go to https:portal.azure.com and use the search box to find the visual studio online plan by name - vso-myplan 
 
-Select Raw details and copy the id including the quotes
+Select Properties and copy the resource id id including the quotes
 ![screenshot of azure portal - raw detail tab ]({{site.baseurl}}/img/Screenshot 2020-05-03 at 09.34.45.png)
 
 ### Example
@@ -54,3 +54,18 @@ Start the agent
 ```
 vso start -i "/subscriptions/c931ad62-62d8-4f25-a0d3-c88aaaaabbbbb/resourceGroups/vso-rg-e315e92/providers/Microsoft.VSOnline/plans/vso-plan-eastus"
 ```
+![screenshot of vso start]({{site.baseurl}}/img/Screenshot 2020-05-09 at 08.44.05.png)
+
+You are prompted to sign into your web browser using a technique called Device Code Flow
+![screenshot of device login]({{site.baseurl}}/img/Screenshot 2020-05-09 at 08.50.02.png)
+
+Then you accept the fact that the app has access to your profile
+![screenshot of accepting]({{site.baseurl}}/img/Screenshot 2020-05-09 at 08.54.31.png)
+
+Then you can just keep pressing enter to accept the defaults and finish setup
+![screenshot of finishing installation]({{site.baseurl}}/img/Screenshot 2020-05-09 at 08.58.17.png)
+
+You should now see your environment listed
+![screenshot showing new self-hosted environment in Codespaces]({{site.baseurl}}/img/Screenshot 2020-05-09 at 09.01.26.png)
+
+
