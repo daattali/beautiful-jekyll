@@ -3,7 +3,7 @@ layout: post
 published: true
 title: Self-hosted Visual Studio Codespaces
 date: '2020-05-09'
-subtitle: .
+subtitle: The future of code editing running in your browser
 ---
 ## Visual Studio Codespaces
 
@@ -19,7 +19,7 @@ If you didn't see the [news](https://devblogs.microsoft.com/visualstudio/introdu
 - Want to update your code using Visual Studio Code from your iPad, tablet or phone? You can just open the web browser and you will have access to your development environment
 - Because Visual Studio Codespaces is authenticated using Azure Active Directory you get all the benefits of [MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks) and [Azure AD Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview) to protect your development environment
 
-What really got me excited is the ability to self host a codespace environment - you can use your web browser from any device to securely develop software remotely using your own Virtual Machine, server or desktop.
+What really got me excited is the ability to self-host a codespace environment - you can use your web browser from any device to securely develop software remotely using your own Virtual Machine, server or desktop.
 
 ### Benefits of self hosted
 - Use hardware you already have so you don't pay by the minute
@@ -70,9 +70,6 @@ Then you can just keep pressing enter to accept the defaults and finish setup
 You should now see your environment listed
 ![screenshot showing new self-hosted environment in Codespaces]({{site.baseurl}}/img/Screenshot 2020-05-09 at 09.01.26.png)
 
-#Success
+### Success
 Using the Ubuntu bash terminal running in Visual Studio Code in my web browser I cloned the repo for this post and was up and running
 ![screenshot of visual studio codespaces running on self-hosted ubuntu]({{site.baseurl}}/img/Screenshot 2020-05-09 at 09.12.32.png)
-
-
-
