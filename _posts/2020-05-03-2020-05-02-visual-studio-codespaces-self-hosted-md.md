@@ -68,4 +68,9 @@ Then you can just keep pressing enter to accept the defaults and finish setup
 You should now see your environment listed
 ![screenshot showing new self-hosted environment in Codespaces]({{site.baseurl}}/img/Screenshot 2020-05-09 at 09.01.26.png)
 
+#Success
+Using the Ubuntu bash terminal running in Visual Studio Code in my web browser I cloned the repo for this post and was up and running
+![screenshot of visual studio codespaces running on self-hosted ubuntu]({{site.baseurl}}/img/Screenshot 2020-05-09 at 09.12.32.png)
+
+
 
