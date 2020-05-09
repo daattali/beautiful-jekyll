@@ -176,7 +176,7 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
 
       <div style="margin-top: 48px;">
         {% assign latest = site.posts | sort: 'date' | reverse%}
-        {% include posts.html posts=latest  limit=12 %}
+        {% include posts.html posts=latest  limit=5 %}
       </div>
 
       <div class="text-right hidden-xs">
@@ -186,4 +186,5 @@ subtitle: Những thông tin từ nguồn tin chính thống nhất
   </div>
 </section>
 
+{% include media-about-us.html %}
 {% include partners.html %}
