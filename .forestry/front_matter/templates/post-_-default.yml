@@ -11,15 +11,6 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
-- type: text
-  name: gh-repo
-  label: gh-repo
-- type: list
-  name: gh-badge
-  label: gh-badge
-- type: list
-  name: tags
-  label: tags
 - type: boolean
   name: comments
   label: comments
