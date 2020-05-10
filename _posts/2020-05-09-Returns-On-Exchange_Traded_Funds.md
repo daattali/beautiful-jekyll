@@ -468,15 +468,7 @@ We now have an xts object, and we have moved from daily prices to monthly prices
 
 Return.calculate(prices_monthly, method = “log”) to convert to returns and save as an object called assed_returns_xts. Note this will give us log returns by the method = “log” argument. We could have used method = “discrete” to get simple returns. The daily percentage  return on a stock is the difference between the previous day's price and the current day's price relative to the previous day's price. The monthly perentage return follows as the difference between the previous month and the current month's price divided by the previous months price.
 
-$\text{Percentage Return } = \frac{\left(P_{1}-P_{0}\right)+D}{P_{0}}$
-Where
-
-$P_{0}$ Initial Asset Price
-$P_{1}$ Ending Asset Price
-$D$ is the dividends
-
-The actual asset return is given as
-$\text{ Return } = \left(P_{1}-P_{0}\right)+D$
+![ ]( /img/ETF/eqn.PNG)
 
 
 ```r
