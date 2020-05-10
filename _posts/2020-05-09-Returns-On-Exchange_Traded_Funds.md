@@ -157,3 +157,163 @@ tbls_ls %>%head()%>%
 
 
 
+We can download the following ETF's some of which are actively managed and others which are passively managed from the yahoo API using the quantmod API.
+
+
+```r
+#library("RSelenium")
+
+tickers= c("QQQ","IVV","SPY","VOO","VTI","IWB","GLD","EEM","XLF",
+           "GDX","ARKW")
+
+actively_managed =c("ARKW")
+
+passively_managed <-  c("AGZ","IHI","IEUS","FCOM","VGT.IV","
+VUG.IV")
+
+vanguard <- c("MGK.IV","MGC.IV","VGT.IV","
+VUG.IV","VONG.IV")
+
+# The symbols vector holds our tickers. 
+symbols <- c("SPY","EFA", "IJS", "EEM","AGG")
+
+# The prices object will hold our raw price data 
+prices <- 
+  quantmod::getSymbols(tickers, src = 'yahoo', from = "2010-01-01", 
+             auto.assign = TRUE, warnings = FALSE) %>% 
+ furrr::future_map(~Ad(get(.))) %>%   
+  reduce(merge) %>%   #reduce() combines from the left, reduce_right() combines from the right
+  `colnames<-`(tickers)
+
+
+
+#DT::datatable(data.frame(head(prices)))
+
+data.frame(head(prices)) %>%head()%>%
+  kable(escape = F, align = "c") %>%
+  kable_styling(c("striped", "condensed"), full_width = F)
+```
+
+<table class="table table-striped table-condensed" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> QQQ </th>
+   <th style="text-align:center;"> IVV </th>
+   <th style="text-align:center;"> SPY </th>
+   <th style="text-align:center;"> VOO </th>
+   <th style="text-align:center;"> VTI </th>
+   <th style="text-align:center;"> IWB </th>
+   <th style="text-align:center;"> GLD </th>
+   <th style="text-align:center;"> EEM </th>
+   <th style="text-align:center;"> XLF </th>
+   <th style="text-align:center;"> GDX </th>
+   <th style="text-align:center;"> ARKW </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 2010-01-04 </td>
+   <td style="text-align:center;"> 41.71869 </td>
+   <td style="text-align:center;"> 92.10523 </td>
+   <td style="text-align:center;"> 92.24605 </td>
+   <td style="text-align:center;"> NA </td>
+   <td style="text-align:center;"> 46.96941 </td>
+   <td style="text-align:center;"> 51.31325 </td>
+   <td style="text-align:center;"> 109.80 </td>
+   <td style="text-align:center;"> 34.66187 </td>
+   <td style="text-align:center;"> 7.660890 </td>
+   <td style="text-align:center;"> 44.59262 </td>
+   <td style="text-align:center;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2010-01-05 </td>
+   <td style="text-align:center;"> 41.71869 </td>
+   <td style="text-align:center;"> 92.37265 </td>
+   <td style="text-align:center;"> 92.49020 </td>
+   <td style="text-align:center;"> NA </td>
+   <td style="text-align:center;"> 47.14971 </td>
+   <td style="text-align:center;"> 51.47793 </td>
+   <td style="text-align:center;"> 109.70 </td>
+   <td style="text-align:center;"> 34.91345 </td>
+   <td style="text-align:center;"> 7.801696 </td>
+   <td style="text-align:center;"> 45.02256 </td>
+   <td style="text-align:center;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2010-01-06 </td>
+   <td style="text-align:center;"> 41.46705 </td>
+   <td style="text-align:center;"> 92.44558 </td>
+   <td style="text-align:center;"> 92.55533 </td>
+   <td style="text-align:center;"> NA </td>
+   <td style="text-align:center;"> 47.21528 </td>
+   <td style="text-align:center;"> 51.54378 </td>
+   <td style="text-align:center;"> 111.51 </td>
+   <td style="text-align:center;"> 34.98648 </td>
+   <td style="text-align:center;"> 7.817341 </td>
+   <td style="text-align:center;"> 46.11611 </td>
+   <td style="text-align:center;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2010-01-07 </td>
+   <td style="text-align:center;"> 41.49401 </td>
+   <td style="text-align:center;"> 92.85078 </td>
+   <td style="text-align:center;"> 92.94606 </td>
+   <td style="text-align:center;"> NA </td>
+   <td style="text-align:center;"> 47.41198 </td>
+   <td style="text-align:center;"> 51.74965 </td>
+   <td style="text-align:center;"> 110.82 </td>
+   <td style="text-align:center;"> 34.78360 </td>
+   <td style="text-align:center;"> 7.984223 </td>
+   <td style="text-align:center;"> 45.89180 </td>
+   <td style="text-align:center;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2010-01-08 </td>
+   <td style="text-align:center;"> 41.83553 </td>
+   <td style="text-align:center;"> 93.16687 </td>
+   <td style="text-align:center;"> 93.25535 </td>
+   <td style="text-align:center;"> NA </td>
+   <td style="text-align:center;"> 47.56769 </td>
+   <td style="text-align:center;"> 51.92256 </td>
+   <td style="text-align:center;"> 111.37 </td>
+   <td style="text-align:center;"> 35.05952 </td>
+   <td style="text-align:center;"> 7.937286 </td>
+   <td style="text-align:center;"> 46.58344 </td>
+   <td style="text-align:center;"> NA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2010-01-11 </td>
+   <td style="text-align:center;"> 41.66477 </td>
+   <td style="text-align:center;"> 93.29655 </td>
+   <td style="text-align:center;"> 93.38558 </td>
+   <td style="text-align:center;"> NA </td>
+   <td style="text-align:center;"> 47.63326 </td>
+   <td style="text-align:center;"> 51.99666 </td>
+   <td style="text-align:center;"> 112.85 </td>
+   <td style="text-align:center;"> 34.98648 </td>
+   <td style="text-align:center;"> 7.942502 </td>
+   <td style="text-align:center;"> 46.89188 </td>
+   <td style="text-align:center;"> NA </td>
+  </tr>
+</tbody>
+</table>
+
+
+The prices of these ETF's can be visualized with dygraph package, it allows a user to set a date window which lets you expand and narrow the windows to focus on detail visualization within the range of interest.
+
+
+```r
+dateWindow <- c("2015-01-01", "2020-02-20")
+
+p1= dygraph(prices, main = "Value", group = "stock",
+        xlab = "Time",ylab = "Adjusted Prices") %>%
+  dyRebase(value = 100) %>%
+  dyRangeSelector(dateWindow = dateWindow)
+
+
+htmlwidgets::saveWidget(as_widget(p1), "p1.html")
+
+p1
+```
+
