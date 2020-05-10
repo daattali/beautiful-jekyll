@@ -14,3 +14,5 @@ fields:
 - type: boolean
   name: comments
   label: comments
+pages:
+- _posts/aaa.md
