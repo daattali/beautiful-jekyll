@@ -1,24 +1,12 @@
-
 ---
-title: " Returns on Exchange Traded Funds"
-subtitle: performance of some popular ETF's
-#output: rmarkdown::github_document
-
-output:
-  html_document:
-    keep_md: true    
-    toc: true
-    toc_float: false
-    theme: united
-author: Nana Boateng
-df_print: paged
-Time: '2020-05-09 20:37:36'
-date: "May 09, 2020"
-toc_depth: 3  # upto three depths of headings (specified by #, ## and ###)
-number_sections: true  ## if you want number sections at each table header
-highlight: tango  # specifies the syntax highlighting style
-tags: ETF, Quantitative Finance, Asset Return,quantmod
+layout: post
+title:  Returns on Exchange Traded Funds
+subtitle:  performance of some popular ETF's
+gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
+gh-badge: [star, fork, follow]
+tags: [ETF, Quantitative Finance, Asset Return,quantmod]
 ---
+
 
 
 
