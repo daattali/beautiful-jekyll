@@ -24,7 +24,7 @@ description: Google Apps Script developer
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Apps Script Projects: "https://github.com/urwa"
+  Apps Script Projects: "https://github.com/urwa/GoogleAppsScript"
 #  Resources: ""
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
