@@ -87,8 +87,8 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 ```python
 file = tf.keras.utils
-raw_df = pd.read_csv('https://storage.googleapis.com/download.tensorflow.org/data/creditcard.csv')
-raw_df.head()
+df = pd.read_csv('/data/creditcard.csv')
+df.head()
 ```
 
 
@@ -265,7 +265,7 @@ raw_df.head()
 
 
 ```python
-raw_df[['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V26', 'V27', 'V28', 'Amount', 'Class']].describe().transpose()
+df[['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V26', 'V27', 'V28', 'Amount', 'Class']].describe().transpose()
 ```
 
 
@@ -432,7 +432,7 @@ Let's look at the dataset imbalance:
 
 
 ```python
-raw_df.Class.value_counts(normalize=True)*100
+df.Class.value_counts(normalize=True)*100
 ```
 
 
@@ -446,7 +446,7 @@ raw_df.Class.value_counts(normalize=True)*100
 
 
 ```python
-neg, pos = raw_df.Class.value_counts()
+neg, pos = df.Class.value_counts()
 total = neg + pos
 print('Examples:\n    Total: {}\n    Positive: {} ({:.2f}% of total)\n  '.format(
     total, pos, 100 * pos / total,100 * neg / total))
@@ -464,28 +464,28 @@ print('Total: {}\n    Negative: {} ({:.2f}% of total)\n  '.format(
       
     
 
-#### Clean, split and normalize the data
-The raw data has a few issues. First the Time and Amount columns are too variable to use directly. Drop the Time column (since it's not clear what it means) and take the log of the Amount column to reduce its range.
-
+#### preprocesing Data
 
 ```python
-cleaned_df = raw_df.copy()
 
-# You don't want the `Time` column.
+
+# The Time feature is not useful for our analysis and would be removed
 #The pop() method returns the item present at the given index. This item is also removed from the list.
-cleaned_df.pop('Time')
+#df.pop('Time')
+df = df.drop(['Time'],axis=1)
 
-# The `Amount` column covers a huge range. Convert to log-space.
-eps=0.001 # 0 => 0.1¢
-cleaned_df['Log Ammount'] = np.log(cleaned_df.pop('Amount')+eps)
+# The Amount feature
+eps=0.00001 
+df['Log Ammount'] = np.log(df.pop('Amount')+eps)
 ```
 
-Split the dataset into train, validation, and test sets. The validation set is used during the model fitting to evaluate the loss and any metrics, however the model is not fit with this data. The test set is completely unused during the training phase and is only used at the end to evaluate how well the model generalizes to new data. This is especially important with imbalanced datasets where overfitting is a significant concern from the lack of training data.
+The dataset would be split into train, validation, and test sets. The train would be used in training, the validation set would be used toevaluate the model loss during training. The test setis an out-of-time set that is used to evaluate the performance of the model.Various metrics including Area Under the ROC-Curve, Area under the Precision-Recall curve, f-1 etc would be used to evaluate the model on the test data.
+
 
 
 ```python
-# Use a utility from sklearn to split and shuffle our dataset.
-train_df, test_df = train_test_split(cleaned_df, test_size=0.2)
+
+train_df, test_df = train_test_split(df, test_size=0.2)
 train_df, val_df = train_test_split(train_df, test_size=0.2)
 print('Traing dataset size:{}'.format(train_df.shape))
 print('Test dataset size:{}'.format(test_df.shape))
@@ -499,7 +499,7 @@ print('Validation dataset size: {}'.format(val_df.shape))
 
 
 ```python
-# Form np arrays of labels and features.
+#obtain the target label by removing it   from the data splits above
 train_labels = train_df.pop('Class')
 val_labels =   val_df.pop('Class')
 test_labels = np.array(test_df.pop('Class'))
@@ -508,10 +508,10 @@ test_labels = np.array(test_df.pop('Class'))
 
 ```python
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
 
 
-#scaler = StandardScaler()
+
+#Deep-learning models perform better with normalization, we choose the minmax normalization scheme here.
 scaler = MinMaxScaler()
 train_x = scaler.fit_transform(train_df)
 
@@ -519,12 +519,8 @@ val_x = scaler.transform(val_df)
 test_x = scaler.transform(test_df)
 
 
-#train_x = np.clip(train_x, -5, 5)
-#val_x = np.clip(val_x, -5, 5)
-#test_x = np.clip(test_x, -5, 5)
 
-
-print('Training labels shape:', train_labels.shape)
+print(' Training labels Shape:', train_labels.shape)
 print('Validation labels shape:', val_labels.shape)
 print('Test labels shape:', test_labels.shape)
 
@@ -541,7 +537,7 @@ print('Test features shape:', test_x.shape)
     Test features shape: (56962, 29)
     
 
-convert list to numpy arrays to prevent error
+The target variable is a list, we convert  to numpy arrays to prevent error that occured during training before this change.
 
 
 ```python
@@ -567,17 +563,6 @@ except Exception:
 
 
 
-METRICS = [
-      tf.keras.metrics.TruePositives(name='tp'),
-      tf.keras.metrics.FalsePositives(name='fp'),
-      tf.keras.metrics.TrueNegatives(name='tn'),
-      tf.keras.metrics.FalseNegatives(name='fn'), 
-      tf.keras.metrics.BinaryAccuracy(name='accuracy'),
-      tf.keras.metrics.Precision(name='precision'),
-      tf.keras.metrics.Recall(name='recall'),
-      tf.keras.metrics.AUC(name='auc'),
-]
-
 
 batchsize=512
 epoch=50
@@ -600,9 +585,7 @@ def plot_loss(history, label, n):
 ```
 
 #### Check training history
-In this section, you will produce plots of your model's accuracy and loss on the training and validation set. These are useful to check for overfitting, which you can learn more about in this tutorial.
-
-Additionally, you can produce these plots for any of the metrics you created above. False negatives are included as an example.
+It is important to check the performance of the model on the validation set during training. This can give an idea as to whether some over-fitting is taking place, when the training loss keeps going down whereas the validation loss increase, this would would be an evidence of over-fitting. The evolution of the model accuracy in the case when we don't have imbalanced data is also checked during the various epochs, it is expected that that training  and validation accuracy would improve as number of epochs increases up to a point from which , overfitting can start to occur.
 
 
 ```python
@@ -633,20 +616,26 @@ def plot_metrics(history):
 ### Search Over Weights
 
 
-```python
-initial_bias = np.log([pos/neg])
-initial_bias
-```
 
 
-
-
-    array([-6.35935934])
-
-
-
+The deep learning model is set up below, it has 2 inner layers each with 128 nodes each. We would adopt empirical approach to find which weights/cost  when placed on the target classes would minimize cost associated and improve the model performance. We can set up simple grid-search to explore this empirical process.
 
 ```python
+
+METRICS = [
+      tf.keras.metrics.TruePositives(name='tp'),
+      tf.keras.metrics.FalsePositives(name='fp'),
+      tf.keras.metrics.TrueNegatives(name='tn'),
+      tf.keras.metrics.FalseNegatives(name='fn'), 
+      tf.keras.metrics.BinaryAccuracy(name='accuracy'),
+      tf.keras.metrics.Precision(name='precision'),
+      tf.keras.metrics.Recall(name='recall'),
+      tf.keras.metrics.AUC(name='auc'),
+]
+
+
+
+
 def create_model(metrics = METRICS):
   
   model = tf.keras.Sequential([
@@ -681,8 +670,7 @@ def create_model(metrics = METRICS):
 model = create_model()
 model.summary()
 
-#initial_bias_model = imbalanced_model(output_bias =initial_bias)
-#initial_bias_model.summary()
+
 ```
 
     Model: "sequential"
@@ -710,17 +698,13 @@ model.summary()
     
 
 
+The cost-sensitive learning model is specified here as multi_weights model function below. We would experiment with different weights through a grid-search to determine which combination of weights provide the best performance.
 ```python
 # fit model
 from sklearn.metrics import roc_auc_score
 
 
-#Target_weights=  [{0:1, 1:100},{0:1, 1:200},{0:1, 1:500},{0:1, 1:1000}]
-#Target_weights=  [{0:1, 1:100},{0:1, 1:200}]
-#Target_weights=  [{0:1, 1:100}]
 
-
-#my_scores=[]
 #for weight in  Target_weights:  
 def multi_weights(weight):
     weight_model = create_model(metrics = METRICS)  
@@ -747,8 +731,9 @@ def multi_weights(weight):
 
 
 ```python
-#multi_weights({0:0.5, 1:289.44})
+
 multi_weights({0:1, 1:20})
+
 ```
 
 
@@ -775,7 +760,7 @@ print('Weight for class 1: {:.2f}'.format(weight_for_1))
     Weight for class 1: 289.44
     
 
-
+The grid to search on is specified below, of course a larger grid could be considered if one has the luxury of larger computational power and time.
 ```python
 Target_weights=  [{0:0.05, 1:20},{0:1, 1:1},{0:0.5, 1:20},{0:1, 1:10},{0:1, 1:20},{0:1, 1:50},{0:1, 1:100},{0:1, 1:200},{0:1, 1:300},{0:1, 1:400},
                   {0:1, 1:500},{0:1, 1:1000},{0:0.5, 1:289.44},{0:1, 1:2000}]
@@ -986,7 +971,7 @@ s
 
 
 
-
+The no_weights model is the reference model that the cost-sensitive learning would be compared to, it is specified below.No weights implies the cost assigned to both minority and majority classes is the same taken to be 1.
 ```python
 def no_weights(weight):
     no_weight_model = create_model()
@@ -1008,7 +993,7 @@ def no_weights(weight):
     return score   
 ```
 
-The weight that generates the maximum AUC is {0:1, 1:20}.
+The weight that generates the maximum AUC of 0.982826  is {0:0.5, 1:289.44}. The weights {0:0.05, 1:20} comes very close with AUC of 0.981511.
 
 
 ```python
@@ -1495,7 +1480,7 @@ plt.savefig('all_aupr.png')
 
 ### Sampling Based Approaches
 #### Under-Sampling
-
+In Under-sampling,  the samples  majority class is randomly  eliminated until there is a balance between the distribution  both target  classes. This could lead to loss of useful information.
 
 ```python
 from collections import Counter
@@ -1537,7 +1522,8 @@ Evaluate(labels=test_labels, predictions=yhat, p=0.5)
     
 
 #### SMOTE
-
+This method involves over-sampling the minority class by creating synthetic minority class examples.The minority class is over-sampled by creating
+“synthetic” examples rather than by over-sampling with replacement. All minority examples are kept, and synthetic examples are created by sampling from the k-nearest neighbors of these minority examples.
 
 ```python
 from collections import Counter
@@ -1583,7 +1569,7 @@ Evaluate(labels=test_labels, predictions=yhat, p=0.5)
 ```
 
 #### Over-Sampling
-
+Over-sampling works by replicating  or creating additional copies of the minority class to balance the distribution of the target class.This approach is known to potentially  cause over-fitting and computationally expensive.
 
 ```python
 from collections import Counter
