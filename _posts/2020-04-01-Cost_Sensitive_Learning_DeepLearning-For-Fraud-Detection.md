@@ -429,7 +429,7 @@ df[['Time', 'V1', 'V2', 'V3', 'V4', 'V5', 'V26', 'V27', 'V28', 'Amount', 'Class'
 
 
 #### Examine the class label imbalance
-Let's look at the dataset imbalance:
+The proportion of classs imbalance is evaluated below, the data is highly imbalanced.
 
 
 ```python
