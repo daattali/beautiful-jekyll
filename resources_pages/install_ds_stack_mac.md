@@ -44,30 +44,23 @@ This step is required for
 - all homework submission and grading
 - working collaboratively
 
-
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. There are some new Git commands that we will use that are only available as of Git 2.23, thus to get this newest version we will ask you to install Git using a tool called [Homebrew](https://brew.sh/), and thus we will install Homebrew first and then Git. 
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. There are some new Git commands that we will use that are only available as of Git 2.23 (or newer), thus to get this newest version we will ask you to install Xcode command line tools (not all of Xcode), which includes Git.
 
-Open Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and type the following command to install Homebrew:
+Open Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and type the following command to install Xcode command line tools:
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-Next, install Git using Homebrew. Do this by typing the following in the Terminal:
-
-```
-brew install git
+xcode-select --install
 ```
 
 After installation, in terminal type the following to ask for the version:
 ```
 git --version
 ```
-you should see something like this if you were successful:
+you should see something like this (does not have to be the exact same version) if you were successful:
 
 ```
-git version 2.23.0
+git version 2.24.2 (Apple Git-127)
 ```
 
 If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
