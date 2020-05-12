@@ -13,6 +13,7 @@ These instructions will walk you through installing the required Data Science so
 - uses English as the default language;
 
 ## Table of Contents
+- [Google Chrome browser](#chrome-browswer)
 - [GitHub](#github)
 - [Git](#git)
 - [Python and Jupyter](#python)
@@ -22,6 +23,9 @@ These instructions will walk you through installing the required Data Science so
 - [LaTeX](#latex)
 - [Make](#make)
 - [Docker](#docker)
+
+## Google Chrome browser
+In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
 
 ## GitHub
 
