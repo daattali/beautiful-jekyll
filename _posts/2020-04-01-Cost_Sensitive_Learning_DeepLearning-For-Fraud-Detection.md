@@ -86,9 +86,10 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 
 ```python
-file = tf.keras.utils
+
 df = pd.read_csv('/data/creditcard.csv')
 df.head()
+
 ```
 
 
