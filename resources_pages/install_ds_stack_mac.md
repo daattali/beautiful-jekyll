@@ -4,16 +4,18 @@ title: macOS
 subtitle: MDS software stack install instructions for macOS
 ---
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- runs one of the following operating systems: macOS Yosemite 10.10.3 or later;
-- can connect to networks via a wireless connection (and preferably also a wired connection);
-- has at least 40 GB disk space available;
-- has at least 4 GB of RAM;
-- uses a 64-bit CPU;
-- is 4 years old or newer at the start of the program;
-- uses English as the default language;
+- runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 18.X or later, Windows 10 Professional, Enterprise or Education; version 1909 or later. Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.
+- can connect to networks via a wireless connection
+- has at least 50 GB disk space available
+- has at least 8 GB of RAM
+- uses a 64-bit CPU
+- is 4 years old or newer at the start of the program
+- uses English as the default language
+- user has full administrative access to the laptop
 
 ## Table of Contents
 - [Google Chrome browser](#chrome-browswer)
+- [Bash shell](#bash-shell)
 - [GitHub](#github)
 - [Git](#git)
 - [Python and Jupyter](#python)
@@ -26,6 +28,15 @@ These instructions will walk you through installing the required Data Science so
 
 ## Google Chrome browser
 In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
+
+## Bash shell
+Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and typing: 
+
+```
+chsh -s /bin/bash
+```
+
+You will have to quit all instances of open Terminals and then restart the Terminal for this to take effect. 
 
 ## GitHub
 
@@ -48,7 +59,7 @@ This step is required for
 
 We will be using the command line version of Git as well as Git through RStudio and JupyterLab. There are some new Git commands that we will use that are only available as of Git 2.23 (or newer), thus to get this newest version we will ask you to install Xcode command line tools (not all of Xcode), which includes Git.
 
-Open Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and type the following command to install Xcode command line tools:
+Open Terminal and type the following command to install Xcode command line tools:
 ```
 xcode-select --install
 ```
