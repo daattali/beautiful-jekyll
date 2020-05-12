@@ -82,16 +82,26 @@ We will be using Python for a large part of the program, including many popular 
 
 Head to [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos) and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
 
-After installation, in terminal type the following to ask for the version:
+After installation, in terminal type the following to ask for the version of conda:
+```
+conda --version
+```
+you should see something like this if you were successful at installing conda (a Python package manager):
+
+```
+conda 4.8.2
+```
+
+If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
+
+After installation, in terminal type the following to ask for the version of Python:
 ```
 python --version
 ```
-you should see something like this if you were successful:
+you should see something like this if you were successful at installing Python:
 
 ```
-Python 3.7.3 (default, Mar 27 2019, 22:11:17) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
+Python 3.7.6
 ```
 
 If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
