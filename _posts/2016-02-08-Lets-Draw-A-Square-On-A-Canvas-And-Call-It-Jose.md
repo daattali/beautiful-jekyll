@@ -1,12 +1,13 @@
 ---
 layout: post
-categories: [javascript, game, development, canvas, story]
+tags: [javascript, game, development, canvas, story]
 title: Meet José! The Javascript Polygon!
 author: emir_osmanoski
 comments: true
+image: /images/2016-02-08-Drawing-Rectangle/00_Header.png
 ---
 
-![The World]({{ site.baseurl }}/images/2016-02-08-Drawing-Rectangle/00_Header.png)
+
 
 For the longest time now I've wanted to start working on something to do with
 just pure JavaScript. It's one of my favourite languages and it's always been
@@ -17,6 +18,8 @@ This coincided with me starting to write on this blog again, so I thought of
 the perfect opportunity to combine those two things! Additionally to all of
 this I would like if possible to be able to tell some sort of a story,
 preferably through a game narrative.
+
+![The World]({{ site.baseurl }}/images/2016-02-08-Drawing-Rectangle/00_Header.png)
 
 So, let's start by explore canvas! And let us do it with the help of our
 friend Jose, the Javascript Polygon. Now, if this sounds confusing let me just

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [programming, extension, methods, unit, test, generics, reflection]
+tags: [programming, extension, methods, unit, test, generics, reflection]
 title: Generic Extension Methods and usage for Entity metadata information.
 author: emir_osmanoski
 comments: true

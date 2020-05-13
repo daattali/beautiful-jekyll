@@ -1,12 +1,13 @@
 ---
 layout: post
-categories: [raspberry, pi, sense, hat, led, typescript, node, javascript, hardware]
+tags: [raspberry, pi, sense, hat, led, typescript, node, javascript, hardware]
 title: Raspberry PI Experiments - Part 1
 author: emir_osmanoski
 comments: true
+image: /images/2017-11-11-Raspberry-Pi-Pt1/LED.jpg
 ---
 
-![PI_LED!]({{ site.baseurl }}/images/2017-11-11-Raspberry-Pi-Pt1/LED.jpg)
+
 
 Recently I've started playing around with a Raspberry Pi. The Pi in itself is
 just a mini computer and you can't really do anything interesting on it you can't do
@@ -29,6 +30,8 @@ button they will be able to get a new random color for the player pixel! Simple!
 > Note: that this is not meant to be a post discussing features of Node,
 > Typescript or the Raspberry. It will be a quick and dirty look at the
 > configuration and jump straight into the code!
+
+![PI_LED!]({{ site.baseurl }}/images/2017-11-11-Raspberry-Pi-Pt1/LED.jpg)
 
 # Programming language of choice
 

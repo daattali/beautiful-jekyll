@@ -6,7 +6,7 @@ author: emir_osmanoski
 comments: true
 ---
 
-![Unit Testing]({{ site.baseurl }}/images/2014-12-18-UnitTestDbContext/UnitTestSession.png)
+
 
 I’ve recently started work on a new side project. We started with designing
 some mockup screens for most of the functionality and from there on moved on
@@ -18,6 +18,8 @@ decorations) and an EntityTypeConfiguration approach to do some additional
 configuration, mostly related to many to many relations without double
 association. That, I think would make another interesting post, as it was
 something I did/discover specifically on this project.
+
+![Unit Testing]({{ site.baseurl }}/images/2014-12-18-UnitTestDbContext/UnitTestSession.png)
 
 Anyway, I had an interesting trivial issue while developing and making changes
 to the collection of entities and the initially defined DbContext used during

@@ -1,12 +1,11 @@
 ---
 layout: post
-categories: [dapper, insert, benchmark, test, sql, bulk]
+tags: [dapper, insert, benchmark, test, sql, bulk]
 title: Dapper Benchmarks for Inserting Data and Data Table Inserts
 author: emir_osmanoski
 comments: true
 ---
 
-![Dapper!]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/00_Dapper.PNG)
 
 Recently I've had the chance to work with Dapper. It's what's called a Micro
 ORM framework for .NET, developed by Stack Exchange, famous mainly for Stack
@@ -19,6 +18,8 @@ because of that it provides much faster operations.
 One piece of the work I did with Dapper was inserting large amounts of data in
 a database. This post is going to look through 3 possible ways of doing the
 inserts with Dapper and present timed benchmarks for each of the approaches.
+
+![Dapper!]({{ site.baseurl }}/images/2016-02-02-Dapper-Benchmarks/00_Dapper.PNG)
 
 The post will mimic the way I did things initially and arrive somewhere at the
 end result of what is being used now to insert the large quantities of data.

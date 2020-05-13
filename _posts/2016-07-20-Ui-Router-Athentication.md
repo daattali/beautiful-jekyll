@@ -4,9 +4,10 @@ tags: [angular, router, ui-router, authentication, redirect, states, stateChange
 title: Securing UI-Router States with Simple Authentication
 author: emir_osmanoski
 comments: true
+image: /images/2016-07-20-Ui-Router-State-Secure/00_header.png
 ---
 
-![UiRouter]({{ site.baseurl }}/images/2016-07-20-Ui-Router-State-Secure/00_header.png)
+
 
 Recently I started a refactoring pass on the front end of one of my bigger
 private projects. It was started a long long time ago and it was the project
@@ -18,6 +19,8 @@ sort of the default. Now, recently, I had the opportunity to check out  ui-
 router on some of the projects at work  and as I was not very familiar with it
 I decided to learn a bit more by  switching out ng-route with ui-router on the
 above mentioned project.
+
+![UiRouter]({{ site.baseurl }}/images/2016-07-20-Ui-Router-State-Secure/00_header.png)
 
 But this post is not going to be about that transition. It is going to be
 about the way you can implement state security for your defined states and a

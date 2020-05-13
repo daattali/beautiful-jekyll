@@ -1,12 +1,13 @@
 ---
 layout: post
-categories: [angular, gulp, web, api, front, end, web, catalogue, e-commerce, demo, system, review, retrospective]
+tags: [angular, gulp, web, api, front, end, web, catalogue, e-commerce, demo, system, review, retrospective]
 title: So, I've been building something for the past 2 years...
 author: emir_osmanoski
 comments: true
+image: /images/2017-02-03-So-I-Built-A-Thing/00_header.png
 ---
 
-![WebCatalog]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/00_header.png)
+
 
 First of all, first post of 2017! May there be many more! At least one more
 than in 2016!
@@ -22,6 +23,8 @@ The project has been my go-to playground for learning Angular 1.5 as well as
 containing the most advanced work I've ever done with Entity Framework as well
 as some interesting stuff with Web API and back-end architecture
 experimentations.
+
+![WebCatalog]({{ site.baseurl }}/images/2017-02-03-So-I-Built-A-Thing/00_header.png)
 
 It's been the project where I tried and implemented a lot of things along the
 way, like interesting algorithms for property comparisons, optimizing EF

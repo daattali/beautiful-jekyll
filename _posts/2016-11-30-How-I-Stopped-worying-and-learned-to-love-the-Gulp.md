@@ -1,12 +1,11 @@
 ---
 layout: post
-categories: [node, gulp, npm, build, angular, front, end]
+tags: [node, gulp, npm, build, angular, front, end]
 title: How I stopped worrying and learned to love the Gulp! 
 author: emir_osmanoski
 comments: true
+image: /images/2016-11-30-How-I-Stopped-worying-and-learned-to-love-the-Gulp/00_header.png
 ---
-
-![GulpAngular]({{ site.baseurl }}/images/2016-11-30-How-I-Stopped-worying-and-learned-to-love-the-Gulp/00_header.png)
 
 # Introduction
 

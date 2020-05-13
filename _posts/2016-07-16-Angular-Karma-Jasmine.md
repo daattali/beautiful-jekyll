@@ -1,12 +1,12 @@
 ---
 layout: post
-categories: [angular, karma, jasmine, tdd, testing]
+tags: [angular, karma, jasmine, tdd, testing]
 title: Intro to unit testing Angular applications
 author: emir_osmanoski
 comments: true
 ---
 
-![Test Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/frontHeader.png)
+
 
 This post is going to tackle some basics of unit testing Angular 1.x
 applications usings Karma and Jasmine. Very recently I started working on
@@ -28,6 +28,8 @@ delivered code.
 
 # First thing first!
 
+
+
 Small update on the blog! It has been migrated from using jekyll 2.x to 3.x.
 With this I've also updated the syntax highlighting to Rogue which in my
 opinion is much nicer and cleaner and includes line numbers!
@@ -42,6 +44,8 @@ before going back to it.
 With that out of the way let's get back to the topic!
 
 # Karma? Jasmine? Mocha?
+
+![Test Results!]({{ site.baseurl }}/images/2016-07-16-Jasmine-Karma/frontHeader.png)
 
 Very shortly let us go over the several key concepts involved in the testing
 approach.

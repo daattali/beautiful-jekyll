@@ -1,12 +1,13 @@
 ---
 layout: post
-categories: [letter, frequencies, macedonian, фреквенција, букви, македонски, scrabble]
+tags: [letter, frequencies, macedonian, фреквенција, букви, македонски, scrabble]
 title: Scrabble and Macedonian Letter Frequencies
 author: emir_osmanoski
 comments: true
+image: /images/2015-01-11-Macedonian-Letter-Frequencies/head.jpg
 ---
 
-![Scrabble]({{ site.baseurl }}/images/2015-01-11-Macedonian-Letter-Frequencies/head.jpg)
+
 
 So, this article is going to be a little different. There will be very little
 code, a small discussion on site scrapping. The goal is to present an
@@ -19,6 +20,8 @@ board of 15x15 tiles. The goal is for the tiles to make actual existing words.
 The points awarded for a word depend on the letters of the word; more frequent
 letters award less points and less frequent, more. I won’t go into the details
 of the rules or how it’s played.
+
+![Scrabble]({{ site.baseurl }}/images/2015-01-11-Macedonian-Letter-Frequencies/head.jpg)
 
 The interesting thing here is that Scrabble boards/games come with 100 tiles,
 so that is ~100 letters, as usually there are 2 blank tiles to consider when

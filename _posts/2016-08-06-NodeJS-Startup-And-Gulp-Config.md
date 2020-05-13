@@ -1,12 +1,12 @@
 ---
 layout: post
-categories: [node, hulp, build, watch, livereload, socket.io]
+tags: [node, gulp, build, watch, livereload, socket.io]
 title: Gulp Live Reload Configuration for Node/Express
 author: emir_osmanoski
 comments: true
 ---
 
-![NodeLiveReload]({{ site.baseurl }}/images/2016-08-06-Gulp-Live-Server-Node/00_header.png)
+
 
 This is going to be a very short and simple post describing a very small
 feature based on an interesting gulp module.
@@ -33,6 +33,8 @@ I decided to introduce [gulp.js](http://gulpjs.com/) to streamline the
 development process, from modifying the node.js code, to working on the html,
 css and the javascript. I wanted to start a server and not have to refresh the
 page to see the changes I’ve done on the files.
+
+![NodeLiveReload]({{ site.baseurl }}/images/2016-08-06-Gulp-Live-Server-Node/00_header.png)
 
 So, this node project/tutorial was the perfect opportunity to see what it
 would take to setup a simple front-end build and reload environment. It is
