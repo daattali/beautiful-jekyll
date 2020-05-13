@@ -1,28 +1,24 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: Emir's Blog
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: 'Programming explorations, biking and other stuff!'
 
 # Your name to show in the footer
-author: Some Person
+author: Emir Osmanoski
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
+  
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/profile.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: true
@@ -68,7 +64,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "http://blog.emirosmanoski.mk/"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -103,7 +99,7 @@ footer-link-col: "#404040"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-57810187-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -119,7 +115,7 @@ footer-link-col: "#404040"
 # --- Comments --- #
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
+disqus: "emir01githubio"
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: ""
@@ -172,7 +168,7 @@ paginate: 5
 
 kramdown:
   input: GFM
-
+  
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -

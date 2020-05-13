@@ -1,16 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I’ve been working in the software development field for over three years now for an outsourcing company. This provided an interesting experience as the projects were quite varied both in length, technologies and requirements.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Almost always we were focused on using Microsoft based/supported technologies. The latest projects implemented were based on .NET, ASP.NET MVC, EF, Bootstrap and Knockout with a range of other frameworks and tools. The projects were mostly web related and were possible we followed good design practices and approaches to development.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+So, one of my goals with the blog, tech wise, is to explore in more depth the things I’ve already been working with as well as explore new things!
