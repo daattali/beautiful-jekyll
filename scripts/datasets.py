@@ -5,6 +5,9 @@ import urllib.request
 import pandas as pd
 import tabula
 
+import localization
+
+
 QUERY_HEADERS = {
     'User-Agent': 'Mozilla/5.0',
 }
@@ -36,14 +39,24 @@ class Dataset(object):
     def _create_dataframe(self):
         raise NotImplementedError()
 
-    def _localize_date(self, column, na_value='Đang điều tra'):
-        t = self.dataframe[column].str.extract(r'([0-9]+)月([0-9]+)日')
-        self.dataframe[column] = (t[0] + '/' + t[1]).fillna(na_value)
-        return self.dataframe[column]
+    def _localize_column_names(self):
+        col_list = [self.__class__.__dict__[x] for x in self.__class__.__dict__ if x.startswith('COL_')]
+        self.dataframe.columns = col_list
+        return self.dataframe
 
-    def _localize_age(self, column, na_value='Không rõ'):
-        self.dataframe[column] = self.dataframe[column].str.replace('代', 's')
-        self.dataframe[column].replace({
+    def _localize_date(self, column, na_value='Đang điều tra', inplace=True):
+        t = self.dataframe[column].str.extract(r'([0-9]+)月([0-9]+)日')
+        series = t[0] + '/' + t[1]
+        series.fillna(na_value, inplace=True)
+        if inplace:
+            self.dataframe[column] = series
+
+        return series
+
+    def _localize_age(self, column, na_value='Không rõ', inplace=True):
+        series = self.dataframe[column].str.replace('代', 's')
+        series.replace({
+            '1歳未満': 'Dưới 1',
             '未就学児': 'Dưới 3',
             '就学児': '3-9',
             '10歳未': 'Dưới 10',
@@ -61,11 +74,14 @@ class Dataset(object):
             '同意なし': na_value,
             '公表しない': na_value,
         }, inplace=True)
-        self.dataframe[column].fillna(na_value, inplace=True)
-        return self.dataframe[column]
+        series.fillna(na_value, inplace=True)
+        if inplace:
+            self.dataframe[column] = series
 
-    def _localize_sex(self, column, na_value='Không công bố'):
-        self.dataframe[column].replace({
+        return series
+
+    def _localize_sex(self, column, na_value='Không công bố', inplace=True):
+        series = self.dataframe[column].replace({
             '男性': 'Nam',
             '女性': 'Nữ',
             '女児': 'Nữ',
@@ -75,9 +91,64 @@ class Dataset(object):
             '非公表': na_value,
             '公表しない': na_value,
             '不明': na_value,
-        }, inplace=True)
-        self.dataframe[column].fillna(na_value, inplace=True)
-        return self.dataframe[column]
+        })
+        series.fillna(na_value, inplace=True)
+        if inplace:
+            self.dataframe[column] = series
+
+        return series
+
+    def _localize_boolean(self, column, na_value=0, inplace=True):
+        series = self.dataframe[column].replace({
+            '〇': 1,
+            '○': 1,
+            '': na_value,
+        })
+        series.fillna(na_value, inplace=True)
+        series = series.astype(int)
+        if inplace:
+            self.dataframe[column] = series
+
+        return series
+
+    def _localize_location(
+        self,
+        column,
+        localization_dict,
+        insider_keys,
+        insider_value='Trong tỉnh',
+        outsider_keys=None,
+        outsider_value='Ngoài tỉnh',
+        na_keys=None,
+        na_value='Đang điều tra',
+        others=None,
+        inplace=True,
+    ):
+        if na_keys is None:
+            na_keys = []
+        if outsider_keys is None:
+            outsider_keys = []
+        if insider_keys is None:
+            insider_keys = []
+        if others is None:
+            others = {}
+
+        outsider_keys += ['県外', '府外', '都外'] + [k + '外' for k in insider_keys]
+        na_keys += ['非公表', '調査中']
+
+        series = self.dataframe[column].replace({
+            **localization_dict,
+            **{k: na_value for k in na_keys},
+            **{k: outsider_value for k in outsider_keys},
+            **{k: insider_value for k in insider_keys},
+            **{k: outsider_value for k in localization.PREFECTURES.keys() if k not in insider_keys},
+            **others,
+        })
+        series.fillna(na_value, inplace=True)
+        if inplace:
+            self.dataframe[column] = series
+
+        return series
 
     def _localize(self, **kwargs):
         return self.dataframe

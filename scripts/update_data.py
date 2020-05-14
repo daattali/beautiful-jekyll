@@ -1,4 +1,5 @@
 import json
+import locale
 import re
 import urllib.request
 import sys
@@ -43,25 +44,7 @@ class TokyoPatientsDataset(datasets.CsvDataset):
         super().__init__(self.URL, self.NAME, **kwargs)
 
     def _localize(self):
-        # Localize column name
-        self.dataframe.columns = [
-            self.COL_NO,
-            self.COL_AREA_CODE,
-            self.COL_PREFECTURE,
-            self.COL_DISTRICT,
-            self.COL_PUBLISHED_DATE,
-            self.COL_DOW,
-            self.COL_SYMPTOM_DATE,
-            self.COL_PATIENT_ADDRESS,
-            self.COL_PATIENT_AGE,
-            self.COL_PATIENT_SEX,
-            self.COL_PATIENT_ATTRIBUTE,
-            self.COL_PATIENT_STATE,
-            self.COL_PATIENT_SYMPTOM,
-            self.COL_PATIENT_TRAVEL,
-            self.COL_REF,
-            self.COL_DISCHARGED,
-        ]
+        self._localize_column_names()
 
         # Localize data
         self.dataframe[self.COL_PREFECTURE].replace({
@@ -84,7 +67,7 @@ class TokyoPatientsDataset(datasets.CsvDataset):
             '都外': 'Ngoài Tokyo',
             '調査中': 'Đang điều tra',
         }, inplace=True)
-        
+
         self._localize_age(self.COL_PATIENT_SEX)
         self._localize_age(self.COL_PATIENT_AGE)
 
@@ -214,13 +197,15 @@ class PatientByCityTokyoDataset(datasets.JsonDataset):
         return self.dataframe
 
     def _localize(self):
-        self.dataframe[self.COL_LABEL_VIETNAMESE] = self.dataframe[self.COL_LABEL].replace({
-            **localization.PREFECTURES,
-            **localization.TOKYO_CITIES,
-            '都外': 'Ngoài Tokyo',
-            '調査中': 'Đang điều tra',
-            '小計': 'Tổng số',
-        })
+        self.dataframe[self.COL_LABEL_VIETNAMESE] = self._localize_location(
+            column=self.COL_LABEL,
+            localization_dict=localization.TOKYO_CITIES,
+            insider_keys=['東京都'],
+            insider_value='Trong Tokyo',
+            outsider_value='Ngoài Tokyo',
+            others={'小計': 'Tổng số'},
+            inplace=False,
+        )
         self.dataframe[self.COL_AREA_VIETNAMESE] = self.dataframe[self.COL_AREA].replace({
             '特別区': '23 quận lớn',
             '多摩地域': 'Địa phận Tama',
@@ -253,27 +238,17 @@ class PatientByCityOsakaDataset(datasets.ExcelDataset):
         return self.dataframe
 
     def _localize(self):
-        self.dataframe.columns = [
-            self.COL_ID,
-            self.COL_PUBLISHED_DATE,
-            self.COL_AGE,
-            self.COL_SEX,
-            self.COL_LOCATION,
-            self.COL_SYMPTOM_DATE,
-            self.COL_STATUS,
-            self.COL_DISCHARGED,
-        ]
-        
+        self._localize_column_names()
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
-        
-        self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.OSAKA_CITIES,
-            '府外': 'Ngoài Osaka',
-            '大阪府外': 'Ngoài Osaka',
-            '調査中': 'Đang điều tra',
-        }, inplace=True)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.OSAKA_CITIES,
+            insider_keys=['大阪府'],
+            insider_value='Trong phủ',
+            outsider_value='Ngoài phủ',
+        )
+
         self.dataframe[self.COL_DISCHARGED].replace({
             '退院': 'Ra viện',
             '死亡退院': 'Tử vong',
@@ -311,28 +286,16 @@ class PatientByCitySaitamaDataset(datasets.PdfDataset):
 
     def _localize(self):
         self.dataframe = self.dataframe.iloc[:, 1:]
-        self.dataframe.columns = [
-            self.COL_ID,
-            self.COL_REF,
-            self.COL_DATE,
-            self.COL_AGE,
-            self.COL_SEX,
-            self.COL_LOCATION,
-        ]
+        self._localize_column_names()
         self.dataframe.drop(index=0, inplace=True)
         self._localize_date(self.COL_DATE)
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
-
-        self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.SAITAMA_CITIES,
-            '調査中': 'Đang điều tra',
-            '川口市外': 'Ngoài Kawaguchi',
-            '県外': 'Ngoài tỉnh',
-            '埼玉県外': 'Ngoài tỉnh',
-        }, inplace=True)
-        self.dataframe[self.COL_LOCATION].fillna('Đang điều tra', inplace=True)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.SAITAMA_CITIES,
+            insider_keys=['埼玉県', '川口市外'],
+        )
 
         return self.dataframe
 
@@ -350,37 +313,25 @@ class PatientByCityKanagawaDataset(datasets.CsvDataset):
         super().__init__(self.URL, self.NAME, **kwargs)
 
     def _localize(self):
-        self.dataframe.columns = [
-            self.COL_DATE,
-            self.COL_LOCATION,
-            self.COL_AGE,
-            self.COL_SEX,
-        ]
+        self._localize_column_names()
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
 
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('神奈川県', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('内', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健所管', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('及び都', '')
         self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].str.replace('保健福祉事務所管', '市')
-        self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.KANAGAWA_CITIES,
-            '': 'Tỉnh Kanagawa',
-            'スペイン（横浜市発表）': 'Yokohama',
-            '国外（川崎市発表）': 'Kawasaki',
-            '川崎市外（川崎市発表）': 'Kawasaki',
-            '茅ケ崎市保健所管内及び都内': 'Chigasaki',
-            '川崎市外': 'Ngoài Kawasaki',
-            '横浜市外': 'Ngoài Yokohama',
-            '東京都\u3000': 'Tokyo',
-        }, inplace=True)
-
-        self._localize_age(self.COL_AGE)
-        self._localize_sex(self.COL_SEX)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.KANAGAWA_CITIES,
+            insider_keys=['', '神奈川県', '川崎市外（川崎市発表）', '川崎市外', '横浜市外'],
+            outsider_keys=['スペイン（横浜市発表）', '国外（川崎市発表）', '東京都\u3000']
+        )
 
         return self.dataframe
 
-    
+
 class PatientByCityChibaDataset(datasets.JsonDataset):
     URL = 'https://raw.githubusercontent.com/civictechzenchiba/covid19-chiba/development/data/data.json'
     NAME = 'patient-by-city-chiba'
@@ -400,44 +351,96 @@ class PatientByCityChibaDataset(datasets.JsonDataset):
         return pd.DataFrame(self.json['patients']['data'])
 
     def _cleanse(self):
-        self.dataframe[self.COL_DISCHARGED].fillna(0, inplace=True)
-        self.dataframe[self.COL_DISCHARGED] = self.dataframe[self.COL_DISCHARGED].astype(int)
         self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW], inplace=True)
 
     def _localize(self):
-        self.dataframe.columns = [
-            self.COL_DATE_JP,
-            self.COL_DOW,
-            self.COL_LOCATION,
-            self.COL_AGE,
-            self.COL_SEX,
-            self.COL_DISCHARGED,
-            self.COL_DATE,
-        ]
-        self.dataframe[self.COL_DISCHARGED] = self.dataframe[self.COL_DISCHARGED].replace({
-            '〇': 1,
-            '': 0,
-        })
-        self.dataframe[self.COL_LOCATION] = self.dataframe[self.COL_LOCATION].replace({
-            **localization.PREFECTURES,
-            **localization.CHIBA_CITIES,
-            '千葉市': 'Tỉnh Chiba',
-            '中国（武漢市）': 'Vũ Hán (TQ)',
-            'スペイン': 'Tây Ban Nha',
-            'アイルランド': 'Ireland',
-            '南アフリカ': 'Nam Mỹ',
-            'ジンバブエ': 'Zimbabue',
-            'イギリス': 'Anh Quốc',
-            '県外': 'Ngoài tỉnh',
-            '非公表': 'Không công khai',
-        })
-        
-        
+        self._localize_column_names()
         self._localize_age(self.COL_AGE)
         self._localize_sex(self.COL_SEX)
-        
+        self._localize_boolean(self.COL_DISCHARGED)
+
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.CHIBA_CITIES,
+            insider_keys=['千葉県'],
+            outsider_keys=['中国（武漢市）', 'スペイン', 'アイルランド', '南アフリカ', 'ジンバブエ', 'イギリス'],
+        )
+
         return self.dataframe
-    
+
+
+class PatientByCityFukuokaDataset(datasets.JsonDataset):
+    URL = 'https://raw.githubusercontent.com/Code-for-Fukuoka/covid19-fukuoka/development/data/data.json'
+    NAME = 'patient-by-city-fukuoka'
+
+    COL_DATE_JP = 'Date_JP'
+    COL_DOW = 'Day of Week'
+    COL_LOCATION = 'Location'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_DISCHARGED = 'Discharged'
+    COL_DATE = 'Date'
+
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
+
+    def _create_dataframe_from_json(self):
+        return pd.DataFrame(self.json['patients']['data'])
+
+    def _cleanse(self):
+        self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW], inplace=True)
+
+    def _localize(self):
+        self._localize_column_names()
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+        self._localize_boolean(self.COL_DISCHARGED)
+
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.FUKUOKA_CITIES,
+            insider_keys=['福岡県'],
+        )
+
+        return self.dataframe
+
+
+class PatientByCityHyogoDataset(datasets.JsonDataset):
+    URL = 'https://raw.githubusercontent.com/stop-covid19-hyogo/covid19/development/data/patients.json'
+    NAME = 'patient-by-city-hyogo'
+
+    COL_ID = 'Id'
+    COL_DATE_JP = 'Date_JP'
+    COL_DOW = 'Day of Week'
+    COL_LOCATION = 'Location'
+    COL_AGE = 'Age'
+    COL_SEX = 'Sex'
+    COL_DISCHARGED = 'Discharged'
+    COL_REF = 'Reference'
+    COL_DATE = 'Date'
+
+    def __init__(self, **kwargs):
+        super().__init__(self.URL, self.NAME, **kwargs)
+
+    def _create_dataframe_from_json(self):
+        return pd.DataFrame(self.json['data'])
+
+    def _cleanse(self):
+        self.dataframe.drop(columns=[self.COL_DATE_JP, self.COL_DOW, self.COL_REF], inplace=True)
+
+    def _localize(self):
+        self._localize_column_names()
+        self._localize_age(self.COL_AGE)
+        self._localize_sex(self.COL_SEX)
+        self._localize_boolean(self.COL_DISCHARGED)
+        self._localize_location(
+            column=self.COL_LOCATION,
+            localization_dict=localization.HYOGO_CITIES,
+            insider_keys=['兵庫県', '神戸市外', '西宮市外'],
+        )
+
+        return self.dataframe
+
 
 class ClinicDataset(datasets.CsvDataset):
     COL_ID = 'Id'
@@ -485,9 +488,12 @@ class ClinicDataset(datasets.CsvDataset):
 
 def init_firebase_app():
     cred = credentials.Certificate(FIREBASE_PRIVATE_KEY)
-    app = firebase_admin.initialize_app(cred, {
-        'storageBucket': f'{FIREBASE_APP_NAME}.appspot.com'
-    })
+    try:
+        app = firebase_admin.initialize_app(cred, {
+            'storageBucket': f'{FIREBASE_APP_NAME}.appspot.com'
+        })
+    except ValueError:
+        app = firebase_admin.get_app()
     client = firestore.client()
     bucket = storage.bucket(app=app)
 
@@ -504,25 +510,29 @@ def get_data_from_mhlw():
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
 
-    pdf_url = re.search(r'<a [^>]*href="([^"]+)">国内の入退院の状況について[^<]*</a>', dom).group(1)
+    pdf_url = re.search(r'<a [^>]*href="([^"]+)">新型コロナウイルスの発生状況[^<]*</a>', dom).group(1)
     df = tabula.read_pdf(pdf_url, lattice=True)
     if isinstance(df, list):
         df = df[0]
 
-    number_pattern = re.compile('([0-9]+)\(\+([0-9]+)\)')
+    df = df.reset_index()
+    number_pattern = re.compile('([0-9,]+)\\r\(([\+\-0-9,]+)\).*')
     nums = []
     for i in range(len(df)):
-        nums = []
+        if df.iloc[i, 0] != '合計':
+            continue
         for val in df.iloc[i].values:
             m = number_pattern.search(str(val))
             if m is None:
-                break
-            nums.append((int(m.group(1)), int(m.group(2))))
+                continue
+            nums.append((locale.atoi(m.group(1)), locale.atoi(m.group(2))))
         else:
             break
-    assert len(nums) == 4
 
-    return nums[0], nums[2], nums[3]
+    assert len(nums) == 7
+
+
+    return nums[1], nums[4], nums[5]
 
 
 def update_cases_recovered_deaths(bucket):
@@ -570,6 +580,8 @@ def update_detailed_data(bucket):
         PatientByCitySaitamaDataset(),
         PatientByCityKanagawaDataset(encoding='cp932'),
         PatientByCityChibaDataset(),
+        PatientByCityFukuokaDataset(),
+        PatientByCityHyogoDataset(),
     )
 
     for dataset in all_datasets:
@@ -588,6 +600,7 @@ def update_detailed_data(bucket):
 
 
 def main(args=None):
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
     app, client, bucket = init_firebase_app()
     update_cases_recovered_deaths(bucket)
     print('-' * 20)
