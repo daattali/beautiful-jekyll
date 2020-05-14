@@ -1,4 +1,5 @@
 import json
+import locale
 import re
 import urllib.request
 import sys
@@ -509,25 +510,29 @@ def get_data_from_mhlw():
     with urllib.request.urlopen(request) as url:
         dom = url.read().decode()
 
-    pdf_url = re.search(r'<a [^>]*href="([^"]+)">国内の入退院の状況について[^<]*</a>', dom).group(1)
+    pdf_url = re.search(r'<a [^>]*href="([^"]+)">新型コロナウイルスの発生状況[^<]*</a>', dom).group(1)
     df = tabula.read_pdf(pdf_url, lattice=True)
     if isinstance(df, list):
         df = df[0]
 
-    number_pattern = re.compile('([0-9]+)\(\+([0-9]+)\)')
+    df = df.reset_index()
+    number_pattern = re.compile('([0-9,]+)\\r\(([\+\-0-9,]+)\).*')
     nums = []
     for i in range(len(df)):
-        nums = []
+        if df.iloc[i, 0] != '合計':
+            continue
         for val in df.iloc[i].values:
             m = number_pattern.search(str(val))
             if m is None:
-                break
-            nums.append((int(m.group(1)), int(m.group(2))))
+                continue
+            nums.append((locale.atoi(m.group(1)), locale.atoi(m.group(2))))
         else:
             break
-    assert len(nums) == 4
 
-    return nums[0], nums[2], nums[3]
+    assert len(nums) == 7
+
+
+    return nums[1], nums[4], nums[5]
 
 
 def update_cases_recovered_deaths(bucket):
@@ -595,6 +600,7 @@ def update_detailed_data(bucket):
 
 
 def main(args=None):
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
     app, client, bucket = init_firebase_app()
     update_cases_recovered_deaths(bucket)
     print('-' * 20)
