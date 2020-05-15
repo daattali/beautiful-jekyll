@@ -242,7 +242,8 @@ img {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
-  .navbar-expand-md .navbar-nav .nav-item:last-child .nav-link {
+
+  .navbar-expand-md .navbar-nav .nav-item:not(.dropdown):last-child .nav-link {
     padding-right: 0;
   }
 }

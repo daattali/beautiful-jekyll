@@ -1,3 +1,7 @@
+## v3.0.1 (Date: TBD)
+
+- Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
+
 ## v3.0.0 (Date: 2020-05-07)
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
