@@ -1,0 +1,13 @@
+---
+layout: post
+title: Inversion et théorème de Ptolémée
+published: true
+
+---
+
+
+# Définition d'une inversion
+
+On considère un espace affine euclidien $\mathcal{E}$.
+> Si $\Omega$ est un point de $\mathcal{E}$, on appelle **inversion de centre $\Omega$** l'application qui à un point $M$ de 
+$\mathcal{E}$ distinct de $\Omega$ associe le point $M'$ tel que le vecteur $\overrightarrow{\Omega M'}$ soit colinéaire et de même sens que le vecteur $\overrightarrow{\Omega M}$ et de norme inverse de celle de $\overrightarrow{\Omega M}$.
