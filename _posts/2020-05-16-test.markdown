@@ -4,6 +4,53 @@ title: Inversion et théorème de Ptolémée
 published: true
 
 ---
+---
+layout: post
+title: Inversion et théorème de Ptolémée
+published: true
+
+---
+
+
+
+# Définition d'une inversion
+
+On considère un espace affine euclidien $\mathcal{E}$.
+
+> Si $\Omega$ est un point de $\mathcal{E}$, on appelle **inversion de centre $\Omega$** l'application qui à un point $M$ de $\mathcal{E}$ distinct de $\Omega$ associe le point $M'$ tel que le vecteur $\overrightarrow{\Omega M'}$ soit colinéaire et de même sens que le vecteur $\overrightarrow{\Omega M}$ et de norme inverse de celle de $\overrightarrow{\Omega M}$.
+
+Autrement dit,
+
+$$
+\overrightarrow{\Omega M'}=\frac{\overrightarrow{\Omega M}}{\Omega M^2}
+$$
+
+L'inversion de centre $\Omega$ est donc l'application
+
+$$
+M\in \mathcal{E}\setminus\{\Omega\}\mapsto\Omega+\frac{\overrightarrow{\Omega M}}{\Omega M^2}
+$$
+
+On constate immédiatement que l'inversion de centre $\Omega$ est une permutation de $\mathcal{E}\setminus{\Omega}$ puisque c'est clairement une _involution_.
+
+On remarque également que si $M$ et $N$ sont de points de $\mathcal{E}$ distincts de $\Omega$ et $M'$ et $N'$ leurs images respectives par l'inversion de centre $\Omega$, alors
+
+$$
+\begin{align*}
+M'N'^2&=\left(\overrightarrow{\Omega N'}-\overrightarrow{\Omega M'}\right)^2\\
+&=\Omega M'^2+\Omega N'^2-2\overrightarrow{\Omega M'}\cdot\overrightarrow{\Omega N'}\\
+&=\frac{1}{\Omega M^2}+\frac{1}{\Omega N^2}-2\frac{\overrightarrow{\Omega M}\cdot\overrightarrow{\Omega N}}{\Omega M^2\cdot\Omega N^2}\\
+&=\frac{\Omega M^2+\Omega N^2-2\overrightarrow{\Omega M}\cdot\overrightarrow{\Omega N}}{\Omega M^2\cdot\Omega N^2}\\
+&=\frac{\left(\overrightarrow{\Omega N}-\overrightarrow{\Omega M}\right)^2}{\Omega M^2\cdot\Omega N^2}\\
+&=\frac{MN^2}{\Omega M^2\cdot\Omega N^2}
+\end{align*}
+$$
+
+et donc
+
+$$
+M'N'=\frac{MN}{\Omega M\cdot\Omega N}
+$$
 
 
 # Définition d'une inversion
