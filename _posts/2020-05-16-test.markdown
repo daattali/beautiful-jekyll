@@ -4,12 +4,6 @@ title: Inversion et théorème de Ptolémée
 published: true
 
 ---
----
-layout: post
-title: Inversion et théorème de Ptolémée
-published: true
-
----
 
 
 
