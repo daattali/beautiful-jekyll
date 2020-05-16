@@ -42,11 +42,13 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   
-  facebook: deanattali
-  github: lechax
+  
   youtube: user/deanat78attali
   twitter: daattali
   rss: false
+  email : 
+  github: lechax
+  
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
