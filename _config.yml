@@ -13,10 +13,13 @@ author: Yann Mobiuas
 
 navbar-links:
   Accueil : "aboutme"
+  Côté Madame : 
+  Côté Monsieur : 
+  Côté SNT: "https://deanattali.com"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Côté SNT: "https://deanattali.com"
+  
 
 # --- Logo --- #
 
