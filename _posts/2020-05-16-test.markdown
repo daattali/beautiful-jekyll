@@ -1,52 +1,51 @@
 ---
 layout: post
-title: Inversion et théorème de Ptolémée
+title: 'Petit théorème de Fermat, combinatoire et action de groupe'
 published: true
-
 ---
 
+On propose dans cet article une preuve alternative du petit théorème de Fermat via des considérations combinatoires. On en profitera pour introduire la notion d'action de groupe, primordiale en théorie des groupes.
 
+# Introduction naïve
 
-# Définition d'une inversion
+On s'intéresse aux nombres de façons de colorier les sommets d'un polygone régulier à $p$ côtés à l'aide de $n$ couleurs. Evidemment, le nombre total de coloriages possibles est $n^p$ (on peut colorier de $n$ façons chacun des $p$ côtés). Un coloriage étant donné, on s'intéresse aux nouveaux coloriages obtenus en faisant subir au polygone une rotation d'angle un multiple de $\frac{2\pi}{p}$.
 
-On considère un espace affine euclidien $\mathcal{E}$. Si $\Omega$ est un point de $\mathcal{E}$, on appelle **inversion de centre $\Omega$** l'application qui à un point $M$ de $\mathcal{E}$ distinct de $\Omega$ associe le point $M'$ tel que le vecteur $\overrightarrow{\Omega M'}$ soit colinéaire et de même sens que le vecteur $\overrightarrow{\Omega M}$ et de norme inverse de celle de $\overrightarrow{\Omega M}$.
+Clairement, si tous les sommets du polygone initial sont de même couleur, on n'obtient aucun nouveau coloriage en faisant tourner le polygone.
 
-Autrement dit,
+Dans le cas général, pour revenir au coloriage initial par rotation (non égale à l'identité), il faut que le coloriage initial possède un motif "périodique", la période étant nécessairement un diviseur de $p$. Notamment, lorsque $p$ est premier, les "périodes" possibles ne peuvent qu'être égales à $1$ (coloriage uniforme) ou $p$ (coloriage non uniforme).
 
-$$
-\overrightarrow{\Omega M'}=\frac{\overrightarrow{\Omega M}}{\Omega M^2}
-$$
+Lorsque $p$ est premier (ici $p=7$), on ne retrouvera jamais le coloriage initial avant la $p^\text{ème}$ (à moins que le coloriage soit uniforme).
+<div>
+<script src="/js/polygones1.js" id="d36553d5-ff01-4bac-aa06-cd28044879d3"></script>
+</div>
 
-L'inversion de centre $\Omega$ est donc l'application
+Lorsque $p$ n'est pas premier (ici $p=6$), on peut retrouver le coloriage initial avant la $p^\text{ème}$ rotation si le motif est "périodique" (la "période" ici est $3$).
+<div>
+<script src="/js/polygones2.js" id="9b757310-2181-4bf7-b827-0a5a151b9c21"></script>
+</div>
 
-$$
-M\in \mathcal{E}\setminus\{\Omega\}\mapsto\Omega+\frac{\overrightarrow{\Omega M}}{\Omega M^2}
-$$
+Puisque l'on dipose de $n$ couleurs, il existe exactement $n$ coloriages uniformes. De plus, chaque rotation d'angle $\frac{2k\pi}{p}$ avec $k\in\lb0,p-1\rb$ appliquée à un coloriage non uniforme donne un coloriage différent. En regroupant les coloriages non uniformes en "paquets" de coloriages différant d'une rotation d'un angle multiple de $\frac{2\pi}{p}$, on en déduit que le nombre de coloriages non uniformes est un multiple de $p$. Le nombre total de coloriages étant égal à $n^p$, on en déduit que $n^p\equiv n[p]$.
 
-On constate immédiatement que l'inversion de centre $\Omega$ est une permutation de $\mathcal{E}\setminus{\Omega}$ puisque c'est clairement une _involution_.
+# Une relation d'équivalence
 
-On remarque également que si $M$ et $N$ sont de points de $\mathcal{E}$ distincts de $\Omega$ et $M'$ et $N'$ leurs images respectives par l'inversion de centre $\Omega$, alors
+On propose maintenant une formalisation plus rigoureuse de l'approche précédente.
 
-$$
-\begin{align*}
-M'N'^2&=\left(\overrightarrow{\Omega N'}-\overrightarrow{\Omega M'}\right)^2\\
-&=\Omega M'^2+\Omega N'^2-2\overrightarrow{\Omega M'}\cdot\overrightarrow{\Omega N'}\\
-&=\frac{1}{\Omega M^2}+\frac{1}{\Omega N^2}-2\frac{\overrightarrow{\Omega M}\cdot\overrightarrow{\Omega N}}{\Omega M^2\cdot\Omega N^2}\\
-&=\frac{\Omega M^2+\Omega N^2-2\overrightarrow{\Omega M}\cdot\overrightarrow{\Omega N}}{\Omega M^2\cdot\Omega N^2}\\
-&=\frac{\left(\overrightarrow{\Omega N}-\overrightarrow{\Omega M}\right)^2}{\Omega M^2\cdot\Omega N^2}\\
-&=\frac{MN^2}{\Omega M^2\cdot\Omega N^2}
-\end{align*}
-$$
+Pour $n\in\dN$, on notera $\dN_n$ l'ensemble des entiers compris entre $1$ et $n$ ($\dN_n=\emptyset$ lorsque $n=0$). On notera également $A_{p,n}$ l'ensemble des applications de $\dN_p$ dans $\dN_n$. Pour faire le lien avec l'approche précédente, les éléments de $A_{p,n}$ sont des coloriages : un coloriage n'est en effet qu'une manière d'associer une couleur à chacun des sommets.
 
-et donc
+Faire subir une rotation d'angle $\frac{2\pi}{p}$ à notre polygone régulier revient en fait à permuter circulairement ses sommets. On note donc $c$ le cycle $(1,2,\dots,p)$. On munit l'ensemble $A_{p,n}$ de la relation d'équivalence suivante[^equivalence] :
 
 $$
-M'N'=\frac{MN}{\Omega M\cdot\Omega N}
+\forall(f,g)\in A_{p,n},\;f\sim g\iff\exists k\in\dZ,\;f=g\circ c^k
 $$
 
+Il est évident que les classes d'équivalence des fonctions constantes sont des singletons. En effet, si $f$ est constante, $f\circ c^k=f$ pour tout $k\in\dZ$.
 
-# Définition d'une inversion
+On suppose maintenant $p$ _premier_. Le fait que $p$ soit premier entraîne que les classes d'équivalence d'une application non constante sont exactement de cardinal $p$. Plus précisément, on va montrer que la classe d'équivalence de $f\in A_{p,n}$ est
 
-On considère un espace affine euclidien $\mathcal{E}$.
-> Si $\Omega$ est un point de $\mathcal{E}$, on appelle **inversion de centre $\Omega$** l'application qui à un point $M$ de 
-$\mathcal{E}$ distinct de $\Omega$ associe le point $M'$ tel que le vecteur $\overrightarrow{\Omega M'}$ soit colinéaire et de même sens que le vecteur $\overrightarrow{\Omega M}$ et de norme inverse de celle de $\overrightarrow{\Omega M}$.
+$$
+C(f)=\left\{f\circ c^r,\;r\in\lb0,p-1\rb\right\}
+$$
+
+les éléments étant bien deux à deux distincts. L'inclusion de la droite vers la gauche est évidente. Réciproquement, si l'on se donne $g\in C(f)$, il existe $k\in\dZ$ tel que $g=f\circ c^k$. Puisque $c^p$ est l'identité, en notant $r$ le reste de la division euclidienne de $k$ par $p$, on a bien $g=f\circ c^r$ avec $r\in\lb0,p-1\rb$.
+
+Il ne reste plus qu'à montrer que les éléments sont bien deux à deux distincts. On peut raisonner par l'absurde : on suppose qu'il existe $(r,s)\in\lb0,p-1\rb^2$ tel que $r\neq s$ et $f\circ c^r=f\circ c^s$. En posant $t=r-s$, on a donc $f\circ c^t=f$ et $t\in\lb-p+1,p-1\rb\setminus\{0\}$ ; $t$ est donc premier avec $p$ car $p$ est premier. Il existe donc $(u,v)\in\dZ^2$ tel que $ut+vp=1$. Puisque $f\circ c^t=f$, on obtient successivement $f\circ c^{ut}=f$, puis $f\circ c^{1-vp}=f$ et enfin $f\circ c=f$ puisque $c^p$ est l'identité. Il est alors clair que $f$ est constante.
