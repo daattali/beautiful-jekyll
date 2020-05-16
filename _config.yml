@@ -1,22 +1,22 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: Le git too legit to aquit
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Site de Mathématiques
 
 # Your name to show in the footer
-author: Some Person
+author: Yann Mobiuas
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  Accueil : "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Côté SNT: "https://deanattali.com"
 
 # --- Logo --- #
 
@@ -38,9 +38,10 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
+  
   facebook: deanattali
-  github: daattali
+  github: 
+  youtube: user/deanat78attali
   twitter: daattali
   rss: true
 #  reddit: yourname
