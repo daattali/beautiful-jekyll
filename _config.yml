@@ -12,8 +12,11 @@ author: Yan Mobius
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Accueil : "aboutme"
-  Côté Madame : 
+  Accueil : "aboutme" 
+  Côté Madame: 
+    - Seconde 5 :
+    - 1re groupe 4 :
+    - Maths complémentaires : 
   Côté Monsieur : 
   Côté SNT: "https://deanattali.com"
   Resources:
