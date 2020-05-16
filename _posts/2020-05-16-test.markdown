@@ -8,7 +8,7 @@ On propose dans cet article une preuve alternative du petit théorème de Fermat
 
 # Introduction naïve
 
-On s'intéresse aux nombres de façons de colorier les sommets d'un polygone régulier à $p$ côtés à l'aide de $n$ couleurs. Evidemment, le nombre total de coloriages possibles est $n^p$ (on peut colorier de $n$ façons chacun des $p$ côtés). Un coloriage étant donné, on s'intéresse aux nouveaux coloriages obtenus en faisant subir au polygone une rotation d'angle un multiple de $\frac{2\pi}{p}$.
+On s'intéresse aux nombres de façons de colorier les sommets d'un polygone régulier à $$p$$ côtés à l'aide de $$n$$ couleurs. Evidemment, le nombre total de coloriages possibles est $n^p$ (on peut colorier de $n$ façons chacun des $p$ côtés). Un coloriage étant donné, on s'intéresse aux nouveaux coloriages obtenus en faisant subir au polygone une rotation d'angle un multiple de $\frac{2\pi}{p}$.
 
 Clairement, si tous les sommets du polygone initial sont de même couleur, on n'obtient aucun nouveau coloriage en faisant tourner le polygone.
 
