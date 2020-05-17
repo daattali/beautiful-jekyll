@@ -28,7 +28,7 @@ navbar-links:
 #avatar: "/images/jordan.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
-round-avatar: true
+#round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
