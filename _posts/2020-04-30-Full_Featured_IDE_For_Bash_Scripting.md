@@ -33,7 +33,7 @@ I've had a few collegues ask me how I have a full featured Bash IDE for courses 
 ## Requirements
 1. Ubuntu 18.04 +
 2. Snap
-3. VSCode V 1.4.5+ (As at 30/APR/20 this is the insiders version for vscode on the snap store (See Issue [133](https://github.com/rogalmic/vscode-bash-debug/issues/133) under bash-debug)
+3. VSCode V 1.4.5+ standard vscode version on snap store (See Issue [133](https://github.com/rogalmic/vscode-bash-debug/issues/133) under bash-debug)
 
 [*Return to table of contents*](#TOC)
 
@@ -58,6 +58,10 @@ I've had a few collegues ask me how I have a full featured Bash IDE for courses 
   	* this will enable you to use stdin on the integrated vscode terminal
     
 * Select Bash IDE, then select install
+
+* Install the shellcheck ubuntu package (Pre-Requisite for vscode extension)
+
+  * `sudo apt install shellcheck`
 
 * Search for Shellcheck, select it, then select install
 
