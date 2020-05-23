@@ -1,0 +1,76 @@
+
+==================================================================
+https://keybase.io/sqyttles
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://devoredevelops.com
+  * I am sqyttles (https://keybase.io/sqyttles) on keybase.
+  * I have a public key with fingerprint 6FD0 EB3E FEDB A6D8 58ED  5FAB A713 80B1 5717 0B62
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208ba64476bb6b43e693a0702bc4881006aca09b556f9051bb9a174a9a23e0cf7e0a",
+      "fingerprint": "6fd0eb3efedba6d858ed5faba71380b157170b62",
+      "host": "keybase.io",
+      "key_id": "a71380b157170b62",
+      "kid": "01015a69fe9154ddc089ee536b26fe259d553a7d4a5be87f70184db4fa49633090f90a",
+      "uid": "46260974d5c8f3d5c2b7379d22b74519",
+      "username": "sqyttles"
+    },
+    "service": {
+      "hostname": "devoredevelops.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1590198351,
+  "expire_in": 157680000,
+  "prev": "2eb706ef910d2b4eacabd7ca8591554a32fb4fd6d4f998946bedf12de3f82835",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMN1AnicbVJrUFRlGN6FFWW1kSFTaUrhwMCAO3julyUbiAlGrSg1kFt4vj3fgaO7
+e9gLEBCBrI5cRqAfwMA4FMTIzXYipiwoAoYhNEdyoJmoUcCcEY2LLdSE9qPvMPqv
+78f7zvd+z/O8l+8df85fZ9R3PV/Rn7ZnO9D/ONpWoHtvsiKlFAOqVIyZS7EzcNNB
+qwRd7pwzioSZMZwgcR6ILE1zLAAsoCnICpSIczgJLDTPEzjOihYRFwDDsLKAMwQA
+gkhwtCiIJAVxi8xBXMRMmKzYc6Ez36nY3UiWlSUcAgrKUELiEs/wUGJkEYgcQfE4
+IBiO4HDAkoiYp7o0BioOiC4Yq6gohi45m+X9D/5Z3TjBiKwgQ4FgaEmy4LwAIUOx
+gGRlSDKCxDCUyEm0yADIczKHEzwtAVoWaYGlKFzAUTNa3QWbcjRLsrjA0RJj4WUK
+WRJwFCdIJPI0Qwga0AWddtEGEdrlKHa7rdCFlZkwFC1ULFAbrNbJU4QEC1UnRBZa
+1XxXrEW1IYV8p+pWLaoVvee53fkus8Z3F+drhCIIcp5K5QDFLqFpIkYhdLoU1Y6Z
+CYS0uBVNm2AEnBB4iiFMGHw/X3HCHEVDMBzL4+hoeWAhkiQh4HAWygKBSySgIfpG
+IHEWkWfQyBhapEgZzUNiJVoWBF6gWQAlmSAlSMk8ifQxrTmHXcXMJErlFnO1zpVc
+u+gucEKsbGw0y6DTG3UBW/y0NdMZA4OeLV9cZ5CuPWN6jPDuVoIOX4jxP/JiT+jp
+H/y9G1DqiD92KHVo32AS/eCjE+rkFWf1pbnrkwcevvZuiX3805VH8q7w1pdueEw/
+eZ6MPdq+cAMUXrauXv1gsCUpdjC7ZWC5269mLaHRMF7/as/NvDA/Q12GMaip/lvS
+o9s1cz7Vhn2OzWcEhwdP7n3cXPHgrYZh8c3+vubmWyNdq47myIu6gcWZmrComD6q
+PeTta8Zf/bCG7naHp8TAm4bSg23XE+4vTKeO3rnidR4vWqiN2zaXeLQ1ZeVW3cRG
+ZldlffQv/RcC5saaXtfvbsz643LEbCI+wxfo/15SP+tk4c3Rx77ehPmLEQWG9Wgv
+7dl/7fahVyKyTbp7RfzIJV+TIWynMzmrj2y5HxXZG+M7Vz88F+mYHT5/T/KxZbGn
+y1fHrmbE1MQdbCAnlkNzvS/Hn5yfSl+pxtq8y8NpybM72BRXRHWeMvFn6tlQuPrx
+yJK1quOv2dTvJ/h/d9B31gZKen/vPlC3PyUrav2N5LaDtv68F3wh0dTW28emsaly
+MquzfG1rpvfo8YB3Wpdswt3EjcDCr5KCSrLXv6tc7N/i2Xl4/EOdfltcctbQ4sOJ
+T/R1tab48FNFEd9UPRk2d9hPlXv2nf1yIdexUNo+ddL+s+9ErXp3b9oeJjRzPfCL
+3zL/sQ5Uft0YUnWuJ93Y1gwH/wM2V72v
+=CV3+
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sqyttles
+
+==================================================================
