@@ -1,31 +1,31 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: in the cave
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: shadows of a lonely thought
 
 # Your name to show in the footer
-author: Some Person
+author: ashley roberts
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "About"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Beautiful Jekyll: "
+    - Learn markdown: " 
   Author's home: "https://deanattali.com"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "assets/img/ashma.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
-round-avatar: true
+round-avatar: false
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -38,10 +38,9 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "awefiown@gmail.com"
+  github: awefiown
+  instagram: awefiown
   rss: true
 #  reddit: yourname
 #  linkedin: daattali
@@ -62,13 +61,13 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+  twitter: false
+  facebook: false
+  linkedin: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: " 
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -83,7 +82,7 @@ excerpt_length: 50
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
 navbar-border-col: "#EAEAEA"
-page-col: "#FFFFFF"
+page-img: "#assets/img/july-4-2019-carina-nebula.jpg"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#F5F5F5"
@@ -152,7 +151,7 @@ footer-link-col: "#404040"
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "-"
+title-separator: "★"
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
