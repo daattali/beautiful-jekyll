@@ -15,4 +15,4 @@ Here below is a link to my first project I published on [Medium](https://medium.
 [My first Project](https://medium.com/@bwitter770/the-two-fields-of-alternative-fuel-are-worlds-apart-a2880d41e649)
 
 Also This is the notebook where I did all the work to get those images.
-[Project Notebook](Benjamin_Witter.github.io/Car_project_code.ipynb)
+[Project Notebook](https://github.com/Witterone/Dept.-Transportation-light-vehicles/blob/master/Car_project_code.ipynb)
