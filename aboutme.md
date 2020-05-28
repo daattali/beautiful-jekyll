@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why you want to hire me.
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I have a wide base of knowledge:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I studied business, science, and psychology.
+- I have traveled in Europe for several years.
 
 What else do you need?
 
 ### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Starting my life in Norfolk, VA I have lived a quite and peaceful life. I have been a great student who rediscovered his love of
+learning after I started my working life. I have had a variety of jobs but I am interested in beginning my experience as a Data Scientist!
