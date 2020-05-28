@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2020-05-28-Month-1-Project
+title: Month 1 Project
 subtitle: Adventures in Data Science and Blogs
 cover-img: assets/img/Vehicle Efficiency VS chart.png
 gh-repo: Witterone/Benjamin_Witter.github.io
