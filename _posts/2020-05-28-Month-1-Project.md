@@ -2,10 +2,11 @@
 layout: post
 title: Month 1 Project
 subtitle: Adventures in Data Science and Blogs
-cover-img: assets/img/Vehicle Efficiency VS chart.png
+
 gh-repo: Witterone/Benjamin_Witter.github.io
 gh-badge: [star, fork, follow]
 tags: [Datascience, projects, alternative energy, cars, alternative fuel]
+cover-img: assets/img/Vehicle Efficiency VS chart.png
 ---
 
 
