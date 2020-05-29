@@ -6,9 +6,13 @@ subtitle: Climate and Energy Policy Research
 
 Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing in energy systems, policy design, and techno-economic modeling.
 
+## Research
+
 I am currently a Senior Research Associate at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu), Superforecaster at [Good Judgment](http://ceepr.mit.edu), and soon an electrical power engineering PhD Candidate at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)) on electric vehicle integration in power systems. 
 
-In my research, I work on understanding and designing policies for the decarbonization of energy systems. I take a systems engineering approach and integrate tools from other disciplines including economics and political science.
+In my research, I work on understanding and designinig and policies for the decarbonization of energy systems. I take a systems engineering approach and integrate tools from other disciplines including economics and political science.
+
+## Previous work
 
 I have testified in front of legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. My work has been featured in policy hearings in the EU Parliament and the EU Commission on the reform of the European Emissions Trading System, contributing to, in the words of one lawmaker: "a cool-headed debate". My work has also been quoted in the media including in the BBC, Bloomberg, Wall Street Journal, Politico, and others.
 
