@@ -12,7 +12,7 @@ I am currently a Senior Research Associate at the MIT [Center for Energy and Env
 
 In my research, I work on understanding and designing policies for the decarbonization of energy systems. I take a systems engineering approach and integrate tools from other disciplines including economics and political science.
 
-I am also a Superforecaster at [Good Judgment](https://goodjudgment.com), where I provide probabilistic predictions on world events.
+I am also a certified Superforecaster at [Good Judgment](https://goodjudgment.com), where I provide probabilistic predictions on world events.
 
 ## Previous work
 
