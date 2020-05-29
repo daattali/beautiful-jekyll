@@ -8,9 +8,11 @@ Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing 
 
 ## Research
 
-I am currently a Senior Research Associate at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu), Superforecaster at [Good Judgment](http://ceepr.mit.edu), and soon an electrical power engineering PhD Candidate at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)) on electric vehicle integration in power systems. 
+I am currently a Senior Research Associate at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu) and soon an electrical power engineering PhD Candidate at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)) on electric vehicle integration in power systems. 
 
 In my research, I work on understanding and designinig policies for the decarbonization of energy systems. I take a systems engineering approach and integrate tools from other disciplines including economics and political science.
+
+I am also a Superforecaster at [Good Judgment](https://goodjudgment.com), where I provide probabilistic predictions on world events.
 
 ## Previous work
 
