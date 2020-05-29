@@ -16,6 +16,6 @@ In my research, I work on understanding and designinig and policies for the deca
 
 I have testified in front of legislators on climate policy, served as a consultant to government officials on carbon pricing, and briefed senior staff at Fortune Global 500 companies. My work has been featured in policy hearings in the EU Parliament and the EU Commission on the reform of the European Emissions Trading System, contributing to, in the words of one lawmaker: "a cool-headed debate". My work has also been quoted in the media including in the BBC, Bloomberg, Wall Street Journal, Politico, and others.
 
-Previously, I was a Senior Carbon Market Analyst at Thomson Reuters Point Carbon. I hold a M.Sc. from MIT's Technology and Policy Program and a Bacherlor's degree from Colorado College, where I specialized in mathematical economics and environmental issues.
+Previously, I was a Senior Carbon Market Analyst at Thomson Reuters Point Carbon. I hold a M.Sc. from MIT's Technology and Policy Program and a B.A. degree in mathematical economics from Colorado College.
 
 An ideal day includes - aside from progress toward forward-thinking climate policy - rock climbing with my better half, and a book.
