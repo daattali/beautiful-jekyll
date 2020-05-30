@@ -1,6 +1,7 @@
 ## v3.0.1 (Date: TBD)
 
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
+- Add social network link: Mastodon
 
 ## v3.0.0 (Date: 2020-05-07)
 
