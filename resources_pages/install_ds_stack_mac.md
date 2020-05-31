@@ -166,7 +166,7 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 Open RStudio and type the following commands into the Console panel:
 
 ```
-install.packages(c('IRkernel', 'tidyverse'))
+install.packages(c('IRkernel', 'tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
 ```
 
 Next, open **terminal** and type the following:
@@ -192,88 +192,6 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 ## PostgreSQL 
 
 We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256715). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` after the installation to test if the installation was successful.
-
-## Visual Studio Code
-
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions.
-
-Once the installation finishes, copy the Visual Code Studio app from the Downloads folder to the Applications folder. Next run the following command in Terminal:
-```
-cat << EOF >> ~/.bash_profile
-# Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-EOF
-```
-
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
-
-```
-code --version
-```
-
-you should see something like this if you were successful:
-```
-1.36.1
-2213894ea0415ee8c85c5eea0d0ff81ecc191529
-x64
-```
-
-## LaTeX
-
-LaTeX allows to use syntax to write nicely formatted mathematical expressions and equations. For this program we only need the smaller BasicTeX package.
-
-1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg). 
-2. Open the ```.pkg``` file and run the installer with default options.
-3. BasicTeX has a few missing files we'll need. To install these files, restart terminal and run:
-```
-sudo tlmgr update --self
-sudo tlmgr install framed
-sudo tlmgr install titling
-```
-
-After installation, in terminal type the following to ask for the version:
-```
-latex --version
-```
-you should see something like this if you were successful:
-
-```
-pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019)
-kpathsea version 6.3.1
-Copyright 2019 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.36; using libpng 1.6.36
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.01
-```
-
-## Make
-We will be using Make to automate our analysis scripts. More on this later! To install Make type the following in the Terminal:
-
-```
-xcode-select --install
-``` 
-
-To test if Make is successfully installed, in Terminal type the following to ask for the version:
-```
-make --version
-```
-you should see something like this if it is successfully installed:
-
-```
-GNU Make 3.81
-Copyright (C) 2006  Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.
-There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.
-
-This program built for i386-apple-darwin11.3.0
-```
 
 ## Docker
 
