@@ -23,9 +23,6 @@ These instructions will walk you through installing the required Data Science so
 - [Python packages](#python-packages)
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
-- [Visual Studio Code](#visual-studio-code)
-- [LaTeX](#latex)
-- [Make](#make)
 - [Docker](#docker)
 
 ## Google Chrome browser
