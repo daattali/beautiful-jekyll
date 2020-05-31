@@ -191,7 +191,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ## PostgreSQL 
 
-We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256715). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` after the installation to test if the installation was successful.
+We will be using PostgreSQL as our database management system. You can download the most recent version from from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` after the installation to test if the installation was successful.
 
 ## Docker
 
