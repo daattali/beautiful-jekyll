@@ -9,7 +9,7 @@ doubt who the better fighter was. But only 54% of fights end with a
 knock-out or submission. The other 45% of fights go to the judges score
 cards.
 
-![](is_the_ufc_fair_files/figure-gfm/win%20types%20plot-1.png)<!-- -->
+![](https://i.imgur.com/h66XXPU.png)<!-- -->
 
 Given that the outcome of so many fights are determined by the judges
 their ability to fairly score a fight is an important part of the sport.
@@ -103,7 +103,7 @@ The box plots show the median (the purple line), and the 25th and 75th
 percentile (the left and right hand side of the box). Each dot
 represents the outcome of a fight for each fighter.
 
-![](is_the_ufc_fair_files/figure-gfm/striking_plot-1.png)<!-- -->
+![](https://i.imgur.com/4SM3Wib.png)<!-- -->
 
 For striking, take downs, and passes it appears that at least visually
 the better performing fighter usually wins. The relationship between
