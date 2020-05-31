@@ -15,6 +15,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 - [Google Chrome browser](#chrome-browswer)
+- [LastPass password manager](#lastpass-password-manager)
 - [Bash shell](#bash-shell)
 - [GitHub](#github)
 - [Git](#git)
@@ -28,6 +29,9 @@ These instructions will walk you through installing the required Data Science so
 
 ## Google Chrome browser
 In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
+
+## LastPass password manager
+In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: https://lastpass.com/create-account.php. We also recommend installing the LastPass Chrome Extension available here: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd.
 
 ## Bash shell
 Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and typing: 
