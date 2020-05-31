@@ -122,9 +122,9 @@ Thus, to install other pacakges individually, we can now use the following: cond
 
 ```
 conda install --yes \
- jupyterlab \
+ jupyterlab=2.1.* \
  numpy \
- pandas
+ pandas=1.0.*
 ```
 
 ## R, IRkernel and RStudio
