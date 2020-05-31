@@ -20,7 +20,7 @@ These instructions will walk you through installing the required Data Science so
 - [GitHub](#github)
 - [Git](#git)
 - [Python](#python)
-- [Jupyter lab](#jupyter-lab)
+- [Python packages](#python-packages)
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Visual Studio Code](#visual-studio-code)
@@ -109,23 +109,22 @@ Python 3.7.6
 
 If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
 
-## Jupyter lab
+## Python packages
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution, **quit and restart Terminal** and type the following:
+We also prefer to use packages on the conda-forge channel, so we set that to the default by typing the following in the terminal:
 
 ```
-jupyter lab
+conda config --add channels conda-forge
+
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. 
+Thus, to install other pacakges individually, we can now use the following: conda install <package-name>. We will install the key packages needed for the start of our program now:
 
-![](/resources_pages/imgs/jupyter_lab.PNG)
-
-
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In Terminal, type the following:
 ```
-conda update conda
-conda update anaconda
+conda install --yes \
+ jupyterlab
+ numpy
+ pandas
 ```
 
 ## R, IRkernel and RStudio
