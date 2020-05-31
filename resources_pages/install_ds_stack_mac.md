@@ -123,7 +123,7 @@ Thus, to install other pacakges individually, we can now use the following: cond
 ```
 conda install --yes \
  jupyterlab=2.1.* \
- numpy \
+ numpy=1.18.* \
  pandas=1.0.*
 ```
 
