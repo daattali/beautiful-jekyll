@@ -19,7 +19,8 @@ These instructions will walk you through installing the required Data Science so
 - [Bash shell](#bash-shell)
 - [GitHub](#github)
 - [Git](#git)
-- [Python and Jupyter](#python)
+- [Python](#python)
+- [Jupyter lab](#jupyter-lab)
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Visual Studio Code](#visual-studio-code)
@@ -82,9 +83,7 @@ If you run into trouble, please see that Install Git > Mac OS section from [Happ
 
 ## Python
 
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
-
-Head to [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos) and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
+We will be using Python for a large part of the program, and `conda` as our Python package manager. Thus to install Python and the `conda` package manager, we will install [Miniconda](https://docs.conda.io/en/latest/miniconda.html). We recommend installing the [Miniconda MacOSX 64-bit pkg install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
 
 After installation, in terminal type the following to ask for the version of conda:
 ```
@@ -108,7 +107,9 @@ you should see something like this if you were successful at installing Python:
 Python 3.7.6
 ```
 
-If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
+If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
+
+## Jupyter lab
 
 To see if Jupyter was successfully installed in the Anaconda Python distribution, **quit and restart Terminal** and type the following:
 
