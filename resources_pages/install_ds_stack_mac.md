@@ -20,7 +20,8 @@ These instructions will walk you through installing the required Data Science so
 - [GitHub](#github)
 - [Git](#git)
 - [Python](#python)
-- [Python packages](#python-packages)
+- [Essential python packages](#python-packages)
+- [Visual Studio Code](#visual-studio-code)
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -76,7 +77,7 @@ you should see something like this (does not have to be the exact same version) 
 git version 2.24.2 (Apple Git-127)
 ```
 
-If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
+> Note: If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
 
 ## Python
 
@@ -92,7 +93,7 @@ you should see something like this if you were successful at installing conda (a
 conda 4.8.2
 ```
 
-If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
+> Note: If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
 
 After installation, in terminal type the following to ask for the version of Python:
 ```
@@ -104,9 +105,9 @@ you should see something like this if you were successful at installing Python:
 Python 3.7.6
 ```
 
-If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
 
-## Python packages
+## Essential Python packages
 
 We also prefer to use packages on the conda-forge channel, so we set that to the default by typing the following in the terminal:
 
@@ -123,6 +124,25 @@ conda install --yes \
  numpy=1.18.* \
  pandas=1.0.*
 ```
+
+## Visual Studio Code
+
+We need a powerfull but lightwight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac). **Be sure to follow the "[Launching from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)" instructions as well.**
+
+You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+
+```
+code --version
+```
+
+you should see something like this if you were successful:
+```
+1.45.1
+5763d909d5f12fe19f215cbfdd29a91c0fa9208a
+x64
+```
+
+> Note: If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the lauch from the command line. Try following [these](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instrutions again, in particular you might want to try the described manual method of adding VS Code to your path.
 
 ## R, IRkernel and RStudio
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
