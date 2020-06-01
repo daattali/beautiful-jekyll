@@ -5,7 +5,7 @@ subtitle: MDS software stack install instructions for macOS
 ---
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 
-- runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 18.X or later, Windows 10 Professional, Enterprise or Education; version 1909 or later. Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.
+- runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 20.04 or later, Windows 10 Professional, Enterprise or Education; version 1909 or later. Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.
 - can connect to networks via a wireless connection
 - has at least 50 GB disk space available
 - has at least 8 GB of RAM
@@ -24,7 +24,7 @@ These instructions will walk you through installing the required Data Science so
 - [GitHub](#github)
 - [Git](#git)
 - [Python](#python)
-- [Essential python packages](#python-packages)
+- [Essential python packages](#essential-python-packages)
 - [Visual Studio Code](#visual-studio-code)
 - [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
@@ -127,9 +127,11 @@ Thus, to install other pacakges individually, we can now use the following: cond
 
 ```
 conda install --yes \
- jupyterlab=2.1.* \
- numpy=1.18.* \
- pandas=1.0.*
+ jupyterlab=2.* \
+ numpy=1.* \
+ pandas=1.* \
+ flake8=3.* \
+ black=19.*
 ```
 
 ## Visual Studio Code
