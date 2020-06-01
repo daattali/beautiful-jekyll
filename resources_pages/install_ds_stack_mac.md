@@ -156,7 +156,7 @@ x64
 ## R, IRkernel, RStudio and XQuartz
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel. Finally, some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately.
 
-#### R
+### R
 Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
 
 After installation, in Terminal type the following to ask for the version:
@@ -180,14 +180,14 @@ https://www.gnu.org/licenses/.
 Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
 
-#### RStudio
+### RStudio
 Chose and download the Mac version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
-#### IR kernel
+### IR kernel
 
 Open RStudio and type the following commands into the Console panel:
 
@@ -215,7 +215,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-#### XQuartz
+### XQuartz
 
 Some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately. Download it from here: [https://www.xquartz.org/](https://www.xquartz.org/) and follow the installation instructions.
 
