@@ -26,7 +26,7 @@ These instructions will walk you through installing the required Data Science so
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
 - [Visual Studio Code](#visual-studio-code)
-- [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
+- [R, IRkernel, RStudio and XQuartz](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 
@@ -153,8 +153,8 @@ x64
 
 > Note: If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the lauch from the command line. Try following [these](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instrutions again, in particular you might want to try the described manual method of adding VS Code to your path.
 
-## R, IRkernel and RStudio
-We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
+## R, IRkernel, RStudio and XQuartz
+We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel. Finally, some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately.
 
 #### R
 Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
@@ -214,6 +214,10 @@ A browser should have launched and you should see a page that looks like the scr
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
+
+#### XQuartz
+
+Some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately. Download it from here: [https://www.xquartz.org/](https://www.xquartz.org/) and follow the installation instructions.
 
 ## PostgreSQL 
 
