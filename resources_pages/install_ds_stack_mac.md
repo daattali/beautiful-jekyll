@@ -14,6 +14,8 @@ These instructions will walk you through installing the required Data Science so
 - uses English as the default language
 - student user has full administrative access to the computer
 
+**Students' whose laptops do not meet the requirements specified above will not be able to receive techinical assistance from the MDS team in troubleshooting installation issues.**
+
 ## Table of Contents
 - [Google Chrome browser](#chrome-browswer)
 - [LastPass password manager](#lastpass-password-manager)
