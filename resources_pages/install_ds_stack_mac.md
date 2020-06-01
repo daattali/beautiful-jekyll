@@ -166,9 +166,9 @@ R --version
 
 you should see something like this if you were successful:
 ```
-R version 3.6.1 (2019-07-05) -- "Action of the Toes"
-Copyright (C) 2019 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)
+R version 4.0.0 (2020-04-24) -- "Arbor Day"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
@@ -177,7 +177,7 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
+Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
 
 #### RStudio
@@ -217,7 +217,11 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ## PostgreSQL 
 
-We will be using PostgreSQL as our database management system. You can download the most recent version from from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` after the installation to test if the installation was successful.
+We will be using PostgreSQL as our database management system. You can download the most recent version from from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. 
+
+To test if the installation was succesfull open the `SQL Shell` app from the LaunchPad or applications directory. It should look like this if it is working correctly: 
+
+![](/resources_pages/imgs/sql_shell.png)
 
 ## Docker
 
