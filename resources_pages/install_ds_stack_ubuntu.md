@@ -232,8 +232,6 @@ sudo su -c psql postgres
 
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Double-click the item, and click in install. That's it!
 
-
-
 You can test that VS code is installed and can be opened from Terminal by running the following command:
 
 ```
@@ -263,7 +261,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 - (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
 
-This [tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
+This [video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
 ## LaTeX
 Open Terminal and type the following command:
