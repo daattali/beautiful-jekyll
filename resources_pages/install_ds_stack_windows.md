@@ -95,19 +95,19 @@ conda update anaconda
 ## R, IRkernel and RStudio
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
 
-#### R
+### R
 Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (Should look something like this: Download R 3.6.1 for Windows). Open the file and follow the installer instructions.
 
 Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
 
-#### RStudio
+### RStudio
 Chose and download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
-#### Rtools
+### Rtools
 Windows users will also need to install Rtools, which will allow you to use external libraries. Go to http://cran.r-project.org/bin/windows/Rtools/ and download the latest version (e.g., Rtools35.exe). After the download has finished, run the installer selecting the following options:
   - On the **Select Additional Tasks** page, check the Add rtools to system PATH option (see image below)
   - For all other pages, use the default options
@@ -117,7 +117,7 @@ Windows users will also need to install Rtools, which will allow you to use exte
 To see if you were successful, open RStudio and type ```install.packages("xtable", type="source")``` into the console panel. If this install command runs successfully, Rtools should be installed!
 
 
-#### IR kernel
+### IR kernel
 
 Open RStudio and type the following commands into the console panel:
 
@@ -141,7 +141,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-#### Rscript
+### Rscript
 
 To be able to call R scripts from the Powershell or Git Bash you need to be able to execute the Rscript program from there. To make this possible you need to add the the file path of the directory/folder that houses the Rscript program (i.e., location where this program lives on your computer) to the Windows PATH system variable. You can modify the PATH system variable using System Utility in control panel on Windows. We outline below how to do this:
 
@@ -165,11 +165,13 @@ you should see something like this if you were successful:
 R scripting front-end version 3.6.1 (2019-07-05)
 ```
 
-### PostgreSQL 
+## PostgreSQL 
 
 We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256714). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` to test if you were successful.
 
-### Visual Studio Code
+## Visual Studio Code
+
+### Installing
 
 We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. At "Select Additional Tasks" make sure that "Add to path" is selected (I also like to select all the other three items - see figure below).
 
@@ -187,6 +189,24 @@ you should see something like this if you were successful:
 2213894ea0415ee8c85c5eea0d0ff81ecc191529
 x64
 ```
+
+### Customizing VS Code with Extensions
+
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+
+![](/resources_pages/imgs/vscode.png)
+
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+
+- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
+- markdownlint (markdown linting and style checking extension)
+- GitLens (powerful extension that extends VS Code's native git capabilities)
+- Docker (easily use Docker from VS Code)
+- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
+- (Optional) Material Icon Theme (great-looking custom file icons!)
+- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+
+This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
 
 ## LaTeX
 
