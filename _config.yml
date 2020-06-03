@@ -68,7 +68,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "astro.wuhan.com"
+url-pretty: "Address：湖北省武汉市武昌区珞珈山，武汉大学物理科学与技术学院"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
