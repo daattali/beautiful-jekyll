@@ -12,7 +12,7 @@ author: Astro Group WHU
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "_pages/about"
+  About: "/_pages/about"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
