@@ -12,17 +12,17 @@ author: Astro Group WHU
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About: "_pages/about.md"
-  Latest: "_pages/latest.md"
-  People: "_pages/people.md"
-    - Professors: "_pages/_people/professors.md"
-    - Postdocs: "_pages/_people/postdocs.md"
-    - PhD Students: "_pages/_people/students.md"
-    - Staff: "_pages/_people/staff.md"
+  About: "about"
+  Latest: "latest"
+  People: "people"
+    - Professors: "professors"
+    - Postdocs: "postdocs"
+    - PhD Students: "students"
+    - Staff: "staff"
   Research:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Contact: "_pages/contact.md"
+  Contact: "contact"
 
 # --- Logo --- #
 
