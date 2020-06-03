@@ -13,10 +13,16 @@ author: Astro Group WHU
 
 navbar-links:
   About: "_pages/about.md"
-  Resources:
+  Latest: "_pages/latest.md"
+  People: "_pages/people.md"
+    - Professors: "_pages/_people/professors.md"
+    - Postdocs: "_pages/_people/postdocs.md"
+    - PhD Students: "_pages/_people/students.md"
+    - Staff: "_pages/_people/staff.md"
+  Research:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Contact: "_pages/contact.md"
 
 # --- Logo --- #
 
