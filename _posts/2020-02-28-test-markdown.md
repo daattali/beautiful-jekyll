@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Sample blog post
 subtitle: Each post also has a subtitle
@@ -75,4 +75,4 @@ You can add notification, warning and error boxes like this:
 ### Error
 
 {: .box-error}
-**Error:** This is an error box.
+**Error:** This is an error box. -->
