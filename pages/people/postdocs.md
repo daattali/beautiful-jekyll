@@ -2,7 +2,7 @@
 layout: page
 
 title: Postdoctoral Scholars 
-#subtitle: Get in touch
+subtitle: Meet the people at WHU
 permalink: "postdocs"
 #excerpt: "Group meetings, seminars, latest publications."
 #image: "/img/image/ps-journey.jpg"

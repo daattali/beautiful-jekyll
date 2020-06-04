@@ -2,7 +2,7 @@
 layout: page
 
 title: Professors
-#subtitle: Get in touch
+subtitle: Meet the people at WHU
 permalink: "professors"
 #excerpt: "Group meetings, seminars, latest publications."
 #image: "/img/image/ps-journey.jpg"
