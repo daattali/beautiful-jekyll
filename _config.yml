@@ -56,10 +56,10 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "eda.gjergo@whu.edu.cn"
+  address: "湖北省武汉市武昌区珞珈山，武汉大学物理科学与技术学院"
   #facebook: deanattali
   github: astroWHU
   #twitter: daattali
-  rss: true
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -68,7 +68,7 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: +8613487075375
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -78,7 +78,10 @@ social-network-links:
 # --- General options --- #
 
 # Select which social network share links to show in posts
-#share-links-active:
+share-links-active:
+  email: true
+  address: true
+  rss: true
   twitter: false
   facebook: false
   linkedin: false
