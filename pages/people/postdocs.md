@@ -1,7 +1,20 @@
 ---
 layout: page
-title: Postdocs
-subtitle: Meet the people at AstroWHU
+
+title: Postdoctoral Scholars 
+#subtitle: Get in touch
+permalink: "postdocs"
+#excerpt: "Group meetings, seminars, latest publications."
+#image: "/img/image/ps-journey.jpg"
+show-avatar: true
+bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
+  - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
+category: People
+tags: [Postdocs]
+googlefonts: ["Share+Tech+Mono"]
+comments: true
+# custom page vars
+edit: "04-06-2020"
 ---
 
 My name is Inigo Montoya. I have the following qualities:

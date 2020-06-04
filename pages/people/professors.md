@@ -1,8 +1,8 @@
 ---
 layout: page
 
-title: Contact
-subtitle: Get in touch
+title: Professors
+#subtitle: Get in touch
 permalink: "professors"
 #excerpt: "Group meetings, seminars, latest publications."
 #image: "/img/image/ps-journey.jpg"
