@@ -4,24 +4,71 @@ title: macOS
 subtitle: MDS software stack install instructions for macOS
 ---
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- runs one of the following operating systems: macOS Yosemite 10.10.3 or later;
-- can connect to networks via a wireless connection (and preferably also a wired connection);
-- has at least 40 GB disk space available;
-- has at least 4 GB of RAM;
-- uses a 64-bit CPU;
-- is 4 years old or newer at the start of the program;
-- uses English as the default language;
+
+- runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 20.04 or later, Windows 10 Professional, Enterprise or Education; version 1909 or later. Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.
+- can connect to networks via a wireless connection
+- has at least 50 GB disk space available
+- has at least 8 GB of RAM
+- uses a 64-bit CPU
+- is 4 years old or newer at the start of the program
+- uses English as the default language
+- student user has full administrative access to the computer
+
+**Students' whose laptops do not meet the requirements specified above will not be able to receive techinical assistance from the MDS team in troubleshooting installation issues.**
 
 ## Table of Contents
+- [Google Chrome browser](#chrome-browswer)
+- [LastPass password manager](#lastpass-password-manager)
+- [Slack](#slack)
+- [Bash shell](#bash-shell)
+- [Visual Studio Code](#visual-studio-code)
 - [GitHub](#github)
 - [Git](#git)
-- [Python and Jupyter](#python)
-- [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
+- [Python](#python)
+- [Essential python packages](#essential-python-packages)
+- [R, IRkernel, RStudio and XQuartz](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
-- [Visual Studio Code](#visual-studio-code)
-- [LaTeX](#latex)
-- [Make](#make)
 - [Docker](#docker)
+- [Visual Studio Code Extensions](#visual-studio-code-extensions)
+
+## Google Chrome browser
+In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
+
+## LastPass password manager
+In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: https://lastpass.com/create-account.php. We also recommend installing the LastPass Chrome Extension available here: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd.
+
+## Slack
+For our MDS courses and program annoucements, correspondance and course forums we use the communcation tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. Instructions for this are here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
+
+## Bash shell
+Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and typing: 
+
+```
+chsh -s /bin/bash
+```
+
+You will have to quit all instances of open Terminals and then restart the Terminal for this to take effect. 
+
+## Visual Studio Code
+
+### Installing
+
+We need a powerfull but lightwight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac). **Be sure to follow the "[Launching from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)" instructions as well.**
+
+You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+
+```
+code --version
+```
+
+you should see something like this if you were successful:
+```
+1.45.1
+5763d909d5f12fe19f215cbfdd29a91c0fa9208a
+x64
+```
+
+> Note: If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the lauch from the command line. Try following [these](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instrutions again, in particular you might want to try the described manual method of adding VS Code to your path.
 
 ## GitHub
 
@@ -40,75 +87,90 @@ This step is required for
 - all homework submission and grading
 - working collaboratively
 
-
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio and JupyterLab. There are some new Git commands that we will use that are only available as of Git 2.23, thus to get this newest version we will ask you to install Git using a tool called [Homebrew](https://brew.sh/), and thus we will install Homebrew first and then Git. 
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. There are some new Git commands that we will use that are only available as of Git 2.23 (or newer), thus to get this newest version we will ask you to install Xcode command line tools (not all of Xcode), which includes Git.
 
-Open Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and type the following command to install Homebrew:
+Open Terminal and type the following command to install Xcode command line tools:
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-Next, install Git using Homebrew. Do this by typing the following in the Terminal:
-
-```
-brew install git
+xcode-select --install
 ```
 
 After installation, in terminal type the following to ask for the version:
 ```
 git --version
 ```
-you should see something like this if you were successful:
+you should see something like this (does not have to be the exact same version) if you were successful:
 
 ```
-git version 2.23.0
+git version 2.24.2 (Apple Git-127)
 ```
 
-If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
+> Note: If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
+
+Next, we need to configure Git by telling it who you are, your email and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
+
+```
+git config --global user.name "Jane Doe"
+git config --global user.email janedoe@example.com
+git config --global core.editor code
+```
+
+> Note: to ensure you haven't made a typo in any of the above, you can view your global Git configurations by typing: `git config --list --global --show-origin`.
+
 
 ## Python
 
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#macos) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
+We will be using Python for a large part of the program, and `conda` as our Python package manager. Thus to install Python and the `conda` package manager, we will install [Miniconda](https://docs.conda.io/en/latest/miniconda.html). We recommend installing the [Miniconda MacOSX 64-bit pkg install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
 
-Head to [https://www.anaconda.com/download/#macos](https://www.anaconda.com/download/#macos) and download the Anaconda version for Mac OS with **Python 3.7**. Follow the instructions on that page to run the installer.
+After installation, in terminal type the following to ask for the version of conda:
+```
+conda --version
+```
+you should see something like this if you were successful at installing conda (a Python package manager):
 
-After installation, in terminal type the following to ask for the version:
+```
+conda 4.8.2
+```
+
+> Note: If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
+
+After installation, in terminal type the following to ask for the version of Python:
 ```
 python --version
 ```
-you should see something like this if you were successful:
+you should see something like this if you were successful at installing Python:
 
 ```
-Python 3.7.3 (default, Mar 27 2019, 22:11:17) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
+Python 3.7.6
 ```
 
-If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
 
-To see if Jupyter was successfully installed in the Anaconda Python distribution, **quit and restart Terminal** and type the following:
+## Essential Python packages
+
+We also prefer to use packages on the conda-forge channel, so we set that to the default by typing the following in the terminal:
 
 ```
-jupyter lab
+conda config --add channels conda-forge
+
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. 
+Thus, to install other pacakges individually, we can now use the following: conda install <package-name>. We will install the key packages needed for the start of our program now:
 
-![](/resources_pages/imgs/jupyter_lab.PNG)
-
-
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In Terminal, type the following:
 ```
-conda update conda
-conda update anaconda
+conda install --yes \
+ jupyterlab=2.* \
+ numpy=1.* \
+ pandas=1.* \
+ flake8=3.* \
+ black=19.*
 ```
 
-## R, IRkernel and RStudio
-We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
+## R, IRkernel, RStudio and XQuartz
+We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel. Finally, some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately.
 
-#### R
+### R
 Go to [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/) and download the latest version of R for Mac (Should look something like this: R-3.6.1.pkg). Open the file and follow the installer instructions.
 
 After installation, in Terminal type the following to ask for the version:
@@ -118,9 +180,9 @@ R --version
 
 you should see something like this if you were successful:
 ```
-R version 3.6.1 (2019-07-05) -- "Action of the Toes"
-Copyright (C) 2019 The R Foundation for Statistical Computing
-Platform: x86_64-pc-linux-gnu (64-bit)
+R version 4.0.0 (2020-04-24) -- "Arbor Day"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under the terms of the
@@ -129,22 +191,22 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
+Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
 
-#### RStudio
+### RStudio
 Chose and download the Mac version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
-#### IR kernel
+### IR kernel
 
 Open RStudio and type the following commands into the Console panel:
 
 ```
-install.packages(c('IRkernel', 'tidyverse'))
+install.packages(c('IRkernel', 'tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
 ```
 
 Next, open **terminal** and type the following:
@@ -167,91 +229,17 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
+### XQuartz
+
+Some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately. Download it from here: [https://www.xquartz.org/](https://www.xquartz.org/) and follow the installation instructions.
+
 ## PostgreSQL 
 
-We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256715). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` after the installation to test if the installation was successful.
+We will be using PostgreSQL as our database management system. You can download the most recent version from from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. 
 
-## Visual Studio Code
+To test if the installation was succesfull open the `SQL Shell` app from the LaunchPad or applications directory. It should look like this if it is working correctly: 
 
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions.
-
-Once the installation finishes, copy the Visual Code Studio app from the Downloads folder to the Applications folder. Next run the following command in Terminal:
-```
-cat << EOF >> ~/.bash_profile
-# Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-EOF
-```
-
-You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
-
-```
-code --version
-```
-
-you should see something like this if you were successful:
-```
-1.36.1
-2213894ea0415ee8c85c5eea0d0ff81ecc191529
-x64
-```
-
-## LaTeX
-
-LaTeX allows to use syntax to write nicely formatted mathematical expressions and equations. For this program we only need the smaller BasicTeX package.
-
-1. Download the BasicTeX package from [here](http://tug.org/cgi-bin/mactex-download/BasicTeX.pkg). 
-2. Open the ```.pkg``` file and run the installer with default options.
-3. BasicTeX has a few missing files we'll need. To install these files, restart terminal and run:
-```
-sudo tlmgr update --self
-sudo tlmgr install framed
-sudo tlmgr install titling
-```
-
-After installation, in terminal type the following to ask for the version:
-```
-latex --version
-```
-you should see something like this if you were successful:
-
-```
-pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019)
-kpathsea version 6.3.1
-Copyright 2019 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.36; using libpng 1.6.36
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.01
-```
-
-## Make
-We will be using Make to automate our analysis scripts. More on this later! To install Make type the following in the Terminal:
-
-```
-xcode-select --install
-``` 
-
-To test if Make is successfully installed, in Terminal type the following to ask for the version:
-```
-make --version
-```
-you should see something like this if it is successfully installed:
-
-```
-GNU Make 3.81
-Copyright (C) 2006  Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.
-There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.
-
-This program built for i386-apple-darwin11.3.0
-```
+![](/resources_pages/imgs/sql_shell.png)
 
 ## Docker
 
@@ -293,6 +281,24 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+
+## Visual Studio Code Extensions
+
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can intall the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+
+![](/resources_pages/imgs/vscode.png)
+
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+
+- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
+- markdownlint (markdown linting and style checking extension)
+- GitLens - Git supercharged (powerful extension that extends VS Code's native git capabilities)
+- Docker (easily use Docker from VS Code)
+- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
+- (Optional) Material Icon Theme (great-looking custom file icons!)
+- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+
+This [video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
 ## Attributions
 * [Harvard CS109](http://cs109.github.io/2015/)
