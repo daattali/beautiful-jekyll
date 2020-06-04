@@ -1,6 +1,6 @@
 ---
 layout: page
-title: People
+title: Postdocs
 subtitle: Meet the people at AstroWHU
 ---
 

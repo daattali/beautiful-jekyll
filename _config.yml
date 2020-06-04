@@ -20,8 +20,10 @@ navbar-links:
     - PhD Students: "students"
     - Staff: "staff"
   Research:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Gravitational Waves: "gwresearch"
+    - Cosmology: "cosmoresearch"
+    - X-ray Astrophysics: "xrayresearch"
+    - Chemical Evolution: "chemresearch"
   Contact: "contact"
 
 # --- Logo --- #
