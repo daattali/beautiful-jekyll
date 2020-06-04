@@ -10,7 +10,7 @@ show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
   - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
 # category: Resources
-tags: [About]
+tags: [News]
 googlefonts: ["Share+Tech+Mono"]
 comments: true
 # custom page vars
