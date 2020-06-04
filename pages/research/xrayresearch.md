@@ -1,16 +1,16 @@
 ---
 layout: page
 
-title: Gravitational Waves
+title: X-ray Astrophysics
 #subtitle: Meet the people at WHU
-permalink: "gwresearch"
+permalink: "xrayresearch"
 #excerpt: "Group meetings, seminars, latest publications."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
   - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
 category: Research
-tags: [Gravitational-waves]
+tags: [X-ray]
 googlefonts: ["Share+Tech+Mono"]
 comments: true
 # custom page vars
