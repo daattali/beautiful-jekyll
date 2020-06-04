@@ -26,6 +26,14 @@ navbar-links:
     - Chemical Evolution: "chemresearch"
   Contact: "contact"
 
+
+
+# --- Google custom search config --- #
+# search page name search -> /seach.md
+nav-search: "search"
+# google-site-verification
+#google-site-verification: ''
+
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
@@ -47,9 +55,9 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "eda.gjergo@whu.edu.cn"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  #facebook: deanattali
+  github: astroWHU
+  #twitter: daattali
   rss: true
 #  reddit: yourname
 #  linkedin: daattali
@@ -69,7 +77,7 @@ social-network-links:
 # --- General options --- #
 
 # Select which social network share links to show in posts
-share-links-active:
+#share-links-active:
   twitter: false
   facebook: false
   linkedin: false
