@@ -14,7 +14,7 @@ author: Astrophysics Group at Wuhan University
 navbar-links:
   About: "about"
   Latest: "latest"
-  People: "people"
+  People:
     - Professors: "professors"
     - Postdocs: "postdocs"
     - PhD Students: "students"
