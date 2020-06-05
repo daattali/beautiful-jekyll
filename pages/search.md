@@ -7,8 +7,6 @@ css: "/css/search.css"
 
 # Search astroWHU.github.io
 
-### Using the amazing Google
-
 <div id="google-custom-search">
 <script>
   (function() {

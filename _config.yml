@@ -25,7 +25,7 @@ navbar-links:
     - X-ray Astrophysics: "xrayresearch"
     - Chemical Evolution: "chemresearch"
   Contact: "contact"
-  Search: "search"
+  #Search: "search"
 
 
 
@@ -113,9 +113,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
+navbar-img: "/assets/img/bgimage.png"
+footer-img: "/assets/img/bgimage.png"
+page-img: "/assets/img/bgimage.png"
 
 # --- Web Statistics Section --- #
 
