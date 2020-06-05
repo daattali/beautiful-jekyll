@@ -17,9 +17,9 @@ css: '/css/extend-home.css'
 <div class="row text-center">
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      {%- assign gh-user = "astroWHU"-%}
+      {%- assign gh-user = "Repositories"-%}
       {%- assign gh-project = "GitHubProj" -%}
-      <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
+      <a target="_blank" href="https://github.com/astroWHU/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
@@ -35,7 +35,7 @@ css: '/css/extend-home.css'
   </div>
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      {%- assign gh-project = "astroWHU" -%}
+      {%- assign gh-project = "People" -%}
       <a target="_bxlank" href="https://astroWHU.github.io/everyone" class="project-link" title="Meet the People">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
@@ -50,7 +50,7 @@ css: '/css/extend-home.css'
   </div>
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-    {%- assign gh-project = "astroWHU" -%}
+    {%- assign gh-project = "Research" -%}
       <a target="_blank" href="https://astroWHU.github.io/researchfields" class="project-link" title="Explore our Research">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
@@ -60,8 +60,6 @@ css: '/css/extend-home.css'
         <hr class="seperator">
         <p class="text-muted">This is a summary page of our research fields.</p>
         <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
       </a>
     </div>
   </div>
