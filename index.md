@@ -4,7 +4,8 @@ layout: page
 show-avatar: true
 #subtitle: ...to my personal blog about PowerShell, Automation and more.
 bigimg:
-  - 'assets/img/astroWHUheader.jpg': "Photo by Dariusz Sankowski on Unsplash"
+#  - '/assets/img/astroWHUheader.jpg': "Photo by Dariusz Sankowski on Unsplash"
+  - '/assets/img/path.jpg': "Photo by Dariusz Sankowski on Unsplash"
 use-site-title: true
 css: '/css/extend-home.css'
 ---
