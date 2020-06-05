@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Welcome
+#title: Welcome
 show-avatar: true
-subtitle: ...to my personal blog about PowerShell, Automation and more.
+#subtitle: ...to my personal blog about PowerShell, Automation and more.
 bigimg:
-  - 'img/bigimg/bg-home.jpg': "Photo by Dariusz Sankowski on Unsplash"
+  - 'assets/img/astroWHUheader.jpg': "Photo by Dariusz Sankowski on Unsplash"
 use-site-title: true
 css: '/css/extend-home.css'
 ---
