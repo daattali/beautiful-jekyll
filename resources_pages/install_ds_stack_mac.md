@@ -26,6 +26,7 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
+- [Jupyter extensions](#jupyter-extensions)
 - [R, IRkernel, RStudio and XQuartz](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -41,7 +42,7 @@ In MDS we share credentials via the password manager LastPass. This can also be 
 For our MDS courses and program annoucements, correspondance and course forums we use the communcation tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. Instructions for this are here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
 
 ## Bash shell
-Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://www.youtube.com/watch?v=zw7Nd67_aFw)) and typing: 
+Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://youtu.be/5AJbWEWwnbY)) and typing: 
 
 ```
 chsh -s /bin/bash
@@ -165,6 +166,16 @@ conda install --yes \
  pandas=1.* \
  flake8=3.* \
  black=19.*
+```
+
+## Jupyter extensions
+We will be using several Jupyter extensions that help us use Juypter notebooks more smoothly with Git & GitHub. To install them, paste the following in the terminal below:
+
+```
+conda install --yes nodejs=10.*
+pip install --upgrade jupyterlab-git
+jupyter lab build
+conda install --yes jupytext=1.*
 ```
 
 ## R, IRkernel, RStudio and XQuartz
