@@ -18,7 +18,7 @@ css: '/css/extend-home.css'
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
       {%- assign gh-user = "astroWHU"-%}
-      {%- assign gh-project = "astroWHU" -%}
+      {%- assign gh-project = "GitHubProj" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
@@ -26,7 +26,7 @@ css: '/css/extend-home.css'
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
-        <p class="text-muted">A simple Phabricator Conduit client made with Powershell.</p>
+        <p class="text-muted">If you have public repositories you can share them here</p>
         <hr class="seperator">
         <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
         <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
@@ -43,10 +43,8 @@ css: '/css/extend-home.css'
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
-        <p class="text-muted">A code coverage interface for coveralls.io. Based on Pester coverage reports.</p>
+        <p class="text-muted">Here is a list of everyone in the department.</p>
         <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
       </a>
     </div>
   </div>
@@ -60,7 +58,7 @@ css: '/css/extend-home.css'
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
-        <p class="text-muted">A simple credential manager to store and reuse multiple credential objects.</p>
+        <p class="text-muted">This is a summary page of our research fields.</p>
         <hr class="seperator">
         <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
         <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
