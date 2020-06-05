@@ -9,14 +9,14 @@ use-site-title: true
 css: '/css/extend-home.css'
 ---
 
-<h1 class="text-center">Current Projects</h1>
+<h1 class="text-center"></h1>
 
 <div class="spacer"></div>
 
 <div class="row text-center">
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      {%- assign gh-user = "OCram85"-%}
+      {%- assign gh-user = "astroWHU"-%}
       {%- assign gh-project = "Ponduit" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
@@ -34,7 +34,7 @@ css: '/css/extend-home.css'
   </div>
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      {%- assign gh-project = "PSCoverage" -%}
+      {%- assign gh-project = "astroWHU" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
@@ -51,7 +51,7 @@ css: '/css/extend-home.css'
   </div>
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-    {%- assign gh-project = "PSCredentialStore" -%}
+    {%- assign gh-project = "astroWHU" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
@@ -70,7 +70,7 @@ css: '/css/extend-home.css'
 
 ----
 
-<h1 class="text-center">Recent Posts</h1>
+<h1 class="text-center">Latest News</h1>
 <div class="spacer"></div>
 
 <div class="posts-list">
