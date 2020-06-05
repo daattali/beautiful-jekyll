@@ -1,8 +1,8 @@
 ---
 layout: page
-#title: Welcome
+title: Wuhan University
 show-avatar: true
-#subtitle: ...to my personal blog about PowerShell, Automation and more.
+subtitle: Astrophysics Group
 bigimg:
 #  - '/assets/img/astroWHUheader.jpg': "Photo by Dariusz Sankowski on Unsplash"
   - '/assets/img/path.jpg': "Photo by Dariusz Sankowski on Unsplash"
