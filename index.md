@@ -5,7 +5,7 @@ show-avatar: true
 subtitle: Astrophysics Group
 #bigimg:
 #  - '/assets/img/astroWHUheader.jpg': "Photo by Dariusz Sankowski on Unsplash"
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/astroWHUheader.jpg
 use-site-title: true
 css: '/css/extend-home.css'
 ---
