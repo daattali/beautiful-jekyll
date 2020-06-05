@@ -3,9 +3,9 @@ layout: page
 title: Wuhan University
 show-avatar: true
 subtitle: Astrophysics Group
-bigimg:
+#bigimg:
 #  - '/assets/img/astroWHUheader.jpg': "Photo by Dariusz Sankowski on Unsplash"
-  - '/assets/img/path.jpg': "Photo by Dariusz Sankowski on Unsplash"
+cover-img: /assets/img/path.jpg
 use-site-title: true
 css: '/css/extend-home.css'
 ---
