@@ -26,6 +26,7 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
+- [Jupyter extensions](#jupyter-extensions)
 - [R, IRkernel, RStudio and XQuartz](#r-ir-kernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -165,6 +166,16 @@ conda install --yes \
  pandas=1.* \
  flake8=3.* \
  black=19.*
+```
+
+## Jupyter extensions
+We will be using several Jupyter extensions that help us use Juypter notebooks more smoothly with Git & GitHub. To install them, paste the following in the terminal below:
+
+```
+conda install --yes nodejs=10.*
+pip install --upgrade jupyterlab-git
+jupyter lab build
+conda install --yes jupytext=1.*
 ```
 
 ## R, IRkernel, RStudio and XQuartz
