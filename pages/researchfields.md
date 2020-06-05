@@ -1,9 +1,9 @@
 ---
 layout: page
 
-title: About
-subtitle: History and Ethos
-permalink: "about"
+title: Research fields
+subtitle: What we do
+permalink: "researchfields"
 excerpt: "Founded in 2017."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true

@@ -1,9 +1,9 @@
 ---
 layout: page
 
-title: About
-subtitle: History and Ethos
-permalink: "about"
+title: People
+subtitle: Meet our members
+permalink: "everyone"
 excerpt: "Founded in 2017."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
