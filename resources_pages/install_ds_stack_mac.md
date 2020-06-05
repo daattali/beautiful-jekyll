@@ -174,8 +174,8 @@ We will be using several Jupyter extensions that help us use Juypter notebooks m
 ```
 conda install --yes nodejs=10.*
 pip install --upgrade jupyterlab-git
-jupyter lab build
 conda install --yes jupytext=1.*
+jupyter lab build
 ```
 
 ## R, IRkernel, RStudio and XQuartz
