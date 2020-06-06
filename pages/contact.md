@@ -21,11 +21,10 @@ We welcome colleagues from the astronomy community at home and abroad to visit t
 
 ### Address
 
-> 4th Floor, New Building, School of Physics
-> Wuhan University, School of Physical Science and Technology
-> Luojia Mountain, Wuchang District, Wuhan City, Hubei, 
-> 430072 China.
+⋅⋅⋅ 4th Floor, New Building, School of Physics ⋅⋅
+⋅⋅⋅ Wuhan University, School of Physical Science and Technology ⋅⋅
+⋅⋅⋅ Luojia Mountain, Wuchang District, Wuhan City, Hubei ⋅⋅
+⋅⋅⋅ 430072 China.
 
-*Contact*: Wei Na
-
-*Email*: weina@whu.edu.cn
+⋅⋅⋅ *Contact*: Wei Na ⋅⋅
+⋅⋅⋅ *Email*: weina@whu.edu.cn
