@@ -27,5 +27,5 @@ We welcome colleagues from the astronomy community at home and abroad to visit t
 
 ### e-mail
 
-   *Contact*: Wei Na  
+   *Contact*: Na Wei (魏娜)  
    *Email*: weina@whu.edu.cn
