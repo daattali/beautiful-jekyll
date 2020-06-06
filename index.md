@@ -5,6 +5,8 @@ subtitle: Climate and Energy Policy Research
 #image: "/img/Profile Mt. Madison.jpg"
 ---
 
+<img src="{{ site.url }}/img/Profile Mt. Madison.jpg" class="img-responsive img-thumbnail pull-left gap-right" alt="test" width="131em" />
+
 Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing in energy systems, policy design, and techno-economic modeling.
 
 ## Research
