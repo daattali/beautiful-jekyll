@@ -2,7 +2,7 @@
 layout: page
 title: Emil Dimanchev
 subtitle: Climate and Energy Policy Research
-image: "/img/Dimanchev B+Wcopy copy.jpg"
+image: "/img/Profile Mt. Madison.jpg"
 ---
 
 Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing in energy systems, policy design, and techno-economic modeling.
