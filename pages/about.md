@@ -17,13 +17,8 @@ comments: true
 edit: "04-06-2020"
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+The Astrophysics Center of Wuhan University is a scientific research institution affiliated to the School of Physics and Technology of Wuhan University. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Wuhan University is a famous university in China and had no major in astronomy until 2017. In early 2017, Professor Zhu Zonghong and Professor Wang Wei were transferred to Wuhan University to formally establish the direction of astronomy in the School of Physical Science and Technology.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+The leaders of Wuhan University and the School of Physics of Wuhan University attach great importance to the development of astronomy, so our research team is constantly developing and expanding. At present, there are 4 researchers in the center, including 2 professors, 2 researchers, 4 postdoctors, and several doctoral students. The research advantages and interests of astronomy in Wuhan University are mainly concentrated in cosmology, gravitational wave astronomy, high-energy astrophysics, temporary source observation and research, and gravitational wave electromagnetic counterparts.
