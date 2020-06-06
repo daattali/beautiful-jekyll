@@ -26,10 +26,7 @@ css: '/css/extend-home.css'
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
-        <p class="text-muted">If you have public repositories you can share them here</p>
-        <hr class="seperator">
-        <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
-        <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
+        <p class="text-muted">Our repositories</p>
       </a>
     </div>
   </div>
@@ -54,7 +51,7 @@ css: '/css/extend-home.css'
       <a target="_blank" href="https://astroWHU.github.io/researchfields" class="project-link" title="Explore our Research">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-user-secret fa-stack-1x fa-inverse"></i>
+          <i class="fa area-chart fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
