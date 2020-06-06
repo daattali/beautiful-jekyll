@@ -26,6 +26,6 @@ We welcome colleagues from the astronomy community at home and abroad to visit t
 > Luojia Mountain, Wuchang District, Wuhan City, Hubei, 
 > 430072 China.
 
-
 *Contact*: Wei Na
+
 *Email*: weina@whu.edu.cn
