@@ -17,7 +17,9 @@ Serve as TA for CSE department in Database Management System course.
 2. Computer Vision
 3. Natural Language Processing
 4. Data Mining
+
 ## Projects
+***
 ### 1. Face Mask Detection
 In this project I'm building a Face mask detector that detects whether a person is wear a mask or not. It's really important for this current Covid-19 situation. I've share a you-tube video of my project which is given below.
 [Face Mask Detection](https://www.youtube.com/watch?v=k8OkplzCxQU&feature=emb_logo)
@@ -27,6 +29,7 @@ In this project I'm building a weed detector that detects whether a weed is pres
 This is a part of research. Soon avalilable.
 ### 4. Bert for Amazon Movie Review
 Soon open source.. 
+***
 ## Publications 
 1. update soon
 2. update soon
