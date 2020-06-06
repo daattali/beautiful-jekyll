@@ -25,5 +25,7 @@ We welcome colleagues from the astronomy community at home and abroad to visit t
    Wuhan University, School of Physical Science and Technology  
    Luojia Mountain, Wuchang District, Wuhan City, Hubei   430072 China.
 
+### e-mail
+
    *Contact*: Wei Na  
    *Email*: weina@whu.edu.cn
