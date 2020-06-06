@@ -17,7 +17,7 @@ comments: true
 edit: "04-06-2020"
 ---
 
-The Astrophysics Center of Wuhan University is a scientific research institution affiliated to the School of Physics and Technology of Wuhan University. 
+The Astrophysics Center of Wuhan University is a scientific research institution affiliated with the School of Physics and Technology of Wuhan University. 
 
 Wuhan University is a famous university in China and had no major in astronomy until 2017. In early 2017, Professor Zhu Zonghong and Professor Wang Wei were transferred to Wuhan University to formally establish the direction of astronomy in the School of Physical Science and Technology.
 
