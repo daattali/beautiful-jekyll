@@ -228,4 +228,16 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.mastodon -%}
+  <li class="list-inline-item">
+    <a href="https://{{ site.social-network-links.mastodon }}" title="Mastodon">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Mastodon</span>
+    </a>
+  </li>
+{%- endif -%}
+
 </ul>
