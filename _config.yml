@@ -25,6 +25,7 @@ navbar-links:
     - Cosmology: "cosmoresearch"
     - X-ray Astrophysics: "xrayresearch"
     - Chemical Evolution: "chemresearch"
+  Jobs: "jobs"
   Contact: "contact"
   #Search: "search"
 
