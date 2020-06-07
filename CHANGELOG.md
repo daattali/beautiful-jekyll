@@ -1,9 +1,9 @@
-## v3.0.1 (Date: TBD)
+## v3.0.1 Date: TBD
 
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
-- Add social network link: Mastodon
+- Add social network link: Mastodon (#646)
 
-## v3.0.0 (Date: 2020-05-07)
+## v3.0.0 2020-05-07
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
 - **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`.
@@ -16,7 +16,7 @@
 - Remove most of the sample posts so that users only have two sample posts to learn from.
 - Improvements to the README instructions.
 
-## v2.3.0 (2020-04-29)
+## v2.3.0 2020-04-29
 
 - Add YAML option `footer-extra` for including custom content in the footer
 - Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
@@ -24,14 +24,14 @@
 - Add social network link: Calendly
 - Fix bug where RSS link in footer was showing even when turned off
 
-## v2.2.0 (2020-04-27)
+## v2.2.0 2020-04-27
 
 - Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
 - Moved the demo site to an independent URL: https://beautifuljekyll.com 
 - Major documentation overhaul and cleanup of old files 
 - Fix a few bugs from the remote_theme migration
 
-## v2.0.0 (2020-04-26)
+## v2.0.0 2020-04-26
 
 - Beautiful-Jekyll v2.0.0 available as an official Ruby gem
 - Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
