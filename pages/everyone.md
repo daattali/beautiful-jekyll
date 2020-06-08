@@ -130,6 +130,7 @@ edit: "04-08-2020"
       <a target="_bxlank" href="pages/people/personal/edagjergo" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/edagjergo.jpg"> </div>
         </span>
         <p class="text-muted">Eda Gjergo</p>
         <hr class="seperator">
