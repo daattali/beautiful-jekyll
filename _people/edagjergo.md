@@ -1,8 +1,8 @@
 ---
 layout: page
 
-title: Research fields
-subtitle: What we do
+#title: Research fields
+subtitle: Dr. Eda Gjergo
 permalink: "edagjergo"
 excerpt: "Joined during Fall 2019."
 #image: "/img/image/ps-journey.jpg"
