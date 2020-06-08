@@ -29,7 +29,8 @@ navbar-links:
   Contact: "contact"
   #Search: "search"
 
-
+include:
+  - _people
 
 # --- Google custom search config --- #
 # search page name search -> /seach.md
@@ -227,6 +228,7 @@ exclude:
 
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
