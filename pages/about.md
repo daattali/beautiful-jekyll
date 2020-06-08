@@ -30,6 +30,6 @@ At present, there are 7 researchers in the center, including 3 professors, one a
 
 The research advantages and interests of astronomy in Wuhan University are mainly concentrated in cosmology, gravitational wave astronomy, high-energy astrophysics, multi-band observation and research of transient sources, and electromagnetic counterparts of gravitational waves.
 
-----
+<hr class="seperator">
 
 In November 2018, Wuhan University and the National Astronomical Observatory of the Chinese Academy of Sciences jointly signed a cooperation agreement, and officially established the joint astronomical center of Wuhan University and the National Astronomical Observatory in Wuhan University (WHU-NAOC Joint Center for Astronomy) . This open research cooperation and exchange platform strengthens scientific research cooperation and academic exchange. Through organizing academic activities, it promotes the combination and intersection of research topics, promotes cooperation between Wuhan University and the National Astronomical Observatory to participate in the research of major and key national projects, vigorously introduces various kinds of astronomical research talents, and cultivates excellent reserve forces for astronomical research. The chairman of the academic committee of Wuhan University National Astronomical center is Academician Wang Jingxiu of the National Astronomical Observatory, and the director of the center is Prof. Liu Jifeng of the National Astronomical Observatory.
