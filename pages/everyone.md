@@ -150,7 +150,6 @@ edit: "04-08-2020"
   </div>
 </div>
 
-
 <div class="spacer"></div>
 
 <div class="row text-center">
@@ -190,6 +189,11 @@ edit: "04-08-2020"
       </a>
     </div>
   </div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="row text-center">
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
@@ -246,6 +250,11 @@ edit: "04-08-2020"
       </a>
     </div>
   </div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="row text-center">
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
@@ -270,4 +279,5 @@ edit: "04-08-2020"
       </a>
     </div>
   </div>
+</div>
 ----
