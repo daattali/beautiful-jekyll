@@ -161,9 +161,11 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/taismaiolino" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/taismaiolino.png"> </div>
         </span>
+        <hr class="seperator">
         <p class="text-muted">Tais Maiolino</p>
+        <hr class="seperator">
       </a>
     </div>
   </div>
