@@ -482,6 +482,11 @@ footer .footer-custom-content {
 .post-entry {
   width: 100%;
 }
+
+.profile-image {
+  object-fit: cover;
+}
+
 .post-image {
   float: right;
   height: 12rem;
@@ -489,6 +494,7 @@ footer .footer-custom-content {
   margin-top: -2.1875rem;
   filter: grayscale(90%);
 }
+
 .post-image:hover {
   filter: grayscale(0%);
 }

@@ -143,7 +143,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/shaoqihou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/houshaoqi.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/houshaoqi.png"> </div>
         </span>
         <hr class="seperator">
         <p class="text-muted">Shaoqi Hou</p>
