@@ -50,7 +50,8 @@ css: '/css/extend-home.css'
     {%- assign gh-project = "Research" -%}
       <a target="_blank" href="https://astroWHU.github.io/researchfields" class="project-link" title="Explore our Research">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-area-chart" aria-hidden="true"></i>
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <i class="fa fa-area-chart fa-stack-1x fa-inverse" aria-hidden="true"></i>
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
