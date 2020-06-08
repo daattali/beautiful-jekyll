@@ -16,12 +16,17 @@ comments: true
 # custom page vars
 edit: "04-06-2020"
 ---
-
-<h1 class="text-center">Latest News</h1>
 <div class="spacer"></div>
 
+
+<ul class="pager main-pager">
+  <li>
+    <a href="{{site.baseurl}}/blog">Archive </a>
+  </li>
+</ul>
+
 <div class="posts-list">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts limit:15 %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="post-title">{{ post.title }}</h2>
@@ -70,9 +75,3 @@ edit: "04-06-2020"
    </article>
   {% endfor %}
 </div>
-
-<ul class="pager main-pager">
-  <li>
-    <a href="{{site.baseurl}}/blog">Archive </a>
-  </li>
-</ul>
