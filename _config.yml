@@ -21,10 +21,10 @@ navbar-links:
  #   - PhD Students: "students"
  #   - Staff: "staff"
   Research:
-    - Gravitational Waves: "gwresearch"
-    - Cosmology: "cosmoresearch"
-    - X-ray Astrophysics: "xrayresearch"
     - Chemical Evolution: "chemresearch"
+    - Cosmology: "cosmoresearch"
+    - Gravitational Waves: "gwresearch"
+    - X-ray Astrophysics: "xrayresearch"
   Jobs: "jobs"
   Contact: "contact"
   #Search: "search"

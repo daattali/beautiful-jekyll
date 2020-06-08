@@ -4,7 +4,7 @@ layout: page
 title: Research fields
 subtitle: What we do
 permalink: "edagjergo"
-excerpt: "Founded in 2017."
+excerpt: "Joined during Fall 2019."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
