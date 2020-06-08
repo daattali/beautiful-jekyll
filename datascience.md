@@ -2,7 +2,11 @@
 title: Data Science
 ---
 
-Data Science is my professional passion! I am currently pursuing a Masters of Data Science from UBC. Here are links to a few of my favourite projects:
+Data Science is my professional passion! I am currently pursuing a Masters of Data Science from UBC.
+
+Checkout my data science set up [here](datascience_setup.md).
+
+Here are links to a few of my favourite projects:
 
 | Project                                                      | Details                                                      | Image                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
