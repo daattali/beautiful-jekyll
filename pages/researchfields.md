@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: base
 
 title: Research fields
 subtitle: What we do
