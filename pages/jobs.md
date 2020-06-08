@@ -2,7 +2,7 @@
 layout: page
 
 title: Jobs
-subtitle: Postdoc and Teaching Positions
+subtitle: Employment at Wuhan University - Astrophysics Group
 permalink: "jobs"
 #excerpt: "Founded in 2017."
 #image: "/img/image/ps-journey.jpg"
