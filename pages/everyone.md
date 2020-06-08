@@ -205,7 +205,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/pingzhang" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="profile-image"> <img src="assets/img/people/houshaoqi.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/zhangping.jpg"> </div>
         </span>
         <p class="text-muted">Ping Zhang</p>
         <hr class="seperator">
