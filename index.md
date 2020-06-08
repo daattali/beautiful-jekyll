@@ -19,7 +19,7 @@ css: '/css/extend-home.css'
     <div class="project-card">
       {%- assign gh-user = "Repositories"-%}
       {%- assign gh-project = "GitHub" -%}
-      <a target="_blank" href="https://github.com/astroWHU/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
+      <a target="_blank" href="https://github.com/astroWHU" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
