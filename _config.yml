@@ -15,11 +15,11 @@ author: Wuhan University Astrophysics Group 武汉大学-天体物理中心
 navbar-links:
   About: "about"
   Latest: "latest"
-  People:
-    - Professors: "professors"
-    - Postdocs: "postdocs"
-    - PhD Students: "students"
-    - Staff: "staff"
+  People: "everyone"
+ #   - Professors: "professors"
+ #   - Postdocs: "postdocs"
+ #   - PhD Students: "students"
+ #   - Staff: "staff"
   Research:
     - Gravitational Waves: "gwresearch"
     - Cosmology: "cosmoresearch"

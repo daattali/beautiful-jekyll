@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GW Virtual Meeting -- He Gao (BNU)
+title: GW Virtual Meeting - He Gao (BNU)
 subtitle: The Limitation of the Double Neutron Star Merger on the Maximum Mass of the Neutron Star
 #cover-img: /assets/img/path.jpg
 tags: [seminar, event, blog]
