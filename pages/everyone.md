@@ -294,7 +294,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/zhiqiangyou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="profile-image"> <img src="assets/img/people/youzhiqiang.jpg"> </div>
+          <div class="profile-image"> <img src="assets/img/people/youzhiqiang.png"> </div>
         </span>
         <p class="text-muted">Zhiqiang You</p>
         <hr class="seperator">
