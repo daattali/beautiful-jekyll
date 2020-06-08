@@ -17,13 +17,6 @@ comments: true
 edit: "04-06-2020"
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+ In October 2019, Eda Gjergo has joined as a Postdoctoral Fellow the rapidly growing and vibrant Astronomy group at Wuhan University. she worked on the photometric identification of Type Ia supernovae for the Dark Energy Survey (DES) at Argonne National Laboratory (ANL), and she conducted analyses on filter transmission for the Large Synoptic Survey Telescope (LSST). Due to her work within the collaboration, she won the 222nd American Astronomical Society (AAS) Chambliss Astronomy Achievement Student Award, as well as an honorable mention the following year.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Over the course of her Ph.D., she has grown an interest in dust modeling and in the chemical evolution of galaxies.
