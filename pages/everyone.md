@@ -29,9 +29,8 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Our repositories</p>
+        <p class="text-muted">Zong-Hong Zhu</p>
       </a>
     </div>
   </div>
@@ -41,9 +40,8 @@ edit: "04-08-2020"
       <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Here is a list of everyone in the department.</p>
+        <p class="text-muted">Wang Wei</p>
         <hr class="seperator">
       </a>
     </div>
@@ -54,9 +52,8 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">This is a summary page of our research fields.</p>
+        <p class="text-muted">Xilong Fan</p>
         <hr class="seperator">
       </a>
     </div>
@@ -77,9 +74,8 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Our repositories</p>
+        <p class="text-muted">Bei You</p>
       </a>
     </div>
   </div>
@@ -89,9 +85,8 @@ edit: "04-08-2020"
       <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Here is a list of everyone in the department.</p>
+        <p class="text-muted">Guobin Mou</p>
         <hr class="seperator">
       </a>
     </div>
@@ -102,9 +97,8 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">This is a summary page of our research fields.</p>
+        <p class="text-muted">Zhongqun Cheng</p>
         <hr class="seperator">
       </a>
     </div>
@@ -125,9 +119,8 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Our repositories</p>
+        <p class="text-muted">Prahlad R. Epili</p>
       </a>
     </div>
   </div>
@@ -137,9 +130,8 @@ edit: "04-08-2020"
       <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Here is a list of everyone in the department.</p>
+        <p class="text-muted">Eda Gjergo</p>
         <hr class="seperator">
       </a>
     </div>
@@ -150,15 +142,68 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">This is a summary page of our research fields.</p>
+        <p class="text-muted">Shaoqi Hou</p>
         <hr class="seperator">
       </a>
     </div>
   </div>
 </div>
 
+
+<div class="spacer"></div>
+
+<div class="row text-center">
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Tais Maiolino</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Arti Roshi</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Ping Zhang</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Xiaogang Zheng</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+</div>
 ----
 
 ## PhD Students
@@ -173,9 +218,8 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Our repositories</p>
+        <p class="text-muted">Xiaoming Jiang</p>
       </a>
     </div>
   </div>
@@ -185,9 +229,8 @@ edit: "04-08-2020"
       <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-user fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">Here is a list of everyone in the department.</p>
+        <p class="text-muted">Pengbo Li</p>
         <hr class="seperator">
       </a>
     </div>
@@ -198,13 +241,37 @@ edit: "04-08-2020"
       <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
-          <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
         </span>
-        <p class="text-muted">This is a summary page of our research fields.</p>
+        <p class="text-muted">Shuxun Tian</p>
         <hr class="seperator">
       </a>
     </div>
   </div>
 </div>
 
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Lilan Yang</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Zhiqiang You</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+</div>
 ----
