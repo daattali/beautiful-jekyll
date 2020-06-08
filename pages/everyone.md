@@ -234,7 +234,6 @@ edit: "04-08-2020"
 
 ## PhD Students
 
-
 <div class="spacer"></div>
 
 <div class="row text-center">
