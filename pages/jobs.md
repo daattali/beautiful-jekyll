@@ -29,8 +29,8 @@ text-align: justify}
 
 
 ## Postdoctoral Positions
-[4 Postdoctoral Research Positions](https://jobregister.aas.org/ad/74d54118)
- In the fields of:  
+[4 Postdoctoral Research Positions](https://jobregister.aas.org/ad/74d54118)  
+   In the fields of:  
   - Cosmology
   - Gravitational wave astrophysics
   - Gravitational wave data analysis
