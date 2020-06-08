@@ -21,7 +21,6 @@ Prof. Xi-Long Fan invites you to participate in the Tencent meeting
 
 Meeting time: 2020/5/30 10:00-12:00 (CST)
 
-
 Click the link to join the meeting, or add to the meeting list:
 https://meeting.tencent.com/s/RgURaaga5DWw
 
@@ -35,7 +34,7 @@ ______________________________
 
 ## Abstract
 
-In this talk, I will introduce a numerical method on how to simulate the wave effects of GWs in a potential well. Based on our recent results, I will discuss how the wave effects, such as wave front, diffraction, and inference affect the wave speed and wave form of GWs. In particular, I will talk about whether GWs can arrive earlier than that of electromagnetic (EM) counterpart.
+-
 ______________________________
 
 ## Bio
