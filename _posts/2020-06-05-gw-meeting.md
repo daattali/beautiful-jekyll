@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GW Virtual Meeting
+title: GW Virtual Meeting - Jian-Hua He
 subtitle: Simulating the wave effects of gravitational waves in a potential well
 #cover-img: /assets/img/path.jpg
 tags: [seminar, event, blog]

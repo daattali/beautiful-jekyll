@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GW Virtual Meeting
-subtitle: Simulating the wave effects of gravitational waves in a potential well
+title: GW Virtual Meeting - Shao-Wen Wei (Lanzhou University)
+subtitle: Thermodynamical phase transitions and strong gravitational effects of black holes
 #cover-img: /assets/img/path.jpg
 tags: [seminar, event, blog]
 ---
