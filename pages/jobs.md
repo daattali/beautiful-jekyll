@@ -31,12 +31,12 @@ text-align: justify}
 ## Postdoctoral Positions
 [4 Postdoctoral Research Positions](https://jobregister.aas.org/ad/74d54118)
 
-In the fields of:
+ In the fields of:
 
- - Cosmology
- - Gravitational wave astrophysics
- - Gravitational wave data analysis
- _ Chemical evolution of galaxies
+  - Cosmology
+  - Gravitational wave astrophysics
+  - Gravitational wave data analysis
+  - Chemical evolution of galaxies
 
 
 [Postdoctoral Research Position in High Energy Astronomy](https://jobregister.aas.org/ad/8fc0f15d)
