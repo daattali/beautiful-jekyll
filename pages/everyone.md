@@ -26,7 +26,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/zonghongzhu" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -37,7 +37,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_bxlank" href="pages/people/personal/wangwei" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -49,7 +49,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/xilongfan" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -71,7 +71,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/beiyou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -82,7 +82,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_bxlank" href="pages/people/personal/guobinmou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -94,7 +94,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/zhongquncheng" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -116,7 +116,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/prahladepili" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -127,7 +127,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_bxlank" href="pages/people/personal/edagjergo" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -139,7 +139,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/shaoqihou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -156,7 +156,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/taismaiolino" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -167,7 +167,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_bxlank" href="pages/people/personal/artiroshi" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -180,7 +180,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/pingzhang" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -197,7 +197,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/xiaogangzheng" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -218,7 +218,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/xiaomingjiang" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -229,7 +229,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_bxlank" href="pages/people/personal/pengboli" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -241,7 +241,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/shuxuntian" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -258,7 +258,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_bxlank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_bxlank" href="pages/people/personal/lilanyang" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
@@ -270,7 +270,7 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="pages/people/personal/" class="project-link" title="Go to profile">
+      <a target="_blank" href="pages/people/personal/zhiqiangyou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
