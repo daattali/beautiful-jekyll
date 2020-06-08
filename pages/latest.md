@@ -17,8 +17,11 @@ comments: true
 edit: "04-06-2020"
 ---
 
+<h1 class="text-center">Latest News</h1>
+<div class="spacer"></div>
+
 <div class="posts-list">
-  {% for post in paginator.posts %}
+  {% for post in site.posts limit:5 %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
       <h2 class="post-title">{{ post.title }}</h2>
@@ -43,9 +46,11 @@ edit: "04-06-2020"
       </div>
       {% endif %}
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count = post.excerpt
-        | number_of_words %} {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a> {% endif %}
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif %}
       </div>
     </div>
 
@@ -54,7 +59,7 @@ edit: "04-06-2020"
       Tags:
       {% if site.link-tags %}
       {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+      <a href="{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
       {% endfor %}
       {% else %}
         {{ post.tags | join: ", " }}
@@ -62,20 +67,12 @@ edit: "04-06-2020"
     </div>
     {% endif %}
 
-  </article>
+   </article>
   {% endfor %}
 </div>
 
-{% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  <li>
+    <a href="{{site.baseurl}}/blog">Archive </a>
   </li>
-  {% endif %} {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
 </ul>
-{% endif %}
