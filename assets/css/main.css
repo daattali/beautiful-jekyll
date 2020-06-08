@@ -483,9 +483,9 @@ footer .footer-custom-content {
   width: 100%;
 }
 
-.profile-image {
-  object-fit: cover;
-}
+.roundrect {
+  border-radius: 15px;
+  }
 
 .post-image {
   float: right;
