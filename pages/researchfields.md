@@ -1,16 +1,18 @@
 ---
-layout: page
+layout: collection
 
 title: Research fields
 subtitle: What we do
 permalink: "researchfields"
-excerpt: "Founded in 2017."
+collection: research
+entries_layout: grid
+#excerpt: "Founded in 2017."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
   - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
 # category: Resources
-tags: [About]
+tags: [Research]
 googlefonts: ["Share+Tech+Mono"]
 comments: true
 # custom page vars
@@ -23,7 +25,3 @@ My name is Inigo Montoya. I have the following qualities:
 - I'm extremely loyal to my family
 
 What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
