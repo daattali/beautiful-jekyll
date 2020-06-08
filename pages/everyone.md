@@ -117,9 +117,11 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/prahladepili" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/prahladepili.png"> </div>
         </span>
+        <hr class="seperator">
         <p class="text-muted">Prahlad R. Epili</p>
+        <hr class="seperator">
       </a>
     </div>
   </div>
@@ -128,9 +130,9 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_bxlank" href="pages/people/personal/edagjergo" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <div class="crop"> <img src="assets/img/people/edagjergo.jpg"> </div>
         </span>
+        <hr class="seperator">
         <p class="text-muted">Eda Gjergo</p>
         <hr class="seperator">
       </a>
@@ -141,8 +143,9 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/shaoqihou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/houshaoqi.png"> </div>
         </span>
+        <hr class="seperator">
         <p class="text-muted">Shaoqi Hou</p>
         <hr class="seperator">
       </a>
