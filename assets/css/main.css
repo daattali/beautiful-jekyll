@@ -379,7 +379,6 @@ footer {
   font-size: 0.875rem;
   background-color: {{ site.footer-col | default: "#F5F5F5" }};
   {% if site.footer-img %}
-  border-bottom: 1px solid {{ site.footer-border-col | default: "#EAEAEA" }};
     background-image: url({{ site.footer-img | relative_url }});
     background-attachment: fixed;
   {% endif %}
