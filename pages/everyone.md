@@ -28,7 +28,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/zonghongzhu" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/zhuzonghong.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/zhuzonghong.png"> </div>
         </span>
         <p class="text-muted">Zong-Hong Zhu</p>
       </a>
@@ -39,7 +39,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_bxlank" href="pages/people/personal/wangwei" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/wangwei.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/wangwei.png"> </div>
         </span>
         <p class="text-muted">Wang Wei</p>
         <hr class="seperator">
@@ -51,7 +51,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/xilongfan" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/fanxilong.jpg"> </div>
+          <div class="profile-image"> <img src="assets/img/people/fanxilong.jpg"> </div>
         </span>
         <p class="text-muted">Xilong Fan</p>
         <hr class="seperator">
@@ -69,7 +69,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/quancheng" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/chengquan.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/chengquan.png"> </div>
         </span>
         <p class="text-muted">Quan Cheng</p>
         <hr class="seperator">
@@ -91,7 +91,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/beiyou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/youbei.jpg"> </div>
+          <div class="profile-image"> <img src="assets/img/people/youbei.jpg"> </div>
         </span>
         <p class="text-muted">Bei You</p>
       </a>
@@ -102,7 +102,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_bxlank" href="pages/people/personal/guobinmou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/mouguobin.jpg"> </div>
+          <div class="profile-image"> <img src="assets/img/people/mouguobin.jpg"> </div>
         </span>
         <p class="text-muted">Guobin Mou</p>
         <hr class="seperator">
@@ -114,7 +114,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/zhongquncheng" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/chengzhongqun.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/chengzhongqun.png"> </div>
         </span>
         <p class="text-muted">Zhongqun Cheng</p>
         <hr class="seperator">
@@ -148,7 +148,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_bxlank" href="pages/people/personal/edagjergo" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/edagjergo.jpg"> </div>
+          <div class="profile-image"> <img src="assets/img/people/edagjergo.jpg"> </div>
         </span>
         <hr class="seperator">
         <p class="text-muted">Eda Gjergo</p>
@@ -179,7 +179,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/taismaiolino" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="crop"> <img src="assets/img/people/taismaiolino.png"> </div>
+          <div class="profile-image"> <img src="assets/img/people/taismaiolino.png"> </div>
         </span>
         <hr class="seperator">
         <p class="text-muted">Tais Maiolino</p>
@@ -243,7 +243,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/xiaomingjiang" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-         <div class="profile-image"> <img src="assets/img/people/zhengxiaogang.jpg"> </div>
+         <div class="profile-image"> <img src="assets/img/people/jiangxiaoming.png"> </div>
         </span>
         <p class="text-muted">Xiaoming Jiang</p>
       </a>
@@ -254,7 +254,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_bxlank" href="pages/people/personal/pengboli" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <div class="profile-image"> <img src="assets/img/people/zhengxiaogang.jpg"> </div>
+          <div class="profile-image"> <img src="assets/img/people/lipengbo.png"> </div>
         </span>
         <p class="text-muted">Pengbo Li</p>
         <hr class="seperator">
