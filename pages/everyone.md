@@ -60,6 +60,24 @@ edit: "04-08-2020"
   </div>
 </div>
 
+
+<div class="spacer"></div>
+
+<div class="row text-center">
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="pages/people/personal/quancheng" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Quan Cheng</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+</div>
+
 ----
 
 ## Researchers
@@ -73,7 +91,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/beiyou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/youbei.jpg"> </div>
         </span>
         <p class="text-muted">Bei You</p>
       </a>
@@ -84,7 +102,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_bxlank" href="pages/people/personal/guobinmou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/mouguobin.jpg"> </div>
         </span>
         <p class="text-muted">Guobin Mou</p>
         <hr class="seperator">
@@ -96,7 +114,7 @@ edit: "04-08-2020"
     <div class="project-card">
       <a target="_blank" href="pages/people/personal/zhongquncheng" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x stack-color"></i>
+          <div class="crop"> <img src="assets/img/people/chengzhongqun.png"> </div>
         </span>
         <p class="text-muted">Zhongqun Cheng</p>
         <hr class="seperator">
