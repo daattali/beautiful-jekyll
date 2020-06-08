@@ -9,7 +9,7 @@ excerpt: "Founded in 2017."
 show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
   - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
-category: people
+category: everyone
 tags: [About]
 googlefonts: ["Share+Tech+Mono"]
 comments: true

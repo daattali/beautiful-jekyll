@@ -302,3 +302,34 @@ edit: "04-08-2020"
     </div>
   </div>
 </div>
+
+## Staff
+
+<div class="spacer"></div>
+
+<div class="row text-center">
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_bxlank" href="pages/people/weina" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Na Wei</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="pages/people/chenjia" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
+        </span>
+        <p class="text-muted">Jia Chen</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+</div>
