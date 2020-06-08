@@ -3,7 +3,7 @@ layout: page
 
 title: People
 subtitle: Meet our members
-permalink: "everyone"
+permalink: "people"
 #excerpt: "Founded in 2017."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
