@@ -109,7 +109,6 @@ edit: "04-08-2020"
 
 ## Postdocs
 
-
 <div class="spacer"></div>
 
 <div class="row text-center">
