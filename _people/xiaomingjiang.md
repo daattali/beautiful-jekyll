@@ -24,7 +24,7 @@ text-align: justify}
 </style>
 
 # Contact
-
+Email: xmjiang@whu.edu.cn
 
 # Bio
 
