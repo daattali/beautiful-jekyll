@@ -17,7 +17,7 @@ Prof. Xi-Long Fan invites you to participate in the Tencent meeting
 
 ## The Limitation of the Double Neutron Star Merger on the Maximum Mass of the Neutron Star
 
-### whu-gw Group Meeting - He Gao Report
+### whu-gw Group Meeting - He Gao Seminar
 
 Meeting time: 2020/5/23 10:00-12:00 (CST)
 

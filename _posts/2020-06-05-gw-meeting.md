@@ -17,7 +17,7 @@ Prof. Xi-Long Fan invites you to participate in the Tencent meeting
 
 ## Simulating the wave effects of gravitational waves in a potential well
 
-### whu-gw Group Meeting-He Jianhua Report
+### whu-gw Group Meeting - He Jianhua Seminar
 
 Meeting time: 2020/6/5 10:00-12:00 (CST)
 

@@ -17,7 +17,7 @@ Prof. Xi-Long Fan invites you to participate in the Tencent meeting
 
 ## Thermodynamical phase transitions and strong gravitational effects of black holes
 
-### whu-gw Group Meeting - Wei Shaowen Report
+### whu-gw Group Meeting - Wei Shaowen Seminar
 
 Meeting time: 2020/5/30 10:00-12:00 (CST)
 
