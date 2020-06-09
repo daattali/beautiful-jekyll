@@ -4,7 +4,7 @@ title: My Data Science Setup (Mac OS)
 tags: [data-science]
 ---
 
-One of the funnest (and most frustrating) parts of data science is the vast array of tools available to us. It can be overwhelming where to start. Every now and then I like to complety wipe my computer clean, and then reinstall everything from scratch. This helps clean up my computer, and make sure everything is running smoothly.
+One of the funnest (and most frustrating) parts of data science is the vast array of tools available to us. It can be overwhelming where to start. Every now and then I like to completely wipe my computer clean, and then reinstall everything from scratch. This helps clean up my computer, and make sure everything is running smoothly.
 
 This is a living document that captures my most up to date set up. My set up is inspired by the University of British Columbia Data Science Program which provides helpful setup guides for three operating systems ([macOS](https://ubc-mds.github.io/resources_pages/install_ds_stack_mac/), [Windows](https://ubc-mds.github.io/resources_pages/install_ds_stack_windows/), and [Ubuntu](https://ubc-mds.github.io/resources_pages/install_ds_stack_ubuntu/)).
 
@@ -16,7 +16,7 @@ My guide currently covers the following areas.
 
 ## Python
 
-I choose to use the python distirbution [Miniconda](https://docs.conda.io/en/latest/miniconda.html) from [Anaconda](https://www.anaconda.com/). I use miniconda as opposed to Anaconda because it is a stripped down version of Anaconda comes with a lot of software that I do not play to use such as [Spyder](https://www.spyder-ide.org/) and [Orange](https://orange.biolab.si/).
+I choose to use the python distribution [Miniconda](https://docs.conda.io/en/latest/miniconda.html) from [Anaconda](https://www.anaconda.com/). I use miniconda as opposed to Anaconda because it is a stripped down version of Anaconda comes with a lot of software that I do not play to use such as [Spyder](https://www.spyder-ide.org/) and [Orange](https://orange.biolab.si/).
 
 After I have miniconda installed I then work on setting up my python environment. I like to leave the root environment as is, and create a new environment call `ds_base` (data science base). I then load in my favourite data science libraries. Note that I never use `pip install` in the `ds_base`. If there is a package that I can not install through conda I will clone `ds_base` and then install the desired package. I do this to avoid breaking the installation of `ds_base`. [Conda recommends](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html?highlight=pip#using-pip-in-an-environment):
 
@@ -51,7 +51,7 @@ Below is a complete list of packages in my environment
 - `tree`: Allows you to view directories and files in a tree like structure
 - `gh`: The [GitHub.com CLI](https://cli.github.com/). Great for quickly checkout PRs, or creating issues from the command line.
 - `autojump`: Allows you to quickly jump between directories in the command line ([GitHub README](https://github.com/wting/autojump)).
-- `node` and `npm`: I never use these directly, but lots of other tools seem to relly on them.
+- `node` and `npm`: I never use these directly, but lots of other tools seem to rely on them.
 
 **Steps to install Homebrew:**
 
@@ -74,7 +74,7 @@ Instead of the default Mac OS terminal app I use [iTerm2](https://www.iterm2.com
 
 I also use ZSH instead of bash. ZSH is now the default shell in Mac OS, but if you are operating on an older system it may be bash. Here is a good article from [stackabuse.com](https://stackabuse.com/zsh-vs-bash/) comparing the two.
 
-Lastly I customize ZSH with another tool called [Oh My ZSH](https://ohmyz.sh/). The tool allows you to extend the usefullness of ZSH by adding addtional features, plugins, and themes.
+Lastly I customize ZSH with another tool called [Oh My ZSH](https://ohmyz.sh/). The tool allows you to extend the usefulness of ZSH by adding additional features, plugins, and themes.
 
 **Steps to setup iTerm2, ZSH, and Oh My ZSH**
 
@@ -88,7 +88,7 @@ Lastly I customize ZSH with another tool called [Oh My ZSH](https://ohmyz.sh/). 
    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
    ```
 
-4. Edit the `~/.zshrc` file to add some customizations. Everytime you open a new command line window/tab, or refresh your currrent command line by calling `zsh` this file will be run. I add a combination of functions and alias for comonnly performed tasks. You can copy and paste the below into your own `.zshrc` file if you wish, or just add your own.
+4. Edit the `~/.zshrc` file to add some customizations. Every time you open a new command line window/tab, or refresh your current command line by calling `zsh` this file will be run. I add a combination of functions and alias for commonly performed tasks. You can copy and paste the below into your own `.zshrc` file if you wish, or just add your own.
 
 <script src="https://gist.github.com/SamEdwardes/958a8644b5a045a82afce80eaf6cafdc.js"></script>
 
