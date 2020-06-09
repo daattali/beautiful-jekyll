@@ -2,11 +2,13 @@
 title: Data Science
 ---
 
-Data Science is my professional passion! I am currently pursuing a Masters of Data Science from UBC.
+Data Science is my passion! I am currently pursuing a Masters of Data Science from UBC. Below are links to some of my personal projects and blog posts.
 
-Checkout my data science set up [here](datascience_setup.md).
+**Data Science Blog Posts**
 
-Here are links to a few of my favourite projects:
+- [Is UFC Judging Fair?](https://samedwardes.com/2020-05-31-is_the_ufc_fair/)
+
+**Data Science Projects**
 
 | Project                                                      | Details                                                      | Image                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
