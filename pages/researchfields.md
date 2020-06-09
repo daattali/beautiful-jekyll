@@ -21,10 +21,10 @@ edit: "04-06-2020"
 
 # 
  
-[Chemical Evolution Of Galaxies]("https://astrowhu.github.io/chemresearch")
+[Chemical Evolution Of Galaxies](chemresearch)
 
-[Cosmology]("https://astrowhu.github.io/cosmoresearch")
+[Cosmology](cosmoresearch)
 
-[Gravitational Waves]("https://astrowhu.github.io/gwresearch")
+[Gravitational Waves](gwresearch)
 
-[X-ray Astrophysics]("https://astrowhu.github.io/xrayresearch")
+[X-ray Astrophysics](xrayresearch)
