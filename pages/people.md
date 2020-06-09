@@ -60,24 +60,6 @@ edit: "04-08-2020"
   </div>
 </div>
 
-
-<div class="spacer"></div>
-
-<div class="row text-center">
-
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-      <a target="_blank" href="quancheng" class="project-link" title="Go to profile">
-        <span class="fa-stack fa-4x">
-          <img class="roundrect" src="assets/img/people/chengquan.png">
-        </span>
-        <p class="text-muted">Quan Cheng</p>
-        <hr class="seperator">
-      </a>
-    </div>
-  </div>
-</div>
-
 ----
 
 ## Researchers
@@ -89,11 +71,12 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="beiyou" class="project-link" title="Go to profile">
+      <a target="_blank" href="zhongquncheng" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <img class="roundrect" src="assets/img/people/youbei.jpg">
+          <img class="roundrect" src="assets/img/people/chengzhongqun.png"> 
         </span>
-        <p class="text-muted">Bei You</p>
+        <p class="text-muted">Zhongqun Cheng</p>
+        <hr class="seperator">
       </a>
     </div>
   </div>
@@ -112,15 +95,15 @@ edit: "04-08-2020"
 
   <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
     <div class="project-card">
-      <a target="_blank" href="zhongquncheng" class="project-link" title="Go to profile">
+      <a target="_blank" href="beiyou" class="project-link" title="Go to profile">
         <span class="fa-stack fa-4x">
-          <img class="roundrect" src="assets/img/people/chengzhongqun.png"> 
+          <img class="roundrect" src="assets/img/people/youbei.jpg">
         </span>
-        <p class="text-muted">Zhongqun Cheng</p>
-        <hr class="seperator">
+        <p class="text-muted">Bei You</p>
       </a>
     </div>
   </div>
+
 </div>
 
 ----
@@ -214,22 +197,6 @@ edit: "04-08-2020"
   </div>
 </div>
 
-<div class="spacer"></div>
-
-<div class="row text-center">
-
-  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
-    <div class="project-card">
-      <a target="_blank" href="xiaogangzheng" class="project-link" title="Go to profile">
-        <span class="fa-stack fa-4x">
-          <img class="roundrect" src="assets/img/people/zhengxiaogang.jpg"> 
-        </span>
-        <p class="text-muted">Xiaogang Zheng</p>
-        <hr class="seperator">
-      </a>
-    </div>
-  </div>
-</div>
 ----
 
 ## PhD Students
@@ -328,6 +295,38 @@ edit: "04-08-2020"
           <i class="fa fa-square fa-stack-2x stack-color"></i>
         </span>
         <p class="text-muted">Jia Chen</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+</div>
+
+## Past members
+
+<div class="spacer"></div>
+
+<div class="row text-center">
+
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="xiaogangzheng" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <img class="roundrect" src="assets/img/people/zhengxiaogang.jpg"> 
+        </span>
+        <p class="text-muted">Xiaogang Zheng</p>
+        <hr class="seperator">
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+    <div class="project-card">
+      <a target="_blank" href="quancheng" class="project-link" title="Go to profile">
+        <span class="fa-stack fa-4x">
+          <img class="roundrect" src="assets/img/people/chengquan.png">
+        </span>
+        <p class="text-muted">Quan Cheng</p>
         <hr class="seperator">
       </a>
     </div>
