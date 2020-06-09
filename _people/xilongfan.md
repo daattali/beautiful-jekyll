@@ -25,6 +25,7 @@ text-align: justify}
 
 # Contact
 Email: xilong.fan@whu.edu.cn
+
 [Homepage](http://astronomy.lamost.org/blog/?page_id=2)
 
 # Bio
