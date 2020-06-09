@@ -8,6 +8,7 @@ Data Science is my passion! I am currently pursuing a Masters of Data Science fr
 
 - [Is UFC Judging Fair?](https://samedwardes.com/2020-05-31-is_the_ufc_fair/)
 - [My Data Science Setup (Mac OS)](https://samedwardes.com/2020-06-08-datascience-setup/)
+- [All Data Science posts...](https://samedwardes.com/tags/#data-science)
 
 **Data Science Projects**
 
