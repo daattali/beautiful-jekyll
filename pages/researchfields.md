@@ -1,11 +1,11 @@
 ---
-layout: base
+layout: page
 
 title: Research fields
 subtitle: What we do
 permalink: "researchfields"
-collection: research
-entries_layout: grid
+#collection: research
+#entries_layout: grid
 #excerpt: "Founded in 2017."
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
