@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GW Virtual Meeting - Nan Li
+title: GW Telecon - Nan Li
 subtitle: Strong Gravitational Lensing in the Big Data Era
 #cover-img: /assets/img/path.jpg
 tags: [seminar, event, blog]

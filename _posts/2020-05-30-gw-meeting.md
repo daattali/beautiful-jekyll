@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GW Virtual Meeting - Shaowen Wei (Lanzhou University)
+title: GW Telecon - Shaowen Wei (Lanzhou University)
 subtitle: Thermodynamical phase transitions and strong gravitational effects of black holes
 #cover-img: /assets/img/path.jpg
 tags: [seminar, event, blog]
