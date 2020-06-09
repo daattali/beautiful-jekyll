@@ -10,9 +10,11 @@ This is a living document that captures my most up to date set up. My set up is 
 
 My guide currently covers the following areas.
 
-- [Python](##python)
-- [Homebrew](##homebrew)
-- [Terminal and ZSH](##terminal-and-zsh)
+- [Python](#python)
+- [Homebrew](#homebrew)
+- [Terminal and ZSH](#terminal-and-zsh)
+- [R](#r)
+- [VS Code](#vs-code)
 
 ## Python
 
@@ -98,3 +100,18 @@ Lastly I customize ZSH with another tool called [Oh My ZSH](https://ohmyz.sh/). 
 plugins=(git autojump)
 ZSH_THEME="blinks"
 ```
+
+## R
+
+Work in progress...
+
+## VS Code
+
+Visual Studio Code, or VS Code for short is one of the most popular editors at the moment. I enjoy listing to the [Talk Python to Me](https://talkpython.fm/) podcast and it seems like 99% of guests use VS code now. VS Code is great because it is very light weight, but has a ton of powerful extensions.
+
+**Steps to setup VS Code**
+
+1. Download from [https://code.visualstudio.com/](https://code.visualstudio.com/)
+2. Install extensions. I currently use the following extensions. You can download them by searching for each one in the extensions sidebar.
+
+<a href="https://imgur.com/OeacnZr"><img src="https://i.imgur.com/OeacnZr.png" title="source: imgur.com" /></a>
