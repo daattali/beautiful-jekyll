@@ -9,7 +9,8 @@ excerpt: "Joined in [...]"
 show-avatar: true
 bigimg:	# /path/to/img - or multiple entries <- "Path": "Description">
   - "/assets/img/astroWHUheader.jpg" : "Photo by Xiaoming Jiang (蒋效铭)"
-# category: Resources
+#cover-img: /assets/img/astroWHUheader.jpg
+category: people
 tags: [About, Wei-Na]
 googlefonts: ["Share+Tech+Mono"]
 comments: true
@@ -23,6 +24,6 @@ text-align: justify}
 </style>
 
 # Contact
-
+Email: weina@whu.edu.cn
 
 # Bio

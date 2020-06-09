@@ -24,6 +24,7 @@ text-align: justify}
 </style>
 
 # Contact
+Email: eda.gjergo@whu.edu.cn
 
 # Bio
 
