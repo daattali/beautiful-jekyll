@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Data Science Setup (Mac OS)
+title: The Complete Data Science Setup (macOS)
 tags: [data-science]
 ---
 
@@ -74,7 +74,7 @@ Instead of the default Mac OS terminal app I use [iTerm2](https://www.iterm2.com
 
 <a href="https://imgur.com/AsAkhjz"><img src="https://i.imgur.com/AsAkhjz.png" title="source: imgur.com" /></a>
 
-I also use ZSH instead of bash. ZSH is now the default shell in Mac OS, but if you are operating on an older system it may be bash. Here is a good article from [stackabuse.com](https://stackabuse.com/zsh-vs-bash/) comparing the two.
+I also use ZSH instead of bash. ZSH is now the default shell in macOS, but if you are operating on an older system it may be bash. Here is a good article from [stackabuse.com](https://stackabuse.com/zsh-vs-bash/) comparing the two.
 
 Lastly I customize ZSH with another tool called [Oh My ZSH](https://ohmyz.sh/). The tool allows you to extend the usefulness of ZSH by adding additional features, plugins, and themes.
 
@@ -82,7 +82,7 @@ Lastly I customize ZSH with another tool called [Oh My ZSH](https://ohmyz.sh/). 
 
 1. Install iTerm2 from [https://www.iterm2.com/](https://www.iterm2.com/)
 
-2. I will assume that you are already using ZSH, but if you are not update to the latest version of Mac OS and ZSH should be the default. Here is a guide from [How-To-Geek](https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/) to help switch between shells.
+2. I will assume that you are already using ZSH, but if you are not update to the latest version of macOS and ZSH should be the default. Here is a guide from [How-To-Geek](https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/) to help switch between shells.
 
 3. Install Oh My ZSH using:
 
