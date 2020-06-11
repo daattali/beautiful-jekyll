@@ -31,7 +31,7 @@ avatar: "/assets/img/AisbergLogo.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /assets/img/AisbergLogo.svg
+title-img: /assets/img/AisbergLogo.svg
 
 
 # --- Footer options --- #
@@ -159,7 +159,7 @@ footer-link-col: "#1e4586"
 title-separator: "-"
 
 # Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+date_format: "%-d %B %Y"
 
 # Facebook App ID
 #fb_app_id: ""
