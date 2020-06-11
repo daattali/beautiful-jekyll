@@ -1,22 +1,24 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: AISBERG über Analyticscreator
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Meine Erfahrungen mit dem AnalyticsCreator zur DWH-Automatisierung (ELT, DWH, SSAS)
 
 # Your name to show in the footer
-author: Some Person
+author: Germo Görtz
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "Über mich"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - AnalyticsCreator: "https://www.analyticscreator.com/"
+    - AnalyticsCreator Toolkit: "https://github.com/aisbergde/AnalyticsCreator_Toolkit"
+    - Beautiful Jekyll: "https://www.analyticscreator.com/"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://www.aisberg.de"
 
 # --- Logo --- #
 
@@ -38,24 +40,24 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
+  email: "web@eaisberg.de"
+  facebook: germo.goertz
+  github: aisbergde
+  twitter: GermoGortz
   rss: true
 #  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
+  linkedin: germo-görtz
+  xing: germo
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
+#  instagram: germogoertz
+  youtube: user/GermoGörtz
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
+  telegram: germo_goertz
 #  calendly: yourname
 #  mastodon: instance.url/@username
 
@@ -69,7 +71,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "aisberg.de"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -165,7 +167,7 @@ date_format: "%B %-d, %Y"
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "	Europe/Berlin"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
