@@ -6,7 +6,7 @@ author: emir_osmanoski
 comments: true
 image: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/00_logo.png
 cover-img: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/000_cover.png
-dark-heading: true
+share-img: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/00_logo.png
 ---
 
 I recently started reading up on the subject of the [.NET Compiler Platform and SDK](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/)
