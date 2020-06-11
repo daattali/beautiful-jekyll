@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.125rem;
   color: #404040;
   position: relative;
@@ -203,7 +203,7 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
   font-weight: 800;
-  color: {{ site.navbar-text-col | default: "#404040" }};
+  color: {{ site.navbar-text-col | default: "#1e4586" }};
 }
 
 .navbar-toggler {
@@ -389,7 +389,7 @@ footer p.text-muted {
 }
 
 footer a {
-  color: {{ site.footer-link-col | default: "#404040" }};
+  color: {{ site.footer-link-col | default: "#1e4586" }};
 }
 
 footer .list-inline {
