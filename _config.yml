@@ -31,7 +31,8 @@ avatar: "/assets/img/AisbergLogo.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: /assets/img/AisbergLogo.png
+# Funktioniert nicht, vielleicht mit ""
+title-img: "/assets/img/AisbergLogo.png"
 
 
 # --- Footer options --- #
