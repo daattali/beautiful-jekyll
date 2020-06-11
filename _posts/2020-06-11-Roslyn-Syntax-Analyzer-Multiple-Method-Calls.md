@@ -7,6 +7,7 @@ comments: true
 image: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/00_logo.png
 cover-img: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/000_cover.png
 share-img: /images/2020-06-11-Roslyn-Syntax-Analyzer-Multiple-Method-Calls/00_logo.png
+meta-description: An introduction and overview of the .NET Compiler Platform SDK
 ---
 
 I recently started reading up on the subject of the [.NET Compiler Platform and SDK](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/)
