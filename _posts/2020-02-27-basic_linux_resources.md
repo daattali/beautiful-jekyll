@@ -263,6 +263,7 @@ Command | Description
 `df`	| Lists the mount points for inserted disks
 `ps –aux` (Old way) `ps -elf` (New Way) |	Lists the running processes
 `ps -lfu` | lists processess started by a user
+`ps -f --ppid 1` | lists processess started on boot by systemd
 `top`	| Lists processes in order
 `kill <pid>` |	Kill a Running process
 `systemctl -l --type service --all` |	Lists all the running Services
