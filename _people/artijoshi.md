@@ -1,9 +1,9 @@
 ---
 layout: page
 
-title: Arti Roshi
+title: Arti Joshi
 subtitle: Postdoc
-permalink: "artiroshi"
+permalink: "artijoshi"
 excerpt: "Joined in [...]"
 #image: "/img/image/ps-journey.jpg"
 show-avatar: true
