@@ -2,7 +2,7 @@
 
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
 - Add social network link: Mastodon (#646)
-- Add social share: VK
+- Add support for sharing pages on new social network: VK (#657)
 
 ## v3.0.0 2020-05-07
 
