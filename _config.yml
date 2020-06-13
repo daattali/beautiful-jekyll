@@ -31,6 +31,12 @@ round-avatar: true
 # then specify the following parameter
 #title-img: /path/to/image
 
+# -- Header options -- #
+# Uncomment the attributes you want to enable for your site.
+
+# Web Monetization
+# More info: https://dev.to/hacksultan/web-monetization-like-i-m-5-1418
+# monetization: <enter your $pay link, ex: $pay.example.com/1a1EXAMPLEEXAMPLEEXAMPLEEXAMPLE
 
 # --- Footer options --- #
 
