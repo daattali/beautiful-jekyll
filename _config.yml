@@ -35,7 +35,8 @@ round-avatar: true
 # Uncomment the attributes you want to enable for your site.
 
 # Web Monetization
-# More info: https://dev.to/hacksultan/web-monetization-like-i-m-5-1418
+# More info: https://webmonetization.org/
+# Get Started guide: https://dev.to/hacksultan/web-monetization-like-i-m-5-1418
 # monetization: <enter your $pay link, ex: $pay.example.com/1a1EXAMPLEEXAMPLEEXAMPLEEXAMPLE
 
 # --- Footer options --- #
