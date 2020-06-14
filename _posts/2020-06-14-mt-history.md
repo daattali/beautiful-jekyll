@@ -2,7 +2,7 @@
 layout: post
 title: Evolving landscape of Machine Translation
 subtitle: High level overview of the primary techniques for machine translation over time
-tags: [nlp]
+tags: [nlp, nmt]
 ---
 
 Neural Machine translation directly calculates
