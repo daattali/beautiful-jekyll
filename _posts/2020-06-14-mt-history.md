@@ -9,8 +9,9 @@ Neural Machine translation directly calculates
 ... a given wire happens to be carrying "$$\lvert 0\rangle$$."
 By that we mean that it's carrying the linear combination
 
-$$\begin{psmallmatrix} 1 \\ 0 \end{psmallmatrix}$$
 
 $$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 
-k_{n+1} = n^2 + k_n^2 - k_{n-1}
+$$
+P(y | x)=P\left(y_{1} | x\right) P\left(y_{2} | y_{1}, x\right) P\left(y_{3} | y_{1}, y_{2}, x\right) \ldots P\left(y_{T} | y_{1}, \ldots, y_{T-1}, x\right)
+$$
