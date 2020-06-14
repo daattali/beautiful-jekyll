@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Practical NMT
-subtitle: Notes on Implementing NMT System
-tags: [nlp][nmt]
+title: Motivating Beam Search
+subtitle: Problems with the decoder on an nmt system
+cover-img: /assets/img/path.jpg
+tags: [nmt, nlp]
 ---
 ## Training Auto-regressive model
 Feeding the correct output and learning to decode from it.
@@ -23,3 +24,4 @@ $$
 
 * Scores are all negative and higher score is better
 * We search for high scoring hypothesis, tracking top k on each step
+* Not guarranteed to find the optimal solution, but it is much more efficient
