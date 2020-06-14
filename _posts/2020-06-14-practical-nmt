@@ -2,7 +2,7 @@
 layout: post
 title: Practical NMT
 subtitle: Notes on Implementing NMT System
-tags: [nlp]
+tags: [nlp][nmt]
 ---
 
 ###Training Auto-regressive model
