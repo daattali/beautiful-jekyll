@@ -5,15 +5,15 @@ subtitle: Notes on Implementing NMT System
 tags: [nlp][nmt]
 ---
 
-###Training Auto-regressive model
+##Training Auto-regressive model
 Feeding the correct output and learning to decode from it.
 
-###Greedy Decoding
+##Greedy Decoding
 
-###Exhaustive Search Decoding
+##Exhaustive Search Decoding
 V^t possible partial translation. Far too expensive.
 
-###Beam Search
+##Beam Search
 Keep track of K most probable partial translations(aka hypothesis). Score of a hypothesis is just its log probability
 
 A Hypothesis $$y_{1}, \ldots, y_{t}$$ has a score which is its log probability:
