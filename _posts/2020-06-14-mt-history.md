@@ -2,7 +2,6 @@
 layout: post
 title: Evolving landscape of Machine Translation
 subtitle: A high level overview of the evolution of primary techniques for machine translation
-cover-img:
 tags: [nlp]
 ---
 
