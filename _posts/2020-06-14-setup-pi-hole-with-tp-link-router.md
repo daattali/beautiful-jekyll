@@ -21,6 +21,13 @@ The installation of pi-hole is easy, but I ran into some difficulties of getting
 It is essentially a one line code:
 ```curl -sSL https://install.pi-hole.net | bash```
 
-You will need to click through some options and pick an upstream DNS provider. I picked Quad9, but any provider will do.
+You will need to click through some options and pick an upstream DNS provider. I picked Quad9, but any provider will do. Make sure to write down your Raspberry Pi's ip address as you will need this when we adjust the router settings.
 
-Once installation is complete and you have rebooted (I suggest doing so.
+Once installation is complete and you have rebooted, you will need to update your DNS settings in the TP Link router settings. To access your router settings, type "192.168.0.1" into your URL bar. Log in to your router and click on "Advanced Settings". In the left hand panel, click on "Network" and then click on "DHCP Server". 
+
+In this screen, you should see Primary DNS and Secondary DNS. Enter your raspberry pi's IP address here and click "Save". You can test if the pi-hole is working by visiting this page: https://ads-blocker.com/testing/
+
+If you want to block the Youtube ads using the pi-hole (note: this will not block the video ads. Only the in-video pop-up ads.
+Go to pi.hole and login. Click on "Blacklist" and type in "youtube.com".
+
+Enjoy an ad-free internet!
