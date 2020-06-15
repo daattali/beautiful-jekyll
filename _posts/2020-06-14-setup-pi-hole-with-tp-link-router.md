@@ -16,7 +16,7 @@ the annoying youtube ads that pop-up at the bottom of your video that you have t
 </div>
 
 
-The installation of pi-hole is easy, but I ran into some difficulties of getting the pi-hole to work with my TP Link Archer C6 router and raspberry pi zero w. In this post, I am going to talk about how to make sure your router pushes the traffic through your rasperry pi,  so the pi-hole can do it's job and filter all the ads and internet trackers. I will briefly go over how to install the pi-hole, but I would suggest using other great tutorials on the internet to help you install pi hole. 
+The installation of pi-hole is easy, but I ran into some difficulties of getting the pi-hole to work with my TP Link Archer C6 router (I am using a Raspberry Pi Zero W). In this post, I am going to talk about how to make sure your router pushes the traffic through your rasperry pi,  so the pi-hole can do it's job and filter all the ads and internet trackers. I will briefly go over how to install the pi-hole, but I would suggest using other great tutorials on the internet to help you install pi hole. 
 
 It is essentially a one line code:
 ```curl -sSL https://install.pi-hole.net | bash```
