@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GW Telecon - He Gao (BNU)
-subtitle: The Limitation of the Double Neutron Star Merger on the Maximum Mass of the Neutron Star
+title: GW Telecon - Kai Liao
+subtitle: Probing Compact Dark Matter with Lensing of Transients
 #cover-img: /assets/img/path.jpg
-tags: [seminar, event, blog, He-Gao]
+tags: [seminar, event, blog, Kai-Liao]
 ---
 
 <style>
@@ -13,18 +13,18 @@ text-align: justify}
 
 Prof. Xi-Long Fan invites you to participate in the Tencent meeting
 
-## Speaker: He Gao (Beijing Normal University)
+## Speaker: Kai Liao
 
-## The Limitation of the Double Neutron Star Merger on the Maximum Mass of the Neutron Star
+## Probing Compact Dark Matter with Lensing of Transients
 
-### whu-gw Group Meeting - He Gao Seminar
+### whu-gw Group Meeting - Kai Liao Seminar
 
-Meeting time: 2020/5/23 10:00-12:00 (CST)
+Meeting time: 2020/6/20 10:00-12:00 (CST)
 
 Click the link to join the meeting, or add to the meeting list:
-https://meeting.tencent.com/s/EYQVDj5IvHGK
+https://meeting.tencent.com/s/Fbzoah0BUskk
 
-Conference ID: 565 458 362
+Conference ID: 547 511 557
 
 Dial according to your location  
    +8675536550000 (Mainland China)
@@ -34,12 +34,8 @@ ______________________________
 
 ## Abstract
 
--
-
 ______________________________
 
 ## Bio
-
--
 
 You're welcome to participate this Friday morning!

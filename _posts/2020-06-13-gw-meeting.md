@@ -3,7 +3,7 @@ layout: post
 title: GW Telecon - Nan Li
 subtitle: Strong Gravitational Lensing in the Big Data Era
 #cover-img: /assets/img/path.jpg
-tags: [seminar, event, blog]
+tags: [seminar, event, blog, Nan-Li]
 ---
 
 <style>

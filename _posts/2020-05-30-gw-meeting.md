@@ -3,7 +3,7 @@ layout: post
 title: GW Telecon - Shaowen Wei (Lanzhou University)
 subtitle: Thermodynamical phase transitions and strong gravitational effects of black holes
 #cover-img: /assets/img/path.jpg
-tags: [seminar, event, blog]
+tags: [seminar, event, blog, Shaowen-Wei]
 ---
 
 <style>

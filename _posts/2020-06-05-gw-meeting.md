@@ -3,7 +3,7 @@ layout: post
 title: GW Telecon - Jianhua He
 subtitle: Simulating the wave effects of gravitational waves in a potential well
 #cover-img: /assets/img/path.jpg
-tags: [seminar, event, blog]
+tags: [seminar, event, blog, Jianhua-He]
 ---
 
 <style>
