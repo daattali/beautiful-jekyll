@@ -31,5 +31,3 @@ If you want to block the Youtube ads using the pi-hole (note: this will not bloc
 Go to pi.hole and login. Click on "Blacklist" and type in "youtube.com".
 
 Enjoy an ad-free internet!
-
-<script data-ad-client="ca-pub-2898027545206399" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
