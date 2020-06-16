@@ -31,6 +31,7 @@ This means, a key is likely poped back off the stack, so you can refer to it as 
 
 ## Software Used
 IDA - To follow through the code
+
 Snowman - To look at the code rudimentally
 
 
