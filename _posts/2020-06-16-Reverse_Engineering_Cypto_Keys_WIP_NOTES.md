@@ -10,7 +10,7 @@ comments: false
 I am by no means a programming, or RE expert. But I'm going to have a go at explaining the issue of finding the needle in a haystack of an XOR key used to obfuscate files in a sample.
 
 # Introduction
-Find that needle in the haystack... I had a college ask for some help finding a crypto key for a challenge they were doing, I had no idea i'd be rehashing some of the basics of CompSCI and C Programming. 
+Find that needle in the haystack... I had a collegue ask for some help finding a crypto key for a challenge they were doing, I had no idea i'd be rehashing some of the basics of CompSCI and C Programming. 
 
 ## Background
 According to DI Management, in cryptography programming, binary data is usually inputed to, or outputed from, as a bit string.
