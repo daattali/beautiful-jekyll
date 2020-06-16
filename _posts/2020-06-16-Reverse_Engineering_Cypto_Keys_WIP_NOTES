@@ -52,17 +52,17 @@ unsigned char key3[4]={0xFA, 0xCE, 0xBE, 0xAD}; //push offset byte_40A128
 
 int main()
 {
-		int num1 = 1 ; //ebx
-		int char1 = 'A' ; //edi
-		unsigned int key=0xFACE ; //edp + 4
+	int num1 = 1 ; //ebx
+	int char1 = 'A' ; //edi
+	unsigned int key=0xFACE ; //edp + 4
         //local variable
         unsigned char key2[4]={0xFA, 0xCE, 0xBE, 0xED}; //mov eax, dword_40A12C
    		
-		printf("This program uses local variables as a demo example for reverse engineering \n\n\n ");
+	printf("This program uses local variables as a demo example for reverse engineering \n\n\n ");
 			
-		printf("Your integer (2 or 4 bytes (Number)) is: \n DECIMAL: %d \n HEX: 0x%X \n\n",num1, num1);		
-		printf("Your char (ASCII Number (A in ASCII 65)) is: \n DECIMAL: %d \n HEX: 0x%X \n\n" ,char1, char1);		
-		printf("Your key (Raw hex) is: \n DECIMAL:  %d \n HEX: 0x%X \n\n", key, key);
+	printf("Your integer (2 or 4 bytes (Number)) is: \n DECIMAL: %d \n HEX: 0x%X \n\n",num1, num1);		
+	printf("Your char (ASCII Number (A in ASCII 65)) is: \n DECIMAL: %d \n HEX: 0x%X \n\n" ,char1, char1);		
+	printf("Your key (Raw hex) is: \n DECIMAL:  %d \n HEX: 0x%X \n\n", key, key);
         printf("Long Key (Array of ASCII HEX Bites) (Raw hex) is: \n DECIMAL:  %d \n HEX: 0x%X \n\n", key2, key2);
         printf("note, the above item has just printed the address of the array... lets now print it\n HEX:0x");
 
@@ -78,7 +78,7 @@ int main()
         for (int i=0; i < sizeof(key2); ++i)
         {
             printf("%X",key3[i]);
-        }		glo
+        }		
 		return(0);
 }
 `
