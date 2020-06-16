@@ -38,7 +38,8 @@ Snowman - To look at the code rudimentally
 ## Code
 
 To find these results, I used the following code (The comments, refer to what I found in the disassembler)
-`
+```
+
 /*
 Author: Samuel Freeman
 Date: 16/06/20
@@ -82,7 +83,8 @@ int main()
         }		
 		return(0);
 }
-`
+
+```
 
 
 
