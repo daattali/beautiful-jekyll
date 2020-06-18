@@ -1,1 +1,0 @@
-- add Yosemite trip
