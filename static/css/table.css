@@ -1,0 +1,26 @@
+/* ADDED BY SAM EDWARDES */
+
+table {
+	width: auto;
+	border-collapse: collapse;
+	overflow: scroll;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+}
+
+th {
+  text-align: left;
+}
+
+thead, th {
+    background-color: #3e81c7;
+    color: #fff;
+  }
+  
+table, th, td {
+  border: 1px solid rgb(211, 211, 211);
+}

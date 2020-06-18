@@ -1,144 +1,94 @@
 baseURL = "/"
-languageCode = "en-us"
+languageCode = "en"
+DefaultContentLanguage = "en"
 title = "Real Sam I Am"
-theme = "hugo-future-imperfect"
-preserveTaxonomyNames = true
-paginate = 10
-disqusShortname = "shortname"
-googleAnalytics = ""
-pluralizeListTitles = false
-# Set the followings to true as part of your site SEO
-enableRobotsTXT = true
-canonifyURLs = true
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+
+# Enable Disqus
+#disqusShortname = ""
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
 
 [params]
-  # Sets the meta tag description
-  description          = "Real Sam I Am - a blog by Sam Edwardes"
-  # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Real Sam I Am"
-  # Sets where "View More Posts" links
-  viewMorePostLink     = "/blog/"
+title = ""
+author = "Sam Edwardes"
+description = "Real Sam I Am - a blog by Sam Edwardes"
+profilePicture = "img/favicon.ico"
+keywords = ""
+favicon = "favicons/"
+customCss = ["css/table.css"]
+mainSections = ["post"]
 
-# Optional Params
-  # Sets navbarTitle to match the section of the website
-  dynamicTitles        = false
-  # Sets RSS icons to appear on the sidebar with the social media buttons
-  rssAppearAtTop       = true
-  rssAppearAtBottom    = true
-  # Sets Social Media icons to appear on the sidebar
-  socialAppearAtTop    = true
-  socialAppearAtBottom = true
-  # Sets Categories to sort by number of posts instead of alphabetical
-  categoriesByCount    = true
-  # set to show or to hide categories in the sidebar
-  showSidebarCategories = true
-  # Sets Estimated Reading Time to appear in post headers
-  includeReadingTime   = true
-  # Sets the Favicon and Version for the site. Default support is for
-  # apple-touch-icon-precomposed.png, favicon.png, favicon.ico, and mstile.png.
-  # These are stored in the favicon folder. See the following for more information:
-  # https://github.com/audreyr/favicon-cheat-sheet
-  loadFavicon          = false
-  faviconVersion       = ""
-  # Sets Social Share links to appear on posts
-  socialShare          = false
-  # Sets specific share to appear on posts (default behavior is to appear)
-  socialShareTwitter   = true
-  socialShareGoogleplus = true
-  socialShareFacebook  = true
-  socialShareReddit    = true
-  socialShareLinkedin  = true
-  socialShareStumbleupon = true
-  socialSharePinterest = true
-  socialShareEmail     = true
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
 
-  # Load custom CSS or JavaScript files. The variable is an array so that you
-  # can load multiple files if necessary. You can also load the standard theme
-  # files by adding the value, "default".
-  # customCSS            = ["default", "/path/to/file"]
-  # customJS             = ["default", "/path/to/file"]
-  customCSS            = ["default"]
-  customJS             = ["default"]
+## Social links
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/SamEdwardes"
 
-  # options for highlight.js (version, additional languages, and theme)
-  disable_highlight = false # set to true to disable Highlight
-  highlightjsVersion = "9.11.0"
-  highlightjsCDN = "//cdn.bootcss.com"
-  highlightjsLang = ["r", "yaml", "css"]
-  highlightjsTheme = "github"
-  MathJaxCDN = "//cdn.bootcss.com"
-  MathJaxVersion = "2.7.1"
+[[params.socialIcons]]
+icon = "fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/TheReaLSamlam"
 
-# Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
-# due to its ease of use. Feel free to check out both and decide what you would
-# prefer to use. See Staticman.yml for additional settings.
-[params.staticman]
-  # Sets Statiman to be active
-  staticman = false
-  # Sets the location for Staticman to connect to
-  username  = ""
-  repo      = ""
-  branch    = ""
+[[params.socialIcons]]
+icon = "fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/samedwardes/"
 
-  [params.staticman.recaptcha]
-    sitekey = "SITE_KEY"
-    secret  = "ENCRYPTED_SECRET"
+[[params.socialIcons]]
+icon = "fa-youtube"
+title = "YouTube"
+url = "https://www.youtube.com/channel/UCkXD_pR2bYGOyf8Eh6T_BNw"
 
-  # These are optional params related to the sidebar. They are recommended, but not
-  # required for proper functionality. HTML is supported within the params.
-[params.intro]
-  header    = "Real Sam I Am"
-  paragraph = "a blog by Sam Edwardes"
-  about     = "Blogging about data science and the outdoors."
+[[params.socialIcons]]
+icon = "fa-envelope"
+title = "e-mail"
+url = "mailto:edwardes.s@gmail.com"
 
-  # This appears at the top of the sidebar above params.intro.header.
-  # A width of less than 100px is recommended from a design perspective.
-  [params.intro.pic]
-    src       = "/img/main/favicon.ico"
-    # Sets Image to be a cirlce
-    circle    = false
-    # Sets Image to be Future Imperfect's hexagon
-    imperfect = true
-    width     = ""
-    alt       = ""
+## Menu items
 
-[params.postAmount]
-# Sets the number of recent posts to show in the sidebar. The default value is 5.
-    sidebar = 5
+[menu]
 
-# Sets the menu items in the navigation bar
-# Identifier prepends a Font Awesome icon to the menu item
-[[menu.main]]
+  [[menu.main]]
   name = "Home"
+  identifier = "home"
+  weight = 100
   url = "/"
-  identifier = "fa fa-home"
-  weight = 1
 
-[[menu.main]]
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
   name = "About"
+  weight = 300
+  identifier = "about"
   url = "/about/"
-  identifier = "fa fa-id-card-o"
-  weight = 2
 
-[[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  identifier = "fa fa-newspaper-o"
-  weight = 3
+  [[menu.main]]
+  name = "Data Science"
+  weight = 400
+  identifier = "data-science"
+  url = "/data-science/"
 
-[[menu.main]]
-  name = "Categories"
-  url = "/categories/"
-  identifier = "fa fa-sitemap"
-  weight = 4
+  [[menu.main]]
+  name = "Outdoors"
+  weight = 500
+  identifier = "outdoors"
+  url = "/categories/outdoors/"
 
-
-# Sets Social Media icons to appear and link to your account. Value should be your
-# username unless otherwise noted. These are the icons affected by socialAppearAtTop
-# and socialAppearAtBottom.
-[social]
-  github           = "SamEdwardes"
-  twitter          = "TheReaLSamlam"
-  linkedin         = "samedwardes"
-  youtube          = "channel/UCkXD_pR2bYGOyf8Eh6T_BNw"
-  email            = "edwardes.s@gmail.com"
+  [[menu.main]]
+  name = "Tags"
+  weight = 600
+  identifier = "tags"
+  url = "/tags/"
