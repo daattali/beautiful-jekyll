@@ -1,16 +1,12 @@
-+++
-author = "Sam Edwardes"
-categories = ["outdoors"]
-tags = ["running"]
-date = "2012-09-09"
-description = ""
-featured = "https://i.imgur.com/H07yZro.jpg"
-featuredalt = "running-pei"
-featuredpath = "date"
-linktitle = ""
-title = "Running Across PEI"
-type = "post"
-+++
+---
+title: "Running Across PEI"
+date: "2012-09-09"
+categories: ["outdoors"]
+tags: ["running"]
+author: "Sam Edwardes"
+featuredpath: "https://i.imgur.com/H07yZro.jpg"
+type: "post"
+---
 
 The summer of 2013 I and my friends Cory Babiak, Taylor Jenkins, and Jose Pauig ran across PEI. Jose followed us on a bike for support; Cory Taylor and myself all ran. We raised over $7000 for Project Jumpstart, a charity that helps Canadian Kids who cannot afford to play sports get in the game. It was great raising money for Project Jumpstart, as it is something we all felt very strong about. The run itself was over 6 marathons in six days. It ended up being an extremely challenging task, much harder on the body than cycling. By the end we were running and walking the trail, and moving at a snails pace, but we did finish in our goal of 280 km in six days!
 
@@ -22,7 +18,6 @@ The summer of 2013 I and my friends Cory Babiak, Taylor Jenkins, and Jose Pauig 
 
 *Start of the trail - Elmira, PEI*
 
-
 ## Blog Post Index
 
 Click on one of the links below to jump to a specific section:
@@ -30,15 +25,12 @@ Click on one of the links below to jump to a specific section:
 - [Video](#video)
 - [Trip Route](#route)
 - [Gear and Equipment](#gear)
-- [Other Resources](#-resources)
+- [Other Resources](#resources)
 
-{: #video }
 ## Video
 
 {{< youtube nTwPhkz1x_c >}}
 
-
-{: #route }
 ## Route
 
 ![route](https://i.imgur.com/ktUMIvJ.png)
@@ -57,7 +49,6 @@ The scenery also does get better the closer you get to Elmira. You finally start
 
 After experiencing the confederation trail and running 280km I think its safe to say I would never do it again. I don't regret going on the trip, as it felt amazing to finish and we raised money for a good cause.  But the toll it takes on your body is very hard to deal with, especially compared to cycling. My advice for anyone looking for a fun relaxing trip would be to bike the trail, and if your looking for a gruelling challenge to run the trail.
 
-{: #gear}
 ## Gear
 
 Luckily for us we were able to use much of the same gear from our cycling trip across Canada. Once again we used the Surly Long Haul Trucker to carry all of our gear, as well as the side bags we had bought earlier. On top of that we used a 4 man tent, myself, Jose, and Taylor each had sleeping bags of different sizes, and Cory only brought a single sheet to sleep with. The bike was extremely hard to manoeuvre as we probably had 70+ lbs of gear and food on there. 

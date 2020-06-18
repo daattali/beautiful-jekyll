@@ -1,16 +1,12 @@
-+++
-title = "The Best Great Lake Surfing Videos"
-date = "2019-07-17"
-categories = ["outdoors"]
-tags = ["surfing"]
-author = "Sam Edwardes"
-description = ""
-featured = ""
-featuredalt = "https://i.imgur.com/Pxrgm1T.png"
-featuredpath = "date"
-linktitle = ""
-type = "post"
-+++
+---
+title: "The Best Great Lake Surfing Videos"
+date: "2019-07-17"
+categories: ["outdoors"]
+tags: ["surfing"]
+author: "Sam Edwardes"
+featuredpath: "https://i.imgur.com/Pxrgm1T.png"
+type: "post"
+---
 
 Here are a handful of videos that inspired me to get out there, buy a surfboard and surf the Great Lakes.
 

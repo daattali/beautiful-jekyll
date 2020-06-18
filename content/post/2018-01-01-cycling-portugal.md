@@ -1,16 +1,12 @@
-+++
-author = "Sam Edwardes"
-categories = ["outdoors"]
-tags = ["cycling"]
-date = "2018-01-01"
-description = ""
-featured = "https://i.imgur.com/1UfEY2c.jpg"
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-title = "Cycling Portugal"
-type = "post"
-+++
+---
+title: "Cycling Portugal"
+author: "Sam Edwardes"
+categories: ["outdoors"]
+tags: ["cycling"]
+date: "2018-01-01"
+featuredpath: "https://i.imgur.com/1UfEY2c.jpg"
+type: "post"
+---
 
 While studying abroad in Istanbul I took my semester break to travel to Portugal and cycle from Lisbon to Faro. The goal of the trip was to really enjoy the nature. I wanted it to be slow paced and relaxing. I wanted to take many stops, and enjoy all the sights and sounds. When I cycled across Canada there was no stopping to smell the roses. We were really determined to get across the country in 50 days, so we missed a lot of cool sights along the way for the sake of time.
 
@@ -23,11 +19,9 @@ I found it very difficult to try and force myself to slow down and stop. I think
 Click on one of the links below to jump to a specific section:
 
 - [Video](#video)
-- [Trip Route](#route)
-- [Gear and Equipment](#gear)
+- [Trip Route](#trip-route)
+- [Gear and Equipment](#gear-and-equipment)
 
-
-{: #video }
 ## Video
 
 Scroll past the video and pictures below to read more about the trip.
@@ -38,7 +32,6 @@ Scroll past the video and pictures below to read more about the trip.
 
 ![highway and bridge](https://i.imgur.com/1kdOSq6.jpg)
 
-{: #route }
 ### Trip Route
 
 | Day | Start                      | End                       | KM     | Time | Average Speed (km/hr) | Max Speed (km/hr)         |
@@ -62,7 +55,6 @@ There is also a problem of not many ideal camping spots. While there are lots of
 
 ![sunset camping](https://i.imgur.com/TUpwBtb.jpg)
 
-{: #gear}
 ### Gear and Equipment
 
 ![bike at ferry](https://i.imgur.com/YVpCn9o.jpg)

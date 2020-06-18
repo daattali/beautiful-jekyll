@@ -1,16 +1,11 @@
-+++
-title = "How to Deploy a Containerized Python Dash App to Heroku"
-date = "2019-11-15"
-categories = ["data-science"]
-tags = ["viz", "python", "dashboards"]
-author = "Sam Edwardes"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-type = "post"
-+++
+---
+title: "How to Deploy a Containerized Python Dash App to Heroku"
+date: "2019-11-15"
+categories: ["data-science"]
+tags: ["viz", "python", "dashboards"]
+author: "Sam Edwardes"
+type: "post"
+---
 
 I love using Plotly to build interactive visualizations. The syntax is very similar across R and Python, and plots looks great.
 
@@ -55,7 +50,7 @@ Create a new directory in your computer and create the following file structure:
 Create your dash app. See [app.py](app.py) for complete details. A few important things to note:
 
 ```python
-port = int(os.environ.get("PORT", 5000))
+port: int(os.environ.get("PORT", 5000))
 ```
 
 You must use the above code for Heroku to find the correct port. If not, you may get:
@@ -139,7 +134,6 @@ You should now be able to visit your app and see it in action. You can visit min
 
 [https://dash-heroku-cookie-cutter.herokuapp.com/](https://dash-heroku-cookie-cutter.herokuapp.com/)
 
-
 ## Using Containers vs. Virtual Environments
 
 There are two ways I have deployed apps to Heroku:
@@ -148,6 +142,6 @@ There are two ways I have deployed apps to Heroku:
 
 Overall I would recommend using the container process. I found even with using virtual environments there were many times were the app would run locally, but then would not run when I push to Heroku. Additionally, as my virtual environment grew in size Heroku began rejecting it because it was over 500 MB. With containers I don't believe this limit exists.
 
-
 ## Helpful links:
+
 - [Containerize your Python Flask using Docker and deploy it onto Heroku](https://medium.com/@ksashok/containerise-your-python-flask-using-docker-and-deploy-it-onto-heroku-a0b48d025e43)

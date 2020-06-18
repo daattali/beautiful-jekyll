@@ -1,16 +1,11 @@
-+++
-title = "How to Open Jupyter Notebooks with a Double Click (Mac OS)"
-date = "2020-01-31"
-categories = ["data-science"]
-author = "Sam Edwardes"
-tags = [""]
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-type = "post"
-+++
+---
+title: "How to Open Jupyter Notebooks with a Double Click (Mac OS)"
+date: "2020-01-31"
+categories: ["data-science"]
+author: "Sam Edwardes"
+tags: ["jupyter"]
+type: "post"
+---
 
 ### Background
 

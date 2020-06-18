@@ -1,16 +1,12 @@
-+++
-author = "Sam Edwardes"
-categories = ["outdoors"]
-tags = ["cycling"]
-date = "2015-06-27"
-description = ""
-featured = "https://i.imgur.com/RWYC4YE.jpg"
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-title = "Cycling from Kingston to Toronto"
-type = "post"
-+++
+---
+title: "Cycling from Kingston to Toronto"
+author: "Sam Edwardes"
+categories: ["outdoors"]
+tags: ["cycling"]
+date: "2015-06-27"
+featuredpath: "https://i.imgur.com/RWYC4YE.jpg"
+type: "post"
+---
 
 After 4 years of school at Queen's University I was at last done. I wrote my final exam, packed my things, and the next morning departed on a bike ride from Kingston to Toronto with my friend Sam I have known since our first year together at Queen's. The trip was more or less a spur of the moment adventure. We planned the idea several weeks before leaving, and only came up with a rough estimate of where we would be each day.
 

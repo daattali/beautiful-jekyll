@@ -1,16 +1,11 @@
-+++
-author = "Sam Edwardes"
-categories = ["data-science"]
-tags = ["command-line"]
-date = "2020-02-08"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-title = "How to Open GitHub.com Repo from the Command Line"
-type = "post"
-+++
+---
+title: "How to Open GitHub.com Repo from the Command Line"
+author: "Sam Edwardes"
+categories: ["data-science"]
+tags: ["command-line"]
+date: "2020-02-08"
+type: "post"
+---
 
 During my Masters of Data Science I was often working on many GitHub repos at the same time. Most of our homework was graded on GitHub.com, so it was important to ensure that after pushing my local repo to GitHub.com that everything rendered correctly.
 

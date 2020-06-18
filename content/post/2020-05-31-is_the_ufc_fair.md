@@ -1,16 +1,11 @@
-+++
-author = "Sam Edwardes"
-categories = ["data-science"]
-tags = ["sports"]
-date = "2020-05-31"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-title = "Is UFC Judging Fair?"
-type = "post"
-+++
+---
+title: "Is UFC Judging Fair?"
+author: "Sam Edwardes"
+categories: ["data-science"]
+tags: ["sports"]
+date: "2020-05-31"
+type: "post"
+---
 
 When a UFC match ends with a knock-out or submission there is never any
 doubt who the better fighter was. But only 54% of fights end with a

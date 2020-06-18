@@ -1,16 +1,12 @@
-+++
-title = "Cycle Touring the BC Coast"
-date = "2019-08-31"
-categories = ["outdoors"]
-tags = ["cycling", "camping"]
-author = "Sam Edwardes"
-description = ""
-featured = "https://i.imgur.com/J1WCO79.jpg"
-featuredalt = ""
-featuredpath = "date"
-linktitle = ""
-type = "post"
-+++
+---
+title: "Cycle Touring the BC Coast"
+date: "2019-08-31"
+categories: ["outdoors"]
+tags: ["cycling", "camping"]
+author: "Sam Edwardes"
+featuredpath: "https://i.imgur.com/J1WCO79.jpg"
+type: "post"
+---
 
 With a few spare days between finishing work and starting a masters program at UBC I was keen to experience some adventure before going back to school. Since moving to Vancouver 1 year ago, I had been imagining some of the cycle touring trips I may do. BC's West coast holds so many potential options.
 
@@ -38,14 +34,11 @@ Click on one of the links below to jump to a specific section:
 - [Route Details](#route)
 - [Gear](#gear)
 
-{: #video }
 ## Video
 
 {{< youtube rRCjnmArToI >}}
 
-{: #trip }
 ## Trip Summary
-
 
 ### Day 1
 
@@ -116,7 +109,6 @@ From Sechelt to the Langdale ferry terminal was the worst stretch of the trip fo
 
 After crossing from Langdale back to Horseshoe Bay, I followed the same route home sticking to Marine Drive. This time with very sore and tired legs.
 
-{: #route }
 ### Route Details
 
 Overall I was very happy with the route I chose and would recommend the same route to others. I would consider possibly adding another day or two onto the trip to decrease the daily saddle time and increase time to relax and enjoy.
@@ -163,7 +155,6 @@ Overall I was very happy with the route I chose and would recommend the same rou
 - Took the ferry from Langdale back to Horseshoe Bay.
 - Cycled back home to Kitsilano via Marine Drive.
 
-{: #gear }
 ### Gear
 
 I had way more gear than required for this trip... But for me the gear is half the fun. 

@@ -1,14 +1,11 @@
-+++
-author = "Sam Edwardes"
-categories = ["data-science"]
-tags = ["environment"]
-date = "2020-06-08"
-description = ""
-featuredpath = "date"
-linktitle = ""
-title = "The Complete Data Science Setup (macOS)"
-type = "post"
-+++
+---
+title: "The Complete Data Science Setup (macOS)"
+author: "Sam Edwardes"
+categories: ["data-science"]
+tags: ["environment"]
+date: "2020-06-08"
+type: "post"
+---
 
 One of the funnest (and most frustrating) parts of data science is the vast array of tools available to us. It can be overwhelming where to start. Every now and then I like to completely wipe my computer clean, and then reinstall everything from scratch. This helps clean up my computer, and make sure everything is running smoothly.
 
