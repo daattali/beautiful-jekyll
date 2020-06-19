@@ -15,8 +15,8 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 ### Python
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+- [Practical Python Programming](https://github.com/dabeaz-course/practical-python/blob/main/README.md)
 - [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/learn/python), from U. Michigan (Coursera)
-- [DataCamp](https://www.datacamp.com), a variety of mini-courses such as [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036), Udacity
 - [Python Programming: A Concise Introduction](https://www.coursera.org/learn/python-programming-introduction), from Wesleyan U. (Coursera)
 - [Introduction to Data Science in Python](https://www.coursera.org/learn/python-data-analysis), from U. Michigan (Coursera)
