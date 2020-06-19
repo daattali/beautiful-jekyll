@@ -14,6 +14,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 
 
 ### Python
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [Programming for Everybody (Getting Started with Python)](https://www.coursera.org/learn/python), from U. Michigan (Coursera)
 - [DataCamp](https://www.datacamp.com), a variety of mini-courses such as [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
 - [Programming Foundations with Python](https://www.udacity.com/course/programming-foundations-with-python--ud036), Udacity
@@ -22,8 +23,8 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Principles of Computing (Part 1)](https://www.coursera.org/learn/principles-of-computing-1), from Rice U. (Coursera)
 
 ### R
+- [R for Data Science](https://r4ds.had.co.nz/)
 - [R Programming](https://www.coursera.org/learn/r-programming), from Johns Hopkins U. (Courera)
-- [DataCamp](https://www.datacamp.com), a variety of mini-courses such as [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
 - [Introduction to R for Data Science](https://www.edx.org/course/introduction-r-data-science-microsoft-dat204x-2), from Microsoft (edX)
 - [Explore Statistics with R](https://www.edx.org/course/explore-statistics-r-kix-kiexplorx-0), from Karolinska Institutet (edX)
 
@@ -50,3 +51,4 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 ### General
 - A variety of [free O'Reilly Ebooks on data science](http://www.oreilly.com/data/free/archive.html)
 - A list of data science textbooks, curated by an MDS alum, is available [here](https://www.notion.so/virtuallibrary/Textbook-References-e8afb919d3454759a731bda6e06a442d).
+- [Dataquest](https://www.dataquest.io/)
