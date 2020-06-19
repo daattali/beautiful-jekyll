@@ -5,6 +5,27 @@ subtitle: For the MDS Capstone course
 
 ---
 
+2020:
+
+- [aDolus](https://www.adolus.com/): _Unearthing Hidden Vulnerabilities in Mission Critical Software_
+- [Analytika](http://www.analytika.ca/): _Smart Agriculture_
+- [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Text Analytics: Quantifying the Responses to Open-Ended Survey Questions_
+- [BGC Engineering](https://bgcengineering.ca/): _Automated Tailings Dam Detection from Satellite Data_
+- [BGC Engineering](https://bgcengineering.ca/): _Data Driven Flood Forecasting_
+- [Biba Ventures](https://www.playbiba.com/): _Using Machine Learning to Predict Playground Usage Across the Continent_
+- [The Deetken Group](https://deetken.com/): _Forecasting the Evolution of Vancouver's Business Landscape_ 
+- [E-Comm 911](https://www.ecomm911.ca/): _Natural language processing to help save lives and protect property_
+- [Glentel](http://www.glentel.com/home): _Making sense of people data_
+- [GoldSpot Discoveries](https://goldspot.ca/): _Core Photo Analysis_
+- [MDA](https://mdacorporation.com/): _Image Captioning of Overhead Earth Observation Imagery_
+- [Merchant Growth](https://www.merchantgrowth.com/): _Merchant Score: Intelligent Credit Decisioning For Risk Management_
+- [PayByPhone](https://www.paybyphone.com/): _Crowdsourced parking locations_
+- [Riversol Skincare Solutions](https://www.riversol.com/): _E-commerce domination in highly competitive markets driven by data science_
+- Seahorse Strategies: _Seahorse Momentum Indicator_
+- [TransLink](https://www.translink.ca/): _Vision over Transit Incidents & Claims_
+- [TransLink](https://www.translink.ca/): _Understanding Bus Delay in Metro Vancouver_
+- [TransLink](https://www.translink.ca/): _Optimizing Transit Stops_
+
 2019:
 
 - [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Quantifying the Responses to Open-Ended Survey Questions_
