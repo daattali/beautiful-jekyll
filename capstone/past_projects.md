@@ -9,6 +9,7 @@ subtitle: For the MDS Capstone course
 
 - [aDolus](https://www.adolus.com/): _Unearthing Hidden Vulnerabilities in Mission Critical Software_
 - [Analytika](http://www.analytika.ca/): _Smart Agriculture_
+- [Analytika](http://www.analytika.ca/): _Wells Timelines_
 - [BC Stats](http://www2.gov.bc.ca/gov/content/data/about-data-management/bc-stats): _Text Analytics: Quantifying the Responses to Open-Ended Survey Questions_
 - [BGC Engineering](https://bgcengineering.ca/): _Automated Tailings Dam Detection from Satellite Data_
 - [BGC Engineering](https://bgcengineering.ca/): _Data Driven Flood Forecasting_
