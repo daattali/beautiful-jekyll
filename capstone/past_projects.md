@@ -20,6 +20,8 @@ subtitle: For the MDS Capstone course
 - [MDA](https://mdacorporation.com/): _Image Captioning of Overhead Earth Observation Imagery_
 - [Merchant Growth](https://www.merchantgrowth.com/): _Merchant Score: Intelligent Credit Decisioning For Risk Management_
 - [PayByPhone](https://www.paybyphone.com/): _Crowdsourced parking locations_
+- [Realtor.com](https://www.realtor.com/): _Photo-realistic Neighborhood Image Synthesis_
+- Seahorse Strategies: _Predicting the Stock Market_
 - [Riversol Skincare Solutions](https://www.riversol.com/): _E-commerce domination in highly competitive markets driven by data science_
 - Seahorse Strategies: _Seahorse Momentum Indicator_
 - [TransLink](https://www.translink.ca/): _Vision over Transit Incidents & Claims_
