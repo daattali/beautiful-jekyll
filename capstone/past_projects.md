@@ -25,6 +25,10 @@ subtitle: For the MDS Capstone course
 - [TransLink](https://www.translink.ca/): _Vision over Transit Incidents & Claims_
 - [TransLink](https://www.translink.ca/): _Understanding Bus Delay in Metro Vancouver_
 - [TransLink](https://www.translink.ca/): _Optimizing Transit Stops_
+- [UrbanLogiq](https://www.urbanlogiq.com/): _Analysis of Connected Vehicle Driving Behaviour as a Predictor of Accidents_
+- [UrbanLogiq](https://www.urbanlogiq.com/): _Contextual analysis of amenity gaps in at-risk communities_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Modelling the Physical Performances of the Vancouver Whitecaps_
+- [Vancouver Whitecaps Football Club](https://www.whitecapsfc.com/): _Understanding Players' Offensive and Defensive Performance in Major League Soccer_
 
 2019:
 
