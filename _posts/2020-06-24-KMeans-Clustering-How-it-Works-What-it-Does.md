@@ -13,3 +13,8 @@ Lets say you're given these two graphs:
 |  X  |  Y  |
 | --- | --- |
 | ![X value graph](https://i.imgur.com/3I5bBqi.png) | ![Y value graph](https://i.imgur.com/z6gb7ux.png) |
+
+At first glance, it's not that clear what the data is saying. There's two distinct groups in both the X and Y values; for the X values it almost seems like there's three.
+
+A starter solution would be to plot the points as a scatter plot:
+![Scatter Plot](https://i.imgur.com/zmNwC3S.png)
