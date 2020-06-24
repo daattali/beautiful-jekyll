@@ -540,7 +540,13 @@ footer .footer-custom-content {
     margin-top: 0.625rem;
   }
 }
+/* Custom CSS for blog post*/
+.blog-post p{
+text-align:justify;
+}
 
+
+/*  */
 @media (max-width: 500px) {
   .post-image, .post-image img {
     height: 6.25rem;
