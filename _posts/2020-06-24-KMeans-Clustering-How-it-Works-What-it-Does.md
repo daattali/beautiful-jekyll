@@ -10,5 +10,6 @@ KMeans Clustering is a clustering algorithm, which is to say it takes points of 
 ### An Example:
 
 Lets say you're given these two graphs:
-![X value graph](https://i.imgur.com/3I5bBqi.png)
-![Y value graph](https://i.imgur.com/z6gb7ux.png)
+|  X  |  Y  |
+| --- | --- |
+| ![X value graph](https://i.imgur.com/3I5bBqi.png) | ![Y value graph](https://i.imgur.com/z6gb7ux.png) |
