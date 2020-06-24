@@ -509,7 +509,8 @@ footer .footer-custom-content {
 
 /* --- Tags --- */
 
-.blog-tags {
+.
+-tags {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #999;
   font-size: 0.9375rem;
@@ -520,12 +521,13 @@ footer .footer-custom-content {
   color: {{ site.link-col | default: "#008AFF" }};
   text-decoration: none;
   padding: 0 0.3125rem;
+  background-color: #EEE;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
   color: {{ site.hover-col | default: "#0085A1" }};
-  background-color: #EEE;
+  background-color: #c8dbfa;
 }
 
 .post-preview .blog-tags {
