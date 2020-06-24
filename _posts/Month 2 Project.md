@@ -6,7 +6,7 @@ subtitle: Adventures in Data Science and Modeling
 gh-repo: Witterone/Benjamin_Witter.github.io
 gh-badge: [star, fork, follow]
 tags: [Datascience, projects, Internet, ISP, NYC]
-cover-img: assets/img/
+cover-img: assets/img/nyc-borough-map.png
 ---
 
 
