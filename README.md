@@ -1,4 +1,4 @@
-# Beautiful Jekyll
+# alphablogs.github.io
 
 [![Beautiful Jekyll CI](https://github.com/daattali/beautiful-jekyll/workflows/Beautiful%20Jekyll%20CI/badge.svg)](https://github.com/daattali/beautiful-jekyll/actions?query=branch%3Amaster+event%3Apush+workflow%3A%22Beautiful+Jekyll+CI%22)
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
@@ -61,7 +61,7 @@ Scroll down to see the steps involved, but here is a 40-second video just as a r
 
 Fork this project by clicking the __*Fork*__ button at the top right corner of this page. Forking means that you now copied this entire project and all the files into your account.
 
-### 2. Rename the project to `<yourusername>.github.io`
+### 2. Rename the project to `<alphablogs>.github.io`
 
 Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes. Check out the [FAQ](#faq-and-support) if you want to use a different project name. 
 
