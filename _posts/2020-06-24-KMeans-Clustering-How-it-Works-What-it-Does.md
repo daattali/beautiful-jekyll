@@ -18,3 +18,9 @@ At first glance, it's not that clear what the data is saying. There's two distin
 
 A starter solution would be to plot the points as a scatter plot:
 ![Scatter Plot](https://i.imgur.com/zmNwC3S.png)
+
+Now the data is a bit more visible, and it's obvious that there are two distinct groups, but we can use a clustering algorithm like KMeans to see what it comes up with for each number of clusters. For the sake of our data, lets say that the answer lies somewhere between 1 and 7, and see what results KMeans gives us for each number of clusters:
+
+![KMeans Cluster Animation](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/clusters.gif)
+
+It looks like KMeans starts making stuff up around five clusters, when it splits the left group of the top right cluster in two, and then starts splitting up the bottom left cluster, so it looks like we can definitively say that there are four distinct groups of points.
