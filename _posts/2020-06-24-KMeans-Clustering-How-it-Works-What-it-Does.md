@@ -31,4 +31,74 @@ It looks like KMeans starts making stuff up around four clusters, and really sta
 
 ![Example clustering iteration animation](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/440px-K-means_convergence.gif)
 
+KMeans starts by picking k random points, called centroids, within the scope of the dataset, where k is the number of clusters you want KMeans to look for. From there, it groups the points of the dataset by which centroid it is nearest to. From there, it gets the mean point of each group - essentially the average, and designates those points as the new centroids, and then runs again. KMeans will do this as many times as it needs to until the model "converges", which is to say that the centroids don't change when the model tries to update them. In the case of the Iris dataset, it looks something like this:
+
+![Iris iteration animation](https://raw.githubusercontent.com/Lilchoto3/lilchoto3.github.io/master/img/iterations.gif)
+
+Notice how as KMeans iterates, cluster 1 slowly creeps up cluster 0 as the centroids for each are updated; cluster 2 probably doesn't change at all due to its remoteness from the rest of the data, but maybe some points shift on the two dimensions not shown on the graph.
+
+## How it works (my code)
+
+KMeans has two essential functions `fit()` and `predict()`. `fit()` is the function that sets up k number of centroids to fit with the data set given, and `predict()` is the function that takes the data set and returns a list of labels matching those data points with what cluster they ended up in.
+
+### fit()
+
+`fit()` starts by initializing k centroids, which for my code is based on a variable set during initialization called `n_clusters`. While standard KMeans procedures call for setting the initial centroids to be random points within the data's scope of values for each dimension, my code just grabs the first k number of points and uses those:
+
+```python
+sample_idx = [x for x in range(self.n_clusters)]
+self.centroids_ = [data[x] for x in sample_idx]
+```
+
+From there, it enters the main loop where the iteration to converge the model takes place:
+
+```python
+iter_count = 0
+# loop through iterating centroids; stop if max iterations reached
+while iter_count < self.max_iter:
+    prev_labels = self.labels_
+
+    # reset labels and calculate new ones
+    self.labels_ = []
+    for row in data:
+        dists = []
+        for c in self.centroids_:
+            dist = float(0)
+            # for each dimension, get the absolute value
+            # of the distance and calculate total distance
+            # via pythagorian theorem
+            for i in range(len(row)):
+                dist += abs(row[i]-c[i]) ** 2
+            dist = math.sqrt(dist)
+            dists.append(dist)
+
+        # go through each distance and get the smallest
+        for i in range(self.n_clusters):
+            if dists[i] == min(dists):
+               self.labels_.append(i)
+
+    # stop early if the model's converged
+    if self.labels_ == prev_labels:
+        break
+
+    # calculate new centroids
+    pointlist = [[] for x in self.centroids_]
+    self.centroids_ = []
+    for i in range(len(data)):
+        pointlist[self.labels_[i]].append(data[i])
+    for k in range(self.n_clusters):
+        means = [0 for x in range(len(pointlist[k][0]))]
+        # add up distances for each dim
+        for row in pointlist[k]:
+            for n in range(len(row)):
+                means[n] += row[n]
+        # divide by length of pointlist for each dim
+        for n in range(len(pointlist[k][0])):
+            means[n] = means[n] / len(pointlist[k])
+        # append new centroid
+        self.centroids_.append(means)
+
+    iter_count += 1
+```
+
 
