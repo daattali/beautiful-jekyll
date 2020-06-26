@@ -132,14 +132,18 @@ Obviously, this problem has been solved before; writing a KMeans algorithm is no
 
 | My Implementation | SKLearn's Implementation |
 | --- | --- |
-| ![](https://i.imgur.com/ztsnlPr.png) | ![](https://i.imgur.com/iGVJoEl.png) |
+| ![](https://i.imgur.com/TAVlbZ9.png) | ![](https://i.imgur.com/iGVJoEl.png) |
 
 Aside from the different label colors which probably arose from SKLearn's algorithm starting with random points, as well as one dot being a different color, our graphs are exactly the same, meaning my implementation is spot-on with what KMeans is designed to do.
 
 ### Resources
 
 SKLearn KMeans implementation: [link](https://colab.research.google.com/drive/1ke9_25P80rFIw40LkU1y0Wkvpgp0U6TT?usp=sharing)
+
 My KMeans implementation: [link](https://github.com/Lilchoto3/cs-build-week-unit-5/blob/master/testing.ipynb)
+
 My KMeans source code: [link](https://github.com/Lilchoto3/cs-build-week-unit-5)
+
 SKLearn's KMeans doc: [link](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+
 SKLearn's KMeans source code: [link](https://github.com/scikit-learn/scikit-learn/blob/fd237278e/sklearn/cluster/_kmeans.py#L745)
