@@ -12,9 +12,10 @@ KMeans Clustering is a clustering algorithm, which is to say it takes points of 
 ### An Example, the UCI Iris dataset:
 
 Lets say you're given these two graphs and told to find how many classes are in the data based on them:
+
 | Petal Width | Petal Length |
-| ----------- | ------------ |
-| ![X value graph](https://i.imgur.com/hjkztR5.png) | ![Y value graph](https://i.imgur.com/7iu1dmV.png) |
+| --- | --- |
+| ![](https://i.imgur.com/hjkztR5.png) | ![](https://i.imgur.com/7iu1dmV.png) |
 
 At first glance, it's not that clear what the data is saying. It's obvious that there's two distinct groups in both the width and length values, but one portion seems to be a larger, wider blob that's more spread out. Let's try adding these two dimensions together.
 
