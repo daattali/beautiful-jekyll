@@ -101,4 +101,29 @@ while iter_count < self.max_iter:
     iter_count += 1
 ```
 
+## predict()
 
+`predict()` is essentially just a repeat of the second half of `fit()`, generating a list of labels based on the centroids stored in KMeans that were created by `fit()`
+
+```python
+# initialize list of labels to be returned
+labels = []
+for row in data:
+    dists = []
+    for c in self.centroids_:
+        dist = float(0)
+        # get absolute value of distance
+        # on each dimension
+        for i in range(len(row)):
+            dist += abs(row[i]-c[i]) ** 2
+        dist = math.sqrt(dist)
+        dists.append(dist)
+
+    # go through each distance and get the smallest
+    for i in range(self.n_clusters):
+        if dists[i] == min(dists):
+            labels.append(i)
+return labels
+```
+
+## How it works (compared to Sci-kit
