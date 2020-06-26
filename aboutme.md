@@ -29,7 +29,7 @@ subtitle:
 - Data visualization with matplotlib, seaborn, plotly
 - Build machine learning model with Sklearn, Keras, nltk, ...
 - Crawl data and build automation tool with selenium, beautiful soup, requset, request-html,...
-- Build basic website with Flask, Django
+- Build website, restful-Api with Flask, Django
     
 **Machine learning:**
 - Proficient in building credit scoring model and implementing in business.
