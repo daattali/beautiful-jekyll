@@ -1,5 +1,5 @@
 ---
-title: KMeans Clustering: How it Works, What it Does
+title: KMeans Clustering, How it Works, What it Does
 subtitle: How KMeans clustering works code-wise and otherwise.
 ---
 
