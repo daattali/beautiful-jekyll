@@ -39,7 +39,7 @@ Notice how as KMeans iterates, cluster 1 slowly creeps up cluster 0 as the centr
 
 ## How it works (my code)
 
-KMeans has two essential functions `fit()` and `predict()`. `fit()` is the function that sets up k number of centroids to fit with the data set given, and `predict()` is the function that takes the data set and returns a list of labels matching those data points with what cluster they ended up in.
+KMeans has two essential functions `fit()` and `predict()`. `fit()` is the function that sets up k number of centroids to fit with the data set given, and `predict()` is the function that takes the data set and returns a list of labels matching those data points with what cluster they ended up in. Outside of the `math` module built into Python, which I use for math.sqrt(), there are no libraries that need to be installed to run my code.
 
 ### fit()
 
@@ -126,4 +126,20 @@ for row in data:
 return labels
 ```
 
-## How it works (compared to Sci-kit
+## How it works (compared to sklearn.cluster.KMeans)
+
+Obviously, this problem has been solved before; writing a KMeans algorithm is nothing new and there are probably loads of implementations of the algorithm, the most popular of which, for Python, is Sci-Kit Learn's implementation of KMeans. Comparing my code to SKLearn's wouldn't do it any justice, as the point of me going out of my way to write a KMeans algorithm from scratch was to show how it works and how I went about doing so. A better test of my code against SKLearn's would be to compare two graphs of the same data, one run through each algoritm, to show the difference in results.
+
+| My Implementation | SKLearn's Implementation |
+| --- | --- |
+| ![](https://i.imgur.com/ztsnlPr.png) | ![](https://i.imgur.com/iGVJoEl.png) |
+
+Aside from the different label colors which probably arose from SKLearn's algorithm starting with random points, as well as one dot being a different color, our graphs are exactly the same, meaning my implementation is spot-on with what KMeans is designed to do.
+
+### Resources
+
+SKLearn KMeans implementation: [link](https://colab.research.google.com/drive/1ke9_25P80rFIw40LkU1y0Wkvpgp0U6TT?usp=sharing)
+My KMeans implementation: [link](https://github.com/Lilchoto3/cs-build-week-unit-5/blob/master/testing.ipynb)
+My KMeans source code: [link](https://github.com/Lilchoto3/cs-build-week-unit-5)
+SKLearn's KMeans doc: [link](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+SKLearn's KMeans source code: [link](https://github.com/scikit-learn/scikit-learn/blob/fd237278e/sklearn/cluster/_kmeans.py#L745)
