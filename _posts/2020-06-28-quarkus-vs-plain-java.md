@@ -35,7 +35,7 @@ In terms of memory, it's fair to note that Quarkus (172mb) required more memory 
 
 Yeah, I know, probably I should try making 1K requests and take the average or probably my code is not fair with one of the subjects under test, I'm completely open to suggestions, but what I can guarantee is that I did this 3 times (destroying all the infrastructure and creating it again) and the results were similar.
 
-Other point to take in consideration is the size of the package uploaded to AWS. We can appreciate that in this case Quarkus is heavier than Plain Java 8.
+Another point to take into consideration is the size of the package uploaded to AWS. We can appreciate that in this case, Quarkus is heavier than Plain Java 8.
 
 ![PackageSizeOfLambdaFunctions](/assets/img/aws-lambdas-details.png)
 
