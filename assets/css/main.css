@@ -925,7 +925,7 @@ pre {
   font-size: 1rem;
 }
 /* custom css */
-.page-heading:hover{
+.page-heading{
 background-color:red;
 }
 
