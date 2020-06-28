@@ -64,7 +64,13 @@
   {% endif %}
 
 
+  {% if page.id %}
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="{{ site.author }}">
+  <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% else %}
   <meta property="og:type" content="website">
+  {% endif %}
 
   {% if page.id %}
   <meta property="og:url" content="{{ page.url | absolute_url }}">
