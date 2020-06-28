@@ -44,3 +44,8 @@ Another point to take into consideration is the size of the package uploaded to 
 ![PackageSizeOfLambdaFunctions](/assets/img/aws-lambdas-details.png)
 
 I know there is a feature in Quarkus that allows us to produce a native app, which could have a faster cold start, but so far I have not been able to get it to work with AWS Lambda. When I make it work I will publish my findings.
+
+### Repositories
+
+[Quarkus](https://github.com/JosemyDuarte/quarkus-terraform-lambda-demo/tree/dynamo-terraform)
+[Plain Java 8](https://github.com/JosemyDuarte/poc-plain-java-lambda-terraform/tree/dynamo-terraform)
