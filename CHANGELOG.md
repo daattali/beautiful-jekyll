@@ -3,6 +3,7 @@
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
 - Add social network link: Mastodon (#646)
 - Add support for sharing pages on new social network: VK (#657)
+- Use Open Graph type 'article' for blog posts (#669)
 
 ## v3.0.0 2020-05-07
 
