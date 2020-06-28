@@ -9,6 +9,8 @@ share-img: /assets/img/quarkus_logo.png
 tags: [serverless, code, aws, benchmark]
 ---
 
+## TL;DR
+
 In my current job I've been using [AWS Lambda](https://aws.amazon.com/es/lambda/) with plain Java 8, and to be honest, the first time this didn't sound too good for me. I mean, don't get me wrong, I'm mainly a Java Developer, but from previous experiences, I know how slow a Spring Boot app can be to start and the fact that serverless functions have what it's known as ["Cold Start"](https://en.wikipedia.org/wiki/Cold_start_(computing)) didn't make too much sense for me.
 
 However, they didn't have too many problems with cold starts because first, they don't use SpringBoot and second for those services that it is unaffordable a cold start there is something called "Warm Up" which previously it was just a CRON that would make a call to your Lambda to keep it alive and avoid cold starts, but now AWS has released a new feature called ["Provisioned Capacity"](https://aws.amazon.com/blogs/compute/new-for-aws-lambda-predictable-start-up-times-with-provisioned-concurrency/) which will initialize the requested number of execution environments so they can be ready to respond to invocations.
@@ -16,6 +18,8 @@ However, they didn't have too many problems with cold starts because first, they
 On the other hand, not so long ago I saw a demonstration given by a RedHat employee of their new project [Quarkus] (https://quarkus.io/). It showed how incredibly fast it was to start a Java app and how well it works with Kubernetes, as Quarkus was meant to make Java more cloud-friendly.
 
 Just a few days ago, my brain decided to relate AWS Lambda with plain Java (as in my current job) and Quarkus, and I was wondering what the results would be in terms of cold start, memory, and speed for the following requests. So this is my experiment, probably not the most scientifically accurate, but I hope it gives you an idea of ​​the performance of these technologies with AWS Lambda.
+
+## Experiment 
 
 I developed two simple projects: one with Java 8 with the default DynamoDB client and the other with Quarkus and the Quarkus DynamoDB client. Both projects will simply print the received request, query an existing DynamoDB item, and return it. At the end of the post, you will find the repositories if you want to play around with them (note that the code is not beautiful, it was developed just for the sake of this experiment). And these are my findings:
 
