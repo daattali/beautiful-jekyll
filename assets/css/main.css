@@ -924,3 +924,10 @@ pre {
   font-style: italic;
   font-size: 1rem;
 }
+/* custom css */
+.page-heading:hover{
+background-color:red;
+}
+
+
+
