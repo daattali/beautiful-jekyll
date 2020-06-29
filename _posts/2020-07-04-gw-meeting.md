@@ -19,7 +19,7 @@ Prof. Xi-Long Fan invites you to participate in the Tencent meeting
 
 ### whu-gw Group Meeting - Gang Yu Seminar
 
-Meeting time: Sat 2020/7/4 10:00-12:00 (CST)
+Meeting time: Sat 2020/7/5 10:00-12:00 (CST)
 
 Click the link to join the meeting, or add to the meeting list:
 https://meeting.tencent.com/s/Fbzoah0BUskk
@@ -39,6 +39,6 @@ Monitoring signals in the physical world usually have typical nonlinear characte
 ______________________________
 
 ## Bio
-Yu Gang, currently working at Jinan University, the main research direction is nonlinear signal processing, time-frequency analysis, has published more than 20 papers, chaired a youth fund. Representative achievements, Synchroextracting Transform, Multisynchrosqueezing Transform, are widely used and recognized in the industry.
+Yu Gang, currently working at Jinan University, the main research direction is nonlinear signal processing, time-frequency analysis, has published more than 20 papers, chaired a youth fund. Representative achievements: Synchroextracting Transform, Multisynchrosqueezing Transform, which are widely used and recognized in the industry.
 
-You're welcome to participate this Saturday morning!
+You're welcome to participate this Sunday morning!
