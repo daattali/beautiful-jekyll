@@ -81,14 +81,18 @@
   {% endif %}
 
   {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}">
+  <meta property="og:image" content="{{ page.share-img | absolute_url }}">
   {% elsif site.avatar %}
   <meta property="og:image" content="{{ site.avatar | absolute_url }}">
   {% endif %}
 
 
   <!-- Twitter summary cards -->
+  {% if page.share-img %}
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}
   <meta name="twitter:card" content="summary">
+  {% endif %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
 
@@ -109,7 +113,7 @@
   {% endif %}
 
   {% if page.share-img %}
-  <meta name="twitter:image" content="{{ page.share-img }}">
+  <meta name="twitter:image" content="{{ page.share-img | absolute_url }}">
   {% elsif site.avatar %}
   <meta name="twitter:image" content="{{ site.avatar | absolute_url }}">
   {% endif %}
