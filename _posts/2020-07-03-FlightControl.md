@@ -16,4 +16,4 @@ For unit testing we used Moq.
 
 The web application features a flight control system that shows active flights, enables adding new flight plans and shows details about each flight. Upon clicking on a flight, its path is shown on the map.
 
-![WebApplicationFlightControl](img/WebApplicationFlightControl.JPG)
+![WebApplicationFlightControl](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/WebApplicationFlightControl.JPG)
