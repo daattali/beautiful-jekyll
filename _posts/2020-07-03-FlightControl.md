@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FlightControl RESTful web application
-subtitle: A flight control web app created by Almog Lev, Eyal Golan, Sapir Deutscher and Ofir Netzer.
+subtitle: created by Almog Lev, Eyal Golan, Sapir Deutscher and Ofir Netzer.
 gh-repo: eyalgolan/FlightControl
 gh-badge: [star, fork, follow]
 tags: [C#, ASP.NET Core, Entity Framework, SQL, Javascript, JQuery, bootstrap, html, css]
