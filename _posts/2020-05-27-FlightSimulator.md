@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FlightSimulator Desktop App
-subtitle: created by: Yair Hanimov and Eyal Golan.
+subtitle: created by Yair Hanimov and Eyal Golan.
 gh-repo: eyalgolan/FlightSimulatorApp
 gh-badge: [star, fork, follow]
 tags: [C#, WPF, MVVM, multithread]
