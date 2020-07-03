@@ -18,6 +18,6 @@ The front-end was built using JavaScript, JQuery, Ajax and HTML. For the UI desi
 
 The web application features a flight control system that shows active flights, enables adding new flight plans and shows details about each flight. Upon clicking on a flight, its path is shown on the map.
 
-You can check out the git repo here: https://github.com/eyalgolan/FlightControl
+You can check out the git repo [here](https://github.com/eyalgolan/FlightControl).
 
 ![WebApplicationFlightControl](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/WebApplicationFlightControl.jpg)
