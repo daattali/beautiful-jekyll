@@ -13,4 +13,4 @@ We built our multithread application using C# and WPF with the MVVM software arc
 
 You can check out the git repo [here](https://github.com/eyalgolan/FlightSimulatorApp).
 
-![flightSimulator](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/flightSimulator.jpg?raw=true)
+![flightSimulator](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/flightSimulator.JPG?raw=true)
