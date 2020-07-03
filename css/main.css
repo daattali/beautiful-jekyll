@@ -6,6 +6,11 @@ layout: null
 
 /* --- General --- */
 
+.show {
+  display: block !important;
+  visibility: visible !important;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
