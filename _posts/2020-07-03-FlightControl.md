@@ -20,4 +20,4 @@ The web application features a flight control system that shows active flights, 
 
 You can check out the git repo here: https://github.com/eyalgolan/FlightControl
 
-![WebApplicationFlightControl](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/WebApplicationFlightControl.JPG)
+![WebApplicationFlightControl](https://github.com/eyalgolan/eyalgolan.github.io/blob/master/img/WebApplicationFlightControl.jpg)
