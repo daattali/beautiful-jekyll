@@ -25,10 +25,23 @@ layout: page
     </p>
 
     <div class="post-entry-container">
-      {% if post.thumbnail-img %}
+      {%- capture thumbnail -%}
+        {% if post.thumbnail-img %}
+          {{ post.thumbnail-img }}
+        {% elsif post.cover-img %}
+          {% if post.cover-img.first %}
+            {{ post.cover-img[0].first.first }}
+          {% else %}
+            {{ post.cover-img }}
+          {% endif %}
+        {% else %}
+        {% endif %}
+      {% endcapture %}
+      {% assign thumbnail=thumbnail | strip %}
+      {% if thumbnail != "" %}
       <div class="post-image">
         <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.thumbnail-img | relative_url }}">
+          <img src="{{ thumbnail | relative_url }}">
         </a>
       </div>
       {% endif %}
