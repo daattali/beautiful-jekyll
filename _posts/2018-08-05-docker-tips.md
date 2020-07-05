@@ -3,40 +3,40 @@ layout: post
 title: Docker tips
 subtitle: 5 dicas muito úteis para seu dia a dica com o docker.
 date: 2018-08-05 13:00:00
-image: /img/docker-tips.png
-share-img: /img/docker-tips.png
+image: /assets/img/docker-tips.png
+share-img: /assets/img/docker-tips.png
 tags: [docker, devops, dicas, ferramentas, tips, tricks]
 categories: docker dicas
 ---
 
-Você costumar subir muitos containers e tem dificuldade para realizar o gerenciamento deles? Ou então, está querendo aprender algumas dicas e truques para ficar mais expert em docker? Está no lugar certo, neste post irei descrever algumas dicas sobre containers, e como isso pode ajudar no seu dia a dia.  
+Você costumar subir muitos containers e tem dificuldade para realizar o gerenciamento deles? Ou então, está querendo aprender algumas dicas e truques para ficar mais expert em docker? Está no lugar certo, neste post irei descrever algumas dicas sobre containers, e como isso pode ajudar no seu dia a dia.
 
-Cada vez mais o docker está se tornando algo rotineiro na vida das pessoas que transformam café em código, seja ele um dev python, java, go ou o pessoal de infra que precisa deixar o ambiente imutável, seja em desenvolvimento, stage, produção , QA ... Pensando em tudo isso, escrevo essas dicas que iram ser muito úteis para todos.  
+Cada vez mais o docker está se tornando algo rotineiro na vida das pessoas que transformam café em código, seja ele um dev python, java, go ou o pessoal de infra que precisa deixar o ambiente imutável, seja em desenvolvimento, stage, produção , QA ... Pensando em tudo isso, escrevo essas dicas que iram ser muito úteis para todos.
 
-Se você caiu de paraquedas no blog, [aqui](https://adrianocanofre.github.io/tutorial/docker-basico/) eu comento alguns comandos básicos sobre docker.  
-
-
-## 1 - Cuide do seu storage  
-
-O repositório do  [docker hub](https://hub.docker.com/explore/) e extremamente grande, e contem inumeras imagens do seus mais diversos tipos, porem sempre é bom fazer uma limpeza, para resolver esse problema vai algumas dicas.  
+Se você caiu de paraquedas no blog, [aqui](https://adrianocanofre.github.io/tutorial/docker-basico/) eu comento alguns comandos básicos sobre docker.
 
 
-#### Removendo containers    
+## 1 - Cuide do seu storage
 
-Caso queira fazer uma limpa em todos os seus containers basta digitar:  
+O repositório do  [docker hub](https://hub.docker.com/explore/) e extremamente grande, e contem inumeras imagens do seus mais diversos tipos, porem sempre é bom fazer uma limpeza, para resolver esse problema vai algumas dicas.
 
- `$ docker rm $( docker ps -aq)`  
+
+#### Removendo containers
+
+Caso queira fazer uma limpa em todos os seus containers basta digitar:
+
+ `$ docker rm $( docker ps -aq)`
  > Lembre-se esse comando apaga todos os containers
 
-Caso queira, você pode optar por  salvar o container ao inicia lo com o  `docker run`.  
+Caso queira, você pode optar por  salvar o container ao inicia lo com o  `docker run`.
 
 `$docker run -it <img>  /bin/bash`
 
 assim quando você sair do container ele automaticamente será removido.
 
-#### Removendo imagens  
+#### Removendo imagens
 
-Você pode também querer fazer uma limpa em todas suas imagens, para isso basta digitar;  
+Você pode também querer fazer uma limpa em todas suas imagens, para isso basta digitar;
 
 `$ docker rmi $(docker images -q)`
 
@@ -46,23 +46,23 @@ Você pode também querer fazer uma limpa em todas suas imagens, para isso basta
 
 Não são todas as pessoas que tem uma memoria de elefante, que sabe todos os parametros passados ao iniciar o container. Para as pessoas normais que não tem uma boa memoria o docker tem um comando chamado `docker inspect` onde você pode ver o quanto de cpu e memoria tem o docker, ou foi mapeado os volumes e outras coisas bem legais, abaixo eu descrevo alguns exemplos de uso.
 
-#### Limpando o log  
+#### Limpando o log
 
-`$ echo "" > $(docker inspect --format='{{.LogPath}}' <container_id>)`
+`$ echo "" > $(docker inspect --format="{{.LogPath}}" <container_id>)`
 
-#### IP  
+#### IP
 
 `$ docker inspect -f "{{ .NetworkSettings.IPAddress }}" <container_id>`
 
-#### Log path  
+#### Log path
 
 `$ docker inspect --format='{{.LogPath}}' <container_id>`
 
-## 3 - Logs     
+## 3 - Logs
 
-Como visto anteriormente você pode limpar os logs quando ele ficar muito grande( ou limitar o tamanho do log). Porém caso queira ver os logs dos containers basta digitar:  
+Como visto anteriormente você pode limpar os logs quando ele ficar muito grande( ou limitar o tamanho do log). Porém caso queira ver os logs dos containers basta digitar:
 
-`$ docker logs <container_id>`  
+`$ docker logs <container_id>`
 
 Com esse comando, você vai conseguir ver todos os logs do container. Caso queira vocêpode acompanhar em tempo real os logs da sua aplicação, basta passar o parametro -f:
 

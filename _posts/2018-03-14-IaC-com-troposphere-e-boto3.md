@@ -3,28 +3,28 @@ layout: post
 title: IaC com Troposphere e boto3
 subtitle: Subindo uma infra na aws utilizando CloudFormation
 date: 2018-03-14 13:00:00
-image: /img/iac_icon.png
-share-img: /img/iac_icon.png
+image: /assets/img/iac_icon.png
+share-img: /assets/img/iac_icon.png
 tags: [iac, devops, infragil, ferramentas]
 categories: devops iac
 ---
 
-Hoje a criação de uma infra ágil é indispensável, pois assim aquela release que antes demorava 1 semana para ir pro ar, pode demorar alguns minutos. Neste post vamos subir uma simples configuração de infraestrutura na aws utilizando o troposphere, boto3 e o CloudFormation, onde toda a infraestrutura estar em código  ou IaC(Infra as code).  
+Hoje a criação de uma infra ágil é indispensável, pois assim aquela release que antes demorava 1 semana para ir pro ar, pode demorar alguns minutos. Neste post vamos subir uma simples configuração de infraestrutura na aws utilizando o troposphere, boto3 e o CloudFormation, onde toda a infraestrutura estar em código  ou IaC(Infra as code).
 
 ## Conhecendo as ferramentas
 
 Bom, irei detalhar brevemente cada ferramenta que foi utilizada para subir os serviços, vale também lembrar que as informações de IP, e chaves de ssh são fictícias, você precisa gerar as suas.
 
 
-### Troposphere  
+### Troposphere
 [Troposphere](https://github.com/cloudtools/troposphere) é uma ferramenta opensource, escrita em python, onde v cria um template para ser "inserido" no CloudFormation. O propio repositório do troposphere tem alguns exemplos, bem simples de como utilizar.
 
-### Boto3  
+### Boto3
 
 [Boto3](http://boto3.readthedocs.io/en/latest/index.html) é um SDK da aws para interagir entra seus scripts e os serviços da aws. Ele contem uma vasta documentação com inúmeros serviços que pode ser utilizados. Neste artigo iremos utilizar o componente [create_stack](http://boto3.readthedocs.io/en/latest/reference/services/cloudformation.html?highlight=create_stack#CloudFormation.Client.create_stack).
 
 
-### CloudFormation  
+### CloudFormation
 O [CloudFormation](https://aws.amazon.com/cloudformation/) é uma das inúmeras serviços da aws,com este serviço você consegue descrever todos os recursos da aws(vale salientar que o CloudFormation é free).
 
 
@@ -34,7 +34,7 @@ Vamos criar uma infra com um Ec2 com um security group vinculado a ele, nada mui
 
 Vale lembrar que estou utilizando o Debian 9.
 
-**1 - Criação do ambiente**  
+**1 - Criação do ambiente**
 Sempre é bom você ter ambientes isolados para seus projetos, com isso um modulo não influencia no outro. Uma boa dia é utilizar o virtualenv, assim os projetos em python ficam isolados um dos outros.
 
 ```
@@ -54,8 +54,8 @@ Com o comando `$ source venv/bin/activate` eu inicializo o virtualenv e isolo me
 Sera necessário a instalação de alguns pacotes...
 
 ```
-$ pip install awscli  
-$ pip install troposphere   
+$ pip install awscli
+$ pip install troposphere
 $ pip install boto3
 ```
 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
 Salve e execute `$ python exemplo.py` e a saída no terminal sera algo como:
 
-![exemplo](/img/troposphere1.png)
+![exemplo](/assets/img/troposphere1.png)
 
 Como podemos ver na saída do terminal o troposphere criou um template que você pode adicionar manualmente no CloudFormation, porem agora vamos editar esse aquivo e adicionar o boto3, para que ele crie essa stack no CloudFormation.
 
@@ -201,5 +201,5 @@ def delete_it(suffix, REGION):
 
 Com essa função você consegue deletar a stack no CloudFormation.
 
-[github do projeto](https://github.com/adrianocanofre/iac/tree/master/troposphere)  
+[github do projeto](https://github.com/adrianocanofre/iac/tree/master/troposphere)
 [exemplos do troposphere](https://github.com/cloudtools/troposphere/tree/master/examples)

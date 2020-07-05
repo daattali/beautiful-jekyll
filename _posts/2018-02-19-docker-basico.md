@@ -3,8 +3,8 @@ layout: post
 title: Docker básico
 subtitle: uma baleia que está mudando o modo como fizemos deploy...
 date: 2018-02-19 21:00:00
-image: /img/docker_logo.jpg
-share-img: /img/docker_logo.jpg
+image: /assets/img/docker_logo.jpg
+share-img: /assets/img/docker_logo.jpg
 tags: [tutorial, docker, dicas]
 categories: tutorial
 ---
@@ -15,7 +15,7 @@ Qual dev nunca proferiu as sabias palavras *"ahh, mas na minha maquina funciona.
 # O que é docker?
 Bom, docker é uma ferramenta *open source* que facilita(e muito) o deploy de aplicações, onde tudo que voceêaltera nos containers se "perde", apos matar o mesmo. Caso queira se aprofundar, tem um tutorial bem interessante no site da [redHat](https://www.redhat.com/pt-br/topics/containers/what-is-docker).
 
-![dockerxVms](/img/docker_vm_container.png)  
+![dockerxVms](/assets/img/docker_vm_container.png)  
 # Primeiros Passos
 
 O docker trabalha com conteiners, que é uma especie de virtualização do SO, onde nele você faz as alterações, teste entre outras coisas, e nada é alterado no seu SO.
@@ -29,7 +29,7 @@ $ curl -fsSL get.docker.com | sh
 
 Após feita a instalação verifique a versão do docker.
 
-![Docker](/img/docker_version.png)
+![Docker](/assets/img/docker_version.png)
 
 Bom, até aqui tudo facilzinho, vc instalou o docker e verificou sua versão, pois agora vamos rodas um "Hello-world"(sim, no docker tambem tem um hello world). Digite ai no seu console:
 ```
@@ -58,16 +58,16 @@ sera executado o bash do debian em modo interativo.
 
 O docker tem inumeros comandos, e pretendo no proximo post fazer um mais avançado sobre o "docker run", mas aqui segue algumas outras dicas que podem ser bem uteis.
 
-`` $ docker ps  ``  
-  Listas todos os containes em execução.  
+`` $ docker ps  ``
+  Listas todos os containes em execução.
 
-`` $ docker images ``  
-  Mostra todas as imagens que voce tem no seu computados.  
+`` $ docker images ``
+  Mostra todas as imagens que voce tem no seu computados.
 
-` $ docker ps -a`  
+` $ docker ps -a`
   Lista os containes.
 
-`$ dpcker rmi <imagemId>`  
+`$ dpcker rmi <imagemId>`
   Remove a imagem
 
 `$ docker rm <containerId>`

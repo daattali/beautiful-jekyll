@@ -19,23 +19,23 @@ title: Adriano Canofre
 # Short description of your site
 description: Transformo cerveja em código!
 
-# --- Navigation bar options --- #
+# --- List of links in the navigation bar --- #
 
-# List of links in the navigation bar
 navbar-links:
   Sobre: "sobre"
 
-# Image to show in the navigation bar - image must be a square (width = height)
+# --- Logo --- #
+
+# Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar.png"
+avatar: "/assets/img/avatar.png"
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
-
-# --- Background colour/image options --- #
-
-# Personalize the colors in your website. Colour values can be any valid CSS colour
+#title-img: /path/to/image
 
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
@@ -47,19 +47,11 @@ footer-col: "#F5F5F5"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
-
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Adriano Canofre Mariano dos Santos
+author: Adriano Canofre Mariano dos Santos
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -68,7 +60,7 @@ author:
 social-network-links:
   rss: true
   email: "adrianoknofre@gmail.com"
-  facebook: adrianocanofre
+  # facebook: adrianocanofre
   github: adrianocanofre
   twitter: adrianocanofre
 #  reddit: yourname
@@ -84,15 +76,20 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
+#  mastodon: instance.url/@username
 
-# Select which share links to show in posts
+# --- General options --- #
+
+# Select which social network share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
-  google: false
+  facebook: false
   linkedin: true
+  vk: false
 
-# How to display the link to the website in the footer
+# How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
 # url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
 
@@ -106,18 +103,60 @@ google_analytics: "UA-112463096-1"
 # Google Tag Manager ID
 #gtm: ""
 
-# Facebook App ID
-# fb_app_id: ""
+# Matomo (aka Piwik) Web statistics
+# Uncomment the following section to enable Matomo. The opt-out parameter controls
+# whether or not you want to allow users to opt out of tracking.
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
 
-# Excerpt Word Length
-# Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+# --- Comments --- #
+
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+#disqus: ""
+
+# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+#fb_comment_id: ""
+
+# To use Utterances comments: (0) uncomment the following section, (1) fill in
+# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
+# (3) Install the Utterances app in your repository https://github.com/apps/utterances
+# See more details about the parameters below at https://utteranc.es/
+#utterances:
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+
+# To use Staticman comments, first invite `staticmanlab` as a collaborator to your repository and
+# accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`.
+# Then uncomment the following section and fill in "repository", "branch", and "endpoint".
+# If you want to use reCaptcha for staticman (optional for spam protection), then fill
+# in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
+# See more details at https://staticman.net/
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
+#  reCaptcha:
+#    siteKey  : # Use your own site key, you need to apply for one on Google
+#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+
+# --- Misc --- #
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
 
-# --- Don't need to touch anything below here (but you can if you want) --- #
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+# Facebook App ID
+#fb_app_id: ""
+
+
+# --- You don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Sao_Paulo"
@@ -139,6 +178,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+      readtime: false # add estimated reading time on all blog posts
   -
     scope:
       path: "" # all files
@@ -153,12 +193,12 @@ link-tags: true
 exclude:
   - CHANGELOG.md
   - CNAME
-  - Dockerfile
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  - Vagrantfile
+  - screenshot.png
+  - docs/
 
 # prose.io config
 prose:
@@ -214,8 +254,7 @@ prose:
 
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
-theme: jekyll-theme-hacker
