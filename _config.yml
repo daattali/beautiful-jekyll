@@ -58,7 +58,7 @@ social-network-links:
 #  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
-
+#  ORCID: your ORCID ID
 # --- General options --- #
 
 # Select which social network share links to show in posts
