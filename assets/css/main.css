@@ -960,5 +960,14 @@ pre {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
+@media screen and (max-width: 600px) {
+  .typed-js-hide {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
 
