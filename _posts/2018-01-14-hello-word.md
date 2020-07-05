@@ -3,7 +3,7 @@ layout: post
 title: The Big Bang
 subtitle: um novo ola mundo...
 date: 2018-01-01 21:00:00
-cover-img: /assets/img/big-bang.jpg
+image: /assets/img/big-bang.jpg
 share-img: /assets/img/big-bang.jpg
 categories: geral
 ---
