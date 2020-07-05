@@ -15,6 +15,17 @@ title: 'Custom Page'
   </head>
   <body>
     <h1>Hello, world!</h1>
+    
+    
+    {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
