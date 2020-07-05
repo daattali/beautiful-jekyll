@@ -34,6 +34,10 @@ This is a part of research. Soon avalilable.
 Soon open source.. 
 ***
 ## Publications 
-1. update soon
-2. update soon
+1. **Md. Rafiuzzaman Bhuiyan**, Sharun Akter Khushbu, Md. Sanzidul Islam ,**"A Deep Learning Based Assistive System to Classify COVID-19 Face Mask for Human Safety with YOLOv3"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
+2. **Md. Rafiuzzaman Bhuiyan**, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Sheikh Abujar, Syed Akhter Hossain, **"An Approach for Bengali Automatic Question Answering System using Attention Mechanism"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
+3. **Md. Rafiuzzaman Bhuiyan**, Mahmudul Hasan Mahedi, Naimul Hossain, Zerin Nasrin Tumpa, Syed Akhter Hossain, **"An Attention Based Approach for Sentiment Analysis of Food Review Dataset"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
+4. Md. Sabbir Alam Pran, **Md. Rafiuzzaman Bhuiyan**, Syed Akhter Hossain, Sheikh Abujar, **"Analysis Of Bangladeshi People’s Emotion During Covid-19 In Social Media Using Deep Learning"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
+5. Naimul Hossain, **Md. Rafiuzzaman Bhuiyan**, Zerin Nasrin Tumpa, Syed Akhter Hossain, **"Sentiment Analysis of Restaurant Reviews using Combined CNN-LSTM"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
+6. **Md. Rafiuzzaman Bhuiyan**, Mumenunnessa Keya, Abu Kaisar Mohammad Masum, Sheikh Abujar, Syed Akhter Hossain, **"An Approach for Bengali News Headline Classification Using LSTM"**,2nd INTERNATIONAL CONFERENCE ON EMERGING TECHNOLOGIES IN DATA MINING AND INFORMATION SECURITY (IEMIS 2020). Institute of Engineering & Management, Kolkata, West Bengal. India on 2nd and 4th July, 2020, Proceedings: Springer (AISC) Series (Scopus Indexed). 
 
