@@ -45,6 +45,7 @@ Soon open source..
 6. Neural Style Transfer with TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/certificate/Q32WA3N8JEXE)
 7. Perform Real-Time Object Detection with YOLOv3 [See certificate](https://www.coursera.org/account/accomplishments/certificate/LPQTAFFTYQ2Q)
 ***
+
 ## Publications 
 1. **Md. Rafiuzzaman Bhuiyan**, Sharun Akter Khushbu, Md. Sanzidul Islam ,**"A Deep Learning Based Assistive System to Classify COVID-19 Face Mask for Human Safety with YOLOv3"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
 2. **Md. Rafiuzzaman Bhuiyan**, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Sheikh Abujar, Syed Akhter Hossain, **"An Approach for Bengali Automatic Question Answering System using Attention Mechanism"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
