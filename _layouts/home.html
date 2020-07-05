@@ -25,10 +25,10 @@ layout: page
     </p>
 
     <div class="post-entry-container">
-      {% if post.image %}
+      {% if post.thumbnail-img %}
       <div class="post-image">
         <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}">
+          <img src="{{ post.thumbnail-img | relative_url }}">
         </a>
       </div>
       {% endif %}
