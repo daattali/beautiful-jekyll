@@ -21,17 +21,29 @@ Serve as TA for CSE department in Database Management System course.
 ## Projects
 ***
 ### 1. Face Mask Detection
-In this project I'm building a Face mask detector that detects whether a person is wear a mask or not. It's really important for this current Covid-19 situation. I've share a you-tube video of my project which is given below.
+In this project I'm building a Face mask detector that detects whether a person is wear a mask or not. Also published a peper on this task. It's really important for this current Covid-19 situation. I've share a you-tube video of my project which is given below.
 [Face Mask Detection](https://www.youtube.com/watch?v=k8OkplzCxQU&feature=emb_logo)
+***
 ### 2. Elephant Detection
 In this project I'm building a detector that detects an elephant inside an iamge/video. I've share a you-tube video of my project which is given below.
 [Elephant Detection](https://www.youtube.com/watch?v=svvll0v9b8I)
+***
 ### 3. Crop vs Weed Detection 
 In this project I'm building a weed detector that detects whether a weed is present in agriculture field or not(seems fancy). It's really important for agricultural purpose. I'll share a you-tube video of this project soon.. Stay tuned
+***
 ### 4. Sentiment analysis Of online Food Review
 This is a part of research. Soon avalilable.
 ### 5. Bert for Amazon Movie Review
 Soon open source.. 
+***
+## Accomplishments
+1. Crash Course on Python [See certificate](https://www.coursera.org/account/accomplishments/verify/MNJ4QBEA2E9K)
+2. Programming for Everybody (Getting Started with Python) [See certificate](https://www.coursera.org/account/accomplishments/certificate/ZWRVA6F7LP3R)
+3. Python for Data Science and AI [See certificate](https://www.coursera.org/account/accomplishments/verify/KNNY9NEL7FPY)
+4. Convolutional Neural Networks in TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/verify/TTYFB4JKNANJ)
+5. Natural Language Processing in TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/verify/A3JFCWSYCUFH)
+6. Neural Style Transfer with TensorFlow [See certificate](https://www.coursera.org/account/accomplishments/certificate/Q32WA3N8JEXE)
+7. Perform Real-Time Object Detection with YOLOv3 [See certificate](https://www.coursera.org/account/accomplishments/certificate/LPQTAFFTYQ2Q)
 ***
 ## Publications 
 1. **Md. Rafiuzzaman Bhuiyan**, Sharun Akter Khushbu, Md. Sanzidul Islam ,**"A Deep Learning Based Assistive System to Classify COVID-19 Face Mask for Human Safety with YOLOv3"**, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed). 
