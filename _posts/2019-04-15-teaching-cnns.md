@@ -78,7 +78,7 @@ Here is my answer to the above question: in the first and third cases, I would e
 
 The three points above summarize my main ideas about teaching CNNs. I also have developed some smaller strategies, like setting the convolution behaviour such that the inputs and outputs are the same size, which eliminates an extra potential source of confusion. If you're interested, you can check out this and more in my lecture [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). So far I have given this lecture twice, and it seems to have been effective. Perhaps someone will find it useful!
 
-July 2020 update: a video of me delivering this lecture to the 2019-20 MDS cohort is now available [here](https://www.youtube.com/watch?v=vfQ8vQHkuic&list=PLWmXHcz_53Q3KLISD8jydKjz41b9iqERC&index=6).
+_July 2020 update_: a video of me delivering this lecture to the 2019-20 MDS cohort is now available [here](https://www.youtube.com/watch?v=vfQ8vQHkuic&list=PLWmXHcz_53Q3KLISD8jydKjz41b9iqERC&index=6).
 
 --------
 
