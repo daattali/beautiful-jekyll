@@ -484,6 +484,7 @@ footer .footer-custom-content {
 }
 .post-image {
   float: right;
+  margin-left: 0.625rem;
   height: 12rem;
   width: 12rem;
   margin-top: -2.1875rem;
@@ -539,6 +540,14 @@ footer .footer-custom-content {
   }
 }
 
+@media (max-width: 767px) {
+  .post-image, .post-image img {
+    margin-top: 0;
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
 @media (max-width: 500px) {
   .post-image, .post-image img {
     height: 6.25rem;
@@ -549,7 +558,8 @@ footer .footer-custom-content {
     width: 100%;
     text-align: center;
     margin-top: 0;
-    float: left;
+    margin-left: 0;
+    float: none;
   }
 }
 /* --- Post and page headers --- */

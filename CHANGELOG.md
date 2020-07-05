@@ -5,6 +5,7 @@
 - Add support for sharing pages on new social network: VK (#657)
 - Use Open Graph type 'article' for blog posts (#669)
 - Use Twitter's `summary_large_image` card when `share-img` is specified (#668)
+- Make post images in the feed page smaller on smaller devices
 
 ## v3.0.0 2020-05-07
 
