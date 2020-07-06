@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MDS 2019/2020 Capstone Seminar Series
-subtitle:
+share-img: "https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/blog/seminar.png?raw=true"
 ---
 
 During the last two months of the UBC Master of Data Science program (typically May & June each year) we have [Capstone projects](https://ubc-mds.github.io/capstone/about/), in which our students work in teams of ~4 students with an external capstone partner and a UBC mentor to address a question facing the capstone partner’s organization using data science. In 2019 we added in a weekly “capstone seminar series” where we invite data science experts from academia and industry to give a seminar on a relevant data science topic. In this blog post I'll provide a short description and some key take-aways from each of this year's seminars. The schedule for the 2020 capstone seminar series is shown in Table 1 below.
