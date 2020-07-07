@@ -6,7 +6,7 @@
 - Image to share on social media will use the cover image or thumbnail if none is provided
 - All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
-- Add social network link: Mastodon (#646)
+- Add social network links: Mastodon (#646), Google Scholar, ORCID (#670)
 - Add support for sharing pages on new social network: VK (#657)
 - Use Open Graph type 'article' for blog posts (#669)
 - Use Twitter's `summary_large_image` card when `share-img` is specified (#668)
