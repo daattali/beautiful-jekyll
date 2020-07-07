@@ -1,5 +1,10 @@
-## v3.0.1 Date: TBD
+## v4.0.0 Date: TBD
 
+- **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
+- **BREAKING CHANGE** Don't use the thumbnail as the avatar image 
+- Cover image will automatically be used as thumbnail if none is provided
+- Image to share on social media will use the cover image or thumbnail if none is provided
+- All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
 - Add social network link: Mastodon (#646)
 - Add support for sharing pages on new social network: VK (#657)
@@ -10,15 +15,15 @@
 ## v3.0.0 2020-05-07
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
-- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`.
-- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`. 
-- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people.
-- Added `navbar-border-col` setting in the config file.
-- Add accessibility features where possible.
-- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'.
-- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015.
-- Remove most of the sample posts so that users only have two sample posts to learn from.
-- Improvements to the README instructions.
+- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
+- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
+- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
+- Added `navbar-border-col` setting in the config file
+- Add accessibility features where possible
+- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
+- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
+- Remove most of the sample posts so that users only have two sample posts to learn from
+- Improvements to the README instructions
 
 ## v2.3.0 2020-04-29
 
