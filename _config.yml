@@ -1,13 +1,13 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: My Demo page
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: Nah, I'm just trying to learn.
 
 # Your name to show in the footer
-author: Some Person
+author: Aman Bhattarai
 
 # --- List of links in the navigation bar --- #
 
@@ -16,7 +16,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://www.twistblogg.com"
 
 # --- Logo --- #
 
