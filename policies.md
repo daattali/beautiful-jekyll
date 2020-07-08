@@ -93,6 +93,7 @@ Plagiarism, which is intellectual theft, occurs where an individual submits or p
 - multiple students submitting the same response
 - copying from sources without citing them
 - copying verbatim (word-for-word) from source and citing, but failing to make it explicit that this is a quotation (quotations should be used only rarely, if at all)
+- sending/emailing/sharing part of your answers, including code, to anyone else, including classmates (unless you are working together in an official group assignment).
 
 Plagiarism will not be tolerated in the MDS program and may result in dismissal from the program. Students are responsible for ensuring that any work submitted does not constitute plagiarism. Students who are in any doubt as to what constitutes plagiarism should consult their Instructor before handing in any assignments.
 
