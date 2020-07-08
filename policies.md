@@ -51,12 +51,6 @@ Note: to get above 95% in a course you need to earn bonus points by doing the qu
 
 Note: to complicate things slightly, we actually find it useful to also have C- and D grades available when grading your work. Thus, the conversion from letter grades to numbers actually happens through the undergrad scheme, which is the first table at the [same calendar link](http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0). However, we did not want to paste that table here and cause confusion, as it's really the table above, for Master's students, that matters for you. In particular, because of the issues around failing and C/C+ grades described below. 
 
-#### Re-grading
-
-If you have a question about the way your work was graded, please contact the TA who graded it for an explanation. If you would like to contest your grade, you should notify the instructor. In these cases, the instructor will re-grade the entire piece of work, not only the parts in question. Please keep in mind that your grade may go up or down as a result of re-grading, and that instructors often grade more critically than TAs. We expect these re-grade requests to happen rarely, e.g. 0-2 times per student over the year.
-
-Furthermore, all requests for explanations and regrades must be submitted _within one week of having the grade returned to you_. After this one-week window, we may deny your request for re-evaluation. 
-
 #### Letter grades
 
 At the end of a course, you can convert your numerical grade back into a letter grade using the table above. 
@@ -72,6 +66,18 @@ With a few exceptions (which will be communicated to students at the start of a 
 #### Late Submissions
 
 A late submission is defined as any work, including quizzes, submitted after the deadline. For a late submission, the student will receive a 50% scaling of their grade for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
+
+#### Re-grading
+
+If you have a question about the way your work was graded, please contact the TA who graded it for an explanation. If you would like to contest your grade, you should notify the instructor. In these cases, the instructor will re-grade the entire piece of work, not only the parts in question. Please keep in mind that your grade may go up or down as a result of re-grading, and that instructors often grade more critically than TAs.
+
+**Grading concerns: time limit.** If you perceive a problem with your homework grade, you have **one week** to raise a concern from the time that your grades were posted. After that, your grade is final.
+
+**Reasonable grading concerns**. Grades are not perfect; some randomness in grading is normal, meaning that you'll generally get more than you deserve in some cases and less than you deserve in other cases. Thus, it is possible to cheat the system by consistently complaining when your grade is too low but not when it is too high. Unfortunately, this takes time away from the course staff which could have been spent on making the course better for everyone. Thus, in my view, students who overzealously contest grades are penalizing their classmates for personal gain.
+
+Sometimes serious grading errors are made, for example when a grader did not see your answer to a question or completely deviated from standard grading practices for some unknown reason. Such situations can be quite frustrating for students, and we want you to feel that the course is fair. In these cases, it makes sense for the student to bring the error to our attention.
+
+Balancing these two sides is difficult. In MDS the policy is as follows: if a grade is challenged in a way that is deemed unreasonable, the student will receive a warning. This decision will be made by the instructor. If a student receives three warnings, the student will lose the privilege to challenge grades for the remainder of the program. Examples of unreasonable requests include extremely minor complaints (e.g. half a mark on an assignment) or repeatedly contesting the same issue once a decision has been reached. This policy applies to both labs and quizzes.
 
 ## Quizzes
 
