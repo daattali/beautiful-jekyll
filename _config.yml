@@ -43,7 +43,7 @@ avatar: "/img/Baisal-Ergeshev.JPG"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#edf1f2"
+navbar-col: "#4293f5"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
@@ -79,7 +79,7 @@ social-network-links:
   twitter: https://twitter.com/Baisal_E/media
 #  reddit: yourname
 #  google-plus: +DeanAttali
-  linkedin: https://www.linkedin.com/feed/
+  linkedin: https://www.linkedin.com/in/baisal-ergeshev-52b3b342/
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
