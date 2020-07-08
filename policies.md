@@ -17,19 +17,19 @@ Students who miss an assignment or quiz can request an academic concession. From
 To request an academic concession, students should immediately email a completed and signed [academic concession form](https://github.ubc.ca/MDS-2019-20/announcements/blob/master/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration%2C%202019.pdf) to the course's Lab Instructor. Upon receiving the form, the Lab Instructor and/or MDS Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
 
 
-#### Late arrivals in lecture
+### Late arrivals in lecture
 
 Students arriving late to MDS lectures can be distracting for the instructor and other students. While the ideal solution is for everyone to arrive on time, the following procedures are in place to minimize the disruption caused by any late arrivals.
 
 In our main lecture hall, DMP 110, all students arriving late must enter through the east door, which leads to the back of the lecture hall. Furthermore, late students shall only sit in the folding seats at the back wall or stand in the northeast corner, until a break or group activity in the lecture, at which time you are free to take a regular seat.
 
-#### Bringing children to class
+### Bringing children to class
 
 If childcare is not available due to unforeseen circumstances, MDS students/TAs/instructors are welcome to bring their children to lecture and/or lab sessions. If you find yourself in this situation, please let the instructor know that you wish to bring your child to class. If there are any concerns of children disrupting the class, these will be addressed on a case-by-case basis.
 
 ## Grades and Academic Standing
 
-#### General grading scheme
+### General grading scheme
 
 All grades in the MDS program will be entered as letter grades based on our [rubrics](https://github.com/UBC-MDS/public/tree/master/rubric). For Master's students at UBC, percentage grades and letter grades are mapped as follows (source: 2nd table of [this page](http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0)):
 
@@ -51,29 +51,31 @@ Note: to get above 95% in a course you need to earn bonus points by doing the qu
 
 Note: to complicate things slightly, we actually find it useful to also have C- and D grades available when grading your work. Thus, the conversion from letter grades to numbers actually happens through the undergrad scheme, which is the first table at the [same calendar link](http://www.calendar.ubc.ca/vancouver/?tree=3,42,96,0). However, we did not want to paste that table here and cause confusion, as it's really the table above, for Master's students, that matters for you. In particular, because of the issues around failing and C/C+ grades described below. 
 
-#### Letter grades
+### Letter grades
 
 At the end of a course, you can convert your numerical grade back into a letter grade using the table above. 
 
-#### Failed courses and C/C+ grades
+### Failed courses and C/C+ grades
 
 UBC courses are graded out of 100%. To pass an MDS course a student must score 60% or above. To graduate from MDS, a student must pass all courses, with no more than 3 courses in the 60%-67% range (C or C+).
 
-#### Final course grades
+### Final course grades
 
 With a few exceptions (which will be communicated to students at the start of a course), each course grade is calculated using the lab and quiz grades, weighted 60% and 40% respectively. However, if a student fails all the quizzes in a course (each below 60%) then the final course grade will be the lower of their calculated course grade and 67%. This means that to graduate a student cannot fail all the quizzes in more than 3 courses.
 
-#### Late Submissions
+### Late Submissions
 
 A late submission is defined as any work, including quizzes, submitted after the deadline. For a late submission, the student will receive a 50% scaling of their grade for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
 
-#### Re-grading
+### Re-grading
 
 If you have a question about the way your work was graded, please contact the TA who graded it for an explanation. If you would like to contest your grade, you should notify the instructor. In these cases, the instructor will re-grade the entire piece of work, not only the parts in question. Please keep in mind that your grade may go up or down as a result of re-grading, and that instructors often grade more critically than TAs.
 
-**Grading concerns: time limit.** If you perceive a problem with your homework grade, you have **one week** to raise a concern from the time that your grades were posted. After that, your grade is final.
+#### Grading concerns: time limit
+If you perceive a problem with your homework grade, you have **one week** to raise a concern from the time that your grades were posted. After that, your grade is final.
 
-**Reasonable grading concerns**. Grades are not perfect; some randomness in grading is normal, meaning that you'll generally get more than you deserve in some cases and less than you deserve in other cases. Thus, it is possible to cheat the system by consistently complaining when your grade is too low but not when it is too high. Unfortunately, this takes time away from the course staff which could have been spent on making the course better for everyone. Thus, in my view, students who overzealously contest grades are penalizing their classmates for personal gain.
+#### Reasonable grading concerns
+Grades are not perfect; some randomness in grading is normal, meaning that you'll generally get more than you deserve in some cases and less than you deserve in other cases. Thus, it is possible to cheat the system by consistently complaining when your grade is too low but not when it is too high. Unfortunately, this takes time away from the course staff which could have been spent on making the course better for everyone. Thus, in my view, students who overzealously contest grades are penalizing their classmates for personal gain.
 
 Sometimes serious grading errors are made, for example when a grader did not see your answer to a question or completely deviated from standard grading practices for some unknown reason. Such situations can be quite frustrating for students, and we want you to feel that the course is fair. In these cases, it makes sense for the student to bring the error to our attention.
 
