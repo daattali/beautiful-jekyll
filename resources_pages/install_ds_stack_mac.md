@@ -27,7 +27,7 @@ These instructions will walk you through installing the required Data Science so
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
 - [Jupyter extensions](#jupyter-extensions)
-- [R, IRkernel, RStudio and XQuartz](#r-ir-kernel-and-rstudio)
+- [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
@@ -39,7 +39,7 @@ In MDS we will be using many tools that work most reliably on the Google Chrome 
 In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: https://lastpass.com/create-account.php. We also recommend installing the LastPass Chrome Extension available here: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd.
 
 ## Slack
-For our MDS courses and program annoucements, correspondance and course forums we use the communcation tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. Instructions for this are here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
+For our MDS courses and program annoucements, correspondance and course forums we use the communcation tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. The Slack app can be installed from the Mac App Store, or from the Slack website. Installation instructions from the Slack website install method are here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
 
 ## Bash shell
 Apple recently changed the Mac default shell in the Terminal to Zsh, however, we aim to teach with the same shell across all three operating systems we support, which is the Bash shell. Thus, we ask that you change the default shell in your Terminal to Bash by opening the Terminal ([how to video](https://youtu.be/5AJbWEWwnbY)) and typing: 
@@ -168,6 +168,8 @@ conda install --yes \
  black=19.*
 ```
 
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+
 ## Jupyter extensions
 We will be using several Jupyter extensions that help us use Juypter notebooks more smoothly with Git & GitHub. To install them, paste the following in the terminal below:
 
@@ -178,7 +180,7 @@ conda install --yes jupytext=1.*
 jupyter lab build
 ```
 
-## R, IRkernel, RStudio and XQuartz
+## R, XQuartz,IRkernel and RStudio
 We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel. Finally, some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately.
 
 ### R
@@ -204,6 +206,9 @@ https://www.gnu.org/licenses/.
 
 Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
 
+### XQuartz
+
+Some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately. Download it from here: [https://www.xquartz.org/](https://www.xquartz.org/) and follow the installation instructions.
 
 ### RStudio
 Chose and download the Mac version of RStudio from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
@@ -239,10 +244,6 @@ A browser should have launched and you should see a page that looks like the scr
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
-
-### XQuartz
-
-Some R packages rely on the dependency XQuartz which no longer ships with the Mac OS, thus we need to install it separately. Download it from here: [https://www.xquartz.org/](https://www.xquartz.org/) and follow the installation instructions.
 
 ## PostgreSQL 
 
