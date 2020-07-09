@@ -421,7 +421,9 @@ Command | Description
 ## Awk
 
 ### Introduction & Description
-Awk itself is a command that uses its own language to conduct processing and scanning on text, with a number of pre-defined patterns. However, within a forensics context I have personally not seen these features used. Mainly for Forensics, I have seen it used to sort columns.
+Awk itself is a command that uses its own language to conduct processing and scanning on text, with a number of pre-defined patterns. These patterns scan a input file, or steam and splits each line into a set of fields, that we can manipulate or sort through.
+
+Within a forensics context I have personally not seen these features used. Mainly for Forensics, I have seen it used to sort columns.
 
 
 ![awkcomic](https://res.cloudinary.com/practicaldev/image/fetch/s--YxKHSWq2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pbs.twimg.com/media/DeLcVfSWAAAw6OZ.jpg)
