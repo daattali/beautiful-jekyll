@@ -420,6 +420,16 @@ Command | Description
 
 ## Awk
 
+### Introduction & Description
+Awk itself is quite a powerful command, and has its own scripting lanuage to accompany it. However, within a forensics context I have personally not seen these features used. Mainly for Forensics, I have seen it used to sort columns. 
+
+### Working example
+Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we can see a lot of data present, that might be hard to read. Or, might need to be piped into another command like a GREP. To make analysis easier, we can reduce the file to just the relevant columns that we need. Do do this, you will need to count each of the columns by hand, and use the corresponding number in the `$<number>` within the `print` argument. Each column should be seperated with a `,`. See the below example
+
+![raw2dmptry](https://angry-bender.github.io/img/lt/awk.png)
+
+
+
 Command | Description
 -------|--------
 `awk [OPTIONS] filename`	|Pattern scanning and text processing
