@@ -2,12 +2,12 @@
 layout: post
 title: Basic Linux Resources (V2.0)
 subtitle: The resources I used to help make a basic Linux course.
-tags: [sysadmin, Linux]
+tags: [sysadmin, linux]
 comments: false
 ---
 
 # Introduction
-These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheat sheet & posts that will help basic analysts be able use and research how to use Linux.
+These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheatsheet & posts that will help basic analysts be able use and research how to use linux.
 
 <a name="Table-of-Contents"></a>
 # Table of Contents
@@ -45,16 +45,16 @@ These resources Have been provided for a  Linux course I have had to instruct. I
          * [Using Tarballs](#using-tarballs)
       * [Linux Distributions](#linux-distributions)
       * [Linux File systems](#linux-file-systems)
-         * [Filesystem Hierarchy Standard](#filesystem-hierarchy-standard)
+         * [Filesystem Heirachy Standard](#filesystem-heirachy-standard)
          * [Binary Directory Standards](#binary-directory-standards)
-      * [Programs &amp; Services](#progams--services)
+      * [Progams &amp; Services](#progams--services)
          * [Elf Diagram](#elf-diagram)
          * [Process Signals](#process-signals)
          * [Sysvinit](#sysvinit)
          * [Sysvinit vs system d (Nice comparison graph)](#sysvinit-vs-system-d-nice-comparison-graph)
          * [Init System and Daemons (Boot Process)](#init-system-and-daemons-boot-process)
          * [Understanding the Linux Boot Process - CompTIA Linux , LPIC-1](#understanding-the-linux-boot-process---comptia-linux-lpic-1)
-         * [Common Linux Processes / Daemons](#common-linux-processes--daemons)
+         * [Common Linux Processess / Daemons](#common-linux-processess--daemons)
       * [Bash Usage](#bash-usage)
          * [Special Characters](#special-characters)
          * [Grep awk and sed tutorial](#grep-awk-and-sed-tutorial)
@@ -84,7 +84,7 @@ These resources Have been provided for a  Linux course I have had to instruct. I
 # Bash keyboard commands
 The mouse won’t work, use the left/right arrow keys to move around the line.
 
-When the cursor is where you want it in the line, typing inserts text – i.e. it doesn’t always over-type what’s already there.
+When the cursor is where you want it in the line, typing inserts text – i.e. it doesn’t always overtype what’s already there.
 
 [*Back to table of contents*](#Table-of-Contents)
 
@@ -145,10 +145,10 @@ Command | Description
 `who` | Who is logged onto and what is there session
 `cat /etc/*release*` | System information
 `uname -r` | System information
-`man <command> ` | Traditional UNIX era help system
+`man <command> ` | Traditional unix era help system
 `info <command>` | GNU projects helps system, typically more comprehensive, not installed by default
 `apropos` | search all man pages for a given keyword alias of `man -k <searchterm>`
-`man <cat number> <command>` | view a man page other than the default command man-page
+`man <cat number> <command>` | view a man page other than the default command manpage
 
 [*Back to table of contents*](#Table-of-Contents)
 
@@ -159,7 +159,7 @@ Command | Description
 `History`	| lists command history
 `!<number from history>`	| Executes that command from history
 `!<string>` |	Repeat last command that started with <string>
-`!?<string>` |	Repeat last command that has sub-string <string>
+`!?<string>` |	Repeat last command that has substring <string>
 `!!:s/foo/bar/` |	Repeat last command substituting foo for bar
 `grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log \| grep <username> 
 
@@ -169,8 +169,8 @@ Command | Description
 
 Command | Description
 -------|--------
-`sudo updatedb`	| Update the locate db
-`locate <filename>` | 	locate some filename
+`sudo updatedb`	| Update the locatedb
+`locate <filename>` | 	locate somefilename
 `find <directory>` or `. <filename>` |	find a file in a directory or where I am with a name
  
 [*Back to table of contents*](#Table-of-Contents)
@@ -232,7 +232,7 @@ Command | Description
 `chown <user>:<group>` |	Changes ownership on a file
 `chmod 754 <filename>` |	Changes the permissions on a file Number Sequence User, Group, Others 4 = Read,2 = Write,1 = Execute, 0 = No Permission,(4+2+1=7)
 `chmod u=rwx,g=rx,o=r`	 | Changes the permissions on a file u=user,g=group,o=others r=read,w=write,x=execute
-`chgrp <group> <filename>` | change the group owner of a file or folder
+`chgrp <group> <filename>` | change the froup owner of a file or folder
  
 [*Back to table of contents*](#Table-of-Contents)
 
@@ -262,8 +262,8 @@ Command | Description
 `fdisk –l `|	Lists disks and partitions
 `df`	| Lists the mount points for inserted disks
 `ps –aux` (Old way) `ps -elf` (New Way) |	Lists the running processes
-`ps -lfu` | lists processes started by a user
-`ps -f --ppid 1` | lists processes started on boot by systemd
+`ps -lfu` | lists processess started by a user
+`ps -f --ppid 1` | lists processess started on boot by systemd
 `top`	| Lists processes in order
 `kill <pid>` |	Kill a Running process
 `systemctl -l --type service --all` |	Lists all the running Services
@@ -273,7 +273,7 @@ Command | Description
 `journalctl -u <servicename>`	| View logs about a particular service
 `journalctl -k `	| View only kernel messages
 `journalctl -f`	| follow messages as they appear
-`sudo mount <device> <directory>`	| mount a hard drive or USB
+`sudo mount <device> <directory>`	| mount a hard drive or usb
 `systemctl <disable / enable> <service>`	| enable or disable a system service on startup
 `systemctl <reboot / poweroff  /emergency / default>` |	Reboots, power’s off, enters into single user recovery mode, restores normal operation
 `lsblk`	| lists basic hard drive information
@@ -291,10 +291,10 @@ Command | Description
 
 Command | Description | Order
 -------|--------|------
-`ip addr`|List your IP interfaces or addresses |	1
+`ip addr`|List your ip interfaces or addresses |	1
 `sudo ip link set <interfacename> up` |	Set the interface to be up	| 2
 `sudo dhclient`	| get a DHCP address	| 3
-`ip addr add 192.168.0.3/24` dev <interfacename> |	Enter a static IP address	| 3
+`ip addr add 192.168.0.3/24` dev <interfacename> |	Enter a static ip address	| 3
 `ip addr`	| verify your configuration	| 4
 
 [*Back to table of contents*](#Table-of-Contents)
@@ -306,7 +306,7 @@ Command | Description | Order
 `ifconfig	`|List your interfaces or addresses	| 1
 `ifconfig <interfacename> up`	| Set the interface to be up	| 2
 `ifconfig <interfacename> 0.0.0.0 0.0.0.0 && dhclient`	| get a DHCP address |	3
-`ifconfig <interfacename> 192.168.0.3/24 netmask 255.255.255.0`	| Enter a static IP address |	3
+`ifconfig <interfacename> 192.168.0.3/24 netmask 255.255.255.0`	| Enter a static ip address |	3
 `ifconfig` 	| verify your configuration	| 4
 
 [*Back to table of contents*](#Table-of-Contents)
@@ -322,11 +322,11 @@ Command | Description
 `vi /etc/resolv` | edit dns servers (**Manual Override**)
 `ip route` | view routes and default gateway
 `ip neighbour` | equivalent to windows arp command
-`ip link` | Interface status and MAC Addresses
-`ip addr` | Show IP addresses
+`ip link` | Interface status and MAC Addressess
+`ip addr` | Show ip addressess
 `ip route <add / del> <net / CIDR> via <IP> dev <int>` | Add or remove static route
 `ip route add default via <IP>` | Add Default route
-`ss` | Netstat equivalent (`-tu` minimum info, `-put` process info, `-4put` show ipv4 only, `4punt` show ports as numbers
+`ss` | Netstat equivalant (`-tu` minimum info, `-put` process info, `-4put` show ipv4 only, `4punt` show ports as numbers
 
 [*Back to table of contents*](#Table-of-Contents)
 
@@ -389,15 +389,15 @@ then, after using an awk, or any method of reducing data down to a single charac
 
 ### Introduction & Description
 
-Grep is a Linux users "Swiss Army knife" of searching for strings or patterns, think of it like your find button in notepad, but on steroids. It works by scanning each line of text in a steam or file, searching it for your pattern, then printing it to the terminal.
+Grep is a linux users "Swiss Army knife" of searching for strings or patterns, think of it like your find button in notepad, but on steroids. It works by scanning each line of text in a steam or file, searching it for your pattern, then printing it to the terminal.
 
 ![grepcomic](https://pbs.twimg.com/media/DcPeD_CW0AEkSar?format=jpg&name=small)
 
 ### Working example
 
-Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we might only want to limit our results to POST requests (Where the client has upload something to the web server). This is useful, as it enables us to quickly search a file, for where a malicious script might have been uploaded from our client.
+Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we might only want to limit our results to POST requests (Where the client has upload something to the webserver). This is useful, as it enables us to quicky search a file, for where a malicious script might have been uploaded from our client.
 
-In this case, we have reduced the analyst's work, by reducing a file of over 1000 lines to 58, a much easier bit of data to sort through.
+In this case, we have reduced the analyt's work, by reducing a file of over 1000 lines to 58, a much easier bit of data to sort through.
 
 ![grep](https://angry-bender.github.io/img/lt/grep.png)
 
@@ -420,7 +420,7 @@ Command | Description
 
 ### Introduction & Description
 
-Sed, is a command that is used to search and replace a string from a stream or file, without having to open it in a text editor. Think of it like the function in Microsoft word, where you have used replace to fix every instance of a typo you might have done. Similar to grep, it works by searching each line in a file for your pattern, and replaces it with something you have typed.
+Sed, is a command that is used to search and replace a string from a stream or file, without having to open it in a text editor. Think of it like the function in microsoft word, where you have used replace to fix every instance of a typo you might have done. Similar to grep, it works by searching each line in a file for your pattern, and replaces it with something you have typed.
 
 ![sedcomic](https://pbs.twimg.com/media/DeN10NLUQAApvNY?format=jpg&name=medium)
 
@@ -449,14 +449,14 @@ Within a forensics context I have personally not seen these features used. Mainl
 
 ### Working example
 
-Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we can see a lot of data present, that might be hard to read. Or, might need to be piped into another command like a GREP. To make analysis easier, we can reduce the file to just the relevant columns that we need. Do do this, you will need to count each of the columns by hand, and use the corresponding number in the `$<number>` within the `print` argument. Each column should be separated with a `,`. See the below example
+Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we can see a lot of data present, that might be hard to read. Or, might need to be piped into another command like a GREP. To make analysis easier, we can reduce the file to just the relevant columns that we need. Do do this, you will need to count each of the columns by hand, and use the corresponding number in the `$<number>` within the `print` argument. Each column should be seperated with a `,`. See the below example
 
 ![awk](https://angry-bender.github.io/img/lt/Awk.png)
 
 Command | Description
 -------|--------
 `awk [OPTIONS] filename`	|Pattern scanning and text processing
-`awk -f <awkfile> filename` |	Allows the use of an awk file for processing
+`awk -f <awkfile> filename` |	Allows the use of an awkfile for processing
 `awk ‘{print $3}’` |	prints all the 3’rd arguments in a file
 
 ### Extra tutorials
@@ -533,7 +533,7 @@ Command | Description
 ## Linux File systems
 <https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel>
 
-### Filesystem Hierarchy Standard
+### Filesystem Heirachy Standard
 <http://www.pathname.com/fhs>
 
 <https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>
@@ -543,7 +543,7 @@ Command | Description
 
 [*Back to table of contents*](#Table-of-Contents)
 
-## Programs & Services
+## Progams & Services
 ### Elf Diagram
 ![ELF Diagram](https://upload.wikimedia.org/wikipedia/commons/e/e4/ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)
 
@@ -557,7 +557,7 @@ Command | Description
 
 <https://wiki.gentoo.org/wiki/Sysvinit>
 
-#### if you want to play with a sysvinit system
+#### if you want to plau with a sysvinit system
 http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-LiveDVD.iso
 
 ### Sysvinit vs system d (Nice comparison graph)
@@ -571,7 +571,7 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 ### Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1
 [![](https://img.youtube.com/vi/mHB0Z-HUauo/maxresdefault.jpg)](https://youtu.be/mHB0Z-HUauo)
 
-### Common Linux Processes / Daemons
+### Common Linux Processess / Daemons
 <https://www.techrepublic.com/article/linux-101-a-comprehensive-list-of-available-linux-services/>
 
 <https://meterpreter.org/common-linux-services-list/>
