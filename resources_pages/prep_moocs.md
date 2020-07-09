@@ -29,11 +29,9 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Explore Statistics with R](https://www.edx.org/course/explore-statistics-r-kix-kiexplorx-0), from Karolinska Institutet (edX)
 
 ### Statistics and Probability
-- [Introduction to Statistics: Probability](https://www.edx.org/course/introduction-statistics-probability-uc-berkeleyx-stat2-2x), from U. C. Berkeley (via edX)
 - [Fat Chance: Probability from the Ground Up](https://www.edx.org/course/fat-chance-probability-ground-up-1), from Harvard U. (edX)
 - [Introduction to Probability and Data](https://www.coursera.org/learn/probability-intro) with R, from Duke U. (Coursera)
 - [Basic Statistics](https://www.coursera.org/learn/basic-statistics), from University of Amsterdam (Coursera)
-- [Probability and Statistics](https://lagunita.stanford.edu/courses/OLI/ProbStat/Open/about), from Stanford U.
 
 ### Calculus
 - [Essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) (YouTube series)
