@@ -387,6 +387,20 @@ then, after using an awk, or any method of reducing data down to a single charac
 
 ## Grep
 
+### Introduction & Description
+
+Grep is a linux users "Swiss Army knife" of searching for strings or patterns, think of it like your find button in notepad, but on steroids. It works by scanning each line of text in a steam or file, searching it for your pattern, then printing it to the terminal.
+
+![grepcomic](https://pbs.twimg.com/media/DcPeD_CW0AEkSar?format=jpg&name=small)
+
+### Working example
+
+Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we might only want to limit our results to POST requests (Where the client has upload something to the webserver). This is useful, as it enables us to quicky search a file, for where a malicious script might have been uploaded from our client.
+
+In this case, we have reduced the analyt's work, by reducing a file of over 1000 lines to 58, a much easier bit of data to sort through.
+
+![grep](https://angry-bender.github.io/img/lt/grep.png)
+
 Command | Description
 -------|--------
 `grep “boo” <filename>`	| Standard GREP
@@ -417,24 +431,21 @@ Command | Description
 
 [*Back to table of contents*](#Table-of-Contents)
 
-
 ## Awk
 
 ### Introduction & Description
+
 Awk itself is a command that uses its own language to conduct processing and scanning on text, with a number of pre-defined patterns. These patterns scan a input file, or steam and splits each line into a set of fields, that we can manipulate or sort through.
 
 Within a forensics context I have personally not seen these features used. Mainly for Forensics, I have seen it used to sort columns.
 
-
 ![awkcomic](https://res.cloudinary.com/practicaldev/image/fetch/s--YxKHSWq2--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pbs.twimg.com/media/DeLcVfSWAAAw6OZ.jpg)
 
 ### Working example
+
 Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we can see a lot of data present, that might be hard to read. Or, might need to be piped into another command like a GREP. To make analysis easier, we can reduce the file to just the relevant columns that we need. Do do this, you will need to count each of the columns by hand, and use the corresponding number in the `$<number>` within the `print` argument. Each column should be seperated with a `,`. See the below example
 
-
 ![awk](https://angry-bender.github.io/img/lt/Awk.png)
-
-
 
 Command | Description
 -------|--------
