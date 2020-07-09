@@ -10,7 +10,8 @@ comments: false
 These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheat sheet & posts that will help basic analysts be able use and research how to use Linux.
 
 <a name="Table-of-Contents"></a>
-# Table of Contents
+   * [Introduction](#introduction)
+   * [Table of Contents](#table-of-contents)
    * [Bash keyboard commands](#bash-keyboard-commands)
       * [Moving Cursor](#moving-cursor)
       * [Exiting a running command or accessing another command window](#exiting-a-running-command-or-accessing-another-command-window)
@@ -28,15 +29,25 @@ These resources Have been provided for a  Linux course I have had to instruct. I
       * [History](#history)
       * [System Utilities](#system-utilities)
       * [Networking](#networking)
-         * [Guided Commands](#the-new-systemd-way-manual-configuration)
+         * [The new systemd way (Manual Configuration)](#the-new-systemd-way-manual-configuration)
+         * [The new legacy way (Manual Configuration)](#the-new-legacy-way-manual-configuration)
          * [Other network utilities &amp; Troubleshooting tools](#other-network-utilities--troubleshooting-tools)
       * [Ubuntu Package Management](#ubuntu-package-management)
       * [User Management](#user-management)
    * [Basic Forensics Commands](#basic-forensics-commands)
+   * [Set a forensics alias.... to you know, forensicate](#set-a-forensics-alias-to-you-know-forensicate)
       * [Grep](#grep)
+         * [Introduction &amp; Description](#introduction--description)
+         * [Working example](#working-example)
       * [Sed](#sed)
+         * [Introduction &amp; Description](#introduction--description-1)
+         * [Working example](#working-example-1)
       * [Awk](#awk)
+         * [Introduction &amp; Description](#introduction--description-2)
+         * [Working example](#working-example-2)
+         * [Extra tutorials](#extra-tutorials)
       * [Regex Reference](#regex-reference)
+         * [A nice way to test your regex before using it](#a-nice-way-to-test-your-regex-before-using-it)
          * [IP Address regex](#ip-address-regex)
       * [Other useful tools](#other-useful-tools)
    * [Linux Resources](#linux-resources)
@@ -47,10 +58,11 @@ These resources Have been provided for a  Linux course I have had to instruct. I
       * [Linux File systems](#linux-file-systems)
          * [Filesystem Hierarchy Standard](#filesystem-hierarchy-standard)
          * [Binary Directory Standards](#binary-directory-standards)
-      * [Programs &amp; Services](#progams--services)
+      * [Programs &amp; Services](#programs--services)
          * [Elf Diagram](#elf-diagram)
          * [Process Signals](#process-signals)
          * [Sysvinit](#sysvinit)
+            * [if you want to play with a sysvinit system](#if-you-want-to-play-with-a-sysvinit-system)
          * [Sysvinit vs system d (Nice comparison graph)](#sysvinit-vs-system-d-nice-comparison-graph)
          * [Init System and Daemons (Boot Process)](#init-system-and-daemons-boot-process)
          * [Understanding the Linux Boot Process - CompTIA Linux , LPIC-1](#understanding-the-linux-boot-process---comptia-linux-lpic-1)
@@ -67,7 +79,7 @@ These resources Have been provided for a  Linux course I have had to instruct. I
          * [Vim Cheat sheet for programmers](#vim-cheat-sheet-for-programmers)
          * [Vim Plugins / Features](#vim-plugins--features)
       * [Bash Scripting](#bash-scripting)
-         * [How to setup a bash IDE](#How-To-Setup-Bash-IDE)
+         * [How To Setup Bash IDE](#how-to-setup-bash-ide)
          * [Internal Variables](#internal-variables)
          * [Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177](#building-a-program-with-shell-scripting-linux-terminal-201---haktip-177)
          * [HakTip - Bash Basics: Turn Long Commands into Scripts](#haktip---bash-basics-turn-long-commands-into-scripts)
@@ -78,7 +90,6 @@ These resources Have been provided for a  Linux course I have had to instruct. I
       * [Over the wire solutions](#over-the-wire-solutions)
       * [Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))](#scripts-and-solutions-from-the-course-please-ask-the-instructor-for-the-password---also-listed-on-day-3-slides--you-may-need-7zip-to-decrypt)
       * [Arch Linux Installation Fixes](#arch-linux-installation-fixes)
-      
 
 
 # Bash keyboard commands
