@@ -418,6 +418,12 @@ Command | Description
 
 ## Sed
 
+### Introduction & Description
+
+Sed, is a command that is used to search and replace a string from a stream or file, without having to open it in a text editor. Think of it like the function in microsoft word, where you have used replace to fix every instance of a typo you might have done. Similar to grep, it works by searching each line in a file for your pattern, and replaces it with something you have typed.
+
+![sedcomic](https://pbs.twimg.com/media/DeN10NLUQAApvNY?format=jpg&name=medium)
+
 Command | Description
 -------|--------
 `sed -e ‘s/<search>/<replace>/’ <filename>` |	Searches for <search> and replaces the first instance with <replace> on each line
