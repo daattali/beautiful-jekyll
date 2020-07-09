@@ -3,26 +3,64 @@ layout: page
 title: Ubuntu
 subtitle: MDS software stack install instructions for Ubuntu
 ---
-
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- Ubuntu 14.04 or later (we __strongly__ recommend 18.04).
-- can connect to networks via a wireless connection (and preferably also a wired connection)
-- has at least 40 GB disk space available
-- has at least 4 GB of RAM
+
+- runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 20.04 or later, Windows 10 Professional, Enterprise or Education; version 1909 or later. Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.
+- can connect to networks via a wireless connection
+- has at least 50 GB disk space available
+- has at least 8 GB of RAM
 - uses a 64-bit CPU
 - is 4 years old or newer at the start of the program
 - uses English as the default language
+- student user has full administrative access to the computer
+
+**Students' whose laptops do not meet the requirements specified above will not be able to receive techinical assistance from the MDS team in troubleshooting installation issues.**
 
 ## Table of Contents
+- [Google Chrome browser](#chrome-browswer)
+- [LastPass password manager](#lastpass-password-manager)
+- [Slack](#slack)
+- [Visual Studio Code](#visual-studio-code)
 - [GitHub](#github)
 - [Git](#git)
-- [Python and Jupyter](#python)
-- [R, IRkernel and RStudio](#r-irkernel-and-rstudio)
+- [Python](#python)
+- [Essential python packages](#essential-python-packages)
+- [Jupyter extensions](#jupyter-extensions)
+- [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
 - [PostgreSQL](#postgresql)
-- [Visual Studio Code](#visual-studio-code)
-- [LaTeX](#latex)
-- [Make](#make)
 - [Docker](#docker)
+- [Visual Studio Code Extensions](#visual-studio-code-extensions)
+
+## Google Chrome browser
+In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.
+
+## LastPass password manager
+In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: https://lastpass.com/create-account.php. We also recommend installing the LastPass Chrome Extension available here: https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd.
+
+## Slack
+For our MDS courses and program annoucements, correspondance and course forums we use the communcation tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. The Slack app can be installed from the the Slack website. Installation instructions are available here: [https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac](https://slack.com/intl/en-ca/help/articles/207677868-Download-Slack-for-Mac)
+
+## Visual Studio Code
+
+### Installing
+
+We need a powerfull but lightwight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac). **Be sure to follow the "[Launching from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)" instructions as well.**
+
+You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
+
+```
+code --version
+```
+
+you should see something like this if you were successful:
+```
+1.45.1
+5763d909d5f12fe19f215cbfdd29a91c0fa9208a
+x64
+```
+
+> Note: If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the lauch from the command line. Try following [these](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instrutions again, in particular you might want to try the described manual method of adding VS Code to your path.
+
 
 ## GitHub
 
