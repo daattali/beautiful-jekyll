@@ -397,7 +397,7 @@ Grep is a Linux users "Swiss Army knife" of searching for strings or patterns, t
 
 Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we might only want to limit our results to POST requests (Where the client has upload something to the web server). This is useful, as it enables us to quickly search a file, for where a malicious script might have been uploaded from our client.
 
-In this case, we have reduced the analyst's work, by reducing a file of over 1000 lines to 58, a much easier bit of data to sort through.
+In this case, we have reduced the analyst's work, by reducing a file of over 1000 lines to 58, a much easier bit of data to sort through. - testupdate
 
 ![grep](https://angry-bender.github.io/img/lt/grep.png)
 
