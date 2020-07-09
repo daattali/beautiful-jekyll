@@ -391,7 +391,7 @@ then, after using an awk, or any method of reducing data down to a single charac
 
 Grep is a Linux users "Swiss Army knife" of searching for strings or patterns, think of it like your find button in notepad, but on steroids. It works by scanning each line of text in a steam or file, searching it for your pattern, then printing it to the terminal.
 
-![grepcomic](https://pbs.twimg.com/media/DcPeD_CW0AEkSar.jpg)
+![grepcomic](https://angry-bender.github.io/img/lt/grepcomic.jpg)
 
 ### Working example
 
@@ -422,7 +422,7 @@ Command | Description
 
 Sed, is a command that is used to search and replace a string from a stream or file, without having to open it in a text editor. Think of it like the function in Microsoft word, where you have used replace to fix every instance of a typo you might have done. Similar to grep, it works by searching each line in a file for your pattern, and replaces it with something you have typed.
 
-![sedcomic](https://pbs.twimg.com/media/DeN10NLUQAApvNY.jpg)
+![sedcomic](https://angry-bender.github.io/img/lt/sedcomic.jpg)
 
 Command | Description
 -------|--------
