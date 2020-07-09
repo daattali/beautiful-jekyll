@@ -436,6 +436,10 @@ Command | Description
 `awk -f <awkfile> filename` |	Allows the use of an awkfile for processing
 `awk ‘{print $3}’` |	prints all the 3’rd arguments in a file
 
+### Extra tutorials
+
+* [Awk tutorial](#awk-tutorial)
+* [How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170](#how-to-use-tr-sed-and-aspell-linux-terminal-201---haktip-170)
 
 [*Back to table of contents*](#Table-of-Contents)
 
