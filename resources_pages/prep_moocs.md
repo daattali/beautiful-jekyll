@@ -21,6 +21,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Python Programming: A Concise Introduction](https://www.coursera.org/learn/python-programming-introduction), from Wesleyan U. (Coursera)
 - [Introduction to Data Science in Python](https://www.coursera.org/learn/python-data-analysis), from U. Michigan (Coursera)
 - [Principles of Computing (Part 1)](https://www.coursera.org/learn/principles-of-computing-1), from Rice U. (Coursera)
+- [Foundations of Python Programming](https://runestone.academy/runestone/books/published/fopp/index.html) ([Runestone](https://runestone.academy/))
 
 ### R
 - [R for Data Science](https://r4ds.had.co.nz/)
