@@ -424,6 +424,12 @@ Sed, is a command that is used to search and replace a string from a stream or f
 
 ![sedcomic](https://angry-bender.github.io/img/lt/sedcomic.jpg)
 
+### Working example
+
+Within forensics, I have normally used this command to replace whitespace, or spaces with comma's so we can convert it into a .csv file, to read in excel. Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) as an example.
+
+![sed](https://angry-bender.github.io/img/lt/sed.png)
+
 Command | Description
 -------|--------
 `sed -e ‘s/<search>/<replace>/’ <filename>` |	Searches for <search> and replaces the first instance with <replace> on each line
