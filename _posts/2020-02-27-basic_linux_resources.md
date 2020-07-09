@@ -426,7 +426,7 @@ Awk itself is quite a powerful command, and has its own scripting lanuage to acc
 ### Working example
 Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we can see a lot of data present, that might be hard to read. Or, might need to be piped into another command like a GREP. To make analysis easier, we can reduce the file to just the relevant columns that we need. Do do this, you will need to count each of the columns by hand, and use the corresponding number in the `$<number>` within the `print` argument. Each column should be seperated with a `,`. See the below example
 
-![raw2dmptry](https://angry-bender.github.io/img/lt/awk.png)
+![awk](https://angry-bender.github.io/img/lt/awk.png)
 
 
 
