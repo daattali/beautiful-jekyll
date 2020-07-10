@@ -9,7 +9,7 @@ The completion of the capstone marks the end of my [Master of Data Science — C
 In between job hunting and trying to maintain a semblance of a normal life in the midst of a global pandemic, I'd like to reflect on these past two months and the lessons that I've gained.
 
 After eight months of intense coursework, the capstone was our chance to apply our newly-learned data science and computational linguistics skills to a real-world problem provided by an external partner. 
-My team was paired with Unbounce, a landing page builder, to use natural language processing (NLP) techniques on the three years' of customer feedback data that they had previously categorized manually. 
+My team, consisting of Zoe Xu, [Chidera Okoma](https://www.linkedin.com/in/chidera-okoma/), [Varun Tulasi](https://www.linkedin.com/in/varuntulasi/), and I, along with our UBC faculty advisor, [Miikka Silfverberg](https://mpsilfve.github.io/), were paired with Unbounce, a landing page builder. Our task was to use natural language processing (NLP) techniques on the three years' of customer feedback data that they had previously categorized manually. 
 By automating this categorization process using topic modelling and unsupervised machine learning techniques, our capstone project aimed to extract actionable insights from the data while saving the company time and employee energy. 
 Along the way, my team celebrated our successes, tackled our challenges, and gained some valuable insight for our next data science or computational linguistics project.
 
