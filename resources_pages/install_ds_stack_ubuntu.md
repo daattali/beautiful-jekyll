@@ -127,17 +127,27 @@ git config --global core.editor code
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. Thus to install Python and the `conda` package manager, we will install [Miniconda](https://docs.conda.io/en/latest/miniconda.html). We recommend installing the [Miniconda3 Linux 64-bit install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
-After installation, in terminal type the following to ask for the version of conda:
+Once the download is finished, open Terminal and execute the following commands:
+```
+bash path/to/the/file
+```
+> Note: most often this file is downloaded to the `Downloads` directory, and thus the command above is usually: `bash Downloads/Miniconda3-latest-Linux-x86_64\ \(4\).sh`
+
+For example,
+```
+bash Downloads/Anaconda3-2019.07-Linux-x86_64.sh
+```
+The instructions for the installation will then appear: (1) press Enter; (2) once the licence agreement shows, you can keep pressing enter to go through the whole document, or press Q to quit; (3) Type `yes` to accept the licence agreement; (4) you can accept the default installation location (just press Enter once again); (5) Type `yes` once again to accept the installer to run `conda init`.
+
+After installation, restart the terminal. Then, in terminal type the following to ask for the version of conda:
 ```
 conda --version
 ```
 you should see something like this if you were successful at installing conda (a Python package manager):
 
 ```
-conda 4.8.2
+conda 4.8.3
 ```
-
-> Note: If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
 
 After installation, in terminal type the following to ask for the version of Python:
 ```
@@ -146,10 +156,10 @@ python --version
 you should see something like this if you were successful at installing Python:
 
 ```
-Python 3.7.6
+Python 3.7.7
 ```
 
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/home/<USER>` directory), and try the installation again, selecting **Python 3.7**.
 
 ## Essential Python packages
 
@@ -181,52 +191,6 @@ conda install --yes nodejs=10.*
 pip install --upgrade jupyterlab-git
 conda install --yes jupytext=1.*
 jupyter lab build
-```
-## Python
-
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#linux) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
-
-Head to https://www.anaconda.com/download/#linux and download the Anaconda version for Linux with **Python 3.7** (make sure the linux tab is selected). Once the download is finished, open Terminal and execute the following commands:
-```
-bash path/to/the/file
-```
-
-For example,
-```
-bash Downloads/Anaconda3-2019.07-Linux-x86_64.sh
-```
-The instructions for the installation will then appear: (1) press Enter; (2) once the licence agreement shows, you can keep pressing enter to go through the whole document, or press Q to quit; (3) Type `yes` to accept the licence agreement; (4) you can accept the default installation location (just press Enter once again); (5) Type `yes` once again to accept the installer to run `conda init`.
-
-After installation, restart Terminal and type:
-```
-python3
-```
-you should see something like this if you were successful:
-
-```
-Python 3.7.3 (default, Mar 27 2019, 22:11:17) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> 
-```
-
-If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
-
-To see if Jupyter was successfully installed in the Anaconda Python distribution type the following in the terminal:
-
-```
-jupyter lab
-```
-
-A browser should have launched and you should see a page that looks like the screenshot below. 
-
-![](/resources_pages/imgs/jupyter_lab.PNG)
-
-
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda, then Anaconda in terminal as follows:
-```
-    conda update conda
-    conda update anaconda
 ```
 
 ## R, IRkernel and RStudio
