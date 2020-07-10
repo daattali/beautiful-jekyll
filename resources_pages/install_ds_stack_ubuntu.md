@@ -131,12 +131,12 @@ Once the download is finished, open Terminal and execute the following commands:
 ```
 bash path/to/the/file
 ```
-> Note: most often this file is downloaded to the `Downloads` directory, and thus the command above is usually: `bash Downloads/Miniconda3-latest-Linux-x86_64\ \(4\).sh`
+> Note: most often this file is downloaded to the `Downloads` directory, and thus the command above is usually: 
+>
+>```
+>bash Downloads/Anaconda3-2019.07-Linux-x86_64.sh
+>```
 
-For example,
-```
-bash Downloads/Anaconda3-2019.07-Linux-x86_64.sh
-```
 The instructions for the installation will then appear: (1) press Enter; (2) once the licence agreement shows, you can keep pressing enter to go through the whole document, or press Q to quit; (3) Type `yes` to accept the licence agreement; (4) you can accept the default installation location (just press Enter once again); (5) Type `yes` once again to accept the installer to run `conda init`.
 
 After installation, restart the terminal. Then, in terminal type the following to ask for the version of conda:
@@ -198,42 +198,45 @@ We will be using R, another programming language, a lot in the program. We will 
 
 #### R
 
-Type `sudo apt-add-repository` in Terminal followed by the corresponding line for your version:
-  - for Ubuntu 19.04 (Disco) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu disco-cran35/'`
-  - for Ubuntu 18.04.1 (Bionic Beaver) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'`
-  - for Ubuntu 17.10.1 (Artful Aardvark) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'`
-  - for Ubuntu 16.04.4 (Xenial Xerus) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/'`
-  - for Ubuntu 14.04.5 (Trusty Tahr) add: `'deb https://cloud.r-project.org/bin/linux/ubuntu trusty-cran35/'`
+To obtain the latest R 4.0 packages, type the following into the terminal:
 
-For example, for Ubuntu 18.04 (Bionic Beaver):
 ```
-sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
 ```
 
 Next, add the key ID for the CRAN network:
+
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 ```
-
 Then, update the repository:
+
 ```
 sudo apt-get update
  ```
 
-Next, install the following packages:
+Next, install `r-base`:
+
 ```
-sudo apt-get install curl libssl-dev libcurl4-openssl-dev libpq-dev libxml2-dev r-base
- ```
+sudo apt-get install r-base
+```
+
+And then `r-base-dev` (useful for compiling R packages from source):
+
+```
+sudo apt-get install r-base-dev
+```
 
 After installation, in terminal type the following to ask for the version:
 ```
 R --version
 ```
 
-you should see something like this if you were successful:
+You should see something like this if you were successful:
+
 ```
-R version 3.6.1 (2019-07-05) -- "Action of the Toes"
-Copyright (C) 2019 The R Foundation for Statistical Computing
+R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+Copyright (C) 2020 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 R is free software and comes with ABSOLUTELY NO WARRANTY.
@@ -243,20 +246,38 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
-#### RStudio
-Chose and download the appropriate Ubuntu version of [RStudio](www.rstudio.com/products/rstudio/download/#download). 
+> Note: For MDS it is important that you have R 4.0 or higher.
 
-Double click the file and click `install` or, alternatively, run the following command:
-```
-sudo apt install ./Downloads/rstudio-1.2.1335-amd64.deb
-```
-and you should be able to open RStudio. 
+### RStudio
 
-To see if you were successful, try opening RStudio by clicking on its icon (from Finder, Applications or Launchpad). It should open and looks something like this picture below:
+Chose and download the Ubuntu 18/Debian 10 version of RStudio Desktop from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
+
+> Note: there is not yet a RStudio version for Ubuntu 20.04, however many users have been successfully using the Ubuntu 18/Debian 10 version of RStudio Desktop on Ubuntu 20.04 and so we will use that.
+
+To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
-#### IR kernel
+
+
+
+
+
+Next, install the following packages:
+```
+sudo apt-get install curl libssl-dev libcurl4-openssl-dev libpq-dev libxml2-dev r-base
+ ```
+
+### IR kernel
+
+Open RStudio and type the following commands into the Console panel:
+
+```
+install.packages(c('IRkernel', 'tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
+```
+
+
+
 In Terminal window type the following commands:
 
 ```
