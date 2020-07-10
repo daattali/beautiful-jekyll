@@ -74,3 +74,5 @@ Or you can contact me through my [LinkedIn](https://www.linkedin.com/in/andrespi
 ---------
 
 [Andres Pitta](https://www.linkedin.com/in/andrespitta19/) graduated from the UBC MDS program in 2020.
+
+The post was originally posted on Andres's blog [here](https://andrespitta.github.io/Realistic-Neighbourhoods/).
