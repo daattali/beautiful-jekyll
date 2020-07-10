@@ -123,7 +123,65 @@ git config --global core.editor code
 
 > Note: to ensure you haven't made a typo in any of the above, you can view your global Git configurations by typing: `git config --list --global --show-origin`.
 
+## Python
 
+We will be using Python for a large part of the program, and `conda` as our Python package manager. Thus to install Python and the `conda` package manager, we will install [Miniconda](https://docs.conda.io/en/latest/miniconda.html). We recommend installing the [Miniconda3 Linux 64-bit install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
+
+After installation, in terminal type the following to ask for the version of conda:
+```
+conda --version
+```
+you should see something like this if you were successful at installing conda (a Python package manager):
+
+```
+conda 4.8.2
+```
+
+> Note: If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
+
+After installation, in terminal type the following to ask for the version of Python:
+```
+python --version
+```
+you should see something like this if you were successful at installing Python:
+
+```
+Python 3.7.6
+```
+
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
+
+## Essential Python packages
+
+We also prefer to use packages on the conda-forge channel, so we set that to the default by typing the following in the terminal:
+
+```
+conda config --add channels conda-forge
+
+```
+
+Thus, to install other pacakges individually, we can now use the following: conda install <package-name>. We will install the key packages needed for the start of our program now:
+
+```
+conda install --yes \
+ jupyterlab=2.* \
+ numpy=1.* \
+ pandas=1.* \
+ flake8=3.* \
+ black=19.*
+```
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+
+## Jupyter extensions
+We will be using several Jupyter extensions that help us use Juypter notebooks more smoothly with Git & GitHub. To install them, paste the following in the terminal below:
+
+```
+conda install --yes nodejs=10.*
+pip install --upgrade jupyterlab-git
+conda install --yes jupytext=1.*
+jupyter lab build
+```
 ## Python
 
 We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com/download/#linux) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __require__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
