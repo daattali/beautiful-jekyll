@@ -44,9 +44,7 @@ For our MDS courses and program annoucements, correspondance and course forums w
 
 ## Visual Studio Code
 
-### Installing
-
-We need a powerfull but lightwight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Follow the installation instructions here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac). **Be sure to follow the "[Launching from the command line](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)" instructions as well.**
+We need a powerfull but lightwight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb). 
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
@@ -56,13 +54,10 @@ code --version
 
 you should see something like this if you were successful:
 ```
-1.45.1
-5763d909d5f12fe19f215cbfdd29a91c0fa9208a
+1.47.0
+d5e9aa0227e057a60c82568bf31c04730dc15dcd
 x64
 ```
-
-> Note: If you get an error message such as `-bash: code: command not found`, but you can see the VS Code application has been installed, then something went wrong with setting up the lauch from the command line. Try following [these](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instrutions again, in particular you might want to try the described manual method of adding VS Code to your path.
-
 
 ## GitHub
 
@@ -81,10 +76,27 @@ This step is required for
 - all homework submission and grading
 - working collaboratively
 
+## GitHub
+
+In MDS we will use [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
+
+#### GitHub.com
+If you do not yet have one, sign up for a free account at [GitHub.com](https://github.com/).
+
+#### GitHub.ubc.ca
+For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login using your CWL:
+
+visit [Github.ubc.ca](https://github.ubc.ca) to do this.
+
+This step is required for
+- being able to store your work
+- all homework submission and grading
+- working collaboratively
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio. To install the latest version of Git, open Terminal and type the following commands:
+We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. There are some new Git commands that we will use that are only available as of Git 2.23 (or newer), thus to get this newest version we will ask you to update your Git even if you have already installed it. 
+
 ```
 sudo apt-add-repository ppa:git-core/ppa
 sudo apt-get update
@@ -98,8 +110,19 @@ git --version
 you should see something like this if you were successful:
 
 ```
-git version 2.22.0
+git version 2.27.0
 ```
+
+Next, we need to configure Git by telling it who you are, your email and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
+
+```
+git config --global user.name "Jane Doe"
+git config --global user.email janedoe@example.com
+git config --global core.editor code
+```
+
+> Note: to ensure you haven't made a typo in any of the above, you can view your global Git configurations by typing: `git config --list --global --show-origin`.
+
 
 ## Python
 
