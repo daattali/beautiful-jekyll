@@ -1,6 +1,7 @@
 ---
 title: "Generating Photo-Realistic Neighbourhoods using Artificial Intelligence"
 layout: post
+share-img: "https://github.com/AndresPitta/UBC-MDS.github.io/blob/master/img/blog/capstone_realtor/giraffe.jpg?raw=true"
 ---
 
 Before starting, I wanted to give a brief introduction to the project, as well as give a special thanks to the team I worked with. This project was done for [realtor.com](https://www.realtor.com/) as a UBC MDS [capstone project](https://ubc-mds.github.io/capstone/about/). The team -- [Braden Tam](https://github.com/bradentam), [Florence Wang](https://github.com/fsywang), [Hanying Zhang](https://github.com/HanyingZhang) and [me](https://github.com/AndresPitta) -- was given the task of using image generation to generate realistic pictures of neighbourhoods. The solution will address the issue of having empty thumbnails for some specific pages of the website. It is also worth mentioning that the images are not related to house postings (because we cannot sell a house that does not exist), but it is more related to the aesthetics of the website. Now that we know what the project is about, let's start.
