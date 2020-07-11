@@ -11,7 +11,7 @@ Mi nombre es Josemy Duarte y sé una cosa o dos sobre programación. Si quieres 
 
 Crecí en un pequeño pueblo del estado Miranda, Venezuela. Desde pequeño siempre me llamaron la atención las computadoras y en medio de tanto interés, sumado a la curiosidad de un adolescente, dañé unas cuantas... Sin embargo, no fue sino hasta la universidad que aprendí sobre el *arte de la programación*. Así que desde el 2010 ando en esto de lanzar líneas de código.
 
-Actualmente estoy en [NetSuite](https://www.netsuite.com/) dando lo mejor de mi por contribuir en la construcción del mejor Cloud ERP del mercado junto a un gran equipo.
+Actualmente estoy en [Leadtech](https://leadtech.com/) dando lo mejor de mi por contribuir en la construcción de multiples proyectos relacionados con SaaS en una plataforma 100% serverless junto a un gran equipo.
 
 ## Me gusta...
 
