@@ -64,7 +64,13 @@
   {% endif %}
 
 
+  {% if page.id %}
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="{{ site.author }}">
+  <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% else %}
   <meta property="og:type" content="website">
+  {% endif %}
 
   {% if page.id %}
   <meta property="og:url" content="{{ page.url | absolute_url }}">
@@ -74,15 +80,34 @@
   <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
   {% endif %}
 
-  {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}">
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.avatar | absolute_url }}">
+  {%- capture shareimg -%}
+    {% if page.share-img %}
+      {{ page.share-img }}
+    {% elsif page.cover-img %}
+      {% if page.cover-img.first %}
+        {{ page.cover-img[0].first.first }}
+      {% else %}
+        {{ page.cover-img }}
+      {% endif %}
+    {% elsif page.thumbnail-img %}
+      {{ page.thumbnail-img }}
+    {% elsif site.avatar %}
+      {{ site.avatar }}
+    {% endif %}
+  {% endcapture %}
+  {% assign shareimg=shareimg | strip %}
+
+  {% if shareimg != "" %}
+  <meta property="og:image" content="{{ shareimg | absolute_url }}">
   {% endif %}
 
 
   <!-- Twitter summary cards -->
+  {% if shareimg != "" %}
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}
   <meta name="twitter:card" content="summary">
+  {% endif %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
 
@@ -102,10 +127,8 @@
   <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncatewords: 50 }}">
   {% endif %}
 
-  {% if page.share-img %}
-  <meta name="twitter:image" content="{{ page.share-img }}">
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.avatar | absolute_url }}">
+  {% if shareimg != "" %}
+  <meta name="twitter:image" content="{{ shareimg | absolute_url }}">
   {% endif %}
 
   {% if site.matomo %}

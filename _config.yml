@@ -24,7 +24,7 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/assets/img/selfieself.jpg"
 
-# By default, the image is cut into a circle. You can disable this behaviour here.
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of the title text,
@@ -58,6 +58,9 @@ social-network-links:
 #  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
+#  mastodon: instance.url/@username
+#  ORCID: your ORCID ID
+#  google-scholar: your google scholar
 
 # --- General options --- #
 
@@ -66,6 +69,7 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
+  vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer

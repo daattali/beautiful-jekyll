@@ -149,6 +149,7 @@ img {
   line-height: 1.5;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  font-size: 1.125rem;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -207,6 +208,7 @@ img {
 
 .navbar-toggler {
   font-size: 1rem;
+  margin: 0.5rem 0;
 }
 .navbar-custom .navbar-toggler:focus,
 .navbar-custom .navbar-toggler:hover {
@@ -240,7 +242,8 @@ img {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
-  .navbar-expand-md .navbar-nav .nav-item:last-child .nav-link {
+
+  .navbar-expand-md .navbar-nav .nav-item:not(.dropdown):last-child .nav-link {
     padding-right: 0;
   }
 }
@@ -481,6 +484,7 @@ footer .footer-custom-content {
 }
 .post-image {
   float: right;
+  margin-left: 0.625rem;
   height: 12rem;
   width: 12rem;
   margin-top: -2.1875rem;
@@ -536,6 +540,14 @@ footer .footer-custom-content {
   }
 }
 
+@media (max-width: 767px) {
+  .post-image, .post-image img {
+    margin-top: 0;
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
 @media (max-width: 500px) {
   .post-image, .post-image img {
     height: 6.25rem;
@@ -546,7 +558,8 @@ footer .footer-custom-content {
     width: 100%;
     text-align: center;
     margin-top: 0;
-    float: left;
+    margin-left: 0;
+    float: none;
   }
 }
 /* --- Post and page headers --- */

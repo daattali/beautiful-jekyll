@@ -34,6 +34,14 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.vk %}
+    <a href="https://vk.com/share.php?url={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-vk" title="Share on VK">
+      <span class="fab fa-fw fa-vk" aria-hidden="true"></span>
+      <span class="sr-only">VK</span>
+    </a>
+  {% endif %}
+
 </section>
 
 {% endif %}

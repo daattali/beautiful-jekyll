@@ -1,19 +1,31 @@
-## v3.0.0
+## v4.0.0 Date: TBD
 
-Date: TBD
+- **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
+- **BREAKING CHANGE** Don't use the thumbnail as the avatar image 
+- Cover image will automatically be used as thumbnail if none is provided
+- Image to share on social media will use the cover image or thumbnail if none is provided
+- All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
+- Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
+- Add social network links: Mastodon (#646), Google Scholar, ORCID (#670)
+- Add support for sharing pages on new social network: VK (#657)
+- Use Open Graph type 'article' for blog posts (#669)
+- Use Twitter's `summary_large_image` card when `share-img` is specified (#668)
+- Make post images in the feed page smaller on smaller devices
+
+## v3.0.0 2020-05-07
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
-- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`.
-- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`. 
-- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people.
-- Added `navbar-border-col` setting in the config file.
-- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px.
-- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015.
-- Improvements to the README instructions.
+- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
+- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
+- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
+- Added `navbar-border-col` setting in the config file
+- Add accessibility features where possible
+- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
+- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
+- Remove most of the sample posts so that users only have two sample posts to learn from
+- Improvements to the README instructions
 
-## v2.3.0 
-
-2020-04-29
+## v2.3.0 2020-04-29
 
 - Add YAML option `footer-extra` for including custom content in the footer
 - Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
@@ -21,18 +33,14 @@ Date: TBD
 - Add social network link: Calendly
 - Fix bug where RSS link in footer was showing even when turned off
 
-## v2.2.0
-
-2020-04-27
+## v2.2.0 2020-04-27
 
 - Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
 - Moved the demo site to an independent URL: https://beautifuljekyll.com 
 - Major documentation overhaul and cleanup of old files 
 - Fix a few bugs from the remote_theme migration
 
-## v2.0.0
-
-2020-04-26
+## v2.0.0 2020-04-26
 
 - Beautiful-Jekyll v2.0.0 available as an official Ruby gem
 - Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
