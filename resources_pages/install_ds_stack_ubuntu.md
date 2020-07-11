@@ -258,24 +258,29 @@ To see if you were successful, try opening RStudio by clicking on its icon. It s
 
 ![](/resources_pages/imgs/RStudio.png)
 
+### Essential R packages
 
+The `tidyverse` R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
 
-
-
-
-Next, install the following packages:
 ```
-sudo apt-get install curl libssl-dev libcurl4-openssl-dev libpq-dev libxml2-dev r-base
- ```
+sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev
+```
+
+We will install the key R packages needed for the start of our program now:
+
+```
+install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
+```
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IR kernel
 
 Open RStudio and type the following commands into the Console panel:
 
 ```
-install.packages(c('IRkernel', 'tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
+install.packages('IRkernel')
 ```
-
 
 
 In Terminal window type the following commands:
