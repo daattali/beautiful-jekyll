@@ -14,7 +14,6 @@ author: Josemy Duarte
 navbar-links:
   Home: "https://josemyduarte.github.io"
   Stuff:
-    - MeetUps: "meetups"
     - Read later: "articles"
     - Books: "books"
   About Me: "aboutme"
@@ -265,9 +264,6 @@ jekyll_get:
     cache: false
   - data: books_review
     json: 'http://gsx2json.com/api?id=1XKI7LtPmxx9q8vmoPmVJ3gGREi7KV7_E8Jj8KDqMUs8&sheet=1'
-    cache: false
-  - data: meetups
-    json: 'http://gsx2json.com/api?id=1-yMoDny1Uu0gK2LLXkabO8Y72OZkUCpcdJyHeMdBLo0&sheet=2'
     cache: false
 
 plugins:
