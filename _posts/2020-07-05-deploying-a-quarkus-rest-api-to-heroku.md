@@ -4,8 +4,8 @@ published: true
 title: 'Earthly + Quarkus Funqy'
 subtitle: 'Simplifying building automation'
 date: '2020-07-05'
-image: /assets/img/quarkus_logo.png
-share-img: /assets/img/quarkus_logo.png
+image: /assets/img/earthly-logo.png
+share-img: /assets/img/earthly-logo.png
 tags: [cloud, serverless, quarkus, earthly]
 ---
 
