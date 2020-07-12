@@ -9,7 +9,7 @@
 - Add social network links: Mastodon (#646), Google Scholar, ORCID (#670)
 - Add support for sharing pages on new social network: VK (#657)
 - Use Open Graph type 'article' for blog posts (#669)
-- Use Twitter's `summary_large_image` card when `share-img` is specified (#668)
+- Use Twitter's large sumary card (large image) when there is a cover image, thumbnail image, or share image specified (#668)
 - Make post images in the feed page smaller on smaller devices
 - Fixed jQuery version in staticman (#671)
 
