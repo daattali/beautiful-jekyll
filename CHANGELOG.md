@@ -1,7 +1,7 @@
 ## v4.0.0 Date: TBD
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
-- **BREAKING CHANGE** Don't use the thumbnail as the avatar image 
+- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image 
 - Cover image will automatically be used as thumbnail if none is provided
 - Image to share on social media will use the cover image or thumbnail if none is provided
 - All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
