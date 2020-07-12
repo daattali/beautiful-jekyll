@@ -215,6 +215,8 @@ If you need any help, I suggest heading over to the [Jekyll support forum](https
 
 Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](https://jekyllrb.com/) or with Google.
 
+**If you really wany my personal help, please visit https://xscode.com/daattali/beautiful-jekyll to hire my services.**
+
 ### What if I don't want the website to be `https://<yourusername>.github.io`?
 
 Every GitHub user can have one repository (repository = project) named `<yourusername>.github.io` and the website for that repository will be `https://<yourusername>.github.io`. 
