@@ -1,4 +1,4 @@
-## v4.0.0 Date: TBD
+## v4.0.0 2020-07-12
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
 - **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image 
