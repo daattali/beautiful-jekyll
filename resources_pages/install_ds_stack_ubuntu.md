@@ -317,43 +317,20 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ## PostgreSQL
 We will be using PostgreSQL as our database management system. To install PostgreSQL in Ubuntu type the following commands:
-- for Ubuntu 18.04
+- for Ubuntu 20.04
 ```
-sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main'
-```
-- for Ubuntu 16.04
-```
-sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main'
+sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main'
 ```
 
 Then, 
 ```
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install postgresql-11
+sudo apt-get install postgresql-12
 ```
 That's it! You can test if the installation worked by running
 ```
 sudo su -c psql postgres
-```
-
-## Visual Studio Code
-
-### Installing
-
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. Double-click the item, and click in install. That's it!
-
-You can test that VS code is installed and can be opened from Terminal by running the following command:
-
-```
-code --version
-```
-
-you should see something like this if you were successful:
-```
-1.36.1
-2213894ea0415ee8c85c5eea0d0ff81ecc191529
-x64
 ```
 
 ### Customizing VS Code with Extensions
