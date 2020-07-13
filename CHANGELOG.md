@@ -1,3 +1,7 @@
+## v4.0.1 2020-07-13
+
+- Fixed staticman comments UI that was broken since the migration to bootstrap 4
+
 ## v4.0.0 2020-07-12
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
