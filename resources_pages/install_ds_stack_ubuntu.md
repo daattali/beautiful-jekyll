@@ -333,23 +333,17 @@ That's it! You can test if the installation worked by running
 sudo su -c psql postgres
 ```
 
-### Customizing VS Code with Extensions
+From a succesful install, the above should yield the prompt to change to what is shown below:
+```
+psql (12.3 (Ubuntu 12.3-1.pgdg18.04+1))
+Type "help" for help.
+postgres=# 
 
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+```
 
-![](/resources_pages/imgs/vscode.png)
+> Note: to exit from Postgres type `exit`
 
-To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
 
-- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
-- markdownlint (markdown linting and style checking extension)
-- GitLens (powerful extension that extends VS Code's native git capabilities)
-- Docker (easily use Docker from VS Code)
-- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
-- (Optional) Material Icon Theme (great-looking custom file icons!)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
-
-This [video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
 ## LaTeX
 Open Terminal and type the following command:
@@ -378,31 +372,6 @@ Compiled with zlib 1.2.8; using zlib 1.2.8
 Compiled with poppler version 0.62.0
 ```
 
-## Make
-
-We will be using Make to automate our analysis scripts. More on this later!
-Make already comes installed in Ubutun 18.04, you can check by executing the following command in Terminal:
-```
-make --version
-```
-you should see something like this if you were successful:
-
-```
-GNU Make 4.2.1
-Built for x86_64-pc-linux-gnu
-Copyright (C) 1988-2016 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-```
-
-If not, to install Make open Terminal and type the following command:
-```
-sudo apt-get install build-essential
-```
-
-After, type `make --version` to make sure you were successful. 
-
 ## Docker
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
@@ -424,6 +393,24 @@ Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
 ```
+
+### Customizing VS Code with Extensions
+
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+
+![](/resources_pages/imgs/vscode.png)
+
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+
+- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
+- markdownlint (markdown linting and style checking extension)
+- GitLens (powerful extension that extends VS Code's native git capabilities)
+- Docker (easily use Docker from VS Code)
+- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
+- (Optional) Material Icon Theme (great-looking custom file icons!)
+- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+
+This [video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
 ## Attributions
 * [Harvard CS109](http://cs109.github.io/2015/)
