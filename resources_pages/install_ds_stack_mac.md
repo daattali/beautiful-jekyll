@@ -268,7 +268,6 @@ tlmgr install eurosym \
   environ \
   fp \
   jknapltx \
-  mathrsfs \
   ms \
   parskip \
   pgf \
