@@ -376,22 +376,45 @@ Compiled with poppler version 0.62.0
 
 You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the installation instructions [here](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the installation instructions using the "Install using the repository" methods found [here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
+
+Next, follow the Linux post installation steps [here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`. 
 
 After installation, in terminal type the following to ask for the version:
+
 ```
 sudo docker run hello-world
 ```
+
 you should see something like this if you were successful:
 
 ```
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
-c04b14da8d14: Pull complete
-Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9
+0e03bdcc26d7: Pull complete 
+Digest: sha256:d58e752213a51785838f9eed2b7a498ffa1cb3aa7f946dda11af39286c3db9a9
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
 ```
 
 ### Customizing VS Code with Extensions
