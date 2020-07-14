@@ -10,7 +10,7 @@ We will be using [Slack](https://slack.com/) as our primary means of electronic 
 
 #### Channels
 
-Our Slack workspace, UBC-MDS, contains many _channels_ for conversation. We will enrol you in the channels for the 25 MDS courses, as well as [#data-science-careers](https://ubc-mds.slack.com/messages/data-science-careers/details/), [#git-general](https://ubc-mds.slack.com/messages/git-general/details/), [#python-general](https://ubc-mds.slack.com/messages/python-general/details/) and [#r-general](https://ubc-mds.slack.com/messages/r-general/details/). You should be automatically enrolled in the [#general](https://ubc-mds.slack.com/messages/general/details/) and [#random](https://ubc-mds.slack.com/messages/random/details/) channels when you join Slack.
+Our Slack workspace, UBC-MDS, contains many _channels_ for conversation. We will enrol you in the channels for the 25 MDS courses, as well as several other useful channels. 
 
 These channels are all public. You can create private channels as well. For example, each year the students
 typically create a private channel for students only. At some point we will also invite you to the UBC MDS Alumni Slack workspace, which is completely disconnected from the main UBC MDS Slack workspace you use as a student.
@@ -57,6 +57,10 @@ On the subject of notifications, one nice feature of Slack is the reactions. Any
 #### Edits and deletion
 
 If you want to change something you wrote in Slack, you can always edit the message afterwards. You can also delete messages, for example if you wrote something by accident. 
+
+#### Message retention
+
+All UBC MDS Slack messages will be deleted at the end of each year (at least, all the messages in public channels, which are the ones we can control). If you see something on Slack that you would like to save for after the MDS program, it is your responsibility to make a copy of it. In general, though, most of the materials you may want to keep are on GitHub, and you will retain access to a copy of these materials at the end of the program. 
 
 #### Privacy
 
