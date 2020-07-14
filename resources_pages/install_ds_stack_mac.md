@@ -28,6 +28,7 @@ These instructions will walk you through installing the required Data Science so
 - [Essential python packages](#essential-python-packages)
 - [Jupyter extensions](#jupyter-extensions)
 - [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
+- [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
@@ -222,7 +223,7 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 Open RStudio and type the following commands into the Console panel:
 
 ```
-install.packages(c('IRkernel', 'tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
+install.packages(c('IRkernel', 'tidyverse', 'blogdown', 'xaringan', 'renv'))
 ```
 
 Next, open **terminal** and type the following:
@@ -244,6 +245,41 @@ A browser should have launched and you should see a page that looks like the scr
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
+
+## LaTeX
+
+We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF.
+
+First, open RStudio and run the following commands to install the `tinytex` package and install `tinytex`:
+
+```
+install.packages('tinytex')
+tinytex::install_tinytex()
+```
+
+The above is all we need to have LaTeX work with R Markdown documents, however to for Jupyter we need to add several more packages. Do this by opening a terminal and copying the following there press enter:
+
+```
+tlmgr install eurosym \
+  adjustbox \
+  caption \
+  collectbox \
+  enumitem \
+  environ \
+  fp \
+  jknapltx \
+  mathrsfs \
+  ms \
+  parskip \
+  pgf \
+  rsfs \
+  tcolorbox \
+  titling \
+  trimspaces \
+  ucs \
+  ulem \
+  upquote 
+```
 
 ## PostgreSQL 
 
