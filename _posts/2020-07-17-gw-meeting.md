@@ -25,7 +25,7 @@ Meeting time: 2020/7/17 10:00-12:00 (CST)
 Click the link to join the meeting, or add to the meeting list:
 https://meeting.tencent.com/s/i2S5YlskfaNm
 
-Conference ID: 
+Conference ID: 823 529 933
 
 Dial according to your location  
    +8675536550000 (Mainland China)
