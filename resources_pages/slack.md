@@ -64,4 +64,4 @@ All UBC MDS Slack messages will be deleted at the end of each year (at least, al
 
 #### Privacy
 
-Slack is not hosted on Canadian servers, and thus we recommend keeping the discussions and private messages on Slack to those related to course content, organization, etc. For personal and sensitive issues, communication between MDS students and instructional staff should be carried out using UBC email.
+Note the following important information from UBC about your privacy: Slack is stored on servers outside Canada. When you access this site you are transferred to these servers. UBC cannot guarantee security of your private information on servers outside of Canada. Please exercise caution whenever using personal information. You may wish to use a pseudonym to protect your privacy if you have concerns. Please feel free to contact LT.hub@ubc.ca if you have any questions about your privacy.
