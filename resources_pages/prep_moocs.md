@@ -51,3 +51,4 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - A variety of [free O'Reilly Ebooks on data science](http://www.oreilly.com/data/free/archive.html)
 - A list of data science textbooks, curated by an MDS alum, is available [here](https://www.notion.so/virtuallibrary/Textbook-References-e8afb919d3454759a731bda6e06a442d).
 - [Dataquest](https://www.dataquest.io/)
+- [Data Gymnasia](https://mathigon.org/data-gymnasia) from Brown University
