@@ -1,0 +1,14 @@
+---
+layout: post
+title: Shift from CISC to RISC
+tags: [computer architecture]
+---
+
+
+RISC is faster, more energy efficient and easier to design. CISC uses less memory and is simpler for compilers. 
+
+It made sense to use CISC in the 1980s, when memory was much more expensive, programming languages were lower level and compiler technology was not yet well established.
+Nowadays, memory is no longer a limiting factor and modern compilers/interpreters can turn high-level languages into machine code very easily.
+The priority now, with the mobile device revolution, is to design faster, less energy-consuming processors, and RISC is the way to go.
+In addition, as they are simpler to conceive, the market's transition to RISC would greatly increase competition in this segment, which has been quite stagnated in the last decade. because of the Intel/AMD duopoly.
+
