@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Algorithms and optimization
+subtitle: by Mike Gelbart
 ---
 
 Over the years I've struggled with the disconnect between "algorithms" — as a student might see

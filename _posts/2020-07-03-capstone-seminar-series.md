@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MDS 2019/2020 Capstone Seminar Series
+subtitle: by Tomas Beuzen
 share-img: "https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/blog/seminar.png?raw=true"
 ---
 

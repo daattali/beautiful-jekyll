@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Project courses in MDS
+subtitle: by Tiffany Timbers and Mike Gelbart
 share-img: "https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/mds-group-contract.jpg?raw=true"
 ---
 

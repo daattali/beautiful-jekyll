@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "NLP in the Real World: A Reflection on a Two-Month Capstone"
+subtitle: by Serena Huang
 share-img: "https://miro.medium.com/max/1400/1*t_l9RMNgrG7wafwiUMOSTw.png"
 ---
 

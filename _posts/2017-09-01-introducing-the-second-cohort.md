@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing our 2017-18 cohort
+subtitle: by Mike Gelbart
 ---
 
 This is an exciting time for the UBC MDS program, with the second cohort starting their journey in just a few days. 

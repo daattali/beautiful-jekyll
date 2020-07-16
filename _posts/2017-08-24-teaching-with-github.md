@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Teaching with GitHub
+subtitle: by Mike Gelbart
 tags: [github]
 ---
 

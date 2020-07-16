@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's for dinner? Predicting customer order probabilities
-subtitle: An MDS capstone project reflection
+subtitle: by Rachel K. Riggs
 ---
 
 One of the things that drew to me data science is its applicability to pretty much any field you can name: technology, healthcare, finance, retail, education, government, entertainment, agriculture, real estate, etc. There's no domain too large or small and no organization that would not benefit from having a data scientist (or a team of data scientists!) on staff to solve interesting problems.

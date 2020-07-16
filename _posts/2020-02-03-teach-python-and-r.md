@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Integrating R & Python into a Data Science program
+subtitle: by Tiffany Timbers
 share-img: "https://rstudio.github.io/reticulate/images/reticulated_python.png"
 ---
 

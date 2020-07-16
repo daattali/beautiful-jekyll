@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Winning the EasyMarkit AI Hackathon
+subtitle: by Bailey Lei
 category: blog
 ---
 

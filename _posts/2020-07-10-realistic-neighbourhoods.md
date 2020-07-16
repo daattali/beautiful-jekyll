@@ -1,5 +1,6 @@
 ---
 title: "Generating Photo-Realistic Neighbourhoods using Artificial Intelligence"
+subtitle: by Andres Pitta
 layout: post
 share-img: "https://github.com/AndresPitta/UBC-MDS.github.io/blob/master/img/blog/capstone_realtor/giraffe.jpg?raw=true"
 ---

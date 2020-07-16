@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Designing a Master of Data Science program
-subtitle: Goals, design decisions, and lessons learned 
+title: "Designing a Master of Data Science program: goals, design decisions, and lessons learned"
+subtitle: by Mike Gelbart
 ---
 
 Since launching the UBC MDS program in 2016, we've received a lot of questions on why we designed MDS the way we did. The post will address the following design decisions:

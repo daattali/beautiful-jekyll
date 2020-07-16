@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Teaching CNNs
-subtitle: Unpacking convolutional neural networks
+title: Teaching Convolutional Neural Networks
+subtitle: by Mike Gelbart
 share-img: "https://upload.wikimedia.org/wikipedia/commons/4/46/Colored_neural_network.svg"
 ---
 

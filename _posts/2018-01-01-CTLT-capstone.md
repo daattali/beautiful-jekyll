@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualizing massive open online courses
-subtitle: An MDS capstone project reflection
+subtitle: by Matthew Emery
 ---
 
 After eight months of coursework, the [UBC Master of Data Science](https://masterdatascience.science.ubc.ca/) (MDS) program concludes with a 2-month [Capstone project](https://ubc-mds.github.io/capstone/about/).
