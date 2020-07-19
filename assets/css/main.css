@@ -925,6 +925,10 @@ pre {
   font-size: 1rem;
 }
 
+/* --- Manual off set remover --- */
+.offset-xl-2 {
+  margin-left: 0%;
+}
 /* --- Typed.js --- */
 .typed-cursor {
   opacity: 1;
