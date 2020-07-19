@@ -4,10 +4,10 @@
 title: Le git du broutard
 
 # Short description of your site
-description: Site de Mathématiques
+description: Ressources de Mathématiques et de SNT
 
 # Your name to show in the footer
-author: Yan Mobius
+author: Yann Mobian
 
 # --- List of links in the navigation bar --- #
 
@@ -47,7 +47,7 @@ social-network-links:
   twitter: daattali
   rss: false
   email : " "
-  github: lechax
+  github:
   
 #  reddit: yourname
 #  linkedin: daattali
