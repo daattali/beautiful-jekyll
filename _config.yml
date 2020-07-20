@@ -22,7 +22,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/assets/img/84102910-E5A5-4E36-A367-8D593B609B2F_1_105_c.jpeg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -38,11 +38,11 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  rss: true
+  email: "henry.johnstonellis@icloud.com"
+#  facebook: deanattali
+  github: alphabetac
+#  twitter: daattali
+#  rss: true
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -64,11 +64,11 @@ social-network-links:
 # --- General options --- #
 
 # Select which social network share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
+#share-links-active:
+#  twitter: true
+#  facebook: true
+#  linkedin: true
+#  vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -84,8 +84,8 @@ excerpt_length: 50
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
+navbar-col: "#261447"
+navbar-text-col: "#FFFFFF"
 navbar-border-col: "#EAEAEA"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
