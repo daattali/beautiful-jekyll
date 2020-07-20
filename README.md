@@ -1,4 +1,4 @@
-[![](https://i.imgur.com/nhqzqHH.png)](https://xscode.com/daattali/beautiful-jekyll)
+[![](https://i.imgur.com/zNBkzj1.png)](https://xscode.com/daattali/beautiful-jekyll)
 
 # Beautiful Jekyll
 
