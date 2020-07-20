@@ -72,7 +72,7 @@ social-network-links:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+#url-pretty: "MyWebsite.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -85,8 +85,8 @@ excerpt_length: 50
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#F39C6B"
-navbar-text-col: "#FFFFFF"
-navbar-border-col: "#EAEAEA"
+navbar-text-col: "#777777"
+navbar-border-col: "#F39C6B"
 page-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
