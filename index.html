@@ -1,10 +1,14 @@
 ---
 layout: page
 title: The Hall Lab
-subtitle: Building computational tools to elucidate the complex genetic and environmental underpinnings of human traits
+subtitle: Penn State University
 use-site-title: true
 ---
 
+<!-- Mission image -->
+<img src="img/mission_slide.jpg", alt="Hall Lab Mission">
+
+<!-- Recent News -->
 {%   assign today = site.time | date: '%s' %}
 
 <h2 style="text-align: center">Recent Hall Lab News</h2>
@@ -26,7 +30,7 @@ use-site-title: true
 {% endfor %}
 <a class="btn-read-all" href="/news">See All News</a>
 
-
+<!-- Blog Posts -->
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
