@@ -4,20 +4,70 @@ title: Publications
 subtitle: Things that i do in free time
 ---
 
-## MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN
+The collection of my research work that I have done till date.
 
+---
+## MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN
+- **Conference:** Third International Conference on Computing & Communication(IC3)
 - **Publisher:** Springer (AISC) Series 
 - **Publication Year:** 2020
-- **Authors**: Md. Rafiuzzaman Bhuiyan, Md. Abdullahil- Oaphy, Rifa Shanzida Khanam, Md. Sanzidul Islam 
-- **Link:** 
+- **Authors:** _Md. Rafiuzzaman Bhuiyan, Md. Abdullahil- Oaphy, Rifa Shanzida Khanam, Md. Sanzidul Islam_ 
+- **Link:** when online 
+<br/>
 
+## A Deep Learning Based Assistive System to Classify COVID-19 Face Mask for Human Safety with YOLOv3
+- **Conference:** 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)
+- **Publisher:** IEEE Xplorer
+- **Publication Year:** 2020
+- **Authors:** _Md. Rafiuzzaman Bhuiyan, Sharun Akter Khushbu, Md. Sanzidul Islam_ 
+- **Link:** when online 
+<br/>
 
+## An Approach for Bengali Automatic Question Answering System using Attention Mechanism
+- **Conference:** 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)
+- **Publisher:** IEEE Xplorer
+- **Publication Year:** 2020
+- **Authors:** _Md. Rafiuzzaman Bhuiyan, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Syed Akhter Hossain, Sheikh Abujar_
+- **Link:** when online 
+<br/>
 
+## An Attention Based Approach for Sentiment Analysis of Food Review Dataset
+- **Conference:** 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)
+- **Publisher:** IEEE Xplorer
+- **Publication Year:** 2020
+- **Authors:** _Md. Rafiuzzaman Bhuiyan, Mahmudul Hasan Mahedi, Naimul Hossain, Zerin Nasrin Tumpa, Syed Akhter Hossain_
+- **Link:** when online 
+<br/>
 
-1. Md. Rafiuzzaman Bhuiyan, Md. Abdullahil- Oaphy, Rifa Shanzida Khanam, Md. Sanzidul Islam "MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN", Third International Conference on Computing & Communication(IC3)-Sikkim Manipal Institute of Technology, Majhitar, East Sikkim India.July 13-14, 2020, Proceedings: Springer (AISC) Series (Scopus Indexed).
-2. Md. Rafiuzzaman Bhuiyan, Sharun Akter Khushbu, Md. Sanzidul Islam ,"A Deep Learning Based Assistive System to Classify COVID-19 Face Mask for Human Safety with YOLOv3", 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed).
-3. Md. Rafiuzzaman Bhuiyan, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Sheikh Abujar, Syed Akhter Hossain, "An Approach for Bengali Automatic Question Answering System using Attention Mechanism", 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed).
-4. Md. Rafiuzzaman Bhuiyan, Mahmudul Hasan Mahedi, Naimul Hossain, Zerin Nasrin Tumpa, Syed Akhter Hossain, "An Attention Based Approach for Sentiment Analysis of Food Review Dataset", 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed).
-5. Md. Sabbir Alam Pran, Md. Rafiuzzaman Bhuiyan, Syed Akhter Hossain, Sheikh Abujar, "Analysis Of Bangladeshi People’s Emotion During Covid-19 In Social Media Using Deep Learning", 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed).
-6. Naimul Hossain, Md. Rafiuzzaman Bhuiyan, Zerin Nasrin Tumpa, Syed Akhter Hossain, "Sentiment Analysis of Restaurant Reviews using Combined CNN-LSTM", 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed).
-7. Md. Rafiuzzaman Bhuiyan, Mumenunnessa Keya, Abu Kaisar Mohammad Masum, Sheikh Abujar, Syed Akhter Hossain, "An Approach for Bengali News Headline Classification Using LSTM",2nd INTERNATIONAL CONFERENCE ON EMERGING TECHNOLOGIES IN DATA MINING AND INFORMATION SECURITY (IEMIS 2020). Institute of Engineering & Management, Kolkata, West Bengal. India on 2nd and 4th July, 2020, Proceedings: Springer (AISC) Series (Scopus Indexed).
+## An Approach for Bengali News Headline Classification Using LSTM
+- **Conference:** 2nd INTERNATIONAL CONFERENCE ON EMERGING TECHNOLOGIES IN DATA MINING AND INFORMATION SECURITY (IEMIS 2020)
+- **Publisher:** Springer (AISC) Series 
+- **Publication Year:**  2020
+- **Authors:** _Md. Rafiuzzaman Bhuiyan, Mumenunnessa Keya, Abu Kaisar Mohammad Masum, Syed Akhter Hossain, Sheikh Abujar_
+- **Link:** when online 
+<br/>
+
+## Classifying The Usual Leaf Diseases of Paddy Plants in Bangladesh Using Multi-Layered CNN Architecture
+- **Conference:** Third International Conference on Computing & Communication(IC3)
+- **Publisher:** Springer (AISC) Series 
+- **Publication Year:** 2020
+- **Authors:** _Md. Abdullahil- Oaphy, Md. Rafiuzzaman Bhuiyan, Md. Sanzidul Islam_ 
+- **Link:** when online 
+<br/>
+
+## Analysis Of Bangladeshi People’s Emotion During Covid-19 In Social Media Using Deep Learning
+- **Conference:** 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)
+- **Publisher:** IEEE Xplorer
+- **Publication Year:** 2020
+- **Authors:** _Md. Sabbir Alam Pran, Md. Rafiuzzaman Bhuiyan, Syed Akhter Hossain, Sheikh Abujar_
+- **Link:** when online 
+<br/>
+
+## Sentiment Analysis of Restaurant Reviews using Combined CNN-LSTM
+- **Conference:** 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT)
+- **Publisher:** IEEE Xplorer
+- **Publication Year:** 2020
+- **Authors:** _Naimul Hossain, Md. Rafiuzzaman Bhuiyan, Zerin Nasrin Tumpa, Syed Akhter Hossain_
+- **Link:** when online 
+<br/>
+
