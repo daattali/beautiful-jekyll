@@ -7,11 +7,11 @@ subtitle: For MDS Capstone Projects
 
 This year's capstone course will run __May - June, 2021__ (~8 weeks).
 
-The exact timeline is TBA, however an approximate timeline is provided below, followed by additional detail on each event.
+The exact capstone timeline is TBA, however an approximate timeline is provided below, followed by additional detail on each event.
 
 | Event                                                                                    | Deadline/Period     |
 |------------------------------------------------------------------------------------------|---------------------|
-| Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November , 2020     |
+| Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November, 2020      |
 | [Proposal deadline](#proposal-revision-process)                                          | December, 2020      |
 | [Selection of proposals](#selection-of-proposals)                                        | January, 2021       |
 | [Capstone fair](#capstone-fair)                                                          | February, 2021      |
