@@ -5,22 +5,22 @@ subtitle: For MDS Capstone Projects
 
 ---
 
-This year's capstone course will run __May 4, 2020 - June 30, 2020__ (8 weeks).
+This year's capstone course will run __May - June, 2021__ (~8 weeks).
 
-The approximate timeline is below, followed by additional detail on each event.
+The exact timeline is TBA, however an approximate timeline is provided below, followed by additional detail on each event.
 
-| Event | Deadline/Period |
-| ----- | ---- |
-| Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November 15, 2019 |
-| [Proposal deadline](#proposal-revision-process) | December 20, 2019  |
-| [Selection of proposals](#selection-of-proposals) | January 15, 2020   |
-| [Capstone fair](#capstone-fair)       | February 13 and 14, 2020 |
-| [Students rate the projects](#students-rate-the-projects)  | late February, 2020 |
-| [Partners are notified of our decisions](#partners-are-notified-of-our-decisions) | March 1, 2020 |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)  | April 1, 2020 |
-| [Kickoff meetings](#kickoff-meetings)    | March - April, 2020 |
-| [Project](#project) | May 4 - June 30, 2020 |
-| [Kickoff hackathon](#hackathon) | May 4 and 5, 2020 |
+| Event                                                                                    | Deadline/Period     |
+|------------------------------------------------------------------------------------------|---------------------|
+| Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November , 2020     |
+| [Proposal deadline](#proposal-revision-process)                                          | December, 2020      |
+| [Selection of proposals](#selection-of-proposals)                                        | January, 2021       |
+| [Capstone fair](#capstone-fair)                                                          | February, 2021      |
+| [Students rate the projects](#students-rate-the-projects)                                | February, 2021      |
+| [Partners are notified of our decisions](#partners-are-notified-of-our-decisions)        | March, 2021         |
+| [Partners demonstrate/declare readiness of data](#partners-provide-data)                 | April, 2021         |
+| [Kickoff meetings](#kickoff-meetings)                                                    | March - April, 2021 |
+| [Project](#project)                                                                      | May - June, 2021    |
+| [Kickoff hackathon](#hackathon)                                                          | May, 2021           |
 
 #### Proposal revision process
 
