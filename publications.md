@@ -4,6 +4,15 @@ title: Publications
 subtitle: Things that i do in free time
 ---
 
+## MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN
+
+- **Publisher:** Springer (AISC) Series 
+- **Publication Year:** 2020
+- **Authors**: Md. Rafiuzzaman Bhuiyan, Md. Abdullahil- Oaphy, Rifa Shanzida Khanam, Md. Sanzidul Islam 
+- **Link:** 
+
+
+
 
 1. Md. Rafiuzzaman Bhuiyan, Md. Abdullahil- Oaphy, Rifa Shanzida Khanam, Md. Sanzidul Islam "MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN", Third International Conference on Computing & Communication(IC3)-Sikkim Manipal Institute of Technology, Majhitar, East Sikkim India.July 13-14, 2020, Proceedings: Springer (AISC) Series (Scopus Indexed).
 2. Md. Rafiuzzaman Bhuiyan, Sharun Akter Khushbu, Md. Sanzidul Islam ,"A Deep Learning Based Assistive System to Classify COVID-19 Face Mask for Human Safety with YOLOv3", 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, July 1-3, 2020. Proceedings: IEEE Xplorer (Scopus Indexed).
