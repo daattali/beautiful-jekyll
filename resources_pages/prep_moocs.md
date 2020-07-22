@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Relevant MOOCs
+title: Learning Resources
 subtitle: Optional extra preparation for entering UBC MDS students
 ---
 
