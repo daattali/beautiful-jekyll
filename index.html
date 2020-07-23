@@ -16,7 +16,7 @@ use-site-title: true
 {% for news in newsSorted %}
   {%   assign start = news.date | date: '%s' %}
   {%   assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 %}
-  {% if daysSince < 61 %}
+  {% if daysSince < 121 %}
     <div class="panel panel-info">
       {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
       <div class="panel-body">
