@@ -2,7 +2,7 @@
 layout: member
 name: Kristin Passero
 position: PhD Student (MCIBS)
-image: /img/members/kristin-passero.webp
+image: /assets/img/members/kristin-passero.webp
 current: true
 group: Grad
 ---

@@ -2,7 +2,7 @@
 layout: member
 name: Allison Ludman
 position: Undergraduate Researcher
-image: /img/members/allison-ludman.png
+image: /assets/img/members/allison-ludman.png
 current: true
 group: Undergrad
 ---

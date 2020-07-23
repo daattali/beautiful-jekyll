@@ -2,7 +2,7 @@
 layout: member
 name: Molly Hall
 position: Assistant Professor
-image: ../img/members/molly-hall.webp
+image: ../assets/img/members/molly-hall.webp
 current: true
 group: Molly
 ---

@@ -2,7 +2,7 @@
 layout: member
 name: John McGuigan
 position: Programmer/Analyst
-image: /img/members/john-mcguigan.png
+image: /assets/img/members/john-mcguigan.png
 current: true
 group: Staff
 ---

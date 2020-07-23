@@ -4,7 +4,7 @@ title: Research
 subtitle: 
 ---
 
-![image](img/mission_slide.jpg)
+![image](assets/img/mission_slide.jpg)
 
 The Hall Lab is focused on building computational tools to elucidate the complex genetic and environmental underpinnings of human traits. We integrate genetic (genotype, sequence, structural variation) and exposure (derived from surveys and metabolomics methods) big data to predict disease status. The ultimate goals of this work are to 1) enrich our understanding of the complex mechanisms that lead to common disease and 2) provide methods to identify those most at risk of developing disease (based on their genetic and exposure backgrounds) in a clinical setting.
 
