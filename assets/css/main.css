@@ -4,28 +4,6 @@ layout: null
 
 @import url("pygment_highlights.css");
 
-/* --- Custom CSS Changes --- */
-
-/* Custom button class for 'read all news' and maybe others */
-.btn-read-all{
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  color: #404040;
-  background-color: #f5f5f5;
-  border: 1px solid;
-  border-radius: 3px;
-  border-color: #404040;
-  text-decoration: none;
-}
-.btn-read-all:hover,
-.btn-read-all:focus{
-  text-decoration: none;
-  color: {{ site.hover-col }};
-}
-
 /* --- General --- */
 
 html {

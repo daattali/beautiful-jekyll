@@ -13,10 +13,10 @@ layout: base
     <div class="row" style="justify-content: center;">
         {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
         {% for news in memberNewsSorted %}
-            <div class="card" style="width:80%;">
-                {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
-                <div class="card-body">
-                    {{news.content | markdownify}}
+            <div class="card mt-3">
+                {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
+                <div class="card-text px-3">
+                {{ news.content }}
                 </div>
                 <div class="card-footer text-muted" style="text-align:right;">
                 <i>{{ news.date | date: '%B %d, %Y' }}</i>

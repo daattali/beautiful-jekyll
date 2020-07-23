@@ -8,21 +8,19 @@ layout: base
 
 <div class="container" role="main">
   {% for year in years %}
-    <h3 style="text-align:center;">{{ year }}</h3>
+    <h3 class="mt-4" style="text-align:center;">{{ year }}</h3>
     {% assign publicationsSorted = site.publications | where: 'article_year', year |sort: "article_authors" %}
     <div class="row justify-content-center">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="list-group">
         {% for publication in publicationsSorted %}
-          <div class="list-group">
-            <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action">
-                {{ publication.article_authors }} <b>({{ publication.article_year }})</b></br>
-                {{ publication.article_title }}</br>
-                <i>{{publication.article_journal}}</i>
-                {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
-                {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
-            </a>
-          </div>
+          <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action mt-3">
+              {{ publication.article_authors }} <b>({{ publication.article_year }})</b></br>
+              {{ publication.article_title }}</br>
+              <i>{{publication.article_journal}}</i>
+              {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
+              {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
+          </a>
         {% endfor %}
         </div> 
       </div>

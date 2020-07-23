@@ -8,14 +8,14 @@ layout: base
 
 <div class="container" role="main">
   {% for year in newsByYear %}
-    <h3 style="text-align:center;">{{ year.name }}</h3>
+    <h3 class="mt-4" style="text-align:center;">{{ year.name }}</h3>
     {% assign newsSorted = year.items | sort: "date" | reverse %}
     <div class="row justify-content-center">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {% for news in newsSorted %}
-          <div class="card">
+          <div class="card mt-3">
             {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
-            <div class="card-text">
+            <div class="card-text px-3">
               {{ news.content }}
             </div>
             <div class="card-footer text-muted" style="text-align:right;">
