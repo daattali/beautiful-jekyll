@@ -14,10 +14,10 @@ These instructions will walk you through installing the required Data Science so
 - uses English as the default language
 - student user has full administrative access to the computer
 
-**Students' whose laptops do not meet the requirements specified above will not be able to receive techinical assistance from the MDS team in troubleshooting installation issues.**
+**Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
 
 ## Table of Contents
-- [Google Chrome browser](#chrome-browswer)
+- [Google Chrome browser](#chrome-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
 - [Visual Studio Code](#visual-studio-code)
@@ -41,11 +41,11 @@ In MDS we will be using many tools that work most reliably on the Google Chrome 
 In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd).
 
 ## Slack
-For our MDS courses and program annoucements, correspondance and course forums we use the communcation tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack App. The Slack app can be installed from the the Slack website. Installation instructions are available here: [https://slack.com/intl/en-ca/downloads/linux](hhttps://slack.com/intl/en-ca/downloads/linux). Alternatively, you can download Slack from the [Snap store](https://snapcraft.io/slack).
+For our MDS courses and program announcements, correspondence and course forums we use the communication tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack app. The Slack app can be installed from the Slack website. Installation instructions are available here: [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux). Alternatively, you can download Slack from the [Snap store](https://snapcraft.io/slack).
 
 ## Visual Studio Code
 
-We need a powerfull but lightwight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb). 
+We need a powerful but lightweight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb). 
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
@@ -171,7 +171,7 @@ conda config --add channels conda-forge
 
 ```
 
-Thus, to install other pacakges individually, we can now use the following: conda install <package-name>. We will install the key packages needed for the start of our program now:
+Thus, to install other packages individually, we can now use the following: conda install <package-name>. We will install the key packages needed for the start of our program now:
 
 ```
 conda install --yes \
@@ -378,7 +378,7 @@ That's it! You can test if the installation worked by running
 sudo su -c psql postgres
 ```
 
-From a succesful install, the above should yield the prompt to change to what is shown below:
+From a successful install, the above should yield the prompt to change to what is shown below:
 ```
 psql (12.3 (Ubuntu 12.3-1.pgdg18.04+1))
 Type "help" for help.
