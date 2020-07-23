@@ -10,7 +10,7 @@ layout: base
   {% for year in newsByYear %}
     <h3 style="text-align:center;">{{ year.name }}</h3>
     {% assign newsSorted = year.items | sort: "date" | reverse %}
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {% for news in newsSorted %}
           <div class="panel panel-info">
