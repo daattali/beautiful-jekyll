@@ -13,12 +13,12 @@ layout: base
     <div class="row justify-content-center">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         {% for news in newsSorted %}
-          <div class="panel panel-info">
-            {% if news.img %}<img src={{news.img}} alt="News Image">{% endif %}
-            <div class="panel-body">
+          <div class="card">
+            {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
+            <div class="card-text">
               {{ news.content }}
             </div>
-            <div class="panel-footer" style="text-align:right;">
+            <div class="card-footer text-muted" style="text-align:right;">
               <i>{{ news.date | date: '%B %d, %Y' }}</i>
             </div>
           </div>

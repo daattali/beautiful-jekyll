@@ -7,14 +7,12 @@ layout: base
 <div class="container" role="main">
   {% for position in site.positions %}
     <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2 class="panel-title">{{ position.title }}</h2>
-        </div>
-        <div class="panel-body">
+      <div class="card">
+        <h2 class="card-title">{{ position.title }}</h2>
+        <div class="card-body">
           {{ position.content | markdownify }}
         </div>
-        <div class="panel-footer" style="text-align:right;">
+        <div class="card-footer text-muted" style="text-align:right;">
           <i>{{ position.date | date: '%B %d, %Y' }}</i>
         </div>
       </div>
