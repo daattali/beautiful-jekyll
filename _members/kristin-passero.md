@@ -18,4 +18,7 @@ Undergraduate research was on the nucleocytoplasmic trafficking of thyroid hormo
 
 **Research Interests**:
 
-Genetic underpinings of disease, including GxG and GxE interactions
+  * Longitudinal modeling
+  * Psychosocial/behavioral risk factors & phenotypes
+  * Tools for analyzing longitudinal big data
+  * Multi-omic integration
