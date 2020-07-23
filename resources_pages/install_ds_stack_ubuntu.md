@@ -41,11 +41,11 @@ In MDS we will be using many tools that work most reliably on the Google Chrome 
 In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd).
 
 ## Slack
-For our MDS courses and program announcements, correspondence and course forums we use the communication tool Slack. Slack can be accessed via the web browser, however we strongly recommend installing the Slack app. The Slack app can be installed from the Slack website. Installation instructions are available here: [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux). Alternatively, you can download Slack from the [Snap store](https://snapcraft.io/slack).
+For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via the [Snap store/Ubuntu Software app](https://snapcraft.io/slack) or via the downloadable deb-file from the slack website [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux).
 
 ## Visual Studio Code
 
-We need a powerful but lightweight text editor, as well as a full-blown Python IDE for more complex analysis projects, the open-source text editor Visual Studio Code (VS Code) can serve both of these purposes for us. You can download VS Code at [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb). 
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb).
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
@@ -54,6 +54,7 @@ code --version
 ```
 
 you should see something like this if you were successful:
+
 ```
 1.47.0
 d5e9aa0227e057a60c82568bf31c04730dc15dcd
@@ -68,9 +69,7 @@ In MDS we will use [GitHub.com](https://github.com/) as well as an Enterprise ve
 If you do not yet have one, sign up for a free account at https://github.com/ .
 
 #### GitHub.ubc.ca
-For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login using your CWL:
-
-visit [Github.ubc.ca](https://github.ubc.ca) to do this.
+For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
 - being able to store your work
