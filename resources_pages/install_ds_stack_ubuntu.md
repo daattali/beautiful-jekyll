@@ -78,25 +78,20 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. There are some new Git commands that we will use that are only available as of Git 2.23 (or newer), thus to get this newest version we will ask you to update your Git even if you have already installed it. 
+We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it using the following command:
 
 ```
-sudo apt-add-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
+sudo apt update
+sudo apt install git
 ```
 
-After installation, in terminal type the following to ask for the version:
+You can check your git version with the following command:
+
 ```
 git --version
 ```
-you should see something like this if you were successful:
 
-```
-git version 2.27.0
-```
-
-Next, we need to configure Git by telling it who you are, your email and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
+Next, we need to configure Git by telling it who you are, your email, and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
 
 ```
 git config --global user.name "Jane Doe"
@@ -104,7 +99,7 @@ git config --global user.email janedoe@example.com
 git config --global core.editor code
 ```
 
-> Note: to ensure you haven't made a typo in any of the above, you can view your global Git configurations by typing: `git config --list --global --show-origin`.
+> Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
 ## Python
 
