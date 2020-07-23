@@ -47,7 +47,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Applications of Linear Algebra Part 1](https://www.edx.org/course/applications-linear-algebra-part-1-davidsonx-d003x-1), from Davidson College (edX)
 
 ### General
-- [Data Analysis for the Life Sciences](https://leanpub.com/dataanalysisforthelifesciences) by Rafael A Irizarry and Michael I Love
+- [Data Analysis for the Life Sciences](https://leanpub.com/dataanalysisforthelifesciences) by Rafael A Irizarry and Michael I Love (has a suggested price but can be accessed for $0)
 - A variety of [free O'Reilly Ebooks on data science](http://www.oreilly.com/data/free/archive.html)
 - A list of data science textbooks, curated by an MDS alum, is available [here](https://www.notion.so/virtuallibrary/Textbook-References-e8afb919d3454759a731bda6e06a442d).
 - [Dataquest](https://www.dataquest.io/)
