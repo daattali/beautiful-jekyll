@@ -1,8 +1,65 @@
-# CHANGELOG
+## v4.0.1 2020-07-13
 
-This file lists all non-trivial changes to Beautiful Jekyll.
+- Fixed staticman comments UI that was broken since the migration to bootstrap 4
 
-I often make small changes to documentation, to the demo site, or to the general look-and-feel. These changes will not be listed here. Any other minor changes will also not be listed here.
+## v4.0.0 2020-07-12
+
+- **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
+- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image 
+- Cover image will automatically be used as thumbnail if none is provided
+- Image to share on social media will use the cover image or thumbnail if none is provided
+- All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
+- Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
+- Add social network links: Mastodon (#646), Google Scholar, ORCID (#670)
+- Add support for sharing pages on new social network: VK (#657)
+- Use Open Graph type 'article' for blog posts (#669)
+- Use Twitter's large sumary card (large image) when there is a cover image, thumbnail image, or share image specified (#668)
+- Make post images in the feed page smaller on smaller devices
+- Fixed jQuery version in staticman (#671)
+
+## v3.0.0 2020-05-07
+
+- **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
+- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
+- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
+- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
+- Added `navbar-border-col` setting in the config file
+- Add accessibility features where possible
+- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
+- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
+- Remove most of the sample posts so that users only have two sample posts to learn from
+- Improvements to the README instructions
+
+## v2.3.0 2020-04-29
+
+- Add YAML option `footer-extra` for including custom content in the footer
+- Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
+- Add YAML option `nav-short` to have navbar permanently collapsed
+- Add social network link: Calendly
+- Fix bug where RSS link in footer was showing even when turned off
+
+## v2.2.0 2020-04-27
+
+- Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
+- Moved the demo site to an independent URL: https://beautifuljekyll.com 
+- Major documentation overhaul and cleanup of old files 
+- Fix a few bugs from the remote_theme migration
+
+## v2.0.0 2020-04-26
+
+- Beautiful-Jekyll v2.0.0 available as an official Ruby gem
+- Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
+- Consolidated the demo site, the ruby gem, and the master branch into one
+- Added a `home` layout and used it in the index page
+- Added readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
+- Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
+- Added support for configuring lang attribute on `html` tag (#608) (thanks @skalee)
+- Added ability to disable round logo (thanks @gpotter2)
+- Added support for Utterances comments (#596) (thanks @colynn)
+- Removed 'just-comments' as it's getting killed at the end of the year
+- Upgraded font-awesome to 5.12.1 (#587) (thanks @cketti)
+
+## Prior to 2020
 
 **2018-12-24** Add support for Staticman comments (#440) (thanks @VincentTam)
 
