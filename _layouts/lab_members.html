@@ -14,11 +14,13 @@ layout: base
 <div class="container" role="main">
   <h1>Current Members</h1>
   <div class="row molly" style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <a class="thumbnail col-lg-3 col-md-6" style="padding: 10px; margin: 5px" href="{{ molly.url }}">
-      <img class="card-img-top" style="max-height: 400px;" src="{{ molly.image }}" alt="Photo of {{molly.name}}">
-      <div class="caption">
-        <h3>{{ molly.name }}</h3>
-        <h4>{{ molly.position}}</h4>
+    <a class="text-dark btn" href="{{ molly.url }}">
+      <div class="card text-center border-dark" style="width: 18rem;">
+        <img src="{{ molly.image }}" class="card-img-top" alt="Photo of {{molly.name}}">
+        <div class="card-body text-white bg-dark">
+          <h5 class="card-title">{{ molly.name }}</h5>
+          <p class="card-text mt-1">{{ molly.position}}</p>
+        </div>
       </div>
     </a>
   </div>
@@ -26,11 +28,13 @@ layout: base
   <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersStaff %}
       {% if member.current %}
-      <a class="thumbnail col-lg-3 col-md-6" style="padding: 10px; margin: 5px" href="{{ member.url }}">
-        <img class="card-img-top" style="max-height: 400px;" src="{{ member.image }}" alt="Photo of {{member.name}}">
-        <div class="caption">
-          <h3>{{ member.name }}</h3>
-          <h4>{{ member.position}}</h4>
+      <a class="text-dark btn" href="{{ member.url }}">
+        <div class="card h-100 text-center border-dark" style="width: 18rem;">
+          <img src="{{ member.image }}" class="card-img-top" alt="Photo of {{member.name}}">
+          <div class="card-body text-white bg-dark">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text mt-1">{{ member.position}}</p>
+          </div>
         </div>
       </a>
       {% endif %}
@@ -40,11 +44,13 @@ layout: base
   <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersGradstudents %}
       {% if member.current %}
-      <a class="thumbnail col-lg-3 col-md-6" style="padding: 10px; margin: 5px" href="{{ member.url }}">
-        <img class="card-img-top" style="max-height: 400px;" src="{{ member.image }}" alt="Photo of {{member.name}}">
-        <div class="caption">
-          <h3>{{ member.name }}</h3>
-          <h4>{{ member.position}}</h4>
+      <a class="text-dark btn" href="{{ member.url }}">
+        <div class="card h-100 text-center border-dark" style="width: 18rem;">
+          <img src="{{ member.image }}" class="card-img-top" alt="Photo of {{member.name}}">
+          <div class="card-body text-white bg-dark">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text mt-1">{{ member.position}}</p>
+          </div>
         </div>
       </a>
       {% endif %}
@@ -54,11 +60,13 @@ layout: base
   <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersAffiliate %}
       {% if member.current %}
-      <a class="thumbnail col-lg-3 col-md-6" style="padding: 10px; margin: 5px" href="{{ member.url }}">
-        <img class="card-img-top" style="max-height: 400px;" src="{{ member.image }}" alt="Photo of {{member.name}}">
-        <div class="caption">
-          <h3>{{ member.name }}</h3>
-          <h4>{{ member.position}}</h4>
+      <a class="text-dark btn" href="{{ member.url }}">
+        <div class="card h-100 text-center border-dark" style="width: 18rem;">
+          <img src="{{ member.image }}" class="card-img-top" alt="Photo of {{member.name}}">
+          <div class="card-body text-white bg-dark">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text mt-1">{{ member.position}}</p>
+          </div>
         </div>
       </a>
       {% endif %}
@@ -68,11 +76,13 @@ layout: base
   <div class="row grad" style="display: flex; flex-wrap: wrap; justify-content: center;">
     {% for member in membersUndergrad %}
       {% if member.current %}
-      <a class="thumbnail col-lg-3 col-md-6" style="padding: 10px; margin: 5px" href="{{ member.url }}">
-        <img class="card-img-top" style="max-height: 400px;" src="{{ member.image }}" alt="Photo of {{member.name}}">
-        <div class="card-body">
-          <h3>{{ member.name }}</h3>
-          <h4>{{ member.position}}</h4>
+      <a class="text-dark btn" href="{{ member.url }}">
+        <div class="card h-100 text-center border-dark" style="width: 18rem;">
+          <img src="{{ member.image }}" class="card-img-top" alt="Photo of {{member.name}}">
+          <div class="card-body text-white bg-dark">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <p class="card-text mt-1">{{ member.position}}</p>
+          </div>
         </div>
       </a>
       {% endif %}
