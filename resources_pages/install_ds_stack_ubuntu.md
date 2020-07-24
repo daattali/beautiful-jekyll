@@ -103,35 +103,42 @@ git config --global core.editor code
 
 ## Python
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. Thus to install Python and the `conda` package manager, we will install [Miniconda](https://docs.conda.io/en/latest/miniconda.html). We recommend installing the [Miniconda3 Linux 64-bit install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) platform, for which the [Python 3.7 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
 Once the download is finished, open Terminal and execute the following commands:
 ```
-bash path/to/the/file
+bash path/to/file
 ```
-> Note: most often this file is downloaded to the `Downloads` directory, and thus the command above is usually: 
+> Note: most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
 >
 >```
->bash Downloads/Anaconda3-2019.07-Linux-x86_64.sh
+>bash Downloads/Miniconda3-latest-Linux-x86_64.sh
 >```
+`
 
-The instructions for the installation will then appear: (1) press Enter; (2) once the licence agreement shows, you can keep pressing enter to go through the whole document, or press Q to quit; (3) Type `yes` to accept the licence agreement; (4) you can accept the default installation location (just press Enter once again); (5) Type `yes` once again to accept the installer to run `conda init`.
+The instructions for the installation will then appear:
 
-After installation, restart the terminal. Then, in terminal type the following to ask for the version of conda:
+(1) Press Enter.
+(2) Once the licence agreement shows, you can press space scroll down, or press `q` to skip reading it.
+(3) Type `yes` and press enter to accept the licence agreement.
+(4) Press enter to accept the default installation location.
+(5) Type `yes` and press enter to instruct the installer to run `conda init`, which makes `conda` available from the terminal/shell.
+
+After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 ```
 conda --version
 ```
-you should see something like this if you were successful at installing conda (a Python package manager):
+which should return something like this:
 
 ```
 conda 4.8.3
 ```
 
-After installation, in terminal type the following to ask for the version of Python:
+Next, type the following to ask for the version of Python:
 ```
 python --version
 ```
-you should see something like this if you were successful at installing Python:
+which should return something like this:
 
 ```
 Python 3.7.7
@@ -141,17 +148,25 @@ Python 3.7.7
 
 ## Essential Python packages
 
-We also prefer to use packages on the conda-forge channel, so we set that to the default by typing the following in the terminal:
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge](https://conda-forge.org/),
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:
 
 ```
 conda config --add channels conda-forge
 
 ```
 
-Thus, to install other packages individually, we can now use the following: conda install <package-name>. We will install the key packages needed for the start of our program now:
+To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of our program:
 
 ```
-conda install --yes \
+conda install \
  jupyterlab=2.* \
  numpy=1.* \
  pandas=1.* \
@@ -159,20 +174,25 @@ conda install --yes \
  black=19.*
 ```
 
+`conda` will show you the packages that will be downloaded,
+and you can press enter to proceed with the installation.
+
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
-## Jupyter extensions
-We will be using several Jupyter extensions that help us use Juypter notebooks more smoothly with Git & GitHub. To install them, paste the following in the terminal below:
+## JupyterLab extensions
+We will be using a couple of JupyterLab git extensions to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
 ```
-conda install --yes nodejs=10.*
+conda install nodejs=10.*
 pip install --upgrade jupyterlab-git
-conda install --yes jupytext=1.*
+conda install jupytext=1.*
 jupyter lab build
 ```
 
+To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+
 ## R, IRkernel and RStudio
-We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
+R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
 #### R
 
@@ -253,8 +273,7 @@ install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IR kernel
-
-Open RStudio and type the following commands into the Console panel:
+For R to work in Jupyter notebooks we need to install the IR kernel. Open RStudio and type the following commands into the Console panel:
 
 ```
 install.packages('IRkernel')
