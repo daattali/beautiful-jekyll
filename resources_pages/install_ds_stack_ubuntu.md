@@ -283,16 +283,16 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ## LaTeX
 
-We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF.
+We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
 
-First, open RStudio and run the following commands to install the tinytex package and install tinytex:
+First, open RStudio and run the following commands to install the tinytex package and setup tinytex:
 
 ```
 install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however to for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages. 
+The above is all we need to have LaTeX work with R Markdown documents, however to for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages.
 
 To add the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`):
 
@@ -300,9 +300,10 @@ To add the TinyTex executables to our `PATH` we need to edit our `.bashrc` file.
 # add TinyTex executables to the path
 export PATH="$HOME/bin:$PATH"
 ```
-Quit your terminal program for these changes to be reflected on your system.
 
-Next, install the additional LaTeX packages needed for Jupyter by opening terminal and copying the following there press enter:
+When you launch a new terminal instance, this directory will have been added to your path (you can check this by running `echo $PATH` in the terminal.
+
+Next, install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
 
 ```
 tlmgr install eurosym \
@@ -322,8 +323,15 @@ tlmgr install eurosym \
   trimspaces \
   ucs \
   ulem \
-  upquote 
+  upquote
 ```
+
+To test that your latex installation is working with jupyter notebooks,
+launch `jupyter lab` from a terminal and open either a new notebook
+or the same one you used to test IRkernel above.
+Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+If the PDF file is created,
+your LaTeX environment is setup correctly.
 
 ## PostgreSQL
 We will be using PostgreSQL as our database management system. To install PostgreSQL in Ubuntu type the following commands:
