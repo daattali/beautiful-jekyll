@@ -255,33 +255,14 @@ Next, install the key R packages needed for the start of MDS program,
 by typing the following into the R terminal in RStudio:
 
 ```
-install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
+install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv', 'IRkernel'))
 ```
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IR kernel
-For R to work in Jupyter notebooks we need to install the IR kernel. Open RStudio and type the following commands into the Console panel:
+The `IRkernel` package that we installed in the previous step is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, run the following setup command:
 
-```
-install.packages('IRkernel')
-```
-
-
-In Terminal window type the following commands:
-
-```
-R
-```
-
-This will open R in terminal. In R, type:
-
-```
-install.packages('tidyverse')
-install.packages('IRkernel')
-```
-
-Once it is finished (it might take a minute), type
 ```
 IRkernel::installspec()
 ```
