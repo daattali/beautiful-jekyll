@@ -237,11 +237,11 @@ https://www.gnu.org/licenses/.
 
 Chose and download the Ubuntu 18/Debian 10 version of RStudio Desktop from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
 
-> Note: there is not yet a RStudio version for Ubuntu 20.04, however many users have been successfully using the Ubuntu 18/Debian 10 version of RStudio Desktop on Ubuntu 20.04 and so we will use that.
+> Note: there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly in the Ubuntu software center instead of downloading it first, the software center might complain that the file is not supported.
 
-To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
+To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in terminal. It should open and look something like this picture below:
 
-![](/resources_pages/imgs/RStudio.png)
+![](/resources_pages/imgs/RStudio-ubuntu.png)
 
 ### Essential R packages
 
@@ -251,7 +251,8 @@ The `tidyverse` R package (and some others) have external dependencies on Ubuntu
 sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev
 ```
 
-We will install the key R packages needed for the start of our program now:
+Next, install the key R packages needed for the start of MDS program,
+by typing the following into the R terminal in RStudio:
 
 ```
 install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv'))
