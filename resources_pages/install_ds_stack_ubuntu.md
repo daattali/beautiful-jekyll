@@ -3,6 +3,7 @@ layout: page
 title: Ubuntu
 subtitle: MDS software stack install instructions for Ubuntu
 ---
+
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 
 - runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 20.04 or later, Windows 10 Professional, Enterprise or Education; version 2004 or later. *Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.*
@@ -17,6 +18,7 @@ These instructions will walk you through installing the required Data Science so
 **Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
 
 ## Table of Contents
+
 - [Google Chrome browser](#chrome-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
@@ -33,14 +35,17 @@ These instructions will walk you through installing the required Data Science so
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
 
 ## Google Chrome browser
+
 In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation. 
 
 > Note: ensure that you download the Chrome installer and then install it by clicking on the file after it downloads (i.e., do not select the option to open with Software install).
 
 ## LastPass password manager
+
 In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd).
 
 ## Slack
+
 For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via the [Snap store/Ubuntu Software app](https://snapcraft.io/slack) or via the downloadable deb-file from the slack website [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux).
 
 ## Visual Studio Code
@@ -66,9 +71,11 @@ x64
 In MDS we will use the publicly available [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
 
 #### GitHub.com
+
 Sign up for a free account at https://github.com/ if you don't have one already.
 
 #### GitHub.ubc.ca
+
 To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
@@ -180,6 +187,7 @@ and you can press enter to proceed with the installation.
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## JupyterLab extensions
+
 We will be using a couple of JupyterLab git extensions to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
 ```
@@ -192,6 +200,7 @@ jupyter lab build
 To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
 ## R, IRkernel and RStudio
+
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
 #### R
@@ -261,6 +270,7 @@ install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv', 'IRke
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IR kernel
+
 The `IRkernel` package that we installed in the previous step is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, run the following setup command:
 
 ```
@@ -356,6 +366,7 @@ Compiled with xpdf version 4.02
 ```
 
 ## PostgreSQL
+
 We will be using PostgreSQL as our database management system. To install PostgreSQL type the following command:
 
 ```
@@ -409,6 +420,7 @@ To install an extension, you simply search for it in the search bar, click the e
 This [video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
 ## Attributions
+
 * [Harvard CS109](http://cs109.github.io/2015/)
 * [UBC STAT 545](http://stat545.com/packages01_system-prep.html#mac-os-system-prep) licensed under the [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/legalcode).
 * [Software Carpentry](https://software-carpentry.org/)
