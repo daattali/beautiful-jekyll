@@ -196,33 +196,22 @@ R is another programming language that we will be using a lot in the MDS program
 
 #### R
 
-To obtain the latest R 4.0 packages, type the following into the terminal:
+The version of R available in the default Ubuntu repositories (3.6) is older than the one we use in MDS (4.0). To obtain the latest R 4.0 packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
+
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+```
+
+Then add the URL to the repository:
 
 ```
 sudo apt-add-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
 ```
 
-Next, add the key ID for the CRAN network:
+Next, install `r-base` and `r-base-dev` (useful for compiling R packages from source):
 
 ```
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-```
-Then, update the repository:
-
-```
-sudo apt-get update
- ```
-
-Next, install `r-base`:
-
-```
-sudo apt-get install r-base
-```
-
-And then `r-base-dev` (useful for compiling R packages from source):
-
-```
-sudo apt-get install r-base-dev
+sudo apt install r-base r-base-dev
 ```
 
 After installation, in terminal type the following to ask for the version:
@@ -243,8 +232,6 @@ GNU General Public License versions 2 or 3.
 For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
-
-> Note: For MDS it is important that you have R 4.0 or higher.
 
 ### RStudio
 
