@@ -17,10 +17,10 @@ use-site-title: true
   {%   assign start = news.date | date: '%s' %}
   {%   assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 %}
   {% if daysSince < 121 %}
-    <div class="card">
+    <div class="card mt-3">
       {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
-      <div class="card-text">
-        {{ news.content }}
+      <div class="card-body">
+        {{ news.content | markdownify}}
       </div>
       <div class="card-footer text-muted" style="text-align:right;">
         <i>{{ news.date | date: '%B %d, %Y' }}</i>

@@ -15,8 +15,8 @@ layout: base
         {% for news in newsSorted %}
           <div class="card mt-3">
             {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
-            <div class="card-text px-3">
-              {{ news.content }}
+            <div class="card-body">
+              {{ news.content | markdownify}}
             </div>
             <div class="card-footer text-muted" style="text-align:right;">
               <i>{{ news.date | date: '%B %d, %Y' }}</i>
