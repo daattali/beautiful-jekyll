@@ -334,34 +334,31 @@ If the PDF file is created,
 your LaTeX environment is setup correctly.
 
 ## PostgreSQL
-We will be using PostgreSQL as our database management system. To install PostgreSQL in Ubuntu type the following commands:
-- for Ubuntu 20.04
+We will be using PostgreSQL as our database management system. To install PostgreSQL type the following command:
+
 ```
-sudo add-apt-repository 'deb http://apt.postgresql.org/pub/repos/apt/ focal-pgdg main'
+sudo apt install postgresql postgresql-contrib
 ```
 
-Then, 
-```
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install postgresql-12
-```
-That's it! You can test if the installation worked by running
+By default, this installation creates a new user called `postgres`,
+which is the only one with permission to open the databases.
+We will see how to set this up for other users later in the program,
+but for now run the following to confirm that your installation was successful:
+
 ```
 sudo su -c psql postgres
 ```
 
-From a successful install, the above should yield the prompt to change to what is shown below:
+The above should yield the prompt to change to what is shown below:
+
 ```
-psql (12.3 (Ubuntu 12.3-1.pgdg18.04+1))
+psql (12.2 (Ubuntu 12.2-4))
 Type "help" for help.
-postgres=# 
 
+postgres=#
 ```
 
-> Note: to exit from Postgres type `exit`
-
-
+> Note: to exit from Postgres type `exit`, or press `ctrl` + `d`.
 
 ## LaTeX
 Open Terminal and type the following command:
