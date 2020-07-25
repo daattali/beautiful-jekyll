@@ -13,6 +13,10 @@ The collection of my research work that I have done till date.
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Md. Abdullahil- Oaphy, Rifa Shanzida Khanam, Md. Sanzidul Islam_ 
 - **Link:** when online 
+<details>
+  <summary>Abstract</summary>
+  <p>Medicine is the only thing by which we use where we feel bad condition of our body physical and mental illness. Most of medicines made of specific plants from our nature. These plants are also known as a medicinal plant. All the traditional Bangladeshi medical systems namely Ayurveda, Unani , Homeopathy prominently use medicinal plants. So, it is important to classify the right plant for medical preparation. The ability of identify these plants automatically is need in recent days. For this we proposed a renowned algorithm called Convolutional neural network for recognizing the plants from leaf image. Our algorithm got 84.58% accuracy. We developed this by us. We believe that in future the individuals who don’t distinguish medicinal plants they will recognize using this methodology.     </p>
+</details>
 
 ***
 
@@ -22,6 +26,20 @@ The collection of my research work that I have done till date.
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Sharun Akter Khushbu, Md. Sanzidul Islam_ 
 - **Link:** when online 
+<details>
+  <summary>Abstract</summary>
+  <p>Computer vision learning pay a high attention due to global pandemic COVID-19 to enhance public health service. During the fatality, tiny object detection is a more challenging task of computer vision, as it recruits the pair of classification and detection beneath of video illustration. Compared to other
+object detection deep neural networks demonstrated a helpful object detection with a superior achievement that is Face mask
+detection. However, accession with YOLOv3 covered by an exclusive topic which through certainly happening natural disease
+people get advantage. Added with face mask detection performed well by the YOLOv3 where it measures real time performance
+regarding a powerful GPU. whereas computation power with low memory YOLO darknet command sufficient for real time
+manner. Regarding the paper section below we have attained that people who wear face masks or not, its trained by the face
+mask image and non face mask image. Under the experimental conditions, real time video data that finalized over detection,
+localization and recognition. Experimental results that show average loss 0.0713 and 0.0676 after training 4000 epochs. After
+training 4000 epochs mAP score is 0.96. This unique approach of face mask visualization system attained noticeable output which
+has 96% classification and detection accuracy.
+  </p>
+</details>
 
 ***
 
@@ -31,6 +49,9 @@ The collection of my research work that I have done till date.
 - **Publication Year:** 2020
 - **Authors:** _Md. Rafiuzzaman Bhuiyan, Abu Kaisar Mohammad Masum, Md. Abdullahil- Oaphy, Syed Akhter Hossain, Sheikh Abujar_
 - **Link:** when online 
+<p align='center'>
+<img src="https://user-images.githubusercontent.com/35966401/88454619-b70f4600-ce92-11ea-85ca-c57c97079db2.png" alt=" " width="600" height="400">
+</p>
 
 ***
 
