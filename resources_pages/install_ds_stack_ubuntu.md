@@ -36,9 +36,9 @@ These instructions will walk you through installing the required Data Science so
 
 ## Google Chrome browser
 
-In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation. 
+In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome", choose the deb-file, download it to your computer and click on the downloaded file to install it.
 
-> Note: ensure that you download the Chrome installer and then install it by clicking on the file after it downloads (i.e., do not select the option to open with Software install).
+> Note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 ## LastPass password manager
 
@@ -246,7 +246,7 @@ https://www.gnu.org/licenses/.
 
 Chose and download the Ubuntu 18/Debian 10 version of RStudio Desktop from [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download). Open the file and follow the installer instructions.
 
-> Note: there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly in the Ubuntu software center instead of downloading it first, the software center might complain that the file is not supported.
+> Note that there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in terminal. It should open and look something like this picture below:
 
