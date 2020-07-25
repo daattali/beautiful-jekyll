@@ -7,7 +7,9 @@ subtitle: What do I do in free time
 ***
 ### 1. Face Mask Detection
 In this project I'm building a Face mask detector that detects whether a person is wear a mask or not. Also published a peper on this task. It's really important for this current Covid-19 situation. I've share a you-tube video of my project which is given below.
-[Face Mask Detection](https://www.youtube.com/watch?v=k8OkplzCxQU&feature=emb_logo)
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=k8OkplzCxQU" frameborder="0"></iframe>
+
 ***
 ### 2. Elephant Detection
 In this project I'm building a detector that detects an elephant inside an iamge/video. I've share a you-tube video of my project which is given below.
