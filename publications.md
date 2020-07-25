@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Publications
-subtitle: Things that i do in free time
+subtitle: Things that i Love to do
 ---
 
 The collection of my research work that I have done till date.
+
+*“**Success** is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.” - **Pele** (Brazilian footballer).*
+
+*Research motivation - **Desire to face the challenge in solving the unsolved problems**.*
 
 ---
 ### MediNET: A Deep Learning Approach to Recognize Bangladeshi Ordinary Medicinal Plants using CNN
@@ -15,7 +19,7 @@ The collection of my research work that I have done till date.
 - **Link:** when online 
 <details>
   <summary>Abstract</summary>
-  <p>Medicine is the only thing by which we use where we feel bad condition of our body physical and mental illness. Most of medicines made of specific plants from our nature. These plants are also known as a medicinal plant. All the traditional Bangladeshi medical systems namely Ayurveda, Unani , Homeopathy prominently use medicinal plants. So, it is important to classify the right plant for medical preparation. The ability of identify these plants automatically is need in recent days. For this we proposed a renowned algorithm called Convolutional neural network for recognizing the plants from leaf image. Our algorithm got 84.58% accuracy. We developed this by us. We believe that in future the individuals who don’t distinguish medicinal plants they will recognize using this methodology.     </p>
+  <p>Medicine is the only thing by which we use where we feel bad condition of our body physical and mental illness. Most of medicines made of specific plants from our nature. These plants are also known as a medicinal plant. All the traditional Bangladeshi medical systems namely Ayurveda, Unani , Homeopathy prominently use medicinal plants. So, it is important to classify the right plant for medical preparation. The ability of identify these plants automatically is need in recent days. For this we proposed a renowned algorithm called Convolutional neural network for recognizing the plants from leaf image. Our algorithm got 84.58% accuracy. We developed this by us. We believe that in future the individuals who don’t distinguish medicinal plants they will recognize using this methodology.</p>
 </details>
 
 ***
@@ -79,6 +83,10 @@ has 96% classification and detection accuracy.
 - **Publication Year:** 2020
 - **Authors:** _Md. Abdullahil- Oaphy, Md. Rafiuzzaman Bhuiyan, Md. Sanzidul Islam_ 
 - **Link:** when online 
+<details>
+  <summary>Abstract</summary>
+  <p>More than 130 million people in Bangladesh depends on riceas  their  main  food.  Half  of  the  employment  of  the  rural  area  and  theagricultural GDP of Bangladesh depends on rice production. Nearly morethan 10 million farmer families cultivate rice in Bangladesh. Almost 10% of rice cultivation is depreciated by different types of rice plant diseasescaused by pests This is the reason why we worked on detecting rice plant(Oryza sativa)disease  by  visual  observation(images). 3265  images  ofrice plant disease have been collected for this study which belongs to 4classes: Hispa, Brown Spot, Leaf Blast and the healthy ones. The imagesof diseased leaf are collected from rice fields. We have used a pre-trainedmodel for classification and extracting features.By using this model wegot a incentive results with the accuracy rate of 93.21%. </p>
+  </details>
 
 ***
 
@@ -97,5 +105,6 @@ has 96% classification and detection accuracy.
 - **Publication Year:** 2020
 - **Authors:** _Naimul Hossain, Md. Rafiuzzaman Bhuiyan, Zerin Nasrin Tumpa, Syed Akhter Hossain_
 - **Link:** when online 
+
 ***
 
