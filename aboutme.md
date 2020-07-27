@@ -47,7 +47,7 @@ subtitle:
 
 ### WORK EXPERIENCE:
 -----------------
-**Data modeling** at **VPBank Finance Company Limited - FECREDIT (07/2019 - Present)**   
+**Senior Data Modeling** at **VPBank Finance Company Limited - FECREDIT (07/2019 - Present)**   
 
 - Building Credit Scorecard models for Loan - B1, B2, B3 and Card-Product.
 - Building automation reports on development and operation of Credit Scorecard model.
