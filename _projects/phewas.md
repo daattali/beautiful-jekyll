@@ -1,7 +1,7 @@
 ---
 layout: project
 title: PheWAS
-area: Genomics
+area: Genome
 ---
 
 Description goes here

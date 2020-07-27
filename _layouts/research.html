@@ -8,22 +8,31 @@ layout: base
 
   <!-- Mission -->
   <img src="/assets/img/mission_slide.jpg", alt="Hall Lab Mission">
-  <h2>Mission</h2>
-  <p>
-  The Hall Lab is focused on building computational tools to elucidate the complex genetic and environmental underpinnings of human traits. We integrate genetic (genotype, sequence, structural variation) and exposure (derived from surveys and metabolomics methods) big data to predict disease status. The ultimate goals of this work are to 1) enrich our understanding of the complex mechanisms that lead to common disease and 2) provide methods to identify those most at risk of developing disease (based on their genetic and exposure backgrounds) in a clinical setting.
-  </p>
 
   <!-- Topics -->
-  <h2>Research Topics</h2>
   {% for topic in site.research_topics %}
   <div class="card bg-light mb-3">
-    <div class="card-header">
-      <h3 style="color: {{ topic.color }};">{{ topic.title }}</h3>
+    <div class="card-header" style="background-color: {{ topic.color }};">
+      <h3 class="text-white mb-0">{{ topic.title }}</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body py-0">
       <p class="card-text">{{ topic.content | markdownify }}</p>
+      <!-- Projects related to this topic -->
+      {% assign topicProjects = site.projects | where:"area",topic.title %}
+      <div class="card-deck">
+        {% for project in topicProjects %}
+          <div class="card">
+            <a class="btn" href="{{ project.url }}">
+            <img class="card-img-top" src="https://ipsumimage.appspot.com/300x200" alt="Project Image">
+            <!--<img class="card-img-top" src="{{project.img}}" alt="Project Image">-->
+            <div class="card-body text-white text-center" style="background-color: {{ topic.color }};">
+              <h5 class="card-title">{{project.title}}</h5>
+            </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
   {% endfor %}
-
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Parkinsons
-area: Metabolomics
+area: Metabolome
 ---
 
 Description goes here

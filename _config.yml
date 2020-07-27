@@ -222,9 +222,9 @@ collections:
   positions:
     output: false
   research_topics:
-    output: true 
+    output: false 
   projects:
-    output: false
+    output: true
 
 # prose.io config
 prose:
