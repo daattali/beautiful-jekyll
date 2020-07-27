@@ -221,6 +221,10 @@ collections:
     output: false
   positions:
     output: false
+  research_topics:
+    output: true 
+  projects:
+    output: false
 
 # prose.io config
 prose:
