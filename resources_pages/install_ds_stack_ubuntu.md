@@ -6,7 +6,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 
-- runs one of the following operating systems: macOS 10.15.X (Catalina) or later, Ubuntu 20.04 or later, Windows 10 Professional, Enterprise or Education; version 2004 or later. *Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.*
+- runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.*
 - can connect to networks via a wireless connection
 - has at least 50 GB disk space available
 - has at least 8 GB of RAM
@@ -72,7 +72,7 @@ In MDS we will use the publicly available [GitHub.com](https://github.com/) as w
 
 #### GitHub.com
 
-Sign up for a free account at https://github.com/ if you don't have one already.
+Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 
 #### GitHub.ubc.ca
 
@@ -186,9 +186,9 @@ and you can press enter to proceed with the installation.
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
-## JupyterLab extensions
+## JupyterLab setup
 
-We will be using a couple of JupyterLab git extensions to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
+We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
 ```
 conda install nodejs=10.*
@@ -205,7 +205,7 @@ R is another programming language that we will be using a lot in the MDS program
 
 #### R
 
-The version of R available in the default Ubuntu repositories (3.6) is older than the one we use in MDS (4.0). To obtain the latest R 4.0 packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
+The version of R available in the default Ubuntu repositories (`3.6.*`) is older than the one we use in MDS (`4.*`). To obtain the latest R `4.*` packages, we need to add a new repository which is maintained directly by the r-project. To do this, first add the key for this repository by typing the following:
 
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
@@ -252,6 +252,8 @@ To see if you were successful, try opening RStudio by clicking on its icon or ty
 
 ![](/resources_pages/imgs/RStudio-ubuntu.png)
 
+> Note that since we installed RStudio directly from a deb file rather than from a repository or a snap package, it will not be updated when we run `sudo apt upgrade` and not automatically as for snap packages. Instead, RStudio will notify you of any available updates when the program is launched.
+
 ### Essential R packages
 
 The `tidyverse` R package (and some others) have external dependencies on Ubuntu outside of R. We need to install these first before we install such R packages:
@@ -264,7 +266,7 @@ Next, install the key R packages needed for the start of MDS program,
 by typing the following into the R terminal in RStudio:
 
 ```
-install.packages(c('tidyverse', 'tinytex', 'blogdown', 'xaringan', 'renv', 'IRkernel'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'IRkernel'))
 ```
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
@@ -302,13 +304,13 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however to for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages.
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages (`PATH` is a collection of directories which contain the available executable programs on your computer).
 
-To add the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`):
+To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`):
 
 ```
-# add TinyTex executables to the path
-export PATH="$HOME/bin:$PATH"
+# Append TinyTex executables to the path
+export PATH="$PATH:$HOME/bin"
 ```
 
 When you launch a new terminal instance, this directory will have been added to your path (you can check this by running `echo $PATH` in the terminal.
