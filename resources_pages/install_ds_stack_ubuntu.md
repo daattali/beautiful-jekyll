@@ -6,7 +6,7 @@ subtitle: MDS software stack install instructions for Ubuntu
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 
-- runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Please note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS.*
+- runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS. Also note that when installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.*
 - can connect to networks via a wireless connection
 - has at least 50 GB disk space available
 - has at least 8 GB of RAM
@@ -183,6 +183,8 @@ conda install \
 
 `conda` will show you the packages that will be downloaded,
 and you can press enter to proceed with the installation.
+If you want to answer `yes` by default and skip this confirmation step,
+you can replace `conda install` with `conda install -y`.
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
