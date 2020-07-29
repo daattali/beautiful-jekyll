@@ -46,11 +46,11 @@ In MDS we share credentials via the password manager LastPass. This can also be 
 
 ## Slack
 
-For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via the [Snap store/Ubuntu Software app](https://snapcraft.io/slack) or via the downloadable deb-file from the slack website [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux).
+For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via the [Snap store/Ubuntu Software app through this link](https://snapcraft.io/slack) or via the downloadable deb-file from the slack website [https://slack.com/intl/en-ca/downloads/linux](https://slack.com/intl/en-ca/downloads/linux).
 
 ## Visual Studio Code
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb).
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app through this link](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/?dv=linux64_deb](https://code.visualstudio.com/docs/?dv=linux64_deb).
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
@@ -110,7 +110,7 @@ git config --global core.editor code
 
 ## Python
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) platform, for which the [Python 3.7 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.7 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
 Once the download is finished, open Terminal and execute the following commands:
 ```
@@ -159,7 +159,7 @@ Python 3.7.7
 A package needs to go through thorough testing before it is included in the default channel,
 which is good for stability,
 but also means that new versions will be delayed and fewer packages are available overall.
-There is a community-driven effort called the [conda-forge](https://conda-forge.org/),
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
 which provides more up to date packages
 To enable us to access the most up to date version of the Python packages we are going to use,
 we will add the more up to date  channel,
@@ -399,15 +399,15 @@ postgres=#
 
 ## Docker
 
-You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
+You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can [sign up for a free one here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
 
-After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the installation instructions using the "Install using the repository" methods found [here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository), including the subheadings "Set up the repository" and "Install Docker engine".
+After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the installation instructions using the ["Install using the repository" methods found here](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository), including the subheadings "Set up the repository" and "Install Docker engine".
 
-Next, follow the Linux post installation steps [here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
+Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
 
 ### Customizing VS Code with Extensions
 
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
 ![](/resources_pages/imgs/vscode.png)
 
@@ -421,7 +421,7 @@ To install an extension, you simply search for it in the search bar, click the e
 - (Optional) Material Icon Theme (great-looking custom file icons!)
 - (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
 
-This [video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
+[This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
 ## Attributions
 
