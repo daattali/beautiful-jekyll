@@ -9,11 +9,26 @@ echo "" > check-setup-mds.log
 echo "# MDS setup check 0.0.1" >> check-setup-mds.log
 echo "" >> check-setup-mds.log
 echo "## System programs" >> check-setup-mds.log
+
+# There is an esoteric case for .app programs on macOS where `--version` does not work
+# So far, we only install rstudio as an .app
+if [[ "$(uname)" == 'Darwin' ]]; then
+    if $(grep -iq "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        # This is what is needed instead of --version
+        installed_version_tmp=$(grep -io "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
+        # Tidy strangely formatted version number
+        installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
+        echo "OK        "rstudio $installed_version >> check-setup-mds.log
+    else
+        echo "MISSING   rstudio 1.*" >> check-setup-mds.log
+    fi
+fi
+
 # The single equal sign syntax is what we have in the install instruction for conda,
 # so I am using it below for Python packages so that we can just paste in the same
 # syntax as for the conda installations instructions. I use the same single `=`
 # for the system packages here for consistency
-sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* psql=12.* tlmgr=5.* latex=3.14.* rstudio=1.3.* code=1.4.*)
+sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* psql=12.* tlmgr=5.* latex=3.14.* code=1.4.*)
 for sys_prog in ${sys_progs[@]}; do
     sys_prog_no_version=$(sed "s/=.*//" <<< "$sys_prog")
     regex_version=$(sed "s/.*=//" <<< "$sys_prog")
