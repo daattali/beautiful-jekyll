@@ -28,10 +28,10 @@ for sys_prog in ${sys_progs[@]}; do
             # Use `head` because `R --version` prints an essay...
             # echo "OK       " $(head -1 <<< "$($sys_prog_no_version --version)") >> check-setup-mds.log
         else  # If the version is wrong
-            echo "MISSING   $sys_prog_no_version" >> check-setup-mds.log
+            echo "MISSING   $sys_prog" >> check-setup-mds.log
         fi
     else  # If the executable does not exist
-        echo "MISSING   $sys_prog_no_version" >> check-setup-mds.log
+        echo "MISSING   $sys_prog" >> check-setup-mds.log
     fi
 done
 
