@@ -5,8 +5,8 @@
 # 1. System programs
 # Tries to run system programs and if successful greps their version string
 # Currently marks both uninstalled and wrong verion number as MISSING
-echo "" > check-setup-mds.log
-echo "# MDS setup check 0.0.1" >> check-setup-mds.log
+echo ''
+echo "# MDS setup check 0.0.1" > check-setup-mds.log
 echo "" >> check-setup-mds.log
 echo "## System programs" >> check-setup-mds.log
 
