@@ -20,10 +20,10 @@ for sys_prog in ${sys_progs[@]}; do
     # Check if command is executable
     if [ -x "$(command -v $sys_prog_no_version)" ]; then
         # Check if the version regex string matches the installed version
-        if $(grep -iq "$regex_version" <<< "$(head -1 <<< $($sys_prog_no_version --version))"); then
+        if $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version |  head -1)"); then
             # Since programs like rstudio and vscode don't print the program name with `--version`,
             # we need one extra step before logging 
-            installed_version=$(grep -io "$regex_version" <<< "$(head -1 <<< $($sys_prog_no_version --version))")
+            installed_version=$(grep -io "$regex_version" <<< "$($sys_prog_no_version --version | head -1)")
             echo "OK        "$sys_prog_no_version $installed_version >> check-setup-mds.log
             # Use `head` because `R --version` prints an essay...
             # echo "OK       " $(head -1 <<< "$($sys_prog_no_version --version)") >> check-setup-mds.log
