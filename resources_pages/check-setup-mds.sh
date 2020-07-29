@@ -51,7 +51,9 @@ else
     for py_pkg in ${py_pkgs[@]}; do
         # py_pkg=$(sed "s/=/==/" <<< "$py_pkg")
         if $(grep -iq "$py_pkg" <<< $installed_py_pkgs); then
-            echo "OK        $(grep -i "$py_pkg" <<< $installed_py_pkgs)" >> check-setup-mds.log
+            # Match the package name up until the first whitespace to get regexed versions
+            # without getting all following packages contained in the string of all pacakges
+            echo "OK        $(grep -io "${py_pkg}\S*" <<< $installed_py_pkgs)" >> check-setup-mds.log
         else
             echo "MISSING   $py_pkg" >> check-setup-mds.log
         fi
@@ -70,7 +72,9 @@ else
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
         if $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
-            echo "OK        $(grep -i "$r_pkg" <<< $installed_r_pkgs)" >> check-setup-mds.log
+            # Match the package name up until the first whitespace to get regexed versions
+            # without getting all following packages contained in the string of all pacakges
+            echo "OK        $(grep -io "${r_pkg}\S*" <<< $installed_r_pkgs)" >> check-setup-mds.log
         else
             echo "MISSING   $r_pkg" >> check-setup-mds.log
         fi
