@@ -47,7 +47,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists
 else
     py_pkgs=(jupyterlab=2.* numpy=1.* pandas=1.* flake8=3.* black=19.* nodejs=10.* jupytext=1.* jupyterlab-git)
     # installed_py_pkgs=$(pip freeze)
-    installed_py_pkgs=$(conda list | tr -s " " "=" | cut -d "=" -f -2)
+    installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
         # py_pkg=$(sed "s/=/==/" <<< "$py_pkg")
         if $(grep -iq "$py_pkg" <<< $installed_py_pkgs); then
