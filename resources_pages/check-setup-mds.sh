@@ -45,7 +45,7 @@ if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists
     echo "If 'conda' is installed already, make sure to run 'conda init' if this was not chosen during the installation." >> check-setup-mds.log
     echo "In order to do this after the installation process, first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
-    py_pkgs=(jupyterlab=2.* numpy=1.* pandas=1.* flake8=3.* black=19.* nodejs=10.* jupytext=1.* jupyterlab-git)
+    py_pkgs=(jupyterlab=2 numpy=1 pandas=1 flake8=3 black=19 nodejs=10 jupytext=1 jupyterlab-git=0)
     # installed_py_pkgs=$(pip freeze)
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
@@ -55,7 +55,7 @@ else
             # without getting all following packages contained in the string of all pacakges
             echo "OK        $(grep -io "${py_pkg}\S*" <<< $installed_py_pkgs)" >> check-setup-mds.log
         else
-            echo "MISSING   $py_pkg" >> check-setup-mds.log
+            echo "MISSING   ${py_pkg}.*" >> check-setup-mds.log
         fi
     done
 fi
@@ -68,7 +68,7 @@ echo "## R packages" >> check-setup-mds.log
 if ! [ -x "$(command -v R)" ]; then  # Check that R exists
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
-    r_pkgs=(cluster nlme tidyverse tinytex blogdown xaringan renv IRkernel tinytex)
+    r_pkgs=(tidyverse=1 blogdown=0 xaringan=0 renv=0 IRkernel=1 tinytex=0)
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
         if $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
@@ -76,7 +76,7 @@ else
             # without getting all following packages contained in the string of all pacakges
             echo "OK        $(grep -io "${r_pkg}\S*" <<< $installed_r_pkgs)" >> check-setup-mds.log
         else
-            echo "MISSING   $r_pkg" >> check-setup-mds.log
+            echo "MISSING   $r_pkg.*" >> check-setup-mds.log
         fi
     done
 fi
