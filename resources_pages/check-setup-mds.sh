@@ -27,8 +27,8 @@ fi
 # The single equal sign syntax is what we have in the install instruction for conda,
 # so I am using it below for Python packages so that we can just paste in the same
 # syntax as for the conda installations instructions. I use the same single `=`
-# for the system packages here for consistency
-sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* psql=12.* tlmgr=5.* latex=3.14.* code=1.4.*)
+# for the system packages here for consistency.
+sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* psql=12.* tlmgr=5.* latex=3.* code=1.*)
 for sys_prog in ${sys_progs[@]}; do
     sys_prog_no_version=$(sed "s/=.*//" <<< "$sys_prog")
     regex_version=$(sed "s/.*=//" <<< "$sys_prog")
@@ -37,7 +37,7 @@ for sys_prog in ${sys_progs[@]}; do
         # Check if the version regex string matches the installed version
         if $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version |  head -1)"); then
             # Since programs like rstudio and vscode don't print the program name with `--version`,
-            # we need one extra step before logging 
+            # we need one extra step before logging
             installed_version=$(grep -io "$regex_version" <<< "$($sys_prog_no_version --version | head -1)")
             echo "OK        "$sys_prog_no_version $installed_version >> check-setup-mds.log
             # Use `head` because `R --version` prints an essay...
