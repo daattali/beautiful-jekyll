@@ -6,8 +6,14 @@
 # Tries to run system programs and if successful greps their version string
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo ''
-echo "# MDS setup check 0.0.1" > check-setup-mds.log
-echo "" >> check-setup-mds.log
+echo "# MDS setup check 0.0.1" | tee check-setup-mds.log
+echo '' | tee check-setup-mds.log
+echo 'If a program or package is marked as MISSING,'
+echo 'this means that it either is not installed at all or the wrong version is installed.'
+echo 'The required version is indicated with a number and an asterisk (*),'
+echo 'e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).'
+echo ''
+echo 'Checking program and package versions...'
 echo "## System programs" >> check-setup-mds.log
 
 # There is an esoteric case for .app programs on macOS where `--version` does not work
