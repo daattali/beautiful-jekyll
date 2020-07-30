@@ -260,14 +260,20 @@ install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv'))
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
-### IR kernel
+### IRkernel
 
-The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, install it and run the setup via the following two commands:
-Open RStudio and type the following commands into the Console panel:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, install by pasting the following command into the RStudio Console:
 
 ```
 install.packages('IRkernel')
-IRkernel::installspec()
+```
+
+Next, open a terminal and type the following
+(you can't use RStudio for this step
+since it doesn't honor $PATH changes in ~/.bash_profile)
+
+```
+R -e "IRkernel::installspec()"
 ```
 
 To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch the Jupyter Lab type the following in Terminal:
