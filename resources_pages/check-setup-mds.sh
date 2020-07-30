@@ -81,6 +81,41 @@ else
     done
 fi
 
+# jupyterlab PDF generation
+if ! [ -x "$(command -v jupyter)" ]; then  # Check that jupyter exists as an executable program
+    echo "Please install 'jupyterlab' before testing PDF generation." >> check-setup-mds.log
+else
+    # Create an empty json-compatible notebook file for testing
+    echo '{
+     "cells": [
+      {
+       "cell_type": "code",
+       "execution_count": null,
+       "metadata": {},
+       "outputs": [],
+       "source": []
+      }
+     ],
+     "metadata": {
+      "kernelspec": {
+       "display_name": "",
+       "name": ""
+      },
+      "language_info": {
+       "name": ""
+      }
+     },
+     "nbformat": 4,
+     "nbformat_minor": 4
+    }' > mds-nbconvert-pdf-test.ipynb
+    if jupyter nbconvert mds-nbconvert-pdf-test.ipynb --to pdf &> /dev/null; then
+        echo 'OK        jupyterlab PDF-generation was successful.' >> check-setup-mds.log
+    else
+        echo 'MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.' >> check-setup-mds.log
+    fi
+    rm mds-nbconvert-pdf-test.ipynb
+fi
+
 # 3. R packages
 # Format R package output similar to above for python and grep for correct version numbers
 # Currently marks both uninstalled and wrong verion number as MISSING
@@ -102,5 +137,21 @@ else
     done
 fi
 
-# Ouput the saved file to stdout
+# rmarkdown PDF generation
+if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
+    echo "Please install 'R' before testing PDF generation." >> check-setup-mds.log
+else
+    # Create an empty Rmd-file for testing
+    touch mds-knit-pdf-test.Rmd
+    if Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
+        echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
+    else
+        echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
+    fi
+    rm mds-knit-pdf-test.Rmd
+fi
+
+# 4. Ouput the saved file to stdout
+# I am intentionally using cat in the end instead of `tee` throughout
+# so that students have time to read the help message in the beginning.
 cat check-setup-mds.log
