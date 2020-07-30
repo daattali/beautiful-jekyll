@@ -244,6 +244,8 @@ For more information about these matters see
 https://www.gnu.org/licenses/.
 ```
 
+> Note: Although it is possible to install R through conda, we highly recommend not doing so. In case you have already installed R using conda you can remove it by executing `conda uninstall r-base`.
+
 ### RStudio
 
 Download the Ubuntu 18/Debian 10 Desktop version of RStudio Preview from [https://rstudio.com/products/rstudio/download/preview/](https://rstudio.com/products/rstudio/download/preview/). Open the file and follow the installer instructions.
@@ -282,7 +284,7 @@ install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
+To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch Jupyter Lab, type the following in a terminal:
 
 ```
 jupyter lab
@@ -406,7 +408,7 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the 
 
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
 
-### Customizing VS Code with Extensions
+## Visual Studio Code Extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
