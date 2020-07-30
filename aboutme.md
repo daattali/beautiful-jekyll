@@ -1,16 +1,12 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About 
+subtitle: 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I graduated with a PhD in Biostatistics from The University of Texas Health Science Center School of Public Health (UTHealth) in December 2016 and recently held an appointment as a Post-Doctoral Research Associate in Data Science at Rice University in Dr. Marina Vannucci's research lab. Prior to this role, I served as a statistical consultant in the Biostatistics Lab at Johnson Space Center on the Human Health and Performance Contract. I recently joined the Statistics Department at Colorardo State University as an Assistant Professor Fall 2020. My research interests include:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+**Theory and Methods:** Bayesian modeling, variable selection, graphical models, nonparametric Bayes, statistical computing, multistate Markov models, R package development, varying-coefficient models, hidden Markov models, variational inference
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+**Application:** cancer prevention, smoking behaviors, mental health, addiction, physical activity, nutrition, microbiome, mHealth, ecological momentary assessment, intensive longitudinal data, environmental health, human health and performance in space
