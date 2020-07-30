@@ -81,8 +81,10 @@ echo "" >> check-setup-mds.log
 echo "## Python packages" >> check-setup-mds.log
 if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executable program
     echo "Please install 'conda' to check Python package versions." >> check-setup-mds.log
-    echo "If 'conda' is installed already, make sure to run 'conda init' if this was not chosen during the installation." >> check-setup-mds.log
-    echo "In order to do this after the installation process, first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
+    echo "If 'conda' is installed already, make sure to run 'conda init'" >> check-setup-mds.log
+    echo "if this was not chosen during the installation." >> check-setup-mds.log
+    echo "In order to do this after the installation process," >> check-setup-mds.log
+    echo "first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
 else
     py_pkgs=(jupyterlab=2 numpy=1 pandas=1 flake8=3 black=19 nodejs=10 jupytext=1 jupyterlab-git=0)
     # installed_py_pkgs=$(pip freeze)
