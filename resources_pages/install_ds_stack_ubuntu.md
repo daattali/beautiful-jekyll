@@ -19,7 +19,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [Google Chrome browser](#chrome-browser)
+- [Google Chrome browser](#google-chrome-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
 - [Visual Studio Code](#visual-studio-code)
@@ -27,8 +27,8 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
-- [Jupyter extensions](#jupyter-extensions)
-- [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
+- [JupyterLab setup](#jupyterlab-setup)
+- [R, IRkernel and RStudio](#r-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)

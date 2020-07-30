@@ -18,7 +18,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [Google Chrome browser](#chrome-browser)
+- [Google Chrome browser](#google-chrome-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
 - [Bash shell](#bash-shell)
@@ -27,8 +27,8 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
-- [Jupyter extensions](#jupyter-extensions)
-- [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
+- [JupyterLab setup](#jupyterlab-setup)
+- [R, XQuartz,IRkernel and RStudio](#r-xquartz-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -194,7 +194,7 @@ you can replace `conda install` with `conda install -y`.
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
-## Jupyter extensions
+## JupyterLab setup
 
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
