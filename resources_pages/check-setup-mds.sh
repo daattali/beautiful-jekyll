@@ -155,4 +155,4 @@ fi
 # I am intentionally showing the entire output in the end,
 # instead of progressively with `tee` throughout
 # so that students have time to read the help message in the beginning.
-cat check-setup-mds.log
+tail -n +2 check-setup-mds.log  # `tail` to skip rows already echoed to stdout
