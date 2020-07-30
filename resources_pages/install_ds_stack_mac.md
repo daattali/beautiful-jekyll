@@ -18,7 +18,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [Google Chrome browser](#chrome-browser)
+- [Google Chrome browser](#google-chrome-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
 - [Bash shell](#bash-shell)
@@ -27,8 +27,8 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
-- [Jupyter extensions](#jupyter-extensions)
-- [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
+- [JupyterLab setup](#jupyterlab-setup)
+- [R, XQuartz,IRkernel and RStudio](#r-xquartz-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -60,7 +60,7 @@ You will have to quit all instances of open Terminals and then restart the Termi
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can install VS Code either via the [Snap store/Ubuntu software app through this link](https://snapcraft.io/code) or via the downloadable deb-file from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac).
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac).
 **Be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instructions as well.**
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
@@ -194,7 +194,7 @@ you can replace `conda install` with `conda install -y`.
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
-## Jupyter extensions
+## JupyterLab setup
 
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
@@ -205,7 +205,7 @@ conda install jupytext=1.*
 jupyter lab build
 ```
 
-To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
 ## R, XQuartz, IRkernel and RStudio
 
@@ -270,19 +270,19 @@ install.packages('IRkernel')
 
 Next, open a terminal and type the following
 (you can't use RStudio for this step
-since it doesn't honor $PATH changes in ~/.bash_profile)
+since it doesn't honor `$PATH` changes in `~/.bash_profile`)
 
 ```
 R -e "IRkernel::installspec()"
 ```
 
-To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch the Jupyter Lab type the following in Terminal:
+To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch the JupyterLab type the following in Terminal:
 
 ```
 jupyter lab
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
+A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
 
@@ -294,14 +294,14 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
 
-First, open RStudio and run the following commands to install the tinytex package and setup tinytex:
+First, open RStudio and run the following commands to install the `tinytex` package and setup `tinytex`:
 
 ```
 install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however to for Jupyter we need to add several more packages. Do this by opening a terminal and copying the following there press enter:
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Do this by opening a terminal and copying the following there press enter:
 
 ```
 tlmgr install eurosym \
@@ -329,7 +329,7 @@ launch `jupyter lab` from a terminal and open either a new notebook
 or the same one you used to test IRkernel above.
 Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
-your LaTeX environment is setup correctly.
+your LaTeX environment is set up correctly.
 
 You can also check by typing the following to ask for the version of latex:
 
@@ -356,9 +356,9 @@ Compiled with xpdf version 4.02
 
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can download the most recent version from from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default.
+We will be using PostgreSQL as our database management system. You can download the most recent version from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default.
 
-To test if the installation was succesfull open the `SQL Shell` app from the LaunchPad or applications directory. It should look like this if it is working correctly: 
+To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. It should look like this if it is working correctly: 
 
 ![](/resources_pages/imgs/sql_shell.png)
 
@@ -405,7 +405,7 @@ For more examples and ideas, visit:
 
 ## Visual Studio Code Extensions
 
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can intall the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
 ![](/resources_pages/imgs/vscode.png)
 

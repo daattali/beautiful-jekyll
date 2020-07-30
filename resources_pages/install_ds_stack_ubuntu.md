@@ -19,7 +19,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [Google Chrome browser](#chrome-browser)
+- [Google Chrome browser](#google-chrome-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
 - [Visual Studio Code](#visual-studio-code)
@@ -27,8 +27,8 @@ These instructions will walk you through installing the required Data Science so
 - [Git](#git)
 - [Python](#python)
 - [Essential python packages](#essential-python-packages)
-- [Jupyter extensions](#jupyter-extensions)
-- [R, XQuartz,IRkernel and RStudio](#r-xquartx-irkernel-and-rstudio)
+- [JupyterLab setup](#jupyterlab-setup)
+- [R, IRkernel and RStudio](#r-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -199,7 +199,7 @@ conda install jupytext=1.*
 jupyter lab build
 ```
 
-To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
 ## R, IRkernel and RStudio
 
@@ -225,7 +225,7 @@ Next, install `r-base` and `r-base-dev` (useful for compiling R packages from so
 sudo apt install r-base r-base-dev
 ```
 
-After installation, in terminal type the following to ask for the version:
+After installation, type the following in a terminal to ask for the version:
 ```
 R --version
 ```
@@ -252,7 +252,7 @@ Download the Ubuntu 18/Debian 10 Desktop version of RStudio Preview from [https:
 
 > Note that there is not yet an official RStudio version for Ubuntu 20.04, so it is recommended to use the Ubuntu 18 version. Also note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
-To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in terminal. It should open and look something like this picture below:
+To see if you were successful, try opening RStudio by clicking on its icon or typing `rstudio` in a terminal. It should open and look something like this picture below:
 
 ![](/resources_pages/imgs/RStudio-ubuntu.png)
 
@@ -284,13 +284,13 @@ install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch Jupyter Lab, type the following in a terminal:
+To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch JupyterLab, type the following in a terminal:
 
 ```
 jupyter lab
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
+A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
 
@@ -302,7 +302,7 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
 
-First, open RStudio and run the following commands to install the tinytex package and setup tinytex:
+First, open RStudio and run the following commands to install the `tinytex` package and setup `tinytex`:
 
 ```
 install.packages('tinytex')
@@ -348,7 +348,7 @@ launch `jupyter lab` from a terminal and open either a new notebook
 or the same one you used to test IRkernel above.
 Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
-your LaTeX environment is setup correctly.
+your LaTeX environment is set up correctly.
 You can also check by typing the following to ask for the version of latex:
 
 ```
