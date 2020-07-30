@@ -38,7 +38,7 @@ sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* psql=12.* tlmgr=5.* la
 for sys_prog in ${sys_progs[@]}; do
     sys_prog_no_version=$(sed "s/=.*//" <<< "$sys_prog")
     regex_version=$(sed "s/.*=//" <<< "$sys_prog")
-    # Check if command is executable
+    # Check if the command exists and is is executable
     if [ -x "$(command -v $sys_prog_no_version)" ]; then
         # Check if the version regex string matches the installed version
         if $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version |  head -1)"); then
@@ -61,7 +61,7 @@ done
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "" >> check-setup-mds.log
 echo "## Python packages" >> check-setup-mds.log
-if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists
+if ! [ -x "$(command -v conda)" ]; then  # Check that conda exists as an executable program
     echo "Please install 'conda' to check Python package versions." >> check-setup-mds.log
     echo "If 'conda' is installed already, make sure to run 'conda init' if this was not chosen during the installation." >> check-setup-mds.log
     echo "In order to do this after the installation process, first run 'source <path to conda>/bin/activate' and then run 'conda init'." >> check-setup-mds.log
@@ -86,7 +86,7 @@ fi
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "" >> check-setup-mds.log
 echo "## R packages" >> check-setup-mds.log
-if ! [ -x "$(command -v R)" ]; then  # Check that R exists
+if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable program
     echo "Please install 'R' to check R package versions." >> check-setup-mds.log
 else
     r_pkgs=(tidyverse=1 blogdown=0 xaringan=0 renv=0 IRkernel=1 tinytex=0)
