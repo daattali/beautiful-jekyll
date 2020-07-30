@@ -7,7 +7,7 @@
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo ''
 echo "# MDS setup check 0.0.2" | tee check-setup-mds.log
-echo '' | tee check-setup-mds.log
+echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that it either is not installed at all or the wrong version is installed.'
 echo 'The required version is indicated with a number and an asterisk (*),'
