@@ -2,9 +2,7 @@
 # Checks that the correct version of all system programs and R & Python packages
 # which are needed for the start of the MDS program are correctly installed.
 
-# 1. System programs
-# Tries to run system programs and if successful greps their version string
-# Currently marks both uninstalled and wrong verion number as MISSING
+# 0. Help message and OS info
 echo ''
 echo "# MDS setup check 0.0.2" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
@@ -14,6 +12,26 @@ echo 'The required version is indicated with a number and an asterisk (*),'
 echo 'e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).'
 echo ''
 echo 'Checking program and package versions...'
+echo '## Operating system' >> check-setup-mds.log
+if [[ "$(uname)" == 'Linux' ]]; then
+    sys_info=$(hostnamectl)
+    grep "Operating" <<< $sys_info | sed 's/^[[:blank:]]*//' >> check-setup-mds.log
+    grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
+    grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
+elif [[ "$(uname)" == 'Darwin' ]]; then
+    sw_vers >> check-setup-mds.log
+elif [[ "$OSTYPE" == 'msys' ]]; then
+    echo $(wmic os get caption) >> check-setup-mds.log
+    echo " $(grep bit <<< $(wmic os get osarchitecture))" >> check-setup-mds.log
+    echo $(wmic os get version) >> check-setup-mds.log
+else
+    echo "Operating system verison could not be detected." >> check-setup-mds.log
+fi
+echo '' >> check-setup-mds.log
+
+# 1. System programs
+# Tries to run system programs and if successful greps their version string
+# Currently marks both uninstalled and wrong verion number as MISSING
 echo "## System programs" >> check-setup-mds.log
 
 # There is an esoteric case for .app programs on macOS where `--version` does not work
