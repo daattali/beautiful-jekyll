@@ -34,9 +34,11 @@ echo '' >> check-setup-mds.log
 # Currently marks both uninstalled and wrong verion number as MISSING
 echo "## System programs" >> check-setup-mds.log
 
-# There is an esoteric case for .app programs on macOS where `--version` does not work
-# So far, we only install rstudio as an .app
+# There is an esoteric case for .app programs on macOS where `--version` does not work.
+# Also, not all programs are added to path,
+# so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
+    # rstudio is installed as an .app
     if $(grep -iq "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
         # This is what is needed instead of --version
         installed_version_tmp=$(grep -io "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
@@ -46,13 +48,26 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     else
         echo "MISSING   rstudio 1.*" >> check-setup-mds.log
     fi
+
+    # psql is not added to path by default
+    if ! [ -x "$(command -v /Library/PostgreSQL/12/bin/psql)" ]; then
+        echo "OK        "$(/Library/PostgreSQL/12/bin/psql --version) >> check-setup-mds.log
+    else
+        echo "MISSING   postgreSQL 12.*" >> check-setup-mds.log
+    fi
+
+    # Remove rstudio and psql from the programs to be tested using the normal --version test
+    sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* tlmgr=5.* latex=3.* code=1.*)
+else
+    # For Linux and Windows, test all packages the same way since there are no special cases
+    sys_progs=(rstudio=1.* psql=12.* python=3.* conda=4.* git=2.* docker=19.* R=4.* tlmgr=5.* latex=3.* code=1.*)
+    # Note that the single equal sign syntax is what we have in the install
+    # instruction for conda, so I am using it for Python packagees so that we
+    # can just paste in the same syntax as for the conda installations
+    # instructions. Here, I use the same single `=` for the system packages
+    # (and later for the R packages) for consistency.
 fi
 
-# The single equal sign syntax is what we have in the install instruction for conda,
-# so I am using it below for Python packages so that we can just paste in the same
-# syntax as for the conda installations instructions. I use the same single `=`
-# for the system packages here for consistency.
-sys_progs=(python=3.* conda=4.* git=2.* docker=19.* R=4.* psql=12.* tlmgr=5.* latex=3.* code=1.*)
 for sys_prog in ${sys_progs[@]}; do
     sys_prog_no_version=$(sed "s/=.*//" <<< "$sys_prog")
     regex_version=$(sed "s/.*=//" <<< "$sys_prog")
