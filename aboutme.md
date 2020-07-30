@@ -10,3 +10,5 @@ I graduated with a PhD in Biostatistics from The University of Texas Health Scie
 **Theory and Methods:** Bayesian modeling, variable selection, graphical models, nonparametric Bayes, statistical computing, multistate Markov models, R package development, varying-coefficient models, hidden Markov models, variational inference
 
 **Application:** cancer prevention, smoking behaviors, mental health, addiction, physical activity, nutrition, microbiome, mHealth, ecological momentary assessment, intensive longitudinal data, environmental health, human health and performance in space
+
+Here's a link to my [CV]{https://mkoslovsky.github.io/CV.pdf}, updated July 2020.
