@@ -152,6 +152,7 @@ else
 fi
 
 # 4. Ouput the saved file to stdout
-# I am intentionally using cat in the end instead of `tee` throughout
+# I am intentionally showing the entire output in the end,
+# instead of progressively with `tee` throughout
 # so that students have time to read the help message in the beginning.
 cat check-setup-mds.log
