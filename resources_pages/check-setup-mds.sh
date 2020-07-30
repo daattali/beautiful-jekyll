@@ -7,9 +7,16 @@ echo ''
 echo "# MDS setup check 0.0.2" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
-echo 'this means that it either is not installed at all or the wrong version is installed.'
+echo 'this means that you are missing the required version of that program or package.'
+echo 'Either it is not installed at all or the wrong version is installed.'
 echo 'The required version is indicated with a number and an asterisk (*),'
 echo 'e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).'
+echo ''
+echo 'You can run the following commands to find out which version'
+echo 'of a program or package is installed (if any):'
+echo 'program_name --version  # For system programs'
+echo 'conda list  # For Python packages'
+echo 'R -q -e "installed.packages()[,c('Package', 'Version')]"  # For R packages'
 echo ''
 echo 'Checking program and package versions...'
 echo '## Operating system' >> check-setup-mds.log
