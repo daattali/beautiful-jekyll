@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software paper accepted in BMC Bioinoformatics
-subtitle: MicroBVS: Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package
+subtitle: MicroBVS Dirichlet-tree multinomial regression models with Bayesian variable selection - an R package
 tags: [software, publication]
 ---
 We present MicroBVS, an R package for Dirichlet-tree multinomial models with Bayesian variable selection, 
