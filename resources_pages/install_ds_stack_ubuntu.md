@@ -284,7 +284,7 @@ install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
+To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch Jupyter Lab, type the following in a terminal:
 
 ```
 jupyter lab
