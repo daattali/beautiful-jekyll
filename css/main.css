@@ -782,3 +782,9 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+/* Prevent navigation bar from covering headings when internal links are clicked, */
+/* e.g. in a ToC. */
+html {
+  scroll-padding-top: 70px; /* height of sticky header */
+}
