@@ -23,7 +23,7 @@ description: internal website for the UBC Master of Data Science
 
 # List of links in the navigation bar
 navbar-links:
-  Program: "about"
+  Program:
     - About : "about"
     - Our vision: "vision"
     - At a glance: "img/schedule.pdf"
@@ -32,7 +32,7 @@ navbar-links:
     - Calendar: "calendar"
     - Policies and Regulations: "policies"
     - Jobs: "jobs"
-  Capstone: "capstone/about"
+  Capstone:
     - About: "capstone/about"
     - Partner info: "capstone/partner_info"
     - Proposals: "capstone/proposal"
