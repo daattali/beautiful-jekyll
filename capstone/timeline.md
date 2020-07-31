@@ -23,9 +23,10 @@ The exact capstone timeline is TBA, however an approximate timeline is provided 
 | [Project](#project)                                                                            | May 3 - June 30, 2021 |
 | [Kickoff hackathon](#hackathon)                                                                | May 3 - May 5, 2021   |
 
+
 #### Proposal revision process
 
-Members of an organization interested in participating as a capstone partner should submit a project [proposal](/capstone/partner_info/#proposals).
+Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/proposal/).
 
 Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
 
@@ -43,14 +44,13 @@ The successful capstone partners accept the offers, and confirm their attendance
 
 Capstone partners must attend the Capstone Fair to meet with the students and answer any questions they may have. The Capstone Fair takes place at the UBC Robson Square campus in downtown Vancouver. Detailed information will be emailed to each capstone partner. An example of a Capstone fair slide deck can be found [here](/capstone/Sauder2019CapstoneFair.pdf).
 
-
 #### Students rate the projects
 
 After the capstone fair, the students assign a final rating to the projects.
 
 #### Partners are notified of our decisions
 
-Based on student interest, the MDS leadership team decides which projects will move forward. Student groups are assigned to the projects at the same time.. 
+Based on student interest, the MDS leadership team decides which projects will move forward. Student groups are assigned to the projects at the same time.
 
 #### Partners provide data
 
