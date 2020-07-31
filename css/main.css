@@ -786,3 +786,67 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
+
+/* CONTENT STYLING */
+award {
+	color:red
+}
+div.heading {
+	font-size:large;
+	font-weight:bold;
+	color:black; 
+	font-family: sans-serif;
+}
+
+li.year {
+	list-style:none;
+	font-size:large;
+	font-weight:bold;
+	margin-top: 1em;
+	text-align: left;
+}
+li.pubitem {
+	margin-top: 0.5em;
+	text-align: left;
+}
+td.pubitem {
+	vertical-align: top;
+}
+div.pubitem{
+	margin-top: 0px;
+}
+a.pubtitle {
+}
+div.pubauthor {
+    color:#5b2503;
+}
+a.pubauthor {
+    color:#5b2503;
+}
+div.pubInfo {
+	margin-left: 15px;
+	border-left-style: solid;
+	border-width:2px;
+	border-color: #aaaaaa;
+}
+div.pubjournal {
+	font-style:italic;
+	color:#213C53;
+}
+div.pubspan {
+	font-size:small;
+}
+/* td.pubimg { */
+    /* <http://www.w3.org/wiki/CSS/Properties/text-align>
+     * left, right, center, justify, inherit
+     */
+    /*text-align: center;*/
+    /* <http://www.w3.org/wiki/CSS/Properties/vertical-align>
+     * baseline, sub, super, top, text-top, middle,
+     * bottom, text-bottom, length, or a value in percentage
+     */
+	/* vertical-align: top;
+    border-width: 100px;
+	text-align: left;
+
+} */
