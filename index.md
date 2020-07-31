@@ -11,13 +11,15 @@ Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing 
 
 My research aims to enable evidence-based decision making. I study sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
 
-I take a systems engineering approach and integrate tools from other disciplines including economics, data science, and political science. 
+I take a systems engineering approach and leverage diverse methods matched to the problem at hand. My work often integrates tools and insights from other disciplines including economics, data science, and political science. 
+
+My PhD work is on strategies and policies for integrating electric vehicles into power systems for the achievement of deep decarbonization goals.
 
 Follow my latest work on [Twitter](https://twitter.com/EmilDimanchev).
 
 ## Bio
 
-I am currently a Senior Research Associate at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu) and soon an electrical power engineering PhD Candidate at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)) on electric vehicle integration in power systems. I am also a certified Superforecaster at [Good Judgment](https://goodjudgment.com), where I provide probabilistic predictions on world events.
+I am currently a PhD Candidate in electrical power engineering at the Norwegian University of Science and Technology ([Energy System Planning group](https://www.ntnu.edu/iel/research)), an External Researcher at the MIT [Center for Energy and Environmental Policy Research](http://ceepr.mit.edu), and a certified Superforecaster at [Good Judgment](https://goodjudgment.com).
 
 Previously, I was a Senior Carbon Market Analyst at Thomson Reuters Point Carbon, where I advised public and private sector decision makers on carbon markets. 
 
