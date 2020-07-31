@@ -9,18 +9,19 @@ This year's capstone course will run __May - June, 2021__ (~8 weeks).
 
 The exact capstone timeline is TBA, however an approximate timeline is provided below, followed by additional detail on each event.
 
-| Event                                                                                    | Deadline/Period     |
-|------------------------------------------------------------------------------------------|---------------------|
-| Suggested initial submission of [proposal](https://ubc-mds.github.io/capstone/proposal/) | November, 2020      |
-| [Proposal deadline](#proposal-revision-process)                                          | December, 2020      |
-| [Selection of proposals](#selection-of-proposals)                                        | January, 2021       |
-| [Capstone fair](#capstone-fair)                                                          | February, 2021      |
-| [Students rate the projects](#students-rate-the-projects)                                | February, 2021      |
-| [Partners are notified of our decisions](#partners-are-notified-of-our-decisions)        | March, 2021         |
-| [Partners demonstrate/declare readiness of data](#partners-provide-data)                 | April, 2021         |
-| [Kickoff meetings](#kickoff-meetings)                                                    | March - April, 2021 |
-| [Project](#project)                                                                      | May - June, 2021    |
-| [Kickoff hackathon](#hackathon)                                                          | May, 2021           |
+| Event                                                                                          | Deadline/Period       |
+|------------------------------------------------------------------------------------------------|-----------------------|
+| [Suggested initial submission of proposal](https://ubc-mds.github.io/capstone/proposal/)       | November 15, 2020     |
+| [Proposal deadline](#proposal-revision-process)                                                | December 15, 2020     |
+| [Selection of proposals](#selection-of-proposals)                                              | January 15, 2021      |
+| [Capstone fair](#capstone-fair)                                                                | February, 2021        |
+| [Partners declare project legalities](https://ubc-mds.github.io/capstone/proposal/#legal-info) | February, 2021        |
+| [Students rate the projects](#students-rate-the-projects)                                      | February, 2021        |
+| [Partners are notified of our decisions](#partners-are-notified-of-our-decisions)              | March 1, 2021         |
+| [Partners demonstrate readiness of data](#partners-provide-data)                               | April 1, 2021         |
+| [Kickoff meetings](#kickoff-meetings)                                                          | March - April, 2021   |
+| [Project](#project)                                                                            | May 3 - June 30, 2021 |
+| [Kickoff hackathon](#hackathon)                                                                | May 3 - May 5, 2021   |
 
 #### Proposal revision process
 
