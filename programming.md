@@ -4,4 +4,4 @@ title: Programming
 subtitle: Things to do at Virtual Fur Squared
 ---
 
-Things about the submission form should go here.
+Things about the submission form should go here. GRONK
