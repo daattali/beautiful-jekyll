@@ -15,6 +15,7 @@ navbar-links:
   About: "about"
   Programming: "programming"
   Dealers & Artists: "dealers"
+  Staff: "staff"
   Contact: "contact"
   Social Media:
     - Twitter: "https://twitter.com/fursquared"
