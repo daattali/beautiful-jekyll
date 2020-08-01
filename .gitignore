@@ -2,11 +2,13 @@
 _site
 .sass-cache
 .vagrant
+vendor
 
 # general
 .DS_Store
 Thumbs.db
 ehthumbs.db
+*.swp
 
 Gemfile.lock
 
