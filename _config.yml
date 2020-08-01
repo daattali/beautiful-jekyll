@@ -47,7 +47,7 @@ social-network-links:
   twitter: daattali
   rss: false
   email : " "
-  github:
+  github: true
   
 #  reddit: yourname
 #  linkedin: daattali
