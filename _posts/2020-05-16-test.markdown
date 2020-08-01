@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Petit théorème de Fermat, combinatoire et action de groupe'
+title: 'DM n°1'
 published: true
 ---
 
