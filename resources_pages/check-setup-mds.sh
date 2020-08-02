@@ -48,21 +48,21 @@ echo "## System programs" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if [ -x "$(command -v /Library/PostgreSQL/12/bin/psql)" ]; then
-        echo "OK        "$(/Library/PostgreSQL/12/bin/psql --version) >> check-setup-mds.log
-    else
+    if ! [ -x "$(command -v /Library/PostgreSQL/12/bin/psql)" ]; then
         echo "MISSING   postgreSQL 12.*" >> check-setup-mds.log
+    else
+        echo "OK        "$(/Library/PostgreSQL/12/bin/psql --version) >> check-setup-mds.log
     fi
 
     # rstudio is installed as an .app
-    if $(grep -iq "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+    if ! $(grep -iq "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)"); then
+        echo "MISSING   rstudio 1.*" >> check-setup-mds.log
+    else
         # This is what is needed instead of --version
         installed_version_tmp=$(grep -io "= \"1.*" <<< "$(mdls -name kMDItemVersion /Applications/RStudio.app)")
         # Tidy strangely formatted version number
         installed_version=$(sed "s/= //;s/\"//g" <<< "$installed_version_tmp")
         echo "OK        "rstudio $installed_version >> check-setup-mds.log
-    else
-        echo "MISSING   rstudio 1.*" >> check-setup-mds.log
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
@@ -81,20 +81,21 @@ for sys_prog in ${sys_progs[@]}; do
     sys_prog_no_version=$(sed "s/=.*//" <<< "$sys_prog")
     regex_version=$(sed "s/.*=//" <<< "$sys_prog")
     # Check if the command exists and is is executable
-    if [ -x "$(command -v $sys_prog_no_version)" ]; then
+    if ! [ -x "$(command -v $sys_prog_no_version)" ]; then
+        # If the executable does not exist
+        echo "MISSING   $sys_prog" >> check-setup-mds.log
+    else
         # Check if the version regex string matches the installed version
-        if $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version |  head -1)"); then
+        # Use `head` because `R --version` prints an essay...
+        if ! $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version |  head -1)"); then
+            # If the version is wrong
+            echo "MISSING   $sys_prog" >> check-setup-mds.log
+        else
             # Since programs like rstudio and vscode don't print the program name with `--version`,
             # we need one extra step before logging
             installed_version=$(grep -io "$regex_version" <<< "$($sys_prog_no_version --version | head -1)")
             echo "OK        "$sys_prog_no_version $installed_version >> check-setup-mds.log
-            # Use `head` because `R --version` prints an essay...
-            # echo "OK       " $(head -1 <<< "$($sys_prog_no_version --version)") >> check-setup-mds.log
-        else  # If the version is wrong
-            echo "MISSING   $sys_prog" >> check-setup-mds.log
         fi
-    else  # If the executable does not exist
-        echo "MISSING   $sys_prog" >> check-setup-mds.log
     fi
 done
 
@@ -115,12 +116,12 @@ else
     installed_py_pkgs=$(conda list | tail -n +4 | tr -s " " "=" | cut -d "=" -f -2)
     for py_pkg in ${py_pkgs[@]}; do
         # py_pkg=$(sed "s/=/==/" <<< "$py_pkg")
-        if $(grep -iq "$py_pkg" <<< $installed_py_pkgs); then
+        if ! $(grep -iq "$py_pkg" <<< $installed_py_pkgs); then
+            echo "MISSING   ${py_pkg}.*" >> check-setup-mds.log
+        else
             # Match the package name up until the first whitespace to get regexed versions
             # without getting all following packages contained in the string of all pacakges
             echo "OK        $(grep -io "${py_pkg}\S*" <<< $installed_py_pkgs)" >> check-setup-mds.log
-        else
-            echo "MISSING   ${py_pkg}.*" >> check-setup-mds.log
         fi
     done
 fi
@@ -152,10 +153,10 @@ else
      "nbformat": 4,
      "nbformat_minor": 4
     }' > mds-nbconvert-pdf-test.ipynb
-    if jupyter nbconvert mds-nbconvert-pdf-test.ipynb --to pdf &> /dev/null; then
-        echo 'OK        jupyterlab PDF-generation was successful.' >> check-setup-mds.log
-    else
+    if ! jupyter nbconvert mds-nbconvert-pdf-test.ipynb --to pdf &> /dev/null; then
         echo 'MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.' >> check-setup-mds.log
+    else
+        echo 'OK        jupyterlab PDF-generation was successful.' >> check-setup-mds.log
     fi
     rm mds-nbconvert-pdf-test.ipynb
 fi
@@ -171,12 +172,12 @@ else
     r_pkgs=(tidyverse=1 blogdown=0 xaringan=0 renv=0 IRkernel=1 tinytex=0)
     installed_r_pkgs=$(R -q -e "print(format(as.data.frame(installed.packages()[,c('Package', 'Version')]), justify='left'), row.names=FALSE)" | grep -v "^>" | tail -n +2 | sed 's/^ //;s/ *$//' | tr -s ' ' '=')
     for r_pkg in ${r_pkgs[@]}; do
-        if $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
+        if ! $(grep -iq "$r_pkg" <<< $installed_r_pkgs); then
+            echo "MISSING   $r_pkg.*" >> check-setup-mds.log
+        else
             # Match the package name up until the first whitespace to get regexed versions
             # without getting all following packages contained in the string of all pacakges
             echo "OK        $(grep -io "${r_pkg}\S*" <<< $installed_r_pkgs)" >> check-setup-mds.log
-        else
-            echo "MISSING   $r_pkg.*" >> check-setup-mds.log
         fi
     done
 fi
@@ -187,10 +188,10 @@ if ! [ -x "$(command -v R)" ]; then  # Check that R exists as an executable prog
 else
     # Create an empty Rmd-file for testing
     touch mds-knit-pdf-test.Rmd
-    if Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
-        echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
-    else
+    if ! Rscript -e "rmarkdown::render('mds-knit-pdf-test.Rmd', output_format = 'pdf_document')" &> /dev/null; then
         echo "MISSING   rmarkdown PDF-generation failed. Check that latex and rmarkdown are marked OK above." >> check-setup-mds.log
+    else
+        echo 'OK        rmarkdown PDF-generation was successful.' >> check-setup-mds.log
     fi
     rm mds-knit-pdf-test.Rmd
 fi
