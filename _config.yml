@@ -42,9 +42,8 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  
-  
-  youtube: channel/UCf20K2AUAZH8x6Q1Z2KnYXg/featured?view_as=subscriber
+    
+  youtube: user/coulombeau
   twitter: daattali
   rss: false
   email : maiaboo64@gmail.com
