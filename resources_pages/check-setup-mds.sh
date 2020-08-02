@@ -14,9 +14,11 @@ echo 'e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.
 echo ''
 echo 'You can run the following commands to find out which version'
 echo 'of a program or package is installed (if any):'
+echo '```'
 echo 'program_name --version  # For system programs'
 echo 'conda list  # For Python packages'
 echo 'R -q -e "installed.packages()[,c('Package', 'Version')]"  # For R packages'
+echo '```'
 echo ''
 echo 'Checking program and package versions...'
 echo '## Operating system' >> check-setup-mds.log
