@@ -91,6 +91,8 @@
       {% endif %}
     {% elsif page.thumbnail-img %}
       {{ page.thumbnail-img }}
+    {$ elsif site.blog-image %}
+      {{ site.blog-image }}
     {% elsif site.avatar %}
       {{ site.avatar }}
     {% endif %}
