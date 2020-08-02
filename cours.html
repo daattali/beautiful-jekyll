@@ -1,0 +1,71 @@
+---
+layout: page
+title: Cours
+description: Cours MPSI
+css: "/css/pdfs.css"
+---
+
+<div class="row">
+
+    <div class="col-lg-12">
+        <section id="cours">
+          {% if site.data.pdfs.Cours %}
+            <h3>Notes de cours</h3>
+            {% assign sorted_cours=site.data.pdfs.Cours|sort:'title' %}
+            {% for cours in sorted_cours %}
+            {% if cours.path %}
+            <div class="col-lg-4 pdf">
+              <div class="zoom">
+                <a href="{{'/pdfs/' | append: cours.path}}">
+                    <i class="fa fa-file-pdf-o fa-1x"></i>
+                    <span style="display:inline-block; width:.1ex"></span> {{cours.title|replace:'\\',' '}}
+                </a>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          {% endif %}
+        </section>
+    </div>
+
+    <div class="col-lg-12">
+        <section id="formulaires">
+          {% if site.data.pdfs.Formulaires %}
+            <h3>Formulaires</h3>
+            {% assign sorted_formulaires=site.data.pdfs.Formulaires|sort:'title' %}
+            {% for formulaire in sorted_formulaires %}
+            {% if formulaire.path %}
+            <div class="col-lg-4 pdf">
+              <div class="zoom">
+                <a href="{{'/pdfs/' | append: formulaire.path}}">
+                    <i class="fa fa-file-pdf-o fa-1x"></i>
+                    <span style="display:inline-block; width:.1ex"></span> {{formulaire.title|replace:'\\',' '}}
+                </a>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          {% endif %}
+        </section>
+    </div>
+
+    <div class="col-lg-12">
+        <section id="colles">
+          {% if site.data.pdfs.Colles %}
+            <h3>Programmes de colles</h3>
+            {% assign sorted_colles=site.data.pdfs.Colles|sort:'path' %}
+            {% for colle in sorted_colles %} {% if colle.path %}
+            <div class="col-lg-4 pdf">
+              <div class="zoom">
+                <a href="{{'/pdfs/' | append: colle.path}}">
+                    <i class="fa fa-file-pdf-o fa-1x"></i>
+                    <span style="display:inline-block; width:.1ex"></span> {{colle.title}}
+                </a>
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          {% endif %}
+        </section>
+    </div>
+</div>
