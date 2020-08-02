@@ -6,8 +6,8 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<div class="home-container row">
-  <div class="posts-list column-left">
+<div class="home-container">
+  <div class="posts-list">
     {% for post in posts %}
     <article class="post-preview">
       <a href="{{ post.url | absolute_url }}">
@@ -73,8 +73,8 @@ layout: page
     {% endfor %}
   </div>
 
-  <div class="tweets column-right">
-    {% twitter https://twitter.com/fursquared limit=5 %}
+  <div class="tweets">
+    {% twitter https://twitter.com/fursquared limit=2 %}
   </div>
 </div>
 

@@ -933,13 +933,13 @@ pre {
   font-size: 1rem;
 }
 
-.home-container .row {
+.home-container {
   display: flex;
 
-.posts-list .column-left {
+.home-container .posts-list {
   flex: 60%;
 }
 
-.tweets .column-right {
+.home-container .tweets {
   flex: 40%;
 }
