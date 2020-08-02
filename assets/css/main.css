@@ -312,11 +312,13 @@ img {
   }
 }
 
+.avatar-container {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
 .navbar-custom .avatar-container {
-  position: absolute;
-  left: 50%;
-  width: 3.125rem;
-  margin-top: 1.75rem;
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -330,13 +332,13 @@ img {
 }
 
 .avatar-img {
-    background-color: {{ site.navbar-border-col }};
+  width: 32px;
+  height: 32px;
+  background-color: {{ site.navbar-border-col }};
 }
 
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
-  display: inline-block;
-  margin-left: -50%;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, .8);
@@ -358,7 +360,6 @@ img {
 
 @media (min-width: 768px) {
   .navbar-custom .avatar-container {
-    width: 6.25rem;
   }
 
   .navbar-custom .avatar-container .avatar-img-border {

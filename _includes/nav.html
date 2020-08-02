@@ -1,5 +1,15 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% endif %}">
 
+  {% if site.avatar and (layout.show-avatar or page.show-avatar) %}
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        <a href="{{ '' | absolute_url }}">
+          <img alt="Navbar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+        </a>
+      </div>
+    </div>
+  {% endif %}
+
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img }}"/></a>
   {%- elsif site.title -%}
@@ -32,15 +42,5 @@
       {%- endfor -%}
     </ul>
   </div>
-
-  {% if site.avatar and (layout.show-avatar or page.show-avatar) %}
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        <a href="{{ '' | absolute_url }}">
-          <img alt="Navbar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
-        </a>
-      </div>
-    </div>
-  {% endif %}
 
 </nav>
