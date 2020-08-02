@@ -1,0 +1,76 @@
+.zoom {
+    background-color: #cccccc;
+    padding: 10px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+}
+.zoom:hover {
+    background-color: #aaaaaa;
+    box-shadow: 0px 0px 150px black;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.pdf {
+    padding: 5px;
+    height: 3em;
+}
+.pdf:hover {
+    z-index: 2;
+}
+.pdf a {
+    color: #3c3c3c;
+}
+.pdf a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+.enoncecorrige {
+    padding: 5px;
+}
+.enoncecorrige:hover {
+    z-index: 2;
+}
+.enoncecorrige> div {
+    height: 5em;
+    padding: 5px;
+    text-align: center;
+}
+.enoncecorrige div div {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 10px;
+}
+.enoncecorrige a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+}
+.enoncecorrige a p {
+    display: inline;
+}
+.enoncecorrige a:hover p {
+    display: none;
+}
+.enoncecorrige a i {
+    display: none;
+}
+.enoncecorrige a:hover i {
+    display: inline;
+}
