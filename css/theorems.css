@@ -1,0 +1,57 @@
+.theorem {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+}
+
+.theorem:before {
+    content: "Théorème. ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.lemma {
+    display: inline-block;
+    margin: 12px 0;
+    font-style: italic;
+}
+
+.lemma:before {
+    content: "Lemme. ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.proof {
+    display: inline-block;
+    margin: 12px 0;
+    font-style: normal;
+}
+
+.proof:before {
+    content: "Preuve. ";
+    font-style: italic;
+}
+
+.proof:after {
+    content: "\25FC";
+    float: right;
+}
+
+.definition {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+
+.definition:before {
+    content: "Définition. ";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.formula {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
