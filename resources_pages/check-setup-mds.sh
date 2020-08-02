@@ -48,7 +48,7 @@ echo "## System programs" >> check-setup-mds.log
 # so easier to test the location of the executable than having students add it to PATH.
 if [[ "$(uname)" == 'Darwin' ]]; then
     # psql is not added to path by default
-    if ! [ -x "$(command -v /Library/PostgreSQL/12/bin/psql)" ]; then
+    if [ -x "$(command -v /Library/PostgreSQL/12/bin/psql)" ]; then
         echo "OK        "$(/Library/PostgreSQL/12/bin/psql --version) >> check-setup-mds.log
     else
         echo "MISSING   postgreSQL 12.*" >> check-setup-mds.log
