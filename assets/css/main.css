@@ -932,3 +932,14 @@ pre {
   font-style: italic;
   font-size: 1rem;
 }
+
+.home-container .row {
+  display: flex;
+
+.posts-list .column-left {
+  flex: 60%;
+}
+
+.tweets .column-right {
+  flex: 40%;
+}
