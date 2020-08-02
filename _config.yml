@@ -13,12 +13,14 @@ author: Fur Squared
 
 navbar-links:
   About: "about"
+  Registration: "registration"
   Programming: "programming"
   Dealers & Artists: "dealers"
   Staff: "staff"
+  Volunteer: "volunteer"
   Contact: "contact"
-  Social Media:
-    - Twitter: "https://twitter.com/fursquared"
+    #  Social Media:
+    #    - Twitter: "https://twitter.com/fursquared"
 
 # --- Logo --- #
 
