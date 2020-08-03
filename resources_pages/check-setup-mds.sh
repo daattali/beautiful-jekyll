@@ -70,10 +70,30 @@ if [[ "$(uname)" == 'Darwin' ]]; then
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
     sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+# psql and Rstudio are not on PATH in windows
+elif [[ "$OSTYPE" == 'msys' ]]; then
+    if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/12/bin/psql')" ]; then
+        echo "MISSING   psql 12.*" >> check-setup-mds.log
+    else
+        echo "OK        "$('/c/Program Files/PostgreSQL/12/bin/psql' --version) >> check-setup-mds.log
+    fi
+    if ! [ -x "$(command -v '/c/Program Files/RStudio/bin/rstudio')" ]; then
+        echo "MISSING   rstudio 1.*" >> check-setup-mds.log
+    else
+        echo "OK        rstudio "$('/c//Program Files/RStudio/bin/rstudio' --version) >> check-setup-mds.log
+    fi
+    # tlmgr needs .bat appended on windows and it cannot be tested as an exectuable with `-x`
+    if ! [ "$(command -v tlmgr.bat)" ]; then
+        echo "MISSING   tlmgr 5.*" >> check-setup-mds.log
+    else
+        echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
+    fi
+    # Remove rstudio from the programs to be tested using the normal --version test
+    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* docker=19.* code=1.*)
 else
-    # For Linux and Windows, test all packages the same way since there are no special cases
+    # For Linux everything is sane and consistent so all packages can be tested the same way
     sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
-    # Note that the single equal sign syntax is what we have in the install
+    # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
     # instructions. Here, I use the same single `=` for the system packages
