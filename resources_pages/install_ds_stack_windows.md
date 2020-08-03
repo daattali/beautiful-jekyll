@@ -71,45 +71,56 @@ This step is required for
 - all homework submission and grading
 - working collaboratively
 
-## Git
+## Git and Bash
 
-We will be using the command line version of Git as well as Git through RStudio. 
+These two programs are in the same section since they are packaged together in the same installer.
+Briefly, we will be using the Bash shell to interact with our computers via a command line interface.
+We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
 
-Go to <https://git-scm.com/download/win> and a download should automatically start (if not, follow the instructions on that page). After the download has finished, run the installer selecting the following options:
-  - On the **Select Components** page, check "On the Desktop" under "Additional icons"
-  - On the **Choosing the default editor used by Git** page, select "Use the Nano editor by default" from the drop-down menu
-  - For all other pages, use the default options
+Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+  - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
-After installation, test if you were successful by opening the Git Bash program (if you followed the install instructions above, you should now have an icon on your Desktop). Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash program:
+After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
 ![](/resources_pages/imgs/gitbash.png)
 
-## Python
-
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __strongly recommend__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
-
-Head to <https://www.anaconda.com/download/#windows> and download the Anaconda version for Windows with **Python 3.7**. After the download has finished, run the installer selecting the following options:
-  - On the **Advanced Installation Options** page, check both boxes (see image below)
-  - For all other pages, use the default options
-
-![](/resources_pages/imgs/anaconda_windows.png)
-
-After installation, open Powershell (select the Start button, type powershell, and click Windows Powershell from the list) and type the following:
-```
-python
-```
-you should see something like this (in the first line) if you were successful:
+In the terminal, type the following to check which version of Bash you just installed:
 
 ```
-Python 3.7.3 (default, Mar 27 2019, 17:13:21) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+bash --version
 ```
 
-If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
-
-To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Powershell and type the following:
+The output should look similar to this:
 
 ```
-jupyter lab
+GNU bash, version 4.4.23(1)-release (x86_64-pc-sys)
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+```
+
+Let's also check which version of git was installed:
+
+```
+git --version
+```
+
+```
+git version 2.28.0.windows.1
+```
+
+You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
+
+```
+code --version
+```
+
+```
+1.47.3
+91899dcef7b8110878ea59626991a18c8a6a1b3e
+x64
 ```
 
 A browser should have launched and you should see a page that looks like the screenshot below. 
