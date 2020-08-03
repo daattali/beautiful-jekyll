@@ -3,14 +3,17 @@ layout: page
 title: Windows
 subtitle: MDS software stack install instructions for Windows
 ---
+
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- Windows 10 Professional, Enterprise or Education (Build 15063 or later).
-- can connect to networks via a wireless connection (and preferably also a wired connection)
-- has at least 40 GB disk space available
-- has at least 4 GB of RAM
+ - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS. Also note that when installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.*
+- can connect to networks via a wireless connection
+- has at least 50 GB disk space available
+- has at least 8 GB of RAM
 - uses a 64-bit CPU
 - is 4 years old or newer at the start of the program
 - uses English as the default language
+
+ **Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
 
 ## Table of Contents
 - [GitHub](#github)
