@@ -16,14 +16,18 @@ These instructions will walk you through installing the required Data Science so
  **Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
 
 ## Table of Contents
-- [GitHub](#github)
-- [Git](#git)
-- [Python and Jupyter](#python)
-- [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
-- [PostgreSQL](#postgresql)
+
+- [Google Chrome browser](#google-chrome-browser)
+- [LastPass password manager](#lastpass-password-manager)
+- [Slack](#slack)
 - [Visual Studio code](#visual-studio-code)
+- [GitHub](#github)
+- [Git and Bash](#git-and-bash)
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
+- [R, IRkernel, Rtools, and RStudio](#r-irkernel-rtools-and-rstudio)
 - [LaTeX](#latex)
 - [Make](#make)
+- [PostgreSQL](#postgresql)
 - [Docker](#docker)
 
 ## GitHub

@@ -25,10 +25,10 @@ These instructions will walk you through installing the required Data Science so
 - [Visual Studio Code](#visual-studio-code)
 - [GitHub](#github)
 - [Git](#git)
-- [Python](#python)
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
 - [Essential python packages](#essential-python-packages)
 - [JupyterLab setup](#jupyterlab-setup)
-- [R, XQuartz,IRkernel and RStudio](#r-xquartz-irkernel-and-rstudio)
+- [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
@@ -130,7 +130,9 @@ git config --global core.editor code
 
 > Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
-## Python
+## Python, Conda, and JupyterLab
+
+### Python and Conda
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Miniconda MacOSX 64-bit pkg install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
 
@@ -207,7 +209,7 @@ jupyter lab build
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
-## R, XQuartz, IRkernel and RStudio
+## R, XQuartz, IRkernel, and RStudio
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
