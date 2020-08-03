@@ -19,16 +19,14 @@ layout: base
       <p class="card-text">{{ topic.content | markdownify }}</p>
       <!-- Projects related to this topic -->
       {% assign topicProjects = site.projects | where:"area",topic.title %}
-      <div class="card-deck mb-3">
+      <div class="container">
+        <div class="row justify-content-center">
         {% for project in topicProjects %}
-          <div class="card">
-            <a class="btn" href="{{ project.url }}">
-            <div class="card-body text-white text-center" style="background-color: {{ topic.color }};">
-              <h5 class="card-title">{{project.title}}</h5>
-            </div>
-            </a>
-          </div>
+        <a type="button" class="btn btn-lg text-white m-3" style="background-color: {{ topic.color }};" href="{{ project.url }}">
+          {{project.title}}
+        </a>
         {% endfor %}
+        </div>
       </div>
     </div>
   </div>

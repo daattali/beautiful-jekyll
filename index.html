@@ -11,7 +11,7 @@ use-site-title: true
 <!-- Recent News -->
 {%   assign today = site.time | date: '%s' %}
 
-<h2 style="text-align: center">Recent Hall Lab News</h2>
+<h2 class="mt-4" style="text-align: center">Recent Hall Lab News</h2>
 {% assign newsSorted = site.news | sort: "date" | reverse %}
 {% for news in newsSorted %}
   {%   assign start = news.date | date: '%s' %}
@@ -28,7 +28,7 @@ use-site-title: true
     </div>
   {% endif %}
 {% endfor %}
-<a class="btn btn-secondary btn-lg btn-block" href="/news">See All News</a>
+<a class="btn btn-secondary btn-lg btn-block mt-3" href="/news">See All News</a>
 
 <!-- Blog Posts -->
 <div class="posts-list">
