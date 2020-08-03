@@ -23,6 +23,7 @@ echo ''
 echo 'Checking program and package versions...'
 echo '## Operating system' >> check-setup-mds.log
 if [[ "$(uname)" == 'Linux' ]]; then
+    # sed is for alignment purposes
     sys_info=$(hostnamectl)
     grep "Operating" <<< $sys_info | sed 's/^[[:blank:]]*//' >> check-setup-mds.log
     grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
@@ -30,9 +31,11 @@ if [[ "$(uname)" == 'Linux' ]]; then
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
 elif [[ "$OSTYPE" == 'msys' ]]; then
-    echo $(wmic os get caption) >> check-setup-mds.log
-    echo " $(grep bit <<< $(wmic os get osarchitecture))" >> check-setup-mds.log
-    echo $(wmic os get version) >> check-setup-mds.log
+    # wmic use some non-ASCII characters that we need grep (or sort or similar) to convert,
+    # otherwise the logfile looks weird. There is also an additional newline at the end.
+    wmic os get caption | grep Micro | sed 's/\n//g'  >> check-setup-mds.log
+    wmic os get osarchitecture | grep bit | sed 's/\n//g' >> check-setup-mds.log
+    wmic os get version | grep 10 | sed 's/\n//g' >> check-setup-mds.log
 else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
 fi
