@@ -66,10 +66,10 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
 else
     # For Linux and Windows, test all packages the same way since there are no special cases
-    sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+    sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
     # Note that the single equal sign syntax is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
