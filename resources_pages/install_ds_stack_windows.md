@@ -30,6 +30,30 @@ These instructions will walk you through installing the required Data Science so
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 
+## Google Chrome browser
+
+In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome", download it to your computer and click on the downloaded file to install it.
+
+## LastPass password manager
+
+In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+
+## Slack
+
+For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via downloadable file from the slack website [https://slack.com/intl/en-ca/downloads/windows](https://slack.com/intl/en-ca/downloads/windows).
+
+
+## Visual Studio Code
+
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python ADE, which we will use for more complex analysis. Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) and download the windows version of VS Code. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+    - On the **Select Additional Tasks** check all four boxes under "Other"
+        - "Add 'Open with Code' action to Windows file context menu"
+        - "Add 'Open with Code' action to Windows directory context menu"
+        - "Register Code as an editor for supported file types"
+        - "Add to PATH" (this should selected by default).
+
+![](/resources_pages/imgs/vs_code.png)
+
 ## GitHub
 
 In MDS we will use [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
