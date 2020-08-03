@@ -123,24 +123,27 @@ code --version
 x64
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. 
+## Python, Conda, and JupyterLab
 
-![](/resources_pages/imgs/jupyter_lab.PNG)
+### Python and Conda
 
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.7 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). After the download has finished, run the installer and accept the default configuration for all pages.
 
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In powershell, type the following:
+> Do *not* add miniconda to PATH. We will set this up later.
+
+After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this open you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
+
 ```
-conda update conda
-conda update anaconda
+python --version
 ```
 
-## R, IRkernel and RStudio
-We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
+which should return something like this:
 
-### R
-Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (Should look something like this: Download R 3.6.1 for Windows). Open the file and follow the installer instructions.
+```
+Python 3.8.3
+```
 
-Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
+> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
 ### RStudio
 Chose and download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
