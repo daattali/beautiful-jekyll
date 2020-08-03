@@ -87,13 +87,16 @@ for sys_prog in ${sys_progs[@]}; do
     else
         # Check if the version regex string matches the installed version
         # Use `head` because `R --version` prints an essay...
-        if ! $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version |  head -1)"); then
+        # Unfortunately (and inexplicably) R on windows and Python2 on macOS prints version info to stderr instead of stdout
+        # Therefore I use the `&>` redirect of both streams, I don't like chopping of stderr with `head` like this,
+        # but we should be able to tell if something is wrong from the first line and troubleshoot from there
+        if ! $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version &> >(head -1))"); then
             # If the version is wrong
             echo "MISSING   $sys_prog" >> check-setup-mds.log
         else
             # Since programs like rstudio and vscode don't print the program name with `--version`,
             # we need one extra step before logging
-            installed_version=$(grep -io "$regex_version" <<< "$($sys_prog_no_version --version | head -1)")
+            installed_version=$(grep -io "$regex_version" <<< "$($sys_prog_no_version --version &> >(head -1))")
             echo "OK        "$sys_prog_no_version $installed_version >> check-setup-mds.log
         fi
     fi
