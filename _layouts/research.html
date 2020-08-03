@@ -19,7 +19,12 @@ layout: base
       <p class="card-text">{{ topic.content | markdownify }}</p>
       <!-- Projects related to this topic -->
       {% assign topicProjects = site.projects | where:"area",topic.title %}
+      <!-- Skip if there aren't any -->
+      {% if topicProjects.size > 0 %}
       <div class="container">
+        <div class="row justify-content-center">
+          <h4>Related Projects:</h3>
+        </div>
         <div class="row justify-content-center">
         {% for project in topicProjects %}
         <a type="button" class="btn btn-lg text-white m-3" style="background-color: {{ topic.color }};" href="{{ project.url }}">
@@ -28,6 +33,7 @@ layout: base
         {% endfor %}
         </div>
       </div>
+      {% endif %}
     </div>
   </div>
   {% endfor %}
