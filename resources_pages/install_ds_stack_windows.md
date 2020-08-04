@@ -357,32 +357,76 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ## LaTeX
 
-Download the installer from [http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe). After downloading run the `install-tl-windows.exe` file and follow the installation instructions choosing the default options.
+We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
 
-*note - if a screen appears titled "Windows protected your PC", click on "More info" link and the "Run anyway" button*
+First, open RStudio and run the following commands to install the `tinytex` package and setup `tinytex`:
 
-After installation, restart Powershell and type the following to ask for the version:
+```
+install.packages('tinytex')
+tinytex::install_tinytex()
+```
+
+Note that you might see two error messages regarding lua during the installation, you can safely ignore these, the installation will complete successfully after clicking "OK".
+
+
+You can check that the installation is working by typing the following in a terminal to ask for the version of latex:
 
 ```
 latex --version
 ```
 
-you should see something like this if you were successful:
+You should see something like this if you were successful:
 
 ```
-pdfTeX 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX)
-kpathsea version 6.3.0
-Copyright 2018 Han The Thanh (pdfTeX) et al.
+pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
+kpathsea version 6.3.2
+Copyright 2020 Han The Thanh (pdfTeX) et al.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the pdfTeX copyright and
 the Lesser GNU General Public License.
 For more information about these matters, see the file
 named COPYING and the pdfTeX source.
 Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.34; using libpng 1.6.34
+Compiled with libpng 1.6.37; using libpng 1.6.37
 Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.00
+Compiled with xpdf version 4.02
 ```
+
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please sign out of Windows and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
+
+When you sign back in,
+install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
+by pasting the following:
+
+```
+tlmgr.bat install eurosym \
+  adjustbox \
+  caption \
+  collectbox \
+  enumitem \
+  environ \
+  fp \
+  jknapltx \
+  ms \
+  parskip \
+  pgf \
+  rsfs \
+  tcolorbox \
+  titling \
+  trimspaces \
+  ucs \
+  ulem \
+  upquote
+```
+
+To test that your latex installation is working with jupyter notebooks,
+launch `jupyter lab` from a terminal and open either a new notebook
+or the same one you used to test IRkernel above.
+Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+If the PDF file is created,
+your LaTeX environment is set up correctly.
+
+> Note if you see an error that says "Undefined control sequence", you need to edit a configuration file for Jupyter's PDF export. Open a terminal and paste `code "/c/Users/${USERNAME}/miniconda3/Lib/site-packages/nbconvert/exporters/pdf.py"`. On line 66, it says `writer = Instance("nbconvert.writers.FilesWriter", args=(), kw={'build_directory': '.'})`, replace this line with the following line `writer = Instance("nbconvert.writers.FilesWriter", args=(), kw={'build_directory': ''})` (removing the period close to the end). Now try to generate a PDF from JupyterLab again.
 
 ## Make
 We will be using Make to automate our analysis scripts. More on this later!
