@@ -4,7 +4,7 @@ title: Proposals
 subtitle: For MDS Capstone Projects
 ---
 
-**Proposals for 2021 should be submitted through our proposal form [here](https://ubc.ca1.qualtrics.com/jfe/form/SV_cCmtC3gLkgyQ2c5). A sample proposal is available [here](/capstone/sample_proposal).**
+**Proposals for 2021 should be submitted through our proposal form [here](https://ubc.ca1.qualtrics.com/jfe/form/SV_cCmtC3gLkgyQ2c5). A sample proposal is available [here](/capstone/sample_proposal). Due to COVID-19, it is unclear whether 2021 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020, MDS is committed to facilitating Capstone Projects again in 2021.**
 
 The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
 
