@@ -8,18 +8,22 @@ layout: base
 {% assign topic = site.research_topics | where:"title",page.area | first %}
 
 <div class="container" role="main">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-  <!-- Project Image -->
-  {% if page.image %}
-  <img class="mx-auto d-block" src="{{ page.image }}" alt="Image for the {{ page.title }} project">
-  {% endif %}
+      <!-- Project Image -->
+      {% if page.image %}
+      <img class="mx-auto d-block" src="{{ page.image }}" alt="Image for the {{ page.title }} project">
+      {% endif %}
 
-  <!-- Project Description -->
-  <div class="my-3 px-3" style="border: 3px solid {{topic.color}}; border-radius:10px">
-    {{ content }}
+      <!-- Project Description -->
+      <div class="my-3 px-3" style="border: 3px solid {{topic.color}}; border-radius:10px">
+        {{ content }}
+      </div>
+
+      <!-- Button back to research section -->
+      <a href = "/research" type="button" class="btn btn-lg btn-block w-50 mx-auto text-white" style="background-color: {{topic.color}};">Back to Research</a>
+
+    </div>
   </div>
-
-  <!-- Button back to research section -->
-  <a href = "/research" type="button" class="btn btn-lg btn-block w-50 mx-auto text-white" style="background-color: {{topic.color}};">Back to Research</a>
-
 </div>
