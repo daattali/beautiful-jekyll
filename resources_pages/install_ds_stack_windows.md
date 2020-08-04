@@ -518,6 +518,25 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
+### Customizing VS Code with Extensions
+
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+
+![](/resources_pages/imgs/vscode.png)
+
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+
+- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
+- markdownlint (markdown linting and style checking extension)
+- GitLens (powerful extension that extends VS Code's native git capabilities)
+- Docker (easily use Docker from VS Code)
+- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
+- (Optional) Material Icon Theme (great-looking custom file icons!)
+- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+
+This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
+
+
 ## Attributions
 * [Harvard CS109](http://cs109.github.io/2015/)
 * [UBC STAT 545](http://stat545.com/packages01_system-prep.html#mac-os-system-prep) licensed under the [CC BY-NC 3.0](https://creativecommons.org/licenses/by-nc/3.0/legalcode).
