@@ -429,26 +429,41 @@ your LaTeX environment is set up correctly.
 > Note if you see an error that says "Undefined control sequence", you need to edit a configuration file for Jupyter's PDF export. Open a terminal and paste `code "/c/Users/${USERNAME}/miniconda3/Lib/site-packages/nbconvert/exporters/pdf.py"`. On line 66, it says `writer = Instance("nbconvert.writers.FilesWriter", args=(), kw={'build_directory': '.'})`, replace this line with the following line `writer = Instance("nbconvert.writers.FilesWriter", args=(), kw={'build_directory': ''})` (removing the period close to the end). Now try to generate a PDF from JupyterLab again.
 
 ## Make
-We will be using Make to automate our analysis scripts. More on this later!
 
-Go to https://github.com/gnu-mcu-eclipse/windows-build-tools/releases and download `gnu-mcu-eclipse-windows-build-tools-2.12-20190422-1053-win64.zip`. 
+Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer, click the "Extract" tab and the button in the header that says "Extract all" and accept the default extraction location.
 
-Unpack the archive and copy it into the %userprofile%\AppData\Roaming\GNU MCU Eclipse (for example C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse) folder. 
+Next we need to add the `bin` folder in this extraction location to our PATH so that we can use `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code by pasting this into a terminal:
 
-Next, like you did when installing [Rscript](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/resources_pages/install_ds_stack_windows.md#rscript), you need to add the folder where `make.exe` is located to the _PATH_ variable. The `make.exe` file is located in C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse\Build Tools\2.12-20190422-1053\bin.
+```
+code ~/.bash_profile
+```
 
-After installation, restart Powershell and type the following to ask for the version:
+And replace the section that reads:
+
+```
+# Add R and Rscript to path
+export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+```
+
+with the following (prepending the `make` folder to the path above):
+
+```
+# Add R, Rscript, and Make to path
+export PATH="/c/Users/${USERNAME}/Documents/make-4.3-without-guile-w32-bin/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+```
+
+Launch a new terminal and run
 
 ```
 make --version
 ```
 
-you should see something like this if you were successful:
+which should return something like
 
 ```
-GNU Make 4.2.1
-Built for i686-pc-msys
-Copyright (C) 1988-2016 Free Software Foundation, Inc.
+GNU Make 4.3
+Built for Windows32
+Copyright (C) 1988-2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
