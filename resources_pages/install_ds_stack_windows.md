@@ -145,53 +145,64 @@ Python 3.8.3
 
 > If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
 
-### RStudio
-Chose and download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
+### Integrating Python with the Git Bash terminal
 
-To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
-
-![](/resources_pages/imgs/RStudio.png)
-
-### Rtools
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to http://cran.r-project.org/bin/windows/Rtools/ and download the latest version (e.g., Rtools35.exe). After the download has finished, run the installer selecting the following options:
-  - On the **Select Additional Tasks** page, check the Add rtools to system PATH option (see image below)
-  - For all other pages, use the default options
-
-![](/resources_pages/imgs/Rtools.png)
-
-To see if you were successful, open RStudio and type ```install.packages("xtable", type="source")``` into the console panel. If this install command runs successfully, Rtools should be installed!
-
-
-### IR kernel
-
-Open RStudio and type the following commands into the console panel:
+To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the "Anaconda Prompt (miniconda3)" again and type:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest', 'tidyverse'))
-devtools::install_github('IRkernel/IRkernel')
-IRkernel::installspec()
+conda init bash
 ```
 
-To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
+You will see that this modified a few configuration files, which makes `conda` visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word `(base)` as in the screenshot below:
+
+![](/resources_pages/imgs/add-conda-env-to-ps1.png)
+
+If you type
 
 ```
-jupyter lab
+python --version
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
+you should now see the same output as above:
 
-![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
+```
+Python 3.8.3
+```
 
-Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
+And if you type
 
-![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
+```
+conda --version
+```
 
-### Rscript
+you should see something like this
 
-To be able to call R scripts from the Powershell or Git Bash you need to be able to execute the Rscript program from there. To make this possible you need to add the the file path of the directory/folder that houses the Rscript program (i.e., location where this program lives on your computer) to the Windows PATH system variable. You can modify the PATH system variable using System Utility in control panel on Windows. We outline below how to do this:
+```
+conda 4.8.3
+```
 
-- Hit the windows key to get to the windows search bar and type: `edit environ`
-- This should bring up a menu item that will take you to where you can edit the Environment Variables. It should look something like this:
+> Note that if you want to run Python directly from the command line on Windows, you need to append the `-i` flag, so the full command would be `python -i`. Running just `python` will freeze the Git Bash terminal.
+
+One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
+
+```
+code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
+```
+
+Delete the line that reads the following (it should be line 13):
+
+```
+PS1="$PS1"'\n'       # new line
+```
+
+Click to save the file,
+when VS Code prompts you that the saving failed,
+click "Retry as Admin" and then "Yes".
+That's it!
+Now if you launch a new terminal instance,
+you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
+
+![](/resources_pages/imgs/remove-newline-from-ps1.png)
 
 ![](/resources_pages/imgs/env1.png)
   
