@@ -204,26 +204,40 @@ you will see `(base)` on the same line as the rest of the prompt string as in th
 
 ![](/resources_pages/imgs/remove-newline-from-ps1.png)
 
-![](/resources_pages/imgs/env1.png)
-  
-- Double click on the "Path" entry from the top box. This should bring you to a new window titled "Edit Enviroment Variables". 
+### Essential Python packages
 
-- Here, click on an empty line and then click **Browse**. This will open a dialogue box within which you can navigate to the folder where Rscript is installed (usually `C:\Program Files\R\R-3.6.1\bin`) and click **OK**. Close all remaining windows by clicking **OK**.
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:
 
-![](/resources_pages/imgs/env2.png)
-
-After following the instructions above, restart Powershell and type the following:
-``` 
-Rscript --version
 ```
-you should see something like this if you were successful:
-```
-R scripting front-end version 3.6.1 (2019-07-05)
+conda config --add channels conda-forge
+
 ```
 
-## PostgreSQL 
+To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of the MDS program:
 
-We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256714). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` to test if you were successful.
+```
+conda install \
+ jupyterlab=2.* \
+ numpy=1.* \
+ pandas=1.* \
+ flake8=3.* \
+ black=19.*
+```
+
+`conda` will show you the packages that will be downloaded,
+and you can press enter to proceed with the installation.
+If you want to answer `yes` by default and skip this confirmation step,
+you can replace `conda install` with `conda install -y`.
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ## Visual Studio Code
 
