@@ -310,8 +310,8 @@ If you get a prompt asking if you want to install packages that need compilation
 
 By default, RStudio installs packages which users install to `C:/Users/your_username/Documents/R/win-library/4.0`. However, Git Bash on Windows needs some help seeing this library path. Follow the instructions below to do this:
 
-- Open RStudio and type `usethis::edit_r_environ()` to create a `.Renviron` file in the correct place.
-- Edit that file to contain: `C:/Users/<USERNAME>/Documents/R/%p-library/%v` replacing `<USERNAME>` with your computer's username (which you can obtain by typing `echo $USERNAME` in Git Bash). **Note: ensure that you create a blank line at the end of the `.Renviron` file or this will not work.**
+- Open a new Git Bash window and type `code .Renviron` to create a `.Renviron` file in the correct place.
+- Edit that file to contain: `R_LIBS_USER="C:/Users/<USERNAME>/Documents/R/x86_64-w64-mingw32-library/<R_VERSION>"` replacing `<USERNAME>` with your computer's username (which you can obtain by typing `echo $USERNAME` in Git Bash). And `<R_VERSION>` with the major and minor version number for your R installation, for example `4.0` if your R version is 4.0.2. **Note: ensure that you create a blank line at the end of the `.Renviron` file or this will not work.**
 
 ### IR kernel
 
