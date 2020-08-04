@@ -12,22 +12,18 @@ use-site-title: true
 {%   assign today = site.time | date: '%s' %}
 
 <h2 class="mt-4" style="text-align: center">Recent Hall Lab News</h2>
+<div class="list-group">
 {% assign newsSorted = site.news | sort: "date" | reverse %}
-{% for news in newsSorted %}
-  {%   assign start = news.date | date: '%s' %}
-  {%   assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 %}
-  {% if daysSince < 121 %}
-    <div class="card mt-3">
-      {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
-      <div class="card-body">
-        {{ news.content | markdownify}}
-      </div>
-      <div class="card-footer text-muted" style="text-align:right;">
-        <i>{{ news.date | date: '%B %d, %Y' }}</i>
-      </div>
-    </div>
-  {% endif %}
+{% for news in newsSorted limit:7 %}
+  <!-- {%   assign start = news.date | date: '%s' %} -->
+  <!-- {%   assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 %} -->
+  <div class="list-group-item list-group-item-action">
+    <small class="text-muted">{{ news.date | date: '%B %d, %Y' }}</small>
+    {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
+    <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
+  </div>
 {% endfor %}
+</div>
 <a class="btn btn-secondary btn-lg btn-block mt-3" href="/news">See All News</a>
 
 <!-- Blog Posts -->
