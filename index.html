@@ -19,8 +19,10 @@ use-site-title: true
   <!-- {%   assign daysSince = today | minus: start | divided_by: 60 | divided_by: 60 | divided_by: 24 %} -->
   <div class="list-group-item list-group-item-action">
     <small class="text-muted">{{ news.date | date: '%B %d, %Y' }}</small>
-    {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
-    <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
+    <div class="d-flex w-100 justify-content-between"> 
+      <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
+      {% if news.img %}<img class="rounded float-right" style="max-height: 150px" src={{news.img}} alt="News Image">{% endif %}
+    </div>
   </div>
 {% endfor %}
 </div>

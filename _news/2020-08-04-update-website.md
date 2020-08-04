@@ -2,6 +2,7 @@
 layout: default
 date: 2020-08-04
 who: []
+img: /assets/img/mission_slide.jpg
 ---
 
-Research areas and projects are now detailed [here](/research).
+Lab research areas and projects are now detailed [here](/research).

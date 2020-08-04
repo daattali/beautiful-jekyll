@@ -5,7 +5,7 @@ layout: base
 {% include header.html type="page" %}
 
 <div class="container" role="main">
-    
+
     <!-- About section from the member markdown file -->
     <h2>About</h2>
         {{ content | markdownify}}
@@ -16,9 +16,11 @@ layout: base
     {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
     {% for news in memberNewsSorted %}
         <div class="list-group-item list-group-item-action">
-        <small class="text-muted">{{ news.date | date: '%B %d, %Y' }}</small>
-        {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
-        <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
+            <small class="text-muted">{{ news.date | date: '%B %d, %Y' }}</small>
+            <div class="d-flex w-100 justify-content-between"> 
+            <div style="margin: -1rem 0rem">{{ news.content | markdownify }}</div>
+            {% if news.img %}<img class="rounded float-right" style="max-height: 150px" src={{news.img}} alt="News Image">{% endif %}
+            </div>
         </div>
     {% endfor %}
     </div>
