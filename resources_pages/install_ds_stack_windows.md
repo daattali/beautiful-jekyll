@@ -291,20 +291,7 @@ To see if you were successful, try opening RStudio by clicking on its icon. It s
 
 ### Rtools
 
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. After the installation has completed, follow the steps on the Rtools page under the heading "Putting Rtools on the PATH".
-
-To use Rtools from R in terminal, edit `~/.Rprofile`:
-
-```
-code ~/.Rprofile
-```
-
-and append the following:
-
-```
-# Enable Rtools from R in the terminal
-Sys.setenv(PATH = paste("C:/rtools40/usr/bin/", Sys.getenv("PATH"), sep=";"))
-```
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do not select the box for “Add rtools to system PATH”, devtools and RStudio should put Rtools on the PATH automatically when it is needed.
 
 ### Essential R packages
 
@@ -312,7 +299,7 @@ Next, install the key R packages needed for the start of MDS program,
 by typing the following into the R terminal in RStudio:
 
 ```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'devtools', 'usethis'))
 ```
 
 If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
