@@ -288,31 +288,6 @@ To see if you were successful, try opening RStudio by clicking on its icon. It s
 
 ![](/resources_pages/imgs/RStudio.png)
 
-By default, RStudio installs packages to `C:/Users/your_username/Documents/R/win-library/4.0`, but when it is run directly from the terminal it instead uses  `C:/Users/your_username/R/win-library/4.0`. To make sure that R from terminal uses the same package directory as R studio, we will edit `~/.Rprofile` by typing:
-
-```
-code ~/.Rprofile
-```
-
-And adding the following
-
-```
-# Make R from terminal use the same package directory as RStudio
-.libPaths(c(paste("C:/Users/", Sys.getenv("USERNAME"), "/Documents/R/win-library/4.0" , sep=''), .libPaths()))
-```
-
-### Essential R packages
-
-Next, install the key R packages needed for the start of MDS program,
-by typing the following into the R terminal in RStudio:
-
-```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv'))
-```
-
-If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
-
-> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### Rtools
 
@@ -330,6 +305,26 @@ and append the following:
 # Enable Rtools from R in the terminal
 Sys.setenv(PATH = paste("C:/rtools40/usr/bin/", Sys.getenv("PATH"), sep=";"))
 ```
+
+### Essential R packages
+
+Next, install the key R packages needed for the start of MDS program,
+by typing the following into the R terminal in RStudio:
+
+```
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis'))
+```
+
+If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+
+### Making R's user library available to Git Bash
+
+By default, RStudio installs packages which users install to `C:/Users/your_username/Documents/R/win-library/4.0`. However, Git Bash on Windows needs some help seeing this library path. Follow the instructions below to do this:
+
+- Open RStudio and type `usethis::edit_r_environ()` to create a `.Renviron` file in the correct place.
+- Edit that file to contain: `C:/Users/<USERNAME>/Documents/R/%p-library/%v` replacing `<USERNAME>` with your computer's username (which you can obtain by typing `echo $USERNAME` in Git Bash). **Note: ensure that you create a blank line at the end of the `.Renviron` file or this will not work.**
 
 ### IR kernel
 
