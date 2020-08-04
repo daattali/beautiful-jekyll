@@ -277,21 +277,83 @@ export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 
 > Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
 
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+### RStudio
 
-![](/resources_pages/imgs/vscode.png)
+Download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/preview>. Open the file and follow the installer instructions.
 
-To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
-- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
-- markdownlint (markdown linting and style checking extension)
-- GitLens (powerful extension that extends VS Code's native git capabilities)
-- Docker (easily use Docker from VS Code)
-- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
-- (Optional) Material Icon Theme (great-looking custom file icons!)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+![](/resources_pages/imgs/RStudio.png)
 
-This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
+By default, RStudio installs packages to `C:/Users/your_username/Documents/R/win-library/4.0`, but when it is run directly from the terminal it instead uses  `C:/Users/your_username/R/win-library/4.0`. To make sure that R from terminal uses the same package directory as R studio, we will edit `~/.Rprofile` by typing:
+
+```
+code ~/.Rprofile
+```
+
+And adding the following
+
+```
+# Make R from terminal use the same package directory as RStudio
+.libPaths(c(paste("C:/Users/", Sys.getenv("USERNAME"), "/Documents/R/win-library/4.0" , sep=''), .libPaths()))
+```
+
+### Essential R packages
+
+Next, install the key R packages needed for the start of MDS program,
+by typing the following into the R terminal in RStudio:
+
+```
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv'))
+```
+
+If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
+
+### Rtools
+
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. After the installation has completed, follow the steps on the Rtools page under the heading "Putting Rtools on the PATH".
+
+To use Rtools from R in terminal, edit `~/.Rprofile`:
+
+```
+code ~/.Rprofile
+```
+
+and append the following:
+
+```
+# Enable Rtools from R in the terminal
+Sys.setenv(PATH = paste("C:/rtools40/usr/bin/", Sys.getenv("PATH"), sep=";"))
+```
+
+### IR kernel
+
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R *from a terminal* and run the setup via the following two commands:
+
+```
+install.packages('IRkernel')
+IRkernel::installspec()
+```
+
+When asked to select a mirror, pick one at a location close to where you live for faster downloads.
+
+> Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
+
+To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the terminal:
+
+```
+jupyter lab
+```
+
+A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
+
+![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
+
+Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
+
+![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 ## LaTeX
 
