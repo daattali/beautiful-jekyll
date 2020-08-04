@@ -12,7 +12,6 @@ layout: base
 
 
 <div class="container" role="main">
-  <h1>Current Members</h1>
   <div class="row molly" style="display: flex; flex-wrap: wrap; justify-content: center;">
     <a class="text-dark btn" href="{{ molly.url }}">
       <div class="card text-center border-dark" style="width: 18rem;">
@@ -88,6 +87,8 @@ layout: base
       {% endif %}
     {% endfor %}
   </div>
+
+  <!-- Todo: Add a former members section (where member.current is false) -->
 
   <!-- Photo Galleries -->
   <h1>Photos</h1>

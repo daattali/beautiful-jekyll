@@ -4,4 +4,4 @@ date: 2020-07-23
 who: []
 ---
 
-The website is being revised!  Stay tuned.
+Research areas and projects are now detailed [here](/research).
