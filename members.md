@@ -35,28 +35,36 @@ subtitle:
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3 text-center">
-			<a href="http://ri.cmu.edu/ri-people/brian-okorn/">
-				<img class="img-responsive img-circle" src="/img/members/brian-okorn.jpg" alt="Brian Okorn">
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2016/12/okorn_brian_2019.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/brian-e-okorn/">
 				Brian Okorn
 			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="http://ri.cmu.edu/ri-people/benjamin-newman/">
-			<img class="img-responsive img-circle" src="/img/members/sid-ancha.jpg" alt="Sid Ancha">
-			Sid Ancha</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://scholar.google.com/citations?user=H8e3R2JADJEC&hl=en">
+				Siddarth (Sid) Ancha
+			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="https://www.hcii.cmu.edu/people/stephanie-valencia2">
-			<img class="img-responsive img-circle" src="/img/members/stephanie.png" alt="Xingyu Lin">Xingyu Lin</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2018/01/Xingyu.Lin_-1.jpg">
+			<a href="https://xingyu-lin.github.io/">
+				Xingyu Lin
+			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="https://www.ri.cmu.edu/ri-people/michael-lee/">
-			<img class="img-responsive img-circle" src="/img/members/mike.jpg" alt="Thomas Weng">Thomas Weng</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/04/weng_thomas_2018.jpg">
+			<a href="https://www.thomasweng.com">
+				Thomas Weng
+			</a>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-3 text-center">
-			<a href="https://www.cs.cmu.edu/~pkoppol/"><img class="img-responsive img-circle" src="/img/members/pallavi.jpg" alt="Wenxuan Zhou">Wenxuan Zhou</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/07/zhou_wenxuan_2019_1.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/wenxuan-zhou/">
+				Wenxuan Zhou
+			</a>
 		</div>
 	</div>
 </div>
@@ -65,25 +73,34 @@ subtitle:
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3 text-center">
-			<a href="https://cs.cmu.edu/~sarthaka"><img class="img-responsive img-circle" src="/img/members/sarthak.jpg" alt="Yufei Wang">Yufei Wang</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://yufeiwang63.github.io/">
+				Yufei Wang
+			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="http://www.edayaxin.com/"><img class="img-responsive img-circle" src="/img/members/yaxin.png" alt="Qiao Gu">Qiao Gu</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/qiao-gu/">
+				Qiao Gu
+			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="http://www.edayaxin.com/"><img class="img-responsive img-circle" src="/img/members/yaxin.png" alt="Jianren Wang">Jianren Wang</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2018/08/qian_jianing_2018.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/jianing-qian/">
+				Jianing (Aurora) Qian
+			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="http://www.edayaxin.com/"><img class="img-responsive img-circle" src="/img/members/yaxin.png" alt="Jianing Qian">Jianing Qian</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/">
+				Gautham Narayan Narasimhan
+			</a>
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="http://www.edayaxin.com/"><img class="img-responsive img-circle" src="/img/members/yaxin.png" alt="Himangi Mittal">Himangi Mittal</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<a href="http://www.edayaxin.com/"><img class="img-responsive img-circle" src="/img/members/yaxin.png" alt="Guatham Narayan">Gautham Narayan</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<a href="http://www.edayaxin.com/"><img class="img-responsive img-circle" src="/img/members/yaxin.png" alt="Sujay Bajrachaya">Sujay Bajrachaya</a>
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/sujay-bajracharya/">
+				Sujay Bajrachaya
+			</a>
 		</div>
 	</div>
 </div>
@@ -92,17 +109,11 @@ subtitle:
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3 text-center">
-			<a href=""><img class="img-responsive img-circle" src="/img/members/michael_huang.png" alt="Jake Olkin">Jake Olkin</a>
+			<!-- <img class="img-responsive img-circle" src="/img/members/michael_huang.png" alt="Jake Olkin"> -->
+			<!-- <a href=""> -->
+				Jake Olkin
+			<!-- </a> -->
 		</div>
-		<!-- <div class="col-md-3 text-center">
-			<a href="https://www.linkedin.com/in/jared-santa-maria-b62592179/"><img class="img-responsive img-circle" src="/img/members/jared.jpg" alt="Jared Santa Maria">Jared Santa Maria</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<a href="http://andrew.cmu.edu/user/gsilvera"><img class="img-responsive img-circle" src="/img/members/gustavo.jpg" alt="Gustavo Silvera">Gustavo Silvera</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<a href="https://www.linkedin.com/in/minji-kim-3a5983140/"><img class="img-responsive img-circle" src="/img/members/minji.jpg" alt="Minji Kim">Minji Kim</a>
-		</div> -->
 	</div>
 </div>
 
@@ -110,15 +121,34 @@ subtitle:
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3 text-center">
-			<a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"><img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)">Khush Agrawal (RISS)
-			</a>
+			<!-- <img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)"> -->
+			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
+				Jianren Wang
+			<!-- </a> -->
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="https://www.linkedin.com/in/ellie-mamantov"><img class="img-responsive img-circle" src="/img/members/ellie.jpg" alt="Shubham Sahoo">Shubham Sahoo
-			</a>
+			<!-- <img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)"> -->
+			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
+				Himangi Mittal
+			<!-- </a> -->
 		</div>
 		<div class="col-md-3 text-center">
-			<a href="#"><img class="img-responsive img-circle" src="/img/members/kathleen.jpg" alt="Rohan Chacko">Rohan Chacko</a>
+			<!-- <img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)"> -->
+			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
+				Khush Agrawal (RISS)
+			<!-- </a> -->
+		</div>
+		<div class="col-md-3 text-center">
+			<!-- <img class="img-responsive img-circle" src="/img/members/ellie.jpg" alt="Shubham Sahoo"> -->
+			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
+				Shubham Sahoo
+			<!-- </a> -->
+		</div>
+		<div class="col-md-3 text-center">
+			<!-- <img class="img-responsive img-circle" src="/img/members/kathleen.jpg" alt="Rohan Chacko"> -->
+			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
+				Rohan Chacko
+			<!-- </a> -->
 		</div>
 	</div>
 </div>
@@ -127,7 +157,7 @@ subtitle:
 
 <h3 id="masters-students-1">Master’s Students</h3>
 <ul>
-  <li><a href="https://www.linkedin.com/in/calvin-qiao-21010496">Junyu Nan (MSCV)</a></li>
+  <li><a href="https://www.ri.cmu.edu/ri-people/junyu-nan/">Junyu Nan (MSCV)</a></li>
   <!-- <li><a href="http://ri.cmu.edu/ri-people/karsh-tharyani/">Karsh Tharyani (MRSD)</a></li>
   <li><a href="http://ri.cmu.edu/ri-people/i-chen-jwo/">I-Chen Jwo (MRSD)</a></li>
   <li><a href="http://ri.cmu.edu/ri-people/ting-che-lin/">Ting-Che Lin (MRSD)</a></li>
@@ -135,27 +165,27 @@ subtitle:
   <li><a href="https://www.ri.cmu.edu/ri-people/yang-yang/">Yang Yang (MRSD)</a></li> -->
 </ul>
 
-<h3 id="undergraduate-students-1">Undergraduate Students</h3>
+<!-- <h3 id="undergraduate-students-1">Undergraduate Students</h3> -->
 <!-- <ul>
   <li><a href="https://www.linkedin.com/in/romankaufman/">Roman Kaufman</a></li>
   <li><a href="https://www.linkedin.com/in/siddharthgir/">Siddharth Girdhar</a></li>
 </ul> -->
 
-<h3 id="visting-students">Visting Students</h3>
+<h3 id="visting-students">Visiting Students</h3>
 <ul>
-  <li><a href="http://imd.naist.jp/people/ayaka-matsumoto/">Amith Pallankize</a></li>
-  <li><a href="https://www.researchgate.net/profile/Juan_Vasconez4">Yimin Tang</a></li>
-  <li><a href="https://www.researchgate.net/profile/Juan_Vasconez4">Yujie Lu</a></li>
-  <li><a href="https://www.researchgate.net/profile/Juan_Vasconez4">Ziwen Zhuang</a></li>
+  <li>Amith Pallankize</li>
+  <li>Yimin Tang (RISS)</li>
+  <li>Yujie Lu</li>
+  <li>Ziwen Zhuang</li>
+  <li>Andy Fang</li>
 </ul>
 
-<h2 id="collaborators">Collaborators</h2>
+<!-- <h2 id="collaborators">Collaborators</h2> -->
 <!-- <ul>
   <li><a href="https://www.cs.cmu.edu/~astein/">Aaron Steinfeld</a></li>
   <li><a href="https://www.cs.cmu.edu/~kkitani/">Kris Kitani</a></li>
   <li><a href="http://www.lauravherlant.com/">Laura Herlant</a></li>
 </ul> -->
 
-	    
 </div>
 </div>

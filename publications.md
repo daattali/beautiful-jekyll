@@ -8,7 +8,7 @@ subtitle:
 <table cellpadding="10" width="100%">
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/eccv2020lightcurtains.jpg" img width="250"> -->
+            <img src="../pics/eccv2020lightcurtains.jpg" img width="250">
         </td>
         <td>Active 3D Perception using Light Curtains<br>
             <div class="pubauthor">
@@ -25,7 +25,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/iros2020_website_thumbnail.png" img width="250"> -->
+            <img src="../pics/iros2020_website_thumbnail.png" img width="250">
         </td>
         <td>Cloth Region Segmentation for Robust Grasp Selection<br>
             <div class="pubauthor">
@@ -42,7 +42,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/IROS-Conference.png" img width="250"> -->
+            <img src="../pics/IROS-Conference.png" img width="250">
         </td>
         <td>Self-supervised Learning for 3D Data Association<br>
             <div class="pubauthor">
@@ -59,7 +59,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/IROS-Conference.png" img width="250"> -->
+            <img src="../pics/IROS-Conference.png" img width="250">
         </td>
         <td>Learning Orientation Distributions for Object Pose Estimation<br>
             <div class="pubauthor">
@@ -76,7 +76,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/ab3dmot.jpg" img width="250"> -->
+            <img src="../pics/ab3dmot.jpg" img width="250">
         </td>
         <td>3D Multi-Object Tracking: A Baseline and New Evaluation Metrics<br>
             <div class="pubauthor">
@@ -93,7 +93,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/jgwtf/Slide1.png" img width="250"> -->
+            <img src="../pics/jgwtf/Slide1.png" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/1912.00497">Just Go with the Flow: Self-Supervised Scene Flow Estimation</a><br>
             <div class="pubauthor">
@@ -110,7 +110,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/peiyuncvpr2020/splash2.jpg" img width="250" height="100"> -->
+            <img src="../pics/peiyuncvpr2020/splash2.jpg" img width="250" height="100">
         </td>
         <td><a href="https://arxiv.org/abs/1912.04986">What You See is What You Get: Exploiting Visibility for 3D Object Detection</a><br>
             <div class="pubauthor">
@@ -126,7 +126,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/t3_cropped.png" img width="250"> -->
+            <img src="../pics/t3_cropped.png" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/2006.00028">Multi-modal Transfer Learning for Grasping Transparent and Specular Objects</a><br>
             <div class="pubauthor">
@@ -143,7 +143,7 @@ subtitle:
     <!--tr><td><li class="year"> 2017</li></td></tr-->
     <tr>
         <td class="pubimg" width="250" height="100">
-            <!-- <img src="pics/peiyunral2020/output.jpg" img width="250"> -->
+            <img src="../pics/peiyunral2020/output.jpg" img width="250">
         </td>
         <td><a href="https://arxiv.org/abs/1912.04976">Learning to Optimally Segment Point Clouds</a><br>
             <div class="pubauthor">
@@ -159,7 +159,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="pics/CoRL2019.png" width="250"> -->
+            <img src="../pics/CoRL2019.png" width="250">
         </td>
         <td><a href="https://arxiv.org/abs/1912.12270">Combining Deep Learning and Verification for Precise Object Instance Detection</a><br>
             <div class="pubauthor">
@@ -174,7 +174,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="pics/2019_olaux.png" width="250" height="100"> -->
+            <img src="../pics/2019_olaux.png" width="250" height="100">
         </td>
         <td><a href="https://papers.nips.cc/paper/8724-adaptive-auxiliary-task-weighting-for-reinforcement-learning">Adaptive Auxiliary Task Weighting for Reinforcement Learning</a><br>
             <div class="pubauthor">
@@ -189,7 +189,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/icra19.png" width="250" height="100"> -->
+            <img src="../DavidHeld_files/icra19.png" width="250" height="100">
         </td>
         <td><a href="https://arxiv.org/abs/1903.06309">Adaptive Variance for Changing Sparse-Reward Environments</a><br>
             <div class="pubauthor">
@@ -204,7 +204,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/pcn.png" width="250" height="100"> -->
+            <img src="../DavidHeld_files/pcn.png" width="250" height="100">
         </td>
         <td><a href="http://arxiv.org/abs/1808.00671">PCN: Point Completion Network - <award>Best Paper Honorable Mention</award></a><br>
             <div class="pubauthor">
@@ -220,7 +220,7 @@ subtitle:
     <!--ICML 2018-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/ant-maze.png" width="250" height="100"> -->
+            <img src="../DavidHeld_files/ant-maze.png" width="250" height="100">
         </td>
         <td><a href="https://arxiv.org/abs/1705.06366">Automatic Goal Generation for Reinforcement Learning Agents</a><br>
             <div class="pubauthor">
@@ -235,7 +235,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/enabling_robots_RSS_2017.png" width="250"> -->
+            <img src="../DavidHeld_files/enabling_robots_RSS_2017.png" width="250">
         </td>
         <td><a href="https://rdcu.be/ZM50">Enabling Robots to Communicate their Objectives</a><br>
             <div class="pubauthor">
@@ -252,7 +252,7 @@ subtitle:
     <!-- CoRL 2017-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/reverse_curr2.png" width="250" height="100"> -->
+            <img src="../DavidHeld_files/reverse_curr2.png" width="250" height="100">
         </td>
         <td><a href="https://arxiv.org/abs/1707.05300">Reverse Curriculum Generation for Reinforcement Learning</a><br>
             <div class="pubauthor">Carlos Florensa, David Held, Markus Wulfmeier, Pieter Abbeel</div>
@@ -267,7 +267,7 @@ subtitle:
     <!--IROS 2017-->
     <tr>
         <td>
-            <!-- <img src="DavidHeld_files/transfer.png" width="250"> -->
+            <img src="../DavidHeld_files/transfer.png" width="250">
         </td>
         <td><a href="DavidHeld_files/IROS___RL_pushing.pdf">Policy  Transfer via Modularity</a><br>
             <div class="pubauthor">
@@ -283,7 +283,7 @@ subtitle:
     <!--ICML 2017-->
     <tr>
         <td>
-            <!-- <img src="DavidHeld_files/humanoid.png" width="250"> -->
+            <img src="../DavidHeld_files/humanoid.png" width="250">
         </td>
         <td><a href="https://arxiv.org/abs/1705.10528">Constrained Policy Optimization</a><br>
             <div class="pubauthor">
@@ -299,7 +299,7 @@ subtitle:
     <!--RSS 2017-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/enabling_robots_RSS_2017.png" width="250"> -->
+            <img src="../DavidHeld_files/enabling_robots_RSS_2017.png" width="250">
         </td>
         <td><a href="https://arxiv.org/abs/1702.03465">Enabling Robots to Communicate their Objectives</a><br>
             <div class="pubauthor">
@@ -315,7 +315,7 @@ subtitle:
     <!--ICRA 2017-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/safe_transfer3.png" width="250"> -->
+            <img src="../DavidHeld_files/safe_transfer3.png" width="250">
         </td>
         <td><a href="https://arxiv.org/abs/1705.05394">Probabilistically Safe Policy Transfer</a><br>
             <div class="pubauthor">
@@ -338,7 +338,7 @@ subtitle:
     <!--ECCV 2016-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/pull7f-web_d.png" width="250"> -->
+            <img src="../DavidHeld_files/pull7f-web_d.png" width="250">
                 </td>
         <td><a href="GOTURN/GOTURN.pdf">Learning to Track at 100 FPS with Deep Regression Networks</a><br>
             <div class="pubauthor">David Held, Sebastian Thrun, Silvio Savarese</div>
@@ -353,7 +353,7 @@ subtitle:
     <!--RSS 2016-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/pull_fig2.png" width="250"> -->
+            <img src="../DavidHeld_files/pull_fig2.png" width="250">
                 </td>
         <td><a href="segmentation3D/segmentation3D.html">A Probabilistic Framework for Real-time 3D Segmentation using Spatial, Temporal, and Semantic Cues</a><br>
             <div class="pubauthor">David Held, Devin Guillory, Brice Rebsamen, Sebastian Thrun, Silvio Savarese</div>
@@ -364,7 +364,7 @@ subtitle:
     <!--ICRA 2016-->
     <tr>
         <td class="pubimg">
-            <img src="DavidHeld_files/pull6_flatb.png" width="250">
+            <img src="../DavidHeld_files/pull6_flatb.png" width="250">
                 </td>
         <td><a href="http://arxiv.org/abs/1507.08286">Robust Single-View Instance Recognition</a><br>
             <div class="pubauthor">David Held, Sebastian Thrun, Silvio Savarese</div>
@@ -374,7 +374,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <img src="DavidHeld_files/tracker_comparison3.png" height="120">
+            <img src="../DavidHeld_files/tracker_comparison3.png" height="120">
         </td>
         <td>
             <a href="DavidHeld_files/ijrr_tracking.pdf">Robust Real-Time Tracking Combining 3D Shape, Color, and Motion </a><br>
@@ -388,7 +388,7 @@ subtitle:
     <!--tr><td><li class="year"> 2014 </li></td></tr-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/Pull3.png" height="120"> -->
+            <img src="../DavidHeld_files/Pull3.png" height="120">
         </td>
         <td class="pubitem">
             <div class="pubitem">
@@ -434,7 +434,7 @@ subtitle:
     <!--tr><td><li class="year"> 2013 </li></td></tr-->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/3DModels.png" height="120"> -->
+            <img src="../DavidHeld_files/3DModels.png" height="120">
         </td>
         <td class="pubitem">
             <div class="pubitem">
@@ -505,7 +505,7 @@ subtitle:
         -->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/distanceScores.jpg" width="180"> -->
+            <img src="../DavidHeld_files/distanceScores.jpg" width="180">
         </td>
         <td class="pubitem">
             <div class="pubitem">
@@ -560,7 +560,7 @@ subtitle:
         -->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/armforce.png" width="180"> -->
+            <img src="../DavidHeld_files/armforce.png" width="180">
         </td>
         <td class="pubitem">
             <div class="pubitem">
@@ -614,7 +614,7 @@ subtitle:
         -->
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/Junior.png" width="180"> -->
+            <img src="../DavidHeld_files/Junior.png" width="180">
         </td>
         <td class="pubitem">
             <div class="pubitem">
@@ -657,7 +657,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/hovercraft.png" width="180"> -->
+            <img src="../DavidHeld_files/hovercraft.png" width="180">
         </td>
         <td class="pubitem">
             <div class="pubitem">
@@ -702,7 +702,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/tactors.png" width="180"> -->
+            <img src="../DavidHeld_files/tactors.png" width="180">
                 <!--img src="DavidHeld_files/tactors.png" width="180"-->
                 </td>
         <td class="pubitem">
@@ -747,7 +747,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg">
-            <!-- <img src="DavidHeld_files/tactors1.png" width="180"> -->
+            <img src="../DavidHeld_files/tactors1.png" width="180">
             <!--img src="DavidHeld_files/tactors1.png" width="180"-->
         </td>
         <td class="pubitem">

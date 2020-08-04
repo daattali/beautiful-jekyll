@@ -836,6 +836,9 @@ div.pubjournal {
 div.pubspan {
 	font-size:small;
 }
+table tr td, table tr {
+  border: transparent;
+}
 /* td.pubimg { */
     /* <http://www.w3.org/wiki/CSS/Properties/text-align>
      * left, right, center, justify, inherit

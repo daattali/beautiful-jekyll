@@ -1,0 +1,167 @@
+
+/* UNIVERSAL STYLING */
+html,body {
+	margin: 0pt;
+	padding: 0pt;
+	height: 100%;
+	font-family: garamond;
+	font-size: 14pt;
+}
+A:link{ 
+	text-decoration:none; 
+	color:#064c91}
+a:visited{ 
+	text-decoration:none;
+	color:#064c91}
+a:active{ 
+	text-decoration:none;
+	color:#0978e7}
+a:hover{ text-decoration:none;
+	color:#0978e7}
+ul.simplelist {
+	list-style:none; 
+	margin-left:0px; 
+	padding-left:0px;
+}
+
+/* LAYOUT STYLING */
+div#outer {
+	position: relative; /* needed for footer positioning*/
+	margin: 0 auto; /* center, not in IE5 */
+	width: auto !important;
+	width: 100%;
+	min-width: 100%;
+	height: auto !important; /* real browsers */
+	height: 100%; /* IE6: treated as min-height*/
+	min-height: 100%; /* real browsers */
+}
+
+div.top div.left {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	background-color: #cccccc;
+	z-index: 3;
+}
+
+div.top div.right {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 0px;
+	background-color: #dddddd;
+	z-index: 2;
+}
+
+div.bottom div.left {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 100px;
+	background-color: #dddddd;
+	z-index: 2;
+}
+
+div.bottom div.right {
+	position: absolute;
+	left: 100px;
+    right: 100px;
+	top: 0px;
+	bottom: 0px;
+	background-color: #ffffff;
+	z-index: 1;
+	padding: 15px;
+}
+
+div.figure {
+	float:right; 
+	width:38%; 
+	text-align:center;
+	padding-top: 3em;
+}
+
+img#name {
+	position: absolute;
+	top: 50px; 
+	left: 10px;
+	height: 70px;
+}
+img#email{
+	position: absolute;
+	top: 65px; 
+	right: 10px;
+	height: 6ex;
+}
+img#gradient {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+/* CONTENT STYLING */
+award {
+	color:red
+}
+div.heading {
+	font-size:large;
+	font-weight:bold;
+	color:black; 
+	font-family: sans-serif;
+}
+
+li.year {
+	list-style:none;
+	font-size:large;
+	font-weight:bold;
+	margin-top: 1em;
+	text-align: left;
+}
+li.pubitem {
+	margin-top: 0.5em;
+	text-align: left;
+}
+td.pubitem {
+	vertical-align: top;
+}
+div.pubitem{
+	margin-top: 0px;
+}
+a.pubtitle {
+}
+a.pubauthor {
+	color:#5b2503;
+}
+div.pubInfo {
+	margin-left: 15px;
+	border-left-style: solid;
+	border-width:2px;
+	border-color: #aaaaaa;
+}
+div.pubjournal {
+	font-style:italic;
+	color:#213C53;
+}
+div.pubspan {
+	font-size:small;
+	word-spacing:5px;
+}
+td.pubimg {
+    /* <http://www.w3.org/wiki/CSS/Properties/text-align>
+     * left, right, center, justify, inherit
+     */
+    /*text-align: center;*/
+    /* <http://www.w3.org/wiki/CSS/Properties/vertical-align>
+     * baseline, sub, super, top, text-top, middle,
+     * bottom, text-bottom, length, or a value in percentage
+     */
+	vertical-align: top;
+    	border-width: 100px;
+	text-align: center;
+
+}
+
+
