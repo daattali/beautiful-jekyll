@@ -11,7 +11,7 @@ layout: base
     <div class="row" style="justify-content: center;">
         {% assign memberNewsSorted = site.news | where:"who",page.name | sort: "date" | reverse %}
         {% for news in memberNewsSorted %}
-            <div class="card mt-3">
+            <div class="card mt-3 w-75 mx-auto">
                 {% if news.img %}<img class="card-img-top" src={{news.img}} alt="News Image">{% endif %}
                 <div class="card-text px-3">
                 {{ news.content | markdownify }}
