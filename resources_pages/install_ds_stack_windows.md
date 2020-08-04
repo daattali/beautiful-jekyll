@@ -81,6 +81,8 @@ Go to <https://git-scm.com/download/win> and download the windows version of git
     - *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
     - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
+> Note that we don't recommend pinning Git Bash to the taskbar since launches Git Bash from here will set a different home directory than if Git Bash is launched from the desktop or the start menu (`/` instead of `/c/users/$USERNAME`.
+
 After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
 ![](/resources_pages/imgs/gitbash.png)
