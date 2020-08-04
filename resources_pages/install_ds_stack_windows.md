@@ -239,13 +239,22 @@ you can replace `conda install` with `conda install -y`.
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
 
-## Visual Studio Code
+### JupyterLab setup
 
-### Installing
+We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. At "Select Additional Tasks" make sure that "Add to path" is selected (I also like to select all the other three items - see figure below).
+```
+conda install nodejs=10.*
+pip install --upgrade jupyterlab-git
+conda install jupytext=1.*
+jupyter lab build
+```
 
-![](/resources_pages/imgs/vs_code.png)
+To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+
+![](/resources_pages/imgs/jupyter_lab.PNG)
+
+
 
 You can test that VS code is installed and can be opened from the Powershell by running the following command:
 
