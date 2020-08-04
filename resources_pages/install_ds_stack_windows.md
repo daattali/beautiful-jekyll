@@ -254,22 +254,28 @@ To test that your JupyerLab installation is functional, you can type `jupyter la
 
 ![](/resources_pages/imgs/jupyter_lab.PNG)
 
+## R, IRkernel, Rtools, and RStudio
 
+R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
-You can test that VS code is installed and can be opened from the Powershell by running the following command:
+### R
+
+Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (4.0.2 at the time of writing). Open the file and follow the installer instructions accepting the default configuration.
+
+After the installation is complete, we will add the R executables to the PATH variable in terminal so that your can use it without typing the full path to R each time. Open a terminal and type:
 
 ```
-code --version
+code ~/.bash_profile
 ```
 
-you should see something like this if you were successful:
+Append the following line to the file
+
 ```
-1.36.1
-2213894ea0415ee8c85c5eea0d0ff81ecc191529
-x64
+# Add R and Rscript to PATH
+export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
-### Customizing VS Code with Extensions
+> Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
