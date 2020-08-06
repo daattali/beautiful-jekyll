@@ -9,9 +9,9 @@ Hi there, I am Emil Dimanchev and I am a climate policy researcher specializing 
 
 ## Research
 
-My research aims to enable evidence-based decision making. I study sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
+The purpose of my work is to enable evidence-based decision making. I study sustainable energy systems, the effects of alternative policy choices, and how to design climate policy that best meets societal goals. 
 
-I take a systems engineering approach and leverage diverse methods matched to the problem at hand. My work often integrates tools and insights from other disciplines including economics, data science, and political science. 
+My research is interdisciplinary, leveraging diverse methods matched to the problem at hand. I specialize in systems engineering approaches and techno-economic modeling, and integrate tools and insights from other disciplines including economics, data science, and political science. 
 
 My PhD work is on strategies and policies for integrating electric vehicles into power systems for the achievement of deep decarbonization goals.
 
