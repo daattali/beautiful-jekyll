@@ -12,6 +12,10 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
+  {% if site.meta-theme-color %}
+  <meta name="theme-color" content="{{ site.meta-theme-color }}">
+  {% endif %}
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | default: 'Untitled' }} {{ site.title-separator | default: '-' }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}">
 
   {% include gtag.html %}
