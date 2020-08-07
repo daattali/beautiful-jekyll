@@ -4,4 +4,12 @@ title: Registration
 subtitle: Registration and benefits of Fur Squared
 ---
 
-Reg info!  And links!  Stuff!
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Registration\!
+
+&nbsp;
+
+## Information on Registration tiers and con swag will be announced soon\!
+
+&nbsp;
+
+### Fursquared thanks you for your patience.&nbsp;
