@@ -4,11 +4,13 @@ title: Proposals
 subtitle: For MDS Capstone Projects
 ---
 
-**Proposals for 2021 should be submitted through our proposal form [here](https://ubc.ca1.qualtrics.com/jfe/form/SV_cCmtC3gLkgyQ2c5). A sample proposal is available [here](/capstone/sample_proposal). Due to COVID-19, it is unclear whether 2021 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020, MDS is committed to facilitating Capstone Projects again in 2021.**
+**Capstone Project Proposals for 2021 are now open!**
 
-The first step in applying to participate as a capstone partner involves writing a project proposal. Check out our [About](/capstone/about) page to learn more about the type of projects we address through our capstone course.
+Partners can choose to submit a capstone project(s) to the MDS Vancouver program (which focuses on general data science) and/or the MDS Computational Linguistics program (which focuses on language-related data science). If you're unsure about which program to submit your project to, read more [here](#mds-vancouver-or-mds-computational-linguistics). The MDS Vancouver proposal form can be found [here](https://ubc.ca1.qualtrics.com/jfe/form/SV_cCmtC3gLkgyQ2c5), the MDS Computational Linguistics form can be found [here](https://ubc.ca1.qualtrics.com/jfe/form/SV_6G26k7yyLVRcb0F), and a sample proposal is available [here](/capstone/sample_proposal).
 
-The instructions for filling out the form are below:
+*Due to COVID-19, it is unclear whether 2021 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020, MDS is committed to facilitating Capstone Projects again in 2021.*
+
+Detailed instructions for filling out the capstone proposal form can be found below:
 
 ### About your organization
 
@@ -47,3 +49,7 @@ This section should also include any other requirements of students participatin
 ### Conflicts of interest
 
 Declare any conflicts of interest. For example, if a current MDS student or family member is involved with your organization on a professional or personal level, this should be declared along with a short explanation. These situations are generally not problematic, but we prefer to disclose them to the students before they rank the projects.
+
+### MDS Vancouver or MDS Computational Linguistics
+
+The MDS Vancouver program covers all aspects of data science, including topics of data wrangling, vizualisation, statistics and machine learning, amongst others. You can read more about the program [here](https://masterdatascience.ubc.ca/programs/vancouver) and can see the [About](/capstone/about) page to learn more about the type of projects MDS Vancouver addresses in capstone. The MDS Computational Linguistics program covers similar topics to MDS Vancouver but with a focus on teaching skills to turn language-related data into knowledge and to build AI that can interpret human language. You can read more about the program [here](https://masterdatascience.ubc.ca/programs/vancouver) and can see the [MDS Computational Linguistic Capstone website](https://ubc-mds-cl.github.io/about) page to learn more about the type of projects MDS Computational Linguistic addresses in capstone.
