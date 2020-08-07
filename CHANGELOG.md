@@ -1,5 +1,6 @@
 ## Unreleased version
 
+- Adds support for site level keywords page meta header. (#691)
 - Adds support for custom meta-theme site color. (#692)
 - Add support for `site-css` config parameter to provide site-level CSS files. (#695)
 - Add support for `description` YAML parameter to provide a more detailed meta description (#690)
