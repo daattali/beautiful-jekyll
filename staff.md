@@ -11,6 +11,8 @@ subtitle: Our staff team, and how to join
 * Burd
 * anthropomorphic sneeze
 
+### Fursquared thanks you for your interest in joining our staff\!
+
 # So you want to become staff?
 
-Here we go…
+Further information shall be posted at a later date. Keep an eye open for future link\!
