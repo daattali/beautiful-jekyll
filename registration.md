@@ -4,7 +4,7 @@ title: Registration
 subtitle: Registration and benefits of Fur Squared
 ---
 
-# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Registration\!
+# You found Registration\!
 
 &nbsp;
 
