@@ -4,26 +4,26 @@ layout: base
 
 {% include header.html type="page" %}
 
-{% assign years = site.publications | map: 'article_year' | uniq | reverse  %}
+{% assign years = site.publications | group_by: 'article_year' | sort: "name" | reverse %}
 
 <div class="container" role="main">
-  {% for year in years %}
-    <h3 class="mt-4" style="text-align:center;">{{ year }}</h3>
-    {% assign publicationsSorted = site.publications | where: 'article_year', year |sort: "article_authors" %}
     <div class="row justify-content-center">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="list-group">
-        {% for publication in publicationsSorted %}
-          <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action">
-              {{ publication.article_authors }} <b>({{ publication.article_year }})</b></br>
-              {{ publication.article_title }}</br>
-              <i>{{publication.article_journal}}</i>
-              {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
-              {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
-          </a>
+        <!-- Displaying articles sorted by year (most recent first) and sorted by title within year-->
+        {% for pub_year in years %}
+          {% assign publications_sorted = pub_year.items | sort: "article_title" %}
+          {% for publication in publications_sorted %}
+            <a href="{{ publication.article_url }}" class="list-group-item list-group-item-action">
+                {{ publication.article_authors }} <b>({{ publication.article_year }})</b></br>
+                {{ publication.article_title }}</br>
+                <i>{{publication.article_journal}}</i>
+                {%- if publication.article_volume %}{{publication.article_volume | prepend: ": " | strip}}{% endif -%}
+                {%- if publication.article_pages %}{{publication.article_pages | prepend: ", "}}{% endif -%}
+            </a>
+          {% endfor %}
         {% endfor %}
         </div> 
       </div>
     </div>
-  {% endfor %}
 </div>
