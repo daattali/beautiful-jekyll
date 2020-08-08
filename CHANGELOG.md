@@ -1,6 +1,6 @@
 ## v4.1.0 2020-08-08
 
-- Add Open Graph `site_name` field
+- Add Open Graph `site_name` meta field to pages automatically
 - Add `text-col `config setting for main text color (#694)
 - Add `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
 - Add `mobile-theme-col` config setting to allow a mobile theme colour (#692)
