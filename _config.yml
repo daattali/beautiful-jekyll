@@ -164,6 +164,8 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
+# Change the default font-family
+#font-family: "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif"
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
