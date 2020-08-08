@@ -101,6 +101,9 @@ footer-link-col: "#404040"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
+# Sets the meta theme-color used in page header
+#meta-theme-color: ""
+
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
