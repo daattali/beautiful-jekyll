@@ -80,6 +80,9 @@ link-tags: true
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
 
+# Sets the search engine keywords for pages on your site
+#keywords: "my,list,of,keywords"
+
 # --- Colours / background image --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
