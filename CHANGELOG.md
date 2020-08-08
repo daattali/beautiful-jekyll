@@ -1,8 +1,7 @@
 ## Unreleased version
 
-- Adds a missing kramdown-parser-gfm dependency to fix CI builds. (#697)
-- Adds optional site.site-css setting to provide site-level CSS assets. (#695)
-- Adds support for page.description to provide a more detailed meta description. (#690)
+- Add support for `site-css` config parameter to provide site-level CSS files. (#695)
+- Add support for `description` YAML parameter to provide a more detailed meta description (#690)
 
 ## v4.0.1 2020-07-13
 
