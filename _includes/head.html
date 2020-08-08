@@ -18,6 +18,10 @@
   <meta name="theme-color" content="{{ site.custom-site-color }}">
   {% endif %}
 
+  {% if site.keywords %}
+  <meta name="keywords" content="{{ site.keywords }}">
+  {% endif %}
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | default: 'Untitled' }} {{ site.title-separator | default: '-' }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}">
 
   {% include gtag.html %}
