@@ -1,3 +1,7 @@
+## Unreleased version
+
+- Adds support for custom meta-theme site color. (#692)
+
 ## v4.0.1 2020-07-13
 
 - Fixed staticman comments UI that was broken since the migration to bootstrap 4
