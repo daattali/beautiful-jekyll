@@ -101,6 +101,10 @@ footer-link-col: "#404040"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
+# You can also include any number of additional CSS assets in every page on your site
+#site-css:
+#  - "/assets/css/my-style.css"
+
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
