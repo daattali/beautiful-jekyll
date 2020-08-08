@@ -101,6 +101,11 @@ footer-link-col: "#404040"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
+# Customize the site coloration for your website. This is used by various applications,
+# for example many mobile browsers will use this color in their user interface elements
+# when users view your website.
+#custom-site-color: ""
+
 # You can also include any number of additional CSS assets in every page on your site
 #site-css:
 #  - "/assets/css/my-style.css"
