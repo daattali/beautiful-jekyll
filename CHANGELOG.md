@@ -1,5 +1,6 @@
 ## Unreleased version
 
+- Add Open Graph `site_name` field
 - Add `text-col `config setting for main text color (#694)
 - Add `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
 - Add `mobile-theme-col` config setting to allow a mobile theme colour (#692)
