@@ -3,12 +3,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>{% if page.use-site-title %}{{ site.title }} {{ site.title-separator | default: '-' }} {{ site.description }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  
+
   {% if site.author %}
   <meta name="author" content="{{ site.author }}">
   {% endif %}
-  
-  {% if page.subtitle %}
+
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% elsif page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
@@ -42,6 +44,12 @@
 
   {% if page.css %}
     {% for css in page.css %}
+      <link rel="stylesheet" href="{{ css | relative_url }}">
+    {% endfor %}
+  {% endif %}
+
+  {% if site.site-css %}
+    {% for css in site.site-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
   {% endif %}
