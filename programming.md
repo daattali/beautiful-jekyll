@@ -26,6 +26,25 @@ This year we're asking panelists to end their panels 10 minutes earlier than nor
 
 We'll start reviewing panel submissions by mid-August. Once we review your submission, you'll receive an email letting you know if your submission was approved or denied.
 
+###### What information will I have to submit?
+* Email
+* Name that will appear on the schedule
+* Legal name
+* Name of Event
+* Description of Event
+* Category
+* Additional hosts
+* Age restriction (All ages, 18+, 21+)
+* Total time: 20 minutes, 50 minutes, 1 hour 20 minutes, 1 hour 50 minutes
+* Preferred day: Thurs/Fri/Sat/Sun
+* Preferred time: Morning, early afternoon, late afternoon, evening, night
+* Replay Permission
+* Live or pre-recorded?  Hybrid?
+* Upload and download speeds, per a service such as [speedtest.net](https://www.speedtest.net/)
+* Using a webcam?
+* Do you have prior streaming experience?
+* Availability for pre-convention rehearsal: A few days before the convention, The weekend before the convention, Two weekends before the convention
+
 ###### So, how do I submit my awesome idea?
 
 Just follow the link below\!
