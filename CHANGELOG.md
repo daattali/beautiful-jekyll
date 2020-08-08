@@ -1,10 +1,10 @@
 ## Unreleased version
 
-- Adds configuration for page text color. (#694)
-- Adds support for site level keywords page meta header. (#691)
-- Adds support for custom meta-theme site color. (#692)
-- Add support for `site-css` config parameter to provide site-level CSS files. (#695)
-- Add support for `description` YAML parameter to provide a more detailed meta description (#690)
+- Add `text-col `config setting for main text color (#694)
+- Add `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
+- Add `mobile-theme-col` config setting to allow a mobile theme colour (#692)
+- Add `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
+- Add YAML option `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
 
 ## v4.0.1 2020-07-13
 
@@ -138,3 +138,4 @@
 ... Many small changes because the site was in its infancy
 
 **2015-03-12** Beautiful Jekyll version 0.0000001 is released!
+
