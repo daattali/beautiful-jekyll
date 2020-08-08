@@ -49,4 +49,4 @@ We'll start reviewing panel submissions by mid-August. Once we review your submi
 
 Just follow the link below\!
 
-[https://docs.google.com/forms/d/e/1FAIpQLScyityVtVgjGDCrMGnhGa1CNRl9TbzaXmGRzf258VIVQOifGQ/viewform](https://docs.google.com/forms/d/e/1FAIpQLScyityVtVgjGDCrMGnhGa1CNRl9TbzaXmGRzf258VIVQOifGQ/viewform){: target="_blank" rel="noopener"}
+[Fur Squared 2021 Programming Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScyityVtVgjGDCrMGnhGa1CNRl9TbzaXmGRzf258VIVQOifGQ/viewform){: target="_blank" rel="noopener"}
