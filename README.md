@@ -150,6 +150,7 @@ nav-short   | By default, the navigation bar gets shorter after scrolling down t
 gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
 gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
 layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information. 
+description | A longer description of page or blog post that is used for your meta description content.
 
 ## Advanced parameters
 
