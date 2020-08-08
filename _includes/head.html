@@ -12,6 +12,8 @@
   <meta name="description" content="{{ page.description }}">
   {% elsif page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
+  {% elsif site.description %}
+  <meta name="description" content="{{ site.description }}">
   {% endif %}
 
   {% if site.mobile-theme-col %}
