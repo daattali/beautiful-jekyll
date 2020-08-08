@@ -1,4 +1,4 @@
-## Unreleased version
+## v4.1.0 2020-08-08
 
 - Add Open Graph `site_name` field
 - Add `text-col `config setting for main text color (#694)
