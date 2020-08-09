@@ -51,7 +51,7 @@ For MDS program announcements, course forums, and correspondence we use the comm
 
 ## Visual Studio Code
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python ADE, which we will use for more complex analysis. Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) and download the windows version of VS Code. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) and download the windows version of VS Code. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
 
 - *Optional* On the **Select Additional Tasks** page, check "Create a desktop icon" under "Additional icons".
 - Also on the **Select Additional Tasks** page check all four boxes under "Other"
