@@ -5,6 +5,7 @@ subtitle: MDS software stack install instructions for Windows
 ---
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
+
  - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS. Also note that when installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wife and graphics cards.*
 - can connect to networks via a wireless connection
 - has at least 50 GB disk space available
@@ -46,11 +47,13 @@ For MDS program announcements, course forums, and correspondence we use the comm
 ## Visual Studio Code
 
 The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python ADE, which we will use for more complex analysis. Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) and download the windows version of VS Code. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
-    - On the **Select Additional Tasks** check all four boxes under "Other"
-        - "Add 'Open with Code' action to Windows file context menu"
-        - "Add 'Open with Code' action to Windows directory context menu"
-        - "Register Code as an editor for supported file types"
-        - "Add to PATH" (this should selected by default).
+
+- *Optional* On the **Select Additional Tasks** page, check "Create a desktop icon" under "Additional icons".
+- Also on the **Select Additional Tasks** page check all four boxes under "Other"
+    - "Add 'Open with Code' action to Windows file context menu"
+    - "Add 'Open with Code' action to Windows directory context menu"
+    - "Register Code as an editor for supported file types"
+    - "Add to PATH" (this should selected by default).
 
 ![](/resources_pages/imgs/vs_code.png)
 
@@ -67,6 +70,7 @@ Sign up for a free account at [GitHub.com](https://github.com/) if you don't hav
 To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
+
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
@@ -78,8 +82,9 @@ Briefly, we will be using the Bash shell to interact with our computers via a co
 We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
 
 Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
-    - *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
-    - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
+
+- *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
+- On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
 > Note that we don't recommend pinning Git Bash to the taskbar since launching Git Bash from here will set a different home directory than if Git Bash is launched from the desktop or the start menu (`/` instead of `/c/users/$USERNAME`.
 
