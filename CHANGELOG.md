@@ -1,3 +1,7 @@
+## Unreleased version
+
+- Add YAML option `head-extra` which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag 
+
 ## v4.1.0 2020-08-08
 
 - Add Open Graph `site_name` meta field to pages automatically
