@@ -5,7 +5,7 @@ subtitle: MDS software stack install instructions for Windows
 ---
 
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
- - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS. Also note that when installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wifi and graphics cards.*
+ - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS. Also note that when installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wife and graphics cards.*
 - can connect to networks via a wireless connection
 - has at least 50 GB disk space available
 - has at least 8 GB of RAM
@@ -81,7 +81,7 @@ Go to <https://git-scm.com/download/win> and download the windows version of git
     - *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
     - On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
 
-> Note that we don't recommend pinning Git Bash to the taskbar since launches Git Bash from here will set a different home directory than if Git Bash is launched from the desktop or the start menu (`/` instead of `/c/users/$USERNAME`.
+> Note that we don't recommend pinning Git Bash to the taskbar since launching Git Bash from here will set a different home directory than if Git Bash is launched from the desktop or the start menu (`/` instead of `/c/users/$USERNAME`.
 
 After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
@@ -371,7 +371,7 @@ When asked to select a mirror, pick one at a location close to where you live fo
 
 > Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
 
-To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the terminal:
+To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch the Jupyter Lab type the following in the terminal:
 
 ```
 jupyter lab
