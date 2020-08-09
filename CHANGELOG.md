@@ -14,7 +14,7 @@
 ## v4.0.0 2020-07-12
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
-- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image 
+- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image
 - Cover image will automatically be used as thumbnail if none is provided
 - Image to share on social media will use the cover image or thumbnail if none is provided
 - All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
@@ -49,9 +49,9 @@
 
 ## v2.2.0 2020-04-27
 
-- Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
-- Moved the demo site to an independent URL: https://beautifuljekyll.com 
-- Major documentation overhaul and cleanup of old files 
+- Add social network link: Telegram (#625) (thanks @mashed-potatoes)
+- Moved the demo site to an independent URL: https://beautifuljekyll.com
+- Major documentation overhaul and cleanup of old files
 - Fix a few bugs from the remote_theme migration
 
 ## v2.0.0 2020-04-26
