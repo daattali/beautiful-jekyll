@@ -91,11 +91,13 @@
       {% endif %}
     {% elsif page.thumbnail-img %}
       {{ page.thumbnail-img }}
+    {% elsif site.blog-img %}
+      {{ site.blog-img }}
     {% elsif site.avatar %}
       {{ site.avatar }}
     {% endif %}
   {% endcapture %}
-  {% assign shareimg=shareimg | strip %}
+  {% assign shareimg=shareimg | strip | prepend: site.url %}
 
   {% if shareimg != "" %}
   <meta property="og:image" content="{{ shareimg | absolute_url }}">
@@ -128,7 +130,7 @@
   {% endif %}
 
   {% if shareimg != "" %}
-  <meta name="twitter:image" content="{{ shareimg | absolute_url }}">
+  <meta name="twitter:image" content="{{ shareimg }}">
   {% endif %}
 
   {% if site.matomo %}

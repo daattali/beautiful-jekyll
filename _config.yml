@@ -9,15 +9,20 @@ description: "Fur Squared 2021: February 26 - 28"
 # Your name to show in the footer
 author: Fur Squared
 
+url: "https://fursquared.com"
+
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About: "about"
+  Registration: "registration"
   Programming: "programming"
   Dealers & Artists: "dealers"
+  Staff: "staff"
+  Volunteer: "volunteer"
   Contact: "contact"
-  Social Media:
-    - Twitter: "https://twitter.com/fursquared"
+    #  Social Media:
+    #    - Twitter: "https://twitter.com/fursquared"
 
 # --- Logo --- #
 
@@ -88,13 +93,17 @@ excerpt_length: 50
 navbar-col: "#1e465f"
 navbar-text-col: "#b7a43a"
 navbar-border-col: "#b7a43a"
-page-col: "#090d13"
+page-col: "#0e1826"
 page-text-col: "#b7a43a"
 link-col: "#008AFF"
 hover-col: "#FFFFFF"
 footer-col: "#1e465f"
 footer-text-col: "#b7a43a"
 footer-link-col: "#b7a43a"
+footer-icon-col: "white"
+footer-icon-fill-col: "#b7a43a"
+footer-icon-hover-col: "#1e465f"
+footer-icon-fill-hover-col: "white"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
@@ -102,6 +111,7 @@ footer-link-col: "#b7a43a"
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
+blog-img: "/assets/img/blog-image.png"
 
 # --- Web Statistics Section --- #
 
@@ -212,6 +222,7 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-cloudcannon-schedule
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

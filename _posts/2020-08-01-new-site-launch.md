@@ -2,9 +2,6 @@
 layout: post
 title: "Fur Squared 2021: Going Virtual"
 subtitle: And keeping this site up to date
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
 tags: [news, vr]
 ---
 
