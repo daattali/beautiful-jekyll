@@ -278,6 +278,26 @@ Append the following line to the file
 export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
+Now you can open terminal and type
+
+```
+R --version
+```
+
+which should return something like:
+
+```
+R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under the terms of the
+GNU General Public License versions 2 or 3.
+For more information about these matters see
+https://www.gnu.org/licenses/.
+```
+
 > Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
 
 ### RStudio
