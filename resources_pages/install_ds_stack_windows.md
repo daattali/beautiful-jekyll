@@ -295,9 +295,9 @@ you can replace `conda install` with `conda install -y`.
 We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
 
 ```
-conda install nodejs=10.*
+conda install -y nodejs=10.*
 pip install --upgrade jupyterlab-git
-conda install jupytext=1.*
+conda install -y jupytext=1.*
 jupyter lab build
 ```
 
