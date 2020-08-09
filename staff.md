@@ -5,14 +5,10 @@ subtitle: Our staff team, and how to join
 ---
 
 # Staff
-
-* Doggo
-* Catte
-* Burd
-* anthropomorphic sneeze
+Eventually we'll be listing our staff here!
 
 #### Fursquared thanks you for your interest in joining our staff\!
 
 # So you want to become staff?
 
-Further information shall be posted at a later date. Keep an eye open for future link\!
+Further information shall be posted at a later date.  Keep an eye open on our [twitter](https://twitter.com/fursquared) as well as this site for updates.

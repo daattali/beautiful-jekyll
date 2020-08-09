@@ -13,8 +13,7 @@ No!  For the [VRChat](https://www.vrchat.com) segments, you can connect with a r
 The main content of the convention is going to be streamed on our Youtube page, and we'll be coordinating through [Discord](https://discord.com).
 
 ### Where to find us?
-- Things about discord
-- Twitter
-- Youtube
-- Twitch
-- other?
+- [Twitter: @fursquared](https://twitter.com/fursquared)
+- [Youtube: Check out Silvergatoman while we get our channel set up!](https://www.youtube.com/user/silvergatomon)
+- Twitch: We don't have it yet
+- Should we be somewhere on the internet that we aren't currently?  Suggest it to us on twitter or head on over to the [contact](/contact) page to send us an email.
