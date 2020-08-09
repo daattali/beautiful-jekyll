@@ -12,7 +12,9 @@ subtitle: Registration and benefits of Fur Squared
 
 Don't fret\! There will be some awesome swag coming out with your registration this year. Due to the convention being held virtually this year we will be offering a tiered membership for some convention swag.&nbsp;
 
-More details about swag are to be announced at a later date so keep an eye out on our page for updates.
+More details about swag are to be announced at a later date so keep an eye out on our page for updates.&nbsp;
+
+Follow us on https://twitter.com/fursquared
 
 ### ***Note that you won't need a registration this year to attend. Free attendance will be a thing this year for 2021.***
 
