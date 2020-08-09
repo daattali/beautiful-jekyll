@@ -236,18 +236,18 @@ env >> check-setup-mds.log
 
 # .bash_profile
 echo '' >> check-setup-mds.log
-echo "## Content of $(readlink -f ~/.bash_profile)" >> check-setup-mds.log
+echo "## Content of .bash_profile" >> check-setup-mds.log
 if ! [ -f ~/.bash_profile ]; then
-    echo "$(readlink -f ~/.bash_profile) not found" >> check-setup-mds.log
+    echo "~/.bash_profile not found" >> check-setup-mds.log
 else
     cat ~/.bash_profile >> check-setup-mds.log
 fi
 
 # .bashrc
 echo '' >> check-setup-mds.log
-echo "## Content of $(readlink -f ~/.bashrc)" >> check-setup-mds.log
+echo "## Content of .bashrc" >> check-setup-mds.log
 if ! [ -f ~/.bashrc ]; then
-    echo "$(readlink -f ~/.bashrc) not found" >> check-setup-mds.log
+    echo "~/.bashrc not found" >> check-setup-mds.log
 else
     cat ~/.bashrc >> check-setup-mds.log
 fi
