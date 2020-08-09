@@ -69,7 +69,7 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     fi
 
     # Remove rstudio and psql from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=3.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
 # psql and Rstudio are not on PATH in windows
 elif [[ "$OSTYPE" == 'msys' ]]; then
     if ! [ -x "$(command -v '/c/Program Files/PostgreSQL/12/bin/psql')" ]; then
@@ -89,7 +89,7 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
         echo "OK        "$(tlmgr.bat --version | head -1) >> check-setup-mds.log
     fi
     # Remove rstudio from the programs to be tested using the normal --version test
-    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* docker=19.* code=1.*)
+    sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=19.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
     sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
