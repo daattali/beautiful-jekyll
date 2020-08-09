@@ -227,3 +227,27 @@ fi
 # instead of progressively with `tee` throughout
 # so that students have time to read the help message in the beginning.
 tail -n +2 check-setup-mds.log  # `tail` to skip rows already echoed to stdout
+
+# Student don't need to see this in stdout, but useful to have in the log-file
+# env
+echo '' >> check-setup-mds.log
+echo "## Environmental variables" >> check-setup-mds.log
+env >> check-setup-mds.log
+
+# .bash_profile
+echo '' >> check-setup-mds.log
+echo "## Content of .bash_profile" >> check-setup-mds.log
+if ! [ -f ~/.bash_profile ]; then
+    echo "~/.bash_profile not found"
+else
+    cat ~/.bash_profile >> check-setup-mds.log
+fi
+
+# .bashrc
+echo '' >> check-setup-mds.log
+echo "## Content of .bashrc" >> check-setup-mds.log
+if ! [ -f ~/.bashrc ]; then
+    echo "~/.bashrc not found"
+else
+    cat ~/.bashrc >> check-setup-mds.log
+fi
