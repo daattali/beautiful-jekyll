@@ -10,7 +10,7 @@ Fur Squared is a furry convention held in Brookfield, WI in February.  For 2021,
 
 No!  For the [VRChat](https://www.vrchat.com) segments, you can connect with a regular computer, no headset required!
 
-The main content of the convention is going to be streamed on our Youtube page, and we'll be coordinating through [Discord](https://discord.com).
+When the time comes, the main content of the event will be streamed over at Youtube, and coordination will be done via Discord.  We're still working on getting those set up, and will provide links when we're ready.
 
 ### Where to find us?
 - [Twitter: @fursquared](https://twitter.com/fursquared)
