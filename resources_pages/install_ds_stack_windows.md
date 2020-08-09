@@ -337,6 +337,14 @@ both should return the same values, e.g.
 
 Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do *not* follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
+To test if you're installation was successful, open RStudio and type the following into the Console:
+
+```
+install.packages("jsonlite", type = "source")
+```
+
+If the `jsonlite` package installs without errors, Rtools is setup correctly.
+
 ### Essential R packages
 
 Next, install the key R packages needed for the start of MDS program,
