@@ -14,6 +14,6 @@ Don't fret\! There will be some awesome swag coming out with your registration t
 
 More details about swag are to be announced at a later date so keep an eye out on our page for updates.
 
-Note that you won't need a registration this year to attend. Free attendance will be a thing this year for 2032.
+***Note that you won't need a registration this year to attend. Free attendance will be a thing this year for 2032.***
 
 ### Fur Squared thanks you for your patience.&nbsp;
