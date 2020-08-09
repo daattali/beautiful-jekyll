@@ -161,6 +161,7 @@ These are advanced parameters that are only useful for people who need very fine
 Parameter   | Description
 ----------- | -----------
 footer-extra | If you want to include extra information in the footer (below the social media icons), create an HTML file in the `_includes/` folder (for example `_includes/myinfo.html`) and set `footer-extra` to the name of the file (for example `footer-extra: myinfo.html`)
+head-extra   | Works in a similar way to `footer-extra`, but used if you have any HTML code that needs to be included in the `<head>` tag of the page.
 language    | HTML language code to be set on the page's &lt;html&gt; element.
 use-site-title | If you want to use the site title rather than the page title as the HTML document title, use `use-site-title: true`.
 js          | List of local JavaScript files to include in the page (eg. `/assets/js/mypage.js`)
