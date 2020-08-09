@@ -60,8 +60,8 @@ You will have to quit all instances of open Terminals and then restart the Termi
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac).
-**Be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instructions as well.**
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
+In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
