@@ -449,7 +449,7 @@ To install an extension, you simply search for it in the search bar, click the e
 
 ## Post-installation notes
 
-You have completed the installation instructions, well done :raise_hands:!
+You have completed the installation instructions, well done 🙌!
 We have created a script to help you check that your installation was successful,
 and to provide instructions for how you can troubleshoot any potential issues.
 To run this script,

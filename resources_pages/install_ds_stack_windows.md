@@ -617,7 +617,7 @@ This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excelle
 
 ## Post-installation notes
 
-You have completed the installation instructions, well done :raise_hands:!
+You have completed the installation instructions, well done 🙌!
 We have created a script to help you check that your installation was successful,
 and to provide instructions for how you can troubleshoot any potential issues.
 To run this script,
