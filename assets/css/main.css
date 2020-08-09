@@ -398,6 +398,19 @@ footer a {
   color: {{ site.footer-link-col | default: "#404040" }};
 }
 
+footer a .fa-inverse {
+    color: {{ site.footer-icon-col }};
+}
+footer a .fa-circle {
+    color: {{ site.footer-icon-fill-col }};
+}
+footer a:hover span .fa-inverse {
+    color: {{ site.footer-icon-hover-col }};
+}
+footer a:hover span .fa-circle {
+    color: {{ site.footer-icon-fill-hover-col }};
+}
+
 footer .list-inline {
   margin: 0;
   padding: 0;
