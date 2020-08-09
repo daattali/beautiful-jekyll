@@ -8,7 +8,7 @@ subtitle: Registration and benefits of Fur Squared
 
 &nbsp;
 
-## Information on Registration tiers and con swag will be announced soon\!
+## Information on Registration tier and con swag will be announced soon\!
 
 Don't fret\! There will be some awesome swag coming out with your registration this year. Due to the convention being held virtually this year we will be offering a tiered membership for some convention swag.&nbsp;
 
