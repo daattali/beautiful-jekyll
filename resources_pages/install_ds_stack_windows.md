@@ -30,6 +30,7 @@ These instructions will walk you through installing the required Data Science so
 - [Make](#make)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
+- [VS Code extensions](#vs-code-extensions)
 
 ## Installation notes
 
@@ -596,7 +597,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-### Customizing VS Code with Extensions
+## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 

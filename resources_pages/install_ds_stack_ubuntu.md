@@ -30,7 +30,7 @@ These instructions will walk you through installing the required Data Science so
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
-- [Visual Studio Code Extensions](#visual-studio-code-extensions)
+- [VS Code extensions](#vs-code-extensions)
 
 ## Installation notes
 
@@ -432,7 +432,7 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the 
 
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
 
-## Visual Studio Code Extensions
+## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
