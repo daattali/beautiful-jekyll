@@ -335,7 +335,7 @@ both should return the same values, e.g.
 
 ### Rtools
 
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do not select the box for “Add rtools to system PATH”, devtools and RStudio should put Rtools on the PATH automatically when it is needed.
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do *not* follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
 ### Essential R packages
 
