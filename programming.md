@@ -26,6 +26,10 @@ No, you will not need VRChat to watch panels. Panels will be streamed via popula
 
 This year we're asking panelists to end their panels 10 minutes earlier than normal. This will allow us to have theming, charity, or other miscellaneous content between panels, as well as provide a cushion in case we experience technical difficulties.
 
+##### What about gaming tournaments or TTRPG games?
+
+Given the virtual nature of this year's con, we want to include expanded video and tabletop gaming tracks. We are considering creating a separate submission form for such events, but for now please submit them via the normal programming form.
+
 ##### When will I hear back about my submission?
 
 We'll start reviewing panel submissions as soon as we can. Once we review your submission, you'll receive an email letting you know if your submission was approved or denied. Prerecorded panels will receive priority evaluation to give panelists as much lead time as possible to record and submit their panels.
