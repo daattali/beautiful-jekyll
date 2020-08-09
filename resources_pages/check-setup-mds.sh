@@ -92,7 +92,8 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     sys_progs=(R=4.* python=3.* conda=4.* bash=4.* git=2.* make=4.* latex=3.* docker=19.* code=1.*)
 else
     # For Linux everything is sane and consistent so all packages can be tested the same way
-    sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* git=2.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
+    sys_progs=(psql=12.* rstudio=1.* R=4.* python=3.* conda=4.* bash=4.* \
+        git=2.* make=4.* latex=3.* tlmgr=5.* docker=19.* code=1.*)
     # Note that the single equal sign syntax in used for `sys_progs` is what we have in the install
     # instruction for conda, so I am using it for Python packagees so that we
     # can just paste in the same syntax as for the conda installations
@@ -110,9 +111,12 @@ for sys_prog in ${sys_progs[@]}; do
     else
         # Check if the version regex string matches the installed version
         # Use `head` because `R --version` prints an essay...
-        # Unfortunately (and inexplicably) R on windows and Python2 on macOS prints version info to stderr instead of stdout
-        # Therefore I use the `&>` redirect of both streams, I don't like chopping of stderr with `head` like this,
-        # but we should be able to tell if something is wrong from the first line and troubleshoot from there
+        # Unfortunately (and inexplicably) R on windows and Python2 on macOS
+        # prints version info to stderr instead of stdout
+        # Therefore I use the `&>` redirect of both streams,
+        # I don't like chopping of stderr with `head` like this,
+        # but we should be able to tell if something is wrong from the first line
+        # and troubleshoot from there
         if ! $(grep -iq "$regex_version" <<< "$($sys_prog_no_version --version &> >(head -1))"); then
             # If the version is wrong
             echo "MISSING   $sys_prog" >> check-setup-mds.log
