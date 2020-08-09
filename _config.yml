@@ -48,6 +48,7 @@ social-network-links:
     #facebook: deanattali
   github: fursquared
   twitter: fursquared
+  telegram: fursquaredchat
   rss: true
 #  reddit: yourname
 #  linkedin: daattali
@@ -61,7 +62,6 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID

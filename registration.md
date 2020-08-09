@@ -8,8 +8,14 @@ subtitle: Registration and benefits of Fur Squared
 
 &nbsp;
 
-## Information on Registration tiers and con swag will be announced soon\!
+## Information on Registration tier and con swag will be announced soon\!
 
-Don't fret\! There will be some awesome swag coming out with your registration this year. Due to the convention being held Virtually this year we will be offering different tiers for special events and panels this year.
+Don't fret\! There will be some awesome swag coming out with your registration this year. Due to the convention being held virtually this year we will be offering a tiered membership for some convention swag.&nbsp;
 
-### Fursquared thanks you for your patience.&nbsp;
+More details about swag are to be announced at a later date so keep an eye out on our page for updates.&nbsp;
+
+Follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared){: target="_blank" rel="noopener"} to keep up to date on any updates that may come this way.
+
+### ***Note that you won't need a registration this year to attend. Attendance will be free this year, however if you wish to support the con we will offer a sponsorship level.***
+
+## Fur Squared thanks you for your patience.&nbsp;
