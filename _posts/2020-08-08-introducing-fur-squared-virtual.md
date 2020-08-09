@@ -11,9 +11,9 @@ tags:
 ---
 
 
-# A Virtual Convention?!
+# What do you mean virtual?!
 
-Hey everyone, Draggor here!  By now you probably know that we're moving to a virtual event for 2021.  While we know it won't be the same as swarming Brookfield together, littering the hotel with mannequin parts, but the staff of Fur Squared are trying their hardest to bring our strange selves in full to an online-only event.  And just as before, we need **you** to help bring this event to life?
+Hey everyone, Draggor here!  By now you probably know that we're moving to a virtual event for 2021.  This means we'll be having our event on platforms like Youtube, twitch.tv, discord, and possibly other places!.  While we know it won't be the same as swarming Brookfield together, littering the hotel with mannequin parts, but the staff of Fur Squared are trying their hardest to bring our strange selves in full to an online-only event.  And just as before, we need **you** to help bring this event to life?
 
 How?  [By clicking here to submit a panel!](/programming)
 
