@@ -96,15 +96,34 @@ You can check your git version with the following command:
 git --version
 ```
 
-Next, we need to configure Git by telling it who you are, your email, and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
+### Configuring Git user info
+
+Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email (the same you used on GitHub), respectively):
 
 ```
 git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
-git config --global core.editor code
 ```
 
 > Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
+
+### Setting VS Code as the default editor
+
+To make programs run from the terminal (such as `git`) use VS Code by default, we will modify `~/.bash_profile`. First, open it using VS Code:
+
+```
+code ~/.bash_profile
+```
+
+Append the following lines:
+
+```
+# Set the default editor for programs launch from terminal
+EDITOR="code --wait"
+VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
+```
+
+> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 ## Python, Conda, and JupyterLab
 
