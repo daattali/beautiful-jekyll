@@ -82,8 +82,11 @@ This step is required for
 
 ## Git and Bash
 
-These two programs are in the same section since they are packaged together in the same installer.
-Briefly, we will be using the Bash shell to interact with our computers via a command line interface.
+Although Git and Bash are two separate programs,
+we are including them in the same section here 
+since they are packaged together in the same installer on Windows.
+Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
+and Git to keep a version history of our files and upload to/download from to GitHub.
 We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
 
 Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
@@ -115,6 +118,10 @@ License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
+
+> If you tried to paste the above into the Git Bash terminal, you will have noticed that `Ctrl+V` does not work in Git Bash. Instead you need to right click and select "Paste" or use the `Shift+Insert` shortcut. To copy from the Git Bash terminal you simply select the text you want and it is copied automatically.
+
+> Via right click you can also reach the settings menu where you can configure Git Bash to your preferences, a couple of tips would be to check "Mouse -> Clicks place command line cursor" and change the font to something more legible, e.g. Consolas ("Text -> Select").
 
 Let's also check which version of git was installed:
 
