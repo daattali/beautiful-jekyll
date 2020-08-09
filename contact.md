@@ -14,4 +14,5 @@ Have a question? Did the website just explode and not even apologize? Then you'v
 | Have a question about an event or panel, or would like to run your own | [programming@fursquared.com](mailto:programming@fursquared.com) |
 | Have a question about attendance policies, online registration, or at the door registration | [registration@fursquared.com](mailto:registration@fursquared.com) |
 | Have any technical issues or questions about the website | [webmaster@fursquared.com](mailto:webmaster@fursquared.com) |
+| Want to volunteer with us | [volunteers@fursquared.com](mailto:volunteers@fursquared.com) |
 |Have a general question about Fur Squared that does not fall into any of the categories above | [info@fursquared.com](mailto:info@fursquared.com) |

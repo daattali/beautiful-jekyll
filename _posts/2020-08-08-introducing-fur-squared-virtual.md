@@ -4,7 +4,7 @@ title: "Fur Squared 2021: A Virtual Convention!"
 subtitle: The Roaring 2.0s
 cover-img: /assets/img/movie-card-blank.png
 thumbnail-img: /assets/img/buggy-thumb.jpg
-share-img: /assets/img/blog-image.png
+share-img: /assets/img/movie-card-title.png
 tags:
   - news
   - vr
