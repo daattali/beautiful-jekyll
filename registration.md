@@ -14,6 +14,4 @@ Follow us on [https://twitter.com/fursquared](https://twitter.com/fursquared){: 
 
 Still have some questions and/or concerns? Email us at:&nbsp;[registration@fursquared.com](mailto:registration@fursquared.com)
 
-### &nbsp;
-
-## Fur Squared thanks you for your patience.&nbsp;
+### Fur Squared thanks you for your patience.&nbsp;
