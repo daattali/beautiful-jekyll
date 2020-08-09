@@ -17,3 +17,4 @@ When the time comes, the main content of the event will be streamed over at Yout
 - [Youtube: Check out Silvergatoman while we get our channel set up!](https://www.youtube.com/user/silvergatomon)
 - Twitch: We don't have it yet
 - Should we be somewhere on the internet that we aren't currently?  Suggest it to us on twitter or head on over to the [contact](/contact) page to send us an email.
+- [Telegram: FurSquared](https://t.me/fursquaredchat)
