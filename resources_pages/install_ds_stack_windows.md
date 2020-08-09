@@ -177,7 +177,9 @@ you should now see the same output as above:
 Python 3.8.3
 ```
 
-And if you type
+> Note that if you want to run Python interactively from the Git Bash terminal, you need to append the `-i` flag, so the full command would be `python -i`. Running just `python` works on other setups, but will freeze the Git Bash terminal.
+
+Let's also check the version of the `conda` package manager. If you type
 
 ```
 conda --version
@@ -189,28 +191,26 @@ you should see something like this
 conda 4.8.3
 ```
 
-> Note that if you want to run Python directly from the command line on Windows, you need to append the `-i` flag, so the full command would be `python -i`. Running just `python` will freeze the Git Bash terminal.
-
-One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
-
-```
-code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
-```
-
-Delete the line that reads the following (it should be line 13):
-
-```
-PS1="$PS1"'\n'       # new line
-```
-
-Click to save the file,
-when VS Code prompts you that the saving failed,
-click "Retry as Admin" and then "Yes".
-That's it!
-Now if you launch a new terminal instance,
-you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
-
-![](/resources_pages/imgs/remove-newline-from-ps1.png)
+> *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
+>
+> ```
+> code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
+> ```
+>
+> Delete the line that reads the following (it should be line 13):
+>
+> ```
+> PS1="$PS1"'\n'       # new line
+> ```
+>
+> Click to save the file,
+> when VS Code prompts you that the saving failed,
+> click "Retry as Admin" and then "Yes".
+> That's it!
+> Now if you launch a new terminal instance,
+> you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
+>
+> ![](/resources_pages/imgs/remove-newline-from-ps1.png)
 
 ### Essential Python packages
 
