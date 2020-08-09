@@ -6,8 +6,6 @@ subtitle: Registration and benefits of Fur Squared
 
 # You found Registration\!
 
-&nbsp;
-
 ### ***Note that you won't need a registration this year to attend. Attendance will be free this year, however if you wish to support the con we will offer a sponsorship level registration.***
 
 More details about swag are to be announced at a later date so keep an eye out on our page for updates.&nbsp;
