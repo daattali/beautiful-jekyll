@@ -34,6 +34,11 @@ These instructions will walk you through installing the required Data Science so
 - [Docker](#docker)
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
 
+## Installation notes
+
+In all the sections below,
+if you are presented with the choice to download either a 64-bit or a 32-bit version of the application **always** choose the 64-bit version.
+
 ## Google Chrome browser
 
 In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" and follow the instructions on the website to finish the installation.

@@ -31,6 +31,11 @@ These instructions will walk you through installing the required Data Science so
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 
+## Installation notes
+
+In all the sections below,
+if you are presented with the choice to download either a 64-bit or a 32-bit version of the application **always** choose the 64-bit version.
+
 ## Google Chrome browser
 
 In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome", download it to your computer and click on the downloaded file to install it.
