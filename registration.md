@@ -16,6 +16,6 @@ More details about swag are to be announced at a later date so keep an eye out o
 
 Follow us on https://twitter.com/fursquared
 
-### ***Note that you won't need a registration this year to attend. Free attendance will be a thing this year for 2021.***
+### ***Note that you won't need a registration this year to attend. Attendance will be free this year, however if you wish to support the con we will offer a sponsorship level.***
 
 ## Fur Squared thanks you for your patience.&nbsp;
