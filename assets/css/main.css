@@ -544,8 +544,8 @@ footer .footer-custom-content {
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: {{ site.hover-col | default: "#0085A1" }};
-  background-color: #EEE;
+  color: {{ site.footer-icon-hover-col | default: "#0085A1" }};
+  background-color: {{ site.footer-icon-fill-hover-col }};
 }
 
 .post-preview .blog-tags {
@@ -778,9 +778,9 @@ footer .footer-custom-content {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 0.625rem 0.3125rem;
-  background-color: #FFF;
+  background-color: {{ site.footer-icon-fill-col }};
   border-radius: 0;
-  color: #404040;
+  color: {{ site.footer-icon-col }};
 }
 @media (min-width: 768px) {
   .pagination .page-item .page-link {
@@ -789,9 +789,9 @@ footer .footer-custom-content {
 }
 .pagination .page-item .page-link:hover,
 .pagination .page-item .page-link:focus {
-  color: #FFF;
-  border: 1px solid {{ site.hover-col | default: "#0085A1" }};
-  background-color: {{ site.hover-col | default: "#0085A1" }};
+  color: {{ site.footer-icon-hover-col }};
+  border: 1px solid {{ site.footer-icon-hover-col | default: "#0085A1" }};
+  background-color: {{ site.footer-icon-fill-hover-col | default: "#0085A1" }};
 }
 
 /* --- Tables --- */
