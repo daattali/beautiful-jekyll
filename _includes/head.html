@@ -162,4 +162,8 @@
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
   {% endif %}
 
+  {% if page.head-extra %}
+    {% include {{ page.head-extra }} %}
+  {% endif %}
+
 </head>
