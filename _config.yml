@@ -44,7 +44,7 @@ round-avatar: true
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
     
-  youtube: user/coulombeau
+  youtube: user/matharavel
   twitter: daattali
   rss: false
   email : maiaboo64@gmail.com
