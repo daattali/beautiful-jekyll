@@ -643,6 +643,15 @@ PROMPT_COMMAND='history -a'
 # Increase history size
 HISTSIZE=50000
 HISTFILESIZE=50000
+
+# Aliases
+# Note that aliases only are in effect when you are using the shell interactively
+# (e.g. opening the Git Bash terminal and typing or pasting commands).
+# If you run a bash script or makefile,
+# the original command is used instead of your alias.
+# Run Python and Docker in compatibilty mode when started from an interactive shell
+alias python="winpty python"
+alias docker="winpty docker"
 ```
 
 ## VS Code extensions
