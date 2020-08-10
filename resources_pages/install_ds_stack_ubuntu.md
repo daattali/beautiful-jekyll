@@ -35,7 +35,8 @@ These instructions will walk you through installing the required Data Science so
 ## Installation notes
 
 In all the sections below,
-if you are presented with the choice to download either a 64-bit or a 32-bit version of the application **always** choose the 64-bit version.
+if you are presented with the choice to download either a 64-bit (also called x64)
+or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
 ## Google Chrome browser
 
