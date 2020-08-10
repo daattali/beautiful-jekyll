@@ -16,7 +16,9 @@ navbar-links:
   Terminale :
     - Spécialité : index.html
     - Expertes : cours
-  
+  Seconde : 
+    - Seconde 2 : 404.html
+    - SNT: index.html
    
 
 # --- Logo --- #
