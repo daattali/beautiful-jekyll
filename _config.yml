@@ -12,7 +12,7 @@ author: Yann Mobian
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Accueil : "aboutme" 
+  Accueil : ymobian 
   Côté Madame: 
   Côté Monsieur : 
     - Seconde 2 : 404.html
