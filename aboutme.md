@@ -1,16 +1,9 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About DSSE
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Distributed Systems and Software Engineering (DSSE) Research Group is a research collective of Institute of Information Technology, University of Dhaka. Founded in 2012, DSSE houses a group of learners dedicated to the research of software engineering. Around 60 members strong, the group focuses on student research efforts and collaboration with the software industry of Bangladesh to build a strong foundation for the IT sector of Bangladesh.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### History
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
