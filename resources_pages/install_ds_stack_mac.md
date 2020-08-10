@@ -500,8 +500,11 @@ bind "set menu-complete-display-prefix on"
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 # Append to the history file, don't overwrite it.
-# Handy when multiple terminal windows are open at the same time.
 shopt -s histappend
+# Write commands to history one-by-one right after they are executed
+# instead of all together when the terminal is closed.
+# New terminals now see all commands run in currently open terminals
+PROMPT_COMMAND='history -a'
 # Increase history size
 HISTSIZE=50000
 HISTFILESIZE=50000
