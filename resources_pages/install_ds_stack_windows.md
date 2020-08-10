@@ -222,7 +222,7 @@ you should now see the same output as above:
 Python 3.8.3
 ```
 
-> Note that if you want to run Python interactively from the Git Bash terminal, you need to append the `-i` flag, so the full command would be `python -i`. Running just `python` works on other setups, but will freeze the Git Bash terminal.
+> Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python`. Running just `python` works on other setups, but will freeze the Git Bash terminal.
 
 Let's also check the version of the `conda` package manager. If you type
 
