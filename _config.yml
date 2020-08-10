@@ -4,7 +4,7 @@
 title: Lycée Ravel Saint-Jean-de-Luz
 
 # Short description of your site
-description: Ressources de Mathématiques et de SNT
+description: Ressources de Mathématiques et des SNT
 
 # Your name to show in the footer
 author: Yann Mobian
@@ -13,7 +13,9 @@ author: Yann Mobian
 
 navbar-links:
   Accueil : index.html
-  Côté Madame: 
+  Mathématiques :
+    - Spécialité
+    - Expertes
   Côté Monsieur : 
     - Seconde 2 : 404.html
     - Maths Term : index.html
