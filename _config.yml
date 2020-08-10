@@ -13,9 +13,9 @@ author: Yann Mobian
 
 navbar-links:
   Accueil : index.html
-  Mathématiques :
-    - Spécialité
-    - Expertes
+  Maths :
+    - Maths Term : index.html
+    - Maths expertes : cours
   Côté Monsieur : 
     - Seconde 2 : 404.html
     - Maths Term : index.html
