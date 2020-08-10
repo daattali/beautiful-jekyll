@@ -13,15 +13,14 @@ author: Yann Mobian
 
 navbar-links:
   Accueil : index.html
-  Mathématiques :
-    - Maths Term : index.html
-    - Maths expertes : cours
-  Côté Monsieur : 
+  Terminale :
+    - Spécialité : index.html
+    - Expertes : cours
+    - Ens.Scientifique : 
+ Seconde : 
     - Seconde 2 : 404.html
-    - Maths Term : index.html
-    - Maths expertes : cours
-  Côté SNT: 
-  Archives : http://matharavel.tuxfamily.org/
+    - SNT: index.html
+ Archives : http://matharavel.tuxfamily.org/
    
 
 # --- Logo --- #
