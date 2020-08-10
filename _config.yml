@@ -74,7 +74,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "legitdubroutard.github.io"
+url-pretty: "ymobian.github.io"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
