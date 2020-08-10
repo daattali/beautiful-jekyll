@@ -597,6 +597,50 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+## Improving the bash configuration
+
+To improve your experience using bash,
+we recommend appending a few lines to the end of your bash configuration file.
+This is optional,
+but makes it easier to use the TAB key for autocompletion
+and improves how bash handles the command history
+(we will talk more about these topics during class).
+First,
+open the configuration file:
+
+```
+code ~/.bash_profile
+```
+
+Then past the following at the end of the file
+(make sure not to overwrite any existing lines):
+
+```
+# Prepend a newline to the prompt string to separate it from the last command's output
+PS1="\n$PS1"
+
+# TAB completion configuration
+# TAB completion ignores case
+bind "set completion-ignore-case on"
+# Require only one instead of two TAB presses before showing matches
+bind "set show-all-if-ambiguous on"
+# If there are multiple matches for completion, cycle through them with TAB
+bind 'TAB':menu-complete
+# Perform partial completion on the first Tab press,
+# only start cycling full results on the second Tab press
+bind "set menu-complete-display-prefix on"
+
+# History configuration
+# Cycle through history based on characters already typed on the line
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+# Append to the history file, don't overwrite it.
+# Handy when multiple terminal windows are open at the same time.
+shopt -s histappend
+# Increase history size
+HISTSIZE=50000
+HISTFILESIZE=50000
+```
 
 ## VS Code extensions
 
