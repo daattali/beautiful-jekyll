@@ -119,7 +119,7 @@ blog-img: "/assets/img/movie-card-title.png"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-175189175-1"
 
 # Google Tag Manager ID
 #gtm: ""
