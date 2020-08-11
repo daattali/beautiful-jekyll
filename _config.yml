@@ -116,7 +116,7 @@ blog-img: "/assets/img/movie-card-title.png"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "GA_MEASUREMENT_ID"
 
 # Fill in your Google Analytics ID to track your website using GA
 google_analytics: "UA-175189175-1"
