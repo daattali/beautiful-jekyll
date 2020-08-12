@@ -1,6 +1,7 @@
 ## Unreleased version
 
-- Add YAML option `head-extra` which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag 
+- Add YAML option `head-extra` which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
+- Add automatic navbar color detection (#702)
 
 ## v4.1.0 2020-08-08
 
