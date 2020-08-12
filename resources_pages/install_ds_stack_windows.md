@@ -3,131 +3,425 @@ layout: page
 title: Windows
 subtitle: MDS software stack install instructions for Windows
 ---
+
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
-- Windows 10 Professional, Enterprise or Education (Build 15063 or later).
-- can connect to networks via a wireless connection (and preferably also a wired connection)
-- has at least 40 GB disk space available
-- has at least 4 GB of RAM
+
+ - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004. *Note that Windows 10 Home is not sufficient as not all the software required for the program can be installed on that OS. Also note that when installing Ubuntu, checking the box "Install third party..." will (among other things) install proprietary drivers, which can be helpful for wife and graphics cards.*
+- can connect to networks via a wireless connection
+- has at least 50 GB disk space available
+- has at least 8 GB of RAM
 - uses a 64-bit CPU
 - is 4 years old or newer at the start of the program
 - uses English as the default language
 
+ **Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
+
 ## Table of Contents
-- [GitHub](#github)
-- [Git](#git)
-- [Python and Jupyter](#python)
-- [R, IRkernel and RStudio](#r-ir-kernel-and-rstudio)
-- [PostgreSQL](#postgresql)
+
+- [Google Chrome browser](#google-chrome-browser)
+- [LastPass password manager](#lastpass-password-manager)
+- [Slack](#slack)
 - [Visual Studio code](#visual-studio-code)
+- [GitHub](#github)
+- [Git and Bash](#git-and-bash)
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
+- [R, IRkernel, Rtools, and RStudio](#r-irkernel-rtools-and-rstudio)
 - [LaTeX](#latex)
 - [Make](#make)
+- [PostgreSQL](#postgresql)
 - [Docker](#docker)
+- [VS Code extensions](#vs-code-extensions)
+
+## Installation notes
+
+In all the sections below,
+if you are presented with the choice to download either a 64-bit (also called x64)
+or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
+
+## Google Chrome browser
+
+In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome", download it to your computer and click on the downloaded file to install it.
+
+## LastPass password manager
+
+Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+
+## Slack
+
+For MDS program announcements, course forums, and correspondence we use the communication tool Slack. Slack can be accessed via the web browser, but we recommend using the Slack app, which can be installed via downloadable file from the slack website [https://slack.com/intl/en-ca/downloads/windows](https://slack.com/intl/en-ca/downloads/windows).
+
+
+## Visual Studio Code
+
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) and download the windows version of VS Code. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
+
+- *Optional* On the **Select Additional Tasks** page, check "Create a desktop icon" under "Additional icons".
+- Also on the **Select Additional Tasks** page check all four boxes under "Other"
+    - "Add 'Open with Code' action to Windows file context menu"
+    - "Add 'Open with Code' action to Windows directory context menu"
+    - "Register Code as an editor for supported file types"
+    - "Add to PATH" (this should selected by default).
+
+![](/resources_pages/imgs/vs_code.png)
 
 ## GitHub
 
-In MDS we will use [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
+In MDS we will use the publicly available [GitHub.com](https://github.com/) as well as an Enterprise version of GitHub hosted here at UBC, [GitHub.ubc.ca](https://github.ubc.ca). Please follow the set-up instructions for both below.
 
-#### GitHub.com
-If you do not yet have one, sign up for a free account at https://github.com/ .
+### GitHub.com
 
-#### GitHub.ubc.ca
-For us to add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login using your CWL:
+Sign up for a free account at [GitHub.com](https://github.com/) if you don't have one already.
 
-visit [Github.ubc.ca](https://github.ubc.ca) to do this.
+### GitHub.ubc.ca
+
+To add you to the MDS organization on [Github.ubc.ca](https://github.ubc.ca) we need you to login to [Github.ubc.ca](https://github.ubc.ca) using your CWL credentials.
 
 This step is required for
+
 - being able to store your work
 - all homework submission and grading
 - working collaboratively
 
-## Git
+## Git and Bash
 
-We will be using the command line version of Git as well as Git through RStudio. 
+Although Git and Bash are two separate programs,
+we are including them in the same section here 
+since they are packaged together in the same installer on Windows.
+Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
+and Git to keep a version history of our files and upload to/download from to GitHub.
+We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
 
-Go to <https://git-scm.com/download/win> and a download should automatically start (if not, follow the instructions on that page). After the download has finished, run the installer selecting the following options:
-  - On the **Select Components** page, check "On the Desktop" under "Additional icons"
-  - On the **Choosing the default editor used by Git** page, select "Use the Nano editor by default" from the drop-down menu
-  - For all other pages, use the default options
+Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
 
-After installation, test if you were successful by opening the Git Bash program (if you followed the install instructions above, you should now have an icon on your Desktop). Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash program:
+- *Optional* On the **Select Components** page, check "On the Desktop" under "Additional icons".
+- On the **Choosing the default editor used by Git** page, select "Use Visual Studio Code as Git's default editor" from the drop-down menu'
+
+![](/resources_pages/imgs/vscode-as-git-editor.png)
+
+> Note if you wish to pin Git Bash to the taskbar, you need to search for the program in the start menu, right click the entry and select "Pin to taskbar". If you instead first launch the program and pin it by right clicking on the taskbar icon, Git Bash will open with the wrong home directory (`/` instead of `/c/users/$USERNAME`.
+
+After installation, test if you were successful by opening the Git Bash program. Below is a picture of the Git Bash icon on the Desktop and an opened instance of the Git Bash terminal (we will often refer to this as just "the terminal"):
 
 ![](/resources_pages/imgs/gitbash.png)
 
-## Python
-
-We will be using Python for a large part of the program, including many popular 3rd party Python libraries for scientific computing. [__Anaconda__](https://www.anaconda.com) is an easy-to-install distribution of Python and most of these libraries (as well as Jupyter notebooks, one of the developing environments we will be using). We __strongly recommend__ that you use Anaconda for this program. If you insist on using your own Python setup instead of Anaconda, we will not be able to provide technical support with installation or later issues. For this program we are using __Python 3__ , not __Python 2__, so please choose the Anaconda versions that include Python 3.7
-
-Head to <https://www.anaconda.com/download/#windows> and download the Anaconda version for Windows with **Python 3.7**. After the download has finished, run the installer selecting the following options:
-  - On the **Advanced Installation Options** page, check both boxes (see image below)
-  - For all other pages, use the default options
-
-![](/resources_pages/imgs/anaconda_windows.png)
-
-After installation, open Powershell (select the Start button, type powershell, and click Windows Powershell from the list) and type the following:
-```
-python
-```
-you should see something like this (in the first line) if you were successful:
+In the terminal, type the following to check which version of Bash you just installed:
 
 ```
-Python 3.7.3 (default, Mar 27 2019, 17:13:21) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+bash --version
 ```
 
-If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
-
-To see if Jupyter was successfully installed in the Anaconda Python distribution, restart Powershell and type the following:
+The output should look similar to this:
 
 ```
-jupyter lab
+GNU bash, version 4.4.23(1)-release (x86_64-pc-sys)
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. 
+> If you tried to paste the above into the Git Bash terminal, you will have noticed that `Ctrl+V` does not work in Git Bash. Instead you need to right click and select "Paste" or use the `Shift+Insert` shortcut. To copy from the Git Bash terminal you simply select the text you want and it is copied automatically.
+
+> Via right click you can also reach the settings menu where you can configure Git Bash to your preferences, a couple of tips would be to check "Mouse -> Clicks place command line cursor" and change the font to something more legible, e.g. Consolas ("Text -> Select").
+
+Let's also check which version of git was installed:
+
+```
+git --version
+```
+
+```
+git version 2.28.0.windows.1
+```
+
+You can launch many windows programs from the Bash terminal, e.g. to launch VS Code that we installed previously, you would type in `code`, let's use this to check the version of vscode that we installed:
+
+```
+code --version
+```
+
+```
+1.47.3
+91899dcef7b8110878ea59626991a18c8a6a1b3e
+x64
+```
+
+### Configuring Git user info
+
+Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email (the same used to sign up for GitHub), respectively):
+
+```
+git config --global user.name "Jane Doe"
+git config --global user.email janedoe@example.com
+```
+
+> Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
+
+### Setting VS Code as the default editor
+
+To make programs run from the terminal (such as `git`) use VS Code by default, we will modify `~/.bash_profile`. First, open it using VS Code:
+
+```
+code ~/.bash_profile
+```
+
+Append the following lines:
+
+```
+# Set the default editor for programs launch from terminal
+EDITOR="code --wait"
+VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
+```
+
+> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+
+## Python, Conda, and JupyterLab
+
+### Python and Conda
+
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.7 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). After the download has finished, run the installer and accept the default configuration for all pages.
+
+> Do *not* add miniconda to PATH. We will set this up later.
+
+After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this open you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
+
+```
+python --version
+```
+
+which should return something like this:
+
+```
+Python 3.8.3
+```
+
+> If instead you see `Python 2.7.X` you installed the wrong version. Follow [these instructions](https://docs.anaconda.com/anaconda/install/uninstall) to delete this installation and try the installation again, selecting **Python 3.7**.
+
+### Integrating Python with the Git Bash terminal
+
+To avoid having to open the separate Anaconda Prompt every time we want to use Python, we can make it available from the (Git Bash) terminal, which is what we will be using most of the time. To set this up, open the "Anaconda Prompt (miniconda3)" again and type:
+
+```
+conda init bash
+```
+
+You will see that this modified a few configuration files, which makes `conda` visible to the terminal. Close all open terminal windows and launch a new one, you should now see that the prompt string has changed to include the word `(base)` as in the screenshot below:
+
+![](/resources_pages/imgs/add-conda-env-to-ps1.png)
+
+If you type
+
+```
+python --version
+```
+
+you should now see the same output as above:
+
+```
+Python 3.8.3
+```
+
+> Note that if you want to run Python interactively from the Git Bash terminal, you need to prepend the `winpty` command, so the full command would be `winpty python`. Running just `python` works on other setups, but will freeze the Git Bash terminal.
+
+Let's also check the version of the `conda` package manager. If you type
+
+```
+conda --version
+```
+
+you should see something like this
+
+```
+conda 4.8.3
+```
+
+> *Optional* One annoyance with our current terminal setup is that the word `(base)` is not on the same row as the rest of the prompt string (the part with `your_name@your_computer`. To fix this we can edit the `.bash_profile` configuration file to indicate that we do not want a newline at the beginning of the prompt string. Open up the configuration file using VS Code by typing the following command into a terminal:
+>
+> ```
+> code "/c/Program Files/Git/etc/profile.d/git-prompt.sh"
+> ```
+>
+> Delete the line that reads the following (it should be line 13):
+>
+> ```
+> PS1="$PS1"'\n'       # new line
+> ```
+>
+> Click to save the file,
+> when VS Code prompts you that the saving failed,
+> click "Retry as Admin" and then "Yes".
+> That's it!
+> Now if you launch a new terminal instance,
+> you will see `(base)` on the same line as the rest of the prompt string as in the screenshot below.
+>
+> ![](/resources_pages/imgs/remove-newline-from-ps1.png)
+
+### Essential Python packages
+
+`conda` installs Python packages from different online repositories which are called "channels".
+A package needs to go through thorough testing before it is included in the default channel,
+which is good for stability,
+but also means that new versions will be delayed and fewer packages are available overall.
+There is a community-driven effort called the [conda-forge (read more here)](https://conda-forge.org/),
+which provides more up to date packages
+To enable us to access the most up to date version of the Python packages we are going to use,
+we will add the more up to date  channel,
+To add the conda-forge channel by typing the following in the terminal:
+
+```
+conda config --add channels conda-forge
+
+```
+
+To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of the MDS program:
+
+```
+conda install \
+ jupyterlab=2.* \
+ numpy=1.* \
+ pandas=1.* \
+ flake8=3.* \
+ black=19.*
+```
+
+`conda` will show you the packages that will be downloaded,
+and you can press enter to proceed with the installation.
+If you want to answer `yes` by default and skip this confirmation step,
+you can replace `conda install` with `conda install -y`.
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
+
+### JupyterLab setup
+
+We will be using the Jupytext Python package and the JupyterLab git extension to facilitate using Jupyter notebooks with Git & GitHub. Install them via the following commands:
+
+```
+conda install -y nodejs=10.*
+pip install --upgrade jupyterlab-git
+conda install -y jupytext=1.*
+jupyter lab build
+```
+
+To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
 ![](/resources_pages/imgs/jupyter_lab.PNG)
 
+## R, IRkernel, Rtools, and RStudio
 
-If you already have installed Anaconda at some point in the past, we recommend that you update to the latest Anaconda version by updating conda. In powershell, type the following:
-```
-conda update conda
-conda update anaconda
-```
-
-## R, IRkernel and RStudio
-We will be using R, another programming language, a lot in the program. We will use R both in Jupyter notebooks and in RStudio. To have R work in Jupyter notebooks we will also have to install the IR kernel.
+R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
 ### R
-Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (Should look something like this: Download R 3.6.1 for Windows). Open the file and follow the installer instructions.
 
-Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
+Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (4.0.2 at the time of writing). Open the file and follow the installer instructions accepting the default configuration.
+
+After the installation is complete, we will add the R executables to the PATH variable in terminal so that your can use it without typing the full path to R each time. Open a terminal and type:
+
+```
+code ~/.bash_profile
+```
+
+Append the following line to the file
+
+```
+# Add R and Rscript to PATH
+export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+```
+
+Now you can open terminal and type
+
+```
+R --version
+```
+
+which should return something like:
+
+```
+R version 4.0.2 (2020-06-22) -- "Taking Off Again"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under the terms of the
+GNU General Public License versions 2 or 3.
+For more information about these matters see
+https://www.gnu.org/licenses/.
+```
+
+> Note: Although it is possible to install R through Anaconda, we highly recommend not doing so. In case you have already installed R using Anaconda you can remove it by executing `conda uninstall r-base`.
 
 ### RStudio
-Chose and download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/#download>. Open the file and follow the installer instructions.
+
+Download the Windows version of RStudio from <https://www.rstudio.com/products/rstudio/download/preview>. Open the file and follow the installer instructions.
 
 To see if you were successful, try opening RStudio by clicking on its icon. It should open and looks something like this picture below:
 
 ![](/resources_pages/imgs/RStudio.png)
 
+Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set and environmental variable in Windows. First, open the start menu, type "env" and select the match that reads "Edit the system environment variables". Click the button at the bottom that reads "Environmental Variables...":
+
+![](/resources_pages/imgs/sys-props-env-vars.png)
+
+Under "User variable" click the "New..." button:
+
+![](/resources_pages/imgs/env-vars-new-user-var.png)
+
+And type in `R_USER` as the "Variable name" and `C:\Users\username` as the "Variable value", replacing `username` with your actual user name (if you don't know your user name, look at the top of the screenshot above where it says "User variables for your_username"):
+
+![](/resources_pages/imgs/new-user-var-values.png)
+
+Click "OK" on all of the three windows we opened above and you're done! If you open RStudio and R from terminal and type
+
+```
+.libPaths()
+```
+
+both should return the same values, e.g.
+
+```
+"C:/Users/joelo/R/win-library/4.0"   "C:/Program Files/R/R-4.0.2/library"
+```
+
+
 ### Rtools
-Windows users will also need to install Rtools, which will allow you to use external libraries. Go to http://cran.r-project.org/bin/windows/Rtools/ and download the latest version (e.g., Rtools35.exe). After the download has finished, run the installer selecting the following options:
-  - On the **Select Additional Tasks** page, check the Add rtools to system PATH option (see image below)
-  - For all other pages, use the default options
 
-![](/resources_pages/imgs/Rtools.png)
+Windows users will also need to install Rtools, which will allow you to use external libraries. Go to <http://cran.r-project.org/bin/windows/Rtools/> and download the latest version (e.g., Rtools40.exe). After the download has finished, run the installer with the default configuration. Do *not* follow the Rtools' website instructions for "Putting Rtools on the PATH". RStudio will put Rtools on the PATH automatically when it is needed.
 
-To see if you were successful, open RStudio and type ```install.packages("xtable", type="source")``` into the console panel. If this install command runs successfully, Rtools should be installed!
+To test if you're installation was successful, open RStudio and type the following into the Console:
 
+```
+install.packages("jsonlite", type = "source")
+```
+
+If the `jsonlite` package installs without errors, Rtools is setup correctly.
+
+### Essential R packages
+
+Next, install the key R packages needed for the start of MDS program,
+by typing the following into the R terminal in RStudio:
+
+```
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'devtools', 'usethis'))
+```
+
+If you get a prompt asking if you want to install packages that need compilation from sources, click "Yes".
+
+> Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
 ### IR kernel
 
-Open RStudio and type the following commands into the console panel:
+The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, open R *from a terminal* and run the setup via the following two commands:
 
 ```
-install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest', 'tidyverse'))
-devtools::install_github('IRkernel/IRkernel')
+install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
-To see if you were successful, try running Jupyter Lab and seeing if you have working R kernel. To launch the Jupyter Lab type the following in the Windows Powershell:
+When asked to select a mirror, pick one at a location close to where you live for faster downloads.
+
+> Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
+
+To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch the Jupyter Lab type the following in the terminal:
 
 ```
 jupyter lab
@@ -141,56 +435,170 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-### Rscript
+## LaTeX
 
-To be able to call R scripts from the Powershell or Git Bash you need to be able to execute the Rscript program from there. To make this possible you need to add the the file path of the directory/folder that houses the Rscript program (i.e., location where this program lives on your computer) to the Windows PATH system variable. You can modify the PATH system variable using System Utility in control panel on Windows. We outline below how to do this:
+We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
 
-- Hit the windows key to get to the windows search bar and type: `edit environ`
-- This should bring up a menu item that will take you to where you can edit the Environment Variables. It should look something like this:
-
-![](/resources_pages/imgs/env1.png)
-  
-- Double click on the "Path" entry from the top box. This should bring you to a new window titled "Edit Enviroment Variables". 
-
-- Here, click on an empty line and then click **Browse**. This will open a dialogue box within which you can navigate to the folder where Rscript is installed (usually `C:\Program Files\R\R-3.6.1\bin`) and click **OK**. Close all remaining windows by clicking **OK**.
-
-![](/resources_pages/imgs/env2.png)
-
-After following the instructions above, restart Powershell and type the following:
-``` 
-Rscript --version
-```
-you should see something like this if you were successful:
-```
-R scripting front-end version 3.6.1 (2019-07-05)
-```
-
-## PostgreSQL 
-
-We will be using PostgreSQL as our database management system. You can download it from [here](https://www.enterprisedb.com/thank-you-downloading-postgresql?anid=1256714). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You can execute `SQL Shell` to test if you were successful.
-
-## Visual Studio Code
-
-### Installing
-
-We need a text editor to be able to write complete applications. One is available through Jupyter, but sometimes it is helpful to have a standalone text editor, for this we will be using the open-source text editor Visual Studio Code (VS Code). You can download VS Code at https://code.visualstudio.com/download. At "Select Additional Tasks" make sure that "Add to path" is selected (I also like to select all the other three items - see figure below).
-
-![](/resources_pages/imgs/vs_code.png)
-
-You can test that VS code is installed and can be opened from the Powershell by running the following command:
+First, open RStudio and run the following commands to install the `tinytex` package and setup `tinytex`:
 
 ```
-code --version
+install.packages('tinytex')
+tinytex::install_tinytex()
 ```
 
-you should see something like this if you were successful:
+Note that you might see two error messages regarding lua during the installation, you can safely ignore these, the installation will complete successfully after clicking "OK".
+
+
+You can check that the installation is working by typing the following in a terminal to ask for the version of latex:
+
 ```
-1.36.1
-2213894ea0415ee8c85c5eea0d0ff81ecc191529
-x64
+latex --version
 ```
 
-### Customizing VS Code with Extensions
+You should see something like this if you were successful:
+
+```
+pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
+kpathsea version 6.3.2
+Copyright 2020 Han The Thanh (pdfTeX) et al.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the pdfTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the pdfTeX source.
+Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+Compiled with libpng 1.6.37; using libpng 1.6.37
+Compiled with zlib 1.2.11; using zlib 1.2.11
+Compiled with xpdf version 4.02
+```
+
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please sign out of Windows and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
+
+When you sign back in,
+install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
+by pasting the following:
+
+```
+tlmgr.bat install eurosym \
+  adjustbox \
+  caption \
+  collectbox \
+  enumitem \
+  environ \
+  fp \
+  jknapltx \
+  ms \
+  parskip \
+  pgf \
+  rsfs \
+  tcolorbox \
+  titling \
+  trimspaces \
+  ucs \
+  ulem \
+  upquote
+```
+
+To test that your latex installation is working with jupyter notebooks,
+launch `jupyter lab` from a terminal and open either a new notebook
+or the same one you used to test IRkernel above.
+Go to `File -> Export notebook as... -> Export Notebook to PDF`.
+If the PDF file is created,
+your LaTeX environment is set up correctly.
+
+> Note if you see an error that says "Undefined control sequence", you need to edit a configuration file for Jupyter's PDF export. Open a terminal and paste `code "/c/Users/${USERNAME}/miniconda3/Lib/site-packages/nbconvert/exporters/pdf.py"`. On line 66, it says `writer = Instance("nbconvert.writers.FilesWriter", args=(), kw={'build_directory': '.'})`, replace this line with the following line `writer = Instance("nbconvert.writers.FilesWriter", args=(), kw={'build_directory': ''})` (removing the period close to the end). Now try to generate a PDF from JupyterLab again.
+
+## Make
+
+Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer, click the "Extract" tab and the button in the header that says "Extract all" and accept the default extraction location.
+
+Next we need to add the `bin` folder in this extraction location to our PATH so that we can use `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code by pasting this into a terminal:
+
+```
+code ~/.bash_profile
+```
+
+And replace the section that reads:
+
+```
+# Add R and Rscript to path
+export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+```
+
+with the following (prepending the `make` folder to the path above):
+
+```
+# Add R, Rscript, and Make to path
+export PATH="/c/Users/${USERNAME}/Documents/make-4.3-without-guile-w32-bin/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+```
+
+Launch a new terminal and run
+
+```
+make --version
+```
+
+which should return something like
+
+```
+GNU Make 4.3
+Built for Windows32
+Copyright (C) 1988-2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+```
+
+## PostgreSQL
+
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL from here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation.
+
+To test if the installation was successful open the `SQL Shell` app from the Start menu. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
+
+![](/resources_pages/imgs/psql-windows.png)
+
+## Docker
+
+You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
+
+After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Stable" button on the right hand side of the screen. Then follow the installation instructions on that screen.
+
+After installation (Docker will make you sign out to finish installing), launch a terminal and type
+
+```
+docker run hello-world
+```
+
+which should output something like this:
+
+```
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+0e03bdcc26d7: Pulling fs layer
+0e03bdcc26d7: Verifying Checksum
+0e03bdcc26d7: Download complete
+0e03bdcc26d7: Pull complete
+Digest: sha256:49a1c8800c94df04e9658809b006fd8a686cab8028d33cfba2cc049724254202
+Status: Downloaded newer image for hello-world:latest
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+```
+
+## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
@@ -208,84 +616,19 @@ To install an extension, you simply search for it in the search bar, click the e
 
 This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
 
-## LaTeX
+## Post-installation notes
 
-Download the installer from [http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe). After downloading run the `install-tl-windows.exe` file and follow the installation instructions choosing the default options.
-
-*note - if a screen appears titled "Windows protected your PC", click on "More info" link and the "Run anyway" button*
-
-After installation, restart Powershell and type the following to ask for the version:
-
-```
-latex --version
-```
-
-you should see something like this if you were successful:
+You have completed the installation instructions, well done 🙌!
+We have created a script to help you check that your installation was successful,
+and to provide instructions for how you can troubleshoot any potential issues.
+To run this script,
+please execute the following command from your terminal.
 
 ```
-pdfTeX 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX)
-kpathsea version 6.3.0
-Copyright 2018 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.34; using libpng 1.6.34
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.00
+bash <(curl -Ss https://raw.githubusercontent.com/joelostblom/UBC-MDS.github.io/setup-check-script/resources_pages/check-setup-mds.sh)
 ```
 
-## Make
-We will be using Make to automate our analysis scripts. More on this later!
-
-Go to https://github.com/gnu-mcu-eclipse/windows-build-tools/releases and download `gnu-mcu-eclipse-windows-build-tools-2.12-20190422-1053-win64.zip`. 
-
-Unpack the archive and copy it into the %userprofile%\AppData\Roaming\GNU MCU Eclipse (for example C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse) folder. 
-
-Next, like you did when installing [Rscript](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/resources_pages/install_ds_stack_windows.md#rscript), you need to add the folder where `make.exe` is located to the _PATH_ variable. The `make.exe` file is located in C:\Users\\`user_name`\AppData\Roaming\GNU MCU Eclipse\Build Tools\2.12-20190422-1053\bin.
-
-After installation, restart Powershell and type the following to ask for the version:
-
-```
-make --version
-```
-
-you should see something like this if you were successful:
-
-```
-GNU Make 4.2.1
-Built for i686-pc-msys
-Copyright (C) 1988-2016 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-```
-
-## Docker
-
-You will use Docker to create reproducible, sharable and shippable computing environments for your analyses. For this you will need a Docker account. You can sign up for a free one [here](https://store.docker.com/signup?next=%2F%3Fref%3Dlogin).
-
-After signing-up and signing into the Docker Store, go [here](https://store.docker.com/editions/community/docker-ce-desktop-windows) and click on the "Get Docker" button on the right hand side of the screen. Then follow the installation instructions on that screen.
-
-After installation, restart Powershell and type the following to ask for the version:
-
-```
-docker run hello-world
-```
-
-you should see something like this if you were successful:
-
-```
-Unable to find image 'hello-world:latest' locally
-latest: Pulling from library/hello-world
-c04b14da8d14: Pull complete
-Digest: sha256:0256e8a36e2070f7bf2d0b0763dbabdd67798512411de4cdcf9431a1feb60fd9
-Status: Downloaded newer image for hello-world:latest
-
-Hello from Docker!
-```
+> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 * [Harvard CS109](http://cs109.github.io/2015/)

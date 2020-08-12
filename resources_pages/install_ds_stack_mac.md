@@ -25,14 +25,20 @@ These instructions will walk you through installing the required Data Science so
 - [Visual Studio Code](#visual-studio-code)
 - [GitHub](#github)
 - [Git](#git)
-- [Python](#python)
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
 - [Essential python packages](#essential-python-packages)
 - [JupyterLab setup](#jupyterlab-setup)
-- [R, XQuartz,IRkernel and RStudio](#r-xquartz-irkernel-and-rstudio)
+- [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
-- [Visual Studio Code Extensions](#visual-studio-code-extensions)
+- [VS Code extensions](#vs-code-extensions)
+
+## Installation notes
+
+In all the sections below,
+if you are presented with the choice to download either a 64-bit (also called x64)
+or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
 ## Google Chrome browser
 
@@ -40,7 +46,7 @@ In MDS we will be using many tools that work most reliably on the Google Chrome 
 
 ## LastPass password manager
 
-In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd).
+Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
 
 ## Slack
 
@@ -60,8 +66,8 @@ You will have to quit all instances of open Terminals and then restart the Termi
 
 ### Installing
 
-The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). The getting started instructions are here: [https://code.visualstudio.com/docs/setup/mac](https://code.visualstudio.com/docs/setup/mac).
-**Be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) instructions as well.**
+The open-source text editor Visual Studio Code (VS Code) is both a powerful text editor and a full-blown Python IDE, which we will use for more complex analysis. You can download and install the macOS version of VS Code from the VS code website [https://code.visualstudio.com/download](https://code.visualstudio.com/download). Once the download is finished, click "Open with Archive utility", and move the extracted VS Code application from "Downloads" to "Applications".
+In addition to reading the [getting started instructions](https://code.visualstudio.com/docs/setup/mac), **be sure to follow the ["Launching from the command line"](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) steps as well.**
 
 You can test that VS code is installed and can be opened from Terminal by restarting terminal and typing the following command:
 
@@ -120,17 +126,38 @@ git version 2.24.2 (Apple Git-127)
 
 > Note: If you run into trouble, please see that Install Git > Mac OS section from [Happy Git and GitHub for the useR](http://happygitwithr.com/install-git.html#mac-os) for additional help or strategies for Git installation.
 
-Next, we need to configure Git by telling it who you are, your email, and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
+### Configuring Git user info
+
+Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email (the same used to sign up for GitHub), respectively):
 
 ```
 git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
-git config --global core.editor code
 ```
 
 > Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
-## Python
+### Setting VS Code as the default editor
+
+To make programs run from the terminal (such as `git`) use vscode by default, we will modify `~/.bash_profile`. First, open it using VS Code:
+
+```
+code ~/.bash_profile
+```
+
+Append the following lines:
+
+```
+# Set the default editor for programs launch from terminal
+EDITOR="code --wait"
+VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
+```
+
+> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+
+## Python, Conda, and JupyterLab
+
+### Python and Conda
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Miniconda MacOSX 64-bit pkg install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
 
@@ -207,7 +234,7 @@ jupyter lab build
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
-## R, XQuartz, IRkernel and RStudio
+## R, XQuartz, IRkernel, and RStudio
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
@@ -255,7 +282,7 @@ Next, install the key R packages needed for the start of MDS program,
 by typing the following into the R terminal in RStudio:
 
 ```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools'))
 ```
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
@@ -301,6 +328,29 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
+You can check that the installation is working by typing the following in a terminal to ask for the version of latex:
+
+```
+latex --version
+```
+
+You should see something like this if you were successful:
+
+```
+pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
+kpathsea version 6.3.2
+Copyright 2020 Han The Thanh (pdfTeX) et al.
+There is NO warranty.  Redistribution of this software is
+covered by the terms of both the pdfTeX copyright and
+the Lesser GNU General Public License.
+For more information about these matters, see the file
+named COPYING and the pdfTeX source.
+Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+Compiled with libpng 1.6.37; using libpng 1.6.37
+Compiled with zlib 1.2.11; using zlib 1.2.11
+Compiled with xpdf version 4.02
+```
+
 The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Do this by opening a terminal and copying the following there press enter:
 
 ```
@@ -331,36 +381,13 @@ Go to `File -> Export notebook as... -> Export Notebook to PDF`.
 If the PDF file is created,
 your LaTeX environment is set up correctly.
 
-You can also check by typing the following to ask for the version of latex:
-
-```
-latex --version
-```
-
-You should see something like this if you were successful:
-
-```
-pdfTeX 3.14159265-2.6-1.40.21 (TeX Live 2020)
-kpathsea version 6.3.2
-Copyright 2020 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.37; using libpng 1.6.37
-Compiled with zlib 1.2.11; using zlib 1.2.11
-Compiled with xpdf version 4.02
-```
-
 ## PostgreSQL
 
-We will be using PostgreSQL as our database management system. You can download the most recent version from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default.
+We will be using PostgreSQL as our database management system. You can [download PostgreSQL from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads). Follow the instructions for the installation. In the password page, type whatever password you want, but make sure you'll remember it later. For all the other options, use the default. You do not need to run "StackBuilder" at the end of the installation. 
 
-To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. It should look like this if it is working correctly: 
+To test if the installation was successful open the `SQL Shell` app from the LaunchPad or applications directory. You will be asked to setup your configuration, accept the default value (the one within square brackets) for the first four values by pressing enter four times, then type in your password and press enter one last time. It should look like this if it is working correctly:
 
-![](/resources_pages/imgs/sql_shell.png)
+![](/resources_pages/imgs/psql-mac.png)
 
 ## Docker
 
@@ -403,7 +430,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-## Visual Studio Code Extensions
+## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. Now that we have installed all our other Data Science tools, we can install the VS Code extensions that work really well with them. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
@@ -420,6 +447,20 @@ To install an extension, you simply search for it in the search bar, click the e
 - (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
+
+## Post-installation notes
+
+You have completed the installation instructions, well done 🙌!
+We have created a script to help you check that your installation was successful,
+and to provide instructions for how you can troubleshoot any potential issues.
+To run this script,
+please execute the following command from your terminal.
+
+```
+bash <(curl -Ss https://raw.githubusercontent.com/joelostblom/UBC-MDS.github.io/setup-check-script/resources_pages/check-setup-mds.sh)
+```
+
+> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 

@@ -25,14 +25,18 @@ These instructions will walk you through installing the required Data Science so
 - [Visual Studio Code](#visual-studio-code)
 - [GitHub](#github)
 - [Git](#git)
-- [Python](#python)
-- [Essential python packages](#essential-python-packages)
-- [JupyterLab setup](#jupyterlab-setup)
-- [R, IRkernel and RStudio](#r-irkernel-and-rstudio)
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
+- [R, IRkernel, and RStudio](#r-irkernel-and-rstudio)
 - [LaTeX](#latex)
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
-- [Visual Studio Code Extensions](#visual-studio-code-extensions)
+- [VS Code extensions](#vs-code-extensions)
+
+## Installation notes
+
+In all the sections below,
+if you are presented with the choice to download either a 64-bit (also called x64)
+or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
 ## Google Chrome browser
 
@@ -42,7 +46,7 @@ In MDS we will be using many tools that work most reliably on the Google Chrome 
 
 ## LastPass password manager
 
-In MDS we share credentials via the password manager LastPass. This can also be useful for helping keep secure passwords and efficient authentication. Sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd).
+Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
 
 ## Slack
 
@@ -98,17 +102,38 @@ You can check your git version with the following command:
 git --version
 ```
 
-Next, we need to configure Git by telling it who you are, your email, and setting the default text editor to VS Code. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email, respectively):
+### Configuring Git user info
+
+Next, we need to configure Git by telling it your name and email. To do this type the following into the terminal (replacing Jane Doe and janedoe@example.com, with your name and email (the same you used on GitHub), respectively):
 
 ```
 git config --global user.name "Jane Doe"
 git config --global user.email janedoe@example.com
-git config --global core.editor code
 ```
 
 > Note: to ensure that you haven't made a typo in any of the above, you can view your global Git configurations by either opening the configuration file in a text editor (e.g. via the command `code ~/.gitconfig`) or by typing `git config --list --global`.
 
-## Python
+### Setting VS Code as the default editor
+
+To make programs run from the terminal (such as `git`) use VS Code by default, we will modify `~/.bash_profile`. First, open it using VS Code:
+
+```
+code ~/.bash_profile
+```
+
+Append the following lines:
+
+```
+# Set the default editor for programs launch from terminal
+EDITOR="code --wait"
+VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
+```
+
+> Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
+
+## Python, Conda, and JupyterLab
+
+### Python and Conda
 
 We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Python 3.7 64-bit version can be downloaded here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh).
 
@@ -201,7 +226,7 @@ jupyter lab build
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
-## R, IRkernel and RStudio
+## R, IRkernel, and RStudio
 
 R is another programming language that we will be using a lot in the MDS program. We will use R both in Jupyter notebooks and in RStudio.
 
@@ -270,7 +295,7 @@ Next, install the key R packages needed for the start of MDS program,
 by typing the following into the R terminal in RStudio:
 
 ```
-install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv'))
+install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools'))
 ```
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
@@ -408,7 +433,7 @@ After signing-up, you also need to install Docker **CE** for Ubuntu. Follow the 
 
 Next, [follow the Linux post installation steps here](https://docs.docker.com/engine/install/linux-postinstall/) so that you can run Docker without typing `sudo`, and confirm that docker is working by following the verification instructions on that same page.
 
-## Visual Studio Code Extensions
+## VS Code extensions
 
 The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace (read more here)](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
 
@@ -425,6 +450,20 @@ To install an extension, you simply search for it in the search bar, click the e
 - (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
+
+## Post-installation notes
+
+You have completed the installation instructions, well done 🙌!
+We have created a script to help you check that your installation was successful,
+and to provide instructions for how you can troubleshoot any issues.
+To run this script,
+please execute the following command from your terminal.
+
+```
+bash <(curl -Ss https://raw.githubusercontent.com/joelostblom/UBC-MDS.github.io/setup-check-script/resources_pages/check-setup-mds.sh)
+```
+
+> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 
