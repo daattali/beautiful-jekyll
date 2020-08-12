@@ -19,6 +19,8 @@ The MDS Vancouver program covers all aspects of data science, including topics o
 
 ### Instructions for filling out the capstone proposal form
 
+Detailed instructions for filling out the capstone proposal form can be found below.
+
 #### About your organization
 
 Briefly introduce your organization
