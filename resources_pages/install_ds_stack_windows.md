@@ -681,7 +681,7 @@ To run this script,
 please execute the following command from your terminal.
 
 ```
-bash <(curl -Ss https://raw.githubusercontent.com/joelostblom/UBC-MDS.github.io/setup-check-script/resources_pages/check-setup-mds.sh)
+bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
 ```
 
 > Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).

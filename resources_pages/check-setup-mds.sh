@@ -4,7 +4,7 @@
 
 # 0. Help message and OS info
 echo ''
-echo "# MDS setup check 0.0.2" | tee check-setup-mds.log
+echo "# MDS setup check 0.1.0" | tee check-setup-mds.log
 echo '' | tee -a check-setup-mds.log
 echo 'If a program or package is marked as MISSING,'
 echo 'this means that you are missing the required version of that program or package.'
@@ -255,3 +255,7 @@ if ! [ -f ~/.bashrc ]; then
 else
     cat ~/.bashrc >> check-setup-mds.log
 fi
+
+echo
+echo "This output and additional configuration details"
+echo "have been saved to the file check-setup-mds.log in this directory."
