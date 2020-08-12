@@ -10,7 +10,7 @@ This year's capstone course will run __May - June, 2021__ (~8 weeks).
 The exact capstone timeline is TBA, however an approximate timeline is provided below, followed by additional detail on each event.
 
 | Event                                                                                          | Deadline/Period       |
-|------------------------------------------------------------------------------------------------|-----------------------|
+| ---------------------------------------------------------------------------------------------- | --------------------- |
 | [Suggested initial submission of proposal](https://ubc-mds.github.io/capstone/proposal/)       | November 15, 2020     |
 | [Proposal deadline](#proposal-revision-process)                                                | December 15, 2020     |
 | [Selection of proposals](#selection-of-proposals)                                              | January 15, 2021      |
@@ -23,14 +23,13 @@ The exact capstone timeline is TBA, however an approximate timeline is provided 
 | [Project](#project)                                                                            | May 3 - June 30, 2021 |
 | [Kickoff hackathon](#hackathon)                                                                | May 3 - May 5, 2021   |
 
-
 #### Proposal revision process
 
 Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/proposal/).
 
 Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
 
-We recommend your first submission of the proposal to be well before the December 31st deadline, so that we can offer suggestions in case it needs revision.
+Proposals received *before November 15th* will be reviewed by the MDS teams and feedback/suggestions for revisions will be provided to the partner, who can then revise and re-submit their proposal. This revision process aims to maximize the chance of a proposal being selected by students. Proposals received *after November 15th* will not be provided with feedback.
 
 #### Selection of proposals
 
