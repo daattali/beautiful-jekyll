@@ -255,3 +255,7 @@ if ! [ -f ~/.bashrc ]; then
 else
     cat ~/.bashrc >> check-setup-mds.log
 fi
+
+echo
+echo "This output and additional configuration details"
+echo "have been saved to the file check-setup-mds.log in this directory."
