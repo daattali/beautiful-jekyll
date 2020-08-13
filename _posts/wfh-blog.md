@@ -2,9 +2,13 @@
 layout: post
 title: Can WFH be the New Norm? 
 subtitle: A Survey Study on the IT Sector in Bangladesh
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
 tags: [wfh]
 comments: false
 ---
+
 The COVID-19 pandemic has reshaped our way of life in many ways in the past 5 months of lockdown. This includes the professional workforce. Organizations closed down their offices, and workers and managers had to operate remotely. As a result, **Work From Home (WFH)** quickly became the new mode of operations for the majority of the population.
 
 One of the earliest industries to adopt WFH in Bangladesh was the software development industry or the Information Technology (IT) sector. With resources (mostly) distributable virtually, this sector saw a quick transition to remote operations. Now, after months of functioning in the WFH set-up, a new question arose naturally: "Can WFH be extended after the lockdown is lifted?"
@@ -23,7 +27,7 @@ Among the randomly sampled **1237 total respondents**, 106 still worked from the
 
 Our study was based on the remaining **1131 respondents**. Before analyzing their WFH performance and productivity, we can take a look at their basic information. These information - their age, gender, education level and more - establish a few preexisting notions and trends in the IT sector of the country. For instance, it is seen that **88.69% of the respondents are male**, which is congruent with the male dominated industry. Other such patterns are demonstrated below.
 
-![Demographic](../images/demographic.png)
+![Demographic](/assets/img/demographic.png)
 
 ## The Effects of WFH
 
@@ -33,7 +37,7 @@ These aspects were categorized into **8 different sections**: Team Dynamics, Com
 
 For this demonstration, only the aspect of Team Dynamics is included.
 
-![Effects](../images/effects.png)
+![Effects](/assets/img/effects.png)
 
 ## Employee Productivity in WFH
 
@@ -41,4 +45,4 @@ The most important aspect of this survey is understanding employee productivity 
 
 For this demonstration, productivity based on the **demographic aspects** are shown. Works in the future will include detailed analysis of productivity, its correlation with the 24 aspects and their correlation to each other.
 
-![Productivity](../images/prod.png)
+![Productivity](/assets/img/prod.png)
