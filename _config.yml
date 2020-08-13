@@ -47,7 +47,6 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-    
   github: ymobian
   youtube: channel/UCf20K2AUAZH8x6Q1Z2KnYXg?view_as=subscriber
   twitter: true 
@@ -74,9 +73,9 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+  twitter: 
+  facebook: 
+  linkedin: 
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
