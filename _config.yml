@@ -27,7 +27,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/images/m.jpg"
+avatar: "/images/em.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: true
@@ -49,7 +49,7 @@ round-avatar: true
 social-network-links:
     
   youtube: channel/UCf20K2AUAZH8x6Q1Z2KnYXg?view_as=subscriber
-  twitter: daattali
+  twitter: 
   rss: true 
   email : maiaboo64@gmail.com
   github: ymobian 
