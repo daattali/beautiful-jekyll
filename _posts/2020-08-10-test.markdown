@@ -57,9 +57,7 @@ En fait, le point numéroté $k$ a pour coordonnées $(\cos(k\pi/n),\sin(k\pi/n)
 
 Lorsque l'on prend un grand nombre $n$ de points et que l'on fait varier continûment $r$, on obtient des animations du style suivant.
 
-<video controls>
-<source src="https://www.youtube.com/watch?v=rDCA1vkuSOE">
-</video>
+[![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
 
 Bien évidemment, je me pose deux questions :
 
