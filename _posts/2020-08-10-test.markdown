@@ -56,6 +56,7 @@ Il ne reste plus qu'à montrer que les éléments sont bien deux à deux distinc
 En fait, le point numéroté $k$ a pour coordonnées $(\cos(k\pi/n),\sin(k\pi/n))$ et on le relie au point de coordonnées $(\cos(rk\pi/n),\sin(rk\pi/n))$. Ceci a l'avantage de pouvoir généraliser le procédé décrit plus haut à des tables de multiplications de $r$ même si $r$ n'est pas entier.
 
 Lorsque l'on prend un grand nombre $n$ de points et que l'on fait varier continûment $r$, on obtient des animations du style suivant.
+<div style="text-align:center">Aligné à droite</div>
 
 [![Audi R8](http://img.youtube.com/vi/KOxbO0EI4MA/0.jpg)](https://www.youtube.com/watch?v=KOxbO0EI4MA "Audi R8")
 
@@ -92,6 +93,4 @@ def get_lines(t, r):
 https://www.youtube.com/watch?v=KOxbO0EI4MA 
 
 
-<p align="center">
-  <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
-</p>
+
