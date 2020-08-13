@@ -31,6 +31,7 @@ These instructions will walk you through installing the required Data Science so
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 - [VS Code extensions](#vs-code-extensions)
+- [Improving the bash configuration](#improving-the-bash-configuration)
 - [Post-installation notes](#post-installation-notes)
 
 ## Installation notes
@@ -605,6 +606,25 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+
+## VS Code extensions
+
+The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
+
+![](/resources_pages/imgs/vscode.png)
+
+To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
+
+- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
+- markdownlint (markdown linting and style checking extension)
+- GitLens (powerful extension that extends VS Code's native git capabilities)
+- Docker (easily use Docker from VS Code)
+- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
+- (Optional) Material Icon Theme (great-looking custom file icons!)
+- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
+
+This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
+
 ## Improving the bash configuration
 
 To improve your experience using bash,
@@ -662,24 +682,6 @@ alias python="winpty python"
 alias docker="winpty docker"
 ```
 
-## VS Code extensions
-
-The real magic of VS Code is in the extensions that let you add languages, debuggers, and tools to your installation to support your specific workflow. From within VS Code you can open up the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery) to browse and install extensions by clicking on the Extensions icon in the Activity Bar indicated in the figure below.
-
-![](/resources_pages/imgs/vscode.png)
-
-To install an extension, you simply search for it in the search bar, click the extension you want, and then click "Install". There are extensions available to make almost any workflow or task you are interested in more efficient! Here we are interested in setting up VS Code as a Python IDE. To do this, search for and install the following extensions:
-
-- Python (everything Python: notebooks, debugging, linting, formatting, etc.)
-- markdownlint (markdown linting and style checking extension)
-- GitLens (powerful extension that extends VS Code's native git capabilities)
-- Docker (easily use Docker from VS Code)
-- (Optional) Material Theme and/or Predawn Theme Kit (additional colour themes to choose from)
-- (Optional) Material Icon Theme (great-looking custom file icons!)
-- (Optional) Bracket Pair Colorizer 2 (add colour to help distinguish your brackets: (), [], {})
-
-This [video tutorial](https://www.youtube.com/watch?v=-nh9rCzPJ20) is an excellent introduction to using VS Code in Python.
-
 ## Post-installation notes
 
 You have completed the installation instructions, well done 🙌!
@@ -691,6 +693,82 @@ please execute the following command from your terminal.
 ```
 bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
 ```
+
+The output from running the script will look something like this:
+
+```
+# MDS setup check 0.1.0
+
+If a program or package is marked as MISSING,
+this means that you are missing the required version of that program or package.
+Either it is not installed at all or the wrong version is installed.
+The required version is indicated with a number and an asterisk (*),
+e.g. 4.* means that all versions starting with 4 are accepted (4.0.1, 4.2.5, etc).
+
+You can run the following commands to find out which version
+of a program or package is installed (if any):
+```
+name_of_program --version  # For system programs
+conda list  # For Python packages
+R -q -e "installed.packages()[,c(Package, Version)]"  # For R packages
+```
+
+Checking program and package versions...
+
+## Operating system
+Microsoft Windows 10 Education
+64-bit
+10.0.19041
+
+## System programs
+OK        psql 12.3
+MISSING   rstudio=1.*
+OK        R 4.0.2 (2020-06-22) -- "Taking Off Again"
+OK        python 3.8.3
+OK        conda 4.8.3
+OK        bash 4-pc-linux-gnu)
+OK        git 2.27.0
+OK        make 4.3
+OK        latex 3.14159265-2.6-1.40.21 (TeX Live 2020)
+OK        tlmgr 55369 (2020-06-01 02:32:00 +0200)
+MISSING   docker=19.*
+MISSING   code=1.*
+
+## Python packages
+MISSING   jupyterlab=2.*
+MISSING   numpy=1.*
+MISSING   pandas=1.*
+OK        flake8=3.7.9
+MISSING   black=19.*
+MISSING   nodejs=10.*
+OK        jupytext=1.3.4
+MISSING   jupyterlab-git=0.*
+MISSING   jupyterlab PDF-generation failed. Check that latex and jupyterlab are marked OK above.
+
+## R packages
+OK        tidyverse=1.3.0
+OK        blogdown=0.20
+OK        xaringan=0.16
+OK        renv=0.11.0
+OK        IRkernel=1.1.1
+OK        tinytex=0.25
+OK        rmarkdown PDF-generation was successful
+
+This output and additional configuration details
+have been saved to the file check-setup-mds.log in this directory.
+```
+
+As you can see at the end of the output,
+a log file is saved in your current directory.
+We might ask you to upload this file
+if we need to troubleshoot your installation,
+so that we can help you more effectively.
+If any of your packages are marked as "MISSING"
+you will need to figure out what is wrong and possibly reinstall them.
+Once all packages are marked as "OK"
+we will ask you to submit this log file,
+so that we can confirm that your installation was successful.
+Details on where to submit will be provided later.
 
 > Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
