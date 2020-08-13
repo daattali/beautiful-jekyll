@@ -31,12 +31,17 @@ These instructions will walk you through installing the required Data Science so
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 - [VS Code extensions](#vs-code-extensions)
+- [Post-installation notes](#post-installation-notes)
 
 ## Installation notes
 
 In all the sections below,
 if you are presented with the choice to download either a 64-bit (also called x64)
 or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
+
+Once you have completed these installation instructions,
+make sure to follow the post-installation notes at the end
+to check that all software is setup correctly.
 
 ## Web browser
 
@@ -63,7 +68,7 @@ The open-source text editor Visual Studio Code (VS Code) is both a powerful text
     - "Add 'Open with Code' action to Windows file context menu"
     - "Add 'Open with Code' action to Windows directory context menu"
     - "Register Code as an editor for supported file types"
-    - "Add to PATH" (this should selected by default).
+    - "Add to PATH" (this should be selected by default).
 
 ![](/resources_pages/imgs/vs_code.png)
 
@@ -92,7 +97,7 @@ we are including them in the same section here
 since they are packaged together in the same installer on Windows.
 Briefly, we will be using the Bash shell to interact with our computers via a command line interface,
 and Git to keep a version history of our files and upload to/download from to GitHub.
-We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it.
 
 Go to <https://git-scm.com/download/win> and download the windows version of git. After the download has finished, run the installer and accept the default configuration for all pages except for the following:
 
@@ -187,7 +192,7 @@ We will be using Python for a large part of the program, and `conda` as our Pyth
 
 > Do *not* add miniconda to PATH. We will set this up later.
 
-After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this open you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
+After installation, open the Start Menu and search for the program called "Anaconda Prompt (miniconda3)". When this opens you will see a prompt similar to `(base) C:\Users\your_name`. Type the following to check that your Python installation is working:
 
 ```
 python --version
@@ -306,7 +311,7 @@ conda install -y jupytext=1.*
 jupyter lab build
 ```
 
-To test that your JupyerLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
 
 ![](/resources_pages/imgs/jupyter_lab.PNG)
 
@@ -318,7 +323,7 @@ R is another programming language that we will be using a lot in the MDS program
 
 Go to <https://cran.r-project.org/bin/windows/base/> and download the latest version of R for Windows (4.0.2 at the time of writing). Open the file and follow the installer instructions accepting the default configuration.
 
-After the installation is complete, we will add the R executables to the PATH variable in terminal so that your can use it without typing the full path to R each time. Open a terminal and type:
+After the installation is complete, we will add the R executables to the PATH variable in terminal so that you can use it without typing the full path to R each time. Open a terminal and type:
 
 ```
 code ~/.bash_profile
@@ -361,7 +366,7 @@ To see if you were successful, try opening RStudio by clicking on its icon. It s
 
 ![](/resources_pages/imgs/RStudio.png)
 
-Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set and environmental variable in Windows. First, open the start menu, type "env" and select the match that reads "Edit the system environment variables". Click the button at the bottom that reads "Environmental Variables...":
+Next, we will make sure that Rstudio uses the same directories as R from terminal for its configuration. To do this, we will need to set an environmental variable in Windows. First, open the start menu, type "env" and select the match that reads "Edit the system environment variables". Click the button at the bottom that reads "Environmental Variables...":
 
 ![](/resources_pages/imgs/sys-props-env-vars.png)
 
@@ -424,13 +429,13 @@ When asked to select a mirror, pick one at a location close to where you live fo
 
 > Note that you cannot use RStudio for this step because it will not be able to find the jupyter installation. R from terminal will since the correct PATH for jupyter is set when the terminal is launched.
 
-To see if you were successful, try running Jupyter Lab and check if you have working R kernel. To launch the Jupyter Lab type the following in the terminal:
+To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch the JupyterLab type the following in the terminal:
 
 ```
 jupyter lab
 ```
 
-A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an Jupyter Lab with an R kernel.
+A browser should have launched and you should see a page that looks like the screenshot below. Now click on "R" notebook (circled in red on the screenshot below) to launch an JupyterLab with an R kernel.
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel.png)
 
@@ -652,7 +657,7 @@ HISTFILESIZE=50000
 # (e.g. opening the Git Bash terminal and typing or pasting commands).
 # If you run a bash script or makefile,
 # the original command is used instead of your alias.
-# Run Python and Docker in compatibilty mode when started from an interactive shell
+# Run Python and Docker in compatibility mode when started from an interactive shell
 alias python="winpty python"
 alias docker="winpty docker"
 ```

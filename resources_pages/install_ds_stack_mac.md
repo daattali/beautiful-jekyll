@@ -33,12 +33,17 @@ These instructions will walk you through installing the required Data Science so
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 - [VS Code extensions](#vs-code-extensions)
+- [Post-installation notes](#post-installation-notes)
 
 ## Installation notes
 
 In all the sections below,
 if you are presented with the choice to download either a 64-bit (also called x64)
 or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
+
+Once you have completed these installation instructions,
+make sure to follow the post-installation notes at the end
+to check that all software is setup correctly.
 
 ## Web browser
 
@@ -107,7 +112,7 @@ This step is required for
 
 ## Git
 
-We will be using the command line version of Git as well as Git through RStudio and Jupyter lab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.
+We will be using the command line version of Git as well as Git through RStudio and JupyterLab. Some of the Git commands we will use are only available since Git 2.23, so if you're Git is older than this version, we ask you to update it using the Xcode command line tools (not all of Xcode), which includes Git.
 
 Open Terminal and type the following command to install Xcode command line tools:
 
