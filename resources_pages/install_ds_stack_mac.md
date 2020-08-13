@@ -33,6 +33,7 @@ These instructions will walk you through installing the required Data Science so
 - [PostgreSQL](#postgresql)
 - [Docker](#docker)
 - [VS Code extensions](#vs-code-extensions)
+- [Improving the bash configuration](#improving-the-bash-configuration)
 - [Post-installation notes](#post-installation-notes)
 
 ## Installation notes
@@ -456,20 +457,6 @@ To install an extension, you simply search for it in the search bar, click the e
 
 [This video tutorial](https://www.youtube.com/watch?v=06I63_p-2A4) is an excellent introduction to using VS Code in Python.
 
-## Post-installation notes
-
-You have completed the installation instructions, well done 🙌!
-We have created a script to help you check that your installation was successful,
-and to provide instructions for how you can troubleshoot any potential issues.
-To run this script,
-please execute the following command from your terminal.
-
-```
-bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
-```
-
-> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
-
 ## Improving the bash configuration
 
 To improve your experience using bash,
@@ -517,6 +504,20 @@ PROMPT_COMMAND='history -a'
 HISTSIZE=50000
 HISTFILESIZE=50000
 ```
+
+## Post-installation notes
+
+You have completed the installation instructions, well done 🙌!
+We have created a script to help you check that your installation was successful,
+and to provide instructions for how you can troubleshoot any potential issues.
+To run this script,
+please execute the following command from your terminal.
+
+```
+bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/master/resources_pages/check-setup-mds.sh)
+```
+
+> Note that in general you should be careful running scripts unless they come from a trusted source as in this case (just like how you should be careful when downloading and installing programs on your computer).
 
 ## Attributions
 
