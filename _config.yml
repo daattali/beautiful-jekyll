@@ -27,7 +27,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/images/em.png"
+avatar: "/images/m.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour here.
 round-avatar: true
@@ -35,6 +35,15 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 #title-img: /path/to/image
+
+# --- Navigation bar options --- #
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar:                 "/images/em.png"
+
+
+
 
 
 # --- Footer options --- #
@@ -46,7 +55,7 @@ social-network-links:
     
   youtube: channel/UCf20K2AUAZH8x6Q1Z2KnYXg?view_as=subscriber
   twitter: daattali
-  rss: false
+  rss: true 
   email : maiaboo64@gmail.com
   github: ymobian 
   
