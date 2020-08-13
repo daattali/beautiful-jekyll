@@ -19,7 +19,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [Google Chrome browser](#google-chrome-browser)
+- [Web browser](#web-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
 - [Visual Studio Code](#visual-studio-code)
@@ -38,15 +38,18 @@ In all the sections below,
 if you are presented with the choice to download either a 64-bit (also called x64)
 or a 32-bit (also called x86) version of the application **always** choose the 64-bit version.
 
-## Google Chrome browser
+## Web browser
 
-In MDS we will be using many tools that work most reliably on the Google Chrome browser (including our online quiz software). To install it, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome", choose the deb-file, download it to your computer and click on the downloaded file to install it.
+In MDS we will be using many tools that work most reliably on Google Chrome and Firefox (including our online quiz software), so we recommend that you use one of these browsers.
+
+- Firefox comes preinstalled with Ubuntu, so there is not need to download anything.
+- To install Chrome, go to [https://www.google.com/chrome/](https://www.google.com/chrome/), click on "Download Chrome" choose the deb-file, download it to your computer and click on the downloaded file to install it.
 
 > Note that if you select "open with" and try to open the file directly with the Ubuntu Software app instead of downloading it first, the software app might complain that the file is not supported.
 
 ## LastPass password manager
 
-Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome Extension available here: [https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd](https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd)
+Some MDS courses (e.g. the capstone project) use the LastPass password manager to share credentials. Although we will not cover privacy and security topics until the second semester of the program, we recommend that you use a password manager such as LastPass to help you create strong passwords and store them securely, and to facilitate online authentication. You can sign up for a free LastPass account here: [https://lastpass.com/create-account.php](https://lastpass.com/create-account.php). We also recommend installing the LastPass Chrome or Firefox browser extension available here: [https://lastpass.com/misc_download2.php](https://lastpass.com/misc_download2.php).
 
 ## Slack
 
