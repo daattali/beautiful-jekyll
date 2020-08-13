@@ -23,7 +23,7 @@ Among the randomly sampled **1237 total respondents**, 106 still worked from the
 
 Our study was based on the remaining **1131 respondents**. Before analyzing their WFH performance and productivity, we can take a look at their basic information. These information - their age, gender, education level and more - establish a few preexisting notions and trends in the IT sector of the country. For instance, it is seen that **88.69% of the respondents are male**, which is congruent with the male dominated industry. Other such patterns are demonstrated below.
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Demographic](../images/demographic.png)
 
 ## The Effects of WFH
 
@@ -33,7 +33,7 @@ These aspects were categorized into **8 different sections**: Team Dynamics, Com
 
 For this demonstration, only the aspect of Team Dynamics is included.
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Effects](../images/effects.png)
 
 ## Employee Productivity in WFH
 
@@ -41,4 +41,4 @@ The most important aspect of this survey is understanding employee productivity 
 
 For this demonstration, productivity based on the **demographic aspects** are shown. Works in the future will include detailed analysis of productivity, its correlation with the 24 aspects and their correlation to each other.
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Productivity](../images/prod.png)
