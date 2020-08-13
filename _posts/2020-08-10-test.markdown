@@ -89,6 +89,9 @@ def get_lines(t, r):
     return lines
 ```
 
+https://www.youtube.com/watch?v=KOxbO0EI4MA 
+
+
 <p align="center">
   <img src="https://github.com/waldyr/Sublime-Installer/blob/master/sublime_text.png?raw=true" alt="Sublime's custom image"/>
 </p>
