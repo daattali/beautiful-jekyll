@@ -10,7 +10,7 @@ These instructions will walk you through installing the required Data Science so
 - has at least 50 GB disk space available
 - has at least 8 GB of RAM
 - uses a 64-bit CPU
-- is 4 years old or newer at the start of the program
+- is at most 6 years old at the start of the program (4 years old or newer is recommended)
 - uses English as the default language
 - student user has full administrative access to the computer
 

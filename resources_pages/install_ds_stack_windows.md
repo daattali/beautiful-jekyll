@@ -11,7 +11,7 @@ These instructions will walk you through installing the required Data Science so
 - has at least 50 GB disk space available
 - has at least 8 GB of RAM
 - uses a 64-bit CPU
-- is 4 years old or newer at the start of the program
+- is at most 6 years old at the start of the program (4 years old or newer is recommended)
 - uses English as the default language
 
  **Students' whose laptops do not meet the requirements specified above will not be able to receive technical assistance from the MDS team in troubleshooting installation issues.**
