@@ -27,6 +27,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 ### R
 - [R for Data Science](https://r4ds.had.co.nz/)
 - [R Programming](https://www.coursera.org/learn/r-programming), from Johns Hopkins U. (Courera)
+- [Codecademy Learn R](https://www.codecademy.com/learn/learn-r)
 
 ### Statistics and Probability
 - [Fat Chance: Probability from the Ground Up](https://www.edx.org/course/fat-chance-probability-ground-up-1), from Harvard U. (edX)
