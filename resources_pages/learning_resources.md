@@ -22,6 +22,7 @@ If you have feedback about them, please [let us know](http://masterdatascience.s
 - [Introduction to Data Science in Python](https://www.coursera.org/learn/python-data-analysis), from U. Michigan (Coursera)
 - [Principles of Computing (Part 1)](https://www.coursera.org/learn/principles-of-computing-1), from Rice U. (Coursera)
 - [Foundations of Python Programming](https://runestone.academy/runestone/books/published/fopp/index.html) ([Runestone](https://runestone.academy/))
+- [Codecademy Learn Python 3](https://www.codecademy.com/learn/learn-python-3) (paid content but they have a free trial)
 
 ### R
 - [R for Data Science](https://r4ds.had.co.nz/)
