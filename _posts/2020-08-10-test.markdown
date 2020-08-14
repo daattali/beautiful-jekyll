@@ -93,4 +93,4 @@ def get_lines(t, r):
 https://www.youtube.com/watch?v=KOxbO0EI4MA 
 
 
-Soit $a\in \N$ et $n \in \N$.~Montrer que $(a+1)^n-a(n+1)-1$ est divisible par $a^2$.
+Soit $a\in \dN$ et $n \in \dN$.Montrer que $(a+1)^n-a(n+1)-1$ est divisible par $a^2$.
