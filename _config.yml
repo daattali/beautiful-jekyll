@@ -175,6 +175,8 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
+category_dir: category/
+tag_dir: tag/
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
