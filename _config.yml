@@ -16,8 +16,8 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
-
+  category_dir: category/
+  tag_dir: tag/
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
@@ -72,7 +72,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "jungwook.com"
+#url-pretty: "jungwook.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -175,8 +175,7 @@ date_format: "%B %-d, %Y"
 # Facebook App ID
 #fb_app_id: ""
 
-category_dir: category/
-tag_dir: tag/
+
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
