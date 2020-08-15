@@ -1,18 +1,18 @@
 # --- Basic options --- #
 
 # Name of website
-title: My website
+title: Jungwook's IT blog
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: this is my IT informaion blog
 
 # Your name to show in the footer
-author: Some Person
+author: JW
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: junior developer
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -38,12 +38,12 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "someone@example.com"
+  email: "jw0905@naver.com"
   facebook: deanattali
-  github: daattali
+  github: https://github.com/kjwjw95
   twitter: daattali
   rss: true
-#  reddit: yourname
+#  reddit: jungwook
 #  linkedin: daattali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -51,7 +51,6 @@ social-network-links:
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-#  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -72,7 +71,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+# url-pretty: "MyWebsite.com"
 
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
@@ -158,7 +157,8 @@ footer-link-col: "#404040"
 #staticman:
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
+#  endpoint   : # (optional) 
+of your own deployment, with a trailing slash eg. https://kjwjw95.github.io/v3/entry/github/ (will fallback to a public GitLab instance)
 #  reCaptcha:
 #    siteKey  : # Use your own site key, you need to apply for one on Google
 #    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
@@ -223,4 +223,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
