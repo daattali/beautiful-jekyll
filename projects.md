@@ -10,7 +10,7 @@ The projects that I need to share.
 
 ***
 ### 1. Face Mask Detection
-In this project I'm building a Face mask detector that detects whether a person is wear a mask or not. Also published a peper on this task. It's really important for this current Covid-19 situation. I've share a video of my project which is given below.
+In this project I'm building a Face mask detector that detects whether a person is wear a mask or not. Also published a paper on this task. It's really important for this current Covid-19 situation. I've share a video of my project which is given below.
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Finally my things goes right ! <a href="https://twitter.com/hashtag/facemasks?src=hash&amp;ref_src=twsrc%5Etfw">#facemasks</a> <a href="https://twitter.com/hashtag/detection?src=hash&amp;ref_src=twsrc%5Etfw">#detection</a> <a href="https://twitter.com/hashtag/yolov3?src=hash&amp;ref_src=twsrc%5Etfw">#yolov3</a> <a href="https://t.co/rWPOM80uvs">pic.twitter.com/rWPOM80uvs</a></p>&mdash; Afridi (@whoafridi) <a href="https://twitter.com/whoafridi/status/1268826790539128833?ref_src=twsrc%5Etfw">June 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -18,9 +18,8 @@ In this project I'm building a Face mask detector that detects whether a person 
 
 ### 2. Elephant Detection
 In this project I'm building a detector that detects an elephant inside an iamge/video. I've share a you-tube video of my project which is given below.
-<p align='center'> 
-
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwhoafridi%2Fposts%2F1521716081333068&width=500" width="500" height="509" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<p align='center'>                                                                                                             
+<img src='https://user-images.githubusercontent.com/35966401/90336845-4de9a100-e000-11ea-890e-bf55d897f3ea.jpg' alt='elephant'>
 </p>
 
 ***
