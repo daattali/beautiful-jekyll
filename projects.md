@@ -19,7 +19,8 @@ In this project I'm building a Face mask detector that detects whether a person 
 ### 2. Elephant Detection
 In this project I'm building a detector that detects an elephant inside an iamge/video. I've share a you-tube video of my project which is given below.
 <p align='center'> 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/svvll0v9b8I" frameborder="0"></iframe>
+
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwhoafridi%2Fposts%2F1521716081333068&width=500" width="500" height="509" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </p>
 
 ***
@@ -34,8 +35,15 @@ In this project I'm building a weed detector that detects whether a weed is pres
 
 ### 4. Sentiment analysis Of online Food Review
 This is a part of research. Soon avalilable.
-### 5. Bert for Amazon Movie Review
-Soon open source.. 
+
+### 5. Spam-Ham detection using BERT
+In this project I trained a pretrained BERT model to classify a mail is sapm or not. [link](https://github.com/whoafridi/ML-practice/blob/master/Naive%20Bayes/BERT_for_spam_ham.ipynb)
+
+***
+
+### 6. BERT for Bengali News Headline Classification
+A brand new project done with specially in Bengali language using pretrained BERT model for new headline classification. As it is part of research work soon
+I'll open source .
 
 ***
 
@@ -51,4 +59,5 @@ In this project I'm apply *YOLOv5* in real-time video. See the tweet i'm sharing
 <blockquote class="twitter-tweet tw-align-center"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/YOLOv5?src=hash&amp;ref_src=twsrc%5Etfw">#YOLOv5</a> <a href="https://t.co/fq5iYHBYwA">pic.twitter.com/fq5iYHBYwA</a></p>&mdash; Afridi (@whoafridi) <a href="https://twitter.com/whoafridi/status/1286925733105786880?ref_src=twsrc%5Etfw">July 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ***
-
+### *Anyone wanted to work with projects/research of NLP, Computer vision inspired by my above scenario can contact with me. I'm done some freelance work too.*
+*email - rafiuzzaman15-9655(at)diu(dot)edu(dot)bd* *[pub](https://whoafridi.github.io/publications/)* *[fb](https://www.facebook.com/whoafridi)* *[Linkedin](https://www.linkedin.com/in/whoafridi/)*
