@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About
+subtitle: ''
+
 ---
+![A picture of me at the table](/uploads/headshot.jpg "headshot")
 
-My name is Inigo Montoya. I have the following qualities:
+I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom seven years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a minimalist lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods + skills. More intention. Seeking less stuff, less to do. And. Always learning and growing.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+##### Other ways to connect with me:
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+* Instagram: [https://www.instagram.com/eastcoastkelly](https://www.instagram.com/eastcoastkelly "https://www.instagram.com/eastcoastkelly")
+* Facebook: [https://www.facebook.com/kelly.briggs](https://www.facebook.com/kelly.briggs "https://www.facebook.com/kelly.briggs")
+* Email: [eastcoastkellyb@gmail.com](mailto:eastcoastkellyb@gmail.com)  
+   
