@@ -47,17 +47,20 @@ I'll open source .
 
 ***
 
-### 6. YOLOv4 : A robust object detection
+### 7. YOLOv4 : A robust object detection
 In this project I'm apply *YOLOv4* in real-time video. See the tweet.
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">That video i&#39;m performing <a href="https://twitter.com/hashtag/YOLOv4?src=hash&amp;ref_src=twsrc%5Etfw">#YOLOv4</a> . <a href="https://t.co/XhgUvm5KuK">pic.twitter.com/XhgUvm5KuK</a></p>&mdash; Afridi (@whoafridi) <a href="https://twitter.com/whoafridi/status/1287818067624357888?ref_src=twsrc%5Etfw">July 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ***
 
-### 7. YOLOv5 : A robust object detection
+### 8. YOLOv5 : A robust object detection
 In this project I'm apply *YOLOv5* in real-time video. See the tweet i'm sharing pic. video found [here](https://www.youtube.com/watch?v=gJYehvSlLtY)
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/YOLOv5?src=hash&amp;ref_src=twsrc%5Etfw">#YOLOv5</a> <a href="https://t.co/fq5iYHBYwA">pic.twitter.com/fq5iYHBYwA</a></p>&mdash; Afridi (@whoafridi) <a href="https://twitter.com/whoafridi/status/1286925733105786880?ref_src=twsrc%5Etfw">July 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ***
+
 ### *Anyone wanted to work with projects/research of NLP, Computer vision inspired by my above scenario can contact with me. I'm done some freelance work too.*
 *email - rafiuzzaman15-9655(at)diu(dot)edu(dot)bd* *[pub](https://whoafridi.github.io/publications/)* *[fb](https://www.facebook.com/whoafridi)* *[Linkedin](https://www.linkedin.com/in/whoafridi/)*
+
+***
