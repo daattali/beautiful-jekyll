@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: header
 - type: jekyll-pages
   label: Pages
   create: all
