@@ -1,0 +1,25 @@
+---
+label: Blog2
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: subtitle
+  label: subtitle
+- type: file
+  name: cover-img
+  label: cover-img
+- type: file
+  name: thumbnail-img
+  label: thumbnail-img
+- type: file
+  name: share-img
+  label: share-img
+- type: list
+  name: tags
+  label: tags
