@@ -11,16 +11,23 @@ author: DSSE
 
 navbar-links:
   About Me: "aboutme"
+<<<<<<< HEAD
   #Resources:
   #  - Beautiful Jekyll: "https://beautifuljekyll.com"
   #  - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
+=======
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: 
+>>>>>>> 563237b1893e54eed407eb6bba10b1aa1d8ad301
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/dsse logo.png"
+avatar: "/assets/img/avatar-icon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: false
