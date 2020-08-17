@@ -8,7 +8,14 @@ gh-badge:
 - fork
 - follow
 tags:
-- cleaning & tidying
+- cleaning routine
+- tidying routine
+- simple cleaning method
+- simple tidying method
+- cleaning the house with kids
+- tidying the house with kids
+- loop planning
+- bare minimum day
 comments: true
 
 ---
