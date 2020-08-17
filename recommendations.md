@@ -5,12 +5,32 @@ subtitle: ''
 published: false
 
 ---
-![A picture of me at the table](/uploads/headshot.jpg "headshot")
+# Recommendations
 
-I’m a mother of four children - three boys, one toddler girl - and our family lives on the beautiful east coast of Canada. I’m a past elementary teacher, turned stay at home, work at home mom seven years ago after I had my second child. I’ve found that the busier I’ve become and as my children age, that it’s become even more important to figure out what is most important to me and us as a family. Living a minimalist lifestyle has helped me to reduce stress, increased our finances, made more meaningful memories, stronger connections with my people. It has been through my children that I have been inspired to learn how to effectively manage my time and to simplify in all areas of my home and life. I enjoy helping busy moms simplify home life by learning flexible planning methods + skills. More intention. Seeking less stuff, less to do. And. Always learning and growing.
+## Products
 
-##### Other ways to connect with me:
+* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I use and/or recommend from Amazon! Enjoy.
 
-* Instagram: [https://www.instagram.com/eastcoastkelly](https://www.instagram.com/eastcoastkelly "https://www.instagram.com/eastcoastkelly")
-* Facebook: [https://www.facebook.com/kelly.briggs](https://www.facebook.com/kelly.briggs "https://www.facebook.com/kelly.briggs")
-* Email: [eastcoastkellyb@gmail.com](mailto:eastcoastkellyb@gmail.com)
+![A picture of me in the mirror. Amazon shop image.](https://www.eastcoastkelly.com/assets/img/20200606_151056_0000.png "amazonshopimage")
+
+* Get 10% off + free shipping for my fave scrunchies that I wear almost daily with the code EASTCOASTKELLY10 at [Scrunchie Squad](https://www.scrunchiesquad.com/).
+
+## Courses
+
+* Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
+
+## Books
+
+Book recommendations on minimalism/simple living that I love:
+
+* [Bullet Journal Method](https://amzn.to/3fB51uF) (the planning method I base my own planning method on)
+* [The Miracle Morning](https://amzn.to/398G8nw) (where I’ve been inspired to create my simple morning routine)
+* [Hands Free Mama ](https://amzn.to/2BduGKX)(learning to say no to screens/distractions and being more present with your children)
+* [Everything that Remains](https://amzn.to/2Cu5u3c) (minimalism)
+* [Teaching From Rest](https://amzn.to/2WINMjG) (homeschooling encouragement)
+
+## Other
+
+* Looking for simple online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
+
+_All links above are my affiliate links, which means I’d make a small % if you decided to purchase at no change in price to you. Thank you!_
