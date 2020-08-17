@@ -10,6 +10,6 @@ I’m a mother of four children - three boys, one toddler girl - and our family 
 
 ##### Other ways to connect with me:
 
-* Email: [eastcoastkellyb@gmail.com](mailto:eastcoastkellyb@gmail.com)
+* [Email](eastcoastkellyb@gmail.com)
 * [Instagram](https://www.instagram.com/eastcoastkelly)
 * [Facebook](https://www.facebook.com/kelly.briggs)
