@@ -7,8 +7,8 @@ Distributed Systems and Software Engineering (DSSE) Research Group is a research
 
 <p style="text-align: center; font-size: 30px; " ><b>Our story so far</b></p>
 
-<!--![DSSE at a glance](../assets/img/dsse-poster.jpg)-->
-<img src="../assets/img/dsse-poster.jpg" alt="">
+![DSSE at a glance](../assets/img/dsse-poster.jpg)
+<!--<img src="../assets/img/dsse-poster.jpg" alt="">-->
 
 
 <!--### History-->
