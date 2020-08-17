@@ -19,7 +19,6 @@ navbar-links:
   category:
     - 알고리즘: categories/algorithm
     - 테스트:
-      - 테스트: categories/algorithm
   tag_dir: tag/
 # --- Logo --- #
 
