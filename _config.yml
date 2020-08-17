@@ -12,8 +12,8 @@ author:
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Recommendations: "recommendations"
   Popular: "popular"
+  Recommendations: "recommendations"
   Connect:
     - About me: "https://kellymbriggs.github.io/aboutme/"
     - Contact: "https://kellymbriggs.github.io/contact/"
