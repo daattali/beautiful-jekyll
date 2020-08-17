@@ -2,7 +2,7 @@
 
 layout: category
 
-title: 알고리즘
+title: algorithm
 
 permalink: categories/algorithm
 ---
