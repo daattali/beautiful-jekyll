@@ -1,4 +1,23 @@
 ---
 label: Category
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: true
+  label: layout
+  hidden: true
+  default: category
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Add a title here
+- name: category
+  type: text
+  config:
+    required: false
+  label: Category
+  description: Add category title here
