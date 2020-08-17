@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transfer Learning and Fine-Tuning with TensorFlow
-subtitle:  Application To Pneumonia Classification from X_rays Images
+subtitle:  Application To Pneumonia Classification from X_ray Images
 gh-repo: NanaAkwasiAbayieBoateng/NanaAkwasiAbayieBoateng.github.io
 gh-badge: [star, fork, follow]
 tags: [Image Classification, Deep Learning, Computer Vision,Health AI]
