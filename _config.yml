@@ -15,6 +15,7 @@ navbar-links:
   About Me: "aboutme"
   Recommendations: "recommendations"
   Contact: "contact"
+  Popular: "popular"
   Categories:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
