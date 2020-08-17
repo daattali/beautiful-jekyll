@@ -6,7 +6,7 @@ subtitle: ''
 ---
 ## Products
 
-* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I use and/or recommend from Amazon! Enjoy.
+* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon! Enjoy.
 
 ![A picture of me in the mirror. Amazon shop image.](https://www.eastcoastkelly.com/assets/img/20200606_151056_0000.png "amazonshopimage")
 
@@ -24,7 +24,7 @@ Book recommendations on minimalism/simple living that I love:
 * [The Miracle Morning](https://amzn.to/398G8nw) (where I’ve been inspired to create my simple morning routine)
 * [Hands Free Mama ](https://amzn.to/2BduGKX)(learning to say no to screens/distractions and being more present with your children)
 * [Everything that Remains](https://amzn.to/2Cu5u3c) (minimalism)
-* [Teaching From Rest](https://amzn.to/2WINMjG) (homeschooling encouragement)
+* [Teaching From Rest](https://amzn.to/2WINMjG) (homeschooling encouragement/what matters most)
 
 ## Other
 
