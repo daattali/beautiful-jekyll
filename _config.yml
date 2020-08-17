@@ -16,7 +16,7 @@ navbar-links:
   Recommendations: "recommendations"
   Contact: "contact"
   Popular: "popular"
-  Categories:
+  Connect:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
 
