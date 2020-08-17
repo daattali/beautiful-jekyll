@@ -2,22 +2,22 @@
 label: Category
 hide_body: false
 fields:
-- name: layout
-  type: text
-  config:
-    required: true
+- type: text
+  name: layout
   label: layout
   hidden: true
-  default: category
-- name: title
-  type: text
   config:
     required: true
+  default: category
+- type: text
+  name: title
   label: Title
   description: Add a title here
-- name: category
-  type: text
+  config:
+    required: true
+- type: text
+  label: Category
+  name: category
+  description: Add category title here
   config:
     required: false
-  label: Category
-  description: Add category title here
