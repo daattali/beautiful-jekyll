@@ -17,11 +17,6 @@ fields:
 - type: file
   name: thumbnail-img
   label: thumbnail-img
-- name: categories
-  type: tag_list
-  default: []
-  label: Categories
-  description: This is where you can assign categories to your content.
 - type: file
   name: share-img
   label: share-img
