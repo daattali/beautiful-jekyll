@@ -16,9 +16,11 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  category:
-    - 알고리즘: categories/algorithm
-    - 테스트:
+  알고리즘:
+    - 백준: categories/algorithm
+    - swexpert:
+  Java:
+    - 자바:
   tag_dir: tag/
 # --- Logo --- #
 
