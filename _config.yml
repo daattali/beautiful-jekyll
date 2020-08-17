@@ -17,8 +17,8 @@ navbar-links:
   Contact: "contact"
   Popular: "popular"
   Connect:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - About me: "https://kellymbriggs.github.io/aboutme/"
+    - Contact: "https://kellymbriggs.github.io/contact/"
 
 # --- Logo --- #
 
