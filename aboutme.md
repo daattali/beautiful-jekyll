@@ -5,10 +5,9 @@ title: About DSSE
 
 Distributed Systems and Software Engineering (DSSE) Research Group is a research collective of Institute of Information Technology, University of Dhaka. Founded in 2012, DSSE houses a group of learners dedicated to the research of software engineering. Around 60 members strong, the group focuses on student research efforts and collaboration with the software industry of Bangladesh to build a strong foundation for the IT sector of Bangladesh.
 
+<p style="text-align: center; font-size: 30px; " ><b>Our story so far</b></p>
 
-
-### DSSE At A Glance
-![DSSE at a glance](C:/Users/noshi/Desktop/dsse-web/dsse.github.io/assets/img/dsse-poster.jpg)
+![DSSE at a glance](../assets/img/dsse-poster.jpg)
 <!--<img src="assets/img/dsse-poster.jpg" alt="">-->
 
 
