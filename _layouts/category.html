@@ -1,22 +1,18 @@
 ---
 layout: page
 ---
-{% for post in site.categories[page.title] %}
-<ul class="category">
-  {% if post.title != null %}
+<ul class="posts-list">
+  
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
     <li>
-      {% if post.link %}
-        <a herf="{{ post.link}}">
-    <% else %>
+      <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
-    <% endif %}
           {{ post.title }}
         </a>
-          {% endfor %}
         <small>{{ post.date | date_to_string }}</small>
       </h3>
     </li>
-  {% endif%}
+  {% endfor %}
   
 </ul>
-{% endfor %}
