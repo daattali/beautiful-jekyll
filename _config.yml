@@ -17,7 +17,7 @@ navbar-links:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
   category:
-	- 알고리즘 : categories/algorithm 
+    - Learn markdown: categories/algorithm
   tag_dir: tag/
 # --- Logo --- #
 
