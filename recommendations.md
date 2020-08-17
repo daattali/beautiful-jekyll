@@ -4,8 +4,6 @@ title: Recommendations
 subtitle: ''
 
 ---
-# Recommendations
-
 ## Products
 
 * Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I use and/or recommend from Amazon! Enjoy.
