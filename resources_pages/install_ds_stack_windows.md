@@ -537,7 +537,7 @@ Compiled with zlib 1.2.11; using zlib 1.2.11
 Compiled with xpdf version 4.02
 ```
 
-The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please sign out of Windows and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
+The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add several more packages. Before we do this, please [sign out of Windows](https://wiki.washjeff.edu/download/attachments/84967772/windows_10_logoff.png?version=1&modificationDate=1474137276320&api=v2) and back in again in order for the Git Bash terminal to be able to find the location of TinyTex.
 
 When you sign back in,
 install the additional LaTeX packages needed for Jupyter by pasting the following into the new terminal instance and press enter:
