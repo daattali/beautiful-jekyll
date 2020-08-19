@@ -519,7 +519,7 @@ bash <(curl -Ss https://raw.githubusercontent.com/UBC-MDS/UBC-MDS.github.io/mast
 
 The output from running the script will look something like this:
 
-```
+````
 # MDS setup check 0.1.0
 
 If a program or package is marked as MISSING,
@@ -579,7 +579,7 @@ OK        rmarkdown PDF-generation was successful
 
 This output and additional configuration details
 have been saved to the file check-setup-mds.log in this directory.
-```
+````
 
 As you can see at the end of the output,
 a log file is saved in your current directory.
