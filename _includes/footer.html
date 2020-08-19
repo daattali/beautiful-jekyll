@@ -8,19 +8,8 @@
           {% include {{ page.footer-extra }} %}
         </div>
       {% endif %}
-      <p class="copyright text-muted">
-      {% if site.author %}
-        {{ site.author }}
-        &nbsp;&bull;&nbsp;
-      {% endif %}
-      {{ site.time | date: '%Y' }}
-
-      {% if site.url-pretty %}
-        &nbsp;&bull;&nbsp;
-        <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
-      {% endif %}
-        
-        <!-- Begin Mailchimp Signup Form -->
+	      
+	              <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -40,6 +29,18 @@
 </div>
 
 <!--End mc_embed_signup-->
+	      
+      <p class="copyright text-muted">
+      {% if site.author %}
+        {{ site.author }}
+        &nbsp;&bull;&nbsp;
+      {% endif %}
+      {{ site.time | date: '%Y' }}
+
+      {% if site.url-pretty %}
+        &nbsp;&bull;&nbsp;
+        <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
+      {% endif %}
 
       {% if site.matomo %}
         {% if site.matomo.opt-out %}
