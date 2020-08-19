@@ -30,6 +30,7 @@
 - [Supported parameters](#supported-parameters)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
 - [FAQ and support](#faq-and-support)
+- [Sponsors 🏆](#sponsors)
 - [Credits and contributions](#credits)
 
 # Features
@@ -253,6 +254,17 @@ Beautiful Jekyll is actively used by thousands of people with wildly varying deg
 - ### How do I use math equations in my posts?
 
   MathJax can be easily integrated into your website with a one-line addition. You can see [this discussion](https://github.com/daattali/beautiful-jekyll/issues/195) for more information.
+  
+<h2 id="sponsors">
+
+Sponsors 🏆
+
+</h2>
+
+> There are no sponsors yet
+
+[Become the first sponsor for
+Beautiful Jekyll\!](https://github.com/sponsors/daattali)
 
 # Contributions
 
