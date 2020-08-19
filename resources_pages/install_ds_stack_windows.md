@@ -573,7 +573,7 @@ your LaTeX environment is set up correctly.
 
 ## Make
 
-Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer, click the "Extract" tab and the button in the header that says "Extract all" and accept the default extraction location.
+Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer, click the "Extract" tab and the button in the header that says "Extract all" and extract to `C:\Users\YOUR_USERNAME\` (substituting in your actual username instead of `YOUR_USERNAME`).
 
 Next we need to add the `bin` folder in this extraction location to our PATH so that we can use `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code by pasting this into a terminal:
 
@@ -592,7 +592,7 @@ with the following (prepending the `make` folder to the path above):
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/Documents/make-4.3-without-guile-w32-bin/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Users/${USERNAME}/make-4.3-without-guile-w32-bin/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
 Launch a new terminal and run
