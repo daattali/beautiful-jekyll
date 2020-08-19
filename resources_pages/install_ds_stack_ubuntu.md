@@ -309,7 +309,7 @@ install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devt
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using the `renv` package manager (which you will learn about in DSCI 521: Platforms for Data Science).
 
-### IR kernel
+### IRkernel
 
 The `IRkernel` package is needed to make R work in Jupyter notebooks. To enable this kernel in the notebooks, install it and run the setup via the following two commands:
 
@@ -331,6 +331,52 @@ A browser should have launched and you should see a page that looks like the scr
 Sometimes a kernel loads, but doesn't work as expected. To test whether your installation was done correctly now type `library(tidyverse)` in the code cell and click on the run button to run the cell. If your R kernel works you should see something like the image below:
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
+
+To improve the experience of using R in Jupyter Lab,
+we will add an extension that allows us to setup keyboard shortcuts
+for common R operators, such as `<-` and `%>%`.
+Run the following from terminal to install the extension.
+
+```
+jupyter labextension install @techrah/text-shortcuts
+jupyter lab build
+```
+
+Then open Jupyter Lab by running `Jupyter Lab` from the terminal.
+To add the R shortcuts,
+click `Settings` in the top menu and then on `Advanced Settings Editor`.
+Select the `Keyboard Shortcuts` tab.
+In the `User Preferences` panel,
+add the following shortcut configuration and click the "save" icon in the top right.
+
+```
+{
+    "shortcuts": [
+        {
+            "command": "text-shortcuts:insert-text",
+            "args": {
+                "text": "%>%",
+                "autoPad": true
+            },
+            "keys": [
+                "Accel Shift M"
+            ],
+            "selector": "body"
+        },
+        {
+            "command": "text-shortcuts:insert-text",
+            "args": {
+                "text": "<-",
+                "autoPad": true
+            },
+            "keys": [
+                "Alt -"
+            ],
+            "selector": "body"
+        }
+    ]
+}
+```
 
 ## LaTeX
 
