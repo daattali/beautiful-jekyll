@@ -19,7 +19,7 @@ Firstly, let's set the stage. What are values exactly?
 
 > In ethics, value denotes the degree of importance of some thing or action, with the aim of determining what actions are best to do or what way is best to live, or to describe the significance of different actions. - Wikipedia
 
-Want to figure out quickly what your true values are?_ _Take a moment and do this simple exercise:_
+Want to figure out quickly what your true values are? _Take a moment and do this simple exercise:_
 
 Take a look at what you do, your actions. What things do you do on the daily? Such as: Do you get outside? Exercise? Choose eating healthy? Family time? Watch Netflix? Journal? Pray? Read? Do your hair? Listen attentively? This list could go on, but take some time to think, and perhaps quickly jot down those that come to mind. During this step, you may also notice that what you thought you valued doesn't actually show in your day to day actions. Take note of that too.
 
