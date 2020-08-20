@@ -7,14 +7,14 @@ meta-description: CV for Richard B. Decal
 bigimg: /img/AIBS_presentation_crop.jpg
 ---
 
-I want to leverage **artificial intelligence to make the world a better place**. Broadly, I want to avert existential risks, empower people, and improve lives. In particular, on a large scale I'd like to:
+My mission is to leverage my talents and interests to do the _most_ good in the world. Naturally, I gravitated to machine learning, which can exponentially amplify my productivity using automation. Broadly, my interests are to avert existential risks (such as climate disaster), empower people, and improve lives. In particular, on a large scale I'd like to:
 
-- Sequester atmospheric carbon and reduce pollution
-- Educate with pedagogical chatbots
-- Improve government transparency
+- Sequester atmospheric carbon, reforest, and reduce pollution
+- De-silo knowledge using pedagogical chatbots
+- Improve government transparency and (small "d") democracy
 - Create data-driven journalism and detect fake news
-- Improve health forecasting
-- Improve privacy and decentralization of the Internet using smart contracts and DApps
+- Improve health outcomes
+- Improve privacy and decentralization of the Internet
 
 For detailed information about my education, conferences, talks, teaching, etc. please refer to my CV:
 <center>
@@ -30,10 +30,15 @@ For detailed information about my education, conferences, talks, teaching, etc. 
 
 # Projects
 
-### Improving Cardiac Patient Care
-_[Pacemate](www.pacemate.com) - Feb. 2019 → Now_
+### Tackling Climate Change Using Automated Afforestation
+_[Dendra Systems](www.dendra.io) - Feb. 2020 → Now_
 
-I am currently employed at a implantable heart device analytics company. I can't discuss my research, yet-- stay tuned!
+I am currently the Lead ML engineer at a start-up fighting climate change and deforestation using tree-planting drones. Stay tuned!
+
+### Improving Remote Monitoring of Cardiac Patients by Automatically Detecting Arrythmias
+_[Pacemate](www.pacemate.com) - Feb. 2019 → Dec. 2019_
+
+I worked as the lead data scientist at an implantable heart device analytics company. I implemented a pipeline to process incoming ECG transmissions from remote devices and classify arrythmias using a deep convolutional neural network. To train this network, I mined years of ground truth data labeled by board-certified electrophysiologists. 
 
 ### Reinforcement Learning for Tracing Neuron Morphologies
 _[Hanchuan Peng](https://www.alleninstitute.org/what-we-do/brain-science/research/products-tools/vaa3d/) lab. [Allen Institute for Brain Science](https://www.alleninstitute.org/what-we-do/brain-science/), Seattle, WA, USA - Summer 2018_
@@ -54,12 +59,23 @@ _[Kimberley Community Whale Research Project](https://kimberleycommunitywhaleres
 A community-initiated peer-review at the proposed site of the world’s second-largest liquefied gas processing port. Our peer-review’s estimates of humpback migration and breeding activity near James Price Point revealed gross discrepancies in the original oil conglomerate’s survey.
 
 ### Mitochondrial dysfunction in Parkinson's Disease
-_[Leo Pallanck](http://www.gs.washington.edu/faculty/pallanck.htm) lab. [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2015 → 2016_
+_[Leo Pallanck](http://www.gs.washington.edu/faculty/pallanck.htm) lab. [University of Washington](uw.edu), Dept. of Genome Sciences, Seattle, WA, USA - 2010_
 
-I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was published in PNAS.
+I helped establish a method to grow, stain, and image primary dopaminergic neural culture from Drosophila embryos in order to test whether Parkin and PINK1, proteins involved in Parkinson’s disease, are recruited to depolarized mitochondria in dopaminergic neurons. This research was [published in PNAS](https://www.pnas.org/content/109/26/10438.short). I presented a poster at SACNAS 2010.
+
+### Probing Function of Colon Cancer Proteins
+_[Brooke M. McCartney](https://www.cmu.edu/bio/people/faculty/mccartney.html) lab. [Carnegie Mellon University](cmu.edu), Dept. of Biological Sciences, Pittsburg, PA, USA - 2009_
+
+I determined that APC2, a protein with probable roles in colon cancer tumorogenesis, did not interact with β-catenin of the Wnt pathway’s destruction complex. I determined that APC2’s conserved N-terminal domain was not essential for its proper localization. This research was [published in Genetics](). I presented a poster at ABRCMS 2009 and Sigma Xi 2009.
 
 ### Quantifying endogenous sRNA concentrations in _C. elegans_
 _[Katherine Walstrom](https://www.ncf.edu/directory/listing/katherine-walstrom/) lab. [New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2010 → 2011_
 
 My thesis proposes a model for RNA Helicase A function in endogenous _C. elegans_ RNAi pathways.
 
+
+### Searching for P450 Active site mimics
+_[Paul Scudder](https://www.ncf.edu/directory/listing/paul-scudder/) lab. [New College of Florida](ncf.edu), Dept. of Natural Sciences, Sarasota, FL, USA - 2008 → 2009_
+
+I partially synthesized precursors to a novel high-valent iron-stabilizing macrocycle based on
+the active site of cytochrome P450.
