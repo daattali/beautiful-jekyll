@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Daily Tidying Routine that Will Save You Money and Time
-subtitle: The key is flexibility.
+subtitle: ''
 gh-repo: daattali/beautiful-jekyll
 gh-badge:
 - star
