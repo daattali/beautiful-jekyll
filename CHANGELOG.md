@@ -3,6 +3,7 @@
 - Add YAML option `head-extra` which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Add automatic navbar color detection (#702)
 - Change navbar and footer background colour to be slightly darker, for better contrast with white page background
+- Change the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
 
 ## v4.1.0 2020-08-08
 
