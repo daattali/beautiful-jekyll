@@ -326,6 +326,52 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
+To improve the experience of using R in Jupyter Lab,
+we will add an extension that allows us to setup keyboard shortcuts
+for common R operators, such as `<-` and `%>%`.
+Run the following from terminal to install the extension.
+
+```
+jupyter labextension install @techrah/text-shortcuts
+jupyter lab build
+```
+
+Then open Jupyter Lab by running `Jupyter Lab` from the terminal.
+To add the R shortcuts,
+click `Settings` in the top menu and then on `Advanced Settings Editor`.
+Select the `Keyboard Shortcuts` tab.
+In the `User Preferences` panel,
+add the following shortcut configuration and click the "save" icon in the top right.
+
+```
+{
+    "shortcuts": [
+        {
+            "command": "text-shortcuts:insert-text",
+            "args": {
+                "text": "%>%",
+                "autoPad": true
+            },
+            "keys": [
+                "Accel Shift M"
+            ],
+            "selector": "body"
+        },
+        {
+            "command": "text-shortcuts:insert-text",
+            "args": {
+                "text": "<-",
+                "autoPad": true
+            },
+            "keys": [
+                "Alt -"
+            ],
+            "selector": "body"
+        }
+    ]
+}
+```
+
 ## LaTeX
 
 We will install the lightest possible version of LaTeX and it's necessary packages as possible so that we can render Jupyter notebooks and R Markdown documents to html and PDF. If you have previously installed LaTeX, please uninstall it before proceeding with these instructions.
