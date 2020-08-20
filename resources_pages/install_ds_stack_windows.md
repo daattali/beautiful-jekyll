@@ -306,7 +306,7 @@ To install the latest version directly from GitHub,
 we need to use the `pip` package manager instead of `conda`:
 
 ```
-pip install git+https://github.com/jupyter/nbconvert.git@86ea045
+pip install https://github.com/jupyter/nbconvert/archive/6.0.0a6.zip
 ```
 
 > Note: we will use many more packages than those listed above across the MDS program, however we will manage these using virtual environments (which you will learn about in DSCI 521: Platforms for Data Science).
