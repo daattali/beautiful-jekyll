@@ -734,6 +734,8 @@ HISTFILESIZE=50000
 # Run Python and Docker in compatibility mode when started from an interactive shell
 alias python="winpty python"
 alias docker="winpty docker"
+# `man` function to display help messages with a pager as on Unix
+man() { $1 --help | less }
 ```
 
 ## Post-installation notes
