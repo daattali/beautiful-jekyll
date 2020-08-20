@@ -3,7 +3,7 @@ layout: post
 title: How to Discover Your Values
 subtitle: It's all about the priorities.
 cover-img: "/assets/img/path.jpg"
-thumbnail-img: "/assets/img/thumb.png"
+thumbnail-img: "/uploads/20200528_114030_0000-1.png"
 share-img: "/assets/img/path.jpg"
 tags:
 - values
@@ -13,6 +13,8 @@ tags:
 - values exercise
 
 ---
+![Picture of hand holding a heart.](/uploads/20200528_114030_0000-1.png "heart")
+
 Firstly, let's set the stage. What are values exactly?
 
 > In ethics, value denotes the degree of importance of some thing or action, with the aim of determining what actions are best to do or what way is best to live, or to describe the significance of different actions. - Wikipedia
