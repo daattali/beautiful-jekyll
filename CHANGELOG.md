@@ -5,7 +5,7 @@
 - Change navbar and footer background colour to be slightly darker, for better contrast with white page background
 - Change the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
 
-## v4.1.0 2020-08-08
+## v4.1.0 (2020-08-08)
 
 - Add Open Graph `site_name` meta field to pages automatically
 - Add `text-col `config setting for main text color (#694)
@@ -14,11 +14,11 @@
 - Add `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
 - Add YAML option `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
 
-## v4.0.1 2020-07-13
+## v4.0.1 (2020-07-13)
 
 - Fixed staticman comments UI that was broken since the migration to bootstrap 4
 
-## v4.0.0 2020-07-12
+## v4.0.0 (2020-07-12)
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
 - **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image
@@ -33,7 +33,7 @@
 - Make post images in the feed page smaller on smaller devices
 - Fixed jQuery version in staticman (#671)
 
-## v3.0.0 2020-05-07
+## v3.0.0 (2020-05-07)
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
 - **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
@@ -46,7 +46,7 @@
 - Remove most of the sample posts so that users only have two sample posts to learn from
 - Improvements to the README instructions
 
-## v2.3.0 2020-04-29
+## v2.3.0 (2020-04-29)
 
 - Add YAML option `footer-extra` for including custom content in the footer
 - Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
@@ -54,14 +54,14 @@
 - Add social network link: Calendly
 - Fix bug where RSS link in footer was showing even when turned off
 
-## v2.2.0 2020-04-27
+## v2.2.0 (2020-04-27)
 
 - Add social network link: Telegram (#625) (thanks @mashed-potatoes)
 - Moved the demo site to an independent URL: https://beautifuljekyll.com
 - Major documentation overhaul and cleanup of old files
 - Fix a few bugs from the remote_theme migration
 
-## v2.0.0 2020-04-26
+## v2.0.0 (2020-04-26)
 
 - Beautiful-Jekyll v2.0.0 available as an official Ruby gem
 - Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
