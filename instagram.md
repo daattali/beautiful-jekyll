@@ -5,30 +5,21 @@ subtitle: ''
 published: false
 
 ---
-## Products
+Loving what you’re seeing on Instagram? Here’s more of that for you!
 
-* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon! Enjoy.
+## The best of the best
 
-![A picture of me in the mirror. Amazon shop image.](https://www.eastcoastkelly.com/assets/img/20200606_151056_0000.png "amazonshopimage")
+* [Latest blogs](http://www.eastcoastkelly.com/)
+* [Weekly newsletter/freebie Friday](http://eepurl.com/gYFb-r) (latest hit was The Simple Capsule Wardrobe Guide!)
+* A course I took recently that I LOVE. Erica gives it to you straight: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq) (aff link - I receive a small commission if you end up loving it too!)
+* Looking for online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
 
-* Get 10% off + free shipping for my fave scrunchies that I wear almost daily with the code EASTCOASTKELLY10 at [Scrunchie Squad](https://www.scrunchiesquad.com/).
+## Amazon shop
 
-## Courses
+Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I use and love from Amazon! Enjoy.
 
-* Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
+![A picture of me looking in the mirror.](/uploads/20200606_151056_0000-1.png "imageofme")
 
-## Books
+## Other social media accounts
 
-Book recommendations on minimalism/simple living that I love:
-
-* [Bullet Journal Method](https://amzn.to/3fB51uF) (the planning method I base my own planning method on)
-* [The Miracle Morning](https://amzn.to/398G8nw) (where I’ve been inspired to create my simple morning routine)
-* [Hands Free Mama ](https://amzn.to/2BduGKX)(learning to say no to screens/distractions and being more present with your children)
-* [Everything that Remains](https://amzn.to/2Cu5u3c) (minimalism)
-* [Teaching From Rest](https://amzn.to/2WINMjG) (homeschooling encouragement/what matters most)
-
-## Other
-
-* Looking for simple online work? Start [here](https://forms.gle/v11JEewD81mxsUyf6).
-
-_All links above are my affiliate links, which means I’d make a small % if you decided to purchase at no change in price to you. Thank you!_
+* [Facebook](http://www.facebook.com/kelly.briggs) (you can follow me or friend me if we’re friends!)
