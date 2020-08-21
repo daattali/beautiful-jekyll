@@ -12,9 +12,6 @@ fields:
   name: subtitle
   label: subtitle
 - type: file
-  name: cover-img
-  label: cover-img
-- type: file
   name: thumbnail-img
   label: thumbnail-img
 - type: file
