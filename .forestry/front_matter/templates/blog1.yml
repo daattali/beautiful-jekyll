@@ -20,3 +20,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- _posts/2020-08-21-take-control-of-the-laundry-with-these-three-easy-suggestions.md
