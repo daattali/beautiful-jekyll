@@ -4,6 +4,7 @@
 - Add automatic navbar color detection (#702)
 - Change navbar and footer background colour to be slightly darker, for better contrast with white page background
 - Change the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
+- Rename internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
 
 ## v4.1.0 (2020-08-08)
 
