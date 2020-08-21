@@ -1,39 +1,38 @@
 ---
 layout: post
 title: Three Key Steps to Maintaining Decluttering Sanity with Kids
-subtitle: It's all about the priorities.
+subtitle: ''
 cover-img: "/assets/img/path.jpg"
 thumbnail-img: "/uploads/20200528_114030_0000-1.png"
 share-img: "/assets/img/path.jpg"
 tags:
-- values
-- family values
-- personal values
-- simple values exercise
-- values exercise
+- decluttering
+- maintenance decluttering
+- decluttering with kids
+- marie kondo
+- spring decluttering
+- decluttering as a family
+- how to declutter with kids
 
 ---
-![Picture of hand holding a heart.](/uploads/20200528_114030_0000-1.png "heart")
+Yup. It’s a losing battle. If it doesn’t leave the house, they. will. find. it. We’ve been spending this week doing a maintenance declutter on the home, top to bottom, since we’re out of the baby year with our number four. We let a lot go when we have a baby around, of course. Today on the blog, I’m sharing with you three key steps to maintaining decluttering sanity with kids.![A picture of my dining room with mess on the floor.](/uploads/20200513_150452_0000.png "mess")
 
-Firstly, let's set the stage. What are values exactly?
+## Intentional decluttering while putting things back
 
-> In ethics, value denotes the degree of importance of some thing or action, with the aim of determining what actions are best to do or what way is best to live, or to describe the significance of different actions. - Wikipedia
+Every time you put things back. Clothes. Toys. Books. Anything you find on the floor. Instead of robotically putting it back, think about if it’s still needed or loved and then declutter it if that’s needed right then and there. Here is another [blog](https://zen.homezada.com/2015/04/20/spring-maintenance-tips-guide-to-decluttering-the-home/) on spring cleaning for maintenance decluttering that may help you out too.
 
-Want to figure out quickly what your true values are? _Take a moment and do this simple exercise:_
+## Have a home for everything
 
-Take a look at what you do, your actions. What things do you do on the daily? Such as: Do you get outside? Exercise? Choose eating healthy? Family time? Watch Netflix? Journal? Pray? Read? Do your hair? Listen attentively? This list could go on, but take some time to think, and perhaps quickly jot down those that come to mind. During this step, you may also notice that what you thought you valued doesn't actually show in your day to day actions. Take note of that too.
+Have a home for everything so that you know how much you have of everything. Lego. Stuffies. etc. What’s a home? According to [Marie Kondo](https://www.goodhousekeeping.com/home/organizing/a25846191/what-is-the-konmari-method/), it’s just a resting place for your stuff. For instance, our utensils go in a certain drawer, house keys have a spot, art papers have a drawer, and so on. You can read more about her method in her book [The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing](https://amzn.to/31alsJK)
 
-**Here are some of my values that came from me writing my daily actions down:**
+## Involve the kids
 
-* I value growth. Daily time spent growing in areas I want to grow in (i.e. spiritual, learning new things, hobbies, business development etc).
-* I value close family relationships. I take time daily to check in with my people. And listen to what they are sharing with me.
-* I value hard work. To give my all at what I do.
-* I value taking care of myself to take care of others: spiritual, physical, and mental...daily.
+Help them to recognize things they no longer need or love (it’s a long term process here as we’ve found lol). But, including the kids routinely will help them to learn the skills of decluttering too over time. Not perfectly of course. We have one child who enjoys collecting electricians. That’s his joy. But to help him make decisions on what is best to keep is still taught.
 
-  Maybe through the above exercise, you'll also discover what you thought you valued, but really don't based on your actions. I thought I valued getting outside....but haven't been getting out much this year since having the new baby. But it's something I want to change for this year. Values can also change over time too. I hope you enjoyed and learned something new about yourself through this exercise. Happy exploring your values!
+_PS one of my mail list freebies was for a simple guide to maintenance decluttering with kids! I expanded on these three steps above and have seven more for you too. Just send me an email at eastcoastkellyb@gmail.com if you’d like that guide for free and I’ll send it off to you!_
 
-  _If you enjoyed this type of exercise, another way to expand this is into creating a family motto for your family... if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those free resources I found for you._Cheers,
+Cheers,
 
-  Kelly
+Kelly
 
-  **Did you find this helpful? If so, I would greatly appreciate if you shared it.**
+**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
