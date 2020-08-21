@@ -2,7 +2,7 @@
 layout: post
 title: Three Key Steps to Maintaining Decluttering Sanity with Kids
 subtitle: ''
-cover-img: "/uploads/20200513_150452_0000.png"
+cover-img: ''
 thumbnail-img: "/uploads/20200513_150452_0000.png"
 share-img: "/assets/img/path.jpg"
 tags:
