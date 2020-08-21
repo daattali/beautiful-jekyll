@@ -35,7 +35,7 @@
 
 # Features
 
-Check out the [CHANGELOG](./CHANGELOG.md) to see the latest features.
+Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the latest features.
 
 - **SIMPLE**: The primary goal of Beautiful Jekyll is to allow literally *anyone* to create a website in a few minutes.
 - **Modern**: Uses the latest best practices and technologies to achieve nearly perfect scores on Google Chrome's Audit.
