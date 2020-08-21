@@ -3,7 +3,7 @@ layout: post
 title: Three Key Steps to Maintaining Decluttering Sanity with Kids
 subtitle: ''
 cover-img: "/assets/img/path.jpg"
-thumbnail-img: "/uploads/20200528_114030_0000-1.png"
+thumbnail-img: "/uploads/20200513_150452_0000.png"
 share-img: "/assets/img/path.jpg"
 tags:
 - decluttering
@@ -15,7 +15,9 @@ tags:
 - how to declutter with kids
 
 ---
-Yup. It’s a losing battle. If it doesn’t leave the house, they. will. find. it. We’ve been spending this week doing a maintenance declutter on the home, top to bottom, since we’re out of the baby year with our number four. We let a lot go when we have a baby around, of course. Today on the blog, I’m sharing with you three key steps to maintaining decluttering sanity with kids.![A picture of my dining room with mess on the floor.](/uploads/20200513_150452_0000.png "mess")
+![A picture of my dining room with mess on the floor.](/uploads/20200513_150452_0000.png "mess")
+
+Yup. It’s a losing battle. If it doesn’t leave the house, they. will. find. it. We’ve been spending this week doing a maintenance declutter on the home, top to bottom, since we’re out of the baby year with our number four. We let a lot go when we have a baby around, of course. Today on the blog, I’m sharing with you three key steps to maintaining decluttering sanity with kids.
 
 ## Intentional decluttering while putting things back
 
