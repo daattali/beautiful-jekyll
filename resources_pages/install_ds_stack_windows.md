@@ -580,9 +580,13 @@ your LaTeX environment is set up correctly.
 
 ## Make
 
-Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer, click the "Extract" tab and the button in the header that says "Extract all" and extract to `C:\Users\YOUR_USERNAME\` (substituting in your actual username instead of `YOUR_USERNAME`).
+Later in the program, we will be using `make` to automate our analysis scripts. [Download `make` from this URL](https://downloads.sourceforge.net/project/ezwinports/make-4.3-without-guile-w32-bin.zip). Click on the downloaded zip-file to open it in the File Explorer and click the button in the "Extract" tab that reads "Extract all". Change the extract location to `C:\Users\YOUR_USERNAME\make-4.3` (substituting in your actual username instead of `YOUR_USERNAME`) and click "Extract". See the screenshots below if you're unsure what to click.
 
-Next we need to add the `bin` folder in this extraction location to our PATH so that we can use `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code by pasting this into a terminal:
+![](/resources_pages/imgs/extract-make.png)
+
+![](/resources_pages/imgs/extract-make-path.png)
+
+Next we need to add make's `bin` folder to our PATH so that we can use the command `make` from the terminal (like we did with R earlier). Open the bash configuration file with VS Code again by pasting this into a terminal:
 
 ```
 code ~/.bash_profile
@@ -595,11 +599,11 @@ And replace the section that reads:
 export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
-with the following (prepending the `make` folder to the path above):
+with the following (which prepends make's bin folder to the PATH):
 
 ```
 # Add R, Rscript, and Make to path
-export PATH="/c/Users/${USERNAME}/make-4.3-without-guile-w32-bin/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
+export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
 Launch a new terminal and run
