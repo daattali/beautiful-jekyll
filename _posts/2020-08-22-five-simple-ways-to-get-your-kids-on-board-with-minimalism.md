@@ -30,7 +30,7 @@ Getting my kids on board with doing less has been easy for us because that’s h
 
 I see this as prioritize the now and slowly get better over time….as well as what will leave the house naturally such as baby items.
 
-1. Rachel Jones over at [Nourishing Minimalism](https://nourishingminimalism.com/how-to-get-the-kids-on-board-with-decluttering-the-toys/) talks about the value of space. And limiting space for their things so it won’t easily overflow. In my boy’s room, for instance, they have two milk crates for wooden train tracks and a few other things. It also makes it a lot faster for them cleaning up to have less!
+5. Rachel Jones over at [Nourishing Minimalism](https://nourishingminimalism.com/how-to-get-the-kids-on-board-with-decluttering-the-toys/) talks about the value of space. And limiting space for their things so it won’t easily overflow. In my boy’s room, for instance, they have two milk crates for wooden train tracks and a few other things. It also makes it a lot faster for them cleaning up to have less!
 
 ![Image overview of blog.](/uploads/20200810_210308_0000_compress77-1.jpg "fiveways")
 
