@@ -362,7 +362,17 @@ install.packages('tinytex')
 tinytex::install_tinytex()
 ```
 
-You can check that the installation is working by typing the following in a terminal to ask for the version of latex:
+> Note: You might be asked to enter your password during installation.
+> If you see an error message towards the end of the installation
+> telling you that `/usr/local/bin` is not writeable,
+> you will need to open a terminal and run the following two commands before proceeding:
+>
+>```
+> sudo chown -R $(whoami):admin /usr/local/bin
+> ~/Library/TinyTeX/bin/x86_64-darwin/tlmgr path add
+>```
+
+You can check that the installation is working by opening a terminal and asking for the version of latex:
 
 ```
 latex --version

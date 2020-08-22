@@ -492,7 +492,7 @@ tinytex::install_tinytex()
 Note that you might see two error messages regarding lua during the installation, you can safely ignore these, the installation will complete successfully after clicking "OK".
 
 
-You can check that the installation is working by typing the following in a terminal to ask for the version of latex:
+You can check that the installation is working by opening a terminal and asking for the version of latex:
 
 ```
 latex --version
