@@ -20,4 +20,8 @@ subtitle:
 
 &gt;What the hell are you talking about?
 
+&lt;CONNECTION ENDED&gt;
+
+&gt;kale.exe &gt; output.txt 2&gt;&1
+
 &nbsp;
