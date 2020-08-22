@@ -542,11 +542,11 @@ PS1="\n$PS1"
 bind "set completion-ignore-case on"
 # Require only one instead of two TAB presses before showing matches
 bind "set show-all-if-ambiguous on"
+# Unfortunately the tab cycling does not work together with single tab match expansion on macOS
+# since bash is too old, so I have commented out the option below,
+# but feel free to remove the leading `#` if you want to test it out.
 # If there are multiple matches for completion, cycle through them with TAB
-bind 'TAB':menu-complete
-# Perform partial completion on the first Tab press,
-# only start cycling full results on the second Tab press
-bind "set menu-complete-display-prefix on"
+# bind 'TAB':menu-complete
 
 # History configuration
 # Cycle through history based on characters already typed on the line
