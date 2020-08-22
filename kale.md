@@ -1,21 +1,27 @@
 ---
 layout: base
-title: kale
+title:
 subtitle:
 ---
 
-Fur Squared is a furry convention held in Brookfield, WI in February. For 2021, we're going to be holding a virtual event from February 26 - 28.
+&gt;I don't get it, sir.
 
-### Do I need a VR Headset?
+&lt;There's nothing to get, you just take orders.
 
-No\! For the [VRChat](https://www.vrchat.com) segments, you can connect with a regular computer, no headset required\!
+&gt;But it makes no sense. &nbsp;How am I supposed to do all this?
 
-When the time comes, the main content of the event will be streamed over at Youtube, and coordination will be done via Discord. We're still working on getting those set up, and will provide links when we're ready.
+&lt;Get help.
 
-### Where to find us?
+&lt;You've contacted them before. &nbsp;Get their attention the same way.
 
-* [Twitter: @fursquared](https://twitter.com/fursquared)
-* [Youtube: Check out Silvergatoman while we get our channel set up\!](https://www.youtube.com/user/silvergatomon)
-* Twitch: We don't have it yet
-* Should we be somewhere on the internet that we aren't currently? Suggest it to us on twitter or head on over to the [contact](/contact) page to send us an email.
-* [Telegram: FurSquared](https://t.me/fursquaredchat)
+&gt;That was just a game
+
+&lt;So is this\! &nbsp;Just a different type. &nbsp;There a reason I spent so much time and money to contact you back in 2014. &nbsp;When this thing started. &nbsp;Back when this began. &nbsp;Where you should look for your next clue. <!--HEY ARG PLAYERS IS THIS A GOOD ENOUGH HINT DO SOME RESEARCH-->
+
+&gt;What the hell are you talking about?
+
+&lt;CONNECTION ENDED&gt;
+
+&gt;kale.exe &gt; output.txt 2&gt;&1
+
+&nbsp;
