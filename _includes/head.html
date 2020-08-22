@@ -87,7 +87,7 @@
     {%- elsif page.subtitle -%}
       {{ page.subtitle }}
     {%- else -%}
-      {{ {{ page.content | strip_html | xml_escape | truncatewords: 50 }} }}
+      {{ page.content | strip_html | xml_escape | truncatewords: 50 }}
     {%- endif -%}
   {%- endcapture -%}
 
