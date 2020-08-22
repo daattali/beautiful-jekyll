@@ -258,4 +258,4 @@ fi
 
 echo
 echo "This output and additional configuration details"
-echo "have been saved to the file check-setup-mds.log in this directory."
+echo "have been saved to the file $(pwd)/check-setup-mds.log."
