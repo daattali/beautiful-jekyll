@@ -1,7 +1,7 @@
 ---
-layout: page
-title: admin
-subtitle: What is Fur Squared all about?
+layout: base
+title:
+subtitle:
 ---
 
 Fur Squared is a furry convention held in Brookfield, WI in February. For 2021, we're going to be holding a virtual event from February 26 - 28.
