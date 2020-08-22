@@ -2,7 +2,7 @@
 layout: post
 title: How to Discover Your Values
 subtitle: It's all about the priorities.
-cover-img: "/assets/img/path.jpg"
+cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200528_114030_0000-1.png"
 share-img: "/assets/img/path.jpg"
 tags:
