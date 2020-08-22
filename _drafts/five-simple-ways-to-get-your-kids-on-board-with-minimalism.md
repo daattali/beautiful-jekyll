@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Five Simple Ways to Get Your Kids on Board with Minimalism
-subtitle: ''
+subtitle: Baby steps.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200513_150452_0000.png"
+thumbnail-img: "/uploads/minimalism.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering
-- maintenance decluttering
+- getting kids on board with minimalism
+- minimalism with kids
+- simple minimalism with kids
 - decluttering with kids
-- marie kondo
-- spring decluttering
 - decluttering as a family
-- how to declutter with kids
+- minimalist family
+- how to start decluttering with kids
 
 ---
 ![An chat box image of the title of the blog.](/uploads/minimalism.jpg "minimalismkids")
