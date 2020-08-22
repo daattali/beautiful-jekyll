@@ -2,7 +2,7 @@
 layout: post
 title: How to Reduce the Stress of Laundry with these Four Simple Rules
 subtitle: ''
-cover-img: ''
+cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/20200610_224713_0000.png"
 share-img: "/assets/img/path.jpg"
 tags:
