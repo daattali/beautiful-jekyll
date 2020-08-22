@@ -599,7 +599,9 @@ And replace the section that reads:
 export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
-with the following (which prepends make's bin folder to the PATH):
+with the following to prepend make's bin folder to the PATH
+(note that `${USERNAME}` below will be automatically expanded to your actual username by bash,
+so you don't need to replace it manually.
 
 ```
 # Add R, Rscript, and Make to path
