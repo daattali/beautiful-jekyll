@@ -539,7 +539,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Color text so it is easier to distinguish elements from each other
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdxCxDxDxxbaDecac
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+export PS1="${CONDA_PROMPT_MODIFIER}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 
 # Prepend a newline to the prompt string to separate it from the last command's output
 PS1="\n$PS1"
