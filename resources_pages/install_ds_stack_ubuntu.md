@@ -159,12 +159,12 @@ Once the download is finished, open Terminal and execute the following commands:
 ```
 bash path/to/file
 ```
+
 > Note: most often this file is downloaded to the `Downloads` directory, and thus the command will look like this:
 >
 >```
 >bash Downloads/Miniconda3-latest-Linux-x86_64.sh
 >```
-`
 
 The instructions for the installation will then appear:
 
@@ -210,7 +210,6 @@ To add the conda-forge channel by typing the following in the terminal:
 
 ```
 conda config --add channels conda-forge
-
 ```
 
 To install packages individually, we can now use the following command: `conda install <package-name>`. Let's install the key packages needed for the start of our program:
