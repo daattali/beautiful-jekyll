@@ -520,6 +520,8 @@ This is optional,
 but makes it easier to use the TAB key for autocompletion
 and improves how bash handles the command history
 (we will talk more about these topics during class).
+It also adds colors to the terminal's text,
+which can make it easier to navigate visually.
 First,
 open the configuration file:
 
