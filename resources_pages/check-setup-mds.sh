@@ -28,14 +28,17 @@ if [[ "$(uname)" == 'Linux' ]]; then
     grep "Operating" <<< $sys_info | sed 's/^[[:blank:]]*//' >> check-setup-mds.log
     grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
     grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
+    file_browser="nautilus"
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
+    file_browser="open"
 elif [[ "$OSTYPE" == 'msys' ]]; then
     # wmic use some non-ASCII characters that we need grep (or sort or similar) to convert,
     # otherwise the logfile looks weird. There is also an additional newline at the end.
     wmic os get caption | grep Micro | sed 's/\n//g'  >> check-setup-mds.log
     wmic os get osarchitecture | grep bit | sed 's/\n//g' >> check-setup-mds.log
     wmic os get version | grep 10 | sed 's/\n//g' >> check-setup-mds.log
+    file_browser="explorer"
 else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
 fi
@@ -259,3 +262,4 @@ fi
 echo
 echo "This output and additional configuration details"
 echo "have been saved to the file $(pwd)/check-setup-mds.log."
+echo "You can open this folder in your file browser by typing \`${file_browser} .\` (without the surrounding backticks)."
