@@ -133,10 +133,10 @@ git config --global user.email janedoe@example.com
 
 ### Setting VS Code as the default editor
 
-To make programs run from the terminal (such as `git`) use VS Code by default, we will modify `~/.bash_profile`. First, open it using VS Code:
+To make programs run from the terminal (such as `git`) use VS Code by default, we will modify the bash configuration file `~/.bashrc`. First, open it using VS Code:
 
 ```
-code ~/.bash_profile
+code ~/.bashrc
 ```
 
 Append the following lines:
@@ -562,7 +562,6 @@ PROMPT_COMMAND='history -a'
 HISTSIZE=50000
 HISTFILESIZE=50000
 ```
-
 
 ## Post-installation notes
 
