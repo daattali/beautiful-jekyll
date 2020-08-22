@@ -531,6 +531,9 @@ Then past the following at the end of the file
 (make sure not to overwrite any existing lines):
 
 ```
+# Silence default shell note when launching bash
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Prepend a newline to the prompt string to separate it from the last command's output
 PS1="\n$PS1"
 
