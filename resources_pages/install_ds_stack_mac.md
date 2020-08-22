@@ -251,6 +251,8 @@ jupyter lab build
 ```
 
 To test that your JupyterLab installation is functional, you can type `jupyter lab` into a terminal, which should open a new tab in your default browser with the JupyterLab interface.
+To exit out of JupyterLab you can click `File -> Shutdown`,
+or go to the terminal from which you launched JupyterLab and hold `Ctrl` while pressing `c` twice.
 
 ## R, XQuartz, IRkernel, and RStudio
 
@@ -336,7 +338,8 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
 To improve the experience of using R in JupyterLab,
-we will add an extension that allows us to setup keyboard shortcuts for inserting text.
+we will add an extension that allows us to setup keyboard shortcuts for inserting text
+(thanks to former MDS student Ryan Homer for developing this extension!).
 By default,
 it creates shortcuts for inserting two of the most common R operators: `<-` and `%>%`.
 Run the following from terminal to install the extension:
