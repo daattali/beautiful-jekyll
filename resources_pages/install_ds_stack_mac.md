@@ -335,51 +335,21 @@ Sometimes a kernel loads, but doesn't work as expected. To test whether your ins
 
 ![](/resources_pages/imgs/jupyter_lab_r_kernel2.png)
 
-To improve the experience of using R in Jupyter Lab,
-we will add an extension that allows us to setup keyboard shortcuts
-for common R operators, such as `<-` and `%>%`.
-Run the following from terminal to install the extension.
+To improve the experience of using R in JupyterLab,
+we will add an extension that allows us to setup keyboard shortcuts for inserting text.
+By default,
+it creates shortcuts for inserting two of the most common R operators: `<-` and `%>%`.
+Run the following from terminal to install the extension:
 
 ```
 jupyter labextension install @techrah/text-shortcuts
 jupyter lab build
 ```
 
-Then open Jupyter Lab by running `Jupyter Lab` from the terminal.
-To add the R shortcuts,
-click `Settings` in the top menu and then on `Advanced Settings Editor`.
-Select the `Keyboard Shortcuts` tab.
-In the `User Preferences` panel,
-add the following shortcut configuration and click the "save" icon in the top right.
-
-```
-{
-    "shortcuts": [
-        {
-            "command": "text-shortcuts:insert-text",
-            "args": {
-                "text": "%>%",
-                "autoPad": true
-            },
-            "keys": [
-                "Accel Shift M"
-            ],
-            "selector": "body"
-        },
-        {
-            "command": "text-shortcuts:insert-text",
-            "args": {
-                "text": "<-",
-                "autoPad": true
-            },
-            "keys": [
-                "Alt -"
-            ],
-            "selector": "body"
-        }
-    ]
-}
-```
+To check that the extension is working,
+open JupyterLab,
+launch an R notebook,
+and try inserting the operators by pressing `Alt` + `-` or `Option` + `Command` + `m`, respectively.
 
 ## LaTeX
 
