@@ -6,6 +6,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - **BREAKING CHANGE** Renamed `description` config parameter to `rss-description` since it was only used in RSS (the FAQ in the README explains the difference between YAML options and config parameters if you're confused!)
 - **BREAKING CHANGE** Removed YAML option `use-site-title` (you can now specify the exact title using `share-title`)
 - **BREAKING CHANGE** Removed undocumented YAML options `meta-title` and `meta-description`
+- **BREAKING CHANGE** Removed `link-tags` config parameter because it wasn't necessary. If you use tags, there will be a tags page created; if you don't use tags there is no tags page.
 - Added `share-title` YAML option to give control over the search engine/social media title
 - Added `head-extra` YAML option which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Added `full-width` YAML option to allow having full-width pages
