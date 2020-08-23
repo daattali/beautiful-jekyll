@@ -77,7 +77,7 @@ Edit the `_config.yml` file to change any settings you want. To edit the file, c
 
 ### 4. Congratulations! You have a website!
 
-After you save your changes to the config file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
+After you save your changes to the `_config.yml` file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
 Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
@@ -100,14 +100,15 @@ Files you create inside the [`_posts`](./_posts) directory will be treated as bl
 
 # Customizing parameters for each page
 
-**One last important thing**: In order to have your new pages use this template and not just be plain HTML pages, **you must add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page**. This is where you'll be able to give each page some extra parameters such as a title, a subtitle, or an image. [Below is a list of all available parameters](#supported-parameters). If you don't want to use any parameters on a page (this also means having no title), then use the empty YAML front matter:
+**One last important thing**: In order to have your new pages use this template and not just be plain HTML pages, **you must add [YAML front matter](https://jekyllrb.com/docs/front-matter/) to the top of each page**:
+
 
 ```
 ---
 ---
 ```
 
-If you do want to use any parameters, write them between these two lines. For example, you can have this at the top of a page:
+This is where you'll be able to give each page some extra parameters (such as a title, a subtitle, an image, etc - [below is a list of all parameters](#supported-parameters)). Add any parameters you want between these two dashed lines, for example:
 
 ```
 ---
@@ -116,15 +117,15 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
+If you don't want to use any parameters on a page, you still need to use the two dashed lines. If you don't, then your file will be shown as-is withou the Beautiful Jekyll template.
+
 You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/aboutme.md) as an example.
 
-**Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**
-
-If you don't include YAML then your file will not use this template.
+**Important takeaway: ALWAYS add the YAML front matter, which is two lines of three dashes, to EVERY page. If you have any parameters, they go between the two lines.**
 
 # Supported parameters
 
-Below is a list of the parameters that **Beautiful Jekyll** supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional settings.
+Below is a list of the parameters that **Beautiful Jekyll** supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional site-wide settings.
 
 ## Main parameters
 
@@ -148,12 +149,12 @@ readtime    | If you want a post to show how many minutes it will take to read i
 show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`.
 thumbnail-img | For blog posts, if you want to add a thumbnail that'll show up next to the post's excerpt in the feed, use `thumbnail-img: /path/to/image`. If no thumbnail is provided, then `cover-img` will be used as the thumbnail. You can use `thumbnail-img: ""` to disable a thumbnail.
 share-img   | The image to use when sharing the page to social media. If not provided, then `cover-img` or `thumbnail-img` will be used.
+description | A brief description of the page (used in search engines and when the page is shared). If not provided, the page subtitle will be used.
 social-share | By default, every blog post has buttons to share the page on social media. If you want to turn this feature off, use `social-share: false`.
 nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true`
 gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
 gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
 layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information.
-description | A brief description of the page (used in search engines and when the page is shared).
 
 ## Advanced parameters
 
@@ -231,42 +232,41 @@ Beautiful Jekyll is actively used by thousands of people with wildly varying deg
 
 - ### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
 
-  Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file. The configuration file has many adjustable parameters to customize your site.
+  Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file and modifying the parameters there.
 
-- ### What if I want to use a custom domain for my site?
+- ### What's the difference between the config file and the YAML parameters?
+
+  Great question! The config file is for site-wide settings, while the YAML parameters are added to each page individually and are applied on a per-page basis.
+
+- ### What if I want to use the same YAML parameter for all pages?
+
+  You can set default values for YAML parameters in the config file. Open the `_config.yml` file, scroll down to the line `defaults:` and that's the section you can use. For more information, see the [official jekyll documentation about default values](https://jekyllrb.com/docs/configuration/front-matter-defaults/).
+
+- ### How do I use a custom domain for my site?
 
   GitHub lets you have your website for free using their `github.io` domain. If you want your own domain (such as `https://myname.com`), it's easy and will cost about $10-$15 per year. First you need to buy a domain name (I recommend [Namecheap](https://namecheap.pxf.io/daattali)) and then follow the [instructions GitHub provides](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site).
 
-- ### What if I want a free domain, but not `https://<yourusername>.github.io`?
+- ### What if I want a **free domain**, but not `https://<yourusername>.github.io`?
 
   Every GitHub user can have one repository (repository = project) named `<yourusername>.github.io` and the website for that repository will be `https://<yourusername>.github.io`.
 
   If you want your project to be named something else, for example `MyAwesomeProject`, that's no problem! All you have to do is go to _Settings_ at the top right corner of the page, and rename your repository to `MyAwesomeProject` (**remember to click on the _Rename_ button to confirm!**). Then you need to scroll down to the _GitHub Pages_ section and choose "master branch" as the source (not "master branch /docs folder"!).
 
-  Now your website will be at `https://<yourusername>.github.io\MyAwesomeProject`.
+  Now your website will be at `https://<yourusername>.github.io/MyAwesomeProject`.
 
 - ### How do I move the blog to another page instead of having it on the home page?
 
   The default style of Beautiful Jekyll is to feature the blog feed on the front page. For some sites that's not the ideal structure, and you may want to have a separate dedicated page for the blog posts. To have the blog hosted on a different URL (for example at `<mysite.com>/blog`), copy the `index.html` file into a folder with the same name as the desired page (for example, to `blog/index.html`), and in the `_config.yml` file you need to add a parameter `paginate_path: "/<page name>/page:num/"` (for example `paginate_path: "/blog/page:num/"`).
 
-- ### What size do you recommend using for the `cover-img` photos?
-
-  Unfortunately, this is a no-answer! There isn't a one-size-fits-all solution to this, because every person will view your site on a different browser with different dimensions. Some browsers will have very wide aspect ratio, some will be narrower, some will be vertical (such as phones), different phones have different screens, etc. The image will always be centered, so the only tip I can give is that you should make sure the important part of the image is in the middle so that it'll always show. Other than that, every browser will show a different clipping of the image.
-
 - ### How do I use math equations in my posts?
 
   MathJax can be easily integrated into your website with a one-line addition. You can see [this discussion](https://github.com/daattali/beautiful-jekyll/issues/195) for more information.
   
-<h2 id="sponsors">
-
-Sponsors 🏆
-
-</h2>
+<h2 id="sponsors">Sponsors 🏆</h2>
 
 > There are no sponsors yet
 
-[Become the first sponsor for
-Beautiful Jekyll\!](https://github.com/sponsors/daattali)
+[Become the first sponsor for Beautiful Jekyll\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
 
 # Contributions
 
@@ -279,8 +279,3 @@ You can also contribute by becoming an [official sponsor](https://github.com/spo
 This template was not made *entirely* from scratch. I'd like to give special thanks to [Jekyll Now](https://github.com/barryclark/jekyll-now) and [Bootstrap Clean Blog](https://github.com/IronSummitMedia/startbootstrap-clean-blog), from whom I've taken several ideas initially.
 
 I'd also like to thank [Dr. Jekyll's Themes](https://drjekyllthemes.github.io/), [Jekyll Themes](http://jekyllthemes.org/), and another [Jekyll Themes](http://jekyllrc.github.io/jekyllthemes/) for featuring Beautiful Jekyll in their Jekyll theme directories.
-
-# Known limitations
-
-- If there are many navigation bar links and an avatar, some of the links may get partially hidden behind the avatar. I suggest either re-thinking the number of links, or not using an avatar.
-
