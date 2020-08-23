@@ -41,7 +41,7 @@ layout: page
       {% if thumbnail != "" %}
       <div class="post-image">
         <a href="{{ post.url | absolute_url }}">
-          <img src="{{ thumbnail | absolute_url }}">
+          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
         </a>
       </div>
       {% endif %}
