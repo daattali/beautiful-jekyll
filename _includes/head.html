@@ -2,26 +2,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="monetization" content="$ilp.uphold.com/REUB7QPjnr6z">
+  <meta http-equiv="Expires" content="600" />
 
   {%- capture title -%}
-    {%- if page.share-title -%}
-      {{ page.share-title }}
-    {%- elsif page.title -%}
-      {{ page.title }}
-    {%- else -%}
-      {{ site.title }}
-    {%- endif -%}
+  {%- if page.share-title -%}
+  {{ page.share-title }}
+  {%- elsif page.title -%}
+  {{ page.title }}
+  {%- else -%}
+  {{ site.title }}
+  {%- endif -%}
   {%- endcapture -%}
 
   {%- capture description -%}
-    {%- if page.share-description -%}
-      {{ page.share-description }}
-    {%- elsif page.subtitle -%}
-      {{ page.subtitle }}
-    {%- else -%}
-	  {% assign excerpt_length = site.excerpt_length | default: 50 %}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length }}
-    {%- endif -%}
+  {%- if page.share-description -%}
+  {{ page.share-description }}
+  {%- elsif page.subtitle -%}
+  {{ page.subtitle }}
+  {%- else -%}
+  {% assign excerpt_length = site.excerpt_length | default: 50 %}
+  {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length }}
+  {%- endif -%}
   {%- endcapture -%}
 
   <title>{{ title }}</title>
@@ -47,33 +48,33 @@
   {% include google_analytics.html %}
 
   {% if layout.common-ext-css %}
-    {% for css in layout.common-ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
+  {% for css in layout.common-ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
   {% endif %}
 
   {% if layout.common-css %}
-    {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
+  {% for css in layout.common-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
   {% endif %}
 
   {% if site.site-css %}
-    {% for css in site.site-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
+  {% for css in site.site-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
   {% endif %}
 
   {% if page.ext-css %}
-    {% for css in page.ext-css %}
-      {% include ext-css.html css=css %}
-    {% endfor %}
+  {% for css in page.ext-css %}
+  {% include ext-css.html css=css %}
+  {% endfor %}
   {% endif %}
-  
+
   {% if page.css %}
-    {% for css in page.css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}">
-    {% endfor %}
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+  {% endfor %}
   {% endif %}
 
   {% if site.fb_app_id %}
@@ -85,19 +86,19 @@
   {% endif %}
 
   {%- capture img -%}
-    {%- if page.share-img -%}
-      {{ page.share-img }}
-    {%- elsif page.cover-img -%}
-      {%- if page.cover-img.first -%}
-        {{ page.cover-img[0].first.first }}
-      {%- else -%}
-        {{ page.cover-img }}
-      {%- endif -%}
-    {%- elsif page.thumbnail-img -%}
-      {{ page.thumbnail-img }}
-    {%- elsif site.avatar -%}
-      {{ site.avatar }}
-    {% endif %}
+  {%- if page.share-img -%}
+  {{ page.share-img }}
+  {%- elsif page.cover-img -%}
+  {%- if page.cover-img.first -%}
+  {{ page.cover-img[0].first.first }}
+  {%- else -%}
+  {{ page.cover-img }}
+  {%- endif -%}
+  {%- elsif page.thumbnail-img -%}
+  {{ page.thumbnail-img }}
+  {%- elsif site.avatar -%}
+  {{ site.avatar }}
+  {% endif %}
   {%- endcapture -%}
   {%- assign img=img | strip -%}
 
@@ -144,7 +145,7 @@
   {% endif %}
 
   {% if page.head-extra %}
-    {% include {{ page.head-extra }} %}
+  {% include {{ page.head-extra }} %}
   {% endif %}
 
 </head>
