@@ -40,7 +40,7 @@ layout: page
       {% assign thumbnail=thumbnail | strip %}
       {% if thumbnail != "" %}
       <div class="post-image">
-        <a href="{{ post.url | absolute_url }}">
+        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
           <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
         </a>
       </div>
