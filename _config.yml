@@ -1,10 +1,7 @@
-# --- Basic options --- #
+# --- Required options --- #
 
 # Name of website
 title: My website
-
-# Short description of your site
-description: A virtual proof that I'm awesome
 
 # Your name to show in the footer
 author: Some Person
@@ -32,17 +29,15 @@ round-avatar: true
 #title-img: /path/to/image
 
 
-# --- Footer options --- #
+# --- Footer social media links --- #
 
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
-# If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
   email: "someone@example.com"
   facebook: deanattali
   github: daattali
   twitter: daattali
-  rss: true
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -61,6 +56,10 @@ social-network-links:
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
 
+# If you want to show a link to an RSS in the footer, add the site description here.
+# If you don't want to show an RSS link, remove the following line.
+rss-description: This website is a virtual proof that I'm awesome
+
 # --- General options --- #
 
 # Select which social network share links to show in posts
@@ -77,7 +76,7 @@ url-pretty: "MyWebsite.com"
 # Create a "tags" index page and make tags on each post clickable
 link-tags: true
 
-# Excerpt Word Length - Truncates the excerpt of posts on the index page to the specified number of words
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
 
 # The keywords to associate with your website, for SEO purposes
@@ -164,10 +163,6 @@ footer-link-col: "#404040"
 #    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
-title-separator: "-"
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"

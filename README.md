@@ -41,15 +41,14 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 - **Modern**: Uses the latest best practices and technologies to achieve nearly perfect scores on Google Chrome's Audit.
 - **Mobile-first**: Designed to look great on both large-screen and small-screen (mobile) devices.
 - **Highly customizable**: Many personalization settings such as changing the background colour/image, adding a logo.
-- **Flexible usage**: Use Beautiful Jekyll directly on GitHub or using a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.
-- **Battle-tested**:  By using Beautiful Jekyll, you'll be joining tens of thousands of users who used this theme since 2015.
-- **Links to your social media**: You can easily add links to any of your social media accounts in the footer of every page.
+- **Flexible usage**: Use Beautiful Jekyll directly on GitHub or via a Ruby gem - choose the best [development method](#build-your-website-in-3-steps) for you.
+- **Battle-tested**: By using Beautiful Jekyll, you'll be joining 50,000+ users enjoying this theme since 2015.
+- **SEO and social media support**: Customize how your site looks on Google and when shared on social media.
 - **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).
-- **Share blog posts on social media**: By default, all blog posts have buttons to allow people to share on Twitter/Facebook/LinkedIn.
 - **Tags**: Any blog post can be tagged with keywords, and an index page showing all the tags is automatically generated.
-- **Tracking analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
+- **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
 - **Photos support**: Any page can have a cover photo around its title, and any blog post can have an associated image.
-- **More advanced features**: I wrote [a blog post](https://deanattali.com/2015/03/12/beautiful-jekyll-how-to-build-a-site-in-minutes/) describing some more advanced features that I used in my website that can be used in any beautiful-jekyll site.
+- **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
 
 # Build your website in 3 steps
 
@@ -117,7 +116,7 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-If you don't want to use any parameters on a page, you still need to use the two dashed lines. If you don't, then your file will be shown as-is withou the Beautiful Jekyll template.
+If you don't want to use any parameters on a page, you still need to use the two dashed lines. If you don't, then your file will be shown as-is without the Beautiful Jekyll template.
 
 You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/aboutme.md) as an example.
 
@@ -125,7 +124,7 @@ You can look at the top of [`aboutme.md`](https://raw.githubusercontent.com/daat
 
 # Supported parameters
 
-Below is a list of the parameters that **Beautiful Jekyll** supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional site-wide settings.
+Below is a list of the parameters that Beautiful Jekyll supports (any of these can be added to the YAML front matter of any page). Remember to also look in the `_config.yml` file to see additional site-wide settings.
 
 ## Main parameters
 
@@ -137,7 +136,18 @@ title       | Page or blog post title
 subtitle    | Short description of page or blog post that goes under the title
 tags        | List of tags to categorize the post. Separate the tags with commas and place them inside square brackets. Example: `[personal, analysis, finance]`
 cover-img   | Include a large full-width image at the top of the page. You can either provide the path to a single image (eg. `"/path/to/img"`) , or a list of images to cycle through (eg. `["/path/img1", "/path/img2"]`). If you want to add a caption to an image, then the image should be provided as `{"/path/to/img" : "Caption of image"}`.
+thumbnail-img | For blog posts, if you want to add a thumbnail that will show up in the feed, use `thumbnail-img: /path/to/image`. If no thumbnail is provided, then `cover-img` will be used as the thumbnail. You can use `thumbnail-img: ""` to disable a thumbnail.
 comments    | If you want do add comments to a specific page, use `comments: true`. Comments only work if you enable one of the comments providers (Facebook, disqus, staticman, utterances) in `_config.yml` file. Comments are automatically enabled on blog posts but not on other pages; to turn comments off for a specific post, use `comments: false`.
+
+## Parameters for SEO and social media sharing
+
+These parameters let you control what information shows up when a page is shown in a search engine (such as Google) or gets shared on social media (such as Twitter/Facebook).
+
+Parameter   | Description
+----------- | -----------
+share-title | A title for the page. If not provided, then `title` will be used, and if that's missing then the site title (from `_config.yml`) is used.
+share-description | A brief description of the page. If not provided, then `subtitle` will be used, and if that's missing then an excerpt from the page content is used.
+share-img   | The image to show. If not provided, then `cover-img` or `thumbnail-img` will be used if one of them is provided.
 
 ## Less commonly used parameters
 
@@ -147,9 +157,6 @@ Parameter   | Description
 ----------- | -----------
 readtime    | If you want a post to show how many minutes it will take to read it, use `readtime: true`.
 show-avatar | If you have an avatar configured in the `_config.yml` but you want to turn it off on a specific page, use `show-avatar: false`.
-thumbnail-img | For blog posts, if you want to add a thumbnail that'll show up next to the post's excerpt in the feed, use `thumbnail-img: /path/to/image`. If no thumbnail is provided, then `cover-img` will be used as the thumbnail. You can use `thumbnail-img: ""` to disable a thumbnail.
-share-img   | The image to use when sharing the page to social media. If not provided, then `cover-img` or `thumbnail-img` will be used.
-description | A brief description of the page (used in search engines and when the page is shared). If not provided, the page subtitle will be used.
 social-share | By default, every blog post has buttons to share the page on social media. If you want to turn this feature off, use `social-share: false`.
 nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true`
 gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
@@ -165,7 +172,6 @@ Parameter   | Description
 footer-extra | If you want to include extra information in the footer (below the social media icons), create an HTML file in the `_includes/` folder (for example `_includes/myinfo.html`) and set `footer-extra` to the name of the file (for example `footer-extra: myinfo.html`)
 head-extra   | Works in a similar way to `footer-extra`, but used if you have any HTML code that needs to be included in the `<head>` tag of the page.
 language    | HTML language code to be set on the page's &lt;html&gt; element.
-use-site-title | If you want to use the site title rather than the page title as the HTML document title, use `use-site-title: true`.
 js          | List of local JavaScript files to include in the page (eg. `/assets/js/mypage.js`)
 ext-js      | List of external JavaScript files to include in the page (eg. `//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js`). External JavaScript files that support [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) can be specified using the `href` and `sri` parameters eg.<br/>`href: "//code.jquery.com/jquery-3.1.1.min.js"`<br/>`sri: "sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="`
 css         | List of local CSS files to include in the page
