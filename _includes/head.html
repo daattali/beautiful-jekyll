@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  {%- capture title -%}
+  {% capture title %}
     {%- if page.share-title -%}
       {{ page.share-title }}
     {%- elsif page.title -%}
@@ -10,18 +10,18 @@
     {%- else -%}
       {{ site.title }}
     {%- endif -%}
-  {%- endcapture -%}
+  {% endcapture %}
 
-  {%- capture description -%}
+  {% capture description %}
     {%- if page.share-description -%}
       {{ page.share-description }}
     {%- elsif page.subtitle -%}
       {{ page.subtitle }}
     {%- else -%}
-	  {% assign excerpt_length = site.excerpt_length | default: 50 %}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length }}
+      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
+      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
     {%- endif -%}
-  {%- endcapture -%}
+  {% endcapture %}
 
   <title>{{ title }}</title>
 
@@ -134,9 +134,7 @@
   <meta name="twitter:image" content="{{ img | absolute_url }}">
   {% endif %}
 
-  {% if site.matomo %}
   {% include matomo.html %}
-  {% endif %}
 
   {% if page.comments and site.staticman.repository and site.staticman.branch %}
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">

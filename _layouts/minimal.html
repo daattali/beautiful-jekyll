@@ -20,7 +20,7 @@ common-ext-js:
 
   <body>
 
-    <div role="main" class="container-md main-content">
+    <div role="main" class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %} main-content">
       {{ content }}
     </div>
 

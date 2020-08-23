@@ -8,9 +8,9 @@ One of the major changes in this version is that a lot of time was spent on reth
 - **BREAKING CHANGE** Removed undocumented YAML options `meta-title` and `meta-description`
 - Added `share-title` YAML option to give control over the search engine/social media title
 - Added `head-extra` YAML option which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
+- Added `full-width` YAML option to allow having full-width pages
 - Added automatic navbar color detection (#702)
-- Added better SEO and social media sharing by adding a `share-title` YAML option and utilizing the `description` option
-- Changed navbar and footer background colour to be slightly darker, for better contrast with white page background
+- Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background
 - Changed the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
 - Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
 
