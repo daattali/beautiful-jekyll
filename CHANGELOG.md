@@ -3,7 +3,7 @@
 One of the major changes in this version is that a lot of time was spent on rethinking the entire SEO and social media sharing model (how a page looks on eg. Google, Twitter, Facebok). It was redesigned to be more simple and customizable. The new documentation has a section dedicated to SEO and social media sharing of a page. Unfortunately some changes had to be made that are not backwards-compatible.
 
 - **BREAKING CHANGE** Renamed `description` YAML option to `share-description` to be more clear
-- **BREAKING CHANGE** Renamed `description` config parameter to `rss-description` since it was only used in RSS (the FAQ in the README explains the different between YAML options and config parameters if you're confused!)
+- **BREAKING CHANGE** Renamed `description` config parameter to `rss-description` since it was only used in RSS (the FAQ in the README explains the difference between YAML options and config parameters if you're confused!)
 - **BREAKING CHANGE** Removed YAML option `use-site-title` (you can now specify the exact title using `share-title`)
 - **BREAKING CHANGE** Removed undocumented YAML options `meta-title` and `meta-description`
 - Added `share-title` YAML option to give control over the search engine/social media title
