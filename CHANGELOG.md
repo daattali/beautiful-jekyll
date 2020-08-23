@@ -1,46 +1,78 @@
-## v4.0.0 Date: TBD
+## Unreleased version
+
+One of the major changes in this version is that a lot of time was spent on rethinking the entire SEO and social media sharing model (how a page looks on eg. Google, Twitter, Facebok). It was redesigned to be more simple and customizable. The new documentation has a section dedicated to SEO and social media sharing of a page. Unfortunately some changes had to be made that are not backwards-compatible.
+
+- **BREAKING CHANGE** Renamed `description` YAML option to `share-description` to be more clear
+- **BREAKING CHANGE** Renamed `description` config parameter to `rss-description` since it was only used in RSS (the FAQ in the README explains the difference between YAML options and config parameters if you're confused!)
+- **BREAKING CHANGE** Removed YAML option `use-site-title` (you can now specify the exact title using `share-title`)
+- **BREAKING CHANGE** Removed undocumented YAML options `meta-title` and `meta-description`
+- Added `share-title` YAML option to give control over the search engine/social media title
+- Added `head-extra` YAML option which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
+- Added automatic navbar color detection (#702)
+- Added better SEO and social media sharing by adding a `share-title` YAML option and utilizing the `description` option
+- Changed navbar and footer background colour to be slightly darker, for better contrast with white page background
+- Changed the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
+- Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
+
+
+
+## v4.1.0 (2020-08-08)
+
+- Added Open Graph `site_name` meta field to pages automatically
+- Added `text-col `config setting for main text color (#694)
+- Added `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
+- Added `mobile-theme-col` config setting to allow a mobile theme colour (#692)
+- Added `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
+- Added YAML option `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
+
+## v4.0.1 (2020-07-13)
+
+- Fixed staticman comments UI that was broken since the migration to bootstrap 4
+
+## v4.0.0 (2020-07-12)
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
-- **BREAKING CHANGE** Don't use the thumbnail as the avatar image 
+- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image
 - Cover image will automatically be used as thumbnail if none is provided
 - Image to share on social media will use the cover image or thumbnail if none is provided
 - All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
-- Add social network links: Mastodon (#646), Google Scholar, ORCID (#670)
-- Add support for sharing pages on new social network: VK (#657)
+- Added social network links: Mastodon (#646), Google Scholar, ORCID (#670)
+- Added support for sharing pages on new social network: VK (#657)
 - Use Open Graph type 'article' for blog posts (#669)
-- Use Twitter's `summary_large_image` card when `share-img` is specified (#668)
-- Make post images in the feed page smaller on smaller devices
+- Use Twitter's large sumary card (large image) when there is a cover image, thumbnail image, or share image specified (#668)
+- Made post images in the feed page smaller on smaller devices
+- Fixed jQuery version in staticman (#671)
 
-## v3.0.0 2020-05-07
+## v3.0.0 (2020-05-07)
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
 - **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
 - **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
 - **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
 - Added `navbar-border-col` setting in the config file
-- Add accessibility features where possible
+- Added accessibility features where possible
 - Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
-- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
-- Remove most of the sample posts so that users only have two sample posts to learn from
+- Rewrote and simplified some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
+- Removed most of the sample posts so that users only have two sample posts to learn from
 - Improvements to the README instructions
 
-## v2.3.0 2020-04-29
+## v2.3.0 (2020-04-29)
 
-- Add YAML option `footer-extra` for including custom content in the footer
-- Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
-- Add YAML option `nav-short` to have navbar permanently collapsed
-- Add social network link: Calendly
-- Fix bug where RSS link in footer was showing even when turned off
+- Added YAML option `footer-extra` for including custom content in the footer
+- Fixed issue: linking to a specific part of a page resulted in scrolling too far (#69)
+- Added YAML option `nav-short` to have navbar permanently collapsed
+- Added social network link: Calendly
+- Fixed bug where RSS link in footer was showing even when turned off
 
-## v2.2.0 2020-04-27
+## v2.2.0 (2020-04-27)
 
-- Add social network link: Telegram (#625) (thanks @mashed-potatoes) 
-- Moved the demo site to an independent URL: https://beautifuljekyll.com 
-- Major documentation overhaul and cleanup of old files 
-- Fix a few bugs from the remote_theme migration
+- Added social network link: Telegram (#625) (thanks @mashed-potatoes)
+- Moved the demo site to an independent URL: https://beautifuljekyll.com
+- Major documentation overhaul and cleanup of old files
+- Fixed a few bugs from the remote_theme migration
 
-## v2.0.0 2020-04-26
+## v2.0.0 (2020-04-26)
 
 - Beautiful-Jekyll v2.0.0 available as an official Ruby gem
 - Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
@@ -125,3 +157,4 @@
 ... Many small changes because the site was in its infancy
 
 **2015-03-12** Beautiful Jekyll version 0.0000001 is released!
+
