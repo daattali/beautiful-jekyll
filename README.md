@@ -40,7 +40,6 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 - **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
 - **Photos support**: Any page can have a cover photo around its title, and any blog post can have an associated image.
 - **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
-- **Plans**: If you want even more features,
 
 <h2 id="sponsors">Sponsors 🏆</h2>
 
