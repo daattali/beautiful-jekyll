@@ -14,7 +14,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background
 - Changed the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
 - Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
-
+- Added alt text to all images for better accessibility
 
 
 ## v4.1.0 (2020-08-08)
