@@ -9,28 +9,19 @@
 
 **Beautiful Jekyll** is a ready-to-use template to help you create a beautiful website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://beautifuljekyll.com) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) to see it in use, or see examples of websites other people created using this theme [below](#showcased-users-success-stories).
 
-**If you enjoy Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali) for over 5 years of development (and to unlock rewards!)**
-
-<p align="center">
-  <a style="display: inline-block;" href="https://github.com/sponsors/daattali">
-    <img height="40" src="https://i.imgur.com/034B8vq.png" />
-  </a>
-  &nbsp;&nbsp;
-  <a style="display: inline-block;" href="https://paypal.me/daattali">
-    <img height="40" src="https://camo.githubusercontent.com/0e9e5cac101f7093336b4589c380ab5dcfdcbab0/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f74776f6c66736f6e2f70617970616c2d6769746875622d627574746f6e40312e302e302f646973742f627574746f6e2e737667" />
-  </a>
-</p>
+**If you enjoy Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali) for over 5 years of development (and to unlock rewards!) ❤**
 
 ## Table of contents
 
 - [Features](#features)
+- [Sponsors 🏆](#sponsors)
 - [**Build your website in 3 steps**](#build-your-website-in-3-steps)
+- [Plans](#plans)
 - [Add your own content](#add-your-own-content)
 - [Customizing parameters for each page](#customizing-parameters-for-each-page)
 - [Supported parameters](#supported-parameters)
 - [Showcased users (success stories!)](#showcased-users-success-stories)
 - [FAQ and support](#faq-and-support)
-- [Sponsors 🏆](#sponsors)
 - [Credits and contributions](#credits)
 
 # Features
@@ -49,6 +40,13 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 - **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
 - **Photos support**: Any page can have a cover photo around its title, and any blog post can have an associated image.
 - **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
+- **Plans**: If you want even more features,
+
+<h2 id="sponsors">Sponsors 🏆</h2>
+
+> There are no sponsors yet
+
+[Become the first sponsor for Beautiful Jekyll and unlock special rewards\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
 
 # Build your website in 3 steps
 
@@ -84,6 +82,9 @@ Note that in the video above I only edited one setting in the `_config.yml` file
 
 If you followed the easy method above, then you already have your site and you can skip this section! If you want to install beautiful-jekyll using ruby gems instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard).
 
+# Plans
+
+Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, or unlock other special rewards, [check out the differen plans](https://beautifuljekyll.com/plans).
 
 # Add your own content
 
@@ -267,12 +268,6 @@ Beautiful Jekyll is actively used by thousands of people with wildly varying deg
 - ### How do I use math equations in my posts?
 
   MathJax can be easily integrated into your website with a one-line addition. You can see [this discussion](https://github.com/daattali/beautiful-jekyll/issues/195) for more information.
-  
-<h2 id="sponsors">Sponsors 🏆</h2>
-
-> There are no sponsors yet
-
-[Become the first sponsor for Beautiful Jekyll\!](https://github.com/sponsors/daattali/sponsorships?tier_id=39856)
 
 # Contributions
 
