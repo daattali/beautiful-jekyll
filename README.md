@@ -83,7 +83,7 @@ If you followed the easy method above, then you already have your site and you c
 
 # Plans
 
-Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, or unlock other special rewards, [check out the differen plans](https://beautifuljekyll.com/plans).
+Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, or unlock other special rewards, [check out the different plans](https://beautifuljekyll.com/plans).
 
 # Add your own content
 
