@@ -4,7 +4,7 @@
 title: "Josemy says..."
 
 # Short description of your site
-description: Tecnología, Programación and others...
+description: Tech, Programming and others...
 
 # Your name to show in the footer
 author: Josemy Duarte
@@ -12,7 +12,7 @@ author: Josemy Duarte
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Home: "https://josemyduarte.github.io"
+  Home: "https://josemyduarte.github.io/blog"
   Stuff:
     - Read later: "articles"
     - Books: "books"
@@ -38,12 +38,13 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 # If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  rss: false
+  rss: true
   email: "duartejosemy@gmail.com"
   github: josemyduarte
   twitter: JosemyD
   instagram: josemy.duarte
   linkedin: josemyduarte
+  telegram: josemyd
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
@@ -56,7 +57,6 @@ social-network-links:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
-#  telegram: yourname
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
