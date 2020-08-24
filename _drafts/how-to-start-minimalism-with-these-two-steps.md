@@ -6,44 +6,45 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/jewelry.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering your time
-- decluttering time
-- decluttering your to do list
-- ways to declutter your time
-- declutter your to do list
-- finding more time
-- time management
+- decluttering
+- decluttering as a family
+- minimalism
+- joshua becker
+- marie kondo
+- starting minimalism
+- minimalism tips
+- minimalist family
+- the life changing magic of tidying up
+- how to start decluttering
+- bullet journaling
+- the bullet journal method
 
 ---
-![Title of blog: six ways to declutter your time.](/uploads/clock.png "clock")
 
-After I had a good handle on the physical clutter in our home, my time, my to do lists needed a major rehaul. And it was certainly not one and done. I’m unlearning and relearning new habits and reassessing as life goes on. And how often do I put way more on my to do list than the time that I’m given? I think it’s because I am optimistic. A few of these decluttering time ideas I read recently on [Becoming Minimalist’s](http://www.becomingminimalist.com/) blog – Joshua Becker, one of the minimalist leaders who inspires me. Today on the blog, I’m sharing with you six ways to declutter your time.
+![An image of my journal with tulips next to it.](/uploads/20200630_101240_0000-1.png "bulletjournal")
 
-##### 1. Turn off your screens or limit them.
+About four years ago, I clearly remember standing in the kitchen. With my scrap of paper filled with my to do list. I felt unbelievably stressed out and overwhelmed. I didn’t know which way was up or down. At this point in my life, I think we were at two, maybe three kids, and I was home full time. It was around this moment that I knew there had to be a better way. Today on the blog, I’m sharing how to start minimalism with these two steps I go over below.
 
-I don’t know about you, but for me, this can be a real time suck. Fifteen minutes, thirty minutes. An hour can pass by so quickly while on screens. Turning off screens and setting boundaries about when screens are used can be one way to declutter your time. I remember reading in [The Five Second Rule](https://amzn.to/31LBx9p) how Mel Robbins set her phone away at a certain time every night and didn’t pick up until a certain time in the morning, for instance.
+## 1. Start. Just start. Somewhere.
 
-##### 2. Cross off nonpriority tasks on your to do list.
+It was that moment in my kitchen that I turned even more to decluttering and reading [Marie Kondo](https://konmari.com/)’s book [The Life-Changing Magic of Tidying Up](https://amzn.to/2AhtdCJ) and then stumbling upon the [bullet journal method](https://amzn.to/2YMIpkA) thereafter. I decluttered our home ruthlessly, questioning everything. And then fine tuned as the years went on. Everyone starts somewhere and this was my somewhere. The place you start will be different from the next and that’s ok.
 
-How often do I put way more on my daily to do list? One thing I have done is to, as much as possible, push non priority tasks to the weekend or to a later date. The book [Eat that Frog!](https://amzn.to/2NKb1Vv) was also another book that helped me with learning better skills for time management and learning how to better prioritize.
+Some places that offer more hands on help:
 
-##### 3. Pick one hobby, downtime activity at a time.
+* My friend [Lisa on Instagram](https://www.instagram.com/lisatselebidis/) has a tidy project going on! She’s a konmari consultant.
+* [A 12 week uncluttered course](https://www.becomingminimalist.com/get-uncluttered/) by Joshua Becker ([Becoming Minimalist](http://www.becomingminimalist.com/)).
 
-I’m a creative, so this is a good rule of thumb for me. Focusing on one at a time will also likely save you money if your hobbies are more physical type ones. Bonus!
+## 2. Minimize your to do list.
 
-##### 4. Say no to things that don’t align with your values.
+Looking at your to do list can be a great place to start minimizing. Look at what’s there and take things off that are not in line with who you are, where you want to go in life. My blog on [discovering your values](https://www.eastcoastkelly.com/planning/2020/05/28/how-to-discover-your-values.html) will help you out too if you are not sure where to start.
 
-Keep a running list of your values and goals and anytime you are presented with an opportunity or asked to do something, you can quickly know if it’s aligned. Obviously do what works for you too, but having a values list can be so helpful with discerning. If you are unsure of your values, my blog [How to Discover Your Values](https://www.eastcoastkelly.com/planning/2020/05/28/how-to-discover-your-values.html) will help on starting to discover them.
+Minimalism, for me, has reduced not just the physical stuff around me, but also a lottttt of mental clutter. There is just less on my to do list and also a way to organize my thoughts much better (I use the [bullet journal method](https://amzn.to/2YMIpkA)). It’s helped me to get rid of the excess and see what’s been really important for me. And in turn, I notice myself less stressed. Less anxious. Because there’s just less noise/stuff/tasks before my days.
 
-##### 5. Delegate more.
+Start looking within and around you to see what you can do without. Less stress. Less on the to do list. Less stuff. And go from there. Taking it one day at a time.
 
-If you can pass along a task to someone else, this would be a way to free up more time for yourself. Sometimes it’s easier said than done though, as this is an area I struggle with often.
+_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
-##### 6. Plan multiple errands, one after another.
-
-We’ve been trying to get most of our grocery errands done within one day or two, depending, for instance. This will help free up time for us compared to doing weekly grocery runs.
-
-_PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you’re not on it yet (why not? ), you can email me your email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
+To your minimalist journey!
 
 Cheers,
 
