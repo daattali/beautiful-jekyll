@@ -10,6 +10,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Added `share-title` YAML option to give control over the search engine/social media title
 - Added `head-extra` YAML option which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Added `full-width` YAML option to allow having full-width pages
+- Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
 - Added automatic navbar color detection (#702)
 - Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background
 - Changed the behaviour of `site-css` to include site-wide CSS file **before** page-specific files 
