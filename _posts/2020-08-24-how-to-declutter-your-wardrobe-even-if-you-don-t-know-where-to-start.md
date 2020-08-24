@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Declutter Your Wardrobe Even If You Don't Know Where to Start
+title: Four Tips to Create Minimal Wardrobes for Kids
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/wardrobe.png"
