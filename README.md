@@ -1,4 +1,4 @@
-[![](https://i.imgur.com/zNBkzj1.png)](https://xscode.com/daattali/beautiful-jekyll)
+[![](https://i.imgur.com/zNBkzj1.png)](https://beautifuljekyll.com/plans/)
 
 # Beautiful Jekyll
 
@@ -227,11 +227,7 @@ If you'd like to showcase yourself and join this list, [upgrading to the Individ
 
 # FAQ and support
 
-If you need any help, I suggest heading over to the [Jekyll support forum](https://talk.jekyllrb.com/).
-
-Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](https://jekyllrb.com/) or with Google.
-
-**If you really wany my personal help, please visit https://xscode.com/daattali/beautiful-jekyll to hire my services.**
+Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. Below are answers to some very common questions. Many questions are often not specifically related to Beautiful Jekyll and are instead more about Jekyll or web development in general. Many such questions can be answered by reading the [Jekyll documentation](https://jekyllrb.com/), using Google, or asking on the [Jekyll support forum](https://talk.jekyllrb.com/).
 
 - ### How can I incorporate new features of Beautiful Jekyll into my old site?
 
