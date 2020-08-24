@@ -190,9 +190,7 @@ ext-css      | List of external CSS files to include in the page. External CSS f
 
 # Showcased users (success stories!)
 
-Beautiful Jekyll has been used in tens of thousands of websites since 2015.  Here is a sample of some websites that use Beautiful Jekyll.
-
-If you'd like to showcase yourself and join this list, [supporting the theme](https://github.com/sponsors/daattali/sponsorships?&tier_id=7362) will grant you that perk!
+If you'd like to showcase yourself and join this list, [upgrading to the Individual plan](https://github.com/sponsors/daattali/sponsorships?&tier_id=7362) will give you that publicity plus some other rewards!
 
 ## Project/company websites
 
@@ -279,9 +277,9 @@ Beautiful Jekyll is actively used by thousands of people with wildly varying deg
 
 # Contributions
 
-Thank you to [all past contributors](https://github.com/daattali/beautiful-jekyll/graphs/contributors). If you find any problems or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.  Any comments are welcome!
+Thank you to [all past contributors](https://github.com/daattali/beautiful-jekyll/graphs/contributors). If you find any problems or would like to contribute in any way, feel free to create a pull request/open an issue/send me a message.
 
-You can also contribute by becoming an [official sponsor](https://github.com/sponsors/daattali) to help keep beautiful-jekyll well-maintained.
+You can also contribute by becoming an [official sponsor](https://github.com/sponsors/daattali/sponsorships?tier_id=39856) to help keep Beautiful Jekyll well-maintained.
 
 # Credits
 
