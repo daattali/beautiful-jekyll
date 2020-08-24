@@ -77,9 +77,11 @@ After you save your changes to the `_config.yml` file (by clicking on *Commit ch
 
 Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
 
+Also note that this was the easy way to *create* your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](#faq-and-support) for help with upgrading in the future.
+
 ## The hard way (using ruby gems)
 
-If you followed the easy method above, then you already have your site and you can skip this section! If you want to install beautiful-jekyll using ruby gems instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard).
+If you followed the easy method above, then you already have your site and you can skip this section! If you want to use Beautiful Jekyll as a ruby gem instead, follow the [advanced installation instructions](https://beautifuljekyll.com/getstarted/#install-steps-hard). This is harder to set up initially, but it makes it super easy to keep your site up to date with Beautiful Jekyll when more features are added in the future.
 
 # Plans
 
@@ -232,6 +234,12 @@ If you need any help, I suggest heading over to the [Jekyll support forum](https
 Beautiful Jekyll is actively used by thousands of people with wildly varying degrees of competency, so it's impossible to answer all the questions that may arise. Below are answers to a few very common questions. Most questions that I get asked are not directly related to this theme, and instead are more general questions about Jekyll or web development. Many such questions can be answered by reading the [Jekyll documentation](https://jekyllrb.com/) or with Google.
 
 **If you really wany my personal help, please visit https://xscode.com/daattali/beautiful-jekyll to hire my services.**
+
+- ### How can I incorporate new features of Beautiful Jekyll into my old site?
+
+  If you installed Beautiful Jekyll using "the easy way" (by forking the GitHub project), then unfortunately there is no easy way to bring all the newest changes into your website. It's a bit messy, but what most people recommend is to delete your current GitHub project and start fresh: (1) make a copy of any files that you modified/created (generally this means the `_config.yml` file, all blog posts, and any additional pages you created), (2) delete your project on GitHub, (3) re-fork Beautiful Jekyll, (4) add all the content you previously created. Since this is cumbersome, you might want to try creating your website using "the hard way" this time so that in the future you can update more easily!
+
+  If you installed Beautiful Jekyll using "the hard way" (as a ruby gem), then updating to the latest version to get the newest features only requires you to change the version in the config file (for example, change `remote_theme: daattali/beautiful-jekyll@4.0.0` to `remote_theme: daattali/beautiful-jekyll@5.0.0`). You should also look at the [updates](https://beautifuljekyll.com/updates/) to see if any Breaking Changes happened. 
 
 - ### How do I add a favicon to my site?
 
