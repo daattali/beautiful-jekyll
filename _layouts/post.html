@@ -31,6 +31,14 @@ layout: base
         </div>
       {% endif %}
 
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
       <article role="main" class="blog-post">
         {{ content }}
       </article>
@@ -40,6 +48,14 @@ layout: base
           Tags:
           {% for tag in page.tags %}
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
           {% endfor %}
         </div>
       {% endif %}

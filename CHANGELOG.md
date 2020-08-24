@@ -8,7 +8,8 @@ One of the major changes in this version is that a lot of time was spent on reth
 - **BREAKING CHANGE** Removed undocumented YAML options `meta-title` and `meta-description`
 - **BREAKING CHANGE** Removed `link-tags` config parameter because it wasn't necessary. If you use tags, there will be a tags page created; if you don't use tags there is no tags page.
 - Added `share-title` YAML option to give control over the search engine/social media title
-- Added `head-extra` YAML option which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
+- Added `before-content` and `after-content` YAML options that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
+- Added `head-extra` YAML option which i s similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Added `full-width` YAML option to allow having full-width pages
 - Improved the `footer-extra` YAML option to support multiple files instead of only a single file
 - Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version

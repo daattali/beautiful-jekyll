@@ -172,7 +172,9 @@ These are advanced parameters that are only useful for people who need very fine
 Parameter   | Description
 ----------- | -----------
 footer-extra | If you want to include extra content below the social media icons in the footer, create an HTML file in the `_includes/` folder (for example `_includes/myinfo.html`) and set `footer-extra` to the name of the file (for example `footer-extra: myinfo.html`). Accepts a single file or a list of files.
-head-extra   | Works in a similar way to `footer-extra`, but used if you have any HTML code that needs to be included in the `<head>` tag of the page.
+before-content | Similar to `footer-extra`, but used for including HTML before the main content of the page (below the title).
+after-content | Similar to `footer-extra`, but used for including HTML after the main content of the page (above the footer).
+head-extra   | Similar to `footer-extra`, but used if you have any HTML code that needs to be included in the `<head>` tag of the page.
 language    | HTML language code to be set on the page's &lt;html&gt; element.
 full-width  | By default, page content is constrained to a standard width. Use `full-width: true` to allow the content to span the entire width of the window.
 js          | List of local JavaScript files to include in the page (eg. `/assets/js/mypage.js`)
