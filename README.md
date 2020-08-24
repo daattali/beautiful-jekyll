@@ -65,7 +65,7 @@ Fork this project by clicking the __*Fork*__ button at the top right corner of t
 
 ### 2. Rename the project to `<yourusername>.github.io`
 
-Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes. Check out the [FAQ](#faq-and-support) if you want to use a different project name. If after a few minutes your website is not ready, try making any edit to any file, just to force GitHub to re-build your site.
+Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*Repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes (check out the [FAQ](#faq-and-support) if you want to use a different project name). If after a few minutes your website is still not ready, try making any edit to any file, just to force GitHub to re-build your site.
 
 ### 3. Customize your website settings
 
