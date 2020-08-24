@@ -177,7 +177,7 @@ VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 
 ### Python and Conda
 
-We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Miniconda MacOSX 64-bit pkg install for Python **3.7**](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
+We will be using Python for a large part of the program, and `conda` as our Python package manager. To install Python and the `conda` package manager, we will use the [Miniconda platform (read more here)](https://docs.conda.io/en/latest/miniconda.html), for which the [Miniconda MacOSX 64-bit pkg install for Python **3.8**](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
 
 After installation, restart the terminal. If the installation was successful, you will see `(base)` prepending to your prompt string. To confirm that `conda` is working, you can ask it which version was installed:
 ```
@@ -198,10 +198,10 @@ python --version
 which should return something like this:
 
 ```
-Python 3.7.7
+Python 3.8.3
 ```
 
-> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.7**.
+> Note: If instead you see `Python 2.7.X` you installed the wrong version. Uninstall the Miniconda you just installed (which usually lives in the `/opt` directory), and try the installation again, selecting **Python 3.8**.
 
 ## Essential Python packages
 
