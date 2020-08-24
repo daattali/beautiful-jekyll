@@ -141,7 +141,9 @@
   {% endif %}
 
   {% if page.head-extra %}
-    {% include {{ page.head-extra }} %}
+    {% for file in page.head-extra %}
+      {% include {{ file }} %}
+    {% endfor %}
   {% endif %}
 
 </head>

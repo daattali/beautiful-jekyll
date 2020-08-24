@@ -5,7 +5,9 @@
       {% include social-networks-links.html %}
       {% if page.footer-extra %}
         <div class="footer-custom-content">
-          {% include {{ page.footer-extra }} %}
+          {% for file in page.footer-extra %}
+            {% include {{ file }} %}
+          {% endfor %}
         </div>
       {% endif %}
       <p class="copyright text-muted">
