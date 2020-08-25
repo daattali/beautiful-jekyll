@@ -3,7 +3,7 @@ layout: post
 title: Six Ways to Declutter Your Time
 subtitle: Keeping it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/jewelry.jpg"
+thumbnail-img: "/uploads/clock.png"
 share-img: "/assets/img/path.jpg"
 tags:
 - decluttering your time
