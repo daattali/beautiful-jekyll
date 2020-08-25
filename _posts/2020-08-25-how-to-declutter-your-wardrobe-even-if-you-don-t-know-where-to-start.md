@@ -8,21 +8,16 @@ gh-badge:
 - fork
 - follow
 tags:
-- decluttering
-- decluttering as a family
-- minimalism
-- minimalist home
-- joshua becker
-- the minimalists
-- marie kondo
-- the life changing magic of tidying up
-- how to declutter
-- how to start decluttering
-- different ways to declutter
-- decluttering with kids
+- decluttering your wardrobe
+- wardrobe declutter
+- capsule wardrobe
+- capsule wardrobe guide
+- simple wardrobe
 comments: true
 
 ---
+![](/uploads/mywardrobe.png)
+
 There are so many takes on decluttering and pieces of advice, so I’m going to leave you mine, of course. Looking back, I plowed through the big declutter when everything clicked for me. I was just anxious to get it done. Paper was the biggest for me. I remember taking days and days. Looking through young teenage years of letters back and forth with friends. That was quite painful ha. Today on the blog, I’m going to share with you, if you are new to decluttering. And you don’t know where to start… where and how to start decluttering: a no brainer guide.
 
 ## There is no right or wrong way
