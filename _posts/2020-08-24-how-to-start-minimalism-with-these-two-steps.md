@@ -3,7 +3,7 @@ layout: post
 title: How to Start Minimalism with these Two Steps
 subtitle: Keeping it simple.
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/jewelry.jpg"
+thumbnail-img: "/uploads/20200630_101240_0000-1.png"
 share-img: "/assets/img/path.jpg"
 tags:
 - decluttering
