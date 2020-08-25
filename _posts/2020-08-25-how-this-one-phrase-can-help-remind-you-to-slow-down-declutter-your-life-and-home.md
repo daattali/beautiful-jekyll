@@ -7,18 +7,12 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/phrase.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- decluttering
-- decluttering as a family
+- keeping it simple
+- simple living
 - minimalism
-- joshua becker
-- marie kondo
-- starting minimalism
-- minimalism tips
-- minimalist family
-- the life changing magic of tidying up
-- how to start decluttering
-- bullet journaling
-- the bullet journal method
+- slow down life
+- low stress living
+- keep it simple
 
 ---
 ![](/uploads/phrase.jpg)
