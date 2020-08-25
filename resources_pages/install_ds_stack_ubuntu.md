@@ -311,7 +311,7 @@ sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev
 ```
 
 Next, install the key R packages needed for the start of MDS program,
-by typing the following into the R terminal in RStudio:
+by typing the following into the R console in RStudio:
 
 ```
 install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools'))
