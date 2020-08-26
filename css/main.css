@@ -798,12 +798,16 @@ div.heading {
 	font-family: sans-serif;
 }
 
+table tr.year {
+  background-color: transparent;
+}
+
 li.year {
 	list-style:none;
 	font-size:large;
 	font-weight:bold;
 	margin-top: 1em;
-	text-align: left;
+  text-align: left;
 }
 li.pubitem {
 	margin-top: 0.5em;
