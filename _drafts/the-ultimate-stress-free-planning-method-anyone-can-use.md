@@ -1,42 +1,41 @@
 ---
 layout: post
 title: The Ultimate Stress Free Planning Method Anyone Can Use
-subtitle: Keeping it simple.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200822_110434_0000_compress19.jpg"
+thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- to do lists
-- bullet journaling
-- bullet journal
-- planning
-- priorities
+- loop planning
+- stress free planning
+- flexible planning
 
 ---
-You are worth so much more than the size of your crossed off to do list. But goodness knows those lists can also help in the time of decluttering or other pressing matters.⁣⁣⁣⁣⁣ Have an unending to do list? Feel like you are never on top of things? ⁣⁣⁣⁣⁣Today on the blog I'm going to leave you with some to do list tips I read in a [Forbes article](https://www.forbes.com/sites/bryancollinseurope/2020/02/20/how-to-put-together-a-realistic-to-do-list-every-day/#4476afb519e3) that were simple and practical:⁣
+Today on the blog I'm sharing with you a planning method I learned through the [homeschooling world](https://readaloudrevival.com/looping-task-management-for-recovering/) that applies to anyone. Anything. Any schedule. Any kind of life.
 
-## Keep things simple
+So if you're feeling overwhelmed. If you're juggling all the things. If you constantly feel behind. Or if you just want to reduce the daily load, this method is for you!
 
-Keep things simple. Focusing on three things or less is what is recommended.⁣⁣⁣⁣⁣ Otherwise, you'll end up with a ton on your list and that will just lead to overwhelm and perhaps the feeling of failure since you set your expectations too high!
+## Introducing the loop plan
 
-## Write your list in advance
+Take a circle. Inside the circle are various pieces of pie or tasks within a schedule. Essentially you have a set of tasks within a loop and loop through the tasks.
 
-Write your list in advance, ideally the night before. It allows for direction and clarity going forward.⁣⁣⁣⁣⁣
+![](/uploads/20200406_111435_0000.png)
 
-## Start right away when you have the most energy
+## How the loop plan works
 
-Start right away in the morning when you have the most energy. ⁣⁣⁣⁣⁣I remember reading in Mel Robbin's book [The Five Second Rule](https://amzn.to/32iJ5jS) about how she shares that mornings are when we have the most energy. The first few hours of the day! So, get your productive to do list juices going as soon as possible basically.
+Start with one, go through the next task. Keep going and then repeat. That's the simple explanation. In practice, you start and stop as needed. Tweaking it based on your day. Stop and start. Pick up when you need to. Stressful day? Don't do a task. Lots of extra time? Do more! It's completely flexible and adaptable.
 
-## Do a brain dump
+## Ideas of where to add loop planning
 
-Do a brain dump if you feel the need to have a massive to do list and then set aside to reflect and look on in the future. ⁣⁣I use to do lists for a lot of things and keep running lists of them for future reference. But, my daily to do list is written in my [bullet journal planner](https://amzn.to/3gVIn0f).
+* Errand running
+* Housework
+* Homeschooling
+* Work tasks that don't need to be done daily
 
-![A picture of my journal opened up.](/uploads/bulletjournal.jpg "bulletjournal")
+  _These are the areas I use too. If you'd like to dive in and start creating your own loop plan and are looking for a template, I have one for you! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that._
 
-_If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those links._ 
+Cheers,
 
-_Cheers,_
-
-Kelly
+_Kelly_
 
 **Did you find this helpful? If so, I would greatly appreciate if you shared it.**
