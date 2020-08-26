@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Members
-subtitle: 
+subtitle:
 ---
 
 <div class="row">
@@ -100,6 +100,12 @@ subtitle:
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/sujay-bajracharya/">
 				Sujay Bajrachaya
+			</a>
+		</div>
+    <div class="col-md-3 text-center">
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/harshit-sikchi/">
+				Harshit Sikchi
 			</a>
 		</div>
 	</div>
