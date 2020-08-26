@@ -11,15 +11,16 @@ description: Robots Perceiving and Doing
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+# url: "http://localhost:4000"
 
 # baseurl should be an empty string
-#baseurl: ""
+# baseurl: ""
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "/"
   Members: "members"
   Publications: "publications"
   # About Me: "aboutme"
@@ -34,7 +35,7 @@ navbar-links:
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: "/DavidHeld_files/rpad3-text.png"
 
 # --- Background colour/image options --- #
 

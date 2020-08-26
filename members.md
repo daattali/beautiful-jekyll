@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Members
-subtitle: 
+subtitle:
 ---
 
 <div class="row">
