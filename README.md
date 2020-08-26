@@ -2,11 +2,11 @@
 
 If the following command does not Network in Windows PowerShell
 ```
-docker run -d -p 4000:4000 --name beautiful-jekyll -v "$PWD:/srv/jekyll" beautiful-jekyll
+docker run -d -p 4000:4000 -p 25003:25003 --name beautiful-jekyll -v "$PWD:/srv/jekyll" beautiful-jekyll
 ```
 Try the following
 ```
-docker run -d -p 4000:4000 --name beautiful-jekyll -v "$(PWD):/srv/jekyll" beautiful-jekyll
+docker run -d -p 4000:4000 -p 25003:25003 --name beautiful-jekyll -v "$(PWD):/srv/jekyll" beautiful-jekyll
 ```
 
 
