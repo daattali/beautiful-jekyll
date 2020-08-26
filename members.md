@@ -9,7 +9,7 @@ subtitle:
       <h2 id="faculty">Faculty</h2>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-4 text-center">
+		<div class="col-md-4 text-center col-xs-4">
 			<a href="https://davheld.github.io">
 				<img class="img-responsive" src="/img/members/daveheld.jpg" alt="Dave Held">
 				Dave Held
@@ -34,25 +34,25 @@ subtitle:
 <h3 id="phd-students">PhD Students</h3>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2016/12/okorn_brian_2019.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/brian-e-okorn/">
 				Brian Okorn
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://scholar.google.com/citations?user=H8e3R2JADJEC&hl=en">
 				Siddarth (Sid) Ancha
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2018/01/Xingyu.Lin_-1.jpg">
 			<a href="https://xingyu-lin.github.io/">
 				Xingyu Lin
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/04/weng_thomas_2018.jpg">
 			<a href="https://www.thomasweng.com">
 				Thomas Weng
@@ -60,7 +60,7 @@ subtitle:
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/07/zhou_wenxuan_2019_1.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/wenxuan-zhou/">
 				Wenxuan Zhou
@@ -72,25 +72,25 @@ subtitle:
 <h3 id="masters-students">Master’s students</h3>
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/">
 				Gautham Narayan Narasimhan
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/sujay-bajracharya/">
 				Sujay Bajrachaya
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/qiao-gu/">
 				Qiao Gu
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://hari-sikchi.github.io/">
 				Harshit Sikchi
@@ -98,19 +98,19 @@ subtitle:
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://yufeiwang63.github.io/">
 				Yufei Wang
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/himangi-mittal/">
 				Himangi Mittal
 			</a>
 		</div>
-		<div class="col-md-3 text-center">
+		<div class="col-md-3 text-center col-xs-3">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://jianrenw.github.io/">
 				Jianren Wang
