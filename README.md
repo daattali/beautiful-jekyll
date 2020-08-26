@@ -1,3 +1,15 @@
+# Setup locally
+
+If the following command does not Network in Windows PowerShell
+```
+docker run -d -p 4000:4000 --name beautiful-jekyll -v "$PWD:/srv/jekyll" beautiful-jekyll
+```
+Try the following
+```
+docker run -d -p 4000:4000 --name beautiful-jekyll -v "$(PWD):/srv/jekyll" beautiful-jekyll
+```
+
+
 # Beautiful Jekyll
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
@@ -180,13 +192,13 @@ If you want to use this theme to host a website that will be available at `https
 
 If you want to use this theme to create a website for a particular repository, it will be available at `https://YOURUSERNAME.github.io/PROJECTNAME`, and that is called a [Project Page](https://help.github.com/articles/user-organization-and-project-pages/). You can have a Project Page for any repository you have on GitHub.
 
-**When using this theme for a Project Page, by default your website will be served from the `gh-pages` branch**, so you must take the following steps: 
+**When using this theme for a Project Page, by default your website will be served from the `gh-pages` branch**, so you must take the following steps:
 
 1. [Delete the existing `gh-pages` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#deleting-a-branch)
 
 2. [Create a new branch named `gh-pages` from the `master` branch](https://help.github.com/en/articles/creating-and-deleting-branches-within-your-repository#creating-a-branch)
 
-Alternatively, instead of the above two steps, you can opt to use the `master` branch instead of `gh-pages` branch as your website's source by choosing that option in the main Settings page. 
+Alternatively, instead of the above two steps, you can opt to use the `master` branch instead of `gh-pages` branch as your website's source by choosing that option in the main Settings page.
 
 ## Showcased users (success stories!)
 
@@ -322,4 +334,4 @@ If you do fork or clone this project to use as a template for your site, I would
 
 - If you have a project page and you want a custom 404 page, you must have a custom domain.  See https://help.github.com/articles/custom-404-pages/.  This means that if you have a regular User Page you can use the 404 page from this theme, but if it's a website for a specific repository, the 404 page will not be used.
 
-- If there are many navigation bar links and avatar, some of the links may get partially hidden behind the avatar. 
+- If there are many navigation bar links and avatar, some of the links may get partially hidden behind the avatar.
