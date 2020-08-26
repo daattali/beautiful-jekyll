@@ -1,0 +1,9 @@
+.jumbotron-main {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%),
+    url("/DavidHeld_files/rpad3-text.png") no-repeat center center;
+  background-size: contain;
+}
+
+.text-center {
+  text-align: center;
+}
