@@ -6,7 +6,7 @@ subtitle:
 
 <div class="heading"> Preprints </div>
 <div>
-    <table cellpadding="10" text-align="left">
+    <table cellpadding="10" text-align="left" width="100%">
         <tr><td><li class="year"> 2017</li></td></tr>
         <tr>
             <td class="pubimg" width="250" height="100">
