@@ -74,24 +74,6 @@ subtitle:
 	<div class="row">
 		<div class="col-md-3 text-center">
 			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
-			<a href="https://yufeiwang63.github.io/">
-				Yufei Wang
-			</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg">
-			<a href="https://www.ri.cmu.edu/ri-people/qiao-gu/">
-				Qiao Gu
-			</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2018/08/qian_jianing_2018.jpg">
-			<a href="https://www.ri.cmu.edu/ri-people/jianing-qian/">
-				Jianing (Aurora) Qian
-			</a>
-		</div>
-		<div class="col-md-3 text-center">
-			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
 			<a href="https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/">
 				Gautham Narayan Narasimhan
 			</a>
@@ -102,82 +84,73 @@ subtitle:
 				Sujay Bajrachaya
 			</a>
 		</div>
+		<div class="col-md-3 text-center">
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/qiao-gu/">
+				Qiao Gu
+			</a>
+		</div>
+		<div class="col-md-3 text-center">
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://hari-sikchi.github.io/">
+				Harshit Sikchi
+			</a>
+		</div>
 	</div>
-</div>
-
-<h3 id="undergraduate-students">Undergraduate students</h3>
-<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3 text-center">
-			<!-- <img class="img-responsive img-circle" src="/img/members/michael_huang.png" alt="Jake Olkin"> -->
-			<!-- <a href=""> -->
-				Jake Olkin
-			<!-- </a> -->
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://yufeiwang63.github.io/">
+				Yufei Wang
+			</a>
+		</div>
+		<div class="col-md-3 text-center">
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://www.ri.cmu.edu/ri-people/himangi-mittal/">
+				Himangi Mittal
+			</a>
+		</div>
+		<div class="col-md-3 text-center">
+			<img class="img-responsive" src="https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg">
+			<a href="https://jianrenw.github.io/">
+				Jianren Wang
+			</a>
 		</div>
 	</div>
 </div>
+
+<!-- <h3 id="undergraduate-students">Undergraduate students</h3>
+<ul>
+</ul>
+</div> -->
 
 <h3 id="visiting-students">Visiting Students</h3>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-3 text-center">
-			<!-- <img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)"> -->
-			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
-				Jianren Wang
-			<!-- </a> -->
-		</div>
-		<div class="col-md-3 text-center">
-			<!-- <img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)"> -->
-			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
-				Himangi Mittal
-			<!-- </a> -->
-		</div>
-		<div class="col-md-3 text-center">
-			<!-- <img class="img-responsive img-circle" src="/img/members/meghna.png" alt="Khush Agrawal (RISS)"> -->
-			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
-				Khush Agrawal (RISS)
-			<!-- </a> -->
-		</div>
-		<div class="col-md-3 text-center">
-			<!-- <img class="img-responsive img-circle" src="/img/members/ellie.jpg" alt="Shubham Sahoo"> -->
-			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
-				Shubham Sahoo
-			<!-- </a> -->
-		</div>
-		<div class="col-md-3 text-center">
-			<!-- <img class="img-responsive img-circle" src="/img/members/kathleen.jpg" alt="Rohan Chacko"> -->
-			<!-- <a href="https://www.ri.cmu.edu/ri-people/meghna-behari/"> -->
-				Rohan Chacko
-			<!-- </a> -->
-		</div>
-	</div>
-</div>
+<ul>
+  <li><a href="https://khush3.github.io/">Khush Agrawal (RISS)</a></li>
+  <li><a href="https://rohanchacko.github.io/">Rohan Chacko</a></li>
+  <li><a href="https://www.scs.cmu.edu/directory/ssahoo2">Shubham Sahoo</a></li>
+</ul>
 
 <h2 id="alumni">Alumni</h2>
 
 <h3 id="masters-students-1">Master’s Students</h3>
 <ul>
+  <li><a href="https://www.ri.cmu.edu/ri-people/jianing-qian/">Jianing (Aurora) Qian (MSR)</a></li>
   <li><a href="https://www.ri.cmu.edu/ri-people/junyu-nan/">Junyu Nan (MSCV)</a></li>
-  <!-- <li><a href="http://ri.cmu.edu/ri-people/karsh-tharyani/">Karsh Tharyani (MRSD)</a></li>
-  <li><a href="http://ri.cmu.edu/ri-people/i-chen-jwo/">I-Chen Jwo (MRSD)</a></li>
-  <li><a href="http://ri.cmu.edu/ri-people/ting-che-lin/">Ting-Che Lin (MRSD)</a></li>
-  <li><a href="http://ri.cmu.edu/ri-people/jiahong-ouyang/">Jiahong Ouyang (MRSD)</a></li>
-  <li><a href="https://www.ri.cmu.edu/ri-people/yang-yang/">Yang Yang (MRSD)</a></li> -->
 </ul>
 
-<!-- <h3 id="undergraduate-students-1">Undergraduate Students</h3> -->
-<!-- <ul>
-  <li><a href="https://www.linkedin.com/in/romankaufman/">Roman Kaufman</a></li>
-  <li><a href="https://www.linkedin.com/in/siddharthgir/">Siddharth Girdhar</a></li>
-</ul> -->
+<h3 id="undergraduate-students-1">Undergraduate Students</h3>
+<ul>
+  <li>Jake Olkin</li>
+</ul>
 
 <h3 id="visting-students">Visiting Students</h3>
 <ul>
-  <li>Amith Pallankize</li>
   <li>Yimin Tang (RISS)</li>
+  <li>Ziwen Zhuang (RISS)</li>
+  <li>Zhaoyuan (Andy) Fang</li>
   <li>Yujie Lu</li>
-  <li>Ziwen Zhuang</li>
-  <li>Andy Fang</li>
+  <li>Amith Pallankize</li>
 </ul>
 
 <!-- <h2 id="collaborators">Collaborators</h2> -->
