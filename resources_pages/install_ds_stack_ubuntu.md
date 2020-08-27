@@ -505,7 +505,7 @@ open the configuration file:
 code ~/.bashrc
 ```
 
-Then past the following at the end of the file
+Then paste the following at the end of the file
 (make sure not to overwrite any existing lines)
 and save it afterwards:
 
