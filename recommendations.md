@@ -6,7 +6,7 @@ subtitle: ''
 ---
 ## Products
 
-* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon! Enjoy.
+* Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon! 
 
 ![A picture of me looking in the mirror.](/uploads/20200606_151056_0000-1.png "meinmirror")
 
