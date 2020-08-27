@@ -1,35 +1,27 @@
 ---
 layout: post
 title: How to Start Breaking Free from Procrastination
-subtitle: It takes lots of flexibility.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- time budgeting
+- beating procrastination
 - time management
-- priorities
+- the five second rule
 
 ---
-Now more than ever, the value of time has become clearer for many of us. I've been reading posts from friends and the bigger community that many people are taking this time to revaluate what matters most for them. What if. What if you started thinking about your time differently after all this? Or heck, starting today. Today on the blog I'm going to share with you one way to organize your week using this one simple method: time budgeting.
+Ugh. Procrastination. It's annoying, isn't it? At least for me sometimes! I was reading [The Five Second Rule](https://amzn.to/3iXKRwR) by Mel Robbins and she shares about some of the research showing where procrastination comes from. Knowing where it comes from can become way more important than learning all of the time management strategies in the world. On the blog today I'm sharing about how to start breaking free of procrastination.
 
-## What is time budgeting?
+## Where does procrastination come from?
 
-I remember reading a [blog](https://readaloudrevival.com/i-am-not-an-airplane/) years back from Sarah Mackenzie about time budgeting. And that we are not "⁣airplanes" in that the sky is not the limit on our time. We are given so much time and we can only do what we can within that time (and no, that doesn't mean fill every minute of the day with things we view as "productive").⁣
+Procrastination can be a strategy to avoid stress. Unlike laziness, procrastination is a form of avoidance of things that may stress us out or just things we don't like to do. There's more to it than that, of course, and [this article](https://www.nytimes.com/2019/03/25/smarter-living/why-you-procrastinate-it-has-nothing-to-do-with-self-control.html) gives a bit more insight into it. But the fact that procrastination is often used as a stress avoider was an "aha!" moment for me.
 
-## Budget our time like we budget our finances
+## Look within
 
-⁣What if we started treating the time we are given like we do with our finances? Budgeting our time. ⁣From [litemind.com](http://litemind.com/) on time budgeting:⁣  
-⁣  
-"Setting a time budget means proactively allocating shares of time for the things that matter to you. Similarly to a financial budget, you define the ideal amount of time to invest in each of your important life areas, and then stick to that budget for the duration of its allocated time."⁣
+Procrastination is much more than meets the eye. A good thing to do to discover why you are procrastinating is to sit and write your thoughts down. Write down all the areas of your life that you procrastinate in and think about the root cause of your procrastination. For me, almost always, it's to avoid doing hard things and avoiding stress! So instead of focusing on the procrastination, I can think of ways to deal with the stress.
 
-"It's not enough to be busy, so are the ants. The question is, what are we busy about?" -- Henry David Thoreau
-
-## Write down your priorities
-
-⁣Write down the most important things for you and your family. How much time do you want to set aside for...rest? Reading? Grocery shopping? Family movie night? Sitting down and looking at your time realistically with a LOT of extra space for breathing room. It's a neat way of looking at things! I hope this helps you out today.⁣
-
-_I hope this was helpful for you. If you'd like to dive in deeper, I have a time budgeting simple template worksheet you can fill out and start budgeting your time. Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that!_
+_If you’d like to dive in deeper to your own areas of procrastination, you may enjoy the worksheet I put together that lists the four main causes for procrastination and strategies to deal with each. Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that!_
 
 Cheers,
 
