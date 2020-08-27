@@ -33,7 +33,7 @@ Week one of working on the project consisted of planning things out. We decided 
 
 ### Week Two: Data Exploration
 
-Week Two was where the teams split up and started working more specifically on solving the problems they had to. For Data Science, that meant getting an idea of what our data should look like. While we did get a general idea of how our data was going to leave our API based off of some websites like (846policebrutality.com)[https://incidents.846policebrutality.com/] which provided their own API to see how they formatted their data, we didn't make any progress on updating the code for our API, believing that we needed the keys to AWS to actually make any progress towards it. We did, however, make progress on exploring both the data from the 846 API, as well as pulled data from Reddit, of which we explored ways to filter and process.
+Week Two was where the teams split up and started working more specifically on solving the problems they had to. For Data Science, that meant getting an idea of what our data should look like. While we did get a general idea of how our data was going to leave our API based off of some websites like [846policebrutality.com](https://incidents.846policebrutality.com/) which provided their own API to see how they formatted their data, we didn't make any progress on updating the code for our API, believing that we needed the keys to AWS to actually make any progress towards it. We did, however, make progress on exploring both the data from the 846 API, as well as pulled data from Reddit, of which we explored ways to filter and process.
 
 ![an example of the data we pulled from reddit](https://i.imgur.com/b5xe2rG.png)
 
@@ -45,10 +45,31 @@ Week Three consisted mostly of figuring out how to build the API locally in Dock
 
 ![The title card of our API](https://i.imgur.com/NLViiKy.png)
 
-###### The app in action
-
 ### Week Four: Modelling the Data
 
 Week Four is where a large portion of our work on actually serving the data from Reddit and Twitter got done. We updated the app to create new endpoints that served data from Reddit filtered through a model. The model itself uses Natural Language Processing to determine if the post from reddit is about police brutality or not, and only the data returned by the model as being about police brutality gets passed along.
 
 ![an example of the app in action](https://i.imgur.com/qQfRtgr.png)
+
+###### An example of the app in action
+
+## As of Present
+
+Currently, the app is in version 0.2 and still in production, it can be found [here](http://hrf-teamb.eba-3253gq3h.us-east-1.elasticbeanstalk.com/#/) where you can see the four available routes: `predict`, `viz`, `testpath`, and `getdata`. Of these, `predict`, and `viz` are routes inhereted from the base version of the repository we started with and are currently unrelated to the project. `testpath` is, self-descriptingly, a test path created to determine if the API was functioning properly. `getdata` is the path related to our project, requiring a variable, `pullnum`, to be supplied with an integer. The path will then pull that number of posts from the r/news subreddit and return any that pass the built-in model as being about police brutality.
+
+## Into the Future
+
+Current plans for updates include:
+
+* An updated model, which better predicts which news stories coming in are actually about police brutality
+* A new route which takes in data from the Back-end and processes it, returning visualizations of events of police brutality over time
+
+### Future Technical Challenges
+
+It goes without saying that work on any code will lead to bugs down the line, if there's anything I worry about, it's making sure that the model is as accurate as possible before sending the data along, without removing too many actual stories about police brutality. In addition, I worry about getting the data from back-end to provide visuals, but that can be solved by communicating with Back-end about how the data will come in.
+
+### What I've learned
+
+Number one: communication is key, between everyone on the team all the time, always. Communication has solved far too many problems for me to count, not only on this project, but on other projects as well. Being able to communicate effectively, even just a simple "hey, this is what I'm working on, here's how it works, here's how you access it, bla bla bla" works wonders. Same with pulling in team members from outside your scope of work and asking about how things will connect together.
+
+Other than that, I've learned that FastAPI is very cool and useful for quickly setting up apps that output data, it's a very nice framework and I'll definitely keep it in mind.
