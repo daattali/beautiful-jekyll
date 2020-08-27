@@ -171,6 +171,8 @@ EDITOR="code --wait"
 VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 ```
 
+Then save the file and exit VS Code.
+
 > Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 ## Python, Conda, and JupyterLab
@@ -514,7 +516,8 @@ code ~/.bash_profile
 ```
 
 Then past the following at the end of the file
-(make sure not to overwrite any existing lines):
+(make sure not to overwrite any existing lines)
+and save it afterwards:
 
 ```
 # Silence default shell note when launching bash

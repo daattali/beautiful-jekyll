@@ -192,6 +192,8 @@ EDITOR="code --wait"
 VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 ```
 
+Then save the file and exit VS Code.
+
 > Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 ## Python, Conda, and JupyterLab
@@ -357,6 +359,7 @@ Append the following line to the file
 export PATH="/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
+Then save the file and exit VS Code.
 Now you can open terminal and type
 
 ```
@@ -583,6 +586,7 @@ so you don't need to replace it manually.
 export PATH="/c/Users/${USERNAME}/make-4.3/bin":"/c/Program Files/R/R-4.0.2/bin/x64":$PATH
 ```
 
+Then save the file and exit VS Code.
 Launch a new terminal and run
 
 ```
@@ -683,7 +687,8 @@ code ~/.bash_profile
 ```
 
 Then past the following at the end of the file
-(make sure not to overwrite any existing lines):
+(make sure not to overwrite any existing lines)
+and save it afterwards:
 
 ```
 # Prepend a newline to the prompt string to separate it from the last command's output

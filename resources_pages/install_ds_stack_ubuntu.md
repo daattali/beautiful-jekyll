@@ -147,6 +147,8 @@ EDITOR="code --wait"
 VISUAL=$EDITOR  # Use the same value as for "EDITOR" in the line above
 ```
 
+Then save the file and exit VS Code.
+
 > Most terminal programs will read the `EDITOR` environmental variable when determining which editor to use, but some read `VISUAL`, so we're setting both to the same value.
 
 ## Python, Conda, and JupyterLab
@@ -373,7 +375,7 @@ tinytex::install_tinytex()
 
 The above is all we need to have LaTeX work with R Markdown documents, however for Jupyter we need to add the TinyTex executables to our `PATH` and install several more packages (`PATH` is a collection of directories which contain the available executable programs on your computer).
 
-To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`):
+To append the TinyTex executables to our `PATH` we need to edit our `.bashrc` file. The TinyTex executables are usually installed in `$HOME/bin`. Thus, add the lines below to the bottom of your `.bashrc` file (which you can open by `code $HOME/.bashrc`) and save the file:
 
 ```
 # Append TinyTex executables to the path
@@ -504,7 +506,8 @@ code ~/.bashrc
 ```
 
 Then past the following at the end of the file
-(make sure not to overwrite any existing lines):
+(make sure not to overwrite any existing lines)
+and save it afterwards:
 
 ```
 # Prepend a newline to the prompt string to separate it from the last command's output
