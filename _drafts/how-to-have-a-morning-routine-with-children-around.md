@@ -1,48 +1,35 @@
 ---
 layout: post
 title: How to Have a Morning Routine with Children Around
-subtitle: Keep it simple.
+subtitle: It's possible!
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- minimal exercise routine
-- simple exercise routine
-- simple exercise
-- HIIT exercise routine
+- miracle morning
+- morning routine with kids
+- surviving parenting
 
 ---
-A while back, I was helping my hubby come up with a simple exercise plan for himself to do before work that didn't require a lot of space or equipment. I remembered reading about how the Minimalists stripped back to a simple exercise routine in their book [Everything that Remains](https://amzn.to/2Cu5u3c) after ditching going to the gym to save on money and time. And then I found a blog with more details on it [here](https://www.theminimalists.com/18min/). My husband was easily able to make his own too!
+Images of 5am mornings, quiet cups of coffee alone before the kids wake up. Seems like a dream to you? You are not alone. Here's the truth: not every morning routine has to be or will look like this. Today on the blog I'm going to share with you ways to have a morning routine even if you have children, especially little children around (my children are currently 9, 6, 4, and 1 for reference).
 
-## Using HIIT routines: what are they?
+## Get up when you want to
 
-Recently my friend Terri shared that she uses HIIT routines for her workouts, so I thought to look into that further.
+If sleeping in or lounging around is your jam, do that. And if you can when you wake up (whatever time it is), here's a spot where you can get in some of your morning routine time too. Prayer, quiet, an ebook. My two little people are usually here with me too during this part of my morning routine.
 
-According to [Fitnessblender.com](https://www.fitnessblender.com/articles/what-is-hiit-and-how-do-i-use-it-in-my-training),
+## Work around what you are given
 
-> **"**[**High intensity interval training**](https://www.fitnessblender.com/videos/bodyweight-hiit-cardio-workout-sweaty-at-home-cardio-hiit) or HIIT is defined as short, intense, unsustainable bursts of physical activity, paired with intervals of quick rests. This type of intense training causes a sort of metabolic disturbance which can result in the body burning calories at a higher rate up to 48-72 hours later. HIIT can also increase metabolism, reduce insulin resistance, improve cardiac function, produce faster gains in endurance levels than steady state cardio training and can be an effective way to recruit/build type 2 fast twitch muscle."
+My kids are generally slow breakfast eaters and mostly quiet, so I'll sneak in some time here too. Reading and writing usually. If you know you can get quiet during play doh time or a tv show, sneak in time here, too. Be creative! It'll look different for each person.
 
-And I found out there were tons of ways to do HIIT routines and exercises, so I sat down and wrote up a simple plan for myself taking from various ideas out there that I found. Today on the blog I'm going to share with you how to design a simple exercise routine whether you have 5 or 30 minutes and beyond. It's what I'm currently doing for my daily exercise too and thought it may help you out.
+_Here's what I'm doing currently that's working for me_:  
+I get up when my two littlest are awake, anywhere from 6:30-7:30. I usually do my prayer, reading, daily gratitude, and a few other small things in bed. I usually do a bit of writing at another point, sometimes at the breakfast table. Ideally I like to finish most of it before breakfast, but sometimes I continue with the kids at the table (I pop on an audiobook for them on those days).
 
-## My current simple exercise routine
+## Do what works for you and don't compare
 
-1. Pick two cardio exercises such as burpees or jumping jacks.
-2. Pick one lower exercise such as squats or lunges.
-3. Pick one upper exercise such as push ups or bench dips.
-4. Pick one core exercise such as planks or mountain climbers.
+What others do may not work for you. If it becomes more of a fight, then take it as a sign that it just might be the wrong strategy or time of a day. If it's important to you, you'll find a way. Keep going!
 
-Notes:
-
-* Repeat the above routine X amount of times that you want (I'm currently doing 10 and 15 minutes..hoping to work that up). Each time through is 5 minutes.
-* Each individual exercise is 50 seconds, followed by ten seconds of rest.
-* Find a HIIT timer that does 50 seconds, 10 seconds. You can find an app or a YouTube video that can do this. I use this one [here](https://www.youtube.com/watch?v=-nRDPNGj2EU&list=PL9VK7qHep7EdvuE-Ux_hVKsADmizewBA5&index=2&t=609s) for when I do 15 minutes.
-
-_And that's it!_
-
-_If you'd like a simple worksheet to fill in your own simple exercise routine and with a few more exercise suggestions for each category, I can send you my personal setup too. Although they are all exercises that I know well and enjoy. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that worksheet for free._
+_Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/2BduGKX) _that everything clicked for me. I was so inspired. If you'd like a quick breakdown of what the Miracle Morning is, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that._
 
 Cheers,
 
 Kelly
-
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
