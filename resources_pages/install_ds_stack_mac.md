@@ -299,7 +299,8 @@ To see if you were successful, try opening RStudio by clicking on its icon (from
 ### Essential R packages
 
 Next, install the key R packages needed for the start of MDS program,
-by typing the following into the R console in RStudio:
+by opening up RStudio and
+typing the following into the R console inside RStudio:
 
 ```
 install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'usethis', 'devtools'))

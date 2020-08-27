@@ -427,7 +427,8 @@ If the `jsonlite` package installs without errors, Rtools is setup correctly.
 ### Essential R packages
 
 Next, install the key R packages needed for the start of MDS program,
-by typing the following into the R console in RStudio:
+by opening up RStudio and
+typing the following into the R console inside RStudio:
 
 ```
 install.packages(c('tidyverse', 'blogdown', 'xaringan', 'renv', 'devtools', 'usethis'))
