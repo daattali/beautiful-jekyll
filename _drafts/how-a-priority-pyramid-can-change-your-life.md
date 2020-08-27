@@ -1,42 +1,36 @@
 ---
 layout: post
 title: How a Priority Pyramid can Change Your Life
-subtitle: Keeping it simple.
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200822_110434_0000_compress19.jpg"
+thumbnail-img: "/uploads/20200826_203743_0001_compress41.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- to do lists
-- bullet journaling
-- bullet journal
-- planning
 - priorities
+- values
+- priority pyramid
+- how to discover your priorities
+- what matters most
 
 ---
-You are worth so much more than the size of your crossed off to do list. But goodness knows those lists can also help in the time of decluttering or other pressing matters.⁣⁣⁣⁣⁣ Have an unending to do list? Feel like you are never on top of things? ⁣⁣⁣⁣⁣Today on the blog I'm going to leave you with some to do list tips I read in a [Forbes article](https://www.forbes.com/sites/bryancollinseurope/2020/02/20/how-to-put-together-a-realistic-to-do-list-every-day/#4476afb519e3) that were simple and practical:⁣
+We know what priorities are and what they mean, but how do we really know what comes first? Today on the blog I'm going to share with you a visual way to structure and organize your priorities using a priority pyramid.
 
-## Keep things simple
+## Brainstorm your important areas of life
 
-Keep things simple. Focusing on three things or less is what is recommended.⁣⁣⁣⁣⁣ Otherwise, you'll end up with a ton on your list and that will just lead to overwhelm and perhaps the feeling of failure since you set your expectations too high!
+Take some time and write down all of the things that are important to you. Organize them into groups from least to most important. It’s important to do this step because in the heat of the moment in your day, you can refer to the pyramid to know which is the most important to focus on first. I originally found this idea from [House Unseen](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/houseunseen) on Instagram and it really helped me going forward when I felt burnt out or overwhelmed. It helped me to see clearly what I needed to prioritize.
 
-## Write your list in advance
+Example of an ordered priority pyramid – it’ll look different for everyone:
 
-Write your list in advance, ideally the night before. It allows for direction and clarity going forward.⁣⁣⁣⁣⁣
+![A picture of my ordered priorities.](/uploads/20200414_094404_0000-1.png "pyramid")
 
-## Start right away when you have the most energy
+## Put Your Priority Pyramid into Practice
 
-Start right away in the morning when you have the most energy. ⁣⁣⁣⁣⁣I remember reading in Mel Robbin's book [The Five Second Rule](https://amzn.to/32iJ5jS) about how she shares that mornings are when we have the most energy. The first few hours of the day! So, get your productive to do list juices going as soon as possible basically.
+A priority pyramid is meant to be a tool, something to help you out when needed. Refer to it often when you are faced with overwhelm in your day too. It may help refocus you on what matters most! Keep it in a place where you may see it often if that’s helpful.
 
-## Do a brain dump
+_PS want to dive into discovering your priorities for your Priority Pyramid a bit more? I have a list of 20 other possible priorities for you to look at that you may want to include. Just send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that list._
 
-Do a brain dump if you feel the need to have a massive to do list and then set aside to reflect and look on in the future. ⁣⁣I use to do lists for a lot of things and keep running lists of them for future reference. But, my daily to do list is written in my [bullet journal planner](https://amzn.to/3gVIn0f).
-
-![A picture of my journal opened up.](/uploads/bulletjournal.jpg "bulletjournal")
-
-_If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those links._ 
-
-_Cheers,_
+Cheers!
 
 Kelly
 
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
+**Was this helpful? If you enjoyed this, I’d love it if you shared it below.**
