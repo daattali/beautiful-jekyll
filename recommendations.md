@@ -8,7 +8,7 @@ subtitle: ''
 
 * Amazon Shop: Shop [HERE](http://www.amazon.com/shop/eastcoastkelly) if you are in the US. Shop [HERE](http://www.amazon.ca/shop/eastcoastkelly) if you are in Canada. I’ll be adding things regularly that I love, use, and/or recommend from Amazon! Enjoy.
 
-![A picture of me in the mirror. Amazon shop image.](https://www.eastcoastkelly.com/assets/img/20200606_151056_0000.png "amazonshopimage")
+![A picture of me looking in the mirror.](/uploads/20200606_151056_0000-1.png "meinmirror")
 
 * Get 10% off + free shipping for my fave scrunchies that I wear almost daily with the code EASTCOASTKELLY10 at [Scrunchie Squad](https://www.scrunchiesquad.com/).
 
