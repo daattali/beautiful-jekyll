@@ -21,18 +21,18 @@ layout: null
       data: $(this).serialize(),
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
-        $('#comment-form-submit').addClass('hidden');
-        $('#comment-form-submitted').removeClass('hidden');
-        $('.page__comments-form .js-notice').removeClass('notice--danger');
-        $('.page__comments-form .js-notice').addClass('notice--success');
+        $('#comment-form-submit').addClass('d-none');
+        $('#comment-form-submitted').removeClass('d-none');
+        $('.page__comments-form .js-notice').removeClass('alert-danger');
+        $('.page__comments-form .js-notice').addClass('alert-success');
         showAlert('success');
       },
       error: function (err) {
         console.log(err);
-        $('#comment-form-submitted').addClass('hidden');
-        $('#comment-form-submit').removeClass('hidden');
-        $('.page__comments-form .js-notice').removeClass('notice--success');
-        $('.page__comments-form .js-notice').addClass('notice--danger');
+        $('#comment-form-submitted').addClass('d-none');
+        $('#comment-form-submit').removeClass('d-none');
+        $('.page__comments-form .js-notice').removeClass('alert-success');
+        $('.page__comments-form .js-notice').addClass('alert-danger');
         showAlert('failure');
         $(form).removeClass('disabled');
       }
@@ -42,13 +42,13 @@ layout: null
   });
 
   function showAlert(message) {
-    $('.page__comments-form .js-notice').removeClass('hidden');
+    $('.page__comments-form .js-notice').removeClass('d-none');
     if (message == 'success') {
-      $('.page__comments-form .js-notice-text-success').removeClass('hidden');
-      $('.page__comments-form .js-notice-text-failure').addClass('hidden');
+      $('.page__comments-form .js-notice-text-success').removeClass('d-none');
+      $('.page__comments-form .js-notice-text-failure').addClass('d-none');
     } else {
-      $('.page__comments-form .js-notice-text-success').addClass('hidden');
-      $('.page__comments-form .js-notice-text-failure').removeClass('hidden');
+      $('.page__comments-form .js-notice-text-success').addClass('d-none');
+      $('.page__comments-form .js-notice-text-failure').removeClass('d-none');
     }
   }
 })(jQuery);

@@ -1,12 +1,12 @@
 .main-content {
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 footer.footer-min {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 3px;
+  padding: 0.1875rem;
   background-color: #f5f5f5;
   border-top: 1px solid #eeeeee;
   text-align: center;
