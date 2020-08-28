@@ -355,7 +355,7 @@ jupyter lab build
 To check that the extension is working,
 open JupyterLab,
 launch an R notebook,
-and try inserting the operators by pressing `Alt` + `-` or `Option` + `Command` + `m`, respectively.
+and try inserting the operators by pressing `Alt` + `-` or `Shift` + `Command` + `m`, respectively.
 
 ## LaTeX
 
