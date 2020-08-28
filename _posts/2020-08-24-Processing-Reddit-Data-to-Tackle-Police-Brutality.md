@@ -3,7 +3,7 @@ title: Processing Reddit Data to Tackle Police Brutality
 subtitle: A short dive into the world of Natural Language Processing
 ---
 
-## Background
+## To Preface:
 
 This project was made in conjunction with Human Rights First, an independant advocacy and action organization. The work they do is centered around getting America to stand up to its ideals, and in doing so, they sought the help of Lambda School for their project. Their challenge to my group and I, as well as two other groups of students here at Lambda, was to see if we could make a map of continental America that showed events of police brutality, using data aggregated from Reddit and Twitter.
 
@@ -13,9 +13,11 @@ While most of the issues pertaining to the website and getting that to work fell
 
 At first, both Chris and I worried about using FastAPI and AWS; we'd never worked with either framework, so we worried that we'd have to spend a fair amount of time learning how it works and getting it set up. On further inspection, we realised that FastAPI beared a striking resemblance to Flask, another kind of web-app framework, but came with a built-in user interface that allowed us to test the functions of our app. As for the Amazon Web Services, we haven't gotten that far, but we expect to have an app built later this week.
 
-## API Roadmap Breakdown
+## Planning, Preparation, and Inevitable Conflicts
 
-At the start of working on the project, we broke down what we thought we'd need to make in order to get our app running. This included things like finding a source of data, cleaning it, getting the app up and running, and outputting the cleaned data through an endpoint in the app. There were also times during working on the project where there was some confusion with how the data would flow from the API to the backend, and at one point, Chris and I had set up a database to hold data because there was some miscommunication as to who would be sanitizing the data for duplicates.
+At the start of working on the project, we broke down what we thought we'd need to make in order to get our app running. This included things like finding a source of data, cleaning it, getting the app up and running, and outputting the cleaned data through an endpoint in the app with all the relevant information that the back-end of the website would need to place each point of data on the map. 
+
+However, there were also times during working on the project where there was some confusion with how the data would flow from the API to the backend. At one point, Chris and I had set up a database to hold data, only to find out that we wouldn't need one, given that it would be Back-end dealing with duplicates.
 
 ![picture of trello board](https://i.imgur.com/BEg4Eao.png)
 
@@ -70,6 +72,6 @@ It goes without saying that work on any code will lead to bugs down the line, if
 
 ### What I've learned
 
-Number one: communication is key, between everyone on the team all the time, always. Communication has solved far too many problems for me to count, not only on this project, but on other projects as well. Being able to communicate effectively, even just a simple "hey, this is what I'm working on, here's how it works, here's how you access it, bla bla bla" works wonders. Same with pulling in team members from outside your scope of work and asking about how things will connect together.
+Hands down: communication is key, between everyone on the team all the time, always. Communication has solved far too many problems for me to count, not only on this project, but on other projects as well. Being able to communicate effectively, even just a simple "hey, this is what I'm working on, here's how it works, here's how you access it, bla bla bla" works wonders. Same with pulling in team members from outside your scope of work and asking about how things will connect together.
 
 Other than that, I've learned that FastAPI is very cool and useful for quickly setting up apps that output data, it's a very nice framework and I'll definitely keep it in mind.
