@@ -3,35 +3,42 @@ layout: post
 title: How to Have Quiet Time with Kids
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- rhythms at home
-- daily family rhythms
-- creating a daily rhythm at home
+- quiet time with kids
+- quiet time
+- quiet time afternoons
+- simple quiet time
+- benefits of quiet time for kids
 
 ---
-I've noticed over the years as we've added on more kids that I (and they) do better with flexible rhythms to our days vs. completely structured days. This is just what works for us, at least right now. I’ve tried the schedule type idea many times, but always hit a wall of it not working and just generally stressing me out. Today on the blog I’m sharing with you how to create a daily rhythm at home (by giving you examples of our rhythm throughout the day too).
+![A kid sitting at the table thinking.](/uploads/quiettime.png "quiettime")
 
-# What’s a rhythm?
+I don't know about you, but by the time I'm done lunch, I'm pooped. My ears. My body. My everything just needs some down time. I have four children, two with higher demands as they are both under five, so rest and quiet is needed for all of us. And we take that time every afternoon. We call it quiet time in our house. Today on the blog, I'm sharing with you how to have a quiet time routine with kids (and by taking a look at what we do).
 
-According to the [Cambridge dictionary](https://dictionary.cambridge.org/dictionary/english/rhythm): "a regular movement or pattern of movements" or "a regular pattern of change, especially one that happens in nature". So, applying that to our day - that is a regular pattern that we go about our day. Predictable. Natural. Free flowing.
+## Keep things simple
 
-## How to create a rhythm for your days
+Anytime I try to do anything elaborate, I find I always end up dropping it, so if you are new to quiet the idea of quiet time, start small. Keeping things simple will make quiet time that much more doable long term. Test and try different things over time, too.
 
-I focus on our priorities and the energy levels of the kids and myself and base it all around that.
+## The key is consistency
 
-## Examples of our daily rhythms
+If you really desire a quiet time for your family, know that it may get harder before it gets easier. New things are just harder to implement because they are new. But, from nine years of quiet time over here, the upfront work was definitely worth it! I really look forward to quiet time every day and the kids do too (most of the time).
 
-_Mornings_: We all naturally wake up usually around 7-7:30. I need about 30 minutes to get going for the day. We usually have breakfast around 8. The energy is lower here, so I usually take some time for quiet reading and prayer.
+## A look at our quiet time right now
 
-_Midmornings_: After breakfast, we head into school after getting ready for the day. If it’s not a school day, we’ll dive into some activity. Projects around the house, getting outside, just some kind of movement. My natural energy levels usually dip by about 11, so we aim to be done school around then to have some free play time or whatever else pops up. I usually spend some time here doing some work – usually a social media post or blog or the likes of that. We then naturally break for lunch around 12.
+While I put the baby for a nap at 1, my boys:
 
-_Afternoons_: For years now, we’ve had quiet time in the afternoons. It used to be just nap time, but with various ages in our family, it’s now called quiet time. At 1pmish most days, I set the boys up for their quiet time. “Hey boys! It’s quiet time. Pick a tidy task to do in your room, read your book for your school reading for x amount of time, and then play quietly until Josie is asleep.” This lasts from about 1 to 2 depending on the day. It’s a nice period of time for me too to usually have some quiet. Sometimes I’ll just rest. Sometimes I’ll read or answer emails. When Josie is asleep, the boys now can have a bit of screen time until Josie is awake and while I usually work here. Some days, I do choose to rest, depending on the day. But most days, I enjoy working in the quiet. I pop on an audio training usually and go about some of the priority work tasks.
+* Tidy their rooms, usually one to two tidy tasks if it’s more of a mess.
+* Read an assigned school reading.
+* Listen to audiobooks.
+* Watch two shows…and don't bug mom. Ha!
 
-Evenings: We have supper around 5 right now and aim for getting ready for bed at 6:30 with everyone. Pyjamas on, cleaned up, in bed. I usually exercise with the baby during this time here too as I’ve found it to be the best time of day for me. I’m usually toast after that, so if I have any work left to do, I make sure it’s more lowkey, not as much thinking kinds of tasks. I’ve recently been trying to end the day with a bit of writing, reading, praying too. The best way to end the day for myself and to encourage a restful sleep too!
+When my baby is asleep, I am usually in my office working. Answering emails, listening to music with the odd interruption here and there. I take some time to close my eyes and rest with the baby before this too.
 
-_Want to redo your days and create some rhythms for your days too? You may like the rhythm builder template I put together for you. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that for free._
+And don’t take it just from me, [here’s a blog](https://blog.outschool.com/quiet-time-benefits/) that goes over the research of the benefits of quiet time for kids. Fascinating!
+
+_I also recently put together a step by step simple template for quiet time if you'd like that too. Send me an email at_ [_eastcoastkelly.com_](http://eastcoastkelly.com/) _if you'd like that and I'd be happy to share. In fact, I'm so passionate about quiet time that I'd be happy to chat with you to figure out your individual needs as a family for quiet time._
 
 Cheers,
 
