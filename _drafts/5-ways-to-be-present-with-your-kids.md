@@ -3,44 +3,28 @@ layout: post
 title: 5 Ways to be Present with Your Kids
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- good habits
-- habit stacking
-- making habits stick
+- Slow living with kids
+- being present with your kids
+- ways to be present with your kids
 
 ---
-![A water glass on a table.](/uploads/20200708_073642_0000-1.png "waterglass")
+![My boys eating pancakes at the table.](/uploads/20200709_225120_0000-1.png "diningtablekids")
 
-Are you fighting to make habits stick without much results? Life is full of ups and downs, but there are some simple tweaks that can be made to make habits you want to do a regular basis stick, even when they get dropped once and a while due to life. Today on the blog, I'm sharing how to make habits stick without much effort.
+I don't know about you, but sometimes the duties of the day can just sweep me away and by the end of the day I look back and realize. Oops. I was on autopilot all day. It can take practice to slow down and be present. Today on the blog, I'm sharing five ways to be present with your kids.
 
-_Habit stacking._ Have you heard of habit stacking before?
+1. Stop and write down something you are grateful for (suggestion found on [this blog](https://www.wanderlustworker.com/how-to-be-present-the-5-steps-for-living-in-the-here-and-now/)). In fact, I've read that there have been studies that:[ "Writing things down doesn’t just help you remember, it makes your mind more efficient by helping you focus on the truly important stuff."](https://www.forbes.com/sites/markmurphy/2018/04/15/neuroscience-explains-why-you-need-to-write-down-your-goals-if-you-actually-want-to-achieve-them/#1dd263ad7905)
+2. Stopping and just breathing can help slow down the mind and body and help you focus on the present.
+3. Looking closely at what your children are doing can help you focus on what's in front of you - your children. I know this sounds simple, but if you're like me, sometimes my brain is racing and needs something to focus on to become more present in the moment. It's been helpful!
+4. Move your body. Run around with your kids. Wiggle your toes (I found this suggestion [here](https://www.productiveflourishing.com/12-simple-ways-to-be-present/)). Moving your body reminds you where you are and whom you are with.
+5. Do something that you enjoy with your kids. For me, that's 100% when I get to chase them around and make them laugh and squeel. It's almost always my favourite moment of the day when I take time to do this. Whatever it is for you and your kids, take time to do that fun thing.
 
-> Habit stacking is a strategy you can use to group together small changes into a routine that you follow daily. The key to consistency is to treat a habit stack like a single action instead of a series of individual tasks. (from [developinggoodhabits.com](http://www.developinggoodhabits.com/)).
-
-When I want to add something new into my routine or just plain want to be more consistent with something, I sometimes will lean on this idea of habit stacking. It has a higher chance of sticking if it's stacked with an already established habit. It's pretty neat how it works that way.
-
-Here are a few examples that I've habit stacked:
-
-* Every time I go to a bathroom, I drink a glass of water.
-* When I go down for breakfast, I bring down a load of laundry and turn on a wash.
-* When I get ready for the day or for bed, I listen to an audiobook.
-* When my husband comes out from putting the four year old to bed, that’s my exercise time.
-* After I sit down to supper, I ask my children the best thing about their day.
-
-I try to habit stack habits that have been having a hard time sticking and also ones that I want to make priority too. My most recent one was audiobook + getting ready. I've been loving doing this so far!
-
-##### Further reading on this topic:
-
-[Atomic Habits An Easy & Proven Way to Build Good Habits & Break Bad Ones](https://amzn.to/2W0fHLp), James Clear
-
-[**Habit Stacking: 127 Small Changes to Improve Your Health, Wealth, and Happiness**](https://amzn.to/2Z7f30B)**,** S. J. Scott
-
-_PS if you want to learn more about habit stacking, you may love the freebie my mail list is receiving on Friday - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+_PS Enjoyed these tips? I have ten more of them like these if you'd like that I found. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share them with you._
 
 Cheers,
 
-Kelly
+Kelly Briggs
 
 **Did you find this helpful? If so, I would greatly appreciate if you shared it.**
