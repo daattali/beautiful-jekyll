@@ -1,43 +1,48 @@
 ---
 layout: post
-title: How to Beat
+title: How to Beat Procrastination with this One Simple Effective to do list Strategy
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/87326336_10163016305905627_3065688325206573056_o.jpg"
+thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- the best morning routine
-- morning routines
-- morning routine for moms
+- to do list tips
+- beating procrastination
+- time management tips
 
 ---
-![Blog image title with a hand holding a coffee.](/uploads/20200608_112045_0000.png "coffee")
+![An image of my coffee, pen, and planner with blog title.](/uploads/20200608_221652_0000.png "morningplanner")
 
-“Monday is the perfect day to correct last week’s mistakes.” A fresh start, right? I love to jump into a new week and forget about last week. I mean, learn from yesterday, last week, but face the day and week with a new lens, and with the learned lessons from last week. Today on the blog, I'll be sharing with you five things that people who have morning routines figured out do to have the best morning ever (to set them up for success for the day, week).
+A couple months back I started reading the book [Eat that Frog!](https://amzn.to/3gVpdaF) after it was recommended to me by an Instagram friend, [@simply.a.momslife](https://www.instagram.com/simply.a.momslife/) It’s a book essentially about beating procrastination and the author, Brian Tracy, has years of research on this subject area behind him. It’s a quick, great read.
 
-From [a blog](https://www.forbes.com/sites/jennifercohen/2018/04/09/9-morning-hacks-for-your-best-day-ever/#6cb48dca6e28) I found on starting the day if you'd like to work on this kind of thing too - to start your day from a place of rest:
+Procrastination likes to bite me often and I’ve been reading more about it in order to understand it better. No matter the most amazing management skills you learn, sometimes it’s way deeper than that, I found out. Mel Robbins in [the Five Second Rule](https://amzn.to/3fqSrhf) chats about how procrastination is often a form of avoidance. Avoidance of hard things and stress.
 
-## Wake up early
+Today on the blog, I’ll be sharing with you how to beat procrastination with this one simple, effective to do list strategy…if you’d like to start tackling it better too and move closer towards your goals.
 
-(confession: nope. not me in this season of life, but waking up early can be good for many people). In fact, [this study](https://nypost.com/2019/06/11/waking-up-early-can-make-you-happier-and-healthier-study/#:\~:text=In%20fact%2C%20new%20international%20research,stressed%20under%20their%20new%20sleep) suggests that waking up early can have a major positive impact on your mental health. Also, going to bed early too. I know I feel better when I’m on a healthier going to bed, wake up routine.
+## The ABCDE Method
 
-## Smiling and thinking about something good
+> The ABCDE list is a to-do list on steroids when it comes to learning how to prioritize.
 
-Smiling and thinking about something good about your upcoming day can set the tone for the rest of the day, week. I usually start my day with positive[ affirmations](https://www.eastcoastkelly.com/morning%20routine/2020/05/06/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice.html) and I find that can help set the tone for the whole day.
+It's a simple method and effective because it’s so action oriented.  
+How it works: write down your to do list for the day. Then you'll categorize them from A - E. Each letter means something different.
 
-## Drink some water
+**What each letter means:**
 
-Drink a glass of water to reverse any thrist from overnight. I don’t think I’m dehydrated in the mornings, but hey, drinking water is always a good idea, right? Especially if your morning choice of hot drink is coffee. Take a peek at [this article](https://www.healthline.com/nutrition/drinking-water-in-the-morning#popular-claims) here about drinking water and some myths, benefits.
+_An A item_ means it's very important. This is something that you must do and if you didn't do it, there would be significant consequences. If you have more than one “A” task, write A-1, A-2, A-3.
 
-## Sitting in the quiet
+_A B item_ is defined as a task that you should do, with mild consequences. And do not move onto a B item until all of the A items are done.
 
-Pray or sit in the quiet. The quiet is oftentimes when our brains have a chance to think things through and come up with new insights. Sitting in the quiet will help calm and focus us for the day.
+_A C item_ is something that would be nice to do, but there are no consequences if you don't do them. So, they can easily be forgotten about or moved to another day.
 
-## Reading
+_A D item_ is something that you can delegate, pass onto someone else.
 
-Grab a book and read a little. Even a little bit every day can add up to a lot over time. Allowing the time for learning something new or reading a book you’ve put off. This is a great time to read. And to chew through the content, think about it the rest of the day.
+_An E item_ is for something to get rid of completely. It's no longer relevant.
 
-_Also - Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+The key to making this ABCDE Method is to follow through with it with consistently doing it.
+
+And. That's it! I’ve been using it now for a few weeks and I can say for sure, it’s having an impact on my focus and productivity. I used to look at, even a SMALL to do list and just get lost in thought or scrolling on Facebook because I couldn’t decide which to do first. Now, I just take a minute in the morning to label them from A-E. Problem solved!
+
+_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/3gVpdaF) _is soooo helpful, as I mentioned. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests beating procrastination, send me at email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that recap._
 
 Cheers,
 
