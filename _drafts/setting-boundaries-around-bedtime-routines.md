@@ -6,31 +6,33 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- picky plates
-- finger foods
-- busy family quick meals
-- lunch food ideas for kids
+- setting boundaries around bedtime
+- how to deal with bedtime
+- bedtime routines for kids
 
 ---
-![A picture of our dining table with plates on it.](/uploads/20200617_103658_0000-1.png "diningtable")
+![A picture of a teddybear against a pillow.](/uploads/20200617_214402_0000-1.png "teddybear")
 
-I don't know about you, but some days here. Mealtimes can be like rushing at the speed of light to feed. the. wolves. It used to stress me out and once and a while still does...especially when I've been slacking in the meal planning department. Today on the blog I'm sharing with you three tips to feed the hangry children fast.
+Today on the blog, I’m sharing ways to set boundaries around bedtime routines by taking a look at what we have done over the years. I remember back in the “trench years” of parenting with the kids all being under five and under – bedtime was extremely exhausting for us. It was a marathon I’d often call it. I’d message a more seasoned mom of many friend of mine who I looked up to for her parenting wisdom about what to do with my gopher children popping in and out of their rooms. It was driving us bananas some nights. “Me time” was at 10pm or later many nights of the week. Her practical suggestions were so, so helpful and started helping us in the bedtime and beyond area.
 
-### 1. Meal plan
+My friend shared something like:
 
-I mean, this one is a no brainer, but really, just a bit of time in advance will help SO much in the moment when there are hangry, hangry children begging for food in front of you. And I know for me, it’s really hard to think in the moment. Having a plan in advance will cut that thinking time and decision making time and get food on the table faster to feed the family. Check Jennifer over at [Kids Eat in Color](https://kidseatincolor.com/) too, especially if your kids struggle with eating veggies! She's a great resource.
+> 1. We just put them to bed at X time and that’s that unless they need us for something important (i.e. a scrape or are sick).
+> 2. We turn up the TV louder. It’s our time and they need to know that it’s their time too – bedtime. (ha!)
 
-### 2. Prepare in advance
+At first, I was like. Nooo! We weren’t in that place yet of more independence, but we had to start somewhere, right? We had to work backwards setting expectations with our kids around bedtime. But, with consistency, and setting boundaries that worked for our family – it slowly came together over time.
 
-Preparing certain foods in advance will reduce prep to table that much faster during meal times. Chopping carrots, preparing meats, anything to cut that time in the moment when the hangry children are ready to eat! I always regret when I don’t have it ready and you can see me in the kitchen chopping as fast as humanly possible instead. Ha!
+#### What bedtime generally looks like now for us:
 
-### 3. Involve the kids
+* The kids are In bed by about 7, later in the summer sometimes. Our kids are 9, 7, 4, 1 - for reference. And this doesn't apply to the one year old yet.
+* Quiet activities like reading, talking quietly, drawing in the evenings until lights out. Sometimes we do need to remind them of this, but in general, it's been working well.
+* Must knock on our door quietly if we are needed.
+* Only leave rooms for the bathroom or an emergency (i.e. a cut etc).
+* They are escorted back to their rooms otherwise. This took a lot of time and consistency to get to, but it came together over time.
+* We share with them that bedtime is their quiet time and ours as adults too. We all need downtime!
+* Repeat, enforcing, making clear boundaries is so key here for bedtime routines.
 
-If the kids are able, having them involved in whatever way will help speed up the process too. Setting the table, getting out utensils. Filling the water cups. Grabbing out any food to put together. Having the kids involved will help the meals to get out faster (sometimes, let’s be honest) and there’s nothing like encouraging kids to be involved, even the youngest ones! We’ve noticed that it’s been worth the effort long term here.
-
-And summers are GREAT times of the year to focus on fresh, quick, and [finger foods](https://www.superhealthykids.com/recipes/top-20-finger-foods-baby/). At least for our family.
-
-_PS if you'd like to work on a summer meal plan for your family, you may like what my mail list is receiving for freebie Friday this week: Summer snacks and ten meals that are quick, healthy, delicious. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that freebie too._
+_PS if you’d like a list of other ideas of boundaries you can set around bedtime for various ages, feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
 Cheers,
 
