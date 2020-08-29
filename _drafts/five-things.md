@@ -1,36 +1,45 @@
 ---
 layout: post
-title: Five Things
+title: Five Things You Can Do to Have the Best Morning Ever
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200603_211726_0000.png"
+thumbnail-img: "/uploads/87326336_10163016305905627_3065688325206573056_o.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- working at home with kids
-- tips for working at home with kids
+- the best morning routine
+- morning routines
+- morning routine for moms
 
 ---
-![](/uploads/20200603_211726_0000.png)
+![Blog image title with a hand holding a coffee.](/uploads/20200608_112045_0000.png "coffee")
 
-Hard to believe it's been nine years since I've had a side business with kids at home. I started shortly after my first was born. And I've learned a lot through these years. And I’m still learning! Today on the blog, I'm going to be sharing some tips I've learned through experience and from what other successful work at home parents do too.
+“Monday is the perfect day to correct last week’s mistakes.” A fresh start, right? I love to jump into a new week and forget about last week. I mean, learn from yesterday, last week, but face the day and week with a new lens, and with the learned lessons from last week. Today on the blog, I'll be sharing with you five things that people who have morning routines figured out do to have the best morning ever (to set them up for success for the day, week).
 
-## Flexibility in routines
+From [a blog](https://www.forbes.com/sites/jennifercohen/2018/04/09/9-morning-hacks-for-your-best-day-ever/#6cb48dca6e28) I found on starting the day if you'd like to work on this kind of thing too - to start your day from a place of rest:
 
-Flexibility is extremely key, especially if the kids are younger. One being to have an extremely, extremely flexible [flow / rhythm to the day](https://www.eastcoastkelly.com/at%20home%20with%20kids/planning/2020/05/21/how-to-create-a-daily-rhythm-at-home.html). Structured schedules just do not work for life at home with kids (at least with mine) - especially younger ones. My kids, who are also homeschooled, also have a free-flowing type of rhythm to the day too.
+## Wake up early
 
-## Have a set aside work space
+(confession: nope. not me in this season of life, but waking up early can be good for many people). In fact, [this study](https://nypost.com/2019/06/11/waking-up-early-can-make-you-happier-and-healthier-study/#:\~:text=In%20fact%2C%20new%20international%20research,stressed%20under%20their%20new%20sleep) suggests that waking up early can have a major positive impact on your mental health. Also, going to bed early too. I know I feel better when I’m on a healthier going to bed, wake up routine.
 
-Having a space set aside for work is helpful for focus, but learning ways to get work done with the kids around too is important. Having a space that you can stand at to keep fingers out of your work, getting some tasks done on your phone and so on are strategies that help.
+## Smiling and thinking about something good
 
-## Find outside (or inside) help
+Smiling and thinking about something good about your upcoming day can set the tone for the rest of the day, week. I usually start my day with positive[ affirmations](https://www.eastcoastkelly.com/morning%20routine/2020/05/06/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice.html) and I find that can help set the tone for the whole day.
 
-If funds allow, hire a helper to watch the kids for when you need some extra focus. Or, what we've done over the years, is to take turns doing bedtime duties so that some evenings I have chunks of focused time to get work done.
+## Drink some water
 
-And **the best thing that has kept me going through the years** is that I try not to compare to others. Comparing to others who work from home (with or without kids) will only set yourself up for failure. Focus on small wins and keep tweaking your days to make it natural for both yourself and your kids will keep you going.
+Drink a glass of water to reverse any thrist from overnight. I don’t think I’m dehydrated in the mornings, but hey, drinking water is always a good idea, right? Especially if your morning choice of hot drink is coffee. Take a peek at [this article](https://www.healthline.com/nutrition/drinking-water-in-the-morning#popular-claims) here about drinking water and some myths, benefits.
 
-_PS if you love this kind of thing, you would enjoy the working at home with kids guide that I put together a couple years ago. It's filled with tips and strategies I've found helpful over the years. Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+## Sitting in the quiet
 
-Cheers!
+Pray or sit in the quiet. The quiet is oftentimes when our brains have a chance to think things through and come up with new insights. Sitting in the quiet will help calm and focus us for the day.
+
+## Reading
+
+Grab a book and read a little. Even a little bit every day can add up to a lot over time. Allowing the time for learning something new or reading a book you’ve put off. This is a great time to read. And to chew through the content, think about it the rest of the day.
+
+_Also - Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+
+Cheers,
 
 Kelly
 
