@@ -3,42 +3,36 @@ layout: post
 title: 10 Ways to Simplify Your to do List
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/87326336_10163016305905627_3065688325206573056_o.jpg"
+thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- morning routine for moms
-- morning routine
-- morning routines with kids
+- simple to do lists
+- simplifying your to do lists
+- minimal to do list
+- simple planning
 
 ---
-_I asked my friend_ [_Melissa_](https://www.instagram.com/slowscenesofhome/) _about her morning routine to share with all of you because I know she makes time for herself most mornings with and/or without kids. I absolutely love how she incorporates #3 into her routine. I'm so inspired! I hope you enjoy what she shares today._
+![A picture of my coffee on the table.](/uploads/20200804_155040_0000_compress44-2.jpg "coffeeonthetable")
 
-...
+_You are worth so much more than the size of your crossed off to do list_. But goodness knows those to do lists can also help in the time of decluttering or other pressing matters or with bigger plans or goals (I’m working on something big right now and a simple to do list is so helpful and [this planning process](https://www.eastcoastkelly.com/planning/2020/07/30/how-to-start-goal-setting-without-stressing-out.html) I'm using for goals).
 
-My "morning routine." Well... this year has been so crazy. My husband's schedule has been all over the place - from deployed, to home all the time, to everything in between. So my usual rhythms can hardly be called such!
+This week it's ...[**Simplify Your Life Week**](https://nationaldaycalendar.com/simplify-your-life-week-first-week-in-august/#:\~:text=Simplify%20Your%20Life%20Week%20is,that%20causes%20stress%20or%20anxiety.)**.** It's "observed during August of each year. This holiday encourages those who need to refocus **their** lives and declutter – that doesn't just mean objects. The idea is to eliminate anything that causes stress or anxiety". As a part of this simplify your life week, I'm joining with a bunch of other amazing simple living ladies on [Instagram](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/www.instagram.com/eastcoastkelly) to share ways to simplify our lives, with my topic being simplifying the to do list. Today on the blog, I'm sharing 10 ways to simplify your to do list.
 
-There are lots of preferable things I manage to start the day with... once in a while. Some days, I can get in a walk or run in the morning. Sometimes, hubby is home and watches the kids so I can actually get a hot shower, get dressed, and have some uninterrupted time to read my bible! But other days, I nibble a chocolate bar while pushing last night's dinner dishes aside in order to serve breakfast. It's all been so different and up in the air this year, lol. But isn't that motherhood anyway?
+ 1. **Keep things simple**. Have lots of complicated tasks? Break them down into simple daily tasks for your to do list.
+ 2. **Focus on three main things** or less is what is recommended by some. [This blog](https://www.becomingminimalist.com/to-do/), written by a minimalist leader, Joshua Becker, talks about the three item to do list.
+ 3. **Write down your list in advance**, ideally the night before. It allows for direction and clarity going forward.
+ 4. **Do a brain dump** if you have a massive to do list and then set it aside to reflect and look on in the future.
+ 5. **Use a** [**simple prioritizing method**](https://www.eastcoastkelly.com/time%20management/planning/2020/06/09/how-to-beat-procrastination-with-this-one-simple-effective-to-do-list-strategy.html) **for tasks** that helps you to do the priority tasks first. Number them (I use letters) from most to least important. I learned this method from the book [Eat that Frog!](https://amzn.to/2DmKOdX) You can also read about this method on my blog [here](https://www.eastcoastkelly.com/time%20management/planning/2020/06/09/how-to-beat-procrastination-with-this-one-simple-effective-to-do-list-strategy.html).
+ 6. **Move nonpriority tasks to the weekend** (or for quieter days). For me that would be things such as makes tweaks to my website.
+ 7. **Take time to reassess to do list tasks**. Ask yourself if they are in line with who you are, your values, who you want to become. See [my blog on values](https://www.eastcoastkelly.com/planning/2020/05/28/how-to-discover-your-values.html) about how to start discovering yours.
+ 8. **Set time amounts for to do list tasks**. Sometimes, I know for me, I can write too much on my to do list only because I am not always great at time estimating. Taking a few minutes to think about how much time a task takes will give you a better idea of what is doable for you to write down on your to do list and to simplify your to do list. When I started tracking how long things took me, they usually were twice as long as I thought.
+ 9. **Pick a place to keep your daily to do list**. [Written is best](https://www.forbes.com/sites/markmurphy/2018/04/15/neuroscience-explains-why-you-need-to-write-down-your-goals-if-you-actually-want-to-achieve-them/#2501ca0d7905). But if written is not your thing, use something. Anything. Consistently. And in one spot vs. all over the place (i.e. hello sticky notes that I used to lose all over the house). I now use the [bullet journaling method](https://amzn.to/3fB51uF) so my to do list stays in one place, where it needs to be.
+10. And. **Default to a bare minimum “to do list” day** when you have to throw out the to do list. Because sometimes even a simple to do list needs to be thrown out. I know it does here sometimes having four kids in the home!
 
-But whether I manage to start the day alone, or have 4 little people climbing all over me, my "morning routine" always ends up involving these three things:
-
-1. Prayer. Be it calm & peaceful conversations... or in the midst, frantic, "dear-God-please-dont-let-me-explode-already" please.... there is always prayer.
-2. Tea. I'm a tea girl! Sometimes it's hot & delightful... sometimes lukewarm, sipped while sighing... sometimes gulped cold or poured half-finished down the drain. But I always get in at least 2 sips of tea.
-3. Candles. The goal is to calmly light a few candles in the kitchen as the dawn is breaking, before my kids wake... during that ideal, peaceful quiet time and breakfast puttering, with some pretty instrumental music in the background. And when that does happen, it's super fun:) But far more often, the candles are hastily lit in the midst of squabble #55 before breakfast, in an effort to reset the tone before our day completely derails.
-
-And that's ok. These things are tools, not intended for a perfect life. Rather, they're intended to strengthen my heart for the opposite! ;)
-
-So that's what works for me. :) The variations are huge, but no matter the ideal or bizarre script of circumstances for the morning? My spirit needs prayer... my body needs something comforting and hot to sip... and my heart needs to light some beauty & hope into the day. Peacefully, or in the midst of the chaos, you'll finding me riding out the morning doing these at least these three things.
-
-![A picture of Melissa holding her baby.](/uploads/img_20191123_203758_783_compress88-1.jpg "Melissa")
-
-Melissa is a quiet military wife, and stay-at-home mom of 4 kids under 6. She homeschools, drinks a lot of tea, laughs till her face hurts, is always barefoot and never on time. She's passionate about encouraging other moms to breathe freely, and keep their eyes on what's most important. She blogs on [slowscenesofhome.wordpress.com](http://slowscenesofhome.wordpress.com/) and you can find her at [@slowscenesofhome](https://www.instagram.com/slowscenesofhome/) on Instagram.
-
-...
-
-_PS Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_PS if creating a simple to do list and planning is a struggle for you, you may like what my mail list received for their freebie Friday recently: The simple guide to finding more time + an attached worksheet. You can email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) and I can email you that freebie directly if you’d like that.
 
 Cheers,
 
 Kelly
 
-**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
+##### Did you find this helpful? If so, I would greatly appreciate if you shared it.
