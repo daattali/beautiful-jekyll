@@ -1,14 +1,16 @@
 ---
 layout: post
 title: How Ten Minutes a Day Can Save You Up to Two Hours the Next Day
-subtitle: It's possible!
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
+thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- miracle morning
-- morning routine with kids
-- surviving parenting
+- planning
+- priorities
+- bullet journal method
+- eat that frog
+- time management tips
 
 ---
 Images of 5am mornings, quiet cups of coffee alone before the kids wake up. Seems like a dream to you? You are not alone. Here's the truth: not every morning routine has to be or will look like this. Today on the blog I'm going to share with you ways to have a morning routine even if you have children, especially little children around (my children are currently 9, 6, 4, and 1 for reference).
@@ -33,3 +35,5 @@ _Last year, I finally started a morning routine for myself and it's really helpe
 Cheers,
 
 Kelly
+
+**Did you find this helpful? If so, I would greatly appreciate if you shared it.**
