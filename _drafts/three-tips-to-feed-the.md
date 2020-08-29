@@ -1,48 +1,36 @@
 ---
 layout: post
-title: Three Tips to Feed the
+title: Three Tips to Feed the Hangry Children Fast
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/bulletjournal.jpg"
+thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- to do list tips
-- beating procrastination
-- time management tips
+- picky plates
+- finger foods
+- busy family quick meals
+- lunch food ideas for kids
 
 ---
-![An image of my coffee, pen, and planner with blog title.](/uploads/20200608_221652_0000.png "morningplanner")
+![A picture of our dining table with plates on it.](/uploads/20200617_103658_0000-1.png "diningtable")
 
-A couple months back I started reading the book [Eat that Frog!](https://amzn.to/3gVpdaF) after it was recommended to me by an Instagram friend, [@simply.a.momslife](https://www.instagram.com/simply.a.momslife/) It’s a book essentially about beating procrastination and the author, Brian Tracy, has years of research on this subject area behind him. It’s a quick, great read.
+I don't know about you, but some days here. Mealtimes can be like rushing at the speed of light to feed. the. wolves. It used to stress me out and once and a while still does...especially when I've been slacking in the meal planning department. Today on the blog I'm sharing with you three tips to feed the hangry children fast.
 
-Procrastination likes to bite me often and I’ve been reading more about it in order to understand it better. No matter the most amazing management skills you learn, sometimes it’s way deeper than that, I found out. Mel Robbins in [the Five Second Rule](https://amzn.to/3fqSrhf) chats about how procrastination is often a form of avoidance. Avoidance of hard things and stress.
+### 1. Meal plan
 
-Today on the blog, I’ll be sharing with you how to beat procrastination with this one simple, effective to do list strategy…if you’d like to start tackling it better too and move closer towards your goals.
+I mean, this one is a no brainer, but really, just a bit of time in advance will help SO much in the moment when there are hangry, hangry children begging for food in front of you. And I know for me, it’s really hard to think in the moment. Having a plan in advance will cut that thinking time and decision making time and get food on the table faster to feed the family. Check Jennifer over at [Kids Eat in Color](https://kidseatincolor.com/) too, especially if your kids struggle with eating veggies! She's a great resource.
 
-## The ABCDE Method
+### 2. Prepare in advance
 
-> The ABCDE list is a to-do list on steroids when it comes to learning how to prioritize.
+Preparing certain foods in advance will reduce prep to table that much faster during meal times. Chopping carrots, preparing meats, anything to cut that time in the moment when the hangry children are ready to eat! I always regret when I don’t have it ready and you can see me in the kitchen chopping as fast as humanly possible instead. Ha!
 
-It's a simple method and effective because it’s so action oriented.  
-How it works: write down your to do list for the day. Then you'll categorize them from A - E. Each letter means something different.
+### 3. Involve the kids
 
-**What each letter means:**
+If the kids are able, having them involved in whatever way will help speed up the process too. Setting the table, getting out utensils. Filling the water cups. Grabbing out any food to put together. Having the kids involved will help the meals to get out faster (sometimes, let’s be honest) and there’s nothing like encouraging kids to be involved, even the youngest ones! We’ve noticed that it’s been worth the effort long term here.
 
-_An A item_ means it's very important. This is something that you must do and if you didn't do it, there would be significant consequences. If you have more than one “A” task, write A-1, A-2, A-3.
+And summers are GREAT times of the year to focus on fresh, quick, and [finger foods](https://www.superhealthykids.com/recipes/top-20-finger-foods-baby/). At least for our family.
 
-_A B item_ is defined as a task that you should do, with mild consequences. And do not move onto a B item until all of the A items are done.
-
-_A C item_ is something that would be nice to do, but there are no consequences if you don't do them. So, they can easily be forgotten about or moved to another day.
-
-_A D item_ is something that you can delegate, pass onto someone else.
-
-_An E item_ is for something to get rid of completely. It's no longer relevant.
-
-The key to making this ABCDE Method is to follow through with it with consistently doing it.
-
-And. That's it! I’ve been using it now for a few weeks and I can say for sure, it’s having an impact on my focus and productivity. I used to look at, even a SMALL to do list and just get lost in thought or scrolling on Facebook because I couldn’t decide which to do first. Now, I just take a minute in the morning to label them from A-E. Problem solved!
-
-_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/3gVpdaF) _is soooo helpful, as I mentioned. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests beating procrastination, send me at email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that recap._
+_PS if you'd like to work on a summer meal plan for your family, you may like what my mail list is receiving for freebie Friday this week: Summer snacks and ten meals that are quick, healthy, delicious. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that freebie too._
 
 Cheers,
 
