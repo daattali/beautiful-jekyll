@@ -3,37 +3,27 @@ layout: post
 title: Four to do List Tips for the Busy Mom
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- zero spend months
-- simple budgeting
-- mindful spending
+- to do list tips
+- busy moms who plan
+- to do list tips for busy moms
+- simple planning
 
 ---
-![Zero spend budget rules in my planner.](/uploads/20200519_151824_0000-1.png "budget")
+You are worth so much more than the size of your crossed off to do list. But goodness knows those lists can also help in the time of decluttering or other pressing matters. Have an unending to do list? Feel like you are never on top of things? Today on the blog I'm going to leave you with some to do list tips I read in a [Forbes article](https://www.forbes.com/sites/vanessaloder/2014/06/02/five-best-to-do-list-tips/#3e25cede651b) that were simple and practical and perfect for busy moms.
 
-I have been sharing weekly minimal living tips with [Instagram](https://www.instagram.com/eastcoastkelly/) friends and thought I'd share my tips here for you too today.
+1. **Keep things simple**. Focusing on three things or less is what is recommended.
+2. **Write your list in advance**, ideally the night before. It allows for direction and clarity going forward.
+3. **Start right away** in the morning when you have the most energy.
+4. **Do a brain dump** if you feel the need to have a massive to do list and then set aside to reflect and look on in the future.
 
-_What's a zero spend budget?_ According to [this blog](https://www.investopedia.com/terms/z/zbb.asp)...(they call it zero-based budgeting, but same concept essentialy):
+   I use to do lists for a lot. But daily to dos I put in my [bullet journal](http://www.bulletjournal.com/).
 
-> Zero-based budgeting (ZBB) is a method of budgeting in which all [expenses](https://www.investopedia.com/terms/e/expense.asp) must be justified for each new period. The process of zero-based budgeting starts from a "zero base," and every function within an organization is analyzed for its needs and costs. [Budgets](https://www.investopedia.com/terms/b/budget.asp) are then built around what is needed for the upcoming period, regardless of whether each budget is higher or lower than the previous one.
+   ![A picture of my bullet journal.](/uploads/bulletjournal.jpg "bulletjournal")
 
-## Want to try out a zero spend month too? Five tips to have a successful zero spend month:
-
-#### 1. Hold off on anything that is not immediate. Giving time to think about if you really need something
-
-#### 2. Buy second hand where possible⁣⁣⁣
-
-3\. Trade if you can  
-4\. Avoid "window shopping"⁣⁣⁣  
-5\. Cut back on extras (like that extra coffee when you could bring your awesome one from home, for instance)⁣⁣⁣
-
-And what's been working really well for us lately is sticking to a - zero spend budget too. We keep it simple - it's more of a mindset than a list of rules. Essentially, we don't spend unless necessary, simplify, and streamline it all.⁣ We've ended up saving a lot of money faster this way too. Which is the goal, right? Little purchases used to add up so quickly for us, so this shift has been huge for us.⁣⁣ We check in to our spending habits during a part of our monthly routine check in with our finances.  
-⁣⁣  
-What does it look like on paper for us? Instead of setting aside certain amounts for spending areas (which in the past I'd want to spend if we didn't dip into it), we just track every purchase and take a look at it throughout the month and at the end of the month going forward. Talking about it. Did we really need xyz? And to make new "rules" going forward. Mindful budgeting and saving.
-
-_Want to get started with the zero spend method we use? I have a simple spending tracker monthly worksheet for you that'll help you clearly see what areas you need to work on very quickly. It's been so helpful for us. Since we started doing zero spending mindset for our budgeting, we’ve finally made a significant dent in our savings for our basement reno. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that tracker for free!_
+   _If you liked these tips and love your to do lists or want to get better at them, learning the simple bullet journal method may be for you too! I have some great links to get you started with using this method if that sounds like something that would be helpful. Feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those links._
 
 Cheers,
 
