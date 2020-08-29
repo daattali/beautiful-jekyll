@@ -3,28 +3,33 @@ layout: post
 title: How to Find More Productivity by Paying Attention to Your Energy
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
+thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- Slow living with kids
-- being present with your kids
-- ways to be present with your kids
+- productivity for energy
+- energy for productivity
+- productivity tips
 
 ---
-![My boys eating pancakes at the table.](/uploads/20200709_225120_0000-1.png "diningtablekids")
+![Lightbulbs swaying from the ceiling.](/uploads/20200713_152519_0000-1.png "lightbulbs")
 
-I don't know about you, but sometimes the duties of the day can just sweep me away and by the end of the day I look back and realize. Oops. I was on autopilot all day. It can take practice to slow down and be present. Today on the blog, I'm sharing five ways to be present with your kids.
+Over the years, I've learned to recognize the natural rhythm of my kids. When they need quiet time. When bedtime needs to be, for instance. I like to keep our days slow and simple. But I never really took enough time paying attention to when my natural rhythms were. In general, I knew I hit limits by later morning and needed quiet time at the same time as the kids. I literally will lay in the quiet until I can function again at the beginning of quiet time. (I have three boys in a row and a toddler girl). Today on the blog, I'm sharing about how to find more productivity by paying attention to your energy.
 
-1. Stop and write down something you are grateful for (suggestion found on [this blog](https://www.wanderlustworker.com/how-to-be-present-the-5-steps-for-living-in-the-here-and-now/)). In fact, I've read that there have been studies that:[ "Writing things down doesn’t just help you remember, it makes your mind more efficient by helping you focus on the truly important stuff."](https://www.forbes.com/sites/markmurphy/2018/04/15/neuroscience-explains-why-you-need-to-write-down-your-goals-if-you-actually-want-to-achieve-them/#1dd263ad7905)
-2. Stopping and just breathing can help slow down the mind and body and help you focus on the present.
-3. Looking closely at what your children are doing can help you focus on what's in front of you - your children. I know this sounds simple, but if you're like me, sometimes my brain is racing and needs something to focus on to become more present in the moment. It's been helpful!
-4. Move your body. Run around with your kids. Wiggle your toes (I found this suggestion [here](https://www.productiveflourishing.com/12-simple-ways-to-be-present/)). Moving your body reminds you where you are and whom you are with.
-5. Do something that you enjoy with your kids. For me, that's 100% when I get to chase them around and make them laugh and squeel. It's almost always my favourite moment of the day when I take time to do this. Whatever it is for you and your kids, take time to do that fun thing.
+I was listening to a fantastic [Bottomless Momosa podcast](https://podcasts.apple.com/us/podcast/bottomless-momosa/id1506416980) last week called - Using Energy to Achieve Productivity (and balance) featuring [@chereamiealyce](https://www.instagram.com/chereamiealyce/).  
+Chereamie was talking about looking at energy for productivity. Not _creating_ energy, perse, like eating healthy and all those other good things, but just looking at ourselves and noticing how much energy things take.
 
-_PS Enjoyed these tips? I have ten more of them like these if you'd like that I found. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share them with you._
+For instance, for me. Sitting down and catching up with emails takes a lot of focus and energy. But creating images for social media, writing blogs is a much lower energy level requirement for me. What she shared about was when we look at our day, it's really important to think about those things in terms of energy. So, if you know xyz task or appointment is going to drain you, make sure to have some recovery/rest time afterwards before moving on. ⁣
+
+Basing your day around your energy level requirements for your task list will help you to become more productive because you'll have a better idea of when you need rest. How often would I push through when I really needed rest or needed to just rearrange the day? Simple tweaks.
+
+I was able to easily apply these concepts to my life at home with kids too and my own projects! Helpful? I recommend you listen to the podcast too if this is something that interests you. I found it really helpful!
+
+_PS if you want to learn more about habit stacking, you may love the freebie my mail list received last Friday - 20 ideas to habit stack + a habit stacking planning sheet. You can receive that for free by emailing me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com)_._
+
+**Further reading**: And if you are majorly struggling in this area, the book [Eat That Frog!](https://amzn.to/3gVpdaF) is soooo helpful. The author has researched for years so he knows what he’s talking about and has 1.5 million copies sold of his book.
 
 Cheers,
 
-Kelly Briggs
+Kelly
 
 **Did you find this helpful? If so, I would greatly appreciate if you shared it.**
