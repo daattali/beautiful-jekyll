@@ -3,31 +3,36 @@ layout: post
 title: The Myth of Balance and One Thing to Focus on Instead
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/bulletjournal.jpg"
+thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- planning
+- finding balance
+- the seven types of rest
 - priorities
-- bullet journal method
-- eat that frog
-- time management tips
+- finding rest
 
 ---
-Looking for more time? Have ten minutes at the end of the day? You might just be blown away by how doing this one routine daily will save you up to two hours the following day (I read this concept in the book [Eat That Frog!](https://amzn.to/2Wj38ee)). On the blog today, I'm sharing with you how ten minutes a day can save you up to two hours the next day.
+Balance, at least for me, has been almost impossible to obtain. I've chased balance for far too long and always come up with another hurdle. I was reading a pysc type [blog](https://advice.shinetext.com/articles/the-7-types-of-rest-you-need-to-actually-feel-recharged/) about the seven types of rest recently and everything clicked for me even more about why finding balance is difficult and even impossible for many of us. Today on the blog I'm sharing about the myth of balance and one thing to focus on instead.
 
-## Use those ten minutes to do this
+## The seven types of rest
 
-The "Eat that Frog!” technique I read about is all about planning: you think about your tasks and just write them down. Take ten minutes at the end of your day, every day and plan. Write out a prioritized list of to dos for the next day. You can start simple with this if planning is something new to you. I recommend taking a peek at the [bullet journal](https://amzn.to/3eowfmz) method too. I've used it for quite a few years now, and it's saved my sanity many times. I spend usually less than ten minutes a day writing my list for the next day. Daily online business tasks, homeschooling books updated, life stuff like order groceries written in. It has saved soooo much time thinking the next day when I have noise in my ears and can't think on my feet in the moment.
+According to [this blog](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts), here are the seven types of rest:  
+⁣  
+1\. Physical rest.⁣  
+2\. Mental rest.⁣  
+3\. Social rest.⁣  
+4\. Creative rest.⁣  
+5\. Emotional rest.⁣  
+6\. Spiritual rest.⁣  
+7\. Sensory rest.⁣ ⁣  
+⁣  
+How could we honest to goodness keep on top of all that at all times? Plus not to mention our own roles in life. Wife. Daughter. Mother. Business owner. Cleaner. And whatever else it is for you and me. I'm sure you get it.
 
-## Learn how to prioritize
+## Instead of balance, focus on this
 
-Next you take your to do list for the next day and prioritize them, so you'll know what task to do first. Rule of thumb for prioritizing - focus on the tasks that will have the most impact. Oftentimes, we get stuck focusing on the "busy work", the organization type tasks. I know I do! Instead of the important ones that help us move towards our goals.
+Instead of balance, perhaps just being more aware of yourself will be more helpful. Instead of balance, focus on your priorities. What is most important that day, that moment. Your biggest needs. And creating routines that periodically makes lots of room to meet those needs for filling our cups. Quiet time is that for me in many areas, for instance. I need that in my day. It happens every afternoon after lunch usually. The baby naps and the kids read or watch shows. Sometimes I sit in the quiet or work, listening to some calming music. It helps me to find balance with my sensory needs, spirtual, mental. So many areas can be hit at one time too.
 
-## Bump whatever is unfinished
-
-At the end of the next day? Anything that is unfinished is bumped to the next day. Over time, you will become better at knowing what your limits are and bonus? You'll very quickly see how insanely large your to do list sometimes gets if you're like me. Ha!
-
-_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/2Wj38ee) _is soooo helpful. The author has researched for years so he knows what he's talking about and has 1.5 million copies sold of his book. If you'd like a quick recap of all of the ways he suggests to beat procrastination, send me at email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that recap._
+_There are a lot of hats we wear every day. It's impossible to keep up with all areas. If this is an area of your life you'd like more work on and if you'd like to work on a better routine for rest, I found a simple worksheet you can take a look at for some ideas for those seven areas of rest. Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that._
 
 Cheers,
 
