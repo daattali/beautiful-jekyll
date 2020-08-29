@@ -4,13 +4,12 @@ title: How to Help Reduce the Feeling of Overwhelm as a Mom by Using this One Si
   Practice
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: ''
+thumbnail-img: "/uploads/headshot.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- finding balance
-- the seven types of rest
-- priorities
-- finding rest
+- morning routine
+- miracle morning
+- affirmations for moms
 
 ---
 Balance, at least for me, has been almost impossible to obtain. I've chased balance for far too long and always come up with another hurdle. I was reading a pysc type [blog](https://advice.shinetext.com/articles/the-7-types-of-rest-you-need-to-actually-feel-recharged/) about the seven types of rest recently and everything clicked for me even more about why finding balance is difficult and even impossible for many of us. Today on the blog I'm sharing about the myth of balance and one thing to focus on instead.
