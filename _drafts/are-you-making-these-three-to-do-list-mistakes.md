@@ -3,31 +3,34 @@ layout: post
 title: Are you Making These Three to do List Mistakes?
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: "/uploads/bulletjournal.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- time management for moms
-- priorities
-- finding time as a mom
+- to do lists
+- to do list tips
+- minimal to do lists
+- to do list mistakes
 
 ---
-![Title of the blog showing a clock next to it.](/uploads/20200622_195656_0000.png "clock")
+![](/uploads/20200702_110540_0000-1.png)
 
-I'm feeling this a lot lately. Like sometimes I wish extra time would magically appear so I can do more fun things (I'm not talking about extra time for housework ha!). Do you wish you had more time to do the things you love more? Oftentimes, it's just a matter of what we do with our time and understanding our priorities better. So today I'm going to share a planning process I use that's been helpful to me that may be helpful to you too: How to find extra time even with living a busy mom life.
+The pace of the world in general tends to be busy, busy, busy. I know for myself, that I can catch myself often speeding up, so it’s a constant reminding myself to slow down and smell the roses and reassess my to do list, for starters. At the top of my planner for a few weeks now is the reminder to do: less. less. less. And to focus on the [priorities](https://www.eastcoastkelly.com/planning/2020/04/14/how-a-priority-pyramid-can-change-your-life.html) and what matters most for me. I've been a geeky minimalist [bullet journal](https://amzn.to/38jOHvg) planner for a few years now (if you have no clue what I'm talking about, I was there too. It's a simple planning method that's had a positive impact on my life and mental health). Today on the blog, I’m sharing with you three to do list mistakes that can be made. Something to think about.
 
-## It's all about the goals
+## Obsessing over getting more done.
 
-Take a bit of time to ⁣visualize and write down your goals and values... who you want to become. Such as - healthier, stronger, hosting more friends in our home. Less time watching tv, more time reading. etc. ⁣You can revisit this process in the future too and tweak them as you go.
+The first to do list mistake is obsessing over getting more done and adding on more to do list tasks. [Learning time management](https://amzn.to/3gfqxoo) and all the skills, tricks, hacks is awesome. And I highly recommend if that's an interest of yours to learn, but for me. Learning these skills is not about helping me to DO MORE. It's about being able to focus better on what I've got: my limit on time and doing what is placed before me well and better. And being able to weed out the stuff that I don't want there ie. toooo much Netflix binging. Aimless scrolling. Endless hours of organization for no purpose really at all. Overthinking. In fact, [this article](https://medium.com/future-of-work/the-minimal-to-do-list-8b3e454aca2f) shares about minimal to do lists and the benefits that it has too.
 
-## Prioritizing is important
+## Comparing.
 
-Make a [priority pyramid](https://www.eastcoastkelly.com/planning/2020/04/14/how-a-priority-pyramid-can-change-your-life.html) from most to least important to refer to when you get distracted. Example: Is an hour scrolling social media helping you to become what you want, according to how you visualize yourself, your goals, or looking at your priorities? What's #1? And so on.
+Comparing to others is a second to do list mistake. Looking at the relative productivity and to do list crosser-outer from someone else can sometimes lead to dissatisfaction of your own life and to do list. Everyone’s journey and “productivity” is different. And that can differ greatly during the many different days and seasons of life. There is something to be said about having inspiration from others though, but I’m talking more about feeling overwhelmed and comparing in a way that makes you feel like you have to up your speed or change your ways – not out of a place on inspiration, in that case.
 
-And then put non priority tasks low, low on the list. For me, that's been me mostly putting them on the weekends so that I don't get sucked in during the week! It's been really helpful. Including doing things like mending my pants. Important, but not essential or priority.⁣
+## Not filling your to do list with the right things (for you).
 
-Helpful? How do you look at the time you are given and fit in the things you love doing?⁣
+As mentioned, the first to go at the top of my weekly to do list is: less. less. less. And it encourages me to reflect every time I am tempted to write something down. What drives my to do list a lot lately is looking towards my values and goals and asking myself if that to do list task is in alignment before I write it down. Obviously things like grocery lists need to be priority as a basic need, but this is for the “other” to do list stuff. If you’re new to discovering your values, [my blog on discovering them](https://www.eastcoastkelly.com/planning/2020/05/28/how-to-discover-your-values.html) may be helpful to you too.
 
-_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/2Vamm5j): 21 Great Ways to Stop Procrastinating and Get More Done in Less Time _is soooo helpful. The_ [_author_](https://www.briantracy.com/) _has researched time management for years so he knows what he’s talking about and has 1.5 million copies sold of his book. If you’d like a quick recap of all of the ways he suggests to beat procrastination and really simple time management tips, send me at email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to send you that recap._
+**So here's to LESS. And MORE of what is needed in our lives!**
+
+_PS if this is a struggle for you, you may like what my mail list is receiving for their freebie Friday. The simple guide to finding more time and an attached worksheet. If you're not on it yet, you can email me your email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can email you that directly._
 
 Cheers,
 
