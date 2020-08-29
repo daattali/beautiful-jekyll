@@ -3,62 +3,35 @@ layout: post
 title: Three Ways to be Creative with Squeezing in Some Self Care with a Busy Household
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/94978272_10163392594695627_2591845641663545344_o.jpg"
+thumbnail-img: "/uploads/headshot.jpg"
 share-img: "/assets/img/path.jpg"
 tags:
-- morning routines for moms
-- affirmations for moms
+- self care for moms
+- taking breaks as parents
+- self care ideas for moms
 
 ---
-Not long ago, I did up a blog on a bit about [my current morning routine](https://www.eastcoastkelly.com/2020-08-27-how-to-have-a-morning-routine-with-children-around/) and was interested to hear how others did theirs. I had a few moms reach out to me to share theirs. Perhaps you will find them helpful as well! Today on the blog, I’ll be sharing a handful of morning routines from moms who have it figured out.
+![Pumping out soap from a dispenser.](/uploads/20200518_105019_0000-1.png "soapdispenser")
 
-## From my friend Terri, a mom of two littles, and a fellow business owner:
+Sometimes it's really, really hard to get that "self care" time in over here with four kids. Sometimes I am relying on a few minutes here and there. Building it into my routine. Changing it up for different seasons of life. It really takes an extraordinary amount of flexibility and creativity. What's self care for moms? According to [this blog](https://www.washingtonpost.com/lifestyle/on-parenting/in-defense-of-a-parents-day-off/2017/01/23/270ffafc-d8f2-11e6-b8b2-cb5164beba6b_story.html) from Washington Post:
 
-> My morning routine. Whenever possible, I get up before the kids. I have a glass of water and make a cup of coffee and savour the few quiet minutes I have to myself to go over my affirmations. I practice visualization even if just for 5 minutes. I close my eyes and imagine how I want my day to flow and any other way I envision my future to look. I practice gratitude. I write in my book what comes to my heart for as long as I have time for. Usually about 5-10 things is enough and I can always go back to it throughout the day. They never have to be big or grandeur. Just waking up and taking a deep breath is always enough to feel truly grateful. I try to really focus on feeling deep gratitude. (If I don’t get up before the kids I will lay in bed and do these practices). While enjoying my coffee, I look at my plan for the day with good intentions of doing the most important tasks first. That doesn’t always go as planned but I believe every day has a better chance of going the way you want when you start with good clear intentions!
+> **Self**-**care** is not selfish; it's one of the best things you can do for your kids. Taking a break from family can cause guilt and anxiety in **mothers** and fathers alike. ... Being on and at the ready for your children at all times can cause burnout and make things that could be everyday treasures feel like everyday chores.
 
-You can find Terri on Instagram at [terrihopkinsofficial](https://www.instagram.com/terrihopkinsofficial). Also, you can read more about affirmations [here](https://www.eastcoastkelly.com/morning%20routine/2020/05/06/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice.html).
+Today on the blog I’m sharing three ways to be creative with squeezing in some rest/self care with a busy household.
 
-## From Tabitha, a single mom going through a master’s degree:
+## Headphones
 
-> Here is my morning routine. I am a single mom getting my master’s degree and training to be a special education teacher. My daughter is 11 so she is pretty self sufficient so that allows for me to have a pretty regular morning routine.
->
-> 6am wake up/coffee
->
-> 6-7 journal/Bible time
->
-> 7-8 read (whatever I am in the mood for)
->
-> 8am wake my daughter up for school
->
-> 9:30am my daughter starts online classes at 9:30 once she is set up I usually head out for a run (3 times a week) or do a free on line yoga class (2 times a week)
->
-> 9:30-10:30 workout
->
-> That's it!! I know I have a lot of free time in the am and once I am back in the classroom wake up is 5am and my morning routine shrinks to 1 hour and workouts move to after school.
+Yep. I said it. 🎧 If the kids are loud, but playing nicely, I can put on some sound reducing headphones or listen to an audiobook. A more traditional tyoe of headphones or noise cancelling headphones.
 
-You can find Tabitha on Instagram at [brick_housebodies](https://www.instagram.com/brick_housebodies/)
+## Bathroom breaks
 
-## My current morning routine, mom of four, business owner, and homeschooler:
+Leave a book in there, affirmations to read over on the mirror or something that even a minute or two will help add some rest your day. Read more about affirmations for moms [here](https://www.eastcoastkelly.com/morning%20routine/2020/05/06/how-to-help-reduce-the-feeling-of-overwhelm-as-a-mom-by-using-this-one-simple-practice.html).
 
-Here's what is in my morning routine that I learned about through the book The Miracle Morning (it's so good and helpful!).
+## Call a friend
 
-* Prayer. Usually I am doing a current Bible study with a group I'm in.
-* Affirmations & visualizations. Just short phrases of things I believe like scripture, my values, and goals.
-* Reading. I'm usually reading a personal book and business one.
-* Writing. I write a line of daily gratitude, a social media post, and a blog post now. Some days it's notes for a live video I'm doing. Or a special project. Just something I'm writing. It varies by day.
-* A quick stretch to get my body moving.
+I often do this with noise in the background. Even just a few minutes talking to another adult can help fill your cup just a little bit more.
 
-You can read all about how I designed my morning routine by taking a read through [The Miracle Morning book](https://amzn.to/398G8nw)! It changed my morning routine game last year and I haven’t gone back. You can find me on Instagram at [eastcoastkelly](https://www.instagram.com/eastcoastkelly/).
-
-## Mandy Yang, a mom and KonMari Consultant:
-
-> Each morning, whether it's a weekday or weekend, the first thing I do is open and unplug the house. I open the curtains all around the house and unplug the sound machines and phone chargers. Then I pour a cup of coffee that was programed the night before. And I head back to our master bathroom to get ready. After that, the kids are usually up so they'll trickle downstairs to watch tv in the living room that's filled with the morning sunlight. I'll go to get them breakfast and then head back to my desk to check-in with my planner and start the work day or home day.
-
-You can find Mandy Yang on Instagram at [amongallofthis](https://www.instagram.com/amongallofthis/).
-
-_Have a morning routine to share? Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’d be happy to add yours too._
-
-_Also - Last year, I finally started a morning routine for myself and it’s really helped my days out so much. I feel more peaceful throughout the rest of the day and I’m finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/398G8nw) _that everything clicked for me. I was so inspired. If you’d like a quick breakdown of what the Miracle Morning is and have an overview of how to create your own, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+_Needing more of a plan to get you more motivated for some self care time? I found a list of twenty other ideas for self care ideas for moms. If you'd like, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that list!_
 
 Cheers,
 
