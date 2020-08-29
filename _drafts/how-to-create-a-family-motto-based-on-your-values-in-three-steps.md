@@ -3,41 +3,62 @@ layout: post
 title: How to Create a Family Motto Based on Your Values in Three Steps
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/headshot.jpg"
+thumbnail-img: ''
 share-img: "/assets/img/path.jpg"
 tags:
-- morning routine
-- miracle morning
-- affirmations for moms
+- family motto
+- family values
+- family core values
 
 ---
-Do you struggle with how you feel about your journey as a mom? I know I have sometimes. I've come far over the years, but I do catch myself sometimes. I was reading a mom blog ([momagenda.com](https://github.com/kellymbriggs/hydeout-jekyll-starter/blob/master/_posts/momagenda.com)) recently and was reading a bit about affirmations for moms. Today on the blog I'm sharing with you how to help reduce the feeling of overwhelm as a mom by using this one simple practice.
+![A frame with the blog title in it and plants to the right.](/uploads/20200507_100302_0000.png "familymotto")
 
-## What are affirmations?
+When I went through the whole decluttering thing years back and started learning about [minimalism](https://amzn.to/2WdA0oD), I learned a couple of things:
 
-According to the blog, "An affirmation is a short, positive statement that, when repeated often, helps you overcome negative or self-sabotaging thoughts. If you use affirmations consistently, you can start to retrain your brain to think positive thoughts rather than negative ones." .... What you believe, read, and tell yourself over and over becomes your truth! This is a simple practice that will hopefully help you out with what's going on in the world right now too (and at home...we have tough days here too).
+1. Minimalism is not about white walls.
+2. Minimalism is about removing the “noise” to find what matters most to you.
 
-## Examples of affirmations for moms
+And on discovering this, I was able to much more clearly see and remove things from our lives that did not work for us. I was able to more clearly see the direction we wanted to go as a family. Our values. Our views. The things that gave life to us. Being able to clearly see this as a family will help navigate the day to day. The to do list. The priorities. The routines. Discovering and defining core values will direct your now and the future. Today on the blog I’ll be sharing with you how to create a family motto based on your values in three steps.
 
-* I cannot keep up with all things at all time.
-* I cannot be all things to all people.
-* From the blog momagenda: I am more than enough. I am never in a rush; my timing is perfect.
-* I can go for my dreams and be a mom (one I say often with working on my business and other projects on the go).
-* Christian one to add: Today I will build up (encourage) more than I correct.
+## Step one. Start with this simple exercise: grab a pen and paper!
 
-## Design your own affirmations
+Want to figure out quickly what your true values are? Take a moment and do this simple exercise: Look at what your family _does_, your actions. What things do you do on the daily? Write them down.
 
-**Step one**. Look at the areas of your life as a mom you are hard on yourself. Write them down.  
-**Step two**. Find inspiration by googling quotes or scripture.  
-**Step three**. Write down the truth to speak to yourself.
+Such as:
 
-**Step four**. Read them often.
+* Do you get outside together?
+* Play board games together?
+* Watch tv together?
+* Eat dinner together?
+* Read together?
+* Listen attentively to each other?
+* Do projects together?
+* Do you value being hospitable?
 
-_I read my affirmations every morning during my_ [_miracle morning_](https://amzn.to/398G8nw)_/morning time routine and they cover various areas of my life from business affirmations to personal growth to spiritual. They are quick to read and easy to add to a morning routine.. I once saw the idea from someone who taped them on her mirror to read every time she went to the bathroom. Love that!_
+This list could go on and on, but take some time to think, and perhaps quickly jot down those that come to mind. This is a great place to start.
 
-In hard moments, I am able to speak truth to myself and it’s brought me comfort and refocus many times in my life, but of course is not substitute for when I needed more than just affirmations – like when I suffered from mild PPD/anxiety last year. But, worth a shot to add these to your day, right? Little things can become big things to help long term!
+Here are some of my personal values, for reference:
 
-_And if you’d like more help on starting to create your own affirmations, I have a list of 20 basic ones you can use if you’d like. Just send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for that list._
+* I value growth. Daily time spent growing in areas I want to grow in (i.e. spiritual, learning new things, hobbies, business development etc).
+* I value close family relationships. I take time daily to check in with my people. And listen to what they are sharing with me.
+* I value hard work. To give my all at what I do.
+* I value taking care of myself to take care of others. Both physical, mental, and spiritual daily.
+
+## Step two. Dive deep into your priorities as a family.
+
+Dive in on that list and mark what is a priority right now and what you’d like to be a priority – add those things that you want to become a priority. Maybe through the above exercise, you'll also discover what you thought your family valued, but really don't based on your actions. I thought we valued getting outside....but we haven't been getting out much this year together. But that can be changed once you are aware, right? Nothing is set in stone.
+
+## Step three. Draft together a simple motto with your family values’ list.
+
+Last year, we came up with a homeschooling family motto based on our values too. But you can apply this to your family as well, even if you don't homeschool outside of this pandemic! Just take out the word homeschooling.
+
+Ours says:
+
+> In our homeschool, we strive to be flexible. Independent. Build each other up. In our homeschool, we refuse to give up or just get by.
+
+We're using this time to work on sibling relationships. Communication. Closeness. Taking time to listen to one another. Solving problems. And we’ll be working on updating our own family values and then family motto in the near future too.
+
+_And if you’d like a simple template and examples of 30 family values to start drafting your own family motto, feel free to send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _for those free resources I found for you._
 
 Cheers,
 
