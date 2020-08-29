@@ -13,24 +13,21 @@ tags:
 - time management tips
 
 ---
-Images of 5am mornings, quiet cups of coffee alone before the kids wake up. Seems like a dream to you? You are not alone. Here's the truth: not every morning routine has to be or will look like this. Today on the blog I'm going to share with you ways to have a morning routine even if you have children, especially little children around (my children are currently 9, 6, 4, and 1 for reference).
+Looking for more time? Have ten minutes at the end of the day? You might just be blown away by how doing this one routine daily will save you up to two hours the following day (I read this concept in the book [Eat That Frog!](https://amzn.to/2Wj38ee)). On the blog today, I'm sharing with you how ten minutes a day can save you up to two hours the next day.
 
-## Get up when you want to
+## Use those ten minutes to do this
 
-If sleeping in or lounging around is your jam, do that. And if you can when you wake up (whatever time it is), here's a spot where you can get in some of your morning routine time too. Prayer, quiet, an ebook. My two little people are usually here with me too during this part of my morning routine.
+The "Eat that Frog!” technique I read about is all about planning: you think about your tasks and just write them down. Take ten minutes at the end of your day, every day and plan. Write out a prioritized list of to dos for the next day. You can start simple with this if planning is something new to you. I recommend taking a peek at the [bullet journal](https://amzn.to/3eowfmz) method too. I've used it for quite a few years now, and it's saved my sanity many times. I spend usually less than ten minutes a day writing my list for the next day. Daily online business tasks, homeschooling books updated, life stuff like order groceries written in. It has saved soooo much time thinking the next day when I have noise in my ears and can't think on my feet in the moment.
 
-## Work around what you are given
+## Learn how to prioritize
 
-My kids are generally slow breakfast eaters and mostly quiet, so I'll sneak in some time here too. Reading and writing usually. If you know you can get quiet during play doh time or a tv show, sneak in time here, too. Be creative! It'll look different for each person.
+Next you take your to do list for the next day and prioritize them, so you'll know what task to do first. Rule of thumb for prioritizing - focus on the tasks that will have the most impact. Oftentimes, we get stuck focusing on the "busy work", the organization type tasks. I know I do! Instead of the important ones that help us move towards our goals.
 
-_Here's what I'm doing currently that's working for me_:  
-I get up when my two littlest are awake, anywhere from 6:30-7:30. I usually do my prayer, reading, daily gratitude, and a few other small things in bed. I usually do a bit of writing at another point, sometimes at the breakfast table. Ideally I like to finish most of it before breakfast, but sometimes I continue with the kids at the table (I pop on an audiobook for them on those days).
+## Bump whatever is unfinished
 
-## Do what works for you and don't compare
+At the end of the next day? Anything that is unfinished is bumped to the next day. Over time, you will become better at knowing what your limits are and bonus? You'll very quickly see how insanely large your to do list sometimes gets if you're like me. Ha!
 
-What others do may not work for you. If it becomes more of a fight, then take it as a sign that it just might be the wrong strategy or time of a day. If it's important to you, you'll find a way. Keep going!
-
-_Last year, I finally started a morning routine for myself and it's really helped my days out so much. I feel more peaceful throughout the rest of the day and I'm finding time for those things that matter most to me. It was after I read the book_ [_The Miracle Morning_](https://amzn.to/2BduGKX) _that everything clicked for me. I was so inspired. If you'd like a quick breakdown of what the Miracle Morning is, I can send you a basic overview from what I read. Feel free to email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you'd like that._
+_And if you are majorly struggling in this area, the book_ [_Eat That Frog!_](https://amzn.to/2Wj38ee) _is soooo helpful. The author has researched for years so he knows what he's talking about and has 1.5 million copies sold of his book. If you'd like a quick recap of all of the ways he suggests to beat procrastination, send me at email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to send you that recap._
 
 Cheers,
 
