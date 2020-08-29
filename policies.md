@@ -67,6 +67,8 @@ With a few exceptions (which will be communicated to students at the start of a 
 
 A late submission is defined as any work, including quizzes, submitted after the deadline. For a late submission, the student will receive a 50% scaling of their grade for the first occurrence, and will receive a grade of 0 for subsequent occurrences. 
 
+Update: for the **2020-21 cohort only**, due to the challenges of starting the program online, we will use the following alternate policy: for a late submission, the student will receive a 75% scaling of their grade for the first occurrence, 50% scaling of their grade for the second occurrence, and will receive a grade of 0 for subsequent occurrences. 
+
 ### Re-grading
 
 If you have a question about the way your work was graded, please contact the TA who graded it for an explanation. If you would like to contest your grade, you should notify the instructor. In these cases, the instructor will re-grade the entire piece of work, not only the parts in question. Please keep in mind that your grade may go up or down as a result of re-grading, and that instructors often grade more critically than TAs.
