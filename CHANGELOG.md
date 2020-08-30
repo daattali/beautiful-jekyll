@@ -11,6 +11,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Added `before-content` and `after-content` YAML options that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
 - Added `head-extra` YAML option which i s similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Added `full-width` YAML option to allow having full-width pages
+- Added `feed_show_excerpt` config option to show/hide the post excerpts on the feed page
 - Improved the `footer-extra` YAML option to support multiple files instead of only a single file
 - Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
 - Added automatic navbar color detection (#702)

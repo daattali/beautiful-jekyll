@@ -76,6 +76,9 @@ url-pretty: "MyWebsite.com"
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
 
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
 
@@ -166,7 +169,6 @@ date_format: "%B %-d, %Y"
 
 # Facebook App ID
 #fb_app_id: ""
-
 
 # --- You don't need to touch anything below here (but you can if you want) --- #
 
