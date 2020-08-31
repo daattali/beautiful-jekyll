@@ -352,11 +352,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  .navbar-custom .avatar-container {
+  .navbar-custom.top-nav-regular .avatar-container {
     width: 6.25rem;
   }
 
-  .navbar-custom .avatar-container .avatar-img-border {
+  .navbar-custom.top-nav-regular .avatar-container .avatar-img-border {
     width: 100%;
     {% unless site.round-avatar == false %}
     box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
@@ -365,7 +365,7 @@ img {
     {% endunless %}
   }
 
-  .navbar-custom .avatar-container .avatar-img {
+  .navbar-custom.top-nav-regular .avatar-container .avatar-img {
     width: 100%;
   }
 }
@@ -581,6 +581,12 @@ footer .footer-custom-content {
   -o-background-size: cover;
   margin-top: 3.1875rem; /* The small navbar is 50px tall + 1px border */
   margin-bottom: 2.1875rem;
+}
+nav.top-nav-short-permanent ~ header > .intro-header {
+  margin-top: 5rem;
+}
+nav.top-nav-short-permanent ~ header > .intro-header.big-img {
+  margin-top: 3.1875rem;
 }
 .intro-header.big-img .big-img-transition {
   position: absolute;

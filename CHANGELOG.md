@@ -13,6 +13,8 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Added `head-extra` YAML option which i s similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Added `full-width` YAML option to allow having full-width pages
 - Added `feed_show_excerpt` config option to show/hide the post excerpts on the feed page
+- When `nav-short` is turned on, the avatar will also be shorter
+- Fixed rendering issues with `nav-short` option that caused the body of the page to start too low
 - Improved the `footer-extra` YAML option to support multiple files instead of only a single file
 - Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
 - Added automatic navbar color detection (#702)
