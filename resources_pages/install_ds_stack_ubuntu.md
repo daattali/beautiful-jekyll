@@ -144,6 +144,10 @@ To make programs run from the terminal (such as `git`) use VS Code by default, w
 code ~/.bashrc
 ```
 
+> Note: If you see any existing lines in your `~/.bashrc`
+> related to a previous Python or R installation,
+> please remove these.
+
 Append the following lines:
 
 ```
