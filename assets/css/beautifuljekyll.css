@@ -51,7 +51,7 @@ a:focus {
 }
 blockquote {
   color: #808080;
-  font-style: italic;
+  border-left: .25em solid #dfe2e5;
 }
 blockquote p:first-child {
   margin-top: 0;
