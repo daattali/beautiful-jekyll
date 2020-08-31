@@ -21,6 +21,7 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
+- [UBC Student Email](#ubc-student-email)
 - [Web browser](#web-browser)
 - [LastPass password manager](#lastpass-password-manager)
 - [Slack](#slack)
@@ -52,6 +53,10 @@ or a 32-bit (also called x86) version of the application **always** choose the 6
 Once you have completed these installation instructions,
 make sure to follow the post-installation notes at the end
 to check that all software is setup correctly.
+
+## UBC Student Email
+
+Please sign up for a UBC Student Email. This account will also grant you access to a range of UBC services, including Microsoft Teams and OneDrive. To do so navigate to [https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service](https://it.ubc.ca/services/email-voice-internet/ubc-student-email-service) and follow the instructions under "Get Started". 
 
 ## Web browser
 
