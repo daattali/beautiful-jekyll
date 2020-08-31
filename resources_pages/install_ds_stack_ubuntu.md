@@ -340,6 +340,9 @@ install.packages('IRkernel')
 IRkernel::installspec()
 ```
 
+> Note: If you see an error message saying "jupyter-client has to be installed...",
+> close RStudio and run the following line from your terminal instead `R -e "IRkernel::installspec()"`.
+
 To see if you were successful, try running JupyterLab and check if you have a working R kernel. To launch JupyterLab, type the following in a terminal:
 
 ```
