@@ -2,9 +2,9 @@
 layout: post
 title: Techcrunch 2.0
 subtitle: A workshop for addressing the gender gap in the ICT sector of Bangladesh 
-cover-img: /assets/img/internship-cover.jpg
-thumbnail-img: /assets/img/internship-cover.jpg
-share-img: /assets/img/internship-cover.jpg
+cover-img: /assets/img/data.jpg
+thumbnail-img: /assets/img/data.jpg
+share-img: /assets/img/data.jpg
 tags: [girls in ict]
 comments: true
 ---
