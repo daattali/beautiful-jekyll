@@ -700,9 +700,6 @@ Then paste the following at the end of the file
 and save it afterwards:
 
 ```
-# Prepend a newline to the prompt string to separate it from the last command's output
-PS1="\n$PS1"
-
 # TAB completion configuration
 # TAB completion ignores case
 bind "set completion-ignore-case on"
@@ -722,8 +719,9 @@ bind '"\e[B":history-search-forward'
 shopt -s histappend
 # Write commands to history one-by-one right after they are executed
 # instead of all together when the terminal is closed.
-# New terminals now see all commands run in currently open terminals
-PROMPT_COMMAND='history -a'
+# Make new terminals see all commands run in currently open terminals and
+# prepend a newline to the prompt string to separate it from the last command's output
+PROMPT_COMMAND='history -a; echo'
 # Increase history size
 HISTSIZE=50000
 HISTFILESIZE=50000
