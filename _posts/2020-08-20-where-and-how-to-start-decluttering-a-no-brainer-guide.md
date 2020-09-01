@@ -3,10 +3,7 @@ layout: post
 title: 'Where and How to Start Decluttering: a No Brainer Guide'
 subtitle: ''
 gh-repo: daattali/beautiful-jekyll
-gh-badge:
-- star
-- fork
-- follow
+gh-badge: []
 tags:
 - decluttering
 - decluttering as a family
@@ -21,6 +18,9 @@ tags:
 - different ways to declutter
 - decluttering with kids
 comments: true
+cover-img: ''
+thumbnail-img: ''
+share-img: ''
 
 ---
 There are so many takes on decluttering and pieces of advice, so I’m going to leave you mine, of course. Looking back, I plowed through the big declutter when everything clicked for me. I was just anxious to get it done. Paper was the biggest for me. I remember taking days and days. Looking through young teenage years of letters back and forth with friends. That was quite painful ha. Today on the blog, I’m going to share with you, if you are new to decluttering. And you don’t know where to start… where and how to start decluttering: a no brainer guide.
