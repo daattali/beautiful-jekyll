@@ -17,6 +17,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - When `nav-short` is turned on, the avatar will also be shorter
 - Fixed rendering issues with `nav-short` option that caused the body of the page to start too low
 - Improved the `footer-extra` YAML option to support multiple files instead of only a single file
+- Upgraded kramdown to version 2.3.0 to fix security issues
 - Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
 - Added automatic navbar color detection (#702)
 - Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background
