@@ -13,6 +13,10 @@ fields:
 - type: text
   name: subtitle
   label: subtitle
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
 - type: file
   name: cover-img
   label: cover-img
@@ -22,10 +26,6 @@ fields:
 - type: file
   name: share-img
   label: share-img
-- name: tags
-  type: tag_list
-  default: []
-  label: tags
 pages:
 - _posts/2020-08-20-where-and-how-to-start-decluttering-a-no-brainer-guide.md
 - _posts/2020-08-21-three-key-steps-to-maintaining-decluttering-sanity-with-kids.md
