@@ -824,6 +824,19 @@ table tr td :last-child {
 
 /* --- Code blocks --- */
 
+code {
+  padding: 0.125rem 0.25rem;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 0.25rem;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 pre {
   font-size: 1rem;
   line-height: 1.5;
