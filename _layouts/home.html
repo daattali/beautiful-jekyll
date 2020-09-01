@@ -76,7 +76,7 @@ layout: page
     </div>
     {% endunless %}
 
-    {% if post.tags.size > 0 %}
+    {% if site.feed_show_tags != false and post.tags.size > 0 %}
     <div class="blog-tags">
       Tags:
       {% for tag in post.tags %}
