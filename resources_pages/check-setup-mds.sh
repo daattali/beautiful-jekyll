@@ -31,12 +31,14 @@ if [[ "$(uname)" == 'Linux' ]]; then
     grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
     file_browser="xdg-open"
     if ! $(grep -iq "20.04" <<< $os_version); then
+        echo '' >> check-setup-mds.log
         echo "MISSING You need Ubuntu 20.04." >> check-setup-mds.log
     fi
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
     if ! $(sw_vers | grep -iq "10.15"); then
+        echo '' >> check-setup-mds.log
         echo "MISSING You need macOS Catalina (10.15.x)." >> check-setup-mds.log
     fi
 elif [[ "$OSTYPE" == 'msys' ]]; then
@@ -50,9 +52,11 @@ elif [[ "$OSTYPE" == 'msys' ]]; then
     file_browser="explorer"
 
     if $(grep -iq Home <<< $os_edition); then
+        echo '' >> check-setup-mds.log
         echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
     fi
     if ! $(grep -iq "19041" <<< $os_version); then
+        echo '' >> check-setup-mds.log
         echo "MISSING You need at least Windows build 10.0.19041. Please run Windows update." >> check-setup-mds.log
     fi
 else
