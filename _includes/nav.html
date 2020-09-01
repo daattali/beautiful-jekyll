@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% endif %}">
+<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% else %}top-nav-regular{% endif %}">
 
   {%- if site.title-img -%}
     <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img }}"/></a>
@@ -33,7 +33,7 @@
     </ul>
   </div>
 
-  {% if site.avatar and (layout.show-avatar or page.show-avatar) %}
+  {% if site.avatar and page.show-avatar != false %}
     <div class="avatar-container">
       <div class="avatar-img-border">
         <a href="{{ '' | absolute_url }}">
