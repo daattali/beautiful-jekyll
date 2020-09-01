@@ -56,15 +56,15 @@ defaults:
     layout: page
     show-avatar: true
 exclude:
-- vendor/bundle
 - CHANGELOG.md
 - CNAME
+- docs/
 - Gemfile
 - Gemfile.lock
 - LICENSE
 - README.md
 - screenshot.png
-- docs/
+- vendor/bundle
 plugins:
 - jekyll-paginate
 - jekyll-sitemap
