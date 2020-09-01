@@ -108,6 +108,13 @@ img {
   max-width: 100%;
 }
 
+.linked-section {
+  padding-top: 3.75rem;
+  margin-top: -1.5625rem;
+}
+
+/* Comments */
+
 .disqus-comments {
   margin-top: 1.875rem;
 }
@@ -116,11 +123,6 @@ img {
   .disqus-comments {
     margin-top: 2.5rem;
   }
-}
-
-.linked-section {
-  padding-top: 3.75rem;
-  margin-top: -1.5625rem;
 }
 
 /* --- Navbar --- */
@@ -428,7 +430,7 @@ footer .footer-custom-content {
   }
 }
 
-/* --- Post preview --- */
+/* --- Post preview (feed) --- */
 
 .post-preview {
   padding: 1.25rem 0;
@@ -474,53 +476,53 @@ footer .footer-custom-content {
   margin: 0 0 0.625rem;
   font-family: 'Lora', 'Times New Roman', serif;
 }
-.post-entry {
+.post-preview .post-entry {
   width: 100%;
 }
-.post-image {
+.post-preview .post-image {
   float: right;
   margin-left: 0.625rem;
   height: 12rem;
   width: 12rem;
 }
-.post-image {
+.post-preview .post-image {
   filter: grayscale(90%);
 }
-.post-image:hover {
+.post-preview .post-image:hover {
   filter: grayscale(0%);
 }
-.post-image img {
+.post-preview .post-image img {
   border-radius: 6rem;
   height: 100%;
   width: 100%;
 }
-.post-image-short {
+.post-preview .post-image-short {
   margin-top: -2.1875rem;
 }
 @media (max-width: 767px) {
-  .post-image {
+  .post-preview .post-image {
     height: 9rem;
     width: 9rem;
   }
-  .post-image-short {
+  .post-preview .post-image-short {
     margin-top: 0;
   }
 }
-.post-image-small {
+.post-preview .post-image-small {
   width: 100%;
   height: 100%;
   text-align: center;
   display: none;
 }
-.post-image-small img {
+.post-preview .post-image-small img {
   width: 6.25rem;
   height: 6.25rem;
 }
 @media (max-width: 500px) {
-  .post-image {
+  .post-preview .post-image {
     display: none;
   }
-  .post-image-small {
+  .post-preview .post-image-small {
     display: block;
   }
 }
@@ -565,6 +567,30 @@ footer .footer-custom-content {
   .post-preview .blog-tags {
     margin-top: 0.625rem;
   }
+}
+
+/* Tags page */
+
+.tag-btn {
+  margin: 0.3125rem;
+}
+
+#full-tags-list {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#full-tags-list .tag-entry {
+  margin: 0 0 0.9375rem 1.5625rem;
+}
+
+#full-tags-list .tag-entry a {
+  font-size: 1.25rem;
+}
+
+#full-tags-list .tag-entry .entry-date {
+  color: #808080;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 /* --- Post and page headers --- */
@@ -707,17 +733,6 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   .intro-header.big-img {
     height: 12.5rem;
   }
-}
-
-.caption {
-  text-align: center;
-  font-size: 0.875rem;
-  padding: 0.625rem;
-  font-style: italic;
-  margin: 0;
-  display: block;
-  border-bottom-right-radius: 0.3125rem;
-  border-bottom-left-radius: 0.3125rem;
 }
 
 #header-gh-btns {
@@ -882,6 +897,16 @@ pre {
   background: none;
 }
 
+/* Fix table border github gist snippets */
+
+.gist, .gist-file table tr {
+  border: unset;
+}
+
+.gist, .gist-file table tr td {
+  border: unset;
+}
+
 /* --- Social media sharing section --- */
 
 #social-share-section {
@@ -918,36 +943,47 @@ pre {
   border-left-color: #3CB371;
 }
 
-/* Fix table border github gist snippets */
+/* --- Misc blog post styles --- */
 
-.gist, .gist-file table tr {
-  border: unset;
+.blog-post :first-child {
+  margin-top: 0;
 }
 
-.gist, .gist-file table tr td {
-  border: unset;
+.blog-post img {
+  max-width: 100%;
 }
 
-/* Tags page */
-
-.tag-btn {
-  margin: 0.3125rem;
-}
-
-#full-tags-list {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#full-tags-list .tag-entry {
-  margin: 0 0 0.9375rem 1.5625rem;
-}
-
-#full-tags-list .tag-entry a {
-  font-size: 1.25rem;
-}
-
-#full-tags-list .tag-entry .entry-date {
-  color: #808080;
+.blog-post .caption {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.625rem;
   font-style: italic;
-  font-size: 1rem;
+  color: #777;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 0.3125rem;
+  border-bottom-left-radius: 0.3125rem;
+}
+
+.blog-post hr {
+  max-width: 25%;
+  border-width: 0.25rem;
+  border-radius: 0.1875rem;
+  border-color: #808080;
+}
+
+.blog-post blockquote {
+  padding: 0.625rem 1.25rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+  border-left: 0.3125rem solid #eee;
+}
+
+.blog-post blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
 }
