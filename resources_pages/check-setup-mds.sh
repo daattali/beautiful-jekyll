@@ -25,20 +25,36 @@ echo '## Operating system' >> check-setup-mds.log
 if [[ "$(uname)" == 'Linux' ]]; then
     # sed is for alignment purposes
     sys_info=$(hostnamectl)
-    grep "Operating" <<< $sys_info | sed 's/^[[:blank:]]*//' >> check-setup-mds.log
+    os_version=$(grep "Operating" <<< $sys_info | sed 's/^[[:blank:]]*//')
+    echo $os_version >> check-setup-mds.log
     grep "Architecture" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:    /' >> check-setup-mds.log
     grep "Kernel" <<< $sys_info | sed 's/^[[:blank:]]*//;s/:/:          /' >> check-setup-mds.log
     file_browser="xdg-open"
+    if ! $(grep -iq "20.04" <<< $os_version); then
+        echo "MISSING You need Ubuntu 20.04." >> check-setup-mds.log
+    fi
 elif [[ "$(uname)" == 'Darwin' ]]; then
     sw_vers >> check-setup-mds.log
     file_browser="open"
+    if ! $(sw_vers | grep -iq "10.15"); then
+        echo "MISSING You need macOS Catalina (10.15.x)." >> check-setup-mds.log
+    fi
 elif [[ "$OSTYPE" == 'msys' ]]; then
     # wmic use some non-ASCII characters that we need grep (or sort or similar) to convert,
     # otherwise the logfile looks weird. There is also an additional newline at the end.
-    wmic os get caption | grep Micro | sed 's/\n//g'  >> check-setup-mds.log
+    os_edition=$(wmic os get caption | grep Micro | sed 's/\n//g')
+    echo $os_edition >> check-setup-mds.log
     wmic os get osarchitecture | grep bit | sed 's/\n//g' >> check-setup-mds.log
-    wmic os get version | grep 10 | sed 's/\n//g' >> check-setup-mds.log
+    os_version=$(wmic os get version | grep 10 | sed 's/\n//g')
+    echo $os_version >> check-setup-mds.log
     file_browser="explorer"
+
+    if $(grep -iq Home <<< $os_edition); then
+        echo "MISSING Windows Home is not sufficient. Please upgrade to the free Education edition as per the setup instructions." >> check-setup-mds.log
+    fi
+    if ! $(grep -iq "19041" <<< $os_version); then
+        echo "MISSING You need at least Windows build 10.0.19041. Please run Windows update." >> check-setup-mds.log
+    fi
 else
     echo "Operating system verison could not be detected." >> check-setup-mds.log
 fi
