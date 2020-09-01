@@ -9,7 +9,7 @@ sections:
   create: all
 - type: jekyll-posts
   label: Posts
-  create: all
+  create: documents
   templates:
   - blog-post
 - type: document
