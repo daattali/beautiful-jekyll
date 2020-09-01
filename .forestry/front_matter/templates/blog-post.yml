@@ -5,6 +5,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
+  hidden: true
 - type: text
   name: title
   label: title
@@ -20,6 +22,7 @@ fields:
 - type: file
   name: share-img
   label: share-img
-- type: list
-  name: tags
+- name: tags
+  type: tag_list
+  default: []
   label: tags
