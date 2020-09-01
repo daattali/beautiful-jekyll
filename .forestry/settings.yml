@@ -10,6 +10,8 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - blog-post
 - type: document
   path: _config.yml
   label: Configuration
