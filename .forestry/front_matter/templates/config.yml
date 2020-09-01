@@ -18,9 +18,6 @@ fields:
   - type: text
     name: Popular
     label: Popular
-  - type: text
-    name: Recommendations
-    label: Recommendations
   - type: field_group_list
     name: Connect
     label: Connect
