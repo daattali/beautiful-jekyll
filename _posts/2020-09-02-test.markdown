@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'DM n°1'
+title: 'Exemple de publication'
 published: true
 ---
 
