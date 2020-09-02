@@ -1,38 +1,33 @@
 ---
 layout: post
 title: Three Ways to Ease Yourself Back into the Week
-subtitle: ''
+subtitle: Saying no to that cheetah pace!
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200831_144359_0000_compress44.jpg"
-share-img: "/assets/img/path.jpg"
+thumbnail-img: "/uploads/20200902_144153_0000_compress13.jpg"
+share-img: ''
 tags:
-- digital minimalism
-- setting boundaries with social media
-- digital boundaries
+- simple planning
+- slow living
+- simplify your life
+- easing back into the week
 
 ---
-The digital world has been a part of my life for as long as I've been a mom. Nine and a half years. And over the years, I've had to grapple with why I use [social media](www.instagram.com/eastcoastkelly) in particular. For me, it's all about the WHY in why I'm showing up in the digital world. Over the years, I've had to create boundaries with the digital world. It used to suck me in often. So my relationship with the digital world is often under reassessment to make sure the time I spend here is with intention. It'll look different for everyone, of course. For me currently, I come to the digital world for inspiration, support, community. It's not meant to replace my "real life", but to add to it. To be a part of my life, but not to become my life. When I remind myself of these things, it helps me to stick to these things. Without the guilt or time sucking (as often). ⁣
+After a weekend break, _I used to be that cheetah_. The more I get done Monday, the better the rest of the week will be, I thought! I'll be all set. Nope. It always ended up burning me out for the rest of the week. And I'm not doing myself or family any service by doing that. ⁣Today on the blog, I'm sharing with you how to ease yourself back into the week (without burning out).   
+   
+1\. During the recent [Simplify Your Life Challenge](https://www.instagram.com/p/CDblvMVpJny/) I co-hosted, one of the tips I read about that I shared was to **focus on the top three on your to do list**. What a good practice that is! Top three for your daily to do list, anything else is bonus.  
+   
+2\. One thing that I really love doing on Mondays is **catching up with little things**. Like an email here and there, a comment on social media I missed. I don't normally plan anything big for Mondays so I can catch up on the little things.   
+   
+3\. **Writing things down** has an effect of helping us see what's to come and if we're being reasonable too. I like to write down a basic overview the week for a general idea. It helps, especially when *someone* has four little people making noise in their ear and making it hard to think.   
+   
+More tips on easing back into the week (after the summer)? Check this blog out [here](https://www.theauthenticpath.com/8-tips-for-easing-back-into-the-work-week-after-summer-vacation).   
+   
+**Let's say no to keeping up with that cheetah pace and lead a sane, well paced life. Alright? Unless being a cheetah is your thing, that is.**   
+   
+Further reading? I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning.  
+_PS if you’d like more tips just like these ones that I found for easing back into the week, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send you those for free too._
 
-* It means I don't reach for my phone as soon as I wake up. I turn to my morning routine instead. ⁣
-
-
-* It means I don't touch my phone (much) when I'm homeschooling - my attention is with them. Sometimes I do pop in when they're doing independent work, but that's a boundary I made for myself I'm comfortable with. ⁣
-
-
-* It means I have set aside times to check into social media. This one is newer to me and it's still a work in progress, but it's getting there!⁣
-
-**Here are a couple practical tips in setting digital boundaries:⁣**  
-⁣  
-1\. Turn off your notifications from popping up automatically. ⁣  
-2\. Set limits for checking notifications and other messages. Such as: morning, evening, or just timing yourself and not checking them as they pop up.⁣
-
-You can read more great ideas on [this blog](http://amyblankson.com/5-strategies-setting-digital-boundaries/) too.  
-⁣  
-A couple book recommendations on this topic? [Hands Free Mama: A Guide to Putting Down the Phone, Burning the To-Do List, and Letting Go of Perfection to Grasp What Really Matter](https://amzn.to/2BduGKX)s and [Digital Minimalism: Choosing a Focused Life in a Noisy World](https://amzn.to/3jBof4D). Lots of food for thought for sure.⁣
-
-_PS if you'd like five more practical tips in creating healthy boundaries with the digital world, email me at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I'd be happy to share that with you for free._
-
-![](/uploads/20200831_144130_0000_compress12.jpg)
+![An image overview of the blog and three planners.](/uploads/20200902_144750_0000_compress96.jpg "journals3")
 
 Cheers,
 
