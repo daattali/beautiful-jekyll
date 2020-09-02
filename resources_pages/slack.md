@@ -62,7 +62,7 @@ If you want to change something you wrote in Slack, you can always edit the mess
 
 For short term retention of messages, you can click the save icon in the top right corner of a message. Your saved messages will be accessible from the "Saved items" section in the left sidebar (above the "Channels" section). You can also click the three dots in the top right corner of a message to schedule a reminder about that message, so that you remember to read it later.
 
-All UBC MDS Slack messages (including your saved items) will be deleted at the end of each year (at least, all the messages in public channels, which are the ones we can control). If you see something on Slack that you would like to save for after the MDS program, it is your responsibility to make a copy of it and save it outside Slack. In general, though, most of the materials you may want to keep are on GitHub, and you will retain access to a copy of these materials at the end of the program. 
+All UBC MDS Slack messages (including your saved items) will be deleted at the end of each year (at least, all the messages in public channels, which are the ones we can control). If you see something on Slack that you would like to save for after the MDS program, it is your responsibility to make a copy of it and save it outside Slack. Keep in mind that, after you graduate, you will be given access to the MDS course materials through github.com.
 
 #### Privacy
 
