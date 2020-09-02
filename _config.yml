@@ -10,10 +10,8 @@ author: Rushiraj Gohil
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://rushiraj.github.io/"
+ 
+  url: "https://rushiraj.github.io/"
 
 # --- Logo --- #
 
