@@ -2,8 +2,8 @@
 layout: post
 title: Getting Emotionally Intelligent !!!
 subtitle: by Rushiraj Gohil
-cover-img: assets/img/emotional-intelligence.gif
-thumbnail-img: assets/img/emotional-intelligence.gif
+cover-img: assets/img/download (8).jpg
+thumbnail-img: assets/img/download (10).jpg
 share-img: assets/img/emotional-intelligence.gif
 tags: [Imotional Intelligence]
 ---
