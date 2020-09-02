@@ -34,3 +34,14 @@
 .footer-logo img {
   height: inherit;
 }
+
+.member-col {
+  height: 300px
+}
+
+.member-col img {
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
