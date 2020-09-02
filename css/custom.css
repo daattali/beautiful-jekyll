@@ -1,9 +1,36 @@
 .jumbotron-main {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.9) 100%),
-    url("/DavidHeld_files/rpad3-text.png") no-repeat center center;
+  color: white;
+  background-color: black;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.lab-photo {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),
+    url("/DavidHeld_files/rpad group pic - Aug 2020 - fix.png") no-repeat center center;
   background-size: contain;
+  background-color: black;
+  min-height: 550px;
+  padding-top: 8%;
+}
+
+.main-news {
+  height: 500px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02)
+}
+
+.main-highlights {
+  height: 500px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.footer-logo {
+  height: 75px;
+}
+
+.footer-logo img {
+  height: inherit;
 }

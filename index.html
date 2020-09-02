@@ -1,17 +1,43 @@
 ---
-layout: page
+layout: base
 title:
 subtitle:
 use-site-title: true
 ---
 
-<div class="jumbotron">
-  <h1 class="display-4">
-    Robots Perceiving and Doing Lab
-  </h1>
-  <p class="lead">
-    The Robots Perceiving and Doing (RPAD) Lab at Carnegie Mellon University (CMU) Robotics Institute brings together researchers to address the challenges of developing novel methods for robots to perceive and act in the world.  Our research lies at the intersection of robotics, machine learning, and computer vision.  We develop new methods for robotic perception and control that can allow robots to operate in the messy, cluttered environments of our daily lives. Our main approach is to design new machine learning algorithms to understand environmental changes: how dynamic objects in the environment can move and how to affect the environment to achieve a desired task.
-  </p>
+{% include header.html type="page" %}
+
+<div class="container-fluid" role="main">
+  <div class="row">
+    <div class="jumbotron jumbotron-main">
+      <div class="container lab-photo">
+        <div class="">
+          <h1 class="display-4">
+            Robots Perceiving and Doing Lab
+          </h1>
+          <p class="lead">
+            The Robots Perceiving and Doing (RPAD) Lab at Carnegie Mellon University (CMU) Robotics Institute brings together researchers to address the challenges of developing novel methods for robots to perceive and act in the world.  Our research lies at the intersection of robotics, machine learning, and computer vision.  We develop new methods for robotic perception and control that can allow robots to operate in the messy, cluttered environments of our daily lives. Our main approach is to design new machine learning algorithms to understand environmental changes: how dynamic objects in the environment can move and how to affect the environment to achieve a desired task.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="col-lg-4 main-news">
+        <h1>News</h1>
+        <ul>
+          <li>One paper (Spotlight) got accepted to ECCV 2020!</li>
+          <li>Four papers got accepted to IROS 2020!</li>
+          <li>Two papers (Oral) got accepted to CVPR 2020!</li>
+        </ul>
+      </div>
+      <div class="col-lg-8 main-Highlights">
+        <h1>Highlights</h1>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- <div class="row">
