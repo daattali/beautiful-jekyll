@@ -2,9 +2,9 @@
 layout: post
 title: Getting Emotionally Intelligent !!!
 subtitle: by Rushiraj Gohil
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+cover-img: assets/img/emotional-intelligence.gif
+thumbnail-img: assets/img/emotional-intelligence.gif
+share-img: assets/img/emotional-intelligence.gif
 tags: [Imotional Intelligence]
 ---
 
@@ -30,7 +30,7 @@ We live in a world where each of us sees the world in a different way, interpret
 
 We will talk about different aspects of emotional intelligence and we’ll discuss how we can achieve it. Deep down you all know everything about this blog. But many of us don’t apply these things in our lives. This blog intends to make you realize the necessity of these pieces of stuff using the most effective way of learning i.e. learning by questioning. So I will answer three path-defining questions of this concept of EI:
 
-    1. What makes a leader?
+   1. What makes a leader?
 I have found, however, that the most effective leaders are alike in one crucial way: They all have a high degree of what has come to be known as emotional intelligence. It’s not that IQ and technical skills are irrelevant. They do matter, but mainly as “threshold capabilities”; that is, they are the entry-level requirements for executive positions. But my research, along with other recent studies, clearly shows that emotional intelligence is the necessary condition of leadership. Without it, a person can have the best training in the world, an incisive, analytical mind, and an endless supply of smart ideas, but he still won’t make a great leader.
 
 It isn’t IQ or technical skills, says Daniel Goleman. It’s emotional intelligence: a group of five skills that enable the best leaders to maximize their own and their follower’s performance. When senior managers at one company had a critical mass of EI capabilities, their divisions outperformed yearly earnings goals by 20%.
