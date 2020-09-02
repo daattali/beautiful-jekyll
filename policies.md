@@ -87,6 +87,9 @@ Balancing these two sides is difficult. In MDS the policy is as follows: if a gr
 
 ## Quizzes
 
+*For the 2020-21 cohort only:* the below policy does not apply during remote MDS. While we are remote, quizzes will be open book and done remotely. The part that still **does** apply is: students may not communicate with anyone else during quizzes. This includes classmates, internet tutors etc. 
+
+
 Unless otherwise specified, **the only allowed material during MDS quizzes is official documentation available in the local programming environment** (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students may **NOT** :
 
 - take a quiz from a remote location
