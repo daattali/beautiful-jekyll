@@ -7,6 +7,8 @@ subtitle: For MDS Capstone Projects
 
 This year's capstone course will run __May - June, 2021__ (~8 weeks).
 
+*Due to COVID-19, it is unclear whether 2021 Capstone Projects will be conducted in-person or remotely. However, after a very successful "remote Capstone" in 2020, MDS is committed to facilitating Capstone Projects again in 2021. With this in mind, some activites described below may be conducted virtually in 2021.*
+
 | Event                                                                                          | Deadline/Period       |
 |------------------------------------------------------------------------------------------------|-----------------------|
 | [Suggested initial submission of proposal](https://ubc-mds.github.io/capstone/proposal/)       | November 15, 2020     |
