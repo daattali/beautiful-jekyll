@@ -11,7 +11,7 @@ When I first learned about convolutional neural networks (also known as CNNs, or
 
 I will call this a "row-of-boxes" diagram. In my experience, this type of diagram is common in both CNN papers _and_ CNN lessons, even though the audiences are very different in those two contexts. I would argue that row-of-boxes diagrams are targeted at people who already understand CNNs, not students seeing them for the first time. Given the diagram issue and other obstacles, it took me a few iterations to fully understand CNNs when I was a student.
 
-In this post, I will describe my approach for teaching CNNs here in the [UBC MDS program](https://masterdatascience.ubc.ca/), which I am hoping is more clear. A Jupyter notebook implementation of my lesson can be found [here](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). My approach comprises three main principles for teaching CNNs: using circle-and-arrow diagrams, focussing on the shape of the data, and teaching 1D convnets before 2D and beyond. The post is structured around these three ideas. Note that while this post is about teaching CNNs to those who are new to the subject, this post itself presumes familiarity with CNNs.
+In this post, I will describe my approach for teaching CNNs here in the [UBC MDS program](https://masterdatascience.ubc.ca/), which I am hoping is more clear. A Jupyter notebook implementation of my lesson can be found [here](https://github.com/UBC-MDS/DSCI_572_sup-learn-2/blob/master/lectures/lecture7_CNNs.ipynb). My approach comprises three main principles for teaching CNNs: using circle-and-arrow diagrams, focussing on the shape of the data, and teaching 1D convnets before 2D and beyond. The post is structured around these three ideas. Note that while this post is about teaching CNNs to those who are new to the subject, this post itself presumes familiarity with CNNs.
 
 ### Circle-and-arrow diagrams
 
@@ -76,7 +76,7 @@ Here is my answer to the above question: in the first and third cases, I would e
 
 ### Concluding thoughts
 
-The three points above summarize my main ideas about teaching CNNs. I also have developed some smaller strategies, like setting the convolution behaviour such that the inputs and outputs are the same size, which eliminates an extra potential source of confusion. If you're interested, you can check out this and more in my lecture [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2_public/blob/master/lectures/lecture7.ipynb). So far I have given this lecture twice, and it seems to have been effective. Perhaps someone will find it useful!
+The three points above summarize my main ideas about teaching CNNs. I also have developed some smaller strategies, like setting the convolution behaviour such that the inputs and outputs are the same size, which eliminates an extra potential source of confusion. If you're interested, you can check out this and more in my lecture [notebook](https://github.com/UBC-MDS/DSCI_572_sup-learn-2/blob/master/lectures/lecture7_CNNs.ipynb). So far I have given this lecture twice, and it seems to have been effective. Perhaps someone will find it useful!
 
 _July 2020 update_: a video of me delivering this lecture to the 2019-20 MDS cohort is now available [here](https://www.youtube.com/watch?v=vfQ8vQHkuic&list=PLWmXHcz_53Q3KLISD8jydKjz41b9iqERC&index=6).
 
