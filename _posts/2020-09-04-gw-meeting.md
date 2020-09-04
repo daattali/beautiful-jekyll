@@ -14,7 +14,7 @@ text-align: justify}
 
 Location: Sun Room on the 4th Floor of the New Physics Building
 
-Meeting time: 2020/9/17 10:30-11:30 (CST)
+Meeting time: 2020/9/04 10:30-11:30 (CST)
 
 Gravitational Wave Group Meeting
 
