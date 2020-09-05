@@ -4,6 +4,11 @@ title: Ubuntu
 subtitle: MDS software stack install instructions for Ubuntu
 ---
 
+<!-- Open links in a new tab unless they have the `{:target="_self"}` attribute -->
+<head>
+    <base target="_blank">
+</head>
+
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 
  - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.
@@ -21,21 +26,21 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [UBC Student Email](#ubc-student-email)
-- [Web browser](#web-browser)
-- [LastPass password manager](#lastpass-password-manager)
-- [Slack](#slack)
-- [Visual Studio Code](#visual-studio-code)
-- [GitHub](#github)
-- [Git](#git)
-- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
-- [R, IRkernel, and RStudio](#r-irkernel-and-rstudio)
-- [LaTeX](#latex)
-- [PostgreSQL](#postgresql)
-- [Docker](#docker)
-- [VS Code extensions](#vs-code-extensions)
-- [Improving the bash configuration](#improving-the-bash-configuration)
-- [Post-installation notes](#post-installation-notes)
+- [UBC Student Email](#ubc-student-email){:target="_self"}
+- [Web browser](#web-browser){:target="_self"}
+- [LastPass password manager](#lastpass-password-manager){:target="_self"}
+- [Slack](#slack){:target="_self"}
+- [Visual Studio Code](#visual-studio-code){:target="_self"}
+- [GitHub](#github){:target="_self"}
+- [Git](#git){:target="_self"}
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
+- [R, IRkernel, and RStudio](#r-irkernel-and-rstudio){:target="_self"}
+- [LaTeX](#latex){:target="_self"}
+- [PostgreSQL](#postgresql){:target="_self"}
+- [Docker](#docker){:target="_self"}
+- [VS Code extensions](#vs-code-extensions){:target="_self"}
+- [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
+- [Post-installation notes](#post-installation-notes){:target="_self"}
 
 ## Installation notes
 
