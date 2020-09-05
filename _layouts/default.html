@@ -1,7 +1,9 @@
 ---
 layout: base
 ---
+  {% if jekyll.environment == 'production' %}
   {% include analytics.html %}
+  {% endif %}
 <div class="intro-header"></div>
 
 <div role="main" class="container-md">
