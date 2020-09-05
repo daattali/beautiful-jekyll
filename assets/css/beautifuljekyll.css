@@ -190,16 +190,16 @@ img {
 
 .navbar-custom .navbar-nav .nav-item {
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   letter-spacing: 0.0625rem;
 }
 
 .navbar-custom .navbar-nav .nav-link {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 1.5;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  line-height: 1.25rem;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
 }
 
 .navbar-custom .navbar-brand,
@@ -317,7 +317,7 @@ img {
   position: absolute;
   left: 50%;
   width: 3.125rem;
-  margin-top: 1.75rem;
+  margin-top: 3.1rem;
   transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -332,7 +332,6 @@ img {
 
 .navbar-custom .avatar-container .avatar-img-border {
   width: 100%;
-  display: inline-block;
   margin-left: -50%;
   {% unless site.round-avatar == false %}
     border-radius: 50%;
