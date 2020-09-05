@@ -3,6 +3,12 @@ layout: page
 title: macOS
 subtitle: MDS software stack install instructions for macOS
 ---
+
+<!-- Open links in a new tab unless they have the `{:target="_self"}` attribute -->
+<head>
+    <base target="_blank">
+</head>
+
 These instructions will walk you through installing the required Data Science software stack for the UBC Master of Data Science program. Before starting, ensure that your laptop meets our program requirements:
 
  - runs one of the following operating systems: macOS 10.15.X (Catalina), Ubuntu 20.04, Windows 10 Professional, Enterprise or Education; version 2004.
@@ -20,24 +26,24 @@ These instructions will walk you through installing the required Data Science so
 
 ## Table of Contents
 
-- [UBC Student Email](#ubc-student-email)
-- [Web browser](#web-browser)
-- [LastPass password manager](#lastpass-password-manager)
-- [Slack](#slack)
-- [Bash shell](#bash-shell)
-- [Visual Studio Code](#visual-studio-code)
-- [GitHub](#github)
-- [Git](#git)
-- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab)
-- [Essential python packages](#essential-python-packages)
-- [JupyterLab setup](#jupyterlab-setup)
-- [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio)
-- [LaTeX](#latex)
-- [PostgreSQL](#postgresql)
-- [Docker](#docker)
-- [VS Code extensions](#vs-code-extensions)
-- [Improving the bash configuration](#improving-the-bash-configuration)
-- [Post-installation notes](#post-installation-notes)
+- [UBC Student Email](#ubc-student-email){:target="_self"}
+- [Web browser](#web-browser){:target="_self"}
+- [LastPass password manager](#lastpass-password-manager){:target="_self"}
+- [Slack](#slack){:target="_self"}
+- [Bash shell](#bash-shell){:target="_self"}
+- [Visual Studio Code](#visual-studio-code){:target="_self"}
+- [GitHub](#github){:target="_self"}
+- [Git](#git){:target="_self"}
+- [Python, Conda, and JupyterLab](#python-conda-and-jupyterlab){:target="_self"}
+- [Essential python packages](#essential-python-packages){:target="_self"}
+- [JupyterLab setup](#jupyterlab-setup){:target="_self"}
+- [R, XQuartz, IRkernel, and RStudio](#r-xquartz-irkernel-and-rstudio){:target="_self"}
+- [LaTeX](#latex){:target="_self"}
+- [PostgreSQL](#postgresql){:target="_self"}
+- [Docker](#docker){:target="_self"}
+- [VS Code extensions](#vs-code-extensions){:target="_self"}
+- [Improving the bash configuration](#improving-the-bash-configuration){:target="_self"}
+- [Post-installation notes](#post-installation-notes){:target="_self"}
 
 ## Installation notes
 
@@ -199,7 +205,7 @@ which should return something like this:
 conda 4.8.2
 ```
 
-> Note: If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell) above to set your default Terminal shell to Bash as opposed to Zsh.
+> Note: If you see `zsh: command not found: conda`, see the section on [Bash](#bash-shell){:target="_self"} above to set your default Terminal shell to Bash as opposed to Zsh.
 
 Next, type the following to ask for the version of Python:
 ```
