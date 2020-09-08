@@ -15,6 +15,7 @@ repository, which will be named something like `DSCI_521_platforms-dsci_students
 repo is public to all students and is where you can access lectures, due dates, readings, etc.
 
 ### How to submit
+
 We anticipate that you will clone your lab-specific repository and do your work from
 within there. To submit your labs you must **both** push your work to <https://github.ubc.ca/> 
 **and** submit your rendered HTML file to Canvas. Your assignment will come bundled with a short script
@@ -50,11 +51,11 @@ Your work must be reproducible from beginning to end. This requirement will beco
   - All data cleaning/wrangling must be done programmatically (*i.e.,* in R, Python, etc) so that it is reproducible.
   - All dependencies are listed (using a package or environment management strategy could make this easier in some cases... up to you!).
 
-#### Make it easy for others to run your code:
+#### Make it easy for others to run your code
   
   - At the beginning of each code source file, load any necessary packages, so your dependencies are obvious.
   - At the beginning of each code source file, import anything coming from an external file. This will make it easy for someone to see which data files are required, edit to reflect their locals paths if necessary, etc. There are situations where you might not keep data in the repo itself (*e.g.,* you are downloading data from a website).
-  - Pretend you are someone else. Clone a fresh copy of your own repo from GitHub, read your instructions to re-run your code. Does it “just work”? It should!
+  - Pretend you are someone else. Clone a fresh copy of your own repo from GitHub, read your instructions to re-run your code. Does it "just work"? It should!
  
 ### Deadline
 The lab deadlines are given on the course repo and/or MDS calendar. **These are hard deadlines.** In particular,
@@ -65,7 +66,7 @@ Saturday at 6pm, but there may be some exceptions. For the policy on late submis
 ### Grades
 You will receive your grades through Canvas.
 
-#### Privacy notes
+### Privacy notes
 
 * Your lab repos are visible to yourself, your TAs, all the core MDS staff, and some github.ubc.ca system administrators.
 
