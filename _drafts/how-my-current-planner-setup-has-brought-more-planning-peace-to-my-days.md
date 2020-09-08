@@ -3,42 +3,46 @@ layout: post
 title: How my Current Planner Setup has Brought More Planning Peace to my Days
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200907_191643_0000_compress88.jpg"
+thumbnail-img: "/uploads/img_20200906_095105025_compress37.jpg"
 share-img: ''
 tags:
-- minimalism
-- decluttering
-- dealing with sentimental items
-- decluttering sentimental items
+- simple planning
+- traveller's ntoebook setup
+- bullet journal method
 
 ---
-Sentimental items. Should they stay or should they go now? Today on the blog, I’m sharing with you a bit about my process of dealing with sentimental items and 3 (practical) ways to declutter and deal with sentimental items.  
-   
-At the very beginning of my decluttering journey, I went through the [konmari process](https://amzn.to/3kFAv5C) and the sentimental category was the last I tackled. I had so much stuff. Most of it was sentimental papers and pictures and random school awards. I kept things like report cards and junior high letters and diaries over the years. They came with me through two homes since I moved out of my childhood home.   
-   
-Sitting with all of this stuff in my laundry room all around me on the floor, I thought deep and long about what to do. **I decided to do what worked for me at the time**: Declutter what obviously needed to go. Make a pile of stuff I wasn't ready to let go of yet. And then I did the huge task of taking pictures of everything left.. Just in case...  
-   
-And guess what? _I haven't looked at those pictures once since I took them_. I spent hours talking pictures! Maybe my kids will look at them eventually, maybe not. But at least they are there just in case. I wasn't completely ready to let go at the time. **Minimalism and decluttering is a journey after all and it's going to look different for everyone**. One day, one step at a time.
+I’ve tried lots of different planning systems and setups, but right now this is my “planning peace” – a term planning folk often use when they’ve found peace with the best system setup for them. I do tweak things over time and try different things, but this is what’s working for me right now. Today on the blog, I’m sharing with you how my current planner setup has brought more planning peace to my days.
 
-## 3 Ways to Declutter and Deal with Sentimental Items?
+**But first. Here’s what my planner setup looks like right now…**
 
-1. Pass onto someone who'd appreciate it. Have a cousin or sibling who’d love those old saucers and tea cups? Pass them on. They’ll be loved if it is something they’d love!
-2. Display it somewhere special. Can’t let go of something because it sparks joy (link) for you? Find somewhere to display it that makes you happy.
-3. Take pictures of it and then declutter the physical item. You can do what I did if you’re not ready to fully let go. Take time to take pictures and then revisit them in the future. You may be like me, too, and not look at them again (well, for me it’s “yet”…but maybe never? Time will tell).
+I use a book called a [traveller’s notebook](https://amzn.to/2Qcxqfq) and I use a planning method called the bullet journaling method. A traveler’s notebook is a cover with elastics. Each elastic loops around the inserts on the inside, creating three different sections. I could use just two [inserts](https://amzn.to/2Qcxqfq) or maybe a couple more if I needed too. I love the flexibility in this system!
 
-   ![](/uploads/20200907_191317_0000_compress16.jpg)
+![A picture of my planner on the table.](/uploads/img_20200906_095105025_compress37.jpg "myplanner")
 
-## Further reading? 
+Inside my traveller’s notebook, I have three inserts. I use [these ones](https://amzn.to/32bmqo3). Grid inserts are my preferred kind.
 
-[The Life Changing Magic of Tidying Up](https://amzn.to/38zOVi7)
+In the first insert, here’s what you’ll find:
 
-[The Minimalist Home](https://amzn.to/3f7lfv0)
+![A picture of my first insert and what's in it: monthly, daily, and weekly to do list.](/uploads/img_20200907_132454160_compress3.jpg "journalinsert1")
 
-[Clutter Free with Kids](https://amzn.to/2XMV06I)
+In the second insert, here’s what you’ll find:
 
-[Decluttering at the Speed of Life](https://amzn.to/3bcR9oL)
+![A picture of my second insert and what's inside: routines, lists, charts, and trackers.](/uploads/img_20200907_132500524_compress97.jpg "journalinsert2")
 
-_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
+And in the third insert, here’s what you’ll find:
+
+![A picture of my third insert and what's in it: notes that I want to keep.](/uploads/img_20200907_132506497_compress65.jpg "journalinsert3")
+
+Each insert has a specific purpose and I love that.
+
+## How has my current planner setup has brought more planning peace to my days?
+
+Unlike a one book method, separating my planner into three separate inserts has helped me to be better focused when I’m in each section of my book. It has become much easier to find things in my planner, especially in the second and third insert for notes and lists and routines. It’s much easier for me to plan my day because I’m only working from one insert. Everything is in one insert.  
+ 
+
+**Further reading?** I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning (the method I use within my current planner setup in this blog).  
+ _  
+ PS if you’d like to chat about this method more with me, feel free to drop me a line at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I’ll also share my two favourite, simple videos for getting you started with this method, too!_
 
 Cheers,
 
