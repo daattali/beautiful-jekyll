@@ -12,4 +12,4 @@ Are you Interested in making a difference with our growing convention? Fur Squar
 
 **Virtual Duties As Assigned:** Filling in for staff for those unforeseen events which invariably come up, or just pitching in for odd jobs as they arise.&nbsp;
 
-While we know we're going to need help for a virtual Fur Squared, we don't yet know how it's going to work out\! Watch out for updates on this site as well as on [twitter](https://twitter.com/fursquared). In the meantime, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com)
+While we know we're going to need help for a virtual Fur Squared, we don't yet know how it's going to work out\! Watch out for updates on this site as well as on [twitter](https://twitter.com/fursquared). In the meantime, you can sign up in advance with this link http://bit.ly/f2-2021-volunteers or email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com)
