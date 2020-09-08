@@ -1,33 +1,44 @@
 ---
 layout: post
 title: 3 Ways to Declutter and Deal with Sentimental Items
-subtitle: Saying no to that cheetah pace!
+subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
-thumbnail-img: "/uploads/20200902_144153_0000_compress13.jpg"
+thumbnail-img: "/uploads/20200907_191643_0000_compress88.jpg"
 share-img: ''
 tags:
-- simple planning
-- slow living
-- simplify your life
-- easing back into the week
+- minimalism
+- decluttering
+- dealing with sentimental items
+- decluttering sentimental items
 
 ---
-After a weekend break, _I used to be that cheetah_. The more I get done Monday, the better the rest of the week will be, I thought! I'll be all set. Nope. It always ended up burning me out for the rest of the week. And I'm not doing myself or family any service by doing that. ⁣Today on the blog, I'm sharing with you how to ease yourself back into the week (without burning out).   
+Sentimental items. Should they stay or should they go now? Today on the blog, I’m sharing with you a bit about my process of dealing with sentimental items and 3 (practical) ways to declutter and deal with sentimental items.  
    
-1\. During the recent [Simplify Your Life Challenge](https://www.instagram.com/p/CDblvMVpJny/) I co-hosted, one of the tips I read about that I shared was to **focus on the top three on your to do list**. What a good practice that is! Top three for your daily to do list, anything else is bonus.  
+At the very beginning of my decluttering journey, I went through the [konmari process](https://amzn.to/3kFAv5C) and the sentimental category was the last I tackled. I had so much stuff. Most of it was sentimental papers and pictures and random school awards. I kept things like report cards and junior high letters and diaries over the years. They came with me through two homes since I moved out of my childhood home.   
    
-2\. One thing that I really love doing on Mondays is **catching up with little things**. Like an email here and there, a comment on social media I missed. I don't normally plan anything big for Mondays so I can catch up on the little things.   
+Sitting with all of this stuff in my laundry room all around me on the floor, I thought deep and long about what to do. **I decided to do what worked for me at the time**: Declutter what obviously needed to go. Make a pile of stuff I wasn't ready to let go of yet. And then I did the huge task of taking pictures of everything left.. Just in case...  
    
-3\. **Writing things down** has an effect of helping us see what's to come and if we're being reasonable too. I like to write down a basic overview the week for a general idea. It helps, especially when *someone* has four little people making noise in their ear and making it hard to think.   
-   
-More tips on easing back into the week (after the summer)? Check this blog out [here](https://www.theauthenticpath.com/8-tips-for-easing-back-into-the-work-week-after-summer-vacation).   
-   
-**Let's say no to keeping up with that cheetah pace and lead a sane, well paced life. Alright? Unless being a cheetah is your thing, that is.**   
-   
-Further reading? I enjoyed the book [Eat that Frog](https://amzn.to/2DmKOdX) for planning and procrastination tips as well as the [Bullet Journal Method](https://amzn.to/3fB51uF) for simple planning.  
-_PS if you’d like more tips just like these ones that I found for easing back into the week, send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _and I can send you those for free too._
+And guess what? _I haven't looked at those pictures once since I took them_. I spent hours talking pictures! Maybe my kids will look at them eventually, maybe not. But at least they are there just in case. I wasn't completely ready to let go at the time. **Minimalism and decluttering is a journey after all and it's going to look different for everyone**. One day, one step at a time.
 
-![An image overview of the blog and three planners.](/uploads/20200902_144750_0000_compress96.jpg "journals3")
+## 3 Ways to Declutter and Deal with Sentimental Items?
+
+1. Pass onto someone who'd appreciate it. Have a cousin or sibling who’d love those old saucers and tea cups? Pass them on. They’ll be loved if it is something they’d love!
+2. Display it somewhere special. Can’t let go of something because it sparks joy (link) for you? Find somewhere to display it that makes you happy.
+3. Take pictures of it and then declutter the physical item. You can do what I did if you’re not ready to fully let go. Take time to take pictures and then revisit them in the future. You may be like me, too, and not look at them again (well, for me it’s “yet”…but maybe never? Time will tell).
+
+   ![](/uploads/20200907_191317_0000_compress16.jpg)
+
+## Further reading? 
+
+[The Life Changing Magic of Tidying Up](https://amzn.to/38zOVi7)
+
+[The Minimalist Home](https://amzn.to/3f7lfv0)
+
+[Clutter Free with Kids](https://amzn.to/2XMV06I)
+
+[Decluttering at the Speed of Life](https://amzn.to/3bcR9oL)
+
+_And if you’d like a simple, low key place to start, I have a 30 day declutter challenge that you may like. I’ve had folk message me and tell me they have bags of donations after a few days of it! Send me an email at_ [_eastcoastkellyb@gmail.com_](mailto:eastcoastkellyb@gmail.com) _if you’d like that._
 
 Cheers,
 
