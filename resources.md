@@ -15,7 +15,6 @@ subtitle: For MDS students and beyond
 
 - [MDS policies and regulations](/policies/)
 - [MDS code of conduct](/resources_pages/code_of_conduct/)
-- [Course and lab repositories](/resources_pages/lab_submission)
 - [General lab instructions](/resources_pages/general_lab_instructions)
 - [MDS rubrics](https://github.com/UBC-MDS/public/tree/master/rubric#guide-to-rubrics)
 - [Slack guidelines](/resources_pages/slack)
