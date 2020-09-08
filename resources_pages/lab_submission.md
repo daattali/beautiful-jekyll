@@ -7,8 +7,9 @@ subtitle: And lab submission guidelines
 ### Student repositories
 For every lab, we will create a repository (repo) for each student. For example,
 if your CWL is `goatcabin` then for DSCI 521 lab 1 there will be a repository called
-`DSCI_521_lab1_goatcabin`. At the start of the program each of you will be given
-a "home" repository in GitHub, which will help you find the various repositories.
+`DSCI_521_lab1_goatcabin`. To see a list of all repositories that you have access to,
+navigate to the homepage of your year's organization; for example, for the 2020-21 cohort,
+go to <https://github.ubc.ca/mds-2020-21>.
 
 NOTE: please do not confuse your personal lab-specific repository with the general course
 repository, which will be named something like `DSCI_521_platforms-dsci_students`. That
@@ -16,37 +17,26 @@ repo is public to all students and is where you can access lectures, due dates, 
 
 ### Submission
 We anticipate that you will clone your lab-specific repository and do your work from
-within there. When you push something back to <https://github.ubc.ca/> then you have submitted the assignment.
+within there. To submit your labs you must **both** push your work to <https://github.ubc.ca/> 
+**and** submit your rendered HTML file to Canvas. Your assignment will come bundled with a short script
+to render to HTML and push your work to Canvas. 
 You can push changes as many times as you want before the deadline; only the final version will be graded.
 
 ### Deadline
 The lab deadlines are given on the course repo and/or MDS calendar. **These are hard deadlines.** In particular,
-when the deadline passes you will lose write access to the repository.
+when the deadline passes you will lose write access to the repository. The default deadline for labs is
+Saturday at 6pm, but there may be some exceptions.
 
 ### Grades
-In addition to the lab-specific repos, you will each have a private repository that will serve as
-an inbox for all your lab and quiz grades for a particular course. These repositories will be named like `DSCI_511_grades_goatcabin`. When a TA pushes your grades, it will show up as an
-Issue in your grades repo. If you have notifications enabled and are watching your grades repository,
-you will be notified whenever this happens.
+You will receive your grades through Canvas.
 
-### Who can see my repos?
+#### Privacy notes
 
-#### Lab repo
-*Before* the assignment deadline, your lab-specific repo is only visible to you and the instructional staff for
-that particular course: the instructor(s), TA(s), and the teaching fellows. *After* the assignment deadline,
-your submission may be exposed to other students.
+* Your lab repos are visible to yourself, your TAs, all the core MDS staff, and some github.ubc.ca system administrators.
 
-#### Grades repo
-Each grades repo will be visible only to yourself and the instructional staff for that particular course.
-
-#### General privacy notes
-
-* in addition to the users listed above, all repositories owned by the MDS organization are visible to the organization
-owners.
-
-* although only the final version will be graded, _all_ of your commits will be viewable, so don't commit something
+* Although only the final version will be graded, _all_ of your commits will be viewable, so don't commit something
 private (like your email password) to your lab repo. Committing something and then removing it
 with another commit doesn't remove it from the git history! It is theoretically possible to pull all traces of
 something out of the git history, but it's not fun and uses more advanced git features.
 
-* http://github.ubc.ca is run on Canadian servers, so all your data will be kept within Canada.
+* <https://github.ubc.ca> and <https://canvas.ubc.ca/> are run on Canadian servers, so all your data will be kept within Canada.
