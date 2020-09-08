@@ -25,7 +25,7 @@ Any hours logged before opening ceremonies or after closing ceremonies will coun
 If you are interested in volunteering, there are a couple of ways of signing up:&nbsp;
 
 * Fill out the volunteer application form [Virtual F2 Volunteers Form](http://bit.ly/f2-2021-volunteers)
-* Contact us ahead of time at volunteers@fursquared.com. In the email, let us know your availability, special skills and desired position.&nbsp;
+* Contact us ahead of time at [volunteers@fursquared.com](mailto:volunteers@fursquared.com). In the email, let us know your availability, special skills and desired position.&nbsp;
 * Sign up at the virtual door when you arrive at the virtual convention. We'll have gopher log sheets and documentation available at the Virtual Volunteers Desk as soon as the virtual convention starts.&nbsp;
 
 If you have any questions, or need additional information, you can email us at [volunteers@fursquared.com](mailto:volunteers@fursquared.com).
