@@ -1,72 +1,26 @@
-# --- Basic options --- #
-
-# Name of website
+---
 title: East Coast Kelly
-
-# Short description of your site
 description: Helping moms simplify life at home.
-
-# Your name to show in the footer
 author: 
-
-# --- List of links in the navigation bar --- #
-
 navbar-links:
-  Popular: "popular"
+  Popular: popular
   Connect:
-    - About me: "https://kellymbriggs.github.io/aboutme/"
-    - Contact: "https://kellymbriggs.github.io/contact/"
-
-# --- Logo --- #
-
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
+  - About me: https://kellymbriggs.github.io/aboutme/
+  - Contact: https://kellymbriggs.github.io/contact/
 avatar: "/assets/img/Headshot.jpg"
-
-# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-#title-img: /path/to/image
-
-
-# --- Footer options --- #
-
-# Select the social network links that you want to show in the footer.
-# Uncomment the links you want to show and add your information to each one.
-# If you don't want to show a link to an RSS feed, set rss to "false".
 social-network-links:
-  email: "eastcoastkellyb@gmail.com"
+  email: eastcoastkellyb@gmail.com
   facebook: kelly.briggs
   instagram: eastcoastkelly
   rss: true
-
-# --- General options --- #
-
-# Select which social network share links to show in posts
 share-links-active:
   twitter: true
   facebook: true
   vk: false
-
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "www.eastcoastkelly.com"
-
-# Create a "tags" index page and make tags on each post clickable
+url-pretty: www.eastcoastkelly.com
 link-tags: true
-
-# Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
-
-# The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
-
-# --- Colours / background image --- #
-
-# Personalize the colours in your website. Colour values can be any valid CSS colour
-
+excerpt_length: "50"
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
 navbar-border-col: "#EAEAEA"
@@ -77,130 +31,39 @@ hover-col: "#0085A1"
 footer-col: "#F5F5F5"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-#page-img: "/assets/img/bgimage.png"
-
-# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
-
-# For any extra customization, you can include additional CSS files in every page on your site
-#site-css:
-#  - "/assets/css/custom-styles.css"
-
-# --- Web Statistics Section --- #
-
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-104456940-1"
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Comments --- #
-
-# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-#disqus: ""
-
-# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
-
-# To use Utterances comments: (0) uncomment the following section, (1) fill in
-# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
-# (3) Install the Utterances app in your repository https://github.com/apps/utterances
-# See more details about the parameters below at https://utteranc.es/
-#utterances:
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-# To use Staticman comments, first invite `staticmanlab` as a collaborator to your repository and
-# accept the invitation by going to `https://staticman3.herokuapp.com/v3/connect/github/<username>/<repo-name>`.
-# Then uncomment the following section and fill in "repository" and "branch".
-# If you want to use reCaptcha for staticman (optional for spam protection), then fill
-# in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
-# See more details at https://staticman.net/
-#staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
-#  reCaptcha:
-#    siteKey  : # Use your own site key, you need to apply for one on Google
-#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
-
-# --- Misc --- #
-
-# Character used to separate site title and description in HTML document title
-# and RSS feed title
 title-separator: "-"
-
-# Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
-
-# Facebook App ID
-#fb_app_id: ""
-
-
-# --- You don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: America/Vancouver
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
-paginate: 5
-
+permalink: "/:year-:month-:day-:title/"
+paginate: "5"
 kramdown:
   input: GFM
-
-# Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-      readtime: false # add estimated reading time on all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
-
-# Exclude these files from production site
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    comments: true
+    social-share: true
+    readtime: false
+- scope:
+    path: ''
+  values:
+    layout: page
+    show-avatar: true
 exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
-
+- vendor/bundle
+- CHANGELOG.md
+- CNAME
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- screenshot.png
+- docs/
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
-
+- jekyll-paginate
+- jekyll-sitemap
