@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Exemple de publication'
-published: true
+published: false
 ---
 
 On propose dans cet article une preuve alternative du petit théorème de Fermat via des considérations combinatoires. On en profitera pour introduire la notion d'action de groupe, primordiale en théorie des groupes.
