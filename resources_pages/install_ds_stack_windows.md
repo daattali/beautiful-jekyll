@@ -416,18 +416,22 @@ And type in `R_USER` as the "Variable name" and `C:\Users\username` as the "Vari
 
 ![](/resources_pages/imgs/new-user-var-values.png)
 
-Click "OK" on all of the three windows we opened above and you're done! If you open RStudio and R from terminal and type
+Click "OK" on all of the three windows we opened above and you're done! If you open RStudio and R from terminal and type the following in both:
 
 ```
 .libPaths()
 ```
 
-both should return the same values, e.g.
+both applications should return the same values, and the first one should be a path inside your user directory e.g.
 
 ```
 "C:/Users/joelo/R/win-library/4.0"   "C:/Program Files/R/R-4.0.2/library"
 ```
 
+If they don't return the same paths, please try to setting up your environmental variable again
+and making sure that it is pointing to the correct folder.
+
+**Do not continue unless both R from terminal and R from RStudio return the same paths here or later parts of the installation will fail.**
 
 ### Rtools
 
