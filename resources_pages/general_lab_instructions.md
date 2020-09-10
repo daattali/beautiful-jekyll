@@ -22,8 +22,8 @@ within there. To submit your labs you must **both** push your work to <https://g
 to render to HTML and push your work to Canvas. It is your responsibility to make sure
 your lab is submitted to both places and failure to do so will result in a deduction of mechanics marks.
 
-You notebook should include a link to your GitHub repository
-so that the TAs can click this when they are grading you HTML assignment on Canvas
+Your notebook should include a link to your GitHub repository
+so that the TAs can click this when they are grading your HTML submission on Canvas
 (this will make it quicker for us to return your grades).
 You can push changes as many times as you want before the deadline; only the final version will be graded.
 
