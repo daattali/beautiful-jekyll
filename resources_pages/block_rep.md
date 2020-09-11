@@ -15,17 +15,17 @@ We recommend doing this via Slack. If there isn't a "students only" channel, ple
 
 #### 2. Collect feedback throughout the block
 
-The main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and then also through one or more surveys during the block. We have generally found that surveys with both quantitative and qualitative fields are useful - the text fields allow us to hear individual student comments, and the quantitative fields let us know where the majority sentiment lies. Furthermore, in your survey we suggest including both a positively-framed question and a constructively-framed question, e.g. "What is working well in this course?" and "What could be improved in this course?".
+The main responsibility is to collect feedback from your classmates. Feedback is usually collected informally and then also through one or more surveys during the block. We have generally found that surveys with both quantitative and qualitative fields are useful - the text fields allow us to hear individual student comments, and the quantitative fields let us know where the majority sentiment lies. Furthermore, in your survey we suggest including both a positively-framed question and a constructively-framed question, e.g. "What is working well in this course?" and "What could be improved in this course?". During the meeting (see below), block reps often provide us with a document summarizing the survey results, which we archive for future reference. 
 
-During the meeting (see below), block reps often provide us with a document summarizing the survey results, which we archive for future reference. 
+One thing we would like you to keep in mind is that the feedback passed on to instructions should be **constructive** and should not contain personal attacks or hurtful comments. Part of your role is to moderate student discussions as they are happening and/or remove/edit hurtful comments from surveys if you think they are inappropriate. If you are unsure about something, or would like help with this process, please reach out to your faculty contacts (probably the Option Co-Directors) and we will help.  
 
 #### 3. Attend our team meeting
 
-We'll ask you to attend our team meeting, usually about 2/3 or 3/4 through the block. Typically the block rep part of the meeting takes about 20 minutes, right at the start, but it’s flexible. We’ll continue the meeting without the block rep after you're done, where we'll continue to reflect on / discuss what we heard.
+We'll ask you to attend our team meeting, usually in the 3rd week of the block. Typically the block reps will join for the first 30 minutes of our meeting. After the block reps leave the meeting, we discuss the feedback and make plans for how to address it.
 
 #### 4. Communicate back to the cohort
 
-After the team meeting, we might ask the block rep to contact students. You can probably do this via Slack.  
+After the team meeting, we might ask the block rep to contact students. You can do this via Slack.  
 
 ### A note on the role of the block rep feedback
 
