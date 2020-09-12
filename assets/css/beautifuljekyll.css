@@ -540,21 +540,28 @@ footer .footer-custom-content {
 
 .blog-tags {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #999;
   font-size: 0.9375rem;
   margin-bottom: 1.875rem;
 }
 
+.blog-tags span {
+  color: {{ site.text-col | default: "#404040" }};
+  opacity: 0.8;
+}
+
 .blog-tags a {
-  color: {{ site.link-col | default: "#008AFF" }};
+  color: {{ site.text-col | default: "#404040" }};
   text-decoration: none;
   padding: 0 0.3125rem;
+  opacity: 0.8;
+  border: 1px solid transparent;
+  border-radius: 2px;
 }
 
 .blog-tags a:hover {
-  border-radius: 2px;
-  color: {{ site.hover-col | default: "#0085A1" }};
-  background-color: #EEE;
+  opacity: 1;
+  color: {{ site.text-col | default: "#404040" }};
+  border-color: {{ site.text-col | default: "#404040" }};
 }
 
 .post-preview .blog-tags {
