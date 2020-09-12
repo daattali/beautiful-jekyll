@@ -5,6 +5,10 @@ subtitle: Keep up to date with our latest news and content.
 use-site-title: true
 ---
 
+## 9-12-2020 Update
+
+New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
+
 ## 8-14-2020 Update
 
 Since the schools are physically closed to begin the year, we're not yet sure how the math club will operate.
