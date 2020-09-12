@@ -6,14 +6,14 @@ subtitle: Our competition calendar
 
 | Date | Competition | Time & Location | Registration |
 | ----------- | -------- | ----- | --- |
-|October 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
-|November 10, 2020 | [AMC 8](https://www.maa.org/math-competitions/amc-8) | TBD | TBD
-|November 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
-|December 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
-|January 22, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
-|Feburary 4, 2021 | [AMC 10A](https://www.maa.org/math-competitions/amc-10) | TBD | TBD
+|October 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | [Signup sheet - limited to 65](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
+|November 10, 2020 | [AMC 8](https://www.maa.org/math-competitions/amc-8) | TBD | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
+|November 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | [Signup sheet - limited to 65](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
+|December 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | [Signup sheet - limited to 65](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
+|January 22, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | [Signup sheet - limited to 65](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
+|Feburary 4, 2021 | [AMC 10A](https://www.maa.org/math-competitions/amc-10) | TBD | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
 |February 5-6, 2021 | [Mathcounts Chapter](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
-|February 10, 2021 | [AMC 10B](https://www.maa.org/math-competitions/amc-10) | TBD | TBD
+|February 10, 2021 | [AMC 10B](https://www.maa.org/math-competitions/amc-10) | TBD | [Signup sheet](https://rmsptsa.sharepoint.com/:x:/s/mathclub/EXUzG1f0naJCs0WDE8cYLu8Bq1iXwe4X9kKyv40m6gcBng?e=9wFIdS)
 |February 25, 2021 | [Mathcounts Chapter Invitational](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
 |March 25, 2021 | [Mathcounts State](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
 |TBD | RMS Benchmark | -- | --
