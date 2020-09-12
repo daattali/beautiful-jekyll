@@ -256,8 +256,7 @@ Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web sk
 
 - ### How do I make small modifications to how my website looks?
 
-  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom-styles.css` and enable the `
-  s` setting in the config file. This will allow you to overwrite the default Beautiful Jekyll styles. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
+  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom-styles.css` and enable the `site-css` setting in the config file. This will allow you to overwrite the default Beautiful Jekyll styles. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
 
 - ### How do I use a custom domain for my site?
 
