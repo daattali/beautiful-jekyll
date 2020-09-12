@@ -6,16 +6,16 @@ subtitle: Our competition calendar
 
 | Date | Competition | Time & Location | Registration |
 | ----------- | -------- | ----- | --- |
-|October 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/) | Virtual | Signup sheet (limited to 65)
-|November 10, 2020 | [AMC 8](https://www.maa.org/math-competitions/amc-8)</a> | TBD | TBD
-|November 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/) | Virtual | Signup sheet (limited to 65)
-|December 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/) | Virtual | Signup sheet (limited to 65)
-|January 22, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/) | Virtual | Signup sheet (limited to 65)
+|October 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
+|November 10, 2020 | [AMC 8](https://www.maa.org/math-competitions/amc-8) | TBD | TBD
+|November 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
+|December 15, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
+|January 22, 2020 | [Mathcounts Online Practice](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | Signup sheet (limited to 65)
 |Feburary 4, 2021 | [AMC 10A](https://www.maa.org/math-competitions/amc-10) | TBD | TBD
-|February 5-6, 2021 | [Mathcounts Chapter](https://www.mathcounts.org/) | Virtual | By Invitation
+|February 5-6, 2021 | [Mathcounts Chapter](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
 |February 10, 2021 | [AMC 10B](https://www.maa.org/math-competitions/amc-10) | TBD | TBD
-|February 25, 2021 | [Mathcounts Chapter Invitational](https://www.mathcounts.org/) | Virtual | By Invitation
-|March 25, 2021 | [Mathcounts State](https://www.mathcounts.org/) | Virtual | By Invitation
+|February 25, 2021 | [Mathcounts Chapter Invitational](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
+|March 25, 2021 | [Mathcounts State](https://www.mathcounts.org/competition-rules-faq) | [AoPS](https://artofproblemsolving.com/contests/mathcounts) | By Invitation
 |TBD | RMS Benchmark | -- | --
 |TBD | RMS Mathcounts School | -- | --
 |TBD | RMS Final | -- | --
