@@ -253,6 +253,10 @@ Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web sk
 
   You can set default values for YAML parameters in the config file. Open the `_config.yml` file, scroll down to the line `defaults:` and that's the section you can use. For more information, see the [official jekyll documentation about default values](https://jekyllrb.com/docs/configuration/front-matter-defaults/).
 
+- ### How do I make small modifications to how my website looks?
+
+  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom.css` in order to overwrite the default Beautiful Jekyll style. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
+
 - ### How do I use a custom domain for my site?
 
   GitHub lets you have your website for free using their `github.io` domain. If you want your own domain (such as `https://myname.com`), it's easy and will cost about $10-$15 per year. First you need to buy a domain name (I recommend [Namecheap](https://namecheap.pxf.io/daattali)) and then follow the [instructions GitHub provides](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site).

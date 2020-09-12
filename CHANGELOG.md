@@ -14,6 +14,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Added `full-width` YAML option to allow having full-width pages
 - Added `feed_show_excerpt` config option to show/hide the post excerpts on the feed page
 - Added `feed_show_tags` config option to show/hide the list of tags on post previews on the feed page
+- Added a blank template CSS file `assets/css/custom.css` that's automatically included in all pages that can be used to overwrite any default Beautiful Jekyll ruless
 - When `nav-short` is turned on, the avatar will also be shorter
 - Fixed rendering issues with `nav-short` option that caused the body of the page to start too low
 - Improved the `footer-extra` YAML option to support multiple files instead of only a single file
