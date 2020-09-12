@@ -19,6 +19,12 @@
   {% endfor %}
 {% endif %}
 
+{% if site.site-js %}
+  {% for js in site.site-js %}
+    <script src="{{ js | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
 {% if page.ext-js %}
   {% for js in page.ext-js %}
     {% include ext-js.html js=js %}

@@ -243,7 +243,7 @@ Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web sk
 
 - ### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
 
-  Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file and modifying the parameters there.
+  Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file and modifying the settings there.
 
 - ### What's the difference between the config file and the YAML parameters?
 
@@ -255,7 +255,7 @@ Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web sk
 
 - ### How do I make small modifications to how my website looks?
 
-  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom.css` in order to overwrite the default Beautiful Jekyll style. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
+  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom-styles.css` and enable the `site-css` setting in the config file. This will allow you to overwrite the default Beautiful Jekyll styles. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
 
 - ### How do I use a custom domain for my site?
 
@@ -271,7 +271,7 @@ Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web sk
 
 - ### How do I move the blog to another page instead of having it on the home page?
 
-  The default style of Beautiful Jekyll is to feature the blog feed on the front page. For some sites that's not the ideal structure, and you may want to have a separate dedicated page for the blog posts. To have the blog hosted on a different URL (for example at `<mysite.com>/blog`), copy the `index.html` file into a folder with the same name as the desired page (for example, to `blog/index.html`), and in the `_config.yml` file you need to add a parameter `paginate_path: "/<page name>/page:num/"` (for example `paginate_path: "/blog/page:num/"`).
+  The default style of Beautiful Jekyll is to feature the blog feed on the front page. For some sites that's not the ideal structure, and you may want to have a separate dedicated page for the blog posts. To have the blog hosted on a different URL (for example at `<mysite.com>/blog`), copy the `index.html` file into a folder with the same name as the desired page (for example, to `blog/index.html`), and in the `_config.yml` file you need to add a setting `paginate_path: "/<page name>/page:num/"` (for example `paginate_path: "/blog/page:num/"`).
 
 - ### How do I use math equations in my posts?
 

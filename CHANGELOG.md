@@ -5,26 +5,26 @@ One of the major changes in this version is that a lot of time was spent on reth
 #### Breaking changes
 
 - Renamed `description` YAML parameter to `share-description` to be more clear
-- Renamed `description` config parameter to `rss-description` since it was only used in RSS (the FAQ explains the difference between YAML parameters and config parameters if you're confused)
+- Renamed `description` config setting to `rss-description` since it was only used in RSS (the FAQ explains the difference between YAML parameters and config settings if you're confused)
 - Removed YAML parameter `use-site-title` (you can now specify the exact title using `share-title`)
 - Removed undocumented YAML parameters `meta-title` and `meta-description`
-- Removed `link-tags` config parameter because it wasn't necessary. If you use tags, there will now always be a tags page created; if you don't use tags there won't be a tags page.
-- The YAML setting `show-avatar` is now true by default. This has always been the case for GitHub Pages users, but not for `remote_theme` users. For consistency, it's now the default for everyone. (#715)
+- Removed `link-tags` config setting because it wasn't necessary. If you use tags, there will now always be a tags page created; if you don't use tags there won't be a tags page.
+- The YAML parameter `show-avatar` is now true by default. This has always been the case for GitHub Pages users, but not for `remote_theme` users. For consistency, it's now the default for everyone. (#715)
 
-#### New parameters
+#### New parameters and settings
 
 - Added `full-width` YAML parameter to allow having full-width pages
-- Added `feed_show_excerpt` config parameter to show/hide the post excerpts on the feed page
-- Added `feed_show_tags` config parameter to show/hide the list of tags on post previews on the feed page
+- Added `feed_show_excerpt` config setting to show/hide the post excerpts on the feed page
+- Added `feed_show_tags` config setting to show/hide the list of tags on post previews on the feed page
 - Added `share-title` YAML parameter to give control over the search engine/social media title 
 - Added `before-content` and `after-content` YAML parameters that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
 - Added `head-extra` YAML parameter which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
+- Added `site-js` config setting to provide JavaScript files that are used on all pages in the site
 
 #### New features and improvements
 
 - Improved the `footer-extra` YAML parameter to support multiple files instead of only a single file
 - Added automatic navbar color detection (#702)
-- Added a blank template CSS file `assets/css/custom.css` that's automatically included in all pages that can be used to overwrite any default Beautiful Jekyll ruless
 - When `nav-short` is turned on, the avatar will also be shorter
 - Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background for accessibility reasons
 - Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files 
@@ -45,7 +45,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 ## v4.1.0 (2020-08-08)
 
 - Added Open Graph `site_name` meta field to pages automatically
-- Added `text-col `config setting for main text color (#694)
+- Added `text-col` config setting  for main text color (#694)
 - Added `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
 - Added `mobile-theme-col` config setting to allow a mobile theme colour (#692)
 - Added `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
