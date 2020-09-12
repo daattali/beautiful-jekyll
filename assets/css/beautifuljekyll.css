@@ -475,6 +475,18 @@ footer .footer-custom-content {
   margin: 0 0 0.625rem;
   font-family: 'Lora', 'Times New Roman', serif;
 }
+.post-heading .post-meta {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .post-heading .post-meta {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.post-heading .post-meta .middot {
+  margin: 0 0.625rem;
+}
 .post-preview .post-entry {
   width: 100%;
 }
@@ -749,18 +761,6 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
     display: block;
     margin-bottom: 0.3125rem;
   }
-}
-
-.reader-time {
-  display: inline-block;
-}
-@media (max-width: 767px) {
-  .reader-time {
-    display: block;
-  }
-}
-.reader-time .middot {
-  margin: 0 0.625rem;
 }
 
 /* --- Pagination --- */

@@ -16,7 +16,8 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Added `full-width` YAML parameter to allow having full-width pages
 - Added `feed_show_excerpt` config setting to show/hide the post excerpts on the feed page
 - Added `feed_show_tags` config setting to show/hide the list of tags on post previews on the feed page
-- Added `share-title` YAML parameter to give control over the search engine/social media title 
+- Added `share-title` YAML parameter to give control over the search engine/social media title
+- Added `last-updated` YAML parameter to show a "Last Updated on" date for blog posts
 - Added `before-content` and `after-content` YAML parameters that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
 - Added `head-extra` YAML parameter which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
 - Added `site-js` config setting to provide JavaScript files that are used on all pages in the site
@@ -27,7 +28,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Added automatic navbar color detection (#702)
 - When `nav-short` is turned on, the avatar will also be shorter
 - Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background for accessibility reasons
-- Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files 
+- Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files
 - Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
 - Added alt text to all images for better accessibility
 

@@ -163,6 +163,7 @@ social-share | By default, every blog post has buttons to share the page on soci
 nav-short   | By default, the navigation bar gets shorter after scrolling down the page. If you want the navigation bar to always be short on a certain page, use `nav-short: true`
 gh-repo   | If you want to show GitHub buttons at the top of a post, this sets the GitHub repo name (eg. `daattali/beautiful-jekyll`). You must also use the `gh-badge` parameter to specify what buttons to show.
 gh-badge  | Select which GitHub buttons to display. Available options are: [star, watch, fork, follow]. You must also use the `gh-repo` parameter to specify the GitHub repo.
+last-updated | If you want to show that a blog post was updated after it was originally released, you can specify an "Updated on" date.
 layout      | What type of page this is (default is `post` for blog posts and `page` for other pages). See _Page types_ section below for more information.
 
 ## Advanced parameters
@@ -255,7 +256,8 @@ Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web sk
 
 - ### How do I make small modifications to how my website looks?
 
-  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom-styles.css` and enable the `site-css` setting in the config file. This will allow you to overwrite the default Beautiful Jekyll styles. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
+  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom-styles.css` and enable the `
+  s` setting in the config file. This will allow you to overwrite the default Beautiful Jekyll styles. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
 
 - ### How do I use a custom domain for my site?
 
