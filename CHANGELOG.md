@@ -31,6 +31,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files
 - Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
 - Added alt text to all images for better accessibility
+- Made thumbnail images square instead of circles, as users reported that circles cut off important parts of images
 
 #### Bug fixes
 

@@ -434,6 +434,7 @@ footer .footer-custom-content {
 .post-preview {
   padding: 1.25rem 0;
   border-bottom: 1px solid #eee;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -503,7 +504,6 @@ footer .footer-custom-content {
   filter: grayscale(0%);
 }
 .post-preview .post-image img {
-  border-radius: 6rem;
   height: 100%;
   width: 100%;
 }
