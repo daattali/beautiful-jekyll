@@ -567,7 +567,7 @@ footer .footer-custom-content {
   padding: 0 0.3125rem;
   opacity: 0.8;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 0.1875rem;
 }
 
 .blog-tags a:hover {
