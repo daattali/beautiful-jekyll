@@ -20,7 +20,7 @@
 - [Add your own content](#add-your-own-content)
 - [Customizing parameters for each page](#customizing-parameters-for-each-page)
 - [Supported parameters](#supported-parameters)
-- [Featured users (success stories!)](#showcased-users-success-stories)
+- [Featured users (success stories!)](#featured-users-success-stories)
 - [FAQ and support](#faq-and-support)
 - [Credits and contributions](#credits)
 
@@ -191,7 +191,7 @@ ext-css      | List of external CSS files to include in the page. External CSS f
 - **minimal** - If you want to create a page with minimal styling (ie. without the bulky navigation bar and footer), assign `layout: minimal` to the YAML front matter.
 - If you want to completely bypass the template engine and just write your own HTML page, simply omit the YAML front matter. Only do this if you know how to write HTML!
 
-# Showcased users (success stories!)
+# Featured users (success stories!)
 
 Visit the [Official website](http://beautifuljekyll.com/examples) to see sample websites using Beautiful Jekyll.
 
