@@ -6,9 +6,10 @@ cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/87326336_10163016305905627_3065688325206573056_o.jpg"
 share-img: ''
 tags:
-- simple planning
-- traveller's ntoebook setup
-- bullet journal method
+- minimalism
+- living minimally
+- how to live minimally with the seasons
+- minimal living tips
 
 ---
 My favourite thing about September turning from summer to fall is that it's a change of pace into something entirely different from our summer days. The summer is coming to a close here and I can feel the cooler days coming. We live in a clearly four season area and in many ways, I love that. _The fall brings about a slowing down_. Tidier floors. Cooler air in the woods. I love the _coziness_ the fall brings and yet we can still make our way outside without freezing like a popsicle. Today on the blog, I'm sharing about how to live minimally with the seasons.
