@@ -65,7 +65,7 @@ Fork this project by clicking the __*Fork*__ button at the top right corner of t
 
 ### 2. Rename the project to `<yourusername>.github.io`
 
-Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*Repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes (check out the [FAQ](#faq-and-support) if you want to use a different project name). If after a few minutes your website is still not ready, try making any edit to any file, just to force GitHub to re-build your site.
+Click on __*Settings*__ at the top (the cog icon) and on that page you'll have an option to rename the project (*Repository name*). This will create a website with the **Beautiful Jekyll** template that will be available at `https://<yourusername>.github.io` within a couple minutes (check out the [FAQ](https://beautifuljekyll.com/faq/#custom-domain) if you want to use a different project name). If after a few minutes your website is still not ready, try making any edit to any file, just to force GitHub to re-build your site.
 
 ### 3. Customize your website settings
 
@@ -77,7 +77,7 @@ Note that in the video above I only edited one setting in the `_config.yml` file
 
 After you save your changes to the `_config.yml` file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
-Note that this was the easy way to *create* your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](#faq-and-support) for help with upgrading in the future.
+Note that this was the easy way to *create* your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](https://beautifuljekyll.com/faq/#updating) for help with upgrading in the future.
 
 ## The hard way (using ruby gems)
 
@@ -230,53 +230,11 @@ If you'd like to showcase yourself and join this list, [upgrading to the Individ
 
 # FAQ and support
 
-Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. Below are answers to some very common questions. Many questions are often not specifically related to Beautiful Jekyll and are instead more about Jekyll or web development in general. Many such questions can be answered by reading the [Jekyll documentation](https://jekyllrb.com/), using Google, or asking on the [Jekyll support forum](https://talk.jekyllrb.com/).
+Visit the [official FAQ page](https://beautifuljekyll.com/faq) for answers to commonly asked questions.
 
-- ### How can I incorporate new features of Beautiful Jekyll into my old site?
+Beautiful Jekyll is used by 50,000+ people with wildly varying degrees of web skills, so it's impossible to answer all the questions that may arise. For any question that's not specifically related to Beautiful Jekyll and is more about Jekyll or web development in general, the answer can often be found on Google, in the [Jekyll documentation](https://jekyllrb.com/), or on the [Jekyll support forum](https://talk.jekyllrb.com/).
 
-  If you installed Beautiful Jekyll using "the easy way" (by forking the GitHub project), then unfortunately there is no easy way to bring all the newest changes into your website. It's a bit messy, but what most people recommend is to delete your current GitHub project and start fresh: (1) make a copy of any files that you modified/created (generally this means the `_config.yml` file, all blog posts, and any additional pages you created), (2) delete your project on GitHub, (3) re-fork Beautiful Jekyll, (4) add all the content you previously created. Since this is cumbersome, you might want to try creating your website using "the hard way" this time so that in the future you can update more easily!
-
-  If you installed Beautiful Jekyll using "the hard way" (as a ruby gem), then updating to the latest version to get the newest features only requires you to change the version in the config file (for example, change `remote_theme: daattali/beautiful-jekyll@4.0.0` to `remote_theme: daattali/beautiful-jekyll@5.0.0`). You should also look at the [updates](https://beautifuljekyll.com/updates/) to see if any Breaking Changes happened. 
-
-- ### How do I add a favicon to my site?
-
-  Easy! Just place a valid `favicon.ico` in the root directory of your project. And then wait! It can take a while to update.
-
-- ### How do I change the number of posts per page OR the colour of the navigation bar OR the image in the navigation bar OR ...?
-
-  Beautiful Jekyll is built to be very customizable, and as such, many questions about "how do I change ..." can be answered by looking at the `_config.yml` file and modifying the settings there.
-
-- ### What's the difference between the config file and the YAML parameters?
-
-  Great question! The config file is for site-wide settings, while the YAML parameters are added to each page individually and are applied on a per-page basis.
-
-- ### What if I want to use the same YAML parameter for all pages?
-
-  You can set default values for YAML parameters in the config file. Open the `_config.yml` file, scroll down to the line `defaults:` and that's the section you can use. For more information, see the [official jekyll documentation about default values](https://jekyllrb.com/docs/configuration/front-matter-defaults/).
-
-- ### How do I make small modifications to how my website looks?
-
-  If you want to make any visual changes that are not in `_config.yml`, you'll need to add your own CSS rules to the file `assets/css/custom-styles.css` and enable the `site-css` setting in the config file. This will allow you to overwrite the default Beautiful Jekyll styles. If you don't know how to use CSS, I highly recommend spending 30 minutes to [learn the basics](https://www.w3schools.com/css/).
-
-- ### How do I use a custom domain for my site?
-
-  GitHub lets you have your website for free using their `github.io` domain. If you want your own domain (such as `https://myname.com`), it's easy and will cost about $10-$15 per year. First you need to buy a domain name (I recommend [Namecheap](https://namecheap.pxf.io/daattali)) and then follow the [instructions GitHub provides](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site).
-
-- ### What if I want a **free domain**, but not `https://<yourusername>.github.io`?
-
-  Every GitHub user can have one repository (repository = project) named `<yourusername>.github.io` and the website for that repository will be `https://<yourusername>.github.io`.
-
-  If you want your project to be named something else, for example `MyAwesomeProject`, that's no problem! All you have to do is go to _Settings_ at the top right corner of the page, and rename your repository to `MyAwesomeProject` (**remember to click on the _Rename_ button to confirm!**). Then you need to scroll down to the _GitHub Pages_ section and choose "master branch" as the source (not "master branch /docs folder"!).
-
-  Now your website will be at `https://<yourusername>.github.io/MyAwesomeProject`.
-
-- ### How do I move the blog to another page instead of having it on the home page?
-
-  The default style of Beautiful Jekyll is to feature the blog feed on the front page. For some sites that's not the ideal structure, and you may want to have a separate dedicated page for the blog posts. To have the blog hosted on a different URL (for example at `<mysite.com>/blog`), copy the `index.html` file into a folder with the same name as the desired page (for example, to `blog/index.html`), and in the `_config.yml` file you need to add a setting `paginate_path: "/<page name>/page:num/"` (for example `paginate_path: "/blog/page:num/"`).
-
-- ### How do I use math equations in my posts?
-
-  MathJax can be easily integrated into your website with a one-line addition. You can see [this discussion](https://github.com/daattali/beautiful-jekyll/issues/195) for more information.
+To receive support, select one of the [different plans](https://beautifuljekyll.com/plans) Beautiful Jekyll offers.
 
 # Contributions
 
