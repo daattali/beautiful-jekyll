@@ -9,7 +9,7 @@
 
 **Beautiful Jekyll** is a ready-to-use template to help you create a beautiful website quickly. Perfect for personal sites, blogs, or simple project websites.  [Check out a demo](https://beautifuljekyll.com) of what you'll get after just two minutes.  You can also look at [my personal website](https://deanattali.com) or [my consulting website](https://attalitech.com) to see it in use, or see examples of websites other people created using this theme [below](#showcased-users-success-stories).
 
-**If you like Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali) for over 5 years of development (and to unlock rewards!) ❤**
+**If you enjoy Beautiful Jekyll, please consider [supporting me](https://github.com/sponsors/daattali) for over 5 years of development (and to unlock rewards!) ❤**
 
 ## Table of contents
 
@@ -38,7 +38,7 @@ Check out [*What's New?*](https://beautifuljekyll.com/updates/) to see the lates
 - **Comments support**: Add comments to any page using either [Disqus](https://disqus.com/), [Facebook comments](https://developers.facebook.com/docs/plugins/comments), [Utterances](https://utteranc.es/), or [Staticman](https://staticman.net).
 - **Tags**: Any blog post can be tagged with keywords, and an index page showing all the tags is automatically generated.
 - **Analytics**: Easily integrate Google Analytics, or other analytics platforms, to track visits to your website.
-- **Photos support**: Any page can have a cover photo around its title, and any blog post can have an associated image.
+- **Photos support**: Any page can have a full-width cover photo and thumbnail.
 - **RSS**: An RSS feed is automatically created, so you can even host a podcast easily with Beautiful Jekyll.
 
 <h2 id="sponsors">Sponsors 🏆</h2>
@@ -71,13 +71,13 @@ Click on __*Settings*__ at the top (the cog icon) and on that page you'll have a
 
 Edit the `_config.yml` file to change any settings you want. To edit the file, click on it to view the file and then click on the pencil icon to edit it (watch the video tutorial above if you're confused).  The settings in the file are self-explanatory and I added comments inside the file to help you understand what each setting does. Any line that begins with a hashtag (`#`) is a comment, and the other lines are actual settings.
 
+Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings!**
+
 ### 4. Congratulations! You have a website!
 
 After you save your changes to the `_config.yml` file (by clicking on *Commit changes* as the video tutorial shows), your website should be ready in a minute or two at `https://<yourusername>.github.io`. Every time you make a change to any file, your website will get rebuilt and should be updated in about a minute or so. Your website will be initialized with several sample blog posts and a couple other pages.
 
-Note that in the video above I only edited one setting in the `_config.yml` file. **You should actually go through the rest of the settings as well. Don't be lazy, go through all the settings :)**
-
-Also note that this was the easy way to *create* your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](#faq-and-support) for help with upgrading in the future.
+Note that this was the easy way to *create* your website, but it does come at a cost: when Beautiful Jekyll gains new features in the future, *updating* your website to include all the latest features is cumbersome. See the [FAQ](#faq-and-support) for help with upgrading in the future.
 
 ## The hard way (using ruby gems)
 
@@ -85,7 +85,7 @@ If you followed the easy method above, then you already have your site and you c
 
 # Plans
 
-Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, or unlock other special rewards, [check out the different plans](https://beautifuljekyll.com/plans).
+Beautiful Jekyll is, and always will be, free. But if you want to remove the Beautiful Jekyll ad from your website, use a Dark Mode skin, unlock other special rewards, or simply support my development efforts, [check out the different plans](https://beautifuljekyll.com/plans).
 
 # Add your own content
 
