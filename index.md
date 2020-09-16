@@ -7,7 +7,7 @@ use-site-title: true
 
 ## 9-16-2020 Update
 
-[2020-20201 math club registration](http://rmsptsa.org/Packet/MathClubReg) is now open.
+[2020-2021 math club registration](http://rmsptsa.org/Packet/MathClubReg) is now open.
 
 New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
