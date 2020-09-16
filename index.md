@@ -11,7 +11,7 @@ use-site-title: true
 
 New to math club? Check out our [welcome video](https://www.youtube.com/watch?v=HP58Q_IAsq8).
 
-Learn about this year's coaching and competition plans at our [virtual parent night](https://www.youtube.com/channel/UCd3ci6LTAvffke7SYgv1N8A).
+Learn about this year's coaching and competition plans at our [virtual parent night](https://youtu.be/3r6sB6Tdlic).
 
 Sign up for competitions and volunteering at our [internal share](https://rmsptsa.sharepoint.com/sites/MathClub).
 
