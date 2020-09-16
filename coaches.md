@@ -21,7 +21,7 @@ workload can be shared.
 topics to produce 8-10 questions designed to challenge our membership.
 
 If you would like to volunteer to coach our sessions, please reach
-out to us at <a href="mailto:mathclub@rmsptsa.org">mathclub@rmsptsa.org</a>.
+out to us at <a href="mailto:mathclubchair@rmsptsa.org">mathclubchair@rmsptsa.org</a>.
 
 Note that you will also need to be an
 <a href="https://www.lwsd.org/get-involved/volunteering-in-lwsd" target="_blank">LWSD approved volunteer</a>.

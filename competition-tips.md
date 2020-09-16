@@ -7,7 +7,7 @@ subtitle: Our top 10 tips for math competitions
 We've put together a list of our favorite tips to help you take your math competition game to the next level. They are
 ordered chronologically starting at test preparation and leading up through the end of an exam. Some of these reference
 question numbers from our [2019-2020 Benchmark exam](../exams). If you'd like to share your own, please let us know
-at <a href="mailto:mathclub@rmsptsa.org">mathclub@rmsptsa.org</a>.
+at <a href="mailto:mathclubchair@rmsptsa.org">mathclubchair@rmsptsa.org</a>.
 
 ## 1) Practice past test problems.
 The absolute best way to prepare for a given competition is to master the questions from previous versions of that

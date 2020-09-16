@@ -50,4 +50,4 @@ their own set of instructions, which will be explained in advance. These rounds 
 other events and/or Varsity.
 
 If you would like to use our content for exams at your organization, please
-contact us at <a href="mailto:mathclub@rmsptsa.org">mathclub@rmsptsa.org</a>.
+contact us at <a href="mailto:mathclubchair@rmsptsa.org">mathclubchair@rmsptsa.org</a>.

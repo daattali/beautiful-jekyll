@@ -6,7 +6,7 @@ subtitle: Our top 10 tips for math teams
 
 We've put together a list of team tips to complement our [top 10 tips](../competition-tips). 
 If you'd like to share your own, please let us know
-at <a href="mailto:mathclub@rmsptsa.org">mathclub@rmsptsa.org</a>.
+at <a href="mailto:mathclubchair@rmsptsa.org">mathclubchair@rmsptsa.org</a>.
 
 ## 1) Team competitions are all about solving math problems.
 It might sound obvious, but it’s true. As a result, our [top 10 article](../competition-tips) applies just as much here.
