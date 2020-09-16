@@ -31,8 +31,8 @@
         {%- endif -%}
       {%- endfor -%}
     </ul>
-    {% if page.navbar-extra %}
-      {% for file in page.navbar-extra %}
+    {% if site.navbar-extra %}
+      {% for file in site.navbar-extra %}
         {% include {{ file }} %}
       {% endfor %}
     {% endif %}
