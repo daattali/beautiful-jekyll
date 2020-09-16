@@ -80,21 +80,21 @@ hr.small {
 }
 
 ::-moz-selection {
-  color: white;
+  color: #fff;
   text-shadow: none;
   background-color: {{ site.hover-col | default: "#0085A1" }};
 }
 ::selection {
-  color: white;
+  color: #fff;
   text-shadow: none;
   background-color: {{ site.hover-col | default: "#0085A1" }};
 }
 img::selection {
-  color: white;
+  color: #fff;
   background: transparent;
 }
 img::-moz-selection {
-  color: white;
+  color: #fff;
   background: transparent;
 }
 
@@ -129,9 +129,9 @@ img {
     background-image: url({{ site.navbar-img | relative_url }});
     background-attachment: fixed;
   {% endif %}
-  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-  transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -webkit-transition: padding .5s ease-in-out;
+  -moz-transition: padding .5s ease-in-out;
+  transition: padding .5s ease-in-out;
 }
 
 .navbar-custom,
