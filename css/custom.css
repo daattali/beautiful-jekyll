@@ -3,6 +3,7 @@
   background-color: black;
   padding-top: 0;
   padding-bottom: 0;
+  position: relative;
 }
 
 .lab-photo {
@@ -11,7 +12,8 @@
   background-size: contain;
   background-color: black;
   min-height: 550px;
-  padding-top: 8%;
+  /* padding-top: 8%; */
+  position: relative;
 }
 
 .main-news {
