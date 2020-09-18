@@ -9,6 +9,7 @@ Legend:
 
 - Blue: lectures
 - Dark red and green: labs
+- Purple: quizzes
 - Brown: office hours and other academic activities
 - Orange: extracurricular activities/events
 
