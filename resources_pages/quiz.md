@@ -29,17 +29,16 @@ At the start of the quiz period:
 1. Go to <https://canvas.ubc.ca>, and log in with your CWL.
 2. Navigate to the relevant quiz on the relevant course page.
 3. Begin the quiz, fill out your answers, and click "submit". You will have a countdown timer to complete the quiz.
-4. Wait quietly until the quiz time slot finishes. The TA or lab instructor will specify when the quiz period is finished. You may not communicate with any of your classmates until everyone is finished the quiz.
+4. Wait quietly until the quiz time slot finishes. The TA or lab instructor will specify when the quiz period is finished. 
 
 We recommend you start the quiz within 2 minutes of the quiz period starting, so that you have the full 30 minutes to write the quiz.
 
 _2020-2021 changes:_ Quizzes will not be supervised and will be 40 minutes. 
 
-### Closed-book
+### Closed-book (ignore for 2020-2021)
 
 Unless otherwise specified, **quizzes will be closed-book** except for offline documentation only (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:
 
-  - **not** communicate with other students or anyone else
   - **not** use the internet to solve questions on the quiz
   - **not** bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)
   - **not** open other files inside RStudio or Jupyter beyond those provided in the quiz repo
@@ -47,7 +46,10 @@ Unless otherwise specified, **quizzes will be closed-book** except for offline d
 
 You are allowed to consult documentation within R/Python or your IDE (e.g., RStudio). However, time is very limited on quizzes and we anticipate that you will be more successful if you are fluent with common functions and don't need to rely too heavily on the documentation.
 
-_2020-2021 changes:_ Quizzes are open book. You are still **not** allowed to communicate with other students or anyone else, in any way, during the quiz. However, 
+### No collaboration
+
+You may **not** communicate with other students or anyone else, through any medium, at any time during the quiz. You may not communicate with any of your classmates until everyone is finished the quiz. Please don't post about MDS quizzes on Slack until at least 30 minutes after the end of the quiz, in case some students were given extra time.
+
 
 ### General Guidelines
 
