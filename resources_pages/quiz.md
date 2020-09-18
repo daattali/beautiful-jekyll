@@ -31,9 +31,15 @@ At the start of the quiz period:
 3. Begin the quiz, fill out your answers, and click "submit". You will have a countdown timer to complete the quiz.
 4. Wait quietly until the quiz time slot finishes. The TA or lab instructor will specify when the quiz period is finished. 
 
-We recommend you start the quiz within 2 minutes of the quiz period starting, so that you have the full ~~30 minutes~~ 40 minutes to write the quiz.
 
-_2020-2021 changes:_ Quizzes will not be supervised and will be 40 minutes. 
+_2020-2021 changes:_ Quizzes will not be supervised. 
+
+## Timing
+
+When we set up a quiz on Canvas, we specify a start time, end time, and duration. For example, if a quiz is at 9:00am, we might set the start time to 9:00am, the end time to 9:35, and the duration to 30 min. That means you have 30 min to complete the quiz within the 35-minute window from 9:00 to 9:35. Individual instructors may vary this slightly but the window will generally be at least 2 minutes longer than the quiz duration itself. In general, we recommend you start the quiz within 2 minutes of the quiz period starting, so that you have the full length of time to write your quiz.
+
+_2020-2021 changes:_ Quizzes will generally be 40 minutes within a 45-minute window.
+
 
 ### ~~Closed-book (ignore for 2020-2021)~~
 
