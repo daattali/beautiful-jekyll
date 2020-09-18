@@ -61,11 +61,9 @@ There is rarely a need to write more than two brief sentences for any given ques
 
 Take screen shots of your completed quiz, and send them through Slack to the lab instructor of the course before the end of the quiz period.
 
-#### I'm finished the quiz early
+#### I'm finished the quiz early (ignore for 2020-21)
 
 Wait quietly with your laptop closed/ajar until the end of the quiz period.
-
-_2020-2021 changes:_ This does not apply.
 
 #### I need to use the washroom
 
