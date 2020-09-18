@@ -16,7 +16,7 @@ Regular attendance is expected of students in all their classes (including lectu
 
 Students who miss an assignment or quiz can request an academic concession. From the UBC Senate [policy on academic concession](https://senate.ubc.ca/sites/senate.ubc.ca/files/downloads/20190515_V_135_Academic_Concession-Approved.pdf), grounds for academic concession can be illness, conflicting responsibilities, or compassionate grounds. Examples of compassionate grounds, from the above policy, include "a traumatic event experienced by the student, a family member, or a close friend; an act of sexual assault or other sexual misconduct experienced by the student, a family member, or a close friend; a death in the family or of a close friend."
 
-To request an academic concession, students should immediately email a completed and signed [academic concession form](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration.pdf) to the course's Lab Instructor. Upon receiving the form, the Lab Instructor and/or MDS Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
+To request an academic concession, students should immediately email a completed and signed [academic concession form](https://github.com/UBC-MDS/UBC-MDS.github.io/blob/master/img/Template%20-%20In-Term%20Academic%20Concessions%20Self%20Declaration.pdf?raw=1) to the course's Lab Instructor. Upon receiving the form, the Lab Instructor and/or MDS Directors will make a decision about how to proceed. Failure to present valid documentation may result in a failing grade. 
 
 
 ### Late arrivals in lecture
