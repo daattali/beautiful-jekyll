@@ -74,7 +74,7 @@ _2020-2021 changes:_ You can take your laptop with you if you really want...
 ### Instructions for TAs (does not apply for 2020-21)
 
 1. ~~Go to the classroom at least 5 mins before the quiz time.~~
-2. ~~Bring a blank sheet of paper with you. Pass it around a couple of minutes before the quiz starts and ask the students to write their name on it. You can hand it or take a picture and send it to us later. ~~
+2. ~~Bring a blank sheet of paper with you. Pass it around a couple of minutes before the quiz starts and ask the students to write their name on it. You can hand it or take a picture and send it to us later.~~
 3. ~~Try to walk around and make sure that at least one of the TAs stays at the back of the classroom.~~
 4. ~~Report to us if you observe any form of academic dishonesty or chatting in the classroom.~~
 5. ~~Ask the students to stay in the classroom for the full time even after they are done. (If students start leaving the classroom it can be distracting for other students.)~~
