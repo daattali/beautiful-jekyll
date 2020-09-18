@@ -35,9 +35,9 @@ We recommend you start the quiz within 2 minutes of the quiz period starting, so
 
 _2020-2021 changes:_ Quizzes will not be supervised and will be 40 minutes. 
 
-### Closed-book (ignore for 2020-2021)
+### ~~Closed-book (ignore for 2020-2021)~~
 
-~~Unless otherwise specified, **quizzes will be closed-book** except for offline documentation only (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:
+~~Unless otherwise specified, **quizzes will be closed-book** except for offline documentation only (e.g., help in RStudio and Jupyter notebook). This means that during the quiz students are expected to:~~
 
   - ~~**not** use the internet to solve questions on the quiz~~
   - ~~**not** bring any materials into the quiz that would be of assistance in completing the quiz (aside from a laptop)~~
