@@ -97,10 +97,12 @@
       {{ site.avatar }}
     {% endif %}
   {% endcapture %}
-  {% assign shareimg=shareimg | strip | prepend: site.url %}
+  {% unless shareimg contains '://' %}
+    {% assign shareimg=shareimg | strip | prepend: site.url %}
+  {% endunless %}
 
   {% if shareimg != "" %}
-  <meta property="og:image" content="{{ shareimg | absolute_url }}">
+  <meta property="og:image" content="{{ shareimg }}">
   {% endif %}
 
 
