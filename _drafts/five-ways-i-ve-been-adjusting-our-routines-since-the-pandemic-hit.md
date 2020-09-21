@@ -28,7 +28,7 @@ I’ve kept things like daily laundry and putting on the dishwasher daily. I’v
 
 ## 4. I have learned to default to flexibility.
 
-I have learned to default to flexibility over staying consistent with some things when we clearly need a break (or I need a break). I’m a creature of habits and routine, but flexibility trumps it all. (link post)
+I have learned to default to flexibility over staying consistent with some things when we clearly need a break (or I need a break). I’m a creature of habits and routine, but flexibility trumps it all. 
 
 ## 5. I’ve added on consistent self care to my routine.
 
