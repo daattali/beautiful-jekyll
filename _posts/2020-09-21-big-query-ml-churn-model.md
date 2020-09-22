@@ -10,21 +10,21 @@ Building a BigQuery Machine Learning model that can predict which of your prospe
 
 In this post, I will talk about the customer churn model for a 12 month subscription mode, but you can apply this method to any business model or if you are trying to predict prospect conversion.
 
-Step 1: Gather information and variables
+## Step 1: Gather information and variables
 In order to be able to build a customer churn prediction model, we need to understand what are the leading indicators for a customer to churn after their subscription and what are the most important factors for identifying a healthy user. Some might be so obvious and the best way to discover these variables is by doing some information gathering with the sales team or anyone who works closely with customers. They have the best insight on what variables would be good to test.
 
 Once you have your list of variables, it is time to get your data together. The creation of the dataset is a very important step because it will save you a lot of headaches down the road. Make sure it is flexible to adding or manipulating variables. You will need to remove any columns with missing data or you can use imputation methods to fill in missing data.
 
-Step 2: Test variables for significance and high collinearity
+## Step 2: Test variables for significance and high collinearity
 Begin testing which variables are significant enough to be included in your model. You can easily do this by plotting the confidence interval of each variable for both classes (churned or renewed). 
 
 After testing which variables are significantly different between the classes, you will have to test for multicollinearity. You can do this by measuring the Variance Inflation Factor (VIF) for each variable. Any VIF over 5 usually means the variable is highly collinear with other variables. For example, sessions and time spent on the application can be highly collinear with each other and it might make more sense to only pick sessions or time spent on the application (depending on what you are trying to measure). 
 
 
-Step 3: Create Logistic Regression model in BigQuery
-Create Model:
+## Step 3: Create Logistic Regression model in BigQuery
+### Create Model:
 
-CREATE MODEL `bqml_tutorial.example`
+`CREATE MODEL `bqml_tutorial.example`
 OPTIONS
   (model_type='logistic_reg',
     input_label_cols=['churn']) AS
@@ -35,11 +35,11 @@ SELECT
   Days since last active
 FROM
   Data_table
+`
 
+### Evaluation Model:
 
-Evaluation Model:
-
-SELECT
+`SELECT
   *
 FROM
   ML.EVALUATE(MODEL `bqml_tutorial.example`,
@@ -51,11 +51,11 @@ FROM
   Days since last active
 FROM
   Data_table))
+`
 
+### Apply prediction model:
 
-Apply prediction model:
-
-SELECT
+`SELECT
   *
 FROM
   ML.PREDICT(MODEL `bqml_tutorial.example`,
@@ -68,9 +68,9 @@ username,
   Days since last active
 FROM
   test_data_table))
+`
 
-
-Step 4: Model Tuning
+## Step 4: Model Tuning
 
 If you have imbalance classes, then use the auto_class = True.
 
@@ -78,5 +78,5 @@ If you don’t have a lot of data and you don’t mind a long query, then you ca
 
 You can engineer your own features such as concatenating the time and user engagement variables or various flags.
 
-Step 5: Implementation
+## Step 5: Implementation
 You can implement this model into Salesforce or into Looker. I can write about this in another article.
