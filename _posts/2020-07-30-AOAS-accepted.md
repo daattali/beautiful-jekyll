@@ -25,5 +25,5 @@ hospitable to the development of chronic diseases, such as obesity.
 Additionally, we demonstrate on simulated data how our method
 outperforms two-step approaches and also present a sensitivity analysis.
 
-Here's a link to the [pdf](https://mkoslovsky/mkoslovsky.github.io/AOAS2020).
+Here's a link to the [pdf](https://mkoslovsky.github.io/AOAS2020.pdf).
 
