@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Block YouTube ads (Not Video Ads)
+title: Block YouTube ads with Pi-Hole (Not Video Ads)
 image: /img/hello_world.jpeg
 ---
 
