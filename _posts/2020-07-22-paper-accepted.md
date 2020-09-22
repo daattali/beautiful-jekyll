@@ -11,5 +11,4 @@ prior probabilities of inclusion. While developed to study the human microbiome,
 employed in various research applications, where the aim is to generate insights into the relations between 
 a set of covariates and compositional data with or without a known tree-like structure.
 
-Here's a link to the [pdf](https://mkoslovsky/mkoslovsky.github.io/BMCbio).
-[pdf](https://mkoslovsky/mkoslovsky.github.io/assets/img/BMCbio)
+Here's a link to the [pdf](https://mkoslovsky.github.io/BMCbio.pdf).
