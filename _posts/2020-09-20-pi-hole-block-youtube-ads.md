@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to block YouTube screen ads (NOTE: not video ads)
+title: Block YouTube ads (Not Video Ads)
 image: /img/hello_world.jpeg
 ---
 
