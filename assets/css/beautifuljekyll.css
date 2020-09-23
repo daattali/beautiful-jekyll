@@ -492,7 +492,7 @@ footer .footer-custom-content {
   width: 12rem;
 }
 .post-preview .post-image {
-  filter: grayscale(90%);
+  filter: grayscale(70%);
 }
 .post-preview .post-image:hover {
   filter: grayscale(0%);
