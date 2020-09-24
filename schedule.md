@@ -4,10 +4,44 @@ title: Session Schedule
 subtitle: Our coaching session schedule
 ---
 
-The 2020-2021 schedule is being planned.
-
-The Club homework packet may be downloaded <a href="/files/Homework%20Packet.pdf">here</a>.
+The homework packet may be downloaded <a href="/files/Homework%20Packet.pdf">here</a>.
 
 The Mathcounts Toolkit be downloaded <a href="/files/Mathcounts%20Toolkit.pdf">here</a>.
+
+_Cancelled_ sessions are in _italics_.
+
+| Week Of	| Homework (Mon)		| Club (Wed) | Varsity (Fri) |
+| ----------|-------------			| ----| ----|
+| 12-Oct	| Systems of Equations	| [2019 AMC 8](https://artofproblemsolving.com/wiki/index.php/2019_AMC_8_Problems) | _No school_ |
+| 19-Oct	| Right Triangles		| [2018 AMC 8](https://artofproblemsolving.com/wiki/index.php/2018_AMC_8_Problems) | |
+| 26-Oct	| Probability			| [2017 AMC 8](https://artofproblemsolving.com/wiki/index.php/2017_AMC_8_Problems) | |
+| 2-Nov		| Fractions				| [2015 AMC 8](https://artofproblemsolving.com/wiki/index.php/2015_AMC_8_Problems) | |
+| 9-Nov		| Area					| _No school_ | |
+| 16-Nov	| Patterns				| | |
+| 23-Nov	| Work					| | _No school_ |
+| 30-Nov	| Similarity			| | |
+| 7-Dec		| Logic					| | |
+| 14-Dec	| Counting				| | |
+| 4-Jan		| Coordinate Geometry	| | |
+| 11-Jan	| Pascal's Triangle		| | |
+| 18-Jan	| _No school_			| | _Mathcounts_ |
+| 25-Jan	| Sequences				| | |
+| 1-Feb		| Clocks				| | |
+| 8-Feb		| Statistics			| | _No school_ |
+| 15-Feb	| _No school_			| | |
+| 22-Feb	| Travel				| | |
+| 1-Mar		| Angles and Arcs		| | |
+| 8-Mar		| Ratios				| | _No school_ |
+| 15-Mar	| Mixture				| | |
+| 22-Mar	| Surface Area & Volume | | |
+| 29-Mar	| Bases					| | |
+| 5-Apr		| _No school_			| _No school_ | _No school_ |
+| 12-Apr	| Measurement			| | |
+| 19-Apr	| Mass Point Geometry	| | |
+| 26-Apr	| Venn Diagrams			| | |
+| 3-May		| Functions				| | |
+| 10-May	| Geometric Proportions	| | |
+| 17-May	| Expected Value		| | |
+| 24-May	| Modular Arithmetic	| | _No school_ |
 
 [2019-2020 schedule](schedule-1920.md)
