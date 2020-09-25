@@ -4,6 +4,9 @@ layout: page
 
 {{ content }}
 
+{% capture aboutme %}{% include aboutme.md %}{% endcapture %}
+{{ aboutme | markdownify }}
+
 {% assign posts = paginator.posts | default: site.posts %}
 
 <div class="posts-list">
