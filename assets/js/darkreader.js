@@ -14,6 +14,8 @@ $(function() {
     !localStorage.getItem('color-mode'))) {
 
     root.attr("color-mode", "light");
+  } else {
+    root.attr("color-mode", "dark");
   }
 
   if (!root.attr("color-mode") === 'light') {
