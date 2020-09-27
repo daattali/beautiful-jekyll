@@ -4,11 +4,8 @@ layout: page
 
 {{ content }}
 
-{% comment %}
-{% capture aboutme %}{% include aboutme.md layout =%}{% endcapture %}
+{% capture aboutme %}{% include aboutme.md %}{% endcapture %}
 {{ aboutme | markdownify }}
-{% endcomment %}
-
 
 {% assign posts = paginator.posts | default: site.posts %}
 
