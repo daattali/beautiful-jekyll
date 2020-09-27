@@ -7,8 +7,15 @@
   display: none;
 }
 
+.light--hidden svg {
+  color: var(--darkreader-neutral-text, white)
+}
+
+.dark--hidden svg {
+  color: var(--darkreader-neutral-text, black)
+}
+
 .js-dark-toggle svg {
   height: 1.125rem;
   width: 1.125rem;
-  color: var(--darkreader-neutral-text, black)
 }
