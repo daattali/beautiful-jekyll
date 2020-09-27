@@ -4,8 +4,10 @@ layout: page
 
 {{ content }}
 
+<details><summary>A little about me!</summary>
 {% capture aboutme %}{% include aboutme.md %}{% endcapture %}
 {{ aboutme | markdownify }}
+</details>
 
 {% assign posts = paginator.posts | default: site.posts %}
 
