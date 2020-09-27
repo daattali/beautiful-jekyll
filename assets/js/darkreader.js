@@ -20,7 +20,7 @@ $(function() {
     DarkReader.enable(dr_settings);
   }  
 
-  $("js-dark-toggle").on("click", (e) => {
+  $(".js-dark-toggle").on("click", (e) => {
     var root = $(":root");
     var mode = root.attr("color-mode");
 
