@@ -13,23 +13,23 @@ $(function() {
     (window.matchMedia('prefers-color-scheme: light').matches &&
     !localStorage.getItem('color-mode'))) {
 
-    root.setAttribute("color-mode", "light");
+    root.attr("color-mode", "light");
   }
 
-  if (!root.getAttribute("color-mode") === 'light') {
+  if (!root.attr("color-mode") === 'light') {
     DarkReader.enable(dr_settings);
   }  
 
   $("js-dark-toggle").on("click", (e) => {
     var root = $(":root");
-    var mode = root.getAttribute("color-mode");
+    var mode = root.attr("color-mode");
 
     if (mode === "light") {
-      root.setAttribute("color-mode", "dark");
+      root.attr("color-mode", "dark");
       localStorage.setItem("color-mode", "dark");
       DarkReader.disable();
     } else {
-      root.setAttribute("color-mode", "light");
+      root.attr("color-mode", "light");
       localStorage.setItem("color-mode", "light");
       DarkReader.enable(dr_settings);
     }
