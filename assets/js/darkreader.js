@@ -7,7 +7,8 @@ $(function() {
         contrast: 100,
         sepia: 0
   };
-
+  // Helps embedded DR fetch x-origin resources
+  DarkReader.setFetchMethod(window.fetch);
   if (
     localStorage.getItem('color-mode') === 'light' ||
     (window.matchMedia('prefers-color-scheme: light').matches &&
