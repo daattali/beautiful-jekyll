@@ -7,3 +7,7 @@
   display: none;
 }
 
+.js-dark-toggle svg {
+  height: 1.4rem;
+  width: auto;
+}
