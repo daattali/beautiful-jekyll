@@ -11,17 +11,18 @@ $(function() {
   DarkReader.setFetchMethod(window.fetch);
   if (
     localStorage.getItem('color-mode') === 'light' ||
-    (window.matchMedia('prefers-color-scheme: light').matches &&
-    !localStorage.getItem('color-mode'))) {
-
+    (
+      window.matchMedia('prefers-color-scheme: light').matches && 
+      !localStorage.getItem('color-mode')
+    )) {
     root.attr("color-mode", "light");
   } else {
     root.attr("color-mode", "dark");
   }
 
-  if (!root.attr("color-mode") === 'light') {
+  if (root.attr("color-mode") !== 'light') {
     DarkReader.enable(dr_settings);
-  }  
+  } 
 
   $(".js-dark-toggle").on("click", (e) => {
     var root = $(":root");
