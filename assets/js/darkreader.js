@@ -29,11 +29,11 @@ $(function() {
     if (mode === "light") {
       root.attr("color-mode", "dark");
       localStorage.setItem("color-mode", "dark");
-      DarkReader.disable();
+      DarkReader.enable();
     } else {
       root.attr("color-mode", "light");
       localStorage.setItem("color-mode", "light");
-      DarkReader.enable(dr_settings);
+      DarkReader.disable(dr_settings);
     }
   
   } );
