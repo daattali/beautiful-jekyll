@@ -93,7 +93,7 @@ FROM
 
 ## Step 4: Model Tuning
 
-If you have imbalance classes, then use the auto_class = True.
+If you have imbalance classes, then use the auto_class = True. You can put this option in the Create Model code. 
 
 If you don’t have a lot of data and you don’t mind a long query, then you can turn off the auto learn rate. 
 
