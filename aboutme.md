@@ -29,7 +29,7 @@ subtitle:
 - Data visualization with matplotlib, seaborn, plotly
 - Build machine learning model with Sklearn, Keras, nltk, ...
 - Crawl data and build automation tool with selenium, beautiful soup, requset, request-html,...
-- Build website, restful-Api with Flask, Django
+- Build website, restful-Api with Flask, Django. 
     
 **Machine learning:**
 - Proficient in building credit scoring model and implementing in business.
@@ -40,9 +40,12 @@ subtitle:
  - **SQL**: Oracle, MySql - build the data-mart for Machine learning models and reports
  - **No-SQL**: MongoDB - build database for small company.
     
-**JavaScript:** Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
+**JavaScript:** 
+ - Build many small web applications with <a href="https://minmax49.github.io/2019-11-15-google_app/">google ecosystem</a>.
+ - Front-End Web Development with React.
 
-**BI:** Data-studio, Python-Dash, has many <a href="https://minmax49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
+**BI:** 
+ - Data-studio, Python-Dash, has many <a href="https://minmax49.github.io/2020-04-18-HCM-housing-chapter-2/">projects</a>.
 
 
 ### WORK EXPERIENCE:
