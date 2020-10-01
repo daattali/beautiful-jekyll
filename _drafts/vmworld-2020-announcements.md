@@ -18,7 +18,7 @@ That was one of the big guys at the show. VMware acquired Carbon Black in August
 
 ![](/img/vmworld2020-clouddr.jpg)
 
-As someone who managed traditional SRM implementations I was really excited about this one as I found it super interesting. Site Recovery has been around and allowed you to replicate workloads to VMC on AWS. With VMware Cloud DR, you can now replicate your workload to cheap native cloud storage and recover it to VMC on AWS with just in time SDDC provisioning. Meaning you only pay for the storage during normal operations. You only pay for compute when you spin up an SDDC when you need to recover or test. You can keep a small footprint SDDC running, called Pilot Light version for the most critical workloads that can't afford to wait for the spinning up of the SDDC. This technology of replicating to native cloud storage was made possible with the acquisition of Datrium by VMware this summer. Note that the replication and failback operation only transfer deltas to optimize bandwidth utilization and TCO by extension.
+As someone who managed traditional SRM implementations I was really excited about this one as I found it super interesting. Site Recovery has been around and allowed you to replicate workloads to VMC on AWS. With VMware Cloud DR, you can now replicate your workload to cheap native cloud storage backed by Amazon S3 and recover it to VMC on AWS with just in time SDDC provisioning. Meaning you only pay for the storage during normal operations. You only pay for compute when you spin up an SDDC when you need to recover or test. You can keep a small footprint SDDC running, called Pilot Light version for the most critical workloads that can't afford to wait for the spinning up of the SDDC. This technology of replicating to native cloud storage was made possible with the acquisition of Datrium by VMware this summer. Note that the replication and failback operation only transfer deltas to optimize bandwidth utilization and TCO by extension.
 
 **vRealize AI Cloud**
 
@@ -31,3 +31,15 @@ vRealize AI made me feel like I was in Minority Report. The way this product wor
 ![](/img/vmworld2020-nsxatp.jpg)
 
 Another acquisition that was melted in the VMware roadmap with Lastline's network traffic analysis (NTA), fueled with AI, that was integrated into VMware NSX Service-defined Firewall. This distributed and scale-out firewall protects east-west traffic across multi-cloud environments and uses unsupervised and supervised machine learning to identify threats and reduces false positives by up to 90%. This other science fiction tech can apply virtual patches at every workload in the environment. NSX advanced threat detection will sense all east-west traffic and after a few days will offer visibility on all the device types seen throughout the network, their OS and all the services and applications communicating. Machine learning is then applied to all this gathered data to detect potential malicious activity.
+
+**Tanzu Support For VMware Cloud On AWS**
+
+![](/img/vmworld2020-tanzu.png)
+
+Application modernization is at the forefront of this year's VMworld. Tanzu is VMware's brand name for their modern apps portfolio. It started with mission control which allows to centralize the management of Kubernetes clusters regardless of where they run and evolved into a beast made of several companies acquisitions. It is integrated into vSphere and interacts with NSX (it gets confusing). Tanzu is now generally available for VMware on AWS and still in preview state on Oracle Cloud VMware Solution as well as Google Cloud VMware Engine.
+
+**vRealize Cloud Universal**
+
+![](/img/vmworld2020-vrcu.jpg)
+
+VMware vRealize Cloud Universal accelerates cloud adoption by combining SaaS and on-premises capabilities for automation, operations, and log analytics into one license. It gives the possibility to deploy cloud management on premises or SaaS and provides the freedom to move between the two as needed. vRealize Cloud Universal includes vRealize Cloud Federated Catalog, Cloud Federated Analytic, AI Cloud, Cloud Subscription Manager, Cloud Log Insight, Operations Cloud, Automation Cloud as well as PLUS Proactive Support with VMware Skyline. The subscription comes in 3 editions illustrated above.
