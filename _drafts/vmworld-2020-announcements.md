@@ -43,3 +43,9 @@ Application modernization is at the forefront of this year's VMworld. Tanzu is V
 ![](/img/vmworld2020-vrcu.jpg)
 
 VMware vRealize Cloud Universal accelerates cloud adoption by combining SaaS and on-premises capabilities for automation, operations, and log analytics into one license. It gives the possibility to deploy cloud management on premises or SaaS and provides the freedom to move between the two as needed. vRealize Cloud Universal includes vRealize Cloud Federated Catalog, Cloud Federated Analytic, AI Cloud, Cloud Subscription Manager, Cloud Log Insight, Operations Cloud, Automation Cloud as well as PLUS Proactive Support with VMware Skyline. The subscription comes in 3 editions illustrated above.
+
+**Project Monterey**
+
+![](/img/vmworld2020-monterey.png)
+
+A pretty big deal in the hardware space is project Monterey, a rearchitecture of VCF from the hardware up to support modern applications. A new concept of SmartNIC is introduced to deliver maximum performance, zero-trust security, and simplified operations. SmartNICs are also supposed to extend support to bare metal OSes and applications across on-premise and cloud. VMware is working partnerships with vendors to offer a broad set of SmartNIC to customers. A SmartNIC is a NIC with a general-purpose CPU, out-of-band management, and virtualized device functionality to relieve the core CPU of the server.
