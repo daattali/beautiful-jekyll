@@ -25,3 +25,9 @@ As someone who managed traditional SRM implementations I was really excited abou
 ![](/img/vmworld2020-vrai.jpg)
 
 vRealize AI made me feel like I was in Minority Report. The way this product works is quite incredible. Its purpose is to observe the trend of the environment workloads and adjust settings on the hosts to improve IOPS and latency dynamically. Say your VDI boot storm and your DB dumps require different configurations at different time for best performance, vRAI will accomodate. The resources of the environment will be monitored via data sampling, sent to a SaaS data lake to be stored, analyzed to identify potential improvement and action are set to the vSphere and VSAN tuneables. Then vRAI will analyze the performance improvements and start again in an infinite loop to achieve best performance. The solution will eventually have a very wide scope but it will start with VSAN self-tuning at first. vRAI Cloud will be available in every vRealize Cloud Universal subscription with vRealize Operations Cloud.
+
+**VMware NSX Advanced Threat Prevention**
+
+![](/img/vmworld2020-nsxatp.jpg)
+
+Another acquisition that was melted in the VMware roadmap with Lastline's network traffic analysis (NTA), fueled with AI, that was integrated into VMware NSX Service-defined Firewall. This distributed and scale-out firewall protects east-west traffic across multi-cloud environments and uses unsupervised and supervised machine learning to identify threats and reduces false positives by up to 90%. This other science fiction tech can apply virtual patches at every workload in the environment. NSX advanced threat detection will sense all east-west traffic and after a few days will offer visibility on all the device types seen throughout the network, their OS and all the services and applications communicating. Machine learning is then applied to all this gathered data to detect potential malicious activity.
