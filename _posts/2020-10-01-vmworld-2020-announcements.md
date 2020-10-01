@@ -7,6 +7,8 @@ subtitle: Discover the major announcements of VMworld 2020
 ---
 This year's VMworld is like no other before due to the current situation. Everything is accessible on the virtual platform provided you registered for the event. I wasn't a big fan of the interface, I found it a bit confusing to navigate with all the timezones. However you get to see John Legend do a 30 minutes jam in his living room, what about that!
 
+![](/img/vmworld2020-logo-1.jpg)
+
 Anyway, lots of announcements were made this year, as you could expect most of them focused on the cloud. You can find a summary [there](https://www.vmware.com/company/news/updates/2020/vmworld-2020-news-announcement-summary.html).
 
 **_Carbon Black Cloud Workload_**
@@ -61,7 +63,7 @@ vRealize Network Insight 6.0 brings Network Assurance and Verification capabilit
 
 ![](/img/vmworld2020-azurjpg.png)
 
-Since Azure VMware Solution is generally available, there is now a production VMware footprint in every major public cloud (AWS, Azure, Google Cloud, IBM Cloud, Oracle Cloud). Customers will be able to leverage Azure Hybrid Benefit, integration with Microsoft Office 365 and other native Azure services, as well as Azure console integration. 
+Since Azure VMware Solution is generally available, there is now a production VMware footprint in every major public cloud (AWS, Azure, Google Cloud, IBM Cloud, Oracle Cloud). Customers will be able to leverage Azure Hybrid Benefit, integration with Microsoft Office 365 and other native Azure services, as well as Azure console integration.
 
 Other enhancements have been added to VMC on AWS such as:
 
