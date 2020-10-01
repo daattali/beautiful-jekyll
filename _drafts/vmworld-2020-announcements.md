@@ -6,7 +6,7 @@ DATE:
 ---
 This year's VMworld is like no other before due to the current situation. Everything is accessible on the virtual platform provided you registered for the event. I wasn't a big fan of the interface, I found it a bit confusing to navigate with all the timezones. However you get to see John Legend do a 30 minutes jam in his living room, what about that!
 
-Anyway, lots of announcements were made this year, as you could expect most of them focused on the cloud.
+Anyway, lots of announcements were made this year, as you could expect most of them focused on the cloud. You can find a summary [there](https://www.vmware.com/company/news/updates/2020/vmworld-2020-news-announcement-summary.html).
 
 **_Carbon Black Cloud Workload_**
 
@@ -55,3 +55,15 @@ A pretty big deal in the hardware space is project Monterey, a rearchitecture of
 VMware release version 3.1 of NSX-T offering new API-driven advanced routing and multicast capabilities, along with automated deployment of workflows through Terraform Provider. It will also support larger-scale global deployments and disaster recovery use cases.
 
 vRealize Network Insight 6.0 brings Network Assurance and Verification capabilities to determine whether the network is meeting its intended goals. It uses formal verification for better network planning and path troubleshooting. It will aslo add new VMware SD-WAN visibility capabilities with path tunnel visibility and round-trip time latency in a richer dashboard. Some improvements are also brought to the cloud integration and operations enhancements.
+
+**VMware footprint in every major public cloud**
+
+![](/img/vmworld2020-azurjpg.png)
+
+Since Azure VMware Solution is generally available, there is now a production VMware footprint in every major public cloud (AWS, Azure, Google Cloud, IBM Cloud, Oracle Cloud). Customers will be able to leverage Azure Hybrid Benefit, integration with Microsoft Office 365 and other native Azure services, as well as Azure console integration. 
+
+Other enhancements have been added to VMC on AWS such as:
+
+* **VMware Transit Connect:** Provides any-to-any connectivity between on-premises, VMC on AWS SDDCs and AWS VPCs using AWS Transit Gateway and AWS Direct Connect Gateway.
+* **Enhanced automation and operations:** Expanded vRealize Operations, Cloud Automation, Orchestrator, Log Insight and Network Insight support.
+* **Enhanced HCX capabilities:** Replication Assisted vMotion, local routing for migrated VMs and migration grouping.
