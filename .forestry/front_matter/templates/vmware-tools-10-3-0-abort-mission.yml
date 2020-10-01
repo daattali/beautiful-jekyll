@@ -33,6 +33,4 @@ pages:
 - _posts/2020-02-18-how-to-sign-a-certificate-with-no-template-information-on-a-microsoft-ca.md
 - _posts/2020-04-22-change-vmnic-order-on-vsphere-host.md
 - _posts/2020-04-30-host-randomly-not-responding-but-replies-to-ping.md
-- _posts/enabling-ldaps-on-vcenter-identity-source.md
-- _posts/vami-certificate-not-updated-after-certificate-change.md
-- _posts/vmworld-2020-announcements.md
+- _posts/2020-10-01-vmworld-2020-announcements.md

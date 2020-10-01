@@ -2,7 +2,8 @@
 layout: post
 title: VMworld 2020 announcements
 DATE: 2020-10-01
-subtitle: 'Discover the major announcements of VMworld 2020'
+subtitle: Discover the major announcements of VMworld 2020
+
 ---
 This year's VMworld is like no other before due to the current situation. Everything is accessible on the virtual platform provided you registered for the event. I wasn't a big fan of the interface, I found it a bit confusing to navigate with all the timezones. However you get to see John Legend do a 30 minutes jam in his living room, what about that!
 
