@@ -56,6 +56,7 @@ _2020-2021 changes:_ Quizzes will generally be 40 minutes within a 45-minute win
 
 You may **not** communicate with other students or anyone else, through any medium, at any time during the quiz. You may not communicate with any of your classmates until everyone is finished the quiz. Please don't post about MDS quizzes on Slack until at least 30 minutes after the end of the quiz, in case some students were given extra time.
 
+_For 2020-21 only_: this year we will be offering the quizzes at two time slots to accommodate students in a range of time zones. You may not discuss the quizzes with anyone until after the second quiz (Session B) is complete. Please do not start discussing the quiz 30 minutes after Session A. 
 
 ### General Guidelines
 
