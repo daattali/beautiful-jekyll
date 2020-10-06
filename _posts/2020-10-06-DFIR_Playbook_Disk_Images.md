@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DFIR Playbook - Disk Images
-subtitle: An extract from my Physical Playbook, contining The SleuthKit (TSK), Timelines etc
+subtitle: An extract from my Physical Playbook, continuing The SleuthKit (TSK), Timelines etc
 tags: [dfir, disk, tsk, mft, timeline]
 comments: false
 ---
@@ -11,7 +11,7 @@ This post aims to replicate my physical playbook on Disk Images and includes the
 
     - The SleuthKit(TSK)
     - Ripl.pl
-    - find (Hash unallocated files without extracting... fild that malware)
+    - find (Hash unallocated files without extracting... find that malware)
 
 ## Overview
 
@@ -19,7 +19,7 @@ Broadly, the following overview, will show the basic fls / mmls commands. For ea
 
 Command | Description | Comments | Use (CTRL + Click to expand)
 -------|--------|-------|--------
-`mmls <filename>`| Show's partitions and disk offsets | Usually the largest partition that starts at approximatley 63 for BIOS versions of windows, and the second partition after 2048 for EFI versions of windows | [![mmls](https://angry-bender.github.io/img/dsk/mmls.png)](https://angry-bender.github.io/img/dsk/mmls.png))
+`mmls <filename>`| Show's partitions and disk offsets | Usually the largest partition that starts at approximately 63 for BIOS versions of windows, and the second partition after 2048 for EFI versions of windows | [![mmls](https://angry-bender.github.io/img/dsk/mmls.png)](https://angry-bender.github.io/img/dsk/mmls.png))
 `fls -o <offset> <filename>`| Using the offsets identified on mmls will show the contents off the root directory (ls -lah equivalent)| - | [![flso](https://angry-bender.github.io/img/dsk/flso.png)]([![flsd](https://angry-bender.github.io/img/dsk/flso.png)])
 `fls -o <Offset> <filename> -D`| shows only directories the directories avialable. | - | [![flsd](https://angry-bender.github.io/img/dsk/flsd.png)](https://angry-bender.github.io/img/dsk/flsd.png)
 `fls -o <offset> <filename> <inode>`| lists the contents of a given directory. | - | - [![flsi](https://angry-bender.github.io/img/dsk/flsi.png)](https://angry-bender.github.io/img/dsk/flsi.png)
@@ -70,6 +70,6 @@ Command | Description
 
 - `rip.pl -r NTUSER.DAT -p userassist` From the files extracted with tsk_recover, you can quickly get the userassist keys. If you want to see other types you can use --help
 
-## Hash all files, including unallocateed with find on a live linux system
+## Hash all files, including unallocated with find on a live linux system
 
 -`find . -type f -exec md5sum "{}" \; `
