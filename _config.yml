@@ -20,6 +20,7 @@ description: Bite my shiny metal.... knowledge
 
 # List of links in the navigation bar
 navbar-links:
+  Linux Cheatsheet: "https://angry-bender.github.io/2020-02-27-basic_linux_resources/"
   About Me: "aboutme"
   Write-Ups by Tag:
     - Systems Administration: "https://angry-bender.github.io/tags/#sysadmin"
