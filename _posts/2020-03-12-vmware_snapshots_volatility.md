@@ -9,11 +9,9 @@ comments: false
 # Introduction
 I found recently during a CTF Memory image challenge, that analysing memory images from VMWare wasn't necessarily as easy as just having the right profile and files. Hopefully this helps anyone out there who needs to do the same. For this write-up I am using VMWare Workstation Pro v15.5.1.
 
-# Table-of-Contents
 <a name="TOC"></a>
 
 - [Introduction](#introduction)
-- [Table-of-Contents](#table-of-contents)
     - [TLDR](#tldr)
     - [Applicable VMWare File Types](#applicable-vmware-file-types)
     - [What I tried](#what-i-tried)

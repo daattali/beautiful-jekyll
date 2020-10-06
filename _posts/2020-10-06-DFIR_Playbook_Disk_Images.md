@@ -5,6 +5,15 @@ subtitle: An extract from my Physical Playbook, continuing The SleuthKit (TSK), 
 tags: [dfir, disk, tsk, mft, timeline]
 comments: false
 ---
+<a name="TOC"></a>
+- [Introduction](#introduction)
+  - [Overview](#overview)
+- [Using TSK to make a timeline](#using-tsk-to-make-a-timeline)
+  - [Triage Timeline](#triage-timeline)
+    - [timeline_noise.txt](#timeline_noisetxt)
+  - [MFT Timeline](#mft-timeline)
+  - [Quick Registry analysis](#quick-registry-analysis)
+  - [Hash all files, including unallocated with find on a live linux system](#hash-all-files-including-unallocated-with-find-on-a-live-linux-system)
 
 # Introduction
 
@@ -13,6 +22,8 @@ This post aims to replicate my physical playbook on Disk Images and includes the
     - The SleuthKit(TSK)
     - Ripl.pl
     - find (Hash unallocated files without extracting... find that malware)
+
+[*Back to table of contents*](#TOC)
 
 ## Overview
 
@@ -28,9 +39,13 @@ Command | Description | Comments | Use (CTRL + Click to expand)
 `icat -o <offset> <filename> <inode>` | cat's out the file to STDOUT, can be redirected to make a copy of the file by adding `> file.txt`. | - | [![icat](https://angry-bender.github.io/img/dsk/icat.png)](https://angry-bender.github.io/img/dsk/icat.png)
 `tsk_recover -o <offset> <filename> -e -d <Directory inode>` | Extracts an entire directories files, including those that are unallocated, useful for deleted files | - | [![tsk](https://angry-bender.github.io/img/dsk/tsk.png)](https://angry-bender.github.io/img/dsk/tsk.png)
 
+[*Back to table of contents*](#TOC)
+
 # Using TSK to make a timeline
 
 You can tsk for more than just extracting files. Its one of the best, and most lightweight tools to make a quick MFTTimeline, or, Filesystem timeline. And, whats better, is there is no mounting, period, thank the DFIR Gods. This makes this one of the best and quickest triage tools to use.
+
+[*Back to table of contents*](#TOC)
 
 ## Triage Timeline
 
@@ -39,6 +54,8 @@ Command | Description
 `fls -o <offset> <filename> -r -p -m <PartitionLetter>:/ > <outputfile>`| Generates a tsk triage timeline bodyfile
 `mactime -b <filename? -b <bodyfile> -d -y -z <Timezone> <StartTime> <EndTime> > <outputfile>.csv`| Creates a csv timeline from the body file. Tzformat = `Australia/Sydney` TimeFormat = `2000-04-20T00:00:00` NOTE: `-z` with `<timezone>` `<StartTime>` or `<EndTime>` are optional
 `grep -v -i -f timeline_noise.txt <outputfile>.csv > <outfile-final>.csv` | Reduces timeline noise
+
+[*Back to table of contents*](#TOC)
 
 ### timeline_noise.txt
 
@@ -53,6 +70,9 @@ MSIE\ Cache\ File
 THREAD  
 DLL\ LOADTIME  
 `
+
+[*Back to table of contents*](#TOC)
+
 ## MFT Timeline
 
 Command | Description
@@ -60,10 +80,16 @@ Command | Description
 `icat -o <offset> <filename> 0 > <directory>/mft.raw`| Extracts mft from disk for enhanced timeline
 `analyzeMFT.py -f <directory>/mft.raw -e -o mfttl.csv`| Generates a MFT CSV Timeline
 
+[*Back to table of contents*](#TOC)
+
 ## Quick Registry analysis
 
 - `rip.pl -r NTUSER.DAT -p userassist` From the files extracted with tsk_recover, you can quickly get the userassist keys. If you want to see other types you can use --help
 
+[*Back to table of contents*](#TOC)
+
 ## Hash all files, including unallocated with find on a live linux system
 
 -`find . -type f -exec md5sum "{}" \;`
+
+[*Back to table of contents*](#TOC)

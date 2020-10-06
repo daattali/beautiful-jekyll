@@ -9,10 +9,8 @@ comments: false
 # Introduction
 These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheat sheet & posts that will help basic analysts be able use and research how to use Linux.
 
-# Table-of-Contents
 <a name="Table-of-Contents"></a>
 - [Introduction](#introduction)
-- [Table-of-Contents](#table-of-contents)
 - [Bash keyboard commands](#bash-keyboard-commands)
   - [Moving Cursor](#moving-cursor)
   - [Exiting a running command or accessing another command window](#exiting-a-running-command-or-accessing-another-command-window)
