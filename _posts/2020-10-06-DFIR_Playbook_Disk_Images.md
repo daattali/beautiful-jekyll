@@ -5,6 +5,16 @@ subtitle: An extract from my Physical Playbook, continuing The SleuthKit (TSK), 
 tags: [dfir, disk, tsk, mft, timeline]
 comments: false
 ---
+
+
+# Introduction
+
+This post aims to replicate my physical playbook on Disk Images and includes the following tools
+
+    - The SleuthKit(TSK)
+    - Ripl.pl
+    - find (Hash unallocated files without extracting... find that malware)
+
 <a name="TOC"></a>
 - [Introduction](#introduction)
   - [Overview](#overview)
@@ -14,14 +24,6 @@ comments: false
   - [MFT Timeline](#mft-timeline)
   - [Quick Registry analysis](#quick-registry-analysis)
   - [Hash all files, including unallocated with find on a live linux system](#hash-all-files-including-unallocated-with-find-on-a-live-linux-system)
-
-# Introduction
-
-This post aims to replicate my physical playbook on Disk Images and includes the following tools
-
-    - The SleuthKit(TSK)
-    - Ripl.pl
-    - find (Hash unallocated files without extracting... find that malware)
 
 [*Back to table of contents*](#TOC)
 
@@ -59,17 +61,15 @@ Command | Description
 
 ### timeline_noise.txt
 
-`  
-Content.IE5  
-Temporary\ Internet\ Files  
-IETldCache  
-PrivacIE  
-ACPI  
-MSIE\ Cache\ File  
-\(\$FILE\_NAME\)  
-THREAD  
-DLL\ LOADTIME  
-`
+`Content.IE5`\
+`Temporary\ Internet\ Files`\
+`IETldCache`\
+`PrivacIE`\
+`ACPI`\
+`MSIE\ Cache\ File`\
+`\(\$FILE\_NAME\)`\
+`THREAD`\  
+`DLL\ LOADTIME`\
 
 [*Back to table of contents*](#TOC)
 
