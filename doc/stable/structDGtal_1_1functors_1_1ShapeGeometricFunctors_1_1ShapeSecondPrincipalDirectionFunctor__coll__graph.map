@@ -1,0 +1,5 @@
+<map id="DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalDirectionFunctor&lt; TShape &gt;" name="DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalDirectionFunctor&lt; TShape &gt;">
+<area shape="rect" id="node1" title="Aim: A functor RealPoint &#45;&gt; RealVector that returns the second principal direction at given point (i...." alt="" coords="5,213,269,269"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title=" " alt="" coords="48,109,227,151"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="48,5,227,47"/>
+</map>

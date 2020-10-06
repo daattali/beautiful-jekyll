@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classDGtal_1_1TraceWriter.html" title="Virtual Class to implement trace writers." alt="" coords="5,31,136,57"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1TraceWriterFile.html" title=" " alt="" coords="188,5,340,32"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1TraceWriterTerm.html" title="Implements trace prefix for color terminals." alt="" coords="184,56,344,83"/>
+</map>

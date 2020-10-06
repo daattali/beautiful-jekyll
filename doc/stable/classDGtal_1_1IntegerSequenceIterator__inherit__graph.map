@@ -1,4 +1,4 @@
 <map id="DGtal::IntegerSequenceIterator&lt; TInteger &gt;" name="DGtal::IntegerSequenceIterator&lt; TInteger &gt;">
-<area shape="rect" id="node1" title="Aim: It is a simple class that mimics a (non mutable) iterator over integers. You can increment it,..." alt="" coords="309,19,515,57"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,261,71"/>
+<area shape="rect" id="node1" title="Aim: It is a simple class that mimics a (non mutable) iterator over integers. You can increment it,..." alt="" coords="305,20,508,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,257,76"/>
 </map>

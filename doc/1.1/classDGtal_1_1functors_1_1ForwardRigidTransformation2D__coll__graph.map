@@ -1,0 +1,5 @@
+<map id="DGtal::functors::ForwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;" name="DGtal::functors::ForwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;">
+<area shape="rect" id="node1" title="Aim: implements forward rigid transformation of point in the 2D integer space. Warring: This version ..." alt="" coords="701,14,879,85"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1functors_1_1VectorRounding.html" title=" " alt="" coords="396,21,608,77"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1functors_1_1VectorRounding.html" title=" " alt="" coords="5,29,217,70"/>
+</map>

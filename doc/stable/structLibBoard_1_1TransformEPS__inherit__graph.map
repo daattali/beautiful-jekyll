@@ -1,4 +1,4 @@
 <map id="LibBoard::TransformEPS" name="LibBoard::TransformEPS">
-<area shape="rect" id="node1" title="Structure representing a scaling and translation suitable for an EPS output." alt="" coords="5,79,174,104"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1Transform.html" title="base class for transforms." alt="" coords="19,5,161,31"/>
+<area shape="rect" id="node1" title="Structure representing a scaling and translation suitable for an EPS output." alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1Transform.html" title="base class for transforms." alt="" coords="19,5,159,32"/>
 </map>

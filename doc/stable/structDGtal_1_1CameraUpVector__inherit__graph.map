@@ -1,7 +1,5 @@
 <map id="DGtal::CameraUpVector" name="DGtal::CameraUpVector">
-<area shape="rect" id="node1" title="CameraUpVector class to set camera up&#45;vector." alt="" coords="157,165,322,191"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithViewer3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="10,85,235,111"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="5,5,234,31"/>
-<area shape="rect" id="node4" href="$structDGtal_1_1DrawWithBoard3DTo2DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="261,79,456,117"/>
-<area shape="rect" id="node5" href="$structDGtal_1_1DrawableWithDisplay3D.html" title=" " alt="" coords="258,5,464,31"/>
+<area shape="rect" id="node1" title="CameraUpVector class to set camera up&#45;vector." alt="" coords="26,169,191,196"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithBoard3DTo2DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="11,80,206,121"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1DrawableWithDisplay3D.html" title=" " alt="" coords="5,5,212,32"/>
 </map>

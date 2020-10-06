@@ -1,0 +1,12 @@
+<map id="DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::iterator" name="DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::iterator">
+<area shape="rect" id="node1" title="Read&#45;write iterator on set elements. Model of ForwardIterator." alt="" coords="1252,85,1479,156"/>
+<area shape="rect" id="node2" title=" " alt="" coords="941,5,1108,76"/>
+<area shape="rect" id="node3" title="STL iterator class." alt="" coords="956,100,1093,141"/>
+<area shape="rect" id="node4" href="$structDGtal_1_1UnorderedSetByBlock.html" title=" " alt="" coords="905,166,1144,222"/>
+<area shape="rect" id="node5" title=" " alt="" coords="564,100,775,200"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="169,129,307,171"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,111,44,138"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,162,44,189"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1Splitter.html" title=" " alt="" coords="593,225,745,251"/>
+<area shape="rect" id="node10" href="$structDGtal_1_1Splitter.html" title=" " alt="" coords="149,217,327,259"/>
+</map>

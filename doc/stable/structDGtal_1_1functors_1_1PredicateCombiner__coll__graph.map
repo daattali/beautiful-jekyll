@@ -1,4 +1,0 @@
-<map id="DGtal::functors::PredicateCombiner&lt; TPredicate1, TPredicate2, TBinaryFunctor &gt;" name="DGtal::functors::PredicateCombiner&lt; TPredicate1, TPredicate2, TBinaryFunctor &gt;">
-<area shape="rect" id="node1" title="Aim: The predicate returns true when the given binary functor returns true for the two Predicates giv..." alt="" coords="5,92,212,144"/>
-<area shape="rect" id="node2" title=" " alt="" coords="52,5,165,31"/>
-</map>

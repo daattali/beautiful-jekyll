@@ -1,6 +1,6 @@
 <map id="DGtal::concepts::CDenseMatrix&lt; T &gt;" name="DGtal::concepts::CDenseMatrix&lt; T &gt;">
-<area shape="rect" id="node1" title="Aim: Represent any dynamic or static sized matrix having dense representation." alt="" coords="5,239,244,264"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CMatrix.html" title="Aim: Represent any static or dynamic sized matrix having sparse or dense representation." alt="" coords="25,165,225,191"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure." alt="" coords="39,79,210,117"/>
-<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="46,5,203,31"/>
+<area shape="rect" id="node1" title="Aim: Represent any dynamic or static sized matrix having dense representation." alt="" coords="5,244,247,271"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CMatrix.html" title="Aim: Represent any static or dynamic sized matrix having sparse or dense representation." alt="" coords="25,169,227,196"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure." alt="" coords="39,80,213,121"/>
+<area shape="rect" id="node4" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="47,5,205,32"/>
 </map>

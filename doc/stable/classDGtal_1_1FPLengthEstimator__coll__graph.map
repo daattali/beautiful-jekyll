@@ -1,8 +1,0 @@
-<map id="DGtal::FPLengthEstimator&lt; TConstIterator &gt;" name="DGtal::FPLengthEstimator&lt; TConstIterator &gt;">
-<area shape="rect" id="node1" title="Aim: a model of CGlobalCurveEstimator that computes the length of a digital curve using its FP (faith..." alt="" coords="103,305,280,344"/>
-<area shape="rect" id="node2" title=" " alt="" coords="127,205,256,244"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="5,92,165,144"/>
-<area shape="rect" id="node4" title=" " alt="" coords="41,5,129,31"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="242,105,355,131"/>
-<area shape="rect" id="node6" title=" " alt="" coords="279,5,318,31"/>
-</map>

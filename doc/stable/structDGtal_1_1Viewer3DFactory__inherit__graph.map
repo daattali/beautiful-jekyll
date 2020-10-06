@@ -1,4 +1,5 @@
 <map id="DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;" name="DGtal::Viewer3DFactory&lt; TSpace, TKSpace &gt;">
-<area shape="rect" id="node1" title="Factory for GPL Viewer3D:" alt="" coords="7,92,172,131"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1Display3DFactory.html" title="Factory for GPL Display3D:" alt="" coords="5,5,173,44"/>
+<area shape="rect" id="node1" title="Factory for GPL Viewer3D:" alt="" coords="17,215,183,256"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1Display3DFactory.html" title=" " alt="" coords="5,124,195,165"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1Display3DFactory.html" title="Factory for GPL Display3D:" alt="" coords="15,5,185,47"/>
 </map>

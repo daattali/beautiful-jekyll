@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classDGtal_1_1TwoStepLocalLengthEstimator.html" title="Aim: a simple model of CGlobalCurveEstimator that compute the length of a curve using the l_1 metric ..." alt="" coords="5,39,192,80"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1BLUELocalLengthEstimator.html" title="Aim: Best Linear Unbiased Two step length estimator." alt="" coords="240,5,465,47"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1RosenProffittLocalLengthEstimator.html" title="Aim: Rosen&#45;Proffitt Length Estimator." alt="" coords="240,71,465,112"/>
+</map>

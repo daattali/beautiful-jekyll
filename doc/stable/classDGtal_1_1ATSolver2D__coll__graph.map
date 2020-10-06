@@ -1,0 +1,10 @@
+<map id="DGtal::ATSolver2D&lt; TKSpace, TLinearAlgebra &gt;" name="DGtal::ATSolver2D&lt; TKSpace, TLinearAlgebra &gt;">
+<area shape="rect" id="node1" title="Aim: This class solves Ambrosio&#45;Tortorelli functional on a two&#45;dimensional digital space (a 2D grid o..." alt="" coords="896,142,1083,183"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title=" " alt="" coords="529,7,752,63"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="149,14,328,55"/>
+<area shape="rect" id="node4" title=" " alt="" coords="575,179,706,221"/>
+<area shape="rect" id="node5" href="$classDGtal_1_1KForm.html" title="Aim: KForm represents discrete kforms in the dec package." alt="" coords="149,121,328,162"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="181,197,297,224"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,197,44,224"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1LinearOperator.html" title="Aim: LinearOperator represents discrete linear operator between discrete kforms in the DEC package." alt="" coords="565,293,716,363"/>
+</map>

@@ -1,7 +1,0 @@
-<map id="DGtal::KhalimskySpaceNDHelper&lt; TKhalimskySpace &gt;" name="DGtal::KhalimskySpaceNDHelper&lt; TKhalimskySpace &gt;">
-<area shape="rect" id="node1" title="Internal class of KhalimskySpaceND that provides some optimizations depending on the space type." alt="" coords="5,40,225,79"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1KhalimskySpaceND.html" title=" " alt="" coords="406,5,631,44"/>
-<area shape="rect" id="node3" href="$classDGtal_1_1KhalimskySpaceNDHelper.html" title=" " alt="" coords="409,68,629,120"/>
-<area shape="rect" id="node4" href="$classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,..." alt="" coords="680,75,861,113"/>
-<area shape="rect" id="node5" href="$classDGtal_1_1KhalimskySpaceND.html" title=" " alt="" coords="1063,75,1244,113"/>
-</map>
