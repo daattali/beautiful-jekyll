@@ -42,13 +42,21 @@ Command | Description
 ### timeline_noise.txt
 
 `Content.IE5
+
 Temporary\ Internet\ Files
+
 IETldCache
+
 PrivacIE
+
 ACPI
+
 MSIE\ Cache\ File
+
 \(\$FILE\_NAME\)
+
 THREAD
+
 DLL\ LOADTIME`
 
 ## MFT Timeline
