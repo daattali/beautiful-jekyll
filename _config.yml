@@ -79,11 +79,6 @@ author:
 footer:
   links:
 
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
 defaults:
   # _posts
   - scope:
@@ -106,7 +101,10 @@ defaults:
       type: pages
     values:
       layout: splash
-      author_profile: true
+      author_profile: false
+      share: true
+      related: true
+      
 
 category_archive:
   type: liquid
