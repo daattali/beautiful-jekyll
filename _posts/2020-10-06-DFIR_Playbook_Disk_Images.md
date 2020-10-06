@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DFIR Playbook - Disk Images
-subtitle: An extract from my Physical Playbook, contining The SleuthKit (TSK), Timlines etc
+subtitle: An extract from my Physical Playbook, contining The SleuthKit (TSK), Timelines etc
 tags: [dfir, disk, tsk, mft, timeline]
 comments: false
 ---
