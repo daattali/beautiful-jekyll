@@ -57,8 +57,8 @@ _What you will find in this course:_
 
 Go at your own pace or follow along live (recommended). Community engagement posts to share our journey with one another. You’ll have access to this course afterwards forever too. Signing up for round one? YOU GET ACCESS TO ANY FUTURE UPDATE OF THE COURSE CONTENT TOO!
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>Y
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 The introductory rate has a one time payment of $30 (CAD, less USD) or split into two payments of $15. We can chat about payment methods after your application is received.
 
-Not ready to commit to the full course? Join the [FREE Simplifying Your Life at Home community group](https://www.facebook.com/groups/simplifyingyourlifeathome). I’ll be sharing some tips and tricks and helpful things I find over time in this group. **The official launch will come at the same time as the course.**
+Not ready to commit to the full course? Join the [FREE Simplifying Your Life at Home community group](https://www.facebook.com/groups/simplifyingyourlifeathome). I’ll be sharing some tips and tricks and helpful things I find over time in this group. **The official launch for the free group will be at the same time as the course.**
