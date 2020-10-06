@@ -14,7 +14,7 @@ title: DGtalTools
 The source code of the tools can also be used to non DGtal familiar user to show how to include the DGtal library framework directly in their own source code (in complement of [ DGtal tutorial][4] ).
 
 ### DGtalTools content:
-At the moment the DGTalTools project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.0):
+At the moment the DGTalTools project is organized as follows (<span style="color: #8b0000;">new</span> or <span style="color: #008b00;">improved</span> in 1.1):
 (see also the nightly build doxygen [documentation of the tools](https://dgtal-team.github.io/doctools-nightly/))
 * **converters/**: utilities to convert various simple file formats:
   * <span style="color: #00008b;">convertVol</span>: a simple generic volume image converters (can process actually pgm3d, vol, longvol, raw (for writing)).
