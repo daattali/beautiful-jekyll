@@ -17,7 +17,7 @@ This post aims to replicate my physical playbook on Disk Images and includes the
 
 Broadly, the following overview, will show the basic fls / mmls commands. For each of the red circles, that is where we're getting the inode or offset from
 
-Command | Description | Comments | Use
+Command | Description | Comments | Use (CTRL + Click to expand)
 -------|--------|-------|--------
 `mmls <filename>`| Show's partitions and disk offsets | Usually the largest partition that starts at approximatley 63 for BIOS versions of windows, and the second partition after 2048 for EFI versions of windows | [![mmls](https://angry-bender.github.io/img/dsk/mmls.png)](https://angry-bender.github.io/img/dsk/mmls.png))
 `fls -o <offset> <filename>`| Using the offsets identified on mmls will show the contents off the root directory (ls -lah equivalent)| - | [![flso](https://angry-bender.github.io/img/dsk/flso.png)]([![flsd](https://angry-bender.github.io/img/dsk/flso.png)])
