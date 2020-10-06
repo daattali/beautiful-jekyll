@@ -1,5 +1,6 @@
 ---
-layout: post
+categories:
+  - blog
 title: Reverse Engineering Crypto Keys - WIP Notes
 subtitle: A rudimentary guide as to how you could find a HEX crypto key in a sample - Work in Progress
 tags: [programming, reverse_engineering, debug]
@@ -39,7 +40,7 @@ Borland C++ 5.5.1 - To Compile
 ## Code
 
 To find these results, I used the following code (The comments, refer to what I found in the disassembler)
-```
+```c
 
 /*
 Author: Samuel Freeman

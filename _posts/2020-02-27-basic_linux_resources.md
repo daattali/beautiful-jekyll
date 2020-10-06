@@ -1,95 +1,16 @@
 ---
-layout: post
+categories:
+  - blog
 title: Basic Linux Resources (V2.1)
 subtitle: The resources I used to help make a basic Linux course.
 tags: [sysadmin, linux]
-comments: false
+comments: true
+header:
+  teaser: /img/lt/tux.jpg
 ---
 
 # Introduction
 These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheat sheet & posts that will help basic analysts be able use and research how to use Linux.
-
-<a name="Table-of-Contents"></a>
-- [Introduction](#introduction)
-- [Bash keyboard commands](#bash-keyboard-commands)
-  - [Moving Cursor](#moving-cursor)
-  - [Exiting a running command or accessing another command window](#exiting-a-running-command-or-accessing-another-command-window)
-  - [Search for text in a file (less, more)](#search-for-text-in-a-file-less-more)
-- [Linux Commands](#linux-commands)
-  - [Navigating Linux](#navigating-linux)
-  - [Command Line Tricks](#command-line-tricks)
-  - [Finding a file](#finding-a-file)
-  - [Reading a file](#reading-a-file)
-  - [Editing a file](#editing-a-file)
-  - [Moving a file](#moving-a-file)
-  - [Deleting a file](#deleting-a-file)
-  - [Changing Permissions on a file](#changing-permissions-on-a-file)
-  - [Comparing a file](#comparing-a-file)
-  - [History](#history)
-  - [System Utilities](#system-utilities)
-  - [Networking](#networking)
-    - [The new systemd way (Manual Configuration)](#the-new-systemd-way-manual-configuration)
-    - [The new legacy way (Manual Configuration)](#the-new-legacy-way-manual-configuration)
-    - [Other network utilities & Troubleshooting tools](#other-network-utilities--troubleshooting-tools)
-  - [Ubuntu Package Management](#ubuntu-package-management)
-  - [User Management](#user-management)
-- [Basic Forensics Commands](#basic-forensics-commands)
-- [Set a forensics alias.... to you know, forensicate](#set-a-forensics-alias-to-you-know-forensicate)
-  - [Grep](#grep)
-    - [Introduction & Description](#introduction--description)
-    - [Working example](#working-example)
-  - [Sed](#sed)
-    - [Introduction & Description](#introduction--description-1)
-    - [Working example](#working-example-1)
-  - [Awk](#awk)
-    - [Introduction & Description](#introduction--description-2)
-    - [Working example](#working-example-2)
-    - [Extra tutorials](#extra-tutorials)
-  - [Regex Reference](#regex-reference)
-    - [A nice way to test your regex before using it](#a-nice-way-to-test-your-regex-before-using-it)
-    - [IP Address regex](#ip-address-regex)
-  - [Other useful tools](#other-useful-tools)
-- [Linux Resources](#linux-resources)
-  - [Package Management](#package-management)
-    - [Tarball Example](#tarball-example)
-    - [Using Tarballs](#using-tarballs)
-  - [Linux Distributions](#linux-distributions)
-  - [Linux File systems](#linux-file-systems)
-    - [Filesystem Hierarchy Standard](#filesystem-hierarchy-standard)
-    - [Binary Directory Standards](#binary-directory-standards)
-  - [Programs & Services](#programs--services)
-    - [Elf Diagram](#elf-diagram)
-    - [Process Signals](#process-signals)
-    - [Sysvinit](#sysvinit)
-      - [if you want to play with a sysvinit system](#if-you-want-to-play-with-a-sysvinit-system)
-    - [Sysvinit vs system d (Nice comparison graph)](#sysvinit-vs-system-d-nice-comparison-graph)
-    - [Init System and Daemons (Boot Process)](#init-system-and-daemons-boot-process)
-    - [Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1](#understanding-the-linux-boot-process---comptia-linux-lpic-1)
-    - [Common Linux Processes / Daemons](#common-linux-processes--daemons)
-  - [Bash Usage](#bash-usage)
-    - [Special Characters](#special-characters)
-    - [Grep awk and sed tutorial](#grep-awk-and-sed-tutorial)
-    - [Awk tutorial](#awk-tutorial)
-    - [How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170](#how-to-use-tr-sed-and-aspell-linux-terminal-201---haktip-170)
-  - [User Management](#user-management-1)
-    - [Home Directory Specifications](#home-directory-specifications)
-    - [Passwd file specifications](#passwd-file-specifications)
-  - [Text Editors](#text-editors)
-    - [Vim Cheat sheet for programmers](#vim-cheat-sheet-for-programmers)
-    - [Vim Plugins / Features](#vim-plugins--features)
-  - [Bash Scripting](#bash-scripting)
-    - [How To Setup Bash IDE](#how-to-setup-bash-ide)
-    - [Internal Variables](#internal-variables)
-    - [Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177](#building-a-program-with-shell-scripting-linux-terminal-201---haktip-177)
-    - [HakTip - Bash Basics: Turn Long Commands into Scripts](#haktip---bash-basics-turn-long-commands-into-scripts)
-    - [How to Write a Shell Script: Linux Terminal 201 - HakTip 175](#how-to-write-a-shell-script-linux-terminal-201---haktip-175)
-    - [How to Use Cut, Paste, and Join: Linux Terminal 201 - HakTip 168](#how-to-use-cut-paste-and-join-linux-terminal-201---haktip-168)
-  - [Basic Linux commands](#basic-linux-commands)
-  - [Best troubleshooting websites](#best-troubleshooting-websites)
-  - [Over the wire solutions](#over-the-wire-solutions)
-  - [Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))](#scripts-and-solutions-from-the-course-please-ask-the-instructor-for-the-password---also-listed-on-day-3-slides-you-may-need-7zip-to-decrypt)
-  - [Arch Linux Installation Fixes](#arch-linux-installation-fixes)
-
 
 # Bash keyboard commands
 
@@ -97,7 +18,7 @@ The mouse won’t work, use the left/right arrow keys to move around the line.
 
 When the cursor is where you want it in the line, typing inserts text – i.e. it doesn’t always over-type what’s already there.
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Moving Cursor
 
@@ -120,7 +41,7 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 **ALT + C**		capitalises letter where cursor is and moves to end of word
 
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Exiting a running command or accessing another command window
 
@@ -131,14 +52,14 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 **Ctrl + Z**		Suspends the current process (Can be bought back by typing fg)
 
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Search for text in a file (less, more)
 
 **/pattern**		Searches forward n for next N for previous
 
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 # Linux Commands
 
@@ -163,7 +84,7 @@ Command | Description
 `apropos` | search all man pages for a given keyword alias of `man -k <searchterm>`
 `man <cat number> <command>` | view a man page other than the default command man-page
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Command Line Tricks
 
@@ -176,7 +97,7 @@ Command | Description
 `!!:s/foo/bar/` |	Repeat last command substituting foo for bar
 `grep`	 | allows you to search the output for a pattern, i.e. cat /var/log/auth.log \| grep <username> 
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Finding a file
 
@@ -186,7 +107,7 @@ Command | Description
 `locate <filename>` | 	locate some filename
 `find <directory>` or `. <filename>` |	find a file in a directory or where I am with a name
  
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Reading a file
 
@@ -199,7 +120,7 @@ Command | Description
 `tail –f <filename>` |	Display the last 10 lines and follow a files as it grows (Very useful for debugging)
 `file <filename>` | Displays what kind of file it is
  
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Editing a file
 
@@ -211,7 +132,7 @@ Command | Description
 `vim <filename>`	| advanced text editor for file name
 `nano <filename>`	| basic text editor for file name
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Moving a file
 
@@ -224,7 +145,7 @@ Command | Description
 `wget http://www.webserver.com/file.txt` | downloads a text file from webserver.com	
 `git clone https://www.github.com/angry-bender/UbuntuLive.git` | Downloads a git project 	
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Deleting a file
 
@@ -234,7 +155,7 @@ Command | Description
 `rm –r <directoryname>` |	removes a directory and all sub directories
 `rm –rf <directoryname>`	| forces removal of a directory
  
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Changing Permissions on a file
 
@@ -248,7 +169,7 @@ Command | Description
 `chmod u=rwx,g=rx,o=r`	 | Changes the permissions on a file u=user,g=group,o=others r=read,w=write,x=execute
 `chgrp <group> <filename>` | change the group owner of a file or folder
  
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Comparing a file
 
@@ -256,7 +177,7 @@ Command | Description
 -------|--------
 `diff –ur <filename1> <filename2>` |	Compares the difference between two files, without –ur it will just tell us if there is a difference
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## History
 
@@ -267,7 +188,7 @@ Command | Description
 `!<number from history>`	| Executes that command from history
 **ctrl-r** | press to search the history, continue pressing to scroll one at a time through search results
  
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## System Utilities
 
@@ -297,7 +218,7 @@ Command | Description
 `zcat secure*.gz` | cats out gz log files
 `ln -s <location of link> <location of file>` | make a softlink to a file
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Networking
 
@@ -311,7 +232,7 @@ Command | Description | Order
 `ip addr add 192.168.0.3/24` dev <interfacename> |	Enter a static IP address	| 3
 `ip addr`	| verify your configuration	| 4
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ### The new legacy way (Manual Configuration)
 
@@ -323,7 +244,7 @@ Command | Description | Order
 `ifconfig <interfacename> 192.168.0.3/24 netmask 255.255.255.0`	| Enter a static IP address |	3
 `ifconfig` 	| verify your configuration	| 4
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ### Other network utilities & Troubleshooting tools
 
@@ -342,7 +263,7 @@ Command | Description
 `ip route add default via <IP>` | Add Default route
 `ss` | Netstat equivalent (`-tu` minimum info, `-put` process info, `-4put` show ipv4 only, `4punt` show ports as numbers
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Ubuntu Package Management
 
@@ -361,7 +282,7 @@ Command | Description
 `fuser -k /var/lib/apt/lists/lock`	| Tries to kill the process accessing the package lock file gracefully
 `lsof -t /var/lib/apt/lists/lock \| xargs kill -9`	| Tries to kill the process accessing the package lock file ungracefully <Use with caution>
  
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## User Management
  
@@ -379,7 +300,7 @@ Command | Description
 `echo <Username>\|<Password> \| chpassword` | Allows passwords to be scripted in bash for new users	
 `su - <username>` | switch to a new user and use their shell environment
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 # Basic Forensics Commands
 
@@ -390,15 +311,15 @@ open your `~/.bashrc`
 add the following line to the end
 
 
-![bash](https://angry-bender.github.io/img/lt/bash.png)
+![bash](/img/lt/bash.png)
 
 `alias forensicate="sort | uniq -c | sort -nr`
 
 then, after using an awk, or any method of reducing data down to a single character, pipe it to forensicate, and get your quick wins
 
-![forensicate](https://angry-bender.github.io/img/lt/forensicate.png)
+![forensicate](/img/lt/forensicate.png)
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Grep
 
@@ -406,7 +327,7 @@ then, after using an awk, or any method of reducing data down to a single charac
 
 Grep is a Linux users "Swiss Army knife" of searching for strings or patterns, think of it like your find button in notepad, but on steroids. It works by scanning each line of text in a steam or file, searching it for your pattern, then printing it to the terminal.
 
-![grepcomic](https://angry-bender.github.io/img/lt/grepcomic.jpg)
+![grepcomic](/img/lt/grepcomic.jpg)
 
 ### Working example
 
@@ -414,7 +335,7 @@ Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master
 
 In this case, we have reduced the analyst's work, by reducing a file of over 1000 lines to 58, a much easier bit of data to sort through.
 
-![grep](https://angry-bender.github.io/img/lt/grep.png)
+![grep](/img/lt/grep.png)
 
 Command | Description
 -------|--------
@@ -429,7 +350,7 @@ Command | Description
 `grep –E “e$” <filename>`| Use a Regular expression 
 `egrep ‘<pattern1>\|<pattern2>’ <filename>`| enhanced grep to search for two patterns simultaneously
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Sed
 
@@ -437,13 +358,13 @@ Command | Description
 
 Sed, is a command that is used to search and replace a string from a stream or file, without having to open it in a text editor. Think of it like the function in Microsoft word, where you have used replace to fix every instance of a typo you might have done. Similar to grep, it works by searching each line in a file for your pattern, and replaces it with something you have typed.
 
-![sedcomic](https://angry-bender.github.io/img/lt/sedcomic.jpg)
+![sedcomic](/img/lt/sedcomic.jpg)
 
 ### Working example
 
 Within forensics, I have normally used this command to replace whitespace, or spaces with comma's so we can convert it into a .csv file, to read in excel. Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) as an example.
 
-![sed](https://angry-bender.github.io/img/lt/sed.png)
+![sed](/img/lt/sed.png)
 
 Command | Description
 -------|--------
@@ -456,7 +377,7 @@ Command | Description
 `sed -e ‘s/[0-9]*/(&)/’ <filename>` |	Replaces ([0-9]) for a number of any length (*) and inserts a Bracket around them (&)
 `sed -e ‘/s/\/etc/\/etc\/ssh\/sshd_conf/’` | <filename>	Replaces /etc/ with /etc/ssh/sshd.conf
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Awk
 
@@ -472,7 +393,7 @@ Within a forensics context I have personally not seen these features used. Mainl
 
 Using [this](https://raw.githubusercontent.com/angry-bender/linuxtraining/master/access.log) example, we can see a lot of data present, that might be hard to read. Or, might need to be piped into another command like a GREP. To make analysis easier, we can reduce the file to just the relevant columns that we need. Do do this, you will need to count each of the columns by hand, and use the corresponding number in the `$<number>` within the `print` argument. Each column should be separated with a `,`. See the below example
 
-![awk](https://angry-bender.github.io/img/lt/Awk.png)
+![awk](/img/lt/Awk.png)
 
 Command | Description
 -------|--------
@@ -485,7 +406,7 @@ Command | Description
 * [Awk tutorial](#awk-tutorial)
 * [How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170](#how-to-use-tr-sed-and-aspell-linux-terminal-201---haktip-170)
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Regex Reference
 
@@ -523,7 +444,7 @@ Symbol  | Description
 `[!a-e]` | match and character not in the range
 `{linux, shell}` |	match any word in the given options
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Other useful tools
 
@@ -538,7 +459,7 @@ Command | Description
 `uniq` | Report or filter out repeated lines in a file
 `aspell check <filename>` |	spell checks a file interactively 
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 # Linux Resources
 
@@ -572,7 +493,7 @@ Command | Description
 
 <http://lists.busybox.net/pipermail/busybox/2010-December/074114.html>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Programs & Services
 
@@ -616,7 +537,7 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 
 <https://meterpreter.org/common-linux-services-list/>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Bash Usage
 
@@ -638,7 +559,7 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 
 [![](https://img.youtube.com/vi/F7Brrn-L1Zg/maxresdefault.jpg)](https://youtu.be/F7Brrn-L1Zg)
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## User Management
 
@@ -650,7 +571,7 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 
 <http://www.linfo.org/etc_passwd.html>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Text Editors
 
@@ -666,13 +587,13 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 
 <https://www.reddit.com/r/vimporn/>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Bash Scripting
 
 ### How To Setup Bash IDE
 
-You can see my post at <https://angry-bender.github.io/2020-04-30-Full_Featured_IDE_For_Bash_Scripting/>
+You can see my post at [Full Featured IDE For Bash Scripting](/blog/Full_Featured_IDE_For_Bash_Scripting "ALT TEXT")
 
 ### Internal Variables
 
@@ -709,13 +630,13 @@ variable | explanation
 
 [Basic Bash scripting for beginners (YouTube Playlist)](https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_)
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Basic Linux commands
 
 [SANS Blue team Command Line Cheat Sheet](https://wiki.sans.blue/Tools/pdfs/LinuxCLI101.pdf)
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Best troubleshooting websites
 
@@ -723,24 +644,24 @@ variable | explanation
 
 <https://askubuntu.com/>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Over the wire solutions
 
 <https://kongwenbin.wordpress.com/2016/08/02/overthewire-bandit/>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))
 
 <https://github.com/angry-bender/linuxtraining>
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
 
 ## Arch Linux Installation Fixes
 
 Change your VM to UEFI as per the screenshot below
-![VMUEFI](https://angry-bender.github.io/img/lt/vm_uefi.png)
+![VMUEFI](/img/lt/vm_uefi.png)
 
 1.I change to pacstrap /mnt base linux linux-firmware
 
@@ -750,6 +671,6 @@ Change your VM to UEFI as per the screenshot below
 
 If you use gdm, and cannot get a terminal see screenshot below from <https://unix.stackexchange.com/questions/504529/arch-gnome-terminal-timeout>
 
-![terminal_timeout](https://angry-bender.github.io/img/lt/terminal-timeout.png)
+![terminal_timeout](/img/lt/terminal-timeout.png)
 
-[*Back to table of contents*](#Table-of-Contents)
+[*Back to table of contents*](#)
