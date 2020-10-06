@@ -41,24 +41,17 @@ Command | Description
 
 ### timeline_noise.txt
 
-`Content.IE5
-
-Temporary\ Internet\ Files
-
-IETldCache
-
-PrivacIE
-
-ACPI
-
-MSIE\ Cache\ File
-
-\(\$FILE\_NAME\)
-
-THREAD
-
-DLL\ LOADTIME`
-
+`  
+Content.IE5  
+Temporary\ Internet\ Files  
+IETldCache  
+PrivacIE  
+ACPI  
+MSIE\ Cache\ File  
+\(\$FILE\_NAME\)  
+THREAD  
+DLL\ LOADTIME  
+`
 ## MFT Timeline
 
 Command | Description
@@ -72,4 +65,4 @@ Command | Description
 
 ## Hash all files, including unallocated with find on a live linux system
 
--`find . -type f -exec md5sum "{}" \; `
+-`find . -type f -exec md5sum "{}" \;`
