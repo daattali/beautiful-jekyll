@@ -6,15 +6,18 @@ tags: [dfir, vmware]
 comments: false
 ---
 
-## Introduction
+# Introduction
 I found recently during a CTF Memory image challenge, that analysing memory images from VMWare wasn't necessarily as easy as just having the right profile and files. Hopefully this helps anyone out there who needs to do the same. For this write-up I am using VMWare Workstation Pro v15.5.1.
 
+# Table-of-Contents
 <a name="TOC"></a>
-## Table of Contents
-* [TLDR](#tldr)
-* [Applicable VMWare File Types](#applicable-vmware-file-types)
-* [What I tried](#what-i-tried)
-* [Takeaway points](#takeaway-points)
+
+- [Introduction](#introduction)
+- [Table-of-Contents](#table-of-contents)
+    - [TLDR](#tldr)
+    - [Applicable VMWare File Types](#applicable-vmware-file-types)
+    - [What I tried](#what-i-tried)
+  - [Takeaway points](#takeaway-points)
 
 ### TLDR
 For volatility to work you need the vmem and vmss files. To get these files the VM needs to be powered on, then suspended.
@@ -37,6 +40,7 @@ File |	Usage |	Description
 [*Back to table of contents*](#TOC)
 
 ### What I tried
+
 First, I tried to get the vmware info with the volatility plugin, and a quick pslist with no luck
 
 ![firsttry](https://angry-bender.github.io/img/vmt/firsttry.gif)
@@ -58,6 +62,7 @@ Huzzah, now we have an image that analysts normally work with, just from copying
 [*Back to table of contents*](#TOC)
 
 ## Takeaway points
+
 So, hopefully now you know how to analyse VMWare Snapshots and Images, and the minimum files required by volatility (vmem & vmss). Also, if you need to triage VMWare memory images, you can now make a .raw file that DFIR teams will know how to workflow as normal, as long as they know the operating system for the Volatility profile
 
 [*Back to table of contents*](#TOC)

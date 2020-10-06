@@ -9,90 +9,92 @@ comments: false
 # Introduction
 These resources Have been provided for a  Linux course I have had to instruct. It contains a command cheat sheet & posts that will help basic analysts be able use and research how to use Linux.
 
+# Table-of-Contents
 <a name="Table-of-Contents"></a>
-   * [Introduction](#introduction)
-   * [Table of Contents](#table-of-contents)
-   * [Bash keyboard commands](#bash-keyboard-commands)
-      * [Moving Cursor](#moving-cursor)
-      * [Exiting a running command or accessing another command window](#exiting-a-running-command-or-accessing-another-command-window)
-      * [Search for text in a file (less, more)](#search-for-text-in-a-file-less-more)
-   * [Linux Commands](#linux-commands)
-      * [Navigating Linux](#navigating-linux)
-      * [Command Line Tricks](#command-line-tricks)
-      * [Finding a file](#finding-a-file)
-      * [Reading a file](#reading-a-file)
-      * [Editing a file](#editing-a-file)
-      * [Moving a file](#moving-a-file)
-      * [Deleting a file](#deleting-a-file)
-      * [Changing Permissions on a file](#changing-permissions-on-a-file)
-      * [Comparing a file](#comparing-a-file)
-      * [History](#history)
-      * [System Utilities](#system-utilities)
-      * [Networking](#networking)
-         * [The new systemd way (Manual Configuration)](#the-new-systemd-way-manual-configuration)
-         * [The new legacy way (Manual Configuration)](#the-new-legacy-way-manual-configuration)
-         * [Other network utilities &amp; Troubleshooting tools](#other-network-utilities--troubleshooting-tools)
-      * [Ubuntu Package Management](#ubuntu-package-management)
-      * [User Management](#user-management)
-   * [Basic Forensics Commands](#basic-forensics-commands)
-   * [Set a forensics alias.... to you know, forensicate](#set-a-forensics-alias-to-you-know-forensicate)
-      * [Grep](#grep)
-         * [Introduction &amp; Description](#introduction--description)
-         * [Working example](#working-example)
-      * [Sed](#sed)
-         * [Introduction &amp; Description](#introduction--description-1)
-         * [Working example](#working-example-1)
-      * [Awk](#awk)
-         * [Introduction &amp; Description](#introduction--description-2)
-         * [Working example](#working-example-2)
-         * [Extra tutorials](#extra-tutorials)
-      * [Regex Reference](#regex-reference)
-         * [A nice way to test your regex before using it](#a-nice-way-to-test-your-regex-before-using-it)
-         * [IP Address regex](#ip-address-regex)
-      * [Other useful tools](#other-useful-tools)
-   * [Linux Resources](#linux-resources)
-      * [Package Management](#package-management)
-         * [Tarball Example](#tarball-example)
-         * [Using Tarballs](#using-tarballs)
-      * [Linux Distributions](#linux-distributions)
-      * [Linux File systems](#linux-file-systems)
-         * [Filesystem Hierarchy Standard](#filesystem-hierarchy-standard)
-         * [Binary Directory Standards](#binary-directory-standards)
-      * [Programs &amp; Services](#programs--services)
-         * [Elf Diagram](#elf-diagram)
-         * [Process Signals](#process-signals)
-         * [Sysvinit](#sysvinit)
-            * [if you want to play with a sysvinit system](#if-you-want-to-play-with-a-sysvinit-system)
-         * [Sysvinit vs system d (Nice comparison graph)](#sysvinit-vs-system-d-nice-comparison-graph)
-         * [Init System and Daemons (Boot Process)](#init-system-and-daemons-boot-process)
-         * [Understanding the Linux Boot Process - CompTIA Linux , LPIC-1](#understanding-the-linux-boot-process---comptia-linux-lpic-1)
-         * [Common Linux Processes / Daemons](#common-linux-processes--daemons)
-      * [Bash Usage](#bash-usage)
-         * [Special Characters](#special-characters)
-         * [Grep awk and sed tutorial](#grep-awk-and-sed-tutorial)
-         * [Awk tutorial](#awk-tutorial)
-         * [How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170](#how-to-use-tr-sed-and-aspell-linux-terminal-201---haktip-170)
-      * [User Management](#user-management-1)
-         * [Home Directory Specifications](#home-directory-specifications)
-         * [Passwd file specifications](#passwd-file-specifications)
-      * [Text Editors](#text-editors)
-         * [Vim Cheat sheet for programmers](#vim-cheat-sheet-for-programmers)
-         * [Vim Plugins / Features](#vim-plugins--features)
-      * [Bash Scripting](#bash-scripting)
-         * [How To Setup Bash IDE](#how-to-setup-bash-ide)
-         * [Internal Variables](#internal-variables)
-         * [Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177](#building-a-program-with-shell-scripting-linux-terminal-201---haktip-177)
-         * [HakTip - Bash Basics: Turn Long Commands into Scripts](#haktip---bash-basics-turn-long-commands-into-scripts)
-         * [How to Write a Shell Script: Linux Terminal 201 - HakTip 175](#how-to-write-a-shell-script-linux-terminal-201---haktip-175)
-         * [How to Use Cut, Paste, and Join: Linux Terminal 201 - HakTip 168](#how-to-use-cut-paste-and-join-linux-terminal-201---haktip-168)
-      * [Basic Linux commands](#basic-linux-commands)
-      * [Best troubleshooting websites](#best-troubleshooting-websites)
-      * [Over the wire solutions](#over-the-wire-solutions)
-      * [Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))](#scripts-and-solutions-from-the-course-please-ask-the-instructor-for-the-password---also-listed-on-day-3-slides--you-may-need-7zip-to-decrypt)
-      * [Arch Linux Installation Fixes](#arch-linux-installation-fixes)
+- [Introduction](#introduction)
+- [Table-of-Contents](#table-of-contents)
+- [Bash keyboard commands](#bash-keyboard-commands)
+  - [Moving Cursor](#moving-cursor)
+  - [Exiting a running command or accessing another command window](#exiting-a-running-command-or-accessing-another-command-window)
+  - [Search for text in a file (less, more)](#search-for-text-in-a-file-less-more)
+- [Linux Commands](#linux-commands)
+  - [Navigating Linux](#navigating-linux)
+  - [Command Line Tricks](#command-line-tricks)
+  - [Finding a file](#finding-a-file)
+  - [Reading a file](#reading-a-file)
+  - [Editing a file](#editing-a-file)
+  - [Moving a file](#moving-a-file)
+  - [Deleting a file](#deleting-a-file)
+  - [Changing Permissions on a file](#changing-permissions-on-a-file)
+  - [Comparing a file](#comparing-a-file)
+  - [History](#history)
+  - [System Utilities](#system-utilities)
+  - [Networking](#networking)
+    - [The new systemd way (Manual Configuration)](#the-new-systemd-way-manual-configuration)
+    - [The new legacy way (Manual Configuration)](#the-new-legacy-way-manual-configuration)
+    - [Other network utilities & Troubleshooting tools](#other-network-utilities--troubleshooting-tools)
+  - [Ubuntu Package Management](#ubuntu-package-management)
+  - [User Management](#user-management)
+- [Basic Forensics Commands](#basic-forensics-commands)
+- [Set a forensics alias.... to you know, forensicate](#set-a-forensics-alias-to-you-know-forensicate)
+  - [Grep](#grep)
+    - [Introduction & Description](#introduction--description)
+    - [Working example](#working-example)
+  - [Sed](#sed)
+    - [Introduction & Description](#introduction--description-1)
+    - [Working example](#working-example-1)
+  - [Awk](#awk)
+    - [Introduction & Description](#introduction--description-2)
+    - [Working example](#working-example-2)
+    - [Extra tutorials](#extra-tutorials)
+  - [Regex Reference](#regex-reference)
+    - [A nice way to test your regex before using it](#a-nice-way-to-test-your-regex-before-using-it)
+    - [IP Address regex](#ip-address-regex)
+  - [Other useful tools](#other-useful-tools)
+- [Linux Resources](#linux-resources)
+  - [Package Management](#package-management)
+    - [Tarball Example](#tarball-example)
+    - [Using Tarballs](#using-tarballs)
+  - [Linux Distributions](#linux-distributions)
+  - [Linux File systems](#linux-file-systems)
+    - [Filesystem Hierarchy Standard](#filesystem-hierarchy-standard)
+    - [Binary Directory Standards](#binary-directory-standards)
+  - [Programs & Services](#programs--services)
+    - [Elf Diagram](#elf-diagram)
+    - [Process Signals](#process-signals)
+    - [Sysvinit](#sysvinit)
+      - [if you want to play with a sysvinit system](#if-you-want-to-play-with-a-sysvinit-system)
+    - [Sysvinit vs system d (Nice comparison graph)](#sysvinit-vs-system-d-nice-comparison-graph)
+    - [Init System and Daemons (Boot Process)](#init-system-and-daemons-boot-process)
+    - [Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1](#understanding-the-linux-boot-process---comptia-linux-lpic-1)
+    - [Common Linux Processes / Daemons](#common-linux-processes--daemons)
+  - [Bash Usage](#bash-usage)
+    - [Special Characters](#special-characters)
+    - [Grep awk and sed tutorial](#grep-awk-and-sed-tutorial)
+    - [Awk tutorial](#awk-tutorial)
+    - [How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170](#how-to-use-tr-sed-and-aspell-linux-terminal-201---haktip-170)
+  - [User Management](#user-management-1)
+    - [Home Directory Specifications](#home-directory-specifications)
+    - [Passwd file specifications](#passwd-file-specifications)
+  - [Text Editors](#text-editors)
+    - [Vim Cheat sheet for programmers](#vim-cheat-sheet-for-programmers)
+    - [Vim Plugins / Features](#vim-plugins--features)
+  - [Bash Scripting](#bash-scripting)
+    - [How To Setup Bash IDE](#how-to-setup-bash-ide)
+    - [Internal Variables](#internal-variables)
+    - [Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177](#building-a-program-with-shell-scripting-linux-terminal-201---haktip-177)
+    - [HakTip - Bash Basics: Turn Long Commands into Scripts](#haktip---bash-basics-turn-long-commands-into-scripts)
+    - [How to Write a Shell Script: Linux Terminal 201 - HakTip 175](#how-to-write-a-shell-script-linux-terminal-201---haktip-175)
+    - [How to Use Cut, Paste, and Join: Linux Terminal 201 - HakTip 168](#how-to-use-cut-paste-and-join-linux-terminal-201---haktip-168)
+  - [Basic Linux commands](#basic-linux-commands)
+  - [Best troubleshooting websites](#best-troubleshooting-websites)
+  - [Over the wire solutions](#over-the-wire-solutions)
+  - [Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))](#scripts-and-solutions-from-the-course-please-ask-the-instructor-for-the-password---also-listed-on-day-3-slides-you-may-need-7zip-to-decrypt)
+  - [Arch Linux Installation Fixes](#arch-linux-installation-fixes)
 
 
 # Bash keyboard commands
+
 The mouse won’t work, use the left/right arrow keys to move around the line.
 
 When the cursor is where you want it in the line, typing inserts text – i.e. it doesn’t always over-type what’s already there.
@@ -100,6 +102,7 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Moving Cursor
+
 **Ctrl + A** or Home	Moves the cursor to the Start of a line.
 
 **Ctrl + E** or End		Moves the cursor to the End of a line.
@@ -140,6 +143,7 @@ When the cursor is where you want it in the line, typing inserts text – i.e. i
 [*Back to table of contents*](#Table-of-Contents)
 
 # Linux Commands
+
 ## Navigating Linux
 
 Command | Description
@@ -147,7 +151,7 @@ Command | Description
 `pwd`	| Where am I
 `whoami`	| who am I
 `id	`| list my user and groups
-`ls –al `|	What is in the location
+`ls –al`|	What is in the location
 `cd <Directory Name>` | change directory 
 `cd ~` | change to home directory
 `cd ..` | change up a directory
@@ -156,7 +160,7 @@ Command | Description
 `who` | Who is logged onto and what is there session
 `cat /etc/*release*` | System information
 `uname -r` | System information
-`man <command> ` | Traditional UNIX era help system
+`man <command>` | Traditional UNIX era help system
 `info <command>` | GNU projects helps system, typically more comprehensive, not installed by default
 `apropos` | search all man pages for a given keyword alias of `man -k <searchterm>`
 `man <cat number> <command>` | view a man page other than the default command man-page
@@ -168,7 +172,7 @@ Command | Description
 Command | Description
 -------|--------
 `History`	| lists command history
-`!<number from history>`	| Executes that command from history
+`!<number from history>`   | Executes that command from history
 `!<string>` |	Repeat last command that started with <string>
 `!?<string>` |	Repeat last command that has sub-string <string>
 `!!:s/foo/bar/` |	Repeat last command substituting foo for bar
@@ -228,13 +232,14 @@ Command | Description
 
 Command | Description
 -------|--------
-`rm <filename>	`| removes a filename
+`rm <filename>`| removes a filename
 `rm –r <directoryname>` |	removes a directory and all sub directories
 `rm –rf <directoryname>`	| forces removal of a directory
  
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Changing Permissions on a file
+
 ![permissions](https://2.bp.blogspot.com/-V2eWUJugBJ0/Ui4Y1TJ45aI/AAAAAAAAAzQ/gwxcb-GlTGA/s1600/chmod4.png)
 ![usergroupother](https://www.booleanworld.com/wp-content/uploads/2018/04/classes.png)
 
@@ -260,7 +265,7 @@ Command | Description
 Command | Description
 -------|--------
 `History` |	lists command history
-`History 5 `| Lists the 5 previous commands
+`History 5`| Lists the 5 previous commands
 `!<number from history>`	| Executes that command from history
 **ctrl-r** | press to search the history, continue pressing to scroll one at a time through search results
  
@@ -270,7 +275,7 @@ Command | Description
 
 Command | Description
 -------|--------
-`fdisk –l `|	Lists disks and partitions
+`fdisk –l`|	Lists disks and partitions
 `df`	| Lists the mount points for inserted disks
 `ps –aux` (Old way) `ps -elf` (New Way) |	Lists the running processes
 `ps -lfu` | lists processes started by a user
@@ -282,7 +287,7 @@ Command | Description
 `systemctl list-unit-files --state=enabled` | list startup services
 `journalctl –r`	| View the system log from the most recent entry, to start from the oldest entry use no –r (can be the same as cat /var/log/syslog
 `journalctl -u <servicename>`	| View logs about a particular service
-`journalctl -k `	| View only kernel messages
+`journalctl -k`	| View only kernel messages
 `journalctl -f`	| follow messages as they appear
 `sudo mount <device> <directory>`	| mount a hard drive or USB
 `systemctl <disable / enable> <service>`	| enable or disable a system service on startup
@@ -314,7 +319,7 @@ Command | Description | Order
 
 Command | Description | Order
 -------|--------|------
-`ifconfig	`|List your interfaces or addresses	| 1
+`ifconfig`|List your interfaces or addresses	| 1
 `ifconfig <interfacename> up`	| Set the interface to be up	| 2
 `ifconfig <interfacename> 0.0.0.0 0.0.0.0 && dhclient`	| get a DHCP address |	3
 `ifconfig <interfacename> 192.168.0.3/24 netmask 255.255.255.0`	| Enter a static IP address |	3
@@ -346,7 +351,7 @@ Command | Description
 Command | Description
 -------|--------
 `apt install <packagename>` |	Installs a package
-`apt remove <packagename>	`| Removes a package
+`apt remove <packagename>`| Removes a package
 `apt purge <packagename>`	| Removes a package and all its configuration
 `apt update`	| Updates the package lists
 `apt upgrade`	| Upgrades packages
@@ -354,7 +359,7 @@ Command | Description
 `apt list --installed` |	List installed packages
 `dpkg –i <packagename>`	| install a package from a <.deb> file
 `dpkg –r <packagename>`	| remove a package installed by <.deb> file
-`dpkg --list	` | list all installed packages
+`dpkg --list` | list all installed packages
 `fuser -k /var/lib/apt/lists/lock`	| Tries to kill the process accessing the package lock file gracefully
 `lsof -t /var/lib/apt/lists/lock \| xargs kill -9`	| Tries to kill the process accessing the package lock file ungracefully <Use with caution>
  
@@ -373,7 +378,7 @@ Command | Description
 `passwd <username>` | change a users password
 `cat /etc/group` |	List groups on system	
 `cat /etc/passwd`	| List users on system	
-`echo <Username>\|<Password> \| chpassword	` | Allows passwords to be scripted in bash for new users	
+`echo <Username>\|<Password> \| chpassword` | Allows passwords to be scripted in bash for new users	
 `su - <username>` | switch to a new user and use their shell environment
 
 [*Back to table of contents*](#Table-of-Contents)
@@ -381,6 +386,7 @@ Command | Description
 # Basic Forensics Commands
 
 # Set a forensics alias.... to you know, forensicate
+
 open your `~/.bashrc`
 
 add the following line to the end
@@ -420,10 +426,10 @@ Command | Description
 `grep –c “boo” <filename>`| 	prints how many times <string> is present
 `grep –l “boo” *`|	prints filenames that contain boo
 `grep –i  “BOO”  <filename>`|	ignores case
-`grep –x “boo”  <filename>	`| Exact Matches
-`grep –A2 “aara” <filename> `|	Prints extra lines for Context
-`grep –E “e$” <filename>	`| Use a Regular expression 
-`egrep ‘<pattern1>\|<pattern2>’ <filename>	`| enhanced grep to search for two patterns simultaneously
+`grep –x “boo”  <filename>`| Exact Matches
+`grep –A2 “aara” <filename>`|	Prints extra lines for Context
+`grep –E “e$” <filename>`| Use a Regular expression 
+`egrep ‘<pattern1>\|<pattern2>’ <filename>`| enhanced grep to search for two patterns simultaneously
 
 [*Back to table of contents*](#Table-of-Contents)
 
@@ -486,6 +492,7 @@ Command | Description
 ## Regex Reference
 
 ### A nice way to test your regex before using it
+
 <https://regexr.com/>
 
 <https://regex101.com/>
@@ -504,12 +511,12 @@ Credit <https://www.shellhacks.com/regex-find-ip-addresses-file-grep/>
 
 Symbol  | Description
 -------|--------
-`. `	| replaces any character 
+`.`	| replaces any character 
 `^` 	| matches start of string 
-`$ `	| matches end of string 
+`$`	| matches end of string 
 `*` |	matches up zero or more times the preceding character 
 `\` | 	Represent special characters 
-`() `	| Groups regular expressions 
+`()`	| Groups regular expressions 
 `?` |	Matches up exactly one character 
 `|` | 	One OR another character / string I.E boot\|boots
 `[abcde]`	| Match any of the listed characters
@@ -530,65 +537,83 @@ Command | Description
 `paste`	| Inserts Sections into each line of files
 `join`	| Join files together
 `sort`	| Sort a file by a five order
-`uniq ` | Report or filter out repeated lines in a file
+`uniq` | Report or filter out repeated lines in a file
 `aspell check <filename>` |	spell checks a file interactively 
 
 [*Back to table of contents*](#Table-of-Contents)
 
 # Linux Resources
+
 ## Package Management
+
 ### Tarball Example
-<ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/9.1> 
+
+<ftp://ftp.lfs-matrix.net/pub/lfs/lfs-packages/9.1>
+
 ### Using Tarballs
+
 <https://www.tldp.org/HOWTO/Software-Building-HOWTO-3.html>
 
 ## Linux Distributions
+
 <https://en.wikipedia.org/wiki/Comparison_of_Linux_distributions>
 
 <https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg>
 
 ## Linux File systems
+
 <https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel>
 
 ### Filesystem Hierarchy Standard
+
 <http://www.pathname.com/fhs>
 
 <https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>
 
 ### Binary Directory Standards
+
 <http://lists.busybox.net/pipermail/busybox/2010-December/074114.html>
 
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Programs & Services
+
 ### Elf Diagram
+
 ![ELF Diagram](https://upload.wikimedia.org/wikipedia/commons/e/e4/ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)
 
 ### Process Signals
+
 <https://linux.die.net/man/7/signal>
 
 <https://www.bogotobogo.com/Linux/linux_process_and_signals.php>
 
 ### Sysvinit
+
 <https://www.oreilly.com/library/view/essential-system-administration/0596003439/ch04s02.html>
 
 <https://wiki.gentoo.org/wiki/Sysvinit>
 
 #### if you want to play with a sysvinit system
+
 http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-LiveDVD.iso
 
 ### Sysvinit vs system d (Nice comparison graph)
+
 <https://access.redhat.com/articles/1189123>
 
 ### Init System and Daemons (Boot Process)
+
 <https://opensource.com/article/17/2/linux-boot-and-startup>
 
 <https://www.golinuxcloud.com/beginners-guide-systemd-tutorial-linux/>
 
 ### Understanding the Linux Boot Process - CompTIA Linux+, LPIC-1
+
 [![](https://img.youtube.com/vi/mHB0Z-HUauo/maxresdefault.jpg)](https://youtu.be/mHB0Z-HUauo)
 
 ### Common Linux Processes / Daemons
+
 <https://www.techrepublic.com/article/linux-101-a-comprehensive-list-of-available-linux-services/>
 
 <https://meterpreter.org/common-linux-services-list/>
@@ -598,26 +623,33 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 ## Bash Usage
 
 ### Special Characters
+
 <https://docstore.mik.ua/orelly/unix/upt/ch08_19.htm>
 
 <https://mywiki.wooledge.org/BashGuide/SpecialCharacters>
 
 ### Grep awk and sed tutorial
+
 <https://www-users.york.ac.uk/~mijp1/teaching/2nd_year_Comp_Lab/guides/grep_awk_sed.pdf>
 
 ### Awk tutorial
+
 <https://www.tutorialspoint.com/awk/index.htm>
 
 ### How to Use tr, sed, and aspell: Linux Terminal 201 - HakTip 170
+
 [![](https://img.youtube.com/vi/F7Brrn-L1Zg/maxresdefault.jpg)](https://youtu.be/F7Brrn-L1Zg)
 
 [*Back to table of contents*](#Table-of-Contents)
 
 ## User Management
+
 ### Home Directory Specifications
+
 <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>
 
 ### Passwd file specifications
+
 <http://www.linfo.org/etc_passwd.html>
 
 [*Back to table of contents*](#Table-of-Contents)
@@ -625,9 +657,11 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 ## Text Editors
 
 ### Vim Cheat sheet for programmers
+
 ![vim cheatsheet](http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_print.png)
 
 ### Vim Plugins / Features
+
 <http://codyveal.com/posts/vim-killer-features-part-1-text-objects/>
 
 <https://vimawesome.com>
@@ -637,11 +671,13 @@ http://ftp.iij.ad.jp/pub/linux/centos-vault/6.0/isos/x86_64/CentOS-6.0-x86_64-Li
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Bash Scripting
+
 ### How To Setup Bash IDE
 
 You can see my post at <https://angry-bender.github.io/2020-04-30-Full_Featured_IDE_For_Bash_Scripting/>
 
 ### Internal Variables
+
 you can use `printenv` or for shell scripting the following may be useful
 <https://www.tldp.org/LDP/abs/html/internalvariables.html>
 
@@ -651,19 +687,23 @@ variable | explanation
 ----- | -----
 ` $? ` | Used for capturing the last processes exit code
 `$EUID` | Captures the user id that started the script, useful for checking sudo UID 0
-`$SUDO_USER ` | Captures the username that started a bash script
-`$PWD ` | present working directory, saves using `$(pwd)`
+`$SUDO_USER` | Captures the username that started a bash script
+`$PWD` | present working directory, saves using `$(pwd)`
 
 ### Building a Program With Shell Scripting!: Linux Terminal 201 - HakTip 177
+
 [![](https://img.youtube.com/vi/hdcQlmW70KQ/maxresdefault.jpg)](https://youtu.be/hdcQlmW70KQ)
 
 ### HakTip - Bash Basics: Turn Long Commands into Scripts
+
 [![](https://img.youtube.com/vi/WBzF1hY0VY8/maxresdefault.jpg)](https://youtu.be/WBzF1hY0VY8)
 
 ### How to Write a Shell Script: Linux Terminal 201 - HakTip 175
+
 [![](https://img.youtube.com/vi/hdcQlmW70KQ/maxresdefault.jpg)](https://youtu.be/hdcQlmW70KQ)
 
 ### How to Use Cut, Paste, and Join: Linux Terminal 201 - HakTip 168
+
 [![](https://img.youtube.com/vi/k014CkDmB2A/maxresdefault.jpg)](https://youtu.be/k014CkDmB2A)
 
 
@@ -680,6 +720,7 @@ variable | explanation
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Best troubleshooting websites
+
 <https://wiki.archlinux.org/>
 
 <https://askubuntu.com/>
@@ -687,11 +728,13 @@ variable | explanation
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Over the wire solutions
+
 <https://kongwenbin.wordpress.com/2016/08/02/overthewire-bandit/>
 
 [*Back to table of contents*](#Table-of-Contents)
 
 ## Scripts and Solutions from the course (Please ask the instructor for the password - Also listed on Day 3 slides  (You may need 7zip to decrypt))
+
 <https://github.com/angry-bender/linuxtraining>
 
 [*Back to table of contents*](#Table-of-Contents)
