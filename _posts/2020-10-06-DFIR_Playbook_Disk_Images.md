@@ -11,7 +11,6 @@ header:
 
 
 # Introduction
-
 This post aims to replicate my physical playbook on Disk Images and includes the following tools
 
     - The SleuthKit(TSK)
