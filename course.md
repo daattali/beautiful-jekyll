@@ -10,7 +10,7 @@ share-img: ''
 ---
 _The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
 
-Launch date TBD (late October). 
+Launch date TBD (late October).
 
 #### COURSE DESCRIPTION
 
@@ -24,27 +24,27 @@ This is NOT a one size fits all course. It’s also not a one-time solution cour
 
 SETTING THE STAGE  
 Unit Discovering your priorities + values  
-Unit Habits  
-   
+Unit Habits
+
 DECLUTTERING  
 Unit General decluttering concepts  
 Unit Wardrobes/clothing  
 Unit Kids' stuff  
-Unit Maintenance decluttering  
-   
+Unit Maintenance decluttering
+
 TIME MANAGEMENT  
 Unit Finding extra time tips  
-Unit Sustainable, slow productivity   
-   
+Unit Sustainable, slow productivity
+
 PLANNING
 
 Unit Simplifying your to do list  
-Unit Planning strategies: autopilot/automate, loop planning  
-  
+Unit Planning strategies: autopilot/automate, loop planning
+
 ROUTINES  
 Unit Daily routines  
-Unit Cleaning and tidying routines  
-  
+Unit Cleaning and tidying routines
+
 GOAL SETTING + MINDSET
 
 _What you will find in this course:_
@@ -57,7 +57,7 @@ _What you will find in this course:_
 
 Go at your own pace or follow along live (recommended). Community engagement posts to share our journey with one another. You’ll have access to this course afterwards forever too. Signing up for round one? YOU GET ACCESS TO ANY FUTURE UPDATE OF THE COURSE CONTENT TOO!
 
-LINK TO APPLY
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdW98wCbIUsUbv4EPGEZ5PJFwwgL2hm5wZr6gOIMX6g-qM3Iw/viewform?embedded=true" width="640" height="633" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>Y
 
 The introductory rate has a one time payment of $30 (CAD, less USD) or split into two payments of $15. We can chat about payment methods after your application is received.
 
