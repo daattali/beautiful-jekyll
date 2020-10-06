@@ -2,7 +2,7 @@
 layout: post
 title: Basic Linux Resources (V2.1)
 subtitle: The resources I used to help make a basic Linux course.
-tags: [sysadmin, Linux]
+tags: [sysadmin, linux]
 comments: false
 ---
 
