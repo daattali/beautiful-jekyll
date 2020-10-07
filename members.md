@@ -30,57 +30,94 @@ members:
           - name: Wenxuan Zhou
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/07/zhou_wenxuan_2019_1.jpg
             web_url: https://www.ri.cmu.edu/ri-people/wenxuan-zhou/
-      - name: Master students
+          - name: Ben Eisner
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/07/Eisner_Benjamin_2020.png
+            web_url: http://beisner.me/
+      - name: Masters students
         full: true
         list:
-          - name: Gautham Narayan Narasimhan
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
-          - name: Sujay Bajrachaya
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/sujay-bajracharya/
-          - name: Qiao Gu
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg
-            web_url: https://www.ri.cmu.edu/ri-people/qiao-gu/
-          - name: Harshit Sikchi
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
-            web_url: https://hari-sikchi.github.io/
-          - name: Yufei Wang
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
-            web_url: https://yufeiwang63.github.io/
-          - name: Himangi Mittal
+          - name: Himangi Mittal (MSCV)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: https://www.ri.cmu.edu/ri-people/himangi-mittal/
-          - name: Jianren Wang
+          - name: Jianren Wang (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: https://jianrenw.github.io/
-      - name: Visiting Students
+          - name: Sujay Bajrachaya (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/bajracharya_sujay_2019_2.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/sujay-bajracharya/
+          - name: Qiao Gu (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/08/gu_qiao_2019_1.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/qiao-gu/
+          - name: Gautham Narayan Narasimhan (MS MechE)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
+          - name: Harshit Sikchi (MSCS)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: https://hari-sikchi.github.io/
+          - name: Yufei Wang (MSCS)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: https://yufeiwang63.github.io/
+          - name: Gaurav Pathak (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/gaurav-pathak/
+          - name: Ji Liu (MSCV)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/liu_ji_2019_2.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/ji-liu/
+          - name: Arpit Jangid (MSCV)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/jangid_arpit_2019_2.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/arpit-jangid/
+          - name: Zhenli Zhang (MSCV)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2019/07/zhang_zhenli_2019_1.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/zhenli-zhang/
+          - name: Zixuan Huang (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/huang_zixuan_2020.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/zixuan-huang/
+          - name: Zipeng Fu (MSML)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            web_url: https://markfzp.github.io/
+          - name: Chuer Pan (MSR)
+            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/pan_chu-er_2020.jpg
+            web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/
+      - name: Undergraduate Students
         full: false
         list:
-          - name: Khush Agrawal (RISS)
-            web_url: https://khush3.github.io/
-          - name: Rohan Chacko
-            web_url: https://rohanchacko.github.io/
-          - name: Shubham Sahoo
-            web_url: https://www.scs.cmu.edu/directory/ssahoo2
+          - name: Rashmi Anil
+      #- name: Visiting Students
+      #  full: false
+       # list:
   - name: Alumni
     list:
       - name: Master's students
         full: False
         list:
+          - name: Pengsheng Guo (MSCV)
+            web_url: https://www.ri.cmu.edu/ri-people/pengsheng-guo/
           - name: Jianing (Aurora) Qian (MSR)
             web_url: https://www.ri.cmu.edu/ri-people/jianing-qian/
-          - name: Junyu Nan (MSCV)
+          - name: Junyu (Jenny) Nan (MSR)
             web_url: https://www.ri.cmu.edu/ri-people/junyu-nan/
+          - name: Edward Ahn (MSR)
+            web_url: https://www.ri.cmu.edu/ri-people/edward-ahn/
+          - name: Mengyun (Olivia) Xu (MSCS)
+            web_url: https://www.linkedin.com/in/mengyun-olivia-xu-36a7ab126
       - name: Undergraduate students
         full: False
         list:
           - name: Jake Olkin
+          - name: Patrick Liu
       - name: Visiting students
         full: False
         list:
+          - name: Wen-Hsuan Chu
+          - name: Akshay Dharmavaram
+          - name: Yifan Qiao
+          - name: Tiancheng Jin
+          - name: Stephanie Milani
+          - name: Shubham Sahoo
+          - name: Rohan Chacko
+          - name: Khush Agrawal (RISS)
           - name: Yimin Tang (RISS)
-          - name: Ziwen Zhuang (RISS)
+          - name: Ziwen (Leo) Zhuang (RISS)
           - name: Zhaoyuan (Andy) Fang
           - name: Yujie Lu
           - name: Amith Pallankize
