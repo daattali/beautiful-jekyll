@@ -21,6 +21,9 @@ subtitle: ''
 
 ## Courses
 
+* MY FIRST COURSE! Launching late October: [_The Simplify Your Life At Home: a course for busy moms_](www.eastcoastkelly.com/course)
+
+  ![](/uploads/20201006_142440_0000_compress75.jpg)
 * Simplify your Instagram: A course I took recently that I LOVE. Erica gives it to you straight. I really enjoy how she lays things out for simply and doesn’t hold anything back: [How to Grow Your Instagram Account Organically](https://digital.mombreak.ca/howigrewmyinstagram/26mcq)
 
 ## Books
