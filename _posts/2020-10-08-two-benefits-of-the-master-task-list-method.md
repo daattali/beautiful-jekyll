@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Two Benefits of the Master Task List Method '
-subtitle: "...a fun planning method"
+subtitle: "...a helpful planning method"
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20200916_095240631-1-_compress16.jpg"
 share-img: ''
