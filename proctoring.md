@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Parent Volunteers
-subtitle: Proctoring coaching sessions in Teams
+title: Procto Instructions
+subtitle: Proctoring coaching sessions in Microsoft Teams
 ---
 
-1. Arrive in [our Microsoft Teams channel](https://teams.microsoft.com/l/channel/19%3a732a7f9358af4a37affd3f56a592fbee%40thread.tacv2/General?groupId=1820c33d-ed0b-4685-9f38-c1b24c841dad&tenantId=f2d61132-f6d6-42d2-b97f-caa2960fb0f7) by 2:45PM.
+1. Arrive in <a href="https://teams.microsoft.com/l/channel/19%3a732a7f9358af4a37affd3f56a592fbee%40thread.tacv2/General?groupId=1820c33d-ed0b-4685-9f38-c1b24c841dad&tenantId=f2d61132-f6d6-42d2-b97f-caa2960fb0f7" target="_blank">our Microsoft Teams channel</a> by 2:45PM.
 
 1. Click **Meet** to begin the meeting.
 
