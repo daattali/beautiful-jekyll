@@ -10,7 +10,7 @@ share-img: ''
 ---
 _The Simplify Your Life At Home: a course for busy moms_ is a six week interactive course.
 
-Launch date TBD (late October).
+Launch date October 26th!
 
 #### COURSE DESCRIPTION
 
