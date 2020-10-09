@@ -25,6 +25,7 @@ navbar-links:
     - Schedule & Homework: "schedule"
     - Coaches: "coaches"
     - Parents: "parents"
+    - Proctoring: "proctoring"
     - Sample Team Practice Schedule: "team-practice"
   Competitions:
     - Schedule: "competitions"
