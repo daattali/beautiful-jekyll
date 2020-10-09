@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Procto Instructions
+title: Proctor Instructions
 subtitle: Proctoring coaching sessions in Microsoft Teams
 ---
 
