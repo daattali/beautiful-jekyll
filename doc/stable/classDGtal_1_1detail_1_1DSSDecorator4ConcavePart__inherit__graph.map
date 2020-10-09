@@ -1,4 +1,4 @@
 <map id="DGtal::detail::DSSDecorator4ConcavePart&lt; TDSS &gt;" name="DGtal::detail::DSSDecorator4ConcavePart&lt; TDSS &gt;">
-<area shape="rect" id="node1" title="Aim: adapter for TDSS used by FP in CONCAVE parts. Has 2 methods:" alt="" coords="5,92,201,131"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1DSSDecorator.html" title="Aim: Abstract DSSDecorator for ArithmeticalDSSComputer. Has 2 virtual methods returning the first and..." alt="" coords="9,5,197,44"/>
+<area shape="rect" id="node1" title="Aim: adapter for TDSS used by FP in CONCAVE parts. Has 2 methods:" alt="" coords="5,95,200,136"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1detail_1_1DSSDecorator.html" title="Aim: Abstract DSSDecorator for ArithmeticalDSSComputer. Has 2 virtual methods returning the first and..." alt="" coords="9,5,197,47"/>
 </map>

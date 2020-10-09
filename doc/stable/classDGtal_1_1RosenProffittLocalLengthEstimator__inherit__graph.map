@@ -1,4 +1,4 @@
 <map id="DGtal::RosenProffittLocalLengthEstimator&lt; TConstIterator &gt;" name="DGtal::RosenProffittLocalLengthEstimator&lt; TConstIterator &gt;">
-<area shape="rect" id="node1" title="Aim: Rosen&#45;Proffitt Length Estimator." alt="" coords="5,92,232,131"/>
-<area shape="rect" id="node2" href="$classDGtal_1_1TwoStepLocalLengthEstimator.html" title="Aim: a simple model of CGlobalCurveEstimator that compute the length of a curve using the l_1 metric ..." alt="" coords="25,5,212,44"/>
+<area shape="rect" id="node1" title="Aim: Rosen&#45;Proffitt Length Estimator." alt="" coords="5,95,231,136"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1TwoStepLocalLengthEstimator.html" title="Aim: a simple model of CGlobalCurveEstimator that compute the length of a curve using the l_1 metric ..." alt="" coords="25,5,211,47"/>
 </map>

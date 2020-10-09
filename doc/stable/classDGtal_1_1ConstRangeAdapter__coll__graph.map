@@ -1,4 +1,0 @@
-<map id="DGtal::ConstRangeAdapter&lt; TIterator, TFunctor, TReturnType &gt;" name="DGtal::ConstRangeAdapter&lt; TIterator, TFunctor, TReturnType &gt;">
-<area shape="rect" id="node1" title="Aim: model of CConstBidirectionalRange that adapts any range of elements bounded by two iterators [it..." alt="" coords="5,105,189,157"/>
-<area shape="rect" id="node2" title=" " alt="" coords="61,5,133,31"/>
-</map>

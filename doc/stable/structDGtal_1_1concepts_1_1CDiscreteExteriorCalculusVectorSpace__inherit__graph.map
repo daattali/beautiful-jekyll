@@ -1,5 +1,5 @@
 <map id="DGtal::concepts::CDiscreteExteriorCalculusVectorSpace&lt; T &gt;" name="DGtal::concepts::CDiscreteExteriorCalculusVectorSpace&lt; T &gt;">
-<area shape="rect" id="node1" title="Aim: Lift linear algebra container concept into the dec package." alt="" coords="5,165,230,204"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure." alt="" coords="32,79,203,117"/>
-<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="39,5,196,31"/>
+<area shape="rect" id="node1" title="Aim: Lift linear algebra container concept into the dec package." alt="" coords="5,169,231,211"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CVectorSpace.html" title="Aim: Base concept for vector space structure." alt="" coords="31,80,205,121"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="39,5,197,32"/>
 </map>

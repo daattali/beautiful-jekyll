@@ -1,5 +1,5 @@
 <map id="LibBoard::TransformTikZ" name="LibBoard::TransformTikZ">
-<area shape="rect" id="node1" title="Structure representing a scaling and translation suitable for an TikZ output." alt="" coords="7,152,175,177"/>
-<area shape="rect" id="node2" href="$structLibBoard_1_1TransformSVG.html" title="Structure representing a scaling and translation suitable for an SVG output." alt="" coords="5,79,176,104"/>
-<area shape="rect" id="node3" href="$structLibBoard_1_1Transform.html" title="base class for transforms." alt="" coords="19,5,162,31"/>
+<area shape="rect" id="node1" title="Structure representing a scaling and translation suitable for an TikZ output." alt="" coords="6,155,173,181"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1TransformSVG.html" title="Structure representing a scaling and translation suitable for an SVG output." alt="" coords="5,80,173,107"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Transform.html" title="base class for transforms." alt="" coords="19,5,159,32"/>
 </map>

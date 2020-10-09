@@ -1,0 +1,52 @@
+<map id="exampleSurfaceMesh.cpp" name="exampleSurfaceMesh.cpp">
+<area shape="rect" id="node1" title="An example file for SurfaceMesh in 3D." alt="" coords="1563,5,1736,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="231,1004,286,1031"/>
+<area shape="rect" id="node3" title=" " alt="" coords="3039,1004,3111,1031"/>
+<area shape="rect" id="node4" title=" " alt="" coords="875,87,941,114"/>
+<area shape="rect" id="node5" href="$Common_8h_source.html" title=" " alt="" coords="2210,691,2366,717"/>
+<area shape="rect" id="node25" href="$Color_8h_source.html" title=" " alt="" coords="1336,855,1451,881"/>
+<area shape="rect" id="node28" href="$StdDefs_8h_source.html" title=" " alt="" coords="2648,244,2813,271"/>
+<area shape="rect" id="node41" title=" " alt="" coords="1331,87,1461,114"/>
+<area shape="rect" id="node42" href="$Mesh_8h_source.html" title=" " alt="" coords="1621,326,1771,353"/>
+<area shape="rect" id="node43" href="$SurfaceMesh_8h_source.html" title=" " alt="" coords="1620,169,1815,196"/>
+<area shape="rect" id="node44" href="$SurfaceMeshHelper_8h_source.html" title=" " alt="" coords="1991,80,2174,121"/>
+<area shape="rect" id="node45" href="$MeshHelpers_8h_source.html" title=" " alt="" coords="1485,87,1680,114"/>
+<area shape="rect" id="node46" href="$BreadthFirstVisitor_8h_source.html" title=" " alt="" coords="1142,497,1309,539"/>
+<area shape="rect" id="node47" href="$SurfaceMeshReader_8h_source.html" title=" " alt="" coords="2198,80,2365,121"/>
+<area shape="rect" id="node48" href="$SurfaceMeshWriter_8h_source.html" title=" " alt="" coords="1144,80,1307,121"/>
+<area shape="rect" id="node49" href="$Viewer3D_8h_source.html" title=" " alt="" coords="3794,326,3985,353"/>
+<area shape="rect" id="node50" href="$GradientColorMap_8h_source.html" title=" " alt="" coords="1077,594,1219,635"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1533,773,1611,799"/>
+<area shape="rect" id="node7" title=" " alt="" coords="3403,929,3477,956"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1636,773,1761,799"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1785,773,1956,799"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1981,773,2139,799"/>
+<area shape="rect" id="node11" title=" " alt="" coords="2163,773,2333,799"/>
+<area shape="rect" id="node12" title=" " alt="" coords="2357,773,2536,799"/>
+<area shape="rect" id="node13" title=" " alt="" coords="2561,765,2703,807"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2727,773,2921,799"/>
+<area shape="rect" id="node15" title=" " alt="" coords="3488,855,3547,881"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2945,773,3007,799"/>
+<area shape="rect" id="node17" href="$Config_8h_source.html" title=" " alt="" coords="715,929,856,956"/>
+<area shape="rect" id="node18" href="$Trace_8h_source.html" title=" " alt="" coords="551,773,687,799"/>
+<area shape="rect" id="node19" href="$TraceWriterTerm_8h_source.html" title=" " alt="" coords="707,855,906,881"/>
+<area shape="rect" id="node20" href="$Assert_8h_source.html" title=" " alt="" coords="389,855,531,881"/>
+<area shape="rect" id="node21" href="$TraceWriterFile_8h_source.html" title=" " alt="" coords="347,929,538,956"/>
+<area shape="rect" id="node22" href="$ConceptUtils_8h_source.html" title=" " alt="" coords="2923,929,3101,956"/>
+<area shape="rect" id="node23" href="$BasicTypes_8h_source.html" title=" " alt="" coords="3049,855,3220,881"/>
+<area shape="rect" id="node24" href="$BasicFunctors_8h_source.html" title=" " alt="" coords="3284,773,3471,799"/>
+<area shape="rect" id="node26" href="$BasicArchetypes_8h_source.html" title=" " alt="" coords="3176,929,3379,956"/>
+<area shape="rect" id="node27" href="$Exceptions_8h_source.html" title=" " alt="" coords="2139,855,2307,881"/>
+<area shape="rect" id="node29" href="$SpaceND_8h_source.html" title=" " alt="" coords="3759,601,3926,628"/>
+<area shape="rect" id="node30" href="$HyperRectDomain_8h_source.html" title=" " alt="" coords="3301,594,3449,635"/>
+<area shape="rect" id="node31" href="$DigitalSetSelector_8h_source.html" title=" " alt="" coords="1345,594,1511,635"/>
+<area shape="rect" id="node32" href="$DigitalTopology_8h_source.html" title=" " alt="" coords="3473,601,3684,628"/>
+<area shape="rect" id="node33" href="$MetricAdjacency_8h_source.html" title=" " alt="" coords="3151,505,3369,531"/>
+<area shape="rect" id="node34" href="$Object_8h_source.html" title=" " alt="" coords="1347,505,1509,531"/>
+<area shape="rect" id="node35" href="$KhalimskySpaceND_8h_source.html" title=" " alt="" coords="3518,408,3693,449"/>
+<area shape="rect" id="node36" href="$KhalimskyPreSpaceND_8h_source.html" title=" " alt="" coords="3643,497,3818,539"/>
+<area shape="rect" id="node37" href="$GridCurve_8h_source.html" title="Header file for module GridCurve.cpp." alt="" coords="2511,319,2668,360"/>
+<area shape="rect" id="node39" href="$ExactPredicateLpSeparableMetric_8h_source.html" title=" " alt="" coords="2793,587,3033,643"/>
+<area shape="rect" id="node40" href="$ExactPredicateLpPowerSeparableMetric_8h_source.html" title=" " alt="" coords="3057,587,3276,643"/>
+<area shape="rect" id="node38" title=" " alt="" coords="2407,415,2465,442"/>
+</map>

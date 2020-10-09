@@ -1,0 +1,11 @@
+<map id="DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;" name="DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;">
+<area shape="rect" id="node1" title="Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ..." alt="" coords="789,229,981,270"/>
+<area shape="rect" id="node2" title=" " alt="" coords="451,143,621,169"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="171,240,287,267"/>
+<area shape="rect" id="node5" title=" " alt="" coords="453,87,619,113"/>
+<area shape="rect" id="node7" title=" " alt="" coords="464,236,608,263"/>
+<area shape="rect" id="node8" title=" " alt="" coords="449,291,623,317"/>
+<area shape="rect" id="node9" title=" " alt="" coords="458,356,614,383"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,240,44,267"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="149,44,308,100"/>
+</map>

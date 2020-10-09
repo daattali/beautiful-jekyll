@@ -1,5 +1,5 @@
 <map id="DGtal::deprecated::concepts::CConvolutionWeights&lt; T &gt;" name="DGtal::deprecated::concepts::CConvolutionWeights&lt; T &gt;">
-<area shape="rect" id="node1" title="Aim: defines models of centered convolution kernel used for normal vector integration for instance." alt="" coords="87,79,328,117"/>
-<area shape="rect" id="node2" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="5,5,206,31"/>
-<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="230,5,387,31"/>
+<area shape="rect" id="node1" title="Aim: defines models of centered convolution kernel used for normal vector integration for instance." alt="" coords="89,80,330,121"/>
+<area shape="rect" id="node2" href="$structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html." alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node3" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="233,5,391,32"/>
 </map>

@@ -1,0 +1,13 @@
+<map id="DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;" name="DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;">
+<area shape="rect" id="node1" title="Aim: Implements the Shrouds Regularization algorithm of Nielson et al ." alt="" coords="1029,189,1224,230"/>
+<area shape="rect" id="node2" title=" " alt="" coords="692,76,857,103"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="263,44,422,100"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="285,172,401,199"/>
+<area shape="rect" id="node6" title=" " alt="" coords="689,136,860,163"/>
+<area shape="rect" id="node7" title=" " alt="" coords="702,195,847,221"/>
+<area shape="rect" id="node11" title=" " alt="" coords="701,245,848,272"/>
+<area shape="rect" id="node5" title=" " alt="" coords="55,172,94,199"/>
+<area shape="rect" id="node8" href="$classDGtal_1_1CountedPtr.html" title=" " alt="" coords="671,297,879,338"/>
+<area shape="rect" id="node9" href="$structDGtal_1_1CountedPtr_1_1Counter.html" title=" " alt="" coords="5,313,144,354"/>
+<area shape="rect" id="node10" href="$classDGtal_1_1CountedPtr.html" title="Aim: Smart pointer based on reference counts." alt="" coords="261,357,424,384"/>
+</map>

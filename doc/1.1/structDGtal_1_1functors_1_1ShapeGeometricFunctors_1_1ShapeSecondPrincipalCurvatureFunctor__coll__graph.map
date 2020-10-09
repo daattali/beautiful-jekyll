@@ -1,0 +1,5 @@
+<map id="DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalCurvatureFunctor&lt; TShape &gt;" name="DGtal::functors::ShapeGeometricFunctors::ShapeSecondPrincipalCurvatureFunctor&lt; TShape &gt;">
+<area shape="rect" id="node1" title="Aim: A functor RealPoint &#45;&gt; Quantity that returns the second principal curvature at given point (i...." alt="" coords="5,213,275,269"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title=" " alt="" coords="51,109,229,151"/>
+<area shape="rect" id="node3" href="$classDGtal_1_1CountedConstPtrOrConstPtr.html" title="Aim: Smart or simple const pointer on T. It can be a smart pointer based on reference counts or a sim..." alt="" coords="51,5,229,47"/>
+</map>

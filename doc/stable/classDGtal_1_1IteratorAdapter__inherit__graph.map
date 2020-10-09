@@ -1,4 +1,4 @@
 <map id="DGtal::IteratorAdapter&lt; TIterator, TFunctor, TReturnType &gt;" name="DGtal::IteratorAdapter&lt; TIterator, TFunctor, TReturnType &gt;">
-<area shape="rect" id="node1" title="This class adapts any lvalue iterator so that operator* returns a member on the element pointed to by..." alt="" coords="35,105,186,157"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,216,57"/>
+<area shape="rect" id="node1" title="This class adapts any lvalue iterator so that operator* returns a member on the element pointed to by..." alt="" coords="261,13,412,69"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,213,76"/>
 </map>

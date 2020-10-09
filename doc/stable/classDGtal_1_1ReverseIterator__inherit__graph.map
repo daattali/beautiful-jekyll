@@ -1,4 +1,4 @@
 <map id="DGtal::ReverseIterator&lt; Iterator &gt;" name="DGtal::ReverseIterator&lt; Iterator &gt;">
-<area shape="rect" id="node1" title="This class adapts any bidirectional iterator so that operator++ calls operator&#45;&#45; and vice versa." alt="" coords="17,105,172,144"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,184,57"/>
+<area shape="rect" id="node1" title="This class adapts any bidirectional iterator so that operator++ calls operator&#45;&#45; and vice versa." alt="" coords="17,109,171,151"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,183,61"/>
 </map>

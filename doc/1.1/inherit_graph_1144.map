@@ -1,0 +1,20 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structLibBoard_1_1Shape.html" title="Abstract structure for a 2D shape." alt="" coords="5,132,124,159"/>
+<area shape="rect" id="node2" href="$structLibBoard_1_1Dot.html" title="A line between two points." alt="" coords="190,5,293,32"/>
+<area shape="rect" id="node3" href="$structLibBoard_1_1Ellipse.html" title="An ellipse." alt="" coords="181,56,301,83"/>
+<area shape="rect" id="node6" href="$structLibBoard_1_1Line.html" title="A line between two points." alt="" coords="189,107,294,133"/>
+<area shape="rect" id="node8" href="$structLibBoard_1_1Polyline.html" title="A polygonal line described by a series of 2D points." alt="" coords="178,157,305,184"/>
+<area shape="rect" id="node14" href="$structLibBoard_1_1ShapeList.html" title="A group of shapes." alt="" coords="172,233,311,260"/>
+<area shape="rect" id="node18" href="$structLibBoard_1_1Text.html" title="A piece of text." alt="" coords="188,284,295,311"/>
+<area shape="rect" id="node4" href="$structLibBoard_1_1Circle.html" title="A circle." alt="" coords="389,5,504,32"/>
+<area shape="rect" id="node5" href="$structLibBoard_1_1Arc.html" title="An arc." alt="" coords="619,5,721,32"/>
+<area shape="rect" id="node7" href="$structLibBoard_1_1Arrow.html" title="A line between two points with an arrow at one extremity." alt="" coords="389,56,504,83"/>
+<area shape="rect" id="node9" href="$structLibBoard_1_1GouraudTriangle.html" title="A triangle with shaded filling according to colors given for each vertex." alt="" coords="359,107,535,133"/>
+<area shape="rect" id="node10" href="$structLibBoard_1_1Rectangle.html" title="A rectangle." alt="" coords="377,157,517,184"/>
+<area shape="rect" id="node12" href="$structLibBoard_1_1Triangle.html" title="A triangle. Basically a Polyline with a convenient constructor." alt="" coords="383,208,510,235"/>
+<area shape="rect" id="node11" href="$structLibBoard_1_1Image.html" title="Used to draw image in figure." alt="" coords="611,149,729,176"/>
+<area shape="rect" id="node13" href="$structLibBoard_1_1QuadraticBezierCurve.html" title="A quadratic Bezier curve having 3 control points. NB. It is also a parabola arc." alt="" coords="583,201,757,242"/>
+<area shape="rect" id="node15" href="$classLibBoard_1_1Board.html" title="Class for EPS, FIG or SVG drawings." alt="" coords="389,259,504,285"/>
+<area shape="rect" id="node17" href="$structLibBoard_1_1Group.html" title="A group of shapes. A group is basically a ShapeList except that when rendered in either an SVG of a F..." alt="" coords="389,309,505,336"/>
+<area shape="rect" id="node16" href="$classDGtal_1_1Board2D.html" title="Aim: This class specializes a &#39;Board&#39; class so as to display DGtal objects more naturally (with &lt;&lt;)...." alt="" coords="613,267,727,293"/>
+</map>

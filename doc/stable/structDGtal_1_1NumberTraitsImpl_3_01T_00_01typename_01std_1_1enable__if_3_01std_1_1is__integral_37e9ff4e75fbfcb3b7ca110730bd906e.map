@@ -1,4 +1,4 @@
 <map id="DGtal::NumberTraitsImpl&lt; T, typename std::enable_if&lt; std::is_integral&lt; T &gt;::value &gt;::type &gt;" name="DGtal::NumberTraitsImpl&lt; T, typename std::enable_if&lt; std::is_integral&lt; T &gt;::value &gt;::type &gt;">
-<area shape="rect" id="node1" title="Specialization of NumberTraitsImpl for fundamental integer types." alt="" coords="13,92,187,157"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1details_1_1NumberTraitsImplFundamental.html" title="NumberTraits common part for fundamental integer and floating&#45;point types." alt="" coords="5,5,194,44"/>
+<area shape="rect" id="node1" title="Specialization of NumberTraitsImpl for fundamental integer types." alt="" coords="13,95,187,165"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1details_1_1NumberTraitsImplFundamental.html" title="NumberTraits common part for fundamental integer and floating&#45;point types." alt="" coords="5,5,195,47"/>
 </map>

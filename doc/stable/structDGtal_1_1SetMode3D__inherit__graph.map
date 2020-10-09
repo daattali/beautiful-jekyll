@@ -1,4 +1,4 @@
 <map id="DGtal::SetMode3D" name="DGtal::SetMode3D">
-<area shape="rect" id="node1" title="Modifier class in a Display3D stream. Useful to choose your own mode for a given class...." alt="" coords="53,79,186,104"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="5,5,234,31"/>
+<area shape="rect" id="node1" title="Modifier class in a Display3D stream. Useful to choose your own mode for a given class...." alt="" coords="53,80,187,107"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1DrawWithDisplay3DModifier.html" title="Base class specifying the methods for classes which intend to modify a Viewer3D stream." alt="" coords="5,5,235,32"/>
 </map>

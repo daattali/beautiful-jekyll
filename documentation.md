@@ -4,7 +4,7 @@ title: Documentation & Help
 ---
 
 ### Documentation
-* [User guide and stable API documentation][1] (1.0)
+* [User guide and stable API documentation][1] (1.1)
 * [Nightly build doxygen documentation][2]
 * [Nightly build doxygen documentation of DGtalTools][22]
 * [Documentation docset URL][3] (1.0, for [Dash][4] or [Zeal][5] tools)

@@ -1,4 +1,0 @@
-<map id="DGtal::concepts::CBackInsertable&lt; T &gt;" name="DGtal::concepts::CBackInsertable&lt; T &gt;">
-<area shape="rect" id="node1" title="Aim: Represents types for which a std::back_insert_iterator can be constructed with std::back_inserte..." alt="" coords="5,92,257,117"/>
-<area shape="rect" id="node2" title=" " alt="" coords="112,5,151,31"/>
-</map>

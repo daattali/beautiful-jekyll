@@ -1,9 +1,9 @@
 <map id="DGtal::concepts::CUnsignedNumber&lt; T &gt;" name="DGtal::concepts::CUnsignedNumber&lt; T &gt;">
-<area shape="rect" id="node1" title="Aim: Concept checking for Unsigned numbers. Models of this concept should be listed in NumberTraits c..." alt="" coords="798,73,988,112"/>
-<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal." alt="" coords="537,80,750,105"/>
-<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible,..." alt="" coords="279,55,475,80"/>
-<area shape="rect" id="node4" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html." alt="" coords="5,5,217,31"/>
-<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="33,55,190,80"/>
-<area shape="rect" id="node6" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.sgi.com/tech/stl/EqualityComparable.html." alt="" coords="5,104,217,129"/>
-<area shape="rect" id="node7" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.sgi.com/tech/stl/LessThanComparable.html." alt="" coords="265,104,489,129"/>
+<area shape="rect" id="node1" title="Aim: Concept checking for Unsigned numbers. Models of this concept should be listed in NumberTraits c..." alt="" coords="800,74,991,115"/>
+<area shape="rect" id="node2" href="$structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal." alt="" coords="536,81,752,108"/>
+<area shape="rect" id="node3" href="$structDGtal_1_1concepts_1_1CLabel.html" title="Aim: Define the concept of DGtal labels. Models of CLabel can be default&#45;constructible,..." alt="" coords="278,56,477,83"/>
+<area shape="rect" id="node4" href="$structboost_1_1DefaultConstructible.html" title="Go to http://www.sgi.com/tech/stl/DefaultConstructible.html." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node5" href="$structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html." alt="" coords="33,56,191,83"/>
+<area shape="rect" id="node6" href="$structboost_1_1EqualityComparable.html" title="Go to http://www.sgi.com/tech/stl/EqualityComparable.html." alt="" coords="7,107,217,133"/>
+<area shape="rect" id="node7" href="$structboost_1_1LessThanComparable.html" title="Go to http://www.sgi.com/tech/stl/LessThanComparable.html." alt="" coords="267,107,488,133"/>
 </map>

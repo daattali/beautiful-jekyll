@@ -1,0 +1,9 @@
+<map id="DGtal::functors::IIPrincipalCurvaturesAndDirectionsFunctor&lt; TSpace, TMatrix &gt;" name="DGtal::functors::IIPrincipalCurvaturesAndDirectionsFunctor&lt; TSpace, TMatrix &gt;">
+<area shape="rect" id="node1" title="Aim: A functor Matrix &#45;&gt; std::pair&lt;RealVector,RealVector&gt; that returns the first and the second princ..." alt="" coords="1499,104,1711,160"/>
+<area shape="rect" id="node2" href="$classDGtal_1_1SimpleMatrix.html" title=" " alt="" coords="1148,33,1369,103"/>
+<area shape="rect" id="node3" title=" " alt="" coords="440,46,600,87"/>
+<area shape="rect" id="node6" href="$classDGtal_1_1SimpleMatrix.html" title="Aim: implements basic MxN Matrix services (M,N&gt;=1)." alt="" coords="756,82,931,123"/>
+<area shape="rect" id="node4" title="STL class." alt="" coords="149,53,259,80"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,53,44,80"/>
+<area shape="rect" id="node7" href="$classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes." alt="" coords="1179,167,1338,223"/>
+</map>
