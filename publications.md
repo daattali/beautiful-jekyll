@@ -4,7 +4,6 @@ title: Publications
 subtitle: 
 ---
 
-<div class="heading"> Publications </div>
 <table cellpadding="10" width="100%">
     <tr>
         <td class="pubimg" width="250" height="100">
@@ -42,7 +41,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/IROS-Conference.png" img width="250">
+            <img src="../pics/jianreniros2020.jpg" img width="250">
         </td>
         <td>Self-supervised Learning for 3D Data Association<br>
             <div class="pubauthor">
@@ -59,7 +58,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/IROS-Conference.png" img width="250">
+            <img src="../pics/LearningOrientationDistributions-Website.png" img width="250">
         </td>
         <td>Learning Orientation Distributions for Object Pose Estimation<br>
             <div class="pubauthor">
