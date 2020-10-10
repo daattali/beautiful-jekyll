@@ -4,6 +4,8 @@ subtitle: Invited op-eds and other articles
 layout: page
 ---
 
+[A wake-up call theory of climate change](https://medium.com/@EmilDimanchev/a-wake-up-call-theory-of-climate-change-fc5d3077a22b) - Medium (October 9, 2020)
+
 [Letter to the editor - "Societies have ample reason to act on climate change now"](https://www.economist.com/letters/2019/10/12/letters-to-the-editor) - The Economist (October 12, 2019)
 
 [Pricing CO2 imports would be a win-win for the environment and the economy](https://therift.eu/index.php/2019/09/24/should-the-eu-tax-imported-products-accordingly-to-their-co2-footprint/) – The Rift (September 24, 2019)
