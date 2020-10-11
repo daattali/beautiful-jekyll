@@ -1,0 +1,56 @@
+<!-- Footer -->
+<footer> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+        <p class="footer-contact">
+          {{ site.company_name }} <br>
+          Phone: {{ site.telephone_number }} <br>
+          Fax: {{ site.fax_number }} <br>
+          Email: {{ site.company_email }}<br>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-external-link"></i> Links</h3>
+        <p><a href="/about"> About ( Who we are )</a></p>
+        <p><a href="/about"> Services ( What we do )</a></p>
+        <p><a href="/contact"> Contact ( Feel free to contact )</a></p>
+        <p><a href="/blog"> Blog ( Write to us )</a></p>
+        <p><a href="/team"> Team ( Meet the Team )</a></p> 
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-heart"></i> Socialize</h3>
+        <div id="social-icons">
+          {% if site.googleplus_link %}
+            <a href="{{ site.googleplus_link }}" class="btn-group google-plus">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          {% endif %}
+
+          {% if site.linkedin_link %}
+            <a href="{{ site.linkedin_link }}" class="btn-group linkedin">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          {% endif %}
+
+          {% if site.facebook_link %}
+            <a href="{{ site.twitter_link }}" class="btn-group twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          {% endif %}
+
+          {% if site.facebook_link %}
+            <a href="{{ site.facebook_link }}" class="btn-group facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          {% endif %}
+        </div>
+      </div>    
+    </div>
+  </div>
+
+  <div class="copyright text center">
+    <p>&copy; Copyright {{ site.time | date: '%Y' }}, <a href="#">Your Website Link</a>. <br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p>
+  </div>
+</footer>
