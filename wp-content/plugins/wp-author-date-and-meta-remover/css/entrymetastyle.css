@@ -1,0 +1,19 @@
+/* WordPress Theme 2015 Metadata Removal */
+.entry-footer {
+display:none !important;
+}
+
+/* WordPress Theme 2015 Metadata Removal */
+.home .entry-footer { 
+display: none; 
+}
+
+/* Remove meta from post */
+.entry-meta {
+display:none !important;
+}
+
+/* Remove meta from home page */
+.home .entry-meta { 
+display: none; 
+}
