@@ -6,11 +6,17 @@ subtitle: Our coaching session schedule
 
 While school is remote, coaching sessions will be held on our [Microsoft Teams channel](https://teams.microsoft.com/l/channel/19%3a732a7f9358af4a37affd3f56a592fbee%40thread.tacv2/General?groupId=1820c33d-ed0b-4685-9f38-c1b24c841dad&tenantId=f2d61132-f6d6-42d2-b97f-caa2960fb0f7) from 3-4PM on the days scheduled below. Proctors must arrive 15 minutes ahead to start the meeting.
 
-The homework packet may be downloaded [here](/files/Homework%20Packet.pdf).
+The homework packet may be downloaded [here](/files/Homework%20Packet.pdf). Assignments for the Homework sessions come from this packet.
+It is expected that all members will attempt to complete the assignment for the week. It will be covered completely in the Homework session.
+
+Club and Varsity sessions will provide links to their homework below, if assigned for the week.
+These assignments should be published here at least two weeks ahead of the session, so please check back weekly.
+It is expected that all members will attempt to complete the assignment for the week, if assigned.
+It will be covered selectively in their respective sessions, so please request questions in the session as needed.
 
 The Mathcounts Toolkit be downloaded [here](/files/Mathcounts%20Toolkit.pdf).
 
-_Cancelled_ sessions are in _italics_.
+_Cancelled_ sessions are in _italics_. If a session is cancelled via email, then that takes precedence over this schedule.
 
 | Week Of	| Homework (Mon)		| Club (Wed) | Varsity (Fri) |
 | ----------|-------------			| ----| ----|
