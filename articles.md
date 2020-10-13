@@ -4,15 +4,15 @@ subtitle: Invited op-eds and other articles
 layout: page
 ---
 
-[A wake-up call theory of climate change](https://medium.com/@EmilDimanchev/a-wake-up-call-theory-of-climate-change-fc5d3077a22b) - Medium (October 9, 2020)
+[A wake-up call theory of climate change](https://medium.com/@EmilDimanchev/a-wake-up-call-theory-of-climate-change-fc5d3077a22b) - Medium (October 9, 2020). [Twitter thread](https://twitter.com/EmilDimanchev/status/1315619195904720898?s=20)
 
 [Letter to the editor - "Societies have ample reason to act on climate change now"](https://www.economist.com/letters/2019/10/12/letters-to-the-editor) - The Economist (October 12, 2019)
 
 [Pricing CO2 imports would be a win-win for the environment and the economy](https://therift.eu/index.php/2019/09/24/should-the-eu-tax-imported-products-accordingly-to-their-co2-footprint/) – The Rift (September 24, 2019)
 
-[Weakening the state’s renewable energy standards is bad for Ohioans’ health](https://www.ohio.com/opinion/20190629/emil-dimanchev-weakening-states-renewable-energy-standards-is-bad-for-ohioans-health) – Akron Beacon Journal (June 29, 2019)
+[Weakening the state’s renewable energy standards is bad for Ohioans’ health](https://www.ohio.com/opinion/20190629/emil-dimanchev-weakening-states-renewable-energy-standards-is-bad-for-ohioans-health) – Akron Beacon Journal (June 29, 2019). [Twitter thread](https://twitter.com/EmilDimanchev/status/1142094196309995520?s=20)
 
-[Carbon clubs turn national self-interest into climate action](http://www.climatechangenews.com/2018/12/19/carbon-clubs-turn-self-interest-climate-action/) – Climate Home (December 19, 2018)
+[Carbon clubs turn national self-interest into climate action](http://www.climatechangenews.com/2018/12/19/carbon-clubs-turn-self-interest-climate-action/) – Climate Home (December 19, 2018). [Twitter thread](https://twitter.com/EmilDimanchev/status/1078331934554705920?s=20)
 
 [Calling China’s carbon market ‘ambitious’ shows how low the bar has fallen](http://www.climatechangenews.com/2017/06/27/calling-chinas-carbon-market-ambitious-shows-low-bar-fallen/) – Climate Home (June 27, 2017)
 
