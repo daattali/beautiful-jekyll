@@ -41,7 +41,7 @@ _Step six_. Do a full, normal wash, but without detergent and then dry!
 
 Voila! No more stinky clothes.
 
-_PS my mail list is receiving a freebie for five other recipes and methods to try for stripping clothing. If you're not on my list, but stil would like to receive that, I'd be happy to email it to you separately for free. Just send me an email at eastcoastkellyb@gmail.com_
+_PS my mail list is receiving a freebie for five other recipes and methods to try for stripping clothing. If you're not on my list, but still would like to receive that, I'd be happy to email it to you separately for free. Just send me an email at eastcoastkellyb@gmail.com_
 
 Cheers,
 
