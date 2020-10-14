@@ -14,7 +14,7 @@ tags:
 ---
 How many days left until...gift giving time? I'm not counting.
 
-We've kept things simplified over the years for gift giving and even with simplifying things, there are SIX of us in the home, so it's been important to us over the years to figure out what works for us in regards to "stuff". This will look different for every family too. [Minimalism is unique to each family](https://bemorewithless.com/minimalism-for-families/) and what works for our family may not work for yours. Today on the blog, I'm sharing our gift Ideas for my minimalist family with actual suggestions we're sharing with family below! Maybe you'll find a good idea for your family too. PS This list is meant for ideas, not necessarily everything we'll be receiving or buying for the kids ourselves.
+We've kept things simplified over the years for gift giving and even with simplifying things, there are SIX of us in the home, so it's been important to us over the years to figure out what works for us in regards to "stuff". This will look different for every family too. [Minimalism is unique to each family](https://bemorewithless.com/minimalism-for-families/) and what works for our family may not work for yours. Today on the blog, I'm sharing our gift Ideas for my minimalist (and homeschooling) family with actual suggestions we're sharing with family below! Maybe you'll find a good idea for your family too. PS This list is meant for ideas, not necessarily everything we'll be receiving or buying for the kids ourselves.
 
 **_All kids:_**
 
@@ -62,7 +62,7 @@ He loves: Building and tinkering with everything and anything.
 
 [_Burgess Seashore book_](https://amzn.to/3nIZDtX)
 
-[_Along came a Dog _](https://amzn.to/3lJGeqN)book
+[_Along came a Dog_](https://amzn.to/3lJGeqN) book
 
 [_Brighty of the Grand Canyon_](https://amzn.to/3iWeVIb) by Marguerite Henry
 
@@ -87,7 +87,7 @@ He loves: Playing outside and anything that goes like his wooden trains.
 
 **_For our 1.5 year old daughter:_**
 
-[_The Big Red Barn _](https://amzn.to/30ZlDqw)by Margaret Wise Brown
+[_The Big Red Barn_](https://amzn.to/30ZlDqw) by Margaret Wise Brown
 
 [IKEA dollhouse](https://www.ikea.com/ca/en/p/flisat-doll-house-wall-shelf-50290785/)
 
@@ -95,7 +95,7 @@ She loves: running around with her brothers, books, and quiet activities.
 
 _PS You can find more suggestions of things we have now in my Amazon shops too (_[_US Amazon_](www.amazon.com/shop/eastcoastkelly) _and_ [_Canadian Amazon shop_](www.amazon.ca/shop/eastcoastkelly)_)._
 
-![An image overview of gift suggestions.](/uploads/gift-ideas-for-my-minimalist-family.jpg "giftideas")
+![An overview image of suggestions.](/uploads/gift-ideas-for-my-minimalist-family-1.jpg "giftimage")
 
 Cheers,
 
