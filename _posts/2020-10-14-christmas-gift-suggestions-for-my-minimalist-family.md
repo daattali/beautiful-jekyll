@@ -14,7 +14,7 @@ tags:
 ---
 How many days left until...gift giving time? I'm not counting.
 
-We've kept things simplified over the years for gift giving and even with simplifying things, there are SIX of us in the home, so it's been important to us over the years to figure out what works for us in regards to "stuff". This will look different for every family too. [Minimalism is unique to each family](https://bemorewithless.com/minimalism-for-families/) and what works for our family may not work for yours. Today on the blog, I'm sharing our gift Ideas for my minimalist Family with actual suggestions we're sharing with family below! Maybe you'll find a good idea for your family too. PS This list is meant for ideas, not necessarily everything we'll be receiving or buying for the kids ourselves.
+We've kept things simplified over the years for gift giving and even with simplifying things, there are SIX of us in the home, so it's been important to us over the years to figure out what works for us in regards to "stuff". This will look different for every family too. [Minimalism is unique to each family](https://bemorewithless.com/minimalism-for-families/) and what works for our family may not work for yours. Today on the blog, I'm sharing our gift Ideas for my minimalist family with actual suggestions we're sharing with family below! Maybe you'll find a good idea for your family too. PS This list is meant for ideas, not necessarily everything we'll be receiving or buying for the kids ourselves.
 
 **_All kids:_**
 
