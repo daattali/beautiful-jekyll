@@ -21,11 +21,16 @@ One thing we would like you to keep in mind is that the feedback passed on to in
 
 #### 3. Attend our team meeting
 
-We'll ask you to attend our team meeting, usually in the 3rd week of the block. Typically the block reps will join for the first 30 minutes of our meeting. After the block reps leave the meeting, we discuss the feedback and make plans for how to address it.
+We'll ask you to attend our team meeting, usually in the 3rd week of the block. Often, the block reps will share survey results with the
+Co-Directors right before the meeting (thought this is not required). These results don't need to be in a polished form (see below).
 
 #### 4. Communicate back to the cohort
 
 After the team meeting, we might ask the block rep to contact students. You can do this via Slack.  
+
+### A note on the expected time commitment
+
+You are taking on this role on top of your MDS course work, which is already very intense! The Block Rep position is not meant to be onerous and we don't intend for it to take up large amounts of your time. We expect you'll be active on Slack, and you'll spend some time creating surveys. However, we don't expect you to turn the survey results into a polished presentation or polished document. The raw survey results are fine (or sometimes the block reps remove some problematic comments if sharing raw text comments). If you're ever unsure about the scope of your duties as Block Rep, feel free to ask us.
 
 ### A note on the role of the block rep feedback
 
