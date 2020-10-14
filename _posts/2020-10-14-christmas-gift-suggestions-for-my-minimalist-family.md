@@ -93,7 +93,7 @@ He loves: Playing outside and anything that goes like his wooden trains.
 
 She loves: running around with her brothers, books, and quiet activities.
 
-_PS You can find more suggestions of things we have now in my Amazon shops too (_[_US Amazon_](www.amazon.com/shop/eastcoastkelly) _and_ [_Canadian Amazon shop_](www.amazon.ca/shop/eastcoastkelly)_)._
+_PS You can find more suggestions of things we have now in my Amazon shops too (_[_US Amazon_](https://www.amazon.com/shop/eastcoastkelly) _and_ [_Canadian Amazon shop_](https://www.amazon.ca/shop/eastcoastkelly)_)._
 
 ![An overview image of suggestions.](/uploads/gift-ideas-for-my-minimalist-family-1.jpg "giftimage")
 
