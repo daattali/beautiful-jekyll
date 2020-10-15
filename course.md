@@ -22,30 +22,30 @@ This is NOT a one size fits all course. It’s also not a one-time solution cour
 
 ##### Overview of the units (*may be tweaked slightly before the launch):
 
-SETTING THE STAGE  
+**SETTING THE STAGE**  
 Unit Discovering your priorities + values  
 Unit Habits
 
-DECLUTTERING  
+**DECLUTTERING**  
 Unit General decluttering concepts  
 Unit Wardrobes/clothing  
 Unit Kids' stuff  
 Unit Maintenance decluttering
 
-TIME MANAGEMENT  
+**TIME MANAGEMENT**  
 Unit Finding extra time tips  
 Unit Sustainable, slow productivity
 
-PLANNING
+**PLANNING**
 
 Unit Simplifying your to do list  
 Unit Planning strategies: autopilot/automate, loop planning
 
-ROUTINES  
+**ROUTINES**  
 Unit Daily routines  
 Unit Cleaning and tidying routines
 
-GOAL SETTING + MINDSET
+**GOAL SETTING + MINDSE**T
 
 _What you will find in this course:_
 
