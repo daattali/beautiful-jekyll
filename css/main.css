@@ -843,6 +843,15 @@ div.pubspan {
 table tr td, table tr {
   border: transparent;
 }
+
+.lab-photo h1 {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-shadow: 1px 1px black;
+  position: absolute; 
+}
 /* td.pubimg { */
     /* <http://www.w3.org/wiki/CSS/Properties/text-align>
      * left, right, center, justify, inherit

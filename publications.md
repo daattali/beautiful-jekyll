@@ -4,38 +4,6 @@ title: Publications
 subtitle: 
 ---
 
-<div class="heading"> Preprints </div>
-<div>
-    <table cellpadding="10" text-align="left" width="100%">
-        <tr><td><li class="year"> 2017</li></td></tr>
-        <tr>
-            <td class="pubimg" width="250" height="100">
-                <img src="../DavidHeld_files/indicator2019.png" img width="250">
-            </td>
-            <td><a href="https://arxiv.org/abs/1905.07866">Reinforcement Learning without Ground-Truth State</a><br>
-                <div class="pubauthor">
-                    Xingyu Lin, Harjatin Singh Baweja, David Held<br>
-                </div>
-                <br>
-            </td>
-        </tr>
-        <tr>
-            <td class="pubimg" width="250" height="100">
-                <img src="../DavidHeld_files/itn2018.png" width="250" height="100">
-            </td>
-            <td><a href="https://arxiv.org/abs/1811.11209">Iterative Transformer Network for 3D Point Cloud</a><br>
-                <div class="pubauthor">
-                    Wentao Yuan, David Held, Christoph Mertz, Martial Hebert<br>
-                </div>
-                <br>
-            </td>
-        </tr>
-    </table>
-</div>
-<p></p>
-
-
-<div class="heading"> Publications </div>
 <table cellpadding="10" width="100%">
     <tr>
         <td class="pubimg" width="250" height="100">
@@ -60,7 +28,7 @@ subtitle:
         </td>
         <td>Cloth Region Segmentation for Robust Grasp Selection<br>
             <div class="pubauthor">
-                Jianing Qian*, Thomas Weng*, Brian Okorn, Luxin Zhang, David Held<br>
+                Jianing Qian*, Thomas Weng*, Luxin Zhang, Brian Okorn, David Held<br>
             </div>
             <div class="pubjournal">International Conference on Intelligent Robots and Systems (IROS), 2020
             <!--div style="font-size:small">
@@ -73,7 +41,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/IROS-Conference.png" img width="250">
+            <img src="../pics/jianreniros2020.jpg" img width="250">
         </td>
         <td>Self-supervised Learning for 3D Data Association<br>
             <div class="pubauthor">
@@ -90,7 +58,7 @@ subtitle:
     </tr>
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="../pics/IROS-Conference.png" img width="250">
+            <img src="../pics/LearningOrientationDistributions-Website.png" img width="250">
         </td>
         <td>Learning Orientation Distributions for Object Pose Estimation<br>
             <div class="pubauthor">
@@ -187,7 +155,7 @@ subtitle:
             <br>
         </td>
     </tr>
-    <tr class="year"><td><li class="year">2019</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2019</li></td></tr> -->
     <tr>
         <td class="pubimg">
             <img src="../pics/CoRL2019.png" width="250">
@@ -248,7 +216,7 @@ subtitle:
             <br>
         </td>
     </tr>
-    <tr class="year"><td><li class="year">2018</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2018</li></td></tr> -->
     <tr>
         <td class="pubimg">
             <img src="../DavidHeld_files/ant-maze.png" width="250" height="100">
@@ -279,7 +247,7 @@ subtitle:
             <br>
         </td>
     </tr>
-    <tr class="year"><td><li class="year">2017</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2017</li></td></tr> -->
     <tr>
         <td class="pubimg">
             <img src="../DavidHeld_files/reverse_curr2.png" width="250" height="100">
@@ -365,7 +333,7 @@ subtitle:
         --------------------------------------------------------------------- -->
     <!--li class="pubitem"-->
     <!--table border="0" cellpadding="0" cellspacing="0" cellpadding="100" width="800" bgcolor="#FFFFFF"-->
-    <tr class="year"><td><li class="year">2016</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2016</li></td></tr> -->
     <!--ECCV 2016-->
     <tr>
         <td class="pubimg">
@@ -416,7 +384,7 @@ subtitle:
         </td>
     </tr>
     <!--tr><td><li class="year"> 2015 </li></td></tr-->
-    <tr class="year"><td><li class="year">2014</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2014</li></td></tr> -->
     <tr>
         <td class="pubimg">
             <img src="../DavidHeld_files/Pull3.png" height="120">
@@ -462,7 +430,7 @@ subtitle:
             </div>
         </td>
     </tr>
-    <tr class="year"><td><li class="year">2013</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2013</li></td></tr> -->
     <tr>
         <td class="pubimg">
             <img src="../DavidHeld_files/3DModels.png" height="120">
@@ -530,7 +498,7 @@ subtitle:
     <!-- ------------------------------------------------------------------------
         2012
         --------------------------------------------------------------------- -->
-    <tr class="year"><td><li class="year">2012</li></td></tr>
+    <!-- <tr class="year"><td><li class="year">2012</li></td></tr> -->
     <!--
         2012 Car Detection (ICRA)
         -->
@@ -886,3 +854,34 @@ subtitle:
 <!-- <div style="clear: both;"></div> -->
 <!-- </div> -->
 <!-- Preprints -->
+
+
+<div class="heading"> Preprints </div>
+<div>
+    <table cellpadding="10" text-align="left" width="100%">
+        <!-- <tr><td><li class="year"> 2017</li></td></tr> -->
+        <tr>
+            <td class="pubimg" width="250" height="100">
+                <img src="../DavidHeld_files/indicator2019.png" img width="250">
+            </td>
+            <td><a href="https://arxiv.org/abs/1905.07866">Reinforcement Learning without Ground-Truth State</a><br>
+                <div class="pubauthor">
+                    Xingyu Lin, Harjatin Singh Baweja, David Held<br>
+                </div>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td class="pubimg" width="250" height="100">
+                <img src="../DavidHeld_files/itn2018.png" width="250" height="100">
+            </td>
+            <td><a href="https://arxiv.org/abs/1811.11209">Iterative Transformer Network for 3D Point Cloud</a><br>
+                <div class="pubauthor">
+                    Wentao Yuan, David Held, Christoph Mertz, Martial Hebert<br>
+                </div>
+                <br>
+            </td>
+        </tr>
+    </table>
+</div>
+<p></p>
