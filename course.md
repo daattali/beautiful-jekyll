@@ -47,7 +47,7 @@ Unit Planning strategies: autopilot/automate, loop planning
 Unit Daily routines  
 Unit Cleaning and tidying routines
 
-**GOAL SETTING + MINDSE**T
+**GOAL SETTING + MINDSET**
 
 _What you will find in this course:_
 
