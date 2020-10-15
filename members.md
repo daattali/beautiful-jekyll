@@ -52,7 +52,7 @@ members:
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
             web_url: https://www.ri.cmu.edu/ri-people/gautham-narayan-narasimhan/
           - name: Harshit Sikchi (MSCS)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: /img/members/harshit.jpeg
             web_url: https://hari-sikchi.github.io/
           - name: Yufei Wang (MSCS)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
