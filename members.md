@@ -55,7 +55,7 @@ members:
             photo_url: /img/members/harshit.jpeg
             web_url: https://hari-sikchi.github.io/
           - name: Yufei Wang (MSCS)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
+            photo_url: https://yufeiwang63.github.io/img/1inch_yufeiwang.jpg
             web_url: https://yufeiwang63.github.io/
           - name: Gaurav Pathak (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
