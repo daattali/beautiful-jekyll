@@ -11,7 +11,7 @@ This year's capstone course will run __May - June, 2021__ (~8 weeks).
 
 | Event                                                                                          | Deadline/Period       |
 |------------------------------------------------------------------------------------------------|-----------------------|
-| [Suggested initial submission of proposal](https://ubc-mds.github.io/capstone/proposal/)       | November 15, 2020     |
+| [Suggested initial submission of proposal](#proposal-revision-process)                         | November 15, 2020     |
 | [Proposal deadline](#proposal-revision-process)                                                | December 15, 2020     |
 | [Selection of proposals](#selection-of-proposals)                                              | January 15, 2021      |
 | [Capstone fair](#capstone-fair)                                                                | February, 2021        |
@@ -28,8 +28,6 @@ This year's capstone course will run __May - June, 2021__ (~8 weeks).
 ## Proposal revision process
 
 Members of an organization interested in participating as a capstone partner should submit a project [proposal](https://ubc-mds.github.io/capstone/proposal/).
-
-Members of the MDS leadership team will review the proposal, and work with the potential partner to establish a finalized proposal. Potential partners should feel free to ask us for our opinion on any aspect of this step ahead of time, such as whether the main idea of the proposal is appropriate.
 
 Proposals received *before November 15th* will be reviewed by the MDS teams and feedback/suggestions for revisions will be provided to the partner, who can then revise and re-submit their proposal. This revision process aims to maximize the chance of a proposal being selected by students. Proposals received *after November 15th* will not be provided with feedback.
 
