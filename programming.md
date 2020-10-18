@@ -8,8 +8,6 @@ subtitle: Things to do at Virtual Fur Squared
 
 ## [Fur Squared 2021 Programming Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScyityVtVgjGDCrMGnhGa1CNRl9TbzaXmGRzf258VIVQOifGQ/viewform){: target="_blank" rel="noopener"}
 
-&nbsp;
-
 ### The deadline for programming submissions this year is November 30, 2020.
 
 ### &nbsp; &nbsp;
