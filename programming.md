@@ -5,9 +5,14 @@ subtitle: Things to do at Virtual Fur Squared
 ---
 
 &nbsp;
+
 ## [Fur Squared 2021 Programming Submission Form](https://docs.google.com/forms/d/e/1FAIpQLScyityVtVgjGDCrMGnhGa1CNRl9TbzaXmGRzf258VIVQOifGQ/viewform){: target="_blank" rel="noopener"}
+
 &nbsp;
-&nbsp;
+
+### The deadline for programming submissions this year is November 30, 2020.
+
+### &nbsp; &nbsp;
 
 ### What's different this year?
 
@@ -31,7 +36,7 @@ This year we're asking panelists to end their panels 10 minutes earlier than nor
 
 ### What about gaming tournaments or TTRPG games?
 
-Given the virtual nature of this year's con, we want to include expanded video and tabletop gaming tracks. We are considering creating a separate submission form for such events, but for now please submit them via the normal programming form.
+Given the virtual nature of this year's con, we want to include expanded video and tabletop gaming tracks. Such events will likely be relegated to a Secondary Events programming track. Secondary events will be hosted by members of the community and listed on our schedule, and we will point attendees to your stream, channel, etc. Please submit events of this category to the regular programming submissions form linked on this page.
 
 ### When will I hear back about my submission?
 
@@ -43,7 +48,7 @@ We are still working to finalize the technical requirements for both live and pr
 
 ### Is there a deadline to submit programming?
 
-We do not currently have a deadline set, but traditionally the deadline has been no later than the end of the calendar year. We anticipate this deadline may be moved earlier this year due to the additional complexities of running a virtual event. We will update this page with a date when it is announced.
+We have decided to move our programming submission deadline a month earlier than usual to accommodate the necessary preparation for a virtual event. **The deadline for submitting programming for Fur Squared 2021 is <u>November 30, 2020</u>.&nbsp;**We do not yet have an estimation on when panelists will be notified about the status of their submission, but we will be contacting you as soon as we can.
 
 ### What information will I have to submit?
 
