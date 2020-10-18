@@ -10,7 +10,7 @@ tags:
 
 # Programming Tracks at Fur Squared
 
-We've been hard at work testing (and breaking, and fixing, and...) the platform we'll be using for Virtual Fur Squared 2021. Now that we better understand the platform we'll be using, we can finally announce details about what Programming will look like for Fur Squared 2021\!
+We've been hard at work testing (and breaking, and fixing, and…) the platform we'll be using for Virtual Fur Squared 2021. Now that we better understand the platform we'll be using, we can finally announce details about what Programming will look like for Fur Squared 2021\!
 
 At a high level, Fur Squared will be streaming two separate programming tracks: A **Main Events** stream full of the hilarity and madness you've come to expect from us, and a brand new **Artists & Dealers Track**\! Additionally, we will maintain a schedule of **Secondary Events** hosted by members of the fandom, for a total of three programming tracks.
 
@@ -24,15 +24,13 @@ Yes\! [Click here to learn more about Virtual Fur Squared Programming](/programm
 
 ## Artists & Dealers Track
 
-We've been brainstorming ways to help continue to support our fandom's artists and dealers in the context of a virtual event. If you've seen our Twitter lately, you might already have an idea of what's going to happen.
+We've also been in contact with many of the fandom's artists and creators to learn how we can best help them out. &nbsp;If you've seen our Twitter lately, you might already have an idea of what's going to happen.
 
-This stream will feature several artist and dealer streams on screen at the same time. These streams will be automatically selected from a list of streamers that have applied, and will rotate through the list at regular intervals. Our goal is to help simulate a Dealer's Den and Artist's Alley experience.
+We're working hard to try to recreate the same experience of walking into the den, browsing creator's wares, and, of course, trading over money for that sweet sweet furry merch.&nbsp; You'll be able to watch artists create, listen to musicians perform, and so much more at our virtual Dealer's den. &nbsp;
 
-Because we will be streaming video from several people at once, audio from these streams will not be included. Instead, we hope to play original music produced by musicians in the fandom - both as a mix, and in scheduled musical blocks.
+Our Den's broadcast will feature more than just visual artists. We'd love to also help spotlight musical talents, writers and poets, and merch makers.&nbsp; We got some fun surprises along the way and we're super excited for you to see what we've got coming up
 
 **Interested in applying to be an artist, dealer, or musician**? Watch this website and our Twitter for further announcements\!
-
-Please note that we will be performing an internal tech test of this proposed system soon, and details are still volatile and subject to change. We will have more information for you Soon\!
 
 ## Secondary Events Track
 
