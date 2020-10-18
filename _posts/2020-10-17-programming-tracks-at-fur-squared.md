@@ -24,11 +24,11 @@ Yes\! [Click here to learn more about Virtual Fur Squared Programming](/programm
 
 ## Artists & Dealers Track
 
-We've also been in contact with many of the fandom's artists and creators to learn how we can best help them out. &nbsp;If you've seen our Twitter lately, you might already have an idea of what's going to happen.
+We've been in contact with many of the fandom's artists and creators to learn how we can best support them. &nbsp;If you've seen our Twitter lately, you might already have an idea of what's going to happen.
 
-We're working hard to try to recreate the same experience of walking into the den, browsing creator's wares, and, of course, trading over money for that sweet sweet furry merch.&nbsp; You'll be able to watch artists create, listen to musicians perform, and so much more at our virtual Dealer's den. &nbsp;
+We're working hard to try to recreate the same experience of walking into the Artist's Alley or Dealer's Den, browsing creators' wares, and, of course, trading over money for that sweet furry merch.&nbsp; You'll be able to watch artists create, listen to musicians perform, and much more at our virtual Dealer's Den. &nbsp;
 
-Our Den's broadcast will feature more than just visual artists. We'd love to also help spotlight musical talents, writers and poets, and merch makers.&nbsp; We got some fun surprises along the way and we're super excited for you to see what we've got coming up
+Our Artists & Dealers Track will feature more than just visual artists. We'd love to also help spotlight musical talents, writers and poets, merch makers, and more.&nbsp; We've got some fun surprises in store, and we're super excited for you to see what we've got coming up\!
 
 **Interested in applying to be an artist, dealer, or musician**? Watch this website and our Twitter for further announcements\!
 
