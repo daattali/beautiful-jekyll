@@ -16,6 +16,8 @@ https://www.youtube.com/watch?v=JYd8eWId5gU
 - Generator là object tạo ra từ Generator function  ??? ( má như cái qq)
 - Generator không thể tạo ra trực tiếp, chỉ có thể tạo ra từ Generator function 
 
+Ví dụ cho dễ hiểu: 
+
 ```
 function* gen() {
 	console.log('first value :');
@@ -35,6 +37,7 @@ console.log(newId.next());
 console.log(newId.next()); 
 ```
 
+Kết quả:
 ```sh
 first value :
 { value: 1, done: false }
