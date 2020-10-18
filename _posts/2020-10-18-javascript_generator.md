@@ -31,7 +31,6 @@ function* gen() {
 }
 
 const newId = gen();
-
 console.log(newId.next()); 
 console.log(newId.next()); 
 console.log(newId.next()); 
