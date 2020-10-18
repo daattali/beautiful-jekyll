@@ -18,14 +18,14 @@ https://www.youtube.com/watch?v=JYd8eWId5gU
 
 Ví dụ cho dễ hiểu: 
 
-```
+```javascrpit
 function* gen() {
 	console.log('first value :');
 	yield 1;
 
 	console.log('continue to run:');
 	yield 2;
-	
+
 	console.log('remuse:');
 	return 3;
 }
