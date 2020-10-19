@@ -5,6 +5,79 @@ subtitle:
 ---
 
 <table cellpadding="10" width="100%">
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/corl_logo.png" img width="250">
+        </td>
+        <td>SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation<br>
+            <!--div class="pubauthor">
+                Xingyu Lin, Yufei Weng, Jake Olkin, David Held<br>
+            </div-->
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
+            <!--div style="font-size:small">
+                <a href="GOTURN/GOTURN.html">[Project Page]</a>
+                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
+                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/corl_logo.png" img width="250">
+        </td>
+        <td>Visual Self-Supervised Reinforcement Learning with Object Reasoning<br>
+            <!--div class="pubauthor">
+                Wenxuan Zhou, Sujay Bajracharya, David Held<br>
+            </div-->
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
+            <!--div style="font-size:small">
+                <a href="GOTURN/GOTURN.html">[Project Page]</a>
+                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
+                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="../pics/corl_logo.png" img width="250">
+        </td>
+        <td>Latent Action Space for Offline Reinforcement Learning<br>
+            <div class="pubauthor">
+                Wenxuan Zhou, Sujay Bajracharya, David Held<br>
+            </div>
+            <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
+            <!--div style="font-size:small">
+                <a href="GOTURN/GOTURN.html">[Project Page]</a>
+                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
+                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            </div>
+            <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="pubimg" width="250" height="100">
+            <img src="" img width="250">
+        </td>
+        <td>PanoNet3D: Combining Semantic and Geometric Understanding for LiDARPoint Cloud Detection<br>
+            <div class="pubauthor">
+                Xia Chen, Jianren Wang, David Held, Martial Hebert<br>
+            </div>
+            <div class="pubjournal">International Conference on 3D Vision (3DV), 2020
+            <!--div style="font-size:small">
+                <a href="GOTURN/GOTURN.html">[Project Page]</a>
+                <a href="GOTURN/GOTURN.pdf">[Full Paper]</a>
+                <a href="GOTURN/supplement.pdf">[Supplement]</a></div-->
+            </div>
+            <br>
+        </td>
+    </tr>
+
     <tr>
         <td class="pubimg" width="250" height="100">
             <img src="../pics/eccv2020lightcurtains.jpg" img width="250">
