@@ -8,7 +8,7 @@ tags: [javascript]
 
 ## Nguồn 
 
-https://www.youtube.com/watch?v=JYd8eWId5gU
+<a href= 'https://www.youtube.com/watch?v=JYd8eWId5gU'>
 
 
 # Generator là gì: 
@@ -36,7 +36,7 @@ console.log(newId.next());
 console.log(newId.next()); 
 ```
 
-Kết quả:
+*Kết quả:
 ```sh
 first value :
 { value: 1, done: false }
@@ -45,3 +45,7 @@ continue to run:
 remuse:
 { value: 3, done: true }
 ```
+
+Như ở trên có thể thấy Generator function có thể thực thi nhiều lần, nhìn thì giống như vòng lặp nhưng khác cái là có thể dừng lại và tiếp tục thực thi.
+Chúng ta sẽ găp nhiều Generator function trong Redux Saga - thư viện được sử dụng để xử lý các side effects trong redux.
+
