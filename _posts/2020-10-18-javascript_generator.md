@@ -36,7 +36,7 @@ console.log(newId.next());
 console.log(newId.next()); 
 ```
 
-*Kết quả:
+**Kết quả:**
 ```sh
 first value :
 { value: 1, done: false }
