@@ -12,7 +12,7 @@ subtitle:
         </td>
         <td>SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation<br>
             <!--div class="pubauthor">
-                Xingyu Lin, Yufei Weng, Jake Olkin, David Held<br>
+                Xingyu Lin, Yufei Wang, Jake Olkin, David Held<br>
             </div-->
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
             <!--div style="font-size:small">
