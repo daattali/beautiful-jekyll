@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " How a Running to Do List can Simplify Your Week"
+title: " How a Running to Do List Can Help Simplify Your Week"
 subtitle: ''
 cover-img: "/uploads/20200822_110434_0000_compress19.jpg"
 thumbnail-img: "/uploads/img_20201009_154226096_compress34.jpg"
