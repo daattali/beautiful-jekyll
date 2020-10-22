@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About me
-cover-img: ("/assets/img/aboutmeback.jpg")
 subtitle: Why you'd want to go on a date with me
+cover-img: ("/assets/img/aboutmeback.jpg")
 ---
 
 我是杨李鑫，爱好技术，致力于IT类技术文章分享, 有时会写点文章, 欢迎工作邀请, 技术交流。
