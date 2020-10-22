@@ -1,16 +1,25 @@
 ---
 layout: page
 title: About me
+cover-img: ("/assets/img/aboutmeback.jpg")
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+我是杨李鑫，爱好技术，致力于IT类技术文章分享, 有时会写点文章, 欢迎工作邀请, 技术交流。
+目前主要技能涉及到web方向，前端为主，后端也有涉猎，Vue技术深度学习，乐于JavaScript，C几乎不用，偶尔会爬虫。
+### 日常习惯
+- 喜欢看书，自我提升,深度思考
+- 喜欢骑行，希望踏遍大好河山。
+- 喜欢分享，将自己的心得体会分享给和我一样的人。
+- 喜欢写作，回答别人的问题，乐于交流。
+- 喜欢运动，慢跑，球类运动。
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+时刻保持学习心态，爱好新技术，不放过任何一个提高工作效率的机会。
 
-What else do you need?
+希望能和你们一起学习。
 
-### My story
+还想知道更多？
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### 我的故事
+
+说实话我已经记不清了，你为什么不和我[交流](https://user.qzone.qq.com/2690688423/main)
