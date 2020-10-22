@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 tags: [books, test]
 ---
 
-# 为什么建议阅读英文文档
+# 为什么建议阅读英文文档！
 
 很久以前就注意到了**知识的昂贵程度和获取知识的能力呈反比**，如果你的英语很好，渠道多，善于自学，学习新工具，新知识对你来说就是免费的；你英语差，不会自学知识对你来说就很昂贵，因为你得等有英语好的人翻译过来你才能直接阅读那个README，而获取知识的质量或许还不如那个免费获取知识的英语好的人。
 
