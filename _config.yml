@@ -16,9 +16,10 @@ author: 杨李鑫
 navbar-links:
   关于我: "aboutme"
   我的文章:
-    Resources:
+  Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
+    - My website ： "https://ylx621.github.io/"
 
 
 # --- Logo --- #
