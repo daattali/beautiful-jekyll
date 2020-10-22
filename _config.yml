@@ -18,7 +18,7 @@ navbar-links:
   我的文章:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  我的知乎: "https://www.zhihu.com/people/li-xin-32-2"
+
 
 # --- Logo --- #
 
@@ -47,11 +47,12 @@ social-network-links:
 #  linkedin: daattali
 #  xing: yourname
   stackoverflow: "13972896/LIXIN"
+  zhihu: "https://www.zhihu.com/people/li-xin-32-2"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  youtube: user/deanat78
 #  spotify: yourname
-  telephone: +86 19935827871
+  #telephone:
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -76,6 +77,7 @@ share-links-active:
   github: true
   stakeoverflow: true
   email: true
+  zhihu: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -111,12 +113,12 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 
-navbar-img: "/assets/img/bgimage.png"
-footer-img: "/assets/img/bgimage.png"
-page-img: "/assets/img/bgimage.png"
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-mobile-theme-col: "#0085A1"
+#mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -228,6 +230,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
 
