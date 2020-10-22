@@ -11,9 +11,9 @@ subtitle:
             <img src="../pics/corl_logo.png" img width="250">
         </td>
         <td>SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation<br>
-            <!--div class="pubauthor">
+            <div class="pubauthor">
                 Xingyu Lin, Yufei Wang, Jake Olkin, David Held<br>
-            </div-->
+            </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
             <!--div style="font-size:small">
                 <a href="GOTURN/GOTURN.html">[Project Page]</a>
@@ -29,9 +29,9 @@ subtitle:
             <img src="../pics/corl_logo.png" img width="250">
         </td>
         <td>Visual Self-Supervised Reinforcement Learning with Object Reasoning<br>
-            <!--div class="pubauthor">
-                Wenxuan Zhou, Sujay Bajracharya, David Held<br>
-            </div-->
+            <div class="pubauthor">
+                Yufei Wang*, Gautham Narayan*, Xingyu Lin, Brian Okorn, David Held<br>
+            </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
             <!--div style="font-size:small">
                 <a href="GOTURN/GOTURN.html">[Project Page]</a>
@@ -62,7 +62,7 @@ subtitle:
 
     <tr>
         <td class="pubimg" width="250" height="100">
-            <img src="" img width="250">
+        <img src="../pics/panonet3db.jpg" img width="250" height="100">
         </td>
         <td>PanoNet3D: Combining Semantic and Geometric Understanding for LiDARPoint Cloud Detection<br>
             <div class="pubauthor">
