@@ -72,9 +72,6 @@ members:
           - name: Zixuan Huang (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/huang_zixuan_2020.jpg
             web_url: https://www.ri.cmu.edu/ri-people/zixuan-huang/
-          - name: Zipeng Fu (MSML)
-            photo_url: https://www.ri.cmu.edu/wp-content/uploads/2017/05/nophoto_faceboard_white.jpg
-            web_url: https://markfzp.github.io/
           - name: Chuer Pan (MSR)
             photo_url: https://www.ri.cmu.edu/wp-content/uploads/2020/08/pan_chu-er_2020.jpg
             web_url: https://www.ri.cmu.edu/ri-people/chuer-pan/

@@ -30,7 +30,7 @@ subtitle:
         </td>
         <td>Visual Self-Supervised Reinforcement Learning with Object Reasoning<br>
             <div class="pubauthor">
-                Yufei Wang*, Gautham Narayan*, Xingyu Lin, Brian Okorn, David Held<br>
+                Yufei Wang*, Gautham Narayan Narasimhan*, Xingyu Lin, Brian Okorn, David Held<br>
             </div>
             <div class="pubjournal">Conference on Robot Learning (CoRL), 2020
             <!--div style="font-size:small">
