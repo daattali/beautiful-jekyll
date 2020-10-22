@@ -1,8 +1,8 @@
 ---
+cover-img: ("/assets/img/aboutmeback.jpg")
 layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
-cover-img: ("/assets/img/aboutmeback.jpg")
 ---
 
 我是杨李鑫，爱好技术，致力于IT类技术文章分享, 有时会写点文章, 欢迎工作邀请, 技术交流。
@@ -22,9 +22,10 @@ cover-img: ("/assets/img/aboutmeback.jpg")
 
 ### 我的故事
 
-说实话我已经记不清了，你为什么不和我[交流](https://user.qzone.qq.com/2690688423/main)
+你为什么不和我[交流](https://user.qzone.qq.com/2690688423/main)
 
 ### 联系我
 
-邮箱：2690688423@qq.com
-微信：y2690688423
+#### 邮箱：2690688423@qq.com
+
+#### 微信：y2690688423
